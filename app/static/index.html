@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teşvik Asistanı - Devlet Teşviklerini Bulmanın En Kolay Yolu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            width: 90%;
+            max-width: 1000px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        .left-side {
+            flex: 1;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .left-side h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .left-side p {
+            font-size: 16px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .features {
+            list-style: none;
+        }
+
+        .features li {
+            margin: 15px 0;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .features li:before {
+            content: "✓";
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .right-side {
+            flex: 1;
+            padding: 50px 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-container {
+            display: none;
+        }
+
+        .form-container.active {
+            display: block;
+        }
+
+        .form-container h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+        }
+
+        .form-group input,
+        .form-group select {
+            width: 100%;
+            padding: 12px 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .form-group input::placeholder {
+            color: #999;
+        }
+
+        .password-field {
+            position: relative;
+        }
+
+        .toggle-password {
+            position: absolute;
+            right: 15px;
+            top: 45px;
+            cursor: pointer;
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin-top: 10px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+
+        .submit-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+
+        .toggle-form {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .toggle-form button {
+            background: none;
+            border: none;
+            color: #667eea;
+            cursor: pointer;
+            font-weight: bold;
+            text-decoration: underline;
+            margin-left: 5px;
+        }
+
+        .error {
+            background: #fff3cd;
+            color: #856404;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .success {
+            background: #d4edda;
+            color: #155724;
+            padding: 12px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            display: none;
+        }
+
+        .loading {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-left: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            margin: 30px 0;
+            gap: 15px;
+        }
+
+        .divider::before,
+        .divider::after {
+            content: "";
+            flex: 1;
+            height: 1px;
+            background: #e0e0e0;
+        }
+
+        .divider span {
+            color: #999;
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                width: 95%;
+            }
+
+            .left-side {
+                padding: 40px 30px;
+            }
+
+            .left-side h1 {
+                font-size: 28px;
+            }
+
+            .right-side {
+                padding: 40px 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Side - Marketing -->
+        <div class="left-side">
+            <h1>🎯 Devlet Teşviklerini Bulmanın En Kolay Yolu</h1>
+            <p>Teşvik Asistanı ile KOSGEB, TÜBİTAK, KGF ve daha birçok kurumun sağladığı teşvikleri saniyeler içinde bulun.</p>
+
+            <ul class="features">
+                <li>4+ kurumdan teşvik verileri</li>
+                <li>Yapay zeka powered arama</li>
+                <li>Günlük güncellenen veritabanı</li>
+                <li>API erişimi ile entegrasyon</li>
+                <li>Profesyonel destek</li>
+            </ul>
+
+            <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.3);">
+                <p style="font-size: 12px; opacity: 0.8;">Başlangıçta ücretsiz. Hiçbir kredi kartı gerekli değil.</p>
+            </div>
+        </div>
+
+        <!-- Right Side - Forms -->
+        <div class="right-side">
+            <!-- Login Form -->
+            <div class="form-container active" id="login-form">
+                <h2>Giriş Yap</h2>
+
+                <div class="error" id="login-error"></div>
+                <div class="success" id="login-success"></div>
+
+                <form onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="login-email" required placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group password-field">
+                        <label>Şifre</label>
+                        <input type="password" id="login-password" required placeholder="Şifrenizi girin">
+                        <span class="toggle-password" onclick="togglePassword('login-password')">👁</span>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="login-btn">
+                        Giriş Yap
+                    </button>
+                </form>
+
+                <div class="divider">
+                    <span>yeni hesabı mı?</span>
+                </div>
+
+                <button onclick="switchForm('signup')" style="width: 100%; padding: 12px; background: white; border: 2px solid #667eea; color: #667eea; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                    Kaydol
+                </button>
+            </div>
+
+            <!-- Signup Form -->
+            <div class="form-container" id="signup-form">
+                <h2>Kaydol</h2>
+
+                <div class="error" id="signup-error"></div>
+                <div class="success" id="signup-success"></div>
+
+                <form onsubmit="handleSignup(event)">
+                    <div class="form-group">
+                        <label>Ad Soyad</label>
+                        <input type="text" id="signup-name" required placeholder="Adınız soyadınız">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="signup-email" required placeholder="your@email.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Şirket / Kuruluş Adı</label>
+                        <input type="text" id="signup-company" required placeholder="Şirketinizin adı">
+                    </div>
+
+                    <div class="form-group password-field">
+                        <label>Şifre</label>
+                        <input type="password" id="signup-password" required placeholder="En az 8 karakter" minlength="8">
+                        <span class="toggle-password" onclick="togglePassword('signup-password')">👁</span>
+                    </div>
+
+                    <div class="form-group password-field">
+                        <label>Şifre Tekrar</label>
+                        <input type="password" id="signup-password-confirm" required placeholder="Şifrenizi tekrar girin" minlength="8">
+                        <span class="toggle-password" onclick="togglePassword('signup-password-confirm')">👁</span>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="signup-btn">
+                        Kaydol
+                    </button>
+                </form>
+
+                <div class="divider">
+                    <span>zaten hesabın var mı?</span>
+                </div>
+
+                <button onclick="switchForm('login')" style="width: 100%; padding: 12px; background: white; border: 2px solid #667eea; color: #667eea; border-radius: 5px; font-weight: bold; cursor: pointer;">
+                    Giriş Yap
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_BASE = "http://localhost:8000/api";
+
+        function switchForm(form) {
+            document.querySelectorAll(".form-container").forEach(f => f.classList.remove("active"));
+            document.getElementById(`${form}-form`).classList.add("active");
+            document.querySelectorAll(".error, .success").forEach(el => el.style.display = "none");
+        }
+
+        function togglePassword(id) {
+            const field = document.getElementById(id);
+            field.type = field.type === "password" ? "text" : "password";
+        }
+
+        async function handleLogin(event) {
+            event.preventDefault();
+            const email = document.getElementById("login-email").value;
+            const password = document.getElementById("login-password").value;
+            const btn = document.getElementById("login-btn");
+            const errorDiv = document.getElementById("login-error");
+
+            btn.disabled = true;
+            btn.innerHTML += '<span class="loading"></span>';
+
+            try {
+                const res = await fetch(`${API_BASE}/auth/login`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ email, password })
+                });
+
+                if (!res.ok) {
+                    const error = await res.json();
+                    errorDiv.textContent = error.detail || "Giriş başarısız";
+                    errorDiv.style.display = "block";
+                    return;
+                }
+
+                const data = await res.json();
+                localStorage.setItem("auth_token", data.access_token);
+                window.location.href = "/dashboard";
+            } catch (e) {
+                errorDiv.textContent = `Hata: ${e.message}`;
+                errorDiv.style.display = "block";
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = "Giriş Yap";
+            }
+        }
+
+        async function handleSignup(event) {
+            event.preventDefault();
+            const name = document.getElementById("signup-name").value;
+            const email = document.getElementById("signup-email").value;
+            const company = document.getElementById("signup-company").value;
+            const password = document.getElementById("signup-password").value;
+            const passwordConfirm = document.getElementById("signup-password-confirm").value;
+            const btn = document.getElementById("signup-btn");
+            const errorDiv = document.getElementById("signup-error");
+
+            if (password !== passwordConfirm) {
+                errorDiv.textContent = "Şifreler eşleşmiyor";
+                errorDiv.style.display = "block";
+                return;
+            }
+
+            btn.disabled = true;
+            btn.innerHTML += '<span class="loading"></span>';
+
+            try {
+                const res = await fetch(`${API_BASE}/auth/signup`, {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ full_name: name, email, company_name: company, password })
+                });
+
+                if (!res.ok) {
+                    const error = await res.json();
+                    errorDiv.textContent = error.detail || "Kayıt başarısız";
+                    errorDiv.style.display = "block";
+                    return;
+                }
+
+                const data = await res.json();
+                localStorage.setItem("auth_token", data.access_token);
+                window.location.href = "/dashboard";
+            } catch (e) {
+                errorDiv.textContent = `Hata: ${e.message}`;
+                errorDiv.style.display = "block";
+            } finally {
+                btn.disabled = false;
+                btn.innerHTML = "Kaydol";
+            }
+        }
+
+        if (localStorage.getItem("auth_token")) {
+            window.location.href = "/dashboard";
+        }
+    </script>
+</body>
+</html>

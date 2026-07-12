@@ -234,6 +234,34 @@ class ButceOnerisiResponse(BaseModel):
     analist_onerileri: List[str]
 
 
+class EticaretGiderGirdisi(BaseModel):
+    pazara_giris_raporu: Optional[float] = None
+    dijital_pazaryeri_tanitim: Optional[float] = None
+    e_ihracat_tanitim: Optional[float] = None
+    siparis_karsilama_hizmeti: Optional[float] = None
+    yurt_disi_depo_kirasi: Optional[float] = None
+    pazaryeri_entegrasyon: Optional[float] = None
+    pazaryeri_komisyon: Optional[float] = None
+    hedef_ulke_mi: bool = False
+    ihracatci_birligi_uyesi_mi: Optional[bool] = None
+
+
+class EticaretGiderKalemiResponse(BaseModel):
+    kalem: str
+    etiket: str
+    yillik_gider_tl: float
+    tahmini_geri_odeme_tl: float
+
+
+class EticaretDestekResponse(BaseModel):
+    hedef_ulke_mi: bool
+    uygulanan_oran: float
+    kalemler: List[EticaretGiderKalemiResponse]
+    toplam_yillik_gider_tl: float
+    toplam_tahmini_geri_odeme_tl: float
+    notlar: List[str]
+
+
 # Analytics Schemas
 class UsageStats(BaseModel):
     queries_this_month: int

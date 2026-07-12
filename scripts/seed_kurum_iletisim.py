@@ -63,6 +63,18 @@ KAYITLAR = [
         kaynak_url="https://timer.tarimorman.gov.tr/Home/Hakkinda",
         dogrulama_tarihi=DOGRULAMA_TARIHI,
     ),
+    dict(
+        kurum="Ticaret Bakanlığı",
+        kurum_tam_ad="T.C. Ticaret Bakanlığı",
+        cagri_merkezi_no="444 8 482",
+        genel_merkez_no="0 312 204 75 00",
+        calisma_saatleri=None,
+        adres="Söğütözü Mah. Nizami Gencevi Cad. No:63/1, 06530 Çankaya / Ankara",
+        web_sitesi="https://ticaret.gov.tr",
+        eposta=None,
+        kaynak_url="https://ticaret.gov.tr/iletisim",
+        dogrulama_tarihi=DOGRULAMA_TARIHI,
+    ),
 ]
 
 

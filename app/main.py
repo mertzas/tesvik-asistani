@@ -38,6 +38,8 @@ from app.schemas import (
     TesvikEslesmeResponse,
     TesvikEslesmeItem,
     ButceOnerisiResponse,
+    EticaretGiderGirdisi,
+    EticaretDestekResponse,
 )
 from app.rag import answer
 from app.billing import create_checkout_session, confirm_checkout_session, cancel_subscription, handle_webhook, get_plan_limits
@@ -46,6 +48,7 @@ from app.matching import esles, toplam_tahmini_destek, tutari_tahmini_hesapla
 from app.budget import hesapla as butce_hesapla
 from app.cilek_panel import router as cilek_router
 from app.urun_sektor_anahtarlari import anahtar_kelimeden_sektor_bul
+from app.eticaret_destek_hesaplayici import eticaret_destek_hesapla
 from app.scheduler import setup_scheduler
 
 # Global scheduler instance
@@ -379,6 +382,32 @@ def butce_onerisi(
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
 
     return ButceOnerisiResponse(**oneri.__dict__)
+
+
+@app.post("/api/eticaret/destek-hesapla", response_model=EticaretDestekResponse)
+def eticaret_destek_hesapla_endpoint(
+    request: EticaretGiderGirdisi,
+    current_org: Organization = Depends(get_current_org),
+):
+    """Ticaret Bakanlığı E-İhracat Destekleri (5986 sayılı Karar) kapsamında,
+    girilen yıllık gider kalemleri için tahmini geri ödeme tutarını hesaplar."""
+    giderler = {
+        k: v for k, v in request.model_dump().items()
+        if k not in ("hedef_ulke_mi", "ihracatci_birligi_uyesi_mi") and v is not None
+    }
+    sonuc = eticaret_destek_hesapla(
+        giderler,
+        hedef_ulke_mi=request.hedef_ulke_mi,
+        ihracatci_birligi_uyesi_mi=request.ihracatci_birligi_uyesi_mi,
+    )
+    return EticaretDestekResponse(
+        hedef_ulke_mi=sonuc.hedef_ulke_mi,
+        uygulanan_oran=sonuc.uygulanan_oran,
+        kalemler=[k.__dict__ for k in sonuc.kalemler],
+        toplam_yillik_gider_tl=sonuc.toplam_yillik_gider_tl,
+        toplam_tahmini_geri_odeme_tl=sonuc.toplam_tahmini_geri_odeme_tl,
+        notlar=sonuc.notlar,
+    )
 
 
 # ============ ORGANIZATION ENDPOINTS ============

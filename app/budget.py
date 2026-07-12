@@ -180,6 +180,11 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
             + ("Not: TCMB tarim sektorunu tek kalemde yayinladigi icin bu oran hayvancilik/bitkisel "
                "ayrimi yapmiyor, tum tarim isletmelerinin ortalamasidir."
                if sektor == "tarim" else "")
+            + ("Not: TCMB Sektor Bilancolari'nda e-ticaret icin ayri bir resmi kategori yok "
+               "(NACE siniflandirmasinda e-ticaret, geleneksel perakende ile ayni 'G' boluminde "
+               "toplaniyor) - bu yuzden gosterilen oran ayni zamanda geleneksel perakende "
+               "isletmelerini de icerir; e-ticarete ozgu bir istatistik degildir."
+               if sektor == "e-ticaret" else "")
         )
 
     tarim_girdi_enflasyonu = None

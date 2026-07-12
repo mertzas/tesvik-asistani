@@ -17,7 +17,9 @@ def test_signup_duplicate_email(client, test_org_data):
     client.post("/api/auth/signup", json=test_org_data)
     response = client.post("/api/auth/signup", json=test_org_data)
     assert response.status_code == status.HTTP_400_BAD_REQUEST
-    assert "already" in response.json()["detail"].lower()
+    # Uygulama Turkce hata mesaji donuyor ("Bu email zaten kullanımda"),
+    # ingilizce "already" degil - test onceden ingilizce bekliyordu.
+    assert "zaten kullanımda" in response.json()["detail"].lower()
 
 
 def test_signup_weak_password(client, test_org_data):

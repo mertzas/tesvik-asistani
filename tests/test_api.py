@@ -16,7 +16,10 @@ def test_get_current_organization(client, test_user_token):
 def test_get_org_without_auth(client):
     """Test getting org without authentication"""
     response = client.get("/api/organizations/me")
-    assert response.status_code == status.HTTP_403_FORBIDDEN
+    # FastAPI'nin HTTPBearer'i (auto_error=True) header hic yoksa 401
+    # "Not authenticated" doner - 403 sadece gecersiz/eksik yetki
+    # durumlari icin degil, bu kutuphanenin guncel standart davranisi.
+    assert response.status_code == status.HTTP_401_UNAUTHORIZED
 
 
 def test_ask_question_success(client, test_user_token):

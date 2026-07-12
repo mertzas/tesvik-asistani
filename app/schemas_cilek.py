@@ -136,6 +136,28 @@ class FertigasyonPaneli(BaseModel):
     sulama: SulamaDurumuKart
 
 
+class GubreDozOnerisiSchema(BaseModel):
+    dikim_tarihi: Optional[date] = None
+    gun_sayisi: Optional[int] = None
+    evre: Optional[str] = None
+    evre_aciklama: Optional[str] = None
+    n_kg_da: Optional[float] = None
+    p2o5_kg_da: Optional[float] = None
+    k2o_kg_da: Optional[float] = None
+    cao_kg_da: Optional[float] = None
+    haftalik_uygulama_sikligi: Optional[int] = None
+    dikkat: Optional[str] = None
+    alan_dekar: Optional[float] = None
+    toplam_n_kg: Optional[float] = None
+    toplam_p2o5_kg: Optional[float] = None
+    toplam_k2o_kg: Optional[float] = None
+    toplam_cao_kg: Optional[float] = None
+    notlar: list[str] = Field(default_factory=list)
+
+    class Config:
+        from_attributes = True
+
+
 # ============ 3. ZARARLI & HASTALIK / MRL-PHI ============
 
 class HasatKilidiDurumu(BaseModel):
@@ -277,6 +299,7 @@ class CilekPaneliResponse(BaseModel):
 
     # 2. Sulama & Fertigasyon
     fertigasyon: FertigasyonPaneli
+    gubre_onerisi: GubreDozOnerisiSchema
 
     # 3. Zararlı & Hastalık / PHI
     hasat_kilidi: HasatKilidiDurumu

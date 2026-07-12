@@ -38,6 +38,7 @@ from app.cilek_engine import (
     fertigasyon_paneli, hasat_kilidi_durumu, pazar_paneli,
     hasat_performansi_bugun, soguk_zincir_durumu, finansal_saglik_hesapla,
 )
+from app.gubre_rehberi import gubre_dozaj_oneri_getir
 
 router = APIRouter(prefix="/api/cilek", tags=["cilek-paneli"])
 
@@ -102,6 +103,7 @@ def panel_getir(
     hasat_performansi = hasat_performansi_bugun(db, parsel_id)
     soguk_zincir = soguk_zincir_durumu(db, current_org.id)
     finansal_saglik = finansal_saglik_hesapla(db, parsel_id)
+    gubre_onerisi = gubre_dozaj_oneri_getir(parsel.dikim_tarihi, parsel.alan_dekar)
 
     kritik_uyarilar = []
     if don_riski.risk_seviyesi == "kritik":
@@ -131,12 +133,54 @@ def panel_getir(
         mantar_riski=mantar_riski,
         erken_uyari=erken_uyari,
         fertigasyon=fertigasyon,
+        gubre_onerisi=gubre_onerisi,
         hasat_kilidi=hasat_kilidi,
         pazar=pazar,
         hasat_performansi=hasat_performansi,
         soguk_zincir=soguk_zincir,
         finansal_saglik=finansal_saglik,
     )
+
+
+@router.get("/gubre-rehberi/{parsel_id}")
+def gubre_rehberi_getir(
+    parsel_id: int,
+    current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
+):
+    """Parselin güncel fenolojik evresine göre gübre dozaj önerisi döner."""
+    parsel = _parsel_getir(db, parsel_id, current_org)
+    return gubre_dozaj_oneri_getir(parsel.dikim_tarihi, parsel.alan_dekar)
+
+
+@router.get("/gubre-rehberi/{parsel_id}/tum-sezon")
+def gubre_rehberi_tum_sezon(
+    parsel_id: int,
+    current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
+):
+    """Tüm sezon boyunca evre-evre gübre planını döner - önceden planlama için."""
+    from app.gubre_rehberi import tum_evreleri_listele
+    parsel = _parsel_getir(db, parsel_id, current_org)
+    evreler = []
+    for evre in tum_evreleri_listele():
+        alan = parsel.alan_dekar
+        evreler.append({
+            "evre": evre.ad,
+            "gun_araligi": evre.gun_araligi,
+            "n_kg_da": evre.n_kg_da,
+            "p2o5_kg_da": evre.p2o5_kg_da,
+            "k2o_kg_da": evre.k2o_kg_da,
+            "cao_kg_da": evre.cao_kg_da,
+            "toplam_n_kg": round(evre.n_kg_da * alan, 2) if alan else None,
+            "toplam_p2o5_kg": round(evre.p2o5_kg_da * alan, 2) if alan else None,
+            "toplam_k2o_kg": round(evre.k2o_kg_da * alan, 2) if alan else None,
+            "toplam_cao_kg": round(evre.cao_kg_da * alan, 2) if alan else None,
+            "haftalik_uygulama_sikligi": evre.haftalik_uygulama_sikligi,
+            "aciklama": evre.aciklama,
+            "dikkat": evre.dikkat or None,
+        })
+    return {"parsel_id": parsel.id, "alan_dekar": parsel.alan_dekar, "evreler": evreler}
 
 
 # ============ 1. SENSÖR VERİSİ GİRİŞİ (IoT cihazları için) ============

@@ -166,6 +166,7 @@ function panelCiz(v) {
   document.getElementById('ana-icerik').innerHTML = `
     ${bolum1(v)}
     ${bolum2(v.fertigasyon)}
+    ${bolumGubre(v.gubre_onerisi)}
     ${bolum3(v.hasat_kilidi)}
     ${bolum4(v.pazar)}
     ${bolum5(v.hasat_performansi, v.soguk_zincir)}
@@ -249,6 +250,44 @@ function bolum2(f) {
         </div>
         ${s.mesaj ? `<div class="text-xs opacity-70 mt-2">${s.mesaj}</div>` : ''}
       </div>
+    </section>`;
+}
+
+// 2b. GÜBRE DOZAJ REHBERİ (fenolojik evreye göre)
+function bolumGubre(g) {
+  if (!g.evre) {
+    return `
+      <section>
+        ${kartBaslik('🧪', 'Gübre Dozaj Rehberi')}
+        <div class="rounded-2xl bg-slate-800 border-2 border-slate-600 p-4 text-sm text-slate-400">
+          ${(g.notlar && g.notlar[0]) || 'Dikim tarihi girilmeden gübre önerisi hesaplanamaz.'}
+        </div>
+      </section>`;
+  }
+  const besin = (etiket, deger, toplam, birim) => `
+    <div class="rounded-xl border-2 border-slate-600 bg-slate-800 p-3 text-center">
+      <div class="text-xs font-bold opacity-70">${etiket}</div>
+      <div class="text-2xl font-black big-num">${deger}</div>
+      <div class="text-[10px] opacity-60">kg/${birim}</div>
+      ${toplam !== null && toplam !== undefined ? `<div class="text-xs mt-1 opacity-80">Parsel toplamı: <b>${toplam} kg</b></div>` : ''}
+    </div>`;
+  return `
+    <section>
+      ${kartBaslik('🧪', 'Gübre Dozaj Rehberi')}
+      <div class="rounded-2xl border-2 border-emerald-600 bg-emerald-950/40 p-4 mb-3">
+        <div class="text-xs font-bold uppercase opacity-70">Güncel Evre (Dikimden ${g.gun_sayisi}. gün)</div>
+        <div class="text-lg font-black">${g.evre}</div>
+        <div class="text-sm opacity-90 mt-1">${g.evre_aciklama || ''}</div>
+        <div class="text-xs opacity-70 mt-1">Haftada ${g.haftalik_uygulama_sikligi} fertigasyon önerilir.</div>
+      </div>
+      <div class="grid grid-cols-4 gap-2">
+        ${besin('N (Azot)', sayi(g.n_kg_da,1), g.toplam_n_kg, 'da')}
+        ${besin('P₂O₅', sayi(g.p2o5_kg_da,1), g.toplam_p2o5_kg, 'da')}
+        ${besin('K₂O', sayi(g.k2o_kg_da,1), g.toplam_k2o_kg, 'da')}
+        ${besin('CaO', sayi(g.cao_kg_da,1), g.toplam_cao_kg, 'da')}
+      </div>
+      ${g.dikkat ? `<div class="mt-3 rounded-xl border-2 risk-riskli p-3 text-xs font-semibold">⚠️ ${g.dikkat}</div>` : ''}
+      ${(g.notlar||[]).map(n => `<div class="text-xs opacity-60 mt-2">ℹ️ ${n}</div>`).join('')}
     </section>`;
 }
 

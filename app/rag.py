@@ -52,6 +52,14 @@ URL'sine yönlendir ya da "bu bilgi elimde yok, X kurumunun resmi sitesinden \
 teyit edin" de. Sayısal bir rakam (telefon, oran, TL tutarı) bağlamda \
 geçmiyorsa ASLA kendi bilginden tahmin/icat etme.
 
+AKTİFLİK KURALI: Bir kaydın yanında "⚠️ DURUM: ARTIK AKTİF DEĞİL" yazıyorsa, \
+bu programı kullanıcıya başvurabileceği bir seçenek gibi SUNMA - varlığından \
+bahsedebilirsin ama açıkça "bu program artık kapalı/geçmiş" de. "DURUM: \
+Doğrulanmış, güncel/aktif program" yazan kayıtları güvenle önerebilirsin. \
+Hiçbir durum notu yoksa (aktiflik hiç kontrol edilmemişse), kullanıcıya \
+"bu programın hâlâ açık olup olmadığını kurumun kendi sayfasından teyit edin" \
+diye açıkça hatırlat.
+
 Yanıtını şu 4 başlık altında yapılandır:
 
 ### 📊 Durum Analizi & Gerçekçi Yaklaşım
@@ -91,9 +99,19 @@ def retrieve(query: str, limit: int = 5) -> list[Tesvik]:
     if not terms:
         return candidates[:limit]
 
-    def skor(t: Tesvik) -> int:
-        metin = f"{t.baslik} {t.ozet} {t.detay}".lower()
-        return sum(metin.count(term) for term in terms) + (2 * sum(term in t.baslik.lower() for term in terms))
+    def skor(t: Tesvik) -> float:
+        # Ham terim sayimi, uzun "detay" metinli kayitlari (genel gecer
+        # kelimeleri cok kez tekrarladiklari icin) tam program kodu eslesmesi
+        # (orn. "1507") yapan kisa kayitlara karsi haksiz yere on plana
+        # cikariyordu - detay/ozet katkisini metin uzunluguna gore normalize
+        # ediyoruz, baslik eslesmesine (ozellikle program kodu gibi tam
+        # eslesmelere) çok daha yuksek agirlik veriyoruz.
+        gövde = f"{t.ozet or ''} {t.detay or ''}".lower()
+        gövde_skoru = sum(gövde.count(term) for term in terms) / max(len(gövde), 1) * 1000
+        baslik_kucuk = t.baslik.lower()
+        baslik_skoru = sum(10 for term in terms if term in baslik_kucuk)
+        tam_kod_bonus = sum(20 for term in terms if term.isdigit() and baslik_kucuk.startswith(term))
+        return gövde_skoru + baslik_skoru + tam_kod_bonus
 
     candidates.sort(key=skor, reverse=True)
     return candidates[:limit]
@@ -180,11 +198,37 @@ def _il_iletisim_metni(profil: dict | None) -> str:
         db.close()
 
 
+def _tesvik_detay_metni(m: Tesvik) -> str:
+    """Tesvik kaydinin TUM yapilandirilmis alanlarini (sadece serbest metin
+    detay degil) LLM baglamina yazar - basvuru_sartlari/tutar/aktif_mi gibi
+    Faz 3'te doldurulan alanlar bu fonksiyon olmadan LLM'e hic gorunmezdi."""
+    satirlar = [f"[{m.kurum}] {m.baslik}", f"Kaynak: {m.kaynak_url}", _kisalt(m.detay, 500)]
+
+    if m.aktif_mi is False:
+        satirlar.append(f"⚠️ DURUM: ARTIK AKTİF DEĞİL. {m.durum_notu or ''}")
+    elif m.aktif_mi is True:
+        satirlar.append(f"DURUM: Doğrulanmış, güncel/aktif program. {m.durum_notu or ''}")
+
+    if m.basvuru_sartlari:
+        satirlar.append("Başvuru şartları: " + "; ".join(m.basvuru_sartlari))
+    if m.gerekli_belgeler:
+        satirlar.append("Gerekli belgeler: " + "; ".join(m.gerekli_belgeler))
+    if m.basvuru_yeri:
+        satirlar.append(f"Başvuru yeri: {m.basvuru_yeri}")
+    if m.basvuru_suresi:
+        satirlar.append(f"Başvuru süresi/dönemi: {m.basvuru_suresi}")
+    if m.destek_verilme_suresi:
+        satirlar.append(f"Destek/proje süresi: {m.destek_verilme_suresi}")
+    if m.tutari_hesaplama_formulu:
+        satirlar.append(f"Tutar/oran: {m.tutari_hesaplama_formulu}")
+    elif m.tutari_max:
+        satirlar.append(f"Azami tutar: ₺{m.tutari_max:,.0f}")
+
+    return "\n".join(satirlar)
+
+
 def _baglam_metni(matches: list[Tesvik], profil: dict | None) -> str:
-    kayitlar = "\n\n".join(
-        f"[{m.kurum}] {m.baslik}\nKaynak: {m.kaynak_url}\n{_kisalt(m.detay, 600)}"
-        for m in matches
-    )
+    kayitlar = "\n\n".join(_tesvik_detay_metni(m) for m in matches)
     iletisim = _kurum_iletisim_metni(matches)
     iletisim_blogu = (
         f"\n\nDOĞRULANMIŞ KURUM İLETİŞİM BİLGİLERİ (bu numaraları/adresleri "

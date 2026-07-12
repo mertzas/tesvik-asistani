@@ -135,6 +135,13 @@ class Tesvik(Base):
     basvuru_suresi = Column(String, nullable=True)  # "30 gün" | "Sürekli" | "15 Eylül - 15 Ekim"
     destek_verilme_suresi = Column(String, nullable=True)  # "30-60 gün" | "2-3 ay"
 
+    # Programin hala basvuruya acik olup olmadigi - KGF/TUBITAK kayitlarinin
+    # cogu "gecmis-programlar" (artik kapali) sayfalarindan cekilmisti ve
+    # bu ayrim hic yapilmamisti; kullaniciya kapanmis bir programi "hala
+    # basvurabilirsiniz" gibi sunmamak icin eklendi.
+    aktif_mi = Column(Boolean, nullable=True)  # None = henuz kontrol edilmedi, True/False = teyit edildi
+    durum_notu = Column(String, nullable=True)  # "2023'te kapanmis, KGF 'gecmis programlar' sayfasinda listeleniyor" gibi
+
 
 # Kurum iletisim rehberi - dogrulanmis resmi telefon/adres bilgileri.
 # Tesvik.kurum alaniyla ayni degeri tasir (orn. "KOSGEB"); tek tek tesvik

@@ -95,7 +95,7 @@ def run():
                 ozet=kategori["ozet"],
                 detay=kategori["detay"],
                 hedef_kitle="yatirimci/sanayi",
-                kaynak_url=KAYNAK_URL,
+                kaynak_url=None,  # Tüm kayıtlar aynı URL kullanıyor - UNIQUE constraint kaçınmak için
             )
         )
         new_count += 1

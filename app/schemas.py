@@ -144,6 +144,96 @@ class SubscriptionResponse(BaseModel):
         from_attributes = True
 
 
+# Financial Profile Schemas
+class FinancialProfileCreate(BaseModel):
+    sektor: str = Field(..., min_length=2, description="tarim, imalat, perakende, e-ticaret, hizmet, ihracat, arge, genel")
+    bolge: Optional[str] = None
+    calisan_sayisi: Optional[int] = Field(None, ge=0)
+    yillik_ciro: Optional[float] = Field(None, ge=0)
+    hedefler: Optional[List[str]] = None
+    giderler: Optional[dict] = Field(None, description="{'stok': 100000, 'reklam': 20000} veya tek kalem biliniyorsa {'toplam': 550000}")
+    arazi_buyuklugu_dekar: Optional[float] = Field(None, ge=0, description="Sadece tarim sektoru icin")
+    urun_turu: Optional[str] = Field(None, description="Sadece tarim sektoru icin, serbest metin (fiyat aramasi icin), orn. bugday, domates, cilek")
+    tarim_kategori: Optional[str] = Field(None, description="Yapilandirilmis secim: hayvancilik | sebze_meyve | tahil_baklagil | organik | sera | sulama | makinelestirme | genel")
+    ilk_yil_mi: Optional[bool] = Field(None, description="Arazi hazirligi/sera/ekipman gibi tek seferlik kurulus gideri var mi")
+
+
+class FinancialProfileResponse(BaseModel):
+    id: UUID
+    sektor: str
+    bolge: Optional[str]
+    calisan_sayisi: Optional[int]
+    yillik_ciro: Optional[float]
+    hedefler: Optional[List[str]]
+    giderler: Optional[dict]
+    arazi_buyuklugu_dekar: Optional[float]
+    urun_turu: Optional[str]
+    tarim_kategori: Optional[str]
+    ilk_yil_mi: Optional[bool]
+    updated_at: datetime
+
+    class Config:
+        from_attributes = True
+
+
+# Matching Schemas
+class TesvikEslesmeItem(BaseModel):
+    id: int
+    kurum: str
+    baslik: str
+    ozet: str
+    tesvil_tutari: Optional[str] = None
+    kaynak_url: Optional[str] = None
+    skor: float
+    gerekce: List[str]
+    eksik_kriterler: List[str]
+
+    # Tutarı hesaplama ve başvuru süreci (çiftçi/KOBİ perspektifi)
+    tutari_min: Optional[float] = None
+    tutari_max: Optional[float] = None
+    tutari_hesaplama_formulu: Optional[str] = None
+    tutari_tahmini_profil: Optional[float] = None  # Kullanıcının profiline göre tahmin
+    basvuru_sartlari: Optional[List[str]] = None
+    gerekli_belgeler: Optional[List[str]] = None
+    basvuru_yeri: Optional[str] = None
+    basvuru_suresi: Optional[str] = None
+    destek_verilme_suresi: Optional[str] = None
+    kategori: Optional[str] = None
+    alt_kategori: Optional[str] = None
+
+
+class TesvikEslesmeResponse(BaseModel):
+    eslesen_tesvikler: List[TesvikEslesmeItem]
+    tahmini_toplam_destek_min: float
+    tahmini_toplam_destek_max: float
+
+
+# Budget Recommendation Schemas
+class ButceOnerisiResponse(BaseModel):
+    sektor: str
+    yillik_ciro: float
+    stok_maliyeti_min: float
+    stok_maliyeti_max: float
+    reklam_butcesi_min: float
+    reklam_butcesi_max: float
+    mevcut_stok_gideri: Optional[float]
+    mevcut_reklam_gideri: Optional[float]
+    mevcut_toplam_gider: Optional[float]
+    ilk_yil_kurulum_gideri: Optional[float]
+    yillik_tufe: Optional[float]
+    sektor_net_kar_orani: Optional[float]
+    tarim_girdi_enflasyonu: Optional[dict]
+    en_yuksek_artan_girdi: Optional[dict]
+    guncel_urun_fiyati: Optional[dict]
+    guncel_ihracat_fiyati: Optional[dict]
+    tarim_dis_ticaret: Optional[dict]
+    urun_veri_yok_mesaji: Optional[str]
+    bolgesel_tavsiye: Optional[dict]
+    gider_sapma_yuzdesi: Optional[float]
+    notlar: List[str]
+    analist_onerileri: List[str]
+
+
 # Analytics Schemas
 class UsageStats(BaseModel):
     queries_this_month: int

@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teşvik Asistanı - Login</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .container {
+            width: 100%;
+            max-width: 450px;
+            padding: 20px;
+        }
+        .card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+        }
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .logo h1 {
+            font-size: 28px;
+            color: rgb(102, 126, 234);
+            margin-bottom: 10px;
+        }
+        .logo p {
+            color: #666;
+            font-size: 14px;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+            font-weight: 500;
+            font-size: 14px;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 14px;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus {
+            outline: none;
+            border-color: rgb(102, 126, 234);
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+        .button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            font-size: 14px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            margin-top: 10px;
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+        }
+        .button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+        .toggle {
+            text-align: center;
+            margin-top: 20px;
+            color: #666;
+            font-size: 14px;
+        }
+        .toggle a {
+            color: rgb(102, 126, 234);
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .error {
+            background: #fee;
+            color: #c33;
+            padding: 12px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            display: none;
+        }
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+        .tab {
+            flex: 1;
+            padding: 10px;
+            text-align: center;
+            background: #f0f4ff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            color: rgb(102, 126, 234);
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        .tab.active {
+            background: linear-gradient(135deg, rgb(102, 126, 234) 0%, rgb(118, 75, 162) 100%);
+            color: white;
+        }
+        .form-section { display: none; }
+        .form-section.active { display: block; }
+        .plan-select {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        .plan-option {
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        .plan-option:hover {
+            border-color: rgb(102, 126, 234);
+        }
+        .plan-option.selected {
+            background: rgb(102, 126, 234);
+            color: white;
+            border-color: rgb(102, 126, 234);
+        }
+        .plan-name {
+            font-weight: bold;
+            font-size: 14px;
+        }
+        .plan-price {
+            font-size: 12px;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="logo">
+                <h1>🎯 Teşvik Asistanı</h1>
+                <p>Devlet Teşviklerini Saniyeler İçinde Bulun</p>
+            </div>
+
+            <div class="error" id="error"></div>
+
+            <div class="tabs">
+                <button class="tab active" onclick="switchTab('login')">Giriş Yap</button>
+                <button class="tab" onclick="switchTab('signup')">Kayıt Ol</button>
+            </div>
+
+            <!-- LOGIN -->
+            <div id="login" class="form-section active">
+                <form onsubmit="handleLogin(event)">
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="login_email" required placeholder="ornek@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Şifre</label>
+                        <input type="password" id="login_password" required placeholder="••••••••">
+                    </div>
+                    <button type="submit" class="button" id="login_btn">Giriş Yap</button>
+                </form>
+            </div>
+
+            <!-- SIGNUP -->
+            <div id="signup" class="form-section">
+                <form onsubmit="handleSignup(event)">
+                    <div class="form-group">
+                        <label>Ad Soyad</label>
+                        <input type="text" id="signup_name" required placeholder="Adınız">
+                    </div>
+                    <div class="form-group">
+                        <label>Şirket Adı</label>
+                        <input type="text" id="signup_company" required placeholder="Şirketiniz">
+                    </div>
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" id="signup_email" required placeholder="ornek@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label>Şifre</label>
+                        <input type="password" id="signup_password" required placeholder="••••••••">
+                    </div>
+                    <div class="form-group">
+                        <label>Plan Seçin</label>
+                        <div class="plan-select">
+                            <div class="plan-option selected" onclick="selectPlan('free')">
+                                <div class="plan-name">Ücretsiz</div>
+                                <div class="plan-price">10 arama/ay</div>
+                            </div>
+                            <div class="plan-option" onclick="selectPlan('pro')">
+                                <div class="plan-name">Pro</div>
+                                <div class="plan-price">₺29/ay</div>
+                            </div>
+                        </div>
+                        <input type="hidden" id="selected_plan" value="free">
+                    </div>
+                    <button type="submit" class="button" id="signup_btn">Kayıt Ol</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const API_URL = window.location.origin;
+
+        function switchTab(tab) {
+            document.querySelectorAll('.form-section').forEach(el => el.classList.remove('active'));
+            document.querySelectorAll('.tab').forEach(el => el.classList.remove('active'));
+            document.getElementById(tab).classList.add('active');
+            event.target.classList.add('active');
+        }
+
+        function selectPlan(plan) {
+            document.querySelectorAll('.plan-option').forEach(el => el.classList.remove('selected'));
+            event.target.closest('.plan-option').classList.add('selected');
+            document.getElementById('selected_plan').value = plan;
+        }
+
+        function showError(msg) {
+            const err = document.getElementById('error');
+            err.textContent = msg;
+            err.style.display = 'block';
+        }
+
+        async function handleLogin(e) {
+            e.preventDefault();
+            const email = document.getElementById('login_email').value;
+            const password = document.getElementById('login_password').value;
+            const btn = document.getElementById('login_btn');
+
+            btn.disabled = true;
+            try {
+                const res = await fetch(`${API_URL}/api/auth/login`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ email, password })
+                });
+
+                const data = await res.json();
+                if (res.ok) {
+                    localStorage.setItem('token', data.access_token);
+                    localStorage.setItem('user', JSON.stringify(data.user));
+                    window.location.href = '/dashboard.html';
+                } else {
+                    showError(data.detail || 'Giriş başarısız');
+                }
+            } catch (err) {
+                showError('Bağlantı hatası');
+            } finally {
+                btn.disabled = false;
+            }
+        }
+
+        async function handleSignup(e) {
+            e.preventDefault();
+            const name = document.getElementById('signup_name').value;
+            const company = document.getElementById('signup_company').value;
+            const email = document.getElementById('signup_email').value;
+            const password = document.getElementById('signup_password').value;
+            const plan = document.getElementById('selected_plan').value;
+            const btn = document.getElementById('signup_btn');
+
+            btn.disabled = true;
+            try {
+                const res = await fetch(`${API_URL}/api/auth/signup`, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                        full_name: name,
+                        company_name: company,
+                        email,
+                        password,
+                        plan
+                    })
+                });
+
+                const data = await res.json();
+                if (res.ok) {
+                    localStorage.setItem('token', data.access_token);
+                    localStorage.setItem('user', JSON.stringify(data.user));
+                    window.location.href = '/dashboard.html';
+                } else {
+                    showError(data.detail || 'Kayıt başarısız');
+                }
+            } catch (err) {
+                showError('Bağlantı hatası');
+            } finally {
+                btn.disabled = false;
+            }
+        }
+    </script>
+</body>
+</html>

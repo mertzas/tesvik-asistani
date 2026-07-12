@@ -1,17 +1,26 @@
-fastapi==0.104.1
-uvicorn[standard]==0.24.0
-sqlalchemy==2.0.23
-psycopg2-binary==2.9.9
-requests==2.31.0
-beautifulsoup4==4.12.2
-pydantic==2.5.0
-pydantic-settings==2.1.0
-python-jose[cryptography]==3.3.0
-passlib[bcrypt]==1.7.4
-python-multipart==0.0.6
-stripe==7.4.0
-email-validator==2.1.0
-jinja2==3.1.2
-python-dotenv==1.0.0
-alembic==1.13.0
-sqlmodel==0.0.14
+fastapi>=0.115
+uvicorn[standard]>=0.30
+sqlalchemy>=2.0.30
+requests>=2.31
+beautifulsoup4>=4.12
+pydantic>=2.9
+pydantic-settings>=2.5
+pyjwt>=2.9
+passlib[bcrypt]>=1.7.4
+# passlib 1.7.4 (bakimi birakilmis) bcrypt>=4.1 ile "password cannot be
+# longer than 72 bytes" hatasi veriyor (dogrulandi, 2026-07-10) - passlib'in
+# kendi ic self-test'i yeni bcrypt API'siyle uyumsuz. bcrypt'i uyumlu
+# surume sabitliyoruz.
+bcrypt<4.1
+python-multipart>=0.0.9
+stripe>=7.4
+email-validator>=2.1
+jinja2>=3.1
+python-dotenv>=1.0
+alembic>=1.13
+apscheduler>=3.10
+
+# Yalnizca PostgreSQL'e baglanacaksaniz gerekli (yerel gelistirmede SQLite
+# kullanildigi icin varsayilan olarak kurulmaz - Windows'ta derleme icin
+# C derleyicisi/PostgreSQL headers gerektirir, bkz. requirements-postgres.txt).
+# psycopg2-binary>=2.9

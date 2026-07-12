@@ -1,3 +1,5 @@
+from uuid import UUID
+
 import stripe
 from sqlalchemy.orm import Session
 
@@ -5,10 +7,11 @@ from app.models import Organization, PlanType, settings
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
 
-# Plan pricing configuration
+# Plan pricing configuration (Stripe Price ID'leri; gercek degerler .env'de
+# STRIPE_PRICE_PRO / STRIPE_PRICE_BUSINESS olarak tutulur)
 PLAN_PRICES = {
-    "pro": "price_1Aaaa11111111",      # ₺299/month (test mode)
-    "business": "price_1Bbbb22222222",  # ₺999/month (test mode)
+    "pro": settings.STRIPE_PRICE_PRO,
+    "business": settings.STRIPE_PRICE_BUSINESS,
 }
 
 PLAN_FEATURES = {
@@ -59,48 +62,68 @@ def create_stripe_customer(org: Organization, db: Session) -> str:
     return customer.id
 
 
-def create_subscription(org_id: str, plan_type: str, db: Session) -> dict:
-    """Upgrade organization to a paid plan."""
-    org = db.query(Organization).filter(Organization.id == org_id).first()
+def create_checkout_session(org_id: str, plan_type: str, db: Session) -> dict:
+    """Ilgili plan icin Stripe Checkout (barindirilan odeme sayfasi) oturumu olusturur.
+
+    Kullanici kart bilgilerini Stripe'in kendi sayfasinda girer; bizim
+    frontend'imizin Stripe.js/Elements entegrasyonuna ihtiyaci olmaz.
+    Odeme tamamlaninca org.plan guncellemesi iki yoldan biriyle olur:
+    1) Stripe webhook'u (checkout.session.completed) - production'da asil kaynak
+    2) success_url'e donusteki session_id ile confirm_checkout() cagrisi -
+       webhook receiver'i olmayan/lokal gelistirme ortamlari icin yedek yol
+    """
+    org = db.query(Organization).filter(Organization.id == UUID(org_id)).first()
     if not org:
         raise ValueError("Organization not found")
 
-    if plan_type not in PLAN_PRICES:
-        raise ValueError(f"Invalid plan type: {plan_type}")
+    if plan_type not in PLAN_PRICES or not PLAN_PRICES[plan_type]:
+        raise ValueError(f"Invalid plan type or price not configured: {plan_type}")
 
     customer_id = create_stripe_customer(org, db)
 
-    # Cancel existing subscription if present
-    if org.stripe_subscription_id:
-        try:
-            stripe.Subscription.delete(org.stripe_subscription_id)
-        except stripe.error.InvalidRequestError:
-            pass
-
-    # Create new subscription
-    subscription = stripe.Subscription.create(
+    session = stripe.checkout.Session.create(
         customer=customer_id,
-        items=[{"price": PLAN_PRICES[plan_type]}],
-        payment_behavior="default_incomplete",
-        expand=["latest_invoice.payment_intent"],
+        mode="subscription",
+        line_items=[{"price": PLAN_PRICES[plan_type], "quantity": 1}],
+        client_reference_id=str(org.id),
+        metadata={"org_id": str(org.id), "plan": plan_type},
+        subscription_data={"metadata": {"org_id": str(org.id), "plan": plan_type}},
+        success_url=f"{settings.APP_URL}/dashboard?checkout_session_id={{CHECKOUT_SESSION_ID}}",
+        cancel_url=f"{settings.APP_URL}/dashboard",
     )
 
-    org.stripe_subscription_id = subscription.id
+    return {"checkout_url": session.url, "session_id": session.id}
+
+
+def confirm_checkout_session(org_id: str, session_id: str, db: Session) -> dict:
+    """success_url'e donuste Checkout Session'in gercekten odendigini dogrular
+    ve org.plan'i webhook beklemeden gunceller (bkz. create_checkout_session)."""
+    org = db.query(Organization).filter(Organization.id == UUID(org_id)).first()
+    if not org:
+        raise ValueError("Organization not found")
+
+    session = stripe.checkout.Session.retrieve(session_id)
+
+    if session.client_reference_id != str(org.id):
+        raise ValueError("Bu odeme oturumu bu organizasyona ait degil")
+
+    if session.payment_status != "paid" and session.status != "complete":
+        raise ValueError(f"Odeme henuz tamamlanmadi (durum: {session.status})")
+
+    plan_type = session.metadata.get("plan")
+    if plan_type not in PLAN_PRICES:
+        raise ValueError(f"Gecersiz plan bilgisi: {plan_type}")
+
+    org.stripe_subscription_id = session.subscription
     org.plan = PlanType(plan_type)
     db.commit()
 
-    return {
-        "subscription_id": subscription.id,
-        "client_secret": subscription.latest_invoice.payment_intent.client_secret
-        if subscription.latest_invoice.payment_intent
-        else None,
-        "status": subscription.status,
-    }
+    return {"plan": plan_type, "status": "confirmed"}
 
 
 def cancel_subscription(org_id: str, db: Session) -> bool:
     """Cancel organization subscription and downgrade to free."""
-    org = db.query(Organization).filter(Organization.id == org_id).first()
+    org = db.query(Organization).filter(Organization.id == UUID(org_id)).first()
     if not org or not org.stripe_subscription_id:
         return False
 
@@ -117,14 +140,26 @@ def cancel_subscription(org_id: str, db: Session) -> bool:
 
 def handle_webhook(event: dict, db: Session):
     """Handle Stripe webhook events."""
-    if event["type"] == "customer.subscription.updated":
+    if event["type"] == "checkout.session.completed":
+        session = event["data"]["object"]
+        org_id = session.get("client_reference_id") or (session.get("metadata") or {}).get("org_id")
+        plan_type = (session.get("metadata") or {}).get("plan")
+        org = db.query(Organization).filter(Organization.id == UUID(org_id)).first() if org_id else None
+        if org and plan_type in PLAN_PRICES:
+            org.stripe_subscription_id = session.get("subscription")
+            org.plan = PlanType(plan_type)
+            db.commit()
+
+    elif event["type"] == "customer.subscription.updated":
         sub = event["data"]["object"]
         org = db.query(Organization).filter(
             Organization.stripe_subscription_id == sub["id"]
         ).first()
         if org:
-            org.plan = PlanType(sub["metadata"].get("plan", "free"))
-            db.commit()
+            plan_type = sub.get("metadata", {}).get("plan")
+            if plan_type in PLAN_PRICES:
+                org.plan = PlanType(plan_type)
+                db.commit()
 
     elif event["type"] == "customer.subscription.deleted":
         org = db.query(Organization).filter(

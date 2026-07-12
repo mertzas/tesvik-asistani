@@ -328,6 +328,121 @@
             border-radius: 5px;
             margin-bottom: 20px;
         }
+
+        .note-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .note-item {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
+            padding: 13px 16px;
+            border-radius: 8px;
+            font-size: 13.5px;
+            line-height: 1.6;
+        }
+
+        .note-item .note-icon {
+            font-size: 16px;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .note-info { background: #eef2ff; color: #3d4a7a; }
+        .note-warning { background: #fff3cd; color: #7a5c00; }
+        .note-good { background: #d4edda; color: #155724; }
+        .note-highlight { background: #fde8e8; color: #8a2f2f; }
+
+        .girdi-enflasyon-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+            gap: 12px;
+            margin-top: 14px;
+        }
+
+        .girdi-enflasyon-item {
+            text-align: center;
+            padding: 12px 8px;
+            border-radius: 8px;
+            background: #f8f9fb;
+        }
+
+        .girdi-enflasyon-item.en-yuksek {
+            background: #fde8e8;
+            box-shadow: 0 0 0 2px #f5b5b5 inset;
+        }
+
+        .girdi-enflasyon-item .deger {
+            font-size: 19px;
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .girdi-enflasyon-item.en-yuksek .deger {
+            color: #c0392b;
+        }
+
+        .girdi-enflasyon-item .etiket {
+            font-size: 11px;
+            color: #888;
+            margin-top: 4px;
+        }
+
+        .analist-paneli {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            padding: 22px 24px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .analist-paneli .baslik {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 17px;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .analist-paneli .alt-baslik {
+            font-size: 12.5px;
+            opacity: 0.85;
+            margin-bottom: 16px;
+        }
+
+        .analist-oneri-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .analist-oneri-item {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+            background: rgba(255, 255, 255, 0.14);
+            border-radius: 8px;
+            padding: 12px 14px;
+            font-size: 13.5px;
+            line-height: 1.55;
+        }
+
+        .analist-oneri-item .sira {
+            flex-shrink: 0;
+            width: 22px;
+            height: 22px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.25);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 11.5px;
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
@@ -335,6 +450,7 @@
         <div class="sidebar-logo">📊 Teşvik Asistanı</div>
         <ul class="sidebar-menu">
             <li><a href="#" class="menu-link active" data-section="search">🔍 Arama</a></li>
+            <li><a href="#" class="menu-link" data-section="profil">💼 Profil &amp; Öneriler</a></li>
             <li><a href="#" class="menu-link" data-section="analytics">📈 İstatistikler</a></li>
             <li><a href="#" class="menu-link" data-section="pricing">💳 Planlama</a></li>
             <li><a href="#" class="menu-link" data-section="history">📝 Geçmiş</a></li>
@@ -377,6 +493,131 @@
                 </div>
 
                 <div id="search-results" class="results"></div>
+            </div>
+        </div>
+
+        <!-- Profil & Oneriler Section -->
+        <div id="profil" class="section hidden">
+            <div class="search-section">
+                <h2>Finansal Profil</h2>
+                <p style="color:#666; margin: 10px 0 20px;">Sektörünüzü ve rakamlarınızı girin; size uygun teşvikleri ve stok/reklam bütçe önerinizi hesaplayalım.</p>
+                <form id="profil-form" style="display:grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                    <div>
+                        <label style="font-size:13px; color:#666;">Sektör</label>
+                        <select id="p-sektor" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                            <option value="tarim">Tarım</option>
+                            <option value="imalat">İmalat</option>
+                            <option value="perakende">Perakende</option>
+                            <option value="e-ticaret">E-ticaret</option>
+                            <option value="hizmet">Hizmet</option>
+                            <option value="ihracat">İhracat</option>
+                            <option value="arge">Ar-Ge</option>
+                            <option value="genel">Genel</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="font-size:13px; color:#666;">Bölge / İl</label>
+                        <input type="text" id="p-bolge" placeholder="Örn: Konya" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                    </div>
+                    <div>
+                        <label style="font-size:13px; color:#666;">Çalışan Sayısı</label>
+                        <input type="number" id="p-calisan" min="0" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                    </div>
+                    <div>
+                        <label style="font-size:13px; color:#666;">Yıllık Ciro (₺)</label>
+                        <input type="number" id="p-ciro" min="0" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                    </div>
+                    <div>
+                        <label style="font-size:13px; color:#666;">Aylık/Yıllık Stok Gideri (₺)</label>
+                        <input type="number" id="p-stok" min="0" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                    </div>
+                    <div>
+                        <label style="font-size:13px; color:#666;">Aylık/Yıllık Reklam Gideri (₺)</label>
+                        <input type="number" id="p-reklam" min="0" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                    </div>
+                    <div style="grid-column: 1 / -1;">
+                        <label style="font-size:13px; color:#666;">Stok/Reklam Ayrımını Bilmiyorsanız: Toplam Yıllık Gider (₺)</label>
+                        <input type="number" id="p-toplam-gider" min="0" placeholder="Örn: 550000" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                        <p style="font-size:12px; color:#999; margin-top:4px;">Bu alanı doldurursanız, yukarıdaki Stok/Reklam gideri alanlarını boş bırakabilirsiniz.</p>
+                    </div>
+                    <div style="grid-column: 1 / -1;">
+                        <label>
+                            <input type="checkbox" id="p-ilk-yil">
+                            İlk yıl / kuruluş yılı (arazi hazırlığı, sera, ekipman gibi tek seferlik giderler dahil)
+                        </label>
+                        <p style="font-size:12px; color:#999; margin-top:4px;">İşaretlerseniz, bütçe önerisinde ilk yıl giderinizin sektör ortalamasından yüksek çıkabileceğine dair bir not eklenir.</p>
+                    </div>
+                    <div id="ilk-yil-alani" style="grid-column: 1 / -1; display:none;">
+                        <label style="font-size:13px; color:#666;">İlk Yıl Kuruluş Gideriniz (₺) — arazi hazırlığı, sera, ekipman vb.</label>
+                        <input type="number" id="p-kurulus-gideri" min="0" placeholder="Örn: 150000" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                        <p style="font-size:12px; color:#999; margin-top:4px;">Bu tutar, toplam gideriniz sektör ortalamasıyla kıyaslanırken düşülür — sadece düzenli işletme gideriniz karşılaştırılır.</p>
+                    </div>
+                    <div id="tarim-alanlari" style="grid-column: 1 / -1; display:none; gap:15px; grid-template-columns: repeat(2, 1fr);">
+                        <div style="grid-column: 1 / -1;">
+                            <label style="font-size:13px; color:#666; font-weight:bold;">1) Tarımda ne yapıyorsunuz? — size en uygun destek ve bütçe önerisini bulmak için</label>
+                            <select id="p-tarim-kategori" onchange="onTarimKategoriDegisti()" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                                <option value="">— Seçiniz —</option>
+                                <option value="hayvancilik">🐄 Hayvancılık (büyükbaş/küçükbaş/kanatlı/arıcılık)</option>
+                                <option value="sebze_meyve">🍅 Sebze/Meyve Yetiştiriciliği</option>
+                                <option value="tahil_baklagil">🌾 Tahıl/Baklagil (buğday, arpa, mercimek vb.)</option>
+                                <option value="organik">🌱 Organik Tarım</option>
+                                <option value="sera">🏡 Seracılık/Örtüaltı</option>
+                                <option value="sulama">💧 Sulama Sistemi Kurmak İstiyorum</option>
+                                <option value="makinelestirme">🚜 Makine/Ekipman Almak İstiyorum</option>
+                                <option value="genel">Belirtmek İstemiyorum / Genel</option>
+                            </select>
+                            <p style="font-size:12px; color:#999; margin-top:4px;">Bu seçim, size hangi tarım desteklerinin gerçekten uygun olduğunu (örn. hayvancılık desteği yalnızca hayvancılık seçenlere) ve bütçe önerinizin hangi sektör ortalamasıyla kıyaslanacağını belirler.</p>
+                        </div>
+                        <div style="grid-column: 1 / -1;">
+                            <label style="font-size:13px; color:#666; font-weight:bold;">2) Ürününüz nedir? — çilek mi, muz mu, buğday mı</label>
+                            <input type="text" id="p-urun" list="p-urun-liste" placeholder="Örn: çilek, muz, domates, buğday" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                            <datalist id="p-urun-liste">
+                                <option value="çilek"><option value="muz"><option value="domates"><option value="biber">
+                                <option value="salatalık"><option value="patlıcan"><option value="elma"><option value="armut">
+                                <option value="üzüm"><option value="zeytin"><option value="buğday"><option value="arpa">
+                                <option value="mercimek"><option value="nohut"><option value="fındık"><option value="antep fıstığı">
+                                <option value="hayvancılık"><option value="süt"><option value="bal">
+                            </datalist>
+                            <p style="font-size:12px; color:#999; margin-top:4px;">Girdiğiniz ürün, güncel hal/ihracat/TMO fiyat verilerini bulmak için kullanılır — listede yoksa yine de yazabilirsiniz.</p>
+                        </div>
+                        <div>
+                            <label style="font-size:13px; color:#666;">Arazi Büyüklüğü (dekar)</label>
+                            <input type="number" id="p-arazi" min="0" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                        </div>
+                    </div>
+                    <div style="grid-column: 1 / -1;">
+                        <label style="font-size:13px; color:#666;">Hedefleriniz</label>
+                        <div style="display:flex; gap:15px; margin-top:8px; flex-wrap:wrap;">
+                            <label><input type="checkbox" value="yatirim" class="p-hedef"> Yatırım</label>
+                            <label><input type="checkbox" value="ihracat" class="p-hedef"> İhracat</label>
+                            <label><input type="checkbox" value="arge" class="p-hedef"> Ar-Ge</label>
+                            <label><input type="checkbox" value="istihdam" class="p-hedef"> İstihdam</label>
+                        </div>
+                        <div id="tarim-hedefler" style="display:none; gap:15px; margin-top:8px; flex-wrap:wrap;">
+                            <label><input type="checkbox" value="makine" class="p-hedef"> Makine Alımı</label>
+                            <label><input type="checkbox" value="sulama" class="p-hedef"> Sulama Sistemi</label>
+                            <label><input type="checkbox" value="hayvan" class="p-hedef"> Hayvancılık</label>
+                            <label><input type="checkbox" value="organik" class="p-hedef"> Organik Tarım</label>
+                        </div>
+                    </div>
+                    <div style="grid-column: 1 / -1; display:flex; gap:10px;">
+                        <button type="submit">Profili Kaydet</button>
+                        <button type="button" onclick="bulUygunDestekler()">Uygun Destekleri Bul</button>
+                        <button type="button" onclick="butceOnerisiAl()">Bütçe Önerisi Al</button>
+                    </div>
+                </form>
+                <div id="profil-mesaj"></div>
+            </div>
+
+            <div class="search-section" id="eslesme-section" style="display:none;">
+                <h2>Size Uygun Destekler</h2>
+                <div id="eslesme-ozet" style="margin-bottom:15px; font-weight:bold; color:#333;"></div>
+                <div id="eslesme-results" class="results"></div>
+            </div>
+
+            <div class="search-section" id="butce-section" style="display:none;">
+                <h2>Bütçe Önerisi</h2>
+                <div id="butce-results"></div>
             </div>
         </div>
 
@@ -423,14 +664,15 @@
         // Auth check
         if (!authToken) {
             window.location.href = "/";
-            return;
         }
 
         // Load dashboard on page load
-        document.addEventListener("DOMContentLoaded", () => {
-            loadOrganization();
+        document.addEventListener("DOMContentLoaded", async () => {
+            await loadOrganization();
+            await confirmCheckoutIfReturning();
             loadAnalytics();
             loadPricing();
+            loadFinancialProfile();
             setupMenuListeners();
         });
 
@@ -583,18 +825,20 @@
                         <li>✗ API erişimi</li>
                         <li>✗ Webhooks</li>
                     </ul>
-                    <button disabled>Mevcut Plan</button>
+                    <button ${currentOrg?.plan === "free" ? "disabled" : ""} onclick="downgradeToFree()">
+                        ${currentOrg?.plan === "free" ? "Mevcut Plan" : "Free'ye Dön"}
+                    </button>
                 </div>
 
                 <div class="plan ${currentOrg?.plan === "pro" ? "active" : ""}">
                     <h3>Pro</h3>
                     <div class="price">₺299<span style="font-size: 14px; color: #999;">/ay</span></div>
                     <ul>
+                        <li>✓ Kişiselleştirilmiş teşvik eşleştirme</li>
+                        <li>✓ Stok/reklam bütçe önerisi</li>
                         <li>✓ Sınırsız sorgu</li>
-                        <li>✓ Tüm kurumlar</li>
                         <li>✓ API erişimi</li>
                         <li>✓ Priority support</li>
-                        <li>✗ Webhooks</li>
                     </ul>
                     <button onclick="upgradePlan('pro')">
                         ${currentOrg?.plan === "pro" ? "Mevcut Plan" : "Yükselt"}
@@ -605,9 +849,8 @@
                     <h3>Business</h3>
                     <div class="price">₺999<span style="font-size: 14px; color: #999;">/ay</span></div>
                     <ul>
-                        <li>✓ Sınırsız sorgu</li>
-                        <li>✓ Tüm kurumlar</li>
-                        <li>✓ API erişimi</li>
+                        <li>✓ Pro'daki her şey</li>
+                        <li>✓ 10 takım üyesine kadar</li>
                         <li>✓ Webhooks</li>
                         <li>✓ Dedicated support</li>
                     </ul>
@@ -621,8 +864,602 @@
         async function upgradePlan(plan) {
             if (currentOrg?.plan === plan) return;
 
-            alert(`Plan yükseltme işlemi başlatılıyor. Stripe entegrasyonu için: ${plan}`);
-            // TODO: Stripe integration
+            try {
+                const res = await fetch(`${API_BASE}/organizations/upgrade`, {
+                    method: "POST",
+                    headers: {
+                        "Authorization": `Bearer ${authToken}`,
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ plan })
+                });
+
+                if (!res.ok) {
+                    const err = await res.json();
+                    alert(err.detail || "Ödeme sayfası oluşturulamadı");
+                    return;
+                }
+
+                const data = await res.json();
+                window.location.href = data.checkout_url;
+            } catch (e) {
+                alert(`Hata: ${e.message}`);
+            }
+        }
+
+        async function confirmCheckoutIfReturning() {
+            const params = new URLSearchParams(window.location.search);
+            const sessionId = params.get("checkout_session_id");
+            if (!sessionId) return;
+
+            try {
+                const res = await fetch(`${API_BASE}/organizations/confirm-checkout?session_id=${encodeURIComponent(sessionId)}`, {
+                    method: "POST",
+                    headers: { "Authorization": `Bearer ${authToken}` }
+                });
+
+                window.history.replaceState({}, "", "/dashboard");
+
+                if (res.ok) {
+                    await loadOrganization();
+                    loadPricing();
+                    alert("Ödeme başarılı! Planınız güncellendi.");
+                } else {
+                    const err = await res.json();
+                    alert(`Ödeme doğrulanamadı: ${err.detail}`);
+                }
+            } catch (e) {
+                console.error("Checkout confirmation error:", e);
+            }
+        }
+
+        async function downgradeToFree() {
+            if (!confirm("Free plana dönmek istediğinize emin misiniz? Ödemeli özelliklere erişiminiz sona erecek.")) return;
+
+            try {
+                const res = await fetch(`${API_BASE}/organizations/downgrade`, {
+                    method: "POST",
+                    headers: { "Authorization": `Bearer ${authToken}` }
+                });
+                if (!res.ok) {
+                    const err = await res.json();
+                    alert(err.detail || "İşlem başarısız");
+                    return;
+                }
+                await loadOrganization();
+                loadPricing();
+            } catch (e) {
+                alert(`Hata: ${e.message}`);
+            }
+        }
+
+        function requirePlanUpgradeMessage(container) {
+            container.innerHTML = `<div class="error">Bu özellik PRO ve üzeri planlarda kullanılabilir. <a href="#" onclick="showSection('pricing'); document.querySelector('[data-section=pricing]').click(); return false;">Planınızı yükseltin</a>.</div>`;
+        }
+
+        async function loadFinancialProfile() {
+            try {
+                const res = await fetch(`${API_BASE}/profil`, {
+                    headers: { "Authorization": `Bearer ${authToken}` }
+                });
+                if (!res.ok) return;
+                const p = await res.json();
+                document.getElementById("p-sektor").value = p.sektor || "genel";
+                document.getElementById("p-bolge").value = p.bolge || "";
+                document.getElementById("p-calisan").value = p.calisan_sayisi ?? "";
+                document.getElementById("p-ciro").value = p.yillik_ciro ?? "";
+                document.getElementById("p-stok").value = p.giderler?.stok ?? "";
+                document.getElementById("p-reklam").value = p.giderler?.reklam ?? "";
+                document.getElementById("p-toplam-gider").value = p.giderler?.toplam ?? "";
+                document.getElementById("p-arazi").value = p.arazi_buyuklugu_dekar ?? "";
+                document.getElementById("p-urun").value = p.urun_turu ?? "";
+                document.getElementById("p-tarim-kategori").value = p.tarim_kategori ?? "";
+                onTarimKategoriDegisti();
+                document.getElementById("p-urun").value = p.urun_turu ?? "";
+                document.getElementById("p-ilk-yil").checked = !!p.ilk_yil_mi;
+                document.getElementById("p-kurulus-gideri").value = p.giderler?.kurulus ?? "";
+                document.querySelectorAll(".p-hedef").forEach(cb => {
+                    cb.checked = (p.hedefler || []).includes(cb.value);
+                });
+                toggleTarimAlanlari();
+                toggleIlkYilAlani();
+            } catch (e) {
+                console.error("Error loading profile:", e);
+            }
+        }
+
+        function toggleTarimAlanlari() {
+            const isTarim = document.getElementById("p-sektor").value === "tarim";
+            document.getElementById("tarim-alanlari").style.display = isTarim ? "grid" : "none";
+            document.getElementById("tarim-hedefler").style.display = isTarim ? "flex" : "none";
+        }
+
+        function toggleIlkYilAlani() {
+            const isIlkYil = document.getElementById("p-ilk-yil").checked;
+            document.getElementById("ilk-yil-alani").style.display = isIlkYil ? "block" : "none";
+        }
+
+        // Kategoriye gore urun input'unun placeholder'ini ve oneri listesini
+        // (datalist) daraltir - "sera" secildiginde "muz, domates" gibi, "hayvancilik"
+        // secildiginde "sut, bal, et" gibi. Kullanicinin serbest yazmasina hala izin
+        // veriyoruz (datalist zorunlu secim degil), sadece rehberlik ediyoruz.
+        const KATEGORI_URUN_ONERILERI = {
+            hayvancilik: ["hayvancılık", "süt", "bal", "et"],
+            sebze_meyve: ["çilek", "muz", "domates", "biber", "salatalık", "patlıcan", "elma", "armut", "üzüm"],
+            tahil_baklagil: ["buğday", "arpa", "mercimek", "nohut"],
+            organik: ["çilek", "domates", "buğday", "elma"],
+            sera: ["domates", "biber", "salatalık", "çilek", "muz"],
+            sulama: [],
+            makinelestirme: [],
+            genel: [],
+        };
+
+        function onTarimKategoriDegisti() {
+            const kategori = document.getElementById("p-tarim-kategori").value;
+            const urunInput = document.getElementById("p-urun");
+            const oneriler = KATEGORI_URUN_ONERILERI[kategori] || [];
+
+            const datalist = document.getElementById("p-urun-liste");
+            if (oneriler.length) {
+                datalist.innerHTML = oneriler.map(u => `<option value="${u}">`).join("");
+                urunInput.placeholder = `Örn: ${oneriler.slice(0, 3).join(", ")}`;
+            } else {
+                datalist.innerHTML = `
+                    <option value="çilek"><option value="muz"><option value="domates"><option value="biber">
+                    <option value="salatalık"><option value="patlıcan"><option value="elma"><option value="armut">
+                    <option value="üzüm"><option value="zeytin"><option value="buğday"><option value="arpa">
+                    <option value="mercimek"><option value="nohut"><option value="fındık"><option value="antep fıstığı">
+                    <option value="hayvancılık"><option value="süt"><option value="bal">`;
+                urunInput.placeholder = "Örn: çilek, muz, domates, buğday";
+            }
+        }
+
+        function readProfilForm() {
+            const hedefler = Array.from(document.querySelectorAll(".p-hedef:checked")).map(cb => cb.value);
+            const stok = document.getElementById("p-stok").value;
+            const reklam = document.getElementById("p-reklam").value;
+            const toplamGider = document.getElementById("p-toplam-gider").value;
+            const arazi = document.getElementById("p-arazi").value;
+            const urun = document.getElementById("p-urun").value;
+            const tarimKategori = document.getElementById("p-tarim-kategori").value;
+            const ilkYil = document.getElementById("p-ilk-yil").checked;
+            const kurulusGideri = document.getElementById("p-kurulus-gideri").value;
+
+            let giderler = null;
+            if (stok || reklam) {
+                giderler = { stok: stok ? Number(stok) : null, reklam: reklam ? Number(reklam) : null };
+            } else if (toplamGider) {
+                giderler = { toplam: Number(toplamGider) };
+            }
+            if (ilkYil && kurulusGideri) {
+                giderler = { ...(giderler || {}), kurulus: Number(kurulusGideri) };
+            }
+
+            return {
+                sektor: document.getElementById("p-sektor").value,
+                bolge: document.getElementById("p-bolge").value || null,
+                calisan_sayisi: document.getElementById("p-calisan").value ? Number(document.getElementById("p-calisan").value) : null,
+                yillik_ciro: document.getElementById("p-ciro").value ? Number(document.getElementById("p-ciro").value) : null,
+                hedefler: hedefler.length ? hedefler : null,
+                giderler: giderler,
+                arazi_buyuklugu_dekar: arazi ? Number(arazi) : null,
+                urun_turu: urun || null,
+                tarim_kategori: tarimKategori || null,
+                ilk_yil_mi: document.getElementById("p-ilk-yil").checked,
+            };
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            const sektorSelect = document.getElementById("p-sektor");
+            if (sektorSelect) {
+                sektorSelect.addEventListener("change", toggleTarimAlanlari);
+            }
+            const ilkYilCheckbox = document.getElementById("p-ilk-yil");
+            if (ilkYilCheckbox) {
+                ilkYilCheckbox.addEventListener("change", toggleIlkYilAlani);
+            }
+            const form = document.getElementById("profil-form");
+            if (form) {
+                form.addEventListener("submit", async (e) => {
+                    e.preventDefault();
+                    const mesajDiv = document.getElementById("profil-mesaj");
+                    mesajDiv.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+                    try {
+                        const res = await fetch(`${API_BASE}/profil`, {
+                            method: "PUT",
+                            headers: {
+                                "Authorization": `Bearer ${authToken}`,
+                                "Content-Type": "application/json"
+                            },
+                            body: JSON.stringify(readProfilForm())
+                        });
+                        if (!res.ok) {
+                            const err = await res.json();
+                            mesajDiv.innerHTML = `<div class="error">${err.detail}</div>`;
+                            return;
+                        }
+                        mesajDiv.innerHTML = `<div class="success">Profil kaydedildi.</div>`;
+                    } catch (e2) {
+                        mesajDiv.innerHTML = `<div class="error">Hata: ${e2.message}</div>`;
+                    }
+                });
+            }
+        });
+
+        async function bulUygunDestekler() {
+            const section = document.getElementById("eslesme-section");
+            const ozetDiv = document.getElementById("eslesme-ozet");
+            const resultsDiv = document.getElementById("eslesme-results");
+            section.style.display = "block";
+            resultsDiv.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+            ozetDiv.innerHTML = "";
+
+            try {
+                const res = await fetch(`${API_BASE}/eslesme`, {
+                    headers: { "Authorization": `Bearer ${authToken}` }
+                });
+
+                if (res.status === 403) {
+                    requirePlanUpgradeMessage(resultsDiv);
+                    return;
+                }
+                if (res.status === 404) {
+                    resultsDiv.innerHTML = `<div class="error">Önce yukarıdan profilinizi kaydedin.</div>`;
+                    return;
+                }
+                if (!res.ok) {
+                    const err = await res.json();
+                    resultsDiv.innerHTML = `<div class="error">${err.detail}</div>`;
+                    return;
+                }
+
+                const data = await res.json();
+
+                if (data.tahmini_toplam_destek_max > 0) {
+                    ozetDiv.textContent = `Tahmini toplam alınabilecek destek: ₺${data.tahmini_toplam_destek_min.toLocaleString('tr-TR')} - ₺${data.tahmini_toplam_destek_max.toLocaleString('tr-TR')}`;
+                }
+
+                if (!data.eslesen_tesvikler.length) {
+                    resultsDiv.innerHTML = `<div class="error">Profilinize uygun destek bulunamadı. Sektör/hedef bilgilerinizi güncelleyin.</div>`;
+                    return;
+                }
+
+                // Kıyaslama Tablosu: Aynı DAR alt_kategori'deki (hayvancilik, organik,
+                // sulama vb.) 3+ destek varsa karşılaştır. Genel 'kategori' (örn. hepsi
+                // "tarim") burada YETERİNCE AYIRT EDİCİ DEĞİL - Hayvancılık, Organik,
+                // Sulama gibi birbirinden tamamen farklı destekler hepsi "tarim"
+                // kategorisinde olduğu için kategoriye göre gruplarsak alakasız
+                // destekler aynı tabloya düşer. alt_kategori olmayan (KOSGEB/TÜBİTAK/KGF
+                // gibi) kayıtları da gruplamaya hiç dahil etmiyoruz.
+                const kategoriGrouplar = {};
+                data.eslesen_tesvikler.forEach(t => {
+                    const altKategori = t.alt_kategori;
+                    if (!altKategori) return;
+                    if (!kategoriGrouplar[altKategori]) kategoriGrouplar[altKategori] = [];
+                    kategoriGrouplar[altKategori].push(t);
+                });
+
+                let kiyaslamaTablosuHtml = '';
+                for (const [kategori, destekler] of Object.entries(kategoriGrouplar)) {
+                    if (destekler.length >= 3) {
+                        kiyaslamaTablosuHtml += `
+                        <div style="margin-top:30px; padding:20px; background:#f8f9fa; border-radius:8px; border-left:4px solid #667eea;">
+                            <h3 style="margin:0 0 15px 0; color:#333;">🔄 ${kategori.charAt(0).toUpperCase() + kategori.slice(1)} Destekleri - Karşılaştırma</h3>
+                            <table style="width:100%; border-collapse:collapse; font-size:13px;">
+                                <thead>
+                                    <tr style="background:#667eea; color:white;">
+                                        <th style="padding:10px; text-align:left;">Destek</th>
+                                        <th style="padding:10px; text-align:left;">Kurum</th>
+                                        <th style="padding:10px; text-align:center;">Tutar Aralığı</th>
+                                        <th style="padding:10px; text-align:center;">Başvuru</th>
+                                        <th style="padding:10px; text-align:left;">Başvuru Yeri</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    ${destekler.map((t, i) => `
+                                    <tr style="border-bottom:1px solid #ddd; background:${i % 2 === 0 ? 'white' : '#fafafa'};">
+                                        <td style="padding:10px;"><strong>${t.baslik}</strong></td>
+                                        <td style="padding:10px;">${t.kurum}</td>
+                                        <td style="padding:10px; text-align:center; font-size:12px;">${t.tutari_min && t.tutari_max ? `₺${(t.tutari_min/1000).toFixed(0)}K - ₺${(t.tutari_max/1000).toFixed(0)}K` : t.tesvil_tutari || '-'}</td>
+                                        <td style="padding:10px; text-align:center; font-size:12px; color:#666;">${t.basvuru_suresi ? t.basvuru_suresi.split(' ')[0] : '-'}</td>
+                                        <td style="padding:10px; font-size:12px;">${t.basvuru_yeri || '-'}</td>
+                                    </tr>
+                                    `).join('')}
+                                </tbody>
+                            </table>
+                        </div>`;
+                    }
+                }
+
+                resultsDiv.innerHTML = data.eslesen_tesvikler.map((t, idx) => `
+                    <div class="result-card">
+                        <div class="kurum">${t.kurum} · Skor: ${(t.skor * 100).toFixed(0)}%</div>
+                        <div class="baslik">${t.baslik}</div>
+                        <div class="ozet">${t.ozet}</div>
+                        ${t.tesvil_tutari ? `<div class="meta"><span>💰 ${t.tesvil_tutari}</span></div>` : ""}
+                        ${t.tutari_tahmini_profil ? `<div class="meta"><span>🎯 Tahmini: ₺${t.tutari_tahmini_profil.toLocaleString('tr-TR', {maximumFractionDigits:0})}</span></div>` : ""}
+                        ${t.gerekce.length ? `<div class="meta" style="flex-direction:column; align-items:flex-start; gap:5px; margin-top:8px;">${t.gerekce.map(g => `<span>✓ ${g}</span>`).join("")}</div>` : ""}
+                        ${t.eksik_kriterler.length ? `<div class="meta" style="flex-direction:column; align-items:flex-start; gap:5px; margin-top:8px; color:#856404;">${t.eksik_kriterler.map(g => `<span>⚠ ${g}</span>`).join("")}</div>` : ""}
+
+                        <details style="margin-top:15px; padding-top:15px; border-top:1px solid #eee;">
+                            <summary style="cursor:pointer; font-weight:bold; color:#667eea;">📋 Başvuru Rehberi</summary>
+                            <div style="margin-top:10px; font-size:13px; line-height:1.6;">
+                                ${t.tutari_hesaplama_formulu ? `<div style="margin-bottom:10px;"><strong>Tutar Hesaplama:</strong> ${t.tutari_hesaplama_formulu}</div>` : ""}
+                                ${t.basvuru_suresi ? `<div style="margin-bottom:8px;"><strong>Başvuru Süresi:</strong> ${t.basvuru_suresi}</div>` : ""}
+                                ${t.basvuru_yeri ? `<div style="margin-bottom:8px;"><strong>Başvuru Yeri:</strong> ${t.basvuru_yeri}</div>` : ""}
+                                ${t.destek_verilme_suresi ? `<div style="margin-bottom:8px;"><strong>Destek Verilme Süresi:</strong> ${t.destek_verilme_suresi}</div>` : ""}
+                                ${t.basvuru_sartlari && t.basvuru_sartlari.length ? `<div style="margin-bottom:8px;"><strong>Şartlar:</strong><ul style="margin:5px 0 0 20px;">${t.basvuru_sartlari.map(s => `<li>${s}</li>`).join("")}</ul></div>` : ""}
+                                ${t.gerekli_belgeler && t.gerekli_belgeler.length ? `<div><strong>Gerekli Belgeler:</strong><ul style="margin:5px 0 0 20px;">${t.gerekli_belgeler.map(b => `<li>${b}</li>`).join("")}</ul></div>` : ""}
+                                ${!t.basvuru_suresi && !t.basvuru_yeri && !(t.basvuru_sartlari && t.basvuru_sartlari.length) ? `
+                                <div style="color:#856404;">Bu destek için şart/belge/tarih detayı henüz sistemimizde işlenmedi.${t.kaynak_url ? ` Güncel ve kesin bilgi için <a href="${t.kaynak_url}" target="_blank" rel="noopener">resmi kaynağı</a> inceleyin.` : " Kurumun resmi web sitesinden kontrol edin."}</div>
+                                ` : ""}
+                            </div>
+                        </details>
+
+                        ${t.kaynak_url ? `<a href="${t.kaynak_url}" target="_blank" rel="noopener" style="display:inline-block; margin-top:10px; padding:7px 14px; background:#667eea; color:white; text-decoration:none; border-radius:5px; font-size:12px; font-weight:bold;">🔗 Resmi Kaynak</a>` : ""}
+                    </div>
+                `).join("") + kiyaslamaTablosuHtml;
+            } catch (e) {
+                resultsDiv.innerHTML = `<div class="error">Hata: ${e.message}</div>`;
+            }
+        }
+
+        async function butceOnerisiAl() {
+            const section = document.getElementById("butce-section");
+            const resultsDiv = document.getElementById("butce-results");
+            section.style.display = "block";
+            resultsDiv.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+
+            try {
+                const res = await fetch(`${API_BASE}/butce-onerisi`, {
+                    headers: { "Authorization": `Bearer ${authToken}` }
+                });
+
+                if (res.status === 403) {
+                    requirePlanUpgradeMessage(resultsDiv);
+                    return;
+                }
+                if (res.status === 404) {
+                    resultsDiv.innerHTML = `<div class="error">Önce yukarıdan profilinizi kaydedin.</div>`;
+                    return;
+                }
+                if (!res.ok) {
+                    const err = await res.json();
+                    resultsDiv.innerHTML = `<div class="error">${err.detail}</div>`;
+                    return;
+                }
+
+                const b = await res.json();
+                const fmt = (n) => `₺${Number(n).toLocaleString('tr-TR', { maximumFractionDigits: 0 })}`;
+
+                const girdiEtiketleri = {
+                    gubre: "Gübre", ilac: "Tarımsal İlaç", yem: "Hayvan Yemi",
+                    bina_sera: "Bina/Sera Yapımı", makine_bakim: "Makine Bakımı",
+                };
+
+                let girdiKartiHtml = "";
+                if (b.tarim_girdi_enflasyonu) {
+                    const siraliGirdiler = Object.entries(b.tarim_girdi_enflasyonu)
+                        .filter(([, v]) => v != null)
+                        .sort(([, a], [, c]) => c - a);
+
+                    girdiKartiHtml = `
+                    <div class="stat-card" style="margin-top:20px;">
+                        <h3>📦 Tarımsal Girdi Fiyat Artışı <span style="font-weight:normal; color:#999; font-size:12px;">(Son 1 Yıl, TÜİK)</span></h3>
+                        <div class="girdi-enflasyon-grid">
+                            ${siraliGirdiler.map(([anahtar, deger], i) => `
+                                <div class="girdi-enflasyon-item ${i === 0 ? "en-yuksek" : ""}">
+                                    <div class="deger">%${deger}</div>
+                                    <div class="etiket">${girdiEtiketleri[anahtar] || anahtar}</div>
+                                </div>
+                            `).join("")}
+                        </div>
+                    </div>`;
+                }
+
+                let urunFiyatiHtml = "";
+                if (b.guncel_urun_fiyati && b.guncel_urun_fiyati.kaynak_tipi === "hal_cilek") {
+                    const uf = b.guncel_urun_fiyati;
+                    const kaliteEtiketleri = { sofralik_standart: "Sofralık Standart", sofralik_premium: "Sofralık Premium", sanayilik_recellik: "Sanayilik/Reçellik" };
+                    urunFiyatiHtml = `
+                    <div class="stat-card" style="margin-top:20px; border-left-color:#2ecc71;">
+                        <h3>🍓 Güncel Hal Fiyatı <span style="font-weight:normal; color:#999; font-size:12px;">(${uf.veri_tarihi})</span></h3>
+                        <div style="display:flex; gap:30px; flex-wrap:wrap; margin-top:12px;">
+                            ${uf.kalite_bazli_fiyatlar.map(k => `
+                                <div>
+                                    <div style="font-size:20px; font-weight:bold; color:#27ae60;">₺${k.fiyat_kg.toFixed(2)}/kg</div>
+                                    <div style="font-size:11px; color:#999;">${kaliteEtiketleri[k.kalite_sinifi] || k.kalite_sinifi}${k.hacim_kg != null ? ` · ${fmt(k.hacim_kg)} kg hacim` : ""}</div>
+                                </div>
+                            `).join("")}
+                        </div>
+                        <p style="font-size:11px; color:#999; margin-top:10px;">${uf.kaynak}. Bölgenize ve kalite sınıfınıza göre gerçek teklifler farklılık gösterebilir.</p>
+                    </div>`;
+                } else if (b.guncel_urun_fiyati && b.guncel_urun_fiyati.kaynak_tipi === "hal_genel") {
+                    const uf = b.guncel_urun_fiyati;
+                    urunFiyatiHtml = `
+                    <div class="stat-card" style="margin-top:20px; border-left-color:#2ecc71;">
+                        <h3>🧺 Güncel Hal Fiyatı — ${uf.urun_adi} <span style="font-weight:normal; color:#999; font-size:12px;">(${uf.veri_tarihi})</span></h3>
+                        <div style="display:flex; gap:24px; flex-wrap:wrap; margin-top:12px;">
+                            ${uf.kalemler.map(k => `
+                                <div>
+                                    <div style="font-size:18px; font-weight:bold; color:#27ae60;">₺${k.fiyat_kg.toFixed(2)}/kg</div>
+                                    <div style="font-size:11px; color:#999;">${k.urun_cinsi} · ${k.urun_turu}${k.miktar_kg != null ? ` · ${fmt(k.miktar_kg)} kg` : ""}</div>
+                                </div>
+                            `).join("")}
+                        </div>
+                        <p style="font-size:11px; color:#999; margin-top:10px;">${uf.kaynak}. Bölgenize ve çeşide göre gerçek teklifler farklılık gösterebilir.</p>
+                    </div>`;
+                } else if (b.guncel_urun_fiyati) {
+                    const uf = b.guncel_urun_fiyati;
+                    urunFiyatiHtml = `
+                    <div class="stat-card" style="margin-top:20px; border-left-color:#2ecc71;">
+                        <h3>🌾 Güncel Ürün Fiyatı <span style="font-weight:normal; color:#999; font-size:12px;">(TMO ${uf.sezon} sezonu)</span></h3>
+                        <div style="display:flex; gap:30px; flex-wrap:wrap; margin-top:12px;">
+                            <div>
+                                <div style="font-size:20px; font-weight:bold; color:#27ae60;">${fmt(uf.alim_fiyati_ton)}/ton</div>
+                                <div style="font-size:11px; color:#999;">TMO garanti alım fiyatı</div>
+                            </div>
+                            <div>
+                                <div style="font-size:20px; font-weight:bold; color:#27ae60;">${fmt(uf.destekli_gelir_ton)}/ton</div>
+                                <div style="font-size:11px; color:#999;">Destekler dahil tahmini gelir</div>
+                            </div>
+                        </div>
+                        <p style="font-size:11px; color:#999; margin-top:10px;">${uf.urun_adi} için ${uf.kaynak}. Piyasada bu taban fiyatın üzerinde teklif de alabilirsiniz — özel alıcılarla pazarlık ederken bu rakamı referans olarak kullanın.</p>
+                    </div>`;
+                }
+
+                let ihracatFiyatiHtml = "";
+                if (b.guncel_ihracat_fiyati) {
+                    const ifz = b.guncel_ihracat_fiyati;
+                    ihracatFiyatiHtml = `
+                    <div class="stat-card" style="margin-top:20px; border-left-color:#e67e22;">
+                        <h3>🚢 İhracat Referans Fiyatı <span style="font-weight:normal; color:#999; font-size:12px;">(${ifz.veri_tarihi})</span></h3>
+                        <div style="display:flex; gap:24px; flex-wrap:wrap; margin-top:12px;">
+                            ${ifz.kalemler.map(k => `
+                                <div>
+                                    <div style="font-size:18px; font-weight:bold; color:#d35400;">₺${k.fiyat_kg.toFixed(2)}/kg</div>
+                                    <div style="font-size:11px; color:#999;">${k.urun_cinsi} · ${k.urun_turu}${k.miktar_kg != null ? ` · ${fmt(k.miktar_kg)} kg` : ""}</div>
+                                </div>
+                            `).join("")}
+                        </div>
+                        <p style="font-size:11px; color:#999; margin-top:10px;">${ifz.kaynak}. Gümrük/ihracat beyanında kullanılan resmi referans fiyattır, gerçek satış fiyatınız farklı olabilir.</p>
+                    </div>`;
+                }
+
+                let disTicaretHtml = "";
+                if (b.tarim_dis_ticaret) {
+                    const dt = b.tarim_dis_ticaret;
+                    const acikMi = dt.denge_milyon_usd < 0;
+                    disTicaretHtml = `
+                    <div class="stat-card" style="margin-top:20px; border-left-color:${acikMi ? "#e74c3c" : "#27ae60"};">
+                        <h3>🌍 Tarım Sektörü Dış Ticareti <span style="font-weight:normal; color:#999; font-size:12px;">(TÜİK/EVDS, aylık)</span></h3>
+                        <div style="display:flex; gap:24px; flex-wrap:wrap; margin-top:12px;">
+                            <div>
+                                <div style="font-size:18px; font-weight:bold; color:#27ae60;">$${dt.ihracat_milyon_usd.toLocaleString('tr-TR')}M</div>
+                                <div style="font-size:11px; color:#999;">İhracat</div>
+                            </div>
+                            <div>
+                                <div style="font-size:18px; font-weight:bold; color:#e74c3c;">$${dt.ithalat_milyon_usd.toLocaleString('tr-TR')}M</div>
+                                <div style="font-size:11px; color:#999;">İthalat</div>
+                            </div>
+                            <div>
+                                <div style="font-size:18px; font-weight:bold; color:${acikMi ? "#e74c3c" : "#27ae60"};">${acikMi ? "-" : "+"}$${Math.abs(dt.denge_milyon_usd).toLocaleString('tr-TR')}M</div>
+                                <div style="font-size:11px; color:#999;">${acikMi ? "Dış ticaret açığı" : "Dış ticaret fazlası"}</div>
+                            </div>
+                        </div>
+                        <p style="font-size:11px; color:#999; margin-top:10px;">Sektörün genel rekabet gücüne dair bir referanstır, işletmenizin ihracat/ithalat durumunu yansıtmaz.</p>
+                    </div>`;
+                }
+
+                let urunVeriYokHtml = "";
+                if (b.urun_veri_yok_mesaji) {
+                    urunVeriYokHtml = `
+                    <div class="stat-card" style="margin-top:20px; border-left-color:#95a5a6; background:#f8f9fa;">
+                        <h3 style="display:flex; align-items:center; gap:8px;">🌱 Ürün Bazlı Veri Yok</h3>
+                        <p style="font-size:13px; color:#666; margin-top:8px; line-height:1.5;">${b.urun_veri_yok_mesaji}</p>
+                    </div>`;
+                }
+
+                let bolgeselTavsiyeHtml = "";
+                if (b.bolgesel_tavsiye) {
+                    const bt = b.bolgesel_tavsiye;
+                    bolgeselTavsiyeHtml = `
+                    <div class="stat-card" style="margin-top:20px; border-left-color:#8e44ad;">
+                        <h3 style="display:flex; align-items:center; gap:8px;">📍 ${bt.bolge_adi} - Bölgesel Tarım Tavsiyesi</h3>
+                        <div style="display:flex; flex-wrap:wrap; gap:6px; margin:10px 0;">
+                            ${bt.one_cikan_urunler.map(u => `<span style="background:#f3e5f5; color:#6c3483; padding:4px 10px; border-radius:12px; font-size:12px;">${u}</span>`).join("")}
+                        </div>
+                        <p style="font-size:13px; color:#444; line-height:1.6;">${bt.tavsiye}</p>
+                        <p style="font-size:11px; color:#999; margin-top:8px;">${bt.kaynak}</p>
+                    </div>`;
+                }
+
+                let enYuksekBanner = "";
+                if (b.en_yuksek_artan_girdi) {
+                    enYuksekBanner = `
+                    <div class="note-item note-highlight" style="margin-top:20px;">
+                        <span class="note-icon">🔥</span>
+                        <span><strong>En hızlı artan gideriniz: ${b.en_yuksek_artan_girdi.etiket}</strong> — son 1 yılda %${b.en_yuksek_artan_girdi.artis} arttı.
+                        Bütçenizde bu kalem için pay ayırırken önceliklendirin; tam gübre/ilaç türü ve dozu için İl/İlçe Tarım Müdürlüğü'nden toprak tahlili bazlı tavsiye alın.</span>
+                    </div>`;
+                }
+
+                // Notlari turune gore ikon/renk ile ayri kutucuklara bol; tarim girdi
+                // ozeti ayri bir kart+banner ile zaten gosterildigi icin metin
+                // tekrarini onlemek adina o notu genel listeden cikar.
+                const notIkonla = (metin) => {
+                    if (metin.includes("TUIK Tarimsal Girdi") || metin.includes("Tarımsal Girdi")) return null;
+                    if (metin.includes("altinda") || metin.includes("altında")) return { tip: "note-info", ikon: "📉" };
+                    if (metin.includes("uzerinde") || metin.includes("üzerinde")) return { tip: "note-warning", ikon: "📈" };
+                    if (metin.includes("araligina uygun") || metin.includes("aralığına uygun")) return { tip: "note-good", ikon: "✅" };
+                    if (metin.includes("Ilk yil") || metin.includes("İlk yil") || metin.includes("İlk yıl")) return { tip: "note-warning", ikon: "🏗️" };
+                    if (metin.includes("TUFE") || metin.includes("TÜFE")) return { tip: "note-info", ikon: "📊" };
+                    if (metin.includes("kar orani") || metin.includes("kâr oranı")) return { tip: "note-info", ikon: "💹" };
+                    if (metin.includes("benchmark bulunamadi") || metin.includes("benchmark bulunamadı")) return { tip: "note-info", ikon: "ℹ️" };
+                    return { tip: "note-info", ikon: "ℹ️" };
+                };
+
+                const notlarHtml = b.notlar
+                    .map((metin) => {
+                        const stil = notIkonla(metin);
+                        if (!stil) return "";
+                        return `<div class="note-item ${stil.tip}"><span class="note-icon">${stil.ikon}</span><span>${metin}</span></div>`;
+                    })
+                    .filter(Boolean)
+                    .join("");
+
+                const analistPaneliHtml = b.analist_onerileri && b.analist_onerileri.length ? `
+                    <div class="analist-paneli">
+                        <div class="baslik">📋 Analist Önerileri</div>
+                        <div class="alt-baslik">Profilinize göre otomatik oluşturulan, sektör ortalamalarına dayalı yol gösterici öneriler — muhasebe/yatırım danışmanlığı yerine geçmez.</div>
+                        <div class="analist-oneri-list">
+                            ${b.analist_onerileri.map((oneri, i) => `
+                                <div class="analist-oneri-item">
+                                    <span class="sira">${i + 1}</span>
+                                    <span>${oneri}</span>
+                                </div>
+                            `).join("")}
+                        </div>
+                    </div>
+                ` : "";
+
+                resultsDiv.innerHTML = `
+                    ${analistPaneliHtml}
+                    <div class="stats">
+                        <div class="stat-card">
+                            <h3>Önerilen Stok Maliyeti</h3>
+                            <div class="value" style="font-size:20px;">${fmt(b.stok_maliyeti_min)} - ${fmt(b.stok_maliyeti_max)}</div>
+                            ${b.mevcut_stok_gideri != null ? `<p style="color:#999; margin-top:8px;">Mevcut gideriniz: ${fmt(b.mevcut_stok_gideri)}${b.gider_sapma_yuzdesi != null ? ` <span style="font-weight:bold; color:${b.gider_sapma_yuzdesi < 0 ? '#e67e22' : '#c0392b'};">(sektör ortalamasından %${Math.abs(b.gider_sapma_yuzdesi).toFixed(0)} ${b.gider_sapma_yuzdesi < 0 ? 'düşük' : 'yüksek'})</span>` : ""}</p>` : ""}
+                        </div>
+                        <div class="stat-card">
+                            <h3>Önerilen Reklam Bütçesi</h3>
+                            <div class="value" style="font-size:20px;">${fmt(b.reklam_butcesi_min)} - ${fmt(b.reklam_butcesi_max)}</div>
+                            ${b.mevcut_reklam_gideri != null ? `<p style="color:#999; margin-top:8px;">Mevcut gideriniz: ${fmt(b.mevcut_reklam_gideri)}</p>` : ""}
+                        </div>
+                        ${b.yillik_tufe != null ? `
+                        <div class="stat-card">
+                            <h3>Yıllık TÜFE</h3>
+                            <div class="value" style="font-size:20px;">%${b.yillik_tufe}</div>
+                        </div>` : ""}
+                        ${b.sektor_net_kar_orani != null ? `
+                        <div class="stat-card">
+                            <h3>Sektör Net Kâr Oranı</h3>
+                            <div class="value" style="font-size:20px;">%${(b.sektor_net_kar_orani * 100).toFixed(1)}</div>
+                            <p style="color:#999; margin-top:8px;">TCMB Sektör Bilançoları (net kâr / net satış)</p>
+                        </div>` : ""}
+                    </div>
+                    ${girdiKartiHtml}
+                    ${urunFiyatiHtml}
+                    ${ihracatFiyatiHtml}
+                    ${disTicaretHtml}
+                    ${urunVeriYokHtml}
+                    ${bolgeselTavsiyeHtml}
+                    ${enYuksekBanner}
+                    ${notlarHtml ? `<div class="note-list" style="margin-top:14px;">${notlarHtml}</div>` : ""}
+                `;
+            } catch (e) {
+                resultsDiv.innerHTML = `<div class="error">Hata: ${e.message}</div>`;
+            }
         }
 
         function logout() {

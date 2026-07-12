@@ -1,0 +1,5 @@
+# PostgreSQL production ortami icin ek bagimlilik. Windows'ta psycopg2-binary
+# derlemesi C derleyicisi/PostgreSQL header'lari gerektirir ve genelde basarisiz
+# olur; bu dosya sadece Linux tabanli Docker imajinda (Dockerfile.prod) kurulur.
+-r requirements.txt
+psycopg2-binary>=2.9

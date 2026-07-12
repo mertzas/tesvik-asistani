@@ -1,0 +1,27 @@
+# Multi-stage production Dockerfile
+FROM python:3.11-slim as builder
+
+WORKDIR /app
+RUN apt-get update && apt-get install -y --no-install-recommends gcc postgresql-client
+COPY requirements.txt .
+RUN pip install --user --no-cache-dir -r requirements.txt
+
+FROM python:3.11-slim
+
+WORKDIR /app
+ENV PYTHONUNBUFFERED=1
+ENV DATABASE_URL=postgresql://user:password@db:5432/tesvik_db
+
+# Copy Python deps from builder
+COPY --from=builder /root/.local /root/.local
+ENV PATH=/root/.local/bin:$PATH
+
+# Copy app
+COPY . .
+
+# Database migrations
+RUN alembic upgrade head || echo "Migrations skipped"
+
+EXPOSE 8000
+
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]

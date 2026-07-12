@@ -1,15 +1,17 @@
+import json
 import os
 from datetime import datetime, timezone
 from typing import List
 from uuid import UUID
 
-from fastapi import FastAPI, HTTPException, Depends, status
+import stripe
+from fastapi import FastAPI, HTTPException, Depends, Request, status
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
 
-from app.models import init_db, get_db, Organization, User, Query, Tesvik, settings
+from app.models import init_db, get_db, Organization, User, Query, Tesvik, FinancialProfile, PlanType, settings
 from app.auth import (
     get_current_user,
     get_current_org,
@@ -31,10 +33,23 @@ from app.schemas import (
     QueryResponse,
     UsageStats,
     AnalyticsResponse,
+    FinancialProfileCreate,
+    FinancialProfileResponse,
+    TesvikEslesmeResponse,
+    TesvikEslesmeItem,
+    ButceOnerisiResponse,
 )
 from app.rag import answer
-from app.billing import create_subscription, cancel_subscription, handle_webhook, get_plan_limits
+from app.billing import create_checkout_session, confirm_checkout_session, cancel_subscription, handle_webhook, get_plan_limits
 from app.admin import router as admin_router
+from app.matching import esles, toplam_tahmini_destek, tutari_tahmini_hesapla
+from app.budget import hesapla as butce_hesapla
+from app.cilek_panel import router as cilek_router
+from app.urun_sektor_anahtarlari import anahtar_kelimeden_sektor_bul
+from app.scheduler import setup_scheduler
+
+# Global scheduler instance
+_scheduler = None
 
 app = FastAPI(
     title="Teşvik Asistanı SaaS",
@@ -53,13 +68,24 @@ app.add_middleware(
 
 # Include admin routes
 app.include_router(admin_router)
+app.include_router(cilek_router)
 
 STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
 
 
 @app.on_event("startup")
 def on_startup():
+    global _scheduler
     init_db()
+    _scheduler = setup_scheduler()
+    _scheduler.start()
+
+
+@app.on_event("shutdown")
+def on_shutdown():
+    global _scheduler
+    if _scheduler and _scheduler.running:
+        _scheduler.shutdown()
 
 
 # ============ AUTH ENDPOINTS ============
@@ -168,6 +194,23 @@ def sor(
             Tesvik.detay.ilike(f"%{' '.join(keywords)}%")
         ).limit(10).all()
 
+        # Literal metin eslesmesi bos/az sonuc verdiyse, sorguda "cilek",
+        # "sut" gibi bilinen bir urun/faaliyet adi gecip gecmedigine bak;
+        # geciyorsa o sektore (orn. tarim) etiketli tesvikleri de ekle.
+        # 210 kayittaki program adlari nadiren belirli urun isimlerini
+        # gecirdigi icin (bkz. app/urun_sektor_anahtarlari.py) bu olmadan
+        # "çilek" gibi bir arama hep 0 sonuc donuyordu.
+        if len(tesvikler) < 5:
+            hedef_sektor = anahtar_kelimeden_sektor_bul(request.question)
+            if hedef_sektor:
+                mevcut_idler = {t.id for t in tesvikler}
+                sektor_tesvikleri = [
+                    t for t in db.query(Tesvik).all()
+                    if hedef_sektor in {s.lower() for s in (t.uygunluk_kriterleri or {}).get("sektorler", [])}
+                    and t.id not in mevcut_idler
+                ]
+                tesvikler = tesvikler + sektor_tesvikleri[: 10 - len(tesvikler)]
+
         results = [
             SearchResult(
                 id=t.id,
@@ -206,6 +249,121 @@ def sor(
         )
 
 
+# ============ FINANCIAL PROFILE / MATCHING / BUDGET (PRO+) ============
+
+def _require_pro(current_org: Organization):
+    if current_org.plan == PlanType.FREE:
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Bu özellik PRO ve üzeri planlarda kullanılabilir. Planınızı yükseltin.",
+        )
+
+
+@app.put("/api/profil", response_model=FinancialProfileResponse)
+def upsert_financial_profile(
+    request: FinancialProfileCreate,
+    current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
+):
+    """İşletme/çiftçi finansal profilini oluştur veya güncelle."""
+    profil = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
+    if profil is None:
+        profil = FinancialProfile(org_id=current_org.id)
+        db.add(profil)
+
+    profil.sektor = request.sektor.lower()
+    profil.bolge = request.bolge
+    profil.calisan_sayisi = request.calisan_sayisi
+    profil.yillik_ciro = request.yillik_ciro
+    profil.hedefler = request.hedefler
+    profil.giderler = request.giderler
+    profil.arazi_buyuklugu_dekar = request.arazi_buyuklugu_dekar
+    profil.urun_turu = request.urun_turu
+    profil.tarim_kategori = request.tarim_kategori
+    profil.ilk_yil_mi = request.ilk_yil_mi
+
+    db.commit()
+    db.refresh(profil)
+    return profil
+
+
+@app.get("/api/profil", response_model=FinancialProfileResponse)
+def get_financial_profile(
+    current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
+):
+    profil = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
+    if profil is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Önce finansal profil oluşturun (PUT /api/profil)")
+    return profil
+
+
+@app.get("/api/eslesme", response_model=TesvikEslesmeResponse)
+def tesvik_eslesme(
+    current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
+):
+    """Finansal profile göre uygun teşvikleri skorlayıp sıralar."""
+    _require_pro(current_org)
+
+    profil = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
+    if profil is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Önce finansal profil oluşturun (PUT /api/profil)")
+
+    sonuclar = esles(profil, db)
+    tahmini_min, tahmini_max = toplam_tahmini_destek(sonuclar)
+
+    return TesvikEslesmeResponse(
+        eslesen_tesvikler=[
+            TesvikEslesmeItem(
+                id=s.tesvik.id,
+                kurum=s.tesvik.kurum,
+                baslik=s.tesvik.baslik,
+                ozet=s.tesvik.ozet,
+                tesvil_tutari=s.tesvik.tesvil_tutari,
+                kaynak_url=s.tesvik.kaynak_url,
+                skor=s.skor,
+                gerekce=s.gerekce,
+                eksik_kriterler=s.eksik_kriterler,
+                tutari_min=s.tesvik.tutari_min,
+                tutari_max=s.tesvik.tutari_max,
+                tutari_hesaplama_formulu=s.tesvik.tutari_hesaplama_formulu,
+                tutari_tahmini_profil=tutari_tahmini_hesapla(s.tesvik, profil),
+                basvuru_sartlari=s.tesvik.basvuru_sartlari,
+                gerekli_belgeler=s.tesvik.gerekli_belgeler,
+                basvuru_yeri=s.tesvik.basvuru_yeri,
+                basvuru_suresi=s.tesvik.basvuru_suresi,
+                destek_verilme_suresi=s.tesvik.destek_verilme_suresi,
+                kategori=s.tesvik.kategori,
+                alt_kategori=(s.tesvik.uygunluk_kriterleri or {}).get("alt_kategori"),
+            )
+            for s in sonuclar
+        ],
+        tahmini_toplam_destek_min=tahmini_min,
+        tahmini_toplam_destek_max=tahmini_max,
+    )
+
+
+@app.get("/api/butce-onerisi", response_model=ButceOnerisiResponse)
+def butce_onerisi(
+    current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
+):
+    """TÜİK/sektör benchmark'larına göre stok maliyeti ve reklam bütçesi önerisi."""
+    _require_pro(current_org)
+
+    profil = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
+    if profil is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Önce finansal profil oluşturun (PUT /api/profil)")
+
+    try:
+        oneri = butce_hesapla(profil, db)
+    except ValueError as e:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+
+    return ButceOnerisiResponse(**oneri.__dict__)
+
+
 # ============ ORGANIZATION ENDPOINTS ============
 
 @app.get("/api/organizations/me", response_model=OrganizationResponse)
@@ -220,10 +378,26 @@ def upgrade_plan(
     current_org: Organization = Depends(get_current_org),
     db: Session = Depends(get_db),
 ):
-    """Plan yükselt."""
+    """Plan yükseltmek için Stripe Checkout oturumu oluşturur; dönen checkout_url'e yönlendirilmelidir."""
     try:
-        result = create_subscription(str(current_org.id), request.plan, db)
+        result = create_checkout_session(str(current_org.id), request.plan, db)
         return result
+    except Exception as e:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=str(e)
+        )
+
+
+@app.post("/api/organizations/confirm-checkout", response_model=dict)
+def confirm_checkout(
+    session_id: str,
+    current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
+):
+    """Checkout success_url'ine dönüşte, webhook beklemeden ödemeyi doğrulayıp planı günceller."""
+    try:
+        return confirm_checkout_session(str(current_org.id), session_id, db)
     except Exception as e:
         raise HTTPException(
             status_code=status.HTTP_400_BAD_REQUEST,
@@ -294,9 +468,20 @@ def get_query_history(
 # ============ BILLING WEBHOOK ============
 
 @app.post("/api/webhooks/stripe")
-def stripe_webhook(request: dict, db: Session = Depends(get_db)):
-    """Stripe webhooks."""
-    handle_webhook(request, db)
+async def stripe_webhook(request: Request, db: Session = Depends(get_db)):
+    """Stripe webhooks. STRIPE_WEBHOOK_SECRET ayarlıysa imza doğrulanır."""
+    payload = await request.body()
+    sig_header = request.headers.get("stripe-signature")
+
+    if settings.STRIPE_WEBHOOK_SECRET:
+        try:
+            event = stripe.Webhook.construct_event(payload, sig_header, settings.STRIPE_WEBHOOK_SECRET)
+        except (ValueError, stripe.error.SignatureVerificationError):
+            raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Geçersiz webhook imzası")
+    else:
+        event = json.loads(payload)
+
+    handle_webhook(event, db)
     return {"status": "ok"}
 
 
@@ -333,6 +518,11 @@ def index():
 @app.get("/dashboard")
 def dashboard():
     return FileResponse(os.path.join(STATIC_DIR, "dashboard.html"))
+
+
+@app.get("/cilek-paneli")
+def cilek_paneli_sayfasi():
+    return FileResponse(os.path.join(STATIC_DIR, "cilek_dashboard.html"))
 
 
 if os.path.exists(STATIC_DIR):

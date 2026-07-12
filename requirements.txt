@@ -19,6 +19,7 @@ jinja2>=3.1
 python-dotenv>=1.0
 alembic>=1.13
 apscheduler>=3.10
+anthropic>=0.40
 
 # Yalnizca PostgreSQL'e baglanacaksaniz gerekli (yerel gelistirmede SQLite
 # kullanildigi icin varsayilan olarak kurulmaz - Windows'ta derleme icin

@@ -18,6 +18,8 @@ class Settings(BaseSettings):
     STRIPE_PRICE_BUSINESS: str = os.getenv("STRIPE_PRICE_BUSINESS", "")
     APP_URL: str = os.getenv("APP_URL", "http://localhost:8000")
     APP_NAME: str = "Teşvik Asistanı SaaS"
+    ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
+    CLAUDE_MODEL: str = os.getenv("CLAUDE_MODEL", "claude-sonnet-5")
 
     class Config:
         env_file = ".env"

@@ -184,8 +184,25 @@ def sor(
         )
 
     try:
+        # Kullanıcının doldurduğu finansal profil varsa, Claude'a bağlam
+        # olarak veriyoruz - "Durum Analizi" başlığı bunsuz jenerik kalır.
+        profil_row = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
+        profil = None
+        if profil_row is not None:
+            profil = {
+                "sektör": profil_row.sektor,
+                "bölge": profil_row.bolge,
+                "çalışan sayısı": profil_row.calisan_sayisi,
+                "yıllık ciro": profil_row.yillik_ciro,
+                "hedefler": profil_row.hedefler,
+                "ilk yıl mı": profil_row.ilk_yil_mi,
+                "tarım kategorisi": profil_row.tarim_kategori,
+                "ürün türü": profil_row.urun_turu,
+                "arazi büyüklüğü (dekar)": profil_row.arazi_buyuklugu_dekar,
+            }
+
         # Mevcut RAG sistemini çalıştır
-        answer_text = answer(request.question)
+        answer_text = answer(request.question, profil)
 
         # Veritabanından alakalı teşvikleri bul
         # Basit keyword matching (ileri sürümlerde embedding kullanacağız)

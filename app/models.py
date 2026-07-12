@@ -21,6 +21,14 @@ class Settings(BaseSettings):
     ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
     CLAUDE_MODEL: str = os.getenv("CLAUDE_MODEL", "claude-sonnet-5")
 
+    # İKAS Admin App entegrasyonu - client_id/secret İKAS Builders Dashboard'da
+    # uygulama kaydi yapilip test magazasi atandiktan sonra elde edilir.
+    # Bos ise IKAS_MOCK_MODE zorunlu olarak True kabul edilir (bkz. app/ikas_integration.py).
+    IKAS_CLIENT_ID: str = os.getenv("IKAS_CLIENT_ID", "")
+    IKAS_CLIENT_SECRET: str = os.getenv("IKAS_CLIENT_SECRET", "")
+    IKAS_SCOPE: str = os.getenv("IKAS_SCOPE", "read_orders read_products")
+    IKAS_MOCK_MODE: bool = os.getenv("IKAS_MOCK_MODE", "true").lower() == "true"
+
     class Config:
         env_file = ".env"
         extra = "ignore"
@@ -228,6 +236,49 @@ class IlKosgebMudurlugu(Base):
 
     kaynak_url = Column(String, nullable=False)
     dogrulama_tarihi = Column(Date, nullable=False)
+
+
+# Ikas magaza baglantisi (OAuth2 Authorization Code Flow ile alinan token).
+#
+# Endpoint/alan adlari @ikas/admin-api-client SDK'sinin (npm, versiyon
+# 2.1.0) kendi unit test dosyalarindan ve kaynak kodundan dogrulanmistir
+# (2026-07-12) - resmi ikas.dev/builders.ikas.com dokumantasyonu bazi
+# detaylari (ozellikle authorize taban URL'i) acikca vermiyordu, bu yuzden
+# SDK'nin derlenmis JS kaynagi (oauth/index.js) tek tek okunarak teyit
+# edildi:
+#   - OAuth taban URL: https://{storeName}.myikas.com/api/admin/oauth
+#   - Authorize:        {taban}/authorize?client_id=...&redirect_uri=...&scope=...&state=...
+#   - Token exchange:   POST {taban}/token (x-www-form-urlencoded,
+#                        grant_type=authorization_code|refresh_token|client_credentials)
+#   - GraphQL Admin API: https://api.myikas.com/api/v2/admin/graphql
+#                        (Authorization: Bearer {access_token})
+#
+# GERCEK client_id/client_secret ISE HENUZ YOK - bunlar ancak İKAS
+# Builders Dashboard'da uygulama kaydi yapilip bir test magazasi
+# atandiktan sonra elde edilebilir (bkz. proje notlari). Bu tablo ve
+# ilgili OAuth akisi o noktaya kadar TEST/MOCK modunda calisir.
+class IkasBaglanti(Base):
+    __tablename__ = "ikas_baglanti"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid4, index=True)
+    org_id = Column(UUID(as_uuid=True), ForeignKey("organizations.id"), unique=True, index=True)
+
+    store_name = Column(String, nullable=False)  # "{storeName}.myikas.com" - alt alan adi
+    access_token = Column(String, nullable=True)
+    refresh_token = Column(String, nullable=True)
+    token_expires_at = Column(DateTime, nullable=True)
+    scope = Column(String, nullable=True)  # "read_orders read_products" gibi bosluk ayrilmis
+
+    oauth_state = Column(String, nullable=True)  # CSRF korumasi icin - authorize->callback arasi gecici
+    baglanti_durumu = Column(String, default="beklemede")  # "beklemede" | "bagli" | "hata" | "koptu"
+
+    son_senkron_zamani = Column(DateTime, nullable=True)
+    son_senkron_hata = Column(String, nullable=True)
+
+    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    updated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
+
+    organization = relationship("Organization")
 
 
 # Financial Profile (isletme/ciftci finansal girdisi)

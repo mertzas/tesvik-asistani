@@ -47,6 +47,7 @@ from app.admin import router as admin_router
 from app.matching import esles, toplam_tahmini_destek, tutari_tahmini_hesapla
 from app.budget import hesapla as butce_hesapla
 from app.cilek_panel import router as cilek_router
+from app.ikas_panel import router as ikas_router
 from app.urun_sektor_anahtarlari import anahtar_kelimeden_sektor_bul
 from app.eticaret_destek_hesaplayici import eticaret_destek_hesapla
 from app.scheduler import setup_scheduler
@@ -72,6 +73,7 @@ app.add_middleware(
 # Include admin routes
 app.include_router(admin_router)
 app.include_router(cilek_router)
+app.include_router(ikas_router)
 
 STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
 

@@ -19,7 +19,7 @@ docstring'i) - LLM egitim verisinden gelen "hatirlanan" numaralar degil.
 """
 import requests
 
-from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, settings
+from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu, settings
 from sqlalchemy import or_
 
 OLLAMA_ETKIN = False  # True yapinca Gemma ile dogal dil cevap tekrar devreye girer
@@ -198,6 +198,35 @@ def _il_iletisim_metni(profil: dict | None) -> str:
         db.close()
 
 
+def _kosgeb_il_iletisim_metni(profil: dict | None) -> str:
+    """Kullanicinin 'bölge' alaniyla eslesen KOSGEB Il Mudurlugu satirini
+    doner. IlTarimMudurlugu'ndan farkli olarak buradaki 81 ilin TAMAMI
+    dogrulandi (bkz. scripts/seed_il_kosgeb_mudurlugu.py), o yuzden burada
+    "dogrulanmadi" dalina hic gerek yok."""
+    if not profil:
+        return ""
+    il_adi = (profil.get("bölge") or "").strip()
+    if not il_adi:
+        return ""
+
+    db = SessionLocal()
+    try:
+        il = db.query(IlKosgebMudurlugu).filter(IlKosgebMudurlugu.il_adi.ilike(il_adi)).first()
+        if il is None:
+            return ""
+        metin = (
+            f"{il.mudurluk_adi}: Telefon {il.telefon}, Adres: {il.adres}"
+            + (f", E-posta: {il.eposta}" if il.eposta else "")
+            + f". (Doğrulama kaynağı: {il.kaynak_url}, doğrulama tarihi: {il.dogrulama_tarihi})"
+        )
+        if il.ek_mudurlukler:
+            for ek in il.ek_mudurlukler:
+                metin += f"\nAyrıca: {ek.get('ad')}: Telefon {ek.get('telefon')}, Adres: {ek.get('adres')}"
+        return metin
+    finally:
+        db.close()
+
+
 def _tesvik_detay_metni(m: Tesvik) -> str:
     """Tesvik kaydinin TUM yapilandirilmis alanlarini (sadece serbest metin
     detay degil) LLM baglamina yazar - basvuru_sartlari/tutar/aktif_mi gibi
@@ -237,14 +266,20 @@ def _baglam_metni(matches: list[Tesvik], profil: dict | None) -> str:
     )
 
     il_iletisim = _il_iletisim_metni(profil)
-    il_blogu = f"\n\nKULLANICININ İLİNE ÖZEL İLETİŞİM: {il_iletisim}" if il_iletisim else ""
+    il_blogu = f"\n\nKULLANICININ İLİNE ÖZEL TARIM İLETİŞİMİ: {il_iletisim}" if il_iletisim else ""
+
+    kosgeb_il_iletisim = _kosgeb_il_iletisim_metni(profil)
+    kosgeb_il_blogu = (
+        f"\n\nKULLANICININ İLİNE ÖZEL KOSGEB MÜDÜRLÜĞÜ: {kosgeb_il_iletisim}"
+        if kosgeb_il_iletisim else ""
+    )
 
     if not profil:
         return f"TEŞVİK KAYITLARI:\n{kayitlar}{iletisim_blogu}\n\nKULLANICI PROFİLİ: (henüz girilmemiş)"
 
     profil_satirlari = "\n".join(f"- {k}: {v}" for k, v in profil.items() if v not in (None, "", []))
     return (
-        f"TEŞVİK KAYITLARI:\n{kayitlar}{iletisim_blogu}{il_blogu}\n\n"
+        f"TEŞVİK KAYITLARI:\n{kayitlar}{iletisim_blogu}{il_blogu}{kosgeb_il_blogu}\n\n"
         f"KULLANICI PROFİLİ:\n{profil_satirlari or '(profil alanları boş)'}"
     )
 

@@ -204,6 +204,32 @@ class IlTarimMudurlugu(Base):
     dogrulama_tarihi = Column(Date, nullable=True)  # url_dogrulandi=True ise dolu
 
 
+# Il bazli KOSGEB Mudurlugu iletisim rehberi (81 il, TAMAMI dogrulandi).
+#
+# IlTarimMudurlugu'ndan farkli olarak buradaki TUM 81 il, KOSGEB'in kendi
+# "mudurluktekil?ID={plaka}" endpoint'i tek tek WebFetch ile cekilerek
+# 2026-07-12 tarihinde dogrulandi - deseni tahmin edip URL uretmedik,
+# gercekten her ilin sayfasi acildi. Bazi buyuk illerin (Ankara, Istanbul,
+# Izmir) birden fazla musdurlugu var; ek_mudurlukler alani varsa diger
+# musdurluk(ler)i JSON liste olarak tutar, ana kayit ilk/en genel musdurluk.
+class IlKosgebMudurlugu(Base):
+    __tablename__ = "il_kosgeb_mudurlugu"
+
+    id = Column(Integer, primary_key=True, index=True)
+    il_kodu = Column(Integer, unique=True, index=True, nullable=False)  # 1-81 plaka kodu
+    il_adi = Column(String, unique=True, index=True, nullable=False)
+
+    mudurluk_adi = Column(String, nullable=False)
+    telefon = Column(String, nullable=False)
+    adres = Column(String, nullable=False)
+    eposta = Column(String, nullable=True)
+
+    ek_mudurlukler = Column(JSON, nullable=True)  # [{"ad":..., "telefon":..., "adres":...}, ...]
+
+    kaynak_url = Column(String, nullable=False)
+    dogrulama_tarihi = Column(Date, nullable=False)
+
+
 # Financial Profile (isletme/ciftci finansal girdisi)
 class FinancialProfile(Base):
     __tablename__ = "financial_profiles"

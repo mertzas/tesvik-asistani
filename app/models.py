@@ -167,6 +167,36 @@ class KurumIletisim(Base):
     dogrulama_tarihi = Column(Date, nullable=False)  # bu bilginin ne zaman teyit edildigi
 
 
+# Il bazli Tarim ve Orman Il Mudurlugu iletisim rehberi (81 il).
+#
+# ONEMLI - IKI FARKLI GUVEN SEVIYESI VAR:
+#   url_dogrulandi=True  -> bu ilin /Iletisim sayfasi gercekten WebFetch ile
+#                            acilip telefon/adres TEK TEK teyit edildi.
+#   url_dogrulandi=False -> sadece URL SEKLI (https://{il}.tarimorman.gov.tr/Iletisim)
+#                            dogrulanan 13 ilden gozlemlenen TUTARLI bir
+#                            desene gore uretildi; bu ilin sayfasi henuz
+#                            acilip icerigi teyit edilmedi. Bu satirlarda
+#                            telefon/adres BILEREK BOS birakilmistir -
+#                            "muhtemelen dogru" bir numara yazmak yerine
+#                            kullaniciyi dogrudan resmi linke yonlendiriyoruz.
+# Plaka kodu (il_kodu) TC il plaka kodlarindan alinmistir, ayrica dogrulama
+# gerektirmez (kamuya acik, degismeyen standart bir liste).
+class IlTarimMudurlugu(Base):
+    __tablename__ = "il_tarim_mudurlugu"
+
+    id = Column(Integer, primary_key=True, index=True)
+    il_kodu = Column(Integer, unique=True, index=True, nullable=False)  # 1-81 plaka kodu
+    il_adi = Column(String, unique=True, index=True, nullable=False)
+
+    telefon = Column(String, nullable=True)  # url_dogrulandi=False ise NULL
+    adres = Column(String, nullable=True)
+    eposta = Column(String, nullable=True)  # "{il}@tarimorman.gov.tr" - deseni tum dogrulanan illerde tutarli
+
+    kaynak_url = Column(String, nullable=False)
+    url_dogrulandi = Column(Boolean, nullable=False, default=False)
+    dogrulama_tarihi = Column(Date, nullable=True)  # url_dogrulandi=True ise dolu
+
+
 # Financial Profile (isletme/ciftci finansal girdisi)
 class FinancialProfile(Base):
     __tablename__ = "financial_profiles"

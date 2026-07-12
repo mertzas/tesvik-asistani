@@ -19,7 +19,7 @@ docstring'i) - LLM egitim verisinden gelen "hatirlanan" numaralar degil.
 """
 import requests
 
-from app.models import SessionLocal, Tesvik, KurumIletisim, settings
+from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, settings
 from sqlalchemy import or_
 
 OLLAMA_ETKIN = False  # True yapinca Gemma ile dogal dil cevap tekrar devreye girer
@@ -148,6 +148,38 @@ def _kurum_iletisim_metni(matches: list[Tesvik]) -> str:
         db.close()
 
 
+def _il_iletisim_metni(profil: dict | None) -> str:
+    """Kullanicinin profilindeki 'bölge' (il adi) alaniyla eslesen Tarim Il
+    Mudurlugu satirini doner. Telefon/adres o il icin dogrulanmamissa
+    (url_dogrulandi=False) SADECE resmi linki verir, numara/adres uydurmaz -
+    LLM'e "bu ilin telefonu dogrulanmadi, linke yonlendir" bilgisini de
+    acikca gecirir."""
+    if not profil:
+        return ""
+    il_adi = (profil.get("bölge") or "").strip()
+    if not il_adi:
+        return ""
+
+    db = SessionLocal()
+    try:
+        il = db.query(IlTarimMudurlugu).filter(IlTarimMudurlugu.il_adi.ilike(il_adi)).first()
+        if il is None:
+            return ""
+        if il.url_dogrulandi:
+            return (
+                f"{il.il_adi} Tarım ve Orman İl Müdürlüğü: Telefon {il.telefon}, "
+                f"Adres: {il.adres}. (Doğrulama kaynağı: {il.kaynak_url}, "
+                f"doğrulama tarihi: {il.dogrulama_tarihi})"
+            )
+        return (
+            f"{il.il_adi} Tarım ve Orman İl Müdürlüğü için telefon/adres henüz "
+            f"doğrulanmadı - kullanıcıyı resmi sayfaya yönlendir: {il.kaynak_url} "
+            f"(telefon numarası UYDURMA, sadece bu linki ver)."
+        )
+    finally:
+        db.close()
+
+
 def _baglam_metni(matches: list[Tesvik], profil: dict | None) -> str:
     kayitlar = "\n\n".join(
         f"[{m.kurum}] {m.baslik}\nKaynak: {m.kaynak_url}\n{_kisalt(m.detay, 600)}"
@@ -160,12 +192,15 @@ def _baglam_metni(matches: list[Tesvik], profil: dict | None) -> str:
         if iletisim else ""
     )
 
+    il_iletisim = _il_iletisim_metni(profil)
+    il_blogu = f"\n\nKULLANICININ İLİNE ÖZEL İLETİŞİM: {il_iletisim}" if il_iletisim else ""
+
     if not profil:
         return f"TEŞVİK KAYITLARI:\n{kayitlar}{iletisim_blogu}\n\nKULLANICI PROFİLİ: (henüz girilmemiş)"
 
     profil_satirlari = "\n".join(f"- {k}: {v}" for k, v in profil.items() if v not in (None, "", []))
     return (
-        f"TEŞVİK KAYITLARI:\n{kayitlar}{iletisim_blogu}\n\n"
+        f"TEŞVİK KAYITLARI:\n{kayitlar}{iletisim_blogu}{il_blogu}\n\n"
         f"KULLANICI PROFİLİ:\n{profil_satirlari or '(profil alanları boş)'}"
     )
 

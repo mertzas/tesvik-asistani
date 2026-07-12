@@ -136,6 +136,37 @@ class Tesvik(Base):
     destek_verilme_suresi = Column(String, nullable=True)  # "30-60 gün" | "2-3 ay"
 
 
+# Kurum iletisim rehberi - dogrulanmis resmi telefon/adres bilgileri.
+# Tesvik.kurum alaniyla ayni degeri tasir (orn. "KOSGEB"); tek tek tesvik
+# kaydina degil, kuruma bagli oldugu icin ayri bir tablo (bir kurumun
+# 79 tesvik kaydi olabilir, telefon numarasi hepsinde aynidir).
+#
+# ONEMLI: Buradaki her satir gercek resmi kaynaktan (kurumun kendi
+# iletisim sayfasi) WebFetch ile TEK TEK dogrulanarak eklenmistir -
+# hicbir telefon numarasi/adres LLM egitim verisinden veya tahminden
+# uydurulmamistir. dogrulama_tarihi ve kaynak_url alanlari, bu bilginin
+# ne zaman ve nereden teyit edildigini izlenebilir kilar - kurumlar
+# numara degistirebilir, bu yuzden "dogrulama_tarihi" eski ise tekrar
+# teyit edilmelidir.
+class KurumIletisim(Base):
+    __tablename__ = "kurum_iletisim"
+
+    id = Column(Integer, primary_key=True, index=True)
+    kurum = Column(String, unique=True, index=True, nullable=False)  # "KOSGEB", "TUBITAK", "KGF", "Tarım Bakanlığı"
+    kurum_tam_ad = Column(String, nullable=True)
+
+    cagri_merkezi_no = Column(String, nullable=True)  # "444 1 567" gibi ulusal cagri merkezi
+    genel_merkez_no = Column(String, nullable=True)   # "0 312 595 28 00" gibi santral
+    calisma_saatleri = Column(String, nullable=True)
+
+    adres = Column(String, nullable=True)
+    web_sitesi = Column(String, nullable=True)
+    eposta = Column(String, nullable=True)
+
+    kaynak_url = Column(String, nullable=False)  # dogrulamanin yapildigi resmi sayfa
+    dogrulama_tarihi = Column(Date, nullable=False)  # bu bilginin ne zaman teyit edildigi
+
+
 # Financial Profile (isletme/ciftci finansal girdisi)
 class FinancialProfile(Base):
     __tablename__ = "financial_profiles"

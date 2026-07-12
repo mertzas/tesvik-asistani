@@ -10,15 +10,16 @@ LLM'siz duz liste formatina (_liste_formati) duser - kullanici hicbir
 zaman bos/hatali bir ekranla karsilasmaz.
 
 KRITIK KURAL: LLM'e verilen sistem promptu SADECE veritabanindan (Tesvik
-kayitlari + kullanicinin FinancialProfile'i) gelen bilgiyi kullanmasini,
-telefon numarasi/oran/tutar gibi somut rakamlari UYDURMAMASINI acikca
-soyler. Bu proje daha once yanlis bir telefon numarasi (Alo 180) iceren
-bir "sistem prompt" onerisini bu yuzden reddetmisti - persona/format
-burada aynen uygulaniyor ama grounding kurali korunuyor.
+kayitlari + KurumIletisim rehberi + kullanicinin FinancialProfile'i) gelen
+bilgiyi kullanmasini, telefon numarasi/oran/tutar gibi somut rakamlari
+UYDURMAMASINI acikca soyler. KurumIletisim tablosundaki her telefon
+numarasi resmi kurum sayfasindan WebFetch ile tek tek dogrulanmistir
+(bkz. scripts/seed_kurum_iletisim.py, app/models.py KurumIletisim
+docstring'i) - LLM egitim verisinden gelen "hatirlanan" numaralar degil.
 """
 import requests
 
-from app.models import SessionLocal, Tesvik, settings
+from app.models import SessionLocal, Tesvik, KurumIletisim, settings
 from sqlalchemy import or_
 
 OLLAMA_ETKIN = False  # True yapinca Gemma ile dogal dil cevap tekrar devreye girer
@@ -122,17 +123,49 @@ def _liste_formati(matches: list[Tesvik]) -> str:
     return "".join(satirlar)
 
 
+def _kurum_iletisim_metni(matches: list[Tesvik]) -> str:
+    """Bulunan kayitlarin ait oldugu kurumlarin dogrulanmis iletisim
+    bilgilerini doner - bos ise (kurum rehberde yoksa) o kurum icin
+    satir eklenmez, LLM'in numara icat etmesine gerek kalmaz."""
+    kurumlar = sorted({m.kurum for m in matches if m.kurum})
+    if not kurumlar:
+        return ""
+
+    db = SessionLocal()
+    try:
+        satirlar = []
+        for kurum in kurumlar:
+            k = db.query(KurumIletisim).filter(KurumIletisim.kurum == kurum).first()
+            if k is None:
+                continue
+            satirlar.append(
+                f"- {k.kurum} ({k.kurum_tam_ad or ''}): Çağrı merkezi {k.cagri_merkezi_no or '—'}, "
+                f"Genel merkez {k.genel_merkez_no or '—'}, Adres: {k.adres or '—'}. "
+                f"(Doğrulama kaynağı: {k.kaynak_url}, doğrulama tarihi: {k.dogrulama_tarihi})"
+            )
+        return "\n".join(satirlar)
+    finally:
+        db.close()
+
+
 def _baglam_metni(matches: list[Tesvik], profil: dict | None) -> str:
     kayitlar = "\n\n".join(
         f"[{m.kurum}] {m.baslik}\nKaynak: {m.kaynak_url}\n{_kisalt(m.detay, 600)}"
         for m in matches
     )
+    iletisim = _kurum_iletisim_metni(matches)
+    iletisim_blogu = (
+        f"\n\nDOĞRULANMIŞ KURUM İLETİŞİM BİLGİLERİ (bu numaraları/adresleri "
+        f"kullanabilirsin, kaynağı gösterilmiştir):\n{iletisim}"
+        if iletisim else ""
+    )
+
     if not profil:
-        return f"TEŞVİK KAYITLARI:\n{kayitlar}\n\nKULLANICI PROFİLİ: (henüz girilmemiş)"
+        return f"TEŞVİK KAYITLARI:\n{kayitlar}{iletisim_blogu}\n\nKULLANICI PROFİLİ: (henüz girilmemiş)"
 
     profil_satirlari = "\n".join(f"- {k}: {v}" for k, v in profil.items() if v not in (None, "", []))
     return (
-        f"TEŞVİK KAYITLARI:\n{kayitlar}\n\n"
+        f"TEŞVİK KAYITLARI:\n{kayitlar}{iletisim_blogu}\n\n"
         f"KULLANICI PROFİLİ:\n{profil_satirlari or '(profil alanları boş)'}"
     )
 

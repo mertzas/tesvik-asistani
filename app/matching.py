@@ -208,6 +208,24 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
     return sonuclar[:limit]
 
 
+def _tutar_olcek_faktoru(kriter: str, profil: FinancialProfile) -> float | None:
+    """tutari_min/tutari_max (TL cinsinden BIRIM fiyat - orn. 'dekar basina')
+    ile kullanicinin profilindeki gercek buyuklugu carparak MUTLAK tahmini
+    tutara cevirmek icin kullanilan olcek katsayisini doner. Ilgili profil
+    alani eksikse None doner - cagiran taraf bu durumda tahmin uretmemeli,
+    aksi halde 'dekar basina 500 TL' 500 TL toplam gibi gosterilir (bkz.
+    toplam_tahmini_destek'teki eski hata)."""
+    kriter = kriter.lower()
+    if kriter == "dekar":
+        return profil.arazi_buyuklugu_dekar if profil.arazi_buyuklugu_dekar else None
+    elif kriter == "calisan":
+        return (profil.calisan_sayisi or 1) if profil.calisan_sayisi is not None else None
+    elif kriter in ("ciro", "genel"):
+        # tutari_min/max zaten MUTLAK TL toplami (birim fiyat degil) - olcek 1.
+        return 1.0
+    return None
+
+
 def tutari_tahmini_hesapla(tesvik, profil: FinancialProfile) -> float | None:
     """Teşvik tutarı ve profil bilgisine göre tahmini destek tutarı hesapla.
 
@@ -216,29 +234,66 @@ def tutari_tahmini_hesapla(tesvik, profil: FinancialProfile) -> float | None:
     if not tesvik.tutari_hesaplama_kriteri or tesvik.tutari_min is None:
         return None
 
-    # Ortalama tutarı hesapla
     ort_tutar = (tesvik.tutari_min + (tesvik.tutari_max or tesvik.tutari_min)) / 2
-
-    kriter = tesvik.tutari_hesaplama_kriteri.lower()
-    if kriter == "dekar" and profil.arazi_buyuklugu_dekar:
-        return profil.arazi_buyuklugu_dekar * ort_tutar
-    elif kriter == "calisan" and profil.calisan_sayisi is not None:
-        return (profil.calisan_sayisi or 1) * ort_tutar
-    elif kriter == "ciro" and profil.yillik_ciro:
-        # Ciro'nun %2-5'i gibi hesapla
-        return profil.yillik_ciro * (ort_tutar / 100)
-    elif kriter == "genel":
-        return ort_tutar
-
-    return None
+    olcek = _tutar_olcek_faktoru(tesvik.tutari_hesaplama_kriteri, profil)
+    if olcek is None:
+        return None
+    return olcek * ort_tutar
 
 
-def toplam_tahmini_destek(sonuclar: list[TesvikEslesmeSonucu]) -> tuple[float, float]:
-    """Eslesen tesviklerin tutar araliklarini toplayarak kaba bir 'toplam alinabilecek destek' araligi verir."""
+def toplam_tahmini_destek(sonuclar: list[TesvikEslesmeSonucu], profil: FinancialProfile) -> tuple[float, float]:
+    """Eslesen tesviklerin tutar araliklarini toplayarak kaba bir 'toplam
+    alinabilecek destek' araligi verir.
+
+    ONCEKI HATA: bu fonksiyon tesvil_tutari SERBEST METNINI (orn. 'Dekar
+    basina 500-2000 TL') duz metin olarak parse edip MUTLAK bir tutarmis
+    gibi topluyordu - yani 50 dekarlik bir ciftci icin gercekte
+    50*500=25.000 TL olmasi gereken bir destek, ekranda 500 TL olarak
+    gorunuyordu (kullanicinin arazi buyuklugu hic carpilmiyordu). Simdi
+    yapisal tutari_min/tutari_max + tutari_hesaplama_kriteri alanlari
+    doluysa (guvenilir, olcekli hesap) o kullanilir; sadece bu alanlar bos
+    olan eski/is-lenmemis kayitlar icin metin parse'ina (yaklasik, olceksiz)
+    dusulur.
+
+    IKINCI HATA (bununla birlikte duzeltildi): KGF'nin urunleri HIBE degil
+    KREDI KEFALETIDIR (bkz. app/models.py KurumIletisim dokumantasyonu,
+    scripts/seed_kurum_iletisim.py) - "₺20.000.000'a kadar kredi" bir
+    banka kredisinin ust siniridir, cepten alinacak bir para degildir.
+    Bunlari diger kurumlarin (KOSGEB, Tarim Bakanligi, TUBITAK) gercek
+    hibe/nakit destekleriyle toplamak kategori hatasidir ve "toplam
+    tahmini destek" rakamini anlamsiz sekilde sisirir (test: genel bir
+    tarim profiline 20 kayit eslesip toplam ₺43 milyona cikiyordu, buyuk
+    kismi KGF kredi limitlerinden). KGF kayitlari bu toplamdan haric
+    tutulur; kullanici bunlari ayri bir 'kredi/kefalet secenekleri'
+    listesi olarak gormelidir, nakit destek toplamiyla karistirilmamalidir."""
+    KREDI_KEFALET_KURUMLARI = {"kgf"}
+
+    def _kredi_kefaleti_mi(tesvik) -> bool:
+        if (tesvik.kurum or "").strip().lower() in KREDI_KEFALET_KURUMLARI:
+            return True
+        # Bazi kayitlar KOSGEB adina girilmis olsa da icerik olarak KGF'nin
+        # yurutgu kredi/kefalet urunleridir (orn. 'Kapasite Gelistirme Destek
+        # Programi' KOSGEB basligi altinda ama tesvil_tutari'nda '20.000.000
+        # kredi limiti' yaziyor) - kurum etiketi guvenilir degil, metin
+        # icerigine bakmak gerekiyor.
+        metin = (tesvik.tesvil_tutari or "") + " " + (tesvik.tutari_hesaplama_formulu or "")
+        return "kredi" in metin.lower()
+
     toplam_min = 0.0
     toplam_max = 0.0
     for s in sonuclar:
-        alt, ust = _tutari_parse(s.tesvik.tesvil_tutari)
+        tesvik = s.tesvik
+        if _kredi_kefaleti_mi(tesvik):
+            continue
+        if tesvik.tutari_hesaplama_kriteri and tesvik.tutari_min is not None:
+            olcek = _tutar_olcek_faktoru(tesvik.tutari_hesaplama_kriteri, profil)
+            if olcek is None:
+                continue  # profildeki ilgili alan (dekar/calisan) eksik - tahmin uretilemez
+            toplam_min += olcek * tesvik.tutari_min
+            toplam_max += olcek * (tesvik.tutari_max or tesvik.tutari_min)
+            continue
+
+        alt, ust = _tutari_parse(tesvik.tesvil_tutari)
         if alt is not None:
             toplam_min += alt
             toplam_max += ust

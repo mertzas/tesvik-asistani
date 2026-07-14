@@ -333,7 +333,7 @@ def tesvik_eslesme(
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Önce finansal profil oluşturun (PUT /api/profil)")
 
     sonuclar = esles(profil, db)
-    tahmini_min, tahmini_max = toplam_tahmini_destek(sonuclar)
+    tahmini_min, tahmini_max = toplam_tahmini_destek(sonuclar, profil)
 
     return TesvikEslesmeResponse(
         eslesen_tesvikler=[

@@ -65,6 +65,14 @@ def _cilek_hal_fiyati_bul(db: Session, urun_turu: str | None) -> dict | None:
 
 VARSAYILAN_SEKTOR = "genel"
 
+# Onerilen stok butcesi oraninin (benchmark orani x tarim kategori carpani)
+# asla asamayacagi tavan. EVDS'ten gelen canli stok oranlari sektorlere gore
+# %38-96 arasinda; hayvancilik carpani (1.3) uygulaninca %116'ya tasiyordu -
+# yani kullaniciya cirosundan FAZLASINI stoga ayirmasi oneriliyordu.
+# %95 tavani "cironuzun neredeyse tamami" mesajini korurken imkansiz
+# (>%100) onerileri engeller; kirpma olursa kullaniciya acikca soylenir.
+STOK_ORAN_TAVANI = 0.95
+
 
 @dataclass
 class ButceOnerisi:
@@ -74,6 +82,14 @@ class ButceOnerisi:
     stok_maliyeti_max: float
     reklam_butcesi_min: float
     reklam_butcesi_max: float
+    # Onumuzdeki 12 ay icin TUFE ile duzeltilmis projeksiyon - "seneye ne
+    # kadar ayirmaliyim" sorusunun cevabi. Bu yilki oneriler mevcut ciroya
+    # gore hesaplanir; enflasyon ortaminda gelecek yil ayni miktar mal/hizmet
+    # icin nominal olarak daha fazla TL gerekir. TUFE verisi yoksa None.
+    gelecek_yil_stok_min: float | None
+    gelecek_yil_stok_max: float | None
+    gelecek_yil_reklam_min: float | None
+    gelecek_yil_reklam_max: float | None
     mevcut_stok_gideri: float | None
     mevcut_reklam_gideri: float | None
     mevcut_toplam_gider: float | None
@@ -166,7 +182,7 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
     net_kar_orani = benchmark.net_kar_orani
 
     tufe = _indikator_getir(db, "yillik_tufe")
-    if tufe:
+    if tufe is not None:
         notlar.append(
             f"Yillik TUFE ({tufe:.1f}%) dikkate alindiginda, stok maliyetlerinizin son "
             f"guncellemeden bu yana enflasyon oraninda arttigini varsayarak butce planlayin."
@@ -319,10 +335,46 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
     ciro = profil.yillik_ciro
     giderler = profil.giderler or {}
 
-    stok_min = round(ciro * benchmark.stok_maliyeti_oran_min * kategori_carpani, 2)
-    stok_max = round(ciro * benchmark.stok_maliyeti_oran_max * kategori_carpani, 2)
+    # Efektif stok oranlari: benchmark x kategori carpani, TAVANLA sinirli.
+    # Tavan olmadan hayvancilikta (EVDS max %89.7 x 1.3) oneri cironun
+    # %116'sina cikiyordu - kullaniciya kazandigindan fazlasini stoga
+    # ayirmasini soylemek matematiksel olarak imkansiz bir plan onermektir.
+    ham_stok_oran_min = benchmark.stok_maliyeti_oran_min * kategori_carpani
+    ham_stok_oran_max = benchmark.stok_maliyeti_oran_max * kategori_carpani
+    stok_oran_min = min(ham_stok_oran_min, STOK_ORAN_TAVANI)
+    stok_oran_max = min(ham_stok_oran_max, STOK_ORAN_TAVANI)
+    if ham_stok_oran_max > STOK_ORAN_TAVANI:
+        notlar.append(
+            f"Seçtiğiniz kategori için hesaplanan stok maliyeti oranı cironuzun "
+            f"%{ham_stok_oran_max * 100:.0f}'ine denk geliyordu; öneri, gerçekçi bir plan "
+            f"sunabilmek için cironuzun %{STOK_ORAN_TAVANI * 100:.0f}'i ile sınırlandı. "
+            f"Bu sektör/kategoride marjlar çok dardır - stok maliyetinin ciroya bu kadar "
+            f"yakın olması, kârlılığın hacimle sağlandığı anlamına gelir."
+        )
+
+    stok_min = round(ciro * stok_oran_min, 2)
+    stok_max = round(ciro * stok_oran_max, 2)
     reklam_min = round(ciro * benchmark.reklam_oran_min, 2)
     reklam_max = round(ciro * benchmark.reklam_oran_max, 2)
+
+    # "Seneye ne kadar ayirmaliyim" projeksiyonu: bu yilki oneri araligi,
+    # yillik TUFE kadar nominal artirilir. Ciro artisi varsayilmaz (onu
+    # bilemeyiz) - sadece AYNI hacmi gelecek yil finanse etmenin TL
+    # karsiligi gosterilir; kullaniciya da boyle sunulur.
+    gelecek_yil_stok_min = gelecek_yil_stok_max = None
+    gelecek_yil_reklam_min = gelecek_yil_reklam_max = None
+    if tufe is not None and tufe > 0:
+        enflasyon_katsayisi = 1 + tufe / 100
+        gelecek_yil_stok_min = round(stok_min * enflasyon_katsayisi, 2)
+        gelecek_yil_stok_max = round(stok_max * enflasyon_katsayisi, 2)
+        gelecek_yil_reklam_min = round(reklam_min * enflasyon_katsayisi, 2)
+        gelecek_yil_reklam_max = round(reklam_max * enflasyon_katsayisi, 2)
+        notlar.append(
+            f"Önümüzdeki 12 ay projeksiyonu: bu yılki öneri aralıkları, yıllık TÜFE "
+            f"(%{tufe:.1f}) ile düzeltilerek hesaplandı - aynı iş hacmini gelecek yıl "
+            f"sürdürmek nominal olarak bu kadar TL gerektirir. Ciro büyümesi varsayılmadı; "
+            f"büyüme hedefiniz varsa aralıkları hedef büyüme oranınızla ayrıca ölçekleyin."
+        )
 
     kurulus_gideri = giderler.get("kurulus") if profil.ilk_yil_mi else None
 
@@ -351,15 +403,45 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
     mevcut_toplam = giderler.get("toplam")
     if mevcut_toplam is not None and giderler.get("stok") is None and giderler.get("reklam") is None:
         duzenli_gider = mevcut_toplam - (kurulus_gideri or 0)
+
+        # Kurulus gideri toplam giderden buyuk girilmisse (muhtemelen veri
+        # giris hatasi: kurulus, toplamin ICINDE degil AYRI girilmis olabilir)
+        # negatif bir "duzenli gider" ile kiyas yapmak sacma sonuclar uretir
+        # (ekranda "-₺200.000 gideriniz" gibi). Kiyasi tamamen atlayip
+        # kullanicidan girisleri kontrol etmesini istiyoruz.
+        if duzenli_gider < 0:
+            notlar.append(
+                f"Girdiğiniz kuruluş gideri (₺{kurulus_gideri:,.0f}), toplam giderinizden "
+                f"(₺{mevcut_toplam:,.0f}) büyük - bu iki alandan biri hatalı girilmiş olabilir "
+                f"(kuruluş gideri, toplam giderin İÇİNDE yer almalıdır). Sektör kıyaslaması "
+                f"bu yüzden yapılmadı; girişleri düzeltirseniz kıyas otomatik görünür."
+            )
+            duzenli_gider = None
+
         toplam_min = stok_min + reklam_min
         toplam_max = stok_max + reklam_max
         toplam_orta = (toplam_min + toplam_max) / 2
         etiket = "duzenli isletme gideriniz (kurulus gideri dusuldukten sonra)" if kurulus_gideri else "toplam gideriniz"
 
-        gider_sapma_yuzdesi = round((duzenli_gider - toplam_orta) / toplam_orta * 100, 1) if toplam_orta else None
-        sapma_ifadesi = f" (sektor ortalamasindan %{abs(gider_sapma_yuzdesi):.0f} {'dusuk' if gider_sapma_yuzdesi < 0 else 'yuksek'})" if gider_sapma_yuzdesi is not None else ""
+        if duzenli_gider is not None:
+            gider_sapma_yuzdesi = round((duzenli_gider - toplam_orta) / toplam_orta * 100, 1) if toplam_orta else None
+            sapma_ifadesi = f" (sektor ortalamasindan %{abs(gider_sapma_yuzdesi):.0f} {'dusuk' if gider_sapma_yuzdesi < 0 else 'yuksek'})" if gider_sapma_yuzdesi is not None else ""
 
-        if duzenli_gider < toplam_min:
+            # Kiyas kapsami uyarisi: referans aralik SADECE stok+reklam
+            # kalemlerini kapsar. Kullanicinin "toplam" gideri personel,
+            # kira, enerji gibi kalemleri de icerdiginden - ozellikle
+            # personel-agirlikli sektorlerde (arge, hizmet) - "ortalamanin
+            # uzerinde" cikmasi normaldir ve tek basina alarm degildir.
+            kapsam_uyarisi = (
+                " Not: bu referans aralık yalnızca stok+reklam kalemlerini kapsar; "
+                "personel, kira, enerji gibi giderleriniz bu aralığın dışındadır - "
+                "toplam giderinizin aralığın üzerinde çıkması bu yüzden tek başına "
+                "olumsuz bir işaret değildir."
+            )
+
+        if duzenli_gider is None:
+            pass
+        elif duzenli_gider < toplam_min:
             gider_durumu = "altinda"
             notlar.append(
                 f"Girdiginiz {etiket} (₺{duzenli_gider:,.0f}), sektor ortalamasi olan "
@@ -371,6 +453,7 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
             notlar.append(
                 f"Girdiginiz {etiket} (₺{duzenli_gider:,.0f}), sektor ortalamasi olan "
                 f"₺{toplam_min:,.0f}-₺{toplam_max:,.0f} araliginin uzerinde{sapma_ifadesi}."
+                + kapsam_uyarisi
             )
         else:
             gider_durumu = "uygun"
@@ -382,7 +465,10 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
         # Ayri stok/reklam girilmediginde, "mevcut gideriniz" kartlarinda hala
         # eski toplam (kurulus dahil) tutar gorunmesin diye duzeltilmis gideri
         # stok karsilastirmasi icin kullaniyoruz (reklam ayrimi bilinmiyor).
-        mevcut_stok_gideri = duzenli_gider
+        # duzenli_gider negatif cikip None'landiysa karta da hicbir sey yazma -
+        # onceden burada -₺200.000 gibi negatif bir "gider" gorunuyordu.
+        if duzenli_gider is not None:
+            mevcut_stok_gideri = duzenli_gider
 
     # Analist Onerileri: yukarida hesaplanan degerlerden turetilen, madde
     # madde eyleme donuk tavsiyeler. Bunlar da muhasebe/yatirim tavsiyesi
@@ -406,12 +492,23 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
             "oneririz."
         )
 
-    if en_yuksek_artan_girdi:
+    # "En hizli ARTAN" ifadesi sadece gercekten artis varsa kullanilir -
+    # tum girdiler dusustayken max() yine en yuksek (en az dusen) kalemi
+    # secer ve "en hizli artan gideriniz X (%-5.0)" gibi celiskili bir
+    # cumle uretiliyordu.
+    if en_yuksek_artan_girdi and en_yuksek_artan_girdi["artis"] > 0:
         analist_onerileri.append(
             f"En hizli artan gideriniz {en_yuksek_artan_girdi['etiket']} "
             f"(son 1 yilda %{en_yuksek_artan_girdi['artis']:.1f}). Bu kalem icin "
             f"one alarak fiyat kilitleme (sozlesmeli tedarik) veya kooperatif "
             f"uzerinden toplu alim gibi yontemleri arastirmanizi oneririz."
+        )
+    elif en_yuksek_artan_girdi:
+        analist_onerileri.append(
+            f"Takip edilen tarimsal girdi kalemlerinin tumunde son 1 yilda fiyat "
+            f"dususu/yatay seyir var (en yuksegi {en_yuksek_artan_girdi['etiket']}, "
+            f"%{en_yuksek_artan_girdi['artis']:.1f}) - girdi maliyeti baskisi su an "
+            f"icin dusuk gorunuyor."
         )
 
     if profil.ilk_yil_mi and kurulus_gideri:
@@ -470,6 +567,10 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
         stok_maliyeti_max=stok_max,
         reklam_butcesi_min=reklam_min,
         reklam_butcesi_max=reklam_max,
+        gelecek_yil_stok_min=gelecek_yil_stok_min,
+        gelecek_yil_stok_max=gelecek_yil_stok_max,
+        gelecek_yil_reklam_min=gelecek_yil_reklam_min,
+        gelecek_yil_reklam_max=gelecek_yil_reklam_max,
         mevcut_stok_gideri=mevcut_stok_gideri,
         mevcut_reklam_gideri=mevcut_reklam_gideri,
         mevcut_toplam_gider=mevcut_toplam,

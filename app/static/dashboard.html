@@ -1429,11 +1429,13 @@
                         <div class="stat-card">
                             <h3>Önerilen Stok Maliyeti</h3>
                             <div class="value" style="font-size:20px;">${fmt(b.stok_maliyeti_min)} - ${fmt(b.stok_maliyeti_max)}</div>
+                            ${b.gelecek_yil_stok_min != null ? `<p style="color:#2980b9; margin-top:8px;">Önümüzdeki 12 ay (TÜFE düzeltmeli): <b>${fmt(b.gelecek_yil_stok_min)} - ${fmt(b.gelecek_yil_stok_max)}</b></p>` : ""}
                             ${b.mevcut_stok_gideri != null ? `<p style="color:#999; margin-top:8px;">Mevcut gideriniz: ${fmt(b.mevcut_stok_gideri)}${b.gider_sapma_yuzdesi != null ? ` <span style="font-weight:bold; color:${b.gider_sapma_yuzdesi < 0 ? '#e67e22' : '#c0392b'};">(sektör ortalamasından %${Math.abs(b.gider_sapma_yuzdesi).toFixed(0)} ${b.gider_sapma_yuzdesi < 0 ? 'düşük' : 'yüksek'})</span>` : ""}</p>` : ""}
                         </div>
                         <div class="stat-card">
                             <h3>Önerilen Reklam Bütçesi</h3>
                             <div class="value" style="font-size:20px;">${fmt(b.reklam_butcesi_min)} - ${fmt(b.reklam_butcesi_max)}</div>
+                            ${b.gelecek_yil_reklam_min != null ? `<p style="color:#2980b9; margin-top:8px;">Önümüzdeki 12 ay (TÜFE düzeltmeli): <b>${fmt(b.gelecek_yil_reklam_min)} - ${fmt(b.gelecek_yil_reklam_max)}</b></p>` : ""}
                             ${b.mevcut_reklam_gideri != null ? `<p style="color:#999; margin-top:8px;">Mevcut gideriniz: ${fmt(b.mevcut_reklam_gideri)}</p>` : ""}
                         </div>
                         ${b.yillik_tufe != null ? `

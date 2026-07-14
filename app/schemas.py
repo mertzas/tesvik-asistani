@@ -216,6 +216,11 @@ class ButceOnerisiResponse(BaseModel):
     stok_maliyeti_max: float
     reklam_butcesi_min: float
     reklam_butcesi_max: float
+    # Onumuzdeki 12 ay icin TUFE-duzeltilmis projeksiyon (TUFE verisi yoksa None)
+    gelecek_yil_stok_min: Optional[float] = None
+    gelecek_yil_stok_max: Optional[float] = None
+    gelecek_yil_reklam_min: Optional[float] = None
+    gelecek_yil_reklam_max: Optional[float] = None
     mevcut_stok_gideri: Optional[float]
     mevcut_reklam_gideri: Optional[float]
     mevcut_toplam_gider: Optional[float]

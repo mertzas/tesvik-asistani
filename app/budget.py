@@ -221,18 +221,49 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
                 degerler[kisa_ad] = deger
                 etiketler[kisa_ad] = etiket
 
+        # "En hizli artan gideriniz" onerisi kategoriye BAKMAKSIZIN tum
+        # girdiler arasindan seciliyordu - hayvancilik yapan bir kullaniciya
+        # gubre fiyat artisini (%62.7, veri dogrulandi) "en hizli artan
+        # gideriniz" diye gosteriyordu, oysa hayvancilikta asil ilgili
+        # kalem yem'dir (%37.1). Kategori biliniyorsa oneriyi SADECE o
+        # kategoriyle ilgili girdilerden seciyoruz - ilgisiz olsa bile
+        # tarim_girdi_enflasyonu alaninda TUM veriler yine gosteriliyor,
+        # sadece "en yuksek/onerilen" kismi kategoriye gore daralıyor.
+        KATEGORI_ILGILI_GIRDILER = {
+            "hayvancilik": {"yem", "ilac", "bina_sera", "makine_bakim"},
+            "sebze_meyve": {"gubre", "ilac", "bina_sera", "makine_bakim"},
+            "tahil_baklagil": {"gubre", "ilac", "makine_bakim"},
+            "organik": {"gubre", "ilac", "makine_bakim"},
+            "sera": {"bina_sera", "gubre", "ilac", "makine_bakim"},
+            "sulama": {"makine_bakim"},
+            "makinelestirme": {"makine_bakim"},
+        }
+        ilgili_kisa_adlar = KATEGORI_ILGILI_GIRDILER.get(tarim_kategori or "")
+        degerler_oneri_havuzu = (
+            {k: v for k, v in degerler.items() if k in ilgili_kisa_adlar}
+            if ilgili_kisa_adlar else degerler
+        )
+        if not degerler_oneri_havuzu:
+            degerler_oneri_havuzu = degerler  # kategori eslesmedi/veri yok - genel havuza don
+
         if degerler:
             tarim_girdi_enflasyonu = degerler
-            en_yuksek_kisa_ad = max(degerler, key=degerler.get)
+        if degerler_oneri_havuzu:
+            en_yuksek_kisa_ad = max(degerler_oneri_havuzu, key=degerler_oneri_havuzu.get)
             en_yuksek_artan_girdi = {
                 "kalem": en_yuksek_kisa_ad,
                 "etiket": etiketler[en_yuksek_kisa_ad],
                 "artis": degerler[en_yuksek_kisa_ad],
             }
+            kategori_notu = (
+                f" (bu öneri, seçtiğiniz '{tarim_kategori}' kategorisiyle ilgili girdilere "
+                f"daraltılarak seçildi - tüm girdi kalemlerinin verisi aşağıda ayrıca listelidir)"
+                if ilgili_kisa_adlar and degerler_oneri_havuzu is not degerler else ""
+            )
             notlar.append(
                 "TUIK Tarimsal Girdi Fiyat Endeksi'ne gore son 1 yillik girdi fiyat "
-                "artislari (bu, hangi gubreyi/ne kadar kullanmaniz gerektigi konusunda "
-                "bir tavsiye degildir, sadece maliyet planlamasi icindir). Gubre/ilac "
+                f"artislari{kategori_notu} (bu, hangi gubreyi/ne kadar kullanmaniz gerektigi "
+                "konusunda bir tavsiye degildir, sadece maliyet planlamasi icindir). Gubre/ilac "
                 "secimi ve dozu icin Il/Ilce Tarim Mudurlugu'nden toprak tahlili bazli "
                 "tavsiye almanizi oneririz."
             )
@@ -399,6 +430,72 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
 
     gider_durumu = None  # "altinda" | "uzerinde" | "uygun"
     gider_sapma_yuzdesi = None  # sektor araliginin orta noktasina gore % sapma
+
+    # DUZELTME: kullanici stok/reklam giderini AYRI girdiginde (ki notlar
+    # tam olarak bunu tavsiye ediyor: "stok/reklam ayrimini girerseniz
+    # daha net bir karsilastirma yapabiliriz") kiyas hic CALISMIYORDU -
+    # asagidaki blok SADECE mevcut_toplam girildiginde tetikleniyordu.
+    # Ayri giris aslinda TOPLAM'dan daha kesin bir kiyasa izin verir (stok
+    # kendi araligiyla, reklam kendi araligiyla ayri ayri kiyaslanabilir) -
+    # burada o kiyasi ekliyoruz.
+    if mevcut_stok_gideri is not None or mevcut_reklam_gideri is not None:
+        if mevcut_stok_gideri is not None:
+            stok_orta = (stok_min + stok_max) / 2
+            stok_sapma = round((mevcut_stok_gideri - stok_orta) / stok_orta * 100, 1) if stok_orta else None
+            if mevcut_stok_gideri < stok_min:
+                notlar.append(
+                    f"Stok gideriniz (₺{mevcut_stok_gideri:,.0f}), sektör ortalaması olan "
+                    f"₺{stok_min:,.0f}-₺{stok_max:,.0f} aralığının altında"
+                    + (f" (sektör ortalamasından %{abs(stok_sapma):.0f} düşük)." if stok_sapma is not None else ".")
+                )
+            elif mevcut_stok_gideri > stok_max:
+                notlar.append(
+                    f"Stok gideriniz (₺{mevcut_stok_gideri:,.0f}), sektör ortalaması olan "
+                    f"₺{stok_min:,.0f}-₺{stok_max:,.0f} aralığının üzerinde"
+                    + (f" (sektör ortalamasından %{abs(stok_sapma):.0f} yüksek)." if stok_sapma is not None else ".")
+                )
+            else:
+                notlar.append(
+                    f"Stok gideriniz (₺{mevcut_stok_gideri:,.0f}), sektör ortalaması olan "
+                    f"₺{stok_min:,.0f}-₺{stok_max:,.0f} aralığına uygun."
+                )
+            stok_durumu = "altinda" if mevcut_stok_gideri < stok_min else "uzerinde" if mevcut_stok_gideri > stok_max else "uygun"
+            gider_sapma_yuzdesi = stok_sapma
+            gider_durumu = stok_durumu
+
+        if mevcut_reklam_gideri is not None:
+            reklam_orta = (reklam_min + reklam_max) / 2
+            reklam_sapma = round((mevcut_reklam_gideri - reklam_orta) / reklam_orta * 100, 1) if reklam_orta else None
+            if mevcut_reklam_gideri < reklam_min:
+                notlar.append(
+                    f"Reklam gideriniz (₺{mevcut_reklam_gideri:,.0f}), sektör ortalaması olan "
+                    f"₺{reklam_min:,.0f}-₺{reklam_max:,.0f} aralığının altında"
+                    + (f" (sektör ortalamasından %{abs(reklam_sapma):.0f} düşük)." if reklam_sapma is not None else ".")
+                )
+            elif mevcut_reklam_gideri > reklam_max:
+                notlar.append(
+                    f"Reklam gideriniz (₺{mevcut_reklam_gideri:,.0f}), sektör ortalaması olan "
+                    f"₺{reklam_min:,.0f}-₺{reklam_max:,.0f} aralığının üzerinde"
+                    + (f" (sektör ortalamasından %{abs(reklam_sapma):.0f} yüksek)." if reklam_sapma is not None else ".")
+                )
+            else:
+                notlar.append(
+                    f"Reklam gideriniz (₺{mevcut_reklam_gideri:,.0f}), sektör ortalaması olan "
+                    f"₺{reklam_min:,.0f}-₺{reklam_max:,.0f} aralığına uygun."
+                )
+            reklam_durumu = "altinda" if mevcut_reklam_gideri < reklam_min else "uzerinde" if mevcut_reklam_gideri > reklam_max else "uygun"
+            # Genel gider_durumu (analist_onerileri bunu okuyor) icin: stok
+            # "uygun" iken reklam "altinda/uzerinde" ise (veya tam tersi)
+            # ONCEKI KOD BUNU SESSIZCE KAYBEDIYORDU (stok "uygun" ise reklam
+            # hicbir zaman gider_durumu'na yazilmiyordu). Kural: herhangi
+            # biri "uygun" degilse, genel durum "uygun" olamaz - dikkat
+            # cekilmesi gereken bir sapma varsa gosterilmeli.
+            if gider_durumu in (None, "uygun") and reklam_durumu != "uygun":
+                gider_sapma_yuzdesi = reklam_sapma
+                gider_durumu = reklam_durumu
+            elif gider_durumu is None:
+                gider_sapma_yuzdesi = reklam_sapma
+                gider_durumu = reklam_durumu
 
     mevcut_toplam = giderler.get("toplam")
     if mevcut_toplam is not None and giderler.get("stok") is None and giderler.get("reklam") is None:

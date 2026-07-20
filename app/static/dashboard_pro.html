@@ -326,7 +326,9 @@
 
     <script>
         const API_URL = window.location.origin;
-        const token = localStorage.getItem('token');
+        // index.html/dashboard.html "auth_token" anahtarina yaziyor - eski
+        // tek-anahtarli oturumlar icin de burada ikisini kontrol ediyoruz.
+        const token = localStorage.getItem('token') || localStorage.getItem('auth_token');
         const user = JSON.parse(localStorage.getItem('user') || '{}');
 
         if (!token) window.location.href = '/login.html';

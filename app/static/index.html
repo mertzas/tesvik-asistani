@@ -402,7 +402,16 @@
                 }
 
                 const data = await res.json();
+                // İki farklı localStorage anahtarına da yazıyoruz: bazı
+                // dashboard sayfaları (dashboard.html) "auth_token", bazıları
+                // (dashboard_pro.html, cilek_dashboard.html) "token" okuyor -
+                // bu tutarsızlık "Invalid token" hatasına yol açıyordu.
+                // Gerçek düzeltme (tüm sayfaları tek anahtara taşımak) daha
+                // büyük bir refactor; şimdilik her iki anahtarı da yazarak
+                // hangi dashboard'a gidilirse gidilsin oturumun çalışmasını
+                // garanti ediyoruz.
                 localStorage.setItem("auth_token", data.access_token);
+                localStorage.setItem("token", data.access_token);
                 window.location.href = "/dashboard";
             } catch (e) {
                 errorDiv.textContent = `Hata: ${e.message}`;
@@ -447,7 +456,16 @@
                 }
 
                 const data = await res.json();
+                // İki farklı localStorage anahtarına da yazıyoruz: bazı
+                // dashboard sayfaları (dashboard.html) "auth_token", bazıları
+                // (dashboard_pro.html, cilek_dashboard.html) "token" okuyor -
+                // bu tutarsızlık "Invalid token" hatasına yol açıyordu.
+                // Gerçek düzeltme (tüm sayfaları tek anahtara taşımak) daha
+                // büyük bir refactor; şimdilik her iki anahtarı da yazarak
+                // hangi dashboard'a gidilirse gidilsin oturumun çalışmasını
+                // garanti ediyoruz.
                 localStorage.setItem("auth_token", data.access_token);
+                localStorage.setItem("token", data.access_token);
                 window.location.href = "/dashboard";
             } catch (e) {
                 errorDiv.textContent = `Hata: ${e.message}`;

@@ -71,7 +71,9 @@ let AKTIF_PARSEL_ID = null;
 let SON_BASARILI_VERI = null;
 let YENILEME_TIMER = null;
 
-function token() { return localStorage.getItem(TOKEN_KEY); }
+// index.html/dashboard.html "auth_token" anahtarina yaziyor - eski
+// tek-anahtarli oturumlar icin de burada ikisini kontrol ediyoruz.
+function token() { return localStorage.getItem(TOKEN_KEY) || localStorage.getItem('auth_token'); }
 
 async function api(path, options = {}) {
   const res = await fetch(API + path, {

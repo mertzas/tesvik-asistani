@@ -658,7 +658,12 @@
 
     <script>
         const API_BASE = "http://localhost:8000/api";
-        let authToken = localStorage.getItem("auth_token");
+        // Diger dashboard sayfalari (login.html/dashboard_pro.html) "token"
+        // anahtarina yaziyor - hangi sayfadan giris yapilmis olursa olsun
+        // (login yaptiktan sonra bu sayfalar artik her iki anahtara da
+        // yaziyor, ama daha ONCE tek anahtara yazilmis eski oturumlar icin
+        // de) burada ikisini de kontrol ediyoruz.
+        let authToken = localStorage.getItem("auth_token") || localStorage.getItem("token");
         let currentOrg = null;
 
         // Auth check

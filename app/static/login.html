@@ -265,7 +265,11 @@
 
                 const data = await res.json();
                 if (res.ok) {
+                    // Iki farkli localStorage anahtarina da yaziyoruz - bkz.
+                    // index.html'deki ayni yorum (dashboard.html "auth_token",
+                    // dashboard_pro.html/cilek_dashboard.html "token" okuyor).
                     localStorage.setItem('token', data.access_token);
+                    localStorage.setItem('auth_token', data.access_token);
                     localStorage.setItem('user', JSON.stringify(data.user));
                     window.location.href = '/dashboard.html';
                 } else {
@@ -303,7 +307,11 @@
 
                 const data = await res.json();
                 if (res.ok) {
+                    // Iki farkli localStorage anahtarina da yaziyoruz - bkz.
+                    // index.html'deki ayni yorum (dashboard.html "auth_token",
+                    // dashboard_pro.html/cilek_dashboard.html "token" okuyor).
                     localStorage.setItem('token', data.access_token);
+                    localStorage.setItem('auth_token', data.access_token);
                     localStorage.setItem('user', JSON.stringify(data.user));
                     window.location.href = '/dashboard.html';
                 } else {

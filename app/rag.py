@@ -19,7 +19,83 @@ docstring'i) - LLM egitim verisinden gelen "hatirlanan" numaralar degil.
 """
 import requests
 
-from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu, settings
+from app.models import SessionLocal, Tesvik, TesvikChunk, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu, settings
+
+
+def retrieve_hybrid_rrf(query: str, limit: int = 5) -> list[Tesvik]:
+    """Parent-Child Chunking tabanlı Hibrit Arama (BM25 Keyword + Vector Embedding)
+    ve Reciprocal Rank Fusion (RRF) sıralaması."""
+    db = SessionLocal()
+    terms = _terimlere_ayir(query)
+    if not terms:
+        res = db.query(Tesvik).limit(limit).all()
+        db.close()
+        return res
+
+    child_chunks = db.query(TesvikChunk).filter(TesvikChunk.chunk_type == "child").all()
+    if not child_chunks:
+        db.close()
+        return retrieve(query, limit=limit)
+
+    # 1. Child Chunk'lar üzerinde metin araması (BM25 Rank)
+    keyword_ranks = {}
+    for c in child_chunks:
+        c_text = c.metin.lower()
+        score = sum(c_text.count(t) for t in terms)
+        if score > 0:
+            keyword_ranks[c.id] = score
+
+    sorted_keyword = sorted(keyword_ranks.keys(), key=lambda cid: keyword_ranks[cid], reverse=True)
+    keyword_rank_map = {cid: idx + 1 for idx, cid in enumerate(sorted_keyword)}
+
+    # 2. Vektör Araması (Vector Similarity Rank)
+    from app.chunking import _simple_embedding
+    q_vec = _simple_embedding(query)
+
+    def cos_sim(v1, v2):
+        if not v1 or not v2:
+            return 0.0
+        return sum(a * b for a, b in zip(v1, v2))
+
+    vector_scores = {}
+    for c in child_chunks:
+        if c.embedding:
+            sim = cos_sim(q_vec, c.embedding)
+            if sim > 0.1:
+                vector_scores[c.id] = sim
+
+    sorted_vector = sorted(vector_scores.keys(), key=lambda cid: vector_scores[cid], reverse=True)
+    vector_rank_map = {cid: idx + 1 for idx, cid in enumerate(sorted_vector)}
+
+    # 3. Reciprocal Rank Fusion (RRF)
+    rrf_scores = {}
+    all_cids = set(keyword_rank_map.keys()) | set(vector_rank_map.keys())
+
+    for cid in all_cids:
+        k_rank = keyword_rank_map.get(cid, 999)
+        v_rank = vector_rank_map.get(cid, 999)
+        rrf_scores[cid] = (1.0 / (60 + k_rank)) + (1.0 / (60 + v_rank))
+
+    sorted_cids = sorted(rrf_scores.keys(), key=lambda cid: rrf_scores[cid], reverse=True)
+
+    # 4. Top Child Chunk'lardan Parent Teşvik kayıtlarını çıkarma
+    matched_tesvik_ids = []
+    seen = set()
+    for cid in sorted_cids:
+        chunk = db.query(TesvikChunk).filter(TesvikChunk.id == cid).first()
+        if chunk and chunk.tesvik_id not in seen:
+            seen.add(chunk.tesvik_id)
+            matched_tesvik_ids.append(chunk.tesvik_id)
+
+    matched_tesvikler = [
+        db.query(Tesvik).filter(Tesvik.id == tid).first()
+        for tid in matched_tesvik_ids
+        if db.query(Tesvik).filter(Tesvik.id == tid).first() is not None
+    ]
+    db.close()
+
+    return matched_tesvikler[:limit] if matched_tesvikler else retrieve(query, limit=limit)
+
 from sqlalchemy import or_
 
 OLLAMA_ETKIN = False  # True yapinca Gemma ile dogal dil cevap tekrar devreye girer
@@ -353,7 +429,7 @@ def _ollama_cevap(query: str, matches: list[Tesvik]) -> str | None:
 
 
 def answer(query: str, profil: dict | None = None) -> str:
-    matches = retrieve(query)
+    matches = retrieve_hybrid_rrf(query)
 
     if not matches:
         return (

@@ -150,6 +150,28 @@ class Tesvik(Base):
     aktif_mi = Column(Boolean, nullable=True)  # None = henuz kontrol edilmedi, True/False = teyit edildi
     durum_notu = Column(String, nullable=True)  # "2023'te kapanmis, KGF 'gecmis programlar' sayfasinda listeleniyor" gibi
 
+    # Veri tazeligi, tarama ve cikarim kaniti (provenance) alanlari
+    son_tarama_tarihi = Column(DateTime, nullable=True)
+    html_icerik_hash = Column(String, nullable=True)
+    cikarim_guven_skoru = Column(Float, nullable=True)
+    cikarim_kanitlari = Column(JSON, nullable=True)
+
+
+class TesvikChunk(Base):
+    __tablename__ = "tesvik_chunks"
+
+    id = Column(Integer, primary_key=True, index=True)
+    tesvik_id = Column(Integer, ForeignKey("tesvikler.id", ondelete="CASCADE"), index=True, nullable=False)
+    parent_id = Column(Integer, ForeignKey("tesvik_chunks.id", ondelete="CASCADE"), index=True, nullable=True)
+    chunk_type = Column(String, nullable=False, index=True)  # "parent" | "child"
+    metin = Column(Text, nullable=False)
+    embedding = Column(JSON, nullable=True)  # [0.123, -0.456, ...] vector embedding
+    metadata_json = Column(JSON, nullable=True)  # {"section": "Madde 3", "quote_start": 120}
+
+    created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+
+
+
 
 # Kurum iletisim rehberi - dogrulanmis resmi telefon/adres bilgileri.
 # Tesvik.kurum alaniyla ayni degeri tasir (orn. "KOSGEB"); tek tek tesvik

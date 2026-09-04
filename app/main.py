@@ -250,7 +250,14 @@ def sor(
         query = Query(
             org_id=current_org.id,
             question=request.question,
-            results=[r.dict() for r in results],
+            # model_dump(mode="json") -> datetime alanlari ISO string'e
+            # cevrilir. Onceki .dict() ham datetime nesnesi donduruyordu ve
+            # JSON sutununa yazilirken "Object of type datetime is not JSON
+            # serializable" ile TUM /api/sor istegi cokuyordu. Sadece
+            # baslama_tarihi dolu olan 7 kayit (Tarim Bakanligi) eslesince
+            # tetiklendigi icin fark edilmemisti - tarim sorularinin cogunda
+            # AI danisman tamamen kirikti.
+            results=[r.model_dump(mode="json") for r in results],
             tokens_used=len(request.question.split()),  # Basit tahmin
         )
         db.add(query)

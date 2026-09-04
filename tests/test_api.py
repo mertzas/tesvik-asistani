@@ -99,3 +99,27 @@ def test_health_check(client):
     response = client.get("/health")
     assert response.status_code == status.HTTP_200_OK
     assert response.json()["status"] == "ok"
+
+
+def test_sor_endpoint_tarih_iceren_kayitla_cokmez(client, test_user_token, db_session):
+    """HATA: /api/sor, sorgu gecmisini kaydederken SearchResult'taki
+    baslama_tarihi/bitis_tarihi datetime alanlarini ham nesne olarak JSON
+    sutununa yazmaya calisiyordu ve "Object of type datetime is not JSON
+    serializable" ile TUM istek cokuyordu. Sadece tarihi dolu kayitlar
+    eslesince tetiklendigi icin (7 Tarim Bakanligi kaydi) fark edilmemisti -
+    tarim sorularinin cogunda AI danisman tamamen kirikti."""
+    from datetime import datetime, timezone
+    from app.models import Tesvik
+
+    db_session.add(Tesvik(
+        kurum="Tarım Bakanlığı", baslik="Tarihli Destek", ozet="ozet", detay="hayvancilik destegi",
+        kaynak_url="https://example.test/tarihli",
+        uygunluk_kriterleri={"sektorler": ["tarim"]},
+        baslama_tarihi=datetime(2024, 1, 1, tzinfo=timezone.utc),
+    ))
+    db_session.commit()
+
+    r = client.post("/api/sor", json={"question": "hayvancilik destegi"},
+                    headers={"Authorization": f"Bearer {test_user_token}"})
+    assert r.status_code == 200, r.text
+    assert "not JSON serializable" not in r.text

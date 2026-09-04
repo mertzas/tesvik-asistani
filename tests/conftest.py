@@ -66,3 +66,14 @@ def test_user_token(client, test_org_data):
     """Create test user and return auth token"""
     response = client.post("/api/auth/signup", json=test_org_data)
     return response.json()["access_token"]
+
+
+@pytest.fixture
+def db_session():
+    """Butce/eslesme testleri icin dogrudan DB oturumu (HTTP katmani olmadan
+    saf hesap mantigini test etmek icin)."""
+    db = TestingSessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()

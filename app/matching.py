@@ -92,6 +92,15 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
     sonuclar: list[TesvikEslesmeSonucu] = []
 
     for t in db.query(Tesvik).all():
+        # KAPANDIGI DOGRULANMIS programlari hic onerme. Bunlar bir firsat
+        # degil; kullanici arayip "bu program bitti" cevabi alir ve sistemin
+        # tamamina olan guveni sarsilir. (Tespit: imalat profiline gelen ilk
+        # 20 onerinin 5'i kapali programdi - 2021 Nefes Kredisi, 6 Subat
+        # paketleri gibi.) Kapali programlar RAG/arama tarafinda hala
+        # bilgi amacli gorunur, orada "artik aktif degil" diye isaretleniyor.
+        if t.aktif_mi is False:
+            continue
+
         kriterler = t.uygunluk_kriterleri or {}
         tesvik_sektorler = {s.lower() for s in kriterler.get("sektorler", [])}
 
@@ -203,7 +212,10 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
     # Skor esitliginde veritabani ekleme sirasina (id) gore rastgele/anlamsiz
     # bir siralama olusmasin diye ikincil olarak baslige gore alfabetik
     # siraliyoruz - en azindan ongorulebilir ve kullaniciya aciklanabilir.
-    sonuclar.sort(key=lambda s: (-s.skor, (s.tesvik.baslik or "").lower()))
+    # Ayni skorda: aktif oldugu DOGRULANMIS program, aktifligi hic kontrol
+    # edilmemis olanin onune gecer. Skoru degistirmiyoruz (aciklanabilirlik
+    # bozulmasin) - sadece esitlik bozma sirasi.
+    sonuclar.sort(key=lambda s: (-s.skor, 0 if s.tesvik.aktif_mi is True else 1, (s.tesvik.baslik or "").lower()))
     sonuclar = _kurum_ile_cesitlendir(sonuclar)
     return sonuclar[:limit]
 

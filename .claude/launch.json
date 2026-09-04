@@ -1,12 +1,20 @@
 {
-    "version":  "0.0.1",
-    "configurations":  [
-                           {
-                               "port":  8000,
-                               "runtimeExecutable":  "python",
-                               "name":  "tesvik-asistani",
-                               "cwd": "C:\\Users\\huawei\\Desktop\\tesvik-asistani",
-                               "runtimeArgs": ["-m", "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
-                           }
-                       ]
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "port": 8000,
+      "runtimeExecutable": "python",
+      "name": "tesvik-asistani",
+      "runtimeArgs": [
+        "-m",
+        "uvicorn",
+        "app.main:app",
+        "--host",
+        "0.0.0.0",
+        "--port",
+        "8000"
+      ],
+      "cwd": "C:\\Users\\huawei\\Desktop\\Yeni klasör (4)\\tesvik-asistani"
+    }
+  ]
 }

@@ -196,6 +196,12 @@ class TesvikEslesmeItem(BaseModel):
     basvuru_sartlari: Optional[List[str]] = None
     gerekli_belgeler: Optional[List[str]] = None
     basvuru_yeri: Optional[str] = None
+
+    # Programin hala basvuruya acik olup olmadigi. None = hic kontrol
+    # edilmedi (kullaniciya "teyit edin" uyarisi gosterilmeli), True =
+    # acik oldugu dogrulandi. False olanlar eslesmeye hic girmez.
+    aktif_mi: Optional[bool] = None
+    durum_notu: Optional[str] = None
     basvuru_suresi: Optional[str] = None
     destek_verilme_suresi: Optional[str] = None
     kategori: Optional[str] = None

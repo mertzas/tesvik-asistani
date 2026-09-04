@@ -657,7 +657,11 @@
     </div>
 
     <script>
-        const API_BASE = "http://localhost:8000/api";
+        // Sabit "http://localhost:8000" yaziliydi: farkli bir port/domain'de
+        // (canliya cikinca veya farkli portta test ederken) TUM istekler
+        // "Failed to fetch" ile kiriliyordu. Sayfanin kendi origin'ini
+        // kullanmak her ortamda calisir.
+        const API_BASE = window.location.origin + "/api";
         // Diger dashboard sayfalari (login.html/dashboard_pro.html) "token"
         // anahtarina yaziyor - hangi sayfadan giris yapilmis olursa olsun
         // (login yaptiktan sonra bu sayfalar artik her iki anahtara da
@@ -1180,6 +1184,9 @@
                     <div class="result-card">
                         <div class="kurum">${t.kurum} · Skor: ${(t.skor * 100).toFixed(0)}%</div>
                         <div class="baslik">${t.baslik}</div>
+                        ${t.aktif_mi === true
+                            ? `<div style="display:inline-block; margin:4px 0 8px; padding:3px 10px; border-radius:100px; background:#e4efe9; color:#0f4438; font-size:12px; font-weight:bold;">✓ Aktif olduğu doğrulandı</div>`
+                            : `<div style="display:inline-block; margin:4px 0 8px; padding:3px 10px; border-radius:100px; background:#fdf3e2; color:#7a4b22; font-size:12px; font-weight:bold;" title="Bu programın hala başvuruya açık olduğu tarafımızca doğrulanmadı.">⚠ Aktifliği doğrulanmadı — kurumdan teyit edin</div>`}
                         <div class="ozet">${t.ozet}</div>
                         ${t.tesvil_tutari ? `<div class="meta"><span>💰 ${t.tesvil_tutari}</span></div>` : ""}
                         ${t.tutari_tahmini_profil ? `<div class="meta"><span>🎯 Tahmini: ₺${t.tutari_tahmini_profil.toLocaleString('tr-TR', {maximumFractionDigits:0})}</span></div>` : ""}

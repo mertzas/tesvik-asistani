@@ -351,6 +351,8 @@ def tesvik_eslesme(
                 tutari_max=s.tesvik.tutari_max,
                 tutari_hesaplama_formulu=s.tesvik.tutari_hesaplama_formulu,
                 tutari_tahmini_profil=tutari_tahmini_hesapla(s.tesvik, profil),
+                aktif_mi=s.tesvik.aktif_mi,
+                durum_notu=s.tesvik.durum_notu,
                 basvuru_sartlari=s.tesvik.basvuru_sartlari,
                 gerekli_belgeler=s.tesvik.gerekli_belgeler,
                 basvuru_yeri=s.tesvik.basvuru_yeri,

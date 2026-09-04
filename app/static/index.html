@@ -364,7 +364,11 @@
     </div>
 
     <script>
-        const API_BASE = "http://localhost:8000/api";
+        // Sabit "http://localhost:8000" yaziliydi: farkli bir port/domain'de
+        // (canliya cikinca veya farkli portta test ederken) TUM istekler
+        // "Failed to fetch" ile kiriliyordu. Sayfanin kendi origin'ini
+        // kullanmak her ortamda calisir.
+        const API_BASE = window.location.origin + "/api";
 
         function switchForm(form) {
             document.querySelectorAll(".form-container").forEach(f => f.classList.remove("active"));

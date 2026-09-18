@@ -443,6 +443,41 @@
             font-size: 11.5px;
             font-weight: bold;
         }
+        /* Veri tazeligi rozeti - kullanici, gordugu rakamlarin ne kadar
+           guncel oldugunu bilmeden karar vermemeli. */
+        .veri-rozet {
+            display: inline-flex; align-items: center; gap: 6px;
+            padding: 5px 11px; border-radius: 999px;
+            font-size: 12px; font-weight: 600; cursor: pointer;
+            border: 1px solid transparent; white-space: nowrap;
+        }
+        .veri-rozet.taze     { background:#e7f7ed; color:#1b7a3e; border-color:#b7e3c6; }
+        .veri-rozet.eskiyor  { background:#fff6e0; color:#8a5a00; border-color:#f0d79a; }
+        .veri-rozet.bayat,
+        .veri-rozet.veri_yok { background:#fdeaea; color:#a32020; border-color:#f2bcbc; }
+        .veri-rozet.bilinmiyor { background:#eef0f3; color:#5a6270; border-color:#d6dae0; }
+
+        #veri-detay {
+            display: none; margin: 14px 0 0; padding: 16px 18px;
+            background: #fff; border: 1px solid #e3e6ea; border-radius: 10px;
+            font-size: 13px; line-height: 1.55;
+        }
+        #veri-detay table { width: 100%; border-collapse: collapse; }
+        #veri-detay th, #veri-detay td {
+            text-align: left; padding: 7px 9px; border-bottom: 1px solid #f0f2f4;
+            vertical-align: top;
+        }
+        #veri-detay th { color: #6b7380; font-weight: 600; font-size: 12px; }
+        #veri-detay .nokta {
+            display:inline-block; width:8px; height:8px; border-radius:50%; margin-right:7px;
+        }
+        #veri-detay .nokta.taze { background:#2ea55f; }
+        #veri-detay .nokta.eskiyor { background:#d99400; }
+        #veri-detay .nokta.bayat, #veri-detay .nokta.veri_yok { background:#c62828; }
+        #veri-detay .uyari-metni { color:#a32020; }
+        #veri-detay code {
+            background:#f4f5f7; padding:1px 5px; border-radius:4px; font-size:12px;
+        }
     </style>
 </head>
 <body>
@@ -463,10 +498,14 @@
         <div class="header">
             <h1>Hoş geldin! 👋</h1>
             <div class="user-info">
+                <span id="veri-rozet" class="veri-rozet" style="display:none"
+                      title="Verilerin ne zaman guncellendigini gormek icin tiklayin"></span>
                 <span id="user-email"></span>
                 <div class="plan-badge" id="plan-badge">FREE</div>
             </div>
         </div>
+
+        <div id="veri-detay"></div>
 
         <!-- Search Section -->
         <div id="search" class="section">
@@ -682,6 +721,7 @@
             loadAnalytics();
             loadPricing();
             loadFinancialProfile();
+            loadVeriDurumu();
             setupMenuListeners();
         });
 
@@ -944,6 +984,74 @@
 
         function requirePlanUpgradeMessage(container) {
             container.innerHTML = `<div class="error">Bu özellik PRO ve üzeri planlarda kullanılabilir. <a href="#" onclick="showSection('pricing'); document.querySelector('[data-section=pricing]').click(); return false;">Planınızı yükseltin</a>.</div>`;
+        }
+
+        // ---- Veri tazeligi ----
+        // Kullaniciya gosterilen hal fiyatlari, TUFE ve kar oranlari bir
+        // veritabani anlik goruntusu; ne zaman cekildigini gormeden bunlara
+        // dayanip karar vermek yaniltici olur.
+        const VERI_DURUM_METNI = {
+            taze:       { simge: "✓", metin: "Veriler guncel" },
+            eskiyor:    { simge: "○", metin: "Bazi veriler eskiyor" },
+            bayat:      { simge: "!", metin: "Bazi veriler bayat" },
+            veri_yok:   { simge: "!", metin: "Eksik veri kaynagi" },
+            bilinmiyor: { simge: "?", metin: "Veri durumu bilinmiyor" },
+        };
+
+        function guncellemeMetni(kaynak) {
+            if (!kaynak.son_guncelleme) return "hic guncellenmemis";
+            const t = new Date(kaynak.son_guncelleme);
+            const tarih = t.toLocaleDateString("tr-TR");
+            if (kaynak.yas_gun === 0) return `${tarih} (bugun)`;
+            return `${tarih} (${kaynak.yas_gun} gun once)`;
+        }
+
+        async function loadVeriDurumu() {
+            const rozet = document.getElementById("veri-rozet");
+            const detay = document.getElementById("veri-detay");
+            if (!rozet || !detay) return;
+
+            let veri;
+            try {
+                // Kimlik dogrulamasiz endpoint - token gerekmiyor.
+                const res = await fetch(`${API_BASE}/veri-durumu`);
+                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                veri = await res.json();
+            } catch (e) {
+                // Sessizce kaybolmasin: kullanici "veri guncel" sanmamali.
+                console.warn("Veri durumu alinamadi:", e);
+                veri = { genel_durum: "bilinmiyor", kaynaklar: [] };
+            }
+
+            const d = veri.genel_durum || "bilinmiyor";
+            const etiket = VERI_DURUM_METNI[d] || VERI_DURUM_METNI.bilinmiyor;
+            rozet.className = `veri-rozet ${d}`;
+            rozet.textContent = `${etiket.simge} ${etiket.metin}`;
+            rozet.style.display = "inline-flex";
+
+            const satirlar = (veri.kaynaklar || []).map(k => `
+                <tr>
+                    <td><span class="nokta ${k.durum}"></span>${k.baslik}</td>
+                    <td>${guncellemeMetni(k)}</td>
+                    <td>${(k.kayit_sayisi || 0).toLocaleString("tr-TR")} kayit</td>
+                    <td>${k.uyari ? `<span class="uyari-metni">${k.uyari}</span>` : "&mdash;"}</td>
+                </tr>`).join("");
+
+            detay.innerHTML = satirlar
+                ? `<table>
+                     <tr><th>Kaynak</th><th>Son guncelleme</th><th>Hacim</th><th>Not</th></tr>
+                     ${satirlar}
+                   </table>
+                   <p style="margin:12px 0 0;color:#6b7380">
+                     Bu tarihler, onerilerin dayandigi verilerin ne zaman cekildigini
+                     gosterir. Eski bir kaynak sonuclari tamamen gecersiz kilmaz ama
+                     karar verirken bunu hesaba katin.
+                   </p>`
+                : `<p style="margin:0;color:#a32020">Veri durumu su an okunamiyor.</p>`;
+
+            rozet.onclick = () => {
+                detay.style.display = detay.style.display === "block" ? "none" : "block";
+            };
         }
 
         async function loadFinancialProfile() {

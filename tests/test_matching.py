@@ -129,3 +129,33 @@ def test_kosgeb_adi_altindaki_kredi_urunu_de_haric_tutulur(db_session):
     profil = FinancialProfile(sektor="imalat", yillik_ciro=1_000_000)
     alt, ust = toplam_tahmini_destek(esles(profil, db_session), profil)
     assert (alt, ust) == (0.0, 0.0)
+
+
+def test_farkli_sektorler_farkli_liste_alir(db_session):
+    """Uretimde 174 kaydin 92'si SADECE "genel" etiketliydi; "genel" 0.2,
+    dogrudan sektor eslesmesi 0.6 puan aldigi icin bu kayitlar her profile
+    ayni duz skorla geliyor ve "sektorune ozel eslestirme" iddiasi fiilen
+    islemiyordu. Bu test, sektore ozel etiketlemenin gercekten ayristirma
+    yaptigini dogrular."""
+    db_session.add_all([
+        _tesvik(baslik="Tarima Ozel", kaynak_url="https://t/1",
+                uygunluk_kriterleri={"sektorler": ["tarim"]}),
+        _tesvik(baslik="Ihracata Ozel", kaynak_url="https://t/2",
+                uygunluk_kriterleri={"sektorler": ["ihracat"]}),
+        _tesvik(baslik="Herkese Acik", kaynak_url="https://t/3",
+                uygunluk_kriterleri={"sektorler": ["genel"]}),
+    ])
+    db_session.commit()
+
+    def basliklar(sektor):
+        return [s.tesvik.baslik for s in
+                esles(FinancialProfile(sektor=sektor, yillik_ciro=1_000_000), db_session)]
+
+    tarim, ihracat = basliklar("tarim"), basliklar("ihracat")
+
+    # Sektore ozel kayit yalnizca kendi sektorunde gorunur
+    assert "Tarima Ozel" in tarim and "Tarima Ozel" not in ihracat
+    assert "Ihracata Ozel" in ihracat and "Ihracata Ozel" not in tarim
+    # Genel kayit ikisinde de var ama daha dusuk sirada
+    assert "Herkese Acik" in tarim and "Herkese Acik" in ihracat
+    assert tarim[0] == "Tarima Ozel", "sektore ozel kayit genel kaydin onunde olmali"

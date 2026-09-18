@@ -12,6 +12,7 @@ from dataclasses import dataclass
 from sqlalchemy.orm import Session
 
 from app.models import FinancialProfile, MacroIndicator, SectorBenchmark
+from app.veri_tazeligi import kaynak_tazeligi
 from app.models_cilek import PazarFiyati, PazarKaynagi
 from app.tmo_fiyatlar import urun_fiyati_bul
 from app.ihracat_fiyatlari import ihracat_fiyati_bul
@@ -183,8 +184,21 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
 
     tufe = _indikator_getir(db, "yillik_tufe")
     if tufe is not None:
+        # TUFE'yi "guncel gercek" gibi sunmak yaniltici: TUIK'ten en son ne
+        # zaman cekildigini de soyluyoruz. Olcum (2026-09-18) sirasinda bu
+        # veri 69 gunluktu, yani iki aylik bir enflasyon rakami uzerinden
+        # projeksiyon yapiliyordu ve kullanicinin bunu bilmesinin yolu yoktu.
+        makro_tazelik = kaynak_tazeligi(db, "makro")
+        yas_notu = ""
+        if makro_tazelik and makro_tazelik.son_guncelleme:
+            tarih = makro_tazelik.son_guncelleme.strftime("%d.%m.%Y")
+            yas_notu = f" (TUIK verisi {tarih} tarihinde cekildi"
+            if makro_tazelik.durum != "taze":
+                yas_notu += (f", {makro_tazelik.yas_gun} gunluk - o tarihten sonra "
+                             f"aciklanan enflasyon bu hesaba YANSIMIYOR")
+            yas_notu += ")"
         notlar.append(
-            f"Yillik TUFE ({tufe:.1f}%) dikkate alindiginda, stok maliyetlerinizin son "
+            f"Yillik TUFE ({tufe:.1f}%){yas_notu} dikkate alindiginda, stok maliyetlerinizin son "
             f"guncellemeden bu yana enflasyon oraninda arttigini varsayarak butce planlayin."
         )
 

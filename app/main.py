@@ -53,6 +53,7 @@ from app.urun_sektor_anahtarlari import anahtar_kelimeden_sektor_bul
 from app.eticaret_destek_hesaplayici import eticaret_destek_hesapla
 from app.rate_limit import org_hiz_siniri, ip_hiz_siniri
 from app.logging_setup import kur as gunluklemeyi_kur
+from app.veri_tazeligi import tazelik_raporu, genel_durum
 
 gunluklemeyi_kur()
 logger = logging.getLogger(__name__)
@@ -596,8 +597,33 @@ if os.path.exists(STATIC_DIR):
     app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
 
 
+# ============ VERI TAZELIGI ============
+
+@app.get("/api/veri-durumu", dependencies=[Depends(ip_hiz_siniri(30))])
+def veri_durumu(db: Session = Depends(get_db)):
+    """Uygulamanin dayandigi veri kaynaklarinin ne zaman guncellendigi.
+
+    Kimlik dogrulamasi istemiyor: kullanicinin uye olmadan once "bu verilere
+    guvenebilir miyim" sorusunu cevaplayabilmesi gerekiyor. Hicbir kisisel
+    veri veya kayit icerigi donmuyor, sadece toplu sayac ve tarih.
+    """
+    rapor = tazelik_raporu(db)
+    return {
+        "genel_durum": genel_durum(rapor),
+        "olcum_zamani": datetime.now(timezone.utc).isoformat(),
+        "kaynaklar": [t.sozluk() for t in rapor],
+    }
+
+
 # ============ HEALTH CHECK ============
 
 @app.get("/health")
-def health_check():
-    return {"status": "ok", "version": "2.0.0"}
+def health_check(db: Session = Depends(get_db)):
+    # Saglik kontrolu veri tazeligini de bildiriyor ki izleme sistemi
+    # scraper'lar sessizce durdugunda haberdar olsun.
+    try:
+        durum = genel_durum(tazelik_raporu(db))
+    except Exception:
+        logger.exception("Saglik kontrolunde veri tazeligi okunamadi")
+        durum = "bilinmiyor"
+    return {"status": "ok", "version": "2.0.0", "veri_durumu": durum}

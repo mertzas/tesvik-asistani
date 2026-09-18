@@ -17,10 +17,14 @@ numarasi resmi kurum sayfasindan WebFetch ile tek tek dogrulanmistir
 (bkz. scripts/seed_kurum_iletisim.py, app/models.py KurumIletisim
 docstring'i) - LLM egitim verisinden gelen "hatirlanan" numaralar degil.
 """
+import logging
+
 import requests
 
 from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu, settings
 from sqlalchemy import or_
+
+logger = logging.getLogger(__name__)
 
 OLLAMA_ETKIN = False  # True yapinca Gemma ile dogal dil cevap tekrar devreye girer
 OLLAMA_URL = "http://localhost:11434/api/generate"
@@ -314,10 +318,14 @@ def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None) -> str
         parcalar = [blok.text for blok in resp.content if getattr(blok, "type", None) == "text"]
         cevap = "".join(parcalar).strip()
         return cevap or None
-    except Exception:
+    except Exception as e:
         # Ag hatasi, rate limit, gecersiz anahtar, timeout - hepsi ayni
-        # sekilde ele alinir: sessizce fallback'e dus, kullaniciyi
-        # hata mesajiyla degil cevapla karsila.
+        # sekilde ele alinir: KULLANICI acisindan sessizce fallback'e dus,
+        # onu hata mesajiyla degil cevapla karsila. Ama sebebi MUTLAKA
+        # gunluge yaz - aksi halde "AI cevap vermiyor" sikayetinin sebebini
+        # (kota? anahtar? ag?) anlamanin hicbir yolu kalmiyor.
+        logger.warning("Claude cagrisi basarisiz, liste formatina dusuluyor: %s: %s",
+                       type(e).__name__, e)
         return None
 
 

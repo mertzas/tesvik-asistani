@@ -26,6 +26,7 @@ from sqlalchemy.orm import Session
 
 from app.models import Organization, IkasBaglanti, get_db, settings
 from app.auth import get_current_org
+from app.rate_limit import org_hiz_siniri, ip_hiz_siniri
 from app.ikas_integration import (
     authorize_url_olustur, yeni_state, kod_ile_token_al, siparisleri_getir,
 )
@@ -41,7 +42,7 @@ def _redirect_uri() -> str:
     return f"{settings.APP_URL}/api/oauth/callback/ikas"
 
 
-@router.get("/baglan")
+@router.get("/baglan", dependencies=[Depends(org_hiz_siniri(10))])
 def ikas_baglan(
     storeName: str = Query(..., description="İKAS mağaza alt alan adı (ör. 'benim-magazam')"),
     current_org: Organization = Depends(get_current_org),
@@ -136,7 +137,8 @@ def ikas_baglanti_durumu(
     }
 
 
-@router.post("/senkronize")
+# Disa API cagrisi + DB yazimi yapar - en pahali endpoint, siki limit.
+@router.post("/senkronize", dependencies=[Depends(org_hiz_siniri(5))])
 def ikas_senkronize(
     current_org: Organization = Depends(get_current_org),
     db: Session = Depends(get_db),
@@ -170,7 +172,7 @@ def ikas_senkronize(
     }
 
 
-@router.get("/panel")
+@router.get("/panel", dependencies=[Depends(org_hiz_siniri(30))])
 def ikas_gomulu_panel(
     current_org: Organization = Depends(get_current_org),
     db: Session = Depends(get_db),
@@ -214,7 +216,9 @@ def ikas_gomulu_panel(
     }
 
 
-@router.post("/webhook/order-created")
+# Kimlik dogrulamasi YOK (Ikas imza dogrulamasi henuz eklenmedi) -
+# en azindan IP basina oran sinirlanir.
+@router.post("/webhook/order-created", dependencies=[Depends(ip_hiz_siniri(60))])
 def ikas_webhook_order_created(
     payload: dict,
     db: Session = Depends(get_db),

@@ -1,4 +1,5 @@
 import json
+import logging
 import os
 from datetime import datetime, timezone
 from typing import List
@@ -50,6 +51,11 @@ from app.cilek_panel import router as cilek_router
 from app.ikas_panel import router as ikas_router
 from app.urun_sektor_anahtarlari import anahtar_kelimeden_sektor_bul
 from app.eticaret_destek_hesaplayici import eticaret_destek_hesapla
+from app.rate_limit import org_hiz_siniri, ip_hiz_siniri
+from app.logging_setup import kur as gunluklemeyi_kur
+
+gunluklemeyi_kur()
+logger = logging.getLogger(__name__)
 from app.scheduler import setup_scheduler
 
 # Global scheduler instance
@@ -327,7 +333,8 @@ def get_financial_profile(
     return profil
 
 
-@app.get("/api/eslesme", response_model=TesvikEslesmeResponse)
+@app.get("/api/eslesme", response_model=TesvikEslesmeResponse,
+         dependencies=[Depends(org_hiz_siniri(20))])
 def tesvik_eslesme(
     current_org: Organization = Depends(get_current_org),
     db: Session = Depends(get_db),
@@ -375,7 +382,8 @@ def tesvik_eslesme(
     )
 
 
-@app.get("/api/butce-onerisi", response_model=ButceOnerisiResponse)
+@app.get("/api/butce-onerisi", response_model=ButceOnerisiResponse,
+         dependencies=[Depends(org_hiz_siniri(20))])
 def butce_onerisi(
     current_org: Organization = Depends(get_current_org),
     db: Session = Depends(get_db),
@@ -395,7 +403,8 @@ def butce_onerisi(
     return ButceOnerisiResponse(**oneri.__dict__)
 
 
-@app.post("/api/eticaret/destek-hesapla", response_model=EticaretDestekResponse)
+@app.post("/api/eticaret/destek-hesapla", response_model=EticaretDestekResponse,
+          dependencies=[Depends(org_hiz_siniri(30))])
 def eticaret_destek_hesapla_endpoint(
     request: EticaretGiderGirdisi,
     current_org: Organization = Depends(get_current_org),
@@ -562,6 +571,7 @@ def sor_legacy(request: AskQuestion, db: Session = Depends(get_db)):
             ]
         }
     except Exception as e:
+        logger.exception("Beklenmeyen hata: %s", e)
         raise HTTPException(status_code=500, detail=str(e))
 
 

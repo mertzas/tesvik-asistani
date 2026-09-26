@@ -1,286 +1,234 @@
-# Teşvik Asistanı - Deployment Guide
+# Dağıtım
 
-Production'da dağıtmak için 3 seçenek:
+Bu dosya `DEPLOYMENT.md`, `PRODUCTION_CHECKLIST.md` ve `PRODUCTION_READY.md`
+dosyalarının birleştirilmiş hâlidir. Üçü aynı konuyu farklı ve yer yer
+çelişkili şekilde anlatıyordu; `PRODUCTION_READY.md` ayrıca **hiç yapılmamış**
+yük testi sonuçları ("Apache Bench, 1000 istek") ve var olmayan bir komut
+(`uvicorn app.main_prod:app`) içerdiği için kaldırıldı.
 
-## 1. AWS (Recommended - Scalable)
-
-### Requirements
-- AWS Account
-- AWS CLI installed
-- Docker installed
-
-### Steps
-
-```bash
-# 1. ECR (Elastic Container Registry) repository oluştur
-aws ecr create-repository --repository-name tesvik-asistani --region us-east-1
-
-# 2. Login to ECR
-aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin YOUR_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com
-
-# 3. Build & push image
-docker build -f Dockerfile.prod -t tesvik-asistani:latest .
-docker tag tesvik-asistani:latest YOUR_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/tesvik-asistani:latest
-docker push YOUR_ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/tesvik-asistani:latest
-
-# 4. RDS PostgreSQL oluştur
-# AWS Console -> RDS -> Create Database -> PostgreSQL 15
-
-# 5. ElastiCache Redis oluştur
-# AWS Console -> ElastiCache -> Create Redis cluster
-
-# 6. ECS Cluster oluştur ve Fargate task çalıştır
-aws ecs create-cluster --cluster-name tesvik-prod
-
-# 7. Environment variables
-# AWS Secrets Manager'da sakla:
-# - DATABASE_URL
-# - SECRET_KEY
-# - STRIPE_SECRET_KEY
-```
-
-### Cost Estimate
-- ECS Fargate: $50-100/month
-- RDS (t3.micro): $30/month
-- ElastiCache (cache.t3.micro): $20/month
-- **Total: ~$100-150/month**
+Yerel geliştirme kurulumu için [README.md](README.md).
 
 ---
 
-## 2. DigitalOcean (Simple - Budget-friendly)
+## Üretime almadan önce kapatılması gerekenler
 
-### Requirements
-- DigitalOcean Account
-- doctl CLI installed
+Aşağıdakiler **bilinen ve açık** eksikler. Uygulama çalışıyor ama bunlar
+kapatılmadan ödeme alan bir servis olarak yayına verilmemeli.
 
-### Steps
+| Durum | Konu | Neden önemli |
+|---|---|---|
+| ⛔ | **Hız sınırlama sayaçları süreç içi** | `app/rate_limit.py` sayaçları RAM'de tutar. `--workers 2` ile her işçi kendi sayacını tutar, gerçek limit iki katına çıkar. Çok işçili dağıtımda Redis'e taşınmalı. |
+| ⛔ | **KVKK aydınlatma metni ve veri işleme kaydı yok** | Kişisel ve finansal veri işleniyor. Şirket kurulup VERBİS kaydı yapılmadan yayın hukuken riskli. |
+| ⛔ | **Stripe test modunda** | `sk_test_` anahtarlarıyla çalışıyor; canlı anahtar ve webhook imza doğrulaması üretimde teyit edilmeli. |
+| ⛔ | **115 teşvik kaydının açık/kapalı durumu doğrulanmamış** (176 kaydın) | `aktif_mi` alanı boş olan kayıtlar için AI danışman "kurumun sayfasından teyit edin" uyarısı basıyor, ama kullanıcı yine kapanmış bir programa yönlenebilir. |
+| ⚠️ | **162 kayıtta başvuru şartları eksik** | Eşleşme çalışıyor ama kullanıcı "başvurabilir miyim" sorusunun cevabını kayıttan alamıyor. |
+| ⚠️ | **Yük testi hiç yapılmadı** | Eşzamanlı kullanıcı davranışı bilinmiyor. `/api/sor` her çağrıda Claude API'ye gidiyor; gecikme ve maliyet ölçülmeli. |
+| ⚠️ | **Yedekleme otomatik değil** | `scripts/backup.sh` ve `restore.sh` var ama zamanlanmış değil ve geri yükleme hiç denenmedi. |
+| ⚠️ | **Hata izleme yok** | Günlükler dosyaya/konsola yazılıyor, merkezî bir hata toplayıcı (Sentry vb.) bağlı değil. |
+
+Kapatılmış olanlar (referans): şema sürümleme (Alembic), hız sınırlama,
+merkezî günlükleme, veri tazeliği göstergesi, otomatik veri tazeleme,
+üretim bağımlılıklarının doğruluğu.
+
+---
+
+## Seçenek 1: Docker Compose (tek sunucu)
+
+En basit yol. Bir VPS (DigitalOcean, Hetzner, AWS Lightsail) yeterli.
+Minimum 2 GB RAM önerilir.
 
 ```bash
-# 1. SSH key setup
-doctl compute ssh-key list
+# 1. Docker ve Compose kurun (Ubuntu 22.04)
+curl -fsSL https://get.docker.com | sh
 
-# 2. Droplet oluştur (Ubuntu 22.04, $6/month)
-doctl compute droplet create tesvik-prod \
-  --region nyc3 \
-  --image ubuntu-22-04-x64 \
-  --size s-1vcpu-1gb \
-  --ssh-keys YOUR_SSH_KEY_ID
-
-# 3. SSH ile bağlan
-ssh root@YOUR_DROPLET_IP
-
-# 4. Docker & Docker Compose yükle
-sudo apt-get update && sudo apt-get install -y docker.io docker-compose
-
-# 5. Repo clone et
-git clone YOUR_REPO_URL
+# 2. Depoyu klonlayın
+git clone <repo-url> tesvik-asistani
 cd tesvik-asistani
 
-# 6. Environment variables ayarla
+# 3. Sırları hazırlayın
 cp .env.example .env
-# .env'de değerleri güncelle: DATABASE_URL, SECRET_KEY, STRIPE_SECRET_KEY
-
-# 7. Docker Compose çalıştır
-sudo docker-compose -f docker-compose.prod.yml up -d
-
-# 8. SSL certificate (Let's Encrypt)
-sudo apt-get install -y certbot python3-certbot-nginx
-sudo certbot certonly --standalone -d your-domain.com
-
-# 9. Nginx restart
-sudo systemctl restart nginx
-
-# 10. Health check
-curl https://your-domain.com/health
 ```
 
-### Cost Estimate
-- Droplet ($6/month) + Managed DB ($15/month): **$21/month**
+`.env` içinde **en az** şunlar doldurulmalı — eksikse `docker compose` açıkça
+hata verir (sessizce yer tutucu değerle çalışmaz):
+
+```
+SECRET_KEY=          # openssl rand -hex 32
+POSTGRES_USER=
+POSTGRES_PASSWORD=
+APP_URL=https://alanadiniz.com
+```
+
+```bash
+# 4. Ayağa kaldırın (göçler kapsayıcı açılışında uygulanır)
+docker compose -f docker-compose.prod.yml up -d --build
+
+# 5. İlk veriyi toplayın
+docker compose -f docker-compose.prod.yml exec web python -m scripts.tum_verileri_guncelle
+
+# 6. Doğrulayın
+curl http://localhost:8000/health
+```
+
+`/health` yanıtı `veri_durumu` alanını da döner; `bayat` veya `veri_yok`
+görürseniz veri toplama adımı eksik kalmış demektir.
+
+### SSL
+
+```bash
+sudo apt install certbot
+sudo certbot certonly --standalone -d alanadiniz.com
+# Sertifikaları ./certs altına kopyalayın (nginx.conf /etc/nginx/certs arar)
+docker compose -f docker-compose.prod.yml restart nginx
+```
+
+### Haftalık veri tazeleme
+
+```bash
+crontab -e
+# Her pazartesi 03:00
+0 3 * * 1 cd /yol/tesvik-asistani && docker compose -f docker-compose.prod.yml exec -T web python -m scripts.tum_verileri_guncelle >> /var/log/tesvik-veri.log 2>&1
+```
+
+Komut başarısızlıkta `1` döner, bu yüzden cron hatası fark edilebilir.
 
 ---
 
-## 3. Heroku (Very Simple - No DevOps)
+## Seçenek 2: AWS (ölçeklenebilir)
 
-### Requirements
-- Heroku Account
-- Heroku CLI installed
-
-### Steps
+ECS Fargate + RDS PostgreSQL. Otomatik ölçeklendirme gerekiyorsa bu yol.
 
 ```bash
-# 1. Login
-heroku login
+# 1. ECR deposu
+aws ecr create-repository --repository-name tesvik-asistani
 
-# 2. App oluştur
-heroku create tesvik-asistani
+# 2. Giriş
+aws ecr get-login-password --region eu-central-1 \
+  | docker login --username AWS --password-stdin <hesap-id>.dkr.ecr.eu-central-1.amazonaws.com
 
-# 3. Buildpack ayarla
-heroku buildpacks:add heroku/python
-heroku buildpacks:add heroku/docker-runtime
-
-# 4. PostgreSQL add-on ekle
-heroku addons:create heroku-postgresql:standard-0
-
-# 5. Redis add-on ekle (optional)
-heroku addons:create heroku-redis:premium-0
-
-# 6. Environment variables ayarla
-heroku config:set \
-  SECRET_KEY="your-secret-key" \
-  STRIPE_SECRET_KEY="sk_live_..." \
-  ENVIRONMENT="production"
-
-# 7. Deploy
-git push heroku main
-
-# 8. Migrate database
-heroku run "alembic upgrade head"
-
-# 9. Check
-heroku logs --tail
-heroku ps
+# 3. İmajı derle ve gönder
+docker build -f Dockerfile.prod -t tesvik-asistani .
+docker tag tesvik-asistani:latest <hesap-id>.dkr.ecr.eu-central-1.amazonaws.com/tesvik-asistani:latest
+docker push <hesap-id>.dkr.ecr.eu-central-1.amazonaws.com/tesvik-asistani:latest
 ```
 
-### Cost Estimate
-- Dyno (Basic): $50/month
-- PostgreSQL (Standard): $50/month
-- Redis (Premium): $30/month
-- **Total: $130/month** (Most expensive but easiest)
+Sonra:
+
+- **RDS PostgreSQL 15** oluşturun, yalnızca ECS güvenlik grubundan erişime izin verin
+- **Secrets Manager**'a `DATABASE_URL`, `SECRET_KEY`, `STRIPE_SECRET_KEY`,
+  `ANTHROPIC_API_KEY` koyun ve task definition'da secret olarak bağlayın —
+  ortam değişkeni olarak düz metin girmeyin
+- Sağlık kontrolü yolu: `/health`
+- Veri tazeleme için ayrı bir **scheduled ECS task** (haftalık,
+  `python -m scripts.tum_verileri_guncelle`)
+
+Maliyet, tek görev + küçük RDS ile aylık yaklaşık 80-150 USD bandındadır;
+kesin tutar bölge ve örnek boyutuna göre değişir, AWS fiyat hesaplayıcısından
+teyit edin.
 
 ---
 
-## Post-Deployment Checklist
+## Seçenek 3: Yönetilen platform (Railway / Render / Fly.io)
 
-- [ ] Environment variables configured
-- [ ] Database migrations ran successfully
-- [ ] SSL certificate installed
-- [ ] CORS configured for your domain
-- [ ] Stripe webhooks configured
-- [ ] Monitoring/logging enabled
-- [ ] Backups automated
-- [ ] CDN configured (optional)
-- [ ] Error tracking (Sentry) setup
-- [ ] Performance monitoring (Datadog) setup
+DevOps yükü istemiyorsanız: `Dockerfile.prod` doğrudan kullanılabilir.
 
----
+- Yönetilen PostgreSQL ekleyin, `DATABASE_URL`'i bağlayın
+- `SECRET_KEY`, `APP_URL`, `ANTHROPIC_API_KEY`, Stripe anahtarlarını secret olarak girin
+- Sağlık kontrolü: `/health`
+- Veri tazeleme: platformun cron/scheduled job özelliği ile
+  `python -m scripts.tum_verileri_guncelle`
 
-## Monitoring & Maintenance
-
-### Logs
-```bash
-# Docker
-docker logs -f container_name
-
-# Heroku
-heroku logs --tail
-
-# AWS CloudWatch
-aws logs tail /ecs/tesvik-prod --follow
-```
-
-### Backups
-```bash
-# PostgreSQL backup
-pg_dump DATABASE_URL > backup.sql
-
-# Restore
-psql DATABASE_URL < backup.sql
-```
-
-### Update & Redeploy
-```bash
-# Docker
-docker build -f Dockerfile.prod -t tesvik:v2 .
-docker push your-registry/tesvik:v2
-
-# DigitalOcean
-cd tesvik-asistani
-git pull origin main
-docker-compose -f docker-compose.prod.yml up -d
-
-# Heroku
-git push heroku main
-```
+Bu yolda dikkat: birçok platform varsayılan olarak birden fazla işçi/örnek
+açar. Hız sınırlama sayaçları süreç içi olduğu için **tek örnek** ile
+başlayın (yukarıdaki tabloya bakın).
 
 ---
 
-## Security Best Practices
+## Dağıtım sonrası kontrol
 
-1. **Environment Variables**: Never commit secrets to git
-   ```bash
-   # Use .env.example (without values)
-   # For secrets, use platform-specific secret management
-   ```
+```bash
+# Sağlık ve veri durumu
+curl https://alanadiniz.com/health
 
-2. **Database**: Always use encrypted connections
-   ```python
-   # In .env
-   DATABASE_URL=postgresql+psycopg2://user:pass@host/db?sslmode=require
-   ```
+# Veri kaynaklarının tazeliği
+curl https://alanadiniz.com/api/veri-durumu
 
-3. **Stripe**: Use environment-specific keys
-   ```bash
-   # Development: sk_test_...
-   # Production: sk_live_...
-   ```
+# Şema modellerle uyumlu mu
+docker compose -f docker-compose.prod.yml exec web alembic check
 
-4. **Rate Limiting**: Enabled in Nginx
-   ```nginx
-   limit_req_zone $binary_remote_addr zone=api:10m rate=10r/s;
-   ```
+# Göç sürümü
+docker compose -f docker-compose.prod.yml exec web alembic current
+```
 
-5. **SSL/TLS**: Use Let's Encrypt
-   ```bash
-   # Auto-renewal
-   certbot renew --quiet --no-eff-email
-   ```
+Elle doğrulanması gerekenler:
+
+- [ ] Kayıt ve giriş akışı çalışıyor, JWT dönüyor
+- [ ] Teşvik eşleştirme sonuç döndürüyor ve puanlar makul
+- [ ] Bütçe önerisi PRO hesapta açılıyor, FREE hesapta 403 veriyor
+- [ ] AI danışman yanıt veriyor (anahtar yoksa liste formatına düştüğü görülüyor)
+- [ ] Stripe checkout ve webhook'u test işlemiyle deneniyor
+- [ ] Panel mobil genişlikte bozulmuyor
+- [ ] `/api/veri-durumu` rozeti "taze" gösteriyor
 
 ---
 
-## Scaling Guidelines
+## Güvenlik notları
 
-**Free Plan Users**: 1 server sufficient
-- DigitalOcean $6/month droplet
+Bu dağıtımda bilinçli olarak yapılanlar:
 
-**Pro Plan Users** (100-1000): 2-3 servers
-- Load balancer
-- 2-3 app instances
-- RDS Multi-AZ
+- **PostgreSQL portu dışarıya açılmıyor** (`expose`, `ports` değil). Önceki
+  `docker-compose.prod.yml` 5432'yi ana makineye açıyordu.
+- **Sırlar dosyada tutulmuyor.** Önceki compose dosyaları
+  `SECRET_KEY: your_secret_key_here_change_in_production` gibi yer tutucuları
+  depoya işlemiş durumdaydı; biri değiştirmeyi atlarsa üretim herkesin
+  bildiği bir imza anahtarıyla çalışırdı. Artık eksik değişken hata veriyor.
+- **Kaynak kodu üretimde bind mount edilmiyor.** Önceki hâli `./app`'i
+  kapsayıcıya bağlayarak imajı anlamsız kılıyordu.
+- **`DATABASE_URL` imaja gömülmüyor.** Önceki `Dockerfile.prod` içinde
+  `ENV DATABASE_URL=postgresql://user:password@db:5432/tesvik_db` vardı;
+  böyle bir varsayılan, değişken unutulduğunda hatayı gizler.
 
-**Enterprise**: Full CDN + multi-region
-- CloudFront + Route 53 (AWS)
-- Multi-region databases
-- Dedicated support
+Ayrıca yapılması gerekenler:
 
----
-
-## Troubleshooting
-
-### Database Connection Failed
-```bash
-# Check connection string
-echo $DATABASE_URL
-
-# Test connection
-psql $DATABASE_URL -c "SELECT 1"
-```
-
-### Stripe Webhook Not Working
-```bash
-# Check webhook logs
-heroku addons:open papertrail  # For Heroku
-
-# Retry failed webhooks in Stripe Dashboard
-```
-
-### High Memory Usage
-```bash
-# Check app memory
-docker stats
-
-# Increase resources or optimize code
-```
+- HTTPS zorunlu, HTTP'den yönlendirme (`nginx.conf`)
+- `SECRET_KEY` her ortamda farklı ve en az 32 bayt
+- API anahtarları sızdıysa **döndürün** — anahtar iptal edilmeden depodan
+  silinmesi yeterli değildir
+- Veritabanı yedeği alın ve **geri yüklemeyi bir kez deneyin** (denenmemiş
+  yedek, yedek değildir)
 
 ---
 
-**Ready to deploy? Choose your platform and follow the steps above!**
+## Günlükler ve izleme
+
+```bash
+# Uygulama günlükleri
+docker compose -f docker-compose.prod.yml logs -f web
+
+# Veri tazeleme günlüğü (yerel/Windows)
+tail -f data/scraper_log.txt
+```
+
+İzlenmesi anlamlı olanlar:
+
+- `/health` yanıtındaki `veri_durumu` — `bayat` olması scraper'ların
+  sessizce durduğu anlamına gelir
+- `WARNING app.rag` satırları — Claude çağrısı başarısız olup liste
+  formatına düşüldüğünde sebebi (kota/anahtar/ağ) burada yazar
+- HTTP 429 sayısı — hız sınırına takılan kullanıcılar
+
+---
+
+## Geri alma
+
+```bash
+# Bir önceki imaja dön
+docker compose -f docker-compose.prod.yml down
+git checkout <onceki-commit>
+docker compose -f docker-compose.prod.yml up -d --build
+
+# Şema geri alma (son göçü geri al)
+docker compose -f docker-compose.prod.yml exec web alembic downgrade -1
+```
+
+Şema geri alma veri kaybedebilir; önce yedek alın.

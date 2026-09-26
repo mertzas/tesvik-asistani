@@ -1,4 +1,10 @@
-version: '3.9'
+# Yerel gelistirme icin PostgreSQL'li kurulum.
+#
+# BUNA IHTIYACINIZ YOK: yerel gelistirmede uygulama SQLite ile calisir, tek
+# komutla yeter (bkz. README.md). Bu dosya yalnizca uretimdeki PostgreSQL
+# davranisini yerelde denemek istediginizde gereklidir.
+#
+# Uretim dagitimi icin docker-compose.prod.yml kullanin.
 
 services:
   postgres:
@@ -6,7 +12,10 @@ services:
     container_name: tesvik_postgres
     environment:
       POSTGRES_USER: tesvik_user
-      POSTGRES_PASSWORD: tesvik_password_123
+      # Yerel gelistirme sifresi - bu dosya UYGULAMAYA ACIK DEGIL, yalnizca
+      # localhost'ta calisir. Uretim sirlari docker-compose.prod.yml'de
+      # .env'den okunur, asla dosyaya yazilmaz.
+      POSTGRES_PASSWORD: tesvik_local_dev
       POSTGRES_DB: tesvik_saas
     ports:
       - "5432:5432"
@@ -20,56 +29,40 @@ services:
     networks:
       - tesvik_network
 
-  redis:
-    image: redis:7-alpine
-    container_name: tesvik_redis
-    ports:
-      - "6379:6379"
-    volumes:
-      - redis_data:/data
-    networks:
-      - tesvik_network
-
   web:
     build: .
     container_name: tesvik_web
     environment:
-      DATABASE_URL: postgresql://tesvik_user:tesvik_password_123@postgres:5432/tesvik_saas
-      REDIS_URL: redis://redis:6379
-      SECRET_KEY: your-super-secret-key-change-in-production
-      STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY}
-      ENVIRONMENT: production
+      DATABASE_URL: postgresql://tesvik_user:tesvik_local_dev@postgres:5432/tesvik_saas
+      SECRET_KEY: yerel-gelistirme-anahtari-uretimde-kullanma
+      STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY:-}
+      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      EVDS_API_KEY: ${EVDS_API_KEY:-}
+      APP_URL: http://localhost:8000
+      # ENVIRONMENT su an kodda HIC okunmuyor (dogrulandi 2026-09-26) - yalnizca
+      # belgeleyici bir isaret. Ortama gore davranis eklenirse bu deger anlam
+      # kazanacak; o yuzden yerelde bilerek "development" yaziyor (onceki hali
+      # yerel dosyada "production" diyordu).
+      ENVIRONMENT: development
+      LOG_LEVEL: ${LOG_LEVEL:-INFO}
     ports:
       - "8000:8000"
     depends_on:
       postgres:
         condition: service_healthy
-      redis:
-        condition: service_started
     volumes:
       - .:/app
     networks:
       - tesvik_network
     command: sh -c "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload"
 
-  nginx:
-    image: nginx:alpine
-    container_name: tesvik_nginx
-    ports:
-      - "80:80"
-      - "443:443"
-    volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./certs:/etc/nginx/certs:ro
-    depends_on:
-      - web
-    networks:
-      - tesvik_network
-
 volumes:
   postgres_data:
-  redis_data:
 
 networks:
   tesvik_network:
     driver: bridge
+
+# NOT: redis ve nginx servisleri kaldirildi. Redis kodda hic kullanilmiyor
+# (dogrulandi 2026-09-26). Nginx yerel gelistirmede gereksiz bir ara katman;
+# uretim icin docker-compose.prod.yml'de duruyor.

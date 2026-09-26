@@ -1,20 +1,41 @@
-# Teşvik Asistanı SaaS - API Documentation
+# Teşvik Asistanı - API Referansı
 
-Base URL: `http://localhost:8000/api` (development)
+Taban adres: `http://localhost:8000` (geliştirme)
 
-## Authentication
+Bu dosyadaki tüm yollar **tam yoldur**, taban adrese eklenir. Önceki hâli
+taban adresi `.../api` olarak veriyor ama yolların bir kısmını `/auth/signup`,
+bir kısmını `/api/sor` diye yazıyordu; ikisi birleştirildiğinde biri
+`/api/auth/signup` (doğru), diğeri `/api/api/sor` (404) oluyordu.
 
-All endpoints (except `/auth/*`) require Bearer token authentication:
+Çalışan sunucuda otomatik ve her zaman güncel referans: **`/docs`**
+(OpenAPI). Bu dosya, sık kullanılan akışların elle yazılmış özetidir.
+
+## Kimlik doğrulama
+
+`/api/auth/*`, `/api/veri-durumu` ve `/health` dışındaki tüm endpoint'ler
+Bearer token ister:
 
 ```
-Authorization: Bearer <your_access_token>
+Authorization: Bearer <access_token>
 ```
+
+Token `/api/auth/login` veya `/api/auth/signup` yanıtındaki `access_token`
+alanından gelir ve varsayılan olarak 30 gün geçerlidir.
+
+Token yoksa veya biçimi bozuksa **401**, token geçerli ama yetki yetersizse
+(örneğin FREE hesapla PRO endpoint'i) **403** döner.
+
+## Hız sınırları
+
+Pahalı endpoint'ler organizasyon bazlı kayan pencere ile sınırlıdır
+(`app/rate_limit.py`). Sınır aşılırsa **429** döner. Örnek: `/api/sor`
+dakikada 20, `/api/ikas/senkronize` dakikada 5.
 
 ## Endpoints
 
 ### Authentication
 
-#### POST `/auth/signup`
+#### POST `/api/auth/signup`
 Yeni hesap oluştur.
 
 **Request:**
@@ -40,7 +61,7 @@ Yeni hesap oluştur.
 }
 ```
 
-#### POST `/auth/login`
+#### POST `/api/auth/login`
 Giriş yap.
 
 **Request:**
@@ -257,107 +278,116 @@ Churn analitiği.
 
 ---
 
-## Rate Limiting
+## Plan kotaları (HTTP hız sınırından farklıdır)
 
-- **Free Plan:** 5 queries/month
-- **Pro Plan:** 1000 queries/month
-- **Business Plan:** Unlimited
-- **Enterprise:** Unlimited + custom limits
+İki ayrı sınır var, karıştırılmamalı:
 
----
+- **Plan kotası** — aylık sorgu hakkı, `app/billing.py` içindeki
+  `PLAN_FEATURES`'ta tanımlı. Aşılırsa iş kuralı hatası döner.
+- **HTTP hız sınırı** — dakikalık istek sınırı, `app/rate_limit.py`. Aşılırsa
+  **429** döner. Kötüye kullanımı ve dış API kotalarının tükenmesini engeller.
 
-## Webhook Events
-
-Subscribe to webhooks via dashboard.
-
-### `incentive.updated`
-Yeni teşvik eklendiğinde.
-
-```json
-{
-  "event": "incentive.updated",
-  "timestamp": "2024-01-20T15:45:00Z",
-  "data": {
-    "id": 1,
-    "kurum": "KOSGEB",
-    "baslik": "Yeni teşvik programı",
-    "baslama_tarihi": "2024-02-01T00:00:00Z"
-  }
-}
-```
-
-### `subscription.upgraded`
-Plan yükseltildiğinde.
-
-```json
-{
-  "event": "subscription.upgraded",
-  "timestamp": "2024-01-20T15:45:00Z",
-  "org_id": "uuid",
-  "from_plan": "free",
-  "to_plan": "pro"
-}
-```
+| Plan | Aylık sorgu | API erişimi | Takım |
+|---|---|---|---|
+| FREE | 5 | yok | 1 |
+| PRO | 1000 | var | 3 |
+| BUSINESS | sınırsız | var | 10 |
+| ENTERPRISE | sınırsız | var | sınırsız |
 
 ---
 
-## Testing with cURL
+## Belgelenmemiş kalan endpoint'ler
+
+Aşağıdakiler bu dosyada ayrıntılı örnek olmadan listelenmiştir; istek/yanıt
+gövdeleri için `/docs` (OpenAPI) kullanın. Üstteki bölümler API'nin yalnızca
+bir kısmını kapsıyordu.
+
+### Profil ve eşleştirme
+
+| Endpoint | Açıklama |
+|---|---|
+| `GET /api/profil` | Finansal profili getirir. Profil yoksa **404**. |
+| `PUT /api/profil` | Profili oluşturur/güncelleyip döner. |
+| `GET /api/eslesme` | Profile göre puanlanmış teşvik listesi ve toplam tahmini destek. Kredi/kefalet ürünleri toplama dahil edilmez. |
+| `GET /api/butce-onerisi` | Stok/reklam bütçesi aralıkları ve notlar. **PRO gerekir** (FREE'de 403). Profil yoksa 404. |
+| `POST /api/eticaret/destek-hesapla` | E-ticaret gider kalemlerinden destek tahmini. |
+
+### Veri durumu
+
+| Endpoint | Açıklama |
+|---|---|
+| `GET /api/veri-durumu` | Her veri kaynağının son güncelleme tarihi, yaşı, kayıt sayısı ve durumu (`taze`/`eskiyor`/`bayat`/`veri_yok`). **Kimlik doğrulaması gerekmez** — kullanıcı üye olmadan önce veriye güvenip güvenemeyeceğini görebilmeli. Kişisel veri dönmez. |
+| `GET /health` | `status`, `version` ve `veri_durumu`. İzleme sistemi için. |
+
+### İKAS entegrasyonu
+
+Şu an **mock modda** (gerçek `client_id`/`secret` üretilmedi), bkz. README.
+
+| Endpoint | Açıklama |
+|---|---|
+| `GET /api/ikas/baglan?storeName=...` | OAuth yetkilendirme adresine yönlendirir. |
+| `GET /api/ikas/callback-oauth` | OAuth dönüş adresi; kodu token'a çevirir. |
+| `GET /api/ikas/durum` | Bağlantı durumu. |
+| `POST /api/ikas/senkronize` | Siparişleri çeker ve profile yansıtır. En pahalı endpoint, dakikada 5 istek. |
+| `GET /api/ikas/panel` | Mağaza içi gömülü panel verisi. |
+| `POST /api/ikas/webhook/order-created` | İKAS'tan gelen sipariş bildirimi. |
+
+### Çilek paneli
+
+Ayrı bir dikey; parsel, sensör, sulama, ilaçlama, hasat, soğuk zincir ve
+gübre rehberi endpoint'leri `/api/cilek/*` altındadır. Tam liste `/docs`'ta.
+
+### Yönetim
+
+`GET /api/admin/users`, `POST /api/admin/users/{user_id}/role`,
+`POST /api/admin/users/{user_id}/deactivate` — üstteki Admin bölümünde
+eksik kalmıştı.
+
+---
+
+## Webhook'lar
+
+**Yalnızca gelen (inbound) webhook desteklenir:**
+
+| Endpoint | Kaynak |
+|---|---|
+| `POST /api/webhooks/stripe` | Stripe abonelik olayları (imza doğrulaması `STRIPE_WEBHOOK_SECRET` ile) |
+| `POST /api/ikas/webhook/order-created` | İKAS sipariş oluşturma bildirimi |
+
+**Giden webhook yok.** Bu dosyanın önceki hâli "Subscribe to webhooks via
+dashboard" diyerek `incentive.updated` ve `subscription.upgraded` olaylarını
+belgeliyordu; böyle bir özellik uygulanmadı. `Organization.webhook_url`
+sütunu veritabanında duruyor ama kodda **hiçbir yerde okunmuyor** — ileride
+bu özellik yazılırsa kullanılacak boş bir alan.
+
+---
+
+## cURL ile deneme
 
 ```bash
-# Signup
-curl -X POST http://localhost:8000/api/auth/signup \
-  -H "Content-Type: application/json" \
-  -d '{
-    "email": "test@example.com",
-    "password": "securepass123",
-    "full_name": "Test User",
-    "company_name": "Test Corp"
-  }'
+# Kayıt
+curl -X POST http://localhost:8000/api/auth/signup   -H "Content-Type: application/json"   -d '{"email":"test@example.com","password":"GucluSifre123",
+       "full_name":"Test Kullanici","company_name":"Test Ltd"}'
 
-# Login
-curl -X POST http://localhost:8000/api/auth/login \
-  -H "Content-Type: application/json" \
-  -d '{
-    "email": "test@example.com",
-    "password": "securepass123"
-  }'
+# Giriş (token'ı alın)
+curl -X POST http://localhost:8000/api/auth/login   -H "Content-Type: application/json"   -d '{"email":"test@example.com","password":"GucluSifre123"}'
 
-# Ask question
-curl -X POST http://localhost:8000/api/sor \
-  -H "Authorization: Bearer YOUR_TOKEN" \
-  -H "Content-Type: application/json" \
-  -d '{"question": "KOSGEB Ar-Ge"}'
+# Soru sor
+curl -X POST http://localhost:8000/api/sor   -H "Authorization: Bearer <TOKEN>"   -H "Content-Type: application/json"   -d '{"question":"Konyada 50 dekar bugday ekiyorum, hangi destekler var?"}'
+
+# Eşleştirme
+curl http://localhost:8000/api/eslesme -H "Authorization: Bearer <TOKEN>"
+
+# Veri tazeliği (token gerekmez)
+curl http://localhost:8000/api/veri-durumu
 ```
 
 ---
 
-## SDK Examples
+## Resmî istemci kütüphanesi yok
 
-### JavaScript/TypeScript
-
-```typescript
-const client = new TesvikClient({
-  apiKey: "your_api_key",
-  baseUrl: "https://api.tesvikasistani.com"
-});
-
-const results = await client.search("KOSGEB destekleri");
-console.log(results);
-```
-
-### Python
-
-```python
-from tesvik_api import TesvikClient
-
-client = TesvikClient(api_key="your_api_key")
-results = client.search("KOSGEB destekleri")
-print(results)
-```
-
----
-
-## Support
-
-Email: support@tesvikasistani.com
-Discord: https://discord.gg/tesvikasistani
+Bu dosyanın önceki hâli `TesvikClient` adlı bir JavaScript ve Python SDK'sı
+ile bir Discord sunucusu ve destek adresi gösteriyordu; **hiçbiri mevcut
+değil**. API standart REST/JSON olduğu için `requests`, `httpx` veya `fetch`
+ile doğrudan çağrılabilir. OpenAPI şeması `/openapi.json` adresinde olduğu
+için istemci kodu üretmek isterseniz `openapi-generator` kullanabilirsiniz.

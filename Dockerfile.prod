@@ -1,27 +1,42 @@
-# Multi-stage production Dockerfile
-FROM python:3.11-slim as builder
+# Uretim imaji (multi-stage).
+FROM python:3.11-slim AS builder
 
 WORKDIR /app
-RUN apt-get update && apt-get install -y --no-install-recommends gcc postgresql-client
-COPY requirements.txt .
-RUN pip install --user --no-cache-dir -r requirements.txt
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    gcc libpq-dev \
+    && rm -rf /var/lib/apt/lists/*
+
+# psycopg2 icin requirements-postgres.txt sart - bkz. Dockerfile'daki not.
+# Uretim surumleri requirements.prod.txt'te sabitlenmis; psycopg2 orada da var.
+COPY requirements.prod.txt .
+RUN pip install --user --no-cache-dir -r requirements.prod.txt
 
 FROM python:3.11-slim
 
 WORKDIR /app
 ENV PYTHONUNBUFFERED=1
-ENV DATABASE_URL=postgresql://user:password@db:5432/tesvik_db
 
-# Copy Python deps from builder
+# libpq calisma aninda da gerekli (psycopg2-binary kendi kitapligini tasir ama
+# postgresql-client teshis icin faydali).
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    postgresql-client \
+    && rm -rf /var/lib/apt/lists/*
+
 COPY --from=builder /root/.local /root/.local
 ENV PATH=/root/.local/bin:$PATH
 
-# Copy app
 COPY . .
 
-# Database migrations
-RUN alembic upgrade head || echo "Migrations skipped"
+# DATABASE_URL imaja GOMULMUYOR. Onceki hali
+#   ENV DATABASE_URL=postgresql://user:password@db:5432/tesvik_db
+# yaziyordu; boyle bir varsayilan, ortam degiskeni unutuldugunda hatayi
+# gizleyip uygulamanin yanlis veritabanina baglanmasina yol acar. Eksikse
+# uygulamanin yuksek sesle patlamasi daha guvenli.
 
+# Goçler CALISMA ANINDA. Onceki hali derleme aninda
+#   RUN alembic upgrade head || echo "Migrations skipped"
+# calistiriyordu: derleme sirasinda veritabani olmadigi icin HER ZAMAN
+# sessizce atlaniyor, kapsayici da tablosuz aciliyordu.
 EXPOSE 8000
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 2"]

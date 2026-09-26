@@ -42,6 +42,30 @@ def run_migrations_offline() -> None:
         context.run_migrations()
 
 
+def _tip_karsilastir(context, denetlenen_sutun, metadata_sutun,
+                    denetlenen_tip, metadata_tip) -> bool | None:
+    """Tip degisikligi gercekten var mi?
+
+    SQLite'in "type affinity" tasarimi yuzunden veritabanindan okunan tip
+    modeldeki tipe hic benzemiyor: UUID sutunlari NUMERIC, String sutunlari
+    TEXT, Float sutunlari REAL olarak geri geliyor. Bu yuzden hicbir sey
+    degismemisken bile `alembic check` 20 sahte "modify_type" farki
+    bildiriyordu (dogrulandi 2026-09-26). Bu gurultu iki somut zarar veriyor:
+    check komutu kalici olarak kirmizi kaldigi icin islevsizlesiyor ve
+    `revision --autogenerate` her calistirmada anlamsiz tip goclerini
+    dosyaya yaziyor - SQLite'ta bunlar batch modunda tabloyu bastan
+    olusturdugu icin bedelsiz de degil.
+
+    Cozum: SQLite'ta tip karsilastirmasini kapatiyoruz (None dondurmek
+    "farksiz kabul et" demek). PostgreSQL'de - gercek uretim hedefi -
+    tipler gerçek oldugu icin karsilastirma acik kaliyor (True/None yerine
+    alembic'in kendi varsayilan davranisina birakiyoruz).
+    """
+    if context.dialect.name == "sqlite":
+        return False
+    return None  # alembic'in varsayilan karsilastirmasi devreye girsin
+
+
 def run_migrations_online() -> None:
     connectable = engine_from_config(
         config.get_section(config.config_ini_section, {}),
@@ -55,6 +79,7 @@ def run_migrations_online() -> None:
             # SQLite ALTER TABLE'i kisitli destekler; batch modu olmadan
             # sutun silme/degistirme goclerinde hata verir.
             render_as_batch=connection.dialect.name == "sqlite",
+            compare_type=_tip_karsilastir,
         )
         with context.begin_transaction():
             context.run_migrations()

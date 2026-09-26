@@ -120,7 +120,11 @@ class Tesvik(Base):
     detay = Column(Text)
     hedef_kitle = Column(String)
     kaynak_url = Column(String, unique=True)
-    guncelleme_tarihi = Column(DateTime, default=lambda: datetime.now(timezone.utc), index=True)
+    # onupdate SART: default yalnizca INSERT'te uygulanir. Onupdate olmadan
+    # var olan bir kaydin tazelenmesi tarihi guncellemiyordu ve veri
+    # tazeligi gostergesi basarili tazelemeden sonra bile "bayat" gosteriyordu.
+    guncelleme_tarihi = Column(DateTime, default=lambda: datetime.now(timezone.utc),
+                               onupdate=lambda: datetime.now(timezone.utc), index=True)
 
     # New fields for enhanced features
     kategori = Column(String, nullable=True)  # Ar-Ge, İnovasyon, İhracat, etc.
@@ -319,7 +323,9 @@ class SectorBenchmark(Base):
     reklam_oran_max = Column(Float)
     net_kar_orani = Column(Float, nullable=True)  # Net Kar / Net Satislar orani (TCMB Sektor Bilancolari)
     kaynak = Column(String, nullable=True)  # "TUIK sektor anketi 2025" gibi
-    guncelleme_tarihi = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    # bkz. Tesvik.guncelleme_tarihi - onupdate olmadan tazeleme tarihi yazilmiyordu.
+    guncelleme_tarihi = Column(DateTime, default=lambda: datetime.now(timezone.utc),
+                               onupdate=lambda: datetime.now(timezone.utc))
 
 
 # Macro Indicator (TUIK/TCMB genel gostergeler)
@@ -331,7 +337,9 @@ class MacroIndicator(Base):
     deger = Column(Float)
     birim = Column(String, nullable=True)  # "%"
     kaynak = Column(String, nullable=True)
-    guncelleme_tarihi = Column(DateTime, default=lambda: datetime.now(timezone.utc))
+    # bkz. Tesvik.guncelleme_tarihi - onupdate olmadan tazeleme tarihi yazilmiyordu.
+    guncelleme_tarihi = Column(DateTime, default=lambda: datetime.now(timezone.utc),
+                               onupdate=lambda: datetime.now(timezone.utc))
 
 
 # Tarim Urunleri Ihracat Fiyati (T.C. Ticaret Bakanligi Hal Kayit Sistemi

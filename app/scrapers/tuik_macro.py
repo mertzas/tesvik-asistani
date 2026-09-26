@@ -60,7 +60,7 @@ Kaynaklar:
 - https://evds3.tcmb.gov.tr/dokumanlar (EVDS Web Servisi kullanim kilavuzu)
 """
 import os
-from datetime import date, timedelta
+from datetime import date, datetime, timedelta, timezone
 
 import requests
 from dotenv import load_dotenv
@@ -345,6 +345,14 @@ def run():
             row.deger = gosterge["deger"]
             row.birim = gosterge["birim"]
             row.kaynak = gosterge["kaynak"]
+            # Tarihi ACIKCA yaziyoruz. Modeldeki onupdate= yeterli DEGIL:
+            # EVDS ayni ayin icinde ayni rakami dondurdugunde SQLAlchemy satiri
+            # kirli saymiyor, hic UPDATE atmiyor ve onupdate tetiklenmiyordu.
+            # Sonuc: basarili tazelemeden sonra da tarih eski kaliyor, veri
+            # tazeligi gostergesi "77 gun / bayat" gostermeye devam ediyordu.
+            # Bu alanin anlami "deger degisti" degil, "en son ne zaman
+            # dogrulandi" oldugu icin her turda yazilmasi dogrudur.
+            row.guncelleme_tarihi = datetime.now(timezone.utc)
             guncellenen += 1
 
         sektor_benchmarklari = None
@@ -375,6 +383,7 @@ def run():
             row.reklam_oran_max = b["reklam_max"]
             row.net_kar_orani = b.get("net_kar_orani")
             row.kaynak = sektor_kaynagi if b["sektor"] in bulunan_sektorler else KAYNAK_ETIKETI_SEED
+            row.guncelleme_tarihi = datetime.now(timezone.utc)  # bkz. yukaridaki not
             guncellenen += 1
 
         db.commit()

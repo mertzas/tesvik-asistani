@@ -46,7 +46,12 @@ wheels/
 *.sqlite
 *.sqlite3
 tesvikler.db
-data/
+# Yalnizca KOK dizindeki data/ (SQLite veritabani ve indirilen veri).
+# Cıplak "data/" her seviyedeki data dizinini yakaliyordu ve app/data/
+# icindeki KAYNAK veri dosyalarini (9903 EK-3 listesi) depodan disliyordu;
+# temiz bir klonda NACE ozelligi sessizce "hicbir kod desteklenmiyor"
+# demeye basliyordu.
+/data/
 
 # Logs
 logs/

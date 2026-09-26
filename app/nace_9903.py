@@ -42,10 +42,13 @@ Asagidaki EK-2 ve EK-3/A verileri bu metinden birebir alinmistir
 from __future__ import annotations
 
 import json
+import logging
 import os
 from dataclasses import dataclass, field
 
 from app.urun_sektor_anahtarlari import kucult
+
+logger = logging.getLogger(__name__)
 
 # ---------------------------------------------------------------------------
 # EK-2: YATIRIM TESVIK UYGULAMALARINDA BOLGELER
@@ -234,9 +237,28 @@ def _ek3_paketi() -> dict:
         try:
             with open(_VERI_YOLU, encoding="utf-8") as f:
                 _EK3_ONBELLEK = json.load(f)
-        except (OSError, json.JSONDecodeError):
-            _EK3_ONBELLEK = {"kayitlar": [], "bolum_sartlari": {}}
+        except (OSError, json.JSONDecodeError) as e:
+            # SESSIZ KALMA: bos liste donmek her NACE kodunu "EK-3'te yok",
+            # yani "yatirim tesvik belgesi kapsaminda DESTEKLENMIYOR" gibi
+            # gosterir - kullaniciya yanlis bir olumsuz hukum verir. Bu
+            # dosyanin depoda olmamasi gercekten olmustu: .gitignore'daki
+            # ciplak "data/" kalibi app/data/ dizinini de disliyordu.
+            logger.error(
+                "9903 EK-3 veri dosyasi okunamadi (%s): %s: %s. NACE uygunluk "
+                "sorgulari 'liste yuklenemedi' olarak yanitlanacak.",
+                _VERI_YOLU, type(e).__name__, e)
+            _EK3_ONBELLEK = {"kayitlar": [], "bolum_sartlari": {}, "_yuklenemedi": True}
     return _EK3_ONBELLEK
+
+
+def ek3_yuklendi_mi() -> bool:
+    """EK-3 listesi gercekten yuklendi mi?
+
+    False ise "bu kod desteklenmiyor" gibi bir hukum VERILMEMELIDIR; dogru
+    cevap "liste su an okunamiyor"dur.
+    """
+    p = _ek3_paketi()
+    return bool(p.get("kayitlar")) and not p.get("_yuklenemedi")
 
 
 def ek3_kayitlari() -> list[dict]:

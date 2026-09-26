@@ -59,7 +59,8 @@ from app.rate_limit import org_hiz_siniri, ip_hiz_siniri
 from app.logging_setup import kur as gunluklemeyi_kur
 from app.veri_tazeligi import tazelik_raporu, genel_durum
 from app.nace_9903 import (
-    bolum_sarti, ek3_kaydi, ek3_kayitlari, il_bolgesi, kaynak_bilgisi,
+    bolum_sarti, ek3_kaydi, ek3_kayitlari, ek3_yuklendi_mi, il_bolgesi,
+    kaynak_bilgisi,
     olcek_uygunlugu,
 )
 from app.urun_sektor_anahtarlari import govde, kucult
@@ -607,6 +608,11 @@ def nace_ara(q: str = SorguParam(..., min_length=1, max_length=80,
     Kimlik doğrulaması istemiyor: bu, Resmî Gazete'de yayımlanmış kamuya açık
     bir mevzuat ekidir, kullanıcıya ait hiçbir veri içermez.
     """
+    if not ek3_yuklendi_mi():
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="9903 EK-3 listesi şu an okunamıyor.",
+        )
     aranan = kucult(q).strip()
     sonuclar = []
     for k in ek3_kayitlari():
@@ -648,8 +654,17 @@ def nace_uygunluk(
     yapılır; diğer kodlarda şartlar asgari sabit yatırım tutarı gibi burada
     bilinmeyen verilere dayandığı için yalnızca resmî şart metni döner.
     """
-    kayit = ek3_kaydi(kod)
     bolge = il_bolgesi(il)
+    if not ek3_yuklendi_mi():
+        # Liste okunamadiysa "kapsamda degil" DEMEYIZ: bu, kullaniciya
+        # yanlis bir olumsuz hukum vermek olur (bkz. app/nace_9903.py).
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="9903 EK-3 listesi şu an okunamıyor; uygunluk sorgusu "
+                   "yanıtlanamıyor. Sunucu günlüklerini kontrol edin.",
+        )
+
+    kayit = ek3_kaydi(kod)
     yanit = {
         "kod": kod,
         "ek3_kapsaminda": kayit is not None,

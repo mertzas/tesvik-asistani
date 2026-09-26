@@ -252,3 +252,55 @@ def test_kapsam_uyarisi_esik_notlarinda_gecmiyor_ama_modulde_var():
     import app.nace_9903 as m
     assert "YATIRIM TESVIK BELGESI" in m.__doc__
     assert "KOSGEB" in m.__doc__
+
+
+def test_liste_yuklenemezse_olumsuz_hukum_verilmez(monkeypatch):
+    """EK-3 dosyası okunamazsa boş liste dönmek her kodu "desteklenmiyor"
+    gösterir - kullanıcıya yanlış bir olumsuz hüküm verir.
+
+    Bu gerçekten oldu: .gitignore'daki çıplak "data/" kalıbı app/data/
+    dizinini de dışlıyordu, yani temiz bir klonda dosya hiç yoktu.
+    """
+    import app.nace_9903 as m
+
+    monkeypatch.setattr(m, "_EK3_ONBELLEK",
+                        {"kayitlar": [], "bolum_sartlari": {}, "_yuklenemedi": True})
+    assert m.ek3_yuklendi_mi() is False
+
+
+def test_liste_yuklendiginde_yuklendi_mi_dogru():
+    from app.nace_9903 import ek3_yuklendi_mi
+    assert ek3_yuklendi_mi() is True
+
+
+def test_veri_dosyasi_mevcut_ve_okunabilir():
+    """Dosya yoksa özellik sessizce bozulur; varlığını testle sabitliyoruz."""
+    import json
+    import os
+
+    import app.nace_9903 as m
+
+    assert os.path.exists(m._VERI_YOLU), f"EK-3 veri dosyası yok: {m._VERI_YOLU}"
+    with open(m._VERI_YOLU, encoding="utf-8") as f:
+        paket = json.load(f)
+    assert paket.get("kayitlar"), "EK-3 veri dosyası boş"
+
+
+def test_gitignore_app_data_dizinini_dislamiyor():
+    """Çıplak "data/" kalıbı HER seviyedeki data dizinini yakalar.
+
+    Bu gerçekten oldu: app/data/ek3_9903.json depoya hiç girmedi, yani temiz
+    bir klonda liste yüklenmiyordu ve her NACE kodu "desteklenmiyor"
+    görünüyordu. Kalıp /data/ olarak sabitlendi (yalnızca kök dizin).
+    """
+    import os
+
+    kok = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    yol = os.path.join(kok, ".gitignore")
+    if not os.path.exists(yol):
+        pytest.skip(".gitignore yok")
+    with open(yol, encoding="utf-8") as f:
+        satirlar = [s.split("#")[0].strip() for s in f]
+    assert "data/" not in satirlar, (
+        'Çıplak "data/" kalıbı app/data/ dizinini de dışlar; "/data/" kullanın.'
+    )

@@ -13,6 +13,10 @@ from dataclasses import dataclass, field
 from sqlalchemy.orm import Session
 
 from app.models import FinancialProfile, Tesvik
+from app.urun_sektor_anahtarlari import (
+    BELIRTILMEMIS_KATEGORILER,
+    urun_turunden_tarim_kategorisi,
+)
 
 # Turkce karakterleri sadelestirerek esnek eslesme yapmak icin (bkz. app/ihracat_fiyatlari.py).
 _TR_CEVIRI = str.maketrans("çÇğĞıİöÖşŞüÜ", "cCgGiIoOsSuU")
@@ -173,16 +177,58 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
             tarim_kategori = (profil.tarim_kategori or "").strip().lower()
             genislik = kriterler.get("genislik", "genis")
 
+            # "genel" / "Belirtmek istemiyorum" GERCEK bir kategori degil:
+            # hicbir tesvik kaydinda alt_kategori="genel" yok, dolayisiyla
+            # bunu gercek bir secim gibi islemek "hicbiriyle eslesmedi"
+            # sayilip her kategorili kaydin skorunu 0.25 dusuruyordu. Sonuc:
+            # kullanici "Belirtmek istemiyorum" secince ALANI BOS
+            # BIRAKMAKTAN DAHA KOTU sonuc aliyordu (olcum 2026-09-26: tum
+            # tarim destekleri 0.70/0.60 -> 0.45). Belirtilmemis kabul edip
+            # asagidaki serbest-metin ipucu yoluna dusuyoruz.
+            if tarim_kategori in BELIRTILMEMIS_KATEGORILER:
+                tarim_kategori = ""
+
+            # Kategori secilmemis ama urun adi girilmisse kategoriyi urunden
+            # cikar: "bugday" -> tahil_baklagil. Eskiden yalnizca
+            # "alt_kategori metni urun_turu icinde geciyor mu" bakiliyordu ve
+            # "tahil_baklagil" ifadesi "bugday" icinde gecmedigi icin bu ipucu
+            # hic calismiyordu - urun_turu="bugday" girmis bir ciftci icin tam
+            # uyan "Hububat ve Baklagil Uretim Destekleri" kaydi, alakasiz
+            # "Hayvancilik Destekleri" ile ayni skoru aliyordu.
+            urunden_kategori = None
+            if not tarim_kategori:
+                urunden_kategori = urun_turunden_tarim_kategorisi(profil.urun_turu)
+
             if tarim_kategori:
                 if tarim_kategori == alt_kategori:
                     skor += 0.3
                     gerekce.append(f"Seçtiğiniz tarım kategorisi ('{tarim_kategori}') bu destekle tam eşleşiyor.")
-                else:
+                elif genislik == "dar":
                     skor -= 0.25
                     eksik.append(
                         f"Bu destek '{alt_kategori}' kategorisine özeldir; seçtiğiniz kategori "
                         f"('{tarim_kategori}') farklı."
                     )
+                # genislik == "genis" olan programlar (sulama, makinelestirme,
+                # organik) URUN TURUNDEN BAGIMSIZDIR: bugday eken bir ciftci de
+                # organik sertifikasyon alabilir, sulama yatirimi yapabilir,
+                # traktor destegine basvurabilir. Bunlari "kategori uyusmadi"
+                # diye cezalandirmak somut bir hataya yol aciyordu (olcum
+                # 2026-09-26): tahil_baklagil secen ciftci icin Organik/Sulama/
+                # Makinelestirme destekleri 0.70'ten 0.45'e dusuyor, yani
+                # kategoriyi DOGRU secmek bu uc gecerli destegin siralamasini
+                # kotulestiriyordu. Uyusmazlik cezasi artik yalnizca gercekten
+                # dislayici ("dar") programlara uygulaniyor.
+            elif urunden_kategori == alt_kategori:
+                # Urun adindan cikarilan kategori: acilir listeden gelen kesin
+                # secim kadar guvenilir degil (kullanici birden fazla urun
+                # yetistiriyor olabilir), bu yuzden bonus daha dusuk ve
+                # uyusmayan kayitlara CEZA UYGULANMIYOR.
+                skor += 0.25
+                gerekce.append(
+                    f"Girdiginiz urun ('{profil.urun_turu}') bu destegin kategorisine "
+                    f"('{alt_kategori}') giriyor."
+                )
             else:
                 urun_turu_sade = _sadelestir(urun_turu)
                 hedefler_sade = {_sadelestir(h) for h in profil_hedefler}
@@ -193,6 +239,15 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
                 if serbest_metin_isareti:
                     skor += 0.2
                     gerekce.append(f"'{alt_kategori}' kategorisiyle eslesiyor.")
+                elif urunden_kategori is not None:
+                    # Urun baska bir kategoriye isaret ediyor. Ceza yerine
+                    # sadece bonus vermiyoruz: urun bilgisi acilir liste kadar
+                    # kesin olmadigi icin yanlis olma ihtimali var.
+                    eksik.append(
+                        f"Bu destek '{alt_kategori}' kategorisine ozeldir; girdiginiz "
+                        f"urun ('{profil.urun_turu}') '{urunden_kategori}' kategorisine "
+                        "isaret ediyor."
+                    )
                 elif genislik == "dar":
                     skor -= 0.1
                     eksik.append(

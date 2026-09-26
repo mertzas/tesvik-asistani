@@ -117,7 +117,7 @@ başına yeterli değildir.
 pytest
 ```
 
-43 test; `tests/conftest.py` her test için bellek içi SQLite kurup düşürür,
+176 test; `tests/conftest.py` her test için bellek içi SQLite kurup düşürür,
 yerel veritabanınıza dokunmaz.
 
 Şema ile modellerin uyumunu kontrol etmek için:
@@ -167,6 +167,8 @@ docs/                     API, mimari ve pazarlama dokümanları
 | `GET /api/butce-onerisi` | Bütçe önerisi (PRO) |
 | `GET`/`PUT` `/api/profil` | Finansal profil |
 | `GET /api/veri-durumu` | Veri kaynaklarının tazeliği (kimlik doğrulaması gerekmez) |
+| `GET /api/nace/ara?q=sera` | 9903 sayılı Karar EK-3 listesinde arama (kimlik doğrulaması gerekmez) |
+| `GET /api/nace/uygunluk?kod=01.19.99&il=Konya&olcek=8` | NACE kodu teşvik kapsamında mı, ölçeğiniz asgari şartı tutuyor mu |
 | `GET /health` | Sağlık kontrolü + veri durumu |
 
 Tam liste ve istek/yanıt gövdeleri: [docs/API.md](docs/API.md) ve çalışan
@@ -192,6 +194,48 @@ ikas app init
 
 `ikas app init` OAuth kimlik bilgilerini üretir ve bir test mağazası verir;
 bunlar `.env` dosyasına yazıldığında entegrasyon mock modundan çıkar.
+
+---
+
+## NACE kodları ve 9903 sayılı Karar
+
+Yatırım teşvik sistemi 2025'te değişti: **9903 sayılı "Yatırımlarda Devlet
+Yardımları Hakkında Karar"** (Resmî Gazete, 30/05/2025) 2012/3305 sayılı
+Karar'ı yürürlükten kaldırdı. Yeni sistem yatırım konularını **NACE Rev.2.1**
+kodlarıyla tanımlıyor ve başvuruları Karar'ın **EK-3** listesiyle bu kodlar
+üzerinden eşleştiriyor.
+
+[app/nace_9903.py](app/nace_9903.py) o resmî listeyi uygulamaya taşıyor:
+
+- **EK-2 il–bölge eşleşmesi** (81 il, 6 bölge). Asgari şartlar bölgeye göre
+  değiştiği için bu eşleşme olmadan hiçbir hüküm verilemez.
+- **EK-3 listesinin tamamı** (87 NACE kodu, 11 bölüm) —
+  [app/data/ek3_9903.json](app/data/ek3_9903.json), Karar PDF'inden otomatik
+  çıkarıldı. Şartlar serbest metin olarak saklanır.
+- **Yapılandırılmış asgari eşikler yalnızca tarım (EK-3 bölüm A) için.**
+  Diğer bölümlerin şartları asgari sabit yatırım tutarı gibi profilde
+  bulunmayan verilere dayandığı için orada sayısal hüküm verilmiyor, yalnızca
+  resmî şart metni gösteriliyor. Yapılandırmadığımız bir şartı yorumlamak,
+  kullanıcıya yanlış bir "uygunsunuz" güvencesi vermek olurdu.
+
+```bash
+curl "http://localhost:8000/api/nace/uygunluk?kod=01.19.99&il=Konya&olcek=8"
+# -> yetersiz: Konya 2. bölgede asgari 20 dekar, 12 dekar daha gerekiyor
+curl "http://localhost:8000/api/nace/uygunluk?kod=01.19.99&il=Van&olcek=8"
+# -> uygun: Van 6. bölgede asgari 5 dekar
+```
+
+**Kapsam sınırı:** bu eşikler **yatırım teşvik belgesi** içindir (vergi
+indirimi, KDV istisnası, sigorta primi desteği). KOSGEB hibeleri, TÜBİTAK
+proje destekleri ve Tarım Bakanlığı'nın dekar/hayvan başı ödemeleri ayrı
+programlardır ve bu eşiklere tabi değildir.
+
+Yürürlükten kalkan kayıtları işaretleyen ve yeni programları ekleyen script:
+
+```bash
+python -m scripts.mark_9903_yururlukten_kalkanlar            # rapor
+python -m scripts.mark_9903_yururlukten_kalkanlar --uygula
+```
 
 ---
 

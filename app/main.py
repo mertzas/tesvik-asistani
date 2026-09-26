@@ -7,6 +7,11 @@ from uuid import UUID
 
 import stripe
 from fastapi import FastAPI, HTTPException, Depends, Request, status
+# DIKKAT: bu modulde `Query` adi SQLAlchemy modeli (app.models.Query) icin
+# kullaniliyor. FastAPI'nin sorgu parametresi bu yuzden takma adla alindi;
+# dogrudan `Query(...)` yazmak sorgu parametresi yerine veritabani modelini
+# cagirir ve endpoint sessizce yanlis davranir.
+from fastapi import Query as SorguParam
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
@@ -42,18 +47,22 @@ from app.schemas import (
     EticaretGiderGirdisi,
     EticaretDestekResponse,
 )
-from app.rag import answer
+from app.rag import answer, retrieve
 from app.billing import create_checkout_session, confirm_checkout_session, cancel_subscription, handle_webhook, get_plan_limits
 from app.admin import router as admin_router
 from app.matching import esles, toplam_tahmini_destek, tutari_tahmini_hesapla
 from app.budget import hesapla as butce_hesapla
 from app.cilek_panel import router as cilek_router
 from app.ikas_panel import router as ikas_router
-from app.urun_sektor_anahtarlari import anahtar_kelimeden_sektor_bul
 from app.eticaret_destek_hesaplayici import eticaret_destek_hesapla
 from app.rate_limit import org_hiz_siniri, ip_hiz_siniri
 from app.logging_setup import kur as gunluklemeyi_kur
 from app.veri_tazeligi import tazelik_raporu, genel_durum
+from app.nace_9903 import (
+    bolum_sarti, ek3_kaydi, ek3_kayitlari, il_bolgesi, kaynak_bilgisi,
+    olcek_uygunlugu,
+)
+from app.urun_sektor_anahtarlari import govde, kucult
 
 gunluklemeyi_kur()
 logger = logging.getLogger(__name__)
@@ -216,29 +225,20 @@ def sor(
         # Mevcut RAG sistemini çalıştır
         answer_text = answer(request.question, profil)
 
-        # Veritabanından alakalı teşvikleri bul
-        # Basit keyword matching (ileri sürümlerde embedding kullanacağız)
-        keywords = request.question.lower().split()
-        tesvikler = db.query(Tesvik).filter(
-            Tesvik.detay.ilike(f"%{' '.join(keywords)}%")
-        ).limit(10).all()
-
-        # Literal metin eslesmesi bos/az sonuc verdiyse, sorguda "cilek",
-        # "sut" gibi bilinen bir urun/faaliyet adi gecip gecmedigine bak;
-        # geciyorsa o sektore (orn. tarim) etiketli tesvikleri de ekle.
-        # 210 kayittaki program adlari nadiren belirli urun isimlerini
-        # gecirdigi icin (bkz. app/urun_sektor_anahtarlari.py) bu olmadan
-        # "çilek" gibi bir arama hep 0 sonuc donuyordu.
-        if len(tesvikler) < 5:
-            hedef_sektor = anahtar_kelimeden_sektor_bul(request.question)
-            if hedef_sektor:
-                mevcut_idler = {t.id for t in tesvikler}
-                sektor_tesvikleri = [
-                    t for t in db.query(Tesvik).all()
-                    if hedef_sektor in {s.lower() for s in (t.uygunluk_kriterleri or {}).get("sektorler", [])}
-                    and t.id not in mevcut_idler
-                ]
-                tesvikler = tesvikler + sektor_tesvikleri[: 10 - len(tesvikler)]
+        # Gosterilecek kayitlar, AI danismanin gordugu kayitlarin AYNISI olmali.
+        #
+        # Onceki hali burada kendi arama mantigini kuruyordu: ham sorguyu
+        # bosluklardan bolup TEK bir ILIKE '%tum kelimeler%' deniyor, sonuc
+        # azsa sektor genislemesi yapiyordu. answer() ise kendi retrieve()'ini
+        # calistirdigi icin iki yol farkli kayit kumeleri goruyordu. Somut
+        # sonuc (dogrulandi 2026-09-26): "ÇİLEK SERASI İÇİN HİBE VAR MI"
+        # sorgusunda listede 10 dogru kayit gorunurken ayni yanitin mesaj
+        # alani "eslesen bir tesvik/destek programi bulamadim" diyordu -
+        # ayni ekranda birbiriyle celisen iki cevap.
+        #
+        # Arama mantigi artik tek yerde: app/rag.retrieve() (Turkce govde
+        # ayiklama ve sektor genislemesi dahil).
+        tesvikler = retrieve(request.question, limit=10)
 
         results = [
             SearchResult(
@@ -595,6 +595,101 @@ def cilek_paneli_sayfasi():
 
 if os.path.exists(STATIC_DIR):
     app.mount("/static", StaticFiles(directory=STATIC_DIR), name="static")
+
+
+# ============ NACE / 9903 UYGUNLUK ============
+
+@app.get("/api/nace/ara", dependencies=[Depends(ip_hiz_siniri(30))])
+def nace_ara(q: str = SorguParam(..., min_length=1, max_length=80,
+                            description="NACE kodu veya tanım metni")):
+    """9903 sayılı Karar'ın EK-3 listesinde arama.
+
+    Kimlik doğrulaması istemiyor: bu, Resmî Gazete'de yayımlanmış kamuya açık
+    bir mevzuat ekidir, kullanıcıya ait hiçbir veri içermez.
+    """
+    aranan = kucult(q).strip()
+    sonuclar = []
+    for k in ek3_kayitlari():
+        # Sart metni de aranıyor: aranan kelime NACE tanımında değil şartlarda
+        # geçebiliyor. Örnek: "sera" kelimesi 01.19.99'un tanımında yok
+        # ("Başka yerde sınıflandırılmamış tek yıllık diğer bitkisel ürünlerin
+        # yetiştirilmesi") ama şart metninde "Sera Yatırımlarında" diye geçiyor;
+        # sadece tanımda arayınca "sera" sorgusu 0 sonuç dönüyordu.
+        havuz = kucult(k["tanim"]) + " " + kucult(k.get("sartlar") or "")
+        # Türkçe ek soyma: "çağrı merkezi" sorgusu, metindeki "çağrı
+        # merkezlerinin" ifadesine ham hâliyle eşleşmiyordu.
+        terimler = [t for t in aranan.split() if t]
+        metin_eslesme = bool(terimler) and all(
+            t in havuz or govde(t) in havuz for t in terimler
+        )
+        if aranan in k["kod"] or metin_eslesme:
+            sonuclar.append(k)
+    return {
+        "sorgu": q,
+        "bulunan": len(sonuclar),
+        "kaynak": kaynak_bilgisi(),
+        "kayitlar": sonuclar[:40],
+        "not": "Bu liste YATIRIM TEŞVİK BELGESİ kapsamındaki yatırım "
+               "konularını gösterir. KOSGEB hibeleri, TÜBİTAK proje "
+               "destekleri ve Tarım Bakanlığı'nın dekar/hayvan başı ödemeleri "
+               "ayrı programlardır ve bu listeye tabi değildir.",
+    }
+
+
+@app.get("/api/nace/uygunluk", dependencies=[Depends(ip_hiz_siniri(30))])
+def nace_uygunluk(
+    kod: str = SorguParam(..., max_length=12, description="NACE Rev.2.1 kodu, ör. 01.19.99"),
+    il: str | None = SorguParam(None, max_length=40),
+    olcek: float | None = SorguParam(None, ge=0, description="Dekar veya adet/dönem"),
+):
+    """Bir NACE kodu 9903 EK-3 kapsamında mı, ve ölçeğiniz asgari şartı tutuyor mu?
+
+    Yapılandırılmış ölçek kontrolü yalnızca tarım (EK-3 bölüm A) kodları için
+    yapılır; diğer kodlarda şartlar asgari sabit yatırım tutarı gibi burada
+    bilinmeyen verilere dayandığı için yalnızca resmî şart metni döner.
+    """
+    kayit = ek3_kaydi(kod)
+    bolge = il_bolgesi(il)
+    yanit = {
+        "kod": kod,
+        "ek3_kapsaminda": kayit is not None,
+        "il": il,
+        "bolge": bolge,
+        "kaynak": kaynak_bilgisi(),
+    }
+    if kayit is None:
+        yanit["aciklama"] = (
+            f"'{kod}' 9903 sayılı Karar'ın EK-3 listesinde yok. Bu, yatırım "
+            "teşvik belgesi kapsamında DESTEKLENMEYEN bir yatırım konusu "
+            "olduğu anlamına gelir. KOSGEB/TÜBİTAK gibi diğer programlar "
+            "ayrıdır; onlar için /api/eslesme kullanın."
+        )
+        return yanit
+
+    yanit["bolum"] = kayit["bolum"]
+    yanit["bolum_ad"] = kayit["bolum_ad"]
+    yanit["tanim"] = kayit["tanim"]
+    yanit["resmi_sart_metni"] = kayit["sartlar"] or None
+    yanit["bolum_duzeyi_sart"] = bolum_sarti(kayit["bolum"])
+
+    degerlendirme = olcek_uygunlugu(kod, il, olcek)
+    if degerlendirme is None:
+        yanit["olcek_degerlendirmesi"] = None
+        yanit["not"] = (
+            "Bu yatırım konusu için sayısal ölçek kontrolü yapılmıyor; "
+            "şartlar asgari sabit yatırım tutarı gibi profilde bulunmayan "
+            "verilere dayanıyor. Yukarıdaki resmî şart metnini esas alın."
+        )
+    else:
+        yanit["olcek_degerlendirmesi"] = {
+            "durum": degerlendirme.durum,
+            "asgari": degerlendirme.asgari,
+            "birim": degerlendirme.birim,
+            "sizin_olceginiz": degerlendirme.kullanici_olcegi,
+            "aciklama": degerlendirme.aciklama,
+            "ek_not": degerlendirme.ek_not or None,
+        }
+    return yanit
 
 
 # ============ VERI TAZELIGI ============

@@ -24,6 +24,12 @@ import requests
 from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu, settings
 from sqlalchemy import or_
 
+from app.urun_sektor_anahtarlari import (
+    anahtar_kelimeden_sektor_bul,
+    govde,
+    kucult,
+)
+
 logger = logging.getLogger(__name__)
 
 OLLAMA_ETKIN = False  # True yapinca Gemma ile dogal dil cevap tekrar devreye girer
@@ -35,9 +41,26 @@ CLAUDE_TIMEOUT_SEC = 30
 CLAUDE_MAX_TOKENS = 1800
 
 # Anlamli sinyal tasimayan, aramada gurultu yaratan kisa/genel kelimeler.
+# Aramada anlamsiz olan ama ILIKE '%...%' ile veritabaninin cogunluguna
+# eslesen kelimeler. Olcum (2026-09-26): "ben" 176 kaydin 46'sina ("benzeri",
+# "beklenen" icinde), "ile" 168'ine eslesiyordu - yani kullanici "ben cilek
+# yetistiriyorum" yazdiginda sonuc kumesi neredeyse tum veritabani oluyor ve
+# siralama anlamsizlasıyordu. Liste bilerek yalnizca islev kelimelerini
+# iceriyor; "destek", "hibe", "kredi" gibi anlam tasiyan kelimeler DISARIDA.
 DURAK_KELIMELER = {
-    "için", "ile", "hangi", "nasıl", "var", "mı", "mi", "bir",
-    "the", "and", "des", "des",
+    # soru ve baglac
+    "için", "icin", "ile", "hangi", "hangisi", "nasıl", "nasil", "nedir",
+    "neler", "nelerdir", "kimler", "veya", "ya", "yada", "ama", "ancak",
+    "ise", "gibi", "kadar", "göre", "gore",
+    # zamir
+    "ben", "bana", "benim", "sen", "size", "siz", "sizin", "biz", "bize",
+    "bizim", "bunu", "bunlar", "bunları", "bunlari", "onlar", "kendi",
+    # yaygin dolgu
+    "var", "yok", "olan", "olur", "olabilir", "daha", "çok", "cok", "şey",
+    "sey", "sonra", "önce", "once", "istiyorum", "istiyoruz", "yapmak",
+    "almak", "arıyorum", "ariyorum", "hakkında", "hakkinda", "mı", "mi", "mu", "mü", "bir", "bu",
+    "şu", "su",
+    "the", "and", "des",
 }
 
 SISTEM_PROMPTU = """Sen, Türkiye'deki KOBİ'ler, çiftçiler, e-ticaret girişimcileri ve esnaflar için \
@@ -83,7 +106,11 @@ Emin olmadığın her yerde bunu açıkça belirt. Kısa ve net Türkçe cevap v
 
 
 def _terimlere_ayir(query: str) -> list[str]:
-    terms = [t.strip(".,!?").lower() for t in query.split()]
+    # kucult() kullaniliyor, str.lower() DEGIL: Python'da "İ".lower() tek harf
+    # degil "i̇" (i + U+0307 birlesik nokta) uretiyor, dolayisiyla caps lock
+    # ile yazan kullanicinin terimleri hicbir kayda eslesmiyordu
+    # (dogrulandi 2026-09-26, bkz. app/urun_sektor_anahtarlari.kucult).
+    terms = [kucult(t.strip(".,!?:;\"'()")) for t in query.split()]
     return [t for t in terms if len(t) > 2 and t not in DURAK_KELIMELER]
 
 
@@ -92,9 +119,16 @@ def retrieve(query: str, limit: int = 5) -> list[Tesvik]:
     terms = _terimlere_ayir(query)
     q = db.query(Tesvik)
     if terms:
+        # Her terim icin hem tam hali hem govdesi araniyor (bkz. govde()).
+        aranacak = []
+        for t in terms:
+            aranacak.append(t)
+            g = govde(t)
+            if g != t:
+                aranacak.append(g)
         conditions = [
             Tesvik.baslik.ilike(f"%{t}%") | Tesvik.ozet.ilike(f"%{t}%") | Tesvik.detay.ilike(f"%{t}%")
-            for t in terms
+            for t in aranacak
         ]
         q = q.filter(or_(*conditions))
     candidates = q.order_by(Tesvik.guncelleme_tarihi.desc()).limit(200).all()
@@ -110,15 +144,100 @@ def retrieve(query: str, limit: int = 5) -> list[Tesvik]:
         # cikariyordu - detay/ozet katkisini metin uzunluguna gore normalize
         # ediyoruz, baslik eslesmesine (ozellikle program kodu gibi tam
         # eslesmelere) çok daha yuksek agirlik veriyoruz.
-        gövde = f"{t.ozet or ''} {t.detay or ''}".lower()
-        gövde_skoru = sum(gövde.count(term) for term in terms) / max(len(gövde), 1) * 1000
-        baslik_kucuk = t.baslik.lower()
-        baslik_skoru = sum(10 for term in terms if term in baslik_kucuk)
-        tam_kod_bonus = sum(20 for term in terms if term.isdigit() and baslik_kucuk.startswith(term))
-        return gövde_skoru + baslik_skoru + tam_kod_bonus
+        metin = kucult(f"{t.ozet or ''} {t.detay or ''}")
+        baslik_kucuk = kucult(t.baslik or "")
+        # Tam terim eslesmesi govde eslesmesinden daha degerli: "serası" ile
+        # birebir eslesen kayit, yalnizca "sera" govdesiyle eslesenin onunde
+        # olmali.
+        metin_skoru = 0.0
+        baslik_skoru = 0.0
+        for term in terms:
+            g = govde(term)
+            metin_skoru += metin.count(term) * 1.0
+            baslik_skoru += 10 if term in baslik_kucuk else 0
+            if g != term:
+                metin_skoru += metin.count(g) * 0.5
+                baslik_skoru += 6 if g in baslik_kucuk else 0
+        metin_skoru = metin_skoru / max(len(metin), 1) * 1000
+        tam_kod_bonus = sum(20 for term in terms
+                            if term.isdigit() and baslik_kucuk.startswith(term))
+        return metin_skoru + baslik_skoru + tam_kod_bonus
 
     candidates.sort(key=skor, reverse=True)
-    return candidates[:limit]
+
+    # SEKTOR GENISLEMESI
+    #
+    # Sorguda taninan bir urun/faaliyet adi geciyorsa (orn. "cilek", "sut"),
+    # o sektore etiketli kayitlar gevsek bir ILIKE eslesmesinden DAHA
+    # alakalidir. Program adlari nadiren urun adi gecirdigi icin
+    # (bkz. app/urun_sektor_anahtarlari.py) literal arama tek basina
+    # yaniltici sonuc veriyor.
+    #
+    # Iki somut hata bu blokla kapandi (ikisi de 2026-09-26'da olculdu):
+    #
+    # 1) Genisleme yalnizca app/main.py sor() icinde, kullaniciya gosterilen
+    #    SONUC LISTESI icin yapiliyordu; answer() ham soruyla cagrildigi icin
+    #    Claude bu kayitlari HIC gormuyordu. "CILEK SERASI ICIN HIBE VAR MI"
+    #    sorgusu listede 10 dogru kayit ("Sera/Ortualti Tarim Destekleri"
+    #    dahil) gosterirken ayni yanitin mesaj alani "eslesen bir tesvik
+    #    bulamadim" diyordu - ayni ekranda birbiriyle celisen iki cevap.
+    #
+    # 2) Genislemeyi "literal sonuc azsa ekle" seklinde yazmak yetmiyor:
+    #    ayni sorguda "hibe" kelimesi 5 alakasiz KGF kredi kaydina eslesip
+    #    kotayi doldurdugu icin genisleme HIC tetiklenmiyordu. Bu yuzden
+    #    sektor eslesmelerine kotanin bir kismi AYRILIYOR.
+    hedef_sektor = anahtar_kelimeden_sektor_bul(query)
+    if not hedef_sektor:
+        return candidates[:limit]
+
+    literal_idler = {t.id for t in candidates}
+    sektor_kayitlari = _sektor_kayitlari(hedef_sektor, skor)
+
+    # Kotanin en az %60'i sektor eslesmelerine ayrilir; kalan yer literal
+    # eslesmelere kalir, boylece program kodu gibi tam eslesmeler kaybolmaz.
+    sektor_payi = max(1, round(limit * 0.6))
+    secilen = sektor_kayitlari[:sektor_payi]
+    secilen_idler = {t.id for t in secilen}
+    for t in candidates:
+        if len(secilen) >= limit:
+            break
+        if t.id not in secilen_idler:
+            secilen.append(t)
+            secilen_idler.add(t.id)
+
+    # Kota dolmadiysa kalan sektor kayitlariyla tamamla.
+    for t in sektor_kayitlari[sektor_payi:]:
+        if len(secilen) >= limit:
+            break
+        if t.id not in secilen_idler:
+            secilen.append(t)
+            secilen_idler.add(t.id)
+
+    # Sektor kayitlari kendi metin skoruna gore one gecsin, ama literal
+    # eslesme yapanlar (ayni zamanda sektorde olanlar) en ustte kalsin.
+    secilen.sort(key=lambda t: (t.id not in literal_idler, -skor(t)))
+    return secilen[:limit]
+
+
+def _sektor_kayitlari(sektor: str, skor) -> list[Tesvik]:
+    """Verilen sektore etiketli tesvikleri, metin skoruna gore sirali doner."""
+    db = SessionLocal()
+    try:
+        bulunan = []
+        for t in db.query(Tesvik).all():
+            if t.aktif_mi is False:
+                continue  # kapanmis programi one cikarmanin anlami yok
+            etiketler = {
+                x.lower()
+                for x in (t.uygunluk_kriterleri or {}).get("sektorler", [])
+            }
+            if sektor in etiketler:
+                db.expunge(t)  # oturum kapandiktan sonra alanlar okunabilsin
+                bulunan.append(t)
+        bulunan.sort(key=skor, reverse=True)
+        return bulunan
+    finally:
+        db.close()
 
 
 def _kisalt(metin: str, uzunluk: int = 220) -> str:

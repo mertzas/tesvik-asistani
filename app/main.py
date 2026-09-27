@@ -17,7 +17,7 @@ from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
 
-from app.models import init_db, get_db, Organization, User, Query, Tesvik, FinancialProfile, PlanType, settings
+from app.models import init_db, get_db, Organization, User, Query, Tesvik, FinancialProfile, PlanType, MacroIndicator, settings
 from app.auth import (
     get_current_user,
     get_current_org,
@@ -64,6 +64,16 @@ from app.nace_9903 import (
     olcek_uygunlugu,
 )
 from app.urun_sektor_anahtarlari import govde, kucult
+from app.tarim_destek_2026 import (
+    KAYNAK as TARIM_KAYNAK,
+    KAYNAK_URL as TARIM_KAYNAK_URL,
+    arilik_destegi as tarim_arilik_destegi,
+    hesapla as tarim_destek_hesapla,
+)
+from app.tesvik_9903_hesap import (
+    hesapla as tesvik_9903_hesapla,
+    programlari_karsilastir as tesvik_9903_karsilastir,
+)
 
 gunluklemeyi_kur()
 logger = logging.getLogger(__name__)
@@ -705,6 +715,119 @@ def nace_uygunluk(
             "ek_not": degerlendirme.ek_not or None,
         }
     return yanit
+
+
+@app.get("/api/nace/9903-hesap", dependencies=[Depends(ip_hiz_siniri(20))])
+def nace_9903_hesap(
+    il: str = SorguParam(..., max_length=40),
+    sabit_yatirim_tl: float = SorguParam(..., gt=0,
+        description="Teşvik belgesine kaydedilecek sabit yatırım tutarı"),
+    program: str | None = SorguParam(None,
+        description="Tek program için; boş bırakılırsa beşi karşılaştırılır"),
+    makine_techizat_tl: float | None = SorguParam(None, ge=0,
+        description="Birim fiyatı 2 milyon TL üzerindeki makine bedeli"),
+    kredi_tl: float | None = SorguParam(None, ge=0),
+    ilave_istihdam: int | None = SorguParam(None, ge=0),
+    asgari_ucret_isveren_primi_tl: float | None = SorguParam(None, ge=0,
+        description="SGK'nın ilgili yıl için ilan ettiği aylık tutar"),
+    db: Session = Depends(get_db),
+):
+    """9903 sayılı Karar kapsamında azami destek tutarını hesaplar.
+
+    Bu endpoint, teşvik kayıtlarının %92'sinde tutar bilgisi olmamasının
+    sebebini çözüyor: yatırım teşvik desteklerinin tutarı kayıt başına sabit
+    bir TL değeri değil, yatırımın büyüklüğüne bağlı bir fonksiyondur.
+
+    TCMB repo oranı veritabanındaki makro göstergeden alınır; yoksa faiz
+    desteği hesaplanmaz ve eksik bilgi olarak bildirilir.
+    """
+    repo = None
+    satir = db.query(MacroIndicator).filter(
+        MacroIndicator.anahtar == "tcmb_politika_faizi").first()
+    if satir is not None:
+        repo = satir.deger
+
+    ortak = dict(
+        makine_techizat_tl=makine_techizat_tl, kredi_tl=kredi_tl,
+        ilave_istihdam=ilave_istihdam,
+        aylik_asgari_ucret_isveren_primi_tl=asgari_ucret_isveren_primi_tl,
+        repo_faiz_orani=repo,
+    )
+    try:
+        if program:
+            hesaplar = [tesvik_9903_hesapla(program, il, sabit_yatirim_tl, **ortak)]
+        else:
+            hesaplar = tesvik_9903_karsilastir(il, sabit_yatirim_tl, **ortak)
+    except ValueError as e:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+
+    return {
+        "il": il,
+        "bolge": il_bolgesi(il),
+        "sabit_yatirim_tl": sabit_yatirim_tl,
+        "repo_faiz_orani": repo,
+        "repo_kaynagi": ("Veritabanındaki TCMB politika faizi (bir hafta vadeli "
+                         "repo) göstergesi" if repo else None),
+        "hesaplar": [h.sozluk() for h in hesaplar],
+    }
+
+
+@app.get("/api/tarim/destek-hesap", dependencies=[Depends(ip_hiz_siniri(30))])
+def tarim_destek_hesap(
+    urun: str = SorguParam(..., max_length=60),
+    alan_dekar: float = SorguParam(..., gt=0),
+    il: str | None = SorguParam(None, max_length=40),
+    planli_uretim: bool = SorguParam(True),
+    sertifikali_tohum: bool = SorguParam(False),
+    yerli_sertifikali_tohum: bool = SorguParam(False),
+    fidan: str | None = SorguParam(None, description="standart | sertifikali"),
+    organik_grup: int | None = SorguParam(None, ge=1, le=3),
+    organik_sertifika: str = SorguParam("bireysel", description="bireysel | grup"),
+    organik_orgut_uyesi: bool = SorguParam(False),
+    iyi_tarim: str | None = SorguParam(None,
+        description="1_ortualti | 1_acikta | 2 | 3"),
+    iyi_tarim_sertifika: str = SorguParam("bireysel"),
+    organomineral_gubre: bool = SorguParam(False),
+    genc_veya_kadin_kobuks: bool = SorguParam(False),
+    su_kisiti_havzasi: bool = SorguParam(False),
+    yem_bitkisi: bool = SorguParam(False),
+):
+    """2026 bitkisel üretim desteklerini ürün ve alana göre hesaplar.
+
+    Bakanlık desteği dekar başına ve katsayı sistemiyle veriyor; tutar kayda
+    değil ürüne ve alana bağlı olduğu için burada hesaplanıyor. Kimlik
+    doğrulaması istemiyor: birim fiyatlar kamuya açık resmî tablodan geliyor,
+    kişisel veri dönmüyor.
+    """
+    try:
+        h = tarim_destek_hesapla(
+            urun, alan_dekar, il=il, planli_uretim=planli_uretim,
+            sertifikali_tohum=sertifikali_tohum,
+            yerli_sertifikali_tohum=yerli_sertifikali_tohum, fidan=fidan,
+            organik_grup=organik_grup, organik_sertifika=organik_sertifika,
+            organik_orgut_uyesi=organik_orgut_uyesi, iyi_tarim=iyi_tarim,
+            iyi_tarim_sertifika=iyi_tarim_sertifika,
+            organomineral_gubre=organomineral_gubre,
+            genc_veya_kadin_kobuks=genc_veya_kadin_kobuks,
+            su_kisiti_havzasi=su_kisiti_havzasi, yem_bitkisi=yem_bitkisi,
+        )
+    except ValueError as e:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+    return h.sozluk()
+
+
+@app.get("/api/tarim/arilik-destek", dependencies=[Depends(ip_hiz_siniri(30))])
+def tarim_arilik_destek(kovan_sayisi: int = SorguParam(..., gt=0)):
+    """Organik arılı kovan desteği - KOVAN başına ödenir, dekar başına değil."""
+    try:
+        k = tarim_arilik_destegi(kovan_sayisi)
+    except ValueError as e:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail=str(e))
+    return {
+        "kovan_sayisi": kovan_sayisi, "ad": k.ad, "katsayi": k.katsayi,
+        "kovan_basi_tl": k.dekar_basi_tl, "toplam_tl": k.toplam_tl,
+        "not": k.not_, "kaynak": TARIM_KAYNAK, "kaynak_url": TARIM_KAYNAK_URL,
+    }
 
 
 # ============ VERI TAZELIGI ============

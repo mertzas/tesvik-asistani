@@ -308,6 +308,66 @@ def tutari_tahmini_hesapla(tesvik, profil: FinancialProfile) -> float | None:
     return olcek * ort_tutar
 
 
+KREDI_KEFALET_KURUMLARI = {"kgf"}
+
+
+def _proje_bazli_tavan_mi(tesvik) -> bool:
+    """Kaydin tutari, programin UST SINIRI mi (kullanicinin alacagi tutar degil)?
+
+    Metinden tahmin etmiyoruz - veride acikca isaretli olmasi gerekiyor:
+        uygunluk_kriterleri["tutar_niteligi"] == "proje_bazli_tavan"
+    Boylece hangi kaydin neden toplama girmedigi denetlenebilir kaliyor
+    (bkz. scripts/backfill_tarim_tutar_2026.py).
+    """
+    return _tutar_niteligi(tesvik) == "proje_bazli_tavan"
+
+
+# uygunluk_kriterleri["tutar_niteligi"] degerleri. Tutarin NE oldugunu
+# soyler; "toplam tahmini destek"e hangi kaydin girecegini bu belirler.
+#   "hibe"              -> geri odemesiz, cepten alinir. TOPLAMA GIRER.
+#   "kredi_kefalet"     -> kredi ana parasi / kefalet limiti. Girmez.
+#   "faiz_destegi"      -> kurum kredinin FAIZINI odiyor, ana parayi degil;
+#                          bastaki buyuk rakam kredi limitidir. Girmez.
+#   "proje_bazli_tavan" -> programin ust siniri, kullaniciya ozel degil. Girmez.
+TOPLAMA_GIRMEYEN_NITELIKLER = {"kredi_kefalet", "faiz_destegi", "proje_bazli_tavan"}
+
+_NITELIK_ACIKLAMALARI = {
+    "kredi_kefalet": "Bu bir kredi/kefalet ürünü: rakam bankadan "
+                     "kullanabileceğiniz kredinin üst sınırıdır, size "
+                     "ödenecek hibe değildir.",
+    "faiz_destegi": "Kurum kredinin ANA PARASINI değil FAİZİNİ karşılıyor; "
+                    "baştaki büyük rakam kredi limitidir. Eline geçen destek "
+                    "ödenen faiz kadardır.",
+    "proje_bazli_tavan": "Tutar proje bazlı belirlenir; metindeki rakam "
+                         "programın üst sınırıdır, sizin alacağınız tutar "
+                         "değildir.",
+}
+
+
+def _tutar_niteligi(tesvik) -> str | None:
+    return (tesvik.uygunluk_kriterleri or {}).get("tutar_niteligi")
+
+
+def _kredi_kefaleti_mi(tesvik) -> bool:
+    """Bu kaydin tutari hibe DISI mi (kredi/kefalet/faiz destegi)?
+
+    ONCE acik isarete bakar. Isaret yoksa metin sezgisine duser, ama bu sezgi
+    KAYIP VERIYOR: "kredi" kelimesi gecen her kayit tamamen disari atiliyordu
+    ve boylece KOSGEB Girisimci Destek Programi'ndaki GERI ODEMESIZ 10.000 TL
+    kurulus destegi de toplamdan dusuyordu (olcum 2026-09-26; metinde "%80
+    geri odemeli" ve "Faiz/Kar Payi" ifadeleri geciyor diye). Bu yuzden
+    kayitlarin tutar_niteligi ile acikca isaretlenmesi gerekiyor
+    (bkz. scripts/backfill_tutar_niteligi.py).
+    """
+    nitelik = _tutar_niteligi(tesvik)
+    if nitelik:
+        return nitelik in TOPLAMA_GIRMEYEN_NITELIKLER
+    if (tesvik.kurum or "").strip().lower() in KREDI_KEFALET_KURUMLARI:
+        return True
+    metin = (tesvik.tesvil_tutari or "") + " " + (tesvik.tutari_hesaplama_formulu or "")
+    return "kredi" in metin.lower()
+
+
 def toplam_tahmini_destek(sonuclar: list[TesvikEslesmeSonucu], profil: FinancialProfile) -> tuple[float, float]:
     """Eslesen tesviklerin tutar araliklarini toplayarak kaba bir 'toplam
     alinabilecek destek' araligi verir.
@@ -333,18 +393,27 @@ def toplam_tahmini_destek(sonuclar: list[TesvikEslesmeSonucu], profil: Financial
     kismi KGF kredi limitlerinden). KGF kayitlari bu toplamdan haric
     tutulur; kullanici bunlari ayri bir 'kredi/kefalet secenekleri'
     listesi olarak gormelidir, nakit destek toplamiyla karistirilmamalidir."""
-    KREDI_KEFALET_KURUMLARI = {"kgf"}
-
-    def _kredi_kefaleti_mi(tesvik) -> bool:
-        if (tesvik.kurum or "").strip().lower() in KREDI_KEFALET_KURUMLARI:
-            return True
-        # Bazi kayitlar KOSGEB adina girilmis olsa da icerik olarak KGF'nin
-        # yurutgu kredi/kefalet urunleridir (orn. 'Kapasite Gelistirme Destek
-        # Programi' KOSGEB basligi altinda ama tesvil_tutari'nda '20.000.000
-        # kredi limiti' yaziyor) - kurum etiketi guvenilir degil, metin
-        # icerigine bakmak gerekiyor.
-        metin = (tesvik.tesvil_tutari or "") + " " + (tesvik.tutari_hesaplama_formulu or "")
-        return "kredi" in metin.lower()
+    # UCUNCU HATA: birbirini DISLAYAN kayitlar birlikte toplaniyordu. 50 dekar
+    # bugday eken bir ciftcinin toplamina "Meyve-Sebze Uretim Destekleri" ve
+    # "Sera/Ortualti Tarim Destekleri" de ekleniyordu (olcum 2026-09-26) - ayni
+    # tarlada hem bugday hem serada sebze yetistirmiyor. Kaydin alt_kategori'si
+    # kullanicinin kategorisiyle celisiyorsa toplama KATILMIYOR. Kayit listede
+    # gorunmeye devam eder (bilgi degerli), yalnizca toplama girmez.
+    #
+    # DORDUNCU HATA: proje bazli hibelerin PROGRAM TAVANI toplama giriyordu.
+    # "Sulama Yatirimi Destekleri" metninde 100.000-1.000.000 TL yaziyor ama bu
+    # programin ust siniri; 50 dekarlik bir ciftcinin alacagi tutar degil.
+    # Boyle iki kayit, o ciftcinin toplamini 1,6 milyon TL'ye cikariyordu
+    # (olcum 2026-09-26) - KGF kredi limitleriyle ayni kategori hatasi.
+    #
+    # Cozum metinden TAHMIN ETMEK degil, veride ISARETLEMEK: proje bazli
+    # kayitlarda uygunluk_kriterleri["tutar_niteligi"] == "proje_bazli_tavan".
+    # Mutlak hibe araliklari (orn. KOSGEB "100.000-200.000 TL") toplama
+    # girmeye devam eder, cunku bunlar gercekten alinabilecek tutarlardir.
+    # Isaretli kayitlar proje_bazli_destekler() ile ayri sunulur.
+    profil_kategorisi = (profil.tarim_kategori or "").strip().lower()
+    if profil_kategorisi in BELIRTILMEMIS_KATEGORILER:
+        profil_kategorisi = urun_turunden_tarim_kategorisi(profil.urun_turu) or ""
 
     toplam_min = 0.0
     toplam_max = 0.0
@@ -352,10 +421,24 @@ def toplam_tahmini_destek(sonuclar: list[TesvikEslesmeSonucu], profil: Financial
         tesvik = s.tesvik
         if _kredi_kefaleti_mi(tesvik):
             continue
+        if tesvik.aktif_mi is False:
+            continue  # kapanmis programin tutari toplama girmemeli
+
+        alt_kategori = (tesvik.uygunluk_kriterleri or {}).get("alt_kategori")
+        if (alt_kategori and profil_kategorisi
+                and alt_kategori != profil_kategorisi
+                and (tesvik.uygunluk_kriterleri or {}).get("genislik") == "dar"):
+            # Yalnizca "dar" (dislayici) programlar atlanir; sulama/organik/
+            # makinelestirme gibi "genis" programlar urun turunden bagimsizdir.
+            continue
+
+        if _proje_bazli_tavan_mi(tesvik):
+            continue
+
         if tesvik.tutari_hesaplama_kriteri and tesvik.tutari_min is not None:
             olcek = _tutar_olcek_faktoru(tesvik.tutari_hesaplama_kriteri, profil)
             if olcek is None:
-                continue  # profildeki ilgili alan (dekar/calisan) eksik - tahmin uretilemez
+                continue  # profildeki ilgili alan (dekar/calisan) eksik
             toplam_min += olcek * tesvik.tutari_min
             toplam_max += olcek * (tesvik.tutari_max or tesvik.tutari_min)
             continue
@@ -364,4 +447,38 @@ def toplam_tahmini_destek(sonuclar: list[TesvikEslesmeSonucu], profil: Financial
         if alt is not None:
             toplam_min += alt
             toplam_max += ust
-    return toplam_min, toplam_max
+
+    return round(toplam_min, 2), round(toplam_max, 2)
+
+
+def proje_bazli_destekler(sonuclar: list[TesvikEslesmeSonucu]) -> list[dict]:
+    """Yapisal (olceklenebilir) tutari olmayan, proje bazli degerlendirilen
+    destekler.
+
+    Bunlar toplam tahmini destege KATILMAZ cunku metinlerindeki rakam
+    kullanicinin olcegiyle iliskili degil, programin ust siniridir. Ama
+    kullanicinin bu programlari gormesi gerekir - sadece "bu tutar sizin
+    icin hesaplanamaz" bilgisiyle birlikte.
+    """
+    liste = []
+    for s in sonuclar:
+        t = s.tesvik
+        if t.aktif_mi is False:
+            continue
+        if not (_kredi_kefaleti_mi(t) or _proje_bazli_tavan_mi(t)):
+            continue  # toplama girdi, burada tekrar gosterilmez
+        metin = (t.tesvil_tutari or "").strip()
+        if not metin:
+            continue
+        liste.append({
+            "baslik": t.baslik,
+            "kurum": t.kurum,
+            "program_tutari_metni": metin,
+            "kredi_kefalet_mi": _kredi_kefaleti_mi(t),
+            "tutar_niteligi": _tutar_niteligi(t),
+            "not": _NITELIK_ACIKLAMALARI.get(
+                _tutar_niteligi(t) or "",
+                "Bu kaydın tutarı sizin ölçeğinize göre hesaplanamıyor; "
+                "metindeki rakam programın üst sınırı olabilir."),
+        })
+    return liste

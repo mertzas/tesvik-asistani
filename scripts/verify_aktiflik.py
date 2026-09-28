@@ -76,6 +76,13 @@ ACIK_KALIPLARI = (
     r"başvuruya\s+aç[ıi]lm[ıi]şt[ıi]r",
     r"başvurular\s+al[ıi]nmaktad[ıi]r",
     r"başvuru\s+dönemi\s+aç[ıi]k",
+    # KOSGEB program sayfalarinda "Yürürlükte Olan Çağrılar" basligi ve
+    # ardindan cagri adi geliyor. Basligin ARDINDAN icerik gelmesi sart:
+    # yalnizca baslik varsa (bos bolum) program acik demek degil.
+    # Baslikta icerik OLMASI sart: baslik + 80 karakter icinde bir cagri adi
+    # ya da yil. Yalnizca baslik varsa (bos bolum) acik saymayiz.
+    r"yürürlükte\s+olan\s+çağr[ıi]lar[\s\S]{1,80}?"
+    r"(?:çağr[ıi]s[ıi]|\d{4}\s+y[ıi]l[ıi]|başvuru\s+dönemi)",
 )
 
 # "son basvuru tarihi 31.10.2026" gibi ifadeler - tarih GELECEKTEyse acik sayilir.

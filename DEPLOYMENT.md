@@ -22,9 +22,10 @@ kapatılmadan ödeme alan bir servis olarak yayına verilmemeli.
 | ⛔ | **İKAS OAuth token'ları şifresiz saklanıyor** | `ikas_baglanti.access_token` / `.refresh_token` veritabanında açık metin. Bu anahtarlar kullanıcının mağaza verisine erişim sağlar; veritabanı yedeğine erişen biri kullanabilir. Entegrasyon şu an mock modda, gerçek bağlantı açılmadan önce şifrelenmeli. |
 | ⚠️ | **Yapay zekâ için yurt dışına aktarım açık rızası alınmıyor** | `/api/sor` çağrısında işletme profili (sektör, ciro, arazi, hedefler) Anthropic'e (ABD) gönderiliyor. Ad/e-posta gönderilmiyor ama bu yine de yurt dışına aktarım; KVKK açık rıza ister. Kayıt akışına onay kutusu eklenmeli. |
 | ⛔ | **Stripe test modunda** | `sk_test_` anahtarlarıyla çalışıyor; canlı anahtar ve webhook imza doğrulaması üretimde teyit edilmeli. |
-| ⛔ | **115 teşvik kaydının açık/kapalı durumu doğrulanmamış** (176 kaydın) | `aktif_mi` alanı boş olan kayıtlar için AI danışman "kurumun sayfasından teyit edin" uyarısı basıyor, ama kullanıcı yine kapanmış bir programa yönlenebilir. |
-| ⚠️ | **162 kayıtta başvuru şartları eksik** | Eşleşme çalışıyor ama kullanıcı "başvurabilir miyim" sorusunun cevabını kayıttan alamıyor. |
+| ⚠️ | **93 teşvik kaydının açık/kapalı durumu doğrulanamadı** (181 kaydın) | `scripts.verify_aktiflik` ile 88 kayıt doğrulandı; kalanlarda kurum sayfası yüksek güvenli bir durum ifadesi taşımıyor, doğrulayıcı bilerek karar vermiyor. Bu kayıtlarda AI danışman "kurumun sayfasından teyit edin" uyarısı basıyor. |
+| ⚠️ | **127 kayıtta başvuru şartları eksik** (181 kaydın) | `scripts.extract_basvuru_sartlari` ile 19 → 54 kayda şart yazıldı (KOSGEB, TÜBİTAK ve 9903 programları). Kalanların çoğu KGF kredi ürünü; kurum sayfalarında ayrı bir şart bölümü yok. |
 | ⚠️ | **Yük testi hiç yapılmadı** | Eşzamanlı kullanıcı davranışı bilinmiyor. `/api/sor` her çağrıda Claude API'ye gidiyor; gecikme ve maliyet ölçülmeli. |
+| ⚠️ | **7 kaydın kaynak linki ölü** | KGF 5 ve TÜBİTAK 2 sayfayı kaldırmış; linkler `durum_notu`'nda işaretli. Kullanıcı bilgiyi kaynağından teyit edemiyor, yeni adresler bulunmalı. |
 | ⚠️ | **Yedekleme otomatik değil** | `scripts/backup.sh` ve `restore.sh` var ama zamanlanmış değil ve geri yükleme hiç denenmedi. |
 | ⚠️ | **Hata izleme yok** | Günlükler dosyaya/konsola yazılıyor, merkezî bir hata toplayıcı (Sentry vb.) bağlı değil. |
 

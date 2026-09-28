@@ -179,6 +179,29 @@ YENI_DURUM_NOTU = (
 BASVURU_YERI = ("Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı "
                 "Sermaye Genel Müdürlüğü (E-TUYS)")
 
+# Tum 9903 programlari icin ORTAK sartlar. Karar metninden birebir
+# (MADDE 5 ve MADDE 6); kayitlarda basvuru_sartlari bos kalmasin diye
+# eklendi - kullanici "basvurabilir miyim" sorusunun cevabini kayitta gorsun.
+ORTAK_SARTLAR = [
+    "Yatırım konusunun Karar'ın EK-3 listesinde yer alması; eşleştirme "
+    "NACE Rev.2.1 kodu üzerinden yapılır (MADDE 5).",
+    "Asgari sabit yatırım tutarı: EK-3'te yatırım konusuna özel bir tutar "
+    "belirtilmemişse 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde "
+    "6 milyon TL (MADDE 5/2).",
+    "Finansal kiralama yöntemiyle yapılacak yatırımlarda, kiralamaya konu "
+    "makine ve teçhizatın toplam tutarının her bir finansal kiralama "
+    "şirketi için asgari 3 milyon TL olması (MADDE 5/3).",
+    "Projenin, makroekonomik programlar ve arz-talep dengesi dikkate "
+    "alınarak yapılacak sektörel, malî ve teknik değerlendirme sonucunda "
+    "Bakanlıkça uygun görülmesi ve teşvik belgesi düzenlenmesi (MADDE 5/4).",
+    "Müracaatın 31/12/2030 tarihine kadar yapılmış olması (MADDE 5/5).",
+    "DİKKAT: teşvik belgesi müracaat tarihinden ÖNCE gerçekleştirilmiş "
+    "yatırım harcamaları belge kapsamına ALINMAZ (MADDE 5/6) - harcamaya "
+    "başlamadan önce başvurun.",
+    "Başvuru ve tüm işlemler E-TUYS üzerinden elektronik ortamda yapılır "
+    "(MADDE 6/12).",
+]
+
 
 def calistir(uygula: bool) -> int:
     db = SessionLocal()
@@ -224,6 +247,7 @@ def calistir(uygula: bool) -> int:
                     kaynak_url=f"{KARAR_URL}#{p['parca']}",
                     uygunluk_kriterleri=p["uygunluk_kriterleri"],
                     basvuru_yeri=BASVURU_YERI,
+                    basvuru_sartlari=ORTAK_SARTLAR + p.get("ek_sartlar", []),
                     aktif_mi=True, durum_notu=YENI_DURUM_NOTU,
                     guncelleme_tarihi=simdi,
                 ))

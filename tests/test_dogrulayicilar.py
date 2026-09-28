@@ -149,3 +149,31 @@ def test_kanonik_yonlendirme_sorun_sayilmaz(a, b):
 ])
 def test_yol_veya_alan_degisirse_ayni_sayfa_degil(a, b):
     assert _ayni_sayfa(a, b) is False
+
+
+# ------------------------------- KOSGEB "Yürürlükte Olan Çağrılar" bölümü
+
+def test_yururlukteki_cagri_varsa_acik():
+    """KOSGEB program sayfalarında bu başlığın ALTINDA bir çağrı adı varsa
+    program başvuruya açıktır."""
+    for metin in [
+        "Yürürlükte Olan Çağrılar 2026-01 COP31 Hızlandırma Çağrısı İlan Metni",
+        "Yürürlükte Olan Çağrılar 2026 Yılı 1. Başvuru Dönemi Proje Teklif Çağrısı",
+    ]:
+        assert _degerlendir(metin)[0] == "acik", metin
+
+
+def test_bos_cagri_bolumu_acik_saymaz():
+    """Başlık var ama altında çağrı yoksa program açık demek DEĞİLDİR;
+    içerik şartı olmadan bu başlık her sayfada açık kararı üretirdi."""
+    karar, _, _ = _degerlendir("Yürürlükte Olan Çağrılar  Duyurular İletişim")
+    assert karar == "kararsiz"
+
+
+def test_basliksiz_sayfa_kapali_saymaz():
+    """Bazı KOSGEB sayfalarında bu bölüm hiç yok ama program açık olabilir
+    (ör. Girişimci Destek Programı). Başlığın YOKLUĞU kapalı demek değildir."""
+    karar, _, _ = _degerlendir(
+        "Programın Amacı İşletmelerin rekabet gücünü artırmaktır. "
+        "Başvuru Şartları KOSGEB Veri Tabanında kayıtlı olmak.")
+    assert karar == "kararsiz"

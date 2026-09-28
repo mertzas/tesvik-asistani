@@ -77,3 +77,38 @@ def db_session():
         yield db
     finally:
         db.close()
+
+
+@pytest.fixture(autouse=True)
+def _claude_cagirma(monkeypatch, request):
+    """Testler GERÇEK Claude API'sine gitmesin.
+
+    SORUN: tests/test_api.py `/api/sor` uç noktasını 8+ kez çağırıyor ve her
+    çağrı canlı Anthropic API'sine gidiyordu. Sonuçları (ölçüm 2026-09-28):
+
+      - her çağrı ~25 saniye; suit dakikalar yerine saatler sürüyordu,
+      - her test koşusu kullanıcının API kotasından PARA harcıyordu,
+      - testler ağ erişimine ve dış servisin o anki durumuna bağlıydı,
+      - yanıt metni her seferinde farklı olduğu için deterministik değildi.
+
+    Bu fixture `app.main.answer`'ı sabit bir metinle değiştiriyor. Uç
+    noktanın kendi mantığı (yetki, kota, sorgu kaydı, hata yolları) tam
+    olarak sınanmaya devam ediyor; yalnızca LLM çağrısı taklit ediliyor.
+
+    Claude katmanının kendisi tests/test_rag.py içinde, yine ağ erişimi
+    olmadan, kendi monkeypatch'leriyle test ediliyor.
+
+    Gerçek API'ye çıkması gereken bir test olursa `@pytest.mark.canli_llm`
+    ile işaretlenebilir; bu fixture onu atlar.
+    """
+    if request.node.get_closest_marker("canli_llm"):
+        return
+
+    def _sahte_cevap(soru, profil=None):
+        return (f"[test] '{soru[:40]}' sorusu için örnek yanıt. "
+                "Bu metin testte üretildi, Claude API çağrılmadı.")
+
+    # app/main.py `from app.rag import answer` ile içe aktardığı için
+    # yamanacak hedef app.main.answer'dır, app.rag.answer değil.
+    import app.main
+    monkeypatch.setattr(app.main, "answer", _sahte_cevap)

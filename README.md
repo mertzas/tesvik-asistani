@@ -240,6 +240,37 @@ python -m scripts.mark_9903_yururlukten_kalkanlar --uygula
 
 ---
 
+## Veri bakımı script'leri
+
+Kayıtların güncelliği elle sürdürülebilir değil; aşağıdakiler tekrar tekrar
+çalıştırılmak üzere yazıldı. Hepsi önce **rapor** verir, `--uygula` olmadan
+hiçbir şey yazmaz.
+
+| Script | Ne yapar |
+|---|---|
+| `scripts.tum_verileri_guncelle` | 9 veri kaynağını tazeler (hal, TÜİK, kurum scraper'ları) |
+| `scripts.verify_aktiflik` | Programın hâlâ açık olup olmadığını kurumun sayfasından doğrular |
+| `scripts.check_kaynak_linkleri` | Kaynak linklerinin çalışıp çalışmadığını denetler |
+| `scripts.extract_basvuru_sartlari` | Başvuru şartlarını kurumun sayfasından çıkarır |
+| `scripts.backfill_tutar_niteligi` | Tutarın hibe mi kredi mi olduğunu işaretler |
+| `scripts.backfill_tarim_tutar_2026` | Tarım kayıtlarına 2026 birim fiyatlarını yazar |
+
+**Ortak tasarım kararı: emin olunamıyorsa karar verilmez.** Doğrulayıcılar
+yalnızca yüksek güvenli, cümle düzeyinde kalıplarla karar verir; kalıp
+bulunamazsa kayıt "kararsız" olarak raporlanır ve olduğu gibi bırakılır.
+Sebebi somut: TÜBİTAK 4005 sayfasındaki *"Açık ve kapalı uçlu deney"*
+ifadesi, düz kelime aramasıyla programı kapanmış gösteriyordu. Her karar
+için kaynak, tarih ve sayfadan alınan kanıt parçası kayda yazılır.
+
+```bash
+python -m scripts.verify_aktiflik --kurum KOSGEB            # rapor
+python -m scripts.verify_aktiflik --tumu --uygula
+python -m scripts.check_kaynak_linkleri --uygula
+python -m scripts.extract_basvuru_sartlari --kurum TUBITAK --uygula
+```
+
+---
+
 ## Mimari
 
 Çok kiracılı (multi-tenant): her `Organization` bir veya daha fazla `User`

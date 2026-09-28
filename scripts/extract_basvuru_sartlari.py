@@ -61,6 +61,8 @@ BASLIKLAR = (
     "Kimler Başvurabilir",
     "Başvuru Koşulları",
     "Kimler Yararlanabilir",
+    # KGF urun sayfalarinda basvuru sartlari "Özel Şartlar" basligi altinda.
+    "Özel Şartlar",
 )
 
 # Bolumun BITTIGI yer: bir sonraki basligin geldigi nokta. Bunu bilmezsek
@@ -69,6 +71,10 @@ BITIS_ISARETLERI = (
     "Başvuru Formları", "Başvuru Süreci", "Destek Oranı", "Destek Unsurları",
     "Programın Amacı", "Sıkça Sorulan", "Mevzuat", "Duyurular", "İletişim",
     "Başvuru Tarihleri", "Değerlendirme", "Destek Miktarı", "Proje Süresi",
+    # KGF: "Özel Şartlar" bolumu, sayfanin en altindaki gezinme cubuguyla
+    # ("Buradasınız: Anasayfa / ...") biter; bu olmadan sayfanin adres/
+    # iletisim bilgileri de "sart" diye yaziliyordu.
+    "Buradasınız",
 )
 
 # Turkce sart listeleri KAPANIS IFADESIYLE biter: "... gerekmektedir.",
@@ -147,8 +153,45 @@ def _bolum_bul(metin: str) -> tuple[str, str] | None:
     return None
 
 
-def _maddelere_ayir(bolum: str) -> list[str]:
-    ham = _MADDE_SINIRI.split(bolum)
+# KGF "Özel Şartlar" bolumu genellikle "- " ile baslayan gercek madde
+# isaretleri kullanir ("- Paket kapsamındaki krediler ... - Tüm harcamalar
+# ..."). Bu, Turkce gerund-eki bolmesinden ONCE denenmeli: KGF cumleleri
+# her zaman "-ması/-mesi," ile bitmiyor (duz "belgelendirilecektir."
+# seklinde de bitebiliyor), o durumda gerund bolmesi TEK BIR uzun parca
+# dondurur.
+_TIRE_MADDE = re.compile(r"(?:^|\s)-\s+")
+
+# TUBITAK'in bazi programlarinda (2223 serisi etkinlik destekleri) sartlar
+# "a. ... b. ... c. ..." harf-numarali liste halinde, cok uzun (3000+
+# karakter) ve YAPISAL olarak net ayrilmis. En az 3 harf-madde gorulurse
+# bu, tire kadar guvenilir bir sinirdir (yanlis bolunme riski dusuk).
+_HARF_MADDE = re.compile(r"(?:^|\s)([a-z])\s*\.\s+(?=[A-ZÇĞİÖŞÜ])")
+
+# Bu iki kalip ile bolunen bolumler YAPISAL olarak net ayrilmis demektir;
+# genel EN_COK_UZUNLUK sinirini (1800) asıp da REDDEDILMEMELI - cunku
+# "yanlis bolum yakalandi" riski, net madde isaretleri sayesinde dusuk.
+EN_COK_UZUNLUK_YAPISAL = 4200
+
+
+def _maddelere_ayir(bolum: str) -> tuple[list[str], bool]:
+    """(maddeler, yapisal_mi) doner.
+
+    yapisal_mi=True ise bolum harf/tire gibi NET bir madde isaretiyle
+    bolunmustur - bu durumda uzunluk sinirini gevsetmek guvenlidir, cunku
+    "yanlis bolum yakalandi" riski dusuktur.
+    """
+    yapisal = False
+    if len(re.findall(_HARF_MADDE, bolum)) >= 3:
+        ham = _HARF_MADDE.split(bolum)
+        # re.split harf gruplarini da (yakalama grubu) sonuca ekliyor;
+        # tek karakterlik harf parcalarini (madde metni degil) at.
+        ham = [p for p in ham if not (len(p) == 1 and p.isalpha())]
+        yapisal = True
+    elif len(re.findall(_TIRE_MADDE, bolum)) >= 2:
+        ham = _TIRE_MADDE.split(bolum)
+        yapisal = True
+    else:
+        ham = _MADDE_SINIRI.split(bolum)
     maddeler = []
     for p in ham:
         p = " ".join(p.split()).strip(" ;,-–")
@@ -159,16 +202,17 @@ def _maddelere_ayir(bolum: str) -> list[str]:
         if ANLAMSIZ_PARCALAR.match(p):
             continue
         maddeler.append(p)
-    return maddeler[:EN_COK_MADDE]
+    return maddeler[:EN_COK_MADDE], yapisal
 
 
-def _kontrol_et(bolum: str, maddeler: list[str]) -> str | None:
+def _kontrol_et(bolum: str, maddeler: list[str], yapisal: bool = False) -> str | None:
     """Kabul edilemezse sebebini doner, kabul edilebilirse None."""
     if len(bolum) < EN_AZ_UZUNLUK:
         return f"bölüm çok kısa ({len(bolum)} karakter) - anlamlı şart değil"
-    if len(bolum) > EN_COK_UZUNLUK:
-        return (f"bölüm çok uzun ({len(bolum)} karakter) - büyük ihtimalle "
-                "yanlış bölüm yakalandı")
+    azami = EN_COK_UZUNLUK_YAPISAL if yapisal else EN_COK_UZUNLUK
+    if len(bolum) > azami:
+        return (f"bölüm çok uzun ({len(bolum)} karakter, azami {azami}) - "
+                "büyük ihtimalle yanlış bölüm yakalandı")
     if not maddeler:
         return "madde çıkarılamadı"
     # Tek maddelik ve ileri isaret eden sonuc, icermedigi bir icerigi vaat
@@ -227,8 +271,8 @@ def calistir(kurum: str | None, limit: int | None, uygula: bool,
                 continue
 
             bolum_basligi, bolum = bulgu
-            maddeler = _maddelere_ayir(bolum)
-            sebep = _kontrol_et(bolum, maddeler)
+            maddeler, yapisal = _maddelere_ayir(bolum)
+            sebep = _kontrol_et(bolum, maddeler, yapisal)
             if sebep:
                 sonuclar.append(Cikarim(t.baslik or "", t.kurum or "", t.kaynak_url,
                                         "reddedildi", [], sebep))

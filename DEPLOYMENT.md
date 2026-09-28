@@ -18,7 +18,9 @@ kapatılmadan ödeme alan bir servis olarak yayına verilmemeli.
 | Durum | Konu | Neden önemli |
 |---|---|---|
 | ⛔ | **Hız sınırlama sayaçları süreç içi** | `app/rate_limit.py` sayaçları RAM'de tutar. `--workers 2` ile her işçi kendi sayacını tutar, gerçek limit iki katına çıkar. Çok işçili dağıtımda Redis'e taşınmalı. |
-| ⛔ | **KVKK aydınlatma metni ve veri işleme kaydı yok** | Kişisel ve finansal veri işleniyor. Şirket kurulup VERBİS kaydı yapılmadan yayın hukuken riskli. |
+| ⛔ | **KVKK aydınlatma metni yayına hazır değil** | Metin yazıldı ve `/kvkk` adresinde yayında; veri envanteri kodun şemasından çıkarıldı ve doğru. Ancak ticaret unvanı, adres, VERBİS kaydı ve başvuru kanalı `DOLDURULACAK` işaretli — şirket kuruluşu tamamlanmadan doldurulamaz ve bu alanlar dolmadan aydınlatma yükümlülüğü karşılanmaz. |
+| ⛔ | **İKAS OAuth token'ları şifresiz saklanıyor** | `ikas_baglanti.access_token` / `.refresh_token` veritabanında açık metin. Bu anahtarlar kullanıcının mağaza verisine erişim sağlar; veritabanı yedeğine erişen biri kullanabilir. Entegrasyon şu an mock modda, gerçek bağlantı açılmadan önce şifrelenmeli. |
+| ⚠️ | **Yapay zekâ için yurt dışına aktarım açık rızası alınmıyor** | `/api/sor` çağrısında işletme profili (sektör, ciro, arazi, hedefler) Anthropic'e (ABD) gönderiliyor. Ad/e-posta gönderilmiyor ama bu yine de yurt dışına aktarım; KVKK açık rıza ister. Kayıt akışına onay kutusu eklenmeli. |
 | ⛔ | **Stripe test modunda** | `sk_test_` anahtarlarıyla çalışıyor; canlı anahtar ve webhook imza doğrulaması üretimde teyit edilmeli. |
 | ⛔ | **115 teşvik kaydının açık/kapalı durumu doğrulanmamış** (176 kaydın) | `aktif_mi` alanı boş olan kayıtlar için AI danışman "kurumun sayfasından teyit edin" uyarısı basıyor, ama kullanıcı yine kapanmış bir programa yönlenebilir. |
 | ⚠️ | **162 kayıtta başvuru şartları eksik** | Eşleşme çalışıyor ama kullanıcı "başvurabilir miyim" sorusunun cevabını kayıttan alamıyor. |
@@ -28,7 +30,7 @@ kapatılmadan ödeme alan bir servis olarak yayına verilmemeli.
 
 Kapatılmış olanlar (referans): şema sürümleme (Alembic), hız sınırlama,
 merkezî günlükleme, veri tazeliği göstergesi, otomatik veri tazeleme,
-üretim bağımlılıklarının doğruluğu.
+üretim bağımlılıklarının doğruluğu, destek tutarı hesaplayıcıları (9903 ve 2026 tarım), aktiflik ve kaynak linki doğrulayıcıları.
 
 ---
 

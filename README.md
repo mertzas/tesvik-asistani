@@ -117,7 +117,7 @@ başına yeterli değildir.
 pytest
 ```
 
-176 test; `tests/conftest.py` her test için bellek içi SQLite kurup düşürür,
+308 test; `tests/conftest.py` her test için bellek içi SQLite kurup düşürür,
 yerel veritabanınıza dokunmaz.
 
 Şema ile modellerin uyumunu kontrol etmek için:
@@ -170,6 +170,7 @@ docs/                     API, mimari ve pazarlama dokümanları
 | `GET /api/nace/ara?q=sera` | 9903 sayılı Karar EK-3 listesinde arama (kimlik doğrulaması gerekmez) |
 | `GET /api/nace/uygunluk?kod=01.19.99&il=Konya&olcek=8` | NACE kodu teşvik kapsamında mı, ölçeğiniz asgari şartı tutuyor mu |
 | `GET /health` | Sağlık kontrolü + veri durumu |
+| `GET /kvkk` | KVKK aydınlatma metni (veri envanteri koddan çıkarıldı) |
 
 Tam liste ve istek/yanıt gövdeleri: [docs/API.md](docs/API.md) ve çalışan
 sunucuda `/docs`.
@@ -249,6 +250,29 @@ Teknoloji: FastAPI, SQLAlchemy 2.0, Pydantic v2, SQLite (üretimde PostgreSQL),
 APScheduler, Anthropic Claude API, Stripe.
 
 Ayrıntı: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+---
+
+## KVKK ve veri işleme
+
+`/kvkk` adresinde aydınlatma metni yayında. Metindeki **veri envanteri
+uygulamanın kendi veritabanı şemasından çıkarıldı** — hangi alanın nerede
+tutulduğu tablo tablo yazılı, dolayısıyla kod değiştikçe metnin de
+güncellenmesi gerekir.
+
+Metin **henüz yayına hazır değil**: ticaret unvanı, adres, VERBİS kaydı ve
+başvuru kanalı `DOLDURULACAK` olarak işaretli; şirket kuruluşu tamamlanmadan
+doldurulamaz.
+
+Metin yazılırken ortaya çıkan ve kapatılması gereken iki nokta
+([DEPLOYMENT.md](DEPLOYMENT.md) engeller tablosunda da listeli):
+
+- **İKAS OAuth token'ları şifresiz saklanıyor** (`ikas_baglanti.access_token`,
+  `.refresh_token`). Bu anahtarlar kullanıcının mağaza verisine erişim sağlar.
+  Entegrasyon şu an mock modda; gerçek bağlantı açılmadan önce şifrelenmeli.
+- **Yurt dışına aktarım için açık rıza alınmıyor.** `/api/sor` çağrısında
+  işletme profili (sektör, ciro, arazi, hedefler) Anthropic'e gönderiliyor.
+  Ad ve e-posta gönderilmiyor ama bu yine de yurt dışına aktarım sayılır.
 
 ---
 

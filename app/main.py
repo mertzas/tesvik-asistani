@@ -594,6 +594,18 @@ def index():
     return FileResponse(os.path.join(STATIC_DIR, "index.html"))
 
 
+@app.get("/kvkk")
+def kvkk_aydinlatma():
+    """KVKK aydınlatma metni.
+
+    Veri envanteri uygulamanın kendi şemasından çıkarıldı; şirket bilgileri
+    (unvan, adres, VERBİS) sayfada DOLDURULACAK olarak işaretli - şirket
+    kuruluşu tamamlanmadan doldurulamaz ve o alanlar dolmadan metin
+    yayına hazır değildir.
+    """
+    return FileResponse(os.path.join(STATIC_DIR, "kvkk.html"))
+
+
 @app.get("/dashboard")
 def dashboard():
     return FileResponse(os.path.join(STATIC_DIR, "dashboard.html"))

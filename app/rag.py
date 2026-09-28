@@ -479,7 +479,16 @@ def _ollama_cevap(query: str, matches: list[Tesvik]) -> str | None:
         return None
 
 
-def answer(query: str, profil: dict | None = None) -> str:
+def answer(query: str, profil: dict | None = None,
+           llm_kullan: bool = True) -> str:
+    """Soruya yanit uretir.
+
+    llm_kullan=False ise HICBIR dis LLM cagrisi yapilmaz ve yalnizca
+    veritabanindaki kayitlarin liste formati doner. Bunun sebebi KVKK:
+    yapay zeka cagrisi isletme profilini VE sorunun metnini Anthropic'e
+    (ABD) gonderiyor; bu yurt disina aktarimdir ve acik riza gerektirir.
+    Riza yoksa cagri hic yapilmaz (bkz. app/main.py sor()).
+    """
     matches = retrieve(query)
 
     if not matches:
@@ -491,11 +500,12 @@ def answer(query: str, profil: dict | None = None) -> str:
             "bakabilirsiniz."
         )
 
-    claude_cevap = _claude_cevap(query, matches, profil)
-    if claude_cevap is not None:
-        return claude_cevap
+    if llm_kullan:
+        claude_cevap = _claude_cevap(query, matches, profil)
+        if claude_cevap is not None:
+            return claude_cevap
 
-    if OLLAMA_ETKIN:
+    if llm_kullan and OLLAMA_ETKIN:
         llm_cevap = _ollama_cevap(query, matches)
         if llm_cevap is not None:
             return llm_cevap

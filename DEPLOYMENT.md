@@ -19,8 +19,6 @@ kapatılmadan ödeme alan bir servis olarak yayına verilmemeli.
 |---|---|---|
 | ⛔ | **Hız sınırlama sayaçları süreç içi** | `app/rate_limit.py` sayaçları RAM'de tutar. `--workers 2` ile her işçi kendi sayacını tutar, gerçek limit iki katına çıkar. Çok işçili dağıtımda Redis'e taşınmalı. |
 | ⛔ | **KVKK aydınlatma metni yayına hazır değil** | Metin yazıldı ve `/kvkk` adresinde yayında; veri envanteri kodun şemasından çıkarıldı ve doğru. Ancak ticaret unvanı, adres, VERBİS kaydı ve başvuru kanalı `DOLDURULACAK` işaretli — şirket kuruluşu tamamlanmadan doldurulamaz ve bu alanlar dolmadan aydınlatma yükümlülüğü karşılanmaz. |
-| ⛔ | **İKAS OAuth token'ları şifresiz saklanıyor** | `ikas_baglanti.access_token` / `.refresh_token` veritabanında açık metin. Bu anahtarlar kullanıcının mağaza verisine erişim sağlar; veritabanı yedeğine erişen biri kullanabilir. Entegrasyon şu an mock modda, gerçek bağlantı açılmadan önce şifrelenmeli. |
-| ⚠️ | **Yapay zekâ için yurt dışına aktarım açık rızası alınmıyor** | `/api/sor` çağrısında işletme profili (sektör, ciro, arazi, hedefler) Anthropic'e (ABD) gönderiliyor. Ad/e-posta gönderilmiyor ama bu yine de yurt dışına aktarım; KVKK açık rıza ister. Kayıt akışına onay kutusu eklenmeli. |
 | ⛔ | **Stripe test modunda** | `sk_test_` anahtarlarıyla çalışıyor; canlı anahtar ve webhook imza doğrulaması üretimde teyit edilmeli. |
 | ⚠️ | **93 teşvik kaydının açık/kapalı durumu doğrulanamadı** (181 kaydın) | `scripts.verify_aktiflik` ile 88 kayıt doğrulandı; kalanlarda kurum sayfası yüksek güvenli bir durum ifadesi taşımıyor, doğrulayıcı bilerek karar vermiyor. Bu kayıtlarda AI danışman "kurumun sayfasından teyit edin" uyarısı basıyor. |
 | ⚠️ | **127 kayıtta başvuru şartları eksik** (181 kaydın) | `scripts.extract_basvuru_sartlari` ile 19 → 54 kayda şart yazıldı (KOSGEB, TÜBİTAK ve 9903 programları). Kalanların çoğu KGF kredi ürünü; kurum sayfalarında ayrı bir şart bölümü yok. |
@@ -30,6 +28,8 @@ kapatılmadan ödeme alan bir servis olarak yayına verilmemeli.
 | ⚠️ | **Hata izleme yok** | Günlükler dosyaya/konsola yazılıyor, merkezî bir hata toplayıcı (Sentry vb.) bağlı değil. |
 
 Kapatılmış olanlar (referans): şema sürümleme (Alembic), hız sınırlama,
+İKAS token'larının şifrelenmesi, yapay zekâ için yurt dışına aktarım
+açık rızası (varsayılan kapalı, geri alınabilir),
 merkezî günlükleme, veri tazeliği göstergesi, otomatik veri tazeleme,
 üretim bağımlılıklarının doğruluğu, destek tutarı hesaplayıcıları (9903 ve 2026 tarım), aktiflik ve kaynak linki doğrulayıcıları.
 

@@ -5,6 +5,10 @@ from uuid import uuid4
 from sqlalchemy import Column, Integer, String, Text, DateTime, Date, create_engine, ForeignKey, Enum as SQLEnum, JSON, Boolean, Float
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
+
+# app.sifreleme, settings'i FONKSIYON ICINDE ice aktarir; bu yuzden
+# burada modul seviyesinde almak dongusel import yaratmaz.
+from app.sifreleme import SifreliMetin
 from pydantic_settings import BaseSettings
 
 class Settings(BaseSettings):
@@ -71,6 +75,18 @@ class Organization(Base):
     stripe_subscription_id = Column(String, nullable=True)
     is_active = Column(Boolean, default=True)
     webhook_url = Column(String, nullable=True)
+
+    # KVKK: yapay zeka danismani kullanildiginda isletme profili (sektor,
+    # bolge, calisan sayisi, ciro, hedefler, tarim kategorisi, urun turu,
+    # arazi buyuklugu) yanit uretilmesi icin Anthropic'e (ABD) gonderiliyor.
+    # Bu YURT DISINA AKTARIM'dir ve acik riza gerektirir.
+    #
+    # Riza KAYIT SIRASINDA ZORUNLU TUTULMUYOR: KVKK acik rizanin "ozgur
+    # iradeyle" verilmesini arar, hizmete erisimin sartina baglanamaz.
+    # Riza yoksa uygulama calismaya devam eder, yalnizca AI danisman yerine
+    # liste formati kullanilir (bkz. app/main.py sor()).
+    ai_yurtdisi_riza = Column(Boolean, default=False)
+    ai_riza_tarihi = Column(DateTime, nullable=True)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), index=True)
     updated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
 
@@ -268,8 +284,14 @@ class IkasBaglanti(Base):
     org_id = Column(UUID(as_uuid=True), ForeignKey("organizations.id"), unique=True, index=True)
 
     store_name = Column(String, nullable=False)  # "{storeName}.myikas.com" - alt alan adi
-    access_token = Column(String, nullable=True)
-    refresh_token = Column(String, nullable=True)
+    # SIFRELI sutunlar: bu iki anahtar kullanicinin magaza verisine erisim
+    # saglar ve veritabaninda ACIK METIN duruyordu (KVKK metni yazilirken
+    # tespit edildi, 2026-09-27). SifreliMetin diskte sifreli tutar,
+    # uygulama kodu duz metin gorur - boylece bir cagri yerinde sifrelemeyi
+    # unutmak mumkun degil. Mevcut sifresiz kayitlar icin:
+    # scripts/sifrele_mevcut_tokenlar.py
+    access_token = Column(SifreliMetin, nullable=True)
+    refresh_token = Column(SifreliMetin, nullable=True)
     token_expires_at = Column(DateTime, nullable=True)
     scope = Column(String, nullable=True)  # "read_orders read_products" gibi bosluk ayrilmis
 

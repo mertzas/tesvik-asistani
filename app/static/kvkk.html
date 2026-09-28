@@ -67,7 +67,7 @@
 <a class="ust-baglanti" href="/">&larr; Teşvik Asistanı</a>
 
 <h1>Kişisel Verilerin Korunması Hakkında Aydınlatma Metni</h1>
-<p class="tarih">Son güncelleme: 27.09.2026</p>
+<p class="tarih">Son güncelleme: 28.09.2026</p>
 
 <div class="eksik">
   <strong>BU METİN HENÜZ YAYINA HAZIR DEĞİL.</strong> Aşağıdaki
@@ -144,14 +144,11 @@
   <tr><td>Son senkronizasyon zamanı ve hata bilgisi</td><td><code>ikas_baglanti.son_senkron_zamani</code>, <code>.son_senkron_hata</code></td></tr>
 </table></div>
 
-<div class="eksik">
-  <strong>Açıkça belirtilmesi gereken mevcut eksik:</strong> İKAS erişim ve
-  yenileme anahtarları veritabanında <strong>şifrelenmeden</strong>
-  saklanmaktadır. Bu anahtarlar mağaza verinize erişim sağlar. Veritabanı
-  yedeğine erişebilen birinin bu anahtarları kullanabilmesi mümkündür.
-  Entegrasyon şu anda üretim kimlik bilgileri üretilmemiş olduğu için
-  <em>mock</em> modda çalışmaktadır; gerçek bağlantı açılmadan önce bu
-  alanların şifrelenmesi gerekir.
+<div class="kutu">
+  <strong>Bu anahtarlar şifreli saklanır.</strong> İKAS erişim ve yenileme
+  anahtarları veritabanına şifrelenerek yazılır; veritabanı yedeğine erişen
+  biri bunları doğrudan kullanamaz. (Bu, 27.09.2026'da tespit edilen bir
+  eksikti ve giderildi — daha önce açık metin saklanıyordu.)
 </div>
 
 <h2>3. İşleme Amaçları ve Hukuki Sebep</h2>
@@ -181,7 +178,17 @@
 
 <h2>4. Yurt Dışına Aktarım</h2>
 <div class="uyari">
-  <strong>Yapay zekâ danışmanını kullandığınızda</strong> sorunuzla birlikte
+  <strong>Bu aktarım açık rızanıza bağlıdır ve varsayılan olarak
+  KAPALIDIR.</strong> Rıza vermezseniz yapay zekâ çağrısı <em>hiç
+  yapılmaz</em> — ne profiliniz ne de sorunuzun metni gönderilir; yanıtlar
+  yalnızca veritabanındaki teşvik kayıtlarından üretilir. Rızayı istediğiniz
+  zaman verebilir ve <strong>istediğiniz zaman geri alabilirsiniz</strong>;
+  geri aldığınızda aktarım anında durur. Hizmetin geri kalanı her iki
+  durumda da çalışmaya devam eder.
+</div>
+
+<div class="uyari">
+  <strong>Rıza verdiğinizde</strong> sorunuzla birlikte
   işletme profiliniz — <em>sektör, bölge, çalışan sayısı, yıllık ciro,
   hedefler, tarım kategorisi, ürün türü, arazi büyüklüğü</em> — yanıt
   üretilmesi için <strong>Anthropic</strong> (ABD) tarafından işletilen Claude
@@ -228,6 +235,9 @@
   <li>Düzeltme/silme işlemlerinin aktarılan üçüncü kişilere bildirilmesini isteme</li>
   <li>Otomatik sistemlerle analiz sonucu aleyhinize bir sonuç doğmasına itiraz etme</li>
   <li>Hukuka aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
+  <li><strong>Verdiğiniz açık rızayı geri alma</strong> — yapay zekâ için
+      yurt dışına aktarım rızası uygulamadan anında kapatılabilir
+      (<code>POST /api/organizations/ai-riza</code>, <code>{"riza": false}</code>)</li>
 </ul>
 <p>
   Başvurularınızı <span class="doldur">DOLDURULACAK</span> adresine
@@ -263,6 +273,8 @@
   <li>Pahalı uç noktalarda hız sınırlaması uygulanır.</li>
   <li>Günlük kayıtlarında istek gövdesi basılmaz; yapay zekâ isteklerinin
       içeriği (dolayısıyla profil verisi) günlüğe yazılmaz.</li>
+  <li>İKAS erişim/yenileme anahtarları veritabanına şifrelenerek yazılır.</li>
+  <li>Yapay zekâ çağrısı açık rıza olmadan yapılmaz.</li>
 </ul>
 <p>
   Bilinen eksikler yukarıda bölüm 2'de (İKAS anahtarlarının şifresiz

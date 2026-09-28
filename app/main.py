@@ -37,6 +37,7 @@ from app.schemas import (
     OrganizationResponse,
     PlanUpgrade,
     QueryResponse,
+    AiRizaGuncelle,
     UsageStats,
     AnalyticsResponse,
     FinancialProfileCreate,
@@ -136,6 +137,9 @@ def signup(request: UserSignup, db: Session = Depends(get_db)):
     org = Organization(
         name=request.company_name,
         email=request.email,
+        ai_yurtdisi_riza=request.ai_yurtdisi_riza,
+        ai_riza_tarihi=(datetime.now(timezone.utc)
+                        if request.ai_yurtdisi_riza else None),
     )
     db.add(org)
     db.flush()
@@ -218,9 +222,14 @@ def sor(
     try:
         # Kullanıcının doldurduğu finansal profil varsa, Claude'a bağlam
         # olarak veriyoruz - "Durum Analizi" başlığı bunsuz jenerik kalır.
+        # KVKK: acik riza YOKSA profil Anthropic'e gonderilmez ve LLM hic
+        # cagrilmaz - sorunun METNI de kisisel veridir. Kullanici yine
+        # bos ekran gormez; gercek kayitlarin liste formatini alir.
+        riza_var = bool(current_org.ai_yurtdisi_riza)
+
         profil_row = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
         profil = None
-        if profil_row is not None:
+        if riza_var and profil_row is not None:
             profil = {
                 "sektör": profil_row.sektor,
                 "bölge": profil_row.bolge,
@@ -234,7 +243,17 @@ def sor(
             }
 
         # Mevcut RAG sistemini çalıştır
-        answer_text = answer(request.question, profil)
+        answer_text = answer(request.question, profil, llm_kullan=riza_var)
+        if not riza_var:
+            answer_text += (
+                "\n\n---\n"
+                "*Yapay zekâ danışmanı kapalı: bu yanıt yalnızca "
+                "veritabanındaki kayıtlardan üretildi. AI destekli yorum için "
+                "işletme profilinizin Anthropic'e (ABD) aktarılmasına açık "
+                "rıza vermeniz gerekiyor - `POST /api/organizations/ai-riza` "
+                "ile açabilir, istediğiniz zaman geri alabilirsiniz. "
+                "Ayrıntı: /kvkk*"
+            )
 
         # Gosterilecek kayitlar, AI danismanin gordugu kayitlarin AYNISI olmali.
         #
@@ -499,6 +518,35 @@ def downgrade_plan(
 
 
 # ============ ANALYTICS ENDPOINTS ============
+
+@app.post("/api/organizations/ai-riza", response_model=dict,
+          dependencies=[Depends(org_hiz_siniri(10))])
+def ai_riza_guncelle(
+    request: AiRizaGuncelle,
+    current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
+):
+    """Yapay zekâ danışmanı için yurt dışına aktarım rızasını ver/geri al.
+
+    KVKK açık rızası her zaman GERİ ALINABİLİR olmalıdır; bu uç nokta
+    rızayı kapatmak için de kullanılır. Rıza kapatıldığında /api/sor
+    Anthropic'e hiçbir şey göndermez, liste formatına döner.
+    """
+    current_org.ai_yurtdisi_riza = request.riza
+    current_org.ai_riza_tarihi = datetime.now(timezone.utc) if request.riza else None
+    db.commit()
+    return {
+        "ai_yurtdisi_riza": current_org.ai_yurtdisi_riza,
+        "tarih": (current_org.ai_riza_tarihi.isoformat()
+                  if current_org.ai_riza_tarihi else None),
+        "mesaj": ("Açık rıza alındı; yapay zekâ danışmanı etkin."
+                  if request.riza else
+                  "Rıza geri alındı; işletme profiliniz artık yurt dışına "
+                  "aktarılmayacak. Yanıtlar veritabanı kayıtlarından "
+                  "üretilecek."),
+        "aydinlatma_metni": "/kvkk",
+    }
+
 
 @app.get("/api/analytics/usage", response_model=AnalyticsResponse)
 def get_usage_stats(

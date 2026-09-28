@@ -104,8 +104,13 @@ def _claude_cagirma(monkeypatch, request):
     if request.node.get_closest_marker("canli_llm"):
         return
 
-    def _sahte_cevap(soru, profil=None):
-        return (f"[test] '{soru[:40]}' sorusu için örnek yanıt. "
+    def _sahte_cevap(soru, profil=None, llm_kullan=True):
+        # Imza app.rag.answer ile AYNI kalmali; aksi halde uc nokta
+        # TypeError alip 500 doner ve testler gercek hatayi degil imza
+        # uyusmazligini bildirir (bu bir kez oldu: llm_kullan parametresi
+        # eklendiginde 4 test 500 ile dustu).
+        return (f"[test] '{soru[:40]}' sorusu için örnek yanıt "
+                f"(llm_kullan={llm_kullan}). "
                 "Bu metin testte üretildi, Claude API çağrılmadı.")
 
     # app/main.py `from app.rag import answer` ile içe aktardığı için

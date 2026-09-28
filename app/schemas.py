@@ -11,6 +11,16 @@ class UserSignup(BaseModel):
     password: str = Field(..., min_length=8)
     full_name: str
     company_name: str
+    # KVKK acik rizasi - ZORUNLU DEGIL. Verilmezse hesap yine acilir, AI
+    # danisman yerine liste formati kullanilir (bkz. app/main.py sor()).
+    ai_yurtdisi_riza: bool = Field(
+        False,
+        description="Yapay zeka danismani icin isletme profilinin "
+                    "Anthropic'e (ABD) aktarilmasina acik riza")
+
+
+class AiRizaGuncelle(BaseModel):
+    riza: bool = Field(..., description="true: riza ver, false: rizayi geri al")
 
 
 class UserLogin(BaseModel):

@@ -117,7 +117,7 @@ başına yeterli değildir.
 pytest
 ```
 
-308 test; `tests/conftest.py` her test için bellek içi SQLite kurup düşürür,
+341 test; `tests/conftest.py` her test için bellek içi SQLite kurup düşürür,
 yerel veritabanınıza dokunmaz.
 
 Şema ile modellerin uyumunu kontrol etmek için:
@@ -254,6 +254,7 @@ hiçbir şey yazmaz.
 | `scripts.extract_basvuru_sartlari` | Başvuru şartlarını kurumun sayfasından çıkarır |
 | `scripts.backfill_tutar_niteligi` | Tutarın hibe mi kredi mi olduğunu işaretler |
 | `scripts.backfill_tarim_tutar_2026` | Tarım kayıtlarına 2026 birim fiyatlarını yazar |
+| `scripts.sifrele_mevcut_tokenlar` | Veritabanındaki açık metin İKAS token'larını şifreler |
 
 **Ortak tasarım kararı: emin olunamıyorsa karar verilmez.** Doğrulayıcılar
 yalnızca yüksek güvenli, cümle düzeyinde kalıplarla karar verir; kalıp
@@ -295,15 +296,21 @@ Metin **henüz yayına hazır değil**: ticaret unvanı, adres, VERBİS kaydı v
 başvuru kanalı `DOLDURULACAK` olarak işaretli; şirket kuruluşu tamamlanmadan
 doldurulamaz.
 
-Metin yazılırken ortaya çıkan ve kapatılması gereken iki nokta
-([DEPLOYMENT.md](DEPLOYMENT.md) engeller tablosunda da listeli):
+Metin yazılırken iki uyum açığı ortaya çıktı; **ikisi de kapatıldı**:
 
-- **İKAS OAuth token'ları şifresiz saklanıyor** (`ikas_baglanti.access_token`,
-  `.refresh_token`). Bu anahtarlar kullanıcının mağaza verisine erişim sağlar.
-  Entegrasyon şu an mock modda; gerçek bağlantı açılmadan önce şifrelenmeli.
-- **Yurt dışına aktarım için açık rıza alınmıyor.** `/api/sor` çağrısında
-  işletme profili (sektör, ciro, arazi, hedefler) Anthropic'e gönderiliyor.
-  Ad ve e-posta gönderilmiyor ama bu yine de yurt dışına aktarım sayılır.
+- **İKAS token'ları artık şifreli saklanıyor.** `ikas_baglanti.access_token`
+  ve `.refresh_token` açık metin duruyordu. Şifreleme çağrı yerlerinde değil
+  SQLAlchemy sütun tipinde yapılıyor ([app/sifreleme.py](app/sifreleme.py)),
+  böylece ileride eklenecek bir çağrı yerinde unutulması mümkün değil.
+  Mevcut şifresiz kayıtlar için: `python -m scripts.sifrele_mevcut_tokenlar`.
+- **Yurt dışına aktarım artık açık rızaya bağlı ve varsayılan KAPALI.**
+  Rıza yoksa `/api/sor` Anthropic'e hiçbir şey göndermez — profil de,
+  sorunun metni de. Kullanıcı liste formatında yanıt alır ve neden AI
+  yanıtı almadığı kendisine söylenir. Rıza `POST /api/organizations/ai-riza`
+  ile verilir ve **her zaman geri alınabilir**.
+
+  Rıza kayıt sırasında zorunlu tutulmuyor: KVKK açık rızanın özgür iradeyle
+  verilmesini arar, hizmete erişimin şartına bağlanamaz.
 
 ---
 

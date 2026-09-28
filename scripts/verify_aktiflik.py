@@ -98,6 +98,10 @@ DONEM_TARIHI = re.compile(
 KARARSIZ_KALIPLARI = (
     r"başvuru\s+sonuçlar[ıi]\s+aç[ıi]kland[ıi]",
     r"değerlendirme\s+sürecí?\s+devam",
+    # TUBITAK sayfalarinda sik gorulen "13. ÇAĞRISI SONUÇLANDI!" gibi
+    # ifadeler o DONEMIN bittigini soyler, programin TAMAMEN kapandigini
+    # degil - yeni bir cagri acilabilir. "Kapali" ile karistirilmamali.
+    r"çağr[ıi]s[ıi]\s+sonuçland[ıi]",
 )
 
 # KGF urun sayfalarinda genellikle acik/kapali diyen bir cumle HIC gecmiyor

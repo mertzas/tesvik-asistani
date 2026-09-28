@@ -213,3 +213,11 @@ def test_kgf_diger_kategorilerde_breadcrumb_karar_vermez():
 
 def test_breadcrumb_yoksa_karar_vermez():
     assert _degerlendir("Ürün Açıklaması ... Özel Şartlar ...")[0] == "kararsiz"
+
+
+def test_cagrisi_sonuclandi_kararsiz_sayilir():
+    """"X. Çağrısı Sonuçlandı!" o DÖNEMİN bittiğini söyler, programın
+    TAMAMEN kapandığını değil - yeni bir çağrı açılabilir."""
+    karar, kanit, _ = _degerlendir("4005 YENİLİKÇİ EĞİTİM UYGULAMALARI 13. ÇAĞRISI SONUÇLANDI!")
+    assert karar == "kararsiz"
+    assert kanit

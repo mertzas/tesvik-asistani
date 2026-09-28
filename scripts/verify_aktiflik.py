@@ -100,6 +100,26 @@ KARARSIZ_KALIPLARI = (
     r"değerlendirme\s+sürecí?\s+devam",
 )
 
+# KGF urun sayfalarinda genellikle acik/kapali diyen bir cumle HIC gecmiyor
+# (urun sayfasi sadece sart/oran anlatir). Ama "Hazine Destekli Kefaletler"
+# kategorisindeki urunlerin BREADCRUMB'inda (sayfa basindaki "Buradasınız:
+# Anasayfa / ... / X >" gezinme cubugu) kategori acikca yaziyor:
+#   "Buradasınız: ... / Hazine Destekli Kefaletler / Aktif Destek Paketleri > / Ürün Adı"
+#   "Buradasınız: ... / Hazine Destekli Kefaletler / Geçmiş Programlar > / Ürün Adı"
+# Bu, sayfanin SOL MENUSUNDEN (tekrarlayan, sayfa icerigini de yutan)
+# cok daha guvenilir bir sinyal: breadcrumb sayfada TEK YER geciyor ve
+# dogrudan urunun kendisinden hemen once geliyor. Sol menu tabanli bir
+# deneme (kelime kumesi ortusmesi) YANLIS SONUC uretmisti: menu footer'da
+# tekrarlaniyor ve son tekrar sayfa icerigini de kendi icine aliyordu, bu
+# yuzden o yontem terk edildi (bkz. git log). Breadcrumb bu sorunu tasimiyor.
+# Yalnizca "Hazine Destekli Kefaletler" alt kategorisi bu ayrimi tasiyor;
+# digerlerinde (KOSGEB Destekli Kefaletler, Ozkaynak Kefaletlerimiz vb.)
+# eslesme bulunmaz ve kararsiz kalinir - bu dogru davranistir, tahmin
+# ETMEK yerine.
+KGF_BREADCRUMB_KATEGORI = re.compile(
+    r"Buradasınız:.*?(Aktif Destek Paketleri|Geçmiş Programlar)\s*>\s*/",
+    re.S)
+
 
 @dataclass
 class Sonuc:
@@ -221,6 +241,16 @@ def _degerlendir(metin: str, bugun: date | None = None) -> tuple[str, str, str]:
             return ("kararsiz", _kanit(metin, m),
                     "Yalnızca sonuç/değerlendirme duyurusu var; programın açık "
                     "olup olmadığı anlaşılmıyor.")
+
+    bc = KGF_BREADCRUMB_KATEGORI.search(metin)
+    if bc:
+        if bc.group(1) == "Geçmiş Programlar":
+            return ("kapali", _kanit(metin, bc),
+                    "KGF sayfa gezinme çubuğunda (breadcrumb) bu ürün "
+                    "'Geçmiş Programlar' kategorisinde.")
+        return ("acik", _kanit(metin, bc),
+                "KGF sayfa gezinme çubuğunda (breadcrumb) bu ürün "
+                "'Aktif Destek Paketleri' kategorisinde.")
 
     return ("kararsiz", "", "Sayfada aktiflik hakkında yüksek güvenli bir "
                             "ifade bulunamadı.")

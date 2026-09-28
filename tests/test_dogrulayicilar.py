@@ -177,3 +177,39 @@ def test_basliksiz_sayfa_kapali_saymaz():
         "Programın Amacı İşletmelerin rekabet gücünü artırmaktır. "
         "Başvuru Şartları KOSGEB Veri Tabanında kayıtlı olmak.")
     assert karar == "kararsiz"
+
+
+# --------------------------- KGF breadcrumb tabanlı kategori (Hazine Destekli)
+
+def test_kgf_gecmis_programlar_breadcrumb_kapali():
+    """KGF ürün sayfalarında açık/kapalı diyen bir cümle genelde hiç
+    geçmiyor; gezinme çubuğundaki (breadcrumb) kategori kullanılıyor."""
+    metin = ("Buradasınız: Anasayfa / Ürünlerimiz / Hazine Destekli "
+             "Kefaletler / Geçmiş Programlar > / Soğuk Hava Ünitesi Ve "
+             "Frigorifik Araçlar Destek Paketi Ürün Açıklaması ...")
+    karar, kanit, ayrinti = _degerlendir(metin)
+    assert karar == "kapali"
+    assert kanit
+
+
+def test_kgf_aktif_destek_paketleri_breadcrumb_acik():
+    metin = ("Buradasınız: Anasayfa / Ürünlerimiz / Hazine Destekli "
+             "Kefaletler / Aktif Destek Paketleri > / Yatırım-İşletme "
+             "Destek Paketi Ürün Açıklaması ...")
+    karar, _, _ = _degerlendir(metin)
+    assert karar == "acik"
+
+
+def test_kgf_diger_kategorilerde_breadcrumb_karar_vermez():
+    """"KOSGEB Destekli Kefaletler" gibi diğer alt kategorilerde bu ayrım
+    yok; tahmin etmek yerine kararsız kalınmalı."""
+    metin = ("Buradasınız: Anasayfa / Ürünlerimiz / KOSGEB Destekli "
+             "Kefaletler / Kapasite Geliştirme Destek Paketi "
+             "Ürün Açıklaması İşletmelerin verimliliğini artırmaya "
+             "yönelik finansman desteği sağlanması amaçlanmaktadır.")
+    karar, _, _ = _degerlendir(metin)
+    assert karar == "kararsiz"
+
+
+def test_breadcrumb_yoksa_karar_vermez():
+    assert _degerlendir("Ürün Açıklaması ... Özel Şartlar ...")[0] == "kararsiz"

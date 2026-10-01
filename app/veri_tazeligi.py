@@ -166,7 +166,10 @@ def _yas_gun(deger: datetime | date | None) -> int | None:
             deger = deger.replace(tzinfo=timezone.utc)
         return max(0, (_simdi() - deger).days)
     if isinstance(deger, date):
-        return max(0, (_simdi().date() - deger).days)
+        # Bu alanlar date.today() (yerel takvim gunu) ile yaziliyor; UTC
+        # "simdi"nin tarihiyle kiyaslamak gece yarisina yakin anlarda
+        # (yerel ileri, UTC hala onceki gun) yasi 1 gun az gosterirdi.
+        return max(0, (date.today() - deger).days)
     return None
 
 

@@ -304,3 +304,12 @@ def test_gitignore_app_data_dizinini_dislamiyor():
     assert "data/" not in satirlar, (
         'Çıplak "data/" kalıbı app/data/ dizinini de dışlar; "/data/" kullanın.'
     )
+
+
+def test_alt_kod_ust_duzey_ek3_satirina_baglanir():
+    """GERÇEK OLAY: EK-3 "13" (bölüm) ve "55.1" (grup) satırlarını ust
+    duzeyde listeliyor; 13.20.01 ve 55.10.01 "desteklenmiyor" cikiyordu."""
+    for kod, ust in (("13.20.01", "13"), ("55.10.01", "55.1"), ("55.10", "55.1")):
+        assert nace_destekleniyor_mu(kod), kod
+        assert ek3_kaydi(kod)["kod"] == ust
+    assert not nace_destekleniyor_mu("47.11")

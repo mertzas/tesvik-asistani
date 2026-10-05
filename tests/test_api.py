@@ -123,3 +123,18 @@ def test_sor_endpoint_tarih_iceren_kayitla_cokmez(client, test_user_token, db_se
                     headers={"Authorization": f"Bearer {test_user_token}"})
     assert r.status_code == 200, r.text
     assert "not JSON serializable" not in r.text
+
+
+def test_stripe_webhook_secretsiz_kapali(client, monkeypatch):
+    """Imza dogrulanamayan webhook org'u PRO yapamamali."""
+    from app.main import settings
+    monkeypatch.setattr(settings, "STRIPE_WEBHOOK_SECRET", "")
+    r = client.post("/api/webhooks/stripe", json={
+        "type": "checkout.session.completed",
+        "data": {"object": {"client_reference_id": "x", "metadata": {"plan": "pro"}}}})
+    assert r.status_code == 503
+
+
+def test_9903_hesap_taninmayan_il_422(client):
+    r = client.get("/api/nace/9903-hesap", params={"il": "Atlantis", "sabit_yatirim_tl": 1e7})
+    assert r.status_code == 422

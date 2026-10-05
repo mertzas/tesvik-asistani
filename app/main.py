@@ -595,7 +595,7 @@ def get_query_history(
 
 @app.post("/api/webhooks/stripe")
 async def stripe_webhook(request: Request, db: Session = Depends(get_db)):
-    """Stripe webhooks. STRIPE_WEBHOOK_SECRET ayarlıysa imza doğrulanır."""
+    """Stripe webhooks. İmza doğrulaması zorunlu; secret yoksa endpoint kapalıdır."""
     payload = await request.body()
     sig_header = request.headers.get("stripe-signature")
 
@@ -605,7 +605,12 @@ async def stripe_webhook(request: Request, db: Session = Depends(get_db)):
         except (ValueError, stripe.error.SignatureVerificationError):
             raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Geçersiz webhook imzası")
     else:
-        event = json.loads(payload)
+        # Imza dogrulanamayan webhook'a guvenilmez: secret yokken herkes
+        # sahte checkout.session.completed ile org'u PRO yapabilirdi.
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="Stripe webhook kapalı: STRIPE_WEBHOOK_SECRET tanımlı değil",
+        )
 
     handle_webhook(event, db)
     return {"status": "ok"}
@@ -780,7 +785,7 @@ def nace_uygunluk(
 @app.get("/api/nace/9903-hesap", dependencies=[Depends(ip_hiz_siniri(20))])
 def nace_9903_hesap(
     il: str = SorguParam(..., max_length=40),
-    sabit_yatirim_tl: float = SorguParam(..., gt=0,
+    sabit_yatirim_tl: float = SorguParam(..., gt=0, le=1e12,
         description="Teşvik belgesine kaydedilecek sabit yatırım tutarı"),
     program: str | None = SorguParam(None,
         description="Tek program için; boş bırakılırsa beşi karşılaştırılır"),
@@ -801,6 +806,11 @@ def nace_9903_hesap(
     TCMB repo oranı veritabanındaki makro göstergeden alınır; yoksa faiz
     desteği hesaplanmaz ve eksik bilgi olarak bildirilir.
     """
+    if il_bolgesi(il) is None:
+        raise HTTPException(
+            status_code=status.HTTP_422_UNPROCESSABLE_ENTITY,
+            detail=f"'{il}' tanınan bir il adı değil; bölge belirlenemedi.",
+        )
     repo = None
     satir = db.query(MacroIndicator).filter(
         MacroIndicator.anahtar == "tcmb_politika_faizi").first()

@@ -178,17 +178,26 @@ def _tl(x: float) -> str:
     return f"{x:,.2f} TL".replace(",", "X").replace(".", ",").replace("X", ".")
 
 
+_ASCII = str.maketrans("çğıöşü", "cgiosu")
+
+
+def _katla(x: str) -> str:
+    """Kucult + aksansiz: klavyesinde Turkce karakter olmayan kullanici
+    ("bugday", "findik") resmi tablodaki "buğday"/"fındık" ile eslessin."""
+    return kucult(x).translate(_ASCII)
+
+
 def _urun_eslesir_mi(urun: str, liste: tuple[str, ...]) -> bool:
     """Ürün adı listedeki bir kalemle eşleşiyor mu?
 
     kucult() kullanılıyor; Python'un str.lower()'i "MISIR" gibi büyük harfli
     girdiyi bozuyor (bkz. urun_sektor_anahtarlari.kucult).
     """
-    u = kucult(urun).strip()
+    u = _katla(urun).strip()
     if not u:
         return False
     for kalem in liste:
-        k = kucult(kalem)
+        k = _katla(kalem)
         # YALNIZCA "liste kalemi kullanıcı metninin içinde mi" yönü. Ters yön
         # (kullanıcı metni liste kaleminin içinde mi) yanlış kategori veriyordu:
         # düz "soya" 3. kategoridir (katsayı 1,5) ama ters yön onu 2. kategorideki

@@ -44,6 +44,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import re
 from dataclasses import dataclass, field
 
 from app.urun_sektor_anahtarlari import kucult
@@ -289,10 +290,19 @@ def kaynak_bilgisi() -> dict:
 
 def ek3_kaydi(nace_kodu: str) -> dict | None:
     kod = (nace_kodu or "").strip()
-    for k in ek3_kayitlari():
+    kayitlar = ek3_kayitlari()
+    for k in kayitlar:
         if k.get("kod") == kod:
             return k
-    return None
+    # EK-3 bazi satirlari ust duzeyde (bolum 13, grup 55.1) listeler; alt
+    # kodlar (13.20.01, 55.10.01) o satirin kapsamindadir. En uzun ust kodu al.
+    rakamlar = re.sub(r"\D", "", kod)
+    en_iyi, en_iyi_uzunluk = None, 0
+    for k in kayitlar:
+        ust = re.sub(r"\D", "", k.get("kod", ""))
+        if len(ust) >= 2 and len(ust) > en_iyi_uzunluk and rakamlar.startswith(ust):
+            en_iyi, en_iyi_uzunluk = k, len(ust)
+    return en_iyi
 
 
 def nace_destekleniyor_mu(nace_kodu: str) -> bool:

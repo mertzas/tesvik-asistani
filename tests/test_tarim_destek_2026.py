@@ -350,3 +350,12 @@ def test_turkce_ek_almis_urun_adi_taninir():
     from app.tarim_destek_2026 import TEMEL_DESTEK_KATEGORILERI, _kategori_bul
     assert _kategori_bul("buğdayım", TEMEL_DESTEK_KATEGORILERI) == (2, 1.3)
     assert _kategori_bul("pamuğu", TEMEL_DESTEK_KATEGORILERI) is None or True
+
+
+def test_aksansiz_urun_adi_dogru_kategoriye_gider():
+    """GERÇEK OLAY: "bugday" yazan kullanıcıya "Diğer ürünler" (46.500 TL)
+    veriliyordu; "buğday" ise 120.900 TL. Klavyesinde Türkçe karakter olmayan
+    kullanıcı üç kat eksik tutar görüyordu."""
+    from app.tarim_destek_2026 import hesapla
+    assert hesapla("bugday", 150).toplam_tl == hesapla("buğday", 150).toplam_tl
+    assert hesapla("findik", 10).toplam_tl == hesapla("fındık", 10).toplam_tl

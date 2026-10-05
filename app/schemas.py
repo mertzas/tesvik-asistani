@@ -2,7 +2,7 @@ from datetime import datetime
 from typing import Optional, List
 from uuid import UUID
 
-from pydantic import BaseModel, EmailStr, Field
+from pydantic import BaseModel, EmailStr, Field, field_validator
 
 
 # Auth Schemas
@@ -156,16 +156,30 @@ class SubscriptionResponse(BaseModel):
 
 # Financial Profile Schemas
 class FinancialProfileCreate(BaseModel):
-    sektor: str = Field(..., min_length=2, description="tarim, imalat, perakende, e-ticaret, hizmet, ihracat, arge, genel")
-    bolge: Optional[str] = None
-    calisan_sayisi: Optional[int] = Field(None, ge=0)
-    yillik_ciro: Optional[float] = Field(None, ge=0)
-    hedefler: Optional[List[str]] = None
+    sektor: str = Field(..., min_length=2, max_length=100, description="tarim, imalat, perakende, e-ticaret, hizmet, ihracat, arge, genel")
+    bolge: Optional[str] = Field(None, max_length=100)
+    calisan_sayisi: Optional[int] = Field(None, ge=0, le=1_000_000)
+    yillik_ciro: Optional[float] = Field(None, ge=0, le=1e12)
+    hedefler: Optional[List[str]] = Field(None, max_length=20)
     giderler: Optional[dict] = Field(None, description="{'stok': 100000, 'reklam': 20000} veya tek kalem biliniyorsa {'toplam': 550000}")
-    arazi_buyuklugu_dekar: Optional[float] = Field(None, ge=0, description="Sadece tarim sektoru icin")
-    urun_turu: Optional[str] = Field(None, description="Sadece tarim sektoru icin, serbest metin (fiyat aramasi icin), orn. bugday, domates, cilek")
-    tarim_kategori: Optional[str] = Field(None, description="Yapilandirilmis secim: hayvancilik | sebze_meyve | tahil_baklagil | organik | sera | sulama | makinelestirme | genel")
+    arazi_buyuklugu_dekar: Optional[float] = Field(None, ge=0, le=1e7, description="Sadece tarim sektoru icin")
+    urun_turu: Optional[str] = Field(None, max_length=100, description="Sadece tarim sektoru icin, serbest metin (fiyat aramasi icin), orn. bugday, domates, cilek")
+    tarim_kategori: Optional[str] = Field(None, max_length=40, description="Yapilandirilmis secim: hayvancilik | sebze_meyve | tahil_baklagil | organik | sera | sulama | makinelestirme | genel")
     ilk_yil_mi: Optional[bool] = Field(None, description="Arazi hazirligi/sera/ekipman gibi tek seferlik kurulus gideri var mi")
+
+    @field_validator("giderler")
+    @classmethod
+    def _giderler_gecerli(cls, v):
+        if v is None:
+            return v
+        if len(v) > 30:
+            raise ValueError("En fazla 30 gider kalemi girilebilir")
+        for ad, tutar in v.items():
+            if isinstance(tutar, bool) or not isinstance(tutar, (int, float)):
+                raise ValueError(f"'{ad}' gider kalemi sayı olmalı")
+            if not (0 <= tutar <= 1e12):
+                raise ValueError(f"'{ad}' gider kalemi 0 ile 1e12 arasında olmalı")
+        return v
 
 
 class FinancialProfileResponse(BaseModel):

@@ -61,18 +61,41 @@ _GURULTU_SATIRLARI = [re.compile(p, re.I) for p in (
     r"bizi takip edin|yukarı çık|geri dön|devamını oku|paylaş|yazdır|e-?posta ile gönder)\s*[>»]?\s*$",
     r"^\s*(?:facebook|twitter|instagram|linkedin|youtube|whatsapp)\s*$",
 )]
+# Yasal bildirim/footer satırları (KVKK, aydınlatma, çerez, site haritası...). Yalnızca
+# KISA ve cümle bitirmeyen satırlar silinir: şart metni içindeki "KVKK kapsamında
+# ... onaylanmalıdır." gibi gerçek cümleler (nokta ile biter / uzun) korunur.
+_YASAL_SATIR = re.compile(
+    r"\bkvkk\b|aydınlatma\s+met(?:ni|inler\w*)|çerez\s+politikası|gizlilik\s+(?:bildirimi|politikası|sözleşmesi)|"
+    r"kişisel\s+verilerin\s+(?:korunması|işlenmesi|saklanması)|kişisel\s+veri\w*\s+saklama|"
+    r"bilgi\s+toplumu\s+hizmetleri|bilgi\s+güvenliği\s+politikası|saklama\s+ve\s+imha|"
+    r"site\s+haritası|kullanım\s+(?:koşulları|şartları)|yasal\s+(?:uyarı|düzenlemeler|bildirim)|"
+    r"açık\s+rıza\s+metni|ticari\s+elektronik\s+ileti|cookie\s+policy|privacy\s+(?:policy|notice)|terms\s+of\s+use",
+    re.I)
+
+
+def _yasal_satir_mi(satir: str) -> bool:
+    s = satir.strip()
+    if not s or _NACE_IZI.search(s) or s.endswith((".", "!", "?")):
+        return False
+    if not _YASAL_SATIR.search(s):
+        return False
+    # Başlık biçimli ("Kişisel Verilerin Korunması") ya da çok kısa olmalı; küçük harfli
+    # akıcı bir şart cümlesi nokta olmasa da silinmez.
+    return len(s.split()) <= 3 or _menu_benzeri(s, 20)
+
+
 _KUCUK_KELIMELER = {"ve", "ile", "için", "veya", "bir", "de", "da", "ki", "mi", "ya"}
 EN_AZ_MENU_SERISI = 6
 
 
-def _menu_benzeri(satir: str) -> bool:
+def _menu_benzeri(satir: str, en_cok_kelime: int = 14) -> bool:
     """Başlık-biçimli kısa satır ("Kefalet Süreçleri"); NACE içeren satır hiçbir
     zaman menü sayılmaz (sektör listeleri kısa satırlarla gelebilir)."""
     s = satir.strip()
     if not s or _NACE_IZI.search(s) or s.endswith((".", "!", "?", ";", ",")):
         return False
     kelimeler = s.split()
-    if len(kelimeler) > 14:
+    if len(kelimeler) > en_cok_kelime:
         return False
     anlamli = [k for k in kelimeler if len(k) > 2 and k.lower() not in _KUCUK_KELIMELER]
     if not anlamli:
@@ -94,7 +117,8 @@ def clean_grant_text(text: str | None, *, baslik: str | None = None) -> str:
       1. Satır sonlarını/boşlukları normalize et, görünmez karakterleri sil.
       2. (kaldırıldı: "son başlıktan sonrasını al" sezgisi, sayfa sonundaki başlık
          tekrarında gerçek içeriği kesiyordu - İmalat Sanayii paketinde ölçüldü.)
-      3. İç içe menü ("— ", "——— ") ve bilinen gürültü satırlarını sil.
+      3. Yasal bildirim satırları (KVKK/aydınlatma/çerez/site haritası; kısa ve nokta ile
+         bitmeyenler) ve iç içe menü ("— ", "——— ") ve bilinen gürültü satırlarını sil.
       3b. Başlığın tekrar eden bağımsız satırları (ilki hariç) silinir.
       4. Ardışık ≥6 başlık-biçimli kısa satırlık menü serilerini sil.
       5. 3+ boş satırı 1'e indir.
@@ -105,7 +129,8 @@ def clean_grant_text(text: str | None, *, baslik: str | None = None) -> str:
     satirlar = [re.sub(r"[ \t]+", " ", s).strip() for s in metin.split("\n")]
 
     temiz = [s for s in satirlar
-             if not (s and (_MENU_AGACI.match(s) or any(p.search(s) for p in _GURULTU_SATIRLARI)))]
+             if not (s and (_MENU_AGACI.match(s) or _yasal_satir_mi(s)
+                            or any(p.search(s) for p in _GURULTU_SATIRLARI)))]
 
     cikti: list[str] = []
     hedef = _norm_satir(baslik) if baslik else None

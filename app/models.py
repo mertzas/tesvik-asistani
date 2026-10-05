@@ -168,6 +168,12 @@ class Tesvik(Base):
     # bu ayrim hic yapilmamisti; kullaniciya kapanmis bir programi "hala
     # basvurabilirsiniz" gibi sunmamak icin eklendi.
     nace_kayitlari = relationship("TesvikNace", cascade="all, delete-orphan", lazy="select")
+    # NACE kapsam kararı (LLM): satırı olmayan YATAY/BELIRSIZ kararları da kalıcı olsun
+    # ve her koşuda tekrar API'ye gidilmesin diye. "YATAY" + güven >= eşik -> atlanır.
+    nace_kapsam_turu = Column(String(20), nullable=True)     # YATAY | SEKTOR_KISITLI | BELIRSIZ
+    nace_kapsam_guven = Column(Float, nullable=True)
+    nace_kapsam_kaynak = Column(String(30), nullable=True)   # "llm_extraction" | "elle"
+    nace_kapsam_tarihi = Column(DateTime, nullable=True)
     aktif_mi = Column(Boolean, nullable=True)  # None = henuz kontrol edilmedi, True/False = teyit edildi
     durum_notu = Column(String, nullable=True)  # "2023'te kapanmis, KGF 'gecmis programlar' sayfasinda listeleniyor" gibi
 

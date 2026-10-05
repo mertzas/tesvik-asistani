@@ -31,6 +31,7 @@ import argparse
 import asyncio
 import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
@@ -39,8 +40,12 @@ from app.models import SessionLocal, Tesvik, TesvikNace, init_db  # noqa: E402
 from app.nace_extraction import (  # noqa: E402
     KAYNAK_LLM,
     ExtractionError,
+    ExtractionResult,
     KapsamTuru,
+    NaceKapsami,
     extract_nace_scope,
+    kaynak_metni,
+    satirlari_uret,
 )
 from app.nace_hiyerarsi import _cift_uyumu, kisim_of  # noqa: E402
 
@@ -66,7 +71,29 @@ def cakisma_turu(eski: list[str], yeni: list[str], yatay: bool) -> str:
     return "karisik_degisim"
 
 
-async def _isle(tesvik, sem, client, model, min_guven):
+def kararlari_yukle(yol: Path) -> dict[int, NaceKapsami]:
+    """Daha önceki (genellikle --dry-run) koşunun JSONL logundan kararları okur.
+    Aynı kayıt birden çok kez varsa sonuncusu geçerlidir."""
+    kararlar: dict[int, NaceKapsami] = {}
+    for satir in yol.read_text(encoding="utf-8").splitlines():
+        if satir.strip():
+            kayit = json.loads(satir)
+            kararlar[int(kayit["tesvik_id"])] = NaceKapsami.model_validate(kayit["kapsam"])
+    return kararlar
+
+
+def _tekrar_oynat(tesvik, kapsam: NaceKapsami, min_guven: float) -> ExtractionResult:
+    """API'ye gitmeden kaydı loglanmış karardan yeniden üretir. Güvenlik ağları
+    (dayanak metin, güven eşiği) GÜNCEL metne karşı yeniden çalışır."""
+    satirlar, reddedilen, kapsam, inceleme = satirlari_uret(
+        tesvik.id, kapsam, kaynak_metni(tesvik), min_guven=min_guven)
+    return ExtractionResult(kapsam=kapsam, rows=satirlar, reddedilenler=reddedilen,
+                            inceleme_nedenleri=inceleme)
+
+
+async def _isle(tesvik, sem, client, model, min_guven, kararlar=None):
+    if kararlar and tesvik.id in kararlar:
+        return tesvik, _tekrar_oynat(tesvik, kararlar[tesvik.id], min_guven), None
     async with sem:
         try:
             return tesvik, await extract_nace_scope(
@@ -93,10 +120,11 @@ def _supersede(db, eski_satirlar: list, yeni_kodlar: set[str], mevcut: set) -> i
 async def calistir(db, *, dry_run=False, geri_al=False, yeniden=False,
                    supersede=True, limit=None, tesvik_id=None, tumunu=False,
                    min_guven=0.8, model=None, eszamanlilik=4,
-                   log_yolu: Path | None = None, client=None) -> dict:
+                   log_yolu: Path | None = None, client=None,
+                   kararlar_logu: Path | None = None) -> dict:
     sayac = {"islenen": 0, "yazilan_satir": 0, "haric_satir": 0, "yatay": 0, "belirsiz": 0,
              "kisitli": 0, "atlanan": 0, "hata": 0, "cakisma": 0, "ezilen_otomatik": 0,
-             "inceleme": 0, "silinen": 0}
+             "inceleme": 0, "silinen": 0, "atlanan_yatay": 0, "logdan_oynatilan": 0}
     cikti: list[str] = []
 
     if geri_al:
@@ -104,6 +132,12 @@ async def calistir(db, *, dry_run=False, geri_al=False, yeniden=False,
         sayac["silinen"] = sorgu.count()
         if not dry_run:
             sorgu.delete(synchronize_session=False)
+            # LLM'in kalıcı kapsam kararları da sıfırlanır; yoksa YATAY işaretli kayıtlar
+            # geri aldıktan sonra da atlanırdı.
+            db.query(Tesvik).filter(Tesvik.nace_kapsam_kaynak == KAYNAK_LLM).update(
+                {"nace_kapsam_turu": None, "nace_kapsam_guven": None,
+                 "nace_kapsam_kaynak": None, "nace_kapsam_tarihi": None},
+                synchronize_session=False)
             db.commit()
         return {**sayac, "satirlar": cikti}
 
@@ -128,12 +162,21 @@ async def calistir(db, *, dry_run=False, geri_al=False, yeniden=False,
         if t.id in elle or (t.id in llm_var and not yeniden):
             sayac["atlanan"] += 1
             continue
+        # Kalıcı YATAY kararı: satır olmadığı için "işlenmemiş" görünürdü, her koşuda
+        # API'ye gidilirdi. --yeniden bu korumayı aşar.
+        if (not yeniden and t.nace_kapsam_turu == KapsamTuru.YATAY.value
+                and (t.nace_kapsam_guven or 0.0) >= min_guven):
+            sayac["atlanan_yatay"] += 1
+            continue
         hedefler.append(t)
     if limit:
         hedefler = hedefler[:limit]
 
     sem = asyncio.Semaphore(eszamanlilik)
-    sonuclar = await asyncio.gather(*[_isle(t, sem, client, model, min_guven) for t in hedefler])
+    kararlar = kararlari_yukle(kararlar_logu) if kararlar_logu else None
+    if kararlar:
+        sayac["logdan_oynatilan"] = sum(1 for t in hedefler if t.id in kararlar)
+    sonuclar = await asyncio.gather(*[_isle(t, sem, client, model, min_guven, kararlar) for t in hedefler])
 
     log = None
     if log_yolu:
@@ -196,6 +239,10 @@ async def calistir(db, *, dry_run=False, geri_al=False, yeniden=False,
                 sayac["yazilan_satir"] += len(dahil)
                 sayac["haric_satir"] += len(haric)
                 continue
+            t.nace_kapsam_turu = tur.value
+            t.nace_kapsam_guven = k.kapsam_guven
+            t.nace_kapsam_kaynak = KAYNAK_LLM
+            t.nace_kapsam_tarihi = datetime.now(timezone.utc).replace(tzinfo=None)
             if yeniden:
                 for r in db.query(TesvikNace).filter(TesvikNace.tesvik_id == t.id,
                                                      TesvikNace.kaynak == KAYNAK_LLM):
@@ -221,6 +268,9 @@ def main() -> None:
     ap.add_argument("--dry-run", action="store_true", help="Veritabanına yazma (API çağrısı yapılır)")
     ap.add_argument("--geri-al", action="store_true")
     ap.add_argument("--yeniden", action="store_true", help="Zaten LLM satırı olanları tekrar işle")
+    ap.add_argument("--log-dan-uygula", type=Path, metavar="LOG",
+                    help="API'ye GİTMEDEN, önceki (dry-run) logdaki kararları uygula "
+                         "(güvenlik ağları güncel metne karşı yeniden çalışır)")
     ap.add_argument("--supersede-yok", action="store_true",
                     help="Otomatik (başlık-regex) satırları ezme; yalnızca çakışmayı raporla")
     ap.add_argument("--tumunu", action="store_true", help="Kapalı (aktif_mi=False) programlar dahil")
@@ -240,7 +290,7 @@ def main() -> None:
             db, dry_run=a.dry_run, geri_al=a.geri_al, yeniden=a.yeniden,
             supersede=not a.supersede_yok, limit=a.limit, tesvik_id=a.tesvik_id,
             tumunu=a.tumunu, min_guven=a.min_guven, model=a.model,
-            eszamanlilik=a.eszamanlilik, log_yolu=a.log))
+            eszamanlilik=a.eszamanlilik, log_yolu=a.log, kararlar_logu=a.log_dan_uygula))
     finally:
         db.close()
     for s in sonuc.pop("satirlar"):

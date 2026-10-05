@@ -320,6 +320,7 @@ class FinancialProfile(Base):
     yillik_ciro = Column(Float, nullable=True)
     hedefler = Column(JSON, nullable=True)  # ["yatirim", "ihracat", "arge", "istihdam", "makine", "sulama", "hayvan", "organik"]
     giderler = Column(JSON, nullable=True)  # {"stok": 100000, "reklam": 20000, "toplam": 550000, "personel": ...}
+    ozellikler = Column(JSON, nullable=True)  # hedef kitle etiketleri: ["kadin_girisimci", "savunma_sanayii", ...] (bkz. app/match_adapter.py)
     ilk_yil_mi = Column(Boolean, nullable=True)  # arazi hazirligi/sera/ekipman gibi tek seferlik kurulus giderleri var mi
 
     # Tarim sektorune ozel ek alanlar (sektor != "tarim" ise bos kalir)

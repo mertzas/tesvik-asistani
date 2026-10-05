@@ -632,6 +632,20 @@
                         </div>
                     </div>
                     <div style="grid-column: 1 / -1;">
+                        <label style="font-size:13px; color:#666;">İşletmenizi tanımlayan özellikler (isteğe bağlı)</label>
+                        <div style="display:flex; gap:15px; margin-top:8px; flex-wrap:wrap;">
+                            <label><input type="checkbox" value="kadin_girisimci" class="p-ozellik"> Kadın girişimci / kadınların yönettiği işletme</label>
+                            <label><input type="checkbox" value="genc_girisimci" class="p-ozellik"> Genç girişimci</label>
+                            <label><input type="checkbox" value="savunma_sanayii" class="p-ozellik"> Savunma sanayii tedarikçisi</label>
+                            <label><input type="checkbox" value="mesleki_egitim" class="p-ozellik"> Mesleki eğitim veren / çırak-stajyer çalıştıran işletme</label>
+                            <label><input type="checkbox" value="hukuk_burosu" class="p-ozellik"> Hukuk bürosu / avukatlık</label>
+                            <label><input type="checkbox" value="basin_ilan" class="p-ozellik"> Basın-yayın kuruluşu (gazete vb.)</label>
+                            <label><input type="checkbox" value="cay_ureticisi" class="p-ozellik"> Çay üreticisi / çay işleyen</label>
+                            <label><input type="checkbox" value="kooperatif" class="p-ozellik"> Kooperatif</label>
+                        </div>
+                        <p style="font-size:12px; color:#999; margin-top:4px;">Bazı destekler yalnızca belirli kitlelere (kadın/genç girişimci, savunma tedarikçisi vb.) verilir. Uygun olanları işaretlemezseniz bu destekler size gösterilmez.</p>
+                    </div>
+                    <div style="grid-column: 1 / -1;">
                         <label style="font-size:13px; color:#666;">Hedefleriniz</label>
                         <div style="display:flex; gap:15px; margin-top:8px; flex-wrap:wrap;">
                             <label><input type="checkbox" value="yatirim" class="p-hedef"> Yatırım</label>
@@ -1081,6 +1095,9 @@
                 onTarimKategoriDegisti();
                 document.getElementById("p-urun").value = p.urun_turu ?? "";
                 document.getElementById("p-ilk-yil").checked = !!p.ilk_yil_mi;
+                document.querySelectorAll(".p-ozellik").forEach(cb => {
+                    cb.checked = (p.ozellikler || []).includes(cb.value);
+                });
                 document.getElementById("p-kurulus-gideri").value = p.giderler?.kurulus ?? "";
                 document.querySelectorAll(".p-hedef").forEach(cb => {
                     cb.checked = (p.hedefler || []).includes(cb.value);
@@ -1170,6 +1187,7 @@
                 urun_turu: urun || null,
                 tarim_kategori: tarimKategori || null,
                 ilk_yil_mi: document.getElementById("p-ilk-yil").checked,
+                ozellikler: Array.from(document.querySelectorAll(".p-ozellik:checked")).map(cb => cb.value),
             };
         }
 

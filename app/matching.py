@@ -12,6 +12,8 @@ from dataclasses import dataclass, field
 
 from sqlalchemy.orm import Session
 
+from app.match_adapter import company_from_profile, program_from_tesvik
+from app.match_scoring import hard_filter
 from app.models import FinancialProfile, Tesvik
 from app.urun_sektor_anahtarlari import (
     BELIRTILMEMIS_KATEGORILER,
@@ -94,6 +96,7 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
     profil_hedefler = {h.lower() for h in (profil.hedefler or [])}
 
     sonuclar: list[TesvikEslesmeSonucu] = []
+    sirket = company_from_profile(profil)
 
     for t in db.query(Tesvik).all():
         # KAPANDIGI DOGRULANMIS programlari hic onerme. Bunlar bir firsat
@@ -109,6 +112,14 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
         tesvik_sektorler = {s.lower() for s in kriterler.get("sektorler", [])}
 
         if not tesvik_sektorler:
+            continue
+
+        # Katı eleme (app/match_scoring.py Aşama 1): zorunlu hedef kitle,
+        # çalışan sayısı ve il kısıtı. Profilde olmayan veri ELEMEZ (yokluk
+        # ihlal değildir); yalnızca olumlu beyan gerektiren hedef kitle
+        # etiketi eksikse elenir. Sektör kontrolü aşağıdaki mevcut mantıkta.
+        sebepler, _ = hard_filter(sirket, program_from_tesvik(t), strict_sector=False)
+        if sebepler:
             continue
 
         skor = 0.0

@@ -156,3 +156,30 @@ def test_deterministik():
     progs = [GENEL_KOBI, TURIZM, MIKRO_KREDI, KGF_SAVUNMA]
     a = calculate_matches(firma, progs)
     assert a == calculate_matches(firma, list(reversed(progs)))
+
+
+# ------------------------------------------------------------- adaptör
+def test_adaptor_tesvik_kriterlerini_program_modeline_cevirir():
+    from app.match_adapter import company_from_profile, program_from_tesvik
+    from app.models import FinancialProfile, Tesvik
+
+    t = Tesvik(id=7, kurum="KGF", baslik="X", uygunluk_kriterleri={
+        "tutar_niteligi": "kredi_kefalet", "exclusive_target_group": True,
+        "target_group_tags": ["Savunma_Sanayii"], "max_employees": 9,
+        "bolge_kisitli": ["hatay"]})
+    p = program_from_tesvik(t)
+    assert p.support_type == "kefalet" and p.max_employees == 9
+    assert p.target_group_tags == {"savunma_sanayii"} and p.eligible_provinces == ["hatay"]
+
+    c = company_from_profile(FinancialProfile(bolge="Ege", calisan_sayisi=3, ozellikler=["kadin_girisimci"]))
+    assert c.province is None, "il olmayan serbest metin il kısıtıyla elemeye yol açmamalı"
+    assert c.tags == {"kadin_girisimci"}
+    assert company_from_profile(FinancialProfile(bolge="Van")).effective_region == 6
+
+
+def test_profil_ozellikleri_gecersiz_etiketi_reddeder(client):
+    from app.schemas import FinancialProfileCreate
+    with pytest.raises(ValueError):
+        FinancialProfileCreate(sektor="tarim", ozellikler=["uydurma_etiket"])
+    assert FinancialProfileCreate(sektor="tarim", ozellikler=["genc_girisimci", "genc_girisimci"]
+                                  ).ozellikler == ["genc_girisimci"]

@@ -159,3 +159,57 @@ def test_farkli_sektorler_farkli_liste_alir(db_session):
     # Genel kayit ikisinde de var ama daha dusuk sirada
     assert "Herkese Acik" in tarim and "Herkese Acik" in ihracat
     assert tarim[0] == "Tarima Ozel", "sektore ozel kayit genel kaydin onunde olmali"
+
+
+# ----------------------------------------- katı eleme (match_scoring Aşama 1)
+
+def _basliklar(profil, db):
+    return [s.tesvik.baslik for s in esles(profil, db)]
+
+
+def _kisitli_programlar(db_session):
+    db_session.add_all([
+        _tesvik(baslik="Savunma Destegi", kaynak_url="https://t/s",
+                uygunluk_kriterleri={"sektorler": ["genel"], "exclusive_target_group": True,
+                                     "target_group_tags": ["savunma_sanayii"]}),
+        _tesvik(baslik="Mikro Kredi", kaynak_url="https://t/m",
+                uygunluk_kriterleri={"sektorler": ["genel"], "max_employees": 9}),
+        _tesvik(baslik="Deprem Paketi", kaynak_url="https://t/d",
+                uygunluk_kriterleri={"sektorler": ["genel"], "bolge_kisitli": ["hatay", "adana"]}),
+        _tesvik(baslik="Genel Destek", kaynak_url="https://t/g"),
+    ])
+    db_session.commit()
+
+
+def test_zorunlu_hedef_kitle_etiketsiz_profilde_elenir(db_session):
+    """HATA: tarım/KOBİ profiline "KGF Savunma Sanayii", "Halkbank Mesleki
+    Eğitim Kredisi" gibi dikey programlar en üstte öneriliyordu."""
+    _kisitli_programlar(db_session)
+    b = _basliklar(FinancialProfile(sektor="tarim", calisan_sayisi=3), db_session)
+    assert "Savunma Destegi" not in b and "Genel Destek" in b
+
+
+def test_hedef_kitle_etiketi_olan_profil_programi_gorur(db_session):
+    _kisitli_programlar(db_session)
+    p = FinancialProfile(sektor="imalat", ozellikler=["savunma_sanayii"])
+    assert "Savunma Destegi" in _basliklar(p, db_session)
+
+
+def test_calisan_siniri_asan_profilde_mikro_kredi_elenir(db_session):
+    _kisitli_programlar(db_session)
+    assert "Mikro Kredi" not in _basliklar(FinancialProfile(sektor="imalat", calisan_sayisi=50), db_session)
+    assert "Mikro Kredi" in _basliklar(FinancialProfile(sektor="imalat", calisan_sayisi=5), db_session)
+
+
+def test_calisan_sayisi_bilinmiyorsa_elemez(db_session):
+    """Yokluk ihlal değildir; "Calisan sayinizi girin" notu zaten çıkıyor."""
+    _kisitli_programlar(db_session)
+    assert "Mikro Kredi" in _basliklar(FinancialProfile(sektor="imalat"), db_session)
+
+
+def test_il_kisitli_program_dis_ilde_elenir_bos_bolgede_elemez(db_session):
+    _kisitli_programlar(db_session)
+    assert "Deprem Paketi" not in _basliklar(FinancialProfile(sektor="imalat", bolge="İzmir"), db_session)
+    assert "Deprem Paketi" in _basliklar(FinancialProfile(sektor="imalat", bolge="Hatay"), db_session)
+    # bölge boşsa elenmez (yalnızca "bölgenizi girin" notu düşülür)
+    assert "Deprem Paketi" in _basliklar(FinancialProfile(sektor="imalat"), db_session)

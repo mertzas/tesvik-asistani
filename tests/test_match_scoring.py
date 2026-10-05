@@ -106,15 +106,18 @@ def test_sektor_kilitli_program_eslesmeyen_sektorde_elenir():
 
 
 @pytest.mark.parametrize("program_kodu,beklenen", [
-    ("55.10.01", 100.0),   # tam
-    ("55.10", 80.0),       # grup/sınıf
-    ("55.1", 80.0),
-    ("55", 50.0),          # bölüm
+    ("55.10.01", 100.0),   # eşit
+    ("55.10", 100.0),      # program üst düzey: işletmeyi kapsar
+    ("55.1", 100.0),
+    ("55", 100.0),
+    ("I", 100.0),          # tüm kısım
+    ("55.10.02", 30.0),    # aynı bölüm, farklı dal
+    ("56.10", 0.0),        # başka bölüm (aynı kısım olsa da)
 ])
 def test_nace_hiyerarsi_puanlari(program_kodu, beklenen):
     prog = IncentiveProgram(id="p", name="P", nace_codes=[program_kodu])
-    m = calculate_matches(CompanyProfile(nace_codes=["55.10.01"]), [prog])[0]
-    assert m.breakdown["sektor"].score == beklenen
+    sonuc = calculate_matches(CompanyProfile(nace_codes=["55.10.01"]), [prog], strict_sector=False)
+    assert sonuc[0].breakdown["sektor"].score == beklenen
 
 
 def test_olcek_puani_sinira_yaklastikca_azalir():

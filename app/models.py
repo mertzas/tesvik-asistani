@@ -2,7 +2,7 @@ import os
 from datetime import datetime, timezone
 from enum import Enum
 from uuid import uuid4
-from sqlalchemy import Column, Integer, String, Text, DateTime, Date, create_engine, ForeignKey, Enum as SQLEnum, JSON, Boolean, Float
+from sqlalchemy import Column, Integer, String, Text, DateTime, Date, create_engine, ForeignKey, Enum as SQLEnum, JSON, Boolean, Float, UniqueConstraint
 from sqlalchemy.dialects.postgresql import UUID
 from sqlalchemy.orm import declarative_base, sessionmaker, relationship
 
@@ -167,6 +167,7 @@ class Tesvik(Base):
     # cogu "gecmis-programlar" (artik kapali) sayfalarindan cekilmisti ve
     # bu ayrim hic yapilmamisti; kullaniciya kapanmis bir programi "hala
     # basvurabilirsiniz" gibi sunmamak icin eklendi.
+    nace_kayitlari = relationship("TesvikNace", cascade="all, delete-orphan", lazy="select")
     aktif_mi = Column(Boolean, nullable=True)  # None = henuz kontrol edilmedi, True/False = teyit edildi
     durum_notu = Column(String, nullable=True)  # "2023'te kapanmis, KGF 'gecmis programlar' sayfasinda listeleniyor" gibi
 
@@ -308,6 +309,20 @@ class IkasBaglanti(Base):
 
 
 # Financial Profile (isletme/ciftci finansal girdisi)
+class TesvikNace(Base):
+    """Bir teşvikin kapsadığı NACE önekleri (çoktan çoğa; bkz. app/nace_hiyerarsi.py).
+
+    nace_prefix standart biçimdedir: kısım harfi ("C") veya noktalı rakam
+    ("10", "10.71"). Önek sorguları indeksli sütun üzerinden yapılır."""
+    __tablename__ = "tesvik_nace_association"
+    __table_args__ = (UniqueConstraint("tesvik_id", "nace_prefix", name="uq_tesvik_nace"),)
+
+    id = Column(Integer, primary_key=True)
+    tesvik_id = Column(Integer, ForeignKey("tesvikler.id", ondelete="CASCADE"), nullable=False, index=True)
+    nace_prefix = Column(String(10), nullable=False, index=True)
+    kaynak = Column(String(60), nullable=False, default="elle")  # "elle" | "otomatik:..." (geri almak için)
+
+
 class FinancialProfile(Base):
     __tablename__ = "financial_profiles"
 
@@ -320,6 +335,7 @@ class FinancialProfile(Base):
     yillik_ciro = Column(Float, nullable=True)
     hedefler = Column(JSON, nullable=True)  # ["yatirim", "ihracat", "arge", "istihdam", "makine", "sulama", "hayvan", "organik"]
     giderler = Column(JSON, nullable=True)  # {"stok": 100000, "reklam": 20000, "toplam": 550000, "personel": ...}
+    nace_kodu = Column(String(10), nullable=True, index=True)  # standart biçim: "C" | "10" | "10.71" (bkz. app/nace_hiyerarsi.py)
     ozellikler = Column(JSON, nullable=True)  # hedef kitle etiketleri: ["kadin_girisimci", "savunma_sanayii", ...] (bkz. app/match_adapter.py)
     ilk_yil_mi = Column(Boolean, nullable=True)  # arazi hazirligi/sera/ekipman gibi tek seferlik kurulus giderleri var mi
 

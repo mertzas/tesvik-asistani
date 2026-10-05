@@ -166,8 +166,21 @@ class FinancialProfileCreate(BaseModel):
     urun_turu: Optional[str] = Field(None, max_length=100, description="Sadece tarim sektoru icin, serbest metin (fiyat aramasi icin), orn. bugday, domates, cilek")
     tarim_kategori: Optional[str] = Field(None, max_length=40, description="Yapilandirilmis secim: hayvancilik | sebze_meyve | tahil_baklagil | organik | sera | sulama | makinelestirme | genel")
     ilk_yil_mi: Optional[bool] = Field(None, description="Arazi hazirligi/sera/ekipman gibi tek seferlik kurulus gideri var mi")
+    nace_kodu: Optional[str] = Field(None, max_length=20,
+        description="Faaliyet kodu: C, C.10, C.10.71, 10.71 ... (NACE; harf isteğe bağlı)")
     ozellikler: Optional[List[str]] = Field(None, max_length=20,
         description="Hedef kitle etiketleri (kadin_girisimci, genc_girisimci, savunma_sanayii, ...)")
+
+    @field_validator("nace_kodu")
+    @classmethod
+    def _nace_gecerli(cls, v):
+        if v is None or not str(v).strip():
+            return None
+        from app.nace_hiyerarsi import normalize_nace
+        n = normalize_nace(v)
+        if n is None:
+            raise ValueError("Geçersiz NACE kodu (örn. C, C.10, 10.71, 55.10.01)")
+        return n
 
     @field_validator("ozellikler")
     @classmethod
@@ -207,6 +220,7 @@ class FinancialProfileResponse(BaseModel):
     urun_turu: Optional[str]
     tarim_kategori: Optional[str]
     ilk_yil_mi: Optional[bool]
+    nace_kodu: Optional[str] = None
     ozellikler: Optional[List[str]] = None
     updated_at: datetime
 

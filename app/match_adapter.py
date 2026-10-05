@@ -34,6 +34,7 @@ def company_from_profile(profil) -> CompanyProfile:
     bolge = (profil.bolge or "").strip()
     return CompanyProfile(
         province=bolge if bolge and il_bolgesi(bolge) is not None else None,
+        nace_codes=[profil.nace_kodu] if getattr(profil, "nace_kodu", None) else [],
         employees=profil.calisan_sayisi,
         annual_revenue=profil.yillik_ciro,
         tags=set(getattr(profil, "ozellikler", None) or []),
@@ -47,7 +48,7 @@ def program_from_tesvik(t) -> IncentiveProgram:
         name=t.baslik or "",
         institution=t.kurum or "",
         support_type=_TUTAR_NITELIGI_TURU.get(k.get("tutar_niteligi"), "diger"),
-        nace_codes=list(k.get("nace_codes") or []),
+        nace_codes=[n.nace_prefix for n in (getattr(t, "nace_kayitlari", None) or [])],
         eligible_provinces=list(k.get("bolge_kisitli") or []),
         eligible_regions=list(k.get("eligible_regions") or []),
         min_employees=k.get("min_employees"),

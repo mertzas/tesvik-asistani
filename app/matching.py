@@ -10,10 +10,11 @@ kural tabanlidir ve tekrarlanabilir/aciklanabilir olmalidir.
 """
 from dataclasses import dataclass, field
 
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, selectinload
 
 from app.match_adapter import company_from_profile, program_from_tesvik
 from app.match_scoring import hard_filter
+from app.nace_hiyerarsi import sector_match
 from app.models import FinancialProfile, Tesvik
 from app.urun_sektor_anahtarlari import (
     BELIRTILMEMIS_KATEGORILER,
@@ -98,7 +99,7 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
     sonuclar: list[TesvikEslesmeSonucu] = []
     sirket = company_from_profile(profil)
 
-    for t in db.query(Tesvik).all():
+    for t in db.query(Tesvik).options(selectinload(Tesvik.nace_kayitlari)).all():
         # KAPANDIGI DOGRULANMIS programlari hic onerme. Bunlar bir firsat
         # degil; kullanici arayip "bu program bitti" cevabi alir ve sistemin
         # tamamina olan guveni sarsilir. (Tespit: imalat profiline gelen ilk
@@ -118,7 +119,8 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
         # çalışan sayısı ve il kısıtı. Profilde olmayan veri ELEMEZ (yokluk
         # ihlal değildir); yalnızca olumlu beyan gerektiren hedef kitle
         # etiketi eksikse elenir. Sektör kontrolü aşağıdaki mevcut mantıkta.
-        sebepler, _ = hard_filter(sirket, program_from_tesvik(t), strict_sector=False)
+        program = program_from_tesvik(t)
+        sebepler, _ = hard_filter(sirket, program, strict_sector=True)
         if sebepler:
             continue
 
@@ -136,6 +138,19 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
                 gerekce.append("Bu destek sektor bagimsiz genel bir programdir.")
         else:
             continue  # sektor hic uyusmuyorsa listeye alma
+
+        # NACE: program sektörlüyse ve işletmenin kodu biliniyorsa uyum
+        # gerekçeye yazılır (eleme yukarıda yapıldı; skor değişmiyor - sıralamaya
+        # bağlanması ayrı bir adım). Kod girilmemişse kullanıcı bilgilendirilir.
+        if program.nace_codes:
+            if sirket.nace_codes:
+                uyum = sector_match(sirket.nace_codes[0], program.nace_codes)
+                gerekce.append(f"Faaliyet kodunuz: {uyum.aciklama}.")
+            else:
+                eksik.append(
+                    "Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) "
+                    "kodunuzu girerseniz uygunluğu netleşir."
+                )
 
         bolge_kisitli = kriterler.get("bolge_kisitli")
         if bolge_kisitli:

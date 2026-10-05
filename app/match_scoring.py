@@ -28,6 +28,7 @@ from typing import Literal
 from pydantic import BaseModel, Field, field_validator
 
 from app.nace_9903 import il_bolgesi
+from app.nace_hiyerarsi import SektorUyumu, normalize_nace, sector_match
 from app.urun_sektor_anahtarlari import kucult
 
 SupportType = Literal["hibe", "faizsiz_kredi", "kredi", "kefalet", "diger"]
@@ -39,7 +40,6 @@ AGIRLIKLAR: dict[str, float] = {
     "destek_turu": 0.10,
 }
 
-SEKTOR_YATAY_PUANI = 40.0
 BOLGE_ULUSAL_PUANI = 50.0
 OLCEK_KISITSIZ_PUANI = 70.0     # program ölçek kısıtlamıyor: uyum bilgisi yok
 OLCEK_BILINMIYOR_PUANI = 50.0   # profilde veri yok
@@ -57,8 +57,15 @@ def _ilk_buyuk(metin: str) -> str:
     return metin[:1].upper() + metin[1:]
 
 
-def _nace_rakam(kod: str) -> str:
-    return re.sub(r"\D", "", kod or "")
+def _nace_listesi(kodlar: list[str]) -> list[str]:
+    sonuc = []
+    for k in kodlar:
+        n = normalize_nace(k)
+        if n is None:
+            raise ValueError(f"Geçersiz NACE kodu: {k!r}")
+        if n not in sonuc:
+            sonuc.append(n)
+    return sonuc
 
 
 # --------------------------------------------------------------------------
@@ -79,6 +86,11 @@ class CompanyProfile(BaseModel):
     @classmethod
     def _etiket_normalize(cls, v: set[str]) -> set[str]:
         return {_katla(t) for t in v}
+
+    @field_validator("nace_codes")
+    @classmethod
+    def _nace_normalize(cls, v: list[str]) -> list[str]:
+        return _nace_listesi(v)
 
     @property
     def effective_region(self) -> int | None:
@@ -119,6 +131,11 @@ class IncentiveProgram(BaseModel):
     def _etiket_normalize(cls, v: set[str]) -> set[str]:
         return {_katla(t) for t in v}
 
+    @field_validator("nace_codes")
+    @classmethod
+    def _nace_normalize(cls, v: list[str]) -> list[str]:
+        return _nace_listesi(v)
+
 
 class CriterionScore(BaseModel):
     score: float          # 0-100
@@ -143,30 +160,12 @@ def _il_kumesi(iller: list[str]) -> set[str]:
     return {_katla(i) for i in iller}
 
 
-def _nace_seviyesi(profil_kodlari: list[str], program_kodlari: list[str]
-                   ) -> tuple[float, str | None]:
-    """(puan, gerekçe). Ortak rakam öneki: >=6 -> 100, 3-5 -> 80, 2 -> 50."""
-    en_iyi, aciklama = 0.0, None
-    for pk in profil_kodlari:
-        p = _nace_rakam(pk)
-        for gk in program_kodlari:
-            g = _nace_rakam(gk)
-            ortak = 0
-            for a, b in zip(p, g):
-                if a != b:
-                    break
-                ortak += 1
-            if ortak >= 6:
-                puan, ad = 100.0, "tam NACE eşleşmesi"
-            elif ortak >= 3:
-                puan, ad = 80.0, "NACE grup eşleşmesi"
-            elif ortak == 2:
-                puan, ad = 50.0, "NACE bölüm eşleşmesi"
-            else:
-                continue
-            if puan > en_iyi:
-                en_iyi, aciklama = puan, f"{pk} sektörü ile {gk} için {ad}"
-    return en_iyi, aciklama
+def _sektor_uyumu(profile: "CompanyProfile", program: "IncentiveProgram") -> SektorUyumu:
+    """İşletmenin birden çok NACE kodu varsa programa en uyanı alınır."""
+    if not profile.nace_codes:
+        return sector_match(None, program.nace_codes)
+    return max((sector_match(k, program.nace_codes) for k in profile.nace_codes),
+              key=lambda u: u.skor)
 
 
 def hard_filter(profile: CompanyProfile, program: IncentiveProgram, *,
@@ -211,9 +210,10 @@ def hard_filter(profile: CompanyProfile, program: IncentiveProgram, *,
 
     # Spec dışı: sektör-kilitli program, hiçbir NACE koduyla eşleşmiyor
     if strict_sector and program.nace_codes and profile.nace_codes:
-        puan, _ = _nace_seviyesi(profile.nace_codes, program.nace_codes)
-        if puan == 0.0:
+        if _sektor_uyumu(profile, program).durum == "uyumsuz":
             sebepler.append("program sektörü işletmenin NACE kodlarıyla örtüşmüyor")
+    elif program.nace_codes and not profile.nace_codes:
+        dogrulanamayan.append("NACE kodu (program sektörlü, profilde kod girilmemiş)")
 
     return sebepler, dogrulanamayan
 
@@ -223,12 +223,8 @@ def hard_filter(profile: CompanyProfile, program: IncentiveProgram, *,
 # --------------------------------------------------------------------------
 def _sektor_puani(profile: CompanyProfile, program: IncentiveProgram
                   ) -> tuple[float, str]:
-    if not program.nace_codes:
-        return SEKTOR_YATAY_PUANI, "sektör bağımsız (yatay) destek"
-    if not profile.nace_codes:
-        return 0.0, "profilde NACE kodu yok, sektör uyumu ölçülemedi"
-    puan, aciklama = _nace_seviyesi(profile.nace_codes, program.nace_codes)
-    return puan, aciklama or "sektör eşleşmesi yok"
+    u = _sektor_uyumu(profile, program)
+    return round(u.skor * 100, 1), u.aciklama
 
 
 def _bolge_puani(profile: CompanyProfile, program: IncentiveProgram

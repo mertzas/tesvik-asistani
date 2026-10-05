@@ -1,23 +1,25 @@
 """NACE hiyerarşisi: normalizasyon ve sektör uyum skoru (saf fonksiyonlar).
 
-Kod biçimleri: Kısım (tek harf, A-U), Bölüm (2 hane, "10"), Grup/Sınıf/Alt
+Kod biçimleri: Kısım (tek harf, A-V), Bölüm (2 hane, "10"), Grup/Sınıf/Alt
 sınıf (3-6 hane: "10.7", "10.71", "10.71.01"). Kullanıcı girdisinde kısım
 harfi olabilir ("C.10.71", "C10.71"); sistemde standart biçim harfsiz noktalı
 rakamdır, yalnızca kısım düzeyindeki kodlar tek harf olarak kalır. Bu biçim
-hem NACE Rev.2 hem de 9903 EK-3'ün kullandığı Rev.2.1 kodlarıyla uyumludur.
+hem NACE Rev.2.1 ve 9903 EK-3 ile uyumludur.
 """
 from __future__ import annotations
 
 import re
 from dataclasses import dataclass
 
-# Rev.2 kısım -> bölüm aralığı (dahil)
+# NACE Rev.2.1 kısım -> bölüm aralığı (dahil). Rev.2'den fark: J-V harfleri
+# kaydı (ör. bilişim K, mesleki/bilimsel N). 9903 EK-3 de Rev.2.1 harflerini
+# kullanır (62.1 -> K, 85 -> Q); ek3_9903.json ile doğrulandı.
 _KISIMLAR: dict[str, tuple[int, int]] = {
     "A": (1, 3), "B": (5, 9), "C": (10, 33), "D": (35, 35), "E": (36, 39),
-    "F": (41, 43), "G": (45, 47), "H": (49, 53), "I": (55, 56), "J": (58, 63),
-    "K": (64, 66), "L": (68, 68), "M": (69, 75), "N": (77, 82), "O": (84, 84),
-    "P": (85, 85), "Q": (86, 88), "R": (90, 93), "S": (94, 96), "T": (97, 98),
-    "U": (99, 99),
+    "F": (41, 43), "G": (45, 47), "H": (49, 53), "I": (55, 56), "J": (58, 60),
+    "K": (61, 63), "L": (64, 66), "M": (68, 68), "N": (69, 75), "O": (77, 82),
+    "P": (84, 84), "Q": (85, 85), "R": (86, 88), "S": (90, 93), "T": (94, 96),
+    "U": (97, 98), "V": (99, 99),
 }
 _BOLUM_KISIM: dict[int, str] = {
     b: k for k, (lo, hi) in _KISIMLAR.items() for b in range(lo, hi + 1)
@@ -27,11 +29,12 @@ KISIM_ADLARI: dict[str, str] = {
     "A": "Tarım, ormancılık ve balıkçılık", "B": "Madencilik ve taş ocakçılığı",
     "C": "İmalat", "D": "Elektrik, gaz, buhar", "E": "Su temini, atık yönetimi",
     "F": "İnşaat", "G": "Toptan ve perakende ticaret", "H": "Ulaştırma ve depolama",
-    "I": "Konaklama ve yiyecek hizmeti", "J": "Bilgi ve iletişim",
-    "K": "Finans ve sigorta", "L": "Gayrimenkul", "M": "Mesleki, bilimsel, teknik",
-    "N": "İdari ve destek hizmetleri", "O": "Kamu yönetimi", "P": "Eğitim",
-    "Q": "Sağlık ve sosyal hizmet", "R": "Kültür, sanat, eğlence",
-    "S": "Diğer hizmetler", "T": "Hane halkı faaliyetleri", "U": "Uluslararası kuruluşlar",
+    "I": "Konaklama ve yiyecek hizmeti", "J": "Yayıncılık, yayın ve içerik üretimi",
+    "K": "Telekom, bilgisayar programlama, bilişim hizmetleri", "L": "Finans ve sigorta",
+    "M": "Gayrimenkul", "N": "Mesleki, bilimsel ve teknik faaliyetler",
+    "O": "İdari ve destek hizmetleri", "P": "Kamu yönetimi", "Q": "Eğitim",
+    "R": "Sağlık ve sosyal hizmet", "S": "Kültür, sanat, eğlence",
+    "T": "Diğer hizmetler", "U": "Hane halkı faaliyetleri", "V": "Uluslararası kuruluşlar",
 }
 
 # Skor sabitleri (0-1)
@@ -40,7 +43,7 @@ ISLETME_GENIS = 0.6    # işletme kodu programınkinden daha geniş ("10" vs "10
 AYNI_BOLUM = 0.3       # aynı bölüm, farklı dal
 YATAY = 0.4            # NACE kısıtı olmayan, sektör bağımsız program
 
-_GIRDI = re.compile(r"^([A-U])?[\s.\-]*([0-9][0-9.\s]*)?$")
+_GIRDI = re.compile(r"^([A-V])?[\s.\-]*([0-9][0-9.\s]*)?$")
 
 
 def kisim_of(kod: str) -> str | None:

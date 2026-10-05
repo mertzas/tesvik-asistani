@@ -28,7 +28,7 @@ from typing import Literal
 from pydantic import BaseModel, Field, field_validator
 
 from app.nace_9903 import il_bolgesi
-from app.nace_hiyerarsi import SektorUyumu, normalize_nace, sector_match
+from app.nace_hiyerarsi import SektorUyumu, exclusion_status, normalize_nace, sector_match
 from app.urun_sektor_anahtarlari import kucult
 
 SupportType = Literal["hibe", "faizsiz_kredi", "kredi", "kefalet", "diger"]
@@ -107,6 +107,8 @@ class IncentiveProgram(BaseModel):
 
     nace_codes: list[str] = Field(default_factory=list,
         description="Boş = yatay/sektör bağımsız program")
+    excluded_nace_codes: list[str] = Field(default_factory=list,
+        description="Programın açıkça dışladığı kollar (ör. 'imalat, tütün 12 hariç')")
 
     # Katı kısıtlar (boş = kısıt yok)
     eligible_provinces: list[str] = Field(default_factory=list)
@@ -131,7 +133,7 @@ class IncentiveProgram(BaseModel):
     def _etiket_normalize(cls, v: set[str]) -> set[str]:
         return {_katla(t) for t in v}
 
-    @field_validator("nace_codes")
+    @field_validator("nace_codes", "excluded_nace_codes")
     @classmethod
     def _nace_normalize(cls, v: list[str]) -> list[str]:
         return _nace_listesi(v)
@@ -207,6 +209,16 @@ def hard_filter(profile: CompanyProfile, program: IncentiveProgram, *,
             sebepler.append(
                 "zorunlu hedef kitle dışında "
                 f"(gerekli: {', '.join(sorted(program.target_group_tags)) or '-'})")
+
+    # Açık dışlama: "imalat, ancak tütün (12) hariç" -> tütün işletmesi elenir.
+    # İşletme kodu hariç koddan genişse (C vs 12) dalı bilinmiyor: elenmez, işaretlenir.
+    if program.excluded_nace_codes and profile.nace_codes:
+        durumlar = [exclusion_status(k, program.excluded_nace_codes) for k in profile.nace_codes]
+        if "degil" not in durumlar and "belirsiz" not in durumlar:
+            sebepler.append("işletmenin sektörü programdan açıkça hariç tutulmuş "
+                            f"({', '.join(program.excluded_nace_codes)})")
+        elif "belirsiz" in durumlar and "degil" not in durumlar:
+            dogrulanamayan.append("hariç tutulan kol (işletme kodu daha geniş, alt dal bilinmiyor)")
 
     # Spec dışı: sektör-kilitli program, hiçbir NACE koduyla eşleşmiyor
     if strict_sector and program.nace_codes and profile.nace_codes:

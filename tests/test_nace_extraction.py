@@ -6,6 +6,7 @@ kilidi veritabanına yazılmamalı.
 """
 import asyncio
 import importlib
+import json
 import sys
 from pathlib import Path
 from types import SimpleNamespace
@@ -53,8 +54,8 @@ def _kod(prefix, dayanak, guven=0.95):
     return {"nace_prefix": prefix, "guven_skoru": guven, "dayanak_metin": dayanak}
 
 
-def _cevap(tur, kodlar=(), haric=(), tip="BELIRSIZ", not_="gerekçe"):
-    return {"analiz_notu": not_, "kapsam_turu": tur, "yararlanici_tipi": tip,
+def _cevap(tur, kodlar=(), haric=(), tip="BELIRSIZ", not_="gerekçe", guven=0.95):
+    return {"analiz_notu": not_, "kapsam_turu": tur, "kapsam_guven": guven, "yararlanici_tipi": tip,
             "hedef_nace_kodlari": list(kodlar), "haric_tutulan_nace_kodlari": list(haric)}
 
 
@@ -99,7 +100,7 @@ def test_dusuk_guven_reddedilir():
 
 
 def test_sektor_kisitli_ama_kodsuz_belirsize_duser():
-    k = NaceKapsami(analiz_notu="x", kapsam_turu="SEKTOR_KISITLI", yararlanici_tipi="URETICI")
+    k = NaceKapsami(analiz_notu="x", kapsam_turu="SEKTOR_KISITLI", kapsam_guven=0.9, yararlanici_tipi="URETICI")
     assert k.kapsam_turu is KapsamTuru.BELIRSIZ
 
 
@@ -117,14 +118,57 @@ def test_cay_isleme_tesisi_imalata_baglanir():
                                   [_kod("10.83", "çay işleme tesislerinin makine yenilemesi")],
                                   tip="ISLEYICI_TESIS"))
     sonuc = run(extract_nace_scope(CAY_FABRIKA, client=istemci))
-    assert sonuc.rows == [{"tesvik_id": 3, "nace_prefix": "10.83", "kaynak": "llm_extraction"}]
+    assert sonuc.rows == [{"tesvik_id": 3, "nace_prefix": "10.83", "kaynak": "llm_extraction",
+                           "haric_mi": False}]
 
 
-def test_haric_tutulanlar_raporlanir_ama_satir_olmaz():
-    istemci = SahteIstemci(_cevap("YATAY", haric=[_kod("K", "finans kuruluşları hariç")]))
+def test_yatay_programda_hariclar_haric_mi_satiri_olur():
+    metin = dict(YATAY_METIN, aciklama="Tüm sektörlerdeki KOBİ'ler başvurabilir; finans kuruluşları hariçtir.")
+    istemci = SahteIstemci(_cevap("YATAY", haric=[_kod("L", "finans kuruluşları hariçtir")]))
+    sonuc = run(extract_nace_scope(metin, client=istemci))
+    assert sonuc.rows == [{"tesvik_id": 1, "nace_prefix": "L", "kaynak": "llm_extraction", "haric_mi": True}]
+    assert not sonuc.manuel_inceleme_gerekli
+
+
+def test_dislama_kaniti_yetersizse_sessizce_atlanmaz_incelemeye_isaretlenir():
+    """Kanıtsız dışlama yazılmaz AMA sessiz de kalmaz: aksi hâlde hariç kolun
+    işletmesine tam uyum skoru verilirdi."""
+    istemci = SahteIstemci(_cevap("YATAY", haric=[_kod("L", "bankalar kapsam dışıdır")]))  # metinde yok
     sonuc = run(extract_nace_scope(YATAY_METIN, client=istemci))
-    assert sonuc.rows == []
-    assert [h.nace_prefix for h in sonuc.kapsam.haric_tutulan_nace_kodlari] == ["K"]
+    assert sonuc.rows == [] and sonuc.manuel_inceleme_gerekli
+    assert "L" in sonuc.inceleme_nedenleri[0]
+
+
+IMALAT_HARIC = {"id": 4, "baslik": "Sanayi Yatırım Desteği",
+                "aciklama": "Destek imalat sanayiine yöneliktir, ancak tütün ürünleri (12) ve silah-mühimmat "
+                            "(25.4) imalatı kapsam dışıdır."}
+
+
+def test_imalat_ve_alt_kol_dislamasi_birlikte_uretilir():
+    istemci = SahteIstemci(_cevap("SEKTOR_KISITLI",
+        [_kod("C", "Destek imalat sanayiine yöneliktir")],
+        haric=[_kod("12", "tütün ürünleri (12)"), _kod("25.4", "silah-mühimmat (25.4) imalatı kapsam dışıdır")]))
+    sonuc = run(extract_nace_scope(IMALAT_HARIC, client=istemci))
+    assert [(r["nace_prefix"], r["haric_mi"]) for r in sonuc.rows] == [
+        ("C", False), ("12", True), ("25.4", True)]
+
+
+def test_hedefin_altinda_olmayan_dislama_reddedilir_ve_incelemeye_duser():
+    istemci = SahteIstemci(_cevap("SEKTOR_KISITLI",
+        [_kod("10", "Destek imalat sanayiine yöneliktir")],
+        haric=[_kod("12", "tütün ürünleri (12)")]))   # 12, "10"un altında değil
+    sonuc = run(extract_nace_scope(IMALAT_HARIC, client=istemci))
+    assert [r["nace_prefix"] for r in sonuc.rows] == ["10"]
+    assert any("anlamsız dışlama" in sebep for _, sebep in sonuc.reddedilenler)
+    assert sonuc.manuel_inceleme_gerekli
+
+
+def test_ayni_kod_hem_hedef_hem_haric_celiskidir():
+    istemci = SahteIstemci(_cevap("SEKTOR_KISITLI",
+        [_kod("C", "Destek imalat sanayiine yöneliktir")],
+        haric=[_kod("C", "imalat sanayiine yöneliktir")]))
+    sonuc = run(extract_nace_scope(IMALAT_HARIC, client=istemci))
+    assert [r["nace_prefix"] for r in sonuc.rows] == ["C"] and sonuc.manuel_inceleme_gerekli
 
 
 # ------------------------------------------------------------- kod doğrulayıcı
@@ -209,7 +253,7 @@ def test_kaynak_metni_orm_ve_sozluk_girdisini_destekler():
 def test_satirlari_uret_tekrarlari_birlestirir():
     k = NaceKapsami.model_validate(_cevap("SEKTOR_KISITLI", [
         _kod("10", "gıda üreten"), _kod("C.10", "gıda üreten")]))
-    satirlar, _, _ = satirlari_uret(5, k, "Yalnızca gıda üreten işletmeler")
+    satirlar, _, _, _ = satirlari_uret(5, k, "Yalnızca gıda üreten işletmeler")
     assert [s["nace_prefix"] for s in satirlar] == ["10"]
 
 
@@ -260,16 +304,158 @@ def test_betik_elle_girilene_dokunmaz_ve_geri_alir(betik, db_session):
     assert {(r.tesvik_id, r.nace_prefix) for r in db_session.query(TesvikNace)} == {(t1.id, "C")}
 
 
-def test_betik_yatay_cakismayi_raporlar_silme_bayragiyla_siler(betik, db_session):
+def test_betik_yatay_kilidi_ezer_ve_cakismayi_loglar(betik, db_session, tmp_path):
     t = _program(db_session, "İmalat Sanayii Destek Paketi", "https://t/i",
                  ozet="İmalat, turizm, bilişim dahil tüm sektörler başvurabilir.")
     db_session.add(TesvikNace(tesvik_id=t.id, nace_prefix="C", kaynak="otomatik:imalat_baslik:imalat"))
     db_session.commit()
+    log = tmp_path / "log.jsonl"
 
-    s1 = run(betik.calistir(db_session, client=SahteIstemci(_cevap("YATAY"))))
-    assert s1["cakisma"] == 1 and s1["silinen"] == 0
-    assert db_session.query(TesvikNace).count() == 1, "varsayılanda otomatik satıra dokunulmaz"
+    s1 = run(betik.calistir(db_session, client=SahteIstemci(_cevap("YATAY")), log_yolu=log))
+    assert s1["cakisma"] == 1 and s1["ezilen_otomatik"] == 1
+    assert db_session.query(TesvikNace).count() == 0
+    kayit = json.loads(log.read_text(encoding="utf-8").splitlines()[0])
+    assert kayit["cakisma"]["tur"] == "yatay_kilidi_kaldirildi" and kayit["cakisma"]["aksiyon"] == "ezildi"
 
-    s2 = run(betik.calistir(db_session, client=SahteIstemci(_cevap("YATAY")),
-                            otomatik_yatay_ise_sil=True))
-    assert s2["silinen"] == 1 and db_session.query(TesvikNace).count() == 0
+
+def test_betik_dusuk_guvenli_yatay_otomatik_kilidi_ezmez(betik, db_session):
+    t = _program(db_session, "İmalat Sanayii Destek Paketi", "https://t/i2")
+    db_session.add(TesvikNace(tesvik_id=t.id, nace_prefix="C", kaynak="otomatik:imalat_baslik:imalat"))
+    db_session.commit()
+    run(betik.calistir(db_session, client=SahteIstemci(_cevap("YATAY", guven=0.4))))
+    assert db_session.query(TesvikNace).count() == 1
+
+
+def test_betik_belirsizde_otomatik_kilit_korunur_ve_loglanir(betik, db_session, tmp_path):
+    t = _program(db_session, "İmalat Sanayii Destek Paketi", "https://t/i3")
+    db_session.add(TesvikNace(tesvik_id=t.id, nace_prefix="C", kaynak="otomatik:imalat_baslik:imalat"))
+    db_session.commit()
+    log = tmp_path / "l.jsonl"
+    run(betik.calistir(db_session, client=SahteIstemci(_cevap("BELIRSIZ", guven=0.3)), log_yolu=log))
+    assert db_session.query(TesvikNace).count() == 1
+    assert json.loads(log.read_text(encoding="utf-8").splitlines()[0])["cakisma"]["tur"] == "korundu_belirsiz"
+
+
+def test_betik_kapsam_daralmasi_kaba_kilidi_ince_kodla_degistirir(betik, db_session, tmp_path):
+    """Çay Alımı: başlık-regex'i kaba kilit bastı, LLM metinden 10.83'ü güvenle buldu."""
+    t = _program(db_session, "ÇAY ALIMI DESTEK PAKETİ", "https://t/c3",
+                 ozet="Müstahsilden yaş çay satın alan işletmelere destek verilir.")
+    db_session.add(TesvikNace(tesvik_id=t.id, nace_prefix="C", kaynak="otomatik:imalat_baslik:x"))
+    db_session.commit()
+    log = tmp_path / "c.jsonl"
+    cevap = _cevap("SEKTOR_KISITLI", [_kod("10.83", "yaş çay satın alan işletmelere")], tip="ISLEYICI_TESIS")
+    run(betik.calistir(db_session, client=SahteIstemci(cevap), log_yolu=log))
+    satirlar = {(r.nace_prefix, r.kaynak) for r in db_session.query(TesvikNace)}
+    assert satirlar == {("10.83", "llm_extraction")}, "kaba otomatik kilit silinmeli"
+    assert json.loads(log.read_text(encoding="utf-8").splitlines()[0])["cakisma"]["tur"] == "kapsam_daralmasi"
+
+
+def test_betik_ayni_kod_ise_kaynak_yukseltilir_cift_satir_olmaz(betik, db_session):
+    t = _program(db_session, "TURİZM DESTEK PAKETİ", "https://t/t",
+                 ozet="Turizm sektöründe faaliyet gösteren işletmelere verilir.")
+    db_session.add(TesvikNace(tesvik_id=t.id, nace_prefix="I", kaynak="otomatik:turizm_baslik:turizm"))
+    db_session.commit()
+    cevap = _cevap("SEKTOR_KISITLI", [_kod("I", "Turizm sektöründe faaliyet gösteren işletmelere")])
+    run(betik.calistir(db_session, client=SahteIstemci(cevap)))
+    assert [(r.nace_prefix, r.kaynak) for r in db_session.query(TesvikNace)] == [("I", "llm_extraction")]
+
+
+def test_betik_supersede_yok_bayragi_sadece_raporlar(betik, db_session):
+    t = _program(db_session, "İmalat Sanayii Destek Paketi", "https://t/i4")
+    db_session.add(TesvikNace(tesvik_id=t.id, nace_prefix="C", kaynak="otomatik:imalat_baslik:imalat"))
+    db_session.commit()
+    s = run(betik.calistir(db_session, supersede=False, client=SahteIstemci(_cevap("YATAY"))))
+    assert s["cakisma"] == 1 and db_session.query(TesvikNace).count() == 1
+
+
+def test_betik_haric_satirini_yazar(betik, db_session):
+    _program(db_session, "Sanayi Yatırım Desteği", "https://t/s",
+             ozet="Destek imalat sanayiine yöneliktir, ancak tütün ürünleri (12) kapsam dışıdır.")
+    cevap = _cevap("SEKTOR_KISITLI", [_kod("C", "Destek imalat sanayiine yöneliktir")],
+                   haric=[_kod("12", "tütün ürünleri (12) kapsam dışıdır")])
+    s = run(betik.calistir(db_session, client=SahteIstemci(cevap)))
+    assert s["yazilan_satir"] == 1 and s["haric_satir"] == 1
+    assert {(r.nace_prefix, r.haric_mi) for r in db_session.query(TesvikNace)} == {("C", False), ("12", True)}
+
+
+@pytest.mark.parametrize("eski,yeni,yatay,beklenen", [
+    (["C"], [], True, "yatay_kilidi_kaldirildi"),
+    (["A"], ["10.83"], False, "sektor_degisimi"),
+    (["C"], ["10.83"], False, "kapsam_daralmasi"),
+    (["10.83"], ["C"], False, "kapsam_genislemesi"),
+    (["C"], ["C"], False, "ayni_kod_kaynak_yukseltildi"),
+    (["10", "55"], ["10.83", "62"], False, "karisik_degisim"),
+])
+def test_cakisma_siniflandirmasi(betik, eski, yeni, yatay, beklenen):
+    assert betik.cakisma_turu(eski, yeni, yatay) == beklenen
+
+
+# --------------------------------------------- kazıma gürültüsü temizleyici
+MENU = "\n".join(["Bölgesel Odaklı Kobi Destek Paketi", "Döviz Kazandırıcı Faaliyetleri Destek Paketi",
+                  "Girişimci Destek Paketi", "Kadın Girişimci Destek Paketi", "Teknoloji Destek Paketi",
+                  "Dijital Dönüşüm Destek Paketi", "Eğitim Destek Paketi", "Kefalet Süreçleri",
+                  "Vadeler ve Limitler", "Bilgi Merkezi"])
+AGAC = "\n".join(["— Özkaynak Kefaletlerimiz", "—— Banka Kredileri >", "——— TOBB Nefes Kredisi 2026 Destek Programı"])
+KGF_GURULTULU = (
+    "İmalat Sanayii Destek Paketi\n" + MENU + "\nPlease select your page\nAnasayfa\nHakkımızda\n" + AGAC +
+    "\n\n\n\nBuradasınız: Anasayfa / Ürünlerimiz / Hazine Destekli Kefaletler\n"
+    "İmalat Sanayii Destek Paketi\nÜrün Açıklaması\n"
+    "Makine imalatı, elektrik-elektronik sektörü, otomotiv tedarik sanayi, kimyasal madde imalatı "
+    "sektörlerinde faaliyet gösteren tüm KOBİ ve KOBİ Dışı işletmelerin finansmana erişiminin "
+    "kolaylaştırılması amaçlanmaktadır.\nKefalet İçin Kullanılan Kaynak\nHazine Fonu\n"
+    "© 2026 KGF Tüm hakları saklıdır\nÇerez politikası")
+
+
+def test_temizleyici_menu_cop_ve_footeri_atar_icerigi_korur():
+    t = ne.clean_grant_text(KGF_GURULTULU, baslik="İmalat Sanayii Destek Paketi")
+    assert "Makine imalatı" in t and "finansmana erişiminin" in t and "Hazine Fonu" in t
+    for cop in ["Please select your page", "Özkaynak Kefaletlerimiz", "Kadın Girişimci Destek Paketi",
+                "Tüm hakları saklıdır", "Çerez politikası", "Buradasınız"]:
+        assert cop not in t, cop
+    assert "\n\n\n" not in t and len(t) < len(KGF_GURULTULU) / 2
+
+
+def test_temizleyici_basliksiz_de_menu_serisini_ve_agaci_siler():
+    t = ne.clean_grant_text(MENU + "\n" + AGAC + "\nProgram yalnızca KOBİ'lere yöneliktir.")
+    assert t == "Program yalnızca KOBİ'lere yöneliktir."
+
+
+def test_temizleyici_sart_ve_nace_listesini_bozmaz():
+    metin = ("Başvuru Şartları\nİşletmenin KOBİ olması\nYalnızca aşağıdaki sektörlerde faaliyet göstermesi\n"
+             "Gıda Maddeleri İmalatı 10.71\nİçecek İmalatı 11.07\nTekstil Ürünleri İmalatı 13.10\n"
+             "Giyim Eşyası İmalatı 14.13\nMobilya İmalatı 31.01\nKâğıt Ürünleri İmalatı 17.21\n"
+             "Plastik Ürünler İmalatı 22.29\nMetal Eşya İmalatı 25.99\nNACE listesi EK-3'te yer alır.")
+    assert ne.clean_grant_text(metin) == metin, "NACE kodlu satırlar menü sayılmamalı"
+
+
+def test_temizleyici_bos_ve_none():
+    assert ne.clean_grant_text(None) == "" and ne.clean_grant_text("  \n ") == ""
+
+
+def test_imalat_sanayii_gurultulu_metin_modele_temiz_gider_ve_dayanak_dogrulanir():
+    """GERÇEK OLAY: 12K karakterlik KGF menü dökümü yüzünden model BELIRSIZ dönmüştü.
+    Temizlenmiş metinde asıl açıklama kalmalı ve şartlar kesilmemeli."""
+    tesvik = {"id": 158, "baslik": "İmalat Sanayii Destek Paketi", "detay": KGF_GURULTULU,
+              "basvuru_sartlari": ["Yatırım kredisi tutarı yatırım tutarının %70'ini aşamaz."]}
+    gonderilen = ne.kaynak_metni(tesvik)
+    assert "Özkaynak Kefaletlerimiz" not in gonderilen and "Makine imalatı" in gonderilen
+    assert "BAŞVURU ŞARTLARI: Yatırım kredisi" in gonderilen
+
+    cevap = _cevap("SEKTOR_KISITLI", [_kod("C", "faaliyet gösteren tüm KOBİ ve KOBİ Dışı işletmelerin")],
+                   tip="ISLEYICI_TESIS")
+    istemci = SahteIstemci(cevap)
+    sonuc = run(extract_nace_scope(tesvik, client=istemci))
+    assert [r["nace_prefix"] for r in sonuc.rows] == ["C"]
+    assert "Özkaynak Kefaletlerimiz" not in istemci.cagrilar[0]["messages"][0]["content"]
+
+
+def test_uzun_govde_sartlari_kesmez():
+    uzun = "Program açıklaması cümlesi burada yer alır. " * 400
+    m = ne.kaynak_metni({"baslik": "B", "aciklama": uzun, "basvuru_sartlari": ["ÖNEMLİ ŞART METNİ"]})
+    assert "ÖNEMLİ ŞART METNİ" in m and len(m) <= ne.EN_COK_METIN_KARAKTER
+
+
+def test_prompt_gurultu_ve_dislama_talimatlarini_iceriyor():
+    for ifade in ["web kazıma kaynaklı gürültü", "arayüz metinlerini", "haric_tutulan_nace_kodlari",
+                  "tütün", "25.4", "kapsam_guven", "yararlanıcı GRUBUNA"]:
+        assert ifade in SYSTEM_PROMPT, ifade

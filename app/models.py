@@ -320,7 +320,10 @@ class TesvikNace(Base):
     id = Column(Integer, primary_key=True)
     tesvik_id = Column(Integer, ForeignKey("tesvikler.id", ondelete="CASCADE"), nullable=False, index=True)
     nace_prefix = Column(String(10), nullable=False, index=True)
-    kaynak = Column(String(60), nullable=False, default="elle")  # "elle" | "otomatik:..." (geri almak için)
+    kaynak = Column(String(60), nullable=False, default="elle")  # "elle" | "otomatik:..." | "llm_extraction"
+    # True: program bu kolu AÇIKÇA dışlıyor ("imalat, ancak tütün (12) hariç").
+    # Dışlama satırı kapsamı genişletmez; eşleşmede işletmeyi eler.
+    haric_mi = Column(Boolean, nullable=False, default=False, server_default="0")
 
 
 class FinancialProfile(Base):

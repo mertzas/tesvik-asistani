@@ -143,3 +143,26 @@ def sector_match(isletme_kodu: str | None, program_kodlari: list[str]) -> Sektor
 def sector_fit(isletme_kodu: str | None, program_kodlari: list[str]) -> float:
     """0.0-1.0 sektör uyum skoru (bkz. sector_match)."""
     return sector_match(isletme_kodu, program_kodlari).skor
+
+
+def exclusion_status(isletme_kodu: str | None, haric_kodlar: list[str]) -> str:
+    """İşletmenin programın hariç tuttuğu bir kola girip girmediği.
+
+    "haric"   : hariç kod işletmenin kodunu kapsıyor (12 hariç, işletme 12.00)
+    "belirsiz": işletme kodu hariç koddan geniş (işletme "C", hariç "12"):
+                işletmenin hangi dalda olduğu bilinmiyor, ELEMEZ ama işaretlenir
+    "degil"   : kesişim yok / işletme kodu yok / hariç kod yok"""
+    c = normalize_nace(isletme_kodu)
+    if c is None:
+        return "degil"
+    belirsiz = False
+    for ham in haric_kodlar:
+        e = normalize_nace(ham)
+        if e is None:
+            continue
+        u = _cift_uyumu(c, e)
+        if u == TAM:
+            return "haric"
+        if u == ISLETME_GENIS:
+            belirsiz = True
+    return "belirsiz" if belirsiz else "degil"

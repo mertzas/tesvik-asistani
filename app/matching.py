@@ -152,6 +152,13 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
                     "kodunuzu girerseniz uygunluğu netleşir."
                 )
 
+        if program.excluded_nace_codes and not sirket.nace_codes:
+            eksik.append(
+                "Bu destekte bazı faaliyet kolları kapsam dışıdır (" +
+                ", ".join(program.excluded_nace_codes) + "). Faaliyet (NACE) kodunuzu "
+                "girerseniz uygunluğu netleşir."
+            )
+
         bolge_kisitli = kriterler.get("bolge_kisitli")
         if bolge_kisitli:
             profil_bolge = (profil.bolge or "").strip().lower()

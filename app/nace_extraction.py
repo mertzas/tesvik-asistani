@@ -33,7 +33,7 @@ from typing import Any
 
 from pydantic import BaseModel, Field, ValidationError, field_validator, model_validator
 
-from app.nace_hiyerarsi import _cift_uyumu, normalize_nace
+from app.nace_hiyerarsi import _cift_uyumu, kisim_of, normalize_nace
 from app.urun_sektor_anahtarlari import kucult
 
 logger = logging.getLogger(__name__)
@@ -241,6 +241,10 @@ Sektör kilidi, uygun bir işletmeyi programdan DIŞLAR. Bu yüzden kilidi yaln�
 
 # Örnekleme ile şartı ayır
 "Örneğin", "gibi", "vb.", "başta ... olmak üzere", "ör." ile sayılan sektörler BAĞLAYICI DEĞİLDİR: "örneğin lojistik ve depolama yararlanabilir" -> YATAY. Bir ürün/sektör adının metinde geçmesi tek başına kilit gerekçesi değildir.
+"Desteklenen sektörler arasında A, B ve C yer alır", "başlıca", "bunlar arasında" da bir ÖRNEKLEMEDİR; kapalı liste değildir. Kapalı liste ancak "yalnızca/sadece/münhasıran" ya da açık NACE/EK listesiyle verilir.
+
+# Çok bileşenli programlar
+Program birden çok destek unsuru içeriyorsa (ör. "İş Geliştirme Desteği", "Kuruluş Desteği", "Yatırım Desteği") ve sektör şartı yalnızca BİR unsura aitse, program geneli için sektör kilidi UYGULAMA: YATAY veya BELIRSIZ seç. Kilit, programın TÜM yararlanıcılarını kapsayan bir şart olmalıdır.
 
 # Dışlamalar (haric_tutulan_nace_kodlari)
 "... hariç", "... dışında", "... yararlanamaz", "... kapsam dışıdır", "... desteklenmez" gibi bir FAALİYET ALANI dışlaması varsa o alanın NACE kodunu `haric_tutulan_nace_kodlari`na yaz; bu, kapsam_turu'ndan bağımsızdır.
@@ -362,12 +366,20 @@ class ExtractionResult:
         return bool(self.inceleme_nedenleri)
 
 
+# Dayanak alıntısı örnekleme ifadesiyse ("... arasında ... yer alır") kod kilit gerekçesi olamaz.
+_ORNEKLEME = re.compile(
+    r"\barasında\b|\börneğin\b|\bör\.|\bgibi\b|\bvb\b|\bvs\b|\bbaşta\b|\bbaşlıca\b|\bdahil\b", re.I)
+_BAGLAYICI = re.compile(r"\b(?:yalnızca|sadece|münhasıran|ancak)\b", re.I)
+
+
 def _kod_gecerli_mi(k: NaceKodu, karsilastirma: str, min_guven: float) -> str | None:
     """None = geçerli; aksi hâlde ret sebebi."""
     if k.guven_skoru < min_guven:
         return f"güven {k.guven_skoru:.2f} < {min_guven}"
     if not k.dayanak_metin.strip() or _karsilastirma_metni(k.dayanak_metin) not in karsilastirma:
         return "dayanak metin kaynakta bulunamadı (uydurma olabilir)"
+    if _ORNEKLEME.search(k.dayanak_metin) and not _BAGLAYICI.search(k.dayanak_metin):
+        return "dayanak örnekleme ifadesi (bağlayıcı şart değil)"
     return None
 
 
@@ -467,13 +479,16 @@ async def _llm_cagir(client: Any, model: str, mesajlar: list[dict]) -> Any:
 
 async def extract_nace_scope(tesvik: Any, *, client: Any = None, model: str | None = None,
                              min_guven: float = VARSAYILAN_MIN_GUVEN,
-                             tesvik_id: int | str | None = None) -> ExtractionResult:
+                             tesvik_id: int | str | None = None,
+                             tutarlilik_kontrolu: bool = False) -> ExtractionResult:
     """Bir teşvikin NACE kapsamını çıkarıp `tesvik_nace_association` satırlarına çevirir.
 
     `tesvik`: ORM nesnesi veya {"baslik", "aciklama", "uygunluk_kriterleri", ...} sözlüğü.
     `client`: anthropic.AsyncAnthropic benzeri (testlerde sahte verilir).
     temperature=0 gönderilir; reddeden modellerde (ör. claude-sonnet-5) parametre
     atlanır ve belirlilik zorunlu araç çağrısı + sıkı şemadan gelir.
+    tutarlilik_kontrolu=True: SEKTOR_KISITLI sonuç ikinci bağımsız çağrıyla doğrulanır;
+    kısım kümesi uyuşmazsa BELIRSIZ + manuel inceleme (kilit yazılmaz).
     Doğrulama başarısız olursa model bir kez hata mesajıyla düzeltmeye çağrılır;
     yine olmazsa sonuç BELIRSIZ + `hata` ile döner (kilit uygulanmaz).
     """
@@ -491,6 +506,35 @@ async def extract_nace_scope(tesvik: Any, *, client: Any = None, model: str | No
         client = anthropic.AsyncAnthropic(api_key=settings.ANTHROPIC_API_KEY)
     model = model or settings.CLAUDE_MODEL
 
+    ilk = await _tek_cikarim(client, model, metin, tid, min_guven)
+    if tutarlilik_kontrolu and ilk.kapsam_turu is KapsamTuru.SEKTOR_KISITLI:
+        ilk = _tutarlilik_uygula(ilk, await _tek_cikarim(client, model, metin, tid, min_guven))
+    return ilk
+
+
+def _dahil_kisimlari(sonuc: "ExtractionResult") -> set[str]:
+    return {kisim_of(r["nace_prefix"]) for r in sonuc.rows if not r["haric_mi"]}
+
+
+def _tutarlilik_uygula(ilk: "ExtractionResult", ikinci: "ExtractionResult") -> "ExtractionResult":
+    """Sektör KİLİDİ yanlış-pozitifi pahalıdır ve model bu sürümde temperature=0
+    desteklemiyor (aynı metinde çağrılar arası karar değişebiliyor). İki bağımsız
+    çağrı aynı kısım kümesinde uzlaşmazsa kilit YAZILMAZ ve kayıt incelemeye düşer."""
+    k1, k2 = _dahil_kisimlari(ilk), _dahil_kisimlari(ikinci)
+    if ikinci.kapsam_turu is KapsamTuru.SEKTOR_KISITLI and k1 == k2:
+        return ilk
+    ikinci_ozet = sorted(k2) if ikinci.kapsam_turu is KapsamTuru.SEKTOR_KISITLI else ikinci.kapsam_turu.value
+    kapsam = ilk.kapsam.model_copy(update={
+        "kapsam_turu": KapsamTuru.BELIRSIZ, "hedef_nace_kodlari": [],
+        "analiz_notu": (ilk.kapsam.analiz_notu + " [Otomatik: iki bağımsız çağrı uyuşmadı -> BELIRSIZ]")[:900]})
+    return ExtractionResult(
+        kapsam=kapsam, rows=[r for r in ilk.rows if r["haric_mi"]],
+        reddedilenler=ilk.reddedilenler,
+        inceleme_nedenleri=ilk.inceleme_nedenleri + [
+            f"tutarlılık: iki çağrı uyuşmadı ({sorted(k1)} vs {ikinci_ozet})"])
+
+
+async def _tek_cikarim(client: Any, model: str, metin: str, tid: Any, min_guven: float) -> "ExtractionResult":
     mesajlar: list[dict] = [{"role": "user", "content": _kullanici_mesaji(metin)}]
     son_hata = "araç çıktısı alınamadı"
     for deneme in range(2):

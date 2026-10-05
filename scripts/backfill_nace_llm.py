@@ -91,13 +91,14 @@ def _tekrar_oynat(tesvik, kapsam: NaceKapsami, min_guven: float) -> ExtractionRe
                             inceleme_nedenleri=inceleme)
 
 
-async def _isle(tesvik, sem, client, model, min_guven, kararlar=None):
+async def _isle(tesvik, sem, client, model, min_guven, kararlar=None, tutarlilik=False):
     if kararlar and tesvik.id in kararlar:
         return tesvik, _tekrar_oynat(tesvik, kararlar[tesvik.id], min_guven), None
     async with sem:
         try:
             return tesvik, await extract_nace_scope(
-                tesvik, client=client, model=model, min_guven=min_guven, tesvik_id=tesvik.id), None
+                tesvik, client=client, model=model, min_guven=min_guven, tesvik_id=tesvik.id,
+                tutarlilik_kontrolu=tutarlilik), None
         except ExtractionError as e:
             return tesvik, None, str(e)
         except Exception as e:  # ağ/kota: tek kayıt tüm koşuyu düşürmesin
@@ -121,7 +122,7 @@ async def calistir(db, *, dry_run=False, geri_al=False, yeniden=False,
                    supersede=True, limit=None, tesvik_id=None, tumunu=False,
                    min_guven=0.8, model=None, eszamanlilik=4,
                    log_yolu: Path | None = None, client=None,
-                   kararlar_logu: Path | None = None) -> dict:
+                   kararlar_logu: Path | None = None, tutarlilik: bool = False) -> dict:
     sayac = {"islenen": 0, "yazilan_satir": 0, "haric_satir": 0, "yatay": 0, "belirsiz": 0,
              "kisitli": 0, "atlanan": 0, "hata": 0, "cakisma": 0, "ezilen_otomatik": 0,
              "inceleme": 0, "silinen": 0, "atlanan_yatay": 0, "logdan_oynatilan": 0}
@@ -176,7 +177,7 @@ async def calistir(db, *, dry_run=False, geri_al=False, yeniden=False,
     kararlar = kararlari_yukle(kararlar_logu) if kararlar_logu else None
     if kararlar:
         sayac["logdan_oynatilan"] = sum(1 for t in hedefler if t.id in kararlar)
-    sonuclar = await asyncio.gather(*[_isle(t, sem, client, model, min_guven, kararlar) for t in hedefler])
+    sonuclar = await asyncio.gather(*[_isle(t, sem, client, model, min_guven, kararlar, tutarlilik) for t in hedefler])
 
     log = None
     if log_yolu:
@@ -271,6 +272,9 @@ def main() -> None:
     ap.add_argument("--log-dan-uygula", type=Path, metavar="LOG",
                     help="API'ye GİTMEDEN, önceki (dry-run) logdaki kararları uygula "
                          "(güvenlik ağları güncel metne karşı yeniden çalışır)")
+    ap.add_argument("--tek-cagri", action="store_true",
+                    help="Tutarlılık doğrulamasını kapat (varsayılan: SEKTOR_KISITLI kararlar "
+                         "ikinci bağımsız çağrıyla doğrulanır, +%%50 API maliyeti)")
     ap.add_argument("--supersede-yok", action="store_true",
                     help="Otomatik (başlık-regex) satırları ezme; yalnızca çakışmayı raporla")
     ap.add_argument("--tumunu", action="store_true", help="Kapalı (aktif_mi=False) programlar dahil")
@@ -290,7 +294,8 @@ def main() -> None:
             db, dry_run=a.dry_run, geri_al=a.geri_al, yeniden=a.yeniden,
             supersede=not a.supersede_yok, limit=a.limit, tesvik_id=a.tesvik_id,
             tumunu=a.tumunu, min_guven=a.min_guven, model=a.model,
-            eszamanlilik=a.eszamanlilik, log_yolu=a.log, kararlar_logu=a.log_dan_uygula))
+            eszamanlilik=a.eszamanlilik, log_yolu=a.log, kararlar_logu=a.log_dan_uygula,
+            tutarlilik=not a.tek_cagri))
     finally:
         db.close()
     for s in sonuc.pop("satirlar"):

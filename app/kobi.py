@@ -61,8 +61,8 @@ def kobi_sinifi(calisan: int | None, ciro: float | None,
             continue
         olculer = [d for d in (ciro, bilanco) if d is not None]
         if any(d <= limit for d in olculer):
-            return KobiSonucu(sinif, True, f"{calisan} çalışan, mali büyüklük ≤ {limit:,.0f} TL: {AD[sinif]}"
-                              .replace(",", "."))
+            limit_metin = f"{limit:,.0f}".replace(",", ".")
+            return KobiSonucu(sinif, True, f"{calisan} çalışan, mali büyüklük ≤ {limit_metin} TL: {AD[sinif]}")
         if not olculer:
             return KobiSonucu(None, False, "ciro/bilanço bilinmiyor, ölçek belirlenemedi")
         belirsiz_not = sinif

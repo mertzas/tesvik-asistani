@@ -27,6 +27,7 @@ from typing import Literal
 
 from pydantic import BaseModel, Field, field_validator
 
+from app.kobi import SIRA as OLCEK_SIRASI, kobi_sinifi
 from app.nace_9903 import il_bolgesi
 from app.nace_hiyerarsi import SektorUyumu, exclusion_status, normalize_nace, sector_match
 from app.urun_sektor_anahtarlari import kucult
@@ -117,6 +118,9 @@ class IncentiveProgram(BaseModel):
     max_employees: int | None = Field(None, ge=0)
     exclusive_target_group: bool = False
     target_group_tags: set[str] = Field(default_factory=set)
+    max_scale: Literal["mikro", "kucuk", "orta"] | None = Field(
+        None, description="Programa başvurabilecek EN BÜYÜK ölçek; 'orta' = KOBİ vasfı şart "
+                          "(7 Ağustos 2025 KOBİ tanımı, bkz. app/kobi.py)")
 
     # Puanlama girdileri
     priority_provinces: list[str] = Field(default_factory=list)
@@ -202,6 +206,18 @@ def hard_filter(profile: CompanyProfile, program: IncentiveProgram, *,
             if program.max_employees is not None and profile.employees > program.max_employees:
                 sebepler.append(
                     f"çalışan sayısı {profile.employees} > azami {program.max_employees}")
+
+    # 2b) Ölçek (KOBİ vasfı / azami ölçek)
+    if program.max_scale is not None:
+        olcek = kobi_sinifi(profile.employees, profile.annual_revenue)
+        if olcek.sinif is None:
+            dogrulanamayan.append("ölçek (KOBİ sınıfı belirlenemedi: çalışan/ciro eksik)")
+        elif OLCEK_SIRASI[olcek.sinif] > OLCEK_SIRASI[program.max_scale]:
+            if olcek.kesin:
+                sebepler.append(f"ölçek uygun değil: {olcek.aciklama}; program en çok "
+                                f"'{program.max_scale}' ölçeğine açık")
+            else:
+                dogrulanamayan.append(f"ölçek ({olcek.aciklama})")
 
     # 3) Zorunlu hedef kitle
     if program.exclusive_target_group:

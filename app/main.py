@@ -719,6 +719,21 @@ def nace_ara(q: str = SorguParam(..., min_length=1, max_length=80,
     }
 
 
+@app.get("/api/kobi-sinifi", dependencies=[Depends(ip_hiz_siniri(30))])
+def kobi_sinifi_endpoint(
+    calisan: int = SorguParam(..., ge=0, le=1_000_000),
+    ciro: float | None = SorguParam(None, ge=0, le=1e13, description="Yıllık net satış hasılatı (TL)"),
+    bilanco: float | None = SorguParam(None, ge=0, le=1e13, description="Mali bilanço toplamı (TL)"),
+):
+    """Ölçek sınıfı: mikro/küçük/orta/büyük (7 Ağustos 2025 KOBİ tanımı)."""
+    from app.kobi import KAYNAK as KOBI_KAYNAK, SINIFLAR, kobi_sinifi
+    sonuc = kobi_sinifi(calisan, ciro, bilanco)
+    return {"sinif": sonuc.sinif, "kesin": sonuc.kesin, "kobi_mi": sonuc.kobi_mi,
+            "aciklama": sonuc.aciklama, "esikler": {k: {"calisan_alti": v[0], "mali_limit_tl": v[1]}
+                                                    for k, v in SINIFLAR.items()},
+            "kaynak": KOBI_KAYNAK}
+
+
 @app.get("/api/nace/uygunluk", dependencies=[Depends(ip_hiz_siniri(30))])
 def nace_uygunluk(
     kod: str = SorguParam(..., max_length=12, description="NACE Rev.2.1 kodu, ör. 01.19.99"),

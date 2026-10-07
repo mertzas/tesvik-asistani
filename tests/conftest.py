@@ -68,6 +68,32 @@ def _hiz_sayaci_sifirla():
     sayac.temizle()
 
 
+@pytest.fixture(autouse=True)
+def _gercek_smtp_yok():
+    """Testler GERÇEK posta sunucusuna asla bağlanmaz (.env'de SMTP_* dolu olsa bile).
+
+    2026-10-08: .env'e SMTP bilgileri girilince test_smtp_yoksa_istek_yine_de_basarili gerçek EmailService ile
+    canlı SMTP bağlantısı denemeye başladı. Ayrı bir MonkeyPatch bağlamı kullanılır: testlerin kendi
+    `monkeypatch.undo()` çağrısı bu korumayı geri alamaz. smtplib yine de çağrılırsa test teardown'da düşer
+    (EmailService istisnaları yuttuğu için yalnızca kayıt tutmak yetmezdi)."""
+    import smtplib
+    from app.models import settings
+    denemeler = []
+
+    def _yasak(*a, **k):
+        denemeler.append(a)
+        raise ConnectionRefusedError("testlerde gerçek SMTP bağlantısı yasak")
+
+    with pytest.MonkeyPatch.context() as mp:
+        for ad in ("SMTP_SERVER", "SMTP_USER", "SMTP_PASSWORD"):
+            mp.setattr(settings, ad, "")
+            mp.delenv(ad, raising=False)
+        mp.setattr(smtplib, "SMTP", _yasak)
+        mp.setattr(smtplib, "SMTP_SSL", _yasak)
+        yield
+    assert not denemeler, f"test gerçek SMTP bağlantısı denedi: {denemeler}"
+
+
 @pytest.fixture
 def test_org_data():
     return {

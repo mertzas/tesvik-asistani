@@ -161,7 +161,8 @@ def test_sifirlama_dogrulanmamis_epostayi_dogrulanmis_yapar(client, test_org_dat
 
 def test_smtp_yoksa_istek_yine_de_basarili(client, test_org_data, monkeypatch):
     """SMTP yapılandırılmamışken uç noktalar hata vermez; yalnızca günlüğe uyarı düşer."""
-    monkeypatch.undo()  # e-posta yakalayıcıyı geri al: gerçek EmailService, SMTP ayarsız
+    monkeypatch.undo()  # e-posta yakalayıcıyı geri al: gerçek EmailService, SMTP ayarsız (conftest boşaltır)
+    assert EmailService().send_email("a@example.com", "konu", "gövde") is False, "SMTP ayarsız sayılmalı"
     _kayit(client, test_org_data)
     assert client.post("/api/auth/sifre-unuttum", json={"email": test_org_data["email"]}).status_code == 200
 

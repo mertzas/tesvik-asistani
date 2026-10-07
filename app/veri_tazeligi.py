@@ -56,63 +56,63 @@ class KaynakTanimi:
 KAYNAKLAR: tuple[KaynakTanimi, ...] = (
     KaynakTanimi(
         anahtar="hal_fiyatlari",
-        baslik="Hal fiyatlari (HKS)",
+        baslik="Hal fiyatları (HKS)",
         model=HalFiyati,
         tarih_alani="tarih",
         taze_gun=7,
         uyari_gun=30,
-        aciklama="Ticaret Bakanligi Hal Kayit Sistemi gunluk toptan fiyatlari. "
-                 "Hafta sonu ve resmi tatillerde yayin olmadigi icin 1-3 gunluk "
+        aciklama="Ticaret Bakanlığı Hal Kayıt Sistemi günlük toptan fiyatları. "
+                 "Hafta sonu ve resmî tatillerde yayın olmadığı için 1-3 günlük "
                  "gecikme normaldir.",
         tazeleme_komutu="python -m app.scrapers.hal_urun_fiyat",
     ),
     KaynakTanimi(
         anahtar="ihracat_fiyatlari",
-        baslik="Ihracat referans fiyatlari",
+        baslik="İhracat referans fiyatları",
         model=IhracatFiyati,
         tarih_alani="tarih",
         taze_gun=14,
         uyari_gun=45,
-        aciklama="HKS Ihracat Fiyat Bulteni - gumruk beyaninda kullanilan "
-                 "resmi referans fiyatlar.",
+        aciklama="HKS İhracat Fiyat Bülteni - gümrük beyanında kullanılan "
+                 "resmî referans fiyatlar.",
         tazeleme_komutu="python -m app.scrapers.hal_ihracat_fiyat",
     ),
     KaynakTanimi(
         anahtar="makro",
-        baslik="Makro gostergeler (TUFE, faiz)",
+        baslik="Makro göstergeler (TÜFE, faiz)",
         model=MacroIndicator,
         tarih_alani="guncelleme_tarihi",
         # TUIK enflasyonu her ayin basinda aciklanir; 45 gunu asmissa en az
         # bir yayin kacirilmis demektir.
         taze_gun=35,
         uyari_gun=70,
-        aciklama="TUIK tuketici fiyat endeksi ve TCMB politika faizi. Butce "
-                 "onerisindeki enflasyon projeksiyonu bu degerlere dayanir.",
+        aciklama="TÜİK tüketici fiyat endeksi ve TCMB politika faizi. Bütçe "
+                 "önerisindeki enflasyon projeksiyonu bu değerlere dayanır.",
         tazeleme_komutu="python -m app.scrapers.tuik_macro",
     ),
     KaynakTanimi(
         anahtar="sektor_benchmark",
-        baslik="Sektor kar oranlari (TCMB)",
+        baslik="Sektör kâr oranları (TCMB)",
         model=SectorBenchmark,
         tarih_alani="guncelleme_tarihi",
         # TCMB Sektor Bilancolari YILDA BIR yayinlanir; burada 1 yillik
         # veri bayat degil, normaldir.
         taze_gun=400,
         uyari_gun=550,
-        aciklama="TCMB Sektor Bilancolari'ndan net kar/net satis oranlari. "
-                 "Kaynak yilda bir yayinlandigi icin bir yila kadar eski "
-                 "olmasi beklenen durumdur.",
+        aciklama="TCMB Sektör Bilançoları'ndan net kâr/net satış oranları. "
+                 "Kaynak yılda bir yayımlandığı için bir yıla kadar eski "
+                 "olması beklenen durumdur.",
         tazeleme_komutu="python -m app.scrapers.tuik_macro",
     ),
     KaynakTanimi(
         anahtar="tesvikler",
-        baslik="Tesvik kayitlari",
+        baslik="Teşvik kayıtları",
         model=Tesvik,
         tarih_alani="guncelleme_tarihi",
         taze_gun=30,
         uyari_gun=90,
-        aciklama="KOSGEB/TUBITAK/KGF/Tarim Bakanligi program kayitlari. "
-                 "Programlarin acilis-kapanis takvimi degistigi icin duzenli "
+        aciklama="KOSGEB/TÜBİTAK/KGF/Tarım Bakanlığı program kayıtları. "
+                 "Programların açılış-kapanış takvimi değiştiği için düzenli "
                  "tazelenmesi gerekir.",
         tazeleme_komutu="python -m app.scrapers.run_all",
     ),
@@ -198,25 +198,25 @@ def _olc(db: Session, tanim: KaynakTanimi) -> Tazelik:
             anahtar=tanim.anahtar, baslik=tanim.baslik, son_guncelleme=None,
             yas_gun=None, durum="veri_yok", kayit_sayisi=0,
             aciklama=tanim.aciklama, tazeleme_komutu=tanim.tazeleme_komutu,
-            uyari="Veri tablosu okunamadi.",
+            uyari="Veri tablosu okunamadı.",
         )
 
     yas = _yas_gun(en_son)
 
     if sayi == 0 or yas is None:
         durum = "veri_yok"
-        uyari = "Bu kaynakta hic veri yok; ilgili toplayici hic calistirilmamis olabilir."
+        uyari = "Bu kaynakta hiç veri yok; ilgili toplayıcı hiç çalıştırılmamış olabilir."
     elif yas <= tanim.taze_gun:
         durum, uyari = "taze", None
     elif yas <= tanim.uyari_gun:
         durum = "eskiyor"
-        uyari = (f"Veri {yas} gunluk. Beklenen tazeleme araligi {tanim.taze_gun} gun; "
-                 f"yakinda guncellenmeli.")
+        uyari = (f"Veri {yas} günlük. Beklenen tazeleme aralığı {tanim.taze_gun} gün; "
+                 f"yakında güncellenmeli.")
     else:
         durum = "bayat"
-        uyari = (f"Veri {yas} gunluk ve beklenen {tanim.taze_gun} gunluk araligi "
-                 f"asmis durumda. Bu kaynaga dayanan hesaplamalari eski veri "
-                 f"uyarisiyla degerlendirin.")
+        uyari = (f"Veri {yas} günlük ve beklenen {tanim.taze_gun} günlük aralığı "
+                 f"aşmış durumda. Bu kaynağa dayanan hesaplamaları eski veri "
+                 f"uyarısıyla değerlendirin.")
 
     son = en_son if isinstance(en_son, datetime) else (
         datetime.combine(en_son, datetime.min.time(), tzinfo=timezone.utc)

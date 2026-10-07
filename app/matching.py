@@ -228,6 +228,17 @@ def _kosgeb_onayina_bagli_mi(t) -> bool:
     return bool(_KOSGEB_BAGIMLI.search(metin))
 
 
+# Kartta "hedef eşleşmesi" gerekçesinin öneki; ölçüm betikleri (docs/olcum/.../G_persona_esles.py) bu sabite bakar.
+HEDEF_GEREKCE_ONEKI = "Belirttiğiniz hedeflerle eşleşiyor:"
+# Gerekçede iç anahtar ("yatirim") yerine paneldeki etiket (dashboard.html .p-hedef) gösterilir.
+HEDEF_ETIKETLERI = {"yatirim": "yatırım", "ihracat": "ihracat", "arge": "Ar-Ge", "istihdam": "istihdam",
+                    "makine": "makine alımı", "sulama": "sulama sistemi", "hayvan": "hayvancılık",
+                    "organik": "organik tarım", "e-ticaret": "e-ticaret"}
+
+
+def _etiketler(anahtarlar) -> str:
+    return ", ".join(HEDEF_ETIKETLERI.get(a, a) for a in anahtarlar)
+
 # Profildeki tarım hedefi -> kaydın tarım alt kategorisi.
 HEDEF_TARIM_KATEGORISI = {"makine": "makinelestirme", "sulama": "sulama", "hayvan": "hayvancilik",
                           "organik": "organik"}
@@ -318,13 +329,13 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
         if ortak_sektor or "genel" in tesvik_sektorler or hedef_sektor:
             if ortak_sektor:
                 sektor_bonusu = 0.6
-                gerekce.append(f"Sektorunuz ({profil.sektor}) bu destegin kapsamina uygun.")
+                gerekce.append(f"Sektörünüz ({profil.sektor}) bu desteğin kapsamına uygun.")
             elif hedef_sektor:
                 sektor_bonusu = 0.3
-                gerekce.append(f"Hedefiniz ({', '.join(sorted(hedef_sektor))}) bu destegin alanina giriyor.")
+                gerekce.append(f"Hedefiniz ({_etiketler(sorted(hedef_sektor))}) bu desteğin alanına giriyor.")
             else:
                 sektor_bonusu = 0.2
-                gerekce.append("Bu destek sektor bagimsiz genel bir programdir.")
+                gerekce.append("Bu destek sektörden bağımsız genel bir programdır.")
             skor += sektor_bonusu
         else:
             continue  # sektor hic uyusmuyorsa listeye alma
@@ -388,14 +399,14 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
             hedef_eslesme = _hedef_eslesmeleri(t, profil_hedefler, kriterler.get("alt_kategori"))
             if hedef_eslesme:
                 skor += 0.3
-                gerekce.append(f"Belirttiginiz hedef(ler) ile eslesiyor: {', '.join(hedef_eslesme)}.")
+                gerekce.append(f"{HEDEF_GEREKCE_ONEKI} {_etiketler(hedef_eslesme)}.")
             else:
-                eksik.append("Belirttiginiz hedeflerle dogrudan eslesme bulunamadi, detaylari kontrol edin.")
+                eksik.append("Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.")
 
         urun_turu = (profil.urun_turu or "").strip().lower()
         if urun_turu and urun_turu in hedef_metni:
             skor += 0.15
-            gerekce.append(f"Yetistirdiginiz urun/faaliyet ({profil.urun_turu}) bu destekte gecmektedir.")
+            gerekce.append(f"Yetiştirdiğiniz ürün/faaliyet ({profil.urun_turu}) bu destekte geçiyor.")
 
         # Bazi tarim destekleri dar bir alt kategoriye ozeldir (orn. sadece
         # hayvancilik). Kullanicinin profilinde YAPILANDIRILMIS bir kategori
@@ -473,7 +484,7 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
                 # uyusmayan kayitlara CEZA UYGULANMIYOR.
                 skor += 0.25
                 gerekce.append(
-                    f"Girdiginiz urun ('{profil.urun_turu}') bu destegin kategorisine "
+                    f"Girdiğiniz ürün ('{profil.urun_turu}') bu desteğin kategorisine "
                     f"('{alt_kategori}') giriyor."
                 )
             else:
@@ -485,15 +496,15 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
                 )
                 if serbest_metin_isareti:
                     skor += 0.2
-                    gerekce.append(f"'{alt_kategori}' kategorisiyle eslesiyor.")
+                    gerekce.append(f"'{alt_kategori}' kategorisiyle eşleşiyor.")
                 elif urunden_kategori is not None:
                     # Urun baska bir kategoriye isaret ediyor. Ceza yerine
                     # sadece bonus vermiyoruz: urun bilgisi acilir liste kadar
                     # kesin olmadigi icin yanlis olma ihtimali var.
                     eksik.append(
-                        f"Bu destek '{alt_kategori}' kategorisine ozeldir; girdiginiz "
-                        f"urun ('{profil.urun_turu}') '{urunden_kategori}' kategorisine "
-                        "isaret ediyor."
+                        f"Bu destek '{alt_kategori}' kategorisine özeldir; girdiğiniz "
+                        f"ürün ('{profil.urun_turu}') '{urunden_kategori}' kategorisine "
+                        "işaret ediyor."
                     )
                 elif genislik == "dar":
                     skor -= 0.1
@@ -505,9 +516,9 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
         if profil.calisan_sayisi is not None:
             skor += 0.1
             if profil.calisan_sayisi == 0:
-                gerekce.append("Sahis isletmesi / tek kisilik faaliyet olarak degerlendirildi.")
+                gerekce.append("Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.")
         else:
-            eksik.append("Calisan sayinizi girerseniz eslesme dogrulugu artar.")
+            eksik.append("Çalışan sayınızı girerseniz eşleşme doğruluğu artar.")
 
         # Ceza 1,0 tavanından SONRA düşülür: tavan öncesi düşülse 1,3 -> 1,25 -> 1,0 olur, etkisi kalmaz.
         ceza = 0.0

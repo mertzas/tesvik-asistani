@@ -105,7 +105,7 @@ def confirm_checkout_session(org_id: str, session_id: str, db: Session) -> dict:
     session = stripe.checkout.Session.retrieve(session_id)
 
     if session.client_reference_id != str(org.id):
-        raise ValueError("Bu odeme oturumu bu organizasyona ait degil")
+        raise ValueError("Bu ödeme oturumu bu organizasyona ait değil")
 
     if session.payment_status != "paid" and session.status != "complete":
         raise ValueError(f"Odeme henuz tamamlanmadi (durum: {session.status})")

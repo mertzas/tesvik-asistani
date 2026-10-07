@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 sys.path.insert(0, os.path.abspath(os.path.join(HERE, "..", "..", "..")))
 
 from app import rag  # noqa: E402
-from app.matching import esles  # noqa: E402
+from app.matching import HEDEF_GEREKCE_ONEKI, esles  # noqa: E402
 from app.models import FinancialProfile, SessionLocal  # noqa: E402
 
 A3 = os.path.join(HERE, "..", "2026-10-07-asama3")
@@ -66,7 +66,7 @@ def calistir():
         es = esles(p, db)
         sonuc["esles"][ad] = [
             dict(sira=i + 1, id=e.tesvik.id, skor=round(e.skor, 3), baslik=e.tesvik.baslik[:70],
-                 hedef=any("hedef(ler) ile eslesiyor" in g for g in (e.gerekce or [])),
+                 hedef=any(g.startswith(HEDEF_GEREKCE_ONEKI) for g in (e.gerekce or [])),
                  tahmini=getattr(e, "tahmini_tutar", None))
             for i, e in enumerate(es)]
     for ad, soru in SORULAR:

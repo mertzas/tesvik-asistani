@@ -51,7 +51,7 @@ def kobi_sinifi(calisan: int | None, ciro: float | None,
     if calisan is None:
         return KobiSonucu(None, False, "çalışan sayısı bilinmiyor, ölçek belirlenemedi")
     if calisan < 0:
-        raise ValueError("calisan negatif olamaz")
+        raise ValueError("Çalışan sayısı negatif olamaz")
     if calisan >= SINIFLAR["orta"][0]:
         return KobiSonucu("buyuk", True, f"{calisan} çalışan ≥ {SINIFLAR['orta'][0]}: KOBİ değil")
 

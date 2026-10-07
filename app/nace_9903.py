@@ -152,64 +152,64 @@ class AsgariEsik:
 EK3_A_ESIKLERI: tuple[AsgariEsik, ...] = (
     AsgariEsik(
         nace_kodu="01.19.99",
-        yatirim_konusu="Sera yatirimi (ortualti bitkisel uretim)",
+        yatirim_konusu="Sera yatırımı (örtüaltı bitkisel üretim)",
         birim="dekar",
         bolge_esikleri={1: 20, 2: 20, 3: 15, 4: 10, 5: 10, 6: 5},
-        ek_not="Yapay isikla fotosentez saglanan kontrollu bitkisel uretim "
-               "yatirimlarinda katmanlarin toplam alaninin asgari 1.000 m2 "
-               "olmasi sarti aranir. Diger yatirimlar desteklenmez.",
+        ek_not="Yapay ışıkla fotosentez sağlanan kontrollü bitkisel üretim "
+               "yatırımlarında katmanların toplam alanının asgari 1.000 m² "
+               "olması şartı aranır. Diğer yatırımlar desteklenmez.",
     ),
     AsgariEsik(
         nace_kodu="01.41.31",
-        yatirim_konusu="Sutu sagilan buyukbas hayvan yetistiriciligi",
+        yatirim_konusu="Sütü sağılan büyükbaş hayvan yetiştiriciliği",
         birim="adet/dönem",
         bolge_esikleri={1: 500, 2: 500, 3: 500, 4: 300, 5: 300, 6: 150},
-        ek_not="Damizlik veya sut yonlu olmasi gerekir. Tevsi ve komple yeni "
-               "yatirimlar yem bitkileri yetistiriciligi ve/veya yem tesisi "
-               "ve/veya sut isleme yatirimlari ile entegre edilebilir.",
+        ek_not="Damızlık veya süt yönlü olması gerekir. Tevsi ve komple yeni "
+               "yatırımlar yem bitkileri yetiştiriciliği ve/veya yem tesisi "
+               "ve/veya süt işleme yatırımları ile entegre edilebilir.",
     ),
     AsgariEsik(
         nace_kodu="01.42.09",
-        yatirim_konusu="Diger sigir ve manda yetistiriciligi (et yonlu)",
+        yatirim_konusu="Diğer sığır ve manda yetiştiriciliği (et yönlü)",
         birim="adet/dönem",
         bolge_esikleri={1: 500, 2: 500, 3: 500, 4: 500, 5: 500, 6: 150},
-        ek_not="Tevsi ve komple yeni yatirimlar; yem bitkileri yetistiriciligi "
-               "ve/veya yem tesisi ve/veya kesimhane yatirimlari ile entegre "
+        ek_not="Tevsi ve komple yeni yatırımlar; yem bitkileri yetiştiriciliği "
+               "ve/veya yem tesisi ve/veya kesimhane yatırımları ile entegre "
                "edilebilir.",
     ),
     AsgariEsik(
         nace_kodu="01.45.01",
-        yatirim_konusu="Koyun ve keci (davar) yetistiriciligi",
+        yatirim_konusu="Koyun ve keçi (davar) yetiştiriciliği",
         birim="adet/dönem",
         bolge_esikleri={1: 2500, 2: 2500, 3: 2500, 4: 1500, 5: 1500, 6: 1000},
-        ek_not="Damizlik veya et yonlu veya sut yonlu olmasi gerekir.",
+        ek_not="Damızlık veya et yönlü veya süt yönlü olması gerekir.",
     ),
     AsgariEsik(
         nace_kodu="01.47.01",
-        yatirim_konusu="Kumes hayvanlari yetistiriciligi (et yonlu)",
+        yatirim_konusu="Kümes hayvanları yetiştiriciliği (et yönlü)",
         birim="adet/dönem",
         bolge_esikleri={1: 200_000, 2: 200_000, 3: 200_000, 4: 200_000,
                         5: 200_000, 6: 100_000},
-        ek_not="Et yonlu kumes hayvanlari yetistiriciliginin KESIMHANE ile "
-               "entegre olmasi sarti aranir. Damizlik kumes hayvanlari "
-               "yetistiriciliginde kulucka hane ile entegre olma sarti vardir.",
+        ek_not="Et yönlü kümes hayvanları yetiştiriciliğinin KESİMHANE ile "
+               "entegre olması şartı aranır. Damızlık kümes hayvanları "
+               "yetiştiriciliğinde kuluçkahane ile entegre olma şartı vardır.",
     ),
     AsgariEsik(
         nace_kodu="01.47.03",
-        yatirim_konusu="Kumes hayvanlarindan yumurta uretilmesi",
+        yatirim_konusu="Kümes hayvanlarından yumurta üretilmesi",
         birim="adet/dönem",
         bolge_esikleri={1: 200_000, 2: 200_000, 3: 200_000, 4: 200_000,
                         5: 200_000, 6: 100_000},
-        ek_not="Tevsi ve komple yeni yatirimlar soguk hava deposu ve/veya "
-               "yumurta tasnif-paketleme yatirimlari ile entegre edilebilir.",
+        ek_not="Tevsi ve komple yeni yatırımlar soğuk hava deposu ve/veya "
+               "yumurta tasnif-paketleme yatırımları ile entegre edilebilir.",
     ),
     AsgariEsik(
         nace_kodu="03.2",
-        yatirim_konusu="Su urunleri yetistiriciligi",
+        yatirim_konusu="Su ürünleri yetiştiriciliği",
         birim="",
         bolge_esikleri={},
-        ek_not="Karar metninde bolge bazli asgari olcek sarti belirtilmemistir. "
-               "Tevsi ve komple yeni yatirimlar balik yemi tesisi ile entegre "
+        ek_not="Karar metninde bölge bazlı asgari ölçek şartı belirtilmemiştir. "
+               "Tevsi ve komple yeni yatırımlar balık yemi tesisi ile entegre "
                "edilebilir.",
     ),
 )
@@ -245,8 +245,8 @@ def _ek3_paketi() -> dict:
             # dosyanin depoda olmamasi gercekten olmustu: .gitignore'daki
             # ciplak "data/" kalibi app/data/ dizinini de disliyordu.
             logger.error(
-                "9903 EK-3 veri dosyasi okunamadi (%s): %s: %s. NACE uygunluk "
-                "sorgulari 'liste yuklenemedi' olarak yanitlanacak.",
+                "9903 EK-3 veri dosyası okunamadı (%s): %s: %s. NACE uygunluk "
+                "sorguları 'liste yüklenemedi' olarak yanıtlanacak.",
                 _VERI_YOLU, type(e).__name__, e)
             _EK3_ONBELLEK = {"kayitlar": [], "bolum_sartlari": {}, "_yuklenemedi": True}
     return _EK3_ONBELLEK
@@ -351,8 +351,8 @@ def olcek_uygunlugu(nace_kodu: str, il: str | None,
             nace_kodu=esik.nace_kodu, yatirim_konusu=esik.yatirim_konusu,
             il=il, bolge=None, asgari=None, birim=esik.birim,
             kullanici_olcegi=olcek, durum="bolge_bilinmiyor",
-            aciklama="Iliniz taninmadigi icin bolge belirlenemedi; asgari sart "
-                     "bolgeye gore degistigi icin karsilastirma yapilamadi.",
+            aciklama="İliniz tanınmadığı için bölge belirlenemedi; asgari şart "
+                     "bölgeye göre değiştiği için karşılaştırma yapılamadı.",
             ek_not=esik.ek_not,
         )
 
@@ -361,8 +361,8 @@ def olcek_uygunlugu(nace_kodu: str, il: str | None,
             nace_kodu=esik.nace_kodu, yatirim_konusu=esik.yatirim_konusu,
             il=il, bolge=bolge, asgari=None, birim=esik.birim,
             kullanici_olcegi=olcek, durum="esik_yok",
-            aciklama="Karar metninde bu yatirim konusu icin bolge bazli asgari "
-                     "olcek sarti belirtilmemistir.",
+            aciklama="Karar metninde bu yatırım konusu için bölge bazlı asgari "
+                     "ölçek şartı belirtilmemiştir.",
             ek_not=esik.ek_not,
         )
 
@@ -372,8 +372,8 @@ def olcek_uygunlugu(nace_kodu: str, il: str | None,
             nace_kodu=esik.nace_kodu, yatirim_konusu=esik.yatirim_konusu,
             il=il, bolge=bolge, asgari=None, birim=esik.birim,
             kullanici_olcegi=olcek, durum="esik_yok",
-            aciklama=f"{bolge}. bolge icin Karar metninde asgari olcek sarti "
-                     "tanimlanmamistir.",
+            aciklama=f"{bolge}. bölge için Karar metninde asgari ölçek şartı "
+                     "tanımlanmamıştır.",
             ek_not=esik.ek_not,
         )
 
@@ -382,9 +382,9 @@ def olcek_uygunlugu(nace_kodu: str, il: str | None,
             nace_kodu=esik.nace_kodu, yatirim_konusu=esik.yatirim_konusu,
             il=il, bolge=bolge, asgari=asgari, birim=esik.birim,
             kullanici_olcegi=None, durum="olcek_bilinmiyor",
-            aciklama=f"{il} {bolge}. bolgede; bu yatirim konusu icin asgari "
-                     f"{asgari:,.0f} {esik.birim} sarti var. Olceginizi "
-                     "girerseniz karsilayip karsilamadiginizi soyleyebilirim."
+            aciklama=f"{il} {bolge}. bölgede; bu yatırım konusu için asgari "
+                     f"{asgari:,.0f} {esik.birim} şartı var. Ölçeğinizi "
+                     "girerseniz karşılayıp karşılamadığınızı söyleyebilirim."
                      .replace(",", "."),
             ek_not=esik.ek_not,
         )
@@ -394,9 +394,9 @@ def olcek_uygunlugu(nace_kodu: str, il: str | None,
             nace_kodu=esik.nace_kodu, yatirim_konusu=esik.yatirim_konusu,
             il=il, bolge=bolge, asgari=asgari, birim=esik.birim,
             kullanici_olcegi=olcek, durum="uygun",
-            aciklama=f"{il} {bolge}. bolgede asgari sart {asgari:,.0f} "
-                     f"{esik.birim}; sizin olceginiz {olcek:,.0f} "
-                     f"{esik.birim} - sarti karsiliyorsunuz."
+            aciklama=f"{il} {bolge}. bölgede asgari şart {asgari:,.0f} "
+                     f"{esik.birim}; sizin ölçeğiniz {olcek:,.0f} "
+                     f"{esik.birim} - şartı karşılıyorsunuz."
                      .replace(",", "."),
             ek_not=esik.ek_not,
         )
@@ -406,9 +406,9 @@ def olcek_uygunlugu(nace_kodu: str, il: str | None,
         nace_kodu=esik.nace_kodu, yatirim_konusu=esik.yatirim_konusu,
         il=il, bolge=bolge, asgari=asgari, birim=esik.birim,
         kullanici_olcegi=olcek, durum="yetersiz",
-        aciklama=f"{il} {bolge}. bolgede asgari sart {asgari:,.0f} "
-                 f"{esik.birim}; sizin olceginiz {olcek:,.0f} {esik.birim}. "
-                 f"Yatirim tesvik belgesi icin {eksik:,.0f} {esik.birim} daha "
+        aciklama=f"{il} {bolge}. bölgede asgari şart {asgari:,.0f} "
+                 f"{esik.birim}; sizin ölçeğiniz {olcek:,.0f} {esik.birim}. "
+                 f"Yatırım teşvik belgesi için {eksik:,.0f} {esik.birim} daha "
                  "gerekiyor.".replace(",", "."),
         ek_not=esik.ek_not,
     )

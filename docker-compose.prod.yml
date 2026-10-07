@@ -10,6 +10,10 @@
 # Kullanim:
 #   cp .env.example .env    # ve degerleri doldurun
 #   docker compose -f docker-compose.prod.yml up -d --build
+#
+# Servisler: db (PostgreSQL), redis (hiz siniri sayaclari - cok iscili web icin
+# zorunlu), web (uvicorn --workers 2; zamanlayici yalnizca kilidi alan iscide),
+# backup (gunluk pg_dump, ./backups altina, RETENTION_DAYS gun tutar), nginx.
 
 services:
   db:
@@ -32,6 +36,18 @@ services:
       retries: 5
     restart: unless-stopped
 
+  redis:
+    image: redis:7-alpine
+    command: ["redis-server", "--save", "", "--appendonly", "no", "--maxmemory", "64mb", "--maxmemory-policy", "allkeys-lru"]
+    expose:
+      - "6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
   web:
     build:
       context: .
@@ -41,15 +57,32 @@ services:
       SECRET_KEY: ${SECRET_KEY:?SECRET_KEY gerekli - "openssl rand -hex 32" ile uretin}
       STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY:-}
       STRIPE_WEBHOOK_SECRET: ${STRIPE_WEBHOOK_SECRET:-}
+      STRIPE_PRICE_PRO: ${STRIPE_PRICE_PRO:-}
+      STRIPE_PRICE_BUSINESS: ${STRIPE_PRICE_BUSINESS:-}
       ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
+      CLAUDE_MODEL: ${CLAUDE_MODEL:-claude-sonnet-5}
       EVDS_API_KEY: ${EVDS_API_KEY:-}
       APP_URL: ${APP_URL:?APP_URL gerekli - OAuth callback adresleri buna dayanir}
+      # CORS: bos birakilirsa APP_URL kullanilir (app/main.py izinli_originler).
+      ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-}
+      ACCESS_TOKEN_EXPIRE_DAYS: ${ACCESS_TOKEN_EXPIRE_DAYS:-7}
+      REDIS_URL: redis://redis:6379/0
+      SCHEDULER_ENABLED: ${SCHEDULER_ENABLED:-true}
+      IKAS_CLIENT_ID: ${IKAS_CLIENT_ID:-}
+      IKAS_CLIENT_SECRET: ${IKAS_CLIENT_SECRET:-}
+      IKAS_MOCK_MODE: ${IKAS_MOCK_MODE:-true}
+      SMTP_SERVER: ${SMTP_SERVER:-}
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_USER: ${SMTP_USER:-}
+      SMTP_PASSWORD: ${SMTP_PASSWORD:-}
       ENVIRONMENT: production
       LOG_LEVEL: ${LOG_LEVEL:-INFO}
     expose:
       - "8000"
     depends_on:
       db:
+        condition: service_healthy
+      redis:
         condition: service_healthy
     # Kaynak kodu bind mount EDILMIYOR: uretimde imajin icindeki kod
     # calismali. Onceki hali ./app'i baglayarak imaji anlamsiz kiliyor ve
@@ -60,6 +93,33 @@ services:
       timeout: 10s
       retries: 3
       start_period: 40s
+    restart: unless-stopped
+
+  # Gunluk yedek: her 24 saatte pg_dump -> ./backups/tesvik_YYYYmmdd_HHMMSS.sql.gz,
+  # RETENTION_DAYS gunden eskiler silinir. Geri yukleme: scripts/restore.sh (DEPLOYMENT.md).
+  backup:
+    image: postgres:15-alpine
+    environment:
+      PGPASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_DB: ${POSTGRES_DB:-tesvik_db}
+      RETENTION_DAYS: ${BACKUP_RETENTION_DAYS:-30}
+    volumes:
+      - ./backups:/backups
+    depends_on:
+      db:
+        condition: service_healthy
+    entrypoint: >
+      sh -c 'while true; do
+        f=/backups/tesvik_$(date +%Y%m%d_%H%M%S).sql.gz;
+        if pg_dump -h db -U "$$POSTGRES_USER" "$$POSTGRES_DB" | gzip > "$$f" && gunzip -t "$$f"; then
+          echo "yedek alindi: $$f";
+        else
+          echo "YEDEK BASARISIZ: $$f" >&2; rm -f "$$f";
+        fi;
+        find /backups -name "tesvik_*.sql.gz" -mtime +$$RETENTION_DAYS -delete;
+        sleep 86400;
+      done'
     restart: unless-stopped
 
   nginx:
@@ -77,12 +137,6 @@ services:
     depends_on:
       - web
     restart: unless-stopped
-
-# NOT: redis servisi kaldirildi. Kodda hicbir yerde redis kullanilmiyor
-# (dogrulandi 2026-09-26: "import redis" gecen tek bir dosya yok). Bos bir
-# kapsayici hem kaynak tuketiyor hem de 6379'u aciyordu. Hiz sinirlama
-# sayaclari suan surec-ici (app/rate_limit.py); cok isçili dagitima
-# geçildiginde redis geri eklenmesi gerekecek.
 
 volumes:
   postgres_data:

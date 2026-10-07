@@ -3,7 +3,6 @@ import logging
 import os
 from datetime import datetime, timezone
 from typing import List
-from uuid import UUID
 
 import stripe
 from fastapi import FastAPI, HTTPException, Depends, Request, status
@@ -17,7 +16,7 @@ from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
 
-from app.models import (init_db, get_db, Organization, User, Query, Tesvik, FinancialProfile, PlanType,
+from app.models import (init_db, get_db, Organization, User, Query, FinancialProfile, PlanType,
                         MacroIndicator, IkasBaglanti, settings)
 from app.models_cilek import Parsel, SogukZincirOkuma
 from app.auth import (
@@ -35,7 +34,6 @@ from app.schemas import (
     AskQuestion,
     AskResponse,
     SearchResult,
-    UserResponse,
     OrganizationResponse,
     PlanUpgrade,
     QueryResponse,
@@ -59,7 +57,8 @@ from app.budget import hesapla as butce_hesapla
 from app.cilek_panel import router as cilek_router
 from app.ikas_panel import router as ikas_router
 from app.eticaret_destek_hesaplayici import eticaret_destek_hesapla
-from app.rate_limit import org_hiz_siniri, ip_hiz_siniri
+from app.rate_limit import org_hiz_siniri, ip_hiz_siniri, sayac as hiz_sayaci
+from sqlalchemy import text
 from app.logging_setup import kur as gunluklemeyi_kur
 from app.veri_tazeligi import tazelik_raporu, genel_durum
 from app.nace_9903 import (
@@ -81,7 +80,7 @@ from app.tesvik_9903_hesap import (
 
 gunluklemeyi_kur()
 logger = logging.getLogger(__name__)
-from app.scheduler import setup_scheduler
+from app.scheduler import scheduler_kilidi_al, setup_scheduler
 
 # Global scheduler instance
 _scheduler = None
@@ -159,13 +158,16 @@ def on_startup():
     global _scheduler
     secret_key_kontrolu()
     init_db()
-    _scheduler = setup_scheduler()
-    _scheduler.start()
+    # Cok iscili dagitimda yalnizca kilidi alan isci scraper islerini calistirir.
+    if settings.SCHEDULER_ENABLED and scheduler_kilidi_al():
+        _scheduler = setup_scheduler()
+        _scheduler.start()
+    else:
+        logger.info("Zamanlayici bu surecte kapali (SCHEDULER_ENABLED=%s)", settings.SCHEDULER_ENABLED)
 
 
 @app.on_event("shutdown")
 def on_shutdown():
-    global _scheduler
     if _scheduler and _scheduler.running:
         _scheduler.shutdown()
 
@@ -1088,9 +1090,19 @@ def veri_durumu(db: Session = Depends(get_db)):
 def health_check(db: Session = Depends(get_db)):
     # Saglik kontrolu veri tazeligini de bildiriyor ki izleme sistemi
     # scraper'lar sessizce durdugunda haberdar olsun.
+    # Veritabanina gercekten dokunulur: baglanti kopuksa 503 (compose/izleme healthcheck'i
+    # bunu okur; onceki hali DB olmadan da "ok" diyordu).
+    try:
+        db.execute(text("SELECT 1"))
+    except Exception:
+        logger.exception("Saglik kontrolu: veritabanina ulasilamiyor")
+        return JSONResponse(status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                            content={"status": "db_erisilemiyor", "version": "2.0.0"})
     try:
         durum = genel_durum(tazelik_raporu(db))
     except Exception:
         logger.exception("Saglik kontrolunde veri tazeligi okunamadi")
         durum = "bilinmiyor"
-    return {"status": "ok", "version": "2.0.0", "veri_durumu": durum}
+    return {"status": "ok", "version": "2.0.0", "veri_durumu": durum,
+            "hiz_siniri": "redis" if type(hiz_sayaci).__name__ == "_RedisSayac" else "surec_ici",
+            "zamanlayici": bool(_scheduler is not None and getattr(_scheduler, "running", False))}

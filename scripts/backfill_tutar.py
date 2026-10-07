@@ -11,7 +11,6 @@ etiketleniyor.
 
 Format: "₺<min> - ₺<max>" (matching._tutari_parse bu formati ayristirir).
 """
-import re
 import sys
 from pathlib import Path
 

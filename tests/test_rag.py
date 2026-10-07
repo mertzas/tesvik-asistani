@@ -11,7 +11,6 @@ Testler ağ çağrısı yapmaz: Claude katmanı taklit edilir (monkeypatch), bö
 hem API anahtarı olmadan çalışır hem de "Claude çökerse ne olur" yolu gerçekten
 sınanır - bu yol üretimde sessizce devreye giriyor.
 """
-import pytest
 
 from app import rag
 from app.models import Tesvik

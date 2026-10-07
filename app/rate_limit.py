@@ -8,12 +8,14 @@ ornegin /api/ikas/senkronize her cagrildiginda dis API'ye gidip DB yazar,
 /api/butce-onerisi ve /api/eslesme her cagrida tum tesvik tablosunu tarar.
 Bu endpoint'lerin hicbirinde kisa pencereli koruma YOKTU.
 
-SINIRLAMA - bilincli tercih: sayaclar SUREC BELLEGINDE tutulur. Tek
-surecli calismada yeterli; birden fazla worker/instance ile calisildiginda
-her surecin kendi sayaci olur ve efektif limit worker sayisi kadar artar.
-Gercek dagitik limit icin Redis gerekir - o asamaya gelindiginde
-_Sayac sinifi Redis'e tasinmali, cagri noktalari degismez.
+Sayac secimi (2026-10-07): REDIS_URL bos ise sayaclar SUREC BELLEGINDE tutulur (tek
+islemci icin yeterli; --workers 2 ile her iscinin kendi sayaci olur, efektif limit
+iki katina cikar). REDIS_URL doluysa sayaclar Redis'te (sirali kume, kayan pencere)
+tutulur ve tum isciler/instance'lar ayni limiti paylasir. Redis'e ulasilamazsa
+istek REDDEDILMEZ, sadece gunluge yazilir (hiz siniri bir guvenlik katmani, servis
+kesintisi sebebi olmamali). Cagri noktalari her iki durumda da ayni.
 """
+import logging
 import threading
 import time
 from collections import defaultdict, deque
@@ -21,7 +23,9 @@ from collections import defaultdict, deque
 from fastapi import Depends, HTTPException, Request, status
 
 from app.auth import get_current_org
-from app.models import Organization
+from app.models import Organization, settings
+
+logger = logging.getLogger(__name__)
 
 
 class _Sayac:
@@ -51,7 +55,59 @@ class _Sayac:
             self._pencereler.clear()
 
 
-sayac = _Sayac()
+class _RedisSayac:
+    """Redis sirali kume ile kayan pencere: ZREMRANGEBYSCORE (eski damgalari at) -> ZCARD ->
+    sinir altindaysa ZADD + EXPIRE. Tum isciler ayni anahtari gorur."""
+
+    def __init__(self, client) -> None:
+        self._r = client
+
+    def izin_ver(self, anahtar: str, limit: int, pencere_sn: int) -> tuple[bool, int]:
+        simdi = time.time()
+        k = f"hiz:{anahtar}"
+        try:
+            p = self._r.pipeline()
+            p.zremrangebyscore(k, 0, simdi - pencere_sn)
+            p.zcard(k)
+            p.zrange(k, 0, 0, withscores=True)
+            _, adet, en_eski = p.execute()
+            if adet >= limit:
+                ilk = en_eski[0][1] if en_eski else simdi
+                return False, max(int(ilk + pencere_sn - simdi) + 1, 1)
+            p = self._r.pipeline()
+            p.zadd(k, {f"{simdi:.6f}": simdi})
+            p.expire(k, pencere_sn + 1)
+            p.execute()
+            return True, 0
+        except Exception as e:  # baglanti/timeout: acik kal, gunluge yaz
+            logger.warning("Redis hiz sayaci erisilemedi, istek sinirlanmadan gecirildi: %s: %s",
+                           type(e).__name__, e)
+            return True, 0
+
+    def temizle(self) -> None:
+        try:
+            for k in self._r.scan_iter("hiz:*"):
+                self._r.delete(k)
+        except Exception:
+            pass
+
+
+def _sayac_kur():
+    if not settings.REDIS_URL:
+        return _Sayac()
+    try:
+        import redis
+        client = redis.Redis.from_url(settings.REDIS_URL, socket_timeout=0.5, socket_connect_timeout=0.5)
+        client.ping()
+        logger.info("Hiz siniri sayaclari Redis'te (%s)", settings.REDIS_URL.split("@")[-1])
+        return _RedisSayac(client)
+    except Exception as e:
+        logger.error("REDIS_URL tanimli ama baglanilamadi (%s: %s); surec ici sayaca dusuldu. "
+                     "Cok iscili dagitimda limit isci sayisi kadar gevser.", type(e).__name__, e)
+        return _Sayac()
+
+
+sayac = _sayac_kur()
 
 
 def org_hiz_siniri(limit: int, pencere_sn: int = 60):

@@ -28,3 +28,6 @@ anthropic>=0.40
 # kullanildigi icin varsayilan olarak kurulmaz - Windows'ta derleme icin
 # C derleyicisi/PostgreSQL headers gerektirir, bkz. requirements-postgres.txt).
 # psycopg2-binary>=2.9
+
+# Hiz siniri sayaclari icin (REDIS_URL doluysa); bos birakilirsa surec ici sayac kullanilir.
+redis>=5.0

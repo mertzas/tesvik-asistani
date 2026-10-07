@@ -14,7 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from app.auth import hash_password  # noqa: E402
 from app.models import (  # noqa: E402
-    Base, FinancialProfile, Organization, PlanType, Query, SessionLocal, User, init_db,
+    Base, FinancialProfile, Organization, PlanType, SessionLocal, User, init_db,
 )
 
 TEST_EMAIL = "test@example.com"

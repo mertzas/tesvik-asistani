@@ -4,7 +4,6 @@ from datetime import datetime, timedelta, timezone
 
 from app.models import get_db, Organization, User, Query, PlanType
 from app.auth import get_current_user
-from app.schemas import OrganizationResponse, UserResponse
 
 router = APIRouter(prefix="/api/admin", tags=["admin"])
 

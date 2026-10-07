@@ -10,7 +10,6 @@ Tum endpoint'ler mevcut get_current_org ile multi-tenant izolasyonu takip
 eder; bir organizasyon baska bir organizasyonun parseline erisemez.
 """
 from datetime import datetime, timezone
-from uuid import UUID
 
 from fastapi import APIRouter, Depends, HTTPException, status
 from sqlalchemy.orm import Session
@@ -18,9 +17,9 @@ from sqlalchemy.orm import Session
 from app.models import Organization, get_db
 from app.auth import get_current_org
 from app.models_cilek import (
-    Parsel, SensorOkuma, FertigasyonTank, SulamaDongusu,
+    Parsel, SensorOkuma, FertigasyonTank,
     Ilaclama, PazarFiyati, HasatKaydi, SogukZincirOkuma, GiderKalemi,
-    SensorTipi, TankTipi, KaliteSinifi, PazarKaynagi, GiderKategorisi,
+    SensorTipi, KaliteSinifi, PazarKaynagi, GiderKategorisi,
 )
 from app.schemas_cilek import (
     ParselCreate, ParselResponse,

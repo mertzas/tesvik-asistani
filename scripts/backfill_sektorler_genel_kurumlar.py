@@ -12,7 +12,6 @@ Bu betik geriye donuk olarak sektorler etiketi ekler:
 
 Calistirma: python scripts/backfill_sektorler_genel_kurumlar.py
 """
-import json
 from app.models import SessionLocal, Tesvik
 
 KURUM_SEKTOR_ESLEME = {

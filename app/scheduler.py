@@ -15,12 +15,37 @@ site yapısı değişiklikleri vb.) uygulamayı çökmez, sadece loglara "bu job
 yazar.
 """
 import logging
-from datetime import datetime
+import os
+import tempfile
 
 from apscheduler.schedulers.background import BackgroundScheduler
 from apscheduler.triggers.cron import CronTrigger
 
 logger = logging.getLogger(__name__)
+
+# Tek-instance kilidi: uvicorn --workers N ile her isci kendi zamanlayicisini baslatiyordu,
+# scraper'lar N kez kosuyordu (denetim 2026-10-07). POSIX'te dosya kilidi (flock) alan
+# ISCI zamanlayiciyi calistirir; kilit dosya tanitici acik kaldigi surece (surec omru)
+# tutulur. Windows'ta (yerel gelistirme, tek isci) kilit atlanir.
+_KILIT_DOSYASI = os.getenv("SCHEDULER_LOCK_FILE", os.path.join(tempfile.gettempdir(), "tesvik_scheduler.lock"))
+_kilit_tutucu = None
+
+
+def scheduler_kilidi_al() -> bool:
+    """Bu surec zamanlayiciyi calistirmali mi? Kilidi alan ilk surec True, digerleri False."""
+    global _kilit_tutucu
+    try:
+        import fcntl
+    except ImportError:
+        return True  # Windows: tek surec varsayimi
+    try:
+        f = open(_KILIT_DOSYASI, "a+")
+        fcntl.flock(f.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+    except OSError:
+        logger.info("Zamanlayici kilidi baska bir iscide; bu surec scraper islerini calistirmayacak")
+        return False
+    _kilit_tutucu = f  # kapatilirsa kilit duser
+    return True
 
 
 def _run_job(job_name: str, job_func, *args, **kwargs) -> None:
@@ -78,7 +103,10 @@ def _job_tarim_bakanligi() -> str:
 
 def setup_scheduler() -> BackgroundScheduler:
     """Tüm jobları tanımla ve scheduler'ı döndür. main.py'de startup event'inde başlatılır."""
-    scheduler = BackgroundScheduler()
+    # coalesce: kacirilan tetiklemeler (uyku/yeniden baslatma) tek seferde kosar;
+    # misfire_grace_time: 1 saate kadar geciken is yine calisir, sonrasi atlanir.
+    scheduler = BackgroundScheduler(job_defaults={"coalesce": True, "misfire_grace_time": 3600,
+                                                  "max_instances": 1})
 
     # HKS hal fiyatları — her gün 23:00
     scheduler.add_job(

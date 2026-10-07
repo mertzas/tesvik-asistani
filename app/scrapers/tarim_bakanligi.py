@@ -9,7 +9,6 @@ yayınlarından ve KDVK kararlarından derlenmiş ana programa ve tutar referans
 değerleri kullanıyoruz.
 """
 from datetime import datetime
-from sqlalchemy.orm import Session
 from app.models import SessionLocal, Tesvik, init_db
 
 

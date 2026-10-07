@@ -17,14 +17,16 @@ kapatılmadan ödeme alan bir servis olarak yayına verilmemeli.
 
 | Durum | Konu | Neden önemli |
 |---|---|---|
-| ⛔ | **Hız sınırlama sayaçları süreç içi** | `app/rate_limit.py` sayaçları RAM'de tutar. `--workers 2` ile her işçi kendi sayacını tutar, gerçek limit iki katına çıkar. Çok işçili dağıtımda Redis'e taşınmalı. |
+| ✅ | **Hız sınırlama sayaçları** | `REDIS_URL` doluysa Redis'te (docker-compose.prod.yml `redis` servisi), boşsa süreç içi. Redis'e ulaşılamazsa istek reddedilmez, günlüğe yazılır ve limit işçi başına gevşer. |
+| ✅ | **Zamanlayıcı çok işçide tek sefer** | `uvicorn --workers 2` ile scraper işleri her işçide ayrı koşuyordu; artık dosya kilidini (`SCHEDULER_LOCK_FILE`) alan işçi çalıştırır, `SCHEDULER_ENABLED=false` ile tamamen kapatılır. |
+| ⚠️ | **Docker/nginx yapılandırması canlıda denenmedi** | 2026-10-07 denetiminde nginx `/static/` alias'ı (kapsayıcıda olmayan dizin → 404), çakışan güvenlik başlıkları, 60 sn `proxy_read_timeout` (SSE yanıtı 35-70 sn), `deploy.sh`'ın dev imajını build edip yalnızca `restart` etmesi düzeltildi; ancak bu makinede Docker olmadığı için `docker compose up` ile uçtan uca doğrulanmadı. İlk dağıtımda `docker compose -f docker-compose.prod.yml config` ve `/health` ile teyit edin. |
 | ⛔ | **KVKK aydınlatma metni yayına hazır değil** | Metin yazıldı ve `/kvkk` adresinde yayında; veri envanteri kodun şemasından çıkarıldı ve doğru. Ancak ticaret unvanı, adres, VERBİS kaydı ve başvuru kanalı `DOLDURULACAK` işaretli — şirket kuruluşu tamamlanmadan doldurulamaz ve bu alanlar dolmadan aydınlatma yükümlülüğü karşılanmaz. |
 | ⛔ | **Stripe test modunda** | `sk_test_` anahtarlarıyla çalışıyor; canlı anahtar ve webhook imza doğrulaması üretimde teyit edilmeli. |
 | ⚠️ | **93 teşvik kaydının açık/kapalı durumu doğrulanamadı** (181 kaydın) | `scripts.verify_aktiflik` ile 88 kayıt doğrulandı; kalanlarda kurum sayfası yüksek güvenli bir durum ifadesi taşımıyor, doğrulayıcı bilerek karar vermiyor. Bu kayıtlarda AI danışman "kurumun sayfasından teyit edin" uyarısı basıyor. |
 | ⚠️ | **127 kayıtta başvuru şartları eksik** (181 kaydın) | `scripts.extract_basvuru_sartlari` ile 19 → 54 kayda şart yazıldı (KOSGEB, TÜBİTAK ve 9903 programları). Kalanların çoğu KGF kredi ürünü; kurum sayfalarında ayrı bir şart bölümü yok. |
 | ⚠️ | **Yük testi hiç yapılmadı** | Eşzamanlı kullanıcı davranışı bilinmiyor. `/api/sor` her çağrıda Claude API'ye gidiyor; gecikme ve maliyet ölçülmeli. |
 | ⚠️ | **7 kaydın kaynak linki ölü** | KGF 5 ve TÜBİTAK 2 sayfayı kaldırmış; linkler `durum_notu`'nda işaretli. Kullanıcı bilgiyi kaynağından teyit edemiyor, yeni adresler bulunmalı. |
-| ⚠️ | **Yedekleme otomatik değil** | `scripts/backup.sh` ve `restore.sh` var ama zamanlanmış değil ve geri yükleme hiç denenmedi. |
+| ⚠️ | **Yedekleme** | docker-compose.prod.yml `backup` servisi her 24 saatte `pg_dump` ile `./backups/` altına sıkıştırılmış yedek alır (`BACKUP_RETENTION_DAYS`, varsayılan 30 gün; bütünlük `gunzip -t` ile kontrol edilir). Yedekler sunucu dışına (S3 vb.) kopyalanmıyor ve geri yükleme (`scripts/restore.sh`) hâlâ hiç denenmedi — ilk dağıtımdan sonra bir kez prova edin. |
 | ⚠️ | **Hata izleme yok** | Günlükler dosyaya/konsola yazılıyor, merkezî bir hata toplayıcı (Sentry vb.) bağlı değil. |
 
 Kapatılmış olanlar (referans): şema sürümleme (Alembic), hız sınırlama,

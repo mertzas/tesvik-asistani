@@ -27,6 +27,16 @@ class Settings(BaseSettings):
     ALLOWED_ORIGINS: str = os.getenv("ALLOWED_ORIGINS", "")
     # Yalnızca yerel geliştirme: varsayılan SECRET_KEY ile açılışa izin verir.
     ALLOW_INSECURE_SECRET: bool = os.getenv("ALLOW_INSECURE_SECRET", "false").lower() == "true"
+    # Hız sınırı sayaçları: boşsa süreç içi (tek işçi); doluysa Redis (çok işçi/instance).
+    REDIS_URL: str = os.getenv("REDIS_URL", "")
+    # Zamanlanmış scraper işleri (çok işçili dağıtımda yalnızca kilidi alan işçi çalıştırır).
+    SCHEDULER_ENABLED: bool = os.getenv("SCHEDULER_ENABLED", "true").lower() == "true"
+    # E-posta (app/email.py): boşsa e-posta gönderimi kapalı. Denetim 2026-10-07: email.py
+    # settings.SMTP_* okuyordu ama alanlar tanımlı değildi (AttributeError).
+    SMTP_SERVER: str = os.getenv("SMTP_SERVER", "")
+    SMTP_PORT: int = int(os.getenv("SMTP_PORT", "587") or 587)
+    SMTP_USER: str = os.getenv("SMTP_USER", "")
+    SMTP_PASSWORD: str = os.getenv("SMTP_PASSWORD", "")
     ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
     CLAUDE_MODEL: str = os.getenv("CLAUDE_MODEL", "claude-sonnet-5")
 

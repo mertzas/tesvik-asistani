@@ -5,7 +5,6 @@ YAZIYOR. Yanlış bir şart kullanıcıyı hak ettiği teşvikten vazgeçirebili
 da boşuna başvurmaya gönderebilir. Testler ağ erişimi olmadan, saf metin
 üzerinden karar mantığını sınar.
 """
-import pytest
 
 from scripts.extract_basvuru_sartlari import (
     _bolum_bul,

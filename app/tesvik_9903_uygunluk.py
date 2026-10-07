@@ -27,7 +27,6 @@ tebliğlerle yayımlanır ve sistemde yoktur.
 """
 from __future__ import annotations
 
-import re
 from dataclasses import dataclass
 
 from app.nace_9903 import bolum_sarti, ek3_kaydi, ek3_kayitlari, ek3_yuklendi_mi, il_bolgesi

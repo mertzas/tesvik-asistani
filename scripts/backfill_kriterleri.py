@@ -7,7 +7,6 @@ Bu bir kesin/otoriter kaynak degil, mevcut curated veriden cikarilan
 best-effort bir etiketleme. Yeni scraper'lar eklendikce KURUM_SEKTOR_HARITASI
 genisletilmeli.
 """
-import json
 import sys
 from pathlib import Path
 

@@ -1,35 +1,25 @@
-name: Tests & Code Quality
+name: Tests
+
+# Denetim 2026-10-07: onceki is akisi PostgreSQL URL'siyle psycopg2'siz requirements.txt
+# kuruyor (import aninda cokuyor), black/isort/mypy'yi zorunlu tutuyor (kod tabani bu
+# bicimleyicilerle yazilmadi) ve Codecov token'siz yukleme deniyordu -> her kosu kirmizi,
+# kimse bakmiyordu. Simdi: testler SQLite ile (conftest bellek-ici DB kullanir),
+# flake8 yalnizca gercek hatalar (sozdizimi, tanimsiz ad), bandit raporu bilgi amacli.
 
 on:
   push:
-    branches: [main, develop]
+    branches: [main, master, develop]
   pull_request:
-    branches: [main, develop]
+    branches: [main, master, develop]
 
 jobs:
   test:
     runs-on: ubuntu-latest
-
-    services:
-      postgres:
-        image: postgres:15
-        env:
-          POSTGRES_USER: tesvik_user
-          POSTGRES_PASSWORD: tesvik_pass
-          POSTGRES_DB: tesvik_test
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-        ports:
-          - 5432:5432
-
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.11'
           cache: 'pip'
@@ -37,85 +27,52 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install -r requirements.txt
-          pip install pytest pytest-cov pytest-asyncio
+          pip install -r requirements.txt -r requirements-dev.txt
 
       - name: Run tests
         env:
-          DATABASE_URL: postgresql://tesvik_user:tesvik_pass@localhost:5432/tesvik_test
-        run: |
-          pytest tests/ -v --cov=app --cov-report=xml
-
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          files: ./coverage.xml
+          DATABASE_URL: sqlite:///./ci.db
+          SECRET_KEY: ci-only-secret-key-not-for-production-0123456789
+          PYTHONIOENCODING: utf-8
+        run: pytest tests/ -q --tb=short
 
   lint:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install flake8 black isort mypy
-
-      - name: Run Black formatter check
-        run: black --check app/ tests/
-
-      - name: Run isort import check
-        run: isort --check-only app/ tests/
-
-      - name: Run Flake8 linter
-        run: flake8 app/ tests/ --max-line-length=120 --ignore=E203,W503
-
-      - name: Run MyPy type checker
-        run: mypy app/ --ignore-missing-imports
+      - name: Install flake8
+        run: pip install flake8
+      # Yalnizca gercek hatalar: sozdizimi (E9), tanimsiz ad (F821), kullanilmayan import (F401) vb.
+      - name: Flake8 (hata siniflari)
+        run: flake8 app/ tests/ scripts/ --select=E9,F63,F7,F82,F401,F811 --show-source
 
   security:
     runs-on: ubuntu-latest
-
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      - name: Install dependencies
+      - name: Bandit
         run: |
-          python -m pip install --upgrade pip
-          pip install bandit safety
-
-      - name: Run Bandit security check
-        run: bandit -r app/ -f json -o bandit-report.json || true
-
-      - name: Check dependencies for known vulnerabilities
-        run: safety check --json || true
+          pip install bandit
+          bandit -r app/ -ll -q || true
 
   docker:
     runs-on: ubuntu-latest
-    if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-
+    if: github.event_name == 'push'
     steps:
-      - uses: actions/checkout@v3
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v2
-
-      - name: Build Docker image
-        uses: docker/build-push-action@v4
+      - uses: actions/checkout@v4
+      - uses: docker/setup-buildx-action@v3
+      - name: Build production image
+        uses: docker/build-push-action@v5
         with:
           context: .
+          file: Dockerfile.prod
           push: false
-          tags: tesvik-asistani:latest
+          tags: tesvik-asistani:ci
           cache-from: type=gha
           cache-to: type=gha,mode=max

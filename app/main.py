@@ -240,7 +240,15 @@ def sor(
                 "tarım kategorisi": profil_row.tarim_kategori,
                 "ürün türü": profil_row.urun_turu,
                 "arazi büyüklüğü (dekar)": profil_row.arazi_buyuklugu_dekar,
+                "NACE kodu": profil_row.nace_kodu,
             }
+            # Ölçek sınıfı türetilmiş bir değerdir (çalışan + ciro); yeni kişisel
+            # veri aktarmaz. "kesin değil" ise model bunu kullanıcıya söylesin.
+            from app.kobi import AD as KOBI_AD, kobi_sinifi
+            olcek = kobi_sinifi(profil_row.calisan_sayisi, profil_row.yillik_ciro)
+            if olcek.sinif:
+                profil["KOBİ ölçeği"] = (KOBI_AD[olcek.sinif]
+                                        + ("" if olcek.kesin else " (kesin değil: " + olcek.aciklama + ")"))
 
         # Mevcut RAG sistemini çalıştır
         answer_text = answer(request.question, profil, llm_kullan=riza_var)

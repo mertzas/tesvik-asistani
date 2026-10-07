@@ -460,7 +460,9 @@ _TEMPERATURE_REDDEDEN_MODELLER: set[str] = set()
 
 async def _llm_cagir(client: Any, model: str, mesajlar: list[dict]) -> Any:
     istek = dict(
-        model=model, max_tokens=1500, system=SYSTEM_PROMPT,
+        # max_tokens düşünme token'larını da kapsar (adaptif düşünme varsayılan açık);
+        # 1500 iken araç çağrısı boş/eksik geliyordu ("Field required").
+        model=model, max_tokens=8000, system=SYSTEM_PROMPT,
         tools=[tool_tanimi()], tool_choice={"type": "tool", "name": TOOL_ADI},
         messages=mesajlar,
     )
@@ -540,6 +542,10 @@ async def _tek_cikarim(client: Any, model: str, metin: str, tid: Any, min_guven:
     for deneme in range(2):
         yanit = await _llm_cagir(client, model, mesajlar)
         ham = _arac_girdisi(yanit)
+        if getattr(yanit, "stop_reason", None) == "max_tokens":
+            # Kesilmiş araç girdisi eksik alanlarla gelir; doğrulamaya sokma.
+            son_hata = "yanıt max_tokens sınırında kesildi"
+            continue
         if ham is None:
             son_hata = "model araç çağrısı yapmadı"
         else:

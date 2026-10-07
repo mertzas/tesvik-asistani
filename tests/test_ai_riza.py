@@ -115,3 +115,18 @@ def test_riza_yanitinda_aydinlatma_metni_gosterilir(client):
     r = client.post("/api/organizations/ai-riza", json={"riza": True},
                     headers=h)
     assert r.json()["aydinlatma_metni"] == "/kvkk"
+
+
+def test_rizali_profil_nace_ve_kobi_olcegini_tasir_ozellikleri_tasimaz(client, cagri_kaydi):
+    """Danışman ölçek/NACE ile eleme yapabilsin; hedef kitle özellikleri
+    (kadın/genç girişimci) KVKK metninde belirtildiği gibi aktarılmasın."""
+    h = _hesap_ac(client, riza=True)
+    r = client.put("/api/profil", headers=h, json={
+        "sektor": "imalat", "calisan_sayisi": 30, "yillik_ciro": 80_000_000,
+        "nace_kodu": "C.10.71", "ozellikler": ["kadin_girisimci"]})
+    assert r.status_code == 200, r.text
+    client.post("/api/sor", json={"question": "Makine yatırımı için destek"}, headers=h)
+    profil = cagri_kaydi[-1]["profil"]
+    assert profil["NACE kodu"] == "10.71"
+    assert profil["KOBİ ölçeği"] == "küçük işletme"
+    assert not any("kadin" in str(v) or "özellik" in k for k, v in profil.items())

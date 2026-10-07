@@ -78,7 +78,8 @@ class Organization(Base):
 
     # KVKK: yapay zeka danismani kullanildiginda isletme profili (sektor,
     # bolge, calisan sayisi, ciro, hedefler, tarim kategorisi, urun turu,
-    # arazi buyuklugu) yanit uretilmesi icin Anthropic'e (ABD) gonderiliyor.
+    # arazi buyuklugu, NACE kodu) yanit uretilmesi icin Anthropic'e (ABD) gonderiliyor.
+    # ozellikler (kadin/genc girisimci vb.) BILEREK gonderilmez.
     # Bu YURT DISINA AKTARIM'dir ve acik riza gerektirir.
     #
     # Riza KAYIT SIRASINDA ZORUNLU TUTULMUYOR: KVKK acik rizanin "ozgur

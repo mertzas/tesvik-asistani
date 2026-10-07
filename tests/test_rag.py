@@ -184,3 +184,39 @@ def test_anahtar_yoksa_claude_cagrilmaz(monkeypatch):
     """Anahtar boşsa boşuna ağ çağrısı yapılmamalı."""
     monkeypatch.setattr(rag.settings, "ANTHROPIC_API_KEY", "")
     assert rag._claude_cevap("soru", [_tesvik("x")], None) is None
+
+
+def test_sistem_promptu_danisman_formati_ve_durust_eleme():
+    """5 başlıklı danışman formatı, net eleme ve risk analizi kuralları."""
+    p = rag.SISTEM_PROMPTU
+    for baslik in ["### 1. Şirket & Proje Uygunluk Özeti", "### 2. Eşleşen Teşvik ve Hibe Programları",
+                   "### 3. Darboğazlar ve Kritik Şartlar", "### 4. Adım Adım Yol Haritası",
+                   "### 5. Bilgi Eksikliği / Netleştirme"]:
+        assert baslik in p, baslik
+    assert "NET VE DÜRÜST ELEME" in p and "ÇİFT YÖNLÜ ANALİZ" in p
+    assert "SADECE bağlamda geçiyorsa" in p, "oran/limit yalnızca bağlamdan gelmeli"
+
+
+def test_claude_cagrisi_genis_butce_ve_effort_kullanir_kesilmeyi_bildirir(monkeypatch):
+    """Düşünme token'ları max_tokens'tan düştüğü için bütçe dar tutulamaz;
+    kesilme olursa kullanıcıya söylenmeli."""
+    from types import SimpleNamespace
+    import anthropic
+
+    kayit = {}
+
+    class SahteMesajlar:
+        def create(self, **kw):
+            kayit.update(kw)
+            return SimpleNamespace(content=[SimpleNamespace(type="text", text="### 1. Özet")],
+                                   stop_reason="max_tokens", usage=SimpleNamespace(output_tokens=16000))
+
+    class SahteIstemci:
+        def __init__(self, *a, **kw):
+            self.messages = SahteMesajlar()
+
+    monkeypatch.setattr(anthropic, "Anthropic", SahteIstemci)
+    monkeypatch.setattr(rag.settings, "ANTHROPIC_API_KEY", "sk-test")
+    cevap = rag._claude_cevap("soru", [_tesvik("Program", ozet="o")], None)
+    assert kayit["max_tokens"] >= 16000 and kayit["output_config"] == {"effort": rag.CLAUDE_EFFORT}
+    assert "kesildi" in cevap

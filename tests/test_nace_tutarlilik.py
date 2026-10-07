@@ -107,3 +107,18 @@ def test_tutarlilik_dislama_satirlarini_korur():
     c2 = _cevap("YATAY")
     sonuc = run(extract_nace_scope(metin, client=SahteIstemci(c1, c2), tutarlilik_kontrolu=True))
     assert [(r["nace_prefix"], r["haric_mi"]) for r in sonuc.rows] == [("12", True)]
+
+
+def test_max_tokens_kesilmesi_dogrulamaya_sokulmaz_kilit_yazilmaz():
+    """GERÇEK OLAY: max_tokens=1500 düşünme token'larıyla doluyordu; kesik araç
+    girdisi "Field required" hatasıyla iki kez düşüyordu."""
+    class KesikIstemci(SahteIstemci):
+        async def _create(self, **kw):
+            self.cagrilar.append(kw)
+            blok = SimpleNamespace(type="tool_use", name=ne.TOOL_ADI, input={})
+            return SimpleNamespace(content=[blok], stop_reason="max_tokens")
+
+    istemci = KesikIstemci()
+    sonuc = run(extract_nace_scope(METIN, client=istemci))
+    assert sonuc.rows == [] and "max_tokens" in sonuc.hata
+    assert istemci.cagrilar[0]["max_tokens"] >= 8000

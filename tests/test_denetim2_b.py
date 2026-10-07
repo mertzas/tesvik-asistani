@@ -73,6 +73,11 @@ def test_tarim_sorusunda_alt_kategori_uyumlu_kayit_one_gecer(veri, db_session):
     assert ids[0] == 78, ids
 
 
+def test_kesme_isaretli_ozel_ad_ekleri_terimden_atilir():
+    assert rag._terimlere_ayir("Almanya'daki ortakla Eurostars'a başvurabilir miyiz? KOSGEB’den") == \
+        ["almanya", "ortakla", "eurostars", "başvurabilir", "miyiz", "kosgeb"]
+
+
 def test_tarim_disi_soruda_alt_kategori_bonusu_yok(veri, db_session):
     imalat = FinancialProfile(sektor="imalat", sirket_turu="limited", hedefler=["yatirim"])
     ids = [t.id for t in rag.retrieve("makine yatırımı için teşvik belgesi", limit=4, profil_kaydi=imalat)]

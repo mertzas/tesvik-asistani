@@ -167,7 +167,10 @@ def _terimlere_ayir(query: str) -> list[str]:
     # degil "i̇" (i + U+0307 birlesik nokta) uretiyor, dolayisiyla caps lock
     # ile yazan kullanicinin terimleri hicbir kayda eslesmiyordu
     # (dogrulandi 2026-09-26, bkz. app/urun_sektor_anahtarlari.kucult).
-    terms = [kucult(t.strip(".,!?:;\"'()")) for t in query.split()]
+    # Özel ad ekleri kesme işaretiyle yazılır ("Eurostars'a", "Almanya'daki", "KOSGEB’den"):
+    # ek atılmazsa ILIKE '%eurostars'a%' hiçbir başlıkla eşleşmiyordu (Denetim 2/C ön kontrolü,
+    # 2026-10-07: 1709 Eurostars kaydı bağlama girmiyordu).
+    terms = [kucult(re.split(r"['’]", t)[0].strip(".,!?:;\"()")) for t in query.split()]
     return [t for t in terms if len(t) > 2 and t not in DURAK_KELIMELER]
 
 

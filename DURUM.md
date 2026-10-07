@@ -59,6 +59,11 @@ Son güncelleme: 2026-10-08 (güvenlik kod listesi 1–3: JWT iptali, doğrulama
   lifespan (on_event kalktı) + isteğe bağlı Sentry (`SENTRY_DSN`, yerel değişken/gövde gönderilmez); kart ve 9903/
   veri tazeliği metinleri Türkçe karakterli; profil düğmeleri stilli + "Başlarken" rehberi; tur8 başlık göçü
   (160/161 "(Mazot-Gübre)" → temel destek; yedek `tesvikler_oncesi_tur8.db.bak`). Test 892+.
+- **Aşama I — başvuru belgeleri** (2026-10-08, UYGULANDI): evrak hazırlama desteğinin ön koşulu. En sık eşleşen 34
+  programın resmî sayfaları tarandı, rapor `docs/olcum/2026-10-07-denetim2/I_RAPOR.md`. Tur 9: 32 kayıt, yalnız boş
+  alan (yedek `tesvikler_oncesi_tur9.db.bak`). Aktif kayıtlarda belge 17→49, başvuru yeri 27→49, şart 75→78.
+  Sonraki adımlar: kontrol listesi (işaretlenebilir, yazdırılabilir), taslak üretimi (ücretli, rıza gerekir),
+  tarih hatırlatması (SMTP sonrası).
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

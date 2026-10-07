@@ -646,12 +646,39 @@
             };
         }
 
+        // ---- Kayıt sonrası karşılama rehberi ----
+        // Profil yoksa (GET /api/profil 404) gösterilir; kullanıcı kapatırsa bu tarayıcıda bir daha açılmaz.
+        // Depolama erişimi engellenmiş olabilir (gizli pencere vb.): her okuma/yazma try/catch içinde.
+        const KARSILAMA_ANAHTARI = "karsilama_kapandi";
+        function karsilamaKapatildiMi() {
+            try { return localStorage.getItem(KARSILAMA_ANAHTARI) === "1"; } catch (e) { return false; }
+        }
+        function karsilamaGuncelle(profilVar) {
+            const kart = document.getElementById("karsilama");
+            if (!kart) return;
+            if (profilVar) {
+                document.getElementById("karsilama-adim-profil").classList.add("tamam");
+                return;  // açıksa açık kalır (2. ve 3. adım için); profil sonradan kaydedildiyse işaretlenir
+            }
+            kart.hidden = karsilamaKapatildiMi();
+        }
+        function karsilamaKapat() {
+            document.getElementById("karsilama").hidden = true;
+            try { localStorage.setItem(KARSILAMA_ANAHTARI, "1"); } catch (e) { /* yalnızca bu oturumda gizli kalır */ }
+        }
+        function karsilamaEslesme() {
+            bolumeGit("profil");
+            bulUygunDestekler();
+        }
+
         async function loadFinancialProfile() {
             try {
                 const res = await fetch(`${API_BASE}/profil`, {
                     headers: { "Authorization": `Bearer ${authToken}` }
                 });
+                if (res.status === 404) karsilamaGuncelle(false);
                 if (!res.ok) return;
+                karsilamaGuncelle(true);
                 const p = await res.json();
                 document.getElementById("p-sektor").value = p.sektor || "genel";
                 document.getElementById("p-bolge").value = p.bolge || "";
@@ -801,6 +828,7 @@
                             return;
                         }
                         mesajDiv.innerHTML = `<div class="success">Profil kaydedildi.</div>`;
+                        karsilamaGuncelle(true);
                     } catch (e2) {
                         mesajDiv.innerHTML = `<div class="error">Hata: ${e2.message}</div>`;
                     }
@@ -1232,6 +1260,8 @@
             bolumeGit: (el) => bolumeGit(el.dataset.arg),
             onTarimKategoriDegisti: () => onTarimKategoriDegisti(),
             rizaDegistir: (el) => rizaDegistir(el),
+            karsilamaKapat: () => karsilamaKapat(),
+            karsilamaEslesme: () => karsilamaEslesme(),
         };
         function eylemBagla(olay, oznitelik) {
             document.addEventListener(olay, (e) => {

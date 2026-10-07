@@ -328,6 +328,28 @@
         .tehlike-btn:disabled { opacity: .6; cursor: default; }
         .ikincil-btn { background: white; color: #667eea; border: 2px solid #667eea; padding: 9px 16px; border-radius: 5px; cursor: pointer; font-weight: bold; }
         .ikincil-btn:hover { background: #f3f4ff; }
+        .birincil-btn { background: #667eea; color: white; border: 2px solid #667eea; padding: 9px 18px; border-radius: 5px; cursor: pointer; font-weight: bold; transition: background 0.3s; }
+        .birincil-btn:hover { background: #764ba2; border-color: #764ba2; }
+        .birincil-btn:disabled, .ikincil-btn:disabled { opacity: .6; cursor: default; }
+        .profil-eylemler { grid-column: 1 / -1; display: flex; gap: 10px; flex-wrap: wrap; margin-top: 6px; }
+
+        /* Kayıt sonrası karşılama rehberi */
+        .karsilama { background: white; border: 2px solid #667eea; border-radius: 12px; padding: 18px 22px; margin: 0 0 20px; }
+        .karsilama[hidden] { display: none; }
+        .karsilama-ust { display: flex; justify-content: space-between; align-items: center; }
+        .karsilama-ust h2 { font-size: 20px; color: #333; }
+        .karsilama-kapat { background: none; border: none; font-size: 24px; line-height: 1; color: #888; cursor: pointer; padding: 0 4px; }
+        .karsilama > p { color: #555; margin: 6px 0 12px; font-size: 14px; }
+        .karsilama-adimlar { margin: 0; padding: 0; list-style: none; counter-reset: adim; display: grid; gap: 10px; }
+        .karsilama-adimlar li { counter-increment: adim; display: flex; align-items: center; justify-content: space-between; gap: 14px;
+                                flex-wrap: wrap; padding: 10px 12px 10px 46px; position: relative; background: #f7f8ff; border-radius: 8px;
+                                font-size: 14px; color: #444; line-height: 1.5; }
+        .karsilama-adimlar li > div { flex: 1 1 260px; }
+        .karsilama-adimlar li::before { content: counter(adim); position: absolute; left: 12px; top: 50%; transform: translateY(-50%);
+                                        width: 24px; height: 24px; border-radius: 50%; background: #667eea; color: white;
+                                        font-weight: bold; font-size: 13px; display: flex; align-items: center; justify-content: center; }
+        .karsilama-adimlar li.tamam::before { content: "✓"; background: #27ae60; }
+        .karsilama-adimlar li.tamam strong { text-decoration: line-through; color: #888; }
         .anahtar input { transform: scale(1.3); margin-right: 8px; }
         .bos-durum { text-align: center; padding: 28px 16px; color: #777; font-size: 14px; background: white; border-radius: 10px; }
         .bos-durum a { color: #667eea; }
@@ -584,6 +606,29 @@
             <span id="eposta-uyari-sonuc" style="margin-left:8px;"></span>
         </div>
 
+        <!-- Kayıt sonrası karşılama: profil yokken gösterilir (panel.js karsilamaGuncelle) -->
+        <div id="karsilama" class="karsilama" hidden>
+            <div class="karsilama-ust">
+                <h2>Başlarken</h2>
+                <button type="button" class="karsilama-kapat" data-tikla="karsilamaKapat" aria-label="Rehberi kapat">×</button>
+            </div>
+            <p>Size uygun devlet desteklerini üç adımda bulun:</p>
+            <ol class="karsilama-adimlar">
+                <li id="karsilama-adim-profil">
+                    <div><strong>İşletme profilinizi doldurun.</strong> Sektör, il, çalışan sayısı ve ciro eşleşmenin temelidir.</div>
+                    <button type="button" class="birincil-btn" data-tikla="bolumeGit" data-arg="profil">Profile git</button>
+                </li>
+                <li>
+                    <div><strong>Uygun destekleri bulun.</strong> Profilinize göre sıralanmış programları ve tahmini tutarları görün.</div>
+                    <button type="button" class="ikincil-btn" data-tikla="karsilamaEslesme">Destekleri bul</button>
+                </li>
+                <li>
+                    <div><strong>Danışmana sorun.</strong> "Makine almak istiyorum, hangi destekler var?" gibi sorular sorabilirsiniz.</div>
+                    <button type="button" class="ikincil-btn" data-tikla="bolumeGit" data-arg="search">Soru sor</button>
+                </li>
+            </ol>
+        </div>
+
         <!-- Search Section -->
         <div id="search" class="section">
             <div class="stats">
@@ -760,10 +805,10 @@
                             <label><input type="checkbox" value="organik" class="p-hedef"> Organik Tarım</label>
                         </div>
                     </div>
-                    <div style="grid-column: 1 / -1; display:flex; gap:10px;">
-                        <button type="submit">Profili Kaydet</button>
-                        <button type="button" data-tikla="bulUygunDestekler">Uygun Destekleri Bul</button>
-                        <button type="button" data-tikla="butceOnerisiAl">Bütçe Önerisi Al</button>
+                    <div class="profil-eylemler">
+                        <button type="submit" class="birincil-btn">Profili Kaydet</button>
+                        <button type="button" class="birincil-btn" data-tikla="bulUygunDestekler">Uygun Destekleri Bul</button>
+                        <button type="button" class="ikincil-btn" data-tikla="butceOnerisiAl">Bütçe Önerisi Al</button>
                     </div>
                 </form>
                 <div id="profil-mesaj"></div>

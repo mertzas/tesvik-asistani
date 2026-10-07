@@ -83,6 +83,16 @@ ACIK_KALIPLARI = (
     # ya da yil. Yalnizca baslik varsa (bos bolum) acik saymayiz.
     r"yürürlükte\s+olan\s+çağr[ıi]lar[\s\S]{1,80}?"
     r"(?:çağr[ıi]s[ıi]|\d{4}\s+y[ıi]l[ıi]|başvuru\s+dönemi)",
+    # TUBITAK program sayfalarinin "Basvuru Tarihleri" bolumu (olcum 2026-10-07:
+    # 46 kararsiz kaydin 17'sinde bu ifadeler var; hepsi kurumun kendi beyani):
+    # "surekli olarak basvuruya aciktir", "basvuru sistemi surekli aciktir",
+    # "herhangi bir zaman kisitlamasi yoktur", "yil boyunca basvuru yapilabilir",
+    # "365 gun basvuruya aciktir". "... acik degildir" olumsuzu haric tutulur.
+    r"(?:başvurular?|başvuru\s+sistemi|programd[ıi]r|program)?\s*(?:başvuruya\s+)?sürekli\s+"
+    r"(?:olarak\s+)?(?:başvuruya\s+)?aç[ıi]k(?:t[ıi]r)?(?!\s+değil)",
+    r"herhangi\s+bir\s+zaman\s+k[ıi]s[ıi]tlamas[ıi]\s+yoktur",
+    r"y[ıi]l\s+boyunca\s+başvuru\s+yap[ıi]labilir",
+    r"\b365\s+gün\s+başvuruya\s+aç[ıi]k(?:t[ıi]r)?(?!\s+değil)",
 )
 
 # "son basvuru tarihi 31.10.2026" gibi ifadeler - tarih GELECEKTEyse acik sayilir.

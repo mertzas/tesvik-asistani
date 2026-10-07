@@ -221,3 +221,33 @@ def test_cagrisi_sonuclandi_kararsiz_sayilir():
     karar, kanit, _ = _degerlendir("4005 YENİLİKÇİ EĞİTİM UYGULAMALARI 13. ÇAĞRISI SONUÇLANDI!")
     assert karar == "kararsiz"
     assert kanit
+
+
+# ------------------------------ TÜBİTAK "Başvuru Tarihleri": sürekli açık programlar
+
+@pytest.mark.parametrize("metin", [
+    "Başvuru Tarihleri 1515 - Öncül Ar-Ge Laboratuvarları Destekleme Programı sürekli olarak başvuruya açık bir programdır.",
+    "Başvuru Tarihleri Başvurular sürekli açıktır ve yılın her günü eteydeb.tubitak.gov.tr adresinden online olarak yapılabilir.",
+    "Başvuru Tarihleri 2515 COST Aksiyon Üyeleri Ar-Ge Destek Programı başvuruya sürekli açıktır.",
+    "\"2501 Araştırma\" çağrıları için başvuru sistemi sürekli olarak açıktır.",
+    "Başvuru Tarihleri Başvurularda herhangi bir zaman kısıtlaması yoktur. Yıl boyunca başvuru yapılabilir.",
+    "Başvuru Tarihleri Program 365 gün başvuruya açıktır.",
+])
+def test_tubitak_surekli_acik_ifadeleri_acik_sayilir(metin):
+    """Ölçüm (2026-10-07): 46 kararsız TÜBİTAK kaydının 17'si sayfasında kurumun kendi
+    beyanıyla 'sürekli açık'; doğrulayıcı bunları tanımadığı için hepsi kararsız kalıyordu."""
+    karar, kanit, _ = _degerlendir(metin)
+    assert karar == "acik", metin
+    assert kanit
+
+
+def test_surekli_acik_degil_olumsuzu_acik_saymaz():
+    karar, _, _ = _degerlendir("Program sürekli açık değildir; çağrı dönemleri ayrıca ilan edilir.")
+    assert karar == "kararsiz"
+
+
+def test_gecmis_donem_tarihi_surekli_acik_sayilmaz():
+    """2223-D ABD sayfası: 'Başvuru Tarihleri 2015 yılı için başvurular 6 Nisan - 8 Mayıs 2015'"""
+    karar, _, _ = _degerlendir("Başvuru Tarihleri 2015 yılı için başvurular 6 Nisan - 8 Mayıs 2015 tarihleri arasında yapılabilecektir.",
+                               bugun=date(2026, 10, 7))
+    assert karar == "kararsiz"

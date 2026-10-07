@@ -179,28 +179,64 @@ YENI_DURUM_NOTU = (
 BASVURU_YERI = ("Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı "
                 "Sermaye Genel Müdürlüğü (E-TUYS)")
 
-# Tum 9903 programlari icin ORTAK sartlar. Karar metninden birebir
-# (MADDE 5 ve MADDE 6); kayitlarda basvuru_sartlari bos kalmasin diye
-# eklendi - kullanici "basvurabilir miyim" sorusunun cevabini kayitta gorsun.
-ORTAK_SARTLAR = [
-    "Yatırım konusunun Karar'ın EK-3 listesinde yer alması; eşleştirme "
-    "NACE Rev.2.1 kodu üzerinden yapılır (MADDE 5).",
-    "Asgari sabit yatırım tutarı: EK-3'te yatırım konusuna özel bir tutar "
-    "belirtilmemişse 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde "
-    "6 milyon TL (MADDE 5/2).",
-    "Finansal kiralama yöntemiyle yapılacak yatırımlarda, kiralamaya konu "
-    "makine ve teçhizatın toplam tutarının her bir finansal kiralama "
-    "şirketi için asgari 3 milyon TL olması (MADDE 5/3).",
-    "Projenin, makroekonomik programlar ve arz-talep dengesi dikkate "
-    "alınarak yapılacak sektörel, malî ve teknik değerlendirme sonucunda "
-    "Bakanlıkça uygun görülmesi ve teşvik belgesi düzenlenmesi (MADDE 5/4).",
+# 9903 sartlari, Karar metninden (R.G. 30/05/2025; dogrulama 2026-10-07).
+#
+# DUZELTME: ilk surumde "EK-3 listesinde yer almasi" sarti BES programin hepsine
+# ortak yaziliyordu. Oysa MADDE 5/1 bu sarti Turkiye Yuzyili Kalkinma Hamlesi
+# (Teknoloji, Yerel Kalkinma, Stratejik Hamle) icin ARAMIYOR. Yanlis sart AI
+# danismana da gidiyordu ve EK-3'te olmayan bir konu icin Hamle programlarini
+# haksiz yere eliyordu. Sartlar artik programa ozel.
+GENEL_SARTLAR = [
+    "Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, "
+    "diğer bölgelerde 6 milyon TL (MADDE 5/2).",
+    "Finansal kiralama yöntemiyle yapılacak yatırımlarda, kiralamaya konu makine ve teçhizatın "
+    "toplam tutarının her bir finansal kiralama şirketi için asgari 3 milyon TL olması (MADDE 5/3).",
+    "Projenin, makroekonomik programlar ve arz-talep dengesi dikkate alınarak yapılacak sektörel, "
+    "malî ve teknik değerlendirme sonucunda uygun görülmesi ve teşvik belgesi düzenlenmesi (MADDE 5/4).",
     "Müracaatın 31/12/2030 tarihine kadar yapılmış olması (MADDE 5/5).",
-    "DİKKAT: teşvik belgesi müracaat tarihinden ÖNCE gerçekleştirilmiş "
-    "yatırım harcamaları belge kapsamına ALINMAZ (MADDE 5/6) - harcamaya "
-    "başlamadan önce başvurun.",
-    "Başvuru ve tüm işlemler E-TUYS üzerinden elektronik ortamda yapılır "
-    "(MADDE 6/12).",
+    "DİKKAT: teşvik belgesi müracaat tarihinden ÖNCE gerçekleştirilmiş yatırım harcamaları belge "
+    "kapsamına ALINMAZ (MADDE 5/6) - harcamaya başlamadan önce başvurun.",
+    "KOBİ olmayan yatırımcılar ve Yerel Kalkınma Hamlesi yatırımcıları, sabit yatırım tutarının en az "
+    "%2'si tutarında ekosistem geliştirme planı gerçekleştirmekle yükümlüdür (vergi indirimi öngörülen "
+    "yatırımlarda) (MADDE 5/9).",
+    "Başvuru ve tüm işlemler E-TUYS üzerinden elektronik ortamda yapılır (MADDE 5/12).",
 ]
+
+_EK3_SARTI = ("Yatırım konusunun Karar'ın EK-3 listesinde ('Desteklerden faydalanabilecek sektörler ve "
+              "şartlar') yer alması ve oradaki şartları sağlaması; eşleştirme NACE Rev.2.1 kodu "
+              "üzerinden yapılır (MADDE 5/1).")
+_EK3_ARANMAZ = ("EK-3 listesinde yer alma şartı bu program için ARANMAZ (MADDE 5/1); yatırımlar "
+                "değerlendirme komitesince proje bazında değerlendirilir.")
+
+PROGRAM_SARTLARI: dict[str, list[str]] = {
+    "hedef-yatirimlar": [_EK3_SARTI, "EK-3'te yer alan yatırım konuları, belirtilen şartları "
+                         "sağlamaları hâlinde desteklenir (MADDE 10/1)."],
+    "oncelikli-yatirimlar": [
+        _EK3_SARTI + " İstisna: sanayi sicil belgeli mevcut tesislerde deprem/yangın riskine karşı "
+        "yatırımlar (MADDE 9/1-v).",
+        "Yatırım, MADDE 9/1 bentlerinden birine girmelidir; ör. öncelikli ürün listesindeki yüksek "
+        "teknolojili ürünler veya asgari 500 milyon TL yüksek teknoloji yatırımı (b); İstanbul hariç, "
+        "orta-yüksek teknoloji için liste veya asgari 1 milyar TL (c); 6. bölge yatırımları, müteharrik "
+        "hariç (ç); savunma (d); imalat öz tüketimi GES/RES (e); Ar-Ge yatırımları (i); lisanslı "
+        "depoculuk (u) vb.",
+    ],
+    "teknoloji-hamlesi": [_EK3_ARANMAZ, "Öncelikli ürün listesindeki ürünlere ya da teknolojilere "
+                          "yönelik yatırımlar desteklenebilir; liste orta-yüksek ve yüksek teknolojili "
+                          "sektörlerden (EK-1) ve kritik ürünlerden oluşur, Bakanlık tebliğiyle yayımlanır "
+                          "(MADDE 2/i, MADDE 6)."],
+    "yerel-kalkinma-hamlesi": [_EK3_ARANMAZ, "Desteklenecek yatırım konuları il bazlı 'yerel yatırım "
+                               "konuları listesi' ile tebliğle belirlenir; program Kalkınma Ajansları "
+                               "Genel Müdürlüğünce yürütülür (MADDE 7)."],
+    "stratejik-hamle": [_EK3_ARANMAZ, "Yatırım konusunun stratejik hamle yatırım konuları listesinde "
+                        "yer alması; asgari sabit yatırım yüksek teknoloji için 100 milyon TL, diğerleri "
+                        "için 200 milyon TL; ön değerlendirmede 5 kriterden en az 3'ü (ithalat karşılama "
+                        "oranı ≤%70, katma değer ≥%30, %20 öz kaynak, son bir yıl ithalat ≥50 milyon USD "
+                        "vb.); kalkınma ve yatırım bankası fizibilite raporu (MADDE 8)."],
+}
+
+
+def program_sartlari(parca: str) -> list[str]:
+    return PROGRAM_SARTLARI[parca] + GENEL_SARTLAR
 
 
 def calistir(uygula: bool) -> int:
@@ -247,7 +283,7 @@ def calistir(uygula: bool) -> int:
                     kaynak_url=f"{KARAR_URL}#{p['parca']}",
                     uygunluk_kriterleri=p["uygunluk_kriterleri"],
                     basvuru_yeri=BASVURU_YERI,
-                    basvuru_sartlari=ORTAK_SARTLAR + p.get("ek_sartlar", []),
+                    basvuru_sartlari=program_sartlari(p["parca"]) + p.get("ek_sartlar", []),
                     aktif_mi=True, durum_notu=YENI_DURUM_NOTU,
                     guncelleme_tarihi=simdi,
                 ))

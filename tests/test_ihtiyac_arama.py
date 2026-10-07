@@ -93,6 +93,14 @@ def test_imalat_profili_tarim_programini_elemez_9903_ve_firma_argesini_getirir(v
     imalat = FinancialProfile(sektor="imalat", calisan_sayisi=30, yillik_ciro=80e6, nace_kodu="10.71")
     sonuc = _idler(rag.retrieve(SORU, limit=4, profil_kaydi=imalat))
     assert 78 not in sonuc, "çiftçiye yönelik program imalatçıya gelmemeli"
+    assert 44 in sonuc, "Ar-Ge ihtiyacı temsil edilmeli"
+    # 10.71 (ekmek) 9903 EK-3'te yok: Hedef Yatırımlar kesin olarak desteklemez (MADDE 5/1, 10).
+    assert 180 not in sonuc
+
+
+def test_ek3_kapsamindaki_imalatciya_hedef_yatirimlar_gelir(veri):
+    makine = FinancialProfile(sektor="imalat", calisan_sayisi=30, yillik_ciro=80e6, nace_kodu="28.93")
+    sonuc = _idler(rag.retrieve(SORU, limit=4, profil_kaydi=makine))
     assert 180 in sonuc and 44 in sonuc, "iki ihtiyacın her biri temsil edilmeli"
     assert sonuc.index(44) < sonuc.index(40) if 40 in sonuc else True
 
@@ -126,7 +134,7 @@ def test_answer_profili_yalnizca_yerel_elemede_kullanir(veri, monkeypatch):
     """profil_kaydi dışarı gönderilmez; LLM'e giden bağlamda tarım programı olmamalı."""
     gorulen = {}
 
-    def sahte_claude(query, matches, profil):
+    def sahte_claude(query, matches, profil, notlar=None):
         gorulen["idler"] = _idler(matches)
         gorulen["profil"] = profil
         return "yanıt"
@@ -135,3 +143,10 @@ def test_answer_profili_yalnizca_yerel_elemede_kullanir(veri, monkeypatch):
     imalat = FinancialProfile(sektor="imalat", calisan_sayisi=30, yillik_ciro=80e6)
     rag.answer(SORU, None, llm_kullan=True, profil_kaydi=imalat)
     assert 78 not in gorulen["idler"] and gorulen["profil"] is None
+
+
+def test_tubitak_1511_hamle_kelimesiyle_yatirim_sayilmaz():
+    t = Tesvik(kurum="TUBITAK", kaynak_url=f"{TUBITAK}/sanayi/1511", uygunluk_kriterleri={},
+               baslik="1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yenilik P. D. P."
+                      "(Teknoloji Odaklı Sanayi Hamlesi Programı)")
+    assert program_ihtiyaclari(t) == {"arge"}

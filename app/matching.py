@@ -14,6 +14,8 @@ from sqlalchemy.orm import Session, selectinload
 
 from app.match_adapter import company_from_profile, program_from_tesvik
 from app.match_scoring import hard_filter
+from app.kobi import kobi_sinifi
+from app.tesvik_9903_uygunluk import kayit_icin as uygunluk_9903
 from app.nace_hiyerarsi import sector_match
 from app.models import FinancialProfile, Tesvik
 from app.urun_sektor_anahtarlari import (
@@ -98,6 +100,8 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
 
     sonuclar: list[TesvikEslesmeSonucu] = []
     sirket = company_from_profile(profil)
+    _olcek = kobi_sinifi(profil.calisan_sayisi, profil.yillik_ciro)
+    olcek_sinifi = _olcek.sinif if _olcek.kesin else None
 
     for t in db.query(Tesvik).options(selectinload(Tesvik.nace_kayitlari)).all():
         # KAPANDIGI DOGRULANMIS programlari hic onerme. Bunlar bir firsat
@@ -122,6 +126,12 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
         program = program_from_tesvik(t)
         sebepler, _ = hard_filter(sirket, program, strict_sector=True)
         if sebepler:
+            continue
+
+        # 9903: EK-3 şartı aranan programda yatırım konusu listede yoksa kesin olarak
+        # desteklenmez (MADDE 5/1); diğer sonuçlar kullanıcıya not olarak düşülür.
+        u9903 = uygunluk_9903(t, getattr(profil, "nace_kodu", None), profil.bolge, olcek_sinifi)
+        if u9903 is not None and u9903.durum == "uygun_degil":
             continue
 
         skor = 0.0
@@ -158,6 +168,12 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
                 ", ".join(program.excluded_nace_codes) + "). Faaliyet (NACE) kodunuzu "
                 "girerseniz uygunluğu netleşir."
             )
+
+        if u9903 is not None:
+            if u9903.durum in ("uygun", "sartli"):
+                gerekce.append(f"9903 ön değerlendirmesi: {u9903.metin()}.")
+            else:
+                eksik.append(f"9903 ön değerlendirmesi: {u9903.metin()}.")
 
         bolge_kisitli = kriterler.get("bolge_kisitli")
         if bolge_kisitli:

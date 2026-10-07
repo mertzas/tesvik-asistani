@@ -25,6 +25,8 @@ from sqlalchemy.orm import selectinload
 from app.ihtiyac import isletmeye_yonelik_mi, program_ihtiyaclari, soru_ihtiyaclari
 from app.match_adapter import company_from_profile, program_from_tesvik
 from app.match_scoring import hard_filter
+from app.kobi import kobi_sinifi
+from app.tesvik_9903_uygunluk import SIRALAMA_ETKISI as UYGUNLUK_9903_ETKISI, kayit_icin as uygunluk_9903
 from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu, settings
 from sqlalchemy import or_
 
@@ -97,6 +99,12 @@ Doğrulanmış, güncel/aktif program" yazan kayıtları güvenle önerebilirsin
 Hiçbir durum notu yoksa (aktiflik hiç kontrol edilmemişse), kullanıcıya \
 "bu programın hâlâ açık olup olmadığını kurumun kendi sayfasından teyit edin" \
 diye açıkça hatırlat.
+
+SİSTEM ÖN DEĞERLENDİRMESİ: Bazı kayıtların altında "SİSTEM ÖN DEĞERLENDİRMESİ" satırı \
+bulunur; bu, Karar metnindeki listelerden (EK-1, EK-3) ve profilden hesaplanmıştır. "UYGUN \
+DEĞİL" ise programı önermeyip gerekçesini (madde numarasıyla) söyle; "ŞARTLI" ve "DÜŞÜK \
+OLASILIK" için şartı açıkça yaz; "BELİRLENEMEDİ" için hangi listenin teyit edilmesi \
+gerektiğini belirt. Bu değerlendirmeyi kendi tahmininle çelişecek biçimde değiştirme.
 
 NET VE DÜRÜST ELEME: Şirket veya proje bir program için uygun değilse bunu doğrudan, \
 gerekçesiyle söyle; hangi şartı sağlamadığını (NACE/sektör, KOBİ ölçeği, çalışan/ciro \
@@ -190,9 +198,15 @@ def retrieve(query: str, limit: int = 5, profil_kaydi=None) -> list[Tesvik]:
     havuz = [t for t in havuz if isletmeye_yonelik_mi(t)
              or any(kucult(t.baslik or "").startswith(k) for k in kodlar)]
 
+    degerlendirme_9903: dict[int, object] = {}
     if profil_kaydi is not None:
         sirket = company_from_profile(profil_kaydi)
         havuz = [t for t in havuz if _profile_uygun_mu(t, sirket, profil_kaydi)]
+        # 9903 programları: EK-3 şartı aranan programda konu listede yoksa (kesin hukuki
+        # sonuç) elenir; diğer sonuçlar sıralamayı etkiler (bkz. app/tesvik_9903_uygunluk.py).
+        degerlendirme_9903 = profil_9903_degerlendirmesi(havuz, profil_kaydi)
+        havuz = [t for t in havuz
+                 if getattr(degerlendirme_9903.get(t.id), "durum", None) != "uygun_degil"]
 
     aranan = set(ihtiyaclar)
     profil_sektor = (getattr(profil_kaydi, "sektor", None) or "").lower()
@@ -211,6 +225,9 @@ def retrieve(query: str, limit: int = 5, profil_kaydi=None) -> list[Tesvik]:
             p += 0.3
         elif t.aktif_mi is False:
             p -= 5.0  # kapalı programı başvurulabilir seçeneklerin önüne koyma
+        u = degerlendirme_9903.get(t.id)
+        if u is not None:
+            p += UYGUNLUK_9903_ETKISI[u.durum]
         return p
 
     havuz.sort(key=lambda t: (-puan(t), t.id))
@@ -228,6 +245,20 @@ def retrieve(query: str, limit: int = 5, profil_kaydi=None) -> list[Tesvik]:
     secilen = secilen[:limit]
     secilen.sort(key=lambda t: (-puan(t), t.id))
     return secilen
+
+
+def profil_9903_degerlendirmesi(kayitlar, profil_kaydi) -> dict:
+    """{tesvik_id: Uygunluk9903} - yalnızca 9903 program kayıtları için."""
+    if profil_kaydi is None:
+        return {}
+    olcek = kobi_sinifi(profil_kaydi.calisan_sayisi, profil_kaydi.yillik_ciro)
+    sonuc = {}
+    for t in kayitlar:
+        u = uygunluk_9903(t, getattr(profil_kaydi, "nace_kodu", None), profil_kaydi.bolge,
+                          olcek.sinif if olcek.kesin else None)
+        if u is not None:
+            sonuc[t.id] = u
+    return sonuc
 
 
 def _profile_uygun_mu(t: Tesvik, sirket, profil_kaydi) -> bool:
@@ -505,8 +536,13 @@ def _tesvik_detay_metni(m: Tesvik) -> str:
     return "\n".join(satirlar)
 
 
-def _baglam_metni(matches: list[Tesvik], profil: dict | None) -> str:
-    kayitlar = "\n\n".join(_tesvik_detay_metni(m) for m in matches)
+def _baglam_metni(matches: list[Tesvik], profil: dict | None,
+                  notlar: dict[int, str] | None = None) -> str:
+    notlar = notlar or {}
+    kayitlar = "\n\n".join(
+        _tesvik_detay_metni(m) + (f"\nSİSTEM ÖN DEĞERLENDİRMESİ (profilinize göre, Karar metninden): "
+                                  f"{notlar[m.id]}" if m.id in notlar else "")
+        for m in matches)
     iletisim = _kurum_iletisim_metni(matches)
     iletisim_blogu = (
         f"\n\nDOĞRULANMIŞ KURUM İLETİŞİM BİLGİLERİ (bu numaraları/adresleri "
@@ -533,7 +569,8 @@ def _baglam_metni(matches: list[Tesvik], profil: dict | None) -> str:
     )
 
 
-def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None) -> str | None:
+def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None,
+                  notlar: dict[int, str] | None = None) -> str | None:
     """Claude API ile bulunan kayitlari + kullanici profilini yorumlayip
     yapilandirilmis cevap uretir. API anahtari yoksa veya cagri basarisiz
     olursa None doner - cagiran taraf liste formatina duser, hicbir zaman
@@ -546,7 +583,7 @@ def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None) -> str
     except ImportError:
         return None
 
-    baglam = _baglam_metni(matches, profil)
+    baglam = _baglam_metni(matches, profil, notlar)
 
     try:
         client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY)
@@ -634,8 +671,10 @@ def answer(query: str, profil: dict | None = None,
             "bakabilirsiniz."
         )
 
+    notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi).items()}
     if llm_kullan:
-        claude_cevap = _claude_cevap(query, matches, profil)
+        claude_cevap = (_claude_cevap(query, matches, profil, notlar) if notlar
+                        else _claude_cevap(query, matches, profil))
         if claude_cevap is not None:
             return claude_cevap
 

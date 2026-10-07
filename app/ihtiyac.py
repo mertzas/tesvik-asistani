@@ -47,9 +47,11 @@ IHTIYAC_ADLARI: dict[str, str] = {
 _BASLIK = {
     # "yatırım" tek başına yetmez: "Yatırım Tabanlı Girişimcilik" (BiGG) ve "Girişim
     # Sermayesi" girişim/fon programlarıdır; "kapasite" tek başına 1601 gibi ekosistem
-    # programlarını yatırım sayıyordu (ölçüm 2026-10-07).
+    # programlarını yatırım sayıyordu (ölçüm 2026-10-07). "hamle" de yok: TÜBİTAK 1511'in
+    # adı "Teknoloji Odaklı Sanayi Hamlesi" ve 9903 kotasını dolduruyordu; 9903 programları
+    # zaten kurum adından (Sanayi ve Teknoloji Bakanlığı) yatırım sayılır.
     "yatirim": re.compile(r"yatirim (?:tesvik|destek|kredi)|yatirim-(?:isletme|proje)|yatirimlar|"
-                          r"hamle|tesvik sistemi|makine|modernizasyon|imalat|kapasite gelistirme"),
+                          r"makine|modernizasyon|imalat|kapasite gelistirme"),
     "arge": re.compile(r"ar-?ge|inovasyon|tasarim|patent"),
     "ihracat": re.compile(r"ihracat|pazara giris|doviz kazandirici|e-ihracat|uluslararasi pazar"),
     "istihdam": re.compile(r"istihdam"),

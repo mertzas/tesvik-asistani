@@ -628,5 +628,428 @@
   "url": "https://www.tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinliklere-katilma-destekleri/2224-c-uluslararasi-anlasmalar-cercevesinde-yurt-disindaki-bilimsel-etkinliklere-katilimi-destekleme-programi",
   "tarih": "2026-10-07",
   "durum": "AÇIK"
+ },
+ {
+  "id": 90,
+  "alan": "tutar/vade",
+  "bizde": "(boş)",
+  "kaynakta": "Azami 24 ay (işletme) / 120 ay (yatırım) vade; kredi komisyonu azami %1, KGF kefalet komisyonu %0,5; işletme kredisinin azami %10'u nakit",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF (2025 aktif paketleri)"
+ },
+ {
+  "id": 91,
+  "alan": "tutar",
+  "bizde": "(boş)",
+  "kaynakta": "Kefalet 150 Milyon TL, kredi 500 Milyon TL; %80",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 94,
+  "alan": "tutar/vade",
+  "bizde": "(boş)",
+  "kaynakta": "İşletme kredisi 10 Milyon TL (24 ay), yatırım kredisi 20 Milyon TL (60 ay), 12 ay ödemesiz; %80; başvuru ücreti kredinin %0,15 (asgari 10.000 TL)",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tarim-kefalet-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 118,
+  "alan": "oran",
+  "bizde": "(boş)",
+  "kaynakta": "Kefalet %100; vade ilgili KOSGEB programına göre",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/dogrudan-krediler/kosgeb-geri-odemeli-destekleri",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 125,
+  "alan": "vade",
+  "bizde": "(boş)",
+  "kaynakta": "Azami 12 ay (işletme) / 36 ay (yatırım); komisyon azami %1, kefalet komisyonu %0,5",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/2024-dijital-donusum-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 146,
+  "alan": "şart",
+  "bizde": "(boş)",
+  "kaynakta": "%49+ kamu ortaklı firmalara kredi yok (TURWIB koşulu); tutar sayfada yok",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/turwib-programi-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "AKTİF"
+ },
+ {
+  "id": 153,
+  "alan": "tutar",
+  "bizde": "(boş)",
+  "kaynakta": "85 Milyon TL; %80",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/turyib-programi-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 154,
+  "alan": "komisyon",
+  "bizde": "(boş)",
+  "kaynakta": "Komisyon yıllık %1,5 (tutar sayfada yok)",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-genel-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "AKTİF"
+ },
+ {
+  "id": 159,
+  "alan": "vade/oran",
+  "bizde": "(boş)",
+  "kaynakta": "Azami 24 ay; reeskont kredilerinde kefalet %100; komisyon %1",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/i-hracat-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 4,
+  "alan": "tutar/çağrı",
+  "bizde": "(boş)",
+  "kaynakta": "Yıllık destek üst limiti 5.000.000 TL (2025; her yıl güncellenir); 2026-01 COP31 Hızlandırma Çağrısı; hızlandırma desteği 10 yıl",
+  "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9297/teknoloji-merkezi-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF (aracı kuruluş programı)"
+ },
+ {
+  "id": 6,
+  "alan": "tutar",
+  "bizde": "(boş)",
+  "kaynakta": "İşletici kuruluş yıllık üst limiti 6.506.000 TL, %100 (TÜFE+Yİ-ÜFE)/2 ile güncellenir",
+  "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9327/sektorel-gelisim-merkezi-segem-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF (aracı kuruluş programı)"
+ },
+ {
+  "id": 7,
+  "alan": "tutar/tarih",
+  "bizde": "(boş)",
+  "kaynakta": "2026-2 dönemi başvuru 1 Eylül–31 Ekim 2026; kredi üst limiti KOBİ 50 Milyon TL, büyük işletme 150 Milyon TL; azami faiz %37; masraf ≤%1",
+  "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF (2026-2 dönemi)"
+ },
+ {
+  "id": 9,
+  "alan": "tutar/tarih",
+  "bizde": "(boş)",
+  "kaynakta": "2026 Yılı 1. Başvuru Dönemi çağrısı; 75.000.000 TL / 30.000.000 TL; kredi alt limiti 30 M TL; proje 24 ay",
+  "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9206/kuresel-rekabetcilik-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 14,
+  "alan": "tutar/oran",
+  "bizde": "(boş)",
+  "kaynakta": "Takvim yılı başına destek ≤25 Milyon TL; Türk uyruklu Ar-Ge personeli %75; yabancı uyruklu %25–%100; niyet beyanı ile başvuru",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1515-oncul-ar-ge-laboratuvarlari-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 15,
+  "alan": "tutar/oran",
+  "bizde": "(boş)",
+  "kaynakta": "1702 Patent Lisans: proje ≤60 ay, bütçe üst sınırı 4.000.000 TL; temel oran %25, KOBİ +%15, EPO/JPO/KIPO/CNIPA/USPTO patenti +%10, yüksek teknoloji/Yeşil Mutabakat ilaveleri",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1702-patent-tabanli-teknoloji-transferi-destekleme-cagrisi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 18,
+  "alan": "oran",
+  "bizde": "(boş)",
+  "kaynakta": "1613 TTO profesyoneli (ekosistem): destek oranları %60/%40/%80 kademeli; hizmet alımı = A×%5, genel gider = (A+B)×%5",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1613-teknoloji-transferi-profesyoneli-cagrisi",
+  "tarih": "2026-10-07",
+  "durum": "AKTİF (işletmeye değil)"
+ },
+ {
+  "id": 27,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "1711 Yapay Zekâ Ekosistem 2026 Çağrısı AÇIK; müşteri kuruluş KOBİ ise gider payı %10; başvuru eteydeb",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1711-yapay-zeka-ekosistem-cagrisi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AKTİF"
+ },
+ {
+  "id": 39,
+  "alan": "oran",
+  "bizde": "(boş)",
+  "kaynakta": "Tek ortaklı: KOBİ %75 / büyük %60; çok ortaklı: KOBİ %60 / büyük %40 (bütçe üst limitleri çağrıda)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1509-tubitak-uluslararasi-sanayi-ar-ge-projeleri-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 40,
+  "alan": "oran",
+  "bizde": "(boş)",
+  "kaynakta": "1601 (ekosistem): %100'e kadar; bütçe üst sınırı çağrıda",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1601-yenilik-girisimcilik-alanlarinda-kapasite-artirilmasina-yonelik-dp",
+  "tarih": "2026-10-07",
+  "durum": "AKTİF (işletmeye değil)"
+ },
+ {
+  "id": 44,
+  "alan": "tutar/oran",
+  "bizde": "(boş)",
+  "kaynakta": "2026 yılı 2. Çağrı dokümanı; ilk 5 projede %75 hibe (en az ikisi ortaklı); proje bütçesi ≤3.500.000 TL",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 49,
+  "alan": "çağrı",
+  "bizde": "aktif",
+  "kaynakta": "BiGG Yatırım 2026-2 Çağrı Metni yayında; 3 aşama (hızlandırma, tohum öncesi yatırım, tohum yatırımı 2025-1 BİGG+)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AKTİF"
+ },
+ {
+  "id": 55,
+  "alan": "tarih",
+  "bizde": "(boş)",
+  "kaynakta": "2026 çağrı takvimi (taslak): 2 Ocak, 13 Mart, 4 Mayıs, 17 Temmuz, 1 Eylül, 13 Kasım 2026; başvuru eteydeb",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1707-siparise-dayali-ar-ge-projeleri-icin-kobi-destekleme-cagrisi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 57,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "Sayfa canlı ama tutar/tarih sinyali yok (etkinlik destek programı)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1503-proje-pazarlari-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "KARARSIZ"
+ },
+ {
+  "id": 59,
+  "alan": "tutar/tarih",
+  "bizde": "(boş)",
+  "kaynakta": "1832 2026-2 Çağrı Duyurusu; süre ≤24 ay; bütçe üst limiti mikro/küçük 15.000.000 TL (orta/büyük sayfada); ilave %20 hibe kaldırıldı; yürütücü ≥%75 özel sektör",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1832-sanayide-yesil-donusum-cagrisi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 75,
+  "alan": "kapsam",
+  "bizde": "aktif",
+  "kaynakta": "Sayfa canlı; yürütücü kuruluş müşteriden dönemsel bütçenin ≤%10 hizmet alabilir",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1505-universite-sanayi-isbirligi-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AKTİF"
+ },
+ {
+  "id": 11,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "2026/3. dönem çağrısı 05.10.2026'da açıldı (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme-destekleri/2223-c-cok-katilimli-uluslararasi-etkinlik-duzenleme-destegi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 20,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "2026/3. dönem çağrısı açık (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme-destekleri/2223-b-yurt-ici-bilimsel-etkinlik-duzenleme-destegi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 21,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "son başvuru 14 Ağustos 2026 (e-imza 21 Ağustos) (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2568-cin-bilimler-akademisi-cas-ile-ikili-isbirligi-programi",
+  "tarih": "2026-10-07",
+  "durum": "KAPALI"
+ },
+ {
+  "id": 22,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "tarih yok (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/coklu-birligi-programlari/2515-cost-aksiyon-uyeleri-ar-ge-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "KARARSIZ"
+ },
+ {
+  "id": 24,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "2026/3. dönem açık (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinliklere-katilma-destekleri/2224-b-yurt-ici-bilimsel-etkinliklere-katilimi-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 29,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "tarih yok (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/uluslararasi-destek-programlari/1071-uluslararasi-isbirligi-projeleri-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "KARARSIZ"
+ },
+ {
+  "id": 32,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "son başvuru 17 Temmuz 2026 (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2566-cin-ulusal-doga-bilimleri-vakfi-nsfc-ile-ikili-isbirligi-cagrisi",
+  "tarih": "2026-10-07",
+  "durum": "KAPALI"
+ },
+ {
+  "id": 41,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "Türk tarafı sürekli açık (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2501-abd-ulusal-bilim-vakfi-nsf-ile-ikili-isbirligi-programi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 43,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "1 Şubat 2026: üst limit 1.200.000 TL (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1005-ulusal-yeni-fikirler-ve-urunler-arastirma-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 45,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "2026/3. dönem açık (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinliklere-katilma-destekleri/2224-yurt-disi-bilimsel-etkinliklere-katilimi-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 53,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "dönemsel; 2025/4 sonuçları 27.01.2026 (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme-destekleri/2223-d-ikili-isbirligi-anlasmalari-cercevesinde-etkinlik-duzenleme-destegi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 58,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "tarih yok (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2516-bilim-bilgi-ve-iletisim-teknolojileri-bakanligi-msit-ve-kore-ulusal-arastirma-vakfi-nrf-ile-ikili-isbirligi-programi",
+  "tarih": "2026-10-07",
+  "durum": "KARARSIZ"
+ },
+ {
+  "id": 60,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "1 Şubat 2026: üst limit 100.000 TL (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1002-b-acil-destek-modulu",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 64,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "tarih yok (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2502-bulgaristan-bilimler-akademisi-bas-ile-ikili-isbirligi-programi",
+  "tarih": "2026-10-07",
+  "durum": "KARARSIZ"
+ },
+ {
+  "id": 65,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "1 Şubat 2026: yıllık 150.000 TL (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1002-hizli-destek-modulu",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 66,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "2025 başvuruları duyurusu; 2026 yok (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinliklere-katilma-destekleri/2224-d-yurt-disindaki-bilimsel-egitim-etkinliklerine-katilimi-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "KARARSIZ"
+ },
+ {
+  "id": 68,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "1 Şubat 2026 limitleri (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/3501-kariyer-gelistirme-programi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 69,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "2026/1 dönem sonuçları 16.06.2026 (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme-destekleri/2237-bilimsel-egitim-etkinlikleri-destegi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 71,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "tarih yok (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2507-almanya-arastirmalar-konseyi-dfg-ile-ikili-isbirligi-programi",
+  "tarih": "2026-10-07",
+  "durum": "KARARSIZ"
+ },
+ {
+  "id": 72,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "2025 yol ücreti tablosu (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinlik-duzenleme-destekleri/2237-b-proje-egitimi-etkinliklerini-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 175,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "1 Şubat 2026 limitleri (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/3005-b-teknolojik-ilerlemelerin-toplumsal-etkileri-modulu",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
+ },
+ {
+  "id": 176,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "1 Şubat 2026 limitleri (akademik program)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/3005-politika-gelistirme-modulu",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AÇIK"
  }
 ]

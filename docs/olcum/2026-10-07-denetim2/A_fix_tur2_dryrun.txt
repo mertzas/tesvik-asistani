@@ -1,0 +1,86 @@
+[90] YATIRIM-İŞLETME DESTEK PAKETİ
+    tesvil_tutari: 'None' -> 'Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120'
+    not: Denetim2-T2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazin
+[91] TKYB KREDİ DESTEK PAKETİ
+    tesvil_tutari: 'None' -> 'Kefalet 150 Milyon TL, kredi 500 Milyon TL; kefalet oranı %8'
+    not: Denetim2-T2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazin
+[94] TARIM KEFALET DESTEK PROGRAMI
+    tesvil_tutari: 'None' -> 'İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi '
+    not: Denetim2-T2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkay
+[118] KOSGEB Geri Ödemeli Destekleri
+    tesvil_tutari: 'None' -> 'Kefalet oranı %100; vade ilgili KOSGEB geri ödemeli destek p'
+    not: Denetim2-T2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkay
+[125] 2024 Dijital Dönüşüm Destek Paketi
+    tesvil_tutari: 'None' -> 'Vade: işletme azami 12 ay, yatırım azami 36 ay (ödemesiz dah'
+    not: Denetim2-T2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazin
+[146] TURWIB PROGRAMI DESTEK PAKETİ
+    (yalnızca durum_notu)
+    not: Denetim2-T2 2026-10-07: sayfa yayında; %49+ kamu ortaklı firmalar hariç; tutar sayfada yok (https://www.kgf.com.tr/index
+[153] TURYIB Programı Destek Paketi
+    tesvil_tutari: 'None' -> '85 Milyon TL; kefalet oranı %80'
+    not: Denetim2-T2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazin
+[154] KGF Genel Destek Programı
+    (yalnızca durum_notu)
+    not: Denetim2-T2 2026-10-07: sayfa yayında; komisyon yıllık %1,5; limit sayfada yok (https://www.kgf.com.tr/index.php/tr/urun
+[159] İhracat Destek Paketi
+    tesvil_tutari: 'None' -> 'Azami 24 ay vade (anapara ödemesiz dahil); reeskont krediler'
+    not: Denetim2-T2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazin
+[1] Girişimci Destek Programı
+    basvuru_suresi: 'Yıl boyunca açık başvuru dönemleri (güncel takvim için KOSGE' -> 'Dönemsel çağrı: İş Geliştirme 2026/2 dönemi 20 Nisan – 8 May'
+    not: Denetim2-T2 2026-10-07: 2026/2 dönemi duyurusu: 2 M TL'ye kadar destek; kadın/genç girişimciye 1 M TL'ye kadar işletme s
+[8] Kapasite Geliştirme Destek Programı
+    basvuru_suresi: 'Belirli bir son tarih yok, sürekli başvuruya açık (güncel ba' -> "Dönemsel çağrı: 2026 yılı 2. başvuru dönemi 6 Haziran 2026'd"
+    not: Denetim2-T2 2026-10-07: 2026/2 dönemi duyurusu (https://www.kosgeb.gov.tr/site/tr/genel/detay/9391/ureten-kobilere-guclu
+[4] Teknoloji Merkezi Destek Programı
+    tesvil_tutari: 'None' -> 'Her bir desteğin yıllık üst limiti 5.000.000 TL (2025; her t'
+    tutari_max: 'None' -> '6500000.0'
+    basvuru_suresi: 'None' -> '2026-01 COP31 Hızlandırma Çağrısı başvuruları 9–30 Ağustos 2'
+    not: Denetim2-T2 2026-10-07: TEKMER/TGB işletici kuruluş programı; COP31 çağrı duyurusu 9453 (https://www.kosgeb.gov.tr/site/
+[6] Sektörel Gelişim Merkezi (SEGEM) Destek Programı
+    tesvil_tutari: 'None' -> 'İşletici kuruluş yıllık destek üst limiti 6.506.000 TL, %100'
+    tutari_max: 'None' -> '6506000.0'
+    not: Denetim2-T2 2026-10-07: SEGEM işletici kuruluş programı (https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9327/sektor
+[7] İstihdamı Koruma Destek Programı
+    tesvil_tutari: 'None' -> 'Kredi üst limiti KOBİ 50 Milyon TL, büyük işletme 150 Milyon'
+    tutari_max: 'None' -> '50000000.0'
+    basvuru_suresi: 'None' -> '2026-2 dönemi başvuruları: 1 Eylül – 31 Ekim 2026'
+    not: Denetim2-T2 2026-10-07: 2026-2 dönemi açık (https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-de
+[9] Küresel Rekabetçilik Destek Programı
+    tesvil_tutari: 'None' -> '2026/1. başvuru dönemi: destek üst limiti 75.000.000 TL / 30'
+    tutari_min: 'None' -> '30000000.0'
+    tutari_max: 'None' -> '75000000.0'
+    not: Denetim2-T2 2026-10-07: 2026 yılı 1. başvuru dönemi çağrısı (https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9206/ku
+[14] 1515 - Öncül Ar-Ge Laboratuvarları Destekleme Prog
+    tesvil_tutari: 'None' -> 'Takvim yılı başına destek en fazla 25 Milyon TL; Türk uyrukl'
+    tutari_max: 'None' -> '25000000.0'
+    not: Denetim2-T2 2026-10-07: Uygulama Esasları MADDE 5 (https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programl
+[15] 1702 - Patent Tabanlı Teknoloji Transferi Destekle
+    tesvil_tutari: 'None' -> '1702 Patent Lisans: proje bütçesi üst sınırı 4.000.000 TL, s'
+    tutari_max: 'None' -> '4000000.0'
+    not: Denetim2-T2 2026-10-07: sayfa canlı (https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1702-paten
+[39] 1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri
+    tesvil_tutari: 'None' -> 'Destek oranı tek ortaklı: KOBİ %75 / büyük %60; çok ortaklı:'
+    not: Denetim2-T2 2026-10-07: sayfa canlı (https://www.tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programl
+[44] 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Program
+    tesvil_tutari: 'None' -> 'Proje bütçesi en fazla 3.500.000 TL; ilk 5 projede %75 hibe '
+    not: Denetim2-T2 2026-10-07: 2026/2 çağrısı (https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tu
+[55] 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ D
+    basvuru_suresi: 'None' -> '2026 çağrı takvimi (taslak): 2 Ocak, 13 Mart, 4 Mayıs, 17 Te'
+    not: Denetim2-T2 2026-10-07: sayfa canlı (https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1707-sipar
+[59] 1832 - Sanayide Yeşil Dönüşüm Çağrısı
+    tesvil_tutari: 'None' -> '1832 2026-2: destek süresi ≤24 ay; proje bütçesi üst limiti '
+    not: Denetim2-T2 2026-10-07: 2026-2 çağrısı (https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1832-sa
+[57] 1503 - Proje Pazarları Destekleme Programı
+    aktif_mi: 'True' -> 'None'
+    not: Denetim2-T2 2026-10-07: sayfa canlı ama tarih/tutar sinyali yok; aktiflik kararsız (https://www.tubitak.gov.tr/tr/destek
+[21] 2568 - Çin Bilimler Akademisi (CAS) ile İkili İşbi
+    aktif_mi: 'True' -> 'False'
+    not: Denetim2-T2 2026-10-07: son başvuru 14 Ağustos 2026 (e-imza 21 Ağustos 2026) (https://www.tubitak.gov.tr/tr/destekler/ul
+[32] 2566 - Çin Ulusal Doğa Bilimleri Vakfı (NSFC) ile 
+    aktif_mi: 'True' -> 'False'
+    not: Denetim2-T2 2026-10-07: son başvuru 17 Temmuz 2026 (https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikil
+[66] 2224-D Yurt Dışındaki Bilimsel Eğitim Etkinlikleri
+    aktif_mi: 'True' -> 'None'
+    not: Denetim2-T2 2026-10-07: yalnızca 2025 başvuru duyurusu; 2026 bilgisi yok (https://www.tubitak.gov.tr/tr/destekler/bilims
+
+DRY-RUN: 25 kayıt

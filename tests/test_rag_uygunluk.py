@@ -82,6 +82,21 @@ def test_eski_sistem_notu_alakasiz_soruda_yok():
     assert rag.eski_sistem_notu("1507 başvurusu için şartlar neler?") == ""
 
 
+def test_dusuk_olasilik_9903_programi_elenen_blogunda_listelenir(veri, db_session):
+    """Ekmek 10.71: Hedef Yatırımlar 'düşük olasılık' ile sıralamada geriye düşüp bağlama
+    girmiyor; model programı hiç bilmiyordu. Elenen bloğu artık onu da listeler, bağlamda
+    olan kayıt tekrarlanmaz."""
+    db_session.add(Tesvik(id=180, kurum="Sanayi ve Teknoloji Bakanlığı",
+                          baslik="Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)", ozet="yatırım", detay="d",
+                          aktif_mi=True, kaynak_url="https://t/180", uygunluk_kriterleri={"sektorler": ["genel"]}))
+    db_session.commit()
+    ekmek = FinancialProfile(sektor="imalat", bolge="Konya", nace_kodu="10.71", calisan_sayisi=30, yillik_ciro=80e6)
+    m = rag.elenen_9903_metni("yeni üretim hattı için makine yatırımı yapacağım", ekmek)
+    assert "Hedef Yatırımlar" in m and "DÜŞÜK OLASILIK" in m and rag.ESKI_SISTEM_NOTU in m
+    assert rag.elenen_9903_metni("yeni üretim hattı için makine yatırımı yapacağım", ekmek, haric_idler=[180]) == ""
+    assert rag.elenen_9903_metni("1507 şartları neler", ekmek) == "", "yatırım ihtiyacı yoksa blok yok"
+
+
 def test_answer_eski_sistem_notunu_baglama_ekler(veri, monkeypatch):
     gorulen = {}
 

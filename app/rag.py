@@ -292,26 +292,32 @@ def eski_sistem_notu(query: str) -> str:
     return f"Not: {ESKI_SISTEM_NOTU}" if _ESKI_SISTEM.search(kucult(query)) else ""
 
 
-def elenen_9903_metni(query: str, profil_kaydi) -> str:
-    """Profil nedeniyle elenen 9903 programları - danışman 'neden yok' sorusunu yanıtlayabilsin.
+def elenen_9903_metni(query: str, profil_kaydi, haric_idler=()) -> str:
+    """Profil nedeniyle elenen ("uygun değil") veya geriye düşen ("düşük olasılık") 9903
+    programları - danışman 'neden yok' sorusunu yanıtlayabilsin.
 
     Elenen kayıt bağlama hiç girmezse model "bu program hakkında bilgim yok" diyor ve
     kullanıcının asıl sorusuna ("teşvik belgesi alabilir miyim?") cevap veremiyordu
-    (ölçüm 2026-10-07). Yalnızca yatırım ihtiyacı olan sorularda eklenir."""
+    (ölçüm 2026-10-07). "Düşük olasılık" (ekmek 10.71: EK-3'te yok ama bölüm 10 var)
+    sıralamada geriye düştüğü için bağlama girmiyor, model "genel teşvik belgesi hakkında
+    bağlam yok" diyordu (tarayıcı ölçümü 2026-10-07). Yalnızca yatırım ihtiyacı olan
+    sorularda eklenir; bağlamda zaten olan kayıtlar (haric_idler) tekrarlanmaz."""
     if profil_kaydi is None or "yatirim" not in soru_ihtiyaclari(query):
         return ""
+    haric = set(haric_idler)
     db = SessionLocal()
     try:
-        kayitlar = [t for t in db.query(Tesvik).all() if t.aktif_mi is not False]
+        kayitlar = [t for t in db.query(Tesvik).all() if t.aktif_mi is not False and t.id not in haric]
         degerlendirme = profil_9903_degerlendirmesi(kayitlar, profil_kaydi)
         satirlar = [f"- {t.baslik}: {degerlendirme[t.id].metin()}"
                     for t in kayitlar
-                    if t.id in degerlendirme and degerlendirme[t.id].durum == "uygun_degil"]
+                    if t.id in degerlendirme and degerlendirme[t.id].durum in ("uygun_degil", "dusuk")]
     finally:
         db.close()
     if not satirlar:
         return ""
-    return ("SİSTEMİN ELEDİĞİ 9903 PROGRAMLARI (Karar metnine göre bu profil için uygun değil):\n"
+    return ("SİSTEMİN ELEDİĞİ / DÜŞÜK OLASILIK GÖRDÜĞÜ 9903 PROGRAMLARI (Karar metnine göre; "
+            "'UYGUN DEĞİL' kesin, 'DÜŞÜK OLASILIK' teyit gerektirir):\n"
             + "\n".join(satirlar) + f"\nNot: {ESKI_SISTEM_NOTU}")
 
 
@@ -800,7 +806,7 @@ def _hazirla(query: str, llm_kullan: bool, profil_kaydi) -> Hazirlik:
         ozet = destek_unsurlari_ozeti(u.program, bolge)
         if ozet:
             notlar[i] += f"\nDESTEK UNSURLARI (Karar metninden, profil bölgesine göre): {ozet}"
-    elenen = elenen_9903_metni(query, profil_kaydi) if llm_kullan else ""
+    elenen = elenen_9903_metni(query, profil_kaydi, haric_idler=[m.id for m in matches]) if llm_kullan else ""
     eski = eski_sistem_notu(query) if llm_kullan else ""
     if eski and ESKI_SISTEM_NOTU not in elenen:
         elenen = (elenen + "\n" if elenen else "") + eski

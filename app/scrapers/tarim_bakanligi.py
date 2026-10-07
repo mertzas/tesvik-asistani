@@ -72,11 +72,20 @@ TARIM_BAKANLIGI_DESTEKLERI = [
             "alt_kategori": "organik",
             "genislik": "genis"
         },
-        "tesvil_tutari": "Dekar başına ₺500 - ₺2.000 (ürüne göre değişken)",
-        "tutari_min": 500,
-        "tutari_max": 2000,
+        # Tutar alanları BUGEM 2026 birim fiyat tablosundan (bkz. app/tarim_destek_2026.py KAYNAK_URL);
+        # canlı DB ile aynı (Denetim 2 tur 7, 2026-10-08).
+        "tesvil_tutari": (
+            "Dekar başına 62–465 TL organik tarım desteği (2026; ürün grubu ve bireysel/grup sertifikaya göre, "
+            "1. derece örgüt üyesine %25 ilave dâhil); temel destek ayrıca ödenir"
+        ),
+        "tutari_min": 62,
+        "tutari_max": 465,
         "tutari_hesaplama_kriteri": "dekar",
-        "tutari_hesaplama_formulu": "Dekar başına ₺500-2000 (ürün türüne göre — çiçek/sebze daha yüksek)",
+        "tutari_hesaplama_formulu": (
+            "Ürün grubuna ve sertifika türüne göre: 3. grup grup sertifikası 62.00 TL/dekar (en az), 1. grup "
+            "bireysel sertifika 372.00 TL/dekar. 1. derece tarımsal amaçlı örgüt üyesi çiftçilere katsayının %25'i "
+            "kadar ilave ödenir; üst sınır 465.00 TL/dekar bunu içerir. Temel destek buna ek olarak alınır."
+        ),
         "basvuru_sartlari": [
             "Tarım yapan işletme",
             "Asgari 5 dekar arazi",
@@ -141,11 +150,17 @@ TARIM_BAKANLIGI_DESTEKLERI = [
             "alt_kategori": "sera",
             "genislik": "dar"
         },
-        "tesvil_tutari": "m² başına ₺50 - ₺200 (konstrüksiyon türüne göre)",
-        "tutari_min": 50,
-        "tutari_max": 200,
-        "tutari_hesaplama_kriteri": "genel",
-        "tutari_hesaplama_formulu": "m² başına ₺50-200 hibe (malzeme kalitesine göre — kat/tünel sera vs.); toplam tutar sera alanınıza (m²) bağlıdır, dekar bazlı arazi büyüklüğünüzle karıştırılmamalıdır",
+        "tesvil_tutari": (
+            "Dekar başına 310 TL temel destek; iyi tarım sertifikalı örtüaltı üretimde bireysel sertifikayla "
+            "+527 TL (en çok 837 TL/da, 2026)"
+        ),
+        "tutari_min": 310,
+        "tutari_max": 837,
+        "tutari_hesaplama_kriteri": "dekar",
+        "tutari_hesaplama_formulu": (
+            "Temel destek 310.00 TL/dekar. İyi tarım uygulamaları sertifikası varsa örtüaltı üretim için bireysel "
+            "sertifikada 527.00 TL/dekar ilave; üst sınır bu iki kalemin toplamı. Grup sertifikasında ilave yarıya iner."
+        ),
         "basvuru_sartlari": ["Arazi sahibi ya da 20+ yıl kiralamış", "Sera alanı min. 500 m²", "Yeşil Kart"],
         "gerekli_belgeler": ["Arazi Belgesi / Kira Sözleşmesi", "Sera Teknik Projesi", "Yapı Ruhsatı"],
         "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü",
@@ -200,11 +215,20 @@ TARIM_BAKANLIGI_DESTEKLERI = [
             "alt_kategori": "tahil_baklagil",
             "genislik": "dar"
         },
-        "tesvil_tutari": "Dekar başına mazot+gübre desteği, ürün grubuna göre yıllık kararnameyle belirlenir",
-        "tutari_min": None,
-        "tutari_max": None,
-        "tutari_hesaplama_kriteri": None,
-        "tutari_hesaplama_formulu": "Kesin dekar başına tutar için güncel 'Bitkisel Üretim Destekleme Birim Fiyatları' kararnamesine bakın (yıllık değişir)",
+        "tesvil_tutari": (
+            "Dekar başına 620–806 TL (2026): temel destek + planlı üretim desteği, her biri ürün katsayısı × "
+            "310 TL (mercimek/nohut 1,0; buğday/arpa/mısır 1,3); sertifikalı tohum ayrıca. 2026'da mazot ve "
+            "gübre desteği 'temel destek' adıyla birleştirildi"
+        ),
+        "tutari_min": 620,
+        "tutari_max": 806,
+        "tutari_hesaplama_kriteri": "dekar",
+        "tutari_hesaplama_formulu": (
+            "Temel destek + planlı üretim desteği. Kategori katsayısı ürüne göre değişir: mercimek/nohut 1,0 "
+            "(310.00 TL/da), buğday/arpa/mısır 1,3 (403.00 TL/da). İki kalem ayrı ayrı ödendiği için alt sınır "
+            "620.00, üst sınır 806.00 TL/dekar. Sertifikalı tohum kullanılırsa ilave ödenir. Birim değer 310.00 "
+            "TL/da (katsayı 1)."
+        ),
         "basvuru_sartlari": [
             "Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak",
             "Arazi/parsel bilgilerinin ÇKS'de güncel olması",
@@ -235,11 +259,19 @@ TARIM_BAKANLIGI_DESTEKLERI = [
             "alt_kategori": "sebze_meyve",
             "genislik": "dar"
         },
-        "tesvil_tutari": "Dekar başına mazot+gübre desteği, ürün grubuna göre yıllık kararnameyle belirlenir",
-        "tutari_min": None,
-        "tutari_max": None,
-        "tutari_hesaplama_kriteri": None,
-        "tutari_hesaplama_formulu": "Kesin dekar başına tutar için güncel 'Bitkisel Üretim Destekleme Birim Fiyatları' kararnamesine bakın (yıllık değişir)",
+        "tesvil_tutari": (
+            "Dekar başına 310 TL temel destek (2026, 1. kategori 'diğer ürünler'); fidan kullanım desteği "
+            "ayrıca 620 TL/da (standart) veya 1.550 TL/da (sertifikalı). 2026'da mazot ve gübre desteği "
+            "'temel destek' adıyla birleştirildi"
+        ),
+        "tutari_min": 310,
+        "tutari_max": 310,
+        "tutari_hesaplama_kriteri": "dekar",
+        "tutari_hesaplama_formulu": (
+            "Sebze ve meyve, tabloda 1. kategori \"Diğer ürünler\" kapsamında: temel destek 310.00 TL/dekar. "
+            "Planlı üretim desteği kategorilerinde yer almadığı için o kalem eklenmez. Fidan kullanım desteği "
+            "(standart 620,00 / sertifikalı 1.550,00 TL/da) ayrıca alınabilir."
+        ),
         "basvuru_sartlari": [
             "Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak",
             "Arazi/parsel bilgilerinin ÇKS'de güncel olması",

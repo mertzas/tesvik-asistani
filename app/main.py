@@ -12,6 +12,7 @@ from fastapi import BackgroundTasks, FastAPI, HTTPException, Depends, Request, s
 # dogrudan `Query(...)` yazmak sorgu parametresi yerine veritabani modelini
 # cagirir ve endpoint sessizce yanlis davranir.
 from fastapi import Query as SorguParam
+from fastapi.exceptions import RequestValidationError
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
@@ -21,6 +22,7 @@ from sqlalchemy.orm import Session
 from app.models import (init_db, get_db, Organization, User, Query, FinancialProfile, PlanType,
                         MacroIndicator, IkasBaglanti, settings)
 from app.models_cilek import Parsel, SogukZincirOkuma
+from app.dogrulama_mesajlari import turkce_hatalar
 from app.auth import (
     get_current_user,
     get_current_org,
@@ -160,6 +162,10 @@ async def guvenlik_basliklari(request: Request, call_next):
     if (response.headers.get("content-type", "").startswith("text/html")
             and not request.url.path.startswith(CSP_MUAF_YOLLAR)):
         response.headers.setdefault("Content-Security-Policy", CSP)
+    # Sayfa betikleri/CSS'i sürüm numarasız sunulur; önbellek yönergesi yokken tarayıcı sezgisel önbellekle eski
+    # betiği kullanmaya devam ediyordu (2026-10-08). no-cache: her açılışta ETag ile doğrula (değişmediyse 304).
+    if request.url.path.startswith("/static/") or response.headers.get("content-type", "").startswith("text/html"):
+        response.headers.setdefault("Cache-Control", "no-cache")
     return response
 
 DB_MESGUL_YANITI = {"detail": "Veritabanı şu anda meşgul. Lütfen birkaç saniye sonra tekrar deneyin."}
@@ -182,6 +188,13 @@ async def veritabani_hatasi(request: Request, exc: OperationalError):
     logger.error("Veritabanı hatası [%s] %s %s: %s", kimlik, request.method, request.url.path, exc)
     return JSONResponse(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                         content={"detail": "Veritabanı hatası oluştu.", "hata_kimligi": kimlik})
+
+
+@app.exception_handler(RequestValidationError)
+async def dogrulama_hatasi(request: Request, exc: RequestValidationError):
+    """422: aynı yapı ({detail: [{loc, msg, type}]}), Türkçe mesaj; gönderilen değer yanıta yansıtılmaz
+    (varsayılan işleyici parola politikasına takılan parolayı "input" alanında geri döndürüyordu)."""
+    return JSONResponse(status_code=422, content={"detail": turkce_hatalar(exc.errors())})
 
 
 @app.exception_handler(Exception)

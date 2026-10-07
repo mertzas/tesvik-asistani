@@ -29,6 +29,15 @@ def test_sunulan_sayfalar_sikilastirilmis_csp_tasir(client):
         assert "script-src 'self';" in r.headers["Content-Security-Policy"], yol
 
 
+def test_statik_betik_ve_sayfa_her_acilista_dogrulanir(client):
+    """Betikler sürüm numarasız: no-cache olmadan güncellemeden sonra tarayıcı eski betiği çalıştırıyordu."""
+    for yol in ("/static/js/panel.js", "/static/css/cilek.css", "/dashboard"):
+        assert client.get(yol).headers.get("cache-control") == "no-cache", yol
+    r = client.get("/static/js/panel.js")
+    assert client.get("/static/js/panel.js", headers={"If-None-Match": r.headers["etag"]}).status_code == 304
+    assert "cache-control" not in client.get("/health").headers
+
+
 @pytest.mark.parametrize("sayfa", SAYFALAR, ids=lambda p: p.name)
 def test_sayfada_satir_ici_betik_ve_olay_ozniteligi_yok(sayfa):
     html = sayfa.read_text(encoding="utf-8")

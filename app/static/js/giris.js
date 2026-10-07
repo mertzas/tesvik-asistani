@@ -9,7 +9,7 @@
         function hataMetni(err, varsayilan) {
             const d = err && err.detail;
             if (typeof d === "string") return d;
-            if (Array.isArray(d)) return d.map(x => (x && x.msg) ? x.msg.replace(/^Value error, /, "") : JSON.stringify(x)).join("; ");
+            if (Array.isArray(d)) return d.map(x => (x && x.msg) ? x.msg.replace(/^Value error, /, "") : JSON.stringify(x)).join(" ");
             return varsayilan;
         }
 

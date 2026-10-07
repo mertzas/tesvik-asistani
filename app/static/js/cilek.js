@@ -36,7 +36,7 @@ async function api(path, options = {}) {
     // 422'de detail bir dizidir; düz metne çevrilmezse kullanıcı "[object Object]" görür.
     const d = detay.detail;
     const metin = typeof d === 'string' ? d
-      : Array.isArray(d) ? d.map(x => (x && x.msg) ? x.msg.replace(/^Value error, /, '') : JSON.stringify(x)).join('; ')
+      : Array.isArray(d) ? d.map(x => (x && x.msg) ? x.msg.replace(/^Value error, /, '') : JSON.stringify(x)).join(' ')
       : `Sunucu hatası (${res.status})`;
     throw new Error(metin);
   }

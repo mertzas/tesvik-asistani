@@ -305,6 +305,41 @@
             padding: 20px;
         }
 
+        /* Danışman yanıtı (akışlı): /api/sor/akis parçaları geldikçe render edilir */
+        .ai-cevap {
+            background: white;
+            border-left: 4px solid #667eea;
+            padding: 20px 24px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+        .ai-baslik {
+            font-size: 12px;
+            color: #667eea;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .ai-baslik .ai-durum { font-weight: normal; text-transform: none; color: #999; }
+        .ai-metin { font-size: 14px; line-height: 1.65; color: #333; word-break: break-word; }
+        .ai-metin h1, .ai-metin h2, .ai-metin h3 { font-size: 16px; margin: 18px 0 8px; color: #333; }
+        .ai-metin h4, .ai-metin h5, .ai-metin h6 { font-size: 15px; margin: 14px 0 6px; color: #444; }
+        .ai-metin p { margin: 6px 0; }
+        .ai-metin ul, .ai-metin ol { padding-left: 22px; margin: 6px 0; }
+        .ai-metin li { margin: 3px 0; }
+        .ai-metin table { border-collapse: collapse; width: 100%; margin: 10px 0; font-size: 13px; display: block; overflow-x: auto; }
+        .ai-metin th, .ai-metin td { border: 1px solid #e0e0e0; padding: 6px 8px; text-align: left; vertical-align: top; }
+        .ai-metin th { background: #f5f6fa; }
+        .ai-metin code { background: #f5f6fa; padding: 1px 4px; border-radius: 3px; font-size: 13px; }
+        .ai-metin hr { border: 0; border-top: 1px solid #eee; margin: 14px 0; }
+        .ai-metin a { color: #667eea; }
+        .ai-metin .imlec::after { content: "▌"; color: #667eea; animation: yanip 1s steps(2) infinite; }
+        @keyframes yanip { 50% { opacity: 0; } }
+
         .spinner {
             border: 4px solid #f3f3f3;
             border-top: 4px solid #667eea;
@@ -829,7 +864,10 @@
             resultsDiv.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
 
             try {
-                const res = await fetch(`${API_BASE}/sor`, {
+                // Akışlı uç nokta: danışman yanıtı parça parça gelir (tam yanıt 35-60 sn;
+                // eskiden bu süre boyunca yalnızca spinner görünüyor ve yanıt hiç
+                // render edilmiyordu). Olaylar: kayitlar -> parca... -> son | hata.
+                const res = await fetch(`${API_BASE}/sor/akis`, {
                     method: "POST",
                     headers: {
                         "Authorization": `Bearer ${authToken}`,
@@ -840,31 +878,142 @@
 
                 if (!res.ok) {
                     const error = await res.json();
-                    resultsDiv.innerHTML = `<div class="error">${error.detail}</div>`;
+                    resultsDiv.innerHTML = `<div class="error">${escapeHtml(error.detail)}</div>`;
                     return;
                 }
 
-                const data = await res.json();
+                resultsDiv.innerHTML = `
+                    <div class="ai-cevap">
+                        <div class="ai-baslik"><span>🤖 Danışman yanıtı</span><span class="ai-durum" id="ai-durum">hazırlanıyor…</span></div>
+                        <div class="ai-metin" id="ai-metin"><div class="loading"><div class="spinner"></div></div></div>
+                    </div>
+                    <div id="kayit-listesi"></div>`;
+                const metinDiv = document.getElementById("ai-metin");
+                const durumSpan = document.getElementById("ai-durum");
+                let metin = "";
+                let hata = null;
+
+                await sseOku(res, (tip, veri) => {
+                    if (tip === "kayitlar") {
+                        renderKayitlar(veri, document.getElementById("kayit-listesi"));
+                    } else if (tip === "parca") {
+                        metin += veri.metin;
+                        metinDiv.innerHTML = mdToHtml(metin) + '<span class="imlec"></span>';
+                        durumSpan.textContent = "yazıyor…";
+                    } else if (tip === "hata") {
+                        hata = veri.detail;
+                    }
+                });
+
+                if (hata) {
+                    metinDiv.innerHTML = (metin ? mdToHtml(metin) : "") + `<div class="error">${escapeHtml(hata)}</div>`;
+                    durumSpan.textContent = "hata";
+                } else if (!metin) {
+                    metinDiv.innerHTML = '<div class="error">Yanıt alınamadı. Lütfen tekrar deneyin.</div>';
+                    durumSpan.textContent = "";
+                } else {
+                    metinDiv.innerHTML = mdToHtml(metin);
+                    durumSpan.textContent = "";
+                }
 
                 // Refresh stats
                 await loadAnalytics();
-
-                // Display results
-                resultsDiv.innerHTML = data.results.map(r => `
-                    <div class="result-card">
-                        <div class="kurum">${r.kurum}</div>
-                        <div class="baslik">${r.baslik}</div>
-                        <div class="ozet">${r.ozet}</div>
-                        <div class="meta">
-                            <span>👥 ${r.hedef_kitle || "Genel"}</span>
-                            ${r.baslama_tarihi ? `<span>📅 Başlangıç: ${new Date(r.baslama_tarihi).toLocaleDateString('tr-TR')}</span>` : ""}
-                            ${r.bitis_tarihi ? `<span>⏰ Bitiş: ${new Date(r.bitis_tarihi).toLocaleDateString('tr-TR')}</span>` : ""}
-                        </div>
-                    </div>
-                `).join("");
             } catch (e) {
-                resultsDiv.innerHTML = `<div class="error">Hata: ${e.message}</div>`;
+                resultsDiv.innerHTML = `<div class="error">Hata: ${escapeHtml(e.message)}</div>`;
             }
+        }
+
+        function renderKayitlar(kayitlar, hedef) {
+            if (!kayitlar || !kayitlar.length) {
+                hedef.innerHTML = "";
+                return;
+            }
+            hedef.innerHTML = kayitlar.map(r => `
+                <div class="result-card">
+                    <div class="kurum">${escapeHtml(r.kurum)}</div>
+                    <div class="baslik">${escapeHtml(r.baslik)}</div>
+                    <div class="ozet">${escapeHtml(r.ozet)}</div>
+                    <div class="meta">
+                        <span>👥 ${escapeHtml(r.hedef_kitle || "Genel")}</span>
+                        ${r.baslama_tarihi ? `<span>📅 Başlangıç: ${new Date(r.baslama_tarihi).toLocaleDateString('tr-TR')}</span>` : ""}
+                        ${r.bitis_tarihi ? `<span>⏰ Bitiş: ${new Date(r.bitis_tarihi).toLocaleDateString('tr-TR')}</span>` : ""}
+                    </div>
+                </div>
+            `).join("");
+        }
+
+        // Sunucudan gelen SSE gövdesini (event:/data: blokları) olay olay okur.
+        async function sseOku(res, onEvent) {
+            const reader = res.body.getReader();
+            const dec = new TextDecoder();
+            let buf = "";
+            while (true) {
+                const { value, done } = await reader.read();
+                if (done) break;
+                buf += dec.decode(value, { stream: true });
+                let idx;
+                while ((idx = buf.indexOf("\n\n")) >= 0) {
+                    const blok = buf.slice(0, idx);
+                    buf = buf.slice(idx + 2);
+                    let tip = "message", data = "";
+                    for (const satir of blok.split("\n")) {
+                        if (satir.startsWith("event:")) tip = satir.slice(6).trim();
+                        else if (satir.startsWith("data:")) data += satir.slice(5).trim();
+                    }
+                    if (data) onEvent(tip, JSON.parse(data));
+                }
+            }
+        }
+
+        function escapeHtml(s) {
+            return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+        }
+
+        // Danışman yanıtı Markdown gelir (başlık, kalın, liste, tablo). Önce HTML kaçışı,
+        // sonra sınırlı Markdown -> HTML; harici kütüphane ve ham HTML yok (XSS yüzeyi yok).
+        function inlineMd(s) {
+            s = escapeHtml(s);
+            s = s.replace(/`([^`]+)`/g, "<code>$1</code>");
+            s = s.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+            s = s.replace(/(^|[\s(])\*([^*\n]+)\*(?=[\s).,;:!?]|$)/g, "$1<em>$2</em>");
+            s = s.replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+            s = s.replace(/(^|[\s(])(https?:\/\/[^\s<)]+)/g, '$1<a href="$2" target="_blank" rel="noopener">$2</a>');
+            return s;
+        }
+
+        function mdToHtml(md) {
+            const lines = md.split("\n");
+            let html = "", acik = null, i = 0;
+            const kapat = () => { if (acik) { html += `</${acik}>`; acik = null; } };
+            const tabloSatiri = l => /^\s*\|.*\|\s*$/.test(l);
+            const hucreler = l => l.trim().replace(/^\||\|$/g, "").split("|").map(c => inlineMd(c.trim()));
+            while (i < lines.length) {
+                const line = lines[i];
+                const h = line.match(/^(#{1,6})\s+(.*)$/);
+                if (h) { kapat(); const n = h[1].length; html += `<h${n}>${inlineMd(h[2])}</h${n}>`; i++; continue; }
+                if (/^\s*(-{3,}|\*{3,}|_{3,})\s*$/.test(line)) { kapat(); html += "<hr>"; i++; continue; }
+                if (tabloSatiri(line) && i + 1 < lines.length && /^\s*\|?\s*:?-{2,}/.test(lines[i + 1])) {
+                    kapat();
+                    let t = "<table><thead><tr>" + hucreler(line).map(c => `<th>${c}</th>`).join("") + "</tr></thead><tbody>";
+                    i += 2;
+                    while (i < lines.length && tabloSatiri(lines[i])) {
+                        t += "<tr>" + hucreler(lines[i]).map(c => `<td>${c}</td>`).join("") + "</tr>";
+                        i++;
+                    }
+                    html += t + "</tbody></table>";
+                    continue;
+                }
+                const ul = line.match(/^\s*[-*•]\s+(.*)$/);
+                if (ul) { if (acik !== "ul") { kapat(); acik = "ul"; html += "<ul>"; } html += `<li>${inlineMd(ul[1])}</li>`; i++; continue; }
+                const ol = line.match(/^\s*\d+[.)]\s+(.*)$/);
+                if (ol) { if (acik !== "ol") { kapat(); acik = "ol"; html += "<ol>"; } html += `<li>${inlineMd(ol[1])}</li>`; i++; continue; }
+                if (!line.trim()) { kapat(); i++; continue; }
+                if (acik !== "p") { kapat(); acik = "p"; html += "<p>"; } else { html += "<br>"; }
+                html += inlineMd(line);
+                i++;
+            }
+            kapat();
+            return html;
         }
 
         async function loadAnalytics() {

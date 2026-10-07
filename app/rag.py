@@ -19,6 +19,7 @@ docstring'i) - LLM egitim verisinden gelen "hatirlanan" numaralar degil.
 """
 import logging
 import re
+from typing import NamedTuple
 
 import requests
 
@@ -56,6 +57,7 @@ CLAUDE_EFFORT = "medium"
 CEVAP_KAYIT_SAYISI = 8   # danışmana verilen kayıt sayısı (çok ihtiyaçlı sorularda kota için)
 DETAY_KARAKTER = 2500    # kayıt başına danışmana giden detay metni (temizlendikten sonra)
 HAVUZ_BOYUTU = 60        # ihtiyaç/profil katmanının kelime aramasından aldığı aday sayısı  # low | medium | high; danışman yanıtı için gecikme/kalite dengesi
+KESILDI_NOTU = "\n\n*(Yanıt uzunluk sınırında kesildi; sorunuzu daraltarak tekrar sorabilirsiniz.)*"
 
 # Anlamli sinyal tasimayan, aramada gurultu yaratan kisa/genel kelimeler.
 # Aramada anlamsiz olan ama ILIKE '%...%' ile veritabaninin cogunluguna
@@ -682,7 +684,7 @@ def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None,
             logger.warning("Claude yanıtı max_tokens sınırında kesildi (%s token)",
                            getattr(getattr(resp, "usage", None), "output_tokens", "?"))
             if cevap:
-                cevap += "\n\n*(Yanıt uzunluk sınırında kesildi; sorunuzu daraltarak tekrar sorabilirsiniz.)*"
+                cevap += KESILDI_NOTU
         return cevap or None
     except Exception as e:
         # Ag hatasi, rate limit, gecersiz anahtar, timeout - hepsi ayni
@@ -761,6 +763,43 @@ def profil_sozlugu(profil_row) -> dict:
     return profil
 
 
+BULUNAMADI_METNI = (
+    "Bu soruyla eşleşen bir teşvik/destek programı bulamadım. "
+    "Farklı anahtar kelimelerle (örn. kurum adı, sektör, \"girişimci\", "
+    "\"dijital dönüşüm\" gibi) tekrar deneyebilir ya da doğrudan "
+    "KOSGEB, TÜBİTAK, KGF veya Ticaret Bakanlığı'nın resmi sitelerine "
+    "bakabilirsiniz."
+)
+
+
+class Hazirlik(NamedTuple):
+    matches: list
+    notlar: dict
+    elenen: str
+    girisim: bool
+
+
+def _hazirla(query: str, llm_kullan: bool, profil_kaydi) -> Hazirlik:
+    """answer() ve answer_akis() için ortak hazırlık: kayıtlar, 9903 ön değerlendirme
+    notları, elenen/eski sistem bloğu, girişim modu.
+
+    profil_kaydi yalnızca YEREL eleme için kullanılır (dışarı gönderilmez); dışarı giden
+    profil, rızaya bağlı olan `profil` sözlüğüdür."""
+    matches = retrieve(query, limit=CEVAP_KAYIT_SAYISI, profil_kaydi=profil_kaydi)
+    if not matches:
+        return Hazirlik([], {}, "", False)
+    notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi).items()}
+    elenen = elenen_9903_metni(query, profil_kaydi) if llm_kullan else ""
+    eski = eski_sistem_notu(query) if llm_kullan else ""
+    if eski and ESKI_SISTEM_NOTU not in elenen:
+        elenen = (elenen + "\n" if elenen else "") + eski
+    girisim = bool(llm_kullan and girisim_modu_mu(profil_kaydi, query))
+    if girisim:
+        # HUKS kodda hesaplanır; blok ek bağlam olarak gider, format eki sistem prompt'una eklenir.
+        elenen = (elenen + "\n\n" if elenen else "") + girisim_baglam_metni(profil_kaydi)
+    return Hazirlik(matches, notlar, elenen, girisim)
+
+
 def answer(query: str, profil: dict | None = None,
            llm_kullan: bool = True, profil_kaydi=None) -> str:
     """Soruya yanit uretir.
@@ -771,41 +810,87 @@ def answer(query: str, profil: dict | None = None,
     (ABD) gonderiyor; bu yurt disina aktarimdir ve acik riza gerektirir.
     Riza yoksa cagri hic yapilmaz (bkz. app/main.py sor()).
     """
-    # profil_kaydi yalnızca YEREL eleme için kullanılır (dışarı gönderilmez);
-    # dışarı giden profil, rızaya bağlı olan `profil` sözlüğüdür.
-    matches = retrieve(query, limit=CEVAP_KAYIT_SAYISI, profil_kaydi=profil_kaydi)
+    h = _hazirla(query, llm_kullan, profil_kaydi)
+    if not h.matches:
+        return BULUNAMADI_METNI
 
-    if not matches:
-        return (
-            "Bu soruyla eşleşen bir teşvik/destek programı bulamadım. "
-            "Farklı anahtar kelimelerle (örn. kurum adı, sektör, \"girişimci\", "
-            "\"dijital dönüşüm\" gibi) tekrar deneyebilir ya da doğrudan "
-            "KOSGEB, TÜBİTAK, KGF veya Ticaret Bakanlığı'nın resmi sitelerine "
-            "bakabilirsiniz."
-        )
-
-    notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi).items()}
-    elenen = elenen_9903_metni(query, profil_kaydi) if llm_kullan else ""
-    eski = eski_sistem_notu(query) if llm_kullan else ""
-    if eski and ESKI_SISTEM_NOTU not in elenen:
-        elenen = (elenen + "\n" if elenen else "") + eski
-    girisim = llm_kullan and girisim_modu_mu(profil_kaydi, query)
-    if girisim:
-        # HUKS kodda hesaplanır; blok ek bağlam olarak gider, format eki sistem prompt'una eklenir.
-        elenen = (elenen + "\n\n" if elenen else "") + girisim_baglam_metni(profil_kaydi)
     if llm_kullan:
-        if girisim:
-            claude_cevap = _claude_cevap(query, matches, profil, notlar, elenen,
+        if h.girisim:
+            claude_cevap = _claude_cevap(query, h.matches, profil, h.notlar, h.elenen,
                                          sistem_eki=GIRISIM_PROMPT_EKI)
         else:
-            claude_cevap = (_claude_cevap(query, matches, profil, notlar, elenen) if (notlar or elenen)
-                            else _claude_cevap(query, matches, profil))
+            claude_cevap = (_claude_cevap(query, h.matches, profil, h.notlar, h.elenen)
+                            if (h.notlar or h.elenen) else _claude_cevap(query, h.matches, profil))
         if claude_cevap is not None:
             return claude_cevap
 
     if llm_kullan and OLLAMA_ETKIN:
-        llm_cevap = _ollama_cevap(query, matches)
+        llm_cevap = _ollama_cevap(query, h.matches)
         if llm_cevap is not None:
             return llm_cevap
 
-    return _liste_formati(matches)
+    return _liste_formati(h.matches)
+
+
+def _claude_akis(query: str, matches: list[Tesvik], profil: dict | None,
+                 notlar: dict[int, str] | None = None, elenen: str = "", sistem_eki: str = ""):
+    """_claude_cevap'ın akış (streaming) karşılığı: yanıt metnini parça parça üretir.
+
+    Hiç parça üretmeden biterse (anahtar yok, ağ/kota hatası) çağıran taraf liste formatına
+    düşer; parça ürettikten SONRA kesilirse kullanıcıya kesildiği açıkça söylenir (sessizce
+    yarım yanıt bırakılmaz). Hata sebebi her durumda günlüğe yazılır."""
+    if not settings.ANTHROPIC_API_KEY:
+        return
+    try:
+        import anthropic
+    except ImportError:
+        return
+
+    baglam = _baglam_metni(matches, profil, notlar, elenen)
+    uretildi = False
+    try:
+        client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY)
+        with client.messages.stream(
+            model=settings.CLAUDE_MODEL,
+            max_tokens=CLAUDE_MAX_TOKENS,
+            system=SISTEM_PROMPTU + sistem_eki,
+            messages=[{"role": "user", "content": f"BAĞLAM:\n{baglam}\n\nKULLANICI SORUSU: {query}"}],
+            output_config={"effort": CLAUDE_EFFORT},
+            timeout=CLAUDE_TIMEOUT_SEC,
+        ) as akis:
+            for parca in akis.text_stream:
+                uretildi = True
+                yield parca
+            son = akis.get_final_message()
+        if getattr(son, "stop_reason", None) == "max_tokens":
+            logger.warning("Claude akış yanıtı max_tokens sınırında kesildi (%s token)",
+                           getattr(getattr(son, "usage", None), "output_tokens", "?"))
+            yield KESILDI_NOTU
+    except Exception as e:
+        logger.warning("Claude akışı başarısız (%s): %s: %s",
+                       "parça üretildikten sonra" if uretildi else "başlamadan",
+                       type(e).__name__, e)
+        if uretildi:
+            yield "\n\n*(Yanıt bağlantı hatası nedeniyle kesildi; lütfen tekrar deneyin.)*"
+
+
+def answer_akis(query: str, profil: dict | None = None,
+                llm_kullan: bool = True, profil_kaydi=None):
+    """answer()'ın akış sürümü: önce ("kayitlar", [Tesvik]) sonra ("parca", str) olayları.
+
+    Aynı KVKK kuralı: llm_kullan=False ise dış çağrı yapılmaz, liste formatı tek parça
+    olarak gelir. Claude hiç parça üretmezse de liste formatına düşülür."""
+    h = _hazirla(query, llm_kullan, profil_kaydi)
+    yield "kayitlar", h.matches
+    if not h.matches:
+        yield "parca", BULUNAMADI_METNI
+        return
+    if llm_kullan:
+        uretildi = False
+        for parca in _claude_akis(query, h.matches, profil, h.notlar, h.elenen,
+                                  sistem_eki=GIRISIM_PROMPT_EKI if h.girisim else ""):
+            uretildi = True
+            yield "parca", parca
+        if uretildi:
+            return
+    yield "parca", _liste_formati(h.matches)

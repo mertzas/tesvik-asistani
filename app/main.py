@@ -13,7 +13,7 @@ from fastapi import FastAPI, HTTPException, Depends, Request, status
 # cagirir ve endpoint sessizce yanlis davranir.
 from fastapi import Query as SorguParam
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse, JSONResponse
+from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
 
@@ -48,7 +48,7 @@ from app.schemas import (
     EticaretGiderGirdisi,
     EticaretDestekResponse,
 )
-from app.rag import answer, profil_sozlugu, retrieve
+from app.rag import answer, answer_akis, profil_sozlugu, retrieve
 from app.billing import create_checkout_session, confirm_checkout_session, cancel_subscription, handle_webhook, get_plan_limits
 from app.admin import router as admin_router
 from app.matching import esles, toplam_tahmini_destek, tutari_tahmini_hesapla
@@ -204,6 +204,17 @@ def login(request: UserLogin, db: Session = Depends(get_db)):
 
 # ============ MAIN API ENDPOINTS ============
 
+RIZA_YOK_NOTU = (
+    "\n\n---\n"
+    "*Yapay zekâ danışmanı kapalı: bu yanıt yalnızca "
+    "veritabanındaki kayıtlardan üretildi. AI destekli yorum için "
+    "işletme profilinizin Anthropic'e (ABD) aktarılmasına açık "
+    "rıza vermeniz gerekiyor - `POST /api/organizations/ai-riza` "
+    "ile açabilir, istediğiniz zaman geri alabilirsiniz. "
+    "Ayrıntı: /kvkk*"
+)
+
+
 @app.post("/api/sor", response_model=AskResponse)
 def sor(
     request: AskQuestion,
@@ -236,15 +247,7 @@ def sor(
         answer_text = answer(request.question, profil, llm_kullan=riza_var,
                              profil_kaydi=profil_row)
         if not riza_var:
-            answer_text += (
-                "\n\n---\n"
-                "*Yapay zekâ danışmanı kapalı: bu yanıt yalnızca "
-                "veritabanındaki kayıtlardan üretildi. AI destekli yorum için "
-                "işletme profilinizin Anthropic'e (ABD) aktarılmasına açık "
-                "rıza vermeniz gerekiyor - `POST /api/organizations/ai-riza` "
-                "ile açabilir, istediğiniz zaman geri alabilirsiniz. "
-                "Ayrıntı: /kvkk*"
-            )
+            answer_text += RIZA_YOK_NOTU
 
         # Gosterilecek kayitlar, AI danismanin gordugu kayitlarin AYNISI olmali.
         #
@@ -304,6 +307,70 @@ def sor(
             status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
             detail=f"Hata: {str(e)}"
         )
+
+
+def _sse(tip: str, veri) -> str:
+    return f"event: {tip}\ndata: {json.dumps(veri, ensure_ascii=False)}\n\n"
+
+
+@app.post("/api/sor/akis")
+def sor_akis(
+    request: AskQuestion,
+    current_user: User = Depends(get_current_user),
+    current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
+):
+    """/api/sor'un akış (SSE) sürümü: danışman yanıtı üretilirken parça parça gönderilir.
+
+    Olaylar: ``kayitlar`` (danışmanın gördüğü kayıt listesi) → ``parca`` (metin) … →
+    ``son`` ({query_id}). Hata olursa ``hata`` ({detail}). Yetki, kota, rıza ve sorgu
+    kaydı kuralları /api/sor ile aynıdır; LLM rıza yoksa hiç çağrılmaz.
+
+    Ölçüm 2026-10-07: tam danışman yanıtı 35-60 sn sürüyor; panel o süre boyunca yalnızca
+    spinner gösteriyordu (ve yanıtı hiç render etmiyordu).
+    """
+    if not check_rate_limit(current_org, db):
+        raise HTTPException(
+            status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+            detail="Aylık sorgulama limitini aştınız. Upgrading düşünün."
+        )
+
+    riza_var = bool(current_org.ai_yurtdisi_riza)
+    profil_row = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
+    profil = profil_sozlugu(profil_row) if (riza_var and profil_row is not None) else None
+
+    # İlk olay (kayıtlar) akış başlamadan üretilir: sorgu kaydı istek oturumuyla,
+    # yanıt gönderilmeden önce yazılır (akış sırasında oturumun ömrü garanti değil).
+    uretec = answer_akis(request.question, profil, llm_kullan=riza_var, profil_kaydi=profil_row)
+    try:
+        _tip, kayitlar = next(uretec)
+    except Exception as e:
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=f"Hata: {e}")
+    results = [
+        SearchResult(id=t.id, kurum=t.kurum, baslik=t.baslik, ozet=t.ozet, hedef_kitle=t.hedef_kitle,
+                     baslama_tarihi=t.baslama_tarihi, bitis_tarihi=t.bitis_tarihi).model_dump(mode="json")
+        for t in kayitlar
+    ]
+    query = Query(org_id=current_org.id, question=request.question, results=results,
+                  tokens_used=len(request.question.split()))
+    db.add(query)
+    db.commit()
+    query_id, tokens_used = str(query.id), query.tokens_used
+
+    def uret():
+        yield _sse("kayitlar", results)
+        try:
+            for _tip, parca in uretec:
+                yield _sse("parca", {"metin": parca})
+            if not riza_var:
+                yield _sse("parca", {"metin": RIZA_YOK_NOTU})
+            yield _sse("son", {"query_id": query_id, "tokens_used": tokens_used})
+        except Exception as e:
+            logger.exception("sor_akis: akış sırasında hata")
+            yield _sse("hata", {"detail": f"Hata: {e}"})
+
+    return StreamingResponse(uret(), media_type="text/event-stream",
+                             headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
 
 
 # ============ FINANCIAL PROFILE / MATCHING / BUDGET (PRO+) ============

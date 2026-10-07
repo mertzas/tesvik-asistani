@@ -115,5 +115,11 @@ def _claude_cagirma(monkeypatch, request):
 
     # app/main.py `from app.rag import answer` ile içe aktardığı için
     # yamanacak hedef app.main.answer'dır, app.rag.answer değil.
+    def _sahte_akis(soru, profil=None, llm_kullan=True, **_kw):
+        # app.rag.answer_akis ile AYNI olay sırası: ("kayitlar", [...]) sonra ("parca", str)...
+        yield "kayitlar", []
+        yield "parca", _sahte_cevap(soru, profil, llm_kullan)
+
     import app.main
     monkeypatch.setattr(app.main, "answer", _sahte_cevap)
+    monkeypatch.setattr(app.main, "answer_akis", _sahte_akis)

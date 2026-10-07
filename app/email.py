@@ -49,6 +49,29 @@ class EmailService:
             print(f"Failed to send email: {e}")
             return False
 
+    def send_password_reset_email(self, email: str, name: str, baglanti: str) -> bool:
+        """Parola sıfırlama bağlantısı (1 saat geçerli, tek kullanımlık)."""
+        from html import escape
+        konu = "Teşvik Asistanı - Parola sıfırlama"
+        metin = (f"Merhaba {name},\n\nHesabınız için parola sıfırlama talebi aldık. Yeni parola belirlemek için "
+                 f"1 saat içinde şu bağlantıya tıklayın:\n{baglanti}\n\nBu talebi siz yapmadıysanız bu e-postayı yok "
+                 f"sayın; parolanız değişmez.\n\nTeşvik Asistanı")
+        html = (f"<p>Merhaba <strong>{escape(name)}</strong>,</p><p>Hesabınız için parola sıfırlama talebi aldık. "
+                f"Yeni parola belirlemek için 1 saat içinde <a href=\"{escape(baglanti)}\">bu bağlantıya</a> tıklayın.</p>"
+                f"<p>Bu talebi siz yapmadıysanız bu e-postayı yok sayın; parolanız değişmez.</p>")
+        return self.send_email(email, konu, metin, html)
+
+    def send_verification_email(self, email: str, name: str, baglanti: str) -> bool:
+        """E-posta doğrulama bağlantısı (48 saat geçerli, tek kullanımlık)."""
+        from html import escape
+        konu = "Teşvik Asistanı - E-posta adresinizi doğrulayın"
+        metin = (f"Merhaba {name},\n\nE-posta adresinizi doğrulamak için 48 saat içinde şu bağlantıya tıklayın:\n"
+                 f"{baglanti}\n\nBu hesabı siz açmadıysanız bu e-postayı yok sayın.\n\nTeşvik Asistanı")
+        html = (f"<p>Merhaba <strong>{escape(name)}</strong>,</p><p>E-posta adresinizi doğrulamak için 48 saat içinde "
+                f"<a href=\"{escape(baglanti)}\">bu bağlantıya</a> tıklayın.</p>"
+                f"<p>Bu hesabı siz açmadıysanız bu e-postayı yok sayın.</p>")
+        return self.send_email(email, konu, metin, html)
+
     def send_welcome_email(self, email: str, name: str) -> bool:
         """Send welcome email to new user"""
         subject = "🎉 Teşvik Asistanı'na Hoş Geldiniz!"
@@ -120,31 +143,6 @@ Teşvik Asistanı
 """
 
         return self.send_email(email, subject, body)
-
-    def send_password_reset_email(self, email: str, reset_link: str) -> bool:
-        """Send password reset email"""
-        subject = "🔐 Şifre Sıfırlama Bağlantısı"
-        body = f"""
-Şifrenizi sıfırlamak için aşağıdaki bağlantıyı kullanın:
-
-{reset_link}
-
-Bu bağlantı 24 saat geçerlidir.
-
-Teşvik Asistanı
-"""
-
-        html_body = f"""
-<html>
-<body style="font-family: Arial, sans-serif; color: #333;">
-    <h2 style="color: #667eea;">🔐 Şifre Sıfırlama</h2>
-    <p>Şifrenizi sıfırlamak için <a href="{reset_link}" style="color: #667eea;">bu bağlantıyı</a> tıklayın.</p>
-    <p style="color: #999; font-size: 12px;">Bu bağlantı 24 saat geçerlidir.</p>
-</body>
-</html>
-"""
-
-        return self.send_email(email, subject, body, html_body)
 
     def send_query_summary_email(self, email: str, results_count: int) -> bool:
         """Send weekly query summary"""

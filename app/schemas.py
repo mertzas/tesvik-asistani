@@ -53,6 +53,21 @@ class UserLogin(BaseModel):
     password: str
 
 
+class SifreUnuttum(BaseModel):
+    email: EmailStr
+
+
+class SifreSifirla(BaseModel):
+    token: str = Field(..., min_length=10, max_length=200)
+    new_password: str = Field(..., min_length=SIFRE_EN_AZ)
+
+    _sifre = field_validator("new_password")(sifre_kontrol)
+
+
+class BelirtecGirdi(BaseModel):
+    token: str = Field(..., min_length=10, max_length=200)
+
+
 class TokenResponse(BaseModel):
     access_token: str
     token_type: str = "bearer"

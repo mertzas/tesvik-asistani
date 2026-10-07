@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Parola Sıfırlama - Teşvik Asistanı</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 16px; }
+        .kart { background: #fff; width: 100%; max-width: 420px; border-radius: 15px; box-shadow: 0 20px 60px rgba(0,0,0,.3); padding: 36px 32px; }
+        h1 { font-size: 24px; margin-bottom: 8px; color: #333; }
+        p.alt { color: #666; font-size: 14px; margin-bottom: 20px; line-height: 1.5; }
+        label { display: block; font-weight: 600; font-size: 14px; margin-bottom: 6px; color: #333; }
+        input { width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 5px; font-size: 15px; margin-bottom: 16px; }
+        input:focus { outline: none; border-color: #667eea; }
+        button { width: 100%; padding: 12px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border: none; border-radius: 5px; font-size: 16px; font-weight: bold; cursor: pointer; }
+        button:disabled { opacity: .6; cursor: not-allowed; }
+        .mesaj { padding: 12px; border-radius: 5px; margin-bottom: 16px; font-size: 14px; display: none; line-height: 1.5; }
+        .hata { background: #fff3cd; color: #856404; }
+        .tamam { background: #d4edda; color: #155724; }
+        .geri { display: block; text-align: center; margin-top: 18px; color: #667eea; font-weight: bold; font-size: 14px; }
+    </style>
+</head>
+<body>
+<div class="kart">
+    <h1 id="baslik">Parolamı unuttum</h1>
+    <p class="alt" id="alt">Hesabınızın e-posta adresini girin; kayıtlıysa size parola sıfırlama bağlantısı göndeririz.</p>
+    <div class="mesaj hata" id="hata"></div>
+    <div class="mesaj tamam" id="tamam"></div>
+
+    <form id="istek-formu">
+        <label for="eposta">E-posta</label>
+        <input type="email" id="eposta" required autocomplete="email" placeholder="ornek@sirket.com">
+        <button type="submit" id="istek-dugme">Sıfırlama bağlantısı gönder</button>
+    </form>
+
+    <form id="yeni-formu" style="display:none">
+        <label for="parola">Yeni parola</label>
+        <input type="password" id="parola" required minlength="8" autocomplete="new-password" placeholder="En az 8 karakter, harf ve rakam">
+        <label for="parola2">Yeni parola (tekrar)</label>
+        <input type="password" id="parola2" required minlength="8" autocomplete="new-password">
+        <button type="submit" id="yeni-dugme">Parolayı güncelle</button>
+    </form>
+
+    <a class="geri" href="/">Giriş sayfasına dön</a>
+</div>
+
+<script>
+// Sıfırlama belirteci URL'nin # (fragment) kısmında gelir: sunucuya, günlüklere ve Referer'a gitmez.
+// Okunur okunmaz adres çubuğundan ve geçmişten silinir.
+const belirtec = new URLSearchParams(location.hash.slice(1)).get('t');
+if (belirtec) history.replaceState(null, '', location.pathname);
+
+const $ = id => document.getElementById(id);
+function goster(kutu, metin) {
+  $('hata').style.display = 'none'; $('tamam').style.display = 'none';
+  $(kutu).textContent = metin; $(kutu).style.display = 'block';
+}
+async function gonder(yol, govde) {
+  const r = await fetch(yol, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(govde) });
+  const veri = await r.json().catch(() => ({}));
+  if (!r.ok) {
+    const d = veri.detail;
+    throw new Error(typeof d === 'string' ? d : (Array.isArray(d) && d[0] && d[0].msg) ? d[0].msg.replace(/^Value error, /, '') : 'İstek başarısız (' + r.status + ')');
+  }
+  return veri;
+}
+
+if (belirtec) {
+  $('baslik').textContent = 'Yeni parola belirle';
+  $('alt').textContent = 'Hesabınız için yeni bir parola girin. Bağlantı tek kullanımlıktır.';
+  $('istek-formu').style.display = 'none';
+  $('yeni-formu').style.display = 'block';
+}
+
+$('istek-formu').addEventListener('submit', async e => {
+  e.preventDefault(); $('istek-dugme').disabled = true;
+  try { goster('tamam', (await gonder('/api/auth/sifre-unuttum', { email: $('eposta').value.trim() })).mesaj); }
+  catch (err) { goster('hata', err.message); }
+  finally { $('istek-dugme').disabled = false; }
+});
+
+$('yeni-formu').addEventListener('submit', async e => {
+  e.preventDefault();
+  if ($('parola').value !== $('parola2').value) { goster('hata', 'Parolalar eşleşmiyor'); return; }
+  $('yeni-dugme').disabled = true;
+  try {
+    goster('tamam', (await gonder('/api/auth/sifre-sifirla', { token: belirtec, new_password: $('parola').value })).mesaj);
+    $('yeni-formu').style.display = 'none';
+  } catch (err) { goster('hata', err.message); $('yeni-dugme').disabled = false; }
+});
+</script>
+</body>
+</html>

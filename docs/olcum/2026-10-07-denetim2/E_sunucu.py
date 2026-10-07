@@ -6,6 +6,8 @@ import D_dayaniklilik as DD  # noqa: E402
 import D_olcum as D  # noqa: E402
 
 db = DD.kopya_db()
+# Kopya şemayı en güncel hale getir (üretim DB'si göç edilmeden kodla uyumsuz kalır)
+subprocess.run([sys.executable, '-m', 'alembic', 'upgrade', 'head'], cwd=DD.PROJE, env=dict(os.environ, DATABASE_URL=f'sqlite:///{db}'), check=True, capture_output=True)
 p, log = DD.uvicorn_baslat(db)
 D.BASE = f"http://127.0.0.1:{DD.PORT}"
 tok = D._token()

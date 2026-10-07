@@ -123,8 +123,24 @@ class User(Base):
     role = Column(SQLEnum(UserRole), default=UserRole.MEMBER)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
     last_login = Column(DateTime, nullable=True)
+    # E-posta doğrulama (Aşama E): NULL = doğrulanmadı. Giriş doğrulamaya BAĞLI DEĞİL (ürün kararı bekliyor).
+    email_dogrulama_zamani = Column(DateTime, nullable=True)
 
     organization = relationship("Organization", back_populates="users")
+
+
+class HesapBelirteci(Base):
+    """Parola sıfırlama / e-posta doğrulama tek kullanımlık belirteçleri. Ham belirteç yalnızca e-postayla
+    gider; veritabanında SHA-256 özeti tutulur (veritabanı sızsa da bağlantı üretilemez)."""
+    __tablename__ = "hesap_belirtecleri"
+
+    id = Column(UUID(as_uuid=True), primary_key=True, default=uuid4)
+    user_id = Column(UUID(as_uuid=True), ForeignKey("users.id"), index=True, nullable=False)
+    amac = Column(String(30), nullable=False)  # "sifre_sifirlama" | "eposta_dogrulama"
+    belirtec_ozeti = Column(String(64), unique=True, index=True, nullable=False)
+    olusturma = Column(DateTime, default=lambda: datetime.now(timezone.utc), nullable=False)
+    bitis = Column(DateTime, nullable=False)
+    kullanildi = Column(DateTime, nullable=True)
 
 
 # Query History

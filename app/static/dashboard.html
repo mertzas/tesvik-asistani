@@ -576,6 +576,12 @@
 
         <div id="veri-detay"></div>
 
+        <div id="eposta-uyari" style="display:none; background:#fff3cd; color:#856404; padding:12px 16px; border-radius:8px; margin:0 0 16px; font-size:14px;">
+            E-posta adresiniz henüz doğrulanmadı.
+            <button type="button" id="eposta-dogrulama-gonder" style="margin-left:8px; background:none; border:none; color:#667eea; font-weight:bold; text-decoration:underline; cursor:pointer;">Doğrulama bağlantısı gönder</button>
+            <span id="eposta-uyari-sonuc" style="margin-left:8px;"></span>
+        </div>
+
         <!-- Search Section -->
         <div id="search" class="section">
             <div class="stats">
@@ -860,7 +866,25 @@
             loadFinancialProfile();
             loadVeriDurumu();
             setupMenuListeners();
+            epostaDurumuYukle();
         });
+
+        // E-posta doğrulama uyarısı (giriş doğrulamaya bağlı değil; yalnızca hatırlatır).
+        async function epostaDurumuYukle() {
+            try {
+                const r = await fetch("/api/auth/me", { headers: { Authorization: `Bearer ${authToken}` } });
+                if (!r.ok) return;
+                const me = await r.json();
+                if (me.email_dogrulandi) return;
+                document.getElementById("eposta-uyari").style.display = "block";
+                document.getElementById("eposta-dogrulama-gonder").onclick = async () => {
+                    const sonuc = document.getElementById("eposta-uyari-sonuc");
+                    const g = await fetch("/api/auth/dogrulama-gonder", { method: "POST", headers: { Authorization: `Bearer ${authToken}` } });
+                    const v = await g.json().catch(() => ({}));
+                    sonuc.textContent = g.ok ? v.mesaj : (typeof v.detail === "string" ? v.detail : "Gönderilemedi");
+                };
+            } catch (e) { /* uyarı isteğe bağlı */ }
+        }
 
         // Menu navigation
         function setupMenuListeners() {

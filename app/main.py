@@ -5,7 +5,7 @@ from datetime import datetime, timezone
 from typing import List
 
 import stripe
-from fastapi import FastAPI, HTTPException, Depends, Request, status
+from fastapi import BackgroundTasks, FastAPI, HTTPException, Depends, Request, status
 # DIKKAT: bu modulde `Query` adi SQLAlchemy modeli (app.models.Query) icin
 # kullaniliyor. FastAPI'nin sorgu parametresi bu yuzden takma adla alindi;
 # dogrudan `Query(...)` yazmak sorgu parametresi yerine veritabani modelini
@@ -56,6 +56,9 @@ from app.matching import esles, toplam_tahmini_destek, tutari_tahmini_hesapla
 from app.budget import hesapla as butce_hesapla
 from app.cilek_panel import router as cilek_router
 from app.ikas_panel import router as ikas_router
+from app.hesap_belirtec import belirtec_uret, belirtec_tuket, SIFIRLAMA, DOGRULAMA
+from app.email import EmailService
+from app.schemas import SifreUnuttum, SifreSifirla, BelirtecGirdi
 from app.eticaret_destek_hesaplayici import eticaret_destek_hesapla
 from app.rate_limit import org_hiz_siniri, ip_hiz_siniri, sayac as hiz_sayaci
 from sqlalchemy import text
@@ -201,8 +204,8 @@ def on_shutdown():
 
 @app.post("/api/auth/signup", response_model=TokenResponse,
           dependencies=[Depends(ip_hiz_siniri(10, ad="signup"))])
-def signup(request: UserSignup, db: Session = Depends(get_db)):
-    """Yeni hesap oluştur."""
+def signup(request: UserSignup, arka_plan: BackgroundTasks, db: Session = Depends(get_db)):
+    """Yeni hesap oluştur. E-posta doğrulama bağlantısı arka planda gönderilir (SMTP yoksa atlanır)."""
     # Email benzersiz mi kontrol et
     if db.query(User).filter(User.email == request.email).first():
         raise HTTPException(
@@ -230,6 +233,7 @@ def signup(request: UserSignup, db: Session = Depends(get_db)):
     )
     db.add(user)
     db.commit()
+    _dogrulama_postasi_planla(db, user, arka_plan)
 
     # Token oluştur
     token = create_access_token({
@@ -243,6 +247,7 @@ def signup(request: UserSignup, db: Session = Depends(get_db)):
             "id": str(user.id),
             "email": user.email,
             "full_name": user.full_name,
+            "email_dogrulandi": False,
         }
     )
 
@@ -276,8 +281,87 @@ def login(request: UserLogin, db: Session = Depends(get_db)):
             "id": str(user.id),
             "email": user.email,
             "full_name": user.full_name,
+            "email_dogrulandi": user.email_dogrulama_zamani is not None,
         }
     )
+
+
+# ============ PAROLA SIFIRLAMA / E-POSTA DOGRULAMA ============
+# Bağlantılar URL'nin # (fragment) kısmında taşınır: fragment sunucuya, günlüklere ve Referer'a gitmez.
+
+SIFIRLAMA_YANITI = {"mesaj": "Bu e-posta adresi kayıtlıysa parola sıfırlama bağlantısı gönderildi. "
+                             "Birkaç dakika içinde gelmezse spam klasörünü kontrol edin."}
+EPOSTA_BASINA_SIFIRLAMA_LIMITI = 3  # saatte; posta bombardımanını önler
+
+
+def _eposta_gonder(islem, *args) -> None:
+    """Arka plan görevi: SMTP yavaş/hatalı olsa da istek süresini ve yanıtı etkilemesin."""
+    try:
+        if not islem(*args):
+            logger.warning("E-posta gönderilemedi (SMTP yapılandırılmamış ya da hata): %s", islem.__name__)
+    except Exception:
+        logger.exception("E-posta gönderimi başarısız: %s", getattr(islem, "__name__", islem))
+
+
+def _dogrulama_postasi_planla(db: Session, user: User, arka_plan: BackgroundTasks) -> None:
+    ham = belirtec_uret(db, user, DOGRULAMA)
+    arka_plan.add_task(_eposta_gonder, EmailService().send_verification_email, user.email,
+                       user.full_name or "", f"{settings.APP_URL}/eposta-dogrula#t={ham}")
+
+
+@app.post("/api/auth/sifre-unuttum", dependencies=[Depends(ip_hiz_siniri(5, ad="sifre-unuttum"))])
+def sifre_unuttum(request: SifreUnuttum, arka_plan: BackgroundTasks, db: Session = Depends(get_db)):
+    """Parola sıfırlama bağlantısı iste. Hesap var olsun olmasın AYNI yanıt döner (e-posta numaralandırma yok).
+    IP başına dakikada 5, e-posta başına saatte 3 istek."""
+    user = db.query(User).filter(User.email == request.email).first()
+    izin, _ = hiz_sayaci.izin_ver(f"sifre-unuttum-eposta:{request.email.lower()}", EPOSTA_BASINA_SIFIRLAMA_LIMITI, 3600)
+    if user is not None and user.is_active and izin:
+        ham = belirtec_uret(db, user, SIFIRLAMA)
+        arka_plan.add_task(_eposta_gonder, EmailService().send_password_reset_email, user.email,
+                           user.full_name or "", f"{settings.APP_URL}/sifre-sifirla#t={ham}")
+    return SIFIRLAMA_YANITI
+
+
+@app.post("/api/auth/sifre-sifirla", dependencies=[Depends(ip_hiz_siniri(10, ad="sifre-sifirla"))])
+def sifre_sifirla(request: SifreSifirla, db: Session = Depends(get_db)):
+    """Tek kullanımlık belirteçle yeni parola belirle. Eski JWT'ler süre dolana kadar (7 gün) geçerli kalır
+    (belirteç iptal listesi yok; bilinen sınırlama)."""
+    user = belirtec_tuket(db, request.token, SIFIRLAMA)
+    if user is None:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
+                            detail="Bağlantı geçersiz veya süresi dolmuş; yeni bir sıfırlama bağlantısı isteyin")
+    user.hashed_password = hash_password(request.new_password)
+    if user.email_dogrulama_zamani is None:  # e-postaya erişimini kanıtladı
+        user.email_dogrulama_zamani = datetime.now(timezone.utc).replace(tzinfo=None)
+    db.commit()
+    return {"mesaj": "Parolanız güncellendi. Yeni parolanızla giriş yapabilirsiniz."}
+
+
+@app.post("/api/auth/eposta-dogrula", dependencies=[Depends(ip_hiz_siniri(10, ad="eposta-dogrula"))])
+def eposta_dogrula(request: BelirtecGirdi, db: Session = Depends(get_db)):
+    user = belirtec_tuket(db, request.token, DOGRULAMA)
+    if user is None:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
+                            detail="Bağlantı geçersiz veya süresi dolmuş; panelden yeni doğrulama bağlantısı isteyin")
+    if user.email_dogrulama_zamani is None:
+        user.email_dogrulama_zamani = datetime.now(timezone.utc).replace(tzinfo=None)
+    db.commit()
+    return {"mesaj": "E-posta adresiniz doğrulandı."}
+
+
+@app.get("/api/auth/me")
+def auth_me(current_user: User = Depends(get_current_user)):
+    return {"email": current_user.email, "full_name": current_user.full_name,
+            "email_dogrulandi": current_user.email_dogrulama_zamani is not None}
+
+
+@app.post("/api/auth/dogrulama-gonder", dependencies=[Depends(org_hiz_siniri(3))])
+def dogrulama_yeniden_gonder(arka_plan: BackgroundTasks, current_user: User = Depends(get_current_user),
+                             db: Session = Depends(get_db)):
+    if current_user.email_dogrulama_zamani is not None:
+        return {"mesaj": "E-posta adresiniz zaten doğrulanmış."}
+    _dogrulama_postasi_planla(db, current_user, arka_plan)
+    return {"mesaj": "Doğrulama bağlantısı e-posta adresinize gönderildi."}
 
 
 # ============ MAIN API ENDPOINTS ============
@@ -838,6 +922,16 @@ def kvkk_aydinlatma():
 @app.get("/dashboard")
 def dashboard():
     return FileResponse(os.path.join(STATIC_DIR, "dashboard.html"))
+
+
+@app.get("/sifre-sifirla")
+def sifre_sifirla_sayfasi():
+    return FileResponse(os.path.join(STATIC_DIR, "sifre_sifirla.html"))
+
+
+@app.get("/eposta-dogrula")
+def eposta_dogrula_sayfasi():
+    return FileResponse(os.path.join(STATIC_DIR, "eposta_dogrula.html"))
 
 
 @app.get("/cilek-paneli")

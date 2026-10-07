@@ -27,6 +27,7 @@ from app.match_adapter import company_from_profile, program_from_tesvik
 from app.match_scoring import hard_filter
 from app.kobi import kobi_sinifi
 from app.girisim import GIRISIM_PROMPT_EKI, girisim_baglam_metni, girisim_modu_mu
+from app.nace_extraction import clean_grant_text
 from app.tesvik_9903_uygunluk import SIRALAMA_ETKISI as UYGUNLUK_9903_ETKISI, kayit_icin as uygunluk_9903
 from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu, settings
 from sqlalchemy import or_
@@ -51,6 +52,7 @@ CLAUDE_TIMEOUT_SEC = 90  # 5 başlıklı danışman yanıtı ~3000 token; 30 sn 
 CLAUDE_MAX_TOKENS = 16000
 CLAUDE_EFFORT = "medium"
 CEVAP_KAYIT_SAYISI = 8   # danışmana verilen kayıt sayısı (çok ihtiyaçlı sorularda kota için)
+DETAY_KARAKTER = 2500    # kayıt başına danışmana giden detay metni (temizlendikten sonra)
 HAVUZ_BOYUTU = 60        # ihtiyaç/profil katmanının kelime aramasından aldığı aday sayısı  # low | medium | high; danışman yanıtı için gecikme/kalite dengesi
 
 # Anlamli sinyal tasimayan, aramada gurultu yaratan kisa/genel kelimeler.
@@ -543,7 +545,11 @@ def _tesvik_detay_metni(m: Tesvik) -> str:
     """Tesvik kaydinin TUM yapilandirilmis alanlarini (sadece serbest metin
     detay degil) LLM baglamina yazar - basvuru_sartlari/tutar/aktif_mi gibi
     Faz 3'te doldurulan alanlar bu fonksiyon olmadan LLM'e hic gorunmezdi."""
-    satirlar = [f"[{m.kurum}] {m.baslik}", f"Kaynak: {m.kaynak_url}", _kisalt(m.detay, 500)]
+    # 500 karakterlik kesme, mevzuat kayıtlarının (9903, 10962) madde bazlı oran/limit
+    # listesini yarıda bırakıyordu; model "madde numarası bağlamda yok" diyordu (ölçüm
+    # 2026-10-07). Menü/footer gürültüsü ayıklanıp daha uzun bir pencere verilir.
+    satirlar = [f"[{m.kurum}] {m.baslik}", f"Kaynak: {m.kaynak_url}",
+                _kisalt(clean_grant_text(m.detay or "", baslik=m.baslik), DETAY_KARAKTER)]
 
     if m.aktif_mi is False:
         satirlar.append(f"⚠️ DURUM: ARTIK AKTİF DEĞİL. {m.durum_notu or ''}")

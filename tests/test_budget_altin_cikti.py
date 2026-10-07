@@ -169,7 +169,7 @@ def test_stok_orani_ciroyu_asmaz(hazir_db):
 
 def test_ciro_sifir_veya_negatifse_hata(hazir_db):
     for ciro in (0, -1000):
-        with pytest.raises(ValueError, match="yillik_ciro"):
+        with pytest.raises(ValueError, match="yıllık ciro"):
             hesapla(FinancialProfile(sektor="tarim", yillik_ciro=ciro), hazir_db)
 
 

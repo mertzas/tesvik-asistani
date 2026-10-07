@@ -25,14 +25,24 @@ def _katla(metin: str | None) -> str:
 
 # ihtiyaç -> soruda arandığı kalıplar (aksansız küçük harf metin üzerinde)
 SORU_KALIPLARI: dict[str, re.Pattern] = {
+    # Makine/teçhizat adları da yatırımdır: "5 eksenli CNC tezgahı almak istiyoruz ... krediler" sorusu
+    # yalnızca "finansman" sayılıp aramada 8 KGF kredisi getiriyor, 9903 ve Kapasite Geliştirme
+    # gelmiyordu (tarayıcı denemesi 2026-10-07).
     "yatirim": re.compile(
         r"\b(makine\w*|makina\w*|ekipman\w*|techizat\w*|teçhizat\w*|uretim hatt?\w*|hatt?i\b|"
-        r"tesis\w*|fabrika\w*|yatirim\w*|kapasite\w*|modernizasyon\w*|bina\w*|insaat\w*)"),
+        r"tesis\w*|fabrika\w*|yatirim\w*|kapasite\w*|modernizasyon\w*|bina\w*|insaat\w*|"
+        r"tezgah\w*|cnc\b|robot\w*|kalip\w*|kalib\w*|pres\b|presi\b|kompresor\w*|jenerator\w*|"
+        r"ges\b|gunes enerji\w*|santral\w*|soguk hava\w*|forklift\w*)"),
+    # Traktör/mibzer gibi tarım makineleri BİLEREK yok: çiftçi sorusu tarım alt kategorisi
+    # (makineleştirme) üzerinden ele alınır; "yatırım" sayılınca 9903 programları KKYP/TSS'yi
+    # geri itiyordu (G_persona_esles.py, 2026-10-07).
     "arge": re.compile(
         r"\b(ar-?ge|urun gelistir\w*|gelistirme\w*|prototip\w*|inovasyon\w*|yenilik\w*|"
         r"tasarim\w*|patent\w*|teknoloji gelistir\w*)"),
     "ihracat": re.compile(r"\b(ihracat\w*|ihrac\w*|fuar\w*|yurt ?disi\w*|e-ihracat\w*|dis pazar\w*)"),
-    "istihdam": re.compile(r"\b(istihdam\w*|personel\w*|eleman\w*|isci\w*|ise alim\w*|calisan alim\w*)"),
+    # "3 kişi daha işe alacağım" hiçbir ihtiyaca sınıflanmıyordu (2026-10-07).
+    "istihdam": re.compile(r"\b(istihdam\w*|personel\w*|eleman\w*|isci\w*|ise alim\w*|ise al\w*|"
+                           r"calisan alim\w*|kisi daha al\w*|sgk tesvik\w*|prim destek\w*)"),
     "dijital": re.compile(
         r"\b(dijital\w*|erp\b|yazilim\w*|e-ticaret\w*|eticaret\w*|otomasyon\w*|yapay zeka\w*)"),
     "finansman": re.compile(r"\b(kredi\w*|kefalet\w*|finansman\w*|faiz\w*|isletme sermaye\w*|nakit\w*)"),

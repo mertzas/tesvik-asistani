@@ -177,19 +177,19 @@ def _analist_onerileri(
     analist_onerileri: list[str] = []
 
     if gider_durumu == "altinda":
-        sapma_metni = f" (sektor ortalamasinin %{abs(gider_sapma_yuzdesi):.0f} altinda)" if gider_sapma_yuzdesi is not None else ""
+        sapma_metni = f" (sektör ortalamasının %{abs(gider_sapma_yuzdesi):.0f} altında)" if gider_sapma_yuzdesi is not None else ""
         analist_onerileri.append(
-            f"Gideriniz sektor ortalamasinin altinda{sapma_metni}. Bu iyi bir maliyet yonetimi "
-            "olabilecegi gibi, yetersiz yatirim/kapasite kullanimi anlamina da "
-            "gelebilir - buyume hedefiniz varsa KOSGEB/TKDK yatirim destekleri "
-            "icin 'Uygun Destekleri Bul' bolumunu kontrol edin."
+            f"Gideriniz sektör ortalamasının altında{sapma_metni}. Bu iyi bir maliyet yönetimi "
+            "olabileceği gibi, yetersiz yatırım/kapasite kullanımı anlamına da "
+            "gelebilir - büyüme hedefiniz varsa KOSGEB/TKDK yatırım destekleri "
+            "için 'Uygun Destekleri Bul' bölümünü kontrol edin."
         )
     elif gider_durumu == "uzerinde":
-        sapma_metni = f" (sektor ortalamasinin %{abs(gider_sapma_yuzdesi):.0f} uzerinde)" if gider_sapma_yuzdesi is not None else ""
+        sapma_metni = f" (sektör ortalamasının %{abs(gider_sapma_yuzdesi):.0f} üzerinde)" if gider_sapma_yuzdesi is not None else ""
         analist_onerileri.append(
-            f"Gideriniz sektor ortalamasinin uzerinde{sapma_metni}. Maliyet kalemlerinizi "
-            "(ozellikle en hizli artan girdinizi) tedarikci karsilastirmasi "
-            "yaparak veya toplu alim/kooperatif secenekleriyle gozden gecirmenizi "
+            f"Gideriniz sektör ortalamasının üzerinde{sapma_metni}. Maliyet kalemlerinizi "
+            "(özellikle en hızlı artan girdinizi) tedarikçi karşılaştırması "
+            "yaparak veya toplu alım/kooperatif seçenekleriyle gözden geçirmenizi "
             "oneririz."
         )
 
@@ -199,24 +199,24 @@ def _analist_onerileri(
     # cumle uretiliyordu.
     if en_yuksek_artan_girdi and en_yuksek_artan_girdi["artis"] > 0:
         analist_onerileri.append(
-            f"En hizli artan gideriniz {en_yuksek_artan_girdi['etiket']} "
-            f"(son 1 yilda %{en_yuksek_artan_girdi['artis']:.1f}). Bu kalem icin "
-            f"one alarak fiyat kilitleme (sozlesmeli tedarik) veya kooperatif "
-            f"uzerinden toplu alim gibi yontemleri arastirmanizi oneririz."
+            f"En hızlı artan gideriniz {en_yuksek_artan_girdi['etiket']} "
+            f"(son 1 yılda %{en_yuksek_artan_girdi['artis']:.1f}). Bu kalem için "
+            f"öne alarak fiyat kilitleme (sözleşmeli tedarik) veya kooperatif "
+            f"üzerinden toplu alım gibi yöntemleri araştırmanızı öneririz."
         )
     elif en_yuksek_artan_girdi:
         analist_onerileri.append(
-            f"Takip edilen tarimsal girdi kalemlerinin tumunde son 1 yilda fiyat "
-            f"dususu/yatay seyir var (en yuksegi {en_yuksek_artan_girdi['etiket']}, "
-            f"%{en_yuksek_artan_girdi['artis']:.1f}) - girdi maliyeti baskisi su an "
-            f"icin dusuk gorunuyor."
+            f"Takip edilen tarımsal girdi kalemlerinin tümünde son 1 yılda fiyat "
+            f"düşüşü/yatay seyir var (en yükseği {en_yuksek_artan_girdi['etiket']}, "
+            f"%{en_yuksek_artan_girdi['artis']:.1f}) - girdi maliyeti baskısı şu an "
+            f"için düşük görünüyor."
         )
 
     if profil.ilk_yil_mi and kurulus_gideri:
         analist_onerileri.append(
-            f"İlk yil kurulus yatiriminiz (₺{kurulus_gideri:,.0f}) tek seferliktir. "
-            f"Onumuzdeki yil sadece duzenli isletme giderinizi takip ederek "
-            f"sektor ortalamasiyla daha saglikli bir kiyaslama yapabilirsiniz."
+            f"İlk yıl kuruluş yatırımınız (₺{kurulus_gideri:,.0f}) tek seferliktir. "
+            f"Önümüzdeki yıl sadece düzenli işletme giderinizi takip ederek "
+            f"sektör ortalamasıyla daha sağlıklı bir kıyaslama yapabilirsiniz."
         )
 
     if guncel_urun_fiyati and guncel_urun_fiyati.get("kaynak_tipi") == "hal_cilek":
@@ -237,10 +237,10 @@ def _analist_onerileri(
         )
     elif guncel_urun_fiyati:
         analist_onerileri.append(
-            f"{guncel_urun_fiyati['urun_adi']} icin TMO'ya satarsaniz ton basina "
-            f"₺{guncel_urun_fiyati['alim_fiyati_ton']:,.0f} garanti taban fiyati var; "
-            f"ozel sektore/tuccara satmadan once bu fiyati bir referans olarak kullanin "
-            f"ve teklifleri karsilastirin."
+            f"{guncel_urun_fiyati['urun_adi']} için TMO'ya satarsanız ton başına "
+            f"₺{guncel_urun_fiyati['alim_fiyati_ton']:,.0f} garanti taban fiyatı var; "
+            f"özel sektöre/tüccara satmadan önce bu fiyatı bir referans olarak kullanın "
+            f"ve teklifleri karşılaştırın."
         )
 
     if guncel_ihracat_fiyati:
@@ -255,10 +255,10 @@ def _analist_onerileri(
     if net_kar_orani is not None:
         beklenen_kar = ciro * net_kar_orani
         analist_onerileri.append(
-            f"Sektor ortalamasina gore cironuzdan beklenen net kar yaklasik "
+            f"Sektör ortalamasına göre cironuzdan beklenen net kâr yaklaşık "
             f"₺{beklenen_kar:,.0f} (%{net_kar_orani * 100:.1f}). "
-            f"Gerceklesen karinizi bu referansla kiyaslayarak isletmenizin "
-            f"sektore gore performansini degerlendirebilirsiniz."
+            f"Gerçekleşen kârınızı bu referansla kıyaslayarak işletmenizin "
+            f"sektöre göre performansını değerlendirebilirsiniz."
         )
     return analist_onerileri
 
@@ -376,11 +376,11 @@ def _gider_karsilastirmasi(
         toplam_min = stok_min + reklam_min
         toplam_max = stok_max + reklam_max
         toplam_orta = (toplam_min + toplam_max) / 2
-        etiket = "duzenli isletme gideriniz (kurulus gideri dusuldukten sonra)" if kurulus_gideri else "toplam gideriniz"
+        etiket = "düzenli işletme gideriniz (kuruluş gideri düşüldükten sonra)" if kurulus_gideri else "toplam gideriniz"
 
         if duzenli_gider is not None:
             gider_sapma_yuzdesi = round((duzenli_gider - toplam_orta) / toplam_orta * 100, 1) if toplam_orta else None
-            sapma_ifadesi = f" (sektor ortalamasindan %{abs(gider_sapma_yuzdesi):.0f} {'dusuk' if gider_sapma_yuzdesi < 0 else 'yuksek'})" if gider_sapma_yuzdesi is not None else ""
+            sapma_ifadesi = f" (sektör ortalamasından %{abs(gider_sapma_yuzdesi):.0f} {'düşük' if gider_sapma_yuzdesi < 0 else 'yüksek'})" if gider_sapma_yuzdesi is not None else ""
 
             # Kiyas kapsami uyarisi: referans aralik SADECE stok+reklam
             # kalemlerini kapsar. Kullanicinin "toplam" gideri personel,
@@ -399,22 +399,22 @@ def _gider_karsilastirmasi(
         elif duzenli_gider < toplam_min:
             gider_durumu = "altinda"
             notlar.append(
-                f"Girdiginiz {etiket} (₺{duzenli_gider:,.0f}), sektor ortalamasi olan "
-                f"₺{toplam_min:,.0f}-₺{toplam_max:,.0f} araliginin altinda{sapma_ifadesi}; stok/reklam ayrimini "
-                f"girerseniz daha net bir karsilastirma yapabiliriz."
+                f"Girdiğiniz {etiket} (₺{duzenli_gider:,.0f}), sektör ortalaması olan "
+                f"₺{toplam_min:,.0f}-₺{toplam_max:,.0f} aralığının altında{sapma_ifadesi}; stok/reklam ayrımını "
+                f"girerseniz daha net bir karşılaştırma yapabiliriz."
             )
         elif duzenli_gider > toplam_max:
             gider_durumu = "uzerinde"
             notlar.append(
-                f"Girdiginiz {etiket} (₺{duzenli_gider:,.0f}), sektor ortalamasi olan "
-                f"₺{toplam_min:,.0f}-₺{toplam_max:,.0f} araliginin uzerinde{sapma_ifadesi}."
+                f"Girdiğiniz {etiket} (₺{duzenli_gider:,.0f}), sektör ortalaması olan "
+                f"₺{toplam_min:,.0f}-₺{toplam_max:,.0f} aralığının üzerinde{sapma_ifadesi}."
                 + kapsam_uyarisi
             )
         else:
             gider_durumu = "uygun"
             notlar.append(
-                f"Girdiginiz {etiket} (₺{duzenli_gider:,.0f}), sektor ortalamasi olan "
-                f"₺{toplam_min:,.0f}-₺{toplam_max:,.0f} araligina uygun{sapma_ifadesi}."
+                f"Girdiğiniz {etiket} (₺{duzenli_gider:,.0f}), sektör ortalaması olan "
+                f"₺{toplam_min:,.0f}-₺{toplam_max:,.0f} aralığına uygun{sapma_ifadesi}."
             )
 
         # Ayri stok/reklam girilmediginde, "mevcut gideriniz" kartlarinda hala
@@ -551,18 +551,18 @@ def _tarim_girdi_enflasyonu(
                 if ilgili_kisa_adlar and degerler_oneri_havuzu is not degerler else ""
             )
             notlar.append(
-                "TUIK Tarimsal Girdi Fiyat Endeksi'ne gore son 1 yillik girdi fiyat "
+                "TÜİK Tarımsal Girdi Fiyat Endeksi'ne göre son 1 yıllık girdi fiyat "
                 f"artislari{kategori_notu} (bu, hangi gubreyi/ne kadar kullanmaniz gerektigi "
-                "konusunda bir tavsiye degildir, sadece maliyet planlamasi icindir). Gubre/ilac "
-                "secimi ve dozu icin Il/Ilce Tarim Mudurlugu'nden toprak tahlili bazli "
-                "tavsiye almanizi oneririz."
+                "konusunda bir tavsiye değildir, sadece maliyet planlamasi icindir). Gübre/ilaç "
+                "seçimi ve dozu için İl/İlçe Tarım Mudurlugu'nden toprak tahlili bazli "
+                "tavsiye almanızı öneririz."
             )
     return tarim_girdi_enflasyonu, en_yuksek_artan_girdi
 
 
 def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
     if not profil.yillik_ciro or profil.yillik_ciro <= 0:
-        raise ValueError("Butce onerisi icin yillik_ciro pozitif bir deger olmali")
+        raise ValueError("Bütçe önerisi için yıllık ciro pozitif bir değer olmalı")
 
     sektor = (profil.sektor or VARSAYILAN_SEKTOR).lower()
     tarim_kategori = (profil.tarim_kategori or "").strip().lower() or None
@@ -570,9 +570,9 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
 
     notlar = []
     if benchmark is None:
-        raise ValueError("Sektor benchmark verisi bulunamadi; once tuik_macro.run() calistirilmali")
+        raise ValueError("Sektör benchmark verisi bulunamadi; önce tuik_macro.run() calistirilmali")
     if benchmark.sektor != sektor:
-        notlar.append(f"'{sektor}' icin ozel benchmark bulunamadi, genel sektor ortalamasi kullanildi.")
+        notlar.append(f"'{sektor}' için özel benchmark bulunamadi, genel sektör ortalaması kullanildi.")
 
     # TCMB Sektor Bilancolari tarimi tek NACE satirinda ("A") yayinliyor,
     # hayvancilik/bitkisel ayrimi EVDS'ten cekilemiyor. Kullanici bir tarim
@@ -602,28 +602,28 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
         yas_notu = ""
         if makro_tazelik and makro_tazelik.son_guncelleme:
             tarih = makro_tazelik.son_guncelleme.strftime("%d.%m.%Y")
-            yas_notu = f" (TUIK verisi {tarih} tarihinde cekildi"
+            yas_notu = f" (TÜİK verisi {tarih} tarihinde çekildi"
             if makro_tazelik.durum != "taze":
-                yas_notu += (f", {makro_tazelik.yas_gun} gunluk - o tarihten sonra "
-                             f"aciklanan enflasyon bu hesaba YANSIMIYOR")
+                yas_notu += (f", {makro_tazelik.yas_gun} günlük - o tarihten sonra "
+                             f"açıklanan enflasyon bu hesaba YANSIMIYOR")
             yas_notu += ")"
         notlar.append(
-            f"Yillik TUFE ({tufe:.1f}%){yas_notu} dikkate alindiginda, stok maliyetlerinizin son "
-            f"guncellemeden bu yana enflasyon oraninda arttigini varsayarak butce planlayin."
+            f"Yıllık TÜFE ({tufe:.1f}%){yas_notu} dikkate alındığında, stok maliyetlerinizin son "
+            f"güncellemeden bu yana enflasyon oranında arttığını varsayarak bütçe planlayin."
         )
 
     if net_kar_orani is not None:
         notlar.append(
-            f"Turkiye'de '{sektor}' sektorunun TCMB Sektor Bilancolari'na gore ortalama net "
-            f"kar orani (net kar/net satislar) %{net_kar_orani * 100:.1f} - bu, "
-            f"cironuzun ne kadarinin karla sonuclanmasinin 'normal' sayildigina dair bir referanstir. "
-            + ("Not: TCMB tarim sektorunu tek kalemde yayinladigi icin bu oran hayvancilik/bitkisel "
-               "ayrimi yapmiyor, tum tarim isletmelerinin ortalamasidir."
+            f"Türkiye'de '{sektor}' sektörünün TCMB Sektör Bilançoları'na göre ortalama net "
+            f"kâr oranı (net kâr/net satışlar) %{net_kar_orani * 100:.1f} - bu, "
+            f"cironuzun ne kadarının kârla sonuçlanmasının 'normal' sayıldığına dair bir referanstır. "
+            + ("Not: TCMB tarım sektörünü tek kalemde yayınladığı için bu oran hayvancılık/bitkisel "
+               "ayrımı yapmıyor, tüm tarım işletmelerinin ortalamasıdır."
                if sektor == "tarim" else "")
-            + ("Not: TCMB Sektor Bilancolari'nda e-ticaret icin ayri bir resmi kategori yok "
-               "(NACE siniflandirmasinda e-ticaret, geleneksel perakende ile ayni 'G' boluminde "
-               "toplaniyor) - bu yuzden gosterilen oran ayni zamanda geleneksel perakende "
-               "isletmelerini de icerir; e-ticarete ozgu bir istatistik degildir."
+            + ("Not: TCMB Sektör Bilançoları'nda e-ticaret için ayrı bir resmî kategori yok "
+               "(NACE sınıflandırmasında e-ticaret, geleneksel perakende ile aynı 'G' bölümünde "
+               "toplanıyor) - bu yüzden gösterilen oran aynı zamanda geleneksel perakende "
+               "işletmelerini de içerir; e-ticarete özgü bir istatistik değildir."
                if sektor == "e-ticaret" else "")
         )
 
@@ -644,7 +644,7 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
             notlar.append(
                 f"Türkiye'nin tarım (bitkisel/hayvansal üretim) sektörü son ay ihracatı "
                 f"${aylik_ihracat:,.0f} milyon, ithalatı ${aylik_ithalat:,.0f} milyon "
-                f"(TUIK/EVDS) - sektörde dış ticaret {durum} veriyor. Bu, sektörün genel "
+                f"(TÜİK/EVDS) - sektörde dış ticaret {durum} veriyor. Bu, sektörün genel "
                 f"rekabet gücüne dair bir referanstır, sizin işletmenizin ihracat/ithalat "
                 f"durumunu yansıtmaz."
             )
@@ -678,11 +678,11 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
                 guncel_urun_fiyati = urun_fiyati_bul(profil.urun_turu)
                 if guncel_urun_fiyati:
                     notlar.append(
-                        f"{guncel_urun_fiyati['urun_adi']} icin {guncel_urun_fiyati['sezon']} sezonu "
-                        f"TMO alim fiyati ton basina ₺{guncel_urun_fiyati['alim_fiyati_ton']:,.0f} "
-                        f"(destekler dahil yaklasik ₺{guncel_urun_fiyati['destekli_gelir_ton']:,.0f}). "
-                        f"Bu, urununuzu satabileceginiz guncel resmi taban fiyattir - piyasada bundan "
-                        f"daha yuksek teklif de alabilirsiniz."
+                        f"{guncel_urun_fiyati['urun_adi']} için {guncel_urun_fiyati['sezon']} sezonu "
+                        f"TMO alım fiyatı ton başına ₺{guncel_urun_fiyati['alim_fiyati_ton']:,.0f} "
+                        f"(destekler dahil yaklaşık ₺{guncel_urun_fiyati['destekli_gelir_ton']:,.0f}). "
+                        f"Bu, ürününüzü satabileceğiniz güncel resmî taban fiyattır - piyasada bundan "
+                        f"daha yüksek teklif de alabilirsiniz."
                     )
 
     guncel_ihracat_fiyati = None
@@ -695,7 +695,7 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
                 f"tarihli HKS İhracat Fiyat Bülteni'ne göre referans ihracat fiyatı "
                 f"₺{en_yuksek_kalem['fiyat_kg']:.2f}/kg ({en_yuksek_kalem['urun_cinsi']}, "
                 f"{en_yuksek_kalem['urun_turu']}). Bu, gümrük/ihracat beyanında kullanılan "
-                f"resmi bir referans fiyattır, gerçek satış fiyatınız farklı olabilir."
+                f"resmî bir referans fiyattır, gerçek satış fiyatınız farklı olabilir."
             )
 
     # Kullanici bir urun_turu girdi ama ne cilek/hal, ne TMO, ne de ihracat
@@ -738,17 +738,17 @@ def hesapla(profil: FinancialProfile, db: Session) -> ButceOnerisi:
     if profil.ilk_yil_mi:
         if kurulus_gideri:
             notlar.append(
-                f"İlk yil / kurulus yili isaretlendi: belirttiginiz ₺{kurulus_gideri:,.0f} kurulus "
-                f"gideri (arazi hazirligi, sera, ekipman vb.) tek seferliktir; asagidaki "
-                f"karsilastirma bu tutar dusulerek yapildi, boylece duzenli isletme "
-                f"gideriniz sektor ortalamasiyla daha adil kiyaslanir."
+                f"İlk yıl / kuruluş yılı işaretlendi: belirttiğiniz ₺{kurulus_gideri:,.0f} kuruluş "
+                f"gideri (arazi hazırlığı, sera, ekipman vb.) tek seferliktir; aşağıdaki "
+                f"karşılaştırma bu tutar düşülerek yapıldı, böylece düzenli işletme "
+                f"gideriniz sektör ortalamasıyla daha adil kıyaslanır."
             )
         else:
             notlar.append(
-                "İlk yil / kurulus yili isaretlendi ama kurulus gideri belirtilmedi: "
-                "asagidaki oranlar sektordeki olgun/surekli isletmelerin ortalamasidir. "
-                "Arazi hazirligi, sera kurulumu, ekipman alimi gibi tek seferlik "
-                "yatirimlariniz varsa bunlari ayri girerseniz karsilastirma daha adil olur."
+                "İlk yıl / kuruluş yılı işaretlendi ama kuruluş gideri belirtilmedi: "
+                "aşağıdaki oranlar sektördeki olgun/sürekli işletmelerin ortalamasıdır. "
+                "Arazi hazırlığı, sera kurulumu, ekipman alimi gibi tek seferlik "
+                "yatırımlarınız varsa bunları ayrı girerseniz karşılaştırma daha adil olur."
             )
 
     (mevcut_stok_gideri, mevcut_reklam_gideri, mevcut_toplam,

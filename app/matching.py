@@ -9,6 +9,7 @@ diline cevirmek icin kullanilabilir (bkz. rag.answer), skorlama kendisi
 kural tabanlidir ve tekrarlanabilir/aciklanabilir olmalidir.
 """
 from dataclasses import dataclass, field
+from datetime import date
 
 from sqlalchemy.orm import Session, selectinload
 
@@ -169,7 +170,58 @@ def uygunluk_engeli(t, profil) -> str | None:
     elif tur in SIRKET_TURLERI and tur != "yok":
         if _SIRKETI_OLANA_KAPALI.search(metin):
             return "şirketi olanlara kapalı (ortaklık yasağı)"
+        # Şahıs işletmesi ve kooperatif sermaye şirketi değildir (TTK md.124: sermaye şirketleri
+        # anonim, limited ve sermayesi paylara bölünmüş komandit). Tarayıcı denemesi 2026-10-07:
+        # şahıs çiftçiye TÜBİTAK 1501 öneriliyordu.
+        if (tur in ("sahis", "kooperatif") and t.kurum in ("TUBITAK", "TÜBİTAK")
+                and "girisim" not in program_ihtiyaclari(t)):
+            return "TÜBİTAK sanayi programları sermaye şirketi (Ltd./A.Ş.) gerektirir"
+    yas_siniri = _isletme_yas_siniri(metin)
+    kurulus = getattr(profil, "kurulus_tarihi", None)
+    if yas_siniri is not None and kurulus is not None:
+        yas = (date.today() - kurulus).days / 365.25
+        if yas > yas_siniri:
+            return f"{yas_siniri:g} yaşına kadar işletmelere açık (işletmeniz yaklaşık {yas:.0f} yaşında)"
     return None
+
+
+# "0-1 yaş aralığındaki işletme", "0-3 yaş işletme" (KOSGEB Girişimci Destek Programı, kosgeb.gov.tr
+# destekdetay/1231, 2026-10-07). Kişi yaşı ("18-29 yaş erkekler", 4447 SGK teşviki) EŞLEŞMEZ: kalıp
+# "işletme" kelimesini şart koşar. Birden fazla aralık varsa (İş Kurma 0-1, İş Geliştirme 0-3) en
+# genişi alınır: program, en geniş bileşeniyle hâlâ başvurulabilirdir.
+_ISLETME_YASI = re.compile(r"(\d+)\s*-\s*(\d+)\s*yaş(?:\s+aralığındaki)?\s+işletme", re.IGNORECASE)
+
+
+def _isletme_yas_siniri(metin: str) -> float | None:
+    sinirlar = [float(m.group(2)) for m in _ISLETME_YASI.finditer(metin or "")]
+    return max(sinirlar) if sinirlar else None
+
+
+# Profildeki tarım hedefi -> kaydın tarım alt kategorisi.
+HEDEF_TARIM_KATEGORISI = {"makine": "makinelestirme", "sulama": "sulama", "hayvan": "hayvancilik",
+                          "organik": "organik"}
+
+
+def _hedef_eslesmeleri(t, hedefler: set[str], alt_kategori: str | None) -> list[str]:
+    """Profil hedeflerinden bu programın hizmet ettikleri.
+
+    Eskiden hedef değeri ("yatirim") kayıt başlığında harfiyen aranıyordu; kayıtlar Türkçe yazıldığı
+    için ("Yatırım") yatırım hedefi HİÇBİR programla eşleşmiyor, her kartta "hedeflerle eşleşme
+    bulunamadı" yazıyordu (tarayıcı denemesi 2026-10-07: Bursa metal işleme KOBİ'sinde 9903 Hedef
+    Yatırımlar ve Kapasite Geliştirme hedef bonusu alamadı, Kapasite Geliştirme 17. sıradaydı).
+    Program ihtiyaçları ortak sınıflandırıcıdan (app.ihtiyac.program_ihtiyaclari) gelir; tarım
+    hedefleri kaydın alt kategorisiyle ya da aksansız başlık/özet metniyle eşleşir."""
+    ihtiyac = program_ihtiyaclari(t)
+    metin = _sadelestir(f"{t.baslik} {t.ozet}")
+    sonuc = []
+    for h in sorted(hedefler):
+        if h in ihtiyac:
+            sonuc.append(h)
+        elif h in HEDEF_TARIM_KATEGORISI and (alt_kategori == HEDEF_TARIM_KATEGORISI[h] or h in metin):
+            sonuc.append(h)
+        elif h in ("ihracat", "istihdam") and h in metin:
+            sonuc.append(h)
+    return sonuc
 
 
 def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[TesvikEslesmeSonucu]:
@@ -300,7 +352,7 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
         hedef_metni = f"{t.baslik} {t.ozet}".lower()
 
         if profil_hedefler:
-            hedef_eslesme = [h for h in profil_hedefler if h in hedef_metni]
+            hedef_eslesme = _hedef_eslesmeleri(t, profil_hedefler, kriterler.get("alt_kategori"))
             if hedef_eslesme:
                 skor += 0.3
                 gerekce.append(f"Belirttiginiz hedef(ler) ile eslesiyor: {', '.join(hedef_eslesme)}.")
@@ -357,6 +409,15 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
                     skor += 0.3
                     gerekce.append(f"Seçtiğiniz tarım kategorisi ('{tarim_kategori}') bu destekle tam eşleşiyor.")
                 elif genislik == "dar":
+                    # Kullanıcı kategorisini açıkça seçti ve bu dar program başka bir faaliyete özel:
+                    # hedeflerinde de bu alan yoksa öneri değil gürültüdür (tarayıcı denemesi
+                    # 2026-10-07: tahıl üreticisine Meyve-Sebze mazot-gübre ve Sera destekleri 45%
+                    # ile listeleniyordu). Hedefte varsa (ör. hayvancılığa geçmek isteyen tahıl
+                    # üreticisi) cezayla birlikte gösterilir.
+                    hedefteki_kategoriler = {HEDEF_TARIM_KATEGORISI[h] for h in profil_hedefler
+                                             if h in HEDEF_TARIM_KATEGORISI}
+                    if alt_kategori not in hedefteki_kategoriler:
+                        continue
                     skor -= 0.25
                     eksik.append(
                         f"Bu destek '{alt_kategori}' kategorisine özeldir; seçtiğiniz kategori "
@@ -452,12 +513,41 @@ def _tutar_olcek_faktoru(kriter: str, profil: FinancialProfile) -> float | None:
     return None
 
 
+def _tarim_kategorisi_uyusmuyor(tesvik, profil: FinancialProfile) -> bool:
+    """Tarım programı, kullanıcının bilinen faaliyetinden farklı bir alt kategoriye mi ait?
+
+    Faaliyet bilinmiyorsa (kategori seçilmemiş, ürün yazılmamış) False: tahmin engellenmez. Hedeflerde
+    o alan varsa (ör. organik tarıma geçmek isteyen) uyuşmazlık sayılmaz. Tarayıcı denemesi
+    2026-10-07: organik üretim yapmayan buğday üreticisine "Organik Tarım Destekleri" için
+    57.970 TL tahmini tutar yazılıyor ve toplam tahmini desteğe ekleniyordu."""
+    alt = (tesvik.uygunluk_kriterleri or {}).get("alt_kategori")
+    if not alt:
+        return False
+    kategori = (profil.tarim_kategori or "").strip().lower()
+    if kategori in BELIRTILMEMIS_KATEGORILER:
+        kategori = ""
+    kategori = kategori or (urun_turunden_tarim_kategorisi(profil.urun_turu) or "")
+    if not kategori or kategori == alt:
+        return False
+    hedefteki = {HEDEF_TARIM_KATEGORISI[h] for h in (h.lower() for h in (profil.hedefler or []))
+                 if h in HEDEF_TARIM_KATEGORISI}
+    return alt not in hedefteki
+
+
 def tutari_tahmini_hesapla(tesvik, profil: FinancialProfile) -> float | None:
     """Teşvik tutarı ve profil bilgisine göre tahmini destek tutarı hesapla.
 
     Örn: 50 dekar arazi, makineleştirme desteği (dekar başına ₺X-Y) -> tahmini
     """
     if not tesvik.tutari_hesaplama_kriteri or tesvik.tutari_min is None:
+        return None
+    if _tarim_kategorisi_uyusmuyor(tesvik, profil):
+        return None
+    # Kredi/kefalet limiti ve proje bazlı program tavanı "alacağınız destek" değildir; toplam tahmin
+    # (toplam_tahmini_destek) bunları zaten dışarıda tutuyordu ama kartta ayrı ayrı "Tahmini" diye
+    # gösteriliyordu (tarayıcı denemesi 2026-10-07: çiftçinin kartında Kapasite Geliştirme kredisi
+    # için "Tahmini: ₺10.500.000").
+    if _kredi_kefaleti_mi(tesvik) or _proje_bazli_tavan_mi(tesvik):
         return None
 
     ort_tutar = (tesvik.tutari_min + (tesvik.tutari_max or tesvik.tutari_min)) / 2

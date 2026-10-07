@@ -1,0 +1,18 @@
+[8] Kapasite Geliştirme Destek Programı
+    sektorler: ['genel'] -> ['imalat', 'arge']
+    NACE kapsamı: (yok) -> ['C', '61', '62', '63', '72']
+    nace_kapsam_turu: None -> SEKTOR_KISITLI
+[81] KAPASİTE GELİŞTİRME DESTEK PAKETİ
+    sektorler: ['genel'] -> ['imalat', 'arge']
+    NACE kapsamı: (yok) -> ['C', '61', '62', '63', '72']
+    nace_kapsam_turu: None -> SEKTOR_KISITLI
+[7] İstihdamı Koruma Destek Programı
+    sektorler: ['genel'] -> ['imalat']
+    NACE kapsamı: (yok) -> ['C']
+    nace_kapsam_turu: None -> SEKTOR_KISITLI
+[142] İSTİHDAM KORUMA DESTEK PROGRAMI
+    sektorler: ['genel'] -> ['imalat']
+    NACE kapsamı: (yok) -> ['C']
+    nace_kapsam_turu: None -> SEKTOR_KISITLI
+
+DRY-RUN: 4 kayıt

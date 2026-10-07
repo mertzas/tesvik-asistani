@@ -248,10 +248,15 @@ def sor(
             olcek = kobi_sinifi(profil_row.calisan_sayisi, profil_row.yillik_ciro)
             if olcek.sinif:
                 profil["KOBİ ölçeği"] = (KOBI_AD[olcek.sinif]
-                                        + ("" if olcek.kesin else " (kesin değil: " + olcek.aciklama + ")"))
+                                        + ("" if olcek.kesin else " (kesin değil: " + olcek.aciklama + ")")
+                                        + " [KOBİ Yönetmeliği, 7 Ağustos 2025 eşiklerine göre hesaplandı]")
+            bolge_no = il_bolgesi(profil_row.bolge) if profil_row.bolge else None
+            if bolge_no:
+                profil["yatırım teşvik bölgesi (9903 sayılı Karar EK-2)"] = f"{bolge_no}. bölge"
 
         # Mevcut RAG sistemini çalıştır
-        answer_text = answer(request.question, profil, llm_kullan=riza_var)
+        answer_text = answer(request.question, profil, llm_kullan=riza_var,
+                             profil_kaydi=profil_row)
         if not riza_var:
             answer_text += (
                 "\n\n---\n"
@@ -276,7 +281,7 @@ def sor(
         #
         # Arama mantigi artik tek yerde: app/rag.retrieve() (Turkce govde
         # ayiklama ve sektor genislemesi dahil).
-        tesvikler = retrieve(request.question, limit=10)
+        tesvikler = retrieve(request.question, limit=10, profil_kaydi=profil_row)
 
         results = [
             SearchResult(

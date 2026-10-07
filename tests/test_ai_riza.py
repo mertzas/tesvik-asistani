@@ -32,7 +32,7 @@ def cagri_kaydi(monkeypatch):
     """answer() çağrılarını kaydeder; gerçek LLM'e çıkmaz."""
     kayitlar = []
 
-    def _sahte(soru, profil=None, llm_kullan=True):
+    def _sahte(soru, profil=None, llm_kullan=True, **_kw):
         kayitlar.append({"profil": profil, "llm_kullan": llm_kullan})
         return "[test] yanıt"
 
@@ -122,11 +122,12 @@ def test_rizali_profil_nace_ve_kobi_olcegini_tasir_ozellikleri_tasimaz(client, c
     (kadın/genç girişimci) KVKK metninde belirtildiği gibi aktarılmasın."""
     h = _hesap_ac(client, riza=True)
     r = client.put("/api/profil", headers=h, json={
-        "sektor": "imalat", "calisan_sayisi": 30, "yillik_ciro": 80_000_000,
+        "sektor": "imalat", "bolge": "Konya", "calisan_sayisi": 30, "yillik_ciro": 80_000_000,
         "nace_kodu": "C.10.71", "ozellikler": ["kadin_girisimci"]})
     assert r.status_code == 200, r.text
     client.post("/api/sor", json={"question": "Makine yatırımı için destek"}, headers=h)
     profil = cagri_kaydi[-1]["profil"]
     assert profil["NACE kodu"] == "10.71"
-    assert profil["KOBİ ölçeği"] == "küçük işletme"
+    assert profil["KOBİ ölçeği"].startswith("küçük işletme") and "7 Ağustos 2025" in profil["KOBİ ölçeği"]
+    assert profil["yatırım teşvik bölgesi (9903 sayılı Karar EK-2)"].endswith("bölge")
     assert not any("kadin" in str(v) or "özellik" in k for k, v in profil.items())

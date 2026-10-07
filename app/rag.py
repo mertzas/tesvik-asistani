@@ -21,6 +21,10 @@ import logging
 
 import requests
 
+from sqlalchemy.orm import selectinload
+from app.ihtiyac import isletmeye_yonelik_mi, program_ihtiyaclari, soru_ihtiyaclari
+from app.match_adapter import company_from_profile, program_from_tesvik
+from app.match_scoring import hard_filter
 from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu, settings
 from sqlalchemy import or_
 
@@ -42,7 +46,9 @@ CLAUDE_TIMEOUT_SEC = 90  # 5 başlıklı danışman yanıtı ~3000 token; 30 sn 
 # token'ları da max_tokens'tan düşer: 3000 iken ~2100'ü düşünmeye gidip yanıt yarıda
 # kesiliyordu (ölçüm 2026-10-07). Bütçe geniş, derinlik effort ile sınırlanıyor.
 CLAUDE_MAX_TOKENS = 16000
-CLAUDE_EFFORT = "medium"  # low | medium | high; danışman yanıtı için gecikme/kalite dengesi
+CLAUDE_EFFORT = "medium"
+CEVAP_KAYIT_SAYISI = 8   # danışmana verilen kayıt sayısı (çok ihtiyaçlı sorularda kota için)
+HAVUZ_BOYUTU = 60        # ihtiyaç/profil katmanının kelime aramasından aldığı aday sayısı  # low | medium | high; danışman yanıtı için gecikme/kalite dengesi
 
 # Anlamli sinyal tasimayan, aramada gurultu yaratan kisa/genel kelimeler.
 # Aramada anlamsiz olan ama ILIKE '%...%' ile veritabaninin cogunluguna
@@ -142,10 +148,102 @@ def _terimlere_ayir(query: str) -> list[str]:
     return [t for t in terms if len(t) > 2 and t not in DURAK_KELIMELER]
 
 
-def retrieve(query: str, limit: int = 5) -> list[Tesvik]:
+def retrieve(query: str, limit: int = 5, profil_kaydi=None) -> list[Tesvik]:
+    """Soruyla ilgili teşvik kayıtları.
+
+    İki katman:
+      1. Kelime araması (_metin_aramasi): Türkçe gövde, program kodu, sektör
+         genişlemesi. Soruda ihtiyaç türü yoksa ve profil verilmemişse sonuç
+         doğrudan budur.
+      2. İhtiyaç + profil katmanı: sorudaki ihtiyaç türleri (makine yatırımı,
+         Ar-Ge, ihracat...) kelime eşleşmesi olmayan ama o ihtiyaca hizmet eden
+         programları da havuza katar; profil verilmişse uygun olmayan programlar
+         (sektör etiketi, NACE, KOBİ ölçeği, il, hedef kitle) aramadan önce elenir.
+         Birden çok ihtiyaç varsa her birine kota ayrılır.
+
+    Ölçüm (2026-10-07): "ekmek hattı için makine + ürün geliştirme" sorusunda
+    kelime araması 5 kaydın 3'ünü tarım programlarına veriyor, 9903 yatırım
+    teşviklerini hiç getirmiyordu.
+    """
+    ihtiyaclar = soru_ihtiyaclari(query)
+    if not ihtiyaclar and profil_kaydi is None:
+        return _metin_aramasi(query, limit)
+
+    metin_sonucu = _metin_aramasi(query, HAVUZ_BOYUTU)
+    sira = {t.id: i for i, t in enumerate(metin_sonucu)}
+    havuz = list(metin_sonucu)
+    if ihtiyaclar:
+        aranan = set(ihtiyaclar)
+        db = SessionLocal()
+        try:
+            for t in db.query(Tesvik).options(selectinload(Tesvik.nace_kayitlari)).all():
+                if t.id not in sira and program_ihtiyaclari(t) & aranan:
+                    db.expunge(t)
+                    havuz.append(t)
+        finally:
+            db.close()
+
+    # Akademik/etkinlik TÜBİTAK çağrıları işletme sorularında kotayı doldurmasın
+    # ("yurt dışı fuar" sorusu 2224 bilimsel etkinlik çağrılarını getiriyordu);
+    # kullanıcı program kodunu yazdıysa (ör. "2224") korunur.
+    kodlar = [x for x in _terimlere_ayir(query) if x.isdigit()]
+    havuz = [t for t in havuz if isletmeye_yonelik_mi(t)
+             or any(kucult(t.baslik or "").startswith(k) for k in kodlar)]
+
+    if profil_kaydi is not None:
+        sirket = company_from_profile(profil_kaydi)
+        havuz = [t for t in havuz if _profile_uygun_mu(t, sirket, profil_kaydi)]
+
+    aranan = set(ihtiyaclar)
+    profil_sektor = (getattr(profil_kaydi, "sektor", None) or "").lower()
+
+    def puan(t: Tesvik) -> float:
+        # İhtiyaç eşleşmesi kelime sırasından baskın: kelime araması "geliştirme",
+        # "kapasite" gibi genel kelimelerle alakasız programları öne taşıyordu.
+        p = 0.0
+        if t.id in sira:
+            p += 1.0 * (1 - sira[t.id] / max(len(metin_sonucu), 1))
+        p += 3.0 * len(program_ihtiyaclari(t) & aranan)
+        etiketler = {x.lower() for x in (t.uygunluk_kriterleri or {}).get("sektorler", [])}
+        if profil_sektor and profil_sektor in etiketler and "genel" not in etiketler:
+            p += 1.0  # sektöre özgü program, "genel" programdan daha isabetli
+        if t.aktif_mi is True:
+            p += 0.3
+        elif t.aktif_mi is False:
+            p -= 5.0  # kapalı programı başvurulabilir seçeneklerin önüne koyma
+        return p
+
+    havuz.sort(key=lambda t: (-puan(t), t.id))
+    secilen: list[Tesvik] = []
+    if len(ihtiyaclar) > 1:
+        kota = max(1, limit // len(ihtiyaclar))
+        for ihtiyac in ihtiyaclar:
+            adaylar = [t for t in havuz if ihtiyac in program_ihtiyaclari(t) and t not in secilen]
+            secilen.extend(adaylar[:kota])
+    for t in havuz:
+        if len(secilen) >= limit:
+            break
+        if t not in secilen:
+            secilen.append(t)
+    secilen = secilen[:limit]
+    secilen.sort(key=lambda t: (-puan(t), t.id))
+    return secilen
+
+
+def _profile_uygun_mu(t: Tesvik, sirket, profil_kaydi) -> bool:
+    """esles() ile aynı eleme kuralları: sektör etiketi + katı eleme."""
+    etiketler = {s.lower() for s in (t.uygunluk_kriterleri or {}).get("sektorler", [])}
+    profil_sektor = (getattr(profil_kaydi, "sektor", None) or "").lower()
+    if etiketler and profil_sektor and profil_sektor not in etiketler and "genel" not in etiketler:
+        return False
+    sebepler, _ = hard_filter(sirket, program_from_tesvik(t), strict_sector=True)
+    return not sebepler
+
+
+def _metin_aramasi(query: str, limit: int = 5) -> list[Tesvik]:
     db = SessionLocal()
     terms = _terimlere_ayir(query)
-    q = db.query(Tesvik)
+    q = db.query(Tesvik).options(selectinload(Tesvik.nace_kayitlari))
     if terms:
         # Her terim icin hem tam hali hem govdesi araniyor (bkz. govde()).
         aranacak = []
@@ -252,7 +350,7 @@ def _sektor_kayitlari(sektor: str, skor) -> list[Tesvik]:
     db = SessionLocal()
     try:
         bulunan = []
-        for t in db.query(Tesvik).all():
+        for t in db.query(Tesvik).options(selectinload(Tesvik.nace_kayitlari)).all():
             if t.aktif_mi is False:
                 continue  # kapanmis programi one cikarmanin anlami yok
             etiketler = {
@@ -514,7 +612,7 @@ def _ollama_cevap(query: str, matches: list[Tesvik]) -> str | None:
 
 
 def answer(query: str, profil: dict | None = None,
-           llm_kullan: bool = True) -> str:
+           llm_kullan: bool = True, profil_kaydi=None) -> str:
     """Soruya yanit uretir.
 
     llm_kullan=False ise HICBIR dis LLM cagrisi yapilmaz ve yalnizca
@@ -523,7 +621,9 @@ def answer(query: str, profil: dict | None = None,
     (ABD) gonderiyor; bu yurt disina aktarimdir ve acik riza gerektirir.
     Riza yoksa cagri hic yapilmaz (bkz. app/main.py sor()).
     """
-    matches = retrieve(query)
+    # profil_kaydi yalnızca YEREL eleme için kullanılır (dışarı gönderilmez);
+    # dışarı giden profil, rızaya bağlı olan `profil` sözlüğüdür.
+    matches = retrieve(query, limit=CEVAP_KAYIT_SAYISI, profil_kaydi=profil_kaydi)
 
     if not matches:
         return (

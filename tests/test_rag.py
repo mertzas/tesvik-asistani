@@ -122,7 +122,7 @@ def test_liste_formati_bos_listede_coksmez():
 
 def test_eslesme_yoksa_yonlendirme_metni_doner(monkeypatch):
     """Sonuç yoksa uydurma bir program değil, kurumlara yönlendirme dönmeli."""
-    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5: [])
+    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [])
     cevap = rag.answer("bu sorguyla hiçbir şey eşleşmeyecek xyzzy")
     assert "bulamadım" in cevap
     assert "KOSGEB" in cevap
@@ -130,7 +130,7 @@ def test_eslesme_yoksa_yonlendirme_metni_doner(monkeypatch):
 
 def test_claude_cevap_verirse_o_kullanilir(monkeypatch):
     kayit = _tesvik("Dijital Dönüşüm Desteği", ozet="Yazılım ve makine desteği.")
-    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5: [kayit])
+    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [kayit])
     monkeypatch.setattr(rag, "_claude_cevap",
                         lambda q, m, p: "### 📊 Durum Analizi\nAI cevabı")
     cevap = rag.answer("dijital dönüşüm")
@@ -143,7 +143,7 @@ def test_claude_yoksa_liste_formatina_dusulur(monkeypatch):
     Kullanıcı boş ekran değil, en azından gerçek kayıtların listesini görmeli.
     """
     kayit = _tesvik("Dijital Dönüşüm Desteği", ozet="Yazılım ve makine desteği.")
-    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5: [kayit])
+    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [kayit])
     monkeypatch.setattr(rag, "_claude_cevap", lambda q, m, p: None)
     monkeypatch.setattr(rag, "OLLAMA_ETKIN", False)
 
@@ -160,7 +160,7 @@ def test_claude_patlarsa_uygulama_coksmez_ve_gunluge_yazilir(monkeypatch, caplog
     import logging
 
     kayit = _tesvik("Test Programı", ozet="özet")
-    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5: [kayit])
+    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [kayit])
     monkeypatch.setattr(rag, "OLLAMA_ETKIN", False)
 
     class SahteIstemci:

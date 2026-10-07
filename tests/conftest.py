@@ -104,7 +104,7 @@ def _claude_cagirma(monkeypatch, request):
     if request.node.get_closest_marker("canli_llm"):
         return
 
-    def _sahte_cevap(soru, profil=None, llm_kullan=True):
+    def _sahte_cevap(soru, profil=None, llm_kullan=True, **_kw):
         # Imza app.rag.answer ile AYNI kalmali; aksi halde uc nokta
         # TypeError alip 500 doner ve testler gercek hatayi degil imza
         # uyusmazligini bildirir (bu bir kez oldu: llm_kullan parametresi

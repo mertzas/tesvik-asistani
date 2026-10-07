@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-07 (Denetim 2 / Aşama B sonu). Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-07 (Denetim 2 / Aşama F sonu). Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -35,7 +35,7 @@ Son güncelleme: 2026-10-07 (Denetim 2 / Aşama B sonu). Oturuma bunu okuyarak b
   (tur3, 5 kayıt: 2, 7, 48, 163, 174; yedek *.db.bak, git dışı); açık: 163 güncel limit, 48 son başvuru tarihi.
 - **Denetim 2 / Aşama D** (tamamlandı, kısıtlarla): rapor `docs/olcum/2026-10-07-denetim2/D_RAPOR.md`. 3 hata bulundu/düzeltildi (akış kopması uyarısız, askıda Claude 271 sn, kilitli DB'de /health yanlış 200). Test 766 geçti. Yapılamayanlar: gerçek modelle ilk parça süresi (kredi/onay yok), Linux'ta --workers 2 flock kanıtı (Docker/WSL yok). Dev sunucusu (:8000) yeniden başlatılmalı.
 - **Denetim 2 / Aşama E** (kod tamam, 2 bilgi + 1 göç bekliyor): rapor `docs/olcum/2026-10-07-denetim2/E_RAPOR.md`. CSP eklendi (unsafe-inline kaldı), çilek paneli kalıcı XSS kapandı, İKAS webhook mağaza belirteciyle korundu (İKAS imza tanımlamıyor), parola sıfırlama + e-posta doğrulama eklendi. Test 791 geçti. BEKLEYEN: (1) KVKK DOLDURULACAK alanları kullanıcıdan, (2) SMTP sağlayıcısı kullanıcıdan (şifre .env'ye), (3) `alembic upgrade head` veri/dev DB'ye uygulanmadı (yeni kodla açılmadan önce şart).
-- Aşama F (kapanış: açık liste + Yayına hazır mı?).
+- **Denetim 2 / Aşama F** (tamamlandı): `docs/olcum/2026-10-07-denetim2/F_RAPOR.md`. KARAR: ödeme alan genel yayın için HAYIR; engeller KVKK alanları, SMTP, Stripe test modu, Linux dağıtım denemesi, üretim modeliyle ölçüm, veri boşlukları. Göç `g4b6c8d0e456` dev DB'ye UYGULANDI (yedek `tesvikler_oncesi_gocE.db.bak`). Dev sunucusu :8000 eski kodla çalışıyor, yeni kod için yeniden başlatılmalı. 14 yerel commit push edilmedi.
 - Açık: 76 hayvancılık tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 10 kararsız akademik kayıt,
   bütçe modülünde tek sektör kâr oranı (%5,8), profil düğmeleri stilsiz, kayıt sonrası onboarding yok.
 

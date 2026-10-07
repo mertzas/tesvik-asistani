@@ -74,8 +74,36 @@ def _norm(s):
     return s.replace(" ", "").lower()
 
 
-def calistir(secim=None):
-    _kaydedici_kur()
+def _prompt(n):
+    """Uygulamanın modele göndereceği birebir sistem promptu + kullanıcı mesajı (rag.answer ile aynı dallanma)."""
+    pad, soru, _, _ = SORULAR[n - 1]
+    p = FinancialProfile(**P[pad]); profil = rag.profil_sozlugu(p)
+    h = rag._hazirla(soru, True, p)
+    if h.girisim:
+        sistem = rag.SISTEM_PROMPTU + rag.GIRISIM_PROMPT_EKI
+        baglam = rag._baglam_metni(h.matches, profil, h.notlar, h.elenen)
+    else:
+        sistem = rag.SISTEM_PROMPTU
+        baglam = rag._baglam_metni(h.matches, profil, h.notlar, h.elenen) if (h.notlar or h.elenen) \
+            else rag._baglam_metni(h.matches, profil)
+    return sistem, f"BAĞLAM:\n{baglam}\n\nKULLANICI SORUSU: {soru}"
+
+
+def dump(secim=None):
+    """API bakiyesi yokken: promptları C_prompt_NN.md'ye yaz; yanıt dışarıda üretilip C_ham_NN.md'ye konur, sonra `skor N`."""
+    for n in range(1, len(SORULAR) + 1):
+        if secim and n != secim:
+            continue
+        sistem, kullanici = _prompt(n)
+        with open(os.path.join(OUT, f"C_prompt_{n:02}.md"), "w", encoding="utf-8") as f:
+            f.write(f"<<SYSTEM>>\n{sistem}\n\n<<USER>>\n{kullanici}\n")
+        print(f"[{n:2}] prompt yazıldı: sistem {len(sistem)} kar, kullanıcı {len(kullanici)} kar, girişim={'GIRISIM' in sistem[-800:] or 'girişim' in sistem[len(rag.SISTEM_PROMPTU):].lower()}")
+
+
+def calistir(secim=None, kaynak="api"):
+    """kaynak='api': gerçek çağrı. kaynak='oturum': C_ham_NN.md'deki hazır yanıtı puanla (çağrı yok)."""
+    if kaynak == "api":
+        _kaydedici_kur()
     ozet = []
     for n, (pad, soru, beklenen, kid) in enumerate(SORULAR, 1):
         if secim and n != secim:
@@ -85,11 +113,15 @@ def calistir(secim=None):
         h = rag._hazirla(soru, True, p)
         baglam = rag._baglam_metni(h.matches, rag.profil_sozlugu(p), h.notlar, h.elenen)
         KAYIT.clear(); t0 = time.time()
-        cevap = rag.answer(soru, rag.profil_sozlugu(p), llm_kullan=True, profil_kaydi=p)
+        if kaynak == "api":
+            cevap = rag.answer(soru, rag.profil_sozlugu(p), llm_kullan=True, profil_kaydi=p)
+            with open(os.path.join(OUT, f"C_ham_{n:02}.md"), "w", encoding="utf-8") as f:
+                f.write(cevap)
+        else:
+            cevap = open(os.path.join(OUT, f"C_ham_{n:02}.md"), encoding="utf-8").read().strip()
         sure = round(time.time() - t0, 1)
-        with open(os.path.join(OUT, f"C_ham_{n:02}.md"), "w", encoding="utf-8") as f:
-            f.write(cevap)
         k = KAYIT[-1] if KAYIT else {}
+        k["kaynak"] = "claude API" if kaynak == "api" else "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)"
         cn = _norm(cevap)
         bulunan = [b for b in beklenen if _norm(b) in cn]
         eksik = [b for b in beklenen if _norm(b) not in cn]
@@ -115,4 +147,10 @@ def calistir(secim=None):
 
 
 if __name__ == "__main__":
-    calistir(int(sys.argv[1]) if len(sys.argv) > 1 else None)
+    args = sys.argv[1:]
+    if args and args[0] == "dump":
+        dump(int(args[1]) if len(args) > 1 else None)
+    elif args and args[0] == "skor":
+        calistir(int(args[1]) if len(args) > 1 else None, kaynak="oturum")
+    else:
+        calistir(int(args[0]) if args else None)

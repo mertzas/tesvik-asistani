@@ -17,6 +17,26 @@ def test_uzun_mevzuat_detayi_kesilmez():
     assert "MADDE 22" in m and "MADDE 31" in m
 
 
+def test_tesvil_tutari_alani_baglama_yazilir():
+    """GERÇEK OLAY (Denetim 2 / Aşama C): DB'de kaynakla doğrulanmış tutar metni (tesvil_tutari)
+    vardı ama bağlama yazılmıyordu; model 'vade/limit elimde yok' diyordu."""
+    t = _t("d")
+    t.tesvil_tutari = "Kredi 500.000 – 5.000.000 TL; vade 24 ay (ilk 12 ay ödemesiz)"
+    t.tutari_max = 5000000.0
+    m = rag._tesvik_detay_metni(t)
+    assert "Tutar/oran: Kredi 500.000 – 5.000.000 TL; vade 24 ay (ilk 12 ay ödemesiz)" in m
+    assert "Azami tutar" not in m, "tesvil_tutari varken ASCII azami tutar satırı tekrarlanmaz"
+
+
+def test_tutar_alanlari_oncelik_sirasi():
+    t = _t("d")
+    t.tutari_hesaplama_formulu = "ciro x %5"
+    assert "Tutar/oran" not in rag._tesvik_detay_metni(t) and "Hesaplama: ciro x %5" in rag._tesvik_detay_metni(t)
+    t2 = _t("d")
+    t2.tutari_max = 1000000.0
+    assert "Azami tutar: ₺1,000,000" in rag._tesvik_detay_metni(t2)
+
+
 def test_detay_ust_siniri_korunur():
     m = rag._tesvik_detay_metni(_t("Uzun bir cümle burada yer alıyor. " * 300))
     assert len(m) <= rag.DETAY_KARAKTER + 300

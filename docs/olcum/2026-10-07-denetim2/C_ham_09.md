@@ -1,28 +1,27 @@
-Sorunuzla ilgili 8 destek/teşvik programı buldum:
+### 1. Şirket & Proje Uygunluk Özeti
+- **Ölçek:** Küçük işletme (12 çalışan, 20 milyon TL ciro; KOBİ Yönetmeliği 7 Ağustos 2025 eşikleri). Şirket türü limited.
+- **Sektör:** NACE 62.01 (bilgisayar programlama), İstanbul, TRL 8. Hedefler: ihracat, Ar-Ge, finansman.
+- Sorunuz tek bir programın koşullarıyla ilgili; diğer başlıkları kısa tutuyorum.
 
-1. [KGF] TÜBİTAK Transfer Ödemeleri
-   TÜBİTAK Transfer Ödemeleri Geçmiş Programlar > YKB Teknoloji Geliştirme Bölgeleri Kredisi Projesi KOSGEB KOBİ Finansman Destek Programı KGF Destek Kredisi 2 (2.Dönem) KGF Destek Kredisi 2 COSME 2020 COSME KGF Destek…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/dogrudan-krediler/tubitak-transfer-odemeleri
-2. [KOSGEB] Yapay Zekâ Kredi Programı
-   Yapay Zekâ Kredi Programı Diğer Destekler KOBİ Nereden Başlamalıyım? İşletme Beyanı İşlemleri Desteklenen Sektörler e-Hizmetlerimiz Duyurular İletişim İLETİŞİM MÜDÜRLÜKLER TEKMERLER TEMSİLCİLİKLER BİLGİ EDİNME KOBİ'leri…
-   Kaynak: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi
-3. [KGF] ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ
-   ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ Ürün açıklaması Asgari C seviyesinde aktif Greendeks skoruna sahip, Net İhracatçı* KOBİ’lerin faaliyetlerinin desteklenmesi amaçlanmaktadır. * Son 3 mali dönemdeki ya…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-yesil-ihracat-kredisi-destek-paketii
-4. [KGF] HALKBANK İLK ADIM KREDİSİ PROJESİ
-   HALKBANK İLK ADIM KREDİSİ PROJESİ Ürün açıklaması Kendi işini kurarak girişimciliğe ilk adımını atmış veya atmak isteyen gençlerin finansman ihtiyaçlarının karşılanması amaçlanmaktadır. Kefalet için Kullanılan Kaynak…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi
-5. [KGF] HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ
-   HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ Ürün açıklaması Halkbank Şahıs İşletmeleri Destek Kredisi Projesi ile, kesinleşmiş son yıl cirosu 10 milyon TL’yi aşmayan Esnaf Odası, Ticaret ve Sanayi Odası veya…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-sahis-isletmeleri-destek-kredisi-projesi
-6. [KGF] TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI
-   TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI Ürün açıklaması Reel sektörün nakit akışı ile ilgili gereksinimlerinin TOBB tarafından belirlenen bölgesel ağırlıklarla tabana yaygın bir biçimde karşılanması amaçlanmaktadır.…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi
-7. [KGF] KOSGEB Geri Ödemeli Destekleri
-   KOSGEB Geri Ödemeli Destekleri TÜBİTAK Transfer Ödemeleri Geçmiş Programlar > YKB Teknoloji Geliştirme Bölgeleri Kredisi Projesi KOSGEB KOBİ Finansman Destek Programı KGF Destek Kredisi 2 (2.Dönem) KGF Destek Kredisi 2…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/dogrudan-krediler/kosgeb-geri-odemeli-destekleri
-8. [KGF] GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI
-   GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI Ürün açıklaması Girişimci Destek Programı Kredi Faiz Programı kapsamında, Girişimci Destek Programı İş Geliştirme Desteği başvurusu yapanlar arasından KOSGEB tarafından…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/girisimci-destek-programi-kredi-faiz-programi
+### 2. Eşleşen Teşvik ve Hibe Programları
+**KOSGEB Yapay Zekâ Kredi Programı** (kayıt: "Doğrulanmış, güncel/aktif program", sayfa canlı, 2026-10-07)
+- **Tutar (kayıttan):** İşletme başına kredi **500.000 TL ile 5.000.000 TL arasında** (azami tutar 5.000.000 TL).
+- **Vade ve ödemesiz dönem (kayıttan):** **24 ay vade; ilk 12 ay ödemesiz.**
+- **Teminat (kayıttan):** Kredi "GO Dijital Cüzdan'a blokeli" kullandırılıyor ve banka **kesin teminat mektubu** isteniyor. Bu ifadenin tam anlamını (kimin teminat mektubu verdiği, bloke tutarı) kayıt açıklamıyor; KOSGEB'den teyit edin.
+- **Bağlamda olmayanlar:** Faiz/kâr payı desteği, başvuru dönemi ve uygunluk şartları bağlamda yok. Rakam tahmin etmiyorum; resmî sayfadan teyit edin: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi
+- **NACE uygunluğu:** Sayfadaki "Desteklenen Sektörler (NACE)" bölümünün içeriği bağlamda yok. 62.01 kodunuzun kapsamda olup olmadığını teyit edin.
 
-Not: Bu cevap veritabanındaki kayıtlardan otomatik oluşturuldu, kesin başvuru şartları için ilgili kurumun sayfasını kontrol edin.
+**Bağlamdaki KGF kefalet ürünleri hakkında not:** Yapay Zekâ Kredi Programı için hangi KGF ürününün kefalet vereceği kayıtta belirtilmiyor. Bu nedenle bir KGF ürünüyle eşleştirmiyorum. Kefalet gerekiyorsa KOSGEB'den sorun.
+
+### 3. Darboğazlar ve Kritik Şartlar
+- Başvuru şartları ve KOSGEB veri tabanı kaydı gibi ön koşullar bağlamda yok; KOSGEB e-Hizmetler üzerinden güncel şartları görün.
+- Kredi olduğu için **geri ödeme ve teminat/kefalet yükü** olur (genel uyarı, kayıtta rakam yok).
+
+### 4. Adım Adım Yol Haritası
+1. Program sayfasını okuyun ("Nereden Başlamalıyım?" ve "Desteklenen Sektörler" bölümleri): https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi
+2. Vade ve ödemesiz dönemi teyit için KOSGEB İstanbul İkitelli Müdürlüğü: 0 (212) 405 41 50 veya İMES Müdürlüğü: 0 (216) 528 02 40; çağrı merkezi 444 1 567 (doğrulama: 2026-07-12, kaynak: https://www.kosgeb.gov.tr/site/tr/genel/iletisim). Değerlendirme süresi bağlamda yok, tahmin etmiyorum.
+
+### 5. Bilgi Eksikliği / Netleştirme
+- Kredinin kullanım amacı nedir (yazılım, altyapı, personel)? Yapay zekâ projenizin somut çıktısı nedir?
+- KOSGEB veri tabanında kayıtlı ve işletme beyanınız güncel mi?
+- Daha önce KOSGEB desteği veya kredisi kullandınız mı?

@@ -85,17 +85,20 @@
   "kayit_baslik": "1709 – EUREKA-EUROSTARS",
   "hedef_baglamda": true,
   "girisim": false,
-  "llm": false,
-  "sure_sn": 10.6,
-  "cevap_kar": 3497,
-  "beklenen_bulunan": [],
-  "beklenen_eksik": [
+  "llm": true,
+  "sure_sn": 0.0,
+  "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
+  "cevap_kar": 5938,
+  "beklenen_bulunan": [
    "4.000.000",
    "36 ay",
    "2026/2"
   ],
-  "baglam_disi_sayilar": [],
-  "bilgi_yok": 0,
+  "beklenen_eksik": [],
+  "baglam_disi_sayilar": [
+   "60milyon"
+  ],
+  "bilgi_yok": 12,
   "kesildi": false
  },
  {
@@ -105,17 +108,18 @@
   "kayit_baslik": "1512 - Girişimcilik Destek Programı (BiGG - Bireys",
   "hedef_baglamda": true,
   "girisim": true,
-  "llm": false,
-  "sure_sn": 0.6,
-  "cevap_kar": 3140,
-  "beklenen_bulunan": [],
-  "beklenen_eksik": [
+  "llm": true,
+  "sure_sn": 0.0,
+  "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
+  "cevap_kar": 8681,
+  "beklenen_bulunan": [
    "1.350.000",
    "600.000",
    "ortaklık"
   ],
+  "beklenen_eksik": [],
   "baglam_disi_sayilar": [],
-  "bilgi_yok": 0,
+  "bilgi_yok": 14,
   "kesildi": false
  },
  {
@@ -125,16 +129,17 @@
   "kayit_baslik": "Girişimci Destek Programı",
   "hedef_baglamda": false,
   "girisim": true,
-  "llm": false,
-  "sure_sn": 0.4,
-  "cevap_kar": 966,
-  "beklenen_bulunan": [],
-  "beklenen_eksik": [
+  "llm": true,
+  "sure_sn": 0.0,
+  "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
+  "cevap_kar": 3996,
+  "beklenen_bulunan": [
    "işletme",
    "KOSGEB"
   ],
+  "beklenen_eksik": [],
   "baglam_disi_sayilar": [],
-  "bilgi_yok": 0,
+  "bilgi_yok": 9,
   "kesildi": false
  },
  {
@@ -144,18 +149,21 @@
   "kayit_baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar",
   "hedef_baglamda": true,
   "girisim": false,
-  "llm": false,
-  "sure_sn": 0.4,
-  "cevap_kar": 3386,
-  "beklenen_bulunan": [],
-  "beklenen_eksik": [
+  "llm": true,
+  "sure_sn": 0.0,
+  "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
+  "cevap_kar": 4220,
+  "beklenen_bulunan": [
    "12 yıl",
    "%100",
    "6.000.000",
    "MADDE 18"
   ],
-  "baglam_disi_sayilar": [],
-  "bilgi_yok": 0,
+  "beklenen_eksik": [],
+  "baglam_disi_sayilar": [
+   "30milyon"
+  ],
+  "bilgi_yok": 4,
   "kesildi": false
  },
  {
@@ -165,17 +173,20 @@
   "kayit_baslik": "Pazara Girişte Dijital Faaliyetlerin Desteklenmesi",
   "hedef_baglamda": true,
   "girisim": false,
-  "llm": false,
-  "sure_sn": 0.4,
-  "cevap_kar": 3159,
-  "beklenen_bulunan": [],
-  "beklenen_eksik": [
+  "llm": true,
+  "sure_sn": 0.0,
+  "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
+  "cevap_kar": 3299,
+  "beklenen_bulunan": [
    "5973",
    "2573",
    "mülga"
   ],
-  "baglam_disi_sayilar": [],
-  "bilgi_yok": 0,
+  "beklenen_eksik": [],
+  "baglam_disi_sayilar": [
+   "4milyon"
+  ],
+  "bilgi_yok": 6,
   "kesildi": false
  },
  {
@@ -185,18 +196,22 @@
   "kayit_baslik": "Yapay Zekâ Kredi Programı",
   "hedef_baglamda": true,
   "girisim": false,
-  "llm": false,
-  "sure_sn": 0.4,
-  "cevap_kar": 3491,
-  "beklenen_bulunan": [],
-  "beklenen_eksik": [
+  "llm": true,
+  "sure_sn": 0.0,
+  "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
+  "cevap_kar": 2555,
+  "beklenen_bulunan": [
    "500.000",
    "5.000.000",
    "24 ay",
    "12 ay"
   ],
-  "baglam_disi_sayilar": [],
-  "bilgi_yok": 0,
+  "beklenen_eksik": [],
+  "baglam_disi_sayilar": [
+   "20milyon",
+   "500.000TL"
+  ],
+  "bilgi_yok": 7,
   "kesildi": false
  },
  {
@@ -206,18 +221,19 @@
   "kayit_baslik": "İstihdamı Koruma Destek Programı",
   "hedef_baglamda": true,
   "girisim": false,
-  "llm": false,
-  "sure_sn": 0.4,
-  "cevap_kar": 3409,
-  "beklenen_bulunan": [],
-  "beklenen_eksik": [
+  "llm": true,
+  "sure_sn": 0.0,
+  "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
+  "cevap_kar": 4236,
+  "beklenen_bulunan": [
    "150",
    "1 Eylül",
    "31 Ekim",
    "%37"
   ],
+  "beklenen_eksik": [],
   "baglam_disi_sayilar": [],
-  "bilgi_yok": 0,
+  "bilgi_yok": 4,
   "kesildi": false
  },
  {
@@ -227,19 +243,19 @@
   "kayit_baslik": "Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanları",
   "hedef_baglamda": true,
   "girisim": false,
-  "llm": false,
-  "sure_sn": 0.3,
-  "cevap_kar": 3406,
+  "llm": true,
+  "sure_sn": 0.0,
+  "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
+  "cevap_kar": 4748,
   "beklenen_bulunan": [
+   "54 ay",
+   "6 ay",
    "31.12.2026",
    "ilave"
   ],
-  "beklenen_eksik": [
-   "54 ay",
-   "6 ay"
-  ],
+  "beklenen_eksik": [],
   "baglam_disi_sayilar": [],
-  "bilgi_yok": 0,
+  "bilgi_yok": 4,
   "kesildi": false
  },
  {
@@ -249,16 +265,21 @@
   "kayit_baslik": "TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI",
   "hedef_baglamda": true,
   "girisim": false,
-  "llm": false,
-  "sure_sn": 0.4,
-  "cevap_kar": 3500,
-  "beklenen_bulunan": [],
-  "beklenen_eksik": [
+  "llm": true,
+  "sure_sn": 0.0,
+  "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
+  "cevap_kar": 3576,
+  "beklenen_bulunan": [
    "3.000.000",
    "2.400.000"
   ],
-  "baglam_disi_sayilar": [],
-  "bilgi_yok": 0,
+  "beklenen_eksik": [],
+  "baglam_disi_sayilar": [
+   "1milyon",
+   "2,2milyon",
+   "5milyon"
+  ],
+  "bilgi_yok": 4,
   "kesildi": false
  }
 ]

@@ -633,9 +633,14 @@ def _tesvik_detay_metni(m: Tesvik) -> str:
         satirlar.append(f"Başvuru süresi/dönemi: {m.basvuru_suresi}")
     if m.destek_verilme_suresi:
         satirlar.append(f"Destek/proje süresi: {m.destek_verilme_suresi}")
-    if m.tutari_hesaplama_formulu:
-        satirlar.append(f"Tutar/oran: {m.tutari_hesaplama_formulu}")
-    elif m.tutari_max:
+    # tesvil_tutari: kaynakla doğrulanmış serbest metin (limit, oran, vade). Denetim 2 / Aşama C
+    # ölçümü (2026-10-07) bu alanın bağlama hiç yazılmadığını gösterdi: Aşama A'da düzeltilen
+    # 80+ kaydın tutarı DB'de doğru olduğu hâlde model "bilgi elimde yok" diyordu.
+    if m.tesvil_tutari:
+        satirlar.append(f"Tutar/oran: {m.tesvil_tutari}")
+    if m.tutari_hesaplama_formulu and m.tutari_hesaplama_formulu != m.tesvil_tutari:
+        satirlar.append(f"Hesaplama: {m.tutari_hesaplama_formulu}")
+    elif not m.tesvil_tutari and not m.tutari_hesaplama_formulu and m.tutari_max:
         satirlar.append(f"Azami tutar: ₺{m.tutari_max:,.0f}")
 
     return "\n".join(satirlar)

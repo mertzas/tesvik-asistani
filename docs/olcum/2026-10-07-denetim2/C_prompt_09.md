@@ -1,0 +1,116 @@
+<<SYSTEM>>
+Sen; Ar-Ge, inovasyon, dijital dönüşüm, ihracat, istihdam, tarım ve yatırım teşvikleri (KOSGEB, TÜBİTAK, Sanayi ve Teknoloji Bakanlığı, Ticaret Bakanlığı, Tarım ve Orman Bakanlığı, KGF vb.) konusunda uzmanlaşmış kıdemli bir Teşvik ve Hibe Danışmanısın. Görevin; kullanıcının şirket yapısını, projesini veya harcama kalemlerini analiz ederek en doğru teşvik programlarıyla eşleştirmek, uygunluk kriterlerini netleştirmek ve başvuru stratejisi oluşturmaktır.
+
+MUTLAK KURAL - UYDURMA YASAK: Sana aşağıda "BAĞLAM" başlığı altında verilen teşvik kayıtları ve kullanıcı profili DIŞINDA hiçbir somut bilgi (telefon numarası, destek oranı, üst limit, tutar, tarih, çağrı dönemi, kurum adı) UYDURMA. Bağlamda olmayan bir bilgiye ihtiyaç varsa "bu bilgi elimde yok, ilgili çağrı rehberinden / kurumun resmi sitesinden teyit edin" de ve varsa bağlamdaki kaynak URL'sini ver. Sayısal bir rakam (telefon, oran, TL tutarı, TRL eşiği, süre) bağlamda geçmiyorsa ASLA kendi bilginden tahmin/icat etme. Genel mevzuat bilgisi (ör. bir platformun adı) kullandığında bunun bağlamdan değil genel bilgiden geldiğini ve teyit edilmesi gerektiğini belirt.
+
+AKTİFLİK KURALI: Bir kaydın yanında "⚠️ DURUM: ARTIK AKTİF DEĞİL" yazıyorsa, bu programı kullanıcıya başvurabileceği bir seçenek gibi SUNMA - varlığından bahsedebilirsin ama açıkça "bu program artık kapalı/geçmiş" de. "DURUM: Doğrulanmış, güncel/aktif program" yazan kayıtları güvenle önerebilirsin. Hiçbir durum notu yoksa (aktiflik hiç kontrol edilmemişse), kullanıcıya "bu programın hâlâ açık olup olmadığını kurumun kendi sayfasından teyit edin" diye açıkça hatırlat.
+
+SİSTEM ÖN DEĞERLENDİRMESİ: Bazı kayıtların altında "SİSTEM ÖN DEĞERLENDİRMESİ" satırı bulunur; bu, Karar metnindeki listelerden (EK-1, EK-3) ve profilden hesaplanmıştır. "UYGUN DEĞİL" ise programı önermeyip gerekçesini (madde numarasıyla) söyle; "ŞARTLI" ve "DÜŞÜK OLASILIK" için şartı açıkça yaz; "BELİRLENEMEDİ" için hangi listenin teyit edilmesi gerektiğini belirt. Bu değerlendirmeyi kendi tahmininle çelişecek biçimde değiştirme. Kaydın altında "DESTEK UNSURLARI" satırı varsa vergi indirimi, sigorta primi, faiz/kâr payı ve makine desteğinin oran/sürelerini ORADAN ve madde numarasıyla ver; TL tutarı yatırım tutarı bilinmeden hesaplama. "SİSTEMİN ELEDİĞİ 9903 PROGRAMLARI" bloğu varsa, kullanıcı yatırım teşviki sorduğunda bu programlara neden başvuramayacağını gerekçe ve madde numarasıyla açıkça söyle; yürürlükten kalkmış eski sistemleri (Genel/Bölgesel Teşvik vb.) seçenek gibi sunma.
+
+NET VE DÜRÜST ELEME: Şirket veya proje bir program için uygun değilse bunu doğrudan, gerekçesiyle söyle; hangi şartı sağlamadığını (NACE/sektör, KOBİ ölçeği, çalışan/ciro sınırı, il/bölge, hedef kitle, teknoloji düzeyi) belirt. Umut tacirliği yapma. Profilde "KOBİ ölçeği" verilmişse onu kullan; "kesin değil" notu varsa bunu söyle.
+
+ÇİFT YÖNLÜ ANALİZ: Her öneri için yalnızca kazancı değil; teminat/kefalet, geri ödeme, bürokrasi ve raporlama yükü, denetim ve geri alma riskini de belirt. Bu riskler bağlamda somut olarak geçmiyorsa genel uyarı olarak ifade et, rakam verme.
+
+Yanıtını şu 5 başlık altında yapılandır (soru tek bir küçük ayrıntıyla ilgiliyse ilgili başlıkları kısa tut, boş başlık doldurmak için bilgi üretme):
+
+### 1. Şirket & Proje Uygunluk Özeti
+NACE/sektör uygunluğu, ölçek (Mikro/Küçük/Orta/Büyük), projenin niteliği (Ar-Ge mi, yatırım mı, operasyonel mi). Profilde olmayanı varsayma; "bilinmiyor" de.
+
+### 2. Eşleşen Teşvik ve Hibe Programları
+Bağlamdaki programlardan uygun olanlar: kurum ve program adı, destek türü (hibe, faiz/kar payı desteği, kefalet, vergi/SGK), oran ve üst limit (SADECE bağlamda geçiyorsa), desteklenen kalemler (bağlamda geçiyorsa). Uygun OLMAYAN ama akla gelebilecek programları gerekçesiyle ayrıca eleyebilirsin.
+
+### 3. Darboğazlar ve Kritik Şartlar
+Reddedilmeye yol açabilecek noktalar; ön koşul kayıtlar, özkaynak, asgari personel gibi şartlar (bağlamdaki başvuru şartlarından); teminat, geri ödeme ve denetim riskleri.
+
+### 4. Adım Adım Yol Haritası
+Başvuru öncesi hazırlık (kayıt sistemleri, e-imza vb.), dokümantasyon ve bütçe, başvuru yeri/kanalı (bağlamdaki kaynak URL ve iletişim bilgileriyle). Değerlendirme süresi bağlamda yoksa tahmin etme.
+
+### 5. Bilgi Eksikliği / Netleştirme
+Eşleştirme için profilde eksik olan en kritik 3-4 bilgiyi soru olarak sor (ör. NACE kodu, çalışan ve ciro, projenin somut çıktısı, şirket türü). Profil yeterliyse bu başlığı tek cümleyle geç.
+
+İletişim tonu: doğrudan, net, operasyonel. Motivasyon cümlesi kurma; mevzuat, bütçe ve süreç odaklı konuş. Kısa maddeler ve kalın vurgular kullan. Emin olmadığın her yerde bunu açıkça belirt ve teyit iste. Türkçe yanıt ver.
+
+<<USER>>
+BAĞLAM:
+TEŞVİK KAYITLARI:
+[KGF] TÜBİTAK Transfer Ödemeleri
+Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/dogrudan-krediler/tubitak-transfer-odemeleri
+Ürün Açıklaması Türkiye’de yerleşik katma değer yaratan gerçek ya da tüzel kişi işletmelerce gerçekleştirilen araştırma ve geliştirmeye dayalı, ürün ve/veya süreçte teknolojik yenilik içeren, sanayide uygulanabilir ve ekonomik değeri olan projelere sahip KOBİ’lerin KGF’nin %100 kefaleti ile TÜBİTAK tarafından yapılan transfer ödemelerinin teminatlandırılması sağlanmaktadır. Ürün Vadesi Kefalet vadesi, firma ile TÜBİTAK arasında imzalanan proje sözleşmesinde belirtilen proje destek bitiş tarihine, TÜBİTAK tarafından öngörülen sürenin ilavesiyle belirlenir. Kefalet İçin Kullanılan Kaynak KGF A.Ş. Özkaynağı İlgili Finans Kuruluşları / Kurum TÜBİTAK Kefalet Limiti İşletme başına toplam kefalet limiti: 1,25 milyon TL veya muadili yabancı para. Azami Kefalet Oranı %100 Ücret ve Komisyon Firma başvurusunun işleme alınabilmesi için; kefalet başvurusuyla birlikte her bir proje için bir defaya mahsus olmak üzere 250 TL başvuru ücretinin KGF’nin ilgili banka hesaplarına yatırılması koşulu aranır. KGF, firma lehine kefaleti sona erinceye kadar kefil olduğu tutar üzerinden firmadan “Kefalet Mektubu”nun düzenlenme tarihi esas alınarak hesaplanacak 6 aylık dönemlerde %0,75 oranında kefalet komisyonu tahsil eder. İlk 6 aylık döneme ait kefalet komisyonu “Transfer Ödemesi Kefalet Mektubu”nun düzenlendiği tarihte firmadan tahsil edilir. Başvuru Koşulları Firmanın; KOBİ niteliklerine sahip olması, KGF’nin kefalet vereceği transfer ödemesine ilişkin projesinin TÜBİTAK tarafından desteklenmeye hak kazanmış olması, Daha önce TÜBİTAK tarafından desteklenen herhangi bir projesinde teminat mektubunun nakde çevrilmemiş olması, İflas, fesih, konkordato, iflasın ertelenmesi sürecinde olmaması, Başvuru sırasında kamu kurum ve kuruluşları ile bankalar veya üçüncü kişiler tarafından icrai takibinin bulunmaması, Başvuru sırasında vadesi geçmiş vergi ve SGK borcunun olmaması. Doğrudan Başvuru İçin; http://www.kgf.com.tr/index.php/tr/tubitak-transfer-odemeleri-icin-kefalet
+DURUM: Doğrulanmış, güncel/aktif program. Başvuru şartları 2026-09-28 tarihinde kurumun kendi sayfasından ('Başvuru Koşulları' bölümü) otomatik çıkarıldı: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/dogrudan-krediler/tubitak-transfer-odemeleri | Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/dogrudan-krediler/tubitak-transfer-odemeleri)
+Başvuru şartları: Firmanın; KOBİ niteliklerine sahip olması; KGF’nin kefalet vereceği transfer ödemesine ilişkin projesinin TÜBİTAK tarafından desteklenmeye hak kazanmış olması; Daha önce TÜBİTAK tarafından desteklenen herhangi bir projesinde teminat mektubunun nakde çevrilmemiş olması; İflas, fesih, konkordato, iflasın ertelenmesi sürecinde olmaması; Başvuru sırasında kamu kurum ve kuruluşları ile bankalar veya üçüncü kişiler tarafından icrai takibinin bulunmaması; Başvuru sırasında vadesi geçmiş vergi ve SGK borcunun olmaması. Doğrudan Başvuru İçin; http://www.kgf.com.tr/index.php/tr/tubitak-transfer-odemeleri-icin-kefalet
+Tutar/oran: İşletme başına toplam kefalet 1,25 Milyon TL (veya muadili döviz); kefalet oranı %100
+
+[KOSGEB] Yapay Zekâ Kredi Programı
+Kaynak: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi
+Programın Amacı Teknoloji ve yenilik odaklı işletmelerin yapay zekâ teknolojilerini iş süreçlerinde etkin şekilde kullanmalarını sağlamak, dijital kapasitelerini ve üretim yetkinliklerini geliştirmek. Nereden Başlamalıyım? Desteklenen Sektörler Nelerdir? (NACE) KOSGEB e-Hizmetler e-Personel Bilgi Edinme
+DURUM: Doğrulanmış, güncel/aktif program. Denetim2 2026-10-07: sayfa canlı (https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi)
+Tutar/oran: Kredi 500.000 – 5.000.000 TL; vade 24 ay (ilk 12 ay ödemesiz); GO Dijital Cüzdan'a blokeli, banka kesin teminat mektubu
+
+[KGF] ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ
+Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-yesil-ihracat-kredisi-destek-paketii
+Ürün açıklaması Asgari C seviyesinde aktif Greendeks skoruna sahip, Net İhracatçı* KOBİ’lerin faaliyetlerinin desteklenmesi amaçlanmaktadır. * Son 3 mali dönemdeki ya da son mali yıldaki ihracatlarının toplamının ithalatlarının toplamına oranı %110 olan firmaları ifade etmektedir. Kefalet için Kullanılan Kaynak KGF Özkaynak İlgili Finans Kuruluşları / Kurum Ziraat Bankası Ürün Vadesi - Azami 6 ay ödemesiz dönem Azami 24 ay vade (ödemesiz dönem dahil) Kefalet Limiti ve Kefalet Oranları Yararlanıcı Kefalet Üst Limiti Kefalet Oranı KOBİ Azami 40 milyon TL %80 Kullanılabilecek Kredi Ürünleri TL İşletme Kredisi Ücret ve Komisyon Oranları Kefalet Başvuru Ücreti: Kredi tutarının %0,1’i (Asgari 10 bin TL) Kefalet Komisyon Oranı: Yıllık %2 Özel Şartlar Krediler ihracat taahhütlü olarak kullandırılacaktır.
+DURUM: Doğrulanmış, güncel/aktif program. Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-yesil-ihracat-kredisi-destek-paketii)
+Tutar/oran: Azami 40 Milyon TL; %80 kefalet; 6 ay ödemesiz, 24 ay vade; komisyon kredinin %0,1'i (asgari 10 bin TL)
+
+[KGF] HALKBANK İLK ADIM KREDİSİ PROJESİ
+Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi
+Ürün açıklaması Kendi işini kurarak girişimciliğe ilk adımını atmış veya atmak isteyen gençlerin finansman ihtiyaçlarının karşılanması amaçlanmaktadır. Kefalet için Kullanılan Kaynak KGF Özkaynak İlgili Finans Kuruluşları / Kurum Halkbank, Ürün Vadesi İşletme kredilerinde azami 6 ay anapara ödemesiz dönem dahil olmak üzere azami 36 ay, Kefalet Limiti ve Kefalet Oranları Yararlanıcı Kefalet Üst Limiti Kefalet Oranı Kredi Üst Limiti Kredi başvuru tarihi itibarıyla, sahibi veya asgari %50 hisse sahibi ortağı azami 29 yaşında olan işletmeler İşletme kredileri için azami 800 bin TL Kredi Veren, program kapsamında talepte bulunacağı her bir yeni kefalet başvurusu veya yapılandırma/yeniden vadelendirme başvurusu için işlem başına kredi tutarlarına göre, 3 Milyon TL tutara kadar krediler için 5.000 TL, 3 Milyon TL ve üzeri için 10.000 TL başvuru ücretini nezdindeki Kurum hesabına yatıracaktır. Herhangi bir sebeple yararlanıcının portföye dahil edilmemesi, kefaletin hükümsüz sayılması, iptal edilmesi ya da yapılandırma işleminden vazgeçilmesi durumunda tahsil edilen başvuru ücreti iade edilmeyecektir. Kredilerin vadesinden önce kapatılmış olması halinde komisyon iadesi yapılmaz Komisyon oranı: Yıllık %2 Özel Şartlar Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz.
+DURUM: Doğrulanmış, güncel/aktif program. Başvuru şartları 2026-09-28 tarihinde kurumun kendi sayfasından ('Özel Şartlar' bölümü) otomatik çıkarıldı: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi | Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi)
+Başvuru şartları: Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz.
+Tutar/oran: İşletme kredisi: kefalet azami 800 bin TL, kredi 1 Milyon TL
+
+[KGF] HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ
+Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-sahis-isletmeleri-destek-kredisi-projesi
+Ürün açıklaması Halkbank Şahıs İşletmeleri Destek Kredisi Projesi ile, kesinleşmiş son yıl cirosu 10 milyon TL’yi aşmayan Esnaf Odası, Ticaret ve Sanayi Odası veya Meslek Odasına kayıtlı şahıs işletmelerinin finansman ihtiyaçlarının karşılanması amaçlanmaktadır. Kefalet için Kullanılan Kaynak KGF Özkaynak İlgili Finans Kuruluşları / Kurum Halk Bankası Ürün Vadesi Azami 6 ay ödemesiz dönem dahil olmak üzere azami 36 ay Kefalet Limiti ve Kefalet Oranları Yararlanıcı Kefalet üst limiti Kefalet oranı · Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır.
+DURUM: Doğrulanmış, güncel/aktif program. Başvuru şartları 2026-09-28 tarihinde kurumun kendi sayfasından ('Özel Şartlar' bölümü) otomatik çıkarıldı: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-sahis-isletmeleri-destek-kredisi-projesi | Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-sahis-isletmeleri-destek-kredisi-projesi)
+Başvuru şartları: Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır.
+Tutar/oran: Kefalet üst limiti 400 bin TL; kefalet başvuru ücreti 7.500 TL; yalnızca TL
+
+[KGF] TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI
+Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi
+Ürün açıklaması Reel sektörün nakit akışı ile ilgili gereksinimlerinin TOBB tarafından belirlenen bölgesel ağırlıklarla tabana yaygın bir biçimde karşılanması amaçlanmaktadır. Azami 6 ay anapara ödemesiz dönem dahil olmak üzere azami 48 ay 1.500.001 TL ve üzeri 7.500 TL Özel Şartlar Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir.
+DURUM: Doğrulanmış, güncel/aktif program. Başvuru şartları 2026-09-28 tarihinde kurumun kendi sayfasından ('Özel Şartlar' bölümü) otomatik çıkarıldı: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi | Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi)
+Başvuru şartları: Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir.
+Tutar/oran: Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
+
+[KGF] KOSGEB Geri Ödemeli Destekleri
+Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/dogrudan-krediler/kosgeb-geri-odemeli-destekleri
+Ürün Açıklaması KOSGEB Destek Programları kapsamında verilen destekler için KOBİ’ler lehine KGF A.Ş. tarafından doğrudan kefalet sağlanmaktadır. Ürün Vadesi Kefalet vadesi konusunda ilgili KOSGEB destek programının vadesi esastır. Kefaletten yararlanma süresi KGF’nin kefalet tahsis tarihinden itibaren 6 aydır. Kefalet İçin Kullanılan Kaynak KGF A.Ş. Özkaynağı İlgili Finans Kuruluşları / Kurum KOSGEB Kefalet Limiti KGF tarafından KOSGEB’e hitaben bir İşletme veya risk grubu lehine verilecek kefalet limiti, Kurul Kararlarında belirtilen destek tutarlarının toplamını geçmemek üzere azami 3.000.000 (üçmilyon)Türk Lirasıdır. Bu tutarın üstünde kefalet limiti gerektirecek destek uygulamalarında KGF Yönetim Kurulu onayı ile kefalet limiti 5.000.000 (beşmilyon) Türk Lirasına yükseltilebilecektir. Limitin hesaplanmasında, işletmenin KGF öz kaynaklarından kullandığı mevcut kefalet riskleri de dâhil edilecektir. Ancak işletme lehine KGF tarafından Hazine desteklerinden verilen kefalet riskleri limite dâhil edilmez. Azami Kefalet Oranı %100 Ücret ve Komisyon KGF, KOSGEB tarafından “Kefalet Mektubu” iade edilinceye kadar işletmeden senelik periyodlarda peşin kefalet komisyonu tahsil eder. Kefalet komisyonu, kefalet mektubunda belirtilen tutar üzerinden veya KOSGEB tarafından kefalet tutarında düşüm yapıldığı yazılı olarak KGF’ye bildirildiği takdirde, bakiye tutar üzerinden hesaplanır. Tahsil edilecek kefalet komisyonu oranı yıllık % 1,5 (yüzde bir buçuk)’dan fazla olamaz. Peşin ödenen komisyon tutarında, vade içinde kefalet mektubunun iadesi/kefalet tutarında kısmi düşüm / tazmin olması vb. her ne sebep ve suretle olursa olsun indirim/ iade yapılmaz. Ayrıca KGF, bir kereye mahsus olmak üzere başvuru esnasında işletmeden, kefalet tutarı 1.000.000 (birmilyon)-TL’ye kadar olan başvurular için 500 (beşyüz)TL, 1.000.000 (birmilyon) ile 3.000.000 (üçmilyon) TL arasındaki başvurular için ise 1.500 (binbeşyüz) TL, 3.000.000 (üçmilyon) ile 5.000.000 (beşmilyon) TL arasındaki başvurular için ise 3.000 (üçbin) TL inceleme ücreti alır. Başvuru Koşulları Firmanın KOSGEB’den destek ödemesi almaya hak kazanan işletmelerden biri olması. Doğrudan Başvuru İçin; http://www.kgf.com.tr/index.php/tr/kosgeb-geri-odemeli-destekleri-icin-kefalet
+DURUM: Doğrulanmış, güncel/aktif program. KGF resmi ürün sayfasından doğrulandı (2026-07-12). | Denetim2-T2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/dogrudan-krediler/kosgeb-geri-odemeli-destekleri)
+Başvuru şartları: KOSGEB tarafından onaylanmış bir destek ödemesi almaya hak kazanmış KOBİ olmak
+Gerekli belgeler: KOSGEB destek onay yazısı
+Başvuru yeri: Doğrudan KGF'nin kendi web sitesi üzerinden
+Başvuru süresi/dönemi: Sürekli
+Destek/proje süresi: KGF kefalet tahsis tarihinden itibaren 6 ay
+Tutar/oran: Kefalet oranı %100; vade ilgili KOSGEB geri ödemeli destek programına göre
+Hesaplama: İşletme/risk grubu başına standart limit 3.000.000 TL, KGF Yönetim Kurulu onayıyla 5.000.000 TL'ye kadar çıkabilir. Kefalet oranı %100. İnceleme ücreti: 1M TL'ye kadar 500 TL, 1-3M TL arası 1.500 TL, 3-5M TL arası 3.000 TL. Yıllık azami komisyon %1,5.
+
+[KGF] GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI
+Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/girisimci-destek-programi-kredi-faiz-programi
+Ürün açıklaması Girişimci Destek Programı Kredi Faiz Programı kapsamında, Girişimci Destek Programı İş Geliştirme Desteği başvurusu yapanlar arasından KOSGEB tarafından uygun bulunan girişimcilere işletme sermayesi olarak kullandırılacak krediler için kefalet limiti tahsis edilmiştir. Kefalet için Kullanılan Kaynak KOSGEB İlgili Finans Kuruluşları / Kurum Vakıfbank, Halkbank, Ziraat Bankası Ürün Vadesi Azami 36 ay, 3’er aylık dönemler için eşit ödemeli krediler : 31.12.2028
+DURUM: Doğrulanmış, güncel/aktif program. Başvuru şartları 2026-09-28 tarihinde kurumun kendi sayfasından ('Özel Şartlar' bölümü) otomatik çıkarıldı: https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/girisimci-destek-programi-kredi-faiz-programi | Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/girisimci-destek-programi-kredi-faiz-programi)
+Başvuru şartları: ı Yararlanıcı/ Risk Grubu Kefalet Oranı Kefalet Üst Limiti KOBİ 90% 1.000.000 TL Kullanılabilecek Kredi Ürünleri Nakit Kredi Ücret ve Komisyon Oranları Yıllık %1,5 Kefalet Başvuru Ücreti: 8.500 TL Kredi Son Kullandırım Tarihi : 31.12.2028
+Tutar/oran: Kefalet %90; 1.000.000 TL; yıllık %1,5 komisyon; başvuru ücreti 8.500 TL
+
+DOĞRULANMIŞ KURUM İLETİŞİM BİLGİLERİ (bu numaraları/adresleri kullanabilirsin, kaynağı gösterilmiştir):
+- KGF (Kredi Garanti Fonu A.Ş.): Çağrı merkezi 444 7 543, Genel merkez 0 312 204 00 00, Adres: Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara. (Doğrulama kaynağı: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim, doğrulama tarihi: 2026-07-12)
+- KOSGEB (Küçük ve Orta Ölçekli İşletmeleri Geliştirme ve Destekleme İdaresi Başkanlığı): Çağrı merkezi 444 1 567, Genel merkez 0 312 595 28 00, Adres: Hacı Bayram Mah. İstanbul Cad. No: 32 06050 Ulus / Altındağ / Ankara. (Doğrulama kaynağı: https://www.kosgeb.gov.tr/site/tr/genel/iletisim, doğrulama tarihi: 2026-07-12)
+
+KULLANICININ İLİNE ÖZEL TARIM İLETİŞİMİ: İstanbul Tarım ve Orman İl Müdürlüğü: Telefon 0 216 468 21 00, Adres: Bağdat Caddesi No: 307-309 Erenköy-Kadıköy/İSTANBUL. (Doğrulama kaynağı: https://istanbul.tarimorman.gov.tr/Iletisim, doğrulama tarihi: 2026-07-12)
+
+KULLANICININ İLİNE ÖZEL KOSGEB MÜDÜRLÜĞÜ: KOSGEB İstanbul İkitelli Müdürlüğü: Telefon 0 (212) 405 41 50, Adres: İkitelli Organize Sanayi Bölgesi ESKOOP Sanayi Sitesi P.K.:34306 İkitelli/İSTANBUL. (Doğrulama kaynağı: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=34, doğrulama tarihi: 2026-07-12)
+Ayrıca: KOSGEB İstanbul İMES Müdürlüğü: Telefon 0 (216) 528 02 40, Adres: İMES Sanayi Sitesi 308.Sok. C Blok No:46 Y.Dudullu P.K:81230 İSTANBUL
+
+KULLANICI PROFİLİ:
+- sektör: arge
+- bölge: İstanbul
+- çalışan sayısı: 12
+- yıllık ciro: 20000000.0
+- hedefler: ['ihracat', 'arge', 'finansman']
+- NACE kodu: 62.01
+- şirket türü: limited
+- TRL (teknoloji hazırlık seviyesi): 8
+- KOBİ ölçeği: küçük işletme [KOBİ Yönetmeliği, 7 Ağustos 2025 eşiklerine göre hesaplandı]
+- yatırım teşvik bölgesi (9903 sayılı Karar EK-2): 1. bölge
+
+KULLANICI SORUSU: KOSGEB Yapay Zekâ Kredisi ne kadar, vadesi ve ödemesiz dönemi nedir?

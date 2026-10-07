@@ -4,35 +4,36 @@
 
 **Bağlam:** 162 E-İhracat Destekleri (5986 Sayılı K, 163 Pazara Girişte Dijital Faaliyetleri, 178 Yerel Kalkınma Hamlesi Programı (99, 7 İstihdamı Koruma Destek Programı, 5 YÖNDE - Yönderlik ve Değerlendirme , 170 GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİ, 186 İşsizlik Ödeneği Alanların İstihdam, 172 DİJİTAL KEFALET DESTEK PROGRAMI
 
-**Ölçüm:** {"n": 8, "kayit": 163, "kayit_baslik": "Pazara Girişte Dijital Faaliyetlerin Desteklenmesi", "hedef_baglamda": true, "girisim": false, "llm": false, "sure_sn": 0.4, "cevap_kar": 3159, "beklenen_bulunan": [], "beklenen_eksik": ["5973", "2573", "mülga"], "baglam_disi_sayilar": [], "bilgi_yok": 0, "kesildi": false}
+**Ölçüm:** {"n": 8, "kayit": 163, "kayit_baslik": "Pazara Girişte Dijital Faaliyetlerin Desteklenmesi", "hedef_baglamda": true, "girisim": false, "llm": true, "sure_sn": 0.0, "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)", "cevap_kar": 3299, "beklenen_bulunan": ["5973", "2573", "mülga"], "beklenen_eksik": [], "baglam_disi_sayilar": ["4milyon"], "bilgi_yok": 6, "kesildi": false}
 
 ---
 
-Sorunuzla ilgili 8 destek/teşvik programı buldum:
+### 1. Şirket & Proje Uygunluk Özeti
+- **Ölçek:** Mikro işletme (3 çalışan, 4 milyon TL ciro; KOBİ Yönetmeliği 7 Ağustos 2025 eşikleri). Şirket türü limited.
+- **Sektör:** E-ticaret, NACE 47.91, Trabzon (9903 EK-2'ye göre 3. bölge). Hedefiniz ihracat.
+- Sorunuz tek bir ayrıntıyla ilgili (limit ve geçerli Karar), diğer başlıkları kısa tutuyorum.
 
-1. [Ticaret Bakanlığı] E-İhracat Destekleri (5986 Sayılı Karar)
-   Şirketlerin, e-ihracat konsorsiyumlarının, perakende e-ticaret sitelerinin ve pazaryerlerinin yurt dışı pazaryerlerinde komisyon, reklam/tanıtım, depolama, sipariş karşılama, entegrasyon ve pazara giriş raporu…
-   Kaynak: https://ticaret.gov.tr/destekler/e-ihracat-destekleri
-2. [Ticaret Bakanlığı] Pazara Girişte Dijital Faaliyetlerin Desteklenmesi
-   E-ticaret sitelerine bireysel üyelik, sanal ticaret heyetleri, sanal fuarlara katılım ve sanal yurt dışı pazarlama faaliyetlerinin desteklendiği program.
-   Kaynak: https://ticaret.gov.tr/destekler/ihracat-destekleri/pazara-giriste-dijital-faaliyetlerin-desteklenmesi
-3. [Sanayi ve Teknoloji Bakanlığı] Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)
-   Türkiye Yüzyılı Kalkınma Hamlesi kapsamında, illerin kendi potansiyeline dayalı yatırımları desteklemeye yönelik program.
-   Kaynak: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#yerel-kalkinma-hamlesi
-4. [KOSGEB] İstihdamı Koruma Destek Programı
-   İstihdamı Koruma Destek Programı Teknoloji Merkezi Destek Programı Sektörel Gelişim Merkezi (SEGEM) Destek Programı Yapay Zekâ Kredi Programı Diğer Destekler KOBİ Nereden Başlamalıyım? İşletme Beyanı İşlemleri…
-   Kaynak: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi
-5. [KOSGEB] YÖNDE - Yönderlik ve Değerlendirme Destek Programı
-   YÖNDE - Yönderlik ve Değerlendirme Destek Programı İstihdamı Koruma Destek Programı Teknoloji Merkezi Destek Programı Sektörel Gelişim Merkezi (SEGEM) Destek Programı Yapay Zekâ Kredi Programı Diğer Destekler KOBİ…
-   Kaynak: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9165/yonde-yonderlik-ve-degerlendirme-destek-programi
-6. [KGF] GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI
-   GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI Ürün açıklaması Girişimci Destek Programı Kredi Faiz Programı kapsamında, Girişimci Destek Programı İş Geliştirme Desteği başvurusu yapanlar arasından KOSGEB tarafından…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/girisimci-destek-programi-kredi-faiz-programi
-7. [SGK / İŞKUR] İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5)
-   İşsizlik ödeneği almakta olan kişileri işe alan işverenlere yönelik, İşsizlik Sigortası Fonu'ndan finanse edilen prim desteği; uygulayıcı kurum SGK. Süre ve oran ayrıntıları SGK genelgesinde.
-   Kaynak: https://www.iskur.gov.tr/isveren/tesvikler/issizlik-odenegi-alanlara-yonelik-tesvik/
-8. [KGF] DİJİTAL KEFALET DESTEK PROGRAMI
-   DİJİTAL KEFALET DESTEK PROGRAMI Ürün açıklaması KGF Dijital Kefalet Destek Programı ile, Kredi Verenlerce dijital kanallardan tahsis yöntemiyle yararlanıcılara kullandırılacak krediler için kefalet desteği sağlanması…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/dijital-kefalet-destek-programi
+### 2. Eşleşen Teşvik ve Hibe Programları
+**Ticaret Bakanlığı – Pazara Girişte Dijital Faaliyetlerin Desteklenmesi**
+- **Hangi Karar geçerli:** Kayıttaki doğrulama notuna göre **2573 sayılı Karar mülga** (18.08.2022); **yürürlükte olan 5973 sayılı Karardır.** Kaynak: https://ticaret.gov.tr/destekler/ihracat-destekleri/pazara-giriste-dijital-faaliyetlerin-desteklenmesi
+- **Oran (kayıttan):** Bakanlık tarafından onaylanan e-ticaret sitelerine (pazaryerlerine) bireysel üyelik giderleri **%60** oranında destekleniyor.
+- **"Hâlâ yıllık 15.102 TL mi?" sorusunun cevabı: Bunu doğrulayamıyorum, bu rakama güvenmeyin.** Kaydın güncel tutar alanı, 5973 sayılı Karar kapsamında üyelik oranı ve limitinin Bakanlık Genelgesi ile yıllık "Destek Üst Limitleri" belgesinden teyit edilmesi gerektiğini ve **"15.102 TL ifadesinin 2022 yılına ait olduğunu"** söylüyor. Kaydın eski metin alanında bu rakam "2026-07-12'de teyit edildi, yıllık güncellenebilir" diye geçiyor; iki ifade çelişiyor ve ben **güncel limiti bağlamdan veremem.** Güncel TL limitini Bakanlığın sayfasından ve genelge eklerinden kontrol edin; dekont tarihinizdeki limit geçerli olur.
+- **Diğer kalemler:** Sanal ticaret heyetleri, sanal fuarlar ve sanal pazarlama için ayrı oran ve limitler var, kayıtta detay yok.
+- **Başvuru:** Üyelik dekontu, destek başvuru formu ve taahhütname; yer: İhracatçı Birlikleri Genel Sekreterliği / Ticaret Bakanlığı. Başvuru dekont tarihine göre sürekli.
 
-Not: Bu cevap veritabanındaki kayıtlardan otomatik oluşturuldu, kesin başvuru şartları için ilgili kurumun sayfasını kontrol edin.
+**Ayrı bir program: E-İhracat Destekleri (5986 sayılı Karar).** Pazaryeri komisyon giderleri, entegrasyon, yurt dışı depo gibi 7 kalemi kapsıyor; standart oran %50 (hedef ülkelerde %70'e kadar). Üyelik gideri bu programın değil, yukarıdaki programın konusu. Bu kayıt, **bir ihracatçı birliğine üye olmayı zorunlu ön şart** koşuyor. Yıllık üst limit TL tutarları kayıtta yok, Bakanlığın "Üst Limitler" tablosundan teyit edin.
+
+### 3. Darboğazlar ve Kritik Şartlar
+- Pazaryerinin **Bakanlık tarafından onaylı** olması gerekiyor; kullandığınız pazaryerinin onaylı listede olup olmadığını teyit edin.
+- Üyelik gideri **dekontla** belgelenmeli. İhracatçı birliği üyeliği e-ihracat programı için zorunlu; bu kalem için kayıtta açık yazmıyor, teyit edin.
+- Destek geri ödemesizdir ama harcama ve belge sonrası ödenir; denetim ve belge saklama yükü olur (genel uyarı).
+
+### 4. Adım Adım Yol Haritası
+1. Pazaryerinizin onaylı listede olduğunu ve güncel limiti ticaret.gov.tr sayfasından kontrol edin.
+2. Üyelik dekontunu, başvuru formunu ve taahhütnameyi hazırlayın.
+3. İhracatçı birliğinize başvurun. Bakanlık çağrı merkezi: 444 8 482, genel merkez 0 312 204 75 00 (doğrulama: 2026-07-12, kaynak: https://ticaret.gov.tr/iletisim). Değerlendirme süresi bağlamda yok, tahmin etmiyorum.
+
+### 5. Bilgi Eksikliği / Netleştirme
+- Hangi pazaryerine üyesiniz ve dekont tarihi nedir?
+- Bir ihracatçı birliğine üye misiniz?
+- Yurt dışına satışta hangi hedef ülkeler var? (E-ihracat desteğinde %70 oranı hedef ülkeye bağlı.)

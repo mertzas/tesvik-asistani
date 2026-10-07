@@ -4,35 +4,46 @@
 
 **Bağlam:** 90 YATIRIM-İŞLETME DESTEK PAKETİ, 81 KAPASİTE GELİŞTİRME DESTEK PAKETİ, 8 Kapasite Geliştirme Destek Programı, 180 Hedef Yatırımlar Teşvik Sistemi (99, 170 GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİ, 91 TKYB KREDİ DESTEK PAKETİ, 107 KÜRESEL REKABETÇİLİK DESTEK PAKETİ, 168 ZİRAAT BANKASI YEŞİL İHRACAT KREDİS
 
-**Ölçüm:** {"n": 7, "kayit": 180, "kayit_baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar", "hedef_baglamda": true, "girisim": false, "llm": false, "sure_sn": 0.4, "cevap_kar": 3386, "beklenen_bulunan": [], "beklenen_eksik": ["12 yıl", "%100", "6.000.000", "MADDE 18"], "baglam_disi_sayilar": [], "bilgi_yok": 0, "kesildi": false}
+**Ölçüm:** {"n": 7, "kayit": 180, "kayit_baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar", "hedef_baglamda": true, "girisim": false, "llm": true, "sure_sn": 0.0, "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)", "cevap_kar": 4220, "beklenen_bulunan": ["12 yıl", "%100", "6.000.000", "MADDE 18"], "beklenen_eksik": [], "baglam_disi_sayilar": ["30milyon"], "bilgi_yok": 4, "kesildi": false}
 
 ---
 
-Sorunuzla ilgili 8 destek/teşvik programı buldum:
+### 1. Şirket & Proje Uygunluk Özeti
+- **Ölçek:** Küçük işletme (25 çalışan, 30 milyon TL ciro; KOBİ Yönetmeliği 7 Ağustos 2025 eşikleri). Şirket türü anonim.
+- **Sektör:** Hizmet, NACE 55.10 (oteller). Yatırım teşvik bölgesi: **6. bölge** (9903 sayılı Karar EK-2, Van).
+- **Proje niteliği:** Yatırım (otel). Oda sayısı, yatırım tutarı ve yatırımın yeni mi genişletme mi olduğu bilinmiyor.
 
-1. [KGF] YATIRIM-İŞLETME DESTEK PAKETİ
-   YATIRIM-İŞLETME DESTEK PAKETİ Ürün Açıklaması İmalatçı KOBİ’lerin yatırım ve işletme harcamalarına yönelik finansman desteği sağlanması amaçlanmaktadır. Kefalet için Kullanılan Kaynak Hazine Fonu İlgili Finans…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi
-2. [KGF] KAPASİTE GELİŞTİRME DESTEK PAKETİ
-   KAPASİTE GELİŞTİRME DESTEK PAKETİ Ürün Açıklaması KOSGEB tarafından desteklenmesi uygun bulunan KOBİ’lerin verimliliğini, dayanıklılığını, üretimini, pazar büyüklüğünü ve kurumsal kapasitesini artırmaya yönelik ölçek…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/kapasite-gelistirme-destek-paketi
-3. [KOSGEB] Kapasite Geliştirme Destek Programı
-   Kapasite Geliştirme Destek Programı Küresel Rekabetçilik Destek Programı KOBİ Dijital Dönüşüm Destek Programı YÖNDE - Yönderlik ve Değerlendirme Destek Programı İstihdamı Koruma Destek Programı Teknoloji Merkezi Destek…
-   Kaynak: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9200/kapasite-gelistirme-destek-programi
-4. [Sanayi ve Teknoloji Bakanlığı] Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)
-   Sektörel Teşvik Sistemi kapsamında, Karar'ın EK-3 listesinde yer alan yatırım konularına yönelik teşvik belgesi sistemi. Başvurular NACE kodu üzerinden bu listeyle eşleştirilir.
-   Kaynak: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#hedef-yatirimlar
-5. [KGF] GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI
-   GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI Ürün açıklaması Girişimci Destek Programı Kredi Faiz Programı kapsamında, Girişimci Destek Programı İş Geliştirme Desteği başvurusu yapanlar arasından KOSGEB tarafından…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/girisimci-destek-programi-kredi-faiz-programi
-6. [KGF] TKYB KREDİ DESTEK PAKETİ
-   TKYB KREDİ DESTEK PAKETİ Ürün Açıklaması İşletmelere sektör ayrımı gözetmeksizin Türkiye Kalkınma ve Yatırım Bankası aracılığıyla KGF kefaletli kredi desteği sağlanması hedeflenmektedir. Kefalet İçin Kullanılan Kaynak…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi
-7. [KGF] KÜRESEL REKABETÇİLİK DESTEK PAKETİ
-   KÜRESEL REKABETÇİLİK DESTEK PAKETİ Ürün Açıklaması Küresel Rekabetçilik Destek Programı kapsamında KOSGEB tarafından desteklenmesi uygun bulunan KOBİ’lerin küresel rekabet ortamında daha dayanıklı olmalarını ve rekabet…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/kuresel-rekabetcilik-destek-paketi
-8. [KGF] ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ
-   ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ Ürün açıklaması Asgari C seviyesinde aktif Greendeks skoruna sahip, Net İhracatçı* KOBİ’lerin faaliyetlerinin desteklenmesi amaçlanmaktadır. * Son 3 mali dönemdeki ya…
-   Kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-yesil-ihracat-kredisi-destek-paketii
+### 2. Eşleşen Teşvik ve Hibe Programları
+**Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)** için sistem ön değerlendirmesi **ŞARTLI**: NACE 55.10, EK-3'te "55.1 Oteller ve benzeri konaklama yerleri 50 oda ve üzeri (Otel, …)" kalemine giriyor; şart: Konaklama Tesisi desteklenir (MADDE 5/1, 10). Yani **50 oda ve üzeri** olmanız gerekiyor gibi görünüyor; kalemin tam metnini EK-3'ten teyit edin.
 
-Not: Bu cevap veritabanındaki kayıtlardan otomatik oluşturuldu, kesin başvuru şartları için ilgili kurumun sayfasını kontrol edin.
+Sorularınızın cevabı (DESTEK UNSURLARI satırından, 6. bölge için):
+- **SGK işveren hissesi desteği:** **%100, 12 yıl** (MADDE 18, 6. bölge).
+- **SGK işçi hissesi:** Asgari ücrete tekabül eden kısım için **10 yıl** (MADDE 19, 6. bölge).
+- **Faiz/kâr payı desteği: Evet, var.** Bu programda faiz desteği yalnızca 4., 5. ve 6. bölgelerde veriliyor (MADDE 15/1-c); Van 6. bölgede olduğu için kapsama giriyor. Oran: repo oranının %25'i, azami 12,5 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı için, azami 5 yıl (MADDE 15).
+- **Asgari sabit yatırım tutarı:** **6.000.000 TL** (MADDE 5, EK-3'te ayrıca belirtilmemişse). Otel kalemi için EK-3'te ayrı bir tutar yazıp yazmadığını teyit edin.
+- **Vergi indirimi:** Yatırıma katkı oranı %20, vergi %60 indirimli uygulanır (MADDE 20).
+- **Makine desteği:** Bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1).
+- **Başvuru son tarihi:** 31/12/2030 (MADDE 5/5). Başvuru E-TUYS üzerinden yapılır (MADDE 5/12).
+
+**Eleme:** Teknoloji Hamlesi (EK-1 teknoloji sınıfında değil) ve Stratejik Hamle (asgari 100/200 milyon TL, ithalat ölçütleri) için DÜŞÜK OLASILIK. 2012/3305 sistemleri (Genel/Bölgesel Teşvik vb.) yürürlükten kalktı, seçenek değil.
+
+**KGF Yatırım-İşletme Destek Paketi** bağlamda "imalatçı KOBİ'lere" yönelik olarak anılıyor; otel hizmet sektörüdür, uygunluğunu KGF'den teyit edin. Bağlamda arsa-bina yatırımına tek başına kefalet verilmediği yazıyor; otel yatırımınız arsa/bina ağırlıklıysa bu bir darboğazdır.
+
+### 3. Darboğazlar ve Kritik Şartlar
+- **Oda sayısı:** EK-3 kalemi 50 oda ve üzerini işaret ediyor. Planlanan oda sayınız bilinmiyor.
+- **Başvurudan önce harcama yapmayın:** Teşvik belgesi müracaat tarihinden önce yapılmış yatırım harcamaları belge kapsamına alınmaz (MADDE 5/6).
+- **Proje değerlendirmesi:** Proje, makroekonomik programlar ve arz-talep dengesi dikkate alınarak yapılacak sektörel, mali ve teknik değerlendirme sonucunda uygun görülmelidir (MADDE 5/4). Belge düzenlenmesi garanti değildir.
+- **Faiz desteği ve kredi:** Faiz desteği bir kredi kullanmayı gerektirir; kredi teminat ve geri ödeme yükü getirir (genel uyarı). Teşvik belgesi uygulamasında denetim ve şartların sağlanamaması halinde desteğin geri alınması riski vardır (genel uyarı, bağlamda rakam yok).
+- **Ekosistem planı:** Bağlamda yazan %2 ekosistem geliştirme planı şartı KOBİ olmayanlar için geçerli; siz KOBİ'siniz, bu şart sizi bağlamıyor görünüyor.
+
+### 4. Adım Adım Yol Haritası
+1. EK-3'ten 55.1 kaleminin tam metnini ve oda şartını okuyun. Kaynak: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#hedef-yatirimlar
+2. Harcamaya başlamadan önce E-TUYS üzerinden başvuru hazırlığı yapın (Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü).
+3. Yatırım tutarını netleştirin; destek tutarını ancak yatırım tutarı bilindiğinde hesaplayabilirim, bağlamda TL tutarı yok.
+4. Yerel destek için KOSGEB Van Müdürlüğü: 0 (432) 486 55 10 (doğrulama: 2026-07-12, kaynak: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=65). Değerlendirme süresi bağlamda yok, tahmin etmiyorum.
+
+### 5. Bilgi Eksikliği / Netleştirme
+- Otelinizin oda sayısı kaç?
+- Planlanan toplam sabit yatırım tutarı nedir ve ne kadarı arsa/bina, ne kadarı makine ve ekipman?
+- Yeni yatırım mı, mevcut tesisin genişletilmesi mi?
+- Yatırım için harcama veya sipariş verdiniz mi? (MADDE 5/6 açısından kritik.)

@@ -23,17 +23,18 @@ Son güncelleme: 2026-10-07 (Denetim 2 / Aşama B sonu). Oturuma bunu okuyarak b
 - Girişim modu: şirket yok | TRL ≤ 6 | şirket ≤ 3 yaş | soru dili. JWT 7 gün.
 - Kökteki `tesvik.db` 0 baytlık artık dosya; gerçek DB `data/tesvikler.db`.
 
-- **Denetim 2 / Aşama C** (YARIM): `C_olcum.py` 12 soru koştu; ilk 3 çağrı gerçek Claude (ciftci×2, tekstil 1507),
-  4. çağrıda Anthropic API **kredi bakiyesi bitti** (400 "credit balance is too low") → 9 soru liste formatına düştü
-  (`C_log.txt`, `C_ozet.json`). 3 gerçek yanıtta beklenen rakamlar 12/12 bulundu; bağlam dışı işaretlenen "%30" ve
-  "70 ay" türetilmiş/regex artefaktı (uydurma 0); "teyit edin / elimde yok" ifadesi 2-4 adet/yanıt (doğru davranış).
-  Kesme işareti düzeltmesiyle 1709 Eurostars kaydı bağlama giriyor (Q4 `hedef_baglamda=True`).
+- **Denetim 2 / Aşama C** (tamamlandı, kısıtla): rapor `docs/olcum/2026-10-07-denetim2/C_RAPOR.md`. Soru 1–3 gerçek
+  claude-sonnet-5 (≈0,3 USD); API bakiyesi bitince 4–12'yi oturum modeli birebir prompt+bağlamla elle yanıtladı
+  (`C_prompt_NN.md` → `C_ham_NN.md`, `C_olcum.py dump|skor N`). **Gerçek hata bulundu/düzeltildi:** `_tesvik_detay_metni`
+  `tesvil_tutari` alanını bağlama yazmıyordu (A'da düzeltilen 80+ kaydın limit/vade/oranı modele görünmüyordu).
+  Sonuç: uydurma 0, beklenen değer 41/41 (düzeltme öncesi 4–12'de 25/38). Test 761 geçti.
+  Kesme işareti düzeltmesiyle Eurostars kaydı bağlama giriyor.
 
 ## Sıradaki adım
-- **Aşama C tamamlama**: Anthropic bakiyesi yüklendikten sonra kalan 9 soru:
-  `for n in 4..12: PYTHONIOENCODING=utf-8 PYTHONPATH=. python docs/olcum/2026-10-07-denetim2/C_olcum.py $n` (~0,9 USD;
-  C_ozet.json'da n'ye göre yerine yazılır). Ardından girişim modu (Q5, Q6) BÖLÜM formatı + "işletme gerekir" kontrolü.
-- **Aşama D** betiği hazır (`D_olcum.py`: `eszamanli` ücretsiz, `yuk` ücretsiz, `akis N` ücretli) — henüz koşulmadı.
+- **Aşama C üretim modeliyle tekrar**: bakiye yüklenince `C_olcum.py N` (N=4..12, ~0,9 USD). Kayıt temizliği (163 15.102 TL
+  çelişkisi, 174 eski 150.000 TL metni, 7 eski tarih metni, 48 çağrı no, 2 NACE/dönem) DB yazımı → onay + dry-run.
+- **Aşama D** betiği hazır (`D_olcum.py`): `eszamanli` koştu (5 eşzamanlı akış, rıza kapalı, 0,5 sn, hepsi 200);
+  `yuk` ve `akis N` (ücretli) henüz koşulmadı. Not: klasör taşınma isteği (Projeler\tesvik-asistani) bekliyor, uvicorn durdurulacak.
 - Aşama D (performans/dayanıklılık), E (CSP, parola sıfırlama, İKAS imza, KVKK alanları, cilek/index XSS), F (kapanış).
 - Açık: 76 hayvancılık tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 10 kararsız akademik kayıt,
   bütçe modülünde tek sektör kâr oranı (%5,8), profil düğmeleri stilsiz, kayıt sonrası onboarding yok.

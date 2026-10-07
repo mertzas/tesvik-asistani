@@ -18,6 +18,17 @@ import sys
 _KURULDU = False
 
 
+def hatasiz_akis(akis):
+    """Konsolun kodlamasında olmayan karakterler (Windows cp1254'te emoji) günlüğü düşürmesin: kodlama aynı
+    kalır, yalnızca hata davranışı 'backslashreplace' olur (✅ -> \\u2705). 2026-10-08: zamanlayıcının açılış
+    mesajı her açılışta UnicodeEncodeError yığını basıyordu."""
+    try:
+        akis.reconfigure(errors="backslashreplace")
+    except (AttributeError, ValueError):  # reconfigure'ı olmayan akış (ör. test yakalayıcısı)
+        pass
+    return akis
+
+
 def kur(seviye: str | None = None) -> None:
     """Kok logger'i yapilandirir. Birden fazla cagrilirsa ilkinden sonrasi
     yok sayilir (uvicorn --reload ile iki kez cagrilabiliyor)."""
@@ -27,7 +38,7 @@ def kur(seviye: str | None = None) -> None:
 
     seviye = (seviye or os.getenv("LOG_LEVEL", "INFO")).upper()
 
-    handler = logging.StreamHandler(sys.stdout)
+    handler = logging.StreamHandler(hatasiz_akis(sys.stdout))
     handler.setFormatter(logging.Formatter(
         fmt="%(asctime)s %(levelname)-8s %(name)s | %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S",

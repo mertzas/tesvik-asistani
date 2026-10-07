@@ -62,6 +62,11 @@ class Settings(BaseSettings):
     SMTP_PORT: int = int(os.getenv("SMTP_PORT", "587") or 587)
     SMTP_USER: str = os.getenv("SMTP_USER", "")
     SMTP_PASSWORD: str = os.getenv("SMTP_PASSWORD", "")
+    # Doğrulama zorunlu kayıt (SMTP kurulunca açılır). Açıkken: kayıt yanıtı hesap var/yok fark etmeksizin
+    # aynıdır (e-posta numaralandırma yok), kayıt belirteç vermez, doğrulanmamış hesap giriş yapamaz ve
+    # etkinleştirme bağlantı + parola ister (hesabın önceden ele geçirilmesine karşı). Kapalıyken eski akış:
+    # kayıt hemen oturum açar, var olan e-postaya 400 döner.
+    KAYIT_EPOSTA_DOGRULAMA_ZORUNLU: bool = os.getenv("KAYIT_EPOSTA_DOGRULAMA_ZORUNLU", "false").lower() == "true"
     ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
     CLAUDE_MODEL: str = os.getenv("CLAUDE_MODEL", "claude-sonnet-5")
 

@@ -203,16 +203,37 @@ def on_shutdown():
 
 # ============ AUTH ENDPOINTS ============
 
+# Kayıtlı olmayan adreste de bir bcrypt karşılaştırması yapılır: yanıt süresi hesabın varlığını sızdırmasın.
+_SAHTE_PAROLA_OZETI = hash_password("zamanlama-esitleme-icin-kullanilmayan-parola")
+KAYIT_YANITI = {"mesaj": "Kaydınızı tamamlamak için e-posta adresinize gönderdiğimiz bağlantıya tıklayın. "
+                         "Birkaç dakika içinde gelmezse spam klasörünü kontrol edin."}
+EPOSTA_BASINA_KAYIT_BILDIRIMI = 3  # saatte; "bu adresle hesabınız var" postası bombardımana dönmesin
+
+
 @app.post("/api/auth/signup", response_model=TokenResponse,
+          responses={202: {"description": "Doğrulama zorunlu kayıt: hesap var/yok fark etmeksizin aynı yanıt"}},
           dependencies=[Depends(ip_hiz_siniri(10, ad="signup"))])
 def signup(request: UserSignup, arka_plan: BackgroundTasks, db: Session = Depends(get_db)):
-    """Yeni hesap oluştur. E-posta doğrulama bağlantısı arka planda gönderilir (SMTP yoksa atlanır)."""
-    # Email benzersiz mi kontrol et
-    if db.query(User).filter(User.email == request.email).first():
-        raise HTTPException(
-            status_code=status.HTTP_400_BAD_REQUEST,
-            detail="Bu email zaten kullanımda"
-        )
+    """Yeni hesap oluştur. E-posta doğrulama bağlantısı arka planda gönderilir (SMTP yoksa atlanır).
+
+    KAYIT_EPOSTA_DOGRULAMA_ZORUNLU açıkken yanıt her durumda 202 + KAYIT_YANITI'dır ve belirteç içermez:
+    adres kayıtlıysa hesaba dokunulmaz, sahibine bildirim postası gider. Kapalıyken kayıt hemen oturum açar
+    (bu durumda var olan adrese 400 dönmek kaçınılmazdır; numaralandırmaya karşı tek koruma IP hız sınırı)."""
+    zorunlu = settings.KAYIT_EPOSTA_DOGRULAMA_ZORUNLU
+    mevcut = db.query(User).filter(User.email == request.email).first()
+    if mevcut is not None:
+        if not zorunlu:
+            raise HTTPException(
+                status_code=status.HTTP_400_BAD_REQUEST,
+                detail="Bu email zaten kullanımda"
+            )
+        hash_password(request.password)  # yeni kayıt yolundaki bcrypt maliyetini eşitle
+        izin, _ = hiz_sayaci.izin_ver(f"kayit-mevcut-eposta:{request.email.lower()}",
+                                      EPOSTA_BASINA_KAYIT_BILDIRIMI, 3600)
+        if mevcut.is_active and izin:
+            arka_plan.add_task(_eposta_gonder, EmailService().send_existing_account_email, mevcut.email,
+                               mevcut.full_name or "", f"{settings.APP_URL}/", f"{settings.APP_URL}/sifre-sifirla")
+        return JSONResponse(status_code=status.HTTP_202_ACCEPTED, content=KAYIT_YANITI)
 
     # Organization oluştur
     org = Organization(
@@ -235,6 +256,8 @@ def signup(request: UserSignup, arka_plan: BackgroundTasks, db: Session = Depend
     db.add(user)
     db.commit()
     _dogrulama_postasi_planla(db, user, arka_plan)
+    if zorunlu:
+        return JSONResponse(status_code=status.HTTP_202_ACCEPTED, content=KAYIT_YANITI)
 
     token = oturum_belirteci(user)
 
@@ -251,11 +274,13 @@ def signup(request: UserSignup, arka_plan: BackgroundTasks, db: Session = Depend
 
 @app.post("/api/auth/login", response_model=TokenResponse,
           dependencies=[Depends(ip_hiz_siniri(10, ad="login"))])
-def login(request: UserLogin, db: Session = Depends(get_db)):
-    """Giriş yap. IP başına dakikada 10 deneme (parola kaba kuvvet koruması; denetim 2026-10-07)."""
+def login(request: UserLogin, arka_plan: BackgroundTasks, db: Session = Depends(get_db)):
+    """Giriş yap. IP başına dakikada 10 deneme (parola kaba kuvvet koruması; denetim 2026-10-07).
+    Kayıtlı olmayan adreste de bcrypt çalışır (yanıt süresi hesabın varlığını sızdırmaz)."""
     user = db.query(User).filter(User.email == request.email).first()
+    parola_dogru = verify_password(request.password, user.hashed_password if user else _SAHTE_PAROLA_OZETI)
 
-    if not user or not verify_password(request.password, user.hashed_password):
+    if not user or not parola_dogru:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="Email veya şifre yanlış"
@@ -265,6 +290,20 @@ def login(request: UserLogin, db: Session = Depends(get_db)):
         raise HTTPException(
             status_code=status.HTTP_403_FORBIDDEN,
             detail="Hesap deaktif"
+        )
+
+    # Doğrulama zorunluyken doğrulanmamış hesap giremez. Parola doğru olduğu için (kimlik kanıtlandı) bağlantı
+    # yeniden gönderilir; e-posta başına saatte 3.
+    if settings.KAYIT_EPOSTA_DOGRULAMA_ZORUNLU and user.email_dogrulama_zamani is None:
+        izin, _ = hiz_sayaci.izin_ver(f"dogrulama-eposta:{user.email.lower()}", EPOSTA_BASINA_KAYIT_BILDIRIMI, 3600)
+        if izin:
+            _dogrulama_postasi_planla(db, user, arka_plan)
+        # HTTPException fırlatılsaydı arka plan görevi (posta) hiç çalışmazdı: görevler yanıta bağlıdır.
+        return JSONResponse(
+            status_code=status.HTTP_403_FORBIDDEN,
+            content={"detail": "E-posta adresiniz henüz doğrulanmadı. Doğrulama bağlantısını e-postanıza yeniden "
+                               "gönderdik; bağlantıya tıklayıp parolanızla hesabınızı etkinleştirin."},
+            background=arka_plan,
         )
 
     token = oturum_belirteci(user)
@@ -334,14 +373,31 @@ def sifre_sifirla(request: SifreSifirla, db: Session = Depends(get_db)):
 
 @app.post("/api/auth/eposta-dogrula", dependencies=[Depends(ip_hiz_siniri(10, ad="eposta-dogrula"))])
 def eposta_dogrula(request: BelirtecGirdi, db: Session = Depends(get_db)):
+    """E-posta doğrulama. Doğrulama zorunlu kayıtta parola da istenir ve başarıda oturum açılır: başkasının
+    adresiyle (kendi parolasıyla) kayıt açan biri, adres sahibi bağlantıya tıklasa bile hesabı ele geçiremez.
+    Parola yanlışsa belirteç YAKILMAZ (geri alınır), doğru parolayla yeniden denenebilir."""
+    zorunlu = settings.KAYIT_EPOSTA_DOGRULAMA_ZORUNLU
+    if zorunlu and not request.password:
+        raise HTTPException(status_code=status.HTTP_428_PRECONDITION_REQUIRED,
+                            detail="Hesabınızı etkinleştirmek için kayıtta belirlediğiniz parolayı girin.")
     user = belirtec_tuket(db, request.token, DOGRULAMA)
     if user is None:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
-                            detail="Bağlantı geçersiz veya süresi dolmuş; panelden yeni doğrulama bağlantısı isteyin")
+                            detail="Bağlantı geçersiz veya süresi dolmuş. Giriş yapmayı deneyin; hesabınız "
+                                   "doğrulanmamışsa yeni bağlantı gönderilir.")
+    if zorunlu and not verify_password(request.password, user.hashed_password):
+        db.rollback()  # belirteç tüketilmemiş sayılır
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
+                            detail="Parola bu kayıtla eşleşmiyor. Kaydı siz başlatmadıysanız ya da parolanızı "
+                                   "hatırlamıyorsanız 'Şifremi unuttum' ile yeni parola belirleyin.")
     if user.email_dogrulama_zamani is None:
         user.email_dogrulama_zamani = datetime.now(timezone.utc).replace(tzinfo=None)
     db.commit()
-    return {"mesaj": "E-posta adresiniz doğrulandı."}
+    yanit = {"mesaj": "E-posta adresiniz doğrulandı."}
+    if zorunlu:
+        yanit["mesaj"] = "E-posta adresiniz doğrulandı, hesabınız etkinleştirildi."
+        yanit["access_token"] = oturum_belirteci(user)
+    return yanit
 
 
 @app.get("/api/auth/me")

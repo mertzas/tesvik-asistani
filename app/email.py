@@ -72,6 +72,22 @@ class EmailService:
                 f"<p>Bu hesabı siz açmadıysanız bu e-postayı yok sayın.</p>")
         return self.send_email(email, konu, metin, html)
 
+    def send_existing_account_email(self, email: str, name: str, giris: str, sifirlama: str) -> bool:
+        """Var olan bir adresle yeniden kayıt denendiğinde sahibine bildirim. Kayıt yanıtı bu durumu ele
+        vermediği için (e-posta numaralandırma yok) bilgi yalnızca adresin sahibine gider."""
+        from html import escape
+        konu = "Teşvik Asistanı - Bu adresle zaten bir hesabınız var"
+        metin = (f"Merhaba {name},\n\nBu e-posta adresiyle yeni bir kayıt denendi, ancak adresinize bağlı bir hesap "
+                 f"zaten var. Hesabınızda değişiklik yapılmadı.\n\nGiriş yapmak için: {giris}\nParolanızı "
+                 f"hatırlamıyorsanız: {sifirlama}\n\nBu denemeyi siz yapmadıysanız bu e-postayı yok sayabilirsiniz."
+                 f"\n\nTeşvik Asistanı")
+        html = (f"<p>Merhaba <strong>{escape(name)}</strong>,</p><p>Bu e-posta adresiyle yeni bir kayıt denendi, "
+                f"ancak adresinize bağlı bir hesap zaten var. Hesabınızda değişiklik yapılmadı.</p>"
+                f"<p><a href=\"{escape(giris)}\">Giriş yapın</a> veya parolanızı hatırlamıyorsanız "
+                f"<a href=\"{escape(sifirlama)}\">yeni parola belirleyin</a>.</p>"
+                f"<p>Bu denemeyi siz yapmadıysanız bu e-postayı yok sayabilirsiniz.</p>")
+        return self.send_email(email, konu, metin, html)
+
     def send_welcome_email(self, email: str, name: str) -> bool:
         """Send welcome email to new user"""
         subject = "🎉 Teşvik Asistanı'na Hoş Geldiniz!"

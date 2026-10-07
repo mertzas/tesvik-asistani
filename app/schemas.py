@@ -66,6 +66,9 @@ class SifreSifirla(BaseModel):
 
 class BelirtecGirdi(BaseModel):
     token: str = Field(..., min_length=10, max_length=200)
+    # Doğrulama zorunlu kayıtta (KAYIT_EPOSTA_DOGRULAMA_ZORUNLU) etkinleştirme parolayı da ister: yalnızca
+    # e-postaya erişen değil, kaydı yapan kişi hesabı etkinleştirebilsin (önceden ele geçirmeye karşı).
+    password: Optional[str] = Field(None, max_length=200)
 
 
 class TokenResponse(BaseModel):

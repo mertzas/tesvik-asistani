@@ -11,27 +11,75 @@
         .kart { background: #fff; width: 100%; max-width: 420px; border-radius: 15px; box-shadow: 0 20px 60px rgba(0,0,0,.3); padding: 36px 32px; text-align: center; }
         h1 { font-size: 22px; margin-bottom: 12px; color: #333; }
         #sonuc { color: #555; font-size: 15px; line-height: 1.5; margin-bottom: 20px; }
-        a { display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border-radius: 5px; font-weight: bold; text-decoration: none; }
+        a, button { display: inline-block; padding: 12px 24px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border: 0; border-radius: 5px; font-weight: bold; font-size: 15px; text-decoration: none; cursor: pointer; }
+        button:disabled { opacity: .6; cursor: default; }
+        form { margin-bottom: 18px; text-align: left; }
+        form[hidden], a[hidden] { display: none; }
+        label { display: block; font-size: 14px; color: #333; margin-bottom: 6px; font-weight: 600; }
+        input { width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 5px; font-size: 15px; margin-bottom: 12px; }
+        input:focus { outline: none; border-color: #667eea; }
+        .yardim { font-size: 13px; color: #777; margin-top: 10px; text-align: center; }
+        .yardim a { padding: 0; background: none; color: #667eea; }
     </style>
 </head>
 <body>
 <div class="kart">
     <h1>E-posta doğrulama</h1>
     <p id="sonuc">Doğrulanıyor…</p>
-    <a href="/dashboard">Panele git</a>
+    <!-- Doğrulama zorunlu kayıtta sunucu 428 döner: hesabı yalnızca kaydı yapan (parolayı bilen) etkinleştirir. -->
+    <form id="parola-formu" hidden>
+        <label for="parola">Parolanız</label>
+        <input type="password" id="parola" autocomplete="current-password" required>
+        <button type="submit" id="etkinlestir">Hesabı etkinleştir</button>
+        <p class="yardim">Parolanızı hatırlamıyor musunuz? <a href="/sifre-sifirla">Şifremi unuttum</a></p>
+    </form>
+    <a href="/dashboard" id="panel">Panele git</a>
 </div>
 <script>
 // Belirteç URL'nin # kısmında gelir (sunucuya/Referer'a gitmez); okununca adresten silinir.
 const belirtec = new URLSearchParams(location.hash.slice(1)).get('t');
 if (belirtec) history.replaceState(null, '', location.pathname);
+const kutu = document.getElementById('sonuc');
+const form = document.getElementById('parola-formu');
+
+async function dogrula(parola) {
+  const govde = { token: belirtec };
+  if (parola) govde.password = parola;
+  const r = await fetch('/api/auth/eposta-dogrula', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(govde) });
+  const v = await r.json().catch(() => ({}));
+  if (r.status === 428) {
+    kutu.textContent = v.detail;
+    form.hidden = false;
+    document.getElementById('panel').hidden = true;
+    document.getElementById('parola').focus();
+    return;
+  }
+  if (!r.ok) {
+    kutu.textContent = typeof v.detail === 'string' ? v.detail : 'Doğrulama başarısız (' + r.status + ')';
+    return;
+  }
+  kutu.textContent = v.mesaj;
+  form.hidden = true;
+  if (v.access_token) {
+    localStorage.setItem('auth_token', v.access_token);
+    localStorage.setItem('token', v.access_token);
+  }
+  document.getElementById('panel').hidden = false;
+}
+
+form.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const dugme = document.getElementById('etkinlestir');
+  dugme.disabled = true;
+  try { await dogrula(document.getElementById('parola').value); }
+  catch (err) { kutu.textContent = 'Sunucuya ulaşılamadı; biraz sonra tekrar deneyin.'; }
+  finally { dugme.disabled = false; }
+});
+
 (async () => {
-  const kutu = document.getElementById('sonuc');
   if (!belirtec) { kutu.textContent = 'Doğrulama bağlantısı eksik. E-postanızdaki bağlantıyı kullanın.'; return; }
-  try {
-    const r = await fetch('/api/auth/eposta-dogrula', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ token: belirtec }) });
-    const v = await r.json().catch(() => ({}));
-    kutu.textContent = r.ok ? v.mesaj : (typeof v.detail === 'string' ? v.detail : 'Doğrulama başarısız (' + r.status + ')');
-  } catch (e) { kutu.textContent = 'Sunucuya ulaşılamadı; biraz sonra tekrar deneyin.'; }
+  try { await dogrula(null); }
+  catch (e) { kutu.textContent = 'Sunucuya ulaşılamadı; biraz sonra tekrar deneyin.'; }
 })();
 </script>
 </body>

@@ -374,6 +374,14 @@
         // kullanmak her ortamda calisir.
         const API_BASE = window.location.origin + "/api";
 
+        // 422 doğrulama hatalarında detail bir dizidir; düz metne çevir ("[object Object]" görünmesin).
+        function hataMetni(err, varsayilan) {
+            const d = err && err.detail;
+            if (typeof d === "string") return d;
+            if (Array.isArray(d)) return d.map(x => (x && x.msg) ? x.msg.replace(/^Value error, /, "") : JSON.stringify(x)).join("; ");
+            return varsayilan;
+        }
+
         function switchForm(form) {
             document.querySelectorAll(".form-container").forEach(f => f.classList.remove("active"));
             document.getElementById(`${form}-form`).classList.add("active");
@@ -404,7 +412,7 @@
 
                 if (!res.ok) {
                     const error = await res.json();
-                    errorDiv.textContent = error.detail || "Giriş başarısız";
+                    errorDiv.textContent = hataMetni(error, "Giriş başarısız");
                     errorDiv.style.display = "block";
                     return;
                 }
@@ -458,12 +466,21 @@
 
                 if (!res.ok) {
                     const error = await res.json();
-                    errorDiv.textContent = error.detail || "Kayıt başarısız";
+                    errorDiv.textContent = hataMetni(error, "Kayıt başarısız");
                     errorDiv.style.display = "block";
                     return;
                 }
 
                 const data = await res.json();
+                // Doğrulama zorunlu kayıt: 202 + mesaj, belirteç yok. Hesap var/yok aynı yanıt (numaralandırma yok).
+                if (res.status === 202 || !data.access_token) {
+                    const bilgi = document.getElementById("signup-success");
+                    bilgi.textContent = data.mesaj || "Kaydınızı tamamlamak için e-postanızı kontrol edin.";
+                    bilgi.style.display = "block";
+                    errorDiv.style.display = "none";
+                    event.target.reset();
+                    return;
+                }
                 // İki farklı localStorage anahtarına da yazıyoruz: bazı
                 // dashboard sayfaları (dashboard.html) "auth_token", bazıları
                 // (dashboard_pro.html, cilek_dashboard.html) "token" okuyor -

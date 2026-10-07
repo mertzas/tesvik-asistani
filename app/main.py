@@ -1092,8 +1092,11 @@ def health_check(db: Session = Depends(get_db)):
     # scraper'lar sessizce durdugunda haberdar olsun.
     # Veritabanina gercekten dokunulur: baglanti kopuksa 503 (compose/izleme healthcheck'i
     # bunu okur; onceki hali DB olmadan da "ok" diyordu).
+    # Gerçek bir tablo okunur: SQLite'ta "SELECT 1" dosyaya hiç dokunmadığından kilitli DB'yi
+    # yakalamıyordu; dayanıklılık deneyinde (2026-10-07) kilit altında /health 35 sn sonra
+    # "veri_yok" ile 200 dönüyordu (her kaynak 5 sn busy_timeout bekledi).
     try:
-        db.execute(text("SELECT 1"))
+        db.execute(text("SELECT 1 FROM tesvikler LIMIT 1"))
     except Exception:
         logger.exception("Saglik kontrolu: veritabanina ulasilamiyor")
         return JSONResponse(status_code=status.HTTP_503_SERVICE_UNAVAILABLE,

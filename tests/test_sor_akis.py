@@ -150,3 +150,59 @@ def test_sor_akis_akis_hatasi_hata_olayi_uretir(client, test_org_data, monkeypat
     r = client.post("/api/sor/akis", json={"question": "KOSGEB desteği"}, headers=h)
     tipler = [t for t, _ in _sse_coz(r.text)]
     assert tipler == ["kayitlar", "hata"]
+
+
+# ------------------------------------------------------------------ dayanıklılık (Aşama D)
+class _SahteAkis:
+    """anthropic messages.stream bağlam yöneticisi: parçaları verir, sonda verilen durumu döndürür."""
+
+    def __init__(self, parcalar, stop_reason, hata_sonra=None):
+        self._p, self._s, self._h = parcalar, stop_reason, hata_sonra
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *a):
+        return False
+
+    @property
+    def text_stream(self):
+        for p in self._p:
+            yield p
+        if self._h:
+            raise self._h
+
+    def get_final_message(self):
+        class M:
+            stop_reason = self._s
+            usage = None
+        return M()
+
+
+def _akis_kos(monkeypatch, sahte):
+    import types
+    import sys
+    fake = types.SimpleNamespace(Anthropic=lambda api_key=None: types.SimpleNamespace(messages=types.SimpleNamespace(stream=lambda **k: sahte)))
+    monkeypatch.setitem(sys.modules, "anthropic", fake)
+    monkeypatch.setattr(rag.settings, "ANTHROPIC_API_KEY", "x")
+    return list(rag._claude_akis("soru", [], None))
+
+
+def test_akis_message_stop_gelmeden_biterse_kesildi_notu(monkeypatch):
+    """GERÇEK DENEY: bağlantı akış ortasında kopunca SDK hata vermedi, stop_reason boştu;
+    kullanıcı kesik yanıtı tam sanıyordu."""
+    cikti = _akis_kos(monkeypatch, _SahteAkis(["### 1. Özet\nKısmi"], None))
+    assert cikti[0] == "### 1. Özet\nKısmi" and cikti[-1] == rag.BAGLANTI_KOPTU_NOTU
+
+
+def test_akis_normal_bitiste_not_eklenmez(monkeypatch):
+    assert _akis_kos(monkeypatch, _SahteAkis(["tam yanıt"], "end_turn")) == ["tam yanıt"]
+
+
+def test_akis_parca_sonrasi_istisna_kesildi_notu(monkeypatch):
+    cikti = _akis_kos(monkeypatch, _SahteAkis(["ilk"], "end_turn", hata_sonra=RuntimeError("koptu")))
+    assert cikti == ["ilk", rag.BAGLANTI_KOPTU_NOTU]
+
+
+def test_akis_hic_parca_yoksa_not_yok_liste_formatina_dusulur(monkeypatch):
+    assert _akis_kos(monkeypatch, _SahteAkis([], None)) == []

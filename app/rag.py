@@ -61,6 +61,7 @@ CEVAP_KAYIT_SAYISI = 8   # danışmana verilen kayıt sayısı (çok ihtiyaçlı
 DETAY_KARAKTER = 2500    # kayıt başına danışmana giden detay metni (temizlendikten sonra)
 HAVUZ_BOYUTU = 60        # ihtiyaç/profil katmanının kelime aramasından aldığı aday sayısı  # low | medium | high; danışman yanıtı için gecikme/kalite dengesi
 KESILDI_NOTU = "\n\n*(Yanıt uzunluk sınırında kesildi; sorunuzu daraltarak tekrar sorabilirsiniz.)*"
+BAGLANTI_KOPTU_NOTU = "\n\n*(Yanıt bağlantı hatası nedeniyle kesildi; lütfen tekrar deneyin.)*"
 
 # Anlamli sinyal tasimayan, aramada gurultu yaratan kisa/genel kelimeler.
 # Aramada anlamsiz olan ama ILIKE '%...%' ile veritabaninin cogunluguna
@@ -902,16 +903,22 @@ def _claude_akis(query: str, matches: list[Tesvik], profil: dict | None,
                 uretildi = True
                 yield parca
             son = akis.get_final_message()
-        if getattr(son, "stop_reason", None) == "max_tokens":
+        durum = getattr(son, "stop_reason", None)
+        if durum == "max_tokens":
             logger.warning("Claude akış yanıtı max_tokens sınırında kesildi (%s token)",
                            getattr(getattr(son, "usage", None), "output_tokens", "?"))
             yield KESILDI_NOTU
+        elif durum is None and uretildi:
+            # Dayanıklılık deneyi 2026-10-07: bağlantı message_stop gelmeden kopunca SDK hata
+            # vermiyor, stop_reason boş kalıyor; kullanıcı kesik yanıtı tam yanıt sanıyordu.
+            logger.warning("Claude akışı message_stop gelmeden bitti (stop_reason boş)")
+            yield BAGLANTI_KOPTU_NOTU
     except Exception as e:
         logger.warning("Claude akışı başarısız (%s): %s: %s",
                        "parça üretildikten sonra" if uretildi else "başlamadan",
                        type(e).__name__, e)
         if uretildi:
-            yield "\n\n*(Yanıt bağlantı hatası nedeniyle kesildi; lütfen tekrar deneyin.)*"
+            yield BAGLANTI_KOPTU_NOTU
 
 
 def answer_akis(query: str, profil: dict | None = None,

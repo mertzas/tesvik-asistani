@@ -127,3 +127,32 @@ def test_health_db_kopuksa_503(client, monkeypatch):
         assert r.status_code == 503 and r.json()["status"] == "db_erisilemiyor"
     finally:
         m.app.dependency_overrides[get_db] = onceki
+
+
+def test_health_kilitli_sqlite_dosyasinda_hizli_503(tmp_path):
+    """Dayanıklılık deneyi 2026-10-07: dosya kilitliyken /health 35 sn sonra 'ok' dönüyordu."""
+    import sqlite3
+    import time
+
+    from sqlalchemy import create_engine
+    from sqlalchemy.orm import sessionmaker
+
+    import app.main as m
+
+    yol = tmp_path / "kilitli.db"
+    c = sqlite3.connect(yol)
+    c.execute("CREATE TABLE tesvikler (id INTEGER)")
+    c.commit()
+    c.close()
+    kilit = sqlite3.connect(yol, timeout=0, isolation_level=None)
+    kilit.execute("BEGIN EXCLUSIVE")
+    try:
+        eng = create_engine(f"sqlite:///{yol}", connect_args={"timeout": 0.3})
+        db = sessionmaker(bind=eng)()
+        t0 = time.time()
+        r = m.health_check(db)
+        assert r.status_code == 503 and time.time() - t0 < 3
+        db.close()
+    finally:
+        kilit.execute("ROLLBACK")
+        kilit.close()

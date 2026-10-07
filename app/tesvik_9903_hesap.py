@@ -23,8 +23,8 @@ TUM ORANLAR VE SURELER KARAR METNINDEN BIREBIR ALINMISTIR
 ---------------------------------------------------------
 Kaynak: 9903 sayili "Yatirimlarda Devlet Yardimlari Hakkinda Karar",
 Resmi Gazete 30/05/2025.
-  MADDE 12 - vergi indirimi / yatirima katki oranlari
-  MADDE 14 - sigorta primi isveren hissesi destegi ve bolge sureleri
+  MADDE 20 - vergi indirimi / yatirima katki oranlari
+  MADDE 18 - sigorta primi isveren hissesi destegi ve bolge sureleri
   MADDE 15 - faiz veya kar payi destegi
   MADDE 16 - makine destegi
   MADDE 5  - asgari sabit yatirim tutarlari, basvuru son tarihi
@@ -49,7 +49,7 @@ from dataclasses import dataclass, field
 from app.nace_9903 import il_bolgesi
 
 # ---------------------------------------------------------------------------
-# MADDE 12 - yatirima katki oranlari (vergi indirimi)
+# MADDE 20 - yatirima katki oranlari (vergi indirimi)
 # ---------------------------------------------------------------------------
 PROGRAMLAR: dict[str, str] = {
     "teknoloji_hamlesi": "Teknoloji Hamlesi Programı",
@@ -72,11 +72,11 @@ YATIRIMA_KATKI_ORANI: dict[str, float] = {
 }
 
 # Vergi, yatirima katki tutarina ulasincaya kadar %60 INDIRIMLI uygulanir
-# (MADDE 12/1). Yani devlet verginin tamamini silmiyor; %60'ini siliyor.
+# (MADDE 20/1). Yani devlet verginin tamamini silmiyor; %60'ini siliyor.
 VERGI_INDIRIM_ORANI = 0.60
 
 # ---------------------------------------------------------------------------
-# MADDE 14 - sigorta primi isveren hissesi destegi
+# MADDE 18 - sigorta primi isveren hissesi destegi
 # ---------------------------------------------------------------------------
 # 6. bolgede primin TAMAMI, diger bolgelerde %50'si butceden karsilanir.
 SIGORTA_PRIMI_KARSILAMA = {1: 0.50, 2: 0.50, 3: 0.50, 4: 0.50, 5: 0.50, 6: 1.00}
@@ -85,7 +85,7 @@ SIGORTA_PRIMI_KARSILAMA = {1: 0.50, 2: 0.50, 3: 0.50, 4: 0.50, 5: 0.50, 6: 1.00}
 SIGORTA_PRIMI_SURESI = {1: 1, 2: 1, 3: 2, 4: 4, 5: 8, 6: 12}
 
 # Turkiye Yuzyili Kalkinma Hamlesi kapsaminda: 6. bolgede 12 yil, diger
-# bolgelerde 8 yil (MADDE 14/3) - genel sureden belirgin daha uzun.
+# bolgelerde 8 yil (MADDE 18/3) - genel sureden belirgin daha uzun.
 SIGORTA_PRIMI_SURESI_HAMLE = {1: 8, 2: 8, 3: 8, 4: 8, 5: 8, 6: 12}
 
 # ---------------------------------------------------------------------------
@@ -243,13 +243,13 @@ def hesapla(
             "aksi halde bu haliyle teşvik belgesi düzenlenmez."
         )
 
-    # --- Vergi indirimi (MADDE 12) -----------------------------------------
+    # --- Vergi indirimi (MADDE 20) -----------------------------------------
     katki_orani = YATIRIMA_KATKI_ORANI[program]
     katki_tutari = sabit_yatirim_tl * katki_orani
     h.kalemler.append(DestekKalemi(
         ad="Vergi indirimi (yatırıma katkı tutarı)",
         tutar_tl=round(katki_tutari, 2),
-        madde="MADDE 12",
+        madde="MADDE 20",
         aciklama=(
             f"Sabit yatırımın %{katki_orani*100:.0f}'i kadar yatırıma katkı "
             f"tutarı: {_tl(katki_tutari)}. Bu tutara ulaşılıncaya kadar gelir/"
@@ -259,11 +259,11 @@ def hesapla(
         ),
     ))
 
-    # --- Sigorta primi isveren hissesi (MADDE 14) --------------------------
+    # --- Sigorta primi isveren hissesi (MADDE 18) --------------------------
     if bolge is None:
         h.kalemler.append(DestekKalemi(
             ad="Sigorta primi işveren hissesi desteği", tutar_tl=None,
-            madde="MADDE 14",
+            madde="MADDE 18",
             aciklama="Destek süresi ve oranı bölgeye göre değişir.",
             eksik_bilgi="İl bilinmiyor.",
         ))
@@ -276,7 +276,7 @@ def hesapla(
                      * 12 * sure * karsilama)
             h.kalemler.append(DestekKalemi(
                 ad="Sigorta primi işveren hissesi desteği",
-                tutar_tl=round(tutar, 2), madde="MADDE 14",
+                tutar_tl=round(tutar, 2), madde="MADDE 18",
                 aciklama=(
                     f"{ilave_istihdam} ilave istihdam x {sure} yıl x "
                     f"%{karsilama*100:.0f} karşılama = {_tl(tutar)}. "
@@ -295,7 +295,7 @@ def hesapla(
                                 "için ilan ettiği tutar)")
             h.kalemler.append(DestekKalemi(
                 ad="Sigorta primi işveren hissesi desteği", tutar_tl=None,
-                madde="MADDE 14",
+                madde="MADDE 18",
                 aciklama=(
                     f"{bolge}. bölgede {sure} yıl boyunca, asgari ücrete "
                     f"tekabül eden işveren priminin %{karsilama*100:.0f}'i "
@@ -303,6 +303,22 @@ def hesapla(
                 ),
                 eksik_bilgi="Hesap için gerekli: " + ", ".join(eksikler) + ".",
             ))
+
+    # --- Sigorta primi destegi, isci hissesi (MADDE 19; yalnizca 6. bolge) ---
+    # Isveren hissesinden AYRI bir destek: 6. bolgede ilave istihdamin asgari
+    # ucrete tekabul eden isci hissesi, tamamlama vizesini muteakip 10 yil
+    # bütceden karsilanabilir. Isci hissesi tutari parametre olarak alinmadigi
+    # icin rakam verilmez; kullanici bu destegin varligini gormeli.
+    if bolge == 6:
+        h.kalemler.append(DestekKalemi(
+            ad="Sigorta primi desteği (işçi hissesi)", tutar_tl=None, madde="MADDE 19",
+            aciklama=(
+                "6. bölgede teşvik belgesi kapsamındaki ilave istihdam için, asgari ücrete "
+                "tekabül eden sigorta primi işçi hissesi, tamamlama vizesini müteakip 10 yıl "
+                "süreyle işveren adına Bakanlık bütçesinden karşılanabilir."
+            ),
+            eksik_bilgi="İşçi hissesi tutarı girilmediği için rakam hesaplanmadı.",
+        ))
 
     # --- Faiz veya kar payi destegi (MADDE 15) -----------------------------
     izinli_bolgeler = FAIZ_DESTEGI_BOLGE_KISITI.get(program)

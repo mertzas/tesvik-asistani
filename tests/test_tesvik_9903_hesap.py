@@ -46,7 +46,7 @@ def test_tum_programlar_icin_oran_tanimli():
 
 
 def test_yatirima_katki_oranlari_karar_metniyle_ayni():
-    """MADDE 12/1: Teknoloji ve Yerel Kalkınma %50, Stratejik %40,
+    """MADDE 20/1: Teknoloji ve Yerel Kalkınma %50, Stratejik %40,
     Öncelikli %30, Hedef %20."""
     assert YATIRIMA_KATKI_ORANI == {
         "teknoloji_hamlesi": 0.50,
@@ -58,12 +58,12 @@ def test_yatirima_katki_oranlari_karar_metniyle_ayni():
 
 
 def test_sigorta_primi_sureleri_karar_metniyle_ayni():
-    """MADDE 14/2: bölge 1-2 → 1 yıl, 3 → 2, 4 → 4, 5 → 8, 6 → 12."""
+    """MADDE 18/2: bölge 1-2 → 1 yıl, 3 → 2, 4 → 4, 5 → 8, 6 → 12."""
     assert SIGORTA_PRIMI_SURESI == {1: 1, 2: 1, 3: 2, 4: 4, 5: 8, 6: 12}
 
 
 def test_kalkinma_hamlesi_sigorta_suresi_daha_uzun():
-    """MADDE 14/3: Kalkınma Hamlesi kapsamında 6. bölgede 12, diğerlerinde
+    """MADDE 18/3: Kalkınma Hamlesi kapsamında 6. bölgede 12, diğerlerinde
     8 yıl. Bu ayrım kaybolursa 1. bölgedeki yatırımcı 8 yıl yerine 1 yıl
     hesaplanır - sekiz kat eksik."""
     for bolge in (1, 2, 3, 4, 5):
@@ -73,7 +73,7 @@ def test_kalkinma_hamlesi_sigorta_suresi_daha_uzun():
 
 
 def test_altinci_bolgede_prim_tamami_karsilanir():
-    """MADDE 14/1: 6. bölgede primin tamamı, diğerlerinde %50'si."""
+    """MADDE 18/1: 6. bölgede primin tamamı, diğerlerinde %50'si."""
     assert SIGORTA_PRIMI_KARSILAMA[6] == 1.00
     for b in (1, 2, 3, 4, 5):
         assert SIGORTA_PRIMI_KARSILAMA[b] == 0.50

@@ -21,7 +21,7 @@ Son güncelleme: 2026-10-07 (Denetim 2 / Aşama F sonu). Oturuma bunu okuyarak b
 - Kayıt 78 "Tarımsal Makineleştirme" → KKYP olarak yeniden yazıldı (bireysel traktör hibesi diye yanlış vaat ediyordu).
 - Hayvancılık birim tutarları (Karar 8760) taranmış PDF'te; OCR olmadan teyit edilemedi → kayıt bunu açıkça söylüyor.
 - Girişim modu: şirket yok | TRL ≤ 6 | şirket ≤ 3 yaş | soru dili. JWT 7 gün.
-- Kökteki `tesvik.db` 0 baytlık artık dosya; gerçek DB `data/tesvikler.db`.
+- Kökteki `tesvik.db` 0 baytlık artık dosya; gerçek DB `data/tesvikler.db`. (2026-10-08: göreli `DATABASE_URL` artık proje köküne göre çözülür, kalıntı yeniden oluşmaz; bkz. `tests/test_database_url.py`.)
 
 - **Denetim 2 / Aşama C** (tamamlandı, kısıtla): rapor `docs/olcum/2026-10-07-denetim2/C_RAPOR.md`. Soru 1–3 gerçek
   claude-sonnet-5 (≈0,3 USD); API bakiyesi bitince 4–12'yi oturum modeli birebir prompt+bağlamla elle yanıtladı

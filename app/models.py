@@ -1,4 +1,5 @@
 import os
+from pathlib import Path
 from datetime import datetime, timezone
 from enum import Enum
 from uuid import uuid4
@@ -11,8 +12,32 @@ from sqlalchemy.orm import declarative_base, sessionmaker, relationship
 from app.sifreleme import SifreliMetin
 from pydantic_settings import BaseSettings
 
+PROJE_KOKU = Path(__file__).resolve().parent.parent
+
+
+def sqlite_url_mutlak(url: str) -> str:
+    """Goreli sqlite yolunu CALISMA DIZININE gore degil PROJE KOKUNE gore cozer.
+
+    Neden: 'sqlite:///./x.db' calisma dizinine baglidir; uygulama baska bir klasorden
+    baslatilinca (2026-07-09'da ana dizinden) o klasorde bos bir veritabani olusuyordu.
+    Bellek ici ('sqlite://'), mutlak yol ve sqlite disi (postgresql vb.) adresler aynen kalir.
+    """
+    onek = "sqlite:///"
+    if not url.startswith(onek):
+        return url
+    yol = url[len(onek):]
+    if not yol or yol.startswith(":memory:"):
+        return url
+    p = Path(yol)
+    # Windows'ta '/abs' kokludur ama is_absolute() False doner; hepsini mutlak say: '/abs', 'C:/abs'
+    if p.is_absolute() or yol.startswith(("/", "\\")) or (len(yol) > 1 and yol[1] == ":"):
+        return url
+    return onek + (PROJE_KOKU / p).resolve().as_posix()
+
+
 class Settings(BaseSettings):
-    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./tesvik.db")
+    # Varsayilan, gercek veritabanidir (.env.example ile ayni): data/tesvikler.db
+    DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./data/tesvikler.db")
     SECRET_KEY: str = os.getenv("SECRET_KEY", "your-super-secret-key")
     ALGORITHM: str = "HS256"
     ACCESS_TOKEN_EXPIRE_DAYS: int = 7  # denetim 2026-10-07: 30 gündü; iptal mekanizması olmadığı için kısaltıldı
@@ -49,10 +74,12 @@ class Settings(BaseSettings):
     IKAS_MOCK_MODE: bool = os.getenv("IKAS_MOCK_MODE", "true").lower() == "true"
 
     class Config:
-        env_file = ".env"
+        # Proje kokune gore: baska bir calisma dizininden baslatilsa da .env bulunur.
+        env_file = str(PROJE_KOKU / ".env")
         extra = "ignore"
 
 settings = Settings()
+settings.DATABASE_URL = sqlite_url_mutlak(settings.DATABASE_URL)
 
 # Database setup
 if settings.DATABASE_URL.startswith("postgresql"):

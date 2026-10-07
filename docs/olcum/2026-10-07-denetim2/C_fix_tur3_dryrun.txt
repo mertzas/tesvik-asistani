@@ -1,0 +1,32 @@
+[163] Pazara Girişte Dijital Faaliyetlerin Desteklenmesi
+    detay: 1x değiştirildi: "yıllık 15.102 TL'ye kadar desteklenir (dekont tarihine " -> 'yıllık bir üst limite kadar desteklenir (limit, 5973 sa'
+    tutari_hesaplama_formulu: "E-ticaret sitesi bireysel üyelik giderinin %60'ı, yıllık azami 15.102 " (139 kar) -> "E-ticaret sitesi bireysel üyelik giderinin %60'ı (kurum sayfası, 2026-" (221 kar)
+    not: Denetim2-T3 2026-10-07: 15.102 TL 2022 yılı değeri olarak işaretlendi; 5973 Genelge limiti sayfada bulunamadı, güncel TL limiti teyit edilmeli (https:
+[174] 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Ge
+    detay: 1x değiştirildi: "DESTEK TUTARI DOĞRULANMALI: ODTÜ Teknokent'in BiGG sayf" -> 'DESTEK TUTARI (resmî BiGG portalı https://bigg.tubitak.'
+    tutari_hesaplama_formulu: 'TÜBİTAK BiGG Fonu aracılığıyla %3 hisse karşılığı yatırım. Tutar kayna' (183 kar) -> 'BiGG Fonu hisse karşılığı yatırım: 1.350.000 TL (2026). Hisse oranı ka' (169 kar)
+    not: Denetim2-T3 2026-10-07: detaydaki eski 150.000 TL ifadesi geçersiz; tutar resmî BiGG portalına göre 1.350.000 TL (2026) (https://bigg.tubitak.gov.tr/)
+[48] 1709 – EUREKA-EUROSTARS
+    detay: 4x değiştirildi: '2026/1' -> '2026/2'
+    ozet: 1x değiştirildi: '2026/1' -> '2026/2'
+    tesvil_tutari: 'Eurostars-3 Ulusal Çağrı 2026/2: ulusal çağrı bütçesi 4.000.000 Avro; ' (115 kar) -> 'Eurostars-3 Ulusal Çağrı 2026/2: ulusal çağrı bütçesi 4.000.000 Avro; ' (359 kar)
+    basvuru_suresi: 'Çağrı dönemli (2026/2 çağrısı açık); başvuru eteydeb.tubitak.gov.tr' (67 kar) -> 'Çağrı dönemli: 1709-EUREKA-EUROSTARS 2026/2 ulusal çağrısı; son başvur' (174 kar)
+    basvuru_yeri: 'None' (0 kar) -> 'PRODİS (https://eteydeb.tubitak.gov.tr); önce kuruluş bazlı ön kayıt, ' (129 kar)
+    basvuru_sartlari: 'None' (0 kar) -> "['Sermaye şirketi, yükseköğretim kurumu, kamu araştırma merkezi/enstit" (632 kar)
+    not: Denetim2-T3 2026-10-07: canlı sayfa 2026/2 çağrısını gösteriyor (kayıtta eski 2026/1 vardı); başvuru koşulları ve bütçe sınırları sayfadan eklendi; so
+[2] Yapay Zekâ Kredi Programı
+    ozet: 'Yapay Zekâ Kredi Programı\nDiğer Destekler\nKOBİ\nNereden Başlamalıyım?\nİ' (300 kar) -> "Teknoloji ve yenilik odaklı KOBİ'lerin yapay zekâ teknolojilerini iş s" (282 kar)
+    detay: 'Yapay Zekâ Kredi Programı\nDiğer Destekler\nKOBİ\nNereden Başlamalıyım?\nİ' (1122 kar) -> 'Yapay Zekâ Kredisi (KOSGEB). Programın amacı: teknoloji ve yenilik oda' (1749 kar)
+    basvuru_sartlari: 'None' (0 kar) -> '["Türk Ticaret Kanunu\'nda tanımlı gerçek veya tüzel kişi statüsünde KO' (393 kar)
+    basvuru_yeri: 'None' (0 kar) -> 'KOSGEB bilgi sistemi (www.kosgeb.gov.tr ve/veya e-Devlet) üzerinden Ya' (94 kar)
+    basvuru_suresi: 'None' (0 kar) -> 'Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üz' (139 kar)
+    tesvil_tutari: 'Kredi 500.000 – 5.000.000 TL; vade 24 ay (ilk 12 ay ödemesiz); GO Diji' (119 kar) -> 'Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12' (230 kar)
+    not: Denetim2-T3 2026-10-07: menü kazıması yerine sayfanın SSS içeriği (uygunluk: KOBİ + KOSGEB kaydı + Teknogirişim Rozeti + GO Dijital Cüzdan; faiz/komis
+[7] İstihdamı Koruma Destek Programı
+    ozet: 'İstihdamı Koruma Destek Programı\nTeknoloji Merkezi Destek Programı\nSek' (300 kar) -> 'İmalat sanayinde (NACE Kısım C) istihdamın korunması için KOBİ ve büyü' (223 kar)
+    detay: 'İstihdamı Koruma Destek Programı\nTeknoloji Merkezi Destek Programı\nSek' (8757 kar) -> 'İstihdamı Koruma Destek Programı (KOSGEB). Amaç: imalat sanayi sektörl' (2061 kar)
+    tesvil_tutari: 'Kredi üst limiti KOBİ 50 Milyon TL, büyük işletme 150 Milyon TL; banka' (109 kar) -> '2026-2: kredi üst limiti KOBİ 50 Milyon TL, büyük işletme 150 Milyon T' (340 kar)
+    basvuru_sartlari: "['Başvuru yapacak işletmenin; Merkez veya şube; ana veya yan faaliyet " (236 kar) -> "['Merkez veya şube; ana veya yan faaliyet NACE kodunun Kısım C – İmala" (404 kar)
+    not: Denetim2-T3 2026-10-07: kayıt metni 2026-1 dönemine aitti (2025 Kasım-Aralık referansı, 30 Nisan/Haziran sonu); 2026-2 canlı metniyle değiştirildi (re
+
+DRY-RUN: 5 kayıt

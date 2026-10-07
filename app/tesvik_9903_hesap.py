@@ -448,6 +448,49 @@ def hesapla(
     return h
 
 
+def destek_unsurlari_ozeti(program: str, bolge: int | None) -> str:
+    """Programın destek unsurlarını (oran/süre, madde atıflı) tek satırda özetler.
+
+    Danışman bağlamına 9903 kayıtlarının yanına eklenir: ölçüm 2026-10-07'de model
+    "SGK işveren hissesi veya faiz desteğinin oranı/süresi bağlamda yok" diyordu; oysa
+    bu sabitler Karar metninden okunmuş hâlde bu modülde duruyordu. Yatırım tutarı
+    bilinmediği için TL tutar değil, oran ve süre verilir."""
+    if program not in PROGRAMLAR:
+        return ""
+    hamle = program in KALKINMA_HAMLESI
+    parcalar = [f"vergi indirimi: yatırıma katkı oranı %{YATIRIMA_KATKI_ORANI[program] * 100:.0f}, "
+                f"vergi %{VERGI_INDIRIM_ORANI * 100:.0f} indirimli uygulanır (MADDE 20)"]
+    if bolge in SIGORTA_PRIMI_KARSILAMA:
+        sure = (SIGORTA_PRIMI_SURESI_HAMLE if hamle else SIGORTA_PRIMI_SURESI)[bolge]
+        parcalar.append(f"sigorta primi işveren hissesi: %{SIGORTA_PRIMI_KARSILAMA[bolge] * 100:.0f}, "
+                        f"{sure} yıl (MADDE 18{'/3' if hamle else ''}, {bolge}. bölge)")
+        if bolge == 6:
+            parcalar.append("sigorta primi işçi hissesi: asgari ücrete tekabül eden kısım 10 yıl (MADDE 19, 6. bölge)")
+    else:
+        parcalar.append("sigorta primi işveren hissesi: oran/süre bölgeye bağlı; profilde il yok (MADDE 18)")
+    yuzde, puan = FAIZ_DESTEGI[program]
+    kisit = FAIZ_DESTEGI_BOLGE_KISITI.get(program)
+    if kisit and bolge is not None and bolge not in kisit:
+        parcalar.append(f"faiz/kâr payı desteği: bu programda yalnızca {', '.join(str(b) for b in sorted(kisit))}. "
+                        f"bölgelerde; {bolge}. bölgede YOK (MADDE 15/1-c)")
+    else:
+        parcalar.append(f"faiz/kâr payı desteği: repo oranının %{yuzde * 100:.0f}'i, azami {puan:g} puan; kredinin "
+                        f"sabit yatırımın %{FAIZ_DESTEGI_KREDI_ORANI * 100:.0f}'ine kadar olan kısmı, azami "
+                        f"{FAIZ_DESTEGI_AZAMI_YIL} yıl (MADDE 15"
+                        + (f"; yalnızca {', '.join(str(b) for b in sorted(kisit))}. bölgeler, 15/1-c" if kisit else "") + ")")
+    if hamle:
+        ust, tavan = MAKINE_DESTEGI_TAVANI[program]
+        parcalar.append(f"makine desteği: birim fiyatı {_tl(MAKINE_BIRIM_FIYAT_ESIGI)} üstü makinelerde "
+                        f"%{MAKINE_DESTEGI_ORANI * 100:.0f}, sabit yatırımın %{ust * 100:.0f}'i ve {_tl(tavan)} tavan; "
+                        f"faiz desteğiyle birlikte alınamaz (MADDE 16)")
+    else:
+        parcalar.append("makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1)")
+    if bolge in ASGARI_SABIT_YATIRIM:
+        parcalar.append(f"asgari sabit yatırım: {_tl(ASGARI_SABIT_YATIRIM[bolge])} (MADDE 5, EK-3'te ayrıca "
+                        f"belirtilmemişse); başvuru son tarihi {BASVURU_SON_TARIHI}")
+    return "; ".join(parcalar) + "."
+
+
 def programlari_karsilastir(il: str | None, sabit_yatirim_tl: float,
                             **kw) -> list[DestekHesabi]:
     """Bes programi ayni yatirim icin karsilastirir, en yuksek destek basta.

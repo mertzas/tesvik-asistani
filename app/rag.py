@@ -32,6 +32,8 @@ from app.kobi import kobi_sinifi
 from app.girisim import GIRISIM_PROMPT_EKI, girisim_baglam_metni, girisim_modu_mu
 from app.nace_extraction import clean_grant_text
 from app.tesvik_9903_uygunluk import SIRALAMA_ETKISI as UYGUNLUK_9903_ETKISI, kayit_icin as uygunluk_9903
+from app.tesvik_9903_hesap import destek_unsurlari_ozeti
+from app.nace_9903 import il_bolgesi
 from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu, settings
 from sqlalchemy import or_
 
@@ -112,7 +114,9 @@ bulunur; bu, Karar metnindeki listelerden (EK-1, EK-3) ve profilden hesaplanmı�
 DEĞİL" ise programı önermeyip gerekçesini (madde numarasıyla) söyle; "ŞARTLI" ve "DÜŞÜK \
 OLASILIK" için şartı açıkça yaz; "BELİRLENEMEDİ" için hangi listenin teyit edilmesi \
 gerektiğini belirt. Bu değerlendirmeyi kendi tahmininle çelişecek biçimde değiştirme. \
-"SİSTEMİN ELEDİĞİ 9903 PROGRAMLARI" bloğu varsa, kullanıcı yatırım teşviki sorduğunda bu \
+Kaydın altında "DESTEK UNSURLARI" satırı varsa vergi indirimi, sigorta primi, faiz/kâr payı ve \
+makine desteğinin oran/sürelerini ORADAN ve madde numarasıyla ver; TL tutarı yatırım tutarı \
+bilinmeden hesaplama. "SİSTEMİN ELEDİĞİ 9903 PROGRAMLARI" bloğu varsa, kullanıcı yatırım teşviki sorduğunda bu \
 programlara neden başvuramayacağını gerekçe ve madde numarasıyla açıkça söyle; yürürlükten \
 kalkmış eski sistemleri (Genel/Bölgesel Teşvik vb.) seçenek gibi sunma.
 
@@ -789,6 +793,13 @@ def _hazirla(query: str, llm_kullan: bool, profil_kaydi) -> Hazirlik:
     if not matches:
         return Hazirlik([], {}, "", False)
     notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi).items()}
+    # 9903 kayıtlarına Karar'daki oran/süreler (Md.15/16/18/19/20, profil bölgesine göre)
+    # eklenir: ölçüm 2026-10-07'de model "SGK/faiz desteğinin oranı bağlamda yok" diyordu.
+    bolge = il_bolgesi(profil_kaydi.bolge) if getattr(profil_kaydi, "bolge", None) else None
+    for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi).items():
+        ozet = destek_unsurlari_ozeti(u.program, bolge)
+        if ozet:
+            notlar[i] += f"\nDESTEK UNSURLARI (Karar metninden, profil bölgesine göre): {ozet}"
     elenen = elenen_9903_metni(query, profil_kaydi) if llm_kullan else ""
     eski = eski_sistem_notu(query) if llm_kullan else ""
     if eski and ESKI_SISTEM_NOTU not in elenen:

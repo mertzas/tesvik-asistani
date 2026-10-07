@@ -75,9 +75,9 @@ def test_kisi_yasi_isletme_yasi_sayilmaz():
 @pytest.fixture
 def tarim_db(db_session):
     db_session.add_all([
-        _t(160, "Tarım Bakanlığı", "Hububat ve Baklagil Üretim Destekleri (Mazot-Gübre)", ["tarim"], "tahil_baklagil",
+        _t(160, "Tarım Bakanlığı", "Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim)", ["tarim"], "tahil_baklagil",
            genislik="dar"),
-        _t(161, "Tarım Bakanlığı", "Meyve-Sebze Üretim Destekleri (Mazot-Gübre)", ["tarim"], "sebze_meyve", genislik="dar"),
+        _t(161, "Tarım Bakanlığı", "Meyve-Sebze Üretim Destekleri (Temel Destek)", ["tarim"], "sebze_meyve", genislik="dar"),
         _t(79, "Tarım Bakanlığı", "Sera/Örtüaltı Tarım Destekleri", ["tarim"], "sera", genislik="dar"),
         _t(76, "Tarım Bakanlığı", "Hayvancılık Destekleri", ["tarim"], "hayvancilik", genislik="dar"),
         _t(77, "Tarım Bakanlığı", "Organik Tarım Destekleri", ["tarim"], "organik", genislik="genis",

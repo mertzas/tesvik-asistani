@@ -24,10 +24,10 @@ BEKLENEN = [
     ("Sera/Örtüaltı Tarım Destekleri",
      BIRIM,
      BIRIM + T.IYI_TARIM["1_ortualti"][0] * BIRIM),
-    ("Hububat ve Baklagil Üretim Destekleri (Mazot-Gübre)",
+    ("Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim)",
      2 * T.TEMEL_DESTEK_KATEGORILERI[1][0] * BIRIM,                       # temel + planlı, mercimek/nohut
      2 * T.TEMEL_DESTEK_KATEGORILERI[2][0] * BIRIM),                      # temel + planlı, buğday/arpa/mısır
-    ("Meyve-Sebze Üretim Destekleri (Mazot-Gübre)", BIRIM, BIRIM),
+    ("Meyve-Sebze Üretim Destekleri (Temel Destek)", BIRIM, BIRIM),
 ]
 
 
@@ -47,8 +47,9 @@ def test_tohum_metni_sinirlari_soyluyor(baslik, alt, ust):
         assert f"{alt:,.0f}".replace(",", ".") in metin
 
 
-@pytest.mark.parametrize("eski", ["₺500 - ₺2.000", "m² başına ₺50", "mazot+gübre desteği, ürün grubuna göre"])
+@pytest.mark.parametrize("eski", ["₺500 - ₺2.000", "m² başına ₺50", "mazot+gübre desteği, ürün grubuna göre",
+                                  "(Mazot-Gübre)", "hububata göre daha yüksek"])
 def test_eski_kaynaksiz_metinler_yok(eski):
     for d in TARIM_BAKANLIGI_DESTEKLERI:
-        assert eski not in (d.get("tesvil_tutari") or ""), d["baslik"]
-        assert eski not in (d.get("tutari_hesaplama_formulu") or ""), d["baslik"]
+        for alan in ("baslik", "ozet", "detay", "tesvil_tutari", "tutari_hesaplama_formulu"):
+            assert eski not in (d.get(alan) or ""), (d["baslik"], alan)

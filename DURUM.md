@@ -52,11 +52,17 @@ Son güncelleme: 2026-10-08 (güvenlik kod listesi 1–3: JWT iptali, doğrulama
   3. CSP `script-src 'self'`: 5 sayfanın betiği `app/static/js/`, 28 olay özniteliği `data-tikla/degisim/gonder` +
      EYLEMLER listesi; çilek Tailwind'i `app/static/css/cilek.css` (yeniden derleme komutu `tools/tailwind/tailwind.config.js`).
      style-src 'unsafe-inline' bilerek kaldı. Testler `tests/test_csp.py`. Test 866.
+- **Hemen yapılabilecekler listesi** (2026-10-08, tamamlandı, 9 commit): testler gerçek SMTP'ye bağlanamaz
+  (conftest koruması); günlük cp1254 emoji hatası; kilitli DB → JSON 503 + Retry-After, beklenmeyen hata → JSON 500 +
+  hata kimliği; girdi uzunluk sınırları (çilek, giriş/silme parolası; geçersiz ortam tipi 500 → 422); Türkçe 422
+  (`app/dogrulama_mesajlari.py`, gönderilen değer yansıtılmaz) + statik dosyalarda `Cache-Control: no-cache`;
+  lifespan (on_event kalktı) + isteğe bağlı Sentry (`SENTRY_DSN`, yerel değişken/gövde gönderilmez); kart ve 9903/
+  veri tazeliği metinleri Türkçe karakterli; profil düğmeleri stilli + "Başlarken" rehberi; tur8 başlık göçü
+  (160/161 "(Mazot-Gübre)" → temel destek; yedek `tesvikler_oncesi_tur8.db.bak`). Test 892+.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
-  doğrulanmalı. `tests/test_hesap_belirtec.py::test_smtp_yoksa_istek_yine_de_basarili` gerçek EmailService'i kullandığı
-  için SMTP doluyken gerçek bağlantı deniyor (test hijyeni).
+  doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa
-  yetersiz), profil düğmeleri stilsiz, kayıt sonrası onboarding yok, 422 doğrulama mesajları İngilizce (pydantic).
+  yetersiz), Sentry için DSN (AB bölgesi) ve KVKK metnine eklenmesi.
 
 ## Komutlar
 - Test: `PYTHONIOENCODING=utf-8 python -m pytest -q` · Lint: `python -m flake8 app/ tests/ scripts/ --select=E9,F63,F7,F82,F401,F811`

@@ -200,13 +200,17 @@ TARIM_BAKANLIGI_DESTEKLERI = [
         "kaynak_url": "https://www.tarimorman.gov.tr/TRGM#sulama-yatirimlari"
     },
     {
-        "baslik": "Hububat ve Baklagil Üretim Destekleri (Mazot-Gübre)",
-        "ozet": "Buğday, arpa, mercimek, nohut vb. hububat/baklagil üreticilerine dekar başına mazot ve gübre desteği.",
+        # Başlık kazıyıcının eşleşme anahtarıdır; değişirse veritabanı da aynı anda güncellenmeli
+        # (scripts/fix_veri_2026_10_08_basliklar_tur8.py). 2026'da mazot + gübre "temel destek" oldu.
+        "baslik": "Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim)",
+        "ozet": ("Buğday, arpa, mısır, mercimek, nohut vb. üreticilerine dekar başına temel destek ve planlı üretim "
+                 "desteği (2026'da mazot ve gübre desteği 'temel destek' adıyla birleşti)."),
         "detay": (
-            "Tarım ve Orman Bakanlığı her üretim sezonu için 'Bitkisel Üretim Destekleme Birim "
-            "Fiyatları' kararnamesiyle hububat ve baklagil üreticilerine dekar başına mazot ve "
-            "gübre masraflarını karşılamaya yönelik doğrudan destek öder. Tutarlar ürün grubuna "
-            "göre yıllık kararname ile belirlenir."
+            "Tarım ve Orman Bakanlığı her üretim yılı için 'Bitkisel Üretim Destekleme Birim Fiyatları' ile "
+            "ÇKS'ye kayıtlı üreticilere dekar başına doğrudan destek öder. 2026'dan itibaren eski mazot ve gübre "
+            "destekleri 'temel destek' adıyla tek kalemde birleşti; hububat ve baklagilde buna ürün katsayısına "
+            "göre planlı üretim desteği eklenir. Sertifikalı tohum kullanımında ayrıca üretimi geliştirme desteği "
+            "ödenir."
         ),
         "kurum": "Tarım Bakanlığı",
         "hedef_kitle": "Hububat/baklagil üreten çiftçiler",
@@ -243,14 +247,15 @@ TARIM_BAKANLIGI_DESTEKLERI = [
         "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM#hububat-baklagil"
     },
     {
-        "baslik": "Meyve-Sebze Üretim Destekleri (Mazot-Gübre)",
-        "ozet": "Sebze ve meyve üreticilerine dekar başına mazot ve gübre desteği.",
+        "baslik": "Meyve-Sebze Üretim Destekleri (Temel Destek)",
+        "ozet": ("Sebze ve meyve üreticilerine dekar başına temel destek (2026'da mazot ve gübre desteği 'temel "
+                 "destek' adıyla birleşti); fidan kullanımında ilave destek."),
         "detay": (
-            "Tarım ve Orman Bakanlığı her üretim sezonu için 'Bitkisel Üretim Destekleme Birim "
-            "Fiyatları' kararnamesiyle sebze ve meyve üreticilerine dekar başına mazot ve gübre "
-            "masraflarını karşılamaya yönelik doğrudan destek öder. Tutarlar ürün grubuna göre "
-            "yıllık kararname ile belirlenir ve genelde hububata göre daha yüksektir (yoğun "
-            "işçilik/girdi gerektiren ürünler)."
+            "Tarım ve Orman Bakanlığı her üretim yılı için 'Bitkisel Üretim Destekleme Birim Fiyatları' ile "
+            "ÇKS'ye kayıtlı üreticilere dekar başına doğrudan destek öder. 2026'dan itibaren eski mazot ve gübre "
+            "destekleri 'temel destek' adıyla birleşti; sebze ve meyve 1. kategoride yer alır ve planlı üretim "
+            "desteği kapsamında değildir. Meyve bahçesi tesisinde standart veya sertifikalı fidan kullanımına "
+            "ayrıca fidan desteği ödenir."
         ),
         "kurum": "Tarım Bakanlığı",
         "hedef_kitle": "Sebze/meyve üreten çiftçiler",

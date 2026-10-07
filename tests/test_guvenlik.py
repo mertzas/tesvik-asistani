@@ -110,3 +110,21 @@ def test_secret_key_nobeti(monkeypatch):
         m.secret_key_kontrolu()
     monkeypatch.setattr(settings, "SECRET_KEY", "k" * 32)
     m.secret_key_kontrolu()
+
+
+def test_html_sayfalara_csp_gelir_api_ve_docs_haric(client):
+    for yol in ("/", "/dashboard", "/kvkk"):
+        r = client.get(yol)
+        if r.status_code == 200 and r.headers.get("content-type", "").startswith("text/html"):
+            csp = r.headers["Content-Security-Policy"]
+            assert "frame-ancestors 'none'" in csp and "object-src 'none'" in csp
+            assert "base-uri 'self'" in csp and "connect-src 'self'" in csp
+    assert "Content-Security-Policy" not in client.get("/health").headers
+    d = client.get("/docs")
+    assert "Content-Security-Policy" not in d.headers, "Swagger CDN'den script yükler"
+
+
+def test_csp_dis_script_kaynagi_yalniz_tailwind():
+    from app.main import CSP
+    script = [x for x in CSP.split("; ") if x.startswith("script-src")][0]
+    assert script.count("https://") == 1 and "cdn.tailwindcss.com" in script

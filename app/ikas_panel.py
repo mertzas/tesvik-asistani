@@ -16,9 +16,12 @@ FinancialProfile'ı otomatik doldurur (elle giriş yok).
 
 Faz 3: GET /api/ikas/panel - teşvik eşleşmesi + bütçe önerisini tek
 çağrıda döner (İKAS admin paneline gömülecek iframe/ekran için).
-POST /api/ikas/webhook/order-created - yeni sipariş geldiğinde İKAS'ın
+POST /api/ikas/webhook/order-created/{belirtec} - yeni sipariş geldiğinde İKAS'ın
 çağıracağı webhook, otomatik yeniden senkronizasyonu tetikler.
 """
+import base64
+import hashlib
+import hmac
 from datetime import datetime, timedelta, timezone
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
@@ -36,6 +39,17 @@ from app.budget import hesapla as butce_hesapla
 from app.models import FinancialProfile
 
 router = APIRouter(prefix="/api/ikas", tags=["ikas-entegrasyon"])
+
+
+def ikas_webhook_belirteci(store_name: str) -> str:
+    """Mağazaya özgü, tahmin edilemez webhook adres belirteci: HMAC-SHA256(SECRET_KEY, mağaza).
+
+    İKAS geliştirici belgesi (ikas.dev, erişim 2026-10-07) webhook'lar için imza/secret mekanizması
+    TANIMLAMIYOR (yalnızca endpoint + scope). Gönderen imzalamadığı için doğrulama biz tanımladığımız
+    adresin kendisine konur: webhook'u kaydederken bu belirteçli URL verilir, belirteci bilmeyen
+    kimse tetikleyemez. SECRET_KEY değişirse belirteçler geçersiz olur (webhook yeniden kaydedilir)."""
+    ozet = hmac.new(settings.SECRET_KEY.encode(), f"ikas-webhook:{store_name}".encode(), hashlib.sha256).digest()
+    return base64.urlsafe_b64encode(ozet).decode().rstrip("=")
 
 
 def _redirect_uri() -> str:
@@ -134,6 +148,8 @@ def ikas_baglanti_durumu(
         "store_name": baglanti.store_name,
         "son_senkron_zamani": baglanti.son_senkron_zamani,
         "son_senkron_hata": baglanti.son_senkron_hata,
+        # İKAS'ta webhook (store/order/created) kaydederken endpoint olarak bu adres verilmeli.
+        "webhook_url": f"{settings.APP_URL}/api/ikas/webhook/order-created/{ikas_webhook_belirteci(baglanti.store_name)}",
     }
 
 
@@ -216,28 +232,24 @@ def ikas_gomulu_panel(
     }
 
 
-# Kimlik dogrulamasi YOK (Ikas imza dogrulamasi henuz eklenmedi) -
-# en azindan IP basina oran sinirlanir.
-@router.post("/webhook/order-created", dependencies=[Depends(ip_hiz_siniri(60))])
+# Imza yerine mağazaya özgü adres belirteci (bkz. ikas_webhook_belirteci); ayrıca IP başına oran sınırı.
+@router.post("/webhook/order-created/{belirtec}", dependencies=[Depends(ip_hiz_siniri(60))])
 def ikas_webhook_order_created(
-    payload: dict,
+    belirtec: str,
+    payload: dict | None = None,
     db: Session = Depends(get_db),
 ):
     """Faz 3 - İKAS'ın yeni sipariş oluştuğunda çağıracağı webhook.
-    storeName ile ilgili org'u bulup otomatik yeniden senkronizasyon
-    tetikler - kullanıcı elle 'yenile' demeden ciro güncel kalır.
-
-    NOT: Bu bir İSKELET'tir - gerçek İKAS webhook imza doğrulaması
-    (HMAC vb.) İKAS'ın webhook dokümantasyonunda tanımlanan yönteme göre
-    eklenmeli, burada henüz uygulanmadı (gerçek webhook secret'ı olmadan
-    doğrulanamaz)."""
-    store_name = payload.get("storeName") or payload.get("merchantId")
-    if not store_name:
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="storeName eksik")
-
-    baglanti = db.query(IkasBaglanti).filter(IkasBaglanti.store_name == store_name).first()
-    if baglanti is None or baglanti.baglanti_durumu != "bagli":
-        return {"status": "ignored", "reason": "magaza bagli degil"}
+    Adresteki belirteçten bağlı mağaza bulunur (gövdedeki alan adlarına güvenilmez: İKAS belgesi
+    gövde şemasını tanımlamıyor) ve otomatik yeniden senkronizasyon tetiklenir; kullanıcı elle
+    'yenile' demeden ciro güncel kalır. Geçersiz belirteç 401 döner."""
+    baglanti = None
+    for b in db.query(IkasBaglanti).filter(IkasBaglanti.baglanti_durumu == "bagli").all():
+        if hmac.compare_digest(belirtec, ikas_webhook_belirteci(b.store_name)):
+            baglanti = b
+            break
+    if baglanti is None:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Geçersiz webhook adresi")
 
     sonuc = siparisleri_getir(baglanti.store_name, baglanti.access_token)
     if sonuc.basarili:

@@ -122,13 +122,38 @@ GUVENLIK_BASLIKLARI = {
 }
 
 
+# Content-Security-Policy (Denetim 2 / Aşama E). Paneller satır içi script/stil ve onclick gibi olay
+# öznitelikleri kullandığı için script-src'de 'unsafe-inline' KALIYOR; bu, enjekte edilmiş satır içi
+# script'i engellemez (bilinen kalan risk: olay yöneticileri nonce'a taşınınca kaldırılır). Yine de:
+# dış alan adından script/stil/görsel/bağlantı yükleme, <base> ile yön değiştirme, form hedefi değiştirme,
+# <object>/<embed> ve çerçeveleme engellenir; veri sızdırma yolu connect-src 'self' ile kapanır.
+# Tek dış kaynak: çilek panelinin Tailwind CDN'i.
+CSP = "; ".join([
+    "default-src 'self'",
+    "script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com",
+    "style-src 'self' 'unsafe-inline'",
+    "img-src 'self' data:",
+    "font-src 'self' data:",
+    "connect-src 'self'",
+    "object-src 'none'",
+    "base-uri 'self'",
+    "form-action 'self'",
+    "frame-ancestors 'none'",
+])
+# Swagger/ReDoc CDN'den script yükler; CSP'ye alınmaz (yalnızca HTML paneller ve sayfalar kapsanır).
+CSP_MUAF_YOLLAR = ("/docs", "/redoc")
+
+
 @app.middleware("http")
 async def guvenlik_basliklari(request: Request, call_next):
-    """Her yanıta temel güvenlik başlıkları (clickjacking, MIME sniffing, referrer sızıntısı).
-    CSP bilinçli olarak eklenmedi: paneller satır içi script/stil kullanıyor (Aşama 5)."""
+    """Her yanıta temel güvenlik başlıkları (clickjacking, MIME sniffing, referrer sızıntısı);
+    HTML yanıtlara ayrıca Content-Security-Policy."""
     response = await call_next(request)
     for k, v in GUVENLIK_BASLIKLARI.items():
         response.headers.setdefault(k, v)
+    if (response.headers.get("content-type", "").startswith("text/html")
+            and not request.url.path.startswith(CSP_MUAF_YOLLAR)):
+        response.headers.setdefault("Content-Security-Policy", CSP)
     return response
 
 # Include admin routes

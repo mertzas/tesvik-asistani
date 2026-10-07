@@ -75,6 +75,19 @@ let YENILEME_TIMER = null;
 // tek-anahtarli oturumlar icin de burada ikisini kontrol ediyoruz.
 function token() { return localStorage.getItem(TOKEN_KEY) || localStorage.getItem('auth_token'); }
 
+// XSS savunması (Denetim 2 / Aşama E): şablonlar API metinlerini kaçışsız innerHTML'e koyuyor
+// (ör. kullanıcının girdiği parsel adı). Tüm yanıtlardaki metinler tek noktada HTML-kaçışlanır;
+// sayılar ve alan adları değişmez. Yanıtlar yalnızca HTML bağlamında kullanılır.
+function kacis(s) {
+  return s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function temizle(v) {
+  if (typeof v === 'string') return kacis(v);
+  if (Array.isArray(v)) return v.map(temizle);
+  if (v && typeof v === 'object') return Object.fromEntries(Object.entries(v).map(([k, x]) => [k, temizle(x)]));
+  return v;
+}
+
 async function api(path, options = {}) {
   const res = await fetch(API + path, {
     ...options,
@@ -88,7 +101,7 @@ async function api(path, options = {}) {
     const detay = await res.json().catch(() => ({}));
     throw new Error(detay.detail || `Sunucu hatası (${res.status})`);
   }
-  return res.json();
+  return temizle(await res.json());
 }
 
 function riskSinifi(seviye) { return 'risk-' + (seviye || 'veri_yok'); }

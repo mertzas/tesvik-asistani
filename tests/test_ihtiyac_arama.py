@@ -134,7 +134,7 @@ def test_answer_profili_yalnizca_yerel_elemede_kullanir(veri, monkeypatch):
     """profil_kaydi dışarı gönderilmez; LLM'e giden bağlamda tarım programı olmamalı."""
     gorulen = {}
 
-    def sahte_claude(query, matches, profil, notlar=None):
+    def sahte_claude(query, matches, profil, notlar=None, elenen=""):
         gorulen["idler"] = _idler(matches)
         gorulen["profil"] = profil
         return "yanıt"

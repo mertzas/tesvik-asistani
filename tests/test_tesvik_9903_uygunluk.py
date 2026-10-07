@@ -129,7 +129,7 @@ def test_danisman_baglamina_sistem_degerlendirmesi_eklenir(db_session, monkeypat
     _programlar(db_session)
     gorulen = {}
 
-    def sahte(query, matches, profil, notlar=None):
+    def sahte(query, matches, profil, notlar=None, elenen=""):
         gorulen["notlar"] = notlar
         gorulen["baglam"] = rag._baglam_metni(matches, profil, notlar)
         return "yanıt"
@@ -161,3 +161,32 @@ def test_seed_sartlari_ek3_sartini_yalnizca_ilgili_programlara_yazar():
     for parca in ("teknoloji-hamlesi", "yerel-kalkinma-hamlesi", "stratejik-hamle"):
         assert "ARANMAZ" in program_sartlari(parca)[0], parca
     assert any("MADDE 5/6" in x for x in program_sartlari("stratejik-hamle")), "genel şartlar korunmalı"
+
+
+def test_elenen_9903_programlari_baglama_gerekceyle_girer(db_session, monkeypatch):
+    """Elenen program bağlamda hiç olmazsa danışman 'teşvik belgesi alabilir miyim'
+    sorusuna 'bilgim yok' diyordu."""
+    monkeypatch.setattr(rag, "SessionLocal", sessionmaker(bind=db_session.get_bind()))
+    _programlar(db_session)
+    metin = rag.elenen_9903_metni("makine yatırımı için teşvik belgesi", _profil("10.71"))
+    assert "Hedef Yatırımlar" in metin and "UYGUN DEĞİL" in metin and "MADDE 5/1" in metin
+    assert "yürürlükten kalkmıştır" in metin
+    assert "Teknoloji Hamlesi" not in metin, "yalnızca elenenler listelenir"
+    assert rag.elenen_9903_metni("makine yatırımı", _profil("28.93")) == ""
+    assert rag.elenen_9903_metni("ihracat desteği", _profil("10.71")) == "", "yatırım sorusu değil"
+    assert rag.elenen_9903_metni("makine yatırımı", None) == ""
+
+
+def test_elenen_blok_danisman_baglamina_eklenir(db_session, monkeypatch):
+    monkeypatch.setattr(rag, "SessionLocal", sessionmaker(bind=db_session.get_bind()))
+    _programlar(db_session)
+    gorulen = {}
+
+    def sahte(query, matches, profil, notlar=None, elenen=""):
+        gorulen["baglam"] = rag._baglam_metni(matches, profil, notlar, elenen)
+        return "yanıt"
+
+    monkeypatch.setattr(rag, "_claude_cevap", sahte)
+    rag.answer("makine yatırımı için teşvik", {"sektör": "imalat"}, profil_kaydi=_profil("10.71"))
+    assert "SİSTEMİN ELEDİĞİ 9903 PROGRAMLARI" in gorulen["baglam"]
+    assert "SİSTEMİN ELEDİĞİ" in rag.SISTEM_PROMPTU

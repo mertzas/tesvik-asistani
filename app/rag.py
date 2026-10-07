@@ -104,7 +104,10 @@ SİSTEM ÖN DEĞERLENDİRMESİ: Bazı kayıtların altında "SİSTEM ÖN DEĞERL
 bulunur; bu, Karar metnindeki listelerden (EK-1, EK-3) ve profilden hesaplanmıştır. "UYGUN \
 DEĞİL" ise programı önermeyip gerekçesini (madde numarasıyla) söyle; "ŞARTLI" ve "DÜŞÜK \
 OLASILIK" için şartı açıkça yaz; "BELİRLENEMEDİ" için hangi listenin teyit edilmesi \
-gerektiğini belirt. Bu değerlendirmeyi kendi tahmininle çelişecek biçimde değiştirme.
+gerektiğini belirt. Bu değerlendirmeyi kendi tahmininle çelişecek biçimde değiştirme. \
+"SİSTEMİN ELEDİĞİ 9903 PROGRAMLARI" bloğu varsa, kullanıcı yatırım teşviki sorduğunda bu \
+programlara neden başvuramayacağını gerekçe ve madde numarasıyla açıkça söyle; yürürlükten \
+kalkmış eski sistemleri (Genel/Bölgesel Teşvik vb.) seçenek gibi sunma.
 
 NET VE DÜRÜST ELEME: Şirket veya proje bir program için uygun değilse bunu doğrudan, \
 gerekçesiyle söyle; hangi şartı sağlamadığını (NACE/sektör, KOBİ ölçeği, çalışan/ciro \
@@ -259,6 +262,34 @@ def profil_9903_degerlendirmesi(kayitlar, profil_kaydi) -> dict:
         if u is not None:
             sonuc[t.id] = u
     return sonuc
+
+
+ESKI_SISTEM_NOTU = (
+    "2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik Yatırımların Teşviki) "
+    "9903 sayılı Karar ile yürürlükten kalkmıştır; bu eski sistemlere başvurulamaz.")
+
+
+def elenen_9903_metni(query: str, profil_kaydi) -> str:
+    """Profil nedeniyle elenen 9903 programları - danışman 'neden yok' sorusunu yanıtlayabilsin.
+
+    Elenen kayıt bağlama hiç girmezse model "bu program hakkında bilgim yok" diyor ve
+    kullanıcının asıl sorusuna ("teşvik belgesi alabilir miyim?") cevap veremiyordu
+    (ölçüm 2026-10-07). Yalnızca yatırım ihtiyacı olan sorularda eklenir."""
+    if profil_kaydi is None or "yatirim" not in soru_ihtiyaclari(query):
+        return ""
+    db = SessionLocal()
+    try:
+        kayitlar = [t for t in db.query(Tesvik).all() if t.aktif_mi is not False]
+        degerlendirme = profil_9903_degerlendirmesi(kayitlar, profil_kaydi)
+        satirlar = [f"- {t.baslik}: {degerlendirme[t.id].metin()}"
+                    for t in kayitlar
+                    if t.id in degerlendirme and degerlendirme[t.id].durum == "uygun_degil"]
+    finally:
+        db.close()
+    if not satirlar:
+        return ""
+    return ("SİSTEMİN ELEDİĞİ 9903 PROGRAMLARI (Karar metnine göre bu profil için uygun değil):\n"
+            + "\n".join(satirlar) + f"\nNot: {ESKI_SISTEM_NOTU}")
 
 
 def _profile_uygun_mu(t: Tesvik, sirket, profil_kaydi) -> bool:
@@ -537,7 +568,7 @@ def _tesvik_detay_metni(m: Tesvik) -> str:
 
 
 def _baglam_metni(matches: list[Tesvik], profil: dict | None,
-                  notlar: dict[int, str] | None = None) -> str:
+                  notlar: dict[int, str] | None = None, elenen: str = "") -> str:
     notlar = notlar or {}
     kayitlar = "\n\n".join(
         _tesvik_detay_metni(m) + (f"\nSİSTEM ÖN DEĞERLENDİRMESİ (profilinize göre, Karar metninden): "
@@ -559,6 +590,8 @@ def _baglam_metni(matches: list[Tesvik], profil: dict | None,
         if kosgeb_il_iletisim else ""
     )
 
+    if elenen:
+        kayitlar = f"{kayitlar}\n\n{elenen}"
     if not profil:
         return f"TEŞVİK KAYITLARI:\n{kayitlar}{iletisim_blogu}\n\nKULLANICI PROFİLİ: (henüz girilmemiş)"
 
@@ -570,7 +603,7 @@ def _baglam_metni(matches: list[Tesvik], profil: dict | None,
 
 
 def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None,
-                  notlar: dict[int, str] | None = None) -> str | None:
+                  notlar: dict[int, str] | None = None, elenen: str = "") -> str | None:
     """Claude API ile bulunan kayitlari + kullanici profilini yorumlayip
     yapilandirilmis cevap uretir. API anahtari yoksa veya cagri basarisiz
     olursa None doner - cagiran taraf liste formatina duser, hicbir zaman
@@ -583,7 +616,7 @@ def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None,
     except ImportError:
         return None
 
-    baglam = _baglam_metni(matches, profil, notlar)
+    baglam = _baglam_metni(matches, profil, notlar, elenen)
 
     try:
         client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY)
@@ -672,8 +705,9 @@ def answer(query: str, profil: dict | None = None,
         )
 
     notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi).items()}
+    elenen = elenen_9903_metni(query, profil_kaydi) if llm_kullan else ""
     if llm_kullan:
-        claude_cevap = (_claude_cevap(query, matches, profil, notlar) if notlar
+        claude_cevap = (_claude_cevap(query, matches, profil, notlar, elenen) if (notlar or elenen)
                         else _claude_cevap(query, matches, profil))
         if claude_cevap is not None:
             return claude_cevap

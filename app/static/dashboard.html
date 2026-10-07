@@ -1712,6 +1712,9 @@
                         ${t.gerekce.length ? `<div class="meta" style="flex-direction:column; align-items:flex-start; gap:5px; margin-top:8px;">${t.gerekce.map(g => `<span>✓ ${escapeHtml(g)}</span>`).join("")}</div>` : ""}
                         ${t.eksik_kriterler.length ? `<div class="meta" style="flex-direction:column; align-items:flex-start; gap:5px; margin-top:8px; color:#856404;">${t.eksik_kriterler.map(g => `<span>⚠ ${escapeHtml(g)}</span>`).join("")}</div>` : ""}
 
+                        <button type="button" onclick="basvuruYoluAc(${Number(t.id)}, this)" style="margin-top:12px; padding:9px 16px; background:#0f4438; color:white; border:0; border-radius:6px; font-size:13px; font-weight:bold; cursor:pointer;">🧭 Bu desteği nasıl alırım?</button>
+                        <div id="yol-${Number(t.id)}" style="display:none;"></div>
+
                         <details style="margin-top:15px; padding-top:15px; border-top:1px solid #eee;">
                             <summary style="cursor:pointer; font-weight:bold; color:#667eea;">📋 Başvuru Rehberi</summary>
                             <div style="margin-top:10px; font-size:13px; line-height:1.6;">
@@ -1732,6 +1735,36 @@
                 `).join("") + kiyaslamaTablosuHtml;
             } catch (e) {
                 resultsDiv.innerHTML = `<div class="error">Hata: ${e.message}</div>`;
+            }
+        }
+
+        async function basvuruYoluAc(id, dugme) {
+            const kutu = document.getElementById("yol-" + id);
+            if (kutu.style.display === "block") { kutu.style.display = "none"; return; }
+            kutu.style.display = "block";
+            kutu.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+            try {
+                const res = await fetch(`${API_BASE}/tesvik/${id}/basvuru-yolu`, {
+                    headers: { "Authorization": `Bearer ${authToken}` }
+                });
+                if (!res.ok) { kutu.innerHTML = `<div class="error">Yol haritası alınamadı.</div>`; return; }
+                const d = await res.json();
+                const renk = { uyari: "#fdf3e2", kontrol: "#eef2ff", belge: "#f1f8f4", basvuru: "#e4efe9", takip: "#f5f5f5", yap: "#f5f5f5" };
+                const il = d.iletisim || d.kurum_iletisim;
+                const linkHtml = (u) => guvenliUrl(u) ? ` <a href="${guvenliUrl(u)}" target="_blank" rel="noopener">Resmi sayfa ↗</a>` : "";
+                kutu.innerHTML = `<div style="margin-top:12px; font-size:13px; line-height:1.6;">` +
+                    d.adimlar.map(a => `
+                        <div style="display:flex; gap:10px; margin-bottom:8px; padding:10px; border-radius:8px; background:${renk[a.tur] || "#f5f5f5"};">
+                            <div style="min-width:26px; height:26px; border-radius:50%; background:#0f4438; color:#fff; text-align:center; line-height:26px; font-weight:bold;">${a.no}</div>
+                            <div><strong>${escapeHtml(a.baslik)}</strong><div>${escapeHtml(a.aciklama)}${linkHtml(a.link)}</div>
+                            ${a.liste.length ? `<ul style="margin:5px 0 0 18px;">${a.liste.map(x => `<li>${escapeHtml(x)}</li>`).join("")}</ul>` : ""}</div>
+                        </div>`).join("") +
+                    (il ? `<div style="padding:10px; border:1px solid #ddd; border-radius:8px; margin-bottom:8px;"><strong>📞 ${escapeHtml(il.ad || "")}</strong><br>` +
+                        `${il.telefon ? "Tel: " + escapeHtml(il.telefon) + "<br>" : ""}${il.adres ? escapeHtml(il.adres) + "<br>" : ""}` +
+                        `${il.dogrulama_tarihi ? `<small>Doğrulama: ${escapeHtml(il.dogrulama_tarihi)}</small>` : "<small>Telefon doğrulanmadı; resmi sayfaya bakın.</small>"}${linkHtml(il.kaynak_url)}</div>` : "") +
+                    d.uyarilar.map(u => `<div style="color:#856404; font-size:12px;">⚠ ${escapeHtml(u)}</div>`).join("") + `</div>`;
+            } catch (e) {
+                kutu.innerHTML = `<div class="error">Hata: ${escapeHtml(e.message)}</div>`;
             }
         }
 

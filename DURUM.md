@@ -40,6 +40,8 @@ Son güncelleme: 2026-10-07 (Denetim 2 / Aşama F sonu). Oturuma bunu okuyarak b
 - Açık: 76 hayvancılık tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 10 kararsız akademik kayıt,
   profil düğmeleri stilsiz, kayıt sonrası onboarding yok.
 
+- **Başvuru yol haritası** (yeni): `app/basvuru_yolu.py` + `GET /api/tesvik/{id}/basvuru-yolu` + panelde "Bu desteği nasıl alırım?" düğmesi. Uygunluk→belge→başvuru kapısı→takip adımları; il müdürlüğü iletişimi yalnız doğrulanmış tablolardan. Test 817.
+
 ## Komutlar
 - Test: `PYTHONIOENCODING=utf-8 python -m pytest -q` · Lint: `python -m flake8 app/ tests/ scripts/ --select=E9,F63,F7,F82,F401,F811`
 - Sunucu: `python -m uvicorn app.main:app --host 127.0.0.1 --port 8000` · Persona ölçümü: `docs/olcum/.../asama3_olcum.py`

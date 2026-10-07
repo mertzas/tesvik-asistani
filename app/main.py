@@ -52,6 +52,7 @@ from app.schemas import (
 from app.rag import answer, answer_akis, profil_sozlugu, retrieve
 from app.billing import create_checkout_session, confirm_checkout_session, cancel_subscription, handle_webhook, get_plan_limits
 from app.admin import router as admin_router
+from app.basvuru_yolu import basvuru_yolu
 from app.matching import esles, toplam_tahmini_destek, tutari_tahmini_hesapla
 from app.budget import hesapla as butce_hesapla
 from app.cilek_panel import router as cilek_router
@@ -650,6 +651,28 @@ def tesvik_eslesme(
         tahmini_toplam_destek_min=tahmini_min,
         tahmini_toplam_destek_max=tahmini_max,
     )
+
+
+@app.get("/api/tesvik/{tesvik_id}/basvuru-yolu",
+         dependencies=[Depends(org_hiz_siniri(30))])
+def tesvik_basvuru_yolu(
+    tesvik_id: int,
+    current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
+):
+    """Bulunan teşvik için kişiselleştirilmiş adım adım başvuru yol haritası
+    (uygunluk -> belgeler -> başvuru kapısı -> takip). Profil yoksa genel yol döner."""
+    from app.models import Tesvik
+    t = db.query(Tesvik).filter(Tesvik.id == tesvik_id).first()
+    if t is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Teşvik bulunamadı")
+    profil = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
+    eksik: list[str] = []
+    if profil is not None:
+        eslesen = next((s for s in esles(profil, db, limit=500) if s.tesvik.id == t.id), None)
+        if eslesen is not None:
+            eksik = eslesen.eksik_kriterler
+    return basvuru_yolu(t, profil, db, eksik)
 
 
 @app.get("/api/butce-onerisi", response_model=ButceOnerisiResponse,

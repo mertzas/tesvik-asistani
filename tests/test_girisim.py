@@ -84,6 +84,14 @@ def test_metin_puan_ve_eksikleri_gosterir():
 @pytest.mark.parametrize("profil,soru,beklenen", [
     (_p(sektor="arge", sirket_turu="yok"), "destek var mı", True),
     (_p(sektor="arge", trl=5), "destek var mı", True),
+    (_p(sektor="arge", trl=6, sirket_turu="limited"), "destek var mı", True),
+    # TRL 8, 12 çalışan, 20 M TL ciro: ürün pazarda, girişim değil (ölçüm 2026-10-07 SaaS personası)
+    (_p(sektor="arge", trl=8, sirket_turu="limited", calisan_sayisi=12, yillik_ciro=20e6), "ihracat desteği", False),
+    (_p(sektor="arge", trl=9, sirket_turu="limited"), "yazılım girişimim için destek", True),
+    (_p(sektor="imalat", sirket_turu="limited", kurulus_tarihi=date.today().replace(year=date.today().year - 1)),
+     "makine alacağım", True),
+    (_p(sektor="imalat", sirket_turu="limited", kurulus_tarihi=date.today().replace(year=date.today().year - 10)),
+     "makine alacağım", False),
     (_p(sektor="imalat", sirket_turu="limited"), "makine alacağım", False),
     (None, "Yazılım girişimim için BiGG'e başvurabilir miyim?", True),
     (None, "prototip geliştiriyoruz, startup hibesi", True),

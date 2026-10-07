@@ -177,10 +177,24 @@ def huks(profil: Any, bugun: date | None = None) -> HUKS:
     return HUKS([_nace_statu(profil, bugun), _trl(profil), _finans(profil), _ekip()])
 
 
-def girisim_modu_mu(profil: Any, soru: str) -> bool:
-    """Girişim modu: profil şirketleşmemiş ya da TRL girilmişse, veya soru girişim dilindeyse."""
+# Girişim modu eşikleri: TRL 7+ ürün pazara çıkmış/ticarileşmiş demektir (TRL 8-9 pazarda ürün);
+# 3 yaşını geçmiş bir sermaye şirketi erken aşama sayılmaz (BiGG/tohum programlarının da hedefi değil).
+GIRISIM_TRL_UST = 6
+GIRISIM_YAS_UST_YIL = 3.0
+
+
+def girisim_modu_mu(profil: Any, soru: str, bugun: date | None = None) -> bool:
+    """Girişim modu: şirketleşmemiş profil, erken TRL (≤6), 3 yaşından genç şirket veya girişim
+    dilinde soru. Ölçüm 2026-10-07: `trl is not None` kuralı TRL 8, 12 çalışan, 20 M TL cirolu
+    SaaS firmasını da girişim moduna (HUKS + 4 bölüm) sokuyordu."""
     if profil is not None:
-        if getattr(profil, "sirket_turu", None) == "yok" or getattr(profil, "trl", None) is not None:
+        if getattr(profil, "sirket_turu", None) == "yok":
+            return True
+        trl = getattr(profil, "trl", None)
+        if trl is not None and trl <= GIRISIM_TRL_UST:
+            return True
+        yas = _yas_yil(getattr(profil, "kurulus_tarihi", None), bugun)
+        if yas is not None and yas <= GIRISIM_YAS_UST_YIL:
             return True
     return bool(_GIRISIM_SORU.search(_katla(soru)))
 

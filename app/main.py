@@ -17,7 +17,9 @@ from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy.orm import Session
 
-from app.models import init_db, get_db, Organization, User, Query, Tesvik, FinancialProfile, PlanType, MacroIndicator, settings
+from app.models import (init_db, get_db, Organization, User, Query, Tesvik, FinancialProfile, PlanType,
+                        MacroIndicator, IkasBaglanti, settings)
+from app.models_cilek import Parsel, SogukZincirOkuma
 from app.auth import (
     get_current_user,
     get_current_org,
@@ -38,6 +40,7 @@ from app.schemas import (
     PlanUpgrade,
     QueryResponse,
     AiRizaGuncelle,
+    HesapSilme,
     UsageStats,
     AnalyticsResponse,
     FinancialProfileCreate,
@@ -703,6 +706,47 @@ def get_query_history(
     ).order_by(Query.created_at.desc()).limit(limit).all()
 
     return queries
+
+
+# ============ HESAP SİLME (KVKK m.11) ============
+
+@app.delete("/api/organizations/me", dependencies=[Depends(org_hiz_siniri(5))])
+def hesabi_sil(
+    request: HesapSilme,
+    current_user: User = Depends(get_current_user),
+    current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
+):
+    """Hesabı ve organizasyona ait TÜM kişisel verileri kalıcı olarak siler (KVKK m.11/ç).
+
+    Denetim 2026-10-07: aydınlatma metni "hesabınızı sildirdiğinizde silinir" diyordu ama
+    kullanıcının kendi başına kullanabileceği bir silme yolu yoktu (yalnızca admin). Parola
+    teyidi ve açık onay ister; varsa Stripe aboneliği iptal edilir; silinenler: finansal profil,
+    sorgu geçmişi, İKAS bağlantısı, çilek paneli verileri, kullanıcılar, organizasyon.
+    """
+    if not request.onay:
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
+                            detail="Silme için açık onay (onay=true) gerekir.")
+    if not verify_password(request.password, current_user.hashed_password):
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Parola yanlış.")
+
+    org_id = current_org.id
+    if current_org.stripe_subscription_id:
+        try:
+            cancel_subscription(str(org_id), db)
+        except Exception:
+            # Abonelik iptali başarısız olsa da silme hakkı bekletilmez; günlüğe düşülür.
+            logger.exception("Hesap silme: Stripe aboneliği iptal edilemedi (org %s)", org_id)
+
+    db.query(FinancialProfile).filter(FinancialProfile.org_id == org_id).delete(synchronize_session=False)
+    db.query(IkasBaglanti).filter(IkasBaglanti.org_id == org_id).delete(synchronize_session=False)
+    db.query(SogukZincirOkuma).filter(SogukZincirOkuma.org_id == org_id).delete(synchronize_session=False)
+    for parsel in db.query(Parsel).filter(Parsel.org_id == org_id).all():
+        db.delete(parsel)  # ORM cascade: sensör/sulama/ilaçlama/hasat/gider kayıtları
+    db.delete(current_org)  # ORM cascade: users, queries
+    db.commit()
+    logger.info("Hesap silindi (org %s)", org_id)
+    return {"message": "Hesabınız ve tüm verileriniz kalıcı olarak silindi."}
 
 
 # ============ BILLING WEBHOOK ============

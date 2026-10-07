@@ -38,6 +38,12 @@ class UserSignup(BaseModel):
                     "Anthropic'e (ABD) aktarilmasina acik riza")
 
 
+class HesapSilme(BaseModel):
+    """KVKK m.11 silme hakkı: parola teyidi + açık onay (yanlışlıkla silmeye karşı)."""
+    password: str
+    onay: bool = Field(..., description="true: tüm hesap verilerinin kalıcı olarak silinmesini onaylıyorum")
+
+
 class AiRizaGuncelle(BaseModel):
     riza: bool = Field(..., description="true: riza ver, false: rizayi geri al")
 

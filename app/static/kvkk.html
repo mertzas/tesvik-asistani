@@ -218,7 +218,7 @@
 <h2>5. Saklama Süresi</h2>
 <ul>
   <li><strong>Hesap ve profil verileri:</strong> hesabınız açık olduğu sürece.
-      Hesabınızı sildirdiğinizde silinir.</li>
+      Hesabınızı sildiğinizde (aşağıdaki silme hakkı) anında ve kalıcı olarak silinir.</li>
   <li><strong>Sorgu geçmişi:</strong> hesabınız açık olduğu sürece; talebiniz
       hâlinde daha önce silinir.</li>
   <li><strong>Faturalama kayıtları:</strong> Vergi Usul Kanunu ve Türk Ticaret
@@ -234,7 +234,11 @@
   <li>İşleme amacını ve amaca uygun kullanılıp kullanılmadığını öğrenme</li>
   <li>Yurt içinde veya yurt dışında verinin aktarıldığı üçüncü kişileri bilme</li>
   <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
-  <li>Silinmesini veya yok edilmesini isteme</li>
+  <li><strong>Silinmesini veya yok edilmesini isteme</strong> — hesabınızı ve tüm
+      verilerinizi (profil, sorgu geçmişi, mağaza bağlantısı, çilek paneli verileri,
+      kullanıcılar) parola teyidiyle kendiniz kalıcı olarak silebilirsiniz
+      (<code>DELETE /api/organizations/me</code>, <code>{"password": "...", "onay": true}</code>);
+      varsa aboneliğiniz iptal edilir. Faturalama kayıtları yasal süre boyunca saklanır.</li>
   <li>Düzeltme/silme işlemlerinin aktarılan üçüncü kişilere bildirilmesini isteme</li>
   <li>Otomatik sistemlerle analiz sonucu aleyhinize bir sonuç doğmasına itiraz etme</li>
   <li>Hukuka aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>

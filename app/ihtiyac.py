@@ -129,9 +129,23 @@ def program_ihtiyaclari(t: Any) -> set[str]:
     return sonuc
 
 
+# TÜBİTAK "sanayi" bölümünde olup son kullanıcı İŞLETMEYE verilmeyen çağrılar (kaynak:
+# programların kendi "Kimler Başvurabilir" tanımları, 2026-10-07):
+#   1503 Proje Pazarları: etkinliği düzenleyen üniversite/TTO/oda vb.
+#   1513 TTO Destekleme, 1613 TT Profesyoneli: teknoloji transfer ofisleri
+#   1514 Tech-InvesTR: girişim sermayesi fonlarına yatırımcı TTO/TGB/araştırma altyapısı
+#   1601: uygulayıcı kuruluşlar (sermaye şirketi/üniversite/oda), "bireysel girişimci başvuramaz"
+#   1612: BiGG 1. aşama uygulayıcı kuruluş çağrısı
+#   1701: Ar-Ge proje değerlendirme ve izleme çağrısı (hakem/izleyici)
+TUBITAK_EKOSISTEM_KODLARI = ("1503", "1513", "1514", "1601", "1612", "1613", "1701")
+
+
 def isletmeye_yonelik_mi(t: Any) -> bool:
-    """Akademisyen/öğretmen/araştırmacıya yönelik TÜBİTAK çağrıları işletme sorularında
-    sonuç kotasını doldurmamalı."""
+    """Akademisyen/öğretmen/araştırmacıya yönelik çağrılar ve aracı/ekosistem kuruluş
+    çağrıları işletme sorularında ve eşleşmede yer almamalı."""
     if (getattr(t, "kurum", "") or "") != "TUBITAK":
         return True
-    return _tubitak_bolumu(getattr(t, "kaynak_url", None)) in (None, "sanayi")
+    if _tubitak_bolumu(getattr(t, "kaynak_url", None)) not in (None, "sanayi"):
+        return False
+    kod = re.match(r"\s*(\d{4})", getattr(t, "baslik", "") or "")
+    return not (kod and kod.group(1) in TUBITAK_EKOSISTEM_KODLARI)

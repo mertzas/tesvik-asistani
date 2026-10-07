@@ -12,6 +12,10 @@ from dataclasses import dataclass, field
 
 from sqlalchemy.orm import Session, selectinload
 
+import re
+
+from app.girisim import SIRKET_TURLERI
+from app.ihtiyac import isletmeye_yonelik_mi, program_ihtiyaclari
 from app.match_adapter import company_from_profile, program_from_tesvik
 from app.match_scoring import hard_filter
 from app.kobi import kobi_sinifi
@@ -94,6 +98,66 @@ def _kurum_ile_cesitlendir(sonuclar: list["TesvikEslesmeSonucu"]) -> list["Tesvi
     return sonuc
 
 
+HEDEF_SEKTOR_ETIKETLERI = {"ihracat", "arge", "e-ticaret"}
+
+# Kayit metninden (hedef_kitle + basvuru_sartlari) okunan uygunluk kaliplari.
+# Her kalip, veritabanindaki gercek sart cumlelerinden alinmistir (2026-10-07):
+#   - araci/ekosistem kurulusu: "TEKMER işletici kuruluşu ve TGB yönetici şirketi
+#     yararlanabilir" (KOSGEB Teknoloji Merkezi), "Teknoloji Transfer Ofisleri" (1513,
+#     1612), "üniversiteye bağlı birimler" -> son kullanici isletmeye verilmez
+#   - sirketi olana kapali: "HERHANGİ BİR İŞLETMENİN ortaklık yapısında yer almamak
+#     (şirket kurulduysa başvurulamaz)" (1512), "ortaklık yapısında yer alan kişiler
+#     başvuru yapamaz" (1812)
+#   - sirketsize kapali: "sermaye şirketi statüsünde/olmak" (1507, 1501, 1601),
+#     "bireysel girişimci başvuramaz" (1601), "şirketleşmemiş girişim yararlanıcı
+#     tanımına girmez" (10962), "KOSGEB veri tabanına kayıtlı" (KOSGEB), "KOBİ
+#     niteliklerine sahip olması" (KGF)
+_ARACI_KURULUS = re.compile(
+    r"işletici kuruluş|yönetici şirket|teknoloji transfer ofis|uygulayıcı kuruluş|"
+    r"üniversiteye bağlı birim", re.I)
+# "yer almamak" (1512) ve "yer alan kişiler başvuru yapamaz" (1812) ikisini de kapsar.
+_SIRKETI_OLANA_KAPALI = re.compile(
+    r"ortaklık yapısında yer al|şirket kurulduysa başvurulamaz", re.I)
+_SIRKETSIZE_KAPALI = re.compile(
+    r"sermaye şirketi (?:statüsünde|olmak|olması)|bireysel girişimci başvuramaz|"
+    r"yararlanıcı tanımına girmez|KOSGEB veri tabanı|KOBİ (?:niteliklerine|olmak|olması|tanımın)", re.I)
+# Kefalet/kredi ve KOSGEB programlari tanim geregi bir ISLETMEYE verilir.
+_ISLETME_GEREKTIREN_KURUMLAR = {"KGF", "KOSGEB"}
+
+
+def _sart_metni(t) -> str:
+    return " ".join([t.hedef_kitle or "", *(t.basvuru_sartlari or [])])
+
+
+def uygunluk_engeli(t, profil) -> str | None:
+    """Kayit metnine gore programin bu profile kapali olma sebebi; None = engel yok.
+
+    Akademik TÜBİTAK çağrıları (araştırmacı/öğretmen) ve aracı kuruluş programları
+    (TTO, TEKMER işleticisi) hiçbir işletme profiline önerilmez. Şirketleşme durumu
+    profilde biliniyorsa, onunla çelişen şartlar eler; bilinmiyorsa elemez."""
+    if not isletmeye_yonelik_mi(t):
+        return "akademik/araştırmacı çağrısı"
+    metin = _sart_metni(t)
+    if _ARACI_KURULUS.search(metin):
+        return "aracı/ekosistem kuruluşu programı"
+    tur = getattr(profil, "sirket_turu", None)
+    if tur == "yok":
+        if t.kurum in _ISLETME_GEREKTIREN_KURUMLAR:
+            return f"{t.kurum} programları kayıtlı bir işletme gerektirir"
+        if _SIRKETSIZE_KAPALI.search(metin):
+            return "şirketleşme/KOBİ şartı"
+        # TÜBİTAK TEYDEB sanayi programları (1501, 1505, 1507, 1509, 1511, 1702, 1707,
+        # 1711...) başvuranın Türkiye'de yerleşik sermaye şirketi olmasını ister; şart
+        # alanı boş kayıtlarda bu metin yoktur. Şirketleşme öncesi tek istisna BiGG
+        # (1512/1812) "girisim" türüyle etiketlidir.
+        if t.kurum in ("TUBITAK", "TÜBİTAK") and "girisim" not in program_ihtiyaclari(t):
+            return "TÜBİTAK sanayi programları sermaye şirketi gerektirir (şirketleşme öncesi tek yol BiGG)"
+    elif tur in SIRKET_TURLERI and tur != "yok":
+        if _SIRKETI_OLANA_KAPALI.search(metin):
+            return "şirketi olanlara kapalı (ortaklık yasağı)"
+    return None
+
+
 def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[TesvikEslesmeSonucu]:
     profil_sektorler = {(profil.sektor or "").lower()}
     profil_hedefler = {h.lower() for h in (profil.hedefler or [])}
@@ -128,6 +192,14 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
         if sebepler:
             continue
 
+        # Kayit metnine dayali uygunluk kurallari (bkz. uygunluk_engeli):
+        # akademik cagrilar, araci/ekosistem kurulus programlari, sirketlesme
+        # durumuyla celisen sartlar. Olcum 2026-10-07: 8 personanin 6'sinda
+        # 1002-A/B gibi arastirmaci cagrilari, sirketsiz girisime KGF kefaleti,
+        # sirketi olan isletmeye ortaklik yasakli BiGG ilk 10'a giriyordu.
+        if uygunluk_engeli(t, profil):
+            continue
+
         # 9903: EK-3 şartı aranan programda yatırım konusu listede yoksa kesin olarak
         # desteklenmez (MADDE 5/1); diğer sonuçlar kullanıcıya not olarak düşülür.
         u9903 = uygunluk_9903(t, getattr(profil, "nace_kodu", None), profil.bolge, olcek_sinifi)
@@ -139,10 +211,18 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
         eksik: list[str] = []
 
         ortak_sektor = tesvik_sektorler & profil_sektorler
-        if ortak_sektor or "genel" in tesvik_sektorler:
+        # Sektor etiketleri aslinda ihtiyac turunu de kodluyor ("ihracat", "arge",
+        # "e-ticaret"): hedefi ihracat olan bir imalatci, e-ihracat programlarini
+        # gormeliydi ama etiketi yalnizca "ihracat" olan kayit sektor uyusmadi
+        # diye hic listelenmiyordu (olcum 2026-10-07, Izmir tekstil personasi).
+        hedef_sektor = (tesvik_sektorler & HEDEF_SEKTOR_ETIKETLERI & profil_hedefler) - ortak_sektor
+        if ortak_sektor or "genel" in tesvik_sektorler or hedef_sektor:
             if ortak_sektor:
                 skor += 0.6
                 gerekce.append(f"Sektorunuz ({profil.sektor}) bu destegin kapsamina uygun.")
+            elif hedef_sektor:
+                skor += 0.3
+                gerekce.append(f"Hedefiniz ({', '.join(sorted(hedef_sektor))}) bu destegin alanina giriyor.")
             else:
                 skor += 0.2
                 gerekce.append("Bu destek sektor bagimsiz genel bir programdir.")

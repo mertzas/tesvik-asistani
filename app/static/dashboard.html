@@ -969,6 +969,19 @@
             return String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
         }
 
+        // Sunucu hata gövdesi: detail düz metin (HTTPException) veya liste (422 doğrulama) olabilir.
+        function hataMetni(err) {
+            const d = err && err.detail;
+            if (typeof d === "string") return d;
+            if (Array.isArray(d)) return d.map(x => (x && x.msg) ? x.msg : JSON.stringify(x)).join("; ");
+            return "Bilinmeyen hata";
+        }
+
+        // href'e yalnızca http(s) bağlantı basılır (javascript:/data: şemaları engellenir).
+        function guvenliUrl(u) {
+            return /^https?:\/\/[^\s"'<>]+$/i.test(String(u || "")) ? escapeHtml(u) : "";
+        }
+
         // Danışman yanıtı Markdown gelir (başlık, kalın, liste, tablo). Önce HTML kaçışı,
         // sonra sınırlı Markdown -> HTML; harici kütüphane ve ham HTML yok (XSS yüzeyi yok).
         function inlineMd(s) {
@@ -1231,10 +1244,10 @@
 
             const satirlar = (veri.kaynaklar || []).map(k => `
                 <tr>
-                    <td><span class="nokta ${k.durum}"></span>${k.baslik}</td>
+                    <td><span class="nokta ${escapeHtml(k.durum)}"></span>${escapeHtml(k.baslik)}</td>
                     <td>${guncellemeMetni(k)}</td>
                     <td>${(k.kayit_sayisi || 0).toLocaleString("tr-TR")} kayit</td>
-                    <td>${k.uyari ? `<span class="uyari-metni">${k.uyari}</span>` : "&mdash;"}</td>
+                    <td>${k.uyari ? `<span class="uyari-metni">${escapeHtml(k.uyari)}</span>` : "&mdash;"}</td>
                 </tr>`).join("");
 
             detay.innerHTML = satirlar
@@ -1326,7 +1339,7 @@
 
             const datalist = document.getElementById("p-urun-liste");
             if (oneriler.length) {
-                datalist.innerHTML = oneriler.map(u => `<option value="${u}">`).join("");
+                datalist.innerHTML = oneriler.map(u => `<option value="${escapeHtml(u)}">`).join("");
                 urunInput.placeholder = `Örn: ${oneriler.slice(0, 3).join(", ")}`;
             } else {
                 datalist.innerHTML = `
@@ -1405,7 +1418,7 @@
                         });
                         if (!res.ok) {
                             const err = await res.json();
-                            mesajDiv.innerHTML = `<div class="error">${err.detail}</div>`;
+                            mesajDiv.innerHTML = `<div class="error">${escapeHtml(hataMetni(err))}</div>`;
                             return;
                         }
                         mesajDiv.innerHTML = `<div class="success">Profil kaydedildi.</div>`;
@@ -1439,7 +1452,7 @@
                 }
                 if (!res.ok) {
                     const err = await res.json();
-                    resultsDiv.innerHTML = `<div class="error">${err.detail}</div>`;
+                    resultsDiv.innerHTML = `<div class="error">${escapeHtml(hataMetni(err))}</div>`;
                     return;
                 }
 
@@ -1488,11 +1501,11 @@
                                 <tbody>
                                     ${destekler.map((t, i) => `
                                     <tr style="border-bottom:1px solid #ddd; background:${i % 2 === 0 ? 'white' : '#fafafa'};">
-                                        <td style="padding:10px;"><strong>${t.baslik}</strong></td>
-                                        <td style="padding:10px;">${t.kurum}</td>
-                                        <td style="padding:10px; text-align:center; font-size:12px;">${t.tutari_min && t.tutari_max ? `₺${(t.tutari_min/1000).toFixed(0)}K - ₺${(t.tutari_max/1000).toFixed(0)}K` : t.tesvil_tutari || '-'}</td>
-                                        <td style="padding:10px; text-align:center; font-size:12px; color:#666;">${t.basvuru_suresi ? t.basvuru_suresi.split(' ')[0] : '-'}</td>
-                                        <td style="padding:10px; font-size:12px;">${t.basvuru_yeri || '-'}</td>
+                                        <td style="padding:10px;"><strong>${escapeHtml(t.baslik)}</strong></td>
+                                        <td style="padding:10px;">${escapeHtml(t.kurum)}</td>
+                                        <td style="padding:10px; text-align:center; font-size:12px;">${t.tutari_min && t.tutari_max ? `₺${(t.tutari_min/1000).toFixed(0)}K - ₺${(t.tutari_max/1000).toFixed(0)}K` : escapeHtml(t.tesvil_tutari || '-')}</td>
+                                        <td style="padding:10px; text-align:center; font-size:12px; color:#666;">${t.basvuru_suresi ? escapeHtml(t.basvuru_suresi.split(' ')[0]) : '-'}</td>
+                                        <td style="padding:10px; font-size:12px;">${escapeHtml(t.basvuru_yeri || '-')}</td>
                                     </tr>
                                     `).join('')}
                                 </tbody>
@@ -1501,35 +1514,37 @@
                     }
                 }
 
+                // Kayıt metinleri web kazımasından gelir (üçüncü taraf içerik): her alan HTML'den
+                // kaçırılır, bağlantılar yalnızca http(s) ise basılır (denetim 2026-10-07).
                 resultsDiv.innerHTML = data.eslesen_tesvikler.map((t, idx) => `
                     <div class="result-card">
-                        <div class="kurum">${t.kurum} · Skor: ${(t.skor * 100).toFixed(0)}%</div>
-                        <div class="baslik">${t.baslik}</div>
+                        <div class="kurum">${escapeHtml(t.kurum)} · Skor: ${(t.skor * 100).toFixed(0)}%</div>
+                        <div class="baslik">${escapeHtml(t.baslik)}</div>
                         ${t.aktif_mi === true
                             ? `<div style="display:inline-block; margin:4px 0 8px; padding:3px 10px; border-radius:100px; background:#e4efe9; color:#0f4438; font-size:12px; font-weight:bold;">✓ Aktif olduğu doğrulandı</div>`
                             : `<div style="display:inline-block; margin:4px 0 8px; padding:3px 10px; border-radius:100px; background:#fdf3e2; color:#7a4b22; font-size:12px; font-weight:bold;" title="Bu programın hala başvuruya açık olduğu tarafımızca doğrulanmadı.">⚠ Aktifliği doğrulanmadı — kurumdan teyit edin</div>`}
-                        <div class="ozet">${t.ozet}</div>
-                        ${t.tesvil_tutari ? `<div class="meta"><span>💰 ${t.tesvil_tutari}</span></div>` : ""}
+                        <div class="ozet">${escapeHtml(t.ozet)}</div>
+                        ${t.tesvil_tutari ? `<div class="meta"><span>💰 ${escapeHtml(t.tesvil_tutari)}</span></div>` : ""}
                         ${t.tutari_tahmini_profil ? `<div class="meta"><span>🎯 Tahmini: ₺${t.tutari_tahmini_profil.toLocaleString('tr-TR', {maximumFractionDigits:0})}</span></div>` : ""}
-                        ${t.gerekce.length ? `<div class="meta" style="flex-direction:column; align-items:flex-start; gap:5px; margin-top:8px;">${t.gerekce.map(g => `<span>✓ ${g}</span>`).join("")}</div>` : ""}
-                        ${t.eksik_kriterler.length ? `<div class="meta" style="flex-direction:column; align-items:flex-start; gap:5px; margin-top:8px; color:#856404;">${t.eksik_kriterler.map(g => `<span>⚠ ${g}</span>`).join("")}</div>` : ""}
+                        ${t.gerekce.length ? `<div class="meta" style="flex-direction:column; align-items:flex-start; gap:5px; margin-top:8px;">${t.gerekce.map(g => `<span>✓ ${escapeHtml(g)}</span>`).join("")}</div>` : ""}
+                        ${t.eksik_kriterler.length ? `<div class="meta" style="flex-direction:column; align-items:flex-start; gap:5px; margin-top:8px; color:#856404;">${t.eksik_kriterler.map(g => `<span>⚠ ${escapeHtml(g)}</span>`).join("")}</div>` : ""}
 
                         <details style="margin-top:15px; padding-top:15px; border-top:1px solid #eee;">
                             <summary style="cursor:pointer; font-weight:bold; color:#667eea;">📋 Başvuru Rehberi</summary>
                             <div style="margin-top:10px; font-size:13px; line-height:1.6;">
-                                ${t.tutari_hesaplama_formulu ? `<div style="margin-bottom:10px;"><strong>Tutar Hesaplama:</strong> ${t.tutari_hesaplama_formulu}</div>` : ""}
-                                ${t.basvuru_suresi ? `<div style="margin-bottom:8px;"><strong>Başvuru Süresi:</strong> ${t.basvuru_suresi}</div>` : ""}
-                                ${t.basvuru_yeri ? `<div style="margin-bottom:8px;"><strong>Başvuru Yeri:</strong> ${t.basvuru_yeri}</div>` : ""}
-                                ${t.destek_verilme_suresi ? `<div style="margin-bottom:8px;"><strong>Destek Verilme Süresi:</strong> ${t.destek_verilme_suresi}</div>` : ""}
-                                ${t.basvuru_sartlari && t.basvuru_sartlari.length ? `<div style="margin-bottom:8px;"><strong>Şartlar:</strong><ul style="margin:5px 0 0 20px;">${t.basvuru_sartlari.map(s => `<li>${s}</li>`).join("")}</ul></div>` : ""}
-                                ${t.gerekli_belgeler && t.gerekli_belgeler.length ? `<div><strong>Gerekli Belgeler:</strong><ul style="margin:5px 0 0 20px;">${t.gerekli_belgeler.map(b => `<li>${b}</li>`).join("")}</ul></div>` : ""}
+                                ${t.tutari_hesaplama_formulu ? `<div style="margin-bottom:10px;"><strong>Tutar Hesaplama:</strong> ${escapeHtml(t.tutari_hesaplama_formulu)}</div>` : ""}
+                                ${t.basvuru_suresi ? `<div style="margin-bottom:8px;"><strong>Başvuru Süresi:</strong> ${escapeHtml(t.basvuru_suresi)}</div>` : ""}
+                                ${t.basvuru_yeri ? `<div style="margin-bottom:8px;"><strong>Başvuru Yeri:</strong> ${escapeHtml(t.basvuru_yeri)}</div>` : ""}
+                                ${t.destek_verilme_suresi ? `<div style="margin-bottom:8px;"><strong>Destek Verilme Süresi:</strong> ${escapeHtml(t.destek_verilme_suresi)}</div>` : ""}
+                                ${t.basvuru_sartlari && t.basvuru_sartlari.length ? `<div style="margin-bottom:8px;"><strong>Şartlar:</strong><ul style="margin:5px 0 0 20px;">${t.basvuru_sartlari.map(s => `<li>${escapeHtml(s)}</li>`).join("")}</ul></div>` : ""}
+                                ${t.gerekli_belgeler && t.gerekli_belgeler.length ? `<div><strong>Gerekli Belgeler:</strong><ul style="margin:5px 0 0 20px;">${t.gerekli_belgeler.map(b => `<li>${escapeHtml(b)}</li>`).join("")}</ul></div>` : ""}
                                 ${!t.basvuru_suresi && !t.basvuru_yeri && !(t.basvuru_sartlari && t.basvuru_sartlari.length) ? `
-                                <div style="color:#856404;">Bu destek için şart/belge/tarih detayı henüz sistemimizde işlenmedi.${t.kaynak_url ? ` Güncel ve kesin bilgi için <a href="${t.kaynak_url}" target="_blank" rel="noopener">resmi kaynağı</a> inceleyin.` : " Kurumun resmi web sitesinden kontrol edin."}</div>
+                                <div style="color:#856404;">Bu destek için şart/belge/tarih detayı henüz sistemimizde işlenmedi.${guvenliUrl(t.kaynak_url) ? ` Güncel ve kesin bilgi için <a href="${guvenliUrl(t.kaynak_url)}" target="_blank" rel="noopener">resmi kaynağı</a> inceleyin.` : " Kurumun resmi web sitesinden kontrol edin."}</div>
                                 ` : ""}
                             </div>
                         </details>
 
-                        ${t.kaynak_url ? `<a href="${t.kaynak_url}" target="_blank" rel="noopener" style="display:inline-block; margin-top:10px; padding:7px 14px; background:#667eea; color:white; text-decoration:none; border-radius:5px; font-size:12px; font-weight:bold;">🔗 Resmi Kaynak</a>` : ""}
+                        ${guvenliUrl(t.kaynak_url) ? `<a href="${guvenliUrl(t.kaynak_url)}" target="_blank" rel="noopener" style="display:inline-block; margin-top:10px; padding:7px 14px; background:#667eea; color:white; text-decoration:none; border-radius:5px; font-size:12px; font-weight:bold;">🔗 Resmi Kaynak</a>` : ""}
                     </div>
                 `).join("") + kiyaslamaTablosuHtml;
             } catch (e) {
@@ -1558,7 +1573,7 @@
                 }
                 if (!res.ok) {
                     const err = await res.json();
-                    resultsDiv.innerHTML = `<div class="error">${err.detail}</div>`;
+                    resultsDiv.innerHTML = `<div class="error">${escapeHtml(hataMetni(err))}</div>`;
                     return;
                 }
 

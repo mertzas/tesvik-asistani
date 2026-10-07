@@ -5,12 +5,31 @@ from uuid import UUID
 from pydantic import BaseModel, EmailStr, Field, field_validator
 
 
+SIFRE_EN_AZ, SIFRE_EN_COK_BAYT = 8, 72  # bcrypt 72 bayttan sonrasını yok sayar/hata verir
+
+
+def sifre_kontrol(sifre: str) -> str:
+    """Parola politikası (denetim 2026-10-07): 8+ karakter, en çok 72 bayt (bcrypt sınırı; aşınca
+    passlib ValueError → 500), en az bir harf ve bir rakam, baştan/sondan boşluk yok."""
+    if sifre != sifre.strip():
+        raise ValueError("Parola başında/sonunda boşluk olamaz")
+    if len(sifre) < SIFRE_EN_AZ:
+        raise ValueError(f"Parola en az {SIFRE_EN_AZ} karakter olmalı")
+    if len(sifre.encode("utf-8")) > SIFRE_EN_COK_BAYT:
+        raise ValueError(f"Parola en çok {SIFRE_EN_COK_BAYT} bayt olabilir")
+    if not any(c.isalpha() for c in sifre) or not any(c.isdigit() for c in sifre):
+        raise ValueError("Parola en az bir harf ve bir rakam içermeli")
+    return sifre
+
+
 # Auth Schemas
 class UserSignup(BaseModel):
     email: EmailStr
-    password: str = Field(..., min_length=8)
-    full_name: str
-    company_name: str
+    password: str = Field(..., min_length=SIFRE_EN_AZ)
+    full_name: str = Field(..., min_length=1, max_length=200)
+    company_name: str = Field(..., min_length=1, max_length=200)
+
+    _sifre = field_validator("password")(sifre_kontrol)
     # KVKK acik rizasi - ZORUNLU DEGIL. Verilmezse hesap yine acilir, AI
     # danisman yerine liste formati kullanilir (bkz. app/main.py sor()).
     ai_yurtdisi_riza: bool = Field(
@@ -41,7 +60,9 @@ class UserBase(BaseModel):
 
 
 class UserCreate(UserBase):
-    password: str = Field(..., min_length=8)
+    password: str = Field(..., min_length=SIFRE_EN_AZ)
+
+    _sifre = field_validator("password")(sifre_kontrol)
 
 
 class UserResponse(UserBase):

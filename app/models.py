@@ -22,6 +22,11 @@ class Settings(BaseSettings):
     STRIPE_PRICE_BUSINESS: str = os.getenv("STRIPE_PRICE_BUSINESS", "")
     APP_URL: str = os.getenv("APP_URL", "http://localhost:8000")
     APP_NAME: str = "Teşvik Asistanı SaaS"
+    # CORS: virgülle ayrılmış izinli origin listesi. Boşsa APP_URL + yerel geliştirme
+    # adresleri kullanılır. Denetim 2026-10-07: allow_origins=["*"] + allow_credentials=True idi.
+    ALLOWED_ORIGINS: str = os.getenv("ALLOWED_ORIGINS", "")
+    # Yalnızca yerel geliştirme: varsayılan SECRET_KEY ile açılışa izin verir.
+    ALLOW_INSECURE_SECRET: bool = os.getenv("ALLOW_INSECURE_SECRET", "false").lower() == "true"
     ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
     CLAUDE_MODEL: str = os.getenv("CLAUDE_MODEL", "claude-sonnet-5")
 

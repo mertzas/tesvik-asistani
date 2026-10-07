@@ -73,14 +73,17 @@ def org_hiz_siniri(limit: int, pencere_sn: int = 60):
     return _kontrol
 
 
-def ip_hiz_siniri(limit: int, pencere_sn: int = 60):
+def ip_hiz_siniri(limit: int, pencere_sn: int = 60, ad: str = ""):
     """IP basina hiz siniri - kimlik dogrulamasi OLMAYAN endpoint'ler icin
     (orn. Ikas webhook'u: imza dogrulamasi henuz eklenmedigi icin herkes
-    cagirabiliyor, en azindan oran sinirlanmali)."""
+    cagirabiliyor, en azindan oran sinirlanmali).
+
+    `ad` verilirse sayac o uc noktaya ozeldir; verilmezse ayni limit/pencereli uc noktalar
+    sayaci paylasir (login ve signup ayni sayaca dusmesin diye eklendi, 2026-10-07)."""
 
     def _kontrol(request: Request) -> None:
         ip = (request.client.host if request.client else "bilinmiyor")
-        izin, bekle = sayac.izin_ver(f"ip:{ip}:{limit}:{pencere_sn}", limit, pencere_sn)
+        izin, bekle = sayac.izin_ver(f"ip:{ip}:{ad}:{limit}:{pencere_sn}", limit, pencere_sn)
         if not izin:
             raise HTTPException(
                 status_code=status.HTTP_429_TOO_MANY_REQUESTS,

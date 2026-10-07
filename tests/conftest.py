@@ -51,6 +51,16 @@ def client():
     return TestClient(app)
 
 
+@pytest.fixture(autouse=True)
+def _hiz_sayaci_sifirla():
+    """Süreç içi hız sınırı sayaçları (login/signup IP başına 10/dk) testler arasında birikmesin:
+    tüm testler aynı 'testclient' IP'sinden gelir."""
+    from app.rate_limit import sayac
+    sayac.temizle()
+    yield
+    sayac.temizle()
+
+
 @pytest.fixture
 def test_org_data():
     return {

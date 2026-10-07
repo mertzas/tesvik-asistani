@@ -89,14 +89,45 @@ app = FastAPI(
     version="2.0.0",
 )
 
+VARSAYILAN_SECRET_KEY = "your-super-secret-key"
+
+
+def izinli_originler() -> list[str]:
+    """CORS izinli origin'ler: ALLOWED_ORIGINS (virgülle) yoksa APP_URL + yerel adresler.
+    Denetim 2026-10-07: "*" + allow_credentials=True idi; tarayıcı bunu zaten reddeder ama
+    kimliksiz uç noktalar (nace/kobi hesapları) her siteden çağrılabiliyordu."""
+    ham = [o.strip().rstrip("/") for o in settings.ALLOWED_ORIGINS.split(",") if o.strip()]
+    if ham:
+        return ham
+    return sorted({settings.APP_URL.rstrip("/"), "http://localhost:8000", "http://127.0.0.1:8000"})
+
+
 # CORS
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=izinli_originler(),
     allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
+    allow_methods=["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allow_headers=["Authorization", "Content-Type"],
 )
+
+
+GUVENLIK_BASLIKLARI = {
+    "X-Content-Type-Options": "nosniff",
+    "X-Frame-Options": "DENY",
+    "Referrer-Policy": "strict-origin-when-cross-origin",
+    "Permissions-Policy": "camera=(), microphone=(), geolocation=()",
+}
+
+
+@app.middleware("http")
+async def guvenlik_basliklari(request: Request, call_next):
+    """Her yanıta temel güvenlik başlıkları (clickjacking, MIME sniffing, referrer sızıntısı).
+    CSP bilinçli olarak eklenmedi: paneller satır içi script/stil kullanıyor (Aşama 5)."""
+    response = await call_next(request)
+    for k, v in GUVENLIK_BASLIKLARI.items():
+        response.headers.setdefault(k, v)
+    return response
 
 # Include admin routes
 app.include_router(admin_router)
@@ -106,9 +137,24 @@ app.include_router(ikas_router)
 STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
 
 
+def secret_key_kontrolu() -> None:
+    """Varsayılan SECRET_KEY ile JWT'ler herkes tarafından üretilebilir; açılışta durdur.
+    Yerel geliştirmede ALLOW_INSECURE_SECRET=true ile (uyarıyla) geçilebilir."""
+    if settings.SECRET_KEY != VARSAYILAN_SECRET_KEY and len(settings.SECRET_KEY) >= 32:
+        return
+    if settings.ALLOW_INSECURE_SECRET:
+        logger.critical("SECRET_KEY varsayılan/kısa! Yalnızca yerel geliştirme için kabul edildi "
+                        "(ALLOW_INSECURE_SECRET=true). Canlıda .env'e en az 32 karakterlik rastgele anahtar yazın.")
+        return
+    raise RuntimeError("SECRET_KEY tanımsız/varsayılan/kısa: .env'e en az 32 karakterlik rastgele bir anahtar "
+                       "yazın (python -c \"import secrets; print(secrets.token_urlsafe(48))\"). "
+                       "Yerel geliştirme için ALLOW_INSECURE_SECRET=true.")
+
+
 @app.on_event("startup")
 def on_startup():
     global _scheduler
+    secret_key_kontrolu()
     init_db()
     _scheduler = setup_scheduler()
     _scheduler.start()
@@ -123,7 +169,8 @@ def on_shutdown():
 
 # ============ AUTH ENDPOINTS ============
 
-@app.post("/api/auth/signup", response_model=TokenResponse)
+@app.post("/api/auth/signup", response_model=TokenResponse,
+          dependencies=[Depends(ip_hiz_siniri(10, ad="signup"))])
 def signup(request: UserSignup, db: Session = Depends(get_db)):
     """Yeni hesap oluştur."""
     # Email benzersiz mi kontrol et
@@ -170,9 +217,10 @@ def signup(request: UserSignup, db: Session = Depends(get_db)):
     )
 
 
-@app.post("/api/auth/login", response_model=TokenResponse)
+@app.post("/api/auth/login", response_model=TokenResponse,
+          dependencies=[Depends(ip_hiz_siniri(10, ad="login"))])
 def login(request: UserLogin, db: Session = Depends(get_db)):
-    """Giriş yap."""
+    """Giriş yap. IP başına dakikada 10 deneme (parola kaba kuvvet koruması; denetim 2026-10-07)."""
     user = db.query(User).filter(User.email == request.email).first()
 
     if not user or not verify_password(request.password, user.hashed_password):
@@ -215,7 +263,7 @@ RIZA_YOK_NOTU = (
 )
 
 
-@app.post("/api/sor", response_model=AskResponse)
+@app.post("/api/sor", response_model=AskResponse, dependencies=[Depends(org_hiz_siniri(20))])
 def sor(
     request: AskQuestion,
     current_user: User = Depends(get_current_user),
@@ -302,18 +350,20 @@ def sor(
             message=answer_text,
         )
 
-    except Exception as e:
-        raise HTTPException(
-            status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
-            detail=f"Hata: {str(e)}"
-        )
+    except Exception:
+        # İç hata metni (SQL, dosya yolu, kütüphane mesajı) kullanıcıya sızmaz; günlüğe yazılır.
+        logger.exception("/api/sor başarısız")
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=GENEL_HATA)
+
+
+GENEL_HATA = "Beklenmeyen bir hata oluştu. Lütfen tekrar deneyin; sorun sürerse destek ile iletişime geçin."
 
 
 def _sse(tip: str, veri) -> str:
     return f"event: {tip}\ndata: {json.dumps(veri, ensure_ascii=False)}\n\n"
 
 
-@app.post("/api/sor/akis")
+@app.post("/api/sor/akis", dependencies=[Depends(org_hiz_siniri(20))])
 def sor_akis(
     request: AskQuestion,
     current_user: User = Depends(get_current_user),
@@ -344,8 +394,9 @@ def sor_akis(
     uretec = answer_akis(request.question, profil, llm_kullan=riza_var, profil_kaydi=profil_row)
     try:
         _tip, kayitlar = next(uretec)
-    except Exception as e:
-        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=f"Hata: {e}")
+    except Exception:
+        logger.exception("/api/sor/akis hazırlık başarısız")
+        raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=GENEL_HATA)
     results = [
         SearchResult(id=t.id, kurum=t.kurum, baslik=t.baslik, ozet=t.ozet, hedef_kitle=t.hedef_kitle,
                      baslama_tarihi=t.baslama_tarihi, bitis_tarihi=t.bitis_tarihi).model_dump(mode="json")
@@ -365,9 +416,9 @@ def sor_akis(
             if not riza_var:
                 yield _sse("parca", {"metin": RIZA_YOK_NOTU})
             yield _sse("son", {"query_id": query_id, "tokens_used": tokens_used})
-        except Exception as e:
+        except Exception:
             logger.exception("sor_akis: akış sırasında hata")
-            yield _sse("hata", {"detail": f"Hata: {e}"})
+            yield _sse("hata", {"detail": GENEL_HATA})
 
     return StreamingResponse(uret(), media_type="text/event-stream",
                              headers={"Cache-Control": "no-cache", "X-Accel-Buffering": "no"})
@@ -679,28 +730,8 @@ async def stripe_webhook(request: Request, db: Session = Depends(get_db)):
     return {"status": "ok"}
 
 
-# ============ LEGACY ENDPOINTS (Backward Compatibility) ============
-
-@app.post("/sor")
-def sor_legacy(request: AskQuestion, db: Session = Depends(get_db)):
-    """Legacy endpoint - kimlik doğrulama olmadan."""
-    try:
-        answer_text = answer(request.question)
-        tesvikler = db.query(Tesvik).limit(5).all()
-        return {
-            "cevap": answer_text,
-            "tesvikler": [
-                {
-                    "kurum": t.kurum,
-                    "baslik": t.baslik,
-                    "ozet": t.ozet,
-                }
-                for t in tesvikler
-            ]
-        }
-    except Exception as e:
-        logger.exception("Beklenmeyen hata: %s", e)
-        raise HTTPException(status_code=500, detail=str(e))
+# Legacy POST /sor (kimliksiz, kotasız, ücretli LLM çağrısı yapan uç nokta) güvenlik denetiminde
+# kaldırıldı (2026-10-07): hiçbir sayfa kullanmıyordu; herkes API kotasını tüketebilirdi.
 
 
 # ============ STATIC FILES ============

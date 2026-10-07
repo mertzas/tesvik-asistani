@@ -190,9 +190,13 @@ def test_elenen_9903_programlari_baglama_gerekceyle_girer(db_session, monkeypatc
     metin = rag.elenen_9903_metni("makine yatırımı için teşvik belgesi", _profil("47.11"))
     assert "Hedef Yatırımlar" in metin and "UYGUN DEĞİL" in metin and "MADDE 5/1" in metin
     assert "yürürlükten kalkmıştır" in metin
-    assert "Teknoloji Hamlesi" not in metin, "yalnızca elenenler listelenir"
-    assert rag.elenen_9903_metni("makine yatırımı", _profil("28.93")) == ""
-    assert rag.elenen_9903_metni("makine yatırımı", _profil("10.71")) == "", "kesin elenmeyen program listelenmez"
+    # "Düşük olasılık" programlar da listelenir (ekmek 10.71 ölçümü), etiketi ayrı: teyit gerektirir.
+    satirlar = [s for s in metin.split("\n") if s.startswith("- ")]
+    assert any("Teknoloji Hamlesi" in s and "DÜŞÜK OLASILIK" in s for s in satirlar)
+    assert all(("UYGUN DEĞİL" in s or "DÜŞÜK OLASILIK" in s) for s in satirlar), "şartlı/uygun listelenmez"
+    m_1071 = [s for s in rag.elenen_9903_metni("makine yatırımı", _profil("10.71")).split("\n") if s.startswith("- ")]
+    assert any("Hedef Yatırımlar" in s and "DÜŞÜK OLASILIK" in s for s in m_1071)
+    assert not any("UYGUN DEĞİL" in s for s in m_1071), "10.71 kesin elenmez (bölüm 10 EK-3'te var)"
     assert rag.elenen_9903_metni("ihracat desteği", _profil("10.71")) == "", "yatırım sorusu değil"
     assert rag.elenen_9903_metni("makine yatırımı", None) == ""
 
@@ -208,5 +212,5 @@ def test_elenen_blok_danisman_baglamina_eklenir(db_session, monkeypatch):
 
     monkeypatch.setattr(rag, "_claude_cevap", sahte)
     rag.answer("makine yatırımı için teşvik", {"sektör": "imalat"}, profil_kaydi=_profil("47.11"))
-    assert "SİSTEMİN ELEDİĞİ 9903 PROGRAMLARI" in gorulen["baglam"]
+    assert "SİSTEMİN ELEDİĞİ / DÜŞÜK OLASILIK GÖRDÜĞÜ 9903 PROGRAMLARI" in gorulen["baglam"]
     assert "SİSTEMİN ELEDİĞİ" in rag.SISTEM_PROMPTU

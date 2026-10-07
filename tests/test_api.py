@@ -86,12 +86,10 @@ def test_rate_limiting_free_plan(client, test_user_token):
     assert response.status_code == status.HTTP_429_TOO_MANY_REQUESTS
 
 
-def test_legacy_sor_endpoint(client):
-    """Test legacy /sor endpoint (without auth)"""
-    payload = {"question": "KOSGEB"}
-    response = client.post("/sor", json=payload)
-    assert response.status_code == status.HTTP_200_OK
-    assert "cevap" in response.json()
+def test_legacy_sor_endpoint_kaldirildi(client):
+    """Kimliksiz/kotasız legacy /sor ücretli LLM çağrısı yapıyordu; güvenlik denetiminde kaldırıldı."""
+    response = client.post("/sor", json={"question": "KOSGEB"})
+    assert response.status_code in (status.HTTP_404_NOT_FOUND, status.HTTP_405_METHOD_NOT_ALLOWED)
 
 
 def test_health_check(client):

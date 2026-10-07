@@ -1,0 +1,467 @@
+// cilek_dashboard.html sayfasının betiği (CSP: satır içi betik yasak, bkz. app/main.py CSP).
+const API = window.location.origin;
+const TOKEN_KEY = 'token';
+let AKTIF_PARSEL_ID = null;
+let SON_BASARILI_VERI = null;
+let YENILEME_TIMER = null;
+
+// index.html/dashboard.html "auth_token" anahtarina yaziyor - eski
+// tek-anahtarli oturumlar icin de burada ikisini kontrol ediyoruz.
+function token() { return localStorage.getItem(TOKEN_KEY) || localStorage.getItem('auth_token'); }
+
+// XSS savunması (Denetim 2 / Aşama E): şablonlar API metinlerini kaçışsız innerHTML'e koyuyor
+// (ör. kullanıcının girdiği parsel adı). Tüm yanıtlardaki metinler tek noktada HTML-kaçışlanır;
+// sayılar ve alan adları değişmez. Yanıtlar yalnızca HTML bağlamında kullanılır.
+function kacis(s) {
+  return s.replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+function temizle(v) {
+  if (typeof v === 'string') return kacis(v);
+  if (Array.isArray(v)) return v.map(temizle);
+  if (v && typeof v === 'object') return Object.fromEntries(Object.entries(v).map(([k, x]) => [k, temizle(x)]));
+  return v;
+}
+
+async function api(path, options = {}) {
+  const res = await fetch(API + path, {
+    ...options,
+    headers: {
+      'Content-Type': 'application/json',
+      ...(token() ? { 'Authorization': `Bearer ${token()}` } : {}),
+      ...(options.headers || {}),
+    },
+  });
+  if (!res.ok) {
+    const detay = await res.json().catch(() => ({}));
+    throw new Error(detay.detail || `Sunucu hatası (${res.status})`);
+  }
+  return temizle(await res.json());
+}
+
+function riskSinifi(seviye) { return 'risk-' + (seviye || 'veri_yok'); }
+function riskEtiket(seviye) {
+  return { guvenli: '✅ Güvenli', riskli: '⚠️ Riskli', kritik: '🚨 KRİTİK', veri_yok: '📡 Veri Yok' }[seviye] || '📡 Veri Yok';
+}
+function saatFmt(iso) {
+  if (!iso) return '—';
+  try { return new Date(iso).toLocaleString('tr-TR', { day:'2-digit', month:'2-digit', hour:'2-digit', minute:'2-digit' }); }
+  catch { return '—'; }
+}
+function sayi(v, ondalik = 1, birim = '') {
+  if (v === null || v === undefined) return '—';
+  return v.toLocaleString('tr-TR', { maximumFractionDigits: ondalik }) + birim;
+}
+
+// ============ PARSEL LİSTESİ ============
+async function parselleriYukle() {
+  const secici = document.getElementById('parsel-secici');
+  try {
+    const parseller = await api('/api/cilek/parseller');
+    if (!parseller.length) {
+      secici.innerHTML = '<option>Parsel yok - önce ekleyin</option>';
+      return;
+    }
+    secici.innerHTML = parseller.map(p => `<option value="${p.id}">${p.ad}</option>`).join('');
+    AKTIF_PARSEL_ID = parseller[0].id;
+    secici.value = AKTIF_PARSEL_ID;
+    secici.onchange = () => { AKTIF_PARSEL_ID = parseInt(secici.value); yenile(); };
+    yenile();
+  } catch (e) {
+    hataGoster(e);
+  }
+}
+
+// ============ ANA PANEL YENİLEME ============
+async function yenile() {
+  if (!AKTIF_PARSEL_ID) return;
+  try {
+    const veri = await api(`/api/cilek/panel/${AKTIF_PARSEL_ID}`);
+    SON_BASARILI_VERI = veri;
+    document.getElementById('baglanti-durum').innerHTML = '🟢 Canlı';
+    document.getElementById('baglanti-durum').className = 'text-xs font-bold px-3 py-1.5 rounded-full bg-emerald-800';
+    document.getElementById('hata-durumu').classList.add('hidden');
+    document.getElementById('ana-icerik').classList.remove('hidden');
+    panelCiz(veri);
+  } catch (e) {
+    hataGoster(e);
+  }
+}
+
+function hataGoster(e) {
+  document.getElementById('baglanti-durum').innerHTML = '🔴 Bağlantı Yok';
+  document.getElementById('baglanti-durum').className = 'text-xs font-bold px-3 py-1.5 rounded-full bg-red-800';
+  if (!SON_BASARILI_VERI) {
+    document.getElementById('hata-durumu').classList.remove('hidden');
+    document.getElementById('ana-icerik').classList.add('hidden');
+  }
+  console.error(e);
+}
+
+// ============ RENDER ============
+function panelCiz(v) {
+  // Kritik uyarı banner'ı
+  const banner = document.getElementById('kritik-banner');
+  if (v.kritik_uyarilar && v.kritik_uyarilar.length) {
+    banner.classList.remove('hidden');
+    banner.innerHTML = `
+      <div class="bg-red-700 border-2 border-red-400 rounded-2xl p-4 space-y-1">
+        <div class="font-black text-lg flex items-center gap-2">🚨 ACİL DİKKAT</div>
+        ${v.kritik_uyarilar.map(m => `<div class="text-sm font-semibold">• ${m}</div>`).join('')}
+      </div>`;
+  } else {
+    banner.classList.add('hidden');
+  }
+
+  document.getElementById('ana-icerik').innerHTML = `
+    ${bolum1(v)}
+    ${bolum2(v.fertigasyon)}
+    ${bolumGubre(v.gubre_onerisi)}
+    ${bolum3(v.hasat_kilidi)}
+    ${bolum4(v.pazar)}
+    ${bolum5(v.hasat_performansi, v.soguk_zincir)}
+    ${bolum6(v.finansal_saglik)}
+    <div class="text-center text-xs text-slate-500 py-4">Son güncelleme: ${saatFmt(v.guncelleme_zamani)}</div>
+  `;
+}
+
+function kartBaslik(emoji, baslik) {
+  return `<div class="flex items-center gap-2 mb-2"><span class="text-xl">${emoji}</span><h2 class="text-lg font-black tracking-tight">${baslik}</h2></div>`;
+}
+
+// 1. KRİTİK TARIMSAL VERİLER
+function bolum1(v) {
+  const sensorKart = (baslik, kart, birim) => `
+    <div class="rounded-2xl border-2 p-4 ${riskSinifi(kart.risk_seviyesi)}">
+      <div class="text-sm font-bold opacity-90">${baslik}</div>
+      <div class="text-4xl font-black big-num my-1">${kart.deger !== null && kart.deger !== undefined ? sayi(kart.deger, 1) + birim : '—'}</div>
+      <div class="text-xs font-bold">${riskEtiket(kart.risk_seviyesi)}</div>
+      <div class="text-xs opacity-80 mt-1">${kart.mesaj || ''}</div>
+    </div>`;
+
+  return `
+    <section>
+      ${kartBaslik('🌡️', 'Kritik Tarımsal Veriler')}
+      <div class="grid grid-cols-2 gap-3">
+        ${sensorKart('Toprak Nemi', v.toprak_nemi, '%')}
+        ${sensorKart('Toprak EC (Tuzluluk)', v.toprak_ec, ' dS/m')}
+        <div class="rounded-2xl border-2 p-4 ${riskSinifi(v.don_riski.risk_seviyesi)}">
+          <div class="text-sm font-bold opacity-90">❄️ Don Riski</div>
+          <div class="text-4xl font-black big-num my-1">${sayi(v.don_riski.yas_hazne_sicakligi ?? v.don_riski.hava_sicakligi, 1)}°C</div>
+          <div class="text-xs font-bold">${riskEtiket(v.don_riski.risk_seviyesi)}</div>
+          <div class="text-xs opacity-80 mt-1">${v.don_riski.mesaj}</div>
+        </div>
+        <div class="rounded-2xl border-2 p-4 ${riskSinifi(v.mantar_riski.risk_seviyesi)}">
+          <div class="text-sm font-bold opacity-90">🍄 Mantar Hastalık Riski</div>
+          <div class="text-4xl font-black big-num my-1">${v.mantar_riski.skor !== null && v.mantar_riski.skor !== undefined ? sayi(v.mantar_riski.skor, 0) : '—'}/100</div>
+          <div class="text-xs font-bold">${riskEtiket(v.mantar_riski.risk_seviyesi)}</div>
+          <div class="text-xs opacity-80 mt-1">${v.mantar_riski.mesaj}</div>
+        </div>
+      </div>
+      ${erkenUyariKarti(v.erken_uyari)}
+    </section>`;
+}
+
+function erkenUyariKarti(eu) {
+  if (!eu.kullanilabilir) {
+    return `<div class="mt-3 rounded-xl bg-slate-800 border border-slate-600 p-3 text-xs text-slate-400">📡 ${eu.mesaj}</div>`;
+  }
+  const renk = eu.don_riski_bekleniyor_mu || (eu.en_yuksek_hastalik_riski_skoru ?? 0) >= 60 ? 'risk-riskli' : 'risk-guvenli';
+  return `
+    <div class="mt-3 rounded-xl border-2 p-3 ${renk}">
+      <div class="text-xs font-bold opacity-90 mb-1">🔮 ERKEN UYARI (Önümüzdeki ${eu.saat_sayisi} Saat - Bölgesel Tahmin)</div>
+      <div class="text-sm">${eu.mesaj}</div>
+    </div>`;
+}
+
+// 2. SULAMA & FERTİGASYON
+function bolum2(f) {
+  const tanklar = f.tanklar.map(t => `
+    <div class="rounded-xl border-2 p-3 ${riskSinifi(t.risk_seviyesi)}">
+      <div class="text-xs font-bold uppercase opacity-90">${t.tank_tipi}</div>
+      <div class="text-2xl font-black big-num">${t.doluluk_yuzde !== null ? sayi(t.doluluk_yuzde, 0) + '%' : '—'}</div>
+    </div>`).join('') || `<div class="text-slate-400 text-sm col-span-3">Tank verisi yok.</div>`;
+
+  const s = f.sulama;
+  return `
+    <section>
+      ${kartBaslik('💧', 'Akıllı Sulama & Fertigasyon')}
+      <div class="grid grid-cols-3 gap-2 mb-3">${tanklar}</div>
+      <div class="rounded-2xl bg-slate-800 border-2 border-slate-600 p-4">
+        <div class="flex justify-between items-center flex-wrap gap-2">
+          <div>
+            <div class="text-xs opacity-70 font-bold">SONRAKİ SULAMA DÖNGÜSÜ</div>
+            <div class="text-3xl font-black big-num">${s.geri_sayim_dakika !== null && s.geri_sayim_dakika !== undefined ? sayi(s.geri_sayim_dakika, 0) + ' dk' : '—'}</div>
+          </div>
+          <div class="text-right text-sm">
+            <div>pH: <b>${sayi(s.verilen_su_ph, 1)}</b></div>
+            <div>EC: <b>${sayi(s.verilen_su_ec, 2)}</b> dS/m</div>
+          </div>
+        </div>
+        ${s.mesaj ? `<div class="text-xs opacity-70 mt-2">${s.mesaj}</div>` : ''}
+      </div>
+    </section>`;
+}
+
+// 2b. GÜBRE DOZAJ REHBERİ (fenolojik evreye göre)
+function bolumGubre(g) {
+  if (!g.evre) {
+    return `
+      <section>
+        ${kartBaslik('🧪', 'Gübre Dozaj Rehberi')}
+        <div class="rounded-2xl bg-slate-800 border-2 border-slate-600 p-4 text-sm text-slate-400">
+          ${(g.notlar && g.notlar[0]) || 'Dikim tarihi girilmeden gübre önerisi hesaplanamaz.'}
+        </div>
+      </section>`;
+  }
+  const besin = (etiket, deger, toplam, birim) => `
+    <div class="rounded-xl border-2 border-slate-600 bg-slate-800 p-3 text-center">
+      <div class="text-xs font-bold opacity-70">${etiket}</div>
+      <div class="text-2xl font-black big-num">${deger}</div>
+      <div class="text-[10px] opacity-60">kg/${birim}</div>
+      ${toplam !== null && toplam !== undefined ? `<div class="text-xs mt-1 opacity-80">Parsel toplamı: <b>${toplam} kg</b></div>` : ''}
+    </div>`;
+  return `
+    <section>
+      ${kartBaslik('🧪', 'Gübre Dozaj Rehberi')}
+      <div class="rounded-2xl border-2 border-emerald-600 bg-emerald-950/40 p-4 mb-3">
+        <div class="text-xs font-bold uppercase opacity-70">Güncel Evre (Dikimden ${g.gun_sayisi}. gün)</div>
+        <div class="text-lg font-black">${g.evre}</div>
+        <div class="text-sm opacity-90 mt-1">${g.evre_aciklama || ''}</div>
+        <div class="text-xs opacity-70 mt-1">Haftada ${g.haftalik_uygulama_sikligi} fertigasyon önerilir.</div>
+      </div>
+      <div class="grid grid-cols-4 gap-2">
+        ${besin('N (Azot)', sayi(g.n_kg_da,1), g.toplam_n_kg, 'da')}
+        ${besin('P₂O₅', sayi(g.p2o5_kg_da,1), g.toplam_p2o5_kg, 'da')}
+        ${besin('K₂O', sayi(g.k2o_kg_da,1), g.toplam_k2o_kg, 'da')}
+        ${besin('CaO', sayi(g.cao_kg_da,1), g.toplam_cao_kg, 'da')}
+      </div>
+      ${g.dikkat ? `<div class="mt-3 rounded-xl border-2 risk-riskli p-3 text-xs font-semibold">⚠️ ${g.dikkat}</div>` : ''}
+      ${(g.notlar||[]).map(n => `<div class="text-xs opacity-60 mt-2">ℹ️ ${n}</div>`).join('')}
+    </section>`;
+}
+
+// 3. PHI / HASAT KİLİDİ
+function bolum3(hk) {
+  const renk = hk.kilitli ? 'risk-kritik' : 'risk-guvenli';
+  return `
+    <section>
+      ${kartBaslik('🔒', 'Zararlı & Hastalık / MRL Takibi')}
+      <div class="rounded-2xl border-2 p-4 ${renk}">
+        <div class="text-2xl font-black">${hk.kilitli ? '🔒 HASADA KİLİTLİ' : '✅ HASAT SERBEST'}</div>
+        ${hk.kilitli ? `<div class="text-4xl font-black big-num my-1">${sayi(hk.kalan_saat, 0)} saat</div>` : ''}
+        <div class="text-sm mt-1 opacity-90">${hk.mesaj}</div>
+      </div>
+    </section>`;
+}
+
+// 4. PAZAR
+function bolum4(p) {
+  const trendEmoji = { yukselen: '📈', dusen: '📉', sabit: '➡️', veri_yok: '❓' }[p.trend] || '❓';
+  const kaliteSatirlari = (p.kalite_bazli_talep || []).map(k => `
+    <div class="flex justify-between text-sm border-b border-slate-700 py-1.5">
+      <span class="opacity-80">${k.kalite_sinifi.replace(/_/g, ' ')}</span>
+      <span class="font-bold big-num">${sayi(k.ortalama_fiyat_kg, 2)} ₺/kg</span>
+    </div>`).join('') || '<div class="text-slate-400 text-sm">Kalite bazlı veri yok.</div>';
+
+  return `
+    <section>
+      ${kartBaslik('📊', 'Anlık Pazar & Ticari Borsa')}
+      <div class="rounded-2xl bg-slate-800 border-2 border-slate-600 p-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="text-xs opacity-70 font-bold">GÜNCEL FİYAT</div>
+            <div class="text-4xl font-black big-num">${sayi(p.guncel_fiyat_kg, 2)} ₺/kg</div>
+          </div>
+          <div class="text-3xl">${trendEmoji}</div>
+        </div>
+        ${p.mesaj ? `<div class="text-xs opacity-70 mt-1">${p.mesaj}</div>` : ''}
+        <div class="mt-3">${kaliteSatirlari}</div>
+      </div>
+    </section>`;
+}
+
+// 5. HASAT PERFORMANSI & SOĞUK ZİNCİR
+function bolum5(hp, sz) {
+  const isciler = (hp.isciler || []).map(i => `
+    <div class="flex justify-between text-sm border-b border-slate-700 py-1.5">
+      <span>${i.isci_adi}</span>
+      <span class="font-bold">${sayi(i.toplanan_kg, 1)} kg${i.kasa_saat_hizi ? ' · ' + sayi(i.kasa_saat_hizi, 1) + ' kasa/sa' : ''}</span>
+    </div>`).join('') || `<div class="text-slate-400 text-sm">${hp.mesaj || 'Veri yok.'}</div>`;
+
+  const depolar = (sz || []).map(d => `
+    <div class="rounded-xl border-2 p-3 ${riskSinifi(d.risk_seviyesi)}">
+      <div class="text-xs font-bold opacity-90">${d.depo_adi}</div>
+      <div class="text-2xl font-black big-num">${sayi(d.sicaklik, 1)}°C</div>
+      <div class="text-xs opacity-80">${riskEtiket(d.risk_seviyesi)}</div>
+    </div>`).join('') || `<div class="text-slate-400 text-sm col-span-2">Soğuk zincir verisi yok.</div>`;
+
+  return `
+    <section>
+      ${kartBaslik('🚚', 'Hasat & Soğuk Zincir Lojistiği')}
+      <div class="rounded-2xl bg-slate-800 border-2 border-slate-600 p-4 mb-3">
+        <div class="text-xs opacity-70 font-bold mb-1">BUGÜNKÜ TOPLAM HASAT</div>
+        <div class="text-3xl font-black big-num mb-2">${sayi(hp.bugunku_toplam_kg, 1)} kg</div>
+        ${isciler}
+        ${hp.bugunku_toplam_iscilik_maliyeti ? `<div class="text-xs mt-2 opacity-70">İşçilik maliyeti: <b>${sayi(hp.bugunku_toplam_iscilik_maliyeti, 0)} ₺</b></div>` : ''}
+      </div>
+      <div class="grid grid-cols-2 gap-2">${depolar}</div>
+    </section>`;
+}
+
+// 6. FİNANSAL SAĞLIK
+function bolum6(fs) {
+  const gider = Object.entries(fs.gider_dagilimi || {}).map(([k, v]) => `
+    <div class="flex justify-between text-sm border-b border-slate-700 py-1">
+      <span class="opacity-80">${k}</span><span class="font-bold">${sayi(v, 0)} ₺</span>
+    </div>`).join('');
+
+  const marjRenk = fs.net_kar_marji_yuzde === null || fs.net_kar_marji_yuzde === undefined
+    ? 'text-slate-400'
+    : fs.net_kar_marji_yuzde >= 20 ? 'text-emerald-400' : fs.net_kar_marji_yuzde >= 0 ? 'text-amber-400' : 'text-red-400';
+
+  return `
+    <section>
+      ${kartBaslik('💰', 'Mikro Finansal Sağlık')}
+      <div class="rounded-2xl bg-slate-800 border-2 border-slate-600 p-4 space-y-3">
+        <div>
+          <div class="text-xs opacity-70 font-bold">1 KG ÇİLEĞİN GÜNCEL MALİYETİ</div>
+          <div class="text-4xl font-black big-num">${fs.birim_maliyet_kg !== null && fs.birim_maliyet_kg !== undefined ? sayi(fs.birim_maliyet_kg, 2) + ' ₺' : '— (henüz hasat yok)'}</div>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <div class="text-xs opacity-70 font-bold">TOPLAM GİDER (30 gün)</div>
+            <div class="text-xl font-black big-num">${sayi(fs.toplam_gider, 0)} ₺</div>
+          </div>
+          <div>
+            <div class="text-xs opacity-70 font-bold">NET KÂR MARJI</div>
+            <div class="text-xl font-black big-num ${marjRenk}">${fs.net_kar_marji_yuzde !== null && fs.net_kar_marji_yuzde !== undefined ? sayi(fs.net_kar_marji_yuzde, 1) + '%' : '—'}</div>
+          </div>
+        </div>
+        ${gider ? `<div class="pt-1">${gider}</div>` : ''}
+        ${(fs.notlar || []).map(n => `<div class="text-xs opacity-60 border-t border-slate-700 pt-2">ℹ️ ${n}</div>`).join('')}
+      </div>
+    </section>`;
+}
+
+// ============ HIZLI GİRİŞ FORMLARI ============
+function formAc(tip) {
+  const modal = document.getElementById('modal-arka-plan');
+  const icerik = document.getElementById('modal-icerik');
+  const bugun = new Date().toISOString().slice(0, 10);
+
+  const formlar = {
+    hasat: `
+      <h3 class="text-xl font-black mb-3">🧺 Hasat Kaydı</h3>
+      <form data-gonder="formGonder" data-arg="hasat">
+        <label class="block text-sm font-bold mb-1">İşçi Adı</label>
+        <input name="isci_adi" class="w-full mb-3 rounded-lg bg-slate-700 p-3" placeholder="Ör. Ahmet">
+        <label class="block text-sm font-bold mb-1">Toplanan Kasa Sayısı</label>
+        <input name="toplanan_kasa" type="number" step="0.5" required class="w-full mb-3 rounded-lg bg-slate-700 p-3">
+        <label class="block text-sm font-bold mb-1">Süre (saat)</label>
+        <input name="sure_saat" type="number" step="0.1" class="w-full mb-3 rounded-lg bg-slate-700 p-3">
+        <label class="block text-sm font-bold mb-1">Kalite</label>
+        <select name="kalite_sinifi" class="w-full mb-3 rounded-lg bg-slate-700 p-3">
+          <option value="sofralik_premium">Sofralık Premium</option>
+          <option value="sofralik_standart">Sofralık Standart</option>
+          <option value="sanayilik_recellik">Sanayilik/Reçellik</option>
+        </select>
+        <input type="hidden" name="tarih" value="${bugun}">
+        <button class="w-full bg-emerald-600 py-3 rounded-xl font-bold text-lg mt-2">Kaydet</button>
+      </form>`,
+    ilaclama: `
+      <h3 class="text-xl font-black mb-3">🧪 İlaçlama Kaydı</h3>
+      <form data-gonder="formGonder" data-arg="ilaclama">
+        <label class="block text-sm font-bold mb-1">İlaç Adı</label>
+        <input name="ilac_adi" required class="w-full mb-3 rounded-lg bg-slate-700 p-3">
+        <label class="block text-sm font-bold mb-1">Hedef (ör. Botrytis)</label>
+        <input name="hedef" class="w-full mb-3 rounded-lg bg-slate-700 p-3">
+        <label class="block text-sm font-bold mb-1">PHI Süresi (gün)</label>
+        <input name="phi_gun" type="number" required class="w-full mb-3 rounded-lg bg-slate-700 p-3">
+        <input type="hidden" name="uygulama_tarihi" value="${new Date().toISOString()}">
+        <button class="w-full bg-amber-600 py-3 rounded-xl font-bold text-lg mt-2">Kaydet ve Kilitle</button>
+      </form>`,
+    gider: `
+      <h3 class="text-xl font-black mb-3">💰 Gider Kaydı</h3>
+      <form data-gonder="formGonder" data-arg="gider">
+        <label class="block text-sm font-bold mb-1">Kategori</label>
+        <select name="kategori" class="w-full mb-3 rounded-lg bg-slate-700 p-3">
+          <option value="fide">Fide</option>
+          <option value="gubre">Gübre</option>
+          <option value="ilac">İlaç</option>
+          <option value="mazot">Mazot</option>
+          <option value="iscilik">İşçilik</option>
+          <option value="sulama_enerji">Sulama/Enerji</option>
+          <option value="ambalaj">Ambalaj</option>
+          <option value="diger">Diğer</option>
+        </select>
+        <label class="block text-sm font-bold mb-1">Tutar (₺)</label>
+        <input name="tutar" type="number" step="0.01" required class="w-full mb-3 rounded-lg bg-slate-700 p-3">
+        <input type="hidden" name="tarih" value="${bugun}">
+        <button class="w-full bg-sky-600 py-3 rounded-xl font-bold text-lg mt-2">Kaydet</button>
+      </form>`,
+  };
+
+  icerik.innerHTML = formlar[tip] +
+    `<div id="form-hata" class="hidden mt-3 bg-red-900 border border-red-500 rounded-lg p-3 text-sm font-semibold"></div>` +
+    `<button type="button" data-tikla="modalKapat" class="w-full mt-2 py-3 rounded-xl font-bold text-slate-400">İptal</button>`;
+  modal.classList.remove('hidden');
+}
+
+function modalKapat() { document.getElementById('modal-arka-plan').classList.add('hidden'); }
+
+async function formGonder(evt, tip) {
+  evt.preventDefault();
+  const form = new FormData(evt.target);
+  const gövde = Object.fromEntries(form.entries());
+  gövde.parsel_id = AKTIF_PARSEL_ID;
+  if (gövde.toplanan_kasa) gövde.toplanan_kasa = parseFloat(gövde.toplanan_kasa);
+  if (gövde.sure_saat) gövde.sure_saat = parseFloat(gövde.sure_saat);
+  if (gövde.phi_gun) gövde.phi_gun = parseInt(gövde.phi_gun);
+  if (gövde.tutar) gövde.tutar = parseFloat(gövde.tutar);
+
+  const uçlar = { hasat: '/api/cilek/hasat', ilaclama: '/api/cilek/ilaclama', gider: '/api/cilek/gider' };
+  try {
+    await api(uçlar[tip], { method: 'POST', body: JSON.stringify(gövde) });
+    modalKapat();
+    yenile();
+  } catch (e) {
+    const hataKutusu = document.getElementById('form-hata');
+    if (hataKutusu) {
+      hataKutusu.textContent = '⚠️ ' + e.message;
+      hataKutusu.classList.remove('hidden');
+    }
+  }
+  return false;
+}
+
+// ============ BAŞLAT ============
+if (!token()) {
+  document.body.innerHTML = `
+    <div class="min-h-screen flex items-center justify-center flex-col gap-4 text-center px-6">
+      <div class="text-5xl">🍓</div>
+      <div class="text-xl font-bold">Bu panele erişmek için giriş yapmalısınız</div>
+      <a href="/" class="bg-emerald-600 px-6 py-3 rounded-xl font-bold text-lg">Giriş Yap</a>
+    </div>`;
+} else {
+  parselleriYukle();
+  YENILEME_TIMER = setInterval(yenile, 60000); // her 60sn otomatik yenile
+}
+
+// CSP (script-src 'self'): satır içi onclick/onsubmit yasak; öğeler data-tikla / data-gonder ile adlandırılır.
+// Modal formları innerHTML ile sonradan basıldığı için dinleyici document üzerindedir.
+const EYLEMLER = {
+  yenile: () => yenile(),
+  formAc: (el) => formAc(el.dataset.arg),
+  modalKapat: () => modalKapat(),
+  formGonder: (el, e) => formGonder(e, el.dataset.arg),
+};
+function eylemBagla(olay, oznitelik) {
+  document.addEventListener(olay, (e) => {
+    const el = e.target.closest(`[${oznitelik}]`);
+    if (!el) return;
+    const islev = EYLEMLER[el.getAttribute(oznitelik)];
+    if (islev) islev(el, e);
+  });
+}
+eylemBagla('click', 'data-tikla');
+eylemBagla('submit', 'data-gonder');

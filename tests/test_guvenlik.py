@@ -124,7 +124,8 @@ def test_html_sayfalara_csp_gelir_api_ve_docs_haric(client):
     assert "Content-Security-Policy" not in d.headers, "Swagger CDN'den script yükler"
 
 
-def test_csp_dis_script_kaynagi_yalniz_tailwind():
+def test_csp_dis_script_kaynagi_yok():
+    """Tailwind CDN kaldırıldı (önceden derlenmiş CSS); ayrıntılı denetim tests/test_csp.py'de."""
     from app.main import CSP
     script = [x for x in CSP.split("; ") if x.startswith("script-src")][0]
-    assert script.count("https://") == 1 and "cdn.tailwindcss.com" in script
+    assert script == "script-src 'self'"

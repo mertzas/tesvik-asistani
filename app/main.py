@@ -126,15 +126,15 @@ GUVENLIK_BASLIKLARI = {
 }
 
 
-# Content-Security-Policy (Denetim 2 / Aşama E). Paneller satır içi script/stil ve onclick gibi olay
-# öznitelikleri kullandığı için script-src'de 'unsafe-inline' KALIYOR; bu, enjekte edilmiş satır içi
-# script'i engellemez (bilinen kalan risk: olay yöneticileri nonce'a taşınınca kaldırılır). Yine de:
-# dış alan adından script/stil/görsel/bağlantı yükleme, <base> ile yön değiştirme, form hedefi değiştirme,
-# <object>/<embed> ve çerçeveleme engellenir; veri sızdırma yolu connect-src 'self' ile kapanır.
-# Tek dış kaynak: çilek panelinin Tailwind CDN'i.
+# Content-Security-Policy. script-src yalnızca 'self': sayfa betikleri app/static/js/ altında, olay yöneticileri
+# data-tikla/data-degisim/data-gonder ile tek dinleyiciye bağlı (2026-10-08). Enjekte edilmiş satır içi betik ve
+# onclick/onerror gibi öznitelikler çalışmaz; çilek panelinin Tailwind'i önceden derlenmiş CSS (dış kaynak yok).
+# style-src'de 'unsafe-inline' BİLEREK kalıyor: panelde yüzlerce style="" özniteliği var; stil enjeksiyonu betik
+# çalıştıramaz ve connect-src/img-src 'self' ile dışarı veri taşıyamaz (bilinen, düşük kalan risk).
+# Ayrıca: <base> ile yön değiştirme, form hedefi değiştirme, <object>/<embed> ve çerçeveleme engellenir.
 CSP = "; ".join([
     "default-src 'self'",
-    "script-src 'self' 'unsafe-inline' https://cdn.tailwindcss.com",
+    "script-src 'self'",
     "style-src 'self' 'unsafe-inline'",
     "img-src 'self' data:",
     "font-src 'self' data:",

@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-08 (Denetim 2 / Aşama H, kayıt taraması). Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-08 (güvenlik kod listesi 1–3: JWT iptali, doğrulama zorunlu kayıt, CSP). Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -42,8 +42,21 @@ Son güncelleme: 2026-10-08 (Denetim 2 / Aşama H, kayıt taraması). Oturuma bu
   kapanan KKYP/TSS/1711/SAYEM kapalı; yedek `tesvikler_oncesi_tur7.db.bak`). DB: aktif 100 / kapalı 84 / kararsız 2.
   Kazıyıcı tohumu (`app/scrapers/tarim_bakanligi.py`) 4 tarım kaydında DB ile eşitlendi; `tests/test_tarim_tohum_tutarlari.py`
   tohumu `app/tarim_destek_2026.py` sabitlerine bağlar. Test 835. 2027'de KKYP/TSS çağrısı açılınca 78/80 yeniden aktif edilmeli.
+- **Güvenlik kod listesi 1–3** (2026-10-08, tamamlandı, 3 commit):
+  1. JWT iptali: `users.oturum_surumu` (göç `h5c7e9f1a567`, dev DB'ye UYGULANDI, yedek `tesvikler_oncesi_gocH.db.bak`),
+     belirteçte "sv"; parola sıfırlama ve `POST /api/auth/tum-oturumlari-kapat` eski belirteçleri geçersiz kılar.
+     Panelde 401 → `/?oturum=bitti`; hesap silmede yanlış parola artık 403.
+  2. Doğrulama zorunlu kayıt `KAYIT_EPOSTA_DOGRULAMA_ZORUNLU` (varsayılan KAPALI): açıkken kayıt yanıtı hesap var/yok
+     aynı (202), doğrulanmamış hesap giremez, etkinleştirme bağlantı + parola ister (önceden ele geçirmeye karşı).
+     Girişte kayıtsız adreste de bcrypt (zamanlama). AÇMADAN ÖNCE: SMTP gerçekten posta gönderebilmeli (aşağıya bak).
+  3. CSP `script-src 'self'`: 5 sayfanın betiği `app/static/js/`, 28 olay özniteliği `data-tikla/degisim/gonder` +
+     EYLEMLER listesi; çilek Tailwind'i `app/static/css/cilek.css` (yeniden derleme komutu `tools/tailwind/tailwind.config.js`).
+     style-src 'unsafe-inline' bilerek kaldı. Testler `tests/test_csp.py`. Test 866.
+- SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
+  doğrulanmalı. `tests/test_hesap_belirtec.py::test_smtp_yoksa_istek_yine_de_basarili` gerçek EmailService'i kullandığı
+  için SMTP doluyken gerçek bağlantı deniyor (test hijyeni).
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa
-  yetersiz), profil düğmeleri stilsiz, kayıt sonrası onboarding yok.
+  yetersiz), profil düğmeleri stilsiz, kayıt sonrası onboarding yok, 422 doğrulama mesajları İngilizce (pydantic).
 
 ## Komutlar
 - Test: `PYTHONIOENCODING=utf-8 python -m pytest -q` · Lint: `python -m flake8 app/ tests/ scripts/ --select=E9,F63,F7,F82,F401,F811`

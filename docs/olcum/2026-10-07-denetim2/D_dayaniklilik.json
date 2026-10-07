@@ -1,0 +1,471 @@
+[
+ {
+  "tur": "kilit",
+  "fcntl_var": false,
+  "iki_surec_sonucu": [
+   "True",
+   "True"
+  ],
+  "zaman": "2026-10-07 18:05:15"
+ },
+ {
+  "tur": "redis_olu",
+  "health": {
+   "status": "ok",
+   "version": "2.0.0",
+   "veri_durumu": "eskiyor",
+   "hiz_siniri": "surec_ici",
+   "zamanlayici": false
+  },
+  "login_kodlari": [
+   401,
+   401,
+   401,
+   401,
+   401,
+   401,
+   401,
+   401,
+   401,
+   401,
+   429,
+   429,
+   429
+  ],
+  "sunucu_gunlugu": [
+   "REDIS_URL tanimli ama baglanilamadi (TimeoutError: Timeout connecting to server); surec ici sayaca dusuldu. Cok iscili dagitimda limit isci sayisi kadar gevser."
+  ],
+  "zaman": "2026-10-07 18:05:18"
+ },
+ {
+  "tur": "dblock",
+  "adimlar": {
+   "once_health": [
+    200,
+    0.0
+   ],
+   "once_profil": [
+    200,
+    0.04
+   ],
+   "kilitli_health": [
+    200,
+    35.26,
+    "{\"status\":\"ok\",\"version\":\"2.0.0\",\"veri_durumu\":\"veri_yok\",\"hiz_siniri\":\"surec_ici\",\"zamanlayici\":false}"
+   ],
+   "kilitli_eslesme_okuma": [
+    500,
+    7.07,
+    "Internal Server Error"
+   ],
+   "kilitli_yazan_akis": [
+    500,
+    7.11,
+    "Internal Server Error"
+   ],
+   "sonra_health": [
+    200,
+    0.03
+   ],
+   "sonra_eslesme": [
+    200,
+    0.03
+   ]
+  },
+  "kilit_suresi_sn": 49.6,
+  "sunucu_gunlugu": "ython\\pythoncore-3.14-64\\Lib\\site-packages\\sqlalchemy\\engine\\base.py\", line 1969, in _exec_single_context\n    self.dialect.do_execute(\n    ~~~~~~~~~~~~~~~~~~~~~~~^\n        cursor, str_statement, effective_parameters, context\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\huawei\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\sqlalchemy\\engine\\default.py\", line 952, in do_execute\n    cursor.execute(statement, parameters)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\nsqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked\n[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.full_name AS users_full_name, users.is_active AS users_is_active, users.org_id AS users_org_id, users.role AS users_role, users.created_at AS users_created_at, users.last_login AS users_last_login \nFROM users \nWHERE users.id = ?\n LIMIT ? OFFSET ?]\n[parameters: ('d3ee5db307934356892d2cd42ea1253b', 1, 0)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)\nINFO:     127.0.0.1:8385 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:8386 - \"GET /api/eslesme HTTP/1.1\" 200 OK\n",
+  "zaman": "2026-10-07 18:06:10"
+ },
+ {
+  "tur": "claude",
+  "senaryolar": {
+   "500": {
+    "durum": 200,
+    "toplam_sn": 2.78,
+    "olaylar": [
+     [
+      "kayitlar",
+      "[{\"id\": 178, \"kurum\": \"Sanayi ve Teknoloji Bakanlığı\", \"baslik\": \"Yerel Kalkınma Hamlesi P",
+      0.1
+     ],
+     [
+      "parca",
+      "{\"metin\": \"Sorunuzla ilgili 8 destek/teşvik programı buldum:\\n\\n1. [Sanayi ve Teknoloji Ba",
+      2.78
+     ],
+     [
+      "son",
+      "{\"query_id\": \"f34999f2-705c-4167-b452-ae9ecc71ae90\", \"tokens_used\": 4}",
+      2.78
+     ]
+    ],
+    "sahteye_giden_istek": 3
+   },
+   "529": {
+    "durum": 200,
+    "toplam_sn": 1.49,
+    "olaylar": [
+     [
+      "kayitlar",
+      "[{\"id\": 178, \"kurum\": \"Sanayi ve Teknoloji Bakanlığı\", \"baslik\": \"Yerel Kalkınma Hamlesi P",
+      0.07
+     ],
+     [
+      "parca",
+      "{\"metin\": \"Sorunuzla ilgili 8 destek/teşvik programı buldum:\\n\\n1. [Sanayi ve Teknoloji Ba",
+      1.49
+     ],
+     [
+      "son",
+      "{\"query_id\": \"d873b39d-5a8f-496a-a57e-616d500a4eb9\", \"tokens_used\": 4}",
+      1.49
+     ]
+    ],
+    "sahteye_giden_istek": 3
+   },
+   "kopma": {
+    "durum": 200,
+    "toplam_sn": 0.41,
+    "olaylar": [
+     [
+      "kayitlar",
+      "[{\"id\": 178, \"kurum\": \"Sanayi ve Teknoloji Bakanlığı\", \"baslik\": \"Yerel Kalkınma Hamlesi P",
+      0.08
+     ],
+     [
+      "parca",
+      "{\"metin\": \"### 1. Şirket & Proje Uygunluk Özeti\\nKısmi yanıt...\"}",
+      0.13
+     ],
+     [
+      "son",
+      "{\"query_id\": \"cdc64923-843c-4e89-9dc4-ed307dc4cb1e\", \"tokens_used\": 4}",
+      0.41
+     ]
+    ],
+    "sahteye_giden_istek": 1
+   }
+  },
+  "sunucu_gunlugu": "2026-10-07 18:06:12 INFO     app.logging_setup | Gunlukleme kuruldu (seviye=INFO)\nINFO:     Started server process [29100]\nINFO:     Waiting for application startup.\n2026-10-07 18:06:12 INFO     app.main | Zamanlayici bu surecte kapali (SCHEDULER_ENABLED=False)\nINFO:     Application startup complete.\nINFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)\nINFO:     127.0.0.1:8387 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:51307 - \"POST /api/auth/login HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:51308 - \"POST /api/organizations/ai-riza HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:51309 - \"POST /api/sor/akis HTTP/1.1\" 200 OK\n2026-10-07 18:06:15 WARNING  app.rag | Claude akışı başarısız (başlamadan): InternalServerError: Error code: 500 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'sahte 500'}}\nINFO:     127.0.0.1:51313 - \"POST /api/sor/akis HTTP/1.1\" 200 OK\n2026-10-07 18:06:17 WARNING  app.rag | Claude akışı başarısız (başlamadan): OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'sahte 529'}}\nINFO:     127.0.0.1:51318 - \"POST /api/sor/akis HTTP/1.1\" 200 OK\n",
+  "zaman": "2026-10-07 18:06:17"
+ },
+ {
+  "tur": "dblock",
+  "adimlar": {
+   "once_health": [
+    200,
+    0.02
+   ],
+   "once_profil": [
+    200,
+    0.03
+   ],
+   "kilitli_health": [
+    503,
+    7.18,
+    "{\"status\":\"db_erisilemiyor\",\"version\":\"2.0.0\"}"
+   ],
+   "kilitli_eslesme_okuma": [
+    500,
+    7.06,
+    "Internal Server Error"
+   ],
+   "kilitli_yazan_akis": [
+    500,
+    7.13,
+    "Internal Server Error"
+   ],
+   "sonra_health": [
+    200,
+    0.02
+   ],
+   "sonra_eslesme": [
+    200,
+    0.04
+   ]
+  },
+  "kilit_suresi_sn": 21.4,
+  "sunucu_gunlugu": "hon\\pythoncore-3.14-64\\Lib\\site-packages\\sqlalchemy\\engine\\base.py\", line 1969, in _exec_single_context\n    self.dialect.do_execute(\n    ~~~~~~~~~~~~~~~~~~~~~~~^\n        cursor, str_statement, effective_parameters, context\n        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n    )\n    ^\n  File \"C:\\Users\\huawei\\AppData\\Local\\Python\\pythoncore-3.14-64\\Lib\\site-packages\\sqlalchemy\\engine\\default.py\", line 952, in do_execute\n    cursor.execute(statement, parameters)\n    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^\nsqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked\n[SQL: SELECT users.id AS users_id, users.email AS users_email, users.hashed_password AS users_hashed_password, users.full_name AS users_full_name, users.is_active AS users_is_active, users.org_id AS users_org_id, users.role AS users_role, users.created_at AS users_created_at, users.last_login AS users_last_login \nFROM users \nWHERE users.id = ?\n LIMIT ? OFFSET ?]\n[parameters: ('d3ee5db307934356892d2cd42ea1253b', 1, 0)]\n(Background on this error at: https://sqlalche.me/e/20/e3q8)\nINFO:     127.0.0.1:55864 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:55865 - \"GET /api/eslesme HTTP/1.1\" 200 OK\n",
+  "zaman": "2026-10-07 18:08:34"
+ },
+ {
+  "tur": "yuk",
+  "on_kontrol": {
+   "/health": [
+    200,
+    0.01
+   ],
+   "/api/kobi-sinifi": [
+    200,
+    0.01
+   ],
+   "/api/nace/ara": [
+    200,
+    0.0
+   ]
+  },
+  "yuk": {
+   "tur": "yuk",
+   "sure_sn": 30,
+   "is_parcacigi": 5,
+   "toplam_istek": 17507,
+   "uc_noktalar": {
+    "/api/kobi-sinifi": {
+     "n": 5835,
+     "durumlar": {
+      "200": 14,
+      "429": 5821
+     },
+     "p50_ms": 4,
+     "p95_ms": 20,
+     "max_ms": 68
+    },
+    "/health": {
+     "n": 5836,
+     "durumlar": {
+      "200": 5836
+     },
+     "p50_ms": 11,
+     "p95_ms": 27,
+     "max_ms": 65
+    },
+    "/api/nace/ara": {
+     "n": 5836,
+     "durumlar": {
+      "200": 14,
+      "429": 5822
+     },
+     "p50_ms": 4,
+     "p95_ms": 20,
+     "max_ms": 57
+    }
+   }
+  },
+  "eszamanli_eslesme": {
+   "duvar_sn": 0.13,
+   "sonuclar": [
+    [
+     200,
+     0.1
+    ],
+    [
+     200,
+     0.12
+    ],
+    [
+     200,
+     0.1
+    ],
+    [
+     200,
+     0.13
+    ],
+    [
+     200,
+     0.12
+    ]
+   ]
+  },
+  "zaman": "2026-10-07 18:09:06"
+ },
+ {
+  "tur": "claude",
+  "senaryolar": {
+   "500": {
+    "durum": 200,
+    "toplam_sn": 2.59,
+    "olaylar": [
+     [
+      "kayitlar",
+      "[{\"id\": 178, \"kurum\": \"Sanayi ve Teknoloji Bakanlığı\", \"baslik\": \"Yerel Kalkınma Hamlesi P",
+      0.1
+     ],
+     [
+      "parca",
+      "{\"metin\": \"Sorunuzla ilgili 8 destek/teşvik programı buldum:\\n\\n1. [Sanayi ve Teknoloji Ba",
+      2.59
+     ],
+     [
+      "son",
+      "{\"query_id\": \"b36c2c4d-88c9-47cf-a3be-5ef311cc7b88\", \"tokens_used\": 4}",
+      2.59
+     ]
+    ],
+    "sahteye_giden_istek": 3
+   },
+   "529": {
+    "durum": 200,
+    "toplam_sn": 1.44,
+    "olaylar": [
+     [
+      "kayitlar",
+      "[{\"id\": 178, \"kurum\": \"Sanayi ve Teknoloji Bakanlığı\", \"baslik\": \"Yerel Kalkınma Hamlesi P",
+      0.11
+     ],
+     [
+      "parca",
+      "{\"metin\": \"Sorunuzla ilgili 8 destek/teşvik programı buldum:\\n\\n1. [Sanayi ve Teknoloji Ba",
+      1.44
+     ],
+     [
+      "son",
+      "{\"query_id\": \"eaa6bcb7-7d5d-4762-8dd7-aec4a0a63515\", \"tokens_used\": 4}",
+      1.44
+     ]
+    ],
+    "sahteye_giden_istek": 3
+   },
+   "kopma": {
+    "durum": 200,
+    "toplam_sn": 0.44,
+    "olaylar": [
+     [
+      "kayitlar",
+      "[{\"id\": 178, \"kurum\": \"Sanayi ve Teknoloji Bakanlığı\", \"baslik\": \"Yerel Kalkınma Hamlesi P",
+      0.09
+     ],
+     [
+      "parca",
+      "{\"metin\": \"### 1. Şirket & Proje Uygunluk Özeti\\nKısmi yanıt...\"}",
+      0.15
+     ],
+     [
+      "parca",
+      "{\"metin\": \"\\n\\n*(Yanıt bağlantı hatası nedeniyle kesildi; lütfen tekrar deneyin.)*\"}",
+      0.44
+     ],
+     [
+      "son",
+      "{\"query_id\": \"1d6c78d5-a60e-4d16-a02a-dff210607591\", \"tokens_used\": 4}",
+      0.44
+     ]
+    ],
+    "sahteye_giden_istek": 1
+   },
+   "hang": {
+    "durum": 200,
+    "toplam_sn": 271.38,
+    "olaylar": [
+     [
+      "kayitlar",
+      "[{\"id\": 178, \"kurum\": \"Sanayi ve Teknoloji Bakanlığı\", \"baslik\": \"Yerel Kalkınma Hamlesi P",
+      0.09
+     ],
+     [
+      "parca",
+      "{\"metin\": \"Sorunuzla ilgili 8 destek/teşvik programı buldum:\\n\\n1. [Sanayi ve Teknoloji Ba",
+      271.38
+     ],
+     [
+      "son",
+      "{\"query_id\": \"9984b541-a509-45a1-ab62-872dd4096b20\", \"tokens_used\": 4}",
+      271.38
+     ]
+    ],
+    "sahteye_giden_istek": 3
+   }
+  },
+  "sunucu_gunlugu": "ver process [8772]\nINFO:     Waiting for application startup.\n2026-10-07 18:09:15 INFO     app.main | Zamanlayici bu surecte kapali (SCHEDULER_ENABLED=False)\nINFO:     Application startup complete.\nINFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)\nINFO:     127.0.0.1:39800 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:21055 - \"POST /api/auth/login HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:21056 - \"POST /api/organizations/ai-riza HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:21057 - \"POST /api/sor/akis HTTP/1.1\" 200 OK\n2026-10-07 18:09:18 WARNING  app.rag | Claude akışı başarısız (başlamadan): InternalServerError: Error code: 500 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'sahte 500'}}\nINFO:     127.0.0.1:3774 - \"POST /api/sor/akis HTTP/1.1\" 200 OK\n2026-10-07 18:09:19 WARNING  app.rag | Claude akışı başarısız (başlamadan): OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'sahte 529'}}\nINFO:     127.0.0.1:3778 - \"POST /api/sor/akis HTTP/1.1\" 200 OK\n2026-10-07 18:09:20 WARNING  app.rag | Claude akışı message_stop gelmeden bitti (stop_reason boş)\nINFO:     127.0.0.1:3780 - \"POST /api/sor/akis HTTP/1.1\" 200 OK\n2026-10-07 18:13:51 WARNING  app.rag | Claude akışı başarısız (başlamadan): APITimeoutError: Request timed out or interrupted. This could be due to a network timeout, dropped connection, or request cancellation. See https://docs.anthropic.com/en/api/errors#long-requests for more details.\n",
+  "zaman": "2026-10-07 18:13:51"
+ },
+ {
+  "tur": "claude",
+  "senaryolar": {
+   "500": {
+    "durum": 200,
+    "toplam_sn": 1.61,
+    "olaylar": [
+     [
+      "kayitlar",
+      "[{\"id\": 178, \"kurum\": \"Sanayi ve Teknoloji Bakanlığı\", \"baslik\": \"Yerel Kalkınma Hamlesi P",
+      0.08
+     ],
+     [
+      "parca",
+      "{\"metin\": \"Sorunuzla ilgili 8 destek/teşvik programı buldum:\\n\\n1. [Sanayi ve Teknoloji Ba",
+      1.61
+     ],
+     [
+      "son",
+      "{\"query_id\": \"266607fb-8d95-44be-a06b-d2da107e64d6\", \"tokens_used\": 4}",
+      1.61
+     ]
+    ],
+    "sahteye_giden_istek": 2
+   },
+   "529": {
+    "durum": 200,
+    "toplam_sn": 0.63,
+    "olaylar": [
+     [
+      "kayitlar",
+      "[{\"id\": 178, \"kurum\": \"Sanayi ve Teknoloji Bakanlığı\", \"baslik\": \"Yerel Kalkınma Hamlesi P",
+      0.1
+     ],
+     [
+      "parca",
+      "{\"metin\": \"Sorunuzla ilgili 8 destek/teşvik programı buldum:\\n\\n1. [Sanayi ve Teknoloji Ba",
+      0.63
+     ],
+     [
+      "son",
+      "{\"query_id\": \"46eb70a9-4ed5-40a0-8e4a-6fbe2447f006\", \"tokens_used\": 4}",
+      0.63
+     ]
+    ],
+    "sahteye_giden_istek": 2
+   },
+   "kopma": {
+    "durum": 200,
+    "toplam_sn": 0.41,
+    "olaylar": [
+     [
+      "kayitlar",
+      "[{\"id\": 178, \"kurum\": \"Sanayi ve Teknoloji Bakanlığı\", \"baslik\": \"Yerel Kalkınma Hamlesi P",
+      0.08
+     ],
+     [
+      "parca",
+      "{\"metin\": \"### 1. Şirket & Proje Uygunluk Özeti\\nKısmi yanıt...\"}",
+      0.13
+     ],
+     [
+      "parca",
+      "{\"metin\": \"\\n\\n*(Yanıt bağlantı hatası nedeniyle kesildi; lütfen tekrar deneyin.)*\"}",
+      0.41
+     ],
+     [
+      "son",
+      "{\"query_id\": \"1f03b5b9-f376-422c-9029-ceddd4904a4e\", \"tokens_used\": 4}",
+      0.41
+     ]
+    ],
+    "sahteye_giden_istek": 1
+   },
+   "hang": {
+    "durum": 200,
+    "toplam_sn": 180.58,
+    "olaylar": [
+     [
+      "kayitlar",
+      "[{\"id\": 178, \"kurum\": \"Sanayi ve Teknoloji Bakanlığı\", \"baslik\": \"Yerel Kalkınma Hamlesi P",
+      0.08
+     ],
+     [
+      "parca",
+      "{\"metin\": \"Sorunuzla ilgili 8 destek/teşvik programı buldum:\\n\\n1. [Sanayi ve Teknoloji Ba",
+      180.58
+     ],
+     [
+      "son",
+      "{\"query_id\": \"fdcfbc19-0ce9-4b7f-81a4-ab702fe81136\", \"tokens_used\": 4}",
+      180.58
+     ]
+    ],
+    "sahteye_giden_istek": 2
+   }
+  },
+  "sunucu_gunlugu": "process [10508]\nINFO:     Waiting for application startup.\n2026-10-07 18:15:29 INFO     app.main | Zamanlayici bu surecte kapali (SCHEDULER_ENABLED=False)\nINFO:     Application startup complete.\nINFO:     Uvicorn running on http://127.0.0.1:8001 (Press CTRL+C to quit)\nINFO:     127.0.0.1:13513 - \"GET /health HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:13514 - \"POST /api/auth/login HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:13515 - \"POST /api/organizations/ai-riza HTTP/1.1\" 200 OK\nINFO:     127.0.0.1:13516 - \"POST /api/sor/akis HTTP/1.1\" 200 OK\n2026-10-07 18:15:32 WARNING  app.rag | Claude akışı başarısız (başlamadan): InternalServerError: Error code: 500 - {'type': 'error', 'error': {'type': 'api_error', 'message': 'sahte 500'}}\nINFO:     127.0.0.1:13520 - \"POST /api/sor/akis HTTP/1.1\" 200 OK\n2026-10-07 18:15:33 WARNING  app.rag | Claude akışı başarısız (başlamadan): OverloadedError: Error code: 529 - {'type': 'error', 'error': {'type': 'overloaded_error', 'message': 'sahte 529'}}\nINFO:     127.0.0.1:13523 - \"POST /api/sor/akis HTTP/1.1\" 200 OK\n2026-10-07 18:15:33 WARNING  app.rag | Claude akışı message_stop gelmeden bitti (stop_reason boş)\nINFO:     127.0.0.1:13525 - \"POST /api/sor/akis HTTP/1.1\" 200 OK\n2026-10-07 18:18:34 WARNING  app.rag | Claude akışı başarısız (başlamadan): APITimeoutError: Request timed out or interrupted. This could be due to a network timeout, dropped connection, or request cancellation. See https://docs.anthropic.com/en/api/errors#long-requests for more details.\n",
+  "zaman": "2026-10-07 18:18:34"
+ }
+]

@@ -52,6 +52,11 @@ OLLAMA_MODEL = "gemma4"
 OLLAMA_TIMEOUT_SEC = 150
 
 CLAUDE_TIMEOUT_SEC = 90  # 5 başlıklı danışman yanıtı ~3000 token; 30 sn yetmiyordu
+# SDK varsayılanı 2 yeniden deneme: yanıt vermeyen bir bağlantıda 3 x 90 = 271 sn sonra liste
+# formatına düşülüyordu (dayanıklılık deneyi 2026-10-07; nginx okuma sınırı 300 sn). Tek
+# yeniden deneme + kısa bağlantı sınırıyla en kötü durum ~180 sn.
+CLAUDE_MAX_RETRIES = 1
+CLAUDE_CONNECT_TIMEOUT_SEC = 10.0
 # Güncel modeller (claude-sonnet-5) varsayılan olarak adaptif düşünme yapar ve düşünme
 # token'ları da max_tokens'tan düşer: 3000 iken ~2100'ü düşünmeye gidip yanıt yarıda
 # kesiliyordu (ölçüm 2026-10-07). Bütçe geniş, derinlik effort ile sınırlanıyor.
@@ -682,6 +687,12 @@ def _baglam_metni(matches: list[Tesvik], profil: dict | None,
     )
 
 
+def _claude_zaman_asimi():
+    """Okuma sınırı CLAUDE_TIMEOUT_SEC, bağlantı sınırı kısa (ulaşılamayan sunucuda 90 sn beklenmez)."""
+    import httpx
+    return httpx.Timeout(CLAUDE_TIMEOUT_SEC, connect=CLAUDE_CONNECT_TIMEOUT_SEC)
+
+
 def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None,
                   notlar: dict[int, str] | None = None, elenen: str = "",
                   sistem_eki: str = "") -> str | None:
@@ -700,7 +711,7 @@ def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None,
     baglam = _baglam_metni(matches, profil, notlar, elenen)
 
     try:
-        client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY)
+        client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY, max_retries=CLAUDE_MAX_RETRIES)
         resp = client.messages.create(
             model=settings.CLAUDE_MODEL,
             max_tokens=CLAUDE_MAX_TOKENS,
@@ -710,7 +721,7 @@ def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None,
                 "content": f"BAĞLAM:\n{baglam}\n\nKULLANICI SORUSU: {query}",
             }],
             output_config={"effort": CLAUDE_EFFORT},
-            timeout=CLAUDE_TIMEOUT_SEC,
+            timeout=_claude_zaman_asimi(),
         )
         parcalar = [blok.text for blok in resp.content if getattr(blok, "type", None) == "text"]
         cevap = "".join(parcalar).strip()
@@ -890,14 +901,14 @@ def _claude_akis(query: str, matches: list[Tesvik], profil: dict | None,
     baglam = _baglam_metni(matches, profil, notlar, elenen)
     uretildi = False
     try:
-        client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY)
+        client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY, max_retries=CLAUDE_MAX_RETRIES)
         with client.messages.stream(
             model=settings.CLAUDE_MODEL,
             max_tokens=CLAUDE_MAX_TOKENS,
             system=SISTEM_PROMPTU + sistem_eki,
             messages=[{"role": "user", "content": f"BAĞLAM:\n{baglam}\n\nKULLANICI SORUSU: {query}"}],
             output_config={"effort": CLAUDE_EFFORT},
-            timeout=CLAUDE_TIMEOUT_SEC,
+            timeout=_claude_zaman_asimi(),
         ) as akis:
             for parca in akis.text_stream:
                 uretildi = True

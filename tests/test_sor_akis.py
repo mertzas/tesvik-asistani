@@ -182,7 +182,7 @@ class _SahteAkis:
 def _akis_kos(monkeypatch, sahte):
     import types
     import sys
-    fake = types.SimpleNamespace(Anthropic=lambda api_key=None: types.SimpleNamespace(messages=types.SimpleNamespace(stream=lambda **k: sahte)))
+    fake = types.SimpleNamespace(Anthropic=lambda **kw: types.SimpleNamespace(messages=types.SimpleNamespace(stream=lambda **k: sahte)))
     monkeypatch.setitem(sys.modules, "anthropic", fake)
     monkeypatch.setattr(rag.settings, "ANTHROPIC_API_KEY", "x")
     return list(rag._claude_akis("soru", [], None))

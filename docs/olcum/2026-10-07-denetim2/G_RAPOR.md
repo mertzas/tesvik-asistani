@@ -24,8 +24,8 @@ Düzeltilen yanlış tespitim: bütçe modülü "her sektöre aynı %5,8" kullan
 - Tarayıcıda (çiftçi): toplam tahmini destek ₺160.047–3.809.695 → ₺150.040–279.620.
 - Test 791 → 810 (1 atlandı), flake8 hata sınıfları 0.
 
-## Veri düzeltmesi — ONAY BEKLİYOR (dry-run: `G_fix_tur4_dryrun.txt`)
-`scripts/fix_veri_2026_10_07_denetim2_tur4.py`: kayıt 8, 81 (Kapasite Geliştirme: NACE C, 61, 62, 63, 72) ve 7, 142 (İstihdamı Koruma: NACE C) "genel" sektörlü ve NACE kapsamsızdı; otele ve çiftçiye öneriliyor, imalatçıda sektör puanı alamıyordu.
+## Veri düzeltmesi — UYGULANDI (2026-10-07; yedek `tesvikler_oncesi_tur4.db.bak`, git dışı; ikinci çalıştırma 0 kayıt)
+`scripts/fix_veri_2026_10_07_denetim2_tur4.py`: kayıt 8, 81 (Kapasite Geliştirme: NACE C, 61, 62, 63, 72) ve 7, 142 (İstihdamı Koruma: NACE C) "genel" sektörlü ve NACE kapsamsızdı; otele ve çiftçiye öneriliyor, imalatçıda sektör puanı alamıyordu. Gerçek DB'de sonuç: Bursa metal KOBİ'sinde Kapasite Geliştirme 2., KGF paketi 1., İstihdamı Koruma 6., KGF İstihdam 5.; otel, tahıl üreticisi ve Hatay restoranında dördü de listede yok.
 
 ## Açık kalanlar
 - KGF'nin Kapasite Geliştirme kefalet paketi (81), asıl KOSGEB programının (8) önüne geçiyor (eşit skor); paket ancak KOSGEB onayından sonra kullanılır. Bağımlı paketlere küçük sıralama cezası düşünülebilir.

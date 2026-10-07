@@ -59,7 +59,7 @@ _BASLIK = {
     "arge": re.compile(r"ar-?ge|inovasyon|tasarim|patent"),
     "ihracat": re.compile(r"ihracat|pazara giris|doviz kazandirici|e-ihracat|uluslararasi pazar"),
     "istihdam": re.compile(r"istihdam"),
-    "dijital": re.compile(r"dijital|yapay zek|e-ticaret|e-ihracat"),
+    "dijital": re.compile(r"dijital|yapay zek|e-ticaret|e-ihracat|bilisim|yazilim"),
     "finansman": re.compile(r"kredi|kefalet|finansman"),
     # Girişimcinin KENDİSİNE verilen programlar. Ekosistem tarafı hariç: 1612 uygulayıcı
     # kuruluş çağrısı, 1514 girişim sermayesi fonları, 1601 kapasite artırma (ölçüm 2026-10-07:

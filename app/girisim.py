@@ -32,14 +32,16 @@ AGIRLIK = 25
 # Veritabanında olmayan, spec'te adı geçen programlar: danışman bunları uydurmak yerine
 # "sistemde kayıt yok, resmî kaynaktan bakın" demeli.
 VERITABANINDA_OLMAYAN_PROGRAMLAR = (
-    "KOSGEB Ar-Ge, Ür-Ge ve İnovasyon Destek Programı",
-    "KOSGEB KOBİGEL",
     "KOSGEB Yurt Dışı Pazar Destek Programı",
-    "Ticaret Bakanlığı 5448 sayılı Karar (bilişim/SaaS: uygulama mağazası komisyonu, dijital "
-    "reklam, bulut/veri merkezi, yerelleştirme destekleri)",
     "TTGV programları",
     "Kalkınma Ajansı proje teklif çağrıları",
 )
+# Doğrulanmış mevzuat notu: danışman "5448 bilişim destekleri" diye sorulursa güncel
+# Karar'a yönlendirsin (kaynak: 10962 sayılı Karar MADDE 49-50, R.G. 27/2/2026).
+MEVZUAT_NOTU = ("Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1/2026'dan itibaren 10962 sayılı "
+                "Karar kapsamındadır; 5447 (E-Turquality) ve 5448 sayılı Kararlar yürürlükten kaldırılmıştır. "
+                "KOSGEB Ar-Ge/Ür-Ge/İnovasyon ve KOBİGEL programları yürürlükten kaldırılmıştır (kayıtları "
+                "'kapalı' olarak sistemde).")
 
 _ASCII = str.maketrans("çğıöşü", "cgiosu")
 _GIRISIM_SORU = re.compile(
@@ -190,6 +192,7 @@ def girisim_baglam_metni(profil: Any, bugun: date | None = None) -> str:
         parcalar.append(skor.metin())
     parcalar.append("SİSTEMDE KAYDI OLMAYAN PROGRAMLAR (bunlar için oran/limit/şart VERME; resmî kaynaktan "
                     "teyit istemekle yetin): " + "; ".join(VERITABANINDA_OLMAYAN_PROGRAMLAR))
+    parcalar.append("MEVZUAT NOTU (doğrulanmış): " + MEVZUAT_NOTU)
     return "\n".join(parcalar)
 
 

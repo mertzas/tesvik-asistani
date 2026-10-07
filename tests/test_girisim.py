@@ -96,8 +96,11 @@ def test_girisim_modu_tespiti(profil, soru, beklenen):
 def test_baglam_metni_huks_ve_eksik_program_listesi_icerir():
     m = girisim_baglam_metni(_p(sektor="arge", sirket_turu="yok", trl=4), BUGUN)
     assert "GİRİŞİM MODU BİLGİLERİ" in m and "HUKS ÖN SKORU" in m
-    assert "SİSTEMDE KAYDI OLMAYAN PROGRAMLAR" in m and "5448" in m and "KOBİGEL" in m
+    assert "SİSTEMDE KAYDI OLMAYAN PROGRAMLAR" in m and "TTGV" in m
     assert all(p.split(" (")[0] in m for p in VERITABANINDA_OLMAYAN_PROGRAMLAR)
+    # 5448 yürürlükten kalktı (10962 MADDE 49); KOBİGEL ve Ar-Ge/Ür-Ge artık kapalı kayıt olarak DB'de
+    assert "MEVZUAT NOTU" in m and "10962" in m and "5448 sayılı Kararlar yürürlükten kaldırılmıştır" in m
+    assert "KOBİGEL" not in VERITABANINDA_OLMAYAN_PROGRAMLAR
 
 
 def test_prompt_eki_korumalari_iceriyor():

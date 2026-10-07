@@ -1,0 +1,232 @@
+[174] 1512 - Girişimcilik Destek Programı (BiGG - Bireys
+    tesvil_tutari: 'None' -> 'BiGG Fonu hisse karşılığı yatırım: 1.350.000 TL (2026); +600'
+    tutari_max: 'None' -> '1350000.0'
+    kaynak_url: 'https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek' -> 'https://bigg.tubitak.gov.tr/'
+    uygunluk_kriterleri.tutar_niteligi: None -> 'hisse karşılığı yatırım'
+    not: Denetim2 2026-10-07: tubitak.gov.tr/1512 sayfası 'Erişim engellendi' (Chrome dahil); resmî BiGG Portalı kaynak alındı; e
+[34] 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme P
+    tesvil_tutari: 'None' -> 'Hibe: ilk 5 proje %75 (en fazla 20 M TL/proje), 6. ve sonras'
+    tutari_max: 'None' -> '20000000.0'
+    not: Denetim2 2026-10-07: 2026 yılı 2. çağrı dokümanı yayında (https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-p
+[25] 1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknolo
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'KOBİ: Ar-Ge destek oranı %75, en fazla 20 M TL; büyük ölçekl'
+    tutari_max: 'None' -> '40000000.0'
+    basvuru_suresi: 'None' -> 'Çağrı dönemli: duyurular www.hamle.gov.tr; ön başvuru + kesi'
+    not: Denetim2 2026-10-07: sayfa canlı; yalnızca Türkiye'de yerleşik sermaye şirketleri (https://www.tubitak.gov.tr/tr/destekl
+[48] 1709 – EUREKA-EUROSTARS
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Eurostars-3 Ulusal Çağrı 2026/2: ulusal çağrı bütçesi 4.000.'
+    basvuru_suresi: 'None' -> 'Çağrı dönemli (2026/2 çağrısı açık); başvuru eteydeb.tubitak'
+    kaynak_url: 'https://www.tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-' -> 'https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-orta'
+    not: Denetim2 2026-10-07: eski adres 404; yeni adres 'uluslararasi-ortakli-destek-programlari' altında (https://tubitak.gov.t
+[46] 1719 Eureka Network Çağrıları
+    aktif_mi: 'None' -> 'True'
+    basvuru_suresi: 'None' -> 'Açık ulusal çağrılar: Uygulamalı Kuantum Teknolojileri, Hafi'
+    kaynak_url: 'https://www.tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-' -> 'https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-orta'
+    not: Denetim2 2026-10-07: eski adres 404; yeni adres bulundu (https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli
+[70] 1831 - Yeşil İnovasyon Teknoloji Mentörlük Çağrısı
+    aktif_mi: 'None' -> 'False'
+    not: Denetim2 2026-10-07: son çağrılar 2023-01 ve 2024-02; 2025/2026 çağrısı yok (https://www.tubitak.gov.tr/tr/destekler/san
+[36] 1701 - Ar-Ge Proje Değerlendirme ve İzleme Çağrısı
+    aktif_mi: 'None' -> 'False'
+    not: Denetim2 2026-10-07: çağrı 2 Eylül–31 Ekim 2024; kapandı (https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-p
+[23] 1514 - Girişim Sermayesi Destekleme Programı (Tech
+    aktif_mi: 'None' -> 'False'
+    not: Denetim2 2026-10-07: Tech-InvesTR: TTO/TGB/AA fon katılım payının %50'si TÜBİTAK hibesi; son çağrı metni 2018; işletmele
+[30] 1833 - SAYEM Yeşil Dönüşüm Çağrısı
+    tesvil_tutari: 'None' -> 'SAYEM platform bütçe üst limiti: KOBİ 28 M TL, büyük ölçekli'
+    tutari_max: 'None' -> '70000000.0'
+    not: Denetim2 2026-10-07: çağrı tarihi sayfada yok; aktiflik belirsiz (https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-
+[35] 1612 - BiGG - 1.Aşama Uygulayıcı Kuruluş Çağrısı
+    (yalnızca durum_notu)
+    not: Denetim2 2026-10-07: 2026-2028 dönemi BiGG 1. aşama Uygulayıcı Kuruluş çağrısı (hızlandırıcılar için); 1601 2025-1 çağrı
+[1] Girişimci Destek Programı
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: "İş Kurma ₺10.000 + İş Geliştirme ₺1.500.000'a kadar" -> 'İş Kurma: gerçek kişi 10.000 TL / sermaye şirketi 20.000 TL '
+    not: Denetim2 2026-10-07: sayfa canlı; tutarlar 'Destek Unsurları' tablosundan (https://www.kosgeb.gov.tr/site/tr/genel/deste
+[2] Yapay Zekâ Kredi Programı
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Kredi 500.000 – 5.000.000 TL; vade 24 ay (ilk 12 ay ödemesiz'
+    tutari_min: 'None' -> '500000.0'
+    tutari_max: 'None' -> '5000000.0'
+    not: Denetim2 2026-10-07: sayfa canlı (https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi)
+[3] KOBİ Dijital Dönüşüm Destek Programı
+    aktif_mi: 'None' -> 'True'
+    not: Denetim2 2026-10-07: 1–20 M TL, 36 ay, C-İmalat teyit edildi (https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/k
+[5] YÖNDE - Yönderlik ve Değerlendirme Destek Programı
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> '%100 geri ödemesiz; program üst limiti toplam 700.000 TL (hi'
+    tutari_max: 'None' -> '700000.0'
+    not: Denetim2 2026-10-07: sayfa canlı (https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9165/yonde-yonderlik-ve-degerlendi
+[8] Kapasite Geliştirme Destek Programı
+    aktif_mi: 'None' -> 'True'
+    not: Denetim2 2026-10-07: 1–20 M TL, ≤36 ay, tek finansal kuruluş teyit edildi (https://www.kosgeb.gov.tr/site/tr/genel/deste
+[81] KAPASİTE GELİŞTİRME DESTEK PAKETİ
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Kredi üst limiti 20 Milyon TL; azami 36 ay vade'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-d
+[86] TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB N'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[87] HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJ
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Kefalet üst limiti 400 bin TL; kefalet başvuru ücreti 7.500 '
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[89] HALKBANK MESLEKİ EĞİTİM KREDİSİ DESTEK PAKETİ
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Azami kefalet 1.200.000 TL / kredi 6.000.000 TL'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[93] Vakıfbank Hukuk Bürosu Destek Paketi
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'İşletme kefalet üst limiti 800 bin TL; azami 36 ay (6 ay öde'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[107] KÜRESEL REKABETÇİLİK DESTEK PAKETİ
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Kredi üst limiti 50 Milyon TL; azami 36 ay'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-d
+[112] HALKBANK GENÇ İŞİ KREDİSİ PROJESİ
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Kefalet: işletme 800 bin / yatırım 2,4 Milyon TL; kredi: işl'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[116] KGF Kooperatif Destek Paketi
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Kefalet üst limitleri kooperatif ölçeğine göre 640 M / 80 M '
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[122] HALKBANK İLK ADIM KREDİSİ PROJESİ
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'İşletme kredisi: kefalet azami 800 bin TL, kredi 1 Milyon TL'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[126] İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Kredi asgari 1.520.000 – azami 1.600.000 TL; kefalet başvuru'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[133] KGF Savunma Sanayii Tedarikçi Destek Programı
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Üst limit 20 Milyon TL'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[137] KGF Özkaynak Kefalet Programı
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Yararlanıcı/grup başına kefalet azami 5 Milyon TL; işletme k'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[138] HALK BANKASI GENÇİZ KREDİSİ PROGRAMI DESTEK PAKETİ
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> '800 bin TL; kefalet başvuru ücreti 7.500 TL'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[142] İSTİHDAM KORUMA DESTEK PROGRAMI
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Üst limit 45 Milyon TL; başvuru ücreti 10.000 TL'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-d
+[149] REFİNANSMAN KEFALET PROGRAMI
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Üst limit 24 Milyon TL; başvuru ücreti 10.000 TL'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-d
+[152] TÜBİTAK Transfer Ödemeleri
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'İşletme başına toplam kefalet 1,25 Milyon TL (veya muadili d'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[168] ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Azami 40 Milyon TL; %80 kefalet; 6 ay ödemesiz, 24 ay vade; '
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[169] ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKE
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> '4 Milyon TL; %80 kefalet; başvuru ücreti 10.000 TL'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[170] GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Kefalet %90; 1.000.000 TL; yıllık %1,5 komisyon; başvuru ücr'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-d
+[171] Ziraat Katılım Bankası Katılım Finans Destek Paket
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> '4.000.000 / 6.000.000 TL; %80; 36 ay (6 ay ödemesiz); başvur'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[172] DİJİTAL KEFALET DESTEK PROGRAMI
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> '%80 kefalet; şahıs 2,2 Milyon / tüzel 5 Milyon TL; yıllık %2'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[173] Vakıfbank Basın İlan Kurumu Destek Paketi
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> 'Nakdi 3.000.000 TL (36 ay) / gayri nakdi 6.000.000 TL (48 ay'
+    not: Denetim2 2026-10-07: ürün sayfası yayında; limit/vade sayfadan (https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak
+[76] Hayvancılık Destekleri
+    tesvil_tutari: 'Hayvancılık türüne ve ölçeğine göre değişken' -> 'Birim tutarlar 8760 sayılı CB Kararı (2024-2026 Hayvancılık '
+    basvuru_suresi: "Dönemsel (1. ve 2. Dönem) — HAYGEM'in yıllık yayınladığı Çal" -> '2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–0'
+    kaynak_url: 'https://www.tarimorman.gov.tr/HAYGEM' -> 'https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Bu'
+    not: Denetim2 2026-10-07: Uygulama Tebliği 2024/23 ve 2026 talimatları; takvim talimattan (https://www.resmigazete.gov.tr/esk
+[78] Tarımsal Makineleştirme Destekleri
+    tesvil_tutari: 'Makine türüne göre ₺50.000 - ₺500.000' -> "Hibe: KDV dâhil hibeye esas proje tutarının %50–%70'i (EK-2'"
+    tutari_min: 'None' -> '100000.0'
+    tutari_max: 'None' -> '30000000.0'
+    basvuru_suresi: "Yıllık ilan edilir (kesin tarihler için BUGEM'in güncel duyu" -> '2026 uygulama yılı; başvuru hibe.tarimorman.gov.tr (Tebliğ 2'
+    kaynak_url: 'https://www.tarimorman.gov.tr/BUGEM#makinelestirme' -> 'https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.ht'
+    baslik: 'Tarımsal Makineleştirme Destekleri' -> 'Kırsal Kalkınma Yatırım Programı (KKYP) – Tarımsal İşleme/De'
+    ozet: 'Tarım makineleri alımına yönelik finansman ve hibe destekler' -> 'Tarım ve Orman Bakanlığı (TRGM) Kırsal Kalkınma Yatırım Prog'
+    basvuru_sartlari: 'None' -> "['Gerçek/tüzel kişiler ve tarımsal amaçlı örgütler; kadın ve"
+    not: Denetim2 2026-10-07: eski kayıt BUGEM ana sayfasına bağlıydı ve kaynaksız '₺50.000-₺500.000 makine hibesi' diyordu; kaps
+[80] Sulama Yatırımı Destekleri
+    tesvil_tutari: 'Proje hacmine göre ₺100.000 - ₺1.000.000' -> 'Hibe oranı %50 (damla, yağmurlama), %60 (mikro yağmurlama; c'
+    tutari_max: 'None' -> '10000000.0'
+    basvuru_suresi: "Yıllık ilan edilir (kesin tarihler için TRGM'in güncel duyur" -> 'Uygulama yılı 1/1/2026–31/12/2026; başvuru tss.tarimorman.go'
+    kaynak_url: 'https://www.tarimorman.gov.tr/TRGM#sulama-yatirimlari' -> 'https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.h'
+    baslik: 'Sulama Yatırımı Destekleri' -> 'Tasarruflu Tarımsal Sulama Sistemleri (TSS) Hibe Desteği'
+    ozet: 'Tarımsal sulama altyapı yatırımlarına yönelik destek.' -> 'Kırsal Kalkınma Yatırım Programı kapsamında tarla içi damla,'
+    basvuru_sartlari: 'None' -> '["Gerçek/tüzel kişiler; kadın ve genç girişimciler ile birin'
+    not: Denetim2 2026-10-07: eski kayıt TRGM ana sayfasına bağlıydı ve kaynaksız '₺100.000-₺1.000.000' diyordu; TSS Tebliği 2026
+[163] Pazara Girişte Dijital Faaliyetlerin Desteklenmesi
+    tesvil_tutari: 'None' -> '5973 sayılı İhracat Destekleri Hakkında Karar kapsamında; e-'
+    tutari_max: '15102.0' -> 'None'
+    not: Denetim2 2026-10-07: 2573 sayılı Karar MÜLGA (18.08.2022); yürürlükte 5973 sayılı Karar (https://ticaret.gov.tr/destekle
+[12] 4005 - Yenilikçi Eğitim Uygulamaları Destekleme Pr
+    aktif_mi: 'None' -> 'False'
+    not: Denetim2 2026-10-07: son çağrı 2025 (13. çağrı); 2026 çağrısı yok (https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/
+[13] 4007 - Bilim Şenlikleri Destekleme Programı
+    aktif_mi: 'None' -> 'True'
+    not: Denetim2 2026-10-07: 4007 çağrı metni 2026 (https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programla
+[16] 1004 - Mükemmeliyet Merkezi Destek Programı
+    aktif_mi: 'None' -> 'True'
+    not: Denetim2 2026-10-07: sürekli program; usul ve esaslar 06.05.2026 (https://www.tubitak.gov.tr/tr/destekler/akademik/ulusa
+[26] 2223 - D Türkiye-Birleşik Krallık Çalıştay Çağrı P
+    aktif_mi: 'None' -> 'True'
+    not: Denetim2 2026-10-07: dönemsel çalıştay çağrıları (https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-
+[28] 2517 - Azerbaycan Cumhuriyeti Bilimi Geliştirme Ku
+    aktif_mi: 'None' -> 'False'
+    not: Denetim2 2026-10-07: çağrı 4 Kasım 2025'te kapandı (https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikil
+[42] 4001 - Ulusal ve Uluslararası Yarışma/Etkinlik Kat
+    aktif_mi: 'None' -> 'True'
+    not: Denetim2 2026-10-07: 4001-A kitapçığı 30 Haziran 2026 (https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-deste
+[50] 2223 - D - Katip Çelebi-Newton Fonu Kapsam Çalışta
+    aktif_mi: 'None' -> 'True'
+    not: Denetim2 2026-10-07: dönemsel çalıştay çağrıları (https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-
+[51] 1003 - Öncelikli Alanlar Ar-Ge Projeleri Desteklem
+    aktif_mi: 'None' -> 'True'
+    not: Denetim2 2026-10-07: burs üst sınırları 1 Ocak 2026'dan geçerli (https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal
+[52] 4006 - TÜBİTAK Bilim Fuarları Destekleme Programı
+    aktif_mi: 'None' -> 'True'
+    not: Denetim2 2026-10-07: 2026 yılı 13. dönem (https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari
+[54] 1007 - Kamu Kurumları Araştırma ve Geliştirme Proj
+    aktif_mi: 'None' -> 'True'
+    not: Denetim2 2026-10-07: Kamu Yapay Zekâ Ekosistemi 2026 çağrısı (https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-de
+[56] 2542 - Azerbaycan Ulusal Bilimler Akademisi (ANAS)
+    aktif_mi: 'None' -> 'False'
+    not: Denetim2 2026-10-07: son başvuru 5 Kasım 2024 (https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-bir
+[61] 2544 - Japon Bilimi Destekleme Kurumu (JSPS) ile İ
+    aktif_mi: 'None' -> 'False'
+    not: Denetim2 2026-10-07: son başvuru 5 Eylül 2024 (https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-bir
+[62] 4006-C Bilim Fuarları Festivali Desteği
+    aktif_mi: 'None' -> 'False'
+    not: Denetim2 2026-10-07: 2026 başvurusu 17 Nisan 2026'da kapandı (https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusa
+[63] 4008 - Özel Gereksinimli Bireylere Yönelik Kapsayı
+    aktif_mi: 'None' -> 'False'
+    not: Denetim2 2026-10-07: 2025 yılı çağrısı (https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4
+[67] 1001 - Bilimsel ve Teknolojik Araştırma Projelerin
+    aktif_mi: 'None' -> 'True'
+    tesvil_tutari: 'None' -> '2026/1 dönemi proje destek üst limiti 3.000.000 TL (burs dah'
+    tutari_max: 'None' -> '3000000.0'
+    not: Denetim2 2026-10-07: 2026/1 (https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1001-bilimsel-ve
+[74] 2224-C Uluslararası Anlaşmalar Çerçevesinde Yurt D
+    aktif_mi: 'None' -> 'True'
+    not: Denetim2 2026-10-07: yeni dönem çağrısı 24.09.2026'da uzatıldı (https://www.tubitak.gov.tr/tr/destekler/bilimsel-etkinli
+
+DRY-RUN: 57 kayıt

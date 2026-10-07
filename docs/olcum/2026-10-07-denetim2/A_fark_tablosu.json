@@ -1,0 +1,632 @@
+[
+ {
+  "id": 174,
+  "alan": "tutar",
+  "bizde": "(boş); detayda 150.000 TL (eski) ve 1.350.000 TL çelişkili",
+  "kaynakta": "BiGG yatırım tutarı 1.350.000 TL (2026); 2022'de 900.000 TL; BiGG Fonu hisse karşılığı; 2025'ten GCİP ek yatırım 600.000 TL",
+  "url": "https://bigg.tubitak.gov.tr/",
+  "tarih": "2026-10-07",
+  "durum": "DÜZELT"
+ },
+ {
+  "id": 174,
+  "alan": "kaynak_url",
+  "bizde": "tubitak.gov.tr/.../1512-girisimcilik-destek-programi-bigg (Chrome'da da 'Erişim engellendi')",
+  "kaynakta": "bigg.tubitak.gov.tr erişilebilir resmî BiGG portalı",
+  "url": "https://bigg.tubitak.gov.tr/",
+  "tarih": "2026-10-07",
+  "durum": "DÜZELT (kaynak_url değiştir)"
+ },
+ {
+  "id": 34,
+  "alan": "tutar/oran",
+  "bizde": "(boş)",
+  "kaynakta": "İlk 5 proje: %75, hibe en fazla 20 M TL; 6. ve sonrası: %60, en fazla 20 M TL; süre ≤36 ay; 2026 yılı 2. çağrı dokümanı yayında",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE"
+ },
+ {
+  "id": 34,
+  "alan": "basvuru_suresi",
+  "bizde": "Yılda iki çağrı: Ocak-Şubat ve Temmuz-Ağustos",
+  "kaynakta": "Aynı (SSS: yılda iki çağrı, genel olarak Ocak-Şubat ve Temmuz-Ağustos)",
+  "url": "(aynı)",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU"
+ },
+ {
+  "id": 25,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "Sayfa canlı; çağrılar hamle.gov.tr üzerinden, ön+kesin başvuru; KOBİ %75 / 20 M TL, büyük %50 / 40 M TL; yalnızca sermaye şirketleri",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi",
+  "tarih": "2026-10-07",
+  "durum": "AKTİF (çağrı dönemli) + tutar EKLE"
+ },
+ {
+  "id": 78,
+  "alan": "kaynak_url/kurum",
+  "bizde": "tarimorman.gov.tr/BUGEM#makinelestirme (BUGEM sayfasında makine desteği yok)",
+  "kaynakta": "Makine-ekipman hibesi KKYP (Tarım Reformu GM): kirsalkalkinma.tarimorman.gov.tr/destekler/kirsal-kalkinma-yatirim-programi; 2026 programı: 10802 sayılı CB Kararı (31.12.2025), Tebliğ 3.4.2026, Uygulama Esasları 29.6.2026",
+  "url": "https://kirsalkalkinma.tarimorman.gov.tr/",
+  "tarih": "2026-10-07",
+  "durum": "DÜZELT (kaynak, kapsam; tutar aşağıda teyit)"
+ },
+ {
+  "id": 80,
+  "alan": "kaynak_url",
+  "bizde": "tarimorman.gov.tr/TRGM#sulama-yatirimlari",
+  "kaynakta": "Tasarruflu Tarımsal Sulama Sistemleri (TSS): kirsalkalkinma.tarimorman.gov.tr/destekler/tasarruflu-tarimsal-sulama-sistemleri",
+  "url": "https://kirsalkalkinma.tarimorman.gov.tr/",
+  "tarih": "2026-10-07",
+  "durum": "DÜZELT (tutar aşağıda teyit)"
+ },
+ {
+  "id": 76,
+  "alan": "basvuru_suresi",
+  "bizde": "Dönemsel (1. ve 2. Dönem) — HAYGEM Çalışma Takvimi'ne göre",
+  "kaynakta": "2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027); başvuru il/ilçe müdürlüğü veya birlik üzerinden, HDS",
+  "url": "https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/...; .../Duyuru/269/...",
+  "tarih": "2026-10-07",
+  "durum": "GÜNCELLE (somut tarihler)"
+ },
+ {
+  "id": 76,
+  "alan": "mevzuat/kaynak",
+  "bizde": "tarimorman.gov.tr/HAYGEM (ana sayfa, içerik yok)",
+  "kaynakta": "2024-2026 Hayvancılık Desteklemeleri CB Kararı 8760 (25/7/2024) + Uygulama Tebliği 2024/23 (RG 17/8/2024 S.32635); 2026 uygulama talimatları PDF",
+  "url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240817-11.htm",
+  "tarih": "2026-10-07",
+  "durum": "GÜNCELLE (kaynak_url talimat/duyuru; tutar Karar 8760'tan teyit edilecek)"
+ },
+ {
+  "id": 23,
+  "alan": "aktiflik/kapsam",
+  "bizde": "kararsız; 'Girişim Sermayesi Destekleme Programı'",
+  "kaynakta": "Tech-InvesTR: TTO/TGB/AA'ların fon katılım payının %50'si TÜBİTAK hibesi (azami 20 M TL); son çağrı metni 2018; işletmelere doğrudan destek değil",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1514-girisim-sermayesi-destekleme-programi-tech-investr",
+  "tarih": "2026-10-07",
+  "durum": "KAPALI/ekosistem (yeni çağrı yok) — isletmeye_yonelik=False zaten"
+ },
+ {
+  "id": 48,
+  "alan": "kaynak_url + aktiflik + tutar",
+  "bizde": "ölü URL (ulusal-destek-programlari/1709-eureka-eurostars); kararsız; tutar yok",
+  "kaynakta": "Yeni adres: .../uluslararasi-ortakli-destek-programlari/1709-eureka-eurostars; Eurostars-3 Ulusal Çağrı 2026/2 AÇIK; ulusal çağrı bütçesi 4.000.000 Avro; proje ≤36 ay; sermaye şirketi önderliği; başvuru eteydeb",
+  "url": "https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1709-eureka-eurostars",
+  "tarih": "2026-10-07",
+  "durum": "DÜZELT URL + AKTİF + süre/bütçe EKLE"
+ },
+ {
+  "id": 46,
+  "alan": "kaynak_url + aktiflik",
+  "bizde": "ölü URL; kararsız",
+  "kaynakta": "Yeni adres: .../uluslararasi-ortakli-destek-programlari/1719-eureka-network-cagrilari; 3 açık ulusal çağrı (Uygulamalı Kuantum, Hafifletme Teknolojileri, Afetlerde Dirençlilik); özel sektör öncülüğü; eteydeb",
+  "url": "https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1719-eureka-network-cagrilari",
+  "tarih": "2026-10-07",
+  "durum": "DÜZELT URL + AKTİF"
+ },
+ {
+  "id": 70,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "Son çağrılar 2023-01 ve 2024-02; 2025/2026 çağrısı yok (Dünya Bankası/Yeşil Sanayi projesi)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1831-yesil-inovasyon-teknoloji-mentorluk-cagrisi",
+  "tarih": "2026-10-07",
+  "durum": "KAPALI (yeni çağrı yok)"
+ },
+ {
+  "id": 30,
+  "alan": "tutar/şart",
+  "bizde": "kararsız; tutar yok",
+  "kaynakta": "SAYEM platform bütçe üst limiti KOBİ 28 M TL, büyük 70 M TL; yürütücü için 2025 Ar-Ge harcaması ≥46.707.100 TL; en az 3 ortak, en fazla 10; çağrı tarihi sayfada yok",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1833-sayem-yesil-donusum-cagrisi",
+  "tarih": "2026-10-07",
+  "durum": "tutar EKLE; aktiflik belirsiz (çağrı tarihi yok)"
+ },
+ {
+  "id": 35,
+  "alan": "kapsam",
+  "bizde": "kararsız",
+  "kaynakta": "1612: 2026-2028 dönemi BiGG 1. aşama Uygulayıcı Kuruluş çağrısı (hızlandırıcılar için, firmalara değil); 1601 2025-1 çağrı metni",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1612-bigg-1asama-uygulayici-kurulus-cagrisi",
+  "tarih": "2026-10-07",
+  "durum": "EKOSİSTEM (isletmeye_yonelik=False zaten); çağrı 2025-1"
+ },
+ {
+  "id": 36,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "Çağrı 2 Eylül 2024'te açıldı, son başvuru 31 Ekim 2024 — kapalı; proje bütçesi ≥5 M TL, başvuru ücretli",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1701-ar-ge-proje-degerlendirme-ve-izleme-cagrisi",
+  "tarih": "2026-10-07",
+  "durum": "KAPALI"
+ },
+ {
+  "id": 1,
+  "alan": "tutar",
+  "bizde": "İş Kurma ₺10.000 + İş Geliştirme ₺1.500.000'a kadar; min/max 10.000/30.000",
+  "kaynakta": "İş Kurma: gerçek kişi 10.000 TL / sermaye şirketi 20.000 TL (%100 geri ödemesiz; genç/kadın/engelli/gazi +10.000 TL); İş Geliştirme: 1.500.000 TL %80 geri ödemeli (+150.000 TL ilave); faiz/kâr payı desteği 1.000.000 TL kredi, faizin %50'si geri ödemesiz; 0-1 yaş / 0-3 yaş (C, 61, 62…)",
+  "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/1231/girisimci-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU (sermaye şirketi 20.000 TL ve ilaveler EKLE); AKTİF"
+ },
+ {
+  "id": 2,
+  "alan": "tutar/süre",
+  "bizde": "(boş)",
+  "kaynakta": "İşletme başına kredi 500.000–5.000.000 TL; vade 24 ay, ilk 12 ay ödemesiz; GO Dijital Cüzdan'a blokeli, banka kesin teminat mektubu",
+  "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 76,
+  "alan": "tutar",
+  "bizde": "'Hayvancılık türüne ve ölçeğine göre değişken' (kaynaksız)",
+  "kaynakta": "Birim tutarlar 8760 sayılı CB Kararı (RG 26/7/2024, 20240726-4.pdf) ekinde; PDF taranmış (metin yok) — Chrome/curl ile okunamadı; HAYGEM 2026 talimatları yalnızca takvim veriyor",
+  "url": "https://www.resmigazete.gov.tr/eskiler/2024/07/20240726-4.pdf",
+  "tarih": "2026-10-07",
+  "durum": "TEYİT EDİLEMEDİ (OCR gerekir) — tutar alanı belirsiz kalır, kaynak atfı eklenir"
+ },
+ {
+  "id": 3,
+  "alan": "tutar/şart",
+  "bizde": "₺1.000.000 - ₺20.000.000 kredi; C-İmalat NACE",
+  "kaynakta": "Alt limit 1.000.000 TL, üst limit 20.000.000 TL, azami vade 36 ay; NACE Rev.2 Kısım C-İmalat",
+  "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AKTİF"
+ },
+ {
+  "id": 5,
+  "alan": "tutar",
+  "bizde": "(boş)",
+  "kaynakta": "YÖNDE: %100 geri ödemesiz; program üst limiti toplam 700.000 TL (kalemler: 40.000 / 200.000 / 40.000 / 450.000 TL; hizmet başına 20.000–150.000 TL)",
+  "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9165/yonde-yonderlik-ve-degerlendirme-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE; AKTİF"
+ },
+ {
+  "id": 8,
+  "alan": "tutar/şart",
+  "bizde": "₺1.000.000 - ₺20.000.000 kredi; hızlı büyüyen işletme",
+  "kaynakta": "Alt 1.000.000 TL / üst 20.000.000 TL, vade ≤36 ay, tek finansal kuruluş; hızlı büyüyen işletme şartı (*); NACE 62/63/72 ve imalat",
+  "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9200/kapasite-gelistirme-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU; AKTİF"
+ },
+ {
+  "id": 80,
+  "alan": "tutar/oran/kaynak",
+  "bizde": "'Proje hacmine göre ₺100.000 - ₺1.000.000' (kaynaksız); TRGM ana sayfa",
+  "kaynakta": "TSS Tebliği 2026/10 (RG 3/4/2026): hibe %50 (damla, yağmurlama), %60 (mikro yağmurlama, center pivot/lineer/tamburlu, güneş enerjili), %70 (yüzey altı damla); hibeye esas proje tutarı ≤10.000.000 TL; 81 il; uygulama yılı 1/1/2026–31/12/2026; bütçenin ≥%20'si kadın/genç girişimcilere",
+  "url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.htm",
+  "tarih": "2026-10-07",
+  "durum": "DÜZELT (tutar, oran, kaynak_url, şartlar)"
+ },
+ {
+  "id": 78,
+  "alan": "tutar/oran/kaynak",
+  "bizde": "'Makine türüne göre ₺50.000 - ₺500.000' (kaynaksız); BUGEM ana sayfa",
+  "kaynakta": "KKYP Tebliği 2026/9 (RG 3/4/2026; 10802 sayılı CB Kararı): hibeye esas proje tutarı üst limit 30.000.000 TL, alt limit 100.000 TL, aile işletmesi ≤8.000.000 TL; makine-ekipman bireysel değil, 'tarımsal amaçlı örgütler için ortak makine parkı' + işleme/paketleme/depolama vb. yatırım konuları; hibe oranı KDV dâhil hibeye esas tutarın %50–%70'i (EK-2'ye göre, MADDE 14/4)",
+  "url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm",
+  "tarih": "2026-10-07",
+  "durum": "DÜZELT (kapsam yanlış: bireysel traktör/makine hibesi değil; tutar/oran/kaynak)"
+ },
+ {
+  "id": 163,
+  "alan": "mevzuat/tutar",
+  "bizde": "2573 sayılı Karar'a dayalı; %60, yıllık 15.102 TL (2022 yılı değeri)",
+  "kaynakta": "Sayfa: 2573 sayılı Karar MÜLGA (18.08.2022); yürürlükte 5973 sayılı İhracat Destekleri Hakkında Karar + Genelgeler + 'Destek Üst Limitleri' belgesi; 15.102 TL ifadesi '2022 yılı için'",
+  "url": "https://ticaret.gov.tr/destekler/ihracat-destekleri/pazara-giriste-dijital-faaliyetlerin-desteklenmesi",
+  "tarih": "2026-10-07",
+  "durum": "DÜZELT (5973 Karar'a göre güncel üst limit alınacak)"
+ },
+ {
+  "id": 162,
+  "alan": "aktiflik",
+  "bizde": "aktif",
+  "kaynakta": "Sayfa canlı, 5986 sayılı E-İhracat Destekleri Hakkında Karar yayında (ayrıntılar PDF)",
+  "url": "https://ticaret.gov.tr/destekler/e-ihracat-destekleri",
+  "tarih": "2026-10-07",
+  "durum": "DOĞRU"
+ },
+ {
+  "id": 81,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Kredi üst limiti 20 Milyon TL; azami 36 ay vade; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/kapasite-gelistirme-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 86,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "TOBB Nefes 2026: azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 87,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Kefalet üst limiti 400 bin TL; kefalet başvuru ücreti 7.500 TL; yalnızca TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-sahis-isletmeleri-destek-kredisi-projesi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 89,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Azami kefalet 1.200.000 TL / kredi 6.000.000 TL; genç girişimci 5.000 TL, mezun istihdam eden KOBİ 10.000 TL (ücret kalemleri); ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-mesleki-egitim-kredisi-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 93,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "İşletme kefalet üst limiti 800 bin TL; azami 36 ay (6 ay ödemesiz dahil); ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/vakifbank-hukuk-burosu-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 107,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Kredi üst limiti 50 Milyon TL; azami 36 ay; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/kuresel-rekabetcilik-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 112,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Kefalet: işletme 800 bin TL / yatırım 2,4 M TL; kredi: işletme 1 M / yatırım 3 M TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-genc-isi-kredisi-projesi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 116,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Kefalet üst limitleri kademeli 640 M / 80 M / 20 M TL (kooperatif ölçeğine göre); 12 ay ödemesiz, 24 ay vade; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-kooperatif-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 163,
+  "alan": "üst limit",
+  "bizde": "15.102 TL (2022)",
+  "kaynakta": "5973 Karar üst limit sayfasında yalnızca Finansman/Markalaşma/Ur-Ge PDF'leri var; e-ticaret site üyeliği limiti Genelge'de (bulunamadı)",
+  "url": "https://ticaret.gov.tr/destekler/ihracat-destekleri/5973-sayili-ihracat-destekleri-hakkinda-karar-destek-ust-limitleri",
+  "tarih": "2026-10-07",
+  "durum": "TEYİT EDİLEMEDİ → tutar alanı '5973 Genelge'ye bakın' olarak işaretlenir"
+ },
+ {
+  "id": 122,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "İşletme kredisi azami 800 bin TL (kefalet) / 1 Milyon TL (kredi); ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 126,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Kredi asgari 1.520.000 – azami 1.600.000 TL; kefalet başvuru ücreti 5.000 TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/istihdam-taahhutlu-kobi-finansman-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 133,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Üst limit 20 Milyon TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/savunma-sanayi-i-tedari-kci-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 137,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Yararlanıcı/grup başına kefalet azami 5 Milyon TL; işletme kredisi 6–60 ay (ödemesiz ≤1 yıl), yatırım 6–84 ay (ödemesiz ≤2 yıl); işlem ücreti ≥5.000 TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/ozkaynak",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 138,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "800 Bin TL; kefalet başvuru ücreti 7.500 TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-genciz-kredisi-programi-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 142,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Üst limit 45 Milyon TL; başvuru ücreti 10.000 TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/istihdam-koruma-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 149,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Üst limit 24 Milyon TL; başvuru ücreti 10.000 TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/refinansman-kefalet-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 152,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "İşletme başına toplam kefalet 1,25 Milyon TL (veya muadili döviz); kefalet oranı %100; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/dogrudan-krediler/tubitak-transfer-odemeleri",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 168,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Azami 40 Milyon TL; %80 kefalet; 6 ay ödemesiz, 24 ay vade; komisyon kredinin %0,1 (asg. 10 bin TL); Net ihracatçı (ihracat/ithalat ≥%110); ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-yesil-ihracat-kredisi-destek-paketii",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 169,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "4 Milyon TL; %80; başvuru ücreti 10.000 TL; kadın/genç girişimci şartı; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-kadin-ve-genc-girisimci-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 170,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Kefalet %90; 1.000.000 TL; yıllık %1,5 komisyon; başvuru ücreti 8.500 TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/girisimci-destek-programi-kredi-faiz-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 171,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "4.000.000 / 6.000.000 TL; %80; 36 ay (6 ay ödemesiz); başvuru ücreti KOBİ 10.000 / KOBİ dışı 20.000 TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-katilim-bankasi-katilim-finans-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 172,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "%80 kefalet; şahıs 2,2 Milyon / tüzel 5 Milyon TL; yıllık %2; başvuru ücreti 10.000 TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/dijital-kefalet-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 173,
+  "alan": "tutar/vade + aktiflik",
+  "bizde": "(tutar boş); kararsız",
+  "kaynakta": "Nakdi 3.000.000 TL (36 ay) / gayri nakdi 6.000.000 TL (48 ay); %80; başvuru ücreti 10.000 TL; ürün sayfası yayında",
+  "url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/vakifbank-basin-ilan-kurumu-destek-paketi",
+  "tarih": "2026-10-07",
+  "durum": "EKLE tutar; AÇIK (ürün listede)"
+ },
+ {
+  "id": 12,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "son çağrı 2025 (13. çağrı) metni; 2026 çağrısı yok (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4005-yenilikci-egitim-uygulamalari-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "KAPALI"
+ },
+ {
+  "id": 13,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "4007 Çağrı Metni (2026) (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4007-bilim-senlikleri-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "AÇIK"
+ },
+ {
+  "id": 16,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "sürekli program; Usul ve Esaslar 06.05.2026 (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1004-mukemmeliyet-merkezi-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "AÇIK"
+ },
+ {
+  "id": 26,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "dönemsel çalıştay çağrıları (dönem bazlı son başvuru) (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2223-d-turkiye-birlesik-krallik-calistay-cagri-programi",
+  "tarih": "2026-10-07",
+  "durum": "AÇIK"
+ },
+ {
+  "id": 28,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "çağrı 4 Kasım 2025'e kadar açıktı (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2517-azerbaycan-cumhuriyeti-bilimi-gelistirme-kurumu-sdf-ile-ikili-isbirligi-programi",
+  "tarih": "2026-10-07",
+  "durum": "KAPALI"
+ },
+ {
+  "id": 31,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "sayfada tarih yok (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4004-doga-egitimi-ve-bilim-okullari-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "KARARSIZ"
+ },
+ {
+  "id": 33,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "sayfada tarih yok (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4009-koy-okullarina-yonelik-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "KARARSIZ"
+ },
+ {
+  "id": 37,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "sayfada tarih yok (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4003-bilim-merkezi-ve-atolye-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "KARARSIZ"
+ },
+ {
+  "id": 38,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "sayfada tarih yok (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2223-d-abd-ulusal-saglik-enstituleri-nih-calistay-cagri-programi",
+  "tarih": "2026-10-07",
+  "durum": "KARARSIZ"
+ },
+ {
+  "id": 42,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "4001-A kurallar kitapçığı 30 Haziran 2026 güncel (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4001-ulusal-ve-uluslararasi-yarismaetkinlik-katilim-destegi",
+  "tarih": "2026-10-07",
+  "durum": "AÇIK"
+ },
+ {
+  "id": 50,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "dönemsel çalıştay çağrıları (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2223-d-katip-celebi-newton-fonu-kapsam-calistay-cagri-programi",
+  "tarih": "2026-10-07",
+  "durum": "AÇIK"
+ },
+ {
+  "id": 51,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "burs üst sınırları 1 Ocak 2026'dan geçerli (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1003-oncelikli-alanlar-ar-ge-projeleri-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "AÇIK"
+ },
+ {
+  "id": 52,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "2026 yılı 13. dönem (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4006-tubitak-bilim-fuarlari-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "AÇIK"
+ },
+ {
+  "id": 54,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "Kamu Yapay Zekâ Ekosistemi 2026 çağrısı (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1007-kamu-kurumlari-arastirma-ve-gelistirme-projelerini-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "AÇIK"
+ },
+ {
+  "id": 56,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "son başvuru 5 Kasım 2024 (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2542-azerbaycan-ulusal-bilimler-akademisi-anas-ile-ikili-isbirligi-programi",
+  "tarih": "2026-10-07",
+  "durum": "KAPALI"
+ },
+ {
+  "id": 61,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "son başvuru 5 Eylül 2024 (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/uluslararasi-birlikleri/ikili-birligi-programlari/2544-japon-bilimi-destekleme-kurumu-jsps-ile-ikili-isbirligi-programi",
+  "tarih": "2026-10-07",
+  "durum": "KAPALI"
+ },
+ {
+  "id": 62,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "2026 başvurusu 17 Nisan 2026'da kapandı (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4006-c-bilim-fuarlari-festivali-destegi",
+  "tarih": "2026-10-07",
+  "durum": "KAPALI"
+ },
+ {
+  "id": 63,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "2025 yılı çağrısı (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilim-toplum/ulusal-destek-programlari/4008-ozel-gereksinimli-bireylere-yonelik-kapsayici-toplum-uygulamalari-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "KAPALI"
+ },
+ {
+  "id": 67,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "2026/1 dönemi; proje üst limiti 3.000.000 TL (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1001-bilimsel-ve-teknolojik-arastirma-projelerini-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "AÇIK"
+ },
+ {
+  "id": 73,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "sayfada tarih yok (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/akademik/ulusal-destek-programlari/1000-universitelerin-arastirma-ve-gelistirme-potansiyelinin-artirilmasina-yonelik-destek-programi",
+  "tarih": "2026-10-07",
+  "durum": "KARARSIZ"
+ },
+ {
+  "id": 74,
+  "alan": "aktiflik",
+  "bizde": "kararsız",
+  "kaynakta": "yeni dönem çağrısı 24.09.2026'da uzatıldı (sayfa canlı; akademik/bilim-toplum programı, işletmeye yönelik değil)",
+  "url": "https://www.tubitak.gov.tr/tr/destekler/bilimsel-etkinlik/etkinliklere-katilma-destekleri/2224-c-uluslararasi-anlasmalar-cercevesinde-yurt-disindaki-bilimsel-etkinliklere-katilimi-destekleme-programi",
+  "tarih": "2026-10-07",
+  "durum": "AÇIK"
+ }
+]

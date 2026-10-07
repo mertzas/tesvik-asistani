@@ -241,6 +241,10 @@ def sor(
                 "ürün türü": profil_row.urun_turu,
                 "arazi büyüklüğü (dekar)": profil_row.arazi_buyuklugu_dekar,
                 "NACE kodu": profil_row.nace_kodu,
+                "şirket türü": profil_row.sirket_turu,
+                "kuruluş tarihi": (profil_row.kurulus_tarihi.isoformat()
+                                   if profil_row.kurulus_tarihi else None),
+                "TRL (teknoloji hazırlık seviyesi)": profil_row.trl,
             }
             # Ölçek sınıfı türetilmiş bir değerdir (çalışan + ciro); yeni kişisel
             # veri aktarmaz. "kesin değil" ise model bunu kullanıcıya söylesin.
@@ -362,6 +366,9 @@ def upsert_financial_profile(
     profil.ilk_yil_mi = request.ilk_yil_mi
     profil.nace_kodu = request.nace_kodu
     profil.ozellikler = request.ozellikler
+    profil.sirket_turu = request.sirket_turu
+    profil.kurulus_tarihi = request.kurulus_tarihi
+    profil.trl = request.trl
 
     db.commit()
     db.refresh(profil)

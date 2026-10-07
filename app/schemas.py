@@ -1,4 +1,4 @@
-from datetime import datetime
+from datetime import date, datetime
 from typing import Optional, List
 from uuid import UUID
 
@@ -170,6 +170,28 @@ class FinancialProfileCreate(BaseModel):
         description="Faaliyet kodu: C, C.10, C.10.71, 10.71 ... (NACE; harf isteğe bağlı)")
     ozellikler: Optional[List[str]] = Field(None, max_length=20,
         description="Hedef kitle etiketleri (kadin_girisimci, genc_girisimci, savunma_sanayii, ...)")
+    sirket_turu: Optional[str] = Field(None, max_length=20,
+        description="yok (henüz kurulmadı) | sahis | limited | anonim | kooperatif")
+    kurulus_tarihi: Optional[date] = None
+    trl: Optional[int] = Field(None, ge=1, le=9, description="Teknoloji hazırlık seviyesi 1-9")
+
+    @field_validator("sirket_turu")
+    @classmethod
+    def _sirket_turu_gecerli(cls, v):
+        if v is None or not str(v).strip():
+            return None
+        from app.girisim import SIRKET_TURLERI
+        v = str(v).strip().lower()
+        if v not in SIRKET_TURLERI:
+            raise ValueError("sirket_turu şunlardan biri olmalı: " + ", ".join(SIRKET_TURLERI))
+        return v
+
+    @field_validator("kurulus_tarihi")
+    @classmethod
+    def _kurulus_gecerli(cls, v):
+        if v is not None and v > date.today():
+            raise ValueError("Kuruluş tarihi gelecekte olamaz")
+        return v
 
     @field_validator("nace_kodu")
     @classmethod
@@ -222,6 +244,9 @@ class FinancialProfileResponse(BaseModel):
     ilk_yil_mi: Optional[bool]
     nace_kodu: Optional[str] = None
     ozellikler: Optional[List[str]] = None
+    sirket_turu: Optional[str] = None
+    kurulus_tarihi: Optional[date] = None
+    trl: Optional[int] = None
     updated_at: datetime
 
     class Config:

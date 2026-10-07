@@ -636,6 +636,31 @@
                         <input type="text" id="p-nace" maxlength="20" placeholder="örn. C.10.71, 55.10 veya sadece C" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
                         <p style="font-size:12px; color:#999; margin-top:4px;">İsteğe bağlı. Girerseniz yalnızca sektörünüze uygun destekler gösterilir; Vergi levhanızdaki NACE kodunu yazabilirsiniz.</p>
                     </div>
+                    <div>
+                        <label style="font-size:13px; color:#666;">Şirket Türü</label>
+                        <select id="p-sirket-turu" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                            <option value="">Belirtmek istemiyorum</option>
+                            <option value="yok">Henüz şirket kurmadım</option>
+                            <option value="sahis">Şahıs işletmesi</option>
+                            <option value="limited">Limited şirket</option>
+                            <option value="anonim">Anonim şirket</option>
+                            <option value="kooperatif">Kooperatif</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="font-size:13px; color:#666;">Kuruluş Tarihi</label>
+                        <input type="date" id="p-kurulus" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                    </div>
+                    <div>
+                        <label style="font-size:13px; color:#666;">Teknoloji Hazırlık Seviyesi (TRL)</label>
+                        <select id="p-trl" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                            <option value="">Belirtmek istemiyorum / ilgili değil</option>
+                            <option value="1">TRL 1-3: fikir / araştırma</option>
+                            <option value="4">TRL 4-6: prototip / doğrulama</option>
+                            <option value="7">TRL 7-9: ticarileşme / operasyon</option>
+                        </select>
+                        <p style="font-size:12px; color:#999; margin-top:4px;">Ar-Ge/girişim projeleri için. Girişim modunda danışman HUKS ön skorunu bu alanlardan hesaplar.</p>
+                    </div>
                     <div style="grid-column: 1 / -1;">
                         <label style="font-size:13px; color:#666;">İşletmenizi tanımlayan özellikler (isteğe bağlı)</label>
                         <div style="display:flex; gap:15px; margin-top:8px; flex-wrap:wrap;">
@@ -1101,6 +1126,10 @@
                 document.getElementById("p-urun").value = p.urun_turu ?? "";
                 document.getElementById("p-ilk-yil").checked = !!p.ilk_yil_mi;
                 document.getElementById("p-nace").value = p.nace_kodu ?? "";
+                document.getElementById("p-sirket-turu").value = p.sirket_turu ?? "";
+                document.getElementById("p-kurulus").value = p.kurulus_tarihi ?? "";
+                const trlSec = document.getElementById("p-trl");
+                trlSec.value = p.trl ? (p.trl <= 3 ? "1" : p.trl <= 6 ? "4" : "7") : "";
                 document.querySelectorAll(".p-ozellik").forEach(cb => {
                     cb.checked = (p.ozellikler || []).includes(cb.value);
                 });
@@ -1194,6 +1223,9 @@
                 tarim_kategori: tarimKategori || null,
                 ilk_yil_mi: document.getElementById("p-ilk-yil").checked,
                 nace_kodu: document.getElementById("p-nace").value.trim() || null,
+                sirket_turu: document.getElementById("p-sirket-turu").value || null,
+                kurulus_tarihi: document.getElementById("p-kurulus").value || null,
+                trl: document.getElementById("p-trl").value ? Number(document.getElementById("p-trl").value) : null,
                 ozellikler: Array.from(document.querySelectorAll(".p-ozellik:checked")).map(cb => cb.value),
             };
         }

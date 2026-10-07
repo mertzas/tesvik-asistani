@@ -36,12 +36,16 @@ SORU_KALIPLARI: dict[str, re.Pattern] = {
     "dijital": re.compile(
         r"\b(dijital\w*|erp\b|yazilim\w*|e-ticaret\w*|eticaret\w*|otomasyon\w*|yapay zeka\w*)"),
     "finansman": re.compile(r"\b(kredi\w*|kefalet\w*|finansman\w*|faiz\w*|isletme sermaye\w*|nakit\w*)"),
+    "girisim": re.compile(
+        r"\b(girisim\w*|startup|start-up|bigg|1512|1812|sirket kurmad\w*|sirketles\w*|prototip\w*|"
+        r"tohum\w*|kulucka\w*|teknogirisim\w*|is kurma\w*)"),
 }
 
 IHTIYAC_ADLARI: dict[str, str] = {
     "yatirim": "makine/tesis yatırımı", "arge": "Ar-Ge ve ürün geliştirme",
     "ihracat": "ihracat", "istihdam": "istihdam", "dijital": "dijital dönüşüm",
     "finansman": "kredi/finansman",
+    "girisim": "girişim / şirketleşme öncesi ve erken aşama",
 }
 
 _BASLIK = {
@@ -57,7 +61,12 @@ _BASLIK = {
     "istihdam": re.compile(r"istihdam"),
     "dijital": re.compile(r"dijital|yapay zek|e-ticaret|e-ihracat"),
     "finansman": re.compile(r"kredi|kefalet|finansman"),
+    # Girişimcinin KENDİSİNE verilen programlar. Ekosistem tarafı hariç: 1612 uygulayıcı
+    # kuruluş çağrısı, 1514 girişim sermayesi fonları, 1601 kapasite artırma (ölçüm 2026-10-07:
+    # şirketsiz girişim sorusunda BiGG hiç gelmiyor, model "kaydım yok" diyordu).
+    "girisim": re.compile(r"bigg|girisimci destek|girisimcilik destek|ilk adim|teknogirisim|tohum|kulucka"),
 }
+_GIRISIM_HARIC = re.compile(r"uygulayici kurulus|girisim sermayesi|kapasite artirilmasi")
 # Tarım makineleştirme bir yatırım programıdır ama çiftçiye yöneliktir; sektör uyumu
 # profil filtresinde ele alınır, burada yalnızca ihtiyaç türü belirlenir.
 
@@ -96,6 +105,8 @@ def program_ihtiyaclari(t: Any) -> set[str]:
     for ad, kalip in _BASLIK.items():
         if kalip.search(baslik):
             sonuc.add(ad)
+    if "girisim" in sonuc and _GIRISIM_HARIC.search(baslik):
+        sonuc.discard("girisim")
     if kurum in ("Sanayi ve Teknoloji Bakanlığı", "Hazine/Ticaret Bakanligi") or "yatirim tesvik" in kategori:
         sonuc.add("yatirim")
     if "ihracat" in sektorler:

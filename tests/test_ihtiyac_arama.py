@@ -77,10 +77,10 @@ def test_program_ihtiyaclari_veriye_dayali(veri):
     assert "ihracat" in p[162] and "finansman" in p[103]
 
 
-def test_bigg_yatirim_tabanli_yatirim_programi_sayilmaz():
+def test_bigg_yatirim_programi_degil_girisim_programidir():
     t = Tesvik(kurum="TUBITAK", baslik="1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
                kaynak_url=f"{TUBITAK}/sanayi/1812", uygunluk_kriterleri={})
-    assert program_ihtiyaclari(t) == set()
+    assert program_ihtiyaclari(t) == {"girisim"}
 
 
 def test_akademik_tubitak_isletmeye_yonelik_degil(veri):

@@ -26,6 +26,7 @@ from app.ihtiyac import isletmeye_yonelik_mi, program_ihtiyaclari, soru_ihtiyacl
 from app.match_adapter import company_from_profile, program_from_tesvik
 from app.match_scoring import hard_filter
 from app.kobi import kobi_sinifi
+from app.girisim import GIRISIM_PROMPT_EKI, girisim_baglam_metni, girisim_modu_mu
 from app.tesvik_9903_uygunluk import SIRALAMA_ETKISI as UYGUNLUK_9903_ETKISI, kayit_icin as uygunluk_9903
 from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu, settings
 from sqlalchemy import or_
@@ -603,7 +604,8 @@ def _baglam_metni(matches: list[Tesvik], profil: dict | None,
 
 
 def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None,
-                  notlar: dict[int, str] | None = None, elenen: str = "") -> str | None:
+                  notlar: dict[int, str] | None = None, elenen: str = "",
+                  sistem_eki: str = "") -> str | None:
     """Claude API ile bulunan kayitlari + kullanici profilini yorumlayip
     yapilandirilmis cevap uretir. API anahtari yoksa veya cagri basarisiz
     olursa None doner - cagiran taraf liste formatina duser, hicbir zaman
@@ -623,7 +625,7 @@ def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None,
         resp = client.messages.create(
             model=settings.CLAUDE_MODEL,
             max_tokens=CLAUDE_MAX_TOKENS,
-            system=SISTEM_PROMPTU,
+            system=SISTEM_PROMPTU + sistem_eki,
             messages=[{
                 "role": "user",
                 "content": f"BAĞLAM:\n{baglam}\n\nKULLANICI SORUSU: {query}",
@@ -706,9 +708,17 @@ def answer(query: str, profil: dict | None = None,
 
     notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi).items()}
     elenen = elenen_9903_metni(query, profil_kaydi) if llm_kullan else ""
+    girisim = llm_kullan and girisim_modu_mu(profil_kaydi, query)
+    if girisim:
+        # HUKS kodda hesaplanır; blok ek bağlam olarak gider, format eki sistem prompt'una eklenir.
+        elenen = (elenen + "\n\n" if elenen else "") + girisim_baglam_metni(profil_kaydi)
     if llm_kullan:
-        claude_cevap = (_claude_cevap(query, matches, profil, notlar, elenen) if (notlar or elenen)
-                        else _claude_cevap(query, matches, profil))
+        if girisim:
+            claude_cevap = _claude_cevap(query, matches, profil, notlar, elenen,
+                                         sistem_eki=GIRISIM_PROMPT_EKI)
+        else:
+            claude_cevap = (_claude_cevap(query, matches, profil, notlar, elenen) if (notlar or elenen)
+                            else _claude_cevap(query, matches, profil))
         if claude_cevap is not None:
             return claude_cevap
 

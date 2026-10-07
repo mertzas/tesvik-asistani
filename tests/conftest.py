@@ -37,11 +37,18 @@ app.dependency_overrides[get_db] = override_get_db
 
 
 @pytest.fixture(autouse=True)
-def _fresh_db():
+def _fresh_db(monkeypatch):
     """Her testten once temiz bir sema olustur, testten sonra sil - testler
     arasi veri sizmasini (orn. ayni email'in iki farkli testte carpismasi)
-    engeller."""
+    engeller.
+
+    app/rag.py `SessionLocal`'i adiyla ice aktarip kendi oturumunu aciyor; get_db
+    override'i onu kapsamiyor. Yerelde ./tesvik.db var oldugu icin fark edilmiyordu,
+    CI'da (bos ci.db) /api/sor "no such table" ile 500 veriyordu (run 37624057827).
+    Testler artik yalnizca bellek-ici DB'ye bagli."""
     Base.metadata.create_all(bind=engine)
+    import app.rag
+    monkeypatch.setattr(app.rag, "SessionLocal", TestingSessionLocal)
     yield
     Base.metadata.drop_all(bind=engine)
 

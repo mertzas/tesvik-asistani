@@ -48,7 +48,7 @@ from app.schemas import (
     EticaretGiderGirdisi,
     EticaretDestekResponse,
 )
-from app.rag import answer, retrieve
+from app.rag import answer, profil_sozlugu, retrieve
 from app.billing import create_checkout_session, confirm_checkout_session, cancel_subscription, handle_webhook, get_plan_limits
 from app.admin import router as admin_router
 from app.matching import esles, toplam_tahmini_destek, tutari_tahmini_hesapla
@@ -228,35 +228,9 @@ def sor(
         riza_var = bool(current_org.ai_yurtdisi_riza)
 
         profil_row = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
-        profil = None
-        if riza_var and profil_row is not None:
-            profil = {
-                "sektör": profil_row.sektor,
-                "bölge": profil_row.bolge,
-                "çalışan sayısı": profil_row.calisan_sayisi,
-                "yıllık ciro": profil_row.yillik_ciro,
-                "hedefler": profil_row.hedefler,
-                "ilk yıl mı": profil_row.ilk_yil_mi,
-                "tarım kategorisi": profil_row.tarim_kategori,
-                "ürün türü": profil_row.urun_turu,
-                "arazi büyüklüğü (dekar)": profil_row.arazi_buyuklugu_dekar,
-                "NACE kodu": profil_row.nace_kodu,
-                "şirket türü": profil_row.sirket_turu,
-                "kuruluş tarihi": (profil_row.kurulus_tarihi.isoformat()
-                                   if profil_row.kurulus_tarihi else None),
-                "TRL (teknoloji hazırlık seviyesi)": profil_row.trl,
-            }
-            # Ölçek sınıfı türetilmiş bir değerdir (çalışan + ciro); yeni kişisel
-            # veri aktarmaz. "kesin değil" ise model bunu kullanıcıya söylesin.
-            from app.kobi import AD as KOBI_AD, kobi_sinifi
-            olcek = kobi_sinifi(profil_row.calisan_sayisi, profil_row.yillik_ciro)
-            if olcek.sinif:
-                profil["KOBİ ölçeği"] = (KOBI_AD[olcek.sinif]
-                                        + ("" if olcek.kesin else " (kesin değil: " + olcek.aciklama + ")")
-                                        + " [KOBİ Yönetmeliği, 7 Ağustos 2025 eşiklerine göre hesaplandı]")
-            bolge_no = il_bolgesi(profil_row.bolge) if profil_row.bolge else None
-            if bolge_no:
-                profil["yatırım teşvik bölgesi (9903 sayılı Karar EK-2)"] = f"{bolge_no}. bölge"
+        # Dışarı giden sözlük tek yerde tanımlı: app/rag.profil_sozlugu (ölçüm
+        # betikleri ve testler aynı sözlüğü kullanır).
+        profil = profil_sozlugu(profil_row) if (riza_var and profil_row is not None) else None
 
         # Mevcut RAG sistemini çalıştır
         answer_text = answer(request.question, profil, llm_kullan=riza_var,

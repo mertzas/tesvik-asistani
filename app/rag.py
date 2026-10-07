@@ -18,6 +18,7 @@ numarasi resmi kurum sayfasindan WebFetch ile tek tek dogrulanmistir
 docstring'i) - LLM egitim verisinden gelen "hatirlanan" numaralar degil.
 """
 import logging
+import re
 
 import requests
 
@@ -25,6 +26,7 @@ from sqlalchemy.orm import selectinload
 from app.ihtiyac import isletmeye_yonelik_mi, program_ihtiyaclari, soru_ihtiyaclari
 from app.match_adapter import company_from_profile, program_from_tesvik
 from app.match_scoring import hard_filter
+from app.matching import uygunluk_engeli
 from app.kobi import kobi_sinifi
 from app.girisim import GIRISIM_PROMPT_EKI, girisim_baglam_metni, girisim_modu_mu
 from app.nace_extraction import clean_grant_text
@@ -272,6 +274,18 @@ ESKI_SISTEM_NOTU = (
     "9903 sayılı Karar ile yürürlükten kalkmıştır; bu eski sistemlere başvurulamaz.")
 
 
+# Kullanıcının adıyla sorduğu, yürürlükten kalkmış yatırım teşvik sistemleri. Bu kayıtlar
+# kapalı (aktif_mi=False) olduğu için bağlama girmiyor; model genel bilgisiyle cevaplamak
+# zorunda kalıyordu (ölçüm 2026-10-07: "2012/3305 Bölgesel Teşvik'ten yararlanabilir miyim?").
+_ESKI_SISTEM = re.compile(r"3305|bolgesel\s+tesvik|bölgesel\s+teşvik|genel\s+tesvik|genel\s+teşvik|"
+                          r"buyuk\s+olcekli|büyük\s+ölçekli")
+
+
+def eski_sistem_notu(query: str) -> str:
+    """Soru eski sistemi (2012/3305) anıyorsa danışmana giden kesin not; yoksa ''."""
+    return f"Not: {ESKI_SISTEM_NOTU}" if _ESKI_SISTEM.search(kucult(query)) else ""
+
+
 def elenen_9903_metni(query: str, profil_kaydi) -> str:
     """Profil nedeniyle elenen 9903 programları - danışman 'neden yok' sorusunu yanıtlayabilsin.
 
@@ -296,13 +310,20 @@ def elenen_9903_metni(query: str, profil_kaydi) -> str:
 
 
 def _profile_uygun_mu(t: Tesvik, sirket, profil_kaydi) -> bool:
-    """esles() ile aynı eleme kuralları: sektör etiketi + katı eleme."""
+    """esles() ile aynı eleme kuralları: sektör etiketi + katı eleme + kayıt metnine
+    dayalı uygunluk engelleri (akademik çağrı, aracı kuruluş, şirketleşme şartları).
+
+    Ölçüm 2026-10-07 (15 soruluk bağlam denetimi): şirketsiz girişimciye 10962 (TTK
+    şirketi şart), KOSGEB kredisi, TEKMER işletici programı ve KGF; limited şirkete
+    ortaklık yasaklı BiGG 1512/1812 danışman bağlamına giriyordu."""
     etiketler = {s.lower() for s in (t.uygunluk_kriterleri or {}).get("sektorler", [])}
     profil_sektor = (getattr(profil_kaydi, "sektor", None) or "").lower()
     if etiketler and profil_sektor and profil_sektor not in etiketler and "genel" not in etiketler:
         return False
     sebepler, _ = hard_filter(sirket, program_from_tesvik(t), strict_sector=True)
-    return not sebepler
+    if sebepler:
+        return False
+    return uygunluk_engeli(t, profil_kaydi) is None
 
 
 def _metin_aramasi(query: str, limit: int = 5) -> list[Tesvik]:
@@ -705,6 +726,41 @@ def _ollama_cevap(query: str, matches: list[Tesvik]) -> str | None:
         return None
 
 
+def profil_sozlugu(profil_row) -> dict:
+    """Rıza varken danışmana (Anthropic'e) giden profil sözlüğü. /api/sor ve ölçüm
+    betikleri aynı sözlüğü kullanır; alan ekleme/çıkarma yalnızca burada yapılır."""
+    from app.kobi import AD as KOBI_AD
+    from app.tesvik_9903_hesap import il_bolgesi
+
+    profil = {
+        "sektör": profil_row.sektor,
+        "bölge": profil_row.bolge,
+        "çalışan sayısı": profil_row.calisan_sayisi,
+        "yıllık ciro": profil_row.yillik_ciro,
+        "hedefler": profil_row.hedefler,
+        "ilk yıl mı": profil_row.ilk_yil_mi,
+        "tarım kategorisi": profil_row.tarim_kategori,
+        "ürün türü": profil_row.urun_turu,
+        "arazi büyüklüğü (dekar)": profil_row.arazi_buyuklugu_dekar,
+        "NACE kodu": profil_row.nace_kodu,
+        "şirket türü": profil_row.sirket_turu,
+        "kuruluş tarihi": (profil_row.kurulus_tarihi.isoformat()
+                           if profil_row.kurulus_tarihi else None),
+        "TRL (teknoloji hazırlık seviyesi)": profil_row.trl,
+    }
+    # Ölçek sınıfı türetilmiş bir değerdir (çalışan + ciro); yeni kişisel
+    # veri aktarmaz. "kesin değil" ise model bunu kullanıcıya söylesin.
+    olcek = kobi_sinifi(profil_row.calisan_sayisi, profil_row.yillik_ciro)
+    if olcek.sinif:
+        profil["KOBİ ölçeği"] = (KOBI_AD[olcek.sinif]
+                                + ("" if olcek.kesin else " (kesin değil: " + olcek.aciklama + ")")
+                                + " [KOBİ Yönetmeliği, 7 Ağustos 2025 eşiklerine göre hesaplandı]")
+    bolge_no = il_bolgesi(profil_row.bolge) if profil_row.bolge else None
+    if bolge_no:
+        profil["yatırım teşvik bölgesi (9903 sayılı Karar EK-2)"] = f"{bolge_no}. bölge"
+    return profil
+
+
 def answer(query: str, profil: dict | None = None,
            llm_kullan: bool = True, profil_kaydi=None) -> str:
     """Soruya yanit uretir.
@@ -730,6 +786,9 @@ def answer(query: str, profil: dict | None = None,
 
     notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi).items()}
     elenen = elenen_9903_metni(query, profil_kaydi) if llm_kullan else ""
+    eski = eski_sistem_notu(query) if llm_kullan else ""
+    if eski and ESKI_SISTEM_NOTU not in elenen:
+        elenen = (elenen + "\n" if elenen else "") + eski
     girisim = llm_kullan and girisim_modu_mu(profil_kaydi, query)
     if girisim:
         # HUKS kodda hesaplanır; blok ek bağlam olarak gider, format eki sistem prompt'una eklenir.

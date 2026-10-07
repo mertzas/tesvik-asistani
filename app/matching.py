@@ -47,13 +47,25 @@ class TesvikEslesmeSonucu:
     ince_skor: float = 0.0
 
 
+# "₺100.000", "100.000 TL", "₺100.000 - ₺500.000", "100.000–500.000 TL" (başta/sonda boşluk serbest).
+_SADE_TUTAR = re.compile(r"₺?\s*\d[\d.,]*\s*(?:TL)?(?:\s*[-–]\s*₺?\s*\d[\d.,]*\s*(?:TL)?)?", re.IGNORECASE)
+
+
 def _tutari_parse(tesvil_tutari: str | None) -> tuple[float | None, float | None]:
-    """'₺100.000 - ₺500.000' gibi bir araligi (min, max) TL olarak cikarmaya calisir."""
+    """'₺100.000 - ₺500.000' gibi bir araligi (min, max) TL olarak cikarmaya calisir.
+
+    YALNIZCA metnin tamamı sade bir tutar ya da aralıksa okunur. Denetim 2'de bu alana kaynaktan
+    açıklayıcı metin yazıldı ("5973 sayılı Karar ...; 15.102 TL ifadesi 2022 yılına aitti", "%100 geri
+    ödemesiz; program üst limiti toplam 700.000 TL ..."); içindeki TÜM sayıları toplamak karar numarası,
+    yıl ve yüzdeyi tutar sanıyordu (tarayıcı denemesi 2026-10-07: metal işleme KOBİ'sine "tahmini toplam
+    ₺2.022 - ₺15.102", çiftçinin toplamına YÖNDE'den 100-700.000 TL). Açıklayıcı metin toplama girmez."""
     if not tesvil_tutari:
         return None, None
 
     import re
 
+    if not _SADE_TUTAR.fullmatch(tesvil_tutari.strip()):
+        return None, None
     sayilar = re.findall(r"[\d.,]+", tesvil_tutari.replace("₺", ""))
     degerler = []
     for s in sayilar:

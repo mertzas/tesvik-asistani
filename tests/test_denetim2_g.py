@@ -168,3 +168,19 @@ def test_ceza_tavandan_sonra_uygulanir(kapasite_db):
                          sirket_turu="limited", hedefler=["yatirim"])
     skor = {e.tesvik.id: e.skor for e in esles(p, kapasite_db)}
     assert skor[81] == pytest.approx(skor[8] - 0.05)
+
+
+# ---------------------------------------------------------------- 8. serbest metinden toplam tahmin
+@pytest.mark.parametrize("metin,beklenen", [
+    ("₺100.000 - ₺500.000", (100000.0, 500000.0)),
+    ("100.000–500.000 TL", (100000.0, 500000.0)),
+    ("₺1.350.000", (1350000.0, 1350000.0)),
+    ("5973 sayılı İhracat Destekleri Hakkında Karar kapsamında; limit Genelge'den teyit edilmeli "
+     "(15.102 TL ifadesi 2022 yılına aitti)", (None, None)),
+    ("%100 geri ödemesiz; program üst limiti toplam 700.000 TL (hizmet başına 20.000–150.000 TL)", (None, None)),
+    (None, (None, None)),
+])
+def test_tutar_metni_yalniz_sade_aralikta_okunur(metin, beklenen):
+    """GERÇEK OLAY: açıklayıcı tutar metnindeki yıl/karar no/yüzde toplam tahmine giriyordu."""
+    from app.matching import _tutari_parse
+    assert _tutari_parse(metin) == beklenen

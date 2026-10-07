@@ -128,6 +128,7 @@
   <tr><th>Veri</th><th>Nerede tutulur</th><th>Neden</th></tr>
   <tr><td>Sorduğunuz sorular</td><td><code>queries.question</code></td><td>Sorgu geçmişi, plan kotasının takibi</td></tr>
   <tr><td>Size gösterilen sonuçlar</td><td><code>queries.results</code></td><td>Geçmişi tekrar görüntüleyebilmeniz</td></tr>
+  <tr><td>Başvuru kontrol listesi işaretleri (hangi destek için hangi şartı/belgeyi hazır işaretlediğiniz)</td><td><code>basvuru_takipleri</code></td><td>Başvuru hazırlığınızın ilerlemesini saklamak; yalnızca siz görürsünüz, yurt dışına aktarılmaz</td></tr>
   <tr><td>Kullanılan sorgu adedi</td><td><code>queries.tokens_used</code></td><td>Aylık plan kotası</td></tr>
 </table></div>
 
@@ -221,6 +222,8 @@
       Hesabınızı sildiğinizde (aşağıdaki silme hakkı) anında ve kalıcı olarak silinir.</li>
   <li><strong>Sorgu geçmişi:</strong> hesabınız açık olduğu sürece; talebiniz
       hâlinde daha önce silinir.</li>
+  <li><strong>Başvuru kontrol listeleri:</strong> hesabınız açık olduğu sürece; panelde “Listeyi kaldır”
+      ile istediğiniz an silebilirsiniz.</li>
   <li><strong>Faturalama kayıtları:</strong> Vergi Usul Kanunu ve Türk Ticaret
       Kanunu uyarınca <strong>10 yıl</strong> saklanır; bu süre boyunca silme
       talebi karşılanamaz.</li>
@@ -235,7 +238,7 @@
   <li>Yurt içinde veya yurt dışında verinin aktarıldığı üçüncü kişileri bilme</li>
   <li>Eksik veya yanlış işlenmişse düzeltilmesini isteme</li>
   <li><strong>Silinmesini veya yok edilmesini isteme</strong> — hesabınızı ve tüm
-      verilerinizi (profil, sorgu geçmişi, mağaza bağlantısı, çilek paneli verileri,
+      verilerinizi (profil, sorgu geçmişi, başvuru kontrol listeleri, mağaza bağlantısı, çilek paneli verileri,
       kullanıcılar) parola teyidiyle kendiniz kalıcı olarak silebilirsiniz
       (<code>DELETE /api/organizations/me</code>, <code>{"password": "...", "onay": true}</code>);
       varsa aboneliğiniz iptal edilir. Faturalama kayıtları yasal süre boyunca saklanır.</li>

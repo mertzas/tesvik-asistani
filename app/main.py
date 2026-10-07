@@ -21,7 +21,7 @@ from sqlalchemy.exc import OperationalError
 from sqlalchemy.orm import Session
 
 from app.models import (init_db, get_db, Organization, User, Query, FinancialProfile, PlanType,
-                        MacroIndicator, IkasBaglanti, settings)
+                        MacroIndicator, IkasBaglanti, BasvuruTakibi, settings)
 from app.models_cilek import Parsel, SogukZincirOkuma
 from app.dogrulama_mesajlari import turkce_hatalar
 from app import hata_izleme
@@ -63,6 +63,7 @@ from app.matching import esles, toplam_tahmini_destek, tutari_tahmini_hesapla
 from app.budget import hesapla as butce_hesapla
 from app.cilek_panel import router as cilek_router
 from app.ikas_panel import router as ikas_router
+from app.basvuru_listesi import router as basvuru_listesi_router
 from app.hesap_belirtec import belirtec_uret, belirtec_tuket, SIFIRLAMA, DOGRULAMA
 from app.email import EmailService
 from app.schemas import SifreUnuttum, SifreSifirla, BelirtecGirdi
@@ -230,6 +231,7 @@ async def beklenmeyen_hata(request: Request, exc: Exception):
 app.include_router(admin_router)
 app.include_router(cilek_router)
 app.include_router(ikas_router)
+app.include_router(basvuru_listesi_router)
 
 STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
 
@@ -977,7 +979,7 @@ def hesabi_sil(
     Denetim 2026-10-07: aydınlatma metni "hesabınızı sildirdiğinizde silinir" diyordu ama
     kullanıcının kendi başına kullanabileceği bir silme yolu yoktu (yalnızca admin). Parola
     teyidi ve açık onay ister; varsa Stripe aboneliği iptal edilir; silinenler: finansal profil,
-    sorgu geçmişi, İKAS bağlantısı, çilek paneli verileri, kullanıcılar, organizasyon.
+    sorgu geçmişi, başvuru kontrol listeleri, İKAS bağlantısı, çilek paneli verileri, kullanıcılar, organizasyon.
     """
     if not request.onay:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
@@ -996,6 +998,7 @@ def hesabi_sil(
             logger.exception("Hesap silme: Stripe aboneliği iptal edilemedi (org %s)", org_id)
 
     db.query(FinancialProfile).filter(FinancialProfile.org_id == org_id).delete(synchronize_session=False)
+    db.query(BasvuruTakibi).filter(BasvuruTakibi.org_id == org_id).delete(synchronize_session=False)
     db.query(IkasBaglanti).filter(IkasBaglanti.org_id == org_id).delete(synchronize_session=False)
     db.query(SogukZincirOkuma).filter(SogukZincirOkuma.org_id == org_id).delete(synchronize_session=False)
     for parsel in db.query(Parsel).filter(Parsel.org_id == org_id).all():

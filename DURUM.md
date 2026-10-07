@@ -62,8 +62,12 @@ Son güncelleme: 2026-10-08 (güvenlik kod listesi 1–3: JWT iptali, doğrulama
 - **Aşama I — başvuru belgeleri** (2026-10-08, UYGULANDI): evrak hazırlama desteğinin ön koşulu. En sık eşleşen 34
   programın resmî sayfaları tarandı, rapor `docs/olcum/2026-10-07-denetim2/I_RAPOR.md`. Tur 9: 32 kayıt, yalnız boş
   alan (yedek `tesvikler_oncesi_tur9.db.bak`). Aktif kayıtlarda belge 17→49, başvuru yeri 27→49, şart 75→78.
-  Sonraki adımlar: kontrol listesi (işaretlenebilir, yazdırılabilir), taslak üretimi (ücretli, rıza gerekir),
-  tarih hatırlatması (SMTP sonrası).
+- **Başvuru kontrol listesi** (2026-10-08, tamamlandı): `app/basvuru_listesi.py` (`--self-test` 6/6), tablo
+  `basvuru_takipleri` (göç `i6d8f0a2b678`; dev DB'de sunucu create_all ile önce oluşturmuştu, şema aynı olduğu
+  doğrulanıp `alembic stamp head`; yedek `tesvikler_oncesi_gocI.db.bak`). Maddeler kaydın şart/belge/başvuru yeri
+  alanlarından; işaretler sunucuda; eşleşme kartında "Kontrol listesi", menüde "Başvurularım"; yazdır/PDF tarayıcıda.
+  Hesap silmede silinir, KVKK metnine eklendi. Sıradaki: taslak üretimi (ücretli, rıza gerekir), tarih hatırlatması
+  (SMTP sonrası).
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

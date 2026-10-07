@@ -402,6 +402,22 @@ class TesvikNace(Base):
     haric_mi = Column(Boolean, nullable=False, default=False, server_default="0")
 
 
+class BasvuruTakibi(Base):
+    """Kullanıcının bir teşvik için başvuru kontrol listesindeki işaretleri (app/basvuru_listesi.py).
+
+    Maddeler kaydın şart/belge/başvuru yeri alanlarından üretilir; burada yalnızca işaretlenen madde anahtarları
+    tutulur. Kayıt metni değişirse eski anahtarlar okuma sırasında düşer (yanlış madde işaretli görünmez)."""
+    __tablename__ = "basvuru_takipleri"
+    __table_args__ = (UniqueConstraint("org_id", "tesvik_id", name="uq_basvuru_takibi_org_tesvik"),)
+
+    id = Column(Integer, primary_key=True)
+    org_id = Column(UUID(as_uuid=True), ForeignKey("organizations.id"), nullable=False, index=True)
+    tesvik_id = Column(Integer, ForeignKey("tesvikler.id"), nullable=False, index=True)
+    isaretli = Column(JSON, nullable=False, default=list)
+    olusturma = Column(DateTime, nullable=False, default=lambda: datetime.now(timezone.utc).replace(tzinfo=None))
+    guncelleme = Column(DateTime, nullable=False, default=lambda: datetime.now(timezone.utc).replace(tzinfo=None))
+
+
 class FinancialProfile(Base):
     __tablename__ = "financial_profiles"
 

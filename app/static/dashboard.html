@@ -350,6 +350,37 @@
                                         font-weight: bold; font-size: 13px; display: flex; align-items: center; justify-content: center; }
         .karsilama-adimlar li.tamam::before { content: "✓"; background: #27ae60; }
         .karsilama-adimlar li.tamam strong { text-decoration: line-through; color: #888; }
+
+        /* Başvuru kontrol listesi */
+        .bolum-aciklama { color: #666; font-size: 14px; margin: 4px 0 16px; line-height: 1.6; }
+        .bl-kart { background: white; border: 1px solid #eee; border-radius: 10px; padding: 14px 16px; margin-bottom: 10px;
+                   display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap; }
+        .bl-kart .bl-baslik { font-weight: bold; color: #333; }
+        .bl-kart .bl-kurum { font-size: 12px; color: #888; }
+        .ilerleme { height: 8px; background: #eceef8; border-radius: 4px; overflow: hidden; min-width: 120px; flex: 0 0 160px; }
+        .ilerleme > span { display: block; height: 100%; background: #27ae60; }
+        .kl-ust { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
+        .kl-ust h3 { font-size: 18px; color: #333; margin-bottom: 4px; }
+        .kl-eylemler { display: flex; gap: 8px; flex-wrap: wrap; }
+        .kl-grup h4 { font-size: 14px; color: #667eea; margin: 16px 0 6px; }
+        .kl-madde { display: flex; gap: 10px; align-items: flex-start; padding: 8px 10px; border-radius: 6px; font-size: 14px;
+                    line-height: 1.5; cursor: pointer; }
+        .kl-madde:hover { background: #f7f8ff; }
+        .kl-madde input { margin-top: 4px; transform: scale(1.2); flex: 0 0 auto; }
+        .kl-madde.tamam span { color: #888; text-decoration: line-through; }
+        .kl-not { font-size: 12px; color: #888; margin-top: 14px; }
+        .yazdirma-baslik { display: none; }
+        #yazdir-alani { display: none; }
+        /* Yazdırırken liste body'nin doğrudan çocuğu olan #yazdir-alani'na kopyalanır (panel.js kontrolListesiYazdir)
+           ve diğer her şey display:none olur. visibility:hidden yöntemi sabit konumlu yan menüyü sızdırıyordu. */
+        @media print {
+            body.kl-yazdiriliyor { background: white !important; }
+            body.kl-yazdiriliyor > *:not(#yazdir-alani) { display: none !important; }
+            body.kl-yazdiriliyor #yazdir-alani { display: block; padding: 0 12mm; }
+            #yazdir-alani .yazdirma-gizle { display: none !important; }
+            #yazdir-alani .yazdirma-baslik { display: block; font-size: 12px; color: #555; margin-bottom: 8px; }
+            #yazdir-alani .kl-madde { break-inside: avoid; }
+        }
         .anahtar input { transform: scale(1.3); margin-right: 8px; }
         .bos-durum { text-align: center; padding: 28px 16px; color: #777; font-size: 14px; background: white; border-radius: 10px; }
         .bos-durum a { color: #667eea; }
@@ -581,6 +612,7 @@
             <li><a href="#" class="menu-link" data-section="profil">💼 Profil &amp; Öneriler</a></li>
             <li><a href="#" class="menu-link" data-section="analytics">📈 İstatistikler</a></li>
             <li><a href="#" class="menu-link" data-section="pricing">💳 Planlama</a></li>
+            <li><a href="#" class="menu-link" data-section="basvurular">☑️ Başvurularım</a></li>
             <li><a href="#" class="menu-link" data-section="history">📝 Geçmiş</a></li>
             <li><a href="#" class="menu-link" data-section="settings">⚙️ Ayarlar</a></li>
             <li><a href="#logout" class="menu-link" id="logout-btn">🚪 Çıkış Yap</a></li>
@@ -841,6 +873,17 @@
             <div class="pricing-section">
                 <h2>Plan Seçin</h2>
                 <div class="pricing-plans" id="pricing-plans"></div>
+            </div>
+        </div>
+
+        <!-- Başvurularım: kontrol listeleri (panel.js basvurularYukle / kontrolListesiAc) -->
+        <div id="basvurular" class="section hidden">
+            <div class="search-section">
+                <h2>Başvurularım</h2>
+                <p class="bolum-aciklama">Eşleşen bir desteğin kartındaki “Kontrol listesi” düğmesiyle liste açın. Şartları ve
+                   belgeleri hazırladıkça işaretleyin; ilerlemeniz kaydedilir. Liste yazdırılabilir veya PDF olarak kaydedilebilir.</p>
+                <div id="basvuru-listeleri"></div>
+                <div id="kontrol-yazdir" hidden></div>
             </div>
         </div>
 

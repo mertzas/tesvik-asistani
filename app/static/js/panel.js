@@ -97,6 +97,7 @@
             // Geçmiş ve Ayarlar sekmeleri boş div'di (denetim 2026-10-07); açılınca doldurulur.
             if (sectionId === "history") loadHistory();
             if (sectionId === "settings") loadSettings();
+            if (sectionId === "basvurular") basvurularYukle();
         }
 
         // ---- Ayarlar: hesap bilgisi, AI rıza anahtarı, hesap silme ----
@@ -646,6 +647,154 @@
             };
         }
 
+        // ---- Başvuru kontrol listesi (app/basvuru_listesi.py) ----
+        // Maddeler kaydın şart/belge/başvuru yeri alanlarından gelir; işaretler sunucuda saklanır.
+        // Yazdırma: tarayıcının yazdır penceresi (PDF olarak kaydet dahil); @media print yalnızca listeyi basar.
+        const KL_TUR_BASLIK = { sart: "Şartlar", belge: "Belgeler", basvuru: "Başvuru" };
+        let klAcikTesvik = null;
+
+        function klYuzde(d) { return d.toplam ? Math.round(100 * d.tamamlanan / d.toplam) : 0; }
+
+        async function basvurularYukle() {
+            const kutu = document.getElementById("basvuru-listeleri");
+            const detay = document.getElementById("kontrol-yazdir");
+            detay.hidden = true;
+            kutu.hidden = false;
+            klAcikTesvik = null;
+            kutu.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+            try {
+                const res = await fetch(`${API_BASE}/basvuru-listesi`, { headers: { "Authorization": `Bearer ${authToken}` } });
+                const d = await res.json();
+                if (!res.ok) throw new Error(hataMetni(d));
+                if (!d.listeler.length) {
+                    kutu.innerHTML = `<div class="bos-durum">Henüz kontrol listesi açmadınız. <a href="#" data-tikla="bolumeGit" data-arg="profil">Profil &amp; Öneriler</a> bölümünde destekleri bulup kartlardaki “Kontrol listesi” düğmesini kullanın.</div>`;
+                    return;
+                }
+                kutu.innerHTML = d.listeler.map(l => {
+                    const yuzde = klYuzde(l);
+                    return `<div class="bl-kart">
+                        <div><div class="bl-baslik">${escapeHtml(l.baslik)}</div>
+                             <div class="bl-kurum">${escapeHtml(l.kurum)} · ${l.tamamlanan}/${l.toplam} tamam${l.aktif_mi === false ? " · başvuru dönemi kapalı" : ""}</div></div>
+                        <div class="ilerleme" title="%${yuzde}"><span style="width:${yuzde}%"></span></div>
+                        <button type="button" class="ikincil-btn" data-tikla="kontrolListesiAc" data-arg="${escapeHtml(String(l.tesvik_id))}">Aç</button>
+                    </div>`;
+                }).join("");
+            } catch (e) {
+                kutu.innerHTML = `<div class="error">Hata: ${escapeHtml(e.message)}</div>`;
+            }
+        }
+
+        async function kontrolListesiAc(tesvikId) {
+            bolumeGit("basvurular");
+            const detay = document.getElementById("kontrol-yazdir");
+            try {
+                const yol = `${API_BASE}/basvuru-listesi/${encodeURIComponent(tesvikId)}`;
+                let res = await fetch(yol, { headers: { "Authorization": `Bearer ${authToken}` } });
+                let d = await res.json();
+                if (!res.ok) throw new Error(hataMetni(d));
+                if (!d.takipte && d.toplam) {  // kartta açılan liste "Başvurularım"da görünsün
+                    res = await fetch(yol, { method: "PUT", body: JSON.stringify({ isaretli: [] }),
+                        headers: { "Authorization": `Bearer ${authToken}`, "Content-Type": "application/json" } });
+                    if (res.ok) d = await res.json();
+                }
+                kontrolListesiCiz(d);
+            } catch (e) {
+                detay.hidden = false;
+                detay.innerHTML = `<div class="error">Hata: ${escapeHtml(e.message)}</div>`;
+            }
+        }
+
+        function kontrolListesiCiz(d) {
+            klAcikTesvik = d.tesvik.id;
+            const detay = document.getElementById("kontrol-yazdir");
+            document.getElementById("basvuru-listeleri").hidden = true;
+            detay.hidden = false;
+            const gruplar = ["sart", "belge", "basvuru"].map(tur => {
+                const m = d.maddeler.filter(x => x.tur === tur);
+                if (!m.length) return "";
+                return `<div class="kl-grup"><h4>${KL_TUR_BASLIK[tur]}</h4>${m.map(x => `
+                    <label class="kl-madde${x.isaretli ? " tamam" : ""}">
+                        <input type="checkbox" data-degisim="kontrolMaddesi" data-arg="${escapeHtml(x.anahtar)}"${x.isaretli ? " checked" : ""}>
+                        <span>${escapeHtml(x.metin)}</span>
+                    </label>`).join("")}</div>`;
+            }).join("");
+            const kaynak = guvenliUrl(d.tesvik.kaynak_url);
+            detay.innerHTML = `
+                <div class="yazdirma-baslik">Teşvik Asistanı — Başvuru kontrol listesi · ${new Date().toLocaleDateString("tr-TR")}</div>
+                <div class="kl-ust">
+                    <div><h3>${escapeHtml(d.tesvik.baslik)}</h3>
+                         <div class="bl-kurum">${escapeHtml(d.tesvik.kurum)} · <span id="kl-sayac">${d.tamamlanan}/${d.toplam}</span> tamam</div></div>
+                    <div class="kl-eylemler yazdirma-gizle">
+                        <button type="button" class="birincil-btn" data-tikla="kontrolListesiYazdir">Yazdır / PDF</button>
+                        <button type="button" class="ikincil-btn" data-tikla="basvurularYukle">Tüm listeler</button>
+                        <button type="button" class="ikincil-btn" data-tikla="kontrolListesiKaldir" data-arg="${escapeHtml(String(d.tesvik.id))}">Listeyi kaldır</button>
+                    </div>
+                </div>
+                <div class="ilerleme"><span id="kl-cubuk" style="width:${klYuzde(d)}%"></span></div>
+                ${d.uyari ? `<div class="onizleme-notu">${escapeHtml(d.uyari)}</div>` : gruplar}
+                <div class="kl-not">Liste, kaydımızdaki şart ve belge bilgisinden üretilir; kesin ve güncel koşullar için
+                    ${kaynak ? `<a href="${kaynak}" target="_blank" rel="noopener">resmi kaynağı</a>` : "kurumun resmi sayfasını"} kontrol edin.
+                    ${d.tesvik.aktif_mi === false ? " Bu programın başvuru dönemi şu an kapalı." : ""}</div>
+                <div id="kl-mesaj" class="yazdirma-gizle"></div>`;
+        }
+
+        async function kontrolMaddesi(el) {
+            if (klAcikTesvik === null) return;
+            const kutular = [...document.querySelectorAll('#kontrol-yazdir input[data-degisim="kontrolMaddesi"]')];
+            const isaretli = kutular.filter(k => k.checked).map(k => k.dataset.arg);
+            el.closest(".kl-madde").classList.toggle("tamam", el.checked);
+            const mesaj = document.getElementById("kl-mesaj");
+            try {
+                const res = await fetch(`${API_BASE}/basvuru-listesi/${klAcikTesvik}`, {
+                    method: "PUT", body: JSON.stringify({ isaretli }),
+                    headers: { "Authorization": `Bearer ${authToken}`, "Content-Type": "application/json" }
+                });
+                const d = await res.json();
+                if (!res.ok) {
+                    mesaj.innerHTML = `<div class="error">${escapeHtml(hataMetni(d))}</div>`;
+                    if (res.status === 400) kontrolListesiAc(klAcikTesvik);  // kayıt güncellenmiş: listeyi yenile
+                    return;
+                }
+                mesaj.innerHTML = "";
+                document.getElementById("kl-sayac").textContent = `${d.tamamlanan}/${d.toplam}`;
+                document.getElementById("kl-cubuk").style.width = `${klYuzde(d)}%`;
+            } catch (e) {
+                el.checked = !el.checked;
+                el.closest(".kl-madde").classList.toggle("tamam", el.checked);
+                mesaj.innerHTML = `<div class="error">Kaydedilemedi: ${escapeHtml(e.message)}</div>`;
+            }
+        }
+
+        function kontrolListesiYazdir() {
+            // Listeyi body'nin doğrudan çocuğu olan bir alana kopyala; @media print yalnızca onu gösterir.
+            let alan = document.getElementById("yazdir-alani");
+            if (!alan) {
+                alan = document.createElement("div");
+                alan.id = "yazdir-alani";
+                document.body.appendChild(alan);
+            }
+            const kaynak = document.getElementById("kontrol-yazdir");
+            // Kullanıcının işaretleri "checked" özelliğinde durur, özniteliğe yansımaz: kopyada görünsün diye eşitle.
+            kaynak.querySelectorAll("input[type=checkbox]").forEach(k => k.toggleAttribute("checked", k.checked));
+            alan.innerHTML = kaynak.innerHTML;
+            document.body.classList.add("kl-yazdiriliyor");
+            const temizle = () => {
+                document.body.classList.remove("kl-yazdiriliyor");
+                alan.innerHTML = "";
+                window.removeEventListener("afterprint", temizle);
+            };
+            window.addEventListener("afterprint", temizle);
+            window.print();
+        }
+
+        async function kontrolListesiKaldir(tesvikId) {
+            if (!confirm("Bu kontrol listesi ve işaretleriniz kaldırılsın mı?")) return;
+            await fetch(`${API_BASE}/basvuru-listesi/${encodeURIComponent(tesvikId)}`, {
+                method: "DELETE", headers: { "Authorization": `Bearer ${authToken}` }
+            });
+            basvurularYukle();
+        }
+
         // ---- Kayıt sonrası karşılama rehberi ----
         // Profil yoksa (GET /api/profil 404) gösterilir; kullanıcı kapatırsa bu tarayıcıda bir daha açılmaz.
         // Depolama erişimi engellenmiş olabilir (gizli pencere vb.): her okuma/yazma try/catch içinde.
@@ -958,6 +1107,7 @@
                         </details>
 
                         ${guvenliUrl(t.kaynak_url) ? `<a href="${guvenliUrl(t.kaynak_url)}" target="_blank" rel="noopener" style="display:inline-block; margin-top:10px; padding:7px 14px; background:#667eea; color:white; text-decoration:none; border-radius:5px; font-size:12px; font-weight:bold;">🔗 Resmi Kaynak</a>` : ""}
+                        <button type="button" class="ikincil-btn" data-tikla="kontrolListesiAc" data-arg="${escapeHtml(String(t.id))}" style="margin-top:10px; padding:6px 12px; font-size:12px;">☑ Kontrol listesi</button>
                     </div>
                 `).join("") + kiyaslamaTablosuHtml;
             } catch (e) {
@@ -1262,6 +1412,11 @@
             rizaDegistir: (el) => rizaDegistir(el),
             karsilamaKapat: () => karsilamaKapat(),
             karsilamaEslesme: () => karsilamaEslesme(),
+            kontrolListesiAc: (el) => kontrolListesiAc(el.dataset.arg),
+            kontrolMaddesi: (el) => kontrolMaddesi(el),
+            kontrolListesiYazdir: () => kontrolListesiYazdir(),
+            kontrolListesiKaldir: (el) => kontrolListesiKaldir(el.dataset.arg),
+            basvurularYukle: () => basvurularYukle(),
         };
         function eylemBagla(olay, oznitelik) {
             document.addEventListener(olay, (e) => {

@@ -27,7 +27,7 @@ from sqlalchemy.orm import selectinload
 from app.ihtiyac import isletmeye_yonelik_mi, program_ihtiyaclari, soru_ihtiyaclari
 from app.match_adapter import company_from_profile, program_from_tesvik
 from app.match_scoring import hard_filter
-from app.matching import uygunluk_engeli
+from app.matching import HEDEF_SEKTOR_ETIKETLERI, uygunluk_engeli
 from app.kobi import kobi_sinifi
 from app.girisim import GIRISIM_PROMPT_EKI, girisim_baglam_metni, girisim_modu_mu
 from app.nace_extraction import clean_grant_text
@@ -41,6 +41,7 @@ from app.urun_sektor_anahtarlari import (
     anahtar_kelimeden_sektor_bul,
     govde,
     kucult,
+    urun_turunden_tarim_kategorisi,
 )
 
 logger = logging.getLogger(__name__)
@@ -224,6 +225,11 @@ def retrieve(query: str, limit: int = 5, profil_kaydi=None) -> list[Tesvik]:
 
     aranan = set(ihtiyaclar)
     profil_sektor = (getattr(profil_kaydi, "sektor", None) or "").lower()
+    # Tarım sorularında ürün/faaliyet adı alt kategoriyi belirler ("süt ineği" -> hayvancılık,
+    # "traktör" -> makineleştirme); kelime araması bunu bilmediği için alakasız tarım programı
+    # öne çıkıyordu (Denetim 2/B, 2026-10-07). Yalnızca tarım bağlamında uygulanır.
+    soru_kategorisi = (urun_turunden_tarim_kategorisi(query)
+                       if (profil_sektor == "tarim" or anahtar_kelimeden_sektor_bul(query) == "tarim") else None)
 
     def puan(t: Tesvik) -> float:
         # İhtiyaç eşleşmesi kelime sırasından baskın: kelime araması "geliştirme",
@@ -235,6 +241,9 @@ def retrieve(query: str, limit: int = 5, profil_kaydi=None) -> list[Tesvik]:
         etiketler = {x.lower() for x in (t.uygunluk_kriterleri or {}).get("sektorler", [])}
         if profil_sektor and profil_sektor in etiketler and "genel" not in etiketler:
             p += 1.0  # sektöre özgü program, "genel" programdan daha isabetli
+        alt_kategori = (t.uygunluk_kriterleri or {}).get("alt_kategori")
+        if soru_kategorisi and alt_kategori:
+            p += 2.0 if alt_kategori == soru_kategorisi else -0.5
         if t.aktif_mi is True:
             p += 0.3
         elif t.aktif_mi is False:
@@ -330,7 +339,13 @@ def _profile_uygun_mu(t: Tesvik, sirket, profil_kaydi) -> bool:
     ortaklık yasaklı BiGG 1512/1812 danışman bağlamına giriyordu."""
     etiketler = {s.lower() for s in (t.uygunluk_kriterleri or {}).get("sektorler", [])}
     profil_sektor = (getattr(profil_kaydi, "sektor", None) or "").lower()
-    if etiketler and profil_sektor and profil_sektor not in etiketler and "genel" not in etiketler:
+    # esles() ile aynı kural: sektör etiketi "ihracat/arge/e-ticaret" aslında ihtiyaç türüdür;
+    # hedefi ihracat olan imalatçı E-İhracat programlarını görmeli (Denetim 2/B, 2026-10-07:
+    # "Almanya'ya ihracata başlayacağız" sorusunda 162/163 danışman bağlamına girmiyordu).
+    profil_hedefler = {h.lower() for h in (getattr(profil_kaydi, "hedefler", None) or [])}
+    hedef_eslesmesi = bool(etiketler & HEDEF_SEKTOR_ETIKETLERI & profil_hedefler)
+    if (etiketler and profil_sektor and profil_sektor not in etiketler and "genel" not in etiketler
+            and not hedef_eslesmesi):
         return False
     sebepler, _ = hard_filter(sirket, program_from_tesvik(t), strict_sector=True)
     if sebepler:

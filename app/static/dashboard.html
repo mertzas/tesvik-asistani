@@ -596,7 +596,7 @@
             <div class="search-section">
                 <h2>Teşvik Ara</h2>
                 <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Örn: KOSGEB, Ar-Ge, İnovasyon...">
+                    <input type="text" id="search-input" placeholder="Örn: KOSGEB, Ar-Ge, İnovasyon..." autocomplete="off">
                     <button onclick="performSearch()">Ara</button>
                 </div>
 
@@ -821,7 +821,8 @@
                         <h3>Hesabı sil</h3>
                         <p>Hesabınız, profiliniz, sorgu geçmişiniz, mağaza bağlantınız ve bağlı tüm veriler kalıcı olarak
                            silinir (KVKK m.11). Varsa aboneliğiniz iptal edilir. <strong>Bu işlem geri alınamaz.</strong></p>
-                        <input type="password" id="sil-parola" placeholder="Parolanız" autocomplete="current-password">
+                        <!-- new-password: tarayıcı kayıtlı parolayı buraya otomatik doldurmasın (Denetim 2/B: tek tıkla silme riski) -->
+                        <input type="password" id="sil-parola" placeholder="Parolanız" autocomplete="new-password">
                         <label><input type="checkbox" id="sil-onay"> Tüm verilerimin kalıcı olarak silinmesini onaylıyorum</label>
                         <button type="button" class="tehlike-btn" onclick="hesabiSil()">Hesabımı kalıcı olarak sil</button>
                         <div id="sil-mesaj"></div>

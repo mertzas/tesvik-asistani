@@ -1,0 +1,44 @@
+{
+  "_not": "Denetim 2 / Aşama B gerçek kullanıcı yolculuğu test hesapları (yalnızca localhost; gerçek kişi değil). Yolculuk sonunda hesaplar panelden silinir.",
+  "personalar": [
+    {
+      "ad": "B1 Konya çiftçi",
+      "email": "denetim-b1-ciftci@example.com",
+      "password": "DenetimB1-Konya-2026",
+      "full_name": "Ayşe Çiftçi",
+      "company_name": "Çiftçi Tarım (şahıs)",
+      "profil": {"sektor": "tarim", "bolge": "Konya", "calisan_sayisi": 3, "yillik_ciro": 2500000, "arazi_buyuklugu_dekar": 180, "urun_turu": "buğday", "tarim_kategori": "tahil_baklagil", "hedefler": ["makine", "hayvan"], "sirket_turu": "sahis"},
+      "sorular": [
+        "180 dekar buğday ekiyorum, mazot-gübre desteği ne kadar?",
+        "Traktör ve mibzer almak istiyorum, hibe var mı?",
+        "Hayvancılığa geçmek istiyorum, 50 baş süt ineği için destek var mı?"
+      ]
+    },
+    {
+      "ad": "B2 İzmir imalatçı KOBİ",
+      "email": "denetim-b2-imalat@example.com",
+      "password": "DenetimB2-Izmir-2026",
+      "full_name": "Mehmet Dokuma",
+      "company_name": "Ege Dokuma Ltd.",
+      "profil": {"sektor": "imalat", "bolge": "İzmir", "calisan_sayisi": 12, "yillik_ciro": 60000000, "nace_kodu": "13.20", "hedefler": ["yatirim", "ihracat"], "sirket_turu": "limited"},
+      "sorular": [
+        "Yeni dokuma hattı için makine yatırımı yapacağız, yatırım teşvik belgesi alabilir miyiz?",
+        "Almanya'ya ihracata başlayacağız, hangi destekler var?",
+        "3 kişi daha işe alacağız, SGK desteği var mı?"
+      ]
+    },
+    {
+      "ad": "B3 Ankara şirketsiz girişimci",
+      "email": "denetim-b3-girisim@example.com",
+      "password": "DenetimB3-Ankara-2026",
+      "full_name": "Zeynep Girişim",
+      "company_name": "Henüz şirket yok",
+      "profil": {"sektor": "arge", "bolge": "Ankara", "calisan_sayisi": 0, "yillik_ciro": 0, "nace_kodu": "62.01", "trl": 4, "hedefler": ["arge"], "sirket_turu": "yok"},
+      "sorular": [
+        "Şirketim yok, yapay zekâ tabanlı yazılım fikrim var, hangi hibelere başvurabilirim?",
+        "BiGG için şartlar neler, ne kadar destek var?",
+        "Şirket kurmadan KOSGEB'den destek alabilir miyim?"
+      ]
+    }
+  ]
+}

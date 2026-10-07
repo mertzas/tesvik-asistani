@@ -1,0 +1,46 @@
+{
+ "B1 Konya çiftçi (FREE)": {
+  "adimlar": [
+   "Kayıt: form 5 alan, 'Kaydol' ilk tıklamada ref ile açılmadı (koordinat ile açıldı); kayıt sonrası doğrudan panel; FREE, 5 sorgu hakkı. Signup'ta AI rıza seçeneği yok (API destekliyor).",
+   "Tarayıcı otomatik doldurma: arama kutusuna kayıtlı e-posta yazıldı; hesap silme parola alanı tarayıcı tarafından otomatik dolduruldu (tek tıkla silme riski) → autocomplete=off/new-password gerekir.",
+   "Profil: tarım alanları (dekar, ürün, kategori) açıldı; kaydet 200; 'Profil kaydedildi' mesajı. Profil düğmeleri (Kaydet / Uygun Destekleri Bul / Bütçe) stilsiz (tarayıcı varsayılanı, küçük).",
+   "Eşleşme (FREE): 'Tahmini toplam ₺132.765–258.855'; '20 eşleşmeden ilk 3' önizleme notu + PRO bağlantısı; kartlar doğru (Hububat/Baklagil, Tarım Kefalet, Organik).",
+   "Bütçe (FREE): 'PRO ve üzeri planlarda' mesajı + yükseltme bağlantısı (beklenen).",
+   "Soru 1 (mazot-gübre): liste yanıtı, ilk kayıt doğru (Hububat/Baklagil). ~4 sn (sabit bekleme).",
+   "Soru 2 (traktör/mibzer): ilk kayıt YANLIŞ (Sera/Örtüaltı), KKYP ikinci → 'traktör|mibzer|pulluk' kelimeleri makine/KKYP anahtarına bağlı değil.",
+   "Soru 3 (50 baş süt ineği): ilk kayıt YANLIŞ (Organik Tarım), Hayvancılık ikinci; listede 1507 TÜBİTAK ve Ziraat Katılım gürültüsü → 'inek|baş|süt|koyun' hayvancılık anahtarına bağlı değil.",
+   "Kalan sorgu 5→2 doğru düştü; Geçmiş 3 soruyu gösterdi; rıza aç/kapat 200+200, metinler doğru.",
+   "Hesap silme: parola + onay + confirm → DELETE 200, '/'e yönlendi; giriş sayfası açıldı."
+  ],
+  "hata": 0,
+  "konsol_hatasi": "bakılmadı (B2'de bakılacak)"
+ },
+ "B2 İzmir imalatçı KOBİ (FREE→PRO)": {
+  "adimlar": [
+   "Kayıt sorunsuz (fare ile). Profil: imalat/İzmir/12/60M/NACE 13.20/limited/Yatırım+İhracat; ilk 'Profili Kaydet' tıklaması (uzantı) tetiklenmedi, ikinci denemede 200.",
+   "FREE önizleme → DB'den PRO'ya geçirildi → eşleşme 20 kart (Hedef Yatırımlar 1., Yerel Kalkınma 2.); 'Girişimci Destek Programı' (0-3 yaş şartlı) ve 'İşsizlik Ödeneği…' (hedef yatırım/ihracat iken) ilk 8'de → kuruluş tarihi boşken yaş şartı filtrelenemiyor, 'genel' etiketli istihdam programı hedefle ilgisiz.",
+   "Bütçe (PRO): çalıştı; 'Sektör ortalamasına göre net kâr %5,8' — imalat için TCMB tarım ortalaması kullanılıyor (Denetim 1 bilinen eksik), metin ASCII (Türkçe karaktersiz: 'Sektor ortalamasina gore').",
+   "Soru 1 (makine yatırımı/teşvik belgesi): Hedef Yatırımlar 1. ✓. Soru 2 (Almanya ihracat): Ziraat Yeşil İhracat 1.; E-İhracat (162) ve Pazara Giriş (163) listede YOK → retrieve'de hedef-tabanlı sektör eşleşmesi (esles'te var) uygulanmıyor. Soru 3 (3 kişi işe alım/SGK): yeni 4447 kayıtları 1. ve 4. ✓; 1707 Ar-Ge gürültüsü.",
+   "Koordinatla menü tıklaması sayfa kaydığında yanlış yere gitti (test aracı sorunu, ürün hatası değil). Silme: DELETE 200, yönlendirme ✓."
+  ],
+  "hata": 0
+ },
+ "B3 Ankara şirketsiz girişimci (FREE)": {
+  "adimlar": [
+   "Kayıt: 'Kaydol' geçiş düğmesi giriş formunun içinde type=submit → Enter/tıklama giriş formunu da gönderebiliyor; uzantı tıklamasıyla form gönderilmedi, form.requestSubmit() ile 200 (gerçek kullanıcı fareyle B1/B2'de sorun yaşamadı).",
+   "Profil: arge/Ankara/0/0/NACE 62.01/şirket yok/TRL 4-6/Ar-Ge; kaydet 200 (requestSubmit ile).",
+   "Eşleşme (FREE): '9 eşleşmeden ilk 3': 1512 BiGG ✓, 1812 BiGG Yatırım ✓, 'İşsizlik Ödeneği Alanların İstihdamı Teşviki' ✗ (işveren teşviki; şirketsiz kişi işveren değil) → SGK/İŞKUR kurumları için 'işletme gerektirir' kuralı eksik.",
+   "Sorular (3): hepsinde yalnızca 2 kayıt (1512, 1812) — doğru ama ince; 'Şirket kurmadan KOSGEB' sorusunda KOSGEB programları (işletme şartlı) elendi, açıklama yok.",
+   "Silme ✓ (hesabiSil() ile; DELETE 200)."
+  ],
+  "hata": 0
+ },
+ "_ui_bulgulari": [
+  "Arama kutusu ve silme parola alanı tarayıcı otomatik doldurmasına açık (autocomplete)",
+  "index.html: form geçiş düğmeleri type=submit",
+  "Profil düğmeleri stilsiz",
+  "index.html: KVKK bağlantısı kartın dışında sağda yüzüyor (layout)",
+  "Bütçe metinleri ASCII Türkçe (Sektor/gore)",
+  "Kayıt sonrası boş panel: yönlendirici onboarding yok"
+ ]
+}

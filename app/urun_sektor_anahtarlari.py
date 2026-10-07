@@ -217,6 +217,15 @@ URUN_TARIM_KATEGORISI: dict[str, str] = {
     "yumurta": "hayvancilik", "besi": "hayvancilik", "besicilik": "hayvancilik",
     "arı": "hayvancilik", "ari": "hayvancilik", "bal": "hayvancilik",
     "arıcılı": "hayvancilik", "aricili": "hayvancilik",
+    # Denetim 2/B (2026-10-07): "50 baş süt ineği" sorusunda Organik Tarım 1., Hayvancılık 2. geliyordu
+    "inek": "hayvancilik", "manda": "hayvancilik", "buzağı": "hayvancilik", "buzagi": "hayvancilik",
+    "dana": "hayvancilik", "kuzu": "hayvancilik", "oğlak": "hayvancilik", "oglak": "hayvancilik",
+    "düve": "hayvancilik", "duve": "hayvancilik", "hayvancılı": "hayvancilik", "hayvancili": "hayvancilik",
+    # makine / ekipman (KKYP): "traktör ve mibzer" sorusunda Sera/Örtüaltı 1. geliyordu
+    "traktör": "makinelestirme", "traktor": "makinelestirme", "mibzer": "makinelestirme",
+    "pulluk": "makinelestirme", "biçerdöver": "makinelestirme", "bicerdover": "makinelestirme",
+    "römork": "makinelestirme", "romork": "makinelestirme", "balya": "makinelestirme",
+    "damla sulama": "sulama", "yağmurlama": "sulama", "yagmurlama": "sulama", "sulama": "sulama",
 }
 
 # "Belirtmek istemiyorum" secenegi. Gercek bir kategori DEGIL: hicbir tesvik

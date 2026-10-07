@@ -133,8 +133,10 @@ _SIRKETI_OLANA_KAPALI = re.compile(
 _SIRKETSIZE_KAPALI = re.compile(
     r"sermaye şirketi (?:statüsünde|olmak|olması)|bireysel girişimci başvuramaz|"
     r"yararlanıcı tanımına girmez|KOSGEB veri tabanı|KOBİ (?:niteliklerine|olmak|olması|tanımın)", re.I)
-# Kefalet/kredi ve KOSGEB programlari tanim geregi bir ISLETMEYE verilir.
-_ISLETME_GEREKTIREN_KURUMLAR = {"KGF", "KOSGEB"}
+# Kefalet/kredi ve KOSGEB programlari tanim geregi bir ISLETMEYE verilir; SGK/ISKUR istihdam
+# tesvikleri de ISVERENE verilir (Denetim 2 Asama B, 2026-10-07: sirketsiz girisimciye
+# "Issizlik Odenegi Alanlarin Istihdami Tesviki" ilk 3'te geliyordu).
+_ISLETME_GEREKTIREN_KURUMLAR = {"KGF", "KOSGEB", "SGK / İŞKUR"}
 
 
 def _sart_metni(t) -> str:

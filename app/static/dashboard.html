@@ -67,8 +67,20 @@
 
         @media (max-width: 768px) {
             body { flex-direction: column; flex-wrap: nowrap; }
-            .sidebar { width: 100%; max-height: none; box-shadow: none; }
+            /* Menü tüm ekranı kaplamasın: yatay kaydırılabilir sekme şeridi (ölçüm 2026-10-07, 375px). */
+            .sidebar { width: 100%; max-height: none; box-shadow: none; padding: 12px 16px; }
+            .sidebar-logo { margin-bottom: 10px; }
+            .sidebar-menu { display: flex; gap: 6px; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 4px; }
+            .sidebar-menu li { margin: 0; flex: 0 0 auto; }
+            .sidebar-menu a { padding: 8px 12px; font-size: 14px; white-space: nowrap; }
             .main-content { padding: 20px 16px !important; width: 100%; }
+            .header { flex-wrap: wrap; gap: 10px; padding: 16px; }
+            .header h1 { font-size: 22px; }
+            .user-info { flex-wrap: wrap; gap: 8px; min-width: 0; }
+            #user-email { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; font-size: 13px; }
+            .search-box { flex-direction: column; }
+            .search-box input, .search-box button { width: 100%; }
+            #profil-form { grid-template-columns: 1fr !important; }
         }
 
         .main-content {
@@ -304,6 +316,21 @@
             text-align: center;
             padding: 20px;
         }
+
+        /* Ayarlar, boş durumlar, önizleme notu */
+        .ayar-kutu { background: white; border: 1px solid #eee; border-radius: 10px; padding: 18px 20px; margin-bottom: 16px; }
+        .ayar-kutu h3 { font-size: 16px; margin-bottom: 8px; color: #333; }
+        .ayar-kutu p { font-size: 14px; color: #555; line-height: 1.6; margin-bottom: 10px; }
+        .ayar-kutu label { display: block; font-size: 14px; color: #333; margin: 8px 0; }
+        .ayar-kutu input[type="password"] { width: 100%; max-width: 320px; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px; }
+        .ayar-kutu.tehlike { border-color: #f5c2c7; background: #fff8f8; }
+        .tehlike-btn { background: #c0392b; color: white; border: 0; padding: 10px 16px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        .tehlike-btn:disabled { opacity: .6; cursor: default; }
+        .anahtar input { transform: scale(1.3); margin-right: 8px; }
+        .bos-durum { text-align: center; padding: 28px 16px; color: #777; font-size: 14px; background: white; border-radius: 10px; }
+        .bos-durum a { color: #667eea; }
+        .onizleme-notu { margin-top: 8px; padding: 10px 14px; background: #fff3cd; color: #7a4b22; border-radius: 6px; font-weight: normal; font-size: 13px; }
+        .kucuk-btn { margin-top: 8px; background: #f5f6fa; border: 1px solid #ddd; border-radius: 5px; padding: 5px 10px; font-size: 12px; cursor: pointer; }
 
         /* Danışman yanıtı (akışlı): /api/sor/akis parçaları geldikçe render edilir */
         .ai-cevap {
@@ -776,7 +803,30 @@
         <div id="settings" class="section hidden">
             <div class="search-section">
                 <h2>Ayarlar</h2>
-                <div id="settings-content"></div>
+                <div id="settings-content">
+                    <div class="ayar-kutu">
+                        <h3>Hesap</h3>
+                        <p>E-posta: <strong id="ayar-email">—</strong> · Plan: <strong id="ayar-plan">—</strong></p>
+                    </div>
+                    <div class="ayar-kutu">
+                        <h3>Yapay zekâ danışmanı (KVKK açık rızası)</h3>
+                        <p>Açıkken sorunuz ve işletme profiliniz, yanıt üretilmesi için Anthropic'e (ABD) aktarılır.
+                           Kapalıyken yanıtlar yalnızca veritabanı kayıtlarından üretilir. İstediğiniz zaman geri alabilirsiniz.
+                           <a href="/kvkk" target="_blank" rel="noopener">Aydınlatma metni</a></p>
+                        <label class="anahtar"><input type="checkbox" id="ayar-riza" onchange="rizaDegistir(this)">
+                            <span id="ayar-riza-metin">Kapalı</span></label>
+                        <div id="ayar-riza-mesaj"></div>
+                    </div>
+                    <div class="ayar-kutu tehlike">
+                        <h3>Hesabı sil</h3>
+                        <p>Hesabınız, profiliniz, sorgu geçmişiniz, mağaza bağlantınız ve bağlı tüm veriler kalıcı olarak
+                           silinir (KVKK m.11). Varsa aboneliğiniz iptal edilir. <strong>Bu işlem geri alınamaz.</strong></p>
+                        <input type="password" id="sil-parola" placeholder="Parolanız" autocomplete="current-password">
+                        <label><input type="checkbox" id="sil-onay"> Tüm verilerimin kalıcı olarak silinmesini onaylıyorum</label>
+                        <button type="button" class="tehlike-btn" onclick="hesabiSil()">Hesabımı kalıcı olarak sil</button>
+                        <div id="sil-mesaj"></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -835,6 +885,107 @@
         function showSection(sectionId) {
             document.querySelectorAll(".section").forEach(s => s.classList.add("hidden"));
             document.getElementById(sectionId).classList.remove("hidden");
+            // Geçmiş ve Ayarlar sekmeleri boş div'di (denetim 2026-10-07); açılınca doldurulur.
+            if (sectionId === "history") loadHistory();
+            if (sectionId === "settings") loadSettings();
+        }
+
+        // ---- Ayarlar: hesap bilgisi, AI rıza anahtarı, hesap silme ----
+        function loadSettings() {
+            if (!currentOrg) return;
+            document.getElementById("ayar-email").textContent = currentOrg.email || "—";
+            document.getElementById("ayar-plan").textContent = (currentOrg.plan || "free").toUpperCase();
+            const cb = document.getElementById("ayar-riza");
+            cb.checked = !!currentOrg.ai_yurtdisi_riza;
+            document.getElementById("ayar-riza-metin").textContent = cb.checked ? "Açık" : "Kapalı";
+        }
+
+        async function rizaDegistir(cb) {
+            const mesaj = document.getElementById("ayar-riza-mesaj");
+            cb.disabled = true;
+            try {
+                const res = await fetch(`${API_BASE}/organizations/ai-riza`, {
+                    method: "POST",
+                    headers: { "Authorization": `Bearer ${authToken}`, "Content-Type": "application/json" },
+                    body: JSON.stringify({ riza: cb.checked })
+                });
+                const data = await res.json();
+                if (!res.ok) throw new Error(hataMetni(data));
+                currentOrg.ai_yurtdisi_riza = !!data.ai_yurtdisi_riza;
+                cb.checked = currentOrg.ai_yurtdisi_riza;
+                document.getElementById("ayar-riza-metin").textContent = cb.checked ? "Açık" : "Kapalı";
+                mesaj.innerHTML = `<div class="success">${escapeHtml(data.mesaj || "Kaydedildi.")}</div>`;
+            } catch (e) {
+                cb.checked = !cb.checked;
+                mesaj.innerHTML = `<div class="error">Hata: ${escapeHtml(e.message)}</div>`;
+            } finally {
+                cb.disabled = false;
+            }
+        }
+
+        async function hesabiSil() {
+            const mesaj = document.getElementById("sil-mesaj");
+            const parola = document.getElementById("sil-parola").value;
+            const onay = document.getElementById("sil-onay").checked;
+            if (!parola || !onay) {
+                mesaj.innerHTML = '<div class="error">Parolanızı girin ve onay kutusunu işaretleyin.</div>';
+                return;
+            }
+            if (!confirm("Hesabınız ve tüm verileriniz kalıcı olarak silinecek. Devam edilsin mi?")) return;
+            try {
+                const res = await fetch(`${API_BASE}/organizations/me`, {
+                    method: "DELETE",
+                    headers: { "Authorization": `Bearer ${authToken}`, "Content-Type": "application/json" },
+                    body: JSON.stringify({ password: parola, onay: true })
+                });
+                const data = await res.json();
+                if (!res.ok) {
+                    mesaj.innerHTML = `<div class="error">${escapeHtml(hataMetni(data))}</div>`;
+                    return;
+                }
+                localStorage.removeItem("auth_token");
+                localStorage.removeItem("token");
+                alert(data.message || "Hesabınız silindi.");
+                window.location.href = "/";
+            } catch (e) {
+                mesaj.innerHTML = `<div class="error">Hata: ${escapeHtml(e.message)}</div>`;
+            }
+        }
+
+        // ---- Geçmiş sorgular ----
+        async function loadHistory() {
+            const div = document.getElementById("history-content");
+            div.innerHTML = '<div class="loading"><div class="spinner"></div></div>';
+            try {
+                const res = await fetch(`${API_BASE}/queries/history?limit=30`, {
+                    headers: { "Authorization": `Bearer ${authToken}` }
+                });
+                if (!res.ok) {
+                    const err = await res.json();
+                    div.innerHTML = `<div class="error">${escapeHtml(hataMetni(err))}</div>`;
+                    return;
+                }
+                const liste = await res.json();
+                if (!liste.length) {
+                    div.innerHTML = `<div class="bos-durum">Henüz sorgunuz yok. <a href="#" onclick="document.querySelector('[data-section=search]').click(); return false;">Arama</a> sekmesinden ilk sorunuzu sorun.</div>`;
+                    return;
+                }
+                div.innerHTML = liste.map(q => `
+                    <div class="result-card">
+                        <div class="kurum">${new Date(q.created_at).toLocaleString("tr-TR")}</div>
+                        <div class="baslik">${escapeHtml(q.question)}</div>
+                        <div class="ozet">${(q.results || []).slice(0, 3).map(r => `• ${escapeHtml(r.kurum)} — ${escapeHtml(r.baslik)}`).join("<br>") || "Eşleşen kayıt yok"}</div>
+                        <button type="button" class="kucuk-btn" data-soru="${escapeHtml(q.question)}" onclick="tekrarSor(this.dataset.soru)">🔁 Tekrar sor</button>
+                    </div>`).join("");
+            } catch (e) {
+                div.innerHTML = `<div class="error">Hata: ${escapeHtml(e.message)}</div>`;
+            }
+        }
+
+        function tekrarSor(soru) {
+            document.getElementById("search-input").value = soru;
+            document.querySelector('[data-section=search]').click();
+            performSearch();
         }
 
         async function loadOrganization() {
@@ -925,7 +1076,8 @@
 
         function renderKayitlar(kayitlar, hedef) {
             if (!kayitlar || !kayitlar.length) {
-                hedef.innerHTML = "";
+                hedef.innerHTML = '<div class="bos-durum">Bu soruyla eşleşen kayıt bulunamadı. Kurum adı, sektör veya ihtiyaç ' +
+                    '(ör. "makine yatırımı", "ihracat", "istihdam") yazarak tekrar deneyin; profilinizi doldurmak eşleşmeyi iyileştirir.</div>';
                 return;
             }
             hedef.innerHTML = kayitlar.map(r => `
@@ -1460,6 +1612,12 @@
 
                 if (data.tahmini_toplam_destek_max > 0) {
                     ozetDiv.textContent = `Tahmini toplam alınabilecek destek: ₺${data.tahmini_toplam_destek_min.toLocaleString('tr-TR')} - ₺${data.tahmini_toplam_destek_max.toLocaleString('tr-TR')}`;
+                    if (data.onizleme) {
+                        // FREE plan önizlemesi: sunucu ilk 3 eşleşmeyi döner, toplamı bildirir.
+                        ozetDiv.innerHTML = escapeHtml(ozetDiv.textContent) +
+                            `<div class="onizleme-notu">FREE plan önizlemesi: ${data.toplam_eslesme} eşleşmeden ilk ${data.eslesen_tesvikler.length} gösteriliyor. ` +
+                            `<a href="#" onclick="document.querySelector('[data-section=pricing]').click(); return false;">PRO'ya geçin</a>, tüm listeyi ve bütçe önerisini görün.</div>`;
+                    }
                 }
 
                 if (!data.eslesen_tesvikler.length) {

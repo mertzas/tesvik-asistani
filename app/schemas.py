@@ -95,6 +95,7 @@ class OrganizationResponse(OrganizationBase):
     id: UUID
     plan: str
     is_active: bool
+    ai_yurtdisi_riza: bool = False  # panel ayarlarındaki AI rıza anahtarı bunu okur
     created_at: datetime
     updated_at: datetime
 
@@ -316,6 +317,9 @@ class TesvikEslesmeResponse(BaseModel):
     eslesen_tesvikler: List[TesvikEslesmeItem]
     tahmini_toplam_destek_min: float
     tahmini_toplam_destek_max: float
+    # FREE plan önizlemesi: yalnızca ilk ONIZLEME_ADEDI eşleşme döner, toplam sayı bildirilir.
+    onizleme: bool = False
+    toplam_eslesme: int = 0
 
 
 # Budget Recommendation Schemas

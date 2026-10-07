@@ -15,7 +15,7 @@ class Settings(BaseSettings):
     DATABASE_URL: str = os.getenv("DATABASE_URL", "sqlite:///./tesvik.db")
     SECRET_KEY: str = os.getenv("SECRET_KEY", "your-super-secret-key")
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_DAYS: int = 30
+    ACCESS_TOKEN_EXPIRE_DAYS: int = 7  # denetim 2026-10-07: 30 gündü; iptal mekanizması olmadığı için kısaltıldı
     STRIPE_SECRET_KEY: str = os.getenv("STRIPE_SECRET_KEY", "")
     STRIPE_WEBHOOK_SECRET: str = os.getenv("STRIPE_WEBHOOK_SECRET", "")
     STRIPE_PRICE_PRO: str = os.getenv("STRIPE_PRICE_PRO", "")

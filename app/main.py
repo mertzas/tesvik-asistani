@@ -429,6 +429,9 @@ def sor_akis(
 
 # ============ FINANCIAL PROFILE / MATCHING / BUDGET (PRO+) ============
 
+ONIZLEME_ADEDI = 3  # FREE planda gösterilen eşleşme sayısı
+
+
 def _require_pro(current_org: Organization):
     if current_org.plan == PlanType.FREE:
         raise HTTPException(
@@ -487,17 +490,25 @@ def tesvik_eslesme(
     current_org: Organization = Depends(get_current_org),
     db: Session = Depends(get_db),
 ):
-    """Finansal profile göre uygun teşvikleri skorlayıp sıralar."""
-    _require_pro(current_org)
+    """Finansal profile göre uygun teşvikleri skorlayıp sıralar.
 
+    FREE plan: tam liste yerine ilk ONIZLEME_ADEDI eşleşme (önizleme) döner; toplam sayı
+    bildirilir. Denetim 2026-10-07: FREE kullanıcı 403 alıyor, ürünün ana değerini hiç
+    görmeden plan yükseltmesi isteniyordu."""
     profil = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
     if profil is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Önce finansal profil oluşturun (PUT /api/profil)")
 
     sonuclar = esles(profil, db)
     tahmini_min, tahmini_max = toplam_tahmini_destek(sonuclar, profil)
+    onizleme = current_org.plan == PlanType.FREE
+    toplam = len(sonuclar)
+    if onizleme:
+        sonuclar = sonuclar[:ONIZLEME_ADEDI]
 
     return TesvikEslesmeResponse(
+        onizleme=onizleme,
+        toplam_eslesme=toplam,
         eslesen_tesvikler=[
             TesvikEslesmeItem(
                 id=s.tesvik.id,

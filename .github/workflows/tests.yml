@@ -34,7 +34,10 @@ jobs:
           DATABASE_URL: sqlite:///./ci.db
           SECRET_KEY: ci-only-secret-key-not-for-production-0123456789
           PYTHONIOENCODING: utf-8
-        run: pytest tests/ -q --tb=short
+          # `pytest tests/` proje kokunu sys.path'e eklemiyor (ModuleNotFoundError: app, run 37623581221);
+          # `python -m pytest` cwd'yi ekler.
+          PYTHONPATH: .
+        run: python -m pytest tests/ -q --tb=short
 
   lint:
     runs-on: ubuntu-latest

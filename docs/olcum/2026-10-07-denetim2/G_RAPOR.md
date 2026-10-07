@@ -38,6 +38,9 @@ Kaynaklar 2026-10-07 Chrome ile okundu. `scripts/fix_veri_2026_10_07_denetim2_tu
 - Kod: `min_olcek` (en küçük ölçek) desteği (`match_scoring`, `match_adapter`); hedef yedek araması yalnızca başlıkta (kazınmış özetteki site menüsü KGF paketlerini sahte biçimde ihracat/istihdam hedefiyle eşleştiriyordu).
 - Sonuç: çiftçi, girişimci, otel ve Hatay profillerine bu 6 kaydın hiçbiri gelmiyor; imalat/SaaS KOBİ'lerinde Kapasite Geliştirme 1.; her yerde asıl KOSGEB programı kendi KGF paketinin önünde. Test 820.
 
+## Ek 3: YÖNDE (Tur 6, uygulandı)
+Önceki tespitim ("YÖNDE yalnızca imalat, küçük/orta") kaydın ESKİ kazınmış metnine dayanıyordu. KOSGEB'in canlı sayfası (2026-10-07) bu şartı içermiyor: başvuru şartı yalnızca TTK statüsü + KOSGEB kaydı; SSS'de "TTK'ya göre gerçek veya tüzel kişi statüsündeki işletmeler"; %100 geri ödemesiz, üst limit toplam 700.000 TL, 36 ay (kayıttaki tutar metniyle aynı). Kapsam DARALTILMADI (genel kaldı); detaydaki eski cümle çıkarıldı ki danışman "yalnızca imalat" demesin, süre alanı dolduruldu. `scripts/fix_veri_2026_10_07_denetim2_tur6.py` (yedek `tesvikler_oncesi_tur6.db.bak`, ikinci çalıştırma atladı). Çiftçi profilinde YÖNDE'nin %30 ile görünmesi bu yüzden kaynağa uygundur.
+
 ## Açık kalanlar
 - Organik Tarım, tahıl üreticisinde hâlâ listede (kasıtlı: "geniş" program, sertifikayla her üretici başvurabilir) ama artık tahmini tutarsız.
 - Puanlar sık sık 1,0'da doyuyor; sıralama eşitlik bozucuya (ince skor) kalıyor.

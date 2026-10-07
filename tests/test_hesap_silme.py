@@ -16,8 +16,9 @@ def test_silme_parola_ve_onay_ister(client, db_session):
     h = _hazirla(client)
     assert client.request("DELETE", "/api/organizations/me", json={"password": "GucluSifre123", "onay": False},
                           headers=h).status_code == 400
+    # 403 (401 değil): oturum geçerli; 401 panelde "oturum bitti" yönlendirmesini tetikler
     assert client.request("DELETE", "/api/organizations/me", json={"password": "Yanlis123", "onay": True},
-                          headers=h).status_code == 401
+                          headers=h).status_code == 403
     assert db_session.query(Organization).count() == 1
 
 

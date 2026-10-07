@@ -326,6 +326,8 @@
         .ayar-kutu.tehlike { border-color: #f5c2c7; background: #fff8f8; }
         .tehlike-btn { background: #c0392b; color: white; border: 0; padding: 10px 16px; border-radius: 5px; cursor: pointer; font-weight: bold; }
         .tehlike-btn:disabled { opacity: .6; cursor: default; }
+        .ikincil-btn { background: white; color: #667eea; border: 2px solid #667eea; padding: 9px 16px; border-radius: 5px; cursor: pointer; font-weight: bold; }
+        .ikincil-btn:hover { background: #f3f4ff; }
         .anahtar input { transform: scale(1.3); margin-right: 8px; }
         .bos-durum { text-align: center; padding: 28px 16px; color: #777; font-size: 14px; background: white; border-radius: 10px; }
         .bos-durum a { color: #667eea; }
@@ -823,6 +825,13 @@
                             <span id="ayar-riza-metin">Kapalı</span></label>
                         <div id="ayar-riza-mesaj"></div>
                     </div>
+                    <div class="ayar-kutu">
+                        <h3>Oturumlar</h3>
+                        <p>Başka bir cihazda açık kalan oturumlarınızı kapatır. Bu cihazda oturumunuz devam eder.
+                           Parolanızı sıfırladığınızda tüm oturumlar zaten kapanır.</p>
+                        <button type="button" id="tum-oturumlari-kapat" class="ikincil-btn">Tüm diğer oturumları kapat</button>
+                        <div id="oturum-mesaj"></div>
+                    </div>
                     <div class="ayar-kutu tehlike">
                         <h3>Hesabı sil</h3>
                         <p>Hesabınız, profiliniz, sorgu geçmişiniz, mağaza bağlantınız ve bağlı tüm veriler kalıcı olarak
@@ -857,6 +866,29 @@
             window.location.href = "/";
         }
 
+        // Oturum iptal edildiyse (parola sıfırlandı, "tüm oturumları kapat" ya da süre doldu) API 401 döner.
+        // Panel boş kalmasın: belirteci sil, giriş sayfasına açıklamayla dön. 401 yalnızca geçersiz belirteç
+        // içindir (yanlış teyit parolası 403 döner).
+        // Yalnızca GÜNCEL belirteçle yapılan istek 401 alırsa çıkılır: "tüm oturumları kapat" sırasında eski
+        // belirteçle yolda kalmış bir istek, yeni belirteç alınmış oturumu kapatmasın.
+        const _asilFetch = window.fetch.bind(window);
+        window.fetch = async (...args) => {
+            const kullanilan = authToken;
+            const yanit = await _asilFetch(...args);
+            const adres = String((args[0] && args[0].url) || args[0]);
+            const baslik = (args[1] && args[1].headers && args[1].headers.Authorization) || "";
+            if (yanit.status === 401 && adres.includes("/api/")
+                    && baslik === `Bearer ${kullanilan}` && kullanilan === authToken) {
+                oturumBitti();
+            }
+            return yanit;
+        };
+        function oturumBitti() {
+            localStorage.removeItem("auth_token");
+            localStorage.removeItem("token");
+            window.location.href = "/?oturum=bitti";
+        }
+
         // Load dashboard on page load
         document.addEventListener("DOMContentLoaded", async () => {
             await loadOrganization();
@@ -866,6 +898,7 @@
             loadFinancialProfile();
             loadVeriDurumu();
             setupMenuListeners();
+            document.getElementById("tum-oturumlari-kapat").addEventListener("click", tumOturumlariKapat);
             epostaDurumuYukle();
         });
 
@@ -945,6 +978,24 @@
                 mesaj.innerHTML = `<div class="error">Hata: ${escapeHtml(e.message)}</div>`;
             } finally {
                 cb.disabled = false;
+            }
+        }
+
+        async function tumOturumlariKapat() {
+            const mesaj = document.getElementById("oturum-mesaj");
+            try {
+                const res = await fetch(`${API_BASE}/auth/tum-oturumlari-kapat`, {
+                    method: "POST",
+                    headers: { "Authorization": `Bearer ${authToken}` }
+                });
+                const data = await res.json();
+                if (!res.ok) throw new Error(hataMetni(data));
+                authToken = data.access_token;
+                localStorage.setItem("auth_token", authToken);
+                localStorage.setItem("token", authToken);
+                mesaj.innerHTML = '<div class="success">Diğer tüm oturumlar kapatıldı.</div>';
+            } catch (e) {
+                mesaj.innerHTML = `<div class="error">Hata: ${escapeHtml(e.message)}</div>`;
             }
         }
 

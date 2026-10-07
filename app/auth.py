@@ -33,6 +33,21 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None) -
     return encoded_jwt
 
 
+def oturum_belirteci(user: User) -> str:
+    """Kullanıcı için erişim belirteci. "sv" (oturum sürümü) talebi, parola sıfırlama veya "tüm oturumları
+    kapat" sonrasında eski belirteçlerin reddedilmesini sağlar (bkz. get_current_user)."""
+    return create_access_token({
+        "sub": str(user.id),
+        "org_id": str(user.org_id),
+        "sv": user.oturum_surumu or 0,
+    })
+
+
+def oturumlari_gecersiz_kil(user: User) -> None:
+    """Kullanıcının o ana kadar verilmiş tüm belirteçlerini geçersiz kılar (commit çağırana aittir)."""
+    user.oturum_surumu = (user.oturum_surumu or 0) + 1
+
+
 def verify_token(token: str) -> dict:
     try:
         payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
@@ -62,6 +77,18 @@ async def get_current_user(credentials: HTTPAuthorizationCredentials = Depends(s
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail="User not found",
+        )
+
+    # "sv" talebi olmayan eski belirteçler sürüm 0 sayılır: göç anında kimse oturumdan atılmaz, ama ilk parola
+    # sıfırlamada onlar da geçersizleşir.
+    try:
+        belirtec_surumu = int(payload.get("sv", 0))
+    except (TypeError, ValueError):
+        belirtec_surumu = -1
+    if belirtec_surumu != (user.oturum_surumu or 0):
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail="Oturum sona erdi; lütfen yeniden giriş yapın",
         )
 
     if not user.is_active:

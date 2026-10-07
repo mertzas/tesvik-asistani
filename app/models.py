@@ -152,6 +152,9 @@ class User(Base):
     last_login = Column(DateTime, nullable=True)
     # E-posta doğrulama (Aşama E): NULL = doğrulanmadı. Giriş doğrulamaya BAĞLI DEĞİL (ürün kararı bekliyor).
     email_dogrulama_zamani = Column(DateTime, nullable=True)
+    # JWT iptali: belirteç "sv" talebinde bu sürümü taşır; parola sıfırlanınca veya "tüm oturumları kapat"
+    # denince artırılır ve önceki tüm belirteçler geçersizleşir (Denetim 2 / kod listesi, 2026-10-08).
+    oturum_surumu = Column(Integer, nullable=False, default=0, server_default="0")
 
     organization = relationship("Organization", back_populates="users")
 

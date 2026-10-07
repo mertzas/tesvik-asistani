@@ -23,7 +23,8 @@ from app.auth import (
     get_current_user,
     get_current_org,
     hash_password,
-    create_access_token,
+    oturum_belirteci,
+    oturumlari_gecersiz_kil,
     verify_password,
     check_rate_limit,
 )
@@ -235,11 +236,7 @@ def signup(request: UserSignup, arka_plan: BackgroundTasks, db: Session = Depend
     db.commit()
     _dogrulama_postasi_planla(db, user, arka_plan)
 
-    # Token oluştur
-    token = create_access_token({
-        "sub": str(user.id),
-        "org_id": str(org.id),
-    })
+    token = oturum_belirteci(user)
 
     return TokenResponse(
         access_token=token,
@@ -270,10 +267,7 @@ def login(request: UserLogin, db: Session = Depends(get_db)):
             detail="Hesap deaktif"
         )
 
-    token = create_access_token({
-        "sub": str(user.id),
-        "org_id": str(user.org_id),
-    })
+    token = oturum_belirteci(user)
 
     return TokenResponse(
         access_token=token,
@@ -324,13 +318,14 @@ def sifre_unuttum(request: SifreUnuttum, arka_plan: BackgroundTasks, db: Session
 
 @app.post("/api/auth/sifre-sifirla", dependencies=[Depends(ip_hiz_siniri(10, ad="sifre-sifirla"))])
 def sifre_sifirla(request: SifreSifirla, db: Session = Depends(get_db)):
-    """Tek kullanımlık belirteçle yeni parola belirle. Eski JWT'ler süre dolana kadar (7 gün) geçerli kalır
-    (belirteç iptal listesi yok; bilinen sınırlama)."""
+    """Tek kullanımlık belirteçle yeni parola belirle. Önceden verilmiş tüm oturum belirteçleri geçersizleşir
+    (parolayı ele geçiren biri açık oturumla devam edemesin)."""
     user = belirtec_tuket(db, request.token, SIFIRLAMA)
     if user is None:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
                             detail="Bağlantı geçersiz veya süresi dolmuş; yeni bir sıfırlama bağlantısı isteyin")
     user.hashed_password = hash_password(request.new_password)
+    oturumlari_gecersiz_kil(user)
     if user.email_dogrulama_zamani is None:  # e-postaya erişimini kanıtladı
         user.email_dogrulama_zamani = datetime.now(timezone.utc).replace(tzinfo=None)
     db.commit()
@@ -353,6 +348,23 @@ def eposta_dogrula(request: BelirtecGirdi, db: Session = Depends(get_db)):
 def auth_me(current_user: User = Depends(get_current_user)):
     return {"email": current_user.email, "full_name": current_user.full_name,
             "email_dogrulandi": current_user.email_dogrulama_zamani is not None}
+
+
+@app.post("/api/auth/tum-oturumlari-kapat", response_model=TokenResponse,
+          dependencies=[Depends(org_hiz_siniri(5))])
+def tum_oturumlari_kapat(current_user: User = Depends(get_current_user), db: Session = Depends(get_db)):
+    """Kullanıcının tüm cihazlardaki oturumlarını kapatır. İsteği yapan cihaz yeni belirteçle devam eder."""
+    oturumlari_gecersiz_kil(current_user)
+    db.commit()
+    return TokenResponse(
+        access_token=oturum_belirteci(current_user),
+        user={
+            "id": str(current_user.id),
+            "email": current_user.email,
+            "full_name": current_user.full_name,
+            "email_dogrulandi": current_user.email_dogrulama_zamani is not None,
+        },
+    )
 
 
 @app.post("/api/auth/dogrulama-gonder", dependencies=[Depends(org_hiz_siniri(3))])
@@ -850,7 +862,9 @@ def hesabi_sil(
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
                             detail="Silme için açık onay (onay=true) gerekir.")
     if not verify_password(request.password, current_user.hashed_password):
-        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Parola yanlış.")
+        # 403: oturum geçerli, yalnızca teyit parolası yanlış. 401 dönseydi panel bunu "oturum bitti" sanıp
+        # kullanıcıyı çıkışa yönlendirirdi (401 yalnızca geçersiz/iptal edilmiş belirteç içindir).
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Parola yanlış.")
 
     org_id = current_org.id
     if current_org.stripe_subscription_id:

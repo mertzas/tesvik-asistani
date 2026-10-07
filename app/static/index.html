@@ -484,6 +484,13 @@
             }
         }
 
+        // Panel 401 alınca (parola sıfırlandı / tüm oturumlar kapatıldı / süre doldu) buraya ?oturum=bitti ile döner.
+        if (new URLSearchParams(window.location.search).get("oturum") === "bitti") {
+            const bilgi = document.getElementById("login-success");
+            bilgi.textContent = "Oturumunuz sona erdi. Lütfen yeniden giriş yapın.";
+            bilgi.style.display = "block";
+        }
+
         if (localStorage.getItem("auth_token")) {
             window.location.href = "/dashboard";
         }

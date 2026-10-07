@@ -31,3 +31,6 @@ anthropic>=0.40
 
 # Hiz siniri sayaclari icin (REDIS_URL doluysa); bos birakilirsa surec ici sayac kullanilir.
 redis>=5.0
+
+# app/sifreleme.py (IKAS token sifreleme) - CI run 37623828392: ModuleNotFoundError
+cryptography>=42

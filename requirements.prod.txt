@@ -35,3 +35,4 @@ beautifulsoup4==4.15.0
 
 # Hiz siniri sayaclari (docker-compose.prod.yml redis servisi)
 redis==5.2.1
+cryptography==49.0.0

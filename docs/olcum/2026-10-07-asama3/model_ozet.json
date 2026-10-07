@@ -1,0 +1,257 @@
+[
+ {
+  "n": 1,
+  "persona": "1 Konya ciftci",
+  "soru": "180 dekar buğday ekiyorum, traktör ve mibzer almak istiyorum; mazot-gübre desteği de alabilir miyim?",
+  "llm_mi": true,
+  "sure_sn": 34.8,
+  "api_sure_sn": 34.6,
+  "stop": "end_turn",
+  "giris_token": 8873,
+  "cikis_token": 2824,
+  "sistem_kar": 4450,
+  "mesaj_kar": 10756,
+  "cevap_kar": 5164,
+  "girisim": false,
+  "eksik_baslik": [],
+  "uydurma_url": [
+   "https://www.tarimorman.gov.tr/BUGEM"
+  ],
+  "suphe_sayilar": [
+   "2.500.000TL",
+   "403,00TL",
+   "403TL",
+   "72.540TL",
+   "806,00TL"
+  ],
+  "baglam_disi_program": [],
+  "kapali_onerildi": [],
+  "kesildi": false
+ },
+ {
+  "n": 2,
+  "persona": "2 Izmir tekstil",
+  "soru": "Yeni dokuma hattı için makine yatırımı yapıp Almanya'ya ihracata başlayacağız. Hangi teşviklere başvurabiliriz, vergi indirimi var mı?",
+  "llm_mi": true,
+  "sure_sn": 67.3,
+  "api_sure_sn": 67.0,
+  "stop": "end_turn",
+  "giris_token": 16057,
+  "cikis_token": 5641,
+  "sistem_kar": 4450,
+  "mesaj_kar": 23975,
+  "cevap_kar": 7514,
+  "girisim": false,
+  "eksik_baslik": [],
+  "uydurma_url": [],
+  "suphe_sayilar": [],
+  "baglam_disi_program": [],
+  "kapali_onerildi": [],
+  "kesildi": false
+ },
+ {
+  "n": 3,
+  "persona": "3 Ankara girisim",
+  "soru": "Şirketim yok, yapay zekâ tabanlı bir yazılım fikrim var, prototip aşamasındayım. Hangi hibelere başvurabilirim?",
+  "llm_mi": true,
+  "sure_sn": 45.4,
+  "api_sure_sn": 45.2,
+  "stop": "end_turn",
+  "giris_token": 11594,
+  "cikis_token": 3993,
+  "sistem_kar": 7115,
+  "mesaj_kar": 13206,
+  "cevap_kar": 7075,
+  "girisim": true,
+  "eksik_baslik": [],
+  "uydurma_url": [],
+  "suphe_sayilar": [
+   "0TL"
+  ],
+  "baglam_disi_program": [],
+  "kapali_onerildi": [],
+  "kesildi": false
+ },
+ {
+  "n": 4,
+  "persona": "4 Van otel",
+  "soru": "Van'da 40 odalı otelimize 30 oda ekleyeceğiz; yatırım teşvik belgesi alabilir miyiz, SGK ve faiz desteği var mı?",
+  "llm_mi": true,
+  "sure_sn": 57.2,
+  "api_sure_sn": 57.0,
+  "stop": "end_turn",
+  "giris_token": 15009,
+  "cikis_token": 4792,
+  "sistem_kar": 4450,
+  "mesaj_kar": 22463,
+  "cevap_kar": 6018,
+  "girisim": false,
+  "eksik_baslik": [
+   "### 1.",
+   "### 2.",
+   "### 3.",
+   "### 4.",
+   "### 5."
+  ],
+  "uydurma_url": [],
+  "suphe_sayilar": [
+   "6.000.000TL"
+  ],
+  "baglam_disi_program": [
+   "Dijital Dönüşüm Destek Paketi",
+   "Girişimci Destek Programı",
+   "Küresel Rekabetçilik Destek Programı"
+  ],
+  "kapali_onerildi": [],
+  "kesildi": false
+ },
+ {
+  "n": 5,
+  "persona": "5 Trabzon eticaret",
+  "soru": "Fındık ürünlerimizi Amazon üzerinden yurt dışına satmak istiyoruz; e-ihracat desteği, pazaryeri komisyonu ve reklam desteği var mı?",
+  "llm_mi": true,
+  "sure_sn": 45.9,
+  "api_sure_sn": 45.6,
+  "stop": "end_turn",
+  "giris_token": 14684,
+  "cikis_token": 3687,
+  "sistem_kar": 4450,
+  "mesaj_kar": 21835,
+  "cevap_kar": 5339,
+  "girisim": false,
+  "eksik_baslik": [],
+  "uydurma_url": [
+   "https://trabzon.tarimorman.gov.tr/Iletisim"
+  ],
+  "suphe_sayilar": [],
+  "baglam_disi_program": [],
+  "kapali_onerildi": [],
+  "kesildi": false
+ },
+ {
+  "n": 6,
+  "persona": "6 Istanbul SaaS",
+  "soru": "SaaS ürünümüzü ABD'ye satıyoruz; bulut sunucu, dijital reklam ve App Store komisyonları için hangi destekler var? 5448 sayılı Karar hâlâ geçerli mi?",
+  "llm_mi": true,
+  "sure_sn": 64.0,
+  "api_sure_sn": 63.6,
+  "stop": "end_turn",
+  "giris_token": 18177,
+  "cikis_token": 5438,
+  "sistem_kar": 7115,
+  "mesaj_kar": 24846,
+  "cevap_kar": 7169,
+  "girisim": true,
+  "eksik_baslik": [],
+  "uydurma_url": [
+   "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  ],
+  "suphe_sayilar": [],
+  "baglam_disi_program": [
+   "Dijital Dönüşüm Destek Paketi"
+  ],
+  "kapali_onerildi": [],
+  "kesildi": false
+ },
+ {
+  "n": 7,
+  "persona": "7 Bursa buyuk imalat",
+  "soru": "400 çalışanlı otomotiv parça üreticisiyiz; elektrikli araç aktarma organı için 500 milyon TL yatırım planlıyoruz. Hangi program, hangi oranlar?",
+  "llm_mi": true,
+  "sure_sn": 53.9,
+  "api_sure_sn": 53.4,
+  "stop": "end_turn",
+  "giris_token": 15958,
+  "cikis_token": 4858,
+  "sistem_kar": 4450,
+  "mesaj_kar": 23990,
+  "cevap_kar": 6849,
+  "girisim": false,
+  "eksik_baslik": [
+   "### 1.",
+   "### 2.",
+   "### 3.",
+   "### 4.",
+   "### 5."
+  ],
+  "uydurma_url": [
+   "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf"
+  ],
+  "suphe_sayilar": [],
+  "baglam_disi_program": [],
+  "kapali_onerildi": [],
+  "kesildi": false
+ },
+ {
+  "n": 8,
+  "persona": "8 Hatay mikro",
+  "soru": "Hatay'da 4 kişilik restoranımız var, 3 kişi daha işe alacağız; istihdam ve SGK desteği nedir?",
+  "llm_mi": true,
+  "sure_sn": 32.3,
+  "api_sure_sn": 32.0,
+  "stop": "end_turn",
+  "giris_token": 15494,
+  "cikis_token": 2687,
+  "sistem_kar": 4450,
+  "mesaj_kar": 23101,
+  "cevap_kar": 4071,
+  "girisim": false,
+  "eksik_baslik": [],
+  "uydurma_url": [],
+  "suphe_sayilar": [],
+  "baglam_disi_program": [
+   "Dijital Dönüşüm Destek Paketi"
+  ],
+  "kapali_onerildi": [],
+  "kesildi": false
+ },
+ {
+  "n": 9,
+  "persona": "9 Ekmek 10.71 Konya",
+  "soru": "Yeni ekmek üretim hattı için makine alacağım ve ürün geliştirme yapacağım; yatırım teşvik belgesi alabilir miyim?",
+  "llm_mi": true,
+  "sure_sn": 55.0,
+  "api_sure_sn": 54.7,
+  "stop": "end_turn",
+  "giris_token": 17688,
+  "cikis_token": 4719,
+  "sistem_kar": 4450,
+  "mesaj_kar": 27408,
+  "cevap_kar": 6493,
+  "girisim": false,
+  "eksik_baslik": [],
+  "uydurma_url": [],
+  "suphe_sayilar": [],
+  "baglam_disi_program": [],
+  "kapali_onerildi": [],
+  "kesildi": false
+ },
+ {
+  "n": 10,
+  "persona": "10 Hatay NACEsiz hizmet",
+  "soru": "İşletme sermayesi için uygun faizli kredi veya kefalet desteği arıyorum, ne önerirsiniz?",
+  "llm_mi": true,
+  "sure_sn": 50.3,
+  "api_sure_sn": 50.0,
+  "stop": "end_turn",
+  "giris_token": 11226,
+  "cikis_token": 4605,
+  "sistem_kar": 4450,
+  "mesaj_kar": 15577,
+  "cevap_kar": 5814,
+  "girisim": false,
+  "eksik_baslik": [],
+  "uydurma_url": [
+   "https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim",
+   "https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=31"
+  ],
+  "suphe_sayilar": [
+   "1milyon"
+  ],
+  "baglam_disi_program": [
+   "Girişimci Destek Programı"
+  ],
+  "kapali_onerildi": [],
+  "kesildi": false
+ }
+]

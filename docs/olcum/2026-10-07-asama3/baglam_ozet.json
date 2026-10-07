@@ -1,0 +1,525 @@
+[
+ {
+  "n": 1,
+  "persona": "1 Konya ciftci",
+  "soru": "180 dekar buğday ekiyorum, traktör ve mibzer almak istiyorum; mazot-gübre desteği de alabilir miyim?",
+  "idler": [
+   160,
+   161,
+   79,
+   77,
+   80,
+   76,
+   78,
+   94
+  ],
+  "basliklar": [
+   "Hububat ve Baklagil Üretim Destekleri (Mazot-",
+   "Meyve-Sebze Üretim Destekleri (Mazot-Gübre)",
+   "Sera/Örtüaltı Tarım Destekleri",
+   "Organik Tarım Destekleri",
+   "Sulama Yatırımı Destekleri",
+   "Hayvancılık Destekleri",
+   "Tarımsal Makineleştirme Destekleri",
+   "TARIM KEFALET DESTEK PROGRAMI"
+  ],
+  "notlar": {},
+  "elenen_var": false,
+  "girisim": false,
+  "baglam_kar": 10628,
+  "tahmini_token": 3542,
+  "kapali_kayit": [],
+  "gurultulu_kayit": []
+ },
+ {
+  "n": 2,
+  "persona": "2 Izmir tekstil",
+  "soru": "Yeni dokuma hattı için makine yatırımı yapıp Almanya'ya ihracata başlayacağız. Hangi teşviklere başvurabiliriz, vergi indirimi var mı?",
+  "idler": [
+   180,
+   178,
+   90,
+   168,
+   81,
+   8,
+   25,
+   55
+  ],
+  "basliklar": [
+   "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı ",
+   "YATIRIM-İŞLETME DESTEK PAKETİ",
+   "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK P",
+   "KAPASİTE GELİŞTİRME DESTEK PAKETİ",
+   "Kapasite Geliştirme Destek Programı",
+   "1511 - TÜBİTAK Öncelikli Alanlar Araştırma Te",
+   "1707 - Siparişe Dayalı Ar-Ge Projeleri için K"
+  ],
+  "notlar": {
+   "180": "ŞARTLI — NACE 13.20, EK-3'te '13 Tekstil ürünlerinin imalatı' kalemine giriyor; şart: 500 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.10.12 ve 100 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.92.06 kodları desteklenmez. (MADDE 5/1, 10)",
+   "178": "BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7)"
+  },
+  "elenen_var": false,
+  "girisim": false,
+  "baglam_kar": 23813,
+  "tahmini_token": 7937,
+  "kapali_kayit": [],
+  "gurultulu_kayit": [
+   90
+  ]
+ },
+ {
+  "n": 3,
+  "persona": "3 Ankara girisim",
+  "soru": "Şirketim yok, yapay zekâ tabanlı bir yazılım fikrim var, prototip aşamasındayım. Hangi hibelere başvurabilirim?",
+  "idler": [
+   49,
+   174,
+   177
+  ],
+  "basliklar": [
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Pr",
+   "1512 - Girişimcilik Destek Programı (BiGG - B",
+   "Teknoloji Hamlesi Programı (9903 sayılı Karar"
+  ],
+  "notlar": {
+   "177": "DÜŞÜK OLASILIK — faaliyet EK-1 orta-yüksek/yüksek teknoloji sınıfında değil; öncelikli ürün listesi bu sınıflar ve kritik ürünlerden oluşur (MADDE 2/i, 6)"
+  },
+  "elenen_var": false,
+  "girisim": true,
+  "baglam_kar": 11663,
+  "tahmini_token": 3887,
+  "kapali_kayit": [],
+  "gurultulu_kayit": []
+ },
+ {
+  "n": 4,
+  "persona": "4 Van otel",
+  "soru": "Van'da 40 odalı otelimize 30 oda ekleyeceğiz; yatırım teşvik belgesi alabilir miyiz, SGK ve faiz desteği var mı?",
+  "idler": [
+   90,
+   81,
+   8,
+   180,
+   170,
+   91,
+   125,
+   107
+  ],
+  "basliklar": [
+   "YATIRIM-İŞLETME DESTEK PAKETİ",
+   "KAPASİTE GELİŞTİRME DESTEK PAKETİ",
+   "Kapasite Geliştirme Destek Programı",
+   "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı ",
+   "GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI",
+   "TKYB KREDİ DESTEK PAKETİ",
+   "2024 Dijital Dönüşüm Destek Paketi",
+   "KÜRESEL REKABETÇİLİK DESTEK PAKETİ"
+  ],
+  "notlar": {
+   "180": "ŞARTLI — NACE 55.10, EK-3'te '55.1 Oteller ve benzeri konaklama yerleri 50 oda ve üzeri (Otel, ' kalemine giriyor; şart: Konaklama Tesisi desteklenir) (MADDE 5/1, 10)"
+  },
+  "elenen_var": false,
+  "girisim": false,
+  "baglam_kar": 22323,
+  "tahmini_token": 7441,
+  "kapali_kayit": [],
+  "gurultulu_kayit": [
+   90,
+   91,
+   125
+  ]
+ },
+ {
+  "n": 5,
+  "persona": "5 Trabzon eticaret",
+  "soru": "Fındık ürünlerimizi Amazon üzerinden yurt dışına satmak istiyoruz; e-ihracat desteği, pazaryeri komisyonu ve reklam desteği var mı?",
+  "idler": [
+   162,
+   163,
+   168,
+   178,
+   7,
+   91,
+   90,
+   5
+  ],
+  "basliklar": [
+   "E-İhracat Destekleri (5986 Sayılı Karar)",
+   "Pazara Girişte Dijital Faaliyetlerin Destekle",
+   "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK P",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı ",
+   "İstihdamı Koruma Destek Programı",
+   "TKYB KREDİ DESTEK PAKETİ",
+   "YATIRIM-İŞLETME DESTEK PAKETİ",
+   "YÖNDE - Yönderlik ve Değerlendirme Destek Pro"
+  ],
+  "notlar": {
+   "178": "BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7)"
+  },
+  "elenen_var": false,
+  "girisim": false,
+  "baglam_kar": 21676,
+  "tahmini_token": 7225,
+  "kapali_kayit": [],
+  "gurultulu_kayit": [
+   91,
+   90
+  ]
+ },
+ {
+  "n": 6,
+  "persona": "6 Istanbul SaaS",
+  "soru": "SaaS ürünümüzü ABD'ye satıyoruz; bulut sunucu, dijital reklam ve App Store komisyonları için hangi destekler var? 5448 sayılı Karar hâlâ geçerli mi?",
+  "idler": [
+   182,
+   125,
+   3,
+   172,
+   27,
+   2,
+   178,
+   118
+  ],
+  "basliklar": [
+   "Hizmet İhracatı Destekleri – Bilişim Sektörü ",
+   "2024 Dijital Dönüşüm Destek Paketi",
+   "KOBİ Dijital Dönüşüm Destek Programı",
+   "DİJİTAL KEFALET DESTEK PROGRAMI",
+   "1711 - Yapay Zekâ Ekosistem Çağrısı",
+   "Yapay Zekâ Kredi Programı",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı ",
+   "KOSGEB Geri Ödemeli Destekleri"
+  ],
+  "notlar": {
+   "178": "BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7)"
+  },
+  "elenen_var": false,
+  "girisim": true,
+  "baglam_kar": 23474,
+  "tahmini_token": 7824,
+  "kapali_kayit": [],
+  "gurultulu_kayit": [
+   125
+  ]
+ },
+ {
+  "n": 7,
+  "persona": "7 Bursa buyuk imalat",
+  "soru": "400 çalışanlı otomotiv parça üreticisiyiz; elektrikli araç aktarma organı için 500 milyon TL yatırım planlıyoruz. Hangi program, hangi oranlar?",
+  "idler": [
+   180,
+   179,
+   177,
+   181,
+   178,
+   90,
+   8,
+   81
+  ],
+  "basliklar": [
+   "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı ",
+   "Stratejik Hamle Programı (9903 sayılı Karar)",
+   "Teknoloji Hamlesi Programı (9903 sayılı Karar",
+   "Öncelikli Yatırımlar Teşvik Sistemi (9903 say",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı ",
+   "YATIRIM-İŞLETME DESTEK PAKETİ",
+   "Kapasite Geliştirme Destek Programı",
+   "KAPASİTE GELİŞTİRME DESTEK PAKETİ"
+  ],
+  "notlar": {
+   "180": "UYGUN GÖRÜNÜYOR — NACE 29.10, EK-3'te '29 Motorlu kara taşıtı, treyler (römork) ve yarı treyler (yarı ' kalemine giriyor (MADDE 5/1, 10)",
+   "179": "ŞARTLI — stratejik hamle yatırım konuları listesinde olmalı; asgari 100M/200M TL yatırım ve ön değerlendirmede 5 kriterden 3'ü (ithalat karşılama ≤%70, katma değer ≥%30, %20 öz kaynak, ithalat ≥50M USD...) aranır; EK-3 şartı aranmaz (MADDE 5/1, 8)",
+   "177": "ŞARTLI — orta-yüksek teknoloji sınıfında (EK-1); ürün/teknoloji öncelikli ürün listesinde olmalı, proje komite tarafından değerlendirilir; EK-3 şartı aranmaz (MADDE 5/1, 6)",
+   "181": "ŞARTLI — orta-yüksek teknoloji (EK-1); ürün öncelikli ürün listesinde olmalı ya da yatırım asgari 1 milyar TL olmalı (İstanbul hariç) (MADDE 9/1-c)",
+   "178": "BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7)"
+  },
+  "elenen_var": false,
+  "girisim": false,
+  "baglam_kar": 23819,
+  "tahmini_token": 7939,
+  "kapali_kayit": [],
+  "gurultulu_kayit": [
+   90
+  ]
+ },
+ {
+  "n": 8,
+  "persona": "8 Hatay mikro",
+  "soru": "Hatay'da 4 kişilik restoranımız var, 3 kişi daha işe alacağız; istihdam ve SGK desteği nedir?",
+  "idler": [
+   7,
+   142,
+   126,
+   55,
+   178,
+   125,
+   153,
+   154
+  ],
+  "basliklar": [
+   "İstihdamı Koruma Destek Programı",
+   "İSTİHDAM KORUMA DESTEK PROGRAMI",
+   "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROG",
+   "1707 - Siparişe Dayalı Ar-Ge Projeleri için K",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı ",
+   "2024 Dijital Dönüşüm Destek Paketi",
+   "TURYIB Programı Destek Paketi",
+   "KGF Genel Destek Programı"
+  ],
+  "notlar": {
+   "178": "BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7)"
+  },
+  "elenen_var": false,
+  "girisim": false,
+  "baglam_kar": 22980,
+  "tahmini_token": 7660,
+  "kapali_kayit": [],
+  "gurultulu_kayit": [
+   125,
+   153
+  ]
+ },
+ {
+  "n": 9,
+  "persona": "9 Ekmek 10.71 Konya",
+  "soru": "Yeni ekmek üretim hattı için makine alacağım ve ürün geliştirme yapacağım; yatırım teşvik belgesi alabilir miyim?",
+  "idler": [
+   90,
+   25,
+   81,
+   8,
+   178,
+   34,
+   39,
+   44
+  ],
+  "basliklar": [
+   "YATIRIM-İŞLETME DESTEK PAKETİ",
+   "1511 - TÜBİTAK Öncelikli Alanlar Araştırma Te",
+   "KAPASİTE GELİŞTİRME DESTEK PAKETİ",
+   "Kapasite Geliştirme Destek Programı",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı ",
+   "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekl",
+   "1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Proj",
+   "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Pr"
+  ],
+  "notlar": {
+   "178": "BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7)"
+  },
+  "elenen_var": false,
+  "girisim": false,
+  "baglam_kar": 27267,
+  "tahmini_token": 9089,
+  "kapali_kayit": [],
+  "gurultulu_kayit": [
+   90
+  ]
+ },
+ {
+  "n": 10,
+  "persona": "10 Hatay NACEsiz hizmet",
+  "soru": "İşletme sermayesi için uygun faizli kredi veya kefalet desteği arıyorum, ne önerirsiniz?",
+  "idler": [
+   90,
+   91,
+   87,
+   170,
+   122,
+   168,
+   172,
+   86
+  ],
+  "basliklar": [
+   "YATIRIM-İŞLETME DESTEK PAKETİ",
+   "TKYB KREDİ DESTEK PAKETİ",
+   "HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ",
+   "GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI",
+   "HALKBANK İLK ADIM KREDİSİ PROJESİ",
+   "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK P",
+   "DİJİTAL KEFALET DESTEK PROGRAMI",
+   "TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI"
+  ],
+  "notlar": {},
+  "elenen_var": false,
+  "girisim": false,
+  "baglam_kar": 15461,
+  "tahmini_token": 5153,
+  "kapali_kayit": [],
+  "gurultulu_kayit": [
+   90,
+   91
+  ]
+ },
+ {
+  "n": 11,
+  "persona": "6 Istanbul SaaS",
+  "soru": "KOSGEB Girişimci Destek Programı bana uygun mu?",
+  "idler": [
+   170,
+   1,
+   122,
+   9,
+   153,
+   154,
+   118,
+   7
+  ],
+  "basliklar": [
+   "GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI",
+   "Girişimci Destek Programı",
+   "HALKBANK İLK ADIM KREDİSİ PROJESİ",
+   "Küresel Rekabetçilik Destek Programı",
+   "TURYIB Programı Destek Paketi",
+   "KGF Genel Destek Programı",
+   "KOSGEB Geri Ödemeli Destekleri",
+   "İstihdamı Koruma Destek Programı"
+  ],
+  "notlar": {},
+  "elenen_var": false,
+  "girisim": true,
+  "baglam_kar": 25056,
+  "tahmini_token": 8352,
+  "kapali_kayit": [],
+  "gurultulu_kayit": [
+   153
+  ]
+ },
+ {
+  "n": 12,
+  "persona": "2 Izmir tekstil",
+  "soru": "1507 TÜBİTAK başvurusu için şartlar neler, kaç TL hibe alınır?",
+  "idler": [
+   180,
+   44,
+   39,
+   34,
+   25,
+   178,
+   170,
+   14
+  ],
+  "basliklar": [
+   "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı ",
+   "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Pr",
+   "1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Proj",
+   "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekl",
+   "1511 - TÜBİTAK Öncelikli Alanlar Araştırma Te",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı ",
+   "GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI",
+   "1515 - Öncül Ar-Ge Laboratuvarları Destekleme"
+  ],
+  "notlar": {
+   "180": "ŞARTLI — NACE 13.20, EK-3'te '13 Tekstil ürünlerinin imalatı' kalemine giriyor; şart: 500 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.10.12 ve 100 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.92.06 kodları desteklenmez. (MADDE 5/1, 10)",
+   "178": "BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7)"
+  },
+  "elenen_var": false,
+  "girisim": false,
+  "baglam_kar": 25052,
+  "tahmini_token": 8350,
+  "kapali_kayit": [],
+  "gurultulu_kayit": []
+ },
+ {
+  "n": 13,
+  "persona": "4 Van otel",
+  "soru": "2012/3305 sayılı Bölgesel Teşvik uygulamasından yararlanabilir miyim?",
+  "idler": [
+   181,
+   180,
+   178,
+   14,
+   7,
+   27,
+   75,
+   44
+  ],
+  "basliklar": [
+   "Öncelikli Yatırımlar Teşvik Sistemi (9903 say",
+   "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı ",
+   "1515 - Öncül Ar-Ge Laboratuvarları Destekleme",
+   "İstihdamı Koruma Destek Programı",
+   "1711 - Yapay Zekâ Ekosistem Çağrısı",
+   "1505 - Üniversite-Sanayi İşbirliği Destek Pro",
+   "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Pr"
+  ],
+  "notlar": {
+   "181": "ŞARTLI — 6. bölge yatırımı (müteharrik hariç); ayrıca EK-3: NACE 55.10, EK-3'te '55.1 Oteller ve benzeri konaklama yerleri 50 oda ve üzeri (Otel, ' kalemine giriyor; şart: Konaklama Tesisi desteklenir) (MADDE 5/1, 9/1-ç)",
+   "180": "ŞARTLI — NACE 55.10, EK-3'te '55.1 Oteller ve benzeri konaklama yerleri 50 oda ve üzeri (Otel, ' kalemine giriyor; şart: Konaklama Tesisi desteklenir) (MADDE 5/1, 10)",
+   "178": "BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7)"
+  },
+  "elenen_var": true,
+  "girisim": false,
+  "baglam_kar": 27007,
+  "tahmini_token": 9002,
+  "kapali_kayit": [],
+  "gurultulu_kayit": []
+ },
+ {
+  "n": 14,
+  "persona": "1 Konya ciftci",
+  "soru": "Hayvancılığa geçmek istiyorum, 50 baş süt ineği için hibe var mı?",
+  "idler": [
+   160,
+   76,
+   78,
+   161,
+   80,
+   79,
+   77,
+   94
+  ],
+  "basliklar": [
+   "Hububat ve Baklagil Üretim Destekleri (Mazot-",
+   "Hayvancılık Destekleri",
+   "Tarımsal Makineleştirme Destekleri",
+   "Meyve-Sebze Üretim Destekleri (Mazot-Gübre)",
+   "Sulama Yatırımı Destekleri",
+   "Sera/Örtüaltı Tarım Destekleri",
+   "Organik Tarım Destekleri",
+   "TARIM KEFALET DESTEK PROGRAMI"
+  ],
+  "notlar": {},
+  "elenen_var": false,
+  "girisim": false,
+  "baglam_kar": 10628,
+  "tahmini_token": 3542,
+  "kapali_kayit": [],
+  "gurultulu_kayit": []
+ },
+ {
+  "n": 15,
+  "persona": "7 Bursa buyuk imalat",
+  "soru": "Büyük işletmeyiz, KOSGEB'den yararlanamıyoruz; Ar-Ge merkezi ve TÜBİTAK 1501 için ne yapmalıyız?",
+  "idler": [
+   34,
+   177,
+   39,
+   25,
+   59,
+   75,
+   46,
+   48
+  ],
+  "basliklar": [
+   "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekl",
+   "Teknoloji Hamlesi Programı (9903 sayılı Karar",
+   "1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Proj",
+   "1511 - TÜBİTAK Öncelikli Alanlar Araştırma Te",
+   "1832 - Sanayide Yeşil Dönüşüm Çağrısı",
+   "1505 - Üniversite-Sanayi İşbirliği Destek Pro",
+   "1719 Eureka Network Çağrıları",
+   "1709 – EUREKA-EUROSTARS"
+  ],
+  "notlar": {
+   "177": "ŞARTLI — orta-yüksek teknoloji sınıfında (EK-1); ürün/teknoloji öncelikli ürün listesinde olmalı, proje komite tarafından değerlendirilir; EK-3 şartı aranmaz (MADDE 5/1, 6)"
+  },
+  "elenen_var": false,
+  "girisim": false,
+  "baglam_kar": 26492,
+  "tahmini_token": 8830,
+  "kapali_kayit": [],
+  "gurultulu_kayit": []
+ }
+]

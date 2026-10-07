@@ -541,6 +541,22 @@ def _kosgeb_il_iletisim_metni(profil: dict | None) -> str:
         db.close()
 
 
+# KGF/KOSGEB sayfalarında asıl içerik bu başlıklardan biriyle başlar; öncesi site menüsü
+# dökümüdür (ölçüm 2026-10-07: 2024 Dijital Dönüşüm paketinde içerik 8.901. karakterde).
+_ICERIK_BASLIKLARI = ("Ürün Açıklaması", "Ürün açıklaması", "Programın Amacı", "Program Amacı",
+                      "PROGRAMIN KAPSAMI VE AMACI", "Programın Kapsamı")
+_ALT_BILGI = "Buradasınız"
+
+
+def _icerik_govdesi(detay: str | None) -> str:
+    """Menü dökümünü atlayıp içerik başlığından başlar, sayfa alt bilgisinde keser."""
+    metin = detay or ""
+    konumlar = [i for i in (metin.find(b) for b in _ICERIK_BASLIKLARI) if i > 0]
+    bas = min(konumlar) if konumlar else 0
+    son = metin.find(_ALT_BILGI, bas + 1)
+    return metin[bas: son if son > bas else None]
+
+
 def _tesvik_detay_metni(m: Tesvik) -> str:
     """Tesvik kaydinin TUM yapilandirilmis alanlarini (sadece serbest metin
     detay degil) LLM baglamina yazar - basvuru_sartlari/tutar/aktif_mi gibi
@@ -549,7 +565,7 @@ def _tesvik_detay_metni(m: Tesvik) -> str:
     # listesini yarıda bırakıyordu; model "madde numarası bağlamda yok" diyordu (ölçüm
     # 2026-10-07). Menü/footer gürültüsü ayıklanıp daha uzun bir pencere verilir.
     satirlar = [f"[{m.kurum}] {m.baslik}", f"Kaynak: {m.kaynak_url}",
-                _kisalt(clean_grant_text(m.detay or "", baslik=m.baslik), DETAY_KARAKTER)]
+                _kisalt(clean_grant_text(_icerik_govdesi(m.detay), baslik=m.baslik), DETAY_KARAKTER)]
 
     if m.aktif_mi is False:
         satirlar.append(f"⚠️ DURUM: ARTIK AKTİF DEĞİL. {m.durum_notu or ''}")

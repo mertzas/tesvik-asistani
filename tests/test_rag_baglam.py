@@ -1,5 +1,5 @@
 """Danışman bağlamına giden kayıt metni: mevzuat kayıtlarının madde listesi kesilmemeli,
-kazıma gürültüsü ayıklanmalı."""
+kazıma gürültüsü ayıklanmalı, menü dökümü yerine içerik gövdesi gönderilmeli."""
 from app import rag
 from app.models import Tesvik
 
@@ -29,3 +29,23 @@ def test_menu_gurultusu_baglama_gitmez():
     m = rag._tesvik_detay_metni(_t(detay, baslik="Paket"))
     assert "İmalatçı KOBİ'lere kefalet verilir." in m
     assert "Özkaynak Kefaletlerimiz" not in m and "Çerez Politikası" not in m
+
+
+def test_icerik_basligi_oncesi_menu_dokumu_atilir_alt_bilgi_kesilir():
+    """GERÇEK OLAY: KGF 2024 Dijital Dönüşüm kaydında 8.900 karakterlik menü dökümü içerikten
+    önce geliyordu; satır bazlı temizleyici her satırı yakalayamıyordu."""
+    menu = "\n".join(f"Paket {i} Destek Programı Ürünlerimiz Kefalet" for i in range(40))
+    detay = (menu + "\nÖzkaynak Kefaletlerimiz Banka Kredileri\nÜrün Açıklaması\n"
+             "Dijital dönüşüm yatırımı yapan KOBİ'lere kefalet verilir.\nKefalet İçin Kullanılan Kaynak\nHazine Fonu\n"
+             "Buradasınız: Anasayfa / Ürünlerimiz / Hazine Destekli Kefaletler\nSöğütözü Mah. Ankara")
+    m = rag._tesvik_detay_metni(_t(detay, baslik="2024 Dijital Dönüşüm Destek Paketi"))
+    assert "Dijital dönüşüm yatırımı yapan KOBİ'lere kefalet verilir." in m and "Hazine Fonu" in m
+    assert "Özkaynak Kefaletlerimiz" not in m and "Paket 3 Destek" not in m
+    assert "Söğütözü" not in m, "alt bilgi (adres) kesilmeli"
+
+
+def test_icerik_basligi_yoksa_metin_aynen_kalir():
+    assert rag._icerik_govdesi("Düz bir açıklama metni.") == "Düz bir açıklama metni."
+    assert rag._icerik_govdesi(None) == ""
+    # başlık en başta ise (konum 0) kesme yapılmaz
+    assert rag._icerik_govdesi("Programın Amacı: x. Buradasınız: y").startswith("Programın Amacı")

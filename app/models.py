@@ -68,6 +68,9 @@ class Settings(BaseSettings):
     # kayıt hemen oturum açar, var olan e-postaya 400 döner.
     KAYIT_EPOSTA_DOGRULAMA_ZORUNLU: bool = os.getenv("KAYIT_EPOSTA_DOGRULAMA_ZORUNLU", "false").lower() == "true"
     ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
+    # Harici hata izleme (app/hata_izleme.py). Boşsa kapalı. KVKK: AB bölgesi DSN'i tercih edin.
+    SENTRY_DSN: str = os.getenv("SENTRY_DSN", "")
+    SENTRY_ORTAM: str = os.getenv("SENTRY_ORTAM", "production")
     CLAUDE_MODEL: str = os.getenv("CLAUDE_MODEL", "claude-sonnet-5")
 
     # İKAS Admin App entegrasyonu - client_id/secret İKAS Builders Dashboard'da

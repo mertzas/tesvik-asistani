@@ -2,6 +2,7 @@ import json
 import logging
 import os
 import uuid
+from contextlib import asynccontextmanager
 from datetime import datetime, timezone
 from typing import List
 
@@ -23,6 +24,7 @@ from app.models import (init_db, get_db, Organization, User, Query, FinancialPro
                         MacroIndicator, IkasBaglanti, settings)
 from app.models_cilek import Parsel, SogukZincirOkuma
 from app.dogrulama_mesajlari import turkce_hatalar
+from app import hata_izleme
 from app.auth import (
     get_current_user,
     get_current_org,
@@ -93,10 +95,23 @@ from app.scheduler import scheduler_kilidi_al, setup_scheduler
 # Global scheduler instance
 _scheduler = None
 
+
+@asynccontextmanager
+async def yasam_dongusu(_app: FastAPI):
+    """Açılış/kapanış (on_event yerine; FastAPI'de on_event kullanımdan kalktı). Adlar çağrı anında çözülür:
+    on_startup/on_shutdown aşağıda tanımlıdır ve testlerde yamanabilir."""
+    on_startup()
+    try:
+        yield
+    finally:
+        on_shutdown()
+
+
 app = FastAPI(
     title="Teşvik Asistanı SaaS",
     description="Devlet teşviklerini bulmanın en kolay yolu",
     version="2.0.0",
+    lifespan=yasam_dongusu,
 )
 
 VARSAYILAN_SECRET_KEY = "your-super-secret-key"
@@ -186,6 +201,7 @@ async def veritabani_hatasi(request: Request, exc: OperationalError):
                             headers={"Retry-After": "5"})
     kimlik = _hata_kimligi()
     logger.error("Veritabanı hatası [%s] %s %s: %s", kimlik, request.method, request.url.path, exc)
+    hata_izleme.bildir(exc, kimlik)
     return JSONResponse(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                         content={"detail": "Veritabanı hatası oluştu.", "hata_kimligi": kimlik})
 
@@ -204,6 +220,7 @@ async def beklenmeyen_hata(request: Request, exc: Exception):
     kimlik = _hata_kimligi()
     logger.error("Beklenmeyen hata [%s] %s %s", kimlik, request.method, request.url.path,
                  exc_info=(type(exc), exc, exc.__traceback__))
+    hata_izleme.bildir(exc, kimlik)
     return JSONResponse(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                         content={"detail": "Beklenmeyen bir hata oluştu. Sorun sürerse bu kimlikle bize ulaşın: "
                                            f"{kimlik}", "hata_kimligi": kimlik})
@@ -231,10 +248,10 @@ def secret_key_kontrolu() -> None:
                        "Yerel geliştirme için ALLOW_INSECURE_SECRET=true.")
 
 
-@app.on_event("startup")
 def on_startup():
     global _scheduler
     secret_key_kontrolu()
+    hata_izleme.kur(settings.SENTRY_DSN, settings.SENTRY_ORTAM)
     init_db()
     # Cok iscili dagitimda yalnizca kilidi alan isci scraper islerini calistirir.
     if settings.SCHEDULER_ENABLED and scheduler_kilidi_al():
@@ -244,7 +261,6 @@ def on_startup():
         logger.info("Zamanlayici bu surecte kapali (SCHEDULER_ENABLED=%s)", settings.SCHEDULER_ENABLED)
 
 
-@app.on_event("shutdown")
 def on_shutdown():
     if _scheduler and _scheduler.running:
         _scheduler.shutdown()

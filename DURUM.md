@@ -31,10 +31,10 @@ Son güncelleme: 2026-10-07 (Denetim 2 / Aşama B sonu). Oturuma bunu okuyarak b
   Kesme işareti düzeltmesiyle Eurostars kaydı bağlama giriyor.
 
 ## Sıradaki adım
-- **Aşama C üretim modeliyle tekrar**: bakiye yüklenince `C_olcum.py N` (N=4..12, ~0,9 USD). Kayıt temizliği (163 15.102 TL
-  çelişkisi, 174 eski 150.000 TL metni, 7 eski tarih metni, 48 çağrı no, 2 NACE/dönem) DB yazımı → onay + dry-run.
+- **Aşama C üretim modeliyle tekrar**: bakiye yüklenince `C_olcum.py N` (N=4..12, ~0,9 USD). Kayıt temizliği UYGULANDI
+  (tur3, 5 kayıt: 2, 7, 48, 163, 174; yedek *.db.bak, git dışı); açık: 163 güncel limit, 48 son başvuru tarihi.
 - **Aşama D** betiği hazır (`D_olcum.py`): `eszamanli` koştu (5 eşzamanlı akış, rıza kapalı, 0,5 sn, hepsi 200);
-  `yuk` ve `akis N` (ücretli) henüz koşulmadı. Not: klasör taşınma isteği (Projeler\tesvik-asistani) bekliyor, uvicorn durdurulacak.
+  `yuk` ve `akis N` (ücretli) henüz koşulmadı. Proje taşındı: C:\Users\huawei\Projeler\tesvik-asistani (venv activate betikleri eski yolu gösteriyor; sistem Python kullanılıyor).
 - Aşama D (performans/dayanıklılık), E (CSP, parola sıfırlama, İKAS imza, KVKK alanları, cilek/index XSS), F (kapanış).
 - Açık: 76 hayvancılık tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 10 kararsız akademik kayıt,
   bütçe modülünde tek sektör kâr oranı (%5,8), profil düğmeleri stilsiz, kayıt sonrası onboarding yok.

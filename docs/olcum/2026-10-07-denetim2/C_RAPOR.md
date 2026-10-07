@@ -42,6 +42,16 @@
 5. **Kayıt 2:** NACE listesi ve başvuru dönemi kayıtta yok (sayfa kazıması menü metnine inmiş).
 6. **Kayıt 7:** Destek Unsurları metni "13-…" diye kesik; performans desteği NACE listesi bağlamda yok.
 
-## Açık / sonraki adım
-- Üretim modeliyle 4–12 koşusu için Anthropic bakiyesi gerekir (~0,9 USD): `C_olcum.py N` (N = 4..12).
-- Yukarıdaki 1–6 numaralı kayıt temizliği DB yazımı gerektirir; onay sonrası dry-run ile yapılır.
+## Kayıt temizliği (uygulandı, 2026-10-07)
+Yukarıdaki tutarsızlıklar `scripts/fix_veri_2026_10_07_denetim2_tur3.py --uygula` ile 5 kayıtta (2, 7, 48, 163, 174) giderildi. Yedek: `tesvikler_oncesi_tur3.db.bak` (git dışı). İkinci çalıştırma 0 kayıt işledi (idempotent). Kaynaklar Chrome ile salt okunur okundu.
+- **163:** eski 15.102 TL "2022 değeri, güncel sayılmaz" diye işaretlendi. Güncel TL limiti kaynakta bulunamadı, **hâlâ açık** (5973 Genelge eki).
+- **174:** eski 150.000 TL metni kaldırıldı; 1.350.000 TL (2026) + 600.000 TL GCİP.
+- **48:** canlı sayfa 2026/2; bütçe sınırları ve başvuru şartları eklendi. Son başvuru tarihi çağrı duyurusu PDF'inde, **hâlâ açık** (indirilmedi).
+- **2:** canlı SSS içeriği. **Yeni bulgu: geçerli Teknogirişim Rozeti şart**, kayıtta hiç yoktu. Faiz ve komisyon yok, teminat limiti teminat mektubu tutarına eşit.
+- **7:** kayıt 2026-1 dönemine aitti (2025 Kasım-Aralık referansı). 2026-2 canlı metni: referans 2026 Ocak-Haziran, prim gün sayısı Temmuz-Aralık'ta korunmalı, faiz en çok %37, komisyon en çok %1, destek yalnızca vergi ve SGK borcuna.
+- Yeni bağlamla soru 4, 9, 10, 11 yanıtları yeniden yazıldı (9'da rozet şartı, 10'da 2026-2 kuralları). Skor: uydurma 0, beklenen 41/41.
+
+## Hâlâ açık
+- 163 güncel e-ticaret üyelik limiti; 48 son başvuru tarihi; 76 hayvancılık birim tutarı (taranmış PDF).
+- Kazınmış metinlerin bayatlama riski: kayıt 7 tam bir dönem geride kalmıştı. Diğer aktif KOSGEB ve KGF kayıtlarını canlı sayfayla yeniden karşılaştırmak önerilir.
+- Üretim modeliyle 4–12 tekrarı için Anthropic bakiyesi gerekir (~0,9 USD): `C_olcum.py N`.

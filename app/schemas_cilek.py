@@ -11,9 +11,15 @@ DEGERI ile doldurulmaz.
 """
 from datetime import datetime, date
 from enum import Enum
-from typing import Optional
+from typing import Literal, Optional
 
 from pydantic import BaseModel, Field
+
+# Girdi metinleri için üst sınırlar (2026-10-08): sınırsız alanlar 5.000+ karakterlik değerleri kabul ediyordu.
+AD = 100          # parsel, işçi, depo adı
+KISA = 40         # tip/kategori kodları, birim
+ORTA = 120        # ilaç/etken madde, hedef, bölge, kaynak
+ACIKLAMA = 500
 
 
 class RiskSeviyesi(str, Enum):
@@ -26,10 +32,11 @@ class RiskSeviyesi(str, Enum):
 # ============ ORTAK / PARSEL ============
 
 class ParselCreate(BaseModel):
-    ad: str
-    ortam_tipi: str = "acik_tarla"
+    ad: str = Field(..., min_length=1, max_length=AD)
+    # models_cilek.OrtamTipi ile aynı değerler; serbest metin geçersiz değerde 500 veriyordu (2026-10-08).
+    ortam_tipi: Literal["sera", "acik_tarla"] = "acik_tarla"
     alan_dekar: Optional[float] = None
-    cesit: Optional[str] = None
+    cesit: Optional[str] = Field(None, max_length=ORTA)
     dikim_tarihi: Optional[date] = None
     enlem: Optional[float] = None
     boylam: Optional[float] = None
@@ -54,10 +61,10 @@ class ParselResponse(BaseModel):
 
 class SensorOkumaCreate(BaseModel):
     parsel_id: int
-    sensor_tipi: str
+    sensor_tipi: str = Field(..., max_length=KISA)
     deger: float
-    birim: Optional[str] = None
-    kaynak: Optional[str] = None
+    birim: Optional[str] = Field(None, max_length=KISA)
+    kaynak: Optional[str] = Field(None, max_length=ORTA)
 
 
 class SensorKart(BaseModel):
@@ -173,9 +180,9 @@ class HasatKilidiDurumu(BaseModel):
 
 class PazarFiyatiCreate(BaseModel):
     tarih: date
-    kaynak: str
-    kalite_sinifi: str
-    bolge: Optional[str] = None
+    kaynak: str = Field(..., max_length=KISA)
+    kalite_sinifi: str = Field(..., max_length=KISA)
+    bolge: Optional[str] = Field(None, max_length=ORTA)
     fiyat_kg: float
     hacim_kg: Optional[float] = None
 
@@ -206,12 +213,12 @@ class PazarPaneli(BaseModel):
 class HasatKaydiCreate(BaseModel):
     parsel_id: int
     tarih: date
-    isci_adi: Optional[str] = None
+    isci_adi: Optional[str] = Field(None, max_length=AD)
     toplanan_kasa: float
     kasa_agirlik_kg: float = 5.0
     sure_saat: Optional[float] = None
     saatlik_ucret: Optional[float] = None
-    kalite_sinifi: Optional[str] = None
+    kalite_sinifi: Optional[str] = Field(None, max_length=KISA)
 
 
 class IsciPerformansi(BaseModel):
@@ -230,11 +237,11 @@ class HasatPerformansiPaneli(BaseModel):
 
 
 class SogukZincirOkumaCreate(BaseModel):
-    depo_adi: str
+    depo_adi: str = Field(..., min_length=1, max_length=AD)
     sicaklik: float
     hedef_sicaklik_min: float = 0.0
     hedef_sicaklik_max: float = 2.0
-    parti_no: Optional[str] = None
+    parti_no: Optional[str] = Field(None, max_length=KISA)
 
 
 class SogukZincirKart(BaseModel):
@@ -251,21 +258,21 @@ class SogukZincirKart(BaseModel):
 
 class GiderKalemiCreate(BaseModel):
     parsel_id: int
-    kategori: str
+    kategori: str = Field(..., max_length=KISA)
     tutar: float
     tarih: date
-    aciklama: Optional[str] = None
+    aciklama: Optional[str] = Field(None, max_length=ACIKLAMA)
 
 
 class IlaclamaCreate(BaseModel):
     parsel_id: int
-    ilac_adi: str
-    etken_madde: Optional[str] = None
+    ilac_adi: str = Field(..., min_length=1, max_length=ORTA)
+    etken_madde: Optional[str] = Field(None, max_length=ORTA)
     uygulama_tarihi: datetime
     phi_gun: int
-    doz: Optional[str] = None
-    uygulayan: Optional[str] = None
-    hedef: Optional[str] = None
+    doz: Optional[str] = Field(None, max_length=KISA)
+    uygulayan: Optional[str] = Field(None, max_length=AD)
+    hedef: Optional[str] = Field(None, max_length=ORTA)
 
 
 class FinansalSaglikPaneli(BaseModel):

@@ -33,7 +33,12 @@ async function api(path, options = {}) {
   });
   if (!res.ok) {
     const detay = await res.json().catch(() => ({}));
-    throw new Error(detay.detail || `Sunucu hatası (${res.status})`);
+    // 422'de detail bir dizidir; düz metne çevrilmezse kullanıcı "[object Object]" görür.
+    const d = detay.detail;
+    const metin = typeof d === 'string' ? d
+      : Array.isArray(d) ? d.map(x => (x && x.msg) ? x.msg.replace(/^Value error, /, '') : JSON.stringify(x)).join('; ')
+      : `Sunucu hatası (${res.status})`;
+    throw new Error(metin);
   }
   return temizle(await res.json());
 }
@@ -354,7 +359,7 @@ function formAc(tip) {
       <h3 class="text-xl font-black mb-3">🧺 Hasat Kaydı</h3>
       <form data-gonder="formGonder" data-arg="hasat">
         <label class="block text-sm font-bold mb-1">İşçi Adı</label>
-        <input name="isci_adi" class="w-full mb-3 rounded-lg bg-slate-700 p-3" placeholder="Ör. Ahmet">
+        <input name="isci_adi" maxlength="100" class="w-full mb-3 rounded-lg bg-slate-700 p-3" placeholder="Ör. Ahmet">
         <label class="block text-sm font-bold mb-1">Toplanan Kasa Sayısı</label>
         <input name="toplanan_kasa" type="number" step="0.5" required class="w-full mb-3 rounded-lg bg-slate-700 p-3">
         <label class="block text-sm font-bold mb-1">Süre (saat)</label>
@@ -372,9 +377,9 @@ function formAc(tip) {
       <h3 class="text-xl font-black mb-3">🧪 İlaçlama Kaydı</h3>
       <form data-gonder="formGonder" data-arg="ilaclama">
         <label class="block text-sm font-bold mb-1">İlaç Adı</label>
-        <input name="ilac_adi" required class="w-full mb-3 rounded-lg bg-slate-700 p-3">
+        <input name="ilac_adi" required maxlength="120" class="w-full mb-3 rounded-lg bg-slate-700 p-3">
         <label class="block text-sm font-bold mb-1">Hedef (ör. Botrytis)</label>
-        <input name="hedef" class="w-full mb-3 rounded-lg bg-slate-700 p-3">
+        <input name="hedef" maxlength="120" class="w-full mb-3 rounded-lg bg-slate-700 p-3">
         <label class="block text-sm font-bold mb-1">PHI Süresi (gün)</label>
         <input name="phi_gun" type="number" required class="w-full mb-3 rounded-lg bg-slate-700 p-3">
         <input type="hidden" name="uygulama_tarihi" value="${new Date().toISOString()}">

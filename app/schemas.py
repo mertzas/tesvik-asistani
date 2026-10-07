@@ -6,6 +6,9 @@ from pydantic import BaseModel, EmailStr, Field, field_validator
 
 
 SIFRE_EN_AZ, SIFRE_EN_COK_BAYT = 8, 72  # bcrypt 72 bayttan sonrasını yok sayar/hata verir
+# Giriş/teyit parolası için karakter üst sınırı: politika 72 bayt olduğundan geçerli hiçbir parola bunu aşmaz;
+# aşan istek bcrypt'e ulaşmadan 422 alır.
+PAROLA_EN_COK = 200
 
 
 def sifre_kontrol(sifre: str) -> str:
@@ -40,7 +43,9 @@ class UserSignup(BaseModel):
 
 class HesapSilme(BaseModel):
     """KVKK m.11 silme hakkı: parola teyidi + açık onay (yanlışlıkla silmeye karşı)."""
-    password: str
+    # Politika parolayı 72 baytla sınırlar; daha uzunu geçerli olamaz. Sınırsızken 4 KB üstü passlib
+    # PasswordSizeError → 500 veriyordu (2026-10-08).
+    password: str = Field(..., max_length=PAROLA_EN_COK)
     onay: bool = Field(..., description="true: tüm hesap verilerinin kalıcı olarak silinmesini onaylıyorum")
 
 
@@ -50,7 +55,7 @@ class AiRizaGuncelle(BaseModel):
 
 class UserLogin(BaseModel):
     email: EmailStr
-    password: str
+    password: str = Field(..., max_length=PAROLA_EN_COK)
 
 
 class SifreUnuttum(BaseModel):
@@ -187,7 +192,7 @@ class AskResponse(BaseModel):
 # Billing Schemas
 class PlanUpgrade(BaseModel):
     plan: str = Field(..., pattern="^(free|pro|business|enterprise)$")
-    stripe_token: Optional[str] = None
+    stripe_token: Optional[str] = Field(None, max_length=200)
 
 
 class SubscriptionResponse(BaseModel):

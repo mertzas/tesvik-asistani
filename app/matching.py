@@ -17,10 +17,10 @@ import re
 from app.girisim import SIRKET_TURLERI
 from app.ihtiyac import isletmeye_yonelik_mi, program_ihtiyaclari
 from app.match_adapter import company_from_profile, program_from_tesvik
-from app.match_scoring import hard_filter
+from app.match_scoring import hard_filter, score_program
 from app.kobi import kobi_sinifi
 from app.tesvik_9903_uygunluk import kayit_icin as uygunluk_9903
-from app.nace_hiyerarsi import sector_match
+from app.nace_hiyerarsi import kisim_duzeyinde, sector_match
 from app.models import FinancialProfile, Tesvik
 from app.urun_sektor_anahtarlari import (
     BELIRTILMEMIS_KATEGORILER,
@@ -41,6 +41,9 @@ class TesvikEslesmeSonucu:
     skor: float
     gerekce: list[str] = field(default_factory=list)
     eksik_kriterler: list[str] = field(default_factory=list)
+    # app/match_scoring.py'nin 0-100 puanı (NACE uyumu %45, bölge %25, ölçek %20, destek
+    # türü %10). Ana skor eşit kaldığında sıralamayı belirler; ana skoru değiştirmez.
+    ince_skor: float = 0.0
 
 
 def _tutari_parse(tesvil_tutari: str | None) -> tuple[float | None, float | None]:
@@ -88,11 +91,16 @@ def _kurum_ile_cesitlendir(sonuclar: list["TesvikEslesmeSonucu"]) -> list["Tesvi
         for s in blok:
             kurum_gruplari.setdefault(s.tesvik.kurum, []).append(s)
 
-        kurumlar = sorted(kurum_gruplari.keys())
-        while any(kurum_gruplari[k] for k in kurumlar):
-            for k in kurumlar:
-                if kurum_gruplari[k]:
-                    sonuc.append(kurum_gruplari[k].pop(0))
+        # Her turda kurumlar, sıradaki kayıtlarının ince_skor'una göre dizilir; eşitlikte
+        # kurum adı. Böylece round-robin kurum çeşitliliğini korur ama bloğun ince_skor
+        # sırasını (NACE/bölge/ölçek uyumu) kurumlar arasında da ezmez. Ölçüm 2026-10-07:
+        # alfabetik tur sırası (KGF → TÜBİTAK → Ticaret Bakanlığı) NACE 62 uyumlu 10962
+        # kaydını (ince 76.5) 49.5'lik KGF/TÜBİTAK kayıtlarının arkasına atıyordu.
+        while any(kurum_gruplari.values()):
+            tur = sorted((k for k, g in kurum_gruplari.items() if g),
+                         key=lambda k: (-kurum_gruplari[k][0].ince_skor, k))
+            for k in tur:
+                sonuc.append(kurum_gruplari[k].pop(0))
 
         i = j
     return sonuc
@@ -222,25 +230,32 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
         hedef_sektor = (tesvik_sektorler & HEDEF_SEKTOR_ETIKETLERI & profil_hedefler) - ortak_sektor
         if ortak_sektor or "genel" in tesvik_sektorler or hedef_sektor:
             if ortak_sektor:
-                skor += 0.6
+                sektor_bonusu = 0.6
                 gerekce.append(f"Sektorunuz ({profil.sektor}) bu destegin kapsamina uygun.")
             elif hedef_sektor:
-                skor += 0.3
+                sektor_bonusu = 0.3
                 gerekce.append(f"Hedefiniz ({', '.join(sorted(hedef_sektor))}) bu destegin alanina giriyor.")
             else:
-                skor += 0.2
+                sektor_bonusu = 0.2
                 gerekce.append("Bu destek sektor bagimsiz genel bir programdir.")
+            skor += sektor_bonusu
         else:
             continue  # sektor hic uyusmuyorsa listeye alma
 
-        # NACE: program sektörlüyse ve işletmenin kodu biliniyorsa uyum
-        # gerekçeye yazılır (eleme yukarıda yapıldı; skor değişmiyor - sıralamaya
-        # bağlanması ayrı bir adım). Kod girilmemişse kullanıcı bilgilendirilir.
+        # NACE: program sektörlüyse ve işletmenin kodu biliniyorsa uyum gerekçeye
+        # yazılır (eleme yukarıda yapıldı). Kod girilmemişse ve program kapsamı kısım
+        # düzeyinden DAR ise (62/63/58.2 gibi bölüm/dal kodları) geniş sektör etiketi
+        # ("hizmet") bunu temsil edemez: sektör puanının yarısı düşülür. Kısım düzeyi
+        # kapsam ("A" tarım, "C" imalat) sektör etiketiyle zaten eş anlamlıdır; NACE'siz
+        # çiftçi cezalandırılmaz. Ölçüm 2026-10-07: NACE'siz Hatay hizmet işletmesine
+        # 10962 Bilişim Hizmet İhracatı 0.70 ile 1. sırada geliyordu.
         if program.nace_codes:
             if sirket.nace_codes:
                 uyum = sector_match(sirket.nace_codes[0], program.nace_codes)
                 gerekce.append(f"Faaliyet kodunuz: {uyum.aciklama}.")
             else:
+                if not all(kisim_duzeyinde(k) for k in program.nace_codes):
+                    skor -= sektor_bonusu / 2
                 eksik.append(
                     "Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) "
                     "kodunuzu girerseniz uygunluğu netleşir."
@@ -398,7 +413,9 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
         else:
             eksik.append("Calisan sayinizi girerseniz eslesme dogrulugu artar.")
 
-        sonuclar.append(TesvikEslesmeSonucu(tesvik=t, skor=round(max(min(skor, 1.0), 0.0), 2), gerekce=gerekce, eksik_kriterler=eksik))
+        sonuclar.append(TesvikEslesmeSonucu(
+            tesvik=t, skor=round(max(min(skor, 1.0), 0.0), 2), gerekce=gerekce, eksik_kriterler=eksik,
+            ince_skor=score_program(sirket, program).total_score))
 
     # Skor esitliginde veritabani ekleme sirasina (id) gore rastgele/anlamsiz
     # bir siralama olusmasin diye ikincil olarak baslige gore alfabetik
@@ -406,7 +423,11 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
     # Ayni skorda: aktif oldugu DOGRULANMIS program, aktifligi hic kontrol
     # edilmemis olanin onune gecer. Skoru degistirmiyoruz (aciklanabilirlik
     # bozulmasin) - sadece esitlik bozma sirasi.
-    sonuclar.sort(key=lambda s: (-s.skor, 0 if s.tesvik.aktif_mi is True else 1, (s.tesvik.baslik or "").lower()))
+    # Esit ana skorda once NACE/bolge/olcek uyumu (ince_skor), sonra dogrulanmis aktiflik,
+    # sonra baslik. Olcum 2026-10-07: SaaS profilinde 10 kayit 0.70 ile esitti ve NACE 62
+    # etiketli 10962 kaydi alfabetik sirada 7. geliyordu.
+    sonuclar.sort(key=lambda s: (-s.skor, -s.ince_skor, 0 if s.tesvik.aktif_mi is True else 1,
+                                 (s.tesvik.baslik or "").lower()))
     sonuclar = _kurum_ile_cesitlendir(sonuclar)
     return sonuclar[:limit]
 

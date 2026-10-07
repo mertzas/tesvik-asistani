@@ -55,6 +55,11 @@ def kisim_of(kod: str) -> str | None:
     return None
 
 
+def kisim_duzeyinde(kod: str) -> bool:
+    """Kod yalnızca bir kısım harfi mi ("A", "C")? Bölüm/dal kodları ("62", "58.2") değil."""
+    return kod in _KISIMLAR
+
+
 def normalize_nace(ham: str | None) -> str | None:
     """Kullanıcı girdisini standart biçime çevirir; geçersizse None.
 

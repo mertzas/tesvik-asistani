@@ -107,6 +107,67 @@ def test_tubitak_ekosistem_cagrilari_isletmeye_onerilmez(kod):
     assert uygunluk_engeli(firma, FinancialProfile(sektor="arge", sirket_turu="limited")) is None
 
 
+def test_esit_ana_skorda_nace_uyumu_siralamayi_belirler(db_session):
+    """İki 'genel' program aynı ana skoru alır; NACE kaydı profille eşleşen öne geçer."""
+    from app.models import TesvikNace
+    a = _t(db_session, 301, "Alfa Genel Destek", "https://t/301", kurum="Ticaret Bakanlığı")
+    z = _t(db_session, 302, "Zeta Bilişim Destek", "https://t/302", kurum="Ticaret Bakanlığı")
+    z.nace_kayitlari = [TesvikNace(nace_prefix="62", kaynak="elle")]
+    db_session.commit()
+    sonuc = esles(FinancialProfile(sektor="hizmet", nace_kodu="62.10"), db_session)
+    s = {x.tesvik.baslik: x for x in sonuc}
+    assert s["Alfa Genel Destek"].skor == s["Zeta Bilişim Destek"].skor
+    assert s["Zeta Bilişim Destek"].ince_skor > s["Alfa Genel Destek"].ince_skor
+    assert [x.tesvik.baslik for x in sonuc].index("Zeta Bilişim Destek") < \
+        [x.tesvik.baslik for x in sonuc].index("Alfa Genel Destek")
+
+
+def test_kurum_cesitlendirme_ince_skoru_ezmez(db_session):
+    """Eşit ana skorlu blokta kurum round-robin'i alfabetik değil, ince_skor sırasıyla döner:
+    NACE uyumlu Ticaret Bakanlığı kaydı, 'A'/'K' ile başlayan kurumların arkasına atılmaz."""
+    from app.models import TesvikNace
+    _t(db_session, 311, "KGF Kredi A", "https://t/311", kurum="KGF")
+    _t(db_session, 312, "1507 TÜBİTAK", "https://t/312", kurum="TUBITAK")
+    z = _t(db_session, 313, "Hizmet İhracatı Bilişim", "https://t/313", kurum="Ticaret Bakanlığı")
+    z.nace_kayitlari = [TesvikNace(nace_prefix="62", kaynak="elle")]
+    db_session.commit()
+    sonuc = esles(FinancialProfile(sektor="hizmet", nace_kodu="62.10", sirket_turu="limited"), db_session)
+    assert len({x.skor for x in sonuc}) == 1, "üçü aynı ana skorda olmalı"
+    assert sonuc[0].tesvik.id == 313
+    assert {sonuc[1].tesvik.kurum, sonuc[2].tesvik.kurum} == {"KGF", "TUBITAK"}, "çeşitlilik korunur"
+
+
+def test_nace_kisitli_program_nace_bilinmeyen_profile_tam_sektor_puani_almaz(db_session):
+    """'hizmet' etiketli ama NACE 62/63'e kısıtlı program: profilde NACE yoksa genel hizmet
+    programının altına iner; NACE 62 girilince tam puan geri gelir."""
+    from app.models import TesvikNace
+    genel = _t(db_session, 321, "Genel Hizmet Kredisi", "https://t/321", kurum="KGF", sektorler=("hizmet",))
+    dar = _t(db_session, 322, "Bilişim Hizmet İhracatı", "https://t/322", kurum="Ticaret Bakanlığı",
+             sektorler=("hizmet", "ihracat"))
+    dar.nace_kayitlari = [TesvikNace(nace_prefix="62", kaynak="elle"), TesvikNace(nace_prefix="63", kaynak="elle")]
+    db_session.commit()
+
+    nacesiz = {x.tesvik.id: x for x in esles(FinancialProfile(sektor="hizmet", calisan_sayisi=4), db_session)}
+    assert nacesiz[322].skor == pytest.approx(nacesiz[321].skor - 0.3)
+    assert any("NACE" in e for e in nacesiz[322].eksik_kriterler)
+
+    bilisim = {x.tesvik.id: x for x in esles(FinancialProfile(sektor="hizmet", calisan_sayisi=4, nace_kodu="62.01"),
+                                             db_session)}
+    assert bilisim[322].skor == bilisim[321].skor
+    assert 322 not in {x.tesvik.id for x in esles(FinancialProfile(sektor="hizmet", calisan_sayisi=4,
+                                                                    nace_kodu="56.10"), db_session)}, \
+        "NACE biliniyor ve uyuşmuyorsa katı eleme çalışır"
+
+    # Kısım düzeyi kapsam ("A"): 'tarim' etiketiyle eş anlamlı, NACE'siz çiftçi cezalandırılmaz.
+    tarim_a = _t(db_session, 323, "Tarımsal Destek A", "https://t/323", kurum="Tarım Bakanlığı", sektorler=("tarim",))
+    tarim_a.nace_kayitlari = [TesvikNace(nace_prefix="A", kaynak="elle")]
+    tarim_genel = _t(db_session, 324, "Tarımsal Destek Genel", "https://t/324", kurum="Tarım Bakanlığı",
+                     sektorler=("tarim",))
+    db_session.commit()
+    ciftci = {x.tesvik.id: x for x in esles(FinancialProfile(sektor="tarim", calisan_sayisi=3), db_session)}
+    assert ciftci[323].skor == ciftci[324].skor
+
+
 def test_uygunluk_engeli_gerekceleri():
     akademik = Tesvik(kurum="TUBITAK", baslik="x", kaynak_url=f"{TUBITAK}/akademik/1001")
     assert uygunluk_engeli(akademik, FinancialProfile(sektor="arge")) == "akademik/araştırmacı çağrısı"

@@ -94,8 +94,8 @@ def test_imalat_profili_tarim_programini_elemez_9903_ve_firma_argesini_getirir(v
     sonuc = _idler(rag.retrieve(SORU, limit=4, profil_kaydi=imalat))
     assert 78 not in sonuc, "çiftçiye yönelik program imalatçıya gelmemeli"
     assert 44 in sonuc, "Ar-Ge ihtiyacı temsil edilmeli"
-    # 10.71 (ekmek) 9903 EK-3'te yok: Hedef Yatırımlar kesin olarak desteklemez (MADDE 5/1, 10).
-    assert 180 not in sonuc
+    # 10.71 (ekmek) EK-3'te yok ama bölüm 10 var: kesin elenmez, "düşük olasılık" ile geriye düşer.
+    assert 180 not in sonuc or sonuc.index(44) < sonuc.index(180)
 
 
 def test_ek3_kapsamindaki_imalatciya_hedef_yatirimlar_gelir(veri):

@@ -100,6 +100,10 @@ def _kurum_ile_cesitlendir(sonuclar: list["TesvikEslesmeSonucu"]) -> list["Tesvi
 
 HEDEF_SEKTOR_ETIKETLERI = {"ihracat", "arge", "e-ticaret"}
 
+# 9903 ön değerlendirmesinin esles skoruna etkisi (0-1 ölçek). "dusuk" bir programı
+# KGF/KOSGEB genel programlarının (0.30-0.60) altına indirir ama gizlemez.
+UYGUNLUK_9903_SKOR_ETKISI = {"uygun": 0.10, "sartli": 0.0, "bilinmiyor": -0.05, "dusuk": -0.45}
+
 # Kayit metninden (hedef_kitle + basvuru_sartlari) okunan uygunluk kaliplari.
 # Her kalip, veritabanindaki gercek sart cumlelerinden alinmistir (2026-10-07):
 #   - araci/ekosistem kurulusu: "TEKMER işletici kuruluşu ve TGB yönetici şirketi
@@ -250,6 +254,9 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
             )
 
         if u9903 is not None:
+            # Ön değerlendirme sıralamayı da etkiler (ölçüm 2026-10-07: ekmek üreticisine
+            # beş 9903 programı "DÜŞÜK OLASILIK" notuyla 0.70 ile en üstte geliyordu).
+            skor += UYGUNLUK_9903_SKOR_ETKISI[u9903.durum]
             if u9903.durum in ("uygun", "sartli"):
                 gerekce.append(f"9903 ön değerlendirmesi: {u9903.metin()}.")
             else:

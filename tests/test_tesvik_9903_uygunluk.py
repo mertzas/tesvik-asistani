@@ -34,10 +34,23 @@ def test_program_turu(baslik, program):
     assert program_turu(baslik) == program
 
 
-def test_ek3te_olmayan_konu_hedef_ve_oncelikliden_kesin_elenir():
+def test_ek3te_bolumu_hic_olmayan_konu_hedef_ve_oncelikliden_kesin_elenir():
+    """47 (perakende) EK-3'te hiç yok -> kesin uygun değil."""
     for p in ("hedef_yatirimlar", "oncelikli_yatirimlar"):
-        u = degerlendir(p, "10.71", "Konya", "kucuk")
+        u = degerlendir(p, "47.11", "Konya", "kucuk")
         assert u.durum == "uygun_degil" and "EK-3" in u.gerekce and "MADDE 5/1" in u.madde
+
+
+def test_ayni_bolumde_kalem_varsa_kesin_elenmez_kardes_kodlar_gosterilir():
+    """GERÇEK OLAY: Rev.2 '62.01' (bilgisayar programlama) EK-3'teki Rev.2.1 '62.1' ile
+    eşleşmeyip yazılım firmasını yanlış gerekçeyle eliyordu. Ekmek (10.71) için de EK-3'te
+    yalnızca kardeş kodlar var; karar teyide bırakılır, sıralamada en alta iner."""
+    for kod in ("62.01", "10.71"):
+        u = degerlendir("hedef_yatirimlar", kod, "Konya", "kucuk")
+        assert u.durum == "dusuk", kod
+        assert "Rev.2.1" in u.gerekce and "aynı bölümde" in u.gerekce
+    assert "62.1" in degerlendir("hedef_yatirimlar", "62.01", "Konya").gerekce
+    assert "10.72" in degerlendir("hedef_yatirimlar", "10.71", "Konya").gerekce
 
 
 def test_kalkinma_hamlesi_programlarinda_ek3_sarti_aranmaz():
@@ -110,7 +123,9 @@ def test_arama_9903_programlarini_profile_gore_siralar_ve_eler(db_session, monke
     monkeypatch.setattr(rag, "SessionLocal", sessionmaker(bind=db_session.get_bind()))
     _programlar(db_session)
     soru = "makine yatırımı için teşvik"
-    assert 180 not in [t.id for t in rag.retrieve(soru, 5, profil_kaydi=_profil("10.71"))]
+    assert 180 not in [t.id for t in rag.retrieve(soru, 5, profil_kaydi=_profil("47.11"))]
+    ekmek = [t.id for t in rag.retrieve(soru, 5, profil_kaydi=_profil("10.71"))]
+    assert 180 in ekmek, "10.71: elenmez ('düşük olasılık' ile gösterilir, kesin değil)"
     sirali = [t.id for t in rag.retrieve(soru, 5, profil_kaydi=_profil("26.11", 300, 5e9))]
     assert set(sirali) == {177, 179, 180}
     # elektronik (yüksek teknoloji, EK-3'te): Hedef "uygun", Teknoloji Hamlesi "şartlı"
@@ -148,7 +163,11 @@ def test_prompt_sistem_degerlendirmesini_kullanmayi_soyler():
 def test_esles_ek3_disindaki_konuya_hedef_yatirimlari_gostermez(db_session):
     _programlar(db_session)
     hedef_adi = "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
-    assert hedef_adi not in [s.tesvik.baslik for s in esles(_profil("10.71"), db_session)]
+    assert hedef_adi not in [s.tesvik.baslik for s in esles(_profil("47.11"), db_session)]
+    ekmek = {s.tesvik.baslik: s for s in esles(_profil("10.71"), db_session)}
+    assert any("DÜŞÜK OLASILIK" in e for e in ekmek[hedef_adi].eksik_kriterler)
+    makine = {s.tesvik.baslik: s for s in esles(_profil("28.93"), db_session)}
+    assert makine[hedef_adi].skor > ekmek[hedef_adi].skor, "ön değerlendirme sıralamaya yansımalı"
     sonuc = {s.tesvik.baslik: s for s in esles(_profil("28.93"), db_session)}
     assert any("9903 ön değerlendirmesi" in g for g in sonuc[hedef_adi].gerekce)
 
@@ -168,11 +187,12 @@ def test_elenen_9903_programlari_baglama_gerekceyle_girer(db_session, monkeypatc
     sorusuna 'bilgim yok' diyordu."""
     monkeypatch.setattr(rag, "SessionLocal", sessionmaker(bind=db_session.get_bind()))
     _programlar(db_session)
-    metin = rag.elenen_9903_metni("makine yatırımı için teşvik belgesi", _profil("10.71"))
+    metin = rag.elenen_9903_metni("makine yatırımı için teşvik belgesi", _profil("47.11"))
     assert "Hedef Yatırımlar" in metin and "UYGUN DEĞİL" in metin and "MADDE 5/1" in metin
     assert "yürürlükten kalkmıştır" in metin
     assert "Teknoloji Hamlesi" not in metin, "yalnızca elenenler listelenir"
     assert rag.elenen_9903_metni("makine yatırımı", _profil("28.93")) == ""
+    assert rag.elenen_9903_metni("makine yatırımı", _profil("10.71")) == "", "kesin elenmeyen program listelenmez"
     assert rag.elenen_9903_metni("ihracat desteği", _profil("10.71")) == "", "yatırım sorusu değil"
     assert rag.elenen_9903_metni("makine yatırımı", None) == ""
 
@@ -187,6 +207,6 @@ def test_elenen_blok_danisman_baglamina_eklenir(db_session, monkeypatch):
         return "yanıt"
 
     monkeypatch.setattr(rag, "_claude_cevap", sahte)
-    rag.answer("makine yatırımı için teşvik", {"sektör": "imalat"}, profil_kaydi=_profil("10.71"))
+    rag.answer("makine yatırımı için teşvik", {"sektör": "imalat"}, profil_kaydi=_profil("47.11"))
     assert "SİSTEMİN ELEDİĞİ 9903 PROGRAMLARI" in gorulen["baglam"]
     assert "SİSTEMİN ELEDİĞİ" in rag.SISTEM_PROMPTU

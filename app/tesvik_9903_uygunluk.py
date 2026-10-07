@@ -120,8 +120,21 @@ def _ek3_durumu(nace: str) -> tuple[str, str]:
     if alt:
         return "sartli", (f"NACE {n} geniş bir kod; EK-3'te yalnızca alt kolları var "
                           f"({', '.join(alt[:6])}{'...' if len(alt) > 6 else ''}); faaliyetiniz bunlardan biri olmalı")
+    # Aynı bölümde (2 hane) EK-3 kalemi varsa kesin "uygun değil" DENMEZ: EK-3 NACE
+    # Rev.2.1 kullanır, kullanıcı Rev.2 kodu girmiş olabilir (ölçüm 2026-10-07: Rev.2
+    # "62.01" bilgisayar programlama, EK-3'teki Rev.2.1 "62.1" ile eşleşmeyip yazılım
+    # firmasını yanlış gerekçeyle eliyordu). Kardeş kodlar gösterilir, karar kullanıcıya
+    # ve teyide bırakılır; sıralamada en alta iner ama gizlenmez.
+    kardesler = sorted({".".join(k["kod"].split(".")[:2]) for k in ek3_kayitlari()
+                        if _rakam(k["kod"])[:2] == _rakam(n)[:2]}, key=lambda x: _rakam(x))
+    if kardesler:
+        return "dusuk", (f"NACE {n} EK-3'te yok; aynı bölümde listelenen kodlar: "
+                         f"{', '.join(kardesler[:12])}{'...' if len(kardesler) > 12 else ''}. EK-3 NACE Rev.2.1 "
+                         "kullanır; kodunuz Rev.2 ise Rev.2.1 karşılığını (TÜİK dönüşüm tablosu) teyit edin, "
+                         "karşılığı listede yoksa bu programda yatırım konusu desteklenmez")
     return "uygun_degil", (f"NACE {n} EK-3'te ('Desteklerden faydalanabilecek sektörler ve şartlar') "
-                           "yer almıyor; bu programda yatırım konusu desteklenmez")
+                           f"yer almıyor; {n[:2]} numaralı bölümden hiçbir kalem listede yok, bu programda "
+                           "yatırım konusu desteklenmez")
 
 
 def degerlendir(program: str, nace: str | None, il: str | None = None,

@@ -2,9 +2,9 @@
 
 **Soru:** Restoranıma 3 kişi daha alacağım; 4447 sayılı Kanun işveren prim teşviki kaç ay sürer, şartları neler?
 
-**Bağlam:** 185 Kadın, Genç ve Mesleki Yeterlilik B, 186 İşsizlik Ödeneği Alanların İstihdam, 178 Yerel Kalkınma Hamlesi Programı (99, 137 KGF Özkaynak Kefalet Programı, 153 TURYIB Programı Destek Paketi, 125 2024 Dijital Dönüşüm Destek Paketi, 154 KGF Genel Destek Programı, 171 Ziraat Katılım Bankası Katılım Fina
+**Bağlam:** 185 Kadın, Genç ve Mesleki Yeterlilik B, 186 İşsizlik Ödeneği Alanların İstihdam, 178 Yerel Kalkınma Hamlesi Programı (99, 7 İstihdamı Koruma Destek Programı, 137 KGF Özkaynak Kefalet Programı, 153 TURYIB Programı Destek Paketi, 125 2024 Dijital Dönüşüm Destek Paketi, 154 KGF Genel Destek Programı
 
-**Ölçüm:** {"n": 11, "kayit": 185, "kayit_baslik": "Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanları", "hedef_baglamda": true, "girisim": false, "llm": true, "sure_sn": 0.0, "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)", "cevap_kar": 4748, "beklenen_bulunan": ["54 ay", "6 ay", "31.12.2026", "ilave"], "beklenen_eksik": [], "baglam_disi_sayilar": [], "bilgi_yok": 4, "kesildi": false}
+**Ölçüm:** {"n": 11, "kayit": 185, "kayit_baslik": "Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanları", "hedef_baglamda": true, "girisim": false, "llm": true, "sure_sn": 0.0, "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)", "cevap_kar": 4914, "beklenen_bulunan": ["54 ay", "6 ay", "31.12.2026", "ilave"], "beklenen_eksik": [], "baglam_disi_sayilar": [], "bilgi_yok": 4, "kesildi": false}
 
 ---
 
@@ -33,6 +33,8 @@
 - **Belgeler ve başvuru:** SGK e-Bildirge üzerinden teşvik kodu ile bildirim; ek 6 ay için İŞKUR kaydı. Başvuru sürekli. Kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
 
 **SGK / İŞKUR – İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5):** İşe alınan kişi işsizlik ödeneği alıyorsa uygulanabilir. **Destek tutarı ve süresi İŞKUR sayfasında yok**, bu yüzden süre veremem; SGK mevzuatından teyit edin. Şart: kişi, işten ayrıldığı işyerinde tekrar işe başlamamalı; prim belgeleri ve ödemeleri zamanında olmalı.
+
+**KOSGEB İstihdamı Koruma Destek Programı** (bağlamda): Kısım C – İmalat NACE'i şart; restoranınız (NACE 56.10) imalat dışı olduğu için bu program size uygun değil.
 
 **Eleme:** 9903 Yerel Kalkınma Hamlesi (sigorta primi işveren hissesi %50, 8 yıl, 5. bölge) bir yatırım teşvik belgesi programıdır; asgari sabit yatırım 6.000.000 TL'dir (MADDE 5). Restorana 3 kişi almak bu program için yeterli değil, öneri dışı. KGF kefalet ürünleri istihdam primi desteği değil, kredi kefaleti; sorunuzla ilgisiz.
 

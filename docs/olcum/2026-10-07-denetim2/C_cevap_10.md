@@ -2,9 +2,9 @@
 
 **Soru:** KOSGEB İstihdamı Koruma Destek Programı 2026-2 döneminde büyük işletme için kredi üst limiti ve başvuru tarihleri nedir?
 
-**Bağlam:** 142 İSTİHDAM KORUMA DESTEK PROGRAMI, 170 GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİ, 7 İstihdamı Koruma Destek Programı, 87 HALK BANKASI ŞAHIS İŞLETMELERİ DEST, 86 TOBB NEFES KREDİSİ 2026 DESTEK PROG, 2 Yapay Zekâ Kredi Programı, 185 Kadın, Genç ve Mesleki Yeterlilik B, 186 İşsizlik Ödeneği Alanların İstihdam
+**Bağlam:** 142 İSTİHDAM KORUMA DESTEK PROGRAMI, 7 İstihdamı Koruma Destek Programı, 170 GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİ, 87 HALK BANKASI ŞAHIS İŞLETMELERİ DEST, 86 TOBB NEFES KREDİSİ 2026 DESTEK PROG, 2 Yapay Zekâ Kredi Programı, 185 Kadın, Genç ve Mesleki Yeterlilik B, 186 İşsizlik Ödeneği Alanların İstihdam
 
-**Ölçüm:** {"n": 10, "kayit": 7, "kayit_baslik": "İstihdamı Koruma Destek Programı", "hedef_baglamda": true, "girisim": false, "llm": true, "sure_sn": 0.0, "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)", "cevap_kar": 4236, "beklenen_bulunan": ["150", "1 Eylül", "31 Ekim", "%37"], "beklenen_eksik": [], "baglam_disi_sayilar": [], "bilgi_yok": 4, "kesildi": false}
+**Ölçüm:** {"n": 10, "kayit": 7, "kayit_baslik": "İstihdamı Koruma Destek Programı", "hedef_baglamda": true, "girisim": false, "llm": true, "sure_sn": 0.0, "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)", "cevap_kar": 4414, "beklenen_bulunan": ["150", "1 Eylül", "31 Ekim", "%37"], "beklenen_eksik": [], "baglam_disi_sayilar": [], "bilgi_yok": 3, "kesildi": false}
 
 ---
 
@@ -14,28 +14,29 @@
 - Sorunuz iki ayrıntıyla ilgili (kredi üst limiti, başvuru tarihleri); diğer başlıkları kısa tutuyorum.
 
 ### 2. Eşleşen Teşvik ve Hibe Programları
-**KOSGEB İstihdamı Koruma Destek Programı** (kayıt: "Doğrulanmış, güncel/aktif program"; 2026-2 dönemi açık, doğrulama 2026-10-07)
-- **Başvuru tarihleri (2026-2 dönemi):** **1 Eylül – 31 Ekim 2026.** Dönem için "Finansman Desteği kapsamında başvurular alınacak" deniyor. Bugünden itibaren 31 Ekim'e az süre kaldı; başvuru yeri KOSGEB e-Hizmetler. Kaynak: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi
-- **Kredi üst limiti (kayıttan): büyük işletme için 150 Milyon TL** (KOBİ için 50 Milyon TL). Banka azami faiz/kâr payı **%37**, masraflar en fazla **%1**.
-- **Önemli sınır:** Kayıt ayrıca kredi tutarının, işletmenin **2025 yılı Kasım ve Aralık aylarındaki** muhtasar ve prim hizmet beyannamelerinde beyan edilen **işyeri bazında prime esas kazanç toplam tutarının aylık ortalamasını geçemeyeceğini** söylüyor. Yani 150 Milyon TL tavandır; fiili limitiniz bu hesaba göre bunun altında kalabilir. Bu aylık ortalamayı sizin kayıtlarınızdan hesaplamanız gerekir, bağlamda rakamı yok.
-- **Büyük işletme uygun mu:** Evet, kısmen. Kayıt, Kısım C – İmalat NACE'inde yer alan **KOBİ veya büyük işletmelerin** bankalardan kredi kullanabileceğini ve performans desteğinden KOBİ veya büyük işletmelerin yararlanabileceğini söylüyor. Bağlamdaki Destek Unsurları metni kesilmiş (NACE listesi "13-…" diye yarım kalıyor); **29.10 kodunun performans desteği NACE listesinde olup olmadığını sayfadan teyit edin.**
-- **Kefalet:** Kayıt, kredi kullanan **KOBİ'lerin** kefalet şirketlerinden kefalet kullanabileceğini söylüyor. Siz KOBİ olmadığınız için **KGF İstihdam Koruma Destek Programı kefaleti sizin için geçerli görünmüyor** (KGF kaydı "KOBİ'lere uygulanacak" diyor). Büyük işletme olarak teminat düzenini bankayla ayrıca kurmanız gerekir.
-
-**Tutarsızlık uyarısı:** Aynı kayıtta "Program son başvuru tarihi: 30 Nisan 2026" ve "kredi kullanımı 2026 Haziran sonuna kadar tek seferde" ifadeleri de geçiyor. Bunlar önceki dönem (2026-1) için görünüyor; 2026-2 dönemi için kredi kullanım süresi ve referans ay (2025 Kasım-Aralık) bağlamda ayrıca yazmıyor. **2026-2 için hangi tarihlerin geçerli olduğunu KOSGEB duyurusundan teyit edin.**
+**KOSGEB İstihdamı Koruma Destek Programı** (kayıt: "Doğrulanmış, güncel/aktif program"; 2026-2 dönemi açık; canlı sayfadan güncellendi, 2026-10-07)
+- **Başvuru tarihleri (2026-2 dönemi):** **1 Eylül – 31 Ekim 2026.** Dönem için Finansman Desteği kapsamında başvurular alınıyor. Bugünden itibaren 31 Ekim'e az süre kaldı. Kaynak: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi
+- **Kredi üst limiti: büyük işletmeler için 150 Milyon TL** (KOBİ'ler için 50 Milyon TL).
+- **Fiili limit bu tavandan düşük olabilir:** Kullanabileceğiniz kredi tutarı, işletmenin **2026 yılı Ocak-Haziran dönemine ait** muhtasar ve prim hizmet beyannamelerinde, destek kapsamındaki iş yerleri için beyan edilen prime esas kazanç toplamının **aylık ortalaması kadar** olabilir. Bu ortalama bağlamda yok; kendi beyannamelerinizden hesaplayın.
+- **Kredi koşulları (kayıttan):** Azami 6 ay anapara ödemesiz, azami 36 ay vade. Tüm bankalarda sabit faizli/kâr paylı kullandırılır; katılım bankaları hariç diğer bankalarda değişken faizli/kâr paylı da olabilir. Sabit faizde bankanın uygulayacağı azami oran **%37**, değişken faizde **TLREF+1**. Tahsis ve kullandırım ücretleri dahil komisyon kredinin **%1'ini geçemez.**
+- **Destek unsuru (kayıttan):** Kredi kullanan ve **2026 Ocak-Haziran dönemine ait ortalama aylık prim gün sayısını 2026 Temmuz-Aralık döneminde koruyan** KOBİ ve büyük işletmeler finansman desteğinden yararlanır. Destek, azami 6 ay ödemesiz ve 36 aya kadar vadeli kredi için **azami 12 destek puanına** karşılık gelen tutarla sınırlıdır; geri ödemesizdir ve **yalnızca vergi dairesi ve SGK prim borçlarının ödenmesinde** kullanılabilir.
+- **Büyük işletme uygun mu:** Evet. Kayıt, KOBİ ve büyük işletmelerin başvurabileceğini söylüyor; şart, Kısım C – İmalat NACE'i (siz 29.10'sunuz), güncel İşletme Beyanı ve TTK'da tanımlı gerçek veya tüzel kişi statüsü.
+- **Kefalet:** KGF'nin İstihdam Koruma Destek Programı kefaleti **KOBİ'lere** uygulanıyor; siz KOBİ olmadığınız için bu kefalet size geçerli görünmüyor. Büyük işletme olarak teminat düzenini bankayla kurmanız gerekir.
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **İstihdam koruma şartı:** Destek, 2025 Kasım ve Aralık aylarına ait ortalama prim gün sayısını 2026 yılında korumuş işletmelere performans veya finansman desteği olarak sağlanıyor. Prim gün sayınızı koruyup korumadığınız belirleyici.
-- **Ön koşullar:** İşletme Beyanının güncel olması; Türk Ticaret Kanunu'nda tanımlı gerçek veya tüzel kişi statüsü; merkez veya şube, ana veya yan faaliyet NACE kodunun Kısım C – İmalat altında olması.
-- **Kredi riski:** Kredi bankalar aracılığıyla kullanılır; teminat ve geri ödeme yükü olur (genel uyarı). Kredi koşulları bankalarla imzalanan protokolle belirlenir, bağlamda yok.
+- **Prim gün sayısını koruma:** Desteğin koşulu, 2026 Ocak-Haziran ortalama aylık prim gün sayınızı **2026 Temmuz-Aralık döneminde** korumanızdır. Bu dönemde işten çıkarma veya prim gün sayısında düşüş desteği riske sokar.
+- **Destek kullanım sınırı:** Geri ödemesiz destek tutarı yalnızca vergi ve SGK prim borçlarını ödemek için kullanılabilir; borcunuz yoksa bu kalemin işlevi sınırlı olabilir (kayıttan çıkarım, teyit edin).
+- **Ön koşullar:** İşletme Beyanının güncel olması; merkez veya şube, ana veya yan faaliyet NACE'inin Kısım C – İmalat altında olması.
+- **Kredi riski:** Kredi bankalar aracılığıyla kullanılır; teminat ve geri ödeme yükü olur (genel uyarı). Bağlamda banka listesi yok; program sayfasından banka listesini görün.
 
 ### 4. Adım Adım Yol Haritası
-1. KOSGEB sayfasından 2026-2 dönemi duyurusunu ve tam başvuru şartlarını okuyun: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi
-2. İşletme Beyanınızı güncelleyin; 2025 Kasım-Aralık muhtasar ve prim hizmet beyannamelerini ve 2026 prim gün sayılarınızı hazırlayın.
+1. KOSGEB sayfasından 2026-2 dönemi mevzuatını (Uygulama Yönetmeliği ve ilgili yönerge) ve banka listesini okuyun: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi
+2. İşletme Beyanınızı güncelleyin; 2026 Ocak-Haziran muhtasar ve prim hizmet beyannamelerinden prime esas kazanç aylık ortalamanızı hesaplayın.
 3. Başvuruyu **31 Ekim 2026'dan önce** KOSGEB e-Hizmetler üzerinden yapın.
 4. Bursa'da: KOSGEB Bursa Müdürlüğü 0 (224) 275 77 70, bursa@kosgeb.gov.tr (doğrulama: 2026-07-12, kaynak: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=16); çağrı merkezi 444 1 567. Değerlendirme süresi bağlamda yok, tahmin etmiyorum.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-- 2025 Kasım-Aralık prim hizmet beyannamelerine göre işyeri bazında prime esas kazanç aylık ortalamanız nedir? (Kredi limiti buna bağlı.)
-- Kısım C dışındaki bir NACE'niz de var mı, ve prim gün sayınızı 2026'da koruyor musunuz?
-- İşletme Beyanınız güncel mi?
-- Hangi banka(lar)la çalışıyorsunuz?
+- 2026 Ocak-Haziran prim hizmet beyannamelerine göre işyeri bazında prime esas kazanç aylık ortalamanız nedir?
+- Ocak-Haziran 2026 ortalama prim gün sayınız nedir ve Temmuz-Aralık'ta bunu koruyabilecek misiniz?
+- İşletme Beyanınız güncel mi, hangi bankalarla çalışıyorsunuz?
+- Vergi veya SGK prim borcunuz var mı? (Geri ödemesiz destek yalnızca bu borçlara gider.)

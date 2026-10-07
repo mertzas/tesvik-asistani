@@ -88,7 +88,7 @@
   "llm": true,
   "sure_sn": 0.0,
   "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
-  "cevap_kar": 5938,
+  "cevap_kar": 6274,
   "beklenen_bulunan": [
    "4.000.000",
    "36 ay",
@@ -199,7 +199,7 @@
   "llm": true,
   "sure_sn": 0.0,
   "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
-  "cevap_kar": 2555,
+  "cevap_kar": 3848,
   "beklenen_bulunan": [
    "500.000",
    "5.000.000",
@@ -208,10 +208,9 @@
   ],
   "beklenen_eksik": [],
   "baglam_disi_sayilar": [
-   "20milyon",
-   "500.000TL"
+   "20milyon"
   ],
-  "bilgi_yok": 7,
+  "bilgi_yok": 6,
   "kesildi": false
  },
  {
@@ -224,7 +223,7 @@
   "llm": true,
   "sure_sn": 0.0,
   "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
-  "cevap_kar": 4236,
+  "cevap_kar": 4414,
   "beklenen_bulunan": [
    "150",
    "1 Eylül",
@@ -233,7 +232,7 @@
   ],
   "beklenen_eksik": [],
   "baglam_disi_sayilar": [],
-  "bilgi_yok": 4,
+  "bilgi_yok": 3,
   "kesildi": false
  },
  {
@@ -246,7 +245,7 @@
   "llm": true,
   "sure_sn": 0.0,
   "kaynak": "oturum içi model (API bakiyesi yok; aynı prompt+bağlam)",
-  "cevap_kar": 4748,
+  "cevap_kar": 4914,
   "beklenen_bulunan": [
    "54 ay",
    "6 ay",

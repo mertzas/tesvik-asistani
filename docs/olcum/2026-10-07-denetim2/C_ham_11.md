@@ -24,6 +24,8 @@
 
 **SGK / İŞKUR – İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5):** İşe alınan kişi işsizlik ödeneği alıyorsa uygulanabilir. **Destek tutarı ve süresi İŞKUR sayfasında yok**, bu yüzden süre veremem; SGK mevzuatından teyit edin. Şart: kişi, işten ayrıldığı işyerinde tekrar işe başlamamalı; prim belgeleri ve ödemeleri zamanında olmalı.
 
+**KOSGEB İstihdamı Koruma Destek Programı** (bağlamda): Kısım C – İmalat NACE'i şart; restoranınız (NACE 56.10) imalat dışı olduğu için bu program size uygun değil.
+
 **Eleme:** 9903 Yerel Kalkınma Hamlesi (sigorta primi işveren hissesi %50, 8 yıl, 5. bölge) bir yatırım teşvik belgesi programıdır; asgari sabit yatırım 6.000.000 TL'dir (MADDE 5). Restorana 3 kişi almak bu program için yeterli değil, öneri dışı. KGF kefalet ürünleri istihdam primi desteği değil, kredi kefaleti; sorunuzla ilgisiz.
 
 ### 3. Darboğazlar ve Kritik Şartlar

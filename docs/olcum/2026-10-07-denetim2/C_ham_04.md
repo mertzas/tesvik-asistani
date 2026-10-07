@@ -27,6 +27,7 @@
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Önde gelen şart:** Türk ve Eurostars üyesi ülkeden en az bir ortak. Eurostars yenilikçi KOBİ'lerin öncülüğüne yönelik; **projeyi sizin (KOBİ) yürütücü olarak yönetmeniz** beklenir. Bu ayrıntı kayıtta açık yazmıyor, teyit edin.
+- **Yürütücü ve personel şartları (kayıttan):** Sermaye şirketi Yürütücü Kuruluş (Muhatap Kuruluş) olmalı; her sermaye şirketinde proje konusuyla ilgili **en az lisans dereceli en az bir proje personeli** bulunmalı. Aynı uluslararası projedeki Türk ortaklar **tek bir** ulusal ön proje başvurusu yapmalı; ayrı başvurular kabul edilmez.
 - **İki aşamalı ulusal süreç:** Önce PRODİS'te kuruluş bazlı ön kayıt ve ön proje başvurusu, ardından ulusal ön uygunluk incelemesi (teknik ve finansal uygunluk). Uygun bulunanlar uluslararası değerlendirmeye geçer. **Ulusal uygunluk, uluslararası kabulü garanti etmez.**
 - **Bütçe tavanı:** Türk tarafı için sınırlar yukarıda; Alman ortak bütçesi ayrıca Alman fonlayıcısına tabidir (bağlamda yok, genel bilgi; teyit edin).
 - **Hibe, harcama bazlıdır:** Destek yalnızca "uygun bulunan proje harcamalarına" uygulanır; kalan %25'i siz karşılarsınız. Harcama belgelendirme, dönem raporlaması ve denetim yükü olur (genel uyarı, rakam yok).

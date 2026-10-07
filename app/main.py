@@ -1,6 +1,7 @@
 import json
 import logging
 import os
+import uuid
 from datetime import datetime, timezone
 from typing import List
 
@@ -14,6 +15,7 @@ from fastapi import Query as SorguParam
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import FileResponse, JSONResponse, StreamingResponse
 from fastapi.staticfiles import StaticFiles
+from sqlalchemy.exc import OperationalError
 from sqlalchemy.orm import Session
 
 from app.models import (init_db, get_db, Organization, User, Query, FinancialProfile, PlanType,
@@ -159,6 +161,40 @@ async def guvenlik_basliklari(request: Request, call_next):
             and not request.url.path.startswith(CSP_MUAF_YOLLAR)):
         response.headers.setdefault("Content-Security-Policy", CSP)
     return response
+
+DB_MESGUL_YANITI = {"detail": "Veritabanı şu anda meşgul. Lütfen birkaç saniye sonra tekrar deneyin."}
+
+
+def _hata_kimligi() -> str:
+    return uuid.uuid4().hex[:12]
+
+
+@app.exception_handler(OperationalError)
+async def veritabani_hatasi(request: Request, exc: OperationalError):
+    """SQLite kilidi (yazan bir scraper ile çakışma) düz metin 500 "Internal Server Error" yerine JSON 503 +
+    Retry-After döner (Denetim 2 / Aşama D bulgusu). Başka işletim hataları JSON 500 + hata kimliği."""
+    ham = str(getattr(exc, "orig", exc)).lower()
+    if "locked" in ham or "busy" in ham:
+        logger.warning("Veritabanı kilitli: %s %s", request.method, request.url.path)
+        return JSONResponse(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, content=DB_MESGUL_YANITI,
+                            headers={"Retry-After": "5"})
+    kimlik = _hata_kimligi()
+    logger.error("Veritabanı hatası [%s] %s %s: %s", kimlik, request.method, request.url.path, exc)
+    return JSONResponse(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                        content={"detail": "Veritabanı hatası oluştu.", "hata_kimligi": kimlik})
+
+
+@app.exception_handler(Exception)
+async def beklenmeyen_hata(request: Request, exc: Exception):
+    """Yakalanmamış her hata: kullanıcıya JSON + kısa hata kimliği, günlüğe aynı kimlikle tam yığın. Destek
+    talebindeki kimlik günlükte doğrudan aranabilir (harici hata izleme servisi bağlanana kadar asgari iz)."""
+    kimlik = _hata_kimligi()
+    logger.error("Beklenmeyen hata [%s] %s %s", kimlik, request.method, request.url.path,
+                 exc_info=(type(exc), exc, exc.__traceback__))
+    return JSONResponse(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                        content={"detail": "Beklenmeyen bir hata oluştu. Sorun sürerse bu kimlikle bize ulaşın: "
+                                           f"{kimlik}", "hata_kimligi": kimlik})
+
 
 # Include admin routes
 app.include_router(admin_router)

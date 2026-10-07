@@ -186,6 +186,11 @@ def _olc(db: Session, tanim: KaynakTanimi) -> Tazelik:
         en_son = db.query(func.max(sutun)).scalar()
         sayi = db.query(func.count()).select_from(tanim.model).scalar() or 0
     except Exception as e:
+        # Kilitli/meşgul veritabanı "veri yok" DEĞİLDİR: yutulursa kullanıcıya yanlış "hiç veri yok" denir
+        # (2026-10-08). Yukarı iletilir; app.main işleyicisi JSON 503 + Retry-After döner.
+        ham = str(getattr(e, "orig", e)).lower()
+        if "database is locked" in ham or "database is busy" in ham:
+            raise
         # Tablo henuz goc edilmemis olabilir; rapor tek bir kaynak yuzunden
         # tamamen patlamamali.
         logger.warning("Tazelik olculemedi (%s): %s: %s", tanim.anahtar, type(e).__name__, e)

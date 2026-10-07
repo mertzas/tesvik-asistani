@@ -1,0 +1,264 @@
+[
+ {
+  "n": 1,
+  "persona": "ciftci",
+  "kayit": 78,
+  "kayit_baslik": "Kırsal Kalkınma Yatırım Programı (KKYP) – Tarımsal",
+  "hedef_baglamda": true,
+  "girisim": false,
+  "llm": true,
+  "sure_sn": 38.7,
+  "api_sure_sn": 38.5,
+  "stop": "end_turn",
+  "giris_token": 11502,
+  "cikis_token": 3152,
+  "cevap_kar": 4849,
+  "beklenen_bulunan": [
+   "%50",
+   "%70",
+   "30.000.000",
+   "100.000",
+   "traktör"
+  ],
+  "beklenen_eksik": [],
+  "baglam_disi_sayilar": [
+   "%30"
+  ],
+  "bilgi_yok": 2,
+  "kesildi": false
+ },
+ {
+  "n": 2,
+  "persona": "ciftci",
+  "kayit": 80,
+  "kayit_baslik": "Tasarruflu Tarımsal Sulama Sistemleri (TSS) Hibe D",
+  "hedef_baglamda": true,
+  "girisim": false,
+  "llm": true,
+  "sure_sn": 35.8,
+  "api_sure_sn": 35.7,
+  "stop": "end_turn",
+  "giris_token": 10986,
+  "cikis_token": 2982,
+  "cevap_kar": 4603,
+  "beklenen_bulunan": [
+   "%50",
+   "%70",
+   "10.000.000",
+   "2026"
+  ],
+  "beklenen_eksik": [],
+  "baglam_disi_sayilar": [
+   "70ay"
+  ],
+  "bilgi_yok": 3,
+  "kesildi": false
+ },
+ {
+  "n": 3,
+  "persona": "tekstil",
+  "kayit": 44,
+  "kayit_baslik": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Program",
+  "hedef_baglamda": true,
+  "girisim": false,
+  "llm": true,
+  "sure_sn": 26.0,
+  "api_sure_sn": 25.9,
+  "stop": "end_turn",
+  "giris_token": 19736,
+  "cikis_token": 2048,
+  "cevap_kar": 3613,
+  "beklenen_bulunan": [
+   "3.500.000",
+   "%75",
+   "2026"
+  ],
+  "beklenen_eksik": [],
+  "baglam_disi_sayilar": [],
+  "bilgi_yok": 4,
+  "kesildi": false
+ },
+ {
+  "n": 4,
+  "persona": "tekstil",
+  "kayit": 48,
+  "kayit_baslik": "1709 – EUREKA-EUROSTARS",
+  "hedef_baglamda": true,
+  "girisim": false,
+  "llm": false,
+  "sure_sn": 10.6,
+  "cevap_kar": 3497,
+  "beklenen_bulunan": [],
+  "beklenen_eksik": [
+   "4.000.000",
+   "36 ay",
+   "2026/2"
+  ],
+  "baglam_disi_sayilar": [],
+  "bilgi_yok": 0,
+  "kesildi": false
+ },
+ {
+  "n": 5,
+  "persona": "girisim",
+  "kayit": 174,
+  "kayit_baslik": "1512 - Girişimcilik Destek Programı (BiGG - Bireys",
+  "hedef_baglamda": true,
+  "girisim": true,
+  "llm": false,
+  "sure_sn": 0.6,
+  "cevap_kar": 3140,
+  "beklenen_bulunan": [],
+  "beklenen_eksik": [
+   "1.350.000",
+   "600.000",
+   "ortaklık"
+  ],
+  "baglam_disi_sayilar": [],
+  "bilgi_yok": 0,
+  "kesildi": false
+ },
+ {
+  "n": 6,
+  "persona": "girisim",
+  "kayit": 1,
+  "kayit_baslik": "Girişimci Destek Programı",
+  "hedef_baglamda": false,
+  "girisim": true,
+  "llm": false,
+  "sure_sn": 0.4,
+  "cevap_kar": 966,
+  "beklenen_bulunan": [],
+  "beklenen_eksik": [
+   "işletme",
+   "KOSGEB"
+  ],
+  "baglam_disi_sayilar": [],
+  "bilgi_yok": 0,
+  "kesildi": false
+ },
+ {
+  "n": 7,
+  "persona": "otel",
+  "kayit": 180,
+  "kayit_baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar",
+  "hedef_baglamda": true,
+  "girisim": false,
+  "llm": false,
+  "sure_sn": 0.4,
+  "cevap_kar": 3386,
+  "beklenen_bulunan": [],
+  "beklenen_eksik": [
+   "12 yıl",
+   "%100",
+   "6.000.000",
+   "MADDE 18"
+  ],
+  "baglam_disi_sayilar": [],
+  "bilgi_yok": 0,
+  "kesildi": false
+ },
+ {
+  "n": 8,
+  "persona": "eticaret",
+  "kayit": 163,
+  "kayit_baslik": "Pazara Girişte Dijital Faaliyetlerin Desteklenmesi",
+  "hedef_baglamda": true,
+  "girisim": false,
+  "llm": false,
+  "sure_sn": 0.4,
+  "cevap_kar": 3159,
+  "beklenen_bulunan": [],
+  "beklenen_eksik": [
+   "5973",
+   "2573",
+   "mülga"
+  ],
+  "baglam_disi_sayilar": [],
+  "bilgi_yok": 0,
+  "kesildi": false
+ },
+ {
+  "n": 9,
+  "persona": "saas",
+  "kayit": 2,
+  "kayit_baslik": "Yapay Zekâ Kredi Programı",
+  "hedef_baglamda": true,
+  "girisim": false,
+  "llm": false,
+  "sure_sn": 0.4,
+  "cevap_kar": 3491,
+  "beklenen_bulunan": [],
+  "beklenen_eksik": [
+   "500.000",
+   "5.000.000",
+   "24 ay",
+   "12 ay"
+  ],
+  "baglam_disi_sayilar": [],
+  "bilgi_yok": 0,
+  "kesildi": false
+ },
+ {
+  "n": 10,
+  "persona": "buyuk",
+  "kayit": 7,
+  "kayit_baslik": "İstihdamı Koruma Destek Programı",
+  "hedef_baglamda": true,
+  "girisim": false,
+  "llm": false,
+  "sure_sn": 0.4,
+  "cevap_kar": 3409,
+  "beklenen_bulunan": [],
+  "beklenen_eksik": [
+   "150",
+   "1 Eylül",
+   "31 Ekim",
+   "%37"
+  ],
+  "baglam_disi_sayilar": [],
+  "bilgi_yok": 0,
+  "kesildi": false
+ },
+ {
+  "n": 11,
+  "persona": "restoran",
+  "kayit": 185,
+  "kayit_baslik": "Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanları",
+  "hedef_baglamda": true,
+  "girisim": false,
+  "llm": false,
+  "sure_sn": 0.3,
+  "cevap_kar": 3406,
+  "beklenen_bulunan": [
+   "31.12.2026",
+   "ilave"
+  ],
+  "beklenen_eksik": [
+   "54 ay",
+   "6 ay"
+  ],
+  "baglam_disi_sayilar": [],
+  "bilgi_yok": 0,
+  "kesildi": false
+ },
+ {
+  "n": 12,
+  "persona": "hatay_nacesiz",
+  "kayit": 86,
+  "kayit_baslik": "TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI",
+  "hedef_baglamda": true,
+  "girisim": false,
+  "llm": false,
+  "sure_sn": 0.4,
+  "cevap_kar": 3500,
+  "beklenen_bulunan": [],
+  "beklenen_eksik": [
+   "3.000.000",
+   "2.400.000"
+  ],
+  "baglam_disi_sayilar": [],
+  "bilgi_yok": 0,
+  "kesildi": false
+ }
+]

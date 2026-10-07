@@ -23,9 +23,17 @@ Son güncelleme: 2026-10-07 (Denetim 2 / Aşama B sonu). Oturuma bunu okuyarak b
 - Girişim modu: şirket yok | TRL ≤ 6 | şirket ≤ 3 yaş | soru dili. JWT 7 gün.
 - Kökteki `tesvik.db` 0 baytlık artık dosya; gerçek DB `data/tesvikler.db`.
 
+- **Denetim 2 / Aşama C** (YARIM): `C_olcum.py` 12 soru koştu; ilk 3 çağrı gerçek Claude (ciftci×2, tekstil 1507),
+  4. çağrıda Anthropic API **kredi bakiyesi bitti** (400 "credit balance is too low") → 9 soru liste formatına düştü
+  (`C_log.txt`, `C_ozet.json`). 3 gerçek yanıtta beklenen rakamlar 12/12 bulundu; bağlam dışı işaretlenen "%30" ve
+  "70 ay" türetilmiş/regex artefaktı (uydurma 0); "teyit edin / elimde yok" ifadesi 2-4 adet/yanıt (doğru davranış).
+  Kesme işareti düzeltmesiyle 1709 Eurostars kaydı bağlama giriyor (Q4 `hedef_baglamda=True`).
+
 ## Sıradaki adım
-- **Aşama C**: danışman yanıt kalitesi — 10 doğrulanmış soru (persona başına gerçek Claude çağrısı, ~1 USD, çıktı
-  `docs/olcum/2026-10-07-denetim2/C_*.md`), her sayısal iddia kaynak sayfayla işaretlenir. Onay bekliyor.
+- **Aşama C tamamlama**: Anthropic bakiyesi yüklendikten sonra kalan 9 soru:
+  `for n in 4..12: PYTHONIOENCODING=utf-8 PYTHONPATH=. python docs/olcum/2026-10-07-denetim2/C_olcum.py $n` (~0,9 USD;
+  C_ozet.json'da n'ye göre yerine yazılır). Ardından girişim modu (Q5, Q6) BÖLÜM formatı + "işletme gerekir" kontrolü.
+- **Aşama D** betiği hazır (`D_olcum.py`: `eszamanli` ücretsiz, `yuk` ücretsiz, `akis N` ücretli) — henüz koşulmadı.
 - Aşama D (performans/dayanıklılık), E (CSP, parola sıfırlama, İKAS imza, KVKK alanları, cilek/index XSS), F (kapanış).
 - Açık: 76 hayvancılık tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 10 kararsız akademik kayıt,
   bütçe modülünde tek sektör kâr oranı (%5,8), profil düğmeleri stilsiz, kayıt sonrası onboarding yok.

@@ -130,3 +130,41 @@ def test_soru_ihtiyaclari(soru, beklenen, beklenmeyen):
         assert beklenen in ihtiyac, ihtiyac
     if beklenmeyen:
         assert beklenmeyen not in ihtiyac, ihtiyac
+
+
+# ---------------------------------------------------------------- 7. KOSGEB onayına bağlı KGF paketleri
+@pytest.fixture
+def kapasite_db(db_session):
+    from app.models import TesvikNace
+    db_session.add_all([
+        _t(8, "KOSGEB", "Kapasite Geliştirme Destek Programı", ["imalat", "arge"]),
+        _t(81, "KGF", "KAPASİTE GELİŞTİRME DESTEK PAKETİ", ["imalat", "arge"],
+           ozet="KOSGEB tarafından desteklenmesi uygun bulunan KOBİ’lerin ölçek büyütme yatırımlarına finansman desteği"),
+        _t(90, "KGF", "YATIRIM-İŞLETME DESTEK PAKETİ", ["imalat"], ozet="İmalatçı KOBİ’lerin yatırım harcamalarına finansman"),
+    ])
+    db_session.flush()
+    for tid in (8, 81):
+        for p in ("C", "62"):
+            db_session.add(TesvikNace(tesvik_id=tid, nace_prefix=p, kaynak="test"))
+    db_session.commit()
+    return db_session
+
+
+def test_kosgeb_onayina_bagli_paket_asil_programin_arkasinda(kapasite_db):
+    p = FinancialProfile(sektor="imalat", bolge="Bursa", calisan_sayisi=18, yillik_ciro=32e6, nace_kodu="25.62",
+                         sirket_turu="limited", hedefler=["yatirim", "ihracat"])
+    es = esles(p, kapasite_db)
+    sira = {e.tesvik.id: i for i, e in enumerate(es)}
+    assert sira[8] < sira[81], [(e.tesvik.id, e.skor) for e in es]
+    paket = next(e for e in es if e.tesvik.id == 81)
+    assert any("KOSGEB programına kabul" in x for x in paket.eksik_kriterler)
+    bagimsiz = next(e for e in es if e.tesvik.id == 90)
+    assert not any("KOSGEB programına kabul" in x for x in bagimsiz.eksik_kriterler), "bağımsız KGF paketi cezalanmaz"
+
+
+def test_ceza_tavandan_sonra_uygulanir(kapasite_db):
+    """Ham skor 1,0'ı aşsa bile bağımlı paket asıl programla eşitlenmez."""
+    p = FinancialProfile(sektor="imalat", calisan_sayisi=18, yillik_ciro=32e6, nace_kodu="25.62",
+                         sirket_turu="limited", hedefler=["yatirim"])
+    skor = {e.tesvik.id: e.skor for e in esles(p, kapasite_db)}
+    assert skor[81] == pytest.approx(skor[8] - 0.05)

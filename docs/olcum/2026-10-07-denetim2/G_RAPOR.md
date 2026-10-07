@@ -27,8 +27,10 @@ Düzeltilen yanlış tespitim: bütçe modülü "her sektöre aynı %5,8" kullan
 ## Veri düzeltmesi — UYGULANDI (2026-10-07; yedek `tesvikler_oncesi_tur4.db.bak`, git dışı; ikinci çalıştırma 0 kayıt)
 `scripts/fix_veri_2026_10_07_denetim2_tur4.py`: kayıt 8, 81 (Kapasite Geliştirme: NACE C, 61, 62, 63, 72) ve 7, 142 (İstihdamı Koruma: NACE C) "genel" sektörlü ve NACE kapsamsızdı; otele ve çiftçiye öneriliyor, imalatçıda sektör puanı alamıyordu. Gerçek DB'de sonuç: Bursa metal KOBİ'sinde Kapasite Geliştirme 2., KGF paketi 1., İstihdamı Koruma 6., KGF İstihdam 5.; otel, tahıl üreticisi ve Hatay restoranında dördü de listede yok.
 
+## Ek: KOSGEB onayına bağlı KGF paketleri (eklendi)
+6 KGF paketi (81, 107, 118, 125, 142, 170) KOSGEB programına kabul şartına bağlı; eşit skorda asıl programın önüne geçiyordu. Bunlara 1,0 tavanından sonra 0,05 sıralama cezası ve "önce KOSGEB programına başvurun" notu eklendi. Sonuç: Bursa metal KOBİ'sinde KOSGEB Kapasite Geliştirme 1., KGF paketi 3.; ekmek üreticisinde İstihdamı Koruma (7) KGF paketinin (142) önünde. Test 812.
+
 ## Açık kalanlar
-- KGF'nin Kapasite Geliştirme kefalet paketi (81), asıl KOSGEB programının (8) önüne geçiyor (eşit skor); paket ancak KOSGEB onayından sonra kullanılır. Bağımlı paketlere küçük sıralama cezası düşünülebilir.
 - Organik Tarım, tahıl üreticisinde hâlâ listede (kasıtlı: "geniş" program, sertifikayla her üretici başvurabilir) ama artık tahmini tutarsız.
 - Puanlar sık sık 1,0'da doyuyor; sıralama eşitlik bozucuya (ince skor) kalıyor.
 - KOSGEB programlarının tarıma (NACE A) genel olarak kapalı olup olmadığı kaynaktan teyit edilmedi; Girişimci programı kuruluş tarihi bilinmeyen çiftçide hâlâ görünür.

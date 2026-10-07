@@ -197,6 +197,25 @@ def _isletme_yas_siniri(metin: str) -> float | None:
     return max(sinirlar) if sinirlar else None
 
 
+# KOSGEB programına kabul edilmeye BAĞLI KGF kefalet paketleri (Kapasite Geliştirme, Küresel Rekabetçilik,
+# Dijital Dönüşüm, Girişimci kredi faizi, İstihdam Koruma, KOSGEB geri ödemeli destekler). Bunlar ayrı bir
+# seçenek değil, KOSGEB onayından sonra kullanılan finansman ayağıdır; eşit skorda asıl programın önüne
+# geçiyorlardı (2026-10-07: Bursa metal KOBİ'sinde KGF Kapasite paketi 1., KOSGEB Kapasite Geliştirme 2.).
+_KOSGEB_BAGIMLI = re.compile(
+    r"KOSGEB tarafından[^.]{0,60}(?:onaylan|uygun bulunan)|KOSGEB[^.]{0,60}hak kazanan|"
+    r"KOSGEB’den destek ödemesi almaya|Destek Programı kapsamında kullandırılacak kredi", re.IGNORECASE)
+KOSGEB_BAGIMLI_CEZA = 0.05
+KOSGEB_BAGIMLI_NOTU = ("Bu KGF paketi, ilgili KOSGEB programına kabul edildikten sonra kullanılabilir; "
+                       "önce KOSGEB programına başvurun.")
+
+
+def _kosgeb_onayina_bagli_mi(t) -> bool:
+    if (t.kurum or "").strip() != "KGF":
+        return False
+    metin = " ".join([t.ozet or "", " ".join(t.basvuru_sartlari or []), (t.detay or "")[:2000]])
+    return bool(_KOSGEB_BAGIMLI.search(metin))
+
+
 # Profildeki tarım hedefi -> kaydın tarım alt kategorisi.
 HEDEF_TARIM_KATEGORISI = {"makine": "makinelestirme", "sulama": "sulama", "hayvan": "hayvancilik",
                           "organik": "organik"}
@@ -476,8 +495,14 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
         else:
             eksik.append("Calisan sayinizi girerseniz eslesme dogrulugu artar.")
 
+        # Ceza 1,0 tavanından SONRA düşülür: tavan öncesi düşülse 1,3 -> 1,25 -> 1,0 olur, etkisi kalmaz.
+        ceza = 0.0
+        if _kosgeb_onayina_bagli_mi(t):
+            ceza = KOSGEB_BAGIMLI_CEZA
+            eksik.append(KOSGEB_BAGIMLI_NOTU)
+
         sonuclar.append(TesvikEslesmeSonucu(
-            tesvik=t, skor=round(max(min(skor, 1.0), 0.0), 2), gerekce=gerekce, eksik_kriterler=eksik,
+            tesvik=t, skor=round(max(min(skor, 1.0) - ceza, 0.0), 2), gerekce=gerekce, eksik_kriterler=eksik,
             ince_skor=score_program(sirket, program).total_score))
 
     # Skor esitliginde veritabani ekleme sirasina (id) gore rastgele/anlamsiz

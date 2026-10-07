@@ -243,7 +243,9 @@ def _hedef_eslesmeleri(t, hedefler: set[str], alt_kategori: str | None) -> list[
     Program ihtiyaçları ortak sınıflandırıcıdan (app.ihtiyac.program_ihtiyaclari) gelir; tarım
     hedefleri kaydın alt kategorisiyle ya da aksansız başlık/özet metniyle eşleşir."""
     ihtiyac = program_ihtiyaclari(t)
-    metin = _sadelestir(f"{t.baslik} {t.ozet}")
+    # Yalnızca BAŞLIK: kazınmış kayıtların özet alanında site menüsü duruyor ("İhracat Destek Paketi",
+    # "İstihdamı Koruma..."); özette aramak her KGF/KOSGEB kaydını ihracat/istihdam hedefiyle eşleştiriyordu.
+    metin = _sadelestir(t.baslik or "")
     sonuc = []
     for h in sorted(hedefler):
         if h in ihtiyac:

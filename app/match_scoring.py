@@ -120,6 +120,9 @@ class IncentiveProgram(BaseModel):
     max_scale: Literal["mikro", "kucuk", "orta"] | None = Field(
         None, description="Programa başvurabilecek EN BÜYÜK ölçek; 'orta' = KOBİ vasfı şart "
                           "(7 Ağustos 2025 KOBİ tanımı, bkz. app/kobi.py)")
+    min_scale: Literal["kucuk", "orta", "buyuk"] | None = Field(
+        None, description="Programa başvurabilecek EN KÜÇÜK ölçek; 'kucuk' = mikro işletme kapalı "
+                          "(ör. KOSGEB Dijital Dönüşüm ve Kapasite Geliştirme: 'küçük veya orta büyüklükte')")
 
     # Puanlama girdileri
     priority_provinces: list[str] = Field(default_factory=list)
@@ -215,6 +218,16 @@ def hard_filter(profile: CompanyProfile, program: IncentiveProgram, *,
             if olcek.kesin:
                 sebepler.append(f"ölçek uygun değil: {olcek.aciklama}; program en çok "
                                 f"'{program.max_scale}' ölçeğine açık")
+            else:
+                dogrulanamayan.append(f"ölçek ({olcek.aciklama})")
+    if program.min_scale is not None:
+        olcek = kobi_sinifi(profile.employees, profile.annual_revenue)
+        if olcek.sinif is None:
+            dogrulanamayan.append("ölçek (KOBİ sınıfı belirlenemedi: çalışan/ciro eksik)")
+        elif OLCEK_SIRASI[olcek.sinif] < OLCEK_SIRASI[program.min_scale]:
+            if olcek.kesin:
+                sebepler.append(f"ölçek uygun değil: {olcek.aciklama}; program en az "
+                                f"'{program.min_scale}' ölçeğine açık")
             else:
                 dogrulanamayan.append(f"ölçek ({olcek.aciklama})")
 

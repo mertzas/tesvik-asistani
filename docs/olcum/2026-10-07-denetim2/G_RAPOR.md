@@ -30,6 +30,14 @@ Düzeltilen yanlış tespitim: bütçe modülü "her sektöre aynı %5,8" kullan
 ## Ek: KOSGEB onayına bağlı KGF paketleri (eklendi)
 6 KGF paketi (81, 107, 118, 125, 142, 170) KOSGEB programına kabul şartına bağlı; eşit skorda asıl programın önüne geçiyordu. Bunlara 1,0 tavanından sonra 0,05 sıralama cezası ve "önce KOSGEB programına başvurun" notu eklendi. Sonuç: Bursa metal KOBİ'sinde KOSGEB Kapasite Geliştirme 1., KGF paketi 3.; ekmek üreticisinde İstihdamı Koruma (7) KGF paketinin (142) önünde. Test 812.
 
+## Ek 2: Dijital Dönüşüm, Küresel Rekabetçilik, alt ölçek (Tur 5, uygulandı)
+Kaynaklar 2026-10-07 Chrome ile okundu. `scripts/fix_veri_2026_10_07_denetim2_tur5.py --uygula` (6 kayıt; yedek `tesvikler_oncesi_tur5.db.bak`, git dışı; ikinci çalıştırma 0).
+- KOSGEB Dijital Dönüşüm (3) ve KGF paketi (125): NACE C, küçük/orta ölçek (sayfa: "C-İmalat ... küçük veya orta büyüklükte").
+- KOSGEB Küresel Rekabetçilik (9) ve KGF paketi (107): sayfada NACE sınırı YOK; şart ihracat/Ar-Ge artışı, yüksek teknoloji veya Turcorn 100. NACE uydurulmadı, ihtiyaç etiketi (ihracat, arge) verildi; 107'ye KOBİ (en çok orta).
+- Kapasite Geliştirme (8, 81): mikro kapalı (küçük/orta).
+- Kod: `min_olcek` (en küçük ölçek) desteği (`match_scoring`, `match_adapter`); hedef yedek araması yalnızca başlıkta (kazınmış özetteki site menüsü KGF paketlerini sahte biçimde ihracat/istihdam hedefiyle eşleştiriyordu).
+- Sonuç: çiftçi, girişimci, otel ve Hatay profillerine bu 6 kaydın hiçbiri gelmiyor; imalat/SaaS KOBİ'lerinde Kapasite Geliştirme 1.; her yerde asıl KOSGEB programı kendi KGF paketinin önünde. Test 820.
+
 ## Açık kalanlar
 - Organik Tarım, tahıl üreticisinde hâlâ listede (kasıtlı: "geniş" program, sertifikayla her üretici başvurabilir) ama artık tahmini tutarsız.
 - Puanlar sık sık 1,0'da doyuyor; sıralama eşitlik bozucuya (ince skor) kalıyor.

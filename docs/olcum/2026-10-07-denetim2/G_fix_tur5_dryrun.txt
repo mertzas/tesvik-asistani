@@ -1,0 +1,22 @@
+[3] KOBİ Dijital Dönüşüm Destek Programı  — NACE C, küçük/orta ölçek
+    sektorler: ['genel'] -> ['imalat']
+    min_olcek: None -> kucuk
+    NACE kapsamı: (yok) -> ['C']
+[125] 2024 Dijital Dönüşüm Destek Paketi  — NACE C, küçük/orta ölçek (bağlı KGF paketi)
+    sektorler: ['genel'] -> ['imalat']
+    min_olcek: None -> kucuk
+    max_olcek: None -> orta
+    NACE kapsamı: (yok) -> ['C']
+[9] Küresel Rekabetçilik Destek Programı  — NACE sınırı yok; ihracat/Ar-Ge şartlı (ihtiyaç etiketi)
+    sektorler: ['genel'] -> ['ihracat', 'arge']
+[107] KÜRESEL REKABETÇİLİK DESTEK PAKETİ  — ihracat/Ar-Ge şartlı, KOBİ (bağlı KGF paketi)
+    sektorler: ['genel'] -> ['ihracat', 'arge']
+    max_olcek: None -> orta
+[8] Kapasite Geliştirme Destek Programı  — küçük/orta ölçek (mikro kapalı)
+    min_olcek: None -> kucuk
+    max_olcek: None -> orta
+[81] KAPASİTE GELİŞTİRME DESTEK PAKETİ  — küçük/orta ölçek (bağlı KGF paketi)
+    min_olcek: None -> kucuk
+    max_olcek: None -> orta
+
+DRY-RUN: 6 kayıt

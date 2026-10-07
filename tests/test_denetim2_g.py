@@ -184,3 +184,30 @@ def test_tutar_metni_yalniz_sade_aralikta_okunur(metin, beklenen):
     """GERÇEK OLAY: açıklayıcı tutar metnindeki yıl/karar no/yüzde toplam tahmine giriyordu."""
     from app.matching import _tutari_parse
     assert _tutari_parse(metin) == beklenen
+
+
+# ---------------------------------------------------------------- 9. alt ölçek sınırı ve başlıkla sınırlı hedef araması
+def test_min_olcek_mikro_isletmeyi_eler():
+    from app.match_adapter import company_from_profile, program_from_tesvik
+    from app.match_scoring import hard_filter
+    t = _t(3, "KOSGEB", "KOBİ Dijital Dönüşüm Destek Programı", ["imalat"])
+    t.uygunluk_kriterleri = {**t.uygunluk_kriterleri, "min_olcek": "kucuk", "max_olcek": "orta"}
+    program = program_from_tesvik(t)
+    mikro = company_from_profile(FinancialProfile(sektor="imalat", calisan_sayisi=3, yillik_ciro=4e6))
+    kucuk = company_from_profile(FinancialProfile(sektor="imalat", calisan_sayisi=18, yillik_ciro=32e6))
+    buyuk = company_from_profile(FinancialProfile(sektor="imalat", calisan_sayisi=400, yillik_ciro=2e9))
+    bilinmiyor = company_from_profile(FinancialProfile(sektor="imalat"))
+    assert any("en az 'kucuk'" in s for s in hard_filter(mikro, program)[0])
+    assert hard_filter(kucuk, program)[0] == []
+    assert any("en çok 'orta'" in s for s in hard_filter(buyuk, program)[0])
+    assert hard_filter(bilinmiyor, program)[0] == [], "ölçek bilinmiyorsa elemez"
+
+
+def test_hedef_yedek_aramasi_ozetteki_menu_metnine_bakmaz():
+    """GERÇEK OLAY: kazınmış özetteki site menüsü ('İhracat Destek Paketi') KGF Dijital Dönüşüm paketini
+    ihracat hedefiyle eşleştiriyor ve asıl KOSGEB programının önüne geçiriyordu."""
+    paket = _t(125, "KGF", "2024 Dijital Dönüşüm Destek Paketi", ["imalat"],
+               ozet="2024 Dijital Dönüşüm Destek Paketi\nİhracat Destek Paketi\nİstihdamı Koruma")
+    assert _hedef_eslesmeleri(paket, {"ihracat", "istihdam"}, None) == []
+    ihracat = _t(159, "KGF", "İhracat Destek Paketi", ["ihracat"])
+    assert _hedef_eslesmeleri(ihracat, {"ihracat"}, None) == ["ihracat"]

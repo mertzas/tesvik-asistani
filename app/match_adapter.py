@@ -55,6 +55,7 @@ def program_from_tesvik(t) -> IncentiveProgram:
         min_employees=k.get("min_employees"),
         max_employees=k.get("max_employees"),
         max_scale=k.get("max_olcek"),
+        min_scale=k.get("min_olcek"),
         exclusive_target_group=bool(k.get("exclusive_target_group", False)),
         target_group_tags=set(k.get("target_group_tags") or []),
     )

@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-09 (resmi form şablonları + İKAS sihirbazı). Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -208,8 +208,14 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
   18 değişmez/beklenti denetimi %100 ama yanıltıcıydı → bağımsız ilgi ölçümü: ilk 10'da ilgisiz öneri %18,4 → %4,3
   (`matching._ilgi_engeli`: Yapay Zekâ Kredisi, SGK teşviki, YÖNDE-tarım, TÜBİTAK-ilgisiz sektör, büyük 9903-küçük
   ölçek; ceza 0,30, dışlama değil). Persona/G12 gerilemesi yok. Yapamadıkları: kalkınma ajansları, TKDK/IPARD,
-  Turquality, İşbaşı veride yok; deprem bölgesi sinyali ve yatırım tutarı alanı yok; program bazında form sürüyor
-  (AGY100 + KOSGEB Kapasite formları indirildi, scratchpad/formlar).
+  Turquality, İşbaşı veride yok; deprem bölgesi sinyali ve yatırım tutarı alanı yok.
+- **Resmi form şablonları + İKAS sihirbazı** (2026-10-09): `app/form_sablonlari.py` (self-test 5) — 1501/1507 (id 34, 44)
+  sihirbaz soruları AGY100 A.3-E.1 bölümleri, KOSGEB Kapasite Geliştirme (id 8) II. Bölüm 2.11-2.20; taslak aynı
+  başlıklarla yazılır, formun tablo bölümleri (M011-M016/M030, 2.3-2.10) "doldurulacak tablolar" olarak listelenir.
+  Başlıklar indirilen resmi metinlerle denetlendi (`docs/olcum/2026-10-09-formlar/kanit.json`, eksik yok). Web
+  sihirbazında form adı + kaynak bağlantısı. İKAS kabuğu: `ikas-app/src/components/sihirbaz.tsx` + `src/lib/sihirbaz.ts`
+  (saf hesap/temizleme, 4 node testi); "Hızlı taslak" / "Sihirbazla doldur". Tarayıcıda: web'de kaydedilen 1501 cevapları
+  İKAS'ta geri geldi, 3.500.000 × %60 = 2.100.000 TL, taslakta "### B.2 …" başlığı; 375 px'te taşma yok. Test 1066 + 1 atlanan.
 - **B2B API planı** (`docs/API_URUN_PLANI.md`, kod yok, onay bekliyor): durumsuz `/v1` uçları (eşleşme, uygunluk,
   hazırlık, çağrılar, program, e-ihracat, şablon taslak), API anahtarı + kapsam + kota + ölçüm, hedef müşteri sırası,
   kill criteria, 6 adımlı uygulama planı.

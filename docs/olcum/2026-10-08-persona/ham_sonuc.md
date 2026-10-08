@@ -4,16 +4,16 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 
 | Persona | Eşleşme | Beklenen (tuttu/toplam) | Yasak gelen | İlk 5'te yasak (ek) | Tarih hatası | Yol bilgisi (ilk 5) | Hazırlık ilk adım |
 |---|---|---|---|---|---|---|---|
-| P1 İKAS şahıs e-ticaret (Denizli) | 25 | 2/3 | 0 | 0 | 0 | 25/25 | ✓ sirket |
-| P2 İKAS Ltd e-ihracatçı (İstanbul kozmetik) | 30 | 5/5 | 0 | 0 | 0 | 25/25 | ✓ dys_kaydi |
-| P3 Konya buğday çiftçisi (şahıs) | 25 | 2/2 | 1 | 1 | 0 | 25/25 | ✓ cks |
-| P4 Afyon büyükbaş hayvancı (şahıs) | 25 | 2/2 | 0 | 1 | 0 | 25/25 | ✓ cks |
+| P1 İKAS şahıs e-ticaret (Denizli) | 22 | 2/3 | 0 | 0 | 0 | 25/25 | ✓ sirket |
+| P2 İKAS Ltd e-ihracatçı (İstanbul kozmetik) | 28 | 5/5 | 0 | 0 | 0 | 25/25 | ✓ dys_kaydi |
+| P3 Konya buğday çiftçisi (şahıs) | 21 | 2/2 | 1 | 1 | 0 | 25/25 | ✓ cks |
+| P4 Afyon büyükbaş hayvancı (şahıs) | 21 | 2/2 | 0 | 1 | 0 | 25/25 | ✓ cks |
 | P5 Bursa metal imalat Ltd (45 kişi) | 30 | 4/4 | 0 | 0 | 0 | 25/25 | ✓ dys_kaydi |
 | P6 Ankara şirketsiz yapay zekâ girişimcisi | 2 | 1/1 | 0 | 0 | 0 | 10/10 | ✓ sirket |
 | P7 İzmir yazılım hizmet ihracatçısı Ltd | 30 | 2/2 | 0 | 0 | 0 | 25/25 | ✓ dys_kaydi |
-| P8 Hatay kadın girişimci kuaför (şahıs) | 23 | 2/3 | 0 | 1 | 0 | 24/25 | ✓ kosgeb_kaydi |
+| P8 Hatay kadın girişimci kuaför (şahıs) | 22 | 2/3 | 0 | 1 | 0 | 24/25 | ✓ kosgeb_kaydi |
 | P9 Gaziantep gıda imalat A.Ş. (320 kişi) | 30 | 1/1 | 0 | 0 | 0 | 25/25 | ✓ dys_kaydi |
-| P10 Karaman tarım kooperatifi | 30 | 2/2 | 0 | 0 | 0 | 24/25 | ✓ cks |
+| P10 Karaman tarım kooperatifi | 24 | 2/2 | 0 | 0 | 0 | 24/25 | ✓ cks |
 
 ## P1 İKAS şahıs e-ticaret (Denizli)
 
@@ -26,11 +26,11 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 - 5. 107 KGF | KÜRESEL REKABETÇİLİK DESTEK PAKETİ (0.65)
 - 6. 172 KGF | DİJİTAL KEFALET DESTEK PROGRAMI (0.30)
 - 7. 1 KOSGEB | Girişimci Destek Programı (0.30)
-- 8. 186 SGK / İŞKUR | İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik ( (0.30)
-- 9. 87 KGF | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (0.30)
-- 10. 2 KOSGEB | Yapay Zekâ Kredi Programı (0.30)
+- 8. 87 KGF | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (0.30)
+- 9. 5 KOSGEB | YÖNDE - Yönderlik ve Değerlendirme Destek Programı (0.30)
+- 10. 122 KGF | HALKBANK İLK ADIM KREDİSİ PROJESİ (0.30)
 
-**Beklenen:** 1 sıra 7 (≤6) ✗, 162 sıra 1 (≤10) ✓, 87 sıra 9 (≤12) ✓
+**Beklenen:** 1 sıra 7 (≤6) ✗, 162 sıra 1 (≤10) ✓, 87 sıra 8 (≤12) ✓
 
 **Yasak gelen:** yok
 
@@ -46,7 +46,7 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 | 168 | ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 107 | KÜRESEL REKABETÇİLİK DESTEK PAKETİ | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 
-**Hazırlık adımları:** sirket (10), kosgeb_kaydi (5), on_onay (1), dys_kaydi (1), birlik_uyeligi (1)
+**Hazırlık adımları:** sirket (10), kosgeb_kaydi (4), on_onay (1), dys_kaydi (1), birlik_uyeligi (1)
 
 **E-ihracat:** şimdi 0 · hazırlıkla 122,100 · teyitle 0 · aylık bekleme 0 · adımlar ['sirket', 'birlik_uyeligi', 'madrid_marka'] · {'pazaryeri_reklam': ('hazirlik', 81600.0), 'pazaryeri_komisyon': ('hazirlik', 40500.0)}
 
@@ -81,7 +81,7 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 | 193 | Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6 | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 190 | Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 
-**Hazırlık adımları:** dys_kaydi (9), birlik_uyeligi (8), on_onay (4), kosgeb_kaydi (4), madrid_marka (3), kep (1)
+**Hazırlık adımları:** dys_kaydi (9), birlik_uyeligi (8), on_onay (4), kosgeb_kaydi (3), madrid_marka (3), kep (1)
 
 **E-ihracat:** şimdi 0 · hazırlıkla 0 · teyitle 1,140,000 · aylık bekleme 95,000 · adımlar [] · {'pazaryeri_reklam': ('teyit', 630000.0), 'siparis_karsilama': ('teyit', 210000.0), 'pazaryeri_komisyon': ('teyit', 300000.0), 'cevrim_ici_magaza': ('kapali', 0.0)}
 
@@ -94,11 +94,11 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 - 3. 178 Sanayi ve Te | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (0.65)
 - 4. 77 Tarım Bakanl | Organik Tarım Destekleri (0.50)
 - 5. 172 KGF | DİJİTAL KEFALET DESTEK PROGRAMI (0.30)
-- 6. 2 KOSGEB | Yapay Zekâ Kredi Programı (0.30)
-- 7. 186 SGK / İŞKUR | İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik ( (0.30)
-- 8. 87 KGF | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (0.30)
-- 9. 5 KOSGEB | YÖNDE - Yönderlik ve Değerlendirme Destek Programı (0.30)
-- 10. 185 SGK / İŞKUR | Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İst (0.30)
+- 6. 87 KGF | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (0.30)
+- 7. 122 KGF | HALKBANK İLK ADIM KREDİSİ PROJESİ (0.30)
+- 8. 126 KGF | İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (B (0.30)
+- 9. 154 KGF | KGF Genel Destek Programı (0.30)
+- 10. 137 KGF | KGF Özkaynak Kefalet Programı (0.30)
 
 **Beklenen:** 160 sıra 1 (≤3) ✓, 94 sıra 2 (≤10) ✓
 
@@ -116,7 +116,7 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 | 77 | Organik Tarım Destekleri | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 172 | DİJİTAL KEFALET DESTEK PROGRAMI | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 
-**Hazırlık adımları:** cks (3), kosgeb_kaydi (3), kep (2), yatirim_tesvik_belgesi (2)
+**Hazırlık adımları:** cks (3), kep (2), yatirim_tesvik_belgesi (2), kosgeb_kaydi (1)
 
 ## P4 Afyon büyükbaş hayvancı (şahıs)
 
@@ -128,10 +128,10 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 - 4. 180 Sanayi ve Te | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (0.40)
 - 5. 178 Sanayi ve Te | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (0.35)
 - 6. 172 KGF | DİJİTAL KEFALET DESTEK PROGRAMI (0.30)
-- 7. 2 KOSGEB | Yapay Zekâ Kredi Programı (0.30)
-- 8. 186 SGK / İŞKUR | İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik ( (0.30)
-- 9. 87 KGF | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (0.30)
-- 10. 5 KOSGEB | YÖNDE - Yönderlik ve Değerlendirme Destek Programı (0.30)
+- 7. 87 KGF | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (0.30)
+- 8. 122 KGF | HALKBANK İLK ADIM KREDİSİ PROJESİ (0.30)
+- 9. 126 KGF | İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (B (0.30)
+- 10. 154 KGF | KGF Genel Destek Programı (0.30)
 
 **Beklenen:** 76 sıra 1 (≤3) ✓, 94 sıra 2 (≤10) ✓
 
@@ -149,7 +149,7 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 | 180 | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
 | 178 | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
 
-**Hazırlık adımları:** cks (2), kosgeb_kaydi (3), kep (2), yatirim_tesvik_belgesi (2)
+**Hazırlık adımları:** cks (2), kep (2), yatirim_tesvik_belgesi (2), kosgeb_kaydi (1)
 
 ## P5 Bursa metal imalat Ltd (45 kişi)
 
@@ -182,7 +182,7 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 | 81 | KAPASİTE GELİŞTİRME DESTEK PAKETİ | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 178 | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
 
-**Hazırlık adımları:** dys_kaydi (11), birlik_uyeligi (10), kosgeb_kaydi (7), on_onay (6), kep (6), yatirim_tesvik_belgesi (5), madrid_marka (3)
+**Hazırlık adımları:** dys_kaydi (11), birlik_uyeligi (10), on_onay (6), kosgeb_kaydi (6), kep (6), yatirim_tesvik_belgesi (5), madrid_marka (3)
 
 ## P6 Ankara şirketsiz yapay zekâ girişimcisi
 
@@ -251,7 +251,7 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 - 6. 172 KGF | DİJİTAL KEFALET DESTEK PROGRAMI (0.30)
 - 7. 1 KOSGEB | Girişimci Destek Programı (0.30)
 - 8. 87 KGF | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (0.30)
-- 9. 2 KOSGEB | Yapay Zekâ Kredi Programı (0.30)
+- 9. 5 KOSGEB | YÖNDE - Yönderlik ve Değerlendirme Destek Programı (0.30)
 - 10. 122 KGF | HALKBANK İLK ADIM KREDİSİ PROJESİ (0.30)
 
 **Beklenen:** 1 sıra 7 (≤6) ✗, 169 sıra 3 (≤12) ✓, 185 sıra 4 (≤12) ✓
@@ -270,7 +270,7 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 | 185 | Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki  | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 178 | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
 
-**Hazırlık adımları:** kosgeb_kaydi (4), kep (1), yatirim_tesvik_belgesi (1)
+**Hazırlık adımları:** kosgeb_kaydi (3), kep (1), yatirim_tesvik_belgesi (1)
 
 ## P9 Gaziantep gıda imalat A.Ş. (320 kişi)
 
@@ -336,4 +336,4 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 | 116 | KGF Kooperatif Destek Paketi | ✓ | ✓ | ✓ | ✗ | ✓ | doğrulanmış tarih yok |
 | 76 | Hayvancılık Destekleri | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 
-**Hazırlık adımları:** cks (5), kep (4), yatirim_tesvik_belgesi (4), kosgeb_kaydi (3)
+**Hazırlık adımları:** cks (5), kep (2), yatirim_tesvik_belgesi (2), kosgeb_kaydi (1)

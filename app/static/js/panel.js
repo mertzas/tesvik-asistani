@@ -858,9 +858,10 @@
                 <h4>1. Proje</h4>
                 <div class="alan"><label for="sh-proje">Projenin adı</label><input id="sh-proje" maxlength="200" value="${escapeHtml(c.proje_adi || "")}"></div>
                 <div class="alan"><label for="sh-ozet">Bir-iki cümleyle proje</label><textarea id="sh-ozet" rows="2" maxlength="2000">${escapeHtml(c.proje_ozeti || "")}</textarea></div>
-                <h4>2. Gerekçe</h4>
+                <h4>2. ${s.form ? "Resmi form bölümleri" : "Gerekçe"}</h4>
+                ${s.form ? `<p class="bolum-aciklama">Bu sorular <a href="${escapeHtml(s.form.kaynak)}" target="_blank" rel="noopener">${escapeHtml(s.form.ad)}</a> bölümleridir; cevaplarınız taslakta aynı başlıklarla yer alır.</p>` : ""}
                 ${s.gerekce.map(q => `<div class="alan"><label for="sh-g-${escapeHtml(q.anahtar)}">${escapeHtml(q.etiket)}</label>
-                    <textarea id="sh-g-${escapeHtml(q.anahtar)}" class="sh-gerekce" data-anahtar="${escapeHtml(q.anahtar)}" rows="2" maxlength="2000" placeholder="${escapeHtml(q.ipucu)}">${escapeHtml(g[q.anahtar] || "")}</textarea></div>`).join("")}
+                    <textarea id="sh-g-${escapeHtml(q.anahtar)}" class="sh-gerekce" data-anahtar="${escapeHtml(q.anahtar)}" rows="${s.form ? 3 : 2}" maxlength="2000" placeholder="${escapeHtml(q.ipucu)}">${escapeHtml(g[q.anahtar] || "")}</textarea></div>`).join("")}
                 <h4>3. İş adımları ve takvim</h4>
                 <div id="sh-faaliyetler">${faaliyetler.map(sihirbazFaaliyetSatiri).join("")}</div>
                 <button type="button" class="ikincil-btn" data-tikla="sihirbazSatirEkle" data-arg="faaliyet">+ adım ekle</button>

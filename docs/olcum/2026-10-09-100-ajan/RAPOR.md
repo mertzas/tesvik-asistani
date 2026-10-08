@@ -65,8 +65,10 @@ iki ilk-5 doğru yönde (Hatay hizmetten Yapay Zekâ Kredisi, Van otelinden Önc
    denetlenemiyor; ölçek yalnızca dolaylı sinyal. Profile "planlanan yatırım tutarı" alanı gerekli.
 4. **Hedefsiz profil:** hedef girilmezse ilgi sıralaması zayıflıyor (kalan gürültünün %93'ü). Profil formunda hedefin
    zorunlu ya da öne çıkarılmış olması kaliteyi doğrudan artırır.
-5. **Program bazında form:** sihirbaz soruları 6 program türüne göre; resmi form alanlarıyla birebir değil (1501/1507
-   AGY100 ve KOSGEB Kapasite Geliştirme formları indirildi, şablonlaştırma sürüyor).
+5. **Program bazında form:** sihirbaz soruları 6 program türüne göre; resmi form alanlarıyla birebir değil.
+   *Kapandı (2026-10-09, `app/form_sablonlari.py`):* 1501/1507 (AGY100 A-E) ve KOSGEB Kapasite Geliştirme (II. Bölüm
+   2.11-2.20) sorular formun kendi bölümleri; başlıklar `docs/olcum/2026-10-09-formlar/kanit.json`'da denetlendi.
+   Diğer programlar hâlâ tür bazlı.
 6. **Ölçüt sınırı:** ilgi ölçümü 5 kuraldan oluşan bağımsız bir danışman ölçütü; her gürültü türünü yakalamaz
    (ör. KGF paketlerinin büyük firmalara uygunluğu, organik desteğin sertifikasız üreticiye "geçiş seçeneği" olarak
    gösterilmesi değerlendirmeye alınmadı).
@@ -75,4 +77,5 @@ iki ilk-5 doğru yönde (Hatay hizmetten Yapay Zekâ Kredisi, Van otelinden Önc
 1. Kalkınma ajansları (26 ajans, il bazlı çağrılar) ve TKDK/IPARD veri turları — en büyük kapsam açığı.
 2. Profile "planlanan yatırım tutarı" ve hedefin öne çıkarılması (9903 ve ilgi sıralaması için).
 3. Deprem bölgesi hükümleri için il listesi + 9903 afet maddesi sinyali.
-4. Program bazında form şablonlarının tamamlanması (1501/1507, KOSGEB Kapasite Geliştirme).
+4. ~~Program bazında form şablonları (1501/1507, KOSGEB Kapasite Geliştirme)~~ yapıldı; sıradaki adaylar başvuru
+   hacmine göre (ör. KOSGEB Girişimcilik, TÜBİTAK 1512 BiGG).

@@ -5,6 +5,7 @@
 
 import { hataMetni } from './bicim';
 import { oturumOku, oturumSil } from './oturum';
+import type { Cevaplar, Sorular } from './sihirbaz';
 
 export class ApiHatasi extends Error {
   constructor(public durum: number, mesaj: string) {
@@ -100,6 +101,7 @@ export type Liste = {
   takipte: boolean;
   taslak: string | null;
   taslak_tarihi: string | null;
+  taslak_cevaplar: Cevaplar | null;
   cagrilar: Cagri[];
   uyari: string | null;
 };
@@ -137,6 +139,12 @@ export const api = {
   liste: (id: number) => istek<Liste>(`/api/basvuru-listesi/${id}`),
   isaretle: (id: number, isaretli: string[]) =>
     istek<Liste>(`/api/basvuru-listesi/${id}`, { method: 'PUT', body: JSON.stringify({ isaretli }) }),
-  taslak: (id: number) => istek<Liste>(`/api/basvuru-listesi/${id}/taslak`, { method: 'POST' }),
+  /** Yapay zekâsız şablon taslak; cevaplar verilirse sihirbaz cevaplarıyla yazılır ve kaydedilir. */
+  taslak: (id: number, cevaplar?: Cevaplar) =>
+    istek<Liste>(`/api/basvuru-listesi/${id}/taslak?yontem=sablon`, {
+      method: 'POST',
+      ...(cevaplar ? { body: JSON.stringify({ cevaplar }) } : {}),
+    }),
+  taslakSorulari: (id: number) => istek<Sorular>(`/api/basvuru-listesi/${id}/taslak-sorulari`),
   birak: (id: number) => istek<{ mesaj: string }>(`/api/basvuru-listesi/${id}`, { method: 'DELETE' }),
 };

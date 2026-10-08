@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start -p 3000",
     "typecheck": "tsc --noEmit",
-    "test": "node --test src/lib/akis.test.ts src/lib/bicim.test.ts"
+    "test": "node --test src/lib/akis.test.ts src/lib/bicim.test.ts src/lib/sihirbaz.test.ts"
   },
   "engines": {
     "node": ">=20"

@@ -21,6 +21,7 @@ import re
 import sys
 
 from app.basvuru_taslagi import BASLIK_NOTU, BOLUMLER, kart_ozeti
+from app.form_sablonlari import form as resmi_form
 
 MODEL_ADI = "sablon-v2"
 D = "[DOLDURUN: {}]"
@@ -147,7 +148,10 @@ def sorular(t) -> dict:
     """Sihirbaz tanımı: arayüz bu yapıdan form kurar."""
     turler = program_turleri(t)
     paket = [REHBER[x] for x in turler] or [GENEL]
-    gerekce = list({k: (k, e, i) for p in paket for k, e, i in p["gerekce"]}.values())
+    f = resmi_form(t.id)
+    # Resmi form şablonu varsa (app/form_sablonlari.py) sorular formun kendi bölümleridir.
+    gerekce = (list(f["bolumler"]) if f else
+               list({k: (k, e, i) for p in paket for k, e, i in p["gerekce"]}.values()))
     cikti = list({k: (k, e, i) for p in paket for k, e, i in p["cikti"]}.values())
     return {"turler": turler,
             "gerekce": [{"anahtar": k, "etiket": e, "ipucu": i} for k, e, i in gerekce],
@@ -155,7 +159,8 @@ def sorular(t) -> dict:
             "faaliyet_onerileri": paket[0]["adimlar"],
             "gider_kalemleri": gider_kalemleri(t),
             "oran_secenekleri": oran_secenekleri(t),
-            "ust_limit": t.tutari_max}
+            "ust_limit": t.tutari_max,
+            "form": {"ad": f["ad"], "kaynak": f["kaynak"], "tablolar": f["tablolar"]} if f else None}
 
 
 # ------------------------------------------------------------------------------------------------- bölümler
@@ -193,6 +198,15 @@ def _amac(t, p: dict, c: dict, s: dict) -> str:
     else:
         satir.append(f"**Proje:** {D.format('projenin adı ve tek cümlelik tanımı')}")
     gerekce = c.get("gerekce") or {}
+    if s.get("form"):
+        # Resmi form: her bölüm formdaki başlığıyla, sırasıyla; boşsa formun açıklaması [DOLDURUN] ipucu olur.
+        satir += ["", f"Aşağıdaki başlıklar **{s['form']['ad']}** bölümleridir; metni ilgili alanlara aktarın."]
+        for q in s["gerekce"]:
+            v = (gerekce.get(q["anahtar"]) or "").strip()
+            satir += ["", f"### {q['etiket']}", "", v or D.format(q["ipucu"])]
+        if s["form"]["tablolar"]:
+            satir += ["", "Formda ayrıca doldurulacak tablolar:"] + [f"- {x}" for x in s["form"]["tablolar"]]
+        return "\n".join(satir).strip()
     yanitli = [(q["etiket"], gerekce[q["anahtar"]].strip()) for q in s["gerekce"] if (gerekce.get(q["anahtar"]) or "").strip()]
     eksik = [q for q in s["gerekce"] if not (gerekce.get(q["anahtar"]) or "").strip()]
     satir += ["", *[f"**{e}:** {v}" for e, v in yanitli]]
@@ -327,7 +341,7 @@ def _self_test() -> int:
          {"tur": "sart", "metin": "Proje başvurusundan önce tamamlanmış Ar-Ge faaliyetleri desteklenmez", "isaretli": False},
          {"tur": "belge", "metin": "Proje öneri formu", "isaretli": True}]
     cev = {"proje_adi": "Glutensiz ekmek üretim süreci", "proje_ozeti": "Raf ömrünü uzatan yeni bir fermantasyon süreci.",
-           "gerekce": {"yenilik": "Katkısız raf ömrü 7 güne çıkar."},
+           "gerekce": {"B2": "Katkısız raf ömrü 7 güne çıkar."},
            "faaliyetler": [{"ad": "Prototip", "baslangic": "2027-01", "bitis": "2027-06"}],
            "butce": [{"kalem": "Personel", "tutar": 2_000_000}, {"kalem": "Malzeme", "tutar": 500_000}],
            "destek_orani": 75.0, "ciktilar": {"arge_cikti": "Pilot üretim hattı ve faydalı model başvurusu"}}
@@ -351,6 +365,12 @@ def _self_test() -> int:
         ("girişim programında kapasite sorusu yok", program_turleri(Tesvik(kurum="TUBITAK",
                                                                            baslik="1812 - Yatırım Tabanlı Girişimcilik")) == ["girisim"]),
         ("ay biçimi", _ay("2027-01") == "Ocak 2027" and _ay("2027-13") == "" and _ay(None) == ""),
+        ("resmi form bölümleri (1501 → AGY100 A-E)", sorular(t1501)["form"]["ad"].startswith("TÜBİTAK Proje Öneri")
+         and [q["anahtar"] for q in sorular(t1501)["gerekce"]][:3] == ["A3", "B1", "B2"]
+         and "### B.2 Projenin Teknoloji Düzeyi" in bos and "M011 Personel" in bos),
+        ("form cevabı başlığının altına yazılır", "### B.4 Projenin Yenilikçi Yönleri" in uret(
+            t1501, p, m, [], {**cev, "gerekce": {"B4": "Ülke için yeni ürün."}}) and "Ülke için yeni ürün." in uret(
+            t1501, p, m, [], {**cev, "gerekce": {"B4": "Ülke için yeni ürün."}})),
     ]
     for ad, ok in k:
         print(f"  {'OK ' if ok else 'HATA'} {ad}")

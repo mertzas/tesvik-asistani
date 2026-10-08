@@ -6,6 +6,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { api, wordIndir, type Liste, type ListeOzeti } from '@/lib/api';
 import { cagriOzeti, tarih, tarihSaat } from '@/lib/bicim';
+import { TaslakSihirbazi } from './sihirbaz';
 import { Bilgi, Dugme, Kart, Yukleniyor } from './ui';
 
 const TUR_ETIKETI = { sart: 'Şart', belge: 'Belge', basvuru: 'Başvuru' } as const;
@@ -73,6 +74,7 @@ function ListeAyrinti({ tesvikId, onDegisti, onKaldirildi }: { tesvikId: number;
   const [liste, setListe] = useState<Liste | null>(null);
   const [mesaj, setMesaj] = useState<{ tur: 'iyi' | 'uyari' | 'hata'; metin: string } | null>(null);
   const [taslakYaziliyor, setTaslakYaziliyor] = useState(false);
+  const [sihirbaz, setSihirbaz] = useState(false);
 
   useEffect(() => {
     api
@@ -221,8 +223,11 @@ function ListeAyrinti({ tesvikId, onDegisti, onKaldirildi }: { tesvikId: number;
                 Kopyala
               </Dugme>
             )}
-            <Dugme onClick={taslakYaz} disabled={taslakYaziliyor}>
-              {liste.taslak ? 'Yeniden yaz' : 'Taslak oluştur'}
+            <Dugme tur="ikincil" onClick={taslakYaz} disabled={taslakYaziliyor}>
+              {liste.taslak ? 'Yeniden yaz' : 'Hızlı taslak'}
+            </Dugme>
+            <Dugme onClick={() => setSihirbaz(true)} disabled={sihirbaz}>
+              {liste.taslak_cevaplar ? 'Cevapları düzenle' : 'Sihirbazla doldur'}
             </Dugme>
           </div>
         </div>
@@ -239,10 +244,24 @@ function ListeAyrinti({ tesvikId, onDegisti, onKaldirildi }: { tesvikId: number;
         ) : (
           <p className="mt-2 text-sm text-soluk">
             İşletme profiliniz ve mağaza verinizle bu program için düzenlenebilir bir başvuru metni taslağı yazılır.
-            Bilinmeyen yerler [DOLDURUN] olarak bırakılır, rakam uydurulmaz.
+            Sihirbaz projenizi, takviminizi ve bütçenizi sorar; resmi formu tanımlı programlarda sorular formun kendi
+            bölümleridir. Bilinmeyen yerler [DOLDURUN] olarak bırakılır, rakam uydurulmaz.
           </p>
         )}
       </Kart>
+
+      {sihirbaz && (
+        <TaslakSihirbazi
+          tesvikId={tesvikId}
+          onKapat={() => setSihirbaz(false)}
+          onBitti={(l) => {
+            setListe(l);
+            setSihirbaz(false);
+            setMesaj({ tur: 'iyi', metin: 'Taslak cevaplarınızla yazıldı; cevaplar kaydedildi.' });
+            onDegisti();
+          }}
+        />
+      )}
 
       <div className="flex flex-wrap gap-2">
         <Dugme onClick={word}>Word (.docx) indir</Dugme>

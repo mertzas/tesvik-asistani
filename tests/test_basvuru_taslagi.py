@@ -179,12 +179,13 @@ def test_sablon_taslak_profilsiz_404_ve_yapay_zeka_kurallari_korunur(client, db_
     assert client.post("/api/basvuru-listesi/9/taslak?yontem=baska", headers=h).status_code == 422
 
 
-def test_sablon_taslak_self_test():
+@pytest.mark.parametrize("modul,en_az", [("app.sablon_taslak", 13), ("app.form_sablonlari", 5)])
+def test_sablon_self_test(modul, en_az):
     import re
-    r = subprocess.run([sys.executable, "-m", "app.sablon_taslak", "--self-test"], cwd=KOK, stdin=subprocess.DEVNULL,
+    r = subprocess.run([sys.executable, "-m", modul, "--self-test"], cwd=KOK, stdin=subprocess.DEVNULL,
                        capture_output=True, text=True, encoding="utf-8")
     m = re.search(r"self-test: (\d+)/(\d+) geçti", r.stdout)
-    assert r.returncode == 0 and m and m.group(1) == m.group(2) and int(m.group(2)) >= 7, r.stdout
+    assert r.returncode == 0 and m and m.group(1) == m.group(2) and int(m.group(2)) >= en_az, r.stdout
 
 
 # ---------------------------------------------------------------- taslak sihirbazı (sablon-v2, 2026-10-08)
@@ -206,22 +207,43 @@ def test_sihirbaz_sorulari(client, ar_ge):
     s = client.get("/api/basvuru-listesi/34/taslak-sorulari", headers=ar_ge).json()
     assert s["turler"][0] == "arge" and s["oran_secenekleri"] == [75.0, 60.0] and s["ust_limit"] == 20_000_000
     assert s["gider_kalemleri"] == ["personel", "malzeme"] and s["cevaplar"] is None
-    assert {q["anahtar"] for q in s["gerekce"]} == {"yenilik", "yontem", "ticarilesme"}
+    # 1501 resmi form şablonuna bağlı (app/form_sablonlari.py): sorular AGY100 A-E bölümleri
+    assert [q["anahtar"] for q in s["gerekce"]][:4] == ["A3", "B1", "B2", "B3"]
+    assert s["form"]["ad"].startswith("TÜBİTAK Proje Öneri") and "M011 Personel" in s["form"]["tablolar"][0]
 
 
 def test_sihirbaz_cevaplari_taslaga_girer_saklanir_ve_yeniden_kullanilir(client, db_session, ar_ge):
-    cev = {"proje_adi": "Yeni fermantasyon süreci", "gerekce": {"yenilik": "Raf ömrü 7 gün"},
+    cev = {"proje_adi": "Yeni fermantasyon süreci", "gerekce": {"B2": "Raf ömrü 7 gün"},
            "faaliyetler": [{"ad": "Prototip", "baslangic": "2027-01", "bitis": "2027-06"}],
            "butce": [{"kalem": "personel", "tutar": 2_000_000}, {"kalem": "malzeme", "tutar": 500_000}],
            "destek_orani": 75}
     d = client.post("/api/basvuru-listesi/34/taslak", headers=ar_ge, json={"cevaplar": cev}).json()
     assert "Yeni fermantasyon süreci" in d["taslak"] and "| Prototip | Ocak 2027 | Haziran 2027 |" in d["taslak"]
     assert "**2.500.000 TL**" in d["taslak"] and "= **1.875.000 TL**" in d["taslak"]
+    # Cevap resmi formun başlığı altında; cevapsız bölüm formun kendi açıklamasıyla işaretli kalır.
+    assert "### B.2 Projenin Teknoloji Düzeyi\n\nRaf ömrü 7 gün" in d["taslak"]
+    assert "### B.4 Projenin Yenilikçi Yönleri\n\n[DOLDURUN" in d["taslak"]
+    assert "Formda ayrıca doldurulacak tablolar" in d["taslak"] and "M030 Dönemsel giderler" in d["taslak"]
     assert d["taslak_cevaplar"]["proje_adi"] == "Yeni fermantasyon süreci"
     # Cevapsız yeniden oluşturma kayıtlı cevapları kullanır; sorular ucu da döndürür.
     d2 = client.post("/api/basvuru-listesi/34/taslak", headers=ar_ge).json()
     assert "Yeni fermantasyon süreci" in d2["taslak"]
     assert client.get("/api/basvuru-listesi/34/taslak-sorulari", headers=ar_ge).json()["cevaplar"]["destek_orani"] == 75
+
+
+def test_kosgeb_kapasite_gelistirme_resmi_form(client, db_session, hazir):
+    h, _ = hazir
+    db_session.add(Tesvik(id=8, kurum="KOSGEB", baslik="Kapasite Geliştirme Destek Programı", ozet="o", detay="d",
+                          aktif_mi=True, kaynak_url="https://k/8", tesvil_tutari="%60 hibe", tutari_max=5_000_000,
+                          uygunluk_kriterleri={"sektorler": ["imalat"]}))
+    db_session.commit()
+    s = client.get("/api/basvuru-listesi/8/taslak-sorulari", headers=h).json()
+    assert [q["anahtar"] for q in s["gerekce"]] == [f"2.{i}" for i in range(11, 21)]
+    assert s["form"]["kaynak"].startswith("https://webdosya.kosgeb.gov.tr/") and "2.9 Üretim-satış planı" in s["form"]["tablolar"]
+    t = client.post("/api/basvuru-listesi/8/taslak", headers=h,
+                    json={"cevaplar": {"gerekce": {"2.13": "Talep kapasiteyi aşıyor"}}}).json()["taslak"]
+    assert "### 2.13 Projenin Amacı ve Gerekçesi\n\nTalep kapasiteyi aşıyor" in t
+    assert "### 2.20 Sürdürülebilirlik" in t and "2.10 Yatırımın geri dönüş süresi" in t
 
 
 def test_kural_isaretlenmez_ilerlemeye_sayilmaz(client, ar_ge):

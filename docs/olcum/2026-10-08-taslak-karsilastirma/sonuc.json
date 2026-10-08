@@ -1,0 +1,161 @@
+[
+ {
+  "vaka": 1,
+  "persona": "12 Bursa metal sentetik",
+  "program": "Kapasite Geliştirme Destek Programı",
+  "sablon": {
+   "baslik_sirasi_dogru": true,
+   "basliklar": [
+    "1. İşletme tanıtımı",
+    "2. Projenin amacı ve gerekçesi",
+    "3. Yapılacak faaliyetler ve takvim",
+    "4. Tahmini bütçe kalemleri",
+    "5. Beklenen çıktılar ve etkiler"
+   ],
+   "doldurun_sayisi": 37,
+   "kelime": 406,
+   "baglamda_olmayan_sayilar": [],
+   "profil": {
+    "il": true,
+    "NACE": true,
+    "çalışan": true,
+    "ciro": true
+   },
+   "program": {
+    "tutar/oran": true,
+    "başvuru yeri": true,
+    "dönem/süre": true
+   }
+  },
+  "yapay_zeka": {
+   "baslik_sirasi_dogru": true,
+   "basliklar": [
+    "1. İşletme tanıtımı",
+    "2. Projenin amacı ve gerekçesi",
+    "3. Yapılacak faaliyetler ve takvim",
+    "4. Tahmini bütçe kalemleri",
+    "5. Beklenen çıktılar ve etkiler"
+   ],
+   "doldurun_sayisi": 26,
+   "kelime": 499,
+   "baglamda_olmayan_sayilar": [],
+   "profil": {
+    "il": true,
+    "NACE": true,
+    "çalışan": true,
+    "ciro": true
+   },
+   "program": {
+    "tutar/oran": true,
+    "başvuru yeri": true,
+    "dönem/süre": true
+   }
+  }
+ },
+ {
+  "vaka": 2,
+  "persona": "2 Izmir tekstil",
+  "program": "Küresel Rekabetçilik Destek Programı",
+  "sablon": {
+   "baslik_sirasi_dogru": true,
+   "basliklar": [
+    "1. İşletme tanıtımı",
+    "2. Projenin amacı ve gerekçesi",
+    "3. Yapılacak faaliyetler ve takvim",
+    "4. Tahmini bütçe kalemleri",
+    "5. Beklenen çıktılar ve etkiler"
+   ],
+   "doldurun_sayisi": 38,
+   "kelime": 462,
+   "baglamda_olmayan_sayilar": [],
+   "profil": {
+    "il": true,
+    "NACE": true,
+    "çalışan": true,
+    "ciro": true
+   },
+   "program": {
+    "tutar/oran": true,
+    "başvuru yeri": true,
+    "dönem/süre": true
+   }
+  },
+  "yapay_zeka": {
+   "baslik_sirasi_dogru": true,
+   "basliklar": [
+    "1. İşletme tanıtımı",
+    "2. Projenin amacı ve gerekçesi",
+    "3. Yapılacak faaliyetler ve takvim",
+    "4. Tahmini bütçe kalemleri",
+    "5. Beklenen çıktılar ve etkiler"
+   ],
+   "doldurun_sayisi": 29,
+   "kelime": 501,
+   "baglamda_olmayan_sayilar": [],
+   "profil": {
+    "il": true,
+    "NACE": true,
+    "çalışan": true,
+    "ciro": true
+   },
+   "program": {
+    "tutar/oran": true,
+    "başvuru yeri": true,
+    "dönem/süre": true
+   }
+  }
+ },
+ {
+  "vaka": 3,
+  "persona": "3 Ankara girisim",
+  "program": "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+  "sablon": {
+   "baslik_sirasi_dogru": true,
+   "basliklar": [
+    "1. İşletme tanıtımı",
+    "2. Projenin amacı ve gerekçesi",
+    "3. Yapılacak faaliyetler ve takvim",
+    "4. Tahmini bütçe kalemleri",
+    "5. Beklenen çıktılar ve etkiler"
+   ],
+   "doldurun_sayisi": 35,
+   "kelime": 360,
+   "baglamda_olmayan_sayilar": [],
+   "profil": {
+    "il": true,
+    "NACE": true,
+    "çalışan": true,
+    "ciro": false
+   },
+   "program": {
+    "tutar/oran": false,
+    "başvuru yeri": true,
+    "dönem/süre": true
+   }
+  },
+  "yapay_zeka": {
+   "baslik_sirasi_dogru": true,
+   "basliklar": [
+    "1. İşletme tanıtımı",
+    "2. Projenin amacı ve gerekçesi",
+    "3. Yapılacak faaliyetler ve takvim",
+    "4. Tahmini bütçe kalemleri",
+    "5. Beklenen çıktılar ve etkiler"
+   ],
+   "doldurun_sayisi": 32,
+   "kelime": 448,
+   "baglamda_olmayan_sayilar": [],
+   "profil": {
+    "il": true,
+    "NACE": true,
+    "çalışan": false,
+    "ciro": false
+   },
+   "program": {
+    "tutar/oran": false,
+    "başvuru yeri": true,
+    "dönem/süre": true
+   }
+  }
+ }
+]

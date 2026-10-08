@@ -46,6 +46,58 @@ def _tam_cumleler(metin: str) -> str:
     return metin[:son + 1] if son > 0 else ""
 
 
+# Program türüne göre yönlendirici gerekçe soruları ve faaliyet adımları (rakam yok; [DOLDURUN] ipucu). Yapay zekâ
+# taslağıyla karşılaştırmada (docs/olcum/2026-10-08-taslak-karsilastirma) asıl fark buydu: model programa özgü
+# sorular soruyordu ("darboğaz ve kapasite kullanım oranı", "karşılanamayan talep").
+REHBER: dict[str, tuple[list[str], list[str]]] = {
+    "yatirim": (["Mevcut kapasite kullanım oranı ve darboğazlar: " + D.format("hangi süreç/makinede, oran"),
+                 "Karşılanamayan talep: " + D.format("reddedilen/ertelenen siparişler, talep artışı"),
+                 "Yatırımın çözeceği sorun: " + D.format("verimlilik, kalite, maliyet")],
+                ["Teklif ve proformaların toplanması", "Makine/ekipman tedariki", "Kurulum ve devreye alma",
+                 "Kapasite/verimlilik artışının ölçülmesi"]),
+    "ihracat": (["Hedef pazarlar ve seçim gerekçesi: " + D.format("ülkeler, pazar araştırması dayanağı"),
+                 "Mevcut ihracat durumu: " + D.format("son yıl ihracat, başlıca alıcılar/kanallar"),
+                 "Rekabet avantajı: " + D.format("ürün, fiyat, sertifika, marka")],
+                ["Pazar araştırması ve hedef ülke seçimi", "Tanıtım/fuar/pazaryeri faaliyetleri",
+                 "Alıcı görüşmeleri ve sipariş", "İhracat sonuçlarının izlenmesi"]),
+    "arge": (["Teknolojik yenilik ve özgün değer: " + D.format("mevcut çözümlerden farkı"),
+              "Teknik riskler ve yöntem: " + D.format("belirsizlikler, deney/prototip planı"),
+              "Ticarileşme: " + D.format("hedef müşteri, pazar, gelir modeli")],
+             ["Literatür/patent taraması ve gereksinimler", "Tasarım ve prototip geliştirme", "Test ve doğrulama",
+              "Ticarileşme hazırlığı (fikri mülkiyet, pilot müşteri)"]),
+    "istihdam": (["Korunacak/oluşturulacak istihdam: " + D.format("pozisyonlar ve kişi sayısı"),
+                  "İstihdamı etkileyen durum: " + D.format("talep düşüşü, finansman ihtiyacı, büyüme")],
+                 ["İşe alım/istihdamın korunması planı", "SGK bildirgeleriyle izleme"]),
+    "girisim": (["İş fikri ve çözülen sorun: " + D.format("hedef müşteri ve ihtiyacı"),
+                 "Ekip ve yetkinlik: " + D.format("kurucular, deneyim"),
+                 "İş modeli: " + D.format("gelir kaynakları, ilk müşteriler")],
+                ["Şirket kuruluşu / kayıtlar", "Ürün/hizmetin ilk sürümü", "İlk müşteriler ve satış", "Büyüme planı"]),
+    "tarim": (["Üretim durumu: " + D.format("ürün, alan (dekar) ya da hayvan sayısı, ÇKS/TÜRKVET kaydı"),
+               "Desteğin kullanım amacı: " + D.format("verim, kalite, maliyet, sertifikasyon")],
+              ["Kayıtların (ÇKS/ÖKS/TÜRKVET) güncellenmesi", "Üretim/uygulama dönemi", "Başvuru ve belge teslimi"]),
+}
+
+
+BASLIK_TURU = [("girisim", r"Girişim|BiGG"), ("yatirim", r"Kapasite|Yatırım|makine|Dijital Dönüşüm|Hamle"),
+               ("arge", r"Ar-?Ge|Araştırma|Teknoloji"), ("ihracat", r"ihracat|Rekabetçilik|Pazar"),
+               ("istihdam", r"istihdam")]
+
+
+def program_turleri(t) -> list[str]:
+    """Rehber anahtarları, önem sırasıyla. Önce BAŞLIK (programın türü), yoksa kurum (tarım), en son sektör etiketi:
+    sektör etiketleri ihtiyacı geniş kodlar (Kapasite Geliştirme'de "arge" var) ve tek başına Ar-Ge sorusu
+    getiriyordu (tarayıcı/ölçüm 2026-10-08)."""
+    baslik = t.baslik or ""
+    turler = [tur for tur, kalip in BASLIK_TURU if re.search(kalip, baslik, re.IGNORECASE)]
+    if "girisim" in turler and "yatirim" in turler:
+        turler.remove("yatirim")  # "Yatırım Tabanlı Girişimcilik": girişime sermaye yatırımı, makine/kapasite değil
+    if re.search(r"Tarım", t.kurum or "", re.IGNORECASE):
+        turler.append("tarim")
+    if not turler:
+        turler = sorted(program_hedefleri(t))
+    return [x for x in dict.fromkeys(turler) if x in REHBER]
+
+
 def program_hedefleri(t) -> set[str]:
     """Programın türünden çıkan gösterge anahtarları (profil hedefinden bağımsız): Ar-Ge programına Ar-Ge çıktısı,
     ihracat programına ihracat göstergesi. Tarayıcı denemesi 2026-10-08: 1501 taslağında Ar-Ge çıktısı yoktu."""
@@ -94,6 +146,9 @@ def _amac(t, p: dict) -> str:
               f"Proje: {D.format('projenin adı ve tek cümlelik tanımı')}",
               f"Gerekçe: {D.format('çözülecek sorun ya da karşılanacak ihtiyaç; neden şimdi')}",
               f"Programla uyum: {D.format('projenin programın amacına nasıl hizmet ettiği')}"]
+    sorular = [s for tur in program_turleri(t) for s in REHBER[tur][0]]
+    if sorular:
+        satir += ["", "Gerekçeyi şu başlıklarla somutlayın:"] + [f"- {s}" for s in sorular]
     return "\n".join(satir)
 
 
@@ -123,9 +178,10 @@ def _takvim(t, cagrilar: list[dict]) -> str:
     if ON_ONAY.search(metin):
         satir.append("**Önemli:** Bu programda ön onaydan/müracaattan önce yapılan harcama desteklenmez; harcamaları "
                      "başvurudan sonraya planlayın.")
+    turler = program_turleri(t)
+    adimlar = REHBER[turler[0]][1] if turler else [D.format(f"faaliyet {i}") for i in (1, 2, 3)]  # yalnız birincil tür
     satir += ["", "| Faaliyet | Başlangıç | Bitiş | Sorumlu |", "|---|---|---|---|"]
-    satir += [f"| {D.format(f'faaliyet {i}')} | {D.format('ay/yıl')} | {D.format('ay/yıl')} | {D.format('kişi/birim')} |"
-              for i in (1, 2, 3)]
+    satir += [f"| {a} | {D.format('ay/yıl')} | {D.format('ay/yıl')} | {D.format('kişi/birim')} |" for a in adimlar]
     return "\n".join(satir)
 
 
@@ -204,6 +260,15 @@ def _self_test() -> int:
         ("yapay zekâ kullanılmadığı yazılı", "yapay zekâ kullanılmadan" in s and "_Bu taslak" not in s),
         ("kesik kurum metni tam cümleye indirilir", _tam_cumleler("Birinci cümle tamam. İkinci cümle iyile") ==
          "Birinci cümle tamam." and _tam_cumleler("tek kesik parça iyile") == ""),
+        ("program türüne göre gerekçe soruları ve faaliyet adımları",
+         "darboğazlar" in uret(Tesvik(id=8, kurum="KOSGEB", baslik="Kapasite Geliştirme Destek Programı"), {}, [], [])
+         and "Makine/ekipman tedariki" in uret(Tesvik(id=8, kurum="KOSGEB", baslik="Kapasite Geliştirme"), {}, [], [])
+         and "| [DOLDURUN: faaliyet 1]" in uret(Tesvik(id=1, kurum="KGF", baslik="Genel Kefalet"), {}, [], [])
+         and "Teknolojik yenilik" not in uret(Tesvik(id=8, kurum="KOSGEB", baslik="Kapasite Geliştirme Destek Programı",
+                                                     uygunluk_kriterleri={"sektorler": ["imalat", "arge"]}), {}, [], [])),
+        ("girişim programında kapasite sorusu yok", program_turleri(Tesvik(
+            kurum="TUBITAK", baslik="1812 - Yatırım Tabanlı Girişimcilik Destek Programı")) == ["girisim", "arge"]
+         or program_turleri(Tesvik(kurum="TUBITAK", baslik="1812 - Yatırım Tabanlı Girişimcilik")) == ["girisim"]),
         ("Ar-Ge programına Ar-Ge çıktısı eklenir", "Ar-Ge çıktıları" in uret(
             Tesvik(id=34, kurum="TUBITAK", baslik="1501 Sanayi Ar-Ge", uygunluk_kriterleri={"sektorler": ["arge"]}),
             {"hedefler": ["yatirim"]}, [], [])),

@@ -189,6 +189,13 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
   varsayılanı `yontem=sablon` (plan/rıza/servis gerekmez, veri dışarı çıkmaz, `taslak_model=sablon-v1`);
   `yontem=yapay_zeka` eski Claude yolu (PRO + rıza + günlük sınır). Panelde "Taslak oluştur" şablon, "Yapay zekâyla yaz"
   isteğe bağlı; İKAS kabuğu varsayılanı şablon.
+  - Karşılaştırma (`docs/olcum/2026-10-08-taslak-karsilastirma/RAPOR.md`, 3 vaka, ücretsiz): uydurma rakam iki yolda 0,
+    olgu kapsaması eşit; yapay zekâ daha uzun, daha az [DOLDURUN]. Fark programa özgü yönlendirici sorulardı → şablona
+    tür bazlı rehber (yatırım, ihracat, Ar-Ge, istihdam, girişim, tarım; tür önce başlıktan). API bakiyesi yok: üretim
+    modeliyle kesin ölçüm için `taslak_olcum.py --canli` (≤ ~0,15 USD) bakiye yüklenince.
+- **B2B API planı** (`docs/API_URUN_PLANI.md`, kod yok, onay bekliyor): durumsuz `/v1` uçları (eşleşme, uygunluk,
+  hazırlık, çağrılar, program, e-ihracat, şablon taslak), API anahtarı + kapsam + kota + ölçüm, hedef müşteri sırası,
+  kill criteria, 6 adımlı uygulama planı.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

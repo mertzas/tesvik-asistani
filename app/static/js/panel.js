@@ -396,8 +396,15 @@
                     html += t + "</tbody></table>";
                     continue;
                 }
+                const bq = line.match(/^\s*>\s?(.*)$/);
+                if (bq) { if (acik !== "blockquote") { kapat(); acik = "blockquote"; html += "<blockquote>"; } else { html += "<br>"; } html += inlineMd(bq[1]); i++; continue; }
                 const ul = line.match(/^\s*[-*•]\s+(.*)$/);
-                if (ul) { if (acik !== "ul") { kapat(); acik = "ul"; html += "<ul>"; } html += `<li>${inlineMd(ul[1])}</li>`; i++; continue; }
+                if (ul) {
+                    if (acik !== "ul") { kapat(); acik = "ul"; html += "<ul>"; }
+                    // Görev listesi: "- [x] ..." / "- [ ] ..." (başvuru taslağının belge bölümü)
+                    const madde = ul[1].replace(/^\[[xX]\]\s*/, "☑ ").replace(/^\[ \]\s*/, "☐ ");
+                    html += `<li>${inlineMd(madde)}</li>`; i++; continue;
+                }
                 const ol = line.match(/^\s*\d+[.)]\s+(.*)$/);
                 if (ol) { if (acik !== "ol") { kapat(); acik = "ol"; html += "<ol>"; } html += `<li>${inlineMd(ol[1])}</li>`; i++; continue; }
                 if (!line.trim()) { kapat(); i++; continue; }
@@ -704,8 +711,46 @@
             }
         }
 
+        let klAcikTaslak = null;
+
+        async function taslakOlustur(el) {
+            if (klAcikTesvik === null) return;
+            if (klAcikTaslak && !confirm("Mevcut taslağın yerine yenisi oluşturulsun mu? (Günlük sınırdan düşer.)")) return;
+            const mesaj = document.getElementById("kl-taslak-mesaj");
+            el.disabled = true;
+            mesaj.innerHTML = '<div class="loading"><div class="spinner"></div></div><div class="bolum-aciklama">Taslak hazırlanıyor, bu 30-60 saniye sürebilir…</div>';
+            try {
+                const res = await fetch(`${API_BASE}/basvuru-listesi/${klAcikTesvik}/taslak`, {
+                    method: "POST", headers: { "Authorization": `Bearer ${authToken}` }
+                });
+                const d = await res.json();
+                if (!res.ok) {
+                    const ek = res.status === 403 && /rıza/.test(d.detail || "")
+                        ? ' <a href="#" data-tikla="bolumeGit" data-arg="settings">Ayarlara git</a>' : "";
+                    mesaj.innerHTML = `<div class="error">${escapeHtml(hataMetni(d))}${ek}</div>`;
+                    return;
+                }
+                kontrolListesiCiz(d);
+            } catch (e) {
+                mesaj.innerHTML = `<div class="error">Hata: ${escapeHtml(e.message)}</div>`;
+            } finally {
+                el.disabled = false;
+            }
+        }
+
+        async function taslakKopyala() {
+            const mesaj = document.getElementById("kl-taslak-mesaj");
+            try {
+                await navigator.clipboard.writeText(klAcikTaslak || "");
+                mesaj.innerHTML = '<div class="success">Taslak metni panoya kopyalandı.</div>';
+            } catch (e) {
+                mesaj.innerHTML = '<div class="error">Kopyalanamadı; metni seçip elle kopyalayın.</div>';
+            }
+        }
+
         function kontrolListesiCiz(d) {
             klAcikTesvik = d.tesvik.id;
+            klAcikTaslak = d.taslak || null;
             const detay = document.getElementById("kontrol-yazdir");
             document.getElementById("basvuru-listeleri").hidden = true;
             detay.hidden = false;
@@ -732,6 +777,19 @@
                 </div>
                 <div class="ilerleme"><span id="kl-cubuk" style="width:${klYuzde(d)}%"></span></div>
                 ${d.uyari ? `<div class="onizleme-notu">${escapeHtml(d.uyari)}</div>` : gruplar}
+                <div class="kl-taslak">
+                    <h4>Başvuru ön taslağı</h4>
+                    ${d.taslak ? `
+                        <div class="kl-taslak-metin">${mdToHtml(d.taslak)}</div>
+                        <div class="kl-taslak-alt yazdirma-gizle">Oluşturma: ${escapeHtml(new Date(d.taslak_tarihi).toLocaleString("tr-TR"))} ·
+                            <button type="button" class="ikincil-btn" data-tikla="taslakKopyala">Metni kopyala</button>
+                            <button type="button" class="ikincil-btn" data-tikla="taslakOlustur">Yeniden oluştur</button></div>`
+                    : `<p class="yazdirma-gizle">Profilinizden ve bu programın bilgilerinden, kurumun başvuru formuna aktarabileceğiniz
+                            düzenlenebilir bir metin taslağı hazırlanır. Bilinmeyen yerler “[DOLDURUN]” olarak bırakılır, rakam uydurulmaz.
+                            Yapay zekâ (Anthropic, ABD) kullanılır ve açık rızanız gerekir; günde en çok 5 taslak.</p>
+                        <button type="button" class="birincil-btn yazdirma-gizle" data-tikla="taslakOlustur">Taslak oluştur</button>`}
+                    <div id="kl-taslak-mesaj" class="yazdirma-gizle"></div>
+                </div>
                 <div class="kl-not">Liste, kaydımızdaki şart ve belge bilgisinden üretilir; kesin ve güncel koşullar için
                     ${kaynak ? `<a href="${kaynak}" target="_blank" rel="noopener">resmi kaynağı</a>` : "kurumun resmi sayfasını"} kontrol edin.
                     ${d.tesvik.aktif_mi === false ? " Bu programın başvuru dönemi şu an kapalı." : ""}</div>
@@ -1417,6 +1475,8 @@
             kontrolListesiYazdir: () => kontrolListesiYazdir(),
             kontrolListesiKaldir: (el) => kontrolListesiKaldir(el.dataset.arg),
             basvurularYukle: () => basvurularYukle(),
+            taslakOlustur: (el) => taslakOlustur(el),
+            taslakKopyala: () => taslakKopyala(),
         };
         function eylemBagla(olay, oznitelik) {
             document.addEventListener(olay, (e) => {

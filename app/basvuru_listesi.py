@@ -21,14 +21,16 @@ from fastapi import APIRouter, Depends, HTTPException, status
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
+from app import basvuru_taslagi
 from app.auth import get_current_org
-from app.models import BasvuruTakibi, Organization, Tesvik, get_db
-from app.rate_limit import org_hiz_siniri
+from app.models import BasvuruTakibi, FinancialProfile, Organization, PlanType, Tesvik, get_db, settings
+from app.rate_limit import org_hiz_siniri, sayac as hiz_sayaci
 
 router = APIRouter(prefix="/api/basvuru-listesi", tags=["başvuru kontrol listesi"])
 
 TUR_ETIKETI = {"sart": "Şart", "belge": "Belge", "basvuru": "Başvuru"}
 EN_COK_MADDE = 100
+GUNLUK_TASLAK_SINIRI = 5  # kuruluş başına; her taslak bir ücretli Claude çağrısı
 
 
 def _anahtar(tur: str, metin: str) -> str:
@@ -80,6 +82,8 @@ def _yanit(t: Tesvik, kayit: BasvuruTakibi | None) -> dict:
         "toplam": len(liste),
         "takipte": kayit is not None,
         "guncelleme": kayit.guncelleme.isoformat() if kayit and kayit.guncelleme else None,
+        "taslak": kayit.taslak if kayit else None,
+        "taslak_tarihi": kayit.taslak_tarihi.isoformat() if kayit and kayit.taslak_tarihi else None,
         "uyari": None if liste else ("Bu destek için şart/belge bilgisi henüz sistemde yok; kurumun resmi "
                                      "sayfasından kontrol edin."),
     }
@@ -138,6 +142,48 @@ def isaretleri_kaydet(tesvik_id: int, girdi: IsaretGirdi, current_org: Organizat
         kayit = BasvuruTakibi(org_id=current_org.id, tesvik_id=tesvik_id, olusturma=simdi)
         db.add(kayit)
     kayit.isaretli = sorted(set(girdi.isaretli))
+    kayit.guncelleme = simdi
+    db.commit()
+    db.refresh(kayit)
+    return _yanit(t, kayit)
+
+
+@router.post("/{tesvik_id}/taslak")
+def taslak_olustur(tesvik_id: int, current_org: Organization = Depends(get_current_org),
+                   db: Session = Depends(get_db)):
+    """Yapay zekâ ile başvuru ön taslağı (app/basvuru_taslagi.py). Koşullar, ücretli çağrıdan ÖNCE sırayla denetlenir:
+    PRO+ plan, açık rıza (profil Anthropic'e/ABD'ye gider), kayıtlı profil, yapılandırılmış servis, günlük sınır."""
+    if current_org.plan == PlanType.FREE:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN,
+                            detail="Başvuru taslağı PRO ve üzeri planlarda kullanılabilir.")
+    if not current_org.ai_yurtdisi_riza:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN,
+                            detail="Taslak, işletme profilinizi yapay zekâ servisine (Anthropic, ABD) gönderir. "
+                                   "Ayarlar bölümünden açık rızanızı verirseniz kullanabilirsiniz.")
+    t = _tesvik(db, tesvik_id)
+    profil_row = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
+    if profil_row is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
+                            detail="Önce Profil & Öneriler bölümünden işletme profilinizi kaydedin.")
+    if not settings.ANTHROPIC_API_KEY:
+        raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                            detail="Yapay zekâ servisi bu sunucuda yapılandırılmamış.")
+    izin, _ = hiz_sayaci.izin_ver(f"taslak:{current_org.id}", GUNLUK_TASLAK_SINIRI, 86400)
+    if not izin:
+        raise HTTPException(status_code=status.HTTP_429_TOO_MANY_REQUESTS,
+                            detail=f"Günlük {GUNLUK_TASLAK_SINIRI} taslak sınırına ulaştınız; yarın tekrar deneyin.")
+
+    from app.rag import profil_sozlugu
+    kayit = _kayit(db, current_org, tesvik_id)
+    try:
+        metin, _kullanim = basvuru_taslagi.uret(t, profil_sozlugu(profil_row), _yanit(t, kayit)["maddeler"])
+    except basvuru_taslagi.TaslakHatasi as e:
+        raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail=str(e))
+    simdi = datetime.now(timezone.utc).replace(tzinfo=None)
+    if kayit is None:
+        kayit = BasvuruTakibi(org_id=current_org.id, tesvik_id=tesvik_id, isaretli=[], olusturma=simdi)
+        db.add(kayit)
+    kayit.taslak, kayit.taslak_tarihi, kayit.taslak_model = metin, simdi, settings.CLAUDE_MODEL[:60]
     kayit.guncelleme = simdi
     db.commit()
     db.refresh(kayit)

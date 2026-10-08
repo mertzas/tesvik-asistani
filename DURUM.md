@@ -66,8 +66,13 @@ Son güncelleme: 2026-10-08 (güvenlik kod listesi 1–3: JWT iptali, doğrulama
   `basvuru_takipleri` (göç `i6d8f0a2b678`; dev DB'de sunucu create_all ile önce oluşturmuştu, şema aynı olduğu
   doğrulanıp `alembic stamp head`; yedek `tesvikler_oncesi_gocI.db.bak`). Maddeler kaydın şart/belge/başvuru yeri
   alanlarından; işaretler sunucuda; eşleşme kartında "Kontrol listesi", menüde "Başvurularım"; yazdır/PDF tarayıcıda.
-  Hesap silmede silinir, KVKK metnine eklendi. Sıradaki: taslak üretimi (ücretli, rıza gerekir), tarih hatırlatması
-  (SMTP sonrası).
+  Hesap silmede silinir, KVKK metnine eklendi.
+- **Başvuru ön taslağı** (2026-10-08, kod tamam, CANLI ÇAĞRI YAPILMADI): `app/basvuru_taslagi.py` (`--self-test` 6/6),
+  `POST /api/basvuru-listesi/{id}/taslak`; koşullar ücretli çağrıdan önce: PRO+, açık rıza, profil, API anahtarı,
+  kuruluş başına günde 5. Belgeler bölümü modelden değil kontrol listesinden; bilinmeyen yerler [DOLDURUN].
+  Göç `j7e9a1b3c789` dev DB'ye uygulandı (yedek `tesvikler_oncesi_gocJ.db.bak`). Testler modeli yamar (ağ yok).
+  BEKLEYEN: gerçek modelle 1-3 örnek taslak ölçümü (bakiye + onay; tahmini ≤0,05 USD/taslak). Sıradaki: tarih
+  hatırlatması (SMTP sonrası).
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

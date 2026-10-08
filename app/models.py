@@ -416,6 +416,10 @@ class BasvuruTakibi(Base):
     isaretli = Column(JSON, nullable=False, default=list)
     olusturma = Column(DateTime, nullable=False, default=lambda: datetime.now(timezone.utc).replace(tzinfo=None))
     guncelleme = Column(DateTime, nullable=False, default=lambda: datetime.now(timezone.utc).replace(tzinfo=None))
+    # Yapay zekâ ile üretilen başvuru ön taslağı (app/basvuru_taslagi.py); tekrar ücret ödenmesin diye saklanır.
+    taslak = Column(Text, nullable=True)
+    taslak_tarihi = Column(DateTime, nullable=True)
+    taslak_model = Column(String(60), nullable=True)
 
 
 class FinancialProfile(Base):

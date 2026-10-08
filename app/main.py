@@ -64,7 +64,9 @@ from app.budget import hesapla as butce_hesapla
 from app.cilek_panel import router as cilek_router
 from app.ikas_panel import oauth_router as ikas_oauth_router, router as ikas_router
 from app.basvuru_listesi import router as basvuru_listesi_router
-from app.cagrilar import router as cagrilar_router
+from app.basvuru_taslagi import kart_ozeti
+from app.cagrilar import program_cagrilari, router as cagrilar_router
+from app.ozet import router as ozet_router
 from app.hesap_belirtec import belirtec_uret, belirtec_tuket, SIFIRLAMA, DOGRULAMA
 from app.email import EmailService
 from app.schemas import SifreUnuttum, SifreSifirla, BelirtecGirdi
@@ -249,6 +251,7 @@ app.include_router(ikas_router)
 app.include_router(ikas_oauth_router)
 app.include_router(basvuru_listesi_router)
 app.include_router(cagrilar_router)
+app.include_router(ozet_router)
 
 STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
 
@@ -595,7 +598,7 @@ def sor(
                 id=t.id,
                 kurum=t.kurum,
                 baslik=t.baslik,
-                ozet=t.ozet,
+                ozet=kart_ozeti(t.ozet),
                 hedef_kitle=t.hedef_kitle,
                 baslama_tarihi=t.baslama_tarihi,
                 bitis_tarihi=t.bitis_tarihi,
@@ -676,7 +679,7 @@ def sor_akis(
         logger.exception("/api/sor/akis hazırlık başarısız")
         raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=GENEL_HATA)
     results = [
-        SearchResult(id=t.id, kurum=t.kurum, baslik=t.baslik, ozet=t.ozet, hedef_kitle=t.hedef_kitle,
+        SearchResult(id=t.id, kurum=t.kurum, baslik=t.baslik, ozet=kart_ozeti(t.ozet), hedef_kitle=t.hedef_kitle,
                      baslama_tarihi=t.baslama_tarihi, bitis_tarihi=t.bitis_tarihi).model_dump(mode="json")
         for t in kayitlar
     ]
@@ -789,7 +792,7 @@ def tesvik_eslesme(
                 id=s.tesvik.id,
                 kurum=s.tesvik.kurum,
                 baslik=s.tesvik.baslik,
-                ozet=s.tesvik.ozet,
+                ozet=kart_ozeti(s.tesvik.ozet),
                 tesvil_tutari=s.tesvik.tesvil_tutari,
                 kaynak_url=s.tesvik.kaynak_url,
                 skor=s.skor,
@@ -808,6 +811,7 @@ def tesvik_eslesme(
                 destek_verilme_suresi=s.tesvik.destek_verilme_suresi,
                 kategori=s.tesvik.kategori,
                 alt_kategori=(s.tesvik.uygunluk_kriterleri or {}).get("alt_kategori"),
+                cagri=next(iter(program_cagrilari(s.tesvik, kapanmis_en_cok=0)), None),
             )
             for s in sonuclar
         ],

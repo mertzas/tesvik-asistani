@@ -74,6 +74,13 @@ def _kisalt(metin: str, sinir: int) -> str:
     return (kesik[:nokta + 1] if nokta > sinir // 2 else kesik.rsplit(" ", 1)[0]) + " […]"
 
 
+def kart_ozeti(ozet: str | None, sinir: int = 320) -> str:
+    """Eşleşme ve arama kartındaki özet: menü satırları atılmış, cümle sonunda kısaltılmış metin. Cümle kalmazsa boş
+    döner ve kart özetsiz gösterilir; başka alana (detay, hedef kitle) geri düşülmez, çünkü onların ilk cümlesi çoğu
+    kayıtta başka programın ya da kurumun genel metnidir (ölçüm 2026-10-08)."""
+    return _kisalt(_temiz_ozet(ozet), sinir)
+
+
 def baglam(t: Tesvik, profil: dict) -> str:
     satirlar = [f"PROGRAM: {t.baslik} ({t.kurum})"]
     for etiket, deger in (("Özet", _temiz_ozet(t.ozet)), ("Tutar/oran", t.tesvil_tutari),
@@ -160,6 +167,8 @@ def _self_test() -> int:
          "1812 ile girişimcilerin iş fikirlerini teşebbüse dönüştürmesi amaçlanır"),
         ("uzun metin cümle sonunda kesilir", _kisalt("Birinci cümle burada. İkinci cümle uzun " * 3, 70)
          .endswith("burada. […]")),
+        ("yalnız menü olan özet kartta boş", kart_ozeti("Girişimci Destek Programı\nKapasite Geliştirme Destek Programı") == ""),
+        ("kart özeti sınırı aşmaz", len(kart_ozeti("Bu program işletmelerin ihracat kapasitesini artırır. " * 20)) <= 324),
     ]
     for ad, ok in kontroller:
         print(f"  {'OK ' if ok else 'HATA'} {ad}")

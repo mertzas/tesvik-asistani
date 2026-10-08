@@ -1,8 +1,7 @@
 """Kullanıcıya giden metinlerde Türkçe karakter (2026-10-08): eşleştirme kartı gerekçeleri, 9903 ön değerlendirmesi,
 veri tazeliği uyarıları ve hata mesajları ASCII yazılmıştı ("Sektorunuz ... destegin kapsamina uygun")."""
-import io
+import ast
 import re
-import tokenize
 from pathlib import Path
 
 import pytest
@@ -15,8 +14,8 @@ MODULLER = ["matching.py", "nace_9903.py", "veri_tazeligi.py", "billing.py", "ko
 ASCII_KELIMELER = re.compile(
     r"\b(destegin|destegi|isletmesi|isletme|eslesiyor|eslesme|gunluk|ozeldir|girdiginiz|urun|sektorunuz|"
     r"calisan|degil|icin|gore|sart|sarti|olcek|olceginiz|yatirim|yatirimlar|bolgede|bolgeye|karsilayip|"
-    r"yetistiriciligi|odeme|kayitlari|fiyatlari|hic|okunamadi)\b")
-KOD_ANAHTARI = re.compile(r"""^[rbfu]*(['"])[a-z0-9_]+\1$""")
+    r"yetistiriciligi|odeme|kayitlari|fiyatlari|hic|okunamadi|henuz|gecersiz|tamamlanmadi)\b")
+KOD_ANAHTARI = re.compile(r"^[a-z0-9_]+$")
 
 
 def _ascii_turkce(s: str) -> bool:
@@ -24,10 +23,28 @@ def _ascii_turkce(s: str) -> bool:
 
 
 def _metin_sabitleri(yol: Path):
-    for tok in tokenize.generate_tokens(io.StringIO(yol.read_text(encoding="utf-8")).readline):
-        s = tok.string
-        if tok.type == tokenize.STRING and not s.lstrip("rbfuRBFU").startswith(('"""', "'''")):
-            yield tok.start[0], s
+    """Metin sabitleri ve f-string'lerin SABİT parçaları (ast ile; Python sürümünden bağımsız).
+
+    2026-10-08: tokenize tabanlı önceki hâl Python 3.12+'da f-string'leri hiç görmüyordu (PEP 701: f-string parça parça
+    belirteçlenir), 3.11'de (CI) ise "{olcek:,.0f}" gibi değişken adlarını metin sanıyordu: yerelde yeşil, CI'da
+    kırmızıydı ve gerçek bir hatayı ("Odeme henuz tamamlanmadi") gizliyordu. Docstring'ler ve üç tırnaklı metinler
+    (açıklama/şablon) önceki gibi dışarıda."""
+    kaynak = yol.read_text(encoding="utf-8")
+    agac = ast.parse(kaynak)
+    docstringler = {id(n.value) for n in ast.walk(agac) if isinstance(n, ast.Expr) and isinstance(n.value, ast.Constant)}
+
+    def uc_tirnak(dugum) -> bool:
+        parca = ast.get_source_segment(kaynak, dugum) or ""
+        return parca.lstrip("rbfuRBFU").startswith(('"""', "'''"))
+
+    fstring_parcalari = {id(v) for n in ast.walk(agac) if isinstance(n, ast.JoinedStr) for v in n.values}
+    for n in ast.walk(agac):
+        if isinstance(n, ast.JoinedStr) and not uc_tirnak(n):
+            sabit = "".join(v.value for v in n.values if isinstance(v, ast.Constant) and isinstance(v.value, str))
+            yield n.lineno, sabit
+        elif (isinstance(n, ast.Constant) and isinstance(n.value, str) and id(n) not in docstringler
+              and id(n) not in fstring_parcalari and not uc_tirnak(n)):
+            yield n.lineno, n.value
 
 
 @pytest.mark.parametrize("modul", MODULLER)

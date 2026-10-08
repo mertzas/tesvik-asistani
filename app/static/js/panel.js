@@ -51,6 +51,8 @@
             setupMenuListeners();
             document.getElementById("tum-oturumlari-kapat").addEventListener("click", tumOturumlariKapat);
             epostaDurumuYukle();
+            ozetYukle();
+            illeriYukle();
         });
 
         // E-posta doğrulama uyarısı (giriş doğrulamaya bağlı değil; yalnızca hatırlatır).
@@ -95,11 +97,15 @@
         function showSection(sectionId) {
             document.querySelectorAll(".section").forEach(s => s.classList.add("hidden"));
             document.getElementById(sectionId).classList.remove("hidden");
+            // Bölümler tek sayfada; önceki bölümün kaydırma konumu yeni bölümü ortadan açıyordu.
+            window.scrollTo(0, 0);
             // Geçmiş ve Ayarlar sekmeleri boş div'di (denetim 2026-10-07); açılınca doldurulur.
             if (sectionId === "history") loadHistory();
             if (sectionId === "settings") loadSettings();
             if (sectionId === "basvurular") basvurularYukle();
             if (sectionId === "profil") ikasKartiYukle();
+            if (sectionId === "ozet") ozetYukle();
+            if (sectionId === "destekler" && !eslesmeYuklendi) bulUygunDestekler();
         }
 
         // ---- İKAS mağaza verisi (yalnızca bağlantı kaydı varsa görünür) ----
@@ -380,7 +386,7 @@
                 <div class="result-card">
                     <div class="kurum">${escapeHtml(r.kurum)}</div>
                     <div class="baslik">${escapeHtml(r.baslik)}</div>
-                    <div class="ozet">${escapeHtml(r.ozet)}</div>
+                    ${r.ozet ? `<div class="ozet">${escapeHtml(r.ozet)}</div>` : ""}
                     <div class="meta">
                         <span>👥 ${escapeHtml(r.hedef_kitle || "Genel")}</span>
                         ${r.baslama_tarihi ? `<span>📅 Başlangıç: ${new Date(r.baslama_tarihi).toLocaleDateString('tr-TR')}</span>` : ""}
@@ -816,6 +822,92 @@
             }
         }
 
+        // ---- Ana sayfa (GET /api/ozet): sıradaki adım, yaklaşan son başvurular, öne çıkan destekler, devam edenler ----
+        async function ozetYukle() {
+            const kutu = document.getElementById("ozet-icerik");
+            try {
+                const r = await fetch(`${API_BASE}/ozet`, { headers: { Authorization: `Bearer ${authToken}` } });
+                if (!r.ok) throw new Error(hataMetni(await r.json().catch(() => ({}))));
+                kutu.innerHTML = ozetHtml(await r.json());
+            } catch (e) {
+                kutu.innerHTML = `<div class="error">Özet yüklenemedi: ${escapeHtml(e.message)}</div>`;
+            }
+        }
+
+        function ozetEylem(el) {
+            const eylem = el.dataset.eylem;
+            if (eylem === "liste") {
+                bolumeGit("basvurular");
+                kontrolListesiAc(el.dataset.arg);
+            } else {
+                bolumeGit(eylem);
+            }
+        }
+
+        function ozetDugme(metin, eylem, arg, sinif = "ikincil-btn") {
+            return `<button type="button" class="${sinif}" data-tikla="ozetEylem" data-eylem="${escapeHtml(eylem)}"`
+                + (arg !== undefined ? ` data-arg="${escapeHtml(String(arg))}"` : "") + `>${escapeHtml(metin)}</button>`;
+        }
+
+        function ozetHtml(d) {
+            const a = d.sonraki_adim;
+            const adim = `<div class="ozet-adim"><div><div class="etiket">Sıradaki adım</div><div class="metin">${escapeHtml(a.metin)}</div></div>`
+                + `<button type="button" data-tikla="ozetEylem" data-eylem="${escapeHtml(a.eylem)}"`
+                + (a.tesvik_id ? ` data-arg="${escapeHtml(String(a.tesvik_id))}"` : "") + `>${escapeHtml(a.dugme)}</button></div>`;
+
+            const p = d.profil;
+            const eksikler = p.eksikler.slice(0, 3).map(e => `<li><strong>${escapeHtml(e.etiket)}:</strong> ${escapeHtml(e.neden)}</li>`).join("");
+            const profilKart = `<div class="ozet-kart"><h3>İşletme profili</h3>`
+                + (p.var ? `<div style="font-size:13px; color:#555;">%${p.tamamlanma} tamamlandı</div><div class="tamamlanma"><span style="width:${p.tamamlanma}%"></span></div>`
+                         : `<p class="bos">Profil henüz yok. Altı temel bilgiyle uygun destekleri hemen listeleriz.</p>`)
+                + (eksikler ? `<ul class="eksikler">${eksikler}</ul>` : `<p class="bos">Temel bilgiler tamam.</p>`)
+                + p.uyarilar.map(u => `<p class="bos" style="color:#9a5b00;">⚠ ${escapeHtml(u)}</p>`).join("")
+                + `<div style="margin-top:12px;">${ozetDugme(p.var ? "Profili düzenle" : "Profili doldur", "profil")}</div></div>`;
+
+            const yaklasan = d.yaklasan_son_basvurular.length
+                ? d.yaklasan_son_basvurular.map(c => `<div class="ozet-satir"><div><div class="ad">${escapeHtml(c.baslik)}</div>`
+                    + `<div class="alt">${escapeHtml(c.kurum)} · ${escapeHtml(c.ad)}</div>`
+                    + `<span class="cagri-cip${c.durum === "acik" ? " acik" : ""}">📅 ${escapeHtml(cagriOzeti(c))}</span></div>`
+                    + ozetDugme("Liste", "liste", c.tesvik_id) + `</div>`).join("")
+                : `<p class="bos">Size uyan programlarda önümüzdeki 60 günde doğrulanmış bir son başvuru tarihi yok.</p>`;
+            const yaklasanKart = `<div class="ozet-kart"><h3>Yaklaşan son başvurular</h3>${yaklasan}</div>`;
+
+            const oneCikan = d.one_cikanlar.length
+                ? d.one_cikanlar.map(e => `<div class="ozet-satir"><div><div class="ad">${escapeHtml(e.baslik)}</div>`
+                    + `<div class="alt">${escapeHtml(e.kurum)} · Uygunluk %${Math.round(e.skor * 100)}</div>`
+                    + (e.cagri ? `<span class="cagri-cip${e.cagri.durum === "acik" ? " acik" : ""}">📅 ${escapeHtml(cagriOzeti(e.cagri))}</span>` : "")
+                    + `</div>${ozetDugme("Liste", "liste", e.id)}</div>`).join("")
+                  + `<div style="margin-top:12px;">${ozetDugme(`Tümünü gör (${d.eslesme_sayisi})`, "destekler", undefined, "birincil-btn")}</div>`
+                : `<p class="bos">${p.var ? "Profilinize uyan açık program bulunamadı." : "Profil doldurulunca burada listelenir."}</p>`;
+            const oneCikanKart = `<div class="ozet-kart"><h3>Size en uygun destekler</h3>${oneCikan}</div>`;
+
+            const basvuru = d.basvurular.length
+                ? d.basvurular.map(b => `<div class="ozet-satir"><div><div class="ad">${escapeHtml(b.baslik)}</div>`
+                    + `<div class="alt">${b.tamamlanan}/${b.toplam} madde${b.taslak_var ? " · taslak hazır" : ""}`
+                    + (b.cagri ? ` · ${escapeHtml(cagriOzeti(b.cagri))}` : "") + `</div></div>`
+                    + ozetDugme("Devam et", "liste", b.tesvik_id) + `</div>`).join("")
+                : `<p class="bos">Henüz başvuru hazırlığı yok. Bir desteğin “Kontrol listesi”ni açtığınızda burada takip edilir.</p>`;
+            const basvuruKart = `<div class="ozet-kart"><h3>Başvurularım</h3>${basvuru}</div>`;
+
+            const ikas = d.ikas ? `<div class="ozet-kart ozet-tam"><h3>İKAS mağazası</h3><p class="bos">${escapeHtml(d.ikas.magaza || "")}`
+                + (d.ikas.siparis != null ? ` · son 12 ay ${d.ikas.siparis} sipariş` : "")
+                + (d.ikas.yurt_disi ? ` · ${d.ikas.yurt_disi} yurt dışı teslimat` : "")
+                + `</p>${ozetDugme("Mağaza verisini gör", "profil")}</div>` : "";
+
+            const onizleme = d.onizleme && d.eslesme_sayisi > 3
+                ? `<div class="onizleme-notu ozet-tam">FREE planda ilk 3 destek ayrıntılı görünür; ${d.eslesme_sayisi} eşleşmenin tamamı için ${ozetDugme("planlara bakın", "pricing")}</div>` : "";
+            return adim + `<div class="ozet-grid">${oneCikanKart}${yaklasanKart}${basvuruKart}${profilKart}${ikas}${onizleme}</div>`;
+        }
+
+        async function illeriYukle() {
+            try {
+                const r = await fetch(`${API_BASE}/iller`);
+                if (!r.ok) return;
+                const { iller } = await r.json();
+                document.getElementById("il-liste").innerHTML = iller.map(il => `<option value="${escapeHtml(il)}">`).join("");
+            } catch (e) { /* liste isteğe bağlı: serbest yazım yine çalışır */ }
+        }
+
         // Dönemsel başvuru çağrıları (app/cagrilar.py); yalnız resmi duyurudan doğrulanmış tarihler.
         function cagriTarihi(iso) {
             if (!iso) return "";
@@ -977,36 +1069,12 @@
         // ---- Kayıt sonrası karşılama rehberi ----
         // Profil yoksa (GET /api/profil 404) gösterilir; kullanıcı kapatırsa bu tarayıcıda bir daha açılmaz.
         // Depolama erişimi engellenmiş olabilir (gizli pencere vb.): her okuma/yazma try/catch içinde.
-        const KARSILAMA_ANAHTARI = "karsilama_kapandi";
-        function karsilamaKapatildiMi() {
-            try { return localStorage.getItem(KARSILAMA_ANAHTARI) === "1"; } catch (e) { return false; }
-        }
-        function karsilamaGuncelle(profilVar) {
-            const kart = document.getElementById("karsilama");
-            if (!kart) return;
-            if (profilVar) {
-                document.getElementById("karsilama-adim-profil").classList.add("tamam");
-                return;  // açıksa açık kalır (2. ve 3. adım için); profil sonradan kaydedildiyse işaretlenir
-            }
-            kart.hidden = karsilamaKapatildiMi();
-        }
-        function karsilamaKapat() {
-            document.getElementById("karsilama").hidden = true;
-            try { localStorage.setItem(KARSILAMA_ANAHTARI, "1"); } catch (e) { /* yalnızca bu oturumda gizli kalır */ }
-        }
-        function karsilamaEslesme() {
-            bolumeGit("profil");
-            bulUygunDestekler();
-        }
-
         async function loadFinancialProfile() {
             try {
                 const res = await fetch(`${API_BASE}/profil`, {
                     headers: { "Authorization": `Bearer ${authToken}` }
                 });
-                if (res.status === 404) karsilamaGuncelle(false);
                 if (!res.ok) return;
-                karsilamaGuncelle(true);
                 const p = await res.json();
                 document.getElementById("p-sektor").value = p.sektor || "genel";
                 document.getElementById("p-bolge").value = p.bolge || "";
@@ -1156,15 +1224,18 @@
                             return;
                         }
                         mesajDiv.innerHTML = `<div class="success">Profil kaydedildi.</div>`;
-                        karsilamaGuncelle(true);
-                    } catch (e2) {
+                        eslesmeYuklendi = false;
+                        bolumeGit("destekler");
+                            } catch (e2) {
                         mesajDiv.innerHTML = `<div class="error">Hata: ${e2.message}</div>`;
                     }
                 });
             }
         });
 
+        let eslesmeYuklendi = false;
         async function bulUygunDestekler() {
+            eslesmeYuklendi = true;
             const section = document.getElementById("eslesme-section");
             const ozetDiv = document.getElementById("eslesme-ozet");
             const resultsDiv = document.getElementById("eslesme-results");
@@ -1264,7 +1335,8 @@
                         ${t.aktif_mi === true
                             ? `<div style="display:inline-block; margin:4px 0 8px; padding:3px 10px; border-radius:100px; background:#e4efe9; color:#0f4438; font-size:12px; font-weight:bold;">✓ Aktif olduğu doğrulandı</div>`
                             : `<div style="display:inline-block; margin:4px 0 8px; padding:3px 10px; border-radius:100px; background:#fdf3e2; color:#7a4b22; font-size:12px; font-weight:bold;" title="Bu programın hala başvuruya açık olduğu tarafımızca doğrulanmadı.">⚠ Aktifliği doğrulanmadı — kurumdan teyit edin</div>`}
-                        <div class="ozet">${escapeHtml(t.ozet)}</div>
+                        ${t.cagri ? `<div class="cagri-cip${t.cagri.durum === "acik" ? " acik" : ""}">📅 ${escapeHtml(cagriOzeti(t.cagri))}</div>` : ""}
+                        ${t.ozet ? `<div class="ozet">${escapeHtml(t.ozet)}</div>` : ""}
                         ${t.tesvil_tutari ? `<div class="meta"><span>💰 ${escapeHtml(t.tesvil_tutari)}</span></div>` : ""}
                         ${t.tutari_tahmini_profil ? `<div class="meta"><span>🎯 Tahmini: ₺${t.tutari_tahmini_profil.toLocaleString('tr-TR', {maximumFractionDigits:0})}</span></div>` : ""}
                         ${t.gerekce.length ? `<div class="meta" style="flex-direction:column; align-items:flex-start; gap:5px; margin-top:8px;">${t.gerekce.map(g => `<span>✓ ${escapeHtml(g)}</span>`).join("")}</div>` : ""}
@@ -1589,8 +1661,7 @@
             bolumeGit: (el) => bolumeGit(el.dataset.arg),
             onTarimKategoriDegisti: () => onTarimKategoriDegisti(),
             rizaDegistir: (el) => rizaDegistir(el),
-            karsilamaKapat: () => karsilamaKapat(),
-            karsilamaEslesme: () => karsilamaEslesme(),
+            ozetEylem: (el) => ozetEylem(el),
             kontrolListesiAc: (el) => kontrolListesiAc(el.dataset.arg),
             kontrolMaddesi: (el) => kontrolMaddesi(el),
             kontrolListesiYazdir: () => kontrolListesiYazdir(),

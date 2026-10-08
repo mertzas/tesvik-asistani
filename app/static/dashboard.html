@@ -80,8 +80,46 @@
             #user-email { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; font-size: 13px; }
             .search-box { flex-direction: column; }
             .search-box input, .search-box button { width: 100%; }
-            #profil-form { grid-template-columns: 1fr !important; }
+            #profil-form, .profil-ayrinti-ic, .ozet-grid { grid-template-columns: 1fr !important; }
+            .sidebar-menu .menu-grup { display: none; }
+            .bolum-ust { flex-direction: column; align-items: stretch; }
         }
+
+        /* Sadeleştirilmiş panel (2026-10-08): menü grupları, ana sayfa kartları, profil formu, son başvuru çipi */
+        .sidebar-menu .menu-grup { margin: 18px 0 6px; padding: 0 15px; font-size: 11px; letter-spacing: .08em;
+                                   text-transform: uppercase; color: rgba(255,255,255,.45); }
+        .profil-form { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+        .form-bolum-baslik { grid-column: 1 / -1; margin: 0; font-size: 13px; font-weight: bold; color: #444; }
+        .profil-ayrinti { grid-column: 1 / -1; border: 1px solid #e6e8f0; border-radius: 8px; padding: 12px 16px; background: #fafbff; }
+        .profil-ayrinti > summary { cursor: pointer; font-weight: bold; color: #4b55c4; font-size: 14px; }
+        .profil-ayrinti-ic { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-top: 14px; }
+        .bolum-ust { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 4px; }
+        .bolum-ust .bolum-aciklama { margin: 0; flex: 1; }
+        .bolum-ust-eylem { display: flex; gap: 8px; flex-wrap: wrap; }
+        .cagri-cip { display: inline-block; margin: 2px 0 8px; padding: 3px 10px; border-radius: 100px; font-size: 12px;
+                     font-weight: bold; background: #eef0fb; color: #4b55c4; }
+        .cagri-cip.acik { background: #e3f3ea; color: #1d7a4f; }
+        .ozet-adim { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+                     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: #fff; border-radius: 12px;
+                     padding: 22px 24px; margin-bottom: 20px; }
+        .ozet-adim .etiket { font-size: 12px; text-transform: uppercase; letter-spacing: .08em; opacity: .85; }
+        .ozet-adim .metin { font-size: 17px; font-weight: bold; margin-top: 4px; max-width: 62ch; }
+        .ozet-adim button { background: #fff; color: #4b55c4; border: 0; border-radius: 6px; padding: 10px 18px;
+                            font-weight: bold; cursor: pointer; }
+        .ozet-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; }
+        .ozet-kart { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 2px 10px rgba(0,0,0,.06); min-width: 0; }
+        .ozet-kart h3 { font-size: 16px; margin: 0 0 12px; color: #333; }
+        .ozet-kart .bos { color: #777; font-size: 14px; }
+        .ozet-satir { display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 0;
+                      border-top: 1px solid #f0f0f4; }
+        .ozet-satir:first-of-type { border-top: 0; }
+        .ozet-satir .ad { font-weight: bold; font-size: 14px; color: #333; }
+        .ozet-satir .alt { font-size: 12px; color: #777; margin-top: 2px; }
+        .ozet-satir button { flex: 0 0 auto; }
+        .tamamlanma { height: 8px; background: #eef0fb; border-radius: 100px; overflow: hidden; margin: 6px 0 12px; }
+        .tamamlanma span { display: block; height: 100%; background: #667eea; }
+        .ozet-kart ul.eksikler { margin: 0; padding-left: 18px; font-size: 13px; color: #555; line-height: 1.6; }
+        .ozet-tam { grid-column: 1 / -1; }
 
         .main-content {
             flex: 1;
@@ -619,12 +657,15 @@
     <div class="sidebar">
         <div class="sidebar-logo">📊 Teşvik Asistanı</div>
         <ul class="sidebar-menu">
-            <li><a href="#" class="menu-link active" data-section="search">🔍 Arama</a></li>
-            <li><a href="#" class="menu-link" data-section="profil">💼 Profil &amp; Öneriler</a></li>
-            <li><a href="#" class="menu-link" data-section="analytics">📈 İstatistikler</a></li>
-            <li><a href="#" class="menu-link" data-section="pricing">💳 Planlama</a></li>
+            <li><a href="#" class="menu-link active" data-section="ozet">🏠 Ana sayfa</a></li>
+            <li><a href="#" class="menu-link" data-section="destekler">🎯 Uygun destekler</a></li>
             <li><a href="#" class="menu-link" data-section="basvurular">☑️ Başvurularım</a></li>
-            <li><a href="#" class="menu-link" data-section="history">📝 Geçmiş</a></li>
+            <li><a href="#" class="menu-link" data-section="search">💬 Danışmana sor</a></li>
+            <li class="menu-grup">Hesap</li>
+            <li><a href="#" class="menu-link" data-section="profil">💼 İşletme profili</a></li>
+            <li><a href="#" class="menu-link" data-section="pricing">💳 Plan ve ödeme</a></li>
+            <li><a href="#" class="menu-link" data-section="history">📝 Soru geçmişi</a></li>
+            <li><a href="#" class="menu-link" data-section="analytics">📈 Kullanım</a></li>
             <li><a href="#" class="menu-link" data-section="settings">⚙️ Ayarlar</a></li>
             <li><a href="#logout" class="menu-link" id="logout-btn">🚪 Çıkış Yap</a></li>
         </ul>
@@ -649,50 +690,20 @@
             <span id="eposta-uyari-sonuc" style="margin-left:8px;"></span>
         </div>
 
-        <!-- Kayıt sonrası karşılama: profil yokken gösterilir (panel.js karsilamaGuncelle) -->
-        <div id="karsilama" class="karsilama" hidden>
-            <div class="karsilama-ust">
-                <h2>Başlarken</h2>
-                <button type="button" class="karsilama-kapat" data-tikla="karsilamaKapat" aria-label="Rehberi kapat">×</button>
-            </div>
-            <p>Size uygun devlet desteklerini üç adımda bulun:</p>
-            <ol class="karsilama-adimlar">
-                <li id="karsilama-adim-profil">
-                    <div><strong>İşletme profilinizi doldurun.</strong> Sektör, il, çalışan sayısı ve ciro eşleşmenin temelidir.</div>
-                    <button type="button" class="birincil-btn" data-tikla="bolumeGit" data-arg="profil">Profile git</button>
-                </li>
-                <li>
-                    <div><strong>Uygun destekleri bulun.</strong> Profilinize göre sıralanmış programları ve tahmini tutarları görün.</div>
-                    <button type="button" class="ikincil-btn" data-tikla="karsilamaEslesme">Destekleri bul</button>
-                </li>
-                <li>
-                    <div><strong>Danışmana sorun.</strong> "Makine almak istiyorum, hangi destekler var?" gibi sorular sorabilirsiniz.</div>
-                    <button type="button" class="ikincil-btn" data-tikla="bolumeGit" data-arg="search">Soru sor</button>
-                </li>
-            </ol>
+        <!-- Ana sayfa: sıradaki adım, yaklaşan son başvurular, öne çıkan destekler, devam eden başvurular
+             (GET /api/ozet, panel.js ozetYukle) -->
+        <div id="ozet" class="section">
+            <div id="ozet-icerik"><div class="loading"><div class="spinner"></div></div></div>
         </div>
 
         <!-- Search Section -->
-        <div id="search" class="section">
-            <div class="stats">
-                <div class="stat-card">
-                    <h3>Kalan Sorgu</h3>
-                    <div class="value" id="queries-remaining">5</div>
-                </div>
-                <div class="stat-card">
-                    <h3>Toplam Sorgu</h3>
-                    <div class="value" id="queries-total">0</div>
-                </div>
-                <div class="stat-card">
-                    <h3>Aktif Üyeler</h3>
-                    <div class="value" id="active-members">1</div>
-                </div>
-            </div>
-
+        <div id="search" class="section hidden">
             <div class="search-section">
-                <h2>Teşvik Ara</h2>
+                <h2>Danışmana sorun</h2>
+                <p class="bolum-aciklama">Ne yapmak istediğinizi kendi cümlenizle yazın; profilinize ve güncel kayıtlara göre
+                   hangi desteklerin uygun olduğunu, şartlarını ve nereye başvurulacağını anlatalım.</p>
                 <div class="search-box">
-                    <input type="text" id="search-input" placeholder="Örn: KOSGEB, Ar-Ge, İnovasyon..." autocomplete="off">
+                    <input type="text" id="search-input" placeholder="Örn: Yurt dışına satış için reklam desteği var mı?" autocomplete="off">
                     <button data-tikla="performSearch">Ara</button>
                 </div>
 
@@ -715,9 +726,10 @@
                 <p id="ikas-mesaj" style="font-size:13px; margin-top:10px;"></p>
             </div>
             <div class="search-section">
-                <h2>Finansal Profil</h2>
-                <p style="color:#666; margin: 10px 0 20px;">Sektörünüzü ve rakamlarınızı girin; size uygun teşvikleri ve stok/reklam bütçe önerinizi hesaplayalım.</p>
-                <form id="profil-form" style="display:grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
+                <h2>İşletme profili</h2>
+                <p style="color:#666; margin: 10px 0 20px;">Altı temel bilgi yeterli; kaydettiğinizde size uygun destekler hemen listelenir. Ayrıntılar eşleşmeyi keskinleştirir.</p>
+                <form id="profil-form" class="profil-form">
+                    <p class="form-bolum-baslik">Temel bilgiler: eşleşmenin büyük kısmı bunlara bağlı</p>
                     <div>
                         <label style="font-size:13px; color:#666;">Sektör</label>
                         <select id="p-sektor" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
@@ -732,8 +744,20 @@
                         </select>
                     </div>
                     <div>
-                        <label style="font-size:13px; color:#666;">Bölge / İl</label>
-                        <input type="text" id="p-bolge" placeholder="Örn: Konya" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                        <label style="font-size:13px; color:#666;">İl</label>
+                        <input type="text" id="p-bolge" list="il-liste" autocomplete="off" placeholder="Listeden seçin, örn. Konya" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                        <datalist id="il-liste"></datalist>
+                    </div>
+                    <div>
+                        <label style="font-size:13px; color:#666;">Şirket türü</label>
+                        <select id="p-sirket-turu" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                            <option value="">Belirtmek istemiyorum</option>
+                            <option value="yok">Henüz şirket kurmadım</option>
+                            <option value="sahis">Şahıs işletmesi</option>
+                            <option value="limited">Limited şirket</option>
+                            <option value="anonim">Anonim şirket</option>
+                            <option value="kooperatif">Kooperatif</option>
+                        </select>
                     </div>
                     <div>
                         <label style="font-size:13px; color:#666;">Çalışan Sayısı</label>
@@ -743,30 +767,20 @@
                         <label style="font-size:13px; color:#666;">Yıllık Ciro (₺)</label>
                         <input type="number" id="p-ciro" min="0" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
                     </div>
-                    <div>
-                        <label style="font-size:13px; color:#666;">Aylık/Yıllık Stok Gideri (₺)</label>
-                        <input type="number" id="p-stok" min="0" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
-                    </div>
-                    <div>
-                        <label style="font-size:13px; color:#666;">Aylık/Yıllık Reklam Gideri (₺)</label>
-                        <input type="number" id="p-reklam" min="0" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
-                    </div>
                     <div style="grid-column: 1 / -1;">
-                        <label style="font-size:13px; color:#666;">Stok/Reklam Ayrımını Bilmiyorsanız: Toplam Yıllık Gider (₺)</label>
-                        <input type="number" id="p-toplam-gider" min="0" placeholder="Örn: 550000" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
-                        <p style="font-size:12px; color:#999; margin-top:4px;">Bu alanı doldurursanız, yukarıdaki Stok/Reklam gideri alanlarını boş bırakabilirsiniz.</p>
-                    </div>
-                    <div style="grid-column: 1 / -1;">
-                        <label>
-                            <input type="checkbox" id="p-ilk-yil">
-                            İlk yıl / kuruluş yılı (arazi hazırlığı, sera, ekipman gibi tek seferlik giderler dahil)
-                        </label>
-                        <p style="font-size:12px; color:#999; margin-top:4px;">İşaretlerseniz, bütçe önerisinde ilk yıl giderinizin sektör ortalamasından yüksek çıkabileceğine dair bir not eklenir.</p>
-                    </div>
-                    <div id="ilk-yil-alani" style="grid-column: 1 / -1; display:none;">
-                        <label style="font-size:13px; color:#666;">İlk Yıl Kuruluş Gideriniz (₺) — arazi hazırlığı, sera, ekipman vb.</label>
-                        <input type="number" id="p-kurulus-gideri" min="0" placeholder="Örn: 150000" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
-                        <p style="font-size:12px; color:#999; margin-top:4px;">Bu tutar, toplam gideriniz sektör ortalamasıyla kıyaslanırken düşülür — sadece düzenli işletme gideriniz karşılaştırılır.</p>
+                        <label style="font-size:13px; color:#666;">Ne yapmak istiyorsunuz?</label>
+                        <div style="display:flex; gap:15px; margin-top:8px; flex-wrap:wrap;">
+                            <label><input type="checkbox" value="yatirim" class="p-hedef"> Yatırım</label>
+                            <label><input type="checkbox" value="ihracat" class="p-hedef"> İhracat</label>
+                            <label><input type="checkbox" value="arge" class="p-hedef"> Ar-Ge</label>
+                            <label><input type="checkbox" value="istihdam" class="p-hedef"> İstihdam</label>
+                        </div>
+                        <div id="tarim-hedefler" style="display:none; gap:15px; margin-top:8px; flex-wrap:wrap;">
+                            <label><input type="checkbox" value="makine" class="p-hedef"> Makine Alımı</label>
+                            <label><input type="checkbox" value="sulama" class="p-hedef"> Sulama Sistemi</label>
+                            <label><input type="checkbox" value="hayvan" class="p-hedef"> Hayvancılık</label>
+                            <label><input type="checkbox" value="organik" class="p-hedef"> Organik Tarım</label>
+                        </div>
                     </div>
                     <div id="tarim-alanlari" style="grid-column: 1 / -1; display:none; gap:15px; grid-template-columns: repeat(2, 1fr);">
                         <div style="grid-column: 1 / -1;">
@@ -801,21 +815,13 @@
                             <input type="number" id="p-arazi" min="0" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
                         </div>
                     </div>
+                    <details class="profil-ayrinti">
+                        <summary>Ayrıntılar (isteğe bağlı): NACE kodu, kuruluş tarihi, özel kitleler, giderler</summary>
+                        <div class="profil-ayrinti-ic">
                     <div>
                         <label style="font-size:13px; color:#666;">Faaliyet (NACE) Kodu</label>
                         <input type="text" id="p-nace" maxlength="20" placeholder="örn. C.10.71, 55.10 veya sadece C" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
                         <p style="font-size:12px; color:#999; margin-top:4px;">İsteğe bağlı. Girerseniz yalnızca sektörünüze uygun destekler gösterilir; Vergi levhanızdaki NACE kodunu yazabilirsiniz.</p>
-                    </div>
-                    <div>
-                        <label style="font-size:13px; color:#666;">Şirket Türü</label>
-                        <select id="p-sirket-turu" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
-                            <option value="">Belirtmek istemiyorum</option>
-                            <option value="yok">Henüz şirket kurmadım</option>
-                            <option value="sahis">Şahıs işletmesi</option>
-                            <option value="limited">Limited şirket</option>
-                            <option value="anonim">Anonim şirket</option>
-                            <option value="kooperatif">Kooperatif</option>
-                        </select>
                     </div>
                     <div>
                         <label style="font-size:13px; color:#666;">Kuruluş Tarihi</label>
@@ -845,31 +851,53 @@
                         </div>
                         <p style="font-size:12px; color:#999; margin-top:4px;">Bazı destekler yalnızca belirli kitlelere (kadın/genç girişimci, savunma tedarikçisi vb.) verilir. Uygun olanları işaretlemezseniz bu destekler size gösterilmez.</p>
                     </div>
-                    <div style="grid-column: 1 / -1;">
-                        <label style="font-size:13px; color:#666;">Hedefleriniz</label>
-                        <div style="display:flex; gap:15px; margin-top:8px; flex-wrap:wrap;">
-                            <label><input type="checkbox" value="yatirim" class="p-hedef"> Yatırım</label>
-                            <label><input type="checkbox" value="ihracat" class="p-hedef"> İhracat</label>
-                            <label><input type="checkbox" value="arge" class="p-hedef"> Ar-Ge</label>
-                            <label><input type="checkbox" value="istihdam" class="p-hedef"> İstihdam</label>
-                        </div>
-                        <div id="tarim-hedefler" style="display:none; gap:15px; margin-top:8px; flex-wrap:wrap;">
-                            <label><input type="checkbox" value="makine" class="p-hedef"> Makine Alımı</label>
-                            <label><input type="checkbox" value="sulama" class="p-hedef"> Sulama Sistemi</label>
-                            <label><input type="checkbox" value="hayvan" class="p-hedef"> Hayvancılık</label>
-                            <label><input type="checkbox" value="organik" class="p-hedef"> Organik Tarım</label>
-                        </div>
+                    <div>
+                        <label style="font-size:13px; color:#666;">Aylık/Yıllık Stok Gideri (₺)</label>
+                        <input type="number" id="p-stok" min="0" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
                     </div>
+                    <div>
+                        <label style="font-size:13px; color:#666;">Aylık/Yıllık Reklam Gideri (₺)</label>
+                        <input type="number" id="p-reklam" min="0" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                    </div>
+                    <div style="grid-column: 1 / -1;">
+                        <label style="font-size:13px; color:#666;">Stok/Reklam Ayrımını Bilmiyorsanız: Toplam Yıllık Gider (₺)</label>
+                        <input type="number" id="p-toplam-gider" min="0" placeholder="Örn: 550000" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                        <p style="font-size:12px; color:#999; margin-top:4px;">Bu alanı doldurursanız, yukarıdaki Stok/Reklam gideri alanlarını boş bırakabilirsiniz.</p>
+                    </div>
+                    <div style="grid-column: 1 / -1;">
+                        <label>
+                            <input type="checkbox" id="p-ilk-yil">
+                            İlk yıl / kuruluş yılı (arazi hazırlığı, sera, ekipman gibi tek seferlik giderler dahil)
+                        </label>
+                        <p style="font-size:12px; color:#999; margin-top:4px;">İşaretlerseniz, bütçe önerisinde ilk yıl giderinizin sektör ortalamasından yüksek çıkabileceğine dair bir not eklenir.</p>
+                    </div>
+                    <div id="ilk-yil-alani" style="grid-column: 1 / -1; display:none;">
+                        <label style="font-size:13px; color:#666;">İlk Yıl Kuruluş Gideriniz (₺) — arazi hazırlığı, sera, ekipman vb.</label>
+                        <input type="number" id="p-kurulus-gideri" min="0" placeholder="Örn: 150000" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                        <p style="font-size:12px; color:#999; margin-top:4px;">Bu tutar, toplam gideriniz sektör ortalamasıyla kıyaslanırken düşülür — sadece düzenli işletme gideriniz karşılaştırılır.</p>
+                    </div>
+                        </div>
+                    </details>
                     <div class="profil-eylemler">
-                        <button type="submit" class="birincil-btn">Profili Kaydet</button>
-                        <button type="button" class="birincil-btn" data-tikla="bulUygunDestekler">Uygun Destekleri Bul</button>
-                        <button type="button" class="ikincil-btn" data-tikla="butceOnerisiAl">Bütçe Önerisi Al</button>
+                        <button type="submit" class="birincil-btn">Kaydet ve uygun destekleri göster</button>
+                        <button type="button" class="ikincil-btn" data-tikla="butceOnerisiAl">Bütçe önerisi al</button>
                     </div>
                 </form>
                 <div id="profil-mesaj"></div>
             </div>
 
-            <div class="search-section" id="eslesme-section" style="display:none;">
+        </div>
+
+        <!-- Uygun destekler: GET /api/eslesme (panel.js bulUygunDestekler) -->
+        <div id="destekler" class="section hidden">
+            <div class="bolum-ust">
+                <p class="bolum-aciklama">Profilinize göre sıralanmış programlar. Kartta son başvuru tarihi, şartlar ve belgeler var; “Kontrol listesi” ile başvurunuzu adım adım hazırlayın.</p>
+                <div class="bolum-ust-eylem">
+                    <button type="button" class="ikincil-btn" data-tikla="bolumeGit" data-arg="profil">Profili düzenle</button>
+                    <button type="button" class="ikincil-btn" data-tikla="butceOnerisiAl">Bütçe önerisi</button>
+                </div>
+            </div>
+            <div class="search-section" id="eslesme-section">
                 <h2>Size Uygun Destekler</h2>
                 <div id="eslesme-ozet" style="margin-bottom:15px; font-weight:bold; color:#333;"></div>
                 <div id="eslesme-results" class="results"></div>
@@ -883,6 +911,21 @@
 
         <!-- Analytics Section -->
         <div id="analytics" class="section hidden">
+            <div class="stats">
+                <div class="stat-card">
+                    <h3>Kalan Sorgu</h3>
+                    <div class="value" id="queries-remaining">5</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Toplam Sorgu</h3>
+                    <div class="value" id="queries-total">0</div>
+                </div>
+                <div class="stat-card">
+                    <h3>Aktif Üyeler</h3>
+                    <div class="value" id="active-members">1</div>
+                </div>
+            </div>
+
             <div class="search-section">
                 <h2>Kullanım İstatistikleri</h2>
                 <div id="analytics-content" class="loading">
@@ -904,7 +947,7 @@
             <div class="search-section">
                 <h2>Başvurularım</h2>
                 <p class="bolum-aciklama">Eşleşen bir desteğin kartındaki “Kontrol listesi” düğmesiyle liste açın. Şartları ve
-                   belgeleri hazırladıkça işaretleyin; ilerlemeniz kaydedilir. Liste yazdırılabilir veya PDF olarak kaydedilebilir.</p>
+                   belgeleri hazırladıkça işaretleyin; ilerlemeniz kaydedilir. Listeyi taslakla birlikte Word dosyası olarak indirebilirsiniz.</p>
                 <div id="basvuru-listeleri"></div>
                 <div id="kontrol-yazdir" hidden></div>
             </div>

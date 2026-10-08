@@ -128,6 +128,18 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
   - `requirements.prod.txt`: `sentry-sdk` eksikti (kod ImportError'ı yuttuğu için canlıda hata izleme sessizce kapalı
     kalırdı) + `python-docx` eklendi.
   - Açık: 5973 fuar (m.7) 2026 limiti; TEKMER çağrı tarihleri (PDF); 5986 şemsiye dışındaki m.3/m.7 (statü sahipleri).
+- **Arayüz sadeleştirme** (2026-10-08): panel "Ana sayfa"yla açılır (`GET /api/ozet`, `app/ozet.py` `--self-test` 9/9):
+  tek "sıradaki adım" (profil yok > temel alan eksik > 30 gün içinde kapanan çağrı ve listesi bitmemiş > ilk liste),
+  profil tamamlanma yüzdesi, öne çıkan 3 destek, 60 gün içindeki son başvurular, devam eden listeler. Menü: Ana sayfa ·
+  Uygun destekler · Başvurularım · Danışmana sor | Hesap. Profil formu 6 temel alan + "Ayrıntılar" katlanır bölümü;
+  il alanı 81 ilden seçim (`GET /api/iller`); kayıttan sonra doğrudan uygun desteklere geçer. Eşleşme kartında çağrı
+  çipi ("Başvuru açık · 23 gün kaldı"); kart özeti `kart_ozeti` ile menü satırlarından arındırılıp 320 karakterde
+  kesilir (boşsa özet gösterilmez, başka alana geri düşülmez). Bölüm değişince sayfa üste kayar.
+  `tests/test_ozet.py` 8 test; `tests/test_turkce_metinler.py` ast tabanlı (CI 3.11 kırmızısının kökü; billing metinleri düzeltildi).
+  - **Tur13 HAZIR, ONAY BEKLİYOR** (`scripts/fix_veri_2026_10_08_ozet_tur13.py`, self-test 5/5, kopyada prova 15 → ikinci
+    koşu 0): özeti tamamen site menüsü olan 22 aktif kaydın 15'ine kaynak sayfanın "Programın Amacı / Ürün Açıklaması /
+    Genel Bilgi" metni (`docs/olcum/2026-10-08-ozet/tur13_ozetler.json`, çıkarıcı `ozet_cikar.py`). Kalan 7 KGF sayfası
+    (93, 116, 125, 153, 154, 171, 173) içeriği JS ile yüklüyor; özetsiz gösterilir.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

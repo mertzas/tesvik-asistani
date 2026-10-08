@@ -334,6 +334,8 @@ class TesvikEslesmeItem(BaseModel):
     destek_verilme_suresi: Optional[str] = None
     kategori: Optional[str] = None
     alt_kategori: Optional[str] = None
+    # En güncel açık/yaklaşan başvuru çağrısı (app/cagrilar.py); yoksa None
+    cagri: Optional[dict] = None
 
 
 class TesvikEslesmeResponse(BaseModel):

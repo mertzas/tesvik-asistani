@@ -108,11 +108,11 @@ def confirm_checkout_session(org_id: str, session_id: str, db: Session) -> dict:
         raise ValueError("Bu ödeme oturumu bu organizasyona ait değil")
 
     if session.payment_status != "paid" and session.status != "complete":
-        raise ValueError(f"Odeme henuz tamamlanmadi (durum: {session.status})")
+        raise ValueError(f"Ödeme henüz tamamlanmadı (durum: {session.status})")
 
     plan_type = session.metadata.get("plan")
     if plan_type not in PLAN_PRICES:
-        raise ValueError(f"Gecersiz plan bilgisi: {plan_type}")
+        raise ValueError(f"Geçersiz plan bilgisi: {plan_type}")
 
     org.stripe_subscription_id = session.subscription
     org.plan = PlanType(plan_type)

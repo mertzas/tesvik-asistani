@@ -350,6 +350,71 @@ def test_self_test_bayragi():
     assert r.returncode == 0 and m and m.group(1) == m.group(2) and int(m.group(2)) >= 11
 
 
+# --------------------------------------------------------------------------- Next.js kabuğu (AppBridge) uyumu
+
+def _appbridge(client, belirtec, onek="JWT "):
+    return client.post("/api/ikas/appbridge-oturum", headers={"Authorization": onek + belirtec})
+
+
+def test_appbridge_belirteci_oturum_acar(client):
+    _kur(client)
+    from app.ikas_integration import appbridge_belirteci_uret
+    r = _appbridge(client, appbridge_belirteci_uret("mock-merchant-demo", "mock-app-demo", uygulama_siri()))
+    assert r.status_code == 200, r.text
+    assert r.json()["store_name"] == "demo"
+    me = client.get("/api/auth/me", headers={"Authorization": f"Bearer {r.json()['access_token']}"})
+    assert me.json()["email"] == "demo@example.com"
+
+
+def test_appbridge_gecersiz_belirtecler_reddedilir(client, db_session):
+    _kur(client)
+    from app.ikas_integration import appbridge_belirteci_uret
+    sir = uygulama_siri()
+    assert _appbridge(client, appbridge_belirteci_uret("mock-merchant-demo", "mock-app-demo",
+                                                       "baska-sir-0123456789abcdef0123456")).status_code == 401
+    assert _appbridge(client, appbridge_belirteci_uret("mock-merchant-demo", "mock-app-demo", sir,
+                                                       omur_sn=-5)).status_code == 401
+    assert _appbridge(client, appbridge_belirteci_uret("mock-merchant-demo", "mock-app-demo", sir),
+                      onek="Bearer ").status_code == 401
+    assert client.post("/api/ikas/appbridge-oturum").status_code == 401
+    # Başka mağazanın kimliği ya da kurulum kimliği eşleşmezse giriş yok.
+    assert _appbridge(client, appbridge_belirteci_uret("baska-merchant", "mock-app-demo", sir)).status_code == 404
+    assert _appbridge(client, appbridge_belirteci_uret("mock-merchant-demo", "yok", sir)).status_code == 404
+    _imzali_webhook(client, {"scope": "store/app/deleted", "authorizedAppId": "mock-app-demo"})
+    assert _appbridge(client, appbridge_belirteci_uret("mock-merchant-demo", "mock-app-demo", sir)).status_code == 404
+
+
+def test_callback_kod_imzasi_varsa_dogrulanir(client, db_session):
+    import hashlib
+    import hmac
+    for imza, beklenen in (("0" * 64, 400), (hmac.new(uygulama_siri().encode(), b"kod", hashlib.sha256).hexdigest(), 302)):
+        client.cookies.clear()
+        r = client.get("/api/oauth/authorize/ikas?storeName=demo", follow_redirects=False)
+        state = parse_qs(urlparse(r.headers["location"]).query)["state"][0]
+        r2 = client.get(f"/api/oauth/callback/ikas?code=kod&state={state}&signature={imza}", follow_redirects=False)
+        assert r2.status_code == beklenen, r2.text
+
+
+def test_uygulama_adresi_ayri_alan_adinda_olabilir(client, monkeypatch):
+    monkeypatch.setattr(settings, "IKAS_UYGULAMA_URL", "https://ikas.tesvik.example/")
+    r = client.get("/api/oauth/authorize/ikas?storeName=demo", follow_redirects=False)
+    assert parse_qs(urlparse(r.headers["location"]).query)["redirect_uri"] == [
+        "https://ikas.tesvik.example/api/oauth/callback/ikas"]
+    assert ikas_panel._webhook_adresi() == "https://ikas.tesvik.example/api/ikas/webhook"
+
+
+def test_yenileme_api_alanina_gider(monkeypatch):
+    from unittest import mock
+    monkeypatch.setattr(settings, "IKAS_MOCK_MODE", False)
+    monkeypatch.setattr(settings, "IKAS_CLIENT_ID", "cid")
+    monkeypatch.setattr(settings, "IKAS_CLIENT_SECRET", "sir")
+    yanit = mock.Mock(ok=True)
+    yanit.json.return_value = {"access_token": "a", "refresh_token": "r", "expires_in": 14400}
+    with mock.patch("app.ikas_integration.requests.post", return_value=yanit) as post:
+        assert ikas_integration.refresh_token_yenile("demo", "eski").basarili
+    assert post.call_args.args[0] == "https://api.myikas.com/api/admin/oauth/token"
+
+
 def test_canli_adreste_mock_mod_uyarisi(monkeypatch):
     from app import main
     monkeypatch.setattr(settings, "APP_URL", "https://tesvik.example")

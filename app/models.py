@@ -83,6 +83,9 @@ class Settings(BaseSettings):
     # İKAS yönetim paneli uygulamayı iframe içinde açar; bu kökenler giriş/panel/ikas sayfalarını çerçeveleyebilir.
     # Boş bırakılırsa hiçbir sayfa çerçevelenemez (frame-ancestors 'none').
     IKAS_CERCEVE_KAYNAKLARI: str = os.getenv("IKAS_CERCEVE_KAYNAKLARI", "https://*.myikas.com")
+    # İKAS'a kayıtlı uygulama adresi (Next.js kabuğu ikas-app/ ayrı alan adındaysa onun adresi). Callback ve
+    # webhook adresleri bundan üretilir; boşsa APP_URL.
+    IKAS_UYGULAMA_URL: str = os.getenv("IKAS_UYGULAMA_URL", "")
 
     class Config:
         # Proje kokune gore: baska bir calisma dizininden baslatilsa da .env bulunur.

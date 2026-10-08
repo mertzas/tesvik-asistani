@@ -66,14 +66,12 @@ Sorumlu: **M** = Mert, **İ** = İKAS, **K** = kod (oturumda yapılabilir).
 | # | İş | Sorumlu | Çıktı |
 |---|---|---|---|
 | 0.1 | İKAS Partner hesabı açma ve doğrulama | M | Partner paneli erişimi |
-| 0.2 | **Sorulacak:** Belgede "ikas'ın Next.js projesi ile geliştirilmek zorundadır" yazıyor; aynı belge dış uygulamayı imzalı yönlendirmeyle de tarif ediyor. Mevcut FastAPI uygulamamız (panel içinde iframe) kabul ediliyor mu? | M → İ | Yazılı yanıt |
-| 0.3 | Uygulama kaydı: Kurulum Adresi `https://ALAN/api/oauth/authorize/ikas`, Redirect URI `https://ALAN/api/oauth/callback/ikas`, Uygulama adresi `https://ALAN/ikas` | M | `IKAS_CLIENT_ID`, `IKAS_CLIENT_SECRET` |
+| 0.2 | **Çözüldü (kod):** İKAS'ın Next.js şablonuna uyan kabuk yazıldı (`ikas-app/`, AppBridge girişi, İKAS paneli içinde çalışır). İKAS'a yalnızca teyit için sorulur: kabuk + ayrı API sunucusu mimarisi kabul ediliyor mu? | M → İ | Teyit |
+| 0.3 | Uygulama kaydı: Kurulum Adresi `https://ALAN/api/oauth/authorize/ikas`, Redirect URI `https://ALAN/api/oauth/callback/ikas`, Uygulama adresi `https://ALAN/` (ALAN = kabuğun alt alan adı, ör. `ikas.tesvikasistani.com`) | M | `IKAS_CLIENT_ID`, `IKAS_CLIENT_SECRET` |
 | 0.4 | Yetki kapsamı: yalnız `read_orders` yeterli; `read_products` kullanılmıyor → çıkarılması önerilir (en az yetki, inceleme kolaylığı) | M | `IKAS_SCOPE=read_orders` |
 | 0.5 | **Sorulacak:** İKAS üzerinden satılan uygulamada faturalama İKAS planlarıyla mı zorunlu (TRY, yıllık, fiyat ≠ 0, `getMerchantLicence`) yoksa kendi Stripe aboneliğimiz kalabilir mi? Gelir paylaşımı (%15–20 teklifimiz) | M → İ | Ticari model kararı |
 
-**0.2 yanıtı "Next.js zorunlu" olursa:** ince bir Next.js kabuğu (İKAS şablonu) yazılır; kimlik doğrulama ve
-AppBridge belirteci kabukta, tüm iş mantığı mevcut API'de kalır (`/api/ikas/oturum` yerine AppBridge JWT doğrulaması
-eklenir). Tahmini iş: 3–5 gün. Mevcut uç noktalar değişmez.
+**Next.js kabuğu (2026-10-08, yapıldı):** İKAS'ın resmi başlangıç uygulaması (`ikas app init`, `github.com/ikascom/ikas-app-examples`) okunup aynı yapı ve AppBridge akışıyla `ikas-app/` yazıldı. Şablondan farkı: belirteçler ayrı bir Prisma veritabanında değil, yalnız FastAPI'nin şifreli tablosunda; kabuğun kendi sırrı yok. Ayrıntı ve canlıya alma: `ikas-app/README.md`.
 
 ### Faz 1 — Canlı altyapı (1–2. hafta)
 
@@ -133,7 +131,7 @@ sayısı, kurulumdan panele dönüş oranı, eşleşme sonrası kontrol listesi 
 
 | Risk | Etki | Azaltma |
 |---|---|---|
-| Next.js zorunluluğu kesinse | 3–5 gün ek iş | Faz 0.2'de yazılı yanıt; kabuk mimarisi hazır |
+| İKAS kabuk + ayrı API mimarisini kabul etmezse | kabuk API rotalarına taşıma | kabuk zaten şablon yapısında; iş mantığı HTTP arkasında, taşıma sınırlı |
 | İKAS faturalaması zorunluysa Stripe ile çift sistem | gelir modeli değişir | 0.5 kararı; kod tarafı plan eşlemesi küçük iş |
 | Mağaza e-postası İKAS'ta doğrulanmamış olabilir | başka birinin adresiyle hesap açılabilir | mevcut hesaba asla bağlanmaz; yalnız mağazanın kendi verisi görünür |
 | Büyük mağaza (>10.000 sipariş/yıl) | ciro eksik kalır | özet notunda "kısmi" uyarısı; gerekirse aylık toplu senkron |
@@ -148,6 +146,7 @@ sayısı, kurulumdan panele dönüş oranı, eşleşme sonrası kontrol listesi 
 | GET | `/api/oauth/callback/ikas` | state | token, mağaza bilgisi, hesap, webhook kaydı |
 | GET | `/ikas` | imzalı adres | İKAS panelinden açılış sayfası |
 | POST | `/api/ikas/oturum` | HMAC imza | imzalı açılıştan oturum belirteci |
+| POST | `/api/ikas/appbridge-oturum` | İKAS AppBridge JWT (HS256) | Next.js kabuğunun İKAS paneli içinden girişi |
 | POST | `/api/ikas/webhook` | HMAC imza | sipariş olayı, uygulama kaldırma |
 | DELETE | `/api/ikas/baglanti` | JWT | bağlantıyı kesme |
 | GET | `/api/ikas/durum`, `/api/ikas/panel` | JWT | özet, eşleşme (ertelenmiş senkronu tamamlar) |

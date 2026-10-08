@@ -1,0 +1,9 @@
+node_modules/
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+.env
+.env.local
+# Kök .gitignore'daki Python kalıbı "lib/" bu klasörü de dışlıyordu (kaynak kodu).
+!src/lib/

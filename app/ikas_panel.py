@@ -38,6 +38,7 @@ from app.models import (FinancialProfile, IkasBaglanti, Organization, SessionLoc
 from app.auth import get_current_org, hash_password, oturum_belirteci
 from app.rate_limit import org_hiz_siniri, ip_hiz_siniri
 from app.ikas_integration import (
+    appbridge_belirteci_dogrula, kod_imzasi_dogrula,
     authorize_url_olustur, giris_imzasi_dogrula, kod_ile_token_al, magaza_adi_gecerli_mi, magaza_bilgisi_getir,
     refresh_token_yenile, siparisleri_getir, uygulama_siri, webhook_imzasi_dogrula, webhook_kaydet, yeni_state,
     _mock_mu,
@@ -67,12 +68,18 @@ def ikas_webhook_belirteci(store_name: str) -> str:
     return base64.urlsafe_b64encode(ozet).decode().rstrip("=")
 
 
+def _uygulama_url() -> str:
+    """İKAS'a kayıtlı uygulama adresi. Next.js kabuğu (ikas-app/) ayrı alan adında yayındaysa İKAS callback ve
+    webhook'ları oraya gelir ve kabuk /api/*'yi buraya iletir: IKAS_UYGULAMA_URL. Boşsa APP_URL."""
+    return (settings.IKAS_UYGULAMA_URL or settings.APP_URL).rstrip("/")
+
+
 def _redirect_uri() -> str:
-    return f"{settings.APP_URL}/api/oauth/callback/ikas"
+    return f"{_uygulama_url()}/api/oauth/callback/ikas"
 
 
 def _webhook_adresi() -> str:
-    return f"{settings.APP_URL}/api/ikas/webhook"
+    return f"{_uygulama_url()}/api/ikas/webhook"
 
 
 def oturum_ac() -> Session:
@@ -181,6 +188,9 @@ def _ikas_hesabi_olustur(db: Session, bilgi, store: str) -> Organization:
 
 def _oauth_callback(code: str, state: str, storeName: str | None, request: Request, db: Session,
                     arka_plan: BackgroundTasks):
+    imza = request.query_params.get("signature")
+    if imza is not None and not kod_imzasi_dogrula(code, imza, uygulama_siri()):
+        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Geçersiz yetkilendirme imzası.")
     baglanti = db.query(IkasBaglanti).filter(IkasBaglanti.oauth_state == state).first()
     if baglanti is None:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Geçersiz veya süresi dolmuş state - bağlantıyı tekrar başlatın.")
@@ -294,18 +304,41 @@ def ikas_oturum(girdi: IkasOturumGirdi, db: Session = Depends(get_db)):
                                 uygulama_siri()):
         raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
                             detail="İKAS oturum imzası geçersiz veya süresi dolmuş; uygulamayı İKAS panelinden yeniden açın.")
-    baglanti = db.query(IkasBaglanti).filter(
-        IkasBaglanti.store_name == girdi.storeName, IkasBaglanti.authorized_app_id == girdi.authorizedAppId,
-        IkasBaglanti.baglanti_durumu == "bagli", IkasBaglanti.org_id.isnot(None)).first()
-    if baglanti is None or (baglanti.merchant_id and baglanti.merchant_id != girdi.merchantId):
+    return _kurulum_oturumu(db, girdi.authorizedAppId, girdi.merchantId, store_name=girdi.storeName)
+
+
+def _kurulum_oturumu(db: Session, authorized_app_id: str, merchant_id: str, store_name: str | None = None) -> dict:
+    """Doğrulanmış İKAS kimliğinden (imzalı açılış ya da AppBridge) bağlı kurulumu bulup kuruluşun kullanıcısına
+    oturum belirteci verir. Kurulum kaldırılmış/bağlı değilse 404."""
+    sorgu = db.query(IkasBaglanti).filter(
+        IkasBaglanti.authorized_app_id == authorized_app_id, IkasBaglanti.baglanti_durumu == "bagli",
+        IkasBaglanti.org_id.isnot(None))
+    if store_name is not None:
+        sorgu = sorgu.filter(IkasBaglanti.store_name == store_name)
+    baglanti = sorgu.first()
+    if baglanti is None or (baglanti.merchant_id and baglanti.merchant_id != merchant_id):
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
                             detail="Bu mağaza için kurulum bulunamadı; uygulamayı İKAS panelinden yeniden kurun.")
     user = db.query(User).filter(User.org_id == baglanti.org_id, User.is_active.is_(True)).order_by(
         User.created_at).first()
     if user is None:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Bu mağazanın hesabı etkin değil.")
-    return {"access_token": oturum_belirteci(user), "token_type": "bearer",
+    return {"access_token": oturum_belirteci(user), "token_type": "bearer", "store_name": baglanti.store_name,
             "senkron_bekliyor": bool(baglanti.senkron_bekliyor or baglanti.son_senkron_zamani is None)}
+
+
+@router.post("/appbridge-oturum", dependencies=[Depends(ip_hiz_siniri(60, ad="ikas-appbridge"))])
+def ikas_appbridge_oturum(request: Request, db: Session = Depends(get_db)):
+    """İKAS paneli içindeki Next.js kabuğu (ikas-app/) AppBridge REQUEST_TOKEN ile aldığı JWT'yi
+    `Authorization: JWT <belirteç>` başlığıyla gönderir (başlangıç uygulamasıyla aynı biçim). Belirteç uygulama
+    sırrıyla HS256 imzalı; sub = merchantId, aud = authorizedAppId. Geçerliyse bizim oturum belirtecimiz döner."""
+    baslik = request.headers.get("authorization", "")
+    belirtec = baslik[4:].strip() if baslik[:4].upper() == "JWT " else ""
+    kimlik = appbridge_belirteci_dogrula(belirtec, uygulama_siri())
+    if kimlik is None:
+        raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED,
+                            detail="İKAS oturumu doğrulanamadı; uygulamayı İKAS panelinden yeniden açın.")
+    return _kurulum_oturumu(db, kimlik["authorized_app_id"], kimlik["merchant_id"])
 
 
 # ------------------------------------------------------------------------------------------------- senkron

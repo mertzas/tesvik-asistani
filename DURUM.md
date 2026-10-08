@@ -93,6 +93,14 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
   `tesvikler_oncesi_gocK.db.bak`). `python -m app.ikas_integration --self-test` 11/11, `tests/test_ikas_uygulama.py` 31.
   BEKLEYEN (Mert/İKAS): Partner hesabı, Next.js zorunluluğu ve faturalama soruları, client id/secret, HTTPS sunucu,
   2 geliştirme mağazasında gerçek API testi (kontrol listesi yol haritasında).
+- **İKAS Next.js kabuğu** (2026-10-08): `ikas-app/` (README orada). İKAS'ın resmi şablonu
+  (`github.com/ikascom/ikas-app-examples/examples/starter-app`, `ikas` CLI 0.0.30) okunarak aynı yapı ve AppBridge
+  akışıyla yazıldı; şablonun Prisma/iron-session belirteç deposu ALINMADI (belirteçler yalnız FastAPI'de).
+  Next 16.4.0 (15.x'te PostCSS açıkları; `npm audit` 0). FastAPI'ye eklenenler: `POST /api/ikas/appbridge-oturum`
+  (HS256, sub=merchantId, aud=authorizedAppId; alg=none reddi), callback `signature`=HMAC(code) denetimi,
+  kurulum kimliği `getAuthorizedApp` (me yedek), yenileme `api` alanına, `IKAS_UYGULAMA_URL`.
+  Doğrulama: self-test 15/15, `tests/test_ikas_uygulama.py` 36, kabuk `npm test` 9/9 + tsc + build; tarayıcıda kurulum →
+  imzalı açılış → panel, iframe içinde AppBridge (`scripts/ikas_appbridge_deneme.py`, self-test 4/4), 375 px.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

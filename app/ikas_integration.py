@@ -44,6 +44,8 @@ from app.models import settings
 STORE_DOMAIN = ".myikas.com"
 GRAPHQL_URL = "https://api.myikas.com/api/v2/admin/graphql"
 REQUEST_TIMEOUT_SEC = 15
+# Belge örneği ve resmi başlangıç uygulaması (api-helpers.onCheckToken) yenilemeyi "api" mağaza adıyla yapar.
+YENILEME_MAGAZASI = "api"
 # @ikas/api-client 2.0.2 validateAuthSignature: imza en çok 120 sn eski olabilir.
 IMZA_PENCERESI_SN = 120
 SAYFA_LIMITI = 200          # PaginationInput.limit üst sınırı (SDK)
@@ -126,6 +128,9 @@ class MagazaBilgisi:
 
 
 ME_QUERY = "query me { me { id email name } }"
+# İKAS resmi başlangıç uygulaması (github.com/ikascom/ikas-app-examples, examples/starter-app, 2026-04-21) kurulum
+# kimliğini getAuthorizedApp.id'den alır; me.id yalnızca yedek.
+AUTHORIZED_APP_QUERY = "query getAuthorizedApp { getAuthorizedApp { id salesChannelId } }"
 MERCHANT_QUERY = ("query getMerchant { getMerchant { id email merchantName storeName "
                   "address { company title city { name } country { iso2 } } } }")
 SAVE_WEBHOOK_MUTATION = ("mutation saveWebhook($input: WebhookInput!) { saveWebhook(input: $input) "
@@ -133,22 +138,69 @@ SAVE_WEBHOOK_MUTATION = ("mutation saveWebhook($input: WebhookInput!) { saveWebh
 
 
 def magaza_bilgisi_getir(access_token: str, store_name: str) -> tuple[MagazaBilgisi | None, str | None]:
-    """me (authorizedAppId) + getMerchant (e-posta, unvan, il). Mock modda sabit örnek döner."""
+    """getAuthorizedApp (authorizedAppId; yoksa me.id) + getMerchant (merchantId, e-posta, unvan, il). Başlangıç
+    uygulamasında olduğu gibi ikisi de zorunlu: merchantId olmadan imzalı açılış ve webhook eşlenemez.
+    Mock modda sabit örnek döner."""
     if _mock_mu():
         return MagazaBilgisi(authorized_app_id=f"mock-app-{store_name}", merchant_id=f"mock-merchant-{store_name}",
                              eposta=f"{store_name}@example.com", magaza_unvani=f"{store_name} Ltd. Şti.",
                              il="İstanbul", ulke_iso2="TR"), None
-    me, hata = _graphql(access_token, ME_QUERY)
-    if hata or not ((me or {}).get("me") or {}).get("id"):
-        return None, hata or "me sorgusu kimlik döndürmedi"
+    uyg, hata = _graphql(access_token, AUTHORIZED_APP_QUERY)
+    app_id = ((uyg or {}).get("getAuthorizedApp") or {}).get("id")
+    if not app_id:
+        me, hata = _graphql(access_token, ME_QUERY)
+        app_id = ((me or {}).get("me") or {}).get("id")
+    if not app_id:
+        return None, hata or "kurulum kimliği (getAuthorizedApp/me) alınamadı"
     merchant, hata2 = _graphql(access_token, MERCHANT_QUERY)
     m = (merchant or {}).get("getMerchant") or {}
+    if not m.get("id"):
+        return None, hata2 or "getMerchant mağaza kimliği döndürmedi"
     adres = m.get("address") or {}
     return MagazaBilgisi(
-        authorized_app_id=me["me"]["id"], merchant_id=m.get("id"), eposta=m.get("email") or me["me"].get("email"),
+        authorized_app_id=app_id, merchant_id=m["id"], eposta=m.get("email"),
         magaza_unvani=adres.get("title") or adres.get("company") or m.get("merchantName"),
         il=(adres.get("city") or {}).get("name"), ulke_iso2=(adres.get("country") or {}).get("iso2"),
-    ), hata2
+    ), None
+
+
+def kod_imzasi_dogrula(code: str, signature: str, secret: str) -> bool:
+    """Callback'e eklenen `signature`: hex(HMAC-SHA256(client_secret, code)) (başlangıç uygulaması
+    TokenHelpers.validateCodeSignature). İmza gelmişse doğrulanır; gelmemişse state denetimi yeterlidir."""
+    if not (secret and code and signature):
+        return False
+    beklenen = hmac.new(secret.encode(), code.encode("utf-8"), hashlib.sha256).hexdigest()
+    return hmac.compare_digest(beklenen, signature)
+
+
+def appbridge_belirteci_dogrula(belirtec: str, secret: str) -> dict | None:
+    """İKAS panelinin AppBridge ile verdiği JWT (REQUEST_TOKEN): HS256, uygulama sırrıyla imzalı; sub = merchantId,
+    aud = authorizedAppId, exp zorunlu (başlangıç uygulaması JwtHelpers.verifyToken / getUserFromRequest).
+    Yalnızca HS256 kabul edilir ('none' ve RS/ES karışması reddedilir). Geçerliyse {merchant_id, authorized_app_id}."""
+    import jwt
+    if not (secret and belirtec):
+        return None
+    try:
+        veri = jwt.decode(belirtec, secret, algorithms=["HS256"], options={"require": ["exp", "sub", "aud"],
+                                                                         "verify_aud": False})
+    except jwt.PyJWTError:
+        return None
+    aud = veri.get("aud")
+    if isinstance(aud, list):
+        aud = aud[0] if len(aud) == 1 else None
+    if not (isinstance(aud, str) and aud and isinstance(veri.get("sub"), str) and veri["sub"]):
+        return None
+    return {"merchant_id": veri["sub"], "authorized_app_id": aud}
+
+
+def appbridge_belirteci_uret(merchant_id: str, authorized_app_id: str, secret: str, omur_sn: int = 4 * 3600) -> str:
+    """Testler ve yerel deneme düzeneği için İKAS'ın verdiği belirtecin aynısı (başlangıç uygulaması
+    JwtHelpers.createToken: HS256, sub=merchantId, aud=authorizedAppId, 4 saat)."""
+    import uuid
+    import jwt
+    simdi = int(time.time())
+    return jwt.encode({"sub": merchant_id, "aud": authorized_app_id, "iat": simdi, "exp": simdi + omur_sn,
+                       "jti": str(uuid.uuid4())}, secret, algorithm="HS256")
 
 
 def webhook_kaydet(access_token: str, endpoint: str) -> tuple[bool, str | None]:
@@ -207,7 +259,8 @@ def _mock_token_sonucu() -> TokenSonucu:
 
 
 def _token_istegi(store_name: str, form: dict, eski_refresh: str | None = None) -> TokenSonucu:
-    """POST {oauth}/token (x-www-form-urlencoded), SDK OAuthAPI ile aynı uç. Yanıt OAuthTokenResponse."""
+    """POST {oauth}/token (x-www-form-urlencoded), SDK OAuthAPI ile aynı uç. Yanıt OAuthTokenResponse.
+    Yenileme isteği başlangıç uygulamasında ve belgede `api` mağaza adıyla (api.myikas.com) yapılır."""
     try:
         resp = requests.post(
             f"{_oauth_base_url(store_name)}/token",
@@ -237,7 +290,7 @@ def kod_ile_token_al(store_name: str, code: str, redirect_uri: str) -> TokenSonu
 def refresh_token_yenile(store_name: str, refresh_token: str) -> TokenSonucu:
     if _mock_mu():
         return _mock_token_sonucu()
-    return _token_istegi(store_name, {"grant_type": "refresh_token", "refresh_token": refresh_token},
+    return _token_istegi(YENILEME_MAGAZASI, {"grant_type": "refresh_token", "refresh_token": refresh_token},
                          eski_refresh=refresh_token)
 
 
@@ -360,7 +413,7 @@ def _self_test() -> int:
     def kontrol(ad, kosul):
         sonuc.append((ad, bool(kosul)))
 
-    sir, simdi = "uygulama-siri", 1_760_000_000_000
+    sir, simdi = "uygulama-siri-0123456789abcdef0123", 1_760_000_000_000
     ts = str(simdi - 5_000)
     imza = giris_imzasi_uret("magaza", "m-1", ts, sir)
     kontrol("giriş imzası doğru", giris_imzasi_dogrula("magaza", "m-1", ts, imza, sir, simdi_ms=simdi))
@@ -397,6 +450,21 @@ def _self_test() -> int:
             and [i["pagination"]["page"] for i in istekler] == [1, 2] and "gte" in istekler[0]["orderedAt"])
     kontrol("ülke ve ürün adı ayrıştırılır", s.siparisler[0].teslimat_ulkesi == "DE"
             and s.siparisler[0].urunler[0]["productName"] == "Ürün")
+    jwt_ok = appbridge_belirteci_uret("m-1", "app-1", sir)
+    kontrol("AppBridge belirteci doğrulanır", appbridge_belirteci_dogrula(jwt_ok, sir)
+            == {"merchant_id": "m-1", "authorized_app_id": "app-1"})
+    kontrol("AppBridge: başka sır / süresi dolmuş reddedilir",
+            appbridge_belirteci_dogrula(jwt_ok, "baska-sir-0123456789abcdef0123456") is None
+            and appbridge_belirteci_dogrula(appbridge_belirteci_uret("m-1", "app-1", sir, omur_sn=-10), sir) is None)
+    import base64 as _b64
+    import json as _json
+
+    def _b(d):
+        return _b64.urlsafe_b64encode(_json.dumps(d).encode()).decode().rstrip("=")
+    imzasiz = f"{_b({'alg': 'none', 'typ': 'JWT'})}.{_b({'sub': 'm', 'aud': 'a', 'exp': 9999999999})}."
+    kontrol("AppBridge: alg=none reddedilir", appbridge_belirteci_dogrula(imzasiz, sir) is None)
+    kontrol("callback kod imzası", kod_imzasi_dogrula("kod", hmac.new(sir.encode(), b"kod", hashlib.sha256).hexdigest(),
+                                                      sir) and not kod_imzasi_dogrula("kod", "0" * 64, sir))
     m1, m2 = _mock_siparisler(tohum="a"), _mock_siparisler(tohum="a")
     kontrol("mock veri kararlı ve geçerli durum kodlu", [x.totalFinalPrice for x in m1] == [x.totalFinalPrice for x in m2]
             and {x.status for x in m1} <= {"CREATED", "CANCELLED", "REFUNDED", "DRAFT"})

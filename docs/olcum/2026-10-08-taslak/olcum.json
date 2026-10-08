@@ -1,0 +1,15 @@
+{
+ "model": "claude-sonnet-5",
+ "fiyat_varsayimi_usd_mtok": [
+  3.0,
+  15.0
+ ],
+ "sonuclar": [
+  {
+   "vaka": 1,
+   "persona": "12 Bursa metal sentetik",
+   "tesvik_id": 8,
+   "hata": "BadRequestError: Error code: 400 - {'type': 'error', 'error': {'type': 'invalid_request_error', 'message': 'Your credit balance is too low to access the Anthropic API. Please go to Plans & Billing to upgrade or purchase credits.'}, 'request_id': 'req_011CfowarR6jMHa8BuMC4BMJ'}"
+  }
+ ]
+}

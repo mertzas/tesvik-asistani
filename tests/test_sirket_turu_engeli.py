@@ -43,7 +43,8 @@ def test_eslesmede_sahis_isletmesine_gelmez(db_session):
 
 
 @pytest.mark.parametrize("betik,asgari", [("scripts/fix_veri_2026_10_08_cagrilar_tur10.py", 6),
-                                          ("scripts/fix_veri_2026_10_08_ihracat_5973_tur11.py", 8)])
+                                          ("scripts/fix_veri_2026_10_08_ihracat_5973_tur11.py", 8),
+                                          ("scripts/fix_veri_2026_10_08_eihracat_tur12.py", 11)])
 def test_veri_betikleri_self_test(betik, asgari):
     import re
     r = subprocess.run([sys.executable, betik, "--self-test"], cwd=KOK, stdin=subprocess.DEVNULL,

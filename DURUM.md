@@ -115,6 +115,19 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
   - Açık: 5986 ve kayıt 163'ün şirket türü şartı doğrulanmadı; 5973 fuar (m.7) 2026 limiti; genelgeler (JS ile
     yükleniyor, curl/WebFetch okuyamadı).
   - Platform: `ikas-app` CI işi (test, tip, derleme, npm audit) + Dockerfile (standalone) + `docker-compose.ikas.yml`.
+  - **Tur10 + Tur11 UYGULANDI** (2026-10-08, yedek `tesvikler_oncesi_tur10_11.db.bak`): 8 çağrı, 5 yeni 5973 kaydı;
+    aktif 100 → 105, Ticaret Bakanlığı 3 → 8.
+  - **Tur12 HAZIR, ONAY BEKLİYOR** (`scripts/fix_veri_2026_10_08_eihracat_tur12.py`, self-test 11/11, kopyada prova):
+    5973 kayıtlarına genelgelerden başvuru yeri/süresi/belge listesi + ihracatçı birliği üyeliği şartı; 5986'dan 5 yeni
+    kayıt (m.4 pazaryeri reklamı, m.5 e-ihracat tanıtımı [statü], m.6 fulfillment, m.8 çevrim içi mağaza [1 M USD],
+    m.9 komisyon; 2026 limitleri resmi xlsx "ŞİRKETLER" sütunu); 162 resmi kaynakla düzeltme + şahıs için konsorsiyum
+    yolu (Genelge m.33/7); **163 pasif** (dayanağı 2573 sayılı Karar 18.08.2022'de mülga — Bakanlık sayfası yazıyor).
+    Uygulama sonrası aktif 109, Ticaret 12.
+  - Word çıktısı: `app/basvuru_docx.py` (`--self-test` 9/9), `GET /api/basvuru-listesi/{id}/docx` (liste + çağrılar +
+    taslak; başka kuruluşun işaretleri sızmaz), web paneli ve Next kabuğunda "Word (.docx) indir".
+  - `requirements.prod.txt`: `sentry-sdk` eksikti (kod ImportError'ı yuttuğu için canlıda hata izleme sessizce kapalı
+    kalırdı) + `python-docx` eklendi.
+  - Açık: 5973 fuar (m.7) 2026 limiti; TEKMER çağrı tarihleri (PDF); 5986 şemsiye dışındaki m.3/m.7 (statü sahipleri).
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

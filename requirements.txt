@@ -37,3 +37,6 @@ cryptography>=42
 
 # app/hata_izleme.py: SENTRY_DSN bossa hic kullanilmaz (2026-10-08)
 sentry-sdk>=2.0
+
+# Başvuru dosyası Word çıktısı (app/basvuru_docx.py, 2026-10-08)
+python-docx>=1.1

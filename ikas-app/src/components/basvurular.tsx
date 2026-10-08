@@ -1,10 +1,10 @@
 'use client';
 
 // Başvuru kontrol listesi + yapay zekâ ön taslağı (FastAPI app/basvuru_listesi.py). Yazdırma yok: İKAS paneli
-// iframe'inde yazdırma güvenilir değil; taslak kopyalanıp kurumun formuna aktarılır.
+// iframe'inde yazdırma güvenilir değil; taslak kopyalanır ya da tüm dosya Word olarak indirilir.
 
 import React, { useCallback, useEffect, useState } from 'react';
-import { api, type Liste, type ListeOzeti } from '@/lib/api';
+import { api, wordIndir, type Liste, type ListeOzeti } from '@/lib/api';
 import { cagriOzeti, tarih, tarihSaat } from '@/lib/bicim';
 import { Bilgi, Dugme, Kart, Yukleniyor } from './ui';
 
@@ -118,6 +118,15 @@ function ListeAyrinti({ tesvikId, onDegisti, onKaldirildi }: { tesvikId: number;
       const alan = document.getElementById('taslak-metni') as HTMLTextAreaElement | null;
       alan?.select();
       setMesaj({ tur: 'uyari', metin: 'Tarayıcı panoya erişime izin vermedi; metin seçildi, Ctrl+C ile kopyalayın.' });
+    }
+  }
+
+  async function word() {
+    try {
+      await wordIndir(tesvikId);
+      setMesaj({ tur: 'iyi', metin: 'Word dosyası indirildi. İndirme başlamadıysa uygulamayı yeni sekmede açıp tekrar deneyin.' });
+    } catch (e) {
+      setMesaj({ tur: 'hata', metin: e instanceof Error ? e.message : 'Word dosyası hazırlanamadı.' });
     }
   }
 
@@ -235,7 +244,8 @@ function ListeAyrinti({ tesvikId, onDegisti, onKaldirildi }: { tesvikId: number;
         )}
       </Kart>
 
-      <div>
+      <div className="flex flex-wrap gap-2">
+        <Dugme onClick={word}>Word (.docx) indir</Dugme>
         <Dugme tur="tehlike" onClick={kaldir}>
           Bu başvuruyu takipten çıkar
         </Dugme>

@@ -862,7 +862,8 @@
                     <div><h3>${escapeHtml(d.tesvik.baslik)}</h3>
                          <div class="bl-kurum">${escapeHtml(d.tesvik.kurum)} · <span id="kl-sayac">${d.tamamlanan}/${d.toplam}</span> tamam</div></div>
                     <div class="kl-eylemler yazdirma-gizle">
-                        <button type="button" class="birincil-btn" data-tikla="kontrolListesiYazdir">Yazdır / PDF</button>
+                        <button type="button" class="birincil-btn" data-tikla="kontrolListesiWord" data-arg="${escapeHtml(String(d.tesvik.id))}">Word (.docx) indir</button>
+                        <button type="button" class="ikincil-btn" data-tikla="kontrolListesiYazdir">Yazdır / PDF</button>
                         <button type="button" class="ikincil-btn" data-tikla="basvurularYukle">Tüm listeler</button>
                         <button type="button" class="ikincil-btn" data-tikla="kontrolListesiKaldir" data-arg="${escapeHtml(String(d.tesvik.id))}">Listeyi kaldır</button>
                     </div>
@@ -913,6 +914,33 @@
                 el.checked = !el.checked;
                 el.closest(".kl-madde").classList.toggle("tamam", el.checked);
                 mesaj.innerHTML = `<div class="error">Kaydedilemedi: ${escapeHtml(e.message)}</div>`;
+            }
+        }
+
+        // Kontrol listesi + başvuru dönemleri + taslak tek Word dosyası (GET /api/basvuru-listesi/{id}/docx).
+        async function kontrolListesiWord(dugme) {
+            const id = dugme.dataset.arg;
+            const eski = dugme.textContent;
+            dugme.disabled = true;
+            dugme.textContent = "Hazırlanıyor…";
+            try {
+                const r = await fetch(`${API_BASE}/basvuru-listesi/${encodeURIComponent(id)}/docx`,
+                                      { headers: { Authorization: `Bearer ${authToken}` } });
+                if (!r.ok) throw new Error((await r.json().catch(() => ({}))).detail || `HTTP ${r.status}`);
+                const ad = /filename="([^"]+)"/.exec(r.headers.get("Content-Disposition") || "");
+                const url = URL.createObjectURL(await r.blob());
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = ad ? ad[1] : "basvuru.docx";
+                document.body.appendChild(a);
+                a.click();
+                a.remove();
+                setTimeout(() => URL.revokeObjectURL(url), 10000);
+            } catch (e) {
+                alert("Word dosyası indirilemedi: " + e.message);
+            } finally {
+                dugme.disabled = false;
+                dugme.textContent = eski;
             }
         }
 
@@ -1566,6 +1594,7 @@
             kontrolListesiAc: (el) => kontrolListesiAc(el.dataset.arg),
             kontrolMaddesi: (el) => kontrolMaddesi(el),
             kontrolListesiYazdir: () => kontrolListesiYazdir(),
+            kontrolListesiWord: (el) => kontrolListesiWord(el),
             kontrolListesiKaldir: (el) => kontrolListesiKaldir(el.dataset.arg),
             basvurularYukle: () => basvurularYukle(),
             taslakOlustur: (el) => taslakOlustur(el),

@@ -103,6 +103,26 @@ export type Liste = {
 
 export type Kurulus = { name: string; email: string; plan: string; ai_yurtdisi_riza: boolean };
 
+/** Kontrol listesi + başvuru dönemleri + taslak Word dosyası (GET /api/basvuru-listesi/{id}/docx). */
+export async function wordIndir(tesvikId: number): Promise<void> {
+  const r = await fetch(`/api/basvuru-listesi/${tesvikId}/docx`, { headers: { Authorization: `Bearer ${oturumOku() ?? ''}` } });
+  if (r.status === 401) {
+    oturumSil();
+    window.location.replace('/');
+    throw new ApiHatasi(401, 'Oturum sona erdi.');
+  }
+  if (!r.ok) throw new ApiHatasi(r.status, hataMetni(await r.json().catch(() => null), r.status));
+  const ad = /filename="([^"]+)"/.exec(r.headers.get('Content-Disposition') || '')?.[1] ?? 'basvuru.docx';
+  const url = URL.createObjectURL(await r.blob());
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = ad;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 10_000);
+}
+
 export const api = {
   durum: () => istek<Durum>('/api/ikas/durum'),
   senkronize: () => istek<{ siparis_sayisi: number; notlar: string[] }>('/api/ikas/senkronize', { method: 'POST' }),

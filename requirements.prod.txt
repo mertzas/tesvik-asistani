@@ -36,3 +36,9 @@ beautifulsoup4==4.15.0
 # Hiz siniri sayaclari (docker-compose.prod.yml redis servisi)
 redis==5.2.1
 cryptography==49.0.0
+
+# app/hata_izleme.py: yoksa ImportError yakalanıp hata izleme SESSİZCE kapalı kalıyordu (2026-10-08)
+sentry-sdk==2.71.0
+
+# Başvuru dosyası Word çıktısı (app/basvuru_docx.py, 2026-10-08)
+python-docx==1.2.0

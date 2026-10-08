@@ -130,6 +130,23 @@ def liste_getir(tesvik_id: int, current_org: Organization = Depends(get_current_
     return _yanit(_tesvik(db, tesvik_id), _kayit(db, current_org, tesvik_id))
 
 
+@router.get("/{tesvik_id}/docx", dependencies=[Depends(org_hiz_siniri(30))])
+def liste_word(tesvik_id: int, current_org: Organization = Depends(get_current_org), db: Session = Depends(get_db)):
+    """Kontrol listesi + başvuru dönemleri + ön taslak tek Word dosyası (app/basvuru_docx.py). Yeni veri üretmez."""
+    from urllib.parse import quote
+
+    from fastapi.responses import Response
+
+    from app.basvuru_docx import belge_olustur, dosya_adi
+    t = _tesvik(db, tesvik_id)
+    ascii_ad, utf8_ad = dosya_adi(t.baslik)
+    return Response(
+        content=belge_olustur(_yanit(t, _kayit(db, current_org, tesvik_id))),
+        media_type="application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+        headers={"Content-Disposition": f"attachment; filename=\"{ascii_ad}\"; filename*=UTF-8''{quote(utf8_ad)}",
+                 "Cache-Control": "no-store"})
+
+
 @router.put("/{tesvik_id}", dependencies=[Depends(org_hiz_siniri(60))])
 def isaretleri_kaydet(tesvik_id: int, girdi: IsaretGirdi, current_org: Organization = Depends(get_current_org),
                       db: Session = Depends(get_db)):

@@ -157,6 +157,33 @@ _SAHIS_URUNU = re.compile(r"şahıs\s+işletmeleri", re.IGNORECASE)
 _BUYUK_ISLETMEYE_ACIK = re.compile(r"büyük\s+işletme", re.IGNORECASE)
 
 
+ILGI_CEZASI = 0.3
+_ARGE_NACE = ("62", "63", "72")
+_BUYUK_9903 = re.compile(r"Stratejik Hamle|Öncelikli Yatırımlar|Teknoloji Hamlesi", re.IGNORECASE)
+
+
+def _arge_sinyali(profil, hedefler: set[str]) -> bool:
+    nace = str(getattr(profil, "nace_kodu", None) or "").split(".")[0]
+    return getattr(profil, "sektor", None) == "arge" or "arge" in hedefler or nace in _ARGE_NACE
+
+
+def _ilgi_engeli(t, profil, hedefler: set[str], olcek_sinifi: str | None) -> str | None:
+    """Program bu profile uygun olabilir ama ilgisi zayıf: sıralamada geri alınır (eşleşmeden atılmaz)."""
+    baslik = t.baslik or ""
+    sektor = getattr(profil, "sektor", None)
+    if re.search(r"Yapay Zek", baslik, re.IGNORECASE) and not _arge_sinyali(profil, hedefler):
+        return "Yapay zekâ yatırımına yönelik; profilinizde Ar-Ge/yazılım hedefi yok."
+    if t.kurum == "SGK / İŞKUR" and hedefler and "istihdam" not in hedefler:
+        return "İşe alım teşviki; hedeflerinizde istihdam yok."
+    if t.kurum == "KOSGEB" and sektor == "tarim" and re.search(r"YÖNDE|Yönderlik", baslik):
+        return "Yönderlik/yalın dönüşüm hizmeti sanayi işletmelerine yöneliktir."
+    if t.kurum in ("TUBITAK", "TÜBİTAK") and sektor not in ("imalat", "arge") and not _arge_sinyali(profil, hedefler):
+        return "Ar-Ge projesi desteği; profilinizde Ar-Ge hedefi yok."
+    if t.kurum == "Sanayi ve Teknoloji Bakanlığı" and _BUYUK_9903.search(baslik) and olcek_sinifi in ("mikro", "kucuk"):
+        return "Büyük ölçekli yatırım programı (yüksek asgari yatırım tutarı); işletme ölçeğiniz mikro/küçük."
+    return None
+
+
 def _ihracat_engeli(t, profil) -> str | None:
     """Kayıtta asgari önceki yıl ihracatı (USD) varsa ve profilin hazırlık kaydındaki bilinen ihracat altındaysa
     program kapalıdır (5986 m.8: 1 milyon USD; m.5 statüsü: 500 bin USD). Bilinmiyorsa elemez. Statü sahibi
@@ -580,6 +607,14 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
                 (profil.tarim_kategori or "").lower() == "organik" or "organik" in profil_hedefler):
             skor -= 0.2
             eksik.append("Yalnız organik sertifikalı üretim desteklenir; organik tarıma geçerseniz uygun olur.")
+
+        # (d) İlgi cezaları (100 sentetik ajan denemesi 2026-10-09, docs/olcum/2026-10-09-100-ajan): ilk 10'daki
+        #     önerilerin %18'i profile ilgisizdi; hepsi yalnız "genel" sektör etiketiyle 0,30 alıyordu. Ceza uygunluğu
+        #     değil ilgiyi ölçer; zayıf (yalnız genel) eşleşmeyi 0'a indirip gizler, güçlü sinyali olanı yalnız geriye alır.
+        ilgi_notu = _ilgi_engeli(t, profil, profil_hedefler, olcek_sinifi)
+        if ilgi_notu:
+            skor -= ILGI_CEZASI
+            eksik.append(ilgi_notu)
 
         # Ceza 1,0 tavanından SONRA düşülür: tavan öncesi düşülse 1,3 -> 1,25 -> 1,0 olur, etkisi kalmaz.
         ceza = 0.0

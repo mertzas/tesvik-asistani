@@ -1,0 +1,1890 @@
+{
+ "esles": {
+  "1 Konya ciftci": [
+   {
+    "sira": 1,
+    "id": 76,
+    "skor": 1.0,
+    "baslik": "Hayvancılık Destekleri",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 2,
+    "id": 160,
+    "skor": 1.0,
+    "baslik": "Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim)",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 3,
+    "id": 94,
+    "skor": 0.7,
+    "baslik": "TARIM KEFALET DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 4,
+    "id": 161,
+    "skor": 0.7,
+    "baslik": "Meyve-Sebze Üretim Destekleri (Temel Destek)",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 5,
+    "id": 79,
+    "skor": 0.7,
+    "baslik": "Sera/Örtüaltı Tarım Destekleri",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 6,
+    "id": 180,
+    "skor": 0.65,
+    "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 7,
+    "id": 178,
+    "skor": 0.65,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 8,
+    "id": 77,
+    "skor": 0.5,
+    "baslik": "Organik Tarım Destekleri",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 9,
+    "id": 172,
+    "skor": 0.3,
+    "baslik": "DİJİTAL KEFALET DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 10,
+    "id": 1,
+    "skor": 0.3,
+    "baslik": "Girişimci Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 11,
+    "id": 186,
+    "skor": 0.3,
+    "baslik": "İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kan",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 12,
+    "id": 87,
+    "skor": 0.3,
+    "baslik": "HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 13,
+    "id": 2,
+    "skor": 0.3,
+    "baslik": "Yapay Zekâ Kredi Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 14,
+    "id": 185,
+    "skor": 0.3,
+    "baslik": "Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 15,
+    "id": 122,
+    "skor": 0.3,
+    "baslik": "HALKBANK İLK ADIM KREDİSİ PROJESİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 16,
+    "id": 5,
+    "skor": 0.3,
+    "baslik": "YÖNDE - Yönderlik ve Değerlendirme Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 17,
+    "id": 126,
+    "skor": 0.3,
+    "baslik": "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 18,
+    "id": 154,
+    "skor": 0.3,
+    "baslik": "KGF Genel Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 19,
+    "id": 137,
+    "skor": 0.3,
+    "baslik": "KGF Özkaynak Kefalet Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 20,
+    "id": 149,
+    "skor": 0.3,
+    "baslik": "REFİNANSMAN KEFALET PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   }
+  ],
+  "2 Izmir tekstil": [
+   {
+    "sira": 1,
+    "id": 8,
+    "skor": 1.0,
+    "baslik": "Kapasite Geliştirme Destek Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 2,
+    "id": 180,
+    "skor": 1.0,
+    "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 3,
+    "id": 81,
+    "skor": 0.95,
+    "baslik": "KAPASİTE GELİŞTİRME DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 4,
+    "id": 178,
+    "skor": 0.95,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 5,
+    "id": 7,
+    "skor": 0.7,
+    "baslik": "İstihdamı Koruma Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 6,
+    "id": 159,
+    "skor": 0.7,
+    "baslik": "İhracat Destek Paketi",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 7,
+    "id": 192,
+    "skor": 0.7,
+    "baslik": "Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 8,
+    "id": 3,
+    "skor": 0.7,
+    "baslik": "KOBİ Dijital Dönüşüm Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 9,
+    "id": 168,
+    "skor": 0.7,
+    "baslik": "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 10,
+    "id": 162,
+    "skor": 0.7,
+    "baslik": "E-İhracat Destekleri (5986 Sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 11,
+    "id": 9,
+    "skor": 0.7,
+    "baslik": "Küresel Rekabetçilik Destek Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 12,
+    "id": 196,
+    "skor": 0.7,
+    "baslik": "E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 s",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 13,
+    "id": 187,
+    "skor": 0.7,
+    "baslik": "Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 14,
+    "id": 193,
+    "skor": 0.7,
+    "baslik": "Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 15,
+    "id": 190,
+    "skor": 0.7,
+    "baslik": "Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 16,
+    "id": 188,
+    "skor": 0.7,
+    "baslik": "Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 17,
+    "id": 189,
+    "skor": 0.7,
+    "baslik": "Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 18,
+    "id": 194,
+    "skor": 0.7,
+    "baslik": "Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayılı Karar m.9)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 19,
+    "id": 191,
+    "skor": 0.7,
+    "baslik": "Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 20,
+    "id": 195,
+    "skor": 0.7,
+    "baslik": "Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986",
+    "hedef": true,
+    "tahmini": null
+   }
+  ],
+  "3 Ankara girisim": [
+   {
+    "sira": 1,
+    "id": 174,
+    "skor": 0.7,
+    "baslik": "1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim)",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 2,
+    "id": 49,
+    "skor": 0.7,
+    "baslik": "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+    "hedef": false,
+    "tahmini": null
+   }
+  ],
+  "4 Van otel": [
+   {
+    "sira": 1,
+    "id": 180,
+    "skor": 1.0,
+    "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 2,
+    "id": 178,
+    "skor": 0.95,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 3,
+    "id": 90,
+    "skor": 0.6,
+    "baslik": "YATIRIM-İŞLETME DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 4,
+    "id": 181,
+    "skor": 0.6,
+    "baslik": "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 5,
+    "id": 172,
+    "skor": 0.3,
+    "baslik": "DİJİTAL KEFALET DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 6,
+    "id": 1,
+    "skor": 0.3,
+    "baslik": "Girişimci Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 7,
+    "id": 186,
+    "skor": 0.3,
+    "baslik": "İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kan",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 8,
+    "id": 34,
+    "skor": 0.3,
+    "baslik": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 9,
+    "id": 122,
+    "skor": 0.3,
+    "baslik": "HALKBANK İLK ADIM KREDİSİ PROJESİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 10,
+    "id": 2,
+    "skor": 0.3,
+    "baslik": "Yapay Zekâ Kredi Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 11,
+    "id": 185,
+    "skor": 0.3,
+    "baslik": "Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 12,
+    "id": 75,
+    "skor": 0.3,
+    "baslik": "1505 - Üniversite-Sanayi İşbirliği Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 13,
+    "id": 126,
+    "skor": 0.3,
+    "baslik": "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 14,
+    "id": 5,
+    "skor": 0.3,
+    "baslik": "YÖNDE - Yönderlik ve Değerlendirme Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 15,
+    "id": 44,
+    "skor": 0.3,
+    "baslik": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 16,
+    "id": 154,
+    "skor": 0.3,
+    "baslik": "KGF Genel Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 17,
+    "id": 39,
+    "skor": 0.3,
+    "baslik": "1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 18,
+    "id": 137,
+    "skor": 0.3,
+    "baslik": "KGF Özkaynak Kefalet Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 19,
+    "id": 25,
+    "skor": 0.3,
+    "baslik": "1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yen",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 20,
+    "id": 149,
+    "skor": 0.3,
+    "baslik": "REFİNANSMAN KEFALET PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   }
+  ],
+  "5 Trabzon eticaret": [
+   {
+    "sira": 1,
+    "id": 192,
+    "skor": 1.0,
+    "baslik": "Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 2,
+    "id": 162,
+    "skor": 1.0,
+    "baslik": "E-İhracat Destekleri (5986 Sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 3,
+    "id": 196,
+    "skor": 1.0,
+    "baslik": "E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 s",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 4,
+    "id": 187,
+    "skor": 1.0,
+    "baslik": "Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 5,
+    "id": 193,
+    "skor": 1.0,
+    "baslik": "Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 6,
+    "id": 190,
+    "skor": 1.0,
+    "baslik": "Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 7,
+    "id": 188,
+    "skor": 1.0,
+    "baslik": "Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 8,
+    "id": 189,
+    "skor": 1.0,
+    "baslik": "Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 9,
+    "id": 194,
+    "skor": 1.0,
+    "baslik": "Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayılı Karar m.9)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 10,
+    "id": 191,
+    "skor": 1.0,
+    "baslik": "Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 11,
+    "id": 195,
+    "skor": 1.0,
+    "baslik": "Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 12,
+    "id": 159,
+    "skor": 0.7,
+    "baslik": "İhracat Destek Paketi",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 13,
+    "id": 9,
+    "skor": 0.7,
+    "baslik": "Küresel Rekabetçilik Destek Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 14,
+    "id": 168,
+    "skor": 0.7,
+    "baslik": "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 15,
+    "id": 107,
+    "skor": 0.65,
+    "baslik": "KÜRESEL REKABETÇİLİK DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 16,
+    "id": 172,
+    "skor": 0.3,
+    "baslik": "DİJİTAL KEFALET DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 17,
+    "id": 1,
+    "skor": 0.3,
+    "baslik": "Girişimci Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 18,
+    "id": 186,
+    "skor": 0.3,
+    "baslik": "İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kan",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 19,
+    "id": 34,
+    "skor": 0.3,
+    "baslik": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 20,
+    "id": 122,
+    "skor": 0.3,
+    "baslik": "HALKBANK İLK ADIM KREDİSİ PROJESİ",
+    "hedef": false,
+    "tahmini": null
+   }
+  ],
+  "6 Istanbul SaaS": [
+   {
+    "sira": 1,
+    "id": 8,
+    "skor": 1.0,
+    "baslik": "Kapasite Geliştirme Destek Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 2,
+    "id": 182,
+    "skor": 1.0,
+    "baslik": "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizm",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 3,
+    "id": 152,
+    "skor": 1.0,
+    "baslik": "TÜBİTAK Transfer Ödemeleri",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 4,
+    "id": 34,
+    "skor": 1.0,
+    "baslik": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 5,
+    "id": 9,
+    "skor": 1.0,
+    "baslik": "Küresel Rekabetçilik Destek Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 6,
+    "id": 75,
+    "skor": 1.0,
+    "baslik": "1505 - Üniversite-Sanayi İşbirliği Destek Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 7,
+    "id": 2,
+    "skor": 1.0,
+    "baslik": "Yapay Zekâ Kredi Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 8,
+    "id": 44,
+    "skor": 1.0,
+    "baslik": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 9,
+    "id": 39,
+    "skor": 1.0,
+    "baslik": "1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 10,
+    "id": 25,
+    "skor": 1.0,
+    "baslik": "1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yen",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 11,
+    "id": 55,
+    "skor": 1.0,
+    "baslik": "1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 12,
+    "id": 48,
+    "skor": 1.0,
+    "baslik": "1709 – EUREKA-EUROSTARS",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 13,
+    "id": 46,
+    "skor": 1.0,
+    "baslik": "1719 Eureka Network Çağrıları",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 14,
+    "id": 59,
+    "skor": 1.0,
+    "baslik": "1832 - Sanayide Yeşil Dönüşüm Çağrısı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 15,
+    "id": 81,
+    "skor": 0.95,
+    "baslik": "KAPASİTE GELİŞTİRME DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 16,
+    "id": 107,
+    "skor": 0.95,
+    "baslik": "KÜRESEL REKABETÇİLİK DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 17,
+    "id": 159,
+    "skor": 0.7,
+    "baslik": "İhracat Destek Paketi",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 18,
+    "id": 14,
+    "skor": 0.7,
+    "baslik": "1515 - Öncül Ar-Ge Laboratuvarları Destekleme Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 19,
+    "id": 192,
+    "skor": 0.7,
+    "baslik": "Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 20,
+    "id": 168,
+    "skor": 0.7,
+    "baslik": "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   }
+  ],
+  "7 Bursa buyuk imalat": [
+   {
+    "sira": 1,
+    "id": 180,
+    "skor": 1.0,
+    "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 2,
+    "id": 179,
+    "skor": 1.0,
+    "baslik": "Stratejik Hamle Programı (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 3,
+    "id": 177,
+    "skor": 1.0,
+    "baslik": "Teknoloji Hamlesi Programı (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 4,
+    "id": 181,
+    "skor": 1.0,
+    "baslik": "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 5,
+    "id": 178,
+    "skor": 0.95,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 6,
+    "id": 7,
+    "skor": 0.7,
+    "baslik": "İstihdamı Koruma Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 7,
+    "id": 152,
+    "skor": 0.7,
+    "baslik": "TÜBİTAK Transfer Ödemeleri",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 8,
+    "id": 34,
+    "skor": 0.7,
+    "baslik": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 9,
+    "id": 75,
+    "skor": 0.7,
+    "baslik": "1505 - Üniversite-Sanayi İşbirliği Destek Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 10,
+    "id": 39,
+    "skor": 0.7,
+    "baslik": "1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 11,
+    "id": 25,
+    "skor": 0.7,
+    "baslik": "1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yen",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 12,
+    "id": 48,
+    "skor": 0.7,
+    "baslik": "1709 – EUREKA-EUROSTARS",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 13,
+    "id": 46,
+    "skor": 0.7,
+    "baslik": "1719 Eureka Network Çağrıları",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 14,
+    "id": 59,
+    "skor": 0.7,
+    "baslik": "1832 - Sanayide Yeşil Dönüşüm Çağrısı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 15,
+    "id": 142,
+    "skor": 0.65,
+    "baslik": "İSTİHDAM KORUMA DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 16,
+    "id": 90,
+    "skor": 0.6,
+    "baslik": "YATIRIM-İŞLETME DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 17,
+    "id": 14,
+    "skor": 0.4,
+    "baslik": "1515 - Öncül Ar-Ge Laboratuvarları Destekleme Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 18,
+    "id": 15,
+    "skor": 0.4,
+    "baslik": "1702 - Patent Tabanlı Teknoloji Transferi Destekleme Çağrısı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 19,
+    "id": 172,
+    "skor": 0.3,
+    "baslik": "DİJİTAL KEFALET DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 20,
+    "id": 186,
+    "skor": 0.3,
+    "baslik": "İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kan",
+    "hedef": false,
+    "tahmini": null
+   }
+  ],
+  "8 Hatay mikro": [
+   {
+    "sira": 1,
+    "id": 126,
+    "skor": 0.6,
+    "baslik": "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 2,
+    "id": 186,
+    "skor": 0.6,
+    "baslik": "İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kan",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 3,
+    "id": 185,
+    "skor": 0.6,
+    "baslik": "Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 4,
+    "id": 178,
+    "skor": 0.35,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 5,
+    "id": 172,
+    "skor": 0.3,
+    "baslik": "DİJİTAL KEFALET DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 6,
+    "id": 1,
+    "skor": 0.3,
+    "baslik": "Girişimci Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 7,
+    "id": 87,
+    "skor": 0.3,
+    "baslik": "HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 8,
+    "id": 2,
+    "skor": 0.3,
+    "baslik": "Yapay Zekâ Kredi Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 9,
+    "id": 122,
+    "skor": 0.3,
+    "baslik": "HALKBANK İLK ADIM KREDİSİ PROJESİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 10,
+    "id": 5,
+    "skor": 0.3,
+    "baslik": "YÖNDE - Yönderlik ve Değerlendirme Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 11,
+    "id": 154,
+    "skor": 0.3,
+    "baslik": "KGF Genel Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 12,
+    "id": 137,
+    "skor": 0.3,
+    "baslik": "KGF Özkaynak Kefalet Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 13,
+    "id": 149,
+    "skor": 0.3,
+    "baslik": "REFİNANSMAN KEFALET PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 14,
+    "id": 91,
+    "skor": 0.3,
+    "baslik": "TKYB KREDİ DESTEK PAKETİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 15,
+    "id": 86,
+    "skor": 0.3,
+    "baslik": "TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 16,
+    "id": 146,
+    "skor": 0.3,
+    "baslik": "TURWIB PROGRAMI DESTEK PAKETİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 17,
+    "id": 153,
+    "skor": 0.3,
+    "baslik": "TURYIB Programı Destek Paketi",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 18,
+    "id": 90,
+    "skor": 0.3,
+    "baslik": "YATIRIM-İŞLETME DESTEK PAKETİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 19,
+    "id": 171,
+    "skor": 0.3,
+    "baslik": "Ziraat Katılım Bankası Katılım Finans Destek Paketi",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 20,
+    "id": 168,
+    "skor": 0.3,
+    "baslik": "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ",
+    "hedef": false,
+    "tahmini": null
+   }
+  ],
+  "9 Ekmek 10.71 Konya": [
+   {
+    "sira": 1,
+    "id": 8,
+    "skor": 1.0,
+    "baslik": "Kapasite Geliştirme Destek Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 2,
+    "id": 81,
+    "skor": 0.95,
+    "baslik": "KAPASİTE GELİŞTİRME DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 3,
+    "id": 178,
+    "skor": 0.95,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 4,
+    "id": 7,
+    "skor": 0.7,
+    "baslik": "İstihdamı Koruma Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 5,
+    "id": 3,
+    "skor": 0.7,
+    "baslik": "KOBİ Dijital Dönüşüm Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 6,
+    "id": 125,
+    "skor": 0.65,
+    "baslik": "2024 Dijital Dönüşüm Destek Paketi",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 7,
+    "id": 142,
+    "skor": 0.65,
+    "baslik": "İSTİHDAM KORUMA DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 8,
+    "id": 90,
+    "skor": 0.6,
+    "baslik": "YATIRIM-İŞLETME DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 9,
+    "id": 180,
+    "skor": 0.55,
+    "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 10,
+    "id": 179,
+    "skor": 0.55,
+    "baslik": "Stratejik Hamle Programı (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 11,
+    "id": 177,
+    "skor": 0.55,
+    "baslik": "Teknoloji Hamlesi Programı (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 12,
+    "id": 181,
+    "skor": 0.55,
+    "baslik": "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 13,
+    "id": 172,
+    "skor": 0.3,
+    "baslik": "DİJİTAL KEFALET DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 14,
+    "id": 1,
+    "skor": 0.3,
+    "baslik": "Girişimci Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 15,
+    "id": 186,
+    "skor": 0.3,
+    "baslik": "İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kan",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 16,
+    "id": 34,
+    "skor": 0.3,
+    "baslik": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 17,
+    "id": 122,
+    "skor": 0.3,
+    "baslik": "HALKBANK İLK ADIM KREDİSİ PROJESİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 18,
+    "id": 2,
+    "skor": 0.3,
+    "baslik": "Yapay Zekâ Kredi Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 19,
+    "id": 185,
+    "skor": 0.3,
+    "baslik": "Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 20,
+    "id": 75,
+    "skor": 0.3,
+    "baslik": "1505 - Üniversite-Sanayi İşbirliği Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   }
+  ],
+  "10 Hatay NACEsiz hizmet": [
+   {
+    "sira": 1,
+    "id": 172,
+    "skor": 0.6,
+    "baslik": "DİJİTAL KEFALET DESTEK PROGRAMI",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 2,
+    "id": 2,
+    "skor": 0.6,
+    "baslik": "Yapay Zekâ Kredi Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 3,
+    "id": 87,
+    "skor": 0.6,
+    "baslik": "HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 4,
+    "id": 122,
+    "skor": 0.6,
+    "baslik": "HALKBANK İLK ADIM KREDİSİ PROJESİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 5,
+    "id": 126,
+    "skor": 0.6,
+    "baslik": "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 6,
+    "id": 154,
+    "skor": 0.6,
+    "baslik": "KGF Genel Destek Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 7,
+    "id": 137,
+    "skor": 0.6,
+    "baslik": "KGF Özkaynak Kefalet Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 8,
+    "id": 149,
+    "skor": 0.6,
+    "baslik": "REFİNANSMAN KEFALET PROGRAMI",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 9,
+    "id": 91,
+    "skor": 0.6,
+    "baslik": "TKYB KREDİ DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 10,
+    "id": 86,
+    "skor": 0.6,
+    "baslik": "TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 11,
+    "id": 146,
+    "skor": 0.6,
+    "baslik": "TURWIB PROGRAMI DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 12,
+    "id": 153,
+    "skor": 0.6,
+    "baslik": "TURYIB Programı Destek Paketi",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 13,
+    "id": 90,
+    "skor": 0.6,
+    "baslik": "YATIRIM-İŞLETME DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 14,
+    "id": 171,
+    "skor": 0.6,
+    "baslik": "Ziraat Katılım Bankası Katılım Finans Destek Paketi",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 15,
+    "id": 168,
+    "skor": 0.6,
+    "baslik": "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 16,
+    "id": 170,
+    "skor": 0.55,
+    "baslik": "GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 17,
+    "id": 118,
+    "skor": 0.55,
+    "baslik": "KOSGEB Geri Ödemeli Destekleri",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 18,
+    "id": 182,
+    "skor": 0.4,
+    "baslik": "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizm",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 19,
+    "id": 180,
+    "skor": 0.35,
+    "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 20,
+    "id": 178,
+    "skor": 0.35,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "hedef": false,
+    "tahmini": null
+   }
+  ],
+  "11 Konya bugday sentetik": [
+   {
+    "sira": 1,
+    "id": 160,
+    "skor": 1.0,
+    "baslik": "Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim)",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 2,
+    "id": 76,
+    "skor": 0.75,
+    "baslik": "Hayvancılık Destekleri",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 3,
+    "id": 94,
+    "skor": 0.7,
+    "baslik": "TARIM KEFALET DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 4,
+    "id": 178,
+    "skor": 0.65,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 5,
+    "id": 77,
+    "skor": 0.5,
+    "baslik": "Organik Tarım Destekleri",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 6,
+    "id": 172,
+    "skor": 0.3,
+    "baslik": "DİJİTAL KEFALET DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 7,
+    "id": 2,
+    "skor": 0.3,
+    "baslik": "Yapay Zekâ Kredi Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 8,
+    "id": 186,
+    "skor": 0.3,
+    "baslik": "İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kan",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 9,
+    "id": 87,
+    "skor": 0.3,
+    "baslik": "HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 10,
+    "id": 5,
+    "skor": 0.3,
+    "baslik": "YÖNDE - Yönderlik ve Değerlendirme Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 11,
+    "id": 185,
+    "skor": 0.3,
+    "baslik": "Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 12,
+    "id": 122,
+    "skor": 0.3,
+    "baslik": "HALKBANK İLK ADIM KREDİSİ PROJESİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 13,
+    "id": 126,
+    "skor": 0.3,
+    "baslik": "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 14,
+    "id": 154,
+    "skor": 0.3,
+    "baslik": "KGF Genel Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 15,
+    "id": 137,
+    "skor": 0.3,
+    "baslik": "KGF Özkaynak Kefalet Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 16,
+    "id": 149,
+    "skor": 0.3,
+    "baslik": "REFİNANSMAN KEFALET PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 17,
+    "id": 91,
+    "skor": 0.3,
+    "baslik": "TKYB KREDİ DESTEK PAKETİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 18,
+    "id": 86,
+    "skor": 0.3,
+    "baslik": "TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 19,
+    "id": 146,
+    "skor": 0.3,
+    "baslik": "TURWIB PROGRAMI DESTEK PAKETİ",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 20,
+    "id": 153,
+    "skor": 0.3,
+    "baslik": "TURYIB Programı Destek Paketi",
+    "hedef": false,
+    "tahmini": null
+   }
+  ],
+  "12 Bursa metal sentetik": [
+   {
+    "sira": 1,
+    "id": 8,
+    "skor": 1.0,
+    "baslik": "Kapasite Geliştirme Destek Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 2,
+    "id": 180,
+    "skor": 1.0,
+    "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 3,
+    "id": 81,
+    "skor": 0.95,
+    "baslik": "KAPASİTE GELİŞTİRME DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 4,
+    "id": 178,
+    "skor": 0.95,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 5,
+    "id": 7,
+    "skor": 0.7,
+    "baslik": "İstihdamı Koruma Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 6,
+    "id": 159,
+    "skor": 0.7,
+    "baslik": "İhracat Destek Paketi",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 7,
+    "id": 192,
+    "skor": 0.7,
+    "baslik": "Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 8,
+    "id": 3,
+    "skor": 0.7,
+    "baslik": "KOBİ Dijital Dönüşüm Destek Programı",
+    "hedef": false,
+    "tahmini": null
+   },
+   {
+    "sira": 9,
+    "id": 168,
+    "skor": 0.7,
+    "baslik": "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 10,
+    "id": 162,
+    "skor": 0.7,
+    "baslik": "E-İhracat Destekleri (5986 Sayılı Karar)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 11,
+    "id": 9,
+    "skor": 0.7,
+    "baslik": "Küresel Rekabetçilik Destek Programı",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 12,
+    "id": 196,
+    "skor": 0.7,
+    "baslik": "E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 s",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 13,
+    "id": 187,
+    "skor": 0.7,
+    "baslik": "Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 14,
+    "id": 193,
+    "skor": 0.7,
+    "baslik": "Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 15,
+    "id": 190,
+    "skor": 0.7,
+    "baslik": "Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 16,
+    "id": 188,
+    "skor": 0.7,
+    "baslik": "Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 17,
+    "id": 189,
+    "skor": 0.7,
+    "baslik": "Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 18,
+    "id": 194,
+    "skor": 0.7,
+    "baslik": "Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayılı Karar m.9)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 19,
+    "id": 191,
+    "skor": 0.7,
+    "baslik": "Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12)",
+    "hedef": true,
+    "tahmini": null
+   },
+   {
+    "sira": 20,
+    "id": 195,
+    "skor": 0.7,
+    "baslik": "Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986",
+    "hedef": true,
+    "tahmini": null
+   }
+  ]
+ },
+ "arama": [
+  {
+   "persona": "12 Bursa metal sentetik",
+   "soru": "5 eksenli CNC tezgahı almak istiyoruz, yaklaşık 18 milyon TL, hangi destek ve krediler var?",
+   "ilk8": [
+    "81 KGF | KAPASİTE GELİŞTİRME DESTEK PAKETİ",
+    "8 KOSGEB | Kapasite Geliştirme Destek Programı",
+    "90 KGF | YATIRIM-İŞLETME DESTEK PAKETİ",
+    "180 Sanayi ve Teknoloji Bakanlığı | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "125 KGF | 2024 Dijital Dönüşüm Destek Paketi",
+    "142 KGF | İSTİHDAM KORUMA DESTEK PROGRAMI",
+    "3 KOSGEB | KOBİ Dijital Dönüşüm Destek Programı",
+    "170 KGF | GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI"
+   ]
+  },
+  {
+   "persona": "9 Ekmek 10.71 Konya",
+   "soru": "Yeni ekmek üretim hattı için makine alacağım; yatırım teşvik belgesi alabilir miyim?",
+   "ilk8": [
+    "81 KGF | KAPASİTE GELİŞTİRME DESTEK PAKETİ",
+    "8 KOSGEB | Kapasite Geliştirme Destek Programı",
+    "90 KGF | YATIRIM-İŞLETME DESTEK PAKETİ",
+    "178 Sanayi ve Teknoloji Bakanlığı | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "185 SGK / İŞKUR | Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İst",
+    "186 SGK / İŞKUR | İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (",
+    "25 TUBITAK | 1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Ge",
+    "180 Sanayi ve Teknoloji Bakanlığı | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
+   ]
+  },
+  {
+   "persona": "1 Konya ciftci",
+   "soru": "Traktör ve mibzer almak istiyorum, hibe var mı?",
+   "ilk8": [
+    "79 Tarım Bakanlığı | Sera/Örtüaltı Tarım Destekleri",
+    "94 KGF | TARIM KEFALET DESTEK PROGRAMI",
+    "76 Tarım Bakanlığı | Hayvancılık Destekleri",
+    "77 Tarım Bakanlığı | Organik Tarım Destekleri",
+    "160 Tarım Bakanlığı | Hububat ve Baklagil Üretim Destekleri (Temel Destek + P",
+    "161 Tarım Bakanlığı | Meyve-Sebze Üretim Destekleri (Temel Destek)",
+    "178 Sanayi ve Teknoloji Bakanlığı | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "180 Sanayi ve Teknoloji Bakanlığı | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
+   ]
+  },
+  {
+   "persona": "2 Izmir tekstil",
+   "soru": "Almanya'ya ihracata başlayacağız, hangi destekler var?",
+   "ilk8": [
+    "162 Ticaret Bakanlığı | E-İhracat Destekleri (5986 Sayılı Karar)",
+    "159 KGF | İhracat Destek Paketi",
+    "168 KGF | ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ",
+    "9 KOSGEB | Küresel Rekabetçilik Destek Programı",
+    "196 Ticaret Bakanlığı | E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi ",
+    "107 KGF | KÜRESEL REKABETÇİLİK DESTEK PAKETİ",
+    "187 Ticaret Bakanlığı | Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3)",
+    "188 Ticaret Bakanlığı | Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)"
+   ]
+  },
+  {
+   "persona": "8 Hatay mikro",
+   "soru": "3 kişi daha işe alacağım, SGK desteği var mı?",
+   "ilk8": [
+    "186 SGK / İŞKUR | İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (",
+    "185 SGK / İŞKUR | Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İst",
+    "126 KGF | İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (B",
+    "178 Sanayi ve Teknoloji Bakanlığı | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "153 KGF | TURYIB Programı Destek Paketi",
+    "137 KGF | KGF Özkaynak Kefalet Programı",
+    "154 KGF | KGF Genel Destek Programı",
+    "171 KGF | Ziraat Katılım Bankası Katılım Finans Destek Paketi"
+   ]
+  },
+  {
+   "persona": "10 Hatay NACEsiz hizmet",
+   "soru": "İşletme sermayesi için uygun faizli kredi veya kefalet desteği arıyorum.",
+   "ilk8": [
+    "87 KGF | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ",
+    "90 KGF | YATIRIM-İŞLETME DESTEK PAKETİ",
+    "170 KGF | GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI",
+    "91 KGF | TKYB KREDİ DESTEK PAKETİ",
+    "122 KGF | HALKBANK İLK ADIM KREDİSİ PROJESİ",
+    "168 KGF | ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ",
+    "172 KGF | DİJİTAL KEFALET DESTEK PROGRAMI",
+    "86 KGF | TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI"
+   ]
+  }
+ ]
+}

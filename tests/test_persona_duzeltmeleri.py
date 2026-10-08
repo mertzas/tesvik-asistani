@@ -162,3 +162,32 @@ def test_tur14_self_test():
                        stdin=subprocess.DEVNULL, capture_output=True, text=True, encoding="utf-8")
     m = re.search(r"self-test: (\d+)/(\d+) geçti", r.stdout)
     assert r.returncode == 0 and m and m.group(1) == m.group(2) and int(m.group(2)) >= 4, r.stdout
+
+
+# ---------------------------------------------------------------- ilgi cezaları (100 sentetik ajan, 2026-10-09)
+@pytest.fixture
+def ilgi(db_session):
+    db_session.add_all([
+        _t(id=2, kurum="KOSGEB", baslik="Yapay Zekâ Kredi Programı", uygunluk_kriterleri={"sektorler": ["arge", "genel"]}),
+        _t(id=186, kurum="SGK / İŞKUR", baslik="İşsizlik Ödeneği Alanların İstihdamı", uygunluk_kriterleri={"sektorler": ["genel"]}),
+        _t(id=5, kurum="KOSGEB", baslik="YÖNDE - Yönderlik ve Değerlendirme", uygunluk_kriterleri={"sektorler": ["genel"]}),
+        _t(id=160, kurum="Tarım Bakanlığı", baslik="Hububat", uygunluk_kriterleri={"sektorler": ["tarim"],
+                                                                                 "alt_kategori": "tahil_baklagil", "genislik": "dar"}),
+    ])
+    db_session.commit()
+
+
+def test_ilgisiz_genel_programlar_ciftciye_gelmez(db_session, ilgi):
+    p = FinancialProfile(sektor="tarim", calisan_sayisi=2, tarim_kategori="tahil_baklagil", sirket_turu="sahis",
+                         hedefler=["makine"])
+    ids = {e.tesvik.id for e in esles(p, db_session)}
+    assert 160 in ids and not ({2, 186, 5} & ids)
+
+
+def test_ilgi_sinyali_varsa_kalir(db_session, ilgi):
+    yazilim = FinancialProfile(sektor="hizmet", nace_kodu="62.01", calisan_sayisi=10, sirket_turu="limited",
+                               hedefler=["istihdam"])
+    ids = {e.tesvik.id for e in esles(yazilim, db_session)}
+    assert {2, 186} <= ids                          # Ar-Ge NACE'si ve istihdam hedefi var
+    hedefsiz = FinancialProfile(sektor="hizmet", calisan_sayisi=10, sirket_turu="limited")
+    assert 186 in {e.tesvik.id for e in esles(hedefsiz, db_session)}   # yokluk ihlal değildir

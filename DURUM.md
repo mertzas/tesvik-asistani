@@ -204,6 +204,12 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
   çelişiyordu ("üst limit yok" ↔ "en fazla 20 M TL"); program sayfası + 2026-2 çağrı metniyle düzeltildi, eskimiş "genellikle
   Ocak-Şubat" süresi gerçek takvimle değişti, "en fazla 2 proje önerisi" şartı eklendi. Aynı çelişki türü için tüm aktif
   kayıtlar tarandı: başka yok.
+- **100 sentetik ajan** (2026-10-09, `docs/olcum/2026-10-09-100-ajan/RAPOR.md`): 20 arketip × 5, kurallı ajan (LLM yok);
+  18 değişmez/beklenti denetimi %100 ama yanıltıcıydı → bağımsız ilgi ölçümü: ilk 10'da ilgisiz öneri %18,4 → %4,3
+  (`matching._ilgi_engeli`: Yapay Zekâ Kredisi, SGK teşviki, YÖNDE-tarım, TÜBİTAK-ilgisiz sektör, büyük 9903-küçük
+  ölçek; ceza 0,30, dışlama değil). Persona/G12 gerilemesi yok. Yapamadıkları: kalkınma ajansları, TKDK/IPARD,
+  Turquality, İşbaşı veride yok; deprem bölgesi sinyali ve yatırım tutarı alanı yok; program bazında form sürüyor
+  (AGY100 + KOSGEB Kapasite formları indirildi, scratchpad/formlar).
 - **B2B API planı** (`docs/API_URUN_PLANI.md`, kod yok, onay bekliyor): durumsuz `/v1` uçları (eşleşme, uygunluk,
   hazırlık, çağrılar, program, e-ihracat, şablon taslak), API anahtarı + kapsam + kota + ölçüm, hedef müşteri sırası,
   kill criteria, 6 adımlı uygulama planı.

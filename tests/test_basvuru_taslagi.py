@@ -146,4 +146,6 @@ def test_kvkk_metni_taslak_aktarimini_ve_saklamayi_soyler():
 def test_self_test_bayragi():
     r = subprocess.run([sys.executable, "-m", "app.basvuru_taslagi", "--self-test"], cwd=KOK,
                        stdin=subprocess.DEVNULL, capture_output=True, text=True, encoding="utf-8")
-    assert r.returncode == 0 and "6/6 geçti" in r.stdout
+    import re
+    m = re.search(r"self-test: (\d+)/(\d+) geçti", r.stdout)
+    assert r.returncode == 0 and m and m.group(1) == m.group(2) and int(m.group(2)) >= 8

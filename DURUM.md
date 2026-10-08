@@ -193,6 +193,17 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
     olgu kapsaması eşit; yapay zekâ daha uzun, daha az [DOLDURUN]. Fark programa özgü yönlendirici sorulardı → şablona
     tür bazlı rehber (yatırım, ihracat, Ar-Ge, istihdam, girişim, tarım; tür önce başlıktan). API bakiyesi yok: üretim
     modeliyle kesin ölçüm için `taslak_olcum.py --canli` (≤ ~0,15 USD) bakiye yüklenince.
+- **Taslak sihirbazı (sablon-v2)** (2026-10-08, kullanıcı: "bu böyle olmaz" — cevapsız şablon [DOLDURUN] tablosuydu):
+  `GET /api/basvuru-listesi/{id}/taslak-sorulari` (program türüne göre gerekçe/çıktı soruları, önerilen adımlar, formüldeki
+  gider türleri, kayıttaki oran seçenekleri, üst limit, kayıtlı cevaplar); `POST …/taslak` gövdede cevaplar
+  (`basvuru_takipleri.taslak_cevaplar`, göç `o2d4f6b8c345`, UYGULANDI) → cümle + tablo, bütçe toplamı ve talep edilebilecek
+  destek = toplam × seçilen oran (kayıttaki üst limitle sınırlı). Cevapsız taslakta boş tablo yok; göstergeler programın
+  türünden; kurallar ("…desteklenmez", "en fazla 2 proje") işaretlenmez, ilerlemeye sayılmaz, uyarı bloğunda.
+  Tarayıcıda 1501 ile uçtan uca: 3.000.000 TL × %75 = 2.250.000 TL, cevaplar yeniden açılışta geri geliyor.
+- **Tur18 UYGULANDI** (yedek `tesvikler_oncesi_tur18_gocO.db.bak`; kopyada prova yapılmadı, tek kayıt): 1501 formülü tutarla
+  çelişiyordu ("üst limit yok" ↔ "en fazla 20 M TL"); program sayfası + 2026-2 çağrı metniyle düzeltildi, eskimiş "genellikle
+  Ocak-Şubat" süresi gerçek takvimle değişti, "en fazla 2 proje önerisi" şartı eklendi. Aynı çelişki türü için tüm aktif
+  kayıtlar tarandı: başka yok.
 - **B2B API planı** (`docs/API_URUN_PLANI.md`, kod yok, onay bekliyor): durumsuz `/v1` uçları (eşleşme, uygunluk,
   hazırlık, çağrılar, program, e-ihracat, şablon taslak), API anahtarı + kapsam + kota + ölçüm, hedef müşteri sırası,
   kill criteria, 6 adımlı uygulama planı.

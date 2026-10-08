@@ -164,7 +164,8 @@ def test_sablon_taslak_free_planda_rizasiz_ve_claude_cagirmadan(client, db_sessi
     assert "Bursa" in d["taslak"] and "NACE 25.62" in d["taslak"] and "32.000.000 TL" in d["taslak"]
     assert "- [ ] Proje Başvuru Formu" in d["taslak"] and "Başvuru yeri: KBS" in d["taslak"]
     kayit = db_session.query(BasvuruTakibi).filter(BasvuruTakibi.tesvik_id == 9).one()
-    assert kayit.taslak_model == "sablon-v1"
+    from app.sablon_taslak import MODEL_ADI
+    assert kayit.taslak_model == MODEL_ADI
 
 
 def test_sablon_taslak_profilsiz_404_ve_yapay_zeka_kurallari_korunur(client, db_session, hazir):
@@ -184,3 +185,73 @@ def test_sablon_taslak_self_test():
                        capture_output=True, text=True, encoding="utf-8")
     m = re.search(r"self-test: (\d+)/(\d+) geçti", r.stdout)
     assert r.returncode == 0 and m and m.group(1) == m.group(2) and int(m.group(2)) >= 7, r.stdout
+
+
+# ---------------------------------------------------------------- taslak sihirbazı (sablon-v2, 2026-10-08)
+@pytest.fixture
+def ar_ge(client, db_session, hazir):
+    h, org = hazir
+    db_session.add(Tesvik(id=34, kurum="TUBITAK", baslik="1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+                          ozet="o", detay="d", aktif_mi=True, kaynak_url="https://t/34",
+                          tesvil_tutari="Hibe: ilk 5 proje %75 (en fazla 20 M TL/proje), 6. ve sonrası %60",
+                          tutari_max=20_000_000,
+                          tutari_hesaplama_formulu="Destek = giderler × %75 ya da × %60. Desteklenen giderler: personel; malzeme.",
+                          basvuru_sartlari=["Sermaye şirketi olmak", "Proje başvurusundan önce tamamlanmış Ar-Ge faaliyetleri desteklenmez"],
+                          gerekli_belgeler=["Proje öneri formu"], uygunluk_kriterleri={"sektorler": ["arge"]}))
+    db_session.commit()
+    return h
+
+
+def test_sihirbaz_sorulari(client, ar_ge):
+    s = client.get("/api/basvuru-listesi/34/taslak-sorulari", headers=ar_ge).json()
+    assert s["turler"][0] == "arge" and s["oran_secenekleri"] == [75.0, 60.0] and s["ust_limit"] == 20_000_000
+    assert s["gider_kalemleri"] == ["personel", "malzeme"] and s["cevaplar"] is None
+    assert {q["anahtar"] for q in s["gerekce"]} == {"yenilik", "yontem", "ticarilesme"}
+
+
+def test_sihirbaz_cevaplari_taslaga_girer_saklanir_ve_yeniden_kullanilir(client, db_session, ar_ge):
+    cev = {"proje_adi": "Yeni fermantasyon süreci", "gerekce": {"yenilik": "Raf ömrü 7 gün"},
+           "faaliyetler": [{"ad": "Prototip", "baslangic": "2027-01", "bitis": "2027-06"}],
+           "butce": [{"kalem": "personel", "tutar": 2_000_000}, {"kalem": "malzeme", "tutar": 500_000}],
+           "destek_orani": 75}
+    d = client.post("/api/basvuru-listesi/34/taslak", headers=ar_ge, json={"cevaplar": cev}).json()
+    assert "Yeni fermantasyon süreci" in d["taslak"] and "| Prototip | Ocak 2027 | Haziran 2027 |" in d["taslak"]
+    assert "**2.500.000 TL**" in d["taslak"] and "= **1.875.000 TL**" in d["taslak"]
+    assert d["taslak_cevaplar"]["proje_adi"] == "Yeni fermantasyon süreci"
+    # Cevapsız yeniden oluşturma kayıtlı cevapları kullanır; sorular ucu da döndürür.
+    d2 = client.post("/api/basvuru-listesi/34/taslak", headers=ar_ge).json()
+    assert "Yeni fermantasyon süreci" in d2["taslak"]
+    assert client.get("/api/basvuru-listesi/34/taslak-sorulari", headers=ar_ge).json()["cevaplar"]["destek_orani"] == 75
+
+
+def test_kural_isaretlenmez_ilerlemeye_sayilmaz(client, ar_ge):
+    d = client.get("/api/basvuru-listesi/34", headers=ar_ge).json()
+    kural = [m for m in d["maddeler"] if m["kural"]]
+    assert [m["metin"] for m in kural] == ["Proje başvurusundan önce tamamlanmış Ar-Ge faaliyetleri desteklenmez"]
+    assert d["toplam"] == len(d["maddeler"]) - 1
+    taslak = client.post("/api/basvuru-listesi/34/taslak", headers=ar_ge).json()["taslak"]
+    assert "- ⚠ Proje başvurusundan önce" in taslak and "- [ ] Proje başvurusundan önce" not in taslak
+
+
+@pytest.mark.parametrize("hatali", [{"faaliyetler": [{"ad": "x", "baslangic": "2027-13"}]},
+                                    {"butce": [{"kalem": "x", "tutar": -5}]}, {"destek_orani": 150},
+                                    {"proje_adi": "x" * 201}])
+def test_sihirbaz_gecersiz_girdi(client, ar_ge, hatali):
+    assert client.post("/api/basvuru-listesi/34/taslak", headers=ar_ge, json={"cevaplar": hatali}).status_code == 422
+
+
+def test_goc_taslak_cevaplar(tmp_path, monkeypatch):
+    from alembic import command
+    from alembic.config import Config
+    from sqlalchemy import create_engine, inspect
+    from app import models
+    db_yolu = tmp_path / "t.db"
+    monkeypatch.setattr(models.settings, "DATABASE_URL", f"sqlite:///{db_yolu}")
+    cfg = Config(str(KOK / "alembic.ini"))
+    cfg.set_main_option("script_location", str(KOK / "migrations"))
+    motor = create_engine(f"sqlite:///{db_yolu}")
+    command.upgrade(cfg, "head")
+    assert "taslak_cevaplar" in {c["name"] for c in inspect(motor).get_columns("basvuru_takipleri")}
+    command.downgrade(cfg, "n1c3e5a7b234")
+    assert "taslak_cevaplar" not in {c["name"] for c in inspect(motor).get_columns("basvuru_takipleri")}
+    command.upgrade(cfg, "head")

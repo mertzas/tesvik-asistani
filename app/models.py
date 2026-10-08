@@ -458,6 +458,8 @@ class BasvuruTakibi(Base):
     taslak = Column(Text, nullable=True)
     taslak_tarihi = Column(DateTime, nullable=True)
     taslak_model = Column(String(60), nullable=True)
+    # Taslak sihirbazı cevapları (proje, gerekçe, faaliyetler, bütçe, oran, çıktılar; app/sablon_taslak.py)
+    taslak_cevaplar = Column(JSON, nullable=True)
 
 
 class FinancialProfile(Base):

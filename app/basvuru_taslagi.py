@@ -101,7 +101,7 @@ def belgeler_bolumu(maddeler: list[dict]) -> str:
     if not maddeler:
         return ("## 6. Hazırlanacak belgeler ve şartlar\n\nBu program için şart/belge bilgisi sistemimizde yok; "
                 "kurumun resmi sayfasından kontrol edin.")
-    satir = ["## 6. Hazırlanacak belgeler ve şartlar", "", "_Kontrol listenizden; kurumun güncel listesiyle teyit edin._", ""]
+    satir = ["## 6. Hazırlanacak belgeler ve şartlar", "", "Kontrol listenizden; kurumun güncel listesiyle teyit edin.", ""]
     satir += [f"- [{'x' if m.get('isaretli') else ' '}] {m['metin']}" for m in maddeler]
     return "\n".join(satir)
 

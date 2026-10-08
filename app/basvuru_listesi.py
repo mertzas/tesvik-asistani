@@ -22,6 +22,7 @@ from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
 from app import basvuru_taslagi
+from app.sablon_taslak import KURAL
 from app.cagrilar import program_cagrilari
 from app.auth import get_current_org
 from app.models import (BasvuruTakibi, FinancialProfile, IkasBaglanti, Organization, PlanType, Tesvik, get_db,
@@ -57,7 +58,8 @@ def maddeler(t: Tesvik) -> list[dict]:
         if anahtar in gorulen:
             return
         gorulen.add(anahtar)
-        sonuc.append({"anahtar": anahtar, "tur": tur, "metin": metin})
+        # Kural ("…desteklenmez", "en fazla 2 proje"): yapılacak iş değil; işaretlenmez, ilerlemeye sayılmaz.
+        sonuc.append({"anahtar": anahtar, "tur": tur, "metin": metin, "kural": tur == "sart" and bool(KURAL.search(metin))})
 
     for s in _liste(t.basvuru_sartlari):
         ekle("sart", s)
@@ -75,17 +77,19 @@ def _yanit(t: Tesvik, kayit: BasvuruTakibi | None) -> dict:
     liste = maddeler(t)
     isaretli = set(kayit.isaretli or []) if kayit else set()
     for m in liste:
-        m["isaretli"] = m["anahtar"] in isaretli
+        m["isaretli"] = m["anahtar"] in isaretli and not m["kural"]
+    isler = [m for m in liste if not m["kural"]]
     return {
         "tesvik": {"id": t.id, "baslik": t.baslik, "kurum": t.kurum, "kaynak_url": t.kaynak_url,
                    "basvuru_yeri": t.basvuru_yeri, "basvuru_suresi": t.basvuru_suresi, "aktif_mi": t.aktif_mi},
         "maddeler": liste,
-        "tamamlanan": sum(m["isaretli"] for m in liste),
-        "toplam": len(liste),
+        "tamamlanan": sum(m["isaretli"] for m in isler),
+        "toplam": len(isler),
         "takipte": kayit is not None,
         "guncelleme": kayit.guncelleme.isoformat() if kayit and kayit.guncelleme else None,
         "taslak": kayit.taslak if kayit else None,
         "taslak_tarihi": kayit.taslak_tarihi.isoformat() if kayit and kayit.taslak_tarihi else None,
+        "taslak_cevaplar": kayit.taslak_cevaplar if kayit else None,
         # Dönemsel çağrılar (app/cagrilar.py): açık/yaklaşan önce; yoksa boş liste ("tarih duyurulmadı").
         "cagrilar": program_cagrilari(t),
         "uyari": None if liste else ("Bu destek için şart/belge bilgisi henüz sistemde yok; kurumun resmi "
@@ -107,6 +111,35 @@ def _kayit(db: Session, org: Organization, tesvik_id: int) -> BasvuruTakibi | No
 
 class IsaretGirdi(BaseModel):
     isaretli: list[str] = Field(default_factory=list, max_length=EN_COK_MADDE)
+
+
+AY = r"^\d{4}-(0[1-9]|1[0-2])$"
+
+
+class Faaliyet(BaseModel):
+    ad: str = Field("", max_length=200)
+    baslangic: str | None = Field(None, pattern=AY)
+    bitis: str | None = Field(None, pattern=AY)
+
+
+class ButceKalemi(BaseModel):
+    kalem: str = Field("", max_length=200)
+    tutar: float = Field(0, ge=0, le=1e11)
+
+
+class TaslakCevaplari(BaseModel):
+    """Taslak sihirbazı cevapları (app/sablon_taslak.sorular yapısına göre)."""
+    proje_adi: str = Field("", max_length=200)
+    proje_ozeti: str = Field("", max_length=2000)
+    gerekce: dict[str, str] = Field(default_factory=dict, max_length=20)
+    faaliyetler: list[Faaliyet] = Field(default_factory=list, max_length=20)
+    butce: list[ButceKalemi] = Field(default_factory=list, max_length=30)
+    destek_orani: float | None = Field(None, gt=0, le=100)
+    ciktilar: dict[str, str] = Field(default_factory=dict, max_length=20)
+
+
+class TaslakGirdisi(BaseModel):
+    cevaplar: TaslakCevaplari | None = None
 
 
 @router.get("")
@@ -169,15 +202,26 @@ def isaretleri_kaydet(tesvik_id: int, girdi: IsaretGirdi, current_org: Organizat
     return _yanit(t, kayit)
 
 
+@router.get("/{tesvik_id}/taslak-sorulari")
+def taslak_sorulari(tesvik_id: int, current_org: Organization = Depends(get_current_org), db: Session = Depends(get_db)):
+    """Sihirbaz: programın türüne göre sorular, önerilen adımlar, gider türleri, kayıttaki oran seçenekleri, üst limit
+    ve kayıtlı cevaplar."""
+    from app import sablon_taslak
+    t = _tesvik(db, tesvik_id)
+    kayit = _kayit(db, current_org, tesvik_id)
+    return {**sablon_taslak.sorular(t), "cevaplar": kayit.taslak_cevaplar if kayit else None}
+
+
 @router.post("/{tesvik_id}/taslak")
-def taslak_olustur(tesvik_id: int, yontem: str = Query("sablon", pattern="^(sablon|yapay_zeka)$"),
+def taslak_olustur(tesvik_id: int, girdi: TaslakGirdisi | None = None,
+                   yontem: str = Query("sablon", pattern="^(sablon|yapay_zeka)$"),
                    current_org: Organization = Depends(get_current_org), db: Session = Depends(get_db)):
     """Başvuru ön taslağı. yontem=sablon (varsayılan, 2026-10-08): yapay zekâsız, kayıtlı verilerden şablonla
     (app/sablon_taslak.py); plan, rıza ve servis gerektirmez, veri yurt dışına çıkmaz. yontem=yapay_zeka: Claude ile
     (app/basvuru_taslagi.py); koşullar ücretli çağrıdan ÖNCE sırayla denetlenir: PRO+ plan, açık rıza (profil
     Anthropic'e/ABD'ye gider), kayıtlı profil, yapılandırılmış servis, günlük sınır."""
     if yontem == "sablon":
-        return _sablon_taslak(tesvik_id, current_org, db)
+        return _sablon_taslak(tesvik_id, current_org, db, girdi.cevaplar if girdi else None)
     if current_org.plan == PlanType.FREE:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN,
                             detail="Başvuru taslağı PRO ve üzeri planlarda kullanılabilir.")
@@ -247,7 +291,7 @@ def _taslagi_kaydet(db: Session, org: Organization, t: Tesvik, kayit: BasvuruTak
     return _yanit(t, kayit)
 
 
-def _sablon_taslak(tesvik_id: int, org: Organization, db: Session) -> dict:
+def _sablon_taslak(tesvik_id: int, org: Organization, db: Session, cevaplar: TaslakCevaplari | None = None) -> dict:
     from app import sablon_taslak
     t = _tesvik(db, tesvik_id)
     profil = _profil_ve_ikas(db, org)
@@ -255,8 +299,16 @@ def _sablon_taslak(tesvik_id: int, org: Organization, db: Session) -> dict:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
                             detail="Önce Profil & Öneriler bölümünden işletme profilinizi kaydedin.")
     kayit = _kayit(db, org, tesvik_id)
-    metin = sablon_taslak.uret(t, profil, _yanit(t, kayit)["maddeler"], program_cagrilari(t))
-    return _taslagi_kaydet(db, org, t, kayit, metin, sablon_taslak.MODEL_ADI)
+    # Gönderilen cevaplar saklanır; gönderilmezse kayıtlı cevaplar kullanılır (yeniden oluşturmada kaybolmasın).
+    c = cevaplar.model_dump() if cevaplar else (kayit.taslak_cevaplar if kayit else None)
+    metin = sablon_taslak.uret(t, profil, _yanit(t, kayit)["maddeler"], program_cagrilari(t), c)
+    sonuc = _taslagi_kaydet(db, org, t, kayit, metin, sablon_taslak.MODEL_ADI)
+    if cevaplar is not None:
+        kayit = _kayit(db, org, tesvik_id)
+        kayit.taslak_cevaplar = c
+        db.commit()
+        sonuc["taslak_cevaplar"] = c
+    return sonuc
 
 
 @router.delete("/{tesvik_id}")

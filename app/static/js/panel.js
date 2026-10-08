@@ -818,6 +818,128 @@
             }
         }
 
+        // ---- Taslak sihirbazı (GET /taslak-sorulari, POST /taslak cevaplarla; app/sablon_taslak.py) ----
+        let sihirbazTanim = null;
+
+        async function sihirbazAc() {
+            const kutu = document.getElementById("kl-sihirbaz");
+            try {
+                const r = await fetch(`${API_BASE}/basvuru-listesi/${klAcikTesvik}/taslak-sorulari`, { headers: { Authorization: `Bearer ${authToken}` } });
+                if (!r.ok) throw new Error(hataMetni(await r.json().catch(() => ({}))));
+                sihirbazTanim = await r.json();
+                kutu.innerHTML = sihirbazHtml(sihirbazTanim, sihirbazTanim.cevaplar || {});
+                kutu.hidden = false;
+                sihirbazHesapla();
+                kutu.scrollIntoView({ block: "start" });
+            } catch (e) {
+                document.getElementById("kl-taslak-mesaj").innerHTML = `<div class="error">Sihirbaz açılamadı: ${escapeHtml(e.message)}</div>`;
+            }
+        }
+
+        function sihirbazFaaliyetSatiri(f = {}) {
+            return `<div class="sh-satir sh-faaliyet"><input class="sh-ad" maxlength="200" placeholder="İş adımı" aria-label="İş adımı" value="${escapeHtml(f.ad || "")}">
+                <label>Başlangıç <input type="month" class="sh-bas" value="${escapeHtml(f.baslangic || "")}"></label>
+                <label>Bitiş <input type="month" class="sh-bit" value="${escapeHtml(f.bitis || "")}"></label></div>`;
+        }
+        function sihirbazButceSatiri(b = {}) {
+            return `<div class="sh-satir sh-butce"><input class="sh-kalem" maxlength="200" list="sh-gider-liste" placeholder="Gider kalemi" aria-label="Gider kalemi" value="${escapeHtml(b.kalem || "")}">
+                <input type="number" class="sh-tutar" min="0" step="1000" inputmode="numeric" placeholder="Tutar (TL)" aria-label="Tutar (TL)" value="${b.tutar ? escapeHtml(String(b.tutar)) : ""}" data-degisim="sihirbazHesapla"></div>`;
+        }
+
+        function sihirbazHtml(s, c) {
+            const g = c.gerekce || {}, ck = c.ciktilar || {};
+            const faaliyetler = (c.faaliyetler && c.faaliyetler.length) ? c.faaliyetler : s.faaliyet_onerileri.map(ad => ({ ad }));
+            const butce = (c.butce && c.butce.length) ? c.butce : [{}, {}, {}];
+            const oran = s.oran_secenekleri.length
+                ? `<div class="alan"><label for="sh-oran">Size uygulanacak destek oranı (programın metninden)</label>
+                    <select id="sh-oran" data-degisim="sihirbazHesapla"><option value="">Seçiniz</option>${s.oran_secenekleri.map(o =>
+                    `<option value="${o}"${c.destek_orani === o ? " selected" : ""}>%${o}</option>`).join("")}</select></div>` : "";
+            return `<div class="sihirbaz">
+                <h4>1. Proje</h4>
+                <div class="alan"><label for="sh-proje">Projenin adı</label><input id="sh-proje" maxlength="200" value="${escapeHtml(c.proje_adi || "")}"></div>
+                <div class="alan"><label for="sh-ozet">Bir-iki cümleyle proje</label><textarea id="sh-ozet" rows="2" maxlength="2000">${escapeHtml(c.proje_ozeti || "")}</textarea></div>
+                <h4>2. Gerekçe</h4>
+                ${s.gerekce.map(q => `<div class="alan"><label for="sh-g-${escapeHtml(q.anahtar)}">${escapeHtml(q.etiket)}</label>
+                    <textarea id="sh-g-${escapeHtml(q.anahtar)}" class="sh-gerekce" data-anahtar="${escapeHtml(q.anahtar)}" rows="2" maxlength="2000" placeholder="${escapeHtml(q.ipucu)}">${escapeHtml(g[q.anahtar] || "")}</textarea></div>`).join("")}
+                <h4>3. İş adımları ve takvim</h4>
+                <div id="sh-faaliyetler">${faaliyetler.map(sihirbazFaaliyetSatiri).join("")}</div>
+                <button type="button" class="ikincil-btn" data-tikla="sihirbazSatirEkle" data-arg="faaliyet">+ adım ekle</button>
+                <h4>4. Bütçe</h4>
+                <datalist id="sh-gider-liste">${s.gider_kalemleri.map(k => `<option value="${escapeHtml(k)}">`).join("")}</datalist>
+                <div id="sh-butceler">${butce.map(sihirbazButceSatiri).join("")}</div>
+                <button type="button" class="ikincil-btn" data-tikla="sihirbazSatirEkle" data-arg="butce">+ kalem ekle</button>
+                ${oran}
+                <div id="sh-hesap" class="sh-hesap"></div>
+                <h4>5. Beklenen çıktılar</h4>
+                ${s.cikti.map(q => `<div class="alan"><label for="sh-c-${escapeHtml(q.anahtar)}">${escapeHtml(q.etiket)}</label>
+                    <input id="sh-c-${escapeHtml(q.anahtar)}" class="sh-cikti" data-anahtar="${escapeHtml(q.anahtar)}" maxlength="2000" placeholder="${escapeHtml(q.ipucu)}" value="${escapeHtml(ck[q.anahtar] || "")}"></div>`).join("")}
+                <div class="alan"><label for="sh-olcum">Göstergeleri nasıl izleyeceksiniz?</label>
+                    <input id="sh-olcum" maxlength="2000" placeholder="Fatura, SGK bildirgesi, gümrük verisi…" value="${escapeHtml(ck.olcum || "")}"></div>
+                <div class="sh-eylem"><button type="button" class="birincil-btn" data-tikla="sihirbazGonder">Taslağı oluştur</button>
+                    <span class="bolum-aciklama">Boş bıraktığınız yerler taslakta işaretli kalır.</span></div>
+            </div>`;
+        }
+
+        function sihirbazSatirEkle(el) {
+            const faaliyet = el.dataset.arg === "faaliyet";
+            document.getElementById(faaliyet ? "sh-faaliyetler" : "sh-butceler").insertAdjacentHTML("beforeend",
+                faaliyet ? sihirbazFaaliyetSatiri() : sihirbazButceSatiri());
+        }
+
+        function sihirbazHesapla() {
+            const kutu = document.getElementById("sh-hesap");
+            if (!kutu || !sihirbazTanim) return;
+            const toplam = [...document.querySelectorAll("#sh-butceler .sh-tutar")].reduce((a, i) => a + (Number(i.value) || 0), 0);
+            const oranEl = document.getElementById("sh-oran");
+            const oran = oranEl && oranEl.value ? Number(oranEl.value) : null;
+            let metin = `Toplam: <strong>${tl(toplam)}</strong>`;
+            if (oran && toplam) {
+                const limit = sihirbazTanim.ust_limit;
+                const destek = toplam * oran / 100;
+                const sinirli = limit && destek > limit;
+                metin += ` · Talep edilebilecek destek (tahmini): <strong>${tl(sinirli ? limit : destek)}</strong>` + (sinirli ? ` (üst limit ${tl(limit)})` : "");
+            }
+            kutu.innerHTML = metin;
+        }
+
+        function sihirbazCevaplari() {
+            const deger = id => (document.getElementById(id)?.value || "").trim();
+            const ozel = sec => Object.fromEntries([...document.querySelectorAll(sec)].filter(x => x.value.trim())
+                .map(x => [x.dataset.anahtar, x.value.trim()]));
+            const ciktilar = ozel(".sh-cikti");
+            if (deger("sh-olcum")) ciktilar.olcum = deger("sh-olcum");
+            const oranEl = document.getElementById("sh-oran");
+            return {
+                proje_adi: deger("sh-proje"), proje_ozeti: deger("sh-ozet"), gerekce: ozel(".sh-gerekce"), ciktilar,
+                faaliyetler: [...document.querySelectorAll(".sh-faaliyet")].map(r => ({
+                    ad: r.querySelector(".sh-ad").value.trim(), baslangic: r.querySelector(".sh-bas").value || null,
+                    bitis: r.querySelector(".sh-bit").value || null })).filter(f => f.ad),
+                butce: [...document.querySelectorAll(".sh-butce")].map(r => ({
+                    kalem: r.querySelector(".sh-kalem").value.trim(), tutar: Number(r.querySelector(".sh-tutar").value) || 0 }))
+                    .filter(b => b.kalem && b.tutar > 0),
+                destek_orani: oranEl && oranEl.value ? Number(oranEl.value) : null,
+            };
+        }
+
+        async function sihirbazGonder(el) {
+            const mesaj = document.getElementById("kl-taslak-mesaj");
+            el.disabled = true;
+            try {
+                const r = await fetch(`${API_BASE}/basvuru-listesi/${klAcikTesvik}/taslak?yontem=sablon`, {
+                    method: "POST", headers: { "Content-Type": "application/json", Authorization: `Bearer ${authToken}` },
+                    body: JSON.stringify({ cevaplar: sihirbazCevaplari() }),
+                });
+                const d = await r.json();
+                if (!r.ok) throw new Error(hataMetni(d));
+                kontrolListesiCiz(d);
+                document.querySelector(".kl-taslak")?.scrollIntoView({ block: "start" });
+            } catch (e) {
+                mesaj.innerHTML = `<div class="error">Taslak oluşturulamadı: ${escapeHtml(e.message)}</div>`;
+            } finally {
+                el.disabled = false;
+            }
+        }
+
         async function taslakKopyala() {
             const mesaj = document.getElementById("kl-taslak-mesaj");
             try {
@@ -1105,15 +1227,17 @@
             const detay = document.getElementById("kontrol-yazdir");
             document.getElementById("basvuru-listeleri").hidden = true;
             detay.hidden = false;
+            const kurallar = d.maddeler.filter(x => x.kural);
             const gruplar = ["sart", "belge", "basvuru"].map(tur => {
-                const m = d.maddeler.filter(x => x.tur === tur);
+                const m = d.maddeler.filter(x => x.tur === tur && !x.kural);
                 if (!m.length) return "";
                 return `<div class="kl-grup"><h4>${KL_TUR_BASLIK[tur]}</h4>${m.map(x => `
                     <label class="kl-madde${x.isaretli ? " tamam" : ""}">
                         <input type="checkbox" data-degisim="kontrolMaddesi" data-arg="${escapeHtml(x.anahtar)}"${x.isaretli ? " checked" : ""}>
                         <span>${escapeHtml(x.metin)}</span>
                     </label>`).join("")}</div>`;
-            }).join("");
+            }).join("") + (kurallar.length ? `<div class="kl-grup kl-kurallar"><h4>Dikkat edilecek kurallar</h4>${kurallar.map(x =>
+                `<div class="kl-kural">⚠ ${escapeHtml(x.metin)}</div>`).join("")}</div>` : "");
             const kaynak = guvenliUrl(d.tesvik.kaynak_url);
             detay.innerHTML = `
                 <div class="yazdirma-baslik">Teşvik Asistanı — Başvuru kontrol listesi · ${new Date().toLocaleDateString("tr-TR")}</div>
@@ -1136,15 +1260,16 @@
                         <div class="kl-taslak-metin">${mdToHtml(d.taslak)}</div>
                         <div class="kl-taslak-alt yazdirma-gizle">Oluşturma: ${escapeHtml(new Date(d.taslak_tarihi).toLocaleString("tr-TR"))} ·
                             <button type="button" class="ikincil-btn" data-tikla="taslakKopyala">Metni kopyala</button>
-                            <button type="button" class="ikincil-btn" data-tikla="taslakOlustur" data-arg="sablon">Yeniden oluştur</button>
+                            <button type="button" class="ikincil-btn" data-tikla="sihirbazAc">Sihirbazda düzenle</button>
                             <button type="button" class="ikincil-btn" data-tikla="taslakOlustur" data-arg="yapay_zeka">Yapay zekâyla yaz</button></div>`
-                    : `<p class="yazdirma-gizle">Profilinizden ve bu programın bilgilerinden, kurumun başvuru formuna aktarabileceğiniz
-                            düzenlenebilir bir metin taslağı hazırlanır. Bilinmeyen yerler “[DOLDURUN]” olarak bırakılır, rakam uydurulmaz.
-                            Taslak kayıtlı verilerinizden hazırlanır; bilgileriniz hiçbir dış servise gönderilmez.</p>
-                        <button type="button" class="birincil-btn yazdirma-gizle" data-tikla="taslakOlustur" data-arg="sablon">Taslak oluştur</button>
+                    : `<p class="yazdirma-gizle">Birkaç soruyu yanıtlayın (proje, gerekçe, iş adımları, bütçe); yanıtlarınız ve
+                            profilinizle kurumun formuna aktarabileceğiniz bir taslak hazırlanır, bütçe toplamı ve talep edilebilecek
+                            destek hesaplanır. Rakam uydurulmaz; bilgileriniz hiçbir dış servise gönderilmez.</p>
+                        <button type="button" class="birincil-btn yazdirma-gizle" data-tikla="sihirbazAc">Taslak sihirbazını aç</button>
                         <p class="bolum-aciklama yazdirma-gizle" style="margin-top:10px;">Daha akıcı metin isterseniz:
                             <button type="button" class="ikincil-btn" data-tikla="taslakOlustur" data-arg="yapay_zeka">Yapay zekâyla yaz</button>
                             (Anthropic, ABD; PRO plan ve açık rıza gerekir; günde en çok 5).</p>`}
+                    <div id="kl-sihirbaz" class="yazdirma-gizle" hidden></div>
                     <div id="kl-taslak-mesaj" class="yazdirma-gizle"></div>
                 </div>
                 <div class="kl-not">Liste, kaydımızdaki şart ve belge bilgisinden üretilir; kesin ve güncel koşullar için
@@ -1841,6 +1966,10 @@
             basvurularYukle: () => basvurularYukle(),
             taslakOlustur: (el) => taslakOlustur(el),
             taslakKopyala: () => taslakKopyala(),
+            sihirbazAc: () => sihirbazAc(),
+            sihirbazGonder: (el) => sihirbazGonder(el),
+            sihirbazSatirEkle: (el) => sihirbazSatirEkle(el),
+            sihirbazHesapla: () => sihirbazHesapla(),
             ikasYenile: () => ikasYenile(),
             ikasBaglantiKes: () => ikasBaglantiKes(),
             hazirlikIsaretle: (el) => hazirlikIsaretle(el),

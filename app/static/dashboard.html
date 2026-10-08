@@ -80,7 +80,9 @@
             #user-email { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; max-width: 100%; font-size: 13px; }
             .search-box { flex-direction: column; }
             .search-box input, .search-box button { width: 100%; }
-            #profil-form, .profil-ayrinti-ic, .ozet-grid { grid-template-columns: 1fr !important; }
+            #profil-form, .profil-ayrinti-ic, .ozet-grid, .eh-form, .eh-toplam { grid-template-columns: 1fr !important; }
+            .eh-tablo .gizle-dar { display: none; }
+            .eh-tablo .rozet-dar { display: block !important; margin-top: 4px; }
             .sidebar-menu .menu-grup { display: none; }
             .bolum-ust { flex-direction: column; align-items: stretch; }
         }
@@ -120,6 +122,42 @@
         .tamamlanma span { display: block; height: 100%; background: #667eea; }
         .ozet-kart ul.eksikler { margin: 0; padding-left: 18px; font-size: 13px; color: #555; line-height: 1.6; }
         .ozet-tam { grid-column: 1 / -1; }
+        /* Hazırlık yol haritası ve e-ihracat hesaplayıcı (app/hazirlik.py) */
+        .hz-adim { display: flex; gap: 14px; align-items: flex-start; padding: 14px 0; border-top: 1px solid #eef0f5; }
+        .hz-adim:first-child { border-top: 0; }
+        .hz-adim .govde { flex: 1; min-width: 0; }
+        .hz-adim .ad { font-weight: bold; color: #333; }
+        .hz-adim .alt { font-size: 13px; color: #666; margin-top: 4px; line-height: 1.5; }
+        .hz-adim details { font-size: 13px; color: #555; margin-top: 6px; }
+        .hz-adim details li { margin: 2px 0; }
+        .hz-adim.tamam .ad { color: #1d7a4f; }
+        .hz-adim label.tamamla { font-size: 13px; white-space: nowrap; cursor: pointer; color: #4b55c4; }
+        .hz-sayi { display: inline-block; padding: 2px 9px; border-radius: 100px; background: #eef0ff; color: #4b55c4; font-size: 12px; font-weight: bold; }
+        .eh-detay > summary { cursor: pointer; list-style: none; }
+        .eh-detay > summary::-webkit-details-marker { display: none; }
+        .eh-detay > summary h2 { display: inline; margin: 0; }
+        .eh-detay > summary h2::before { content: "▸ "; color: #667eea; }
+        .eh-detay[open] > summary h2::before { content: "▾ "; }
+        .eh-alt { display: block; font-size: 13px; color: #777; margin: 6px 0 4px; }
+        .eh-form { margin-top: 8px; }
+        .eh-form .form-bolum-baslik { grid-column: 1 / -1; }
+        .alan label { display: block; font-size: 13px; color: #666; margin-bottom: 4px; }
+        .alan input, .alan select { width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 5px; font-size: 14px; }
+        .eh-eylem { grid-column: 1 / -1; }
+        .eh-toplam { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 18px 0; }
+        .eh-toplam > div { background: #f7f8fc; border-radius: 10px; padding: 14px; }
+        .eh-toplam .deger { font-size: 22px; font-weight: bold; color: #1d7a4f; }
+        .eh-toplam .etiket { font-size: 12px; color: #666; margin-top: 2px; }
+        .eh-tablo { width: 100%; border-collapse: collapse; font-size: 13px; }
+        .eh-tablo th, .eh-tablo td { text-align: left; padding: 8px 6px; border-top: 1px solid #eef0f5; vertical-align: top; }
+        .eh-tablo td.sayi, .eh-tablo th.sayi { text-align: right; white-space: nowrap; }
+        .eh-tablo .rozet-dar { display: none; }
+        .durum-rozet { display: inline-block; padding: 2px 8px; border-radius: 100px; font-size: 11px; font-weight: bold; }
+        .durum-rozet.uygun { background: #e3f3ea; color: #1d7a4f; }
+        .durum-rozet.hazirlik { background: #fff3dc; color: #8a5a00; }
+        .durum-rozet.teyit { background: #eef0ff; color: #4b55c4; }
+        .durum-rozet.kapali { background: #f4f4f4; color: #777; }
+        .eh-notlar { font-size: 12px; color: #777; margin-top: 12px; line-height: 1.6; padding-left: 18px; }
 
         .main-content {
             flex: 1;
@@ -897,6 +935,35 @@
                     <button type="button" class="ikincil-btn" data-tikla="butceOnerisiAl">Bütçe önerisi</button>
                 </div>
             </div>
+            <div class="search-section" id="hazirlik-section" style="display:none;">
+                <h2>Daha fazla desteğe uygun olmak için</h2>
+                <p class="bolum-aciklama">Size uyan programların istediği kayıt ve belgeler, ve şirket türünüz değişirse açılacak programlar. Tamamladığınız adımı işaretleyin; hesaplamalar buna göre güncellenir.</p>
+                <div id="hazirlik-adimlar"></div>
+            </div>
+
+            <details class="search-section eh-detay" id="eihracat-detay">
+                <summary><h2>E-ihracat geri ödeme hesaplayıcı</h2><span class="eh-alt">Yurt dışı pazaryeri reklamı, fulfillment, komisyon ve mağaza giderleri (5986 sayılı Karar)</span></summary>
+                <p class="bolum-aciklama">Ön onaydan önceki harcama desteklenmez: tutar, ön onay alırsanız izleyen 12 ayda geri alabileceğinizin tahminidir. Yıllık giderlerinizi yaklaşık girin; bilmediğiniz alanı boş bırakın.</p>
+                <form id="eihracat-form" class="profil-form eh-form">
+                    <p class="form-bolum-baslik">Yıllık giderler (TL)</p>
+                    <div class="alan"><label for="eh-pazaryeri_reklam">Yurt dışı pazaryeri reklamı</label><input id="eh-pazaryeri_reklam" type="number" min="0" step="1000" inputmode="numeric" placeholder="örn. 240000"></div>
+                    <div class="alan"><label for="eh-siparis_karsilama">Fulfillment ve depolama</label><input id="eh-siparis_karsilama" type="number" min="0" step="1000" inputmode="numeric"></div>
+                    <div class="alan"><label for="eh-pazaryeri_komisyon">Pazaryeri satış komisyonu</label><input id="eh-pazaryeri_komisyon" type="number" min="0" step="1000" inputmode="numeric"></div>
+                    <div class="alan"><label for="eh-cevrim_ici_magaza">Pazaryeri mağaza açılışı ve yıllık ücreti</label><input id="eh-cevrim_ici_magaza" type="number" min="0" step="1000" inputmode="numeric"></div>
+                    <div class="alan"><label for="eh-site_tanitim">Kendi sitenizin yurt dışı reklamı</label><input id="eh-site_tanitim" type="number" min="0" step="1000" inputmode="numeric"></div>
+                    <div class="alan"><label for="eh-satis">Yurt dışı pazaryeri satışınız (yıllık TL)</label><input id="eh-satis" type="number" min="0" step="1000" inputmode="numeric" placeholder="reklam ve fulfillment tavanı için"></div>
+                    <p class="form-bolum-baslik">Durumunuz</p>
+                    <div class="alan"><label for="eh-hedef">Giderin hedef ülkelerdeki payı (%)</label><input id="eh-hedef" type="number" min="0" max="100" step="5" inputmode="numeric" placeholder="ABD, Almanya, BAE… (35 ülke)"></div>
+                    <div class="alan"><label for="eh-turk">Satışlarda Türk ürünü payı (%)</label><input id="eh-turk" type="number" min="0" max="100" step="5" inputmode="numeric" placeholder="100"></div>
+                    <div class="alan"><label for="eh-ihracat">Geçen yılki ihracatınız (USD)</label><input id="eh-ihracat" type="number" min="0" step="1000" inputmode="numeric"></div>
+                    <div class="alan"><label for="eh-birlik">İhracatçı birliği üyeliği</label><select id="eh-birlik"><option value="">Bilmiyorum</option><option value="true">Var</option><option value="false">Yok</option></select></div>
+                    <div class="alan"><label for="eh-madrid">Yurt dışı marka tescili (Madrid)</label><select id="eh-madrid"><option value="">Bilmiyorum</option><option value="true">Var</option><option value="false">Yok</option></select></div>
+                    <div class="alan"><label for="eh-statu">Perakende E-Ticaret Sitesi statüsü</label><select id="eh-statu"><option value="">Bilmiyorum</option><option value="true">Var</option><option value="false">Yok</option></select></div>
+                    <div class="eh-eylem"><button type="button" class="birincil-btn" data-tikla="eihracatHesapla">Hesapla ve kaydet</button></div>
+                </form>
+                <div id="eihracat-sonuc"></div>
+            </details>
+
             <div class="search-section" id="eslesme-section">
                 <h2>Size Uygun Destekler</h2>
                 <div id="eslesme-ozet" style="margin-bottom:15px; font-weight:bold; color:#333;"></div>

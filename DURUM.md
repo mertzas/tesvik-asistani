@@ -140,6 +140,28 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
     koşu 0): özeti tamamen site menüsü olan 22 aktif kaydın 15'ine kaynak sayfanın "Programın Amacı / Ürün Açıklaması /
     Genel Bilgi" metni (`docs/olcum/2026-10-08-ozet/tur13_ozetler.json`, çıkarıcı `ozet_cikar.py`). Kalan 7 KGF sayfası
     (93, 116, 125, 153, 154, 171, 173) içeriği JS ile yüklüyor; özetsiz gösterilir.
+- **Hazırlık yol haritası + e-ihracat geri ödeme hesaplayıcı** (2026-10-08, commit edilmedi):
+  - `app/eticaret_destek_hesaplayici.py` (self-test 12/12) 5986 Karar metnine göre yeniden yazıldı: kalem bazında madde,
+    oran, hedef ülke +20 puan (m.4/m.6/m.5; m.8/m.9'da yok, m.16/3), satış tavanları (m.4 %20, m.6 %10), Türk ürünü
+    payı (m.10/1), %75 tavanı (m.16/4), 2026 limitleri ve bölüm limiti (m.10/2). Eski sürüm komisyona %70 uyguluyor ve
+    statüsüz şirkete m.3/m.7 kalemlerini hesaplıyordu. Çıktı ileriye dönük (ön onaydan önceki harcama desteklenmez):
+    şimdi / hazırlıkla / teyitle + aylık bekleme maliyeti.
+  - `app/hazirlik.py` (self-test 8/8): şirket türü karşı-olgusu (limited olsaydı açılan programlar) + eşleşen
+    programların ön şartları (KOSGEB kaydı, birlik üyeliği, DYS, Madrid, ön onay, e-imza, KEP, ÇKS, teşvik belgesi).
+    `GET/PUT /api/hazirlik`; durum `financial_profiles.hazirlik` (JSON, göç `m0b2d4f6a012`).
+  - Arayüz: "Uygun destekler"de yol haritası + katlanır hesaplayıcı; ana sayfada "E-ihracat geri ödemesi" ve
+    "Uygunluk için ilk adım" kartları. Test: `tests/test_hazirlik.py` 9, `tests/test_eticaret_destek.py` 30.
+  - **ONAY BEKLİYOR:** gerçek DB'ye göç `m0b2d4f6a012` (`alembic upgrade head`; yedekle). Uygulanana kadar gerçek DB ile
+    çalışan sunucu profil sorgusunda "no such column financial_profiles.hazirlik" verir. Doğrulama kopyada yapıldı.
+  - 10 persona uçtan uca deneme: `docs/olcum/2026-10-08-persona/RAPOR.md` (beklenen 22/25; tarih gösteriminde TÜBİTAK
+    ön kayıt son günü vurgulanmıyor; tarım ve mikro hizmette ilk sıralarda yanlış öneri; 9 maddelik düzeltme listesi).
+  - **Persona düzeltmeleri** (aynı gün, commit edilmedi; RAPOR.md "Düzeltme sonrası"): firmanın son günü
+    (`tesvik_cagrilari.on_kayit_son`, göç `n1c3e5a7b234`, yeni durum `on_kayit_kapandi`), takipteki başvurular "sıradaki
+    adım"a girer, eşleştirmede KOSGEB-büyük işletme / şahıs ürünü / 9903 şirketsiz / asgari ihracat USD engelleri, hedef
+    kitle etiketi +0,3, Organik beyansız −0,2, 9903 hedef uyumsuz −0,3, skor 0 gizli; hazırlıkta ÇKS önceliği ve ilgili
+    program eşiği. `tests/test_persona_duzeltmeleri.py` 19. Ölçüm: beklenen 23/25, eski 12 personada gerileme yok.
+  - **ONAY BEKLEYEN veri/göç sırası (gerçek DB):** yedek → `alembic upgrade head` (m0b2d4f6a012 + n1c3e5a7b234) →
+    tur12 → tur13 → tur14. Kopyada bu sırayla prova edildi (`scratchpad/prova_tam.db`).
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

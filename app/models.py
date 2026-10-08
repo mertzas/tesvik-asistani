@@ -434,6 +434,7 @@ class TesvikCagrisi(Base):
     ad = Column(String(200), nullable=False)          # "2026/2. Başvuru Dönemi", "2026 Yılı Mali Destek Programı"
     acilis = Column(Date, nullable=True)
     kapanis = Column(Date, nullable=True, index=True)  # son başvuru günü (dahil)
+    on_kayit_son = Column(Date, nullable=True)         # ön kayıt / kuruluş başvurusu son günü (varsa yeni başvuranın son günü)
     kaynak_url = Column(String, nullable=False)
     dogrulama_tarihi = Column(Date, nullable=False)
     notlar = Column(Text, nullable=True)              # "Kapanış saati 18:00", "ön başvuru zorunlu" gibi duyurudaki ayrıntı
@@ -477,6 +478,7 @@ class FinancialProfile(Base):
     kurulus_tarihi = Column(Date, nullable=True)
     trl = Column(Integer, nullable=True)              # Teknoloji hazırlık seviyesi 1-9
     ozellikler = Column(JSON, nullable=True)  # hedef kitle etiketleri: ["kadin_girisimci", "savunma_sanayii", ...] (bkz. app/match_adapter.py)
+    hazirlik = Column(JSON, nullable=True)  # {"durumlar": {"birlik_uyeligi": true, ...}, "eihracat": {...}} (bkz. app/hazirlik.py)
     ilk_yil_mi = Column(Boolean, nullable=True)  # arazi hazirligi/sera/ekipman gibi tek seferlik kurulus giderleri var mi
 
     # Tarim sektorune ozel ek alanlar (sektor != "tarim" ise bos kalir)

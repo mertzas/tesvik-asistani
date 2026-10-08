@@ -116,6 +116,8 @@ def belge_olustur(yanit: dict, bugun: date | None = None) -> bytes:
         tarih = " – ".join(x for x in (c.get("acilis"), c.get("kapanis")) if x) or "tarih duyurulmadı"
         p.add_run(f"{c['ad']}: ").bold = True
         p.add_run(f"{tarih} ({c.get('durum_metni', '')})")
+        if c.get("on_kayit_son"):
+            p.add_run(f". Ön kayıt son günü: {c['on_kayit_son']}").bold = True
         if c.get("notlar"):
             p.add_run(f". {c['notlar']}")
         p.add_run(f" Kaynak: {c['kaynak_url']} (doğrulama {c['dogrulama_tarihi']})")

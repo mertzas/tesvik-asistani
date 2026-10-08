@@ -26,4 +26,9 @@ test('çağrı özeti', () => {
   assert.equal(cagriOzeti({ durum: 'acik', acilis: '2026-09-01', kapanis: null, kalan_gun: null }), 'Başvuruya açık (son tarih duyurulmadı)');
   assert.match(cagriOzeti({ durum: 'yaklasan', acilis: '2026-10-15', kapanis: null, kalan_gun: 7 }), /açılıyor \(7 gün\)$/);
   assert.equal(cagriOzeti({ durum: 'tarihsiz', acilis: null, kapanis: null, kalan_gun: null }), 'Başvuru tarihi duyurulmadı');
+  // Ön kayıt varsa firmanın son günü o (TÜBİTAK 1501 2026-2: ön kayıt 22.10, kapanış 26.10).
+  assert.match(cagriOzeti({ durum: 'acik', acilis: '2026-07-20', kapanis: '2026-10-26', on_kayit_son: '2026-10-22', kalan_gun: 14 }),
+    /^Ön kayıt son gün .* \(14 gün\) · kapanış /);
+  assert.match(cagriOzeti({ durum: 'on_kayit_kapandi', acilis: null, kapanis: '2026-10-26', on_kayit_son: '2026-10-22', kalan_gun: 2 }),
+    /^Ön kayıt .* kapandı; yalnız ön kaydı yapılanlar/);
 });

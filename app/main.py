@@ -70,7 +70,11 @@ from app.ozet import router as ozet_router
 from app.hesap_belirtec import belirtec_uret, belirtec_tuket, SIFIRLAMA, DOGRULAMA
 from app.email import EmailService
 from app.schemas import SifreUnuttum, SifreSifirla, BelirtecGirdi
-from app.eticaret_destek_hesaplayici import eticaret_destek_hesapla
+from app.eticaret_destek_hesaplayici import (
+    KALEMLER as ETICARET_KALEMLERI, EihracatDurumu, EihracatGirdisi, hesapla as eticaret_destek_hesapla,
+    sozluk as eticaret_sozluk,
+)
+from app.hazirlik import router as hazirlik_router
 from app.rate_limit import org_hiz_siniri, ip_hiz_siniri, sayac as hiz_sayaci
 from sqlalchemy import text
 from app.logging_setup import kur as gunluklemeyi_kur
@@ -252,6 +256,7 @@ app.include_router(ikas_oauth_router)
 app.include_router(basvuru_listesi_router)
 app.include_router(cagrilar_router)
 app.include_router(ozet_router)
+app.include_router(hazirlik_router)
 
 STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
 
@@ -846,26 +851,28 @@ def butce_onerisi(
 def eticaret_destek_hesapla_endpoint(
     request: EticaretGiderGirdisi,
     current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
 ):
-    """Ticaret Bakanlığı E-İhracat Destekleri (5986 sayılı Karar) kapsamında,
-    girilen yıllık gider kalemleri için tahmini geri ödeme tutarını hesaplar."""
-    giderler = {
-        k: v for k, v in request.model_dump().items()
-        if k not in ("hedef_ulke_mi", "ihracatci_birligi_uyesi_mi") and v is not None
-    }
+    """Ticaret Bakanlığı E-İhracat Destekleri (5986 sayılı Karar) kapsamında, girilen yıllık gider kalemleri için
+    ön onaydan sonraki 12 ayın tahmini geri ödemesi; kalem başına engel ve hazırlık adımı (app/eticaret_destek_hesaplayici).
+    Kaydetmeden hesaplar; kalıcı girdi için PUT /api/hazirlik."""
+    bilinmeyen = [k for k in request.giderler if k not in ETICARET_KALEMLERI]
+    if bilinmeyen:
+        raise HTTPException(status_code=422, detail=f"Tanınmayan gider kalemi: {', '.join(bilinmeyen)} "
+                                                    f"(geçerli: {', '.join(ETICARET_KALEMLERI)})")
+    sirket_turu = request.sirket_turu
+    if sirket_turu is None:
+        profil = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
+        sirket_turu = profil.sirket_turu if profil else None
     sonuc = eticaret_destek_hesapla(
-        giderler,
-        hedef_ulke_mi=request.hedef_ulke_mi,
-        ihracatci_birligi_uyesi_mi=request.ihracatci_birligi_uyesi_mi,
+        EihracatGirdisi(giderler=request.giderler, yurt_disi_satis_tl=request.yurt_disi_satis_tl,
+                        hedef_ulke_payi=request.hedef_ulke_payi, turk_urun_payi=request.turk_urun_payi),
+        EihracatDurumu(sirket_turu=sirket_turu, birlik_uyesi=request.ihracatci_birligi_uyesi_mi,
+                       madrid_marka=request.madrid_marka_tescili_var_mi,
+                       onceki_yil_ihracat_usd=request.onceki_yil_ihracat_usd,
+                       perakende_statusu=request.perakende_statusu),
     )
-    return EticaretDestekResponse(
-        hedef_ulke_mi=sonuc.hedef_ulke_mi,
-        uygulanan_oran=sonuc.uygulanan_oran,
-        kalemler=[k.__dict__ for k in sonuc.kalemler],
-        toplam_yillik_gider_tl=sonuc.toplam_yillik_gider_tl,
-        toplam_tahmini_geri_odeme_tl=sonuc.toplam_tahmini_geri_odeme_tl,
-        notlar=sonuc.notlar,
-    )
+    return EticaretDestekResponse(**eticaret_sozluk(sonuc))
 
 
 # ============ ORGANIZATION ENDPOINTS ============

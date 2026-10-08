@@ -379,31 +379,41 @@ class ButceOnerisiResponse(BaseModel):
 
 
 class EticaretGiderGirdisi(BaseModel):
-    pazara_giris_raporu: Optional[float] = None
-    dijital_pazaryeri_tanitim: Optional[float] = None
-    e_ihracat_tanitim: Optional[float] = None
-    siparis_karsilama_hizmeti: Optional[float] = None
-    yurt_disi_depo_kirasi: Optional[float] = None
-    pazaryeri_entegrasyon: Optional[float] = None
-    pazaryeri_komisyon: Optional[float] = None
-    hedef_ulke_mi: bool = False
+    """5986 kalemleri (app/eticaret_destek_hesaplayici.KALEMLER): pazaryeri_reklam, siparis_karsilama,
+    pazaryeri_komisyon, cevrim_ici_magaza, site_tanitim. Profil kaydı gerekmez; şirket türü verilmezse profilden."""
+    giderler: dict[str, float] = Field(..., description="kalem kodu -> yıllık TL")
+    yurt_disi_satis_tl: Optional[float] = Field(None, ge=0, le=1e12)
+    hedef_ulke_payi: float = Field(0.0, ge=0, le=1, description="giderin hedef ülkelerdeki payı (0-1)")
+    turk_urun_payi: float = Field(1.0, ge=0, le=1, description="satışlarda Türk ürünü payı (Karar m.10/1)")
+    sirket_turu: Optional[str] = Field(None, max_length=20)
     ihracatci_birligi_uyesi_mi: Optional[bool] = None
+    madrid_marka_tescili_var_mi: Optional[bool] = None
+    onceki_yil_ihracat_usd: Optional[float] = Field(None, ge=0, le=1e12)
+    perakende_statusu: Optional[bool] = None
 
 
 class EticaretGiderKalemiResponse(BaseModel):
-    kalem: str
+    kod: str
     etiket: str
+    madde: int
     yillik_gider_tl: float
-    tahmini_geri_odeme_tl: float
+    desteklenebilir_gider_tl: float
+    oran: float
+    tahmini_destek_tl: float
+    durum: str
+    engeller: List[str]
+    notlar: List[str]
 
 
 class EticaretDestekResponse(BaseModel):
-    hedef_ulke_mi: bool
-    uygulanan_oran: float
     kalemler: List[EticaretGiderKalemiResponse]
-    toplam_yillik_gider_tl: float
-    toplam_tahmini_geri_odeme_tl: float
+    simdi_tl: float
+    hazirlikla_tl: float
+    teyitle_tl: float
+    aylik_bekleme_tl: float
+    adimlar: List[str]
     notlar: List[str]
+    kaynak: str
 
 
 # Analytics Schemas

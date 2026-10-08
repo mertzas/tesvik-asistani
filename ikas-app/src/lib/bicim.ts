@@ -31,7 +31,17 @@ export function tarih(iso: string | null | undefined): string {
 }
 
 /** Çağrı özeti: "Son başvuru 30 Kas 2026 (23 gün)", "15 Kas 2026'da açılıyor (7 gün)", "Kapandı (…)". */
-export function cagriOzeti(c: { durum: string; acilis: string | null; kapanis: string | null; kalan_gun: number | null }): string {
+export function cagriOzeti(c: {
+  durum: string; acilis: string | null; kapanis: string | null; kalan_gun: number | null; on_kayit_son?: string | null;
+}): string {
+  // Ön kayıt tarihi varsa firmanın son günü odur (TÜBİTAK: ön kayıt kapanıştan birkaç gün önce).
+  if (c.durum === 'acik' && c.on_kayit_son) {
+    const kalan = c.kalan_gun === 0 ? 'bugün' : `${c.kalan_gun} gün`;
+    return `Ön kayıt son gün ${tarih(c.on_kayit_son)} (${kalan}) · kapanış ${tarih(c.kapanis)}`;
+  }
+  if (c.durum === 'on_kayit_kapandi') {
+    return `Ön kayıt ${tarih(c.on_kayit_son ?? null)} tarihinde kapandı; yalnız ön kaydı yapılanlar tamamlayabilir`;
+  }
   if (c.durum === 'acik') {
     if (!c.kapanis) return 'Başvuruya açık (son tarih duyurulmadı)';
     return c.kalan_gun === 0 ? `Son başvuru bugün (${tarih(c.kapanis)})` : `Son başvuru ${tarih(c.kapanis)} (${c.kalan_gun} gün)`;

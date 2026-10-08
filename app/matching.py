@@ -149,7 +149,26 @@ _SIRKETSIZE_KAPALI = re.compile(
 # Kefalet/kredi ve KOSGEB programlari tanim geregi bir ISLETMEYE verilir; SGK/ISKUR istihdam
 # tesvikleri de ISVERENE verilir (Denetim 2 Asama B, 2026-10-07: sirketsiz girisimciye
 # "Issizlik Odenegi Alanlarin Istihdami Tesviki" ilk 3'te geliyordu).
-_ISLETME_GEREKTIREN_KURUMLAR = {"KGF", "KOSGEB", "SGK / İŞKUR"}
+_ISLETME_GEREKTIREN_KURUMLAR = {"KGF", "KOSGEB", "SGK / İŞKUR",
+                                # 9903 yatırım teşvik belgesi bir işletmeye düzenlenir (persona denemesi
+                                # 2026-10-08: şirketsiz girişimciye 9903 kayıtları skor 0 ile listeleniyordu).
+                                "Sanayi ve Teknoloji Bakanlığı"}
+_SAHIS_URUNU = re.compile(r"şahıs\s+işletmeleri", re.IGNORECASE)
+_BUYUK_ISLETMEYE_ACIK = re.compile(r"büyük\s+işletme", re.IGNORECASE)
+
+
+def _ihracat_engeli(t, profil) -> str | None:
+    """Kayıtta asgari önceki yıl ihracatı (USD) varsa ve profilin hazırlık kaydındaki bilinen ihracat altındaysa
+    program kapalıdır (5986 m.8: 1 milyon USD; m.5 statüsü: 500 bin USD). Bilinmiyorsa elemez. Statü sahibi
+    (perakende_statusu) m.5 için muaftır."""
+    asgari = (t.uygunluk_kriterleri or {}).get("min_onceki_yil_ihracat_usd")
+    e = ((getattr(profil, "hazirlik", None) or {}).get("eihracat") or {})
+    bilinen = e.get("onceki_yil_ihracat_usd")
+    if asgari is None or bilinen is None or bilinen >= asgari:
+        return None
+    if (t.uygunluk_kriterleri or {}).get("statu_ile_muaf") and e.get("perakende_statusu"):
+        return None
+    return f"önceki yıl en az {asgari:,.0f} USD ihracat gerekir (beyanınız {bilinen:,.0f} USD)".replace(",", ".")
 
 
 def _sart_metni(t) -> str:
@@ -168,6 +187,19 @@ def uygunluk_engeli(t, profil) -> str | None:
     if _ARACI_KURULUS.search(metin):
         return "aracı/ekosistem kuruluşu programı"
     tur = getattr(profil, "sirket_turu", None)
+    # KOSGEB programları KOBİ'lere yöneliktir; kayıtta ölçek kriteri olmasa da (ör. Küresel Rekabetçilik) kesin
+    # büyük ölçekli profile önerilmez. Şartında büyük işletmeyi açıkça sayan program (İstihdamı Koruma) istisna.
+    # Persona denemesi 2026-10-08: 320 çalışanlı A.Ş.'ye Küresel Rekabetçilik 8. sıradaydı.
+    olcek = kobi_sinifi(getattr(profil, "calisan_sayisi", None), getattr(profil, "yillik_ciro", None))
+    if t.kurum == "KOSGEB" and olcek.kesin and olcek.sinif == "buyuk" and not _BUYUK_ISLETMEYE_ACIK.search(metin):
+        return "KOSGEB programları KOBİ'lere yöneliktir (250 çalışan altı)"
+    # "Şahıs işletmeleri" kredi ürünleri: şirket türü biliniyor ve şahıs değilse kapalı (kooperatife ve A.Ş.'ye
+    # Halkbank Şahıs İşletmeleri kredisi öneriliyordu).
+    if tur and tur != "sahis" and _SAHIS_URUNU.search(t.baslik or ""):
+        return "yalnız şahıs işletmelerine yönelik ürün"
+    ihracat = _ihracat_engeli(t, profil)
+    if ihracat:
+        return ihracat
     # Kayıtta açık şirket türü listesi varsa (ör. 5973 sayılı İhracat Destekleri Kararı m.2: "şirket" = TTK md.124
     # şirketleri + kooperatifler; şahıs işletmesi yok) bilinen tür listede değilse program kapalıdır (2026-10-08).
     izinli = (t.uygunluk_kriterleri or {}).get("sirket_turleri")
@@ -526,6 +558,29 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
         else:
             eksik.append("Çalışan sayınızı girerseniz eşleşme doğruluğu artar.")
 
+        # Persona denemesi 2026-10-08 (docs/olcum/2026-10-08-persona/RAPOR.md) sıralama düzeltmeleri:
+        # (a) Zorunlu hedef kitleli program ve profil o etiketi taşıyor: yalnız ona açık olduğu için öne çıkar
+        #     (kadın girişimciye Ziraat Kadın ve Genç Girişimci paketi 20., kooperatife KGF Kooperatif paketi 18.).
+        ortak_etiket = sirket.tags & program.target_group_tags if program.exclusive_target_group else set()
+        if ortak_etiket:
+            from app.match_adapter import OZELLIK_ETIKETLERI
+            skor += 0.3
+            gerekce.append("Yalnız sizin hedef kitlenize açık: "
+                           + ", ".join(OZELLIK_ETIKETLERI.get(x, x) for x in sorted(ortak_etiket)) + ".")
+        # (b) 9903 yatırım teşvikleri teşvik belgesi ve asgari yatırım ister; yatırım/makine hedefi yoksa geride
+        #     (2 kişilik kuaföre Yerel Kalkınma Hamlesi 1. sıradaydı). Hedef hiç girilmemişse ceza yok: yokluk
+        #     ihlal değildir (hedefsiz imalatçıya 9903 ön değerlendirmesiyle gösterilmeye devam eder).
+        if (t.kurum == "Sanayi ve Teknoloji Bakanlığı" and profil_hedefler
+                and not ({"yatirim", "makine"} & profil_hedefler)):
+            skor -= 0.3
+            eksik.append("Yatırım teşviki: teşvik belgesi ve asgari yatırım tutarı gerekir; hedeflerinizde yatırım yok.")
+        # (c) Organik tarım desteği yalnız sertifikalı organik üretime ödenir; geçiş seçeneği olarak kalır ama
+        #     organik beyanı yoksa hazır destekleri geçmez (3 tarım personasında ilk 3'teydi).
+        if kriterler.get("alt_kategori") == "organik" and not (
+                (profil.tarim_kategori or "").lower() == "organik" or "organik" in profil_hedefler):
+            skor -= 0.2
+            eksik.append("Yalnız organik sertifikalı üretim desteklenir; organik tarıma geçerseniz uygun olur.")
+
         # Ceza 1,0 tavanından SONRA düşülür: tavan öncesi düşülse 1,3 -> 1,25 -> 1,0 olur, etkisi kalmaz.
         ceza = 0.0
         if _kosgeb_onayina_bagli_mi(t):
@@ -548,7 +603,8 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
     sonuclar.sort(key=lambda s: (-s.skor, -s.ince_skor, 0 if s.tesvik.aktif_mi is True else 1,
                                  (s.tesvik.baslik or "").lower()))
     sonuclar = _kurum_ile_cesitlendir(sonuclar)
-    return sonuclar[:limit]
+    # Skoru 0'a düşen kayıt öneri değildir (persona denemesi 2026-10-08: "0,00" ile listelenen 9903 kayıtları).
+    return [s for s in sonuclar if s.skor > 0][:limit]
 
 
 def _tutar_olcek_faktoru(kriter: str, profil: FinancialProfile) -> float | None:

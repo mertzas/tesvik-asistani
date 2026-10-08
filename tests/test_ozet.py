@@ -75,7 +75,8 @@ def test_eslesme_karti_cagri_ve_temiz_ozet(client, test_user_token, kayitlar):
 
 
 @pytest.mark.parametrize("komut,asgari", [(["-m", "app.ozet"], 9), (["-m", "app.basvuru_taslagi"], 10),
-                                          (["scripts/fix_veri_2026_10_08_ozet_tur13.py"], 5)])
+                                          (["scripts/fix_veri_2026_10_08_ozet_tur13.py"], 5),
+                                          (["-m", "app.eticaret_destek_hesaplayici"], 12), (["-m", "app.hazirlik"], 8)])
 def test_self_testler(komut, asgari):
     import re
     r = subprocess.run([sys.executable, *komut, "--self-test"], cwd=KOK, stdin=subprocess.DEVNULL,

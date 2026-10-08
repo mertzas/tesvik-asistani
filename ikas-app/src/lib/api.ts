@@ -58,10 +58,13 @@ export type Cagri = {
   ad: string;
   acilis: string | null;
   kapanis: string | null;
+  /** Ön kayıt / kuruluş başvurusu son günü; varsa yeni başvuranın son günü odur. */
+  on_kayit_son: string | null;
+  son_gun: string | null;
   kaynak_url: string;
   dogrulama_tarihi: string;
   notlar: string | null;
-  durum: 'acik' | 'yaklasan' | 'kapandi' | 'tarihsiz';
+  durum: 'acik' | 'yaklasan' | 'kapandi' | 'tarihsiz' | 'on_kayit_kapandi';
   durum_metni: string;
   kalan_gun: number | null;
 };

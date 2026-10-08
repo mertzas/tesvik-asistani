@@ -1,0 +1,1209 @@
+[
+ {
+  "persona": "P1 İKAS şahıs e-ticaret (Denizli)",
+  "eslesme": 25,
+  "ilk10": [
+   "1. 162 Ticaret Baka | E-İhracat Destekleri (5986 Sayılı Karar) (1.00)",
+   "2. 159 KGF | İhracat Destek Paketi (0.70)",
+   "3. 9 KOSGEB | Küresel Rekabetçilik Destek Programı (0.70)",
+   "4. 168 KGF | ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (0.70)",
+   "5. 107 KGF | KÜRESEL REKABETÇİLİK DESTEK PAKETİ (0.65)",
+   "6. 172 KGF | DİJİTAL KEFALET DESTEK PROGRAMI (0.30)",
+   "7. 1 KOSGEB | Girişimci Destek Programı (0.30)",
+   "8. 186 SGK / İŞKUR | İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik ( (0.30)",
+   "9. 87 KGF | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (0.30)",
+   "10. 2 KOSGEB | Yapay Zekâ Kredi Programı (0.30)"
+  ],
+  "beklenen": [
+   {
+    "id": 1,
+    "esik": 6,
+    "sira": 7,
+    "tamam": false
+   },
+   {
+    "id": 162,
+    "esik": 10,
+    "sira": 1,
+    "tamam": true
+   },
+   {
+    "id": 87,
+    "esik": 12,
+    "sira": 9,
+    "tamam": true
+   }
+  ],
+  "yasak": [],
+  "ilk5_yasak": [],
+  "tarih_hatalari": [],
+  "yollar": [
+   {
+    "id": 162,
+    "baslik": "E-İhracat Destekleri (5986 Sayılı Karar)",
+    "skor": 1.0,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 159,
+    "baslik": "İhracat Destek Paketi",
+    "skor": 0.7,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 9,
+    "baslik": "Küresel Rekabetçilik Destek Programı",
+    "skor": 0.7,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 168,
+    "baslik": "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ",
+    "skor": 0.7,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 107,
+    "baslik": "KÜRESEL REKABETÇİLİK DESTEK PAKETİ",
+    "skor": 0.65,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   }
+  ],
+  "hazirlik": [
+   [
+    "sirket",
+    10
+   ],
+   [
+    "kosgeb_kaydi",
+    5
+   ],
+   [
+    "on_onay",
+    1
+   ],
+   [
+    "dys_kaydi",
+    1
+   ],
+   [
+    "birlik_uyeligi",
+    1
+   ]
+  ],
+  "hazirlik_ilk_beklenen": "sirket",
+  "hazirlik_ilk_dogru": true,
+  "eihracat": {
+   "simdi": 0.0,
+   "hazirlikla": 122100.0,
+   "teyitle": 0.0,
+   "aylik": 0.0,
+   "adimlar": [
+    "sirket",
+    "birlik_uyeligi",
+    "madrid_marka"
+   ],
+   "kalemler": {
+    "pazaryeri_reklam": [
+     "hazirlik",
+     81600.0
+    ],
+    "pazaryeri_komisyon": [
+     "hazirlik",
+     40500.0
+    ]
+   }
+  }
+ },
+ {
+  "persona": "P2 İKAS Ltd e-ihracatçı (İstanbul kozmetik)",
+  "eslesme": 30,
+  "ilk10": [
+   "1. 192 Ticaret Baka | Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı (1.00)",
+   "2. 162 Ticaret Baka | E-İhracat Destekleri (5986 Sayılı Karar) (1.00)",
+   "3. 187 Ticaret Baka | Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3) (1.00)",
+   "4. 193 Ticaret Baka | Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 s (1.00)",
+   "5. 190 Ticaret Baka | Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 (1.00)",
+   "6. 188 Ticaret Baka | Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4) (1.00)",
+   "7. 189 Ticaret Baka | Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar  (1.00)",
+   "8. 194 Ticaret Baka | Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayıl (1.00)",
+   "9. 191 Ticaret Baka | Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Kar (1.00)",
+   "10. 159 KGF | İhracat Destek Paketi (0.70)"
+  ],
+  "beklenen": [
+   {
+    "id": 192,
+    "esik": 10,
+    "sira": 1,
+    "tamam": true
+   },
+   {
+    "id": 193,
+    "esik": 12,
+    "sira": 4,
+    "tamam": true
+   },
+   {
+    "id": 194,
+    "esik": 12,
+    "sira": 8,
+    "tamam": true
+   },
+   {
+    "id": 188,
+    "esik": 15,
+    "sira": 6,
+    "tamam": true
+   },
+   {
+    "id": 9,
+    "esik": 15,
+    "sira": 11,
+    "tamam": true
+   }
+  ],
+  "yasak": [],
+  "ilk5_yasak": [],
+  "tarih_hatalari": [],
+  "yollar": [
+   {
+    "id": 192,
+    "baslik": "Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)",
+    "skor": 1.0,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 162,
+    "baslik": "E-İhracat Destekleri (5986 Sayılı Karar)",
+    "skor": 1.0,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 187,
+    "baslik": "Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3)",
+    "skor": 1.0,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 193,
+    "baslik": "Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6",
+    "skor": 1.0,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 190,
+    "baslik": "Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m",
+    "skor": 1.0,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   }
+  ],
+  "hazirlik": [
+   [
+    "dys_kaydi",
+    9
+   ],
+   [
+    "birlik_uyeligi",
+    8
+   ],
+   [
+    "on_onay",
+    4
+   ],
+   [
+    "kosgeb_kaydi",
+    4
+   ],
+   [
+    "madrid_marka",
+    3
+   ],
+   [
+    "kep",
+    1
+   ]
+  ],
+  "hazirlik_ilk_beklenen": null,
+  "hazirlik_ilk_dogru": true,
+  "eihracat": {
+   "simdi": 0.0,
+   "hazirlikla": 0.0,
+   "teyitle": 1140000.0,
+   "aylik": 95000.0,
+   "adimlar": [],
+   "kalemler": {
+    "pazaryeri_reklam": [
+     "teyit",
+     630000.0
+    ],
+    "siparis_karsilama": [
+     "teyit",
+     210000.0
+    ],
+    "pazaryeri_komisyon": [
+     "teyit",
+     300000.0
+    ],
+    "cevrim_ici_magaza": [
+     "kapali",
+     0.0
+    ]
+   }
+  }
+ },
+ {
+  "persona": "P3 Konya buğday çiftçisi (şahıs)",
+  "eslesme": 25,
+  "ilk10": [
+   "1. 160 Tarım Bakanl | Hububat ve Baklagil Üretim Destekleri (Temel Destek + P (1.00)",
+   "2. 94 KGF | TARIM KEFALET DESTEK PROGRAMI (0.70)",
+   "3. 178 Sanayi ve Te | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (0.65)",
+   "4. 77 Tarım Bakanl | Organik Tarım Destekleri (0.50)",
+   "5. 172 KGF | DİJİTAL KEFALET DESTEK PROGRAMI (0.30)",
+   "6. 2 KOSGEB | Yapay Zekâ Kredi Programı (0.30)",
+   "7. 186 SGK / İŞKUR | İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik ( (0.30)",
+   "8. 87 KGF | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (0.30)",
+   "9. 5 KOSGEB | YÖNDE - Yönderlik ve Değerlendirme Destek Programı (0.30)",
+   "10. 185 SGK / İŞKUR | Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İst (0.30)"
+  ],
+  "beklenen": [
+   {
+    "id": 160,
+    "esik": 3,
+    "sira": 1,
+    "tamam": true
+   },
+   {
+    "id": 94,
+    "esik": 10,
+    "sira": 2,
+    "tamam": true
+   }
+  ],
+  "yasak": [
+   {
+    "id": 77,
+    "neden": "organik",
+    "sira": 4
+   }
+  ],
+  "ilk5_yasak": [
+   {
+    "id": 77,
+    "neden": "organik beyan yok",
+    "sira": 4
+   }
+  ],
+  "tarih_hatalari": [],
+  "yollar": [
+   {
+    "id": 160,
+    "baslik": "Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim)",
+    "skor": 1.0,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 94,
+    "baslik": "TARIM KEFALET DESTEK PROGRAMI",
+    "skor": 0.7,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 178,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "skor": 0.65,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 77,
+    "baslik": "Organik Tarım Destekleri",
+    "skor": 0.5,
+    "yer": true,
+    "sure": true,
+    "sart": false,
+    "belge": false,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 172,
+    "baslik": "DİJİTAL KEFALET DESTEK PROGRAMI",
+    "skor": 0.3,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   }
+  ],
+  "hazirlik": [
+   [
+    "cks",
+    2
+   ],
+   [
+    "kosgeb_kaydi",
+    3
+   ],
+   [
+    "kep",
+    2
+   ],
+   [
+    "yatirim_tesvik_belgesi",
+    2
+   ]
+  ],
+  "hazirlik_ilk_beklenen": "cks",
+  "hazirlik_ilk_dogru": true,
+  "eihracat": null
+ },
+ {
+  "persona": "P4 Afyon büyükbaş hayvancı (şahıs)",
+  "eslesme": 25,
+  "ilk10": [
+   "1. 76 Tarım Bakanl | Hayvancılık Destekleri (1.00)",
+   "2. 94 KGF | TARIM KEFALET DESTEK PROGRAMI (0.70)",
+   "3. 77 Tarım Bakanl | Organik Tarım Destekleri (0.50)",
+   "4. 180 Sanayi ve Te | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (0.40)",
+   "5. 178 Sanayi ve Te | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (0.35)",
+   "6. 172 KGF | DİJİTAL KEFALET DESTEK PROGRAMI (0.30)",
+   "7. 2 KOSGEB | Yapay Zekâ Kredi Programı (0.30)",
+   "8. 186 SGK / İŞKUR | İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik ( (0.30)",
+   "9. 87 KGF | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (0.30)",
+   "10. 5 KOSGEB | YÖNDE - Yönderlik ve Değerlendirme Destek Programı (0.30)"
+  ],
+  "beklenen": [
+   {
+    "id": 76,
+    "esik": 3,
+    "sira": 1,
+    "tamam": true
+   },
+   {
+    "id": 94,
+    "esik": 10,
+    "sira": 2,
+    "tamam": true
+   }
+  ],
+  "yasak": [],
+  "ilk5_yasak": [
+   {
+    "id": 77,
+    "neden": "organik beyan yok",
+    "sira": 3
+   }
+  ],
+  "tarih_hatalari": [],
+  "yollar": [
+   {
+    "id": 76,
+    "baslik": "Hayvancılık Destekleri",
+    "skor": 1.0,
+    "yer": true,
+    "sure": true,
+    "sart": false,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 94,
+    "baslik": "TARIM KEFALET DESTEK PROGRAMI",
+    "skor": 0.7,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 77,
+    "baslik": "Organik Tarım Destekleri",
+    "skor": 0.5,
+    "yer": true,
+    "sure": true,
+    "sart": false,
+    "belge": false,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 180,
+    "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "skor": 0.4,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 178,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "skor": 0.35,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   }
+  ],
+  "hazirlik": [
+   [
+    "cks",
+    1
+   ],
+   [
+    "kosgeb_kaydi",
+    3
+   ],
+   [
+    "kep",
+    2
+   ],
+   [
+    "yatirim_tesvik_belgesi",
+    2
+   ]
+  ],
+  "hazirlik_ilk_beklenen": "cks",
+  "hazirlik_ilk_dogru": true,
+  "eihracat": null
+ },
+ {
+  "persona": "P5 Bursa metal imalat Ltd (45 kişi)",
+  "eslesme": 30,
+  "ilk10": [
+   "1. 8 KOSGEB | Kapasite Geliştirme Destek Programı (1.00)",
+   "2. 180 Sanayi ve Te | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (1.00)",
+   "3. 179 Sanayi ve Te | Stratejik Hamle Programı (9903 sayılı Karar) (1.00)",
+   "4. 81 KGF | KAPASİTE GELİŞTİRME DESTEK PAKETİ (0.95)",
+   "5. 178 Sanayi ve Te | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (0.95)",
+   "6. 7 KOSGEB | İstihdamı Koruma Destek Programı (0.70)",
+   "7. 159 KGF | İhracat Destek Paketi (0.70)",
+   "8. 192 Ticaret Baka | Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı (0.70)",
+   "9. 3 KOSGEB | KOBİ Dijital Dönüşüm Destek Programı (0.70)",
+   "10. 168 KGF | ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (0.70)"
+  ],
+  "beklenen": [
+   {
+    "id": 8,
+    "esik": 6,
+    "sira": 1,
+    "tamam": true
+   },
+   {
+    "id": 180,
+    "esik": 6,
+    "sira": 2,
+    "tamam": true
+   },
+   {
+    "id": 81,
+    "esik": 12,
+    "sira": 4,
+    "tamam": true
+   },
+   {
+    "id": 7,
+    "esik": 15,
+    "sira": 6,
+    "tamam": true
+   }
+  ],
+  "yasak": [],
+  "ilk5_yasak": [],
+  "tarih_hatalari": [],
+  "yollar": [
+   {
+    "id": 8,
+    "baslik": "Kapasite Geliştirme Destek Programı",
+    "skor": 1.0,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 180,
+    "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "skor": 1.0,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 179,
+    "baslik": "Stratejik Hamle Programı (9903 sayılı Karar)",
+    "skor": 1.0,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 81,
+    "baslik": "KAPASİTE GELİŞTİRME DESTEK PAKETİ",
+    "skor": 0.95,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 178,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "skor": 0.95,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   }
+  ],
+  "hazirlik": [
+   [
+    "dys_kaydi",
+    11
+   ],
+   [
+    "birlik_uyeligi",
+    10
+   ],
+   [
+    "kosgeb_kaydi",
+    7
+   ],
+   [
+    "on_onay",
+    6
+   ],
+   [
+    "kep",
+    6
+   ],
+   [
+    "yatirim_tesvik_belgesi",
+    5
+   ],
+   [
+    "madrid_marka",
+    3
+   ]
+  ],
+  "hazirlik_ilk_beklenen": null,
+  "hazirlik_ilk_dogru": true,
+  "eihracat": null
+ },
+ {
+  "persona": "P6 Ankara şirketsiz yapay zekâ girişimcisi",
+  "eslesme": 2,
+  "ilk10": [
+   "1. 174 TUBITAK | 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Ge (0.70)",
+   "2. 49 TUBITAK | 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (Bi (0.70)"
+  ],
+  "beklenen": [
+   {
+    "id": 174,
+    "esik": 3,
+    "sira": 1,
+    "tamam": true
+   }
+  ],
+  "yasak": [],
+  "ilk5_yasak": [],
+  "tarih_hatalari": [],
+  "yollar": [
+   {
+    "id": 174,
+    "baslik": "1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim)",
+    "skor": 0.7,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 49,
+    "baslik": "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+    "skor": 0.7,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   }
+  ],
+  "hazirlik": [
+   [
+    "sirket",
+    19
+   ]
+  ],
+  "hazirlik_ilk_beklenen": "sirket",
+  "hazirlik_ilk_dogru": true,
+  "eihracat": null
+ },
+ {
+  "persona": "P7 İzmir yazılım hizmet ihracatçısı Ltd",
+  "eslesme": 30,
+  "ilk10": [
+   "1. 182 Ticaret Baka | Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 say (1.00)",
+   "2. 8 KOSGEB | Kapasite Geliştirme Destek Programı (0.70)",
+   "3. 159 KGF | İhracat Destek Paketi (0.70)",
+   "4. 34 TUBITAK | 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Progra (0.70)",
+   "5. 192 Ticaret Baka | Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı (0.70)",
+   "6. 152 KGF | TÜBİTAK Transfer Ödemeleri (0.70)",
+   "7. 9 KOSGEB | Küresel Rekabetçilik Destek Programı (0.70)",
+   "8. 75 TUBITAK | 1505 - Üniversite-Sanayi İşbirliği Destek Programı (0.70)",
+   "9. 162 Ticaret Baka | E-İhracat Destekleri (5986 Sayılı Karar) (0.70)",
+   "10. 168 KGF | ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (0.70)"
+  ],
+  "beklenen": [
+   {
+    "id": 182,
+    "esik": 6,
+    "sira": 1,
+    "tamam": true
+   },
+   {
+    "id": 44,
+    "esik": 15,
+    "sira": 12,
+    "tamam": true
+   }
+  ],
+  "yasak": [],
+  "ilk5_yasak": [],
+  "tarih_hatalari": [],
+  "yollar": [
+   {
+    "id": 182,
+    "baslik": "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizm",
+    "skor": 1.0,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 8,
+    "baslik": "Kapasite Geliştirme Destek Programı",
+    "skor": 0.7,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 159,
+    "baslik": "İhracat Destek Paketi",
+    "skor": 0.7,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 34,
+    "baslik": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+    "skor": 0.7,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": [
+     "2026 yılı 2. çağrı: acik son gün 2026-10-22 (14 gün)"
+    ]
+   },
+   {
+    "id": 192,
+    "baslik": "Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)",
+    "skor": 0.7,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   }
+  ],
+  "hazirlik": [
+   [
+    "dys_kaydi",
+    12
+   ],
+   [
+    "birlik_uyeligi",
+    10
+   ],
+   [
+    "on_onay",
+    6
+   ],
+   [
+    "kosgeb_kaydi",
+    5
+   ],
+   [
+    "madrid_marka",
+    3
+   ],
+   [
+    "kep",
+    2
+   ],
+   [
+    "borc_durumu",
+    1
+   ],
+   [
+    "yatirim_tesvik_belgesi",
+    1
+   ]
+  ],
+  "hazirlik_ilk_beklenen": null,
+  "hazirlik_ilk_dogru": true,
+  "eihracat": null
+ },
+ {
+  "persona": "P8 Hatay kadın girişimci kuaför (şahıs)",
+  "eslesme": 23,
+  "ilk10": [
+   "1. 126 KGF | İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (B (0.60)",
+   "2. 186 SGK / İŞKUR | İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik ( (0.60)",
+   "3. 169 KGF | ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ (0.60)",
+   "4. 185 SGK / İŞKUR | Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İst (0.60)",
+   "5. 178 Sanayi ve Te | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (0.35)",
+   "6. 172 KGF | DİJİTAL KEFALET DESTEK PROGRAMI (0.30)",
+   "7. 1 KOSGEB | Girişimci Destek Programı (0.30)",
+   "8. 87 KGF | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (0.30)",
+   "9. 2 KOSGEB | Yapay Zekâ Kredi Programı (0.30)",
+   "10. 122 KGF | HALKBANK İLK ADIM KREDİSİ PROJESİ (0.30)"
+  ],
+  "beklenen": [
+   {
+    "id": 1,
+    "esik": 6,
+    "sira": 7,
+    "tamam": false
+   },
+   {
+    "id": 169,
+    "esik": 12,
+    "sira": 3,
+    "tamam": true
+   },
+   {
+    "id": 185,
+    "esik": 12,
+    "sira": 4,
+    "tamam": true
+   }
+  ],
+  "yasak": [],
+  "ilk5_yasak": [
+   {
+    "id": 178,
+    "neden": "2 kişilik kuaföre yatırım teşviki",
+    "sira": 5
+   }
+  ],
+  "tarih_hatalari": [],
+  "yollar": [
+   {
+    "id": 126,
+    "baslik": "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)",
+    "skor": 0.6,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 186,
+    "baslik": "İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kan",
+    "skor": 0.6,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 169,
+    "baslik": "ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ",
+    "skor": 0.6,
+    "yer": false,
+    "sure": false,
+    "sart": true,
+    "belge": false,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 185,
+    "baslik": "Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki ",
+    "skor": 0.6,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 178,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "skor": 0.35,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   }
+  ],
+  "hazirlik": [
+   [
+    "kosgeb_kaydi",
+    4
+   ],
+   [
+    "kep",
+    1
+   ],
+   [
+    "yatirim_tesvik_belgesi",
+    1
+   ]
+  ],
+  "hazirlik_ilk_beklenen": null,
+  "hazirlik_ilk_dogru": true,
+  "eihracat": null
+ },
+ {
+  "persona": "P9 Gaziantep gıda imalat A.Ş. (320 kişi)",
+  "eslesme": 30,
+  "ilk10": [
+   "1. 180 Sanayi ve Te | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (1.00)",
+   "2. 179 Sanayi ve Te | Stratejik Hamle Programı (9903 sayılı Karar) (1.00)",
+   "3. 178 Sanayi ve Te | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (0.95)",
+   "4. 7 KOSGEB | İstihdamı Koruma Destek Programı (0.70)",
+   "5. 159 KGF | İhracat Destek Paketi (0.70)",
+   "6. 192 Ticaret Baka | Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı (0.70)",
+   "7. 168 KGF | ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (0.70)",
+   "8. 162 Ticaret Baka | E-İhracat Destekleri (5986 Sayılı Karar) (0.70)",
+   "9. 196 Ticaret Baka | E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi  (0.70)",
+   "10. 187 Ticaret Baka | Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3) (0.70)"
+  ],
+  "beklenen": [
+   {
+    "id": 180,
+    "esik": 5,
+    "sira": 1,
+    "tamam": true
+   }
+  ],
+  "yasak": [],
+  "ilk5_yasak": [],
+  "tarih_hatalari": [],
+  "yollar": [
+   {
+    "id": 180,
+    "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "skor": 1.0,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 179,
+    "baslik": "Stratejik Hamle Programı (9903 sayılı Karar)",
+    "skor": 1.0,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 178,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "skor": 0.95,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 7,
+    "baslik": "İstihdamı Koruma Destek Programı",
+    "skor": 0.7,
+    "yer": false,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": [
+     "2026-2 dönemi: acik son gün 2026-10-31 (23 gün)"
+    ]
+   },
+   {
+    "id": 159,
+    "baslik": "İhracat Destek Paketi",
+    "skor": 0.7,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   }
+  ],
+  "hazirlik": [
+   [
+    "dys_kaydi",
+    11
+   ],
+   [
+    "birlik_uyeligi",
+    10
+   ],
+   [
+    "on_onay",
+    6
+   ],
+   [
+    "kep",
+    6
+   ],
+   [
+    "yatirim_tesvik_belgesi",
+    5
+   ],
+   [
+    "madrid_marka",
+    3
+   ],
+   [
+    "kosgeb_kaydi",
+    1
+   ]
+  ],
+  "hazirlik_ilk_beklenen": null,
+  "hazirlik_ilk_dogru": true,
+  "eihracat": null
+ },
+ {
+  "persona": "P10 Karaman tarım kooperatifi",
+  "eslesme": 30,
+  "ilk10": [
+   "1. 94 KGF | TARIM KEFALET DESTEK PROGRAMI (0.70)",
+   "2. 180 Sanayi ve Te | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (0.65)",
+   "3. 178 Sanayi ve Te | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (0.65)",
+   "4. 116 KGF | KGF Kooperatif Destek Paketi (0.60)",
+   "5. 76 Tarım Bakanl | Hayvancılık Destekleri (0.60)",
+   "6. 160 Tarım Bakanl | Hububat ve Baklagil Üretim Destekleri (Temel Destek + P (0.60)",
+   "7. 161 Tarım Bakanl | Meyve-Sebze Üretim Destekleri (Temel Destek) (0.60)",
+   "8. 79 Tarım Bakanl | Sera/Örtüaltı Tarım Destekleri (0.60)",
+   "9. 77 Tarım Bakanl | Organik Tarım Destekleri (0.50)",
+   "10. 172 KGF | DİJİTAL KEFALET DESTEK PROGRAMI (0.30)"
+  ],
+  "beklenen": [
+   {
+    "id": 116,
+    "esik": 10,
+    "sira": 4,
+    "tamam": true
+   },
+   {
+    "id": 94,
+    "esik": 10,
+    "sira": 1,
+    "tamam": true
+   }
+  ],
+  "yasak": [],
+  "ilk5_yasak": [],
+  "tarih_hatalari": [],
+  "yollar": [
+   {
+    "id": 94,
+    "baslik": "TARIM KEFALET DESTEK PROGRAMI",
+    "skor": 0.7,
+    "yer": true,
+    "sure": true,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 180,
+    "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+    "skor": 0.65,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 178,
+    "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+    "skor": 0.65,
+    "yer": true,
+    "sure": false,
+    "sart": true,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 116,
+    "baslik": "KGF Kooperatif Destek Paketi",
+    "skor": 0.6,
+    "yer": false,
+    "sure": false,
+    "sart": false,
+    "belge": false,
+    "kaynak_resmi": true,
+    "cagri": []
+   },
+   {
+    "id": 76,
+    "baslik": "Hayvancılık Destekleri",
+    "skor": 0.6,
+    "yer": true,
+    "sure": true,
+    "sart": false,
+    "belge": true,
+    "kaynak_resmi": true,
+    "cagri": []
+   }
+  ],
+  "hazirlik": [
+   [
+    "cks",
+    3
+   ],
+   [
+    "kep",
+    4
+   ],
+   [
+    "yatirim_tesvik_belgesi",
+    4
+   ],
+   [
+    "kosgeb_kaydi",
+    3
+   ]
+  ],
+  "hazirlik_ilk_beklenen": "cks",
+  "hazirlik_ilk_dogru": true,
+  "eihracat": null
+ }
+]

@@ -106,6 +106,7 @@
             if (sectionId === "profil") ikasKartiYukle();
             if (sectionId === "ozet") ozetYukle();
             if (sectionId === "destekler" && !eslesmeYuklendi) bulUygunDestekler();
+            if (sectionId === "destekler") hazirlikSozu = hazirlikYukle();
         }
 
         // ---- İKAS mağaza verisi (yalnızca bağlantı kaydı varsa görünür) ----
@@ -834,11 +835,18 @@
             }
         }
 
-        function ozetEylem(el) {
+        async function ozetEylem(el) {
             const eylem = el.dataset.eylem;
             if (eylem === "liste") {
                 bolumeGit("basvurular");
                 kontrolListesiAc(el.dataset.arg);
+            } else if (eylem === "eihracat" || eylem === "hazirlik") {
+                bolumeGit("destekler");
+                const hedef = document.getElementById(eylem === "eihracat" ? "eihracat-detay" : "hazirlik-section");
+                if (eylem === "eihracat") hedef.open = true;
+                // Yol haritası hesaplayıcının üstünde ve sonradan dolar; kaydırma ondan sonra (yoksa hedef aşağı kayar).
+                await hazirlikSozu;
+                hedef.scrollIntoView({ block: "start" });
             } else {
                 bolumeGit(eylem);
             }
@@ -894,9 +902,159 @@
                 + (d.ikas.yurt_disi ? ` · ${d.ikas.yurt_disi} yurt dışı teslimat` : "")
                 + `</p>${ozetDugme("Mağaza verisini gör", "profil")}</div>` : "";
 
+            const h = d.hazirlik || {};
+            const eh = h.eihracat;
+            const eihracatKart = eh
+                ? `<div class="ozet-kart"><h3>E-ihracat geri ödemesi</h3><div style="font-size:24px; font-weight:bold; color:#1d7a4f;">${tl(eh.simdi_tl + eh.teyitle_tl)}</div>`
+                  + `<p class="bos">Ön onay alırsanız 12 ayda tahmini${eh.hazirlikla_tl > 0 ? `; hazırlık adımlarıyla ${tl(eh.hazirlikla_tl)} daha` : ""}.`
+                  + (eh.aylik_bekleme_tl > 0 ? ` Her ay bekleme ≈ ${tl(eh.aylik_bekleme_tl)}.` : "") + `</p>${ozetDugme("Hesabı aç", "eihracat")}</div>`
+                : h.eihracat_ilgili
+                  ? `<div class="ozet-kart"><h3>E-ihracat geri ödemesi</h3><p class="bos">Yurt dışı pazaryeri reklamı, fulfillment ve komisyon giderlerinin %50'si (hedef ülkelerde reklam ve fulfillment'ta %70'e kadar) ön onaydan sonra geri ödenebilir. Giderlerinizi girin, ne kadar alabileceğinizi görün.</p>${ozetDugme("Hesapla", "eihracat", undefined, "birincil-btn")}</div>`
+                  : "";
+            const hazirlikKart = h.ilk_adim
+                ? `<div class="ozet-kart"><h3>Uygunluk için ilk adım</h3><div class="ad" style="font-weight:bold;">${escapeHtml(h.ilk_adim.baslik)}</div>`
+                  + `<p class="bos">${h.ilk_adim.kod === "sirket" ? `${h.ilk_adim.program_sayisi} program daha açılır.` : `${h.ilk_adim.program_sayisi} uygun programınızda gerekli.`}`
+                  + (h.acik_adim_sayisi > 1 ? ` Toplam ${h.acik_adim_sayisi} hazırlık adımı.` : "") + `</p>${ozetDugme("Yol haritası", "hazirlik")}</div>`
+                : "";
+
             const onizleme = d.onizleme && d.eslesme_sayisi > 3
                 ? `<div class="onizleme-notu ozet-tam">FREE planda ilk 3 destek ayrıntılı görünür; ${d.eslesme_sayisi} eşleşmenin tamamı için ${ozetDugme("planlara bakın", "pricing")}</div>` : "";
-            return adim + `<div class="ozet-grid">${oneCikanKart}${yaklasanKart}${basvuruKart}${profilKart}${ikas}${onizleme}</div>`;
+            return adim + `<div class="ozet-grid">${oneCikanKart}${yaklasanKart}${eihracatKart}${hazirlikKart}${basvuruKart}${profilKart}${ikas}${onizleme}</div>`;
+        }
+
+        // ---- Hazırlık yol haritası ve e-ihracat hesaplayıcı (GET/PUT /api/hazirlik, app/hazirlik.py) ----
+        const tl = (n) => `₺${Number(n || 0).toLocaleString("tr-TR", { maximumFractionDigits: 0 })}`;
+        const EH_KALEMLER = ["pazaryeri_reklam", "siparis_karsilama", "pazaryeri_komisyon", "cevrim_ici_magaza", "site_tanitim"];
+        const DURUM_ETIKETI = { uygun: "Ön onayla alınabilir", hazirlik: "Hazırlık gerekli", teyit: "Bilgi teyidi gerekli", kapali: "Kapsam dışı" };
+        let hazirlikVerisi = null;
+        let hazirlikSozu = Promise.resolve();
+
+        async function hazirlikYukle() {
+            try {
+                const r = await fetch(`${API_BASE}/hazirlik`, { headers: { Authorization: `Bearer ${authToken}` } });
+                if (!r.ok) throw new Error(hataMetni(await r.json().catch(() => ({}))));
+                hazirlikCiz(await r.json());
+            } catch (e) {
+                document.getElementById("hazirlik-adimlar").innerHTML = `<div class="error">Hazırlık adımları yüklenemedi: ${escapeHtml(e.message)}</div>`;
+                document.getElementById("hazirlik-section").style.display = "block";
+            }
+        }
+
+        function hazirlikCiz(d) {
+            hazirlikVerisi = d;
+            const adimlar = d.yol_haritasi.adimlar;
+            const bolum = document.getElementById("hazirlik-section");
+            bolum.style.display = adimlar.length ? "block" : "none";
+            document.getElementById("hazirlik-adimlar").innerHTML = adimlar.map(hazirlikAdimHtml).join("");
+            eihracatFormDoldur(d.hazirlik || {});
+            document.getElementById("eihracat-sonuc").innerHTML = d.eihracat ? eihracatSonucHtml(d.eihracat) : "";
+        }
+
+        function hazirlikAdimHtml(a) {
+            const liste = a.acar || a.gerekli || [];
+            const sayi = a.kod === "sirket" ? `${a.program_sayisi} program daha açılır` : `${a.program_sayisi} programda gerekli`;
+            const programlar = `<details><summary>Programları göster</summary><ul>${liste.slice(0, 12).map(p =>
+                `<li>${escapeHtml(p.baslik)} <span style="color:#888;">(${escapeHtml(p.kurum)})</span></li>`).join("")}`
+                + (liste.length > 12 ? `<li>… ve ${liste.length - 12} program daha</li>` : "") + `</ul></details>`;
+            const eylem = a.kod === "sirket"
+                ? `<button type="button" class="ikincil-btn" data-tikla="bolumeGit" data-arg="profil">Şirket türünü güncelle</button>`
+                : `<label class="tamamla"><input type="checkbox" data-degisim="hazirlikIsaretle" data-arg="${escapeHtml(a.kod)}"${a.tamam ? " checked" : ""}> Tamamladım</label>`;
+            return `<div class="hz-adim${a.tamam ? " tamam" : ""}"><div class="govde"><div class="ad">${a.tamam ? "✓ " : ""}${escapeHtml(a.baslik)} <span class="hz-sayi">${sayi}</span></div>`
+                + `<div class="alt">${escapeHtml(a.nasil)}</div>${programlar}</div>${eylem}</div>`;
+        }
+
+        async function hazirlikKaydet(govde) {
+            const r = await fetch(`${API_BASE}/hazirlik`, {
+                method: "PUT",
+                headers: { "Content-Type": "application/json", Authorization: `Bearer ${authToken}` },
+                body: JSON.stringify(govde),
+            });
+            if (!r.ok) throw new Error(hataMetni(await r.json().catch(() => ({}))));
+            hazirlikCiz(await r.json());
+        }
+
+        async function hazirlikIsaretle(el) {
+            el.disabled = true;
+            try {
+                await hazirlikKaydet({ durumlar: { [el.dataset.arg]: el.checked } });
+            } catch (e) {
+                el.checked = !el.checked;
+                alert("Kaydedilemedi: " + e.message);
+            } finally {
+                el.disabled = false;
+            }
+        }
+
+        function secimDegeri(id) {
+            const v = document.getElementById(id).value;
+            return v === "" ? null : v === "true";
+        }
+        function sayiDegeri(id, bolen = 1) {
+            const v = document.getElementById(id).value;
+            return v === "" ? null : Number(v) / bolen;
+        }
+
+        function eihracatFormDoldur(h) {
+            const e = h.eihracat || {};
+            const dur = h.durumlar || {};
+            for (const k of EH_KALEMLER) document.getElementById(`eh-${k}`).value = e.giderler?.[k] ?? "";
+            document.getElementById("eh-satis").value = e.yurt_disi_satis_tl ?? "";
+            document.getElementById("eh-hedef").value = e.hedef_ulke_payi != null && e.giderler ? Math.round(e.hedef_ulke_payi * 100) : "";
+            document.getElementById("eh-turk").value = e.turk_urun_payi != null && e.giderler ? Math.round(e.turk_urun_payi * 100) : "";
+            document.getElementById("eh-ihracat").value = e.onceki_yil_ihracat_usd ?? "";
+            const sec = (v) => v === true ? "true" : v === false ? "false" : "";
+            document.getElementById("eh-birlik").value = sec(dur.birlik_uyeligi);
+            document.getElementById("eh-madrid").value = sec(dur.madrid_marka);
+            document.getElementById("eh-statu").value = sec(e.perakende_statusu);
+        }
+
+        async function eihracatHesapla(el) {
+            const giderler = {};
+            for (const k of EH_KALEMLER) {
+                const v = sayiDegeri(`eh-${k}`);
+                if (v) giderler[k] = v;
+            }
+            const sonuc = document.getElementById("eihracat-sonuc");
+            if (!Object.keys(giderler).length) {
+                sonuc.innerHTML = `<div class="error">En az bir gider kalemi girin.</div>`;
+                return;
+            }
+            el.disabled = true;
+            try {
+                await hazirlikKaydet({
+                    durumlar: { birlik_uyeligi: secimDegeri("eh-birlik"), madrid_marka: secimDegeri("eh-madrid") },
+                    eihracat: {
+                        giderler,
+                        yurt_disi_satis_tl: sayiDegeri("eh-satis"),
+                        hedef_ulke_payi: sayiDegeri("eh-hedef", 100) ?? 0,
+                        turk_urun_payi: sayiDegeri("eh-turk", 100) ?? 1,
+                        onceki_yil_ihracat_usd: sayiDegeri("eh-ihracat"),
+                        perakende_statusu: secimDegeri("eh-statu"),
+                    },
+                });
+                sonuc.scrollIntoView({ behavior: "smooth", block: "start" });
+            } catch (e) {
+                sonuc.innerHTML = `<div class="error">Hesaplanamadı: ${escapeHtml(e.message)}</div>`;
+            } finally {
+                el.disabled = false;
+            }
+        }
+
+        function eihracatSonucHtml(s) {
+            const satirlar = s.kalemler.map(k => `<tr><td>${escapeHtml(k.etiket)} <span style="color:#999;">(m.${k.madde})</span>`
+                + `<div class="rozet-dar"><span class="durum-rozet ${k.durum}">${DURUM_ETIKETI[k.durum]}</span></div>`
+                + (k.engeller.length ? `<div style="color:#8a5a00; margin-top:3px;">${k.engeller.map(escapeHtml).join("<br>")}</div>` : "")
+                + (k.notlar.length ? `<div style="color:#888; margin-top:3px;">${k.notlar.map(escapeHtml).join("<br>")}</div>` : "")
+                + `</td><td class="sayi gizle-dar">${tl(k.yillik_gider_tl)}</td><td class="sayi gizle-dar">%${Math.round(k.oran * 100)}</td>`
+                + `<td class="sayi">${tl(k.tahmini_destek_tl)}</td><td class="gizle-dar"><span class="durum-rozet ${k.durum}">${DURUM_ETIKETI[k.durum]}</span></td></tr>`).join("");
+            // "Şimdi" kutusu her zaman; diğerleri yalnız tutar varsa (sıfır kutu dar ekranda yer kaplıyordu).
+            return `<div class="eh-toplam">`
+                + `<div><div class="deger">${tl(s.simdi_tl)}</div><div class="etiket">Ön onayla 12 ayda alınabilir</div></div>`
+                + (s.hazirlikla_tl > 0 ? `<div><div class="deger" style="color:#8a5a00;">${tl(s.hazirlikla_tl)}</div><div class="etiket">Hazırlık adımlarından sonra</div></div>` : "")
+                + (s.teyitle_tl > 0 ? `<div><div class="deger" style="color:#4b55c4;">${tl(s.teyitle_tl)}</div><div class="etiket">Bilgiler teyit edilince</div></div>` : "") + `</div>`
+                + (s.aylik_bekleme_tl > 0 ? `<p style="font-size:14px; color:#333;">Ön onay başvurusu her ay geciktiğinde yaklaşık <strong>${tl(s.aylik_bekleme_tl)}</strong> destek kaybedilir (ön onaydan önceki harcama desteklenmez).</p>` : "")
+                + `<table class="eh-tablo"><thead><tr><th>Kalem</th><th class="sayi gizle-dar">Gider</th><th class="sayi gizle-dar">Oran</th><th class="sayi">Tahmini destek</th><th class="gizle-dar">Durum</th></tr></thead><tbody>${satirlar}</tbody></table>`
+                + `<ul class="eh-notlar">${s.notlar.map(n => `<li>${escapeHtml(n)}</li>`).join("")}<li>Kaynak: <a href="${guvenliUrl(s.kaynak)}" target="_blank" rel="noopener">5986 sayılı Karar</a>, E-İhracat Genelgesi 13.04.2026, 2026 üst limit tablosu.</li></ul>`;
         }
 
         async function illeriYukle() {
@@ -915,8 +1073,12 @@
             return new Date(y, a - 1, g).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" });
         }
         function cagriOzeti(c) {
-            if (c.durum === "acik") return c.kapanis ? `Son başvuru ${cagriTarihi(c.kapanis)} (${c.kalan_gun === 0 ? "bugün" : c.kalan_gun + " gün"})`
+            const kalan = c.kalan_gun === 0 ? "bugün" : c.kalan_gun + " gün";
+            // Ön kayıt tarihi varsa firmanın son günü odur (TÜBİTAK: ön kayıt kapanıştan birkaç gün önce).
+            if (c.durum === "acik" && c.on_kayit_son) return `Ön kayıt son gün ${cagriTarihi(c.on_kayit_son)} (${kalan}) · kapanış ${cagriTarihi(c.kapanis)}`;
+            if (c.durum === "acik") return c.kapanis ? `Son başvuru ${cagriTarihi(c.kapanis)} (${kalan})`
                                                     : "Başvuruya açık (son tarih duyurulmadı)";
+            if (c.durum === "on_kayit_kapandi") return `Ön kayıt ${cagriTarihi(c.on_kayit_son)} tarihinde kapandı; yalnız ön kaydı yapılanlar ${cagriTarihi(c.kapanis)} tarihine kadar tamamlayabilir`;
             if (c.durum === "yaklasan") return `${cagriTarihi(c.acilis)} tarihinde açılıyor (${c.kalan_gun} gün)`;
             if (c.durum === "kapandi") return `Kapandı (${cagriTarihi(c.kapanis)})`;
             return "Başvuru tarihi duyurulmadı";
@@ -1672,6 +1834,8 @@
             taslakKopyala: () => taslakKopyala(),
             ikasYenile: () => ikasYenile(),
             ikasBaglantiKes: () => ikasBaglantiKes(),
+            hazirlikIsaretle: (el) => hazirlikIsaretle(el),
+            eihracatHesapla: (el) => eihracatHesapla(el),
         };
         function eylemBagla(olay, oznitelik) {
             document.addEventListener(olay, (e) => {

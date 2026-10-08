@@ -147,7 +147,14 @@
   <tr><td>Mağaza adı</td><td><code>ikas_baglanti.store_name</code></td></tr>
   <tr><td>Erişim ve yenileme anahtarları (OAuth token)</td><td><code>ikas_baglanti.access_token</code>, <code>.refresh_token</code></td></tr>
   <tr><td>Son senkronizasyon zamanı ve hata bilgisi</td><td><code>ikas_baglanti.son_senkron_zamani</code>, <code>.son_senkron_hata</code></td></tr>
+  <tr><td>İKAS kurulum ve mağaza kimlikleri (authorizedAppId, merchantId), webhook kayıt durumu</td><td><code>ikas_baglanti.authorized_app_id</code>, <code>.merchant_id</code>, <code>.webhook_kaydi</code></td></tr>
+  <tr><td>Son 12 ayın sipariş özeti: sipariş sayısı, TL ciro, döviz cinsinden toplamlar, yurt dışı teslimat sayısı ve ülke kodları, en çok satan 5 ürün adı (müşteri adı, adresi, iletişim bilgisi <strong>tutulmaz</strong>)</td><td><code>ikas_baglanti.son_ozet</code></td></tr>
 </table></div>
+<p>
+  Uygulamayı İKAS panelinden kurduğunuzda, hesabınız İKAS'ın paylaştığı mağaza unvanı, e-posta adresi ve il
+  bilgisiyle açılır. E-posta başka bir hesapta kayıtlıysa o hesaba bağlanmaz; ayrı hesap açılır. Uygulamayı İKAS'tan
+  kaldırdığınızda veya bağlantıyı panelden kestiğinizde erişim anahtarları ve sipariş özeti silinir.
+</p>
 
 <div class="kutu">
   <strong>Bu anahtarlar şifreli saklanır.</strong> İKAS erişim ve yenileme
@@ -201,6 +208,8 @@
   bilgileriniz bu aktarıma dahil edilmez.</strong>
   Aynı rıza ile, yalnızca siz “Taslak oluştur” dediğinizde, aynı profil bilgileri seçtiğiniz
   teşvik programının bilgileriyle birlikte başvuru ön taslağı yazılması için de gönderilir;
+  İKAS mağazanız bağlıysa sipariş özetinin toplamları (sipariş sayısı, TL ciro, döviz toplamları, yurt dışı
+  teslimat sayısı ve ülke kodları) da taslağa eklenir;
   üretilen taslak hesabınızda saklanır ve kontrol listesini kaldırdığınızda veya hesabınızı sildiğinizde silinir.
 </div>
 <p>

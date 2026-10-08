@@ -37,6 +37,9 @@ Kurallar:
 - Çıktı yalnızca Markdown olsun ve tam olarak şu başlıkları bu sırayla içersin (## ile):
 {chr(10).join('  ## ' + b for b in BOLUMLER)}
 - Bütçe bölümünde tutar varsa yalnızca bağlamdaki program tavanı/oranı ile sınırla; kalem tutarlarını [DOLDURUN] bırak.
+- Profilde İKAS mağaza verisi (sipariş sayısı, ciro, yurt dışı teslimat) varsa işletme tanıtımında ve ihracat
+  göstergelerinde kullan; kaynağını "e-ticaret mağaza kayıtlarına göre" diye belirt ve resmi belgeyle (fatura,
+  gümrük beyannamesi/ETGB) teyit edilmesi gerektiğini yaz. Döviz tutarlarını TL'ye çevirme.
 - Toplam uzunluk 500-900 kelime. Giriş/kapanış cümlesi, kendinden söz etme yok."""
 
 

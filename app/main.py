@@ -62,7 +62,7 @@ from app.admin import router as admin_router
 from app.matching import esles, toplam_tahmini_destek, tutari_tahmini_hesapla
 from app.budget import hesapla as butce_hesapla
 from app.cilek_panel import router as cilek_router
-from app.ikas_panel import router as ikas_router
+from app.ikas_panel import oauth_router as ikas_oauth_router, router as ikas_router
 from app.basvuru_listesi import router as basvuru_listesi_router
 from app.hesap_belirtec import belirtec_uret, belirtec_tuket, SIFIRLAMA, DOGRULAMA
 from app.email import EmailService
@@ -166,6 +166,17 @@ CSP = "; ".join([
 ])
 # Swagger/ReDoc CDN'den script yükler; CSP'ye alınmaz (yalnızca HTML paneller ve sayfalar kapsanır).
 CSP_MUAF_YOLLAR = ("/docs", "/redoc")
+# İKAS uygulaması İKAS yönetim panelinde (https://{mağaza}.myikas.com/admin) iframe içinde açılır (2026-10-08).
+# Yalnızca bu sayfalar ve yalnızca IKAS_CERCEVE_KAYNAKLARI kökenleri tarafından çerçevelenebilir; diğer her sayfa
+# 'none' + X-Frame-Options DENY ile kalır. Oturum bitince panel giriş sayfasına (/) döndüğü için o da listede.
+GOMULU_SAYFALAR = ("/", "/ikas", "/dashboard")
+
+
+def sayfa_csp(yol: str) -> str:
+    if yol in GOMULU_SAYFALAR and settings.IKAS_CERCEVE_KAYNAKLARI.strip():
+        return CSP.replace("frame-ancestors 'none'",
+                           f"frame-ancestors 'self' {settings.IKAS_CERCEVE_KAYNAKLARI.strip()}")
+    return CSP
 
 
 @app.middleware("http")
@@ -173,11 +184,14 @@ async def guvenlik_basliklari(request: Request, call_next):
     """Her yanıta temel güvenlik başlıkları (clickjacking, MIME sniffing, referrer sızıntısı);
     HTML yanıtlara ayrıca Content-Security-Policy."""
     response = await call_next(request)
+    csp = sayfa_csp(request.url.path)
     for k, v in GUVENLIK_BASLIKLARI.items():
+        if k == "X-Frame-Options" and csp is not CSP:
+            continue  # izin listesi yalnızca CSP frame-ancestors ile ifade edilebilir; XFO DENY onu ezerdi
         response.headers.setdefault(k, v)
     if (response.headers.get("content-type", "").startswith("text/html")
             and not request.url.path.startswith(CSP_MUAF_YOLLAR)):
-        response.headers.setdefault("Content-Security-Policy", CSP)
+        response.headers.setdefault("Content-Security-Policy", csp)
     # Sayfa betikleri/CSS'i sürüm numarasız sunulur; önbellek yönergesi yokken tarayıcı sezgisel önbellekle eski
     # betiği kullanmaya devam ediyordu (2026-10-08). no-cache: her açılışta ETag ile doğrula (değişmediyse 304).
     if request.url.path.startswith("/static/") or response.headers.get("content-type", "").startswith("text/html"):
@@ -231,6 +245,7 @@ async def beklenmeyen_hata(request: Request, exc: Exception):
 app.include_router(admin_router)
 app.include_router(cilek_router)
 app.include_router(ikas_router)
+app.include_router(ikas_oauth_router)
 app.include_router(basvuru_listesi_router)
 
 STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
@@ -250,9 +265,21 @@ def secret_key_kontrolu() -> None:
                        "Yerel geliştirme için ALLOW_INSECURE_SECRET=true.")
 
 
+def ikas_mod_uyarisi() -> bool:
+    """Canlı adreste (https) İKAS mock modu açıksa: kurulum akışı sahte belirteçle hesap açar. Açılışı durdurmaz
+    (İKAS kaydı yapılmadan da site yayında olabilir), yüksek seviyeli günlük kaydı bırakır."""
+    from app.ikas_integration import _mock_mu
+    if settings.APP_URL.startswith("https://") and _mock_mu():
+        logger.critical("İKAS mock modu canlı adreste açık (APP_URL=%s): İKAS uygulaması yayına alınmadan önce "
+                        "IKAS_MOCK_MODE=false ve IKAS_CLIENT_ID/SECRET tanımlanmalı.", settings.APP_URL)
+        return True
+    return False
+
+
 def on_startup():
     global _scheduler
     secret_key_kontrolu()
+    ikas_mod_uyarisi()
     hata_izleme.kur(settings.SENTRY_DSN, settings.SENTRY_ORTAM)
     init_db()
     # Cok iscili dagitimda yalnizca kilidi alan isci scraper islerini calistirir.
@@ -1060,6 +1087,12 @@ def kvkk_aydinlatma():
 @app.get("/dashboard")
 def dashboard():
     return FileResponse(os.path.join(STATIC_DIR, "dashboard.html"))
+
+
+@app.get("/ikas")
+def ikas_sayfasi():
+    """İKAS panelinden açılış: imzalı parametreleri /api/ikas/oturum'a gönderir, oturumu açıp panele geçer."""
+    return FileResponse(os.path.join(STATIC_DIR, "ikas.html"))
 
 
 @app.get("/sifre-sifirla")

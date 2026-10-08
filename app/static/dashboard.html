@@ -699,6 +699,18 @@
 
         <!-- Profil & Oneriler Section -->
         <div id="profil" class="section hidden">
+            <!-- İKAS mağaza verisi: yalnızca bağlantı kaydı varsa görünür (panel.js ikasKartiYukle). -->
+            <div id="ikas-kart" class="search-section" style="display:none; margin-bottom:20px;">
+                <h2>İKAS mağaza verisi</h2>
+                <p id="ikas-durum" style="color:#666; margin: 8px 0 14px;"></p>
+                <div id="ikas-ozet" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 12px; margin-bottom: 12px;"></div>
+                <ul id="ikas-notlar" style="color:#555; font-size:13px; line-height:1.6; padding-left:18px; margin-bottom:14px;"></ul>
+                <div style="display:flex; gap:10px; flex-wrap:wrap;">
+                    <button type="button" class="birincil-btn" id="ikas-yenile" data-tikla="ikasYenile">Verileri yenile</button>
+                    <button type="button" class="ikincil-btn" style="color:#c0392b; border-color:#c0392b;" data-tikla="ikasBaglantiKes">Bağlantıyı kes</button>
+                </div>
+                <p id="ikas-mesaj" style="font-size:13px; margin-top:10px;"></p>
+            </div>
             <div class="search-section">
                 <h2>Finansal Profil</h2>
                 <p style="color:#666; margin: 10px 0 20px;">Sektörünüzü ve rakamlarınızı girin; size uygun teşvikleri ve stok/reklam bütçe önerinizi hesaplayalım.</p>

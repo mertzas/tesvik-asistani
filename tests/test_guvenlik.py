@@ -117,7 +117,10 @@ def test_html_sayfalara_csp_gelir_api_ve_docs_haric(client):
         r = client.get(yol)
         if r.status_code == 200 and r.headers.get("content-type", "").startswith("text/html"):
             csp = r.headers["Content-Security-Policy"]
-            assert "frame-ancestors 'none'" in csp and "object-src 'none'" in csp
+            # İKAS paneline gömülen sayfalar yalnızca İKAS kökeninden çerçevelenebilir (tests/test_ikas_uygulama.py).
+            cerceve = "frame-ancestors 'self' https://*.myikas.com" if yol in ("/", "/dashboard") \
+                else "frame-ancestors 'none'"
+            assert cerceve in csp and "object-src 'none'" in csp
             assert "base-uri 'self'" in csp and "connect-src 'self'" in csp
     assert "Content-Security-Policy" not in client.get("/health").headers
     d = client.get("/docs")

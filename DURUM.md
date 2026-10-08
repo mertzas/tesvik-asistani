@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-08 (güvenlik kod listesi 1–3: JWT iptali, doğrulama zorunlu kayıt, CSP). Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -80,6 +80,19 @@ Son güncelleme: 2026-10-08 (güvenlik kod listesi 1–3: JWT iptali, doğrulama
   kesiliyordu (`_kisalt`). AÇIK VERİ İŞİ: 22 aktif kaydın özeti tamamen menü/başlık metni (KGF 12, KOSGEB 7,
   TÜBİTAK 3), 27'si kısmen; kartlarda ve danışman bağlamında görünüyor → özetler resmî sayfalardan yeniden yazılmalı.
   Sıradaki: tarih hatırlatması (SMTP sonrası).
+- **İKAS App Store hazırlığı** (2026-10-08, kod tamam, mock modda doğrulandı): yol haritası `docs/IKAS_YOL_HARITASI.md`
+  (paylaşılabilir sayfa: https://claude.ai/artifact/CKhXWEgLxi2CPFbCL6L7tk, özel). Kurulum `GET /api/oauth/authorize/ikas`
+  (state + httpOnly çerez), callback `GET /api/oauth/callback/ikas` (me + getMerchant → hesap açar, e-posta başka hesaptaysa
+  bağlamaz; merchantId ile yeniden kurulum aynı hesaba döner; saveWebhook), imzalı açılış `/ikas` → `POST /api/ikas/oturum`,
+  imzalı webhook `POST /api/ikas/webhook` (sipariş: 10 dk erteleme + panelde tamamlama; `store/app/deleted`: belirteç
+  silme), token yenileme, `DELETE /api/ikas/baglanti`, `/`, `/ikas`, `/dashboard` yalnız `IKAS_CERCEVE_KAYNAKLARI`
+  (varsayılan `https://*.myikas.com`) tarafından çerçevelenir. Veri hataları düzeltildi: iptal `status` alanında
+  (ödeme durumunda değil), `productName` şemada yok → `variant.name`, sayfalama + 365 gün süzgeci, döviz ayrı.
+  E-ihracat göstergeleri (yurt dışı teslimat, ülke, döviz) → profile "ihracat" hedefi, taslak bağlamı, panel kartı.
+  İmzalar SDK JS fonksiyonlarıyla çapraz doğrulandı. Göç `k8f0b2c4d890` dev DB'ye UYGULANDI (yedek
+  `tesvikler_oncesi_gocK.db.bak`). `python -m app.ikas_integration --self-test` 11/11, `tests/test_ikas_uygulama.py` 31.
+  BEKLEYEN (Mert/İKAS): Partner hesabı, Next.js zorunluluğu ve faturalama soruları, client id/secret, HTTPS sunucu,
+  2 geliştirme mağazasında gerçek API testi (kontrol listesi yol haritasında).
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

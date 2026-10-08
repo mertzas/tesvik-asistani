@@ -80,6 +80,9 @@ class Settings(BaseSettings):
     IKAS_CLIENT_SECRET: str = os.getenv("IKAS_CLIENT_SECRET", "")
     IKAS_SCOPE: str = os.getenv("IKAS_SCOPE", "read_orders read_products")
     IKAS_MOCK_MODE: bool = os.getenv("IKAS_MOCK_MODE", "true").lower() == "true"
+    # İKAS yönetim paneli uygulamayı iframe içinde açar; bu kökenler giriş/panel/ikas sayfalarını çerçeveleyebilir.
+    # Boş bırakılırsa hiçbir sayfa çerçevelenemez (frame-ancestors 'none').
+    IKAS_CERCEVE_KAYNAKLARI: str = os.getenv("IKAS_CERCEVE_KAYNAKLARI", "https://*.myikas.com")
 
     class Config:
         # Proje kokune gore: baska bir calisma dizininden baslatilsa da .env bulunur.
@@ -377,6 +380,15 @@ class IkasBaglanti(Base):
 
     son_senkron_zamani = Column(DateTime, nullable=True)
     son_senkron_hata = Column(String, nullable=True)
+
+    # İKAS App Store kurulumu (2026-10-08): me.id = authorizedAppId (imzalı açılış ve webhook bunu taşır),
+    # getMerchant.id = merchantId. Kurulumla gelen (org_id'siz) satır callback'te kuruluşa bağlanır.
+    authorized_app_id = Column(String(64), nullable=True, index=True)
+    merchant_id = Column(String(64), nullable=True, index=True)
+    son_ozet = Column(JSON, nullable=True)  # EslemeSonucu.gostergeler(): ciro, döviz, yurt dışı teslimat
+    # Webhook olayı kısa aralıkla gelirse tam senkron ertelenir; panel açılınca tamamlanır (bkz. ikas_panel).
+    senkron_bekliyor = Column(Boolean, nullable=False, default=False, server_default="0")
+    webhook_kaydi = Column(String(300), nullable=True)  # "kayitli" ya da saveWebhook hata metni
 
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc))
     updated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))

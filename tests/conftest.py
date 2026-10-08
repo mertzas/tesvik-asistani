@@ -47,8 +47,11 @@ def _fresh_db(monkeypatch):
     CI'da (bos ci.db) /api/sor "no such table" ile 500 veriyordu (run 37624057827).
     Testler artik yalnizca bellek-ici DB'ye bagli."""
     Base.metadata.create_all(bind=engine)
+    import app.ikas_panel
     import app.rag
     monkeypatch.setattr(app.rag, "SessionLocal", TestingSessionLocal)
+    # İKAS arka plan senkronu (BackgroundTasks) kendi oturumunu açar; o da bellek-içi DB'ye bağlansın.
+    monkeypatch.setattr(app.ikas_panel, "oturum_ac", TestingSessionLocal)
     yield
     Base.metadata.drop_all(bind=engine)
 

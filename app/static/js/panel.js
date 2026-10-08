@@ -59,7 +59,8 @@
                 const r = await fetch("/api/auth/me", { headers: { Authorization: `Bearer ${authToken}` } });
                 if (!r.ok) return;
                 const me = await r.json();
-                if (me.email_dogrulandi) return;
+                // İKAS kurulumunda e-posta başka hesapta kayıtlıysa yer tutucu adres verilir; doğrulanacak posta kutusu yok.
+                if (me.email_dogrulandi || (me.email || "").endsWith("@magaza.ikas.invalid")) return;
                 document.getElementById("eposta-uyari").style.display = "block";
                 document.getElementById("eposta-dogrulama-gonder").onclick = async () => {
                     const sonuc = document.getElementById("eposta-uyari-sonuc");
@@ -98,6 +99,73 @@
             if (sectionId === "history") loadHistory();
             if (sectionId === "settings") loadSettings();
             if (sectionId === "basvurular") basvurularYukle();
+            if (sectionId === "profil") ikasKartiYukle();
+        }
+
+        // ---- İKAS mağaza verisi (yalnızca bağlantı kaydı varsa görünür) ----
+        const IKAS_DURUM_METNI = {
+            bagli: "Bağlı",
+            beklemede: "Onay bekleniyor",
+            hata: "Hata — yeniden bağlanmanız gerekebilir",
+            kaldirildi: "Uygulama İKAS'tan kaldırıldı",
+        };
+        function trSayi(x, basamak = 0) {
+            return Number(x || 0).toLocaleString("tr-TR", { minimumFractionDigits: basamak, maximumFractionDigits: basamak });
+        }
+        async function ikasKartiYukle() {
+            const kart = document.getElementById("ikas-kart");
+            try {
+                const r = await fetch(`${API_BASE}/ikas/durum`, { headers: { Authorization: `Bearer ${authToken}` } });
+                if (!r.ok) return;
+                const d = await r.json();
+                if (d.baglanti_durumu === "bagli_degil") { kart.style.display = "none"; return; }
+                kart.style.display = "block";
+                const son = d.son_senkron_zamani ? new Date(d.son_senkron_zamani + (d.son_senkron_zamani.endsWith("Z") ? "" : "Z")).toLocaleString("tr-TR") : "henüz yok";
+                document.getElementById("ikas-durum").textContent =
+                    `Mağaza: ${d.store_name} · Durum: ${IKAS_DURUM_METNI[d.baglanti_durumu] || d.baglanti_durumu} · Son senkron: ${son}`
+                    + (d.son_senkron_hata ? ` · Son hata: ${d.son_senkron_hata}` : "")
+                    + (d.mock_mode ? " · (deneme modu: örnek veri)" : "");
+                const o = d.ozet || {};
+                const kutular = [
+                    ["Satış siparişi (12 ay)", trSayi(o.siparis_sayisi)],
+                    ["Ciro (TL siparişler)", trSayi(o.yillik_ciro, 2) + " TL"],
+                    ["Yurt dışı teslimat", `${trSayi(o.yurt_disi_siparis)} sipariş` + ((o.yurt_disi_ulkeler || []).length ? ` (${o.yurt_disi_ulkeler.join(", ")})` : "")],
+                    ["Döviz cinsinden satış", Object.entries(o.doviz_toplamlari || {}).map(([k, t]) => `${trSayi(t, 2)} ${k}`).join(", ") || "yok"],
+                ];
+                document.getElementById("ikas-ozet").innerHTML = kutular.map(([b, v]) =>
+                    `<div class="stat-card"><h3>${escapeHtml(b)}</h3><div style="font-size:18px; font-weight:bold; color:#333;">${escapeHtml(v)}</div></div>`).join("");
+                document.getElementById("ikas-notlar").innerHTML = (o.notlar || []).map(n => `<li>${escapeHtml(n)}</li>`).join("");
+                document.getElementById("ikas-yenile").disabled = d.baglanti_durumu !== "bagli";
+            } catch (e) { /* kart isteğe bağlı */ }
+        }
+        async function ikasYenile() {
+            const mesaj = document.getElementById("ikas-mesaj");
+            const dugme = document.getElementById("ikas-yenile");
+            dugme.disabled = true;
+            mesaj.textContent = "Mağaza verileri okunuyor…";
+            try {
+                const r = await fetch(`${API_BASE}/ikas/senkronize`, { method: "POST", headers: { Authorization: `Bearer ${authToken}` } });
+                const v = await r.json().catch(() => ({}));
+                mesaj.textContent = r.ok ? "Güncellendi. Profilinizdeki yıllık ciro mağaza verisinden yenilendi."
+                                         : (typeof v.detail === "string" ? v.detail : "Yenilenemedi (" + r.status + ")");
+                if (r.ok) { await ikasKartiYukle(); loadFinancialProfile(); }
+            } catch (e) { mesaj.textContent = "Sunucuya ulaşılamadı."; }
+            finally { dugme.disabled = false; }
+        }
+        // confirm() yerine iki tıklama: İKAS paneli uygulamayı iframe'de açar; sandbox'ta modal pencereler engellenebilir.
+        let ikasKesOnay = 0;
+        async function ikasBaglantiKes() {
+            const mesaj = document.getElementById("ikas-mesaj");
+            if (Date.now() - ikasKesOnay > 8000) {
+                ikasKesOnay = Date.now();
+                mesaj.textContent = "Saklı erişim anahtarları ve sipariş özeti silinecek (profilinizdeki ciro kalır). Onaylamak için 8 saniye içinde tekrar tıklayın.";
+                return;
+            }
+            ikasKesOnay = 0;
+            const r = await fetch(`${API_BASE}/ikas/baglanti`, { method: "DELETE", headers: { Authorization: `Bearer ${authToken}` } });
+            const v = await r.json().catch(() => ({}));
+            document.getElementById("ikas-mesaj").textContent = v.mesaj || v.detail || "";
+            if (r.ok) setTimeout(ikasKartiYukle, 2500);
         }
 
         // ---- Ayarlar: hesap bilgisi, AI rıza anahtarı, hesap silme ----
@@ -1477,6 +1545,8 @@
             basvurularYukle: () => basvurularYukle(),
             taslakOlustur: (el) => taslakOlustur(el),
             taslakKopyala: () => taslakKopyala(),
+            ikasYenile: () => ikasYenile(),
+            ikasBaglantiKes: () => ikasBaglantiKes(),
         };
         function eylemBagla(olay, oznitelik) {
             document.addEventListener(olay, (e) => {

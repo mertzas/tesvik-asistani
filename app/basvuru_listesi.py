@@ -23,7 +23,8 @@ from sqlalchemy.orm import Session
 
 from app import basvuru_taslagi
 from app.auth import get_current_org
-from app.models import BasvuruTakibi, FinancialProfile, Organization, PlanType, Tesvik, get_db, settings
+from app.models import (BasvuruTakibi, FinancialProfile, IkasBaglanti, Organization, PlanType, Tesvik, get_db,
+                        settings)
 from app.rate_limit import org_hiz_siniri, sayac as hiz_sayaci
 
 router = APIRouter(prefix="/api/basvuru-listesi", tags=["başvuru kontrol listesi"])
@@ -173,10 +174,17 @@ def taslak_olustur(tesvik_id: int, current_org: Organization = Depends(get_curre
         raise HTTPException(status_code=status.HTTP_429_TOO_MANY_REQUESTS,
                             detail=f"Günlük {GUNLUK_TASLAK_SINIRI} taslak sınırına ulaştınız; yarın tekrar deneyin.")
 
+    from app.ikas_veri_esleme import baglam_alanlari
     from app.rag import profil_sozlugu
     kayit = _kayit(db, current_org, tesvik_id)
+    profil = profil_sozlugu(profil_row)
+    # Bağlı İKAS mağazası varsa sipariş toplamları (kişisel veri değil) taslağa girer: e-ihracat ve ciro
+    # bölümleri [DOLDURUN] yerine mağazanın kendi verisiyle başlar (KVKK metninde belirtildi).
+    ikas = db.query(IkasBaglanti).filter(IkasBaglanti.org_id == current_org.id,
+                                         IkasBaglanti.baglanti_durumu == "bagli").first()
+    profil.update(baglam_alanlari(ikas.son_ozet if ikas else None))
     try:
-        metin, _kullanim = basvuru_taslagi.uret(t, profil_sozlugu(profil_row), _yanit(t, kayit)["maddeler"])
+        metin, _kullanim = basvuru_taslagi.uret(t, profil, _yanit(t, kayit)["maddeler"])
     except basvuru_taslagi.TaslakHatasi as e:
         raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail=str(e))
     simdi = datetime.now(timezone.utc).replace(tzinfo=None)

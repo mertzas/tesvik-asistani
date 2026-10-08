@@ -74,6 +74,11 @@ Son güncelleme: 2026-10-08 (güvenlik kod listesi 1–3: JWT iptali, doğrulama
   Canlı ölçüm onaylandı (3 taslak, ≤0,15 USD) ve denendi: ilk çağrı "credit balance is too low" (400) ile düştü,
   ücret yok (`docs/olcum/2026-10-08-taslak/olcum.json`). BAKİYE YÜKLENİNCE: `python docs/olcum/2026-10-08-taslak/
   taslak_olcum.py --canli` (taslaklar aynı klasöre, otomatik denetim: başlık sırası, bağlamda olmayan sayı, [DOLDURUN]).
+  API yerine oturum modeliyle ölçüldü (Aşama C yöntemi, birebir istem: `--dok` → `yanit_<n>.md` → `--elle`):
+  3/3 başlık sırası doğru, bağlamda olmayan sayı 0, [DOLDURUN] 26-32, kelime 448-501. İstem okunurken bulunan ve
+  düzeltilen: özet alanındaki site menüsü taslak bağlamına giriyordu (`_temiz_ozet`), şartlar cümle ortasında
+  kesiliyordu (`_kisalt`). AÇIK VERİ İŞİ: 22 aktif kaydın özeti tamamen menü/başlık metni (KGF 12, KOSGEB 7,
+  TÜBİTAK 3), 27'si kısmen; kartlarda ve danışman bağlamında görünüyor → özetler resmî sayfalardan yeniden yazılmalı.
   Sıradaki: tarih hatırlatması (SMTP sonrası).
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.

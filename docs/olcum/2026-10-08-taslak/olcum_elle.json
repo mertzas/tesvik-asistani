@@ -1,0 +1,62 @@
+{
+ "uretici": "oturum modeli (Aşama C yöntemi: birebir sistem + kullanıcı istemi, API bakiyesi yok)",
+ "sonuclar": [
+  {
+   "vaka": 1,
+   "persona": "12 Bursa metal sentetik",
+   "tesvik_id": 8,
+   "program": "Kapasite Geliştirme Destek Programı",
+   "denetim": {
+    "baslik_sirasi_dogru": true,
+    "basliklar": [
+     "1. İşletme tanıtımı",
+     "2. Projenin amacı ve gerekçesi",
+     "3. Yapılacak faaliyetler ve takvim",
+     "4. Tahmini bütçe kalemleri",
+     "5. Beklenen çıktılar ve etkiler"
+    ],
+    "doldurun_sayisi": 26,
+    "kelime": 499,
+    "baglamda_olmayan_sayilar": []
+   }
+  },
+  {
+   "vaka": 2,
+   "persona": "2 Izmir tekstil",
+   "tesvik_id": 9,
+   "program": "Küresel Rekabetçilik Destek Programı",
+   "denetim": {
+    "baslik_sirasi_dogru": true,
+    "basliklar": [
+     "1. İşletme tanıtımı",
+     "2. Projenin amacı ve gerekçesi",
+     "3. Yapılacak faaliyetler ve takvim",
+     "4. Tahmini bütçe kalemleri",
+     "5. Beklenen çıktılar ve etkiler"
+    ],
+    "doldurun_sayisi": 29,
+    "kelime": 501,
+    "baglamda_olmayan_sayilar": []
+   }
+  },
+  {
+   "vaka": 3,
+   "persona": "3 Ankara girisim",
+   "tesvik_id": 49,
+   "program": "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "denetim": {
+    "baslik_sirasi_dogru": true,
+    "basliklar": [
+     "1. İşletme tanıtımı",
+     "2. Projenin amacı ve gerekçesi",
+     "3. Yapılacak faaliyetler ve takvim",
+     "4. Tahmini bütçe kalemleri",
+     "5. Beklenen çıktılar ve etkiler"
+    ],
+    "doldurun_sayisi": 32,
+    "kelime": 448,
+    "baglamda_olmayan_sayilar": []
+   }
+  }
+ ]
+}

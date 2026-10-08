@@ -3,6 +3,10 @@ app.basvuru_taslagi.uret() doğrudan çağrılır; sentetik profiller G_persona_
 
   python taslak_olcum.py --kuru    istemleri ve tahmini token sayısını yazar (ücretsiz, ağ yok)
   python taslak_olcum.py --canli   3 ücretli çağrı (onaylı, ≤ ~0,15 USD); ilk hata çağrıda durur
+  python taslak_olcum.py --dok     birebir istemleri istem_<n>.md olarak yazar (Aşama C yöntemi: API bakiyesi yokken
+                                   oturum modeli aynı istemle yanıtlar ve yanit_<n>.md'ye yazar)
+  python taslak_olcum.py --elle    yanit_<n>.md'leri uygulamanın aynı birleştirme + denetiminden geçirir
+                                   (olcum_elle.json; üretici "oturum modeli" olarak etiketlenir)
 
 Çıktılar bu klasöre: taslak_<n>.md (taslak) ve olcum.json (token, süre, otomatik denetimler).
 Otomatik denetimler: 5 başlık sırayla var mı; modelin yazdığı her sayı bağlamda geçiyor mu (uydurma rakam adayı);
@@ -35,27 +39,83 @@ VAKALAR = [  # (persona, tesvik_id): her biri farklı kurum/program türü
 FIYAT_GIRIS, FIYAT_CIKIS = 3.0, 15.0
 
 
+SAYI = re.compile(r"(\d[\d.,]*)(\s*(?:milyon|Milyon|bin|Bin))?")
+
+
+def _degerler(metin: str) -> set[float]:
+    """Metindeki sayıları DEĞER olarak çıkarır: '32000000.0', '32.000.000', '32 milyon' aynı sayıdır."""
+    sonuc = set()
+    for ham, carpan in SAYI.findall(metin):
+        s = ham.rstrip(".,")
+        if re.fullmatch(r"\d{1,3}(\.\d{3})+(,\d+)?", s):      # 1.000.000 / 1.000.000,50
+            s = s.replace(".", "").replace(",", ".")
+        elif re.fullmatch(r"\d+,\d+", s):                       # 1,5
+            s = s.replace(",", ".")
+        try:
+            v = float(s)
+        except ValueError:
+            continue
+        carpan = carpan.strip().lower()
+        sonuc.add(round(v * (1e6 if carpan == "milyon" else 1e3 if carpan == "bin" else 1), 4))
+    return sonuc
+
+
 def denetle(model_metni: str, baglam_metni: str) -> dict:
     basliklar = re.findall(r"^##\s+(.+)$", model_metni, re.M)
     sira_tamam = [b.strip() for b in basliklar[:5]] == list(BT.BOLUMLER)
-    baglam_sayilari = set(re.findall(r"\d[\d.,]*", baglam_metni))
     govde = re.sub(r"^##\s+\d\..*$", "", model_metni, flags=re.M)   # başlık numaralarını say
     govde = re.sub(r"\[DOLDURUN[^\]]*\]", "", govde)
-    supheli = sorted({s.rstrip(".,") for s in re.findall(r"\d[\d.,]*", govde)} - {s.rstrip(".,") for s in baglam_sayilari})
+    supheli = sorted(_degerler(govde) - _degerler(baglam_metni))
     return {"baslik_sirasi_dogru": sira_tamam, "basliklar": basliklar,
             "doldurun_sayisi": len(re.findall(r"\[DOLDURUN", model_metni)),
             "kelime": len(model_metni.split()), "baglamda_olmayan_sayilar": supheli}
+
+
+def _vaka(db, persona, tid):
+    t = db.get(Tesvik, tid)
+    profil = profil_sozlugu(FinancialProfile(**G.PERSONA[persona]))
+    baglam = BT.baglam(t, profil)
+    return t, maddeler(t), baglam, f"BAĞLAM:\n{baglam}\n\nBu program için başvuru ön taslağını yaz."
+
+
+def dok():
+    db = SessionLocal()
+    for n, (persona, tid) in enumerate(VAKALAR, 1):
+        t, _, _, istem = _vaka(db, persona, tid)
+        with open(os.path.join(HERE, f"istem_{n}.md"), "w", encoding="utf-8") as f:
+            f.write(f"# SİSTEM\n\n{BT.SISTEM}\n\n# KULLANICI\n\n{istem}\n")
+        print(f"istem_{n}.md yazıldı ({persona} → {t.baslik})")
+    db.close()
+
+
+def elle():
+    db = SessionLocal()
+    sonuc = []
+    for n, (persona, tid) in enumerate(VAKALAR, 1):
+        yol = os.path.join(HERE, f"yanit_{n}.md")
+        if not os.path.exists(yol):
+            print(f"[{n}] yanit_{n}.md yok, atlandı")
+            continue
+        t, liste, baglam, _ = _vaka(db, persona, tid)
+        metin = open(yol, encoding="utf-8").read().strip()
+        with open(os.path.join(HERE, f"taslak_elle_{n}.md"), "w", encoding="utf-8") as f:
+            f.write(f"<!-- {persona} | {t.kurum} — {t.baslik} | üretici: oturum modeli, birebir istem (üretim modeli DEĞİL) -->"
+                    f"\n\n{BT.birlestir(metin, liste)}")
+        d = denetle(metin, baglam)
+        sonuc.append({"vaka": n, "persona": persona, "tesvik_id": tid, "program": t.baslik, "denetim": d})
+        print(f"[{n}] {t.baslik[:45]}: başlık sırası {d['baslik_sirasi_dogru']}, [DOLDURUN] {d['doldurun_sayisi']}, "
+              f"kelime {d['kelime']}, bağlamda olmayan sayılar {d['baglamda_olmayan_sayilar']}")
+    db.close()
+    with open(os.path.join(HERE, "olcum_elle.json"), "w", encoding="utf-8") as f:
+        json.dump({"uretici": "oturum modeli (Aşama C yöntemi: birebir sistem + kullanıcı istemi, API bakiyesi yok)",
+                   "sonuclar": sonuc}, f, ensure_ascii=False, indent=1)
 
 
 def main(canli: bool):
     db = SessionLocal()
     sonuc = []
     for n, (persona, tid) in enumerate(VAKALAR, 1):
-        t = db.get(Tesvik, tid)
-        profil = profil_sozlugu(FinancialProfile(**G.PERSONA[persona]))
-        liste = maddeler(t)
-        baglam = BT.baglam(t, profil)
-        istem = f"BAĞLAM:\n{baglam}\n\nBu program için başvuru ön taslağını yaz."
+        t, liste, baglam, istem = _vaka(db, persona, tid)
         tahmini = (len(BT.SISTEM) + len(istem)) // 3  # Türkçe metinde kabaca 3 karakter/token
         print(f"[{n}] {persona} → {t.baslik} | istem ~{tahmini} token")
         if not canli:
@@ -94,5 +154,9 @@ if __name__ == "__main__":
         main(canli=True)
     elif "--kuru" in sys.argv:
         main(canli=False)
+    elif "--dok" in sys.argv:
+        dok()
+    elif "--elle" in sys.argv:
+        elle()
     else:
         print(__doc__)

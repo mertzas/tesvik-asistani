@@ -46,16 +46,41 @@ def _liste(deger) -> list[str]:
     return [deger] if isinstance(deger, str) else [str(x) for x in deger if str(x).strip()]
 
 
+def _cumle_mi(satir: str) -> bool:
+    """Menü/başlık satırı değil, cümle mi: en az 6 kelime VE kelimelerin çoğu küçük harfle başlıyor (menüdeki program
+    adları "YÖNDE - Yönderlik ve Değerlendirme Destek Programı" gibi başlık düzenindedir)."""
+    kelimeler = [k for k in satir.split() if k[:1].isalpha()]
+    if len(satir.split()) < 6 or not kelimeler:
+        return False
+    buyuk = sum(k[:1].isupper() for k in kelimeler)
+    return buyuk / len(kelimeler) < 0.6
+
+
+def _temiz_ozet(ozet: str | None) -> str:
+    """Kazınmış özetlerde site menüsü (program adları listesi, "+ - 0" düğmeleri) var (ölçüm 2026-10-08: kayıt 8, 9,
+    49). Yalnızca cümle satırları alınır; kalan yoksa özet bağlama girmez."""
+    return " ".join(s.strip() for s in (ozet or "").splitlines() if _cumle_mi(s))
+
+
+def _kisalt(metin: str, sinir: int) -> str:
+    """Sınırı aşan metni son cümle sonunda keser (ortadan kesik "1812 k" gibi parçalar modele gitmesin)."""
+    if len(metin) <= sinir:
+        return metin
+    kesik = metin[:sinir]
+    nokta = max(kesik.rfind(". "), kesik.rfind("; "))
+    return (kesik[:nokta + 1] if nokta > sinir // 2 else kesik.rsplit(" ", 1)[0]) + " […]"
+
+
 def baglam(t: Tesvik, profil: dict) -> str:
     satirlar = [f"PROGRAM: {t.baslik} ({t.kurum})"]
-    for etiket, deger in (("Özet", t.ozet), ("Tutar/oran", t.tesvil_tutari), ("Hesaplama", t.tutari_hesaplama_formulu),
-                          ("Başvuru yeri", t.basvuru_yeri), ("Başvuru dönemi", t.basvuru_suresi),
-                          ("Destek süresi", t.destek_verilme_suresi)):
+    for etiket, deger in (("Özet", _temiz_ozet(t.ozet)), ("Tutar/oran", t.tesvil_tutari),
+                          ("Hesaplama", t.tutari_hesaplama_formulu), ("Başvuru yeri", t.basvuru_yeri),
+                          ("Başvuru dönemi", t.basvuru_suresi), ("Destek süresi", t.destek_verilme_suresi)):
         if deger:
-            satirlar.append(f"{etiket}: {str(deger)[:600]}")
+            satirlar.append(f"{etiket}: {_kisalt(str(deger), 600)}")
     for etiket, deger in (("Şartlar", t.basvuru_sartlari), ("Gerekli belgeler", t.gerekli_belgeler)):
         if _liste(deger):
-            satirlar.append(f"{etiket}: " + "; ".join(_liste(deger))[:900])
+            satirlar.append(f"{etiket}: " + _kisalt("; ".join(_liste(deger)), 1200))
     profil_satirlari = [f"- {k}: {v}" for k, v in profil.items() if v not in (None, "", [], {})]
     satirlar.append("İŞLETME PROFİLİ:\n" + ("\n".join(profil_satirlari) or "(profil alanları boş)"))
     return "\n".join(satirlar)
@@ -126,6 +151,12 @@ def _self_test() -> int:
         ("taslak uyarı notuyla başlar", tam.startswith("> **Ön taslak")),
         ("belgeler bölümü listeden, işaretleriyle", "- [x] KOBİ olmak" in tam and "- [ ] Başvuru Formu" in tam),
         ("listesiz programda uyarı", "resmi sayfasından" in belgeler_bolumu([])),
+        ("menü satırları özetten atılır",
+         _temiz_ozet("Kapasite Geliştirme Destek Programı\nYÖNDE - Yönderlik ve Değerlendirme Destek Programı\n+\n0\n"
+                     "1812 ile girişimcilerin iş fikirlerini teşebbüse dönüştürmesi amaçlanır") ==
+         "1812 ile girişimcilerin iş fikirlerini teşebbüse dönüştürmesi amaçlanır"),
+        ("uzun metin cümle sonunda kesilir", _kisalt("Birinci cümle burada. İkinci cümle uzun " * 3, 70)
+         .endswith("burada. […]")),
     ]
     for ad, ok in kontroller:
         print(f"  {'OK ' if ok else 'HATA'} {ad}")

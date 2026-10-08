@@ -38,7 +38,7 @@ Son güncelleme: 2026-10-07 (Denetim 2 / Aşama F sonu). Oturuma bunu okuyarak b
 - **Denetim 2 / Aşama F** (tamamlandı): `docs/olcum/2026-10-07-denetim2/F_RAPOR.md`. KARAR: ödeme alan genel yayın için HAYIR; engeller KVKK alanları, SMTP, Stripe test modu, Linux dağıtım denemesi, üretim modeliyle ölçüm, veri boşlukları. Göç `g4b6c8d0e456` dev DB'ye UYGULANDI (yedek `tesvikler_oncesi_gocE.db.bak`). Dev sunucusu :8000 eski kodla çalışıyor, yeni kod için yeniden başlatılmalı. 14 yerel commit push edilmedi.
 - **Denetim 2 / Aşama G** (tamamlandı): sentetik profil denemesinden çıkan eşleştirme/arama/bütçe düzeltmeleri, rapor `docs/olcum/2026-10-07-denetim2/G_RAPOR.md`. Test 810. Tur4 veri düzeltmesi UYGULANDI (kayıt 8, 81, 7, 142 NACE kapsamı; yedek tesvikler_oncesi_tur4.db.bak).
 - Açık: 76 hayvancılık tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 10 kararsız akademik kayıt,
-  profil düğmeleri stilsiz, kayıt sonrası onboarding yok.
+  profil düğmeleri stilsiz, kayıt sonrası onboarding YAPILDI (dashboard.html kurulum sihirbazı: profil 404 ise açılır, 3 adım, profili kaydedip eşleşmeleri getirir).
 
 - **Başvuru yol haritası** (yeni): `app/basvuru_yolu.py` + `GET /api/tesvik/{id}/basvuru-yolu` + panelde "Bu desteği nasıl alırım?" düğmesi. Uygunluk→belge→başvuru kapısı→takip adımları; il müdürlüğü iletişimi yalnız doğrulanmış tablolardan. Test 817.
 

@@ -312,6 +312,28 @@
             display: none;
         }
 
+        /* Kayıt sonrası kurulum sihirbazı */
+        .onb-perde { position: fixed; inset: 0; background: rgba(0,0,0,.55); z-index: 1000; display: none; align-items: center; justify-content: center; padding: 16px; overflow-y: auto; }
+        .onb-kutu { background: white; border-radius: 14px; max-width: 560px; width: 100%; padding: 24px 22px; max-height: 94vh; overflow-y: auto; }
+        .onb-kutu h2 { font-size: 20px; margin-bottom: 6px; color: #0f4438; }
+        .onb-kutu p.alt { color: #666; font-size: 14px; margin-bottom: 16px; line-height: 1.5; }
+        .onb-ilerleme { height: 6px; background: #eee; border-radius: 3px; margin-bottom: 18px; }
+        .onb-ilerleme div { height: 6px; background: #0f4438; border-radius: 3px; transition: width .2s; }
+        .onb-secenek { display: block; width: 100%; text-align: left; padding: 14px; margin-bottom: 10px; border: 2px solid #e0e0e0; background: white; border-radius: 10px; cursor: pointer; font-size: 15px; }
+        .onb-secenek small { display: block; color: #777; font-size: 12px; margin-top: 3px; }
+        .onb-secenek:hover, .onb-secenek.secili { border-color: #0f4438; background: #f1f8f4; }
+        .onb-alan { margin-bottom: 12px; }
+        .onb-alan label.et { display: block; font-size: 13px; color: #666; margin-bottom: 4px; }
+        .onb-alan input, .onb-alan select { width: 100%; padding: 10px; border: 2px solid #e0e0e0; border-radius: 6px; font-size: 14px; }
+        .onb-hedefler label { display: block; padding: 8px 0; font-size: 14px; }
+        .onb-alt { display: flex; justify-content: space-between; gap: 10px; margin-top: 16px; }
+        .onb-alt button { padding: 10px 18px; border-radius: 6px; border: 0; cursor: pointer; font-weight: bold; font-size: 14px; }
+        .onb-ileri { background: #0f4438; color: white; }
+        .onb-geri { background: #eee; color: #333; }
+        .onb-atla { background: none !important; color: #888; font-weight: normal !important; text-decoration: underline; }
+        .onb-sonrasi { background: #f1f8f4; border: 1px solid #cfe3d8; border-radius: 10px; padding: 14px 16px; margin-bottom: 14px; font-size: 14px; line-height: 1.6; }
+        @media (max-width: 480px) { .onb-alt { flex-direction: column-reverse; } }
+
         .loading {
             text-align: center;
             padding: 20px;
@@ -614,6 +636,7 @@
         <div id="profil" class="section hidden">
             <div class="search-section">
                 <h2>Finansal Profil</h2>
+                <a href="#" onclick="onbAc(); return false;" style="font-size:13px;">🧭 Kurulum sihirbazını aç</a>
                 <p style="color:#666; margin: 10px 0 20px;">Sektörünüzü ve rakamlarınızı girin; size uygun teşvikleri ve stok/reklam bütçe önerinizi hesaplayalım.</p>
                 <form id="profil-form" style="display:grid; grid-template-columns: repeat(2, 1fr); gap: 15px;">
                     <div>
@@ -837,6 +860,16 @@
             </div>
         </div>
     </div>
+
+
+    <!-- Kayıt sonrası kurulum sihirbazı -->
+    <div class="onb-perde" id="onb-perde" role="dialog" aria-modal="true" aria-labelledby="onb-baslik">
+        <div class="onb-kutu">
+            <div class="onb-ilerleme"><div id="onb-bar" style="width:25%"></div></div>
+            <div id="onb-icerik"></div>
+        </div>
+    </div>
+    <datalist id="onb-iller"></datalist>
 
     <script>
         // Sabit "http://localhost:8000" yaziliydi: farkli bir port/domain'de
@@ -1444,11 +1477,143 @@
             };
         }
 
+
+        // ---- Kayıt sonrası kurulum sihirbazı (profil yoksa otomatik açılır) ----
+        const IL_LISTESI = ["Adana","Adıyaman","Afyonkarahisar","Ağrı","Aksaray","Amasya","Ankara","Antalya","Ardahan","Artvin","Aydın","Balıkesir","Bartın","Batman","Bayburt","Bilecik","Bingöl","Bitlis","Bolu","Burdur","Bursa","Çanakkale","Çankırı","Çorum","Denizli","Diyarbakır","Düzce","Edirne","Elazığ","Erzincan","Erzurum","Eskişehir","Gaziantep","Giresun","Gümüşhane","Hakkâri","Hatay","Iğdır","Isparta","İstanbul","İzmir","Kahramanmaraş","Karabük","Karaman","Kars","Kastamonu","Kayseri","Kilis","Kırıkkale","Kırklareli","Kırşehir","Kocaeli","Konya","Kütahya","Malatya","Manisa","Mardin","Mersin","Muğla","Muş","Nevşehir","Niğde","Ordu","Osmaniye","Rize","Sakarya","Samsun","Şanlıurfa","Siirt","Sinop","Sivas","Şırnak","Tekirdağ","Tokat","Trabzon","Tunceli","Uşak","Van","Yalova","Yozgat","Zonguldak"];
+        const ONB_HEDEFLER = {
+            ciftci: [["makine","Makine/ekipman alımı"],["sulama","Sulama sistemi"],["hayvan","Hayvancılık"],["organik","Organik tarım"],["yatirim","Yeni yatırım (sera, depo vb.)"]],
+            isletme: [["yatirim","Yatırım"],["ihracat","İhracat"],["arge","Ar-Ge / inovasyon"],["istihdam","Yeni personel istihdamı"]],
+            girisimci: [["arge","Ar-Ge / teknoloji geliştirme"],["yatirim","Şirket kurulumu / ilk yatırım"],["ihracat","İhracat"]],
+        };
+        let onb = { adim: 0, tip: null, v: {} };
+
+        function onbAnahtar() { return "onb_" + (currentOrg ? currentOrg.id : "x"); }
+        function onbAc() {
+            onb = { adim: 0, tip: null, v: {} };
+            document.getElementById("onb-iller").innerHTML = IL_LISTESI.map(i => `<option value="${i}">`).join("");
+            document.getElementById("onb-perde").style.display = "flex";
+            onbCiz();
+        }
+        function onbKapat(gecildi) {
+            document.getElementById("onb-perde").style.display = "none";
+            if (gecildi) { try { localStorage.setItem(onbAnahtar(), "1"); } catch (e) {} }
+        }
+        function onbAlanOku() {
+            document.querySelectorAll("#onb-icerik [data-k]").forEach(el => { onb.v[el.dataset.k] = el.value; });
+            const h = Array.from(document.querySelectorAll("#onb-icerik .onb-h:checked")).map(c => c.value);
+            if (document.querySelector("#onb-icerik .onb-h")) onb.v.hedefler = h;
+        }
+        function onbIleri() {
+            onbAlanOku();
+            if (onb.adim === 1 && !(onb.v.bolge || "").trim()) { document.getElementById("onb-hata").textContent = "Lütfen ilinizi seçin."; return; }
+            if (onb.adim === 1 && onb.v.bolge && !IL_LISTESI.includes(onb.v.bolge.trim())) { document.getElementById("onb-hata").textContent = "Listeden bir il seçin (ör. Konya)."; return; }
+            if (onb.adim === 2) { onbKaydet(); return; }
+            onb.adim++; onbCiz();
+        }
+        function onbGeri() { onbAlanOku(); onb.adim--; onbCiz(); }
+        function onbTipSec(t) { onb.tip = t; onb.adim = 1; onbCiz(); }
+
+        function onbCiz() {
+            const k = document.getElementById("onb-icerik");
+            document.getElementById("onb-bar").style.width = ((onb.adim + 1) * 33.3) + "%";
+            const v = onb.v;
+            const alt = (geri, ileriMetin) => `<div class="onb-alt"><div>${geri ? '<button type="button" class="onb-geri" onclick="onbGeri()">Geri</button>' : '<button type="button" class="onb-atla" onclick="onbKapat(true)">Şimdilik atla</button>'}</div>` +
+                `<button type="button" class="onb-ileri" onclick="onbIleri()">${ileriMetin}</button></div><div id="onb-hata" class="error" style="display:block; background:none; padding:6px 0; color:#c0392b;"></div>`;
+            if (onb.adim === 0) {
+                k.innerHTML = `<h2 id="onb-baslik">Hoş geldiniz 👋</h2>
+                    <p class="alt">Size uygun devlet desteklerini bulmak için 3 kısa soru soracağız (yaklaşık 1 dakika). Kime destek arıyorsunuz?</p>
+                    <button type="button" class="onb-secenek" onclick="onbTipSec('ciftci')">🌾 Çiftçiyim / tarımsal üretim yapıyorum<small>Arazi, sera, hayvancılık, makine, sulama destekleri</small></button>
+                    <button type="button" class="onb-secenek" onclick="onbTipSec('isletme')">🏭 Şirketim / işletmem var (KOBİ, esnaf, e-ticaret)<small>KOSGEB, ihracat, yatırım, istihdam, kredi kefaleti</small></button>
+                    <button type="button" class="onb-secenek" onclick="onbTipSec('girisimci')">💡 Girişim kuracağım / henüz şirketim yok<small>Girişimcilik, Ar-Ge ve kuruluş destekleri</small></button>
+                    <div class="onb-alt"><button type="button" class="onb-atla" onclick="onbKapat(true)">Şimdilik atla</button></div>`;
+                return;
+            }
+            const ilAlan = `<div class="onb-alan"><label class="et">Hangi ildesiniz?</label><input data-k="bolge" list="onb-iller" value="${escapeHtml(v.bolge || "")}" placeholder="Örn: Konya" autocomplete="off"></div>`;
+            if (onb.adim === 1) {
+                let alanlar = ilAlan;
+                if (onb.tip === "ciftci") {
+                    alanlar += `<div class="onb-alan"><label class="et">Arazi büyüklüğü (dekar) — yoksa boş bırakın</label><input data-k="arazi" type="number" min="0" value="${escapeHtml(v.arazi || "")}"></div>
+                        <div class="onb-alan"><label class="et">Ana ürün / faaliyet</label><input data-k="urun" list="p-urun-liste" value="${escapeHtml(v.urun || "")}" placeholder="Örn: çilek, buğday, süt"></div>`;
+                } else if (onb.tip === "isletme") {
+                    alanlar += `<div class="onb-alan"><label class="et">Faaliyet alanı</label><select data-k="sektor">${[["imalat","İmalat / üretim"],["perakende","Perakende / ticaret"],["e-ticaret","E-ticaret"],["hizmet","Hizmet"],["ihracat","İhracat"],["arge","Ar-Ge / yazılım"],["genel","Diğer"]].map(([a,b]) => `<option value="${a}" ${v.sektor === a ? "selected" : ""}>${b}</option>`).join("")}</select></div>
+                        <div class="onb-alan"><label class="et">Şirket türü</label><select data-k="sirket">${[["","Belirtmek istemiyorum"],["sahis","Şahıs işletmesi"],["limited","Limited şirket"],["anonim","Anonim şirket"],["kooperatif","Kooperatif"]].map(([a,b]) => `<option value="${a}" ${v.sirket === a ? "selected" : ""}>${b}</option>`).join("")}</select></div>
+                        <div class="onb-alan"><label class="et">Çalışan sayısı</label><input data-k="calisan" type="number" min="0" value="${escapeHtml(v.calisan || "")}"></div>
+                        <div class="onb-alan"><label class="et">Yıllık ciro (₺) — yaklaşık</label><input data-k="ciro" type="number" min="0" value="${escapeHtml(v.ciro || "")}"></div>`;
+                } else {
+                    alanlar += `<div class="onb-alan"><label class="et">Fikriniz hangi aşamada?</label><select data-k="trl">${[["","Belirtmek istemiyorum"],["1","Fikir / araştırma"],["4","Prototip / doğrulama"],["7","Ticarileşme aşamasında"]].map(([a,b]) => `<option value="${a}" ${v.trl === a ? "selected" : ""}>${b}</option>`).join("")}</select></div>`;
+                }
+                k.innerHTML = `<h2 id="onb-baslik">Temel bilgiler</h2><p class="alt">Eşleştirmenin doğruluğu bu bilgilere bağlı. Tam bilmediğiniz alanları boş bırakabilirsiniz.</p>${alanlar}${alt(true, "İleri")}`;
+                return;
+            }
+            const sec = v.hedefler || [];
+            k.innerHTML = `<h2 id="onb-baslik">Neye ihtiyacınız var?</h2><p class="alt">Birden fazla seçebilirsiniz; en uygun destekleri öne çıkaracağız.</p>
+                <div class="onb-hedefler">${ONB_HEDEFLER[onb.tip].map(([a,b]) => `<label><input type="checkbox" class="onb-h" value="${a}" ${sec.includes(a) ? "checked" : ""}> ${b}</label>`).join("")}</div>${alt(true, "Destekleri bul")}`;
+        }
+
+        async function onbKaydet() {
+            const v = onb.v;
+            const k = document.getElementById("onb-icerik");
+            k.innerHTML = '<div class="loading"><div class="spinner"></div><p class="alt">Profiliniz kaydediliyor ve destekler aranıyor...</p></div>';
+            const sayi = (x) => (x !== undefined && x !== "" ? Number(x) : null);
+            const govde = {
+                sektor: onb.tip === "ciftci" ? "tarim" : onb.tip === "girisimci" ? "arge" : (v.sektor || "genel"),
+                bolge: (v.bolge || "").trim() || null,
+                calisan_sayisi: sayi(v.calisan), yillik_ciro: sayi(v.ciro),
+                hedefler: (v.hedefler && v.hedefler.length) ? v.hedefler : null,
+                giderler: null,
+                arazi_buyuklugu_dekar: sayi(v.arazi), urun_turu: (v.urun || "").trim() || null,
+                tarim_kategori: null, ilk_yil_mi: onb.tip === "girisimci", nace_kodu: null,
+                sirket_turu: onb.tip === "girisimci" ? "yok" : (onb.tip === "isletme" ? (v.sirket || null) : null),
+                kurulus_tarihi: null, trl: sayi(v.trl), ozellikler: [],
+            };
+            try {
+                const res = await fetch(`${API_BASE}/profil`, {
+                    method: "PUT",
+                    headers: { "Authorization": `Bearer ${authToken}`, "Content-Type": "application/json" },
+                    body: JSON.stringify(govde)
+                });
+                if (!res.ok) {
+                    const err = await res.json();
+                    onb.adim = 1; onbCiz();
+                    document.getElementById("onb-hata").textContent = hataMetni(err);
+                    return;
+                }
+                onbKapat(true);
+                await loadFinancialProfile();
+                document.querySelector("[data-section=profil]").click();
+                await bulUygunDestekler();
+                onbSonrasiYaz();
+                document.getElementById("eslesme-section").scrollIntoView({ behavior: "smooth" });
+            } catch (e) {
+                onb.adim = 1; onbCiz();
+                document.getElementById("onb-hata").textContent = "Bağlantı hatası: " + e.message;
+            }
+        }
+
+        function onbSonrasiYaz() {
+            const bolum = document.getElementById("eslesme-section");
+            if (!bolum || document.getElementById("onb-sonrasi") || !bolum.querySelector(".result-card")) return;
+            const kutu = document.createElement("div");
+            kutu.id = "onb-sonrasi"; kutu.className = "onb-sonrasi";
+            kutu.innerHTML = `<strong>Sıradaki adımlar</strong><ol style="margin:6px 0 0 20px;">
+                <li>Aşağıda size uygun destekleri inceleyin; ilgilendiğiniz için <strong>"🧭 Bu desteği nasıl alırım?"</strong> düğmesine basın — belgeler, başvuru yeri ve adımlar çıkar.</li>
+                <li>Sorunuz varsa <a href="#" onclick="document.querySelector('[data-section=search]').click(); return false;">Arama</a> sekmesinden danışmana sorun.</li>
+                <li>E-postanızı doğrulayın (hesap güvenliği ve şifre sıfırlama için).</li></ol>
+                <a href="#" style="font-size:12px;" onclick="this.parentNode.remove(); return false;">Kapat</a>`;
+            bolum.insertBefore(kutu, bolum.querySelector("h2"));
+        }
+
+        function onbOtomatikAc() {
+            try { if (localStorage.getItem(onbAnahtar())) return; } catch (e) {}
+            onbAc();
+        }
+
         async function loadFinancialProfile() {
             try {
                 const res = await fetch(`${API_BASE}/profil`, {
                     headers: { "Authorization": `Bearer ${authToken}` }
                 });
+                if (res.status === 404) { onbOtomatikAc(); return; }
                 if (!res.ok) return;
                 const p = await res.json();
                 document.getElementById("p-sektor").value = p.sektor || "genel";

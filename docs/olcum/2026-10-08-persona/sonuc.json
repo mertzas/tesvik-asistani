@@ -54,7 +54,7 @@
     "baslik": "İhracat Destek Paketi",
     "skor": 0.7,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
@@ -65,7 +65,7 @@
     "baslik": "Küresel Rekabetçilik Destek Programı",
     "skor": 0.7,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
@@ -76,7 +76,7 @@
     "baslik": "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ",
     "skor": 0.7,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
@@ -87,7 +87,7 @@
     "baslik": "KÜRESEL REKABETÇİLİK DESTEK PAKETİ",
     "skor": 0.65,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
@@ -373,11 +373,13 @@
     "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
     "skor": 0.65,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
-    "cagri": []
+    "cagri": [
+     "9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün)"
+    ]
    },
    {
     "id": 77,
@@ -395,7 +397,7 @@
     "baslik": "DİJİTAL KEFALET DESTEK PROGRAMI",
     "skor": 0.3,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
@@ -501,22 +503,26 @@
     "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
     "skor": 0.4,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
-    "cagri": []
+    "cagri": [
+     "9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün)"
+    ]
    },
    {
     "id": 178,
     "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
     "skor": 0.35,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
-    "cagri": []
+    "cagri": [
+     "9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün)"
+    ]
    }
   ],
   "hazirlik": [
@@ -602,29 +608,33 @@
     "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
     "skor": 1.0,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
-    "cagri": []
+    "cagri": [
+     "9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün)"
+    ]
    },
    {
     "id": 179,
     "baslik": "Stratejik Hamle Programı (9903 sayılı Karar)",
     "skor": 1.0,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
-    "cagri": []
+    "cagri": [
+     "9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün)"
+    ]
    },
    {
     "id": 81,
     "baslik": "KAPASİTE GELİŞTİRME DESTEK PAKETİ",
     "skor": 0.95,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
@@ -635,11 +645,13 @@
     "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
     "skor": 0.95,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
-    "cagri": []
+    "cagri": [
+     "9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün)"
+    ]
    }
   ],
   "hazirlik": [
@@ -788,7 +800,7 @@
     "baslik": "İhracat Destek Paketi",
     "skor": 0.7,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
@@ -907,7 +919,7 @@
     "baslik": "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)",
     "skor": 0.6,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
@@ -929,7 +941,7 @@
     "baslik": "ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ",
     "skor": 0.6,
     "yer": false,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": false,
     "kaynak_resmi": true,
@@ -951,11 +963,13 @@
     "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
     "skor": 0.35,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
-    "cagri": []
+    "cagri": [
+     "9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün)"
+    ]
    }
   ],
   "hazirlik": [
@@ -1008,33 +1022,39 @@
     "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
     "skor": 1.0,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
-    "cagri": []
+    "cagri": [
+     "9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün)"
+    ]
    },
    {
     "id": 179,
     "baslik": "Stratejik Hamle Programı (9903 sayılı Karar)",
     "skor": 1.0,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
-    "cagri": []
+    "cagri": [
+     "9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün)"
+    ]
    },
    {
     "id": 178,
     "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
     "skor": 0.95,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
-    "cagri": []
+    "cagri": [
+     "9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün)"
+    ]
    },
    {
     "id": 7,
@@ -1054,7 +1074,7 @@
     "baslik": "İhracat Destek Paketi",
     "skor": 0.7,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
@@ -1144,29 +1164,33 @@
     "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
     "skor": 0.65,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
-    "cagri": []
+    "cagri": [
+     "9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün)"
+    ]
    },
    {
     "id": 178,
     "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
     "skor": 0.65,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
-    "cagri": []
+    "cagri": [
+     "9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün)"
+    ]
    },
    {
     "id": 116,
     "baslik": "KGF Kooperatif Destek Paketi",
     "skor": 0.6,
     "yer": false,
-    "sure": false,
+    "sure": true,
     "sart": false,
     "belge": false,
     "kaynak_resmi": true,

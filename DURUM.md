@@ -117,7 +117,7 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
   - Platform: `ikas-app` CI işi (test, tip, derleme, npm audit) + Dockerfile (standalone) + `docker-compose.ikas.yml`.
   - **Tur10 + Tur11 UYGULANDI** (2026-10-08, yedek `tesvikler_oncesi_tur10_11.db.bak`): 8 çağrı, 5 yeni 5973 kaydı;
     aktif 100 → 105, Ticaret Bakanlığı 3 → 8.
-  - **Tur12 HAZIR, ONAY BEKLİYOR** (`scripts/fix_veri_2026_10_08_eihracat_tur12.py`, self-test 11/11, kopyada prova):
+  - **Tur12 UYGULANDI 2026-10-08** (`scripts/fix_veri_2026_10_08_eihracat_tur12.py`, self-test 11/11, kopyada prova):
     5973 kayıtlarına genelgelerden başvuru yeri/süresi/belge listesi + ihracatçı birliği üyeliği şartı; 5986'dan 5 yeni
     kayıt (m.4 pazaryeri reklamı, m.5 e-ihracat tanıtımı [statü], m.6 fulfillment, m.8 çevrim içi mağaza [1 M USD],
     m.9 komisyon; 2026 limitleri resmi xlsx "ŞİRKETLER" sütunu); 162 resmi kaynakla düzeltme + şahıs için konsorsiyum
@@ -136,7 +136,7 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
   çipi ("Başvuru açık · 23 gün kaldı"); kart özeti `kart_ozeti` ile menü satırlarından arındırılıp 320 karakterde
   kesilir (boşsa özet gösterilmez, başka alana geri düşülmez). Bölüm değişince sayfa üste kayar.
   `tests/test_ozet.py` 8 test; `tests/test_turkce_metinler.py` ast tabanlı (CI 3.11 kırmızısının kökü; billing metinleri düzeltildi).
-  - **Tur13 HAZIR, ONAY BEKLİYOR** (`scripts/fix_veri_2026_10_08_ozet_tur13.py`, self-test 5/5, kopyada prova 15 → ikinci
+  - **Tur13 UYGULANDI 2026-10-08** (`scripts/fix_veri_2026_10_08_ozet_tur13.py`, self-test 5/5, kopyada prova 15 → ikinci
     koşu 0): özeti tamamen site menüsü olan 22 aktif kaydın 15'ine kaynak sayfanın "Programın Amacı / Ürün Açıklaması /
     Genel Bilgi" metni (`docs/olcum/2026-10-08-ozet/tur13_ozetler.json`, çıkarıcı `ozet_cikar.py`). Kalan 7 KGF sayfası
     (93, 116, 125, 153, 154, 171, 173) içeriği JS ile yüklüyor; özetsiz gösterilir.
@@ -151,8 +151,7 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
     `GET/PUT /api/hazirlik`; durum `financial_profiles.hazirlik` (JSON, göç `m0b2d4f6a012`).
   - Arayüz: "Uygun destekler"de yol haritası + katlanır hesaplayıcı; ana sayfada "E-ihracat geri ödemesi" ve
     "Uygunluk için ilk adım" kartları. Test: `tests/test_hazirlik.py` 9, `tests/test_eticaret_destek.py` 30.
-  - **ONAY BEKLİYOR:** gerçek DB'ye göç `m0b2d4f6a012` (`alembic upgrade head`; yedekle). Uygulanana kadar gerçek DB ile
-    çalışan sunucu profil sorgusunda "no such column financial_profiles.hazirlik" verir. Doğrulama kopyada yapıldı.
+  - Göç `m0b2d4f6a012` gerçek DB'ye UYGULANDI (2026-10-08; aşağıdaki sıra).
   - 10 persona uçtan uca deneme: `docs/olcum/2026-10-08-persona/RAPOR.md` (beklenen 22/25; tarih gösteriminde TÜBİTAK
     ön kayıt son günü vurgulanmıyor; tarım ve mikro hizmette ilk sıralarda yanlış öneri; 9 maddelik düzeltme listesi).
   - **Persona düzeltmeleri** (aynı gün, commit edilmedi; RAPOR.md "Düzeltme sonrası"): firmanın son günü
@@ -160,8 +159,15 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
     adım"a girer, eşleştirmede KOSGEB-büyük işletme / şahıs ürünü / 9903 şirketsiz / asgari ihracat USD engelleri, hedef
     kitle etiketi +0,3, Organik beyansız −0,2, 9903 hedef uyumsuz −0,3, skor 0 gizli; hazırlıkta ÇKS önceliği ve ilgili
     program eşiği. `tests/test_persona_duzeltmeleri.py` 19. Ölçüm: beklenen 23/25, eski 12 personada gerileme yok.
-  - **ONAY BEKLEYEN veri/göç sırası (gerçek DB):** yedek → `alembic upgrade head` (m0b2d4f6a012 + n1c3e5a7b234) →
-    tur12 → tur13 → tur14. Kopyada bu sırayla prova edildi (`scratchpad/prova_tam.db`).
+  - **Gerçek DB'ye UYGULANDI (2026-10-08, Mert onayı):** yedek `docs/olcum/2026-10-07-denetim2/tesvikler_oncesi_tur12_14_gocMN.db.bak`
+    → göç m0b2d4f6a012 + n1c3e5a7b234 (head) → tur12 (6 güncelleme, 5 yeni, 163 pasif) → tur13 (15 özet) → tur14 (2 ön
+    kayıt + 2 ihracat eşiği). İkinci koşular 0; aktif 109, Ticaret 12; kopyayla birebir. Commit b78a8d7, CI yeşil.
+  - **Tur15 başvuru süresi UYGULANDI** (2026-10-08, yedek `tesvikler_oncesi_tur15.db.bak`): 34 kayda başvuru süresi
+    (9903 ×5: Karar m.5/5 31/12/2030'a kadar müracaat, m.5/6 öncesi harcama kapsam dışı; KGF ×28: sayfalarda son tarih
+    yok → "bankadan teyit", KOSGEB'e bağlı 5 paket önce KOSGEB onayı, 170 son kullandırım 31.12.2028; KOSGEB 9) + 6 çağrı
+    (9903 kapanış 31.12.2030, KGF 142 = KOSGEB 2026-2). Alıntılar `docs/olcum/2026-10-08-basvuru-suresi/kanit.json`.
+    `/api/cagrilar` pencere dışında kapanan açık çağrıyı "yaklaşan"a koymaz. Boş başvuru süresi 54 → 20 (kalan: akademik
+    TÜBİTAK, KOSGEB 5/6); persona yol bilgisi 199/245 → 222/245.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

@@ -86,7 +86,12 @@ def yaklasan_cagrilar(gun: int = Query(90, ge=1, le=365), sadece_eslesen: bool =
     for c, t in sorgu.all():
         if izinli is not None and t.id not in izinli:
             continue
-        sonuc.append({**sozluk(c, bugun), "tesvik_id": t.id, "baslik": t.baslik, "kurum": t.kurum})
+        x = sozluk(c, bugun)
+        # Pencere dışında kapanan açık çağrı "yaklaşan" değildir (9903: müracaatlar 31.12.2030'a kadar; tur15).
+        # Kalanlar: penceredeki açılış (yaklaşan), penceredeki son gün, kapanışı duyurulmamış açık çağrı.
+        if x["durum"] != "yaklasan" and x["son_gun"] is not None and x["son_gun"] > sinir.isoformat():
+            continue
+        sonuc.append({**x, "tesvik_id": t.id, "baslik": t.baslik, "kurum": t.kurum})
     sonuc.sort(key=lambda x: (x["son_gun"] or "9999-12-31", x["baslik"]))
     return {"cagrilar": sonuc, "bugun": bugun.isoformat()}
 

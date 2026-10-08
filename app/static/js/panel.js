@@ -788,14 +788,19 @@
 
         let klAcikTaslak = null;
 
+        // data-arg: "sablon" (varsayılan; yapay zekâsız, rıza gerekmez) | "yapay_zeka" (Claude; PRO + açık rıza)
         async function taslakOlustur(el) {
             if (klAcikTesvik === null) return;
-            if (klAcikTaslak && !confirm("Mevcut taslağın yerine yenisi oluşturulsun mu? (Günlük sınırdan düşer.)")) return;
+            const yontem = el.dataset.arg === "yapay_zeka" ? "yapay_zeka" : "sablon";
+            const uyari = yontem === "yapay_zeka" ? " (Yapay zekâ taslağı günlük sınırdan düşer.)" : "";
+            if (klAcikTaslak && !confirm(`Mevcut taslağın yerine yenisi oluşturulsun mu?${uyari}`)) return;
             const mesaj = document.getElementById("kl-taslak-mesaj");
             el.disabled = true;
-            mesaj.innerHTML = '<div class="loading"><div class="spinner"></div></div><div class="bolum-aciklama">Taslak hazırlanıyor, bu 30-60 saniye sürebilir…</div>';
+            mesaj.innerHTML = yontem === "yapay_zeka"
+                ? '<div class="loading"><div class="spinner"></div></div><div class="bolum-aciklama">Taslak hazırlanıyor, bu 30-60 saniye sürebilir…</div>'
+                : '<div class="loading"><div class="spinner"></div></div>';
             try {
-                const res = await fetch(`${API_BASE}/basvuru-listesi/${klAcikTesvik}/taslak`, {
+                const res = await fetch(`${API_BASE}/basvuru-listesi/${klAcikTesvik}/taslak?yontem=${yontem}`, {
                     method: "POST", headers: { "Authorization": `Bearer ${authToken}` }
                 });
                 const d = await res.json();
@@ -1131,11 +1136,15 @@
                         <div class="kl-taslak-metin">${mdToHtml(d.taslak)}</div>
                         <div class="kl-taslak-alt yazdirma-gizle">Oluşturma: ${escapeHtml(new Date(d.taslak_tarihi).toLocaleString("tr-TR"))} ·
                             <button type="button" class="ikincil-btn" data-tikla="taslakKopyala">Metni kopyala</button>
-                            <button type="button" class="ikincil-btn" data-tikla="taslakOlustur">Yeniden oluştur</button></div>`
+                            <button type="button" class="ikincil-btn" data-tikla="taslakOlustur" data-arg="sablon">Yeniden oluştur</button>
+                            <button type="button" class="ikincil-btn" data-tikla="taslakOlustur" data-arg="yapay_zeka">Yapay zekâyla yaz</button></div>`
                     : `<p class="yazdirma-gizle">Profilinizden ve bu programın bilgilerinden, kurumun başvuru formuna aktarabileceğiniz
                             düzenlenebilir bir metin taslağı hazırlanır. Bilinmeyen yerler “[DOLDURUN]” olarak bırakılır, rakam uydurulmaz.
-                            Yapay zekâ (Anthropic, ABD) kullanılır ve açık rızanız gerekir; günde en çok 5 taslak.</p>
-                        <button type="button" class="birincil-btn yazdirma-gizle" data-tikla="taslakOlustur">Taslak oluştur</button>`}
+                            Taslak kayıtlı verilerinizden hazırlanır; bilgileriniz hiçbir dış servise gönderilmez.</p>
+                        <button type="button" class="birincil-btn yazdirma-gizle" data-tikla="taslakOlustur" data-arg="sablon">Taslak oluştur</button>
+                        <p class="bolum-aciklama yazdirma-gizle" style="margin-top:10px;">Daha akıcı metin isterseniz:
+                            <button type="button" class="ikincil-btn" data-tikla="taslakOlustur" data-arg="yapay_zeka">Yapay zekâyla yaz</button>
+                            (Anthropic, ABD; PRO plan ve açık rıza gerekir; günde en çok 5).</p>`}
                     <div id="kl-taslak-mesaj" class="yazdirma-gizle"></div>
                 </div>
                 <div class="kl-not">Liste, kaydımızdaki şart ve belge bilgisinden üretilir; kesin ve güncel koşullar için

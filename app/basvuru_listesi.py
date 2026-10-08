@@ -17,7 +17,7 @@ import hashlib
 import sys
 from datetime import datetime, timezone
 
-from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi import APIRouter, Depends, HTTPException, Query, status
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
@@ -170,10 +170,14 @@ def isaretleri_kaydet(tesvik_id: int, girdi: IsaretGirdi, current_org: Organizat
 
 
 @router.post("/{tesvik_id}/taslak")
-def taslak_olustur(tesvik_id: int, current_org: Organization = Depends(get_current_org),
-                   db: Session = Depends(get_db)):
-    """Yapay zekâ ile başvuru ön taslağı (app/basvuru_taslagi.py). Koşullar, ücretli çağrıdan ÖNCE sırayla denetlenir:
-    PRO+ plan, açık rıza (profil Anthropic'e/ABD'ye gider), kayıtlı profil, yapılandırılmış servis, günlük sınır."""
+def taslak_olustur(tesvik_id: int, yontem: str = Query("sablon", pattern="^(sablon|yapay_zeka)$"),
+                   current_org: Organization = Depends(get_current_org), db: Session = Depends(get_db)):
+    """Başvuru ön taslağı. yontem=sablon (varsayılan, 2026-10-08): yapay zekâsız, kayıtlı verilerden şablonla
+    (app/sablon_taslak.py); plan, rıza ve servis gerektirmez, veri yurt dışına çıkmaz. yontem=yapay_zeka: Claude ile
+    (app/basvuru_taslagi.py); koşullar ücretli çağrıdan ÖNCE sırayla denetlenir: PRO+ plan, açık rıza (profil
+    Anthropic'e/ABD'ye gider), kayıtlı profil, yapılandırılmış servis, günlük sınır."""
+    if yontem == "sablon":
+        return _sablon_taslak(tesvik_id, current_org, db)
     if current_org.plan == PlanType.FREE:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN,
                             detail="Başvuru taslağı PRO ve üzeri planlarda kullanılabilir.")
@@ -216,6 +220,43 @@ def taslak_olustur(tesvik_id: int, current_org: Organization = Depends(get_curre
     db.commit()
     db.refresh(kayit)
     return _yanit(t, kayit)
+
+
+def _profil_ve_ikas(db: Session, org: Organization) -> dict | None:
+    from app.ikas_veri_esleme import baglam_alanlari
+    from app.rag import profil_sozlugu
+    profil_row = db.query(FinancialProfile).filter(FinancialProfile.org_id == org.id).first()
+    if profil_row is None:
+        return None
+    profil = profil_sozlugu(profil_row)
+    ikas = db.query(IkasBaglanti).filter(IkasBaglanti.org_id == org.id, IkasBaglanti.baglanti_durumu == "bagli").first()
+    profil.update(baglam_alanlari(ikas.son_ozet if ikas else None))
+    return profil
+
+
+def _taslagi_kaydet(db: Session, org: Organization, t: Tesvik, kayit: BasvuruTakibi | None, metin: str,
+                    model: str) -> dict:
+    simdi = datetime.now(timezone.utc).replace(tzinfo=None)
+    if kayit is None:
+        kayit = BasvuruTakibi(org_id=org.id, tesvik_id=t.id, isaretli=[], olusturma=simdi)
+        db.add(kayit)
+    kayit.taslak, kayit.taslak_tarihi, kayit.taslak_model = metin, simdi, model[:60]
+    kayit.guncelleme = simdi
+    db.commit()
+    db.refresh(kayit)
+    return _yanit(t, kayit)
+
+
+def _sablon_taslak(tesvik_id: int, org: Organization, db: Session) -> dict:
+    from app import sablon_taslak
+    t = _tesvik(db, tesvik_id)
+    profil = _profil_ve_ikas(db, org)
+    if profil is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
+                            detail="Önce Profil & Öneriler bölümünden işletme profilinizi kaydedin.")
+    kayit = _kayit(db, org, tesvik_id)
+    metin = sablon_taslak.uret(t, profil, _yanit(t, kayit)["maddeler"], program_cagrilari(t))
+    return _taslagi_kaydet(db, org, t, kayit, metin, sablon_taslak.MODEL_ADI)
 
 
 @router.delete("/{tesvik_id}")

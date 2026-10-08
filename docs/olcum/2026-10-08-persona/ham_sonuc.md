@@ -6,14 +6,14 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 |---|---|---|---|---|---|---|---|
 | P1 İKAS şahıs e-ticaret (Denizli) | 25 | 2/3 | 0 | 0 | 0 | 25/25 | ✓ sirket |
 | P2 İKAS Ltd e-ihracatçı (İstanbul kozmetik) | 30 | 5/5 | 0 | 0 | 0 | 25/25 | ✓ dys_kaydi |
-| P3 Konya buğday çiftçisi (şahıs) | 25 | 2/2 | 1 | 1 | 0 | 23/25 | ✓ cks |
-| P4 Afyon büyükbaş hayvancı (şahıs) | 25 | 2/2 | 0 | 1 | 0 | 22/25 | ✓ cks |
+| P3 Konya buğday çiftçisi (şahıs) | 25 | 2/2 | 1 | 1 | 0 | 25/25 | ✓ cks |
+| P4 Afyon büyükbaş hayvancı (şahıs) | 25 | 2/2 | 0 | 1 | 0 | 25/25 | ✓ cks |
 | P5 Bursa metal imalat Ltd (45 kişi) | 30 | 4/4 | 0 | 0 | 0 | 25/25 | ✓ dys_kaydi |
-| P6 Ankara şirketsiz yapay zekâ girişimcisi | 2 | 1/1 | 0 | 0 | 0 | 9/10 | ✓ sirket |
+| P6 Ankara şirketsiz yapay zekâ girişimcisi | 2 | 1/1 | 0 | 0 | 0 | 10/10 | ✓ sirket |
 | P7 İzmir yazılım hizmet ihracatçısı Ltd | 30 | 2/2 | 0 | 0 | 0 | 25/25 | ✓ dys_kaydi |
-| P8 Hatay kadın girişimci kuaför (şahıs) | 23 | 2/3 | 0 | 1 | 0 | 23/25 | ✓ kosgeb_kaydi |
-| P9 Gaziantep gıda imalat A.Ş. (320 kişi) | 30 | 1/1 | 0 | 0 | 0 | 24/25 | ✓ dys_kaydi |
-| P10 Karaman tarım kooperatifi | 30 | 2/2 | 0 | 0 | 0 | 21/25 | ✓ cks |
+| P8 Hatay kadın girişimci kuaför (şahıs) | 23 | 2/3 | 0 | 1 | 0 | 24/25 | ✓ kosgeb_kaydi |
+| P9 Gaziantep gıda imalat A.Ş. (320 kişi) | 30 | 1/1 | 0 | 0 | 0 | 25/25 | ✓ dys_kaydi |
+| P10 Karaman tarım kooperatifi | 30 | 2/2 | 0 | 0 | 0 | 24/25 | ✓ cks |
 
 ## P1 İKAS şahıs e-ticaret (Denizli)
 
@@ -113,10 +113,10 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 | 160 | Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim) | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 94 | TARIM KEFALET DESTEK PROGRAMI | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 178 | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
-| 77 | Organik Tarım Destekleri | ✓ | ✓ | ✗ | ✗ | ✓ | doğrulanmış tarih yok |
+| 77 | Organik Tarım Destekleri | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 172 | DİJİTAL KEFALET DESTEK PROGRAMI | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 
-**Hazırlık adımları:** cks (2), kosgeb_kaydi (3), kep (2), yatirim_tesvik_belgesi (2)
+**Hazırlık adımları:** cks (3), kosgeb_kaydi (3), kep (2), yatirim_tesvik_belgesi (2)
 
 ## P4 Afyon büyükbaş hayvancı (şahıs)
 
@@ -143,13 +143,13 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 
 | id | Program | yer | süre | şart | belge | resmi kaynak | çağrı |
 |---|---|---|---|---|---|---|---|
-| 76 | Hayvancılık Destekleri | ✓ | ✓ | ✗ | ✓ | ✓ | doğrulanmış tarih yok |
+| 76 | Hayvancılık Destekleri | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 94 | TARIM KEFALET DESTEK PROGRAMI | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
-| 77 | Organik Tarım Destekleri | ✓ | ✓ | ✗ | ✗ | ✓ | doğrulanmış tarih yok |
+| 77 | Organik Tarım Destekleri | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 180 | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
 | 178 | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
 
-**Hazırlık adımları:** cks (1), kosgeb_kaydi (3), kep (2), yatirim_tesvik_belgesi (2)
+**Hazırlık adımları:** cks (2), kosgeb_kaydi (3), kep (2), yatirim_tesvik_belgesi (2)
 
 ## P5 Bursa metal imalat Ltd (45 kişi)
 
@@ -202,7 +202,7 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 | id | Program | yer | süre | şart | belge | resmi kaynak | çağrı |
 |---|---|---|---|---|---|---|---|
 | 174 | 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
-| 49 | 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) | ✓ | ✗ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
+| 49 | 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 
 **Hazırlık adımları:** sirket (19)
 
@@ -266,7 +266,7 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 |---|---|---|---|---|---|---|---|
 | 126 | İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II) | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 186 | İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kan | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
-| 169 | ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ | ✗ | ✓ | ✓ | ✗ | ✓ | doğrulanmış tarih yok |
+| 169 | ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ | ✓ | ✓ | ✓ | ✗ | ✓ | doğrulanmış tarih yok |
 | 185 | Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki  | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 178 | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
 
@@ -300,7 +300,7 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 | 180 | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
 | 179 | Stratejik Hamle Programı (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
 | 178 | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
-| 7 | İstihdamı Koruma Destek Programı | ✗ | ✓ | ✓ | ✓ | ✓ | 2026-2 dönemi: acik son gün 2026-10-31 (23 gün) |
+| 7 | İstihdamı Koruma Destek Programı | ✓ | ✓ | ✓ | ✓ | ✓ | 2026-2 dönemi: acik son gün 2026-10-31 (23 gün) |
 | 159 | İhracat Destek Paketi | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 
 **Hazırlık adımları:** dys_kaydi (11), birlik_uyeligi (10), on_onay (6), kep (6), yatirim_tesvik_belgesi (5), madrid_marka (3), kosgeb_kaydi (1)
@@ -333,7 +333,7 @@ Veritabanı: tur12 + tur13 + göç m0b2d4f6a012 uygulanmış KOPYA. Beklentiler 
 | 94 | TARIM KEFALET DESTEK PROGRAMI | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 | 180 | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
 | 178 | Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) | ✓ | ✓ | ✓ | ✓ | ✓ | 9903 teşvik belgesi müracaat süresi: acik son gün 2030-12-31 (1545 gün) |
-| 116 | KGF Kooperatif Destek Paketi | ✗ | ✓ | ✗ | ✗ | ✓ | doğrulanmış tarih yok |
-| 76 | Hayvancılık Destekleri | ✓ | ✓ | ✗ | ✓ | ✓ | doğrulanmış tarih yok |
+| 116 | KGF Kooperatif Destek Paketi | ✓ | ✓ | ✓ | ✗ | ✓ | doğrulanmış tarih yok |
+| 76 | Hayvancılık Destekleri | ✓ | ✓ | ✓ | ✓ | ✓ | doğrulanmış tarih yok |
 
-**Hazırlık adımları:** cks (3), kep (4), yatirim_tesvik_belgesi (4), kosgeb_kaydi (3)
+**Hazırlık adımları:** cks (5), kep (4), yatirim_tesvik_belgesi (4), kosgeb_kaydi (3)

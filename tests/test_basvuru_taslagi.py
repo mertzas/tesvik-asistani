@@ -46,7 +46,7 @@ def hazir(client, db_session):
 
 
 def _olustur(client, h):
-    return client.post("/api/basvuru-listesi/9/taslak", headers=h)
+    return client.post("/api/basvuru-listesi/9/taslak?yontem=yapay_zeka", headers=h)
 
 
 def test_taslak_uretilir_saklanir_ve_belgeler_listeden_gelir(client, db_session, hazir):
@@ -149,3 +149,38 @@ def test_self_test_bayragi():
     import re
     m = re.search(r"self-test: (\d+)/(\d+) geçti", r.stdout)
     assert r.returncode == 0 and m and m.group(1) == m.group(2) and int(m.group(2)) >= 8
+
+
+# ---------------------------------------------------------------- yapay zekâsız şablon taslak (varsayılan, 2026-10-08)
+def test_sablon_taslak_free_planda_rizasiz_ve_claude_cagirmadan(client, db_session, hazir):
+    h, org = hazir
+    org.plan, org.ai_yurtdisi_riza = PlanType.FREE, False
+    db_session.commit()
+    r = client.post("/api/basvuru-listesi/9/taslak", headers=h)          # yontem varsayılanı: sablon
+    assert r.status_code == 200, r.text
+    d = r.json()
+    assert CAGRILAR == [], "şablon taslak Anthropic'e gitmemeli"
+    assert d["taslak"].startswith("> **Ön taslak") and "yapay zekâ kullanılmadan" in d["taslak"]
+    assert "Bursa" in d["taslak"] and "NACE 25.62" in d["taslak"] and "32.000.000 TL" in d["taslak"]
+    assert "- [ ] Proje Başvuru Formu" in d["taslak"] and "Başvuru yeri: KBS" in d["taslak"]
+    kayit = db_session.query(BasvuruTakibi).filter(BasvuruTakibi.tesvik_id == 9).one()
+    assert kayit.taslak_model == "sablon-v1"
+
+
+def test_sablon_taslak_profilsiz_404_ve_yapay_zeka_kurallari_korunur(client, db_session, hazir):
+    h, org = hazir
+    db_session.query(FinancialProfile).delete()
+    db_session.commit()
+    assert client.post("/api/basvuru-listesi/9/taslak", headers=h).status_code == 404
+    org.ai_yurtdisi_riza = False
+    db_session.commit()
+    assert client.post("/api/basvuru-listesi/9/taslak?yontem=yapay_zeka", headers=h).status_code == 403
+    assert client.post("/api/basvuru-listesi/9/taslak?yontem=baska", headers=h).status_code == 422
+
+
+def test_sablon_taslak_self_test():
+    import re
+    r = subprocess.run([sys.executable, "-m", "app.sablon_taslak", "--self-test"], cwd=KOK, stdin=subprocess.DEVNULL,
+                       capture_output=True, text=True, encoding="utf-8")
+    m = re.search(r"self-test: (\d+)/(\d+) geçti", r.stdout)
+    assert r.returncode == 0 and m and m.group(1) == m.group(2) and int(m.group(2)) >= 7, r.stdout

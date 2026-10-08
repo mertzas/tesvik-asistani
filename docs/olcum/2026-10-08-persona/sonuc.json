@@ -387,8 +387,8 @@
     "skor": 0.5,
     "yer": true,
     "sure": true,
-    "sart": false,
-    "belge": false,
+    "sart": true,
+    "belge": true,
     "kaynak_resmi": true,
     "cagri": []
    },
@@ -407,7 +407,7 @@
   "hazirlik": [
    [
     "cks",
-    2
+    3
    ],
    [
     "kosgeb_kaydi",
@@ -471,7 +471,7 @@
     "skor": 1.0,
     "yer": true,
     "sure": true,
-    "sart": false,
+    "sart": true,
     "belge": true,
     "kaynak_resmi": true,
     "cagri": []
@@ -493,8 +493,8 @@
     "skor": 0.5,
     "yer": true,
     "sure": true,
-    "sart": false,
-    "belge": false,
+    "sart": true,
+    "belge": true,
     "kaynak_resmi": true,
     "cagri": []
    },
@@ -528,7 +528,7 @@
   "hazirlik": [
    [
     "cks",
-    1
+    2
    ],
    [
     "kosgeb_kaydi",
@@ -723,7 +723,7 @@
     "baslik": "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
     "skor": 0.7,
     "yer": true,
-    "sure": false,
+    "sure": true,
     "sart": true,
     "belge": true,
     "kaynak_resmi": true,
@@ -940,7 +940,7 @@
     "id": 169,
     "baslik": "ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ",
     "skor": 0.6,
-    "yer": false,
+    "yer": true,
     "sure": true,
     "sart": true,
     "belge": false,
@@ -1060,7 +1060,7 @@
     "id": 7,
     "baslik": "İstihdamı Koruma Destek Programı",
     "skor": 0.7,
-    "yer": false,
+    "yer": true,
     "sure": true,
     "sart": true,
     "belge": true,
@@ -1189,9 +1189,9 @@
     "id": 116,
     "baslik": "KGF Kooperatif Destek Paketi",
     "skor": 0.6,
-    "yer": false,
+    "yer": true,
     "sure": true,
-    "sart": false,
+    "sart": true,
     "belge": false,
     "kaynak_resmi": true,
     "cagri": []
@@ -1202,7 +1202,7 @@
     "skor": 0.6,
     "yer": true,
     "sure": true,
-    "sart": false,
+    "sart": true,
     "belge": true,
     "kaynak_resmi": true,
     "cagri": []
@@ -1211,7 +1211,7 @@
   "hazirlik": [
    [
     "cks",
-    3
+    5
    ],
    [
     "kep",

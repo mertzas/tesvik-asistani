@@ -39,3 +39,20 @@ def test_tur15_self_test():
                        stdin=subprocess.DEVNULL, capture_output=True, text=True, encoding="utf-8")
     m = re.search(r"self-test: (\d+)/(\d+) geçti", r.stdout)
     assert r.returncode == 0 and m and m.group(1) == m.group(2) and int(m.group(2)) >= 6, r.stdout
+
+
+def test_tur16_ve_kgf_izleme_self_test():
+    for komut, asgari in ((["scripts/fix_veri_2026_10_08_sart_yer_sure_tur16.py"], 6), (["-m", "app.kgf_izleme"], 6)):
+        r = subprocess.run([sys.executable, *komut, "--self-test"], cwd=KOK, stdin=subprocess.DEVNULL,
+                           capture_output=True, text=True, encoding="utf-8")
+        m = re.search(r"self-test: (\d+)/(\d+) geçti", r.stdout)
+        assert r.returncode == 0 and m and m.group(1) == m.group(2) and int(m.group(2)) >= asgari, r.stdout
+
+
+def test_kgf_izleme_zamanlayicida_ve_tabani_var():
+    import json
+    from app.kgf_izleme import TABAN
+    from app.scheduler import setup_scheduler
+    assert "kgf_izleme" in {j.id for j in setup_scheduler().get_jobs()}
+    taban = json.loads(TABAN.read_text(encoding="utf-8"))
+    assert len(taban) >= 28 and all(len(v["ozet"]) == 16 for v in taban.values())

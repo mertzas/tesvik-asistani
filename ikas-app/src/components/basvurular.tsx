@@ -1,6 +1,6 @@
 'use client';
 
-// Başvuru kontrol listesi + yapay zekâ ön taslağı (FastAPI app/basvuru_listesi.py). Yazdırma yok: İKAS paneli
+// Başvuru kontrol listesi + ön taslak (FastAPI app/basvuru_listesi.py; varsayılan yapay zekâsız şablon, app/sablon_taslak.py). Yazdırma yok: İKAS paneli
 // iframe'inde yazdırma güvenilir değil; taslak kopyalanır ya da tüm dosya Word olarak indirilir.
 
 import React, { useCallback, useEffect, useState } from 'react';
@@ -97,7 +97,7 @@ function ListeAyrinti({ tesvikId, onDegisti, onKaldirildi }: { tesvikId: number;
 
   async function taslakYaz() {
     setTaslakYaziliyor(true);
-    setMesaj({ tur: 'uyari', metin: 'Taslak yazılıyor; bu 20-60 saniye sürebilir.' });
+    setMesaj({ tur: 'uyari', metin: 'Taslak hazırlanıyor…' });
     try {
       setListe(await api.taslak(tesvikId));
       setMesaj({ tur: 'iyi', metin: 'Taslak hazır. [DOLDURUN] ile işaretli yerleri kendi bilgilerinizle tamamlayın.' });

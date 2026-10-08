@@ -101,6 +101,13 @@ def _job_tarim_bakanligi() -> str:
     return f"{result} kayıt"
 
 
+def _job_kgf_izleme() -> str:
+    """KGF ürün sayfaları: son tarih eklenen ya da metni değişen paketleri WARNING olarak günlüğe yazar (tabanı
+    güncellemez; inceleme sonrası `python -m app.kgf_izleme --taban-yaz`)."""
+    from app import kgf_izleme
+    return kgf_izleme.run()
+
+
 def setup_scheduler() -> BackgroundScheduler:
     """Tüm jobları tanımla ve scheduler'ı döndür. main.py'de startup event'inde başlatılır."""
     # coalesce: kacirilan tetiklemeler (uyku/yeniden baslatma) tek seferde kosar;
@@ -162,5 +169,15 @@ def setup_scheduler() -> BackgroundScheduler:
         replace_existing=True,
     )
 
-    logger.info("✅ Scheduler kuruldu: 6 job tanımlandı")
+    # KGF ürün sayfası izleme — ayda 6. gün 03:00 (başvuru süresi metinleri "son tarih belirtilmemiş" varsayımına
+    # dayanıyor; KGF tarih eklerse haber verir, tur15 2026-10-08)
+    scheduler.add_job(
+        _run_job,
+        CronTrigger(day=6, hour=3, minute=0, second=0),
+        id="kgf_izleme",
+        args=("kgf_izleme", _job_kgf_izleme),
+        replace_existing=True,
+    )
+
+    logger.info("✅ Scheduler kuruldu: 7 job tanımlandı")
     return scheduler

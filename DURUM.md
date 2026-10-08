@@ -168,6 +168,27 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
     (9903 kapanış 31.12.2030, KGF 142 = KOSGEB 2026-2). Alıntılar `docs/olcum/2026-10-08-basvuru-suresi/kanit.json`.
     `/api/cagrilar` pencere dışında kapanan açık çağrıyı "yaklaşan"a koymaz. Boş başvuru süresi 54 → 20 (kalan: akademik
     TÜBİTAK, KOSGEB 5/6); persona yol bilgisi 199/245 → 222/245.
+  - **Tur16 UYGULANDI 2026-10-08** (yedek `tesvikler_oncesi_tur16.db.bak`; `scripts/fix_veri_2026_10_08_sart_yer_sure_tur16.py`, self-test 6/6, kopyada prova
+    50 alan + 3 çağrı → ikinci koşu 0): tarım şartları/belgeleri (76: Hayvancılık Desteklemeleri Uygulama Tebliği 2024/23
+    m.4, m.6; 77/79: Bitkisel Üretim Tebliği 2024/39 m.3, m.7/3-4, m.8, m.15, m.17), KGF kredi veren bankalar (13),
+    KGF 116/149 şartları, KOSGEB 4-6 yer/süre, TÜBİTAK 18 kayıt süre/yer + 3 çağrı (1001 2026-2, 2224-C Lindau, 4006
+    13. dönem). Alıntılar `docs/olcum/2026-10-08-tur16/kanit.json` (36 kaynak, hepsi metinde birebir denetlendi).
+    Sonrası: boş başvuru süresi 0, persona yol bilgisi 242/245. Bulgular: 26 ve 50 (2223-D UK/Newton) yalnız 2016 dönemi
+    → muhtemelen sona ermiş, pasif kararı bekliyor; 79 Sera açıklaması "kurulum hibesi" diyor, tutarı dekar bazlı.
+  - **KGF sayfa izleme** (`app/kgf_izleme.py`, self-test 6/6): ürün bölümü özeti + tarih ifadeleri tabanla
+    (`app/data/kgf_taban.json`, 31 sayfa) karşılaştırılır; zamanlayıcıda ayda bir (6'sı 03:00), bulgular WARNING.
+    İnceleme sonrası `python -m app.kgf_izleme --taban-yaz`.
+  - **Tur17 UYGULANDI** (2026-10-08, yedek `tesvikler_oncesi_tur17.db.bak`; `scripts/fix_veri_2026_10_08_kalanlar_tur17.py`,
+    kanıt `docs/olcum/2026-10-08-tur17/kanit.json`): işletmeye önerilebilen TÜBİTAK 1515/1702/1719/1832 şart-belge-yer
+    (elle seçilmiş tam cümle), 31 akademik kayda yalnız başvuru sistemi adresi (otomatik şart/belge çıkarımı gürültülüydü,
+    yazılmadı), KOSGEB 6 belge/7 yer, 79 Sera özet-açıklaması tutarla uyumlu (eski "kurulum hibesi" metni nota),
+    26 ve 50 pasif (yalnız 2016 dönemi), 4 TYBS çağrısı (27.10.2026). Aktif 107; boş: şart 12, belge 42, yer 6, süre 0.
+- **Yapay zekâsız şablon taslak** (2026-10-08): `app/sablon_taslak.py` (self-test 9/9) aynı 5 bölüm + belgeler; profil,
+  program amacı (yalnız tam cümle), çağrı/ön kayıt tarihi, ön onay uyarısı, tutar/formül, İKAS toplamları kaynağıyla,
+  hedef + program türüne göre göstergeler; bilinmeyen her yer [DOLDURUN]. `POST /api/basvuru-listesi/{id}/taslak`
+  varsayılanı `yontem=sablon` (plan/rıza/servis gerekmez, veri dışarı çıkmaz, `taslak_model=sablon-v1`);
+  `yontem=yapay_zeka` eski Claude yolu (PRO + rıza + günlük sınır). Panelde "Taslak oluştur" şablon, "Yapay zekâyla yaz"
+  isteğe bağlı; İKAS kabuğu varsayılanı şablon.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

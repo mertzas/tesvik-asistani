@@ -316,10 +316,14 @@ def test_taslak_istemi_ikas_ozetini_icerir(client, db_session, monkeypatch):
     db_session.add(Tesvik(id=7, kurum="Ticaret Bakanlığı", baslik="E-ihracat", ozet="o", detay="d", aktif_mi=True,
                           kaynak_url="https://t/7"))
     db_session.commit()
-    assert client.post("/api/basvuru-listesi/7/taslak", headers=h).status_code == 200
+    assert client.post("/api/basvuru-listesi/7/taslak?yontem=yapay_zeka", headers=h).status_code == 200
     assert "e-ticaret satışları (İKAS mağaza verisi, son 12 ay)" in istemler[0]
     assert "yurt dışına teslim edilen siparişler (İKAS)" in istemler[0]
     assert "demo@example.com" not in istemler[0], "e-posta modele gitmemeli"
+    # Varsayılan yapay zekâsız şablon da İKAS toplamlarını kaynağıyla taslağa yazar (ve modele gitmez).
+    taslak = client.post("/api/basvuru-listesi/7/taslak", headers=h).json()["taslak"]
+    assert len(istemler) == 1 and "E-ticaret mağaza kayıtlarına göre" in taslak
+    assert "yurt dışına teslim edilen siparişler (İKAS)" in taslak and "demo@example.com" not in taslak
 
 
 # ------------------------------------------------------------------------------------------- göç / self-test

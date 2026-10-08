@@ -168,6 +168,12 @@ def uygunluk_engeli(t, profil) -> str | None:
     if _ARACI_KURULUS.search(metin):
         return "aracı/ekosistem kuruluşu programı"
     tur = getattr(profil, "sirket_turu", None)
+    # Kayıtta açık şirket türü listesi varsa (ör. 5973 sayılı İhracat Destekleri Kararı m.2: "şirket" = TTK md.124
+    # şirketleri + kooperatifler; şahıs işletmesi yok) bilinen tür listede değilse program kapalıdır (2026-10-08).
+    izinli = (t.uygunluk_kriterleri or {}).get("sirket_turleri")
+    if tur and izinli and tur not in izinli:
+        return (f"yalnızca {', '.join(SIRKET_TURLERI.get(x, x) for x in izinli)} başvurabilir "
+                f"({SIRKET_TURLERI.get(tur, tur)} kapsam dışı)")
     if tur == "yok":
         if t.kurum in _ISLETME_GEREKTIREN_KURUMLAR:
             return f"{t.kurum} programları kayıtlı bir işletme gerektirir"

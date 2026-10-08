@@ -7,3 +7,5 @@ next-env.d.ts
 .env.local
 # Kök .gitignore'daki Python kalıbı "lib/" bu klasörü de dışlıyordu (kaynak kodu).
 !src/lib/
+# Kök .gitignore .dockerignore'u da dışlıyor; bu olmadan "COPY . ." yereldeki node_modules'u imaja taşır.
+!.dockerignore

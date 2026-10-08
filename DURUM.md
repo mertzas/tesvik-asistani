@@ -101,6 +101,20 @@ Son güncelleme: 2026-10-08 (İKAS App Store hazırlığı + yol haritası). Otu
   kurulum kimliği `getAuthorizedApp` (me yedek), yenileme `api` alanına, `IKAS_UYGULAMA_URL`.
   Doğrulama: self-test 15/15, `tests/test_ikas_uygulama.py` 36, kabuk `npm test` 9/9 + tsc + build; tarayıcıda kurulum →
   imzalı açılış → panel, iframe içinde AppBridge (`scripts/ikas_appbridge_deneme.py`, self-test 4/4), 375 px.
+- **Veri izi + platform** (2026-10-08): yol haritası beş ize genişletildi (`docs/IKAS_YOL_HARITASI.md` §3A).
+  - Çağrı modeli: tablo `tesvik_cagrilari` (göç `l9a1c3e5f901`; dev sunucusu create_all ile önce açmıştı → şema aynı,
+    yedek `tesvikler_oncesi_gocL.db.bak`, `alembic stamp head`). `app/cagrilar.py` (`--self-test` 6/6), `GET /api/cagrilar`,
+    kontrol listesi ve İKAS panelinde "son başvuru / kalan gün" (web paneli + Next kabuğu).
+  - `init_db` artık Alembic'in yönettiği DB'de create_all ÇALIŞTIRMAZ; göç geride ise CRITICAL uyarı (`tests/test_init_db.py`).
+  - Eşleştirme: `uygunluk_kriterleri.sirket_turleri` (kayıtta varsa şahıs/şirketsiz elenir; `tests/test_sirket_turu_engeli.py`).
+  - **ONAY BEKLEYEN veri betikleri** (kopya DB'de prova edildi, idempotent):
+    `scripts/fix_veri_2026_10_08_cagrilar_tur10.py` (8 çağrı: TÜBİTAK 1501/1507 2026-2 açık, KOSGEB İstihdamı Koruma
+    2026-2 açık, diğerleri kapanmış; tarihler resmi sayfa/çağrı PDF takviminden) ve
+    `scripts/fix_veri_2026_10_08_ihracat_5973_tur11.py` (5973 sayılı Karar m.3/4/6/11/12, 2026 üst limitleri limit
+    tablosundan hücre hücre; belge listesi/başvuru süresi genelge okunamadığı için boş).
+  - Açık: 5986 ve kayıt 163'ün şirket türü şartı doğrulanmadı; 5973 fuar (m.7) 2026 limiti; genelgeler (JS ile
+    yükleniyor, curl/WebFetch okuyamadı).
+  - Platform: `ikas-app` CI işi (test, tip, derleme, npm audit) + Dockerfile (standalone) + `docker-compose.ikas.yml`.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

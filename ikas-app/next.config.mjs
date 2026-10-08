@@ -24,6 +24,8 @@ const CSP = [
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // Docker imajı yalnız .next/standalone + static ile çalışır (ikas-app/Dockerfile).
+  output: 'standalone',
   poweredByHeader: false,
   reactStrictMode: true,
   async headers() {

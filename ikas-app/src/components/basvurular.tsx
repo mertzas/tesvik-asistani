@@ -5,7 +5,7 @@
 
 import React, { useCallback, useEffect, useState } from 'react';
 import { api, type Liste, type ListeOzeti } from '@/lib/api';
-import { tarihSaat } from '@/lib/bicim';
+import { cagriOzeti, tarih, tarihSaat } from '@/lib/bicim';
 import { Bilgi, Dugme, Kart, Yukleniyor } from './ui';
 
 const TUR_ETIKETI = { sart: 'Şart', belge: 'Belge', basvuru: 'Başvuru' } as const;
@@ -147,6 +147,33 @@ function ListeAyrinti({ tesvikId, onDegisti, onKaldirildi }: { tesvikId: number;
       </Kart>
 
       {mesaj && <Bilgi tur={mesaj.tur}>{mesaj.metin}</Bilgi>}
+
+      <Kart>
+        <h3 className="font-bold">Başvuru dönemleri</h3>
+        {liste.cagrilar.length === 0 ? (
+          <p className="mt-1 text-sm text-soluk">
+            Bu program için doğrulanmış başvuru dönemi kaydımız yok; tarihleri kurumun resmi sayfasından kontrol edin.
+          </p>
+        ) : (
+          <ul className="mt-2 flex flex-col gap-2">
+            {liste.cagrilar.map((c) => (
+              <li key={c.id} className="text-sm">
+                <span className={`font-semibold ${c.durum === 'acik' ? 'text-iyi' : c.durum === 'kapandi' ? 'text-soluk' : ''}`}>
+                  {c.ad}: {cagriOzeti(c)}
+                </span>
+                {c.notlar && <span className="block text-soluk">{c.notlar}</span>}
+                <span className="block text-xs text-soluk">
+                  Kaynak:{' '}
+                  <a href={c.kaynak_url} target="_blank" rel="noopener noreferrer" className="underline">
+                    resmi duyuru
+                  </a>{' '}
+                  · doğrulama {tarih(c.dogrulama_tarihi)}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </Kart>
 
       <Kart>
         <div className="flex flex-wrap items-center justify-between gap-2">

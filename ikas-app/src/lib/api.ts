@@ -52,8 +52,22 @@ export type Durum = {
   mock_mode: boolean;
 };
 
+/** Dönemsel başvuru çağrısı (app/cagrilar.py). */
+export type Cagri = {
+  id: number;
+  ad: string;
+  acilis: string | null;
+  kapanis: string | null;
+  kaynak_url: string;
+  dogrulama_tarihi: string;
+  notlar: string | null;
+  durum: 'acik' | 'yaklasan' | 'kapandi' | 'tarihsiz';
+  durum_metni: string;
+  kalan_gun: number | null;
+};
+
 /** skor: 0-1 arası eşleşme oranı (app/matching.py). */
-export type Eslesme = { id: number; kurum: string; baslik: string; skor: number; gerekce: string[] };
+export type Eslesme = { id: number; kurum: string; baslik: string; skor: number; gerekce: string[]; cagri: Cagri | null };
 
 export type PanelYaniti = {
   magaza: string | null;
@@ -83,6 +97,7 @@ export type Liste = {
   takipte: boolean;
   taslak: string | null;
   taslak_tarihi: string | null;
+  cagrilar: Cagri[];
   uyari: string | null;
 };
 

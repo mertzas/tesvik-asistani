@@ -1,5 +1,6 @@
 import os
 from pathlib import Path
+import logging
 from datetime import datetime, timezone
 from enum import Enum
 from uuid import uuid4
@@ -244,6 +245,9 @@ class Tesvik(Base):
     # bu ayrim hic yapilmamisti; kullaniciya kapanmis bir programi "hala
     # basvurabilirsiniz" gibi sunmamak icin eklendi.
     nace_kayitlari = relationship("TesvikNace", cascade="all, delete-orphan", lazy="select")
+    # Dönemsel başvuru çağrıları (app/cagrilar.py); kapanışa göre sıralı.
+    cagrilar = relationship("TesvikCagrisi", cascade="all, delete-orphan", lazy="select",
+                            order_by="TesvikCagrisi.kapanis")
     # NACE kapsam kararı (LLM): satırı olmayan YATAY/BELIRSIZ kararları da kalıcı olsun
     # ve her koşuda tekrar API'ye gidilmesin diye. "YATAY" + güven >= eşik -> atlanır.
     nace_kapsam_turu = Column(String(20), nullable=True)     # YATAY | SEKTOR_KISITLI | BELIRSIZ
@@ -417,6 +421,24 @@ class TesvikNace(Base):
     haric_mi = Column(Boolean, nullable=False, default=False, server_default="0")
 
 
+class TesvikCagrisi(Base):
+    """Bir programın dönemsel başvuru çağrısı (2026-10-08). Program (Tesvik) sürekli bir destek türüdür; KOSGEB,
+    TÜBİTAK ve kalkınma ajanslarında başvuru ise "2026/2. dönem" gibi tarihli çağrılarla açılır. Tarih hatırlatıcısı ve
+    "son başvuru" gösterimi bu tablodan üretilir (app/cagrilar.py). Her satır resmi duyurudan doğrulanır: kaynak_url ve
+    dogrulama_tarihi zorunlu; tahmini tarih yazılmaz (bilinmeyen kapanış NULL kalır)."""
+    __tablename__ = "tesvik_cagrilari"
+    __table_args__ = (UniqueConstraint("tesvik_id", "ad", name="uq_tesvik_cagri_ad"),)
+
+    id = Column(Integer, primary_key=True)
+    tesvik_id = Column(Integer, ForeignKey("tesvikler.id", ondelete="CASCADE"), nullable=False, index=True)
+    ad = Column(String(200), nullable=False)          # "2026/2. Başvuru Dönemi", "2026 Yılı Mali Destek Programı"
+    acilis = Column(Date, nullable=True)
+    kapanis = Column(Date, nullable=True, index=True)  # son başvuru günü (dahil)
+    kaynak_url = Column(String, nullable=False)
+    dogrulama_tarihi = Column(Date, nullable=False)
+    notlar = Column(Text, nullable=True)              # "Kapanış saati 18:00", "ön başvuru zorunlu" gibi duyurudaki ayrıntı
+
+
 class BasvuruTakibi(Base):
     """Kullanıcının bir teşvik için başvuru kontrol listesindeki işaretleri (app/basvuru_listesi.py).
 
@@ -535,8 +557,39 @@ class HalFiyati(Base):
     hacim_kg = Column(Float, nullable=True)
 
 
-def init_db():
-    Base.metadata.create_all(bind=engine)
+_gunluk = logging.getLogger(__name__)
+
+
+def alembic_durumu(motor=None) -> tuple[str | None, str | None]:
+    """(veritabanındaki göç sürümü, kod deposundaki head). Sürüm tablosu yoksa ilki None."""
+    from alembic.config import Config
+    from alembic.script import ScriptDirectory
+    from sqlalchemy import inspect, text
+    motor = motor or engine
+    with motor.connect() as baglanti:
+        mevcut = (baglanti.execute(text("SELECT version_num FROM alembic_version")).scalar()
+                  if inspect(baglanti).has_table("alembic_version") else None)
+    cfg = Config(str(PROJE_KOKU / "alembic.ini"))
+    cfg.set_main_option("script_location", str(PROJE_KOKU / "migrations"))
+    return mevcut, ScriptDirectory.from_config(cfg).get_current_head()
+
+
+def init_db(motor=None) -> str:
+    """Göç geçmişi olmayan (boş/yerel) veritabanında tabloları oluşturur. Alembic'in yönettiği veritabanında
+    create_all ÇALIŞTIRILMAZ (2026-10-08): yeni tabloyu göçten önce açıp "alembic upgrade"i bozuyor, var olan tabloya
+    yeni sütunu ise ekleyemediği için eksik göçü gizliyordu. Sürüm geride ise yüksek seviyeli uyarı yazılır.
+    Dönüş: "olusturuldu" | "guncel" | "goc_gerekli"."""
+    motor = motor or engine
+    mevcut, head = alembic_durumu(motor)
+    if mevcut is None:
+        Base.metadata.create_all(bind=motor)
+        return "olusturuldu"
+    if mevcut != head:
+        _gunluk.critical(
+            "Veritabanı göçü geride (mevcut %s, kod %s): 'python -m alembic upgrade head' çalıştırın (önce yedek alın).",
+            mevcut, head)
+        return "goc_gerekli"
+    return "guncel"
 
 
 def get_db():

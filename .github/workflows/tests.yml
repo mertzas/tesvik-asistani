@@ -52,6 +52,27 @@ jobs:
       - name: Flake8 (hata siniflari)
         run: flake8 app/ tests/ scripts/ --select=E9,F63,F7,F82,F401,F811 --show-source
 
+  # İKAS Next.js kabuğu (ikas-app/): birim testleri (node --test, TypeScript tip silme Node 24'te varsayılan),
+  # tip denetimi, üretim derlemesi ve üretim bağımlılıklarında yüksek seviyeli açık denetimi.
+  ikas-app:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ikas-app
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: ikas-app/package-lock.json
+      - run: npm ci
+      - run: npm test
+      - run: npm run typecheck
+      - run: npm run build
+      - name: npm audit (uretim bagimliliklari)
+        run: npm audit --omit=dev --audit-level=high
+
   security:
     runs-on: ubuntu-latest
     steps:
@@ -79,3 +100,9 @@ jobs:
           tags: tesvik-asistani:ci
           cache-from: type=gha
           cache-to: type=gha,mode=max
+      - name: Build IKAS app image
+        uses: docker/build-push-action@v5
+        with:
+          context: ikas-app
+          push: false
+          tags: tesvik-asistani-ikas-app:ci

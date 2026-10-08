@@ -64,6 +64,7 @@ from app.budget import hesapla as butce_hesapla
 from app.cilek_panel import router as cilek_router
 from app.ikas_panel import oauth_router as ikas_oauth_router, router as ikas_router
 from app.basvuru_listesi import router as basvuru_listesi_router
+from app.cagrilar import router as cagrilar_router
 from app.hesap_belirtec import belirtec_uret, belirtec_tuket, SIFIRLAMA, DOGRULAMA
 from app.email import EmailService
 from app.schemas import SifreUnuttum, SifreSifirla, BelirtecGirdi
@@ -247,6 +248,7 @@ app.include_router(cilek_router)
 app.include_router(ikas_router)
 app.include_router(ikas_oauth_router)
 app.include_router(basvuru_listesi_router)
+app.include_router(cagrilar_router)
 
 STATIC_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "static")
 

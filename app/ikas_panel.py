@@ -44,6 +44,7 @@ from app.ikas_integration import (
     _mock_mu,
 )
 from app.ikas_veri_esleme import profili_ikas_verisiyle_guncelle
+from app.cagrilar import program_cagrilari
 from app.matching import esles
 from app.budget import hesapla as butce_hesapla
 
@@ -504,6 +505,8 @@ def ikas_gomulu_panel(
                 "baslik": e.tesvik.baslik,
                 "skor": e.skor,
                 "gerekce": e.gerekce,
+                # En güncel çağrı (açık/yaklaşan); yoksa None
+                "cagri": next(iter(program_cagrilari(e.tesvik, kapanmis_en_cok=0)), None),
             }
             for e in eslesmeler
         ] if eslesmeler else [],

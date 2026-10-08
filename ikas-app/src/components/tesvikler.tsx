@@ -2,6 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import { api, type PanelYaniti } from '@/lib/api';
+import { cagriOzeti } from '@/lib/bicim';
 import { Bilgi, Dugme, Kart, Yukleniyor } from './ui';
 
 export function TesviklerSekmesi({ onListeAc }: { onListeAc: (tesvikId: number) => void }) {
@@ -42,6 +43,9 @@ export function TesviklerSekmesi({ onListeAc }: { onListeAc: (tesvikId: number) 
               Uygunluk %{Math.round(e.skor * 100)}
             </span>
           </div>
+          <p className={`text-sm font-semibold ${e.cagri?.durum === 'acik' ? 'text-iyi' : 'text-soluk'}`}>
+            {e.cagri ? cagriOzeti(e.cagri) : 'Başvuru tarihi duyurulmadı'}
+          </p>
           {e.gerekce.length > 0 && (
             <ul className="list-disc space-y-0.5 pl-5 text-sm text-soluk">
               {e.gerekce.slice(0, 3).map((g) => (

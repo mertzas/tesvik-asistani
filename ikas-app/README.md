@@ -63,6 +63,9 @@ işaretleme, FREE planda taslak reddi, iframe içinde AppBridge girişi, 375 px 
 
 ## Canlıya alma (öneri)
 
+Docker: `docker compose -f docker-compose.prod.yml -f docker-compose.ikas.yml up -d --build` (imaj: `ikas-app/Dockerfile`,
+Next `standalone` çıktısı, root olmayan kullanıcı, salt-okunur dosya sistemi). CI her push'ta imajı derler.
+
 Kabuğu ayrı alt alan adında yayınlayın; nginx `/api/` isteklerini doğrudan FastAPI'ye verir (istemci IP'si hız
 sınırları için korunur), gerisini Next.js'e:
 

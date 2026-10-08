@@ -117,6 +117,34 @@ sipariş oluşturma (webhook), kaldırma ve yeniden kurma. Sonuçlar `docs/olcum
 İKAS incelemesine gönderim, geri bildirim düzeltmeleri, Türkiye bölgesinde yayın. İlk 90 gün ölçütleri: kurulum
 sayısı, kurulumdan panele dönüş oranı, eşleşme sonrası kontrol listesi açma ve taslak üretme oranı.
 
+## 3A. Beş iz ve 90 günlük ölçülebilir hedefler (2026-10-08 eki)
+
+Yukarıdaki fazlar yalnız yayın izini kapsıyor. Ölçüm (2026-10-08): aktif 100 kaydın **0'ında** bitiş tarihi,
+22'sinde sayısal tutar tavanı vardı; e-ticaret satıcısına en uygun Ticaret Bakanlığı kaydı 3, KOSGEB 9 idi. Ürünün
+asıl darboğazı veri; harita beş paralel ize genişletildi.
+
+| İz | Hedef (90 gün) | 2026-10-08 durumu |
+|---|---|---|
+| **Yayın** | İKAS incelemesi geçilmiş; 2 geliştirme mağazasında gerçek API raporu | Kod hazır (Next.js kabuğu, AppBridge, CI + Docker); Partner hesabı bekliyor |
+| **Veri** | Dönemsel programların %80'inde doğrulanmış çağrı tarihi; 5973/5986 kalemlerinin e-ticaret satıcısına uyanları eksiksiz; sayısal tutar 22 → 70; temiz özet 51 → 100 | Çağrı tablosu (`tesvik_cagrilari`) kuruldu; 8 doğrulanmış çağrı (tur10) ve 5973'ten 5 yeni destek (tur11) **onay bekliyor** |
+| **Ürün** | Word çıktısı, belge yükleme, 5986 harcama defteri, çağrı hatırlatıcısı | Kontrol listesi ve İKAS panelinde "son başvuru / kalan gün" gösterimi hazır |
+| **Yapay zekâ** | Batch ile veri çıkarma hattı (Citations + structured outputs), araç kullanan danışman, prompt caching, eval seti CI'da | Kredi yüklenince; her toplu iş maliyet tahmini + onayla |
+| **Ticari** | Faturalama kararı, mali müşavir kanalı denemesi, gelir paylaşımı anlaşması | İKAS'a sorulacak (Faz 0.5) |
+
+**Ana ölçüt:** taslağı oluşturulmuş başvuru / kurulum. **Vazgeçme ölçütleri (90. gün, öneri):** 50'den az kurulum ya
+da kurulumların %30'undan azı panele dönüyorsa konumlandırma yeniden ele alınır; taslak üreten kullanıcı %10'un
+altındaysa evrak özelliği sadeleştirilir. **Sunumdan çıkarılacak vaat:** "başvuru tarihi bildirimi", çağrı verisi
+yeterli kapsama ulaşana kadar.
+
+**Diğer API'ler (öncelik sırasıyla):** TCMB EVDS (sipariş tarihli kurla döviz satışlarını TL'ye çevirme; ücretsiz
+anahtar), transactional e-posta (Postmark / SES / Resend; SMTP sorunu), İKAS ürün API'si (`variant.hsCode` → GTİP),
+ön muhasebe (Paraşüt vb.; 5986 gider faturaları), pazaryerleri ve reklam API'leri (yurt dışı satış ve reklam
+harcaması belgeleri), kargo/ETGB (önce araştırma).
+
+**Anthropic API ilkesi:** model önerir, deterministik kod denetler, veri değişikliğini insan onaylar. Çevrimdışı işler
+Batch API ile (%50), tekrarlayan bağlam prompt caching ile; kullanıcıya dönük her çağrı açık rıza ve kuruluş başına
+sınır arkasında.
+
 ## 4. Ürün yol haritası (yayın sonrası)
 
 1. **GTİP ile ihracat sınıflaması:** sipariş satırındaki `variant.hsCode` (SDK şemasında var) → ihracat ürün grubu,

@@ -22,6 +22,7 @@ from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
 from app import basvuru_taslagi
+from app.cagrilar import program_cagrilari
 from app.auth import get_current_org
 from app.models import (BasvuruTakibi, FinancialProfile, IkasBaglanti, Organization, PlanType, Tesvik, get_db,
                         settings)
@@ -85,6 +86,8 @@ def _yanit(t: Tesvik, kayit: BasvuruTakibi | None) -> dict:
         "guncelleme": kayit.guncelleme.isoformat() if kayit and kayit.guncelleme else None,
         "taslak": kayit.taslak if kayit else None,
         "taslak_tarihi": kayit.taslak_tarihi.isoformat() if kayit and kayit.taslak_tarihi else None,
+        # Dönemsel çağrılar (app/cagrilar.py): açık/yaklaşan önce; yoksa boş liste ("tarih duyurulmadı").
+        "cagrilar": program_cagrilari(t),
         "uyari": None if liste else ("Bu destek için şart/belge bilgisi henüz sistemde yok; kurumun resmi "
                                      "sayfasından kontrol edin."),
     }

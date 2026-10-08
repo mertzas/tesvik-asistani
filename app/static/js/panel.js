@@ -816,6 +816,30 @@
             }
         }
 
+        // Dönemsel başvuru çağrıları (app/cagrilar.py); yalnız resmi duyurudan doğrulanmış tarihler.
+        function cagriTarihi(iso) {
+            if (!iso) return "";
+            const [y, a, g] = iso.split("-").map(Number);
+            return new Date(y, a - 1, g).toLocaleDateString("tr-TR", { day: "numeric", month: "long", year: "numeric" });
+        }
+        function cagriOzeti(c) {
+            if (c.durum === "acik") return c.kapanis ? `Son başvuru ${cagriTarihi(c.kapanis)} (${c.kalan_gun === 0 ? "bugün" : c.kalan_gun + " gün"})`
+                                                    : "Başvuruya açık (son tarih duyurulmadı)";
+            if (c.durum === "yaklasan") return `${cagriTarihi(c.acilis)} tarihinde açılıyor (${c.kalan_gun} gün)`;
+            if (c.durum === "kapandi") return `Kapandı (${cagriTarihi(c.kapanis)})`;
+            return "Başvuru tarihi duyurulmadı";
+        }
+        function cagrilarHtml(cagrilar) {
+            if (!cagrilar.length) return `<div class="kl-cagri">Başvuru dönemi: doğrulanmış tarih kaydımız yok; kurumun resmi sayfasından kontrol edin.</div>`;
+            return `<div class="kl-cagri"><strong>Başvuru dönemleri</strong><ul>${cagrilar.map(c => {
+                const url = guvenliUrl(c.kaynak_url);
+                return `<li${c.durum === "acik" ? ' class="acik"' : ""}>${escapeHtml(c.ad)}: ${escapeHtml(cagriOzeti(c))}`
+                    + (c.notlar ? ` · ${escapeHtml(c.notlar)}` : "")
+                    + (url ? ` · <a href="${url}" target="_blank" rel="noopener noreferrer">resmi duyuru</a>` : "")  // guvenliUrl kaçışlı döner
+                    + `</li>`;
+            }).join("")}</ul></div>`;
+        }
+
         function kontrolListesiCiz(d) {
             klAcikTesvik = d.tesvik.id;
             klAcikTaslak = d.taslak || null;
@@ -844,6 +868,7 @@
                     </div>
                 </div>
                 <div class="ilerleme"><span id="kl-cubuk" style="width:${klYuzde(d)}%"></span></div>
+                ${cagrilarHtml(d.cagrilar || [])}
                 ${d.uyari ? `<div class="onizleme-notu">${escapeHtml(d.uyari)}</div>` : gruplar}
                 <div class="kl-taslak">
                     <h4>Başvuru ön taslağı</h4>

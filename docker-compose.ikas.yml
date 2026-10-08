@@ -1,0 +1,23 @@
+# İKAS Next.js kabuğu (ikas-app/) için ek compose dosyası. Ana dosyayla birlikte kullanılır:
+#   docker compose -f docker-compose.prod.yml -f docker-compose.ikas.yml up -d --build
+# Kabuk ana dosyadaki varsayılan ağa katılır; nginx ikas.ALAN alan adını buna, /api/'yi doğrudan "web"e yönlendirir
+# (örnek sunucu bloğu: ikas-app/README.md "Canlıya alma"). BACKEND_URL bilerek boş: /api/ nginx'te ayrılır, böylece
+# FastAPI istemci IP'sini nginx'ten alır (hız sınırları).
+# FastAPI .env: IKAS_UYGULAMA_URL=https://ikas.ALAN, IKAS_CLIENT_ID/SECRET, IKAS_MOCK_MODE=false.
+
+services:
+  ikas_app:
+    build:
+      context: ./ikas-app
+      args:
+        BACKEND_URL: ""
+        IKAS_CERCEVE_KAYNAKLARI: ${IKAS_CERCEVE_KAYNAKLARI:-https://*.myikas.com}
+    restart: unless-stopped
+    expose:
+      - "3000"
+    read_only: true
+    tmpfs:
+      - /tmp
+      - /app/.next/cache
+    depends_on:
+      - web

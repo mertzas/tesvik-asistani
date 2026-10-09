@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-09 (resmi form şablonları + İKAS sihirbazı). Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-10 (tur22 + profil uygunluk alanları / tur23). Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -247,8 +247,8 @@ Son güncelleme: 2026-10-09 (resmi form şablonları + İKAS sihirbazı). Oturum
   alıntıların hepsi doğrulandı. Doğru %49, desteksiz %34, belirsiz %15, yanlış 11 + eskimiş 2; %27'si yanlış türde
   (şart/belge/adım/kural/bilgi karışık); 177 zorunlu madde eksik; 6 program genel sayfaya bağlı; 4 çağrı çelişkisi.
   Kullanıcı geri bildirimi: taslak neye hazırlanıyor belirsiz, kutular karışık. Düzeltme planı onay bekliyor.
-- **Kontrol listesi, taslak, kaynak, paket modu, TKDK/ajans turu** (2026-10-10; kod + test hazır, GERÇEK DB'YE UYGULANMADI,
-  kopya DB'de denendi; sıra: `alembic upgrade head` → tur19 → tur20 → tur21 `--uygula`, her biri yedekli):
+- **Kontrol listesi, taslak, kaynak, paket modu, TKDK/ajans turu** (2026-10-10; gerçek DB'ye UYGULANDI ve push edildi;
+  sıra: `alembic upgrade head` → tur19 → tur20 → tur21 `--uygula`, her biri yedekli):
   - Göç `p3e5a7c9d456`: tesvikler.kontrol_listesi, basvuru_bicimi; basvuru_takipleri.uygunluk_cevaplari.
   - Kontrol listesi dört bölüm/dört etkileşim (şart Evet/Hayır/Emin değilim; belge, adım kutu; kural/bilgi kutusuz),
     her madde resmî alıntı ya da 'kurumdan teyit edin'; web + İKAS + Word. Taslak 'Ne için / Nereye / Ne değildir',
@@ -262,6 +262,18 @@ Son güncelleme: 2026-10-09 (resmi form şablonları + İKAS sihirbazı). Oturum
   - tur21: 49 yeni program (TKDK IPARD III 101/103/302 + 18 kalkınma ajansı), her alıntı betikçe indirilip doğrulandı
     (49/49); 31'i aktif; il kısıtlı. İSTKA, İZKA, BEBKA, Trakya, GMKA, İpekyolu: 2026 işletme programı yok.
     100-ajan kopyada 18/18 %100, gürültü %4,1. Test 1086.
+  - tur22 (UYGULANDI): 1512 BiGG pasif — TÜBİTAK 1612 sayfası BiGG 1. aşamasını 2026-2028'de 1812 çerçevesine
+    bağlıyor (`docs/olcum/2026-10-10-tur22/tubitak_1612_en.txt`); şirketsiz girişimciye artık 1812 (49) önce geliyor.
+    201 BAKKA Fizibilite, 231/232/235 OKA: rehberlerin 'Kimler başvurabilir' bölümünden alıntılı şart maddeleri.
+- **Profil uygunluk alanları + tur23** (2026-10-10, UYGULANDI): profil formunda isteğe bağlı kurucu/%50 hissedar yaşı,
+  başka şirkette ya da şahıs işletmesinde ortaklık, sertifikalar (organik / iyi tarım / hiçbiri). Göç `q4f6b8d0e567`
+  (yedek `tesvikler_oncesi_gocQ.db.bak`). Eşleştirme `app/matching._kisisel_engel`: kayıtta yapılandırılmış şart VE
+  profilde bilgi varsa eler; biri yoksa elemez. Bu alanlar danışmana (Anthropic) gönderilmez, KVKK tablosu güncel.
+  tur23 (yedek `tesvikler_oncesi_tur23.db.bak`): 122 yaş ≤ 29, 112 yaş ≤ 35 (KGF sayfaları), 49 ortaklık yasağı
+  (TÜBİTAK 1812 sayfası; borsa/kitle fonlaması payları hariç), 77 organik ürün sertifikası (8859 sayılı Karar m.2/7-c;
+  PDF taranmış, kanıt sayfa görüntüsü + çevriyazı + SHA-256: `docs/olcum/2026-10-10-tur23/`), 153 TURYIB zorunlu
+  hedef kitle genç. tur23 maddeleri `ekleyen: tur23` işaretli; tur19 yeniden koşulsa da korunur (tüm turlar 0 değişiklik).
+  Test 1109 geçti / 1 atlandı.
 - **B2B API planı** (`docs/API_URUN_PLANI.md`, kod yok, onay bekliyor): durumsuz `/v1` uçları (eşleşme, uygunluk,
   hazırlık, çağrılar, program, e-ihracat, şablon taslak), API anahtarı + kapsam + kota + ölçüm, hedef müşteri sırası,
   kill criteria, 6 adımlı uygulama planı.

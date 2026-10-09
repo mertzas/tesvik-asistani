@@ -19,6 +19,14 @@ OZELLIK_ETIKETLERI: dict[str, str] = {
     "kooperatif": "Kooperatif",
 }
 
+# Edinilmesi zaman alan sertifikalar (hızla tamamlanabilen kayıtlar app/hazirlik.py'dedir). "hicbiri": kullanıcı
+# hiçbirine sahip olmadığını açıkça söyledi; boş liste/None ise bilinmiyor sayılır (eleme yapılmaz).
+SERTIFIKA_ETIKETLERI: dict[str, str] = {
+    "organik_sertifika": "Organik ürün sertifikası",
+    "iyi_tarim_sertifikasi": "İyi tarım uygulamaları sertifikası",
+    "hicbiri": "Bunların hiçbiri yok",
+}
+
 _TUTAR_NITELIGI_TURU = {
     "hibe": "hibe",
     "kredi_kefalet": "kefalet",

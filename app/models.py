@@ -488,6 +488,10 @@ class FinancialProfile(Base):
     sirket_turu = Column(String(20), nullable=True)   # yok | sahis | limited | anonim | kooperatif
     kurulus_tarihi = Column(Date, nullable=True)
     trl = Column(Integer, nullable=True)              # Teknoloji hazırlık seviyesi 1-9
+    # Uygunluk alanları (2026-10-10, isteğe bağlı; boşsa eleme yapılmaz — app/matching.uygunluk_engeli):
+    kurucu_yasi = Column(Integer, nullable=True)      # işletme sahibi / en az %50 hissedarın yaşı
+    baska_sirkette_ortak = Column(Boolean, nullable=True)  # başka bir şirkette ortaklık (BiGG/1812 yasağı)
+    sertifikalar = Column(JSON, nullable=True)        # ["organik_sertifika", "iyi_tarim_sertifikasi"] ya da ["hicbiri"]
     ozellikler = Column(JSON, nullable=True)  # hedef kitle etiketleri: ["kadin_girisimci", "savunma_sanayii", ...] (bkz. app/match_adapter.py)
     hazirlik = Column(JSON, nullable=True)  # {"durumlar": {"birlik_uyeligi": true, ...}, "eihracat": {...}} (bkz. app/hazirlik.py)
     ilk_yil_mi = Column(Boolean, nullable=True)  # arazi hazirligi/sera/ekipman gibi tek seferlik kurulus giderleri var mi

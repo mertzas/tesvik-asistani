@@ -1467,6 +1467,11 @@
                 document.querySelectorAll(".p-ozellik").forEach(cb => {
                     cb.checked = (p.ozellikler || []).includes(cb.value);
                 });
+                document.getElementById("p-kurucu-yasi").value = p.kurucu_yasi ?? "";
+                document.getElementById("p-ortaklik").value = p.baska_sirkette_ortak === true ? "evet" : p.baska_sirkette_ortak === false ? "hayir" : "";
+                document.querySelectorAll(".p-sertifika").forEach(cb => {
+                    cb.checked = (p.sertifikalar || []).includes(cb.value);
+                });
                 document.getElementById("p-kurulus-gideri").value = p.giderler?.kurulus ?? "";
                 document.querySelectorAll(".p-hedef").forEach(cb => {
                     cb.checked = (p.hedefler || []).includes(cb.value);
@@ -1561,6 +1566,12 @@
                 kurulus_tarihi: document.getElementById("p-kurulus").value || null,
                 trl: document.getElementById("p-trl").value ? Number(document.getElementById("p-trl").value) : null,
                 ozellikler: Array.from(document.querySelectorAll(".p-ozellik:checked")).map(cb => cb.value),
+                kurucu_yasi: document.getElementById("p-kurucu-yasi").value ? Number(document.getElementById("p-kurucu-yasi").value) : null,
+                baska_sirkette_ortak: { evet: true, hayir: false }[document.getElementById("p-ortaklik").value] ?? null,
+                sertifikalar: (() => {
+                    const s = Array.from(document.querySelectorAll(".p-sertifika:checked")).map(cb => cb.value);
+                    return s.length ? s : null;
+                })(),
             };
         }
 
@@ -2034,6 +2045,13 @@
             ozetEylem: (el) => ozetEylem(el),
             kontrolListesiAc: (el) => kontrolListesiAc(el.dataset.arg),
             klKaydet: (el) => klKaydet(el),
+            // "Hiçbiri yok" ile bir sertifika aynı anda seçilemez (sunucu da reddeder; app/schemas.py).
+            sertifikaSecimi: (el) => {
+                if (!el.checked) return;
+                document.querySelectorAll(".p-sertifika").forEach(cb => {
+                    if (cb !== el && (el.value === "hicbiri" || cb.value === "hicbiri")) cb.checked = false;
+                });
+            },
             kontrolListesiYazdir: () => kontrolListesiYazdir(),
             kontrolListesiWord: (el) => kontrolListesiWord(el),
             kontrolListesiKaldir: (el) => kontrolListesiKaldir(el.dataset.arg),

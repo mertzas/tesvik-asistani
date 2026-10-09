@@ -948,6 +948,29 @@
                         <p style="font-size:12px; color:#999; margin-top:4px;">Bazı destekler yalnızca belirli kitlelere (kadın/genç girişimci, savunma tedarikçisi vb.) verilir. Uygun olanları işaretlemezseniz bu destekler size gösterilmez.</p>
                     </div>
                     <div>
+                        <label for="p-kurucu-yasi" style="font-size:13px; color:#666;">İşletme sahibinin yaşı (isteğe bağlı)</label>
+                        <input type="number" id="p-kurucu-yasi" min="15" max="100" inputmode="numeric" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                        <p style="font-size:12px; color:#999; margin-top:4px;">Şirketse en az %50 hisseye sahip ortağın yaşı. Bazı krediler 29 ya da 35 yaşına kadar olanlara açıktır.</p>
+                    </div>
+                    <div>
+                        <label for="p-ortaklik" style="font-size:13px; color:#666;">Başka bir şirkette ortaklığınız ya da şahıs işletmeniz var mı?</label>
+                        <select id="p-ortaklik" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
+                            <option value="">Belirtmek istemiyorum</option>
+                            <option value="hayir">Hayır</option>
+                            <option value="evet">Evet</option>
+                        </select>
+                        <p style="font-size:12px; color:#999; margin-top:4px;">TÜBİTAK BiGG Yatırım (1812): hızlandırma programına kabul tarihinde bir sermaye şirketinin ya da şahıs işletmesinin ortağı olan kişi başvuramaz. Borsadaki hisseler ve kitle fonlamasıyla alınan paylar sayılmaz.</p>
+                    </div>
+                    <div style="grid-column: 1 / -1;">
+                        <label style="font-size:13px; color:#666;">Sahip olduğunuz sertifikalar (isteğe bağlı)</label>
+                        <div style="display:flex; gap:15px; margin-top:8px; flex-wrap:wrap;">
+                            <label><input type="checkbox" value="organik_sertifika" class="p-sertifika" data-degisim="sertifikaSecimi"> Organik ürün sertifikası (organik arıcılık dahil)</label>
+                            <label><input type="checkbox" value="iyi_tarim_sertifikasi" class="p-sertifika" data-degisim="sertifikaSecimi"> İyi tarım uygulamaları sertifikası</label>
+                            <label><input type="checkbox" value="hicbiri" class="p-sertifika" data-degisim="sertifikaSecimi"> Bunların hiçbiri yok</label>
+                        </div>
+                        <p style="font-size:12px; color:#999; margin-top:4px;">Boş bırakırsanız sertifika isteyen destekler de gösterilir; "hiçbiri yok" derseniz organik tarım desteği gibi sertifika şartlı destekler gizlenir.</p>
+                    </div>
+                    <div>
                         <label style="font-size:13px; color:#666;">Aylık/Yıllık Stok Gideri (₺)</label>
                         <input type="number" id="p-stok" min="0" style="width:100%; padding:10px; border:2px solid #e0e0e0; border-radius:5px;">
                     </div>

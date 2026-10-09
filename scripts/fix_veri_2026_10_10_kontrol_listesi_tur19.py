@@ -140,6 +140,9 @@ def uygula(db, veri: dict, dry_run: bool = True) -> int:
         # Maddelerin kaynağı programın GÜNCEL resmî kaynağıdır: tur20 genel sayfaları değiştirdi; denetim anındaki adrese
         # dönmek tekrar çalıştırmada tur20'yi geri alırdı.
         liste = [{**x, "kaynak_url": t.kaynak_url} for x in liste]
+        # Sonraki turların eklediği maddeler ("ekleyen" işaretli, ör. tur23 profil şartları) kendi kaynaklarıyla korunur.
+        sonraki = [x for x in (t.kontrol_listesi or []) if x.get("ekleyen")]
+        liste = [x for x in sonraki if x["tur"] == "sart"] + liste + [x for x in sonraki if x["tur"] != "sart"]
         if t.kontrol_listesi == liste and t.basvuru_bicimi == bicim:
             continue
         c = Counter(x["tur"] for x in liste)

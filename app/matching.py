@@ -202,6 +202,25 @@ def _sart_metni(t) -> str:
     return " ".join([t.hedef_kitle or "", *(t.basvuru_sartlari or [])])
 
 
+def _kisisel_engel(t, profil, tur: str | None) -> str | None:
+    """Kurucu/ortaklık/sertifika şartları (2026-10-10). Kayıtta yapılandırılmış şart ve profilde bilgi varsa karar
+    verir; ikisinden biri yoksa elemez. Şartlar resmî metinden alıntıyla girilir
+    (scripts/fix_veri_2026_10_10_profil_sart_tur23.py)."""
+    k = t.uygunluk_kriterleri or {}
+    yas, yas_siniri = getattr(profil, "kurucu_yasi", None), k.get("kurucu_yasi_max")
+    if yas is not None and yas_siniri is not None and yas > yas_siniri:
+        return f"işletme sahibi ya da en az %50 hissedarı en çok {yas_siniri} yaşında olmalı (beyan: {yas})"
+    # 1812 BiGG Yatırım hızlandırma aşaması: şirketi olmayan girişimci, kabul tarihinde başka şirkette ortak olamaz.
+    if k.get("ortaklik_yasagi_sirketsiz") and tur == "yok" and getattr(profil, "baska_sirkette_ortak", None) is True:
+        return "başvuru tarihinde başka bir şirkette ortak olmamak şartı (beyan: ortaklığınız var)"
+    sertifikalar = getattr(profil, "sertifikalar", None) or []
+    gerekli = k.get("gerekli_sertifika")
+    if gerekli and sertifikalar and gerekli not in sertifikalar:
+        from app.match_adapter import SERTIFIKA_ETIKETLERI
+        return f"{SERTIFIKA_ETIKETLERI.get(gerekli, gerekli)} gerekir (beyan: yok)"
+    return None
+
+
 def uygunluk_engeli(t, profil) -> str | None:
     """Kayit metnine gore programin bu profile kapali olma sebebi; None = engel yok.
 
@@ -227,6 +246,9 @@ def uygunluk_engeli(t, profil) -> str | None:
     ihracat = _ihracat_engeli(t, profil)
     if ihracat:
         return ihracat
+    kisisel = _kisisel_engel(t, profil, tur)
+    if kisisel:
+        return kisisel
     # Kayıtta açık şirket türü listesi varsa (ör. 5973 sayılı İhracat Destekleri Kararı m.2: "şirket" = TTK md.124
     # şirketleri + kooperatifler; şahıs işletmesi yok) bilinen tür listede değilse program kapalıdır (2026-10-08).
     izinli = (t.uygunluk_kriterleri or {}).get("sirket_turleri")

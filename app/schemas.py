@@ -225,6 +225,23 @@ class FinancialProfileCreate(BaseModel):
         description="yok (henüz kurulmadı) | sahis | limited | anonim | kooperatif")
     kurulus_tarihi: Optional[date] = None
     trl: Optional[int] = Field(None, ge=1, le=9, description="Teknoloji hazırlık seviyesi 1-9")
+    kurucu_yasi: Optional[int] = Field(None, ge=15, le=100, description="İşletme sahibinin / en az %50 hissedarın yaşı")
+    baska_sirkette_ortak: Optional[bool] = Field(None, description="Başka bir şirkette ortaklığı var mı")
+    sertifikalar: Optional[List[str]] = Field(None, max_length=5,
+        description="organik_sertifika, iyi_tarim_sertifikasi ya da hicbiri")
+
+    @field_validator("sertifikalar")
+    @classmethod
+    def _sertifikalar_gecerli(cls, v):
+        if v is None:
+            return v
+        from app.match_adapter import SERTIFIKA_ETIKETLERI
+        gecersiz = [x for x in v if x not in SERTIFIKA_ETIKETLERI]
+        if gecersiz:
+            raise ValueError(f"Bilinmeyen sertifika: {', '.join(gecersiz)}")
+        if "hicbiri" in v and len(set(v)) > 1:
+            raise ValueError("'hicbiri' başka sertifikayla birlikte seçilemez")
+        return sorted(set(v)) or None
 
     @field_validator("sirket_turu")
     @classmethod
@@ -298,6 +315,9 @@ class FinancialProfileResponse(BaseModel):
     sirket_turu: Optional[str] = None
     kurulus_tarihi: Optional[date] = None
     trl: Optional[int] = None
+    kurucu_yasi: Optional[int] = None
+    baska_sirkette_ortak: Optional[bool] = None
+    sertifikalar: Optional[List[str]] = None
     updated_at: datetime
 
     class Config:

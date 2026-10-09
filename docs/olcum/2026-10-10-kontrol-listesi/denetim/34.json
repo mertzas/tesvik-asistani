@@ -1,0 +1,32 @@
+{
+  "tesvik_id": 34,
+  "maddeler": [
+    {"anahtar": "s:751347e62a", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Türkiye’de yerleşik Küçük ve Orta Büyüklükteki İşletmeler (KOBİ) ölçeğindeki sermaye şirketleri başvurabilir.",
+     "not": "Sayfa ayrıca KOBİ Beyannamesine bağlantı veriyor.", "onerilen_metin": null},
+    {"anahtar": "s:3b56fd3c48", "hukum": "dogru", "dogru_tur": "kural",
+     "alinti": "Hayır. Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez.",
+     "not": "İşaretlenecek bir şey değil, bilinmesi gereken sınır; sart yerine kural olmalı.", "onerilen_metin": null},
+    {"anahtar": "s:4fd70430e7", "hukum": "desteksiz", "dogru_tur": "kural",
+     "alinti": "",
+     "not": "Canlı sayfada '2 proje' sınırı yok; sayfa 'Çağrı duyurusunda aksi belirtilmediği sürece proje sınırı bulunmamaktadır' ve 'Sunulacak proje sayısı sınırı vb. diğer özel koşullar çağrı duyurularında belirtilir' diyor. 2026-2 çağrı metni (PDF) sayfa metninde değil, bu yüzden doğrulanamadı.",
+     "onerilen_metin": null},
+    {"anahtar": "b:7afe6aa9de", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Proje Öneri Bilgileri Formu Hazırlama Kılavuzu",
+     "not": "Form PRODİS'te doldurulup gönderilir; sayfadaki kılavuz doldurulacak bölümleri anlatır.", "onerilen_metin": null},
+    {"anahtar": "b:e6b631397d", "hukum": "desteksiz", "dogru_tur": "belge",
+     "alinti": "",
+     "not": "Canlı sayfada başvuruda sunulacak 'şirket kuruluş/faaliyet belgeleri' diye bir belge geçmiyor; yalnız KOBİ Beyannamesine bağlantı var.",
+     "onerilen_metin": null},
+    {"anahtar": "b:a5825754ec", "hukum": "desteksiz", "dogru_tur": "adim",
+     "alinti": "",
+     "not": "PRODİS ve çağrı esaslı yürütme sayfayla uyumlu ('2026 yılı 2. Çağrısı Açıldı', 'yılda 2 kez açılan bütçe esaslı çağrılar'). Ancak 20.07.2026 / 22.10.2026 / 26.10.2026 tarihleri canlı sayfa metninde yok (yalnız çağrı dokümanı PDF'inde olabilir); doğrulanamadı.",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "kural", "metin": "Vakıf, dernek (ve iktisadi işletmeleri), kooperatif, birlik, şahıs şirketi ve adi ortaklık başvuramaz", "alinti": "vakıflar, dernekler ve bunların iktisadi işletmeleri, kooperatifler, birlikler, şahıs şirketleri ve adi ortaklıklar bu program kapsamında başvuru yapamazlar."},
+    {"tur": "kural", "metin": "Başvuru yalnız çağrının açık olduğu dönemlerde PRODİS üzerinden yapılabilir", "alinti": "Programa çağrının açık olduğu dönemlerde 7/24 online olarak eteydeb.tubitak.gov.tr adresindeki PRODIS sistemi üzerinden başvuru yapılabilir."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "tutarli", "not": "Sayfa '2026 yılı 2. Çağrısı Açıldı' diyor, kayıttaki çağrı 'açık'; tarihler (22.10 ön kayıt, 26.10 kapanış) sayfa metninden doğrulanamadı ama bugünden (2026-10-09) sonra olduğu için çelişki yok."}
+}

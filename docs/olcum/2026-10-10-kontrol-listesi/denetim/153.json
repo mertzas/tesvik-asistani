@@ -1,0 +1,12 @@
+{
+  "tesvik_id": 153,
+  "maddeler": [
+    {"anahtar": "s:84fac6d1b3", "hukum": "belirsiz", "dogru_tur": "sart", "alinti": "TURYIB programı kapsamında sadece KOBİ ölçekli firmalara kredi kullandırımı yapılabilecektir.", "not": "Madde 'KOBİ olmak' ve 'kamu ortaklığı %49'dan az' koşullarını tek maddede birleştiriyor; asıl belirleyici şart (genç sahibi/yöneticisi) maddede yok.", "onerilen_metin": "Firmam KOBİ ölçeğinde ve Türkiye Cumhuriyeti Devleti’ne ait kurumların ortaklık payı %49’un altında"},
+    {"anahtar": "b:252435064b", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Şekerbank", "not": "Sayfada ilgili finans kuruluşu yalnız Şekerbank. 'Dönemsel başvuru yok' ve son kullandırım tarihi ifadesi sayfada geçmiyor; çelişmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Genç sahibi ve/veya yöneticisi bulunan KOBİ olmak (genç yaş aralığı sayfada tanımlı değil)", "alinti": "Genç Sahibi ve/veya Yöneticisi Bulunan KOBİ’ler"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok."}
+}

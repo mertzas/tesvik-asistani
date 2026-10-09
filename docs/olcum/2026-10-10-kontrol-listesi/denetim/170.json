@@ -1,0 +1,12 @@
+{
+  "tesvik_id": 170,
+  "maddeler": [
+    {"anahtar": "s:a940b74ebf", "hukum": "belirsiz", "dogru_tur": "bilgi", "alinti": "", "not": "Maddenin içeriği sayfa tablosunun ham kopyası; değerler doğru (KOBİ, %90, 1.000.000 TL, yıllık %1,5, başvuru ücreti 8.500 TL, son kullandırım 31.12.2028) ama okunamaz ve işaretlenecek bir şart değil.", "onerilen_metin": "Kefalet: KOBİ için %90, üst limit 1.000.000 TL; kredi son kullandırım tarihi 31.12.2028 (bilgi, işaretlenmez)"},
+    {"anahtar": "b:92313931bd", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Vakıfbank, Halkbank, Ziraat Bankası", "not": "Banka listesi doğru. KOSGEB onayı şartı sayfada ürün açıklamasında var (eksik maddeler). 'KOSGEB ile protokollü bankaya' ve 'dönemsel çağrı' ifadeleri sayfada yok; çelişmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Girişimci Destek Programı İş Geliştirme Desteği başvurusu yapıp KOSGEB tarafından uygun bulunmuş olmak", "alinti": "Girişimci Destek Programı İş Geliştirme Desteği başvurusu yapanlar arasından KOSGEB tarafından uygun bulunan girişimcilere işletme sermayesi olarak kullandırılacak krediler için kefalet limiti tahsis edilmiştir."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "KGF sayfasında çağrı dönemi yok (kredi son kullandırım 31.12.2028). KOSGEB onayı dönemsel çağrıya bağlıysa bu KOSGEB tarafında izlenir; kayıtlı çağrı listesi boş."}
+}

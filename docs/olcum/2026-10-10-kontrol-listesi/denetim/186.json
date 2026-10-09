@@ -1,0 +1,28 @@
+{
+  "tesvik_id": 186,
+  "maddeler": [
+    {"anahtar": "s:2e5481e969", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "İşsizlik ödeneği almakta olanların",
+     "not": "", "onerilen_metin": null},
+    {"anahtar": "s:d67ca68726", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "İşçinin, işten ayrıldığı işyerinde tekrar işe başlaması halinde bu teşvik hükümlerinden yararlanılamaz.",
+     "not": "Yasak olarak yazılmış; kontrol listesinde 'sağlıyorum' olarak işaretlenebilir.", "onerilen_metin": null},
+    {"anahtar": "s:e5fe6c41f5", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "aylık prim ve hizmet belgesinin yasal süresi içerisinde",
+     "not": "Canlı sayfa: 'aylık prim ve hizmet belgesinin yasal süresi içerisinde SGK'ya verilmesi ve primlerin yasal süresi içerisinde ödenmesi'.", "onerilen_metin": null},
+    {"anahtar": "b:514a926501", "hukum": "desteksiz", "dogru_tur": "adim",
+     "alinti": "",
+     "not": "Canlı sayfada 'e-Bildirge' veya 'teşvik kodu' geçmiyor; belge değil bildirim adımı. (Aynı anahtar program 185'te de var.)", "onerilen_metin": null},
+    {"anahtar": "b:7d38ecbf07", "hukum": "desteksiz", "dogru_tur": "adim",
+     "alinti": "",
+     "not": "Başvuru yeri 'SGK (e-Bildirge)' ve 'sürekli' ifadesi canlı sayfada yok; sayfa başvuru yöntemi vermiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "İşçi, işe alındığın tarihten önceki son altı ayda bildirilen ortalama sigortalı sayısına ilave olarak işe alınmalı",
+     "alinti": "özel sektör işverenleri tarafından işe alındığı tarihten önceki son altı aylık dönemde bildirilen ortalama sigortalı sayısına ilave olarak işe alınması"},
+    {"tur": "sart", "metin": "Özel sektör işvereni olmalısın",
+     "alinti": "özel sektör işverenleri tarafından işe alındığı tarihten önceki son altı aylık dönemde"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "İŞKUR 'İşsizlik Ödeneği Alanlara Yönelik Teşvik' sayfası programın kendi sayfası; eşleşiyor."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok, cagrilar boş; 'sürekli' ifadesi sayfada doğrulanamıyor ama çelişen bir şey de yok."}
+}

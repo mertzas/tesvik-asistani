@@ -1,0 +1,18 @@
+{
+  "tesvik_id": 138,
+  "maddeler": [
+    {"anahtar": "s:65d852463b", "hukum": "dogru", "dogru_tur": "kural",
+     "alinti": "Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz.",
+     "not": "Özel Şartlar'dan aynen alınmış iki kredi sınırı (döviz/altın/mücevherat/refinansman yasağı ve yalnız TL). Başvuranın niteliği değil kredinin kullanım sınırı; işaretlenecek şart değil kural olmalı. Asıl yararlanıcı şartı (30 yaş altı genç girişimci) listede yok, eksik_maddeler'e bakınız.",
+     "onerilen_metin": null},
+    {"anahtar": "b:02d0bef8f7", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Halkbank",
+     "not": "Tek kredi veren Halkbank, doğru. 'Dönemsel başvuru yok' ve 'bankadan teyit edin' cümleleri sayfada geçmiyor ama sayfada son tarih de yok; çelişki yok. Bilgi cümlesi onay kutusu metninden ayrılmalı.",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Gerçek kişi işletmede sahibi 30 yaşından küçük olmalı; şirketlerde ortaklık paylarının en az %50'si 30 yaş altı genç girişimcilere ait olmalı veya temsil yetkili 30 yaş altı genç girişimcilerin en az %25 ortaklığı bulunmalı", "alinti": "Sahibi 30 yaş altı olan gerçek kişi işletmeler,"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "KGF'nin programa özel ürün sayfası."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok, banka kanalıyla başvuru; cagrilar boş, tutarlı."}
+}

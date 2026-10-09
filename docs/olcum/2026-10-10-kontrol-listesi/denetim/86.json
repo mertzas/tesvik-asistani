@@ -1,0 +1,16 @@
+{
+  "tesvik_id": 86,
+  "maddeler": [
+    {"anahtar": "s:5cb68e97ea", "hukum": "belirsiz", "dogru_tur": "sart", "alinti": "TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir.", "not": "Madde üç farklı şeyi tek satırda topluyor: kullanım yasağı, TL kuralı, TOBB üyeliği şartı. Kullanıcı neyi işaretleyeceğini anlayamaz. Üyelik şartı sayfada doğru; yasak ve TL ayrı kural maddesi olmalı.", "onerilen_metin": "TOBB üyesi bir işletmeyim (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi)"},
+    {"anahtar": "b:ec9ea08684", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "Sayfada banka belge listesi yok.", "onerilen_metin": null},
+    {"anahtar": "b:e5c2e2170a", "hukum": "dogru", "dogru_tur": "sart", "alinti": "TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir.", "not": "İçerik doğru ama bu bir belge değil nitelik; s:5cb68e97ea ile tekrar. Sayfa üyelik belgesi istemiyor.", "onerilen_metin": null},
+    {"anahtar": "b:560f2f6bed", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Ziraat Katılım", "not": "Sayfadaki banka listesi (Akbank, Denizbank, Garanti BBVA, Halkbank, QNB Bank, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım) maddedekiyle aynı. 'Yalnızca TL kefalet' ifadesi sayfada var. 'KOBİ bankaya başvurur, banka KGF'ye iletir' ve 'son kullandırım tarihi belirtilmemiş' notları sayfa metninde geçmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "KOBİ olmak (kefalet limiti tablosunda yararlanıcı yalnız KOBİ)", "alinti": "KOBİ 2.400.000 TL 3.000.000 TL"},
+    {"tur": "kural", "metin": "Kredi döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz", "alinti": "Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz"},
+    {"tur": "kural", "metin": "Kefalet talepleri yalnız TL cinsinden yapılır", "alinti": "Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Sürekli banka başvurusu; çağrı yok."}
+}

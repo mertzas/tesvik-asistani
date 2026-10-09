@@ -1,0 +1,35 @@
+{
+  "tesvik_id": 126,
+  "maddeler": [
+    {"anahtar": "s:c502d2840d", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Adana, Adıyaman, Ankara, Batman, Bursa, Diyarbakır, Gaziantep, Hatay, İstanbul, İzmir, Kahramanmaraş, Kayseri, Kilis, Kocaeli, Konya, Malatya, Mardin, Mersin, Osmaniye ve Şanlıurfa illerinde yer alması",
+     "not": "20 il sayfadakiyle birebir aynı.",
+     "onerilen_metin": null},
+    {"anahtar": "s:642413061c", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Kısım C-İmalat, Bölüm 62-Bilgisayar programlama, danışmanlık ve ilgili faaliyetler, Bölüm 72-Bilimsel araştırma ve geliştirme NACE kodlarından herhangi birinde faaliyet göstermesi",
+     "not": "",
+     "onerilen_metin": null},
+    {"anahtar": "s:ff079fb595", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "KOSGEB Veri Tabanına kayıtlı ve aktif durumda, Türk Ticaret Kanunu’nda tanımlı gerçek veya tüzel kişi statüsünde KOSGEB tarafından desteklenen sektörlerde yer alan, İşletme Beyanı güncel olan, aktif durumda olan işletmeler yararlanabilecektir.",
+     "not": "Sayfadaki uzun cümle aynen kopyalanmış ve en az dört ayrı koşulu birleştiriyor: KOSGEB veri tabanında kayıtlı ve aktif olmak, TTK'daki gerçek/tüzel kişi statüsü, KOSGEB'in desteklediği sektörde olmak, İşletme Beyanı'nın güncel olması. Kullanıcı tek kutuyla hangisini onaylayacağını anlayamaz. 'KOSGEB tarafından desteklenen sektörler' ayrıca NACE şartıyla (C, 62, 72) örtüşüyor, ayrı kontrol gerektirmeyebilir.",
+     "onerilen_metin": "KOSGEB Veri Tabanı'nda kayıtlı ve aktif olmak ve KOSGEB İşletme Beyanı'nın güncel olması"},
+    {"anahtar": "b:ec9ea08684", "hukum": "desteksiz", "dogru_tur": "belge",
+     "alinti": "",
+     "not": "Sayfada belge listesi yok.",
+     "onerilen_metin": null},
+    {"anahtar": "b:fcf82cda9e", "hukum": "dogru", "dogru_tur": "bilgi",
+     "alinti": "Kefalet Başvuru Ücreti: 5.000 TL",
+     "not": "Tutar doğru; ancak bu bir hazırlanacak belge değil, ücret bilgisidir. Kontrol listesinde onay kutusu olmamalı.",
+     "onerilen_metin": null},
+    {"anahtar": "b:1170dd54ac", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Garanti BBVA",
+     "not": "Tek kredi veren Garanti BBVA, doğru. 'Dönemsel başvuru yok' ve 'bankadan teyit edin' cümleleri sayfada geçmiyor ama sayfada son tarih de yok; çelişki yok. Bilgi cümlesi onay kutusu metninden ayrılmalı.",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Seçili illerde T.C. vatandaşı ile geçici koruma altındaki Suriyeli (GKAS) veya uluslararası koruma sağlanan kişi (UKSK) istihdamı tesis eden işletme olmak (program amacı; sayfa bunu 'amaçlanmaktadır' diye yazıyor, taahhüt/asgari kişi sayısı için bankadan teyit edin)", "alinti": "resmi olarak Türkiye Cumhuriyeti (T.C.) vatandaşı ile geçici koruma altındaki Suriyeli (GKAS) veya uluslararası koruma sağlanan kişi (UKSK) istihdamını tesis eden, belirlenen sektörlerde faaliyet gösteren işletmelere destek sağlanması amaçlanmaktadır"},
+    {"tur": "sart", "metin": "KOBİ ölçeğinde işletme olmak (program adı KOBİ finansman programı; kefalet tablosunda yararlanıcı KOBİ)", "alinti": "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "KGF'nin programa özel ürün sayfası."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok, banka kanalıyla başvuru; cagrilar boş, tutarlı."}
+}

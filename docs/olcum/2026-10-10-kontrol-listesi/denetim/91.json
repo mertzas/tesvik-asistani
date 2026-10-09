@@ -1,0 +1,11 @@
+{
+  "tesvik_id": 91,
+  "maddeler": [
+    {"anahtar": "s:98f29aa6af", "hukum": "dogru", "dogru_tur": "bilgi", "alinti": "TKYB Kredi Destek Paketi kapsamında uluslararası finansal kuruluşlardan finanse edilen kredilerde ilgili finansal kuruluşun anapara geri ödemesiz dönem ve vadeleri esas alınabilir.", "not": "Sayfa doğruluyor ama bu vade bilgisi; başvuranın sağlayacağı şart değil ve koşullu ('esas alınabilir'). Kontrol listesinde yeri yok.", "onerilen_metin": null},
+    {"anahtar": "b:ec9ea08684", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "Sayfada banka belge listesi yok.", "onerilen_metin": null},
+    {"anahtar": "b:a2dc8ed808", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Türkiye Kalkınma ve Yatırım Bankası A.Ş.", "not": "Banka doğru. Madde 'KOBİ bankaya başvurur' diyor; sayfada hem KOBİ hem KOBİ dışı yararlanıcı var, bu ifade dar kalıyor. Son kullandırım tarihi notu sayfada geçmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Sürekli banka başvurusu."}
+}

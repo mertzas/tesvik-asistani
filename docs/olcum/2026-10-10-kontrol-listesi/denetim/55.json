@@ -1,0 +1,28 @@
+{
+  "tesvik_id": 55,
+  "maddeler": [
+    {"anahtar": "s:94ab50077a", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "sektörüne ve ölçeğine bakılmaksızın, Türkiye’de yerleşik sermaye şirketlerini ifade eder.",
+     "not": "Müşteri Kuruluş için doğru. Tedarikçi Kuruluş için ayrı şart var (KOBİ ölçeği); kontrol listesinde yok (eksik maddelerde).", "onerilen_metin": null},
+    {"anahtar": "b:2a74f54ae8", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Proje Öneri Formu Örneği",
+     "not": "Sayfadaki dosya örnektir; form PRODİS üzerinden doldurulur.", "onerilen_metin": null},
+    {"anahtar": "b:fdf0f281a9", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "bu ihtiyacının karşılanması amacıyla Tedarikçi Kuruluşla işbirliği sözleşmesini imzalayan",
+     "not": "Sayfa 'Fizibilite Raporu, İşbirliği Sözleşmesi ve Taahhütnamelere' PRODİS üzerinden erişim olduğunu da söylüyor.", "onerilen_metin": null},
+    {"anahtar": "b:f1265a8556", "hukum": "eskimis", "dogru_tur": "adim",
+     "alinti": "1707 Sipariş Ar-Ge 2026 Yılı 3. Çağrısı Açıldı",
+     "not": "Madde altı tarihi yan yana veriyor (2 Ocak, 13 Mart, 4 Mayıs, 17 Temmuz, 1 Eylül, 13 Kasım); sayfa tablosunda 1. çağrı (2 Ocak - 13 Mart) ve 2. çağrı (4 Mayıs - 17 Temmuz) 'Tamamlandı' işaretli, açık olan 3. çağrı dönemi (1 Eylül - 13 Kasım 2026). Kullanıcı hangi tarihin geçerli olduğunu anlayamaz; geçmiş dönemler listeden çıkarılmalı.",
+     "onerilen_metin": "Başvuruyu PRODİS'ten (https://eteydeb.tubitak.gov.tr) yap. Açık dönem: 3. çağrı, 1 Eylül - 13 Kasım 2026 (1. ve 2. çağrılar tamamlandı)"}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Tedarikçi Kuruluş KOBİ ölçeğinde, Türkiye'de yerleşik sermaye şirketi olmalı", "alinti": "Tedarikçi Kuruluşun KOBİ ölçeğinde olması şartı bulunmaktadır."},
+    {"tur": "sart", "metin": "Bir Müşteri Kuruluş ve en az bir Tedarikçi Kuruluş ortak başvuru yapar; muhatap kuruluş Müşteri Kuruluştur", "alinti": "Çağrıya bir Müşteri Kuruluş ve en az bir Tedarikçi Kuruluş ortak başvuru yapar."},
+    {"tur": "kural", "metin": "Müşteri Kuruluş, dönemsel proje giderlerinin en az %40'ını Tedarikçi Kuruluşa öder (eş finansman); TÜBİTAK kabul edilen harcamanın %40'ını Tedarikçiye hibe verir", "alinti": "Müşteri Kuruluş dönemsel olarak gerçekleşen proje giderlerinin en az %40’ını Tedarikçi Kuruluşa ödeyecek"},
+    {"tur": "kural", "metin": "İlişkili kişi (5520 sayılı Kurumlar Vergisi Kanunu) kapsamındaki kuruluşlar Müşteri ve Tedarikçi olarak aynı projede yer alamaz", "alinti": "5520 sayılı Kurumlar Vergisi Kanunu ve ilgili mevzuat hükümlerine göre ilişkili kişi kapsamında olan kuruluşlar, Müşteri Kuruluş ve Tedarikçi Kuruluş olarak aynı projede yer almaz."},
+    {"tur": "belge", "metin": "Proje önerisinde pazar araştırması ve teknik yapılabilirlik incelemesi sunulmalı; proje Tedarikçinin yapacağı Ar-Ge'yi kapsamalı", "alinti": "Proje önerilerinde Pazar araştırması ve teknik yapılabilirlik incelemesinin de sunulması gerekmektedir."},
+    {"tur": "kural", "metin": "Proje bütçesi en fazla 10.000.000 TL, proje süresi en fazla 24 ay", "alinti": "Proje bütçesi en fazla 10.000.000 TL olacaktır. Proje süresi en fazla 24 aydır."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "cagri_yok", "not": "Dönemsel program ve sayfada üç dönemli takvim var (3. çağrı 1 Eylül - 13 Kasım 2026 açık), ama kayıtta çağrı (cagrilar) boş; basvuru_suresi altı tarihi 'taslak' olarak düz listeliyor."}
+}

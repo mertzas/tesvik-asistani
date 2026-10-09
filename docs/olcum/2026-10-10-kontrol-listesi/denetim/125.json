@@ -1,0 +1,24 @@
+{
+  "tesvik_id": 125,
+  "maddeler": [
+    {"anahtar": "s:c689ddcfe4", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "Paketten, KOBİ Dijital Dönüşüm Destek Programı başvurusu KOSGEB tarafından onaylanan ve anılan program kapsamında kredi faiz desteği almaya hak kazanan küçük ve orta ölçekli, imalatçı KOBİ’ler yararlanabilecektir.",
+     "not": "Madde Özel Şartlar'daki üç ayrı cümleyi tek maddede topluyor: (1) kredinin KOSGEB protokollü bankalardan alınması, (2) yararlanıcı nitelikleri (KOSGEB onayı + faiz desteği hak edişi + küçük/orta ölçek + imalatçı), (3) harcamaların sözleşme/faturayla belgelenmesi. Kullanıcı tek onay kutusuyla hangisini işaretleyeceğini anlayamaz. Ayrıca sayfa 'küçük ve orta ölçekli' diyor; mikro işletme sayılmıyor, maddede bu vurgu kaybolmuş.",
+     "onerilen_metin": "Küçük veya orta ölçekli (mikro değil), imalat sektöründe faaliyet gösteren KOBİ olmak. (Harcamaların sözleşme veya faturayla belgelenmesi ve kredinin KOSGEB protokollü bankadan alınması ayrı madde/kural olarak gösterilmeli.)"},
+    {"anahtar": "b:ec9ea08684", "hukum": "desteksiz", "dogru_tur": "belge",
+     "alinti": "",
+     "not": "Sayfada banka belge listesi yok. Sayfadaki tek belgeleme şartı 'tüm harcamaların sözleşme veya fatura ile belgelendirilmesi'dir.",
+     "onerilen_metin": null},
+    {"anahtar": "b:3e24145a32", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Paketten, KOBİ Dijital Dönüşüm Destek Programı başvurusu KOSGEB tarafından onaylanan ve anılan program kapsamında kredi faiz desteği almaya hak kazanan küçük ve orta ölçekli, imalatçı KOBİ’ler yararlanabilecektir.",
+     "not": "İçerik sayfayla uyumlu ama bu bir 'hazırlanan belge' değil, KOSGEB'den alınması gereken onay/hak ediş adımı; tür belge yerine adim olmalı.",
+     "onerilen_metin": null},
+    {"anahtar": "b:6eef3a8fb1", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Türkiye İş Bankası, Türk Ekonomi Bankası",
+     "not": "Banka listesi ve 'önce KOSGEB onayı' sırası Özel Şartlar ile uyumlu. 'KOSGEB başvuruları dönemsel çağrıyla alınır' cümlesi bu sayfada geçmiyor (KOSGEB kaynağından doğrulanmalı). Bilgi cümleleri onay kutusu metninden ayrılmalı.",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "KGF'nin programa özel ürün sayfası."},
+  "cagri_tutarliligi": {"hukum": "cagri_yok", "not": "basvuru_suresi KOSGEB başvurularının dönemsel çağrıyla alındığını söylüyor ama cagrilar boş; hangi KOSGEB dönemi/çağrısı açık, kayıtta yok ve KGF sayfası da bunu vermiyor."}
+}

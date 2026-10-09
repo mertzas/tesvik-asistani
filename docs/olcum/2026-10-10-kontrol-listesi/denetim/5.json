@@ -1,0 +1,38 @@
+{
+  "tesvik_id": 5,
+  "maddeler": [
+    {"anahtar": "s:0633cf9cef", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "tanımlı gerçek veya tüzel kişi statüsünde olması",
+     "not": "Madde metni 'Başvuru yapacak işletmenin;' önekini taşıyor; sadeleştirilebilir.", "onerilen_metin": null},
+    {"anahtar": "s:f8c4201947", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması",
+     "not": "", "onerilen_metin": null},
+    {"anahtar": "b:4b1a9b9eb0", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "YÖNDE - Yönderlik ve Değerlendirme Destek Programı Başvuru Formu",
+     "not": "Sistem üzerinden doldurulur.", "onerilen_metin": null},
+    {"anahtar": "b:4cfe7ff52a", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Yönderlik ve Değerlendirme Destek Programı Taahhütnamesi",
+     "not": "", "onerilen_metin": null},
+    {"anahtar": "b:71eef0d40e", "hukum": "belirsiz", "dogru_tur": "belge",
+     "alinti": "Yönderlik ve Değerlendirme Destek Programı Başvuru ve Ödeme Belgeleri Tablosu",
+     "not": "Tablo hem başvuruda hem ödeme talebinde istenen belgeleri içeriyor; kullanıcı hangisini hazırlayacağını bilemez. Canlı sayfada ödeme belgeleri hizmet alındıktan sonra Ödeme Talep Formu ile yüklenir.",
+     "onerilen_metin": "Başvuru ve Ödeme Belgeleri Tablosu'nda başvuru aşaması için sayılan belgeleri hazırladım (ödeme belgeleri hizmet alındıktan sonra yüklenir)"},
+    {"anahtar": "b:44b975c998", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "ile KOSGEB sistemi (www.kosgeb.gov.tr) üzerinden yapılır. Başvurular en geç 15 gün içinde kontrol edilir.",
+     "not": "Sayfada dönem/son tarih yok; destek başlangıcı başvurunun KOSGEB'ce onaylandığı tarihtir.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Dijital Dönüşüm desteği için hizmeti TÜSSİDE belgeli dijital dönüşüm danışmanından al (en fazla 2 kez, iki hizmet arası en az 1 yıl)",
+     "alinti": "İşletme bu destekten en fazla 2 defa yararlanabilir; iki hizmet arasında en az 1 yıl süre olmalıdır."},
+    {"tur": "sart", "metin": "Sürdürülebilirlik Raporlaması: rapor TSRS'ye uygun olmalı ve güvence denetimi bağımsız denetim kuruluşunca yapılmalı (en fazla 2 rapor)",
+     "alinti": "Sürdürülebilirlik raporunun güvence denetimi bir bağımsız denetim kuruluşu tarafından yapılmalıdır."},
+    {"tur": "sart", "metin": "YODA desteği için hizmeti Bakanlıkça bildirilen yalın dönüşüm danışmanından al; ikinci yararlanma için ilk raporda önerilen model fabrika hizmetleri tamamlanmış olmalı",
+     "alinti": "İkinci defa yararlanmak için ilk YODA raporunda önerilen model fabrika hizmetlerinin tamamlanmış olması şarttır."},
+    {"tur": "sart", "metin": "Bağımsız Değerlendirme desteği yalnız Teknoloji Odaklı Sanayi Hamlesi çağrı planındaki ürünlerin proje başvuruları içindir; rapor Bakanlıkça ilan edilen Bağımsız Danışmanlık Firmasından alınmalı",
+     "alinti": "Bağımsız Değerlendirme Raporu Bakanlık tarafından ilan edilen Bağımsız Danışmanlık Firmaları tarafından hazırlanır."},
+    {"tur": "kural", "metin": "Ödemeler (katkı payı dahil) banka, PTTBank veya ödeme kuruluşu üzerinden yapılmalı; ödeme talebi program bitiminden en geç 4 ay sonra yapılmalı",
+     "alinti": "Destek ödeme talebi, en geç programın tamamlanma tarihinden 4 ay sonrasına kadar yapılmalıdır."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "destekdetay/9165 YÖNDE sayfası; eşleşiyor."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Canlı sayfa dönem/son tarih vermiyor, başvuru sürekli yapılıyor görünüyor; cagrilar boş ve basvuru_suresi bunu doğru belirtiyor."}
+}

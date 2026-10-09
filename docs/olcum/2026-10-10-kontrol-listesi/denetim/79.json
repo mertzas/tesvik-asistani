@@ -1,0 +1,24 @@
+{
+  "tesvik_id": 79,
+  "maddeler": [
+    {"anahtar": "s:2b7e5b4e89", "hukum": "desteksiz", "dogru_tur": "sart",
+     "alinti": "",
+     "not": "Canlı sayfa BUGEM ana sayfası; sera/örtüaltı desteği, Tebliğ 2024/39 veya ÖKS/KOBÜKS hakkında hiçbir metin içermiyor. Madde bu sayfadan doğrulanamıyor.",
+     "onerilen_metin": null},
+    {"anahtar": "s:b7c3bbd217", "hukum": "desteksiz", "dogru_tur": "belge",
+     "alinti": "",
+     "not": "Sayfada iyi tarım uygulamaları, biyolojik/biyoteknik mücadele, BKÜ faturası veya ÜKD kaydı geçmiyor. Ayrıca madde iki ayrı destek türünün şartlarını (sertifika kaydı; fatura ve ÜKD kayıtları) tek kutuda topluyor ve 'şart' etiketli olsa da belge/kayıt niteliğinde; kaynak bulunduğunda destek türüne göre ayrılmalı.",
+     "onerilen_metin": null},
+    {"anahtar": "b:c0fd7d855f", "hukum": "desteksiz", "dogru_tur": "belge",
+     "alinti": "",
+     "not": "Sayfada EK-3 dilekçesi veya Tebliğ 2024/39 m.15/1 atfı yok.",
+     "onerilen_metin": null},
+    {"anahtar": "b:8bd56d344d", "hukum": "desteksiz", "dogru_tur": "adim",
+     "alinti": "",
+     "not": "Sayfada sera/örtüaltı desteği başvuru dönemi veya ilanı yok; duyurular bölümünde (en yeni 30.09.2026) destek ilanı görünmüyor. 'Yıllık ilan edilir' ifadesi doğrulanamıyor.",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "genel_sayfa", "not": "https://www.tarimorman.gov.tr/BUGEM#sera adresi BUGEM ana sayfasını getiriyor; '#sera' parçası sayfada bir bölüme karşılık gelmiyor, program şartları bu sayfada yok. Tebliğ 2024/39 metni veya ilgili destek sayfası kaynak gösterilmeli."},
+  "cagri_tutarliligi": {"hukum": "cagri_yok", "not": "basvuru_suresi 'Yıllık ilan edilir' diyor (dönemsel program) ama cagrilar boş; ilan dönemi kayıtta yok ve canlı sayfa da vermiyor."}
+}

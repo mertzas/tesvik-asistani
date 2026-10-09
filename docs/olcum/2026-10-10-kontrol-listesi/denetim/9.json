@@ -1,0 +1,42 @@
+{
+  "tesvik_id": 9,
+  "maddeler": [
+    {"anahtar": "s:0ba4e5891d", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması",
+     "not": "Maddedeki 'Başvuru yapacak işletmenin;' öneki gereksiz.", "onerilen_metin": null},
+    {"anahtar": "s:c44640f3f0", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Türk Ticaret Kanunu'nda tanımlı gerçek veya tüzel kişi statüsünde faaliyet göstermesi",
+     "not": "", "onerilen_metin": null},
+    {"anahtar": "s:4ec004d81e", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "Aşağıda yer alan kriterlerden herhangi birini sağlaması gerekmektedir:",
+     "not": "İçerik canlı sayfayla uyumlu ama dört alternatif şart (VEYA) tek maddede; kullanıcı hangisini sağlayıp işaretleyeceğini anlayamaz. Hızlı büyüme KBS'te sistemce otomatik kontrol edilir.",
+     "onerilen_metin": "Şunlardan en az birini sağlıyorum: hızlı büyüyen, orta yüksek/yüksek teknolojili ve son 3 yıl her yıl ihracatını artıran işletme; hızlı büyüyen ve son 3 yıl her yıl ihracat ile Ar-Ge harcamasını artıran işletme; Sanayi Hamlesi öncelikli ürünler listesinde faaliyet gösteren yüksek teknolojili orta ölçekli işletme; Turcorn 100 kapsamında işletme"},
+    {"anahtar": "b:0eb03e549c", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Küresel Rekabetçilik Destek Programı Proje Başvuru Formu 2. Bölüm",
+     "not": "", "onerilen_metin": null},
+    {"anahtar": "b:a27e2f2502", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Küresel Rekabetçilik Destek Programı Taahhütnamesi",
+     "not": "", "onerilen_metin": null},
+    {"anahtar": "b:2cab884a72", "hukum": "belirsiz", "dogru_tur": "belge",
+     "alinti": "Küresel Rekabetçilik Destek Programı Başvuru Kontrol Formu",
+     "not": "Form listede var ama başvuru sahibinin hazırlayacağı belge mi KOSGEB'in kontrol aracı mı sayfadan anlaşılmıyor; Jüri Sekretaryası Kontrol Tablosu gibi iç formlarla aynı listede. (Aynı anahtar program 8'de de var.)",
+     "onerilen_metin": "Proje Başvuru Formu ve 2. Bölümü KBS üzerinden hazırladım"},
+    {"anahtar": "b:be68f6f356", "hukum": "belirsiz", "dogru_tur": "adim",
+     "alinti": "Küresel Rekabetçilik Destek Programı Başvuru Kılavuzu",
+     "not": "Kılavuz hazırlanacak bir belge değil, okunacak rehber; 'dönemin proje teklif çağrısına göre hazırlık' ifadesi muğlak. Çağrılar KOSGEB sayfasında ilan edilir.",
+     "onerilen_metin": "Başvuru Kılavuzu'nu ve yürürlükteki Proje Teklif Çağrısı metnini okudum"},
+    {"anahtar": "b:6f1fde3a0e", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "KOBİ Bilgi Siteminden (KBS) başvuru yapılırken hızlı büyüyen şartı sistem tarafından otomatik kontrol edilmektedir.",
+     "not": "Başvuru KBS üzerinden ve çağrı döneminde yapılır; dönem tarihleri canlı sayfada yok.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Talep edilen kredinin alt limiti en az 30 milyon TL olmalı (üst limit 75 milyon TL)",
+     "alinti": "Ayrıca talep edilen kredinin alt limiti en az 30 milyon TL olmalıdır."},
+    {"tur": "adim", "metin": "KOSGEB ile protokol imzalayan bir bankaya kredi başvurusu yap (tek finansal kuruluş)",
+     "alinti": "KOSGEB ile protokol imzalayan bankalara kredi başvurusu yapılabilir."},
+    {"tur": "kural", "metin": "İlk kredi kullanımı proje başlangıç tarihinden itibaren 9 ay içinde yapılmalı",
+     "alinti": "İlk kredi kullanımını proje başlangıç tarihinden itibaren 9 ay içerisinde gerçekleştirmeniz gerekmektedir."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "destekdetay/9206 Küresel Rekabetçilik sayfası; eşleşiyor."},
+  "cagri_tutarliligi": {"hukum": "celisik", "not": "cagrilar '2026 yılı 1. başvuru dönemi' kapandı gösteriyor; canlı sayfa '2026 Yılı 1. Başvuru Dönemi Proje Teklif Çağrısı'nı 'Yürürlükte Olan Çağrılar' altında listeliyor ve tarih vermiyor."}
+}

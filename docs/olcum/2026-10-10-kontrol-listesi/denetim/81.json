@@ -1,0 +1,16 @@
+{
+  "tesvik_id": 81,
+  "maddeler": [
+    {"anahtar": "s:6817a21ff6", "hukum": "dogru", "dogru_tur": "sart", "alinti": "Paketten, Kapasite Geliştirme Destek Programı başvurusu KOSGEB tarafından onaylanan ve anılan program kapsamında kredi faiz desteği almaya hak kazanan KOBİ’ler yararlanabilecektir.", "not": "KOBİ + KOSGEB onayı birleşik; b:839983b5c6 ile tekrar.", "onerilen_metin": null},
+    {"anahtar": "s:d2b2bac01a", "hukum": "dogru", "dogru_tur": "bilgi", "alinti": "Paket kapsamındaki krediler, KOSGEB ile protokol yapan bankalar tarafından kullandırılacaktır.", "not": "Kullanıcının işaretleyeceği bir nitelik değil; başvuru adımındaki banka listesinde zaten var.", "onerilen_metin": null},
+    {"anahtar": "s:221755877b", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Paket kapsamındaki krediler Türk Lirası cinsinden kullandırılacaktır.", "not": "", "onerilen_metin": null},
+    {"anahtar": "s:f0231050bb", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Tüm harcamalar sözleşme veya fatura ile belgelendirilecektir.", "not": "Nitelik değil, harcama kuralı.", "onerilen_metin": null},
+    {"anahtar": "s:fc023d0314", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Paket kapsamında arsa ve bina yatırımlarına kefalet sağlanmayacaktır", "not": "", "onerilen_metin": null},
+    {"anahtar": "b:ec9ea08684", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "Sayfada banka belge listesi veya 'KGF belge yayımlamaz' ifadesi yok.", "onerilen_metin": null},
+    {"anahtar": "b:839983b5c6", "hukum": "dogru", "dogru_tur": "sart", "alinti": "Paketten, Kapasite Geliştirme Destek Programı başvurusu KOSGEB tarafından onaylanan", "not": "Hazırlanacak belge değil, ön koşul; s:6817a21ff6 ile tekrar. Sayfa ayrı bir 'onay belgesi'nden söz etmiyor.", "onerilen_metin": null},
+    {"anahtar": "b:c641f919d0", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Ziraat Bankası, Vakıfbank, Halkbank, Ziraat Katılım", "not": "Banka listesi ve KOSGEB onayı önkoşulu doğru. 'KOBİ bankaya başvurur, banka KGF'ye iletir' ve 'KOSGEB dönemsel çağrı' ifadeleri sayfada yok.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "KGF ürünü sürekli; dönem KOSGEB programına ait ve sayfada geçmiyor."}
+}

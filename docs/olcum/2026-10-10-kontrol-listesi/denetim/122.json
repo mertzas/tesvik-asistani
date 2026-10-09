@@ -1,0 +1,22 @@
+{
+  "tesvik_id": 122,
+  "maddeler": [
+    {"anahtar": "s:de8a198eb9", "hukum": "dogru", "dogru_tur": "kural",
+     "alinti": "Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir.",
+     "not": "Sayfanın Özel Şartlar bölümünden aynen alınmış üç ayrı sınır (yalnız yeni/ilave kredi, yalnız TL, döviz-altın-mücevherat finansmanında kullanılamaz). Başvuranın taşıdığı bir nitelik değil, kredinin sınırı; 'sağlıyor muyum' diye işaretlenemez, kural olarak gösterilmeli. Asıl yararlanıcı şartı (29 yaş) listede yok, eksik_maddeler'e bakınız.",
+     "onerilen_metin": null},
+    {"anahtar": "b:ec9ea08684", "hukum": "desteksiz", "dogru_tur": "belge",
+     "alinti": "",
+     "not": "Sayfada belge listesi yok; belgeleri bankanın istediği genel ifadesi sayfadan doğrulanamıyor.",
+     "onerilen_metin": null},
+    {"anahtar": "b:f6ec4199e1", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Halkbank",
+     "not": "Kredi veren kuruluş sayfada yalnızca Halkbank; doğru. Maddedeki 'dönemsel başvuru yok' ve 'bankadan teyit edin' cümleleri sayfada geçmiyor ama sayfada son başvuru tarihi de yok, çelişki yok. Bilgi cümlesi onay kutusu metninden ayrılmalı.",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Kredi başvuru tarihinde işletmenin sahibi veya en az %50 hisse sahibi ortağı en fazla 29 yaşında olmalı", "alinti": "Kredi başvuru tarihi itibarıyla, sahibi veya asgari %50 hisse sahibi ortağı azami 29 yaşında olan işletmeler"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "KGF'nin programa özel ürün sayfası."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok, banka kanalıyla sürekli başvuru; cagrilar boş, tutarlı."}
+}

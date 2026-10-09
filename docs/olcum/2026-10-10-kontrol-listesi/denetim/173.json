@@ -1,0 +1,12 @@
+{
+  "tesvik_id": 173,
+  "maddeler": [
+    {"anahtar": "s:8b49d81622", "hukum": "belirsiz", "dogru_tur": "belge", "alinti": "Basın İlan Kurumu tarafından süreli yayına tahsis edilen nakdi kredi tutarı ve bu krediyle ilgili olarak talep edilen teminat mektubu tutarını içeren Basın İlan Kurumu yazısının süreli yayın tarafından Bankaya ibrazı ile başlatılabilecektir.", "not": "Madde üç ayrı şeyi karıştırıyor: 9 milyon TL toplam limit (bilgi), yalnız TL (kural), BİK yazısı (yalnız BİK nakdi kredisine yönelik teminat mektubu talebinde gerekli = koşullu belge). Asıl sart (BİK'ten ilan alma hakkı olan süreli yayın) maddede yok.", "onerilen_metin": "Teminat mektubu talebim için Basın İlan Kurumu yazısı (BİK’in tahsis ettiği nakdi kredi tutarı ve istenen teminat mektubu tutarı) hazır; yalnız BİK nakdi kredisine yönelik teminat mektubu istiyorsam"},
+    {"anahtar": "b:4f841907db", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Vakıfbank", "not": "'Dönemsel başvuru yok' / tarih ifadesi sayfada yok; çelişmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Basın İlan Kurumu’ndan resmi ilan ve reklam alma hakkına haiz süreli yayın olmak", "alinti": "Basın İlan Kurumu’ndan resmi ilan ve reklam alma hakkına haiz süreli yayınların"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok."}
+}

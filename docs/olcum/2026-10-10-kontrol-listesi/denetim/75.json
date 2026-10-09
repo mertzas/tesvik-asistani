@@ -1,0 +1,31 @@
+{
+  "tesvik_id": 75,
+  "maddeler": [
+    {"anahtar": "s:db1571dedd", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "Türkiye’de yerleşik ve proje sonuçlarını Türkiye’de uygulamayı taahhüt eden sermaye şirketleri ile Yükseköğretim Kanunu kapsamında yer alan",
+     "not": "Madde iki farklı tarafın (Müşteri Kuruluş olan sermaye şirketi ile Yürütücü Kuruluş olan üniversite/hastane/kamu araştırma kurumu) niteliklerini tek cümlede veriyor; bir şirket kullanıcısı 'ortak proje başvurusunda bulunur' kısmını işaretlenecek bir şart olarak okuyamaz.",
+     "onerilen_metin": "Türkiye'de yerleşik, firma düzeyinde katma değer yaratan ve proje sonuçlarını Türkiye'de uygulamayı taahhüt eden bir sermaye şirketiyim (Müşteri Kuruluş)"},
+    {"anahtar": "b:ead5eacf70", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Proje Öneri Bilgileri Formu AGY105",
+     "not": "Sayfada AGY105 'Bilgi amaçlıdır, başvuru için kullanılmaz'; başvuru PRODİS üzerinden yapılır. 'PRODİS'te doldurulur' notu doğru.", "onerilen_metin": null},
+    {"anahtar": "b:235d0f8d5f", "hukum": "yanlis", "dogru_tur": "bilgi",
+     "alinti": "Projeler, destek karar yazısında belirtilen raporlama takvimine göre belirlenen altışar aylık dönemler halinde izleyici(ler) tarafından izlenerek desteklenir.",
+     "not": "Ar-Ge Yardımı İstek Formu (AGY305) ve hazırlama kılavuzu sayfada 'İzleme ve Sonuçlandırma - Formlar' bölümünde; destek kararından sonra dönemsel sunulan form, başvuru belgesi değil.",
+     "onerilen_metin": "Bu madde başvuru listesinden çıkarılmalı; Ar-Ge Yardımı İstek Formu (AGY305) destek kararından sonra altı aylık dönemlerde sunulur."},
+    {"anahtar": "b:fe04ae2734", "hukum": "desteksiz", "dogru_tur": "belge",
+     "alinti": "",
+     "not": "Bursiyer Bilgi Formu sayfada yalnızca izleme/sonuçlandırma formları arasında listeli; başvuru belgesi olarak geçmiyor.", "onerilen_metin": null},
+    {"anahtar": "b:6230a96ce8", "hukum": "desteksiz", "dogru_tur": "belge",
+     "alinti": "",
+     "not": "PTI Bilgi Formu sayfada yalnızca izleme/sonuçlandırma formları arasında listeli; başvuru belgesi olarak geçmiyor.", "onerilen_metin": null},
+    {"anahtar": "b:304db39c00", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Başvurular sürekli açıktır ve yılın her günü eteydeb.tubitak.gov.tr adresinden online olarak yapılabilir.",
+     "not": "", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Müşteri Kuruluş (sermaye şirketi) ve Yürütücü Kuruluş (üniversite, araştırma altyapısı, kamu araştırma merkez/enstitüsü) ortak başvuru yapar", "alinti": "Programa, Müşteri Kuruluş (KOBİ veya BÜYÜK ölçekli tüm sermaye şirketleri) ve Yürütücü Kuruluş (Üniversite, Araştırma Altyapısı, Kamu Araştırma Merkez ve Enstitüleri) ortak başvuru yapabilecektir."},
+    {"tur": "belge", "metin": "Başvurudan önce Müşteri ve Yürütücü Kuruluş arasında TÜBİTAK'ın asgari şartlarını içeren İşbirliği Sözleşmesi imzalanmış olmalı", "alinti": "TÜBİTAK'a proje öneri başvurusu yapılmadan önce müşteri ve yürütücü kuruluş arasında TÜBİTAK’ın belirlediği asgari şartları içeren işbirliği sözleşmesi imzalanır."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Sürekli açık program; çağrı kaydı yok, uyumlu."}
+}

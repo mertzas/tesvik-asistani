@@ -1,0 +1,16 @@
+{
+  "tesvik_id": 116,
+  "maddeler": [
+    {"anahtar": "s:bd1b06e7cd", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Kooperatif ve kooperatif birliği tüzel kişilerinin finansmana erişimlerinin kolaylaştırılarak",
+     "not": "Yararlanıcı tablosu beş kooperatif türünü (tarım satış kooperatifleri birlikleri, ecza üretim temin ve dağıtım kooperatifleri, kadın girişimi üretim ve işletme kooperatifleri birlikleri, üretim ve pazarlama kooperatifleri, küçük sanat kooperatifleri) sayıyor; madde bununla uyumlu. Sayfadaki limit/ücret tablosunun satırları kaymış (limit sayıları ile kooperatif türleri satır satır eşleşmiyor) ama bu madde limit içermiyor.",
+     "onerilen_metin": null},
+    {"anahtar": "b:dc2001d6a9", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Ziraat Bankası, Vakıfbank, Halkbank",
+     "not": "Banka listesi sayfayla birebir. Maddenin ikinci yarısı (dönemsel başvuru yok, kefaleti banka talep eder, bankadan teyit edin) sayfada geçmiyor ama sayfada son başvuru/kullandırım tarihi de yok; çelişki yok. Uzun bilgi cümlesi onay kutusu metninden ayrılmalı (adım: kredi başvurusunu bu bankalardan birine yap).",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "KGF'nin programa özel ürün sayfası."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok, banka kanalıyla sürekli başvuru; cagrilar boş, tutarlı."}
+}

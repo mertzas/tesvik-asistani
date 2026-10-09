@@ -1,0 +1,20 @@
+{
+  "tesvik_id": 118,
+  "maddeler": [
+    {"anahtar": "s:2ac5d02f3e", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Firmanın KOSGEB’den destek ödemesi almaya hak kazanan işletmelerden biri olması.",
+     "not": "Sayfa KOBİ'ler lehine KOSGEB destek programları kapsamında kefalet verildiğini söylüyor; 'onaylanmış' sözcüğü sayfada yok ama anlam uyumlu.",
+     "onerilen_metin": null},
+    {"anahtar": "b:791714a7b6", "hukum": "desteksiz", "dogru_tur": "belge",
+     "alinti": "",
+     "not": "Sayfada 'KOSGEB destek onay yazısı' veya başka bir belge listesi geçmiyor; yalnızca 'Doğrudan Başvuru İçin' bağlantısı var. Belge, başvuru formundan mı yoksa KOSGEB'den mi alınacağı sayfadan anlaşılmıyor.",
+     "onerilen_metin": null},
+    {"anahtar": "b:9d26de2f49", "hukum": "belirsiz", "dogru_tur": "adim",
+     "alinti": "Doğrudan Başvuru İçin;",
+     "not": "Sayfa doğrudan başvuruyu KGF sitesindeki ayrı bir kefalet başvuru bağlantısına yönlendiriyor (kosgeb-geri-odemeli-destekleri-icin-kefalet). Maddedeki 'Sürekli' ifadesi sayfada yok; sayfa yalnızca kefaletten yararlanma süresinin tahsis tarihinden itibaren 6 ay olduğunu ve son başvuru tarihinin ilgili KOSGEB programına bağlı olduğunu söylüyor.",
+     "onerilen_metin": "Kefalet başvurusunu KGF sitesindeki 'KOSGEB Geri Ödemeli Destekleri için kefalet' başvuru bağlantısından yap (KOSGEB desteği onaylandıktan sonra; kefaletten yararlanma süresi tahsis tarihinden itibaren 6 ay)"}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "KGF'nin programa özel ürün sayfası."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "basvuru_suresi 'Sürekli' diyor ama sayfa bunu doğrulamıyor; son tarih KOSGEB programına bağlı. Çağrı kaydı yok, KGF tarafında dönem tanımlı değil."}
+}

@@ -1,0 +1,13 @@
+{
+  "tesvik_id": 149,
+  "maddeler": [
+    {"anahtar": "s:f617cfde36", "hukum": "dogru", "dogru_tur": "sart", "alinti": "İmalat sektöründe faaliyet gösteren KOBİ’lerin mevcut kredilerinin refinansman yöntemi ile ödemesiz dönemli şekilde yeni bir itfa planına bağlanması amaçlanmaktadır.", "not": "Sayfa KOBİ ve imalat koşulunu 'amaç' cümlesinde veriyor; açık bir başvuru şartı başlığı yok.", "onerilen_metin": null},
+    {"anahtar": "s:72ffcad5d6", "hukum": "belirsiz", "dogru_tur": "sart", "alinti": "Asgari 6 ay anapara ödemesiz dönem dahil olmak üzere asgari 24 ay, azami 48 ay", "not": "Madde hem 'mevcut kredi olmalı' (sart) hem de vade aralığını (bilgi) tek cümlede karıştırıyor. Vade değerleri sayfayla uyumlu.", "onerilen_metin": "Refinansmana konu mevcut bir banka kredim var (yeni itfa planına bağlanacak)"},
+    {"anahtar": "b:ec9ea08684", "hukum": "belirsiz", "dogru_tur": "belge", "alinti": "", "not": "Sayfada belge listesi yok; madde 'bankanın istediği belgeler' diyerek işaretlenebilir somut bir belge sunmuyor.", "onerilen_metin": "Bankanın kredi başvurusu için istediği belge listesini bankadan alıp hazırladım"},
+    {"anahtar": "b:0a9f9c6515", "hukum": "dogru", "dogru_tur": "bilgi", "alinti": "Kefalet Başvuru Ücreti: 10.000 TL", "not": "Tutar ve yıllık %1,5 komisyon sayfayla uyumlu. Ücret/oran bilgisidir, işaretlenecek belge değil.", "onerilen_metin": null},
+    {"anahtar": "b:64b192fc67", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Ziraat Bankası, Vakıfbank, Halkbank, İşbankası, Garanti BBVA, Yapı Kredi Bankası, QNB Bank, Denizbank, Akbank", "not": "Banka listesi birebir. 'Dönemsel başvuru yok' ve 'son kullandırım tarihi belirtilmemiştir' sayfada geçmiyor; sayfa tarih vermediği için çelişmiyor, ama madde metni gereğinden uzun.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "Sayfa başlığı REFİNANSMAN KEFALET PROGRAMI; URL programın kendi sayfası."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok; kullandırım bankadan."}
+}

@@ -1,0 +1,14 @@
+{
+  "tesvik_id": 159,
+  "maddeler": [
+    {"anahtar": "s:ada5138829", "hukum": "belirsiz", "dogru_tur": "kural", "alinti": "Yararlanıcıya tahsis edilen işletme kredisinin azami %10’u işletme harcamalarında kullanılmak üzere nakit olarak verilebilecektir.", "not": "İki ayrı kural tek maddede: nakit kullanım sınırı ve yalnız TL kredi. İkisi de sınırdır, başvuranın taşıdığı nitelik değil; sart olarak işaretlenemez.", "onerilen_metin": "Kredi yalnız TL kullandırılır; işletme kredisinin en fazla %10’u nakit verilebilir (bilgi, işaretlenmez)"},
+    {"anahtar": "b:ec9ea08684", "hukum": "belirsiz", "dogru_tur": "belge", "alinti": "", "not": "Sayfada belge listesi yok; somut belge sunulmuyor.", "onerilen_metin": "Bankanın kredi başvurusu için istediği belge listesini bankadan alıp hazırladım"},
+    {"anahtar": "b:d1d3700d03", "hukum": "belirsiz", "dogru_tur": "adim", "alinti": "Kredi Veren kaynaklı ihracatçılara veya döviz kazandırıcı faaliyeti bulunan firmalara sağlanan kredilere bu kredilerin taahhütlü olması şartıyla kefalet sağlanır.", "not": "Koşullu: turizm firmalarında taahhüt aranmıyor (aynı sayfada); madde bunu söylemiyor. Sayfa 'taahhütlü' diyor, 'ihracat taahhüdü' belgesi adı vermiyor.", "onerilen_metin": "İhracat veya döviz kazandırıcı faaliyet taahhüdü verdim (turizm firmalarından aranmaz)"},
+    {"anahtar": "b:041e8bfa92", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Akbank, Denizbank, Garanti Bankası, Eximbank, Halkbank, İş Bankası, Türk Ekonomi Bankası, QNB Finansbank, Vakıfbank, Yapı Kredi Bankası, Ziraat Bankası", "not": "Banka listesi birebir. 'Dönemsel başvuru yok' / tarih ifadesi sayfada yok; çelişmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "İhracatçı veya döviz kazandırıcı hizmetler sektöründe faaliyet göstermek (KOBİ ve KOBİ dışı firmalar yararlanabilir)", "alinti": "İhracatçı veya döviz kazandırıcı hizmetler sektörlerinde faaliyet gösteren KOBİ ve KOBİ dışı firmaların finansmanı amaçlanmaktadır."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "Aktif Destek Paketleri altında; aynı ada sahip Geçmiş Programlar girdisi de var, URL aktif olana işaret ediyor."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok."}
+}

@@ -1,0 +1,18 @@
+{
+  "tesvik_id": 168,
+  "maddeler": [
+    {"anahtar": "s:9a118e8b10", "hukum": "dogru", "dogru_tur": "sart", "alinti": "KOBİ’lerin faaliyetlerinin desteklenmesi amaçlanmaktadır", "not": "KOBİ doğru ama tek başına eksik: asıl şartlar net ihracatçı olmak ve Greendeks skoru (eksik maddeler).", "onerilen_metin": null},
+    {"anahtar": "s:ffe23de275", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Krediler ihracat taahhütlü olarak kullandırılacaktır.", "not": "Kredi ürünü: TL İşletme Kredisi. Başvuranın niteliği değil, kredinin koşulu; ihracat taahhüdü b:4f4534896b ile tekrar.", "onerilen_metin": null},
+    {"anahtar": "s:919c815d39", "hukum": "dogru", "dogru_tur": "bilgi", "alinti": "Azami 40 milyon TL", "not": "Kefalet oranı %80; limit/oran bilgisidir, kontrol listesinde yeri yok.", "onerilen_metin": null},
+    {"anahtar": "b:ec9ea08684", "hukum": "belirsiz", "dogru_tur": "belge", "alinti": "", "not": "Sayfada belge listesi yok.", "onerilen_metin": "Ziraat Bankası’nın kredi başvurusu için istediği belge listesini bankadan alıp hazırladım"},
+    {"anahtar": "b:4f4534896b", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Krediler ihracat taahhütlü olarak kullandırılacaktır.", "not": "Taahhüt verilir (adım); ayrı bir belge adı sayfada yok.", "onerilen_metin": null},
+    {"anahtar": "b:bfe24e3a8d", "hukum": "dogru", "dogru_tur": "bilgi", "alinti": "Kredi tutarının %0,1’i (Asgari 10 bin TL)", "not": "Ücret bilgisidir, belge değil.", "onerilen_metin": null},
+    {"anahtar": "b:d81a7f0b25", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Ziraat Bankası", "not": "'Dönemsel başvuru yok' / tarih ifadesi sayfada yok; çelişmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110", "alinti": "Son 3 mali dönemdeki ya da son mali yıldaki ihracatlarının toplamının ithalatlarının toplamına oranı %110 olan firmaları ifade etmektedir."},
+    {"tur": "sart", "metin": "Asgari C seviyesinde aktif Greendeks skoruna sahip olmak", "alinti": "Asgari C seviyesinde aktif Greendeks skoruna sahip"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "URL sonunda 'destek-paketii' yazım hatası var ama sayfa doğru program."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok."}
+}

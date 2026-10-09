@@ -1,0 +1,13 @@
+{
+  "tesvik_id": 93,
+  "maddeler": [
+    {"anahtar": "s:1b8d277f2d", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Bu paket kapsamındaki krediler kıymetli maden ve döviz alımında, kefaletin sağlandığı kredi veren dışında vadeli mevduat ve diğer yüksek riskli finansal araçlarda, refinansman amacıyla kullanılamaz.", "not": "Nitelik değil kullanım yasağı; listedeki tek madde olması sorun: asıl şart (avukat) yok.", "onerilen_metin": null},
+    {"anahtar": "b:4f841907db", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Vakıfbank", "not": "İlgili finans kuruluşu Vakıfbank, doğru. 'Dönemsel başvuru yok / son tarih belirtilmemiş' notu sayfa metninde geçmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Hukuk bürosu kuracak avukat olmak", "alinti": "Hukuk bürosu kuracak avukatlar"},
+    {"tur": "sart", "metin": "Finansmana erişimde güçlük yaşayan avukat olmak (mevcut büro veya yeni büro kurma giderleri için; 1136 sayılı Kanun m.43)", "alinti": "finansmana erişimde güçlük yaşayan avukatların mevcut bürolarının veya yeni büro kurma giderlerinin karşılanması"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Sürekli banka başvurusu."}
+}

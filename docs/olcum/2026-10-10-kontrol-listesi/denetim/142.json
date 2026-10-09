@@ -1,0 +1,30 @@
+{
+  "tesvik_id": 142,
+  "maddeler": [
+    {"anahtar": "s:b323baa98d", "hukum": "dogru", "dogru_tur": "bilgi",
+     "alinti": "Program kapsamında işletme başına azami kredi limiti, işletmenin 2025 yılı Kasım-Aralık aylarındaki istihdamının muhtasar ve prim hizmet beyannamelerinde beyan edilen işyeri bazında prime esas kazanç toplam tutarının aylık ortalamasını geçmeyecektir.",
+     "not": "İçerik doğru (sayfada ayrıca 'Her hâlükârda kredi üst limiti 50 Milyon TL’dir.' var), ancak bu bir limit bilgisi; başvuranın 'sağlıyorum' diye işaretleyeceği bir şart değil. Sayfadaki 45 Milyon TL kefalet üst limiti ile 50 Milyon TL kredi üst limiti farklı kavramlar.",
+     "onerilen_metin": null},
+    {"anahtar": "b:ec9ea08684", "hukum": "desteksiz", "dogru_tur": "belge",
+     "alinti": "",
+     "not": "Sayfada belge listesi yok.",
+     "onerilen_metin": null},
+    {"anahtar": "b:6fc1e5c038", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "muhtasar ve prim hizmet beyannamelerinde beyan edilen işyeri bazında prime esas kazanç toplam tutarının aylık ortalamasını geçmeyecektir",
+     "not": "Sayfa bu beyannameleri kredi limitinin dayanağı olarak anıyor; başvuruda sunulacağını açıkça yazmıyor, ancak bankanın limit hesabı için isteyeceği makul. 'Kredi limiti bunlardan hesaplanır' notu sayfayla uyumlu.",
+     "onerilen_metin": null},
+    {"anahtar": "b:0a9f9c6515", "hukum": "dogru", "dogru_tur": "bilgi",
+     "alinti": "Kefalet Başvuru Ücreti: 10.000 TL",
+     "not": "Ücret ve yıllık %1,5 komisyon sayfayla uyumlu; ancak bunlar hazırlanacak belge değil, maliyet bilgisi. Kontrol listesinde onay kutusu olmamalı.",
+     "onerilen_metin": null},
+    {"anahtar": "b:b96be3a8a7", "hukum": "belirsiz", "dogru_tur": "adim",
+     "alinti": "DenizBank, Garanti BBVA, Halk Bankası, İş Bankası, Ziraat Bankası,Yapı Kredi Bankası,VakıfBank",
+     "not": "Banka listesi sayfayla uyumlu. Ancak madde 'Önce KOSGEB İstihdamı Koruma Destek Programı başvurusunun KOSGEB'ce onaylanması gerekir (KGF ürün sayfası, Özel Şartlar)' diyor; sayfanın Özel Şartlar bölümünde böyle bir cümle yok (yalnızca kefalet kaynağı 'KOSGEB Kaynağı' ve programın KOSGEB İstihdam Koruma Destek Programı kapsamında olduğu yazıyor). '2026-2 dönemi 31.10.2026'da kapanır' bilgisi de bu sayfada yok. Kullanıcıya yanlış kaynak atfı gösteriliyor.",
+     "onerilen_metin": "Kredi başvurusunu DenizBank, Garanti BBVA, Halk Bankası, İş Bankası, Ziraat Bankası, Yapı Kredi Bankası veya VakıfBank'a yap. (KOSGEB onayı ve 2026-2 dönem kapanış tarihi KGF sayfasında yok; KOSGEB kaynağından ayrıca doğrulanıp kaynağı KOSGEB olarak gösterilmeli.)"}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "NACE Kısım C - İmalat başlığı altında faaliyet gösteren KOBİ olmak", "alinti": "NACE Kodu; Kısım C – İmalat başlığı altında faaliyet gösteren KOBİ’ler destekten yararlanabilecektir."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "KGF'nin programa özel ürün sayfası; KOSGEB başvuru şartları ve dönem bilgisi için KOSGEB sayfası ayrıca gerekir."},
+  "cagri_tutarliligi": {"hukum": "tutarli", "not": "basvuru_suresi (2026-2 dönemi 31.10.2026'da kapanır) ve çağrı kaydı (2026-2, 'Başvuruya açık') kendi aralarında tutarlı. Ancak KGF sayfasında dönem/tarih bilgisi yok, çağrı güncelliği bu sayfadan doğrulanamadı."}
+}

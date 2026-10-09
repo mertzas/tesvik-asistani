@@ -1,0 +1,16 @@
+{
+  "tesvik_id": 90,
+  "maddeler": [
+    {"anahtar": "s:1b8d277f2d", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Bu paket kapsamındaki krediler kıymetli maden ve döviz alımında, kefaletin sağlandığı kredi veren dışında vadeli mevduat ve diğer yüksek riskli finansal araçlarda, refinansman amacıyla kullanılamaz.", "not": "Nitelik değil kullanım yasağı.", "onerilen_metin": null},
+    {"anahtar": "s:6afb4bf332", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Paket kapsamında arsa ve bina yatırımlarına kefalet sağlanmaz. Ancak, arsa ve bina yatırımlarına makine yatırımı ile birlikte yapılması halinde kefalet sağlanabilecektir.", "not": "Koşullu kural (makine yatırımıyla birlikte olursa kefalet var); işaretlenecek madde değil.", "onerilen_metin": null},
+    {"anahtar": "s:031809b355", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Kredi kartı ürünü nakit çekime kapalı olacaktır.", "not": "", "onerilen_metin": null},
+    {"anahtar": "s:f0231050bb", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Tüm harcamalar sözleşme veya fatura ile belgelendirilecektir.", "not": "", "onerilen_metin": null},
+    {"anahtar": "b:ec9ea08684", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "Sayfada banka belge listesi yok.", "onerilen_metin": null},
+    {"anahtar": "b:f9bfb65c1d", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, TEB, Şekerbank, Anadolu Bank, ING Bank.", "not": "Banka listesi doğru. 'KOBİ bankaya başvurur, banka KGF'ye iletir' ve son kullandırım tarihi notu sayfa metninde geçmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "İmalatçı KOBİ olmak", "alinti": "İmalatçı KOBİ’lerin yatırım ve işletme harcamalarına yönelik finansman desteği sağlanması amaçlanmaktadır."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Sürekli banka başvurusu."}
+}

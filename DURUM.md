@@ -243,6 +243,10 @@ Son güncelleme: 2026-10-09 (resmi form şablonları + İKAS sihirbazı). Oturum
   firmaya, organik sertifikasıza, ≤29 yaş kredisi 50 yaşa); şirketsiz sertifikalı girişimciye boş liste
   (`uygunluk_engeli` KOSGEB/KGF'yi toptan kapatıyor). Neden: ölçek/şirket türü 30'ar programda zorunlu, kural 10-12'sinde.
   Veri çelişkisi: KOSGEB 5 ve 9, KGF 142 ve 149. 2. aşama planı raporda, onay bekliyor.
+- **Kontrol listesi + resmî kaynak denetimi** (2026-10-10, `docs/olcum/2026-10-10-kontrol-listesi/RAPOR.md`): 507 madde,
+  alıntıların hepsi doğrulandı. Doğru %49, desteksiz %34, belirsiz %15, yanlış 11 + eskimiş 2; %27'si yanlış türde
+  (şart/belge/adım/kural/bilgi karışık); 177 zorunlu madde eksik; 6 program genel sayfaya bağlı; 4 çağrı çelişkisi.
+  Kullanıcı geri bildirimi: taslak neye hazırlanıyor belirsiz, kutular karışık. Düzeltme planı onay bekliyor.
 - **B2B API planı** (`docs/API_URUN_PLANI.md`, kod yok, onay bekliyor): durumsuz `/v1` uçları (eşleşme, uygunluk,
   hazırlık, çağrılar, program, e-ihracat, şablon taslak), API anahtarı + kapsam + kota + ölçüm, hedef müşteri sırası,
   kill criteria, 6 adımlı uygulama planı.

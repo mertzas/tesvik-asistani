@@ -1,0 +1,31 @@
+{
+  "tesvik_id": 25,
+  "maddeler": [
+    {"anahtar": "s:018be9d65e", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "Öncelikli Alanlar Ar-Ge Projeleri Destekleme Programı Uygulama Esaslarında belirtilen şartları sağlayan, firma düzeyinde katma değer oluşturan Türkiye’de yerleşik tüm sermaye şirketleri proje başvurusunda bulunabilir.",
+     "not": "Madde başka bir belgeye (Uygulama Esasları) atıf yapıyor; kullanıcı neyi işaretleyeceğini anlayamaz. Sayfada işaretlenebilir somut şart: Türkiye'de yerleşik sermaye şirketi olmak.",
+     "onerilen_metin": "Türkiye'de yerleşik bir sermaye şirketiyim (Ltd./A.Ş.)"},
+    {"anahtar": "b:be0f1654b2", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Proje öneri bilgileri formunun PRODİS üzerinden gönderildiği tarih, Ar-Ge projesinin başvuru tarihi olarak kabul edilir.",
+     "not": "Form (AGY111) kesin başvuru süresinde Program Portalı yönlendirmesiyle tamamlanır, PRODİS'ten gönderilir; hazırlama kılavuzu sayfada 'Teknoloji Odaklı Sanayi Hamlesi Proje Öneri Başvuru Formu Hazırlama Kılavuzu' adıyla geçiyor.",
+     "onerilen_metin": null},
+    {"anahtar": "b:8f51bcae04", "hukum": "yanlis", "dogru_tur": "bilgi",
+     "alinti": "Projenin dönemsel gerçekleşen Ar-Ge faaliyetlerini ve harcamalarını içeren AGY311 üzerinde yapılan değerlendirmelerden sonra firmaya destek ödemesi yapılır.",
+     "not": "AGY311 başvuru belgesi değil; destek ödemesi için dönemsel (6 aylık) sunulan istek formu. Sayfa ayrıca 'AGY311 dosyası rapor olarak kullanılamaz, bilgi amaçlıdır' diyor. Başvuru belgesi olarak AGY111 (Proje Öneri Bilgileri Formu) gerekiyor.",
+     "onerilen_metin": "Bu madde başvuru listesinden çıkarılmalı: Ar-Ge Yardımı İstek Formu (AGY311) başvuruda değil, destek aldıktan sonra her dönem için ödeme talebinde sunulur."},
+    {"anahtar": "b:9032af1050", "hukum": "belirsiz", "dogru_tur": "adim",
+     "alinti": "Başvurular, Teknoloji Odaklı Sanayi Hamlesi Programı web sitesinde bulunan Program Portalı uygulaması üzerinden çevrim içi olarak alınmaktadır.",
+     "not": "Madde yalnız PRODİS diyor; sayfada başvuru önce Program Portalı'ndan (ön kayıt/yetkilendirmeyi Sanayi ve Teknoloji Bakanlığı yürütür, TÜBİTAK'ta ön kayıt yapılmaz), proje öneri formu ise PRODİS'ten gönderilir. Çağrı duyuruları hamle.gov.tr'de.",
+     "onerilen_metin": "Açık Hamle çağrısı için Program Portalı'ndan ön ve kesin başvuruyu tamamla; proje öneri formunu PRODİS'ten gönder (çağrılar: hamle.gov.tr)"}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Proje konusuna ait alanda açık (süresi dolmamış) bir Hamle çağrısı bulunmalı", "alinti": "Programa proje sunabilmek için, proje konusuna ait alanda, açık (başvuru süresi dolmamış) bir çağrı bulunması gerekir."},
+    {"tur": "adim", "metin": "Ön kayıt ve yetkilendirme Sanayi ve Teknoloji Bakanlığı üzerinden yapılmalı (TÜBİTAK'ta ön kayıt yok)", "alinti": "ön kayıt ve yetkilendirme süreçleri T.C. Sanayi ve Teknoloji Bakanlığı tarafından yürütülecektir. (TÜBİTAK tarafında ön kayıt işlemi yapılmayacaktır.)"},
+    {"tur": "sart", "metin": "Üretilecek ürün çağrının Öncelikli Ürün Listesi'ndeki GTİP kodlarına sahip veya yenilikçi teknoloji alanlarıyla uyumlu olmalı", "alinti": "üretilmesi hedeflenen ürünün Öncelikli Ürün Listesi’nde yer alan Gümrük Tarife İstatistik Pozisyonu (GTİP) kodlarına sahip ve/veya ürün veya üretim teknolojisi açısından yenilikçi teknoloji alanları ile uyumlu olması gerekmektedir."},
+    {"tur": "kural", "metin": "Projenin nihai amacı yalnız prototip olmamalı; proje yatırıma dönüşüp üretime geçmeli", "alinti": "Projenin nihai amacı sadece prototip oluşturmak ise HAMLE Programına uyumlu bir proje değildir."},
+    {"tur": "belge", "metin": "Bakanlığın atadığı yetkili bağımsız danışmanlık firmasının hazırladığı Bağımsız Değerlendirme Raporu, çağrı takvimindeki süre içinde Program Portalı'na yüklenmeli", "alinti": "Bağımsız Değerlendirme Raporu’nun çağrı takviminde öngörülen süre içerisinde elektronik ortamda Program Portalı’na yüklenmesi gerekmektedir."},
+    {"tur": "sart", "metin": "Proje konusuyla doğrudan ilgili en az lisans düzeyinde proje personeli bulunmalı", "alinti": "proje konusu ile doğrudan ilgili en az lisans düzeyinde personeli bulunmayan projeler hakem ataması yapılmadan ret önerisi oluşturulur."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "cagri_yok", "not": "Dönemsel (çağrı bazlı) program; sayfa 'Açık Çağrılar' için hamle.gov.tr'ye yönlendiriyor, kayıtta çağrı yok."}
+}

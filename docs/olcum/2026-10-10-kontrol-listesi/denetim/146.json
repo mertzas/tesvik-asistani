@@ -1,0 +1,19 @@
+{
+  "tesvik_id": 146,
+  "maddeler": [
+    {"anahtar": "s:ca212d09d6", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "TURWIB programı uygulamasının koşulları gereği, %49 ve üzerinde Türkiye Cumhuriyeti Devleti’ne ait olan kurumların ortaklığına sahip firmalara kredi kullandırılamayacaktır.",
+     "not": "Madde Özel Şartlar'daki iki ayrı koşulu tek kutuya topluyor: (1) devlet kurumlarının ortaklık payı %49'un altında olmalı, (2) yalnızca KOBİ ölçekli firmalar. Ayrıca ilk cümle olumsuz kurulmuş ('kullandırılamayacaktır'), kullanıcı neyi doğrulayacağını anlamakta zorlanır. Programın asıl hedefi (kadın yönetici bulunan işletme) listede yok.",
+     "onerilen_metin": "Devlet kurumlarının (T.C. kamu kurumları) şirket ortaklık payı toplamı %49'un altında olmalı. (KOBİ ölçeğinde olmak ayrı madde olarak gösterilmeli.)"},
+    {"anahtar": "b:86e1435165", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Akbank, Denizbank A.Ş., QNB Finansbank, TEB, Yapı ve Kredi Bankası A.Ş.",
+     "not": "Banka listesi sayfayla uyumlu. 'Dönemsel başvuru yok' ve 'bankadan teyit edin' cümleleri sayfada geçmiyor ama sayfada son tarih de yok; çelişki yok. Bilgi cümlesi onay kutusu metninden ayrılmalı.",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Kadın yönetici bulunan işletme olmak (program amacı; sayfa bunu şart olarak açıkça yazmıyor, 'yönetici' tanımı ve asgari sayı için bankadan teyit edin)", "alinti": "TURWIB Programı kapsamında kadın yönetici bulunan işletmelere destek sağlanarak kadınların iş hayatına daha fazla katılımı amaçlanmaktadır."},
+    {"tur": "sart", "metin": "KOBİ ölçeğinde işletme olmak", "alinti": "TURWIB programı kapsamında sadece KOBİ ölçekli firmalara kredi kullandırımı yapılabilecektir."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "KGF'nin programa özel ürün sayfası."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok, banka kanalıyla başvuru; cagrilar boş, tutarlı."}
+}

@@ -1,0 +1,16 @@
+{
+  "tesvik_id": 77,
+  "maddeler": [
+    {"anahtar": "s:6408b34ebd", "hukum": "desteksiz", "dogru_tur": "adim", "alinti": "", "not": "Canlı sayfa BUGEM ana sayfası; organik destek şartı içermiyor (yalnız haber/duyuru başlıkları).", "onerilen_metin": null},
+    {"anahtar": "s:5c5f113fbd", "hukum": "desteksiz", "dogru_tur": "sart", "alinti": "", "not": "Maddenin kural=true işareti hatalı: içerik olumlu bir nitelik (geçiş süreci-2/3 veya organik statü) ve ayrıca yasak karıştırıyor. Sayfada hiçbiri yok.", "onerilen_metin": null},
+    {"anahtar": "s:f7f24e40f2", "hukum": "desteksiz", "dogru_tur": "sart", "alinti": "", "not": "Hasat/ürün sertifikası şartı sayfada yok; b:cc7c5aa84c ile tekrar.", "onerilen_metin": null},
+    {"anahtar": "s:fafe37b5f7", "hukum": "desteksiz", "dogru_tur": "kural", "alinti": "", "not": "İyi tarım çakışma yasağı sayfada yok.", "onerilen_metin": null},
+    {"anahtar": "s:7df62fb938", "hukum": "desteksiz", "dogru_tur": "adim", "alinti": "", "not": "OTBİS bilgilerini tamamlama sorumluluğu sayfada yok.", "onerilen_metin": null},
+    {"anahtar": "b:9aaf75dca4", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "EK-3 dilekçesi sayfada yok.", "onerilen_metin": null},
+    {"anahtar": "b:cc7c5aa84c", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "Ürün sertifikası sayfada yok.", "onerilen_metin": null},
+    {"anahtar": "b:8bd56d344d", "hukum": "desteksiz", "dogru_tur": "adim", "alinti": "", "not": "Başvuru yeri ve takvim sayfada yok; sayfada yalnız 'Duyurular' listesi var, organik destek ilanı görünmüyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "genel_sayfa", "not": "BUGEM ana sayfası (#organik-tarim bağlantısı); organik tarım destekleme tebliği/ilanı değil. Hiçbir madde doğrulanamadı."},
+  "cagri_tutarliligi": {"hukum": "cagri_yok", "not": "'Yıllık ilan edilir' diyor, dönemsel program; cagrilar boş ve sayfada ilan yok."}
+}

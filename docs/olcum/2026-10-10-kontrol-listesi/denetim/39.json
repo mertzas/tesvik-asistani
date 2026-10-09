@@ -1,0 +1,29 @@
+{
+  "tesvik_id": 39,
+  "maddeler": [
+    {"anahtar": "s:e65900d86c", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "1509 Uluslararası Sanayi Ar-Ge Destek Programına Türkiye’de yerleşik sermaye şirketleri başvuru yapabilmektedir.",
+     "not": "", "onerilen_metin": null},
+    {"anahtar": "b:8c916dd8d8", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Proje Öneri Bilgileri (AGY103) (Yalnızca Bilgi amaçlıdır)",
+     "not": "Başvuru PRODİS'te doldurulur; sayfadaki dosya yalnızca bilgi amaçlı.", "onerilen_metin": null},
+    {"anahtar": "b:d70a6e924d", "hukum": "yanlis", "dogru_tur": "bilgi",
+     "alinti": "Desteklenmeye hak kazanan projeler için altı aylık dönemler halinde PRODİS üzerindeki Ar-Ge Yardım İstek Formu doldurularak elektronik ortamda Başkanlığımıza sunulur.",
+     "not": "Ar-Ge Yardımı İstek Formu başvuru belgesi değil; destek kazanıldıktan sonra altı aylık dönemlerde sunulan ödeme talebi (izleme aşaması). Başvuruda gereken ek belge: ulusal başvurunun uygun bulunduğunu belirten belge/yazı ve uluslararası başvuru formu.",
+     "onerilen_metin": "Bu madde başvuru listesinden çıkarılmalı. Yerine: Uluslararası başvuru formu ve ulusal başvurunun uygun bulunduğunu belirten belge/yazı, AGY103 ekler bölümüne eklendi (belge)."},
+    {"anahtar": "b:8e813df57e", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Başvurular sürekli açıktır ve yılın her günü eteydeb.tubitak.gov.tr adresinden çevrimiçi (online) olarak yapılabilir.",
+     "not": "Önce EUREKA aracına uluslararası ortaklı başvuru yapılmış olmalı ve çağrının değerlendirme takvimine uyulmalı; bunlar maddede yok (eksik maddelerde).",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "adim", "metin": "Ulusal 1509 başvurusundan önce EUREKA araçlarından birine (EUREKA Küme, EUREKA Network vb.) yurt dışı ortaklı uluslararası proje başvurusu yapılmış olmalı", "alinti": "1509 programı ulusal proje başvurusu öncesinde EUREKA altında yer alan araçlara uluslararası ortaklı proje başvurusu yapılmış olmalıdır."},
+    {"tur": "belge", "metin": "Ulusal başvurunun uygun bulunduğunu belirten belge/yazı ve uluslararası başvuru formu, AGY103 ekler bölümüne eklenmeli", "alinti": "Uluslararası çağrılı projelerde ulusal başvurunun uygun bulunduğunu belirtir belgenin ya da yazının ve uluslararası başvuru formunun AGY103 ekler bölümüne eklenmesi gerekmektedir."},
+    {"tur": "sart", "metin": "Proje ekibinde başvuru tarihinde proje konusuyla ilgili en az bir lisans mezunu bulunmalı", "alinti": "Proje ekibinde başvuru tarihi itibariyle proje konusu ile ilgili lisans mezunu en az bir kişinin bulunması gerekmektedir."},
+    {"tur": "belge", "metin": "1509 başvurusu Türkçe yapılır; ekinde İngilizce uluslararası proje dokümanı sunulur", "alinti": "Firmanın 1509 programına yapacağı başvuru Türkçe olarak yapılır. Bu başvurunun ekinde İngilizce olarak hazırlanan uluslararası proje dokümanı da sunulur."},
+    {"tur": "kural", "metin": "Aynı uluslararası projede birden fazla Türk ortak varsa tek bir ortak 1509 başvurusu yapılır", "alinti": "Türk kuruluşlar, ortak proje önerisi hazırlayarak tek bir 1509 proje başvurusu yaparlar."},
+    {"tur": "kural", "metin": "Ar-Ge faaliyeti başvurudan önce tamamlanmış projeler desteklenmez", "alinti": "Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Sürekli açık; ancak çağrılı uluslararası programlarda ilgili çağrının takvimi geçerli (maddede belirtilmiş). Çağrı kaydı yok, uyumlu."}
+}

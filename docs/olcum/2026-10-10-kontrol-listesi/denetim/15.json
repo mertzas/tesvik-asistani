@@ -1,0 +1,27 @@
+{
+  "tesvik_id": 15,
+  "maddeler": [
+    {"anahtar": "s:9b0e0df5e5", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Müşteri Kuruluş ise Teknoloji Sağlayıcı Kuruluşun hak sahibi olduğu ve ulusal veya uluslararası patentler ile korunan teknolojileri lisanslama ya da devir yolu ile edinerek ekonomik değer oluşturmayı hedefleyen ve Türkiye’de yerleşik sermaye şirketi olarak tanımlanmıştır.",
+     "not": "Etiket 'Başvuran' diyor; oysa Müşteri Kuruluş tek başına başvuramaz, en az bir Teknoloji Sağlayıcı ile ortak başvurur (eksik maddelerde).",
+     "onerilen_metin": null},
+    {"anahtar": "s:0ded72acf6", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Teknoloji Sağlayıcı Kuruluşun hak sahibi olduğu ve ulusal veya uluslararası patentler ile korunan teknolojileri",
+     "not": "Tescil şart değil: araştırma raporu olan, henüz tescil edilmemiş patent başvurusuyla da başvurulabilir (destek tescilden sonra); faydalı model giderleri kapsam dışı.",
+     "onerilen_metin": null},
+    {"anahtar": "b:f4425315ca", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "TÜBİTAK tarafından ayrıca bir duyuru yapılana kadar Çağrı sürekli başvuruya açıktır.",
+     "not": "Süre doğru. PRODİS'ten gönderim için kuruluş bazlı ön kayıt onayı gerektiği maddede yok (eksik maddelerde).",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "adim", "metin": "Kuruluş bazlı ön kayıt onayı alınmış olmalı (daha önce onay alan kuruluş tekrar yaptırmaz)", "alinti": "Başvuru yapabilmek için kuruluş bazlı ön kayıt belgelerinin TÜBİTAK’a ulaştırılması gerekir."},
+    {"tur": "sart", "metin": "En az bir Teknoloji Sağlayıcı Kuruluşla (üniversite, araştırma altyapısı, TTO, teknoloji geliştirme bölgesi şirketi vb.) ortak başvuru; başvuruda tek Müşteri Kuruluş", "alinti": "Çağrı kapsamında bir Müşteri Kuruluş en az bir Teknoloji Sağlayıcı Kuruluşun ortak başvuruları kabul edilecektir."},
+    {"tur": "belge", "metin": "Müşteri ile Teknoloji Sağlayıcı arasındaki teknoloji transferi sözleşmesi (proje önerisi ekinde)", "alinti": "Teknoloji transferi sözleşmesinin proje önerisi ekinde sunulması gerekmektedir."},
+    {"tur": "belge", "metin": "Tescil edilmemiş patent için araştırma raporu (proje önerisi ekinde)", "alinti": "Henüz tescil olmamış patentler için araştırma raporlarının proje önerisi ekinde sunulması gerekmektedir."},
+    {"tur": "belge", "metin": "Patent özet tablosu, patent tescil belgesi, araştırma/inceleme raporu ve değerleme raporu (TÜBİTAK talep ettiğinde tamamlanır)", "alinti": "Teknoloji transferi sözleşmesi, patent özet tablosu, patent tescil belgesi, araştırma ve/veya inceleme raporu, değerleme raporu ve gerekli görülen diğer hususlara ilişkin ilave bilgi ve belge talepleri"},
+    {"tur": "kural", "metin": "Devralınan/lisanslanan patentler proje süresince başkasına devredilemez veya lisanslanamaz; faydalı model lisans/devir giderleri desteklenmez", "alinti": "müşteri kuruluş, desteklenen proje kapsamında devraldığı patentleri, proje süresi içerisinde başka bir kurum ya da kuruluşa devredemez"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Çağrı 3 Ekim 2022'de açılmış, TÜBİTAK ayrıca duyuru yapana kadar sürekli açık; çağrı kaydı yok, uyumlu."}
+}

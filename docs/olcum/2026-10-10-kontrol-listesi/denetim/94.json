@@ -1,0 +1,17 @@
+{
+  "tesvik_id": 94,
+  "maddeler": [
+    {"anahtar": "s:d551005864", "hukum": "dogru", "dogru_tur": "sart", "alinti": "faaliyet kodu A-Tarım, Ormancılık ve Balıkçılık bölümünde bulunan gerçek ve tüzel kişi işletmelerin", "not": "Sayfa NACE Rev 2.1 bölüm A diyor; ayrıca kredi 'üretim faaliyetlerine yönelik' olmalı (madde bunu atlıyor).", "onerilen_metin": null},
+    {"anahtar": "s:065212116a", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, HalkBank, TEB, YKB", "not": "10 banka doğru. Nitelik değil adım; basvuru maddesiyle tekrar.", "onerilen_metin": null},
+    {"anahtar": "b:9b39f2f9d1", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "Sayfada gerekli belge listesi yok.", "onerilen_metin": null},
+    {"anahtar": "b:0197298d8d", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "'İşletme/çiftçi kayıt belgesi' canlı sayfada geçmiyor.", "onerilen_metin": null},
+    {"anahtar": "b:2d33ef0b37", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "Teminat/gelir belgeleri sayfada yok.", "onerilen_metin": null},
+    {"anahtar": "b:af58a97a1a", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, HalkBank, TEB, YKB", "not": "Banka listesi doğru. 'Sürekli (banka şubesi üzerinden bireysel başvuru)' ifadesi sayfada yok.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "KOBİ olmak (kefalet limiti tablosunda yararlanıcı KOBİ)", "alinti": "KOBİ İşletme Kredisi 10 Milyon TL"},
+    {"tur": "kural", "metin": "Kredi üretim faaliyetlerine yönelik işletme veya yatırım kredisi olmalı", "alinti": "üretim faaliyetlerine yönelik olarak Kredi Veren tarafından kullandırılacak işletme ve yatırım kredilerinin"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Sürekli banka başvurusu."}
+}

@@ -1,0 +1,18 @@
+{
+  "tesvik_id": 133,
+  "maddeler": [
+    {"anahtar": "s:de8a198eb9", "hukum": "dogru", "dogru_tur": "kural",
+     "alinti": "Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir.",
+     "not": "Özel Şartlar'dan aynen alınmış üç ayrı kredi sınırı (yalnız yeni/ilave kredi, yalnız TL, döviz-altın-mücevherat finansmanında kullanılamaz). Başvuranın niteliği değil kredinin sınırı; işaretlenecek şart olarak değil kural olarak gösterilmeli. Programın asıl yararlanıcı şartı (savunma sanayii sektörü) listede yok, eksik_maddeler'e bakınız.",
+     "onerilen_metin": null},
+    {"anahtar": "b:7a35c35ae2", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Halkbank, Vakıfbank, Ziraat Bankası, Ziraat Katılım, Denizbank, Yapı ve Kredi Bankası",
+     "not": "Banka listesi sayfayla birebir. 'Dönemsel başvuru yok' ve 'bankadan teyit edin' cümleleri sayfada geçmiyor ama sayfada son tarih de yok; çelişki yok. Bilgi cümlesi onay kutusu metninden ayrılmalı.",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Savunma Sanayii sektöründe faaliyet gösteren işletme olmak (kefalet tablosunda yararlanıcı: KOBİ)", "alinti": "Savunma Sanayii sektöründe faaliyet gösteren işletmelere kefalet desteği"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "KGF'nin programa özel ürün sayfası."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok, banka kanalıyla başvuru; cagrilar boş, tutarlı."}
+}

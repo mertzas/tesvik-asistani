@@ -1,0 +1,15 @@
+{
+  "tesvik_id": 76,
+  "maddeler": [
+    {"anahtar": "s:17977eb557", "hukum": "desteksiz", "dogru_tur": "sart", "alinti": "", "not": "Canlı sayfa yalnız 'talimat yayımlandı' duyurusu; TÜRKVET kaydı / doğum şartı sayfada yok (Tebliğ 2024/23 atfı doğrulanamadı).", "onerilen_metin": null},
+    {"anahtar": "s:c3d763a06a", "hukum": "desteksiz", "dogru_tur": "sart", "alinti": "", "not": "120 gün yaşama şartı canlı sayfada yok.", "onerilen_metin": null},
+    {"anahtar": "s:a8815d088c", "hukum": "desteksiz", "dogru_tur": "sart", "alinti": "", "not": "Aşı/VETBİS şartı canlı sayfada yok.", "onerilen_metin": null},
+    {"anahtar": "s:a2232762c0", "hukum": "desteksiz", "dogru_tur": "sart", "alinti": "", "not": "Kuzu/oğlak şartları canlı sayfada yok; sayfa yalnız büyükbaş (buzağı/malak) talimatı duyurusu.", "onerilen_metin": null},
+    {"anahtar": "s:76b885fb10", "hukum": "desteksiz", "dogru_tur": "sart", "alinti": "", "not": "Birlik üyeliği şartı canlı sayfada yok. Ayrıca koşullu ifade içeriyor ('il birliği olmayan illerde aranmaz').", "onerilen_metin": null},
+    {"anahtar": "b:982b79e808", "hukum": "dogru", "dogru_tur": "belge", "alinti": "2026 yılı büyükbaş hayvancılık (buzağı/malak) desteklemeleri talimatı, iş takvimi ve başvuru dilekçe örneklerine ulaşmak için", "not": "Sayfa yalnız büyükbaş talimatı için dilekçe örneği bağlantısı veriyor; kuzu/oğlak için dilekçe bilgisi yok. 'Talimat ekindeki örnek' ifadesi sayfada geçmiyor, örnekler bağlantıdan alınıyor.", "onerilen_metin": null},
+    {"anahtar": "b:6c6df1b112", "hukum": "desteksiz", "dogru_tur": "adim", "alinti": "", "not": "Canlı sayfada dönem tarihleri (01/09/2026-01/12/2026 vb.), başvuru yeri (il/ilçe müdürlüğü, birlik, HDS) yok. Duyuru tarihi 1.09.2026; tarihlerin kaynağı talimat metni olmalı ama bu sayfada doğrulanamadı.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "HAYGEM'in 2026 büyükbaş (buzağı/malak) talimatı duyurusu; kuzu/oğlak ve diğer hayvancılık kalemlerini kapsamıyor, şartlar talimat metninde (sayfada yok)."},
+  "cagri_tutarliligi": {"hukum": "cagri_yok", "not": "basvuru_suresi dönemleri (2026-2027) sayıyor ama cagrilar boş; dönemler canlı sayfada da doğrulanamadı."}
+}

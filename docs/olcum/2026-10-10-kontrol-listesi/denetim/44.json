@@ -1,0 +1,29 @@
+{
+  "tesvik_id": 44,
+  "maddeler": [
+    {"anahtar": "s:751347e62a", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "1507- KOBİ Ar-Ge Destek Programına sadece KOBİ ölçeğinde olan Türkiye’de yerleşik sermaye şirketleri başvuru yapabilmektedir.",
+     "not": "Sayfa KOBİ Beyannamesine ('Mali Hususlar ve Ödeme' bölümü) yönlendiriyor.", "onerilen_metin": null},
+    {"anahtar": "s:947d7f95da", "hukum": "yanlis", "dogru_tur": "kural",
+     "alinti": "Firmaların en az ikisi ortaklı olmak kaydıyla ilk beş projesi desteklenir (İlk beş destek sonrası diğer programlara başvurulmalıdır).",
+     "not": "Madde 'aynı anda en fazla 5 proje' diyor; sayfada eşzamanlılık sınırı yok, firmanın toplamda ilk 5 projesi desteklenir ve sonrasında başka programlara başvurulur. Kullanıcıyı yanıltır: 5 projesi bitmiş firma da 1507'ye yeniden başvuramaz.",
+     "onerilen_metin": "Bu programdan daha önce 5 proje desteği almadım (ilk 5 projenin en az ikisi ortaklı proje olmalıdır; 5 destekten sonra diğer programlara başvurulur)"},
+    {"anahtar": "b:7afe6aa9de", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Proje Öneri Bilgileri Formu Hazırlama Kılavuzu",
+     "not": "Başvuru yalnız PRODİS'ten yapılır; Proje Öneri Bilgileri Formu (AGY100) sayfada 'başvuru yapmak için kullanılamaz, taslak çalışma içindir' diye belirtilmiş.", "onerilen_metin": null},
+    {"anahtar": "b:e6b631397d", "hukum": "desteksiz", "dogru_tur": "belge",
+     "alinti": "",
+     "not": "Canlı sayfada başvuruda sunulacak 'şirket kuruluş/faaliyet belgeleri' geçmiyor; yalnız KOBİ Beyannamesine yönlendirme var.", "onerilen_metin": null},
+    {"anahtar": "b:f934650cf0", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Genel olarak yılda iki çağrı açılır ve yine genel olarak başvuru Ocak-Şubat ve Temmuz-Ağustos aylarında yapılır.",
+     "not": "Sayfa 'genel olarak' diyor; aynı sayfa '2026 yılı 2. Çağrısı Açıldı' duyurusunu da veriyor ve kesin tarih vermiyor (çağrı dokümanı ekte). Kullanıcı kesin tarihi çağrı dokümanından teyit etmeli.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "kural", "metin": "Ar-Ge faaliyeti başvurudan önce tamamlanmış projeler desteklenmez", "alinti": "Hayır. Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez."},
+    {"tur": "kural", "metin": "Proje bütçesi en fazla 3.500.000 TL olmalı", "alinti": "Proje bütçesi en fazla 3.500.000 TL’dir."},
+    {"tur": "kural", "metin": "Proje süresi en fazla 18 ay olmalı (çağrı duyurusunda belirtilir)", "alinti": "Proje destek süresi çağrı duyurusunda belirtilir ve Programın Uygulama Esasları gereği 18 ayı aşamaz."},
+    {"tur": "kural", "metin": "Başvuru yalnız duyurulan çağrı döneminde PRODİS üzerinden yapılır", "alinti": "1507 KOBİ Ar-Ge Başlangıç Destek Programına başvurular çağrı duyurularına göre yapılır."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "tutarli", "not": "Kayıttaki çağrı 'açık' ve sayfa '2026 yılı 2. Çağrısı Açıldı' diyor; basvuru_suresi genel Ocak-Şubat/Temmuz-Ağustos kalıbını veriyor ve teyit istiyor. Çağrının kesin tarihleri canlı sayfa metninde yok, bu yüzden açık/kapalı durumu tarihle doğrulanamadı."}
+}

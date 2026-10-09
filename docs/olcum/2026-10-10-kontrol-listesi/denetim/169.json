@@ -1,0 +1,13 @@
+{
+  "tesvik_id": 169,
+  "maddeler": [
+    {"anahtar": "s:65d852463b", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz.", "not": "Kredi kullanım yasağı; TL şartı da sayfada ('sadece TL para cinsinden'). Bu madde paketin tek sart maddesi olarak duruyor, oysa asıl şartlar eksik.", "onerilen_metin": null},
+    {"anahtar": "b:d9c616213f", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Ziraat Bankası", "not": "'Dönemsel başvuru yok' / tarih ifadesi sayfada yok; çelişmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "T.C. Kanunlarına göre kurulmuş KOBİ olmak", "alinti": "T.C. Kanunlarına göre kurulmuş KOBİ tanımını haiz işletmeler,"},
+    {"tur": "sart", "metin": "Kadın girişimci ya da 18-35 yaş genç girişimci olmak (şahıs firması sahibi; tüzel firmada kadın veya 18-35 yaş ortakların hisse toplamı %50 ve üzeri)", "alinti": "Firma ortaklarından 18-35 yaş arasındaki Genç Girişimci olanların hissesi toplamları %50 ve üzeri olan tüzel firmalar"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok."}
+}

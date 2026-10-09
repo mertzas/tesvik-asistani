@@ -1,0 +1,12 @@
+{
+  "tesvik_id": 172,
+  "maddeler": [
+    {"anahtar": "s:318f8899ef", "hukum": "belirsiz", "dogru_tur": "kural", "alinti": "Program kapsamında kullandırılan krediler, yararlanıcıların faaliyet konuları dışında döviz veya kıymetli maden alımında ya da refinansman amacıyla kullanılamaz.", "not": "Madde sayfa tablosunun ham kopyası (limitler, oran, ücret, kurallar karışık). Değerler doğru: şahıs 2,2 milyon TL, tüzel 5 milyon TL, %80, yıllık %2, başvuru ücreti 10.000 TL. İşaretlenebilir bir şart değil.", "onerilen_metin": "Kredi bankanın kullandıracağı yeni ve ilave kredi olmalı; faaliyet konusu dışında döviz/kıymetli maden alımında veya refinansmanda kullanılamaz (kural, işaretlenmez)"},
+    {"anahtar": "b:ec9ea08684", "hukum": "belirsiz", "dogru_tur": "belge", "alinti": "", "not": "Sayfada belge listesi yok.", "onerilen_metin": "Akbank’ın kredi başvurusu için istediği belge listesini bankadan alıp hazırladım"},
+    {"anahtar": "b:15ec71351f", "hukum": "dogru", "dogru_tur": "bilgi", "alinti": "10.000 TL", "not": "Ücret bilgisidir, belge değil.", "onerilen_metin": null},
+    {"anahtar": "b:d4ea76cac2", "hukum": "dogru", "dogru_tur": "adim", "alinti": "KGF Dijital Kefalet Destek Programı ile, Kredi Verenlerce dijital kanallardan tahsis yöntemiyle yararlanıcılara kullandırılacak krediler için kefalet desteği sağlanması amaçlanmaktadır.", "not": "Banka Akbank (sayfada AKBANK). 'Dönemsel başvuru yok' / tarih ifadesi sayfada yok; çelişmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok."}
+}

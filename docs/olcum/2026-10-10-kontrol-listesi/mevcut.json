@@ -1,0 +1,3988 @@
+[
+ {
+  "id": 1,
+  "kurum": "KOSGEB",
+  "baslik": "Girişimci Destek Programı",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/1231/girisimci-destek-programi",
+  "basvuru_yeri": "KOSGEB e-Hizmetler (e-Devlet şifresi ile online)",
+  "basvuru_suresi": "Dönemsel çağrı: İş Geliştirme 2026/2 dönemi 20 Nisan – 8 Mayıs 2026 (kapandı); yılda iki dönem, güncel takvim KOSGEB duyurularından",
+  "maddeler": [
+   {
+    "anahtar": "s:d81a487b9e",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İş Kurma Desteği: KOSGEB destekli sektörde faaliyet gösteren 0-1 yaş işletme"
+   },
+   {
+    "anahtar": "s:5c68518bc9",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İş Geliştirme Desteği: İmalat/yazılım/Ar-Ge sektöründe 0-3 yaş işletme"
+   },
+   {
+    "anahtar": "s:a9a0ec0fd7",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOSGEB veri tabanına kayıtlı ve aktif olmalı"
+   },
+   {
+    "anahtar": "s:b3e20954ee",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Şirket türü tutarı belirler: Gerçek kişi (şahıs) işletmesi 10.000 TL, sermaye şirketi (Ltd./A.Ş.) 20.000 TL İş Kurma Desteği alır"
+   },
+   {
+    "anahtar": "s:d84f49ae10",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Girişimcinin başvurduğu işletmedeki ortaklık payı en az %50 olmalıdır"
+   },
+   {
+    "anahtar": "s:fb50bde777",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Desteklenen sektörler arasında imalat, telekomünikasyon, bilgisayar programlama, bilişim altyapısı ve bilimsel Ar-Ge yer alır"
+   },
+   {
+    "anahtar": "b:e70cd514f9",
+    "tur": "belge",
+    "kural": false,
+    "metin": "e-Devlet üzerinden başvuru formu"
+   },
+   {
+    "anahtar": "b:70bfacc688",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Proje Bilgi Dokümanı"
+   },
+   {
+    "anahtar": "b:926fd8f295",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ödeme Belgeleri"
+   },
+   {
+    "anahtar": "b:e304f53777",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İşletme Değerlendirme Raporu (gerekirse)"
+   },
+   {
+    "anahtar": "b:812de07aa1",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: KOSGEB e-Hizmetler (e-Devlet şifresi ile online) — Dönemsel çağrı: İş Geliştirme 2026/2 dönemi 20 Nisan – 8 Mayıs 2026 (kapandı); yılda iki dönem, güncel takvim KOSGEB duyurularından"
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "İş Geliştirme Çağrısı 2026 yılı 2. dönem",
+    "durum": "kapandi",
+    "durum_metni": "Kapandı",
+    "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/detay/9374/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-2-donem-basvurulari-basladi"
+   }
+  ]
+ },
+ {
+  "id": 2,
+  "kurum": "KOSGEB",
+  "baslik": "Yapay Zekâ Kredi Programı",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi",
+  "basvuru_yeri": "KOSGEB bilgi sistemi (www.kosgeb.gov.tr ve/veya e-Devlet) üzerinden Yapay Zeka Kredi Başvurusu",
+  "basvuru_suresi": "Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir",
+  "maddeler": [
+   {
+    "anahtar": "s:3c28e1af00",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Türk Ticaret Kanunu'nda tanımlı gerçek veya tüzel kişi statüsünde KOBİ olmak"
+   },
+   {
+    "anahtar": "s:029b99ab56",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak"
+   },
+   {
+    "anahtar": "s:bc5b0d77ad",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak"
+   },
+   {
+    "anahtar": "s:00bd746de9",
+    "tur": "sart",
+    "kural": false,
+    "metin": "GO Dijital Cüzdan hesabına sahip olmak"
+   },
+   {
+    "anahtar": "s:c8dc944b19",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bankadan GO Dijital Teknoloji Hizmetleri A.Ş.'ye hitaben Kesin Teminat Mektubu getirmek (limit = teminat tutarı, en az 500.000 TL)"
+   },
+   {
+    "anahtar": "b:a8531364a6",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Yapay Zekâ Kredisi Başvuru Formu (KOSGEB sistemi / e-Devlet üzerinden elektronik)"
+   },
+   {
+    "anahtar": "b:4f8c40c70d",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Yapay Zekâ Kredisi Taahhütnamesi"
+   },
+   {
+    "anahtar": "b:20822fd8a2",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Yapay Zekâ Kredisi Hizmet Giderleri Tablosu"
+   },
+   {
+    "anahtar": "b:ab7a4f3857",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Bankadan Kesin Teminat Mektubu (kredinin GO Dijital Cüzdan hesabına blokeli aktarımı için zorunlu)"
+   },
+   {
+    "anahtar": "b:e69575ba8b",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: KOSGEB bilgi sistemi (www.kosgeb.gov.tr ve/veya e-Devlet) üzerinden Yapay Zeka Kredi Başvurusu — Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 3,
+  "kurum": "KOSGEB",
+  "baslik": "KOBİ Dijital Dönüşüm Destek Programı",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi",
+  "basvuru_yeri": "KOSGEB KOBİ Bilgi Sistemi (online)",
+  "basvuru_suresi": "Sürekli açık başvuru (24 aylık program süresi içinde kullanım gerekir)",
+  "maddeler": [
+   {
+    "anahtar": "s:28b279429e",
+    "tur": "sart",
+    "kural": false,
+    "metin": "C-İmalat sektöründe faaliyet (NACE kodu)"
+   },
+   {
+    "anahtar": "s:27b1aaf775",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOSGEB veri tabanında aktif kayıtlı KOBİ"
+   },
+   {
+    "anahtar": "s:09e3f6176b",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Onaylı dijital dönüşüm/olgunluk değerlendirme raporu (TÜSSİDE-DDX veya SIRI formatı)"
+   },
+   {
+    "anahtar": "s:278020e8ca",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Son mali yıl öz kaynakları pozitif, son 3 yıldan en az biri kârlı"
+   },
+   {
+    "anahtar": "b:7d21270250",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Dijital dönüşüm/olgunluk değerlendirme raporu"
+   },
+   {
+    "anahtar": "b:f8ca76ce14",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Başvuru Formu"
+   },
+   {
+    "anahtar": "b:be77705877",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Mali tablolar ve işletme beyanı"
+   },
+   {
+    "anahtar": "b:d9316d520e",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Satın alma faturaları/makbuzlar"
+   },
+   {
+    "anahtar": "b:7812722efd",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: KOSGEB KOBİ Bilgi Sistemi (online) — Sürekli açık başvuru (24 aylık program süresi içinde kullanım gerekir)"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 4,
+  "kurum": "KOSGEB",
+  "baslik": "Teknoloji Merkezi Destek Programı",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9297/teknoloji-merkezi-destek-programi",
+  "basvuru_yeri": "KOSGEB'e Kuruluş Desteği Ön Başvuru Formu ve Başvuru Formu ile; kurucular münferiden ya da müştereken başvurur. Hızlandırma Desteği çağrı esaslıdır.",
+  "basvuru_suresi": "2026-01 COP31 Hızlandırma Çağrısı başvuruları 9–30 Ağustos 2026 (kapandı); çağrı bazlı",
+  "maddeler": [
+   {
+    "anahtar": "s:ee9fcb6ea0",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Programdan TEKMER işletici kuruluşu ve TGB yönetici şirketi yararlanabilir. Program kapsamında Kuruluş Desteği, Performans Desteği ve Hızlandırma Desteği sağlanır. Destek programından yararlanılabilmesi için; Yararlanıcının, Türk Ticaret Kanunu’nda tanımlı anonim şirket statüsünde, sistemde kayıtlı ve aktif durumda olması gerekir."
+   },
+   {
+    "anahtar": "b:79769c4120",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Teknoloji Merkezi Destek Programı Kuruluş Desteği Ön Başvuru Formu"
+   },
+   {
+    "anahtar": "b:0534642e68",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Teknoloji Merkezi Destek Programı Kuruluş Desteği Başvuru Formu"
+   },
+   {
+    "anahtar": "b:39819e754b",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: KOSGEB'e Kuruluş Desteği Ön Başvuru Formu ve Başvuru Formu ile; kurucular münferiden ya da müştereken başvurur. Hızlandırma Desteği çağrı esaslıdır. — 2026-01 COP31 Hızlandırma Çağrısı başvuruları 9–30 Ağustos 2026 (kapandı); çağrı bazlı"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 5,
+  "kurum": "KOSGEB",
+  "baslik": "YÖNDE - Yönderlik ve Değerlendirme Destek Programı",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9165/yonde-yonderlik-ve-degerlendirme-destek-programi",
+  "basvuru_yeri": "KOSGEB sistemi (www.kosgeb.gov.tr) üzerinden YÖNDE başvuru formu ile",
+  "basvuru_suresi": "Sayfada başvuru dönemi belirtilmemiştir. Başvurular en geç 15 gün içinde kontrol edilir; destek, başvurunun KOSGEB'ce onaylandığı tarihte başlar.",
+  "maddeler": [
+   {
+    "anahtar": "s:0633cf9cef",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvuru yapacak işletmenin; Türk Ticaret Kanunu’nda tanımlı gerçek veya tüzel kişi statüsünde olması"
+   },
+   {
+    "anahtar": "s:f8c4201947",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması"
+   },
+   {
+    "anahtar": "b:4b1a9b9eb0",
+    "tur": "belge",
+    "kural": false,
+    "metin": "YÖNDE Başvuru Formu"
+   },
+   {
+    "anahtar": "b:4cfe7ff52a",
+    "tur": "belge",
+    "kural": false,
+    "metin": "YÖNDE Taahhütnamesi"
+   },
+   {
+    "anahtar": "b:71eef0d40e",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Başvuru ve Ödeme Belgeleri Tablosu'nda sayılan belgeler"
+   },
+   {
+    "anahtar": "b:44b975c998",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: KOSGEB sistemi (www.kosgeb.gov.tr) üzerinden YÖNDE başvuru formu ile — Sayfada başvuru dönemi belirtilmemiştir. Başvurular en geç 15 gün içinde kontrol edilir; destek, başvurunun KOSGEB'ce onaylandığı tarihte başlar."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 6,
+  "kurum": "KOSGEB",
+  "baslik": "Sektörel Gelişim Merkezi (SEGEM) Destek Programı",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9327/sektorel-gelisim-merkezi-segem-destek-programi",
+  "basvuru_yeri": "www.kosgeb.gov.tr \"e-hizmetler\" menüsünden çevrim içi",
+  "basvuru_suresi": "Program sürekli olarak başvuruya açıktır (KOSGEB program sayfası).",
+  "maddeler": [
+   {
+    "anahtar": "s:77fb8b57d3",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Destek programından yararlanabilecek yapılar şunlardır : a) Model fabrikalar, b) Rekabetçi Sektörler Programı kapsamındaki merkezler, c) Sektörün gelişimine katkı sunan işletmeler. Destek programından yararlanacak başvuru sahibinin: KOSGEB Veri Tabanında kayıtlı, aktif durumda olması"
+   },
+   {
+    "anahtar": "s:65992f70ec",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvurusunun jüri tarafından uygun bulunması"
+   },
+   {
+    "anahtar": "s:d19945bd36",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kabul sözleşmesinin KOSGEB ile başvuru sahibi/işletici kuruluş tarafından imzalanmış şekilde evrak kaydına alınması ve taahhütnameyi onaylaması gerekir."
+   },
+   {
+    "anahtar": "b:87829480a6",
+    "tur": "belge",
+    "kural": false,
+    "metin": "SEGEM Destek Programı Ön Başvuru Formu"
+   },
+   {
+    "anahtar": "b:48f04b0f96",
+    "tur": "belge",
+    "kural": false,
+    "metin": "SEGEM Destek Programı Başvuru Formu"
+   },
+   {
+    "anahtar": "b:47ebb03902",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: www.kosgeb.gov.tr \"e-hizmetler\" menüsünden çevrim içi — Program sürekli olarak başvuruya açıktır (KOSGEB program sayfası)."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 7,
+  "kurum": "KOSGEB",
+  "baslik": "İstihdamı Koruma Destek Programı",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi",
+  "basvuru_yeri": "KOSGEB'e 2026-2 dönemi formlarıyla (Başvuru Formu, Taahhütname); kredi, bankalardan kullanılır",
+  "basvuru_suresi": "2026-2 dönemi başvuruları: 1 Eylül – 31 Ekim 2026",
+  "maddeler": [
+   {
+    "anahtar": "s:c0b895957a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Merkez veya şube; ana veya yan faaliyet NACE kodunun Kısım C – İmalat başlığı altında yer alması"
+   },
+   {
+    "anahtar": "s:29e0ad4aef",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İşletme Beyanının güncel olması"
+   },
+   {
+    "anahtar": "s:652deec6b0",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Türk Ticaret Kanunu'nda tanımlı gerçek veya tüzel kişi statüsünde olması"
+   },
+   {
+    "anahtar": "s:b1dc425228",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOBİ veya büyük işletme olması (ikisi de başvurabilir)"
+   },
+   {
+    "anahtar": "s:98935dfae9",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kredi kullanmak ve 2026 Ocak-Haziran ortalama aylık prim gün sayısını 2026 Temmuz-Aralık döneminde korumak (finansman desteği için)"
+   },
+   {
+    "anahtar": "b:cbc5e25378",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İstihdamı Koruma Destek Programı Başvuru Formu"
+   },
+   {
+    "anahtar": "b:3681b0fb27",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İstihdamı Koruma Destek Programı Taahhütnamesi"
+   },
+   {
+    "anahtar": "b:78db5945d1",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Destek Hesaplama Tablosu"
+   },
+   {
+    "anahtar": "b:c36f91e20d",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: KOSGEB'e 2026-2 dönemi formlarıyla (Başvuru Formu, Taahhütname); kredi, bankalardan kullanılır — 2026-2 dönemi başvuruları: 1 Eylül – 31 Ekim 2026"
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "2026-2 dönemi",
+    "durum": "acik",
+    "durum_metni": "Başvuruya açık",
+    "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi"
+   },
+   {
+    "ad": "2026-1 dönemi",
+    "durum": "kapandi",
+    "durum_metni": "Kapandı",
+    "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi"
+   }
+  ]
+ },
+ {
+  "id": 8,
+  "kurum": "KOSGEB",
+  "baslik": "Kapasite Geliştirme Destek Programı",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9200/kapasite-gelistirme-destek-programi",
+  "basvuru_yeri": "KOSGEB e-Hizmetler (edevlet.kosgeb.gov.tr)",
+  "basvuru_suresi": "Dönemsel çağrı: 2026 yılı 2. başvuru dönemi 6 Haziran 2026'da başladı; güncel takvim KOSGEB duyurularından",
+  "maddeler": [
+   {
+    "anahtar": "s:2b8166dfc7",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İmalat, telekomünikasyon, bilgisayar programlama vb. NACE kodunda faaliyet"
+   },
+   {
+    "anahtar": "s:27b1aaf775",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOSGEB veri tabanında aktif kayıtlı KOBİ"
+   },
+   {
+    "anahtar": "s:333de19ad9",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Hızlı büyüyen işletme (teknogirişim rozeti veya tedarikçi geliştirme protokolü ile şart aranmayabilir)"
+   },
+   {
+    "anahtar": "b:2cab884a72",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Başvuru Kontrol Formu"
+   },
+   {
+    "anahtar": "b:570272946a",
+    "tur": "belge",
+    "kural": false,
+    "metin": "KOSGEB e-hizmetler üzerinden istenen ek belgeler (mevzuata göre değişir)"
+   },
+   {
+    "anahtar": "b:48d33a68c7",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: KOSGEB e-Hizmetler (edevlet.kosgeb.gov.tr) — Dönemsel çağrı: 2026 yılı 2. başvuru dönemi 6 Haziran 2026'da başladı; güncel takvim KOSGEB duyurularından"
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "2026 yılı 2. başvuru dönemi",
+    "durum": "kapandi",
+    "durum_metni": "Kapandı",
+    "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/detay/9391/ureten-kobilere-guclu-destek-yeni-basvuru-donemi-basladi"
+   }
+  ]
+ },
+ {
+  "id": 9,
+  "kurum": "KOSGEB",
+  "baslik": "Küresel Rekabetçilik Destek Programı",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9206/kuresel-rekabetcilik-destek-programi",
+  "basvuru_yeri": "KOSGEB KOBİ Bilgi Sistemi (KBS) üzerinden, dönemsel proje teklif çağrısına göre",
+  "basvuru_suresi": "Dönemsel: başvurular KOSGEB'in duyurduğu proje teklif çağrısı döneminde KOSGEB KOBİ Bilgi Sistemi (KBS) üzerinden alınır; dönem tarihleri çağrı duyurusunda ilan edilir (bkz. başvuru dönemleri).",
+  "maddeler": [
+   {
+    "anahtar": "s:0ba4e5891d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvuru yapacak işletmenin; KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması"
+   },
+   {
+    "anahtar": "s:c44640f3f0",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Türk Ticaret Kanunu'nda tanımlı gerçek veya tüzel kişi statüsünde faaliyet göstermesi"
+   },
+   {
+    "anahtar": "s:4ec004d81e",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Aşağıda yer alan kriterlerden herhangi birini sağlaması gerekmektedir: - Hızlı büyüyen işletmelerde, orta yüksek ve yüksek teknoloji düzeyinde faaliyet gösteren ve son üç yıl içerisinde her yıl bir önceki yıla göre ihracatını artıran, - Hızlı büyüyen işletmelerde, son üç yıl içerisinde her yıl bir önceki yıla göre ihracatını ve Ar-Ge harcamasını artıran, - Yüksek teknoloji düzeyinde faaliyet gösteren, orta ölçekli, Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında Sanayi ve Teknoloji Bakanlığı tarafından tebliğ ile belirlenen öncelikli ürünler listesindeki ürünlere ilişkin faaliyet gösteren, - Turcorn 100 Programı kapsamına alınan işletme olması."
+   },
+   {
+    "anahtar": "b:0eb03e549c",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Proje Başvuru Formu (1. ve 2. Bölüm)"
+   },
+   {
+    "anahtar": "b:a27e2f2502",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Küresel Rekabetçilik Destek Programı Taahhütnamesi"
+   },
+   {
+    "anahtar": "b:2cab884a72",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Başvuru Kontrol Formu"
+   },
+   {
+    "anahtar": "b:be68f6f356",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Başvuru Kılavuzu ve dönemin proje teklif çağrısına göre hazırlık"
+   },
+   {
+    "anahtar": "b:6f1fde3a0e",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: KOSGEB KOBİ Bilgi Sistemi (KBS) üzerinden, dönemsel proje teklif çağrısına göre — Dönemsel: başvurular KOSGEB'in duyurduğu proje teklif çağrısı döneminde KOSGEB KOBİ Bilgi Sistemi (KBS) üzerinden alınır; dönem tarihleri çağrı duyurusunda ilan edilir (bkz. başvuru dönemleri)."
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "2026 yılı 1. başvuru dönemi",
+    "durum": "kapandi",
+    "durum_metni": "Kapandı",
+    "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/KURESEL%20REKABETC%C4%B0L%C4%B0K/2026/2026.09.07/2026_Y%C4%B1l%C4%B1_1._Proje_Teklif_C%CC%A7ag%CC%86r%C4%B1s%C4%B1.pdf"
+   }
+  ]
+ },
+ {
+  "id": 14,
+  "kurum": "TUBITAK",
+  "baslik": "1515 - Öncül Ar-Ge Laboratuvarları Destekleme Programı",
+  "kaynak_url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1515-oncul-ar-ge-laboratuvarlari-destekleme-programi",
+  "basvuru_yeri": "TÜBİTAK TEYDEB'e niyet beyanıyla başlar; uygun bulunursa başvuru formuyla",
+  "basvuru_suresi": "Dönem yok: program sürekli başvuruya açıktır; başvurular yılın herhangi bir iş gününde yapılabilir.",
+  "maddeler": [
+   {
+    "anahtar": "s:985a97b577",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Programa başvuru süreci Ana kuruluşun TEYDEB’e niyet beyanında (niyet beyanı hazırlama kılavuzu linki verilecek) bulunmasıyla başlar. TEYDEB’e niyet beyanında bulunan Ana kuruluşun son üç (3) yıldan herhangi birindeki Ar-Ge harcamasını 15 milyon TL ve üzerinde olması gerekir."
+   },
+   {
+    "anahtar": "b:ac609a684f",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Niyet beyanı (Niyet Beyanı Kılavuzu'na göre)"
+   },
+   {
+    "anahtar": "b:0305fc2c36",
+    "tur": "belge",
+    "kural": false,
+    "metin": "1515 Başvuru Formu ve Kılavuzu"
+   },
+   {
+    "anahtar": "b:0caea68004",
+    "tur": "belge",
+    "kural": false,
+    "metin": "1515 Ortak Kuruluş Başvuru Formu ve Kılavuzu (ortak kuruluş varsa)"
+   },
+   {
+    "anahtar": "b:404cbe992f",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: TÜBİTAK TEYDEB'e niyet beyanıyla başlar; uygun bulunursa başvuru formuyla — Dönem yok: program sürekli başvuruya açıktır; başvurular yılın herhangi bir iş gününde yapılabilir."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 15,
+  "kurum": "TUBITAK",
+  "baslik": "1702 - Patent Tabanlı Teknoloji Transferi Destekleme Çağrısı",
+  "kaynak_url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1702-patent-tabanli-teknoloji-transferi-destekleme-cagrisi",
+  "basvuru_yeri": "PRODİS (eteydeb.tubitak.gov.tr) üzerinden",
+  "basvuru_suresi": "Çağrı, TÜBİTAK ayrıca bir duyuru yapana kadar sürekli başvuruya açıktır.",
+  "maddeler": [
+   {
+    "anahtar": "s:9b0e0df5e5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvuran (Müşteri Kuruluş): patentle korunan teknolojileri lisanslama ya da devir yoluyla edinerek ekonomik değer oluşturmayı hedefleyen, Türkiye'de yerleşik sermaye şirketi"
+   },
+   {
+    "anahtar": "s:0ded72acf6",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Edinilecek teknoloji, Teknoloji Sağlayıcı Kuruluşun hak sahibi olduğu ulusal ya da uluslararası patentle korunmalı"
+   },
+   {
+    "anahtar": "b:f4425315ca",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: PRODİS (eteydeb.tubitak.gov.tr) üzerinden — Çağrı, TÜBİTAK ayrıca bir duyuru yapana kadar sürekli başvuruya açıktır."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 25,
+  "kurum": "TUBITAK",
+  "baslik": "1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yenilik P. D. P.(Teknoloji Odaklı Sanayi Hamlesi Programı)",
+  "kaynak_url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1511-tubitak-oncelikli-alanlar-arastirma-teknoloji-gelistirme-ve-yenilik-p-d-pteknoloji-odakli-sanayi-hamlesi-programi",
+  "basvuru_yeri": "PRODİS (https://eteydeb.tubitak.gov.tr), çağrı dönemlerinde",
+  "basvuru_suresi": "Çağrı dönemli: duyurular www.hamle.gov.tr; ön başvuru + kesin başvuru aşamaları",
+  "maddeler": [
+   {
+    "anahtar": "s:018be9d65e",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Öncelikli Alanlar Ar-Ge Projeleri Destekleme Programı Uygulama Esaslarında belirtilen şartları sağlayan, firma düzeyinde katma değer oluşturan Türkiye’de yerleşik tüm sermaye şirketleri proje başvurusunda bulunabilir."
+   },
+   {
+    "anahtar": "b:be0f1654b2",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Proje Öneri Bilgileri Formu (PRODİS'te; Proje Öneri Başvuru Formu Hazırlama Kılavuzu)"
+   },
+   {
+    "anahtar": "b:8f51bcae04",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ar-Ge Yardımı İstek Formu (AGY311) ve hazırlama kılavuzu"
+   },
+   {
+    "anahtar": "b:9032af1050",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: PRODİS (https://eteydeb.tubitak.gov.tr), çağrı dönemlerinde — Çağrı dönemli: duyurular www.hamle.gov.tr; ön başvuru + kesin başvuru aşamaları"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 34,
+  "kurum": "TUBITAK",
+  "baslik": "1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+  "kaynak_url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi",
+  "basvuru_yeri": "Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)",
+  "basvuru_suresi": "Çağrı esaslı. 2026 yılı 2. çağrı: açılış 20.07.2026; kuruluş bazlı ön kayıt son günü 22.10.2026 (23:59); kapanış 26.10.2026. Sonraki çağrılar TÜBİTAK duyurusuyla.",
+  "maddeler": [
+   {
+    "anahtar": "s:751347e62a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Türkiye'de yerleşik, sermaye şirketi statüsünde bir KOBİ olmak"
+   },
+   {
+    "anahtar": "s:3b56fd3c48",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Proje başvurusundan önce tamamlanmış Ar-Ge faaliyetleri desteklenmez"
+   },
+   {
+    "anahtar": "s:4fd70430e7",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Bu çağrı döneminde kuruluş başına en fazla 2 proje önerisi sunulabilir (2026-2 çağrı metni)"
+   },
+   {
+    "anahtar": "b:7afe6aa9de",
+    "tur": "belge",
+    "kural": false,
+    "metin": "PRODİS sistemi üzerinden proje öneri formu"
+   },
+   {
+    "anahtar": "b:e6b631397d",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Şirket kuruluş/faaliyet belgeleri"
+   },
+   {
+    "anahtar": "b:a5825754ec",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — Çağrı esaslı. 2026 yılı 2. çağrı: açılış 20.07.2026; kuruluş bazlı ön kayıt son günü 22.10.2026 (23:59); kapanış 26.10.2026. Sonraki çağrılar TÜBİTAK duyurusuyla."
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "2026 yılı 2. çağrı",
+    "durum": "acik",
+    "durum_metni": "Başvuruya açık",
+    "kaynak_url": "https://tubitak.gov.tr/sites/default/files/2026-07/1501_Sanayi_Ar-Ge_Destek_Programi_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf"
+   }
+  ]
+ },
+ {
+  "id": 39,
+  "kurum": "TUBITAK",
+  "baslik": "1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı",
+  "kaynak_url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1509-tubitak-uluslararasi-sanayi-ar-ge-projeleri-destekleme-programi",
+  "basvuru_yeri": "Yalnızca elektronik ortamda PRODİS (https://eteydeb.tubitak.gov.tr); başvurular yıl boyunca açık",
+  "basvuru_suresi": "Başvurular sürekli açıktır, yılın her günü PRODİS (eteydeb.tubitak.gov.tr) üzerinden; çağrılı uluslararası programlarda proje, ilgili çağrının değerlendirme takvimine uygun sunulmalıdır.",
+  "maddeler": [
+   {
+    "anahtar": "s:e65900d86c",
+    "tur": "sart",
+    "kural": false,
+    "metin": "1509 Uluslararası Sanayi Ar-Ge Destek Programına Türkiye’de yerleşik sermaye şirketleri başvuru yapabilmektedir."
+   },
+   {
+    "anahtar": "b:8c916dd8d8",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Proje Öneri Bilgileri (AGY103; PRODİS'te doldurulur, sayfadaki form yalnızca bilgi amaçlı)"
+   },
+   {
+    "anahtar": "b:d70a6e924d",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ar-Ge Yardımı İstek Formu hazırlama kılavuzu"
+   },
+   {
+    "anahtar": "b:8e813df57e",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Yalnızca elektronik ortamda PRODİS (https://eteydeb.tubitak.gov.tr); başvurular yıl boyunca açık — Başvurular sürekli açıktır, yılın her günü PRODİS (eteydeb.tubitak.gov.tr) üzerinden; çağrılı uluslararası programlarda proje, ilgili çağrının değerlendirme takvimine uygun sunulmalıdır."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 44,
+  "kurum": "TUBITAK",
+  "baslik": "1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı",
+  "kaynak_url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi",
+  "basvuru_yeri": "Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)",
+  "basvuru_suresi": "Yılda iki çağrı dönemi: genellikle Ocak-Şubat ve Temmuz-Ağustos (güncel duyuru tubitak.gov.tr'den teyit edilmeli)",
+  "maddeler": [
+   {
+    "anahtar": "s:751347e62a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Türkiye'de yerleşik, sermaye şirketi statüsünde bir KOBİ olmak"
+   },
+   {
+    "anahtar": "s:947d7f95da",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Aynı anda en fazla 5 projeye destek alınabilir, bunların en az 2'si ortaklı proje olmalı"
+   },
+   {
+    "anahtar": "b:7afe6aa9de",
+    "tur": "belge",
+    "kural": false,
+    "metin": "PRODİS sistemi üzerinden proje öneri formu"
+   },
+   {
+    "anahtar": "b:e6b631397d",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Şirket kuruluş/faaliyet belgeleri"
+   },
+   {
+    "anahtar": "b:f934650cf0",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — Yılda iki çağrı dönemi: genellikle Ocak-Şubat ve Temmuz-Ağustos (güncel duyuru tubitak.gov.tr'den teyit edilmeli)"
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "2026 yılı 2. çağrı",
+    "durum": "acik",
+    "durum_metni": "Başvuruya açık",
+    "kaynak_url": "https://tubitak.gov.tr/sites/default/files/2026-07/1507_KOBI_Ar-Ge_Baslangic_Destek_Programlari_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf"
+   }
+  ]
+ },
+ {
+  "id": 46,
+  "kurum": "TUBITAK",
+  "baslik": "1719 Eureka Network Çağrıları",
+  "kaynak_url": "https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1719-eureka-network-cagrilari",
+  "basvuru_yeri": "PRODİS (eteydeb.tubitak.gov.tr) üzerinden çevrim içi (ön başvuru ve ikinci aşama)",
+  "basvuru_suresi": "Açık ulusal çağrılar: Uygulamalı Kuantum Teknolojileri, Hafifletme Teknolojileri, Afetlerde Dirençlilik (takvim çağrı duyurularında)",
+  "maddeler": [
+   {
+    "anahtar": "s:a910f96565",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Sermaye şirketleri, yükseköğretim kurumları, kamu araştırma merkez ve enstitüleri, eğitim ve araştırma hastaneleri, 6550 sayılı Kanun kapsamındaki araştırma altyapıları başvurabilir"
+   },
+   {
+    "anahtar": "s:458456afd6",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Sermaye şirketi dışındakiler tek başına başvuramaz; en az bir sermaye şirketi ortaklığı gerekir ve sermaye şirketi yürütücü (muhatap) kuruluş olmalıdır"
+   },
+   {
+    "anahtar": "b:1cca4fd092",
+    "tur": "belge",
+    "kural": false,
+    "metin": "1719 Eureka Network Çağrısı Başvuru Formu (örneği program sayfasında)"
+   },
+   {
+    "anahtar": "b:0d73f6af7d",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: PRODİS (eteydeb.tubitak.gov.tr) üzerinden çevrim içi (ön başvuru ve ikinci aşama) — Açık ulusal çağrılar: Uygulamalı Kuantum Teknolojileri, Hafifletme Teknolojileri, Afetlerde Dirençlilik (takvim çağrı duyurularında)"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 48,
+  "kurum": "TUBITAK",
+  "baslik": "1709 – EUREKA-EUROSTARS",
+  "kaynak_url": "https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1709-eureka-eurostars",
+  "basvuru_yeri": "PRODİS (https://eteydeb.tubitak.gov.tr); önce kuruluş bazlı ön kayıt, ulusal ön proje başvurusu, sonra uluslararası değerlendirme",
+  "basvuru_suresi": "Çağrı dönemli: 1709-EUREKA-EUROSTARS 2026/2 ulusal çağrısı; son başvuru tarihi ve uluslararası takvim çağrı duyurusu belgesinde (PDF); başvuru eteydeb.tubitak.gov.tr (PRODİS)",
+  "maddeler": [
+   {
+    "anahtar": "s:02f4dc72ea",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Sermaye şirketi, yükseköğretim kurumu, kamu araştırma merkezi/enstitüsü, eğitim ve araştırma hastanesi veya 6550 sayılı Kanun kapsamındaki araştırma altyapısı olmak"
+   },
+   {
+    "anahtar": "s:bb7b8f65f5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "En az bir Türk ve bir Eurostars üyesi ülkeden ortağın katıldığı uluslararası proje"
+   },
+   {
+    "anahtar": "s:e8610cb985",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Sermaye şirketi Yürütücü Kuruluş (Muhatap Kuruluş) olmalı; üniversite, kamu araştırma kurumu, hastane ve araştırma altyapıları tek başına başvuramaz"
+   },
+   {
+    "anahtar": "s:a876ddee5c",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Her sermaye şirketinde proje konusuyla ilgili en az lisans dereceli en az bir proje personeli bulunmalı"
+   },
+   {
+    "anahtar": "s:bb6b0ca2d4",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Aynı uluslararası projedeki Türk ortaklar tek bir ulusal ön proje başvurusu yapmalı (ayrı başvurular kabul edilmez)"
+   },
+   {
+    "anahtar": "b:d8626c7374",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ulusal ön proje başvurusu (PRODİS'te, kuruluş bazlı ön kayıttan sonra)"
+   },
+   {
+    "anahtar": "b:8bfaf05e1b",
+    "tur": "belge",
+    "kural": false,
+    "metin": "2. Aşama Proje Öneri Bilgileri (PRODİS'te; sayfadaki form bilgi amaçlı)"
+   },
+   {
+    "anahtar": "b:d70a6e924d",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ar-Ge Yardımı İstek Formu hazırlama kılavuzu"
+   },
+   {
+    "anahtar": "b:fe04ae2734",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Bursiyer Bilgi Formu (bursiyer varsa)"
+   },
+   {
+    "anahtar": "b:21b69b4d6c",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: PRODİS (https://eteydeb.tubitak.gov.tr); önce kuruluş bazlı ön kayıt, ulusal ön proje başvurusu, sonra uluslararası değerlendirme — Çağrı dönemli: 1709-EUREKA-EUROSTARS 2026/2 ulusal çağrısı; son başvuru tarihi ve uluslararası takvim çağrı duyurusu belgesinde (PDF); başvuru eteydeb.tubitak.gov.tr (PRODİS)"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 49,
+  "kurum": "TUBITAK",
+  "baslik": "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+  "kaynak_url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim",
+  "basvuru_yeri": "PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına",
+  "basvuru_suresi": "Çağrı esaslı: başvurular uygulayıcı kuruluşların çağrıları üzerinden (BiGG Yatırım 2026-2 çağrı metni yayımlı; bkz. başvuru dönemleri).",
+  "maddeler": [
+   {
+    "anahtar": "s:c3e844dc0f",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Program kapsamında çağrıda belirtilen nitelikleri taşıyan; hızlandırma programı çağrılarına yapılan başvuru tarihi itibariyle üniversitelerin herhangi bir ön lisans, lisans, yüksek lisans veya doktora programına kayıtlı öğrenci veya herhangi bir ön lisans, lisans, yüksek lisans veya doktora programından mezun kişiler, PRODİS üzerinden hızlandırma programlarına başvuru yapabilir. Daha önce Sanayi ve Teknoloji Bakanlığı Teknogirişim Sermayesi Desteği ya da TÜBİTAK 1512 veya 1812 Programları 2. Aşaması kapsamında destek alan veya hızlandırma programına kabul edildiği tarih itibarı ile sermaye şirketi veya gerçek kişi işletmesi herhangi bir işletmenin ortaklık yapısında yer alan kişiler başvuru yapamaz. Halka açık şirketlerdeki pay sahiplikleri ile kitle fonlaması platformları üzerinden edinilen paylar bu kuralın dışındadır. 3. Aşama kapsamında, 2025 – 1 BİGG+ Tohum Yatırım Çağrısına, 1812 kodlu Yatırım Tabanlı Girişimcilik Destek Programı’nın tohum öncesi yatırım aşamasında tohum öncesi yatırım almış ve projesini tamamlamış veya 1512 kodlu Girişimcilik Destek Programı kapsamında sağlanan destekle yürüttüğü projesini tamamlamış, ilgili tohum yatırım çağrısında belirtilen tarihten sonra kurulmuş olan Türkiye’de yerleşik sermaye şirketleri başvurabilir."
+   },
+   {
+    "anahtar": "b:f825d6f2f3",
+    "tur": "belge",
+    "kural": false,
+    "metin": "AGY112 İş Planı"
+   },
+   {
+    "anahtar": "b:911f122cb9",
+    "tur": "belge",
+    "kural": false,
+    "metin": "1812 Tahmini Maliyet Formları"
+   },
+   {
+    "anahtar": "b:e3cd647b4f",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Eş Yatırım Taahhütnamesi ve Eş Yatırım Bilgi Formu (eş yatırım varsa)"
+   },
+   {
+    "anahtar": "b:a2c86c5205",
+    "tur": "belge",
+    "kural": false,
+    "metin": "ARDEB Muvafakatname Formu (gerekiyorsa)"
+   },
+   {
+    "anahtar": "b:3a9aae6bb4",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına — Çağrı esaslı: başvurular uygulayıcı kuruluşların çağrıları üzerinden (BiGG Yatırım 2026-2 çağrı metni yayımlı; bkz. başvuru dönemleri)."
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "1812-2026-2 Aşama 2 başvuruları",
+    "durum": "kapandi",
+    "durum_metni": "Kapandı",
+    "kaynak_url": "https://www.tubitak.gov.tr/sites/default/files/2026-09/1812-2026-2_Cagri_Duyurusu_v2.pdf"
+   }
+  ]
+ },
+ {
+  "id": 55,
+  "kurum": "TUBITAK",
+  "baslik": "1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı",
+  "kaynak_url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1707-siparise-dayali-ar-ge-projeleri-icin-kobi-destekleme-cagrisi",
+  "basvuru_yeri": "PRODİS (https://eteydeb.tubitak.gov.tr), çağrı dönemlerinde",
+  "basvuru_suresi": "2026 çağrı takvimi (taslak): 2 Ocak, 13 Mart, 4 Mayıs, 17 Temmuz, 1 Eylül, 13 Kasım 2026; başvuru eteydeb.tubitak.gov.tr",
+  "maddeler": [
+   {
+    "anahtar": "s:94ab50077a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)"
+   },
+   {
+    "anahtar": "b:2a74f54ae8",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Proje Öneri Formu (PRODİS'te; sayfada örneği var)"
+   },
+   {
+    "anahtar": "b:fdf0f281a9",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Müşteri Kuruluş ile Tedarikçi Kuruluş arasında imzalı işbirliği (sipariş) sözleşmesi"
+   },
+   {
+    "anahtar": "b:f1265a8556",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: PRODİS (https://eteydeb.tubitak.gov.tr), çağrı dönemlerinde — 2026 çağrı takvimi (taslak): 2 Ocak, 13 Mart, 4 Mayıs, 17 Temmuz, 1 Eylül, 13 Kasım 2026; başvuru eteydeb.tubitak.gov.tr"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 59,
+  "kurum": "TUBITAK",
+  "baslik": "1832 - Sanayide Yeşil Dönüşüm Çağrısı",
+  "kaynak_url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1832-sanayide-yesil-donusum-cagrisi",
+  "basvuru_yeri": "PRODİS (eteydeb.tubitak.gov.tr) üzerinden çevrim içi",
+  "basvuru_suresi": "Çağrı esaslı: Türkiye Yeşil Sanayi Projesi süresince TÜBİTAK farklı türde çağrılar açar; sayfada güncel çağrı tarihi yoktur.",
+  "maddeler": [
+   {
+    "anahtar": "s:868f3968da",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Yeşil teknoloji, ürün ya da süreç geliştirmeye yönelik yeşil yenilik faaliyetinde bulunan, Türkiye'de yerleşik sermaye şirketi olmak (KOBİ ya da büyük ölçekli)"
+   },
+   {
+    "anahtar": "s:9d4c0fd067",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Ar-Ge çalışması THS 3-9 aralığında olmalı; THS 3'ten önce ya da THS 8'den başlayan çalışmalar kapsam dışı"
+   },
+   {
+    "anahtar": "s:104cc59117",
+    "tur": "sart",
+    "kural": false,
+    "metin": "En fazla üç ortaklı başvuru yapılabilir"
+   },
+   {
+    "anahtar": "b:8d4fb081f7",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Proje başvurusu PRODİS üzerinde (örnek başvuru formu bilgilendirme amaçlıdır)"
+   },
+   {
+    "anahtar": "b:4bf5fc9266",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Çevresel ve Sosyal Risk Yönetimi Beyan Formu"
+   },
+   {
+    "anahtar": "b:af0f9855af",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ekonomik Fizibilite Raporu (program sayfasındaki formata göre)"
+   },
+   {
+    "anahtar": "b:c91cb5cfec",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: PRODİS (eteydeb.tubitak.gov.tr) üzerinden çevrim içi — Çağrı esaslı: Türkiye Yeşil Sanayi Projesi süresince TÜBİTAK farklı türde çağrılar açar; sayfada güncel çağrı tarihi yoktur."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 75,
+  "kurum": "TUBITAK",
+  "baslik": "1505 - Üniversite-Sanayi İşbirliği Destek Programı",
+  "kaynak_url": "https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1505-universite-sanayi-isbirligi-destek-programi",
+  "basvuru_yeri": "Elektronik olarak PRODİS (https://eteydeb.tubitak.gov.tr); başvurular yıl boyunca açık",
+  "basvuru_suresi": "Sürekli açık (yıl boyunca başvuru yapılabilir)",
+  "maddeler": [
+   {
+    "anahtar": "s:db1571dedd",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Sektörüne bakılmaksızın firma düzeyinde katma değer yaratan, Türkiye’de yerleşik ve proje sonuçlarını Türkiye’de uygulamayı taahhüt eden sermaye şirketleri ile Yükseköğretim Kanunu kapsamında yer alan yükseköğretim kurumları, vakıf üniversiteleri, eğitim ve araştırma hastaneleri ve ilgili mevzuatında Ar-Ge yapmakla görevlendirilmiş kamu araştırma merkez ve enstitüleri ortak proje başvurusunda bulunur."
+   },
+   {
+    "anahtar": "b:ead5eacf70",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Proje Öneri Bilgileri Formu (AGY105; PRODİS'te doldurulur)"
+   },
+   {
+    "anahtar": "b:235d0f8d5f",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ar-Ge Yardımı İstek Formu (AGY305) ve hazırlama kılavuzu"
+   },
+   {
+    "anahtar": "b:fe04ae2734",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Bursiyer Bilgi Formu (bursiyer varsa)"
+   },
+   {
+    "anahtar": "b:6230a96ce8",
+    "tur": "belge",
+    "kural": false,
+    "metin": "PTİ Bilgi Formu"
+   },
+   {
+    "anahtar": "b:304db39c00",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Elektronik olarak PRODİS (https://eteydeb.tubitak.gov.tr); başvurular yıl boyunca açık — Sürekli açık (yıl boyunca başvuru yapılabilir)"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 76,
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Hayvancılık Destekleri",
+  "kaynak_url": "https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir",
+  "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü",
+  "basvuru_suresi": "2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027); başvuru il/ilçe müdürlüğü veya birlik üzerinden (HDS)",
+  "maddeler": [
+   {
+    "anahtar": "s:17977eb557",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Buzağı/malak: TÜRKVET'te kayıtlı ve destekleme yılında Türkiye'de doğmuş olması (Tebliğ 2024/23 m.4/1-a)"
+   },
+   {
+    "anahtar": "s:c3d763a06a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Buzağı/malak: TÜRKVET kayıtlarına göre en az 4 ay (120 gün) yaşamış olması (Tebliğ 2024/23 m.4/1-b)"
+   },
+   {
+    "anahtar": "s:a8815d088c",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Buzağı/malak: programlı aşıları (dişilerde brusella ve şap, erkeklerde şap) yapılmış ve VETBİS'e kaydedilmiş olması (Tebliğ 2024/23 m.4/1-c)"
+   },
+   {
+    "anahtar": "s:a2232762c0",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kuzu/oğlak: destekleme yılında doğmuş, küpelenmiş, TÜRKVET'e kayıtlı ve doğduğu işletmede en az 120 gün yaşamış olması (Tebliğ 2024/23 m.6/1-a)"
+   },
+   {
+    "anahtar": "s:76b885fb10",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kuzu/oğlak: yetiştiricinin damızlık koyun keçi yetiştiricileri birliğine üye olması (il birliği olmayan illerde aranmaz) (Tebliğ 2024/23 m.6/1-c)"
+   },
+   {
+    "anahtar": "b:982b79e808",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Başvuru dilekçesi (2026 büyükbaş hayvancılık desteklemeleri talimatı ekindeki örneğe göre; talimat ve iş takvimi HAYGEM duyurusunda)"
+   },
+   {
+    "anahtar": "b:6c6df1b112",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: İL/İlçe Tarım ve Orman Müdürlüğü — 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027); başvuru il/ilçe müdürlüğü veya birlik üzerinden (HDS)"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 77,
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Organik Tarım Destekleri",
+  "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM#organik-tarim",
+  "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü",
+  "basvuru_suresi": "Yıllık ilan edilir (kesin tarihler için BUGEM'in güncel duyurularını kontrol edin)",
+  "maddeler": [
+   {
+    "anahtar": "s:6408b34ebd",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ürünlerin ilgili üretim yılında ÇKS ve OTBİS'te kayıtlı olması (Tebliğ 2024/39 m.7/3-a)"
+   },
+   {
+    "anahtar": "s:5c5f113fbd",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Arazinin yetkilendirilmiş kuruluşça kontrol edilmiş ve geçiş süreci-2, geçiş süreci-3 ya da organik statüde olması; geçiş süreci-1 arazisi yararlanamaz (Tebliğ 2024/39 m.7/3-a-1, m.17/12)"
+   },
+   {
+    "anahtar": "s:f7f24e40f2",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Hasadın yapılmış ve ürün sertifikasının düzenlenmiş olması (Tebliğ 2024/39 m.7/3-a-2)"
+   },
+   {
+    "anahtar": "s:fafe37b5f7",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Organik desteği alan arazi aynı yıl iyi tarım uygulamaları desteğinden yararlanamaz (Tebliğ 2024/39 m.17/9)"
+   },
+   {
+    "anahtar": "s:7df62fb938",
+    "tur": "sart",
+    "kural": false,
+    "metin": "OTBİS'teki bilgilerin tamamlanması çiftçinin sorumluluğundadır (Tebliğ 2024/39 m.7/3-ç)"
+   },
+   {
+    "anahtar": "b:9aaf75dca4",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-3 Destekleme Ödemesi Başvuru Dilekçesi (ÇKS'de kayıtlı olunan il/ilçe müdürlüğüne; Tebliğ 2024/39 m.15/1)"
+   },
+   {
+    "anahtar": "b:cc7c5aa84c",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ürün sertifikası (yetkilendirilmiş kuruluşça düzenlenen; Tebliğ 2024/39 m.7/3-a-2)"
+   },
+   {
+    "anahtar": "b:8bd56d344d",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: İL/İlçe Tarım ve Orman Müdürlüğü — Yıllık ilan edilir (kesin tarihler için BUGEM'in güncel duyurularını kontrol edin)"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 79,
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Sera/Örtüaltı Tarım Destekleri",
+  "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM#sera",
+  "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü",
+  "basvuru_suresi": "Yıllık ilan edilir (kesin tarihler için BUGEM'in güncel duyurularını kontrol edin)",
+  "maddeler": [
+   {
+    "anahtar": "s:2b7e5b4e89",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Örtüaltı/kapalı ortam üretim yerinin ÖKS/KOBÜKS'te kayıtlı olması (Tebliğ 2024/39 m.3, m.8/1-a)"
+   },
+   {
+    "anahtar": "s:b7c3bbd217",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Destek türüne göre ek şart: iyi tarım uygulamaları desteğinde sertifikanın ÖKS/KOBÜKS'e kaydı (Tebliğ 2024/39 m.7/4-a); biyolojik/biyoteknik mücadele desteğinde BKÜ faturası ve onaylı ÜKD kayıtları (Tebliğ 2024/39 m.8/1-b, c)"
+   },
+   {
+    "anahtar": "b:c0fd7d855f",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-3 Destekleme Ödemesi Başvuru Dilekçesi (ÇKS ve/veya ÖKS/KOBÜKS'te kayıtlı olunan il/ilçe müdürlüğüne; Tebliğ 2024/39 m.15/1)"
+   },
+   {
+    "anahtar": "b:8bd56d344d",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: İL/İlçe Tarım ve Orman Müdürlüğü — Yıllık ilan edilir (kesin tarihler için BUGEM'in güncel duyurularını kontrol edin)"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 81,
+  "kurum": "KGF",
+  "baslik": "KAPASİTE GELİŞTİRME DESTEK PAKETİ",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/kapasite-gelistirme-destek-paketi",
+  "basvuru_yeri": "Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, Ziraat Katılım (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Önce KOSGEB Kapasite Geliştirme Destek Programı başvurusunun KOSGEB'ce onaylanması gerekir (KGF ürün sayfası, Özel Şartlar); KOSGEB başvuruları dönemsel çağrıyla alınır. Onaydan sonra kredi, KOSGEB ile protokollü bankaya başvurularak kullanılır.",
+  "maddeler": [
+   {
+    "anahtar": "s:6817a21ff6",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Paketten, Kapasite Geliştirme Destek Programı başvurusu KOSGEB tarafından onaylanan ve anılan program kapsamında kredi faiz desteği almaya hak kazanan KOBİ’ler yararlanabilecektir."
+   },
+   {
+    "anahtar": "s:d2b2bac01a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Paket kapsamındaki krediler, KOSGEB ile protokol yapan bankalar tarafından kullandırılacaktır."
+   },
+   {
+    "anahtar": "s:221755877b",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Paket kapsamındaki krediler Türk Lirası cinsinden kullandırılacaktır."
+   },
+   {
+    "anahtar": "s:f0231050bb",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Tüm harcamalar sözleşme veya fatura ile belgelendirilecektir."
+   },
+   {
+    "anahtar": "s:fc023d0314",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Paket kapsamında arsa ve bina yatırımlarına kefalet sağlanmayacaktır"
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:839983b5c6",
+    "tur": "belge",
+    "kural": false,
+    "metin": "KOSGEB Kapasite Geliştirme Destek Programı kapsamında destek onayı"
+   },
+   {
+    "anahtar": "b:c641f919d0",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, Ziraat Katılım (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Önce KOSGEB Kapasite Geliştirme Destek Programı başvurusunun KOSGEB'ce onaylanması gerekir (KGF ürün sayfası, Özel Şartlar); KOSGEB başvuruları dönemsel çağrıyla alınır. Onaydan sonra kredi, KOSGEB ile protokollü bankaya başvurularak kullanılır."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 86,
+  "kurum": "KGF",
+  "baslik": "TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi",
+  "basvuru_yeri": "Kredi veren bankalar: Akbank, Denizbank, Garanti BBVA, Halkbank, QNB Bank, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım (yalnızca TL kefalet) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:5cb68e97ea",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir."
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:e5c2e2170a",
+    "tur": "belge",
+    "kural": false,
+    "metin": "TOBB'a bağlı ticaret/sanayi/deniz ticaret odası veya ticaret borsası üyeliği"
+   },
+   {
+    "anahtar": "b:560f2f6bed",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Akbank, Denizbank, Garanti BBVA, Halkbank, QNB Bank, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım (yalnızca TL kefalet) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 87,
+  "kurum": "KGF",
+  "baslik": "HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-sahis-isletmeleri-destek-kredisi-projesi",
+  "basvuru_yeri": "Kredi veren bankalar: Halkbank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:65d852463b",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:2d41e4c826",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Esnaf Odası, Ticaret ve Sanayi Odası veya Meslek Odası kaydı"
+   },
+   {
+    "anahtar": "b:69874857c9",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kefalet başvuru ücreti: 7.500 TL"
+   },
+   {
+    "anahtar": "b:18d241068d",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Halkbank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 89,
+  "kurum": "KGF",
+  "baslik": "HALKBANK MESLEKİ EĞİTİM KREDİSİ DESTEK PAKETİ",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-mesleki-egitim-kredisi-destek-paketi",
+  "basvuru_yeri": "Kredi veren banka(lar): Halkbank (KGF ürün sayfası, İlgili Finans Kuruluşları)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:a60201d480",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."
+   },
+   {
+    "anahtar": "b:02d0bef8f7",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren banka(lar): Halkbank (KGF ürün sayfası, İlgili Finans Kuruluşları) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 90,
+  "kurum": "KGF",
+  "baslik": "YATIRIM-İŞLETME DESTEK PAKETİ",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi",
+  "basvuru_yeri": "Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, TEB, Şekerbank, Anadolubank, ING Bank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:1b8d277f2d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bu paket kapsamındaki krediler kıymetli maden ve döviz alımında, kefaletin sağlandığı kredi veren dışında vadeli mevduat ve diğer yüksek riskli finansal araçlarda, refinansman amacıyla kullanılamaz."
+   },
+   {
+    "anahtar": "s:6afb4bf332",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Paket kapsamında arsa ve bina yatırımlarına kefalet sağlanmaz. Ancak, arsa ve bina yatırımlarına makine yatırımı ile birlikte yapılması halinde kefalet sağlanabilecektir."
+   },
+   {
+    "anahtar": "s:031809b355",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kredi kartı ürünü nakit çekime kapalı olacaktır."
+   },
+   {
+    "anahtar": "s:f0231050bb",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Tüm harcamalar sözleşme veya fatura ile belgelendirilecektir."
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:f9bfb65c1d",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, TEB, Şekerbank, Anadolubank, ING Bank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 91,
+  "kurum": "KGF",
+  "baslik": "TKYB KREDİ DESTEK PAKETİ",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi",
+  "basvuru_yeri": "Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:98f29aa6af",
+    "tur": "sart",
+    "kural": false,
+    "metin": "TKYB Kredi Destek Paketi kapsamında uluslararası finansal kuruluşlardan finanse edilen kredilerde ilgili finansal kuruluşun anapara geri ödemesiz dönem ve vadeleri esas alınabilir."
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:a2dc8ed808",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 93,
+  "kurum": "KGF",
+  "baslik": "Vakıfbank Hukuk Bürosu Destek Paketi",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/vakifbank-hukuk-burosu-destek-paketi",
+  "basvuru_yeri": "Kredi veren banka(lar): Vakıfbank (KGF ürün sayfası, İlgili Finans Kuruluşları)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:1b8d277f2d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bu paket kapsamındaki krediler kıymetli maden ve döviz alımında, kefaletin sağlandığı kredi veren dışında vadeli mevduat ve diğer yüksek riskli finansal araçlarda, refinansman amacıyla kullanılamaz."
+   },
+   {
+    "anahtar": "b:4f841907db",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren banka(lar): Vakıfbank (KGF ürün sayfası, İlgili Finans Kuruluşları) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 94,
+  "kurum": "KGF",
+  "baslik": "TARIM KEFALET DESTEK PROGRAMI",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tarim-kefalet-destek-programi",
+  "basvuru_yeri": "Programa dahil 10 bankadan biri: Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, Halkbank, TEB, YKB",
+  "basvuru_suresi": "Sürekli (banka şubesi üzerinden bireysel başvuru)",
+  "maddeler": [
+   {
+    "anahtar": "s:d551005864",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Tarım, ormancılık veya balıkçılık sektöründe faaliyet gösteren gerçek veya tüzel kişi işletme olmak"
+   },
+   {
+    "anahtar": "s:065212116a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Programa katılan 10 bankadan biri üzerinden kredi başvurusu yapmak"
+   },
+   {
+    "anahtar": "b:9b39f2f9d1",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İlgili bankanın standart kredi başvuru evrakı"
+   },
+   {
+    "anahtar": "b:0197298d8d",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İşletme/çiftçi kayıt belgesi"
+   },
+   {
+    "anahtar": "b:2d33ef0b37",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Banka tarafından istenecek teminat/gelir belgeleri"
+   },
+   {
+    "anahtar": "b:af58a97a1a",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Programa dahil 10 bankadan biri: Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, Halkbank, TEB, YKB — Sürekli (banka şubesi üzerinden bireysel başvuru)"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 107,
+  "kurum": "KGF",
+  "baslik": "KÜRESEL REKABETÇİLİK DESTEK PAKETİ",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/kuresel-rekabetcilik-destek-paketi",
+  "basvuru_yeri": "Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, Ziraat Katılım (KOSGEB ile protokollü) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Önce KOSGEB Küresel Rekabetçilik Destek Programı başvurusunun KOSGEB'ce onaylanması gerekir (KGF ürün sayfası, Özel Şartlar); KOSGEB başvuruları dönemsel çağrıyla alınır. Onaydan sonra kredi, KOSGEB ile protokollü bankaya başvurularak kullanılır.",
+  "maddeler": [
+   {
+    "anahtar": "s:c277209295",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Paketten, Küresel Rekabetçilik Destek Programı başvurusu KOSGEB tarafından onaylanan ve anılan program kapsamında kredi faiz desteği almaya hak kazanan KOBİ’ler yararlanabilecektir."
+   },
+   {
+    "anahtar": "s:d2b2bac01a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Paket kapsamındaki krediler, KOSGEB ile protokol yapan bankalar tarafından kullandırılacaktır."
+   },
+   {
+    "anahtar": "s:221755877b",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Paket kapsamındaki krediler Türk Lirası cinsinden kullandırılacaktır."
+   },
+   {
+    "anahtar": "s:f0231050bb",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Tüm harcamalar sözleşme veya fatura ile belgelendirilecektir."
+   },
+   {
+    "anahtar": "s:a2d68b9981",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Paket kapsamında arsa ve bina yatırımlarına kefalet sağlanmayacaktır."
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:fa2ef65192",
+    "tur": "belge",
+    "kural": false,
+    "metin": "KOSGEB Küresel Rekabetçilik Destek Programı başvuru onayı ve kredi faiz desteğine hak kazanma"
+   },
+   {
+    "anahtar": "b:ddba3ab80d",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, Ziraat Katılım (KOSGEB ile protokollü) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Önce KOSGEB Küresel Rekabetçilik Destek Programı başvurusunun KOSGEB'ce onaylanması gerekir (KGF ürün sayfası, Özel Şartlar); KOSGEB başvuruları dönemsel çağrıyla alınır. Onaydan sonra kredi, KOSGEB ile protokollü bankaya başvurularak kullanılır."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 112,
+  "kurum": "KGF",
+  "baslik": "HALKBANK GENÇ İŞİ KREDİSİ PROJESİ",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-genc-isi-kredisi-projesi",
+  "basvuru_yeri": "Kredi veren banka(lar): Halkbank (KGF ürün sayfası, İlgili Finans Kuruluşları)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:de8a198eb9",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz."
+   },
+   {
+    "anahtar": "b:02d0bef8f7",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren banka(lar): Halkbank (KGF ürün sayfası, İlgili Finans Kuruluşları) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 116,
+  "kurum": "KGF",
+  "baslik": "KGF Kooperatif Destek Paketi",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-kooperatif-destek-paketi",
+  "basvuru_yeri": "Kredi veren banka(lar): Ziraat Bankası, Vakıfbank, Halkbank (KGF ürün sayfası, İlgili Finans Kuruluşları)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:bd1b06e7cd",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kooperatif ya da kooperatif birliği tüzel kişisi olmak: tarım satış kooperatifleri birlikleri, ecza üretim temin ve dağıtım kooperatifleri, kadın girişimi üretim ve işletme kooperatifleri birlikleri, üretim ve pazarlama kooperatifleri, küçük sanat kooperatifleri (KGF ürün sayfası)"
+   },
+   {
+    "anahtar": "b:dc2001d6a9",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren banka(lar): Ziraat Bankası, Vakıfbank, Halkbank (KGF ürün sayfası, İlgili Finans Kuruluşları) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 118,
+  "kurum": "KGF",
+  "baslik": "KOSGEB Geri Ödemeli Destekleri",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/dogrudan-krediler/kosgeb-geri-odemeli-destekleri",
+  "basvuru_yeri": "Doğrudan KGF'nin kendi web sitesi üzerinden",
+  "basvuru_suresi": "Sürekli",
+  "maddeler": [
+   {
+    "anahtar": "s:2ac5d02f3e",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOSGEB tarafından onaylanmış bir destek ödemesi almaya hak kazanmış KOBİ olmak"
+   },
+   {
+    "anahtar": "b:791714a7b6",
+    "tur": "belge",
+    "kural": false,
+    "metin": "KOSGEB destek onay yazısı"
+   },
+   {
+    "anahtar": "b:9d26de2f49",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Doğrudan KGF'nin kendi web sitesi üzerinden — Sürekli"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 122,
+  "kurum": "KGF",
+  "baslik": "HALKBANK İLK ADIM KREDİSİ PROJESİ",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi",
+  "basvuru_yeri": "Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:de8a198eb9",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz."
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:f6ec4199e1",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 125,
+  "kurum": "KGF",
+  "baslik": "2024 Dijital Dönüşüm Destek Paketi",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/2024-dijital-donusum-destek-paketi",
+  "basvuru_yeri": "Kredi veren bankalar: Türkiye İş Bankası, Türk Ekonomi Bankası (KOSGEB ile protokollü bankalar) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Önce KOSGEB KOBİ Dijital Dönüşüm Destek Programı başvurusunun KOSGEB'ce onaylanması gerekir (KGF ürün sayfası, Özel Şartlar); KOSGEB başvuruları dönemsel çağrıyla alınır. Onaydan sonra kredi, KOSGEB ile protokollü bankaya başvurularak kullanılır.",
+  "maddeler": [
+   {
+    "anahtar": "s:c689ddcfe4",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Paket kapsamındaki krediler, KOSGEB ile protokol yapan bankalar tarafından kullandırılacaktır. Paketten, KOBİ Dijital Dönüşüm Destek Programı başvurusu KOSGEB tarafından onaylanan ve anılan program kapsamında kredi faiz desteği almaya hak kazanan küçük ve orta ölçekli, imalatçı KOBİ’ler yararlanabilecektir. Tüm harcamalar sözleşme veya fatura ile belgelendirilecektir."
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:3e24145a32",
+    "tur": "belge",
+    "kural": false,
+    "metin": "KOSGEB KOBİ Dijital Dönüşüm Destek Programı başvuru onayı ve kredi faiz desteğine hak kazanma"
+   },
+   {
+    "anahtar": "b:6eef3a8fb1",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Türkiye İş Bankası, Türk Ekonomi Bankası (KOSGEB ile protokollü bankalar) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Önce KOSGEB KOBİ Dijital Dönüşüm Destek Programı başvurusunun KOSGEB'ce onaylanması gerekir (KGF ürün sayfası, Özel Şartlar); KOSGEB başvuruları dönemsel çağrıyla alınır. Onaydan sonra kredi, KOSGEB ile protokollü bankaya başvurularak kullanılır."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 126,
+  "kurum": "KGF",
+  "baslik": "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/istihdam-taahhutlu-kobi-finansman-destek-programi",
+  "basvuru_yeri": "Kredi veren bankalar: Garanti BBVA (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:c502d2840d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İşletmelerin; Adana, Adıyaman, Ankara, Batman, Bursa, Diyarbakır, Gaziantep, Hatay, İstanbul, İzmir, Kahramanmaraş, Kayseri, Kilis, Kocaeli, Konya, Malatya, Mardin, Mersin, Osmaniye ve Şanlıurfa illerinde yer alması"
+   },
+   {
+    "anahtar": "s:642413061c",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kısım C-İmalat, Bölüm 62-Bilgisayar programlama, danışmanlık ve ilgili faaliyetler, Bölüm 72-Bilimsel araştırma ve geliştirme NACE kodlarından herhangi birinde faaliyet göstermesi"
+   },
+   {
+    "anahtar": "s:ff079fb595",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOSGEB Veri Tabanına kayıtlı ve aktif durumda, Türk Ticaret Kanunu’nda tanımlı gerçek veya tüzel kişi statüsünde KOSGEB tarafından desteklenen sektörlerde yer alan, İşletme Beyanı güncel olan, aktif durumda olan işletmeler yararlanabilecektir."
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:fcf82cda9e",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kefalet başvuru ücreti: 5.000 TL"
+   },
+   {
+    "anahtar": "b:1170dd54ac",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Garanti BBVA (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 133,
+  "kurum": "KGF",
+  "baslik": "KGF Savunma Sanayii Tedarikçi Destek Programı",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/savunma-sanayi-i-tedari-kci-destek-programi",
+  "basvuru_yeri": "Kredi veren banka(lar): Halkbank, Vakıfbank, Ziraat Bankası, Ziraat Katılım, Denizbank, Yapı ve Kredi Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:de8a198eb9",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz."
+   },
+   {
+    "anahtar": "b:7a35c35ae2",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren banka(lar): Halkbank, Vakıfbank, Ziraat Bankası, Ziraat Katılım, Denizbank, Yapı ve Kredi Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 137,
+  "kurum": "KGF",
+  "baslik": "KGF Özkaynak Kefalet Programı",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/ozkaynak",
+  "basvuru_yeri": "KGF ile protokol imzalayan ve KGF'ye ortak bankalar ile bunların hâkim ortağı olduğu finansal kiralama ve finansman şirketleri (kefalet talebini kredi veren kurum KGF'ye iletir)",
+  "basvuru_suresi": "Dönemsel başvuru yok: başvurular bankalar kanalıyla kefalet.kgf.com.tr üzerinden yapılır. Kefaletten yararlanma süresi, KGF'nin kefalet tahsis tarihinden itibaren 1 yıldır.",
+  "maddeler": [
+   {
+    "anahtar": "s:b57f333d10",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Yararlanıcının KOBİ vasfını haiz gerçek veya tüzel kişi işletme olması gerekmektedir."
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:b3bf2991ef",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: KGF ile protokol imzalayan ve KGF'ye ortak bankalar ile bunların hâkim ortağı olduğu finansal kiralama ve finansman şirketleri (kefalet talebini kredi veren kurum KGF'ye iletir) — Dönemsel başvuru yok: başvurular bankalar kanalıyla kefalet.kgf.com.tr üzerinden yapılır. Kefaletten yararlanma süresi, KGF'nin kefalet tahsis tarihinden itibaren 1 yıldır."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 138,
+  "kurum": "KGF",
+  "baslik": "HALK BANKASI GENÇİZ KREDİSİ PROGRAMI DESTEK PAKETİ",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-genciz-kredisi-programi-destek-paketi",
+  "basvuru_yeri": "Kredi veren banka(lar): Halkbank (KGF ürün sayfası, İlgili Finans Kuruluşları)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:65d852463b",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."
+   },
+   {
+    "anahtar": "b:02d0bef8f7",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren banka(lar): Halkbank (KGF ürün sayfası, İlgili Finans Kuruluşları) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 142,
+  "kurum": "KGF",
+  "baslik": "İSTİHDAM KORUMA DESTEK PROGRAMI",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/istihdam-koruma-destek-programi",
+  "basvuru_yeri": "Kredi veren bankalar: DenizBank, Garanti BBVA, Halk Bankası, İş Bankası, Ziraat Bankası, Yapı Kredi Bankası, VakıfBank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Önce KOSGEB İstihdamı Koruma Destek Programı başvurusunun KOSGEB'ce onaylanması gerekir (KGF ürün sayfası, Özel Şartlar); KOSGEB başvuruları dönemsel çağrıyla alınır. Onaydan sonra kredi, KOSGEB ile protokollü bankaya başvurularak kullanılır. 2026-2 dönemi KOSGEB'de 31.10.2026'da kapanır.",
+  "maddeler": [
+   {
+    "anahtar": "s:b323baa98d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İşletme başına kredi limiti, 2025 Kasım-Aralık muhtasar ve prim hizmet beyannamelerinde beyan edilen prime esas kazanç toplamının aylık ortalamasını geçemez; üst limit 50 milyon TL"
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:6fc1e5c038",
+    "tur": "belge",
+    "kural": false,
+    "metin": "2025 Kasım-Aralık aylarına ait muhtasar ve prim hizmet beyannameleri (kredi limiti bunlardan hesaplanır)"
+   },
+   {
+    "anahtar": "b:0a9f9c6515",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kefalet başvuru ücreti: 10.000 TL; kefalet komisyonu yıllık %1,5"
+   },
+   {
+    "anahtar": "b:b96be3a8a7",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: DenizBank, Garanti BBVA, Halk Bankası, İş Bankası, Ziraat Bankası, Yapı Kredi Bankası, VakıfBank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Önce KOSGEB İstihdamı Koruma Destek Programı başvurusunun KOSGEB'ce onaylanması gerekir (KGF ürün sayfası, Özel Şartlar); KOSGEB başvuruları dönemsel çağrıyla alınır. Onaydan sonra kredi, KOSGEB ile protokollü bankaya başvurularak kullanılır. 2026-2 dönemi KOSGEB'de 31.10.2026'da kapanır."
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "KOSGEB İstihdamı Koruma 2026-2 dönemi",
+    "durum": "acik",
+    "durum_metni": "Başvuruya açık",
+    "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi"
+   }
+  ]
+ },
+ {
+  "id": 146,
+  "kurum": "KGF",
+  "baslik": "TURWIB PROGRAMI DESTEK PAKETİ",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/turwib-programi-destek-paketi",
+  "basvuru_yeri": "Kredi veren banka(lar): Akbank, Denizbank, QNB Finansbank, TEB, Yapı ve Kredi Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:ca212d09d6",
+    "tur": "sart",
+    "kural": false,
+    "metin": "TURWIB programı uygulamasının koşulları gereği, %49 ve üzerinde Türkiye Cumhuriyeti Devleti’ne ait olan kurumların ortaklığına sahip firmalara kredi kullandırılamayacaktır. TURWIB programı kapsamında sadece KOBİ ölçekli firmalara kredi kullandırımı yapılabilecektir."
+   },
+   {
+    "anahtar": "b:86e1435165",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren banka(lar): Akbank, Denizbank, QNB Finansbank, TEB, Yapı ve Kredi Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 149,
+  "kurum": "KGF",
+  "baslik": "REFİNANSMAN KEFALET PROGRAMI",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/refinansman-kefalet-programi",
+  "basvuru_yeri": "Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İşbankası, Garanti BBVA, Yapı Kredi Bankası, QNB Bank, Denizbank, Akbank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:f617cfde36",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İmalat sektöründe faaliyet gösteren KOBİ olmak (KGF ürün sayfası)"
+   },
+   {
+    "anahtar": "s:72ffcad5d6",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kredi mevcut kredilerin refinansmanı içindir; asgari 6 ay anapara ödemesiz dahil asgari 24, azami 48 ay vade (KGF ürün sayfası)"
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:0a9f9c6515",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kefalet başvuru ücreti: 10.000 TL; kefalet komisyonu yıllık %1,5"
+   },
+   {
+    "anahtar": "b:64b192fc67",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İşbankası, Garanti BBVA, Yapı Kredi Bankası, QNB Bank, Denizbank, Akbank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 152,
+  "kurum": "KGF",
+  "baslik": "TÜBİTAK Transfer Ödemeleri",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/dogrudan-krediler/tubitak-transfer-odemeleri",
+  "basvuru_yeri": "Doğrudan KGF'ye (doğrudan kefalet işleyişi); kefalet mektubu desteği sağlayan TÜBİTAK'a hitaben düzenlenir",
+  "basvuru_suresi": "Dönemsel başvuru yok: projesi TÜBİTAK tarafından desteklenmeye hak kazandıktan sonra, transfer ödemesi için doğrudan KGF'ye başvurulur (KGF TÜBİTAK transfer ödemeleri kefalet sayfası).",
+  "maddeler": [
+   {
+    "anahtar": "s:b568b4efe4",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Firmanın; KOBİ niteliklerine sahip olması"
+   },
+   {
+    "anahtar": "s:36a336ec5c",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KGF’nin kefalet vereceği transfer ödemesine ilişkin projesinin TÜBİTAK tarafından desteklenmeye hak kazanmış olması"
+   },
+   {
+    "anahtar": "s:082316dbd0",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Daha önce TÜBİTAK tarafından desteklenen herhangi bir projesinde teminat mektubunun nakde çevrilmemiş olması"
+   },
+   {
+    "anahtar": "s:c10999039e",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İflas, fesih, konkordato, iflasın ertelenmesi sürecinde olmaması"
+   },
+   {
+    "anahtar": "s:3f33c7e3ba",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvuru sırasında kamu kurum ve kuruluşları ile bankalar veya üçüncü kişiler tarafından icrai takibinin bulunmaması"
+   },
+   {
+    "anahtar": "s:6241050a69",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvuru sırasında vadesi geçmiş vergi ve SGK borcunun olmaması. Doğrudan Başvuru İçin; http://www.kgf.com.tr/index.php/tr/tubitak-transfer-odemeleri-icin-kefalet"
+   },
+   {
+    "anahtar": "b:e13dc585e6",
+    "tur": "belge",
+    "kural": false,
+    "metin": "TÜBİTAK tarafından desteklenen Ar-Ge projesi (destek kararı)"
+   },
+   {
+    "anahtar": "b:d49b58b520",
+    "tur": "belge",
+    "kural": false,
+    "metin": "KGF'ye kefalet başvurusu"
+   },
+   {
+    "anahtar": "b:618a7e9b8f",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Proje başına bir defaya mahsus 250 TL başvuru ücretinin KGF hesabına yatırılması"
+   },
+   {
+    "anahtar": "b:9209a3a316",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Doğrudan KGF'ye (doğrudan kefalet işleyişi); kefalet mektubu desteği sağlayan TÜBİTAK'a hitaben düzenlenir — Dönemsel başvuru yok: projesi TÜBİTAK tarafından desteklenmeye hak kazandıktan sonra, transfer ödemesi için doğrudan KGF'ye başvurulur (KGF TÜBİTAK transfer ödemeleri kefalet sayfası)."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 153,
+  "kurum": "KGF",
+  "baslik": "TURYIB Programı Destek Paketi",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/turyib-programi-destek-paketi",
+  "basvuru_yeri": "Kredi veren banka(lar): Şekerbank (KGF ürün sayfası, İlgili Finans Kuruluşları)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:84fac6d1b3",
+    "tur": "sart",
+    "kural": false,
+    "metin": "TURYIB programı kapsamında sadece KOBİ ölçekli firmalara kredi kullandırımı yapılabilecektir. TURYIB programı uygulamasının koşulları gereği %49 ve üzerinde Türkiye Cumhuriyeti Devleti’ne ait olan kurumların ortaklığına sahip firmalara kredi kullandırılmayacaktır."
+   },
+   {
+    "anahtar": "b:252435064b",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren banka(lar): Şekerbank (KGF ürün sayfası, İlgili Finans Kuruluşları) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 154,
+  "kurum": "KGF",
+  "baslik": "KGF Genel Destek Programı",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-genel-destek-programi",
+  "basvuru_yeri": "Programa dahil 15 bankadan biri: Akbank, Anadolubank, Burgan Bank, Denizbank, Garanti BBVA, Halkbank, İşbankası, QNB, Şekerbank, TEB, TSKB, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım",
+  "basvuru_suresi": "Sürekli (banka şubesi üzerinden bireysel başvuru)",
+  "maddeler": [
+   {
+    "anahtar": "s:d195836963",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOBİ tanımına uyan işletme olmak"
+   },
+   {
+    "anahtar": "s:0d772e0bc1",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Programa dahil 15 bankadan biri üzerinden başvuru yapmak"
+   },
+   {
+    "anahtar": "s:cf9de73752",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Talep edilen kredinin döviz/altın/mücevher finansmanı amaçlı olmaması"
+   },
+   {
+    "anahtar": "b:9b39f2f9d1",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İlgili bankanın standart kredi başvuru evrakı"
+   },
+   {
+    "anahtar": "b:28bc3b8c3d",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İşletme faaliyet/vergi levhası"
+   },
+   {
+    "anahtar": "b:a6b80db1b5",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Programa dahil 15 bankadan biri: Akbank, Anadolubank, Burgan Bank, Denizbank, Garanti BBVA, Halkbank, İşbankası, QNB, Şekerbank, TEB, TSKB, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım — Sürekli (banka şubesi üzerinden bireysel başvuru)"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 159,
+  "kurum": "KGF",
+  "baslik": "İhracat Destek Paketi",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/i-hracat-destek-paketi",
+  "basvuru_yeri": "Kredi veren bankalar: Akbank, Denizbank, Garanti Bankası, Eximbank, Halkbank, İş Bankası, Türk Ekonomi Bankası, QNB Finansbank, Vakıfbank, Yapı Kredi Bankası, Ziraat Bankası (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:ada5138829",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Yararlanıcıya tahsis edilen işletme kredisinin azami %10’u işletme harcamalarında kullanılmak üzere nakit olarak verilebilecektir. Paket kapsamında yalnızca TL kredi kullandırımı yapılabilecektir"
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:d1d3700d03",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İhracat taahhüdü (krediler taahhütlü kullandırılır)"
+   },
+   {
+    "anahtar": "b:041e8bfa92",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Akbank, Denizbank, Garanti Bankası, Eximbank, Halkbank, İş Bankası, Türk Ekonomi Bankası, QNB Finansbank, Vakıfbank, Yapı Kredi Bankası, Ziraat Bankası (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 160,
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim)",
+  "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM#hububat-baklagil",
+  "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu)",
+  "basvuru_suresi": "Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin)",
+  "maddeler": [
+   {
+    "anahtar": "s:9614d56cc5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak"
+   },
+   {
+    "anahtar": "s:7af5068243",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Arazi/parsel bilgilerinin ÇKS'de güncel olması"
+   },
+   {
+    "anahtar": "s:6e896e19ac",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İlgili üretim sezonunda ekim yapılmış olması"
+   },
+   {
+    "anahtar": "b:3aba4fbdde",
+    "tur": "belge",
+    "kural": false,
+    "metin": "ÇKS Kaydı"
+   },
+   {
+    "anahtar": "b:cbfb59e301",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Arazi/Parsel Belgesi"
+   },
+   {
+    "anahtar": "b:71b85a1bb8",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ekiliş Beyanı"
+   },
+   {
+    "anahtar": "b:fc856ba5e5",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu) — Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin)"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 161,
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Meyve-Sebze Üretim Destekleri (Temel Destek)",
+  "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM#sebze-meyve",
+  "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu)",
+  "basvuru_suresi": "Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin)",
+  "maddeler": [
+   {
+    "anahtar": "s:9614d56cc5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak"
+   },
+   {
+    "anahtar": "s:7af5068243",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Arazi/parsel bilgilerinin ÇKS'de güncel olması"
+   },
+   {
+    "anahtar": "s:8c59193f9a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İlgili üretim sezonunda dikim/ekim yapılmış olması"
+   },
+   {
+    "anahtar": "b:3aba4fbdde",
+    "tur": "belge",
+    "kural": false,
+    "metin": "ÇKS Kaydı"
+   },
+   {
+    "anahtar": "b:cbfb59e301",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Arazi/Parsel Belgesi"
+   },
+   {
+    "anahtar": "b:cf8b625d57",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Dikim/Ekiliş Beyanı"
+   },
+   {
+    "anahtar": "b:fc856ba5e5",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu) — Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin)"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 162,
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "E-İhracat Destekleri (5986 Sayılı Karar)",
+  "kaynak_url": "https://ticaret.gov.tr/destekler/e-ihracat-destekleri",
+  "basvuru_yeri": "Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir.",
+  "basvuru_suresi": "Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla",
+  "maddeler": [
+   {
+    "anahtar": "s:d781a3ecfa",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"
+   },
+   {
+    "anahtar": "s:3d651b4b9d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru"
+   },
+   {
+    "anahtar": "s:9385a91be5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Şirket ya da kooperatif olmak (şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre)"
+   },
+   {
+    "anahtar": "s:e5187febe5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de); pazaryeri listelemesinde KTÜN, üretim yeri (Türkiye) ve tescilli marka bilgisi girilmeli (el işi/kişiselleştirilmiş ürünlerde KTÜN ve marka aranmayabilir)"
+   },
+   {
+    "anahtar": "s:3fe1841739",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Her destek kalemi için önce ön onay alınmalı"
+   },
+   {
+    "anahtar": "b:1ffa41418f",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-Şirket Başvuru Formu (ilk başvuruda; marka tescil belgesi, tedarik ediliyorsa tedarik belgesi, üreticiyse kapasite raporu)"
+   },
+   {
+    "anahtar": "b:dd43626bc2",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kaleme özel ön onay ve ödeme başvuru formları (Genelge Ekleri)"
+   },
+   {
+    "anahtar": "b:42f483a103",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 168,
+  "kurum": "KGF",
+  "baslik": "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-yesil-ihracat-kredisi-destek-paketii",
+  "basvuru_yeri": "Kredi veren bankalar: Ziraat Bankası (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:9a118e8b10",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOBİ olmak"
+   },
+   {
+    "anahtar": "s:ffe23de275",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Krediler TL işletme kredisi olarak, ihracat taahhütlü kullandırılır"
+   },
+   {
+    "anahtar": "s:919c815d39",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kefalet üst limiti azami 40 milyon TL, kefalet oranı %80"
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:4f4534896b",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İhracat taahhüdü (krediler ihracat taahhütlü kullandırılır)"
+   },
+   {
+    "anahtar": "b:bfe24e3a8d",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kefalet başvuru ücreti: kredi tutarının %0,1'i (asgari 10 bin TL)"
+   },
+   {
+    "anahtar": "b:d81a7f0b25",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Ziraat Bankası (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 169,
+  "kurum": "KGF",
+  "baslik": "ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-kadin-ve-genc-girisimci-destek-paketi",
+  "basvuru_yeri": "Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:65d852463b",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."
+   },
+   {
+    "anahtar": "b:d9c616213f",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 170,
+  "kurum": "KGF",
+  "baslik": "GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/kosgeb-destekli-kefaletler/girisimci-destek-programi-kredi-faiz-programi",
+  "basvuru_yeri": "Kredi veren banka(lar): Vakıfbank, Halkbank, Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları); önce KOSGEB Girişimci Destek Programı onayı",
+  "basvuru_suresi": "Önce KOSGEB Girişimci Destek Programı (İş Geliştirme Desteği) başvurusunun KOSGEB'ce onaylanması gerekir (KGF ürün sayfası, Özel Şartlar); KOSGEB başvuruları dönemsel çağrıyla alınır. Onaydan sonra kredi, KOSGEB ile protokollü bankaya başvurularak kullanılır. Kredi son kullandırım tarihi: 31.12.2028.",
+  "maddeler": [
+   {
+    "anahtar": "s:a940b74ebf",
+    "tur": "sart",
+    "kural": false,
+    "metin": "ı Yararlanıcı/ Risk Grubu Kefalet Oranı Kefalet Üst Limiti KOBİ 90% 1.000.000 TL Kullanılabilecek Kredi Ürünleri Nakit Kredi Ücret ve Komisyon Oranları Yıllık %1,5 Kefalet Başvuru Ücreti: 8.500 TL Kredi Son Kullandırım Tarihi : 31.12.2028"
+   },
+   {
+    "anahtar": "b:92313931bd",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren banka(lar): Vakıfbank, Halkbank, Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları); önce KOSGEB Girişimci Destek Programı onayı — Önce KOSGEB Girişimci Destek Programı (İş Geliştirme Desteği) başvurusunun KOSGEB'ce onaylanması gerekir (KGF ürün sayfası, Özel Şartlar); KOSGEB başvuruları dönemsel çağrıyla alınır. Onaydan sonra kredi, KOSGEB ile protokollü bankaya başvurularak kullanılır. Kredi son kullandırım tarihi: 31.12.2028."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 171,
+  "kurum": "KGF",
+  "baslik": "Ziraat Katılım Bankası Katılım Finans Destek Paketi",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-katilim-bankasi-katilim-finans-destek-paketi",
+  "basvuru_yeri": "Kredi veren banka(lar): Ziraat Katılım Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:bf16de3ffc",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bu paket kapsamındaki krediler; yararlanıcıların faaliyet alanı dışında döviz, kıymetli maden ve mücevherat finansmanında kullanılamaz. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."
+   },
+   {
+    "anahtar": "b:2b5c21aecc",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren banka(lar): Ziraat Katılım Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 172,
+  "kurum": "KGF",
+  "baslik": "DİJİTAL KEFALET DESTEK PROGRAMI",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/dijital-kefalet-destek-programi",
+  "basvuru_yeri": "Kredi veren bankalar: Akbank (krediler dijital kanallardan tahsis yöntemiyle kullandırılır) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:318f8899ef",
+    "tur": "sart",
+    "kural": false,
+    "metin": "ı Yararlanıcı/ Risk Grubu Kefalet Oranı Kefalet Üst Limiti Şahıs firmaları için Tüzel firmalar için 80% 2,2 Milyon TL 5Milyon TL Kullanılabilecek Kredi Ürünleri Nakit Kredi Ücret ve Komisyon Oranları Yıllık %2 Diğer Şartlar Kredi Verenler tarafından kullandırılacak yeni ve ilave krediler için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamında kullandırılan krediler, yararlanıcıların faaliyet konuları dışında döviz veya kıymetli maden alımında ya da refinansman amacıyla kullanılamaz. Kefalet Başvuru Ücreti: 10.000 TL"
+   },
+   {
+    "anahtar": "b:ec9ea08684",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir)"
+   },
+   {
+    "anahtar": "b:15ec71351f",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kefalet başvuru ücreti: 10.000 TL"
+   },
+   {
+    "anahtar": "b:d4ea76cac2",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren bankalar: Akbank (krediler dijital kanallardan tahsis yöntemiyle kullandırılır) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 173,
+  "kurum": "KGF",
+  "baslik": "Vakıfbank Basın İlan Kurumu Destek Paketi",
+  "kaynak_url": "https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/vakifbank-basin-ilan-kurumu-destek-paketi",
+  "basvuru_yeri": "Kredi veren banka(lar): Vakıfbank (KGF ürün sayfası, İlgili Finans Kuruluşları)",
+  "basvuru_suresi": "Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.",
+  "maddeler": [
+   {
+    "anahtar": "s:8b49d81622",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Süreli Yayınların hem nakdi hem de gayri nakdi kredi talepleri olması durumunda yararlanıcı/risk grubu başına azami toplamda 9 milyon TL kefalet sağlanacaktır. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Basın İlan Kurumun’ dan nakdi kredi kullanılmasına yönelik Bankadan talep edilecek teminat mektupları ilgili Banka tarafındaki süreç; Basın İlan Kurumu tarafından süreli yayına tahsis edilen nakdi kredi tutarı ve bu krediyle ilgili olarak talep edilen teminat mektubu tutarını içeren Basın İlan Kurumu yazısının süreli yayın tarafından Bankaya ibrazı ile başlatılabilecektir."
+   },
+   {
+    "anahtar": "b:4f841907db",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Kredi veren banka(lar): Vakıfbank (KGF ürün sayfası, İlgili Finans Kuruluşları) — Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin."
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 174,
+  "kurum": "TUBITAK",
+  "baslik": "1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim)",
+  "kaynak_url": "https://bigg.tubitak.gov.tr/",
+  "basvuru_yeri": "Uygulayıcı kuruluşlar (üniversite TTO'ları, teknokentler) üzerinden; TÜBİTAK çağrı duyurusuna göre",
+  "basvuru_suresi": "Çağrı dönemli - güncel takvim TÜBİTAK'tan teyit edilmeli",
+  "maddeler": [
+   {
+    "anahtar": "s:ebab5c257d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvuru tarihi itibarıyla HERHANGİ BİR İŞLETMENİN ortaklık yapısında yer almamak (şirket kurulduysa başvurulamaz)"
+   },
+   {
+    "anahtar": "s:26222b3cae",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Üniversitelerin ön lisans/lisans/yüksek lisans/doktora programlarından öğrenci veya mezun olmak"
+   },
+   {
+    "anahtar": "s:5fb57454e4",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Daha önce Teknogirişim Sermayesi Desteği veya TÜBİTAK 1512 2. Aşama sermaye desteği almamış olmak"
+   },
+   {
+    "anahtar": "s:15903422ac",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Teknoloji/yenilik odaklı bir iş fikrine sahip olmak"
+   },
+   {
+    "anahtar": "b:cacda58af7",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İş fikri başvuru formu (1. Aşama)"
+   },
+   {
+    "anahtar": "b:731325399b",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İş planı (2. Aşama)"
+   },
+   {
+    "anahtar": "b:021f83ac31",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Öğrenci belgesi veya diploma"
+   },
+   {
+    "anahtar": "b:c5c3b4b834",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Uygulayıcı kuruluşlar (üniversite TTO'ları, teknokentler) üzerinden; TÜBİTAK çağrı duyurusuna göre — Çağrı dönemli - güncel takvim TÜBİTAK'tan teyit edilmeli"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 177,
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "baslik": "Teknoloji Hamlesi Programı (9903 sayılı Karar)",
+  "kaynak_url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#teknoloji-hamlesi",
+  "basvuru_yeri": "Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)",
+  "basvuru_suresi": "Dönem yok: teşvik belgesi müracaatı E-TUYS üzerinden yapılır ve 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir (9903 sayılı Karar m.5/5, m.5/12). Müracaat tarihinden önce yapılan yatırım harcamaları belge kapsamına alınmaz (m.5/6): harcamaya başlamadan önce başvurun.",
+  "maddeler": [
+   {
+    "anahtar": "s:b498d70115",
+    "tur": "sart",
+    "kural": false,
+    "metin": "EK-3 listesinde yer alma şartı bu program için ARANMAZ (MADDE 5/1); yatırımlar değerlendirme komitesince proje bazında değerlendirilir."
+   },
+   {
+    "anahtar": "s:18119695ae",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Öncelikli ürün listesindeki ürünlere ya da teknolojilere yönelik yatırımlar desteklenebilir; liste orta-yüksek ve yüksek teknolojili sektörlerden (EK-1) ve kritik ürünlerden oluşur, Bakanlık tebliğiyle yayımlanır (MADDE 2/i, MADDE 6)."
+   },
+   {
+    "anahtar": "s:cdfa5cebb2",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2)."
+   },
+   {
+    "anahtar": "s:30d386c760",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Finansal kiralama yöntemiyle yapılacak yatırımlarda, kiralamaya konu makine ve teçhizatın toplam tutarının her bir finansal kiralama şirketi için asgari 3 milyon TL olması (MADDE 5/3)."
+   },
+   {
+    "anahtar": "s:593a2313ee",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Projenin, makroekonomik programlar ve arz-talep dengesi dikkate alınarak yapılacak sektörel, malî ve teknik değerlendirme sonucunda uygun görülmesi ve teşvik belgesi düzenlenmesi (MADDE 5/4)."
+   },
+   {
+    "anahtar": "s:a504855a04",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Müracaatın 31/12/2030 tarihine kadar yapılmış olması (MADDE 5/5)."
+   },
+   {
+    "anahtar": "s:e11d90c664",
+    "tur": "sart",
+    "kural": true,
+    "metin": "DİKKAT: teşvik belgesi müracaat tarihinden ÖNCE gerçekleştirilmiş yatırım harcamaları belge kapsamına ALINMAZ (MADDE 5/6) - harcamaya başlamadan önce başvurun."
+   },
+   {
+    "anahtar": "s:4ce6f5a0f7",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOBİ olmayan yatırımcılar ve Yerel Kalkınma Hamlesi yatırımcıları, sabit yatırım tutarının en az %2'si tutarında ekosistem geliştirme planı gerçekleştirmekle yükümlüdür (vergi indirimi öngörülen yatırımlarda) (MADDE 5/9)."
+   },
+   {
+    "anahtar": "s:0a62b94d46",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvuru ve tüm işlemler E-TUYS üzerinden elektronik ortamda yapılır (MADDE 5/12)."
+   },
+   {
+    "anahtar": "b:d0a40e3cab",
+    "tur": "belge",
+    "kural": false,
+    "metin": "E-TUYS yetkilendirmesi için Dilekçe, Taahhütname ve Kullanıcı Yetkilendirme Formu (Bakanlığın KEP adresine Kayıtlı Elektronik Posta ile gönderilir)"
+   },
+   {
+    "anahtar": "b:7c75dfe2a1",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Yetkilendirme sonrası yatırım teşvik belgesi başvurusu E-TUYS üzerinden yapılır; istenen bilgi ve belgeler E-TUYS kılavuzlarında tanımlıdır"
+   },
+   {
+    "anahtar": "b:398093cd25",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — Dönem yok: teşvik belgesi müracaatı E-TUYS üzerinden yapılır ve 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir (9903 sayılı Karar m.5/5, m.5/12). Müracaat tarihinden önce yapılan yatırım harcamaları belge kapsamına alınmaz (m.5/6): harcamaya başlamadan önce başvurun."
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "9903 teşvik belgesi müracaat süresi",
+    "durum": "acik",
+    "durum_metni": "Başvuruya açık",
+    "kaynak_url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5"
+   }
+  ]
+ },
+ {
+  "id": 178,
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "baslik": "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+  "kaynak_url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#yerel-kalkinma-hamlesi",
+  "basvuru_yeri": "Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)",
+  "basvuru_suresi": "Dönem yok: teşvik belgesi müracaatı E-TUYS üzerinden yapılır ve 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir (9903 sayılı Karar m.5/5, m.5/12). Müracaat tarihinden önce yapılan yatırım harcamaları belge kapsamına alınmaz (m.5/6): harcamaya başlamadan önce başvurun.",
+  "maddeler": [
+   {
+    "anahtar": "s:b498d70115",
+    "tur": "sart",
+    "kural": false,
+    "metin": "EK-3 listesinde yer alma şartı bu program için ARANMAZ (MADDE 5/1); yatırımlar değerlendirme komitesince proje bazında değerlendirilir."
+   },
+   {
+    "anahtar": "s:975ca1bc84",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Desteklenecek yatırım konuları il bazlı 'yerel yatırım konuları listesi' ile tebliğle belirlenir; program Kalkınma Ajansları Genel Müdürlüğünce yürütülür (MADDE 7)."
+   },
+   {
+    "anahtar": "s:cdfa5cebb2",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2)."
+   },
+   {
+    "anahtar": "s:30d386c760",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Finansal kiralama yöntemiyle yapılacak yatırımlarda, kiralamaya konu makine ve teçhizatın toplam tutarının her bir finansal kiralama şirketi için asgari 3 milyon TL olması (MADDE 5/3)."
+   },
+   {
+    "anahtar": "s:593a2313ee",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Projenin, makroekonomik programlar ve arz-talep dengesi dikkate alınarak yapılacak sektörel, malî ve teknik değerlendirme sonucunda uygun görülmesi ve teşvik belgesi düzenlenmesi (MADDE 5/4)."
+   },
+   {
+    "anahtar": "s:a504855a04",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Müracaatın 31/12/2030 tarihine kadar yapılmış olması (MADDE 5/5)."
+   },
+   {
+    "anahtar": "s:e11d90c664",
+    "tur": "sart",
+    "kural": true,
+    "metin": "DİKKAT: teşvik belgesi müracaat tarihinden ÖNCE gerçekleştirilmiş yatırım harcamaları belge kapsamına ALINMAZ (MADDE 5/6) - harcamaya başlamadan önce başvurun."
+   },
+   {
+    "anahtar": "s:4ce6f5a0f7",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOBİ olmayan yatırımcılar ve Yerel Kalkınma Hamlesi yatırımcıları, sabit yatırım tutarının en az %2'si tutarında ekosistem geliştirme planı gerçekleştirmekle yükümlüdür (vergi indirimi öngörülen yatırımlarda) (MADDE 5/9)."
+   },
+   {
+    "anahtar": "s:0a62b94d46",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvuru ve tüm işlemler E-TUYS üzerinden elektronik ortamda yapılır (MADDE 5/12)."
+   },
+   {
+    "anahtar": "b:d0a40e3cab",
+    "tur": "belge",
+    "kural": false,
+    "metin": "E-TUYS yetkilendirmesi için Dilekçe, Taahhütname ve Kullanıcı Yetkilendirme Formu (Bakanlığın KEP adresine Kayıtlı Elektronik Posta ile gönderilir)"
+   },
+   {
+    "anahtar": "b:7c75dfe2a1",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Yetkilendirme sonrası yatırım teşvik belgesi başvurusu E-TUYS üzerinden yapılır; istenen bilgi ve belgeler E-TUYS kılavuzlarında tanımlıdır"
+   },
+   {
+    "anahtar": "b:398093cd25",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — Dönem yok: teşvik belgesi müracaatı E-TUYS üzerinden yapılır ve 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir (9903 sayılı Karar m.5/5, m.5/12). Müracaat tarihinden önce yapılan yatırım harcamaları belge kapsamına alınmaz (m.5/6): harcamaya başlamadan önce başvurun."
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "9903 teşvik belgesi müracaat süresi",
+    "durum": "acik",
+    "durum_metni": "Başvuruya açık",
+    "kaynak_url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5"
+   }
+  ]
+ },
+ {
+  "id": 179,
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "baslik": "Stratejik Hamle Programı (9903 sayılı Karar)",
+  "kaynak_url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#stratejik-hamle",
+  "basvuru_yeri": "Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)",
+  "basvuru_suresi": "Dönem yok: teşvik belgesi müracaatı E-TUYS üzerinden yapılır ve 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir (9903 sayılı Karar m.5/5, m.5/12). Müracaat tarihinden önce yapılan yatırım harcamaları belge kapsamına alınmaz (m.5/6): harcamaya başlamadan önce başvurun. Stratejik Hamle'de müracaat önce Genel Müdürlükçe ön değerlendirmeye alınır; uygun bulunan projeler fizibilite için kalkınma ve yatırım bankasına iletilir (m.8/3-4).",
+  "maddeler": [
+   {
+    "anahtar": "s:b498d70115",
+    "tur": "sart",
+    "kural": false,
+    "metin": "EK-3 listesinde yer alma şartı bu program için ARANMAZ (MADDE 5/1); yatırımlar değerlendirme komitesince proje bazında değerlendirilir."
+   },
+   {
+    "anahtar": "s:7c3714bb51",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Yatırım konusunun stratejik hamle yatırım konuları listesinde yer alması; asgari sabit yatırım yüksek teknoloji için 100 milyon TL, diğerleri için 200 milyon TL; ön değerlendirmede 5 kriterden en az 3'ü (ithalat karşılama oranı ≤%70, katma değer ≥%30, %20 öz kaynak, son bir yıl ithalat ≥50 milyon USD vb.); kalkınma ve yatırım bankası fizibilite raporu (MADDE 8)."
+   },
+   {
+    "anahtar": "s:cdfa5cebb2",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2)."
+   },
+   {
+    "anahtar": "s:30d386c760",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Finansal kiralama yöntemiyle yapılacak yatırımlarda, kiralamaya konu makine ve teçhizatın toplam tutarının her bir finansal kiralama şirketi için asgari 3 milyon TL olması (MADDE 5/3)."
+   },
+   {
+    "anahtar": "s:593a2313ee",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Projenin, makroekonomik programlar ve arz-talep dengesi dikkate alınarak yapılacak sektörel, malî ve teknik değerlendirme sonucunda uygun görülmesi ve teşvik belgesi düzenlenmesi (MADDE 5/4)."
+   },
+   {
+    "anahtar": "s:a504855a04",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Müracaatın 31/12/2030 tarihine kadar yapılmış olması (MADDE 5/5)."
+   },
+   {
+    "anahtar": "s:e11d90c664",
+    "tur": "sart",
+    "kural": true,
+    "metin": "DİKKAT: teşvik belgesi müracaat tarihinden ÖNCE gerçekleştirilmiş yatırım harcamaları belge kapsamına ALINMAZ (MADDE 5/6) - harcamaya başlamadan önce başvurun."
+   },
+   {
+    "anahtar": "s:4ce6f5a0f7",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOBİ olmayan yatırımcılar ve Yerel Kalkınma Hamlesi yatırımcıları, sabit yatırım tutarının en az %2'si tutarında ekosistem geliştirme planı gerçekleştirmekle yükümlüdür (vergi indirimi öngörülen yatırımlarda) (MADDE 5/9)."
+   },
+   {
+    "anahtar": "s:0a62b94d46",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvuru ve tüm işlemler E-TUYS üzerinden elektronik ortamda yapılır (MADDE 5/12)."
+   },
+   {
+    "anahtar": "b:d0a40e3cab",
+    "tur": "belge",
+    "kural": false,
+    "metin": "E-TUYS yetkilendirmesi için Dilekçe, Taahhütname ve Kullanıcı Yetkilendirme Formu (Bakanlığın KEP adresine Kayıtlı Elektronik Posta ile gönderilir)"
+   },
+   {
+    "anahtar": "b:7c75dfe2a1",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Yetkilendirme sonrası yatırım teşvik belgesi başvurusu E-TUYS üzerinden yapılır; istenen bilgi ve belgeler E-TUYS kılavuzlarında tanımlıdır"
+   },
+   {
+    "anahtar": "b:674ccfe077",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — Dönem yok: teşvik belgesi müracaatı E-TUYS üzerinden yapılır ve 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir (9903 sayılı Karar m.5/5, m.5/12). Müracaat tarihinden önce yapılan yatırım harcamaları belge kapsamına alınmaz (m.5/6): harcamaya başlamadan önce başvurun. Stratejik Hamle'de müracaat önce Genel Müdürlükçe ön değerlendirmeye alınır; uygun bulunan projeler fizibilite için kalkınma ve yatırım bankasına iletilir (m.8/3-4)."
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "9903 teşvik belgesi müracaat süresi",
+    "durum": "acik",
+    "durum_metni": "Başvuruya açık",
+    "kaynak_url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5"
+   }
+  ]
+ },
+ {
+  "id": 180,
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "baslik": "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+  "kaynak_url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#hedef-yatirimlar",
+  "basvuru_yeri": "Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)",
+  "basvuru_suresi": "Dönem yok: teşvik belgesi müracaatı E-TUYS üzerinden yapılır ve 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir (9903 sayılı Karar m.5/5, m.5/12). Müracaat tarihinden önce yapılan yatırım harcamaları belge kapsamına alınmaz (m.5/6): harcamaya başlamadan önce başvurun.",
+  "maddeler": [
+   {
+    "anahtar": "s:da68158152",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Yatırım konusunun Karar'ın EK-3 listesinde ('Desteklerden faydalanabilecek sektörler ve şartlar') yer alması ve oradaki şartları sağlaması; eşleştirme NACE Rev.2.1 kodu üzerinden yapılır (MADDE 5/1)."
+   },
+   {
+    "anahtar": "s:ef06ffddd4",
+    "tur": "sart",
+    "kural": false,
+    "metin": "EK-3'te yer alan yatırım konuları, belirtilen şartları sağlamaları hâlinde desteklenir (MADDE 10/1)."
+   },
+   {
+    "anahtar": "s:cdfa5cebb2",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2)."
+   },
+   {
+    "anahtar": "s:30d386c760",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Finansal kiralama yöntemiyle yapılacak yatırımlarda, kiralamaya konu makine ve teçhizatın toplam tutarının her bir finansal kiralama şirketi için asgari 3 milyon TL olması (MADDE 5/3)."
+   },
+   {
+    "anahtar": "s:593a2313ee",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Projenin, makroekonomik programlar ve arz-talep dengesi dikkate alınarak yapılacak sektörel, malî ve teknik değerlendirme sonucunda uygun görülmesi ve teşvik belgesi düzenlenmesi (MADDE 5/4)."
+   },
+   {
+    "anahtar": "s:a504855a04",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Müracaatın 31/12/2030 tarihine kadar yapılmış olması (MADDE 5/5)."
+   },
+   {
+    "anahtar": "s:e11d90c664",
+    "tur": "sart",
+    "kural": true,
+    "metin": "DİKKAT: teşvik belgesi müracaat tarihinden ÖNCE gerçekleştirilmiş yatırım harcamaları belge kapsamına ALINMAZ (MADDE 5/6) - harcamaya başlamadan önce başvurun."
+   },
+   {
+    "anahtar": "s:4ce6f5a0f7",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOBİ olmayan yatırımcılar ve Yerel Kalkınma Hamlesi yatırımcıları, sabit yatırım tutarının en az %2'si tutarında ekosistem geliştirme planı gerçekleştirmekle yükümlüdür (vergi indirimi öngörülen yatırımlarda) (MADDE 5/9)."
+   },
+   {
+    "anahtar": "s:0a62b94d46",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvuru ve tüm işlemler E-TUYS üzerinden elektronik ortamda yapılır (MADDE 5/12)."
+   },
+   {
+    "anahtar": "b:d0a40e3cab",
+    "tur": "belge",
+    "kural": false,
+    "metin": "E-TUYS yetkilendirmesi için Dilekçe, Taahhütname ve Kullanıcı Yetkilendirme Formu (Bakanlığın KEP adresine Kayıtlı Elektronik Posta ile gönderilir)"
+   },
+   {
+    "anahtar": "b:7c75dfe2a1",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Yetkilendirme sonrası yatırım teşvik belgesi başvurusu E-TUYS üzerinden yapılır; istenen bilgi ve belgeler E-TUYS kılavuzlarında tanımlıdır"
+   },
+   {
+    "anahtar": "b:398093cd25",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — Dönem yok: teşvik belgesi müracaatı E-TUYS üzerinden yapılır ve 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir (9903 sayılı Karar m.5/5, m.5/12). Müracaat tarihinden önce yapılan yatırım harcamaları belge kapsamına alınmaz (m.5/6): harcamaya başlamadan önce başvurun."
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "9903 teşvik belgesi müracaat süresi",
+    "durum": "acik",
+    "durum_metni": "Başvuruya açık",
+    "kaynak_url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5"
+   }
+  ]
+ },
+ {
+  "id": 181,
+  "kurum": "Sanayi ve Teknoloji Bakanlığı",
+  "baslik": "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+  "kaynak_url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#oncelikli-yatirimlar",
+  "basvuru_yeri": "Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)",
+  "basvuru_suresi": "Dönem yok: teşvik belgesi müracaatı E-TUYS üzerinden yapılır ve 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir (9903 sayılı Karar m.5/5, m.5/12). Müracaat tarihinden önce yapılan yatırım harcamaları belge kapsamına alınmaz (m.5/6): harcamaya başlamadan önce başvurun.",
+  "maddeler": [
+   {
+    "anahtar": "s:8b54645bb2",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Yatırım konusunun Karar'ın EK-3 listesinde ('Desteklerden faydalanabilecek sektörler ve şartlar') yer alması ve oradaki şartları sağlaması; eşleştirme NACE Rev.2.1 kodu üzerinden yapılır (MADDE 5/1). İstisna: sanayi sicil belgeli mevcut tesislerde deprem/yangın riskine karşı yatırımlar (MADDE 9/1-v)."
+   },
+   {
+    "anahtar": "s:74bd10b645",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Yatırım, MADDE 9/1 bentlerinden birine girmelidir; ör. öncelikli ürün listesindeki yüksek teknolojili ürünler veya asgari 500 milyon TL yüksek teknoloji yatırımı (b); İstanbul hariç, orta-yüksek teknoloji için liste veya asgari 1 milyar TL (c); 6. bölge yatırımları, müteharrik hariç (ç); savunma (d); imalat öz tüketimi GES/RES (e); Ar-Ge yatırımları (i); lisanslı depoculuk (u) vb."
+   },
+   {
+    "anahtar": "s:cdfa5cebb2",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2)."
+   },
+   {
+    "anahtar": "s:30d386c760",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Finansal kiralama yöntemiyle yapılacak yatırımlarda, kiralamaya konu makine ve teçhizatın toplam tutarının her bir finansal kiralama şirketi için asgari 3 milyon TL olması (MADDE 5/3)."
+   },
+   {
+    "anahtar": "s:593a2313ee",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Projenin, makroekonomik programlar ve arz-talep dengesi dikkate alınarak yapılacak sektörel, malî ve teknik değerlendirme sonucunda uygun görülmesi ve teşvik belgesi düzenlenmesi (MADDE 5/4)."
+   },
+   {
+    "anahtar": "s:a504855a04",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Müracaatın 31/12/2030 tarihine kadar yapılmış olması (MADDE 5/5)."
+   },
+   {
+    "anahtar": "s:e11d90c664",
+    "tur": "sart",
+    "kural": true,
+    "metin": "DİKKAT: teşvik belgesi müracaat tarihinden ÖNCE gerçekleştirilmiş yatırım harcamaları belge kapsamına ALINMAZ (MADDE 5/6) - harcamaya başlamadan önce başvurun."
+   },
+   {
+    "anahtar": "s:4ce6f5a0f7",
+    "tur": "sart",
+    "kural": false,
+    "metin": "KOBİ olmayan yatırımcılar ve Yerel Kalkınma Hamlesi yatırımcıları, sabit yatırım tutarının en az %2'si tutarında ekosistem geliştirme planı gerçekleştirmekle yükümlüdür (vergi indirimi öngörülen yatırımlarda) (MADDE 5/9)."
+   },
+   {
+    "anahtar": "s:0a62b94d46",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Başvuru ve tüm işlemler E-TUYS üzerinden elektronik ortamda yapılır (MADDE 5/12)."
+   },
+   {
+    "anahtar": "b:d0a40e3cab",
+    "tur": "belge",
+    "kural": false,
+    "metin": "E-TUYS yetkilendirmesi için Dilekçe, Taahhütname ve Kullanıcı Yetkilendirme Formu (Bakanlığın KEP adresine Kayıtlı Elektronik Posta ile gönderilir)"
+   },
+   {
+    "anahtar": "b:7c75dfe2a1",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Yetkilendirme sonrası yatırım teşvik belgesi başvurusu E-TUYS üzerinden yapılır; istenen bilgi ve belgeler E-TUYS kılavuzlarında tanımlıdır"
+   },
+   {
+    "anahtar": "b:398093cd25",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — Dönem yok: teşvik belgesi müracaatı E-TUYS üzerinden yapılır ve 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir (9903 sayılı Karar m.5/5, m.5/12). Müracaat tarihinden önce yapılan yatırım harcamaları belge kapsamına alınmaz (m.5/6): harcamaya başlamadan önce başvurun."
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "9903 teşvik belgesi müracaat süresi",
+    "durum": "acik",
+    "durum_metni": "Başvuruya açık",
+    "kaynak_url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5"
+   }
+  ]
+ },
+ {
+  "id": 182,
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
+  "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf",
+  "basvuru_yeri": "Ticaret Bakanlığı Uluslararası Hizmet Ticareti Genel Müdürlüğü; incelemeci kuruluş: Hizmet İhracatçıları Birliği Genel Sekreterliği (DYS üzerinden)",
+  "basvuru_suresi": "Sürekli (program bazlı; yararlanıcı başına en fazla 5 yıl)",
+  "maddeler": [
+   {
+    "anahtar": "s:5b906d863f",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Yararlanıcı: Türkiye'de yerleşik, 6102 sayılı TTK hükümlerine göre kurulmuş şirket (veya 1163 sayılı Kanun kapsamında kooperatif) olmak (Karar MADDE 3 – 'Yararlanıcı' tanımı); şahıs işletmesi ve şirketleşmemiş girişim yararlanıcı tanımına girmez"
+   },
+   {
+    "anahtar": "s:b86e4abe71",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bilişim sektöründe faaliyet göstermek; desteğe konu ürün yararlanıcının kendi yazılımı, mobil uygulaması veya dijital oyunu olmak (MADDE 16, 17, 22)"
+   },
+   {
+    "anahtar": "s:2a4c0b1a38",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Giderlerin yurt dışı pazara giriş / yurt dışına yönelik faaliyetlere ilişkin olması (MADDE 16, 17, 22)"
+   },
+   {
+    "anahtar": "s:b254a97672",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ürün bazlı desteklerde yılda en fazla 10 ürün; yararlanıcı başına destek süresi en fazla 5 yıl (MADDE 16/2, 17/2-3, 22/2-3, 23/2, 31/2)"
+   },
+   {
+    "anahtar": "s:4616c0d477",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Destek, giderler yapılıp belgelendikten sonra ödenir (geri ödemesiz, harcama sonrası); usul ve esaslar Genelge'de (Genelge MADDE 1-4)"
+   },
+   {
+    "anahtar": "b:71421092b9",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Destek Yönetim Sistemi (DYS) üzerinden başvuru ve gider belgeleri (Genelge MADDE 3 dayanağı: 2019/7 sayılı Ticaret Bakanlığı DYS Genelgesi)"
+   },
+   {
+    "anahtar": "b:07ed7ee7bb",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Gider faturaları/dekontları ve ödeme belgeleri"
+   },
+   {
+    "anahtar": "b:102fcbc2d9",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Ticaret Bakanlığı Uluslararası Hizmet Ticareti Genel Müdürlüğü; incelemeci kuruluş: Hizmet İhracatçıları Birliği Genel Sekreterliği (DYS üzerinden) — Sürekli (program bazlı; yararlanıcı başına en fazla 5 yıl)"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 185,
+  "kurum": "SGK / İŞKUR",
+  "baslik": "Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde)",
+  "kaynak_url": "https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/",
+  "basvuru_yeri": "SGK (e-Bildirge) — uygulayıcı kurum; bilgi: İŞKUR il müdürlükleri",
+  "basvuru_suresi": "Sürekli; 31.12.2026 tarihine kadar yapılan işe alımlar için",
+  "maddeler": [
+   {
+    "anahtar": "s:f4b64e0c38",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İşe alınan kişinin son 6 aydır işsiz olması"
+   },
+   {
+    "anahtar": "s:68912fbf3a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Kişinin, işe alındığı tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına İLAVE olarak istihdam edilmesi"
+   },
+   {
+    "anahtar": "s:7a5dc74e1d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Özel sektör işvereni olmak; aylık prim ve hizmet belgelerinin yasal süresinde verilmesi ve primlerin ödenmesi (SGK genel şartları)"
+   },
+   {
+    "anahtar": "s:70964f9250",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Uygulama süresi: 31.12.2026 tarihine kadar işe alımlar"
+   },
+   {
+    "anahtar": "b:514a926501",
+    "tur": "belge",
+    "kural": false,
+    "metin": "SGK e-Bildirge üzerinden teşvik kodu ile bildirim"
+   },
+   {
+    "anahtar": "b:7e5beaf41c",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İŞKUR kaydı (ek 6 ay için)"
+   },
+   {
+    "anahtar": "b:4015d5fdc1",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: SGK (e-Bildirge) — uygulayıcı kurum; bilgi: İŞKUR il müdürlükleri — Sürekli; 31.12.2026 tarihine kadar yapılan işe alımlar için"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 186,
+  "kurum": "SGK / İŞKUR",
+  "baslik": "İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5)",
+  "kaynak_url": "https://www.iskur.gov.tr/isveren/tesvikler/issizlik-odenegi-alanlara-yonelik-tesvik/",
+  "basvuru_yeri": "SGK (e-Bildirge)",
+  "basvuru_suresi": "Sürekli",
+  "maddeler": [
+   {
+    "anahtar": "s:2e5481e969",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İşe alınan kişinin işsizlik ödeneği alıyor olması"
+   },
+   {
+    "anahtar": "s:d67ca68726",
+    "tur": "sart",
+    "kural": false,
+    "metin": "İşçinin, işten ayrıldığı işyerinde tekrar işe başlamaması"
+   },
+   {
+    "anahtar": "s:e5fe6c41f5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Aylık prim ve hizmet belgesinin yasal süresinde verilmesi, primlerin yasal süresinde ödenmesi"
+   },
+   {
+    "anahtar": "b:514a926501",
+    "tur": "belge",
+    "kural": false,
+    "metin": "SGK e-Bildirge üzerinden teşvik kodu ile bildirim"
+   },
+   {
+    "anahtar": "b:7d38ecbf07",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: SGK (e-Bildirge) — Sürekli"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 187,
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3)",
+  "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-3",
+  "basvuru_yeri": "Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (İBGS) DYS üzerinden",
+  "basvuru_suresi": "Pazara giriş belgesinin düzenlenme tarihinden (denetim/gözetimde rapor tarihinden, ruhsatlandırma ve kayıtta ödeme belgesi tarihinden) itibaren 6 ay içinde",
+  "maddeler": [
+   {
+    "anahtar": "s:c4d6dac5f2",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler (kollektif, komandit, anonim, limited) ya da ticari/sınai faaliyette bulunan kooperatif (Karar m.2); şahıs işletmesi kapsam dışı"
+   },
+   {
+    "anahtar": "s:d781a3ecfa",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"
+   },
+   {
+    "anahtar": "s:99299e8d7a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Gider, akredite kurum/kuruluştan alınan ve hedef ülke pazarına girişte zorunlu ya da avantaj sağlayan belge, sertifika, test/analiz veya ruhsatlandırma/kayıt işlemine ilişkin olmalı"
+   },
+   {
+    "anahtar": "b:ef8464baf2",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kapasite raporu / ekspertiz raporu / faaliyet belgesi"
+   },
+   {
+    "anahtar": "b:46cbebae23",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Sözleşme ya da hizmet fiyat listesi"
+   },
+   {
+    "anahtar": "b:be0b49f883",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Test/analiz raporları için EK-2 icmal tablosu"
+   },
+   {
+    "anahtar": "b:bfed76ee25",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Pazara giriş belgesi (sertifika)"
+   },
+   {
+    "anahtar": "b:7d8f7355f5",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Belgeyi düzenleyen kuruluşun akreditasyon belgesi"
+   },
+   {
+    "anahtar": "b:25db37e270",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Fatura"
+   },
+   {
+    "anahtar": "b:4ce0aeb159",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ödeme belgeleri (banka dekontu, kredi kartı ekstresi vb.)"
+   },
+   {
+    "anahtar": "b:5e312671e4",
+    "tur": "belge",
+    "kural": false,
+    "metin": "İngilizce dışındaki belgelerin tercümeleri"
+   },
+   {
+    "anahtar": "b:c3506c0072",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Sicil tasdiknamesi"
+   },
+   {
+    "anahtar": "b:5fc9fe2f7b",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (İBGS) DYS üzerinden — Pazara giriş belgesinin düzenlenme tarihinden (denetim/gözetimde rapor tarihinden, ruhsatlandırma ve kayıtta ödeme belgesi tarihinden) itibaren 6 ay içinde"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 188,
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)",
+  "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-4",
+  "basvuru_yeri": "Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden",
+  "basvuru_suresi": "Ödeme belgesi tarihinden itibaren 6 ay içinde",
+  "maddeler": [
+   {
+    "anahtar": "s:c4d6dac5f2",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler (kollektif, komandit, anonim, limited) ya da ticari/sınai faaliyette bulunan kooperatif (Karar m.2); şahıs işletmesi kapsam dışı"
+   },
+   {
+    "anahtar": "s:d781a3ecfa",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"
+   },
+   {
+    "anahtar": "s:243578fede",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Markanın Türkiye'de tescil belgesi bulunmalı (yurt içi marka tescil belgesi)"
+   },
+   {
+    "anahtar": "s:27c415e6e4",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Destekten en fazla 4 yıl yararlanılabilir"
+   },
+   {
+    "anahtar": "s:34956e4a5a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Yurt içi tescil ile yurt dışı tescil başvurusu aynı şirket adına olmalı"
+   },
+   {
+    "anahtar": "b:49c3bda33f",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Yurt içi marka tescil belgesi"
+   },
+   {
+    "anahtar": "b:c7c290194a",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Yurt dışı marka tescil belgesi ya da tescil başvurusu belgesi (İngilizce dışındaysa yeminli tercüme)"
+   },
+   {
+    "anahtar": "b:25db37e270",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Fatura"
+   },
+   {
+    "anahtar": "b:eb363fd5cb",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Tescile ilişkin ödeme belgeleri (banka dekontu, kredi kartı ekstresi, hesap dökümü)"
+   },
+   {
+    "anahtar": "b:78eac0ef11",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Varsa avukatlık/hukuki danışmanlık faturası ve ödeme belgeleri"
+   },
+   {
+    "anahtar": "b:3e551a2456",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Varsa hukuki sürece ilişkin belgeler (ihtar yazısı, dava dilekçesi)"
+   },
+   {
+    "anahtar": "b:1e68d5f4a0",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — Ödeme belgesi tarihinden itibaren 6 ay içinde"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 189,
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6)",
+  "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-6",
+  "basvuru_yeri": "Bakanlıkça görevlendirilen İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden",
+  "basvuru_suresi": "Şirket çalışanının Türkiye'ye giriş tarihinden itibaren en geç 3 ay içinde",
+  "maddeler": [
+   {
+    "anahtar": "s:c4d6dac5f2",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler (kollektif, komandit, anonim, limited) ya da ticari/sınai faaliyette bulunan kooperatif (Karar m.2); şahıs işletmesi kapsam dışı"
+   },
+   {
+    "anahtar": "s:5d2e63f34c",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bir takvim yılında en çok 5, toplamda en çok 20 pazar araştırması faaliyeti desteklenir"
+   },
+   {
+    "anahtar": "s:5281793ee9",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Desteklenen giderler: pazar araştırmasına ilişkin ulaşım ve konaklama"
+   },
+   {
+    "anahtar": "b:9f07231209",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Katılan personel için faaliyet ayına ait SGK bildirgesi (şirket ortağıysa ticaret sicili gazetesi ya da pay cetveli)"
+   },
+   {
+    "anahtar": "b:4ba4ac245a",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Elektronik uçak bileti (ekonomi sınıfı) ve uçuşu kanıtlayan belge: biniş kartı, pasaportun giriş-çıkış sayfaları ya da havayolu yazısı"
+   },
+   {
+    "anahtar": "b:b2316bbf22",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Bilet acenteden alındıysa acentenin ayrıntılı faturası"
+   },
+   {
+    "anahtar": "b:1491bf1d2c",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Konaklama faturası (oda-kahvaltı tutarını gösteren ayrıntılı fatura)"
+   },
+   {
+    "anahtar": "b:f369bc6ecf",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ödemenin bankacılık kanalıyla yapıldığını gösteren banka onaylı belge"
+   },
+   {
+    "anahtar": "b:aebd0794e7",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Beyanname (EK A-2)"
+   },
+   {
+    "anahtar": "b:549e90b62e",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Nüfus aile kayıt örneği (e-Devlet)"
+   },
+   {
+    "anahtar": "b:79702c3585",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Bakanlıkça görevlendirilen İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — Şirket çalışanının Türkiye'ye giriş tarihinden itibaren en geç 3 ay içinde"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 190,
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11)",
+  "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-11",
+  "basvuru_yeri": "Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden; e-ticaret depoları için KEP üzerinden",
+  "basvuru_suresi": "Ödeme belgesi tarihinden itibaren 6 ay içinde",
+  "maddeler": [
+   {
+    "anahtar": "s:c4d6dac5f2",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler (kollektif, komandit, anonim, limited) ya da ticari/sınai faaliyette bulunan kooperatif (Karar m.2); şahıs işletmesi kapsam dışı"
+   },
+   {
+    "anahtar": "s:d781a3ecfa",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"
+   },
+   {
+    "anahtar": "s:dfa07afea8",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Birimde Türkiye'de üretilen ürünler pazarlanmalı"
+   },
+   {
+    "anahtar": "s:2a5266ccf5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Her ülke için en fazla 4 yıl; şirket başına en fazla 25 birim"
+   },
+   {
+    "anahtar": "s:ba86f8747c",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Küresel tedarik zinciri desteğinin (m.10/3) depo kirası kaleminden yararlanılmamış olmalı"
+   },
+   {
+    "anahtar": "b:840c3417a7",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kapsama alınma: yurt dışı şirketin ortaklık yapısı ve tescil belgesi (yeminli tercümeli)"
+   },
+   {
+    "anahtar": "b:6ff09b50ba",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kapsama alınma: kira ya da paylaşımlı ofis sözleşmesi (yeminli tercümeli)"
+   },
+   {
+    "anahtar": "b:d133a522e1",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Kapsama alınma: birimin fotoğraf/videoları (giriş, iç mekân)"
+   },
+   {
+    "anahtar": "b:132be99035",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ödeme: kira/üyelik ya da reyon-stant komisyon ödemelerine ilişkin banka dekontu, kredi kartı ekstresi, hesap dökümü"
+   },
+   {
+    "anahtar": "b:78f5541c66",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ödeme: depo kirası ve depolama hizmeti için palet miktarını gösteren ayrıntılı fatura"
+   },
+   {
+    "anahtar": "b:ad0b6aa5d8",
+    "tur": "belge",
+    "kural": false,
+    "metin": "E-ticaret deposu (KEP ile): Kapsama Alma Başvuru Formu, Ödeme Başvuru Formu, Ödeme Bilgileri Formu, Yerinde İnceleme Formu"
+   },
+   {
+    "anahtar": "b:68443d29f8",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden; e-ticaret depoları için KEP üzerinden — Ödeme belgesi tarihinden itibaren 6 ay içinde"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 191,
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12)",
+  "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12",
+  "basvuru_yeri": "Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden",
+  "basvuru_suresi": "Ödeme belgesi tarihinden itibaren 6 ay içinde",
+  "maddeler": [
+   {
+    "anahtar": "s:c4d6dac5f2",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler (kollektif, komandit, anonim, limited) ya da ticari/sınai faaliyette bulunan kooperatif (Karar m.2); şahıs işletmesi kapsam dışı"
+   },
+   {
+    "anahtar": "s:d781a3ecfa",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"
+   },
+   {
+    "anahtar": "s:c44bb6190f",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Tanıtımı yapılan ürünler Türkiye'de üretilmiş olmalı"
+   },
+   {
+    "anahtar": "s:4db47ee2c7",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Yurt dışı birimi yoksa: yurt içi marka tescil belgesi ve tanıtım yapılacak ülkede marka tescili ya da tescil başvurusu olmalı"
+   },
+   {
+    "anahtar": "s:27c415e6e4",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Destekten en fazla 4 yıl yararlanılabilir"
+   },
+   {
+    "anahtar": "b:978ab33e6c",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Tanıtım, sponsorluk ya da PR sözleşmesi (yeminli tercümeli)"
+   },
+   {
+    "anahtar": "b:5edabd7193",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Fatura (faturalandırma özeti niteliğindeki ekstre kabul edilir)"
+   },
+   {
+    "anahtar": "b:c165a23a96",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ödeme belgeleri (banka dekontu, kredi kartı ekstresi, hesap dökümü)"
+   },
+   {
+    "anahtar": "b:3ee4326e5e",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Tanıtım malzemeleri ve reklam görselleri"
+   },
+   {
+    "anahtar": "b:a7d6362328",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Dijital reklamlarda yayın ekran görüntüleri; arama motoru ve sosyal medya reklamlarında tıklama sayısını ve tıklanan ülkeleri gösteren işlem raporu"
+   },
+   {
+    "anahtar": "b:7fa1a1d45c",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Yurt dışı birimi yoksa: yurt içi marka tescil belgesi ve tanıtım ülkesindeki marka tescil belgesi ya da başvurusu"
+   },
+   {
+    "anahtar": "b:1e68d5f4a0",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — Ödeme belgesi tarihinden itibaren 6 ay içinde"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 192,
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)",
+  "kaynak_url": "https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4",
+  "basvuru_yeri": "Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir.",
+  "basvuru_suresi": "Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla",
+  "maddeler": [
+   {
+    "anahtar": "s:62a9f6ca3f",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler ya da ticari/sınai faaliyette bulunan kooperatif (5986 sayılı Karar m.2); şahıs işletmesi doğrudan yararlanamaz"
+   },
+   {
+    "anahtar": "s:d781a3ecfa",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"
+   },
+   {
+    "anahtar": "s:3d651b4b9d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru"
+   },
+   {
+    "anahtar": "s:e5187febe5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de); pazaryeri listelemesinde KTÜN, üretim yeri (Türkiye) ve tescilli marka bilgisi girilmeli (el işi/kişiselleştirilmiş ürünlerde KTÜN ve marka aranmayabilir)"
+   },
+   {
+    "anahtar": "s:1da1c94022",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ön onay için WIPO Madrid Sistemi'ne taraf en az bir ülkede tescilli yurt dışı marka (yoksa önce 5973 m.4 Yurt Dışı Marka Tescil Desteği)"
+   },
+   {
+    "anahtar": "s:eb59edd86b",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Reklamlar yurt dışı pazaryerinde verilmeli; SRMO en fazla %20, RDK en az 5"
+   },
+   {
+    "anahtar": "s:bb7bbeb86a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Destekten önce ön onay alınmalı"
+   },
+   {
+    "anahtar": "b:e2d601051f",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-Şirket Başvuru Formu (ilk başvuruda)"
+   },
+   {
+    "anahtar": "b:a8b233eb31",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-Dijital Pazaryeri Tanıtım Desteği Ön Onay Başvuru Formu"
+   },
+   {
+    "anahtar": "b:ce777dcbe4",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Madrid Sistemi'ne taraf bir ülkede yurt dışı marka tescil belgesi"
+   },
+   {
+    "anahtar": "b:db77c91442",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Pazaryerinin bu hizmet için daha önce düzenlediği fatura örneği"
+   },
+   {
+    "anahtar": "b:f1659a3b83",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ödeme başvurusu: EK-Dijital Pazaryeri Tanıtım Desteği Ödeme Başvuru Formu, pazaryerinden alınan dönem raporu, fatura/ekstre, ödeme belgeleri, pazaryeri ile sözleşme"
+   },
+   {
+    "anahtar": "b:42f483a103",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 193,
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6)",
+  "kaynak_url": "https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-6",
+  "basvuru_yeri": "Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir.",
+  "basvuru_suresi": "Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla",
+  "maddeler": [
+   {
+    "anahtar": "s:62a9f6ca3f",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler ya da ticari/sınai faaliyette bulunan kooperatif (5986 sayılı Karar m.2); şahıs işletmesi doğrudan yararlanamaz"
+   },
+   {
+    "anahtar": "s:d781a3ecfa",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"
+   },
+   {
+    "anahtar": "s:3d651b4b9d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru"
+   },
+   {
+    "anahtar": "s:e5187febe5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de); pazaryeri listelemesinde KTÜN, üretim yeri (Türkiye) ve tescilli marka bilgisi girilmeli (el işi/kişiselleştirilmiş ürünlerde KTÜN ve marka aranmayabilir)"
+   },
+   {
+    "anahtar": "s:1da1c94022",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ön onay için WIPO Madrid Sistemi'ne taraf en az bir ülkede tescilli yurt dışı marka (yoksa önce 5973 m.4 Yurt Dışı Marka Tescil Desteği)"
+   },
+   {
+    "anahtar": "s:9d8067169e",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Hizmet Bakanlık listesindeki firmalardan ya da pazaryerinden alınmalı"
+   },
+   {
+    "anahtar": "s:bb7bbeb86a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Destekten önce ön onay alınmalı"
+   },
+   {
+    "anahtar": "b:e2d601051f",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-Şirket Başvuru Formu (ilk başvuruda)"
+   },
+   {
+    "anahtar": "b:f62e2193e3",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-Sipariş Karşılama Hizmeti Desteği Ön Onay Başvuru Formu"
+   },
+   {
+    "anahtar": "b:ce777dcbe4",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Madrid Sistemi'ne taraf bir ülkede yurt dışı marka tescil belgesi"
+   },
+   {
+    "anahtar": "b:2780f13835",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Hizmet sağlayıcının daha önce düzenlediği fatura örneği"
+   },
+   {
+    "anahtar": "b:08ab162ae9",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ödeme başvurusu: ürün başına sipariş karşılama giderlerini gösteren dönem raporu, fatura, ödeme belgeleri, pazaryeri dışı sağlayıcıda hizmet sözleşmesi, ülkedeki e-ticaret satışları tablosu"
+   },
+   {
+    "anahtar": "b:42f483a103",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 194,
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayılı Karar m.9)",
+  "kaynak_url": "https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-9",
+  "basvuru_yeri": "Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir.",
+  "basvuru_suresi": "Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla",
+  "maddeler": [
+   {
+    "anahtar": "s:62a9f6ca3f",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler ya da ticari/sınai faaliyette bulunan kooperatif (5986 sayılı Karar m.2); şahıs işletmesi doğrudan yararlanamaz"
+   },
+   {
+    "anahtar": "s:d781a3ecfa",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"
+   },
+   {
+    "anahtar": "s:3d651b4b9d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru"
+   },
+   {
+    "anahtar": "s:e5187febe5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de); pazaryeri listelemesinde KTÜN, üretim yeri (Türkiye) ve tescilli marka bilgisi girilmeli (el işi/kişiselleştirilmiş ürünlerde KTÜN ve marka aranmayabilir)"
+   },
+   {
+    "anahtar": "s:1da1c94022",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ön onay için WIPO Madrid Sistemi'ne taraf en az bir ülkede tescilli yurt dışı marka (yoksa önce 5973 m.4 Yurt Dışı Marka Tescil Desteği)"
+   },
+   {
+    "anahtar": "s:1003b93f54",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Pazaryeri hedef ülkelerden birinde olmalı"
+   },
+   {
+    "anahtar": "s:bb7bbeb86a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Destekten önce ön onay alınmalı"
+   },
+   {
+    "anahtar": "b:e2d601051f",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-Şirket Başvuru Formu (ilk başvuruda)"
+   },
+   {
+    "anahtar": "b:7010d3fcad",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-Pazaryeri Komisyon Desteği Ön Onay Başvuru Formu"
+   },
+   {
+    "anahtar": "b:ce777dcbe4",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Madrid Sistemi'ne taraf bir ülkede yurt dışı marka tescil belgesi"
+   },
+   {
+    "anahtar": "b:dd9063254a",
+    "tur": "belge",
+    "kural": false,
+    "metin": "E-İhracat Konsorsiyumu bünyesindeyse ilişkiyi gösteren belge (pazarlama sözleşmesi)"
+   },
+   {
+    "anahtar": "b:bfd35e136c",
+    "tur": "belge",
+    "kural": false,
+    "metin": "Ödeme başvurusu: EK-Pazaryeri Komisyon Desteği Ödeme Başvuru Formu, fatura/ekstre, ödeme belgeleri, pazaryerinden alınan dönem raporu"
+   },
+   {
+    "anahtar": "b:42f483a103",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 195,
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8)",
+  "kaynak_url": "https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-8",
+  "basvuru_yeri": "Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir.",
+  "basvuru_suresi": "Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla",
+  "maddeler": [
+   {
+    "anahtar": "s:62a9f6ca3f",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler ya da ticari/sınai faaliyette bulunan kooperatif (5986 sayılı Karar m.2); şahıs işletmesi doğrudan yararlanamaz"
+   },
+   {
+    "anahtar": "s:d781a3ecfa",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"
+   },
+   {
+    "anahtar": "s:3d651b4b9d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru"
+   },
+   {
+    "anahtar": "s:e5187febe5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de); pazaryeri listelemesinde KTÜN, üretim yeri (Türkiye) ve tescilli marka bilgisi girilmeli (el işi/kişiselleştirilmiş ürünlerde KTÜN ve marka aranmayabilir)"
+   },
+   {
+    "anahtar": "s:7f76140623",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Önceki yıl GB + BGB (e-ticaret) ihracat toplamı 1.000.000 ABD dolarının üzerinde olmalı"
+   },
+   {
+    "anahtar": "s:1003b93f54",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Pazaryeri hedef ülkelerden birinde olmalı"
+   },
+   {
+    "anahtar": "s:bb7bbeb86a",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Destekten önce ön onay alınmalı"
+   },
+   {
+    "anahtar": "b:e2d601051f",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-Şirket Başvuru Formu (ilk başvuruda)"
+   },
+   {
+    "anahtar": "b:bec4168dfe",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-Çevrim İçi Mağaza Desteği Ön Onay Başvuru Formu ve ekleri"
+   },
+   {
+    "anahtar": "b:29812a2de4",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-Çevrim İçi Mağaza Desteği Ödeme Başvuru Formu ve ekleri"
+   },
+   {
+    "anahtar": "b:42f483a103",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla"
+   }
+  ],
+  "cagrilar": []
+ },
+ {
+  "id": 196,
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5)",
+  "kaynak_url": "https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-5",
+  "basvuru_yeri": "Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir.",
+  "basvuru_suresi": "Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla",
+  "maddeler": [
+   {
+    "anahtar": "s:62a9f6ca3f",
+    "tur": "sart",
+    "kural": true,
+    "metin": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler ya da ticari/sınai faaliyette bulunan kooperatif (5986 sayılı Karar m.2); şahıs işletmesi doğrudan yararlanamaz"
+   },
+   {
+    "anahtar": "s:d781a3ecfa",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"
+   },
+   {
+    "anahtar": "s:3d651b4b9d",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru"
+   },
+   {
+    "anahtar": "s:e5187febe5",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de); pazaryeri listelemesinde KTÜN, üretim yeri (Türkiye) ve tescilli marka bilgisi girilmeli (el işi/kişiselleştirilmiş ürünlerde KTÜN ve marka aranmayabilir)"
+   },
+   {
+    "anahtar": "s:3854aefd25",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Perakende E-Ticaret Sitesi (ya da pazaryeri/B2B/konsorsiyum) statüsü alınmış olmalı"
+   },
+   {
+    "anahtar": "s:0ac4fd4790",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Statü için: önceki yıl ihracat ≥ 500.000 USD ya da ETBİS net satış ≥ 1.000.000.000 TL; satışların en az 2/3'ü çevrim içi; en az 1/4'ü kendi markaları; en az bir site son 2 yıldır faaliyette; güven damgası"
+   },
+   {
+    "anahtar": "s:f48820a789",
+    "tur": "sart",
+    "kural": false,
+    "metin": "Giderler EK-E-İhracat Tanıtım Faaliyetleri Listesi'nde olmalı; destekten önce ön onay alınmalı"
+   },
+   {
+    "anahtar": "b:b24efdebab",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-Perakende E-Ticaret Sitesi Başvuru Formu (statü; E-İhracat Sekretaryasına)"
+   },
+   {
+    "anahtar": "b:3c7bb33037",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-E-İhracat Tanıtım Desteği Ön Onay Formu"
+   },
+   {
+    "anahtar": "b:4487cd387b",
+    "tur": "belge",
+    "kural": false,
+    "metin": "EK-E-İhracat Tanıtım Desteği Ödeme Başvuru Formu ve ekleri"
+   },
+   {
+    "anahtar": "b:42f483a103",
+    "tur": "basvuru",
+    "kural": false,
+    "metin": "Başvuruyu yap: Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla"
+   }
+  ],
+  "cagrilar": []
+ }
+]

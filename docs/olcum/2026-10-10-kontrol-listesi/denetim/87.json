@@ -1,0 +1,17 @@
+{
+  "tesvik_id": 87,
+  "maddeler": [
+    {"anahtar": "s:65d852463b", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz.", "not": "İki kural tek maddede (ikincisi: 'Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır.'). Gerçek şart (şahıs işletmesi, ciro, oda kaydı, KOBİ) listede yok; bu madde nitelik değil kural.", "onerilen_metin": null},
+    {"anahtar": "b:ec9ea08684", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "Sayfada banka belge listesi yok.", "onerilen_metin": null},
+    {"anahtar": "b:2d41e4c826", "hukum": "dogru", "dogru_tur": "sart", "alinti": "Esnaf Odası, Ticaret ve Sanayi Odası veya Meslek Odasına kayıtlı şahıs işletmelerinin", "not": "Oda kaydı doğru ama belge değil nitelik; sayfa ayrı bir kayıt belgesi istemiyor.", "onerilen_metin": null},
+    {"anahtar": "b:69874857c9", "hukum": "dogru", "dogru_tur": "bilgi", "alinti": "Kefalet Başvuru Ücreti: 7.500 TL", "not": "Hazırlanacak belge değil, ücret bilgisi.", "onerilen_metin": null},
+    {"anahtar": "b:18d241068d", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Halkbank", "not": "İlgili finans kuruluşu yalnız Halkbank, doğru. 'KOBİ bankaya başvurur, banka KGF'ye iletir' ve son kullandırım tarihi notu sayfa metninde geçmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Şahıs işletmesi olmak", "alinti": "Esnaf Odası, Ticaret ve Sanayi Odası veya Meslek Odasına kayıtlı şahıs işletmelerinin finansman ihtiyaçlarının karşılanması amaçlanmaktadır."},
+    {"tur": "sart", "metin": "Kesinleşmiş son yıl cirosu 10 milyon TL'yi aşmamak", "alinti": "kesinleşmiş son yıl cirosu 10 milyon TL’yi aşmayan"},
+    {"tur": "sart", "metin": "KOBİ olmak (kefalet limiti tablosunda yararlanıcı KOBİ)", "alinti": "KOBİ 400 Bin TL"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Sürekli banka başvurusu."}
+}

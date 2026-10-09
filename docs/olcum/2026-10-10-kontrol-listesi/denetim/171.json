@@ -1,0 +1,10 @@
+{
+  "tesvik_id": 171,
+  "maddeler": [
+    {"anahtar": "s:bf16de3ffc", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Bu paket kapsamındaki krediler; yararlanıcıların faaliyet alanı dışında döviz, kıymetli maden ve mücevherat finansmanında kullanılamaz.", "not": "Kredi kullanım yasağı; TL şartı sayfada ayrıca var. Başvuranın niteliği değil.", "onerilen_metin": null},
+    {"anahtar": "b:2b5c21aecc", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Ziraat Katılım Bankası A.Ş.", "not": "'Dönemsel başvuru yok' / tarih ifadesi sayfada yok; çelişmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok."}
+}

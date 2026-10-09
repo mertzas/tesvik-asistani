@@ -1,0 +1,18 @@
+{
+  "tesvik_id": 152,
+  "maddeler": [
+    {"anahtar": "s:b568b4efe4", "hukum": "dogru", "dogru_tur": "sart", "alinti": "KOBİ niteliklerine sahip olması", "not": "", "onerilen_metin": null},
+    {"anahtar": "s:36a336ec5c", "hukum": "dogru", "dogru_tur": "sart", "alinti": "KGF’nin kefalet vereceği transfer ödemesine ilişkin projesinin TÜBİTAK tarafından desteklenmeye hak kazanmış olması", "not": "", "onerilen_metin": null},
+    {"anahtar": "s:082316dbd0", "hukum": "dogru", "dogru_tur": "sart", "alinti": "Daha önce TÜBİTAK tarafından desteklenen herhangi bir projesinde teminat mektubunun nakde çevrilmemiş olması", "not": "", "onerilen_metin": null},
+    {"anahtar": "s:c10999039e", "hukum": "dogru", "dogru_tur": "sart", "alinti": "İflas, fesih, konkordato, iflasın ertelenmesi sürecinde olmaması", "not": "", "onerilen_metin": null},
+    {"anahtar": "s:3f33c7e3ba", "hukum": "dogru", "dogru_tur": "sart", "alinti": "Başvuru sırasında kamu kurum ve kuruluşları ile bankalar veya üçüncü kişiler tarafından icrai takibinin bulunmaması", "not": "", "onerilen_metin": null},
+    {"anahtar": "s:6241050a69", "hukum": "belirsiz", "dogru_tur": "sart", "alinti": "Başvuru sırasında vadesi geçmiş vergi ve SGK borcunun olmaması", "not": "Şart doğru, ama maddeye sayfadaki 'Doğrudan Başvuru İçin; http://...' bağlantı cümlesi yapışmış; kullanıcı bunu da işaretlenecek bir koşul sanabilir.", "onerilen_metin": "Başvuru sırasında vadesi geçmiş vergi ve SGK borcum yok"},
+    {"anahtar": "b:e13dc585e6", "hukum": "desteksiz", "dogru_tur": "sart", "alinti": "", "not": "Sayfa 'destek kararı' belgesini belge olarak istemiyor; bu, projenin TÜBİTAK tarafından desteklenmeye hak kazanması şartının (s:36a336ec5c) tekrarı.", "onerilen_metin": null},
+    {"anahtar": "b:d49b58b520", "hukum": "dogru", "dogru_tur": "adim", "alinti": "kefalet başvurusuyla birlikte her bir proje için bir defaya mahsus olmak üzere 250 TL başvuru ücretinin", "not": "Belge değil, yapılacak işlem (başvuru). Sayfada ayrı bir başvuru formu adı geçmiyor.", "onerilen_metin": null},
+    {"anahtar": "b:618a7e9b8f", "hukum": "dogru", "dogru_tur": "adim", "alinti": "kefalet başvurusuyla birlikte her bir proje için bir defaya mahsus olmak üzere 250 TL başvuru ücretinin", "not": "Belge değil, ödeme adımı.", "onerilen_metin": null},
+    {"anahtar": "b:9209a3a316", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Doğrudan Başvuru İçin;", "not": "'Doğrudan KGF'ye' sayfayla uyumlu; ilgili kurum TÜBİTAK. Kefalet mektubunun TÜBİTAK'a hitaben düzenlendiği ifadesi sayfada açık yazmıyor. 'Dönemsel başvuru yok' sayfada geçmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok; proje TÜBİTAK desteğine hak kazandıktan sonra doğrudan başvuru."}
+}

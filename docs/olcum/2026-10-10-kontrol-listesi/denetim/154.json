@@ -1,0 +1,16 @@
+{
+  "tesvik_id": 154,
+  "maddeler": [
+    {"anahtar": "s:d195836963", "hukum": "dogru", "dogru_tur": "sart", "alinti": "KOBİ’lere sağlanan desteğin devamlılığını temin etmek amacıyla", "not": "Sayfada ayrı bir başvuru şartı bölümü yok; kefalet limit/oran tablosu boş geliyor. KOBİ hedefi yalnız ürün açıklamasından çıkıyor.", "onerilen_metin": null},
+    {"anahtar": "s:0d772e0bc1", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Akbank, Anadolubank, Burgan Bank, Denizbank, Garanti BBVA, Halkbank, Türkiye İş Bankası, QNB Bank, Şekerbank, Türk Ekonomi Bankası, Türkiye Sınai Kalkınma Bankası, Vakıfbank, Yapı Kredi Bankası, Ziraat Bankası, Ziraat Katılım", "not": "15 banka sayısı ve adlar uyumlu. Koşul değil, başvuru adımı (b:a6b80db1b5 ile tekrar).", "onerilen_metin": null},
+    {"anahtar": "s:cf9de73752", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz.", "not": "İşaretlenecek bir nitelik değil, kredinin kullanım yasağı.", "onerilen_metin": null},
+    {"anahtar": "b:9b39f2f9d1", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "Sayfada belge listesi yok.", "onerilen_metin": null},
+    {"anahtar": "b:28bc3b8c3d", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "Faaliyet belgesi/vergi levhası sayfada geçmiyor.", "onerilen_metin": null},
+    {"anahtar": "b:a6b80db1b5", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Akbank, Anadolubank, Burgan Bank, Denizbank, Garanti BBVA, Halkbank, Türkiye İş Bankası, QNB Bank, Şekerbank, Türk Ekonomi Bankası, Türkiye Sınai Kalkınma Bankası, Vakıfbank, Yapı Kredi Bankası, Ziraat Bankası, Ziraat Katılım", "not": "Banka listesi doğru. 'Sürekli (banka şubesi üzerinden bireysel başvuru)' ifadesi sayfada yok; sayfa bitiş tarihi de vermiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Kefalet yalnız bankanın kullandıracağı yeni ve ilave kredi için talep edilebilir", "alinti": "sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok."}
+}

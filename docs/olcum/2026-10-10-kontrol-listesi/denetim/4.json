@@ -1,0 +1,35 @@
+{
+  "tesvik_id": 4,
+  "maddeler": [
+    {"anahtar": "s:ee9fcb6ea0", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "Programdan TEKMER işletici kuruluşu ve TGB yönetici şirketi yararlanabilir.",
+     "not": "Tek maddede üç ayrı şey var: kimin başvurabileceği, desteklerin adı ('Kuruluş/Performans/Hızlandırma' bilgi) ve anonim şirket + kayıtlı/aktif şartı. Kullanıcı neyi işaretleyeceğini anlayamaz. İçerik canlı sayfayla uyumlu.",
+     "onerilen_metin": "TEKMER işletici kuruluşu veya TGB yönetici şirketiyim; Türk Ticaret Kanunu'nda tanımlı anonim şirketim ve KOSGEB sisteminde kayıtlı/aktifim"},
+    {"anahtar": "b:79769c4120", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Teknoloji Merkezi Destek Programı Kuruluş Desteği Ön Başvuru Formu",
+     "not": "Yalnız Kuruluş Desteği içindir; Hızlandırma için 'Çağrı Başvuru Formu', Performans için 'Hedef Başvuru Formu' gerekir.", "onerilen_metin": null},
+    {"anahtar": "b:0534642e68", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Teknoloji Merkezi Destek Programı Kuruluş Desteği Başvuru Formu",
+     "not": "5. Bölüm 'Kuruluş Desteği İş Planı' ayrı ek olarak listeli.", "onerilen_metin": null},
+    {"anahtar": "b:39819e754b", "hukum": "belirsiz", "dogru_tur": "adim",
+     "alinti": "Kurucular, münferiden veya müştereken başvuru yapabilirler.",
+     "not": "Madde üç desteği ve tarihli bir çağrıyı karıştırıyor. Canlı sayfa '2026-01 COP31 Hızlandırma Çağrısı'nı 'Yürürlükte Olan Çağrılar' altında 'Başvuru için tıklayınız' bağlantısıyla gösteriyor; '9-30 Ağustos 2026 (kapandı)' bilgisi sayfada yok ve yürürlükte ifadesiyle çelişebilir. Ayrıca yeni TEKMER için Kuruluş Desteği başvurusu önce yapılır, Hızlandırma çağrı bazlıdır.",
+     "onerilen_metin": "Kuruluş Desteği için Ön Başvuru Formu ve Başvuru Formu'nu KOSGEB sistemine gönderdim (Hızlandırma Desteği için ilan edilen çağrı dönemini ayrıca kontrol ettim)"}
+  ],
+  "eksik_maddeler": [
+    {"tur": "kural", "metin": "Yürürlük tarihinde (07.10.2025) 3 yaşın altındaki mevcut TEKMER işletici kuruluşları Kuruluş Desteği için en geç 07.10.2026'ya kadar başvurmalı (bu tarih geçti); 3 yaşın üzerindekiler yalnız Performans ve Hızlandırma Desteğine başvurabilir",
+     "alinti": "itibariyle 3 yaşın altındaki TEKMER işletici kuruluşları, programa 1 yıl içinde (07.10.2026"},
+    {"tur": "sart", "metin": "TEKMER işletici kuruluşu için TEKMER Adı Kullanım Hakkı Sözleşmesi imzalanmış olmalı",
+     "alinti": "TEKMER işletici kuruluşu için TEKMER Adı Kullanım Hakkı Sözleşmesi"},
+    {"tur": "adim", "metin": "Taahhütnameyi sistem üzerinden onayla",
+     "alinti": "Yararlanıcı tarafından taahhütnamenin onaylanmış olması gerekir."},
+    {"tur": "belge", "metin": "Kurucu üniversite veya TGB yönetici şirketi değilse, bir üniversite ve/veya TGB yönetici şirketiyle imzalanmış İş Birliği Sözleşmesi'ni sisteme yükle",
+     "alinti": "başvuru sahibi ile en az bir üniversite ve/veya TGB yönetici şirketi arasında imzalanarak sisteme yüklenmesi"},
+    {"tur": "sart", "metin": "Hızlandırma Desteği için bir fon, melek yatırımcı ağı veya potansiyel müşteri ile iş birliği yap",
+     "alinti": "Hızlandırma Desteğinden yararlanılabilmesi için yararlanıcının bir fon, melek yatırımcı ağı veya potansiyel müşteri ile iş birliği yapması gereklidir."},
+    {"tur": "belge", "metin": "Kuruluş Desteği Başvuru Formu 5. Bölüm: Kuruluş Desteği İş Planı",
+     "alinti": "Teknoloji Merkezi Destek Programı Kuruluş Desteği Başvuru Formu 5. Bölüm Kuruluş Desteği İş Planı"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "destekdetay/9297 Teknoloji Merkezi Destek Programı sayfası; eşleşiyor."},
+  "cagri_tutarliligi": {"hukum": "celisik", "not": "basvuru_suresi 2026-01 COP31 Hızlandırma Çağrısı'nı '9-30 Ağustos 2026 (kapandı)' diyor ve cagrilar boş; canlı sayfa aynı çağrıyı 'Yürürlükte Olan Çağrılar' altında başvuru bağlantısıyla listeliyor, tarih yok. Ayrıca Kuruluş Desteği için 07.10.2026 son başvuru tarihi (mevcut TEKMER) geçmiş durumda ve kayıtta yok."}
+}

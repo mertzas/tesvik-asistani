@@ -1,0 +1,30 @@
+{
+  "tesvik_id": 185,
+  "maddeler": [
+    {"anahtar": "s:f4b64e0c38", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Kişinin son 6 aydır işsiz olması",
+     "not": "'İşsiz' tanımı (İŞKUR kaydı mı, sigortasızlık mı) sayfada belirtilmiyor.", "onerilen_metin": null},
+    {"anahtar": "s:68912fbf3a", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Kişinin istihdam edildiği tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına ilave olarak istihdam edilmesi",
+     "not": "", "onerilen_metin": null},
+    {"anahtar": "s:7a5dc74e1d", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "Özel sektör işvereni olması",
+     "not": "İki ayrı şey tek maddede: özel sektör işvereni olmak (nitelik) ve aylık prim/hizmet belgesinin yasal sürede verilip primlerin yasal sürede ödenmesi (yükümlülük). '(SGK genel şartları)' etiketi sayfada yok. Her iki içerik de sayfada geçiyor.",
+     "onerilen_metin": "Özel sektör işvereniyim"},
+    {"anahtar": "s:70964f9250", "hukum": "dogru", "dogru_tur": "kural",
+     "alinti": "31.12.2026 tarihine kadar işsiz olan kişileri istihdam eden özel sektör işverenlerin",
+     "not": "Başvuranın niteliği değil, programın geçerlilik tarihi; işaretlenecek bir şey değil. Sayfa ifadesi 'işe alım' demiyor, '31.12.2026 tarihine kadar istihdam eden' diyor.", "onerilen_metin": null},
+    {"anahtar": "b:514a926501", "hukum": "desteksiz", "dogru_tur": "adim",
+     "alinti": "",
+     "not": "Canlı sayfada 'e-Bildirge' veya 'teşvik kodu' geçmiyor. Sayfa yalnız teşvikin ne olduğunu, şartları ve süreleri anlatıyor; bildirim yöntemi SGK mevzuatından gelmiş olabilir ama bu kaynakta doğrulanamıyor. Belge değil, bildirim adımıdır.", "onerilen_metin": null},
+    {"anahtar": "b:7e5beaf41c", "hukum": "dogru", "dogru_tur": "bilgi",
+     "alinti": "olması durumunda destek süresine 6 ay eklenilmesi yönünde hüküm getirilmiştir",
+     "not": "Hazırlanacak belge değil; çalışanın İŞKUR'a kayıtlı olması destek süresine 6 ay ekleyen isteğe bağlı bir koşul.", "onerilen_metin": null},
+    {"anahtar": "b:4015d5fdc1", "hukum": "desteksiz", "dogru_tur": "adim",
+     "alinti": "",
+     "not": "Başvuru yeri (SGK e-Bildirge, İŞKUR il müdürlükleri) ve 'sürekli' ifadesi canlı sayfada yok. Sayfa başvuru yöntemi anlatmıyor; yalnız '31.12.2026 tarihine kadar' sınırı geçiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "İŞKUR 'Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların Teşviki' sayfası programın kendi sayfası; başlık eşleşiyor."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok; yalnız 31.12.2026 tarihli sınır var, cagrilar boş. 'Sürekli' ifadesi sayfada doğrulanamıyor."}
+}

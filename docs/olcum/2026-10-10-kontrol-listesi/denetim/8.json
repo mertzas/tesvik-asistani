@@ -1,0 +1,41 @@
+{
+  "tesvik_id": 8,
+  "maddeler": [
+    {"anahtar": "s:2b8166dfc7", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "62-Bilgisayar programlama, danışmanlık ve ilgili faaliyetler",
+     "not": "'vb.' ifadesi listenin açık uçlu olduğunu düşündürüyor; canlı sayfada liste kapalı: C-İmalat, 61, 62, 63, 72.",
+     "onerilen_metin": "NACE koduna göre C-İmalat, 61 Telekomünikasyon, 62 Bilgisayar programlama/danışmanlık, 63 Bilişim altyapısı/veri işleme/barındırma veya 72 Bilimsel Ar-Ge sektörlerinde faaliyet gösteriyorum"},
+    {"anahtar": "s:27b1aaf775", "hukum": "yanlis", "dogru_tur": "sart",
+     "alinti": "İşletme sınıfının küçük veya orta büyüklükte olması",
+     "not": "'KOBİ' mikro işletmeyi de kapsıyor; canlı sayfa 'küçük veya orta büyüklükte olması' şartını koyuyor (mikro işletme dışarıda). Madde mikro işletmeyi yanlışlıkla uygun gösterir. Ayrıca 'işletme beyanı güncel' atlanmış.",
+     "onerilen_metin": "KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel; işletme sınıfı küçük veya orta büyüklükte (mikro değil)"},
+    {"anahtar": "s:333de19ad9", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "Aşağıda yer alan kriterlerden herhangi birini sağlayan işletmelerde hızlı büyüme şartı aranmaz:",
+     "not": "'Aranmayabilir' koşullu ifade; kullanıcı hızlı büyüyen olmasa da işaretleyip işaretleyemeyeceğini anlayamaz. Muafiyet yolları: Teknogirişim Rozeti veya KOSGEB'e protokol kapsamında bildirilmiş tedarikçi geliştirme işletmesi olmak.",
+     "onerilen_metin": "Hızlı büyüyen işletmeyim; ya da Teknogirişim Rozetine sahibim ya da tedarikçi geliştirme protokolü kapsamında KOSGEB'e bildirilmiş işletmeyim"},
+    {"anahtar": "b:2cab884a72", "hukum": "belirsiz", "dogru_tur": "belge",
+     "alinti": "Kapasite Geliştirme Destek Programı Başvuru Kontrol Formu",
+     "not": "Form listede var ama başvuru sahibinin hazırlayacağı belge mi, KOSGEB'in kontrol aracı mı sayfadan anlaşılmıyor (Girişimci programı sayfasında benzer form 'sistem üzerinden kontrol edilir' diye geçiyor). Başvuru Formu ve Proje Başvuru Formu II. Bölüm daha net başvuru belgeleridir.",
+     "onerilen_metin": "Başvuru Formu ve Proje Başvuru Formu II. Bölüm'ü hazırladım"},
+    {"anahtar": "b:570272946a", "hukum": "belirsiz", "dogru_tur": "belge",
+     "alinti": "Kapasite Geliştirme Destek Programı Taahhütnamesi",
+     "not": "'Mevzuata göre değişir' belirsiz; canlı sayfa ek belgeleri adıyla sayıyor (Başvuru Formu, Proje Başvuru Formu II. Bölüm, Taahhütname).",
+     "onerilen_metin": "Kapasite Geliştirme Destek Programı Taahhütnamesi'ni onayladım"},
+    {"anahtar": "b:48d33a68c7", "hukum": "desteksiz", "dogru_tur": "adim",
+     "alinti": "",
+     "not": "Canlı sayfada 'edevlet.kosgeb.gov.tr', '2026 yılı 2. başvuru dönemi' veya '6 Haziran 2026' geçmiyor. Üstelik madde '6 Haziran'da başladı' diyor (açıkmış gibi) ama cagrilar bu dönemi kapandı gösteriyor.",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Türk Ticaret Kanunu'nda tanımlı gerçek veya tüzel kişi statüsünde olmak",
+     "alinti": "tanımlı gerçek veya tüzel kişi statüsünde olması"},
+    {"tur": "belge", "metin": "Kapasite Geliştirme Destek Programı Başvuru Formu",
+     "alinti": "Kapasite Geliştirme Destek Programı Başvuru Formu"},
+    {"tur": "belge", "metin": "Proje Başvuru Formu II. Bölüm",
+     "alinti": "Kapasite Geliştirme Destek Programı Proje Başvuru Formu II.Bölüm"},
+    {"tur": "adim", "metin": "Protokole taraf tek bir finansal kuruluştan (Ziraat, Halk, Vakıflar, Ziraat Katılım) kredi finansmanı sağla",
+     "alinti": "Proje kapsamında tek bir finansal kuruluştan kredi finansmanı sağlanabilir."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "destekdetay/9200 Kapasite Geliştirme sayfası; eşleşiyor."},
+  "cagri_tutarliligi": {"hukum": "celisik", "not": "basvuru_suresi '2026 yılı 2. başvuru dönemi 6 Haziran 2026'da başladı' diyor, cagrilar aynı dönemi 'kapandı' gösteriyor; son madde de açık gibi yazıyor. Canlı program sayfası çağrı/dönem vermiyor, yani her iki durum doğrulanamıyor."}
+}

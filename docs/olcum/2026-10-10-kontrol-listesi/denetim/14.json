@@ -1,0 +1,32 @@
+{
+  "tesvik_id": 14,
+  "maddeler": [
+    {"anahtar": "s:985a97b577", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "TEYDEB’e niyet beyanında bulunan Ana kuruluşun son üç (3) yıldan herhangi birindeki Ar-Ge harcamasını 15 milyon TL ve üzerinde olması gerekir.",
+     "not": "Madde iki şeyi karıştırıyor: niyet beyanı vermek (adım) ve Ar-Ge harcaması eşiği (şart). Ayrıca 15 milyon TL yalnızca 2022 tutarı; sayfa her Ocak TÜFE oranında artırıldığını söylüyor, güncel tutar sayfada yok. Metindeki 'niyet beyanı hazırlama kılavuzu linki verilecek' ifadesi de sayfadan kopyalanmış taslak notu.",
+     "onerilen_metin": "Ana kuruluşun son üç yıldan herhangi birindeki Ar-Ge harcaması en az 15 milyon TL (2022 tutarı; her Ocak ayında TÜFE oranında artırılır, güncel eşik TÜBİTAK'tan teyit edilmeli)"},
+    {"anahtar": "b:ac609a684f", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Programa başvuru süreci Ana kuruluşun TEYDEB’e niyet beyanında (niyet beyanı hazırlama kılavuzu linki verilecek) bulunmasıyla başlar.",
+     "not": "Niyet beyanı hazırlanıp sunulan bir belge gibi görünse de sayfada süreç adımı olarak geçiyor (Niyet Beyanı Kılavuzu'na göre yapılır); tür 'belge' yerine 'adim' olmalı.",
+     "onerilen_metin": null},
+    {"anahtar": "b:0305fc2c36", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "1515 - Öncül Ar-Ge Laboratuvarları Destekleme Programı Başvuru Formu ve Kılavuzu",
+     "not": "", "onerilen_metin": null},
+    {"anahtar": "b:0caea68004", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "1515 - Öncül Ar-Ge Laboratuvarları Destekleme Programı Ortak Kuruluş Başvuru Formu ve Kılavuzu",
+     "not": "'Ortak kuruluş varsa' koşulu net ve sayfayla uyumlu (ortak başvuru yapılabiliyor).", "onerilen_metin": null},
+    {"anahtar": "b:404cbe992f", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "1515 - Öncül Ar-Ge Laboratuvarları Destekleme Programı sürekli olarak başvuruya açık bir programdır. Başvurular yılın herhangi bir iş gününde yapılabilir.",
+     "not": "Süre ve süreç (önce niyet beyanı, uygun bulunursa başvuru formu) sayfayla uyumlu.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Başvuran, Ana kuruluş ya da Ana kuruluşun yönetim hakkına sahip olduğu Türkiye'de yerleşik sermaye şirketi olmalı", "alinti": "Ana kuruluş ya da kuruluş (Ana kuruluşun yönetim hakkına sahip olduğu, Türkiye’de yerleşik sermaye şirketi) programa başvuru yapabilir."},
+    {"tur": "adim", "metin": "Niyet beyanı Yürütme Komitesi tarafından uygun bulunmalı (başvuru formu ancak bundan sonra sunulur)", "alinti": "Niyet beyanının Yürütme Komitesi tarafından uygun bulunması halinde başvuru aşamasına geçilir"},
+    {"tur": "sart", "metin": "Destek kapsamındaki personelin en az %50'si Türk uyruklu, en az üçte biri doktoralı olmalı (doktora öğrencileri sayılmaz)", "alinti": "Destek kapsamına alınacak toplam personel sayısının en az %50’sinin Türk Uyruklu olması ve destek kapsamına alınacak toplam personel sayısının en az üçte birinin doktoralı olması şartı aranır."},
+    {"tur": "kural", "metin": "Niyet beyanı Ana kuruluşun kendi verisiyle yapılmalı; iştirak şirketlerini kapsayan konsolide değerlerle başvurulamaz", "alinti": "Ana kuruluşun kendi verisiyle niyet beyanında bulunması gerekmektedir."},
+    {"tur": "kural", "metin": "Test laboratuvarı kurmak için başvurulamaz; yalnızca temel/uygulamalı araştırma yapan Ar-Ge laboratuvarı desteklenir", "alinti": "Programa test laboratuvarı kurmak için başvuru yapılmamaktadır."},
+    {"tur": "belge", "metin": "Başvuru formu Türkçe ve İngilizce olmak üzere birer nüsha hazırlanmalı", "alinti": "Başvuru formu İngilizce ve Türkçe olmak üzere 1’er nüsha halinde alınır."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Sayfa sürekli başvuruya açık diyor; çağrı kaydı yok, uyumlu."}
+}

@@ -1,0 +1,38 @@
+{
+  "tesvik_id": 6,
+  "maddeler": [
+    {"anahtar": "s:77fb8b57d3", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "KOSGEB Veri Tabanında kayıtlı, aktif durumda olması",
+     "not": "Madde üç yapı türünü (a/b/c) sayıp ardından KOSGEB kaydını tek cümlede birleştiriyor; kullanıcı neyi işaretleyeceğini anlayamaz. Yapı türüne göre ek şartlar (anonim şirket, Bakanlık protokolü/onayı, NACE, 10 veya 30 kişi) maddede yok.",
+     "onerilen_metin": "KOSGEB Veri Tabanında kayıtlı ve aktif durumdayım"},
+    {"anahtar": "s:65992f70ec", "hukum": "dogru", "dogru_tur": "bilgi",
+     "alinti": "Başvurusunun jüri tarafından uygun bulunması",
+     "not": "Değerlendirme sonucudur, başvuranın işaretleyebileceği bir nitelik değil (jüriyi Sanayi ve Teknoloji Bakanlığı ve KOSGEB oluşturur).", "onerilen_metin": null},
+    {"anahtar": "s:d19945bd36", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Kabul sözleşmesinin KOSGEB ile başvuru sahibi/işletici kuruluş tarafından imzalanmış şekilde evrak kaydına alınması ve taahhütnameyi onaylaması gerekir.",
+     "not": "Jüri uygun bulduktan sonraki adım; başvuru anında yapılacak şey değil.", "onerilen_metin": null},
+    {"anahtar": "b:87829480a6", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Sektörel Gelişim Merkezi (SEGEM) Destek Programı Ön Başvuru Formu",
+     "not": "Ön Başvuru Bilgi Dokümanı da ayrı ek olarak listeli.", "onerilen_metin": null},
+    {"anahtar": "b:48f04b0f96", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Sektörel Gelişim Merkezi (SEGEM) Destek Programı Başvuru Formu",
+     "not": "", "onerilen_metin": null},
+    {"anahtar": "b:47ebb03902", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Destek programı sürekli olarak başvuruya açıktır.",
+     "not": "Süreç KOSGEB e-hizmetler menüsünden çevrim içi yürür.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Model fabrika isen: Bakanlıkla Model Fabrika iş birliği protokolü imzalamış veya Bakanlıkça Model Fabrika statüsü verilmiş anonim şirket olmalısın",
+     "alinti": "Yetkinlik ve Dijital Dönüşüm Merkezi (Model Fabrika) statüsü verilmiş ve anonim şirket statüsünde olması gerekir"},
+    {"tur": "sart", "metin": "Rekabetçi Sektörler Programı merkezi isen: Bakanlık onayıyla yürütücü yapı olan anonim şirket olmalısın",
+     "alinti": "Başvuru tarihi itibariyle, Bakanlık onayı ile yürütücü yapı olması ve anonim şirket statüsünde bulunması gerekir."},
+    {"tur": "sart", "metin": "Sektörün gelişimine katkı sunan işletme (kamu çoğunluklu sermaye) isen: NACE 70.22.02 / 70.20.01 faaliyet kodlu anonim şirket olmalı ve nitelikli en az 10 kişi çalıştırmalısın",
+     "alinti": "danışmanlık yapmış en az 10 kişi çalıştırması gerekir"},
+    {"tur": "sart", "metin": "Kamu çoğunluklu sermayeli olmayan başvuran: anonim şirket olmalı, İBBS Düzey-1 bölgelerinin en az 5'inde faaliyet göstermeli ve nitelikli en az 30 kişi çalıştırmalı (SSS'de ise jüri onayından sonra kurulacak yeni anonim şirket için aranıyor; canlı sayfa kendi içinde tutarsız)",
+     "alinti": "Düzey-1 bölgelerinin en az 5"},
+    {"tur": "belge", "metin": "SEGEM Ön Başvuru Bilgi Dokümanı",
+     "alinti": "Sektörel Gelişim Merkezi (SEGEM) Destek Programı Ön Başvuru Bilgi Dokümanı"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "destekdetay/9327 SEGEM sayfası; eşleşiyor."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Canlı sayfa 'sürekli olarak başvuruya açıktır' diyor; basvuru_suresi ile uyumlu, cagrilar boş."}
+}

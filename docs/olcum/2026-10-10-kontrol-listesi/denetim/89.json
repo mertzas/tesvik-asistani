@@ -1,0 +1,13 @@
+{
+  "tesvik_id": 89,
+  "maddeler": [
+    {"anahtar": "s:a60201d480", "hukum": "dogru", "dogru_tur": "kural", "alinti": "Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz.", "not": "İki kural tek maddede (ikincisi: TL kuralı). Nitelik değil kural; listedeki tek madde olması sorun: gerçek şartlar eksik.", "onerilen_metin": null},
+    {"anahtar": "b:02d0bef8f7", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Halkbank", "not": "İlgili finans kuruluşu Halkbank, doğru. 'Dönemsel başvuru yok / son tarih belirtilmemiş' notu sayfa metninde geçmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Mezun girişimci: mesleki ve teknik ortaöğretim mezunu, 29 yaş ve altı genç olmak (kendi işini kuruyor)", "alinti": "mesleki ve teknik ortaöğretim kurumlarından mezun olan 29 yaş ve altı gençlerin girişimcilik yoluyla kendi işlerini kurmalarını teşvik etmek"},
+    {"tur": "sart", "metin": "Mezun istihdam eden KOBİ: mesleki ve teknik ortaöğretim mezunu 29 yaş ve altı gençleri istihdam eden KOBİ olmak", "alinti": "Mezun İstihdam Eden KOBİ"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Sürekli banka başvurusu."}
+}

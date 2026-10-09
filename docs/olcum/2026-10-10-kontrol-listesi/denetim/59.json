@@ -1,0 +1,39 @@
+{
+  "tesvik_id": 59,
+  "maddeler": [
+    {"anahtar": "s:868f3968da", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Projenin hedef aldığı kesim yeşil teknoloji, ürün veya süreçlerin geliştirilmesine yönelik yeşil yenilik faaliyetlerinde bulunan Türkiye’de yerleşik sermaye şirketleridir.",
+     "not": "KOBİ ve büyük ölçekli kuruluşlar başvurabilir (sayfa bunu da söylüyor).", "onerilen_metin": null},
+    {"anahtar": "s:9d4c0fd067", "hukum": "belirsiz", "dogru_tur": "sart",
+     "alinti": "THS 3’ten önce başlayan çalışmalar temel araştırma niteliğinde olduğundan, THS 8’den başlayan çalışmalar, Ar-Ge süreçlerinin büyük bir kısmı tamamlandığından çağrı kapsamı dışındadır.",
+     "not": "Madde 'THS 3-9 aralığında olmalı' deyip aynı cümlede THS 8'den başlayanları dışarıda bırakıyor; kullanıcı 8-9 aralığının uygun olup olmadığını anlayamaz. Sayfa ayrıca 'THS bitiş seviyesinin en az THS 7 olması beklenmektedir' ve 'ölçek büyütme çalışmaları zorunludur' diyor; bunlar maddede yok. İşaretlenecek net koşul: başlangıç 3-7, bitiş en az 7.",
+     "onerilen_metin": "Ar-Ge çalışmam THS 3 ile THS 7 arasında bir seviyeden başlıyor ve THS 7 veya üzerinde bitiyor (THS 3'ten önce ya da THS 8'den başlayan çalışmalar kapsam dışı)"},
+    {"anahtar": "s:104cc59117", "hukum": "dogru", "dogru_tur": "kural",
+     "alinti": "Çağrıya ortaklı başvuru alınabilecek olup en fazla üç ortaklı başvuru yapılabilecektir.",
+     "not": "Başvuranın niteliği değil, ortaklı başvuru sınırı; kural/bilgi olarak gösterilmeli.", "onerilen_metin": null},
+    {"anahtar": "b:8d4fb081f7", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Programa proje başvuruları elektronik ortamda",
+     "not": "Sayfa devamında: PRODİS çevrimiçi uygulaması üzerinden yapılır; 'Örnek Başvuru Formu Bilgilendirme amaçlıdır. Başvuruda kullanılamaz'. Belge değil, PRODİS'te yapılacak başvuru adımı.", "onerilen_metin": null},
+    {"anahtar": "b:4bf5fc9266", "hukum": "dogru", "dogru_tur": "belge",
+     "alinti": "Çevresel ve Sosyal Risk Yönetimi Beyan Formu",
+     "not": "Sayfa forma ek olarak çevre, iş sağlığı ve güvenliği ve sosyal konularda kanıt belgeleri istiyor ve formda faaliyet kısmına NACE kodunun yazılmasını zorunlu tutuyor; bunlar maddede yok.", "onerilen_metin": null},
+    {"anahtar": "b:af0f9855af", "hukum": "belirsiz", "dogru_tur": "belge",
+     "alinti": "Sermaye şirketlerinin ekonomik fizibilite raporu hazırlanması için hizmet alması ve raporunu da proje önerisi ekinde sunması durumunda söz konusu gider Yönetim Kurulu tarafından belirlenen tutar kadar desteklenir.",
+     "not": "Sayfa Ekonomik Fizibilite Raporu Formatı'nı veriyor ve raporun proje önerisi ekinde sunulabildiğini söylüyor; ancak raporun zorunlu olduğunu açıkça yazmıyor (yalnız hazırlatma gideri destekleniyor). Madde zorunluymuş gibi okunuyor.",
+     "onerilen_metin": "Ekonomik Fizibilite Raporu (sayfadaki formata göre) hazırlandı ve proje önerisi ekinde sunuldu (zorunluluğu çağrı duyurusundan teyit edilmeli)"},
+    {"anahtar": "b:c91cb5cfec", "hukum": "eskimis", "dogru_tur": "adim",
+     "alinti": "1832 Sanayide Yeşil Dönüşüm 2026-2 Çağrısı Açıldı",
+     "not": "Madde 'sayfada güncel çağrı tarihi yoktur' diyerek açık çağrı yokmuş izlenimi veriyor; sayfa 2026-2 çağrısının açıldığını ve '1832 2026-2 Çağrı Duyurusu' belgesini veriyor (tarihler duyuru PDF'inde, sayfa metninde yok).",
+     "onerilen_metin": "Başvuruyu PRODİS'ten (eteydeb.tubitak.gov.tr) yap; 1832 2026-2 çağrısı açıldı, başvuru tarihleri '1832 2026-2 Çağrı Duyurusu' belgesinde"}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Firmanın tescil tarihi 2 yıl ve üzeri olmalı (spin-off ve 1512/1812 desteğiyle kurulan şirketler hariç)", "alinti": "Firmaların tescil tarihi 2 yıl ve üzeri (spin-off’lar ve TÜBİTAK 1512 ve/veya 1812 desteği alarak kurulmuş şirketler hariç) olmalıdır."},
+    {"tur": "sart", "metin": "Yürütücü kuruluş en az %75 ortaklıkla özel sektöre ait olmalı (ortaklı projelerde ortaklar için aranmaz)", "alinti": "Yürütücü kuruluş en az %75 ortaklıkla özel sektöre ait kuruluş olmalıdır."},
+    {"tur": "belge", "metin": "Başvuruda bankadan Banka Referans Mektubu (geri ödemeli desteğin tamamı için); sözleşme aşamasında Teminat Mektubu", "alinti": "TÜBİTAK’tan talep edilen geri ödemeli desteğin tamamı (%100’ü) için başvuru aşamasında Banka Referans Mektubu, sözleşme aşamasında Teminat Mektubu sunulması gerekmektedir."},
+    {"tur": "sart", "metin": "Her kuruluş için son 3 yılın ortalama aktif toplamı veya net satışları, geri ödemeli finansman değerinden büyük olmalı", "alinti": "Her bir kuruluş için son 3 yılın ortalama aktif toplamı veya net satışlarının geri ödemeli finansman değerinden büyük olması gerekmektedir."},
+    {"tur": "sart", "metin": "Proje beş yeşil dönüşüm konu başlığından birinde olmalı ve en az bir Yeşil Dönüşüm Göstergesi (YDG) hedeflenip sağlanmalı", "alinti": "Aşağıda tanımlanan ve projede hedeflenmiş olan Yeşil Dönüşüm Göstergelerinden (YDG) en az birinin proje sonunda karşılanmış olması gerekmektedir."},
+    {"tur": "sart", "metin": "Başvuran kuruluşta proje konusuyla ilgili en az lisans seviyesinde bir personel bulunmalı", "alinti": "Çağrıya başvurusu yapılması için başvuru sahibi kuruluşta proje konusu ile ilgili en az lisans seviyesinde bir personel olması gerektiğini önemle hatırlatırız."}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "cagri_yok", "not": "Çağrı esaslı program; sayfa '2026-2 Çağrısı Açıldı' diyor ama kayıtta çağrı (cagrilar) boş ve basvuru_suresi 'sayfada güncel çağrı tarihi yoktur' diyor; tarihler çağrı duyurusu PDF'inde."}
+}

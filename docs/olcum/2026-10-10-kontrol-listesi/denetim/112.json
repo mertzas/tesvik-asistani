@@ -1,0 +1,15 @@
+{
+  "tesvik_id": 112,
+  "maddeler": [
+    {"anahtar": "s:de8a198eb9", "hukum": "belirsiz", "dogru_tur": "kural", "alinti": "Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir.", "not": "Sayfada üç ayrı kural tek maddede: yeni/ilave kredi, TL, döviz-altın-mücevherat yasağı. Üstelik 'Kredi Verenler' bankaya hitap eden dil; kullanıcı neyi işaretleyeceğini anlayamaz. Gerçek nitelik şartları listede hiç yok.", "onerilen_metin": "Talep edilen kredi yeni ve ilave bir kredi kullandırımı olmalı, TL cinsinden olmalı ve döviz, altın veya mücevherat finansmanında kullanılmamalı"},
+    {"anahtar": "b:02d0bef8f7", "hukum": "dogru", "dogru_tur": "adim", "alinti": "Halkbank", "not": "İlgili finans kuruluşu Halkbank, doğru. 'Dönemsel başvuru yok / son tarih belirtilmemiş' notu sayfa metninde geçmiyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "İmalat veya bilişim/yazılım sektöründe faaliyet göstermek", "alinti": "İmalat ve bilişim/yazılım sektörlerinde faaliyet gösteren, yeni kurulmuş veya işini büyütmek isteyen girişimlere"},
+    {"tur": "sart", "metin": "Programın belirlediği NACE kodlarında faaliyet göstermek (kod listesi sayfada yok, bankadan teyit edin)", "alinti": "Belirli NACE kodlarında faaliyetlerini sürdüren"},
+    {"tur": "sart", "metin": "Kredi başvuru tarihi itibarıyla kuruluşunun üzerinden 3 yıl geçmemiş olmak", "alinti": "kredi başvuru tarihi itibarıyla kuruluş tarihinden itibaren 3 yılını doldurmamış"},
+    {"tur": "sart", "metin": "Hissenin en az %50'si 35 yaşını aşmamış ortaklara ait olmak", "alinti": "asgari %50 hissesi 35 yaşını aşmamış ortaklara ait işletmeler"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Sürekli banka başvurusu."}
+}

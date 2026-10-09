@@ -1,0 +1,16 @@
+{
+  "tesvik_id": 162,
+  "maddeler": [
+    {"anahtar": "s:d781a3ecfa", "hukum": "desteksiz", "dogru_tur": "sart", "alinti": "", "not": "Canlı sayfa yalnız menü ve bağlantı listesidir (5986 sayılı Karar, Genelge, Genelge Ekleri, Kılavuzlar için başlıklar); hiçbir şart metni içermez. İhracatçı birliği üyeliği şartı bu sayfada geçmiyor. Not: bu satırın dayanağı sayfanın kendisi değil kayıtlı alanlardır.", "onerilen_metin": null},
+    {"anahtar": "s:3d651b4b9d", "hukum": "desteksiz", "dogru_tur": "sart", "alinti": "", "not": "Canlı sayfada DYS, MERSİS ve NACE ifadesi yok (yalnız 'Ticaret Bakanlığı Destek Yönetim Sistemi (DYS)' menü bağlantısı var, şart olarak geçmiyor). Ayrıca madde üç ayrı şeyi (DYS kaydı, güncel MERSİS, doğru NACE) tek kutuda topluyor.", "onerilen_metin": null},
+    {"anahtar": "s:9385a91be5", "hukum": "desteksiz", "dogru_tur": "sart", "alinti": "", "not": "Canlı sayfada yararlanıcı türü anlatılmıyor. Şahıs işletmesinin konsorsiyum aracılığıyla sınırlı süre yararlanması canlı kaynaklarda (5986 Karar metni, 192-196 dosyaları) da yer almıyor; yalnız kayıtlı detayda (Genelge m.33/7 atfı) geçiyor.", "onerilen_metin": null},
+    {"anahtar": "s:e5187febe5", "hukum": "desteksiz", "dogru_tur": "sart", "alinti": "", "not": "Canlı sayfada Türk ürünü, KTÜN, üretim yeri, tescilli marka ifadeleri yok. Madde ayrıca birden çok şeyi karıştırıyor (Türk ürünü şartı + üç listeleme alanı + 'aranmayabilir' istisnası); kanıt bulunursa en az ikiye bölünmeli.", "onerilen_metin": null},
+    {"anahtar": "s:3fe1841739", "hukum": "desteksiz", "dogru_tur": "adim", "alinti": "", "not": "Canlı sayfada ön onay anlatılmıyor.", "onerilen_metin": null},
+    {"anahtar": "b:1ffa41418f", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "Canlı sayfada EK-Şirket Başvuru Formu geçmiyor (Genelge Ekleri yalnız bağlantı başlığı olarak var). Madde ayrıca belgeyi ve içindeki üç eki (marka tescil belgesi, tedarik belgesi, kapasite raporu) tek satırda topluyor.", "onerilen_metin": null},
+    {"anahtar": "b:dd43626bc2", "hukum": "desteksiz", "dogru_tur": "belge", "alinti": "", "not": "Canlı sayfada ön onay ve ödeme başvuru formları anlatılmıyor; yalnız 'Genelge Ekleri ve Destek Üst Limitleri' bağlantı başlığı var.", "onerilen_metin": null},
+    {"anahtar": "b:42f483a103", "hukum": "desteksiz", "dogru_tur": "adim", "alinti": "", "not": "Canlı sayfada başvuru yeri, DYS, İhracatçı Birliği Genel Sekreterliği, 6 ay ve çeyrek dönem ifadeleri yok. Madde 'nereye' ve 'ne zaman' bilgisini aynı satırda birleştiriyor.", "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [],
+  "kaynak_url": {"hukum": "genel_sayfa", "not": "Sayfa e-ihracat desteklerinin ana/menü sayfasıdır: Karar, Genelge, Genelge Ekleri, Kılavuzlar için yalnız bağlantı başlıkları var, şart ve belge metni yok. Şart denetimi için 5986 sayılı Karar PDF'i (192-196 dosyalarının kaynağı) ve Genelge doğrudan okunmalı. Bu nedenle bu program için canlı sayfadan eksik madde çıkarılamadı."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel çağrı yok; ön onay/ödeme başvurusu sürekli. Ancak 'çeyrek dönemler itibarıyla' ve '6 ay' ifadeleri canlı sayfada doğrulanamadı."}
+}

@@ -1,0 +1,23 @@
+{
+  "tesvik_id": 137,
+  "maddeler": [
+    {"anahtar": "s:b57f333d10", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Yararlanıcının KOBİ vasfını haiz gerçek veya tüzel kişi işletme olması gerekmektedir.",
+     "not": "Başvuru Koşulları ile birebir. Ürün açıklaması ayrıca esnaf, sanatkâr, serbest meslek mensubu, kooperatif (arsa ve konut yapı kooperatifleri hariç) ve çiftçileri 'bu vasıfta sayılan' diye sayıyor; bu grupların KOBİ testinden muaf olup olmadığı sayfadan anlaşılmıyor.",
+     "onerilen_metin": null},
+    {"anahtar": "b:ec9ea08684", "hukum": "desteksiz", "dogru_tur": "belge",
+     "alinti": "",
+     "not": "Sayfada belge listesi yok. Sayfa yalnızca KGF'nin kendi bünyesinde kredi değerliliği tespiti yaptığını söylüyor.",
+     "onerilen_metin": null},
+    {"anahtar": "b:b3bf2991ef", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Başvurular bankalar kanalıyla kefalet.kgf.com.tr üzerinden web ortamında yapılmaktadır.",
+     "not": "Başvuru kanalı ve 'kefaletten yararlanma süresi tahsis tarihinden itibaren 1 yıl' bilgisi sayfayla uyumlu. 'Dönemsel başvuru yok' cümlesi sayfada açık yazmıyor ama çelişki de yok. Bilgi cümleleri onay kutusu metninden ayrılmalı.",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "kural", "metin": "Arsa ve konut yapı kooperatifleri kapsam dışıdır", "alinti": "kooperatifler (arsa ve konut yapı kooperatifleri hariç)"},
+    {"tur": "kural", "metin": "Kefalet, KGF'nin kendi bünyesinde yaptığı kredi değerliliği tespitinden sonra verilir; banka kredisi onayı kefaleti garanti etmez", "alinti": "KGF A.Ş. kendi bünyesinde yapacağı kredi değerliliği tespiti sonrasında kefalet sağlamaktadır"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": "KGF'nin programa özel ürün sayfası."},
+  "cagri_tutarliligi": {"hukum": "uygulanmaz", "not": "Dönemsel başvuru yok, sürekli; cagrilar boş, tutarlı."}
+}

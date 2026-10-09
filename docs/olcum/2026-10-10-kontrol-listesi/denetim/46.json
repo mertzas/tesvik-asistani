@@ -1,0 +1,26 @@
+{
+  "tesvik_id": 46,
+  "maddeler": [
+    {"anahtar": "s:a910f96565", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "Çağrı kapsamında yükseköğretim kurumları, kamu araştırma merkez ve enstitüleri, eğitim ve araştırma hastaneleri ve 6550 sayılı kanun kapsamındaki araştırma altyapıları çağrıya tek başına başvuruda bulunamazlar.",
+     "not": "Sayfadaki liste (sermaye şirketleri, yükseköğretim kurumları, kamu araştırma merkez/enstitüleri, eğitim ve araştırma hastaneleri, 6550 sayılı Kanun kapsamındaki araştırma altyapıları) ile uyumlu; sermaye şirketi dışındakiler için bir sonraki madde ayrıca şart koşuyor.",
+     "onerilen_metin": null},
+    {"anahtar": "s:458456afd6", "hukum": "dogru", "dogru_tur": "sart",
+     "alinti": "İlgili kurumların başvuruları en az bir sermaye şirketi ortaklığında kabul edilir. Bu çağrı kapsamında sunulan projelerde sermaye şirketi Yürütücü Kuruluş (Muhatap Kuruluş) olmalıdır.",
+     "not": "", "onerilen_metin": null},
+    {"anahtar": "b:1cca4fd092", "hukum": "belirsiz", "dogru_tur": "belge",
+     "alinti": "Ulusal proje ön başvuruları ve ikinci aşama başvuruları sadece elektronik ortamda",
+     "not": "Sayfadaki dosya '1719_Eureka Network Çağrısı Örnek Başvuru Formu', yani örnek; asıl ulusal ön başvuru ve ikinci aşama başvurusu yalnız PRODİS'ten yapılır. 'Başvuru Formu hazırla' demek kullanıcıyı Word/PDF formu doldurup göndermesi gerektiği izlenimine sokabilir.",
+     "onerilen_metin": "Ulusal ön başvuruyu ve ikinci aşama başvurusunu PRODİS'te hazırladım (sayfadaki 1719 Örnek Başvuru Formu yalnızca örnektir)"},
+    {"anahtar": "b:0d73f6af7d", "hukum": "dogru", "dogru_tur": "adim",
+     "alinti": "Ulusal başvurular çağrı duyurularında bulunan çağrı takvimlerine göre",
+     "not": "Üç açık ulusal çağrı (Uygulamalı Kuantum Teknolojileri, Hafifletme Teknolojileri, Afetlerde Dirençlilik) sayfada 'Mevcut Çağrılar' olarak listeli; kesin tarihler çağrı duyurusu belgelerinde, sayfa metninde yok.",
+     "onerilen_metin": null}
+  ],
+  "eksik_maddeler": [
+    {"tur": "sart", "metin": "Eureka uluslararası programına başvuru yapılmış ve uluslararası ön incelemesi olumlu bulunmuş olmalı", "alinti": "Eureka uluslararası programına başvurusu bulunan Türkiye’de yerleşik kurum/kuruluşların uluslararası ön incelemesi olumlu bulunanlar Eureka Network Çağrılarına başvuruda bulunabilirler."},
+    {"tur": "sart", "metin": "Proje en az iki EUREKA üyesi ülkeden (en az biri AB üyesi veya Ufuk Avrupa Asosiye ülkesi) kuruluşun yer aldığı uluslararası Ar-Ge projesi olmalı", "alinti": "en az iki EUREKA üyesi ülkeden (en az biri AB üyesi ya da Ufuk Avrupa Asosiye ülkesi olmak kaydıyla) kuruluşun yer aldığı uluslararası Ar-Ge projeleri"}
+  ],
+  "kaynak_url": {"hukum": "programa_ozel", "not": ""},
+  "cagri_tutarliligi": {"hukum": "cagri_yok", "not": "Çağrı bazlı program; sayfa üç mevcut ulusal çağrıyı sayıyor (kuantum, hafifletme, afetlerde dirençlilik) ama kayıtta çağrı (cagrilar) boş, tarihleri de sayfada yok."}
+}

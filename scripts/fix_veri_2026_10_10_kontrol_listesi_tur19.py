@@ -137,6 +137,9 @@ def uygula(db, veri: dict, dry_run: bool = True) -> int:
         if t is None or not t.aktif_mi:
             print(f"[{tid}] kayıt yok/aktif değil; atlandı")
             continue
+        # Maddelerin kaynağı programın GÜNCEL resmî kaynağıdır: tur20 genel sayfaları değiştirdi; denetim anındaki adrese
+        # dönmek tekrar çalıştırmada tur20'yi geri alırdı.
+        liste = [{**x, "kaynak_url": t.kaynak_url} for x in liste]
         if t.kontrol_listesi == liste and t.basvuru_bicimi == bicim:
             continue
         c = Counter(x["tur"] for x in liste)

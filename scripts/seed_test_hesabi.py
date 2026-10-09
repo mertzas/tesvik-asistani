@@ -1,6 +1,7 @@
 """YEREL geliştirme için test hesabı: BUSINESS plan (tüm özellikler açık), dolu profil.
 
   python scripts/seed_test_hesabi.py          # oluştur / sıfırla (idempotent)
+  python scripts/seed_test_hesabi.py --profilsiz  # profilsiz: kayıt sonrası sihirbazı görmek için
   python scripts/seed_test_hesabi.py --sil    # hesabı ve verisini sil
 
 Yalnızca yerel veritabanında çalıştırın; üretimde ASLA. Giriş bilgileri aşağıdaki
@@ -49,6 +50,7 @@ def _temizle(db) -> None:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
     ap.add_argument("--sil", action="store_true")
+    ap.add_argument("--profilsiz", action="store_true", help="profil oluşturma (onboarding sihirbazını dener)")
     a = ap.parse_args()
 
     init_db()
@@ -64,9 +66,10 @@ def main() -> None:
         db.flush()
         db.add(User(email=TEST_EMAIL, hashed_password=hash_password(TEST_SIFRE),
                     full_name="Test Kullanıcı", org_id=org.id))
-        db.add(FinancialProfile(org_id=org.id, **PROFIL))
+        if not a.profilsiz:
+            db.add(FinancialProfile(org_id=org.id, **PROFIL))
         db.commit()
-        print(f"Test hesabı hazır: {TEST_EMAIL} (BUSINESS plan, dolu profil). "
+        print(f"Test hesabı hazır: {TEST_EMAIL} (BUSINESS plan, {'profilsiz' if a.profilsiz else 'dolu profil'}). "
               "Şifre bu dosyadaki TEST_SIFRE sabitidir.")
     finally:
         db.close()

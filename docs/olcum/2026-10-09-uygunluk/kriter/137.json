@@ -1,0 +1,25 @@
+{
+  "tesvik_id": 137,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ vasfını haiz olmak",
+     "alinti": "Yararlanıcının KOBİ vasfını haiz gerçek veya tüzel kişi işletme olması gerekmektedir."},
+    {"alan": "sirket_turu", "kural": {"in": ["sahis", "limited", "anonim", "kooperatif", "diger_tuzel"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Gerçek veya tüzel kişi işletme olmak (henüz işletmesi olmayan başvuramaz)",
+     "alinti": "gerçek veya tüzel kişi işletme olması gerekmektedir"},
+    {"alan": "diger", "kural": {"aciklama": "Arsa ve konut yapı kooperatifleri kapsam dışıdır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Arsa ve konut yapı kooperatifleri hariç",
+     "alinti": "kooperatifler (arsa ve konut yapı kooperatifleri hariç)"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kefalet, bankanın kullandırdığı/kullandıracağı krediye verilir",
+     "alinti": "Banka tarafından kullandırılan/kullandırılacak kredilere KGF A.Ş. kendi bünyesinde yapacağı kredi değerliliği tespiti sonrasında kefalet sağlamaktadır."}
+  ],
+  "belirsizlikler": [
+    "Ürün açıklaması KOBİ'lerin yanında 'bu vasıfta sayılan esnaf, sanatkarlar, serbest meslek mensupları, kooperatifler, çiftçiler' ve KGF Ana Sözleşmesi'ndeki nitelikleri sayıyor; bu grupların KOBİ ölçeği testinden muaf olup olmadığı net değil. olcek kuralı mikro/küçük/orta olarak yazıldı.",
+    "KGF'nin kendi kredi değerliliği tespiti sonrası kefalet verdiği yazılı; değerlendirme ölçütleri metinde yok, makine ile kontrol edilemez.",
+    "Ciro, çalışan sayısı, sektör/NACE, il, oda/borsa üyeliği veya hedef grup kısıtı metinde yok; kefalet azami 5 milyon TL (grup riskleri dahil) başvuru şartı değil limit olarak yazıldığından kriter eklenmedi.",
+    "Protokollü banka ve finansal kiralama/finansman şirketleri adları sayılmamış, yalnızca nitelik tarif edilmiş."
+  ]
+}

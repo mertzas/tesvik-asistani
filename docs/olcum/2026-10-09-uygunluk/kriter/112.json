@@ -1,0 +1,37 @@
+{
+  "tesvik_id": 112,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "faaliyet", "kural": {"in": ["imalat", "yazilim_bilisim"]}, "zorunlu": true, "bilesen": null,
+     "metin": "İmalat veya bilişim/yazılım sektöründe faaliyet göstermek",
+     "alinti": "İmalat ve bilişim/yazılım sektörlerinde faaliyet gösteren, yeni kurulmuş veya işini büyütmek isteyen girişimlere destek olunması"},
+    {"alan": "diger", "kural": {"aciklama": "Programa dahil belirli NACE kodlarında faaliyet sürdürmek (kod listesi kaynakta verilmemiş)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Belirli NACE kodlarında faaliyet",
+     "alinti": "Belirli NACE kodlarında faaliyetlerini sürdüren"},
+    {"alan": "isletme_yasi_yil", "kural": {"max": 3}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi başvuru tarihi itibarıyla kuruluşundan itibaren 3 yılı doldurmamış olmak",
+     "alinti": "kredi başvuru tarihi itibarıyla kuruluş tarihinden itibaren 3 yılını doldurmamış"},
+    {"alan": "kurucu_yasi", "kural": {"max": 35}, "zorunlu": true, "bilesen": null,
+     "metin": "İşletmenin en az %50 hissesinin 35 yaşını aşmamış ortaklara ait olması",
+     "alinti": "asgari %50 hissesi 35 yaşını aşmamış ortaklara ait işletmeler"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Halkbank'tan kredi kullanımı",
+     "alinti": "Kredi veren banka(lar): Halkbank (KGF ürün sayfası, İlgili Finans Kuruluşları)"},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet yalnız yeni ve ilave kredi kullandırımları için talep edilebilir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız yeni ve ilave kredi",
+     "alinti": "Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir."},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet talepleri yalnız TL para cinsinden yapılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız TL cinsinden kefalet talebi",
+     "alinti": "Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."},
+    {"alan": "diger", "kural": {"aciklama": "Krediler döviz, altın ve mücevherat finansmanında kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredinin kullanım amacı kısıtı (döviz, altın, mücevherat)",
+     "alinti": "Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz."}
+  ],
+  "belirsizlikler": [
+    "Uygun NACE kodlarının listesi kaynakta yok ('Belirli NACE kodlarında' deniyor); nace kriteri yazılamadı, yerine faaliyet=imalat/yazilim_bilisim ve 'diger' kullanıldı.",
+    "'3 yılını doldurmamış' ifadesi kesin olarak 3 yıldan az demek; şema max sınırı kapsayıcı olduğundan isletme_yasi_yil max 3 yazıldı (tam 3 yıl dolduranlar elenmeli).",
+    "35 yaş şartı 'ortakların asgari %50 hissesi' için; şemada kurucu_yasi max 35 olarak kodlandı, %50 hisse oranı alıntıda duruyor ama makine tarafından ayrıca değerlendirilemez.",
+    "KOBİ sınıfı, ciro sınırı, şirket türü, il ve oda/borsa üyeliği şartı metinde yok."
+  ]
+}

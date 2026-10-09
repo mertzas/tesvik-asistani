@@ -1,0 +1,18 @@
+{
+  "tesvik_id": 170,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ olmak", "alinti": "Kefalet Üst Limiti KOBİ 90% 1.000.000 TL"},
+    {"alan": "diger", "kural": {"aciklama": "Girişimci Destek Programı İş Geliştirme Desteği başvurusu yapmış ve KOSGEB tarafından uygun bulunmuş girişimci olmak"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB Girişimci Destek Programı İş Geliştirme Desteği için KOSGEB onayı", "alinti": "Girişimci Destek Programı İş Geliştirme Desteği başvurusu yapanlar arasından KOSGEB tarafından uygun bulunan girişimcilere"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "İşletme sermayesi amaçlı banka kredisi kullanımı", "alinti": "işletme sermayesi olarak kullandırılacak krediler için kefalet limiti tahsis edilmiştir"}
+  ],
+  "belirsizlikler": [
+    "KOSGEB Girişimci Destek Programının kendi başvuru şartları (yaş, sertifika vb.) bu kaynakta yok; yalnız KOSGEB onayı şart olarak kodlandı.",
+    "Kredi yalnız Vakıfbank, Halkbank, Ziraat Bankası üzerinden kullandırılıyor; kredi son kullandırım tarihi 31.12.2028.",
+    "Ciro, il, NACE, şirket türü, oda/borsa üyeliği, hedef grup şartı metinde yok."
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "tesvik_id": 79,
+  "basvuru_bicimi": "uretim_odeme",
+  "bilesenler": ["Temel destek", "İyi tarım uygulamaları desteği", "Biyolojik/biyoteknik mücadele desteği"],
+  "kriterler": [
+    {"alan": "faaliyet", "kural": {"in": ["tarim"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Örtüaltı/kapalı ortam üretimi yapmak",
+     "alinti": "Örtüaltı/kapalı ortam üretim yerinin"},
+    {"alan": "diger", "kural": {"aciklama": "Örtüaltı/kapalı ortam üretim yeri ÖKS/KOBÜKS'te kayıtlı olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "ÖKS/KOBÜKS kaydı",
+     "alinti": "Örtüaltı/kapalı ortam üretim yerinin ÖKS/KOBÜKS'te kayıtlı olması"},
+    {"alan": "belge", "kural": {"gerekli": "cks_kaydi"}, "zorunlu": true, "bilesen": "Temel destek",
+     "metin": "Temel destek ÇKS'ye kayıtlı arazi üzerinden ödenir",
+     "alinti": "Temel destek ÇKS'ye kayıtlı arazi üzerinden Kararın Tablo 1 kategorisine göre ödenir"},
+    {"alan": "diger", "kural": {"aciklama": "İyi tarım uygulamaları desteğinde sertifikanın ÖKS/KOBÜKS'e kaydedilmiş olması"}, "zorunlu": true, "bilesen": "İyi tarım uygulamaları desteği",
+     "metin": "Sertifikanın ÖKS/KOBÜKS'e kaydı",
+     "alinti": "iyi tarım uygulamaları desteğinde sertifikanın ÖKS/KOBÜKS'e kaydı"},
+    {"alan": "diger", "kural": {"aciklama": "İyi tarım uygulamaları sertifikası (örtüaltı için bireysel sertifikada 527 TL/da ilave; grup sertifikasında yarısı)"}, "zorunlu": true, "bilesen": "İyi tarım uygulamaları desteği",
+     "metin": "İyi tarım uygulamaları sertifikası",
+     "alinti": "İyi tarım uygulamaları sertifikası varsa örtüaltı üretim için bireysel sertifikada 527.00 TL/dekar ilave"},
+    {"alan": "diger", "kural": {"aciklama": "Biyolojik/biyoteknik mücadele desteğinde BKÜ faturası ve onaylı ÜKD kayıtları"}, "zorunlu": true, "bilesen": "Biyolojik/biyoteknik mücadele desteği",
+     "metin": "BKÜ faturası ve onaylı ÜKD kayıtları",
+     "alinti": "biyolojik/biyoteknik mücadele desteğinde BKÜ faturası ve onaylı ÜKD kayıtları"}
+  ],
+  "belirsizlikler": [
+    "Sera/örtüaltı kurulumu için yatırım hibesi bu kaydın kapsamında değil (kaynakta açıkça belirtilmiş).",
+    "ÖKS/KOBÜKS kaydı şartının hangi alt desteğe ait olduğu kaynakta net değil (m.3, m.8/1-a atıfları); genel şart olarak kodlandı.",
+    "Asgari alan, ürün listesi, şirket türü ve ölçek şartı kaynakta yazmıyor.",
+    "Kesin başvuru tarihleri yıllık ilan ediliyor; canlı sayfa (BUGEM ana sayfası) şart içermiyor."
+  ]
+}

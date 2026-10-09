@@ -1,0 +1,21 @@
+{
+  "tesvik_id": 118,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ olmak",
+     "alinti": "KOSGEB tarafından onaylanmış bir destek ödemesi almaya hak kazanmış KOBİ olmak"},
+    {"alan": "diger", "kural": {"aciklama": "KOSGEB'den destek ödemesi almaya hak kazanmış işletme olmak (KOSGEB geri ödemeli destek programı kapsamında)"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB'den destek ödemesi almaya hak kazanmış olmak",
+     "alinti": "Firmanın KOSGEB’den destek ödemesi almaya hak kazanan işletmelerden biri olması."},
+    {"alan": "diger", "kural": {"aciklama": "KOSGEB destek onay yazısı sunulmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB destek onay yazısı",
+     "alinti": "KOSGEB destek onay yazısı"}
+  ],
+  "belirsizlikler": [
+    "Metinde ölçek (mikro/küçük/orta ayrımı), sektör/NACE, il, şirket türü veya hedef grup kısıtı yazmıyor; yararlanıcı yalnızca KOSGEB destek hak edişiyle tanımlı.",
+    "Kefalet limiti (3 M TL, YK onayıyla 5 M TL) mevcut KGF özkaynak kefalet risklerini de kapsıyor; bu başvuru şartı değil limit hesabı olduğu için kriter yazılmadı.",
+    "Kefaletten yararlanma süresi KGF tahsis tarihinden itibaren 6 ay; başvuru için son tarih ilgili KOSGEB programına bağlı."
+  ]
+}

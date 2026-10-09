@@ -1,0 +1,20 @@
+{
+  "tesvik_id": 173,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ olmak", "alinti": "· KOBİ"},
+    {"alan": "diger", "kural": {"aciklama": "Basın İlan Kurumu’ndan resmi ilan ve reklam alma hakkına haiz süreli yayın olmak"}, "zorunlu": true, "bilesen": null,
+     "metin": "Basın İlan Kurumu’ndan resmi ilan ve reklam alma hakkına haiz süreli yayın", "alinti": "Basın İlan Kurumu’ndan resmi ilan ve reklam alma hakkına haiz süreli yayınların"},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet talepleri yalnızca TL cinsinden yapılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız TL", "alinti": "Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."},
+    {"alan": "diger", "kural": {"aciklama": "Basın İlan Kurumu nakdi kredisine yönelik teminat mektubu talebi, BİK'in tahsis ettiği kredi ve teminat mektubu tutarını içeren yazısının süreli yayın tarafından bankaya ibrazı ile başlatılır"}, "zorunlu": false, "bilesen": null,
+     "metin": "Gayri nakdi (teminat mektubu) talebi için BİK yazısı bankaya ibraz edilmeli", "alinti": "Basın İlan Kurumu tarafından süreli yayına tahsis edilen nakdi kredi tutarı ve bu krediyle ilgili olarak talep edilen teminat mektubu tutarını içeren Basın İlan Kurumu yazısının süreli yayın tarafından Bankaya ibrazı ile başlatılabilecektir."}
+  ],
+  "belirsizlikler": [
+    "BİK yazısı şartı yalnız Basın İlan Kurumu nakdi kredisine yönelik gayri nakdi talepler için geçerli; nakdi kredi talebinde aranıp aranmadığı belli değil, bu yüzden zorunlu=false.",
+    "'Süreli yayın' için NACE kodu verilmemiş (kaba alan listesinde karşılığı yok), 'diger' ile kodlandı.",
+    "Ciro, il, şirket türü, oda/borsa üyeliği, hedef grup şartı metinde yok. Kredi yalnız Vakıfbank üzerinden."
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "tesvik_id": 195,
+  "basvuru_bicimi": "gider_on_onay",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["limited", "anonim", "kooperatif", "diger_tuzel"]}, "zorunlu": true, "bilesen": null,
+     "metin": "TTK md.124 şirketi ya da ticari/sınai faaliyette bulunan kooperatif olmak; şahıs işletmesi doğrudan yararlanamaz",
+     "alinti": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler ya da ticari/sınai faaliyette bulunan kooperatif (5986 sayılı Karar m.2); şahıs işletmesi doğrudan yararlanamaz"},
+    {"alan": "belge", "kural": {"gerekli": "ihracatci_birligi_uyeligi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Bir ihracatçı birliğine üye olmak",
+     "alinti": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"},
+    {"alan": "belge", "kural": {"gerekli": "dys_kaydi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı",
+     "alinti": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı"},
+    {"alan": "diger", "kural": {"aciklama": "MERSİS kaydı güncel ve NACE kodu doğru olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "MERSİS kaydı güncel ve NACE kodu doğru",
+     "alinti": "MERSİS kaydı güncel ve NACE kodu doğru"},
+    {"alan": "diger", "kural": {"aciklama": "Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Desteklenen ürün Türk ürünü olmalı",
+     "alinti": "Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de)"},
+    {"alan": "diger", "kural": {"aciklama": "Pazaryeri listelemesinde KTÜN, üretim yeri (Türkiye) ve tescilli marka bilgisi girilmeli (el işi/kişiselleştirilmiş ürünlerde KTÜN ve marka aranmayabilir)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Listelemede KTÜN, üretim yeri ve tescilli marka bilgisi girilmeli; el işi/kişiselleştirilmiş üründe aranmayabilir",
+     "alinti": "pazaryeri listelemesinde KTÜN, üretim yeri (Türkiye) ve tescilli marka bilgisi girilmeli (el işi/kişiselleştirilmiş ürünlerde KTÜN ve marka aranmayabilir)"},
+    {"alan": "onceki_yil_ihracat_usd", "kural": {"min": 1000000}, "zorunlu": true, "bilesen": null,
+     "metin": "Önceki yıl GB + BGB (e-ticaret) ihracat toplamı 1.000.000 ABD dolarının ÜZERİNDE olmalı (kural 'en az' ile ifade edildi, eşitlik sınırda belirsiz)",
+     "alinti": "Önceki yıl GB + BGB (e-ticaret) ihracat toplamı 1.000.000 ABD dolarının üzerinde olmalı"},
+    {"alan": "diger", "kural": {"aciklama": "Pazaryeri hedef ülkelerden birinde olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Çevrim içi mağaza hedef ülkelerdeki pazaryerinde açılmalı",
+     "alinti": "Pazaryeri hedef ülkelerden birinde olmalı"},
+    {"alan": "diger", "kural": {"aciklama": "Destekten önce ön onay alınmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Ödeme başvurusundan önce ön onay alınmalı",
+     "alinti": "Destekten önce ön onay alınmalı"},
+    {"alan": "onceki_destek_yok", "kural": {"esit": true}, "zorunlu": true, "bilesen": null,
+     "metin": "Aynı harcama kalemi için bu Karar dışında başka bir mevzuat/program kapsamında destek alınmamış olmalı (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır)",
+     "alinti": "bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir"}
+  ],
+  "belirsizlikler": [
+    "1.000.000 USD şartı metinde 'üzerinde' (kesin büyük); şemada yalnız min (>=) olduğu için tam 1.000.000 USD sınır durumunda kural hafif gevşek kalır.",
+    "Ön onay için yurt dışı marka (Madrid) şartı bu programın kayıtlı şartlarında yazmıyor (192-194'ten farklı); kodlanmadı, ancak pazaryeri listelemesinde tescilli marka bilgisi şartı var.",
+    "Kollektif ve komandit şirket türleri şemada ayrı değer olmadığı için diger_tuzel ile kodlandı.",
+    "Karar m.17 (konsorsiyum bünyesindeki şirketlerin başvuru yasağı) yalnız tanıtım, sipariş karşılama ve komisyon desteklerini sayıyor; çevrim içi mağaza için bu yasak yazmıyor, kodlanmadı."
+  ]
+}

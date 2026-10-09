@@ -1,0 +1,25 @@
+{
+  "tesvik_id": 146,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnızca KOBİ ölçekli firmalar",
+     "alinti": "TURWIB programı kapsamında sadece KOBİ ölçekli firmalara kredi kullandırımı yapılabilecektir."},
+    {"alan": "diger", "kural": {"aciklama": "%49 ve üzerinde Türkiye Cumhuriyeti Devleti'ne ait kurumların ortaklığına sahip firmalara kredi kullandırılamaz (kamu ortaklığı %49'dan az olmalı)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kamu kurumlarının ortaklık payı %49'un altında olmalı",
+     "alinti": "%49 ve üzerinde Türkiye Cumhuriyeti Devleti’ne ait olan kurumların ortaklığına sahip firmalara kredi kullandırılamayacaktır"},
+    {"alan": "diger", "kural": {"aciklama": "Kadın yönetici bulunan işletme olmak (TURWIB programının hedefi)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kadın yöneticisi bulunan işletme",
+     "alinti": "TURWIB Programı kapsamında kadın yönetici bulunan işletmelere destek sağlanarak kadınların iş hayatına daha fazla katılımı amaçlanmaktadır."},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi Akbank, Denizbank, QNB Finansbank, TEB veya Yapı Kredi'den kullanılır",
+     "alinti": "Kredi veren banka(lar): Akbank, Denizbank, QNB Finansbank, TEB, Yapı ve Kredi Bankası"}
+  ],
+  "belirsizlikler": [
+    "Kadın yönetici ifadesi ürün açıklamasında programın amacı olarak 'amaçlanmaktadır' biçiminde geçiyor; Özel Şartlar bölümünde yok. Bir başvuru şartı mı olduğu ve 'yönetici'nin tanımı (yönetim kurulu üyesi, müdür, temsilci vb.) ile asgari kadın yönetici sayısı metinde yok. hedef_grup=kadin ile eşleştirilmedi çünkü şart başvuranın değil yöneticinin niteliği; diger olarak elle kontrole bırakıldı.",
+    "Kredi satırında kefalet limiti/oran alanı boş; ciro, çalışan sayısı, sektör/NACE, il, şirket türü kısıtı metinde yok.",
+    "KOBİ sınıfı (mikro dahil mi) belirtilmemiş; olcek mikro/küçük/orta olarak yazıldı.",
+    "KGF sayfasında son başvuru/kullandırım tarihi yok; paketin hâlâ kullandırımda olduğu bankadan teyit edilmeli."
+  ]
+}

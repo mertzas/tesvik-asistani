@@ -1,0 +1,21 @@
+{
+  "tesvik_id": 91,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta", "buyuk"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ ve KOBİ dışı işletmeler (tüm ölçekler) yararlanabilir",
+     "alinti": "KOBİ DIŞI 500 Milyon TL"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi Türkiye Kalkınma ve Yatırım Bankası aracılığıyla kullanılır; banka kefalet talebini KGF'ye iletir",
+     "alinti": "Türkiye Kalkınma ve Yatırım Bankası aracılığıyla KGF kefaletli kredi desteği sağlanması hedeflenmektedir."},
+    {"alan": "diger", "kural": {"aciklama": "Başvuru ilgili kredi veren olan Türkiye Kalkınma ve Yatırım Bankası A.Ş. üzerinden yapılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi veren banka yalnız Türkiye Kalkınma ve Yatırım Bankası A.Ş.",
+     "alinti": "Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş."}
+  ],
+  "belirsizlikler": [
+    "Metinde 'sektör ayrımı gözetmeksizin' deniyor; sektör/NACE kısıtı yok, bu yüzden faaliyet veya nace kriteri eklenmedi.",
+    "Şirket türü, ciro sınırı, oda/borsa üyeliği, il, işletme yaşı ve hedef grup şartı metinde yok.",
+    "Ölçek kriteri, kefalet limit tablosunda hem KOBİ hem KOBİ DIŞI satırı bulunmasından çıkarıldı; açık bir 'başvurabilir' cümlesi yok."
+  ]
+}

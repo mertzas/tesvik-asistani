@@ -1,0 +1,36 @@
+{
+  "tesvik_id": 44,
+  "basvuru_bicimi": "proje",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["limited", "anonim"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Türkiye'de yerleşik sermaye şirketi olmak",
+     "alinti": "1507- KOBİ Ar-Ge Destek Programına sadece KOBİ ölçeğinde olan Türkiye’de yerleşik sermaye şirketleri başvuru yapabilmektedir."},
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ ölçeğinde olmak",
+     "alinti": "1507- KOBİ Ar-Ge Destek Programına sadece KOBİ ölçeğinde olan Türkiye’de yerleşik sermaye şirketleri başvuru yapabilmektedir."},
+    {"alan": "diger", "kural": {"aciklama": "Firmanın en az ikisi ortaklı olmak kaydıyla ilk beş projesi desteklenir; ilk beş destekten sonra diğer programlara başvurulmalıdır (önceki destek sayısı sınırı)"}, "zorunlu": true, "bilesen": null,
+     "metin": "En fazla 5 proje (en az ikisi ortaklı)",
+     "alinti": "Firmaların en az ikisi ortaklı olmak kaydıyla ilk beş projesi desteklenir (İlk beş destek sonrası diğer programlara başvurulmalıdır)."},
+    {"alan": "diger", "kural": {"aciklama": "Ar-Ge faaliyetleri başvurudan önce tamamlanmış projeler desteklenmez"}, "zorunlu": true, "bilesen": null,
+     "metin": "Başvurudan önce tamamlanmış Ar-Ge desteklenmez",
+     "alinti": "Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez."},
+    {"alan": "diger", "kural": {"aciklama": "Proje bütçesi en fazla 3.500.000 TL"}, "zorunlu": true, "bilesen": null,
+     "metin": "Proje bütçesi üst sınırı 3.500.000 TL",
+     "alinti": "Proje bütçesi en fazla 3.500.000 TL’dir."},
+    {"alan": "diger", "kural": {"aciklama": "Proje destek süresi en fazla 18 ay"}, "zorunlu": true, "bilesen": null,
+     "metin": "Proje süresi en fazla 18 ay",
+     "alinti": "Proje destek süresi çağrı duyurusunda belirtilir ve Programın Uygulama Esasları gereği 18 ayı aşamaz."},
+    {"alan": "diger", "kural": {"aciklama": "Başvurular yılda iki kez açılan çağrı duyurularına göre PRODİS üzerinden yapılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Çağrı dönemine göre başvuru",
+     "alinti": "1507 KOBİ Ar-Ge Başlangıç Destek Programına başvurular çağrı duyurularına göre yapılır."},
+    {"alan": "diger", "kural": {"aciklama": "1512 kapsamında kurulmuş veya 5746 sayılı Kanun kapsamında Teknogirişim Sermayesi Desteği almış KOBİ'lerin ilk başvurularında özel kriterle değerlendirme, bütçenin %10'u kadar genel gider ve birden fazla transfer ödemesi avantajı"}, "zorunlu": false, "bilesen": null,
+     "metin": "1512 veya Teknogirişim Sermayesi Desteği almış KOBİ'ye ilk başvuruda ek avantajlar",
+     "alinti": "1512 “TÜBİTAK Bireysel Girişimcilik Aşamalı Destek Programı” kapsamında kurulmuş veya 5746 sayılı kanun kapsamında Teknogirişim Sermayesi Desteğinden yararlanmış KOBİ’lerin bu Programa ilk başvurularında"}
+  ],
+  "belirsizlikler": [
+    "Bölüm başlığındaki 'Başvuru süresi (kayıt)' güncel çağrı tarihini vermiyor; canlı sayfada '2026 yılı 2. çağrı' dokümanı anılıyor ama tarih yok.",
+    "Şahıs şirketi/kooperatif gibi türlerin hariç tutulduğu 1507 metninde açıkça yazmıyor; yalnız 'sermaye şirketi' şartı var.",
+    "THS/TRL, işletme yaşı, ciro veya çalışan sayısı şartı metinde yok."
+  ]
+}

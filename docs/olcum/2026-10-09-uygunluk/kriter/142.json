@@ -1,0 +1,29 @@
+{
+  "tesvik_id": 142,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ olmak",
+     "alinti": "İmalat sanayi sektörlerinde istihdamın korunması ve artırılmasına yönelik olarak KOBİ’lere uygulanacak İstihdam Koruma Destek Programı"},
+    {"alan": "nace", "kural": {"in_prefix": ["C"]}, "zorunlu": true, "bilesen": null,
+     "metin": "NACE Kısım C - İmalat altında faaliyet göstermek",
+     "alinti": "NACE Kodu; Kısım C – İmalat başlığı altında faaliyet gösteren KOBİ’ler destekten yararlanabilecektir."},
+    {"alan": "diger", "kural": {"aciklama": "Önce KOSGEB İstihdamı Koruma Destek Programı başvurusunun KOSGEB tarafından onaylanması gerekir"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB İstihdamı Koruma Destek Programı onayı",
+     "alinti": "Önce KOSGEB İstihdamı Koruma Destek Programı başvurusunun KOSGEB'ce onaylanması gerekir"},
+    {"alan": "diger", "kural": {"aciklama": "Kredi limiti, işletmenin 2025 Kasım-Aralık muhtasar ve prim hizmet beyannamelerindeki işyeri bazında prime esas kazanç toplamının aylık ortalamasını geçemez; her halükarda üst limit 50 milyon TL. Bu beyannameler sunulmalı."}, "zorunlu": true, "bilesen": null,
+     "metin": "2025 Kasım-Aralık beyannamelerinden hesaplanan kredi limiti",
+     "alinti": "Program kapsamında işletme başına azami kredi limiti, işletmenin 2025 yılı Kasım-Aralık aylarındaki istihdamının muhtasar ve prim hizmet beyannamelerinde beyan edilen işyeri bazında prime esas kazanç toplam tutarının aylık ortalamasını geçmeyecektir."},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi DenizBank, Garanti BBVA, Halk Bankası, İş Bankası, Ziraat Bankası, Yapı Kredi veya VakıfBank'tan kullanılır",
+     "alinti": "Kredi veren bankalar: DenizBank, Garanti BBVA, Halk Bankası, İş Bankası, Ziraat Bankası, Yapı Kredi Bankası, VakıfBank"}
+  ],
+  "belirsizlikler": [
+    "KOSGEB onayı şartı yalnızca kayıt alanında ('Başvuru süresi') geçiyor ve '(KGF ürün sayfası, Özel Şartlar)' diye kaynak gösteriyor; canlı sayfanın Özel Şartlar bölümünde bu cümle yok. Kaynak dosyada yazdığı için kodlandı, doğruluğu KGF/KOSGEB'den teyit edilmeli.",
+    "Üst limit tutarsızlığı: kayıt ve Özel Şartlar kredi üst limitini 50 Milyon TL, kefalet tablosu 45 Milyon TL (kefalet üst limiti, oran %90) veriyor. Kriter olarak yazılmadı, 50 M TL ifadesi diger kriterin içinde.",
+    "2025 Kasım-Aralık döneminde sigortalı istihdamı olmayan işletmenin yararlanıp yararlanamayacağı yazmıyor; diger kriter zorunlu=true elle kontrol için işaretlendi.",
+    "Vade '36 ay/48 ay' şeklinde, hangi durumda 48 ay olduğu açıklanmamış.",
+    "Ciro, çalışan sayısı, il, şirket türü veya hedef grup kısıtı metinde yok. KOSGEB başvuru dönemi 2026-2 için 31.10.2026'da kapanıyor (kayıt alanı)."
+  ]
+}

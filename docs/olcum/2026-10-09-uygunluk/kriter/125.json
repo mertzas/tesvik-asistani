@@ -1,0 +1,27 @@
+{
+  "tesvik_id": 125,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Küçük veya orta ölçekli KOBİ olmak (mikro ölçek yararlanıcı olarak sayılmamış)",
+     "alinti": "küçük ve orta ölçekli, imalatçı KOBİ’ler yararlanabilecektir"},
+    {"alan": "faaliyet", "kural": {"in": ["imalat"]}, "zorunlu": true, "bilesen": null,
+     "metin": "İmalatçı KOBİ olmak",
+     "alinti": "İmalat sektöründe faaliyet gösteren KOBİ’lerin dijital dönüşüm için yapacakları yatırımlarına yönelik finansman desteği sağlanması amaçlanmaktadır."},
+    {"alan": "diger", "kural": {"aciklama": "KOSGEB KOBİ Dijital Dönüşüm Destek Programı başvurusu KOSGEB tarafından onaylanmış ve program kapsamında kredi faiz desteği almaya hak kazanmış olmak"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB KOBİ Dijital Dönüşüm Destek Programı onayı ve kredi faiz desteği hak edişi",
+     "alinti": "Paketten, KOBİ Dijital Dönüşüm Destek Programı başvurusu KOSGEB tarafından onaylanan ve anılan program kapsamında kredi faiz desteği almaya hak kazanan küçük ve orta ölçekli, imalatçı KOBİ’ler yararlanabilecektir."},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi KOSGEB ile protokol yapan bankalardan (İş Bankası, TEB) kullanılır",
+     "alinti": "Paket kapsamındaki krediler, KOSGEB ile protokol yapan bankalar tarafından kullandırılacaktır."},
+    {"alan": "diger", "kural": {"aciklama": "Tüm harcamalar sözleşme veya fatura ile belgelendirilmeli"}, "zorunlu": true, "bilesen": null,
+     "metin": "Harcamaların sözleşme veya faturayla belgelenmesi",
+     "alinti": "Tüm harcamalar sözleşme veya fatura ile belgelendirilecektir."}
+  ],
+  "belirsizlikler": [
+    "Metinde ciro, çalışan sayısı, işletme yaşı, il, şirket türü veya hedef grup kısıtı yazmıyor; KOBİ sınıfı dışındaki ölçek sınırları KOSGEB programına bağlı.",
+    "Mikro işletmelerin dışlanıp dışlanmadığı açık yazılmamış: metin 'küçük ve orta ölçekli' diyor, olcek kuralı buna göre [kucuk, orta] yazıldı.",
+    "KOSGEB başvuruları dönemsel çağrıyla alınıyor; güncel çağrının açık olup olmadığı kaynakta yok."
+  ]
+}

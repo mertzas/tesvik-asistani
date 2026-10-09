@@ -1,0 +1,34 @@
+{
+  "tesvik_id": 14,
+  "basvuru_bicimi": "proje",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["limited", "anonim"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Başvuruyu yapan kuruluş, Ana kuruluşun yönetim hakkına sahip olduğu Türkiye'de yerleşik sermaye şirketi (veya Ana kuruluş) olmalı",
+     "alinti": "Ana kuruluş ya da kuruluş (Ana kuruluşun yönetim hakkına sahip olduğu, Türkiye’de yerleşik sermaye şirketi) programa başvuru yapabilir"},
+    {"alan": "diger", "kural": {"aciklama": "Niyet beyanında bulunan Ana kuruluşun son üç yıldan herhangi birindeki Ar-Ge harcaması en az 15 milyon TL olmalı (2022 yılı tutarı; her Ocak'ta bir önceki yıl sonu TÜFE ortalama değişimi oranında artırılır)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Son 3 yılın herhangi birinde Ar-Ge harcaması >= 15 milyon TL (2022 tutarı, TÜFE ile artırılır)",
+     "alinti": "TEYDEB’e niyet beyanında bulunan Ana kuruluşun son üç (3) yıldan herhangi birindeki Ar-Ge harcamasını 15 milyon TL ve üzerinde olması gerekir."},
+    {"alan": "diger", "kural": {"aciklama": "Ana kuruluş niyet beyanını kendi verisiyle sunmalı; iştirak şirketlerini kapsayan konsolide bütçe değerleriyle başvurulamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Niyet beyanı Ana kuruluşun kendi verisiyle yapılmalı (konsolide değil)",
+     "alinti": "Ana kuruluşun kendi verisiyle niyet beyanında bulunması gerekmektedir."},
+    {"alan": "diger", "kural": {"aciklama": "Başvuru süreci niyet beyanıyla başlar ve niyet beyanının Yürütme Komitesi tarafından uygun bulunması gerekir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Niyet beyanı Yürütme Komitesince uygun bulunmalı",
+     "alinti": "Niyet beyanının Yürütme Komitesi tarafından uygun bulunması halinde başvuru aşamasına geçilir"},
+    {"alan": "diger", "kural": {"aciklama": "Destek kapsamına alınacak toplam personelin en az %50'si Türk uyruklu ve en az üçte biri doktoralı olmalı (doktora öğrencileri sayılmaz)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Personelin >=%50'si Türk uyruklu, >=1/3'ü doktoralı",
+     "alinti": "Destek kapsamına alınacak toplam personel sayısının en az %50’sinin Türk Uyruklu olması ve destek kapsamına alınacak toplam personel sayısının en az üçte birinin doktoralı olması şartı aranır."},
+    {"alan": "diger", "kural": {"aciklama": "Proje, bilgi üreten temel/uygulamalı araştırma laboratuvarı kurmaya yönelik olmalı; test laboratuvarı kurmak için başvurulamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Test laboratuvarı kurulumu için başvurulamaz",
+     "alinti": "Programa test laboratuvarı kurmak için başvuru yapılmamaktadır."},
+    {"alan": "diger", "kural": {"aciklama": "Laboratuvar BTYPK veya TÜBİTAK'ın belirlediği öncelikli öncül teknoloji alanlarında olmalı (ör. yapay zekâ, kuantum, bulut bilişim, blokzincir, eklemeli imalat vb.); alan dışı başvurular değerlendirmeden önce Yönetim Kurulu kararı gerektirir"}, "zorunlu": false, "bilesen": null,
+     "metin": "Öncelikli öncül teknoloji alanlarından birinde olmak (alan dışı için Yönetim Kurulu kararı aranır)",
+     "alinti": "Desteklenecek öncül teknoloji alanları T.C. Cumhurbaşkanlığı Bilim, Teknoloji ve Yenilik Politikaları Kurulu (BTYPK) tarafından veya TÜBİTAK tarafından belirlenen öncelikli alanları kapsar."}
+  ],
+  "belirsizlikler": [
+    "Metin 'Türkiye'de yerleşik sermaye şirketi' diyor ama Ana kuruluşun Türkiye'de ya da yurt dışında yerleşik sermaye şirketi olabileceğini de belirtiyor; bu yüzden sirket_turu yalnız başvuran kuruluş için kodlandı.",
+    "Ar-Ge harcaması eşiği 2022 yılı tutarı (15 milyon TL); güncel TÜFE ayarlı tutar metinde yok.",
+    "Öncelikli alan şartı zorunlu mu değil mi net değil: alan dışı başvuru için 'Yönetim Kurulu kararı aranır' deniyor, kesin ret yazmıyor; bu yüzden zorunlu=false.",
+    "KOBİ/büyük ölçek, faaliyet kodu veya işletme yaşı şartı metinde yok."
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "tesvik_id": 46,
+  "basvuru_bicimi": "proje",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["limited", "anonim"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Yürütücü (muhatap) kuruluş sermaye şirketi olmalı",
+     "alinti": "Bu çağrı kapsamında sunulan projelerde sermaye şirketi Yürütücü Kuruluş (Muhatap Kuruluş) olmalıdır."},
+    {"alan": "diger", "kural": {"aciklama": "Proje, en az iki EUREKA üyesi ülkeden (en az biri AB üyesi ya da Ufuk Avrupa Asosiye ülkesi) kuruluşun yer aldığı uluslararası Ar-Ge projesi olmalı (yurt dışı ortak şartı)"}, "zorunlu": true, "bilesen": null,
+     "metin": "En az iki EUREKA üyesi ülkeden kuruluşun yer aldığı uluslararası proje",
+     "alinti": "en az iki EUREKA üyesi ülkeden (en az biri AB üyesi ya da Ufuk Avrupa Asosiye ülkesi olmak kaydıyla) kuruluşun yer aldığı uluslararası Ar-Ge projeleri"},
+    {"alan": "diger", "kural": {"aciklama": "Eureka uluslararası programına başvurusu bulunan ve uluslararası ön incelemesi olumlu bulunan Türkiye'de yerleşik kuruluşlar Eureka Network çağrılarına başvurabilir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Uluslararası ön incelemenin olumlu olması",
+     "alinti": "Eureka uluslararası programına başvurusu bulunan Türkiye’de yerleşik kurum/kuruluşların uluslararası ön incelemesi olumlu bulunanlar Eureka Network Çağrılarına başvuruda bulunabilirler."},
+    {"alan": "diger", "kural": {"aciklama": "Ulusal başvurular ilgili çağrı duyurusundaki çağrı takvimine göre PRODİS üzerinden yapılır; açık ulusal çağrılar: Uygulamalı Kuantum Teknolojileri, Hafifletme Teknolojileri, Afetlerde Dirençlilik"}, "zorunlu": true, "bilesen": null,
+     "metin": "Açık bir ulusal çağrı ve takvimine uygun başvuru",
+     "alinti": "Ulusal başvurular çağrı duyurularında bulunan çağrı takvimlerine göre"}
+  ],
+  "belirsizlikler": [
+    "Yükseköğretim kurumu, kamu araştırma kurumu, eğitim ve araştırma hastanesi ve 6550 sayılı Kanun kapsamındaki araştırma altyapıları tek başına başvuramaz, en az bir sermaye şirketiyle ortak olmalı; bu kuruluş türleri sirket_turu şemasına sığmadığı için yalnız şirket başvurusu kodlandı.",
+    "Ölçek (KOBİ %75, büyük %60) yalnız destek oranını belirliyor; başvuru şartı değil.",
+    "Proje bütçesi, proje süresi ve desteklenen/desteklenmeyen giderler çağrı duyurusu belgelerinde; kaynak metinde yok.",
+    "Ulusal çağrı başvuru takvimleri kaynak metinde verilmemiş."
+  ]
+}

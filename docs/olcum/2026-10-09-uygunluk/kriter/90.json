@@ -1,0 +1,33 @@
+{
+  "tesvik_id": 90,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ olmak",
+     "alinti": "İmalatçı KOBİ’lerin yatırım ve işletme harcamalarına yönelik finansman desteği sağlanması amaçlanmaktadır."},
+    {"alan": "faaliyet", "kural": {"in": ["imalat"]}, "zorunlu": true, "bilesen": null,
+     "metin": "İmalatçı (imalat sektöründe faaliyet gösteren) KOBİ olmak",
+     "alinti": "İmalatçı KOBİ’lerin yatırım ve işletme harcamalarına yönelik finansman desteği sağlanması amaçlanmaktadır."},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi veren bankaya kredi başvurusu; banka kefalet talebini KGF'ye iletir",
+     "alinti": "KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir"},
+    {"alan": "diger", "kural": {"aciklama": "Krediler kıymetli maden ve döviz alımında, kefaletin sağlandığı kredi veren dışında vadeli mevduat ve diğer yüksek riskli finansal araçlarda ve refinansman amacıyla kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredinin kullanım amacı kısıtı",
+     "alinti": "Bu paket kapsamındaki krediler kıymetli maden ve döviz alımında, kefaletin sağlandığı kredi veren dışında vadeli mevduat ve diğer yüksek riskli finansal araçlarda, refinansman amacıyla kullanılamaz."},
+    {"alan": "diger", "kural": {"aciklama": "Arsa ve bina yatırımlarına kefalet sağlanmaz; yalnızca makine yatırımı ile birlikte yapılırsa sağlanır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Arsa/bina yatırımı yalnız makine yatırımıyla birlikte kefaletli",
+     "alinti": "Paket kapsamında arsa ve bina yatırımlarına kefalet sağlanmaz. Ancak, arsa ve bina yatırımlarına makine yatırımı ile birlikte yapılması halinde kefalet sağlanabilecektir."},
+    {"alan": "diger", "kural": {"aciklama": "Tüm harcamalar sözleşme veya fatura ile belgelendirilmelidir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Harcamaların sözleşme veya faturayla belgelenmesi",
+     "alinti": "Tüm harcamalar sözleşme veya fatura ile belgelendirilecektir."},
+    {"alan": "diger", "kural": {"aciklama": "Kredi kartı ürünü nakit çekime kapalı olacaktır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi kartı ürünü nakit çekime kapalı",
+     "alinti": "Kredi kartı ürünü nakit çekime kapalı olacaktır."}
+  ],
+  "belirsizlikler": [
+    "'İmalatçı' için NACE kodu veya Kısım C listesi metinde verilmemiş; faaliyet=imalat kaba alanı kullanıldı.",
+    "Kefalet limit/oran tablosu kaynakta boş (başlık var, satır yok); yararlanıcı ölçeği yalnız ürün açıklamasındaki 'KOBİ' ifadesinden çıkarıldı.",
+    "Şirket türü, ciro sınırı, oda/borsa üyeliği, il ve hedef grup şartı metinde yok."
+  ]
+}

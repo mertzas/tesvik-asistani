@@ -1,0 +1,47 @@
+{
+  "tesvik_id": 5,
+  "basvuru_bicimi": "gider_on_onay",
+  "bilesenler": [
+    "Dijital Dönüşüm Değerlendirme Analizi ve Yol Haritası Hizmeti Desteği",
+    "Sürdürülebilirlik Raporlaması Hizmeti Desteği",
+    "Yalın Olgunluk Değerlendirme Analizi (YODA) Hizmeti Desteği",
+    "Bağımsız Değerlendirme Hizmeti Desteği"
+  ],
+  "kriterler": [
+    {"alan": "belge", "kural": {"gerekli": "kosgeb_kaydi"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB veri tabanında kayıtlı, aktif ve işletme beyanı güncel",
+     "alinti": "KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması"},
+    {"alan": "diger", "kural": {"aciklama": "Dijital dönüşüm hizmeti TÜSSİDE tarafından belgelendirilmiş dijital dönüşüm danışmanlarından alınmalı"}, "zorunlu": true, "bilesen": "Dijital Dönüşüm Değerlendirme Analizi ve Yol Haritası Hizmeti Desteği",
+     "metin": "TÜSSİDE belgeli danışman",
+     "alinti": "TÜSSİDE tarafından belgelendirilmiş dijital dönüşüm danışmanlarından alınan hizmetler desteklenir."},
+    {"alan": "diger", "kural": {"aciklama": "En fazla 2 defa yararlanılabilir; iki hizmet arasında en az 1 yıl olmalı (hizmet başına 20.000 TL, toplam 40.000 TL)"}, "zorunlu": true, "bilesen": "Dijital Dönüşüm Değerlendirme Analizi ve Yol Haritası Hizmeti Desteği",
+     "metin": "Dijital dönüşüm desteği: en fazla 2 kez, aralarında en az 1 yıl",
+     "alinti": "İşletme bu destekten en fazla 2 defa yararlanabilir; iki hizmet arasında en az 1 yıl süre olmalıdır."},
+    {"alan": "diger", "kural": {"aciklama": "Sürdürülebilirlik raporu Türkiye Sürdürülebilirlik Raporlama Standartlarına (TSRS) uygun olmalı"}, "zorunlu": true, "bilesen": "Sürdürülebilirlik Raporlaması Hizmeti Desteği",
+     "metin": "Rapor TSRS'ye uygun",
+     "alinti": "Raporların Türkiye Sürdürülebilirlik Raporlama Standartlarına (TSRS) uygun olması gerekir."},
+    {"alan": "diger", "kural": {"aciklama": "Sürdürülebilirlik raporunun güvence denetimi bağımsız denetim kuruluşunca yapılmalı"}, "zorunlu": true, "bilesen": "Sürdürülebilirlik Raporlaması Hizmeti Desteği",
+     "metin": "Bağımsız güvence denetimi",
+     "alinti": "Sürdürülebilirlik raporunun güvence denetimi bir bağımsız denetim kuruluşu tarafından yapılmalıdır."},
+    {"alan": "diger", "kural": {"aciklama": "İşletme en fazla 2 rapor için destek alabilir (hizmet başına 100.000 TL, toplam 200.000 TL)"}, "zorunlu": true, "bilesen": "Sürdürülebilirlik Raporlaması Hizmeti Desteği",
+     "metin": "En fazla 2 rapor",
+     "alinti": "İşletme en fazla 2 rapor için destek alabilir."},
+    {"alan": "diger", "kural": {"aciklama": "YODA hizmeti Bakanlık tarafından bildirilen yalın dönüşüm danışmanlarından alınmalı"}, "zorunlu": true, "bilesen": "Yalın Olgunluk Değerlendirme Analizi (YODA) Hizmeti Desteği",
+     "metin": "Bakanlıkça bildirilen yalın dönüşüm danışmanı",
+     "alinti": "Bakanlık tarafından bildirilen yalın dönüşüm danışmanlarından alınan YODA hizmetleri desteklenir."},
+    {"alan": "diger", "kural": {"aciklama": "İkinci defa yararlanmak için ilk YODA raporunda önerilen model fabrika hizmetleri tamamlanmış olmalı (hizmet başına 20.000 TL, toplam 40.000 TL)"}, "zorunlu": true, "bilesen": "Yalın Olgunluk Değerlendirme Analizi (YODA) Hizmeti Desteği",
+     "metin": "YODA ikinci yararlanma şartı",
+     "alinti": "İkinci defa yararlanmak için ilk YODA raporunda önerilen model fabrika hizmetlerinin tamamlanmış olması şarttır."},
+    {"alan": "diger", "kural": {"aciklama": "Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında yer alan ürünleri üretmek üzere yapılan proje başvurularına ilişkin bağımsız değerlendirme raporu hizmetleri desteklenir"}, "zorunlu": true, "bilesen": "Bağımsız Değerlendirme Hizmeti Desteği",
+     "metin": "Sanayi Hamlesi çağrı planındaki ürünler için proje başvurusu",
+     "alinti": "Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında yer alan ürünleri üretmek üzere yaptıkları proje başvurularına ilişkin bağımsız değerlendirme raporu hizmetleri desteklenir."},
+    {"alan": "diger", "kural": {"aciklama": "Bağımsız değerlendirme raporu Bakanlık tarafından ilan edilen Bağımsız Danışmanlık Firmalarınca hazırlanmalı (hizmet başına 150.000 TL, toplam 450.000 TL)"}, "zorunlu": true, "bilesen": "Bağımsız Değerlendirme Hizmeti Desteği",
+     "metin": "Bakanlıkça ilan edilen bağımsız danışmanlık firması",
+     "alinti": "Bağımsız Değerlendirme Raporu Bakanlık tarafından ilan edilen Bağımsız Danışmanlık Firmaları tarafından hazırlanır."}
+  ],
+  "belirsizlikler": [
+    "Canlı sayfa esas alındı: 4 hizmet, %100 geri ödemesiz, program üst limiti 700.000 TL, 36 ay. Eski kayıt (KAYITLI ALANLAR/DETAY) 3 hizmet, %80, 280.000 TL ve 'Kısım C İmalat sektöründe küçük/orta ölçekli, mikro yararlanamaz' diyordu; canlı sayfada NACE veya ölçek kısıtı yok (yalnız gerçek/tüzel kişi, KOSGEB kayıtlı-aktif, beyan güncel) olduğundan NACE C ve ölçek kriteri kodlanmadı. Eski kayıt hâlâ doğruysa elle teyit gerekir.",
+    "Canlı sayfada ana FAQ 'dört ana başlık', hizmet listesi ve limitler tutarlı; yalnız kayıtlı ALANLAR bölümü eski değerleri taşıyor.",
+    "Programın hedef işletme kitlesi çok geniş; ek şart (ciro, yaş, bölge) yok."
+  ]
+}

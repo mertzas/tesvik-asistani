@@ -1,0 +1,27 @@
+{
+  "tesvik_id": 187,
+  "basvuru_bicimi": "diger",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["limited", "anonim", "kooperatif", "diger_tuzel"]}, "zorunlu": true, "bilesen": null,
+     "metin": "TTK md.124 şirketi (kollektif, komandit, anonim, limited) ya da ticari/sınai faaliyette bulunan kooperatif olmak; şahıs işletmesi kapsam dışı",
+     "alinti": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler (kollektif, komandit, anonim, limited) ya da ticari/sınai faaliyette bulunan kooperatif (Karar m.2); şahıs işletmesi kapsam dışı"},
+    {"alan": "belge", "kural": {"gerekli": "ihracatci_birligi_uyeligi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Bir ihracatçı birliğine üye olmak",
+     "alinti": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"},
+    {"alan": "diger", "kural": {"aciklama": "Gider, akredite kurum/kuruluştan alınan ve hedef ülke pazarına girişte zorunlu ya da avantaj sağlayan belge, sertifika, test/analiz veya ruhsatlandırma/kayıt işlemine ilişkin olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Desteklenen gider akredite kuruluştan alınan pazara giriş belgesi, test/analiz ya da ruhsatlandırma/kayıt işlemine ilişkin olmalı",
+     "alinti": "Gider, akredite kurum/kuruluştan alınan ve hedef ülke pazarına girişte zorunlu ya da avantaj sağlayan belge, sertifika, test/analiz veya ruhsatlandırma/kayıt işlemine ilişkin olmalı"},
+    {"alan": "onceki_destek_yok", "kural": {"esit": true}, "zorunlu": true, "bilesen": null,
+     "metin": "TURQUALITY®/marka destek programına alınıp m.17 kapsamında desteklenen şirketler destek süreleri boyunca m.3 desteğinden yararlandırılmaz",
+     "alinti": "şirketler/markalar destek süreleri boyunca 3 üncü, 4 üncü, 5 inci, 6 ncı, 7 nci maddeler ve 10 uncu maddenin üçüncü fıkrası ile 11 inci, 12 nci, 15 inci, 16 ncı, 18 inci ve 19 uncu maddelerde yer alan desteklerden yararlandırılmazlar"},
+    {"alan": "onceki_destek_yok", "kural": {"esit": true}, "zorunlu": true, "bilesen": null,
+     "metin": "Aynı harcama kalemi için bu Karar dışında başka bir mevzuat/program kapsamında destek alınmamış olmalı (aksi halde yanıltıcı bilgi sayılır ve müeyyide uygulanır)",
+     "alinti": "Aynı harcama kalemi için, yararlanıcıların bu Karar dışında başka bir mevzuat/program kapsamında destek aldığının tespiti halinde, bu durum yanıltıcı bilgi ve belge sunulması olarak değerlendirilir"}
+  ],
+  "belirsizlikler": [
+    "Başvuru ön onay gerektirmiyor (ödeme belgesi tarihinden 6 ay içinde DYS üzerinden başvuru); basvuru_bicimi bu yüzden 'diger' seçildi.",
+    "Metinde ayrı bir DYS kaydı şartı yazmıyor; yalnız başvurunun DYS üzerinden yapıldığı belirtiliyor, bu nedenle dys_kaydi kriteri eklenmedi.",
+    "Kollektif ve komandit şirket türleri şemada ayrı değer olmadığı için diger_tuzel ile kodlandı."
+  ]
+}

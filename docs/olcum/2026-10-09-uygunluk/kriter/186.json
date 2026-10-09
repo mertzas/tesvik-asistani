@@ -1,0 +1,27 @@
+{
+  "tesvik_id": 186,
+  "basvuru_bicimi": "bildirim_prim",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "diger", "kural": {"aciklama": "İşe alınan kişi işsizlik ödeneği almakta olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "İşe alınan kişi işsizlik ödeneği alıyor olmalı",
+     "alinti": "İşe alınan kişinin işsizlik ödeneği alıyor olması"},
+    {"alan": "ilave_istihdam", "kural": {"esit": true}, "zorunlu": true, "bilesen": null,
+     "metin": "İşe alındığı tarihten önceki son altı ayda bildirilen ortalama sigortalı sayısına ilave olarak işe alınmalı",
+     "alinti": "özel sektör işverenleri tarafından işe alındığı tarihten önceki son altı aylık dönemde bildirilen ortalama sigortalı sayısına ilave olarak işe alınması durumunda"},
+    {"alan": "diger", "kural": {"aciklama": "Özel sektör işvereni olmak"}, "zorunlu": true, "bilesen": null,
+     "metin": "Özel sektör işvereni",
+     "alinti": "özel sektör işverenleri tarafından işe alındığı tarihten önceki son altı aylık dönemde"},
+    {"alan": "diger", "kural": {"aciklama": "İşçi, işten ayrıldığı işyerinde tekrar işe başlamamış olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Aynı işyerine geri dönüş olmamalı",
+     "alinti": "İşçinin, işten ayrıldığı işyerinde tekrar işe başlamaması"},
+    {"alan": "diger", "kural": {"aciklama": "Aylık prim ve hizmet belgesi yasal süresinde verilmeli, primler yasal süresinde ödenmeli"}, "zorunlu": true, "bilesen": null,
+     "metin": "Aylık prim ve hizmet belgesi ile prim ödemesi yasal sürede",
+     "alinti": "Aylık prim ve hizmet belgesinin yasal süresinde verilmesi, primlerin yasal süresinde ödenmesi"}
+  ],
+  "belirsizlikler": [
+    "Şemada 'işsizlik ödeneği alan' için calisan_niteligi değeri yok; diger olarak kodlandı (elle).",
+    "Destek süresi kişinin kalan işsizlik ödeneği süresi kadar; bu sürenin işverene verilen destekle düşüldüğü sayfada yazıyor ama başvuru şartı değil.",
+    "Hedef işveren özel sektör olarak geçiyor; ölçek, NACE, bölge ya da işletme yaşı şartı kaynakta yok."
+  ]
+}

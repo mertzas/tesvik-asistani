@@ -1,0 +1,27 @@
+{
+  "tesvik_id": 160,
+  "basvuru_bicimi": "uretim_odeme",
+  "bilesenler": ["Temel destek", "Planlı üretim desteği", "Sertifikalı tohum desteği"],
+  "kriterler": [
+    {"alan": "belge", "kural": {"gerekli": "cks_kaydi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Çiftçi Kayıt Sistemi'ne (ÇKS) kayıtlı olmak",
+     "alinti": "Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak"},
+    {"alan": "diger", "kural": {"aciklama": "Arazi/parsel bilgileri ÇKS'de güncel olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "ÇKS arazi/parsel bilgisinin güncelliği",
+     "alinti": "Arazi/parsel bilgilerinin ÇKS'de güncel olması"},
+    {"alan": "diger", "kural": {"aciklama": "İlgili üretim sezonunda ekim yapılmış olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Üretim sezonunda ekim yapılmış olması",
+     "alinti": "İlgili üretim sezonunda ekim yapılmış olması"},
+    {"alan": "urun", "kural": {"in": ["mercimek", "nohut", "bugday", "arpa", "misir"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Kaynakta ürün katsayısı verilen hububat/baklagil ürünleri",
+     "alinti": "mercimek/nohut 1,0; buğday/arpa/mısır 1,3"},
+    {"alan": "diger", "kural": {"aciklama": "Sertifikalı tohum kullanılırsa ilave destek ödenir"}, "zorunlu": false, "bilesen": "Sertifikalı tohum desteği",
+     "metin": "Sertifikalı tohum kullanımı",
+     "alinti": "Sertifikalı tohum kullanılırsa ilave ödenir"}
+  ],
+  "belirsizlikler": [
+    "Kaynakta yalnız mercimek, nohut, buğday, arpa ve mısır için katsayı var; diğer hububat/baklagil ürünlerinin (çavdar, yulaf, fasulye vb.) kapsamı yazmıyor, urun kriteri bu beş ürünle sınırlı kodlandı.",
+    "Asgari arazi büyüklüğü, şirket türü ve ölçek şartı kaynakta yazmıyor.",
+    "Başvuru dönemi yıllık ilan ediliyor; canlı sayfa (BUGEM ana sayfası) şart içermiyor."
+  ]
+}

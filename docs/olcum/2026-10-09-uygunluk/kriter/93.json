@@ -1,0 +1,24 @@
+{
+  "tesvik_id": 93,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "diger", "kural": {"aciklama": "Avukat olmak (hukuk bürosu kuracak avukat; mevcut bürosu veya yeni büro kurma gideri olan avukat)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Avukat olmak (hukuk bürosu kuracak avukatlar)",
+     "alinti": "Hukuk bürosu kuracak avukatlar"},
+    {"alan": "diger", "kural": {"aciklama": "1136 sayılı Avukatlık Kanunu'nun 43'üncü maddesinin son fıkrası gereğince finansmana erişimde güçlük yaşayan avukat olmak"}, "zorunlu": true, "bilesen": null,
+     "metin": "Finansmana erişimde güçlük yaşayan avukat",
+     "alinti": "1136 sayılı Avukatlık Kanunu’nun 43’üncü maddesinin son fıkrası gereğince finansmana erişimde güçlük yaşayan avukatların mevcut bürolarının veya yeni büro kurma giderlerinin karşılanması"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Vakıfbank'tan kredi kullanımı",
+     "alinti": "Kredi veren banka(lar): Vakıfbank (KGF ürün sayfası, İlgili Finans Kuruluşları)"},
+    {"alan": "diger", "kural": {"aciklama": "Krediler kıymetli maden ve döviz alımında, kefaletin sağlandığı kredi veren dışında vadeli mevduat ve diğer yüksek riskli finansal araçlarda ve refinansman amacıyla kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredinin kullanım amacı kısıtı",
+     "alinti": "Bu paket kapsamındaki krediler kıymetli maden ve döviz alımında, kefaletin sağlandığı kredi veren dışında vadeli mevduat ve diğer yüksek riskli finansal araçlarda, refinansman amacıyla kullanılamaz."}
+  ],
+  "belirsizlikler": [
+    "Şirket türü (şahıs avukat/ortaklık), KOBİ sınıfı, ciro sınırı, baro kaydı süresi, kuruluş yaşı, il ve kadın/genç gibi hedef grup şartı metinde yok.",
+    "'Finansmana erişimde güçlük' ölçütünün nasıl belirleneceği metinde tanımlanmamış (makine değerlendiremez).",
+    "Kefalet tablosunda yararlanıcı 'Hukuk bürosu kuracak avukatlar'; ürün açıklamasında ise 'mevcut bürolar' da geçiyor; mevcut büro sahibinin yararlanıp yararlanamayacağı net değil."
+  ]
+}

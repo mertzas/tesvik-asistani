@@ -1,0 +1,41 @@
+{
+  "tesvik_id": 49,
+  "basvuru_bicimi": "hisse_fon",
+  "bilesenler": ["Aşama 1 (Hızlandırma Programı)", "Aşama 2 (Tohum Öncesi Yatırım)", "Aşama 3 (Tohum Yatırım)"],
+  "kriterler": [
+    {"alan": "hedef_grup", "kural": {"in": ["ogrenci", "yeni_mezun"]}, "zorunlu": true, "bilesen": "Aşama 1 (Hızlandırma Programı)",
+     "metin": "Üniversitelerin ön lisans, lisans, yüksek lisans veya doktora programında öğrenci veya mezun olmak",
+     "alinti": "üniversitelerin herhangi bir ön lisans, lisans, yüksek lisans veya doktora programına kayıtlı öğrenci veya herhangi bir ön lisans, lisans, yüksek lisans veya doktora programından mezun kişiler"},
+    {"alan": "baska_sirkette_ortak_degil", "kural": {"esit": true}, "zorunlu": true, "bilesen": "Aşama 1 (Hızlandırma Programı)",
+     "metin": "Hızlandırma programına kabul tarihi itibarıyla sermaye şirketi veya gerçek kişi işletmesi herhangi bir işletmenin ortaklık yapısında yer almamak (halka açık şirket payları ve kitle fonlaması payları hariç)",
+     "alinti": "hızlandırma programına kabul edildiği tarih itibarı ile sermaye şirketi veya gerçek kişi işletmesi herhangi bir işletmenin ortaklık yapısında yer alan kişiler başvuru yapamaz"},
+    {"alan": "onceki_destek_yok", "kural": {"esit": true}, "zorunlu": true, "bilesen": "Aşama 1 (Hızlandırma Programı)",
+     "metin": "Daha önce Teknogirişim Sermayesi Desteği veya TÜBİTAK 1512 ya da 1812 2. Aşaması kapsamında destek almamış olmak",
+     "alinti": "Daha önce Sanayi ve Teknoloji Bakanlığı Teknogirişim Sermayesi Desteği ya da TÜBİTAK 1512 veya 1812 Programları 2. Aşaması kapsamında destek alan"},
+    {"alan": "diger", "kural": {"aciklama": "Aşama 2 başvurusu için hızlandırma programını tamamlayıp Aşama 2'ye başvurmaya hak kazanmış olmak; iş planı TÜBİTAK'a sunulmadan önce uygulayıcı kuruluşça şekil ve içerik bakımından onaylanır"}, "zorunlu": true, "bilesen": "Aşama 2 (Tohum Öncesi Yatırım)",
+     "metin": "Hızlandırma programını tamamlayarak Aşama 2'ye hak kazanmak",
+     "alinti": "Hızlandırma programlarını tamamlayarak Aşama 2’ye başvurmaya hak kazanan girişimciler, iş planlarını PRODİS üzerinden TÜBİTAK’a sunabilirler."},
+    {"alan": "diger", "kural": {"aciklama": "Mükemmeliyet Mührü alan girişimcilerden kuruluş tanımına uygun şirket kurmaları istenir"}, "zorunlu": true, "bilesen": "Aşama 2 (Tohum Öncesi Yatırım)",
+     "metin": "Mükemmeliyet Mührü sonrası uygun şirketin kurulması",
+     "alinti": "TÜBİTAK tarafından girişimcilerden kuruluş tanımına uygun şirket kurmaları istenir."},
+    {"alan": "diger", "kural": {"aciklama": "Kuruluş, Aşama 2'de destek kapsamına alınan tutar karşılığında en fazla %5 hissesi için TÜBİTAK BiGG fonuyla yatırım sözleşmesi yapar (oran çağrıda ilan edilir); yatırım hisse, hisseye dönüştürülebilir borç veya ikisi olabilir"}, "zorunlu": true, "bilesen": "Aşama 2 (Tohum Öncesi Yatırım)",
+     "metin": "Fon karşılığı hisse devrini kabul etmek (en fazla %5)",
+     "alinti": "Kuruluş, Aşama 2’de destek kapsamına alınan tutar karşılığında en fazla %5 hissesi için TÜBİTAK BiGG fonu ile yatırım sözleşmesi yapar."},
+    {"alan": "sirket_turu", "kural": {"in": ["limited", "anonim"]}, "zorunlu": true, "bilesen": "Aşama 3 (Tohum Yatırım)",
+     "metin": "Türkiye'de yerleşik sermaye şirketi olmak",
+     "alinti": "ilgili tohum yatırım çağrısında belirtilen tarihten sonra kurulmuş olan Türkiye’de yerleşik sermaye şirketleri başvurabilir"},
+    {"alan": "diger", "kural": {"aciklama": "Aşama 3 için 1812 tohum öncesi yatırım aşamasında yatırım almış ve projesini tamamlamış olmak veya 1512 Girişimcilik Destek Programı kapsamında desteklenen projesini tamamlamış olmak"}, "zorunlu": true, "bilesen": "Aşama 3 (Tohum Yatırım)",
+     "metin": "1812 Aşama 2 veya 1512 projesini tamamlamış olmak",
+     "alinti": "1812 kodlu Yatırım Tabanlı Girişimcilik Destek Programı’nın tohum öncesi yatırım aşamasında tohum öncesi yatırım almış ve projesini tamamlamış veya 1512 kodlu Girişimcilik Destek Programı kapsamında sağlanan destekle yürüttüğü projesini tamamlamış"},
+    {"alan": "diger", "kural": {"aciklama": "Şirket, ilgili tohum yatırım çağrısında belirtilen tarihten sonra kurulmuş olmalı"}, "zorunlu": true, "bilesen": "Aşama 3 (Tohum Yatırım)",
+     "metin": "Çağrıda belirtilen tarihten sonra kurulmuş şirket",
+     "alinti": "ilgili tohum yatırım çağrısında belirtilen tarihten sonra kurulmuş olan"}
+  ],
+  "belirsizlikler": [
+    "Aşama 1'de 'mezun' için mezuniyet süresi sınırı yok; hedef_grup şemasında yalnız 'yeni_mezun' olduğu için bu değer kullanıldı.",
+    "Aşama 1 başvuru şartı üç koşuldan oluşuyor: öğrenci/mezun olmak, daha önce Teknogirişim/1512/1812 Aşama 2 desteği almamış olmak ve herhangi bir işletmenin ortağı olmamak; cümle yapısı iki kısımlı olduğundan ortaklık yasağı ve önceki destek ayrı kriter yazıldı.",
+    "Yatırım tutarı ve hisse oranı ilgili çağrıda ilan ediliyor (Aşama 3 için en fazla %10); kaynak metinde tutar yok.",
+    "Çağrı dönemi/tarihleri kaynak metinde yok (BiGG Yatırım 2026-2 çağrı metnine atıf var).",
+    "Aşama 2 ve 3 için ölçek, işletme yaşı, ciro veya çalışan sayısı şartı metinde yok."
+  ]
+}

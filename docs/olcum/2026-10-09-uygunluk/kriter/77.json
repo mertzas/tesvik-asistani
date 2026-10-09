@@ -1,0 +1,34 @@
+{
+  "tesvik_id": 77,
+  "basvuru_bicimi": "uretim_odeme",
+  "bilesenler": ["Organik tarım desteği"],
+  "kriterler": [
+    {"alan": "belge", "kural": {"gerekli": "cks_kaydi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Ürünlerin ilgili üretim yılında ÇKS'de kayıtlı olması",
+     "alinti": "Ürünlerin ilgili üretim yılında ÇKS ve OTBİS'te kayıtlı olması"},
+    {"alan": "diger", "kural": {"aciklama": "Ürünlerin ilgili üretim yılında OTBİS'te kayıtlı olması"}, "zorunlu": true, "bilesen": null,
+     "metin": "OTBİS kaydı",
+     "alinti": "Ürünlerin ilgili üretim yılında ÇKS ve OTBİS'te kayıtlı olması"},
+    {"alan": "belge", "kural": {"gerekli": "organik_sertifika"}, "zorunlu": true, "bilesen": null,
+     "metin": "Hasat yapılmış ve ürün sertifikası düzenlenmiş olmalı",
+     "alinti": "Hasadın yapılmış ve ürün sertifikasının düzenlenmiş olması"},
+    {"alan": "diger", "kural": {"aciklama": "Arazi yetkilendirilmiş kuruluşça kontrol edilmiş ve geçiş süreci-2, geçiş süreci-3 ya da organik statüde olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Arazinin kontrol edilmiş olması ve statüsü",
+     "alinti": "Arazinin yetkilendirilmiş kuruluşça kontrol edilmiş ve geçiş süreci-2, geçiş süreci-3 ya da organik statüde olması"},
+    {"alan": "diger", "kural": {"aciklama": "Geçiş süreci-1 arazisi destekten yararlanamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Geçiş süreci-1 arazisi hariç",
+     "alinti": "geçiş süreci-1 arazisi yararlanamaz"},
+    {"alan": "onceki_destek_yok", "kural": {"esit": true}, "zorunlu": true, "bilesen": null,
+     "metin": "Organik desteği alan arazi aynı yıl iyi tarım uygulamaları desteğinden yararlanmamış olmalı",
+     "alinti": "Organik desteği alan arazi aynı yıl iyi tarım uygulamaları desteğinden yararlanamaz"},
+    {"alan": "diger", "kural": {"aciklama": "1. derece tarımsal amaçlı örgüt üyesi çiftçilere katsayının %25'i kadar ilave ödenir"}, "zorunlu": false, "bilesen": null,
+     "metin": "Örgüt üyesi çiftçiye %25 ilave ödeme",
+     "alinti": "1. derece tarımsal amaçlı örgüt üyesi çiftçilere katsayının %25'i kadar ilave ödenir"}
+  ],
+  "belirsizlikler": [
+    "Kesin başvuru tarihleri yıllık ilan ediliyor; kaynakta yok.",
+    "Desteklenen ürün listesi, ürün grupları ve asgari arazi büyüklüğü kaynakta yazmıyor; yalnız dekar başı tutar aralığı veriliyor.",
+    "Şirket türü, ölçek ve çiftçi niteliği (gerçek/tüzel kişi) kaynakta belirtilmemiş.",
+    "Canlı sayfa (BUGEM ana sayfası) başvuru şartı içermiyor; şartlar yalnız kayıtlı alanlardan kodlandı."
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "tesvik_id": 39,
+  "basvuru_bicimi": "proje",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["limited", "anonim"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Türkiye'de yerleşik sermaye şirketi olmak",
+     "alinti": "1509 Uluslararası Sanayi Ar-Ge Destek Programına Türkiye’de yerleşik sermaye şirketleri başvuru yapabilmektedir."},
+    {"alan": "diger", "kural": {"aciklama": "Ulusal 1509 başvurusundan önce EUREKA altındaki araçlara (EUREKA Küme, EUREKA Network vb.) yurt dışı ortaklı uluslararası proje başvurusu yapılmış olmalı; projedeki tek yabancı ortak ayrılırsa proje devam edemez"}, "zorunlu": true, "bilesen": null,
+     "metin": "Önceden EUREKA araçlarına uluslararası ortaklı proje başvurusu (yurt dışı ortak)",
+     "alinti": "1509 programı ulusal proje başvurusu öncesinde EUREKA altında yer alan araçlara uluslararası ortaklı proje başvurusu yapılmış olmalıdır."},
+    {"alan": "diger", "kural": {"aciklama": "Uluslararası çağrılı projelerde ulusal başvurunun uygun bulunduğunu belirtir belge/yazı ve uluslararası başvuru formu AGY103 ekler bölümüne eklenmeli"}, "zorunlu": true, "bilesen": null,
+     "metin": "Uluslararası başvurunun uygunluk belgesi AGY103'e eklenmeli",
+     "alinti": "Uluslararası çağrılı projelerde ulusal başvurunun uygun bulunduğunu belirtir belgenin ya da yazının ve uluslararası başvuru formunun AGY103 ekler bölümüne eklenmesi gerekmektedir."},
+    {"alan": "diger", "kural": {"aciklama": "Proje ekibinde başvuru tarihi itibariyle proje konusuyla ilgili en az bir lisans mezunu bulunmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Proje konusuyla ilgili en az bir lisans mezunu",
+     "alinti": "Proje ekibinde başvuru tarihi itibariyle proje konusu ile ilgili lisans mezunu en az bir kişinin bulunması gerekmektedir."},
+    {"alan": "diger", "kural": {"aciklama": "Çağrılı uluslararası programlara sunulan proje, ilgili çağrının değerlendirme takvimine uygun şekilde TÜBİTAK'a sunulmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Uluslararası çağrının takvimine uygun başvuru",
+     "alinti": "Çağrılı uluslararası programlara sunulacak projenin ilgili çağrının değerlendirme takvimine uygun şekilde TÜBİTAK’a sunulması beklenir."},
+    {"alan": "diger", "kural": {"aciklama": "Ar-Ge faaliyetleri başvurudan önce tamamlanmış projeler desteklenmez"}, "zorunlu": true, "bilesen": null,
+     "metin": "Başvurudan önce tamamlanmış Ar-Ge desteklenmez",
+     "alinti": "Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez."},
+    {"alan": "diger", "kural": {"aciklama": "Aynı uluslararası projede birden fazla Türk ortak varsa Türk kuruluşlar ortak proje önerisiyle tek bir 1509 başvurusu yapar"}, "zorunlu": true, "bilesen": null,
+     "metin": "Birden fazla Türk ortak tek başvuru yapar",
+     "alinti": "Türk kuruluşlar, ortak proje önerisi hazırlayarak tek bir 1509 proje başvurusu yaparlar."},
+    {"alan": "diger", "kural": {"aciklama": "Firmanın desteklenen ilk 5 projesinde KOBİ %75 / büyük %60; 6. ve sonraki projelerde KOBİ %60 / büyük %40 (1 Ocak 2020'den itibaren sözleşmesi imzalanmış projeler sayılır; yürütücü ve ortak olarak 1509'dan destek almış kuruluşlar dahil)"}, "zorunlu": false, "bilesen": null,
+     "metin": "Desteklenen proje sayısına göre kademeli oran (önceki destek sayısı)",
+     "alinti": "Firmanın desteklenen ilk 5 projesi için: KOBİ destek oranı %75, Büyük Ölçekli Firma destek oranı %60*"}
+  ],
+  "belirsizlikler": [
+    "Bütçe üst limiti metinde çelişkili: bir yerde tek ortaklı 25 M TL / ortaklı 80 M TL, başka yerde 'uluslararası çağrı duyurularında aksi belirtilmediği sürece kısıtlama yok'; bu yüzden bütçe kriteri yazılmadı.",
+    "Ölçek (KOBİ/büyük) başvuru şartı değil, yalnız destek oranını belirliyor.",
+    "Yurt dışı ortak şartı şemada alan olmadığı için diger olarak kodlandı; EUREKA üye ülke listesi metinde yok."
+  ]
+}

@@ -1,0 +1,19 @@
+{
+  "tesvik_id": 149,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ olmak", "alinti": "İmalat sektöründe faaliyet gösteren KOBİ olmak"},
+    {"alan": "faaliyet", "kural": {"in": ["imalat"]}, "zorunlu": true, "bilesen": null,
+     "metin": "İmalat sektöründe faaliyet göstermek", "alinti": "İmalat sektöründe faaliyet gösteren KOBİ olmak"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Refinansmana konu mevcut kredi bulunmalı", "alinti": "mevcut kredilerinin refinansman yöntemi ile ödemesiz dönemli şekilde yeni bir itfa planına bağlanması"}
+  ],
+  "belirsizlikler": [
+    "Kaynakta KAYITLI DETAY bölümünde KOBİ kefalet üst limiti 'Azami 10 milyon TL', canlı sayfada '24 Milyon TL' yazıyor; çelişki var, kriter olarak kodlanmadı.",
+    "Oda/borsa üyeliği, il kısıtı, NACE listesi, ciro sınırı, şahıs/tüzel ayrımı, hedef grup şartı metinde yok; 'imalat sektörü' için NACE kodu verilmemiş, kaba alan olarak 'imalat' kodlandı.",
+    "KOBİ dışı işletmelerin yararlanıp yararlanamayacağı açıkça yazılı değil; yalnız 'KOBİ' yararlanıcı olarak geçiyor.",
+    "Paketin hâlâ kullandırımda olduğu kaynakta teyit edilmemiş (son başvuru tarihi yok)."
+  ]
+}

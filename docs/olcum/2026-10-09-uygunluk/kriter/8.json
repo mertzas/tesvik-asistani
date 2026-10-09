@@ -1,0 +1,26 @@
+{
+  "tesvik_id": 8,
+  "basvuru_bicimi": "faiz_destegi",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "nace", "kural": {"in_prefix": ["C", "61", "62", "63", "72"]}, "zorunlu": true, "bilesen": null,
+     "metin": "NACE: C-İmalat, 61 Telekomünikasyon, 62 Bilgisayar programlama, 63 Bilişim altyapısı, 72 Bilimsel Ar-Ge",
+     "alinti": "İmalat, telekomünikasyon, bilgisayar programlama vb. NACE kodunda faaliyet"},
+    {"alan": "belge", "kural": {"gerekli": "kosgeb_kaydi"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB veri tabanında kayıtlı, aktif ve işletme beyanı güncel",
+     "alinti": "KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması"},
+    {"alan": "olcek", "kural": {"in": ["kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "İşletme sınıfı küçük veya orta büyüklükte",
+     "alinti": "İşletme sınıfının küçük veya orta büyüklükte olması"},
+    {"alan": "diger", "kural": {"aciklama": "Hızlı büyüyen işletme olmak; Teknogirişim Rozetine sahip olanlarda veya KOSGEB'e paydaş protokolüyle bildirilmiş tedarikçi geliştirme (savunma/havacılık/uzay vb.) işletmelerinde bu şart aranmaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Hızlı büyüyen işletme (rozet veya tedarikçi geliştirme protokolü ile muaf)",
+     "alinti": "Hızlı büyüyen işletme olması (*)"},
+    {"alan": "diger", "kural": {"aciklama": "Tedarikçi geliştirme kapsamında savunma alanında proje sunan işletmede başvuruyu ilk onayladığı tarihte geçerli EYDEP sertifikası zorunlu (kredi üst limiti EYDEP-C 25 M, EYDEP-B 27,5 M, EYDEP-A 30 M TL)"}, "zorunlu": false, "bilesen": null,
+     "metin": "Savunma tedarikçi geliştirme için EYDEP sertifikası",
+     "alinti": "işletmenin program başvurusunu ilk onayladığı tarihte geçerli olan EYDEP sertifikasına sahip olması zorunludur"}
+  ],
+  "belirsizlikler": [
+    "Hızlı büyüyen işletme tanımı (hangi ölçütler) kaynakta verilmemiş; KOSGEB sistemi otomatik kontrol ediyor olabilir. Teknogirişim rozeti muafiyeti ayrı belge kriteri yapılmadı çünkü zorunlu=false semantiğine uymuyor, diger açıklamasında tutuldu.",
+    "Şirket türü olarak yalnız 'gerçek veya tüzel kişi' yazıyor (kısıt değil)."
+  ]
+}

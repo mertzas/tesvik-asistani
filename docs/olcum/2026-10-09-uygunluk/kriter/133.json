@@ -1,0 +1,28 @@
+{
+  "tesvik_id": 133,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "faaliyet", "kural": {"in": ["savunma"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Savunma sanayii sektöründe faaliyet göstermek",
+     "alinti": "Savunma Sanayii sektöründe faaliyet gösteren işletmelere kefalet desteği"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi Halkbank, Vakıfbank, Ziraat, Ziraat Katılım, Denizbank veya Yapı Kredi'den kullanılır",
+     "alinti": "Kredi veren banka(lar): Halkbank, Vakıfbank, Ziraat Bankası, Ziraat Katılım, Denizbank, Yapı ve Kredi Bankası"},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet yalnızca yeni ve ilave kredi kullandırımları için talep edilebilir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnızca yeni ve ilave kredi",
+     "alinti": "Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir."},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet talepleri yalnızca TL para cinsinden yapılabilir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnızca TL kredi",
+     "alinti": "Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."},
+    {"alan": "diger", "kural": {"aciklama": "Kredi döviz, altın ve mücevherat finansmanında kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Döviz, altın, mücevherat finansmanında kullanılamaz",
+     "alinti": "Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz."}
+  ],
+  "belirsizlikler": [
+    "Yararlanıcı satırında 'KOBİ' yazıyor (kefalet üst limiti 20 Milyon TL, oran %80) ancak bu ifade düz bir cümle olarak değil tablo hücresi olarak geçtiği için birebir alıntılanamadı; olcek kriteri bu yüzden yazılmadı. Programın KOBİ'lere açık olması muhtemel ama kaynakta cümle halinde yok.",
+    "Savunma sanayii sektörünün nasıl belgelendiği (SSB kaydı, tedarikçi statüsü, NACE kodu) metinde yok; faaliyet=savunma kaba alanıyla kodlandı. Program adı 'Tedarikçi' diyor, ürün açıklaması yalnızca 'Savunma Sanayii sektöründe faaliyet gösteren işletmeler' diyor.",
+    "Ciro, çalışan sayısı, işletme yaşı, il, şirket türü veya hedef grup kısıtı metinde yok.",
+    "KGF sayfasında son başvuru/kullandırım tarihi yok; paketin hâlâ kullandırımda olduğu bankadan teyit edilmeli."
+  ]
+}

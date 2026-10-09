@@ -1,0 +1,34 @@
+{
+  "tesvik_id": 25,
+  "basvuru_bicimi": "proje",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["limited", "anonim"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Türkiye'de yerleşik sermaye şirketi olmak",
+     "alinti": "Çağrı kapsamında sadece Türkiye’de yerleşik sermaye şirketleri başvuruda bulunabilecektir."},
+    {"alan": "diger", "kural": {"aciklama": "Proje konusuna ait alanda açık (başvuru süresi dolmamış) bir Teknoloji Odaklı Sanayi Hamlesi çağrısı bulunmalı; çağrı duyuruları hamle.gov.tr'de yayımlanır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Açık bir çağrı dönemi olmalı",
+     "alinti": "Programa proje sunabilmek için, proje konusuna ait alanda, açık (başvuru süresi dolmamış) bir çağrı bulunması gerekir."},
+    {"alan": "diger", "kural": {"aciklama": "Üretilmesi hedeflenen ürün çağrının Öncelikli Ürün Listesi'ndeki GTİP kodlarına sahip olmalı ve/veya yenilikçi teknoloji alanlarıyla uyumlu olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Ürün Öncelikli Ürün Listesi GTİP kodlarında veya yenilikçi teknoloji alanlarında olmalı",
+     "alinti": "Çağrıya uygunluk açısından üretilmesi hedeflenen ürünün Öncelikli Ürün Listesi’nde yer alan Gümrük Tarife İstatistik Pozisyonu (GTİP) kodlarına sahip ve/veya ürün veya üretim teknolojisi açısından yenilikçi teknoloji alanları ile uyumlu olması gerekmektedir."},
+    {"alan": "diger", "kural": {"aciklama": "Projenin nihai amacı yalnız prototip oluşturmak olmamalı; tamamlanan projenin yatırıma dönüşüp üretime geçmesi beklenir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız prototip amaçlı proje uygun değil",
+     "alinti": "Projenin nihai amacı sadece prototip oluşturmak ise HAMLE Programına uyumlu bir proje değildir."},
+    {"alan": "diger", "kural": {"aciklama": "Başvuru çağrı takvimi içinde ön başvuru ve kesin başvuru aşamaları tamamlanarak yapılır; ön kayıt ve yetkilendirme Sanayi ve Teknoloji Bakanlığı tarafından yürütülür"}, "zorunlu": true, "bilesen": null,
+     "metin": "Ön başvuru ve kesin başvuru aşamalarının tamamlanması",
+     "alinti": "Başvurular, çağrı takvimi dâhilinde ön başvuru ve kesin başvuru aşamalarının tamamlanması suretiyle alınacaktır."},
+    {"alan": "diger", "kural": {"aciklama": "Bakanlıkça atanan yetkilendirilmiş bağımsız danışmanlık firmasının hazırladığı Bağımsız Değerlendirme Raporu çağrı takviminde öngörülen sürede Program Portalı'na yüklenmeli"}, "zorunlu": true, "bilesen": null,
+     "metin": "Bağımsız Değerlendirme Raporu süresinde yüklenmeli",
+     "alinti": "Değerlendirme faaliyetlerine devam edilebilmesi için Bakanlık tarafından atanan yetkilendirilmiş bağımsız danışmanlık firmasınca hazırlanacak Bağımsız Değerlendirme Raporu’nun çağrı takviminde öngörülen süre içerisinde elektronik ortamda Program Portalı’na yüklenmesi gerekmektedir."},
+    {"alan": "diger", "kural": {"aciklama": "Proje konusuyla doğrudan ilgili en az lisans düzeyinde proje personeli bulunmalı; yoksa hakem ataması yapılmadan ret önerisi oluşturulur"}, "zorunlu": true, "bilesen": null,
+     "metin": "Proje konusuyla ilgili en az lisans düzeyinde personel",
+     "alinti": "proje konusu ile doğrudan ilgili en az lisans düzeyinde personeli bulunmayan projeler hakem ataması yapılmadan ret önerisi oluşturulur"}
+  ],
+  "belirsizlikler": [
+    "Destek oranı metinde tutarsız: Destek Kapsamı bölümünde KOBİ %75 / büyük %50 (en fazla 20 M TL / 40 M TL), SSS bölümünde KOBİ %75 / büyük %60 ve %10 genel gider. Kriter olmadığı için kodlanmadı.",
+    "Minimum THS (TRL) şartı yok (SSS: 'Minimum THS şartı bulunmamaktadır'), bu yüzden trl kriteri yazılmadı.",
+    "Öncelikli Ürün Listesi (GTİP) ve çağrı konuları metinde yok; faaliyet/nace olarak kodlanamadı. Programın orta-yüksek ve yüksek teknoloji sektörlerine odaklandığı belirtiliyor ama sektör listesi verilmemiş.",
+    "KOBİ/büyük ölçek ayrımı yalnız oranı etkiliyor; başvuru için ölçek şartı yok."
+  ]
+}

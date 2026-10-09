@@ -1,0 +1,24 @@
+{
+  "tesvik_id": 168,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ olmak", "alinti": "KOBİ olmak; Krediler TL işletme kredisi olarak, ihracat taahhütlü kullandırılır"},
+    {"alan": "hedef_grup", "kural": {"in": ["ihracatci"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Net ihracatçı KOBİ olmak", "alinti": "Net İhracatçı* KOBİ’lerin faaliyetlerinin desteklenmesi amaçlanmaktadır"},
+    {"alan": "diger", "kural": {"aciklama": "Net ihracatçı: son 3 mali dönemdeki ya da son mali yıldaki ihracat toplamının ithalat toplamına oranı %110"}, "zorunlu": true, "bilesen": null,
+     "metin": "Net ihracatçı tanımı: ihracat/ithalat oranı %110", "alinti": "Son 3 mali dönemdeki ya da son mali yıldaki ihracatlarının toplamının ithalatlarının toplamına oranı %110 olan firmaları ifade etmektedir."},
+    {"alan": "diger", "kural": {"aciklama": "Asgari C seviyesinde aktif Greendeks skoruna sahip olmak"}, "zorunlu": true, "bilesen": null,
+     "metin": "Asgari C seviyesinde aktif Greendeks skoru", "alinti": "Asgari C seviyesinde aktif Greendeks skoruna sahip"},
+    {"alan": "diger", "kural": {"aciklama": "Krediler ihracat taahhütlü olarak kullandırılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "İhracat taahhüdü verilmeli", "alinti": "Krediler ihracat taahhütlü olarak kullandırılacaktır."},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Ziraat Bankası TL işletme kredisi kullanımı", "alinti": "Krediler TL işletme kredisi olarak, ihracat taahhütlü kullandırılır"}
+  ],
+  "belirsizlikler": [
+    "Net ihracatçı oranı için '%110' ifadesi 'oranı %110 olan' diye yazılmış; asgari mi tam eşitlik mi olduğu açık değil, asgari kabul edildi (ihracat/ithalat >= 1,10).",
+    "'Aktif Greendeks skoru' belgesi şemada karşılığı olmadığı için 'diger' ile kodlandı (elle).",
+    "Ciro sınırı, il, NACE, şirket türü, oda/borsa üyeliği şartı metinde yok. Kredi yalnız Ziraat Bankası üzerinden."
+  ]
+}

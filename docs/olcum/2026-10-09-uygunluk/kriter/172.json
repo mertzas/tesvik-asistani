@@ -1,0 +1,19 @@
+{
+  "tesvik_id": 172,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Dijital kanaldan tahsis yöntemiyle kullandırılan banka kredisi", "alinti": "Kredi Verenlerce dijital kanallardan tahsis yöntemiyle yararlanıcılara kullandırılacak krediler için kefalet desteği sağlanması amaçlanmaktadır."},
+    {"alan": "diger", "kural": {"aciklama": "Kredi yalnız Akbank üzerinden dijital kanallardan kullandırılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi veren banka yalnız Akbank", "alinti": "Kredi veren bankalar: Akbank"},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet yalnız kredi verenlerce kullandırılacak yeni ve ilave krediler için talep edilebilir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız yeni ve ilave krediler", "alinti": "Kredi Verenler tarafından kullandırılacak yeni ve ilave krediler için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir."},
+    {"alan": "diger", "kural": {"aciklama": "Krediler yararlanıcıların faaliyet konuları dışında döviz veya kıymetli maden alımında ya da refinansman amacıyla kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Döviz/kıymetli maden (faaliyet dışı) ve refinansman amaçlı kullanım yasak", "alinti": "Program kapsamında kullandırılan krediler, yararlanıcıların faaliyet konuları dışında döviz veya kıymetli maden alımında ya da refinansman amacıyla kullanılamaz."}
+  ],
+  "belirsizlikler": [
+    "Kaynakta yararlanıcı ölçeği (KOBİ / KOBİ dışı) açıkça yazılı değil; ölçek kriteri eklenmedi. Yalnız 'Şahıs firmaları için' (2,2 milyon TL) ve 'Tüzel firmalar için' (5 milyon TL) ayrımı var, her iki tür de uygun.",
+    "Ciro, il, NACE, oda/borsa üyeliği, hedef grup şartı metinde yok."
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "tesvik_id": 81,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ olmak (paketten yalnız KOBİ'ler yararlanır)",
+     "alinti": "kredi faiz desteği almaya hak kazanan KOBİ’ler yararlanabilecektir."},
+    {"alan": "diger", "kural": {"aciklama": "KOSGEB Kapasite Geliştirme Destek Programı başvurusunun KOSGEB tarafından onaylanmış ve program kapsamında kredi faiz desteğine hak kazanılmış olması"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB Kapasite Geliştirme Destek Programı onayı ve kredi faiz desteğine hak kazanma",
+     "alinti": "Paketten, Kapasite Geliştirme Destek Programı başvurusu KOSGEB tarafından onaylanan ve anılan program kapsamında kredi faiz desteği almaya hak kazanan KOBİ’ler yararlanabilecektir."},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi, KOSGEB ile protokol yapan bankalardan kullanılır",
+     "alinti": "Paket kapsamındaki krediler, KOSGEB ile protokol yapan bankalar tarafından kullandırılacaktır."},
+    {"alan": "diger", "kural": {"aciklama": "Krediler Türk Lirası cinsinden kullandırılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Krediler yalnız TL cinsinden",
+     "alinti": "Paket kapsamındaki krediler Türk Lirası cinsinden kullandırılacaktır."},
+    {"alan": "diger", "kural": {"aciklama": "Tüm harcamalar sözleşme veya fatura ile belgelendirilmelidir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Harcamaların sözleşme veya faturayla belgelenmesi",
+     "alinti": "Tüm harcamalar sözleşme veya fatura ile belgelendirilecektir."},
+    {"alan": "diger", "kural": {"aciklama": "Arsa ve bina yatırımlarına kefalet sağlanmaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Arsa ve bina yatırımı kefalet kapsamı dışında",
+     "alinti": "Paket kapsamında arsa ve bina yatırımlarına kefalet sağlanmayacaktır"}
+  ],
+  "belirsizlikler": [
+    "Metinde şirket türü (şahıs/tüzel), ciro sınırı, oda/borsa üyeliği, NACE/sektör, il, kadın/genç gibi hedef grup şartı belirtilmemiş; yalnız KOBİ ve KOSGEB program onayı şartı var.",
+    "KOBİ sınıfı (mikro/küçük/orta) metinde ayrıca tanımlanmamış; olcek değeri 'KOBİ' ifadesinden türetildi.",
+    "Kapasite Geliştirme Destek Programı'nın kendi başvuru şartları bu kaynakta yok; yalnız onaylanmış olması şart."
+  ]
+}

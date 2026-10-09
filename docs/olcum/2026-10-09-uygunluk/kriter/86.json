@@ -1,0 +1,27 @@
+{
+  "tesvik_id": 86,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "belge", "kural": {"gerekli": "tobb_uyeligi"}, "zorunlu": true, "bilesen": null,
+     "metin": "TOBB üyesi olmak (ticaret, sanayi, deniz ticaret odası veya ticaret borsası üyeliği)",
+     "alinti": "TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir."},
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Kefalet limit tablosunda yararlanıcı olarak yalnız KOBİ listelenmiş",
+     "alinti": "KOBİ 2.400.000 TL 3.000.000 TL"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Banka kredisi başvurusu; banka kefalet talebini KGF'ye iletir",
+     "alinti": "KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir"},
+    {"alan": "diger", "kural": {"aciklama": "Kredi döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredinin kullanım amacı kısıtı (döviz, kıymetli maden, mücevherat, refinansman olamaz)",
+     "alinti": "Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz"},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet talepleri yalnız TL para cinsinden yapılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız TL cinsinden kefalet talebi",
+     "alinti": "Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."}
+  ],
+  "belirsizlikler": [
+    "Şirket türü, ciro sınırı, NACE/sektör, il ve hedef grup şartı metinde yok.",
+    "KOBİ şartı kefalet limit tablosundaki 'Yararlanıcı: KOBİ' satırından çıkarıldı; 'Özel Şartlar' bölümünde açıkça 'yalnız KOBİ' yazmıyor.",
+    "Esnaf odası üyeliğinin TOBB üyeliği sayılıp sayılmayacağı belirtilmemiş; metin yalnız ticaret, sanayi, deniz ticaret odası ve ticaret borsasını sayıyor."
+  ]
+}

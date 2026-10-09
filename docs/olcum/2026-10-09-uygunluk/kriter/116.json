@@ -1,0 +1,21 @@
+{
+  "tesvik_id": 116,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["kooperatif"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Kooperatif ya da kooperatif birliği tüzel kişisi olmak",
+     "alinti": "Kooperatif ya da kooperatif birliği tüzel kişisi olmak: tarım satış kooperatifleri birlikleri, ecza üretim temin ve dağıtım kooperatifleri, kadın girişimi üretim ve işletme kooperatifleri birlikleri, üretim ve pazarlama kooperatifleri, küçük sanat kooperatifleri"},
+    {"alan": "diger", "kural": {"aciklama": "Kooperatif türü şu listeden biri olmalı: tarım satış kooperatifleri birlikleri, ecza üretim temin ve dağıtım kooperatifleri, kadın girişimi üretim ve işletme kooperatifleri birlikleri, üretim ve pazarlama kooperatifleri, küçük sanat kooperatifleri"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kooperatif türü listedeki beş türden biri olmalı",
+     "alinti": "tarım satış kooperatifleri birlikleri, ecza üretim temin ve dağıtım kooperatifleri, kadın girişimi üretim ve işletme kooperatifleri birlikleri, üretim ve pazarlama kooperatifleri, küçük sanat kooperatifleri"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi Verenlerden (Ziraat Bankası, Vakıfbank, Halkbank) ödemesiz dönemli kredi kullanılması",
+     "alinti": "Kredi veren banka(lar): Ziraat Bankası, Vakıfbank, Halkbank"}
+  ],
+  "belirsizlikler": [
+    "Metinde KOBİ ölçeği, ciro, çalışan sayısı, oda/borsa üyeliği, sektör/NACE veya il kısıtı belirtilmemiş; yararlanıcı yalnızca kooperatif türüyle tanımlı.",
+    "Kefalet limit tablosu (640 M / 80 M / 20 M / 800 bin TL) ve başvuru ücretleri hangi kooperatif türüne ait olduğu bakımından satırlar kaymış; tür-limit eşleşmesi kesin okunamıyor.",
+    "KGF sayfasında son başvuru/kullandırım tarihi yok; paketin hâlâ kullandırımda olduğu bankadan teyit edilmeli."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "tesvik_id": 3,
+  "basvuru_bicimi": "faiz_destegi",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "nace", "kural": {"in_prefix": ["C"]}, "zorunlu": true, "bilesen": null,
+     "metin": "NACE koduna göre C-İmalat sektöründe faaliyet göstermek",
+     "alinti": "NACE koduna göre C-İmalat sektöründe faaliyet gösteriyor olması,"},
+    {"alan": "belge", "kural": {"gerekli": "kosgeb_kaydi"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB veri tabanında kayıtlı, aktif ve işletme beyanı güncel",
+     "alinti": "KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması"},
+    {"alan": "olcek", "kural": {"in": ["kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "İşletme sınıfı küçük veya orta (mikro yararlanamaz)",
+     "alinti": "İşletme sınıfının küçük veya orta büyüklükte olması,"},
+    {"alan": "belge", "kural": {"gerekli": "dijital_olgunluk_raporu"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yetkili danışmandan onaylı dijital dönüşüm/olgunluk değerlendirme raporu (TÜSSİDE-DDX veya MEXT/İHKİB-SIRI)",
+     "alinti": "Onaylı dijital dönüşüm/olgunluk değerlendirme raporu (TÜSSİDE-DDX veya SIRI formatı)"},
+    {"alan": "diger", "kural": {"aciklama": "Son mali yıl Öz Kaynaklar Toplamı pozitif olmalı ve son 3 mali yıl Faaliyet Karından en az biri pozitif olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Mali şart: öz kaynak pozitif, son 3 yıldan en az biri faaliyet karlı",
+     "alinti": "Son mali yıl öz kaynakları pozitif, son 3 yıldan en az biri kârlı"},
+    {"alan": "diger", "kural": {"aciklama": "EBRD 'Uygun Bulunmayan Sektör ve Faaliyetler Tablosu'nda yer alan sektörlerde faaliyet gösterenler başvuramaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "EBRD uygun bulunmayan sektörlerde olmamak",
+     "alinti": "Uygun Bulunmayan Sektör ve Faaliyetler Tablosu"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kurul onayından sonra protokollü bankalardan kredi kullanmak (destek kredi faizine verilir)",
+     "alinti": "protokol imzalanan bankalara kredi başvurusunu yapar"}
+  ],
+  "belirsizlikler": [
+    "Kaynakta 'Uygun Bulunmayan Sektör ve Faaliyetler Tablosu' içeriği yok; EBRD dışlaması makine tarafından değerlendirilemez (elle).",
+    "Dijital dönüşüm raporu 'dijital_olgunluk_raporu' belgesine eşlendi; faaliyet karı/öz kaynak şartı tek diger kriterde birleştirildi."
+  ]
+}

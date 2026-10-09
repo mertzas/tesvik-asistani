@@ -1,0 +1,23 @@
+{
+  "tesvik_id": 152,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ niteliklerine sahip olmak", "alinti": "KOBİ niteliklerine sahip olması"},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet verilecek transfer ödemesine ilişkin projenin TÜBİTAK tarafından desteklenmeye hak kazanmış olması"}, "zorunlu": true, "bilesen": null,
+     "metin": "Projenin TÜBİTAK tarafından desteklenmeye hak kazanmış olması", "alinti": "KGF’nin kefalet vereceği transfer ödemesine ilişkin projesinin TÜBİTAK tarafından desteklenmeye hak kazanmış olması"},
+    {"alan": "diger", "kural": {"aciklama": "Daha önce TÜBİTAK tarafından desteklenen herhangi bir projesinde teminat mektubunun nakde çevrilmemiş olması"}, "zorunlu": true, "bilesen": null,
+     "metin": "Önceki TÜBİTAK projelerinde teminat mektubu nakde çevrilmemiş olmalı", "alinti": "Daha önce TÜBİTAK tarafından desteklenen herhangi bir projesinde teminat mektubunun nakde çevrilmemiş olması"},
+    {"alan": "diger", "kural": {"aciklama": "İflas, fesih, konkordato, iflasın ertelenmesi sürecinde olmamak"}, "zorunlu": true, "bilesen": null,
+     "metin": "İflas, fesih, konkordato, iflasın ertelenmesi sürecinde olmamak", "alinti": "İflas, fesih, konkordato, iflasın ertelenmesi sürecinde olmaması"},
+    {"alan": "diger", "kural": {"aciklama": "Başvuru sırasında kamu kurum ve kuruluşları ile bankalar veya üçüncü kişiler tarafından icrai takibinin bulunmaması"}, "zorunlu": true, "bilesen": null,
+     "metin": "Başvuru sırasında icrai takip bulunmamalı", "alinti": "Başvuru sırasında kamu kurum ve kuruluşları ile bankalar veya üçüncü kişiler tarafından icrai takibinin bulunmaması"},
+    {"alan": "vergi_sgk_borcu_yok", "kural": {"esit": true}, "zorunlu": true, "bilesen": null,
+     "metin": "Başvuru sırasında vadesi geçmiş vergi ve SGK borcu olmamak", "alinti": "Başvuru sırasında vadesi geçmiş vergi ve SGK borcunun olmaması"}
+  ],
+  "belirsizlikler": [
+    "Metin proje sahibi işletmeyi 'Türkiye’de yerleşik katma değer yaratan gerçek ya da tüzel kişi' olarak tanımlıyor; bu ürün açıklaması, ayrı bir başvuru şartı olarak listelenmediği için kodlanmadı.",
+    "Şirket türü, NACE, il, ciro, işletme yaşı, oda/borsa üyeliği gibi şartlar metinde yok. TÜBİTAK destek kararı bulunması ön koşul olduğundan program yalnız TÜBİTAK destekli proje sahiplerine uygulanabilir."
+  ]
+}

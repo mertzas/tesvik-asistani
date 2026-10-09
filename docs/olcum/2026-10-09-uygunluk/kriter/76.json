@@ -1,0 +1,34 @@
+{
+  "tesvik_id": 76,
+  "basvuru_bicimi": "uretim_odeme",
+  "bilesenler": ["Buzağı/malak desteği", "Kuzu/oğlak desteği"],
+  "kriterler": [
+    {"alan": "urun", "kural": {"in": ["buzagi", "malak"]}, "zorunlu": true, "bilesen": "Buzağı/malak desteği",
+     "metin": "Desteklenen hayvan buzağı/malak olmalı",
+     "alinti": "Buzağı/malak: TÜRKVET'te kayıtlı ve destekleme yılında Türkiye'de doğmuş olması"},
+    {"alan": "diger", "kural": {"aciklama": "Buzağı/malak TÜRKVET'te kayıtlı olmalı ve destekleme yılında Türkiye'de doğmuş olmalı"}, "zorunlu": true, "bilesen": "Buzağı/malak desteği",
+     "metin": "TÜRKVET kaydı ve destekleme yılında Türkiye'de doğum",
+     "alinti": "TÜRKVET'te kayıtlı ve destekleme yılında Türkiye'de doğmuş olması"},
+    {"alan": "diger", "kural": {"aciklama": "Buzağı/malak TÜRKVET kayıtlarına göre en az 4 ay (120 gün) yaşamış olmalı"}, "zorunlu": true, "bilesen": "Buzağı/malak desteği",
+     "metin": "En az 120 gün yaşam süresi",
+     "alinti": "TÜRKVET kayıtlarına göre en az 4 ay (120 gün) yaşamış olması"},
+    {"alan": "diger", "kural": {"aciklama": "Programlı aşılar (dişilerde brusella ve şap, erkeklerde şap) yapılmış ve VETBİS'e kaydedilmiş olmalı"}, "zorunlu": true, "bilesen": "Buzağı/malak desteği",
+     "metin": "Programlı aşıların yapılması ve VETBİS kaydı",
+     "alinti": "programlı aşıları (dişilerde brusella ve şap, erkeklerde şap) yapılmış ve VETBİS'e kaydedilmiş olması"},
+    {"alan": "urun", "kural": {"in": ["kuzu", "oglak"]}, "zorunlu": true, "bilesen": "Kuzu/oğlak desteği",
+     "metin": "Desteklenen hayvan kuzu/oğlak olmalı",
+     "alinti": "Kuzu/oğlak: destekleme yılında doğmuş, küpelenmiş, TÜRKVET'e kayıtlı"},
+    {"alan": "diger", "kural": {"aciklama": "Kuzu/oğlak destekleme yılında doğmuş, küpelenmiş, TÜRKVET'e kayıtlı ve doğduğu işletmede en az 120 gün yaşamış olmalı"}, "zorunlu": true, "bilesen": "Kuzu/oğlak desteği",
+     "metin": "Doğum yılı, küpe, TÜRKVET kaydı ve doğduğu işletmede en az 120 gün yaşam",
+     "alinti": "destekleme yılında doğmuş, küpelenmiş, TÜRKVET'e kayıtlı ve doğduğu işletmede en az 120 gün yaşamış olması"},
+    {"alan": "diger", "kural": {"aciklama": "Yetiştirici damızlık koyun keçi yetiştiricileri birliğine üye olmalı (il birliği olmayan illerde aranmaz)"}, "zorunlu": true, "bilesen": "Kuzu/oğlak desteği",
+     "metin": "Damızlık koyun keçi yetiştiricileri birliği üyeliği",
+     "alinti": "yetiştiricinin damızlık koyun keçi yetiştiricileri birliğine üye olması (il birliği olmayan illerde aranmaz)"}
+  ],
+  "belirsizlikler": [
+    "Birim tutarlar 8760 sayılı CB Kararı ekinde; kaynakta teyit edilemedi (taranmış PDF).",
+    "Kaynak yalnız buzağı/malak ve kuzu/oğlak şartlarını veriyor; ÇKS/işletme tescili, hayvan sayısı alt/üst sınırı, şirket türü ve ölçek şartı kaynakta yazmıyor.",
+    "Veritabanı detay metni kanatlı ve arıcılığı da sayıyor ancak bu kalemlere ilişkin başvuru şartı kaynakta yok.",
+    "Canlı sayfa yalnız talimat duyurusu başlığı içeriyor; talimat metni kaynakta bulunmuyor."
+  ]
+}

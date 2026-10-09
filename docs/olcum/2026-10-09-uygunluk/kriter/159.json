@@ -1,0 +1,22 @@
+{
+  "tesvik_id": 159,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta", "buyuk"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ ve KOBİ dışı firmalar yararlanabilir (ölçek kısıtı yok)", "alinti": "KOBİ ve KOBİ dışı firmaların finansmanı amaçlanmaktadır"},
+    {"alan": "hedef_grup", "kural": {"in": ["ihracatci"]}, "zorunlu": true, "bilesen": null,
+     "metin": "İhracatçı veya döviz kazandırıcı hizmetler sektöründe faaliyet göstermek", "alinti": "İhracatçı veya döviz kazandırıcı hizmetler sektörlerinde faaliyet gösteren KOBİ ve KOBİ dışı firmaların finansmanı amaçlanmaktadır"},
+    {"alan": "diger", "kural": {"aciklama": "Kredi ihracat taahhütlü kullandırılır (turizm firmalarında bu koşul aranmaz)"}, "zorunlu": true, "bilesen": null,
+     "metin": "İhracatçı/döviz kazandırıcı firmalara kredi, taahhütlü olması şartıyla kefalet alır", "alinti": "Kredi Veren kaynaklı ihracatçılara veya döviz kazandırıcı faaliyeti bulunan firmalara sağlanan kredilere bu kredilerin taahhütlü olması şartıyla kefalet sağlanır."},
+    {"alan": "diger", "kural": {"aciklama": "Yalnızca TL kredi kullandırılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Paket kapsamında yalnızca TL kredi kullandırımı yapılır", "alinti": "Paket kapsamında yalnızca TL kredi kullandırımı yapılabilecektir"},
+    {"alan": "diger", "kural": {"aciklama": "İşletme kredisinin en fazla %10'u işletme harcamalarında nakit olarak kullandırılabilir"}, "zorunlu": false, "bilesen": null,
+     "metin": "Nakit kullanım üst sınırı %10", "alinti": "Yararlanıcıya tahsis edilen işletme kredisinin azami %10’u işletme harcamalarında kullanılmak üzere nakit olarak verilebilecektir."}
+  ],
+  "belirsizlikler": [
+    "'Döviz kazandırıcı hizmetler sektörleri' için NACE listesi veya tanım metinde yok; hedef_grup 'ihracatci' ile yaklaşıklandı, döviz kazandırıcı hizmet firmaları (ör. turizm) için elle kontrol gerekir.",
+    "Kaynakta alt bileşen ayrımı (kredi kartı, KMH, işletme kredisi, gayrinakdi) var ama başvuru şartı farkı yok; kodlanmadı.",
+    "Ciro, il, şirket türü, oda/borsa üyeliği, hedef grup (kadın/genç) şartı metinde yok."
+  ]
+}

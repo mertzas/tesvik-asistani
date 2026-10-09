@@ -1,0 +1,20 @@
+{
+  "tesvik_id": 154,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ tanımına uyan işletme olmak", "alinti": "KOBİ tanımına uyan işletme olmak"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Programa dahil bankalardan biri üzerinden kredi başvurusu yapmak", "alinti": "Programa dahil 15 bankadan biri üzerinden başvuru yapmak"},
+    {"alan": "diger", "kural": {"aciklama": "Kredi döviz, altın ve mücevherat finansmanında kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Talep edilen kredinin döviz/altın/mücevher finansmanı amaçlı olmaması", "alinti": "Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz."},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet yalnız yeni ve ilave kredi kullandırımları için talep edilebilir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız yeni ve ilave krediler kapsamdadır", "alinti": "sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir"}
+  ],
+  "belirsizlikler": [
+    "Kefalet oranı kredi tutarına göre değişiyor ancak metinde oran tablosu boş; kodlanmadı.",
+    "'Stratejik önemi haiz sektörler ve yararlanıcı gruplarına' daha uzun vade tanınıyor ama bunların hangileri olduğu metinde yok; bu bir erişim şartı değil vade farkı olduğundan kodlanmadı.",
+    "KOBİ dışı, il, NACE, ciro, şirket türü, oda/borsa üyeliği şartı metinde yok. 'İşletme faaliyet/vergi levhası' belge olarak isteniyor, şemada karşılığı olmadığından kodlanmadı."
+  ]
+}

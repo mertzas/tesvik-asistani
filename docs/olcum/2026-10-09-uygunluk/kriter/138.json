@@ -1,0 +1,32 @@
+{
+  "tesvik_id": 138,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "kurucu_yasi", "kural": {"max": 29}, "zorunlu": true, "bilesen": null,
+     "metin": "Gerçek kişi işletmede sahibi 30 yaş altı olmak (30 yaş altı = en çok 29)",
+     "alinti": "Sahibi 30 yaş altı olan gerçek kişi işletmeler,"},
+    {"alan": "diger", "kural": {"aciklama": "Şirketlerde: ortaklık paylarının asgari %50'si 30 yaş altı genç girişimcilere ait olmalı VEYA temsil yetkisine sahip 30 yaş altı genç girişimcilerin asgari %25 ortaklığa sahip olduğu şirket olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Şirketler için ortaklık payı ve yaş şartı (üç yararlanıcı tanımından biri yeterli)",
+     "alinti": "Ortaklık paylarının asgari %50’si 30 yaş altı genç girişimcilere ait şirketler,"},
+    {"alan": "diger", "kural": {"aciklama": "Temsil yetkisine sahip 30 yaş altı genç girişimcilerin asgari %25 ortaklığa sahip olduğu şirket (alternatif yararlanıcı tanımı)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Temsil yetkili 30 yaş altı girişimcinin asgari %25 ortaklığı",
+     "alinti": "Temsil yetkisine sahip 30 yaş altı genç girişimcilerin asgari %25 ortaklığa sahip olduğu şirketler,"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi Halkbank'tan kullanılır",
+     "alinti": "Kredi veren banka(lar): Halkbank"},
+    {"alan": "diger", "kural": {"aciklama": "Kredi döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Döviz, altın, mücevherat ve refinansman amaçlı kullanılamaz",
+     "alinti": "Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz."},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet talepleri yalnızca TL para cinsinden yapılabilir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnızca TL kredi",
+     "alinti": "Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."}
+  ],
+  "belirsizlikler": [
+    "Yararlanıcı üç alternatif tanımla verilmiş (sahibi <30 gerçek kişi; ortaklık payının en az %50'si <30 olan şirket; temsil yetkili <30 girişimcinin en az %25 ortak olduğu şirket). kurucu_yasi.max=29 yalnızca ilk ve ikinci tanımı yaklaşık karşılıyor; üçüncü tanımda %25 ortak yaş şartını sağlıyorsa da başvuru yapılabilir, bu yüzden makine kuralı bu durumda fazla sıkı kalabilir. Elle değerlendirme gerekir.",
+    "'30 yaş altı' en çok 29 yaş olarak kodlandı (yorum: 30 yaşını doldurmamış).",
+    "Kefalet başvuru ücreti 7.500 TL, kefalet üst limiti 800 bin TL, oranı %80: başvuru şartı değil, kriter yazılmadı.",
+    "Metinde KOBİ ölçeği, ciro, sektör/NACE, il, oda/borsa üyeliği kısıtı yok; 'şirket' türü (limited/anonim) ayrımı yapılmamış.",
+    "KGF sayfasında son başvuru/kullandırım tarihi yok."
+  ]
+}

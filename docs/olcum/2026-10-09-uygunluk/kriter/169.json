@@ -1,0 +1,23 @@
+{
+  "tesvik_id": 169,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "T.C. Kanunlarına göre kurulmuş KOBİ olmak", "alinti": "T.C. Kanunlarına göre kurulmuş KOBİ tanımını haiz işletmeler"},
+    {"alan": "hedef_grup", "kural": {"in": ["kadin", "genc"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Kadın veya genç (18-35 yaş) girişimci olmak; ikisinden biri yeterli", "alinti": "Kadın ve Genç Girişimcilerin ekonomik hayata daha etkin katılımlarını desteklemek amaçlanmaktadır."},
+    {"alan": "diger", "kural": {"aciklama": "Genç girişimci: 18-35 yaş arası girişimciye ait şahıs firması veya ortaklarından 18-35 yaş arası olanların hisse toplamı %50 ve üzeri olan tüzel firma (kadın girişimci koşuluna alternatif)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Genç girişimci tanımı: 18-35 yaş, tüzel firmada hisse toplamı %50 ve üzeri", "alinti": "Genç Girişimciler; 18-35 yaş arasındaki Genç Girişimcilere ait şahıs firmaları ile Firma ortaklarından 18-35 yaş arasındaki Genç Girişimci olanların hissesi toplamları %50 ve üzeri olan tüzel firmalar,"},
+    {"alan": "diger", "kural": {"aciklama": "Kadın girişimci: kadın girişimciye ait şahıs firması veya ortaklarından kadın olanların hisse toplamı %50 ve üzeri olan tüzel firma (genç girişimci koşuluna alternatif)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kadın girişimci tanımı: tüzel firmada kadın hisse toplamı %50 ve üzeri", "alinti": "Kadın Girişimciler; Kadın girişimcilere ait şahıs firmaları ile Firma ortaklarından kadın olanların hissesi toplamları %50 ve üzeri olan tüzel firmalar,"},
+    {"alan": "diger", "kural": {"aciklama": "Krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi döviz/altın/mücevherat finansmanı ve refinansman için kullanılamaz", "alinti": "Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz."},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet talepleri yalnızca TL cinsinden yapılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız TL", "alinti": "Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."}
+  ],
+  "belirsizlikler": [
+    "Kadın ve genç koşulları alternatif görünüyor (iki ayrı girişimci türü); makine hedef_grup'ta ikisini 'in' ile aldı, 18-35 yaş ve %50 hisse ayrıntısı 'diger' (elle).",
+    "Ciro, il, NACE, oda/borsa üyeliği şartı metinde yok. Kredi yalnız Ziraat Bankası üzerinden."
+  ]
+}

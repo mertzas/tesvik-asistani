@@ -1,0 +1,19 @@
+{
+  "tesvik_id": 171,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta", "buyuk"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ ve KOBİ dışı işletmeler yararlanabilir (limit ve ücret ayrımı var)", "alinti": "KOBİ 10.000 / KOBİ dışı 20.000 TL"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Ziraat Katılım Bankası katılım finansmanı kullanımı", "alinti": "Katılım Bankacılığı ilke ve esaslarına uygun finansman modeline kefalet sağlanması amaçlanmaktadır."},
+    {"alan": "diger", "kural": {"aciklama": "Krediler yararlanıcıların faaliyet alanı dışında döviz, kıymetli maden ve mücevherat finansmanında kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Döviz, kıymetli maden ve mücevherat finansmanı (faaliyet alanı dışında) yasak", "alinti": "Bu paket kapsamındaki krediler; yararlanıcıların faaliyet alanı dışında döviz, kıymetli maden ve mücevherat finansmanında kullanılamaz."},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet talepleri yalnızca TL cinsinden yapılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız TL", "alinti": "Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."}
+  ],
+  "belirsizlikler": [
+    "KOBİ ve KOBİ dışı yararlanıcı ayrımı yalnız limit ve başvuru ücretinden anlaşılıyor (4 milyon / 6 milyon TL); açık 'yararlanıcı şartı' cümlesi yok, olcek tüm ölçekler olarak kodlandı.",
+    "Ciro, il, NACE, şirket türü, oda/borsa üyeliği, hedef grup şartı metinde yok. Kredi yalnız Ziraat Katılım Bankası üzerinden."
+  ]
+}

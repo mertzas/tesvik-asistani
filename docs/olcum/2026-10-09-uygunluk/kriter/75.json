@@ -1,0 +1,34 @@
+{
+  "tesvik_id": 75,
+  "basvuru_bicimi": "proje",
+  "bilesenler": ["Müşteri Kuruluş", "Yürütücü Kuruluş"],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["limited", "anonim"]}, "zorunlu": true, "bilesen": "Müşteri Kuruluş",
+     "metin": "Müşteri Kuruluş KOBİ veya büyük ölçekli sermaye şirketi olmalı",
+     "alinti": "Müşteri Kuruluş (KOBİ veya BÜYÜK ölçekli tüm sermaye şirketleri)"},
+    {"alan": "diger", "kural": {"aciklama": "Müşteri Kuruluş firma düzeyinde katma değer yaratan, Türkiye'de yerleşik olmalı ve proje sonuçlarını Türkiye'de uygulamayı taahhüt etmeli"}, "zorunlu": true, "bilesen": "Müşteri Kuruluş",
+     "metin": "Türkiye'de yerleşik ve proje sonuçlarını Türkiye'de uygulamayı taahhüt etmek",
+     "alinti": "firma düzeyinde katma değer yaratan, Türkiye’de yerleşik ve proje sonuçlarını Türkiye’de uygulamayı taahhüt eden sermaye şirketleri"},
+    {"alan": "sirket_turu", "kural": {"in": ["diger_tuzel"]}, "zorunlu": true, "bilesen": "Yürütücü Kuruluş",
+     "metin": "Yürütücü Kuruluş yükseköğretim kurumu, vakıf üniversitesi, eğitim ve araştırma hastanesi veya kamu araştırma merkez/enstitüsü olmalı",
+     "alinti": "Yükseköğretim Kanunu kapsamında yer alan yükseköğretim kurumları, vakıf üniversiteleri, eğitim ve araştırma hastaneleri ve ilgili mevzuatında Ar-Ge yapmakla görevlendirilmiş kamu araştırma merkez ve enstitüleri ortak proje başvurusunda bulunur"},
+    {"alan": "diger", "kural": {"aciklama": "Müşteri Kuruluş (sermaye şirketi) ve Yürütücü Kuruluş (üniversite, araştırma altyapısı, kamu araştırma merkez/enstitüsü) ortak başvuru yapar"}, "zorunlu": true, "bilesen": null,
+     "metin": "Müşteri + Yürütücü kuruluş ortak başvurusu (işbirliği şartı)",
+     "alinti": "Müşteri Kuruluş (KOBİ veya BÜYÜK ölçekli tüm sermaye şirketleri) ve Yürütücü Kuruluş (Üniversite, Araştırma Altyapısı, Kamu Araştırma Merkez ve Enstitüleri) ortak başvuru yapabilecektir."},
+    {"alan": "diger", "kural": {"aciklama": "TÜBİTAK'a proje öneri başvurusundan önce müşteri ve yürütücü kuruluş arasında TÜBİTAK'ın belirlediği asgari şartları içeren işbirliği sözleşmesi imzalanmış olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Başvuru öncesi imzalı işbirliği sözleşmesi",
+     "alinti": "proje öneri başvurusu yapılmadan önce müşteri ve yürütücü kuruluş arasında TÜBİTAK’ın belirlediği asgari şartları içeren işbirliği sözleşmesi imzalanır"},
+    {"alan": "diger", "kural": {"aciklama": "Programa ilk defa başvuran yürütücülere hakem değerlendirmesinde +5 ilave puan"}, "zorunlu": false, "bilesen": "Yürütücü Kuruluş",
+     "metin": "İlk kez başvuran yürütücüye +5 puan",
+     "alinti": "Programa ilk defa başvuru yapan yürütücülere, hakem değerlendirme sürecinde +5 ilave puan verilmesi uygulamasına geçilmiştir."},
+    {"alan": "diger", "kural": {"aciklama": "ARDEB 1001, 1003, 1005 ve 3501 programlarında tamamlanan bir projenin devamı niteliğindeki başvuruya +5 ek puan"}, "zorunlu": false, "bilesen": "Yürütücü Kuruluş",
+     "metin": "ARDEB projesinin devamı niteliğinde başvuruya +5 puan",
+     "alinti": "ARDEB 1001,1003,1005 ve 3501 programında tamamlanan bir projenin devamı niteliğinde bir başvuru yapılıyorsa +5 ek puan uygulaması devam etmektedir."}
+  ],
+  "belirsizlikler": [
+    "Yürütücü Kuruluş (üniversite, araştırma altyapısı, kamu araştırma kurumu) şemadaki sirket_turu değerlerine tam oturmuyor; 'diger_tuzel' kullanıldı.",
+    "Destek oranı, proje bütçesi ve proje süresi bu metinde yok (bütçe limitleri eke bağlı); kodlanmadı.",
+    "Müşteri Kuruluşun KOBİ/büyük ölçek ayrımı başvuru şartı değil; ölçek kriteri yazılmadı.",
+    "Başvurular sürekli açık (yıl boyu); dönem şartı yok."
+  ]
+}

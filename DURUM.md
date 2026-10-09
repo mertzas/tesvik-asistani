@@ -237,6 +237,12 @@ Son güncelleme: 2026-10-09 (resmi form şablonları + İKAS sihirbazı). Oturum
   programı proje önerisi sanıyor (kredi, prim teşviki, dekar desteği, E-TUYS, ön onaylı gider, hisse fonu farklı biçim).
   Öneri: programlara `basvuru_bicimi` alanı + biçime göre sihirbaz; oran seçeneklerinde hisse/faiz ayıklama; kapanmış
   dönem takvimde. Onay bekliyor.
+- **Gerçek uygunluk ölçümü** (2026-10-09, `docs/olcum/2026-10-09-uygunluk/RAPOR.md`): 77 programın resmî sayfası
+  indirildi, 8 Sonnet ajanı 759 kriter çıkardı (alıntıların hepsi kaynakta doğrulandı), 12 gerçek profil. İlk 10 önerinin
+  %16'sı resmî şarta göre uygun değil (E-İhracat şahsa 1. sırada, BMZ II il/NACE dışına, KOBİ-only paketler büyük
+  firmaya, organik sertifikasıza, ≤29 yaş kredisi 50 yaşa); şirketsiz sertifikalı girişimciye boş liste
+  (`uygunluk_engeli` KOSGEB/KGF'yi toptan kapatıyor). Neden: ölçek/şirket türü 30'ar programda zorunlu, kural 10-12'sinde.
+  Veri çelişkisi: KOSGEB 5 ve 9, KGF 142 ve 149. 2. aşama planı raporda, onay bekliyor.
 - **B2B API planı** (`docs/API_URUN_PLANI.md`, kod yok, onay bekliyor): durumsuz `/v1` uçları (eşleşme, uygunluk,
   hazırlık, çağrılar, program, e-ihracat, şablon taslak), API anahtarı + kapsam + kota + ölçüm, hedef müşteri sırası,
   kill criteria, 6 adımlı uygulama planı.

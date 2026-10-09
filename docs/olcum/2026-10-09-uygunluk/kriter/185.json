@@ -1,0 +1,36 @@
+{
+  "tesvik_id": 185,
+  "basvuru_bicimi": "bildirim_prim",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "calisan_niteligi", "kural": {"in": ["issiz_iskur"]}, "zorunlu": true, "bilesen": null,
+     "metin": "İşe alınan kişi son 6 aydır işsiz olmalı",
+     "alinti": "İşe alınan kişinin son 6 aydır işsiz olması"},
+    {"alan": "ilave_istihdam", "kural": {"esit": true}, "zorunlu": true, "bilesen": null,
+     "metin": "Kişi, işe alındığı tarihten önceki son 6 ayın ortalama sigortalı sayısına ilave olarak istihdam edilmeli",
+     "alinti": "Kişinin, işe alındığı tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına İLAVE olarak istihdam edilmesi"},
+    {"alan": "diger", "kural": {"aciklama": "Özel sektör işvereni olmak"}, "zorunlu": true, "bilesen": null,
+     "metin": "Özel sektör işvereni",
+     "alinti": "Özel sektör işvereni olmak"},
+    {"alan": "diger", "kural": {"aciklama": "Aylık prim ve hizmet belgelerinin yasal süresinde verilmesi ve primlerin yasal süresinde ödenmesi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Aylık prim ve hizmet belgesi ile prim ödemesi yasal sürede",
+     "alinti": "aylık prim ve hizmet belgelerinin yasal süresinde verilmesi ve primlerin ödenmesi"},
+    {"alan": "diger", "kural": {"aciklama": "Teşvik kapsamındaki işe alımlar 31.12.2026 tarihine kadar yapılmış olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "İşe alım tarihi en geç 31.12.2026",
+     "alinti": "Uygulama süresi: 31.12.2026 tarihine kadar işe alımlar"},
+    {"alan": "calisan_niteligi", "kural": {"in": ["kadin", "genc_18_29"]}, "zorunlu": false, "bilesen": null,
+     "metin": "18 yaş ve üzeri kadın veya 18-29 yaş erkek işe alınırsa destek süresi 24-54 ay (diğer erkekler 6-30 ay)",
+     "alinti": "18 yaş ve üzeri kadınlar 24–54 ay; 18-29 yaş erkekler 24–54 ay"},
+    {"alan": "calisan_niteligi", "kural": {"in": ["mesleki_belgeli"]}, "zorunlu": false, "bilesen": null,
+     "metin": "Çalışmakta iken 01.03.2011 sonrası mesleki yeterlilik belgesi alan/mesleki-teknik eğitimi tamamlayan/işgücü yetiştirme kursunu bitiren kişi için 12 ay",
+     "alinti": "çalışmakta iken 01.03.2011 sonrası mesleki yeterlilik belgesi alanlar / mesleki-teknik eğitimi tamamlayanlar / işgücü yetiştirme kurslarını bitirenler 12 ay"},
+    {"alan": "belge", "kural": {"gerekli": "iskur_kaydi"}, "zorunlu": false, "bilesen": null,
+     "metin": "Kişinin İŞKUR'a kayıtlı olması halinde destek süresine 6 ay eklenir",
+     "alinti": "Kişinin İŞKUR'a kayıtlı olması hâlinde süreye 6 ay eklenir"}
+  ],
+  "belirsizlikler": [
+    "Erkeklerin 29 yaş üstü grubu da (6-30 ay) kapsamda; bu yüzden kadın/genç niteliği zorunlu değil, süre uzatıcı olarak kodlandı.",
+    "Sayfada 'son 6 ay işsiz' tanımı (İŞKUR kaydı mı, sigortasızlık mı) belirtilmemiş; issiz_iskur değeri en yakın eşleme.",
+    "Destek süresi aralıklarının (24-54 ay) hangi ölçüte göre belirlendiği kaynakta yok; SGK genelgesiyle teyit edilmeli."
+  ]
+}

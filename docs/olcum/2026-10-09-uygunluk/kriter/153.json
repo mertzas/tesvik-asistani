@@ -1,0 +1,17 @@
+{
+  "tesvik_id": 153,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız KOBİ ölçekli firmalara kredi kullandırılır", "alinti": "TURYIB programı kapsamında sadece KOBİ ölçekli firmalara kredi kullandırımı yapılabilecektir."},
+    {"alan": "hedef_grup", "kural": {"in": ["genc"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Genç sahibi ve/veya yöneticisi bulunan KOBİ olmak (genç yaş aralığı metinde tanımlı değil)", "alinti": "Genç Sahibi ve/veya Yöneticisi Bulunan KOBİ’ler"},
+    {"alan": "diger", "kural": {"aciklama": "%49 ve üzerinde Türkiye Cumhuriyeti Devleti’ne ait kurumların ortaklığına sahip firmalara kredi kullandırılmaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kamu kurumlarının ortaklık payı %49 ve üzeri olan firmalar yararlanamaz", "alinti": "%49 ve üzerinde Türkiye Cumhuriyeti Devleti’ne ait olan kurumların ortaklığına sahip firmalara kredi kullandırılmayacaktır"}
+  ],
+  "belirsizlikler": [
+    "'Genç' için yaş aralığı bu sayfada tanımlanmamış; 'sahibi ve/veya yöneticisi' ifadesi nedeniyle genç olanın yönetici de olabileceği, ortak olması gerekmediği anlaşılıyor, hedef_grup alanı (kurucu/çoğunluk ortak) tam örtüşmeyebilir.",
+    "NACE, il, ciro, şirket türü, oda/borsa üyeliği şartı metinde yok. Kredi yalnız Şekerbank üzerinden kullandırılıyor (kodlanmadı)."
+  ]
+}

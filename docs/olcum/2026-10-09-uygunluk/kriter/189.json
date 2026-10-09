@@ -1,0 +1,33 @@
+{
+  "tesvik_id": 189,
+  "basvuru_bicimi": "diger",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["limited", "anonim", "kooperatif", "diger_tuzel"]}, "zorunlu": true, "bilesen": null,
+     "metin": "TTK md.124 şirketi (kollektif, komandit, anonim, limited) ya da ticari/sınai faaliyette bulunan kooperatif olmak; şahıs işletmesi kapsam dışı",
+     "alinti": "Şirket olmak: 6102 sayılı TTK md.124'teki şirketler (kollektif, komandit, anonim, limited) ya da ticari/sınai faaliyette bulunan kooperatif (Karar m.2); şahıs işletmesi kapsam dışı"},
+    {"alan": "diger", "kural": {"aciklama": "Bir takvim yılında en çok 5, toplamda en çok 20 pazar araştırması faaliyeti desteklenir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yıllık en çok 5, toplam en çok 20 faaliyet hakkı kalmış olmalı",
+     "alinti": "Bir takvim yılında en çok 5, toplamda en çok 20 pazar araştırması faaliyeti desteklenir"},
+    {"alan": "diger", "kural": {"aciklama": "Desteklenen giderler: pazar araştırmasına ilişkin ulaşım ve konaklama"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız pazar araştırması faaliyetine ilişkin ulaşım ve konaklama giderleri desteklenir",
+     "alinti": "Desteklenen giderler: pazar araştırmasına ilişkin ulaşım ve konaklama"},
+    {"alan": "diger", "kural": {"aciklama": "Faaliyete katılan kişi şirketin SGK'lı çalışanı olmalı (şirket ortağıysa ticaret sicili gazetesi ya da pay cetveli ile belgelenir)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Katılan personel için faaliyet ayına ait SGK bildirgesi (ortaksa ticaret sicili gazetesi ya da pay cetveli) sunulur",
+     "alinti": "Katılan personel için faaliyet ayına ait SGK bildirgesi (şirket ortağıysa ticaret sicili gazetesi ya da pay cetveli)"},
+    {"alan": "onceki_destek_yok", "kural": {"esit": true}, "zorunlu": true, "bilesen": null,
+     "metin": "TURQUALITY®/marka destek programı (m.17) kapsamında desteklenen şirketler destek süreleri boyunca m.6 desteğinden yararlandırılmaz",
+     "alinti": "şirketler/markalar destek süreleri boyunca 3 üncü, 4 üncü, 5 inci, 6 ncı, 7 nci maddeler ve 10 uncu maddenin üçüncü fıkrası ile 11 inci, 12 nci, 15 inci, 16 ncı, 18 inci ve 19 uncu maddelerde yer alan desteklerden yararlandırılmazlar"},
+    {"alan": "onceki_destek_yok", "kural": {"esit": true}, "zorunlu": true, "bilesen": null,
+     "metin": "m.18 (çok kanallı zincir mağaza desteği) kapsamında desteklenen şirketler destek süreleri boyunca m.6 desteğinden yararlandırılmaz",
+     "alinti": "Bu madde kapsamında desteklenen şirketler destek süreleri boyunca 4 üncü, 5 inci, 6 ncı maddeler ve 10 uncu maddenin üçüncü fıkrası ile 11 inci, 12 nci, 15 inci, 16 ncı, 17 nci ve 19 uncu maddelerde yer alan desteklerden yararlandırılmazlar"},
+    {"alan": "onceki_destek_yok", "kural": {"esit": true}, "zorunlu": true, "bilesen": null,
+     "metin": "Aynı harcama kalemi için bu Karar dışında başka bir mevzuat/program kapsamında destek alınmamış olmalı (aksi halde yanıltıcı bilgi sayılır ve müeyyide uygulanır)",
+     "alinti": "Aynı harcama kalemi için, yararlanıcıların bu Karar dışında başka bir mevzuat/program kapsamında destek aldığının tespiti halinde, bu durum yanıltıcı bilgi ve belge sunulması olarak değerlendirilir"}
+  ],
+  "belirsizlikler": [
+    "Bu programın kayıtlı şartlarında ihracatçı birliği üyeliği yazmıyor (başvuru 'Bakanlıkça görevlendirilen İhracatçı Birliği Genel Sekreterliği'ne' yapılıyor); üyelik şartı kodlanmadı, programın gerçek şartı doğrulanmalı.",
+    "Ön onay gerektirmiyor (çalışanın Türkiye'ye giriş tarihinden itibaren 3 ay içinde DYS üzerinden başvuru); basvuru_bicimi 'diger'.",
+    "Kollektif ve komandit şirket türleri şemada ayrı değer olmadığı için diger_tuzel ile kodlandı."
+  ]
+}

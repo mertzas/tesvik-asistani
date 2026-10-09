@@ -1,0 +1,27 @@
+{
+  "tesvik_id": 161,
+  "basvuru_bicimi": "uretim_odeme",
+  "bilesenler": ["Temel destek", "Fidan kullanım desteği"],
+  "kriterler": [
+    {"alan": "belge", "kural": {"gerekli": "cks_kaydi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Çiftçi Kayıt Sistemi'ne (ÇKS) kayıtlı olmak",
+     "alinti": "Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak"},
+    {"alan": "diger", "kural": {"aciklama": "Arazi/parsel bilgileri ÇKS'de güncel olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "ÇKS arazi/parsel bilgisinin güncelliği",
+     "alinti": "Arazi/parsel bilgilerinin ÇKS'de güncel olması"},
+    {"alan": "diger", "kural": {"aciklama": "İlgili üretim sezonunda dikim/ekim yapılmış olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Üretim sezonunda dikim/ekim yapılmış olması",
+     "alinti": "İlgili üretim sezonunda dikim/ekim yapılmış olması"},
+    {"alan": "urun", "kural": {"in": ["sebze", "meyve"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Sebze ve meyve üretimi",
+     "alinti": "Sebze ve meyve, tabloda 1. kategori"},
+    {"alan": "diger", "kural": {"aciklama": "Meyve bahçesi tesisinde standart veya sertifikalı fidan kullanılması"}, "zorunlu": true, "bilesen": "Fidan kullanım desteği",
+     "metin": "Fidan kullanımı (standart 620 TL/da, sertifikalı 1.550 TL/da)",
+     "alinti": "Meyve bahçesi tesisinde standart veya sertifikalı fidan kullanımına ayrıca fidan desteği ödenir"}
+  ],
+  "belirsizlikler": [
+    "Kaynak sebze ve meyveyi genel olarak sayıyor; hangi türlerin kapsandığı veya hariç tutulduğu yazmıyor.",
+    "Asgari arazi büyüklüğü, şirket türü ve ölçek şartı kaynakta yazmıyor.",
+    "Başvuru dönemi yıllık ilan ediliyor; canlı sayfa (BUGEM ana sayfası) şart içermiyor."
+  ]
+}

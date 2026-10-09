@@ -1,0 +1,24 @@
+{
+  "tesvik_id": 9,
+  "basvuru_bicimi": "faiz_destegi",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "belge", "kural": {"gerekli": "kosgeb_kaydi"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB veri tabanında kayıtlı, aktif ve işletme beyanı güncel",
+     "alinti": "KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması"},
+    {"alan": "diger", "kural": {"aciklama": "Şu dört koşuldan en az birini sağlamak: (1) hızlı büyüyen işletmelerde orta yüksek/yüksek teknoloji düzeyinde faaliyet gösteren ve son üç yıl her yıl ihracatını artıran; (2) hızlı büyüyen işletmelerde son üç yıl her yıl ihracatını ve Ar-Ge harcamasını artıran; (3) yüksek teknoloji düzeyinde faaliyet gösteren, orta ölçekli, Teknoloji Odaklı Sanayi Hamlesi öncelikli ürün listesindeki ürünlere ilişkin faaliyet gösteren; (4) Turcorn 100 Programı kapsamına alınan işletme"}, "zorunlu": true, "bilesen": null,
+     "metin": "Dört alternatiften en az birini sağlamak",
+     "alinti": "Aşağıda yer alan kriterlerden herhangi birini sağlaması gerekmektedir"},
+    {"alan": "diger", "kural": {"aciklama": "Talep edilen kredi alt limiti en az 30 milyon TL (kredi üst limiti 75 milyon TL, proje süresi 24 ay)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Talep edilen kredi en az 30 milyon TL",
+     "alinti": "Ayrıca talep edilen kredinin alt limiti en az 30 milyon TL olmalıdır."},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB ile protokol imzalayan bankalara kredi başvurusu (tek finansal kuruluştan finansman)",
+     "alinti": "KOSGEB ile protokol imzalayan bankalara kredi başvurusu yapılabilir."}
+  ],
+  "belirsizlikler": [
+    "Canlı sayfa esas alındı. Eski kayıt detayı 'limited veya anonim şirket statüsünde olmak', kredi alt limiti 20 milyon TL, kredi başvurusu serbest takvim ve ilk kredi kullanımı 3 ay (+3 ay ek süre) diyordu; canlı sayfa 'gerçek veya tüzel kişi', 30 milyon TL, dönemsel proje teklif çağrısı ve ilk kredi kullanımı 9 ay diyor. sirket_turu kısıtı kodlanmadı.",
+    "Hızlı büyüyen işletme ve teknoloji düzeyi sınıflandırması kaynakta tanımlanmamış (teknoloji düzeyi sınıflandırma tablosu ayrı belge); makine değerlendiremez, elle.",
+    "Kaynaktaki alternatifler (VEYA) tek diger kriter olarak kodlandı; ölçek şartı yalnız üçüncü alternatif için (orta ölçekli)."
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "tesvik_id": 2,
+  "basvuru_bicimi": "kredi",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Türk Ticaret Kanunu'nda tanımlı gerçek veya tüzel kişi statüsünde KOBİ olmak",
+     "alinti": "Türk Ticaret Kanunu'nda tanımlı gerçek veya tüzel kişi statüsünde KOBİ olmak"},
+    {"alan": "belge", "kural": {"gerekli": "kosgeb_kaydi"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak",
+     "alinti": "KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak"},
+    {"alan": "belge", "kural": {"gerekli": "teknogirisim_rozeti"}, "zorunlu": true, "bilesen": null,
+     "metin": "Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak",
+     "alinti": "Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak"},
+    {"alan": "diger", "kural": {"aciklama": "GO Dijital Cüzdan hesabına sahip olmak"}, "zorunlu": true, "bilesen": null,
+     "metin": "GO Dijital Cüzdan hesabı",
+     "alinti": "GO Dijital Cüzdan hesabına sahip olmak"},
+    {"alan": "belge", "kural": {"gerekli": "teminat_mektubu"}, "zorunlu": true, "bilesen": null,
+     "metin": "Bankadan GO Dijital Teknoloji Hizmetleri A.Ş.'ye hitaben Kesin Teminat Mektubu (kredi limiti = teminat tutarı, en az 500.000 TL)",
+     "alinti": "Bankadan GO Dijital Teknoloji Hizmetleri A.Ş.'ye hitaben Kesin Teminat Mektubu getirmek"},
+    {"alan": "diger", "kural": {"aciklama": "Teminat mektubunun vadesi süresiz olmalı veya son geri ödeme tarihinin 6 ay sonrasını kapsamalı (mümkün değilse en az 1 yıl süreli)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Teminat mektubu vade şartı",
+     "alinti": "Vadesinin süresiz olması veya son geri ödeme tarihinin 6 ay sonrasını kapsaması (mümkün olmaması halinde en az 1 yıl süreli)"}
+  ],
+  "belirsizlikler": [
+    "Faaliyet alanı/NACE, işletme yaşı ve hedef grup şartı kaynakta yok; program teknoloji ve yenilik odaklı işletmeleri amaçlıyor ama bu bir başvuru şartı olarak yazılmamış.",
+    "KOBİ sınıfı 'KOBİ olmak' ifadesinden mikro/küçük/orta olarak çıkarıldı; KOSGEB KOBİ tanımının mikroyu içerdiği kaynakta açıkça yazmıyor."
+  ]
+}

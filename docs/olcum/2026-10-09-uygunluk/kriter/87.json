@@ -1,0 +1,33 @@
+{
+  "tesvik_id": 87,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["sahis"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Şahıs işletmesi olmak",
+     "alinti": "Esnaf Odası, Ticaret ve Sanayi Odası veya Meslek Odasına kayıtlı şahıs işletmelerinin finansman ihtiyaçlarının karşılanması amaçlanmaktadır."},
+    {"alan": "yillik_ciro_tl", "kural": {"max": 10000000}, "zorunlu": true, "bilesen": null,
+     "metin": "Kesinleşmiş son yıl cirosu 10 milyon TL'yi aşmamak",
+     "alinti": "kesinleşmiş son yıl cirosu 10 milyon TL’yi aşmayan Esnaf Odası, Ticaret ve Sanayi Odası veya Meslek Odasına kayıtlı şahıs işletmelerinin"},
+    {"alan": "diger", "kural": {"aciklama": "Esnaf Odası, Ticaret ve Sanayi Odası veya Meslek Odasından birine kayıtlı olmak"}, "zorunlu": true, "bilesen": null,
+     "metin": "Esnaf, Ticaret ve Sanayi veya Meslek Odası kaydı",
+     "alinti": "Esnaf Odası, Ticaret ve Sanayi Odası veya Meslek Odasına kayıtlı şahıs işletmelerinin"},
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Kefalet limit tablosunda yararlanıcı olarak yalnız KOBİ listelenmiş",
+     "alinti": "KOBİ 400 Bin TL"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Halkbank'a kredi başvurusu; banka kefalet talebini KGF'ye iletir",
+     "alinti": "KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir"},
+    {"alan": "diger", "kural": {"aciklama": "Kredi döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredinin kullanım amacı kısıtı (döviz, altın, mücevherat, refinansman olamaz)",
+     "alinti": "Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz."},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet talepleri yalnız TL para cinsinden yapılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız TL cinsinden kefalet talebi",
+     "alinti": "Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."}
+  ],
+  "belirsizlikler": [
+    "Ciro sınırının net satış hasılatı olup olmadığı açık değil; 'kesinleşmiş son yıl cirosu' ifadesi aynen yorumsuz alındı (yillik_ciro_tl).",
+    "Oda kaydı şartı (Esnaf/Ticaret ve Sanayi/Meslek Odası) şemada karşılığı olmadığı için 'diger' olarak kodlandı; tobb_uyeligi ile bire bir örtüşmüyor.",
+    "NACE/sektör, il, hedef grup ve işletme yaşı şartı metinde yok; KOBİ şartı yalnız kefalet limit tablosundan çıkarıldı."
+  ]
+}

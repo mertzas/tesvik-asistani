@@ -1,0 +1,30 @@
+{
+  "tesvik_id": 94,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "nace", "kural": {"in_prefix": ["A"]}, "zorunlu": true, "bilesen": null,
+     "metin": "NACE Rev 2.1'e göre A-Tarım, Ormancılık ve Balıkçılık bölümünde faaliyet göstermek",
+     "alinti": "faaliyet kodu A-Tarım, Ormancılık ve Balıkçılık bölümünde bulunan gerçek ve tüzel kişi işletmelerin"},
+    {"alan": "faaliyet", "kural": {"in": ["tarim"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Tarım, ormancılık veya balıkçılık sektöründe faaliyet göstermek",
+     "alinti": "Tarım, ormancılık veya balıkçılık sektöründe faaliyet gösteren gerçek veya tüzel kişi işletme olmak"},
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Kefalet limit tablosunda yararlanıcı olarak yalnız KOBİ listelenmiş",
+     "alinti": "KOBİ İşletme Kredisi 10 Milyon TL"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Programa katılan 10 bankadan biri üzerinden kredi başvurusu",
+     "alinti": "Programa katılan 10 bankadan biri üzerinden kredi başvurusu yapmak"},
+    {"alan": "diger", "kural": {"aciklama": "İşletme/çiftçi kayıt belgesi sunulması"}, "zorunlu": true, "bilesen": null,
+     "metin": "İşletme/çiftçi kayıt belgesi",
+     "alinti": "İşletme/çiftçi kayıt belgesi"},
+    {"alan": "diger", "kural": {"aciklama": "Krediler yalnız üretim faaliyetlerine yönelik işletme ve yatırım kredisi olarak kullandırılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredinin üretim faaliyetlerine yönelik olması",
+     "alinti": "üretim faaliyetlerine yönelik olarak Kredi Veren tarafından kullandırılacak işletme ve yatırım kredilerinin"}
+  ],
+  "belirsizlikler": [
+    "Kefalet tablosunda yararlanıcı olarak KOBİ yazıyor ancak 'Başvuru şartları' bölümünde KOBİ şartı ayrıca geçmiyor; olcek kriteri tablodan çıkarıldı.",
+    "'İşletme/çiftçi kayıt belgesi' ifadesi ÇKS kaydı mı yoksa işletme kaydı mı olduğunu belirtmiyor; şemadaki cks_kaydi ile bire bir eşleşmediği için 'diger' kullanıldı ve 'Gerekli belgeler (kayıt)' satırından alındı.",
+    "Şirket türü kısıtı yok (gerçek veya tüzel kişi); ciro, il, hedef grup (kadın/genç) ve oda üyeliği şartı metinde yok."
+  ]
+}

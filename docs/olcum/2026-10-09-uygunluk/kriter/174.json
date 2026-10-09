@@ -1,0 +1,34 @@
+{
+  "tesvik_id": 174,
+  "basvuru_bicimi": "hisse_fon",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "baska_sirkette_ortak_degil", "kural": {"esit": true}, "zorunlu": true, "bilesen": null,
+     "metin": "Başvuru tarihi itibarıyla herhangi bir işletmenin ortaklık yapısında yer almamak",
+     "alinti": "Başvuru tarihi itibarıyla HERHANGİ BİR İŞLETMENİN ortaklık yapısında yer almamak (şirket kurulduysa başvurulamaz)"},
+    {"alan": "sirket_turu", "kural": {"in": ["yok"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Başvuru anında henüz şirket kurulmamış olmalı; önce başvuru, sonra şirket kuruluşu",
+     "alinti": "Yani şirket kurulduktan SONRA bu programa başvurulamaz; sıralama önce başvuru, sonra şirket kuruluşudur."},
+    {"alan": "hedef_grup", "kural": {"in": ["ogrenci", "yeni_mezun"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Üniversitelerin ön lisans, lisans, yüksek lisans veya doktora programlarından öğrenci veya mezun olmak",
+     "alinti": "Üniversitelerin ön lisans/lisans/yüksek lisans/doktora programlarından öğrenci veya mezun olmak"},
+    {"alan": "onceki_destek_yok", "kural": {"esit": true}, "zorunlu": true, "bilesen": null,
+     "metin": "Daha önce Teknogirişim Sermayesi Desteği veya TÜBİTAK 1512 2. Aşama sermaye desteği almamış olmak",
+     "alinti": "Daha önce Teknogirişim Sermayesi Desteği veya TÜBİTAK 1512 2. Aşama sermaye desteği almamış olmak"},
+    {"alan": "diger", "kural": {"aciklama": "Teknoloji ve yenilik odaklı bir iş fikrine sahip olmak"}, "zorunlu": true, "bilesen": null,
+     "metin": "Teknoloji/yenilik odaklı iş fikri",
+     "alinti": "Teknoloji/yenilik odaklı bir iş fikrine sahip olmak"},
+    {"alan": "diger", "kural": {"aciklama": "1. Aşamada iş fikri başvurusu uygulayıcı kuruluşlara (üniversite TTO'ları, teknokentler) yapılır ve eğitim/mentorluk alınır; 2. Aşamada iş planı panelde değerlendirilir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Uygulayıcı kuruluş üzerinden iki aşamalı başvuru",
+     "alinti": "1. Aşamada iş fikri başvurusu alınır ve uygulayıcı kuruluşlar (üniversite TTO'ları, teknokentler) eğitim/mentorluk verir"},
+    {"alan": "diger", "kural": {"aciklama": "Panel sonucunda desteklenmeye hak kazanan girişimciler belirli süre içinde şirketlerini (A.Ş. veya Ltd.) kurmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Desteğe hak kazanınca belirli süre içinde A.Ş. veya Ltd. kurmak",
+     "alinti": "panel sonucunda desteklenmeye hak kazanan girişimciler belirli süre içinde şirketlerini (A.Ş. veya Ltd.) kurar"}
+  ],
+  "belirsizlikler": [
+    "Hisse oranı kaynak içinde tutarsız: kayıtlı alanlarda 1512 için %3 anılıyor, 1812 metninde 'çağrıda ilan edilir, en fazla %5'; kriter olmadığı için kodlanmadı.",
+    "TÜBİTAK'ın 1512 resmi program sayfasına erişim engeli olduğu için hisse oranı ve çağrı takvimi doğrulanamadı; kaynak 1512 için BiGG portalı ve veritabanı notu.",
+    "'Mezun' için mezuniyet yılı sınırı yok; hedef_grup şemasında 'yeni_mezun' olarak kodlandı.",
+    "Ölçek, işletme yaşı, ciro, çalışan sayısı veya faaliyet alanı şartı metinde yok (şirket olmayan gerçek kişiye yönelik program)."
+  ]
+}

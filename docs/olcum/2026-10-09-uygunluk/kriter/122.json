@@ -1,0 +1,28 @@
+{
+  "tesvik_id": 122,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "kurucu_yasi", "kural": {"max": 29}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi başvuru tarihi itibarıyla işletme sahibi veya asgari %50 hisse sahibi ortağı azami 29 yaşında olmak",
+     "alinti": "Kredi başvuru tarihi itibarıyla, sahibi veya asgari %50 hisse sahibi ortağı azami 29 yaşında olan işletmeler"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Halkbank'tan yeni ve ilave TL kredi kullanılması",
+     "alinti": "Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler)"},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet yalnızca yeni ve ilave kredi kullandırımları için talep edilebilir (mevcut kredi yenileme/refinansman kapsam dışı)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnızca yeni ve ilave kredi",
+     "alinti": "Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir."},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet talepleri yalnızca TL para cinsinden yapılabilir"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnızca TL kredi",
+     "alinti": "Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."},
+    {"alan": "diger", "kural": {"aciklama": "Kredi döviz, altın ve mücevherat finansmanında kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Döviz, altın, mücevherat finansmanında kullanılamaz",
+     "alinti": "Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz."}
+  ],
+  "belirsizlikler": [
+    "Metinde KOBİ ölçeği, ciro, çalışan sayısı, oda/borsa üyeliği, sektör/NACE veya il kısıtı yazmıyor.",
+    "Ürün açıklaması 'kendi işini kurmuş veya kurmak isteyen gençler' diyor; yararlanıcı satırı ise 'sahibi veya asgari %50 hisse sahibi ortağı azami 29 yaşında olan işletmeler'. Henüz kurulmamış işletme için başvurulup başvurulamayacağı net değil; sirket_turu kısıtı kodlanmadı.",
+    "Kefalet azami 800 bin TL / kredi azami 1 milyon TL tavanı başvuru şartı olarak değil limit olarak yazıldığı için kriter eklenmedi.",
+    "KGF sayfasında son başvuru/kullandırım tarihi yok; paketin hâlâ kullandırımda olduğu bankadan teyit edilmeli."
+  ]
+}

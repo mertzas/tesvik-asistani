@@ -1,0 +1,37 @@
+{
+  "tesvik_id": 7,
+  "basvuru_bicimi": "faiz_destegi",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "nace", "kural": {"in_prefix": ["C"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Merkez veya şube, ana veya yan faaliyet NACE kodu Kısım C - İmalat altında olmalı",
+     "alinti": "Merkez veya şube; ana veya yan faaliyet NACE Kodu; Kısım C – İmalat başlığı altında yer alması,"},
+    {"alan": "diger", "kural": {"aciklama": "Gelir İdaresi Başkanlığı'nın 31.12.2025 tarihli kayıtlarında imalat NACE kodu olan işletme olmak; sonradan imalat NACE kodu ekleterek başvurulamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "31.12.2025 tarihli GİB kaydında imalat NACE kodu",
+     "alinti": "31.12.2025 tarihli kayıtlarında imalat Nace Kodu olan işletmeler programa başvuru yapabilir"},
+    {"alan": "belge", "kural": {"gerekli": "kosgeb_kaydi"}, "zorunlu": true, "bilesen": null,
+     "metin": "İşletme Beyanı güncel olmalı",
+     "alinti": "İşletme Beyanının güncel olması,"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Protokollü bankalardan kredi kullanmak (finansman desteği için)",
+     "alinti": "Kredi kullanan ve 2026 Ocak-Haziran dönemine ait ortalama aylık prim gün sayısını 2026 Temmuz-Aralık döneminde koruyan KOBİ ve büyük işletmeler finansman desteğinden yararlanacaktır."},
+    {"alan": "diger", "kural": {"aciklama": "2026 Ocak-Haziran dönemi ortalama aylık prim gün sayısını 2026 Temmuz-Aralık döneminde korumak"}, "zorunlu": true, "bilesen": null,
+     "metin": "İstihdamı koruma: ortalama aylık prim gün sayısını korumak",
+     "alinti": "Kredi kullanan ve 2026 Ocak-Haziran dönemine ait ortalama aylık prim gün sayısını 2026 Temmuz-Aralık döneminde koruyan KOBİ ve büyük işletmeler finansman desteğinden yararlanacaktır."},
+    {"alan": "diger", "kural": {"aciklama": "2026-2 dönemi başvuru tarihleri 1 Eylül - 31 Ekim 2026"}, "zorunlu": true, "bilesen": null,
+     "metin": "Başvuru dönemi 1 Eylül - 31 Ekim 2026",
+     "alinti": "Program başvuru tarihleri: 1 Eylül-31 Ekim 2026"},
+    {"alan": "diger", "kural": {"aciklama": "Önceki dönem destek ödemesi yapılan KOBİ, ölçek değiştirip büyük işletme olursa (veya büyük işletmeden KOBİ'ye geçerse) yeni dönemde destekten yararlanamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Önceki dönemden sonra ölçek değişimi yasağı",
+     "alinti": "ölçek değiştirip Büyük işletme olursa yeni dönemde destekten faydalanamaz"},
+    {"alan": "diger", "kural": {"aciklama": "KOSGEB'e vadesi geçmiş borcu varsa ödeme talebinden önce ödemiş olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB'e vadesi geçmiş borç olmaması",
+     "alinti": "vadesi geçmiş borcunun bulunmaması varsa eğer ödeme talebinden önce borcunu ödemiş olması gerekir"}
+  ],
+  "belirsizlikler": [
+    "Canlı sayfa esas alındı; eski kayıtla çelişki yok. KOBİ ve büyük işletme ikisi de başvurabildiği için ölçek kriteri konmadı (mikro dahil tüm ölçekler).",
+    "Finansal yetkinlik/Ar-Ge yetkinliği (kredi tutarı bir kat artırımı) kriterleri destek şartı değil, kredi limiti artırımı; kodlanmadı.",
+    "2026-1 döneminde (3 Mart-30 Nisan) kredi kullanan işletmenin önceki kullanımı yeni üst limitten düşülüyor; uygunluk şartı değil, kodlanmadı.",
+    "'Önceki dönem destek ödemesi yapılan' KOBİ'nin ölçek değiştirmesi durumu profil verisiyle (önceki dönem desteği) makine tarafından bilinemez; elle."
+  ]
+}

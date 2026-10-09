@@ -1,0 +1,41 @@
+{
+  "tesvik_id": 126,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": null,
+     "metin": "KOBİ olmak (program adı ve yararlanıcı satırı KOBİ)",
+     "alinti": "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II"},
+    {"alan": "il", "kural": {"in": ["Adana", "Adıyaman", "Ankara", "Batman", "Bursa", "Diyarbakır", "Gaziantep", "Hatay", "İstanbul", "İzmir", "Kahramanmaraş", "Kayseri", "Kilis", "Kocaeli", "Konya", "Malatya", "Mardin", "Mersin", "Osmaniye", "Şanlıurfa"]}, "zorunlu": true, "bilesen": null,
+     "metin": "İşletmenin sayılan 20 ilden birinde yer alması",
+     "alinti": "Adana, Adıyaman, Ankara, Batman, Bursa, Diyarbakır, Gaziantep, Hatay, İstanbul, İzmir, Kahramanmaraş, Kayseri, Kilis, Kocaeli, Konya, Malatya, Mardin, Mersin, Osmaniye ve Şanlıurfa illerinde yer alması"},
+    {"alan": "nace", "kural": {"in_prefix": ["C", "62", "72"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Kısım C-İmalat, Bölüm 62 veya Bölüm 72 NACE kodlarından birinde faaliyet göstermek",
+     "alinti": "Kısım C-İmalat, Bölüm 62-Bilgisayar programlama, danışmanlık ve ilgili faaliyetler, Bölüm 72-Bilimsel araştırma ve geliştirme NACE kodlarından herhangi birinde faaliyet göstermesi"},
+    {"alan": "belge", "kural": {"gerekli": "kosgeb_kaydi"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB Veri Tabanına kayıtlı ve aktif durumda olmak",
+     "alinti": "KOSGEB Veri Tabanına kayıtlı ve aktif durumda"},
+    {"alan": "diger", "kural": {"aciklama": "Türk Ticaret Kanunu'nda tanımlı gerçek veya tüzel kişi statüsünde olmak"}, "zorunlu": true, "bilesen": null,
+     "metin": "TTK'da tanımlı gerçek veya tüzel kişi statüsü",
+     "alinti": "Türk Ticaret Kanunu’nda tanımlı gerçek veya tüzel kişi statüsünde"},
+    {"alan": "diger", "kural": {"aciklama": "KOSGEB tarafından desteklenen sektörlerde yer alması"}, "zorunlu": true, "bilesen": null,
+     "metin": "KOSGEB'in desteklediği sektörlerde olmak",
+     "alinti": "KOSGEB tarafından desteklenen sektörlerde yer alan"},
+    {"alan": "diger", "kural": {"aciklama": "KOSGEB İşletme Beyanı güncel olmalı ve işletme aktif durumda olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "İşletme Beyanı güncel, işletme aktif",
+     "alinti": "İşletme Beyanı güncel olan, aktif durumda olan işletmeler yararlanabilecektir"},
+    {"alan": "diger", "kural": {"aciklama": "Seçili illerde T.C. vatandaşı ile geçici koruma altındaki Suriyeli (GKAS) veya uluslararası koruma sağlanan kişi (UKSK) istihdamı tesis eden işletme olmak"}, "zorunlu": true, "bilesen": null,
+     "metin": "T.C. vatandaşı ve GKAS/UKSK istihdamı tesis etmek (programın amacı/taahhüdü)",
+     "alinti": "resmi olarak Türkiye Cumhuriyeti (T.C.) vatandaşı ile geçici koruma altındaki Suriyeli (GKAS) veya uluslararası koruma sağlanan kişi (UKSK) istihdamını tesis eden, belirlenen sektörlerde faaliyet gösteren işletmelere destek sağlanması amaçlanmaktadır"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredi Garanti BBVA'dan kullanılır",
+     "alinti": "Kredi veren bankalar: Garanti BBVA"}
+  ],
+  "belirsizlikler": [
+    "KOBİ şartı düz cümle olarak geçmiyor; yalnızca program adında ve kefalet tablosunun yararlanıcı satırında (KOBİ) var. Alıntı program adından alındı.",
+    "İstihdam (T.C. vatandaşı + GKAS/UKSK) ifadesi ürün açıklamasında 'amaçlanmaktadır' biçiminde; bir başvuru şartı mı yoksa taahhüt mü olduğu ve asgari kişi sayısı metinde yok. zorunlu=true elle kontrol için işaretlendi.",
+    "'Kefalet limiti' sütunu asgari 1.520.000 / azami 1.600.000 TL diyor, kayıt alanı bunu 'kredi' olarak yazıyor; hangisi olduğu belirsiz, kriter yazılmadı.",
+    "Metinde ciro, çalışan sayısı, işletme yaşı veya hedef grup kısıtı yok.",
+    "KGF sayfasında son başvuru/kullandırım tarihi yok."
+  ]
+}

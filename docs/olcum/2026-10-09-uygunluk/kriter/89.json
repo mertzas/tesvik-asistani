@@ -1,0 +1,33 @@
+{
+  "tesvik_id": 89,
+  "basvuru_bicimi": "kefalet",
+  "bilesenler": ["Mezun Girişimci", "Mezun İstihdam Eden KOBİ"],
+  "kriterler": [
+    {"alan": "kurucu_yasi", "kural": {"max": 29}, "zorunlu": true, "bilesen": "Mezun Girişimci",
+     "metin": "Girişimci 29 yaş ve altında olmak",
+     "alinti": "mesleki ve teknik ortaöğretim kurumlarından mezun olan 29 yaş ve altı gençlerin girişimcilik yoluyla kendi işlerini kurmalarını teşvik etmek"},
+    {"alan": "diger", "kural": {"aciklama": "Girişimcinin mesleki ve teknik ortaöğretim kurumlarından mezun olması"}, "zorunlu": true, "bilesen": "Mezun Girişimci",
+     "metin": "Mesleki ve teknik ortaöğretim mezunu olmak",
+     "alinti": "mesleki ve teknik ortaöğretim kurumlarından mezun olan 29 yaş ve altı gençlerin girişimcilik yoluyla kendi işlerini kurmalarını teşvik etmek"},
+    {"alan": "olcek", "kural": {"in": ["mikro", "kucuk", "orta"]}, "zorunlu": true, "bilesen": "Mezun İstihdam Eden KOBİ",
+     "metin": "KOBİ olmak (mezun istihdam eden KOBİ yararlanıcı kategorisi)",
+     "alinti": "Mezun İstihdam Eden KOBİ 6.000.000 TL"},
+    {"alan": "diger", "kural": {"aciklama": "KOBİ'nin mesleki ve teknik ortaöğretim mezunu genç istihdam etmesi (istihdam şartının ayrıntısı metinde yok)"}, "zorunlu": true, "bilesen": "Mezun İstihdam Eden KOBİ",
+     "metin": "Mezun gençleri istihdam etmek",
+     "alinti": "Genç istihdamını ve üretim kapasitesini artırmak için mesleki ve teknik ortaöğretim kurumlarından mezun olan 29 yaş ve altı gençlerin"},
+    {"alan": "belge", "kural": {"gerekli": "banka_kredisi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Halkbank'tan kredi kullanımı",
+     "alinti": "Kredi veren banka(lar): Halkbank (KGF ürün sayfası, İlgili Finans Kuruluşları)"},
+    {"alan": "diger", "kural": {"aciklama": "Kredi döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kredinin kullanım amacı kısıtı (döviz, kıymetli maden, mücevherat, refinansman olamaz)",
+     "alinti": "Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz."},
+    {"alan": "diger", "kural": {"aciklama": "Kefalet talepleri yalnız TL para cinsinden yapılır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Yalnız TL cinsinden kefalet talebi",
+     "alinti": "Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır."}
+  ],
+  "belirsizlikler": [
+    "Metinde 'Mezun Girişimci' ve 'Mezun İstihdam Eden KOBİ' tanımları yapılmamış; yaş (29 ve altı) ve mesleki/teknik ortaöğretim mezuniyeti şartı yalnız ürün açıklamasındaki amaç cümlesinden çıkarıldı.",
+    "Mezun İstihdam Eden KOBİ için kaç kişi/ne süre istihdam şartı, ilave istihdam şartı veya işe alınanın yaşı/mezuniyeti metinde net değil.",
+    "Girişimci için şirket türü, kuruluş tarihi/işletme yaşı, NACE/sektör, il şartı metinde yok; mezuniyetten sonra geçmesi gereken süre de belirtilmemiş."
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tesvik_id": 48,
+  "basvuru_bicimi": "proje",
+  "bilesenler": [],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["limited", "anonim"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Yürütücü (muhatap) kuruluş sermaye şirketi olmalı",
+     "alinti": "Bu çağrı kapsamında sunulan projelerde sermaye şirketi Yürütücü Kuruluş (Muhatap Kuruluş) olmalıdır."},
+    {"alan": "diger", "kural": {"aciklama": "Projede en az bir Türk ortak ve Eurostars üye ülkesinden en az bir yurt dışı ortak bulunmalı (pazara yönelik yenilikçi ürün, süreç, hizmet geliştiren uluslararası Ar-Ge projesi)"}, "zorunlu": true, "bilesen": null,
+     "metin": "En az bir Türk ve bir Eurostars üye ülkesi ortağı (yurt dışı ortak)",
+     "alinti": "en az bir Türk ve Eurostars üye ülkesinden bir ortağın katılımıyla, pazara yönelik, yenilikçi ürün, süreç ve hizmet geliştirilmesi amacı taşıyan uluslararası Ar-Ge projeleri desteklenecektir"},
+    {"alan": "diger", "kural": {"aciklama": "Sermaye şirketi statüsündeki her kuruluşta proje konusuyla ilgili en az lisans derecesine sahip en az bir proje personeli bulunmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Her sermaye şirketinde proje konusuyla ilgili en az bir lisans dereceli personel",
+     "alinti": "sermaye şirketi statüsünde bulunan her bir kuruluşta proje konusu ile ilgili en az lisans derecesine sahip asgari bir proje personelinin"},
+    {"alan": "diger", "kural": {"aciklama": "Aynı uluslararası projede Türkiye'den birden fazla ortak varsa ortaklar birlikte tek bir ulusal ön proje başvurusu yapmalı; ayrı ayrı başvurular kabul edilmez"}, "zorunlu": true, "bilesen": null,
+     "metin": "Türk ortaklar tek ortak başvuru yapar",
+     "alinti": "Aynı uluslararası projede Türkiye’den birden fazla ortak bulunması durumunda, ortakların birlikte tek bir ulusal ön proje başvurusu yapmaları ve ortak proje başvurusunda bulunmaları gerekmektedir."},
+    {"alan": "diger", "kural": {"aciklama": "Ön proje başvurusu, PRODİS üzerinden kuruluş bazlı ön kayıt süreci tamamlandıktan sonra TÜBİTAK'a gönderilir; ulusal ön uygunluk incelemesinden geçen başvurular uluslararası değerlendirmeye alınır"}, "zorunlu": true, "bilesen": null,
+     "metin": "Kuruluş bazlı ön kayıt ve ulusal ön proje başvurusu",
+     "alinti": "İlk aşamada ön proje başvurusu PRODİS üzerinden kuruluş bazlı ön kayıt süreci tamamlandıktan sonra TÜBİTAK’a gönderilecektir."},
+    {"alan": "diger", "kural": {"aciklama": "Türk proje ortakları için proje bütçesi 600.000 Avroyu geçemez"}, "zorunlu": true, "bilesen": null,
+     "metin": "Türk ortak başına bütçe üst sınırı 600.000 Avro",
+     "alinti": "(Türk proje ortakların) proje bütçesi 600.000 Avroyu geçemez."},
+    {"alan": "diger", "kural": {"aciklama": "Sermaye şirketi dışındaki kurumların bütçesi toplam proje bütçesinin en fazla %50'si olabilir ve toplamı 300.000 Avroyu geçemez"}, "zorunlu": true, "bilesen": null,
+     "metin": "Sermaye şirketi dışı ortakların bütçe payı <= %50 ve <= 300.000 Avro",
+     "alinti": "Sermaye şirketi dışındaki kurumların bütçesi toplam proje bütçesinin en fazla %50’si kadar olabilir ve projedeki toplam bütçesi 300.000 Avroyu geçemez."},
+    {"alan": "diger", "kural": {"aciklama": "Proje süresi en fazla 36 ay"}, "zorunlu": true, "bilesen": null,
+     "metin": "Proje süresi en fazla 36 ay",
+     "alinti": "Proje süresi en fazla 36 ay olabilir."}
+  ],
+  "belirsizlikler": [
+    "Türk kuruluşların ortaklı başvurusunda toplam bütçe 850.000 Avro sınırı da var (metinde 'en fazla 850.000 Avrodur'); ayrı kriter yazılmadı, yukarıdaki 600.000 Avro kriteriyle birlikte okunmalı.",
+    "Program amacı yenilikçi KOBİ'ler olarak ifade ediliyor ama büyük ölçekli kuruluşlar için de %60 destek oranı veriliyor; ölçek şartı olarak kodlanmadı.",
+    "Son başvuru tarihi ve uluslararası takvim çağrı duyurusu belgesinde (PDF); kaynak metinde tarih yok.",
+    "Yükseköğretim kurumu, kamu araştırma kurumu, hastane ve araştırma altyapıları tek başına başvuramaz; bu kuruluş türleri sirket_turu şemasına sığmadı."
+  ]
+}

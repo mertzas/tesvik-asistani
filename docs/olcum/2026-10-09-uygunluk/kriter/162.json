@@ -1,0 +1,40 @@
+{
+  "tesvik_id": 162,
+  "basvuru_bicimi": "gider_on_onay",
+  "bilesenler": ["Çevrim içi mağaza", "E-ihracat tanıtım"],
+  "kriterler": [
+    {"alan": "sirket_turu", "kural": {"in": ["limited", "anonim", "kooperatif", "diger_tuzel"]}, "zorunlu": true, "bilesen": null,
+     "metin": "Şirket ya da kooperatif olmak; şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla ve sınırlı süre yararlanabilir",
+     "alinti": "Şirket ya da kooperatif olmak (şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre)"},
+    {"alan": "belge", "kural": {"gerekli": "ihracatci_birligi_uyeligi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Bir ihracatçı birliğine üye olmak",
+     "alinti": "Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)"},
+    {"alan": "belge", "kural": {"gerekli": "dys_kaydi"}, "zorunlu": true, "bilesen": null,
+     "metin": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı",
+     "alinti": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı"},
+    {"alan": "diger", "kural": {"aciklama": "MERSİS kaydı güncel ve NACE kodu doğru olmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "MERSİS kaydı güncel ve NACE kodu doğru",
+     "alinti": "MERSİS kaydı güncel ve NACE kodu doğru"},
+    {"alan": "diger", "kural": {"aciklama": "Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Desteklenen ürün Türk ürünü olmalı",
+     "alinti": "Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de)"},
+    {"alan": "diger", "kural": {"aciklama": "Pazaryeri listelemesinde KTÜN, üretim yeri (Türkiye) ve tescilli marka bilgisi girilmeli (el işi/kişiselleştirilmiş ürünlerde KTÜN ve marka aranmayabilir)"}, "zorunlu": true, "bilesen": null,
+     "metin": "Listelemede KTÜN, üretim yeri ve tescilli marka bilgisi girilmeli; el işi/kişiselleştirilmiş üründe aranmayabilir",
+     "alinti": "pazaryeri listelemesinde KTÜN, üretim yeri (Türkiye) ve tescilli marka bilgisi girilmeli (el işi/kişiselleştirilmiş ürünlerde KTÜN ve marka aranmayabilir)"},
+    {"alan": "diger", "kural": {"aciklama": "Her destek kalemi için önce ön onay alınmalı"}, "zorunlu": true, "bilesen": null,
+     "metin": "Her destek kalemi için önce ön onay alınmalı",
+     "alinti": "Her destek kalemi için önce ön onay alınmalı"},
+    {"alan": "onceki_yil_ihracat_usd", "kural": {"min": 1000000}, "zorunlu": true, "bilesen": "Çevrim içi mağaza",
+     "metin": "Statüsüz şirket için çevrim içi mağaza desteği önceki yıl 1 milyon USD üzeri ihracatla mümkün",
+     "alinti": "(önceki yıl 1 milyon USD üzeri ihracatla) çevrim içi mağaza"},
+    {"alan": "diger", "kural": {"aciklama": "Kendi sitesinin yurt dışı pazarlaması (e-ihracat tanıtım) yalnız Perakende E-Ticaret Sitesi statüsüyle (önceki yıl en az 500.000 USD ihracat vb.)"}, "zorunlu": true, "bilesen": "E-ihracat tanıtım",
+     "metin": "E-ihracat tanıtım kalemi için Perakende E-Ticaret Sitesi statüsü gerekir",
+     "alinti": "Kendi sitesinin yurt dışı pazarlaması (e-ihracat tanıtım) yalnız Perakende E-Ticaret Sitesi statüsüyle (önceki yıl ≥500.000 USD ihracat vb.)"}
+  ],
+  "belirsizlikler": [
+    "Dosya genel e-ihracat sayfası ve program özeti niteliğinde; kalem bazlı şartlar (192-196) burada yalnızca özet halinde, ayrıntılı alıntılar ilgili kalem dosyalarında.",
+    "Şahıs işletmesi yalnız E-İhracat Konsorsiyumu üyesi/aracılığıyla ve sınırlı süre yararlanabiliyor; bu istisna şemada ifade edilemediği için sirket_turu şahıs içermiyor.",
+    "Ürün/yararlanıcı türleri (perakende e-ticaret sitesi, pazaryeri, B2B platformu, konsorsiyum) şemadaki sirket_turu değerlerine sığmadı, kodlanmadı.",
+    "Statüsüz şirket için yukarıda bilesen belirtilmeyen şartlar tüm kalemlere ortaktır; kalemlere göre ek şartlar (yurt dışı marka vb.) 192-196'da."
+  ]
+}

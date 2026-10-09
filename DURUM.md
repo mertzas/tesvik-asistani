@@ -216,6 +216,16 @@ Son güncelleme: 2026-10-09 (resmi form şablonları + İKAS sihirbazı). Oturum
   sihirbazında form adı + kaynak bağlantısı. İKAS kabuğu: `ikas-app/src/components/sihirbaz.tsx` + `src/lib/sihirbaz.ts`
   (saf hesap/temizleme, 4 node testi); "Hızlı taslak" / "Sihirbazla doldur". Tarayıcıda: web'de kaydedilen 1501 cevapları
   İKAS'ta geri geldi, 3.500.000 × %60 = 2.100.000 TL, taslakta "### B.2 …" başlığı; 375 px'te taşma yok. Test 1066 + 1 atlanan.
+- **Danışman sistem promptu yeniden yapılandırıldı** (2026-10-09, `app/rag.py` `SISTEM_PROMPTU`): XML bölümleri
+  (rol, girdi yapısı, doğruluk kuralları, triyaj, analiz protokolü, çıktı formatı, sorumluluk reddi). TRİYAJ MODU:
+  faaliyet/şirket türü/il alanlarından ikisi bilinmiyorsa program listelemez, en fazla 5 soru sorar. Program kartı
+  (durum, uygunluk, şartlar, oran/limit, riskler, resmî kaynak), "[Genel ilke – teyit edin]" etiketi, garanti yasağı,
+  il → bölge çıkarımı yasağı, bağlam metni veri sayılır (talimat değil), sabit sorumluluk reddi. Model yanıt başında
+  `<analiz>` yazar; kullanıcıya gitmez: `analiz_ayikla` (tam yanıt) + `_AnalizSuzgeci` (akış, etiket parçalar arası
+  bölünse de; her kesim noktasında tam ayıklamayla aynı sonuç testli). Yalnız analiz üretip kesilen yanıt liste formatına
+  düşer. Bağlam `BUGÜN: YYYY-AA-GG` ile başlar. Girişim eki triyaj + analiz + sorumluluk reddini kapsar. Eski test
+  ifadeleri korundu. Test 1079. **Gerçek modelle ölçülmedi** (API bakiyesi yok): prompt ~2 bin token uzadı;
+  `C_olcum.py` ile uydurma/beklenen değer/triyaj tetiklenmesi ölçülmeden canlıya alınmamalı.
 - **B2B API planı** (`docs/API_URUN_PLANI.md`, kod yok, onay bekliyor): durumsuz `/v1` uçları (eşleşme, uygunluk,
   hazırlık, çağrılar, program, e-ihracat, şablon taslak), API anahtarı + kapsam + kota + ölçüm, hedef müşteri sırası,
   kill criteria, 6 adımlı uygulama planı.

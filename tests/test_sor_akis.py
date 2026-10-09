@@ -206,3 +206,19 @@ def test_akis_parca_sonrasi_istisna_kesildi_notu(monkeypatch):
 
 def test_akis_hic_parca_yoksa_not_yok_liste_formatina_dusulur(monkeypatch):
     assert _akis_kos(monkeypatch, _SahteAkis([], None)) == []
+
+
+# ------------------------------------------------------------------ <analiz> bloğu (2026-10-09)
+def test_akis_analiz_blogu_kullaniciya_gitmez_etiket_parcalara_bolunse_de(monkeypatch):
+    parcalar = ["<ana", "liz>\n- mod: ANALİZ\n- kayıt: öner</an", "aliz>\n\n### 1. Ö", "zet"]
+    assert "".join(_akis_kos(monkeypatch, _SahteAkis(parcalar, "end_turn"))) == "### 1. Özet"
+
+
+def test_akis_yalniz_analiz_uretip_kesilirse_not_yok_liste_formatina_dusulur(monkeypatch):
+    """Model max_tokens'a analiz içinde takılırsa kullanıcı tek başına 'kesildi' notu görmemeli."""
+    assert _akis_kos(monkeypatch, _SahteAkis(["<analiz>\n- uzun analiz"], "max_tokens")) == []
+
+
+def test_akis_analizden_sonra_kesilirse_kesildi_notu(monkeypatch):
+    cikti = _akis_kos(monkeypatch, _SahteAkis(["<analiz>x</analiz>\n### 1. Ya", "rım"], "max_tokens"))
+    assert "".join(cikti[:-1]) == "### 1. Yarım" and cikti[-1] == rag.KESILDI_NOTU

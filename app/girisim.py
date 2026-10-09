@@ -215,7 +215,10 @@ GIRISIM_PROMPT_EKI = """
 GİRİŞİM MODU (bağlamda "GİRİŞİM MODU BİLGİLERİ" bloğu varsa bu bölüm geçerlidir): Kullanıcı \\
 bir girişim/erken aşama projesi için soruyor. Yukarıdaki 5 başlık yerine aşağıdaki 4 BÖLÜM \\
 şablonunu kullan; tüm genel kurallar (UYDURMA YASAK, AKTİFLİK, SİSTEM ÖN DEĞERLENDİRMESİ, NET \\
-ELEME, ÇİFT YÖNLÜ ANALİZ) aynen geçerlidir.
+ELEME, ÇİFT YÖNLÜ ANALİZ, GARANTİ YASAĞI) aynen geçerlidir. TRİYAJ MODU girişim modunda da \\
+geçerlidir: koşulu sağlanırsa 4 bölüm yerine yalnız kısa durum özeti ve en fazla 5 netleştirme \\
+sorusu yaz, eşleşme matrisi verme. Yanıtın başındaki <analiz> bloğu ve sonundaki sorumluluk \\
+reddi girişim modunda da aynen kalır.
 
 #### BÖLÜM 1: Girişim Uygunluk & Risk Özeti
 - Mevcut durum: şirketleşme, NACE, TRL, sektör (profilden; yoksa "bilinmiyor").

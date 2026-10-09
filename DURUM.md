@@ -226,6 +226,11 @@ Son güncelleme: 2026-10-09 (resmi form şablonları + İKAS sihirbazı). Oturum
   düşer. Bağlam `BUGÜN: YYYY-AA-GG` ile başlar. Girişim eki triyaj + analiz + sorumluluk reddini kapsar. Eski test
   ifadeleri korundu. Test 1079. **Gerçek modelle ölçülmedi** (API bakiyesi yok): prompt ~2 bin token uzadı;
   `C_olcum.py` ile uydurma/beklenen değer/triyaj tetiklenmesi ölçülmeden canlıya alınmamalı.
+- **Yeni prompt ajanlarla denendi** (2026-10-09, `docs/olcum/2026-10-09-prompt-ajan/RAPOR.md`): 20 senaryo, birebir
+  prompt + bağlam, danışman rolünü Sonnet alt ajanlar oynadı (API yok). Analiz bloğu 20/20 kapalı, sızıntı 0, ret metni
+  20/20, mod 20/20, beklenen 34/34, uydurma sayı 0, enjeksiyon/garanti/manipülasyon/veride-yok/kalan gün/bölge doğru.
+  Bulgu: yanıtlar ~2 kat uzun (ort. 9,8 bin kar); profil cirosu bağlama `4000000.0` gidiyor. 100-ajan yeniden: 18/18 %100
+  (D14 ölçümü form şablonu numaralarını rakam sayıyordu, düzeltildi).
 - **B2B API planı** (`docs/API_URUN_PLANI.md`, kod yok, onay bekliyor): durumsuz `/v1` uçları (eşleşme, uygunluk,
   hazırlık, çağrılar, program, e-ihracat, şablon taslak), API anahtarı + kapsam + kota + ölçüm, hedef müşteri sırası,
   kill criteria, 6 adımlı uygulama planı.

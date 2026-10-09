@@ -25,6 +25,7 @@ sys.stdout.reconfigure(encoding="utf-8")
 
 import taslak_olcum as TO  # noqa: E402
 from app import sablon_taslak  # noqa: E402
+from app.form_sablonlari import form as resmi_form  # noqa: E402
 from app.basvuru_listesi import _yanit  # noqa: E402
 from app.basvuru_taslagi import baglam  # noqa: E402
 from app.cagrilar import program_cagrilari  # noqa: E402
@@ -182,7 +183,10 @@ def ajan(db, ad: str, a: dict, n: int) -> dict:
         cag = program_cagrilari(t)
         mad = _yanit(t, None)["maddeler"]
         bos = sablon_taslak.uret(t, prof, mad, cag)
-        bag = baglam(t, prof) + json.dumps(cag, ensure_ascii=False, default=str)
+        # Resmi form şablonu (app/form_sablonlari.py, başlıklar kanıtla denetli) da kaynaktır: bölüm numaraları
+        # (2.11-2.20) ve tablo adları ("son 3 yıl") uydurma rakam sayılmaz (2026-10-09 yeniden koşu).
+        bag = (baglam(t, prof) + json.dumps(cag, ensure_ascii=False, default=str)
+               + json.dumps(resmi_form(t.id) or {}, ensure_ascii=False))
         d = TO.denetle(re.sub(r"^## 6\..*", "", bos, flags=re.S | re.M), bag)
         k["D13 cevapsız taslak: başlık sırası, boş tablo yok"] = (d["baslik_sirasi_dogru"] and "| [DOLDURUN" not in bos, "")
         k["D14 cevapsız taslak: uydurma rakam yok"] = (not d["baglamda_olmayan_sayilar"], f"{d['baglamda_olmayan_sayilar']}")

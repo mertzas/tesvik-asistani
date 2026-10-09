@@ -4,12 +4,79 @@
 // iframe'inde yazdırma güvenilir değil; taslak kopyalanır ya da tüm dosya Word olarak indirilir.
 
 import React, { useCallback, useEffect, useState } from 'react';
-import { api, wordIndir, type Liste, type ListeOzeti } from '@/lib/api';
+import { api, wordIndir, type Cevap, type Liste, type ListeOzeti, type Madde, type TaslakKapsami } from '@/lib/api';
 import { cagriOzeti, tarih, tarihSaat } from '@/lib/bicim';
+import { BOLUM, CEVAP_ETIKETI, gruplar, kaydedilecek, uygunlukOzeti } from '@/lib/kontrol';
 import { TaslakSihirbazi } from './sihirbaz';
 import { Bilgi, Dugme, Kart, Yukleniyor } from './ui';
 
-const TUR_ETIKETI = { sart: 'Şart', belge: 'Belge', basvuru: 'Başvuru' } as const;
+/** Maddenin kaynağı: resmî sayfadan birebir alıntı (açılır) ya da "kurumdan teyit edin". */
+function Kaynak({ m }: { m: Madde }) {
+  if (m.dogrulandi === false)
+    return (
+      <span
+        className="ml-1 whitespace-nowrap rounded-full bg-uyari-zemin px-2 py-0.5 text-xs text-uyari"
+        title="Bu madde kurumun resmi sayfasında bulunamadı; uygulama esaslarından ya da kurumdan teyit edin."
+      >
+        kurumdan teyit edin
+      </span>
+    );
+  if (!m.alinti) return null;
+  return (
+    <details className="ml-1 inline text-xs text-soluk">
+      <summary className="inline cursor-pointer text-vurgu">kaynak</summary>
+      <span className="mt-1 block rounded-md bg-zemin px-2 py-1">
+        <q className="italic">{m.alinti}</q>{' '}
+        {m.kaynak_url && (
+          <a href={m.kaynak_url} target="_blank" rel="noopener noreferrer" className="underline">
+            resmi sayfa
+          </a>
+        )}
+      </span>
+    </details>
+  );
+}
+
+const CEVAP_RENGI: Record<Cevap, string> = {
+  evet: 'bg-iyi text-white',
+  hayir: 'bg-hata text-white',
+  bilmiyorum: 'bg-uyari text-white',
+};
+
+/** Taslak neye hazırlanıyor: ne için, nereye girilir, ne değildir (app/sablon_taslak.taslak_kapsami). */
+function Kapsam({ k }: { k: TaslakKapsami }) {
+  if (!k.gerekli)
+    return (
+      <p className="mt-2 rounded-md bg-iyi-zemin px-3 py-2 text-sm text-iyi">
+        <strong>Bu programda başvuru metni yazılmaz.</strong> {k.aciklama}
+      </p>
+    );
+  return (
+    <div className="mt-2 rounded-md bg-zemin px-3 py-2 text-sm leading-relaxed">
+      <p>
+        <strong>Ne için:</strong> {k.ne_icin}
+        {k.form_kaynak && (
+          <>
+            {' '}(
+            <a href={k.form_kaynak} target="_blank" rel="noopener noreferrer" className="text-vurgu underline">
+              resmi form
+            </a>
+            )
+          </>
+        )}
+      </p>
+      {k.nereye && (
+        <p>
+          <strong>Nereye girilir:</strong> {k.nereye}
+        </p>
+      )}
+      <p>
+        <strong>Ne değildir:</strong> {k.ne_degil}
+      </p>
+      {k.aciklama && <p className="mt-1 text-soluk">{k.aciklama}</p>}
+    </div>
+  );
+}
 
 export function BasvurularSekmesi({ secili, onSec }: { secili: number | null; onSec: (id: number | null) => void }) {
   const [listeler, setListeler] = useState<ListeOzeti[] | null>(null);
@@ -86,11 +153,11 @@ function ListeAyrinti({ tesvikId, onDegisti, onKaldirildi }: { tesvikId: number;
   if (!liste) return mesaj ? <Bilgi tur={mesaj.tur}>{mesaj.metin}</Bilgi> : <Yukleniyor />;
   const t = liste.tesvik;
 
-  async function isaretle(anahtar: string, isaretli: boolean) {
+  async function kaydet(degisen: { anahtar: string; isaretli?: boolean; cevap?: Cevap }) {
     if (!liste) return;
-    const yeni = liste.maddeler.filter((m) => (m.anahtar === anahtar ? isaretli : m.isaretli)).map((m) => m.anahtar);
+    const { isaretli, uygunluk } = kaydedilecek(liste.maddeler, degisen);
     try {
-      setListe(await api.isaretle(tesvikId, yeni));
+      setListe(await api.isaretle(tesvikId, isaretli, uygunluk));
       onDegisti();
     } catch (e) {
       setMesaj({ tur: 'hata', metin: e instanceof Error ? e.message : 'Kaydedilemedi.' });
@@ -147,7 +214,9 @@ function ListeAyrinti({ tesvikId, onDegisti, onKaldirildi }: { tesvikId: number;
         <p className="text-xs font-semibold uppercase tracking-wide text-soluk">{t.kurum}</p>
         <h2 className="mt-0.5 text-lg font-bold">{t.baslik}</h2>
         <p className="mt-1 text-sm text-soluk">
-          {[t.basvuru_yeri && `Başvuru yeri: ${t.basvuru_yeri}`, t.basvuru_suresi && `Dönem: ${t.basvuru_suresi}`].filter(Boolean).join(' · ')}
+          {/* Dönem, çağrı kaydı varsa yalnız "Başvuru dönemleri"nden gelir (eski serbest metin çağrıyla çelişebiliyordu). */}
+          {[t.basvuru_yeri && `Başvuru yeri: ${t.basvuru_yeri}`, !liste.cagrilar.length && t.basvuru_suresi && `Dönem: ${t.basvuru_suresi}`]
+            .filter(Boolean).join(' · ')}
           {t.aktif_mi === false && ' · Bu program şu an başvuruya kapalı görünüyor'}
         </p>
         {t.kaynak_url && (
@@ -186,51 +255,112 @@ function ListeAyrinti({ tesvikId, onDegisti, onKaldirildi }: { tesvikId: number;
         )}
       </Kart>
 
-      <Kart>
-        <div className="flex flex-wrap items-center justify-between gap-2">
-          <h3 className="font-bold">Kontrol listesi</h3>
-          <span className="text-sm tabular-nums text-soluk">
-            {liste.tamamlanan}/{liste.toplam} tamamlandı
-          </span>
-        </div>
-        {liste.uyari && <p className="mt-2 text-sm text-soluk">{liste.uyari}</p>}
-        <ul className="mt-3 flex flex-col gap-2">
-          {liste.maddeler.map((m) => (
-            <li key={m.anahtar}>
-              <label className="flex items-start gap-2 text-sm">
-                <input
-                  type="checkbox"
-                  checked={m.isaretli}
-                  onChange={(e) => isaretle(m.anahtar, e.target.checked)}
-                  className="mt-0.5 h-4 w-4 shrink-0 accent-vurgu"
-                />
-                <span>
-                  <span className="mr-1 rounded bg-zemin px-1.5 py-0.5 text-xs font-semibold text-soluk">{TUR_ETIKETI[m.tur]}</span>
+      {liste.uyari && (
+        <Kart>
+          <p className="text-sm text-soluk">{liste.uyari}</p>
+        </Kart>
+      )}
+      {gruplar(liste.maddeler).map(([bolum, maddeler]) => (
+        <Kart key={bolum} className={bolum === 'bilinmesi' ? 'bg-uyari-zemin' : ''}>
+          <div className="flex flex-wrap items-center justify-between gap-2">
+            <h3 className="font-bold">{BOLUM[bolum].baslik}</h3>
+            {(bolum === 'belge' || bolum === 'adim') && (
+              <span className="text-sm tabular-nums text-soluk">
+                hazırlık {liste.tamamlanan}/{liste.toplam}
+              </span>
+            )}
+          </div>
+          <p className="mt-0.5 text-xs text-soluk">{BOLUM[bolum].aciklama}</p>
+          {bolum === 'sart' && (
+            <p
+              className={`mt-2 rounded-md px-3 py-2 text-sm ${uygunlukOzeti(liste.uygunluk).uyari ? 'bg-hata-zemin text-hata' : 'text-soluk'}`}
+            >
+              {uygunlukOzeti(liste.uygunluk).metin}
+            </p>
+          )}
+          {bolum === 'sart' ? (
+            <ul className="mt-3 flex flex-col gap-3">
+              {maddeler.map((m) => (
+                <li key={m.anahtar} className="flex flex-wrap items-center justify-between gap-2 text-sm">
+                  <span className="min-w-0 flex-1 basis-64">
+                    {m.metin}
+                    <Kaynak m={m} />
+                  </span>
+                  <span className="inline-flex overflow-hidden rounded-md border border-cizgi" role="radiogroup" aria-label="Bu şartı sağlıyor musunuz?">
+                    {(Object.keys(CEVAP_ETIKETI) as Cevap[]).map((c) => (
+                      <button
+                        key={c}
+                        type="button"
+                        role="radio"
+                        aria-checked={m.cevap === c}
+                        onClick={() => kaydet({ anahtar: m.anahtar, cevap: c })}
+                        className={`border-l border-cizgi px-3 py-1 text-xs font-semibold first:border-l-0 ${
+                          m.cevap === c ? CEVAP_RENGI[c] : 'bg-yuzey text-soluk hover:bg-zemin'
+                        }`}
+                      >
+                        {CEVAP_ETIKETI[c]}
+                      </button>
+                    ))}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          ) : bolum === 'bilinmesi' ? (
+            <ul className="mt-2 flex flex-col gap-1.5 text-sm">
+              {maddeler.map((m) => (
+                <li key={m.anahtar}>
+                  {m.tur === 'kural' ? '⚠ ' : '• '}
                   {m.metin}
-                </span>
-              </label>
-            </li>
-          ))}
-        </ul>
-      </Kart>
+                  <Kaynak m={m} />
+                </li>
+              ))}
+            </ul>
+          ) : (
+            <ol className={`mt-3 flex flex-col gap-2 ${bolum === 'adim' ? 'list-decimal pl-5 marker:font-bold marker:text-vurgu' : ''}`}>
+              {maddeler.map((m) => (
+                <li key={m.anahtar} className="text-sm">
+                  <label className="flex min-w-0 items-start gap-2">
+                    <input
+                      type="checkbox"
+                      checked={m.isaretli}
+                      aria-label={bolum === 'belge' ? 'hazır' : 'yapıldı'}
+                      onChange={(e) => kaydet({ anahtar: m.anahtar, isaretli: e.target.checked })}
+                      className="mt-0.5 h-4 w-4 shrink-0 accent-vurgu"
+                    />
+                    <span className={`min-w-0 [overflow-wrap:anywhere] ${m.isaretli ? 'text-soluk line-through' : ''}`}>{m.metin}</span>
+                  </label>
+                  <Kaynak m={m} />
+                </li>
+              ))}
+            </ol>
+          )}
+        </Kart>
+      ))}
 
       <Kart>
         <div className="flex flex-wrap items-center justify-between gap-2">
-          <h3 className="font-bold">Başvuru ön taslağı</h3>
+          <h3 className="font-bold">
+            Başvuru metni taslağı{liste.taslak_kapsami.resmi_form ? ` — ${liste.taslak_kapsami.resmi_form}` : ''}
+          </h3>
           <div className="flex flex-wrap gap-2">
             {liste.taslak && (
               <Dugme tur="ikincil" onClick={kopyala}>
                 Kopyala
               </Dugme>
             )}
-            <Dugme tur="ikincil" onClick={taslakYaz} disabled={taslakYaziliyor}>
-              {liste.taslak ? 'Yeniden yaz' : 'Hızlı taslak'}
-            </Dugme>
-            <Dugme onClick={() => setSihirbaz(true)} disabled={sihirbaz}>
-              {liste.taslak_cevaplar ? 'Cevapları düzenle' : 'Sihirbazla doldur'}
-            </Dugme>
+            {(liste.taslak_kapsami.gerekli || liste.taslak) && (
+              <>
+                <Dugme tur="ikincil" onClick={taslakYaz} disabled={taslakYaziliyor}>
+                  {liste.taslak ? 'Yeniden yaz' : 'Hızlı taslak'}
+                </Dugme>
+                <Dugme onClick={() => setSihirbaz(true)} disabled={sihirbaz}>
+                  {liste.taslak_cevaplar ? 'Cevapları düzenle' : 'Sihirbazla doldur'}
+                </Dugme>
+              </>
+            )}
           </div>
         </div>
+        <Kapsam k={liste.taslak_kapsami} />
         {liste.taslak ? (
           <>
             <p className="mt-1 text-xs text-soluk">Oluşturma: {tarihSaat(liste.taslak_tarihi)} · Resmi başvuru formu değildir.</p>
@@ -241,12 +371,23 @@ function ListeAyrinti({ tesvikId, onDegisti, onKaldirildi }: { tesvikId: number;
               className="mt-3 h-96 w-full resize-y rounded-md border border-cizgi bg-zemin p-3 font-mono text-xs leading-relaxed"
             />
           </>
-        ) : (
+        ) : liste.taslak_kapsami.gerekli ? (
           <p className="mt-2 text-sm text-soluk">
-            İşletme profiliniz ve mağaza verinizle bu program için düzenlenebilir bir başvuru metni taslağı yazılır.
             Sihirbaz projenizi, takviminizi ve bütçenizi sorar; resmi formu tanımlı programlarda sorular formun kendi
             bölümleridir. Bilinmeyen yerler [DOLDURUN] olarak bırakılır, rakam uydurulmaz.
           </p>
+        ) : (
+          <details className="mt-2 text-sm">
+            <summary className="cursor-pointer text-vurgu">Yine de bir metin taslağı hazırlamak istiyorum</summary>
+            <div className="mt-2 flex flex-wrap gap-2">
+              <Dugme tur="ikincil" onClick={taslakYaz} disabled={taslakYaziliyor}>
+                Hızlı taslak
+              </Dugme>
+              <Dugme tur="ikincil" onClick={() => setSihirbaz(true)} disabled={sihirbaz}>
+                Sihirbazla doldur
+              </Dugme>
+            </div>
+          </details>
         )}
       </Kart>
 

@@ -1,10 +1,14 @@
 """Başvuru kontrol listesi (2026-10-08): bulunan teşvik için şart, belge ve başvuru adımlarını işaretlenebilir liste
 olarak sunar ve kullanıcının işaretlerini saklar. Evrak hazırlama desteğinin ilk adımı.
 
-Maddeler kaydın kendi alanlarından üretilir (uydurma madde yok):
-  sart    -> basvuru_sartlari   ("Şartı sağlıyorum")
-  belge   -> gerekli_belgeler   ("Belge hazır")
-  basvuru -> basvuru_yeri (+ basvuru_suresi)  ("Başvuruyu yaptım")
+Maddeler (uydurma madde yok) beş türdür ve her türün etkileşimi ayrıdır (2026-10-10, kontrol listesi denetimi):
+  sart   "Başvurabilir miyim?"   -> Evet / Hayır / Emin değilim (uygunluk_cevaplari)
+  belge  "Hazırlanacak belgeler" -> hazır işareti (isaretli)
+  adim   "Başvuru adımları"      -> yapıldı işareti (isaretli)
+  kural, bilgi "Bilmeniz gerekenler" -> işaretlenmez, ilerlemeye sayılmaz
+Kaynak: Tesvik.kontrol_listesi (denetlenmiş; her maddede resmî sayfadan alıntı ve doğrulama durumu,
+scripts/fix_veri_2026_10_10_kontrol_listesi_tur19.py). Boşsa eski yol: basvuru_sartlari (kural kalıbı -> kural),
+gerekli_belgeler, basvuru_yeri (+ basvuru_suresi).
 Madde anahtarı metnin özetidir: metin değişirse eski işaret düşer (yanlış madde işaretli görünmez).
 
 Yazdırma/PDF tarayıcıda (window.print) yapılır; sunucuda PDF üretilmez.
@@ -18,6 +22,8 @@ import sys
 from datetime import datetime, timezone
 
 from fastapi import APIRouter, Depends, HTTPException, Query, status
+from typing import Literal
+
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
@@ -31,14 +37,18 @@ from app.rate_limit import org_hiz_siniri, sayac as hiz_sayaci
 
 router = APIRouter(prefix="/api/basvuru-listesi", tags=["başvuru kontrol listesi"])
 
-TUR_ETIKETI = {"sart": "Şart", "belge": "Belge", "basvuru": "Başvuru"}
+TUR_ETIKETI = {"sart": "Şart", "belge": "Belge", "adim": "Adım", "kural": "Kural", "bilgi": "Bilgi"}
+ONEK = {"sart": "s", "belge": "b", "adim": "a", "kural": "k", "bilgi": "i"}
+ISARETLENIR = {"belge", "adim"}
+CEVAPLAR = ("evet", "hayir", "bilmiyorum")
 EN_COK_MADDE = 100
 GUNLUK_TASLAK_SINIRI = 5  # kuruluş başına; her taslak bir ücretli Claude çağrısı
 
 
 def _anahtar(tur: str, metin: str) -> str:
     ozet = hashlib.sha1(" ".join(metin.split()).lower().encode("utf-8")).hexdigest()[:10]
-    return f"{tur[0]}:{ozet}"
+    # Eski türlerde ilk harf (sart s:, belge b:, basvuru b:) kullanılıyordu; kayıtlı işaretler bu anahtarlarla eşleşir.
+    return f"{ONEK.get(tur, tur[0])}:{ozet}"
 
 
 def _liste(deger) -> list[str]:
@@ -50,41 +60,59 @@ def _liste(deger) -> list[str]:
 
 
 def maddeler(t: Tesvik) -> list[dict]:
-    """Kayıttan sıralı madde listesi: önce şartlar, sonra belgeler, en son başvuru adımı. Aynı metin bir kez."""
+    """Sıralı madde listesi (şartlar, belgeler, adımlar, kurallar, bilgiler). Aynı metin bir kez."""
     sonuc, gorulen = [], set()
 
-    def ekle(tur: str, metin: str):
-        anahtar = _anahtar(tur, metin)
-        if anahtar in gorulen:
+    def ekle(tur: str, metin: str, alinti: str | None = None, kaynak_url: str | None = None,
+             dogrulandi: bool | None = None, eski_tur: str | None = None):
+        metin = " ".join(str(metin).split())
+        anahtar = _anahtar(eski_tur or tur, metin)
+        if not metin or anahtar in gorulen:
             return
         gorulen.add(anahtar)
-        # Kural ("…desteklenmez", "en fazla 2 proje"): yapılacak iş değil; işaretlenmez, ilerlemeye sayılmaz.
-        sonuc.append({"anahtar": anahtar, "tur": tur, "metin": metin, "kural": tur == "sart" and bool(KURAL.search(metin))})
+        sonuc.append({"anahtar": anahtar, "tur": tur, "metin": metin, "kural": tur in ("kural", "bilgi"),
+                      "alinti": alinti, "kaynak_url": kaynak_url, "dogrulandi": dogrulandi})
 
+    if t.kontrol_listesi:
+        for x in t.kontrol_listesi:
+            if x.get("tur") in TUR_ETIKETI:
+                ekle(x["tur"], x.get("metin") or "", x.get("alinti"), x.get("kaynak_url"), bool(x.get("dogrulandi")))
+        return sonuc[:EN_COK_MADDE]
     for s in _liste(t.basvuru_sartlari):
-        ekle("sart", s)
+        # Kural ("…desteklenmez", "en fazla 2 proje"): yapılacak iş değil; işaretlenmez, ilerlemeye sayılmaz.
+        ekle("kural" if KURAL.search(s) else "sart", s, eski_tur="sart")
     for b in _liste(t.gerekli_belgeler):
         ekle("belge", b)
     if (t.basvuru_yeri or "").strip():
         metin = f"Başvuruyu yap: {t.basvuru_yeri.strip()}"
         if (t.basvuru_suresi or "").strip():
             metin += f" — {t.basvuru_suresi.strip()}"
-        ekle("basvuru", metin)
+        ekle("adim", metin, eski_tur="basvuru")
+    sonuc.sort(key=lambda m: list(TUR_ETIKETI).index(m["tur"]))
     return sonuc[:EN_COK_MADDE]
 
 
 def _yanit(t: Tesvik, kayit: BasvuruTakibi | None) -> dict:
+    from app.sablon_taslak import taslak_kapsami
     liste = maddeler(t)
     isaretli = set(kayit.isaretli or []) if kayit else set()
+    cevaplar = (kayit.uygunluk_cevaplari or {}) if kayit else {}
     for m in liste:
-        m["isaretli"] = m["anahtar"] in isaretli and not m["kural"]
-    isler = [m for m in liste if not m["kural"]]
+        m["isaretli"] = m["tur"] in ISARETLENIR and m["anahtar"] in isaretli
+        # Eski sürümde şart da onay kutusuydu: işaretliyse "evet" sayılır, açık cevap önce gelir.
+        m["cevap"] = ((cevaplar.get(m["anahtar"]) or ("evet" if m["anahtar"] in isaretli else None))
+                      if m["tur"] == "sart" else None)
+    isler = [m for m in liste if m["tur"] in ISARETLENIR]
+    sartlar = [m for m in liste if m["tur"] == "sart"]
     return {
         "tesvik": {"id": t.id, "baslik": t.baslik, "kurum": t.kurum, "kaynak_url": t.kaynak_url,
-                   "basvuru_yeri": t.basvuru_yeri, "basvuru_suresi": t.basvuru_suresi, "aktif_mi": t.aktif_mi},
+                   "basvuru_yeri": t.basvuru_yeri, "basvuru_suresi": t.basvuru_suresi, "aktif_mi": t.aktif_mi,
+                   "basvuru_bicimi": t.basvuru_bicimi},
         "maddeler": liste,
         "tamamlanan": sum(m["isaretli"] for m in isler),
         "toplam": len(isler),
+        "uygunluk": {"toplam": len(sartlar), **{c: sum(m["cevap"] == c for m in sartlar) for c in CEVAPLAR}},
+        "taslak_kapsami": taslak_kapsami(t),
         "takipte": kayit is not None,
         "guncelleme": kayit.guncelleme.isoformat() if kayit and kayit.guncelleme else None,
         "taslak": kayit.taslak if kayit else None,
@@ -111,6 +139,8 @@ def _kayit(db: Session, org: Organization, tesvik_id: int) -> BasvuruTakibi | No
 
 class IsaretGirdi(BaseModel):
     isaretli: list[str] = Field(default_factory=list, max_length=EN_COK_MADDE)
+    # Verilmezse kayıtlı cevaplar korunur; verilirse tam liste (anahtar -> evet | hayir | bilmiyorum).
+    uygunluk: dict[str, Literal["evet", "hayir", "bilmiyorum"]] | None = Field(None, max_length=EN_COK_MADDE)
 
 
 AY = r"^\d{4}-(0[1-9]|1[0-2])$"
@@ -183,10 +213,12 @@ def liste_word(tesvik_id: int, current_org: Organization = Depends(get_current_o
 @router.put("/{tesvik_id}", dependencies=[Depends(org_hiz_siniri(60))])
 def isaretleri_kaydet(tesvik_id: int, girdi: IsaretGirdi, current_org: Organization = Depends(get_current_org),
                       db: Session = Depends(get_db)):
-    """İşaretli madde anahtarlarını kaydeder (tam liste; işaret kaldırma = listeden çıkarma). İlk kayıt takibi başlatır."""
+    """Belge/adım işaretlerini (tam liste) ve şart cevaplarını kaydeder. İlk kayıt takibi başlatır."""
     t = _tesvik(db, tesvik_id)
-    gecerli = {m["anahtar"] for m in maddeler(t)}
-    bilinmeyen = sorted(set(girdi.isaretli) - gecerli)
+    liste = maddeler(t)
+    isaretlenir = {m["anahtar"] for m in liste if m["tur"] in ISARETLENIR}
+    sart = {m["anahtar"] for m in liste if m["tur"] == "sart"}
+    bilinmeyen = sorted(set(girdi.isaretli) - isaretlenir) + sorted(set(girdi.uygunluk or {}) - sart)
     if bilinmeyen:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST,
                             detail="Liste güncellenmiş olabilir; sayfayı yenileyip tekrar deneyin.")
@@ -196,6 +228,8 @@ def isaretleri_kaydet(tesvik_id: int, girdi: IsaretGirdi, current_org: Organizat
         kayit = BasvuruTakibi(org_id=current_org.id, tesvik_id=tesvik_id, olusturma=simdi)
         db.add(kayit)
     kayit.isaretli = sorted(set(girdi.isaretli))
+    if girdi.uygunluk is not None:
+        kayit.uygunluk_cevaplari = dict(sorted(girdi.uygunluk.items()))
     kayit.guncelleme = simdi
     db.commit()
     db.refresh(kayit)
@@ -325,9 +359,21 @@ def _self_test() -> int:
                gerekli_belgeler=["Başvuru Formu", "Taahhütname"], basvuru_yeri="KBS",
                basvuru_suresi="Sürekli açık")
     m = maddeler(t)
+    yeni = Tesvik(id=3, baslik="Yeni", kurum="TUBITAK", kontrol_listesi=[
+        {"tur": "kural", "metin": "Önce harcama desteklenmez", "alinti": "x", "kaynak_url": "u", "dogrulandi": True},
+        {"tur": "sart", "metin": "Küçük veya orta işletme", "alinti": "küçük", "kaynak_url": "u", "dogrulandi": True},
+        {"tur": "adim", "metin": "Başvuruyu yap: PRODİS", "alinti": None, "kaynak_url": "u", "dogrulandi": False}])
+    my = maddeler(yeni)
+    kayit = BasvuruTakibi(isaretli=[my[1]["anahtar"], my[0]["anahtar"]], uygunluk_cevaplari={})
+    y = _yanit(yeni, kayit)
     kontroller = [
-        ("tekrar eden şart bir kez", [x["tur"] for x in m] == ["sart", "belge", "belge", "basvuru"]),
-        ("başvuru adımı yer + süre", m[-1]["metin"] == "Başvuruyu yap: KBS — Sürekli açık"),
+        ("tekrar eden şart bir kez", [x["tur"] for x in m] == ["sart", "belge", "belge", "adim"]),
+        ("eski yol: başvuru adımı yer + süre", m[-1]["metin"] == "Başvuruyu yap: KBS — Sürekli açık"),
+        ("eski anahtarlar korunur (s:, b:)", m[0]["anahtar"].startswith("s:") and m[-1]["anahtar"].startswith("b:")),
+        ("kontrol_listesi alanı esas; alıntı ve doğrulama taşınır",
+         [x["tur"] for x in my] == ["kural", "sart", "adim"] and my[1]["alinti"] == "küçük" and my[2]["dogrulandi"] is False),
+        ("şart işaretten 'evet'e, kural işaretlenmez, ilerleme yalnız belge/adım",
+         y["maddeler"][1]["cevap"] == "evet" and not y["maddeler"][0]["isaretli"] and (y["tamamlanan"], y["toplam"]) == (0, 1)),
         ("anahtar kararlı", maddeler(t)[1]["anahtar"] == m[1]["anahtar"] and m[1]["anahtar"].startswith("b:")),
         ("metin değişince anahtar değişir", _anahtar("belge", "Başvuru Formu (yeni)") != m[1]["anahtar"]),
         ("boş kayıtta madde yok + uyarı", maddeler(Tesvik(id=2)) == [] and bool(_yanit(Tesvik(id=2), None)["uyari"])),

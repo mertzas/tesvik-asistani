@@ -160,7 +160,9 @@ def test_sablon_taslak_free_planda_rizasiz_ve_claude_cagirmadan(client, db_sessi
     assert r.status_code == 200, r.text
     d = r.json()
     assert CAGRILAR == [], "şablon taslak Anthropic'e gitmemeli"
-    assert d["taslak"].startswith("> **Ön taslak") and "yapay zekâ kullanılmadan" in d["taslak"]
+    # taslak neye hazırlandığını ilk satırda söyler (2026-10-10 kullanıcı geri bildirimi)
+    assert d["taslak"].startswith("> **Ne için:** Küresel Rekabetçilik başvurusunda") and "**Nereye girilir:** KBS" in d["taslak"]
+    assert "> **Ön taslak" in d["taslak"] and "yapay zekâ kullanılmadan" in d["taslak"]
     assert "Bursa" in d["taslak"] and "NACE 25.62" in d["taslak"] and "32.000.000 TL" in d["taslak"]
     assert "- [ ] Proje Başvuru Formu" in d["taslak"] and "Başvuru yeri: KBS" in d["taslak"]
     kayit = db_session.query(BasvuruTakibi).filter(BasvuruTakibi.tesvik_id == 9).one()
@@ -250,9 +252,11 @@ def test_kural_isaretlenmez_ilerlemeye_sayilmaz(client, ar_ge):
     d = client.get("/api/basvuru-listesi/34", headers=ar_ge).json()
     kural = [m for m in d["maddeler"] if m["kural"]]
     assert [m["metin"] for m in kural] == ["Proje başvurusundan önce tamamlanmış Ar-Ge faaliyetleri desteklenmez"]
-    assert d["toplam"] == len(d["maddeler"]) - 1
+    assert d["toplam"] == sum(m["tur"] in ("belge", "adim") for m in d["maddeler"])
     taslak = client.post("/api/basvuru-listesi/34/taslak", headers=ar_ge).json()["taslak"]
     assert "- ⚠ Proje başvurusundan önce" in taslak and "- [ ] Proje başvurusundan önce" not in taslak
+    # şartlar onay kutusu değil, cevap durumuyla
+    assert "**Başvurabilir miyim? (şartlar)**" in taslak and "- Sermaye şirketi olmak — cevaplanmadı" in taslak
 
 
 @pytest.mark.parametrize("hatali", [{"faaliyetler": [{"ad": "x", "baslangic": "2027-13"}]},

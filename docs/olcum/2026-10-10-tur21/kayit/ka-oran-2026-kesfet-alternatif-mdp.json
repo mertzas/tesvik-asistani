@@ -1,0 +1,100 @@
+{
+  "slug": "ka-oran-2026-kesfet-alternatif-mdp",
+  "kurum": "Orta Anadolu Kalkınma Ajansı",
+  "baslik": "ORAN 2026 Yılı Orta Anadolu'yu Keşfet Alternatif Mali Destek Programı (TR72/26/KEŞFET)",
+  "ozet": "Orta Anadolu Kalkınma Ajansı'nın Kayseri, Sivas ve Yozgat'a konaklamalı tur düzenleyen TÜRSAB belgeli seyahat acentelerine yönelik, geri ödemesiz ve performans kriterlerine bağlı mali desteği. Destek tur başına konaklama gece sayısına göre maktu limitlerle verilir ve uygun maliyetlerin belli bir oranıyla sınırlıdır.",
+  "kaynak_url": "https://www.oran.org.tr/tr/acik-destek-cagrilari/orta-anadolu-yu-kesfet-alternatif-mali-destek-programi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Başvurular 15 Aralık 2026'ya kadar devam ediyor; turların faaliyet tarihinden en az 5 gün önce başvurulmalı.",
+    "alinti": "Son başvuru tarihi: 15 Aralık 2026, Saat 23.59.",
+    "kaynak_url": "https://www.oran.org.tr/tr/acik-destek-cagrilari/orta-anadolu-yu-kesfet-alternatif-mali-destek-programi"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [
+    "Kayseri",
+    "Sivas",
+    "Yozgat"
+  ],
+  "sektorler": [
+    "hizmet"
+  ],
+  "tesvil_tutari": "Konaklamalı tur başına: 1 gece azami 30.000 TL; 2 gece azami 70.000 TL (yurt içi) / 80.000 TL (yurt dışı); 3 gece azami 120.000 TL (yurt içi) / 135.000 TL (yurt dışı); toplam uygun maliyetlerin en fazla %75'i; program bütçesi 25.000.000 TL",
+  "basvuru_yeri": "ORAN internet sitesi (www.oran.org.tr) üzerinden Çevrimiçi Başvuru Formu",
+  "basvuru_suresi": "15 Aralık 2026 saat 23.59",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Başvuru sahibi TÜRSAB A, B veya C grubu seyahat acentesi olmalı",
+      "alinti": "TÜRSAB A, B ve C Grubu Seyahat Acenteleri",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/2026-yili-alternatif-mdp-rehberi.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Tur kafilesi en az 7 kişi olmalı, tur başına en fazla 20 kişi desteklenir",
+      "alinti": "Destek ödemesi yapılabilmesi için bir tur kafilesinin en az 7 kişiden oluşması gerekmektedir. Azami desteklenecek kişi sayısı tur başına 20 olmalıdır.",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/2026-yili-alternatif-mdp-rehberi.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Başvuru tarihleri ve tur tamamlanma tarihi",
+      "alinti": "Turlar, programın ilan tarihinden itibaren başlayıp 15 Aralık 2026 tarihine kadar başvurular devam edecektir. Tüm turlar 29 Aralık 2026 tarihine kadar tamamlanmalıdır.",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/2026-yili-alternatif-mdp-rehberi.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Onay almadan yapılan turlar desteklenmez",
+      "alinti": "Onay almadan gerçekleştirilen turlar destek kapsamına alınmaz.",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/2026-yili-alternatif-mdp-rehberi.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Acente başına azami tur sayısı",
+      "alinti": "Acente başına 10 tur",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/2026-yili-alternatif-mdp-rehberi.pdf"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "2026 Yılı Orta Anadolu'yu Keşfet Alternatif Mali Destek Programı",
+      "acilis": null,
+      "kapanis": "2026-12-15",
+      "on_kayit_son": null,
+      "kaynak_url": "https://www.oran.org.tr/tr/acik-destek-cagrilari/orta-anadolu-yu-kesfet-alternatif-mali-destek-programi",
+      "alinti": "Son başvuru tarihi: 15 Aralık 2026, Saat 23.59.",
+      "notlar": null
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "1 gece limiti",
+      "alinti": "1 Gece: Azami 30.000 TL",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/2026-yili-alternatif-mdp-rehberi.pdf"
+    },
+    {
+      "iddia": "2 gece limiti",
+      "alinti": "2 Gece: Azami 70.000 TL (Yurt içi) / 80.000 TL (Yurt dışı)",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/2026-yili-alternatif-mdp-rehberi.pdf"
+    },
+    {
+      "iddia": "3 gece limiti",
+      "alinti": "3 Gece: Azami 120.000 TL (Yurt içi) / 135.000 TL (Yurt dışı)",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/2026-yili-alternatif-mdp-rehberi.pdf"
+    },
+    {
+      "iddia": "Destek oranı üst sınırı %75",
+      "alinti": "Toplam uygun maliyetlerin en fazla %75'i (Maktu kişi başı limitlerin yanı sıra tüm destekler için genel tavandır).",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/2026-yili-alternatif-mdp-rehberi.pdf"
+    },
+    {
+      "iddia": "Program bütçesi 25.000.000 TL",
+      "alinti": "Toplam Bütçe 25.000.000 TL",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/2026-yili-alternatif-mdp-rehberi.pdf"
+    },
+    {
+      "iddia": "Son başvuru 15 Aralık 2026",
+      "alinti": "Son başvuru tarihi: 15 Aralık 2026, Saat 23.59.",
+      "kaynak_url": "https://www.oran.org.tr/tr/acik-destek-cagrilari/orta-anadolu-yu-kesfet-alternatif-mali-destek-programi"
+    }
+  ]
+}

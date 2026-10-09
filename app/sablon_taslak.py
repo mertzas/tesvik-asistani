@@ -30,6 +30,9 @@ SIRKET = {"yok": "henüz şirketleşmemiş bir girişimdir", "sahis": "bir şah�
           "limited": "bir limited şirkettir", "anonim": "bir anonim şirkettir", "kooperatif": "bir kooperatiftir"}
 HEDEF = {"yatirim": "yatırım", "ihracat": "ihracat", "arge": "Ar-Ge", "istihdam": "istihdam", "makine": "makine alımı",
          "sulama": "sulama sistemi", "hayvan": "hayvancılık", "organik": "organik tarım", "e-ticaret": "e-ticaret"}
+# Profil formundaki sektör seçeneklerinin görünen adları (taslakta ham anahtar "arge" yazılıyordu).
+SEKTOR = {"tarim": "tarım", "imalat": "imalat", "perakende": "perakende", "e-ticaret": "e-ticaret", "hizmet": "hizmet",
+          "ihracat": "ihracat", "arge": "Ar-Ge"}
 ON_ONAY = re.compile(r"ön\s+onay|müracaat tarihinden önce|harcamaya başlamadan", re.IGNORECASE)
 KURAL = re.compile(r"desteklenmez|yararlanamaz|kapsam dışı|kabul edilmez|alınmaz|sunulabilir|en fazla \d+ proje",
                    re.IGNORECASE)
@@ -165,20 +168,34 @@ def sorular(t) -> dict:
 
 # ------------------------------------------------------------------------------------------------- bölümler
 def _isletme(p: dict) -> str:
+    sirketsiz = p.get("şirket türü") == "yok"
     tur = SIRKET.get(p.get("şirket türü") or "", None)
-    cumle = [f"İşletmemiz {p.get('bölge') or D.format('il')} ilinde faaliyet gösteren "
-             f"{tur if tur else D.format('şirket türü') + ' bir işletmedir'}."]
+    il = p.get("bölge") or D.format("il")
     sektor, nace = p.get("sektör"), p.get("NACE kodu")
-    cumle.append(f"Faaliyet alanı: {sektor if sektor and sektor != 'genel' else D.format('sektör')}"
-                 + (f" (NACE {nace})" if nace else f" ({D.format('NACE kodu')})") + ".")
-    kurulus = p.get("kuruluş tarihi")
-    if kurulus:
-        cumle.append(f"Kuruluş tarihi: {_tarih(kurulus)}.")
+    alan = SEKTOR.get(sektor, sektor) if sektor and sektor != "genel" else D.format("sektör")
+    nace_ek = f" (NACE {nace})" if nace else f" ({D.format('NACE kodu')})"
     calisan, ciro = p.get("çalışan sayısı"), p.get("yıllık ciro")
-    cumle.append(f"Çalışan sayısı: {calisan if calisan is not None else D.format('çalışan sayısı')}; "
-                 f"son yıl net satış hasılatı: {_tl(ciro) if ciro else D.format('yıllık ciro (TL)')}.")
-    if p.get("KOBİ ölçeği"):
-        cumle.append(f"Ölçek: {p['KOBİ ölçeği']}.")
+    if sirketsiz:
+        # Şirketi olmayan girişimci (BiGG vb.): "işletmemiz", hasılat ve KOBİ ölçeği anlamsız; ölçek çalışan/ciro
+        # sayısından hesaplanıp "mikro işletme" yazılıyordu ve aynı paragrafta "şirketleşmemiş" ile çelişiyordu.
+        cumle = [f"Başvuru, {il} ilinde henüz şirket kurmamış bir girişimci tarafından yapılmaktadır.",
+                 f"Kurulacak şirketin faaliyet alanı: {alan}{nace_ek}."]
+        if calisan:
+            cumle.append(f"Girişimde şu an çalışan kişi sayısı: {calisan}.")
+        if ciro:
+            cumle.append(f"Bugüne kadarki gelir (beyan): {_tl(ciro)}.")
+    else:
+        cumle = [f"İşletmemiz {il} ilinde faaliyet gösteren "
+                 f"{tur if tur else D.format('şirket türü') + ' bir işletmedir'}.",
+                 f"Faaliyet alanı: {alan}{nace_ek}."]
+        kurulus = p.get("kuruluş tarihi")
+        if kurulus:
+            cumle.append(f"Kuruluş tarihi: {_tarih(kurulus)}.")
+        # 0 geçerli bir cevaptır (gelirsiz yıl); yalnız None eksik sayılır.
+        cumle.append(f"Çalışan sayısı: {calisan if calisan is not None else D.format('çalışan sayısı')}; "
+                     f"son yıl net satış hasılatı: {_tl(ciro) if ciro is not None else D.format('yıllık ciro (TL)')}.")
+        if p.get("KOBİ ölçeği"):
+            cumle.append(f"Ölçek: {p['KOBİ ölçeği']}.")
     satirlar = [" ".join(cumle)]
     ikas = [(k, v) for k, v in p.items() if "İKAS" in k]
     if ikas:
@@ -214,7 +231,8 @@ def _amac(t, p: dict, c: dict, s: dict) -> str:
         satir += ["", "Gerekçede ayrıca şunları somutlayın:"] + [f"- {q['etiket']}: {D.format(q['ipucu'])}" for q in eksik]
     hedefler = [HEDEF.get(h, h) for h in (p.get("hedefler") or [])]
     if hedefler:
-        satir += ["", f"İşletmenin genel hedefleri: {', '.join(hedefler)}."]
+        sahip = "Girişimin" if p.get("şirket türü") == "yok" else "İşletmenin"
+        satir += ["", f"{sahip} genel hedefleri: {', '.join(hedefler)}."]
     return "\n".join(x for x in satir).strip()
 
 
@@ -300,18 +318,78 @@ def _cikti(p: dict, c: dict, s: dict) -> str:
     return "\n".join(satir)
 
 
+CEVAP_YAZISI = {"evet": "sağlıyor", "hayir": "SAĞLAMIYOR", "bilmiyorum": "emin değil"}
+
+
+def _tur(m: dict) -> str:
+    """Eski biçimli maddeler (tur=basvuru, kural kalıplı şart) yeni türlere çevrilir."""
+    tur = m.get("tur")
+    if tur == "basvuru":
+        return "adim"
+    if tur == "sart" and (m.get("kural") or KURAL.search(m.get("metin") or "")):
+        return "kural"
+    return tur
+
+
 def belgeler_ve_kurallar(maddeler: list[dict]) -> str:
-    """Kontrol listesi: kurallar ("…desteklenmez") uyarı, yapılacaklar onay kutusu."""
+    """Kontrol listesi bölümü, kutular karışmadan: şartlar (cevapla), belgeler ve adımlar (onay kutusu), kurallar ve
+    bilgiler (uyarı). Kaynakta doğrulanamamış madde "(kurumdan teyit edin)" notuyla."""
     if not maddeler:
-        return ("## 6. Hazırlanacak belgeler ve şartlar\n\nBu program için şart/belge bilgisi sistemimizde yok; "
+        return ("## 6. Başvuru şartları, belgeler ve adımlar\n\nBu program için şart/belge bilgisi sistemimizde yok; "
                 "kurumun resmi sayfasından kontrol edin.")
-    kurallar = [m for m in maddeler if m.get("tur") == "sart" and KURAL.search(m["metin"])]
-    isler = [m for m in maddeler if m not in kurallar]
-    satir = ["## 6. Hazırlanacak belgeler ve şartlar", "", "Kontrol listenizden; kurumun güncel listesiyle teyit edin.", ""]
-    satir += [f"- [{'x' if m.get('isaretli') else ' '}] {m['metin']}" for m in isler]
-    if kurallar:
-        satir += ["", "**Dikkat edilecek kurallar:**"] + [f"- ⚠ {m['metin']}" for m in kurallar]
+
+    def yaz(m: dict) -> str:
+        return m["metin"] + (" (kurumdan teyit edin)" if m.get("dogrulandi") is False else "")
+
+    grup = {t: [m for m in maddeler if _tur(m) == t] for t in ("sart", "belge", "adim", "kural", "bilgi")}
+    satir = ["## 6. Başvuru şartları, belgeler ve adımlar", "", "Kontrol listenizden; kurumun güncel duyurusuyla teyit edin."]
+    if grup["sart"]:
+        satir += ["", "**Başvurabilir miyim? (şartlar)**"] + [
+            f"- {yaz(m)} — {CEVAP_YAZISI.get(m.get('cevap'), 'cevaplanmadı')}" for m in grup["sart"]]
+    if grup["belge"]:
+        satir += ["", "**Hazırlanacak belgeler**"] + [f"- [{'x' if m.get('isaretli') else ' '}] {yaz(m)}" for m in grup["belge"]]
+    if grup["adim"]:
+        satir += ["", "**Başvuru adımları**"] + [f"- [{'x' if m.get('isaretli') else ' '}] {yaz(m)}" for m in grup["adim"]]
+    if grup["kural"] or grup["bilgi"]:
+        satir += ["", "**Bilmeniz gerekenler**"] + [f"- ⚠ {yaz(m)}" for m in grup["kural"]] + [f"- {yaz(m)}" for m in grup["bilgi"]]
     return "\n".join(satir)
+
+
+# Başvuru biçimine göre taslağın yeri (docs/olcum/2026-10-09-uygunluk/KRITER_SEMASI.md; taslak denemesi: proje dışı
+# programlarda kullanıcılar "metin bu başvuruya bir şey katmıyor" dedi, docs/olcum/2026-10-09-taslak-ajan/RAPOR.md).
+BICIM_ACIKLAMA = {
+    "kefalet": "Bu program bir kredi kefaletidir: başvuruyu kredi kullanacağınız bankaya yaparsınız, banka kefaleti KGF'ye "
+               "iletir. Proje metni istenmez; bankanın istediği finansal belgeler gerekir.",
+    "bildirim_prim": "Bu teşvik SGK'ya yapılan işe giriş ve aylık prim bildirimiyle uygulanır; proje ya da başvuru metni "
+                     "yazılmaz. Uygunluk şartlarını ve işe alınacak kişilerin niteliğini kontrol edin.",
+    "uretim_odeme": "Bu destek üretim/kayıt bilgilerinize göre (dekar, hayvan, ürün başına) ödenir; proje metni yazılmaz. "
+                    "Kayıtlarınızı (ÇKS vb.) zamanında güncellemeniz yeterlidir.",
+    "belge_etuys": "Bu teşvik, E-TUYS üzerinden yatırım teşvik belgesi başvurusuyla alınır; başvuru serbest metin değil, "
+                   "yatırım bilgileri (cins, yer, tutar, makine listesi, istihdam) girilen yapılandırılmış formdur.",
+    "kredi": "Bu bir kredi programıdır: başvuruda kredi tutarı, vade ve teminat bilgileri istenir; uzun proje metni zorunlu "
+             "değildir. Aşağıdaki taslağı yalnız harcama planınızı toparlamak için kullanabilirsiniz.",
+    "faiz_destegi": "Bu destek kullandığınız kredinin faizine yapılır: başvuruda kredi ve harcama bilgileri istenir; uzun "
+                    "proje metni zorunlu değildir. Taslağı harcama planınızı toparlamak için kullanabilirsiniz.",
+    "gider_on_onay": "Bu destek gider kalemleri bazında ön onay ve belgelerle geri ödemeyle işler; uzun proje metni istenmez. "
+                     "Taslağı harcama planınızı (kalem, ülke, tutar) toparlamak için kullanabilirsiniz.",
+}
+TASLAK_YOK = {"kefalet", "bildirim_prim", "uretim_odeme", "belge_etuys"}
+
+
+def taslak_kapsami(t) -> dict:
+    """Taslak neye hazırlanıyor: gerekli mi, ne için, nereye girilir, ne değildir (arayüz ve Word başlığı)."""
+    bicim = getattr(t, "basvuru_bicimi", None)
+    f = resmi_form(t.id)
+    if f:
+        ilk, son = f["bolumler"][0][1], f["bolumler"][-1][1]
+        ne_icin = f"{f['ad']} metin bölümleri ({ilk.split(' ')[0]} – {son.split(' ')[0]})"
+    else:
+        ne_icin = "kurumun başvuru formundaki proje/iş planı anlatımı (amaç ve gerekçe, faaliyetler ve takvim, bütçe, çıktılar)"
+    # Resmi proje formu tanımlıysa (ör. Kapasite Geliştirme: faiz desteği ama II. Bölüm proje formu ister) form esastır.
+    return {"gerekli": bool(f) or bicim not in TASLAK_YOK, "bicim": bicim, "aciklama": None if f else BICIM_ACIKLAMA.get(bicim),
+            "ne_icin": ne_icin, "resmi_form": f["ad"] if f else None, "form_kaynak": f["kaynak"] if f else None,
+            "nereye": (getattr(t, "basvuru_yeri", None) or "").strip() or None,
+            "ne_degil": "Resmi form değildir: formun tabloları, ekleri ve imzalı belgeleri kurumun sisteminde ayrıca doldurulur."}
 
 
 def uret(t, profil: dict, maddeler: list[dict], cagrilar: list[dict], cevaplar: dict | None = None) -> str:
@@ -321,7 +399,11 @@ def uret(t, profil: dict, maddeler: list[dict], cagrilar: list[dict], cevaplar: 
     govde = [_isletme(profil), _amac(t, profil, c, s), _takvim(t, cagrilar, c, s), _butce(t, c, s), _cikti(profil, c, s)]
     metin = "\n\n".join(f"## {b}\n\n{g}" for b, g in zip(BOLUMLER, govde))
     # Ayrı alıntı satırı: paneldeki mdToHtml alıntı içi italiği işlemiyor.
-    not_ = BASLIK_NOTU + "\n>\n> Bu taslak yapay zekâ kullanılmadan, kayıtlı verilerinizden ve sihirbaz cevaplarınızdan hazırlandı."
+    k = taslak_kapsami(t)
+    not_ = (f"> **Ne için:** {t.baslik} başvurusunda {k['ne_icin']}."
+            + (f" **Nereye girilir:** {k['nereye']}." if k["nereye"] else "")
+            + "\n>\n" + BASLIK_NOTU
+            + "\n>\n> Bu taslak yapay zekâ kullanılmadan, kayıtlı verilerinizden ve sihirbaz cevaplarınızdan hazırlandı.")
     return f"{not_}\n\n{metin}\n\n{belgeler_ve_kurallar(maddeler)}\n"
 
 
@@ -347,6 +429,12 @@ def _self_test() -> int:
            "destek_orani": 75.0, "ciktilar": {"arge_cikti": "Pilot üretim hattı ve faydalı model başvurusu"}}
     bos = uret(t1501, p, m, [])
     dolu = uret(t1501, p, m, [], cev)
+    t1512 = Tesvik(id=174, kurum="TUBITAK", baslik="1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim)")
+    # rag.profil_sozlugu şirketsiz profile de çalışan/ciroya göre "mikro işletme" ölçeği koyar.
+    girisimci = uret(t1512, {"sektör": "arge", "bölge": "Ankara", "çalışan sayısı": 1, "yıllık ciro": 0.0,
+                             "şirket türü": "yok", "NACE kodu": "62.01", "hedefler": ["arge"],
+                             "KOBİ ölçeği": "mikro işletme [KOBİ Yönetmeliği]"}, [], [])
+    gelirsiz = uret(t1501, {**p, "yıllık ciro": 0.0}, m, [])
     buyuk = uret(t1501, p, m, [], {**cev, "butce": [{"kalem": "Personel", "tutar": 40_000_000}]})
     k = [
         ("cevapsız taslakta boş tablo yok", "| [DOLDURUN" not in bos and "Önerilen iş adımları" in bos
@@ -371,6 +459,19 @@ def _self_test() -> int:
         ("form cevabı başlığının altına yazılır", "### B.4 Projenin Yenilikçi Yönleri" in uret(
             t1501, p, m, [], {**cev, "gerekce": {"B4": "Ülke için yeni ürün."}}) and "Ülke için yeni ürün." in uret(
             t1501, p, m, [], {**cev, "gerekce": {"B4": "Ülke için yeni ürün."}})),
+        ("ciro 0 eksik sayılmaz", "son yıl net satış hasılatı: 0 TL." in gelirsiz and "yıllık ciro (TL)" not in gelirsiz),
+        ("şirketsiz girişimde işletme/ölçek/hasılat dili yok", "henüz şirket kurmamış bir girişimci" in girisimci
+         and "İşletmemiz" not in girisimci and "Ölçek:" not in girisimci and "hasılat" not in girisimci
+         and "DOLDURUN: yıllık ciro" not in girisimci and "Girişimin genel hedefleri: Ar-Ge." in girisimci),
+        ("sektör görünen adıyla", "faaliyet alanı: Ar-Ge (NACE 62.01)." in girisimci
+         and "Faaliyet alanı: imalat (NACE 10.71)." in bos),
+        ("taslak kapsamı: kefalette gerekmez, açıklamalı",
+         taslak_kapsami(Tesvik(id=86, baslik="Nefes", basvuru_bicimi="kefalet"))["gerekli"] is False
+         and "bankaya" in taslak_kapsami(Tesvik(id=86, baslik="Nefes", basvuru_bicimi="kefalet"))["aciklama"]),
+        ("taslak kapsamı: resmi form varsa biçimden önce gelir (Kapasite Geliştirme, faiz desteği)",
+         (lambda k: k["gerekli"] and k["aciklama"] is None and "2.11" in k["ne_icin"])(
+             taslak_kapsami(Tesvik(id=8, baslik="Kapasite Geliştirme", basvuru_bicimi="faiz_destegi")))),
+        ("taslak neye hazırlandığını ilk satırda söyler", bos.startswith("> **Ne için:**")),
     ]
     for ad, ok in k:
         print(f"  {'OK ' if ok else 'HATA'} {ad}")

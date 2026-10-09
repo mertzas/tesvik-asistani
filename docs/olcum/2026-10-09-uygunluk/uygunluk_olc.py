@@ -26,6 +26,8 @@ KOK = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", "..", ".."))
 sys.path.insert(0, KOK)
 OUT = os.path.dirname(os.path.abspath(__file__))
 BUGUN = date(2026, 10, 9)
+# "--cikti _tur19_20" gibi: çıktı adına sonek (önceki ölçüm dosyalarının üzerine yazmadan yeniden ölçmek için).
+SONEK = sys.argv[sys.argv.index("--cikti") + 1] if "--cikti" in sys.argv else ""
 
 # Sonradan edinilebilir kayıt/belge: eksikliği "uygun değil" değil "hazırlıkla" sayılır.
 GIDERILEBILIR = {"kosgeb_kaydi", "dys_kaydi", "e_imza", "iskur_kaydi", "cks_kaydi", "ihracatci_birligi_uyeligi",
@@ -214,7 +216,7 @@ def olc():
             kararlar[tid] = dict(gercek=kg, sistem_verisiyle=ks["karar"], sira=oneri.index(tid) + 1 if tid in oneri else None,
                                  baslik=baslik.get(tid, "?")[:70], bicim=d.get("basvuru_bicimi"))
         sonuc.append(dict(profil=p["ad"], ilk10=oneri[:10], kararlar=kararlar))
-    json.dump(sonuc, open(os.path.join(OUT, "sonuc.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1, default=list)
+    json.dump(sonuc, open(os.path.join(OUT, f"sonuc{SONEK}.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1, default=list)
     ozet_yaz(sonuc)
 
 
@@ -248,7 +250,7 @@ def ozet_yaz(sonuc):
                 yalniz_elle += bool(k["gercek"]["elle"]) and not k["gercek"]["bilinmeyen"]
     sat += [f"BİLİNMİYOR nedenleri: makine okunur olmayan ('diğer') zorunlu şart içeren {elle_say} öneri "
             f"({yalniz_elle}'inde tek neden bu); gerçek profilde de bilinmeyen alanlar: {dict(neden.most_common())}"]
-    open(os.path.join(OUT, "ozet.md"), "w", encoding="utf-8").write("\n".join(sat) + "\n")
+    open(os.path.join(OUT, f"ozet{SONEK}.md"), "w", encoding="utf-8").write("\n".join(sat) + "\n")
     print("\n".join(sat))
 
 

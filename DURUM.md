@@ -247,6 +247,21 @@ Son güncelleme: 2026-10-09 (resmi form şablonları + İKAS sihirbazı). Oturum
   alıntıların hepsi doğrulandı. Doğru %49, desteksiz %34, belirsiz %15, yanlış 11 + eskimiş 2; %27'si yanlış türde
   (şart/belge/adım/kural/bilgi karışık); 177 zorunlu madde eksik; 6 program genel sayfaya bağlı; 4 çağrı çelişkisi.
   Kullanıcı geri bildirimi: taslak neye hazırlanıyor belirsiz, kutular karışık. Düzeltme planı onay bekliyor.
+- **Kontrol listesi, taslak, kaynak, paket modu, TKDK/ajans turu** (2026-10-10; kod + test hazır, GERÇEK DB'YE UYGULANMADI,
+  kopya DB'de denendi; sıra: `alembic upgrade head` → tur19 → tur20 → tur21 `--uygula`, her biri yedekli):
+  - Göç `p3e5a7c9d456`: tesvikler.kontrol_listesi, basvuru_bicimi; basvuru_takipleri.uygunluk_cevaplari.
+  - Kontrol listesi dört bölüm/dört etkileşim (şart Evet/Hayır/Emin değilim; belge, adım kutu; kural/bilgi kutusuz),
+    her madde resmî alıntı ya da 'kurumdan teyit edin'; web + İKAS + Word. Taslak 'Ne için / Nereye / Ne değildir',
+    proje dışı biçimlerde (kefalet, prim, üretim ödemesi, E-TUYS) taslak gizli. Dönem yalnız çağrı kaydından.
+  - tur19: denetimden 77 programın kontrol listesi (yanlış/eskimiş/belirsiz düzeltildi, 177 eksik eklendi, tekrar ayıklandı).
+  - tur20: 6 genel kaynak → resmî (8859 RG, E-ihracat Genelgesi 13.04.2026); 2026 tarım tutarları 11781 sayılı
+    Kararla 310 → 367 TL (hububat mısır katsayısı 1,3 → 1,0 düzeltildi); 7 çağrı (1832 ön kayıt 08.10 kapanış 12.10;
+    BİGG+ 2026-1 05.10-20.11; 1707 üç dönem; TEKMER); 1512 sayfası kapalı notu; ölçek/NACE/il kısıtı (9+2+1 program).
+    Uygunluk ölçümü kopyada: ilk 10'da uygun değil %16 → %11, sistemce önlenebilir 7 → 2.
+  - Paket modu: prompt bölümü + 'BİRLİKTE KULLANIM KURALLARI' bağlam bloğu (alıntılı) + yatırım sorusunda 12 aday.
+  - tur21: 49 yeni program (TKDK IPARD III 101/103/302 + 18 kalkınma ajansı), her alıntı betikçe indirilip doğrulandı
+    (49/49); 31'i aktif; il kısıtlı. İSTKA, İZKA, BEBKA, Trakya, GMKA, İpekyolu: 2026 işletme programı yok.
+    100-ajan kopyada 18/18 %100, gürültü %4,1. Test 1086.
 - **B2B API planı** (`docs/API_URUN_PLANI.md`, kod yok, onay bekliyor): durumsuz `/v1` uçları (eşleşme, uygunluk,
   hazırlık, çağrılar, program, e-ihracat, şablon taslak), API anahtarı + kapsam + kota + ölçüm, hedef müşteri sırası,
   kill criteria, 6 adımlı uygulama planı.

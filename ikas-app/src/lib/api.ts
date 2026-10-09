@@ -90,7 +90,32 @@ export type ListeOzeti = {
   guncelleme: string | null;
 };
 
-export type Madde = { anahtar: string; tur: 'sart' | 'belge' | 'basvuru'; metin: string; isaretli: boolean };
+/** Şart: Evet/Hayır/Emin değilim cevabı; belge/adım: hazır/yapıldı işareti; kural/bilgi: işaretlenmez (app/basvuru_listesi.py). */
+export type Cevap = 'evet' | 'hayir' | 'bilmiyorum';
+export type Madde = {
+  anahtar: string;
+  tur: 'sart' | 'belge' | 'adim' | 'kural' | 'bilgi';
+  metin: string;
+  isaretli: boolean;
+  cevap: Cevap | null;
+  /** Resmî sayfadan birebir alıntı; null ise kaynakta bulunamadı ya da eski kayıt. */
+  alinti: string | null;
+  kaynak_url: string | null;
+  /** false: kurumun sayfasında bulunamadı, "kurumdan teyit edin" gösterilir; null: eski kayıt. */
+  dogrulandi: boolean | null;
+};
+
+/** Taslak neye hazırlanıyor (app/sablon_taslak.taslak_kapsami). */
+export type TaslakKapsami = {
+  gerekli: boolean;
+  bicim: string | null;
+  aciklama: string | null;
+  ne_icin: string;
+  resmi_form: string | null;
+  form_kaynak: string | null;
+  nereye: string | null;
+  ne_degil: string;
+};
 
 export type Liste = {
   tesvik: { id: number; baslik: string; kurum: string; kaynak_url: string | null; basvuru_yeri: string | null;
@@ -98,6 +123,8 @@ export type Liste = {
   maddeler: Madde[];
   tamamlanan: number;
   toplam: number;
+  uygunluk: { toplam: number; evet: number; hayir: number; bilmiyorum: number };
+  taslak_kapsami: TaslakKapsami;
   takipte: boolean;
   taslak: string | null;
   taslak_tarihi: string | null;
@@ -137,8 +164,12 @@ export const api = {
   riza: (riza: boolean) => istek<{ mesaj: string }>('/api/organizations/ai-riza', { method: 'POST', body: JSON.stringify({ riza }) }),
   listeler: () => istek<{ listeler: ListeOzeti[] }>('/api/basvuru-listesi'),
   liste: (id: number) => istek<Liste>(`/api/basvuru-listesi/${id}`),
-  isaretle: (id: number, isaretli: string[]) =>
-    istek<Liste>(`/api/basvuru-listesi/${id}`, { method: 'PUT', body: JSON.stringify({ isaretli }) }),
+  /** Belge/adım işaretleri (tam liste) ve şart cevapları; uygunluk verilmezse kayıtlı cevaplar korunur. */
+  isaretle: (id: number, isaretli: string[], uygunluk?: Record<string, Cevap>) =>
+    istek<Liste>(`/api/basvuru-listesi/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(uygunluk ? { isaretli, uygunluk } : { isaretli }),
+    }),
   /** Yapay zekâsız şablon taslak; cevaplar verilirse sihirbaz cevaplarıyla yazılır ve kaydedilir. */
   taslak: (id: number, cevaplar?: Cevaplar) =>
     istek<Liste>(`/api/basvuru-listesi/${id}/taslak?yontem=sablon`, {

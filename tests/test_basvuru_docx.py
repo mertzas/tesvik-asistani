@@ -30,7 +30,8 @@ def test_word_dosyasi_liste_cagri_ve_taslak_icerir(client, db_session, test_user
     h = _hazirla(client, db_session, test_user_token)
     liste = client.get("/api/basvuru-listesi/77", headers=h).json()
     ilk = liste["maddeler"][0]["anahtar"]
-    client.put("/api/basvuru-listesi/77", headers=h, json={"isaretli": [ilk]})
+    belge = next(m["anahtar"] for m in liste["maddeler"] if m["tur"] == "belge")
+    client.put("/api/basvuru-listesi/77", headers=h, json={"isaretli": [belge], "uygunluk": {ilk: "evet"}})
     kayit = db_session.query(BasvuruTakibi).one()
     kayit.taslak = "## 1. İşletme tanıtımı\nMetin [DOLDURUN: yıl]\n\n| Kalem | Tutar |\n|---|---|\n| Personel | [DOLDURUN] |"
     db_session.commit()
@@ -45,7 +46,8 @@ def test_word_dosyasi_liste_cagri_ve_taslak_icerir(client, db_session, test_user
 
     d = Document(io.BytesIO(r.content))
     metin = "\n".join(p.text for p in d.paragraphs)
-    assert "☑ Şirket olmak" in metin and "☐ Fatura" in metin
+    # şart cevabıyla, belge kutuyla (kutular karışmaz)
+    assert "Şirket olmak — ✔ sağlıyor" in metin and "☑ Fatura" in metin and "☑ Şirket olmak" not in metin
     assert "Sürekli:" in metin and "Başvuruya açık" in metin and "https://k/77" in metin
     assert "1. İşletme tanıtımı" in [p.text for p in d.paragraphs] and d.tables[0].cell(1, 0).text == "Personel"
     assert "resmi başvuru formu değildir" in metin

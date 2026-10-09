@@ -36,20 +36,24 @@ def test_maddeler_kayit_alanlarindan_uretilir(client, tesvik):
     d = r.json()
     assert [(m["tur"], m["metin"]) for m in d["maddeler"]] == [
         ("sart", "KOBİ olmak"), ("belge", "Proje Başvuru Formu"), ("belge", "Taahhütname"),
-        ("basvuru", "Başvuruyu yap: KOSGEB KBS — Dönemsel çağrı")]
-    assert d["tamamlanan"] == 0 and d["toplam"] == 4 and d["takipte"] is False and d["uyari"] is None
+        ("adim", "Başvuruyu yap: KOSGEB KBS — Dönemsel çağrı")]
+    # ilerleme yalnız belge + adım; şartlar ayrı (Evet/Hayır/Emin değilim)
+    assert d["tamamlanan"] == 0 and d["toplam"] == 3 and d["takipte"] is False and d["uyari"] is None
+    assert d["uygunluk"] == {"toplam": 1, "evet": 0, "hayir": 0, "bilmiyorum": 0}
+    assert d["taslak_kapsami"]["gerekli"] is True and "proje/iş planı" in d["taslak_kapsami"]["ne_icin"]
 
 
 def test_isaretleme_kaydedilir_ve_listede_gorunur(client, tesvik):
     h = _h(client, "a@example.com")
-    anahtarlar = [m["anahtar"] for m in client.get("/api/basvuru-listesi/9", headers=h).json()["maddeler"]]
-    r = client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": anahtarlar[:2]})
+    m = client.get("/api/basvuru-listesi/9", headers=h).json()["maddeler"]
+    belgeler = [x["anahtar"] for x in m if x["tur"] == "belge"]
+    r = client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": belgeler})
     assert r.status_code == 200 and r.json()["tamamlanan"] == 2 and r.json()["takipte"] is True
-    assert [m["isaretli"] for m in client.get("/api/basvuru-listesi/9", headers=h).json()["maddeler"]] == \
-        [True, True, False, False]
+    assert [x["isaretli"] for x in client.get("/api/basvuru-listesi/9", headers=h).json()["maddeler"]] == \
+        [False, True, True, False]
     liste = client.get("/api/basvuru-listesi", headers=h).json()["listeler"]
     assert liste == [{"tesvik_id": 9, "baslik": "Küresel Rekabetçilik", "kurum": "KOSGEB", "aktif_mi": True,
-                      "tamamlanan": 2, "toplam": 4, "guncelleme": liste[0]["guncelleme"]}]
+                      "tamamlanan": 2, "toplam": 3, "guncelleme": liste[0]["guncelleme"]}]
     # işaret kaldırma = tam listeyi yeniden gönderme
     assert client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": []}).json()["tamamlanan"] == 0
 
@@ -61,27 +65,28 @@ def test_bilinmeyen_madde_reddedilir(client, tesvik):
 
 def test_kuruluslar_birbirinin_isaretini_gormez(client, tesvik):
     a, b = _h(client, "a@example.com"), _h(client, "b@example.com")
-    ilk = client.get("/api/basvuru-listesi/9", headers=a).json()["maddeler"][0]["anahtar"]
-    client.put("/api/basvuru-listesi/9", headers=a, json={"isaretli": [ilk]})
+    ilk = client.get("/api/basvuru-listesi/9", headers=a).json()["maddeler"][1]["anahtar"]
+    assert client.put("/api/basvuru-listesi/9", headers=a, json={"isaretli": [ilk]}).status_code == 200
     assert client.get("/api/basvuru-listesi/9", headers=b).json()["tamamlanan"] == 0
     assert client.get("/api/basvuru-listesi", headers=b).json()["listeler"] == []
 
 
 def test_kayit_metni_degisince_eski_isaret_duser(client, db_session, tesvik):
     h = _h(client, "a@example.com")
-    anahtarlar = [m["anahtar"] for m in client.get("/api/basvuru-listesi/9", headers=h).json()["maddeler"]]
-    client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": anahtarlar})
+    anahtarlar = [m["anahtar"] for m in client.get("/api/basvuru-listesi/9", headers=h).json()["maddeler"]
+                  if m["tur"] in ("belge", "adim")]
+    assert client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": anahtarlar}).status_code == 200
     t = db_session.get(Tesvik, 9)
     t.gerekli_belgeler = ["Proje Başvuru Formu (2026 sürümü)", "Taahhütname"]
     db_session.commit()
     d = client.get("/api/basvuru-listesi/9", headers=h).json()
     assert {m["metin"]: m["isaretli"] for m in d["maddeler"]}["Proje Başvuru Formu (2026 sürümü)"] is False
-    assert d["tamamlanan"] == 3
+    assert d["tamamlanan"] == 2
 
 
 def test_takibi_birak_ve_404_ve_yetki(client, tesvik):
     h = _h(client, "a@example.com")
-    k = client.get("/api/basvuru-listesi/9", headers=h).json()["maddeler"][0]["anahtar"]
+    k = client.get("/api/basvuru-listesi/9", headers=h).json()["maddeler"][1]["anahtar"]
     client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": [k]})
     assert client.delete("/api/basvuru-listesi/9", headers=h).status_code == 200
     assert client.get("/api/basvuru-listesi", headers=h).json()["listeler"] == []
@@ -100,7 +105,7 @@ def test_bilgisi_olmayan_kayitta_uyari(client, db_session):
 def test_hesap_silmede_listeler_silinir(client, db_session, tesvik):
     h = _h(client, "a@example.com")
     k = client.get("/api/basvuru-listesi/9", headers=h).json()["maddeler"][0]["anahtar"]
-    client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": [k]})
+    client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": [], "uygunluk": {k: "evet"}})
     assert db_session.query(BasvuruTakibi).count() == 1
     r = client.request("DELETE", "/api/organizations/me", headers=h, json={"password": "Parola123", "onay": True})
     assert r.status_code == 200
@@ -125,4 +130,57 @@ def test_goc_upgrade_downgrade(tmp_path, monkeypatch):
 def test_self_test_bayragi():
     r = subprocess.run([sys.executable, "-m", "app.basvuru_listesi", "--self-test"], cwd=KOK,
                        stdin=subprocess.DEVNULL, capture_output=True, text=True, encoding="utf-8")
-    assert r.returncode == 0 and "6/6 geçti" in r.stdout
+    assert r.returncode == 0 and "9/9 geçti" in r.stdout
+
+
+# ------------------------------------------------- denetlenmiş kontrol listesi (2026-10-10)
+def test_sart_cevaplari_ayri_saklanir_kutularla_karismaz(client, tesvik):
+    h = _h(client, "a@example.com")
+    m = client.get("/api/basvuru-listesi/9", headers=h).json()["maddeler"]
+    sart, belge = m[0]["anahtar"], m[1]["anahtar"]
+    # şart onay kutusu değil: isaretli listesinde reddedilir
+    assert client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": [sart]}).status_code == 400
+    # belge şart cevabı alamaz
+    assert client.put("/api/basvuru-listesi/9", headers=h, json={"uygunluk": {belge: "evet"}}).status_code == 400
+    assert client.put("/api/basvuru-listesi/9", headers=h, json={"uygunluk": {sart: "belki"}}).status_code == 422
+    d = client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": [belge], "uygunluk": {sart: "hayir"}}).json()
+    assert d["maddeler"][0]["cevap"] == "hayir" and d["uygunluk"]["hayir"] == 1 and d["tamamlanan"] == 1
+    # uygunluk verilmeyen kayıtta cevap korunur
+    d = client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": []}).json()
+    assert d["maddeler"][0]["cevap"] == "hayir" and d["tamamlanan"] == 0
+
+
+def test_eski_sart_isareti_evet_sayilir(client, db_session, tesvik):
+    h = _h(client, "a@example.com")
+    sart = client.get("/api/basvuru-listesi/9", headers=h).json()["maddeler"][0]["anahtar"]
+    client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": []})
+    kayit = db_session.query(BasvuruTakibi).one()
+    kayit.isaretli = [sart]  # eski sürümün kaydı
+    db_session.commit()
+    d = client.get("/api/basvuru-listesi/9", headers=h).json()
+    assert d["maddeler"][0]["cevap"] == "evet" and d["tamamlanan"] == 0
+
+
+def test_kontrol_listesi_alani_esas_alintiyla_doner(client, db_session, tesvik):
+    t = db_session.get(Tesvik, 9)
+    t.kontrol_listesi = [
+        {"tur": "sart", "metin": "Küçük veya orta işletme olmak", "alinti": "küçük ve orta", "kaynak_url": "https://k",
+         "kaynak_tarihi": "2026-10-09", "dogrulandi": True},
+        {"tur": "belge", "metin": "Başvuru Kontrol Formu", "alinti": None, "kaynak_url": "https://k",
+         "kaynak_tarihi": "2026-10-09", "dogrulandi": False},
+        {"tur": "adim", "metin": "Başvuruyu yap: KOSGEB KBS", "alinti": "KBS", "kaynak_url": "https://k",
+         "kaynak_tarihi": "2026-10-09", "dogrulandi": True},
+        {"tur": "bilgi", "metin": "Destek oranı %60", "alinti": "%60", "kaynak_url": "https://k",
+         "kaynak_tarihi": "2026-10-09", "dogrulandi": True}]
+    t.basvuru_bicimi = "kefalet"
+    db_session.commit()
+    d = client.get("/api/basvuru-listesi/9", headers=_h(client, "a@example.com")).json()
+    assert [(m["tur"], m["metin"]) for m in d["maddeler"]] == [
+        ("sart", "Küçük veya orta işletme olmak"), ("belge", "Başvuru Kontrol Formu"),
+        ("adim", "Başvuruyu yap: KOSGEB KBS"), ("bilgi", "Destek oranı %60")]
+    assert d["maddeler"][0]["alinti"] == "küçük ve orta" and d["maddeler"][1]["dogrulandi"] is False
+    assert d["toplam"] == 2  # bilgi işaretlenmez
+    # eski alanlardaki "KOBİ olmak" artık gösterilmez; dönem adım metnine yapıştırılmaz
+    assert all("KOBİ olmak" != m["metin"] and "Dönemsel" not in m["metin"] for m in d["maddeler"])
+    k = d["taslak_kapsami"]
+    assert k["gerekli"] is False and "kefalet" in k["aciklama"] and k["nereye"] == "KOSGEB KBS"

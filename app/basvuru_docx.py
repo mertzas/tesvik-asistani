@@ -18,7 +18,9 @@ from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.shared import Pt, RGBColor
 
 KUTU_BOS, KUTU_DOLU = "☐", "☑"
-TUR_BASLIK = {"sart": "Şartlar", "belge": "Hazırlanacak belgeler", "basvuru": "Başvuru adımı"}
+TUR_BASLIK = {"sart": "Başvurabilir miyim? (şartlar)", "belge": "Hazırlanacak belgeler", "adim": "Başvuru adımları",
+              "bilinmesi": "Bilmeniz gerekenler"}
+CEVAP = {"evet": "✔ sağlıyor", "hayir": "✘ sağlamıyor", "bilmiyorum": "? emin değil"}
 UYARI = ("Bu dosya Teşvik Asistanı ile hazırlanmış bir çalışma belgesidir; resmi başvuru formu değildir. Bilgileri "
          "kurumun güncel duyurusu ve formuyla karşılaştırın.")
 _KALIN = re.compile(r"\*\*(.+?)\*\*")
@@ -97,7 +99,9 @@ def belge_olustur(yanit: dict, bugun: date | None = None) -> bytes:
 
     doc.add_heading(f"Başvuru dosyası: {t['baslik']}", level=0)
     bilgiler = [("Kurum", t.get("kurum")), ("Başvuru yeri", t.get("basvuru_yeri")),
-                ("Başvuru dönemi", t.get("basvuru_suresi")), ("Resmi sayfa", t.get("kaynak_url")),
+                # Çağrı kaydı varsa dönem yalnız "Başvuru dönemleri"nden: eski serbest metin çağrıyla çelişebiliyordu.
+                ("Başvuru dönemi", None if yanit.get("cagrilar") else t.get("basvuru_suresi")),
+                ("Resmi sayfa", t.get("kaynak_url")),
                 ("Hazırlanma tarihi", bugun.strftime("%d.%m.%Y"))]
     for etiket, deger in bilgiler:
         if deger:
@@ -126,13 +130,24 @@ def belge_olustur(yanit: dict, bugun: date | None = None) -> bytes:
     maddeler = yanit.get("maddeler") or []
     if not maddeler:
         doc.add_paragraph(yanit.get("uyari") or "Bu program için şart/belge bilgisi yok.")
-    for tur in ("sart", "belge", "basvuru"):
-        grup = [m for m in maddeler if m["tur"] == tur]
+    def teyit(m):
+        return " (kurumdan teyit edin)" if m.get("dogrulandi") is False else ""
+
+    gruplar = {"sart": [m for m in maddeler if m["tur"] == "sart"],
+               "belge": [m for m in maddeler if m["tur"] == "belge"],
+               "adim": [m for m in maddeler if m["tur"] in ("adim", "basvuru")],
+               "bilinmesi": [m for m in maddeler if m["tur"] in ("kural", "bilgi")]}
+    for ad, grup in gruplar.items():
         if not grup:
             continue
-        doc.add_heading(TUR_BASLIK[tur], level=2)
+        doc.add_heading(TUR_BASLIK[ad], level=2)
         for m in grup:
-            doc.add_paragraph(f"{KUTU_DOLU if m.get('isaretli') else KUTU_BOS} {m['metin']}")
+            if ad == "sart":
+                doc.add_paragraph(f"{m['metin']}{teyit(m)} — {CEVAP.get(m.get('cevap'), 'cevaplanmadı')}", style="List Bullet")
+            elif ad == "bilinmesi":
+                doc.add_paragraph(f"{'⚠ ' if m['tur'] == 'kural' else ''}{m['metin']}{teyit(m)}", style="List Bullet")
+            else:
+                doc.add_paragraph(f"{KUTU_DOLU if m.get('isaretli') else KUTU_BOS} {m['metin']}{teyit(m)}")
 
     doc.add_heading("Başvuru ön taslağı", level=1)
     if yanit.get("taslak"):
@@ -166,8 +181,10 @@ def _self_test() -> int:
         "tesvik": {"id": 1, "baslik": "Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)", "kurum": "Ticaret Bakanlığı",
                    "kaynak_url": "https://ticaret.gov.tr/x", "basvuru_yeri": "İBGS / DYS", "basvuru_suresi": "6 ay",
                    "aktif_mi": True},
-        "maddeler": [{"anahtar": "s:1", "tur": "sart", "metin": "Şirket olmak", "isaretli": True},
-                     {"anahtar": "b:1", "tur": "belge", "metin": "Fatura", "isaretli": False}],
+        "maddeler": [{"anahtar": "s:1", "tur": "sart", "metin": "Şirket olmak", "cevap": "evet"},
+                     {"anahtar": "b:1", "tur": "belge", "metin": "Fatura", "isaretli": False},
+                     {"anahtar": "a:1", "tur": "adim", "metin": "DYS kaydı", "isaretli": True, "dogrulandi": False},
+                     {"anahtar": "k:1", "tur": "kural", "metin": "Önce harcama desteklenmez"}],
         "tamamlanan": 1, "toplam": 2,
         "cagrilar": [{"ad": "2026-2", "acilis": "2026-09-01", "kapanis": "2026-10-31", "durum_metni": "Başvuruya açık",
                       "notlar": None, "kaynak_url": "https://k", "dogrulama_tarihi": "2026-10-08"}],
@@ -182,7 +199,10 @@ def _self_test() -> int:
         ("geçerli docx (zip imzası)", b[:2] == b"PK"),
         ("başlıklar", basliklar[:2] == ["Başvuru dosyası: Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)",
                                         "Başvuru dönemleri"] and "1. İşletme tanıtımı" in basliklar),
-        ("kontrol listesi kutuları", f"{KUTU_DOLU} Şirket olmak" in metin and f"{KUTU_BOS} Fatura" in metin),
+        ("kontrol listesi: şart cevapla, belge/adım kutuyla, kural kutusuz",
+         "Şirket olmak — ✔ sağlıyor" in metin and f"{KUTU_BOS} Fatura" in metin
+         and f"{KUTU_DOLU} DYS kaydı (kurumdan teyit edin)" in metin and "⚠ Önce harcama desteklenmez" in metin
+         and f"{KUTU_BOS} Önce" not in metin),
         ("taslak onay kutuları", f"{KUTU_BOS} belge" in metin and f"{KUTU_DOLU} tamam" in metin),
         ("tablo (ayırıcı satır atlandı)", len(d.tables) == 1 and len(d.tables[0].rows) == 2
          and d.tables[0].cell(1, 0).text == "Personel"),

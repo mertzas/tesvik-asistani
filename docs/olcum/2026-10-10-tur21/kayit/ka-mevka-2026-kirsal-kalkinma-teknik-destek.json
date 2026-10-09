@@ -1,0 +1,79 @@
+{
+  "slug": "ka-mevka-2026-kirsal-kalkinma-teknik-destek",
+  "kurum": "Mevlana Kalkınma Ajansı",
+  "baslik": "2026 Yılı Kırsal Kalkınma Teknik Destek Programı (kooperatifler için mentörlük/eğitim öncelikleri)",
+  "ozet": "Konya-Karaman kırsal ilçelerinde birlik ve kooperatiflere mentörlük (Öncelik 1) ve eğitim (Öncelik 2) desteği sağlayan teknik destek programı. Program toplam bütçesi 6.000.000 TL; Öncelik 1 için proje azami 750.000 TL. Diğer öncelikler yalnız kâr amacı gütmeyen kurumlara açıktır.",
+  "kaynak_url": "https://www.mevka.org.tr/tr/destek-programlari/2026-yili-kirsal-kalkinma-teknik-destek-programi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Program yılsonuna kadar açık öngörülüyor; bütçe biterse Ajans kapalı ilan eder, kapanış ilanı görülmedi.",
+    "alinti": "Programın yılsonuna kadar açık kalması öngörülmektedir.",
+    "kaynak_url": "https://www.mevka.org.tr/upload/events/2026-yili-kirsal-kalkinma-tekn-tr/Başvuru_Rehberi.pdf"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [
+    "Konya",
+    "Karaman"
+  ],
+  "sektorler": [
+    "tarim"
+  ],
+  "sirket_turleri": [
+    "kooperatif"
+  ],
+  "tesvil_tutari": "Doğrudan mali destek değil; mentörlük/eğitim hizmet alımı Ajans karşılar. Program toplam bütçesi 6.000.000 TL; Öncelik 1 proje azami 750.000 TL.",
+  "basvuru_yeri": "KAYS-PFD (Kalkınma Ajansları Yönetim Sistemi)",
+  "basvuru_suresi": "Dönemler halinde; son dönem 31 Aralık 2026",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Öncelik 1 (mentörlük) ve Öncelik 2 (eğitim) için başvuru sahibi birlik veya kooperatif olmalı.",
+      "alinti": "Öncelik 1 ve Öncelik 2 için; Birlik ve Kooperatifler.",
+      "kaynak_url": "https://www.mevka.org.tr/upload/events/2026-yili-kirsal-kalkinma-tekn-tr/Başvuru_Rehberi.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Konya merkez ilçeleri ve Karaman merkez çalışmaları desteklenmez.",
+      "alinti": "Bu program kapsamında Konya Merkez İlçelerine ve Karaman Merkeze yönelik çalışmalar desteklenmeyecektir.",
+      "kaynak_url": "https://www.mevka.org.tr/upload/events/2026-yili-kirsal-kalkinma-tekn-tr/Başvuru_Rehberi.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Uygulama süresi en fazla 6 ay.",
+      "alinti": "Gerçekleştirilecek olan faaliyetlerin uygulama süresi en fazla 6 ay (180 gün) olabilir.",
+      "kaynak_url": "https://www.mevka.org.tr/upload/events/2026-yili-kirsal-kalkinma-tekn-tr/Başvuru_Rehberi.pdf"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "2026 Kırsal Kalkınma TD - 5. Dönem",
+      "acilis": null,
+      "kapanis": "2026-10-31",
+      "on_kayit_son": null,
+      "kaynak_url": "https://www.mevka.org.tr/upload/events/2026-yili-kirsal-kalkinma-tekn-tr/Başvuru_Rehberi.pdf",
+      "alinti": "5. DÖNEM 31 Ekim 2026, 18:00",
+      "notlar": null
+    },
+    {
+      "ad": "2026 Kırsal Kalkınma TD - 6. Dönem",
+      "acilis": null,
+      "kapanis": "2026-12-31",
+      "on_kayit_son": null,
+      "kaynak_url": "https://www.mevka.org.tr/upload/events/2026-yili-kirsal-kalkinma-tekn-tr/Başvuru_Rehberi.pdf",
+      "alinti": "6. DÖNEM 31 Aralık 2026, 18:00",
+      "notlar": null
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "toplam bütçe 6.000.000 TL",
+      "alinti": "Programın Toplam Bütçesi: 6.000.000 TL",
+      "kaynak_url": "https://www.mevka.org.tr/upload/events/2026-yili-kirsal-kalkinma-tekn-tr/Başvuru_Rehberi.pdf"
+    },
+    {
+      "iddia": "Öncelik 1 azami 750.000 TL",
+      "alinti": "Proje Bütçesi: KDV dâhil en fazla 750.000 TL'dir.",
+      "kaynak_url": "https://www.mevka.org.tr/upload/events/2026-yili-kirsal-kalkinma-tekn-tr/Başvuru_Rehberi.pdf"
+    }
+  ]
+}

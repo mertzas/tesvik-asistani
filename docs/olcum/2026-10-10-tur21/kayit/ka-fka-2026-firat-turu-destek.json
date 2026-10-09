@@ -1,0 +1,106 @@
+{
+  "slug": "ka-fka-2026-firat-turu-destek",
+  "kurum": "Fırat Kalkınma Ajansı (FKA)",
+  "baslik": "FKA Fırat Turu Destek Programı (TRB1'e tur düzenleyen seyahat acentelerine konaklama desteği; başvuru süresi 30 Ekim 2026'ya uzatıldı)",
+  "ozet": "FKA, TRB1 Bölgesi'ne (Malatya, Elazığ, Bingöl, Tunceli) tur düzenleyen seyahat acentelerine tur başına konaklama desteği verir: birinci pakette 40.000 TL, ikinci pakette 72.000 TL; programın toplam destek tutarı 3.000.000 TL. Program 28 Temmuz 2025'te başlamış, başvuru süresi 30 Ekim 2026'ya uzatılmıştır; her tur için ayrı çevrim içi başvuru yapılır.",
+  "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Başvuru süresi 30 Ekim 2026'ya uzatılmış; program açık.",
+    "alinti": "başvuru süresi 30 Ekim 2026",
+    "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [
+    "Malatya",
+    "Elazığ",
+    "Bingöl",
+    "Tunceli"
+  ],
+  "sektorler": [
+    "hizmet"
+  ],
+  "tesvil_tutari": "Tur başına azami 40.000 TL (birinci paket) / 72.000 TL (ikinci paket) konaklama desteği; program toplamı 3.000.000 TL",
+  "basvuru_yeri": "Çevrim içi başvuru (her tur için ayrı)",
+  "basvuru_suresi": "28 Temmuz 2025 - 30 Ekim 2026; turlar 31 Temmuz 2025 - 30 Ekim 2026 arasında düzenlenmeli",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "T.C. Kültür ve Turizm Bakanlığı acente işletme belgesine sahip seyahat acentesi olmak",
+      "alinti": "T.C. Kültür ve Turizm Bakanlığı tarafından verilen acente işletme belgesine sahip seyahat acenteleri",
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+    },
+    {
+      "tur": "kural",
+      "metin": "Tur en az 9 kişiyle gerçekleştirilmeli; altındaki turlar desteklenmez",
+      "alinti": "9 (Bu kişi sayısının altında kalan turlar desteklenmeyecektir.)",
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+    },
+    {
+      "tur": "kural",
+      "metin": "Birinci pakette asgari 2 gece konaklama ve 2 tam gün gezi",
+      "alinti": "Asgari 2 Gece Konaklama ve 2 Tam Gün Programa Dâhil İllerde Gezi",
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+    },
+    {
+      "tur": "kural",
+      "metin": "İkinci pakette asgari 3 gece konaklama ve 3 tam gün gezi",
+      "alinti": "Asgari 3 Gece Konaklama ve 3 Tam Gün Programa Dâhil İllerde Gezi",
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+    },
+    {
+      "tur": "adim",
+      "metin": "Her tur için ayrı başvuru yapılır",
+      "alinti": "Düzenlenecek her bir tur için ayrı başvuru yapılmalıdır.",
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "Fırat Turu Destek Programı",
+      "acilis": "2025-07-28",
+      "kapanis": "2026-10-30",
+      "on_kayit_son": null,
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188",
+      "alinti": "31 Temmuz 2025 -30 Ekim 2026 Program Başvuru Başlangıç Tarihi ve Saati 28 Temmuz 2025 Saat 12.00",
+      "notlar": "Başvuru süresi 30 Ekim 2026'ya uzatılmıştır (durum alıntısı); alıntıdaki 30 Ekim 2026 aynı zamanda tur düzenleme aralığının bitişidir."
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "Başvuru süresi 30 Ekim 2026'ya uzatıldı",
+      "alinti": "başvuru süresi 30 Ekim 2026",
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+    },
+    {
+      "iddia": "Başvuru başlangıcı 28 Temmuz 2025",
+      "alinti": "Program Başvuru Başlangıç Tarihi ve Saati 28 Temmuz 2025 Saat 12.00",
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+    },
+    {
+      "iddia": "Tur tarih aralığı",
+      "alinti": "31 Temmuz 2025 -30 Ekim 2026",
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+    },
+    {
+      "iddia": "Tur başına 72.000 TL'ye kadar konaklama desteği",
+      "alinti": "tur düzenleyen seyahat acentelerine her bir tur için 72.000 TL",
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+    },
+    {
+      "iddia": "Program toplam destek tutarı ve paket başına tutarlar",
+      "alinti": "Programın Toplam Destek Tutarı 3.000.000 TL Tur Başına Verilecek Maksimim Destek Tutarı Birinci Pakette; 40.000 TL İkinci Pakette; 72.000 TL",
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+    },
+    {
+      "iddia": "Çevrim içi başvuru",
+      "alinti": "Programa başvurular online olarak yapılmakta",
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+    },
+    {
+      "iddia": "Aynı yıl en fazla 3 kez yararlanma",
+      "alinti": "Bir Seyahat Acentesi Aynı Yıl İçerisinde En Fazla Kaç Defa Program Desteğinden Yararlanabilir? 3",
+      "kaynak_url": "https://fka.gov.tr/firat-turu-destek-programi-basliyor-detayi-1753692906188"
+    }
+  ]
+}

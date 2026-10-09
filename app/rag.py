@@ -64,6 +64,29 @@ CLAUDE_CONNECT_TIMEOUT_SEC = 10.0
 CLAUDE_MAX_TOKENS = 16000
 CLAUDE_EFFORT = "medium"
 CEVAP_KAYIT_SAYISI = 8   # danışmana verilen kayıt sayısı (çok ihtiyaçlı sorularda kota için)
+# Yatırım projesi sorularında (yatırım paketi modu) bileşen bazlı eşleme için daha geniş aday havuzu.
+PAKET_KAYIT_SAYISI = 12
+_YATIRIM_PROJESI = re.compile(
+    r"\b(kur(acağım|acağız|mak|mayı|ulum|ulacak)|yatırım (yap|planı|projes)|tesis|sera|soğuk hava|depo(su)?\b|fabrika|"
+    r"üretim hattı|makine (al|parkur)|kapasite(mi|yi)? art|genişlet|ek bina|modernizasyon)", re.IGNORECASE)
+# Birlikte kullanım / çakışma hükmü taşıyan kontrol listesi maddeleri (alıntılı; tur19).
+_BIRLIKTE = re.compile(r"aynı (harcama|gider|fatura|maliyet)|(başka|diğer) (bir )?(kamu )?(kurum|destek|program|teşvik)|"
+                       r"mükerrer|aynı anda (yararlanıl|kullanıl|alına)|birlikte (kullanıl|yararlanıl|alına)|"
+                       r"(destek|program)\w* ile (birlikte|aynı anda)|kümülatif", re.IGNORECASE)
+
+
+def yatirim_projesi_mi(soru: str) -> bool:
+    return bool(_YATIRIM_PROJESI.search(soru or ""))
+
+
+def birlikte_kullanim_metni(matches: list[Tesvik]) -> str:
+    """Kayıtların denetlenmiş kontrol listelerindeki çakışma/aynı harcama hükümleri (yalnız resmî alıntısı olanlar)."""
+    satir = []
+    for m in matches:
+        for x in (getattr(m, "kontrol_listesi", None) or []):
+            if x.get("tur") in ("kural", "sart") and x.get("alinti") and _BIRLIKTE.search(x.get("metin") or ""):
+                satir.append(f"- [{m.kurum}] {m.baslik}: {x['metin']} (resmî metin: \"{x['alinti']}\")")
+    return "BİRLİKTE KULLANIM KURALLARI (kayıtlardan, resmî metinden alıntılı):\n" + "\n".join(satir) if satir else ""
 DETAY_KARAKTER = 2500    # kayıt başına danışmana giden detay metni (temizlendikten sonra)
 HAVUZ_BOYUTU = 60        # ihtiyaç/profil katmanının kelime aramasından aldığı aday sayısı  # low | medium | high; danışman yanıtı için gecikme/kalite dengesi
 KESILDI_NOTU = "\n\n*(Yanıt uzunluk sınırında kesildi; sorunuzu daraltarak tekrar sorabilirsiniz.)*"
@@ -119,6 +142,7 @@ Her istekte kullanıcı mesajı şu bölümleri içerir; yalnız bunlar senin bi
   - Kayıt altında "SİSTEM ÖN DEĞERLENDİRMESİ" satırı (Karar metni listelerinden kodla hesaplanmış uygunluk).
   - "SİSTEMİN ELEDİĞİ 9903 PROGRAMLARI" bloğu.
   - "DOĞRULANMIŞ KURUM İLETİŞİM BİLGİLERİ", "KULLANICININ İLİNE ÖZEL …" blokları.
+  - "BİRLİKTE KULLANIM KURALLARI": kayıtlardaki çakışma/aynı harcama hükümleri, resmî metinden alıntılı.
   - "KULLANICI PROFİLİ" (boş olabilir) ve varsa "GİRİŞİM MODU BİLGİLERİ".
 - "KULLANICI SORUSU": kullanıcının bu turdaki sorusu.
 
@@ -211,6 +235,27 @@ madde işaretli, düz metin; tablo ve başlık kullanma. Sırayla:
 Bloğu mutlaka </analiz> ile kapat, sonra kullanıcıya dönük yanıta geç. <analiz> dışındaki metinde analiz bloğuna
 atıf yapma.
 </analiz_protokolu>
+
+<yatirim_paketi_modu>
+Kullanıcı bir yatırım projesi (tesis, sera, depo, makine parkuru, kapasite artışı) anlatıyorsa ve TRİYAJ MODU koşulu
+sağlanmıyorsa bu bölüm geçerlidir; diğer tüm kurallar (UYDURMA YASAK, AKTİFLİK, SİSTEM ÖN DEĞERLENDİRMESİ, GARANTİ
+YASAĞI) aynen sürer.
+1. Projeyi bileşenlerine ayır: altyapı/inşaat, makine-ekipman, enerji/sulama, işletme sermayesi, istihdam. Yalnız
+   kullanıcının söylediği ya da projenin doğası gereği kaçınılmaz olan bileşenleri yaz.
+2. Her bileşen için BAĞLAMDAKİ kayıtlardan uygun olanları eşle. Bir bileşene uyan kayıt yoksa "bu bileşen için
+   sistemde kayıtlı destek yok" yaz; genel bilgiden program önerme. Destek sayısı için hedef koyma: uygun 1 destek
+   varsa 1 tane yaz.
+3. Kurum çeşitliliği yalnız bağlam izin veriyorsa: uygun olmayan bir kurumu çeşitlilik için ekleme.
+4. Kayıtlı olmayan ama projeyle ilgili olabilecek kaynaklar (ör. TKDK/IPARD, kalkınma ajansı çağrıları) bağlamda
+   kayıt olarak yoksa tek bir "Ayrıca kontrol edin" satırı yaz: yalnız kurum adı ve "güncel çağrıyı kurumun
+   sayfasından teyit edin"; oran, limit, şart verme.
+5. Kart formatı ### 2. başlıktakiyle aynı; her karta "Karşıladığı bileşen" satırı ekle.
+Sonda kombinasyon tablosu:
+| Bileşen | Destek (Kurum) | Fayda (yalnız bağlamdaki oran/limit; yoksa "bağlamda yok") | Birlikte kullanım |
+"Birlikte kullanım" sütununa yalnız bağlamdaki "BİRLİKTE KULLANIM KURALLARI" bloğunda ya da kayıtta açık hüküm varsa
+"birlikte kullanılabilir" ya da "alternatif (aynı harcama iki kez desteklenmez)" yaz ve kaynağını göster; hüküm yoksa
+"kurumdan teyit edin" yaz.
+</yatirim_paketi_modu>
 
 <cikti_formati>
 Kullanıcıya dönük yanıt şu 5 başlıkla yapılandırılır; soru tek bir küçük ayrıntıyla ilgiliyse ilgili başlıkları kısa
@@ -999,7 +1044,8 @@ def _hazirla(query: str, llm_kullan: bool, profil_kaydi) -> Hazirlik:
 
     profil_kaydi yalnızca YEREL eleme için kullanılır (dışarı gönderilmez); dışarı giden
     profil, rızaya bağlı olan `profil` sözlüğüdür."""
-    matches = retrieve(query, limit=CEVAP_KAYIT_SAYISI, profil_kaydi=profil_kaydi)
+    limit = PAKET_KAYIT_SAYISI if yatirim_projesi_mi(query) else CEVAP_KAYIT_SAYISI
+    matches = retrieve(query, limit=limit, profil_kaydi=profil_kaydi)
     if not matches:
         return Hazirlik([], {}, "", False)
     notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi).items()}
@@ -1018,6 +1064,9 @@ def _hazirla(query: str, llm_kullan: bool, profil_kaydi) -> Hazirlik:
     if girisim:
         # HUKS kodda hesaplanır; blok ek bağlam olarak gider, format eki sistem prompt'una eklenir.
         elenen = (elenen + "\n\n" if elenen else "") + girisim_baglam_metni(profil_kaydi)
+    birlikte = birlikte_kullanim_metni(matches) if llm_kullan else ""
+    if birlikte:
+        elenen = (elenen + "\n\n" if elenen else "") + birlikte
     return Hazirlik(matches, notlar, elenen, girisim)
 
 

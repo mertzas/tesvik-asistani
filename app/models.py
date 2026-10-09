@@ -239,6 +239,13 @@ class Tesvik(Base):
     basvuru_yeri = Column(String, nullable=True)  # "İL Tarım Müdürlüğü" | "TKDK" | "Online"
     basvuru_suresi = Column(String, nullable=True)  # "30 gün" | "Sürekli" | "15 Eylül - 15 Ekim"
     destek_verilme_suresi = Column(String, nullable=True)  # "30-60 gün" | "2-3 ay"
+    # Denetlenmiş kontrol listesi (2026-10-10, scripts/fix_veri_2026_10_10_kontrol_listesi_tur19.py):
+    # [{tur: sart|belge|adim|kural|bilgi, metin, alinti, kaynak_url, kaynak_tarihi, dogrulandi}]. Boşsa liste
+    # basvuru_sartlari/gerekli_belgeler/basvuru_yeri alanlarından eski yolla üretilir (app/basvuru_listesi.py).
+    kontrol_listesi = Column(JSON, nullable=True)
+    # proje | kredi | faiz_destegi | kefalet | bildirim_prim | uretim_odeme | belge_etuys | gider_on_onay | hisse_fon |
+    # gotuyu_hibe | diger (docs/olcum/2026-10-09-uygunluk/KRITER_SEMASI.md); taslak bölümünü belirler.
+    basvuru_bicimi = Column(String(20), nullable=True)
 
     # Programin hala basvuruya acik olup olmadigi - KGF/TUBITAK kayitlarinin
     # cogu "gecmis-programlar" (artik kapali) sayfalarindan cekilmisti ve
@@ -460,6 +467,8 @@ class BasvuruTakibi(Base):
     taslak_model = Column(String(60), nullable=True)
     # Taslak sihirbazı cevapları (proje, gerekçe, faaliyetler, bütçe, oran, çıktılar; app/sablon_taslak.py)
     taslak_cevaplar = Column(JSON, nullable=True)
+    # Şartlara verilen cevaplar {madde anahtarı: "evet" | "hayir" | "bilmiyorum"}; belge/adım işaretlerinden ayrı.
+    uygunluk_cevaplari = Column(JSON, nullable=True)
 
 
 class FinancialProfile(Base):

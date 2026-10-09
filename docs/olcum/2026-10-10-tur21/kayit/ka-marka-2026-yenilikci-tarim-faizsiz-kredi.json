@@ -1,0 +1,120 @@
+{
+  "slug": "ka-marka-2026-yenilikci-tarim-faizsiz-kredi",
+  "kurum": "Doğu Marmara Kalkınma Ajansı (MARKA)",
+  "baslik": "2026 Yılı Yenilikçi Tarım Faizsiz Kredi Desteği Programı (TR42/26/YTA)",
+  "ozet": "TR42 Bölgesi'nde (Kocaeli, Sakarya, Düzce, Bolu, Yalova) faaliyet gösteren KOBİ statüsündeki özel sektör firmalarının yenilikçi tarım kapsamındaki ürün ve hizmet yatırımlarını faizsiz kredi ile destekleyen program. Toplam kaynak 140.000.000 TL; proje başına asgari 1.000.000 TL, azami 8.000.000 TL. İlan tarihi 02 Ekim 2026, KAYS üzerinden son başvuru 15 Aralık 2026 saat 23.59.",
+  "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "İlan 02 Ekim 2026'da yapıldı; KAYS üzerinden son başvuru 15 Aralık 2026 olduğundan çağrı açıktır.",
+    "alinti": "İlan Tarihi 02 Ekim 2026 KAYS Üzerinden Son Başvuru Tarihi 15 Aralık 2026 Saat: 23.59",
+    "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+  },
+  "basvuru_bicimi": "faiz_destegi",
+  "bolge_kisitli": [
+    "Kocaeli",
+    "Sakarya",
+    "Düzce",
+    "Bolu",
+    "Yalova"
+  ],
+  "sektorler": [
+    "tarim"
+  ],
+  "tesvil_tutari": "Faizsiz kredi desteği; proje başına asgari 1.000.000 TL, azami 8.000.000 TL; kredi vadesi 24 ay, en az 6 ay geri ödemesiz dönem; program kaynağı 140.000.000 TL.",
+  "basvuru_yeri": "Kalkınma Ajansları Yönetim Sistemi (KAYS) - kaysuygulama.sanayi.gov.tr; kredi aracı kuruluş üzerinden kullandırılır.",
+  "basvuru_suresi": "İlan 02 Ekim 2026; KAYS üzerinden son başvuru 15 Aralık 2026 saat 23.59; taahhütname son teslim 22 Aralık 2026 saat 17:00.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Başvuru sahibi KOBİ statüsündeki işletme olmalı.",
+      "alinti": "Kimler Başvurabilir? KOBİ Statüsündeki İşletmeler",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    },
+    {
+      "tur": "sart",
+      "metin": "Firma başvuru tarihinde kurulmuş ve tescil edilmiş olmalı; merkez veya şubesi (faaliyet/üretim yeri) TR42 Düzey 2 Bölgesi'nde kayıtlı olmalı.",
+      "alinti": "başvuru tarihi itibarıyla kurulmuş, tescil edilmiş olması ve merkez ya da şubesinin (faaliyet/üretim yerinin) Ajansın faaliyet gösterdiği TR42 Düzey 2 Bölgesi’nde kayıtlı olması gerekmektedir",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    },
+    {
+      "tur": "kural",
+      "metin": "Ana yatırım konusu güneş enerjisi başta olmak üzere enerji sistemleri kurulumu olan projeler desteklenmez.",
+      "alinti": "Ana yatırım konusu güneş enerjisi başta olmak üzere enerji sistemleri kurulumu olan projeler Program kapsamında desteklenmeyecektir.",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    },
+    {
+      "tur": "kural",
+      "metin": "Proje uygulama süresi en fazla 12 aydır.",
+      "alinti": "en fazla 12 ay dır",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Kredi vadesi 24 aydır.",
+      "alinti": "Bu program kapsamında kredi vadesi 24 (yirmi dört) aydır.",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Sözleşme tarihinden itibaren en az 6 ay geri ödemesiz dönem tanınır.",
+      "alinti": "Yararlanıcıya sözleşme tarihinden itibaren en az 6 (altı) ay geri ödemesiz dönem tanınır.",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    },
+    {
+      "tur": "adim",
+      "metin": "Başvuru yalnızca KAYS üzerinden yapılır.",
+      "alinti": "Başvurular sadece Kalkınma Ajansları Yönetim Sistemi (KAYS) üzerinden yapılacaktır.",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    },
+    {
+      "tur": "kural",
+      "metin": "Ödemeler Ajans tarafından doğrudan yararlanıcıya yapılmaz; aracı kuruluşlar üzerinden gerçekleşir.",
+      "alinti": "Faizsiz kredi desteğine ilişkin ödemeler, hiçbir surette Ajans tarafından doğrudan yararlanıcıya yapılamaz, Ajans ile ilgili aracı kuruluş arasında yapılan protokol hükümleri çerçevesinde aracı kuruluşlar üzerinden gerçekleştirilir.",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "TR42/26/YTA",
+      "acilis": "2026-10-02",
+      "kapanis": "2026-12-15",
+      "on_kayit_son": null,
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/",
+      "alinti": "İlan Tarihi 02 Ekim 2026 KAYS Üzerinden Son Başvuru Tarihi 15 Aralık 2026 Saat: 23.59",
+      "notlar": "Açılış tarihi olarak ilan tarihi alınmıştır. Taahhütname son teslim: 22 Aralık 2026 saat 17:00."
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "Program amacı: TR42'de KOBİ statüsündeki özel sektör firmalarının yenilikçi tarım yatırımları",
+      "alinti": "TR42 Bölgesinde faaliyet gösteren KOBİ statüsündeki özel sektör firmalarının, yenilikçi tarım başlığı kapsamındaki ürün ve hizmetlerin geliştirilmesi, üretilmesi, ticarileştirilmesi ve ihracat kapasitesinin artırılmasına yönelik yatırımlarını destekleyerek",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    },
+    {
+      "iddia": "Toplam kaynak 140.000.000 TL",
+      "alinti": "toplam kaynak tutarı 140.000.000 TL",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    },
+    {
+      "iddia": "Proje başına asgari 1.000.000 TL, azami 8.000.000 TL",
+      "alinti": "Asgari tutar: 1.000.000 TL Azami tutar: 8.000.000 TL",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    },
+    {
+      "iddia": "Taahhütname teslim son tarihi 22 Aralık 2026 saat 17:00",
+      "alinti": "Taahhütnamenin Teslimi İçin Son Tarih 22 Aralık 2026 Saat 17:00",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    },
+    {
+      "iddia": "Referans numarası TR42/26/YTA",
+      "alinti": "Referans Numarası TR42/26/YTA",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    },
+    {
+      "iddia": "Kredi vadesi 24 ay",
+      "alinti": "Bu program kapsamında kredi vadesi 24 (yirmi dört) aydır.",
+      "kaynak_url": "https://marka.org.tr/2026-yili-yenilikci-tarim-faizsiz-kredi-destegi-programi/"
+    }
+  ]
+}

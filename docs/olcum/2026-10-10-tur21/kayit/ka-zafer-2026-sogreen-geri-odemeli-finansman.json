@@ -1,0 +1,74 @@
+{
+  "slug": "ka-zafer-2026-sogreen-geri-odemeli-finansman",
+  "kurum": "Zafer Kalkınma Ajansı",
+  "baslik": "SoGreen - Sosyal Kapsayıcı Yeşil Geçiş Projesi Geri Ödemeli Finansman Desteği (TR33/26/SGR)",
+  "ozet": "TR33 Bölgesi'nde (Afyonkarahisar, Kütahya, Manisa, Uşak) faaliyet gösteren KOBİ'lerin çevre dostu üretim ve hizmet süreçlerine geçişini faizsiz kredi (geri ödemeli finansman) ile destekleyen, toplam 315 milyon TL bütçeli program. İlan 25.03.2026, KAYS son başvuru 08.05.2026; çağrı kapanmıştır.",
+  "kaynak_url": "https://zafer.gov.tr/destek-programlari/sogreen-sosyal-kapsayici-yesil-gecis-projesi-geri-odemeli-finansman-destegi",
+  "aktif_mi": false,
+  "durum": {
+    "metin": "KAYS son başvuru tarihi 08.05.2026 geçti; çağrı kapandı.",
+    "alinti": "Son Başvuru Tarihi 08.05.2026 23:59",
+    "kaynak_url": "https://zafer.gov.tr/destek-programlari/sogreen-sosyal-kapsayici-yesil-gecis-projesi-geri-odemeli-finansman-destegi"
+  },
+  "basvuru_bicimi": "faiz_destegi",
+  "bolge_kisitli": [
+    "Afyonkarahisar",
+    "Kütahya",
+    "Manisa",
+    "Uşak"
+  ],
+  "sektorler": [
+    "genel"
+  ],
+  "tesvil_tutari": "Faizsiz kredi desteği (geri ödemeli finansman); program toplam bütçesi 315 milyon TL.",
+  "basvuru_yeri": "Kalkınma Ajansları Yönetim Sistemi (KAYS)",
+  "basvuru_suresi": "İlan 25.03.2026 10:00; KAYS son başvuru 08.05.2026 23:59; taahhütname teslimi 15.05.2026 17:00 (kapandı).",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Program TR33 Bölgesi'nde faaliyet gösteren KOBİ'leri hedefler.",
+      "alinti": "Toplam 315 milyon TL bütçeye sahip program ile TR33 Bölgesi’nde faaliyet gösteren KOBİ’lerin çevre dostu üretim ve hizmet süreçlerine geçişlerinin desteklenmesi",
+      "kaynak_url": "https://zafer.gov.tr/haberler/sosyal-kapsayici-yesil-gecis-destek-programi-bilgilendirme-ve-egitim-toplantilari-gerceklestirildi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Destek türü faizsiz kredidir; yararlanıcı aracı kuruluş (banka) vasıtasıyla faizsiz kredi kullanır.",
+      "alinti": "Ajansın yararlanıcılara faizsiz kredi sağladığı destek türüdür.",
+      "kaynak_url": "https://depo.zafer.gov.tr/depo/documents/Destek_Prg/Sogreen/50babfb3-c5ba-4c04-a380-6a03b781d624.pdf"
+    },
+    {
+      "tur": "adim",
+      "metin": "Başvurular KAYS üzerinden yapılır.",
+      "alinti": "Programa başvurular KAYS sistemi üzerinden yapılmakta olup",
+      "kaynak_url": "https://zafer.gov.tr/haberler/sosyal-kapsayici-yesil-gecis-destek-programi-bilgilendirme-ve-egitim-toplantilari-gerceklestirildi"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "TR33/26/SGR",
+      "acilis": "2026-03-25",
+      "kapanis": "2026-05-08",
+      "on_kayit_son": null,
+      "kaynak_url": "https://zafer.gov.tr/destek-programlari/sogreen-sosyal-kapsayici-yesil-gecis-projesi-geri-odemeli-finansman-destegi",
+      "alinti": "İlan Tarihi 25.03.2026 10:00 Son Başvuru Tarihi 08.05.2026 23:59 KAYS 08.05.2026 23:59 Taahhütname Teslimi 15.05.2026 17:00",
+      "notlar": "Açılış tarihi olarak ilan tarihi alınmıştır."
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "Program türü faizsiz kredi desteği",
+      "alinti": "Türü Faizsiz Kredi Desteği",
+      "kaynak_url": "https://zafer.gov.tr/destek-programlari/sogreen-sosyal-kapsayici-yesil-gecis-projesi-geri-odemeli-finansman-destegi"
+    },
+    {
+      "iddia": "Referans numarası TR33/26/SGR",
+      "alinti": "Referans Numarası TR33/26/SGR",
+      "kaynak_url": "https://zafer.gov.tr/destek-programlari/sogreen-sosyal-kapsayici-yesil-gecis-projesi-geri-odemeli-finansman-destegi"
+    },
+    {
+      "iddia": "Toplam bütçe 315 milyon TL",
+      "alinti": "Toplam 315 milyon TL bütçeye",
+      "kaynak_url": "https://zafer.gov.tr/haberler/sosyal-kapsayici-yesil-gecis-destek-programi-bilgilendirme-ve-egitim-toplantilari-gerceklestirildi"
+    }
+  ]
+}

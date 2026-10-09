@@ -1,0 +1,73 @@
+{
+  "slug": "ka-dogaka-2026-yesil-donusum-teknik-destek",
+  "kurum": "Doğu Akdeniz Kalkınma Ajansı",
+  "baslik": "2026 Yılı Yeşil Dönüşüm Teknik Destek Programı",
+  "ozet": "Hatay, Kahramanmaraş ve Osmaniye'deki kâr amacı güden işletmelere Yeşil Mutabakat uyumu için yol haritası, danışmanlık ve kaynak optimizasyonu analizi desteği. Toplam bütçe 15.000.000 TL; başvuru sahibine Ajansa toplam maliyeti KDV dâhil asgari 400.000 TL, azami 1.000.000 TL. Doğrudan mali destek verilmez; yıl boyu başvuru alınır, son dönem 31 Aralık 2026.",
+  "kaynak_url": "https://www.dogaka.gov.tr/duyuru/2026-yili-yesil-donusum-teknik-destek-programi-ilani/833",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Yıl boyu başvuru alınıyor, 2'şer aylık dönemler halinde değerlendirilir; Temmuz-Ağustos dönemi sonuçları ilan edildi.",
+    "alinti": "Program kapsamında yıl boyu başvuru alınacak olup 2’şer aylık dönemler halinde değerlendirilecektir.",
+    "kaynak_url": "https://www.dogaka.gov.tr/duyuru/2026-yili-yesil-donusum-teknik-destek-programi-ilani/833"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [
+    "Hatay",
+    "Kahramanmaraş",
+    "Osmaniye"
+  ],
+  "sektorler": [
+    "genel"
+  ],
+  "tesvil_tutari": "Doğrudan mali destek yok; danışmanlık hizmeti Ajansa toplam maliyeti KDV dâhil asgari 400.000 TL, azami 1.000.000 TL olan teknik destek. Toplam bütçe 15.000.000 TL.",
+  "basvuru_yeri": "Kalkınma Ajansları Yönetim Sistemi (KAYS)",
+  "basvuru_suresi": "Yıl boyu; son dönem için 31 Aralık 2026 Saat 23.59",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Kâr amacı güden işletmeler uygun başvuru sahibidir.",
+      "alinti": "kâr amacı güden işletmeler uygun başvuru sahipleri olarak belirlenmiştir.",
+      "kaynak_url": "https://www.dogaka.gov.tr/duyuru/2026-yili-yesil-donusum-teknik-destek-programi-ilani/833"
+    },
+    {
+      "tur": "kural",
+      "metin": "Doğrudan mali destek verilmez; danışmanlık Ajans'ın belirlediği uzman kuruluşlarca sunulur.",
+      "alinti": "Yararlanıcı kuruluşlara doğrudan mali destek sağlanmayacak; danışmanlık hizmetleri, Ajans tarafından belirlenen yetkin uzman kurum ve kuruluşlar aracılığıyla sunulacaktır.",
+      "kaynak_url": "https://www.dogaka.gov.tr/duyuru/2026-yili-yesil-donusum-teknik-destek-programi-ilani/833"
+    },
+    {
+      "tur": "adim",
+      "metin": "Başvurular KAYS üzerinden alınır.",
+      "alinti": "Ajansımız tarafından 2026 Yılı Yeşil Dönüşüm Teknik Destek Programı başvuruları, Kalkınma Ajansları Yönetim Sistemi (KAYS) üzerinden",
+      "kaynak_url": "https://www.dogaka.gov.tr/duyuru/2026-yili-yesil-donusum-teknik-destek-programi-ilani/833"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "2026 Yeşil Dönüşüm TD (son dönem)",
+      "acilis": null,
+      "kapanis": "2026-12-31",
+      "on_kayit_son": null,
+      "kaynak_url": "https://www.dogaka.gov.tr/duyuru/2026-yili-yesil-donusum-teknik-destek-programi-ilani/833",
+      "alinti": "Programın son dönemi için başvuru bitiş tarihi 31 Aralık 2026 Saat 23.59’dur.",
+      "notlar": null
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "toplam bütçe 15.000.000 TL",
+      "alinti": "2026 Yılı Yeşil Dönüşüm Teknik Destek Programı için toplam 15.000.000 TL bütçe tahsis edilmiş olup",
+      "kaynak_url": "https://www.dogaka.gov.tr/duyuru/2026-yili-yesil-donusum-teknik-destek-programi-ilani/833"
+    },
+    {
+      "iddia": "destek tutarı aralığı",
+      "alinti": "Program kapsamında bir başvuru sahibine sağlanacak teknik desteğin Ajansa toplam maliyeti KDV dâhil asgari 400.000 TL, azami 1.000.000 TL ’dir.",
+      "kaynak_url": "https://www.dogaka.gov.tr/duyuru/2026-yili-yesil-donusum-teknik-destek-programi-ilani/833"
+    },
+    {
+      "iddia": "Temmuz-Ağustos dönemi sonuç",
+      "alinti": "Bu dönem kapsamında yalnızca Osmaniye ilinden 1 proje başvurusu alınmış olup",
+      "kaynak_url": "https://www.dogaka.gov.tr/duyuru/2026-yili-yesil-donusum-teknik-destek-programi-temmuz-agustos-donemi-degerlendirme-sonuclari-ilani/847"
+    }
+  ]
+}

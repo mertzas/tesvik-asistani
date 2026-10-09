@@ -732,7 +732,15 @@
         // ---- Başvuru kontrol listesi (app/basvuru_listesi.py) ----
         // Maddeler kaydın şart/belge/başvuru yeri alanlarından gelir; işaretler sunucuda saklanır.
         // Yazdırma: tarayıcının yazdır penceresi (PDF olarak kaydet dahil); @media print yalnızca listeyi basar.
-        const KL_TUR_BASLIK = { sart: "Şartlar", belge: "Belgeler", basvuru: "Başvuru" };
+        // Kontrol listesi dört ayrı bölümdür; her bölümün etkileşimi farklıdır (app/basvuru_listesi.py, 2026-10-10):
+        // şartlara Evet/Hayır/Emin değilim, belge ve adımlara "hazır/yapıldı" kutusu, kural ve bilgilere hiçbir şey.
+        const KL_BOLUM = {
+            sart: ["Başvurabilir miyim?", "Her şart için durumunuzu seçin. “Hayır” dediğiniz bir şart varsa bu programa başvuramazsınız."],
+            belge: ["Hazırlanacak belgeler", "Hazır olanları işaretleyin."],
+            adim: ["Başvuru adımları", "Sırayla izleyin; yaptıklarınızı işaretleyin."],
+            bilgi: ["Bilmeniz gerekenler", "Kurallar ve sınırlar; işaretlenmez."],
+        };
+        const KL_CEVAP = [["evet", "Evet"], ["hayir", "Hayır"], ["bilmiyorum", "Emin değilim"]];
         let klAcikTesvik = null;
 
         function klYuzde(d) { return d.toplam ? Math.round(100 * d.tamamlanan / d.toplam) : 0; }
@@ -1228,23 +1236,14 @@
             const detay = document.getElementById("kontrol-yazdir");
             document.getElementById("basvuru-listeleri").hidden = true;
             detay.hidden = false;
-            const kurallar = d.maddeler.filter(x => x.kural);
-            const gruplar = ["sart", "belge", "basvuru"].map(tur => {
-                const m = d.maddeler.filter(x => x.tur === tur && !x.kural);
-                if (!m.length) return "";
-                return `<div class="kl-grup"><h4>${KL_TUR_BASLIK[tur]}</h4>${m.map(x => `
-                    <label class="kl-madde${x.isaretli ? " tamam" : ""}">
-                        <input type="checkbox" data-degisim="kontrolMaddesi" data-arg="${escapeHtml(x.anahtar)}"${x.isaretli ? " checked" : ""}>
-                        <span>${escapeHtml(x.metin)}</span>
-                    </label>`).join("")}</div>`;
-            }).join("") + (kurallar.length ? `<div class="kl-grup kl-kurallar"><h4>Dikkat edilecek kurallar</h4>${kurallar.map(x =>
-                `<div class="kl-kural">⚠ ${escapeHtml(x.metin)}</div>`).join("")}</div>` : "");
             const kaynak = guvenliUrl(d.tesvik.kaynak_url);
+            const gruplar = klBolumlerHtml(d);
             detay.innerHTML = `
                 <div class="yazdirma-baslik">Teşvik Asistanı — Başvuru kontrol listesi · ${new Date().toLocaleDateString("tr-TR")}</div>
                 <div class="kl-ust">
                     <div><h3>${escapeHtml(d.tesvik.baslik)}</h3>
-                         <div class="bl-kurum">${escapeHtml(d.tesvik.kurum)} · <span id="kl-sayac">${d.tamamlanan}/${d.toplam}</span> tamam</div></div>
+                         <div class="bl-kurum">${escapeHtml(d.tesvik.kurum)} · hazırlık <span id="kl-sayac">${d.tamamlanan}/${d.toplam}</span>
+                            ${kaynak ? ` · <a href="${kaynak}" target="_blank" rel="noopener">resmi sayfa</a>` : ""}</div></div>
                     <div class="kl-eylemler yazdirma-gizle">
                         <button type="button" class="birincil-btn" data-tikla="kontrolListesiWord" data-arg="${escapeHtml(String(d.tesvik.id))}">Word (.docx) indir</button>
                         <button type="button" class="ikincil-btn" data-tikla="kontrolListesiYazdir">Yazdır / PDF</button>
@@ -1256,7 +1255,9 @@
                 ${cagrilarHtml(d.cagrilar || [])}
                 ${d.uyari ? `<div class="onizleme-notu">${escapeHtml(d.uyari)}</div>` : gruplar}
                 <div class="kl-taslak">
-                    <h4>Başvuru ön taslağı</h4>
+                    <h4>Başvuru metni taslağı${d.taslak_kapsami && d.taslak_kapsami.resmi_form ? ` — ${escapeHtml(d.taslak_kapsami.resmi_form)}` : ""}</h4>
+                    ${klKapsamHtml(d.taslak_kapsami)}
+                    ${d.taslak_kapsami && !d.taslak_kapsami.gerekli && !d.taslak ? `<details class="yazdirma-gizle kl-yine-de"><summary>Yine de bir metin taslağı hazırlamak istiyorum</summary>` : ""}
                     ${d.taslak ? `
                         <div class="kl-taslak-metin">${mdToHtml(d.taslak)}</div>
                         <div class="kl-taslak-alt yazdirma-gizle">Oluşturma: ${escapeHtml(new Date(d.taslak_tarihi).toLocaleString("tr-TR"))} ·
@@ -1270,6 +1271,7 @@
                         <p class="bolum-aciklama yazdirma-gizle" style="margin-top:10px;">Daha akıcı metin isterseniz:
                             <button type="button" class="ikincil-btn" data-tikla="taslakOlustur" data-arg="yapay_zeka">Yapay zekâyla yaz</button>
                             (Anthropic, ABD; PRO plan ve açık rıza gerekir; günde en çok 5).</p>`}
+                    ${d.taslak_kapsami && !d.taslak_kapsami.gerekli && !d.taslak ? `</details>` : ""}
                     <div id="kl-sihirbaz" class="yazdirma-gizle" hidden></div>
                     <div id="kl-taslak-mesaj" class="yazdirma-gizle"></div>
                 </div>
@@ -1279,15 +1281,82 @@
                 <div id="kl-mesaj" class="yazdirma-gizle"></div>`;
         }
 
-        async function kontrolMaddesi(el) {
+        // Maddenin kaynağı: resmî sayfadan birebir alıntı (açılır) ya da "kurumdan teyit edin" (kaynakta bulunamadı).
+        function klKaynakHtml(x) {
+            const url = guvenliUrl(x.kaynak_url);
+            if (x.dogrulandi === false)
+                return ` <span class="kl-teyit" title="Bu madde kurumun resmi sayfasında bulunamadı; uygulama esaslarından ya da kurumdan teyit edin.">kurumdan teyit edin</span>`;
+            if (!x.alinti) return "";
+            return ` <details class="kl-kaynak"><summary>kaynak</summary><q>${escapeHtml(x.alinti)}</q>${url
+                ? ` <a href="${url}" target="_blank" rel="noopener">resmi sayfa</a>` : ""}</details>`;
+        }
+
+        function klUygunlukOzeti(u) {
+            if (!u || !u.toplam) return "";
+            const cevapsiz = u.toplam - u.evet - u.hayir - u.bilmiyorum;
+            const parca = [`${u.evet} evet`, u.hayir ? `<strong>${u.hayir} hayır</strong>` : "", u.bilmiyorum ? `${u.bilmiyorum} emin değil` : "",
+                           cevapsiz ? `${cevapsiz} cevaplanmadı` : ""].filter(Boolean).join(" · ");
+            return `<div class="kl-uygunluk-ozet${u.hayir ? " hayir" : ""}">${u.hayir
+                ? "Sağlamadığınızı belirttiğiniz şart var: bu programa bu haliyle başvuramazsınız."
+                : (cevapsiz || u.bilmiyorum ? "Şartlar:" : "Şartların hepsini sağladığınızı belirttiniz.")} ${parca}</div>`;
+        }
+
+        function klBolumlerHtml(d) {
+            const tur = x => (x.tur === "basvuru" ? "adim" : x.tur === "kural" ? "bilgi" : x.tur);
+            return Object.keys(KL_BOLUM).map(b => {
+                const m = d.maddeler.filter(x => tur(x) === b);
+                if (!m.length) return "";
+                const [baslik, aciklama] = KL_BOLUM[b];
+                let govde;
+                if (b === "sart") {
+                    govde = `<div id="kl-uygunluk">${klUygunlukOzeti(d.uygunluk)}</div>` + m.map(x => `
+                        <div class="kl-sart${x.cevap ? " c-" + x.cevap : ""}">
+                            <div class="kl-sart-metin">${escapeHtml(x.metin)}${klKaynakHtml(x)}</div>
+                            <div class="kl-secim yazdirma-gizle" role="radiogroup" aria-label="Bu şartı sağlıyor musunuz?">${KL_CEVAP.map(([d_, e]) => `
+                                <label><input type="radio" name="kls-${escapeHtml(x.anahtar)}" value="${d_}" data-degisim="klKaydet"
+                                    data-arg="${escapeHtml(x.anahtar)}"${x.cevap === d_ ? " checked" : ""}><span>${e}</span></label>`).join("")}</div>
+                            <div class="kl-sart-yazdir">${x.cevap ? KL_CEVAP.find(c => c[0] === x.cevap)[1] : "cevaplanmadı"}</div>
+                        </div>`).join("");
+                } else if (b === "bilgi") {
+                    govde = m.map(x => `<div class="kl-kural">${x.tur === "kural" ? "⚠ " : "• "}${escapeHtml(x.metin)}${klKaynakHtml(x)}</div>`).join("");
+                } else {
+                    const etiket = b === "belge" ? "hazır" : "yapıldı";
+                    govde = `<${b === "adim" ? "ol" : "ul"} class="kl-isler">` + m.map(x => `
+                        <li><label class="kl-madde${x.isaretli ? " tamam" : ""}">
+                            <input type="checkbox" data-degisim="klKaydet" data-arg="${escapeHtml(x.anahtar)}"${x.isaretli ? " checked" : ""}
+                                aria-label="${etiket}">
+                            <span>${escapeHtml(x.metin)}</span></label>${klKaynakHtml(x)}</li>`).join("") + `</${b === "adim" ? "ol" : "ul"}>`;
+                }
+                return `<div class="kl-grup kl-bolum-${b}"><h4>${baslik}</h4><p class="kl-grup-aciklama">${aciklama}</p>${govde}</div>`;
+            }).join("");
+        }
+
+        // Taslak neye hazırlanıyor (app/sablon_taslak.taslak_kapsami): ne için, nereye girilir, ne değildir.
+        function klKapsamHtml(k) {
+            if (!k) return "";
+            const form = guvenliUrl(k.form_kaynak);
+            if (!k.gerekli)
+                return `<div class="kl-kapsam gereksiz"><strong>Bu programda başvuru metni yazılmaz.</strong> ${escapeHtml(k.aciklama || "")}</div>`;
+            return `<div class="kl-kapsam">
+                <div><strong>Ne için:</strong> ${escapeHtml(k.ne_icin)}${form ? ` (<a href="${form}" target="_blank" rel="noopener">resmi form</a>)` : ""}</div>
+                ${k.nereye ? `<div><strong>Nereye girilir:</strong> ${escapeHtml(k.nereye)}</div>` : ""}
+                <div><strong>Ne değildir:</strong> ${escapeHtml(k.ne_degil)}</div>
+                ${k.aciklama ? `<div class="kl-kapsam-not">${escapeHtml(k.aciklama)}</div>` : ""}</div>`;
+        }
+
+        // Belge/adım kutuları ve şart cevapları tek PUT ile kaydedilir (tam liste; işaret kaldırma = listeden çıkarma).
+        async function klKaydet(el) {
             if (klAcikTesvik === null) return;
-            const kutular = [...document.querySelectorAll('#kontrol-yazdir input[data-degisim="kontrolMaddesi"]')];
-            const isaretli = kutular.filter(k => k.checked).map(k => k.dataset.arg);
-            el.closest(".kl-madde").classList.toggle("tamam", el.checked);
+            const kok = document.getElementById("kontrol-yazdir");
+            const isaretli = [...kok.querySelectorAll('input[type="checkbox"][data-degisim="klKaydet"]')].filter(k => k.checked).map(k => k.dataset.arg);
+            const uygunluk = Object.fromEntries([...kok.querySelectorAll('input[type="radio"][data-degisim="klKaydet"]:checked')]
+                .map(r => [r.dataset.arg, r.value]));
+            if (el.type === "checkbox") el.closest(".kl-madde").classList.toggle("tamam", el.checked);
+            else el.closest(".kl-sart").className = `kl-sart c-${el.value}`;
             const mesaj = document.getElementById("kl-mesaj");
             try {
                 const res = await fetch(`${API_BASE}/basvuru-listesi/${klAcikTesvik}`, {
-                    method: "PUT", body: JSON.stringify({ isaretli }),
+                    method: "PUT", body: JSON.stringify({ isaretli, uygunluk }),
                     headers: { "Authorization": `Bearer ${authToken}`, "Content-Type": "application/json" }
                 });
                 const d = await res.json();
@@ -1299,9 +1368,13 @@
                 mesaj.innerHTML = "";
                 document.getElementById("kl-sayac").textContent = `${d.tamamlanan}/${d.toplam}`;
                 document.getElementById("kl-cubuk").style.width = `${klYuzde(d)}%`;
+                const ozet = document.getElementById("kl-uygunluk");
+                if (ozet) ozet.innerHTML = klUygunlukOzeti(d.uygunluk);
             } catch (e) {
-                el.checked = !el.checked;
-                el.closest(".kl-madde").classList.toggle("tamam", el.checked);
+                if (el.type === "checkbox") {
+                    el.checked = !el.checked;
+                    el.closest(".kl-madde").classList.toggle("tamam", el.checked);
+                }
                 mesaj.innerHTML = `<div class="error">Kaydedilemedi: ${escapeHtml(e.message)}</div>`;
             }
         }
@@ -1960,7 +2033,7 @@
             rizaDegistir: (el) => rizaDegistir(el),
             ozetEylem: (el) => ozetEylem(el),
             kontrolListesiAc: (el) => kontrolListesiAc(el.dataset.arg),
-            kontrolMaddesi: (el) => kontrolMaddesi(el),
+            klKaydet: (el) => klKaydet(el),
             kontrolListesiYazdir: () => kontrolListesiYazdir(),
             kontrolListesiWord: (el) => kontrolListesiWord(el),
             kontrolListesiKaldir: (el) => kontrolListesiKaldir(el.dataset.arg),

@@ -1,0 +1,89 @@
+{
+  "slug": "ka-oka-2026-sosyal-kalkinma-girisimcilik-td",
+  "kurum": "Orta Karadeniz Kalkınma Ajansı (OKA)",
+  "baslik": "2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Programı (TR83/26/TD-SKG)",
+  "ozet": "Girişimcilik ekosistemindeki girişimcilerin ürün ve hizmetlerinin geliştirilmesi, yerel ürünlerin ticarileştirilmesi ve sosyal girişimlerin ürün geliştirmesine yönelik eğitim ve danışmanlık hizmetlerini kapsar. Doğrudan mali destek verilmez; satın alma hizmet alımı yöntemiyle Ajans tarafından yapılır. Toplam kaynak 14.000.000 TL'dir.",
+  "kaynak_url": "https://oka.gov.tr/assets/upload/dosyalar/tr83-26-td-skg_-basvuru-rehberi_15012026.pdf",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Teknik destek başvuruları sürekli alınır; 2026'nın son dönemi için KAYS son başvuru tarihi 25.12.2026'dır (bugün 2026-10-09 itibarıyla açık).",
+    "alinti": "SON BAŞVURU TARİHİ KAYS ÜZERİNDEN: 25.12.2026 Cuma Saat 23:59",
+    "kaynak_url": "https://oka.gov.tr/assets/upload/dosyalar/tr83-26-td-skg_-basvuru-rehberi_15012026.pdf"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [
+    "Amasya",
+    "Çorum",
+    "Samsun",
+    "Tokat"
+  ],
+  "sektorler": [
+    "genel",
+    "hizmet"
+  ],
+  "tesvil_tutari": "%100 destek (satın alma Ajans tarafından); eğitim hizmeti için azami 200.000 TL, danışmanlık için azami 400.000 TL (KDV dahil); toplam kaynak 14.000.000 TL",
+  "basvuru_yeri": "KAYS (Kalkınma Ajansları Yönetim Sistemi) - https://kaysuygulama.sanayi.gov.tr",
+  "basvuru_suresi": "2 aylık dönemler halinde; 5. dönem son başvuru 31 Ekim 2026, 6. dönem son başvuru 25 Aralık 2026 (saat 23.59)",
+  "kontrol_listesi": [
+    {
+      "tur": "bilgi",
+      "metin": "Kâr amacı güden gerçek ve tüzel kişiler ile kooperatifler başvurabilir.",
+      "alinti": "Kâr amacı güden diğer gerçek ve tüzel kişiler",
+      "kaynak_url": "https://oka.gov.tr/assets/upload/dosyalar/tr83-26-td-skg_-basvuru-rehberi_15012026.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Doğrudan mali destek verilmez; hizmet Ajans tarafından satın alma yoluyla sağlanır.",
+      "alinti": "Program kapsamında doğrudan mali destek verilmez, satın alma hizmet alımı yöntemiyle Ajans tarafından yapılır.",
+      "kaynak_url": "https://oka.gov.tr/destekler/basvurabileceklerim"
+    },
+    {
+      "tur": "kural",
+      "metin": "Başvurular ikişer aylık dönemler halinde gruplandırılır ve bir sonraki ay değerlendirilir.",
+      "alinti": "Teknik destek başvuruları sürekli olarak alınmakta ancak, başvurular ikişer aylık dönemler halinde gruplandırılarak bir sonraki ay değerlendirilmektedir.",
+      "kaynak_url": "https://oka.gov.tr/destekler/basvurabileceklerim"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "5. Dönem (Eylül-Ekim 2026)",
+      "acilis": null,
+      "kapanis": "2026-10-31",
+      "on_kayit_son": null,
+      "kaynak_url": "https://oka.gov.tr/destekler/basvurabileceklerim",
+      "alinti": "5. Dönem (Eylül-Ekim 2026) 31 Ekim 2026 saat: 23.59",
+      "notlar": "Taahhütname son teslim 6 Kasım 2026 saat 17.00"
+    },
+    {
+      "ad": "6. Dönem (Kasım-Aralık 2026)",
+      "acilis": null,
+      "kapanis": "2026-12-25",
+      "on_kayit_son": null,
+      "kaynak_url": "https://oka.gov.tr/destekler/basvurabileceklerim",
+      "alinti": "6. Dönem (Kasım-Aralık 2026) 25 Aralık 2026 saat:23.59",
+      "notlar": "Taahhütname son teslim 4 Ocak 2027 saat 17.00"
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "Destek oranı %100 (satın alma Ajans tarafından)",
+      "alinti": "% 100 (Satın alma Ajans tarafından gerçekleştirilecektir)",
+      "kaynak_url": "https://oka.gov.tr/assets/upload/dosyalar/tr83-26-td-skg_-basvuru-rehberi_15012026.pdf"
+    },
+    {
+      "iddia": "Toplam kaynak 14.000.000 TL",
+      "alinti": "Program kapsamında desteklenecek projeler için tahsis edilen toplam kaynak tutarı 14.000.000 TL’dir.",
+      "kaynak_url": "https://oka.gov.tr/destekler/basvurabileceklerim"
+    },
+    {
+      "iddia": "Eğitim hizmeti için azami 200.000 TL (KDV dahil)",
+      "alinti": "Eğitim hizmeti için; azami 200.000 TL",
+      "kaynak_url": "https://oka.gov.tr/destekler/basvurabileceklerim"
+    },
+    {
+      "iddia": "Danışmanlık ve program-proje hazırlama talepleri için azami 400.000 TL (KDV dahil)",
+      "alinti": "Danışmanlık sağlama ve program-proje hazırlanmasına katkı sağlamaya yönelik teknik destek talepleri için; azami 400.000 TL",
+      "kaynak_url": "https://oka.gov.tr/destekler/basvurabileceklerim"
+    }
+  ]
+}

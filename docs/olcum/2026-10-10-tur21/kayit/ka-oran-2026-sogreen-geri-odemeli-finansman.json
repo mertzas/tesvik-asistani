@@ -1,0 +1,87 @@
+{
+  "slug": "ka-oran-2026-sogreen-geri-odemeli-finansman",
+  "kurum": "Orta Anadolu Kalkınma Ajansı",
+  "baslik": "ORAN 2026 SoGreen Geri Ödemeli Finansman Destek Programı (Sosyal Kapsayıcı Yeşil Geçiş)",
+  "ozet": "Orta Anadolu Kalkınma Ajansı'nın TR72 Bölgesi'nde (Kayseri, Sivas, Yozgat) seçili sektörlerde faaliyet gösteren KOBİ'lere yönelik, faiz veya kar payı içermeyen geri ödemeli finansman desteği. Döngüsel ekonomi, kaynak verimliliği ve sürdürülebilir üretime geçiş yatırımlarını destekler; mikro işletmeler hariç KOBİ'ler başvurabilir. Başvuru dönemi kapanmıştır.",
+  "kaynak_url": "https://www.oran.org.tr/tr/sogreen-destekleri/2026-sogreen-geri-odemeli-finansman-destek-programi",
+  "aktif_mi": false,
+  "durum": {
+    "metin": "KAYS üzerinden son başvuru tarihi 8 Mayıs 2026 idi; çağrı kapandı.",
+    "alinti": "Son Başvuru Tarihi/ Saati : 08/05/2026 – 23:50 Taahhütname İçin Son E-imza/Teslim Tarihi/ Saati : 15/05/2026 – 17:00",
+    "kaynak_url": "https://www.oran.org.tr/tr/sogreen-destekleri/2026-sogreen-geri-odemeli-finansman-destek-programi"
+  },
+  "basvuru_bicimi": "kredi",
+  "bolge_kisitli": [
+    "Kayseri",
+    "Sivas",
+    "Yozgat"
+  ],
+  "sektorler": [
+    "imalat",
+    "tarim",
+    "hizmet"
+  ],
+  "tesvil_tutari": "Destek tutarı 2.500.000 – 7.500.000 TL; faizsiz; 6 ay geri ödemesiz, ardından 24 ay eşit taksitle geri ödeme; toplam program bütçesi 260.000.000 TL",
+  "basvuru_yeri": "Kalkınma Ajansları Yönetim Sistemi (KAYS)",
+  "basvuru_suresi": "Başvuru 25/03/2026 - 08/05/2026 (23:50); taahhütname 15/05/2026 (17:00) - kapandı",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Başvuru sahibi mikro işletmeler hariç KOBİ olmalı",
+      "alinti": "* Başvuru sahibinin KOBİ(mikro işletmeler hariç) statüsünde olması gerekmektedir.",
+      "kaynak_url": "https://www.oran.org.tr/tr/sogreen-destekleri/2026-sogreen-geri-odemeli-finansman-destek-programi"
+    },
+    {
+      "tur": "sart",
+      "metin": "Başvuru tarihinden önce kurulmuş ve tescil edilmiş olmalı",
+      "alinti": "Başvuru tarihinden önce kurulmuş ve tescil edilmiş olması,",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/oran-gof-cagri-rehberi_290426.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Merkez veya yasal şube Kayseri, Sivas veya Yozgat'ta kayıtlı olmalı",
+      "alinti": "Başvuru sahibinin merkezinin ya da yasal şubesinin Ajansın faaliyet gösterdiği TR72 Bölgesi’nde yer alan Kayseri, Sivas ve Yozgat illerinden birinde kayıtlı olması,",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/oran-gof-cagri-rehberi_290426.pdf"
+    },
+    {
+      "tur": "belge",
+      "metin": "Türkiye Vakıflar Bankası şubesinden kredi uygunluk belgesi gerekir",
+      "alinti": "Türkiye Vakıflar Bankası T.A.O. şubelerinden kredi uygunluk belgesini temin etmiş KOBİ’ler uygun başvuru sahibi olarak tanımlanmıştır.",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/oran-gof-cagri-rehberi_290426.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Vade ve faiz koşulu",
+      "alinti": "Geri ödemeli finansman desteği kapsamında KOBİ’lerin Program kapsamında belirlenen önceliklere ilişkin yatırımları 6 ayı geri ödemesiz, azami 24 ay eşit taksitlerle geri ödemeli toplam 30 ay vadeli, herhangi bir faiz ya da kar payı olmaksızın desteklenecektir.",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/oran-gof-cagri-rehberi_290426.pdf"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "2026 SoGreen Geri Ödemeli Finansman Desteği Çağrısı",
+      "acilis": "2026-03-25",
+      "kapanis": "2026-05-08",
+      "on_kayit_son": null,
+      "kaynak_url": "https://www.oran.org.tr/dokuman/oran-gof-cagri-rehberi_290426.pdf",
+      "alinti": "KAYS ÜZERİNDEN BAŞVURU BAŞLANGIÇ TARİHİ 25/03/2026 KAYS ÜZERİNDEN SON BAŞVURU TARİHİ/SAATİ 08/05/2026 – 23:50",
+      "notlar": "Taahhütname için son e-imza/teslim 15/05/2026 saat 17:00"
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "Bütçe, destek tutarı, vade",
+      "alinti": "Toplam bütçe: 260.000.000 TL Destek tutarı: 2.500.000 – 7.500.000 TL Proje süresi: Azami 6 ay Geri ödeme: 6 ay geri ödemesiz, ardından 24 ay eşit taksitlerle geri ödeme",
+      "kaynak_url": "https://www.oran.org.tr/tr/sogreen-destekleri/2026-sogreen-geri-odemeli-finansman-destek-programi"
+    },
+    {
+      "iddia": "Son başvuru ve taahhütname tarihi",
+      "alinti": "Son Başvuru Tarihi/ Saati : 08/05/2026 – 23:50 Taahhütname İçin Son E-imza/Teslim Tarihi/ Saati : 15/05/2026 – 17:00",
+      "kaynak_url": "https://www.oran.org.tr/tr/sogreen-destekleri/2026-sogreen-geri-odemeli-finansman-destek-programi"
+    },
+    {
+      "iddia": "30 ay vadeli, faiz/kar payı yok",
+      "alinti": "Geri ödemeli finansman desteği kapsamında KOBİ’lerin programın belirlenen önceliklerine ilişkin yatırımları 6 ayı geri ödemesiz, azami 24 ay eşit taksitlerle geri ödemeli toplam 30 ay vadeli, herhangi bir faiz ya da kar payı olmaksızın desteklenecektir.",
+      "kaynak_url": "https://www.oran.org.tr/dokuman/oran-gof-cagri-rehberi_290426.pdf"
+    }
+  ]
+}

@@ -449,6 +449,47 @@
         /* Kurallar (…desteklenmez) işaretlenmez; taslak sihirbazı (app/sablon_taslak.py) */
         .kl-kurallar { background: #fff8eb; border-radius: 8px; padding: 10px 14px; }
         .kl-kural { font-size: 14px; color: #6b4a00; margin: 4px 0; line-height: 1.5; }
+        /* Dört bölüm, dört etkileşim (2026-10-10): şart = Evet/Hayır/Emin değilim, belge/adım = kutu, bilgi = kutusuz */
+        .kl-grup-aciklama { font-size: 12px; color: #777; margin: -2px 0 8px; }
+        .kl-isler { list-style: none; margin: 0; padding: 0; }
+        ol.kl-isler { list-style: decimal; padding-left: 22px; }
+        ol.kl-isler li::marker { color: #667eea; font-weight: bold; }
+        .kl-isler li { margin: 2px 0; }
+        ul.kl-isler li { display: flex; flex-wrap: wrap; align-items: baseline; }
+        ul.kl-isler li .kl-madde { flex: 1 1 auto; }
+        .kl-bolum-bilgi { background: #fff8eb; border-radius: 8px; padding: 2px 14px 10px; margin-top: 12px; }
+        .kl-sart { display: flex; gap: 12px; justify-content: space-between; align-items: center; flex-wrap: wrap;
+                   padding: 8px 10px; border-radius: 6px; border-left: 3px solid #d8dbef; margin: 4px 0; font-size: 14px; line-height: 1.5; }
+        .kl-sart.c-evet { border-left-color: #2e9e6b; background: #f2fbf6; }
+        .kl-sart.c-hayir { border-left-color: #d9534f; background: #fdf2f2; }
+        .kl-sart.c-bilmiyorum { border-left-color: #f0ad4e; background: #fffaf0; }
+        .kl-sart-metin { flex: 1 1 320px; min-width: 0; }
+        .kl-sart-metin, .kl-madde span, .kl-kural { overflow-wrap: anywhere; }
+        .kl-taslak-metin { overflow-x: auto; }
+        .kl-secim { display: inline-flex; border: 1px solid #cfd3ea; border-radius: 6px; overflow: hidden; flex: 0 0 auto; }
+        .kl-secim label { cursor: pointer; }
+        .kl-secim input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+        .kl-secim span { display: block; padding: 5px 11px; font-size: 13px; color: #555; border-left: 1px solid #cfd3ea; }
+        .kl-secim label:first-child span { border-left: 0; }
+        .kl-secim input:focus-visible + span { outline: 2px solid #667eea; outline-offset: -2px; }
+        .kl-secim input[value="evet"]:checked + span { background: #2e9e6b; color: white; }
+        .kl-secim input[value="hayir"]:checked + span { background: #d9534f; color: white; }
+        .kl-secim input[value="bilmiyorum"]:checked + span { background: #f0ad4e; color: #3d2a00; }
+        .kl-sart-yazdir { display: none; }
+        .kl-uygunluk-ozet { font-size: 13px; color: #555; margin: 0 0 6px; }
+        .kl-uygunluk-ozet.hayir { color: #a12622; background: #fdf2f2; padding: 8px 10px; border-radius: 6px; }
+        .kl-teyit { display: inline-block; font-size: 11px; color: #7a5a00; background: #fff3cd; border-radius: 10px;
+                    padding: 1px 8px; margin-left: 4px; cursor: help; white-space: nowrap; }
+        .kl-kaynak { display: inline; font-size: 12px; color: #666; }
+        .kl-kaynak summary { display: inline; cursor: pointer; color: #667eea; list-style: none; margin-left: 4px; }
+        .kl-kaynak summary::-webkit-details-marker { display: none; }
+        .kl-kaynak[open] { display: block; margin: 4px 0 6px 26px; padding: 6px 10px; background: #f6f7fb; border-radius: 6px; }
+        .kl-kaynak q { font-style: italic; }
+        .kl-kapsam { font-size: 13px; color: #444; background: #f6f7fb; border-radius: 8px; padding: 10px 14px; margin-bottom: 12px;
+                     line-height: 1.6; }
+        .kl-kapsam.gereksiz { background: #eef7f2; color: #234d38; }
+        .kl-kapsam-not { margin-top: 6px; color: #666; }
+        .kl-yine-de summary { cursor: pointer; color: #667eea; font-size: 13px; margin-bottom: 8px; }
         .sihirbaz { border: 1px solid #e6e8f0; border-radius: 10px; padding: 16px 18px; margin: 12px 0; background: #fafbff; }
         .sihirbaz h4 { margin: 18px 0 8px; color: #4b55c4; font-size: 15px; }
         .sihirbaz h4:first-child { margin-top: 0; }
@@ -479,7 +520,8 @@
             body.kl-yazdiriliyor #yazdir-alani { display: block; padding: 0 12mm; }
             #yazdir-alani .yazdirma-gizle { display: none !important; }
             #yazdir-alani .yazdirma-baslik { display: block; font-size: 12px; color: #555; margin-bottom: 8px; }
-            #yazdir-alani .kl-madde { break-inside: avoid; }
+            #yazdir-alani .kl-madde, #yazdir-alani .kl-sart { break-inside: avoid; }
+            #yazdir-alani .kl-sart-yazdir { display: block; font-weight: bold; }
         }
         .anahtar input { transform: scale(1.3); margin-right: 8px; }
         .bos-durum { text-align: center; padding: 28px 16px; color: #777; font-size: 14px; background: white; border-radius: 10px; }

@@ -1,0 +1,58 @@
+{
+  "slug": "ka-oka-2026-katma-degerli-uretim-fizibilite",
+  "kurum": "Orta Karadeniz Kalkınma Ajansı (OKA)",
+  "baslik": "2026 Yılı Katma Değerli Üretim ve İhracat Odaklı Fizibilite Desteği Programı (TR83/26/FZD-KD)",
+  "ozet": "Bölgede katma değerli üretim ve ihracatın geliştirilmesine yönelik yatırım projelerinin fizibilite çalışmalarını destekler. Başvuru sahipleri arasında kooperatifler, organize sanayi bölgeleri ve sanayi siteleri yer alır; proje başına 400.000 TL ile 1.500.000 TL arası destek verilir. Bütçe 20.000.000 TL'dir.",
+  "kaynak_url": "https://oka.gov.tr/assets/upload/dosyalar/26-fzd-kd-basvuru-rehberi.pdf",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "KAYS son başvuru tarihi 25/12/2026'dır (bugün 2026-10-09 itibarıyla açık).",
+    "alinti": "KAYS üzerinden ilk başvuru tarihi: 16/02/2026 KAYS üzerinden son başvuru tarihi: 25/12/2026 Saat: 23:59",
+    "kaynak_url": "https://oka.gov.tr/assets/upload/dosyalar/26-fzd-kd-basvuru-rehberi.pdf"
+  },
+  "basvuru_bicimi": "proje",
+  "bolge_kisitli": ["Amasya", "Çorum", "Samsun", "Tokat"],
+  "sektorler": ["imalat", "ihracat"],
+  "sirket_turleri": ["kooperatif"],
+  "tesvil_tutari": "Proje başına asgari 400.000 TL, azami 1.500.000 TL; destek oranı en az %25, en fazla %75; toplam bütçe 20.000.000 TL",
+  "basvuru_yeri": "KAYS (Kalkınma Ajansları Yönetim Sistemi) - https://kaysuygulama.sanayi.gov.tr",
+  "basvuru_suresi": "KAYS üzerinden 16/02/2026 - 25/12/2026 saat 23:59",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Başvuru sahibi kooperatif, birlik, OSB, sanayi sitesi, serbest bölge işleticisi gibi uygun kuruluşlardan biri olmalıdır; kâr amacı güden şirketler listede yer almamaktadır.",
+      "alinti": "Organize-Sanayi Bölgeleri, Sanayi Siteleri, Serbest Bölge İşleticileri",
+      "kaynak_url": "https://oka.gov.tr/assets/upload/dosyalar/26-fzd-kd-basvuru-rehberi.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Kooperatifler uygun başvuru sahibidir.",
+      "alinti": "Kooperatifler, Sivil Toplum Kuruluşları",
+      "kaynak_url": "https://oka.gov.tr/assets/upload/dosyalar/26-fzd-kd-basvuru-rehberi.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Proje bütçesinin en az %25'i, en fazla %75'i hibe olarak desteklenir; kalanı eş finansmandır.",
+      "alinti": "Destek kapsamında proje bütçesinin en az %25’i, en fazla ise %75’i hibe olarak desteklenecektir.",
+      "kaynak_url": "https://oka.gov.tr/assets/upload/dosyalar/26-fzd-kd-basvuru-rehberi.pdf"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "2026 Katma Değerli Üretim ve İhracat Odaklı Fizibilite Desteği çağrısı",
+      "acilis": "2026-02-16",
+      "kapanis": "2026-12-25",
+      "on_kayit_son": null,
+      "kaynak_url": "https://oka.gov.tr/assets/upload/dosyalar/26-fzd-kd-basvuru-rehberi.pdf",
+      "alinti": "KAYS üzerinden ilk başvuru tarihi: 16/02/2026 KAYS üzerinden son başvuru tarihi: 25/12/2026 Saat: 23:59 Taahhütname için son teslim tarihi: 04/01/2027 Saat: 17:00",
+      "notlar": "Taahhütname son teslim 04/01/2027 saat 17:00"
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "Toplam bütçe 20.000.000 TL; asgari 400.000 TL, azami 1.500.000 TL; oran %25-%75",
+      "alinti": "Toplam bütçe 20.000.000 TL Destek miktarı Asgari Tutar: 400.000 TL Azami Tutar: 1.500.000 TL Destek oranı En az %25 - En fazla %75",
+      "kaynak_url": "https://oka.gov.tr/assets/upload/dosyalar/26-fzd-kd-basvuru-rehberi.pdf"
+    }
+  ]
+}

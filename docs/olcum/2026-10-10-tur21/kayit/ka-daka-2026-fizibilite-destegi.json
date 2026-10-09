@@ -1,0 +1,87 @@
+{
+  "slug": "ka-daka-2026-fizibilite-destegi",
+  "kurum": "Doğu Anadolu Kalkınma Ajansı (DAKA)",
+  "baslik": "DAKA 2026 Yılı Fizibilite Desteği (FZD) Programı (TRB2/26/FZD)",
+  "ozet": "DAKA 2026 Yılı Fizibilite Desteği Programı 24.07.2026 itibarıyla KAYS'tan başvuruya açıldı; TRB2 Bölgesi'nde (Van, Muş, Bitlis, Hakkâri) yatırımlara yönelik fizibilite çalışmalarını destekler. Toplam bütçe 3.000.000 TL, proje başına 300.000 TL ile 600.000 TL, azami süre 12 ay. Uygun başvuru sahipleri arasında kâr amacı gütmeyen birlikler ve kooperatifler de vardır.",
+  "kaynak_url": "https://www.daka.org.tr/destekler/program/2026-fizibilite-destegi-fzd-programi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Başvuru 24.07.2026'da açıldı, son başvuru 25.12.2026; sayfada açık program olarak listeleniyor.",
+    "alinti": "Başlangıç 24.07.2026 Son Başvuru 25.12.2026",
+    "kaynak_url": "https://www.daka.org.tr/destekler/program/2026-fizibilite-destegi-fzd-programi"
+  },
+  "basvuru_bicimi": "proje",
+  "bolge_kisitli": [
+    "Van",
+    "Muş",
+    "Bitlis",
+    "Hakkâri"
+  ],
+  "sektorler": [
+    "genel"
+  ],
+  "sirket_turleri": [
+    "kooperatif"
+  ],
+  "tesvil_tutari": "Toplam bütçe 3.000.000,00 TL; proje başına 300.000,00 TL - 600.000,00 TL; azami proje süresi 12 ay",
+  "basvuru_yeri": "Kalkınma Ajansları Yönetim Sistemi (KAYS)",
+  "basvuru_suresi": "24.07.2026 - 25.12.2026",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Kooperatifler yalnızca kâr amacı gütmeyen birlik/kooperatif olarak başvurabilir (listede ayrıca yerel yönetimler, üniversiteler, STK'lar, OSB'ler vb. yer alır)",
+      "alinti": "Kâr amacı gütmeyen birlikler ve kooperatifler",
+      "kaynak_url": "https://www.daka.org.tr/destekler/program/2026-fizibilite-destegi-fzd-programi"
+    },
+    {
+      "tur": "adim",
+      "metin": "Başvuru KAYS üzerinden yapılır",
+      "alinti": "Kalkınma Ajansları Yönetim Sistemi (KAYS) üzerinden başvuruya açılmıştır",
+      "kaynak_url": "https://www.daka.org.tr/destekler/program/2026-fizibilite-destegi-fzd-programi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Proje, belirtilen önceliklerden en az birine bağlanmalı",
+      "alinti": "Projenin aşağıdaki önceliklerden en az 1 (bir) tanesi ile ilişkilendirilmesi gerekmektedir.",
+      "kaynak_url": "https://www.daka.org.tr/destekler/program/2026-fizibilite-destegi-fzd-programi"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "2026 Yılı Fizibilite Desteği Programı (FZD2026)",
+      "acilis": "2026-07-24",
+      "kapanis": "2026-12-25",
+      "on_kayit_son": null,
+      "kaynak_url": "https://www.daka.org.tr/destekler/program/2026-fizibilite-destegi-fzd-programi",
+      "alinti": "Başlangıç 24.07.2026 Son Başvuru 25.12.2026",
+      "notlar": null
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "Başvuruya açılış 24.07.2026, KAYS",
+      "alinti": "Doğu Anadolu Kalkınma Ajansı 2026 Yılı Fizibilite Desteği Programı, 24.07.2026 tarihi itibarıyla Kalkınma Ajansları Yönetim Sistemi (KAYS) üzerinden başvuruya açılmıştır",
+      "kaynak_url": "https://www.daka.org.tr/destekler/program/2026-fizibilite-destegi-fzd-programi"
+    },
+    {
+      "iddia": "Son başvuru 25.12.2026",
+      "alinti": "Başlangıç 24.07.2026 Son Başvuru 25.12.2026",
+      "kaynak_url": "https://www.daka.org.tr/destekler/program/2026-fizibilite-destegi-fzd-programi"
+    },
+    {
+      "iddia": "Bütçe ve proje başı tutar",
+      "alinti": "Toplam Bütçe 3.000.000,00 TL Destek Miktarı Asgari Tutar: 300.000,00 TL Azami Tutar: 600.000,00 TL",
+      "kaynak_url": "https://www.daka.org.tr/destekler/program/2026-fizibilite-destegi-fzd-programi"
+    },
+    {
+      "iddia": "Azami proje süresi 12 ay",
+      "alinti": "Azami Proje Süresi 12 Ay",
+      "kaynak_url": "https://www.daka.org.tr/destekler/program/2026-fizibilite-destegi-fzd-programi"
+    },
+    {
+      "iddia": "Bölge TRB2",
+      "alinti": "Program Referans No TRB2/26/FZD",
+      "kaynak_url": "https://www.daka.org.tr/destekler/program/2026-fizibilite-destegi-fzd-programi"
+    }
+  ]
+}

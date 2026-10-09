@@ -1,0 +1,83 @@
+{
+ "puanlar": {
+  "forma_aktarilabilirlik": 2,
+  "programa_uygunluk": 2,
+  "kullanici_bilgisinin_yansimasi": 4,
+  "ic_tutarlilik": 2,
+  "eksiklerin_isaretlenmesi": 3,
+  "dogruluk_yaniltmama": 2
+ },
+ "resmi_forma_aktarilabilir": "kısmen",
+ "hizli_taslak_vs_sihirbaz": "Proje tanımı, sorun, ekip, 500.000 TL'lik bütçe tablosu ve teknik hedef (1.000 işaret, 50 kullanıcılı pilot) metne girdi; program uyumu, takvim ve oran sorunları ise hızlı taslaktakiyle aynı kaldı.",
+ "kusurlar": [
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "Talep edilebilecek desteği hesaplamak için sihirbazda size uyan destek oranını seçin: %5, %3.",
+   "aciklama": "BiGG'de %3/%5 kurulacak şirkette Fon'a verilecek hisse payıdır, harcamaya uygulanan bir destek oranı değildir. Bu oranı 500.000 TL'ye uygulamak 15-25 bin TL gibi anlamsız bir 'destek' çıkarır; kullanıcı da neyin yüzdesi olduğunu anlayamadı.",
+   "oneri": "Hisse karşılığı yatırım programlarında oran seçicisini kaldırın. Yerine 'Fon yatırımı: 1.350.000 TL (teyit gerekir); karşılığında şirket hissesinin %X'i (çağrıda ilan edilir)' bilgi satırını koyun ve bütçeyi yatırım tutarının 12 aylık kullanım planı olarak sorun."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "Hisse oranı kayıtlarda farklı (1512 kaydı %3; 1812 metni: çağrıda ilan edilir, en fazla %5); çağrıdan teyit edin.",
+   "aciklama": "Kayıt kendi içinde çelişkili. Program amacı metni kesin bir %3 veriyor, hesaplama satırı ise %3 ile %5 arasında belirsiz. 1812 metninin 1512 kaydına karışması veri birleştirme hatasına işaret ediyor.",
+   "oneri": "Kaydı tek değere indirin ya da 'çağrıda ilan edilir (teyit gerekir)' diye bırakın; program amacı metnindeki kesin '%3' ifadesini de buna göre düzeltin."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "| Şirket kuruluşu / kayıtlar | — | — |",
+   "aciklama": "Kontrol listesi 'şirket kurulduysa başvurulamaz' diyor. Faaliyet listesi şirket kuruluşunu sırasız gösteriyor. BiGG'de şirket, 2. aşamada başarılı olduktan sonra kurulur; taslak bu sırayı anlatmadığı için kullanıcı çelişki gördü.",
+   "oneri": "Girişim programlarında faaliyet önerisini 'Şirket kuruluşu (2. aşama başarısından sonra, çağrıda belirtilen süre içinde)' diye yazın. Takvimi aşamalara bölün: 1. aşama başvuru, ön kuluçka/eğitim, iş planı, jüri, şirket kuruluşu, 12 aylık uygulama."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "İşletmemiz Ankara ilinde faaliyet gösteren henüz şirketleşmemiş bir girişimdir. ... Çalışan sayısı: 0; son yıl net satış hasılatı: [DOLDURUN",
+   "aciklama": "Şirketi olmayan bireysel başvurucudan ciro, çalışan sayısı ve KOBİ ölçeği istenmesi anlamsız. 'Faaliyet gösteren' ifadesi de şirket kurulmamış olması şartıyla çelişir.",
+   "oneri": "Kuruluş öncesi girişimlerde 1. bölümü 'Girişimci ve ekip' olarak üretin: ad, eğitim, öğrenci/mezuniyet durumu, ortak kurucunun rolü. Ciro, çalışan ve ölçek satırlarını çıkarın."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "- [ ] Üniversitelerin ön lisans/lisans/yüksek lisans/doktora programlarından öğrenci veya mezun olmak",
+   "aciklama": "Uygunluğu belirleyen şartlar (öğrenci/mezun olmak, hiçbir şirkette ortak olmamak, daha önce destek almamak) sihirbazda sorulmuyor; taslakta yalnız boş onay kutusu olarak duruyor. Ortak kurucunun da bu şartları sağlayıp sağlamadığı hiç ele alınmıyor.",
+   "oneri": "Elemeye yol açan şartları sihirbazın başında evet/hayır/bilmiyorum olarak sorun. 'Bilmiyorum' cevabını taslağın en üstüne kırmızı uyarı olarak yazın. Ortak kurucu için de aynı kontrolleri ekleyin."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "- Ölçüm yöntemi: [DOLDURUN: göstergelerin nasıl izleneceği (fatura, SGK bildirgesi, gümrük verisi)]",
+   "aciklama": "Teknik hedefi işaret sayısı ve tanıma doğruluğu olan bir TRL 4 girişimine fatura, SGK ve gümrük örnekleri uymuyor.",
+   "oneri": "Ölçüm ipucunu program türüne göre seçin. Girişim/Ar-Ge için örnek: test veri setinde tanıma doğruluğu (%), sözlükteki işaret sayısı, pilotta aktif kullanıcı ve kullanıcı memnuniyeti."
+  },
+  {
+   "tur": "kullanici_cevabi",
+   "ciddiyet": "orta",
+   "alinti": "Prototipi biz geliştirdik. Henüz bir şirketimiz yok.",
+   "aciklama": "Ekip bölümü zayıf: eğitim, ilgili deneyim, ortak kurucunun yetkinliği ve görev dağılımı yok. Yapay zekâ/görüntü işleme yetkinliği de kanıtlanmıyor. BiGG jürisi ekibe önemli ağırlık verir.",
+   "oneri": "Ekip sorusunu alt alanlara bölün: her kurucunun eğitimi, ilgili deneyimi ve projedeki rolü, ayrıca eksik yetkinlik ve nasıl kapatılacağı."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "orta",
+   "alinti": "- İş modeli: [DOLDURUN: Gelir kaynakları, ilk müşteriler]",
+   "aciklama": "İş modelinin belirsiz olduğu doğru işaretlenmiş. Ancak BiGG iş planında pazar büyüklüğü, rakip analizi ve fikri mülkiyet/özgünlük beklenir (teyit gerekir); sihirbaz bunları hiç sormuyor.",
+   "oneri": "Girişim türüne 'pazar ve rakipler', 'özgünlük/fikri mülkiyet' ve 'riskler' sorularını ekleyin. İş modeli için seçenekli yardım verin (B2C abonelik, kurum lisansı, kamu alımı)."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "İşletmenin genel hedefleri: Ar-Ge.",
+   "aciklama": "Profilden gelen tek kelimelik dolgu satırı; resmî formda karşılığı yok ve bilgi taşımıyor.",
+   "oneri": "Bu satırı kaldırın ya da proje hedefleriyle birleştirin."
+  }
+ ],
+ "hakem_gozuyle_red_riski": "İş modeli ve pazar analizi yok, ekip yetkinliği kanıtlanmamış; bu haliyle 'teknik olarak ilginç ama ticari girişim olarak olgunlaşmamış' değerlendirmesi alır. Oran ve şirket kuruluşu karışıklığı da başvuru sahibinin programı anlamadığı izlenimi verir.",
+ "en_onemli_3_iyilestirme": [
+  "Hisse karşılığı yatırım programlarında destek oranı seçicisini kaldırın; yatırım tutarını ve hisse payını doğru anlatan bilgi satırı koyun.",
+  "Takvimi BiGG aşamalarına göre kurun (1. aşama, eğitim/mentorluk, iş planı, jüri, şirket kuruluşu, 12 aylık uygulama); şirket kuruluşunun başvurudan sonra geldiğini açıkça yazın.",
+  "Bölüm 1'i kuruluş öncesi girişimciye göre yeniden yazın (ekip, eğitim, öğrenci/mezun durumu) ve elemeye yol açan şartları sihirbazda sorun."
+ ]
+}

@@ -1,0 +1,59 @@
+{
+ "proje_adi": "Atık pamuk liflerinden geri dönüştürülmüş iplikle yüksek mukavemetli örme kumaş geliştirilmesi",
+ "proje_ozeti": "Örme kumaş üreticisiyiz. Atık pamuk liflerinden elde edilen geri dönüştürülmüş iplikle örme kumaş üretmek istiyoruz. Sorun şu: geri dönüştürülmüş lif oranı arttıkça kumaşın kopma mukavemeti düşüyor. Projede %40 geri dönüştürülmüş lif oranında kopma mukavemetini standart kumaşın en az %90'ına çıkarmayı hedefliyoruz. Süre 18 ay, Ocak 2027'de başlamak istiyoruz.",
+ "gerekce": {
+  "A3": "Atık pamuk liflerinden yapılan geri dönüştürülmüş iplikle örme kumaş geliştiriyoruz. Beklenen çıktı, %40 geri dönüştürülmüş lif içeren ve kopma mukavemeti standart kumaşın en az %90'ı olan örme kumaş prototipidir.",
+  "B1": "Geri dönüştürülmüş lif oranı yükseldikçe kumaşın kopma mukavemeti düşüyor, bu da ürünü kullanılamaz hale getiriyor. Hedefimiz bu düşüşü sınırlayıp %40 geri dönüştürülmüş lifle standart kumaşın en az %90'ı mukavemete ulaşmak.",
+  "B3": "Başarı ölçütümüz şu: %40 geri dönüştürülmüş lif oranında kopma mukavemeti, standart kumaşın en az %90'ı olacak. Ölçümleri dış laboratuvarda yaptıracağız. Önce numune kumaşlar örüp test edeceğiz, sonuçlara göre lif oranını ve üretim ayarlarını değiştirerek deneyi tekrarlayacağız.",
+  "C1": "Dört ana iş yapacağız: literatür ve gereksinim çalışması, numune üretimi ve prototip geliştirme, dış laboratuvarda test ve analiz, müşterilerle ticarileşme hazırlığı. Toplam süre 18 ay. Bütçemiz personel 1.800.000 TL, hammadde ve sarf 600.000 TL, dış laboratuvar test ve analiz 450.000 TL, numune örme makinesi 900.000 TL.",
+  "C2": "Projeyi tekstil mühendisimiz yürütecek, yanında bir teknisyenimiz çalışacak. Ege Üniversitesi'nden bir hocayla görüştük ancak henüz bir anlaşmamız yok.",
+  "D1": "Avrupa'daki üç mevcut müşterimiz (moda markaları) bu kumaşa ilgi gösterdi. Rakiplerimiz İtalyan üreticiler. Ciro tahmini ve fiyat henüz hesaplamadığımız konular.",
+  "D2": "Ege Üniversitesi'nden bir hocayla görüştük, ama henüz bir işbirliği anlaşmamız yok. Patent alınabilir mi bilmiyoruz.",
+  "E1": "En büyük teknik risk, %40 lif oranında mukavemet hedefine ulaşamamak. Ticari tarafta Avrupalı müşterilerin ilgisi var ama henüz sipariş yok. Finansman olarak toplam bütçemiz 3.750.000 TL."
+ },
+ "faaliyetler": [
+  {
+   "ad": "Literatür/patent taraması ve gereksinimler",
+   "baslangic": "2027-01",
+   "bitis": null
+  },
+  {
+   "ad": "Tasarım ve prototip geliştirme",
+   "baslangic": null,
+   "bitis": null
+  },
+  {
+   "ad": "Test ve doğrulama",
+   "baslangic": null,
+   "bitis": null
+  },
+  {
+   "ad": "Ticarileşme hazırlığı (fikri mülkiyet, pilot müşteri)",
+   "baslangic": null,
+   "bitis": "2028-06"
+  }
+ ],
+ "butce": [
+  {
+   "kalem": "personel",
+   "tutar": 1800000
+  },
+  {
+   "kalem": "malzeme ve sarf",
+   "tutar": 600000
+  },
+  {
+   "kalem": "yurt içi/yurt dışı danışmanlık ve diğer hizmet alımı",
+   "tutar": 450000
+  },
+  {
+   "kalem": "alet, teçhizat, yazılım ve yayın alımı",
+   "tutar": 900000
+  }
+ ],
+ "destek_orani": null,
+ "ciktilar": {
+  "arge_cikti": "%40 geri dönüştürülmüş lif içeren örme kumaş prototipi. Patent başvurusu yapılıp yapılmayacağını bilmiyoruz.",
+  "olcum": "%40 geri dönüştürülmüş lif oranında kopma mukavemeti, standart kumaşın en az %90'ı."
+ }
+}

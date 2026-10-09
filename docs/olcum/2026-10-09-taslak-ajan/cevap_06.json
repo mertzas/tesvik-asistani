@@ -1,0 +1,44 @@
+{
+  "proje_adi": "Eskişehir butik pastane kuruluşu",
+  "proje_ozeti": "Eskişehir'de şahıs işletmesi olarak Ocak 2027'de butik bir pastane açmak istiyorum. İşletmede 2 kişi çalışacak. Fırın ve soğutma makineleri, dükkân dekorasyonu ve ilk 6 ayın kirası için destek arıyorum. İlk yıl satış hedefim 2.400.000 TL.",
+  "gerekce": {
+    "fikir": "Eskişehir'de butik bir pastane açacağım. Daha ayrıntılı bir müşteri ve ihtiyaç analizi henüz hazır değil, iş planını nasıl yazacağımı da öğrenmem gerekiyor.",
+    "ekip": "İşletmeyi ben kuracağım ve yöneteceğim; Uygulamalı Girişimcilik Eğitimi sertifikam var. Başlangıçta 2 çalışanla çalışacağız.",
+    "model": "Gelirim pastane ürünlerinin satışından gelecek. İlk yıl için 2.400.000 TL satış hedefliyorum."
+  },
+  "faaliyetler": [
+    {
+      "ad": "Şirket kuruluşu / kayıtlar (şahıs işletmesi)",
+      "baslangic": "2027-01",
+      "bitis": "2027-01"
+    },
+    {
+      "ad": "Fırın ve soğutma makinelerinin alınması",
+      "baslangic": null,
+      "bitis": null
+    },
+    {
+      "ad": "Dükkân dekorasyonu",
+      "baslangic": null,
+      "bitis": null
+    }
+  ],
+  "butce": [
+    {
+      "kalem": "Fırın ve soğutma makineleri",
+      "tutar": 350000
+    },
+    {
+      "kalem": "Dükkân dekorasyonu",
+      "tutar": 150000
+    },
+    {
+      "kalem": "Kira (ilk 6 ay)",
+      "tutar": 180000
+    }
+  ],
+  "destek_orani": null,
+  "ciktilar": {
+    "girisim_cikti": "İlk yıl 2.400.000 TL satışa ulaşmak ve 2 kişiye istihdam sağlamak."
+  }
+}

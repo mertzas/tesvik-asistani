@@ -1,0 +1,90 @@
+{
+ "puanlar": {
+  "forma_aktarilabilirlik": 2,
+  "programa_uygunluk": 2,
+  "kullanici_bilgisinin_yansimasi": 4,
+  "ic_tutarlilik": 1,
+  "eksiklerin_isaretlenmesi": 2,
+  "dogruluk_yaniltmama": 2
+ },
+ "resmi_forma_aktarilabilir": "kısmen",
+ "hizli_taslak_vs_sihirbaz": "Kuruluş tarihi, iş modeli, satış ve istihdam hedefi ile 680.000 TL'lik gider tablosu eklendi. Hangi alt destekten başvurulduğu ve bütçe ile destek tavanı arasındaki uçurum açıklanmadığı için taslak başvuruya pek yaklaşmadı.",
+ "kusurlar": [
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "Talep edilebilecek desteği hesaplamak için sihirbazda size uyan destek oranını seçin: %100, %80, %50.",
+   "aciklama": "Bu üç oran üç farklı araca ait: İş Kurma geri ödemesiz, İş Geliştirme geri ödemeli, kredi faiz desteği. Hiçbiri gider tablosuna doğrudan uygulanmaz. Kullanıcı %100 seçerse 680.000 TL'nin karşılanacağını sanabilir.",
+   "oneri": "Çok bileşenli programlarda önce alt destek seçtirin (İş Kurma / İş Geliştirme / Faiz Desteği). Oranı ve tavanı o bileşene bağlayın ve hesabı bileşen bazında gösterin."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "yuksek",
+   "alinti": "| **Toplam** | **680.000 TL** |",
+   "aciklama": "Sihirbazın üst limiti 30.000 TL, bütçe ise 680.000 TL; taslak bu farkı hiç açıklamıyor. 30.000 TL'nin hangi kombinasyondan çıktığı da yazmıyor (sermaye şirketi + ek). Şahıs işletmesi kuracak bir kadın girişimci için beklenen tutar 10.000 + 10.000 = 20.000 TL'dir (teyit gerekir).",
+   "oneri": "İşletme türü ve girişimci profilinden kişiye özel tavanı hesaplayın ('şahıs + kadın: 20.000 TL'). Bütçe tavanı aşıyorsa uyarı verin: 'Gider planınızın yalnız küçük bir kısmı geri ödemesiz karşılanabilir; kalanı için İş Geliştirme veya kredi bileşenine bakın.'"
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "| Kira (ilk 6 ay) | 180.000 TL |",
+   "aciklama": "Kira ve dekorasyonun desteklenip desteklenmediği belirtilmiyor. Güncel Girişimci Destek Programı'nda İş Kurma Desteği götürü kuruluş desteği şeklinde görünüyor; kira ve dekorasyon gideri ayrı kalem olarak desteklenmiyor olabilir (teyit gerekir). Kullanıcının asıl sorusu ('hangi giderler destekleniyor') cevapsız kaldı.",
+   "oneri": "gider_kalemleri listesini doldurun ve her bütçe satırının yanına 'desteklenir / desteklenmez / teyit gerekir' etiketi koyun."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "Faaliyet alanı: hizmet (NACE 10.71).",
+   "aciklama": "NACE 10.71 (ekmek, taze pastane ürünleri imalatı) imalat sektörüdür, 'hizmet' değildir. Bu ayrım uygunluk için kritik: kontrol listesindeki İş Geliştirme Desteği imalat sektörüne açık.",
+   "oneri": "Faaliyet alanını NACE bölümünden türetin (C = imalat). İmalat kodlu girişimciye İş Geliştirme Desteği'nin de değerlendirilebileceğini belirtin (sektör kapsamı teyit gerekir)."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "jüri puanı 50+ olan kadın/genç girişimciler için geri ödemesiz Faiz/Kâr Payı Desteği 1.000.000 TL'ye kadar (%50)",
+   "aciklama": "1.000.000 TL kredi tutarının üst sınırıdır; destek tutarı değildir. Destek, bu kredinin faizinin %50'sidir. Metin 1.000.000 TL'lik geri ödemesiz destek varmış gibi okunabilir.",
+   "oneri": "'1.000.000 TL'ye kadar kredinin faiz/kâr payının %50'si geri ödemesiz karşılanır' biçiminde yazın; jüri puanı şartını teyit gerekir diye işaretleyin."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "İşletmemiz Eskişehir ilinde faaliyet gösteren henüz şirketleşmemiş bir girişimdir. ... son yıl net satış hasılatı: [DOLDURUN",
+   "aciklama": "Henüz kurulmamış işletme 'faaliyet gösteren' diye tanıtılıyor, olmayan cironun girilmesi isteniyor. Şahıs işletmesi zaten 'şirket' değildir. Kuruluş planındaki Ocak 2027 tarihi ve şahıs işletmesi türü bu bölüme yansımıyor.",
+   "oneri": "Kuruluş öncesi profillerde bölümü 'Ocak 2027'de şahıs işletmesi olarak kurulacak, 2 çalışan planlanıyor' biçiminde üretin; ciro satırını kaldırın."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "Başvuru zamanı: Dönemsel çağrı: İş Geliştirme 2026/2 dönemi 20 Nisan – 8 Mayıs 2026 (kapandı)",
+   "aciklama": "Kullanıcı İş Kurma Desteği'ne uygun. Taslak bu desteğin zamanlamasını ve sırasını hiç vermiyor: işletmeyi kurmak, KOSGEB kaydı, kuruluştan sonraki süre içinde başvuru. Yalnız ilgisiz ve kapanmış bir dönem görünüyor. Girişimcilik eğitimi sertifikasının şart olarak bağlantısı da kurulmamış.",
+   "oneri": "Takvime 'işletme kuruluşu → KOSGEB veri tabanı kaydı → İş Kurma başvurusu (kuruluştan sonra belirlenen süre içinde; teyit gerekir)' adımlarını ekleyin. Sertifikayı kontrol listesinde 'sizde var' olarak işaretleyin."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "dusuk",
+   "alinti": "- [ ] Girişimcinin başvurduğu işletmedeki ortaklık payı en az %50 olmalıdır",
+   "aciklama": "Şahıs işletmesinde ortaklık payı kavramı yoktur; kontrol listesi işletme türüne göre süzülmüyor.",
+   "oneri": "Bu maddeyi yalnız sermaye şirketi seçildiğinde gösterin."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "**İş fikri ve çözülen sorun:** ... iş planını nasıl yazacağımı da öğrenmem gerekiyor.",
+   "aciklama": "Kullanıcının kendine yazdığı not, başvuru metnine olduğu gibi girmiş. Hakeme giden bir metinde 'iş planını nasıl yazacağımı öğrenmem gerekiyor' cümlesi doğrudan olumsuz izlenim bırakır.",
+   "oneri": "Bilmiyorum/öğrenmem gerekiyor türü ifadeleri metinden ayırın, [DOLDURUN: hedef müşteri, konum, rakipler] etiketine çevirin ve iş planı rehberine bağlantı verin."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "| Fırın ve soğutma makinelerinin alınması | — | — |",
+   "aciklama": "Tarihsiz faaliyetler '—' ile geçiyor ve eksik olarak işaretlenmiyor. Ocak 2027 kuruluşundan önce yapılacak alımların desteklenip desteklenmeyeceği (harcama tarihi kuralı) belirsiz kalıyor.",
+   "oneri": "Boş tarihleri [DOLDURUN] yapın ve 'kuruluş/başvuru öncesi harcamalar desteklenmeyebilir (teyit gerekir)' uyarısı ekleyin."
+  }
+ ],
+ "hakem_gozuyle_red_riski": "Destek bileşeni seçilmemiş, bütçe destek tavanının 20 katından fazla ve desteklenmeyebilecek kalemler (kira, dekorasyon) içeriyor; pazar analizi de yok. Bu metin İş Kurma başvurusunda ya gereksiz, ya da İş Geliştirme jürisinde yetersiz kalır.",
+ "en_onemli_3_iyilestirme": [
+  "Girişimci Destek Programı'nı alt bileşenlere ayırın ve kullanıcıya önce bileşen seçtirin; oran, tavan ve gider uygunluğunu bileşene bağlayın.",
+  "Kişiye özel tavanı hesaplayın (şahıs + kadın = 20.000 TL, teyit gerekir) ve 680.000 TL bütçe ile arasındaki farkı açıkça uyarın.",
+  "NACE 10.71'i imalat olarak sınıflandırın. Kuruluş öncesi profil için işletme tanıtımı ve takvimi (kuruluş → KOSGEB kaydı → başvuru) doğru sırayla üretin."
+ ]
+}

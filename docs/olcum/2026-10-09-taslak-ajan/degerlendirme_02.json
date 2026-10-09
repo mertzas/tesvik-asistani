@@ -1,0 +1,83 @@
+{
+ "puanlar": {
+  "forma_aktarilabilirlik": 3,
+  "programa_uygunluk": 4,
+  "kullanici_bilgisinin_yansimasi": 4,
+  "ic_tutarlilik": 3,
+  "eksiklerin_isaretlenmesi": 4,
+  "dogruluk_yaniltmama": 3
+ },
+ "resmi_forma_aktarilabilir": "kısmen",
+ "hizli_taslak_vs_sihirbaz": "Sihirbazlı taslak ölçülebilir hedefleri (%70'ten %95 doğruluğa, <2 sn), bütçe toplamını ve %75 ile tahmini desteği (1.387.500 TL) ekledi; ancak B.2, B.4, C.1, E.1 hızlı taslaktaki gibi boş kaldı.",
+ "kusurlar": [
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "yuksek",
+   "alinti": "ön kayıt son günü 9 Kasım 2026, kapanış 11 Kasım 2026",
+   "aciklama": "Aynı taslağın 6. bölümünde 'Yılda iki çağrı dönemi: genellikle Ocak-Şubat ve Temmuz-Ağustos' yazıyor; iki takvim birbiriyle çelişiyor ve kullanıcı hangisine göre plan yapacağını bilemiyor.",
+   "oneri": "Program kaydındaki dönem metnini çağrı kaydıyla senkronize et; tek kaynaktan (2026-2 çağrı duyurusu) tarih bas, eski genel ifadeyi kaldır."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "⚠ Aynı anda en fazla 5 projeye destek alınabilir, bunların en az 2'si ortaklı proje olmalı",
+   "aciklama": "Tutar satırında 'ilk 5 projede %75 (en az ikisi ortaklı başvuru kaydıyla)' deniyor; 'aynı anda 5 proje' ile 'toplamda ilk 5 proje' farklı kurallar. İlk başvurusunu tek başına yapan kullanıcı uygun olup olmadığını anlayamıyor (teyit gerekir: 1507 çağrı metni).",
+   "oneri": "Kuralı çağrı metninden aynen alıntıla ve 'ilk başvurunuz için bu ne demek' açıklaması ekle; sihirbazda önceki 1507 proje sayısını sor."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "Faaliyet alanı: arge (NACE 62.01).",
+   "aciklama": "'arge' iç sınıflandırma anahtarı kullanıcı metnine sızmış; resmi forma 'faaliyet alanı: arge' yazılamaz.",
+   "oneri": "Faaliyet alanını NACE açıklamasından üret ('bilgisayar programlama faaliyetleri'); iç anahtarları görünür metinde kullanma."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "| Üniversiteden danışmanlık | 200.000 TL |",
+   "aciklama": "Programın gider_kalemleri listesi boş olduğu için kalemler serbest adlandırıldı ve M011/M013/M014/M015 kodlarına eşlenmedi; danışmanlığın M015 mi M014 mü olduğu ve bulut/GPU hizmetinin M013 yazılım mı M015 hizmet alımı mı sayılacağı belirsiz (teyit gerekir).",
+   "oneri": "1507 kaydına 1501 ile aynı M kodlu gider listesini ekle; her kalem için açıklamalı seçim sun."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "Talep edilebilecek destek (tahmini): 1.850.000 TL × %75 = **1.387.500 TL**.",
+   "aciklama": "Hesap doğru ama tüm kalemlerin uygun gider sayılacağını ve desteğin peşin verileceğini ima ediyor; TÜBİTAK harcama sonrası dönemsel rapora göre öder, firma 462.500 TL payı ve dönem nakdini kendisi taşır. E.1 boş kaldığı halde şablon bu rakamı oraya taşımadı.",
+   "oneri": "Hesabın altına 'kabul edilen harcama üzerinden, dönem sonu ödenir; firma payı 462.500 TL' satırı ekle ve E.1'e otomatik finansman taslak cümlesi öner."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "| Tasarım ve prototip geliştirme | — | — |",
+   "aciklama": "Faaliyet önerileri ML projesine uymuyor (veri toplama/etiketleme, model seçimi, eğitim, entegrasyon yok); ara iş paketlerinin tarihleri boş, C.1 tamamen [DOLDURUN].",
+   "oneri": "Proje tipine göre (yazılım/ML) faaliyet şablonu sun; 12 aylık süreyi paketlere bölen varsayılan takvim öner."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "Hangi makine öğrenmesi yönteminin seçileceği henüz netleşmedi; ilk aşamada literatür taraması ve denemelerle karar vereceğiz.",
+   "aciklama": "B.3'te veri seti (etiketli fatura sayısı, hesap planı sınıf sayısı), aday yöntemler, doğrulama protokolü (test seti, metrik) yok; hakem Ar-Ge belirsizliğini göremez. Müşteri faturalarının model eğitiminde kullanımı KVKK açısından hiç ele alınmamış.",
+   "oneri": "Ar-Ge/yazılım projelerinde 'veri kaynağı ve hacmi, aday yöntemler, başarı nasıl ölçülecek, kişisel veri/KVKK' alt sorularını ekle."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "- Ölçüm yöntemi: [DOLDURUN: göstergelerin nasıl izleneceği (fatura, SGK bildirgesi, gümrük verisi)]",
+   "aciklama": "Ar-Ge projesinde ölçüm ipucu idari göstergelere (SGK, gümrük) yönlendiriyor; doğruluk/gecikme ölçümüne uymuyor.",
+   "oneri": "Ar-Ge türünde ipucunu 'test veri seti, metrik (doğruluk, F1), gecikme ölçüm ortamı' olarak değiştir."
+  },
+  {
+   "tur": "kullanici_cevabi",
+   "ciddiyet": "dusuk",
+   "alinti": "Üniversiteden danışmanlık alacağımız için üniversite-sanayi işbirliği olacak.",
+   "aciklama": "Danışmanın adı, kurumu ve katkısı belirsiz; D.2'de patent, yeni istihdam ve bilgi birikimi yok. D.1'de modül fiyatı ve gelir tahmini yok.",
+   "oneri": "D.1/D.2 için 'aylık ücret varsayımı x abone benimseme oranı' gibi basit gelir hesabı ve danışman bilgisi alanları iste."
+  }
+ ],
+ "hakem_gozuyle_red_riski": "Yöntem belirsiz ve teknoloji düzeyi/yenilik bölümleri boş olduğundan proje 'standart bir ML uygulamasının ürüne entegrasyonu, Ar-Ge belirsizliği yok' denerek düşük puan alır; iş planı ve risk bölümlerinin boşluğu bunu pekiştirir.",
+ "en_onemli_3_iyilestirme": [
+  "Takvim çelişkisini gider: dönem bilgisini tek bir güncel çağrı kaydından üret ve 1507'ye özgü proje sayısı kuralını açıkça yaz.",
+  "B.2/B.3/B.4 için ML'ye özgü alt sorular (veri seti, aday yöntemler, mevcut çözümlerle kıyas, doğrulama metriği, KVKK) ve proje tipine göre iş paketi şablonu ekle.",
+  "Bütçe kalemlerini M kodlarına eşle; destek hesabının yanına firma payı ve harcama sonrası ödeme notunu koyup E.1'i otomatik besle."
+ ]
+}

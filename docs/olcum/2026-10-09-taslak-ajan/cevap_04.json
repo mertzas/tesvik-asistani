@@ -1,0 +1,33 @@
+{
+ "proje_adi": "Van Gölü Turizm 30 Odalı Ek Bina Yatırımı",
+ "proje_ozeti": "Van'da işlettiğimiz 40 odalı otele 30 odalı ek bina yaparak toplam 70 odaya çıkmak istiyoruz. Arsa şirketimizin mülkü. Toplam yatırım tutarı 85.000.000 TL; bunun 55.000.000 TL'si inşaat, 18.000.000 TL'si makine-teçhizat, 12.000.000 TL'si mobilya-donanım. Yatırımla 15 kişilik yeni istihdam sağlanacak. Yatırım Mart 2027'de başlayıp Haziran 2028'de tamamlanacak.",
+ "gerekce": {
+  "cozum": "Mevcut otelimiz 40 odalı; ek binayla oda sayısını 70'e çıkararak işletmenin kapasitesini büyütmeyi ve 15 kişilik yeni istihdam yaratmayı hedefliyoruz."
+ },
+ "faaliyetler": [
+  {
+   "ad": "Ek bina yatırımı (inşaat, makine-teçhizat ve mobilya-donanım tedariki, açılış)",
+   "baslangic": "2027-03",
+   "bitis": "2028-06"
+  }
+ ],
+ "butce": [
+  {
+   "kalem": "İnşaat",
+   "tutar": 55000000
+  },
+  {
+   "kalem": "Makine-teçhizat",
+   "tutar": 18000000
+  },
+  {
+   "kalem": "Mobilya-donanım",
+   "tutar": 12000000
+  }
+ ],
+ "destek_orani": null,
+ "ciktilar": {
+  "kapasite": "Oda sayısı 40'tan 70'e çıkacak (30 yeni oda).",
+  "olcum": "15 yeni istihdam; yatırım sonunda oda sayısının 70 olması."
+ }
+}

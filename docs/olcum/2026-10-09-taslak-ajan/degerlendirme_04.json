@@ -1,0 +1,90 @@
+{
+ "puanlar": {
+  "forma_aktarilabilirlik": 2,
+  "programa_uygunluk": 2,
+  "kullanici_bilgisinin_yansimasi": 4,
+  "ic_tutarlilik": 4,
+  "eksiklerin_isaretlenmesi": 3,
+  "dogruluk_yaniltmama": 3
+ },
+ "resmi_forma_aktarilabilir": "hayır",
+ "hizli_taslak_vs_sihirbaz": "Sihirbazlı taslak proje özetini, 85.000.000 TL'lik sabit yatırım dağılımını ve 40'tan 70 odaya kapasite artışını ekledi; ancak E-TUYS'un istediği yapılandırılmış veriye (yatırım cinsi, bölge, ithal/yerli makine listesi, destek unsurları) hızlı taslaktan daha yakın değil.",
+ "kusurlar": [
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "Bu metni kurumun güncel başvuru formuna aktarın",
+   "aciklama": "Teşvik belgesi başvurusu anlatı formuyla değil, E-TUYS'ta yapılandırılmış alanlarla yapılır (yatırım cinsi: tevsi, yatırım yeri, NACE, kapasite, istihdam, sabit yatırım dağılımı: arsa, bina-inşaat, ithal/yerli makine-teçhizat, diğer; finansman). Proje-gerekçe metni bu programın mantığına uymuyor; form alanı yok (form: null).",
+   "oneri": "Teşvik belgesi programları için ayrı şablon kur: E-TUYS alan listesi, yatırım cinsi seçimi, sabit yatırım kalemlerinin E-TUYS sınıflarına eşlenmesi ve finansman (öz kaynak/kredi) tablosu."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "yuksek",
+   "alinti": "Tutar/oran: -",
+   "aciklama": "Programın destek unsurları (KDV istisnası, gümrük vergisi muafiyeti, vergi indirimi, SGK işveren primi desteği, faiz/kar payı desteği vb.) ve hangi bölge/sektörde hangisinin uygulandığı hiç gösterilmiyor; kullanıcı ne kazanacağını bilemiyor (teyit gerekir: 9903 sayılı Karar ve EK-3).",
+   "oneri": "Program kaydına destek unsurlarını, bölgeye ve yatırım konusuna göre oran/süreleri ile ekle; taslakta bu yatırım için uygulanabilecek unsurları listele."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "[ ] Yatırım konusunun Karar'ın EK-3 listesinde ... yer alması ... eşleştirme NACE Rev.2.1 kodu üzerinden yapılır",
+   "aciklama": "Uygulama firmanın NACE kodunu (55.10) ve ilini (Van) biliyor ama ne EK-3 eşleştirmesini ne de Van'ın bölgesini ve asgari yatırım eşiğini kontrol ediyor. Konaklama yatırımlarında tesis niteliği/turizm belgesi gibi ek şartlar olabilir (teyit gerekir). Belirleyici uygunluk kontrolü kullanıcıya bırakılmış.",
+   "oneri": "NACE ve il verisiyle EK-3 satırını ve bölgeyi otomatik bul, şartı ve asgari tutarı (85 M TL ile karşılaştırarak) taslağa yaz."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "- Mevcut kapasite ve darboğazlar: [DOLDURUN: Hangi süreç ya da makinede darboğaz var, kapasite kullanım oranı]",
+   "aciklama": "Genel 'yatirim' türü soruları imalat diliyle (makine darboğazı, reddedilen sipariş, birim/yıl) yazılmış; otel için doluluk oranı, geri çevrilen rezervasyon, yatak sayısı sorulmalı. Kullanıcı bu yüzden iki soruyu boş bıraktı.",
+   "oneri": "Sektöre göre soru varyantı üret (hizmet/konaklama: doluluk oranı, sezon, yatak kapasitesi, talep göstergesi)."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "İşletmenin genel hedefleri: yatırım, istihdam.",
+   "aciklama": "İç etiket listesi cümle olarak basılmış; resmi metinde anlamsız dolgu.",
+   "oneri": "Etiket listesini metne basma ya da anlamlı cümleye çevir."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "Ölçüm yöntemi: 15 yeni istihdam; yatırım sonunda oda sayısının 70 olması.",
+   "aciklama": "Ölçüm yöntemi yerine hedef yazılmış. Teşvik belgesinde istihdam taahhüdü SGK bildirgeleriyle, kapasite ise tamamlama vizesinde ekspertiz/işletme belgesiyle tevsik edilir; taslak bunu söylemiyor.",
+   "oneri": "Teşvik programlarında çıktıları 'belge kapanışında (tamamlama vizesi) istenecek kanıt' olarak ver."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "orta",
+   "alinti": "| Makine-teçhizat | 18.000.000 TL |",
+   "aciklama": "Makine-teçhizatın ithal/yerli ayrımı ve liste halinde verilmesi, mobilya-donanımın makine-teçhizat mı diğer yatırım harcaması mı sayılacağı belirsiz; KDV istisnası ve gümrük muafiyeti bu listeye göre uygulanır (teyit gerekir).",
+   "oneri": "Bütçe girişinde ithal/yerli makine listesi ve E-TUYS harcama sınıfı seçimi iste."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "orta",
+   "alinti": "E-TUYS yetkilendirmesi için Dilekçe, Taahhütname ve Kullanıcı Yetkilendirme Formu (Bakanlığın KEP adresine ... gönderilir)",
+   "aciklama": "Yetkilendirme başvurudan önce tamamlanması gereken ve süre alan bir ön adım; Mart 2027 harcama başlangıcından önce müracaat gerekliliğiyle birlikte takvime yerleştirilmemiş.",
+   "oneri": "Takvime 'KEP ile E-TUYS yetkilendirme' ve 'teşvik belgesi müracaatı' adımlarını ilk harcamadan önce olacak şekilde ekle."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "dusuk",
+   "alinti": "Programın amacı (kurum metni): Sektörel Teşvik Sistemi kapsamında, Karar'ın EK-3 listesinde yer alan",
+   "aciklama": "Program adı 'Hedef Yatırımlar Teşvik Sistemi', amaç metni 'Sektörel Teşvik Sistemi' diyor; iki terimin 9903'teki ilişkisi açıklanmamış (teyit gerekir).",
+   "oneri": "Kararın ilgili maddesinden program adını ve alt sistemi birebir alıntıla."
+  },
+  {
+   "tur": "kullanici_cevabi",
+   "ciddiyet": "dusuk",
+   "alinti": "Mevcut otelimiz 40 odalı; ek binayla oda sayısını 70'e çıkararak işletmenin kapasitesini büyütmeyi",
+   "aciklama": "Talep gerekçesi (doluluk, sezonluk, Van turizm talebi) yok; arz-talep değerlendirmesi (m.5/4) için dayanak oluşmuyor.",
+   "oneri": "Doluluk oranı ve geri çevrilen rezervasyon gibi en az bir talep göstergesi iste."
+  }
+ ],
+ "hakem_gozuyle_red_riski": "Uzman, metinden EK-3 uygunluğunu, yatırım cinsini, bölgeyi ve makine listesini çıkaramaz; bu haliyle E-TUYS'a girilemez ve arz-talep gerekçesi olmadığından 'sektörel/teknik değerlendirmede dayanak yok' notu alır.",
+ "en_onemli_3_iyilestirme": [
+  "Teşvik belgesi programları için E-TUYS alanlarına göre yapılandırılmış ayrı şablon (yatırım cinsi, yer, NACE, kapasite, istihdam, sabit yatırım sınıfları, ithal/yerli makine listesi, finansman).",
+  "NACE ve il bilgisiyle EK-3 eşleştirmesini, bölgeyi, asgari tutarı ve uygulanabilir destek unsurlarını otomatik hesaplayıp taslağa yaz.",
+  "Sektöre uygun soru varyantları (otel: doluluk, yatak, sezon) ve KEP yetkilendirmesini ilk harcamadan önceye koyan takvim."
+ ]
+}

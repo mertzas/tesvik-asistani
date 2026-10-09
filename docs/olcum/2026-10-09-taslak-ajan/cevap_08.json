@@ -1,0 +1,21 @@
+{
+ "proje_adi": "Yapay zekâ destekli müşteri hizmetleri asistanı altyapı ve veri yatırımı",
+ "proje_ozeti": "Yapay zekâ destekli müşteri hizmetleri asistanı ürünümüz 40 kurumsal müşterimizde çalışıyor. Krediyle GPU sunucu alacağız, yapay zekâ yazılım lisanslarını karşılayacağız ve veri etiketleme hizmeti alacağız.",
+ "gerekce": {
+  "ticarilesme": "Ürünümüz şu an 40 kurumsal müşteride canlı çalışıyor. Hedef müşterimiz müşteri hizmeti yürüten kurumsal şirketler."
+ },
+ "faaliyetler": [
+  {"ad": "GPU sunucu alımı ve kurulumu", "baslangic": null, "bitis": null},
+  {"ad": "Yapay zekâ yazılım lisanslarının temini", "baslangic": null, "bitis": null},
+  {"ad": "Veri etiketleme hizmeti alımı", "baslangic": null, "bitis": null}
+ ],
+ "butce": [
+  {"kalem": "GPU sunucu", "tutar": 1800000},
+  {"kalem": "Yapay zekâ yazılım lisansları", "tutar": 400000},
+  {"kalem": "Veri etiketleme hizmeti", "tutar": 300000}
+ ],
+ "destek_orani": null,
+ "ciktilar": {
+  "arge_cikti": "Ürünümüz şu an TRL 8 seviyesinde ve 40 kurumsal müşteride çalışıyor."
+ }
+}

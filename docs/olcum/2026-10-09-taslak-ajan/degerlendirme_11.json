@@ -1,0 +1,83 @@
+{
+ "puanlar": {
+  "forma_aktarilabilirlik": 3,
+  "programa_uygunluk": 4,
+  "kullanici_bilgisinin_yansimasi": 4,
+  "ic_tutarlilik": 3,
+  "eksiklerin_isaretlenmesi": 3,
+  "dogruluk_yaniltmama": 3
+ },
+ "resmi_forma_aktarilabilir": "kısmen",
+ "hizli_taslak_vs_sihirbaz": "Sihirbaz hedef pazar, mevcut ABD gelir payı, üç gider kalemi ve %50 ile tahmini 550.000 TL destek hesabını ekleyerek hızlı taslağı anlamlı biçimde somutlaştırdı; ancak kalem uygunluğu ve limit eşleşmesi kontrol edilmeden hesaplandı.",
+ "kusurlar": [
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "Talep edilebilecek destek (tahmini): 1.100.000 TL × %50 = **550.000 TL**.",
+   "aciklama": "Üç kalem karardaki gider türleriyle eşleştirilmeden toplanıp %50 uygulanmış. Dijital reklam 'tanıtım', pazar araştırması raporu 'rapor/veri tabanı' (2,5M limit), fuar 'etkinlik katılımı' altına girebilir; ancak her birinin uygunluğu ve ayrı limiti teyit gerekir. Kalem bazlı limit kontrolü yapılmadan tek toplam vermek kesinlik izlenimi yaratıyor.",
+   "oneri": "Her bütçe satırını karardaki gider türüne (madde no ile) eşle, kalem limitini yanına yaz, eşleşmeyen kalemi 'uygunluk teyit gerekir' diye ayır; tutarın KDV hariç olup olmadığını sor/işaretle."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "etkinlik katılımı ve tanıtım personeli giderlerinin %50'si ... yıllık üst limitler kalem bazında: barındırma 5M TL, tanıtım 50M TL",
+   "aciklama": "Program amacında sayılan etkinlik katılımı ve tanıtım personeli için limit listesinde değer yok; kullanıcının 350.000 TL'lik fuar kalemi limitsiz/tanımsız kalıyor. Paketteki 'Tutar/oran: -' ile taslaktaki %50 hesap da birbiriyle çelişiyor.",
+   "oneri": "Kayda tüm gider türlerini (etkinlik katılımı, tanıtım personeli dahil) oran, yıllık/etkinlik başı limit ve madde numarasıyla ekle; tutar/oran alanını doldur."
+  },
+  {
+   "tur": "kullanici_cevabi",
+   "ciddiyet": "orta",
+   "alinti": "| Web Summit fuarı katılımı | — | — |",
+   "aciklama": "Hedef pazar ABD iken Web Summit'in ana etkinliği Lizbon'da (Kanada, Katar, Brezilya edisyonları da var); hangi edisyon olduğu ve ABD hedefiyle ilişkisi açıklanmamış. Hakem 'ABD pazarı için neden bu etkinlik' diye sorar. Etkinliğin desteklenen etkinlik listesinde olup olmadığı da belirsiz.",
+   "oneri": "Sihirbaz fuar/etkinlik kaleminde ülke, şehir, tarih ve hedef pazarla ilişkisini sorsun; desteklenen etkinlik/ön onay şartı varsa uyarsın."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "**İhracat hedefi:** Şu an ABD'den gelen gelir toplam gelirin yaklaşık %30'u. Bu payı artırmayı hedefliyoruz.",
+   "aciklama": "Ölçülebilir hedef yok; oysa ciro 35M TL × %30 ≈ 10,5M TL mevcut hizmet ihracatı taslakta hesaplanabilirdi. Ayrıca sayısal hedef eksikliği DOLDURUN ile işaretlenmemiş, alan dolu sayılmış.",
+   "oneri": "Mevcut ihracatı ciro × pay olarak '≈10,5M TL (resmî döviz tahsilat/fatura kaydıyla teyit edin)' diye hesapla; hedef tutar boşsa [DOLDURUN: 2027 hedef ABD geliri, TL/USD] işareti koy."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "- [ ] Destek Yönetim Sistemi (DYS) üzerinden başvuru ve gider belgeleri",
+   "aciklama": "Kullanıcının açık sorusu olan 'hizmet ihracatçısı olarak hangi kayıtlar gerekir' cevaplanmıyor: Hizmet İhracatçıları Birliği üyeliği, DYS'de yararlanıcı kaydı/yetkilendirme, ürünün (SaaS) programa tanımlanması, harcama öncesi ön onay gerekip gerekmediği (teyit gerekir) yok.",
+   "oneri": "Kontrol listesine sıralı ön kayıt adımlarını ekle: HİB üyeliği, DYS kaydı, ürün/proje tanımı, (varsa) ön onay; ardından harcama ve ödeme talebi."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "| ABD pazar araştırması raporu | — | — |\n| Yurt dışı dijital reklam kampanyaları | Ocak 2027 | Aralık 2027 |",
+   "aciklama": "Pazar araştırması reklamdan önce yapılmalıyken tarihi yok; destek harcama sonrası ödendiği halde 1,1M TL'nin ön finansmanı ve ödeme talep takvimi belirtilmiyor. Takvim-bütçe-çıktı bağı zayıf.",
+   "oneri": "Eksik tarihleri [DOLDURUN] ile işaretle, faaliyet sırasını öner (araştırma → etkinlik → reklam) ve 'ön finansman ihtiyacı ≈1,1M TL, geri ödeme belge tesliminden sonra' notunu otomatik ekle."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "Faaliyet alanı: arge (NACE 62.01).",
+   "aciklama": "NACE 62.01 bilgisayar programlama; 'arge' etiketi yanlış sınıflandırma izlenimi veriyor ve 'bilişim sektöründe faaliyet' şartıyla eşleşmiyor.",
+   "oneri": "Faaliyet alanı etiketini NACE'den türet ('bilişim/yazılım')."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "Ölçüm yöntemi: [DOLDURUN: göstergelerin nasıl izleneceği (fatura, SGK bildirgesi, gümrük verisi)]",
+   "aciklama": "Hizmet ihracatında gümrük verisi yoktur; doğru gösterge döviz tahsilatı, ihracat faturası, abonelik platformu raporlarıdır.",
+   "oneri": "İhracat türü + hizmet programlarında ipucunu 'yurt dışı satış faturası, döviz tahsilat dekontu, abone/MRR raporu' olarak değiştir."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "dusuk",
+   "alinti": "5447 (E-Turquality) ve 5448 sayılı Kararların yerini aldı; 1/1/2026'dan itibaren geçerli.",
+   "aciklama": "10962 sayılı Karar numarası, yürürlük tarihi, önceki kararların yürürlükten kaldırılması ve '2019/7 DYS Genelgesi' atıfları kayıtta kaynakla doğrulanmış görünmüyor; teyit gerekir.",
+   "oneri": "Resmî Gazete tarih/sayısı ve Genelge sayısını kayda ekleyip bağlantıyla doğrula."
+  }
+ ],
+ "hakem_gozuyle_red_riski": "Gider türleri karar maddeleriyle eşleştirilmeden toplanmış, ABD hedefine rağmen ABD dışı bir etkinlik bütçelenmiş ve ölçülebilir ihracat hedefi yok; inceleme kuruluşu kalem uygunluğunu ve hedefi sorgulayarak bütçeyi kırpar ya da ek bilgi ister.",
+ "en_onemli_3_iyilestirme": [
+  "Bütçe satırlarını karardaki gider türlerine ve kalem limitlerine (madde no ile) eşleyen, uygunluğu belirsiz kalemi ayrı gösteren bir hesap tablosu üret.",
+  "Hizmet ihracatçısı ön kayıt adımlarını (HİB üyeliği, DYS kaydı, ürün tanımı, gerekiyorsa ön onay) kontrol listesine sıralı olarak ekle.",
+  "Mevcut ihracatı (≈10,5M TL) hesaplayıp sayısal 2027 hedefi iste; etkinlik kaleminde ülke/tarih ve hedef pazarla ilişkiyi zorunlu soru yap."
+ ]
+}

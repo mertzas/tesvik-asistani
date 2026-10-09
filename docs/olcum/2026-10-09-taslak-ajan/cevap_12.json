@@ -1,0 +1,44 @@
+{
+  "proje_adi": "ERP ve üretim takip (MES) yazılımı ile atölye donanımı",
+  "proje_ozeti": "Kayseri'de ahşap mobilya üretiyoruz, 22 çalışanımız var. Siparişleri şu an Excel'de takip ediyoruz ve üretimde gecikmeler yaşıyoruz. ERP ve üretim takip (MES) yazılımı ile atölyeye 6 tablet/barkod okuyucu alarak teslim süremizi 21 günden 14 güne indirmeyi hedefliyoruz.",
+  "gerekce": {
+    "darbogaz": "Siparişler Excel'de takip edildiği için üretimde gecikmeler oluyor. Kapasite kullanım oranını ölçmüş değiliz.",
+    "cozum": "ERP ve MES ile siparişler ve üretim aşamaları tek sistemde izlenecek; atölyedeki tablet ve barkod okuyucularla üretim anlık kaydedilecek. Böylece gecikmeleri erken görüp teslim süresini 21 günden 14 güne indirmeyi hedefliyoruz."
+  },
+  "faaliyetler": [
+    {
+      "ad": "Teklif ve proformaların toplanması",
+      "baslangic": null,
+      "bitis": null
+    },
+    {
+      "ad": "ERP ve MES yazılımının tedariki ve kurulumu",
+      "baslangic": null,
+      "bitis": null
+    },
+    {
+      "ad": "Tablet ve barkod okuyucuların atölyeye kurulumu",
+      "baslangic": null,
+      "bitis": null
+    },
+    {
+      "ad": "Teslim süresi kazanımının ölçülmesi",
+      "baslangic": null,
+      "bitis": null
+    }
+  ],
+  "butce": [
+    {
+      "kalem": "ERP + üretim takip (MES) yazılımı",
+      "tutar": 700000
+    },
+    {
+      "kalem": "Donanım (6 tablet/barkod okuyucu)",
+      "tutar": 300000
+    }
+  ],
+  "destek_orani": null,
+  "ciktilar": {
+    "olcum": "Ortalama teslim süresinin 21 günden 14 güne düşmesi."
+  }
+}

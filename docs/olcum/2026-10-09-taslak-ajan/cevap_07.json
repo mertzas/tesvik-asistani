@@ -1,0 +1,39 @@
+{
+ "proje_adi": "Fındık ezmesi ve kavrulmuş fındığın Amazon Almanya ve Etsy üzerinden e-ihracatının büyütülmesi",
+ "proje_ozeti": "Fındık ezmesi ve kavrulmuş fındığı Amazon Almanya ve Etsy'de satıyoruz. Geçen yıl yurt dışı satışımız 900.000 TL oldu. 2027'de pazaryeri reklamı, pazaryeri komisyonları ve Almanya'da sipariş karşılama deposu ile yurt dışı satışı 2.500.000 TL'ye çıkarmak istiyoruz.",
+ "gerekce": {
+  "pazar": "Almanya'da Amazon ve Etsy üzerinden satış yapıyoruz. Almanya dışında hedef ülkemiz şimdilik yok. Pazar araştırması yapmadık, mevcut satışlarımıza dayanıyoruz.",
+  "mevcut_ihracat": "Geçen yıl yurt dışı satışımız 900.000 TL oldu. Satışı Amazon Almanya ve Etsy üzerinden yapıyoruz. İhracatçı birliği üyesiyiz."
+ },
+ "faaliyetler": [
+  {
+   "ad": "Tanıtım/fuar/pazaryeri faaliyetleri",
+   "baslangic": "2027-01",
+   "bitis": "2027-12"
+  },
+  {
+   "ad": "İhracat sonuçlarının izlenmesi",
+   "baslangic": "2027-01",
+   "bitis": "2027-12"
+  }
+ ],
+ "butce": [
+  {
+   "kalem": "Pazaryeri reklamı",
+   "tutar": 240000
+  },
+  {
+   "kalem": "Pazaryeri komisyonları",
+   "tutar": 120000
+  },
+  {
+   "kalem": "Almanya'da sipariş karşılama (fulfillment) deposu",
+   "tutar": 60000
+  }
+ ],
+ "destek_orani": null,
+ "ciktilar": {
+  "ihracat": "Geçen yıl 900.000 TL olan yurt dışı satışı 2027'de 2.500.000 TL'ye çıkarmak. Pazarımız Almanya.",
+  "olcum": "2027 yılı yurt dışı satış tutarı: hedef 2.500.000 TL."
+ }
+}

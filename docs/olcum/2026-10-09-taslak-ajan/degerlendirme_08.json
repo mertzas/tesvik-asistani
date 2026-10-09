@@ -1,0 +1,76 @@
+{
+ "puanlar": {
+  "forma_aktarilabilirlik": 1,
+  "programa_uygunluk": 1,
+  "kullanici_bilgisinin_yansimasi": 3,
+  "ic_tutarlilik": 2,
+  "eksiklerin_isaretlenmesi": 2,
+  "dogruluk_yaniltmama": 2
+ },
+ "resmi_forma_aktarilabilir": "hayır",
+ "hizli_taslak_vs_sihirbaz": "Proje tanımı, 40 kurumsal müşteri bilgisi ve 2.500.000 TL'lik gider tablosu eklendi. Kredi programı Ar-Ge projesi gibi sorgulandığı ve gerçek eleme şartları (rozet, teminat mektubu) hiç ele alınmadığı için başvuruya katkı çok düşük kaldı.",
+ "kusurlar": [
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "yuksek",
+   "alinti": "\"turler\": [\"arge\"]",
+   "aciklama": "Faizsiz bir kredi programı 'arge' türüne atanmış. Bu yüzden yenilik, teknik risk, prototip planı ve TRL soruları geliyor. Kullanıcının ürünü TRL 8'de ve kredi yalnız altyapı alımı için; sorular programın mantığıyla örtüşmüyor.",
+   "oneri": "'kredi' türü tanımlayın. Sorular: talep edilen kredi tutarı, kullanım kalemleri, geri ödeme kaynağı ve nakit akışı (24 ay vade, 12 ay ödemesiz), teminat durumu, rozet durumu."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "- [ ] Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak",
+   "aciklama": "Kullanıcı rozeti olup olmadığını bilmiyor ve bankayla teminat mektubu için görüşmedi. İkisi de başvuruyu en baştan engelleyen şartlar. Taslak bunları yalnız sonda boş onay kutusu olarak listeliyor, hiçbir uyarı vermiyor.",
+   "oneri": "Eleme şartlarını sihirbazın ilk adımında sorun (rozet var/yok/bilmiyorum, GO Dijital Cüzdan, teminat mektubu). Eksik olanları taslağın en üstüne 'Başvuru yapılamaz: önce şunları tamamlayın' kutusu olarak koyun ve rozet başvuru yolunu gösterin."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "- Teknolojik yenilik ve özgün değer: [DOLDURUN: Mevcut çözümlerden farkı]\n- Teknik riskler ve yöntem: [DOLDURUN: Belirsizlikler, deney/prototip planı]",
+   "aciklama": "Kredi başvurusunda karşılığı olmayan alanlar 'doldurun' diye isteniyor. Kullanıcıyı gereksiz Ar-Ge metni yazmaya yönlendiriyor; asıl gerekli bilgiler (kredi tutarı, teminat) hiç istenmiyor.",
+   "oneri": "Kredi türünde bu alanları kaldırın; yerine 'kredinin yapay zekâ kullanımına katkısı' ve 'geri ödeme planı' alanlarını koyun."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "| **Toplam** | **2.500.000 TL** |",
+   "aciklama": "Talep edilen kredi tutarı ayrı bir alan olarak yok. Kayda göre limit teminat tutarına eşit; yani 2,5 milyon TL kredi için 2,5 milyon TL'lik kesin teminat mektubu gerekir. Taslak bu bağlantıyı kurmuyor, bankadan ne tutarda mektup isteneceğini söylemiyor.",
+   "oneri": "Bütçenin altına şu satırı ekleyin: 'Talep edilen kredi: 2.500.000 TL → gerekli kesin teminat mektubu: 2.500.000 TL (GO Dijital Teknoloji Hizmetleri A.Ş. lehine; teyit gerekir)'. Teminat mektubunun banka komisyonu maliyetine dair not da düşün."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "yuksek",
+   "alinti": "| GPU sunucu | 1.800.000 TL |",
+   "aciklama": "Belge listesinde 'Hizmet Giderleri Tablosu' var. Kredinin donanım (GPU sunucu) alımına kullanılıp kullanılamayacağı kayıtta belirtilmiyor (teyit gerekir). Bütçenin %72'si bu kalemde; uygun değilse planın büyük kısmı geçersiz olur.",
+   "oneri": "Programın uygun gider listesini (gider_kalemleri) kayda ekleyin; GPU satırına 'uygunluk teyit gerekir: hizmet tablosu donanımı kapsıyor mu' uyarısı koyun ve bulut GPU hizmeti alternatifini not edin."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "- **Ar-Ge çıktıları:** Ürünümüz şu an TRL 8 seviyesinde ve 40 kurumsal müşteride çalışıyor.",
+   "aciklama": "Çıktı bölümü kredinin sonucu yerine bugünkü durumu yazıyor. Ölçüm ipucu da (fatura, SGK, gümrük) ilgisiz. Kredi sonrası kapasite, müşteri sayısı ya da gelir hedefi gibi bir çıktı yok.",
+   "oneri": "Kredi türünde çıktıyı 'kredi sonrası hedef' olarak sorun (ör. müşteri sayısı, işlem hacmi, model doğruluğu, gelir) ve geri ödeme kaynağıyla ilişkilendirin."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "| **Toplam** | **2.500.000 TL** |\nKalem tutarlarını teklif/proformalarla belgeleyin;",
+   "aciklama": "Tablodan sonra boş satır olmadığı için Markdown/GFM'de son cümle tablonun bir satırı gibi işlenir (oran satırı olmayan programlarda oluşuyor).",
+   "oneri": "Tablo sonrasına her durumda boş satır ekleyin."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "| GPU sunucu alımı ve kurulumu | — | — |",
+   "aciklama": "Faaliyetler tarihsiz ve eksik olarak işaretlenmemiş. Kredinin GO Dijital Cüzdan'a blokeli aktarılması ve 24 aylık vade ile kullanım takvimi arasındaki ilişki kurulmamış.",
+   "oneri": "Boş tarihleri [DOLDURUN] yapın. Takvimi kredi kullanımı (blokeli cüzdandan ödeme), 12 ay ödemesiz dönem ve 12 ay geri ödeme olarak üretin."
+  }
+ ],
+ "hakem_gozuyle_red_riski": "Bu başvuru büyük olasılıkla metin değerlendirmesine gelmeden sistemin otomatik kontrolünde (rozet, cüzdan, teminat) düşer. Taslak bu engellerin hiçbirini uyarı olarak öne çıkarmıyor.",
+ "en_onemli_3_iyilestirme": [
+  "Programı 'kredi' türüne taşıyın; kredi tutarı, teminat, geri ödeme planı ve kullanım kalemleri soran ayrı soru seti tanımlayın.",
+  "Teknogirişim Rozeti, GO Dijital Cüzdan ve kesin teminat mektubunu ilk adımda sorun; eksikse taslağın başına engelleyici uyarı koyun.",
+  "Uygun gider listesini kayda ekleyin ve GPU donanımının hizmet gideri tablosuna girip girmediğini satır bazında 'teyit gerekir' diye işaretleyin."
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "puanlar": {
+  "forma_aktarilabilirlik": 1,
+  "programa_uygunluk": 1,
+  "kullanici_bilgisinin_yansimasi": 3,
+  "ic_tutarlilik": 2,
+  "eksiklerin_isaretlenmesi": 2,
+  "dogruluk_yaniltmama": 2
+ },
+ "resmi_forma_aktarilabilir": "hayır",
+ "hizli_taslak_vs_sihirbaz": "Sihirbaz ürün/alan/ÇKS/sertifikalı tohum bilgisini metne ekledi ama programın kapsamadığı mibzeri bütçeye taşıyarak hızlı taslaktan daha yanıltıcı bir metin üretti.",
+ "kusurlar": [
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "| Mibzer alımı | 180.000 TL |\n| **Toplam** | **180.000 TL** |\nKalem tutarlarını teklif/proformalarla belgeleyin",
+   "aciklama": "Hububat temel/planlı üretim desteği dekar başı nakit ödemedir; makine alımını karşılamaz. Taslak mibzeri bu programın bütçe kalemi gibi gösterip proforma istiyor; çiftçi mibzerin bu destekle alınacağını sanabilir.",
+   "oneri": "gider_kalemleri boş ve tür 'tarim/dekar başı' olan programlarda bütçe tablosunu kapat; kapsam dışı kalemi 'bu program kapsamında değil, makine için IPARD / Kırsal Kalkınma Yatırımlarının Desteklenmesi (makine-ekipman hibesi) veya Ziraat Bankası-TKK düşük faizli tarım kredisine bakın (teyit gerekir)' notuyla ayır."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "Hesaplama: ... alt sınır 620.00, üst sınır 806.00 TL/dekar. ... Birim değer 310.00 TL/da (katsayı 1).",
+   "aciklama": "Kullanıcı 180 da buğday bildirmiş; buğday katsayısı 1,3 ile tahmini tutar (180 × 403 = 72.540 TL temel; planlı üretim şartı sağlanırsa +72.540 = 145.080 TL) hesaplanmadı. 620 TL alt sınırı mercimek/nohuta ait; buğday üreticisine anlamsız. 'katsayı 1' cümlesi buğdayla çelişiyor.",
+   "oneri": "Ürün ve dekar cevabından ürün katsayısını seçip kalem kalem hesapla; planlı üretim desteğinin şartını (havza/planlama kapsamında ekim, teyit gerekir) ayrı satırda koşullu göster."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "sertifikalı tohum ayrıca. 2026'da mazot ve gübre desteği 'temel destek' adıyla birleştirildi",
+   "aciklama": "Sertifikalı tohum kullanım desteğinin tutarı, ayrı başvuru gerektirip gerektirmediği ve belgeleri (tohum faturası, sertifika etiketi) kayıtta yok; kullanıcı bu sezon sertifikalı tohum kullanacak, yani en somut ek kazancı kaçabilir. Birleştirme ve 310 TL birim değeri teyit gerektirir.",
+   "oneri": "Sertifikalı tohum desteğini ayrı kalem olarak kaydet (TL/da, başvuru yeri, son tarih, gerekli belgeler) ve kontrol listesine 'tohum faturası + sertifika' ekle; 2026 rakamlarını ilgili Bakanlık tebliğiyle teyit et."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "**Desteğin kullanım amacı:** Sertifikalı tohum kullanarak ürün kalitesini artırmak istiyorum. Ayrıca ... mibzer almayı planlıyorum.",
+   "aciklama": "Dekar başı ödemede 'kullanım amacı' değerlendirilmez; soru kullanıcıyı ilgisiz bilgi yazmaya itiyor ve yanlış beklenti yaratıyor. Proje adı/özet/faaliyet tablosu da ÇKS ve ekiliş beyanında karşılığı olmayan alanlar.",
+   "oneri": "Dekar başı tarım desteklerinde sihirbazı 'ÇKS beyan hazırlık listesi'ne çevir: parsel (ada/parsel), mülkiyet/kira, ekim tarihi, ürün, alan, sertifikalı tohum, IBAN."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "Başvuru zamanı: Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin)",
+   "aciklama": "Kullanıcının asıl sorusu 'ne zaman ve nasıl ödenir'; ÇKS güncelleme/ekiliş beyanı döneminin tipik zamanı ve ödemenin hasat sonrası yapıldığı somut verilmiyor; faaliyet tablosu tamamen boş (—).",
+   "oneri": "Kayda tipik takvimi ekle (ÇKS güncelleme ve hububat beyan dönemi, ödeme dönemi; teyit gerekir) ve faaliyetleri bu takvimle otomatik doldur."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "Faaliyet alanı: tarim ([DOLDURUN: NACE kodu]). Çalışan sayısı: 3; son yıl net satış hasılatı: 2.500.000 TL. Ölçek: mikro işletme",
+   "aciklama": "Şahıs çiftçi için NACE, KOBİ ölçeği ve hasılat bu destekte istenmez; ayrıca çalışan sayısı ve hasılat kullanıcının bildiği bilgiler arasında yok (profil kaydı doğrulanmamış veri olabilir).",
+   "oneri": "Çiftçi profillerinde işletme tanıtımını ÇKS no, il/ilçe, toplam işlenen alan, mülk/kira dağılımı ile değiştir; kullanıcı onaylamadığı profil alanlarını 'teyit edin' diye işaretle."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "İşletmenin genel hedefleri: makine alımı.",
+   "aciklama": "Profil hedefi programla ilgisiz olduğu halde gerekçe bölümüne basılıyor ve mibzer-destek ilişkisi yanılgısını güçlendiriyor.",
+   "oneri": "Profil hedefi programın kapsamıyla eşleşmiyorsa metne yazma veya 'bu hedef bu programın kapsamında değil' notu ekle."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "Ölçüm yöntemi: [DOLDURUN: göstergelerin nasıl izleneceği (fatura, SGK bildirgesi, gümrük verisi)]",
+   "aciklama": "Genel ipucu tarım desteğinde alakasız; bu destekte çıktı/ölçüm alanı yok.",
+   "oneri": "Bu türde çıktı bölümünü kaldır ya da 'ÇKS ekiliş kaydı ve hak ediş listesi' olarak doldur."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "dusuk",
+   "alinti": "\"ust_limit\": 806.0",
+   "aciklama": "Üst limit dekar başı birim fiyat olarak girilmiş ama birimi yok; sistem bunu toplam limit gibi yorumlayabilir.",
+   "oneri": "ust_limit alanına birim (TL/da) ekle ya da toplamı alan × birim olarak hesapla."
+  }
+ ],
+ "hakem_gozuyle_red_riski": "İl/ilçe müdürlüğünde bu metnin bir karşılığı yoktur; mibzer kalemi destek kapsamı dışında olduğundan dosya 'program dışı talep' olarak görülür, asıl gereken ÇKS güncellemesi ve ekiliş beyanı ise taslakta somutlaşmamıştır.",
+ "en_onemli_3_iyilestirme": [
+  "Dekar başı desteklerde proje taslağı yerine ÇKS/ekiliş beyanı hazırlık listesi ve ürün katsayısıyla hesaplanmış tahmini tutar (180 da × 403 TL, planlı üretim koşullu) üret.",
+  "Programın kapsamadığı giderleri (mibzer) bütçeden çıkar ve uygun alternatif programa (kırsal kalkınma makine hibesi, tarım kredisi; teyit gerekir) yönlendir.",
+  "Sertifikalı tohum desteğini tutar, başvuru zamanı ve belgeleriyle ayrı kalem olarak kayda ve kontrol listesine ekle; ödeme takvimini göster."
+ ]
+}

@@ -231,6 +231,12 @@ Son güncelleme: 2026-10-09 (resmi form şablonları + İKAS sihirbazı). Oturum
   20/20, mod 20/20, beklenen 34/34, uydurma sayı 0, enjeksiyon/garanti/manipülasyon/veride-yok/kalan gün/bölge doğru.
   Bulgu: yanıtlar ~2 kat uzun (ort. 9,8 bin kar); profil cirosu bağlama `4000000.0` gidiyor. 100-ajan yeniden: 18/18 %100
   (D14 ölçümü form şablonu numaralarını rakam sayıyordu, düzeltildi).
+- **Taslak/sihirbaz katmanı ajanlarla denendi** (2026-10-09, `docs/olcum/2026-10-09-taslak-ajan/RAPOR.md`): 12 program,
+  Sonnet kullanıcı + Opus hakem ajanları. Mekanik doğruluk 12/12 (şema, cevaplar, bütçe hesabı, uydurma 0, form başlıkları,
+  Word). İşe yararlık zayıf: kullanıcı evet 0/kısmen 8/hayır 4; hakem forma aktarılabilirlik 2,1/5. Ana neden: sihirbaz her
+  programı proje önerisi sanıyor (kredi, prim teşviki, dekar desteği, E-TUYS, ön onaylı gider, hisse fonu farklı biçim).
+  Öneri: programlara `basvuru_bicimi` alanı + biçime göre sihirbaz; oran seçeneklerinde hisse/faiz ayıklama; kapanmış
+  dönem takvimde. Onay bekliyor.
 - **B2B API planı** (`docs/API_URUN_PLANI.md`, kod yok, onay bekliyor): durumsuz `/v1` uçları (eşleşme, uygunluk,
   hazırlık, çağrılar, program, e-ihracat, şablon taslak), API anahtarı + kapsam + kota + ölçüm, hedef müşteri sırası,
   kill criteria, 6 adımlı uygulama planı.

@@ -1,0 +1,76 @@
+{
+ "puanlar": {
+  "forma_aktarilabilirlik": 2,
+  "programa_uygunluk": 2,
+  "kullanici_bilgisinin_yansimasi": 4,
+  "ic_tutarlilik": 3,
+  "eksiklerin_isaretlenmesi": 3,
+  "dogruluk_yaniltmama": 3
+ },
+ "resmi_forma_aktarilabilir": "kısmen",
+ "hizli_taslak_vs_sihirbaz": "Mevcut ihracat (900.000 TL), hedef (2.500.000 TL), kanal ve 420.000 TL'lik kalem tablosu eklendi. Program ise kalem bazlı ön onay mantığıyla çalışıyor; taslak bu mantığa göre yeniden kurulmadığı ve oran-kalem eşlemesi yapılmadığı için kazanç sınırlı kaldı.",
+ "kusurlar": [
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "Talep edilebilecek desteği hesaplamak için sihirbazda size uyan destek oranını seçin: %70, %50.",
+   "aciklama": "Oran kalem ve ülke bazında belirleniyor. Kayıt reklam ve sipariş karşılama için hedef ülkede %70 diyor; komisyon için ayrı oran yok. Tek oran seçtirmek yapıya aykırı; kullanıcı Almanya'nın hedef ülke olup olmadığını bilmediği için seçim yapamadı.",
+   "oneri": "Her bütçe satırını gider_kalemleri listesindeki bir destek kalemine eşleyin. Oranı kalem ve ülkeye göre otomatik atayın (Almanya hedef ülke listesinde mi: teyit gerekir). Destek aralığını gösterin: bu bütçede yaklaşık 210.000–294.000 TL."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "2026 yıllık toplam en çok 73.990.019 TL (şirketler) — kalem limitleri ilgili kayıtlarda",
+   "aciklama": "Kullanıcı için anlamlı olan kalem başına yıllık limitlerdir (reklam, komisyon, sipariş karşılama). Bunlar gösterilmiyor; yalnız 74 milyon TL'lik genel tavan yer alıyor. 'İlgili kayıtlarda' ifadesi de kullanıcıyı hiçbir yere yönlendirmiyor.",
+   "oneri": "Kalem bazlı 2026 limitlerini kayda ekleyip tabloda her satırın yanında gösterin (değerler teyit gerekir); genel tavanı dipnota alın."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "| Pazaryeri komisyonları | 120.000 TL |",
+   "aciklama": "Pazaryeri komisyonunun desteklenip desteklenmediği ve oranı kayıtta yok. Program amacı metni komisyonu sayıyor; oran bilgisi ise yalnız reklam ve sipariş karşılamayı kapsıyor. Kullanıcı kalemin kapsamda olup olmadığından emin değil.",
+   "oneri": "Komisyon kalemi için oran ve limit kaydını tamamlayın; teyit edilemiyorsa satıra 'kapsam teyit gerekir' etiketi koyun."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "| Tanıtım/fuar/pazaryeri faaliyetleri | Ocak 2027 | Aralık 2027 |",
+   "aciklama": "Taslak 'ön onaydan önce yapılan harcama desteklenmez' diye doğru uyarıyor, ama takvimde ön onay adımı yok. EK-Şirket Başvuru Formu, DYS kaydı ve kalem bazlı ön onay başvuruları Ocak 2027'den önce planlanmazsa harcamalar destek dışı kalır. Kullanıcının asıl sorusu da bu sıralamaydı.",
+   "oneri": "E-ihracat programında faaliyet şablonunu şu sırayla üretin: DYS/MERSİS kontrolü → EK-Şirket Başvuru Formu → kalem bazlı ön onay (harcamadan önce) → harcama → çeyrek dönemlik ödeme başvurusu (belge tarihinden itibaren 6 ay içinde). Tarih önerisi de verin (ör. ön onay Kasım-Aralık 2026)."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "- [ ] EK-Şirket Başvuru Formu (ilk başvuruda; marka tescil belgesi, tedarik ediliyorsa tedarik belgesi, üreticiyse kapasite raporu)",
+   "aciklama": "Asıl başvuru belgesinin içeriği (marka tescili, KTÜN, üretici mi tedarikçi mi, kapasite raporu) sihirbazda sorulmuyor. Marka tescili bilinmiyor; bu Türk ürünü/listeleme şartını doğrudan etkileyebilir. NACE 47.91 (perakende) ile 'Fındık Gıda' adı arasındaki üretici/tedarikçi belirsizliği de ele alınmıyor.",
+   "oneri": "E-ihracat türüne şu soruları ekleyin: marka tescil no, ürünlerin KTÜN'ü, üretim kendiniz mi/tedarik mi (kapasite raporu veya tedarik belgesi), DYS kaydı ve ihracatçı birliği adı. Bilinmeyen her cevabı taslağın üstünde engel uyarısı olarak gösterin."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "- Ölçüm yöntemi: 2027 yılı yurt dışı satış tutarı: hedef 2.500.000 TL.",
+   "aciklama": "Ölçüm yöntemi hedefi tekrar ediyor, yöntemi söylemiyor. E-ihracatta doğrulama ETGB/gümrük beyannamesi ve pazaryeri satış raporlarıyla yapılır; taslak bunu önermiyor.",
+   "oneri": "İhracat türü için ölçüm şablonu: 'ETGB/gümrük beyannameleri ve Amazon/Etsy satış raporlarıyla çeyreklik izlenir; reklam harcamasının dönüşü (ACoS/ROAS) raporlanır.'"
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "**Proje:** Fındık ezmesi ve kavrulmuş fındığın Amazon Almanya ve Etsy üzerinden e-ihracatının büyütülmesi.",
+   "aciklama": "E-İhracat Destekleri anlatı metniyle değerlendirilen bir proje çağrısı değildir; kalem bazlı ön onay ve ödeme formlarıyla yürür. Proje özeti, gerekçe ve rekabet avantajı bölümlerinin resmî formlarda doğrudan karşılığı sınırlıdır (form: null).",
+   "oneri": "Bu program için çıktıyı kalem bazlı ön onay dosyası olarak üretin: her kalem için hedef ülke, pazaryeri, dönem, tahmini tutar, oran ve gerekli belgeler."
+  },
+  {
+   "tur": "kullanici_cevabi",
+   "ciddiyet": "dusuk",
+   "alinti": "Pazar araştırması yapmadık, mevcut satışlarımıza dayanıyoruz.",
+   "aciklama": "Kendi aleyhine bir ifade başvuru metnine olduğu gibi girmiş. Mevcut satış verisi aslında güçlü bir dayanaktır, ama böyle yazılınca zayıflık gibi okunuyor.",
+   "oneri": "Sihirbaz bu tür ifadeleri olumlu biçime çevirmeyi önersin: 'Hedef pazar seçimi Amazon.de ve Etsy'deki 900.000 TL'lik fiili satış verisine dayanmaktadır.'"
+  }
+ ],
+ "hakem_gozuyle_red_riski": "İncelemeci kuruluş anlatıya değil kalem bazlı ön onay dosyasına bakar; ön onay olmadan planlanan Ocak 2027 harcamaları ve belirsiz marka/KTÜN durumu destek dışı kalma riskini doğurur. Komisyon kaleminin kapsamı da teyit edilmemiş.",
+ "en_onemli_3_iyilestirme": [
+  "E-ihracat çıktısını kalem bazlı ön onay planına dönüştürün; bütçe satırlarını destek kalemlerine eşleyip oranı ve kalem limitini kalem bazında atayın.",
+  "Takvime DYS, EK-Şirket Formu ve ön onay adımlarını harcamalardan önce yerleştirin; ödeme başvurusu için 6 ay ve çeyrek dönem kuralını tarihlendirin.",
+  "Marka tescili, KTÜN ve üretici/tedarikçi durumunu sihirbazda sorun; bilinmeyen her cevabı taslağın üstünde engel uyarısı olarak gösterin."
+ ]
+}

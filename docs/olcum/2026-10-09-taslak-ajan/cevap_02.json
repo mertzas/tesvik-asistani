@@ -1,0 +1,28 @@
+{
+ "proje_adi": "Gelen e-faturaların gider hesaplarına makine öğrenmesiyle otomatik sınıflandırılması",
+ "proje_ozeti": "Bulut muhasebe yazılımımızı kullanan KOBİ'ler gelen e-faturaları gider hesaplarına bugün elle sınıflandırıyor. Bu projede e-faturaları gider hesaplarına otomatik sınıflandıran bir makine öğrenmesi modülü geliştireceğiz. Hedefimiz %95 doğruluk ve fatura başına 2 saniyenin altında işlem süresi. Proje 12 ay sürecek, Şubat 2027'de başlayacak.",
+ "gerekce": {
+  "A3": "E-faturaları gider hesaplarına otomatik sınıflandıran bir makine öğrenmesi modülü geliştiriyoruz. Şu an müşterilerimiz bunu elle yapıyor. Beklenen çıktı, mevcut abonelerimize ek modül olarak sunacağımız çalışan bir modül.",
+  "B1": "Proje, müşterilerimizin e-fatura sınıflandırma işini elle yapmasını ortadan kaldırmayı hedefliyor. Hedefler: %95 sınıflandırma doğruluğu ve fatura başına 2 saniyenin altında işlem süresi.",
+  "B3": "Kural tabanlı denememiz şu an %70 doğrulukta kalıyor. Başarı ölçütlerimiz %95 doğruluk ve fatura başına 2 saniyenin altında işlem. Hangi makine öğrenmesi yönteminin seçileceği henüz netleşmedi; ilk aşamada literatür taraması ve denemelerle karar vereceğiz.",
+  "C2": "Ekipte 2 yazılımcı ve 1 veri bilimci kısmi zamanlı çalışacak. Üniversiteden danışmanlık da alacağız.",
+  "C3": "Şirketimizde 12 çalışan var ve 1.400 abonelik bulut muhasebe yazılımı işletiyoruz. Bulut/GPU kaynağı ve yazılım lisansını proje bütçesinden karşılayacağız.",
+  "D1": "Modülü mevcut 1.400 abonemize ek modül olarak aylık ücretle satacağız. Hedef pazar, bulut muhasebe yazılımı kullanan KOBİ'ler.",
+  "D2": "Üniversiteden danışmanlık alacağımız için üniversite-sanayi işbirliği olacak."
+ },
+ "faaliyetler": [
+  {"ad": "Literatür/patent taraması ve gereksinimler", "baslangic": "2027-02", "bitis": null},
+  {"ad": "Tasarım ve prototip geliştirme", "baslangic": null, "bitis": null},
+  {"ad": "Test ve doğrulama", "baslangic": null, "bitis": null},
+  {"ad": "Ticarileşme hazırlığı (fikri mülkiyet, pilot müşteri)", "baslangic": null, "bitis": "2028-01"}
+ ],
+ "butce": [
+  {"kalem": "Personel (2 yazılımcı + 1 veri bilimci, kısmi)", "tutar": 1400000},
+  {"kalem": "Bulut/GPU ve yazılım lisansı", "tutar": 250000},
+  {"kalem": "Üniversiteden danışmanlık", "tutar": 200000}
+ ],
+ "destek_orani": 75.0,
+ "ciktilar": {
+  "arge_cikti": "E-faturaları gider hesaplarına sınıflandıran, %95 doğruluk ve fatura başına 2 saniyenin altında işlem hedefli çalışan modül."
+ }
+}

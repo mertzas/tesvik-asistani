@@ -1,0 +1,90 @@
+{
+ "puanlar": {
+  "forma_aktarilabilirlik": 1,
+  "programa_uygunluk": 1,
+  "kullanici_bilgisinin_yansimasi": 4,
+  "ic_tutarlilik": 3,
+  "eksiklerin_isaretlenmesi": 2,
+  "dogruluk_yaniltmama": 2
+ },
+ "resmi_forma_aktarilabilir": "hayır",
+ "hizli_taslak_vs_sihirbaz": "Sihirbaz yalnız kullanıcının işe alım bilgisini (3 kişi, yaşlar, İŞKUR kaydı, Kasım 2026) metne taşıdı; teşvikten yararlanma için gereken uygunluk ve tutar bilgisinde hızlı taslağa göre hiçbir kazanç yok.",
+ "kusurlar": [
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "## 2. Projenin amacı ve gerekçesi ... **Proje:** Kasım 2026'da 3 Kişilik İlave İstihdam (Kadın ve Genç).",
+   "aciklama": "4447 geçici 10 başvuru/proje formu olan bir program değil; işveren e-Bildirge'de (veya SGK işveren sisteminde) teşvik kanun numarası seçerek bildirim yapar. Proje adı/özet/gerekçe/faaliyet/bütçe kurgusu aktarılacak bir resmî form karşılığı olmadığı için kullanıcıyı yanlış iş tipine yönlendiriyor.",
+   "oneri": "Program türü 'otomatik prim teşviki' olarak işaretlenmeli; taslak yerine uygunluk kontrol listesi + kişi bazlı hesap tablosu + e-Bildirge'de izlenecek adımlar (işe giriş bildirgesi, teşvik kodu seçimi, APHB) çıktısı üretilmeli."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "yuksek",
+   "alinti": "İşveren SGK prim payı, kişi başı aylık 7.184,03–64.656,23 TL (2026; prime esas kazancın alt ve üst sınırı arası)",
+   "aciklama": "Üç kişi de asgari ücretle çalışacak; geçerli değer yalnız alt sınıra karşılık gelen işveren payıdır. Üst değeri göstermek kişi başı kazancı 9 kat abartılmış gösterebilir. Rakamların işveren payı mı, PEK mi olduğu parantezde belirsiz (7.184,03 TL PEK alt sınırı olamayacak kadar düşük; işveren payı olduğu varsayılırsa teyit gerekir).",
+   "oneri": "Etiketi 'asgari ücretli için kişi başı aylık işveren payı ≈ X TL (teyit gerekir)' olarak düzelt; üst sınırı yalnız ücret girildiğinde göster; ücret=asgari ücret cevabından tutarı otomatik hesapla."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "Süre kadın/genç/mesleki belge durumuna göre 6–54 ay; İŞKUR kaydı +6 ay.",
+   "aciklama": "Destek süresi bilgisi kişi grubu ile süre arasında hangi eşleşmenin geçerli olduğunu vermiyor; 6111 düzenlemesinde sürenin kişinin geçmiş prim günü/MYB durumuna bağlı olduğu hatırlanıyor (teyit gerekir). Ayrıca geçici 10. maddenin 31.12.2026'ya kadar uzatıldığı iddiası da kaynakla teyit gerektiriyor.",
+   "oneri": "Kayda süre tablosunu (kişi kategorisi × prim günü/MYB → ay) ve uzatma dayanağını (Cumhurbaşkanı Kararı sayı/tarih) ekle."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "Hesaplama: İşveren prim payı × destek süresi (6–54 ay; kişinin yaşı/cinsiyeti/belgesine göre; İŞKUR kayıtlı ise +6 ay)",
+   "aciklama": "Formül var ama uygulanmıyor: kullanıcı yaş (22, 25, 35), cinsiyet, İŞKUR kaydı (3'te 2) ve ücret bilgisini verdi; kişi bazlı süre ve toplam tutar hesaplanmadı. Kullanıcının asıl sorusu ('kaç TL kazandırır') cevapsız kaldı.",
+   "oneri": "Kişi satırlı tablo üret: kişi | grup (genç erkek 18-29 / kadın 18+, teyit gerekir) | İŞKUR | tahmini süre | aylık destek | toplam; belirsiz hücreleri 'teyit gerekir' olarak işaretle."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "Kişinin, işe alındığı tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına İLAVE olarak istihdam edilmesi",
+   "aciklama": "Teşvikin belirleyici şartı olan ilavelik hesabı için son 6 ayın aylık sigortalı sayıları sorulmuyor; taslak '4 çalışandan 7 çalışana çıkıyoruz' diyerek ilaveliği doğrulanmış gibi sunuyor.",
+   "oneri": "Sihirbaza 'son 6 ayın APHB'deki aylık sigortalı sayıları' alanı ekle; ortalamayı hesapla, hangi işe alımın ilave sayıldığını ve teşvikin hangi aydan başlayacağını göster."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "- İstihdamı etkileyen durum: [DOLDURUN: Talep düşüşü, finansman ihtiyacı, büyüme]",
+   "aciklama": "Bu teşvikte işe alım gerekçesi değerlendirilmez; DOLDURUN ile zorunlu eksik gibi gösterilmesi gereksiz iş yaratıyor. 'Korunacak' ifadesi yeni işe alım teşvikine uymuyor.",
+   "oneri": "Bu programda 'durum' sorusunu kaldır; 'istihdam' etiketini 'İşe alınacak kişiler (yaş, cinsiyet, son 6 ay sigortalılık, İŞKUR kaydı, MYB)' olarak değiştir."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "Bütçe kalemlerini ve tutarlarını sihirbazda girin; toplam ve talep edilebilecek destek hesaplanır.",
+   "aciklama": "gider_kalemleri ve oran_secenekleri boşken kullanıcıdan bütçe girmesi isteniyor; prim teşviki için anlamsız ve yanıltıcı (bütçe girilirse 'talep edilebilecek destek' hesaplanacağı vaadi gerçekleşmez).",
+   "oneri": "Prim teşviki türünde bütçe bölümünü 'tahmini teşvik tutarı' hesabıyla değiştir."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "Ölçüm yöntemi: [DOLDURUN: göstergelerin nasıl izleneceği (fatura, SGK bildirgesi, gümrük verisi)]",
+   "aciklama": "Genel şablon ipucu; bu programda ölçüm zaten APHB/teşvik tahakkuku ile yapılır, 'gümrük verisi' alakasız.",
+   "oneri": "Programa göre doldur: 'SGK APHB ve e-Bildirge teşvik tahakkuk listesi'."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "orta",
+   "alinti": "İşletmemiz Hatay ilinde faaliyet gösteren bir şahıs işletmesidir.",
+   "aciklama": "Şahıs işletmesinin özel sektör işvereni sayıldığı, teşvikin diğer prim teşvikleriyle (5 puan indirimi, bölgesel/deprem bölgesi teşvikleri, asgari ücret desteği) birleşme/çakışma kuralı ve prim borcu olmama şartı ele alınmıyor (teyit gerekir).",
+   "oneri": "Kontrol listesine 'SGK prim/vergi borcu yok', 'aynı kişi için başka teşvikle çakışma' ve 'işyeri SGK sicil numarası' maddelerini ekle; şahıs işletmesinin uygun olduğunu açıkça yaz."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "Başvuru zamanı: Sürekli; 31.12.2026 tarihine kadar yapılan işe alımlar için",
+   "aciklama": "Ayrı başvuru gerekmediği, kişilerin Kasım 2026'da işe girmesi durumunda ilk teşvikin Kasım APHB'sinde (Aralık'ta verilen) uygulanacağı belirtilmiyor (teyit gerekir); kullanıcı 'hangi ayda başlar' sorusunun cevabını bulamıyor.",
+   "oneri": "'Başvuru yok; işe giriş ayına ait APHB'de teşvik kodu seçilerek uygulanır' cümlesi ve ilk uygulama ayı hesabı ekle."
+  }
+ ],
+ "hakem_gozuyle_red_riski": "Metin bir başvuru dosyası olarak hiçbir kurumda karşılık bulmaz; e-Bildirge aşamasında ise ilavelik şartı (son 6 ay ortalaması) doğrulanmadığı için teşvik reddedilebilir veya sonradan geri alınıp gecikme zammıyla tahsil edilebilir.",
+ "en_onemli_3_iyilestirme": [
+  "Otomatik prim teşviklerinde proje taslağını kapatıp uygunluk + kişi bazlı tutar/süre hesabı ve e-Bildirge adımlarından oluşan bir 'uygulama kartı' üret.",
+  "Son 6 ayın aylık sigortalı sayılarını sorup ilave istihdam ortalamasını hesapla; hangi işe alımın teşvikli olacağını ve başlangıç ayını göster.",
+  "Tutar kaydını düzelt: asgari ücretli için kişi başı aylık işveren payını tek değer olarak ver, üst sınırı yalnız yüksek ücrette göster, süre tablosunu ve 2026 uzatma dayanağını kaynakla teyit et."
+ ]
+}

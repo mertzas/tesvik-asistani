@@ -1,0 +1,83 @@
+{
+ "puanlar": {
+  "forma_aktarilabilirlik": 2,
+  "programa_uygunluk": 2,
+  "kullanici_bilgisinin_yansimasi": 4,
+  "ic_tutarlilik": 3,
+  "eksiklerin_isaretlenmesi": 3,
+  "dogruluk_yaniltmama": 3
+ },
+ "resmi_forma_aktarilabilir": "kısmen",
+ "hizli_taslak_vs_sihirbaz": "Sihirbaz sorunu (Excel ile sipariş takibi), çözümü (ERP+MES, 6 tablet/barkod), 1.000.000 TL bütçeyi ve 21→14 gün hedefini metne ekledi; ama makine yatırımı kalıbı ve kredi faiz desteği mantığıyla bağlanmadığı için başvuruya hazır hale getirmedi.",
+ "kusurlar": [
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "- Kapasite artışı: [DOLDURUN: Mevcut → hedef (birim/yıl)]\n- Ölçüm yöntemi: Ortalama teslim süresinin 21 günden 14 güne düşmesi.",
+   "aciklama": "Kullanıcının asıl hedefi (teslim süresi) 'ölçüm yöntemi' satırına düşmüş, dijital dönüşüme uymayan 'kapasite artışı' ise zorunlu eksik gibi duruyor. Hedef ile ölçüm yöntemi karışmış.",
+   "oneri": "Dijital dönüşüm türü için çıktı sorularını 'süreç göstergesi: mevcut → hedef (teslim süresi, zamanında teslim oranı, stok devir)' ve ayrı 'ölçüm kaynağı (ERP/MES raporu)' olarak tanımla; 'olcum' cevabını hedef alanına eşleme."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "\"turler\": [\"yatirim\"] ... \"Hangi süreç ya da makinede darboğaz var, kapasite kullanım oranı\"",
+   "aciklama": "Program 'yatirim' türüne eşlenmiş; sorular ve faaliyet önerileri (makine tedariki, karşılanamayan talep) dijital dönüşüme uymuyor. Dijital olgunluk düzeyi, mevcut sistemler, yazılım seçim gerekçesi, entegrasyon, eğitim gibi değerlendirmede beklenen başlıklar hiç sorulmuyor.",
+   "oneri": "'dijital_donusum' türü tanımla: mevcut BT/OT durumu, olgunluk raporu bulguları, seçilen çözümün rapordaki önerilerle ilişkisi, kullanıcı eğitimi, veri entegrasyonu soruları."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "Hesaplama: Kredi faiz giderlerine geri ödemesiz destek, kredi limiti ₺1.000.000-₺20.000.000, azami vade 36 ay",
+   "aciklama": "Destek kredi faiz desteği olduğu halde taslak gider toplamını vermekle kalıyor; kredi tutarı, vade, faiz desteği oranı ve tahmini faiz desteği hesaplanmıyor. Bütçe (1.000.000 TL) tam alt sınırda; KDV hariç tutulursa veya bir kalem uygun sayılmazsa alt sınırın altına düşme riski uyarılmıyor.",
+   "oneri": "Bütçe bölümünü 'talep edilecek kredi tutarı / vade / tahmini faiz desteği' olarak kur; alt sınıra yakın bütçelerde KDV ve kalem uygunluğu uyarısı ver; teminat ve banka bilgisini sor."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "- [ ] Onaylı dijital dönüşüm/olgunluk değerlendirme raporu (TÜSSİDE-DDX veya SIRI formatı)",
+   "aciklama": "Kullanıcının bilmediği tek konu buydu ve önkoşul olarak listede var, ama faaliyet takvimine ilk adım olarak girmiyor; raporun kimden, ne sürede, hangi maliyetle alınacağı yok. Ayrıca aynı rapor hem 'şart' hem 'belge' olarak iki kez listelenmiş.",
+   "oneri": "Faaliyet tablosunun ilk satırını otomatik 'Olgunluk değerlendirme raporunun alınması (önkoşul)' yap; yetkili kuruluş/süre/maliyet bilgisini kayda ekle (teyit gerekir); mükerrer maddeyi birleştir."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "| Teklif ve proformaların toplanması | — | — |\n| ERP ve MES yazılımının tedariki ve kurulumu | — | — |",
+   "aciklama": "Dört faaliyetin hiçbirinde tarih yok ve bu eksiklik DOLDURUN ile işaretlenmemiş; 24 aylık program süresiyle takvim ilişkisi kurulmamış.",
+   "oneri": "Tarihsiz faaliyetlere [DOLDURUN: ay] işareti koy; '24 aylık süre' ifadesinin neyi kapsadığını açıklayıp proje süresini bu sınırla kontrol et."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "orta",
+   "alinti": "- [ ] Son mali yıl öz kaynakları pozitif, son 3 yıldan en az biri kârlı",
+   "aciklama": "Eleme niteliğindeki mali şart sorulmuyor ve taslakta durumu belirtilmiyor; kullanıcı bu bilgiyi bilmiyor. KOSGEB veri tabanı kaydı da sorulmuyor.",
+   "oneri": "Sihirbaza öz kaynak/kârlılık ve KOSGEB kayıt durumu evet/hayır/bilmiyorum sorularını ekle; 'bilmiyorum' cevabını taslakta [DOLDURUN] olarak göster."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "Tutar/oran: ₺1.000.000 - ₺20.000.000 kredi (faiz desteği geri ödemesiz)",
+   "aciklama": "Faiz desteğinin oranı (faizin tamamı mı, belirli puanı mı), uygun gider türleri (yazılım, donanım, danışmanlık) ve TÜSSİDE-DDX/SIRI şartı kayıtta kaynaklı değil; programın güncel parametreleri teyit gerekir. gider_kalemleri boş olduğundan tablet/barkod okuyucunun uygunluğu bilinmiyor.",
+   "oneri": "Kayda faiz desteği oranı, uygun gider listesi ve kaynak madde numaralarını ekle."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "Programın amacı (kurum metni): Ülkenin ulusal ve uluslararası hedefleri doğrultusunda, küçük ve orta ölçekli işletmelerin",
+   "aciklama": "Kurumun genel amaç metni başvurana katkı sağlamayan dolgu; başvuru formunda işletmenin projesine özgü gerekçe beklenir.",
+   "oneri": "Kurum metnini dipnota al; yerine projenin programın hangi amacına hizmet ettiğini bağlayan tek cümle üret."
+  },
+  {
+   "tur": "kullanici_cevabi",
+   "ciddiyet": "dusuk",
+   "alinti": "Kapasite kullanım oranını ölçmüş değiliz.",
+   "aciklama": "Dürüst ama gerekçeyi zayıflatıyor; gecikmeli sipariş oranı veya zamanında teslim oranı gibi kullanıcının çıkarabileceği bir mevcut durum göstergesi yok.",
+   "oneri": "Sihirbaz kapasite yerine 'son 6 ayda geç teslim edilen sipariş sayısı/oranı' sorsun."
+  }
+ ],
+ "hakem_gozuyle_red_riski": "Zorunlu olgunluk raporu olmadan ve kredi/faiz desteği parametreleri (tutar, vade, teminat) belirsizken başvuru ön incelemede eksik sayılır; bütçenin alt sınırda olması ve projenin rapor önerileriyle ilişkilendirilmemesi en olası eleştiridir.",
+ "en_onemli_3_iyilestirme": [
+  "Dijital dönüşüm için ayrı soru seti ve çıktı alanları tanımla (olgunluk düzeyi, mevcut sistemler, süreç göstergesi mevcut→hedef); teslim süresi hedefini doğru alana yaz.",
+  "Olgunluk değerlendirme raporunu faaliyet takviminin ilk adımı yap ve raporun nereden/ne sürede/ne maliyetle alınacağını göster.",
+  "Bütçe bölümünü kredi faiz desteği mantığıyla kur: kredi tutarı, vade, tahmini faiz desteği, KDV durumu ve alt sınır uyarısı."
+ ]
+}

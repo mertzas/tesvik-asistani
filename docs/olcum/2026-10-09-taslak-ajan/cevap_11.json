@@ -1,0 +1,22 @@
+{
+  "proje_adi": "ABD pazarında SaaS ürünümüzün büyütülmesi",
+  "proje_ozeti": "Ege Yazılım olarak 2027'de ABD pazarında büyümek için yurt dışı dijital reklam, Web Summit fuarı katılımı ve ABD pazar araştırması raporu harcamaları yapmayı planlıyoruz. Halihazırda gelirimizin yaklaşık %30'u ABD'deki SaaS abonelerimizden geliyor.",
+  "gerekce": {
+    "pazar": "Hedef pazarımız ABD. Zaten orada SaaS abonelerimiz var ve gelirimizin %30'u onlardan geliyor. Pazarı daha iyi tanımak için bir ABD pazar araştırması raporu aldırmayı planlıyoruz.",
+    "mevcut_ihracat": "İzmir merkezli, 18 çalışanlı bir yazılım şirketiyiz, cirom 35 milyon TL. Gelirin %30'u ABD'deki SaaS abonelerimizden geliyor. Satışı abonelik olarak yapıyoruz."
+  },
+  "faaliyetler": [
+    {"ad": "ABD pazar araştırması raporu", "baslangic": null, "bitis": null},
+    {"ad": "Yurt dışı dijital reklam kampanyaları", "baslangic": "2027-01", "bitis": "2027-12"},
+    {"ad": "Web Summit fuarı katılımı", "baslangic": null, "bitis": null}
+  ],
+  "butce": [
+    {"kalem": "Yurt dışı dijital reklam", "tutar": 600000},
+    {"kalem": "Web Summit fuarı katılımı", "tutar": 350000},
+    {"kalem": "ABD pazar araştırması raporu", "tutar": 150000}
+  ],
+  "destek_orani": 50.0,
+  "ciktilar": {
+    "ihracat": "Şu an ABD'den gelen gelir toplam gelirin yaklaşık %30'u. Bu payı artırmayı hedefliyoruz."
+  }
+}

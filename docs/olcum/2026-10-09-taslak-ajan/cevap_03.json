@@ -1,0 +1,59 @@
+{
+  "proje_adi": "5 Eksen CNC ve CMM Yatırımı ile Kapasite Artışı ve İhracat Payının Yükseltilmesi",
+  "proje_ozeti": "Konya'da tarım makineleri için CNC ile yedek parça işleyen 28 çalışanlı bir firmayız. Projede 2 adet 5 eksen CNC işleme merkezi ve 1 koordinat ölçüm cihazı (CMM) alarak üretim kapasitemizi %35 artırmayı, ihracatın satışlarımızdaki payını %10'dan %25'e çıkarmayı hedefliyoruz. Müşterilerimiz Almanya ve Romanya'da. Makinelerin yanında CAM yazılımı alınacak, operatörler eğitilecek ve 2 yeni CNC operatörü istihdam edilecek. Proje 12 ay sürecek.",
+  "gerekce": {
+    "2.11": "Konya Hassas Metal Ltd. Şti. olarak tarım makinelerine CNC tezgahlarda yedek parça işliyoruz. Şu anda 28 kişi çalışıyor, yıllık cirom 85 milyon TL. Almanya ve Romanya'ya ihracat yapıyoruz, satışlarımızın yaklaşık %10'u ihracat.",
+    "2.12": "Bugün tarım makineleri için CNC ile yedek parça üretiyoruz ve ihracat satışlarımızın %10'unu oluşturuyor. Mevcut makine parkımızla gelen talebi karşılamakta kapasite açısından sınıra yakınız, bu yüzden özellikle yurt dışı müşterilerin ek siparişlerini alamıyoruz.",
+    "2.13": "Amacımız kapasiteyi %35 artırmak ve ihracatın payını %10'dan %25'e çıkarmak. 5 eksen CNC ile daha karmaşık parçaları tek bağlamada işleyebileceğiz, CMM ile de ölçüm ve kalite kontrolünü yurt dışı müşterilerin istediği düzeye çıkaracağız.",
+    "2.14": "Proje kapsamında 2 adet 5 eksen CNC işleme merkezi ve 1 adet CMM satın alınacak (9.500.000 TL), CAM yazılımı alınacak (400.000 TL) ve operatörlere eğitim verilecek (150.000 TL). Ayrıca 2 yeni CNC operatörü işe alınacak. Kapasite %35 artacak, ihracat payı %25'e çıkacak.",
+    "2.15": "Hedef 1: Kapasiteyi %35 artırmak; faaliyetler makine tedariki, kurulum ve devreye alma. Hedef 2: İhracatı satışların %25'ine çıkarmak; faaliyetler CAM yazılımı ve eğitim, CMM ile ölçüm kapasitesi, Almanya ve Romanya müşterilerinden gelen siparişlerin artırılması.",
+    "2.16": "Yurt içinde Konya ve Bursa'da 3 rakibimiz var. Yeni makinelerle kapasitemiz ve ölçüm kabiliyetimiz artacağı için hem yurt içinde hem Almanya ve Romanya müşterilerinde daha fazla iş alabileceğiz. Ürünümüzün dış ticaret ve pazar büyüklüğü rakamlarına şu an elimde bir veri yok.",
+    "2.18": "Projede 2 yeni CNC operatörü işe alınacak, mevcut 28 kişilik ekibimiz de çalışacak. Makineler ve yazılım satın alınacak."
+  },
+  "faaliyetler": [
+    {
+      "ad": "Teklif ve proformaların toplanması, makine ve ekipman tedariki",
+      "baslangic": "2027-03",
+      "bitis": null
+    },
+    {
+      "ad": "Kurulum ve devreye alma",
+      "baslangic": null,
+      "bitis": null
+    },
+    {
+      "ad": "CAM yazılımı alımı ve operatör eğitimi",
+      "baslangic": null,
+      "bitis": null
+    },
+    {
+      "ad": "2 CNC operatörünün işe alınması",
+      "baslangic": null,
+      "bitis": null
+    },
+    {
+      "ad": "Kapasite ve ihracat payı artışının ölçülmesi",
+      "baslangic": null,
+      "bitis": "2028-02"
+    }
+  ],
+  "butce": [
+    {
+      "kalem": "Makine teçhizat (2 adet 5 eksen CNC işleme merkezi ve 1 adet CMM)",
+      "tutar": 9500000
+    },
+    {
+      "kalem": "CAM yazılımı",
+      "tutar": 400000
+    },
+    {
+      "kalem": "Operatör eğitimi",
+      "tutar": 150000
+    }
+  ],
+  "destek_orani": null,
+  "ciktilar": {
+    "kapasite": "Kapasite %35 artacak. Şu anki yıllık üretim miktarını birim olarak bilmiyorum, yüzde olarak hedefliyoruz.",
+    "olcum": "İhracatın satışlardaki payı %10'dan %25'e çıkacak, kapasite %35 artacak."
+  }
+}

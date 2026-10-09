@@ -1,0 +1,90 @@
+{
+ "puanlar": {
+  "forma_aktarilabilirlik": 3,
+  "programa_uygunluk": 3,
+  "kullanici_bilgisinin_yansimasi": 4,
+  "ic_tutarlilik": 3,
+  "eksiklerin_isaretlenmesi": 3,
+  "dogruluk_yaniltmama": 3
+ },
+ "resmi_forma_aktarilabilir": "kısmen",
+ "hizli_taslak_vs_sihirbaz": "Sihirbazlı taslak II. Bölüm'ün 2.11-2.16 ve 2.18 başlıklarını kullanıcının proje bilgisiyle doldurdu ve 10.050.000 TL bütçe tablosunu ekledi; ama 2.3-2.10 tabloları ve 2.17/2.19/2.20 hızlı taslaktaki gibi boş kaldı.",
+ "kusurlar": [
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "Başvuru zamanı: Dönemsel çağrı: 2026 yılı 2. başvuru dönemi 6 Haziran 2026'da başladı",
+   "aciklama": "Paket bu dönemi 'Kapandı' olarak gösteriyor ama taslak bunu yazmıyor; kullanıcı Mart 2027 başlangıçlı projeyi kapanmış döneme göre hazırlıyor ve sonraki dönemi beklemesi gerektiğini öğrenmiyor.",
+   "oneri": "Dönem durumu 'Kapandı' ise taslağın başına uyarı koy ve sonraki dönem bilinmiyorsa 'KOSGEB duyurusunu izleyin; proje başlangıcı onaya bağlıdır' notu ekle."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "yuksek",
+   "alinti": "Programın destek tutarı/oranı: ₺1.000.000 - ₺20.000.000 (kredi limiti)",
+   "aciklama": "Programın destek mekanizması (KOSGEB'in kredi faizini/finansman maliyetini karşılaması mı, geri ödemeli destek mi, öz katkı oranı, vade, teminat) yazılmamış; kullanıcı ne alacağını ve ne kadar öz kaynak koyacağını bilemiyor (teyit gerekir: 2026 uygulama esasları).",
+   "oneri": "Program kaydına destek türü, öz katkı/finansman oranı, vade ve geri ödeme koşullarını ekle; 10.050.000 TL için örnek finansman tablosu üret."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "[ ] Hızlı büyüyen işletme (teknogirişim rozeti veya tedarikçi geliştirme protokolü ile şart aranmayabilir)",
+   "aciklama": "Uygunluk şartının ölçütü (hangi yıllar, ciro/istihdam büyüme eşiği) yok ve firmanın verisiyle kontrol edilmiyor; kullanıcı elenip elenmeyeceğini bilmeden form yazıyor.",
+   "oneri": "Ölçütü mevzuattan kaydet ve sihirbazda son yılların ciro/çalışan sayısını sorup otomatik uygunluk kontrolü yap."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "- 2.7 Rakip firmalar\n- 2.8 Müşteriler",
+   "aciklama": "2.3-2.10 tabloları yalnız listeleniyor. Kullanıcının verdiği 3 rakip (Konya, Bursa) ve Almanya/Romanya müşterileri ilgili tablolara aktarılmamış; 2.9 üretim-satış planı ve 2.10 geri dönüş süresi için hiçbir alan sorulmuyor. Bu tablolar değerlendirmede belirleyicidir.",
+   "oneri": "Her tablo için yapılandırılmış giriş alanı aç; mevcut cevaplardan doldurulabilenleri (2.7, 2.8) otomatik doldur, eksikleri [DOLDURUN] ile işaretle; 2.10 için basit geri dönüş hesabı yardımı ver."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "Ölçüm yöntemi: İhracatın satışlardaki payı %10'dan %25'e çıkacak, kapasite %35 artacak.",
+   "aciklama": "Ölçüm yöntemi yerine hedef tekrarlanmış; çıktı listesinde ihracat göstergesi olmadığı için kullanıcı asıl hedefini 'olcum' alanına yazmak zorunda kalmış. Kanıt kaynağı (gümrük beyannamesi, e-fatura, üretim kayıtları) yok.",
+   "oneri": "Kapasite Geliştirme için çıktıları 'kapasite (birim/yıl), ihracat tutarı/payı, istihdam' olarak ayır; ölçüm alanını kanıt belgesi seçimi olarak sor."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "Hedef 1: Kapasiteyi %35 artırmak; faaliyetler makine tedariki, kurulum ve devreye alma. Hedef 2: İhracatı satışların %25'ine çıkarmak",
+   "aciklama": "Form 'hedef kartı' yapısı (hedef → faaliyet → çıktı → gider gerekçesi) istiyor; sihirbaz tek metin kutusu verdiği için giderler hedeflere bağlanmamış, CAM ve eğitimin ihracat hedefine katkısı gerekçelendirilmemiş.",
+   "oneri": "2.15'i kart yapısında sor: her hedef için faaliyet, ölçülebilir çıktı ve bağlı bütçe kalemi seçimi."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "orta",
+   "alinti": "kapasitemizi %35 artırmayı, ihracatın satışlarımızdaki payını %10'dan %25'e çıkarmayı hedefliyoruz",
+   "aciklama": "İki hedefin tutarlılığı hesaplanmamış: 85 M TL ciro %35 büyürse ~114,75 M TL olur, %25 ihracat ~28,7 M TL eder; bugünkü ~8,5 M TL ihracatın 3,4 katına çıkması gerekir, yani yeni kapasitenin neredeyse tamamı ihracata gitmeli. Hakem bunun sipariş/niyet mektubuyla desteklenmesini ister.",
+   "oneri": "Ciro, kapasite ve ihracat hedeflerinden örtük ihracat tutarını hesaplayıp kullanıcıya göster; dayanak (sipariş, niyet mektubu) iste."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "orta",
+   "alinti": "| Operatör eğitimi | 150.000 TL |",
+   "aciklama": "2 yeni operatörün maaş gideri, makine teslim/kurulum süresi ve finansman planı (öz kaynak/kredi) yok; gider_kalemleri boş olduğu için CAM yazılımı ve eğitimin uygun gider olup olmadığı bilinmiyor (teyit gerekir).",
+   "oneri": "Programın uygun gider listesini kaydet; personel giderini ve finansman kaynağını ayrı sorulara bağla."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "dusuk",
+   "alinti": "Faaliyet alanı: imalat (NACE 28.30).",
+   "aciklama": "28.30 tarım ve ormancılık makineleri imalatıdır; fason CNC parça işleme 25.62 'metallerin işlenmesi' altında da kayıtlı olabilir (teyit gerekir). KOSGEB NACE uygunluğu ve EK listesi bu koda göre değerlendirilir.",
+   "oneri": "NACE kodunu kullanıcıdan vergi levhası/KOSGEB kaydına göre doğrulat."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "Şu anda 28 kişi çalışıyor, yıllık cirom 85 milyon TL.",
+   "aciklama": "Ham kullanıcı dili ('cirom') forma aktarılıyor; 2.11'in istediği kuruluş yılı, ortaklar, ürün grupları ve proje deneyimi yok ama [DOLDURUN] ile işaretlenmemiş.",
+   "oneri": "Kısmen cevaplanan bölümlerde ipucundaki alt maddelerden eksik kalanları otomatik [DOLDURUN: kuruluş yılı, ortaklar...] olarak ekle."
+  }
+ ],
+ "hakem_gozuyle_red_riski": "Pazar/dış ticaret tabloları, üretim-satış planı ve geri dönüş süresi boş, ihracat hedefi dayanaksız olduğundan 'fizibilite ve pazar analizi yetersiz, hedefler gerekçelendirilmemiş' eleştirisi alır; ayrıca dönem kapandığı için başvuru bu metinle şu an yapılamaz.",
+ "en_onemli_3_iyilestirme": [
+  "2.3-2.10 tablolarını yapılandırılmış girişe çevir, mevcut cevaplardan doldurulabilenleri otomatik doldur ve geri dönüş süresi/üretim-satış planı için hesap yardımı ver.",
+  "Program kaydına destek mekanizmasını (finansman türü, öz katkı, vade) ve 'hızlı büyüyen işletme' ölçütünü ekleyip firma verisiyle otomatik uygunluk kontrolü yap.",
+  "Kapanmış dönem uyarısı ve 2.15 hedef kartı yapısı (hedef-faaliyet-çıktı-gider bağlantısı) ekle; ihracat hedefi için ayrı çıktı ve kanıt alanı aç."
+ ]
+}

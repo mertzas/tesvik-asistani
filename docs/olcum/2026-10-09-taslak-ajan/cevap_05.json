@@ -1,0 +1,23 @@
+{
+  "proje_adi": "Türk İşaret Dili'ni kameradan metne çeviren mobil uygulama",
+  "proje_ozeti": "İşitme engelliler için Türk İşaret Dili'ni telefon kamerasından yakalayıp yazıya çeviren bir mobil uygulama geliştiriyoruz. Laboratuvar ortamında 300 işaret üzerinde %80 tanıma başarısına ulaşan bir prototipimiz var (TRL 4). 12 ay içinde sözlüğü 1.000 işarete çıkarmayı ve 50 kullanıcıyla pilot çalışma yapmayı hedefliyoruz.",
+  "gerekce": {
+    "fikir": "İşitme engelli bireylerin işaret dilini bilmeyen kişilerle iletişimi zor. Uygulama, telefonun kamerasındaki Türk İşaret Dili hareketlerini metne çeviriyor. Şu an 300 işareti laboratuvarda yaklaşık %80 doğrulukla tanıyan bir prototipimiz var.",
+    "ekip": "Ankara'da yaşayan 26 yaşında bir yazılım mühendisiyim ve projeyi bir arkadaşımla, ortak kurucu olarak birlikte yürütüyorum. Prototipi biz geliştirdik. Henüz bir şirketimiz yok."
+  },
+  "faaliyetler": [
+    {"ad": "Şirket kuruluşu / kayıtlar", "baslangic": null, "bitis": null},
+    {"ad": "Sözlüğün 300 işaretten 1.000 işarete çıkarılması", "baslangic": null, "bitis": null},
+    {"ad": "Pazar doğrulama ve kullanıcı testleri", "baslangic": null, "bitis": null},
+    {"ad": "50 kullanıcılı pilot uygulama", "baslangic": null, "bitis": null}
+  ],
+  "butce": [
+    {"kalem": "Yazılım geliştirme hizmeti", "tutar": 300000},
+    {"kalem": "Test cihazları", "tutar": 120000},
+    {"kalem": "Pazar doğrulama ve kullanıcı testleri", "tutar": 80000}
+  ],
+  "destek_orani": null,
+  "ciktilar": {
+    "girisim_cikti": "12 ay sonunda 1.000 işareti tanıyan bir sürüm ve 50 kullanıcıyla yürütülmüş bir pilot çalışma hedefliyoruz."
+  }
+}

@@ -1,0 +1,90 @@
+{
+ "puanlar": {
+  "forma_aktarilabilirlik": 3,
+  "programa_uygunluk": 4,
+  "kullanici_bilgisinin_yansimasi": 4,
+  "ic_tutarlilik": 3,
+  "eksiklerin_isaretlenmesi": 4,
+  "dogruluk_yaniltmama": 3
+ },
+ "resmi_forma_aktarilabilir": "kısmen",
+ "hizli_taslak_vs_sihirbaz": "Sihirbazlı taslak 11 form bölümünün 8'ini kullanıcının ham cümleleriyle doldurdu ve bütçe toplamını (3.750.000 TL) çıkardı; ancak metin form diline çevrilmeden yapıştırıldı, B.2/B.4/C.3 hızlı taslaktaki gibi boş kaldı.",
+ "kusurlar": [
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "yuksek",
+   "alinti": "Faaliyet alanı: imalat (NACE 13.20).",
+   "aciklama": "13.20 dokuma (weaving) kodudur; örme kumaş üretimi NACE 13.91 'örgü (triko) veya tığ işi kumaş imalatı' altındadır (teyit gerekir: firmanın vergi levhası/SGK kaydındaki kod). Hakem ve PRODİS firma kaydıyla çelişen kod güven kaybettirir.",
+   "oneri": "NACE kodunu kullanıcıya sorup vergi levhası/SGK işyeri kaydıyla doğrulat; çıkarım yapılıyorsa 'tahmini, teyit edin' etiketi koy."
+  },
+  {
+   "tur": "veri_kaydi",
+   "ciddiyet": "orta",
+   "alinti": "[sart] Türkiye'de yerleşik, sermaye şirketi statüsünde bir KOBİ olmak",
+   "aciklama": "1501 büyük ölçekli firmalara da açıktır; KOBİ şartı 1507'nin şartıdır (teyit gerekir). Aynı şekilde '%75 ilk 5 proje / %60' ayrımının 1501'de ölçek mi proje sırası mı üzerinden kurulduğu ve 20 M TL tavanın tutarı çağrı metninden teyit edilmeli.",
+   "oneri": "1501 kontrol listesindeki KOBİ şartını 'sermaye şirketi' olarak düzelt; oran kuralını 2026-2 çağrı metninden madde numarasıyla kaydet."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "yuksek",
+   "alinti": "Talep edilebilecek desteği hesaplamak için sihirbazda size uyan destek oranını seçin: %75, %60.",
+   "aciklama": "Oranı belirleyen bilgi (firmanın daha önce desteklenen proje sayısı) sorulmuyor; kullanıcı null bıraktı, destek tutarı ve firma payı hiç hesaplanmadı. E.1'deki 'Finansman olarak toplam bütçemiz 3.750.000 TL' cümlesi finansman planı değil.",
+   "oneri": "Sihirbaza 'TÜBİTAK TEYDEB'den daha önce kaç proje desteklendi?' sorusu ekle; iki senaryoyu da hesapla (%75: 2.812.500 TL destek / 937.500 TL firma payı; %60: 2.250.000 / 1.500.000) ve E.1'e firma payının kaynağını soran alan koy."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "| yurt içi/yurt dışı danışmanlık ve diğer hizmet alımı | 450.000 TL |",
+   "aciklama": "Dış laboratuvar test/analiz bedeli formda M014 'Ar-Ge ve test kuruluşlarına yaptırılan işler' kalemidir; sihirbazın gider listesi M kodlarıyla eşlenmediği için M015'e düştü. Bütçe tablosu formun M011-M016 tablosuna doğrudan aktarılamıyor.",
+   "oneri": "gider_kalemleri'ni M011-M016 kodlarıyla birebir eşle, her seçenekte örnek ver ('dış laboratuvar testleri → M014')."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "| Tasarım ve prototip geliştirme | — | — |",
+   "aciklama": "Dört iş paketinden ikisinin tarihi yok, hiçbir pakete kişi-ay veya maliyet dağıtılmamış; C.1 ve M030 dönemsel gider tablosu bu haliyle doldurulamaz. 18 aylık toplam süreyi (Ocak 2027-Haziran 2028) paketlere bölmek için şablon yardım etmiyor.",
+   "oneri": "Toplam süre ve paket sayısından varsayılan bir Gantt önerisi üret ('öneri, düzenleyin' etiketiyle); her paket için kişi-ay ve M kodu bazında maliyet alanı iste."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "orta",
+   "alinti": "Ölçüm yöntemi: %40 geri dönüştürülmüş lif oranında kopma mukavemeti, standart kumaşın en az %90'ı.",
+   "aciklama": "Etiket 'ölçüm yöntemi' ama içerik hedef değer; hızlı taslaktaki ipucu (fatura, SGK bildirgesi, gümrük verisi) Ar-Ge projesine uymuyor. Hakem test standardı ve numune sayısı bekler (örme kumaşta genellikle patlama mukavemeti, ör. TS EN ISO 13938; teyit gerekir).",
+   "oneri": "Ar-Ge türü için ölçüm alanını 'test standardı, numune sayısı, referans kumaş, laboratuvar' alt alanlarına böl; idari gösterge ipucunu Ar-Ge programlarından kaldır."
+  },
+  {
+   "tur": "sablon_kodu",
+   "ciddiyet": "dusuk",
+   "alinti": "Örme kumaş üreticisiyiz. ... Sorun şu: geri dönüştürülmüş lif oranı arttıkça",
+   "aciklama": "Proje özeti gündelik birinci şahıs diliyle ve 'Süre 18 ay, Ocak 2027'de başlamak istiyoruz' gibi niyet cümleleriyle forma aktarılıyor; aynı içerik 'Proje:' paragrafı, A.3 ve B.1'de üç kez tekrarlanıyor.",
+   "oneri": "Özeti A.3'e tek yerde yerleştir; tekrar eden paragrafı kaldır; kullanıcıya form dilinde örnek cümle kalıbı göster."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "yuksek",
+   "alinti": "[DOLDURUN: Tekniğin/teknolojinin bilinen güncel durumu (ulusal ve uluslararası) ve projenin özgün katkısı]",
+   "aciklama": "B.2 ve B.4 Ar-Ge niteliğinin değerlendirildiği ana bölümler; boş kalınca proje 'ürün geliştirme/deneme-yanılma' olarak görülür. B.3'teki yöntem 'lif oranını ve üretim ayarlarını değiştirerek deneyi tekrarlayacağız' ile sınırlı, deney tasarımı ve değişkenler (iplik numarası, büküm, karışım, örgü yapısı) yok.",
+   "oneri": "B.2/B.4 için literatür ve patent taramasının nasıl yapılacağını (Google Patents, Espacenet, Web of Science anahtar kelimeleri) gösteren yönlendirme ve üniversite danışmanına bu bölümü yazdırma önerisi ekle; B.3'e değişken/deney tasarımı alt soruları koy."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "orta",
+   "alinti": "| alet, teçhizat, yazılım ve yayın alımı | 900.000 TL |",
+   "aciklama": "Numune örme makinesi bütçenin %24'ü; TÜBİTAK'ta üretime yönelik makine alımı sorgulanır, yalnız Ar-Ge'de kullanım payı/amortisman kabul edilebilir (teyit gerekir). Taslak bu riski belirtmiyor.",
+   "oneri": "Teçhizat kalemlerinde 'proje sonrası üretimde kullanılacak mı, Ar-Ge kullanım oranı nedir' sorusunu sor ve gerekçe paragrafı iste."
+  },
+  {
+   "tur": "kapsam",
+   "ciddiyet": "orta",
+   "alinti": "Başvuru dönemi: 2026 yılı 2. çağrı — ön kayıt son günü 22 Ekim 2026, kapanış 26 Ekim 2026.",
+   "aciklama": "Bugün 9 Ekim 2026; kuruluş bazlı ön kayıta 13 gün var. Taslak bu yakınlığı uyarı olarak vermiyor, eksik bölümlerin bu sürede tamamlanabilirliğini de değerlendirmiyor.",
+   "oneri": "Son güne 30 günden az kaldıysa üstte kalan gün sayısıyla uyarı göster; ön kayıt adımını ayrı kontrol listesi maddesi yap."
+  }
+ ],
+ "hakem_gozuyle_red_riski": "Teknoloji düzeyi ve yenilik bölümleri boş, yöntem deneme-yanılmadan ibaret olduğundan 'Ar-Ge niteliği ve özgün değeri gösterilmemiş' gerekçesiyle elenir; bütçede numune makinesinin payı ve iş paketlerine dağıtılmamış maliyet ek eleştiri alır.",
+ "en_onemli_3_iyilestirme": [
+  "B.2/B.4/B.3 için Ar-Ge niteliğini ortaya çıkaran alt sorular (literatür/patent bulguları, kontrol edilecek değişkenler, deney tasarımı, test standardı) ve bu bölümlerin danışmanla yazılması gerektiği uyarısı.",
+  "Bütçeyi M011-M016 kodlarına eşle, iş paketi x ay x M kodu kırılımı iste ve M030 dönemsel gider tablosunu otomatik üret.",
+  "Önceki TEYDEB proje sayısını sorup oranı otomatik seç, destek ve firma payını hesapla; NACE kodunu kullanıcıdan doğrulat."
+ ]
+}

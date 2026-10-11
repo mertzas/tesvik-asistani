@@ -127,7 +127,7 @@ def test_answer_girisim_modunda_sistem_eki_ve_huks_blogu_gonderir(monkeypatch):
         gorulen.update(elenen=elenen, sistem_eki=sistem_eki)
         return "yanıt"
 
-    monkeypatch.setattr(rag, "_claude_cevap", sahte)
+    monkeypatch.setattr(rag, "_llm_cevap", sahte)
     monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [rag.Tesvik(kurum="TUBITAK", baslik="1812", ozet="o")])
     rag.answer("Yazılım girişimim için hangi hibeler var?", {"sektör": "arge"}, profil_kaydi=kayit)
     assert gorulen["sistem_eki"] == GIRISIM_PROMPT_EKI
@@ -141,7 +141,7 @@ def test_answer_normal_modda_sistem_eki_gondermez(monkeypatch):
         gorulen["sistem_eki"] = sistem_eki
         return "yanıt"
 
-    monkeypatch.setattr(rag, "_claude_cevap", sahte)
+    monkeypatch.setattr(rag, "_llm_cevap", sahte)
     monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [rag.Tesvik(kurum="X", baslik="Y", ozet="o")])
     rag.answer("buğday için dekar desteği", {"sektör": "tarim"},
                profil_kaydi=FinancialProfile(sektor="tarim", sirket_turu="sahis"))
@@ -150,7 +150,7 @@ def test_answer_normal_modda_sistem_eki_gondermez(monkeypatch):
 
 def test_riza_yokken_girisim_modu_llm_cagirmaz(monkeypatch):
     cagrildi = []
-    monkeypatch.setattr(rag, "_claude_cevap", lambda *a, **k: cagrildi.append(1) or "x")
+    monkeypatch.setattr(rag, "_llm_cevap", lambda *a, **k: cagrildi.append(1) or "x")
     monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [rag.Tesvik(kurum="X", baslik="Y", ozet="o")])
     rag.answer("startup hibesi", None, llm_kullan=False, profil_kaydi=FinancialProfile(sektor="arge", sirket_turu="yok"))
     assert cagrildi == []
@@ -171,6 +171,8 @@ def test_sema_dogrulama():
 
 def test_profil_ucu_alanlari_kaydeder_ve_danismana_tasir(client, monkeypatch):
     import app.main as anamodul
+    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")   # profil yalnız rızalı dış servise gider
+    monkeypatch.setenv("LLM_API_KEY", "test")
     gorulen = {}
     monkeypatch.setattr(anamodul, "answer", lambda soru, profil=None, llm_kullan=True, **kw: gorulen.update(profil=profil) or "y")
     r = client.post("/api/auth/signup", json={"email": "g1@example.com", "password": "GucluSifre123",

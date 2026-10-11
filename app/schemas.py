@@ -38,7 +38,7 @@ class UserSignup(BaseModel):
     ai_yurtdisi_riza: bool = Field(
         False,
         description="Yapay zeka danismani icin isletme profilinin "
-                    "Anthropic'e (ABD) aktarilmasina acik riza")
+                    "yapilandirilmis yurt disi dil modeli servisine aktarilmasina acik riza (servis yoksa yok sayilir)")
 
 
 class HesapSilme(BaseModel):

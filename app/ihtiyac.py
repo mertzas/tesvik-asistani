@@ -117,6 +117,8 @@ def program_ihtiyaclari(t: Any) -> set[str]:
             sonuc.add(ad)
     if "girisim" in sonuc and _GIRISIM_HARIC.search(baslik):
         sonuc.discard("girisim")
+    if "dijital" in sonuc and re.search(r"dijital (?:kefalet|kanal)", baslik):
+        sonuc.discard("dijital")   # krediyi dijital kanaldan veren kefalet; dijital dönüşüm desteği değil
     if kurum in ("Sanayi ve Teknoloji Bakanlığı", "Hazine/Ticaret Bakanligi") or "yatirim tesvik" in kategori:
         sonuc.add("yatirim")
     if "ihracat" in sektorler:

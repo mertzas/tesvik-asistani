@@ -126,27 +126,21 @@ def db_session():
 
 
 @pytest.fixture(autouse=True)
-def _claude_cagirma(monkeypatch, request):
-    """Testler GERÇEK Claude API'sine gitmesin.
+def _dis_llm_cagirma(monkeypatch, request):
+    """Testler GERÇEK bir dil modeli servisine gitmesin.
 
-    SORUN: tests/test_api.py `/api/sor` uç noktasını 8+ kez çağırıyor ve her
-    çağrı canlı Anthropic API'sine gidiyordu. Sonuçları (ölçüm 2026-09-28):
+    SORUN (ölçüm 2026-09-28): /api/sor her çağrıda canlı API'ye gidiyordu; çağrı başına ~25 sn, her koşu kotadan
+    para harcıyor, ağa bağlı ve deterministik değildi. Bu fixture `app.main.answer`'ı sabit bir metinle değiştirir;
+    uç noktanın kendi mantığı (yetki, kota, rıza, sorgu kaydı) sınanmaya devam eder.
 
-      - her çağrı ~25 saniye; suit dakikalar yerine saatler sürüyordu,
-      - her test koşusu kullanıcının API kotasından PARA harcıyordu,
-      - testler ağ erişimine ve dış servisin o anki durumuna bağlıydı,
-      - yanıt metni her seferinde farklı olduğu için deterministik değildi.
+    2026-10-11: dış sağlayıcı ortam değişkeninden okunur (app/llm_saglayici); geliştirici ortamında LLM_SAGLAYICI
+    tanımlı olsa bile testler yerel danışmanla başlar. Dış model yolu `dis_model` fixture'ıyla, ağsız sahte
+    OpenAI uyumlu istemciyle sınanır. Yerel danışmanın kendisi tests/test_yerel_danisman.py'de.
 
-    Bu fixture `app.main.answer`'ı sabit bir metinle değiştiriyor. Uç
-    noktanın kendi mantığı (yetki, kota, sorgu kaydı, hata yolları) tam
-    olarak sınanmaya devam ediyor; yalnızca LLM çağrısı taklit ediliyor.
-
-    Claude katmanının kendisi tests/test_rag.py içinde, yine ağ erişimi
-    olmadan, kendi monkeypatch'leriyle test ediliyor.
-
-    Gerçek API'ye çıkması gereken bir test olursa `@pytest.mark.canli_llm`
-    ile işaretlenebilir; bu fixture onu atlar.
+    Gerçek API'ye çıkması gereken bir test `@pytest.mark.canli_llm` ile işaretlenir; bu fixture onu atlar.
     """
+    for ad in ("LLM_SAGLAYICI", "LLM_API_KEY", "LLM_MODEL", "LLM_BASE_URL", "LLM_YURTDISI", "LLM_KURUM", "LLM_ULKE"):
+        monkeypatch.delenv(ad, raising=False)
     if request.node.get_closest_marker("canli_llm"):
         return
 
@@ -157,7 +151,7 @@ def _claude_cagirma(monkeypatch, request):
         # eklendiginde 4 test 500 ile dustu).
         return (f"[test] '{soru[:40]}' sorusu için örnek yanıt "
                 f"(llm_kullan={llm_kullan}). "
-                "Bu metin testte üretildi, Claude API çağrılmadı.")
+                "Bu metin testte üretildi, dil modeli çağrılmadı.")
 
     # app/main.py `from app.rag import answer` ile içe aktardığı için
     # yamanacak hedef app.main.answer'dır, app.rag.answer değil.
@@ -169,3 +163,37 @@ def _claude_cagirma(monkeypatch, request):
     import app.main
     monkeypatch.setattr(app.main, "answer", _sahte_cevap)
     monkeypatch.setattr(app.main, "answer_akis", _sahte_akis)
+
+
+class _DisModel:
+    """Ağsız, OpenAI uyumlu sahte dış model. `metin`, `durma`, `hata` testte ayarlanır; `cagrilar` istekleri tutar."""
+
+    def __init__(self):
+        self.metin, self.durma, self.hata, self.cagrilar = "### 1. Özet\nmodel yanıtı", "stop", None, []
+
+    def istemci(self, _s=None):
+        from types import SimpleNamespace as N
+        model = self
+
+        def create(**k):
+            model.cagrilar.append(k)
+            if model.hata:
+                raise model.hata
+            if k.get("stream"):
+                yarisi = len(model.metin) // 2
+                return iter([N(choices=[N(delta=N(content=model.metin[:yarisi]), finish_reason=None)]),
+                             N(choices=[N(delta=N(content=model.metin[yarisi:]), finish_reason=model.durma)])])
+            return N(choices=[N(message=N(content=model.metin), finish_reason=model.durma)],
+                     usage=N(prompt_tokens=100, completion_tokens=50))
+        return N(chat=N(completions=N(create=create)))
+
+
+@pytest.fixture
+def dis_model(monkeypatch):
+    """Gemini yapılandırılmış sunucu + sahte istemci (ağ çağrısı yok)."""
+    from app import llm_saglayici
+    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
+    monkeypatch.setenv("LLM_API_KEY", "test-anahtar")
+    model = _DisModel()
+    monkeypatch.setattr(llm_saglayici, "_istemci", model.istemci)
+    return model

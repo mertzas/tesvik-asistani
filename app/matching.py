@@ -212,7 +212,8 @@ def _kisisel_engel(t, profil, tur: str | None) -> str | None:
         return f"işletme sahibi ya da en az %50 hissedarı en çok {yas_siniri} yaşında olmalı (beyan: {yas})"
     # 1812 BiGG Yatırım hızlandırma aşaması: şirketi olmayan girişimci, kabul tarihinde başka şirkette ortak olamaz.
     if k.get("ortaklik_yasagi_sirketsiz") and tur == "yok" and getattr(profil, "baska_sirkette_ortak", None) is True:
-        return "başvuru tarihinde başka bir şirkette ortak olmamak şartı (beyan: ortaklığınız var)"
+        return ("hızlandırma programına kabul tarihinde herhangi bir sermaye şirketinin ya da şahıs işletmesinin "
+                "ortağı olmamak şartı (beyan: ortaklığınız var; borsadaki hisseler ve kitle fonlaması payları sayılmaz)")
     sertifikalar = getattr(profil, "sertifikalar", None) or []
     gerekli = k.get("gerekli_sertifika")
     if gerekli and sertifikalar and gerekli not in sertifikalar:
@@ -602,7 +603,7 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20) -> list[Tesvik
 
         if profil.calisan_sayisi is not None:
             skor += 0.1
-            if profil.calisan_sayisi == 0:
+            if profil.calisan_sayisi == 0 and getattr(profil, "sirket_turu", None) != "yok":
                 gerekce.append("Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.")
         else:
             eksik.append("Çalışan sayınızı girerseniz eşleşme doğruluğu artar.")

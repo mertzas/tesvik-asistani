@@ -61,7 +61,7 @@ def test_ortaklik_yasagi_yalniz_sirketsiz_girisimciye(tur, ortak, kapali):
     t = _tesvik({"sektorler": ["arge", "genel"], "ortaklik_yasagi_sirketsiz": True}, kurum="TÜBİTAK",
                 baslik="1812 Yatırım Tabanlı Girişimcilik Destek Programı")
     engel = uygunluk_engeli(t, FinancialProfile(sektor="arge", sirket_turu=tur, baska_sirkette_ortak=ortak))
-    assert (engel is not None and "ortak olmamak" in engel) == kapali, engel
+    assert (engel is not None and "ortağı olmamak" in engel and "kabul tarihinde" in engel) == kapali, engel
 
 
 @pytest.mark.parametrize("sertifikalar,kapali", [(["organik_sertifika"], False), (["hicbiri"], True),
@@ -131,3 +131,25 @@ def test_veri_betigi_self_test():
                        stdin=subprocess.DEVNULL, capture_output=True, text=True, encoding="utf-8")
     m = re.search(r"self-test: (\d+)/(\d+) geçti", r.stdout)
     assert r.returncode == 0 and m and m.group(1) == m.group(2), r.stdout
+
+
+def test_basvurularimda_profile_kapali_ve_kapanmis_program_uyarisi(client, db_session):
+    """2026-10-11: profil alanları eklendikten sonra elenen program "Başvurularım"da uyarısız kalıyordu."""
+    r = client.post("/api/auth/signup", json={"email": "pu2@example.com", "password": "GucluSifre123",
+                                              "full_name": "P", "company_name": "P"})
+    h = {"Authorization": f"Bearer {r.json()['access_token']}"}
+    db_session.add_all([_tesvik({"sektorler": ["genel"], "kurucu_yasi_max": 29}, id=701),
+                        Tesvik(id=702, kurum="TÜBİTAK", baslik="Eski Program", ozet="o", detay="d", aktif_mi=False,
+                               kaynak_url="https://t/eski", uygunluk_kriterleri={"sektorler": ["genel"]},
+                               durum_notu="Denetim2 2026-10-07: son çağrı 2025; 2026 çağrısı yok (https://ornek.gov.tr/x)")])
+    db_session.commit()
+    for i in (701, 702):
+        assert client.put(f"/api/basvuru-listesi/{i}", headers=h, json={"isaretli": []}).status_code == 200
+    assert client.put("/api/profil", headers=h, json={"sektor": "genel", "kurucu_yasi": 40}).status_code == 200
+    uyarilar = {x["tesvik_id"]: x["profil_uyarisi"] for x in client.get("/api/basvuru-listesi", headers=h).json()["listeler"]}
+    assert "en çok 29 yaşında" in uyarilar[701]
+    assert uyarilar[702] == "Bu program şu an başvuruya açık değil: son çağrı 2025; 2026 çağrısı yok."
+    assert "Denetim2" not in uyarilar[702] and "https" not in uyarilar[702]
+    assert "en çok 29 yaşında" in client.get("/api/basvuru-listesi/701", headers=h).json()["profil_uyarisi"]
+    assert client.put("/api/profil", headers=h, json={"sektor": "genel", "kurucu_yasi": 25}).status_code == 200
+    assert client.get("/api/basvuru-listesi/701", headers=h).json()["profil_uyarisi"] is None

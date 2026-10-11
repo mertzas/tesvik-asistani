@@ -1,11 +1,13 @@
-"""Başvuru ön taslağı (2026-10-08): seçilen teşvik için kullanıcının profilinden, Claude ile düzenlenebilir bir
-başvuru metni taslağı üretir. Evrak hazırlama desteğinin ikinci adımı (ilki: app/basvuru_listesi.py).
+"""Başvuru ön taslağı (2026-10-08): seçilen teşvik için kullanıcının profilinden, dış dil modeliyle düzenlenebilir
+bir başvuru metni taslağı üretir (2026-10-11'den beri app/llm_saglayici üzerinden; Anthropic kullanılmaz). Evrak hazırlama desteğinin ikinci adımı (ilki: app/basvuru_listesi.py).
 
 Sınırlar (bilerek):
   - Resmi başvuru formu DEĞİLDİR; kurumun güncel formuna aktarılacak metin taslağıdır. Bu, metnin başında yazar.
   - Model yalnızca verilen bilgiyi kullanır; bilinmeyen her şey "[DOLDURUN: ...]" olarak bırakılır, rakam uydurulmaz.
   - "Hazırlanacak belgeler ve şartlar" bölümü modelden DEĞİL, kontrol listesinden (kaydın kendi alanlarından) eklenir.
-  - Profil Anthropic'e (ABD) gider: yalnızca açık rıza (ai_yurtdisi_riza) varken çağrılır; çağıran uç nokta denetler.
+  - Profil yapılandırılmış dış sağlayıcıya gider: yalnızca o sağlayıcıya verilmiş geçerli rıza varken çağrılır
+    (llm_saglayici.riza_gecerli_mi); çağıran uç nokta denetler.
+  - Modelin metni app/dayanak.py ile denetlenir: bağlamda olmayan tutar/oran/tarih/URL varsa taslak verilmez.
 
 Maliyet: tek çağrı; girdi ~2-3 bin, çıktı en çok TASLAK_MAX_TOKENS token. Kuruluş başına günlük sınır uç noktada.
 
@@ -16,11 +18,12 @@ from __future__ import annotations
 import logging
 import sys
 
-from app.models import Tesvik, settings
+from app import dayanak, llm_saglayici
+from app.models import Tesvik
 
 logger = logging.getLogger(__name__)
 
-TASLAK_MAX_TOKENS = 3000
+TASLAK_MAX_TOKENS = 12000   # düşünen modellerde düşünme de bütçeden düşer
 BASLIK_NOTU = ("> **Ön taslak — resmi başvuru formu değildir.** Bu metni kurumun güncel başvuru formuna aktarın; "
                "[DOLDURUN: …] ile işaretli yerleri kendi bilgilerinizle tamamlayın ve tüm rakamları kontrol edin.")
 BOLUMLER = ("1. İşletme tanıtımı", "2. Projenin amacı ve gerekçesi", "3. Yapılacak faaliyetler ve takvim",
@@ -114,34 +117,27 @@ class TaslakHatasi(Exception):
     """Kullanıcıya gösterilebilir hata (anahtar yok, çağrı başarısız, boş yanıt)."""
 
 
-def _claude_istek(sistem: str, kullanici: str) -> tuple[str, dict]:
-    """Tek Claude çağrısı. Testler bu fonksiyonu yamar (ağ yok)."""
-    import anthropic
-    from app.rag import CLAUDE_EFFORT, CLAUDE_MAX_RETRIES, _claude_zaman_asimi
-    client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY, max_retries=CLAUDE_MAX_RETRIES)
-    resp = client.messages.create(
-        model=settings.CLAUDE_MODEL, max_tokens=TASLAK_MAX_TOKENS, system=sistem,
-        messages=[{"role": "user", "content": kullanici}],
-        output_config={"effort": CLAUDE_EFFORT}, timeout=_claude_zaman_asimi())
-    metin = "".join(b.text for b in resp.content if getattr(b, "type", None) == "text").strip()
-    kullanim = getattr(resp, "usage", None)
-    return metin, {"giris": getattr(kullanim, "input_tokens", None), "cikis": getattr(kullanim, "output_tokens", None),
-                   "durma": getattr(resp, "stop_reason", None)}
+def _llm_istek(sistem: str, kullanici: str) -> tuple[str, dict]:
+    """Tek dış model çağrısı. Testler bu fonksiyonu yamar (ağ yok)."""
+    return llm_saglayici.tamamla(sistem, kullanici, max_tokens=TASLAK_MAX_TOKENS)
 
 
 def uret(t: Tesvik, profil: dict, maddeler: list[dict]) -> tuple[str, dict]:
-    if not settings.ANTHROPIC_API_KEY:
-        raise TaslakHatasi("Yapay zekâ servisi bu sunucuda yapılandırılmamış.")
+    if not llm_saglayici.etkin_mi():
+        raise TaslakHatasi("Yapay zekâ servisi bu sunucuda yapılandırılmamış; şablon taslağını kullanın.")
     kullanici = f"BAĞLAM:\n{baglam(t, profil)}\n\nBu program için başvuru ön taslağını yaz."
     try:
-        metin, kullanim = _claude_istek(SISTEM, kullanici)
-    except Exception as e:  # ağ, kota, anahtar, zaman aşımı
+        metin, kullanim = _llm_istek(SISTEM, kullanici)
+    except Exception as e:  # ağ, kota, anahtar, zaman aşımı, kesik yanıt
         logger.warning("Taslak üretilemedi (tesvik=%s): %s: %s", t.id, type(e).__name__, e)
         raise TaslakHatasi("Taslak şu anda üretilemedi; birkaç dakika sonra tekrar deneyin.") from e
     if not metin:
         raise TaslakHatasi("Yapay zekâ boş yanıt döndürdü; tekrar deneyin.")
-    if kullanim.get("durma") == "max_tokens":
-        metin += "\n\n_(Taslak uzunluk sınırında kesildi; eksik bölümleri tamamlayın.)_"
+    sorunlar = dayanak.denetle(metin, kullanici + "\n" + SISTEM)
+    if sorunlar:
+        logger.warning("Taslak dayanak denetiminden geçmedi (tesvik=%s): %s", t.id, "; ".join(sorunlar[:5]))
+        raise TaslakHatasi("Yapay zekâ taslağı kayıtlarda olmayan bilgi içerdiği için gösterilmedi; şablon taslağını "
+                           "kullanın ya da tekrar deneyin.")
     logger.info("Taslak üretildi (tesvik=%s, giriş=%s, çıkış=%s token)", t.id, kullanim.get("giris"),
                 kullanim.get("cikis"))
     return birlestir(metin, maddeler), kullanim

@@ -1,28 +1,20 @@
 """
-Anahtar-kelime tabanli retrieval + Claude API ile dogal dil cevap uretimi.
+Anahtar-kelime tabanlı retrieval + danışman yanıtı.
 
-Onceki surumde yerel Ollama (Gemma) denenmisti ama tek cevap 130-140sn
-suruyordu (CPU-bound) - interaktif chat icin kullanilamaz oldugu icin
-kapatilmisti (OLLAMA_ETKIN=False, kod hala asagida duruyor). Su an
-birincil yol Claude API (Anthropic) - ANTHROPIC_API_KEY .env'de tanimliysa
-kullanilir; tanimli degilse veya cagri basarisiz olursa OTOMATIK olarak
-LLM'siz duz liste formatina (_liste_formati) duser - kullanici hicbir
-zaman bos/hatali bir ekranla karsilasmaz.
+Yanıt yolu (2026-10-11): varsayılan olarak yerel danışman (app/yerel_danisman.py) kayıtlardan kuralla yanıt üretir;
+hiçbir dış servis çağrılmaz. Yönetici bir dış dil modeli yapılandırdıysa (app/llm_saglayici.py: Gemini ya da OpenAI
+uyumlu bir uç) ve kuruluş o sağlayıcıya açık rıza verdiyse yanıt o modelden alınır; yanıt kullanıcıya gitmeden önce
+app/dayanak.py ile denetlenir ve bağlamda olmayan URL/tutar/oran/tarih/telefon varsa atılıp yerel danışmana düşülür.
+Anthropic API'si kullanılmaz.
 
-KRITIK KURAL: LLM'e verilen sistem promptu SADECE veritabanindan (Tesvik
-kayitlari + KurumIletisim rehberi + kullanicinin FinancialProfile'i) gelen
-bilgiyi kullanmasini, telefon numarasi/oran/tutar gibi somut rakamlari
-UYDURMAMASINI acikca soyler. KurumIletisim tablosundaki her telefon
-numarasi resmi kurum sayfasindan WebFetch ile tek tek dogrulanmistir
-(bkz. scripts/seed_kurum_iletisim.py, app/models.py KurumIletisim
-docstring'i) - LLM egitim verisinden gelen "hatirlanan" numaralar degil.
+KRİTİK KURAL: dış modele verilen sistem promptu SADECE veritabanından (Tesvik kayıtları + KurumIletisim rehberi +
+kullanıcının FinancialProfile'ı) gelen bilgiyi kullanmasını söyler; denetim bunu kodla zorlar. KurumIletisim
+tablosundaki her telefon numarası resmî kurum sayfasından doğrulanmıştır (scripts/seed_kurum_iletisim.py).
 """
 import logging
 from datetime import date
 import re
 from typing import NamedTuple
-
-import requests
 
 from sqlalchemy.orm import selectinload
 from app.ihtiyac import isletmeye_yonelik_mi, program_ihtiyaclari, soru_ihtiyaclari
@@ -31,11 +23,12 @@ from app.match_scoring import hard_filter
 from app.matching import HEDEF_SEKTOR_ETIKETLERI, uygunluk_engeli
 from app.kobi import kobi_sinifi
 from app.girisim import GIRISIM_PROMPT_EKI, girisim_baglam_metni, girisim_modu_mu
+from app import dayanak, llm_saglayici, yerel_danisman
 from app.nace_extraction import clean_grant_text
 from app.tesvik_9903_uygunluk import SIRALAMA_ETKISI as UYGUNLUK_9903_ETKISI, kayit_icin as uygunluk_9903
 from app.tesvik_9903_hesap import destek_unsurlari_ozeti
 from app.nace_9903 import il_bolgesi
-from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu, settings
+from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu
 from sqlalchemy import or_
 
 from app.urun_sektor_anahtarlari import (
@@ -47,29 +40,19 @@ from app.urun_sektor_anahtarlari import (
 
 logger = logging.getLogger(__name__)
 
-OLLAMA_ETKIN = False  # True yapinca Gemma ile dogal dil cevap tekrar devreye girer
-OLLAMA_URL = "http://localhost:11434/api/generate"
-OLLAMA_MODEL = "gemma4"
-OLLAMA_TIMEOUT_SEC = 150
-
-CLAUDE_TIMEOUT_SEC = 90  # 5 başlıklı danışman yanıtı ~3000 token; 30 sn yetmiyordu
-# SDK varsayılanı 2 yeniden deneme: yanıt vermeyen bir bağlantıda 3 x 90 = 271 sn sonra liste
-# formatına düşülüyordu (dayanıklılık deneyi 2026-10-07; nginx okuma sınırı 300 sn). Tek
-# yeniden deneme + kısa bağlantı sınırıyla en kötü durum ~180 sn.
-CLAUDE_MAX_RETRIES = 1
-CLAUDE_CONNECT_TIMEOUT_SEC = 10.0
-# Güncel modeller (claude-sonnet-5) varsayılan olarak adaptif düşünme yapar ve düşünme
-# token'ları da max_tokens'tan düşer: 3000 iken ~2100'ü düşünmeye gidip yanıt yarıda
-# kesiliyordu (ölçüm 2026-10-07). Bütçe geniş, derinlik effort ile sınırlanıyor.
-CLAUDE_MAX_TOKENS = 16000
-CLAUDE_EFFORT = "medium"
+# Dış modelin yanıt bütçesi (5 başlıklı danışman yanıtı ~3000 token; düşünen modellerde düşünme de bütçeden düşer).
+LLM_MAX_TOKENS = 16000
 CEVAP_KAYIT_SAYISI = 8   # danışmana verilen kayıt sayısı (çok ihtiyaçlı sorularda kota için)
 # Yatırım projesi sorularında (yatırım paketi modu) bileşen bazlı eşleme için daha geniş aday havuzu.
 PAKET_KAYIT_SAYISI = 12
 _YATIRIM_PROJESI = re.compile(
     r"\b(kur(acağım|acağız|mak|mayı|ulum|ulacak)|yatırım (yap|planı|projes)|tesis|sera|soğuk hava|depo(su)?\b|fabrika|"
     r"üretim hattı|makine (al|parkur)|kapasite(mi|yi)? art|genişlet|ek bina|modernizasyon)", re.IGNORECASE)
-# Birlikte kullanım / çakışma hükmü taşıyan kontrol listesi maddeleri (alıntılı; tur19).
+# Birlikte kullanım / çakışma hükmü taşıyan kontrol listesi maddeleri (alıntılı; tur19). "Diğer programlara
+# başvurulur" gibi yönlendirmeler hüküm değildir (değerlendirme 2026-10-11, 1507 "ilk 5 proje" maddesi): madde ayrıca
+# aynı harcama / mükerrerlik / birlikte yararlanma anlamı taşımalı.
+_BIRLIKTE_KANIT = re.compile(r"aynı|mükerrer|birlikte|kümülatif|karşılan|yararlan|destek(len|almış|alan|ten yararlan)",
+                             re.IGNORECASE)
 _BIRLIKTE = re.compile(r"aynı (harcama|gider|fatura|maliyet)|(başka|diğer) (bir )?(kamu )?(kurum|destek|program|teşvik)|"
                        r"mükerrer|aynı anda (yararlanıl|kullanıl|alına)|birlikte (kullanıl|yararlanıl|alına)|"
                        r"(destek|program)\w* ile (birlikte|aynı anda)|kümülatif", re.IGNORECASE)
@@ -84,13 +67,13 @@ def birlikte_kullanim_metni(matches: list[Tesvik]) -> str:
     satir = []
     for m in matches:
         for x in (getattr(m, "kontrol_listesi", None) or []):
-            if x.get("tur") in ("kural", "sart") and x.get("alinti") and _BIRLIKTE.search(x.get("metin") or ""):
+            metin = x.get("metin") or ""
+            if x.get("tur") in ("kural", "sart") and x.get("alinti") and _BIRLIKTE.search(metin) \
+                    and _BIRLIKTE_KANIT.search(metin):
                 satir.append(f"- [{m.kurum}] {m.baslik}: {x['metin']} (resmî metin: \"{x['alinti']}\")")
     return "BİRLİKTE KULLANIM KURALLARI (kayıtlardan, resmî metinden alıntılı):\n" + "\n".join(satir) if satir else ""
 DETAY_KARAKTER = 2500    # kayıt başına danışmana giden detay metni (temizlendikten sonra)
 HAVUZ_BOYUTU = 60        # ihtiyaç/profil katmanının kelime aramasından aldığı aday sayısı  # low | medium | high; danışman yanıtı için gecikme/kalite dengesi
-KESILDI_NOTU = "\n\n*(Yanıt uzunluk sınırında kesildi; sorunuzu daraltarak tekrar sorabilirsiniz.)*"
-BAGLANTI_KOPTU_NOTU = "\n\n*(Yanıt bağlantı hatası nedeniyle kesildi; lütfen tekrar deneyin.)*"
 
 # Anlamli sinyal tasimayan, aramada gurultu yaratan kisa/genel kelimeler.
 # Aramada anlamsiz olan ama ILIKE '%...%' ile veritabaninin cogunluguna
@@ -116,7 +99,7 @@ DURAK_KELIMELER = {
 }
 
 # Danışman sistem promptu (2026-10-09 yeniden yapılandırma): XML bölümleri, triyaj modu, gizli <analiz> bloğu,
-# program kartı, sabit sorumluluk reddi. <analiz> kullanıcıya gitmez: analiz_ayikla / _AnalizSuzgeci.
+# program kartı, sabit sorumluluk reddi. <analiz> kullanıcıya gitmez: analiz_ayikla.
 SISTEM_PROMPTU = """<rol>
 Sen Teşvik Asistanı'nın danışman modülüsün: Türkiye'deki devlet teşvikleri, hibeleri, kredi/kefalet destekleri ve
 yatırım teşvik mevzuatı (KOSGEB, TÜBİTAK, Sanayi ve Teknoloji Bakanlığı, Ticaret Bakanlığı, Tarım ve Orman Bakanlığı,
@@ -322,61 +305,6 @@ def analiz_ayikla(metin: str) -> str:
     return (metin[:i] if i >= 0 else metin).strip()
 
 
-class _AnalizSuzgeci:
-    """Akış parçalarından <analiz>…</analiz> bloklarını ayıklar. Etiket parçalar arasında bölünebilir:
-    etiketin başı olabilecek kuyruk bir sonraki parçaya kadar tutulur. besle() gösterilecek metni döndürür."""
-
-    def __init__(self):
-        self.tampon = ""
-        self.icinde = False
-        self.bosluk_yut = False  # </analiz> sonrasındaki boş satırlar gösterilmez
-        self.gosterildi = False
-
-    def besle(self, parca: str) -> str:
-        self.tampon += parca
-        cikti = []
-        while True:
-            if self.icinde:
-                i = self.tampon.find(ANALIZ_KAPA)
-                if i < 0:
-                    self.tampon = self.tampon[-(len(ANALIZ_KAPA) - 1):]
-                    break
-                self.tampon = self.tampon[i + len(ANALIZ_KAPA):]
-                self.icinde, self.bosluk_yut = False, True
-                continue
-            if self.bosluk_yut:
-                self.tampon = self.tampon.lstrip()
-                if not self.tampon:
-                    break
-                self.bosluk_yut = False
-            i = self.tampon.find(ANALIZ_AC)
-            if i >= 0:
-                cikti.append(self.tampon[:i])
-                self.tampon = self.tampon[i + len(ANALIZ_AC):]
-                self.icinde = True
-                continue
-            tut = next((k for k in range(min(len(ANALIZ_AC) - 1, len(self.tampon)), 0, -1)
-                        if ANALIZ_AC.startswith(self.tampon[-k:])), 0)
-            cikti.append(self.tampon[:len(self.tampon) - tut])
-            self.tampon = self.tampon[len(self.tampon) - tut:]
-            break
-        metin = "".join(cikti)
-        if not self.gosterildi:
-            metin = metin.lstrip()
-        if metin:
-            self.gosterildi = True
-        return metin
-
-    def bitir(self) -> str:
-        """Akış bitti: analiz dışında tutulan kuyruk (etiket olmadığı anlaşılan) gösterilir."""
-        kalan = "" if self.icinde else self.tampon
-        self.tampon = ""
-        if kalan and not self.gosterildi:
-            kalan = kalan.lstrip()
-        if kalan:
-            self.gosterildi = True
-        return kalan
-
 
 
 def _terimlere_ayir(query: str) -> list[str]:
@@ -545,8 +473,7 @@ def elenen_9903_metni(query: str, profil_kaydi, haric_idler=()) -> str:
         db.close()
     if not satirlar:
         return ""
-    return ("SİSTEMİN ELEDİĞİ / DÜŞÜK OLASILIK GÖRDÜĞÜ 9903 PROGRAMLARI (Karar metnine göre; "
-            "'UYGUN DEĞİL' kesin, 'DÜŞÜK OLASILIK' teyit gerektirir):\n"
+    return (ELENEN_9903_BASLIGI + "\n"
             + "\n".join(satirlar) + f"\nNot: {ESKI_SISTEM_NOTU}")
 
 
@@ -636,7 +563,7 @@ def _metin_aramasi(query: str, limit: int = 5) -> list[Tesvik]:
     #
     # 1) Genisleme yalnizca app/main.py sor() icinde, kullaniciya gosterilen
     #    SONUC LISTESI icin yapiliyordu; answer() ham soruyla cagrildigi icin
-    #    Claude bu kayitlari HIC gormuyordu. "CILEK SERASI ICIN HIBE VAR MI"
+    #    Danisman bu kayitlari HIC gormuyordu. "CILEK SERASI ICIN HIBE VAR MI"
     #    sorgusu listede 10 dogru kayit ("Sera/Ortualti Tarim Destekleri"
     #    dahil) gosterirken ayni yanitin mesaj alani "eslesen bir tesvik
     #    bulamadim" diyordu - ayni ekranda birbiriyle celisen iki cevap.
@@ -704,23 +631,6 @@ def _kisalt(metin: str, uzunluk: int = 220) -> str:
     if len(metin) <= uzunluk:
         return metin
     return metin[:uzunluk].rsplit(" ", 1)[0] + "…"
-
-
-def _liste_formati(matches: list[Tesvik]) -> str:
-    """LLM'siz fallback: kayitlari duz liste olarak formatlar."""
-    baslik_satiri = f"Sorunuzla ilgili {len(matches)} destek/teşvik programı buldum:\n"
-    satirlar = [baslik_satiri]
-    for i, m in enumerate(matches, start=1):
-        satirlar.append(
-            f"\n{i}. [{m.kurum}] {m.baslik}\n"
-            f"   {_kisalt(m.ozet)}\n"
-            f"   Kaynak: {m.kaynak_url}"
-        )
-    satirlar.append(
-        "\n\nNot: Bu cevap veritabanındaki kayıtlardan otomatik oluşturuldu, "
-        "kesin başvuru şartları için ilgili kurumun sayfasını kontrol edin."
-    )
-    return "".join(satirlar)
 
 
 def _kurum_iletisim_metni(matches: list[Tesvik]) -> str:
@@ -901,94 +811,34 @@ def _baglam_metni(matches: list[Tesvik], profil: dict | None,
     )
 
 
-def _claude_zaman_asimi():
-    """Okuma sınırı CLAUDE_TIMEOUT_SEC, bağlantı sınırı kısa (ulaşılamayan sunucuda 90 sn beklenmez)."""
-    import httpx
-    return httpx.Timeout(CLAUDE_TIMEOUT_SEC, connect=CLAUDE_CONNECT_TIMEOUT_SEC)
-
-
-def _claude_cevap(query: str, matches: list[Tesvik], profil: dict | None,
-                  notlar: dict[int, str] | None = None, elenen: str = "",
-                  sistem_eki: str = "") -> str | None:
-    """Claude API ile bulunan kayitlari + kullanici profilini yorumlayip
-    yapilandirilmis cevap uretir. API anahtari yoksa veya cagri basarisiz
-    olursa None doner - cagiran taraf liste formatina duser, hicbir zaman
-    crash etmez."""
-    if not settings.ANTHROPIC_API_KEY:
+def _llm_cevap(query: str, matches: list[Tesvik], profil: dict | None,
+               notlar: dict[int, str] | None = None, elenen: str = "",
+               sistem_eki: str = "", bugun: date | None = None) -> str | None:
+    """Dış dil modeliyle yanıt (app/llm_saglayici). Yapılandırma yoksa, çağrı başarısızsa ya da yanıt dayanak
+    denetiminden geçmezse None döner; çağıran yerel danışmana düşer. Sebep her durumda günlüğe yazılır."""
+    if not llm_saglayici.etkin_mi():
         return None
-
+    bugun = bugun or date.today()
+    baglam = _baglam_metni(matches, profil, notlar, elenen, bugun=bugun)
     try:
-        import anthropic
-    except ImportError:
+        ham, _ = llm_saglayici.tamamla(SISTEM_PROMPTU + sistem_eki,
+                                       f"BAĞLAM:\n{baglam}\n\nKULLANICI SORUSU: {query}", max_tokens=LLM_MAX_TOKENS)
+    except llm_saglayici.LLMHatasi as e:
+        logger.warning("Dış model yanıtı alınamadı, yerel danışmana düşülüyor: %s", e)
         return None
-
-    baglam = _baglam_metni(matches, profil, notlar, elenen)
-
-    try:
-        client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY, max_retries=CLAUDE_MAX_RETRIES)
-        resp = client.messages.create(
-            model=settings.CLAUDE_MODEL,
-            max_tokens=CLAUDE_MAX_TOKENS,
-            system=SISTEM_PROMPTU + sistem_eki,
-            messages=[{
-                "role": "user",
-                "content": f"BAĞLAM:\n{baglam}\n\nKULLANICI SORUSU: {query}",
-            }],
-            output_config={"effort": CLAUDE_EFFORT},
-            timeout=_claude_zaman_asimi(),
-        )
-        parcalar = [blok.text for blok in resp.content if getattr(blok, "type", None) == "text"]
-        cevap = analiz_ayikla("".join(parcalar))
-        if getattr(resp, "stop_reason", None) == "max_tokens":
-            logger.warning("Claude yanıtı max_tokens sınırında kesildi (%s token)",
-                           getattr(getattr(resp, "usage", None), "output_tokens", "?"))
-            if cevap:
-                cevap += KESILDI_NOTU
-        return cevap or None
-    except Exception as e:
-        # Ag hatasi, rate limit, gecersiz anahtar, timeout - hepsi ayni
-        # sekilde ele alinir: KULLANICI acisindan sessizce fallback'e dus,
-        # onu hata mesajiyla degil cevapla karsila. Ama sebebi MUTLAKA
-        # gunluge yaz - aksi halde "AI cevap vermiyor" sikayetinin sebebini
-        # (kota? anahtar? ag?) anlamanin hicbir yolu kalmiyor.
-        logger.warning("Claude cagrisi basarisiz, liste formatina dusuluyor: %s: %s",
-                       type(e).__name__, e)
+    cevap = analiz_ayikla(ham)
+    # Bağlama sistem promptu EKLENMEZ: promptun madde numaraları (1-7, 15, 9903) uydurma oranları geçirebiliyordu
+    # (Opus incelemesi 2026-10-11). Sorumluluk reddi sayı içermez.
+    sorunlar = dayanak.denetle(cevap, baglam, query, bugun)
+    if sorunlar:
+        logger.warning("Dış model yanıtı dayanak denetiminden geçmedi (%d sorun: %s); yerel danışmana düşülüyor",
+                       len(sorunlar), "; ".join(sorunlar[:5]))
         return None
-
-
-def _ollama_cevap(query: str, matches: list[Tesvik]) -> str | None:
-    """Yerel Ollama (gemma4) ile bulunan kayitlari dogal dilde yorumlar.
-    Ollama'ya erisilemezse (kapali, model yok, timeout) None doner --
-    cagiran taraf bu durumda liste formatina duser."""
-    baglam = "\n\n".join(
-        f"[{m.kurum}] {m.baslik}\nKaynak: {m.kaynak_url}\n{_kisalt(m.detay, 500)}"
-        for m in matches
-    )
-    prompt = (
-        "Sen Turkiye'deki KOSGEB, TUBITAK, KGF ve Hazine/Ticaret Bakanligi "
-        "tesvik/destek programlari konusunda kullaniciya rehberlik eden bir "
-        "asistansin. SADECE asagida verilen baglami kullanarak cevap ver, "
-        "baglamda olmayan bilgi uydurma. Her bahsettigin programin yaninda "
-        "kaynak URL'sini de belirt. Emin olmadigin durumda kullaniciyi "
-        "ilgili kurumun resmi sitesine yonlendir. Kisa ve net Turkce cevap ver.\n\n"
-        f"Baglam:\n{baglam}\n\nKullanici sorusu: {query}"
-    )
-    try:
-        resp = requests.post(
-            OLLAMA_URL,
-            json={"model": OLLAMA_MODEL, "prompt": prompt, "stream": False},
-            timeout=OLLAMA_TIMEOUT_SEC,
-        )
-        resp.raise_for_status()
-        data = resp.json()
-        cevap = data.get("response", "").strip()
-        return cevap or None
-    except (requests.RequestException, ValueError):
-        return None
+    return cevap or None
 
 
 def profil_sozlugu(profil_row) -> dict:
-    """Rıza varken danışmana (Anthropic'e) giden profil sözlüğü. /api/sor ve ölçüm
+    """Rıza varken dış dil modeline giden profil sözlüğü. /api/sor ve ölçüm
     betikleri aynı sözlüğü kullanır; alan ekleme/çıkarma yalnızca burada yapılır."""
     from app.kobi import AD as KOBI_AD
     from app.tesvik_9903_hesap import il_bolgesi
@@ -1034,20 +884,39 @@ BULUNAMADI_METNI = (
 class Hazirlik(NamedTuple):
     matches: list
     notlar: dict
-    elenen: str
+    elenen: str                 # dış modelin bağlamına eklenen bloklar (rızaya bağlı yolda)
     girisim: bool
+    yerel_bloklar: list = []    # yerel danışmanın kullanıcıya gösterdiği aynı içerik (Markdown)
+
+
+ELENEN_9903_BASLIGI = ("SİSTEMİN ELEDİĞİ / DÜŞÜK OLASILIK GÖRDÜĞÜ 9903 PROGRAMLARI (Karar metnine göre; "
+                       "'UYGUN DEĞİL' kesin, 'DÜŞÜK OLASILIK' teyit gerektirir):")
+
+
+def _girisim_blogu(profil_kaydi) -> str:
+    """girisim_baglam_metni'nin kullanıcıya dönük biçimi (aynı hesap, aynı kayıtlar)."""
+    from app.girisim import MEVZUAT_NOTU, VERITABANINDA_OLMAYAN_PROGRAMLAR, huks
+    satir = ["**Girişim ön değerlendirmesi**"]
+    if profil_kaydi is not None:
+        satir += ["Profilinizden hesaplanan HUKS ön skoru (TÜBİTAK BiGG değerlendirmesinin sistemce "
+                  "hesaplanabilen kısmı; resmî puan değildir):", huks(profil_kaydi).metin()]
+    satir.append("Sistemde kaydı olmayan, ayrıca bakabileceğiniz programlar (oran ve şartları için resmî kaynağa "
+                 "bakın): " + "; ".join(VERITABANINDA_OLMAYAN_PROGRAMLAR) + ".")
+    satir.append(f"Mevzuat notu: {MEVZUAT_NOTU}")
+    return "\n".join(satir)
 
 
 def _hazirla(query: str, llm_kullan: bool, profil_kaydi) -> Hazirlik:
-    """answer() ve answer_akis() için ortak hazırlık: kayıtlar, 9903 ön değerlendirme
-    notları, elenen/eski sistem bloğu, girişim modu.
+    """answer() ve answer_akis() için ortak hazırlık: kayıtlar, 9903 ön değerlendirme notları, elenen/eski sistem
+    bloğu, girişim modu, birlikte kullanım kuralları. Hepsi yerelde hesaplanır; `elenen` dış modelin bağlamına,
+    `yerel_bloklar` yerel danışmanın yanıtına girer.
 
-    profil_kaydi yalnızca YEREL eleme için kullanılır (dışarı gönderilmez); dışarı giden
-    profil, rızaya bağlı olan `profil` sözlüğüdür."""
+    profil_kaydi yalnızca YEREL eleme için kullanılır (dışarı gönderilmez); dışarı giden profil, rızaya bağlı olan
+    `profil` sözlüğüdür."""
     limit = PAKET_KAYIT_SAYISI if yatirim_projesi_mi(query) else CEVAP_KAYIT_SAYISI
     matches = retrieve(query, limit=limit, profil_kaydi=profil_kaydi)
     if not matches:
-        return Hazirlik([], {}, "", False)
+        return Hazirlik([], {}, "", False, [])
     notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi).items()}
     # 9903 kayıtlarına Karar'daki oran/süreler (Md.15/16/18/19/20, profil bölgesine göre)
     # eklenir: ölçüm 2026-10-07'de model "SGK/faiz desteğinin oranı bağlamda yok" diyordu.
@@ -1056,126 +925,96 @@ def _hazirla(query: str, llm_kullan: bool, profil_kaydi) -> Hazirlik:
         ozet = destek_unsurlari_ozeti(u.program, bolge)
         if ozet:
             notlar[i] += f"\nDESTEK UNSURLARI (Karar metninden, profil bölgesine göre): {ozet}"
-    elenen = elenen_9903_metni(query, profil_kaydi, haric_idler=[m.id for m in matches]) if llm_kullan else ""
-    eski = eski_sistem_notu(query) if llm_kullan else ""
+    elenen_9903 = elenen_9903_metni(query, profil_kaydi, haric_idler=[m.id for m in matches])
+    eski = eski_sistem_notu(query)
+    girisim = bool(girisim_modu_mu(profil_kaydi, query))
+    birlikte = birlikte_kullanim_metni(matches)
+    elenen = elenen_9903
     if eski and ESKI_SISTEM_NOTU not in elenen:
         elenen = (elenen + "\n" if elenen else "") + eski
-    girisim = bool(llm_kullan and girisim_modu_mu(profil_kaydi, query))
     if girisim:
         # HUKS kodda hesaplanır; blok ek bağlam olarak gider, format eki sistem prompt'una eklenir.
         elenen = (elenen + "\n\n" if elenen else "") + girisim_baglam_metni(profil_kaydi)
-    birlikte = birlikte_kullanim_metni(matches) if llm_kullan else ""
     if birlikte:
         elenen = (elenen + "\n\n" if elenen else "") + birlikte
-    return Hazirlik(matches, notlar, elenen, girisim)
+    yerel_bloklar = []
+    if elenen_9903:
+        yerel_bloklar.append(elenen_9903.replace(
+            ELENEN_9903_BASLIGI, "**Yatırım teşvik belgesi (9903) — sistemin elediği ya da düşük olasılık gördüğü "
+                                 "programlar** (Karar metnine göre; 'UYGUN DEĞİL' kesin, 'DÜŞÜK OLASILIK' teyit "
+                                 "gerektirir):"))
+    elif eski:
+        yerel_bloklar.append(f"**{eski}**")
+    if girisim:
+        yerel_bloklar.append(_girisim_blogu(profil_kaydi))
+    return Hazirlik(matches, notlar, elenen, girisim, yerel_bloklar)
+
+
+BEKLEME_SINYALI_SN = 5   # dış model beklenirken akışa gönderilen canlı tutma aralığı (vekil zaman aşımı önlemi)
+
+
+def _yerel(query: str, h: "Hazirlik", profil_kaydi, dis_servis: str | None = None) -> str:
+    """Yerel danışman. dis_servis: soru o servise gönderildiyse adı (yöntem notu buna göre yazılır, KVKK)."""
+    return yerel_danisman.yanitla(query, h.matches, profil_kaydi, h.notlar, ek_bloklar=h.yerel_bloklar,
+                                  dis_servis=dis_servis)
+
+
+def _dis_servis_adi(llm_kullan: bool, h: "Hazirlik") -> str | None:
+    return llm_saglayici.saglayici().ad if (llm_kullan and h.matches and llm_saglayici.etkin_mi()) else None
 
 
 def answer(query: str, profil: dict | None = None,
            llm_kullan: bool = True, profil_kaydi=None) -> str:
-    """Soruya yanit uretir.
+    """Soruya yanıt üretir.
 
-    llm_kullan=False ise HICBIR dis LLM cagrisi yapilmaz ve yalnizca
-    veritabanindaki kayitlarin liste formati doner. Bunun sebebi KVKK:
-    yapay zeka cagrisi isletme profilini VE sorunun metnini Anthropic'e
-    (ABD) gonderiyor; bu yurt disina aktarimdir ve acik riza gerektirir.
-    Riza yoksa cagri hic yapilmaz (bkz. app/main.py sor()).
-    """
+    llm_kullan=True yalnızca bir dış dil modeli yapılandırılmış ve kuruluşun o sağlayıcıya geçerli rızası varsa
+    verilir (bkz. app/main.py sor()); `profil` sözlüğü yalnız bu durumda dışarı gider. Aksi hâlde ya da dış model
+    yanıt veremezse/denetimden geçmezse yanıt yerel danışmandan gelir; profil_kaydi yalnızca yerelde kullanılır."""
     h = _hazirla(query, llm_kullan, profil_kaydi)
-    if not h.matches:
+    if not h.matches and not yerel_danisman.adi_gecen_programlar(query, _tum_kayitlar()):
         return BULUNAMADI_METNI
-
-    if llm_kullan:
-        if h.girisim:
-            claude_cevap = _claude_cevap(query, h.matches, profil, h.notlar, h.elenen,
-                                         sistem_eki=GIRISIM_PROMPT_EKI)
-        else:
-            claude_cevap = (_claude_cevap(query, h.matches, profil, h.notlar, h.elenen)
-                            if (h.notlar or h.elenen) else _claude_cevap(query, h.matches, profil))
-        if claude_cevap is not None:
-            return claude_cevap
-
-    if llm_kullan and OLLAMA_ETKIN:
-        llm_cevap = _ollama_cevap(query, h.matches)
-        if llm_cevap is not None:
-            return llm_cevap
-
-    return _liste_formati(h.matches)
-
-
-def _claude_akis(query: str, matches: list[Tesvik], profil: dict | None,
-                 notlar: dict[int, str] | None = None, elenen: str = "", sistem_eki: str = ""):
-    """_claude_cevap'ın akış (streaming) karşılığı: yanıt metnini parça parça üretir.
-
-    Hiç parça üretmeden biterse (anahtar yok, ağ/kota hatası) çağıran taraf liste formatına
-    düşer; parça ürettikten SONRA kesilirse kullanıcıya kesildiği açıkça söylenir (sessizce
-    yarım yanıt bırakılmaz). Hata sebebi her durumda günlüğe yazılır."""
-    if not settings.ANTHROPIC_API_KEY:
-        return
-    try:
-        import anthropic
-    except ImportError:
-        return
-
-    baglam = _baglam_metni(matches, profil, notlar, elenen)
-    # uretildi = kullanıcıya görünür metin gönderildi mi; yalnız <analiz> üretip kesilen yanıt liste formatına düşer.
-    uretildi = False
-    suzgec = _AnalizSuzgeci()
-    try:
-        client = anthropic.Anthropic(api_key=settings.ANTHROPIC_API_KEY, max_retries=CLAUDE_MAX_RETRIES)
-        with client.messages.stream(
-            model=settings.CLAUDE_MODEL,
-            max_tokens=CLAUDE_MAX_TOKENS,
-            system=SISTEM_PROMPTU + sistem_eki,
-            messages=[{"role": "user", "content": f"BAĞLAM:\n{baglam}\n\nKULLANICI SORUSU: {query}"}],
-            output_config={"effort": CLAUDE_EFFORT},
-            timeout=_claude_zaman_asimi(),
-        ) as akis:
-            for parca in akis.text_stream:
-                gorunur = suzgec.besle(parca)
-                if gorunur:
-                    uretildi = True
-                    yield gorunur
-            son = akis.get_final_message()
-        kalan = suzgec.bitir()
-        if kalan:
-            uretildi = True
-            yield kalan
-        durum = getattr(son, "stop_reason", None)
-        if durum == "max_tokens":
-            logger.warning("Claude akış yanıtı max_tokens sınırında kesildi (%s token)",
-                           getattr(getattr(son, "usage", None), "output_tokens", "?"))
-            if uretildi:
-                yield KESILDI_NOTU
-        elif durum is None and uretildi:
-            # Dayanıklılık deneyi 2026-10-07: bağlantı message_stop gelmeden kopunca SDK hata
-            # vermiyor, stop_reason boş kalıyor; kullanıcı kesik yanıtı tam yanıt sanıyordu.
-            logger.warning("Claude akışı message_stop gelmeden bitti (stop_reason boş)")
-            yield BAGLANTI_KOPTU_NOTU
-    except Exception as e:
-        logger.warning("Claude akışı başarısız (%s): %s: %s",
-                       "parça üretildikten sonra" if uretildi else "başlamadan",
-                       type(e).__name__, e)
-        if uretildi:
-            yield BAGLANTI_KOPTU_NOTU
+    if llm_kullan and h.matches:
+        cevap = _llm_cevap(query, h.matches, profil, h.notlar, h.elenen,
+                           sistem_eki=GIRISIM_PROMPT_EKI if h.girisim else "")
+        if cevap is not None:
+            return cevap
+    return _yerel(query, h, profil_kaydi, _dis_servis_adi(llm_kullan, h))
 
 
 def answer_akis(query: str, profil: dict | None = None,
                 llm_kullan: bool = True, profil_kaydi=None):
-    """answer()'ın akış sürümü: önce ("kayitlar", [Tesvik]) sonra ("parca", str) olayları.
+    """answer()'ın akış sürümü: önce ("kayitlar", [Tesvik]), dış model beklenirken her BEKLEME_SINYALI_SN'de
+    ("bekle", None), sonra ("parca", str) olayları.
 
-    Aynı KVKK kuralı: llm_kullan=False ise dış çağrı yapılmaz, liste formatı tek parça
-    olarak gelir. Claude hiç parça üretmezse de liste formatına düşülür."""
+    Dış modelin yanıtı dayanak denetiminden geçmeden kullanıcıya gösterilmez: yanıt tamamlanıp denetlenir, geçerse
+    paragraf paragraf gönderilir; geçmezse ya da dış model yoksa yanıt yerel danışmandan gelir."""
     h = _hazirla(query, llm_kullan, profil_kaydi)
     yield "kayitlar", h.matches
-    if not h.matches:
+    if not h.matches and not yerel_danisman.adi_gecen_programlar(query, _tum_kayitlar()):
         yield "parca", BULUNAMADI_METNI
         return
-    if llm_kullan:
-        uretildi = False
-        for parca in _claude_akis(query, h.matches, profil, h.notlar, h.elenen,
-                                  sistem_eki=GIRISIM_PROMPT_EKI if h.girisim else ""):
-            uretildi = True
+    cevap = None
+    if llm_kullan and h.matches and llm_saglayici.etkin_mi():
+        from concurrent.futures import ThreadPoolExecutor
+        from concurrent.futures import TimeoutError as BeklemeDoldu
+        with ThreadPoolExecutor(max_workers=1) as havuz:
+            is_ = havuz.submit(_llm_cevap, query, h.matches, profil, h.notlar, h.elenen,
+                               GIRISIM_PROMPT_EKI if h.girisim else "")
+            while True:
+                try:
+                    cevap = is_.result(timeout=BEKLEME_SINYALI_SN)
+                    break
+                except BeklemeDoldu:
+                    yield "bekle", None
+    cevap = cevap if cevap is not None else _yerel(query, h, profil_kaydi, _dis_servis_adi(llm_kullan, h))
+    for parca in re.split(r"(?<=\n\n)", cevap):
+        if parca:
             yield "parca", parca
-        if uretildi:
-            return
-    yield "parca", _liste_formati(h.matches)
+
+
+def _tum_kayitlar() -> list[Tesvik]:
+    db = SessionLocal()
+    try:
+        return db.query(Tesvik).all()
+    finally:
+        db.close()

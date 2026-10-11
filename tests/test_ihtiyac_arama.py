@@ -134,12 +134,12 @@ def test_answer_profili_yalnizca_yerel_elemede_kullanir(veri, monkeypatch):
     """profil_kaydi dışarı gönderilmez; LLM'e giden bağlamda tarım programı olmamalı."""
     gorulen = {}
 
-    def sahte_claude(query, matches, profil, notlar=None, elenen=""):
+    def sahte_llm(query, matches, profil, notlar=None, elenen="", **_kw):
         gorulen["idler"] = _idler(matches)
         gorulen["profil"] = profil
         return "yanıt"
 
-    monkeypatch.setattr(rag, "_claude_cevap", sahte_claude)
+    monkeypatch.setattr(rag, "_llm_cevap", sahte_llm)
     imalat = FinancialProfile(sektor="imalat", calisan_sayisi=30, yillik_ciro=80e6)
     rag.answer(SORU, None, llm_kullan=True, profil_kaydi=imalat)
     assert 78 not in gorulen["idler"] and gorulen["profil"] is None

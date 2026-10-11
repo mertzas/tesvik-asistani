@@ -1,0 +1,412 @@
+[
+  {
+    "n": 7,
+    "puan": {"dogruluk": 3, "soruya_odak": 3, "eksiksizlik": 3, "anlasilirlik": 2},
+    "bulgular": [
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "Olumlu: üç sorunun da sayısal cevabı kaynakla birebir doğru ve yanıtta mevcut (SGK işveren hissesi %100 ve 12 yıl; faiz/kâr payı desteği var, repo oranının %25'i, azami 12,5 puan, azami 5 yıl, sabit yatırımın %70'ine kadar; asgari sabit yatırım 6.000.000 TL). 6. bölge tespiti ve kalan gün hesabı (1542) da doğru.",
+        "kanit": "Yanıt: «sigorta primi işveren hissesi: %100, 12 yıl (MADDE 18, 6. bölge)»; kaynak KAYIT 180 DESTEK UNSURLARI satırı aynı değerleri veriyor. 11.10.2026 ile 31.12.2030 arası 1542 gün.",
+        "oneri": "Bu üçlü (süre, faiz desteği, asgari tutar) soru anahtar sözcüklerinden eşleştirilip kısa cevapta ayrı maddeler olarak önde verilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Öncelikli Yatırımlar Teşvik Sistemi yanlış gerekçeyle elenmiş/aşağı alınmış. Yanıt programı belirlenemedi ve büyük ölçekli yatırım programı diyerek Diğer ilgili programlara itiyor; oysa kayıt aynı profil için ŞARTLI ön değerlendirme veriyor (6. bölge yatırımı, m.9/1-ç, ayrıca EK-3 otel kalemi) ve vergi indiriminde yatırıma katkı oranı %30 (Hedef Yatırımlar'da %20). Asgari tutar da aynı 6 milyon TL. Yüksek asgari tutar şablonu yalnız m.9/1-b ve c için geçerli, bu persona için değil.",
+        "kanit": "Yanıt: «Öncelikli Yatırımlar ... belirlenemedi (teyit: Büyük ölçekli yatırım programı (yüksek asgari yatırım tutarı); işletme ölçeğiniz mikro/küçük.)». Kaynak KAYIT 181: «9903 ÖN DEĞERLENDİRME: ŞARTLI — 6. bölge yatırımı (müteharrik hariç); ayrıca EK-3: NACE 55.10 ... (MADDE 5/1, 9/1-ç)» ve «yatırıma katkı oranı %30».",
+        "oneri": "Diğer programlar için karar etiketi ve gerekçe, kayıttaki 9903 ön değerlendirme sonucundan üretilsin; genel ölçek şablonu yalnız kayıt bunu belirleyici sayıyorsa kullanılsın. Aynı bölgede iki 9903 programı ŞARTLI ise ikisi karşılaştırmalı (katkı oranı farkı) gösterilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Ana program etiketi 'Belirlenemedi' iken aynı satırda ön değerlendirme 'ŞARTLI' ve sektör 'uygun' deniyor; neyin belirlenemediği açıklanmıyor (muhtemelen yatırım tutarı ve oda sayısı bilinmiyor). Aynı ŞARTLI cümlesi 'Sizin için' satırında iki kez, kısa cevapta bir kez daha tekrar ediliyor.",
+        "kanit": "Yanıt 'Sizin için: Belirlenemedi — Karar metnine göre ön değerlendirme: ŞARTLI — NACE 55.10 ... ; Sektörünüz (hizmet) bu desteğin kapsamına uygun; 9903 ön değerlendirmesi: ŞARTLI — NACE 55.10 ...'.",
+        "oneri": "ŞARTLI sonucu için etiket 'Şartlı uygun — şunu teyit edin: <bilinmeyen alan>' olsun; tek cümle, tekrarsız.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Otel yatırımının asıl eşiği EK-3 kalemindeki '50 oda ve üzeri' ölçütüdür; yanıt bunu kesik alıntıyla (…Butik Otel ve Özel') veriyor, şartı totolojik yazıyor (Konaklama Tesisi desteklenir) ve netleştirme sorularında oda sayısını hiç sormuyor; yalnız genel EK-3 sorusu var.",
+        "kanit": "Yanıt: «'55.1 Oteller ve benzeri konaklama yerleri 50 oda ve üzeri (Otel, Tatil Köyü, Butik Otel ve Özel' kalemine giriyor; şart: Konaklama Tesisi desteklenir»; Bölüm 5 madde 1 genel EK-3 sorusu.",
+        "oneri": "EK-3 kalem etiketinde sayısal eşik (oda, dekar, kapasite) varsa ayıklanıp 'Projeniz en az X ... içeriyor mu?' sorusu üretilsin; etiket kelime/cümle sınırında kesilmesin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Kısa cevap 'Öne çıkan: ... belirlenemedi (9903 ön değerlendirmesi: ...)' diye başlıyor; kullanıcı asıl cevapları tek uzun noktalı virgüllü satırın içinde buluyor. 'Yatırıma katkı oranı', 'vergi %60 indirimli' gibi terimler soruyla ilgisiz ve açıklamasız. Soru üç ayrı cevap istiyor ama üç ayrı madde yok.",
+        "kanit": "Yanıt satır 3 ve 5: kısa cevabın ilk maddesi program adı + ŞARTLI alıntısı, üçüncü madde vergi indirimi ile başlayan tek satır.",
+        "oneri": "Kısa cevap başında soru niyeti (SGK süresi, faiz desteği, asgari tutar) için 'Cevap:' bloğu; sorulmayan destek unsurları (vergi indirimi, işçi hissesi) ikinci planda.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Soru 9903 teşvik belgesiyle ilgili iken yanıt TOBB Nefes (işletme kredisi, refinansman yasak), Girişimci Destek kredi faizi (kendi satırında 'hedeflerle doğrudan eşleşme bulunamadı', KOSGEB çağrısı kapalı), Yapay Zekâ Kredisi (Teknogirişim Rozeti) ve Teknoloji/Stratejik Hamle eleme listesini de sıralıyor. E-TUYS başvuru adımı Bölüm 2, 3 ve 4'te üç kez tekrar ediliyor.",
+        "kanit": "Yanıt: «Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin»; Bölüm 3 dört madde E-TUYS/KEP; Bölüm 4 madde 1-4.",
+        "oneri": "Soru tek bir program ailesini adlandırıyorsa Diğer seçenekler en çok 2 ile sınırlansın, 'doğrudan eşleşme bulunamadı' notu olan program hiç gösterilmesin; yatırım hedefinde yatırım kredisi içeren ürün (ör. TKYB) öne alınsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "İç şablon sızıntıları: kayıttaki adım etiketi birinci tekil ve eksik cümle olarak kullanıcıya gösteriliyor; 'Başvuruyu yap:' ön eki ham kalmış; profil özetinde hedef aksansız (yatirim); Başvuru satırı kesik ('banka …').",
+        "kanit": "Yanıt Bölüm 3: «Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): Teşvik belgesi müracaatımı E-TUYS üzerinden»; Bölüm 1: «Hedefler: yatirim»; «(KOBİ bankaya kredi başvurusu yapar, banka … —».",
+        "oneri": "[adim] kayıtları kullanıcıya gösterilmeden emir kipine çevrilsin (Teşvik belgesi müracaatını E-TUYS üzerinden yapın); hedef slug'ları etiket sözlüğüyle yazılsın; kesme yalnız cümle sınırında.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "KOBİ olmayanlara özgü ekosistem geliştirme planı (%2) ve finansal kiralama 3 milyon TL kuralları, profil KOBİ (küçük) olduğu halde gösteriliyor.",
+        "kanit": "Yanıt: «KOBİ değilseniz ve yatırımınıza vergi indirimi öngörülüyorsa ... ekosistem geliştirme planı»; persona 25 çalışan, 30 milyon TL ciro, ölçek: küçük işletme.",
+        "oneri": "'KOBİ değilseniz' koşullu kurallar profil KOBİ ise gizlensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "Birlikte kullanım kuralı (9903'te aynı yatırım için başka kamu desteği alınamaz, sübvansiyonlu kredi hariç) sayfanın altında kalıyor; üstte Diğer seçenekler olarak KOSGEB bağlantılı ürün öneriliyor ve çakışma uyarısı yok.",
+        "kanit": "Yanıt: Diğer seçenekler satırında Girişimci Destek Programı Kredi Faiz Programı; en altta «Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı».",
+        "oneri": "Birlikte kullanım kısıtı olan ana program varsa Diğer seçenek kartlarına kısa uyarı etiketi eklensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "dusuk",
+        "aciklama": "Anonim şirket ticaret sicili kaydı gereği ticaret odası/ticaret ve sanayi odası üyesidir; bu nedenle TOBB üyeliği şartı bu profil için 'Belirlenemedi' yerine büyük olasılıkla karşılanmış sayılabilir. Bu genel hukuki bilgidir, kayıtta yoktur.",
+        "kanit": "Yanıt: «TOBB NEFES ... Sizin için: Belirlenemedi — profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletmeyim».",
+        "oneri": "Şirket türü anonim/limited ise oda üyeliği şartları 'Profilinize göre sağlanıyor görünüyor' sayılsın; şahıs işletmesinde esnaf odası ayrımı sorulsun.",
+        "kaynak_disi": true
+      }
+    ],
+    "uzman_cevap": "Van 6. bölge sayıldığı için NACE 55.10 otel yatırımı Hedef Yatırımlar kapsamında şartlı uygundur (EK-3: 55.1 Oteller, 50 oda ve üzeri). SGK işveren hissesi %100 ve 12 yıl (m.18), işçi hissesinin asgari ücrete tekabül eden kısmı 10 yıl (m.19) desteklenir. Faiz/kâr payı desteği vardır: repo oranının %25'i, azami 12,5 puan, kredinin sabit yatırımın %70'ine kadar olan kısmı için azami 5 yıl (m.15, yalnız 4-6. bölgeler). Asgari sabit yatırım, EK-3'te ayrıca belirtilmedikçe 6 milyon TL'dir (m.5/2); 50 oda eşiğini ve 6 milyon TL'yi projenizde doğrulayın. Öncelikli Yatırımlar da 6. bölge dayanağıyla (m.9/1-ç) şartlı uygundur ve vergi indiriminde yatırıma katkı oranı %30'dur (Hedef'te %20). Aynı yatırım için başka kamu desteği alınamaz (sübvansiyonlu kredi hariç); müracaat 31.12.2030'a kadar, müracaattan önceki harcamalar kapsam dışıdır (m.5/6)."
+  },
+  {
+    "n": 8,
+    "puan": {"dogruluk": 3, "soruya_odak": 3, "eksiksizlik": 2, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "odak",
+        "ciddiyet": "kritik",
+        "aciklama": "Soru iki parçalı (15.102 TL hâlâ geçerli mi, hangi Karar geçerli) ve ikisine de net cevap yok. 'Hayır, 2022 değeriydi' bilgisi parantez içine gömülü; geçerli Karar için üç farklı atıf birlikte veriliyor (2573 mülga, 5973 kapsamında, 5986 m.8 ve m.4 güncel karşılık) ve hangisinin geçerli olduğu söylenmiyor.",
+        "kanit": "Yanıt kısa cevap: «Son bilinen destek (bilgi için): 5973 sayılı İhracat Destekleri Hakkında Karar kapsamında ... (15.102 TL ifadesi 2022 yılına aitti)»; kaynak notu: «Denetim2: yürürlükte 5973 sayılı Karar» ve «Tur12: güncel karşılığı 5986 m.8 ... ve m.4».",
+        "oneri": "Güncellik sorularında kısa cevap şablonu: 'Hayır/Evet: <rakam> <yıl> değeriydi; dayanak <Karar> <tarih>'te mülga; güncel çerçeve <Karar ve madde>' tek cümlede. Kaynaktaki iki çelişik Karar notu önce veri düzeyinde uzlaştırılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Yanıtın kendi metni güncel karşılık olarak 5986 m.8'i (Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği) adlandırıyor, ama bu program Diğer ilgili programlarda yok (aday olarak elenmiş); m.4 ve m.9 listeleniyor ama 2026 tutarları (36.993.646 TL ve 3.698.274 TL) yazılmıyor. Kullanıcı 'şimdi ne kadar' sorusuna sayı alamıyor.",
+        "kanit": "Kaynak ADAY KAYIT 195: «%50; 2026 şirketler için yıllık 7.396.548 TL; ülke başına 3 yıl», kriter min_onceki_yil_ihracat_usd 1000000. Yanıt Diğer programlar: yalnız m.9, m.4 ve 5973 m.4, tutarsız.",
+        "oneri": "Kapalı kartın 'güncel karşılığı' notunda geçen her madde için kart zorunlu olsun; Diğer ilgili programlarda 2026 üst limit gösterilsin; ihracat eşiği (önceki yıl 1 milyon USD) mikro profil için kilit şart olarak yazılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "tuzak",
+        "ciddiyet": "orta",
+        "aciklama": "Kapalı kartta 'Ne yapabilirsiniz: sonraki başvuru dönemini duyurulardan takip edin; çağrı açıldığında şartları yeniden kontrol edin' şablonu kullanılmış. Program mülga bir Karara dayanıyor; yeni dönem açılmayacak, yönlendirme halef programlara olmalı. Yanıtın kendi 'neden' satırıyla çelişiyor.",
+        "kanit": "Yanıt: «Neden: ... 2573 sayılı Karar 18.08.2022'de mülga» ve hemen ardından «Ne yapabilirsiniz: Sonraki başvuru dönemini Ticaret Bakanlığı duyurularından takip edin».",
+        "oneri": "Kapalılık nedeni 'mülga/yürürlükten kalktı' ise yönlendirme şablonu 'güncel karşılığı programlara bakın: ...' olsun; 'sonraki dönem' şablonu yalnız dönemsel kapanışta.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Bölüm 3 'Yukarıdaki programlar şu an size kapalı' diyor ve yol haritası boş; oysa Diğer ilgili programlarda aktif üç program var (m.9, m.4, 5973 m.4) ve bunlar 'belirlenemedi' durumunda. Mesaj kullanıcıyı yanlış yönlendiriyor; ortak ön koşul zinciri (ihracatçı birliği üyeliği, DYS kaydı, Madrid üyesi ülkede tescilli yurt dışı marka, ön onay) hiç anlatılmıyor.",
+        "kanit": "Yanıt Bölüm 3: «Yukarıdaki programlar şu an size kapalı ya da başvuruya kapalı; aşağıdaki adımlar profilinize açık bir program bulunduğunda geçerlidir.»",
+        "oneri": "Bu cümle yalnız tüm gösterilen programlar kapalıysa kullanılsın; Diğer programlar belirlenemedi ise onların ortak ön koşulları Bölüm 3-4'te yazılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Neden satırı yarım cümle: parantez kapanmıyor ve 'Bakanlık sayfası: güncel karşılığı ...' iç not gibi okunuyor. 'Son bilinen destek' satırı 5973 kapsamında diyor ama aynı yanıt dayanağın mülga 2573 olduğunu söylüyor; okuyucu hangi Kararın ne olduğunu çözemiyor.",
+        "kanit": "Yanıt: «program başvuruya açık değil (dayanağı 2573 sayılı Karar 18.08.2022'de mülga (Bakanlık sayfası: güncel karşılığı 5986 m.8 Çevrim İçi Mağaza ve m.4 Dijital Pazaryeri Tanıtım desteği).»",
+        "oneri": "Neden metni sabit cümle şablonundan üretilsin ('Dayanağı <Karar> <tarih>'te yürürlükten kalktı; güncel karşılığı <Karar m.x>'); parantez dengesi otomatik denetlensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "dusuk",
+        "aciklama": "Mikro e-ticaret şirketi için asıl engel m.4/m.9 ön onayında istenen Madrid Sistemi'ne taraf ülkede tescilli yurt dışı markadır; kayıt bunu yazıyor (yoksa önce 5973 m.4). Yanıt Yurt Dışı Marka Tescil Desteği'ni listeliyor ama aralarındaki sıra ilişkisini söylemiyor ve kilit şart olarak yalnız ihracatçı birliği üyeliğini gösteriyor.",
+        "kanit": "Kaynak KAYIT 192/194 şartı: «Ön onay için WIPO Madrid Sistemi'ne taraf en az bir ülkede tescilli yurt dışı marka (yoksa önce 5973 m.4 Yurt Dışı Marka Tescil Desteği)». Yanıt kilit şart: ihracatçı birliği üyeliği.",
+        "oneri": "Belirlenemedi gerekçesinde profilde karşılığı olmayan ilk iki şart yazılsın; programlar arası ön koşul bağı (marka tescili önce) kısa notla gösterilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "Olumlu: program doğru biçimde kapalı işaretlenmiş, 15.102 TL'nin 2022 değeri olduğu açıkça belirtilmiş, uydurma güncel rakam verilmemiş, güncel limit için resmî belgeye gönderilmiş ve Bakanlık iletişimi doğrulanmış kaynaktan.",
+        "kanit": "Yanıt: «15.102 TL ifadesi 2022 yılına aitti»; «15.102 TL 2022 yılı değeridir, güncel sayılmaz».",
+        "oneri": "Bu dürüst tavır korunsun; üstüne güncel 2026 rakamları (kayıtta olanlar) eklensin.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Hayır: 15.102 TL 2022 yılına ait değerdir ve güncel sayılmaz; üyelik giderini destekleyen program 2573 sayılı Karara dayanıyordu ve bu Karar 18.08.2022'de mülga oldu. Ticaret Bakanlığı sayfasına göre güncel karşılık 5986 sayılı E-İhracat Kararı'dır: m.8 Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (%50, 2026 şirket limiti 7.396.548 TL, önceki yıl en az 1 milyon USD ihracat şartı), m.4 Dijital Pazaryeri Tanıtım (%50, hedef ülkede %70, limit 36.993.646 TL) ve m.9 Yurt Dışı Pazaryeri Komisyon (%50, 3 yıl, limit 3.698.274 TL). Hepsi ihracatçı birliği üyeliği, DYS kaydı ve ön onay ister; m.4 ve m.9 ayrıca Madrid Sistemi'ne taraf bir ülkede tescilli yurt dışı marka arar, markanız yoksa önce 5973 m.4 Yurt Dışı Marka Tescil Desteği (%50, 2026 limiti 3.698.274 TL) gerekir. Mikro ölçeğinizde m.8'in 1 milyon USD ihracat eşiği engel olabilir; kesin limitleri Bakanlığın 2026 e-ihracat üst limit tablosundan teyit edin."
+  },
+  {
+    "n": 9,
+    "puan": {"dogruluk": 4, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "Olumlu: sorulan üç değer doğru ve tek satırda var (500.000-5.000.000 TL, faiz/komisyon yok, vade 24 ay, ilk 12 ay ödemesiz). Teknogirişim Rozeti için 'Belirlenemedi' etiketi doğru: profilde karşılığı yok, uydurma 'uygun' denmemiş.",
+        "kanit": "Yanıt Destek: «Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz)»; kaynak Tutar/oran satırıyla aynı.",
+        "oneri": "Korunsun; sayısal cevap 'Sizin için' satırından önce gelsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Kredinin işleyişi anlaşılmıyor: kredi nakit değil, bankadan alınan Kesin Teminat Mektubu tutarı kadar limit tanımlanıyor, tutar GO Dijital Cüzdan'a blokeli aktarılıyor ve yalnız KOSGEB Hizmet Sağlayıcılar Listesi'ndeki firmalardan alınan hizmet faturaları için çözülüyor. Yanıt bunu jargonla ve sıralamasız veriyor; 'faizsiz ve komisyonsuz' vurgusu teminat mektubunun bankaya ödenen maliyetini gizliyor (bu maliyet kayıtta yok, genel bilgidir). Belge listesi aynı teminat maddesini iki kez yazıyor.",
+        "kanit": "Yanıt Bölüm 4 madde 3: «Bankadan ... Kesin Teminat Mektubu getirmek (limit = teminat tutarı, en az 500.000 TL); ... Bankadan Kesin Teminat Mektubu (kredinin GO Dijital Cüzdan hesabına blokeli aktarımı için zorunlu); ...». Program satırı: «faizsiz ve komisyonsuz KOSGEB kredisi».",
+        "oneri": "Üç adımlık 'Nasıl işler' (teminat mektubu, bloke cüzdan, sağlayıcı faturası) ve 'faiz yok; teminat mektubu maliyetini bankanıza sorun' uyarısı eklensin; belge listesi tekilleştirilsin.",
+        "kaynak_disi": true
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Persona hedefleri ihracat, Ar-Ge ve finansman iken sektör, hedef ve ölçek eşleşmesi tam olan adaylar gösterilmemiş: Küresel Rekabetçilik Destek Paketi (sektör ihracat+arge, en çok orta ölçek, kredi üst limiti 50 milyon TL, azami 36 ay) ve KOSGEB Kapasite Geliştirme. Gösterilen üç program (TÜBİTAK transfer ödemesi, Ziraat Yeşil İhracat, Halkbank İlk Adım) hepsi bilinmeyen kilit şart nedeniyle 'belirlenemedi'.",
+        "kanit": "Kaynak ADAY KAYIT 107: kriterler {sektorler: ihracat, arge; max_olcek: orta}; ADAY KAYIT 81 ve 8: sektorler imalat, arge. Yanıt Diğer ilgili programlar: TÜBİTAK Transfer Ödemeleri, Ziraat Yeşil İhracat, Halkbank İlk Adım.",
+        "oneri": "Diğer ilgili programlar sıralaması hedef+sektör+ölçek eşleşme skoruna göre yapılsın; kilit şartı bilinmeyenler eşleşmesi tam olanlardan sonra gelsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Netleştirme bölümünün ilk sorusu işletme sahibinin yaşı; bu soru yalnız Diğer programlardaki Halkbank İlk Adım'dan geliyor ve KOSGEB kredisiyle ilgisiz. Aynı bölümde GO Dijital Cüzdan şartı sorulmuyor (3 şarttan 2'si soruluyor). Gösterilen üç Diğer program da soruyla ilgisiz.",
+        "kanit": "Yanıt Bölüm 5: «1. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.» ve kontrol listesinde üç şart varken yalnız ikisi soruluyor.",
+        "oneri": "Netleştirme soruları önce ana programın kontrol listesinin tamamından, sonra en çok bir tane Diğer kartlardan türetilsin; soru adlandırılmış bir programı soruyorsa Diğer kart sayısı azaltılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Darboğaz bölümü gerçek engelleri değil genel ön koşulu gösteriyor: Teknogirişim Rozeti ve Kesin Teminat Mektubu darboğaz olarak adlandırılmıyor; yalnız KOSGEB kaydı/Beyanname maddeleri var. Kimler başvurabilir satırında KOBİ olma ve TTK statüsü şartları da atlanmış (KOBİ başka satırda görünüyor).",
+        "kanit": "Yanıt Bölüm 3: «KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi ...» ve «Yapay Zekâ Kredi Programı: KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak»; Kimler başvurabilir satırı üç şart sayıyor.",
+        "oneri": "Darboğaz = 'profilde karşılığı olmayan kilit şart' + 'zorunlu üçüncü taraf belge' (ör. teminat mektubu) kurallarıyla üretilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kısa cevapta ilk madde 'Sizin için: belirlenemedi', sayısal cevap dördüncü madde; Program, Destek ve Kimler başvurabilir maddeleri rozet ve cüzdan şartını üç kez tekrarlıyor. Profil özetinde TRL 8 yer alıyor ama krediyle ilgisi yok.",
+        "kanit": "Yanıt kısa cevap 2-8. maddeler; Bölüm 1 'Teknoloji hazırlık seviyesi (TRL): 8'.",
+        "oneri": "Miktar/vade soruları için 'Destek' satırı ilk sıraya; tekrar eden şart cümleleri tek yerde.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "KOSGEB Yapay Zekâ Kredisi işletme başına 500.000 TL ile 5.000.000 TL arasındadır, TL cinsindendir ve faiz ya da komisyon uygulanmaz. Vade toplam 24 aydır ve kredi başlangıcından itibaren ilk 12 ay ödemesizdir. Kredi nakit ödenmez: bankadan GO Dijital Teknoloji Hizmetleri A.Ş.'ye hitaben alınan Kesin Teminat Mektubu tutarı kadar (en az 500.000 TL) limit tanımlanır, tutar GO Dijital Cüzdan'a blokeli aktarılır ve yalnız KOSGEB'in Hizmet Sağlayıcılar Listesi'ndeki firmalardan alınan hizmetlerin faturası cüzdana yüklenip incelendikten sonra ödenir. Yazılım KOBİ'si olarak asıl engel başvuru tarihinde geçerli Teknogirişim Rozeti'ne sahip olmanızdır; ayrıca KOSGEB'de güncel ve aktif işletme beyanı ile GO Dijital Cüzdan hesabı gerekir. Başvuru KOSGEB bilgi sistemi veya e-Devlet'ten yapılır; sayfa dönem ya da son tarih belirtmiyor."
+  },
+  {
+    "n": 10,
+    "puan": {"dogruluk": 4, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "Olumlu: büyük işletme limiti (150 milyon TL) ve 1 Eylül-31 Ekim 2026 tarihleri doğru; 20 gün kaldı hesabı doğru; 2026-1 dönemi ile karışmamış; faiz (%37 sabit, TLREF+1), komisyon (%1), 6 ay ödemesiz, 36 ay vade kaynakla uyuşuyor; TOBB Nefes ve KGF Genel Destek KOBİ şartıyla doğru elenmiş.",
+        "kanit": "Yanıt: «kredi üst limiti KOBİ 50 Milyon TL, büyük işletme 150 Milyon TL»; ÇAĞRI id 5: acilis 2026-09-01, kapanis 2026-10-31, kalan_gun 20.",
+        "oneri": "Korunsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Desteğin istihdam koruma şartı yanıtta yok: finansman desteğinden yararlanmak için kredi kullanmak ve 2026 Ocak-Haziran ortalama aylık prim gün sayısını Temmuz-Aralık 2026'da korumak gerekiyor; ayrıca destek başvuru tarihinden sonra kullanılan kredi için hesaplanıyor. Başvuruya 20 gün kala ve gözlem döneminin ortasındayken bu, 400 çalışanlı firma için belirleyici. Kontrol listesinde yalnız 'İşletme Beyanı güncel' var.",
+        "kanit": "Kaynak: «Başvuru şartları: ... Kredi kullanmak ve 2026 Ocak-Haziran ortalama aylık prim gün sayısını 2026 Temmuz-Aralık döneminde korumak (finansman desteği için)» ve «Destek, başvuru tarihi sonrasında kullanılan ... kredi için ...». Yanıtta bu ifadeler geçmiyor.",
+        "oneri": "Kayıtta destek koşulu olarak geçen [adim]/Başvuru şartları maddeleri kontrol listesinde 'koşul' olarak gösterilsin; 'Destek' satırına koşul eklensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "tuzak",
+        "ciddiyet": "orta",
+        "aciklama": "Gelir İdaresi'nin 31.12.2025 tarihli kayıtlarında imalat NACE kodu bulunması (sonradan kod eklenerek başvurulamaz) şartı kayıtta [sart] olarak var ama yanıtta hiç yok; 'engel yok' etiketi ve 'Faaliyet kodunuz 29.10 ... tam sektör eşleşmesi' ifadesi bu şartı doğrulamıyor. Kimler başvurabilir satırı programı tek şartlı gösteriyor.",
+        "kanit": "Kaynak [sart]: «Gelir İdaresi Başkanlığı'nın 31.12.2025 tarihli kayıtlarında imalat NACE kodu olmalı (sonradan imalat kodu ekletilerek başvurulamaz)». Yanıt: «Kimler başvurabilir (kayıttaki şartlar): İşletme Beyanının güncel olması.»",
+        "oneri": "Kayıttaki her [sart] kullanıcıya ya 'profilden sağlanan' ya da 'teyit edin' olarak yansısın; yanıt-kayıt şart sayısı tutarlılık testi eklensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kural özeti resmî alıntıdan geniş: '(veya tersi)' eki alıntıda yok (alıntı yalnız KOBİ'nin büyük işletmeye dönüşmesini söylüyor). Ayrıca ton tutarsız: 'ödemiş olmalısın' ikinci tekil, diğer cümleler resmî.",
+        "kanit": "Yanıt: «Önceki dönemde destek ödemesi yapılan KOBİ, ölçek değiştirip büyük işletme olursa (veya tersi) ...» ve alıntı «KOBİLER, ölçek değiştirip Büyük işletme olursa yeni dönemde destekten faydalanamaz.»",
+        "oneri": "Kural özetleri alıntının kapsamını aşmasın; kayıt cümleleri tek sesle yazılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "Sorulan değer 'büyük işletme için üst limit' ama Destek satırı KOBİ ve büyük limitini aynı cümlede veriyor ve fiili kredi tavanının Ocak-Haziran prime esas kazanç aylık ortalaması olduğu parantezde kalıyor; 400 çalışanlı firmada 150 milyon TL tavan fiilen bağlayıcı olmayabilir. Açılış tarihi Başvuru satırında yok, Program satırında.",
+        "kanit": "Yanıt: «(kredi tutarı 2026 Ocak-Haziran prime esas kazanç aylık ortalamasını geçemez)».",
+        "oneri": "Cevap: 'Sizin üst limitiniz = en düşük (150 milyon TL, Ocak-Haziran PEK aylık ortalaması)'; Başvuru satırında açılış ve kapanış birlikte.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Dijital Kefalet Destek Programı (Akbank dijital kanal, tüzel firma kefalet üst limiti 5 milyon TL) 2 milyar TL cirolu büyük işletme için ölçek dışı; İlave İstihdam Destek Paketi 2021'de 50'den az çalışanı olan işyerleri içindi ve hiç uygun olmamış, geçmiş program. İkisi de 'Diğer' ve 'kapalı' olarak gösteriliyor.",
+        "kanit": "Kaynak KAYIT 172: «şahıs 2,2 Milyon / tüzel 5 Milyon TL»; KAYIT 123: «sigortalı sayısı 50'nin altında olan özel sektör işyerleri». Yanıt Diğer ve Kapalı bölümleri.",
+        "oneri": "Kefalet/kredi limiti profil ölçeğine göre belirgin küçükse ve geçmiş program profil kriterini zaten karşılamıyorsa gösterilmesin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "Profil özetinde hedef aksansız (yatirim); yatırım hedefi için hiçbir öneri sunulmadığı da söylenmiyor. Başvuru satırı 'KOSGEB'e 2026-2 dönemi formlarıyla' ile belirsiz kalıyor (e-Devlet/portal kanalı ve bankaya sıra yok).",
+        "kanit": "Yanıt Bölüm 1: «Hedefler: istihdam, yatirim».",
+        "oneri": "Hedef etiketleri sözlükten; başvuru adımı 'önce banka kredisi mi, KOSGEB formu mu' sırasıyla kayıt veriyorsa gösterilsin.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "İstihdamı Koruma Destek Programı 2026-2 döneminde (yalnız Finansman Desteği) büyük işletme için kredi üst limiti 150 milyon TL'dir, KOBİ'ler için 50 milyon TL; kullanılabilecek tutar ise 2026 Ocak-Haziran prime esas kazanç toplamının aylık ortalamasını aşamaz. Başvuru tarihleri 1 Eylül - 31 Ekim 2026'dır; bugün itibarıyla 20 gün kalmıştır. Krediler azami 6 ay anapara ödemesiz ve 36 ay vadelidir; banka azami faizi sabitte %37, değişkende TLREF+1, komisyon kredinin %1'ini geçemez. Geri ödemesiz destek en çok 12 puandır ve yalnız vergi dairesi ile SGK prim borçlarında kullanılır; bunun için kredi kullanmanız ve 2026 Ocak-Haziran ortalama aylık prim gün sayısını Temmuz-Aralık 2026'da korumanız gerekir. NACE 29.10 Kısım C kapsamındadır; yine de Gelir İdaresi'nin 31.12.2025 tarihli kayıtlarında imalat kodunuzun bulunması ve işletme beyanınızın güncel olması aranır."
+  },
+  {
+    "n": 11,
+    "puan": {"dogruluk": 3, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "Olumlu: süre aralıkları (24-54, 6-30, 12 ay, İŞKUR +6 ay), 31.12.2026 işe alım sınırı, son 6 ay işsizlik ve ilave istihdam şartları kaynakla uyuşuyor; 'engel yok' etiketi doğru; KGF İlave İstihdam paketi doğru biçimde kapalı ayrılmış.",
+        "kanit": "Yanıt Süre (kayıttan) satırı ve kontrol listesi kaynak KAYIT 185 [sart] maddeleriyle aynı.",
+        "oneri": "Korunsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "'Kaç ay sürer' sorusu için kesin süre, işe alınacak kişinin cinsiyeti, yaşı, belge durumu ve İŞKUR kaydına bağlı; yanıt 6-54 ay aralığını veriyor ama 3 kişi için hangi sürenin geçerli olduğunu belirleyemiyor ve Bölüm 5 bu bilgileri sormuyor (yalnız iki şart sorusu). 24-54 aralığını neyin belirlediği de belirtilmemiş.",
+        "kanit": "Yanıt Bölüm 5 yalnız 'son 6 aydır işsiz' ve 'ilave' şartlarını soruyor; kaynak: «18 yaş ve üzeri kadınlar 24–54 ay; ... 29 yaş ve üzeri erkekler 6–30 ay».",
+        "oneri": "Süre alanı kırılımlıysa netleştirme sorusu otomatik üretilsin (alacağınız kişiler kadın mı/erkek mi, yaş, İŞKUR kaydı) ve cevaba göre tek süre verilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "orta",
+        "aciklama": "İki program için verilen tutarlar karşılaştırılamaz biçimde yan yana: geçici 10. madde için kişi başı aylık 7.184,03 TL (PEK alt sınırı, işveren payı) iken 50/5 için 'PEK alt sınırı üzerinden' 11.395,35 TL; aynı baz için ikinci tutar yaklaşık %59 daha yüksek. Ya baz farklı (işveren+işçi payı olabilir) ya da kayıt hatalı; yanıt 50/5'i daha cömert gösteriyor ve bunu açıklamıyor.",
+        "kanit": "Yanıt: «kişi başı aylık 7.184,03–64.656,23 TL (2026; prime esas kazancın alt ve üst sınırı arası)» ve «Kişi başı aylık 11.395,35 TL prim karşılığı (2026; prime esas kazanç alt sınırı üzerinden)».",
+        "oneri": "Aynı ölçüt adı (işveren payı/toplam prim) iki kayıtta tutarlı yazılsın; doğrulanmamış tutar 'teyit edin' notuyla gösterilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Süre tablosunda yaş sınırı çakışıyor: 18-29 yaş erkek 24-54 ay, 29 yaş ve üzeri erkek 6-30 ay. 29 yaşındaki erkek için hangisinin geçerli olduğu belirsiz; yanıt çakışmayı aynen aktarıyor.",
+        "kanit": "Yanıt Süre satırı: «18-29 yaş erkekler 24–54 ay; 29 yaş ve üzeri erkekler 6–30 ay».",
+        "oneri": "Kayıtta yaş aralıkları çakışıyorsa yanıta 'sınır yaşı için SGK genelgesinden teyit edin' notu otomatik eklensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "dusuk",
+        "aciklama": "Geçici 10. madde kaydının dördüncü şartı (aylık prim ve hizmet belgelerinin yasal süresinde verilmesi, primlerin ödenmesi, SGK genel şartları) yanıtta ne Kimler başvurabilir satırında ne kontrol listesinde var; 50/5 programında aynı şart listelenmiş. Şahıs işletmesi için SGK borcu kritik olduğundan iki program arasında tutarsızlık var.",
+        "kanit": "Kaynak KAYIT 185 Başvuru şartları: «aylık prim ve hizmet belgelerinin yasal süresinde verilmesi ve primlerin ödenmesi (SGK genel şartları)»; yanıt geçici 10 listesinde üç madde.",
+        "oneri": "Kayıttaki tüm şartlar kontrol listesine alınsın veya ortak SGK şartı iki programda tutarlı gösterilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Prim teşviki için anlamsız genel şablonlar: harcama öncesi destek verilmez, izleme/raporlama/yerinde denetim, 'Taslak düğmesi başvuru metnini hazırlar', 'kurum portalından durumu izleyin, ek belge taleplerine yanıt verin'. Başvuru yolu e-Bildirge'de teşvik koduyla bildirimdir, belge-onay döngüsü yok.",
+        "kanit": "Yanıt Bölüm 3 üç [Genel ilke] satırı ve Bölüm 4 madde 4.",
+        "oneri": "Tutar niteliği 'prim desteği' ise harcama-öncesi ve izleme ilkeleri bastırılsın; yalnız SGK borcu ve ilave istihdam ilkesi gösterilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Kısa cevapta süre bilgisi iki kez tekrar ediliyor; 50/5 programının süresi (kişinin kalan işsizlik ödeneği süresi) kısa cevapta yok, oysa soru 'kaç ay'. Kontrol listesi cümleleri tek ses değil: 'Özel sektör işvereniyim', 'işe alındığın', 'olmalısın'; alıntılar yarım ('özel sektör işverenlerin').",
+        "kanit": "Yanıt: «Süre kadın/genç/mesleki belge durumuna göre 6–54 ay; İŞKUR kaydı +6 ay» (iki kez); «İşçi, işe alındığın tarihten önceki ...»; «Özel sektör işvereni olmalısın».",
+        "oneri": "'Kaç ay' sorusunda eşleşen tüm kayıtların süre alanı kısa cevapta; kontrol listesi cümleleri resmî ve tek ses.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "31.12.2026 işe alım sınırı yazılmış ama kalan gün (81) hesaplanmıyor; diğer senaryolarda kalan gün veriliyor. Üç kişi alımının takvimi bu sınıra bağlı.",
+        "kanit": "Yanıt: «31.12.2026 tarihine kadar yapılan işe alımlar için»; 11.10.2026'dan itibaren 81 gün.",
+        "oneri": "Sabit tarihli sona erme kurallarında kalan gün yazılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "dusuk",
+        "aciklama": "Hatay deprem bölgesi olduğundan bölgeye özgü ek istihdam/prim desteklerinin bulunabileceği ve genel prim indirimlerinin (ör. 5510 sayılı Kanun m.81 kapsamındaki beş puanlık indirim) bu yanıtta hiç anılmadığı not edilmeli; kayıtta bunlar yok, bu yüzden yanıt 'kayıtta yok, SGK'dan teyit edin' demeli. Bu genel bilgidir ve doğrulanmamıştır.",
+        "kanit": "Yanıt yalnız iki 4447 kaydını veriyor; kaynakta il özgü istihdam kaydı yok.",
+        "oneri": "İstihdam hedefi ve deprem bölgesi ili için yanıta 'bölgeye özgü istihdam desteklerini SGK/İŞKUR'dan ayrıca teyit edin' notu eklensin.",
+        "kaynak_disi": true
+      }
+    ],
+    "uzman_cevap": "4447 sayılı Kanun geçici 10. madde teşviki, 31.12.2026'ya kadar yapılan işe alımlarda işveren SGK prim payını İşsizlik Sigortası Fonu'ndan karşılar. Süre işe alınanın durumuna göre değişir: 18 yaş ve üzeri kadın ve 18-29 yaş erkek 24-54 ay, 29 yaş ve üzeri erkek 6-30 ay, mesleki yeterlilik belgesi/mesleki-teknik eğitim/işgücü yetiştirme kursu mezunu 12 ay; kişi İŞKUR'a kayıtlıysa +6 ay. Şartlar: kişinin son 6 aydır işsiz olması, son 6 aylık ortalama sigortalı sayınıza ilave olarak istihdam edilmesi, özel sektör işvereni olmanız ve prim/hizmet belgelerini yasal sürede verip primleri ödemeniz; bildirim SGK e-Bildirge'den teşvik koduyla yapılır. İşsizlik ödeneği alan birini alırsanız 4447 m.50/5 teşviki kişinin kalan işsizlik ödeneği süresi boyunca uygulanır (aynı ilave istihdam şartı, işçinin eski işyerinize dönmemesi şartıyla). Alacağınız kişilerin cinsiyet, yaş ve İŞKUR kaydını bilirsem kesin ayı hesaplayabilirim; tutarları SGK'nın güncel genelgesinden teyit edin."
+  },
+  {
+    "n": 12,
+    "puan": {"dogruluk": 4, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "Olumlu: limit (kredi 3.000.000 TL, kefalet 2.400.000 TL) doğru ve ilk sırada; 2026 programı ile kapalı 2020 paketi karıştırılmamış, 2020 ayrı ve kapalı olarak gösterilmiş; TOBB üyeliği kilit şart olarak doğru yakalanmış; refinansman/döviz yasağı ve TL kefalet kuralı aktarılmış.",
+        "kanit": "Yanıt: «Destek: Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)»; «Adıyla eşleşen diğer kayıtlar: Tobb Nefes Kredisi 2020 Destek Paketi (kapalı)».",
+        "oneri": "Korunsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Şahıs işletmesi profilinde TOBB üyeliği şartı Esnaf Odası ile Ticaret/Sanayi Odası ayrımına bağlı: kayıttaki TOBB Nefes üye listesi ticaret, sanayi, deniz ticaret odası ve ticaret borsasıdır, Esnaf Odası yok; aynı yanıttaki Halkbank Şahıs İşletmeleri kaydı ise Esnaf Odası'nı sayıyor. Yanıt bu ayrımı kullanıcıya söylemiyor, yalnız 'belirlenemedi' diyor ve bir kartta 'engel yok', diğerinde 'belirlenemedi' etiketi neden farklı olduğunu açıklamıyor.",
+        "kanit": "Kaynak KAYIT 86: «TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri)»; KAYIT 87: «Esnaf Odası, Ticaret ve Sanayi Odası veya Meslek Odasına kayıtlı şahıs işletmeleri». Yanıt: Halkbank Şahıs 'profilinize göre engel yok'.",
+        "oneri": "Şirket türü şahıs ise oda şartı için özel metin: 'Esnaf Odası'na kayıtlıysanız TOBB Nefes kapsamı dışında kalabilirsiniz; Ticaret/Sanayi Odası kaydınız varsa uygunsunuz'. Aynı oda şartı içeren kartlarda tutarlı etiket.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Şahıs işletmesi için en uygun alternatif olan Halk Bankası Şahıs İşletmeleri Destek Kredisi yanıtta yalnız tek satırla ve hiçbir tutar vermeden geçiyor (kefalet üst limiti 400 bin TL, başvuru ücreti 7.500 TL, ciro 10 milyon TL altı; persona 1 milyon TL). Dijital Kefalet Destek Programı (şahıs firması için 2,2 milyon TL kefalet, %80) hiç gösterilmemiş; buna karşılık 150/500 milyon TL limitli TKYB paketi mikro şahıs işletmesi için ölçek dışı olduğu halde gösteriliyor.",
+        "kanit": "Kaynak KAYIT 87 Tutar: «Kefalet üst limiti 400 bin TL; kefalet başvuru ücreti 7.500 TL»; ADAY KAYIT 172: «%80 kefalet; şahıs 2,2 Milyon / tüzel 5 Milyon TL». Yanıt TKYB: «belirlenemedi (kayıtta başvuru şartı yok ...)».",
+        "oneri": "Diğer ilgili programlarda tutar satırı gösterilsin; şirket türü ve ciroya göre limit ölçeği uyumlu kayıtlar öne, ölçek dışı olanlar eksilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Netleştirme listesi ilgisiz ve yanlış sıralı: ilk soru NACE (imalat, tarım, turizm kısıtlı programlar), ikinci soru yaş (Halkbank İlk Adım) iken sorulan TOBB Nefes sektör bağımsız ve kritik soru (TOBB üyeliği) üçüncü sırada. Soruya cevap veren program için gerekli bilgi son sırada.",
+        "kanit": "Yanıt Bölüm 5: «1. NACE faaliyet kodunuz nedir? ... 2. İşletme sahibinin ... yaşı nedir? ... 3. TOBB NEFES ... TOBB üyesi bir işletmeyim ...».",
+        "oneri": "Netleştirme önceliği: önce adlandırılan/ana kartın kilit şartı, sonra diğerleri; NACE sorusu yalnız gösterilen kartlardan biri sektörel şart içeriyorsa.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kesik ve bağlamsız metinler: Başvuru satırı '(yalnızca …' ve '(KOBİ bankaya kredi başvurusu yapar, banka … —' diye yarım kalıyor; 2020 kartında 'Genel Kriterler ... bu limit için de geçerlidir. ... Ticaret Odası….' kesik ve bağlamdan kopuk.",
+        "kanit": "Yanıt Bölüm 2 Başvuru ve Bölüm 4 madde 3; 2020 kartı 'Kimler başvurabiliyordu' satırı.",
+        "oneri": "Metin kısaltma cümle sınırında yapılsın; kapalı kartta kayıttan tam cümle özeti.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kapalı 2020 kartında 'sonraki başvuru dönemini KGF duyurularından takip edin' deniyor; oysa bu paketin güncel sürümü (2026) ana kartta zaten var. Yönlendirme halef programa olmalı.",
+        "kanit": "Yanıt: «Ne yapabilirsiniz: Sonraki başvuru dönemini KGF duyurularından takip edin».",
+        "oneri": "Aynı ürün adının yeni sürümü aktifse kapalı kartta 'güncel sürüm yukarıdaki 2026 programıdır' yazılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "dusuk",
+        "aciklama": "Limit sorusunda kayıttaki vade (azami 48 ay, azami 6 ay anapara ödemesiz) ve oran (2,4/3,0 oranından yaklaşık %80 kefalet) yanıtta yok; kullanıcı kefalet ve kredi limitini görüyor ama bunların ne kadar sürede geri ödendiğini görmüyor. Bölüm 3-4 genel ilkeleri ve 'Taslak düğmesi' de bankaya yapılan başvuru için anlamsız.",
+        "kanit": "Kaynak KAYIT 86 Ürün açıklaması: «Azami 6 ay anapara ödemesiz dönem dahil olmak üzere azami 48 ay»; tablo «KOBİ 2.400.000 TL 3.000.000 TL».",
+        "oneri": "Limit/tutar sorusunda kayıtta varsa vade, ödemesiz dönem ve kefalet oranı da kısa cevaba eklensin.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "TOBB Nefes Kredisi 2026 Destek Programı'nda KOBİ'ler için azami kredi 3.000.000 TL ve azami KGF kefaleti 2.400.000 TL'dir (2,4/3,0 oranından yaklaşık %80); vade azami 48 aydır ve bunun azami 6 ayı anapara ödemesizdir. Program yalnız TOBB üyesi işletmelere açıktır (ticaret, sanayi, deniz ticaret odası veya ticaret borsası); şahıs işletmesi olarak yalnızca Esnaf Odası'na kayıtlıysanız kapsam dışı kalabilirsiniz, bu yüzden hangi odaya kayıtlı olduğunuzu teyit edin. Kredi döviz, kıymetli maden, mücevher ve refinansman için kullanılamaz, kefalet yalnız TL talep edilir ve başvuru Akbank, Denizbank, Garanti BBVA, Halkbank, QNB, Vakıfbank, Yapı Kredi, Ziraat Bankası veya Ziraat Katılım'a yapılır; KGF son kullandırım tarihi yayımlamadığından bankadan teyit alın. Esnaf Odası kaydınız varsa Halk Bankası Şahıs İşletmeleri Destek Kredisi (kefalet üst limiti 400 bin TL, son yıl cirosu 10 milyon TL'yi aşmayan şahıs işletmeleri) uygun alternatiftir. 2020 tarihli TOBB Nefes paketi kapalıdır, onunla karıştırmayın."
+  }
+]

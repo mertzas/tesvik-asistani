@@ -66,6 +66,18 @@ class Uygunluk9903:
         return f"{ad} — {self.gerekce} ({self.madde})"
 
 
+
+def _tanim(tanim: str, sinir: int = 90) -> str:
+    """EK-3 kalem tanımı; uzunsa açık parantez ve yarım kelime bırakmadan kısaltılır (yarım alıntı yanıltıyordu:
+    "50 oda ve üzeri (Otel, ")."""
+    tanim = " ".join((tanim or "").split())
+    if len(tanim) <= sinir:
+        return tanim
+    kesik = tanim[:sinir].rsplit(" ", 1)[0]
+    if kesik.count("(") > kesik.count(")"):
+        kesik = kesik[:kesik.rfind("(")].rstrip()
+    return kesik.rstrip(",;") + " …"
+
 def program_turu(baslik: str | None) -> str | None:
     """Teşvik kaydı başlığından 9903 programı. 9903 dışı kayıtlar için None."""
     b = kucult(baslik or "").translate(_ASCII)
@@ -112,8 +124,9 @@ def _ek3_durumu(nace: str) -> tuple[str, str]:
         bolum = bolum_sarti(kayit.get("bolum", "")) or ""
         ek = " ".join(x for x in (sart, bolum) if x)
         if ek:
-            return "sartli", f"NACE {n}, EK-3'te '{kayit['kod']} {kayit['tanim'][:60]}' kalemine giriyor; şart: {ek[:220]}"
-        return "uygun", f"NACE {n}, EK-3'te '{kayit['kod']} {kayit['tanim'][:60]}' kalemine giriyor"
+            sart = ek if len(ek) <= 300 else ek[:300].rsplit(" ", 1)[0] + " …"
+            return "sartli", f"NACE {n}, EK-3'te '{kayit['kod']} {_tanim(kayit['tanim'])}' kalemine giriyor; şart: {sart}"
+        return "uygun", f"NACE {n}, EK-3'te '{kayit['kod']} {_tanim(kayit['tanim'])}' kalemine giriyor"
     # Kullanıcının kodu listeden daha genişse (ör. "10"), alt kolları listede olabilir.
     alt = [k["kod"] for k in ek3_kayitlari() if _rakam(k["kod"]).startswith(_rakam(n))]
     if alt:

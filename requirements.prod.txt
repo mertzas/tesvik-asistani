@@ -6,7 +6,7 @@
 #   - python-jose kuruluyordu ama app/auth.py "import jwt" (PyJWT) yapiyor;
 #     uretimde ModuleNotFoundError ile tum uygulama acilmiyordu.
 #   - apscheduler yoktu; app/scheduler.py import edilemiyordu.
-#   - anthropic yoktu; AI danisman sessizce liste formatina dusuyordu.
+#   - (tarihce) anthropic yoktu; 2026-10-11'den beri Anthropic hic kullanilmiyor, dis model istemcisi openai.
 #   - bcrypt sabitlenmemisti; passlib 1.7.4 + bcrypt>=4.1 bilinen
 #     "password cannot be longer than 72 bytes" hatasini veriyor.
 
@@ -28,7 +28,7 @@ python-multipart==0.0.32
 email-validator==2.3.0
 
 stripe==15.3.0
-anthropic==0.116.0
+openai==2.44.0
 apscheduler==3.11.3
 requests==2.34.2
 beautifulsoup4==4.15.0

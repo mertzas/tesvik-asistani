@@ -1,28 +1,33 @@
 """Başvuru ön taslağı (app/basvuru_taslagi.py + POST /api/basvuru-listesi/{id}/taslak), 2026-10-08.
-Gerçek Claude çağrısı YOK: _claude_istek her testte yamalanır."""
+Gerçek dil modeli çağrısı YOK: _llm_istek her testte yamalanır; sunucu Gemini yapılandırılmış sayılır
+(app/llm_saglayici), rıza o sağlayıcıya verilir."""
 import subprocess
 import sys
 from pathlib import Path
 
 import pytest
 
-from app import basvuru_taslagi
-from app.models import BasvuruTakibi, FinancialProfile, Organization, PlanType, Tesvik, User, settings
+from app import basvuru_taslagi, llm_saglayici
+from app.models import BasvuruTakibi, FinancialProfile, Organization, PlanType, Tesvik, User
 
 KOK = Path(__file__).resolve().parent.parent
 CAGRILAR = []
 
 
+GEMINI_RIZASI = "gemini:Google LLC:ABD:generativelanguage.googleapis.com"
+
+
 @pytest.fixture(autouse=True)
-def sahte_claude(monkeypatch):
+def sahte_llm(monkeypatch):
     CAGRILAR.clear()
-    monkeypatch.setattr(settings, "ANTHROPIC_API_KEY", "test-anahtari")
+    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
+    monkeypatch.setenv("LLM_API_KEY", "test-anahtari")
 
     def _sahte(sistem, kullanici):
         CAGRILAR.append((sistem, kullanici))
         return ("## 1. İşletme tanıtımı\nMetin [DOLDURUN: kuruluş yılı]\n## 2. Projenin amacı ve gerekçesi\nx",
                 {"giris": 1200, "cikis": 400, "durma": "end_turn"})
-    monkeypatch.setattr(basvuru_taslagi, "_claude_istek", _sahte)
+    monkeypatch.setattr(basvuru_taslagi, "_llm_istek", _sahte)
 
 
 @pytest.fixture
@@ -35,6 +40,7 @@ def hazir(client, db_session):
     db_session.commit()
     r = client.post("/api/auth/signup", json={"email": "a@example.com", "password": "Parola123", "full_name": "A",
                                               "company_name": "B", "ai_yurtdisi_riza": True})
+    assert r.status_code == 200, r.text
     h = {"Authorization": f"Bearer {r.json()['access_token']}"}
     org = db_session.query(Organization).join(User, User.org_id == Organization.id).filter(
         User.email == "a@example.com").one()
@@ -62,7 +68,7 @@ def test_taslak_uretilir_saklanir_ve_belgeler_listeden_gelir(client, db_session,
     assert "Küresel Rekabetçilik" in kullanici and "sektör: imalat" in kullanici and "TRL" not in kullanici
     # GET'te geri gelir (tekrar ücret ödenmez)
     assert client.get("/api/basvuru-listesi/9", headers=h).json()["taslak"] == taslak
-    assert db_session.query(BasvuruTakibi).one().taslak_model == settings.CLAUDE_MODEL[:60]
+    assert db_session.query(BasvuruTakibi).one().taslak_model == "gemini:gemini-2.5-flash"
 
 
 def test_free_plan_rizasiz_ve_profilsiz_cagri_yapilmaz(client, db_session, hazir):
@@ -76,6 +82,10 @@ def test_free_plan_rizasiz_ve_profilsiz_cagri_yapilmaz(client, db_session, hazir
     r = _olustur(client, h)
     assert r.status_code == 403 and "rıza" in r.json()["detail"]
     org.ai_yurtdisi_riza = True
+    org.ai_riza_saglayici = "anthropic:Anthropic PBC"      # başka sağlayıcıya verilmiş rıza geçmez
+    db_session.commit()
+    assert _olustur(client, h).status_code == 403
+    org.ai_riza_saglayici = GEMINI_RIZASI
     db_session.query(FinancialProfile).delete()
     db_session.commit()
     assert _olustur(client, h).status_code == 404
@@ -84,13 +94,14 @@ def test_free_plan_rizasiz_ve_profilsiz_cagri_yapilmaz(client, db_session, hazir
 
 def test_servis_yoksa_503_ve_hata_kaydi_bozmaz(client, db_session, hazir, monkeypatch):
     h, _ = hazir
-    monkeypatch.setattr(settings, "ANTHROPIC_API_KEY", "")
-    assert _olustur(client, h).status_code == 503
-    monkeypatch.setattr(settings, "ANTHROPIC_API_KEY", "test-anahtari")
+    monkeypatch.delenv("LLM_SAGLAYICI")                  # varsayılan yerel: dış servis yok
+    r = _olustur(client, h)
+    assert r.status_code == 503 and "şablon" in r.json()["detail"]
+    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
 
     def _patla(sistem, kullanici):
         raise RuntimeError("kredi bitti")
-    monkeypatch.setattr(basvuru_taslagi, "_claude_istek", _patla)
+    monkeypatch.setattr(basvuru_taslagi, "_llm_istek", _patla)
     r = _olustur(client, h)
     assert r.status_code == 503 and "kredi" not in r.json()["detail"], "iç hata ayrıntısı sızmamalı"
     assert db_session.query(BasvuruTakibi).count() == 0
@@ -104,11 +115,24 @@ def test_gunluk_sinir(client, hazir):
     assert r.status_code == 429 and len(CAGRILAR) == 5
 
 
-def test_max_tokens_kesilmesi_bildirilir(client, hazir, monkeypatch):
+def test_kesik_yanit_taslak_olarak_saklanmaz(client, db_session, hazir, monkeypatch):
     h, _ = hazir
-    monkeypatch.setattr(basvuru_taslagi, "_claude_istek",
-                        lambda s, k: ("## 1. İşletme tanıtımı\nyarım", {"durma": "max_tokens"}))
-    assert "uzunluk sınırında kesildi" in _olustur(client, h).json()["taslak"]
+
+    def _kesik(sistem, kullanici):
+        raise llm_saglayici.LLMHatasi("yanıt uzunluk sınırında kesildi")
+    monkeypatch.setattr(basvuru_taslagi, "_llm_istek", _kesik)
+    assert _olustur(client, h).status_code == 503
+    assert db_session.query(BasvuruTakibi).count() == 0
+
+
+def test_kayitta_olmayan_rakam_iceren_taslak_gosterilmez(client, db_session, hazir, monkeypatch):
+    """Dayanak denetimi: model "2.500.000 TL hibe" gibi bağlamda olmayan bir tutar yazarsa taslak verilmez."""
+    h, _ = hazir
+    monkeypatch.setattr(basvuru_taslagi, "_llm_istek",
+                        lambda s, k: ("## 1. İşletme tanıtımı\nProgramdan 2.500.000 TL hibe alınacaktır.", {}))
+    r = _olustur(client, h)
+    assert r.status_code == 503 and "şablon" in r.json()["detail"]
+    assert db_session.query(BasvuruTakibi).count() == 0
 
 
 def test_hesap_silmede_taslak_da_silinir(client, db_session, hazir):
@@ -152,14 +176,14 @@ def test_self_test_bayragi():
 
 
 # ---------------------------------------------------------------- yapay zekâsız şablon taslak (varsayılan, 2026-10-08)
-def test_sablon_taslak_free_planda_rizasiz_ve_claude_cagirmadan(client, db_session, hazir):
+def test_sablon_taslak_free_planda_rizasiz_ve_dis_servis_cagirmadan(client, db_session, hazir):
     h, org = hazir
     org.plan, org.ai_yurtdisi_riza = PlanType.FREE, False
     db_session.commit()
     r = client.post("/api/basvuru-listesi/9/taslak", headers=h)          # yontem varsayılanı: sablon
     assert r.status_code == 200, r.text
     d = r.json()
-    assert CAGRILAR == [], "şablon taslak Anthropic'e gitmemeli"
+    assert CAGRILAR == [], "şablon taslak dış servise gitmemeli"
     # taslak neye hazırlandığını ilk satırda söyler (2026-10-10 kullanıcı geri bildirimi)
     assert d["taslak"].startswith("> **Ne için:** Küresel Rekabetçilik başvurusunda") and "**Nereye girilir:** KBS" in d["taslak"]
     assert "> **Ön taslak" in d["taslak"] and "yapay zekâ kullanılmadan" in d["taslak"]

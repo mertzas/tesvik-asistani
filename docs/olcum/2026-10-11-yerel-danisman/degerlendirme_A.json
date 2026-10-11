@@ -1,0 +1,388 @@
+[
+  {
+    "n": 1,
+    "puan": {"dogruluk": 3, "soruya_odak": 1, "eksiksizlik": 2, "anlasilirlik": 2},
+    "bulgular": [
+      {
+        "tur": "tuzak",
+        "ciddiyet": "kritik",
+        "aciklama": "Kullanici Kirsal Kalkinma hibesi (oran, ust limit, bireysel traktor) soruyor. Veritabaninda bu program yok; yanit bunu acikca soylemiyor. Bunun yerine Yerel Kalkinma Hamlesi (9903) 'one cikan' diye sunuluyor ve 'kayitta yok; kurumun guncel uygulama esaslarindan teyit edin' cumlesi hangi programin neyinin kayitta olmadigini belirtmeden Kisa cevaba yapistiriliyor. Dogru tavir: 'Kirsal Kalkinma hibesi sistemde kayitli degil, oran/limit/traktor kapsami icin Konya Il Tarim ve Orman Mudurlugu'ne sorun' demek.",
+        "kanit": "Kisa cevap: 'Oncu cikan: Yerel Kalkinma Hamlesi Programi (9903 sayili Karar) - kayitta yok; kurumun guncel uygulama esaslarindan teyit edin'. Kaynakta Kirsal Kalkinma/TKDK/KKYDP kaydi yok.",
+        "oneri": "Soruda adi gecen program (Kirsal Kalkinma, IPARD, TKDK vb.) kayit eslesmesinde bulunamazsa yanit ilk cumlede 'bu program sistemde kayitli degil, oran ve limit veremem' desin; ilgili kurumun (il mudurlugu) iletisimini hemen ardindan versin; baska programi 'one cikan' diye ikame etmesin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "kritik",
+        "aciklama": "Yerel Kalkinma Hamlesi (9903) 3 calisanli, 2,5 milyon TL cirolu, 180 dekarlik sahis ciftci icin one cikarilmis. Karar asgari sabit yatirim 12 milyon TL (2. bolge) ariyor, il bazli 'yerel yatirim konulari' listesi sistemde yok, ayrica Kalkinma Ajanslari Genel Mudurlugu yurutur ve komite degerlendirir. Traktor/mibzer alimi icin gerceklesmesi pratikte imkansiz bir yol; 'Sartli' etiketi yaniltici. Kartin 'KOBI olmayan ... ekosistem plani' kurali da bu kullanici icin anlamsiz.",
+        "kanit": "KAYIT 178: 'Asgari sabit yatirim tutari ... 1. ve 2. bolgelerde 12 milyon TL'; PERSONA yillik_ciro 2.500.000, sirket_turu sahis.",
+        "oneri": "Asgari yatirim esigi (12/6 milyon TL) profilin ciro ve olcegiyle acikca uyumsuzsa program 'Uygun degil / gerceki disi' listesine tek satirla alinsin; hedefi 'makine' olan mikro ciftciye 9903 karti one cikarilmasin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Mevlana KA 'Sosyal Kalkinma ve Girisimcilik Teknik Destek (Ar-Ge Danismanligi)' tam kart olarak gosteriliyor ('Sartli'). Kayit 1 Ocak 2021 sonrasi kurulmus TEKNOLOJI TABANLI KOBI ariyor; bugday ureten sahis ciftci icin uygun degil ve sorunun konusu da degil. Ayrica ekran 'Belirttiginiz hedeflerle dogrudan eslesme bulunamadi' diyerek kendi ele gecirdigi kaydi eliyor ama yine de kart basiyor.",
+        "kanit": "KAYIT 229: 'Ozel 1 Ocak 2021 yili sonrasi kurulmus teknoloji tabanli KOBI'ler'; kriter sektorler: arge, genel.",
+        "oneri": "Kayitta acik sirket-tipi/kurulus-yili/teknoloji-tabanli sarti varsa ve profil bunu saglamiyorsa kart yerine eleme satiri; 'hedeflerle eslesme yok' uyarisi alan program kart olarak gosterilmesin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Sera/Ortualti Tarim Destekleri tam kart; kartin kendi uygunluk satiri 'profilinizin sektor/ihtiyac eslesmesinde bu program cikmadi' diyor. Bugday ureticisi icin alakasiz. 'Diger ilgili programlar' listesinde Ziraat Bankasi Yesil Ihracat Kredisi (net ihracatci + Greendeks C sarti) ve Organik Tarim (sertifika sarti) de ilgisiz; 8 programin hepsi 'sartli' etiketli, bu da ayirt ediciligi yok ediyor.",
+        "kanit": "Yanit: 'Sartli - profilinizin sektor/ihtiyac eslesmesinde bu program cikmadi; kapsami kurumdan teyit edin.' KAYIT 168 sartlari: net ihracatci %110, Greendeks.",
+        "oneri": "Kendi kuraliyla 'eslesme cikmadi' diyen program kart olarak asla gosterilmesin. Zorunlu sertifika/ihracat sarti profilde yok/negatifse 'sartli' degil 'su an uygun degil' denilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Kullanici icin sistemdeki en ilgili iki kayit geri planda: (a) TARIM KEFALET DESTEK PROGRAMI traktor/mibzer icin yatirim kredisi (20 milyon TL'ye kadar, %80 kefalet, 60 ay, 12 ay odemesiz) yeterli bir finansman yoludur ama hibe olmadigi ve 'hibe orani' sorusuna yanit olmadigi acikca soylenmemis; (b) Hayvancilik Destekleri 1. donem basvurusu 01/09-01/12/2026 acik ve hedeflerde 'hayvan' var, ama sadece tek satir 'sartli' olarak geciyor, tarih yok. Hububat/baklagil destegi (buday, 954,20 TL/da) personanin kendi kategorisi olmasina ragmen tek satir.",
+        "kanit": "KAYIT 76: 'buyukbas 1. donem 01/09/2026-01/12/2026'; KAYIT 94 'yatirim kredisi 20 Milyon TL ... %80 kefalet'; PERSONA hedefler: makine, hayvan.",
+        "oneri": "Hedefle ve sorunun konusuyla eslesen programlar (makine -> kefalet/yatirim kredisi; hayvan -> acik donemli hayvancilik) one alinsin; acik cagri tarihi 'diger ilgili programlar' satirinda da gosterilsin; hibe olmayan programlar 'hibe degil, kredi kefaleti' diye isaretlensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Kisa cevap sayilari ('8 program, 0 uygun, 8 sartli, 2 tanesinin basvuru donemi acik ya da yaklasiyor') kullanicinin sorusuna (oran, ust limit, bireysel traktor destekleniyor mu) bir yanit vermiyor; 'acik ya da yaklasiyor' hangi iki program oldugunu ve neden onemli oldugunu belirtmiyor (muhtemelen 9903 ve MEVKA).",
+        "kanit": "Kisa cevap: 'Sorunuzla ilgili 8 program degerlendirdim; 0 tanesi ... uygun gorunuyor, 8 tanesi sartli, 2 tanesinin basvuru donemi su an acik ya da yaklasiyor.'",
+        "oneri": "Kisa cevap 1) soruya dogrudan cevap (veri yoksa 'yok') 2) varsa sayisal deger 3) tek cumlelik yonlendirme sirasiyla olussun; program sayisi/etiket dagilimi Kisa cevaptan cikarilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Ic jargon ve tekrar: 'Karar m.5/5', 'EK-3', 'MADDE 18/3, 2. bolge', 'BELIRLENEMEDI - ... (tebligh, sistemde yok)' gibi ifadeler bir ciftcinin anlayacagi duzeyde degil. Ayni 'eksik/teyit: Belirttiginiz hedeflerle dogrudan eslesme bulunamadi' kalibi her kartta tekrarlaniyor. 'On kayit ve sistemler' adimina 'Yatirim tesvik belgesi' ve KEP ayni listede, ciftci icin kafa karistirici. Kisa cevaptaki duyuru URL'si ve gun sayimi okunurlugu bozuyor.",
+        "kanit": "Bolum 4 adim 1: 'Kayitli elektronik posta (KEP) adresi; Yatirim tesvik belgesi; Ciftci Kayit Sistemi (CKS) kaydi.'",
+        "oneri": "Madde numaralari ve 'BELIRLENEMEDI' ic etiketleri sade dile cevrilsin ('Sizin icin gecerli olup olmadigini sistem belirleyemedi; neden: ...'); ayni uyari kalibi bir kez, ustte yazilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Sera/Ortualti kaydinin ozet metni 2026 degerlerini 310 TL ve 527 TL olarak veriyor, Tutar/Hesaplama alani ise 367,00 TL ve 623,90 TL (en cok 990,90). Yanit dogru olan yeni degerleri kullanmis; ancak kaynak kayit icinde celisen metin kalmis. (Bu karttaki bilgi zaten soruyla ilgisiz.)",
+        "kanit": "KAYIT 79 aciklama: 'temel destek 310 TL/da; ... = 527 TL/da' vs Tutar: 'Dekar basina 367,00 TL temel destek ... +623,90 TL'.",
+        "oneri": "Veri tarafi: kayit ozeti ile tutar alani uyumlandirilsin; kural tarafi: ozet/tutar celiskisinde tutar alani esas alinsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "Gercek dunyada Kirsal Kalkinma Yatirimlarinin Desteklenmesi Programi (Tarim ve Orman Bak.) ve TKDK/IPARD makine alimini destekleyebilir ve hibe orani %50 civarindadir; ancak bunlar kaynakta yok, ozet.json 'beklenen' alaninda %50/%70/30.000.000/100.000 degerleri beklenmis. Kesin hata degil, sistemin bu soruyu karsilayacak kaydi yok.",
+        "kanit": "ozet.json n=1 beklenen: %50, %70, 30.000.000, 100.000, traktor; kaynakta bu program yok.",
+        "oneri": "Veritabanina Kirsal Kalkinma Yatirimlarinin Desteklenmesi (Tarima Dayali Yatirimlar/Makine-Ekipman) ve TKDK IPARD kaydi eklenmeden bu soru yerel danismanda cevaplanamaz; kural olarak 'kayit yok' semasi calissin.",
+        "kaynak_disi": true
+      }
+    ],
+    "uzman_cevap": "Kirsal Kalkinma hibesi (oran, ust limit, bireysel traktor alimi) sistemde kayitli degil; bu nedenle rakam veremiyorum. Konya Tarim ve Orman Il Mudurlugu'nden (0332 322 34 60) guncel cagriyi ve traktor/mibzerin kapsama girip girmedigini sorun. Sistemdeki en yakin finansman yolu Tarim Kefalet Destek Programi'dir: hibe degil, bankadan kullanacaginiz yatirim kredisine %80 KGF kefaleti (20 milyon TL'ye kadar, azami 60 ay, 12 ay odemesiz; basvuru ucreti %0,15, en az 10.000 TL; yillik komisyon %2). Yerel Kalkinma Hamlesi (9903) icin asgari sabit yatirim 12 milyon TL oldugundan 2,5 milyon TL cirolu isletmeniz icin gercekci degil. Hayvan hedefiniz icin Hayvancilik Destekleri'nin 1. donem basvurusu 01/09-01/12/2026 arasinda acik; tutarlar sistemde dogrulanamadi, il/ilce mudurlugunden teyit edin."
+  },
+  {
+    "n": 2,
+    "puan": {"dogruluk": 3, "soruya_odak": 2, "eksiksizlik": 2, "anlasilirlik": 2},
+    "bulgular": [
+      {
+        "tur": "odak",
+        "ciddiyet": "kritik",
+        "aciklama": "Soru: damla sulama hibe orani ve hibeye esas ust tutar. Kaynakta bunlar var (damla %50, yuzey alti damla %70, hibeye esas proje tutari en fazla 10.000.000 TL, asan kisim ayni katki). Yanit TSS'nin 2026 cagrisinin kapandigini soyluyor (dogru) fakat kapali programlar listesi sadece kapanis nedenini veriyor; oran ve ust tutar hicbir yerde yok. Kullanici sorusunun iki sayisal cevabini alamiyor. Ayrica 'kapandi' bilgisinden sonra bir sonraki cagri (yillik, 2027) icin ne yapilacagi soylenmiyor.",
+        "kanit": "KAYIT 80 Tutar/oran: 'Hibe orani %50 (damla, yagmurlama), %60 (...), %70 (yuzey alti damla); hibeye esas proje tutari en fazla 10.000.000 TL'. Yanit: 'Tasarruflu ... TSS Hibe Destegi sizin icin kapali ...' (oran/ust tutar yok).",
+        "oneri": "Kapali program soruda adiyla soruluyorsa, kapali olsa bile en son resmi tebligdeki oran ve ust tutar 'bilgi icin (2026 cagrisi)' etiketiyle Kisa cevaba yazilsin; ardindan 'bu cagri kapandi, yillik cagri oldugundan sonraki donemi TRGM duyurularindan izleyin' denilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Oncelikli Yatirimlar Teşvik Sistemi (9903) ilk kart olarak gosteriliyor. Kaydin kendi yapisal kriteri 'imalat, genel' ve 'ihracat/imalat sanayine odakli'; asgari sabit yatirim 12 milyon TL. Damla sulama kuran 180 dekarlik sahis ciftci icin alakasiz; kart ise 'Sartli' ve 'profilinizin sektor/ihtiyac eslesmesinde bu program cikmadi' ile bir ic celiski iceriyor. 'Yatirimim, Karar m.9/1'de sayilan konulardan birine giriyor' gibi birinci tekil sahisli onay kutusu metni de kart uygunluk sartlari arasinda veriliyor.",
+        "kanit": "KAYIT 181: 'sektorler: imalat, genel ... imalat sanayine odaklidir'; yanit: 'Sartli - ... BELIRLENEMEDI - NACE kodu girilmemis ... profilinizin sektor/ihtiyac eslesmesinde bu program cikmadi'.",
+        "oneri": "Yapisal sektor kriteri profil sektorunu (tarim) icermiyorsa program kart olarak degil 'sektorunuz kapsam disi' diye elenmeli; checklist maddeleri ('Yatirimim ...') kullaniciya sartlar bolumunde bu bicimde gosterilmesin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Sera/Ortualti (yatirim hibesi degil, dekar basi odeme; kaynak 'Sera kurulumu icin yatirim hibesi kapsam disi' diyor), Organik Tarim (sertifika sartli), Ziraat Yesil Ihracat Kredisi, Meyve-Sebze, Kadin-Genc Istihdam Tesviki (4447), TKYB Kredi Destek Paketi gibi sulama sorusuyla ilgisiz 8 program listeleniyor. Sera karti tam boyutlu kart olarak geciyor.",
+        "kanit": "KAYIT 79: 'Sera kurulumu icin yatirim hibesi bu kaydin kapsaminda degildir.'",
+        "oneri": "Soru konusu 'sulama' ise yalniz sulama/altyapi etiketli kayitlar ve genel finansman (Tarim Kefalet) gosterilsin; konu disi doğrudan odemeler ve istihdam tesvikleri listeden dusurulsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Damla sulama kurulumunu finanse edebilecek TARIM KEFALET DESTEK PROGRAMI (yatirim kredisi 20 milyon TL'ye kadar, %80 kefalet) sadece ikinci siradaki genel kart olarak gecmis; sulamayla baglantisi kurulmamis. TSS kapaliyken bu kullanicinin fiili alternatifi olduguna isaret edilmiyor.",
+        "kanit": "KAYIT 94: 'yatirim kredisi 20 Milyon TL (azami 60 ay) ... %80 kefalet'.",
+        "oneri": "Hibe cagrisi kapaliysa yanit 'bu arada yatirim kredisi icin kefalet yolu' diye tek paragraf alternatif sunsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kisa cevaptaki 'program artik basvuruya acik degil' dogru (29 Nisan - 12 Haziran 2026, kapandi). Ancak TSS kaydinin basvuru yeri 'Il/Ilce Tarim ve Orman Mudurlugu / TKDK' olarak geciyor ve basvuru tss.tarimorman.gov.tr; kullaniciya nasil takip edecegi (tss.tarimorman.gov.tr, sonraki cagri) soylenmiyor.",
+        "kanit": "KAYIT 80: 'basvuru tss.tarimorman.gov.tr (Teblig 2026/10, RG 3/4/2026)'.",
+        "oneri": "Kapali yillik cagriyi anlatirken sonraki donem icin takip kanali (resmi sistem ve il mudurlugu) yazilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kisa cevaba duyuru basligi parantez icinde dogrudan yapistirilmis ('TRGM duyurusu (29.04.2026): TSS hibe basvurulari ... kapandi'); okunmasi zor. 'Diger ilgili programlar' ve 'Bilgi eksikligi' bolumunde sulamayla ilgisiz sorular (yas siniri, organik sertifika) soruluyor.",
+        "kanit": "Bolum 5: 'Isletme sahibinin ya da en az %50 hissedarin yasi nedir?'",
+        "oneri": "Netlestirme sorulari yalniz soruyla bagintili ve karari degistiren bilgiyi (ornek: parsel sulanabilir mi, mevcut kuyu/lisans) sorsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kaynakta damla sulama icin 'sulama sistemi turune gore' oran var; TSS kayit metninde 'kuyu acma, damla sulama' var. Gercekte TSS genelde TKDK/Tarim Bakanligi ortak cagrisi olarak 2026 tebliginde yer alir; bu kaynakla uyumlu, kaynak disi ek soz yok.",
+        "kanit": "-",
+        "oneri": "-",
+        "kaynak_disi": true
+      }
+    ],
+    "uzman_cevap": "Tasarruflu Tarimsal Sulama Sistemleri (TSS) hibesinde 2026 teblige gore hibe orani damla ve yagmurlamada %50, mikro yagmurlama/center pivot/guneş enerjili sistemlerde %60, yuzey alti damlada %70'tir; hibeye esas proje tutari en fazla 10.000.000 TL olup asan kisim ayni katki olarak sizden beklenir. Ancak 2026 cagrisi 29 Nisan - 12 Haziran 2026'da kapandi; program yillik cagri ile calistigindan bir sonraki donemi tss.tarimorman.gov.tr ve Konya Il Tarim ve Orman Mudurlugu'nden takip edin. Bu arada damla sulamayi finansman olarak yapmak isterseniz Tarim Kefalet Destek Programi ile yatirim kredisine %80 KGF kefaleti (20 milyon TL'ye kadar, 60 ay, 12 ay odemesiz) kullanabilirsiniz."
+  },
+  {
+    "n": 3,
+    "puan": {"dogruluk": 3, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "olgu",
+        "ciddiyet": "orta",
+        "aciklama": "Yanit 1507 icin 3.500.000 TL ust butce, %75 hibe ve acik cagri (2026 2. cagri) bilgisini dogru veriyor; 29 gun hesabi (09.11.2026) dogru. Ancak Kisa cevap iki ayri tarihi (09.11 on kayit son gunu, 11.11 kapanis) ayni cumlede ic ice veriyor ve cumle '... ön kayit evraki kapanistan en az bir is gunu once...' diye yarida kesiliyor. Kullanici fiilen 09.11'e kadar PRODIS on kaydini yapmak zorunda olmasina ragmen bu net soylenmiyor.",
+        "kanit": "CAGRI: acilis 2026-07-20, kapanis 2026-11-11, on_kayit_son 2026-11-09; Kisa cevap: '... ön kayit evraki kapanistan en az bir is gunu once…'",
+        "oneri": "Kesilen metin yerine tek cumle: 'On kayit son gunu 09.11.2026 (kuruluş bazli on kayit evraki kapanistan en az bir is gunu once TUBITAK'a ulasmali), kapanis 11.11.2026 23:59.' Kisa cevaplarda '…' ile kesilmis ibare olmasin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "orta",
+        "aciklama": "Bolum 3 'Kayitlarda bu programlar icin ayrica on kayit/sistem sarti tespit edilmedi' diyor; oysa 1507 cagrisinda kuruluş bazli on kayit zorunlu ve son gunu 09.11.2026. Yanit kendi icinde celisiyor ve en kritik adimi atliyor.",
+        "kanit": "CAGRI notlar: 'Kurulus bazli on kayit basvurusu PRODIS uzerinden en gec 09.11.2026 23:59'.",
+        "oneri": "Cagri notunda 'on kayit' gecen programlar icin Darbogazlar bolumune otomatik 'on kayit' maddesi (tarih dahil) eklensin; 'tespit edilmedi' cumlesi yalniz gercekten hicbir kayitta yoksa yazilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "'Diger ilgili programlar' listesinde 1707, 1501, 1832, 1719, 1509 'uygun gorunuyor' etiketli, oysa: 1832 on kaydi 08.10.2026'da kapanmis (durum on_kayit_kapandi, kapanis 12.10) - yeni basvuru fiilen yok, ayrica geri odemeli, THS ve tescil yasi >=2 yil sarti; 1707 Musteri Kurulus ile imzali isbirligi/siparis sozlesmesi gerektiriyor; 1509 once EUREKA aracina uluslararasi ortakli basvuru gerektiriyor; 1719'un acik ulusal cagrilari konu kisitli (Kuantum, Hafifletme, Afetlerde Direnclilik) ve uluslararasi on inceleme olumlu olmali. 'Uygun gorunuyor' bunlar icin yaniltici; 'sartli/uygun degil' olmali.",
+        "kanit": "KAYIT 59 CAGRI durum: 'Ön kayit kapandi; yalniz on kaydi yapilmis basvurular tamamlanabilir', kalan_gun 1. KAYIT 39: 'ulusal 1509 basvurusundan once EUREKA ... basvurusu yapilmis olmali'. KAYIT 46: 'Mevcut Cagrilar: Kuantum, Hafifletme, Afetlerde Direnclilik'.",
+        "oneri": "'Uygun gorunuyor' etiketi, programin on kosul adimi (ortak/musteri/siparis sozlesmesi, uluslararasi basvuru, on kayit kapanmis) varsa ve profil bunu saglamiyorsa verilmesin; on kaydi/cagrisi kapanmis programlar 'uygun gorunuyor' listesine girmesin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Kullanicinin ilgili alternatifi 1501 (sanayi Ar-Ge, %75, proje basina en fazla 20 milyon TL, 36 ay) icin cagri acik ve on kayit son gunu 22.10.2026 (11 gun kaldi); yani 1507'den once biter. Yanit bunu 'Diger ilgili programlar'da tek satirda, tarih ve limitsiz gosteriyor. Ayni durum 1707 (3. cagri 13.11.2026'ya kadar acik) icin de gecerli. Acil tarih bilgisi kullaniciya yardimci olacakken gizlenmis.",
+        "kanit": "KAYIT 34 CAGRI: on_kayit_son 2026-10-22, kapanis 2026-10-26, kalan_gun 11. KAYIT 55 CAGRI id 26: kapanis 2026-11-13, acik.",
+        "oneri": "'Diger ilgili' satirlarinda her programin cagri durumu ve en yakin tarih (acik/kapali, son gun) tek ek ifadeyle gosterilsin; 14 gun icinde kapanan cagri varsa kalin yazilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "dusuk",
+        "aciklama": "Proje suresi (azami 18 ay), destek kapsami giderleri ve tutar hesabi (3,5 milyon TL x %75 = 2.625.000 TL hibe) soruya cevap olabilecekken verilmiyor veya yalniz parca parca. ADAY olan KOSGEB Kapasite Gelistirme Destek Programi (imalat, kucuk-orta, kredi limiti 1-20 milyon TL) kart olarak yok; KGF Kapasite Gelistirme paketi 'sartli' tek satir. Persona hedefi 'yatirim' oldugu icin makul bir alternatif, fakat sorunun odagi 1507 oldugundan ikincil.",
+        "kanit": "KAYIT 44: 'Proje destek suresi ... 18 ayi asamaz'; ADAY KAYIT 8.",
+        "oneri": "Sayisal sorularda turetilebilen degerler (azami hibe = ust butce x oran) ve proje suresi Kisa cevapta verilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Kisa cevap kart icerigini birebir kopyaliyor (durum metni, 'Hesaplama:' on eki, duyuru URL'si) ve bir cumlenin ortasinda '…' ile kesiliyor. 'Bu programdan daha once 5 proje destegi almadim' gibi birinci tekil onay kutusu cumlesi 'Kritik kurallar' altinda gerçek kural gibi geciyor. 5 proje sarti iki farkli ifadeyle (ilk 5 proje / ayni anda en fazla 5) kayitta var, yanit hangisinin gecerli oldugunu aciklamiyor.",
+        "kanit": "KAYIT 44 basvuru sartlari: 'Ayni anda en fazla 5 projeye destek alinabilir' vs alinti 'ilk bes projesi desteklenir'.",
+        "oneri": "Kisa cevap kartin kopyasi olmasin, 2 cumleyi gecmesin; checklist cumleleri kartta 'Kontrol edin:' basligiyla ayristirilsin; cakisan iki ifade varsa alinti (resmi metin) olan esas alinsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kurum iletisim bolumunde Izmir Tarim ve Orman Il Mudurlugu (tekstil sirketi icin ilgisiz) ve KOSGEB Izmir, 'Ek Bina' (telefon 0 312 595 25 35 ve Ege Universitesi adresi) listeleniyor; TUBITAK cagri merkezi ise var. 'Profiliniz yeterli' dogru.",
+        "kanit": "Bolum 4 madde 3.",
+        "oneri": "Iletisim yalniz yanitta gecen kurumlar (burada TUBITAK) icin verilsin; sektorle ilgisiz il mudurlukleri eklenmesin.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "1507 KOBI Ar-Ge Baslangic programinda proje butcesi en fazla 3.500.000 TL, destek orani %75 hibe (geri odemesiz); yani azami hibe yaklasik 2.625.000 TL, proje suresi en fazla 18 ay. Sermaye sirketi statusunde KOBI oldugunuz icin (Ltd. Sti., 12 calisan, NACE 13.20) temel sartlari sagliyorsunuz. 2026 yili 2. cagri acik: kurulus bazli on kayit PRODIS uzerinden en gec 09.11.2026 23:59, cagri kapanisi 11.11.2026 23:59 (bugunden 29 gun); on kayit evraki kapanistan en az bir is gunu once TUBITAK'a ulasmali. Ar-Ge faaliyetleri basvurudan once tamamlanmis projeler desteklenmez. Alternatif olarak 1501 (proje basina en fazla 20 milyon TL, %75) cagrisinin on kayit son gunu 22.10.2026'dir; 1832 Yesil Donusum on kaydi ise kapanmistir."
+  },
+  {
+    "n": 4,
+    "puan": {"dogruluk": 3, "soruya_odak": 2, "eksiksizlik": 2, "anlasilirlik": 2},
+    "bulgular": [
+      {
+        "tur": "odak",
+        "ciddiyet": "kritik",
+        "aciklama": "Soru dort parca: Almanya'daki ortakla basvuru olur mu, cagri acik mi, ulusal butce, proje suresi. Kisa cevap 'Uygun gorunuyor' diyor ama Almanya/Eurostars uye ulke ortagi sorusunu acikca cevaplamiyor, cagri aciklik durumunu ('son tarih kayitta yok, belge PDF'inde') net soylemiyor, proje suresini (36 ay) ise Kisa cevabin kesildigi noktadan sonra birakiyor: cumle '... ≤300.000…' ile yarida kesilmis ve 'Avro' birimi bile yok. Kullanici icin en onemli iki bilgi (cagri acik mi / proje suresi) Kisa cevapta bulunmuyor.",
+        "kanit": "Kisa cevap sonu: 'sermaye sirketi disi kurumlarin butcesi toplamin ≤%50'si ve ≤300.000…' ; KAYIT 48 Tutar/oran '...proje ≤36 ay'; basvuru donemi: 'son basvuru tarihi ve uluslararasi takvim cagri duyurusu belgesinde (PDF)'.",
+        "oneri": "Sorunun her alt sorusu icin etiketli tek satir uretilsin: 'Ortak: ...', 'Cagri durumu: ...', 'Ulusal butce: ...', 'Sure: ...'. Cagri tarihi kayitta yoksa 'Sistemde cagrinin son tarihi yok; 2026/2 cagri duyurusu PDF'inden teyit edin; acik oldugunu dogrulayamiyorum' denilsin. Kisa cevap kesilmesin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "orta",
+        "aciklama": "Durum satiri 'Dogrulanmis, guncel/aktif program' ile baslayip cagrinin acik oldugu izlenimini veriyor; oysa cagri tarihi yok ve kayit 'son basvuru tarihi cagri duyurusu belgesinde (PDF, indirilmedi)' diyor. Cagri acik/kapali durumu veriden cikarilamiyor. Kullaniciya bu belirsizlik acikca soylenmemis (sadece yanit sonunda parantez icinde 'guncel cagri takvimi kurumdan teyit edilmelidir').",
+        "kanit": "KAYIT 48 DURUM: 'son basvuru tarihi cagri duyurusu belgesinde (PDF, indirilmedi)'. Kayitta CAGRI satiri yok.",
+        "oneri": "Programin aktif oldugu ile cagrisinin acik oldugu ayri ifade edilsin; CAGRI satiri yoksa Kisa cevapta 'cagrinin acik/kapali oldugu sistemde dogrulanmadi' yazilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Yol haritasinin 1. adimi bu kullanici icin anlamsiz: 'Genel butceli kamu idaresi, ozel butceli idare veya vakif universitesiysem: Bursiyer Bilgi Formu hazirlandi.' Ltd. Sti. icin gecerli degil. Gercek on kosul (kurulus bazli on kayit -> ulusal on proje basvurusu -> uluslararasi degerlendirme -> kabul davet yazisi -> 2. asama) yol haritasinda yer almiyor; sadece kartin basvuru yeri satirinda. 'Bolum 3: on kayit/sistem sarti tespit edilmedi' ifadesi de ayni kayittaki on kayit zorunluluguyla celisiyor.",
+        "kanit": "KAYIT 48 adim: 'Ulusal on proje basvurusu (PRODIS'te, kurulus bazli on kayittan sonra)'; 'Kabul davet yazisi aldiktan sonra 2. asama ulusal basvurusunu PRODIS'ten gonderdim'.",
+        "oneri": "Belge/adim listesinde kurum tipine bagli kosullu maddeler (kamu idaresi, vakif universitesi) profilin sirket turu Ltd/AS ise gizlensin; yol haritasi kartin [adim] maddelerinin sirasiyla kurulsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "'Diger ilgili programlar'da 1707, 1501, 1832, 1719, 1509 'uygun gorunuyor', 1702 (patent lisans, iki ortak sarti) 'sartli' etiketli: hicbiri Eurostars sorusuyla dogrudan ilgili degil. 1832'nin on kaydi kapanmis; 1707 siparis sozlesmesi ister; 1509 ve 1719 ayri EUREKA araclaridir (Eurostars'in kendi 1709 karti zaten ulusal fonlama kaynagi). Bu liste Eurostars basvurusunu yapacak kullaniciyi yanlis yonlendirebilir.",
+        "kanit": "KAYIT 59 CAGRI: durum on_kayit_kapandi; KAYIT 55: Musteri/Tedarikci ortak basvuru sarti.",
+        "oneri": "Soruda adi gecen tek program (Eurostars) varsa diger programlar yalnizca 'ilgili alternatif' basligi altinda en fazla iki tanesiyle sinirlansin; kapanmis cagrilar listeye girmesin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kisa cevap Turk ortak ust sinirlari (600.000 Avro / ortakli 850.000 Avro / kamu kurum payi %50 ve 300.000 Avro) gibi sermaye sirketi olmayan kurumlari ilgilendiren ayrintiyi one cikariyor; kullanici icin onemli olan 'tek Turk KOBI icin 600.000 Avro' ve '%75 hibe'. Destek oranini (%75 KOBI) Kisa cevap icinde yok. Ic jargon 'Muhatap Kurulus' aciklanmamis.",
+        "kanit": "KAYIT 48: 'KOBI %75, buyuk %60, kamu ... %100'.",
+        "oneri": "Kullanicinin kurum tipine uygun oran ve limit one alinsin (KOBI -> %75, 600.000 Avro); diger kurum tipi satirlari 'daha fazla' baglantisina alinsin; 'Muhatap Kurulus' kisaca tanimlansin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "Bolum 5'te Eurostars sorusuyla ilgisiz 'isletme sahibinin yasi' soruluyor (muhtemelen ADAY Halkbank Ilk Adim kredisinin yas kriteri yuzunden). Ayrica Almanya'nin Eurostars uye ulke olup olmadigi kaynakta yok.",
+        "kanit": "ADAY KAYIT 122 kurucu_yasi_max 29.",
+        "oneri": "Netlestirme sorulari yalniz kartta gosterilen programlarin kriterlerinden uretilsin; ADAY kayitlari sorulari tetiklemesin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "Gercek dunyada Almanya Eurostars-3 katilimci ulkelerindendir ve Eurostars projelerinde uluslararasi konsorsiyum koordinatorunun Ar-Ge yapan KOBI olmasi aranir; kaynakta Almanya adi ve koordinator sarti yoktur. Kesin hata degil, kaynak disi ek bilgi.",
+        "kanit": "-",
+        "oneri": "Ortak ulke uygunlugu sorulari icin sistem 'uye ulke listesi kayitta yok, EUREKA/Eurostars sitesinden teyit edin' demeli.",
+        "kaynak_disi": true
+      }
+    ],
+    "uzman_cevap": "Evet, yapi olarak olur: Eurostars-3 icin en az bir Turk ve bir Eurostars uyesi ulkeden ortagin katildigi uluslararasi bir Ar-Ge projesi gerekir; Ltd. Sti. oldugunuz icin sermaye sirketi olarak Yurutucu (Muhatap) Kurulus olabilirsiniz. Almanya'nin uye ulke listesinde olup olmadigi sistemde yok, Eurostars/TUBITAK duyurusundan teyit edin. Ulusal cagri butcesi 4.000.000 Avro; Turk proje ortagi butcesi en fazla 600.000 Avro (Turk kuruluslarin ortakli basvurusunda toplam 850.000 Avro), proje suresi en fazla 36 ay, KOBI icin destek orani %75. Cagrinin acik olup olmadigini ve son tarihini sistem dogrulayamiyor: 1709-EUREKA-EUROSTARS 2026/2 cagri duyurusu PDF'inden ve TUBITAK (444 66 90) uzerinden teyit edin. Surec: PRODIS'te kurulus bazli on kayit, ulusal on proje basvurusu, uluslararasi degerlendirme ve kabul daveti sonrasi 2. asama basvuru."
+  },
+  {
+    "n": 5,
+    "puan": {"dogruluk": 2, "soruya_odak": 1, "eksiksizlik": 2, "anlasilirlik": 2},
+    "bulgular": [
+      {
+        "tur": "olgu",
+        "ciddiyet": "kritik",
+        "aciklama": "Yanıt, kullanicinin sirketi olmadigi halde 1812 BiGG+ 2026-1 TOHUM YATIRIM cagrisini ('basvuruya acik, son gun 17.11.2026, 37 gun') kullanicinin acik cagrisi gibi sunuyor. Bu cagri yalnizca 1812 tohum oncesi yatirimi alip tamamlamis veya 1512 projesi tamamlamis, cagrida belirtilen tarihten sonra kurulmus sermaye sirketlerine yonelik (Asama 3). Sirketi olmayan kullanici bu cagriya basvuramaz. Kullanicinin asil yolu Asama 1 (hizlandirma programi, uygulayici kuruluslar) ve sonra Asama 2'dir; Asama 2 basvurulari (1812-2026-2) 30.09.2026'da kapanmis ve kaynakta CAGRI satiri var ama yanitta gosterilmemis. Kisa cevaptaki '2 tanesinin basvuru donemi su an acik' ifadesi yaniltici.",
+        "kanit": "KAYIT 49 CAGRI id 28: 'tohum oncesi yatirim almis ya da 1512 ile desteklenmis girisimler icin tohum yatirim cagrisi'; sart: 'Asama 3 ... sermaye sirketleri basvurabilir'; CAGRI id 3: 'Asama 2 basvurulari kapanis 2026-09-30, kapandi'.",
+        "oneri": "Programin birden fazla asamasi/cagrisi varsa, kullaniciya yalniz profilin asamasiyla (sirket yok -> Asama 1) eslesen cagrinin durumu gosterilsin; baska asamanin cagrisi 'sizin asamaniz icin degil' diye ayrilsin ve Asama 1 icin 'cagri takvimi uygulayici kuruluslarda, sistemde tarih yok' denilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "kritik",
+        "aciklama": "Soru: ne kadar yatirim, sartlar, sirket kurmadan basvuru. (1) Tutar: kaynakta BiGG Fonu hisse karsiligi yatirim 1.350.000 TL (2026, resmi BiGG portali) + GCIP ile 600.000 TL ek imkan var (KAYIT 174, 1512 kaydi; 1512'nin 1. asamasi artik 1812 cercevesinde yurutuluyor). Yanit 1812 icin 'Destek orani / ust limit: kayitta yok' diyor ve 1512 kartini yalniz 'kapali' satirinda, tutarsiz gosteriyor; kullanici tutari goremiyor (ozet.json beklenen: 1.350.000, 600.000). Hisse orani (en fazla %5) kritik kuralda var. (2) 'Sirket kurmadan basvurabilir miyim?' sorusunun dogrudan cevabi (Evet, Asama 1 icin sirket olmamasi gerekir; sirket Mukemmeliyet Muhru sonrasi kurulur) Kisa cevapta yok; Kisa cevap sayilar ve 'kayitta yok' ile bitiyor.",
+        "kanit": "KAYIT 174: 'BiGG Fonu hisse karsiligi yatirim: 1.350.000 TL (2026); +600.000 TL GCIP'; KAYIT 49 sart: 'Hizlandirma programina kabul tarihinde herhangi bir sermaye sirketinin ya da sahis isletmesinin ortagi olmamak'.",
+        "oneri": "Kapali/devredilmis programin (1512) tutar bilgisi, halefi (1812) tutar vermiyorsa 'son bilinen (1512 portal verisi): 1.350.000 TL; guncel tutari cagri metninden teyit edin' diye Kisa cevaba tasinsin. 'Sirketsiz basvuru' sorulari icin Kisa cevap 'Evet/Hayir + kosul' kalibinda ilk cumle olsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Ankara Kalkinma Ajansi 'Sosyal Girisimcilik Ekosistemi' karti 'Sartli' ve 'Karsiladigi ihtiyac: makine/tesis yatirimi' etiketiyle gosteriliyor. Kaydin basvuru sahipleri kooperatif, iktisadi isletmesi olan dernek/vakif, sosyal isletme ve (Oncelik 2) isletme kurmak isteyen dernek/vakiftir; sirketi olmayan bireysel yazilim girisimcisi icin uygun degil. Uygunluk satiri ayrica 'Sahis isletmesi / tek kisilik faaliyet olarak degerlendirildi' diyor; persona sirket_turu 'yok'.",
+        "kanit": "KAYIT 199 sartlari: 'Kooperatifler, iktisadi isletmesi olan dernek ve vakiflar, sosyal isletmeler'.",
+        "oneri": "Basvuru sahibi turu kayitta acik sayilmissa ve profil bu turlerden biri degilse program elenmeli; 'sirket yok' profili 'sahis isletmesi' olarak ele alinmasin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Yanit 4 eski 2012/3305 programini (Stratejik, Buyuk Olcekli, Genel, Bolgesel Tesvik) ayni kapanis metniyle ve '...Turkiye Yuzyili Kalkinma…' diye kesilmis cumleyle dort kez tekrar ediyor; ayrica 4 adet 9903 programi 'dusuk olasilik' diye veriliyor. BiGG sorusuyla ilgisiz ve kisa cevaptaki '5 program elendi' sayimini sisiriyor.",
+        "kanit": "Yanit 'Uygun olmayan ya da kapali programlar' bolumu: 4 satir ayni gerekce.",
+        "oneri": "Soruyla iliskisiz kapali/eleme satirlari ve 9903 'dusuk olasilik' blogu yalnizca soru yatirim tesvikiyle ilgiliyse gosterilsin; ayni gerekceli kayitlar tek satirda toplansin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "orta",
+        "aciklama": "HUKS skoru aciklamasi 'sermaye sirketi sarti arayan sanayi Ar-Ge programlari (or. 1507, 1501) su an kapali' diyor. Ayni veritabanindaki 3. senaryo kaynagina gore 1507 2026 2. cagri acik (kapanis 11.11.2026) ve 1501 2026 2. cagri acik (kapanis 26.10.2026). Bu cumle sirket kurmamis kullanici icin 'sirket kurarsaniz basvurabilirsiniz' secenegini de yanlis gizliyor veya 'kapali' kelimesini yanlis kullaniyor (muhtemel anlam: sirketsiz kullanici icin kapali).",
+        "kanit": "Yanit HUKS: 'sermaye sirketi sarti arayan sanayi Ar-Ge programlari (or. 1507, 1501) su an kapali'. Senaryo 3 kaynak: 1507 CAGRI durum acik; 1501 CAGRI durum acik.",
+        "oneri": "HUKS yorum metinlerindeki 'kapali' ifadesi cagri durumundan uretilsin ya da 'sizin icin ulasilamaz (sirket sarti)' diye yeniden yazilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Netlestirme sorusu yalnizca ortaklik sorusunu soruyor. BiGG Asama 1 icin esas sartlardan 'universite ogrencisi/mezunu olmak' ve 'daha once Teknogirisim/1512-1812 Asama 2 destegi almamis olmak' sorulmuyor.",
+        "kanit": "KAYIT 49 sart: 'universitenin herhangi bir on lisans, lisans, yuksek lisans veya doktora programina kayitli ogrenci veya mezun'.",
+        "oneri": "Programin profilde bulunmayan zorunlu sartlari (mezuniyet, onceki destek) 'Bilgi eksikligi' sorularina eklensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Kisa cevap kafa karistirici: '2 program degerlendirdim; 0 uygun, 2 sartli, 2 tanesinin basvuru donemi acik ... Öne cikan: 1812 ... - kayitta yok; kurumun guncel uygulama esaslarindan teyit edin 5 program elendi'. Cumleler birbirine yapismis ve hangi seyin 'kayitta yok' oldugu anlasilmiyor. Kartta Asama 1/2/3 sartlari birlikte yigilmis, kullanici kendi asamasini bulmak zorunda.",
+        "kanit": "Kisa cevap tam metni.",
+        "oneri": "Cok asamali programlarda profilin asamasini belirleyip yalnizca o asamanin sartlari ve tutarlarini one cikarsin; diger asamalar katlanmis blokta olsun.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Evet, sirket kurmadan basvurabilirsiniz; hatta BiGG Yatirim (1812) Asama 1 icin hizlandirma programina kabul tarihinde herhangi bir sermaye sirketinin veya sahis isletmesinin ortagi olmamaniz gerekir, sirketi Mukemmeliyet Muhru aldiktan sonra kurarsiniz. Basvuru icin universite ogrencisi veya mezunu olmaniz ve daha once Teknogirisim ya da 1512/1812 Asama 2 destegi almamis olmaniz gerekir. Tutar: 1812 kaydinda rakam yok; BiGG portali verisine dayanan 1512 kaydina gore BiGG Fonu hisse karsiligi 1.350.000 TL (2026) + GCIP ile 600.000 TL ek imkan; fon payi en fazla %5 hisse, guncel tutar ve oran cagri metninden teyit edilmeli. Su an acik gorunen '2026-1 Tohum Yatirim Cagrisi' (17.11.2026) sirketli Asama 3 girisimlere yonelik, sizin icin degil; Asama 2 basvurulari 30.09.2026'da kapandi. Asama 1 cagrilari uygulayici kuruluslar uzerinden aciliyor, tarihleri sistemde yok: TUBITAK 444 66 90."
+  },
+  {
+    "n": 6,
+    "puan": {"dogruluk": 4, "soruya_odak": 3, "eksiksizlik": 2, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "tuzak",
+        "ciddiyet": "orta",
+        "aciklama": "Kisa cevap 'Girisimci Destek Programi sizin icin uygun degil: KOSGEB programlari kayitli bir isletme gerektirir' dogru yonde ve tuzagi (sirketsiz KOSGEB) yakaliyor. Ancak gerekce programa ozgu degil, genel ('KOSGEB programlari ...'). Kayittaki gercek sartlar: Is Kurma icin KOSGEB destekli sektorde 0-1 yas isletme, Is Gelistirme icin NACE C/61/62/63/72'de 0-3 yas isletme, KOSGEB veri tabanina kayitli ve aktif olma, ortaklik payi en az %50, munferiden temsil yetkisi. Kullanici 'kurulduktan sonra' ne olur diye dusunecektir ama yanit bunu soylemiyor.",
+        "kanit": "KAYIT 1 sartlari: 'KOSGEB veri tabanina kayitli ve aktif olmali', '0-1 yas isletme'.",
+        "oneri": "Eleme gerekcesi programin kendi alintili sartindan uretilsin (ornek: 'Is Kurma Destegi 0-1 yas, KOSGEB veri tabanina kayitli isletme ister; henuz isletmeniz yok').",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "kritik",
+        "aciklama": "Kullaniciya en degerli bilgi eksik: (a) sirket kurduktan sonra yol acik (NACE 62.01 Is Gelistirme sektoru icinde): Is Kurma Destegi sahis 10.000 TL / sermaye sirketi 20.000 TL (genc/kadin +10.000), personel giderleri 36 ay asgari ucret kadar, Is Gelistirme 1.500.000 TL'ye kadar (%80 GERI ODEMELI). (b) KRITIK SIRALAMA CELISKISI: BiGG (1812 Asama 1) icin hizlandirma programina kabul tarihinde herhangi bir isletmenin ortagi olmamak gerekiyor; yani KOSGEB icin sirket kurmak BiGG yolunu kapatir. Kaynak 1512 kaydi acikca 'hangi kapidan gireceginize sirket kurmadan ONCE karar vermelisiniz' diyor. Yanit bu secimi anlatmiyor. (c) Is Gelistirme 2026/2 donemi 8 Mayis 2026'da kapandi, takvim yilda iki donem; bu da soylenmiyor.",
+        "kanit": "KAYIT 174: 'sirket kurulduktan SONRA bu programa basvurulamaz ... hangi kapidan gireceginize sirket kurmadan ONCE karar vermelisiniz'; KAYIT 1 CAGRI id 8: kapandi (08.05.2026).",
+        "oneri": "Kullanici 'sirket yok' profilinde ve sorunun cevabi 'hayir' ise yanit otomatik 'Hangi sirayla ilerleyebilirsiniz' kisa blogunu iceren sablon kullansin: (1) sirketsiz secenek (BiGG), (2) sirket kurunca KOSGEB secenegi, (3) bu iki yolun birbirini dislama kurali. Kaynakta karsilastirma metni varsa kullanilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Yanitin cogu soruyla ilgisiz: 1812 karti, Ankara Sosyal Girisimcilik karti, HUKS skoru, KOSGEB Yurt Disi Pazar Destegi, mevzuat notu, Ankara Tarim Il Mudurlugu iletisimi. Sorunun cevabi tek cumle iken kullanici uzun bir sayfa tarayacak. Ankara Sosyal Girisimcilik karti dernek/vakif/kooperatif/sosyal isletme ister; bu kullanici icin uygun degil ve 'Sahis isletmesi / tek kisilik faaliyet olarak degerlendirildi' ibaresi yanlis (sirket_turu: yok).",
+        "kanit": "KAYIT 199 sartlari: 'Kooperatifler, iktisadi isletmesi olan dernek ve vakiflar, sosyal isletmeler'.",
+        "oneri": "Dar 'evet/hayir' sorularinda cevap + yalnizca 1-2 alternatif yol (burada BiGG ve sirket kurma sonrasi KOSGEB) gosterilsin; uygun olmayan sosyal girisimcilik gibi programlar elenmeli.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "orta",
+        "aciklama": "1812 karti burada da 2026-1 TOHUM yatirim cagrisini (17.11.2026) kullanicinin acik cagrisi gibi gosteriyor; bu cagri sirketli Asama 3 girisimler icin. Ayrica HUKS satirindaki '1507, 1501 su an kapali' ifadesi veritabaninda acik olan cagrilarla celisiyor (1507 kapanis 11.11.2026, 1501 kapanis 26.10.2026, bkz. senaryo 3 kaynagi).",
+        "kanit": "KAYIT 49 CAGRI id 28 notlar: '1812 tohum oncesi yatirim almis ya da 1512 ile desteklenmis girisimler icin tohum yatirim cagrisi'.",
+        "oneri": "Asama/cagri-profil eslesmesi ve HUKS 'kapali' metninin cagri durumuyla uyumu kural olarak denetlensin (bkz. senaryo 5).",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "KOSGEB kaydi 'son 3 yilda baska bir isletme sahibi/ortagi olmama' sartinin resmi sayfada dogrulanamadigini not ediyor; yanit bu belirsizligi hic gostermiyor. Kullanici icin kritik bir kosul olabilir (444 1 567'ye sorulmali).",
+        "kanit": "KAYIT 1 DURUM: 'DOGRULANAMAYAN BIR SART: ... son 3 yilda baska bir isletme sahibi/ortagi olmama ... 444 1 567'den sorulmali'.",
+        "oneri": "Kayitta 'dogrulanamayan sart' notu varsa Kisa cevaba 'su sart dogrulanamadi, KOSGEB'e sorun' ibaresi tasinsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "KGF Girisimci Destek Kredi Faiz Programi da 'uygun degil: KGF programlari kayitli bir isletme gerektirir' diye eleniyor; oysa asil neden o programin once KOSGEB Is Gelistirme onayi istemesi. Genel gerekce yine programa ozgu degil.",
+        "kanit": "KAYIT 170 sart: 'Girisimci Destek Programi Is Gelistirme Destegi basvurusu yapip KOSGEB tarafindan uygun bulunmus olmak'.",
+        "oneri": "Bagimli programlar icin eleme nedeni bagimliligin kendisi olsun ('once KOSGEB Is Gelistirme onayi gerekir').",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Hayir: KOSGEB Girisimci Destek Programi icin KOSGEB veri tabanina kayitli ve aktif bir isletmeniz olmali; Is Kurma Destegi 0-1 yas, Is Gelistirme Destegi (NACE 62 bilgisayar programlama bu kapsamda) 0-3 yas isletmeler icindir, ayrica girisimcinin isletmedeki payi en az %50 ve munferiden temsile yetkili olmasi gerekir. Isletme kurduktan sonra Is Kurma Destegi sahis isletmesi icin 10.000 TL, sermaye sirketi icin 20.000 TL (genc/kadin +10.000 TL) ve Is Gelistirme Destegi 1.500.000 TL'ye kadar ama GERI ODEMELIDIR; 2026/2 Is Gelistirme cagrisi 08.05.2026'da kapandi, yilda iki donem acilir. Onemli sira: BiGG (1812) Asama 1 icin hizlandirma programina kabul tarihinde herhangi bir isletmenin ortagi olmamak gerektiginden, sirket kurmak BiGG yolunu kapatir; once hangi yola gireceginize karar verin. Dogrulanamayan olasi ek sart icin KOSGEB'i (444 1 567) arayin."
+  }
+]

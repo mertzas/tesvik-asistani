@@ -22,7 +22,7 @@ email-validator>=2.1
 python-dotenv>=1.0
 alembic>=1.13
 apscheduler>=3.10
-anthropic>=0.40
+openai>=1.40  # isteğe bağlı dış dil modeli (Gemini/OpenAI uyumlu); Anthropic kullanılmaz
 
 # Yalnizca PostgreSQL'e baglanacaksaniz gerekli (yerel gelistirmede SQLite
 # kullanildigi icin varsayilan olarak kurulmaz - Windows'ta derleme icin

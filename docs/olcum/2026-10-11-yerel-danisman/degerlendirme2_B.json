@@ -1,0 +1,412 @@
+[
+  {
+    "n": 7,
+    "puan": {"dogruluk": 4, "soruya_odak": 2, "eksiksizlik": 3, "anlasilirlik": 2},
+    "bulgular": [
+      {
+        "tur": "odak",
+        "ciddiyet": "kritik",
+        "aciklama": "Kullanici uc somut sey sordu: SGK isveren destegi kac yil, faiz destegi var mi, asgari yatirim tutari. Kisa cevap bunlarin hicbirini soylemiyor; program sayisi ve basvuru acik/kapali sayimi veriyor. Uc cevap da yalniz Hedef Yatirimlar kartindaki uzun «Destek unsurlari» satirinin icine gomulu.",
+        "kanit": "Kisa cevap maddeleri: «4 program profilinize kapali degil», «Basvurusu su an acik ya da yaklasan: 1», «1 program size kapali». Cevap kaynakta: DESTEK UNSURLARI -> «sigorta primi isveren hissesi: %100, 12 yil (MADDE 18, 6. bolge)»; «faiz/kar payi destegi: repo oraninin %25'i, azami 12.5 puan ... azami 5 yil (MADDE 15; yalnizca 4, 5, 6. bolgeler)»; «asgari sabit yatirim: 6.000.000 TL».",
+        "oneri": "Soruda «kac yil/ay», «var mi», «asgari tutar», «limit» gibi niyet kaliplari yakalaninca ilgili DESTEK UNSURLARI ogelerini Kisa cevabin ilk satirlarina kirilimli yaz: «SGK isveren hissesi %100, 12 yil (6. bolge); faiz destegi VAR (repo %25, azami 12,5 puan, kredinin %70'ine kadar, 5 yil); asgari sabit yatirim 6 milyon TL (EK-3'te ayri belirtilmedikce)». Program sayimi ve acik/kapali ozeti sonraya kalsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Van 6. bolgede oldugu icin Oncelikli Yatirimlar Teşvik Sistemi 9/1-c bendinden (6. bolge yatirimlari) SARTLI gorunuyor ve kaynakta vergi indirimi yatirima katki orani %30 (Hedef Yatirimlar'da %20). Yanit Oncelikli'yi yalniz «Diger ilgili programlar» altinda tek satirla gecmis; destek farki, 6. bolge yolunun otel icin ikinci ve daha yuksek katkili secenek oldugu soylenmemis.",
+        "kanit": "Kaynak KAYIT 181: «9903 ON DEGERLENDIRME: SARTLI — 6. bolge yatirimi (musteharrik haric); ayrica EK-3: NACE 55.10 ... (MADDE 5/1, 9/1-c)» ve «yatirima katki orani %30». Yanit satiri: «Oncelikli Yatirimlar ... profilinize gore engel yok — sartlari teyit edin».",
+        "oneri": "Ayni profilde birden fazla 9903 programi SARTLI/uygun ise, destek unsurlarini yan yana (vergi indirimi katki orani, SGK, faiz, makine) kisa bir karsilastirma blogunda goster; farkli olan kalemi (katki %20 vs %30) vurgula. 'Diger ilgili' tek satiri yalniz ilgisiz programlara birak.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Yerel Kalkinma Hamlesi icin kaynaktaki on degerlendirme BELIRLENEMEDI (il bazli konu listesi tebligi sistemde yok) iken yanitta «profilinize gore engel yok — sartlari teyit edin» yaziyor. Kart etiketi ile on degerlendirme celisiyor; ayrica programin en yuksek destekli (katki %50, faiz %40/20 puan, makine destegi) oldugu hic anlatilmiyor.",
+        "kanit": "Kaynak KAYIT 178: «9903 ON DEGERLENDIRME: BELIRLENEMEDI — desteklenecek konular il bazli 'yerel yatirim konulari listesi' ile belirlenir ... ilinizin listesini kalkinma ajansindan teyit edin». Yanit: «Yerel Kalkinma Hamlesi Programi ... — profilinize gore engel yok — sartlari teyit edin».",
+        "oneri": "9903 on degerlendirme sonucu BELIRLENEMEDI ise kart/liste etiketi de «Belirlenemedi — ilinizin yerel yatirim konulari listesini kalkinma ajansindan teyit edin» olsun; 'engel yok' etiketi yalniz on degerlendirme SARTLI/UYGUN ise kullanilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "«Basvurusu su an acik ya da yaklasan: 1» ifadesi kayitlarla celisiyor: ayni yanitta Hedef, Oncelikli ve Yerel Kalkinma Hamlesi'nin uc'unun CAGRI durumu «Basvuruya acik» (31.12.2030).",
+        "kanit": "Kaynak: CAGRI id 12, 13, 10 hepsi durum «acik», kalan_gun 1542. Yanit satir 3 «Basvurusu su an acik ya da yaklasan: 1.» ama satir 62-63 iki 9903 programi daha 'basvuruya acik' diyor.",
+        "oneri": "Acik/yaklasan sayimini kartlarda gosterilen ve 'diger ilgili' programlarin CAGRI durumundan hesapla; ya da sayim cumlesini tamamen kaldir.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Soru yatirim tesvik belgesi (9903) ile ilgili iken ana kartlarin 3'u KGF kredi kefalet urunu (Girisimci Destek, TOBB Nefes, TKYB) ve diger listede KOSGEB Yapay Zeka Kredisi var. Girisimci Destek urunu kaynaga gore 'isletme sermayesi' kredisi ve KOSGEB Girisimci Destek onayi gerektiriyor; otel yatirimi icin uygun degil ama yanitta bu belirtilmemis. Gurultu, 9903 icinde faiz destegi cevabini daha da gommus. Yanit 'faiz destegi' ifadesini KGF 'Kredi Faiz Programi' ile de eslestirmis olabilir.",
+        "kanit": "Kaynak KAYIT 170: «girisimcilere isletme sermayesi olarak kullandirilacak krediler». Yanit: «Karsiladigi ihtiyac: kredi/finansman» ve «teyit: Belirttiginiz hedeflerle dogrudan eslesme bulunamadi».",
+        "oneri": "Sorunun odagi tek bir sistem (9903 tesvik belgesi) ise ana kart sayisini o aileyle sinirla; 'dogrudan eslesme bulunamadi' notunu tasiyan genel KGF urunlerini 'Diger ilgili' kisa listesine al. Kredi urunlerinde vade/amac (isletme sermayesi mi yatirim mi) bilgisini kartta goster ki yatirim hedefiyle uyumsuzluk gorulsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "EK-3 kalem etiketi ortasindan kesik: «... (Otel, Tatil Koyu, Butik Otel ve Ozel'». Kalemin sayisal esigi (50 oda ve uzeri) var ama 'teyit etmeniz gereken sartlar' listesinde oda sayisina dair soru yok, genel EK-3 sarti var. Ayrica 'Sizin icin' satirinda ayni ON DEGERLENDIRME cumlesi iki kez uc uca yazilmis.",
+        "kanit": "Yanit satir 19: «Karar metnine gore on degerlendirme: SARTLI — NACE 55.10, EK-3'te '55.1 Oteller ... 50 oda ve uzeri (Otel, Tatil Koyu, Butik Otel ve Ozel' kalemine giriyor ...; 9903 on degerlendirmesi: SARTLI — NACE 55.10, EK-3'te ... (MADDE 5/1, 10)» (ayni cumle tekrar).",
+        "oneri": "Kalem etiketini kesmeden tam yaz ya da kisaltirken '...' ile belirt; etikette sayisal esik (oda/kapasite/dekar) varsa Netlestirme bolumune dogrudan soru olarak ekle: «Tesisiniz en az 50 odali mi?». Ayni degerlendirme metnini bir kez yaz.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Persona KOBI (kucuk isletme) iken «KOBI degilseniz ... ekosistem gelistirme plani %2» ve finansal kiralama 3 milyon TL kurallari kartta yer aliyor; sorulan sorularla ilgisiz ve profile uygulanmiyor.",
+        "kanit": "Yanit 'Kurallar (kayittan)' bolumu; yanit Olcek satiri: «kucuk isletme».",
+        "oneri": "Profil KOBI ise 'KOBI degilseniz' kosullu kurallarini gizle; finansal kiralama kuralini yalniz kullanici kiralama sordugunda goster.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "orta",
+        "aciklama": "Iletisim satirinda otel yatirimi icin ilgisiz olan Van Tarim ve Orman Il Mudurlugu yer aliyor; kaynakta bulunan KOSGEB Van Mudurlugu (telefon/adres) kullanilmamis ve 9903 icin Bakanlik/E-TUYS iletisim bilgisi yok.",
+        "kanit": "Yanit Yol haritasi 5: «Van Tarim ve Orman Il Mudurlugu: iletisim bilgisi icin resmi sayfa». Kaynak son satirlar: «KOSGEB VAN MUDURLUGU: Telefon 0 (432) 486 55 10, Adres: Bahcivan Mah. ...».",
+        "oneri": "Iletisim satirini yanitta adi gecen kurumlara gore uret (KGF, KOSGEB + il mudurlugu). Tarim ve Orman il mudurlugunu yalniz tarim sektoru/programlarinda goster.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "Ic jargon ve ham alan adi sizintilari: «Hedefler: yatirim» (ASCII ham deger), «panelde Kontrol listesi/Taslak» yonlendirmeleri sohbet cevabinda anlamsiz, basvuru satirlari yarim kesik: «(KOBI bankaya kredi basvurusu yapar, banka ... — https:».",
+        "kanit": "Yanit satir 13, 52, 86, 88.",
+        "oneri": "Profil etiketlerini Turkcelestir (yatirim -> yatirim), 'panelde' yonlendirmelerini yalniz arayuz baglaminda ekle, kirpilan alintilari cumle sonunda kes (… yerine tam cumle ya da tamami).",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Hedef Yatirimlar kartindaki sayilar kaynakla birebir dogru (12 yil, %100; faiz %25/12,5 puan/5 yil/%70; 6 milyon TL; 31.12.2030, 1542 gun). 9903 on degerlendirmesi SARTLI (hayir/evet demeden) ve muharrik/harcama oncesi basvuru uyarisi dogru kuruluyor; 2012/3305'in yururlukten kalktigi notu faydali.",
+        "kanit": "Kaynak KAYIT 180 DESTEK UNSURLARI satiri ile yanit satir 21 ayni.",
+        "oneri": "Bu dogru ozeti koruyun; yalnizca Kisa cevaba tasiyin.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Van 6. bolgede oldugu icin kaynaktaki 9903 destek unsurlari soyle: SGK isveren hissesi %100 ve 12 yil (isci hissesinde asgari ucrete tekabul eden kisim 10 yil); faiz/kar payi destegi VAR — repo oraninin %25'i, azami 12,5 puan, kredinin sabit yatirimin %70'ine kadar olan kismi icin en cok 5 yil (yalniz 4., 5., 6. bolgeler); asgari sabit yatirim, EK-3'te ayri belirtilmedikce 6 milyon TL. Otel (NACE 55.10) EK-3'te '55.1 Oteller ... 50 oda ve uzeri' kalemine giriyor; on degerlendirme SARTLI oldugundan tesisin oda sayisini ve EK-3 sartlarini teyit etmelisiniz. Hedef Yatirimlar'da vergi indirimi yatirima katki orani %20, Van 6. bolge oldugu icin Oncelikli Yatirimlar'a da girebilirsiniz ve orada katki orani %30 gorunuyor; iki sistemin unsurlarini karsilastirip secin. Muracaat 31.12.2030'a kadar E-TUYS'ten yapilir, muracaat tarihinden once yapilan harcamalar kapsam disidir, bu yuzden harcamadan once basvurun. Yerel Kalkinma Hamlesi icin Van'in yerel yatirim konulari listesini kalkinma ajansindan teyit edin."
+  },
+  {
+    "n": 8,
+    "puan": {"dogruluk": 3, "soruya_odak": 1, "eksiksizlik": 2, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "tuzak",
+        "ciddiyet": "kritik",
+        "aciklama": "Soru bir tutar iddiasi iceriyor («hala yillik 15.102 TL mi») ve «hangi Karar gecerli» diye soruyor. Yanit 15.102 TL'yi hic ele almiyor: ne 'bu tutar kayitlarimda yok' ne 'guncel 2026 tutarlari sunlar' diyor; Karar sorusuna da dogrudan 'gecerli olan 5986 sayili Karar ve 13.04.2026 Genelgesi' diye cevap vermiyor. Kullanici sorusunun cevabini cikaramaz.",
+        "kanit": "Kaynak dosyada 15.102 ifadesi hicbir kayitta gecmiyor; guncel tutarlar: m.9 komisyon 3.698.274 TL, m.8 cevrim ici magaza 7.396.548 TL, Durum notu: «Genelge 13.04.2026 ... 2026 ust limit tablosu». Yanit Kisa cevabi yalniz: «Destek suresi on onay tarihini izleyen ayin ilk gunu baslar ...».",
+        "oneri": "Soruda sayisal bir iddia (X TL, %Y, N ay) tespit edilirse bu degeri kayit metninde ara; yoksa «Bu tutar kayitlarimda yok; kayitli guncel 2026 tutarlari: ...» diye ac. 'Hangi Karar/gecerli mi' sorularinda Durum notundaki Karar madde numarasi ve Genelge tarihini ilk cumlede yaz (5986 sayili Karar m.4/6/8/9 + 13.04.2026 Genelge; marka/kira/pazar arastirmasi icin 5973 sayili Karar).",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "kritik",
+        "aciklama": "Kullanici pazaryeri UYELIK gideri soruyor; yanit one cikan olarak komisyon gideri desteğini (m.9) veriyor. Kaynakta Dijital Pazaryeri Tanitim kaydi acikca komisyon, uyelik ve diger ucretleri kapsam disi sayiyor; mağaza hesabi acilisi, tasarim ve 'yillik odemeler' ise Cevrim Ici Magaza (m.8) kaydinda. Yanit ne bu ayrimi yapıyor ne m.8'i ana kart olarak sunuyor.",
+        "kanit": "Kaynak KAYIT 192: «komisyon, uyelik ve diger ucretler kapsam disidir (Genelge m.13)». KAYIT 195: «magaza hesabi acilisi, tasarim, yillik odemeler ... desteklenir; satis komisyonu ve depozito kapsam disi». Yanitta m.8 yalniz 'Diger ilgili programlar' tek satiri.",
+        "oneri": "Soruda 'uyelik', 'magaza', 'yillik odeme' gecince m.8 kaydini one al; m.9 (komisyon) ve m.4 (reklam) kartlarina 'uyelik ucreti bu kapsamda degil' notu ekle. Ana kart secimini sorudaki gider kalemine gore yap.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "kritik",
+        "aciklama": "Cevrim Ici Magaza ve E-Ticaret Paydasi Destegi (m.8) icin kayitta yapilandirilmis sart var: onceki yil GB+BGB e-ticaret ihracati 1.000.000 ABD dolarindan fazla olmali. Persona yillik cirosu 4.000.000 TL, 3 calisan; toplam cirosu dahi bu esigi karsilamiyor (esik ancak kur 4 TL altindaysa mumkun olurdu). Yanit yine de «profilinize gore engel yok» diyor ve esigi hicbir yerde yazmiyor.",
+        "kanit": "Kaynak KAYIT 195: «Uygunluk kriterleri: ... min_onceki_yil_ihracat_usd: 1000000» ve sart «Onceki yil GB + BGB (e-ticaret) ihracat toplami 1.000.000 ABD dolarinin uzerinde olmali». Persona: yillik_ciro 4000000.0 TL. Yanit satir 80: «Cevrim Ici Magaza ... — profilinize gore engel yok — sartlari teyit edin».",
+        "oneri": "min_onceki_yil_ihracat_usd gibi sayisal esigi olan kayitlarda esigi kartin ilk satirina yaz; persona cirosu (kur gerektirmeyecek kadar acik sekilde) esigin altindaysa etiketi «Uygun gorunmuyor — esik: 1.000.000 USD onceki yil e-ticaret ihracati» yap; ciro/ihracat karsilastirmasi belirsizse 'Belirlenemedi + esik' goster. 'Engel yok' etiketi yalniz esigin asilabildigi durumda kullanilsin.",
+        "kaynak_disi": true
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Netlestirme sorulari yanlis secilmis: profilde zaten 'limited sirket' yazarken «Sirket olmak (TTK md.124 ...) sartini saglıyor musunuz?» soruluyor (iki kez); gercek bilinmeyenler (Madrid'e taraf ulkede tescilli yurt disi marka, hangi pazaryeri/hedef ulke, ihracatci birligi uyeligi) sadece ilk ikisinden biri olarak geciyor. Ayrica 'ver 2 sart daha: panelde programin Kontrol listesi'nde' cumlesi yarim ve tüm sartlari kullanicidan gizliyor.",
+        "kanit": "Yanit Bolum 5 madde 1 ve 3: «Sirket olmak: 6102 sayili TTK md.124'teki sirketler ... sartini saglıyor musunuz?»; persona sirket_turu: limited. Yanit satir 28: «ve 2 sart daha: panelde programin Kontrol listesi'nde».",
+        "oneri": "Profil alanindan karsilanan sartlari (sirket turu, olcek, NACE) 'karsilaniyor' diye isaretle ve Netlestirme'ye koyma. Netlestirme'yi elenme riski tasiyan, profilde olmayan sartlardan sec: Madrid marka, hedef ulke pazaryeri, ihracatci birligi, konsorsiyum. 'N sart daha' yerine sartlari listele ya da sayiyi ve konusunu soyle.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Kisa cevaptaki 'One cikan' satiri program adindan sonra yalniz basvuru-donemi cumlesini (destek ne zaman baslar, odeme basvurusu 6 ay) veriyor; tutar bilgisi bir sonraki satirda ve «Hesaplama:» etiketi ayni satira yapisik, kullanicinin sordugu limit/Karar bilgisi degil.",
+        "kanit": "Yanit satir 4-5: «Oner cikan: ... Destek suresi on onay tarihini izleyen ayin ilk gunu baslar; ...» ve «Destek: %50; 2026 sirketler icin yillik 3.698.274 TL; 3 yil Hesaplama: Komisyon giderinin %50'si ...».",
+        "oneri": "'One cikan' satirinda programin adi + temel tutar/oran/sure ver; basvuru donemi cumlesini ayri satira al; 'Tutar/oran' ile 'Hesaplama' alanlarini cumle sinirinda ayir.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Kullanicinin sordugu gider kalemine (magaza/uyelik/yillik odeme) en yakin program (m.8) ana kartlarda yok; yerine Yurt Disi Marka Tescil ve Yurt Disi Birim Kira (magaza/depo/ofis, birim basina 9,8 milyon TL) tam kart olarak verilmis. 3 calisanli mikro e-ticaret icin birim kira onceligi dusuk; sira soru baglamina gore kurulmamis.",
+        "kanit": "Yanit Bolum 2 ana kartlar: m.9, m.4, 5973 m.4, 5973 m.11; 'Diger ilgili': m.6, m.8, 5973 m.3, m.6.",
+        "oneri": "Kartlari (a) soru anahtar kelimesiyle eslesme, (b) persona esik uygunlugu, (c) diger kosullar sirasina gore sirala. Esiği asilamayan programi 'ana kart' yapma.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Dijital Pazaryeri Tanitim destegi ust limiti «2026 yillik ust limit sirketler icin 36.993.646 TL» olarak yazilmis; kaynakta 'sirketler, kademeye gore' ibaresi var. Mikro isletmeye bu rakam tavan gibi sunuluyor ve kademe kosulu atlanmis.",
+        "kanit": "Kaynak KAYIT 192: «2026 yillik ust limit (sirketler, kademeye gore): 36.993.646 TL». Yanit: «2026 yillik ust limit sirketler icin 36.993.646 TL».",
+        "oneri": "'Kademeye gore' ibaresini koru ve kademe olcutu kayitta varsa goster; yoksa 'sirketin kademesine gore degisir' de.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Hedef ulke kosulu tum e-ihracat desteklerinin ozunde (oran artisi, m.9 kapsam) ama yanitta 35 ulkelik EK-Hedef Ulkeler Listesi hic yok ve kullaniciya hangi pazaryeri/ulkede satis yaptigi sorulmuyor. Ayrica 13.04.2026 Genelgesi ve 2026 ust limit tablosuna atif yok.",
+        "kanit": "Kaynak KAYIT 194/192: «Hedef ulkeler (EK-Hedef Ulkeler Listesi, 35 ulke): ABD, Almanya, ...». Yanit yalniz «Pazaryeri hedef ulkelerden birinde olmali».",
+        "oneri": "Hedef ulke sarti iceren kartlarda listeyi (ya da 'hedef ulkeler listesi icin Genelge eki') ver ve Netlestirme'ye «Hangi ulkelerde hangi pazaryerinde satiyorsunuz?» ekle.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Sayilar kaynakla uyumlu (3.698.274, 36.993.646, 9.862.972, 7.396.548 TL; %50/%70; 3/4 yil); 'on onaydan once yapilan harcama desteklenmez' uyarisi dogru, Madrid markasi ve 5973 m.4'e yonlendirme dogru. Birlikte kullanim blogu dogru fakat dort kez ayni cumleyi tekrar ediyor.",
+        "kanit": "Kaynak limitleri ile yanit kartlari ayni; yanit satir 85-88.",
+        "oneri": "Birlikte kullanim satirlarini ayni metin ise tek satirda grupla.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Kayitlarimda yillik 15.102 TL'lik bir pazaryeri uyelik gideri destegi yok; bu tutari dogrulayamiyorum. E-ihracat destekleri 5986 sayili Karar (m.4, 6, 8, 9) ile Ticaret Bakanligi'nin 13.04.2026 tarihli Genelgesi ve 2026 ust limit tablosuna gore yurur; marka, birim kira ve pazar arastirmasi icin 5973 sayili Karar var. Mağaza hesabi acilisi ve yillik odemeler Cevrim Ici Magaza destegi (m.8) kapsaminda (2026 yillik ust limit 7.396.548 TL) ancak onceki yil e-ticaret ihracatinin 1.000.000 ABD dolarini asmasi sarti var; 4 milyon TL cirolu mikro isletmeniz icin bu esik uygun gorunmuyor. Dijital tanitim destegi komisyon, uyelik ve diger ucretleri kapsam disi birakiyor; m.9 ise yalniz hedef ulkelerdeki pazaryeri komisyonunu %50, yilda en cok 3.698.274 TL ile 3 yil destekliyor. Her programda on onay, ihracatci birligi uyeligi, DYS kaydi ve Madrid Sistemi'ne taraf bir ulkede tescilli marka gerekiyor; hangi pazaryeri ve ulkede sattiginizi ve markanizi yazarsaniz netlestirelim."
+  },
+  {
+    "n": 9,
+    "puan": {"dogruluk": 4, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Kisa cevap 'baslica teyit sarti' olarak KOBI olmayi seciyor; persona zaten kucuk isletme (KOBI). Programi gercekten eleyebilecek sartlar (gecerli Teknogirisim Rozeti, GO Dijital Cuzdan hesabi, bankadan Kesin Teminat Mektubu) kisa cevapta ya hic yok ya gerisinde. 'Kimler basvurabilir' listesi 5 sarttan yalniz 3'unu veriyor; Netlestirme'de rozet sorusu yok, KOBI sorusu var.",
+        "kanit": "Yanit satir 4: «teyit etmeniz gereken baslica sart: ... KOBI olmak». Satir 7 listesi: KOBI, KOSGEB kaydi, Rozet. Kaynak: 5 sart (KOBI, KOSGEB kaydi, Rozet, GO Dijital Cuzdan, KTM). Bolum 5 madde 2: «KOBI olmak sartini saglıyor musunuz?».",
+        "oneri": "Profilden karsilanan sartlari (olcek) teyit listesinden dus ve 'karsilaniyor' diye not et; teyit/Netlestirme'yi profilde bilinmeyen ve elenme riski yuksek sartlara (Teknogirisim Rozeti, GO Dijital Cuzdan, teminat mektubu) ver. Kisa cevaptaki 'Kimler basvurabilir' ozetinde tum zorunlu sartlari say.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Kapasite Gelistirme Destek Paketi (KGF) kartinda basvuru durumu 'KOSGEB basvurulari donemsel cagriyla alinir' deniyor; oysa kaynaktaki ust program (KOSGEB Kapasite Gelistirme Destek Programi) CAGRI kaydi 2026 yili 2. donem 30.06.2026'da KAPANDI. KGF paketi KOSGEB onayi sart kosuyor, yani bugun fiilen basvuruya kapali. Yanit 'engel yok' diyor ve kapanisi soylemiyor. (Paket ayrica hizli buyume/Rozet sarti iceriyor.)",
+        "kanit": "Kaynak KAYIT 8 CAGRI: «2026 yili 2. basvuru donemi ... kapanis 2026-06-30 ... durum: kapandi». Yanit satir 36: «KAPASITE GELISTIRME DESTEK PAKETI (KGF) — profilinize gore engel yok ... KOSGEB basvurulari donemsel cagriyla alinir».",
+        "oneri": "KOSGEB onayina bagli KGF paketlerinde ust programin CAGRI durumunu miras al: «KOSGEB cagrisi su an kapali (son donem 30.06.2026'da bitti); yeni donem duyurusu beklenmeli». Boylece 'engel yok' yerine 'su an basvurulamaz' etiketi cikar.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Tek bir programi adiyla soran bir soruda 'Diger ilgili programlar' bolumunde 5 program var ve hepsi 'engel yok' etiketli: Kuresel Rekabetcilik, Kapasite Gelistirme, TUBITAK Transfer Odemeleri (TUBITAK destek karari sart), Ziraat Yesil Ihracat (net ihracatci %110 ve Greendeks C sart), Halkbank Ilk Adim (sahip/ortak <=29 yas). Kilit sartlari profilden bilinmiyor; 'engel yok' fazla iyimser, soru ile de ilgisiz.",
+        "kanit": "Yanit satir 35-39; kaynak KAYIT 152, 168, 122 sartlari.",
+        "oneri": "Soru tek bir adli programi hedefliyorsa 'Diger ilgili' blogunu 0-2 satira dusur. Kilit esigi/on kosulu (yas, net ihracatci, TUBITAK proje karari) profilden dogrulanamayan programlari 'Belirlenemedi' ile isaretle.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "dusuk",
+        "aciklama": "Darbogazlar bolumunde programin gercek darbogazlari (Teknogirisim Rozeti, GO Dijital Cuzdan, banka Kesin Teminat Mektubu ve maliyeti, hizmet saglayici listesi kisiti) yok; yalnizca 'KOSGEB veri tabani kaydi ve KOBI Bilgi Beyannamesi' var. 'KOBI Bilgi Beyannamesi' kayitta gecmiyor (kayit 'isletme beyani' diyor).",
+        "kanit": "Yanit satir 42: «KOSGEB veri tabani kaydi ve KOBI Bilgi Beyannamesi». Kaynak KAYIT 2: «isletme beyani guncel ve aktif».",
+        "oneri": "Darbogazlari kaydin [sart]/[belge]/[kural] ogelerinden uret; genel on-kosul tablosundan gelen metinleri kayitla dogrula, kayitta olmayan terimi (KOBI Bilgi Beyannamesi) kullanma.",
+        "kaynak_disi": true
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Netlestirme madde 1 «Isletme sahibinin ya da en az %50 hissedarin yasi nedir?» sorulan programla ilgisiz (yas siniri Halkbank Ilk Adim'a ait). Madde 2 KOBI, profilde zaten var.",
+        "kanit": "Yanit Bolum 5 madde 1-2. Yapay Zeka Kredisi kaydinda yas sarti yok.",
+        "oneri": "Netlestirme sorularini yalniz yanitin ana programinin sartlarindan uret; baska programin kriterinden gelen genel sorulari ana program sorusuyla karistirma.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "Belgeler listesinde Kesin Teminat Mektubu iki kez sayiliyor (ilk madde ve dorduncu madde) ve teminat mektubu ayrintilari duz uzun cumleyle birlesmis; 24 ayin icinde 12 ay odemesiz oldugu, yani geri odemenin 12 ay surecegi acikca soylenmiyor.",
+        "kanit": "Yanit satir 50: «Bankadan GO Dijital ... Kesin Teminat Mektubu getirmek ...; ... Bankadan Kesin Teminat Mektubu (kredinin GO Dijital Cuzdan hesabina blokeli ...)».",
+        "oneri": "Ayni belgeyi tekilleştir; vade bilgisini «toplam 24 ay, ilk 12 ay odemesiz (geri odeme 12 ay)» seklinde ac.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Sorunun uc kalemi (tutar 500.000-5.000.000 TL, vade 24 ay, ilk 12 ay odemesiz; faiz/komisyon yok) Kisa cevapta ve kartta dogru. Teminat mektubu zorunlulugu ve 'hizmet saglayici listesi' kurali da yer aliyor. Ana program olarak dogru secim.",
+        "kanit": "Kaynak KAYIT 2 Tutar/oran ile yanit satir 6 ayni.",
+        "oneri": "Bu satiri Kisa cevabin ilk cumlesi yap; 'engel yok' cumlesini ondan sonra yaz.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "KOSGEB Yapay Zeka Kredisi isletme basina 500.000 ile 5.000.000 TL arasinda; tanimlanan limit, bankadan getirecegi­niz Kesin Teminat Mektubu tutari kadardir (en az 500.000 TL). Vade toplam 24 ay ve ilk 12 ay odemesizdir (geri odeme 12 ay); faiz veya komisyon uygulanmaz. Kredi, KOSGEB'in Hizmet Saglayicilar Listesi'ndeki firmalardan alacaginiz yapay zeka hizmet giderlerini GO Dijital Cuzdan uzerinden odemek icin kullanilir. Basvuru icin KOBI olmak, KOSGEB sisteminde kayitli ve isletme beyaninin guncel olmasi, basvuru tarihinde gecerli Teknogirisim Rozeti ve GO Dijital Cuzdan hesabi gerekir; rozetiniz yoksa program su an sizin icin uygun degil. Sayfada donem veya son tarih belirtilmiyor; basvuru KOSGEB bilgi sistemi/e-Devlet uzerinden elektronik olarak yapilir ve kosullar sistemce otomatik kontrol edilir."
+  },
+  {
+    "n": 10,
+    "puan": {"dogruluk": 4, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Soru 'basvuru tarihleri' (cogul) istiyor; yanit yalniz bitis tarihini ve kalan gunu veriyor (31.10.2026, 20 gun). Acilis tarihi 1 Eylul 2026 yanitta hic gecmiyor, oysa kaynakta CAGRI acilis ve metin 'program basvuru tarihleri 1 Eylul – 31 Ekim 2026' diyor.",
+        "kanit": "Kaynak: CAGRI id 5 «acilis: 2026-09-01, kapanis: 2026-10-31» ve Basvuru suresi «1 Eylul – 31 Ekim 2026». Yanit satir 5: «2026-2 donemi: basvuruya acik — yeni basvuru icin son gun 31.10.2026 (20 gun kaldi)».",
+        "oneri": "CAGRI kaydinda hem acilis hem kapanis varsa cumleyi «1 Eylul – 31 Ekim 2026 arasi; son gun 31.10.2026 (20 gun kaldi)» olarak kur. Tarih sorularinda iki ucu da yaz.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Programin ozu olan sart eksik: finansman destegi icin kredi kullanmak ve 2026 Ocak-Haziran ortalama aylik prim gun sayisini 2026 Temmuz-Aralik doneminde korumak gerekir. Bu sart ne teyit listesinde, ne kurallarda, ne Netlestirme'de. Ayrica 'Kimler basvurabilir' listesi KOBI ya da buyuk isletme olabilecegini (persona buyuk isletme) soyleyen kaydi atlamis.",
+        "kanit": "Kaynak [adim]: «prim gun sayisini Temmuz-Aralik 2026'da korumak ayri bir kuraldir» ve 'Basvuru sartlari: KOBI veya buyuk isletme olmasi (ikisi de basvurabilir); Kredi kullanmak ve ... prim gun sayisini ... korumak'. Yanit satir 7 yalniz 3 sart: Kisim C, isletme beyani, TTK.",
+        "oneri": "Kaydin [adim] ve 'Basvuru sartlari' ogelerindeki zorunlu kosullari (kredi kullanimi, prim gun sayisinin korunmasi, olcek sartinin 'buyuk isletme de olur' notu) teyit listesine ve Kisa cevaba ekle; Netlestirme'ye «Temmuz-Aralik 2026'da ortalama prim gun sayinizi korumayi taahhut edebilir misiniz?» sorusunu koy.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "dusuk",
+        "aciklama": "Yanit kendisi 'Faaliyet kodunuz 29.10: C icin tam sektor eslesmesi' derken ayni sarti basliça teyit ve Netlestirme madde 1 olarak soruyor; celiskili. Gercek belirsizlik GIB'in 31.12.2025 tarihli kayitlarinda imalat NACE'inin bulunmasi, o ise 4. maddede.",
+        "kanit": "Yanit satir 21 «tam sektor eslesmesi» ve satir 4/61 «Kisim C sartini saglıyor musunuz?».",
+        "oneri": "Profil NACE'i sartin metnini zaten karsiliyorsa o sarti 'profilinizle uyumlu' diye isaretle; teyidi 'GIB 31.12.2025 kaydinda imalat NACE' gibi profilde bilinmeyen kisma indir.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kurallar altinda «Onceki donemde destek odemesi yapilan KOBI, olcek degistirip buyuk isletme olursa ...» gibi, buyuk isletme personasi icin kosullu ve cogu kez ilgisiz kural yer aliyor.",
+        "kanit": "Yanit satir 30; persona calisan_sayisi 400, ciro 2 milyar TL.",
+        "oneri": "Kosullu kurallari (KOBI/buyuk gecisi) yalniz profil gecmisi bu duruma isaret ederse goster ya da 'varsa' etiketiyle sonda ver.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Iki anlasilirlik sorunu: (1) «finansman destegi 12 puan» jargon; kaynakta 'azami 12 destek puani' denen sey faiz puani karsiligi, kullanici 12 puanin ne oldugunu anlamaz; (2) 'Kapali/uygun degil' bolumunde ham kazima metni sizmis: «kayittaki sart: 'ı Yararlanici/ Risk Grubu Kefalet Orani Kefalet Ust Limiti KOBI 90% 1.000.000 TL Kullanilabilecek Kredi Urunleri Nakit Kredi Ucret ve…'».",
+        "kanit": "Yanit satir 6, 23 ve 41.",
+        "oneri": "'Destek puani' ifadesini «kredi faizinin 12 puanina karsilik gelen tutar kadar, geri odemesiz» diye ac (kaynak 'destek puani' diyor). Elenme gerekcesinde ham sart alintisi yerine temiz tek cumle kullan («program yalniz KOBI'lere acik»); alintiyi ekleyeceksen basinda bozuk karakter olan, tablo kalintisi alintilari filtrele.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Soru yalniz KOSGEB Istihdami Koruma programini soruyor; yanit 'Size kapali' altinda 4 KGF urunu (Girisimci Destek, TOBB Nefes, KGF Genel Destek, Ilave Istihdam) ve 'diger' altinda Dijital Kefalet (belirlenemedi) ile 2 SGK/ISKUR teşviki sayiyor. Hedef 'istihdam' oldugu icin SGK teşvikleri savunulabilir, ancak KOBI'ye ozel KGF urunlerini elenmis diye uzun uzun listelemek odagi dagitiyor.",
+        "kanit": "Yanit satir 36-44.",
+        "oneri": "Elenen programlari yalniz soruyla ilgiliyse (ayni ailede) goster; ilgisiz elenenleri tek satirda 'N program KOBI'lere ozel oldugu icin elendi' diye ozetle.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Sorulan kritik rakamlar dogru ve guncel (buyuk isletme 150 milyon TL, KOBI 50 milyon TL; 6 ay odemesiz, 36 ay; faiz %37 sabit / TLREF+1; komisyon %1). Kayit 2026-1 verisiyle degil 2026-2 canli metniyle yazilmis ve yanit buna uyuyor; kredi tutarinin Ocak-Haziran prime esas kazanc ortalamasiyla sinirli oldugu belirtilmis; 'bu donemde yalniz Finansman Destegi' notu ve KOSGEB Bursa iletisimi dogru.",
+        "kanit": "Kaynak KAYIT 7 Tutar/oran ve yanit satir 6.",
+        "oneri": "Bu yapi korunsun.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "KOSGEB Istihdami Koruma Destek Programi 2026-2 doneminde kredi ust limiti buyuk isletmeler icin 150 milyon TL (KOBI'ler icin 50 milyon TL); ancak kredi tutari, 2026 Ocak-Haziran muhtasar ve prim hizmet beyannamelerindeki prime esas kazanc toplaminin aylik ortalamasini gecemez. Basvurular 1 Eylul – 31 Ekim 2026 arasinda alinir ve bu donemde yalniz Finansman Destegi icin basvuru yapilir; son gune 20 gun kalmistir. Krediler azami 6 ay anapara odemesiz ve 36 ay vadelidir; banka azami faizi sabit oranda %37, degiskende TLREF+1, komisyon kredinin %1'ini asamaz. Desteklenmek icin kredi kullanmaniz ve 2026 Ocak-Haziran ortalama aylik prim gun sayinizi Temmuz-Aralik 2026'da korumaniz gerekir; destek 12 puana karsilik gelen tutarla sinirli, geri odemesiz ve yalnizca vergi ve SGK prim borclari icin kullanilabilir. Imalat (NACE 29.10) kodunuzun Gelir Idaresi'nin 31.12.2025 tarihli kayitlarinda bulunmasi da sarttir."
+  },
+  {
+    "n": 11,
+    "puan": {"dogruluk": 4, "soruya_odak": 2, "eksiksizlik": 2, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "odak",
+        "ciddiyet": "kritik",
+        "aciklama": "Kullanici 'kac ay surer' diye soruyor. Yanit yalniz «6–54 ay» araligini veriyor ve bunu tutar satirina yapistirmis. Kaynakta sure kirilimi acik: 18 yas ustu kadin 24–54 ay; 18-29 yas erkek 24–54 ay; 29 yas ustu erkek 6–30 ay; mesleki yeterlilik/teknik egitim/isgucu kursu 12 ay; ISKUR kaydi varsa +6 ay. Bu kirilim kullanilmamis ve kullaniciya 3 kisi icin hangi satirin gecerli olacagini belirleyen bilgi (cinsiyet, yas, belge, ISKUR kaydi) sorulmamis.",
+        "kanit": "Kaynak KAYIT 185 ozet: «18 yas ve uzeri kadinlar 24–54 ay; 18-29 yas erkekler 24–54 ay; 29 yas ve uzeri erkekler 6–30 ay; ... 12 ay. Kisinin ISKUR'a kayitli olmasi halinde sureye 6 ay eklenir». Yanit satir 6/24: «6–54 ay Hesaplama: ... (6–54 ay; kisinin yasi/cinsiyeti/belgesine gore ...)». Netlestirme yalniz 'son 6 aydir issiz mi' ve 'ilave mi'.",
+        "oneri": "Sure/tutar sorularinda kayit metnindeki sure tablosunu satir satir ac. Hesap kisi bazliysa Netlestirme'ye profilde olmayan alanlari ekle: «Alacaginiz kisilerin cinsiyeti/yasi nedir? Mesleki yeterlilik belgeleri var mi? ISKUR'a kayitlilar mi? Issizlik odenegi aliyorlar mi?». Kisa cevapta «sure kisiye gore 6 ile 54 ay arasinda; kadin 24–54, genc erkek 24–54, 29+ erkek 6–30 ...» seklinde ver.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "tuzak",
+        "ciddiyet": "orta",
+        "aciklama": "Uygulama 31.12.2026'ya kadar yapilacak ise alimlariyla sinirli; bugun 11.10.2026 ve kullanici 'alacagim' diyor (81 gun). Yanit basvuru donemini «Surekli» diye baslatip tarihi ardindan veriyor; aciliyeti ve kalan gunu hesaplamiyor. 31.12.2026'dan sonra ise alim kapsam disi kalir.",
+        "kanit": "Kaynak: «Basvuru suresi/donemi: Surekli; 31.12.2026 tarihine kadar yapilan ise alimlar icin» ve [kural] «Uygulama suresi: 31.12.2026 tarihine kadar ise alimlar». Yanit satir 5: «Basvuru: Surekli; 31.12.2026 tarihine kadar yapilan ise alimlar icin».",
+        "oneri": "Sureklilik + son tarih birlikte varsa 'Surekli' yerine «31.12.2026'ya kadar yapilan ise alimlar icin gecerli (81 gun kaldi)» yaz; kullanicinin ise alim niyeti varsa tarihi vurgula.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Kaydin basvuru sartlari arasindaki «aylik prim ve hizmet belgelerinin yasal suresinde verilmesi ve primlerin odenmesi (SGK genel sartlari)» kartin teyit listesinden dusmus; Bolum 3 ise 'ayrica on kayit sarti yok' diyor. Ayrica mevcut 4 calisana gore 3 yeni kisinin 'son 6 ay ortalama sigortali sayisina ilave' olma kosulu aciklanmamis (ilave sayim mantigi).",
+        "kanit": "Kaynak KAYIT 185 'Basvuru sartlari' 4. madde. Yanit teyit listesi: 3 sart (issiz, ilave, ozel sektor).",
+        "oneri": "Kaydin tum [sart] ve 'Basvuru sartlari' ogelerini teyit listesine al; 'ilave istihdam' icin persona calisan sayisiyla ornek ver: «son 6 ay ortalamaniz 4 ise yeni 3 kisi bu ortalamanin ustune eklenmeli».",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Prim tesvik sorusuna 5 ilgisiz 'Diger ilgili' program eklenmis: Yerel Kalkinma Hamlesi (9903, 6 milyon TL asgari sabit yatirim), KGF Ozkaynak, KGF Genel Destek, KOSGEB Geri Odemeli Destekleri, Ziraat Katilim. Yerel Kalkinma Hamlesi kayitta BELIRLENEMEDI iken 'engel yok' yazilmis; KOSGEB Geri Odemeli Destekleri bir KOSGEB destek karari onkosulu aradigi halde 'engel yok'.",
+        "kanit": "Yanit satir 47-51; kaynak KAYIT 178 «9903 ON DEGERLENDIRME: BELIRLENEMEDI», KAYIT 118 sart «KOSGEB tarafindan onaylanmis bir destek odemesi almaya hak kazanmis KOBI olmak».",
+        "oneri": "Soru acikca 4447 prim tesvikini hedefliyorsa diger blogu kisalt/gizle; 'diger'de kalacak programlarin onkosul-etiketlerini kayitla tutarli yap (BELIRLENEMEDI -> Belirlenemedi; KOSGEB karari yoksa -> on kosul yok).",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Tutar aralığı «kisi basi aylik 7.184,03–64.656,23 TL» olarak veriliyor; bu isveren prim payinin prime esas kazanc alt-ust sinirina denk gelen araligi. Asgari ucretli bir garson/asci icin hangi ucun gecerli oldugu acik degil, kullanici 64 bin TL'lik destek bekleyebilir. Ayrica sartlar karisik kiplerle yazilmis: «Ozel sektor isvereniyim», «Ozel sektor isvereni olmalisin», «isci, ise alindigin tarihten ...».",
+        "kanit": "Yanit satir 6, 28, 42-43.",
+        "oneri": "Aralığı «isveren SGK prim payi, prime esas kazanc alt sinirindan (asgari ucret) ust sinirina kadar; asgari ucretle calistirdiginiz kisi icin aylik tutar alt uca yakin olur» diye acikla (kayitta 'alt ve ust sinir arasi' deniyor). Sart cumlelerini tek kipe (ikinci cogul/kisi) normalize et.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "dusuk",
+        "aciklama": "Iki 4447 programi (geçici 10 ve 50/5) ayni anda sunuluyor ancak hangi durumda hangisinin gecerli olacagi (kisi issizlik odenegi aliyor mu, kadin/genc mi) acik anlatilmiyor; kullanici ikisini 3 kisi icin nasil ayiracagini bilemez.",
+        "kanit": "Yanit Bolum 2 iki kart; kaynak KAYIT 185/186 sartlari.",
+        "oneri": "Yanitin basina «Hangi program uygulanacagi ise alacaginiz kisiye baglidir: issizlik odenegi alan -> 50/5; kadin/genc/MYB sahibi -> geçici 10» seklinde yonlendirici tek cumle ekle.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Iki 4447 programi bulunmus; 11.395,35 TL ve 7.184,03–64.656,23 TL, 31.12.2026 siniri ve ISKUR kaydi ile +6 ay bilgisi kaynakla dogru. 'Sahis isletmesi' personasi icin ozel sektor isvereni sarti karsilaniyor; 18-yas/cinsiyet gibi bilgi eksikligi eleme yapilmamis. Kapali Ilave Istihdam paketi dogru sekilde 'kapali'.",
+        "kanit": "Kaynak KAYIT 185, 186, 123.",
+        "oneri": "Bu dogruluk korunsun; ek olarak sure kirilimi acilmali.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "4447 sayili Kanun kapsaminda iki isveren prim teşviki var. Kadin, Genc ve Mesleki Yeterlilik Belgesi Olanlarin Istihdami Teşviki'nde sure ise alinan kisiye gore degisir: 18 yas ustu kadin 24–54 ay, 18-29 yas erkek 24–54 ay, 29 yas ustu erkek 6–30 ay, mesleki yeterlilik belgesi/mesleki-teknik egitim sahibi 12 ay; kisi ISKUR'a kayitliysa 6 ay eklenir. Sartlar: kisi son 6 aydir issiz olmali, son 6 ayin ortalama sigortali sayisina ilave istihdam edilmeli, ozel sektor isvereni olmalisiniz ve aylik prim-hizmet belgeleri yasal surede verilip primler odenmelidir. Uygulama yalniz 31.12.2026'ya kadar yapilan ise alimlar icin gecerli (bugunden 81 gun), kapsamda karsilanan isveren SGK prim payi kayitta aylik 7.184,03–64.656,23 TL araligindadir. Issizlik odenegi alan birini alirsaniz 50/5 teşviki kisi basi aylik 11.395,35 TL prim karsiligini, kisinin kalan issizlik odenegi suresi boyunca saglar. Alacaginiz uc kisinin cinsiyet, yas, belge ve issizlik odenegi durumunu yazarsaniz ay sayisini kisi bazinda netlestirebilirim."
+  },
+  {
+    "n": 12,
+    "puan": {"dogruluk": 5, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Kisa cevap dogrudan sorulan limiti veriyor (azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL) ve rakamlar kaynakla birebir. 2026 paketi ile kapali 2020 paketi ayri tutulmus ('adiyla eslesen diger kayit — kapali'); kredi veren bankalar, TL-kefalet ve doviz/refinansman yasagi dogru aktariliyor.",
+        "kanit": "Kaynak KAYIT 86 Tutar/oran; KAYIT 95 'gecmis programlar'. Yanit satir 6-7.",
+        "oneri": "Korunsun. Rakamin 'KOBI satiri' oldugunu (kaynak tablosu: KOBI 2.400.000 TL / 3.000.000 TL) Kisa cevapta da belirt.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Ayni TOBB uyeligi sarti iki kez (ayni resmi alinti ile) 'teyit edilecek sartlar'da ve iki kez Netlestirme madde 3-4'te soruluyor. Kullanicinin yanitlayacagi tek bir soru var ama dort satir yer kapliyor; KOBI sarti ise Netlestirme'de yok.",
+        "kanit": "Yanit satir 25-26 ayni alinti; Bolum 5 madde 3 ve 4: «TOBB uyesi bir isletmeyim ...» ve «TOBB'a bagli ticaret/sanayi/deniz ticaret odasi veya ticaret borsasi uyeligi».",
+        "oneri": "Ayni alintiya dayanan esdeger sartlari birlestir (tekillestir). Kisa cevapta 'KOBI icin' ibaresini ekle.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Limit sorusuna cevap veren, sektorden bagimsiz bir programda Netlestirme 'NACE kodunuz nedir? — sektor kisitli programlarda ...' ve 'isletme sahibinin yasi' gibi jenerik sorular soruluyor; Nefes icin ikisi de gereksiz. Ayrica 'diger ilgili' blogunda net ihracatci + Greendeks sarti olan Yesil Ihracat Kredisi ve Teknogirisim Rozeti isteyen Yapay Zeka Kredisi 'engel yok' etiketiyle sayiliyor.",
+        "kanit": "Yanit Bolum 5 madde 1-2 ve satir 42, 44. Kaynak KAYIT 168 ve KAYIT 2 sartlari.",
+        "oneri": "Netlestirme sorularini ana programin acik sartlarindan uret; NACE/yas gibi genel sorulari yalniz kayitta o sarti iceren programlar gorunuyorsa sor. Profilde hedefi 'finansman' olan, ihracat yapmayan sahis isletmesi icin ihracat taahhutlu/teknoloji rozetli programlari 'diger'e koyma ya da 'Belirlenemedi' yap.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Persona sahis isletmesi (2 calisan, 1 milyon TL ciro). Kaynakta Halk Bankasi Sahis Isletmeleri Destek Kredisi (ciro <=10 milyon TL, esnaf/ticaret/meslek odasi kaydi, KOBI kefalet 400 bin TL) bu profile cok daha uygun; yanit onu tutar/sart gostermeden tek satirda 'diger'e atmis. ADAY listesindeki Dijital Kefalet Destek Programi (sahis icin kefalet 2,2 milyon TL, %80, Akbank) yanitta hic yok; yerine ilgisiz iki program var.",
+        "kanit": "Kaynak KAYIT 87 sartlari; yanit satir 41. ADAY KAYIT 172 satiri; yanit 'Diger ilgili' 5 madde.",
+        "oneri": "Sorulan programdan bagimsiz olarak, personanin sirket turuyle (sahis) eslesen alternatifleri 'Alternatifler' basligi altinda tutar/kefalet limitiyle goster; ADAY'daki profil-uyumlu kayitlari ilgisiz kayitlarin yerine koy.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "TOBB Nefes yalniz TOBB uyesi (ticaret odasi, sanayi odasi, deniz ticaret odasi, ticaret borsasi) isletmelere acik; sayilan oda turleri arasinda esnaf odasi yok (2020 paket kaydinda ayrica esnaf kredi kefalet kooperatifleri hariç). Sahis isletmesi esnaf odasina kayitli olabilir; yanit bu ayrimi sormuyor, yalniz 'TOBB uyesi misiniz' diyor.",
+        "kanit": "Kaynak KAYIT 86 sart ve KAYIT 95: «Esnaf ve Sanatkarlar Kredi Kefalet Kooperatifleri ... yararlanamamaktadir». KAYIT 87: «Esnaf Odasi, Ticaret ve Sanayi Odasi veya Meslek Odasi».",
+        "oneri": "Sahis isletmesi personalarinda TOBB sartini «Ticaret/sanayi odasi uyesi misiniz yoksa yalniz esnaf odasina mi kayitlisiniz?» sorusuna cevir; yalniz esnaf odasi ise Halkbank Sahis Isletmeleri kredisini oner.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "Basvuru satirlari yarim kesik: «(KOBI bankaya kredi basvurusu yapar, banka ... — https://» ve «(yalnizca ... — https://». 2020 paket kartinda alinti da kesik: «TOBB Uyesi; Ticaret Odasi….» ve 'Genel Kriterler Hazine destekli kefalet mevzuati gereği genel kriterler ...' anlamsiz bir kalip olarak kopyalanmis.",
+        "kanit": "Yanit satir 31, 35, 55.",
+        "oneri": "Uzun alintilari ortada keserken '…' yerine ilgili yarim cumleyi dusur ya da tam cumle ver; kapali program kartinda yalniz anlamli sart cumlelerini ve genel kalip cumlelerini ayiklayarak goster.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "TOBB Nefes Kredisi 2026'da KOBI'ler icin azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL'dir; kefalet talepleri yalniz TL olarak yapilir ve kredi doviz, kiymetli maden, mucevher finansmaninda ve refinansmanda kullanilamaz. Basvuru Akbank, Denizbank, Garanti BBVA, Halkbank, QNB, Vakifbank, Yapi Kredi, Ziraat Bankasi veya Ziraat Katilim'a yapilir; donemsel cagri yok, KGF sayfasinda son kullandirim tarihi belirtilmediginden paketin sürdügünü bankadan teyit edin. Sart TOBB uyesi olmaktir (ticaret odasi, sanayi odasi, deniz ticaret odasi veya ticaret borsasi uyesi); kayitta sayilan turler arasinda esnaf odasi yoktur, bu yuzden sahis isletmenizin hangi odaya kayitli oldugunu kontrol edin. 2020 Nefes paketi kapalidir. Yalniz esnaf odasina kayitliysaniz Halkbank Sahis Isletmeleri Destek Kredisi (ciro 10 milyon TL altinda, KOBI icin 400 bin TL kefalet limiti) alternatif olabilir."
+  }
+]

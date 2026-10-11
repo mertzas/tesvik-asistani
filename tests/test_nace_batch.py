@@ -25,12 +25,14 @@ class SahteIstemci:
     def __init__(self, *cevaplar):
         self.cevaplar = list(cevaplar)
         self.cagrilar = []
-        self.messages = SimpleNamespace(create=self._create)
+        self.chat = SimpleNamespace(completions=SimpleNamespace(create=self._create))
 
     async def _create(self, **kw):
+        """OpenAI uyumlu function-call yanıtı (app/nace_extraction 2026-10-11'den beri bu biçimi okur)."""
         self.cagrilar.append(kw)
-        blok = SimpleNamespace(type="tool_use", name=ne.TOOL_ADI, input=self.cevaplar.pop(0))
-        return SimpleNamespace(content=[blok])
+        cagri = SimpleNamespace(function=SimpleNamespace(name=ne.TOOL_ADI, arguments=json.dumps(self.cevaplar.pop(0))))
+        return SimpleNamespace(choices=[SimpleNamespace(message=SimpleNamespace(tool_calls=[cagri], content=None),
+                                                        finish_reason="tool_calls")])
 
 
 def _cevap(tur, kodlar=(), haric=(), guven=0.95):

@@ -38,8 +38,11 @@ def test_butce_onerisi_free_hala_pro_ister(client, db_session):
     assert client.get("/api/butce-onerisi", headers=h).status_code == 403
 
 
-def test_organizations_me_riza_alanini_doner(client, db_session):
+def test_organizations_me_riza_alanini_doner(client, db_session, monkeypatch):
     h = _hazirla(client, db_session, adet=0)
     assert client.get("/api/organizations/me", headers=h).json()["ai_yurtdisi_riza"] is False
+    # Rıza yalnız yurt dışına aktaran yapılandırılmış servise verilebilir (app/llm_saglayici).
+    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
+    monkeypatch.setenv("LLM_API_KEY", "test")
     client.post("/api/organizations/ai-riza", json={"riza": True}, headers=h)
     assert client.get("/api/organizations/me", headers=h).json()["ai_yurtdisi_riza"] is True

@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-10 (tur22 + profil uygunluk alanları / tur23). Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-11 (Anthropic API kaldırıldı, yerel danışman, tur24-28). Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -268,7 +268,7 @@ Son güncelleme: 2026-10-10 (tur22 + profil uygunluk alanları / tur23). Oturuma
 - **Profil uygunluk alanları + tur23** (2026-10-10, UYGULANDI): profil formunda isteğe bağlı kurucu/%50 hissedar yaşı,
   başka şirkette ya da şahıs işletmesinde ortaklık, sertifikalar (organik / iyi tarım / hiçbiri). Göç `q4f6b8d0e567`
   (yedek `tesvikler_oncesi_gocQ.db.bak`). Eşleştirme `app/matching._kisisel_engel`: kayıtta yapılandırılmış şart VE
-  profilde bilgi varsa eler; biri yoksa elemez. Bu alanlar danışmana (Anthropic) gönderilmez, KVKK tablosu güncel.
+  profilde bilgi varsa eler; biri yoksa elemez. Bu alanlar dış dil modeline gönderilmez, KVKK tablosu güncel.
   tur23 (yedek `tesvikler_oncesi_tur23.db.bak`): 122 yaş ≤ 29, 112 yaş ≤ 35 (KGF sayfaları), 49 ortaklık yasağı
   (TÜBİTAK 1812 sayfası; borsa/kitle fonlaması payları hariç), 77 organik ürün sertifikası (8859 sayılı Karar m.2/7-c;
   PDF taranmış, kanıt sayfa görüntüsü + çevriyazı + SHA-256: `docs/olcum/2026-10-10-tur23/`), 153 TURYIB zorunlu
@@ -277,6 +277,36 @@ Son güncelleme: 2026-10-10 (tur22 + profil uygunluk alanları / tur23). Oturuma
 - **B2B API planı** (`docs/API_URUN_PLANI.md`, kod yok, onay bekliyor): durumsuz `/v1` uçları (eşleşme, uygunluk,
   hazırlık, çağrılar, program, e-ihracat, şablon taslak), API anahtarı + kapsam + kota + ölçüm, hedef müşteri sırası,
   kill criteria, 6 adımlı uygulama planı.
+- **Anthropic API kaldırıldı; yerel danışman + sağlayıcı katmanı** (2026-10-11): kullanıcı talimatı "son uçta bile
+  Anthropic API kullanma". `app/yerel_danisman.py` varsayılan yanıt servisi: dil modeli yok, yanıtın her somut bilgisi
+  veritabanı kaydından (kararlar: engel yok / Şartlı (9903 Karar şartı) / belirlenemedi / uygun değil / kapalı; çağrı
+  takvimi ve kalan gün; kapsam sorusu; süre kırılımı; dekar × birim tutar; KGF paketinin bağlı KOSGEB çağrısı; yol
+  ayrımı; mükerrer kayıt filtresi). `app/llm_saglayici.py` isteğe bağlı dış servis (`LLM_SAGLAYICI=yerel|gemini|
+  openai_uyumlu`, OpenAI uyumlu uç; Gemini için `LLM_API_KEY`); dış yanıt `app/dayanak.py` denetiminden (URL/e-posta/
+  tutar/oran/tarih/gün/telefon bağlamda olmalı; çarpım istisnası yalnız N kaynakta ve birim fiyat aynı birimle bağlamdaysa)
+  geçmezse kullanıcı yerel yanıtı görür; SSE beklerken ": bekleniyor". Rıza sağlayıcıya özel (`ai_riza_saglayici`, göç
+  `r5a7c9e1f678`, yedek `gocR`; eski rızalar "anthropic:Anthropic PBC" diye işaretli ve geçersiz). Yurt içi sunucuda
+  rıza gerekmez ama vazgeçilebilir. Veri turları (hepsi yedekli, idempotent, UYGULANDI): tur24 organik atıf, tur25 KGF
+  ölçek, tur26 başvuru sahibi türü, tur27 kayıt 78 detayındaki eski traktör metni, tur28 kayıt 112 sektör (imalat+arge,
+  doğrulanmış alıntıdan), tur29 kayıt 138 Gençiz yaş sınırı 29 (doğrulanmış alıntıdan). Eşleştirme: kurucu yaşı 18-29
+  ise "genç girişimci" etiketi türetilir (`app/match_adapter.profil_etiketleri`).
+  Değerlendirme (`docs/olcum/2026-10-11-yerel-danisman/`): 30 senaryo, her turda 5 bağımsız Sonnet hakem (abonelik,
+  API yok), ölçüt yalnız kaynak dosyası; `karsilastir.py`. Genel puan (1-5) tur1 2,62 → 3,04 → 3,06 → 3,24 → 3,38 →
+  3,31 → 3,38 → tur8 3,48 (doğruluk 3,20 → 4,13); kritik bulgu 39 → 19 → 15 → 11 → 7 → 12 → 4 → 5 (tur6 artışı
+  v8'deki kalıp regresyonundan, tur7'de giderildi). Tur8 sonrası da düzeltme yapıldı (halef kayıt, Turquality dışlaması,
+  ad eşleşmesiyle sıralama); yeniden puanlanmadı. Otomatik ölçüm: dayanak sorunu 0, beklenen değer 41/41. İki Opus kod
+  incelemesi (12 + 12 bulgu: dayanak çarpım istisnası uydurma N ile aşılabiliyordu, 9903 EK-3 şartı yarım, çift
+  listeleme, bağlı program takvimi, sektör filtresi tarım/hizmet NACE'sini tanımıyordu, 30-35 yaş genç programları,
+  ters netleştirme sorusu, regex yanlış pozitifleri) düzeltildi ve testlendi ("hariç" dışlaması ve "isen" hitabı bilerek
+  bırakıldı). Bulunan gizli hata: bash heredoc `\b`'yi 0x08'e çevirmişti; `_KOSULLU_BELGE` bu yüzden hiç eşleşmiyordu
+  (koşullu belgeler sızıyordu); şimdi test tüm app/ ve scripts/ dosyalarında 0x08 arar. Uygunluk ölçümü ilk 10'da uygun
+  değil %9 → %1 (`ozet_2026_10_11_tur29.md`). Gemini ile canlı karşılaştırma YAPILMADI: anahtar yok (kod hazır).
+  Açık (hakemlerin kalan bulguları): kontrol listesindeki birinci tekil beyan metinleri ("işvereniyim", "almadım";
+  veride, kuralla güvenle çevrilemiyor); 1812 aşama/rol bazlı çağrı seçimi (şirketsizde Aşama 2-3 şartı artık kilit
+  sayılmıyor, hedefli çağrı geri sayımla öne çıkmıyor); sorudaki olguyu (ör. "Almanya'daki ortak") geçici profil sayma;
+  aynı Karar ailesinde (9903) katkı oranına göre karşılaştırma; çok aşamalı programlarda alt destek bazında "kapalı"; 163 e-ticaret kaydında 5973/5986 çelişkisi;
+  79 sera özet 310/527 ↔ 367, 142 özet 50M ↔ 45M; taslak hakkı başarısız üretimde de düşüyor; `.env`'de kullanılmayan
+  ANTHROPIC_API_KEY duruyor (silmek kullanıcıya ait).
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

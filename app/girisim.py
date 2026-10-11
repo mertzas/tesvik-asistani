@@ -112,7 +112,7 @@ def _nace_statu(profil: Any, bugun: date | None) -> Bilesen:
     notlar = []
     if tur == "yok":
         puan, temel = 10, ("şirketleşmemiş: şirketleşme öncesi programlar (ör. TÜBİTAK 1812 BiGG) hedeflenebilir; "
-                           "sermaye şirketi şartı arayan sanayi Ar-Ge programları (ör. 1507, 1501) şu an kapalı")
+                           "sermaye şirketi şartı arayan sanayi Ar-Ge programları (ör. 1507, 1501) şirket kurana kadar size kapalı")
     elif tur in SERMAYE_SIRKETLERI:
         puan, temel = 25, f"{SIRKET_TURLERI[tur]}: sermaye şirketi şartı arayan programlara açık"
     elif tur == "sahis":

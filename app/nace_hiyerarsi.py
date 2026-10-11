@@ -142,7 +142,10 @@ def sector_match(isletme_kodu: str | None, program_kodlari: list[str]) -> Sektor
         return SektorUyumu(0.0, "uyumsuz", f"{c} sektörü programın sektörleriyle örtüşmüyor")
     durum = "tam" if en_iyi == TAM else "kismi"
     ad = "tam sektör eşleşmesi" if durum == "tam" else "kısmi sektör eşleşmesi"
-    return SektorUyumu(en_iyi, durum, f"{c} sektörü ile {en_iyi_kod} için {ad}")
+    if durum == "tam":
+        return SektorUyumu(en_iyi, durum, f"{c}, programın kapsadığı NACE {en_iyi_kod} faaliyetlerine giriyor ({ad})")
+    return SektorUyumu(en_iyi, durum, f"{c} ile programın kapsadığı NACE {en_iyi_kod} aynı faaliyet grubunda; "
+                                      f"kapsamı kurumdan teyit edin ({ad})")
 
 
 def sector_fit(isletme_kodu: str | None, program_kodlari: list[str]) -> float:

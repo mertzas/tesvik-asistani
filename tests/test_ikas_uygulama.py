@@ -307,12 +307,13 @@ def test_taslak_istemi_ikas_ozetini_icerir(client, db_session, monkeypatch):
     from app import basvuru_taslagi
     from app.models import PlanType, Tesvik
     istemler = []
-    monkeypatch.setattr(settings, "ANTHROPIC_API_KEY", "test")
-    monkeypatch.setattr(basvuru_taslagi, "_claude_istek",
-                        lambda s, k: istemler.append(k) or ("## 1. İşletme tanıtımı\nx", {"durma": "end_turn"}))
+    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
+    monkeypatch.setenv("LLM_API_KEY", "test")
+    monkeypatch.setattr(basvuru_taslagi, "_llm_istek",
+                        lambda s, k: istemler.append(k) or ("## 1. İşletme tanıtımı\nx", {"durma": "stop"}))
     h = _oturumlu_kurulum(client)
     org = db_session.query(Organization).one()
-    org.plan, org.ai_yurtdisi_riza = PlanType.PRO, True
+    org.plan, org.ai_yurtdisi_riza, org.ai_riza_saglayici = PlanType.PRO, True, "gemini:Google LLC:ABD:generativelanguage.googleapis.com"
     db_session.add(Tesvik(id=7, kurum="Ticaret Bakanlığı", baslik="E-ihracat", ozet="o", detay="d", aktif_mi=True,
                           kaynak_url="https://t/7"))
     db_session.commit()

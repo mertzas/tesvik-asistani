@@ -104,7 +104,7 @@ def test_answer_eski_sistem_notunu_baglama_ekler(veri, monkeypatch):
         gorulen["elenen"] = elenen
         return "yanıt"
 
-    monkeypatch.setattr(rag, "_claude_cevap", sahte)
+    monkeypatch.setattr(rag, "_llm_cevap", sahte)
     ltd = FinancialProfile(sektor="arge", bolge="Van", sirket_turu="limited", calisan_sayisi=12)
     rag.answer("Yazılım Ar-Ge projemiz için 2012/3305 sayılı Bölgesel Teşvik'ten yararlanabilir miyim?",
                None, llm_kullan=True, profil_kaydi=ltd)

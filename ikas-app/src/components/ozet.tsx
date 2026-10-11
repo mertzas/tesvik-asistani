@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useCallback, useEffect, useRef, useState } from 'react';
-import { api, ApiHatasi, type Durum, type Kurulus } from '@/lib/api';
+import { api, ApiHatasi, disServisVar, type Durum, type Kurulus, type YapayZeka } from '@/lib/api';
 import { para, sayi, tarihSaat } from '@/lib/bicim';
 import { Bilgi, Dugme, Gosterge, Kart, Yukleniyor } from './ui';
 
@@ -16,6 +16,7 @@ const DURUM_METNI: Record<Durum['baglanti_durumu'], string> = {
 export function OzetSekmesi({ ilkAcilis, onDesteklereGit }: { ilkAcilis: boolean; onDesteklereGit: () => void }) {
   const [durum, setDurum] = useState<Durum | null>(null);
   const [kurulus, setKurulus] = useState<Kurulus | null>(null);
+  const [yz, setYz] = useState<YapayZeka | null>(null);
   const [mesaj, setMesaj] = useState<{ tur: 'iyi' | 'uyari' | 'hata'; metin: string } | null>(null);
   const [mesgul, setMesgul] = useState(false);
   const kesOnayi = useRef(0);
@@ -23,9 +24,10 @@ export function OzetSekmesi({ ilkAcilis, onDesteklereGit }: { ilkAcilis: boolean
 
   const yukle = useCallback(async () => {
     try {
-      const [d, k] = await Promise.all([api.durum(), api.kurulus()]);
+      const [d, k, y] = await Promise.all([api.durum(), api.kurulus(), api.yapayZeka()]);
       setDurum(d);
       setKurulus(k);
+      setYz(y);
     } catch (e) {
       if (e instanceof ApiHatasi && e.durum !== 401) setMesaj({ tur: 'hata', metin: e.message });
     }
@@ -84,7 +86,9 @@ export function OzetSekmesi({ ilkAcilis, onDesteklereGit }: { ilkAcilis: boolean
     try {
       const r = await api.riza(riza);
       setMesaj({ tur: 'iyi', metin: r.mesaj });
-      setKurulus(await api.kurulus());
+      const [k, y] = await Promise.all([api.kurulus(), api.yapayZeka()]);
+      setKurulus(k);
+      setYz(y);
     } catch (e) {
       setMesaj({ tur: 'hata', metin: e instanceof Error ? e.message : 'Kaydedilemedi.' });
     }
@@ -143,26 +147,45 @@ export function OzetSekmesi({ ilkAcilis, onDesteklereGit }: { ilkAcilis: boolean
       </Kart>
 
       <Kart>
-        <h2 className="text-base font-bold">Yapay zekâ ile başvuru taslağı</h2>
-        <p className="mt-1 max-w-prose text-sm text-soluk">
-          Taslak oluşturduğunuzda işletme profiliniz ve sipariş toplamlarınız (müşteri bilgisi değil) taslağı yazması
-          için Anthropic&apos;in (ABD) yapay zekâ servisine gönderilir. Bunun için açık rızanız gerekir; istediğiniz zaman
-          geri alabilirsiniz.{' '}
-          <a href="/kvkk" target="_blank" rel="noopener" className="text-vurgu underline">
-            Aydınlatma metni
-          </a>
-        </p>
-        <label className="mt-3 flex items-center gap-2 text-sm">
-          <input
-            id="ai-riza"
-            type="checkbox"
-            checked={!!kurulus?.ai_yurtdisi_riza}
-            onChange={(e) => rizaDegistir(e.target.checked)}
-            className="h-4 w-4 accent-vurgu"
-          />
-          Yurt dışına aktarıma açık rıza veriyorum
-        </label>
-        {kurulus && kurulus.plan === 'free' && (
+        <h2 className="text-base font-bold">Danışman ve başvuru taslağı</h2>
+        {!disServisVar(yz) ? (
+          <p className="mt-1 max-w-prose text-sm text-soluk">
+            Danışman yanıtları ve başvuru taslakları sunucumuzda, yalnız doğrulanmış kayıtlardan kuralla üretilir;
+            profiliniz ve sipariş toplamlarınız hiçbir yapay zekâ servisine gönderilmez, bu nedenle açık rıza
+            gerekmez.{' '}
+            <a href="/kvkk" target="_blank" rel="noopener" className="text-vurgu underline">
+              Aydınlatma metni
+            </a>
+          </p>
+        ) : (
+          <>
+            <p className="mt-1 max-w-prose text-sm text-soluk">
+              Dil modeliyle taslak oluşturduğunuzda işletme profiliniz ve sipariş toplamlarınız (müşteri bilgisi değil)
+              taslağı yazması için {yz?.ad} servisine ({yz?.kurum}, {yz?.ulke}) gönderilir; taslak, kayıtlarda olmayan
+              bir rakam içermediği denetlendikten sonra gösterilir.
+              {yz?.riza_gerekli ? ' Bunun için açık rızanız gerekir; istediğiniz zaman geri alabilirsiniz.' : ''}
+              {yz?.eski_riza_gecersiz ? ' Daha önce başka bir servise verdiğiniz rıza bu servis için geçerli değildir.' : ''}{' '}
+              <a href="/kvkk" target="_blank" rel="noopener" className="text-vurgu underline">
+                Aydınlatma metni
+              </a>
+            </p>
+            {disServisVar(yz) && (
+              <label className="mt-3 flex items-center gap-2 text-sm">
+                <input
+                  id="ai-riza"
+                  type="checkbox"
+                  checked={!!yz?.riza_gecerli}
+                  onChange={(e) => rizaDegistir(e.target.checked)}
+                  className="h-4 w-4 accent-vurgu"
+                />
+                {yz?.riza_gerekli
+                  ? `${yz?.ad} servisine (${yz?.ulke}) aktarıma açık rıza veriyorum`
+                  : `${yz?.ad} servisini kullan (yurt içi; kapatırsanız yanıtlar yerel danışmandan gelir)`}
+              </label>
+            )}
+          </>
+        )}
+        {disServisVar(yz) && kurulus && kurulus.plan === 'free' && (
           <p className="mt-2 text-xs text-soluk">Taslak üretimi PRO ve üzeri planlarda kullanılabilir.</p>
         )}
       </Kart>

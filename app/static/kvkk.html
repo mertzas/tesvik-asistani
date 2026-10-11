@@ -67,7 +67,7 @@
 <a class="ust-baglanti" href="/">&larr; Teşvik Asistanı</a>
 
 <h1>Kişisel Verilerin Korunması Hakkında Aydınlatma Metni</h1>
-<p class="tarih">Son güncelleme: 28.09.2026</p>
+<p class="tarih">Son güncelleme: 11.10.2026</p>
 
 <div class="eksik">
   <strong>BU METİN HENÜZ YAYINA HAZIR DEĞİL.</strong> Aşağıdaki
@@ -130,7 +130,7 @@
   <tr><td>Sorduğunuz sorular</td><td><code>queries.question</code></td><td>Sorgu geçmişi, plan kotasının takibi</td></tr>
   <tr><td>Size gösterilen sonuçlar</td><td><code>queries.results</code></td><td>Geçmişi tekrar görüntüleyebilmeniz</td></tr>
   <tr><td>Başvuru kontrol listesi işaretleri (hangi destek için hangi şartı/belgeyi hazır işaretlediğiniz)</td><td><code>basvuru_takipleri</code></td><td>Başvuru hazırlığınızın ilerlemesini saklamak; yalnızca siz görürsünüz, yurt dışına aktarılmaz</td></tr>
-  <tr><td>Başvuru ön taslağı (istediğinizde yapay zekâ ile üretilen metin)</td><td><code>basvuru_takipleri.taslak</code></td><td>Taslağı yeniden ücret/sınır harcamadan görebilmeniz; üretimi açık rızanıza bağlıdır (aşağıdaki aktarım)</td></tr>
+  <tr><td>Başvuru ön taslağı (şablonla ya da, servis etkinse ve isterseniz, dil modeliyle üretilen metin)</td><td><code>basvuru_takipleri.taslak</code></td><td>Taslağı yeniden üretmeden görebilmeniz; dil modeliyle üretim açık rızanıza bağlıdır (aşağıdaki aktarım)</td></tr>
   <tr><td>Kullanılan sorgu adedi</td><td><code>queries.tokens_used</code></td><td>Aylık plan kotası</td></tr>
 </table></div>
 
@@ -184,29 +184,40 @@
     <td>Meşru menfaat (m.5/2-f)</td>
   </tr>
   <tr>
-    <td>Yapay zekâ destekli danışmanlık yanıtı üretilmesi</td>
+    <td>Danışman yanıtının sunucumuzda kayıtlardan üretilmesi (yerel danışman, varsayılan)</td>
+    <td>Sözleşmenin ifası (m.5/2-c) — veri sunucumuzdan çıkmaz</td>
+  </tr>
+  <tr>
+    <td>Dış dil modeli servisiyle yanıt ya da taslak üretilmesi (yalnız servis etkinleştirilmişse)</td>
     <td><strong>Açık rıza</strong> — yurt dışına aktarım içerdiği için; bkz. bölüm 4</td>
   </tr>
 </table></div>
 
 <h2>4. Yurt Dışına Aktarım</h2>
 <div class="uyari">
-  <strong>Bu aktarım açık rızanıza bağlıdır ve varsayılan olarak
-  KAPALIDIR.</strong> Rıza vermezseniz yapay zekâ çağrısı <em>hiç
-  yapılmaz</em> — ne profiliniz ne de sorunuzun metni gönderilir; yanıtlar
-  yalnızca veritabanındaki teşvik kayıtlarından üretilir. Rızayı istediğiniz
-  zaman verebilir ve <strong>istediğiniz zaman geri alabilirsiniz</strong>;
-  geri aldığınızda aktarım anında durur. Hizmetin geri kalanı her iki
-  durumda da çalışmaya devam eder.
+  <strong>Varsayılan olarak hiçbir yurt dışı aktarımı yapılmaz.</strong> Danışman yanıtları Teşvik Asistanı'nın
+  yerel danışmanı tarafından, sunucumuzda yalnız veritabanındaki doğrulanmış teşvik kayıtlarından üretilir; ne
+  profiliniz ne de sorunuzun metni herhangi bir yapay zekâ servisine gönderilir. Anthropic (Claude) servisi
+  11.10.2026 itibarıyla kullanılmamaktadır; bu servise daha önce verilmiş rızalar başka bir servise aktarılmaz.
+</div>
+
+<div class="uyari">
+  Hizmet sağlayıcı bir <strong>dış dil modeli servisi</strong> etkinleştirirse, servisin adı, işleten kuruluş ve
+  ülkesi <strong>Ayarlar</strong> bölümünde rızanız istenmeden önce gösterilir. Desteklenen yurt dışı servis:
+  <strong>Google LLC</strong> (ABD) tarafından işletilen <strong>Gemini API</strong>. Bu aktarım <strong>açık rızanıza
+  bağlıdır ve varsayılan olarak KAPALIDIR</strong>; rıza belirli bir servise verilir, servis değişirse yeniden
+  istenir. Rıza vermezseniz dış çağrı <em>hiç yapılmaz</em>. Rızayı istediğiniz zaman verebilir ve
+  <strong>istediğiniz zaman geri alabilirsiniz</strong>; geri aldığınızda aktarım anında durur. Hizmetin geri kalanı
+  her iki durumda da çalışmaya devam eder. Dış servisin yanıtı, kayıtlarda olmayan bir tutar, oran, tarih, adres
+  ya da telefon içermediği denetlendikten sonra gösterilir.
 </div>
 
 <div class="uyari">
   <strong>Rıza verdiğinizde</strong> sorunuzla birlikte
   işletme profiliniz — <em>sektör, bölge, çalışan sayısı, yıllık ciro,
   hedefler, tarım kategorisi, ürün türü, arazi büyüklüğü, NACE faaliyet kodu, şirket türü, kuruluş tarihi, TRL</em> — yanıt
-  üretilmesi için <strong>Anthropic</strong> (ABD) tarafından işletilen Claude
-  API'sine gönderilir. <strong>Adınız, e-posta adresiniz ve ödeme
-  bilgileriniz bu aktarıma dahil edilmez.</strong>
+  üretilmesi için rıza verdiğiniz servise gönderilir. <strong>Adınız, e-posta adresiniz, ödeme bilgileriniz, hedef
+  kitle özellikleri, kurucu yaşı, ortaklık ve sertifika bilgileri bu aktarıma dahil edilmez.</strong>
   Aynı rıza ile, yalnızca siz “Taslak oluştur” dediğinizde, aynı profil bilgileri seçtiğiniz
   teşvik programının bilgileriyle birlikte başvuru ön taslağı yazılması için de gönderilir;
   İKAS mağazanız bağlıysa sipariş özetinin toplamları (sipariş sayısı, TL ciro, döviz toplamları, yurt dışı
@@ -298,7 +309,8 @@
   <li>Günlük kayıtlarında istek gövdesi basılmaz; yapay zekâ isteklerinin
       içeriği (dolayısıyla profil verisi) günlüğe yazılmaz.</li>
   <li>İKAS erişim/yenileme anahtarları veritabanına şifrelenerek yazılır.</li>
-  <li>Yapay zekâ çağrısı açık rıza olmadan yapılmaz.</li>
+  <li>Varsayılan yanıt servisi yerel danışmandır; dış dil modeli çağrısı yalnız etkinleştirilmiş servise verilmiş
+      açık rızayla yapılır.</li>
 </ul>
 <p>
   Bilinen eksikler yukarıda bölüm 2'de (İKAS anahtarlarının şifresiz

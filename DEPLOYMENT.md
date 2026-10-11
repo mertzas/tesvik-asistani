@@ -126,7 +126,7 @@ Sonra:
 
 - **RDS PostgreSQL 15** oluşturun, yalnızca ECS güvenlik grubundan erişime izin verin
 - **Secrets Manager**'a `DATABASE_URL`, `SECRET_KEY`, `STRIPE_SECRET_KEY`,
-  `ANTHROPIC_API_KEY` koyun ve task definition'da secret olarak bağlayın —
+  `LLM_API_KEY` (yalnız dış dil modeli kullanılacaksa) koyun ve task definition'da secret olarak bağlayın —
   ortam değişkeni olarak düz metin girmeyin
 - Sağlık kontrolü yolu: `/health`
 - Veri tazeleme için ayrı bir **scheduled ECS task** (haftalık,
@@ -143,7 +143,7 @@ teyit edin.
 DevOps yükü istemiyorsanız: `Dockerfile.prod` doğrudan kullanılabilir.
 
 - Yönetilen PostgreSQL ekleyin, `DATABASE_URL`'i bağlayın
-- `SECRET_KEY`, `APP_URL`, `ANTHROPIC_API_KEY`, Stripe anahtarlarını secret olarak girin
+- `SECRET_KEY`, `APP_URL`, (isteğe bağlı) `LLM_API_KEY`, Stripe anahtarlarını secret olarak girin
 - Sağlık kontrolü: `/health`
 - Veri tazeleme: platformun cron/scheduled job özelliği ile
   `python -m scripts.tum_verileri_guncelle`
@@ -223,7 +223,7 @@ tail -f data/scraper_log.txt
 
 - `/health` yanıtındaki `veri_durumu` — `bayat` olması scraper'ların
   sessizce durduğu anlamına gelir
-- `WARNING app.rag` satırları — Claude çağrısı başarısız olup liste
+- `WARNING app.rag` satırları — dış model çağrısı başarısız ya da yanıt dayanak denetiminden geçmeyip yerel danışmana
   formatına düşüldüğünde sebebi (kota/anahtar/ağ) burada yazar
 - HTTP 429 sayısı — hız sınırına takılan kullanıcılar
 

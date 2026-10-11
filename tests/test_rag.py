@@ -1,14 +1,14 @@
 """app/rag.py testleri - AI danışmanın "uydurma yapmama" sözleşmesi.
 
 Bu modülün en kritik özelliği ne kadar akıllı cevap verdiği değil, YANLIŞ
-bilgi üretmemesi: sistem promptu Claude'a bağlamda olmayan hiçbir somut
+bilgi üretmemesi: sistem promptu dış modele bağlamda olmayan hiçbir somut
 veriyi (telefon, oran, tutar, tarih) icat etmemesini söylüyor ve kapalı
 programları "başvurabilirsiniz" diye sunmamasını emrediyor. Kullanıcı bu
 çıktıya göre kuruma gidiyor; uydurma bir oran ya da kapanmış bir program
 gerçek zaman ve para kaybı demek.
 
-Testler ağ çağrısı yapmaz: Claude katmanı taklit edilir (monkeypatch), böylece
-hem API anahtarı olmadan çalışır hem de "Claude çökerse ne olur" yolu gerçekten
+Testler ağ çağrısı yapmaz: dış model katmanı taklit edilir (dis_model fixture'ı), böylece
+hem API anahtarı olmadan çalışır hem de "dış model çökerse ne olur" yolu gerçekten
 sınanır - bu yol üretimde sessizce devreye giriyor.
 """
 
@@ -100,23 +100,6 @@ def test_sistem_promptu_dogrulanmamis_kayit_icin_teyit_istiyor():
 
 # ------------------------------------------------------- liste formatı (yedek)
 
-def test_liste_formati_kayitlari_ve_kurumu_gosterir():
-    kayitlar = [
-        _tesvik("İşletme Geliştirme Desteği", ozet="KOBİ'lere yönelik destek."),
-        _tesvik("1507 KOBİ Ar-Ge Başlangıç", ozet="Ar-Ge projeleri.", kurum="TÜBİTAK"),
-    ]
-    metin = rag._liste_formati(kayitlar)
-    assert "İşletme Geliştirme Desteği" in metin
-    assert "1507" in metin
-    assert "TÜBİTAK" in metin
-    assert "2" in metin  # kaç program bulunduğu
-
-
-def test_liste_formati_bos_listede_coksmez():
-    metin = rag._liste_formati([])
-    assert isinstance(metin, str)
-
-
 # ------------------------------------------------ answer() akışı ve yedeğe düşme
 
 def test_eslesme_yoksa_yonlendirme_metni_doner(monkeypatch):
@@ -127,62 +110,67 @@ def test_eslesme_yoksa_yonlendirme_metni_doner(monkeypatch):
     assert "KOSGEB" in cevap
 
 
-def test_claude_cevap_verirse_o_kullanilir(monkeypatch):
-    kayit = _tesvik("Dijital Dönüşüm Desteği", ozet="Yazılım ve makine desteği.")
-    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [kayit])
-    monkeypatch.setattr(rag, "_claude_cevap",
-                        lambda q, m, p: "### 📊 Durum Analizi\nAI cevabı")
+def _kayit():
+    return _tesvik("Dijital Dönüşüm Desteği", ozet="Yazılım ve makine desteği.", kaynak_url="https://kosgeb.gov.tr/dd",
+                   tesvil_tutari="300.000 TL'ye kadar, %60 destek", aktif_mi=True,
+                   uygunluk_kriterleri={"sektorler": ["genel"]})
+
+
+def test_dis_model_yaniti_denetimden_gecerse_kullanilir(monkeypatch, dis_model):
+    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [_kayit()])
+    dis_model.metin = "### 1. Özet\nDijital Dönüşüm Desteği 300.000 TL'ye kadar, %60. Kaynak: https://kosgeb.gov.tr/dd"
     cevap = rag.answer("dijital dönüşüm")
-    assert "AI cevabı" in cevap
+    assert "300.000 TL" in cevap and "yerel danışman" not in cevap
 
 
-def test_claude_yoksa_liste_formatina_dusulur(monkeypatch):
-    """Üretimde sessizce devreye giren yol: anahtar yok / kota bitti / ağ hatası.
-
-    Kullanıcı boş ekran değil, en azından gerçek kayıtların listesini görmeli.
-    """
-    kayit = _tesvik("Dijital Dönüşüm Desteği", ozet="Yazılım ve makine desteği.")
-    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [kayit])
-    monkeypatch.setattr(rag, "_claude_cevap", lambda q, m, p: None)
-    monkeypatch.setattr(rag, "OLLAMA_ETKIN", False)
-
-    cevap = rag.answer("dijital dönüşüm")
-    assert "Dijital Dönüşüm Desteği" in cevap
+def test_dis_model_yoksa_yerel_danisman_yanitlar(monkeypatch):
+    """Varsayılan: dış servis yok; yanıt kayıtlardan kuralla, beş başlıkla gelir, dışarı veri çıkmaz."""
+    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [_kayit()])
+    cevap = rag.answer("dijital dönüşüm", llm_kullan=True)
+    assert "Dijital Dönüşüm Desteği" in cevap and "300.000 TL'ye kadar, %60 destek" in cevap
+    assert "### 1. Şirket & Proje Uygunluk Özeti" in cevap and "yerel danışmanı" in cevap
 
 
-def test_claude_patlarsa_uygulama_coksmez_ve_gunluge_yazilir(monkeypatch, caplog):
-    """_claude_cevap içindeki istisna yutuluyor ama İZ BIRAKMALI.
-
-    Daha önce sebep hiçbir yere yazılmıyordu; "AI cevap vermiyor" şikayeti
-    geldiğinde (kota mı, anahtar mı, ağ mı) anlamanın yolu yoktu.
-    """
+def test_dis_model_patlarsa_coksmez_gunluge_yazilir_yerele_duser(monkeypatch, dis_model, caplog):
+    """Hata yutulur ama İZ BIRAKIR; kullanıcı yerel danışmanın yanıtını alır."""
     import logging
-
-    kayit = _tesvik("Test Programı", ozet="özet")
-    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [kayit])
-    monkeypatch.setattr(rag, "OLLAMA_ETKIN", False)
-
-    class SahteIstemci:
-        def __init__(self, *a, **kw):
-            raise RuntimeError("kota bitti")
-
-    import anthropic
-    monkeypatch.setattr(anthropic, "Anthropic", SahteIstemci)
-    monkeypatch.setattr(rag.settings, "ANTHROPIC_API_KEY", "sk-test-anahtar")
-
-    with caplog.at_level(logging.WARNING, logger="app.rag"):
-        cevap = rag.answer("test")
-
-    assert "Test Programı" in cevap, "yedek liste formatına düşülmeliydi"
-    assert any("kota bitti" in k.message or "kota bitti" in str(k.args)
-               or "RuntimeError" in k.getMessage() for k in caplog.records), \
-        f"başarısızlık sebebi günlüğe yazılmadı: {[k.getMessage() for k in caplog.records]}"
+    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [_kayit()])
+    dis_model.hata = RuntimeError("kota bitti")
+    with caplog.at_level(logging.WARNING):
+        cevap = rag.answer("dijital dönüşüm")
+    assert "Dijital Dönüşüm Desteği" in cevap and "yerel danışmanı" in cevap
+    assert any("RuntimeError" in k.getMessage() for k in caplog.records), [k.getMessage() for k in caplog.records]
 
 
-def test_anahtar_yoksa_claude_cagrilmaz(monkeypatch):
-    """Anahtar boşsa boşuna ağ çağrısı yapılmamalı."""
-    monkeypatch.setattr(rag.settings, "ANTHROPIC_API_KEY", "")
-    assert rag._claude_cevap("soru", [_tesvik("x")], None) is None
+def test_uydurma_bilgi_iceren_dis_yanit_kullaniciya_gitmez(monkeypatch, dis_model, caplog):
+    """Dayanak denetimi: bağlamda olmayan tutar/URL içeren model yanıtı atılır."""
+    import logging
+    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [_kayit()])
+    dis_model.metin = "Bu programdan 750.000 TL hibe alırsınız: https://uydurma.example/basvuru"
+    with caplog.at_level(logging.WARNING):
+        cevap = rag.answer("dijital dönüşüm")
+    assert "750.000" not in cevap and "uydurma.example" not in cevap and "yerel danışmanı" in cevap
+    assert any("dayanak denetiminden geçmedi" in k.getMessage() for k in caplog.records)
+
+
+def test_kesik_dis_yanit_kullanilmaz(monkeypatch, dis_model):
+    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [_kayit()])
+    dis_model.durma = "length"
+    assert "yerel danışmanı" in rag.answer("dijital dönüşüm")
+
+
+def test_yapilandirma_yoksa_dis_cagri_yok():
+    assert rag._llm_cevap("soru", [_kayit()], None) is None
+
+
+def test_dis_model_istegi_sistem_promptu_ve_genis_butce(monkeypatch, dis_model):
+    """Düşünen modellerde düşünme de bütçeden düşer; bütçe dar tutulamaz. Sistem promptu aynen gider."""
+    monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [_kayit()])
+    rag.answer("dijital dönüşüm")
+    istek = dis_model.cagrilar[0]
+    assert istek["max_tokens"] >= 16000 and istek["model"] == "gemini-2.5-flash"
+    assert istek["messages"][0] == {"role": "system", "content": rag.SISTEM_PROMPTU}
+    assert "BAĞLAM:" in istek["messages"][1]["content"] and "BUGÜN:" in istek["messages"][1]["content"]
 
 
 def test_sistem_promptu_danisman_formati_ve_durust_eleme():
@@ -194,28 +182,3 @@ def test_sistem_promptu_danisman_formati_ve_durust_eleme():
         assert baslik in p, baslik
     assert "NET VE DÜRÜST ELEME" in p and "ÇİFT YÖNLÜ ANALİZ" in p
     assert "SADECE bağlamda geçiyorsa" in p, "oran/limit yalnızca bağlamdan gelmeli"
-
-
-def test_claude_cagrisi_genis_butce_ve_effort_kullanir_kesilmeyi_bildirir(monkeypatch):
-    """Düşünme token'ları max_tokens'tan düştüğü için bütçe dar tutulamaz;
-    kesilme olursa kullanıcıya söylenmeli."""
-    from types import SimpleNamespace
-    import anthropic
-
-    kayit = {}
-
-    class SahteMesajlar:
-        def create(self, **kw):
-            kayit.update(kw)
-            return SimpleNamespace(content=[SimpleNamespace(type="text", text="### 1. Özet")],
-                                   stop_reason="max_tokens", usage=SimpleNamespace(output_tokens=16000))
-
-    class SahteIstemci:
-        def __init__(self, *a, **kw):
-            self.messages = SahteMesajlar()
-
-    monkeypatch.setattr(anthropic, "Anthropic", SahteIstemci)
-    monkeypatch.setattr(rag.settings, "ANTHROPIC_API_KEY", "sk-test")
-    cevap = rag._claude_cevap("soru", [_tesvik("Program", ozet="o")], None)
-    assert kayit["max_tokens"] >= 16000 and kayit["output_config"] == {"effort": rag.CLAUDE_EFFORT}
-    assert "kesildi" in cevap

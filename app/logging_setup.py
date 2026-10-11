@@ -2,7 +2,7 @@
 Merkezi gunlukleme yapilandirmasi.
 
 SORUN: 27 modulden yalnizca 2'si logging kullaniyordu ve kritik akislarda
-hatalar sessizce yutuluyordu - ornegin rag.py'da Claude API cagrisi
+hatalar sessizce yutuluyordu - ornegin rag.py'da dis model cagrisi
 basarisiz oldugunda `except Exception: return None` ile yedek listeye
 dusuluyor ama HICBIR iz birakilmiyordu. Uretimde "AI cevap vermiyor"
 sikayeti geldiginde sebebi (kota bitti mi? anahtar mi gecersiz? ag mi?)
@@ -51,11 +51,11 @@ def kur(seviye: str | None = None) -> None:
         kok.removeHandler(h)
     kok.addHandler(handler)
 
-    # Gurultuyu kis. anthropic/httpcore DEBUG seviyesinde istek govdesinin
+    # Gurultuyu kis. openai/httpcore DEBUG seviyesinde istek govdesinin
     # TAMAMINI (sistem prompt + kullanici profili dahil) log'a dokuyor;
     # LOG_LEVEL=DEBUG ile calisildiginda bu hem okunamaz hem de kisisel
     # veriyi log dosyasina sizdirir. Bu yuzden INFO tavaninda tutuluyorlar.
-    for gurultulu in ("httpx", "httpcore", "urllib3", "anthropic"):
+    for gurultulu in ("httpx", "httpcore", "urllib3", "openai"):
         logging.getLogger(gurultulu).setLevel(logging.WARNING)
 
     _KURULDU = True

@@ -59,8 +59,11 @@ services:
       STRIPE_WEBHOOK_SECRET: ${STRIPE_WEBHOOK_SECRET:-}
       STRIPE_PRICE_PRO: ${STRIPE_PRICE_PRO:-}
       STRIPE_PRICE_BUSINESS: ${STRIPE_PRICE_BUSINESS:-}
-      ANTHROPIC_API_KEY: ${ANTHROPIC_API_KEY:-}
-      CLAUDE_MODEL: ${CLAUDE_MODEL:-claude-sonnet-5}
+      # Yanıt servisi (app/llm_saglayici.py): varsayılan yerel danışman; Anthropic kullanılmaz.
+      LLM_SAGLAYICI: ${LLM_SAGLAYICI:-yerel}
+      LLM_API_KEY: ${LLM_API_KEY:-}
+      LLM_MODEL: ${LLM_MODEL:-}
+      LLM_BASE_URL: ${LLM_BASE_URL:-}
       EVDS_API_KEY: ${EVDS_API_KEY:-}
       APP_URL: ${APP_URL:?APP_URL gerekli - OAuth callback adresleri buna dayanir}
       # CORS: bos birakilirsa APP_URL kullanilir (app/main.py izinli_originler).

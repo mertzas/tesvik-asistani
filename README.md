@@ -8,8 +8,11 @@ Tarım Bakanlığı, Hazine/Ticaret Bakanlığı, TÜİK, TCMB EVDS ve Hal Kayı
   ürün) göre puanlanmış program listesi
 - **Bütçe önerisi:** TCMB sektör bilançolarına ve TÜİK enflasyonuna dayanan
   stok maliyeti / reklam bütçesi aralıkları
-- **AI danışman:** Claude API ile, yalnızca veritabanındaki kayıtlara dayanan
-  (uydurma yapmayan) yanıtlar; API anahtarı yoksa liste formatına düşer
+- **Danışman:** varsayılan olarak yerel danışman (app/yerel_danisman.py) yanıtı
+  yalnızca veritabanındaki doğrulanmış kayıtlardan kuralla üretir; veri sunucudan
+  çıkmaz. İsteğe bağlı dış dil modeli (Gemini ya da OpenAI uyumlu uç,
+  app/llm_saglayici.py) yanıtı dayanak denetiminden (app/dayanak.py) geçmezse
+  yerel danışmana düşülür. Anthropic API'si kullanılmaz.
 - **Veri tazeliği göstergesi:** her kaynağın ne zaman güncellendiği panelde
   görünür
 - **İKAS entegrasyonu:** OAuth2 + Admin GraphQL ile sipariş verisinden profil
@@ -39,8 +42,8 @@ Ortam değişkenlerini hazırlayın:
 copy .env.example .env
 ```
 
-`.env` içinde en az `SECRET_KEY` doldurulmalı. `ANTHROPIC_API_KEY` boş
-bırakılırsa AI danışman devre dışı kalır, uygulamanın kalanı çalışır.
+`.env` içinde en az `SECRET_KEY` doldurulmalı. `LLM_SAGLAYICI` boş ya da `yerel`
+ise hiçbir dış servis çağrılmaz; danışman ve taslaklar yerel olarak üretilir.
 
 Veritabanı şemasını kurun:
 
@@ -138,7 +141,10 @@ app/
   auth.py                 JWT kimlik doğrulama (PyJWT)
   matching.py             Teşvik eşleştirme ve puanlama motoru
   budget.py               Bütçe önerisi hesaplaması
-  rag.py                  Claude API ile AI danışman (+ liste formatına düşme)
+  rag.py                  Arama + danışman yanıt yolu (yerel danışman / isteğe bağlı dış model)
+  yerel_danisman.py       Kayıtlardan kuralla 5 başlıklı danışman yanıtı (varsayılan)
+  llm_saglayici.py        Dış dil modeli katmanı (Gemini / OpenAI uyumlu); rıza sağlayıcıya özel
+  dayanak.py              Dış model yanıtında bağlamda olmayan URL/tutar/oran/tarih/telefon denetimi
   veri_tazeligi.py        Veri kaynaklarının yaş/durum raporu
   rate_limit.py           Kayan pencere hız sınırlama
   logging_setup.py        Merkezi günlükleme yapılandırması
@@ -279,7 +285,7 @@ içerir, tüm veriler `org_id` ile ayrılır. Planlar: FREE / PRO / BUSINESS
 (Stripe ile, şu an test modunda).
 
 Teknoloji: FastAPI, SQLAlchemy 2.0, Pydantic v2, SQLite (üretimde PostgreSQL),
-APScheduler, Anthropic Claude API, Stripe.
+APScheduler, Stripe; isteğe bağlı Google Gemini / OpenAI uyumlu dil modeli.
 
 Ayrıntı: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
@@ -304,9 +310,10 @@ Metin yazılırken iki uyum açığı ortaya çıktı; **ikisi de kapatıldı**:
   böylece ileride eklenecek bir çağrı yerinde unutulması mümkün değil.
   Mevcut şifresiz kayıtlar için: `python -m scripts.sifrele_mevcut_tokenlar`.
 - **Yurt dışına aktarım artık açık rızaya bağlı ve varsayılan KAPALI.**
-  Rıza yoksa `/api/sor` Anthropic'e hiçbir şey göndermez — profil de,
-  sorunun metni de. Kullanıcı liste formatında yanıt alır ve neden AI
-  yanıtı almadığı kendisine söylenir. Rıza `POST /api/organizations/ai-riza`
+  Rıza yoksa `/api/sor` dış servise hiçbir şey göndermez — profil de,
+  sorunun metni de. Kullanıcı yerel danışmanın yanıtını alır; dış servis
+  yapılandırılmışsa neden onun yanıtını almadığı kendisine söylenir. Rıza
+  belirli bir sağlayıcıya verilir (2026-10-11). Rıza `POST /api/organizations/ai-riza`
   ile verilir ve **her zaman geri alınabilir**.
 
   Rıza kayıt sırasında zorunlu tutulmuyor: KVKK açık rızanın özgür iradeyle

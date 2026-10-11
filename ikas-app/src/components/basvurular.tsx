@@ -112,6 +112,9 @@ export function BasvurularSekmesi({ secili, onSec }: { secili: number | null; on
             <span className="block text-xs text-soluk tabular-nums">
               {l.kurum} · {l.tamamlanan}/{l.toplam} tamamlandı
             </span>
+            {l.profil_uyarisi && (
+              <span className="mt-1 block text-xs text-hata [overflow-wrap:anywhere]">⚠ {l.profil_uyarisi}</span>
+            )}
           </button>
         ))}
       </aside>
@@ -254,6 +257,8 @@ function ListeAyrinti({ tesvikId, onDegisti, onKaldirildi }: { tesvikId: number;
           </ul>
         )}
       </Kart>
+
+      {liste.profil_uyarisi && <Bilgi tur="uyari">{liste.profil_uyarisi}</Bilgi>}
 
       {liste.uyari && (
         <Kart>

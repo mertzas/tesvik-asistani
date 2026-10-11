@@ -34,6 +34,19 @@ _TUTAR_NITELIGI_TURU = {
 }
 
 
+GENC_YAS_SINIRI = 29   # kayıtlardaki genç tanımlarının en darı (Halkbank İlk Adım ≤29; KGF genç paketleri ≤35)
+
+
+def profil_etiketleri(profil) -> set[str]:
+    """Profilde işaretli özellikler + kurucu yaşından türetilen genç girişimci etiketi. Yaş 18-29 ise her programın
+    genç tanımına (29 ya da 35) girer; 30-35 arası türetilmez (programın kendi yaş sınırı ayrıca denetlenir)."""
+    etiket = set(getattr(profil, "ozellikler", None) or [])
+    yas = getattr(profil, "kurucu_yasi", None)
+    if yas is not None and 18 <= yas <= GENC_YAS_SINIRI:
+        etiket.add("genc_girisimci")
+    return etiket
+
+
 def company_from_profile(profil) -> CompanyProfile:
     """FinancialProfile -> CompanyProfile.
 
@@ -45,7 +58,7 @@ def company_from_profile(profil) -> CompanyProfile:
         nace_codes=[profil.nace_kodu] if getattr(profil, "nace_kodu", None) else [],
         employees=profil.calisan_sayisi,
         annual_revenue=profil.yillik_ciro,
-        tags=set(getattr(profil, "ozellikler", None) or []),
+        tags=profil_etiketleri(profil),
     )
 
 

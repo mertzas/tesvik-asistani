@@ -1,6 +1,6 @@
 """Yapay zekâsız başvuru ön taslağı ve taslak sihirbazı (2026-10-08).
 
-Neden: Claude taslağı profili ABD'ye gönderdiği için açık rıza, PRO plan ve API anahtarı istiyordu. Taslağın çoğu
+Neden: dil modeli taslağı profili yurt dışına gönderdiği için açık rıza, PRO plan ve API anahtarı istiyordu. Taslağın çoğu
 yapılandırılmış veridir (programın amacı, tutar/oran, başvuru yeri/dönemi, şartlar, belgeler, profil, İKAS toplamları).
 
 Sürüm 2 (kullanıcı geri bildirimi 2026-10-08: "bu böyle olmaz"): cevapsız şablon baştan sona [DOLDURUN] tablosu

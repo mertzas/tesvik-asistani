@@ -1,0 +1,63 @@
+<!-- persona: tekstil | soru: 1507 TÜBİTAK KOBİ Ar-Ge programında proje bütçesi üst sınırı ve destek oranı nedir, çağrı açık mı? -->
+**Kısa cevap:**
+- **1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı** (TUBITAK)
+- Destek: Proje bütçesi en fazla 3.500.000 TL; ilk 5 projede %75 hibe (en az ikisi ortaklı başvuru kaydıyla)
+- Başvuru: 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (29 gün kaldı); başvuru kapanışı 11.11.2026 (31 gün kaldı).
+- Sizin için: profilinize göre engel yok — şartları teyit edin.
+- Program: Ar-Ge, bilimsel ve teknik bilgi birikimini artırmak amacıyla, sistematik bir temelde yürütülen yenilikçi faaliyetler ve oluşan bilgi birikiminin yeni uygulamalarda (ürün, süreç) kullanımıdır. Yenilik ise, bir fikri, geliştirilmiş, iyileştiril
+
+### 1. Şirket & Proje Uygunluk Özeti
+- Faaliyet: imalat (NACE 13.20)
+- Şirket türü: limited şirket
+- Ölçek: küçük işletme [KOBİ Yönetmeliği eşiklerine göre]
+- İl: İzmir
+- Hedefler: yatırım, ihracat, Ar-Ge
+- Sorudan anlaşılan ihtiyaç: Ar-Ge ve ürün geliştirme
+
+### 2. Eşleşen Teşvik ve Hibe Programları
+
+**1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı — TUBITAK**
+- **Başvuru dönemi:** 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (29 gün kaldı); başvuru kapanışı 11.11.2026 (31 gün kaldı). Not: Kapanış 11.11.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 09.11.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı. (duyuru: https://tubitak.gov.tr/sites/default/files/2026-07/1507_KOBI_Ar-Ge_Baslangic_Destek_Programlari_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf, doğrulama 08.10.2026)
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
+- **Kapsam:** yalnız KOBİ'ler
+- **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
+- **Destek:** Proje bütçesi en fazla 3.500.000 TL; ilk 5 projede %75 hibe (en az ikisi ortaklı başvuru kaydıyla)
+- **Hesaplama:** Proje bütçesinin %75'i hibe (geri ödemesiz), proje başına azami 3.500.000 TL. Personel, seyahat, ekipman/yazılım, malzeme, danışmanlık ve hizmet alımı giderlerini kapsar.
+- **Profilinize göre sağlanan şartlar:** KOBİ ölçeğinde sermaye şirketi (limited şirket, küçük işletme)
+- **Kurallar (kayıttan):**
+  - Bu programdan daha önce 5 proje desteği almadım (ilk 5 projenin en az ikisi ortaklı proje olmalıdır; 5 destekten sonra diğer programlara başvurulur) — resmî metin: “Firmaların en az ikisi ortaklı olmak kaydıyla ilk beş projesi desteklenir (İlk beş destek sonrası diğer programlara başvurulmalıdır).”
+  - Ar-Ge faaliyeti başvurudan önce tamamlanmış projeler desteklenmez — resmî metin: “Hayır. Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez.”
+  - Proje bütçesi en fazla 3.500.000 TL olmalı — resmî metin: “Proje bütçesi en fazla 3.500.000 TL’dir.”
+- **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi
+
+**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan …); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (33 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
+- 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (11 gün kaldı); başvuru kapanışı 26.10.2026 (15 gün kaldı)
+- 1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; Başvurular sürekli açıktır, yılın her günü PRODİS (eteydeb.tubitak.gov.tr) üzerinden; çağrılı uluslararası programlarda proje, ilgili çağrının değerlendirme takvimine uygun sunulmalıdır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+
+**Size kapalı ya da başvuruya kapalı programlar:**
+- Kapasite Geliştirme Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)
+- KAPASİTE GELİŞTİRME DESTEK PAKETİ (KGF) — kapalı: bağlı olduğu KOSGEB programının (Kapasite Geliştirme Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
+- 1832 - Sanayide Yeşil Dönüşüm Çağrısı (TUBITAK) — kapalı: yeni başvuru için şu an kapalı (1832 2026-2 çağrısı: yeni başvuru için ön kayıt süresi 08.10.2026 tarihinde doldu; çağrı 12.10.2026 tarihinde kapanıyor (yalnız ön kaydını yapmış olanlar için))
+
+### 3. Darboğazlar ve Kritik Şartlar
+- **Ön kayıt:** 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı için yeni başvuranın ön kayıt son günü 09.11.2026 (29 gün).
+- **1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı:** Başvuruyu yap: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
+- [Genel ilke – teyit edin] Başvuru ya da sözleşme tarihinden önce yapılan harcamalar çoğu programda desteklenmez; harcamaya başlamadan önce kurumun onayını bekleyin.
+- [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
+- [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
+
+### 4. Adım Adım Yol Haritası
+1. Ön kayıt: 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı — son gün 09.11.2026.
+2. Belgeler (1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı): PRODİS sistemi üzerinden proje öneri formu; Şirket kuruluş/faaliyet belgeleri.
+3. Başvuru kanalı: 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi.
+4. İletişim (doğrulanmış): TUBITAK: çağrı merkezi 444 66 90, genel merkez 0 312 298 10 00; Remzi Oğuz Arık Mah. Tunus Cd. No:80 06540 Çankaya / Ankara (doğrulama: https://tubitak.gov.tr/en/node/11658)
+5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+
+### 5. Bilgi Eksikliği / Netleştirme
+Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
+
+*Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
+
+---
+*Bu değerlendirme, Teşvik Asistanı veritabanındaki kayıtlar ve sizin verdiğiniz bilgiler esas alınarak hazırlanmış ön bilgilendirmedir; hukuki, mali veya resmî danışmanlık niteliği taşımaz ve herhangi bir desteğin alınacağına dair taahhüt içermez. Destek programlarının şartları, oranları, üst limitleri ve çağrı takvimleri ilgili mevzuat ve kurum kararlarıyla değişebilir. Başvuru ve harcama kararı vermeden önce güncel çağrı duyurusunu, uygulama esaslarını ve ilgili Karar/Tebliğ metnini resmî kaynaktan teyit ediniz; gerektiğinde yetkili mali müşavir veya hukuk danışmanından görüş alınız. Nihai uygunluk ve destek kararı yalnızca ilgili kurum tarafından verilir.*

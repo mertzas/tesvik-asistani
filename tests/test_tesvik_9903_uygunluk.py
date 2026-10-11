@@ -144,12 +144,12 @@ def test_danisman_baglamina_sistem_degerlendirmesi_eklenir(db_session, monkeypat
     _programlar(db_session)
     gorulen = {}
 
-    def sahte(query, matches, profil, notlar=None, elenen=""):
+    def sahte(query, matches, profil, notlar=None, elenen="", **_kw):
         gorulen["notlar"] = notlar
         gorulen["baglam"] = rag._baglam_metni(matches, profil, notlar)
         return "yanıt"
 
-    monkeypatch.setattr(rag, "_claude_cevap", sahte)
+    monkeypatch.setattr(rag, "_llm_cevap", sahte)
     rag.answer("makine yatırımı için teşvik", {"sektör": "imalat"}, profil_kaydi=_profil("10.71"))
     assert "SİSTEM ÖN DEĞERLENDİRMESİ" in gorulen["baglam"]
     assert any("DÜŞÜK OLASILIK" in n for n in gorulen["notlar"].values())
@@ -206,11 +206,11 @@ def test_elenen_blok_danisman_baglamina_eklenir(db_session, monkeypatch):
     _programlar(db_session)
     gorulen = {}
 
-    def sahte(query, matches, profil, notlar=None, elenen=""):
+    def sahte(query, matches, profil, notlar=None, elenen="", **_kw):
         gorulen["baglam"] = rag._baglam_metni(matches, profil, notlar, elenen)
         return "yanıt"
 
-    monkeypatch.setattr(rag, "_claude_cevap", sahte)
+    monkeypatch.setattr(rag, "_llm_cevap", sahte)
     rag.answer("makine yatırımı için teşvik", {"sektör": "imalat"}, profil_kaydi=_profil("47.11"))
     assert "SİSTEMİN ELEDİĞİ / DÜŞÜK OLASILIK GÖRDÜĞÜ 9903 PROGRAMLARI" in gorulen["baglam"]
     assert "SİSTEMİN ELEDİĞİ" in rag.SISTEM_PROMPTU

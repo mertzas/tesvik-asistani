@@ -53,7 +53,8 @@ def test_isaretleme_kaydedilir_ve_listede_gorunur(client, tesvik):
         [False, True, True, False]
     liste = client.get("/api/basvuru-listesi", headers=h).json()["listeler"]
     assert liste == [{"tesvik_id": 9, "baslik": "Küresel Rekabetçilik", "kurum": "KOSGEB", "aktif_mi": True,
-                      "tamamlanan": 2, "toplam": 3, "guncelleme": liste[0]["guncelleme"]}]
+                      "tamamlanan": 2, "toplam": 3, "guncelleme": liste[0]["guncelleme"],
+                      "profil_uyarisi": None}]
     # işaret kaldırma = tam listeyi yeniden gönderme
     assert client.put("/api/basvuru-listesi/9", headers=h, json={"isaretli": []}).json()["tamamlanan"] == 0
 

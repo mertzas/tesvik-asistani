@@ -68,11 +68,9 @@ class Settings(BaseSettings):
     # etkinleştirme bağlantı + parola ister (hesabın önceden ele geçirilmesine karşı). Kapalıyken eski akış:
     # kayıt hemen oturum açar, var olan e-postaya 400 döner.
     KAYIT_EPOSTA_DOGRULAMA_ZORUNLU: bool = os.getenv("KAYIT_EPOSTA_DOGRULAMA_ZORUNLU", "false").lower() == "true"
-    ANTHROPIC_API_KEY: str = os.getenv("ANTHROPIC_API_KEY", "")
     # Harici hata izleme (app/hata_izleme.py). Boşsa kapalı. KVKK: AB bölgesi DSN'i tercih edin.
     SENTRY_DSN: str = os.getenv("SENTRY_DSN", "")
     SENTRY_ORTAM: str = os.getenv("SENTRY_ORTAM", "production")
-    CLAUDE_MODEL: str = os.getenv("CLAUDE_MODEL", "claude-sonnet-5")
 
     # İKAS Admin App entegrasyonu - client_id/secret İKAS Builders Dashboard'da
     # uygulama kaydi yapilip test magazasi atandiktan sonra elde edilir.
@@ -133,18 +131,18 @@ class Organization(Base):
     is_active = Column(Boolean, default=True)
     webhook_url = Column(String, nullable=True)
 
-    # KVKK: yapay zeka danismani kullanildiginda isletme profili (sektor,
-    # bolge, calisan sayisi, ciro, hedefler, tarim kategorisi, urun turu,
-    # arazi buyuklugu, NACE kodu) yanit uretilmesi icin Anthropic'e (ABD) gonderiliyor.
-    # ozellikler (kadin/genc girisimci vb.) BILEREK gonderilmez.
-    # Bu YURT DISINA AKTARIM'dir ve acik riza gerektirir.
+    # KVKK: yanıtlar varsayılan olarak yerel danışmandan gelir, veri sunucudan çıkmaz. Yönetici yurt dışındaki bir
+    # dil modeli servisi yapılandırırsa (app/llm_saglayici.py) işletme profili (sektör, bölge, çalışan sayısı, ciro,
+    # hedefler, tarım kategorisi, ürün türü, arazi, NACE, şirket türü, kuruluş tarihi, TRL) o servise gider; bu
+    # YURT DIŞINA AKTARIM'dır ve açık rıza gerektirir. ozellikler, kurucu yaşı, ortaklık ve sertifikalar BİLEREK
+    # gönderilmez.
     #
-    # Riza KAYIT SIRASINDA ZORUNLU TUTULMUYOR: KVKK acik rizanin "ozgur
-    # iradeyle" verilmesini arar, hizmete erisimin sartina baglanamaz.
-    # Riza yoksa uygulama calismaya devam eder, yalnizca AI danisman yerine
-    # liste formati kullanilir (bkz. app/main.py sor()).
+    # Rıza KAYIT SIRASINDA ZORUNLU TUTULMUYOR: KVKK açık rızanın "özgür iradeyle" verilmesini arar, hizmete erişimin
+    # şartına bağlanamaz. Rıza belirli bir sağlayıcıya verilir (ai_riza_saglayici = "kod:kurum"); sağlayıcı
+    # değişirse eski rıza geçersizdir (2026-10-11: Anthropic'e verilmiş rızalar Google'a aktarılmaz).
     ai_yurtdisi_riza = Column(Boolean, default=False)
     ai_riza_tarihi = Column(DateTime, nullable=True)
+    ai_riza_saglayici = Column(String(200), nullable=True)
     created_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), index=True)
     updated_at = Column(DateTime, default=lambda: datetime.now(timezone.utc), onupdate=lambda: datetime.now(timezone.utc))
 

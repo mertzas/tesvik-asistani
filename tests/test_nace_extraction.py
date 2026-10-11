@@ -33,21 +33,22 @@ def run(coro):
 
 
 class SahteIstemci:
-    """messages.create çağrılarını kaydeder; sırayla hazır tool_use cevapları döner."""
+    """chat.completions.create çağrılarını kaydeder; sırayla hazır function-call cevapları döner (OpenAI uyumlu)."""
 
     def __init__(self, *cevaplar, hata=None):
         self.cevaplar = list(cevaplar)
         self.cagrilar = []
         self.hata = hata
-        self.messages = SimpleNamespace(create=self._create)
+        self.chat = SimpleNamespace(completions=SimpleNamespace(create=self._create))
 
     async def _create(self, **kw):
         self.cagrilar.append(kw)
         if self.hata and "temperature" in kw:
             raise self.hata
         ham = self.cevaplar.pop(0)
-        blok = SimpleNamespace(type="tool_use", name=ne.TOOL_ADI, input=ham)
-        return SimpleNamespace(content=[blok])
+        cagri = SimpleNamespace(function=SimpleNamespace(name=ne.TOOL_ADI, arguments=json.dumps(ham)))
+        mesaj = SimpleNamespace(tool_calls=[cagri], content=None)
+        return SimpleNamespace(choices=[SimpleNamespace(message=mesaj, finish_reason="tool_calls")])
 
 
 def _kod(prefix, dayanak, guven=0.95):
@@ -210,11 +211,11 @@ def test_temperature_sifir_ve_arac_zorunlu(monkeypatch):
     run(extract_nace_scope(YATAY_METIN, client=istemci, model="m-1"))
     kw = istemci.cagrilar[0]
     assert kw["temperature"] == 0 and kw["model"] == "m-1"
-    assert kw["tool_choice"] == {"type": "tool", "name": ne.TOOL_ADI}
-    assert kw["system"] == SYSTEM_PROMPT
+    assert kw["tool_choice"] == {"type": "function", "function": {"name": ne.TOOL_ADI}}
+    assert kw["messages"][0] == {"role": "system", "content": SYSTEM_PROMPT}
     # gerekçe karardan önce üretilsin diye şemada ilk alan
-    assert list(kw["tools"][0]["input_schema"]["properties"])[0] == "analiz_notu"
-    assert "<program_metni>" in kw["messages"][0]["content"]
+    assert list(kw["tools"][0]["function"]["parameters"]["properties"])[0] == "analiz_notu"
+    assert "<program_metni>" in kw["messages"][1]["content"]
 
 
 def test_temperature_reddeden_modelde_onsuz_dener_ve_ogrenir(monkeypatch):
@@ -228,9 +229,15 @@ def test_temperature_reddeden_modelde_onsuz_dener_ve_ogrenir(monkeypatch):
 
 
 def test_anahtar_yoksa_net_hata(monkeypatch):
-    from app.models import settings
-    monkeypatch.setattr(settings, "ANTHROPIC_API_KEY", "")
+    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
+    monkeypatch.delenv("LLM_API_KEY", raising=False)
     with pytest.raises(ExtractionError):
+        run(extract_nace_scope(YATAY_METIN))
+
+
+def test_varsayilan_yerel_saglayicida_dis_cagri_yok(monkeypatch):
+    monkeypatch.delenv("LLM_SAGLAYICI", raising=False)
+    with pytest.raises(ExtractionError, match="yapılandırılmamış"):
         run(extract_nace_scope(YATAY_METIN))
 
 

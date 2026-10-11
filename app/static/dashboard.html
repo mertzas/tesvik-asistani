@@ -458,6 +458,9 @@
         ul.kl-isler li { display: flex; flex-wrap: wrap; align-items: baseline; }
         ul.kl-isler li .kl-madde { flex: 1 1 auto; }
         .kl-bolum-bilgi { background: #fff8eb; border-radius: 8px; padding: 2px 14px 10px; margin-top: 12px; }
+        .bl-uyari { margin-top: 6px; padding: 6px 10px; border-radius: 5px; background: #fff4e5; color: #8a4b00;
+                    font-size: 13px; overflow-wrap: anywhere; }
+        .kl-profil-uyarisi { margin: 10px 0; }
         .kl-sart { display: flex; gap: 12px; justify-content: space-between; align-items: center; flex-wrap: wrap;
                    padding: 8px 10px; border-radius: 6px; border-left: 3px solid #d8dbef; margin: 4px 0; font-size: 14px; line-height: 1.5; }
         .kl-sart.c-evet { border-left-color: #2e9e6b; background: #f2fbf6; }
@@ -1119,11 +1122,11 @@
                         <p>E-posta: <strong id="ayar-email">—</strong> · Plan: <strong id="ayar-plan">—</strong></p>
                     </div>
                     <div class="ayar-kutu">
-                        <h3>Yapay zekâ danışmanı (KVKK açık rızası)</h3>
-                        <p>Açıkken sorunuz ve işletme profiliniz, yanıt üretilmesi için Anthropic'e (ABD) aktarılır.
-                           Kapalıyken yanıtlar yalnızca veritabanı kayıtlarından üretilir. İstediğiniz zaman geri alabilirsiniz.
+                        <h3>Yanıt servisi ve KVKK açık rızası</h3>
+                        <p id="ayar-ai-aciklama">Danışman yanıtları Teşvik Asistanı'nın yerel danışmanı tarafından, sunucumuzda
+                           yalnız veritabanındaki doğrulanmış kayıtlardan üretilir; verileriniz yurt dışına aktarılmaz.
                            <a href="/kvkk" target="_blank" rel="noopener">Aydınlatma metni</a></p>
-                        <label class="anahtar"><input type="checkbox" id="ayar-riza" data-degisim="rizaDegistir">
+                        <label class="anahtar" id="ayar-riza-kutu" hidden><input type="checkbox" id="ayar-riza" data-degisim="rizaDegistir">
                             <span id="ayar-riza-metin">Kapalı</span></label>
                         <div id="ayar-riza-mesaj"></div>
                     </div>

@@ -128,6 +128,30 @@ def yukle():
     return sonuc
 
 
+SONRAKI_TURLAR = ("fix_veri_2026_10_11_organik_atif_tur24.py", "fix_veri_2026_10_11_basvuru_sahibi_tur26.py")
+
+
+def _sonraki_duzeltme(tid: int):
+    """Sonraki turların bu kayıt için tanımladığı metin düzeltmesi (yoksa None). Her tur modülü `duzelt(metin)` ve
+    düzelttiği kayıtları (`TESVIK_ID` ya da `DUZELTILEN`) tanımlar."""
+    import importlib.util
+    duzeltmeler = []
+    for ad in SONRAKI_TURLAR:
+        spec = importlib.util.spec_from_file_location(ad[:-3], KOK / "scripts" / ad)
+        m = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(m)
+        if tid in getattr(m, "DUZELTILEN", {getattr(m, "TESVIK_ID", None)}):
+            duzeltmeler.append(m.duzelt)
+    if not duzeltmeler:
+        return None
+
+    def zincir(metin: str) -> str:
+        for f in duzeltmeler:
+            metin = f(metin)
+        return metin
+    return zincir
+
+
 def uygula(db, veri: dict, dry_run: bool = True) -> int:
     from app.models import Tesvik
     degisen = 0
@@ -141,6 +165,10 @@ def uygula(db, veri: dict, dry_run: bool = True) -> int:
         # dönmek tekrar çalıştırmada tur20'yi geri alırdı.
         liste = [{**x, "kaynak_url": t.kaynak_url} for x in liste]
         # Sonraki turların eklediği maddeler ("ekleyen" işaretli, ör. tur23 profil şartları) kendi kaynaklarıyla korunur.
+        # Sonraki turların metin düzeltmeleri (tur24: kayıt 77'nin doğrulanamayan "Tebliğ 2024/39" atıfları).
+        duzelt = _sonraki_duzeltme(tid)
+        if duzelt:
+            liste = [{**x, "metin": duzelt(x["metin"])} for x in liste]
         sonraki = [x for x in (t.kontrol_listesi or []) if x.get("ekleyen")]
         liste = [x for x in sonraki if x["tur"] == "sart"] + liste + [x for x in sonraki if x["tur"] != "sart"]
         if t.kontrol_listesi == liste and t.basvuru_bicimi == bicim:

@@ -11,6 +11,8 @@
         // de) burada ikisini de kontrol ediyoruz.
         let authToken = localStorage.getItem("auth_token") || localStorage.getItem("token");
         let currentOrg = null;
+        // Yanıt servisi (/api/yapay-zeka): varsayılan yerel danışman; dış servis yapılandırılmışsa adı, kurumu, ülkesi.
+        let yapayZeka = null;
 
         // Auth check
         if (!authToken) {
@@ -175,13 +177,57 @@
             if (r.ok) setTimeout(ikasKartiYukle, 2500);
         }
 
-        // ---- Ayarlar: hesap bilgisi, AI rıza anahtarı, hesap silme ----
-        function loadSettings() {
+        // ---- Ayarlar: hesap bilgisi, yanıt servisi ve rıza anahtarı, hesap silme ----
+        async function yapayZekaYukle() {
+            try {
+                const r = await fetch(`${API_BASE}/yapay-zeka`, { headers: { "Authorization": `Bearer ${authToken}` } });
+                if (r.ok) yapayZeka = await r.json();
+            } catch (e) {
+                console.error("Yanıt servisi bilgisi alınamadı:", e);
+            }
+            return yapayZeka;
+        }
+
+        // Dış servis yapılandırılmış ve etkin mi (yapay zekâ taslağı ve rıza anahtarı yalnız o zaman görünür).
+        function disServisVar() {
+            return !!(yapayZeka && yapayZeka.saglayici !== "yerel" && yapayZeka.etkin);
+        }
+
+        function disServisAdi() {
+            return yapayZeka ? `${yapayZeka.ad} — ${yapayZeka.kurum}, ${yapayZeka.ulke}` : "";
+        }
+
+        async function loadSettings() {
             if (!currentOrg) return;
             document.getElementById("ayar-email").textContent = currentOrg.email || "—";
             document.getElementById("ayar-plan").textContent = (currentOrg.plan || "free").toUpperCase();
+            await yapayZekaYukle();
+            const aciklama = document.getElementById("ayar-ai-aciklama");
+            const kutu = document.getElementById("ayar-riza-kutu");
             const cb = document.getElementById("ayar-riza");
-            cb.checked = !!currentOrg.ai_yurtdisi_riza;
+            const kvkk = ' <a href="/kvkk" target="_blank" rel="noopener">Aydınlatma metni</a>';
+            if (!disServisVar()) {
+                aciklama.innerHTML = "Danışman yanıtları Teşvik Asistanı'nın yerel danışmanı tarafından, sunucumuzda yalnız "
+                    + "veritabanındaki doğrulanmış kayıtlardan üretilir; verileriniz yurt dışına aktarılmaz, bu nedenle açık "
+                    + "rıza gerekmez." + kvkk;
+                kutu.hidden = true;
+                return;
+            }
+            if (!yapayZeka.riza_gerekli) {
+                aciklama.innerHTML = `Açıkken sorunuz ve işletme profiliniz ${escapeHtml(disServisAdi())} servisinde işlenir
+                    (yurt içi; yurt dışı aktarımı yoktur). Kapatırsanız yanıtlar yerel danışmandan gelir.` + kvkk;
+                kutu.hidden = false;
+                cb.checked = !!yapayZeka.riza_gecerli;
+                document.getElementById("ayar-riza-metin").textContent = cb.checked ? "Açık" : "Kapalı";
+                return;
+            }
+            aciklama.innerHTML = `Açıkken sorunuz ve işletme profiliniz, yanıt üretilmesi için ${escapeHtml(disServisAdi())}
+                servisine aktarılır ve yanıt, kayıtlarda olmayan bir bilgi içermediği denetlendikten sonra gösterilir. Kapalıyken
+                yanıtlar yerel danışmandan gelir ve verileriniz sunucumuzdan çıkmaz. İstediğiniz zaman geri alabilirsiniz.`
+                + (yapayZeka.eski_riza_gecersiz ? " <strong>Daha önce başka bir servise verdiğiniz rıza bu servis için geçerli "
+                    + "değildir; isterseniz yeniden verin.</strong>" : "") + kvkk;
+            kutu.hidden = false;
+            cb.checked = !!yapayZeka.riza_gecerli;
             document.getElementById("ayar-riza-metin").textContent = cb.checked ? "Açık" : "Kapalı";
         }
 
@@ -198,6 +244,7 @@
                 if (!res.ok) throw new Error(hataMetni(data));
                 currentOrg.ai_yurtdisi_riza = !!data.ai_yurtdisi_riza;
                 cb.checked = currentOrg.ai_yurtdisi_riza;
+                await yapayZekaYukle();
                 document.getElementById("ayar-riza-metin").textContent = cb.checked ? "Açık" : "Kapalı";
                 mesaj.innerHTML = `<div class="success">${escapeHtml(data.mesaj || "Kaydedildi.")}</div>`;
             } catch (e) {
@@ -300,6 +347,7 @@
                 if (!res.ok) throw new Error("Failed to load org");
 
                 currentOrg = await res.json();
+                yapayZekaYukle();
                 document.getElementById("user-email").textContent = currentOrg.email;
                 document.getElementById("plan-badge").textContent = currentOrg.plan.toUpperCase();
             } catch (e) {
@@ -764,7 +812,8 @@
                     const yuzde = klYuzde(l);
                     return `<div class="bl-kart">
                         <div><div class="bl-baslik">${escapeHtml(l.baslik)}</div>
-                             <div class="bl-kurum">${escapeHtml(l.kurum)} · ${l.tamamlanan}/${l.toplam} tamam${l.aktif_mi === false ? " · başvuru dönemi kapalı" : ""}</div></div>
+                             <div class="bl-kurum">${escapeHtml(l.kurum)} · ${l.tamamlanan}/${l.toplam} tamam</div>
+                             ${l.profil_uyarisi ? `<div class="bl-uyari">⚠ ${escapeHtml(l.profil_uyarisi)}</div>` : ""}</div>
                         <div class="ilerleme" title="%${yuzde}"><span style="width:${yuzde}%"></span></div>
                         <button type="button" class="ikincil-btn" data-tikla="kontrolListesiAc" data-arg="${escapeHtml(String(l.tesvik_id))}">Aç</button>
                     </div>`;
@@ -796,7 +845,7 @@
 
         let klAcikTaslak = null;
 
-        // data-arg: "sablon" (varsayılan; yapay zekâsız, rıza gerekmez) | "yapay_zeka" (Claude; PRO + açık rıza)
+        // data-arg: "sablon" (varsayılan; yapay zekâsız, rıza gerekmez) | "yapay_zeka" (dış servis; PRO + açık rıza)
         async function taslakOlustur(el) {
             if (klAcikTesvik === null) return;
             const yontem = el.dataset.arg === "yapay_zeka" ? "yapay_zeka" : "sablon";
@@ -1252,6 +1301,7 @@
                     </div>
                 </div>
                 <div class="ilerleme"><span id="kl-cubuk" style="width:${klYuzde(d)}%"></span></div>
+                ${d.profil_uyarisi ? `<div class="bl-uyari kl-profil-uyarisi">⚠ ${escapeHtml(d.profil_uyarisi)}</div>` : ""}
                 ${cagrilarHtml(d.cagrilar || [])}
                 ${d.uyari ? `<div class="onizleme-notu">${escapeHtml(d.uyari)}</div>` : gruplar}
                 <div class="kl-taslak">
@@ -1263,14 +1313,14 @@
                         <div class="kl-taslak-alt yazdirma-gizle">Oluşturma: ${escapeHtml(new Date(d.taslak_tarihi).toLocaleString("tr-TR"))} ·
                             <button type="button" class="ikincil-btn" data-tikla="taslakKopyala">Metni kopyala</button>
                             <button type="button" class="ikincil-btn" data-tikla="sihirbazAc">Sihirbazda düzenle</button>
-                            <button type="button" class="ikincil-btn" data-tikla="taslakOlustur" data-arg="yapay_zeka">Yapay zekâyla yaz</button></div>`
+                            ${disServisVar() ? `<button type="button" class="ikincil-btn" data-tikla="taslakOlustur" data-arg="yapay_zeka">Yapay zekâyla yaz</button>` : ""}</div>`
                     : `<p class="yazdirma-gizle">Birkaç soruyu yanıtlayın (proje, gerekçe, iş adımları, bütçe); yanıtlarınız ve
                             profilinizle kurumun formuna aktarabileceğiniz bir taslak hazırlanır, bütçe toplamı ve talep edilebilecek
                             destek hesaplanır. Rakam uydurulmaz; bilgileriniz hiçbir dış servise gönderilmez.</p>
                         <button type="button" class="birincil-btn yazdirma-gizle" data-tikla="sihirbazAc">Taslak sihirbazını aç</button>
-                        <p class="bolum-aciklama yazdirma-gizle" style="margin-top:10px;">Daha akıcı metin isterseniz:
+                        ${disServisVar() ? `<p class="bolum-aciklama yazdirma-gizle" style="margin-top:10px;">Daha akıcı metin isterseniz:
                             <button type="button" class="ikincil-btn" data-tikla="taslakOlustur" data-arg="yapay_zeka">Yapay zekâyla yaz</button>
-                            (Anthropic, ABD; PRO plan ve açık rıza gerekir; günde en çok 5).</p>`}
+                            (${escapeHtml(disServisAdi())}; PRO plan${yapayZeka.riza_gerekli ? " ve açık rıza" : ""} gerekir; günde en çok 5).</p>` : ""}`}
                     ${d.taslak_kapsami && !d.taslak_kapsami.gerekli && !d.taslak ? `</details>` : ""}
                     <div id="kl-sihirbaz" class="yazdirma-gizle" hidden></div>
                     <div id="kl-taslak-mesaj" class="yazdirma-gizle"></div>

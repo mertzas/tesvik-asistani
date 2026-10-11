@@ -88,6 +88,8 @@ export type ListeOzeti = {
   tamamlanan: number;
   toplam: number;
   guncelleme: string | null;
+  /** Program kapandıysa ya da profile göre başvurulamıyorsa uyarı (app/basvuru_listesi.profil_uyarisi). */
+  profil_uyarisi: string | null;
 };
 
 /** Şart: Evet/Hayır/Emin değilim cevabı; belge/adım: hazır/yapıldı işareti; kural/bilgi: işaretlenmez (app/basvuru_listesi.py). */
@@ -131,9 +133,29 @@ export type Liste = {
   taslak_cevaplar: Cevaplar | null;
   cagrilar: Cagri[];
   uyari: string | null;
+  profil_uyarisi?: string | null;
 };
 
 export type Kurulus = { name: string; email: string; plan: string; ai_yurtdisi_riza: boolean };
+
+/** Yanıt servisi (GET /api/yapay-zeka): varsayılan yerel danışman; dış servis yalnız yapılandırılmışsa. */
+export type YapayZeka = {
+  saglayici: 'yerel' | 'gemini' | 'openai_uyumlu';
+  ad: string;
+  kurum: string;
+  ulke: string;
+  yurtdisi: boolean;
+  riza_gerekli: boolean;
+  etkin: boolean;
+  riza_gecerli: boolean;
+  dis_model_kullaniliyor: boolean;
+  eski_riza_gecersiz: boolean;
+};
+
+/** Dış dil modeli taslağı kullanılabilir mi (servis yapılandırılmış ve etkin). */
+export function disServisVar(yz: YapayZeka | null): boolean {
+  return !!yz && yz.saglayici !== 'yerel' && yz.etkin;
+}
 
 /** Kontrol listesi + başvuru dönemleri + taslak Word dosyası (GET /api/basvuru-listesi/{id}/docx). */
 export async function wordIndir(tesvikId: number): Promise<void> {
@@ -161,6 +183,7 @@ export const api = {
   baglantiKes: () => istek<{ mesaj: string }>('/api/ikas/baglanti', { method: 'DELETE' }),
   panel: () => istek<PanelYaniti>('/api/ikas/panel'),
   kurulus: () => istek<Kurulus>('/api/organizations/me'),
+  yapayZeka: () => istek<YapayZeka>('/api/yapay-zeka'),
   riza: (riza: boolean) => istek<{ mesaj: string }>('/api/organizations/ai-riza', { method: 'POST', body: JSON.stringify({ riza }) }),
   listeler: () => istek<{ listeler: ListeOzeti[] }>('/api/basvuru-listesi'),
   liste: (id: number) => istek<Liste>(`/api/basvuru-listesi/${id}`),

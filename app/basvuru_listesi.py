@@ -27,12 +27,11 @@ from typing import Literal
 from pydantic import BaseModel, Field
 from sqlalchemy.orm import Session
 
-from app import basvuru_taslagi
+from app import basvuru_taslagi, llm_saglayici
 from app.sablon_taslak import KURAL
 from app.cagrilar import program_cagrilari
 from app.auth import get_current_org
-from app.models import (BasvuruTakibi, FinancialProfile, IkasBaglanti, Organization, PlanType, Tesvik, get_db,
-                        settings)
+from app.models import BasvuruTakibi, FinancialProfile, IkasBaglanti, Organization, PlanType, Tesvik, get_db
 from app.rate_limit import org_hiz_siniri, sayac as hiz_sayaci
 
 router = APIRouter(prefix="/api/basvuru-listesi", tags=["başvuru kontrol listesi"])
@@ -42,7 +41,7 @@ ONEK = {"sart": "s", "belge": "b", "adim": "a", "kural": "k", "bilgi": "i"}
 ISARETLENIR = {"belge", "adim"}
 CEVAPLAR = ("evet", "hayir", "bilmiyorum")
 EN_COK_MADDE = 100
-GUNLUK_TASLAK_SINIRI = 5  # kuruluş başına; her taslak bir ücretli Claude çağrısı
+GUNLUK_TASLAK_SINIRI = 5  # kuruluş başına; her taslak bir ücretli dış model çağrısı
 
 
 def _anahtar(tur: str, metin: str) -> str:
@@ -125,6 +124,22 @@ def _yanit(t: Tesvik, kayit: BasvuruTakibi | None) -> dict:
     }
 
 
+def profil_uyarisi(t: Tesvik, profil: FinancialProfile | None) -> str | None:
+    """Takipteki program artık kapalıysa ya da profile göre başvurulamıyorsa kullanıcıya gösterilecek uyarı
+    (2026-10-11: profil alanları eklendikten sonra elenen Organik Tarım "Başvurularım"da uyarısız kalıyordu)."""
+    from app.matching import uygunluk_engeli
+    from app.yerel_danisman import kullanici_durum_notu
+    if t.aktif_mi is False:
+        neden = kullanici_durum_notu(t.durum_notu)
+        return "Bu program şu an başvuruya açık değil" + (f": {neden}." if neden else "; güncel durumu kurumdan teyit edin.")
+    engel = uygunluk_engeli(t, profil) if profil is not None else None
+    return f"Profilinize göre bu programa başvuramazsınız: {engel}. Profiliniz değiştiyse güncelleyin." if engel else None
+
+
+def _profil(db: Session, org: Organization) -> FinancialProfile | None:
+    return db.query(FinancialProfile).filter(FinancialProfile.org_id == org.id).first()
+
+
 def _tesvik(db: Session, tesvik_id: int) -> Tesvik:
     t = db.get(Tesvik, tesvik_id)
     if t is None:
@@ -178,19 +193,22 @@ def takip_edilenler(current_org: Organization = Depends(get_current_org), db: Se
     kayitlar = (db.query(BasvuruTakibi).filter(BasvuruTakibi.org_id == current_org.id)
                 .order_by(BasvuruTakibi.guncelleme.desc()).all())
     sonuc = []
+    profil = _profil(db, current_org)
     for k in kayitlar:
         t = db.get(Tesvik, k.tesvik_id)
         if t is None:
             continue
         y = _yanit(t, k)
         sonuc.append({"tesvik_id": t.id, "baslik": t.baslik, "kurum": t.kurum, "aktif_mi": t.aktif_mi,
-                      "tamamlanan": y["tamamlanan"], "toplam": y["toplam"], "guncelleme": y["guncelleme"]})
+                      "tamamlanan": y["tamamlanan"], "toplam": y["toplam"], "guncelleme": y["guncelleme"],
+                      "profil_uyarisi": profil_uyarisi(t, profil)})
     return {"listeler": sonuc}
 
 
 @router.get("/{tesvik_id}")
 def liste_getir(tesvik_id: int, current_org: Organization = Depends(get_current_org), db: Session = Depends(get_db)):
-    return _yanit(_tesvik(db, tesvik_id), _kayit(db, current_org, tesvik_id))
+    t = _tesvik(db, tesvik_id)
+    return {**_yanit(t, _kayit(db, current_org, tesvik_id)), "profil_uyarisi": profil_uyarisi(t, _profil(db, current_org))}
 
 
 @router.get("/{tesvik_id}/docx", dependencies=[Depends(org_hiz_siniri(30))])
@@ -251,26 +269,28 @@ def taslak_olustur(tesvik_id: int, girdi: TaslakGirdisi | None = None,
                    yontem: str = Query("sablon", pattern="^(sablon|yapay_zeka)$"),
                    current_org: Organization = Depends(get_current_org), db: Session = Depends(get_db)):
     """Başvuru ön taslağı. yontem=sablon (varsayılan, 2026-10-08): yapay zekâsız, kayıtlı verilerden şablonla
-    (app/sablon_taslak.py); plan, rıza ve servis gerektirmez, veri yurt dışına çıkmaz. yontem=yapay_zeka: Claude ile
-    (app/basvuru_taslagi.py); koşullar ücretli çağrıdan ÖNCE sırayla denetlenir: PRO+ plan, açık rıza (profil
-    Anthropic'e/ABD'ye gider), kayıtlı profil, yapılandırılmış servis, günlük sınır."""
+    (app/sablon_taslak.py); plan, rıza ve servis gerektirmez, veri yurt dışına çıkmaz. yontem=yapay_zeka: yapılandırılmış
+    dış dil modeliyle (app/basvuru_taslagi.py, app/llm_saglayici.py); koşullar ücretli çağrıdan ÖNCE sırayla
+    denetlenir: PRO+ plan, yapılandırılmış servis, o sağlayıcıya verilmiş açık rıza, kayıtlı profil, günlük sınır."""
     if yontem == "sablon":
         return _sablon_taslak(tesvik_id, current_org, db, girdi.cevaplar if girdi else None)
     if current_org.plan == PlanType.FREE:
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN,
                             detail="Başvuru taslağı PRO ve üzeri planlarda kullanılabilir.")
-    if not current_org.ai_yurtdisi_riza:
+    saglayici = llm_saglayici.saglayici()
+    if not llm_saglayici.etkin_mi(saglayici):
+        raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+                            detail="Yapay zekâ servisi bu sunucuda yapılandırılmamış; şablon taslağını kullanın.")
+    if not llm_saglayici.riza_gecerli_mi(current_org, saglayici):
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN,
-                            detail="Taslak, işletme profilinizi yapay zekâ servisine (Anthropic, ABD) gönderir. "
-                                   "Ayarlar bölümünden açık rızanızı verirseniz kullanabilirsiniz.")
+                            detail=f"Taslak, işletme profilinizi yapay zekâ servisine ({saglayici.ad}, "
+                                   f"{saglayici.kurum}, {saglayici.ulke}) gönderir. Ayarlar bölümünden bu servise "
+                                   "açık rızanızı verirseniz kullanabilirsiniz.")
     t = _tesvik(db, tesvik_id)
     profil_row = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
     if profil_row is None:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND,
                             detail="Önce Profil & Öneriler bölümünden işletme profilinizi kaydedin.")
-    if not settings.ANTHROPIC_API_KEY:
-        raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
-                            detail="Yapay zekâ servisi bu sunucuda yapılandırılmamış.")
     izin, _ = hiz_sayaci.izin_ver(f"taslak:{current_org.id}", GUNLUK_TASLAK_SINIRI, 86400)
     if not izin:
         raise HTTPException(status_code=status.HTTP_429_TOO_MANY_REQUESTS,
@@ -293,7 +313,7 @@ def taslak_olustur(tesvik_id: int, girdi: TaslakGirdisi | None = None,
     if kayit is None:
         kayit = BasvuruTakibi(org_id=current_org.id, tesvik_id=tesvik_id, isaretli=[], olusturma=simdi)
         db.add(kayit)
-    kayit.taslak, kayit.taslak_tarihi, kayit.taslak_model = metin, simdi, settings.CLAUDE_MODEL[:60]
+    kayit.taslak, kayit.taslak_tarihi, kayit.taslak_model = metin, simdi, f"{saglayici.kod}:{saglayici.model}"[:60]
     kayit.guncelleme = simdi
     db.commit()
     db.refresh(kayit)

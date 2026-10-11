@@ -35,6 +35,24 @@ GIDERILEBILIR = {"kosgeb_kaydi", "dys_kaydi", "e_imza", "iskur_kaydi", "cks_kayd
                  "uygulamali_girisimcilik_sertifikasi", "marka_tescili"}
 SISTEM_ALANLARI = {"sirket_turu", "olcek", "calisan_sayisi", "yillik_ciro_tl", "isletme_yasi_yil", "nace", "faaliyet", "il",
                    "bolge_9903", "trl", "arazi_dekar", "urun"}
+# --profil-alanlari (2026-10-11): profil formuna eklenen kurucu yaşı, başka şirkette ortaklık ve sertifika bilgisi
+# sisteme verilir (kullanıcı formu doldurmuş varsayılır); bu alanlar "sistemin bildiği" alanlara katılır.
+PROFIL_ALANLARI = "--profil-alanlari" in sys.argv
+if PROFIL_ALANLARI:
+    SISTEM_ALANLARI |= {"kurucu_yasi", "baska_sirkette_ortak_degil"}
+
+
+def sistem_profili(p: dict) -> dict:
+    """esles'e giden FinancialProfile alanları; --profil-alanlari ile gerçek profilden yeni alanlar eklenir."""
+    s = dict(p["sistem"])
+    if PROFIL_ALANLARI:
+        g = p["gercek"]
+        s["kurucu_yasi"] = g.get("kurucu_yasi")
+        if "baska_sirkette_ortak_degil" in g:
+            s["baska_sirkette_ortak"] = not g["baska_sirkette_ortak_degil"]
+        if s.get("sektor") == "tarim":
+            s["sertifikalar"] = ["organik_sertifika"] if "organik_sertifika" in g.get("belge", set()) else ["hicbiri"]
+    return s
 KISIM = [("A", 1, 3), ("B", 5, 9), ("C", 10, 33), ("D", 35, 35), ("E", 36, 39), ("F", 41, 43), ("G", 45, 47), ("H", 49, 53),
          ("I", 55, 56), ("J", 58, 63), ("K", 64, 66), ("L", 68, 68), ("M", 69, 75), ("N", 77, 82), ("P", 85, 85),
          ("Q", 86, 88), ("R", 90, 93), ("S", 94, 96)]
@@ -205,7 +223,7 @@ def olc():
     baslik = {t.id: t.baslik for t in db.query(Tesvik).all()}
     sonuc = []
     for p in PROFILLER:
-        fp = FinancialProfile(**p["sistem"])
+        fp = FinancialProfile(**sistem_profili(p))
         es = esles(fp, db, limit=30)
         oneri = [e.tesvik.id for e in es]
         g, gs = gercek_profil(p), gercek_profil(p, yalniz_sistem=True)

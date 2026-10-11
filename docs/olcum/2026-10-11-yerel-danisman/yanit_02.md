@@ -22,8 +22,8 @@
 
 **Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
 - TARIM KEFALET DESTEK PROGRAMI (KGF): İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi 20 Milyon TL (azami 60 ay), 12 ay ödemesiz; %80 kefalet; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Hayvancılık Destekleri (Tarım Bakanlığı): Birim tutarlar 8760 sayılı CB Kararı (2024-2026 Hayvancılık Desteklemeleri, RG 26/7/2024) ekindedir; sistemde teyit edilemedi (taranmış PDF); 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim) (Tarım Bakanlığı): Dekar başına 734,00–954,20 TL (2026): temel destek + planlı üretim desteği; mercimek, nohut, mısır (dane) katsayı 1,0 → 734,00 TL/da; Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Hayvancılık Destekleri (Tarım Bakanlığı): Birim tutarlar 8760 sayılı CB Kararı (2024-2026 Hayvancılık Desteklemeleri, RG 26/7/2024) ekindedir; birim tutarlar kayıtlarımızda yok, Karar ekinden teyit edin; 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim) (Tarım Bakanlığı): arpa, buğday, çavdar, tritikale, yulaf 1,3 → 954,20 TL/da. Sertifikalı tohum desteği ayrıca. Profilinizdeki 180 dekar için: 954,20 TL/da × 180 da = 171.756,00 TL (kesin tutarı kurum hesaplar); yalnız temel destek (planlı üretim şartı sağlanmazsa): 477,10 TL/da × 180 da = 85.878,00 TL; tutarın planlı üretim desteği kısmı, kayda göre ürünün havzada planlanan ürün olmasına bağlıdır; Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (TARIM KEFALET DESTEK PROGRAMI): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
@@ -38,8 +38,7 @@ Sorduğunuz program şu an size açık olmadığından adımlar, açık alternat
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. NACE faaliyet kodunuz nedir? — sektör kısıtlı programlarda (imalat, tarım, turizm) uygunluğu belirler.
-2. TARIM KEFALET DESTEK PROGRAMI: “Tarım, ormancılık veya balıkçılık sektöründe faaliyet gösteren gerçek veya tüzel kişi işletme olmak” şartını sağlıyor musunuz?
+1. TARIM KEFALET DESTEK PROGRAMI: “Tarım, ormancılık veya balıkçılık sektöründe faaliyet gösteren gerçek veya tüzel kişi işletme olmak” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

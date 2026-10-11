@@ -171,13 +171,16 @@ def test_sema_dogrulama():
 
 def test_profil_ucu_alanlari_kaydeder_ve_danismana_tasir(client, monkeypatch):
     import app.main as anamodul
-    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")   # profil yalnız rızalı dış servise gider
+    monkeypatch.setenv("LLM_SAGLAYICI", "ozel_sunucu")   # profil yalnız modeli açmış kuruluşta modele gider
+    monkeypatch.setenv("LLM_BASE_URL", "http://127.0.0.1:9/v1")
+    monkeypatch.setenv("LLM_MODEL", "test-model")
     monkeypatch.setenv("LLM_API_KEY", "test")
     gorulen = {}
     monkeypatch.setattr(anamodul, "answer", lambda soru, profil=None, llm_kullan=True, **kw: gorulen.update(profil=profil) or "y")
     r = client.post("/api/auth/signup", json={"email": "g1@example.com", "password": "GucluSifre123",
-                                              "full_name": "G", "company_name": "G", "ai_yurtdisi_riza": True})
+                                              "full_name": "G", "company_name": "G"})
     h = {"Authorization": f"Bearer {r.json()['access_token']}"}
+    assert client.post("/api/organizations/ai-riza", json={"riza": True}, headers=h).status_code == 200
     r = client.put("/api/profil", headers=h, json={"sektor": "arge", "sirket_turu": "yok", "trl": 4,
                                                    "kurulus_tarihi": "2025-05-01"})
     assert r.status_code == 200 and r.json()["sirket_turu"] == "yok" and r.json()["trl"] == 4

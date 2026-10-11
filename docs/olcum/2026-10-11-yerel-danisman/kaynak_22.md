@@ -175,7 +175,7 @@ HUKS ÖN SKORU (sistem hesapladı, profil verisinden): 30/50 değerlendirilebile
 - NACE kodu & şirket statüsü: 15/25 — şahıs işletmesi: KOSGEB programlarına açık; sermaye şirketi şartı arayan TÜBİTAK sanayi programları için şirket dönüşümü gerekir
 - Teknoloji hazırlık seviyesi (TRL): değerlendirilemedi — TRL profilde yok (1-3 fikir/araştırma, 4-6 prototip/doğrulama, 7-9 ticarileşme)
 - Finansal & nakit akışı uyumu: 15/25 — yıllık ciro 900.000 TL
-- Ekip & Ar-Ge niteliği: değerlendirilemedi — ekip ve proje niteliği verisi sistemde yok; danışman yalnızca sorudaki bilgiden nitel yorum yapar, puan vermez
+- Ekip & Ar-Ge niteliği: değerlendirilemedi — ekip ve proje niteliği profilde yok; bu bileşen puanlanmaz (başvuruda kurum değerlendirir)
 SİSTEMDE KAYDI OLMAYAN PROGRAMLAR (bunlar için oran/limit/şart VERME; resmî kaynaktan teyit istemekle yetin): KOSGEB Yurt Dışı Pazar Destek Programı; TTGV programları; Kalkınma Ajansı proje teklif çağrıları
 MEVZUAT NOTU (doğrulanmış): Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1/2026'dan itibaren 10962 sayılı Karar kapsamındadır; 5447 (E-Turquality) ve 5448 sayılı Kararlar yürürlükten kaldırılmıştır. KOSGEB Ar-Ge/Ür-Ge/İnovasyon ve KOBİGEL programları yürürlükten kaldırılmıştır (kayıtları 'kapalı' olarak sistemde).
 

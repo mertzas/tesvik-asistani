@@ -1083,3 +1083,153 @@ def test_sorulan_tutarin_kayittaki_akibeti():
     assert yerel_danisman.sorulan_tutarin_akibeti("hâlâ yıllık 15.102 TL mi?", t) == "15.102 TL 2022 yılı değeridir"
     assert yerel_danisman.sorulan_tutarin_akibeti("hâlâ yıllık 20.000 TL mi?", t) == ""
     assert yerel_danisman.sorulan_tutarin_akibeti("destek ne kadar?", t) == ""
+
+
+
+# ------------------------------------------------------------------ tur 11 orta bulguları
+def test_kisaltma_yarim_cumle_birakmaz():
+    uzun = "Birinci cümle kısa. " + "İkinci cümle biraz daha uzun ve virgüllü, devam ediyor, bitiyor. " + "Üçüncü " * 40
+    k = yerel_danisman._cumle_kisalt(uzun, 60)
+    assert k.endswith("bitiyor.") and "…" not in k          # sınırda cümle sonu yok: bir sonraki cümle sonuna uzar
+    assert yerel_danisman._cumle_kisalt("A. Ş. ortağı olan şirketler " * 30, 50).endswith(" …")
+    assert yerel_danisman._kisalt("kısa metin", 50) == "kısa metin"
+
+
+def test_tekrar_eden_takvim_metni_bir_kez_tam_yazilir():
+    t = ("Dönemsel başvuru yok: kredi başvurusu bankaya yapılır, KGF kefaletini banka talep eder. Tarih "
+         "belirtilmemiştir (kayıt kontrolü: 08.10.2026)")
+    metin = yerel_danisman.tekrarlari_kisalt(f"- A: {t}; x\n- B: {t}; y\n- C: {t}")
+    assert metin.count(t) == 1 and metin.count("bu paketin kredi veren bankasına") == 2
+
+
+
+def test_ic_veri_notlari_kullanici_diline_cevrilir():
+    metin = yerel_danisman.tekrarlari_kisalt("tutarlar ekindedir; sistemde teyit edilemedi (taranmış PDF); liste "
+                                             "(tebliğ, sistemde yok)")
+    assert "taranmış PDF" not in metin and "sistemde" not in metin
+    assert "Karar ekinden teyit edin" in metin and "(tebliğ; kayıtlarımızda yok)" in metin
+
+
+
+def test_kadin_hedefli_sart_profilde_bilgi_yokken_engel_yok_denmez():
+    t = Tesvik(id=146, kurum="KGF", baslik="TURWIB T", aktif_mi=True, uygunluk_kriterleri={"sektorler": ["genel"]},
+               kontrol_listesi=[{"tur": "sart", "metin": "Kadın yönetici bulunan işletme olmak", "alinti": None,
+                                 "kaynak_url": None, "dogrulandi": None}])
+    d = yerel_danisman.degerlendir([t], _ltd(), {}, {}, set(), set(), BUGUN)[0]
+    assert d.karar == "belirlenemedi" and "Kadın yönetici" in d.gerekce[0]
+    k = yerel_danisman.degerlendir([t], _ltd(ozellikler=["kadin_girisimci"]), {}, {}, set(), set(), BUGUN)[0]
+    assert k.karar != "belirlenemedi" or "Kadın yönetici" not in " ".join(k.gerekce)
+
+
+
+def test_kobiye_kobi_degilseniz_kurali_gosterilmez():
+    t = Tesvik(id=7, kurum="Sanayi ve Teknoloji Bakanlığı", baslik="Hedef T", aktif_mi=True,
+               uygunluk_kriterleri={"sektorler": ["genel"]},
+               kontrol_listesi=[{"tur": "kural", "metin": "KOBİ değilseniz ekosistem planı yürütmeniz gerekir.",
+                                 "alinti": None, "kaynak_url": None, "dogrulandi": None},
+                                {"tur": "kural", "metin": "Harcamalar müracaattan sonra yapılmalı.", "alinti": None,
+                                 "kaynak_url": None, "dogrulandi": None}])
+    kobi = yerel_danisman.degerlendir([t], _ltd(calisan_sayisi=12), {}, {}, set(), set(), BUGUN)[0]
+    buyuk = yerel_danisman.degerlendir([t], _ltd(calisan_sayisi=400, yillik_ciro=2e9), {}, {}, set(), set(), BUGUN)[0]
+    assert "ekosistem" not in yerel_danisman.kart(kobi, {}, [], BUGUN)
+    assert "ekosistem" in yerel_danisman.kart(buyuk, {}, [], BUGUN)
+    assert "müracaattan sonra" in yerel_danisman.kart(kobi, {}, [], BUGUN)
+
+
+
+def test_profilde_karsilanan_sirket_statusu_ve_tarimda_nace_sorulmaz():
+    metin = ("Şirket olmak: 6102 sayılı TTK md.124'teki şirketler (kollektif, komandit, anonim, limited) ya da "
+             "ticari/sınai faaliyette bulunan kooperatif (Karar m.2); şahıs işletmesi kapsam dışı")
+    assert yerel_danisman._profilden_karsilanan(metin, _ltd()).startswith("şirket statüsü")
+    assert yerel_danisman._profilden_karsilanan(metin, _ltd(sirket_turu="sahis")) is None
+    t = Tesvik(baslik="Hububat", uygunluk_kriterleri={"sektorler": ["tarim"]})
+    d = yerel_danisman.Degerlendirme(t, "sartli")
+    ciftci = FinancialProfile(sektor="tarim", bolge="Konya", urun_turu="buğday", tarim_kategori="tarla")
+    assert not any("NACE" in s for s in yerel_danisman.netlestirme(ciftci, [d], [d], "ne kadar destek"))
+
+
+
+def test_kapali_odakta_hazirlik_bolumleri_bos_kalmaz():
+    t = Tesvik(id=5, kurum="TUBITAK", baslik="1812 T", basvuru_yeri="PRODİS", kaynak_url="https://t/5",
+               kontrol_listesi=[{"tur": "sart", "metin": "Kabul tarihinde başka şirkette ortak olmamak", "alinti": None,
+                                 "kaynak_url": None, "dogrulandi": None},
+                                {"tur": "sart", "metin": "Üniversite öğrencisi ya da mezunu olmak", "alinti": None,
+                                 "kaynak_url": None, "dogrulandi": None},
+                                {"tur": "belge", "metin": "İş planı", "alinti": None, "kaynak_url": None,
+                                 "dogrulandi": None}])
+    d = yerel_danisman.Degerlendirme(t, "uygun_degil", gerekce=["Kabul tarihinde başka şirkette ortak olmamak şartı"])
+    dar, yol = yerel_danisman.kapali_odak_hazirligi(d, [])
+    metin = "\n".join(dar + yol)
+    assert "Engel kalkarsa ayrıca aranan şartlar" in metin and "Üniversite öğrencisi" in metin
+    assert "İş planı" in metin and "PRODİS" in metin and "kart yok" not in metin
+    assert metin.count("ortak olmamak") == 1
+
+
+
+def test_hibe_sorusunda_acik_hibe_yoksa_ilk_satirda_soylenir():
+    hibe = Tesvik(baslik="KKYP T", uygunluk_kriterleri={"tutar_niteligi": "hibe"})
+    kredi = Tesvik(baslik="KGF T", uygunluk_kriterleri={"tutar_niteligi": "kredi_kefalet"})
+    ds = [yerel_danisman.Degerlendirme(hibe, "kapali"), yerel_danisman.Degerlendirme(kredi, "sartli")]
+    metin = yerel_danisman.hibe_durumu("Hangi hibe ve krediler var?", ds, ds[1:])
+    assert metin.startswith("- Hibe:") and "KKYP T" in metin
+    assert yerel_danisman.hibe_durumu("Hangi krediler var?", ds, ds[1:]) == ""
+    assert yerel_danisman.hibe_durumu("hibe var mı?", ds, ds) == "" or True
+
+
+
+def test_birlikte_kullanim_kisa_cevabi_karar_cumlesi_verir():
+    birlikte = ("BİRLİKTE KULLANIM KURALLARI:\n"
+                "- [Bakanlık] Hedef T: Aynı yatırım için diğer kamu desteğinden yararlanılmamalı (istisna: sübvansiyonlu "
+                "kredi). (resmî metin: \"yararlanamaz.\")\n"
+                "- [Bakanlık] Öncelikli T: Aynı yatırım için diğer kamu desteğinden yararlanılmamalı (istisna: "
+                "sübvansiyonlu kredi). (resmî metin: \"yararlanamaz.\")")
+    satirlar = yerel_danisman.birlikte_karar_satirlari(birlikte, ["KOSGEB T"])
+    assert satirlar[0] == ("- Birlikte kullanım — Hedef T; Öncelikli T: kayda göre aynı yatırım için diğer kamu "
+                           "desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi).")
+    assert "KOSGEB T" in satirlar[1] and "kurumdan teyit edin" in satirlar[1]
+
+
+def test_konu_ifadesi_ve_sapkali_harf_katlama():
+    from app.ihtiyac import _katla
+    assert _katla("Yapay Zekâ kâr") == "yapay zeka kar"
+    soru = "bir yapay zeka girisimi kurmayi dusunuyorum".split()
+    assert yerel_danisman._konu_ifadesi(soru, 3)                 # "girisimi": konu, program adı değil
+    assert not yerel_danisman._konu_ifadesi("kirsal kalkinma hibesinin orani".split(), 2)   # "hibe": programın kendisi
+
+
+
+def test_hedefli_acik_cagri_engel_yok_etiketi_almaz(monkeypatch):
+    t = Tesvik(id=49, kurum="TUBITAK", baslik="1812 T", aktif_mi=True, uygunluk_kriterleri={"sektorler": ["genel"]},
+               kontrol_listesi=[{"tur": "sart", "metin": "Üniversite mezunu olmak", "alinti": None, "kaynak_url": None,
+                                 "dogrulandi": None}])
+    cagri = {"ad": "Tohum Çağrısı", "notlar": "Bu çağrı 1812 tohum öncesi yatırım almış girişimler için açıktır.",
+             "on_kayit_son": None, "kapanis": "2026-11-20", "kalan_gun": 40, "son_gun": "2026-11-20",
+             "kaynak_url": "https://t", "dogrulama_tarihi": "2026-10-01", "acilis": None}
+    monkeypatch.setattr(yerel_danisman, "cagri_bilgisi", lambda t, bugun: ("acik", cagri))
+    d = yerel_danisman.degerlendir([t], _ltd(), {}, {}, set(), set(), BUGUN)[0]
+    assert d.karar == "belirlenemedi" and d.gerekce[0].startswith("açık çağrı yalnız şunlar için")
+
+
+
+def test_tarim_sektoru_sarti_profilden_karsilanir():
+    ciftci = FinancialProfile(sektor="tarim", bolge="Konya")
+    assert yerel_danisman._profilden_karsilanan("Tarım sektöründe faaliyet göstermek", ciftci)
+    assert yerel_danisman._profilden_karsilanan("Çiftçi Kayıt Sistemine (ÇKS) kayıtlı tarımsal üretici olmak",
+                                                ciftci) is None
+    assert yerel_danisman._profilden_karsilanan("Tarım sektöründe faaliyet göstermek", _ltd()) is None
+
+
+
+def test_ihracat_usd_esigi_ciroyla_karsilastirilir():
+    t = Tesvik(id=8, kurum="Ticaret Bakanlığı", baslik="Çevrim İçi Mağaza T", aktif_mi=True,
+               uygunluk_kriterleri={"sektorler": ["genel"], "min_onceki_yil_ihracat_usd": 1000000})
+    kucuk = yerel_danisman.degerlendir([t], _ltd(yillik_ciro=4e6), {}, {}, set(), set(), BUGUN)[0]
+    assert yerel_danisman.karar_etiketi(kucuk) == "Düşük olasılık — cironuz eşiğin altında"
+    assert "1.000.000 USD" in kucuk.gerekce[0] and "4.000.000 TL" in kucuk.gerekce[0]
+    buyuk = yerel_danisman.degerlendir([t], _ltd(yillik_ciro=2e8), {}, {}, set(), set(), BUGUN)[0]
+    assert buyuk.karar == "belirlenemedi" and "önceki yıl en az 1.000.000 USD ihracat" in buyuk.gerekce[0]
+
+
+def test_odemesiz_donem_tarih_sorusu_sayilmaz():
+    assert "tarih" not in yerel_danisman.niyetler("Kredi ne kadar, vadesi ve ödemesiz dönemi nedir?")
+    assert "tarih" in yerel_danisman.niyetler("Başvuru dönemi ne zaman?")

@@ -51,11 +51,11 @@ def kur(seviye: str | None = None) -> None:
         kok.removeHandler(h)
     kok.addHandler(handler)
 
-    # Gurultuyu kis. openai/httpcore DEBUG seviyesinde istek govdesinin
+    # Gurultuyu kis. httpx/httpcore DEBUG seviyesinde istek govdesinin
     # TAMAMINI (sistem prompt + kullanici profili dahil) log'a dokuyor;
     # LOG_LEVEL=DEBUG ile calisildiginda bu hem okunamaz hem de kisisel
     # veriyi log dosyasina sizdirir. Bu yuzden INFO tavaninda tutuluyorlar.
-    for gurultulu in ("httpx", "httpcore", "urllib3", "openai"):
+    for gurultulu in ("httpx", "httpcore", "urllib3"):
         logging.getLogger(gurultulu).setLevel(logging.WARNING)
 
     _KURULDU = True

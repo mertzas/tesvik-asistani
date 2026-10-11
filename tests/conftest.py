@@ -179,20 +179,20 @@ class _DisModel:
             model.cagrilar.append(k)
             if model.hata:
                 raise model.hata
-            if k.get("stream"):
-                yarisi = len(model.metin) // 2
-                return iter([N(choices=[N(delta=N(content=model.metin[:yarisi]), finish_reason=None)]),
-                             N(choices=[N(delta=N(content=model.metin[yarisi:]), finish_reason=model.durma)])])
+            # gerçek sunucu gibi istemin tamamını gördüğünü bildirir (llm_saglayici kesik istem korumasından geçer)
+            giris = sum(len(m.get("content") or "") for m in k.get("messages") or []) // 3
             return N(choices=[N(message=N(content=model.metin), finish_reason=model.durma)],
-                     usage=N(prompt_tokens=100, completion_tokens=50))
+                     usage=N(prompt_tokens=giris, completion_tokens=50))
         return N(chat=N(completions=N(create=create)))
 
 
 @pytest.fixture
 def dis_model(monkeypatch):
-    """Gemini yapılandırılmış sunucu + sahte istemci (ağ çağrısı yok)."""
+    """Kendi sunucumuzdaki model yapılandırılmış sunucu + sahte istemci (ağ çağrısı yok)."""
     from app import llm_saglayici
-    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
+    monkeypatch.setenv("LLM_SAGLAYICI", "ozel_sunucu")
+    monkeypatch.setenv("LLM_BASE_URL", "http://127.0.0.1:9/v1")
+    monkeypatch.setenv("LLM_MODEL", "test-model")
     monkeypatch.setenv("LLM_API_KEY", "test-anahtar")
     model = _DisModel()
     monkeypatch.setattr(llm_saglayici, "_istemci", model.istemci)

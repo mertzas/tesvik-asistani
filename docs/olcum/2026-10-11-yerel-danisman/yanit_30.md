@@ -30,7 +30,7 @@
 - Hayvancılık Destekleri (Tarım Bakanlığı) — profilinize göre engel yok — şartları teyit edin; 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Hububat ve Baklagil Üretim Destekleri (Temel Destek +…): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
+- **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim)): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
 - **Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim):** Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak
 - **Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim):** Arazi/parsel bilgilerinin ÇKS'de güncel olması
 - **Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim):** Başvuru yeri: İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu)
@@ -44,9 +44,8 @@
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. NACE faaliyet kodunuz nedir? — sektör kısıtlı programlarda (imalat, tarım, turizm) uygunluğu belirler.
-2. Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim): “Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak” şartını sağlıyor musunuz?
-3. Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim): “Arazi/parsel bilgilerinin ÇKS'de güncel olması” şartını sağlıyor musunuz?
+1. Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim): “Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak” şartını sağlıyor musunuz?
+2. Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim): “Arazi/parsel bilgilerinin ÇKS'de güncel olması” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

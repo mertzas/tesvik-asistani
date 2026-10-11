@@ -3,6 +3,7 @@
 - **1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı** (TUBITAK)
 - Başvuru: 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (11 gün kaldı); başvuru kapanışı 26.10.2026 (15 gün kaldı).
 - Sizin için: profilinize göre engel yok — şartları teyit edin.
+- Dikkat (çağrı notu): Kapanış 26.10.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 22.10.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı.
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 13.20)
@@ -41,7 +42,7 @@
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.
+Profil alanlarınız uygunluk için yeterli, ancak şu kayıt kurallarını profilden doğrulayamıyorum; başvurudan önce kendiniz kontrol edin: Proje başvurusundan önce tamamlanmış Ar-Ge faaliyetleri desteklenmez; Bu çağrı döneminde kuruluş başına en fazla 2 proje önerisi sunulabilir (2026-2 çağrı metni); Vakıf, dernek (ve iktisadi işletmeleri), kooperatif, birlik, şahıs şirketi ve adi ortaklık başvuramaz.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

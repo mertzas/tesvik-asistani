@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-11 (yerel danışman tur11, kritik bulgular kapandı). Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-11 (üçüncü taraf yapay zekâ kaldırıldı, yalnız kendi sunucumuz; tur13). Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -303,7 +303,7 @@ Son güncelleme: 2026-10-11 (yerel danışman tur11, kritik bulgular kapandı). 
   ters netleştirme sorusu, regex yanlış pozitifleri) düzeltildi ve testlendi ("hariç" dışlaması ve "isen" hitabı bilerek
   bırakıldı). Bulunan gizli hata: bash heredoc `\b`'yi 0x08'e çevirmişti; `_KOSULLU_BELGE` bu yüzden hiç eşleşmiyordu
   (koşullu belgeler sızıyordu); şimdi test tüm app/ ve scripts/ dosyalarında 0x08 arar. Uygunluk ölçümü ilk 10'da uygun
-  değil %9 → %1 (`ozet_2026_10_11_tur29.md`). Gemini ile canlı karşılaştırma YAPILMADI: anahtar yok (kod hazır).
+  değil %9 → %1 (`ozet_2026_10_11_tur29.md`).
   Kapanan hakem bulguları (2026-10-11 ikinci blok): birinci tekil beyanlar (tur30); alt destek/aşama çağrısı programın
   tamamını kapatmıyor (`alt_destek_cagrisi`); sorudaki yabancı ortak beyanı (`soru_beyanlari`); 9903 ailesinde bölgeye
   göre katkı/makine/faiz karşılaştırması, kart en avantajlıya; kapasite eşikli Karar şartı soruya döner; 4447 süre
@@ -324,11 +324,41 @@ Son güncelleme: 2026-10-11 (yerel danışman tur11, kritik bulgular kapandı). 
   Hamlesi'nde" notu. Ayrıca: Turquality dışlaması fıkralı madde (m.10/3); güncel sürüm eşleşmesi yıldan önceki ada
   bakar (TOBB 2020 PAKETİ → 2026 PROGRAMI); sorudaki tutar kayıtta geçiyorsa kısa cevapta bağlamı ("15.102 TL 2022
   yılı değeridir"). Tur11 sonrası düzeltmeler yeniden puanlanmadı.
-  Açık (tur11 orta/düşük, 87 orta): kısa cevabın soru tipine göre biçimi (hibe var mı / nedir-kimler); USD ihracat
-  eşiğinin ciroyla kaba karşılaştırması (5986 m.8, düşük olasılık); kart "Kapsam" etiketi gider kapsamı ile şirket
-  türünü karıştırıyor; kurum sorusunda alternatifleri aynı kurumla sınırlama; kilit şartsız genel programda
-  "belirlenemedi" yerine "engel yok"; TURWIB hedef kitlesi amaç cümlesinden. `.env`'de kullanılmayan ANTHROPIC_API_KEY
-  duruyor (silmek kullanıcıya ait).
+- **Üçüncü taraf yapay zekâ tamamen kaldırıldı; yalnız kendi sunucumuzda model** (2026-10-11, dördüncü blok):
+  kullanıcı talimatı "google open ai studio da kullanma, ikas veri güvenliğine önem veriyor". `app/llm_saglayici.py`
+  yalnız `yerel` (varsayılan, dil modeli yok) ve `ozel_sunucu` (Ollama/vLLM/llama.cpp, Chat Completions, httpx; SDK
+  yok) kabul eder; gemini/openai_uyumlu/anthropic reddedilir. `ozel_sunucu`: iç ağ açık izin listesi (10/8,
+  172.16/12, 192.168/16, 127/8, ::1, fc00::/7; 6to4/Teredo/NAT64/CGNAT/meta veri/sayısal/Unicode ad reddi), her
+  çağrıda DNS denetimi ve http'de IP sabitleme (rebinding), trust_env=False, yönlendirme yok, hata gövdesi günlüğe
+  yazılmaz, sunucu istemi kestiyse (prompt_tokens < beklenenin %60'ı) yanıt atılır. Model kuruluş bazında varsayılan
+  KAPALI (opt-in, `KULLANIM_KAYDI`), tercih sağlayıcı/adres değişince korunur; eski Gemini/Anthropic rızaları
+  geçersiz ve rıza ucunda temizlenir. `openai` bağımlılığı kaldırıldı (requirements, prod: httpx). KVKK metni,
+  panel, ikas-app tipleri/metinleri güncellendi. Opus güvenlik incelemesi: kritik 0, orta 6 → hepsi kapandı
+  (vazgeçme kaybı, adres bağımlı vazgeçme, is_private aralıkları, DNS TOCTOU, KVKK iddiası, opt-in). Kurulum:
+  `docs/OZEL_MODEL_SUNUCUSU.md`. Canlı ölçüm (yerel Ollama gemma4 8B, GPU yok; `docs/olcum/2026-10-11-ozel-model/
+  SONUC.md`): yanıt 3,5-4,5 dk; Ollama varsayılan bağlamı istemi 2.051 token'a kesti, model kayıtları görmeden
+  "bireysel traktör desteklenir" dedi ve sayı içermediği için dayanak denetiminden geçti → kesik istem koruması
+  eklendi; KARAR: varsayılan yerel danışman kalır, ozel_sunucu yalnız GPU + 32k bağlam + hakem ölçümüyle açılır.
+  Yerel danışman kalite turları 12-13 (aynı 5 hakem): genel 3,50 → 3,54 (doğruluk 4,07 → 4,13), kritik 3 → 4, hepsi
+  kapandı. Kapananlar (tur11-13): yarım cümle kesmesi (sınırda cümle sonu yoksa bir sonrakine kadar uzatma; "…" ~70 →
+  4); tekrar eden KGF takvim paragrafı; yürürlükten kalkmış (3305) kayıtlar yalnız adıyla sorulunca; iç veri notları
+  kullanıcı diline; kadın yönetici şartı (TURWIB) kilit şart + kadın personada aday; "KOBİ değilseniz" kuralı KOBİ'ye
+  gösterilmez; profilde karşılanan şirket statüsü/tarım sektörü sorulmaz; tarım personasında NACE sorulmaz; kapalı/
+  uygun değil odakta 3-4. bölümler "engel / çağrı açılınca aranacaklar / belgeler / kanal"; hibe sorusunda açık hibe
+  yoksa ilk satırda; kimler başvurabilir(di); şartsız kayıt "engel yok" (teyit notu düz satır); birlikte kullanım
+  sorusunda kayıttaki hükümler karar cümlesi olarak; soruda geçen destek unsuru (KDV, yer tahsisi) başka 9903
+  kaydında aranır; profilsiz kuruluş sorusunda girişim programları önce (KOSGEB Girişimci Destek), YZ Kredisi "kurulu
+  işletme ister" notuyla Diğer'de; hedefli açık çağrıda (1812 Aşama 3) "engel yok" yerine belirlenemedi; USD ihracat
+  eşiği ciroyla (1 USD > 10 TL alt sınırı; hesaplanmış sayı yazılmaz) "düşük olasılık"; tarih sorusunda çağrı notu ve
+  tarihi yoksa "açık/kapalı belirlenemedi"; "ödemesiz dönem" tarih sorusu sayılmaz; "â/î/û" katlama; "yapay zekâ
+  girişimi" gibi konu ifadesi program adı sayılmaz; kaynaksız "[Genel ilke]" satırları yanıttan çıktı. Ölçüm aracı:
+  devredilen önceki program kaydı kaynak dosyasına eklenir. Otomatik ölçüm: dayanak 0, isabet 41/41.
+  Gözlem: hakem puanı 4 turdur 3,5 civarında; her tur kritikler kapanıyor, hakemler yeni orta bulgular buluyor
+  (hakem değişkenliği + kural tabanlı şablonun sınırı). Tur13 sonrası düzeltmeler yeniden puanlanmadı.
+  Açık (tur13 orta): kısa cevabın her alt soruya ayrı satır vermesi; "Diğer ilgili" seçiminin konu/ölçek uyumu (TKYB,
+  ihracat programları gürültü); kefalet/kredi limit etiketleri; çok rollü programlarda (1707) persona rolü; kayıtların
+  kendi içindeki çelişkileri (1507 "aynı anda 5"/"ilk 5"); barındırma sağlayıcısı ve Sentry'nin KVKK "Diğer
+  aktarımlar" listesinde olmaması. `.env`'de kullanılmayan ANTHROPIC_API_KEY duruyor (silmek kullanıcıya ait).
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

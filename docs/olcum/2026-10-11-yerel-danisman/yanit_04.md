@@ -4,7 +4,9 @@
 - Destek: Eurostars-3 Ulusal Çağrı 2026/2: ulusal çağrı bütçesi 4.000.000 Avro; Türk proje ortakları için proje bütçesi ≤600.000 Avro; Türk kuruluşlarının ortaklı başvurusunda toplam ≤850.000 Avro; sermaye şirketi dışı kurumların bütçesi toplamın ≤%50'si ve ≤300.000 Avro; proje ≤36 ay; destek oranı KOBİ %75, büyük %60, kamu/vakıf üniversitesi/araştırma kurumları %100
 - Başvuru: Çağrı dönemli: 1709-EUREKA-EUROSTARS 2026/2 ulusal çağrısı; son başvuru tarihi ve uluslararası takvim çağrı duyurusu belgesinde (PDF); başvuru eteydeb.tubitak.gov.tr (PRODİS) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Sizin için: profilinize göre engel yok — şartları teyit edin.
+- Çağrı açık mı: kayıtlarımızda bu çağrının açılış ve kapanış tarihi yok; açık/kapalı durumu belirlenemedi, kurumun çağrı duyurusundan teyit edin.
 - Program: Çağrı kapsamında, en az bir Türk ve Eurostars üye ülkesinden bir ortağın katılımıyla, pazara yönelik, yenilikçi ürün, süreç ve hizmet geliştirilmesi amacı taşıyan uluslararası Ar-
+- Kimler başvurabilir (kayıttaki şartlar): Sermaye şirketi, yükseköğretim kurumu, kamu araştırma merkezi/enstitüsü, eğitim ve araştırma hastanesi veya 6550 sayılı Kanun kapsamındaki araştırma altyapısı olmak; En az bir Türk ve bir Eurostars üyesi ülkeden ortağın katıldığı uluslararası proje; Sermaye şirketi Yürütücü Kuruluş (Muhatap Kuruluş) olmalı.
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 13.20)
@@ -27,9 +29,9 @@
 - **Başvuru:** PRODİS (https://eteydeb.tubitak.gov.tr); önce kuruluş bazlı ön kayıt, ulusal ön proje başvurusu, sonra uluslararası değerlendirme — https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1709-eureka-eurostars
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan …); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (33 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
-- 1719 Eureka Network Çağrıları (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Proje en az iki EUREKA üyesi ülkeden (en az biri AB üyesi veya Ufuk Avrupa Asosiye ülkesi) kuruluşun yer aldığı …); Açık ulusal çağrılar: Uygulamalı Kuantum Teknolojileri, Hafifletme Teknolojileri, Afetlerde Dirençlilik (takvim çağrı duyurularında) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- 1702 - Patent Tabanlı Teknoloji Transferi Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Başvuran (Müşteri Kuruluş): patentle korunan teknolojileri lisanslama ya da devir yoluyla edinerek ekonomik değer …); Çağrı, TÜBİTAK ayrıca bir duyuru yapana kadar sürekli başvuruya açıktır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (33 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
+- 1719 Eureka Network Çağrıları (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Proje en az iki EUREKA üyesi ülkeden (en az biri AB üyesi veya Ufuk Avrupa Asosiye ülkesi) kuruluşun yer aldığı uluslararası Ar-Ge projesi olmalı); Açık ulusal çağrılar: Uygulamalı Kuantum Teknolojileri, Hafifletme Teknolojileri, Afetlerde Dirençlilik (takvim çağrı duyurularında) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- 1702 - Patent Tabanlı Teknoloji Transferi Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Başvuran (Müşteri Kuruluş): patentle korunan teknolojileri lisanslama ya da devir yoluyla edinerek ekonomik değer oluşturmayı hedefleyen, Türkiye'de yerleşik sermaye şirketi); Çağrı, TÜBİTAK ayrıca bir duyuru yapana kadar sürekli başvuruya açıktır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - 1832 - Sanayide Yeşil Dönüşüm Çağrısı (TUBITAK) — kapalı: yeni başvuru için şu an kapalı (1832 2026-2 çağrısı: yeni başvuru için ön kayıt süresi 08.10.2026 tarihinde doldu; çağrı 12.10.2026 tarihinde kapanıyor (yalnız ön kaydını yapmış olanlar için))
@@ -39,9 +41,6 @@
 - **1709 – EUREKA-EUROSTARS:** Ulusal ön proje başvurusu (PRODİS'te, kuruluş bazlı ön kayıttan sonra)
 - **1709 – EUREKA-EUROSTARS:** Kabul davet yazısı alındıktan sonra 2. aşama ulusal başvurusu PRODİS'ten gönderilir
 - **1709 – EUREKA-EUROSTARS:** Başvuru yeri: PRODİS (https://eteydeb.tubitak.gov.tr); önce kuruluş bazlı ön kayıt, ulusal ön proje başvurusu, sonra uluslararası değerlendirme
-- [Genel ilke – teyit edin] Başvuru ya da sözleşme tarihinden önce yapılan harcamalar çoğu programda desteklenmez; harcamaya başlamadan önce kurumun onayını bekleyin.
-- [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
-- [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
 1. Başvuru adımları (1709 – EUREKA-EUROSTARS): Ulusal ön proje başvurusu (PRODİS'te, kuruluş bazlı ön kayıttan sonra); Kabul davet yazısı alındıktan sonra 2. aşama ulusal başvurusu PRODİS'ten gönderilir; Başvuru yeri: PRODİS (https://eteydeb.tubitak.gov.tr); önce kuruluş bazlı ön kayıt, ulusal ön proje başvurusu, sonra uluslararası değerlendirme.
@@ -50,7 +49,7 @@
 4. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.
+Profil alanlarınız uygunluk için yeterli, ancak şu kayıt kurallarını profilden doğrulayamıyorum; başvurudan önce kendiniz kontrol edin: Aynı uluslararası projedeki Türk ortaklar tek bir ulusal ön proje başvurusu yapmalı (ayrı başvurular kabul edilmez); Türk proje ortağının bütçesi 600.000 Avroyu, Türk kuruluşların ortaklı başvurusunda toplam bütçe 850.000 Avroyu geçemez; Sermaye şirketi dışındaki kurumların bütçesi toplamın en fazla %50'si ve 300.000 Avro olabilir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

@@ -140,6 +140,9 @@ def calistir():
         zorunlu = yerel_danisman.zorunlu_adaylar(profil, tum) + yerel_danisman.kurulus_adaylari(profil, sc["soru"], tum)
         kayitlar = [db.get(Tesvik, i) for i in dict.fromkeys(
             [t.id for t in adi_gecen] + [t.id for t in kurum_kayit] + [t.id for t in h.matches] + [t.id for t in zorunlu])]
+        # tutarı boş kaydın yanıtta gösterilen önceki (devredilen) program kaydı
+        kayitlar += [r for r in (yerel_danisman.devredilen_kayit(t, tum) for t in list(kayitlar))
+                     if r is not None and r not in kayitlar]
         kaynak = kaynak_metni(sc["soru"], kayitlar, profil, h, bugun)
         sorunlar = dayanak.denetle(yanit, kaynak, sc["soru"], bugun)
         isabet = [b for b in sc["beklenen"] if b.lower() in yanit.lower()]

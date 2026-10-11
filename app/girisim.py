@@ -169,8 +169,7 @@ def _finans(profil: Any) -> Bilesen:
 
 def _ekip() -> Bilesen:
     return Bilesen("Ekip & Ar-Ge niteliği", None,
-                   "ekip ve proje niteliği verisi sistemde yok; danışman yalnızca sorudaki bilgiden nitel yorum "
-                   "yapar, puan vermez")
+                   "ekip ve proje niteliği profilde yok; bu bileşen puanlanmaz (başvuruda kurum değerlendirir)")
 
 
 def huks(profil: Any, bugun: date | None = None) -> HUKS:

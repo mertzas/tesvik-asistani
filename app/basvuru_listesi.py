@@ -269,9 +269,10 @@ def taslak_olustur(tesvik_id: int, girdi: TaslakGirdisi | None = None,
                    yontem: str = Query("sablon", pattern="^(sablon|yapay_zeka)$"),
                    current_org: Organization = Depends(get_current_org), db: Session = Depends(get_db)):
     """Başvuru ön taslağı. yontem=sablon (varsayılan, 2026-10-08): yapay zekâsız, kayıtlı verilerden şablonla
-    (app/sablon_taslak.py); plan, rıza ve servis gerektirmez, veri yurt dışına çıkmaz. yontem=yapay_zeka: yapılandırılmış
-    dış dil modeliyle (app/basvuru_taslagi.py, app/llm_saglayici.py); koşullar ücretli çağrıdan ÖNCE sırayla
-    denetlenir: PRO+ plan, yapılandırılmış servis, o sağlayıcıya verilmiş açık rıza, kayıtlı profil, günlük sınır."""
+    (app/sablon_taslak.py); plan ve servis gerektirmez. yontem=yapay_zeka: kendi sunucumuzdaki dil modeliyle
+    (app/basvuru_taslagi.py, app/llm_saglayici.py); koşullar model çağrısından ÖNCE sırayla denetlenir: PRO+ plan,
+    yapılandırılmış iç ağ modeli, kuruluşun modeli açmış olması, kayıtlı profil, günlük sınır. Hiçbir yolda veri
+    üçüncü tarafa ya da yurt dışına gitmez."""
     if yontem == "sablon":
         return _sablon_taslak(tesvik_id, current_org, db, girdi.cevaplar if girdi else None)
     if current_org.plan == PlanType.FREE:
@@ -283,9 +284,8 @@ def taslak_olustur(tesvik_id: int, girdi: TaslakGirdisi | None = None,
                             detail="Yapay zekâ servisi bu sunucuda yapılandırılmamış; şablon taslağını kullanın.")
     if not llm_saglayici.riza_gecerli_mi(current_org, saglayici):
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN,
-                            detail=f"Taslak, işletme profilinizi yapay zekâ servisine ({saglayici.ad}, "
-                                   f"{saglayici.kurum}, {saglayici.ulke}) gönderir. Ayarlar bölümünden bu servise "
-                                   "açık rızanızı verirseniz kullanabilirsiniz.")
+                            detail=f"{saglayici.ad} sizin için kapalı; Ayarlar bölümünden açabilir ya da şablon "
+                                   "taslağını kullanabilirsiniz.")
     t = _tesvik(db, tesvik_id)
     profil_row = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
     if profil_row is None:

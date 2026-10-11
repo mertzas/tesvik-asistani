@@ -168,7 +168,7 @@ def test_dis_model_istegi_sistem_promptu_ve_genis_butce(monkeypatch, dis_model):
     monkeypatch.setattr(rag, "retrieve", lambda q, limit=5, **kw: [_kayit()])
     rag.answer("dijital dönüşüm")
     istek = dis_model.cagrilar[0]
-    assert istek["max_tokens"] >= 16000 and istek["model"] == "gemini-2.5-flash"
+    assert istek["max_tokens"] >= 16000 and istek["model"] == "test-model"
     assert istek["messages"][0] == {"role": "system", "content": rag.SISTEM_PROMPTU}
     assert "BAĞLAM:" in istek["messages"][1]["content"] and "BUGÜN:" in istek["messages"][1]["content"]
 

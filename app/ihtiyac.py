@@ -16,7 +16,7 @@ from typing import Any
 
 from app.urun_sektor_anahtarlari import kucult
 
-_ASCII = str.maketrans("çğıöşü", "cgiosu")
+_ASCII = str.maketrans("çğıöşüâîû", "cgiosuaiu")   # şapkalı harfler de ("yapay zekâ", "kâr")
 
 
 def _katla(metin: str | None) -> str:

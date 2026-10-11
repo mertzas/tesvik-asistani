@@ -41,8 +41,10 @@ def test_butce_onerisi_free_hala_pro_ister(client, db_session):
 def test_organizations_me_riza_alanini_doner(client, db_session, monkeypatch):
     h = _hazirla(client, db_session, adet=0)
     assert client.get("/api/organizations/me", headers=h).json()["ai_yurtdisi_riza"] is False
-    # Rıza yalnız yurt dışına aktaran yapılandırılmış servise verilebilir (app/llm_saglayici).
-    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
+    # Yurt dışı rıza artık hiç alınmaz: tek model seçeneği kendi sunucumuzdadır (app/llm_saglayici).
+    monkeypatch.setenv("LLM_SAGLAYICI", "ozel_sunucu")
+    monkeypatch.setenv("LLM_BASE_URL", "http://127.0.0.1:9/v1")
+    monkeypatch.setenv("LLM_MODEL", "test-model")
     monkeypatch.setenv("LLM_API_KEY", "test")
-    client.post("/api/organizations/ai-riza", json={"riza": True}, headers=h)
-    assert client.get("/api/organizations/me", headers=h).json()["ai_yurtdisi_riza"] is True
+    assert client.post("/api/organizations/ai-riza", json={"riza": True}, headers=h).status_code == 200
+    assert client.get("/api/organizations/me", headers=h).json()["ai_yurtdisi_riza"] is False

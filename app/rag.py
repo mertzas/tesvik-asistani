@@ -2,10 +2,10 @@
 Anahtar-kelime tabanlı retrieval + danışman yanıtı.
 
 Yanıt yolu (2026-10-11): varsayılan olarak yerel danışman (app/yerel_danisman.py) kayıtlardan kuralla yanıt üretir;
-hiçbir dış servis çağrılmaz. Yönetici bir dış dil modeli yapılandırdıysa (app/llm_saglayici.py: Gemini ya da OpenAI
-uyumlu bir uç) ve kuruluş o sağlayıcıya açık rıza verdiyse yanıt o modelden alınır; yanıt kullanıcıya gitmeden önce
-app/dayanak.py ile denetlenir ve bağlamda olmayan URL/tutar/oran/tarih/telefon varsa atılıp yerel danışmana düşülür.
-Anthropic API'si kullanılmaz.
+hiçbir dış servis çağrılmaz. Yönetici kendi sunucumuzda açık ağırlıklı bir model yapılandırdıysa
+(app/llm_saglayici.py, LLM_SAGLAYICI=ozel_sunucu; yalnız iç ağ adresi) ve kuruluş vazgeçmediyse yanıt o modelden alınır;
+yanıt kullanıcıya gitmeden önce app/dayanak.py ile denetlenir ve bağlamda olmayan URL/tutar/oran/tarih/telefon varsa
+atılıp yerel danışmana düşülür. Üçüncü taraf yapay zekâ servisi (Anthropic, Google, OpenAI) kullanılmaz.
 
 KRİTİK KURAL: dış modele verilen sistem promptu SADECE veritabanından (Tesvik kayıtları + KurumIletisim rehberi +
 kullanıcının FinancialProfile'ı) gelen bilgiyi kullanmasını söyler; denetim bunu kodla zorlar. KurumIletisim

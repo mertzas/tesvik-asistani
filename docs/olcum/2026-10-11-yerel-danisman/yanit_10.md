@@ -4,6 +4,7 @@
 - Destek: 2026-2: kredi üst limiti KOBİ 50 Milyon TL, büyük işletme 150 Milyon TL (kredi tutarı 2026 Ocak-Haziran prime esas kazanç aylık ortalamasını geçemez); azami 6 ay ödemesiz, 36 ay vade; banka azami faizi %37 (sabit) / TLREF+1 (değişken); komisyon ≤%1; finansman desteği 12 puan, geri ödemesiz, yalnızca vergi ve SGK prim borçlarına kullanılır
 - Başvuru: 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (20 gün kaldı).
 - Sizin için: profilinize göre engel yok — şartları teyit edin; başlıca şart: İşletme Beyanının güncel olması.
+- Dikkat (çağrı notu): Bu dönemde yalnız Finansman Desteği kapsamında başvuru alınır.
 - Program: İmalat sanayinde (NACE Kısım C) istihdamın korunması için KOBİ ve büyük işletmelere bankalardan kredi ve finansman desteği (12 puan, geri ödemesiz) sağlayan KOSGEB programı. 2026-2 dönemi başvuruları 1 Eylül – 31 Ekim 2026.
 - Kimler başvurabilir (kayıttaki şartlar): İşletme Beyanının güncel olması; Gelir İdaresi Başkanlığı'nın 31.12.2025 tarihli kayıtlarında imalat NACE kodu olmalı (sonradan imalat kodu ekletilerek başvurulamaz); Kredi kullanmak ve 2026 Ocak-Haziran ortalama aylık prim gün sayısını 2026 Temmuz-Aralık döneminde korumak (finansman desteği için).
 
@@ -33,7 +34,7 @@
 - **Başvuru:** KOSGEB'e 2026-2 dönemi formlarıyla (Başvuru Formu, Taahhütname); kredi, bankalardan kullanılır — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- DİJİTAL KEFALET DESTEK PROGRAMI (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- DİJİTAL KEFALET DESTEK PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (İstihdamı Koruma Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.

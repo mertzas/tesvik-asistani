@@ -138,21 +138,22 @@ export type Liste = {
 
 export type Kurulus = { name: string; email: string; plan: string; ai_yurtdisi_riza: boolean };
 
-/** Yanıt servisi (GET /api/yapay-zeka): varsayılan yerel danışman; dış servis yalnız yapılandırılmışsa. */
+/** Yanıt servisi (GET /api/yapay-zeka): varsayılan yerel danışman; kendi sunucumuzdaki model yalnız yapılandırılmışsa.
+ * Üçüncü taraf yapay zekâ servisi hiçbir durumda kullanılmaz; riza_gerekli ve ucuncu_taraf her zaman false. */
 export type YapayZeka = {
-  saglayici: 'yerel' | 'gemini' | 'openai_uyumlu';
+  saglayici: 'yerel' | 'ozel_sunucu';
   ad: string;
   kurum: string;
   ulke: string;
   yurtdisi: boolean;
-  riza_gerekli: boolean;
+  riza_gerekli: false;
+  ucuncu_taraf: false;
   etkin: boolean;
   riza_gecerli: boolean;
   dis_model_kullaniliyor: boolean;
-  eski_riza_gecersiz: boolean;
 };
 
-/** Dış dil modeli taslağı kullanılabilir mi (servis yapılandırılmış ve etkin). */
+/** Kendi sunucumuzdaki model taslağı kullanılabilir mi (yapılandırılmış ve etkin). */
 export function disServisVar(yz: YapayZeka | null): boolean {
   return !!yz && yz.saglayici !== 'yerel' && yz.etkin;
 }

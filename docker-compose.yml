@@ -36,7 +36,10 @@ services:
       DATABASE_URL: postgresql://tesvik_user:tesvik_local_dev@postgres:5432/tesvik_saas
       SECRET_KEY: yerel-gelistirme-anahtari-uretimde-kullanma
       STRIPE_SECRET_KEY: ${STRIPE_SECRET_KEY:-}
+      # yerel (varsayılan) | ozel_sunucu (yalnız iç ağ adresi; docs/OZEL_MODEL_SUNUCUSU.md)
       LLM_SAGLAYICI: ${LLM_SAGLAYICI:-yerel}
+      LLM_BASE_URL: ${LLM_BASE_URL:-}
+      LLM_MODEL: ${LLM_MODEL:-}
       LLM_API_KEY: ${LLM_API_KEY:-}
       EVDS_API_KEY: ${EVDS_API_KEY:-}
       APP_URL: http://localhost:8000

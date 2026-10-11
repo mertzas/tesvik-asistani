@@ -1,11 +1,12 @@
 """Başvuru ön taslağı (2026-10-08): seçilen teşvik için kullanıcının profilinden, dış dil modeliyle düzenlenebilir
-bir başvuru metni taslağı üretir (2026-10-11'den beri app/llm_saglayici üzerinden; Anthropic kullanılmaz). Evrak hazırlama desteğinin ikinci adımı (ilki: app/basvuru_listesi.py).
+bir başvuru metni taslağı üretir (2026-10-11'den beri kendi sunucumuzdaki model, app/llm_saglayici; üçüncü taraf
+yapay zekâ servisi kullanılmaz). Evrak hazırlama desteğinin ikinci adımı (ilki: app/basvuru_listesi.py).
 
 Sınırlar (bilerek):
   - Resmi başvuru formu DEĞİLDİR; kurumun güncel formuna aktarılacak metin taslağıdır. Bu, metnin başında yazar.
   - Model yalnızca verilen bilgiyi kullanır; bilinmeyen her şey "[DOLDURUN: ...]" olarak bırakılır, rakam uydurulmaz.
   - "Hazırlanacak belgeler ve şartlar" bölümü modelden DEĞİL, kontrol listesinden (kaydın kendi alanlarından) eklenir.
-  - Profil yapılandırılmış dış sağlayıcıya gider: yalnızca o sağlayıcıya verilmiş geçerli rıza varken çağrılır
+  - Profil yalnız kendi sunucumuzdaki modele (iç ağ) gider; kuruluş vazgeçtiyse çağrılmaz
     (llm_saglayici.riza_gecerli_mi); çağıran uç nokta denetler.
   - Modelin metni app/dayanak.py ile denetlenir: bağlamda olmayan tutar/oran/tarih/URL varsa taslak verilmez.
 

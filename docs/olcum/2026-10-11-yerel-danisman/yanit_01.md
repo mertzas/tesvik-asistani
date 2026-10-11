@@ -5,6 +5,7 @@
 - Sizin için: **kapalı** — program başvuruya açık değil (TRGM duyurusu (29.04.2026): KKYP başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı).
 - Son bilinen destek (bilgi için): Hibe: KDV dâhil hibeye esas proje tutarının %50–%70'i (EK-2'ye göre); hibeye esas tutar 100.000 – 30.000.000 TL (aile işletmesi ≤8.000.000 TL)
 - Program: Tarım ve Orman Bakanlığı (TRGM) Kırsal Kalkınma Yatırım Programı: tarımsal ürünlerin işlenmesi, paketlenmesi ve depolanması, kanatlı/büyükbaş/küçükbaş yetiştiriciliği, gübre işleme, tarımsal amaçlı örgütler için ortak makine parkı vb. yatırım konularına hibe. […]
+- Kimler başvurabiliyordu (son çağrı): Gerçek/tüzel kişiler ve tarımsal amaçlı örgütler; kadın ve genç girişimciler (18-40 yaş) öncelikli (MADDE 2, 14); Hibeye esas proje tutarı 100.000 TL alt, 30.000.000 TL üst limit; aile işletmesi 8.000.000 TL (MADDE 14); Hibe oranı KDV dâhil hibeye esas tutarın %50–%70'i, kalan kısım faydalanıcı öz kaynağı (MADDE 14/4).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: tarım (NACE kodu bilinmiyor)
@@ -24,8 +25,8 @@
 
 **Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
 - TARIM KEFALET DESTEK PROGRAMI (KGF): İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi 20 Milyon TL (azami 60 ay), 12 ay ödemesiz; %80 kefalet; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Hayvancılık Destekleri (Tarım Bakanlığı): Birim tutarlar 8760 sayılı CB Kararı (2024-2026 Hayvancılık Desteklemeleri, RG 26/7/2024) ekindedir; sistemde teyit edilemedi (taranmış PDF); 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim) (Tarım Bakanlığı): Dekar başına 734,00–954,20 TL (2026): temel destek + planlı üretim desteği; mercimek, nohut, mısır (dane) katsayı 1,0 → 734,00 TL/da; Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Hayvancılık Destekleri (Tarım Bakanlığı): Birim tutarlar 8760 sayılı CB Kararı (2024-2026 Hayvancılık Desteklemeleri, RG 26/7/2024) ekindedir; birim tutarlar kayıtlarımızda yok, Karar ekinden teyit edin; 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim) (Tarım Bakanlığı): arpa, buğday, çavdar, tritikale, yulaf 1,3 → 954,20 TL/da. Sertifikalı tohum desteği ayrıca. Profilinizdeki 180 dekar için: 954,20 TL/da × 180 da = 171.756,00 TL (kesin tutarı kurum hesaplar); yalnız temel destek (planlı üretim şartı sağlanmazsa): 477,10 TL/da × 180 da = 85.878,00 TL; tutarın planlı üretim desteği kısmı, kayda göre ürünün havzada planlanan ürün olmasına bağlıdır; Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - 2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Programı (Öncelik 2: Ar-Ge Danışmanlığı) (Mevlana Kalkınma Ajansı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Öncelik 2 için 1 Ocak 2021 sonrası kurulmuş teknoloji tabanlı KOBİ'ler başvurabilir.); 2026 SKG TD - 5. Dönem: başvuruya açık — yeni başvuru için son gün 31.10.2026 (20 gün kaldı)
@@ -43,8 +44,7 @@ Sorduğunuz program şu an size açık olmadığından adımlar, açık alternat
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. NACE faaliyet kodunuz nedir? — sektör kısıtlı programlarda (imalat, tarım, turizm) uygunluğu belirler.
-2. TARIM KEFALET DESTEK PROGRAMI: “Tarım, ormancılık veya balıkçılık sektöründe faaliyet gösteren gerçek veya tüzel kişi işletme olmak” şartını sağlıyor musunuz?
+1. TARIM KEFALET DESTEK PROGRAMI: “Tarım, ormancılık veya balıkçılık sektöründe faaliyet gösteren gerçek veya tüzel kişi işletme olmak” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

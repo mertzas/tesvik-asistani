@@ -4,7 +4,7 @@
   "persona": "ciftci",
   "soru": "Traktör ve mibzer almak istiyorum; Kırsal Kalkınma hibesinin oranı ve üst limiti nedir, bireysel traktör alımı destekleniyor mu?",
   "tur": "olcum",
-  "sure_sn": 0.51,
+  "sure_sn": 0.49,
   "kayitlar": [
    78,
    94,
@@ -49,14 +49,14 @@
    ],
    "sirket_turu": "sahis"
   },
-  "uzunluk": 6609
+  "uzunluk": 7132
  },
  {
   "n": 2,
   "persona": "ciftci",
   "soru": "Tarlama damla sulama kuracağım; tasarruflu sulama hibesi oranı ve hibeye esas üst tutar ne kadar?",
   "tur": "olcum",
-  "sure_sn": 0.27,
+  "sure_sn": 0.28,
   "kayitlar": [
    80,
    94,
@@ -104,7 +104,7 @@
    ],
    "sirket_turu": "sahis"
   },
-  "uzunluk": 5717
+  "uzunluk": 5880
  },
  {
   "n": 3,
@@ -120,7 +120,8 @@
    34,
    39,
    46,
-   59
+   59,
+   174
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -148,7 +149,7 @@
    ],
    "sirket_turu": "limited"
   },
-  "uzunluk": 5885
+  "uzunluk": 6543
  },
  {
   "n": 4,
@@ -164,7 +165,8 @@
    34,
    59,
    15,
-   122
+   122,
+   174
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -192,7 +194,7 @@
    ],
    "sirket_turu": "limited"
   },
-  "uzunluk": 7740
+  "uzunluk": 8314
  },
  {
   "n": 5,
@@ -233,7 +235,7 @@
     "arge"
    ]
   },
-  "uzunluk": 10686
+  "uzunluk": 10276
  },
  {
   "n": 6,
@@ -270,7 +272,7 @@
     "arge"
    ]
   },
-  "uzunluk": 8032
+  "uzunluk": 6464
  },
  {
   "n": 7,
@@ -314,7 +316,7 @@
    ],
    "sirket_turu": "anonim"
   },
-  "uzunluk": 16263
+  "uzunluk": 15883
  },
  {
   "n": 8,
@@ -357,7 +359,7 @@
    ],
    "sirket_turu": "limited"
   },
-  "uzunluk": 9880
+  "uzunluk": 9810
  },
  {
   "n": 9,
@@ -371,9 +373,9 @@
    81,
    8,
    152,
-   168,
-   122,
-   86
+   182,
+   162,
+   187
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -449,14 +451,14 @@
     "yatirim"
    ]
   },
-  "uzunluk": 7310
+  "uzunluk": 7363
  },
  {
   "n": 11,
   "persona": "restoran",
   "soru": "Restoranıma 3 kişi daha alacağım; 4447 sayılı Kanun işveren prim teşviki kaç ay sürer, şartları neler?",
   "tur": "olcum",
-  "sure_sn": 0.14,
+  "sure_sn": 0.13,
   "kayitlar": [
    185,
    186,
@@ -533,7 +535,7 @@
     "finansman"
    ]
   },
-  "uzunluk": 6375
+  "uzunluk": 6206
  },
  {
   "n": 13,
@@ -560,7 +562,7 @@
   "beklenen": [],
   "isabet": [],
   "profil": null,
-  "uzunluk": 9013
+  "uzunluk": 8875
  },
  {
   "n": 14,
@@ -604,7 +606,7 @@
    ],
    "sirket_turu": "limited"
   },
-  "uzunluk": 14929
+  "uzunluk": 14286
  },
  {
   "n": 15,
@@ -638,7 +640,7 @@
    ],
    "sirket_turu": "limited"
   },
-  "uzunluk": 18731
+  "uzunluk": 19508
  },
  {
   "n": 16,
@@ -674,7 +676,7 @@
    ],
    "sirket_turu": "limited"
   },
-  "uzunluk": 6638
+  "uzunluk": 6386
  },
  {
   "n": 17,
@@ -688,9 +690,9 @@
    81,
    8,
    152,
-   168,
-   122,
-   86
+   182,
+   162,
+   187
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -727,7 +729,8 @@
    46,
    75,
    91,
-   14
+   14,
+   174
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -747,7 +750,7 @@
    ],
    "sirket_turu": "limited"
   },
-  "uzunluk": 5297
+  "uzunluk": 5811
  },
  {
   "n": 19,
@@ -781,7 +784,7 @@
    ],
    "sirket_turu": "anonim"
   },
-  "uzunluk": 15220
+  "uzunluk": 15183
  },
  {
   "n": 20,
@@ -790,18 +793,19 @@
   "tur": "triyaj",
   "sure_sn": 0.11,
   "kayitlar": [
+   2,
+   196,
+   190,
+   192,
+   191,
+   195,
    170,
    1,
    169,
    49,
    122,
-   2,
-   207,
-   212,
-   208,
-   196,
-   190,
-   192
+   230,
+   174
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -809,14 +813,14 @@
   "beklenen": [],
   "isabet": [],
   "profil": null,
-  "uzunluk": 15492
+  "uzunluk": 14998
  },
  {
   "n": 21,
   "persona": "yasli_ltd",
   "soru": "Halkbank İlk Adım Kredisi'ne başvurabilir miyim?",
   "tur": "yas_eleme",
-  "sure_sn": 0.12,
+  "sure_sn": 0.11,
   "kayitlar": [
    122,
    168,
@@ -845,14 +849,14 @@
    ],
    "kurucu_yasi": 52
   },
-  "uzunluk": 5210
+  "uzunluk": 4647
  },
  {
   "n": 22,
   "persona": "genc_sahis",
   "soru": "Genç girişimciler için uygun kredi ya da kefalet var mı?",
   "tur": "yas_uygun",
-  "sure_sn": 0.16,
+  "sure_sn": 0.15,
   "kayitlar": [
    170,
    169,
@@ -883,7 +887,7 @@
    ],
    "kurucu_yasi": 26
   },
-  "uzunluk": 11695
+  "uzunluk": 10591
  },
  {
   "n": 23,
@@ -923,7 +927,7 @@
     "hicbiri"
    ]
   },
-  "uzunluk": 5238
+  "uzunluk": 4865
  },
  {
   "n": 24,
@@ -957,7 +961,7 @@
    ],
    "baska_sirkette_ortak": true
   },
-  "uzunluk": 4040
+  "uzunluk": 5152
  },
  {
   "n": 25,
@@ -999,14 +1003,14 @@
     "makine"
    ]
   },
-  "uzunluk": 18358
+  "uzunluk": 18025
  },
  {
   "n": 26,
   "persona": "kadin_ltd",
   "soru": "Kadın girişimci olarak hangi kredi ve destekleri alabilirim?",
   "tur": "hedef_kitle",
-  "sure_sn": 0.12,
+  "sure_sn": 0.13,
   "kayitlar": [
    170,
    169,
@@ -1017,7 +1021,8 @@
    1,
    118,
    124,
-   156
+   156,
+   146
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -1039,14 +1044,14 @@
     "kadin_girisimci"
    ]
   },
-  "uzunluk": 12084
+  "uzunluk": 11058
  },
  {
   "n": 27,
   "persona": "ankara_imalat",
   "soru": "Ankara'da fabrikamıza yeni CNC hattı ve dijital dönüşüm yatırımı yapacağız; hangi destekleri birlikte kullanabiliriz?",
   "tur": "paket",
-  "sure_sn": 0.16,
+  "sure_sn": 0.15,
   "kayitlar": [
    180,
    3,
@@ -1079,7 +1084,7 @@
     "dijital"
    ]
   },
-  "uzunluk": 20119
+  "uzunluk": 19972
  },
  {
   "n": 28,
@@ -1116,7 +1121,7 @@
     "dijital"
    ]
   },
-  "uzunluk": 5763
+  "uzunluk": 5676
  },
  {
   "n": 29,
@@ -1142,14 +1147,14 @@
   "beklenen": [],
   "isabet": [],
   "profil": null,
-  "uzunluk": 8023
+  "uzunluk": 9267
  },
  {
   "n": 30,
   "persona": "ciftci",
   "soru": "Hububat için 2026 yılında dekar başına ne kadar destek ödenecek?",
   "tur": "tutar",
-  "sure_sn": 0.1,
+  "sure_sn": 0.09,
   "kayitlar": [
    160,
    161,
@@ -1182,6 +1187,6 @@
    ],
    "sirket_turu": "sahis"
   },
-  "uzunluk": 6398
+  "uzunluk": 6306
  }
 ]

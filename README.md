@@ -10,9 +10,11 @@ Tarım Bakanlığı, Hazine/Ticaret Bakanlığı, TÜİK, TCMB EVDS ve Hal Kayı
   stok maliyeti / reklam bütçesi aralıkları
 - **Danışman:** varsayılan olarak yerel danışman (app/yerel_danisman.py) yanıtı
   yalnızca veritabanındaki doğrulanmış kayıtlardan kuralla üretir; veri sunucudan
-  çıkmaz. İsteğe bağlı dış dil modeli (Gemini ya da OpenAI uyumlu uç,
-  app/llm_saglayici.py) yanıtı dayanak denetiminden (app/dayanak.py) geçmezse
-  yerel danışmana düşülür. Anthropic API'si kullanılmaz.
+  çıkmaz. Üçüncü taraf yapay zekâ servisi (Anthropic, Google, OpenAI) hiçbir
+  koşulda kullanılmaz. İsteğe bağlı olarak kendi sunucumuzda çalışan açık
+  ağırlıklı bir model (app/llm_saglayici.py, yalnız iç ağ adresi;
+  docs/OZEL_MODEL_SUNUCUSU.md) kullanılabilir; yanıtı dayanak denetiminden
+  (app/dayanak.py) geçmezse yerel danışmana düşülür.
 - **Veri tazeliği göstergesi:** her kaynağın ne zaman güncellendiği panelde
   görünür
 - **İKAS entegrasyonu:** OAuth2 + Admin GraphQL ile sipariş verisinden profil
@@ -43,7 +45,8 @@ copy .env.example .env
 ```
 
 `.env` içinde en az `SECRET_KEY` doldurulmalı. `LLM_SAGLAYICI` boş ya da `yerel`
-ise hiçbir dış servis çağrılmaz; danışman ve taslaklar yerel olarak üretilir.
+ise dil modeli yoktur; danışman ve taslaklar yerel olarak üretilir. `ozel_sunucu`
+yalnız iç ağ adresindeki kendi model sunucunuza bağlanır.
 
 Veritabanı şemasını kurun:
 
@@ -143,7 +146,7 @@ app/
   budget.py               Bütçe önerisi hesaplaması
   rag.py                  Arama + danışman yanıt yolu (yerel danışman / isteğe bağlı dış model)
   yerel_danisman.py       Kayıtlardan kuralla 5 başlıklı danışman yanıtı (varsayılan)
-  llm_saglayici.py        Dış dil modeli katmanı (Gemini / OpenAI uyumlu); rıza sağlayıcıya özel
+  llm_saglayici.py        Dil modeli katmanı: yerel (varsayılan) | ozel_sunucu (iç ağ zorunlu, SDK yok)
   dayanak.py              Dış model yanıtında bağlamda olmayan URL/tutar/oran/tarih/telefon denetimi
   veri_tazeligi.py        Veri kaynaklarının yaş/durum raporu
   rate_limit.py           Kayan pencere hız sınırlama
@@ -285,7 +288,7 @@ içerir, tüm veriler `org_id` ile ayrılır. Planlar: FREE / PRO / BUSINESS
 (Stripe ile, şu an test modunda).
 
 Teknoloji: FastAPI, SQLAlchemy 2.0, Pydantic v2, SQLite (üretimde PostgreSQL),
-APScheduler, Stripe; isteğe bağlı Google Gemini / OpenAI uyumlu dil modeli.
+APScheduler, Stripe; isteğe bağlı kendi sunucumuzda açık ağırlıklı dil modeli (Ollama/vLLM/llama.cpp).
 
 Ayrıntı: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 

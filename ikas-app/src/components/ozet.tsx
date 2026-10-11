@@ -161,10 +161,9 @@ export function OzetSekmesi({ ilkAcilis, onDesteklereGit }: { ilkAcilis: boolean
           <>
             <p className="mt-1 max-w-prose text-sm text-soluk">
               Dil modeliyle taslak oluşturduğunuzda işletme profiliniz ve sipariş toplamlarınız (müşteri bilgisi değil)
-              taslağı yazması için {yz?.ad} servisine ({yz?.kurum}, {yz?.ulke}) gönderilir; taslak, kayıtlarda olmayan
-              bir rakam içermediği denetlendikten sonra gösterilir.
-              {yz?.riza_gerekli ? ' Bunun için açık rızanız gerekir; istediğiniz zaman geri alabilirsiniz.' : ''}
-              {yz?.eski_riza_gecersiz ? ' Daha önce başka bir servise verdiğiniz rıza bu servis için geçerli değildir.' : ''}{' '}
+              {yz?.ad} ile işlenir. Model bizim işlettiğimiz sunucuda çalışır; verileriniz üçüncü taraf bir yapay zekâ
+              servisine gitmez. Model varsayılan olarak kapalıdır, yalnız siz açarsanız kullanılır. Taslak, kayıtlarda
+              olmayan bir rakam içermediği denetlendikten sonra gösterilir.{' '}
               <a href="/kvkk" target="_blank" rel="noopener" className="text-vurgu underline">
                 Aydınlatma metni
               </a>
@@ -178,9 +177,7 @@ export function OzetSekmesi({ ilkAcilis, onDesteklereGit }: { ilkAcilis: boolean
                   onChange={(e) => rizaDegistir(e.target.checked)}
                   className="h-4 w-4 accent-vurgu"
                 />
-                {yz?.riza_gerekli
-                  ? `${yz?.ad} servisine (${yz?.ulke}) aktarıma açık rıza veriyorum`
-                  : `${yz?.ad} servisini kullan (yurt içi; kapatırsanız yanıtlar yerel danışmandan gelir)`}
+                {`${yz?.ad} kullan (kapatırsanız yanıtlar yerel danışmandan gelir)`}
               </label>
             )}
           </>

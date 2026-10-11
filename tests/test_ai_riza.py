@@ -1,9 +1,9 @@
-"""Yapay zekâ için yurt dışına aktarım açık rızası testleri (2026-10-11 sağlayıcı katmanı).
+"""Yapay zekâ veri güvenliği testleri (2026-10-11; üçüncü taraf servisler kaldırıldı).
 
-Varsayılan sağlayıcı yerel danışmandır: hiçbir veri dışarı çıkmaz, rıza alınmaz. Yönetici yurt dışındaki bir servis
-(Gemini) yapılandırırsa /api/sor sorunun metnini ve profili oraya gönderebilir; bu KVKK açısından yurt dışına
-aktarımdır ve o sağlayıcıya verilmiş açık rıza gerektirir. Testler rızanın bağlayıcı ve sağlayıcıya özel olduğunu
-— rıza yokken ya da başka bir sağlayıcıya verilmişken hiçbir dış çağrı yapılmadığını — sabitliyor.
+Varsayılan sağlayıcı yerel danışmandır: dil modeli yok, hiçbir veri dışarı çıkmaz. Üçüncü taraf servisler (Gemini,
+OpenAI uyumlu dış uç, Anthropic) yapılandırılsa bile reddedilir. Tek dil modeli seçeneği kendi sunucumuzdaki modeldir
+(LLM_SAGLAYICI=ozel_sunucu) ve yalnız iç ağ adresine bağlanır; kuruluş bazında varsayılan kapalıdır, kullanıcı
+açıkça açar ve kapatır; tercih sağlayıcıdan ve sunucu adresinden bağımsız saklanır.
 """
 import uuid
 
@@ -41,16 +41,17 @@ def cagri_kaydi(monkeypatch):
 
 
 @pytest.fixture
-def gemini(monkeypatch):
-    """Yurt dışındaki bir servis yapılandırılmış sunucu (ağ çağrısı yok; answer sahte)."""
-    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
-    monkeypatch.setenv("LLM_API_KEY", "test-anahtar")
+def ozel_sunucu(monkeypatch):
+    """Kendi sunucumuzdaki model yapılandırılmış sunucu (ağ çağrısı yok; answer sahte)."""
+    monkeypatch.setenv("LLM_SAGLAYICI", "ozel_sunucu")
+    monkeypatch.setenv("LLM_BASE_URL", "http://10.0.0.5:8000/v1")
+    monkeypatch.setenv("LLM_MODEL", "yerel-model")
 
 
 @pytest.fixture(autouse=True)
 def _varsayilan_yerel(monkeypatch):
-    monkeypatch.delenv("LLM_SAGLAYICI", raising=False)
-    monkeypatch.delenv("LLM_API_KEY", raising=False)
+    for ad in ("LLM_SAGLAYICI", "LLM_API_KEY", "LLM_BASE_URL", "LLM_MODEL"):
+        monkeypatch.delenv(ad, raising=False)
 
 
 def _son_org(db_session):
@@ -92,77 +93,83 @@ def test_yapay_zeka_durumu_ucu(client):
     assert j["dis_model_kullaniliyor"] is False
 
 
-# ------------------------------------------------------------------ yurt dışı servis (Gemini)
-def test_rizasiz_dis_cagri_yok_ve_aciklanir(client, cagri_kaydi, gemini):
-    """Rıza yoksa dış çağrı HİÇ yapılmamalı; kullanıcı neden ve nasıl açacağını görmeli."""
-    h = _hesap_ac(client)
-    r = client.post("/api/sor", json={"question": "destek"}, headers=h)
-    assert cagri_kaydi[-1]["llm_kullan"] is False and cagri_kaydi[-1]["profil"] is None
-    mesaj = r.json().get("message") or ""
-    assert "açık rıza" in mesaj and "Google Gemini" in mesaj and "ABD" in mesaj and "/kvkk" in mesaj
-
-
-def test_kayitta_riza_saglayiciyla_saklanir(client, db_session, gemini):
-    _hesap_ac(client, riza=True)
-    org = _son_org(db_session)
-    assert org.ai_yurtdisi_riza is True and org.ai_riza_tarihi is not None
-    assert org.ai_riza_saglayici == "gemini:Google LLC:ABD:generativelanguage.googleapis.com"
-
-
-def test_riza_verilince_dis_model_cagrilir(client, cagri_kaydi, gemini):
-    h = _hesap_ac(client)
-    r = client.post("/api/organizations/ai-riza", json={"riza": True}, headers=h)
-    assert r.status_code == 200 and r.json()["saglayici"]["kurum"] == "Google LLC"
-    assert r.json()["aydinlatma_metni"] == "/kvkk"
-    client.post("/api/sor", json={"question": "destek"}, headers=h)
-    assert cagri_kaydi[-1]["llm_kullan"] is True
-
-
-def test_riza_geri_alinabilir(client, cagri_kaydi, gemini):
-    """KVKK açık rızası her zaman GERİ ALINABİLİR olmalıdır."""
+# ------------------------------------------------------------------ üçüncü taraf servisler reddedilir
+@pytest.mark.parametrize("ortam", [
+    {"LLM_SAGLAYICI": "gemini", "LLM_API_KEY": "k"},
+    {"LLM_SAGLAYICI": "openai_uyumlu", "LLM_BASE_URL": "https://api.openai.com/v1", "LLM_MODEL": "gpt", "LLM_API_KEY": "k"},
+    {"LLM_SAGLAYICI": "anthropic", "LLM_API_KEY": "k"},
+    {"LLM_SAGLAYICI": "ozel_sunucu", "LLM_BASE_URL": "https://generativelanguage.googleapis.com/v1beta/openai/",
+     "LLM_MODEL": "gemini-2.5-flash"},
+    {"LLM_SAGLAYICI": "ozel_sunucu", "LLM_BASE_URL": "http://8.8.8.8/v1", "LLM_MODEL": "m"},
+])
+def test_ucuncu_taraf_ya_da_dis_adres_yapilandirilsa_da_veri_cikmaz(client, cagri_kaydi, monkeypatch, ortam):
+    for ad, deger in ortam.items():
+        monkeypatch.setenv(ad, deger)
     h = _hesap_ac(client, riza=True)
-    client.post("/api/sor", json={"question": "destek"}, headers=h)
-    assert cagri_kaydi[-1]["llm_kullan"] is True
-    r = client.post("/api/organizations/ai-riza", json={"riza": False}, headers=h)
-    assert r.status_code == 200 and r.json()["ai_yurtdisi_riza"] is False and r.json()["tarih"] is None
-    client.post("/api/sor", json={"question": "destek"}, headers=h)
-    assert cagri_kaydi[-1]["llm_kullan"] is False, "rıza geri alındı ama çağrı sürüyor"
-
-
-def test_baska_saglayiciya_verilmis_riza_gecersiz(client, db_session, cagri_kaydi, gemini):
-    """Anthropic'e verilmiş (göçte işaretlenen) rıza Google'a aktarılmaz."""
-    h = _hesap_ac(client)
-    org = _son_org(db_session)
-    org.ai_yurtdisi_riza, org.ai_riza_saglayici = True, "anthropic:Anthropic PBC"
-    db_session.commit()
     client.post("/api/sor", json={"question": "destek"}, headers=h)
     assert cagri_kaydi[-1]["llm_kullan"] is False and cagri_kaydi[-1]["profil"] is None
     j = client.get("/api/yapay-zeka", headers=h).json()
-    assert j["riza_gecerli"] is False and j["eski_riza_gecersiz"] is True
+    assert j["etkin"] is False and j["dis_model_kullaniliyor"] is False and j["ucuncu_taraf"] is False
+    assert client.post("/api/organizations/ai-riza", json={"riza": True}, headers=h).status_code == 409
 
 
-def test_yurt_ici_sunucuda_riza_gerekmez(client, cagri_kaydi, monkeypatch):
-    monkeypatch.setenv("LLM_SAGLAYICI", "openai_uyumlu")
-    monkeypatch.setenv("LLM_BASE_URL", "http://10.0.0.5:8000/v1")
-    monkeypatch.setenv("LLM_MODEL", "yerel-model")
-    monkeypatch.setenv("LLM_YURTDISI", "false")
+def test_eski_ucuncu_taraf_rizasi_temizlenir(client, db_session, cagri_kaydi):
+    """Eski sürümden kalan Gemini/Anthropic rıza kaydı hiçbir şeyi açmaz; rıza ucu onu temizler."""
     h = _hesap_ac(client)
+    org = _son_org(db_session)
+    org.ai_yurtdisi_riza, org.ai_riza_saglayici = True, "gemini:Google LLC:ABD:generativelanguage.googleapis.com"
+    db_session.commit()
+    client.post("/api/sor", json={"question": "destek"}, headers=h)
+    assert cagri_kaydi[-1]["llm_kullan"] is False and cagri_kaydi[-1]["profil"] is None
+    r = client.post("/api/organizations/ai-riza", json={"riza": False}, headers=h)
+    assert r.status_code == 200 and "hiçbir veri dışarı aktarılmaz" in r.json()["mesaj"]
+    db_session.refresh(org)
+    assert org.ai_yurtdisi_riza is False and org.ai_riza_saglayici is None
+
+
+# ------------------------------------------------------------------ kendi sunucumuzdaki model
+def test_ozel_sunucu_varsayilan_kapali_acinca_kullanilir(client, cagri_kaydi, ozel_sunucu):
+    h = _hesap_ac(client)
+    client.post("/api/sor", json={"question": "destek"}, headers=h)
+    assert cagri_kaydi[-1]["llm_kullan"] is False and cagri_kaydi[-1]["profil"] is None
+    j = client.get("/api/yapay-zeka", headers=h).json()
+    assert j["saglayici"] == "ozel_sunucu" and j["riza_gerekli"] is False and j["yurtdisi"] is False
+    assert j["ucuncu_taraf"] is False and j["ulke"] == "Türkiye" and j["varsayilan_kapali"] is True
+    assert j["riza_gecerli"] is False
+    r = client.post("/api/organizations/ai-riza", json={"riza": True}, headers=h)
+    assert "üçüncü taraf bir yapay zekâ servisine gitmez" in r.json()["mesaj"] and r.json()["aydinlatma_metni"] == "/kvkk"
     client.post("/api/sor", json={"question": "destek"}, headers=h)
     assert cagri_kaydi[-1]["llm_kullan"] is True
 
 
-def test_yurt_ici_sunucuda_vazgecilebilir(client, cagri_kaydi, monkeypatch):
-    """Opus incelemesi 2026-10-11: yurt içi modda vazgeçen kuruluşa dış servis kullanılmaya devam ediyordu."""
-    monkeypatch.setenv("LLM_SAGLAYICI", "openai_uyumlu")
-    monkeypatch.setenv("LLM_BASE_URL", "http://10.0.0.5:8000/v1")
-    monkeypatch.setenv("LLM_MODEL", "yerel-model")
-    monkeypatch.setenv("LLM_YURTDISI", "false")
+def test_ozel_sunucuda_kayit_rizasi_saklanmaz(client, db_session, ozel_sunucu):
+    _hesap_ac(client, riza=True)
+    org = _son_org(db_session)
+    assert org.ai_yurtdisi_riza is False and org.ai_riza_saglayici is None
+
+
+def test_ozel_sunucu_kapatilabilir(client, cagri_kaydi, ozel_sunucu):
     h = _hesap_ac(client)
+    client.post("/api/organizations/ai-riza", json={"riza": True}, headers=h)
     r = client.post("/api/organizations/ai-riza", json={"riza": False}, headers=h)
-    assert r.status_code == 200 and "Vazgeçtiniz" in r.json()["mesaj"]
+    assert r.status_code == 200 and "Kapattınız" in r.json()["mesaj"]
+    client.post("/api/sor", json={"question": "destek"}, headers=h)
+    assert cagri_kaydi[-1]["llm_kullan"] is False
+
+
+def test_kapatma_tercihi_model_kapatilip_acilinca_ve_adres_degisince_korunur(client, cagri_kaydi, monkeypatch,
+                                                                             ozel_sunucu):
+    """Opus güvenlik incelemesi 2026-10-11: model kapalıyken yapılan vazgeçme kaydı siliniyor, sunucu adresi
+    değişince vazgeçme düşüyordu."""
+    h = _hesap_ac(client)
+    monkeypatch.setenv("LLM_SAGLAYICI", "yerel")                      # yönetici modeli geçici kapattı
+    assert client.post("/api/organizations/ai-riza", json={"riza": False}, headers=h).status_code == 200
+    monkeypatch.setenv("LLM_SAGLAYICI", "ozel_sunucu")                # geri açtı ve adresi değiştirdi
+    monkeypatch.setenv("LLM_BASE_URL", "http://vllm:8000/v1")
     client.post("/api/sor", json={"question": "destek"}, headers=h)
     assert cagri_kaydi[-1]["llm_kullan"] is False
     client.post("/api/organizations/ai-riza", json={"riza": True}, headers=h)
+    monkeypatch.setenv("LLM_BASE_URL", "http://10.0.0.9:8000/v1")     # açık tercih de adres değişince korunur
     client.post("/api/sor", json={"question": "destek"}, headers=h)
     assert cagri_kaydi[-1]["llm_kullan"] is True
 
@@ -172,10 +179,11 @@ def test_riza_ucu_kimlik_dogrulamasi_ister(client):
     assert r.status_code in (401, 403)
 
 
-def test_rizali_profil_nace_ve_kobi_olcegini_tasir_ozellikleri_tasimaz(client, cagri_kaydi, gemini):
+def test_modele_giden_profil_nace_ve_kobi_olcegini_tasir_ozellikleri_tasimaz(client, cagri_kaydi, ozel_sunucu):
     """Danışman ölçek/NACE ile eleme yapabilsin; hedef kitle özellikleri (kadın/genç girişimci) KVKK metninde
     belirtildiği gibi aktarılmasın."""
-    h = _hesap_ac(client, riza=True)
+    h = _hesap_ac(client)
+    client.post("/api/organizations/ai-riza", json={"riza": True}, headers=h)
     r = client.put("/api/profil", headers=h, json={
         "sektor": "imalat", "bolge": "Konya", "calisan_sayisi": 30, "yillik_ciro": 80_000_000,
         "nace_kodu": "C.10.71", "ozellikler": ["kadin_girisimci"]})

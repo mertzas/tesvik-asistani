@@ -1,6 +1,6 @@
 """Başvuru ön taslağı (app/basvuru_taslagi.py + POST /api/basvuru-listesi/{id}/taslak), 2026-10-08.
-Gerçek dil modeli çağrısı YOK: _llm_istek her testte yamalanır; sunucu Gemini yapılandırılmış sayılır
-(app/llm_saglayici), rıza o sağlayıcıya verilir."""
+Gerçek dil modeli çağrısı YOK: _llm_istek her testte yamalanır; sunucu kendi sunucumuzdaki modelle (iç ağ)
+yapılandırılmış sayılır (app/llm_saglayici); rıza aranmaz, kuruluş vazgeçebilir."""
 import subprocess
 import sys
 from pathlib import Path
@@ -14,13 +14,12 @@ KOK = Path(__file__).resolve().parent.parent
 CAGRILAR = []
 
 
-GEMINI_RIZASI = "gemini:Google LLC:ABD:generativelanguage.googleapis.com"
-
-
 @pytest.fixture(autouse=True)
 def sahte_llm(monkeypatch):
     CAGRILAR.clear()
-    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
+    monkeypatch.setenv("LLM_SAGLAYICI", "ozel_sunucu")
+    monkeypatch.setenv("LLM_BASE_URL", "http://127.0.0.1:9/v1")
+    monkeypatch.setenv("LLM_MODEL", "test-model")
     monkeypatch.setenv("LLM_API_KEY", "test-anahtari")
 
     def _sahte(sistem, kullanici):
@@ -32,19 +31,20 @@ def sahte_llm(monkeypatch):
 
 @pytest.fixture
 def hazir(client, db_session):
-    """PRO plan, rızalı, profilli kullanıcı + belge listeli teşvik. (başlık, kurum) döner."""
+    """PRO plan, profilli kullanıcı + belge listeli teşvik. (başlık, kurum) döner."""
     db_session.add(Tesvik(id=9, kurum="KOSGEB", baslik="Küresel Rekabetçilik", ozet="o", detay="d", aktif_mi=True,
                           kaynak_url="https://t/9", uygunluk_kriterleri={"sektorler": ["genel"]},
                           basvuru_sartlari=["KOBİ olmak"], gerekli_belgeler=["Proje Başvuru Formu"],
                           basvuru_yeri="KBS"))
     db_session.commit()
     r = client.post("/api/auth/signup", json={"email": "a@example.com", "password": "Parola123", "full_name": "A",
-                                              "company_name": "B", "ai_yurtdisi_riza": True})
+                                              "company_name": "B"})
     assert r.status_code == 200, r.text
     h = {"Authorization": f"Bearer {r.json()['access_token']}"}
     org = db_session.query(Organization).join(User, User.org_id == Organization.id).filter(
         User.email == "a@example.com").one()
     org.plan = PlanType.PRO
+    org.ai_riza_saglayici = llm_saglayici.KULLANIM_KAYDI              # kuruluş modeli açtı
     db_session.add(FinancialProfile(org_id=org.id, sektor="imalat", bolge="Bursa", calisan_sayisi=18,
                                     yillik_ciro=32e6, nace_kodu="25.62"))
     db_session.commit()
@@ -68,24 +68,20 @@ def test_taslak_uretilir_saklanir_ve_belgeler_listeden_gelir(client, db_session,
     assert "Küresel Rekabetçilik" in kullanici and "sektör: imalat" in kullanici and "TRL" not in kullanici
     # GET'te geri gelir (tekrar ücret ödenmez)
     assert client.get("/api/basvuru-listesi/9", headers=h).json()["taslak"] == taslak
-    assert db_session.query(BasvuruTakibi).one().taslak_model == "gemini:gemini-2.5-flash"
+    assert db_session.query(BasvuruTakibi).one().taslak_model == "ozel_sunucu:test-model"
 
 
-def test_free_plan_rizasiz_ve_profilsiz_cagri_yapilmaz(client, db_session, hazir):
+def test_free_plan_vazgecmis_ve_profilsiz_cagri_yapilmaz(client, db_session, hazir):
     h, org = hazir
     org.plan = PlanType.FREE
     db_session.commit()
     assert _olustur(client, h).status_code == 403
     org.plan = PlanType.PRO
-    org.ai_yurtdisi_riza = False
+    org.ai_riza_saglayici = None                                      # kuruluş modeli açmadı
     db_session.commit()
     r = _olustur(client, h)
-    assert r.status_code == 403 and "rıza" in r.json()["detail"]
-    org.ai_yurtdisi_riza = True
-    org.ai_riza_saglayici = "anthropic:Anthropic PBC"      # başka sağlayıcıya verilmiş rıza geçmez
-    db_session.commit()
-    assert _olustur(client, h).status_code == 403
-    org.ai_riza_saglayici = GEMINI_RIZASI
+    assert r.status_code == 403 and "sizin için kapalı" in r.json()["detail"]
+    org.ai_riza_saglayici = llm_saglayici.KULLANIM_KAYDI
     db_session.query(FinancialProfile).delete()
     db_session.commit()
     assert _olustur(client, h).status_code == 404
@@ -97,7 +93,9 @@ def test_servis_yoksa_503_ve_hata_kaydi_bozmaz(client, db_session, hazir, monkey
     monkeypatch.delenv("LLM_SAGLAYICI")                  # varsayılan yerel: dış servis yok
     r = _olustur(client, h)
     assert r.status_code == 503 and "şablon" in r.json()["detail"]
-    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
+    monkeypatch.setenv("LLM_SAGLAYICI", "ozel_sunucu")
+    monkeypatch.setenv("LLM_BASE_URL", "http://127.0.0.1:9/v1")
+    monkeypatch.setenv("LLM_MODEL", "test-model")
 
     def _patla(sistem, kullanici):
         raise RuntimeError("kredi bitti")
@@ -164,7 +162,9 @@ def test_goc_taslak_sutunlari(tmp_path, monkeypatch):
 
 def test_kvkk_metni_taslak_aktarimini_ve_saklamayi_soyler():
     html = (KOK / "app/static/kvkk.html").read_text(encoding="utf-8")
-    assert "ön taslağı yazılması için de gönderilir" in html and "basvuru_takipleri.taslak" in html
+    assert "Taslak oluştur" in html and "kendi yönetimindeki sunucularda çalışan" in html and "basvuru_takipleri.taslak" in html
+    assert "varsayılan olarak kapalıdır" in html
+    assert "Gemini API" not in html and "Google LLC" not in html
 
 
 def test_self_test_bayragi():
@@ -178,7 +178,7 @@ def test_self_test_bayragi():
 # ---------------------------------------------------------------- yapay zekâsız şablon taslak (varsayılan, 2026-10-08)
 def test_sablon_taslak_free_planda_rizasiz_ve_dis_servis_cagirmadan(client, db_session, hazir):
     h, org = hazir
-    org.plan, org.ai_yurtdisi_riza = PlanType.FREE, False
+    org.plan = PlanType.FREE
     db_session.commit()
     r = client.post("/api/basvuru-listesi/9/taslak", headers=h)          # yontem varsayılanı: sablon
     assert r.status_code == 200, r.text
@@ -199,7 +199,7 @@ def test_sablon_taslak_profilsiz_404_ve_yapay_zeka_kurallari_korunur(client, db_
     db_session.query(FinancialProfile).delete()
     db_session.commit()
     assert client.post("/api/basvuru-listesi/9/taslak", headers=h).status_code == 404
-    org.ai_yurtdisi_riza = False
+    org.ai_riza_saglayici = None
     db_session.commit()
     assert client.post("/api/basvuru-listesi/9/taslak?yontem=yapay_zeka", headers=h).status_code == 403
     assert client.post("/api/basvuru-listesi/9/taslak?yontem=baska", headers=h).status_code == 422

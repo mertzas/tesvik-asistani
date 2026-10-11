@@ -141,7 +141,7 @@ anahtar), transactional e-posta (Postmark / SES / Resend; SMTP sorunu), İKAS ü
 ön muhasebe (Paraşüt vb.; 5986 gider faturaları), pazaryerleri ve reklam API'leri (yurt dışı satış ve reklam
 harcaması belgeleri), kargo/ETGB (önce araştırma).
 
-**Dil modeli ilkesi** (2026-10-11'den beri Anthropic kullanılmıyor; isteğe bağlı Gemini/OpenAI uyumlu uç, app/llm_saglayici.py): model önerir, deterministik kod denetler (app/dayanak.py), veri değişikliğini insan onaylar. Çevrimdışı işler
+**Dil modeli ilkesi** (2026-10-11'den beri üçüncü taraf yapay zekâ servisi kullanılmıyor — Anthropic, Google, OpenAI; isteğe bağlı model yalnız kendi sunucumuzda, iç ağ adresinde, app/llm_saglayici.py): model önerir, deterministik kod denetler (app/dayanak.py), veri değişikliğini insan onaylar. Çevrimdışı işler
 Batch API ile (%50), tekrarlayan bağlam prompt caching ile; kullanıcıya dönük her çağrı açık rıza ve kuruluş başına
 sınır arkasında.
 
@@ -153,7 +153,7 @@ sınır arkasında.
 3. **Kayıt özetlerinin temizlenmesi:** 49 kaydın özetinde kurum sitesi menü metni var (22 tamamen, 27 kısmen); kartlarda
    ve danışman bağlamında görünüyor. Kaynak sayfalardan yeniden yazım, veri betiği (dry-run + yedek + onay).
 4. **Başvuru dönemi bildirimleri:** eşleşen programın çağrısı açılınca e-posta (SMTP sonrası).
-5. **Canlı taslak ölçümü:** dış dil modeli (Gemini) yapılandırılırsa onaylı tavanla ölçülür; Anthropic artık kullanılmıyor (2026-10-11).
+5. **Canlı taslak ölçümü:** kendi sunucumuzdaki model (ozel_sunucu) GPU'lu sunucuda ölçülür; üçüncü taraf servis kullanılmaz (2026-10-11). Ölçüm aracı: docs/olcum/2026-10-11-ozel-model/ozel_model_olc.py.
 
 ## 5. Riskler ve açık sorular
 

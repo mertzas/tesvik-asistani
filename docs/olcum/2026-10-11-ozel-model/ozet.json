@@ -1,0 +1,67 @@
+[
+ {
+  "n": 1,
+  "soru": "Traktör ve mibzer almak istiyorum; Kırsal Kalkınma hibesinin oranı ve üst limiti nedir, bireysel traktör alımı destekleniyor mu?",
+  "persona": "ciftci",
+  "model": "gemma4:latest",
+  "sure_sn": 235.6,
+  "hata": null,
+  "gecti": true,
+  "dayanak_sorunlari": [],
+  "giris_token": 2051,
+  "cikis_token": 1960,
+  "uzunluk": 3627
+ },
+ {
+  "n": 6,
+  "soru": "Şirket kurmadan KOSGEB Girişimci Destek Programı'ndan yararlanabilir miyim?",
+  "persona": "girisim",
+  "model": "gemma4:latest",
+  "sure_sn": 262.0,
+  "hata": "yanıt uzunluk sınırında kesildi",
+  "gecti": false,
+  "dayanak_sorunlari": [],
+  "giris_token": null,
+  "cikis_token": null,
+  "uzunluk": 0
+ },
+ {
+  "n": 11,
+  "soru": "Restoranıma 3 kişi daha alacağım; 4447 sayılı Kanun işveren prim teşviki kaç ay sürer, şartları neler?",
+  "persona": "restoran",
+  "model": "gemma4:latest",
+  "sure_sn": 268.2,
+  "hata": "yanıt uzunluk sınırında kesildi",
+  "gecti": false,
+  "dayanak_sorunlari": [],
+  "giris_token": null,
+  "cikis_token": null,
+  "uzunluk": 0
+ },
+ {
+  "n": 15,
+  "soru": "Turquality programına girersek marka desteği oranı ve üst limiti ne olur?",
+  "persona": "eticaret",
+  "model": "gemma4:latest",
+  "sure_sn": 209.7,
+  "hata": null,
+  "gecti": true,
+  "dayanak_sorunlari": [],
+  "giris_token": 2051,
+  "cikis_token": 1619,
+  "uzunluk": 2726
+ },
+ {
+  "n": 23,
+  "soru": "Organik tarım desteğinden yararlanabilir miyim, dekar başına ne veriliyor?",
+  "persona": "organik_sertifikasiz",
+  "model": "gemma4:latest",
+  "sure_sn": 263.8,
+  "hata": "yanıt uzunluk sınırında kesildi",
+  "gecti": false,
+  "dayanak_sorunlari": [],
+  "giris_token": null,
+  "cikis_token": null,
+  "uzunluk": 0
+ }
+]

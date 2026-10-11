@@ -72,7 +72,9 @@ def test_yerel_girisim_modunda_huks_blogu_kullaniciya_gosterilir(veri):
 
 def test_answer_ve_akis_ayni_hazirligi_kullanir(veri, monkeypatch):
     """İki yol ayrışmasın: aynı kayıtlar, aynı notlar, aynı elenen bloğu, aynı yerel yanıt."""
-    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
+    monkeypatch.setenv("LLM_SAGLAYICI", "ozel_sunucu")
+    monkeypatch.setenv("LLM_BASE_URL", "http://127.0.0.1:9/v1")
+    monkeypatch.setenv("LLM_MODEL", "test-model")
     monkeypatch.setenv("LLM_API_KEY", "test")
     gorulen = []
 
@@ -87,7 +89,7 @@ def test_answer_ve_akis_ayni_hazirligi_kullanir(veri, monkeypatch):
     akis = _metin(rag.answer_akis(soru, None, llm_kullan=True, profil_kaydi=ltd))
     assert gorulen[0] == gorulen[1] and rag.ESKI_SISTEM_NOTU in gorulen[0][2]
     assert tek == akis and rag.ESKI_SISTEM_NOTU in tek
-    assert "Google Gemini servisine gönderildi" in tek, "dış servis denendiyse yöntem notu bunu söylemeli (KVKK)"
+    assert "kendi sunucumuzda çalışır" in tek, "model denendiyse yöntem notu bunu söylemeli (KVKK)"
 
 
 def test_dis_model_beklenirken_akis_bekleme_sinyali_verir(veri, dis_model, monkeypatch):
@@ -173,17 +175,19 @@ def test_sor_akis_olay_sirasi_ve_sorgu_kaydi(client, test_org_data, db_session):
     assert json.loads(olaylar[-1][1])["query_id"] == str(db_session.query(Query).first().id)
 
 
-def test_sor_akis_dis_servis_rizasizken_not_ve_rizayla_acik(client, test_org_data, monkeypatch):
-    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
+def test_sor_akis_ozel_sunucu_rizasiz_acik_ve_vazgecilebilir(client, test_org_data, monkeypatch):
+    monkeypatch.setenv("LLM_SAGLAYICI", "ozel_sunucu")
+    monkeypatch.setenv("LLM_BASE_URL", "http://127.0.0.1:9/v1")
+    monkeypatch.setenv("LLM_MODEL", "test-model")
     monkeypatch.setenv("LLM_API_KEY", "test")
     h = _hesap(client, test_org_data)
     r = client.post("/api/sor/akis", json={"question": "KOSGEB desteği"}, headers=h)
     metin = "".join(v for t, v in _sse_coz(r.text) if t == "parca")
-    assert "llm_kullan=False" in metin and "açık rıza" in metin and "Google Gemini" in metin
+    assert "llm_kullan=False" in metin and "rıza" not in metin        # varsayılan kapalı
     client.post("/api/organizations/ai-riza", json={"riza": True}, headers=h)
     r = client.post("/api/sor/akis", json={"question": "KOSGEB desteği"}, headers=h)
     metin = "".join(v for t, v in _sse_coz(r.text) if t == "parca")
-    assert "llm_kullan=True" in metin and "açık rıza" not in metin
+    assert "llm_kullan=True" in metin and "rıza" not in metin
 
 
 def test_sor_akis_yetkisiz_401(client):

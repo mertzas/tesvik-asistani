@@ -2,8 +2,8 @@
 **Kısa cevap:**
 - **Yapay Zekâ Kredi Programı** (KOSGEB)
 - Destek: Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz); GO Dijital Cüzdan'a blokeli, bankadan Kesin Teminat Mektubu zorunlu (limit = teminat tutarı, en az 500.000 TL); geçerli Teknogirişim Rozeti şartı
-- Başvuru: Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Sizin için: belirlenemedi — profilde karşılığı olmayan kilit şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak.
+- Başvuru: Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Program: Teknoloji ve yenilik odaklı KOBİ'lerin yapay zekâ teknolojilerini iş süreçlerinde kullanmasını, dijital kapasitelerini ve üretim yetkinliklerini geliştirmesini sağlayan faizsiz ve komisyonsuz KOSGEB kredisi. Başvuruda geçerli Teknogirişim Rozeti ve GO Dijital Cüzdan hesabı gerekir.
 - Kimler başvurabilir (kayıttaki şartlar): KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak; Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak; GO Dijital Cüzdan hesabına sahip olmak.
 

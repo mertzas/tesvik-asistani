@@ -22,7 +22,7 @@ email-validator>=2.1
 python-dotenv>=1.0
 alembic>=1.13
 apscheduler>=3.10
-openai>=1.40  # isteğe bağlı dış dil modeli (Gemini/OpenAI uyumlu); Anthropic kullanılmaz
+httpx>=0.27  # kendi sunucumuzdaki model istemcisi (app/llm_saglayici); üçüncü taraf yapay zekâ SDK'sı yok
 
 # Yalnizca PostgreSQL'e baglanacaksaniz gerekli (yerel gelistirmede SQLite
 # kullanildigi icin varsayilan olarak kurulmaz - Windows'ta derleme icin

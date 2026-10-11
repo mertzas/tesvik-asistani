@@ -228,10 +228,13 @@ def test_temperature_reddeden_modelde_onsuz_dener_ve_ogrenir(monkeypatch):
     assert "temperature" not in istemci.cagrilar[2], "ikinci çağrıda boşuna 400 alınmamalı"
 
 
-def test_anahtar_yoksa_net_hata(monkeypatch):
-    monkeypatch.setenv("LLM_SAGLAYICI", "gemini")
-    monkeypatch.delenv("LLM_API_KEY", raising=False)
-    with pytest.raises(ExtractionError):
+@pytest.mark.parametrize("saglayici,url", [("gemini", ""), ("ozel_sunucu", "https://api.openai.com/v1")])
+def test_ucuncu_taraf_ya_da_dis_adreste_net_hata(monkeypatch, saglayici, url):
+    monkeypatch.setenv("LLM_SAGLAYICI", saglayici)
+    monkeypatch.setenv("LLM_BASE_URL", url)
+    monkeypatch.setenv("LLM_MODEL", "test-model")
+    monkeypatch.setenv("LLM_API_KEY", "k")
+    with pytest.raises(ExtractionError, match="yapılandırılmamış"):
         run(extract_nace_scope(YATAY_METIN))
 
 

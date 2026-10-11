@@ -340,15 +340,8 @@ def signup(request: UserSignup, arka_plan: BackgroundTasks, db: Session = Depend
         return JSONResponse(status_code=status.HTTP_202_ACCEPTED, content=KAYIT_YANITI)
 
     # Organization oluştur
-    saglayici = llm_saglayici.saglayici()
-    riza = bool(request.ai_yurtdisi_riza and saglayici.dis_mi and saglayici.yurtdisi)
-    org = Organization(
-        name=request.company_name,
-        email=request.email,
-        ai_yurtdisi_riza=riza,
-        ai_riza_tarihi=datetime.now(timezone.utc) if riza else None,
-        ai_riza_saglayici=saglayici.riza_anahtari if riza else None,
-    )
+    # Yurt dışı aktarım rızası alınmaz: hiçbir veri üçüncü taraf yapay zekâ servisine gitmez (app/llm_saglayici).
+    org = Organization(name=request.company_name, email=request.email)
     db.add(org)
     db.flush()
 
@@ -541,20 +534,10 @@ def dogrulama_yeniden_gonder(arka_plan: BackgroundTasks, current_user: User = De
 # ============ MAIN API ENDPOINTS ============
 
 def _dis_model_kullanilir(org: Organization) -> bool:
-    """Dış dil modeli yalnız yapılandırılmışsa ve kuruluşun BU sağlayıcıya geçerli rızası varsa çağrılır
-    (app/llm_saglayici). Varsayılan yerel danışmanda hiçbir veri dışarı çıkmaz."""
+    """Kendi sunucumuzdaki dil modeli yalnız yapılandırılmışsa ve kuruluş vazgeçmediyse çağrılır
+    (app/llm_saglayici). Varsayılan yerel danışmanda dil modeli yoktur; hiçbir durumda veri üçüncü tarafa gitmez."""
     s = llm_saglayici.saglayici()
     return llm_saglayici.etkin_mi(s) and llm_saglayici.riza_gecerli_mi(org, s)
-
-
-def _riza_notu(org: Organization) -> str:
-    """Dış servis yapılandırılmış ama rıza yoksa yanıtın sonuna eklenen not; yerel danışmanda boş."""
-    s = llm_saglayici.saglayici()
-    if not (llm_saglayici.etkin_mi(s) and s.yurtdisi) or llm_saglayici.riza_gecerli_mi(org, s):
-        return ""
-    return ("\n\n---\n*Bu yanıt yerel danışmandan geldi; verileriniz sunucumuzdan çıkmadı. Dil modeli destekli yorum "
-            f"için işletme profilinizin {s.ad} servisine ({s.kurum}, {s.ulke}) aktarılmasına Ayarlar bölümünden açık "
-            "rıza verebilir, istediğiniz zaman geri alabilirsiniz. Ayrıntı: /kvkk*")
 
 
 @app.post("/api/sor", response_model=AskResponse, dependencies=[Depends(org_hiz_siniri(20))])
@@ -585,8 +568,6 @@ def sor(
         # Mevcut RAG sistemini çalıştır
         answer_text = answer(request.question, profil, llm_kullan=riza_var,
                              profil_kaydi=profil_row)
-        if not riza_var:
-            answer_text += _riza_notu(current_org)
 
         # Gosterilecek kayitlar, AI danismanin gordugu kayitlarin AYNISI olmali.
         #
@@ -707,9 +688,6 @@ def sor_akis(
                     yield ": bekleniyor\n\n"   # SSE yorumu: vekil bağlantıyı kapatmasın, istemci yok sayar
                     continue
                 yield _sse("parca", {"metin": parca})
-            not_metni = "" if riza_var else _riza_notu(current_org)
-            if not_metni:
-                yield _sse("parca", {"metin": not_metni})
             yield _sse("son", {"query_id": query_id, "tokens_used": tokens_used})
         except Exception:
             logger.exception("sor_akis: akış sırasında hata")
@@ -952,42 +930,31 @@ def ai_riza_guncelle(
     current_org: Organization = Depends(get_current_org),
     db: Session = Depends(get_db),
 ):
-    """Dış yapay zekâ servisi için yurt dışına aktarım rızasını ver/geri al.
+    """Kendi sunucumuzdaki dil modelini kullan / vazgeç.
 
-    KVKK açık rızası her zaman GERİ ALINABİLİR olmalıdır; bu uç nokta rızayı kapatmak için de kullanılır. Rıza,
-    o anda yapılandırılmış sağlayıcıya (ad + kurum) verilir; sağlayıcı değişirse eski rıza geçersiz olur ve yeniden
-    istenir. Yurt dışına aktaran bir servis yapılandırılmamışsa rıza alınmaz (409): yanıtlar yerel danışmandan gelir.
+    Model (LLM_SAGLAYICI=ozel_sunucu) iç ağımızda çalışır ve veri üçüncü tarafa ya da yurt dışına aktarılmaz; yine de
+    kuruluş bazında varsayılan KAPALIDIR, kullanıcı açıkça açar ve istediği an kapatır. Tercih sağlayıcıdan ve sunucu
+    adresinden bağımsız saklanır (llm_saglayici.KULLANIM_KAYDI). Model yapılandırılmamışsa açma isteği 409 döner.
+    Eski sürümlerden kalan yurt dışı rıza kayıtları her çağrıda temizlenir.
     """
     saglayici = llm_saglayici.saglayici()
-    if request.riza and not llm_saglayici.etkin_mi(saglayici):
+    etkin = llm_saglayici.etkin_mi(saglayici)
+    if request.riza and not etkin:
         raise HTTPException(status_code=status.HTTP_409_CONFLICT,
-                            detail="Bu sunucuda dış yapay zekâ servisi yapılandırılmamış; yanıtlar yerel danışmandan "
-                                   "gelir ve rıza gerekmez.")
-    if llm_saglayici.etkin_mi(saglayici) and not saglayici.yurtdisi:
-        # Yurt içi işleme: açık rıza aranmaz ama kullanıcı vazgeçebilir (vazgeçme kaydı sağlayıcıya özeldir).
-        current_org.ai_yurtdisi_riza, current_org.ai_riza_tarihi = False, None
-        current_org.ai_riza_saglayici = None if request.riza else llm_saglayici.ret_anahtari(saglayici)
-        db.commit()
-        return {"ai_yurtdisi_riza": False, "saglayici": saglayici.sozluk(), "tarih": None, "aydinlatma_metni": "/kvkk",
-                "mesaj": (f"{saglayici.ad} ({saglayici.kurum}, {saglayici.ulke}) kullanılacak; işleme yurt içinde "
-                          "olduğu için ayrıca açık rıza gerekmez." if request.riza else
-                          f"Vazgeçtiniz; sorularınız {saglayici.ad} servisine gönderilmeyecek, yanıtlar yerel "
-                          "danışmandan gelecek.")}
-    current_org.ai_yurtdisi_riza = request.riza
-    current_org.ai_riza_tarihi = datetime.now(timezone.utc) if request.riza else None
-    current_org.ai_riza_saglayici = saglayici.riza_anahtari if request.riza else None
+                            detail="Bu sunucuda dil modeli yapılandırılmamış; yanıtlar yerel danışmandan gelir ve "
+                                   "hiçbir veri dışarı aktarılmaz.")
+    current_org.ai_yurtdisi_riza, current_org.ai_riza_tarihi = False, None
+    current_org.ai_riza_saglayici = llm_saglayici.KULLANIM_KAYDI if request.riza else None
     db.commit()
-    return {
-        "ai_yurtdisi_riza": current_org.ai_yurtdisi_riza,
-        "saglayici": saglayici.sozluk() if request.riza else None,
-        "tarih": (current_org.ai_riza_tarihi.isoformat()
-                  if current_org.ai_riza_tarihi else None),
-        "mesaj": (f"Açık rıza alındı; {saglayici.ad} ({saglayici.kurum}, {saglayici.ulke}) etkin."
-                  if request.riza else
-                  "Rıza geri alındı; işletme profiliniz yurt dışına aktarılmayacak. Yanıtlar yerel danışmandan, "
-                  "veritabanı kayıtlarından üretilecek."),
-        "aydinlatma_metni": "/kvkk",
-    }
+    if request.riza:
+        mesaj = (f"{saglayici.ad} açıldı; model hizmet sağlayıcının kendi sunucusunda çalışır, verileriniz üçüncü "
+                 "taraf bir yapay zekâ servisine gitmez. İstediğiniz zaman kapatabilirsiniz.")
+    elif etkin:
+        mesaj = f"Kapattınız; sorularınız {saglayici.ad} ile işlenmeyecek, yanıtlar yerel danışmandan gelecek."
+    else:
+        mesaj = "Yanıtlar yerel danışmandan, veritabanı kayıtlarından üretilir; hiçbir veri dışarı aktarılmaz."
+    return {"ai_yurtdisi_riza": False, "saglayici": saglayici.sozluk() if etkin else None, "tarih": None,
+            "mesaj": mesaj, "aydinlatma_metni": "/kvkk"}
 
 
 @app.get("/api/yapay-zeka", response_model=dict)
@@ -995,9 +962,7 @@ def yapay_zeka_durumu(current_org: Organization = Depends(get_current_org)):
     """Etkin yanıt servisi ve bu kuruluşun rıza durumu (panel ve İKAS uygulaması rıza metnini buradan kurar)."""
     saglayici = llm_saglayici.saglayici()
     return {**saglayici.sozluk(), "riza_gecerli": llm_saglayici.riza_gecerli_mi(current_org, saglayici),
-            "dis_model_kullaniliyor": _dis_model_kullanilir(current_org),
-            "eski_riza_gecersiz": bool(current_org.ai_yurtdisi_riza
-                                       and current_org.ai_riza_saglayici != saglayici.riza_anahtari)}
+            "dis_model_kullaniliyor": _dis_model_kullanilir(current_org)}
 
 
 @app.get("/api/analytics/usage", response_model=AnalyticsResponse)

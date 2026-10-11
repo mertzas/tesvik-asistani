@@ -33,12 +33,9 @@ class UserSignup(BaseModel):
     company_name: str = Field(..., min_length=1, max_length=200)
 
     _sifre = field_validator("password")(sifre_kontrol)
-    # KVKK acik rizasi - ZORUNLU DEGIL. Verilmezse hesap yine acilir, AI
-    # danisman yerine liste formati kullanilir (bkz. app/main.py sor()).
-    ai_yurtdisi_riza: bool = Field(
-        False,
-        description="Yapay zeka danismani icin isletme profilinin "
-                    "yapilandirilmis yurt disi dil modeli servisine aktarilmasina acik riza (servis yoksa yok sayilir)")
+    # Eski istemcilerle uyumluluk: alan kabul edilir ama yok sayılır; hiçbir veri yurt dışına ya da üçüncü taraf
+    # yapay zekâ servisine aktarılmadığı için rıza alınmaz (app/llm_saglayici).
+    ai_yurtdisi_riza: bool = Field(False, description="Kullanılmıyor (eski istemci uyumluluğu); yok sayılır.")
 
 
 class HesapSilme(BaseModel):

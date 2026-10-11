@@ -1,43 +1,13 @@
 <!-- persona: None | soru: Bir yapay zekâ girişimi kurmayı düşünüyorum, devlet desteği var mı? -->
 **Kısa cevap:**
 - Uygunluk kararı için faaliyet, şirket türü ve il bilgisi gerekiyor. Aşağıda sorunuzla ilgili programların kayıttaki şartlarını ve tutarlarını verdim; size uyup uymadığı eksik bilgiler girilince netleşir (sorular 5. bölümde).
-- Öne çıkan: **Yapay Zekâ Kredi Programı** (KOSGEB) — Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz); GO Dijital Cüzdan'a blokeli, bankadan Kesin Teminat Mektubu zorunlu (limit = teminat tutarı, en az 500.000 TL); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Öne çıkan: **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)** (TUBITAK); 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı yalnız şunlar için açık: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); yeni başvuranlar için açık çağrı kayıtlarımızda yok (kurum duyurularından takip edin).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Profil girilmemiş: faaliyet, şirket türü, il ve ölçek **bilinmiyor**.
 - Sorudan anlaşılan ihtiyaç: girişim / şirketleşme öncesi ve erken aşama
 
 ### 2. Eşleşen Teşvik ve Hibe Programları
-
-**Yapay Zekâ Kredi Programı — KOSGEB**
-- **Başvuru dönemi:** Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Durum:** Belirlenemedi — profiliniz olmadığı için uygunluk değerlendirilemedi.
-- **Destek:** Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz); GO Dijital Cüzdan'a blokeli, bankadan Kesin Teminat Mektubu zorunlu (limit = teminat tutarı, en az 500.000 TL); geçerli Teknogirişim Rozeti şartı
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Türk Ticaret Kanunu'nda tanımlı gerçek veya tüzel kişi statüsünde KOBİ olmak — resmî metin: “tanımlı gerçek veya tüzel kişi statüsünde KOBİ olması”
-  - ☐ KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak — resmî metin: “KOSGEB sisteminde kayıtlı, işletme beyanının güncel ve aktif durumda bulunması”
-  - ☐ Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak — resmî metin: “Başvuru tarihi itibarıyla geçerli”
-  - ☐ GO Dijital Cüzdan hesabına sahip olmak — resmî metin: “GO Dijital Cüzdan”
-- **Kurallar (kayıttan):**
-  - Kredi yalnız KOSGEB'in Hizmet Sağlayıcılar Listesi'ndeki sağlayıcılardan alınacak hizmet giderleri için kullanılır — resmî metin: “yer alan hizmet sağlayıcılardan alınacak hizmet giderleri ödemelerinde”
-- **Başvuru:** KOSGEB bilgi sistemi (www.kosgeb.gov.tr ve/veya e-Devlet) üzerinden Yapay Zeka Kredi Başvurusu — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi
-
-**Girişimci Destek Programı — KOSGEB**
-- **Başvuru dönemi:** İş Geliştirme çağrısı kapandı (08.05.2026); programın diğer destekleri ya da aşamaları için kayıtlarımızda çağrı tarihi yok, kurumdan teyit edin
-- **Durum:** Belirlenemedi — profiliniz olmadığı için uygunluk değerlendirilemedi.
-- **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
-- **Destek:** İş Kurma: gerçek kişi 10.000 TL / sermaye şirketi 20.000 TL (%100 geri ödemesiz; genç/kadın/engelli/gazi/şehit yakını +10.000 TL); İş Geliştirme: 1.500.000 TL'ye kadar (%80 geri ödemeli, +150.000 TL ilave); kredi faiz/kâr payı desteği: 1.000.000 TL kredi, faizin %50'si geri ödemesiz
-- **Hesaplama:** GERİ ÖDEMESİZ kuruluş desteği: gerçek kişi 10.000 TL, sermaye şirketi 20.000 TL; girişimci genç/kadın/engelli/gazi/şehit yakını ise +10.000 TL (üst sınır 30.000 TL).
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ İş Kurma Desteği: KOSGEB destekli sektörde faaliyet gösteren 0-1 yaş işletme — resmî metin: “İş Kurma Desteği için KOSGEB tarafından desteklenen sektörlerde faaliyet gösteren 0-1 yaş aralığındaki işletme olması”
-  - ☐ İş Geliştirme Desteği: NACE'ye göre C-İmalat, 61 Telekomünikasyon, 62 Bilgisayar programlama/danışmanlık, 63 Bilişim altyapısı/veri işleme/barındırma veya 72 Bilimsel Ar-Ge sektöründe faaliyet gösteren 0-3 yaş işletme olmak — resmî metin: “62-Bilgisayar programlama, danışmanlık ve ilgili faaliyetler”
-  - ☐ KOSGEB veri tabanına kayıtlı ve aktif olmalı — resmî metin: “KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması”
-  - ☐ Girişimcinin başvurduğu işletmedeki ortaklık payı en az %50 olmalıdır — resmî metin: “girişimcinin destek programı başvurusunda bulunduğu işletmedeki ortaklık payı en az %50 olmalıdır”
-  - ☐ Girişimci işletmeyi münferiden temsile yetkili olmalı — resmî metin: “girişimci işletmeyi münferiden temsile yetkili olmalıdır”
-  - ☐ Faiz/Kâr Payı Desteği için: İş Geliştirme jüri puanı en az 50 ve girişimci kadın veya genç olmalı — resmî metin: “Jüri puanı 50 puan ve üzerinde olan işletmelerden, girişimcisi kadın veya genç olanlar başvurabilir.”
-- **Kurallar (kayıttan):**
-  - İş Geliştirme Desteği ile İş Geliştirme Faiz/Kâr Payı Desteğinden aynı anda yararlanılamaz — resmî metin: “İŞ GELİŞTİRME FAİZ/KÂR PAYI DESTEĞİ ve İŞ GELİŞTİRME DESTEĞİ’nden aynı anda yararlanılamaz.”
-- **Başvuru:** KOSGEB e-Hizmetler (e-Devlet şifresi ile online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/1231/girisimci-destek-programi
 
 **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) — TUBITAK**
 - **Başvuru dönemi:** 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı: başvuruya açık — bu çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS) — ön kayıt son günü 17.11.2026 (37 gün kaldı); başvuru kapanışı 20.11.2026 (40 gün kaldı). Not: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS). (duyuru: https://tubitak.gov.tr/sites/default/files/2026-08/2026_1_BIGG_Tohum_Yatirim_Cagri_Duyuru_Metni.pdf, doğrulama 10.10.2026)
@@ -53,42 +23,70 @@
   - Mükemmeliyet Mührü alan girişimciden şirket kurması istenir; şirket, Aşama 2 destek tutarı karşılığında en fazla %5 hisseyi TÜBİTAK BiGG fonuna devretmeyi kabul eder — resmî metin: “Kuruluş, Aşama 2’de destek kapsamına alınan tutar karşılığında en fazla %5 hissesi için TÜBİTAK BiGG fonu ile yatırım sözleşmesi yapar.”
 - **Başvuru:** PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim
 
-**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — belirlenemedi (profiliniz olmadığı için uygunluk değerlendirilemedi); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+**HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF**
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Durum:** Belirlenemedi — profiliniz olmadığı için uygunluk değerlendirilemedi.
+- **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
+- **Kredi ve kefalet limitleri:** İşletme kredisi: kefalet azami 800 bin TL, kredi 1 Milyon TL
+- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı — resmî metin: “Kredi başvuru tarihi itibarıyla, sahibi veya asgari %50 hisse sahibi ortağı azami 29 yaşında olan işletmeler”
+- **Kurallar (kayıttan):**
+  - Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz. — resmî metin: “Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir.”
+- **Başvuru:** Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi
+
+**E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) — Ticaret Bakanlığı**
+- **Başvuru dönemi:** Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Durum:** Belirlenemedi — profiliniz olmadığı için uygunluk değerlendirilemedi.
+- **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
+- **Destek:** %50 (hedef ülkelerde %70); 2026 perakende e-ticaret siteleri için yıllık 123.315.792 TL; ülke başına 3 yıl
+- **Hesaplama:** Uygun pazarlama giderinin %50'si (hedef ülkede %70); statü sahibi perakende sitelerde 2026 yıllık en çok 123.315.792 TL
+- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ önceki yıl en az 500.000 USD ihracat (kayıttaki kriter)
+  - ☐ Şirket olmak: 6102 sayılı TTK md.124'teki şirketler ya da ticari/sınai faaliyette bulunan kooperatif (5986 sayılı Karar m.2); şahıs işletmesi doğrudan yararlanamaz — resmî metin: “merkezi Türkiye’de bulunan elektronik ticaret hizmet sağlayıcı şirketleri,”
+  - ☐ Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır) — kurumdan teyit edin
+  - ☐ Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru — kurumdan teyit edin
+  - ☐ Desteklenen ürünler Türk ürünü olmalı (ürün belgesi, üretim yeri ve marka ayrıntılarını E-İhracat Genelgesi'nden teyit edin) — resmî metin: “pazaryerlerinde Türk ürünlerinin ve markalarının çevrim”
+  - ☐ Perakende E-Ticaret Sitesi (ya da pazaryeri/B2B/konsorsiyum) statüsü alınmış olmalı — resmî metin: “şirketler, E-İhracat Konsorsiyumları, perakende e-ticaret siteleri, pazaryerleri ve B2B platformlarını,”
+  - ve 2 şart daha: panelde programın Kontrol listesi'nde
+- **Kurallar (kayıttan):**
+  - Giderlerim Bakanlıkça belirlenen e-ihracat tanıtım/pazarlama faaliyetleri listesinde yer alıyor (dijital pazaryeri reklam giderleri bu kalemin dışındadır) — resmî metin: “Bakanlıkça belirlenen diğer pazarlama faaliyetlerine ilişkin giderleri %50 oranında ve her ülke için 3 (üç) yıl süresince”
+- **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-5
 
 **Şu an başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
 
 **Birlikte kullanım (resmî metinden):**
-- [KOSGEB] Girişimci Destek Programı: İş Geliştirme Desteği ile İş Geliştirme Faiz/Kâr Payı Desteğinden aynı anda yararlanılamaz (resmî metin: "İŞ GELİŞTİRME FAİZ/KÂR PAYI DESTEĞİ ve İŞ GELİŞTİRME DESTEĞİ’nden aynı anda yararlanılamaz.")
+- [Ticaret Bakanlığı] E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) (resmî metin: "bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir")
 
 **Girişim ön değerlendirmesi**
 Sistemde kaydı olmayan, ayrıca bakabileceğiniz programlar (oran ve şartları için resmî kaynağa bakın): KOSGEB Yurt Dışı Pazar Destek Programı; TTGV programları; Kalkınma Ajansı proje teklif çağrıları.
 Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1/2026'dan itibaren 10962 sayılı Karar kapsamındadır; 5447 (E-Turquality) ve 5448 sayılı Kararlar yürürlükten kaldırılmıştır. KOSGEB Ar-Ge/Ür-Ge/İnovasyon ve KOBİGEL programları yürürlükten kaldırılmıştır (kayıtları 'kapalı' olarak sistemde).
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Yapay Zekâ Kredi Programı, Girişimci Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
-- **Yapay Zekâ Kredi Programı:** KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak
-- **Girişimci Destek Programı:** KOSGEB veri tabanına kayıtlı ve aktif olmalı
+- **İhracatçı birliği üyeliği** (E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi…): Ürün grubunuzun ihracatçı birliğine üye olun; 5973 ve 5986 başvuruları üyesi olunan birliğin genel sekreterliğine yapılır.
+- **Ticaret Bakanlığı DYS kaydı** (E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi…): Destek Yönetim Sistemi'ne (DYS) şirket kaydı; MERSİS bilgileri ve NACE kodu güncel olmalı.
+- **Harcamadan önce ön onay** (E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi…): Bu programlarda ön onay tarihinden önce yapılan harcama desteklenmez; harcamayı planlamadan başvurun.
 - **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım):** Aşama 1 (hızlandırma programı) için: üniversitede ön lisans/lisans/yüksek lisans/doktora öğrencisi veya mezunu olmak; hızlandırma programına kabul tarihinde herhangi bir sermaye şirketi veya gerçek kişi işletmesinin ortağı olmamak (halka açık şirket payları ve kitle fonlaması payları hariç); daha önce Teknogirişim Sermayesi Desteği veya 1512/1812 2. Aşama desteği almamış olmak
 - **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım):** Başvuru yeri: PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına
+- **E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5):** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru
+- **E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5):** Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır)
 - [Genel ilke – teyit edin] Başvuru ya da sözleşme tarihinden önce yapılan harcamalar çoğu programda desteklenmez; harcamaya başlamadan önce kurumun onayını bekleyin.
 - [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
 - [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
-1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
+1. Ön koşul kayıtlar: İhracatçı birliği üyeliği; Ticaret Bakanlığı DYS kaydı; Harcamadan önce ön onay.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-3. Belgeler (Yapay Zekâ Kredi Programı): Bankadan GO Dijital Teknoloji Hizmetleri A.Ş.'ye hitaben Kesin Teminat Mektubu getirmek (limit = teminat tutarı, en az 500.000 TL); Yapay Zekâ Kredisi Başvuru Formu (KOSGEB sistemi / e-Devlet üzerinden elektronik); Yapay Zekâ Kredisi Taahhütnamesi; Yapay Zekâ Kredisi Hizmet Giderleri Tablosu; Bankadan Kesin Teminat Mektubu (kredinin GO Dijital Cüzdan hesabına blokeli aktarımı için zorunlu); Teminat mektubunun vadesi süresiz olmalı veya son geri ödeme tarihinden 6 ay sonrasını kapsamalı (mümkün değilse en az 1 yıl süreli); Teminat mektubunda 'GO Dijital Yapay Zeka Kredisi' ifadesi ve GO Dijital'in yazılı muvafakati olmadan risk kapaması/çıkışı yapılmayacağı ibaresi bulunmalı.
-4. Başvuru kanalı: Yapay Zekâ Kredi Programı: KOSGEB bilgi sistemi (www.kosgeb.gov.tr ve/veya e-Devlet) üzerinden Yapay Zeka Kredi Başvurusu — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi | Girişimci Destek Programı: KOSGEB e-Hizmetler (e-Devlet şifresi ile online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/1231/girisimci-destek-programi | 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım): PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim.
-5. İletişim (doğrulanmış): KOSGEB: çağrı merkezi 444 1 567, genel merkez 0 312 595 28 00; Hacı Bayram Mah. İstanbul Cad. No: 32 06050 Ulus / Altındağ / Ankara (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/iletisim)
+3. Belgeler (1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)): Aşama 2 için (hızlandırma programını tamamladıktan sonra): iş planı (AGY112 taslağına göre) PRODİS'te hazırlanır ve uygulayıcı kuruluşa onaylatılır; 1812 Tahmini Maliyet Formları; Eş Yatırım Taahhütnamesi ve Eş Yatırım Bilgi Formu (eş yatırım varsa); ARDEB Muvafakatname Formu (hangi durumda gerektiği çağrı metninden teyit edilecek; gerekiyorsa hazırlandı).
+4. Başvuru kanalı: 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım): PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim | HALKBANK İLK ADIM KREDİSİ PROJESİ: Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye … — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi | E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5): Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-5.
+5. İletişim (doğrulanmış): TUBITAK: çağrı merkezi 444 66 90, genel merkez 0 312 298 10 00; Remzi Oğuz Arık Mah. Tunus Cd. No:80 06540 Çankaya / Ankara (doğrulama: https://tubitak.gov.tr/en/node/11658)
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. Panelde **İşletme profili** formunu doldurun (faaliyet/NACE, şirket türü, il, çalışan sayısı, yıllık ciro): uygunluk kararı ve ölçek, il, şirket türü şartları ancak bu bilgilerle verilebilir.
-2. Yapay Zekâ Kredi Programı: “Türk Ticaret Kanunu'nda tanımlı gerçek veya tüzel kişi statüsünde KOBİ olmak” şartını sağlıyor musunuz?
-3. Yapay Zekâ Kredi Programı: “KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak” şartını sağlıyor musunuz?
-4. Girişimci Destek Programı: “İş Kurma Desteği: KOSGEB destekli sektörde faaliyet gösteren 0-1 yaş işletme” şartını sağlıyor musunuz?
+2. 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım): “Hızlandırma programına kabul tarihinde herhangi bir sermaye şirketinin ya da şahıs işletmesinin ortağı olmamak (borsadaki hisseler ve kitle fonlaması payları sayılmaz)” şartını sağlıyor musunuz?
+3. 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım): “Aşama 1 (hızlandırma programı) için: üniversitede ön lisans/lisans/yüksek lisans/doktora öğrencisi veya mezunu olmak; hızlandırma programına kabul tarihinde herhangi bir sermaye şirketi veya gerçek…” şartını sağlıyor musunuz?
+4. HALKBANK İLK ADIM KREDİSİ PROJESİ: “İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

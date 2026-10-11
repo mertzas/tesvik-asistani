@@ -32,21 +32,14 @@
 **Tobb Nefes Kredisi 2020 Destek Paketi — KGF** (kapalı)
 - **Neden:** program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor).
 - **Kimler başvurabiliyordu (son çağrı):** Genel Kriterler Hazine destekli kefalet mevzuatı gereği genel kriterler bu limit için de geçerlidir. TOBB Nefes Kredisi kapsamında TOBB Üyesi; Ticaret Odası….
-- **Ne yapabilirsiniz:** Sonraki başvuru dönemini KGF duyurularından takip edin; çağrı açıldığında şartları yeniden kontrol edin.
+- **Ne yapabilirsiniz:** Bu programın güncel sürümü etkin: TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI; eski sürümün yeni dönemini beklemeyin.
 - **Kaynak:** https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/gecmis-programlar/tobb-nefes-kredisi-2020-destek-paketi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- TKYB KREDİ DESTEK PAKETİ (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- DİJİTAL KEFALET DESTEK PROGRAMI (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-
-**Size kapalı ya da başvuruya kapalı programlar:**
-- GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
-- [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
-- [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.

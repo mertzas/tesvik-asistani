@@ -35,18 +35,9 @@
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - DİJİTAL KEFALET DESTEK PROGRAMI (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
-**Size kapalı ya da başvuruya kapalı programlar:**
-- GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
-- TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (KGF) — uygun değil: program KOBİ'lere yönelik (kayıttaki şart: “KOBİ olmak (kefalet limiti tablosunda yararlanıcı yalnız KOBİ)”); işletmeniz büyük ölçekli
-- KGF Genel Destek Programı (KGF) — uygun değil: program KOBİ'lere yönelik (kayıttaki şart: “KOBİ tanımına uyan işletme olmak”); işletmeniz büyük ölçekli
-- İLAVE İSTİHDAM DESTEK PAKETİ (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)
-
 ### 3. Darboğazlar ve Kritik Şartlar
 - **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (İstihdamı Koruma Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **İstihdamı Koruma Destek Programı:** İşletme Beyanının güncel olması
-- [Genel ilke – teyit edin] Başvuru ya da sözleşme tarihinden önce yapılan harcamalar çoğu programda desteklenmez; harcamaya başlamadan önce kurumun onayını bekleyin.
-- [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
-- [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.

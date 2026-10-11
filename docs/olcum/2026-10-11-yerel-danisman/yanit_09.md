@@ -34,20 +34,10 @@
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - TÜBİTAK Transfer Ödemeleri (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: KGF’nin kefalet vereceği transfer ödemesine ilişkin projesinin TÜBİTAK tarafından desteklenmeye hak kazanmış olması); Dönemsel başvuru yok: projesi TÜBİTAK tarafından desteklenmeye hak kazandıktan sonra, transfer ödemesi için doğrudan KGF'ye başvurulur (KGF TÜBİTAK transfer ödemeleri kefalet sayfası). (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-
-**Size kapalı ya da başvuruya kapalı programlar:**
-- KÜRESEL REKABETÇİLİK DESTEK PAKETİ (KGF) — kapalı: bağlı olduğu KOSGEB programının (Küresel Rekabetçilik Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
-- KAPASİTE GELİŞTİRME DESTEK PAKETİ (KGF) — kapalı: bağlı olduğu KOSGEB programının (Kapasite Geliştirme Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
-- Kapasite Geliştirme Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Yapay Zekâ Kredi Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **Yapay Zekâ Kredi Programı:** KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak
-- [Genel ilke – teyit edin] Başvuru ya da sözleşme tarihinden önce yapılan harcamalar çoğu programda desteklenmez; harcamaya başlamadan önce kurumun onayını bekleyin.
-- [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
-- [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
@@ -58,9 +48,8 @@
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.
-2. Yapay Zekâ Kredi Programı: “KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak” şartını sağlıyor musunuz?
-3. Yapay Zekâ Kredi Programı: “Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak” şartını sağlıyor musunuz?
+1. Yapay Zekâ Kredi Programı: “KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak” şartını sağlıyor musunuz?
+2. Yapay Zekâ Kredi Programı: “Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

@@ -1,6 +1,7 @@
 <!-- persona: eticaret | soru: Pazaryeri üyelik gideri desteği hâlâ yıllık 15.102 TL mi, hangi Karar geçerli? -->
 **Kısa cevap:**
 - **Pazara Girişte Dijital Faaliyetlerin Desteklenmesi** (Ticaret Bakanlığı)
+- Sorduğunuz tutar: kayıtta «15.102 TL 2022 yılı değeridir».
 - Sizin için: **kapalı** — program başvuruya açık değil (dayanağı 2573 sayılı Karar 18.08.2022'de mülga (Bakanlık sayfası: güncel karşılığı 5986 m.8 Çevrim İçi Mağaza ve m.4 Dijital Pazaryeri Tanıtım desteği).
 - Son bilinen destek (bilgi için): Program yürürlükte değil: dayanağı 2573 sayılı Karar 18.08.2022'de yürürlükten kalktı (mülga; Bakanlık sayfası). E-ticaret sitesi üyelik giderinin güncel karşılığı 5986 sayılı Karar m.8 (Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği); Bakanlık sayfasının andığı m.4 (Dijital Pazaryeri Tanıtım Desteği) reklam giderini destekler, üyelik giderini kapsamaz
 - Bu kurumun diğer programları: Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) (belirlenemedi).
@@ -37,8 +38,10 @@
   - ve 2 şart daha: panelde programın Kontrol listesi'nde
 - **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-8
 
+**Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
+- Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6) (Ticaret Bakanlığı): %50; 2026'da faaliyet başına 490.559 TL, günlük konaklama kişi başı 12.264 TL; yılda en çok 5 faaliyet; Şirket çalışanının Türkiye'ye giriş tarihinden itibaren en geç 3 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin)
+
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Şirket çalışanının Türkiye'ye giriş tarihinden itibaren en geç 3 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayılı Karar m.9) (Ticaret Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (Ticaret Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
 

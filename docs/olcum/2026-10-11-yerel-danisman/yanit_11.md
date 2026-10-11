@@ -46,25 +46,19 @@
   - ☐ Özel sektör işvereni olmalısınız — resmî metin: “özel sektör işverenleri tarafından işe alındığı tarihten önceki son altı aylık dönemde”
 - **Başvuru:** SGK (e-Bildirge) — https://www.iskur.gov.tr/isveren/tesvikler/issizlik-odenegi-alanlara-yonelik-tesvik/
 
-**Size kapalı ya da başvuruya kapalı programlar:**
-- İLAVE İSTİHDAM DESTEK PAKETİ (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)
-
 ### 3. Darboğazlar ve Kritik Şartlar
 - Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
-- [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
-- [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 2. Başvuru adımları (Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde)): SGK e-Bildirge üzerinden teşvik kodu ile bildirim; Başvuru yeri: SGK (e-Bildirge) — uygulayıcı kurum; bilgi: İŞKUR il müdürlükleri.
-3. Başvuru kanalı: Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde): SGK (e-Bildirge) — uygulayıcı kurum; bilgi: İŞKUR il müdürlükleri — https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/ | İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5): SGK (e-Bildirge) — https://www.iskur.gov.tr/isveren/tesvikler/issizlik-odenegi-alanlara-yonelik-tesvik/.
+3. Başvuru kanalı: Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde): SGK (e-Bildirge) — uygulayıcı kurum; bilgi: İŞKUR il müdürlükleri — https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/.
 4. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. İşe alacağınız kişilerin cinsiyeti, yaşı, mesleki belgesi ve İŞKUR kaydı var mı? — destek süresi bunlara göre değişir (kayıttaki süre kırılımı kısa cevapta).
 2. Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde): “İşe alınan kişinin son 6 aydır işsiz olması” şartını sağlıyor musunuz?
 3. Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde): “Kişinin, işe alındığı tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına İLAVE olarak istihdam edilmesi” şartını sağlıyor musunuz?
-4. İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5): “İşe alınan kişinin işsizlik ödeneği alıyor olması” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

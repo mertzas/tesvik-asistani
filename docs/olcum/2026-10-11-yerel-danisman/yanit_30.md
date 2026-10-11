@@ -28,22 +28,12 @@
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - Hayvancılık Destekleri (Tarım Bakanlığı) — profilinize göre engel yok — şartları teyit edin; 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Ziraat Katılım Bankası Katılım Finans Destek Paketi (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Organik Tarım Destekleri (Tarım Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Organik tarım faaliyeti yapılan ürüne yetkilendirilmiş kuruluşça "ürün sertifikası" düzenlenmiş olmalı ya da organik …); Yıllık ilan edilir (kesin tarihler için BUGEM'in güncel duyurularını kontrol edin) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-
-**Size kapalı ya da başvuruya kapalı programlar:**
-- Kırsal Kalkınma Yatırım Programı (KKYP) – Tarımsal İşleme/Depolama ve Makine Parkı Hibeleri (Tarım Bakanlığı) — kapalı: program başvuruya açık değil (TRGM duyurusu (29.04.2026): KKYP başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı)
-- IPARD III — Tarımsal İşletmelerin Fiziki Varlıklarına Yönelik Yatırımlar (Tedbir 101 / M1) (TKDK) — kapalı: program başvuruya açık değil (Tedbir 101'in 2026 çağrısı (12. Başvuru Çağrı İlanı) 07.09.2026 18:00'da kapanmıştır; yeni bir çağrı duyurusu bulunmamaktadır)
-- IPARD III — Tarım ve Balıkçılık Ürünlerinin İşlenmesi ve Pazarlanması ile İlgili Fiziki Varlıklara Yönelik Yatırımlar (Tedbir 103 / M3) (TKDK) — kapalı: program başvuruya açık değil (Tedbir 103'ün 2026 çağrısı (11. Başvuru Çağrı İlanı) 20.07.2026 18:00'da kapanmıştır; başka bir çağrı duyurusu bulunmamaktadır)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Hububat ve Baklagil Üretim Destekleri (Temel Destek +…): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
 - **Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim):** Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak
 - **Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim):** Arazi/parsel bilgilerinin ÇKS'de güncel olması
 - **Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim):** Başvuru yeri: İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu)
-- [Genel ilke – teyit edin] Başvuru ya da sözleşme tarihinden önce yapılan harcamalar çoğu programda desteklenmez; harcamaya başlamadan önce kurumun onayını bekleyin.
-- [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
-- [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: Çiftçi Kayıt Sistemi (ÇKS) kaydı.
@@ -55,9 +45,8 @@
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. NACE faaliyet kodunuz nedir? — sektör kısıtlı programlarda (imalat, tarım, turizm) uygunluğu belirler.
-2. Ürününüz için organik ya da iyi tarım sertifikanız var mı? — sertifika şartlı destekleri belirler.
-3. Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim): “Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak” şartını sağlıyor musunuz?
-4. Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim): “Arazi/parsel bilgilerinin ÇKS'de güncel olması” şartını sağlıyor musunuz?
+2. Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim): “Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak” şartını sağlıyor musunuz?
+3. Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim): “Arazi/parsel bilgilerinin ÇKS'de güncel olması” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

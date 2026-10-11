@@ -3,7 +3,7 @@
 - Öne çıkan: **KOBİ Dijital Dönüşüm Destek Programı** (KOSGEB) — profilinize göre engel yok — şartları teyit edin; Sürekli açık başvuru (24 aylık program süresi içinde kullanım gerekir) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Diğer seçenekler: 2024 Dijital Dönüşüm Destek Paketi (profilinize göre engel yok — şartları teyit edin); Teknoloji Hamlesi Programı (9903 sayılı Karar) (şartlı — karar şartını teyit edin); YATIRIM-İŞLETME DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin).
 - 4 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
-- Birlikte kullanım: kayıtta hüküm olan programlar: Teknoloji Hamlesi Programı (9903 sayılı Karar); hüküm olmayanlar: KOBİ Dijital Dönüşüm Destek Programı; 2024 Dijital Dönüşüm Destek Paketi; YATIRIM-İŞLETME DESTEK PAKETİ (ayrıntı aşağıda, «Birlikte kullanım» bölümünde).
+- Birlikte kullanım: kayıtta hüküm olan programlar: Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Teknoloji Hamlesi Programı (9903 sayılı Karar); Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar); Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar); hüküm olmayanlar: KOBİ Dijital Dönüşüm Destek Programı; 2024 Dijital Dönüşüm Destek Paketi; YATIRIM-İŞLETME DESTEK PAKETİ (ayrıntı aşağıda, «Birlikte kullanım» bölümünde).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 28.22)
@@ -87,6 +87,10 @@
 
 **Birlikte kullanım (resmî metinden):**
 - [Sanayi ve Teknoloji Bakanlığı] Teknoloji Hamlesi Programı (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi; Teknoloji Hamlesi'nde KOSGEB ve TÜBİTAK doğrudan destekleri serbest). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
+- [Sanayi ve Teknoloji Bakanlığı] Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
+- [Sanayi ve Teknoloji Bakanlığı] Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
+- [Sanayi ve Teknoloji Bakanlığı] Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
+- Not (kayıtlardaki hükümlerin karşılaştırması): KOSGEB ve TÜBİTAK doğrudan desteklerini serbest bırakan istisna yalnız Teknoloji Hamlesi Programı'nın hükmünde var; yukarıdaki diğer 9903 programlarında istisna yalnız sübvansiyonlu kredidir.
 
 **Bağlı programlar (kayıttan):**
 - 2024 Dijital Dönüşüm Destek Paketi: KOBİ Dijital Dönüşüm Destek Programı (KOSGEB) başvurusunun onaylanmasına bağlıdır; ikisi birlikte planlanır.

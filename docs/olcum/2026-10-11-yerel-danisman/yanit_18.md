@@ -28,15 +28,10 @@
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - REFİNANSMAN KEFALET PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- 1515 - Öncül Ar-Ge Laboratuvarları Destekleme Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; Dönem yok: program sürekli başvuruya açıktır; başvurular yılın herhangi bir iş gününde yapılabilir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- TKYB KREDİ DESTEK PAKETİ (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Ön kayıt:** 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı için yeni başvuranın ön kayıt son günü 22.10.2026 (11 gün).
 - **1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı:** Başvuru yeri: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
-- [Genel ilke – teyit edin] Başvuru ya da sözleşme tarihinden önce yapılan harcamalar çoğu programda desteklenmez; harcamaya başlamadan önce kurumun onayını bekleyin.
-- [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
-- [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
 1. Ön kayıt: 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı — son gün 22.10.2026.

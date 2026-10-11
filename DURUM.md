@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-11 (Anthropic API kaldırıldı, yerel danışman, tur24-28). Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-11 (yerel danışman tur11, kritik bulgular kapandı). Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -313,10 +313,22 @@ Son güncelleme: 2026-10-11 (Anthropic API kaldırıldı, yerel danışman, tur2
   yalnız temel destek tutarı ayrıca (477,10 × dekar); başarısız yapay zekâ taslağı günlük hakkı düşürmez
   (`rate_limit` `iade`). Dayanak: kuruş basamaklı sayı kaynakta birimsiz geçse de kabul (uydurma kuruşlu değer yine
   yakalanır).
-  Açık (tur10 hakemlerinin orta/düşük bulguları): dar sorularda (tek tutar/tarih) kısa şablon; bütçe tavanı × oran =
-  azami hibe ayrımı (kayıtlar bütçe/hibe tavanını ayırt etmiyor, veri işi); iletişimin il müdürlüğüne göre seçimi;
-  "uygun değil" kartında 2-3 tutarlı alternatif bloğu; kayıtlarda bazı sayısal şartların (15 M TL Ar-Ge harcaması gibi)
-  profille karşılaştırılamaması. `.env`'de kullanılmayan ANTHROPIC_API_KEY duruyor (silmek kullanıcıya ait).
+  Kapanan tur10 orta bulguları (2026-10-11 üçüncü blok): dar soruda (tek tutar/tarih/süre) kısa şablon; tek anlamlı
+  bütçe tavanı × tek oran = azami hibe (açık çarpım, dayanak `_YUZDE_CARPIM` ile denetlenir; çoklu oran/ilave/kaldırılmış
+  oranda hesap yok); ciro eşikli şart profille karşılaştırılır (aşıyorsa uygun değil); iletişim il müdürlüğüne göre
+  (diğer/alternatif/elenen programların kurumları da); "uygun değil"/kapalı odakta "Size açık görünen alternatifler"
+  bloğu; işletmesi olmayan için "bu durum geçici" + kayıttaki şartlar; arazi biliniyorsa dekar aralığı toplam aralığa
+  çevrilir. Tur11 (aynı 5 hakem): genel 3,55 (doğruluk 4,2; odak 3,7), kritik 2 → ikisi de kapandı: profilsiz kuruluş
+  sorusunda kurulu işletme/rozet/teminat isteyen program adı soruyla eşleşse de öne çıkmaz (YZ Kredisi → BiGG);
+  birlikte kullanım sorusunda yanıtta anılan tüm 9903 programlarının hükmü + "KOSGEB/TÜBİTAK istisnası yalnız Teknoloji
+  Hamlesi'nde" notu. Ayrıca: Turquality dışlaması fıkralı madde (m.10/3); güncel sürüm eşleşmesi yıldan önceki ada
+  bakar (TOBB 2020 PAKETİ → 2026 PROGRAMI); sorudaki tutar kayıtta geçiyorsa kısa cevapta bağlamı ("15.102 TL 2022
+  yılı değeridir"). Tur11 sonrası düzeltmeler yeniden puanlanmadı.
+  Açık (tur11 orta/düşük, 87 orta): kısa cevabın soru tipine göre biçimi (hibe var mı / nedir-kimler); USD ihracat
+  eşiğinin ciroyla kaba karşılaştırması (5986 m.8, düşük olasılık); kart "Kapsam" etiketi gider kapsamı ile şirket
+  türünü karıştırıyor; kurum sorusunda alternatifleri aynı kurumla sınırlama; kilit şartsız genel programda
+  "belirlenemedi" yerine "engel yok"; TURWIB hedef kitlesi amaç cümlesinden. `.env`'de kullanılmayan ANTHROPIC_API_KEY
+  duruyor (silmek kullanıcıya ait).
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

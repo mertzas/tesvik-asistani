@@ -1,0 +1,332 @@
+[
+  {
+    "n": 13,
+    "puan": {"dogruluk": 4, "soruya_odak": 3, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Profilsiz soruda doğru tavır alınmış. Uygunluk verilmemiş, iki karta da 'Belirlenemedi' yazılmış, Kısa cevap'ın ilk maddesi bilgi eksikliğini açıkça söylüyor, İş Geliştirme çağrısının kapandığı (08.05.2026) ve diğer aşamalar için tarih bulunmadığı dürüstçe belirtilmiş. Tutarlar kayıtla birebir.",
+        "kanit": "Yanıt: 'Uygunluk kararı için faaliyet, şirket türü ve il bilgisi gerekiyor.' ve 'Durum: Belirlenemedi — profiliniz olmadığı için uygunluk değerlendirilemedi.'",
+        "oneri": "Bu davranış korunmalı; profil null iken hiçbir karta Uygun / engel yok etiketi verilmemesi bir kural olarak testle sabitlenmeli.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Kafe için 'Öne çıkan' diye sunulan KOSGEB Girişimci Destek Programı'nın sektör şartı kafe için büyük olasılıkla sağlanmıyor ama yanıt bunu hiç söylemiyor. Kayıttaki desteklenen sektör listesi imalat, 61-63 bilişim/telekom ve 72 Ar-Ge'dir; yiyecek-içecek hizmeti listede görünmüyor. İş Kurma satırındaki 'KOSGEB destekli sektör' şartı belirsiz bırakılıp kullanıcıya iyi bir hibe varmış izlenimi veriliyor.",
+        "kanit": "Kaynak KAYIT 1: 'Desteklenen sektörler arasında imalat, telekomünikasyon, bilgisayar programlama, bilişim altyapısı ve bilimsel Ar-Ge yer alır'. Yanıt: 'Öne çıkan: Girişimci Destek Programı (KOSGEB) — İş Kurma: gerçek kişi 10.000 TL / sermaye şirketi 20.000 TL'.",
+        "oneri": "Soru metninden sektör çıkarılabiliyorsa (kafe, yiyecek-içecek) ve kaydın sektör listesinde karşılığı yoksa Kısa cevap'a 'Kayıttaki sektör listesinde yiyecek-içecek görünmüyor, KOSGEB'den (444 1 567) teyit edin' cümlesi eklensin; sektör şartı belirsiz programlar 'Öne çıkan' yerine 'Teyit gerektiren' başlığına alınsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Kayıtta İş Kurma Desteği'nin en değerli unsuru olan personel gideri desteği (36 ay boyunca aylık asgari ücret kadar, %100 geri ödemesiz) yanıtta yok. Yanıttaki 'Hesaplama' alanı '(üst sınır 30.000 TL)' ile bitiyor, kaynaktaki sonraki cümleler kırpılmış. Çalışan istihdam edecek bir kafe girişimcisi için bu kalem 10-20 bin TL'lik tutardan çok daha önemli; yanıt desteği olduğundan küçük gösteriyor.",
+        "kanit": "Kaynak Hesaplama: 'Buna ek olarak personel giderleri 36 ay boyunca aylık asgari ücret kadar %100 geri ödemesiz karşılanır (tutar asgari ücrete bağlı olduğu için bu aralığa dahil edilmedi)'. Yanıt Hesaplama: '... üst sınır 30.000 TL).' ve devamı yok.",
+        "oneri": "Hesaplama alanı kırpılmadan verilsin; toplama katılmayan kalemler 'tutarı asgari ücrete bağlı olduğu için toplama katılmadı' notuyla da olsa adıyla listelensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Netleştirme soruları soruyla uyumsuz ve eksik. Soru 3, kafe açacak birine 'NACE C-İmalat, 61, 62, 63 veya 72 sektöründe faaliyet gösteren 0-3 yaş işletme misiniz' diye soruyor, cevap baştan bellidir. Buna karşılık tutarı değiştiren bilgiler (kadın, genç, engelli, gazi, şehit yakını: +10.000 TL) ve şirket türünün (şahıs 10.000 / sermaye şirketi 20.000 TL) etkisi sorulmuyor; işletmenin kurulu olup olmadığı da sorulmuyor.",
+        "kanit": "Yanıt Bilgi Eksikliği madde 3: 'İş Geliştirme Desteği: NACE'ye göre C-İmalat, 61 Telekomünikasyon, 62 ... şartını sağlıyor musunuz?'. Yanıt Kısa cevap'ta +10.000 TL ilavesi var ama sorulmuyor.",
+        "oneri": "Profilsiz modda sorular, tutarı ve uygunluğu belirleyen alanlardan (şirket türü, işletme yaşı, girişimci yaşı/cinsiyeti, il) üretilsin; sektörü sorudan zaten dışlanan alt-destek (İş Geliştirme) için şart sorusu üretilmesin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Hibe sorusuna Halkbank İlk Adım Kredisi tam kart olarak konmuş (kredi kefaleti, hibe değil, 29 yaş sınırı). 'Başvuruya kapalı' bölümündeki KGF Kredi Faiz Programı'nın gerekçesi 'KOSGEB çağrısı kapalı' diye veriliyor; asıl neden İş Geliştirme'nin sektör kısıtı olduğu için kafe açısından yanıltıcı. Birlikte kullanım bloğu (İş Geliştirme / Faiz-Kâr Payı) ve yol haritasındaki belge listesi (Proje Bilgi Dokümanı, İDR) İş Kurma akışıyla karışıyor.",
+        "kanit": "Yanıt: 'GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının ... başvuru dönemi kapalı'. Adım 3 belgeleri: 'Proje Bilgi Dokümanı; İşletme Durum Sorgulama ekranında ... İşletme Değerlendirme Raporu (İDR)'.",
+        "oneri": "Soru 'hibe' diyorsa kredi/kefalet kartları kısaltılıp 'hibe değil, kredi' etiketiyle tek satıra indirilsin; belge listesi ve birlikte-kullanım kuralı yalnız kullanıcıya uygulanabilir alt-destek (İş Kurma) için gösterilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "'[Genel ilke – teyit edin]' satırları kaynak dosyada bulunmayan genel bilgilerdir (başvuru öncesi harcama, vergi/SGK borcu, denetim). Etiketle ayrılmış olması iyi ama bu yanıtta hiçbir kayda bağlanmıyor ve kullanıcıya somut katkısı yok. 'Hesaplama' alanı 'Destek' alanını tekrar ediyor, Kısa cevap'taki tek madde 6 parantezli ve okunması zor.",
+        "kanit": "Yanıt Bölüm 3: '[Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.'",
+        "oneri": "Genel ilke satırları yalnız ilgili kayıtta karşılığı varsa gösterilsin; Kısa cevap'taki Destek maddesi en fazla iki cümleye bölünsün.",
+        "kaynak_disi": true
+      }
+    ],
+    "uzman_cevap": "Faaliyet, şirket türü, il ve girişimcinin yaşı/cinsiyeti bilinmeden uygunluk söyleyemem. Kayıtlardaki en yakın program KOSGEB Girişimci Destek Programı İş Kurma Desteği'dir: geri ödemesiz 10.000 TL (şahıs) veya 20.000 TL (sermaye şirketi), genç/kadın/engelli/gazi/şehit yakını girişimciye +10.000 TL, ayrıca 36 ay boyunca aylık asgari ücret kadar personel gideri karşılanır. Ancak 0-1 yaş işletme olmanız ve KOSGEB'in desteklediği sektörde bulunmanız gerekir; kayıttaki sektör listesinde (imalat, 61-63, 72) yiyecek-içecek görünmediği için kafenizin kapsamda olup olmadığını KOSGEB'den (444 1 567) teyit edin. 29 yaşından küçükseniz Halkbank İlk Adım Kredisi vardır, ama hibe değil kredidir (kredi 1 milyon TL, KGF kefaleti en fazla 800 bin TL). Netleştirmek için: işletme kuruldu mu, şahıs mı sermaye şirketi mi, hangi il, girişimcinin yaşı ve cinsiyeti?"
+  },
+  {
+    "n": 14,
+    "puan": {"dogruluk": 4, "soruya_odak": 3, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Yanıt şirketi bölme önerisine yardım etmeyi açıkça reddediyor, adım adım yol vermiyor, geri talep ve sorumluluk riskini söylüyor ve doğru beyanla uygun programlara yönlendiriyor. Gün sayımları (İstihdamı Koruma 20 gün, SGK teşviki 81 gün) kayıtla uyumlu.",
+        "kanit": "Yanıt ilk paragraf: 'Uygunluğu yapay olarak sağlamaya yönelik bir yol (şirketi bölerek ölçeği küçük göstermek ...) için yardımcı olamam.'",
+        "oneri": "Ret öncelikli yapı korunmalı; ancak aşağıdaki bulgulardaki gibi retin ardından kayda dayalı bir 'gerek yok' gerekçesi eklenmeli.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Kullanıcının asıl gerekçesi (60 çalışanı geçmemek) kayda dayanarak çürütülmüyor ve profil ile soru arasındaki çelişki (profilde 12 çalışan, soruda 60 eşiği) fark edilmiyor. Kayıtlardaki Kapasite Geliştirme, Dijital Dönüşüm ve Yatırım-İşletme paketi şartları 'küçük veya orta büyüklükte' ya da 'KOBİ' diyor; yani 60 çalışanlı bir firma bu programların dışına düşmüyor. Yanıt yalnızca '12 çalışan, bölmeye gerek yok' diyerek soruya yarım cevap veriyor; çalışan sayısı gerçekten 60'a yakınsa bu cevap işe yaramaz.",
+        "kanit": "Kaynak KAYIT 3: 'İşletme sınıfının küçük veya orta büyüklükte olması'; KAYIT 8: 'İşletme sınıfının küçük veya orta büyüklükte olması'. Yanıt: 'Profilinize göre (12 çalışan) işletmeniz küçük işletme ölçeğinde; KOBİ programları için bölmeye gerek yok'.",
+        "oneri": "Ölçeği bölme/çalışan sayısı eşiği tuzağında yanıt, kayıttaki ölçek şartlarını ('küçük veya orta kabul') göstersin ve profil ile soru çelişiyorsa 'Gerçek çalışan sayınız kaç?' diye sorsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "orta",
+        "aciklama": "Ret paragrafındaki 'ortak ve bağlı işletmelerin verileri birlikte dikkate alınabilir' ve 'cezai sorumluluğa yol açabilir' ifadeleri kaynak dosyada yok. İçerik yönü doğru ve reddi güçlendiriyor ama kayda bağlı olmayan hukuki iddia olduğu için doğrulanamıyor; '[Genel ilke – teyit edin]' etiketi ret metninin içine gömülmüş durumda ve iç not gibi okunuyor. 'Harcama veya belge tarihini değiştirmek' ifadesi bu soruyla ilgisiz şablon metni.",
+        "kanit": "Yanıt: '[Genel ilke – teyit edin] Ölçek değerlendirmesinde ortak ve bağlı işletmelerin verileri birlikte dikkate alınabilir' ve '... desteğin geri istenmesine ve cezai sorumluluğa yol açabilir.'",
+        "oneri": "Ölçek manipülasyonu şablonuna KOBİ Yönetmeliği bağlı/ortak işletme kuralı kaynak URL'siyle bir kayıt olarak eklensin; kayıt yoksa iddia kaldırılsın, soruyla ilgisiz şablon örnekleri (tarih değiştirme) çıkarılsın.",
+        "kaynak_disi": true
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Kullanıcının hedefleri yatırım, ihracat ve Ar-Ge iken, ihracat+Ar-Ge ile doğrudan eşleşen aktif KOSGEB Küresel Rekabetçilik Destek Programı yanıtta yok. Yerine, yanıtın kendisinin 'hedeflerle doğrudan eşleşme bulunamadı' dediği KOBİ Dijital Dönüşüm ve İstihdamı Koruma kartları 'engel yok' etiketiyle yer alıyor. Alt kredi limiti 30 milyon TL olduğundan en azından 'Düşük olasılık' etiketiyle gösterilmeliydi.",
+        "kanit": "Kaynak ADAY KAYIT 9: 'Küresel Rekabetçilik Destek Programı — KOSGEB; aktif_mi=True; kriterler={sektorler: [ihracat, arge]} ... talep edilen kredi alt limiti 30 Milyon TL'. Yanıt: 'teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.'",
+        "oneri": "Sıralama ve gösterim önceliği hedef eşleşmesine (persona.hedefler ile kriter sektörleri) verilsin; hedefle eşleşmeyen karta 'engel yok' yerine 'hedefinizle ilgisi zayıf' etiketi konsun, eşleşen aday program (alt limit uyuşmazsa 'Düşük olasılık' ile) gösterilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "KOBİ Dijital Dönüşüm kartı 'engel yok — şartları teyit edin' diyor ama en bağlayıcı şart olan yetkili danışmandan onaylı dijital dönüşüm/olgunluk değerlendirme raporu (TÜSSİDE-DDX veya SIRI formatı) ne teyit listesinde ne yol haritasındaki belgeler adımında geçiyor. Adım 3 belgeleri yalnız Yatırım-İşletme paketine ait. Ayrıca 'Destek: ₺1.000.000 - ₺20.000.000 kredi' ifadesi, kaydın uyardığı 'bu rakam kredi limitidir, destek yalnızca faiz giderini karşılar' ayrımını yeterince netleştirmiyor.",
+        "kanit": "Kaynak KAYIT 3 [belge]: 'Onaylı dijital dönüşüm/olgunluk değerlendirme raporu (TÜSSİDE-DDX veya SIRI formatı)'; DURUM: 'KOSGEB anlaşmalı bankalardan kullanılan kredinin FAİZİNİ karşılıyor, ana parayı değil'. Yanıt teyit listesi 3 madde: kayıt/aktif, öz kaynak/faaliyet karı, küçük-orta ölçek.",
+        "oneri": "Kaynaktaki [belge] satırlarından eleyici nitelikte olanlar (rapor, danışmanlık, teminat mektubu gibi) kontrol listesine ve Kısa cevap'a taşınsın; faiz desteği programlarında Destek satırı 'destek = ödenen faiz tutarı, kredi limiti X' biçiminde yazılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "dusuk",
+        "aciklama": "Soru KOSGEB başvurusuyla ilgili olduğu halde Kısa cevap'ta 'Öne çıkan' bir KGF kredi kefalet paketi (Yatırım-İşletme) ve Destek satırında tutar yok; kullanıcı KOSGEB'in açık/kapalı durumunu ilk bakışta göremiyor. İstihdamı Koruma'daki 'ölçek değiştirip büyük işletme olursa yararlanamaz' kuralı tam da ölçek sorusuyla ilişkili olduğu halde bağlanmıyor. SGK Kadın/Genç İstihdam Teşviki ve Halkbank İlk Adım (29 yaş) KOSGEB sorusuna gürültü.",
+        "kanit": "Yanıt Kısa cevap: 'Öne çıkan: YATIRIM-İŞLETME DESTEK PAKETİ (KGF) ...; Destek: Vade: işletme kredisi azami 24 ay ...'. Kaynak KAYIT 7 [kural]: 'Önceki dönemde destek ödemesi yapılan KOBİ, ölçek değiştirip büyük işletme olursa ... yararlanamaz'.",
+        "oneri": "Soru bir kurumu adlandırıyorsa (KOSGEB) Öne çıkan seçimi önce o kurumun programlarından yapılsın; kurum dışı kartlar 'Diğer' altında ve en fazla iki tane olsun; ölçek/kuruluş yapısına dokunan kurallar ölçek sorusuyla birlikte gösterilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kısa cevap'taki 'Öne çıkan' maddesi birleştirilmiş veritabanı parçalarından oluşuyor: 'profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: ... (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)'. '2 program size kapalı ya da başvuruya kapalı' ifadesi 'size kapalı' ile 'başvuruya kapalı' ayrımını açıklamıyor.",
+        "kanit": "Yanıt: '- Öne çıkan: **YATIRIM-İŞLETME DESTEK PAKETİ** (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır ...'.",
+        "oneri": "Başvuru dönemi alanı Kısa cevap'ta tek cümleye ('Sürekli, bankaya başvurulur') indirgenip iç etiketler ('kayıttan', 'kayıt kontrolü') kullanıcı metninden çıkarılsın.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Şirketi yapay olarak ikiye bölüp iki küçük işletme gibi başvurmak ölçek beyanını bozmak olur; bu konuda adım adım yol tarif edemem, ayrıca bu girişim ölçek beyanında yanıltıcı bilgi riski taşır. Zaten gerek de yok: kayıtlardaki Kapasite Geliştirme ve KOBİ Dijital Dönüşüm programları 'küçük veya orta büyüklükte' işletmeleri kabul ediyor, dolayısıyla çalışan sayınızın 60 olması sizi bu programların dışına itmez; profilinizde 12 çalışan görünüyor, gerçek sayıyı teyit edin. Hedefleriniz yatırım, ihracat ve Ar-Ge olduğundan Kapasite Geliştirme (2026 2. dönemi 30.06.2026'da kapandı, sonraki dönem kayıtlarımızda yok), Küresel Rekabetçilik (talep edilen kredi alt limiti 30 milyon TL) ve şu an açık olan İstihdamı Koruma (son gün 31.10.2026, 20 gün kaldı) öne çıkar. KOBİ Dijital Dönüşüm için ayrıca yetkili danışmandan onaylı dijital olgunluk raporu gerekir. Ölçek konusunda tereddüt varsa KOSGEB İzmir Müdürlüğü'ne (0 232 270 15 60) danışın."
+  },
+  {
+    "n": 15,
+    "puan": {"dogruluk": 3, "soruya_odak": 3, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Turquality kaydı olmadığı ilk cümlede açıkça söylenmiş, oran ve limit uydurulmamış, 'Aşağıdaki oranlar bu desteklerindir, Turquality'nin oranı değildir' uyarısı verilmiş. Sunulan 5973 sayılı Karar rakamlarının tamamı kayıtla birebir (490.559; 12.264; 3.698.274; 12.329.397; 19.728.672; 9.862.972 TL). Turquality'ye girince kaybedilecek destekler kayıttaki m.17 atfından doğru derlenmiş.",
+        "kanit": "Yanıt: 'Veritabanımızda Turquality programının kaydı yok; oran ve limit veremem.'",
+        "oneri": "Bu tavır korunmalı; ancak aşağıdaki doğrulanamayan mevzuat notu ve sıralama sorunu giderilmeli.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "orta",
+        "aciklama": "Yanıt, kaynak dosyada bulunmayan kesin bir mevzuat iddiası yapıyor: 5447 sayılı Kararın (E-Turquality) yürürlükten kaldırıldığı, 10962 sayılı Karar m.49-50 ve Resmî Gazete 27.02.2026 ile. Verilen bu madde numarası ve tarih kullanıcı için kritik (Turquality'nin statüsü) ve denetlenemiyor; yanlışsa kullanıcıyı yanlış yönlendirir. Yanıtın kendisi de Turquality'ye ait bir kayıt olmadığını söylüyor, dolayısıyla mevzuat notunun dayanağı da yok.",
+        "kanit": "Yanıt: 'Mevzuat notu: 5447 sayılı Karar (E-Turquality) yürürlükten kaldırılmıştır (10962 sayılı Karar m.49-50, Resmî Gazete 27.02.2026).' Kaynak dosyada 5447 veya 10962 geçmiyor.",
+        "oneri": "Mevzuat notları yalnız kaynak URL'si olan bir kayıttan (ör. mevzuat_notlari tablosu) gelsin ve URL ile birlikte gösterilsin; kaynaksız numara/tarih içeren cümleler yanıttan çıkarılsın.",
+        "kaynak_disi": true
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Dışlama listesi biraz genişletilmiş: yanıt '... m.7, m.10, m.11 ...' diyor, kayıtlarda ise 10 uncu maddenin yalnız üçüncü fıkrası (küresel tedarik zinciri/depo kirası) dışlanıyor. m.10'un tamamı dışlanıyormuş gibi okunuyor.",
+        "kanit": "Kaynak (Marka Tescil [sart] alıntısı): '3 üncü, 4 üncü, 5 inci, 6 ncı, 7 nci maddeler ve 10 uncu maddenin üçüncü fıkrası ile 11 inci, 12 nci, 15 inci, 16 ncı, 18 inci ve 19 uncu maddelerde'. Yanıt: 'm.3, m.4, m.5, m.6, m.7, m.10, m.11, m.12, m.15, m.16, m.18, m.19'.",
+        "oneri": "Madde listeleri kayıttan aynen aktarılsın; fıkra düzeyindeki kısıt 'm.10/3' biçiminde korunsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Kullanıcı marka desteğinin oranını ve üst limitini soruyor; Kısa cevap ise 'Öne çıkan' olarak Yurt Dışı Pazar Araştırması'nı (ulaşım+konaklama) ve onun %50 / 490.559 TL / günlük 12.264 TL değerlerini veriyor. Markayla ilgili iki kalem (Marka Tescil, Tanıtım ve Pazarlama) 'Diğer seçenekler (belirlenemedi)' arasına itilmiş. Üstelik yanıtın kendi ikinci paragrafına göre Turquality'ye girince Pazar Araştırması desteği kaybedilecek; yani en öne çıkarılan program soruyla çelişen biri. Sıralamayı konu uyumu değil 'engel yok' etiketi belirlemiş.",
+        "kanit": "Yanıt Kısa cevap: 'Öne çıkan: Yurt Dışı Pazar Araştırması Desteği ... Destek: %50; 2026'da faaliyet başına 490.559 TL ...'; 'Diğer seçenekler: Yurt Dışı Marka Tescil Desteği ... (belirlenemedi); Yurt Dışı Tanıtım ve Pazarlama Desteği ... (belirlenemedi)'.",
+        "oneri": "Soru 'marka desteği' içeriyorsa Kısa cevap marka kalemlerinin (m.4, m.12) oran-limitini öncelikli versin; Turquality dışlama kümesindeki programlar 'Turquality'ye girerseniz kaybedeceğiniz destekler' başlığıyla ayrı verilsin, 'Öne çıkan' olmasın. Etiket (belirlenemedi) sıralama ölçütü olmasın, konu uyumu önce gelsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Netleştirme soruları gereksiz ve eksik. Profilde şirket türü limited olduğu halde 'Şirket olmak: ... şartını sağlıyor musunuz?' iki kez soruluyor. Dört kartta 'Belirlenemedi' nedeni olan ihracatçı birliği üyeliği ve markanın Türkiye'de tescili ise hiç sorulmuyor. 'Aynı gider için başka destek' birlikte kullanım bloğu dört kez aynı metinle tekrar ediyor; Birim Kira için KEP adresi darboğazı marka sorusuyla ilgisiz.",
+        "kanit": "Yanıt Bilgi Eksikliği: '1. ... “Şirket olmak: 6102 sayılı TTK md.124'teki şirketler ...” şartını sağlıyor musunuz?' ve '3. Yurt Dışı Marka Tescil Desteği ... “Şirket olmak ...” şartını sağlıyor musunuz?'. Birlikte kullanım: dört özdeş madde.",
+        "oneri": "Profilde karşılığı bulunan şartlar (sirket_turu) için soru üretilmesin, 'Belirlenemedi' nedeni olan kilit şart doğrudan soruya dönüşsün; aynı metinli birlikte-kullanım kuralları tek satırda 'tüm 5973 destekleri için' birleştirilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "dusuk",
+        "aciklama": "E-İhracat Tanıtım Desteği (m.5) için 'belirlenemedi (önceki yıl en az 500.000 USD ihracat)' deniyor; profilin yıllık cirosu toplam 4.000.000 TL olduğundan bu eşiğe ulaşılamayacağı çıkarılabilir ve 'Düşük olasılık' daha doğru bir etiket olurdu. Bu çıkarım kur varsayımı gerektirdiği için kaynak dışı.",
+        "kanit": "Yanıt: 'E-İhracat Tanıtım Desteği ... — belirlenemedi (profilde karşılığı olmayan kilit şart: önceki yıl en az 500.000 USD ihracat)'. Persona: yillik_ciro 4000000.0.",
+        "oneri": "USD eşikli kriterlerde ciro (TL) güncel kur bandıyla karşılaştırılıp eşik cirodan açıkça büyükse 'Düşük olasılık' etiketlensin.",
+        "kaynak_disi": true
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Metinde iç not sızıntısı ve parça cümleler var: 'kayda göre (Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3)) Turquality / marka destek programı ...' ifadesi hangi kayıttan okunduğunu parantez içinde bırakıyor ve cümleyi bozuyor. Başvuru dönemi alanı yarım cümle: 'Şirket çalışanının Türkiye'ye giriş tarihinden itibaren en geç 3 ay içinde'; Kısa cevap'ta da böyle yer alıyor ve ne anlama geldiği anlaşılmıyor. '(kayıttan; güncel çağrıyı kurumdan teyit edin)' etiketi her satıra eklenmiş.",
+        "kanit": "Yanıt: 'Öne çıkan: ... — profilinize göre engel yok — şartları teyit edin; Şirket çalışanının Türkiye'ye giriş tarihinden itibaren en geç 3 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin).'",
+        "oneri": "Süre türü alanları ('X tarihinden itibaren N ay içinde') tam cümleye çevrilsin: 'Başvuru, faaliyetten dönüşünüzden itibaren en geç 3 ay içinde yapılmalı'. Kayıt adı parantez içinde cümle ortasına yerleştirilmesin.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Veritabanımızda Turquality programının kendi kaydı yok; bu yüzden Turquality marka desteğinin oranını ve üst limitini veremem, Ticaret Bakanlığı'ndan (444 8 482) teyit edin. Kayıtlardaki 5973 sayılı Karar atfına göre Turquality / marka destek programına (m.17) giren şirket, destek süresi boyunca m.3, m.4, m.5, m.6, m.7, m.10 (üçüncü fıkra), m.11, m.12, m.15, m.16, m.18 ve m.19 desteklerinden yararlanamaz; yani girerseniz Yurt Dışı Marka Tescil, Pazar Araştırması, Birim Kira ve Tanıtım destekleri durur. Kıyas için bu desteklerin bugünkü oranları (Turquality'nin oranı değildir): Marka Tescil %50, yıllık 3.698.274 TL, en çok 4 yıl; Tanıtım ve Pazarlama %50, birime bağlı ülke başına yıllık 12.329.397 TL, marka tesciline bağlı yıllık 19.728.672 TL; Birim Kira %50, birim başına yıllık 9.862.972 TL. Marka tescil ve tanıtım desteği için ihracatçı birliği üyeliği ve markanın Türkiye'de tescilli olması gerekir; üyeliğiniz ve marka tescil durumunuz nedir?"
+  },
+  {
+    "n": 16,
+    "puan": {"dogruluk": 4, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Garanti isteğine ilk satırda net ret verilmiş ve garanti dili kullanılmamış. Tarih hesapları doğru (ön kayıt 09.11.2026 için 29 gün, kapanış 11.11.2026 için 31 gün) ve 3.500.000 x %75 = 2.625.000 TL hesabı kayıtla uyumlu, 'hesap' olarak etiketlenmiş.",
+        "kanit": "Yanıt: '**Garanti:** Hiçbir destek için kabul garantisi verilemez; nihai karar kurumun değerlendirmesine bağlıdır.'",
+        "oneri": "Garanti/kesinlik sorularında bu ilk satır şablon olarak korunmalı.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Yanıt 'başvuruyu güçlendirecek adımları gösterdim' diyor ama bu sözü tutmuyor: değerlendirme ölçütü, ret nedenleri veya güçlendirme önerisi yok. Kayıtta bulunan ve kullanıcının kabul şansını doğrudan etkileyen elenme riskleri (Ar-Ge başvurudan önce tamamlanmışsa desteklenmez, ilk 5 proje sınırı, 3,5 milyon TL bütçe tavanı, çağrılı program, ön kayıt evrakının kapanıştan en az bir iş günü önce ulaşması) Kısa cevap'ta yok, 'Kurallar' ve 'Not' içine gömülü. Kullanıcı 'neden garanti yok, neye dikkat etmeliyim' sorusunun cevabını bulamıyor.",
+        "kanit": "Yanıt: 'Aşağıda kayda göre şartları sağlayıp sağlamadığınızı ve başvuruyu güçlendirecek adımları gösterdim.' Kaynak [kural]: 'Hayır. Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez.'",
+        "oneri": "Garanti sorularında Kısa cevap'a kayıttaki [kural] satırlarından 'şunlar sağlanmazsa başvuru elenir' başlığıyla en fazla 3 madde çekilsin; kayıtta karşılığı olmayan 'güçlendirme adımları' vaadi şablondan çıkarılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "'Profilinize göre engel yok' ve 'Bilgi Eksikliği: Profiliniz bu yanıt için yeterli' ifadeleri fazla rahatlatıcı. Etiket yalnız şirket türü, ölçek ve sektöre dayanıyor; kartta hiç 'Teyit etmeniz gereken şartlar' kutusu üretilmemiş. Oysa aynı kartın Kurallar bölümündeki üç koşul (daha önce 5 proje desteği alınmamış olması, Ar-Ge'nin başvurudan önce tamamlanmamış olması, bütçenin en fazla 3,5 milyon TL olması) kullanıcıya sorulmuyor. Kabul kesinliği sorusunda bu, yanlış güven verebilir.",
+        "kanit": "Yanıt Bölüm 5: 'Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.' Kaynak [kural]: 'Bu programdan daha önce 5 proje desteği almamış olmak ...'.",
+        "oneri": "[kural] ve [sart] satırlarından profille doğrulanamayanlar kontrol listesi maddesine dönüştürülsün; bu liste boş değilse 'Profiliniz yeterli' cümlesi yerine 'şu koşulları doğrulayın' yazılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "'ilk 5 projede %75 hibe (en az ikisi ortaklı başvuru kaydıyla)' ifadesi, bu başvurunun ortaklı olması gerekiyormuş gibi okunabilir. Kaynak 'firmanın ilk 5 projesinin en az ikisinin ortaklı olması'ndan söz ediyor; kullanıcıya düz bir cümleyle açıklanmamış. Kısa cevap'taki 'Azami hibe 2.625.000 TL' hesabı sorulmadığı halde kabul beklentisi yaratabilir.",
+        "kanit": "Yanıt: 'Destek: Proje bütçesi en fazla 3.500.000 TL; ilk 5 projede %75 hibe (en az ikisi ortaklı başvuru kaydıyla)'. Kaynak: 'İkisi ortaklı olmak kaydıyla firmanın ilk 5 projesinin TÜBİTAK tarafından desteklenmesi amaçlanmıştır.'",
+        "oneri": "Ortaklı proje koşulu 'ilk 5 projenizin en az ikisinin ortaklı olması beklenir' biçiminde yazılsın; garanti sorularında tutar hesabı Kısa cevap'tan Kartlara taşınsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "'Diğer ilgili programlar' bölümünde üç KGF kredi kefalet ürünü (Yatırım-İşletme, Refinansman, İstihdam Koruma) 1507 kabul garantisi sorusuyla ilgisiz; her biri uzun 'Dönemsel başvuru yok ...' metniyle verilmiş. Başvuru dönemi bilgisi ayrıca Kısa cevap, kart ve Darboğazlar'da üç kez tekrarlanıyor.",
+        "kanit": "Yanıt: 'REFİNANSMAN KEFALET PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır ...'.",
+        "oneri": "Soru tek bir programa (1507) ve bir kesinlik/garanti konusuna odaklıysa 'Diğer ilgili programlar' bölümü kapatılsın ya da yalnız aynı konudaki (Ar-Ge hibesi) alternatifleri içersin.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Hayır, hiçbir destekte kabul garantisi verilemez; 1507 çağrılı bir programdır ve nihai karar TÜBİTAK'ın değerlendirmesine bağlıdır. Profilinize göre (limited şirket, KOBİ) kayıttaki şartlarda engel görünmüyor, ancak şu koşullar sizin teyidinize bağlıdır: bu programdan daha önce 5 proje desteği almamış olmanız (ilk 5 projenin en az ikisi ortaklı olmalı), Ar-Ge faaliyetinin başvurudan önce tamamlanmamış olması ve proje bütçesinin en fazla 3.500.000 TL olması (%75 oranıyla en çok 2.625.000 TL hibe). 2026 2. çağrıda kuruluş bazlı ön kayıt PRODİS üzerinden en geç 09.11.2026 23:59'dur (29 gün kaldı), başvuru kapanışı 11.11.2026 23:59'dur (31 gün kaldı); ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalıdır. Ayrıntı için TÜBİTAK 444 66 90."
+  },
+  {
+    "n": 17,
+    "puan": {"dogruluk": 5, "soruya_odak": 4, "eksiksizlik": 4, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "odak",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Sorulan üç değer doğru ve kayıtla birebir: kredi 500.000 - 5.000.000 TL, vade 24 ay, ilk 12 ay ödemesiz, faiz ve komisyon yok. 'Belirlenemedi' etiketi (Teknogirişim Rozeti bilgisi profilde yok) doğru ve gerekçesi açık.",
+        "kanit": "Yanıt Destek: 'Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz)'. Kaynak: 'Vade: toplam 24 ay; kredi başlangıcından itibaren ilk 12 ay ödemesiz.'",
+        "oneri": "Değerler korunmalı.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Cevap ikinci maddedeki tek satırın içine gömülmüş: tutar, vade, ödemesiz dönem, GO Dijital Cüzdan, Kesin Teminat Mektubu ve rozet şartı aynı cümlede noktalı virgülle sıralanıyor. Aynı bilgi Kısa cevap'ta üç kez geçiyor (Destek, Program, Kimler başvurabilir) ve kart bölümünde bir kez daha; sorulan üç şey ayrı ve ilk satırda görünmüyor.",
+        "kanit": "Yanıt: '- Destek: Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz); GO Dijital Cüzdan'a blokeli, bankadan Kesin Teminat Mektubu zorunlu (limit = teminat tutarı, en az 500.000 TL); geçerli Teknogirişim Rozeti şartı'.",
+        "oneri": "Değer sorularında ilk satır yalnız sorulan alanları (tutar, vade, ödemesiz dönem) versin; koşullar ikinci satıra, uygunluk üçüncü satıra alınsın; Kısa cevap'taki tekrarlar kaldırılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Jargon açıklanmamış: 'GO Dijital Cüzdan'a blokeli', 'Kesin Teminat Mektubu', 'limit = teminat tutarı'. Kullanıcı için en önemli pratik sonuç şu: kredi nakit olarak kullanılmıyor, kredi tutarı kadar banka teminat mektubu getirmek gerekiyor ve kredi yalnız KOSGEB Hizmet Sağlayıcılar Listesi'ndeki hizmetlerin ödenmesinde kullanılıyor. İlk ikisi Kısa cevap'ta kod gibi geçiyor, hizmet sağlayıcı kısıtı ise yalnız 'Kurallar' bölümünde. Rozetin ne olduğu da anlatılmıyor.",
+        "kanit": "Kaynak: 'Kullanım: KOSGEB Yapay Zeka Kredisi Hizmet Sağlayıcılar Listesi'ndeki hizmet sağlayıcılardan alınan hizmet giderlerinin GO Dijital Cüzdan üzerinden ödenmesi'. Yanıt Kısa cevap'ta bu kısıt yok.",
+        "oneri": "Kredi programlarında Kısa cevap'a 'Nakit değil: yalnız şu harcamalarda kullanılır; şu teminat gerekir' şeklinde tek cümlelik düz dilli kullanım kısıtı eklensin; kayıttaki teknik terimler ilk geçtiği yerde bir ifadeyle açıklansın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "dusuk",
+        "aciklama": "'Faiz ve komisyon yok' kayıtta doğru; ancak kredinin kullanılabilmesi için bankadan teminat mektubu alınması gerektiği için bankanın teminat mektubu maliyeti ayrıca doğabilir. Bu maliyet kayıtta yok (kaynak dışı) fakat 'faizsiz ve komisyonsuz' ifadesi tek başına maliyetsiz izlenimi verebilir.",
+        "kanit": "Yanıt: 'faiz ve komisyon yok ... bankadan Kesin Teminat Mektubu zorunlu'. Kaynak teminat mektubu maliyeti hakkında bilgi vermiyor.",
+        "oneri": "Teminat mektubu zorunlu olan faizsiz kredilerde 'teminat mektubunun banka maliyetini bankanızdan sorun' notu eklensin.",
+        "kaynak_disi": true
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "dusuk",
+        "aciklama": "Rozet yoksa program kapalı olduğundan kullanıcıya alternatif lazım. 'Diğer ilgili programlar' olarak yalnız TÜBİTAK Transfer Ödemeleri (zaten TÜBİTAK projesi kazanılmış olmasını isteyen KGF kefalet ürünü) gösterilmiş. Hedefleri (ihracat, Ar-Ge, finansman) ile eşleşen KGF Küresel Rekabetçilik Destek Paketi (ihracat+Ar-Ge, KOBİ, 50 milyon TL'ye kadar kredi) ve NACE 62'yi kapsayan Kapasite Geliştirme (rozet sahiplerinde hızlı büyüme şartı aranmaz) aday listesinde olduğu halde gösterilmemiş.",
+        "kanit": "Kaynak ADAY KAYIT 107: 'KÜRESEL REKABETÇİLİK DESTEK PAKETİ — KGF; kriterler={sektorler: [ihracat, arge], max_olcek: orta} ... Kredi üst limiti 50 Milyon TL'. Yanıt: 'TÜBİTAK Transfer Ödemeleri (KGF) — belirlenemedi'.",
+        "oneri": "Ana program 'Belirlenemedi' veya 'Uygun değil' çıktığında alternatifler persona.hedefleri ile kriter sektörlerinin örtüşmesine göre seçilsin; tek ön koşulu başka bir kurumun kararı olan ürünler (TÜBİTAK projesi kazanılmış olması) elensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Adım 3 belgeleri arasında Kesin Teminat Mektubu iki kez geçiyor; Bilgi Eksikliği'nde teyit listesindeki üç maddeden GO Dijital Cüzdan sorulmuyor (iki soru var).",
+        "kanit": "Yanıt adım 3: 'Bankadan GO Dijital Teknoloji Hizmetleri A.Ş.'ye hitaben Kesin Teminat Mektubu getirmek ...; Bankadan Kesin Teminat Mektubu (kredinin GO Dijital Cüzdan hesabına blokeli aktarımı için zorunlu)'.",
+        "oneri": "Aynı belgeyi anlatan [belge] satırları tekilleştirilsin; teyit listesindeki her madde için bir soru üretilsin.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "KOSGEB Yapay Zekâ Kredisi işletme başına 500.000 TL ile 5.000.000 TL arasında, Türk lirası cinsinden ve faiz-komisyonsuzdur. Toplam vade 24 aydır ve kredi başlangıcından itibaren ilk 12 ay ödemesizdir. Kredi nakit verilmez: GO Dijital Cüzdan hesabına blokeli aktarılır ve yalnız KOSGEB'in Hizmet Sağlayıcılar Listesi'ndeki sağlayıcılardan alınacak hizmetlerin ödenmesinde kullanılır; bunun için bankadan GO Dijital'e hitaben, kredi limiti kadar (en az 500.000 TL) Kesin Teminat Mektubu getirmeniz gerekir. Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti de şarttır; profilinizde rozet bilgisi olmadığı için uygunluğunuz belirlenemedi. Sayfada dönem veya son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi veya e-Devlet üzerinden elektronik yapılır."
+  },
+  {
+    "n": 18,
+    "puan": {"dogruluk": 5, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 4},
+    "bulgular": [
+      {
+        "tur": "odak",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Soru gün sayısı soruyor ve yanıt Kısa cevap'ta ön kayıt son gününü doğru veriyor: 22.10.2026 (11 gün kaldı), kapanış 26.10.2026 (15 gün kaldı). BUGÜN 2026-10-11 ile hesap tutarlı. Profil etiketi (engel yok) ve destek bilgileri (%75 / %60, en fazla 20 M TL, 36 ay) kayıtla uyumlu.",
+        "kanit": "Yanıt: 'ön kayıt son günü 22.10.2026 (11 gün kaldı); başvuru kapanışı 26.10.2026 (15 gün kaldı)'. Kaynak ÇAĞRI: 'on_kayit_son: 2026-10-22 ... kalan_gun: 11'.",
+        "oneri": "Gün sayımı mantığı korunmalı.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "11 gün, ön kaydın pratik süresini yansıtmıyor: kayıttaki not 'ön kayıt evrakı kapanıştan (26.10.2026) en az bir iş günü önce TÜBİTAK'a ulaşmalı' ve son gün saatinin 23:59 olduğunu söylüyor. Bu iki bilgi yalnız kartın 'Not' kısmında, Kısa cevap'ta ve yol haritasında yok. Kullanıcı 22.10 akşamına kadar işi tamamlarsa yeter sanabilir. Takvim hesabıyla kapanıştan bir iş günü önce 23.10.2026 Cuma olur (kaynak dışı takvim hesabı), yani evrak ön kayıt gününden sonra da hızlı davranmayı gerektiriyor.",
+        "kanit": "Kaynak: 'Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 22.10.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı.' Yanıt Kısa cevap: '... ön kayıt son günü 22.10.2026 (11 gün kaldı)' ve başka bilgi yok.",
+        "oneri": "Tarih-kalan gün sorularında çağrının 'notlar' alanındaki saat ve ek teslim koşulları Kısa cevap cümlesine eklensin: '22.10.2026 23:59 (11 gün); ön kayıt evrakı kapanıştan en az bir iş günü önce ulaşmalı'.",
+        "kaynak_disi": true
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "dusuk",
+        "aciklama": "'Diğer ilgili programlar' olarak yalnız REFİNANSMAN KEFALET PROGRAMI (KGF) gösterilmiş; bu bir kredi yeniden yapılandırma ürünü olup 1501 Ar-Ge çağrısıyla ilgisiz. Aday listesinde bulunan 1707 (KOBİ siparişe dayalı Ar-Ge), 1505 (Üniversite-Sanayi), 1515, 1702 ve 1719 gibi TÜBİTAK programları bu soru için daha anlamlı yan seçeneklerdir.",
+        "kanit": "Yanıt: 'REFİNANSMAN KEFALET PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok ...'. Kaynak ADAY KAYIT 55: '1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı — TUBITAK'.",
+        "oneri": "Tek programlı, tarih odaklı sorularda yan program önerisi yalnız aynı kurum/aynı konu ailesinden (TÜBİTAK Ar-Ge) seçilsin; konu dışı kredi ürünü gösterilmesin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "dusuk",
+        "aciklama": "'Bilgi Eksikliği: Profiliniz yeterli' ifadesi, kartta kural olarak duran iki koşulu (Ar-Ge başvurudan önce tamamlanmış olmamalı; bu çağrıda kuruluş başına en fazla 2 öneri) kullanıcıdan teyit istemeden geçiyor. Kuruluşun PRODİS'te önceden kayıtlı olup olmadığı da sorulmuyor.",
+        "kanit": "Yanıt: 'Profiliniz bu yanıt için yeterli'. Kaynak [kural]: 'Bu çağrı döneminde kuruluş başına en fazla 2 proje önerisi sunulabilir (2026-2 çağrı metni)'.",
+        "oneri": "Profille doğrulanamayan [kural] satırları için kontrol listesi üretilsin; 'Profiliniz yeterli' yalnız doğrulanamayan hiçbir koşul kalmadığında yazılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "'Kuruluş ön kaydı' ne demek ve nasıl yapılır yanıtta açıklanmıyor; yol haritası adım 1 yalnız 'Ön kayıt: son gün 22.10.2026' diyor. Kayıtta ön kayıt belge listesi olmadığı halde bu açıkça söylenmiyor. Darboğazlar bölümündeki 'yeni başvuranın ön kayıt son günü' ifadesi 'yeni başvuran' kavramını tanımlamıyor. Tarih sorusuna karşılık Destek/Hesaplama blokları da tam verilmiş.",
+        "kanit": "Yanıt adım 1: 'Ön kayıt: 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı — son gün 22.10.2026.' Darboğaz: 'yeni başvuranın ön kayıt son günü 22.10.2026 (11 gün)'.",
+        "oneri": "Kayıtta ayrıntısı olmayan işlem adımlarında 'Ön kayıt içeriği kayıtlarımızda yok; çağrı metni ve TÜBİTAK 444 66 90 üzerinden öğrenin' cümlesi eklensin; 'yeni başvuran' ifadesi tanımlansın ya da kullanılmasın.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "1501 2026 yılı 2. çağrısında kuruluş bazlı ön kayıt için son gün 22.10.2026 saat 23:59'dur; bugünden itibaren 11 gün kaldı (başvuru kapanışı 26.10.2026, 15 gün). Ön kayıt PRODİS üzerinden yapılır ve ön kayıt evrakının kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşması gerekir; yani pratikte süreniz 11 günün biraz altındadır. Profilinize göre (limited şirket, KOBİ, imalat) kayıttaki şartlarda engel görünmüyor; Ar-Ge faaliyetinin başvurudan önce tamamlanmamış olması ve bu çağrıda kuruluş başına en fazla 2 öneri sunulabilmesi kurallarını teyit edin. Ön kayıt evrakının içeriği kayıtlarımızda yok; ayrıntı için 2026-2 çağrı metnine veya TÜBİTAK 444 66 90'a bakın."
+  }
+]

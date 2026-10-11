@@ -6,6 +6,7 @@
 - Sizin için: profilinize göre engel yok — şartları teyit edin.
 - Başvuru: 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (29 gün kaldı); başvuru kapanışı 11.11.2026 (31 gün kaldı).
 - Destek: Proje bütçesi en fazla 3.500.000 TL; ilk 5 projede %75 hibe (en az ikisi ortaklı başvuru kaydıyla)
+- Azami hibe (hesap): 3.500.000 TL bütçe × %75 = 2.625.000 TL (kayıttaki bütçe tavanı ile oranın çarpımı; proje bütçenize göre değişir)
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 13.20)
@@ -22,6 +23,7 @@
 - **Kapsam:** yalnız KOBİ'ler
 - **Destek:** Proje bütçesi en fazla 3.500.000 TL; ilk 5 projede %75 hibe (en az ikisi ortaklı başvuru kaydıyla)
 - **Hesaplama:** Proje bütçesinin %75'i hibe (geri ödemesiz), proje başına azami 3.500.000 TL. Personel, seyahat, ekipman/yazılım, malzeme, danışmanlık ve hizmet alımı giderlerini kapsar.
+- **Azami hibe (hesap):** 3.500.000 TL bütçe × %75 = 2.625.000 TL (kayıttaki bütçe tavanı ile oranın çarpımı; proje bütçenize göre değişir)
 - **Profilinize göre sağlanan şartlar:** KOBİ ölçeğinde sermaye şirketi (limited şirket, küçük işletme)
 - **Kurallar (kayıttan):**
   - Bu programdan daha önce 5 proje desteği almamış olmak (ilk 5 projenin en az ikisi ortaklı proje olmalıdır; 5 destekten sonra diğer programlara başvurulur) — resmî metin: “Firmaların en az ikisi ortaklı olmak kaydıyla ilk beş projesi desteklenir (İlk beş destek sonrası diğer programlara başvurulmalıdır).”

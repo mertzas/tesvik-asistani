@@ -3,6 +3,7 @@
 - **Organik Tarım Destekleri** (Tarım Bakanlığı)
 - Destek: Dekar başına 73,40–550,50 TL organik tarım desteği (2026; ürün grubu ve bireysel/grup sertifikaya göre, 1. derece örgüt üyesine %25 ilave dâhil); temel destek ayrıca ödenir
 - Sizin için: **uygun değil** — Organik ürün sertifikası gerekir (beyan: yok).
+- Arazinize göre: 60 dekar için en düşük 73,40 TL/da × 60 da = 4.404,00 TL, en yüksek 550,50 TL/da × 60 da = 33.030,00 TL (ürün grubunuz ve sertifika türünüz kesin tutarı belirler)
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: tarım (NACE kodu bilinmiyor)
@@ -19,8 +20,8 @@
 - **Ne yapabilirsiniz:** Destek sertifikalı üretime ödenir; yetkilendirilmiş bir kuruluşla sertifikasyon sürecine girip ürün sertifikası aldığınız yıl başvurabilirsiniz (süreci il müdürlüğünden teyit edin).
 - **Kaynak:** https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#organik-tarim
 
-**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- TARIM KEFALET DESTEK PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+**Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
+- TARIM KEFALET DESTEK PROGRAMI (KGF): İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi 20 Milyon TL (azami 60 ay), 12 ay ödemesiz; %80 kefalet; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Tasarruflu Tarımsal Sulama Sistemleri (TSS) Hibe Desteği (Tarım Bakanlığı) — kapalı: program başvuruya açık değil (TRGM duyurusu (29.04.2026): TSS hibe başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı)
@@ -36,7 +37,7 @@ Sorduğunuz program şu an size açık olmadığından adımlar, açık alternat
 2. TARIM KEFALET DESTEK PROGRAMI şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (TARIM KEFALET DESTEK PROGRAMI): İlgili bankanın standart kredi başvuru evrakı; İşletme/çiftçi kayıt belgesi; Banka tarafından istenecek teminat/gelir belgeleri.
 4. Başvuru kanalı: TARIM KEFALET DESTEK PROGRAMI: Programa dahil 10 bankadan biri: Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, Halkbank, TEB, YKB — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tarim-kefalet-destek-programi.
-5. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim) · Aydın Tarım ve Orman İl Müdürlüğü: iletişim bilgisi için resmî sayfa: https://aydin.tarimorman.gov.tr/Iletisim
+5. İletişim (doğrulanmış): Tarım Bakanlığı: çağrı merkezi 180 (Alo 180); Üniversiteler Mah. Dumlupınar Bulvarı, No: 161, 06800, Çankaya / Ankara (doğrulama: https://timer.tarimorman.gov.tr/Home/Hakkinda) · Aydın Tarım ve Orman İl Müdürlüğü: iletişim bilgisi için resmî sayfa: https://aydin.tarimorman.gov.tr/Iletisim
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme

@@ -19,9 +19,11 @@
 - **Ne yapabilirsiniz:** Şart işletme sahibi ya da en az %50 hisseli ortak için aranır: en az %50 hisseye sahip ortağınız 29 yaşını aşmamışsa profilde kurucu yaşını onun yaşıyla güncelleyin.
 - **Kaynak:** https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi
 
+**Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
+- KGF Genel Destek Programı (KGF): Kredi tutarına göre değişen kefalet oranı; başvuru ücreti 3 milyon TL altı krediler için 5.000 TL, üzeri için 10.000 TL (reddedilirse iade edilmez).; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- KGF Özkaynak Kefalet Programı (KGF): Yararlanıcı/grup başına kefalet azami 5 Milyon TL; işletme kredisi 6–60 ay (ödemesiz ≤1 yıl), yatırım 6–84 ay (ödemesiz ≤2 yıl); işlem ücreti ≥5.000 TL; Dönemsel başvuru yok: başvurular bankalar kanalıyla kefalet.kgf.com.tr üzerinden yapılır. Kefaletten yararlanma süresi, KGF'nin kefalet tahsis tarihinden itibaren 1 yıldır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- KGF Genel Destek Programı (KGF) — profilinize göre engel yok — şartları teyit edin; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- KGF Özkaynak Kefalet Programı (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: başvurular bankalar kanalıyla kefalet.kgf.com.tr üzerinden yapılır. Kefaletten yararlanma süresi, KGF'nin kefalet tahsis tarihinden itibaren 1 yıldır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - TKYB KREDİ DESTEK PAKETİ (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Size kapalı ya da başvuruya kapalı programlar:**

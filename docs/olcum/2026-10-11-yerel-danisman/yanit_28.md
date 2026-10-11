@@ -19,14 +19,30 @@
 - **Ne yapabilirsiniz:** Profilinizdeki ilgili bilgi değişirse yeniden değerlendirin.
 - **Kaynak:** https://ankaraka.org.tr/2026-ankara-sosyal-girisimcilik-ekosistemi-kapasite-gelistirme-mali-destek-programi
 
+**Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
+- KOBİ Dijital Dönüşüm Destek Programı (KOSGEB): ₺1.000.000 - ₺20.000.000 kredi (faiz desteği geri ödemesiz); Sürekli açık başvuru (24 aylık program süresi içinde kullanım gerekir) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- YÖNDE - Yönderlik ve Değerlendirme Destek Programı (KOSGEB): %100 geri ödemesiz; program üst limiti toplam 700.000 TL (hizmet başına 20.000–150.000 TL; kalemler 40.000/200.000/40.000/450.000 TL); Sayfada başvuru dönemi belirtilmemiştir. Başvurular en geç 15 gün içinde kontrol edilir; destek, başvurunun KOSGEB'ce onaylandığı tarihte başlar. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- TURWIB PROGRAMI DESTEK PAKETİ (KGF): tutar kayıtta yok; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+
 ### 3. Darboğazlar ve Kritik Şartlar
-- Size açık bir program kartı olmadığı için başvuru darboğazı çıkarılmadı; bir programı adıyla sorarsanız şartlarını ayrıntılı veririm.
+- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (KOBİ Dijital Dönüşüm Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
+- **KOBİ Dijital Dönüşüm Destek Programı:** KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmak (KOSGEB sınıflandırmasında küçük veya orta ölçekli olmak; mikro ölçekliler başvuramaz)
+- [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
+- [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
-1. Size açık bir program kartı yok; kapalı programların sonraki dönemini kurum duyurularından izleyin ya da başka bir programı adıyla sorun.
+Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **KOBİ Dijital Dönüşüm Destek Programı** için:
+1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
+2. KOBİ Dijital Dönüşüm Destek Programı şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
+3. Belgeler (KOBİ Dijital Dönüşüm Destek Programı): Onaylı dijital dönüşüm/olgunluk değerlendirme raporu (TÜSSİDE-DDX veya SIRI formatı); Başvuru Formu; Mali tablolar ve işletme beyanı; KOBİ Dijital Dönüşüm Destek Programı Taahhütnamesi.
+4. Başvuru kanalı: KOBİ Dijital Dönüşüm Destek Programı: KOSGEB KOBİ Bilgi Sistemi (online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi.
+5. İletişim (doğrulanmış): KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
+6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.
+1. KOBİ Dijital Dönüşüm Destek Programı: “KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmak (KOSGEB sınıflandırmasında küçük veya orta ölçekli olmak; mikro ölçekliler başvuramaz)” şartını sağlıyor musunuz?
+2. KOBİ Dijital Dönüşüm Destek Programı: “Son mali yıl Öz Kaynaklar Toplamı pozitif ve son 3 mali yıl Faaliyet Karı'ndan en az biri pozitif” şartını sağlıyor musunuz?
+Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

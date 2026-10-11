@@ -16,6 +16,7 @@
 
 **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) — TUBITAK** (uygun değil)
 - **Neden:** hızlandırma programına kabul tarihinde herhangi bir sermaye şirketinin ya da şahıs işletmesinin ortağı olmamak şartı (beyan: ortaklığınız var; borsadaki hisseler ve kitle fonlaması payları sayılmaz).
+- **Son bilinen tutar (önceki program, bilgi için):** BiGG Fonu hisse karşılığı yatırım: 1.350.000 TL (2026); +600.000 TL GCİP ek yatırım imkânı (2025'ten itibaren) (son bilinen tutar, önceki program 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) kaydından; 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) için güncel tutarı kurumdan teyit edin)
 - **Ne yapabilirsiniz:** Ortaklık yasağı hızlandırma programına kabul tarihindeki duruma bakar; borsadaki hisseler ve kitle fonlaması payları sayılmaz. Kabul tarihinden önce ortaklıktan ayrılmanın sonucunu kurumdan teyit edin.
 - **Kaynak:** https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim
 

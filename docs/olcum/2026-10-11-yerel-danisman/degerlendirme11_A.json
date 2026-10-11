@@ -1,0 +1,300 @@
+[
+  {
+    "n": 1,
+    "puan": {"dogruluk": 4, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Tuzakta doğru tavır. Bireysel traktör sorusuna kayıttaki kapsam notu verilmiş, eski kaynaksız makine hibesi tutarı kullanılmamış, KKYP hem kapalı hem kalem kapsam dışı diye işaretlenmiş. Oran ve üst limit kaynakla birebir uyumlu.",
+        "kanit": "Yanıt: 'Sorduğunuz kalem (traktör): kayıtta «Bireysel traktör/makine alımı bu programda desteklenmez.»'. KAYIT 78 Tutar/oran: %50–%70, 100.000–30.000.000 TL, aile işletmesi ≤8.000.000 TL.",
+        "oneri": "Bu davranışı koru: kapsam dışı notu olan kayıtlarda eski tutar alanlarını yanıta taşıma.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Asıl engel (kalem kapsam dışı) kartın 'Neden' satırında yok; 'Neden' yalnızca 'başvuruya açık değil' diyor. Etiket da yalnızca 'kapalı'. Kullanıcı 'program açılsa bile traktör alamam' sonucunu ancak üst madde ve 'Ne yapabilirsiniz' satırından çıkarıyor. Ayrıca kayıtta ortak makine parkı (tarımsal amaçlı örgütler) kapsamda olduğu halde bu yol hiç anılmıyor; 'Ne yapabilirsiniz' yalnızca 'başvurulamaz' diyip kullanıcıyı KGF kredisine yönlendiriyor.",
+        "kanit": "Yanıt: '**Neden:** program başvuruya açık değil...'. Kaynak KAYIT 78: 'tarımsal amaçlı örgütler için ortak makine parkı vb. yatırım konularına hibe'.",
+        "oneri": "Kayıt metninde 'desteklenmez' kalıbı geçen kalemde Neden satırı önce kapsam dışılığı yazsın (etiket: Uygun değil — kalem kapsam dışı; ayrıca kapalı). Kapsamdaki en yakın yol (örgüt üzerinden ortak makine parkı) varsa bir cümleyle belirtilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Oran '%50–%70 (EK-2'ye göre)' diye veriliyor; hangi koşulda hangi oranın uygulandığı ve kullanıcının (şahıs işletmesi, Konya) hangi üst limite (30 M mı, aile işletmesi 8 M mı) tabi olduğu söylenmiyor. 'EK-2' açıklamasız jargon.",
+        "kanit": "Yanıt: 'Hibe: KDV dâhil hibeye esas proje tutarının %50–%70'i (EK-2'ye göre); hibeye esas tutar 100.000 – 30.000.000 TL (aile işletmesi ≤8.000.000 TL)'.",
+        "oneri": "Aralık veren oran alanlarında kaynakta belirleyici koşul yoksa 'oranı belirleyen ölçüt yanıtta yok, Tebliğ EK-2'den bakın' diye açık yaz; profilde aile işletmesi bilgisi yoksa bunu Netleştirme bölümünde sor.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Alternatif listesindeki Hayvancılık ve Hububat kartları traktör/mibzer sorusuyla ilgisiz. Hububat satırında kullanıcının ürünü buğday (katsayı 1,3 → 954,20 TL/da) iken öne mercimek/nohut 734,00 TL/da örneği çıkarılmış (profil-özel rakam yanlış kademe). Hayvancılık satırında 'sistemde teyit edilemedi (taranmış PDF)' iç veri notu sızmış.",
+        "kanit": "Yanıt: 'Hububat ... mercimek, nohut, mısır (dane) katsayı 1,0 → 734,00 TL/da'; 'Birim tutarlar 8760 sayılı CB Kararı ... sistemde teyit edilemedi (taranmış PDF)'. Persona: urun_turu buğday, 180 dekar.",
+        "oneri": "Alternatifleri soru niyetine göre süz (makine/ekipman sorusunda yalnız finansman ve makine odaklı kayıtlar). Persona ürün alanı varsa tutar satırını o ürüne göre seç (buğday: 954,20 TL/da). Teknik/iç notları ('taranmış PDF', 'kayıttan') kullanıcı metninden çıkar.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Çelişkili şablon: alternatiflerde 'profilinize göre engel yok' denirken Bölüm 3 ve 4 'Size açık bir program kartı olmadığı için ...' ve 'Size açık bir program kartı yok' diyor; Bölüm 5 'Profiliniz bu yanıt için yeterli'. Yol haritası fiilen boş. Ayrıca 'Son bilinen destek' aynı bilgi üst özet ve kartta iki kez tekrarlanmış, program açıklaması '[…]' ile kesik.",
+        "kanit": "Yanıt Bölüm 3: 'Size açık bir program kartı olmadığı için başvuru darboğazı çıkarılmadı'; Bölüm 2: 'Size açık görünen alternatifler (profilinize göre engel yok...)'.",
+        "oneri": "Alternatif listesi doluysa Bölüm 3/4'ü o alternatiflerden üret ya da bu bölümleri hiç basma. 'Kart yok' şablonu yalnız hiçbir açık/alternatif kayıt yokken çıksın. Özet ile kart arasındaki tekrarı kaldır, kesik açıklamayı cümle sınırında kes.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "dusuk",
+        "aciklama": "ADAY kayıtlarda tarımsal işletme fiziki yatırımı için TKDK IPARD III Tedbir 101 (aktif değil) var; yanıt makine yatırımı arayan çiftçiye bu hibe kanalının da kapalı olduğunu söylemiyor. Kayıtta traktör uygunluğu yazmadığı için yalnız 'kapalı' bilgisi olarak anılabilirdi.",
+        "kanit": "ADAY KAYIT 243: IPARD III — Tarımsal İşletmelerin Fiziki Varlıklarına Yönelik Yatırımlar (Tedbir 101 / M1) — TKDK; aktif_mi=False.",
+        "oneri": "Sorunun kalem türüyle (makine/ekipman yatırımı) eşleşen kapalı hibe kanallarını tek satırda 'şu an kapalı' diye listele.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Hayır: Tarım Bakanlığı KKYP kapsamında bireysel traktör/makine alımı desteklenmiyor (kayıt notu); program işleme, paketleme, depolama, hayvancılık, gübre işleme ve tarımsal amaçlı örgütler için ortak makine parkı yatırımlarına hibe veriyor. Hibe oranı KDV dâhil hibeye esas tutarın %50–%70'i (EK-2'ye göre), hibeye esas tutar 100.000–30.000.000 TL, aile işletmesi için üst sınır 8.000.000 TL. Ayrıca 2026 başvuru dönemi 29 Nisan–12 Haziran 2026'da kapandı. Yani şahıs işletmenizin traktör ve mibzer alımı için bu hibe yolu yok; ortak makine parkı ancak tarımsal amaçlı bir örgüt üzerinden gündeme gelebilir, bunu Konya İl Tarım ve Orman Müdürlüğü'nden (0332 322 34 60) sorun. Alımı finanse etmek için KGF Tarım Kefalet Destek Programı açık: yatırım kredisi 20 milyon TL'ye kadar, azami 60 ay (12 ay ödemesiz), %80 kefalet, 10 bankadan biri üzerinden sürekli başvuru."
+  },
+  {
+    "n": 2,
+    "puan": {"dogruluk": 5, "soruya_odak": 4, "eksiksizlik": 4, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Oran (%50 damla, %60, %70 yüzey altı damla) ve hibeye esas tavan (10.000.000 TL, aşan kısım ayni katkı) kaynakla birebir; kapalı durum ve 29 Nisan–12 Haziran 2026 tarihi doğru; eski kaynaksız '100.000-1.000.000 TL' ifadesi kullanılmamış. Kısa cevap soruyu ilk üç satırda yanıtlıyor.",
+        "kanit": "Yanıt: 'Hibe oranı %50 (damla, yağmurlama), %60 (...), %70 (yüzey altı damla); hibeye esas proje tutarı en fazla 10.000.000 TL'. KAYIT 80 Tutar/oran.",
+        "oneri": "Korunmalı.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Alternatifler sulama sorusuyla büyük oranda ilgisiz: Hayvancılık Destekleri ve Hububat/Baklagil kartları gereksiz; yalnız KGF Tarım Kefalet yatırım kredisi sulama yatırımının finansmanı için anlamlı ama bu bağ kurulmuyor. Hayvancılık satırında 'sistemde teyit edilemedi (taranmış PDF)' iç notu sızıyor.",
+        "kanit": "Yanıt: 'Size açık görünen alternatifler: TARIM KEFALET ... Hayvancılık Destekleri ... Hububat ve Baklagil ...'.",
+        "oneri": "Soru konusu yatırım/ekipman ise alternatifleri finansman ürünleri ve aynı alt kategorideki kayıtlarla sınırla; ilgisiz üretim destekleri listeden çıkarılsın. Alternatife 'sulama yatırımı kredisi olarak kullanılabilir' gibi bağlayıcı bir gerekçe ekle.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Bölüm 1 'Hedefler: makine alımı, hayvancılık' diyor, sorudaki sulama ihtiyacı yansımıyor ('Sorudan anlaşılan ihtiyaç' satırı yok). Bölüm 3-5 'Size açık bir program kartı yok' şablonuyla boş; oysa kullanıcıya somut bir sonraki adım (duyuru izleme, portal) verilebilirdi.",
+        "kanit": "Yanıt Bölüm 1 ve Bölüm 3: 'Size açık bir program kartı olmadığı için başvuru darboğazı çıkarılmadı'.",
+        "oneri": "Sorudan çıkan ihtiyaç etiketi (ör. sulama/altyapı) Bölüm 1'e her zaman yazılsın. Kapalı programın yol haritası 'çağrıyı izle: kaynakta verilen portal ve il müdürlüğü' adımlarıyla doldurulsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kaynakta bulunan uygulanabilir bilgiler kullanıcıya iletilmemiş: başvuru portalı (tss.tarimorman.gov.tr), Konya İl Müdürlüğü telefonu ve 'sözleşmeden önce ekipman almayın' sonucu (teslimin sözleşmeden sonra ve 75 gün içinde olması) yol haritasında yok. 'Ayni katkı' kavramı açıklanmamış.",
+        "kanit": "Kaynak KAYIT 80: 'Makine-ekipman alımı hibe sözleşmesinden sonra ve 75 gün içinde teslim (MADDE 9)'; 'başvuru tss.tarimorman.gov.tr'; Konya Tarım ve Orman İl Müdürlüğü: Telefon 0332 322 34 60.",
+        "oneri": "Kapalı programlar için de başvuru kanalı ve il müdürlüğü iletişimi Bölüm 4'e yazılsın; 'aşan kısım ayni katkı' gibi terimler parantezle (ör. fark sizin öz kaynağınız) açıklansın.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "TSS hibesinde oran sulama sistemine göre değişir: damla ve yağmurlamada %50, mikro yağmurlama, center pivot/lineer/tamburlu ve güneş enerjili sistemlerde %60, yüzey altı damlada %70. Hibeye esas proje tutarı en fazla 10.000.000 TL'dir; aşan kısım ayni katkı olarak sizin tarafınızdan karşılanır. Ancak 2026 başvuru dönemi 29 Nisan–12 Haziran 2026'da kapandı; çağrı yıllık açıldığı için bir sonraki dönemi tss.tarimorman.gov.tr ve Tarım Bakanlığı duyurularından, Konya İl Müdürlüğü'nden (0332 322 34 60) izleyin. Hibe sözleşmesi imzalanmadan ekipman almayın: makine-ekipman hibe sözleşmesinden sonra ve 75 gün içinde teslim edilmelidir. Beklerken yatırım için KGF Tarım Kefalet Destek Programı'ndan yatırım kredisi (20 milyon TL'ye kadar, azami 60 ay, %80 kefalet) kullanılabilir."
+  },
+  {
+    "n": 3,
+    "puan": {"dogruluk": 5, "soruya_odak": 5, "eksiksizlik": 4, "anlasilirlik": 4},
+    "bulgular": [
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Üç alt soru da ilk bölümde yanıtlanmış: bütçe tavanı 3.500.000 TL, oran %75, çağrı açık (ön kayıt 09.11.2026, kapanış 11.11.2026). Gün sayıları bugünle tutarlı (29 ve 31 gün), azami hibe hesabı doğru (2.625.000 TL). Program kaydındaki genel 'Ocak-Şubat/Temmuz-Ağustos' ifadesi yerine ÇAĞRI kaydı esas alınmış.",
+        "kanit": "Yanıt: 'ön kayıt son günü 09.11.2026 (29 gün kaldı); başvuru kapanışı 11.11.2026 (31 gün kaldı)'. ÇAĞRI id 2: kapanis 2026-11-11, on_kayit_son 2026-11-09.",
+        "oneri": "Korunmalı; çağrı tarihleri her zaman ÇAĞRI kaydından, genel başvuru dönemi metninden değil.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Kısa cevabın son satırı cümle ortasında kesiliyor ('...geliştirilmiş, iyileştiril') ve soruyla ilgisiz genel Ar-Ge tanımı veriyor. Kural alıntısı 'Hayır. Ar-Ge faaliyetleri...' bağlamsız 'Hayır.' ile başlıyor, okuyan soruya verilmiş cevap sanabilir.",
+        "kanit": "Yanıt: '- Program: Ar-Ge, bilimsel ve teknik bilgi birikimini ... geliştirilmiş, iyileştiril'. Kural: «Hayır. Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez.»",
+        "oneri": "Kısa cevaba program tanımı yerine soruyla ilgili slot (bütçe tavanı, oran, çağrı durumu) yazılsın; kesme cümle sınırında yapılsın. SSS kaynaklı alıntılarda 'Hayır.' gibi soru-cevap kalıntıları temizlensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "'%75 hibe (en az ikisi ortaklı başvuru kaydıyla)' muğlak: kaynak 'ilk beş proje desteklenir, bunların en az ikisi ortaklı olmalı' diyor. Oranın 5. projeden sonra ne olacağı ve ilk beş desteğin kullanıcıda kaç tane kullanıldığı sorulmuyor; Bölüm 5 'Profiliniz yeterli' diyor.",
+        "kanit": "Yanıt: 'ilk 5 projede %75 hibe (en az ikisi ortaklı başvuru kaydıyla)'; Bölüm 5: 'Profiliniz bu yanıt için yeterli'. Kaynak kural: 'ilk beş projenin en az ikisi ortaklı proje olmalıdır'.",
+        "oneri": "'Daha önce 1507 desteği aldınız mı?' sorusu Bölüm 5'te sorulsun; oran cümlesi 'firmanın ilk 5 projesi desteklenir; bunların en az 2'si ortaklı olmalıdır' biçiminde açık yazılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "dusuk",
+        "aciklama": "'Yeni başvuranın ön kayıt son günü' ifadesindeki 'yeni başvuran' kısıtı 1507 çağrı kaydında geçmiyor; kayıt yalnızca kuruluş bazlı ön kayıt son gününü veriyor. Ayrıca kaynağın kendi içinde 'Aynı anda en fazla 5 projeye destek' (başvuru şartları) ile 'ilk beş proje' (kural) farklı anlatımları var; yanıt birini sessizce seçmiş.",
+        "kanit": "Yanıt Bölüm 3: 'yeni başvuranın ön kayıt son günü 09.11.2026'. ÇAĞRI notu: 'Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 09.11.2026 23:59'. Başvuru şartları: 'Aynı anda en fazla 5 projeye destek alınabilir'.",
+        "oneri": "Çağrı metni şablonundaki 'yeni başvuran' ifadesi yalnız kayıt alanı bunu söylüyorsa kullanılsın. Veri tutarsızlığı (aynı anda 5 / ilk 5) kayıt düzeyinde düzeltilsin.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "1507'de proje bütçesi en fazla 3.500.000 TL, destek oranı %75'tir (firmanın ilk 5 projesi desteklenir, bunların en az ikisi ortaklı olmalıdır); azami hibe yaklaşık 2.625.000 TL eder. 2026 yılı 2. çağrı açık: kuruluş bazlı ön kayıt PRODİS'ten en geç 09.11.2026 23:59 (29 gün kaldı), çağrı kapanışı 11.11.2026 23:59 (31 gün kaldı) ve ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalıdır. İzmir'deki limited şirketiniz KOBİ ölçeğinde sermaye şirketi olduğu için kayıtlı şartlara göre engel görünmüyor; Ar-Ge faaliyeti başvurudan önce tamamlanmış olmamalı, proje süresi en fazla 18 ay olmalı ve bu programdan daha önce kaç destek aldığınız kontrol edilmelidir. Daha büyük bütçe gerekiyorsa 1501 (ön kayıt 22.10.2026, kapanış 26.10.2026) alternatiftir."
+  },
+  {
+    "n": 4,
+    "puan": {"dogruluk": 4, "soruya_odak": 3, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Sorunun ilk yarısı olan 'Almanya'daki ortakla başvurabilir miyiz' Kısa cevapta yanıtlanmıyor; yalnızca kartın 'Profilinize göre sağlanan şartlar' satırında 'ülkenin programa üye olduğunu çağrı belgesinden teyit edin' parantezi var. En ilgili kural (en az bir Türk ve bir Eurostars üyesi ülkeden ortak) 'Kurallar' listesinde de yer almıyor; listede bütçe kuralları var.",
+        "kanit": "Kaynak şartı: 'En az bir Türk ve bir Eurostars üyesi ülkeden ortağın katıldığı uluslararası proje'. Yanıt Kısa cevap: 'Sizin için: profilinize göre engel yok — şartları teyit edin.'",
+        "oneri": "Soruda ortak ülke geçiyorsa Kısa cevap ilk satırı 'Kural: Türk ortak + Eurostars üyesi ülkeden ortak şart; Almanya'nın üyeliği kayıtta listelenmiyor, çağrı belgesinden teyit edin' biçiminde olsun; ilgili şart Kurallar listesinin başına alınsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "tuzak",
+        "ciddiyet": "orta",
+        "aciklama": "'Çağrı açık mı' sorusu belirsiz bırakılmış. Kayıtta 2026/2 çağrısı 'mevcut çağrı' olarak anılıyor ama son başvuru tarihi PDF'te ve sistemde yok; doğru tavır 'açık/kapalı belirlenemedi, tarih PDF'te' demek. Yanıt 'Çağrı dönemli: 2026/2 ulusal çağrısı; son başvuru tarihi ... belgesinde' diyor, durum etiketi yok; üstelik üst satırda 'engel yok' etiketi çağrının açık olduğu izlenimi veriyor.",
+        "kanit": "Kaynak: 'Başvuru süresi/dönemi: Çağrı dönemli: ... son başvuru tarihi ve uluslararası takvim çağrı duyurusu belgesinde (PDF)'; ÇAĞRI kaydı yok. Yanıt: 'Başvuru: Çağrı dönemli: 1709-EUREKA-EUROSTARS 2026/2 ulusal çağrısı; ...'.",
+        "oneri": "Kayıtta ÇAĞRI satırı ve tarih yoksa 'Çağrı durumu: belirlenemedi — tarih çağrı duyurusu PDF'inde' etiketi basılsın; 'Başvuruya açık' izlenimi veren etiketle yan yana verilmesin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Kurumun genel bilgisine göre Eurostars uluslararası kesim tarihleri yılda iki kez (kabaca ilkbahar ve sonbahar) olur; 2026/2'nin 11 Ekim itibarıyla kapanmış olma ihtimali yüksektir. Bu kaynakta doğrulanmadığı için yalnız risk notu olarak değerlendirilmeli.",
+        "kanit": "Kaynakta 2026/2 son tarihi yok; yanıt çağrıyı tarihsiz sunuyor.",
+        "oneri": "Tarihsiz çağrılarda 'son tarih bilinmiyor, kapanmış olabilir; PDF'ten ve 444 66 90'dan önce doğrulayın' uyarısı ekle.",
+        "kaynak_disi": true
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Kritik şartlar eksik veya yanlış seçilmiş: 'Sermaye şirketi Yürütücü (Muhatap) Kuruluş olmalı' ve 'her sermaye şirketinde proje konusuyla ilgili en az lisans dereceli proje personeli' şartları yanıtta yok. Darboğaz listesinin ilk maddesi ('Sermaye şirketi, yükseköğretim kurumu, kamu araştırma merkezi... olmak') limited şirket için anlamsız bir genel liste. Yol haritasında ayrıca 'Aynı uluslararası projedeki Türk ortaklar tek ulusal başvuru' kuralı yalnız Kurallar'da.",
+        "kanit": "Kaynak şartları: 'Sermaye şirketi Yürütücü Kuruluş (Muhatap Kuruluş) olmalı'; 'Her sermaye şirketinde ... en az lisans dereceli ... proje personeli bulunmalı'.",
+        "oneri": "Darboğaz bölümünü profil durumuna göre filtrele: sağlanan şartı (sermaye şirketi) ayrı göster, kalan şartlardan profilden doğrulanamayanları (lisanslı personel, üye ülke ortak) teyit listesine koy.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "1509, 'Başvurular sürekli açıktır' ve 'engel yok' etiketiyle sunuluyor; oysa kayıtta ulusal 1509 başvurusundan önce EUREKA aracına uluslararası ortaklı başvuru yapılmış olması şartı var ve Eurostars ile ilişkisi açıklanmıyor. Kullanıcıya doğrudan başvurulabilir izlenimi veriyor.",
+        "kanit": "Yanıt: '1509 ... Başvurular sürekli açıktır, yılın her günü PRODİS...'. Kaynak KAYIT 39 [adim]: '1509 programı ulusal proje başvurusu öncesinde EUREKA altında yer alan araçlara uluslararası ortaklı proje başvurusu yapılmış olmalıdır.'",
+        "oneri": "Başka programa ön koşul bağımlılığı olan kayıtlarda 'önce şunu yapmış olmalısınız' cümlesi 'engel yok' etiketinin yanında zorunlu yazılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Eurostars sorusuna 1501, 1707 ve 1832 kartları eklenmiş. 1707 satırı 'belirlenemedi' gerekçesini kesik bırakıyor ('...imzalayan …') ve içerik olarak sipariş-Ar-Ge programı Almanya ortaklığıyla ilgisiz; 1832 kapalı satırı da alakasız. EUREKA ailesinden 1719 Eureka Network (ADAY, aktif) ise anılmıyor.",
+        "kanit": "Yanıt: '1707 ... belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: ... imzalayan …)'; '1832 ... kapalı'. ADAY KAYIT 46: 1719 Eureka Network Çağrıları aktif_mi=True.",
+        "oneri": "Uluslararası ortaklı soruda alternatifler 'uluslararasi-ortakli-destek-programlari' ailesinden (1509, 1719 vb.) seçilsin; ulusal programlar ve kesik 'belirlenemedi' gerekçeleri çıkarılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Destek satırı tek paragrafta sekiz rakamı üst üste diziyor (4 M Avro çağrı bütçesi, 600 bin, 850 bin, 300 bin, %50, 36 ay, üç oran); ulusal çağrı bütçesi (toplam havuz) ile Türk ortak proje tavanı karışabiliyor. Ayrıca %100 oranı 'kamu/vakıf üniversitesi' diye sadeleştirilmiş; kaynak 'genel bütçeli kamu idareleri, özel bütçeli idareler, vakıf üniversiteleri, eğitim ve araştırma hastaneleri, kamu araştırma merkez ve enstitüleri' diyor.",
+        "kanit": "Yanıt: 'destek oranı KOBİ %75, büyük %60, kamu/vakıf üniversitesi/araştırma kurumları %100'. Kaynak: 'genel bütçe kapsamındaki kamu idareleri ile özel bütçeli idareler ve vakıf üniversiteleri, eğitim ve araştırma hastanesi, kamu araştırma merkez ve enstitüleri için %100'.",
+        "oneri": "Sorunun sorduğu slotlar etiketli satırlarla verilsin (Ulusal çağrı bütçesi: 4.000.000 Avro; Türk ortak başına tavan: 600.000 Avro; ortaklı Türk başvurusu: 850.000 Avro; süre: ≤36 ay). Oran sadeleştirmesinde kaynak terimleri korunsun.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Kural olarak evet: 1709 Eurostars, en az bir Türk ve bir Eurostars üyesi ülkeden ortağın katıldığı projeleri destekler; Almanya'nın üyeliği kayıtta listelenmediği için çağrı duyurusundan teyit edin. Sermaye şirketi olarak limited şirketiniz Yürütücü (Muhatap) Kuruluş olabilir, ancak proje konusuyla ilgili en az lisans dereceli bir personeliniz bulunmalı ve aynı projedeki Türk ortaklar tek ulusal başvuru yapmalıdır. Ulusal çağrı bütçesi 4.000.000 Avro; Türk ortağın proje bütçesi 600.000 Avroyu, Türk kuruluşların ortaklı başvurusunda toplam bütçe 850.000 Avroyu geçemez; proje süresi en fazla 36 ay, KOBİ destek oranı %75. Çağrı durumu: 2026/2 ulusal çağrısı kayıtta mevcut çağrı olarak geçiyor ama son başvuru tarihi yalnız çağrı duyurusu PDF'inde olduğu için açık/kapalı belirlenemedi; PDF'ten ve TÜBİTAK 444 66 90'dan önce doğrulayın. Süreç iki aşamalıdır: PRODİS'te kuruluş bazlı ön kayıt ve ulusal ön proje başvurusu, ardından kabul davet yazısıyla 2. aşama."
+  },
+  {
+    "n": 5,
+    "puan": {"dogruluk": 4, "soruya_odak": 3, "eksiksizlik": 4, "anlasilirlik": 2},
+    "bulgular": [
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Şirket kurmadan başvuru sorusuna Kısa cevabın ilk satırında doğru ve doğrudan yanıt verilmiş (ortaklık olmaması şartı). Tutar eski 150.000 TL ifadesiyle değil güncel kayıtla, ve 'önceki program 1512' etiketi koyarak sunulmuş; kapalı 1512 ve kaldırılmış Hazine programları kapalı diye işaretlenmiş. Tohum Yatırım çağrısının kimlere açık olduğu yazılmış.",
+        "kanit": "Yanıt: 'Şirket kurmadan başvuru: evet — ... bir şirkete ya da şahıs işletmesine ortak olmamalı'; 'Son bilinen tutar (önceki program, bilgi için): ... 1.350.000 TL (2026)'.",
+        "oneri": "Korunmalı.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Sorunun ilk parçası 'ne kadar yatırım alabilirim' Kısa cevapta yok. Tutar ancak kartın içinde, 1512 kaydından türetilmiş 'son bilinen tutar' olarak geliyor. 1812 için güncel tutarın kayıtta olmadığı da Kısa cevapta söylenmiyor. Hisse oranı (en fazla %5) yalnızca kural olarak veriliyor ve tutarla ilişkilendirilmiyor.",
+        "kanit": "Yanıt Kısa cevap maddeleri: tutar yok. Kart: '1.350.000 TL (2026); +600.000 TL GCİP ek yatırım imkânı ... 1812 ... için güncel tutarı kurumdan teyit edin'.",
+        "oneri": "Soruda tutar sorulmuşsa Kısa cevaba tutar satırı zorunlu eklensin; kayıtta doğrudan tutar yoksa 'kayıtta 1812 tutarı yok; selefi 1512'de 1.350.000 TL (+600.000 TL GCİP), karşılığında en fazla %5 hisse' biçiminde yazılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "Çağrı satırı 'başvuruya açık — ön kayıt son günü 17.11.2026 (37 gün kaldı)' diyor ve yanında 'Profilinize göre engel yok' etiketi duruyor. Oysa bu çağrı yalnız 1812 tohum öncesi yatırım almış veya 1512 ile desteklenmiş SERMAYE ŞİRKETLERİ içindir (Aşama 3); şirketi olmayan kullanıcı için geçerli değil. Uyarı cümlesi kartın içinde var ama kullanıcı geri sayımı kendi takvimi sanabilir; Kısa cevap 4. madde dolambaçlı.",
+        "kanit": "ÇAĞRI id 28 notu: '1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı'. Yanıt: 'başvuruya açık — bu çağrı yalnız şunlar için: ... ön kayıt son günü 17.11.2026 (37 gün kaldı)'.",
+        "oneri": "Profilin hedef kitlesi dışında kalan çağrıda geri sayım basılmasın; 'Sizin aşamanız (Aşama 1 hızlandırma) için açık çağrı kaydı yok' cümlesi tek başına Başvuru dönemi satırı olsun. Aşama 2 başvurusunun 30.09.2026'da kapandığı da buraya yazılabilir.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Soruyla ilgisiz bloklar: kaldırılmış 2012/3305 sistemine ait dört Hazine/Ticaret programı tek satırda ve metin 'Türkiye Yüzyılı Kalkınma Hamlesi (Teknoloji…)' diye kesik; HUKS ön skoru ve bileşen dökümü, mevzuat notu (SaaS ihracatı, KOSGEB Ar-Ge) BiGG sorusuna cevap değil. 'HUKS' kısaltması açıklanmamış.",
+        "kanit": "Yanıt: 'Stratejik Yatırımların Teşviki (...); ... — kapalı: ... Türkiye Yüzyılı Kalkınma Hamlesi (Teknoloji…)'; 'HUKS ÖN SKORU ... 40/75'.",
+        "oneri": "Yeni sistemle yer değiştirmiş eski rejim kayıtları (ve bunların kesik gerekçeleri) yalnız kullanıcı onları sorduğunda gösterilsin. Girişim ön skoru soru bu konudaysa veya kısa tek satır olarak sunulsun; kısaltma açılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Kesik ve tekrarlı metin: Kısa cevap 5. madde 'dönüştürebilmeleri için,' diye yarım cümlede bitiyor; Bölüm 5'te aynı ortaklık şartı üç ayrı soru olarak tekrar ediliyor ve 3. soru '...gerçek…' diye kesik; Kontrol listesinde iki madde neredeyse aynı. Belge satırında iç not sızıyor: 'hangi durumda gerektiği çağrı metninden teyit edilecek; gerekiyorsa hazırlandı'. Bölüm 4 yalnız Aşama 2 belgelerini sayıyor, Aşama 1 kullanıcısı için hangi belgelerin gerektiği belli değil. 'Mükemmeliyet Mührü' açıklanmamış.",
+        "kanit": "Yanıt Bölüm 5: '1. Başka bir şirkette ortaklığınız ... 2. ... şartını sağlıyor musunuz? 3. ... gerçek…” şartını sağlıyor musunuz?'; Bölüm 4: 'ARDEB Muvafakatname Formu (hangi durumda gerektiği çağrı metninden teyit edilecek; gerekiyorsa hazırlandı)'.",
+        "oneri": "Kontrol listesi maddeleri mükerrer olmasın (birleştir); Netleştirme soruları kesilmesin, tam beyan metni veya kısa soru biçimi kullanılsın. Belge ve adım listeleri kullanıcının aşamasına (Aşama 1) göre süzülsün; kayıt iç notları kullanıcı metninden temizlensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "Çelişki: 'Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı' deniyor, oysa profil hedefi Ar-Ge ve aynı satırda sektör (arge) uygun bulunuyor. Ayrıca 'şirketi önceden kurmayın' uyarısı net yazılmamış; 1512 kaydı sıralamayı (önce başvuru, sonra şirket) açıkça belirtirken yanıt bunu aktarmıyor.",
+        "kanit": "Yanıt: 'Sektörünüz (arge) ... uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı'. Persona hedefler: ['arge']. Kaynak KAYIT 174: 'sıralama önce başvuru, sonra şirket kuruluşudur'.",
+        "oneri": "Hedef eşleşme metni profil hedefleriyle çelişmesin (hedef listesinde karşılığı varsa bu cümle üretilmesin). Şirketsiz girişimci için eylem cümlesi eklensin: kabul tarihinden önce şirket/şahıs işletmesi ortağı olmayın.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Şirket kurmadan başvurabilirsiniz; 1812 BiGG Yatırım Aşama 1 (hızlandırma programı) için üniversitede öğrenci veya mezun olmanız ve hızlandırma programına kabul tarihinde herhangi bir sermaye şirketinin ya da şahıs işletmesinin ortağı olmamanız gerekir, bu yüzden şirketi önceden kurmayın. Mükemmeliyet Mührü alan iş planları için şirket sonradan kurulur ve Aşama 2'de destek tutarı karşılığında en fazla %5 hisse BiGG fonuna devredilir. Tutar: kayıtta 1812 için güncel rakam yok; selefi 1512 için BiGG Fonu hisse karşılığı yatırım 1.350.000 TL (2026) ve +600.000 TL GCİP ek imkânı kayıtlı, güncel tutarı TÜBİTAK 444 66 90'dan teyit edin. Şu an açık görünen 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı (ön kayıt 17.11.2026) yalnız tohum öncesi yatırım almış veya 1512 ile desteklenmiş şirketler içindir, sizin için değildir; Aşama 2 başvuruları 30.09.2026'da kapandı. Aşama 1 hızlandırma çağrılarını uygulayıcı kuruluşların duyurularından izleyin."
+  },
+  {
+    "n": 6,
+    "puan": {"dogruluk": 4, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Tuzak yakalanmış. 'Yol ayrımı' paragrafı KOSGEB'in kurulmuş işletme istemesi ile BiGG'in kabul tarihinde ortaklık olmamasını istemesini karşı karşıya koyuyor ve 'şirket kurmadan önce karar verin' uyarısı yapıyor. 'Uygun değil' etiketi profilin şirketsizliğiyle tutarlı, kısa cevap soruyu doğrudan yanıtlıyor.",
+        "kanit": "Yanıt: 'Girişimci Destek Programı (KOSGEB) kurulmuş bir işletme ister; 1812 ... ortaklığı olmamasını şart koşar ... Şirket kurmadan önce hangi programla ilerleyeceğinize karar verin.'",
+        "oneri": "Korunmalı; bu çapraz program uyarısı şirketsiz girişimci profillerinde her KOSGEB/TÜBİTAK sorusunda üretilsin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "'Uygun değil' sonrası eyleme dönük yol yok. Kayıtta şirket kurulunca neyin geçerli olacağı var: İş Kurma 0-1 yaş, İş Geliştirme 0-3 yaş, NACE 62 kapsamda, girişimcinin pay oranı en az %50, sermaye şirketi 20.000 TL / şahıs 10.000 TL. Kart bunun yerine genel şablon veriyor: 'Profilinizdeki ilgili bilgi değişirse yeniden değerlendirin'. Aynı şekilde çağrı durumu da yok (İş Geliştirme 2026/2 20 Nisan–8 Mayıs'ta kapandı, yılda iki dönem).",
+        "kanit": "Kaynak şartları: 'İş Kurma Desteği: ... 0-1 yaş işletme'; 'İş Geliştirme ... 62 Bilgisayar programlama ... 0-3 yaş'; 'ortaklık payı en az %50'; ÇAĞRI id 8: kapandi. Yanıt Neden/Ne yapabilirsiniz: 'KOSGEB programları kayıtlı bir işletme gerektirir. ... Profilinizdeki ilgili bilgi değişirse yeniden değerlendirin.'",
+        "oneri": "Elenme nedeni profil durumu ise (şirket yok) etiket 'Şu an uygun değil — işletme kurulunca değerlendirilir' olsun ve kayıttaki yapılandırılmış koşullar (yaş penceresi, pay oranı, NACE) sonraki adım olarak sıralansın. Kayıtta ÇAĞRI varsa durumu (kapalı/açık) yazılsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "orta",
+        "aciklama": "Faiz/kâr payı desteği koşulsuz sunuluyor: 'kredi faiz/kâr payı desteği: 1.000.000 TL kredi, faizin %50'si geri ödemesiz'. Kaynak bunun yalnız İş Geliştirme jüri puanı en az 50 olan kadın veya genç girişimciler için olduğunu ve İş Geliştirme Desteği ile aynı anda alınamayacağını söylüyor. Aynı biçimde KGF kartının 'Neden' satırı genel ('KGF programları kayıtlı bir işletme gerektirir'); gerçek koşul KOSGEB'in İş Geliştirme başvurusunu uygun bulmasıdır.",
+        "kanit": "Kaynak: 'Faiz/Kâr Payı Desteği için: İş Geliştirme jüri puanı en az 50 ve girişimci kadın veya genç olmalı'; KAYIT 170 şart: 'KOSGEB tarafından uygun bulunmuş olmak'.",
+        "oneri": "Tutar satırında koşullu kalemler (jüri puanı, kadın/genç, aynı anda yararlanamama) parantezle belirtilsin. Zincirleme (önkoşullu) ürünlerde Neden satırı 'önce KOSGEB onayı gerekir' diye gerçek bağımlılığı yazsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Bölüm 3-5 boş şablon: 'Size açık bir program kartı yok', 'Profiliniz bu yanıt için yeterli'. Oysa kullanıcının gerçek bir kararı var (BiGG mi KOSGEB mi) ve Bölüm 5'te 'şirket kurmayı planlıyor musunuz, üniversite öğrencisi/mezunu musunuz?' gibi sorular sorulabilirdi. Ayrıca kartta 'Hesaplama: ...' aynı satıra yapışık ve rakamlar tekrar ediyor.",
+        "kanit": "Yanıt Bölüm 3: 'Size açık bir program kartı olmadığı için başvuru darboğazı çıkarılmadı'; Destek satırı: '...faizin %50'si geri ödemesiz Hesaplama: GERİ ÖDEMESİZ kuruluş desteği: gerçek kişi 10.000 TL...'.",
+        "oneri": "Alternatif kartı olduğunda Bölüm 3-5 o alternatiften beslensin. 'Hesaplama' alanı ayrı satıra alınsın ve Destek satırıyla tekrarlıysa gizlensin.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "Aynı program için tutarlılık sorunu: Senaryo 5'te 1812 kartı 'son bilinen tutar (1512)' gösterirken burada aynı program 'tutar kayıtta yok' diyor; açık çağrı bilgisi de bu yanıtta uzun ve dolambaçlı. Kullanıcı iki yanıtı karşılaştırırsa tutarsız görür.",
+        "kanit": "Bu yanıt: '1812 ... tutar kayıtta yok; ... tohum yatırım çağrısı yalnız şunlar için açık'. Senaryo 5 yanıtı: 'Son bilinen tutar (önceki program, bilgi için): 1.350.000 TL'.",
+        "oneri": "Alternatif satırlarının tutar alanı, ana kart ile aynı mantıkla (selef kayıttan son bilinen tutar etiketiyle) üretilsin.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Hayır, şirket kurmadan KOSGEB Girişimci Destek Programı'ndan yararlanamazsınız: program KOSGEB veri tabanına kayıtlı, aktif bir işletme ister (İş Kurma Desteği için 0-1 yaş, İş Geliştirme için 0-3 yaş işletme; girişimcinin ortaklık payı en az %50; NACE 62 bilgisayar programlama kapsamdadır). Yani önce işletme kurulmalı; kurulunca gerçek kişi işletmesi 10.000 TL, sermaye şirketi 20.000 TL geri ödemesiz İş Kurma Desteği alır (genç/kadın vb. +10.000 TL), İş Geliştirme Desteği ise 1.500.000 TL'ye kadar ama %80 geri ödemelidir; faiz/kâr payı desteği yalnız jüri puanı en az 50 olan kadın veya genç girişimciler içindir. İş Geliştirme 2026/2 dönemi 8 Mayıs 2026'da kapandı, güncel takvim KOSGEB duyurularından izlenmeli. Önemli çelişki: TÜBİTAK 1812 BiGG hızlandırma programına kabul tarihinde herhangi bir işletmede ortak olmamak şart; hangi yoldan gideceğinize şirketi kurmadan önce karar verin (KOSGEB 444 1 567, TÜBİTAK 444 66 90)."
+  }
+]

@@ -892,12 +892,13 @@ def test_turquality_dislamasi_madde_listesiyle(veri):
                aktif_mi=True, kaynak_url="https://t/93",
                kontrol_listesi=[{"tur": "sart", "metin": "TURQUALITY® kapsamında desteklenmiyor olmak; bu programdaki "
                                  "şirketler destek süreleri boyunca bu destekten yararlanamaz",
-                                 "alinti": "destek süreleri boyunca 3 üncü, 4 üncü ve 12 nci maddelerde yer alan",
+                                 "alinti": "destek süreleri boyunca 3 üncü, 4 üncü maddeler ve 10 uncu maddenin "
+                                           "üçüncü fıkrası ile 12 nci maddelerde yer alan",
                                  "kaynak_url": None, "dogrulandi": True}]),
         Tesvik(id=94, kurum="Ticaret Bakanlığı", baslik="Marka Tescil (5973 sayılı Karar m.4)", ozet="m", detay="d",
                aktif_mi=True, kaynak_url="https://t/94"))
     metin = yerel_danisman.turquality_dislamasi(veri.query(Tesvik).all())
-    assert "m.3, m.4, m.12 desteklerinden yararlanamaz" in metin
+    assert "m.3, m.4, m.10/3, m.12 desteklerinden yararlanamaz" in metin
     assert "Pazara Giriş (5973 sayılı Karar m.3); Marka Tescil (5973 sayılı Karar m.4)" in metin
 
 
@@ -964,3 +965,121 @@ def test_kapali_eski_surum_guncel_surume_yonlendirir():
     assert yerel_danisman.guncel_surum(eski, [eski, yeni]) == "TOBB NEFES KREDİSİ 2026 DESTEK PAKETİ"
     d = yerel_danisman.Degerlendirme(eski, "kapali", guncel_surum="TOBB NEFES KREDİSİ 2026 DESTEK PAKETİ")
     assert "güncel sürümü etkin" in yerel_danisman._uygun_hale_gelmek(d)[0]
+
+
+
+# ------------------------------------------------------------------ tur 10 orta bulguları
+def test_azami_hibe_yalniz_tek_anlamli_butce_ve_oranda():
+    def _t(tutar):
+        return Tesvik(baslik="X", tesvil_tutari=tutar)
+    assert yerel_danisman.azami_hibe(_t("Proje bütçesi en fazla 3.500.000 TL; ilk 5 projede %75 hibe")).startswith(
+        "3.500.000 TL bütçe × %75 = 2.625.000 TL")
+    # bütçe değil destek tavanı, birden çok oran, kaldırılmış ilave oran: hesap yok
+    assert yerel_danisman.azami_hibe(_t("Hibe: ilk 5 proje %75 (en fazla 20 M TL/proje), 6. ve sonrası %60")) == ""
+    assert yerel_danisman.azami_hibe(_t("proje bütçesi üst sınırı 4.000.000 TL; temel %25, KOBİ +%15")) == ""
+    assert yerel_danisman.azami_hibe(_t("proje bütçesi üst limiti 15.000.000 TL; ilave %20 hibe kaldırıldı")) == ""
+    # dayanak denetimi açık ve doğru çarpımı kabul eder
+    satir = "Azami hibe (hesap): " + yerel_danisman.azami_hibe(
+        _t("Proje bütçesi en fazla 3.500.000 TL; ilk 5 projede %75 hibe"))
+    assert dayanak.denetle(satir, "Proje bütçesi en fazla 3.500.000 TL; ilk 5 projede %75 hibe", bugun=BUGUN) == []
+
+
+def test_ciro_esikli_sart_profille_karsilastirilir(veri):
+    _ek(veri, Tesvik(id=98, kurum="KGF", baslik="Küçük Kefalet T", ozet="k", detay="d", aktif_mi=True,
+                     kaynak_url="https://kgf/98", uygunluk_kriterleri={"sektorler": ["genel"]},
+                     kontrol_listesi=[{"tur": "sart", "metin": "Kesinleşmiş son yıl cirosu 10 milyon TL'yi aşmamak",
+                                       "alinti": None, "kaynak_url": None, "dogrulandi": None}]))
+    t = veri.get(Tesvik, 98)
+    buyuk = yerel_danisman.degerlendir([t], _ltd(yillik_ciro=25e6), {}, {}, set(), set(), BUGUN)[0]
+    kucuk = yerel_danisman.degerlendir([t], _ltd(yillik_ciro=4e6), {}, {}, set(), set(), BUGUN)[0]
+    assert buyuk.karar == "uygun_degil" and "25.000.000 TL" in buyuk.gerekce[0]
+    assert kucuk.karar == "sartli" and any("ciro şartı (en fazla 10.000.000 TL" in x for x in kucuk.saglanan)
+
+
+def test_dar_soruda_kisa_sablon(veri):
+    """Tek bir tutar/tarih sorusunda genel ilkeler ve girişim bloğu basılmaz, diğer liste en çok bir satır."""
+    y = _yanit(veri, "Girişimcilik Destek Programı son başvuru ne zaman?", [1, 2, 4], _ltd())
+    assert "[Genel ilke – teyit edin]" not in y and "### 5." in y
+
+
+def test_uygun_degil_odakta_alternatif_blogu(veri):
+    _ek(veri, Tesvik(id=99, kurum="KGF", baslik="Açık Kefalet T", ozet="kredi", detay="d", aktif_mi=True,
+                     kaynak_url="https://kgf/99", tesvil_tutari="Kefalet azami 5 Milyon TL",
+                     uygunluk_kriterleri={"sektorler": ["genel"], "tutar_niteligi": "kredi_kefalet"},
+                     kontrol_listesi=[{"tur": "sart", "metin": "KOBİ olmak", "alinti": None, "kaynak_url": None,
+                                       "dogrulandi": None}]))
+    y = _yanit(veri, "İlk Adım Kredisi Projesi'ne başvurabilir miyim?", [2, 99], _ltd(kurucu_yasi=52))
+    assert "**Size açık görünen alternatifler**" in y and "Açık Kefalet T (KGF): Kefalet azami 5 Milyon TL" in y
+
+
+
+def test_isletmesiz_uygun_degilde_gecici_durum_ve_sonraki_adim():
+    t = Tesvik(baslik="Girişimci Destek", kurum="KOSGEB", uygunluk_kriterleri={},
+               kontrol_listesi=[{"tur": "sart", "metin": "İşletme 0-1 yaşında olmalı", "alinti": None,
+                                 "kaynak_url": None, "dogrulandi": None}])
+    d = yerel_danisman.Degerlendirme(t, "uygun_degil", gerekce=["KOSGEB programları kayıtlı bir işletme gerektirir"])
+    oneri = yerel_danisman._uygun_hale_gelmek(d)[0]
+    assert oneri.startswith("Bu durum geçici") and "İşletme 0-1 yaşında olmalı" in oneri
+
+
+
+def test_dekar_araligi_ve_dayanak():
+    t = Tesvik(baslik="Organik", tesvil_tutari="Dekar başına 73,40–550,50 TL organik tarım desteği (2026)")
+    metin = yerel_danisman.dekar_araligi(t, FinancialProfile(sektor="tarim", arazi_buyuklugu_dekar=60))
+    assert "73,40 TL/da × 60 da = 4.404,00 TL" in metin and "550,50 TL/da × 60 da = 33.030,00 TL" in metin
+    assert dayanak.denetle(metin, t.tesvil_tutari + "; arazi (dekar): 60", bugun=BUGUN) == []
+    assert yerel_danisman.dekar_araligi(t, FinancialProfile(sektor="tarim")) == ""
+
+
+def test_profilsiz_kurulus_sorusunda_kurulu_isletme_isteyen_program_geride():
+    t = Tesvik(baslik="YZ Kredisi", kontrol_listesi=[{"tur": "sart", "metin": "Geçerli Teknogirişim Rozeti sahibi "
+                                                       "olmak", "alinti": None, "kaynak_url": None, "dogrulandi": None}])
+    assert yerel_danisman._kurulu_isletme_ister(t)
+    assert not yerel_danisman._kurulu_isletme_ister(Tesvik(baslik="BiGG", kontrol_listesi=[]))
+
+
+
+def test_guncel_surum_sonek_farkli_olsa_da_bulunur():
+    eski = Tesvik(id=1, baslik="TOBB NEFES KREDİSİ 2020 DESTEK PAKETİ", aktif_mi=False, uygunluk_kriterleri={})
+    yeni = Tesvik(id=2, baslik="TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI", aktif_mi=True, uygunluk_kriterleri={})
+    assert yerel_danisman.guncel_surum(eski, [eski, yeni]) == "TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI"
+
+
+# ------------------------------------------------------------------ tur 11 kritik bulguları
+def test_kurulus_sorusunda_ad_eslesse_de_kurulu_isletme_isteyen_one_cikmaz(veri):
+    _ek(veri, Tesvik(id=97, kurum="KOSGEB", baslik="Yapay Zekâ Kredi Programı", ozet="kredi", detay="d", aktif_mi=True,
+                     kaynak_url="https://k/97", uygunluk_kriterleri={"sektorler": ["genel"]},
+                     kontrol_listesi=[{"tur": "sart", "metin": "Geçerli Teknogirişim Rozeti sahibi olmak",
+                                       "alinti": None, "kaynak_url": None, "dogrulandi": None}]),
+        Tesvik(id=96, kurum="KOSGEB", baslik="Girişimci Destek Programı", ozet="girişim", detay="yapay zekâ girişimi",
+               aktif_mi=True, kaynak_url="https://k/96", uygunluk_kriterleri={"sektorler": ["genel"]},
+               kontrol_listesi=[]),
+        # "yapay zekâ" birçok kayıt metninde geçer: soruda program adı sayılmaz (gerçek veride olduğu gibi)
+        Tesvik(id=93, kurum="TUBITAK", baslik="Ar-Ge Çağrısı", ozet="ar-ge", detay="yapay zekâ projeleri",
+               aktif_mi=True, kaynak_url="https://k/93", uygunluk_kriterleri={"sektorler": ["genel"]}))
+    y = _yanit(veri, "Bir yapay zekâ girişimi kurmayı düşünüyorum, devlet desteği var mı?", [97, 96])
+    assert "Öne çıkan: **Girişimci Destek Programı**" in y
+
+
+def test_birlikte_sorusunda_tum_9903_hukumleri_ve_istisna_notu(veri):
+    def _k(i, baslik, ek=""):
+        metin = f"Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: {ek})."
+        return Tesvik(id=i, kurum="Sanayi ve Teknoloji Bakanlığı", baslik=baslik, ozet="yatırım", detay="d",
+                      aktif_mi=True, kaynak_url=f"https://s/{i}", uygunluk_kriterleri={"sektorler": ["genel"]},
+                      kontrol_listesi=[{"tur": "kural", "metin": metin, "alinti": "desteklerinden yararlanamaz.",
+                                        "kaynak_url": None, "dogrulandi": None}])
+    _ek(veri, _k(94, "Teknoloji Hamlesi T (9903 sayılı Karar)",
+                 "sübvansiyonlu kredi; Teknoloji Hamlesi'nde KOSGEB ve TÜBİTAK doğrudan destekleri serbest"),
+        _k(95, "Hedef Yatırımlar T (9903 sayılı Karar)", "sübvansiyonlu kredi"))
+    y = _yanit(veri, "Yatırımımızda hangi destekleri birlikte kullanabiliriz?", [94, 95, 1], _ltd())
+    assert "Hedef Yatırımlar T (9903 sayılı Karar): Aynı yatırım" in y
+    assert "istisna yalnız Teknoloji Hamlesi Programı'nın hükmünde var" in y
+
+
+
+def test_sorulan_tutarin_kayittaki_akibeti():
+    t = Tesvik(baslik="Pazara Giriş", tesvil_tutari="Program yürürlükte değil; m.4 reklam giderini destekler; "
+                                                   "15.102 TL 2022 yılı değeridir")
+    assert yerel_danisman.sorulan_tutarin_akibeti("hâlâ yıllık 15.102 TL mi?", t) == "15.102 TL 2022 yılı değeridir"
+    assert yerel_danisman.sorulan_tutarin_akibeti("hâlâ yıllık 20.000 TL mi?", t) == ""
+    assert yerel_danisman.sorulan_tutarin_akibeti("destek ne kadar?", t) == ""

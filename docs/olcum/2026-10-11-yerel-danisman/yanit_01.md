@@ -22,19 +22,16 @@
 - **Ne yapabilirsiniz:** Sorduğunuz kalem bu programın kapsamında değil; sonraki dönem açılsa da bu kalem için başvurulamaz. Kalem için kayıtlarımızdaki kredi ve kefalet seçenekleri aşağıda.
 - **Kaynak:** https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm
 
-**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- TARIM KEFALET DESTEK PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Hayvancılık Destekleri (Tarım Bakanlığı) — profilinize göre engel yok — şartları teyit edin; 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim) (Tarım Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+**Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
+- TARIM KEFALET DESTEK PROGRAMI (KGF): İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi 20 Milyon TL (azami 60 ay), 12 ay ödemesiz; %80 kefalet; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Hayvancılık Destekleri (Tarım Bakanlığı): Birim tutarlar 8760 sayılı CB Kararı (2024-2026 Hayvancılık Desteklemeleri, RG 26/7/2024) ekindedir; sistemde teyit edilemedi (taranmış PDF); 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim) (Tarım Bakanlığı): Dekar başına 734,00–954,20 TL (2026): temel destek + planlı üretim desteği; mercimek, nohut, mısır (dane) katsayı 1,0 → 734,00 TL/da; Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
-**Size kapalı ya da başvuruya kapalı programlar:**
-- IPARD III — Tarımsal İşletmelerin Fiziki Varlıklarına Yönelik Yatırımlar (Tedbir 101 / M1) (TKDK) — kapalı: program başvuruya açık değil (Tedbir 101'in 2026 çağrısı (12. Başvuru Çağrı İlanı) 07.09.2026 18:00'da kapanmıştır; yeni bir çağrı duyurusu bulunmamaktadır)
-- IPARD III — Tarım ve Balıkçılık Ürünlerinin İşlenmesi ve Pazarlanması ile İlgili Fiziki Varlıklara Yönelik Yatırımlar (Tedbir 103 / M3) (TKDK) — kapalı: program başvuruya açık değil (Tedbir 103'ün 2026 çağrısı (11. Başvuru Çağrı İlanı) 20.07.2026 18:00'da kapanmıştır; başka bir çağrı duyurusu bulunmamaktadır)
+**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- 2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Programı (Öncelik 2: Ar-Ge Danışmanlığı) (Mevlana Kalkınma Ajansı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Öncelik 2 için 1 Ocak 2021 sonrası kurulmuş teknoloji tabanlı KOBİ'ler başvurabilir.); 2026 SKG TD - 5. Dönem: başvuruya açık — yeni başvuru için son gün 31.10.2026 (20 gün kaldı)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (TARIM KEFALET DESTEK PROGRAMI): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
-- [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
-- [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
 Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **TARIM KEFALET DESTEK PROGRAMI** için:
@@ -42,7 +39,7 @@ Sorduğunuz program şu an size açık olmadığından adımlar, açık alternat
 2. TARIM KEFALET DESTEK PROGRAMI şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (TARIM KEFALET DESTEK PROGRAMI): İlgili bankanın standart kredi başvuru evrakı; İşletme/çiftçi kayıt belgesi; Banka tarafından istenecek teminat/gelir belgeleri.
 4. Başvuru kanalı: TARIM KEFALET DESTEK PROGRAMI: Programa dahil 10 bankadan biri: Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, Halkbank, TEB, YKB — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tarim-kefalet-destek-programi.
-5. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim) · Konya Tarım ve Orman İl Müdürlüğü: 0332 322 34 60; Konevi Mahallesi Larende Caddesi No:14 Meram/KONYA (doğrulama: https://konya.tarimorman.gov.tr/Iletisim)
+5. İletişim (doğrulanmış): Tarım Bakanlığı: çağrı merkezi 180 (Alo 180); Üniversiteler Mah. Dumlupınar Bulvarı, No: 161, 06800, Çankaya / Ankara (doğrulama: https://timer.tarimorman.gov.tr/Home/Hakkinda) · Konya Tarım ve Orman İl Müdürlüğü: 0332 322 34 60; Konevi Mahallesi Larende Caddesi No:14 Meram/KONYA (doğrulama: https://konya.tarimorman.gov.tr/Iletisim)
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme

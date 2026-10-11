@@ -379,6 +379,12 @@ Son güncelleme: 2026-10-11 (kapsam matrisi, tur32: 245 → 284 kayıt). Oturuma
   "ayrıca bakın" önerisinden çıktı (adıyla sorulunca "kaydımız yok" sürer). Ölçüm: dayanak 0, isabet 41/41; test 1272.
   Önizlemede denendi (turizm ücret desteği, İşbaşı Eğitim, İSTKA, Eximbank). DİKKAT: `data/` git'te yok; üretim
   veritabanına tur32 betiği sunucuda `--dogrula` + `--uygula` ile ayrıca uygulanmalı.
+- **GPU ölçüm paketi** (2026-10-12): kiralık GPU sunucusu için `scripts/gpu_olcum_paketi.py` (`--self-test` 5/5;
+  kişisel tabloları boşaltılmış `data/tesvikler_kamu.db`, git dışı), `docs/olcum/2026-10-11-ozel-model/gpu_kurulum.sh`
+  (GPU kontrolü → Ollama 127.0.0.1 + 32k bağlam → modeller → temiz klon + self-test → model başına 30 senaryo →
+  `/root/gpu_olcum_sonuc.tgz`) ve `GPU_TALIMATI.md`. Burada denendi: temiz klonda 284 teşvik / 0 kuruluş, self-test'ler,
+  ölçüm döngüsü yerel Ollama ile (kesik istem koruması devrede). Denenmedi: Linux kurulum adımları (GPU/Linux yok).
+  SIRADAKİ: kullanıcı sunucuyu kiralar → betik → sonuç paketi buraya → hakem turu → `ozel_sunucu` kararı.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

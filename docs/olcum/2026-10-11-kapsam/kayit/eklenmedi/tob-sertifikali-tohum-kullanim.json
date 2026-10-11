@@ -1,0 +1,98 @@
+{
+  "slug": "tob-sertifikali-tohum-kullanim",
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Sertifikalı Tohum Kullanım Desteği (2026 üretim yılı)",
+  "ozet": "Çiftçi Kayıt Sistemine kayıtlı üreticilere, sertifikalı tohum kullandıkları alan için dekar başına destek ödenir. 2026 birim fiyatları ürün grubuna göre 62,0 TL/da ile 682,0 TL/da arasındadır. 2026 yılı belge teslim dönemi 31.07.2026 tarihinde sona ermiştir.",
+  "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri",
+  "aktif_mi": false,
+  "durum": {
+    "metin": "2026 yılı için belge teslim bitiş tarihi geçmiştir. Sayfada sonraki yıl için yeni bir takvim yayımlanmamıştır.",
+    "alinti": "Belge Teslim Bitiş Tarihi: 31.07.2026",
+    "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+  },
+  "basvuru_bicimi": "uretim_odeme",
+  "bolge_kisitli": [],
+  "sektorler": ["tarim"],
+  "tesvil_tutari": "2026 birim fiyatları (TL/da): Aspir, Kolza (Kanola), Susam 62,0; Arpa, Buğday, Çavdar, Çeltik, Tritikale, Yulaf, Fasulye (Kuru) 173,6; Nohut, Mercimek, Fiğ, Yem Bezelyesi 124,0; Patates 682,0; Yonca, Korunga, Soya, Yer fıstığı 186,0. Kamu araştırma enstitüleri ve üniversitelerce yurt içinde ıslah edilip tescil edilen çeşitlerde Ayçiçeği (Yağlık) 186,0; yurt içinde ıslah edilerek tescil edilen çeşitlerde Patates 310,0, Mısır ve Soya 186,0.",
+  "basvuru_yeri": "Çiftçi Kayıt Sistemine (ÇKS) kayıtlı olunan İl/İlçe Tarım ve Orman Müdürlükleri.",
+  "basvuru_suresi": "2026 yılı için belge teslim: 01.09.2025 - 31.07.2026 (sona ermiştir).",
+  "kontrol_listesi": [
+    {
+      "tur": "adim",
+      "metin": "Destek başvurusu, ÇKS'ye kayıtlı olunan İl/İlçe Müdürlüklerine belirtilen süre içinde yapılır.",
+      "alinti": "kayıtlı olduğu İl/İlçe Müdürlüklerine belirtilen süre içerisinde yapılması gerekmektedir.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "tur": "belge",
+      "metin": "Tohumluk satış faturası, güzlük ekilişler için 1/1/2025 veya sonrasında, ilkbahar/yazlık ekilişler için 1/7/2025 veya sonrasında düzenlenmiş olmalıdır.",
+      "alinti": "Tohumluk satış faturası; 2025 yılı güzlük ekilişler için 1/1/2025 tarihi veya sonrasında, 2026 yılı ilkbahar/yazlık ekilişler için ise 1/7/2025 tarihi veya sonrasında düzenlenmiş olması gereklidir.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "tur": "kural",
+      "metin": "Tohumluk fatura tarihi ekim dönemi sonrasına ait olamaz.",
+      "alinti": "Tohumluk fatura tarihi ekim dönemi sonrasına ait olamaz.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "tur": "belge",
+      "metin": "Analiz raporlarının geçerlilik süresi düzenleme tarihinden itibaren bir yıldır; sertifika bir yılını doldurmuşsa geçerli analiz raporu istenir.",
+      "alinti": "Analiz raporlarının da geçerlilik süresi düzenleme tarihinden itibaren bir yıldır.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Aspir, Kolza (Kanola), Susam: 62,0 TL/da",
+      "alinti": "Aspir, Kolza (Kanola), Susam: 62,0",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "Arpa, Buğday, Çavdar, Çeltik, Tritikale, Yulaf, Fasulye (Kuru): 173,6 TL/da",
+      "alinti": "Arpa, Buğday, Çavdar, Çeltik, Tritikale, Yulaf, Fasulye (Kuru): 173,6",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "Nohut, Mercimek, Fiğ, Yem Bezelyesi: 124,0 TL/da",
+      "alinti": "Nohut, Mercimek, Fiğ, Yem Bezelyesi: 124,0",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "Patates: 682,0 TL/da",
+      "alinti": "Patates: 682,0",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "Yonca, Korunga, Soya, Yer fıstığı: 186,0 TL/da",
+      "alinti": "Yonca, Korunga, Soya, Yer fıstığı: 186,0",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "Kamu araştırma enstitüleri ve üniversitelerce ıslah edilen çeşitlerde Ayçiçeği (Yağlık): 186,0 TL/da",
+      "alinti": "Ayçiçeği (Yağlık): 186,0",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "Yurt içinde ıslah edilen çeşitlerde Patates: 310,0 TL/da",
+      "alinti": "Patates: 310,0",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "Yurt içinde ıslah edilen çeşitlerde Mısır, Soya: 186,0 TL/da",
+      "alinti": "Mısır, Soya: 186,0",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "2026 belge teslim başlangıç tarihi 01.09.2025",
+      "alinti": "Belge Teslim Başlangıç Tarihi: 01.09.2025",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "2026 belge teslim bitiş tarihi 31.07.2026",
+      "alinti": "Belge Teslim Bitiş Tarihi: 31.07.2026",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    }
+  ]
+}

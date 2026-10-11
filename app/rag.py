@@ -895,13 +895,14 @@ ELENEN_9903_BASLIGI = ("SİSTEMİN ELEDİĞİ / DÜŞÜK OLASILIK GÖRDÜĞÜ 99
 
 def _girisim_blogu(profil_kaydi) -> str:
     """girisim_baglam_metni'nin kullanıcıya dönük biçimi (aynı hesap, aynı kayıtlar)."""
-    from app.girisim import MEVZUAT_NOTU, VERITABANINDA_OLMAYAN_PROGRAMLAR, huks
+    from app.girisim import MEVZUAT_NOTU, ONERILMEYEN_KAYITSIZ, VERITABANINDA_OLMAYAN_PROGRAMLAR, huks
     satir = ["**Girişim ön değerlendirmesi**"]
     if profil_kaydi is not None:
         satir += ["Profilinizden hesaplanan HUKS ön skoru (TÜBİTAK BiGG değerlendirmesinin sistemce "
                   "hesaplanabilen kısmı; resmî puan değildir):", huks(profil_kaydi).metin()]
     satir.append("Sistemde kaydı olmayan, ayrıca bakabileceğiniz programlar (oran ve şartları için resmî kaynağa "
-                 "bakın): " + "; ".join(VERITABANINDA_OLMAYAN_PROGRAMLAR) + ".")
+                 "bakın): " + "; ".join(x for x in VERITABANINDA_OLMAYAN_PROGRAMLAR if x not in ONERILMEYEN_KAYITSIZ)
+                 + ".")
     satir.append(f"Mevzuat notu: {MEVZUAT_NOTU}")
     return "\n".join(satir)
 

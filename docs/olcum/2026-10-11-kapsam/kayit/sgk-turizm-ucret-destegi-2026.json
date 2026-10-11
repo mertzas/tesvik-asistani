@@ -1,0 +1,94 @@
+{
+ "slug": "sgk-turizm-ucret-destegi-2026",
+ "kurum": "SGK / İŞKUR",
+ "baslik": "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
+ "ozet": "2026 yılı Mayıs-Aralık dönemlerinde Kültür ve Turizm Bakanlığı turizm işletmesi belgesine sahip özel sektöre ait konaklama tesisi işyerlerinden bildirilen sigortalıların toplam prim ödeme gün sayısı ile 116,67 TL çarpılarak bulunan tutar, işyerinin Kuruma ödeyeceği sigorta primlerinden mahsup edilir ve İşsizlik Sigortası Fonundan karşılanır. Destek tutarı günlük 116,67 TL, aylık 3.500,10 TL'dir.",
+ "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#turizm-ucret-destegi-2026",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "Destek 2026 yılı Mayıs-Aralık dönemini kapsar ve bu dönem sürmektedir. Sonraki yıl için sayfada düzenleme yoktur.",
+  "alinti": "2026 yılı Mayıs ila Aralık ayları/dönemlerinde Kültür ve Turizm Bakanlığı turizm işletmesi belgesine sahip özel sektöre ait konaklama tesisi işyerlerinden bildirilen sigortalılara",
+  "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+ },
+ "basvuru_bicimi": "bildirim_prim",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "hizmet"
+ ],
+ "tesvil_tutari": "Günlük 116,67 TL, aylık 3.500,10 TL (toplam prim ödeme gün sayısı x 116,67 TL, işyerinin Kuruma ödeyeceği primlerden mahsup edilir; tutar İşsizlik Sigortası Fonundan karşılanır).",
+ "basvuru_yeri": "Kaynak sayfada ayrı başvuru yeri belirtilmemiştir; destek, SGK'ya verilen muhtasar ve prim hizmet beyannamesi üzerinden prim ödemesinden mahsup edilir.",
+ "basvuru_suresi": "2026 yılı Mayıs ila Aralık ayları/dönemleri.",
+ "kontrol_listesi": [
+  {
+   "tur": "sart",
+   "metin": "İşyeri özel sektöre ait bir konaklama tesisi olmalı ve faaliyette olmalıdır.",
+   "alinti": "İşyerinin özel sektöre ait konaklama tesisi olması ve faaliyette olması,",
+   "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+  },
+  {
+   "tur": "belge",
+   "metin": "İşyeri Kültür ve Turizm Bakanlığınca düzenlenen turizm işletmesi belgesine sahip olmalıdır.",
+   "alinti": "İşyerinin Kültür ve Turizm Bakanlığınca düzenlenen turizm işletmesi belgesine sahip olması,",
+   "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+  },
+  {
+   "tur": "sart",
+   "metin": "Muhtasar ve prim hizmet beyannamesi yasal süresinde verilmelidir.",
+   "alinti": "Muhtasar ve prim hizmet beyannamesinin yasal süresinde verilmesi,",
+   "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+  },
+  {
+   "tur": "sart",
+   "metin": "Primler yasal süresinde ödenmelidir.",
+   "alinti": "Primlerin yasal süresinde ödenmesi,",
+   "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+  },
+  {
+   "tur": "sart",
+   "metin": "Kuruma borç bulunmamalıdır (varsa yapılandırılmış/tecil ve taksitlendirilmiş ve düzenli ödenen olmalıdır).",
+   "alinti": "Kuruma borcun bulunmaması (varsa da yapılandırılmış/tecil ve taksitlendirilmiş olması ve düzenli ödenmesi),",
+   "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+  },
+  {
+   "tur": "sart",
+   "metin": "Kayıt dışı sigortalı çalıştırılmamalı, sahte sigortalı bildirimi yapılmamalı, prime esas kazançlar eksik bildirilmemelidir.",
+   "alinti": "Kayıt dışı sigortalı çalıştırılmaması, sahte sigortalı bildiriminde bulunulmaması, sigortalıların prime esas kazançlarının eksik bildirilmemesi gerekmektedir.",
+   "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+  },
+  {
+   "tur": "kural",
+   "metin": "Kayıt dışı, sahte sigortalı veya eksik prime esas kazanç bildirimi tespit edilirse yararlanılan turizm ücret desteği geri alınır ve sonraki dönemler için destek verilmez.",
+   "alinti": "Kayıt dışı sigortalı çalıştırıldığının, sahte sigortalı bildiriminin ya da eksik prime esas kazanç bildiriminin tespiti halinde faydalanılan turizm ücret desteği geri alınacaktır.",
+   "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+  },
+  {
+   "tur": "kural",
+   "metin": "Sosyal güvenlik destek primine tabi çalışan sigortalılar, yabancı uyruklu sigortalılar ve yurtdışında çalıştırılan sigortalılardan dolayı destekten yararlanılamaz.",
+   "alinti": "Sosyal güvenlik destek primine tabi çalışan sigortalılar, yabancı uyruklu sigortalılar ve yurtdışında çalıştırılan sigortalılardan dolayı bu destekten yararlanılamaz.",
+   "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Destek tutarı günlük 116,67 TL, aylık 3.500,10 TL",
+   "alinti": "Destek tutarı günlük 116,67 TL, aylık 3.500,10 TL",
+   "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+  },
+  {
+   "iddia": "Toplam prim ödeme gün sayısı ile 116,67 TL çarpılır",
+   "alinti": "toplam prim ödeme gün sayısı ile 116,67 Türk lirasının çarpımı sonucu bulunacak tutar",
+   "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+  },
+  {
+   "iddia": "Tutar işyerlerinin Kuruma ödeyecekleri primlerden mahsup edilir ve İşsizlik Sigortası Fonundan karşılanır",
+   "alinti": "bu işyerlerinin Kuruma ödeyecekleri sigorta primlerinden mahsup edilir ve bu tutar İşsizlik Sigortası Fonundan karşılanır.",
+   "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+  },
+  {
+   "iddia": "Yasal dayanak 4447 sayılı Kanun",
+   "alinti": "Yasal Dayanak: 4447 sayılı Kanun",
+   "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+  }
+ ]
+}

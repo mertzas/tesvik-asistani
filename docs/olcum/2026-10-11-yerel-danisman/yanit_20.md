@@ -63,7 +63,7 @@
 - [KOSGEB] Girişimci Destek Programı: İş Geliştirme Desteği ile İş Geliştirme Faiz/Kâr Payı Desteğinden aynı anda yararlanılamaz (resmî metin: "İŞ GELİŞTİRME FAİZ/KÂR PAYI DESTEĞİ ve İŞ GELİŞTİRME DESTEĞİ’nden aynı anda yararlanılamaz.")
 
 **Girişim ön değerlendirmesi**
-Sistemde kaydı olmayan, ayrıca bakabileceğiniz programlar (oran ve şartları için resmî kaynağa bakın): KOSGEB Yurt Dışı Pazar Destek Programı; TTGV programları; Kalkınma Ajansı proje teklif çağrıları.
+Sistemde kaydı olmayan, ayrıca bakabileceğiniz programlar (oran ve şartları için resmî kaynağa bakın): TTGV programları; Kalkınma Ajansı proje teklif çağrıları.
 Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1/2026'dan itibaren 10962 sayılı Karar kapsamındadır; 5447 (E-Turquality) ve 5448 sayılı Kararlar yürürlükten kaldırılmıştır. KOSGEB Ar-Ge/Ür-Ge/İnovasyon ve KOBİGEL programları yürürlükten kaldırılmıştır (kayıtları 'kapalı' olarak sistemde).
 
 ### 3. Darboğazlar ve Kritik Şartlar

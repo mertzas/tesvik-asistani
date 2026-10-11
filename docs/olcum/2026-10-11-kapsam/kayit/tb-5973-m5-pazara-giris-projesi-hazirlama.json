@@ -1,0 +1,125 @@
+{
+  "slug": "tb-5973-m5-pazara-giris-projesi-hazirlama",
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Pazara Giriş Projesi Hazırlama Desteği (5973 sayılı Karar m.5)",
+  "ozet": "Şirketlerin hedef pazar, finansman ve fiyatlandırma stratejisi, pazarlama ve kanal stratejisi ile aksiyon planı ve bütçelerini içeren pazara giriş projesi hazırlığı için alacakları danışmanlık ve rapor giderleri %50 oranında ve proje başına 200.000 TL'ye kadar desteklenir. Bir şirketin en fazla 2 adet pazara giriş projesi desteklenir. Karardaki üst limitler her takvim yılı başında güncellenir.",
+  "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-5",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "5973 sayılı İhracat Destekleri Hakkında Karar yürürlüktedir; destek dönemsel çağrıya bağlı değildir, Genelge'deki proje ön onayı ve ödeme başvurusu süreçleriyle işler.",
+    "alinti": "Bu Karar yayımı tarihinde yürürlüğe girer.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  "basvuru_bicimi": "gider_on_onay",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "genel"
+  ],
+  "tesvil_tutari": "Danışmanlık ve rapor giderlerinin %50'si, proje başına 200.000 TL'ye kadar (Karar metnindeki tutar; üst limit her takvim yılı başında güncellenir). Bir şirketin en fazla 2 adet pazara giriş projesi desteklenir.",
+  "basvuru_yeri": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) / KEP; ödeme başvurusu incelemeci kuruluş olan İhracatçı Birlikleri Genel Sekreterliklerine DYS/KEP üzerinden yapılır",
+  "basvuru_suresi": "Çağrı yoktur; proje başvurusu DYS/KEP üzerinden yapılır ve Bakanlık ön onayıyla başlar. Ödeme başvurusu ihracat planının onay tarihinden itibaren 6 (altı) ay içinde yapılmalıdır.",
+  "kontrol_listesi": [
+    {
+      "tur": "bilgi",
+      "metin": "Karar'daki 'şirket' tanımına Türk Ticaret Kanunu kapsamındaki şirketlerin yanı sıra Kooperatifler Kanunu ve Tarım Satış Kooperatif ve Birlikleri Kanunu çerçevesinde ticari/sınai faaliyette bulunan kooperatif ve birlikler de girer.",
+      "alinti": "24/4/1969 tarihli ve 1163 sayılı Kooperatifler Kanunu ile 1/6/2000 tarihli ve 4572 sayılı Tarım Satış Kooperatif ve Birlikleri Hakkında Kanun hükümleri çerçevesinde ticari ve/veya sınai faaliyette bulunan kooperatif ve birlikleri",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Bu Genelge kapsamındaki desteklerden ihracatçı birliği üyesi şirketler faydalanabilir.",
+      "alinti": "Bu Genelge kapsamındaki desteklerden ihracatçı birliği üyesi şirketler faydalanabilir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6374e01113b876464009b0a3/26.11.2025%20Pazara%20Giri%C5%9F%20Projesi%20Haz%C4%B1rlama%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "adim",
+      "metin": "Proje başvurusu belgelerle birlikte DYS/KEP üzerinden Bakanlığa yapılır.",
+      "alinti": "Şirketler, EK-1’de (Pazara Giriş Projesi Hazırlama Desteği Başvurusu ve Destek Ödemesi İçin İbraz Edilmesi Gereken Belgeler) belirtilen belgelerle birlikte proje başvurusunu DYS/KEP üzerinden Bakanlığa yapar.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6374e01113b876464009b0a3/26.11.2025%20Pazara%20Giri%C5%9F%20Projesi%20Haz%C4%B1rlama%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Proje, Bakanlığın ön onayı sonrası başlar; ön onay tarihinden önce yapılan harcamalar desteklenmez.",
+      "alinti": "Projenin başlangıç tarihi, ön onayın başvuru sahibi şirkete KEP/DYS üzerinden bildirildiği tarihtir. Projenin başlangıç tarihinden önce yapılan harcamalar destek kapsamında değerlendirilmez.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6374e01113b876464009b0a3/26.11.2025%20Pazara%20Giri%C5%9F%20Projesi%20Haz%C4%B1rlama%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Danışman şirket başvuru tarihinde en az 3 yıldır faaliyette olmalı, bünyesinde en az 5 danışman bulunmalı; ihracat planını hazırlayacak danışmanların ihracata yönelik en az 5 yıllık tecrübesi olmalıdır.",
+      "alinti": "b) Başvuru tarihi itibarıyla en az 3 yıldır faaliyette olması, c) Bünyesinde en az 5 danışman bulunması, ç) Bünyesindeki ihracat planını hazırlayacak danışmanların, ihracata yönelik en az 5 yıllık tecrübeye sahip olması,",
+      "kaynak_url": "https://ticaret.gov.tr/data/6374e01113b876464009b0a3/26.11.2025%20Pazara%20Giri%C5%9F%20Projesi%20Haz%C4%B1rlama%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "İhracat planı, ön onaydan itibaren en geç 6 ay içinde Bakanlığa iletilir; iletilmezse proje iptal edilir.",
+      "alinti": "İhracat planı, Bakanlık tarafından ön onay verilmesinden itibaren en geç 6 (altı) ay içerisinde Bakanlığa iletilir. Belirtilen sürede ihracat planının Bakanlığa iletilmemesi durumunda proje iptal edilir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6374e01113b876464009b0a3/26.11.2025%20Pazara%20Giri%C5%9F%20Projesi%20Haz%C4%B1rlama%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Destek ödeme başvurusu, ihracat planının onay tarihinden itibaren 6 ay içinde yapılmalıdır.",
+      "alinti": "ihracat planına ilişkin destek ödeme başvurularının, onay tarihinden itibaren 6 (altı) ay içerisinde,",
+      "kaynak_url": "https://ticaret.gov.tr/data/6374e01113b876464009b0a3/26.11.2025%20Pazara%20Giri%C5%9F%20Projesi%20Haz%C4%B1rlama%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Eksik belge bildirimi sonrası 3 ay içinde tamamlanmazsa başvuru süresinde yapılmamış sayılır.",
+      "alinti": "Eksikliklerin 3 (üç) ay içerisinde tamamlanmaması durumunda destek başvurusu, süresi içinde yapılmamış kabul edilir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6374e01113b876464009b0a3/26.11.2025%20Pazara%20Giri%C5%9F%20Projesi%20Haz%C4%B1rlama%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Tüm ödemeler şirket tarafından bankacılık kanalıyla yapılmalıdır.",
+      "alinti": "Harcamaların destek kapsamında değerlendirilmesi için tüm ödemelerin şirket tarafından bankacılık kanalıyla yapılması gerekir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6374e01113b876464009b0a3/26.11.2025%20Pazara%20Giri%C5%9F%20Projesi%20Haz%C4%B1rlama%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Ödeme yapılabilmesi için vadesi geçmiş vergi ve SGK borcu bulunmaması (veya yapılandırmaya uyulması) aranır.",
+      "alinti": "Destek ödemesi, başvuru sahibinin anılan kurumlara vadesi geçmiş borcu bulunmadığına ya da borçları yeniden yapılandırılmış ise yeniden yapılandırma sözleşmesine uyulduğuna ilişkin bilgi/belgenin temin edilmesini müteakip yapılır.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6374e01113b876464009b0a3/26.11.2025%20Pazara%20Giri%C5%9F%20Projesi%20Haz%C4%B1rlama%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Reddedilen veya iptal edilen başvuru sahibi en az 6 ay sonra yeniden başvurabilir.",
+      "alinti": "Reddedilen ya da iptal edilen başvuru sahibi şirket, en az 6 (altı) ay sonra tekrar başvuru yapabilir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6374e01113b876464009b0a3/26.11.2025%20Pazara%20Giri%C5%9F%20Projesi%20Haz%C4%B1rlama%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+      "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Destek oranları hedef ülkelere yönelik giderlerde artırılabilir; ödenecek destek her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+      "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Destek oranı %50, proje başına üst sınır 200.000 TL",
+      "alinti": "pazara giriş projesi hazırlık sürecine dair alacakları danışmanlık ve rapor giderleri %50 oranında ve proje başına 200.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "iddia": "Bir şirketin en fazla 2 pazara giriş projesi desteklenir",
+      "alinti": "Bir şirketin en fazla 2 adet pazara giriş projesi desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "iddia": "Kapsam: hedef pazar, finansman-fiyatlandırma, pazarlama-kanal stratejisi, aksiyon planı ve bütçe",
+      "alinti": "sürdürülebilir ihracat artışını sağlama odaklı hedef pazar, yurt dışı pazarlara yönelik finansman ve fiyatlandırma stratejisi, pazarlama ve kanal stratejisi ve bunlara dair aksiyon planı ve bütçelerini içeren pazara giriş projesi hazırlık sürecine",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "iddia": "Üst limitler her takvim yılı başında güncellenir",
+      "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    }
+  ]
+}

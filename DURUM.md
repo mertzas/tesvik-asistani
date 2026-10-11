@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-11 (üçüncü taraf yapay zekâ kaldırıldı, yalnız kendi sunucumuz; tur13). Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-11 (kapsam matrisi, tur32: 245 → 284 kayıt). Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -359,6 +359,26 @@ Son güncelleme: 2026-10-11 (üçüncü taraf yapay zekâ kaldırıldı, yalnız
   ihracat programları gürültü); kefalet/kredi limit etiketleri; çok rollü programlarda (1707) persona rolü; kayıtların
   kendi içindeki çelişkileri (1507 "aynı anda 5"/"ilk 5"); barındırma sağlayıcısı ve Sentry'nin KVKK "Diğer
   aktarımlar" listesinde olmaması. `.env`'de kullanılmayan ANTHROPIC_API_KEY duruyor (silmek kullanıcıya ait).
+- **Kapsam matrisi ve tur32 veri genişletmesi** (2026-10-11): `docs/olcum/2026-10-11-kapsam/kapsam_olc.py`
+  (`--self-test` 8/8): 7 sektör persona × 12 il × ihtiyaç = 468 hücre. Kayıt düzeyi = ürünün kendi değerlendirmesinde
+  (degerlendir + 9903 ön değerlendirmesi) kapalı/uygun değil olmayan ve ihtiyaca hizmet eden kayıt sayısı; ürün
+  düzeyi = gerçek yanıtta bu kayıtlardan biri kart (ya da 9903 bloğu) olarak gösteriliyor mu. İlk ölçüm hatalarını
+  düzeltirken bulunan ürün hatası: profil hedefi ihracat olan kullanıcı "personel alırsak" diye sorunca SGK teşvikleri
+  yalnız "Diğer"de kalıyor, kart bir kredi ürünüydü (50 hücre) → sorudaki ihtiyaç profil hedefinin önünde. Tur32
+  (`scripts/fix_veri_2026_10_11_kapsam_tur32.py`, tur21 doğrulama hattının sarmalayıcısı; yeni resmî alan adları:
+  kosgeb, ticaret, eximbank, kgf, ktb, iskur, sgk): 4 Sonnet araştırma ajanı 44 aday yazdı; betik her kaynağı indirip
+  her alıntıyı aradı; 13 ret → 8'i önbellekteki birebir metinle onarıldı, 5 düşük değerli (kapalı/belirsiz) eklenmedi
+  (`kayit/eklenmedi/`). UYGULANDI 39 kayıt (yedek `tesvikler_oncesi_tur32.db.bak`): 245 → 284 kayıt, etkin 137 → 166,
+  kurum 29 → 37 (Türk Eximbank, Kültür ve Turizm Bakanlığı, İSTKA, İZKA, BEBKA, Trakya, GMKA, İKA). Kapsam önce →
+  sonra: kayıt VAR 305 → 385, İNCE 140 → 60, BOŞ 23 → 23; ürün 389 → 410/468; gerileyen hücre 0. Kalan BOŞ hücreler:
+  şirketi olmayan girişimci için finansman (12) ve Ar-Ge (11) — gerçek: krediler ve TÜBİTAK sanayi programları şirket
+  ister. Bölgesel bulgu: eklenen 2026 ajans programlarının çoğu teknik destek ve kamu/STK/kooperatife açık; KOBİ
+  persona için 12 ilin 10'unda açık ajans programı yok (veri değil, ajansların 2026 takvimi). Diğer düzeltmeler: başta
+  yıl olan başlık ("2026 Yılı Turizm Ücret Desteği") adıyla tanınır (yalnız üç kelimelik kuralda; iki kelimelik kural
+  ham başlıkla, KKYP çakışması); harfleri aralıklı PDF alıntısı kartta gösterilmez; kapalı KOSGEB Yurt Dışı Pazar
+  "ayrıca bakın" önerisinden çıktı (adıyla sorulunca "kaydımız yok" sürer). Ölçüm: dayanak 0, isabet 41/41; test 1272.
+  Önizlemede denendi (turizm ücret desteği, İşbaşı Eğitim, İSTKA, Eximbank). DİKKAT: `data/` git'te yok; üretim
+  veritabanına tur32 betiği sunucuda `--dogrula` + `--uygula` ile ayrıca uygulanmalı.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

@@ -1,0 +1,103 @@
+{
+  "slug": "kosgeb-stratejik-urun",
+  "kurum": "KOSGEB",
+  "baslik": "Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında)",
+  "ozet": "Sanayi ve Teknoloji Bakanlığı'nın Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planındaki ürünleri üretecek sermaye şirketlerine KOSGEB'in sağladığı iki destek: Bakanlıkça yetkilendirilmiş bağımsız danışmanlık firmasının hazırladığı değerlendirme raporu gideri desteği (geri ödemesiz) ve yatırım projesinde yeni istihdam edilen personelin giderleri desteği (geri ödemeli). Başvuru, Hamle programına ön başvuru yapıp kesin başvuruya davet edilen işletmelerin Program Portali üzerinden KOSGEB'e yönlendirilmesiyle yürür.",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Program KOSGEB destekler listesinde yürürlükte (Diğer Destekler) olarak yer alıyor ve Yönergesi 2026 revizyonlu; başvurular Hamle çağrı planındaki sürelerde alınıyor. Sayfada belirli bir çağrı tarihi yazmıyor.",
+    "alinti": "Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında yer alan bilgi ve koşullar çerçevesinde belirlenen süreler içinde başvuru yapılmaktadır.",
+    "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi"
+  },
+  "basvuru_bicimi": "proje",
+  "bolge_kisitli": [],
+  "sektorler": ["imalat"],
+  "sirket_turleri": ["limited", "anonim"],
+  "tesvil_tutari": "Bağımsız değerlendirme desteği %100 oranında (geri ödemesiz), en fazla 50.000 TL; personel giderleri desteği %80 oranında (geri ödemeli), en fazla 10.000.000 TL; yatırım projesi süresi en fazla 24 ay",
+  "basvuru_yeri": "Teknoloji Odaklı Sanayi Hamlesi Programı Program Portali üzerinden KOSGEB'e yönlendirme; KOSGEB KBS (KOBİ Bilgi Sistemi)",
+  "basvuru_suresi": "Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında belirlenen sürelerde",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Türkiye'de yerleşik sermaye şirketi statüsünde işletme olmalı",
+      "alinti": "Bu programa Türkiye’de yerleşik sermaye şirketi statüsündeki işletmelerden, Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında yer alan ürünleri üretmek üzere",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi"
+    },
+    {
+      "tur": "sart",
+      "metin": "Hamle programına Bakanlığa ön başvuru yapılmış, kesin başvuruya davet edilmiş ve Program Portali üzerinden KOSGEB'e yönlendirilmiş olmalı",
+      "alinti": "Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında yer alan ürünleri üretmek üzere Bakanlığa ön başvuruda bulunup kesin başvuru yapmaya davet edilerek Program Portali üzerinden KOSGEB’e yönlendirilmiş olması",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi"
+    },
+    {
+      "tur": "sart",
+      "metin": "KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmalı",
+      "alinti": "KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi"
+    },
+    {
+      "tur": "kural",
+      "metin": "İşletme iki destekten ayrı ayrı yararlanabilir veya aynı anda yararlanabilir",
+      "alinti": "İşletme bağımsız değerlendirme desteği ve personel giderleri desteğinden ayrı ayrı yararlanabileceği gibi, iki destekten aynı anda da yararlanabilir.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/Stratejik%20Urun/2026/2026.05.06/Stratejik_%C3%9Cr%C3%BCn_Destek_Program%C4%B1_Y%C3%B6nergesi.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Personel desteği yalnızca yeni istihdam edilen personel için verilir",
+      "alinti": "Stratejik Ürün Destek Programı Personel Giderleri Desteği Başvuru tarihi itibariyle son 4 ay içinde işletmede istihdam edilmemiş olan ve Stratejik Ürün Destek Programı Personel Giderleri Desteği Başvuru tarihinden sonra işletmede istihdam edilen yeni personeller için destek alabilirsiniz.",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Personel başına aylık destek üst limiti brüt asgari ücretin işverene toplam maliyetinin 2 katıdır",
+      "alinti": "Her bir personel için aylık destek üst limiti; 1 aylık brüt asgari ücretin işverene toplam maliyet tutarının 2 katıdır.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/Stratejik%20Urun/2026/2026.05.06/Stratejik_%C3%9Cr%C3%BCn_Destek_Program%C4%B1_Y%C3%B6nergesi.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Yatırım proje süresi en fazla 24 ay ve 3 ayın tam katlarıdır",
+      "alinti": "süresi en fazla 24 ay olacak şekilde 3 ayın tam katlarından oluşur.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/Stratejik%20Urun/2026/2026.05.06/Stratejik_%C3%9Cr%C3%BCn_Destek_Program%C4%B1_Y%C3%B6nergesi.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Sermaye şirketi tanımı: anonim, limited ve sermayesi paylara bölünmüş komandit şirketler",
+      "alinti": "Sermaye şirketi: Anonim, limited ve sermayesi paylara bölünmüş komandit şirketleri",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/Stratejik%20Urun/2026/2026.05.06/Stratejik_%C3%9Cr%C3%BCn_Destek_Program%C4%B1_Y%C3%B6nergesi.pdf"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Bağımsız değerlendirme desteği oranı %100",
+      "alinti": "Bağımsız değerlendirme desteği kapsamında destek oranı %100 olarak uygulanır.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/Stratejik%20Urun/2026/2026.05.06/Stratejik_%C3%9Cr%C3%BCn_Destek_Program%C4%B1_Y%C3%B6nergesi.pdf"
+    },
+    {
+      "iddia": "Bağımsız değerlendirme desteği üst tutarı 50.000 TL",
+      "alinti": "Program kapsamında bağımsız değerlendirme desteği giderleri için ödenen destek tutarı 50.000.-TL’yi geçemez.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/Stratejik%20Urun/2026/2026.05.06/Stratejik_%C3%9Cr%C3%BCn_Destek_Program%C4%B1_Y%C3%B6nergesi.pdf"
+    },
+    {
+      "iddia": "Personel giderleri desteği oranı %80",
+      "alinti": "Personel giderleri desteği kapsamında destek oranı %80 olarak uygulanır.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/Stratejik%20Urun/2026/2026.05.06/Stratejik_%C3%9Cr%C3%BCn_Destek_Program%C4%B1_Y%C3%B6nergesi.pdf"
+    },
+    {
+      "iddia": "Personel giderleri desteği geri ödemeli, üst tutar 10.000.000 TL",
+      "alinti": "Personel giderleri desteği kapsamında ödenen geri ödemeli destek tutarı 10.000.000.-TL’yi geçemez.",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi"
+    },
+    {
+      "iddia": "Geri ödemeli destek tanımı",
+      "alinti": "Geri ödemeli destek: Teminat karşılığında, işletmeye geri tahsil edilmek üzere sağlanan desteği",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/Stratejik%20Urun/2026/2026.05.06/Stratejik_%C3%9Cr%C3%BCn_Destek_Program%C4%B1_Y%C3%B6nergesi.pdf"
+    },
+    {
+      "iddia": "Destek unsurları tablosu (tutar, oran, süre)",
+      "alinti": "Bağımsız Değerlendirme Desteği 50.000 TL %100 (Geri Ödemesiz) 24 Ay",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "slug": "tob-sertifikali-fidan-kullanim",
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Sertifikalı/Standart Fidan Kullanım Desteği (2026)",
+  "ozet": "Meyve ve asma fidanı (altıntop, armut, asma, elma, fındık, kiraz, zeytin vb.) diken çiftçilere standart fidan için 620 TL/da, sertifikalı fidan için 1.550 TL/da destek ödenir. 2026 yılı belge teslim dönemi 31.07.2026 tarihinde sona ermiştir.",
+  "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri",
+  "aktif_mi": false,
+  "durum": {
+    "metin": "2026 yılı için belge teslim bitiş tarihi geçmiştir. Sayfada sonraki yıl için yeni bir takvim yayımlanmamıştır.",
+    "alinti": "Belge Teslim Bitiş Tarihi: 31.07.2026",
+    "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+  },
+  "basvuru_bicimi": "uretim_odeme",
+  "bolge_kisitli": [],
+  "sektorler": ["tarim"],
+  "tesvil_tutari": "TL/da: Standart fidan 620; Sertifikalı fidan 1.550 (altıntop, armut, asma, ayva, badem, ceviz, dut, elma, erik, fındık, incir, kayısı, kestane, kiraz, kivi, limon, mandarin, nektarin, pikan cevizi, portakal, şeftali, Trabzon hurması, vişne, zeytin).",
+  "basvuru_yeri": "Çiftçi Kayıt Sistemine (ÇKS) kayıtlı olunan İl/İlçe Tarım ve Orman Müdürlükleri.",
+  "basvuru_suresi": "2026 yılı için belge teslim: 01.09.2025 - 31.07.2026 (sona ermiştir).",
+  "kontrol_listesi": [
+    {
+      "tur": "adim",
+      "metin": "Destek başvurusu, ÇKS'ye kayıtlı olunan İl/İlçe Müdürlüklerine belirtilen süre içinde yapılır.",
+      "alinti": "kayıtlı olduğu İl/İlçe Müdürlüklerine belirtilen süre içerisinde yapılması gerekmektedir.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "tur": "belge",
+      "metin": "Fatura tarihi, sertifika veya bitki muayene raporu tarihinden sonra olmalıdır.",
+      "alinti": "Fatura tarihi, sertifika veya bitki muayene raporu tarihinden sonra olmalıdır.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "tur": "belge",
+      "metin": "Fidan sertifikası beyanname yılını takip eden yılın sonuna kadar geçerlidir; süresi sona eren sertifikalar için geçerli bitki muayene raporu fotokopisi istenir.",
+      "alinti": "Fidan sertifikası, beyanname yılını takip eden yılın sonuna kadar geçerli olup süresi sona eren sertifikalar için geçerli bitki muayene raporu fotokopisi istenir.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "tur": "kural",
+      "metin": "Tarımsal Üretimin Planlanması Hakkında Yönetmeliğin 13 üncü maddesi üçüncü, dördüncü ve beşinci fıkralarına uygun olunmalıdır.",
+      "alinti": "Tarımsal Üretimin Planlanması Hakkında Yönetmeliğin 13 üncü maddesi üçüncü, dördüncü ve beşinci fıkralarına uygun olması.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Standart fidan 620 TL/da",
+      "alinti": "Standart: 620",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "Sertifikalı fidan 1.550 TL/da",
+      "alinti": "Sertifikalı: 1.550",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "Kapsamdaki türler",
+      "alinti": "Altıntop, Armut, Asma, Ayva, Badem, Ceviz, Dut, Elma, Erik, Fındık, İncir, Kayısı, Kestane, Kiraz, Kivi, Limon, Mandarin, Nektarin, Pikan cevizi, Portakal, Şeftali, Trabzon hurması, Vişne, Zeytin",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "2026 belge teslim başlangıç tarihi 01.09.2025",
+      "alinti": "Belge Teslim Başlangıç Tarihi: 01.09.2025",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    },
+    {
+      "iddia": "2026 belge teslim bitiş tarihi 31.07.2026",
+      "alinti": "Belge Teslim Bitiş Tarihi: 31.07.2026",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Bitkisel-Uretim/Tohumculuk/Tohumculuk-Desteklemeleri"
+    }
+  ]
+}

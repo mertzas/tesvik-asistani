@@ -36,6 +36,9 @@ VERITABANINDA_OLMAYAN_PROGRAMLAR = (
     "TTGV programları",
     "Kalkınma Ajansı proje teklif çağrıları",
 )
+# Adıyla sorulunca "kaydımız yok" denir ama "ayrıca bakın" diye ÖNERİLMEZ: KOSGEB'in eski ve kapalı programları
+# arasında (tur32 KOSGEB araştırması, 2026-10-11).
+ONERILMEYEN_KAYITSIZ = ("KOSGEB Yurt Dışı Pazar Destek Programı",)
 # Doğrulanmış mevzuat notu: danışman "5448 bilişim destekleri" diye sorulursa güncel
 # Karar'a yönlendirsin (kaynak: 10962 sayılı Karar MADDE 49-50, R.G. 27/2/2026).
 MEVZUAT_NOTU = ("Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1/2026'dan itibaren 10962 sayılı "

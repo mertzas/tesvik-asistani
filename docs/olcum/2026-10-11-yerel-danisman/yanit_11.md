@@ -46,6 +46,9 @@
   - ☐ Özel sektör işvereni olmalısınız — resmî metin: “özel sektör işverenleri tarafından işe alındığı tarihten önceki son altı aylık dönemde”
 - **Başvuru:** SGK (e-Bildirge) — https://www.iskur.gov.tr/isveren/tesvikler/issizlik-odenegi-alanlara-yonelik-tesvik/
 
+**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Engelli Sigortalı İstihdamına Yönelik Sigorta Primi İşveren Hissesi Teşviki (4857 sayılı Kanun) (SGK / İŞKUR) — profilinize göre engel yok — şartları teyit edin; 01.07.2008 tarihinden itibaren uygulanmaktadır; sayfada bitiş tarihi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+
 ### 3. Darboğazlar ve Kritik Şartlar
 - Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
 

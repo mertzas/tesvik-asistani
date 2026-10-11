@@ -52,6 +52,21 @@ ADAY (yanıtta yok) KAYIT 167: Stratejik Yatırımların Teşviki — Hazine/Tic
 ADAY (yanıtta yok) KAYIT 166: Büyük Ölçekli Yatırımların Teşviki — Hazine/Ticaret Bakanligi; aktif_mi=False; kriterler={"sektorler": ["genel"]}; tutar=
 ADAY (yanıtta yok) KAYIT 164: Genel Teşvik Uygulamaları — Hazine/Ticaret Bakanligi; aktif_mi=False; kriterler={"sektorler": ["genel"]}; tutar=
 ADAY (yanıtta yok) KAYIT 165: Bölgesel Teşvik Uygulamaları — Hazine/Ticaret Bakanligi; aktif_mi=False; kriterler={"sektorler": ["genel"]}; tutar=
+============================================================
+KAYIT 258
+[İzmir Kalkınma Ajansı] Accelerate İzmir Uluslararası Büyüme Odaklı Hızlandırma Programı — 2026 / 5. Dönem
+Kaynak: https://izka.org.tr/accelerate-izmir-5-donem-basvurulari-basladi/
+İzmir Kalkınma Ajansı ve Teknopark İzmir ortaklığıyla yürütülen program, uluslararası ölçekte büyümeye hazır girişimlerin uluslararasılaşmasına ve global pazarlara açılmasına katkı sağlar. 5. dönemde 20 girişim kabul edilir; girişimler yaklaşık 4 ay sürecek mentörlük, koçluk ve danışmanlık hizmetleri ile demo day ve yatırımcı görüşme fırsatı elde eder. Başvurular 8 Mart 2026'da kapanmıştır. Kaynakta parasal destek tutarı belirtilmemiştir. Resmî kaynaktan alıntılar: - İzmir Kalkınma Ajansı ve Teknopark İzmir ortaklığıyla yürütülen Accelerate İzmir Uluslararası Büyüme Odaklı Hızlandırma Programı’nın 2026 yılı başvuruları başladı. - Programa katılan girişimler yaklaşık 4 ay sürecek olan mentörlük, koçluk ve danışmanlık hizmetleriyle beraber demo day etkinliğinde sahne alma ve potansiyel yatırımcılarla görüşme fırsatı elde edecek.
+⚠️ DURUM: ARTIK AKTİF DEĞİL. Tur32 2026-10-11: resmî kaynaktan eklendi; durum: Son başvuru tarihi 8 Mart 2026 olup geçmiştir.; kanıt docs/olcum/2026-10-11-kapsam/kayit/ka-izka-2026-accelerate-izmir-5-donem.json + dogrulama.json
+Başvuru yeri: Sayfadaki başvuru bağlantısı (çevrim içi form)
+Başvuru süresi/dönemi: Son başvuru tarihi 8 Mart 2026 (kapandı).
+Tutar/oran: Parasal destek belirtilmemiştir; yaklaşık 4 ay mentörlük, koçluk ve danışmanlık hizmeti (teknik destek), demo day ve yatırımcı görüşmesi.
+Uygunluk kriterleri (yapılandırılmış): {"sektorler": ["genel"]}
+Durum notu: Tur32 2026-10-11: resmî kaynaktan eklendi; durum: Son başvuru tarihi 8 Mart 2026 olup geçmiştir.; kanıt docs/olcum/2026-10-11-kapsam/kayit/ka-izka-2026-accelerate-izmir-5-donem.json + dogrulama.json
+- [bilgi] 5. dönemde 20 girişim kabul edilecektir. | alıntı: programın 5. dönemi kapsamında 20 girişim kabul edilecek. | kaynak: https://izka.org.tr/accelerate-izmir-5-donem-basvurulari-basladi/
+- [bilgi] Program uluslararası ölçekte büyümeye hazır girişimlere yöneliktir. | alıntı: Uluslararası ölçekte büyümeye hazır girişimlerin uluslararasılaşmasına ve global pazarlara açılmasına katkı sağlamak amacıyla yürütülen | kaynak: https://izka.org.tr/accelerate-izmir-5-donem-basvurulari-basladi/
+- [adim] Başvuruyu yap: Sayfadaki başvuru bağlantısı (çevrim içi form) | kaynak: https://izka.org.tr/accelerate-izmir-5-donem-basvurulari-basladi/
+ÇAĞRI: {"id": 141, "ad": "Accelerate İzmir 5. Dönem başvurusu", "acilis": null, "kapanis": "2026-03-08", "on_kayit_son": null, "son_gun": "2026-03-08", "kaynak_url": "https://izka.org.tr/accelerate-izmir-5-donem-basvurulari-basladi/", "dogrulama_tarihi": "2026-10-11", "notlar": "Çağrı kapandı.", "durum": "kapandi", "durum_metni": "Kapandı", "kalan_gun": null}
 EK BLOKLAR:
 SİSTEMİN ELEDİĞİ / DÜŞÜK OLASILIK GÖRDÜĞÜ 9903 PROGRAMLARI (Karar metnine göre; 'UYGUN DEĞİL' kesin, 'DÜŞÜK OLASILIK' teyit gerektirir):
 - Teknoloji Hamlesi Programı (9903 sayılı Karar): DÜŞÜK OLASILIK — faaliyet EK-1 orta-yüksek/yüksek teknoloji sınıfında değil; öncelikli ürün listesi bu sınıflar ve kritik ürünlerden oluşur (MADDE 2/i, 6)

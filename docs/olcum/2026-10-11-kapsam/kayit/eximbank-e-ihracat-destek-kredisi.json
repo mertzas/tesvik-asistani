@@ -1,0 +1,96 @@
+{
+  "slug": "eximbank-e-ihracat-destek-kredisi",
+  "kurum": "Türk Eximbank",
+  "baslik": "Türk Eximbank E-İhracat Destek Kredisi",
+  "ozet": "Türkiye'de yerleşik firmaların e-ticaret kanalları aracılığıyla yürüttükleri ihracat faaliyetlerini desteklemek amacıyla sunulan finansman programıdır. Basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat yaptığını tevsik eden KOBİ ve KOBİ dışı işletmeler yararlanabilir; İhracatçı Birlikleri'ne üyelik zorunluluğu yoktur. Firma bazında kullandırım üst limiti 500.000 TL, vade azami 12 aydır; İGE kefaleti karşılığında kullandırılır.",
+  "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Eximbank'ın güncel (2026) internet sitesinde kredi ürünü olarak yayınlanmaktadır; dönemsel çağrıya bağlı değildir.",
+    "alinti": "E-İhracat Destek Kredisi, Türkiye’de yerleşik firmaların e-ticaret kanalları aracılığıyla yürüttükleri ihracat faaliyetlerini desteklemek amacıyla sunulan bir finansman programıdır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+  },
+  "basvuru_bicimi": "kredi",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "e-ticaret",
+    "ihracat"
+  ],
+  "tesvil_tutari": "Hibe değil kredi: firma bazında kullandırım üst limiti 500.000 TL; vade azami 12 ay; İGE kefaleti karşılığında kullandırılır.",
+  "basvuru_yeri": "Türk Eximbank; başvuru Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır",
+  "basvuru_suresi": "Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir.",
+      "alinti": "Bu kredi programı, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyeti gerçekleştirdiğini tevsik eden KOBİ ve KOBİ dışı işletmelere yöneliktir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "İhracatçı Birlikleri Genel Sekreterliği'ne üyelik zorunluluğu yoktur.",
+      "alinti": "Yararlanıcıların İhracatçı Birlikleri Genel Sekreterliği’ne üyelik zorunluluğu bulunmamaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "sart",
+      "metin": "Başvuru sahibi ve risk grubuna dâhil firmaların Eximbank nezdinde güncel kredi limiti veya kredi riski bulunmamalıdır.",
+      "alinti": "Türk Eximbank nezdinde, başvuru sahibi ile risk grubuna dâhil firmaların herhangi bir güncel kredi limiti veya kredi riski bulunmaması şartı aranır;",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "adim",
+      "metin": "Başvuru, Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır.",
+      "alinti": "E-İhracat Destek Paketi’ne, bankamız ile İGE arasında imzalanan Hazine Destekli Kefalet İşlemleri Protokolü kapsamında başvuru yapılabilmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Firma bazında kullandırım üst limiti 500.000 TL'dir.",
+      "alinti": "Firma bazında kullandırım üst limiti 500.000 Türk Lirasıdır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Teminat: İGE kefaleti.",
+      "alinti": "İhracatı Geliştirme A.Ş.’nin (İGE) kefaleti karşılığında kullandırılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Vade azami 12 aydır.",
+      "alinti": "E-İhracat Destek Kredisi azami 12 ay vadeli olarak kullandırılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde e-ihracat beyannameleriyle kapatılabilir.",
+      "alinti": "Krediye ilişkin e-ihracat taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen e-ihracat beyannameleriyle kapatılabilmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Kredi Talep Formu, Otomatik Taahhüt Kapatma Talimat Formu ve İGE Kefaleti Başvuru Belgeleri.",
+      "alinti": "Kredi Talep Formu Otomatik Taahhüt Kapatma Talimat Formu İGE Kefaleti Başvuru Belgeleri",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Firma bazında kullandırım üst limiti 500.000 TL",
+      "alinti": "Firma bazında kullandırım üst limiti 500.000 Türk Lirasıdır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+    },
+    {
+      "iddia": "Azami vade 12 ay",
+      "alinti": "E-İhracat Destek Kredisi azami 12 ay vadeli olarak kullandırılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+    },
+    {
+      "iddia": "E-ihracat taahhüdü 24 ay içinde kapatılır",
+      "alinti": "Krediye ilişkin e-ihracat taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen e-ihracat beyannameleriyle kapatılabilmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi"
+    }
+  ]
+}

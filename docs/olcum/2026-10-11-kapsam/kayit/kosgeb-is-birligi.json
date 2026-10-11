@@ -1,0 +1,80 @@
+{
+ "slug": "kosgeb-is-birligi",
+ "kurum": "KOSGEB",
+ "baslik": "İş Birliği Destek Programı",
+ "ozet": "KOBİ'lerin birbirleriyle veya büyük işletmelerle ortak çalışma kültürünü geliştirmek ve karşılıklı fayda sağlayan iş birlikleri kurmalarına katkı için ortak imalat, tasarım, laboratuvar, pazarlama gibi iş birliği projelerini destekleyen program. İşletici Kuruluş ve Proje Ortaklığı olmak üzere iki ortaklık modeli vardır. KOSGEB'in yürürlükten kaldırılan destekler listesinde yer alır ve başvuruya kapatılmıştır; bilgi amaçlı kayıttır.",
+ "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6850/is-birligi-destek-programi",
+ "aktif_mi": false,
+ "durum": {
+  "metin": "KOSGEB 'Yürürlükten Kaldırılan Destekler' listesinde İş Birliği Destek Programı için başvuruya kapanış bildirimi yer alıyor; yeni başvuru alınmıyor.",
+  "alinti": "Bu program 28.02.2025 tarihinde başvuruya kapatılmıştır.",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekler/6530/yururlukten-kaldirilan-destekler"
+ },
+ "basvuru_bicimi": "proje",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "genel"
+ ],
+ "tesvil_tutari": "Sayfadaki tablolara göre (03.06.2022 sonrası ön başvurular): İşletici Kuruluş modelinde en fazla 5.000.000 TL (1.500.000 TL geri ödemesiz + 3.500.000 TL geri ödemeli). Proje Ortaklığı modelinde yüksek teknolojide işletme başına 2.000.000 TL, toplam üst limit 10.000.000 TL; orta-yüksek teknolojide işletme başına 1.000.000 TL, toplam 10.000.000 TL; diğer alanlarda işletme başına 750.000 TL, toplam 5.000.000 TL",
+ "basvuru_yeri": "KOSGEB (ön başvuru ve başvuru formları ile)",
+ "basvuru_suresi": "Başvuruya kapatılmıştır",
+ "kontrol_listesi": [
+  {
+   "tur": "sart",
+   "metin": "Ortak işletmeler ön başvurudan en az 1 yıl önce kurulmuş ve son mali yılda bilanço esasına göre defter tutmuş olmalı",
+   "alinti": "İşbirliği amacı ile bir araya gelen işletmelerin ön başvuru tarihinden en az 1 (bir) yıl önce kurulmuş olması ve son mali yılda bilanço esasına göre defter tutmuş olması gerekir.",
+   "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6850/is-birligi-destek-programi"
+  },
+  {
+   "tur": "kural",
+   "metin": "Büyük işletmeyle iş birliğinde asgari KOBİ sayısı 1'dir",
+   "alinti": "Büyük işletme ile işbirliği yapılması durumunda asgari KOBİ sayısı 1 (bir)’dir.",
+   "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6850/is-birligi-destek-programi"
+  },
+  {
+   "tur": "kural",
+   "metin": "İşbirliği Sözleşmesi'nin süresi proje tamamlanmasından sonraki 6 ayı kapsamalı",
+   "alinti": "süresi proje tamamlanma tarihinden sonraki 6 ayı kapsamak durumundadır.",
+   "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6850/is-birligi-destek-programi"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Desteklenen proje konularından biri: ortak imalat",
+   "alinti": "Kapasite, verimlilik, ürün çeşitliliği ve kalitelerini artırmaları amacıyla ortak imalat,",
+   "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6850/is-birligi-destek-programi"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Tabloların geçerli olduğu ön başvuru tarihi",
+   "alinti": "03.06.2022 Tarihinden Sonra Yapılan Ön Başvurular İçin Geçerli Olan Mevzuat",
+   "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6850/is-birligi-destek-programi"
+  },
+  {
+   "iddia": "İşletici Kuruluş modeli, yüksek teknoloji: asgari 2 KOBİ, 1.500.000 TL geri ödemesiz + 3.500.000 TL geri ödemeli, toplam 5.000.000 TL",
+   "alinti": "Yüksek 2 1.500.000 3.500.000 5.000.000 5.000.000",
+   "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6850/is-birligi-destek-programi"
+  },
+  {
+   "iddia": "Proje Ortaklığı modeli, yüksek teknoloji: işletme başına 2.000.000 TL, toplam 10.000.000 TL",
+   "alinti": "Yüksek 2 600.000 1.400.000 2.000.000 3.000.000 7.000.000 10.000.000",
+   "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6850/is-birligi-destek-programi"
+  },
+  {
+   "iddia": "Proje Ortaklığı modeli, orta yüksek teknoloji: işletme başına 1.000.000 TL, toplam 10.000.000 TL",
+   "alinti": "Orta Yüksek 3 300.000 700.000 1.000.000 3.000.000 7.000.000 10.000.000",
+   "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6850/is-birligi-destek-programi"
+  },
+  {
+   "iddia": "Proje Ortaklığı modeli, diğer teknoloji alanları: işletme başına 750.000 TL, toplam 5.000.000 TL",
+   "alinti": "Diğer 5 225.000 525.000 750.000 1.500.000 3.500.000 5.000.000",
+   "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6850/is-birligi-destek-programi"
+  },
+  {
+   "iddia": "Programın kapanış tarihi",
+   "alinti": "Bu program 28.02.2025 tarihinde başvuruya kapatılmıştır.",
+   "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekler/6530/yururlukten-kaldirilan-destekler"
+  }
+ ]
+}

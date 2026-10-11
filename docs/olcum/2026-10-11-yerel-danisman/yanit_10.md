@@ -33,9 +33,6 @@
   - Geri ödemesiz destek tutarı yalnızca vergi dairesi ve SGK prim borçlarının ödenmesinde kullanılabilir — resmî metin: “Program kapsamında sağlanan geri ödemesiz destek tutarları; yalnızca vergi dairesi ve SGK prim borçlarının ödenmesinde kullanılabilecek.”
 - **Başvuru:** KOSGEB'e 2026-2 dönemi formlarıyla (Başvuru Formu, Taahhütname); kredi, bankalardan kullanılır — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi
 
-**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- DİJİTAL KEFALET DESTEK PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-
 ### 3. Darboğazlar ve Kritik Şartlar
 - **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (İstihdamı Koruma Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **İstihdamı Koruma Destek Programı:** İşletme Beyanının güncel olması

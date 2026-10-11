@@ -3,8 +3,8 @@
 - Hibe: sorunuzla eşleşen hibe programlarının hiçbiri şu an size açık görünmüyor (IPARD III — Tarımsal İşletmelerin Fiziki Varlıklarına Yönelik Yatırımlar (Tedbir 101 / M1) — kapalı; IPARD III — Tarım ve Balıkçılık Ürünlerinin İşlenmesi ve Pazarlanması ile İlgili Fiziki Varlıklara Yönelik Yatırımlar (Tedbir 103 / M3) — kapalı). Aşağıdaki açık seçenekler kredi, kefalet ya da diğer destek türleridir.
 - Öne çıkan: **YATIRIM-İŞLETME DESTEK PAKETİ** (KGF) (hibe değil: kredi kefaleti) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
-- Diğer seçenekler: Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin); TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (belirlenemedi).
-- 6 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
+- Diğer seçenekler: Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin); TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü) (profilinize göre engel yok — şartları teyit edin).
+- 5 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: tarım (NACE 10.51)
@@ -52,32 +52,30 @@
 - **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.
 - **Başvuru:** Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi
 
-**TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Belirlenemedi — profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi).
-- **Karşıladığı ihtiyaç:** kredi/finansman
-- **Kredi ve kefalet limitleri:** Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
-- **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (küçük işletme)
+**Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü) — KOSGEB**
+- **Başvuru dönemi:** Sayfada çağrı dönemi belirtilmemiş (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: yatırım.
+- **Karşıladığı ihtiyaç:** makine/tesis yatırımı
+- **Destek:** Tek bir fona azami taahhüt 500 milyon TL: yerli yatırımcı taahhüdünün %20'si ile sınırlı olmak üzere 200 milyon TL'ye kadar; yabancı yatırımcı taahhüdünü aşmamak kaydıyla 200 milyon TL'ye kadar; yabancı yatırımla eş tutarda olmak kaydıyla 100 milyon TL'ye kadar. Fonun katılacağı her yatırım turunun asgari büyüklüğü 50 milyon TL
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi) — resmî metin: “TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir.”
+  - ☐ Fonun katılacağı her yatırım turunun asgari büyüklüğü 50 milyon TL olmalı — resmî metin: “Kaynak aktarılacak fonun katılacağı her bir yatırım turunun asgari büyüklüğünün 50 milyon TL olması gerekir.”
+  - ☐ Başvuruyu Portföy Yönetim Şirketleri, yöneticisi oldukları fon için yapar — resmî metin: “Portföy Yönetim Şirketleri yöneticisi oldukları Girişim Sermayesi Yatırım Fonları için başvuruda bulunabilirler.”
 - **Kurallar (kayıttan):**
-  - Kredi döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz — resmî metin: “Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz”
-  - Kefalet talepleri yalnız TL cinsinden yapılır — resmî metin: “Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır.”
-- **Başvuru:** Kredi veren bankalar: Akbank, Denizbank, Garanti BBVA, Halkbank, QNB Bank, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım (yalnızca TL kefalet) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi
+  - Her bir fon için iştirak üst limiti 500 milyon TL — resmî metin: “Her bir fon için iştirak üst limiti 500 milyon TL’dir.”
+- **Başvuru:** KOSGEB e-hizmetler menüsü, Girişim Sermayesi Yatırım Fonları Başvurusu sekmesi — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari
 
 **9903 programları bölgenize göre (Karar metninden; önce engelsiz ve şartlı, sonra en yüksek katkı):**
 - Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin): yatırıma katkı %20; makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); faiz desteği: repo oranının %25'i, azami 12.5 puan
 - Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (belirlenemedi): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteği: repo oranının %40'i, azami 20 puan
-- Teknoloji Hamlesi Programı (9903 sayılı Karar) (düşük olasılık — karar ön değerlendirmesi): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteği: repo oranının %40'i, azami 20 puan
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan (SGK / İŞKUR) — profilinize göre engel yok — şartları teyit edin; 01.10.2008 tarihinden itibaren uygulanmaktadır; imalat için 5 puanlık oran 2026 yılı sonuna kadar. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi)); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - Yapay Zekâ Kredi Programı (KOSGEB) — belirlenemedi (profilde karşılığı olmayan kilit şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — belirlenemedi (Karar metnine göre ön değerlendirme: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ; kayıtlarımızda yok)); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1542 gün kaldı)
-- Teknoloji Hamlesi Programı (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — düşük olasılık — karar ön değerlendirmesi (Karar metnine göre ön değerlendirme: DÜŞÜK OLASILIK — faaliyet EK-1 orta-yüksek/yüksek teknoloji sınıfında değil); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1542 gün kaldı)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
-- Yatırım-Proje Finansmanı Destek Paketi (KGF); Yatırım Destek Paketi (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)
+- Yatırım-Proje Finansmanı Destek Paketi (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)
 - Kırsal Kalkınma Yatırım Programı (KKYP) – Tarımsal İşleme/Depolama ve Makine Parkı Hibeleri (Tarım Bakanlığı) — kapalı: program başvuruya açık değil (TRGM duyurusu (29.04.2026): KKYP başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı)
 - IPARD III — Tarımsal İşletmelerin Fiziki Varlıklarına Yönelik Yatırımlar (Tedbir 101 / M1) (TKDK) — kapalı: program başvuruya açık değil (Tedbir 101'in 2026 çağrısı (12. Başvuru Çağrı İlanı) 07.09.2026 18:00'da kapanmıştır; yeni bir çağrı duyurusu bulunmamaktadır)
 - IPARD III — Tarım ve Balıkçılık Ürünlerinin İşlenmesi ve Pazarlanması ile İlgili Fiziki Varlıklara Yönelik Yatırımlar (Tedbir 103 / M3) (TKDK) — kapalı: program başvuruya açık değil (Tedbir 103'ün 2026 çağrısı (11. Başvuru Çağrı İlanı) 20.07.2026 18:00'da kapanmıştır; başka bir çağrı duyurusu bulunmamaktadır)
@@ -86,6 +84,7 @@
 - [Sanayi ve Teknoloji Bakanlığı] Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
 
 **Yatırım teşvik belgesi (9903) — sistemin elediği ya da düşük olasılık gördüğü programlar** (Karar metnine göre; 'UYGUN DEĞİL' kesin, 'DÜŞÜK OLASILIK' teyit gerektirir):
+- Teknoloji Hamlesi Programı (9903 sayılı Karar): DÜŞÜK OLASILIK — faaliyet EK-1 orta-yüksek/yüksek teknoloji sınıfında değil; öncelikli ürün listesi bu sınıflar ve kritik ürünlerden oluşur (MADDE 2/i, 6)
 - Stratejik Hamle Programı (9903 sayılı Karar): DÜŞÜK OLASILIK — asgari sabit yatırım 100 milyon TL (yüksek teknoloji) / 200 milyon TL, %20 öz kaynak ve ithalat ölçütleri aranır; mikro/küçük ölçek için gerçekçi değildir (MADDE 8/2-3)
 - Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar): DÜŞÜK OLASILIK — teknoloji sınıfı (EK-1) veya 6. bölge koşulu yok; ancak diğer bentlerden biri (ör. Ar-Ge yatırımı, savunma, öz tüketim GES/RES, lisanslı depo, eğitim) kapsamına girerse desteklenir (MADDE 9/1)
 Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik Yatırımların Teşviki) 9903 sayılı Karar ile yürürlükten kalkmıştır; bu eski sistemlere başvurulamaz.
@@ -93,11 +92,12 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Kayıtlı elektronik posta (KEP) adresi** (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Şirket adına bir KEP hizmet sağlayıcısından KEP adresi alın.
 - **Yatırım teşvik belgesi** (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Yatırıma başlamadan önce Sanayi ve Teknoloji Bakanlığı E-TUYS üzerinden belge başvurusu.
+- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü)): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar):** Teşvik belgesi müracaatımı E-TUYS üzerinden
 - **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar):** Başvuru yeri: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)
 
 ### 4. Adım Adım Yol Haritası
-1. Ön koşul kayıtlar: Kayıtlı elektronik posta (KEP) adresi; Yatırım teşvik belgesi.
+1. Ön koşul kayıtlar: Kayıtlı elektronik posta (KEP) adresi; Yatırım teşvik belgesi; KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (YATIRIM-İŞLETME DESTEK PAKETİ): Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir).
 4. Başvuru kanalı: YATIRIM-İŞLETME DESTEK PAKETİ: Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, … — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#hedef-yatirimlar | TKYB KREDİ DESTEK PAKETİ: Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi.

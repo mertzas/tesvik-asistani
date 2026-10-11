@@ -207,3 +207,11 @@ def test_goc_upgrade_downgrade(tmp_path, monkeypatch):
     command.downgrade(cfg, "e1f4a6b8c234")
     assert not (yeni & {c["name"] for c in inspect(motor).get_columns("financial_profiles")})
     command.upgrade(cfg, "head")
+
+
+def test_kapali_bilinen_program_ayrica_bakin_onerisinde_yok():
+    from app.girisim import ONERILMEYEN_KAYITSIZ
+    from app.rag import _girisim_blogu
+    metin = _girisim_blogu(None)                # kullanıcıya dönük "ayrıca bakabileceğiniz programlar" satırı
+    assert ONERILMEYEN_KAYITSIZ and not any(x in metin for x in ONERILMEYEN_KAYITSIZ)
+    assert "TTGV programları" in metin

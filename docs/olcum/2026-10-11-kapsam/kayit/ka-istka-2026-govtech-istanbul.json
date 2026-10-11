@@ -1,0 +1,95 @@
+{
+  "slug": "ka-istka-2026-govtech-istanbul",
+  "kurum": "İstanbul Kalkınma Ajansı",
+  "baslik": "İSTKA GovTech İstanbul Destek Programı (kamu kurumlarıyla eşleştirilen startuplara çözüm konsepti ve MVP desteği)",
+  "ozet": "Sanayi ve Teknoloji Bakanlığı koordinasyonunda İSTKA tarafından yürütülen program, kamu kurumlarının ihtiyaç duyduğu yenilikçi çözümleri teknoloji girişimleriyle buluşturur. Kamu kurumları ihtiyaçlarını govtech.istanbul portalından bildirir; eşleşen startuplara çözüm konsepti aşamasında 500.000 TL, MVP aşamasında 5.000.000 TL'ye kadar geri ödemesiz destek verilir. Kamu kurumu başvuruları Kasım 2026'dan itibaren aylık dönemler halinde alınır.",
+  "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Program duyuruldu; başvurular Kasım 2026'dan itibaren alınacak ve 31 Mayıs 2027'ye kadar sürecek (yaklaşan).",
+    "alinti": "Başvurular Kasım 2026’dan itibaren aylık dönemler halinde alınır. Program 31 Mayıs 2027’ye kadar başvuruya açıktır.",
+    "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": ["İstanbul"],
+  "sektorler": ["genel"],
+  "tesvil_tutari": "Geri ödemesiz destek: çözüm konsepti aşamasında startup başına 500.000 TL'ye kadar, MVP geliştirme aşamasında 5.000.000 TL'ye kadar. Kamu kurumunun mali yükümlülüğü yoktur.",
+  "basvuru_yeri": "govtech.istanbul portalı (kamu kurumu ihtiyaç bildirimi; ardından startup çağrısı)",
+  "basvuru_suresi": "Kamu kurumu başvuruları Kasım 2026'dan itibaren aylık dönemler halinde; her ayın son günü o ayın son kabul tarihidir. Program 31 Mayıs 2027'ye kadar başvuruya açıktır.",
+  "kontrol_listesi": [
+    {
+      "tur": "adim",
+      "metin": "Kamu kurumları çözüm bekleyen ihtiyaçlarını govtech.istanbul portalından bildirir; kabul edilen ihtiyaç için startup çağrısı yayımlanır.",
+      "alinti": "Kamu kurumları çözüm bekleyen ihtiyaçlarını govtech.istanbul portalı üzerinden bildirir.",
+      "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6"
+    },
+    {
+      "tur": "kural",
+      "metin": "Her ayın son günü o ayın başvuru dönemi için son kabul tarihidir.",
+      "alinti": "Her ayın son günü, o ayın başvuru dönemi için son kabul tarihidir.",
+      "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6"
+    },
+    {
+      "tur": "kural",
+      "metin": "MVP desteği, MVP'nin kamu kurumu tarafından kabulü sonrası İSTKA tarafından doğrudan startupa ödenir.",
+      "alinti": "MVP desteği, MVP’nin kamu kurumu tarafından kabulü sonrası İSTKA tarafından doğrudan startupa ödenir.",
+      "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6"
+    },
+    {
+      "tur": "kural",
+      "metin": "Fikri mülkiyet hakları startupa aittir; MVP'yi ücretsiz kullanma hakkı kamu kurumundadır.",
+      "alinti": "Fikri mülkiyet hakları startupa aittir.",
+      "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6"
+    },
+    {
+      "tur": "kural",
+      "metin": "Mevcut bir teknolojinin, ürünün, yazılımın veya platformun lisanslanması ya da satın alınmasına yönelik projeler desteklenmez.",
+      "alinti": "Mevcut bir teknolojinin, ürünün, yazılımın veya platformun lisanslanması veya satın alınmasına yönelik projeler.",
+      "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "MVP geliştirme aşamasında bir startup seçilir; MVP 4 ay (3 ay uzatılabilir) içinde geliştirilir ve Demoday'de sunulur.",
+      "alinti": "Bir startup seçilir; 4 ay (+3 ay uzatılabilir) içinde MVP geliştirilir ve Demoday’de sunulur.",
+      "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "GovTech İstanbul kamu kurumu başvuru dönemleri (aylık)",
+      "acilis": null,
+      "kapanis": "2027-05-31",
+      "on_kayit_son": null,
+      "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6",
+      "alinti": "Başvurular Kasım 2026’dan itibaren aylık dönemler halinde alınır. Program 31 Mayıs 2027’ye kadar başvuruya açıktır.",
+      "notlar": "Açılış günü kaynakta yalnızca 'Kasım 2026'dan itibaren' olarak belirtilmiş."
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "Çözüm konsepti desteği startup başına 500.000 TL'ye kadar, MVP desteği 5.000.000 TL'ye kadar",
+      "alinti": "Program kapsamında startuplara çözüm konsepti aşamasında startup başına 500.000 TL'ye kadar destek sağlanır. MVP geliştirme aşamasında ise bu destek 5.000.000 TL'ye kadar çıkabilmektedir.",
+      "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6"
+    },
+    {
+      "iddia": "Destekler geri ödemesizdir",
+      "alinti": "Tüm destekler geri ödemesizdir.",
+      "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6"
+    },
+    {
+      "iddia": "Kamu kurumunun mali yükümlülüğü yoktur",
+      "alinti": "Kamu kurumunun herhangi bir mali yükümlülüğü yoktur.",
+      "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6"
+    },
+    {
+      "iddia": "Programın yürütücüsü İSTKA, koordinasyon Sanayi ve Teknoloji Bakanlığı",
+      "alinti": "GovTech İstanbul Destek Programı, Sanayi ve Teknoloji Bakanlığı koordinasyonunda İstanbul Kalkınma Ajansı (İSTKA) tarafından yürütülmektedir.",
+      "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6"
+    },
+    {
+      "iddia": "Başvuru hakkına sahip kamu kurumları İstanbul'daki en üst birimlerdir",
+      "alinti": "Kamu kurumlarının İstanbul'da bulunan en üst birimleri",
+      "kaynak_url": "https://www.istka.org.tr/duyuru/govtech-istanbul-destek-programi-ile-kamu-hizmetlerinde-inovasyon-hamlesi-basliyor-xgq6"
+    }
+  ]
+}

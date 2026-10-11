@@ -1,0 +1,79 @@
+{
+  "slug": "ktb-turizm-tesvik-2634",
+  "kurum": "Kültür ve Turizm Bakanlığı",
+  "baslik": "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
+  "ozet": "Bakanlık mevzuatında kredi uygulaması yoktur; belirli niteliklere uygun projelendirilen ve Bakanlıktan yatırım ve/veya işletme belgesi almış turistik tesis yatırımları 2634 sayılı Turizmi Teşvik Kanunundaki teşviklerden, teşvik belgesi alınması halinde ise Hazine Müsteşarlığınca yayımlanan teşvik kararlarından yararlanabilir. Elektrik enerjisi gideri indirimi sayfada ayrıca anılır; ancak sayfada oran/tutar ve güncel uygulama dönemi yazmaz.",
+  "kaynak_url": "https://yigm.ktb.gov.tr/TR-102506/tesvikler.html",
+  "aktif_mi": null,
+  "durum": {
+    "metin": "Kurumun Teşvikler sayfası, belgeli turizm tesislerinin 2634 sayılı Kanun teşviklerinden yararlanabileceğini anlatır; ancak elektrik enerjisi gideri indiriminin dayanağı olarak 2005 tarihli bir tebliği gösterir ve sayfada güncel oran, tutar, süre veya yürürlük teyidi yoktur. Teşvik kararlarının ve indirimin bugün hâlâ uygulanıp uygulanmadığı bu kaynaktan doğrulanamadığı için aktif_mi belirsiz bırakıldı.",
+    "alinti": "Elektrik enerjisi gideri indirimi: 09.08.2005 gün ve",
+    "kaynak_url": "https://yigm.ktb.gov.tr/TR-102506/tesvikler.html"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [],
+  "sektorler": ["hizmet"],
+  "tesvil_tutari": "Sayfada oran veya tutar verilmemiştir. Elektrik enerjisi giderlerinde, bölgedeki mesken ve sanayi abonelerine uygulanan tarifelerden en düşüğü ile kendi abone grubuna uygulanan tarife arasındaki farkın Hazinece karşılanması öngörülür. Diğer teşvikler 2634 sayılı Turizmi Teşvik Kanunu ile (teşvik belgesi alınırsa) Hazine Müsteşarlığınca yayımlanan teşvik kararlarına dayanır.",
+  "basvuru_yeri": "Elektrik enerjisi gideri indirimi için belge sahipleri ilk müracaatlarında Bakanlığa (İl Kültür ve Turizm Müdürlüklerine) başvurur.",
+  "basvuru_suresi": "Turizm yatırımı belgesi başvuruları, belgelerin Bakanlığa eksiksiz tesliminden itibaren altmış gün içinde sonuçlandırılır. Teşvik kapsamı için sayfada çağrı/dönem tarihi verilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Turistik tesis yatırımının Bakanlıktan yatırım ve/veya işletme belgesi almış olması gerekir.",
+      "alinti": "Bakanlığımızdan yatırım ve/veya işletme belgesi almış olan turistik tesis yatırımları",
+      "kaynak_url": "https://yigm.ktb.gov.tr/TR-102506/tesvikler.html"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Bakanlık mevzuatı kapsamında kredi uygulaması bulunmaz; destek, belirli niteliklerin sağlanması halinde yatırımlara verilir.",
+      "alinti": "herhangi bir kredi uygulaması bulunmamakta olup ülkemizde gerçekleştirilecek turistik tesis yatırımları",
+      "kaynak_url": "https://yigm.ktb.gov.tr/TR-102506/tesvikler.html"
+    },
+    {
+      "tur": "adim",
+      "metin": "Elektrik enerjisi gideri indirimi için belge sahipleri ilk müracaatlarında İl Kültür ve Turizm Müdürlüklerine başvurmalıdır.",
+      "alinti": "(İl Kültür ve Turizm Müdürlüklerine) başvurmaları gerekir.",
+      "kaynak_url": "https://yigm.ktb.gov.tr/TR-102506/tesvikler.html"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Turizm yatırımı belgesi başvuruları, belgelerin eksiksiz tesliminden itibaren altmış gün içinde sonuçlandırılır.",
+      "alinti": "başvuru belgelerinin Bakanlığa eksiksiz olarak tesliminden itibaren altmış gün içinde sonuçlandırılır.",
+      "kaynak_url": "https://yigm.ktb.gov.tr/TR-9581/turizm-yatirimi-belgesi-talebi.html"
+    },
+    {
+      "tur": "kural",
+      "metin": "Tescilli kültür varlığı niteliğindeki yapılarda yer almayan özel tesislere, tatil sitelerine, butik tatil villalarına, müstakil apart otellere ve pansiyonlara turizm yatırımı belgesi verilemez.",
+      "alinti": "Tescilli kültür varlığı niteliğindeki yapılarda yer almayan özel tesislere, tatil sitelerine, butik tatil villalarına, müstakil apart otellere ve pansiyonlara turizm yatırımı belgesi verilemez.",
+      "kaynak_url": "https://yigm.ktb.gov.tr/TR-9581/turizm-yatirimi-belgesi-talebi.html"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Teşvikler 2634 sayılı Turizmi Teşvik Kanunu ve (teşvik belgesiyle) Hazine Müsteşarlığınca yayımlanan teşvik kararlarına dayanır",
+      "alinti": "2634 sayılı Turizmi Teşvik Kanununda yer alan Teşvikler ile Bakanlar Kurulu Kararı doğrultusunda Teşvik Belgesi almak kaydıyla Hazine Müsteşarlığınca yayımlanan Teşvik kararları ile belirlenen teşviklerden yararlanabilirler.",
+      "kaynak_url": "https://yigm.ktb.gov.tr/TR-102506/tesvikler.html"
+    },
+    {
+      "iddia": "Elektrik gideri indirimi: bölgedeki mesken ve sanayi abonelerinin en düşük tarifesi ile kendi abone grubunun tarifesi arasındaki fark",
+      "alinti": "o bölgedeki mesken ve sanayi abonelerine uygulanan tarifelerden en düşüğü ile kendi abone",
+      "kaynak_url": "https://yigm.ktb.gov.tr/TR-102506/tesvikler.html"
+    },
+    {
+      "iddia": "Tarife farkı Hazinece karşılanır; belge sahipleri ilk müracaatta başvurur",
+      "alinti": "arasındaki farkın Hazinece karşılanması için belge sahiplerinin ilk",
+      "kaynak_url": "https://yigm.ktb.gov.tr/TR-102506/tesvikler.html"
+    },
+    {
+      "iddia": "Elektrik indiriminin dayanağı 2005 tarihli tebliğdir (güncel yürürlük teyidi yok)",
+      "alinti": "Elektrik enerjisi gideri indirimi: 09.08.2005 gün ve",
+      "kaynak_url": "https://yigm.ktb.gov.tr/TR-102506/tesvikler.html"
+    },
+    {
+      "iddia": "Turizm yatırımı belgesi başvuruları altmış gün içinde sonuçlandırılır",
+      "alinti": "başvuru belgelerinin Bakanlığa eksiksiz olarak tesliminden itibaren altmış gün içinde sonuçlandırılır.",
+      "kaynak_url": "https://yigm.ktb.gov.tr/TR-9581/turizm-yatirimi-belgesi-talebi.html"
+    }
+  ]
+}

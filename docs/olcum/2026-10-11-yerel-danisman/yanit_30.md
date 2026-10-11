@@ -27,7 +27,7 @@
 - **Başvuru:** İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu) — https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#hububat-baklagil
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Hayvancılık Destekleri (Tarım Bakanlığı) — profilinize göre engel yok — şartları teyit edin; 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Ziraat Katılım Bankası Katılım Finans Destek Paketi (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim)): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.

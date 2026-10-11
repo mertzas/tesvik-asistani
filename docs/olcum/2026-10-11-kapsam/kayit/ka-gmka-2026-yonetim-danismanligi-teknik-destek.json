@@ -1,0 +1,152 @@
+{
+  "slug": "ka-gmka-2026-yonetim-danismanligi-teknik-destek",
+  "kurum": "Güney Marmara Kalkınma Ajansı",
+  "baslik": "GMKA 2026 Yılı Yönetim Danışmanlığı Teknik Destek Programı (TR22/26/YDTD)",
+  "ozet": "Güney Marmara Bölgesi'nde ticari faaliyet gösteren işletmeler, kooperatifler ve birlikler ile kamu kurumlarının ortağı olduğu işletmelerin üretim, ihracat, planlama, lojistik ve idari süreçlerinde verimliliğini artırmayı hedefleyen teknik destek programıdır. Yararlanıcıya doğrudan mali destek verilmez; uzman/danışman/eğitmen desteği Ajans tarafından sağlanır ve yararlanıcıdan eş finansman talep edilmez. Başvurular ikişer aylık dönemler halinde değerlendirilir; Eylül-Ekim 2026 dönemi için KAYS son başvuru tarihi 31 Ekim 2026 saat 23:59'dur.",
+  "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Program 2026 boyunca ikişer aylık dönemlerle başvuru alıyor; Eylül-Ekim 2026 dönemi son başvuru tarihi 31 Ekim 2026 olduğundan (bugün 11 Ekim 2026) çağrı açıktır.",
+    "alinti": "31 Ekim 2026 Saat 23:59",
+    "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [
+    "Balıkesir",
+    "Çanakkale"
+  ],
+  "sektorler": [
+    "imalat",
+    "hizmet"
+  ],
+  "sirket_turleri": [
+    "kooperatif"
+  ],
+  "tesvil_tutari": "Doğrudan mali destek verilmez; uzman/danışman/eğitmen temini (yol ve konaklama dahil) Ajans tarafından karşılanır, yararlanıcıdan eş finansman talep edilmez. Teknik destek uygulama süresi 6 ay.",
+  "basvuru_yeri": "Kalkınma Ajansları Yönetim Sistemi (KAYS) üzerinden çevrimiçi; taahhütname Balıkesir merkez ya da Çanakkale Yatırım Destek Ofisi'ne teslim edilir.",
+  "basvuru_suresi": "Yıl boyunca başvurulabilir, ikişer aylık dönemler halinde değerlendirilir. Eylül-Ekim 2026 dönemi: KAYS son başvuru 31 Ekim 2026 saat 23:59.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Başvuru sahibi TR22 Güney Marmara Bölgesi'nde (Balıkesir, Çanakkale) kayıtlı olmalı ya da merkezi/yasal şubesi bu bölgede bulunmalıdır.",
+      "alinti": "TR22 Düzey 2 Bölgesi sınırları içinde kayıtlı olmaları veya merkezlerinin ya da yasal şubelerinin bu Bölgede bulunması",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Programa işletmeler, ekonomik faaliyet gösteren kooperatifler ve birlikler (mahalli idare birlikleri hariç) ile kamu iktisadi teşebbüsleri ve kamu kurumlarının ortağı olduğu işletmeler başvurabilir.",
+      "alinti": "Güney Marmara Bölgesi’nde ticari faaliyet gösteren işletmeler, kooperatifler, birlikler (mahalli idare birlikleri hariç), kamu iktisadi teşebbüsleri ve kamu kurumlarının ortağı olduğu işletmelerin",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Yararlanıcıya doğrudan mali destek verilmez; destek eğitim/danışmanlık hizmeti olarak sağlanır.",
+      "alinti": "Teknik destek kapsamında yararlanıcı kuruluşa herhangi bir doğrudan mali destek verilmez.",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Teknik destek faaliyetlerinde yararlanıcıdan eş finansman talep edilmez.",
+      "alinti": "Teknik destek faaliyetlerinde yararlanıcı kuruluştan eş finansman talep edilmez.",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Aynı takvim yılında bir başvuru sahibi en fazla 2 proje için başvurabilir, en fazla 1 projesi desteklenebilir.",
+      "alinti": "en fazla 2 projesi için destek başvurusunda bulunabilir ve bi r başvuru sahibinin en fazla 1 projesi desteklenebilir.",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    },
+    {
+      "tur": "adim",
+      "metin": "Başvuru yalnızca KAYS üzerinden çevrimiçi yapılır; matbu başvuru sunulmaz.",
+      "alinti": "Başvuru sahiplerinin, projelerini destekleyici belgeleriyle birlikte KAYS üzerinden çevrimiçi (online) olarak sunmaları yeterli olup ayrıca matbu halleri sunulmayacaktır.",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Destek almak için değerlendirmede en az 65 puan gerekir.",
+      "alinti": "Teknik destek başvurularının destek almaya hak kazanabilmeleri için en az 65 puan almaları gerekir.",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "Mart-Nisan 2026 dönemi",
+      "acilis": null,
+      "kapanis": "2026-04-30",
+      "on_kayit_son": null,
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf",
+      "alinti": "30 Nisan 2026 Saat 23:59",
+      "notlar": "KAYS son başvuru 30 Nisan 2026 saat 23:59. Dönem kapandı."
+    },
+    {
+      "ad": "Mayıs-Haziran 2026 dönemi",
+      "acilis": null,
+      "kapanis": "2026-06-30",
+      "on_kayit_son": null,
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf",
+      "alinti": "30 Haziran 2026 Saat 23:59",
+      "notlar": "KAYS son başvuru 30 Haziran 2026 saat 23:59. Dönem kapandı."
+    },
+    {
+      "ad": "Temmuz-Ağustos 2026 dönemi",
+      "acilis": null,
+      "kapanis": "2026-08-31",
+      "on_kayit_son": null,
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf",
+      "alinti": "31 Ağustos 2026 Saat 23:59",
+      "notlar": "KAYS son başvuru 31 Ağustos 2026 saat 23:59. Dönem kapandı."
+    },
+    {
+      "ad": "Eylül-Ekim 2026 dönemi",
+      "acilis": null,
+      "kapanis": "2026-10-31",
+      "on_kayit_son": null,
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf",
+      "alinti": "31 Ekim 2026 Saat 23:59",
+      "notlar": "KAYS son başvuru 31 Ekim 2026 saat 23:59."
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "Programın referans numarası ve ilan tarihi",
+      "alinti": "REFERANS NO: TR/22/2026/YDTD İlan Tarihi: 18/02/2026",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    },
+    {
+      "iddia": "Ajansın bölgesi: Balıkesir, Çanakkale (TR22)",
+      "alinti": "Güney Marmara Kalkınma Ajansı (GMKA) | Balıkesir, Çanakkale",
+      "kaynak_url": "https://www.gmka.gov.tr/acik-destek-programlari"
+    },
+    {
+      "iddia": "Teknik destek faaliyetleri 6 ay içinde tamamlanır",
+      "alinti": "hizmet alımı yöntemi ile karşılanması durumunda ise yüklenici ile sözleşme imzalanmasından itibaren altı (6) ay içinde tamamlanır.",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    },
+    {
+      "iddia": "Yıl boyunca başvuru, ikişer aylık dönemlerle değerlendirme",
+      "alinti": "Ajansımıza teknik destek için tüm yıl boyunca başvurabilirsiniz. Ancak, başvurular ikişer aylık dönemler halinde değerlendirilir.",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    },
+    {
+      "iddia": "Desteklenen maliyetler: uzman/danışman/eğitmen temini, yol ve konaklama",
+      "alinti": "Teknik destek kapsamında uzman/danışman/eğitmen temini, yol ve konaklama giderleri toplam maliyet içerisinde yer alacak şekilde sunulması gerekmektedir.",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    },
+    {
+      "iddia": "Program önceliği 1",
+      "alinti": "Öncelik 1: Kuruluşlarda etkin insan kaynakları ve pazarlama yönetim sisteminin oluşturulması",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    },
+    {
+      "iddia": "Program önceliği 2 (iş süreçlerinin geliştirilmesi ve yönetilmesi) ve önceliği 3",
+      "alinti": "amacıyla iş süreçlerinin etkin bir şekilde geliştirilmesi ve yönetilmesi Öncelik 3: Kuruluşlarda ikiz (yeşil ve dijital) dönüşüm uyum süreçlerinin yönetilmesi",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    },
+    {
+      "iddia": "Eylül-Ekim dönemi taahhütname son teslim tarihi",
+      "alinti": "6 Kasım 2026 Saat 17:30",
+      "kaynak_url": "https://www.gmka.gov.tr/dokumanlar/programlar/2026-Yili-Yonetim-Danismanligi-TD-Basvuru-Rehberi.pdf"
+    }
+  ]
+}

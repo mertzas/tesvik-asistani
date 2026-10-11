@@ -50,6 +50,9 @@ BICIM = {"proje", "kredi", "faiz_destegi", "kefalet", "bildirim_prim", "uretim_o
 SEKTOR = {"genel", "arge", "ihracat", "imalat", "e-ticaret", "tarim", "hizmet"}
 SIRKET = {"sahis", "limited", "anonim", "kooperatif", "yok"}
 TUR = {"sart", "belge", "adim", "kural", "bilgi"}
+# Aynı kaynak adresli kayıt atlanır (tur21). Bir liste sayfası birden çok teşviki anlatıyorsa (SGK teşvikler sayfası)
+# sonraki turlar bunu kapatır; o zaman yalnız aynı kurum + başlık tekrar sayılır.
+URL_TEKILLIGI = True
 AYLAR = ["ocak", "şubat", "mart", "nisan", "mayıs", "haziran", "temmuz", "ağustos", "eylül", "ekim", "kasım", "aralık"]
 
 
@@ -187,8 +190,11 @@ def uygula(db, sonuc: dict, dry_run: bool = True) -> int:
         r = sonuc.get(k.get("slug"))
         if not r or not r["kabul"]:
             continue
-        if db.query(Tesvik).filter(Tesvik.kaynak_url == k["kaynak_url"]).first():
+        if URL_TEKILLIGI and db.query(Tesvik).filter(Tesvik.kaynak_url == k["kaynak_url"]).first():
             print(f"[{k['slug']}] aynı kaynak adresli kayıt var; atlandı")
+            continue
+        if db.query(Tesvik).filter(Tesvik.kurum == k["kurum"], Tesvik.baslik == k["baslik"]).first():
+            print(f"[{k['slug']}] aynı kurum ve başlıklı kayıt var; atlandı")
             continue
         liste = [{"tur": m["tur"], "metin": m["metin"], "alinti": m["alinti"], "kaynak_url": m.get("kaynak_url") or k["kaynak_url"],
                   "kaynak_tarihi": str(BUGUN), "dogrulandi": True} for m in r["kontrol_listesi"]]
@@ -212,7 +218,7 @@ def uygula(db, sonuc: dict, dry_run: bool = True) -> int:
                        gerekli_belgeler=[m["metin"] for m in liste if m["tur"] == "belge"],
                        kontrol_listesi=liste, basvuru_bicimi=k["basvuru_bicimi"],
                        durum_notu=f"{NOT}: resmî kaynaktan eklendi; durum: {(k.get('durum') or {}).get('metin', '')}; "
-                                  f"kanıt docs/olcum/2026-10-10-tur21/kayit/{k['slug']}.json + dogrulama.json")
+                                  f"kanıt {DIZIN.relative_to(KOK).as_posix()}/kayit/{k['slug']}.json + dogrulama.json")
             db.add(t)
             db.flush()
             for c in r["cagrilar"]:

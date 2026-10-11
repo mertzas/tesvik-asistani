@@ -1,0 +1,110 @@
+{
+  "slug": "eximbank-sevk-oncesi-ihracat-kredisi",
+  "kurum": "Türk Eximbank",
+  "baslik": "Türk Eximbank Sevk Öncesi İhracat Kredisi (SÖİK) — aracı bankalar üzerinden",
+  "ozet": "Sevk Öncesi İhracat Kredisi (SÖİK), Türk Eximbank'ın aracı bankalar vasıtasıyla kullandırıma sunduğu kredi programıdır. DTSŞ hariç Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan imalatçılar, serbest bölge kullanıcıları ve belirli döviz kazandırıcı hizmet firmaları ihracat taahhüdü karşılığında yararlanır. İşlem bazında alt limit yoktur; aracı bankalar TL kredilerde azami yıllık 1, döviz kredilerinde azami yıllık 0,5 puan aracılık komisyonu ilave edebilir.",
+  "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Eximbank'ın güncel (2026) internet sitesinde kredi programı olarak yayınlanmaktadır; dönemsel çağrıya bağlı değildir.",
+    "alinti": "Sevk Öncesi İhracat Kredisi (SÖİK), ülkemiz ihracatına olan desteğimizi artırmak ve farklı kanallardan ihracatçı firmalarımıza ulaşabilmek için aracı bankalara vasıtasıyla kullandırıma sunmuş olduğumuz kredi programıdır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+  },
+  "basvuru_bicimi": "kredi",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "imalat",
+    "hizmet"
+  ],
+  "tesvil_tutari": "Hibe değil kredi: Eximbank firma bazında limit belirleyebilir; işlem bazında alt limit yoktur. Faiz/kar payı oranları vade, tutar ve para birimine göre belirlenir; aracı bankalar TL kredilerde azami yıllık 1, döviz kredilerinde azami yıllık 0,5 puan aracılık komisyonu ekleyebilir.",
+  "basvuru_yeri": "Türk Eximbank'ın kredi tahsis ettiği aracı bankalar (kredi müracaatı aracı bankalara yapılır)",
+  "basvuru_suresi": "Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç, Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan imalatçı firmalar yararlanır.",
+      "alinti": "Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç olmak üzere, Türkiye’de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan ve ihracatçı aracılığı ile bu malını ihraç eden imalatçı firmaların",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    },
+    {
+      "tur": "sart",
+      "metin": "Serbest bölge kullanıcıları (üretim, alım-satım veya bakım-onarım ruhsatı sahibi) de yararlanabilir.",
+      "alinti": "Türkiye’de kurulu serbest bölgelerde, üretim, alım-satım veya bakım-onarım ruhsatı sahibi kullanıcıların,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Döviz kazandırıcı hizmetler de kapsamdadır; örneğin yurt dışına yönelik müteahhitlik, müşavirlik, yazılım ve mühendislik hizmetleri.",
+      "alinti": "Yurt dışına yönelik olarak gerçekleştirilecek müteahhitlik, müşavirlik, yazılım ve mühendislik hizmetlerinin",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Turizm müesseseleri ve seyahat acentelerinin döviz karşılığı hizmet satışları da kapsamdadır.",
+      "alinti": "Turizm müesseseleri ile seyahat acentelerinin yurt içindeki ve yurt dışındaki turizm faaliyetleri sırasında yaptıkları döviz karşılığı hizmet satışlarının",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Eximbank likidite koşullarını dikkate alarak firma bazında limit belirleyebilir.",
+      "alinti": "Türk Eximbank likidite koşullarını dikkate alarak firma bazında limit belirleyebilir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "İşlem bazında alt limit yoktur.",
+      "alinti": "SÖİK programımız kapsamında işlem bazında herhangi bir alt limit bulunmamaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Aracı bankalar TL kredilerde azami yıllık 1, döviz kredilerinde azami yıllık 0,5 puan aracılık komisyonu ilave edebilir.",
+      "alinti": "Aracı bankalar, faiz ve kar payı oranları üzerine TL kredilerde azami yıllık 1 (bir), döviz kredilerinde azami yıllık 0,5 (yarım) puan aracılık komisyonu ilave edebilirler.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    },
+    {
+      "tur": "adim",
+      "metin": "Evrak seti ile aracı bankalara kredi müracaatı yapılır.",
+      "alinti": "Aşağıdaki evrak seti ile birlikte aracı bankalara kredi müracaatı yapabilirsiniz;",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Kredi Talep Formu, Firma Bilgi Formu, Firma Taahhütnamesi ve Muvafakatname.",
+      "alinti": "Başvuru Belgeleri Kredi Talep Formu Firma Bilgi Formu Firma Taahhütnamesi Muvafakatname",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "İlk defa kredi kullanacak firmalar Kapasite Raporu ve Ticaret Sicil Gazetesi'nin son sayısı gibi ek belgeleri ibraz eder.",
+      "alinti": "İlk defa kredi kullanacak olan firmalar tarafından; Kapasite Raporu’nun, Firma unvanının yer aldığı ilgili Ticaret Sicil Gazetesi’nin son sayısının,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Vade seçenekleri Eximbank internet sitesinde faiz/kar payı oranlarıyla birlikte yayınlanır.",
+      "alinti": "Vade seçenekleri, internet sitemizde faiz/kar payı oranları ile birlikte yayınlanmaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Faiz/kar payı oranları kredi vadesi, kredi tutarı ve para birimine göre belirlenir; güncel oranlar Eximbank'ın 'Faiz ve Kar Payı Oranları' sayfasında yayınlanır.",
+      "alinti": "Kredilere uygulanacak faiz/kar payı oranları; kredi vadesi, kredi tutarı ve para birimine göre belirlenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "İşlem bazında alt limit yok",
+      "alinti": "SÖİK programımız kapsamında işlem bazında herhangi bir alt limit bulunmamaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    },
+    {
+      "iddia": "Aracı banka komisyonu: TL için azami yıllık 1, döviz için 0,5 puan",
+      "alinti": "Aracı bankalar, faiz ve kar payı oranları üzerine TL kredilerde azami yıllık 1 (bir), döviz kredilerinde azami yıllık 0,5 (yarım) puan aracılık komisyonu ilave edebilirler.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi"
+    }
+  ]
+}

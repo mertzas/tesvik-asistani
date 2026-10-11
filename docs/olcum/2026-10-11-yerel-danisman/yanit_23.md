@@ -22,9 +22,8 @@
 
 **Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
 - TARIM KEFALET DESTEK PROGRAMI (KGF): İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi 20 Milyon TL (azami 60 ay), 12 ay ödemesiz; %80 kefalet; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-
-**Size kapalı ya da başvuruya kapalı programlar:**
-- Tasarruflu Tarımsal Sulama Sistemleri (TSS) Hibe Desteği (Tarım Bakanlığı) — kapalı: program başvuruya açık değil (TRGM duyurusu (29.04.2026): TSS hibe başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı)
+- Sektörel Ticaret Heyeti ve Alım Heyeti Desteği (5973 sayılı Karar m.24) (Ticaret Bakanlığı): Sektörel ticaret heyeti: giderlerin %50'si, faaliyet başına 1.500.000 TL'ye kadar.; Çağrı yoktur; işbirliği kuruluşu program başlangıcından en az 1 ay önce onay başvurusu yapar, faaliyet bitiş tarihinden itibaren en geç 3 ay içinde ödeme başvurusunu iletir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Pazara Giriş Projesi Hazırlama Desteği (5973 sayılı Karar m.5) (Ticaret Bakanlığı): Danışmanlık ve rapor giderlerinin %50'si, proje başına 200.000 TL'ye kadar (Karar metnindeki tutar; üst limit her takvim yılı başında güncellenir).; Çağrı yoktur; proje başvurusu DYS/KEP üzerinden yapılır ve Bakanlık ön onayıyla başlar. Ödeme başvurusu ihracat planının onay tarihinden itibaren 6 (altı) ay içinde yapılmalıdır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (TARIM KEFALET DESTEK PROGRAMI): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.

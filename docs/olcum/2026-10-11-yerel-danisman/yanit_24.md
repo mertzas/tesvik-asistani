@@ -22,6 +22,7 @@
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) (TUBITAK) — kapalı: program başvuruya açık değil (TÜBİTAK, BiGG 1. aşamasını 2026-2028 döneminde 1812 Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) çerçevesinde yürütüyor (1612 çağrı sayfası); 1512 program sayfası erişime kapalı. Yeni başvuru için 1812 çağrılarına bakın)
+- Accelerate İzmir Uluslararası Büyüme Odaklı Hızlandırma Programı — 2026 / 5. Dönem (İzmir Kalkınma Ajansı) — kapalı: program başvuruya açık değil (Son başvuru tarihi 8 Mart 2026 olup geçmiştir)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Engel:** hızlandırma programına kabul tarihinde herhangi bir sermaye şirketinin ya da şahıs işletmesinin ortağı olmamak şartı (beyan: ortaklığınız var; borsadaki hisseler ve kitle fonlaması payları sayılmaz).

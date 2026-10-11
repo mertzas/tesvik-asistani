@@ -1,0 +1,103 @@
+{
+  "slug": "eximbank-ihracata-yonelik-isletme-sermayesi-kredisi",
+  "kurum": "Türk Eximbank",
+  "baslik": "Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi",
+  "ozet": "Kredi başvuru tarihinden azami 180 gün öncesine kadar gerçekleştirilen hammadde, ara malı alımı, nihai mal, nihai ürün ve 1 aylık dönem için elektrik, su, doğal gaz, personel masrafları gibi işletme sermayesi ihtiyaçları için harcama belgelerine dayalı finansman sağlayan kredi programıdır. İhracat veya döviz kazandırıcı hizmet taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır; Kesin Teminat Mektubu karşılığında kullandırılır.",
+  "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Eximbank'ın güncel (2026) internet sitesinde kredi ürünü olarak yayınlanmaktadır; limiti olan firmalar şubeleri üzerinden başvurabilir, çağrıya bağlı değildir.",
+    "alinti": "Bankamızda geçerli kredi limitinizin bulunması durumunda, kredi talep formu ve onaylı harcama listesi ile bağlı bulunduğunuz Şubemiz üzerinden başvuruda bulunabilirsiniz.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+  },
+  "basvuru_bicimi": "kredi",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "imalat",
+    "hizmet"
+  ],
+  "tesvil_tutari": "Hibe değil kredi: tutar firma bazında Banka tarafından yapılan tahsis çalışmasıyla belirlenir; faiz/kar payı oranları vade, tutar ve para birimine göre belirlenir. Gerçekleştirilmesi gereken ihracat taahhüdü tutarı, 5 yıla kadar vadeli kredilerde kredi tutarının (döviz kredilerde anapara, faiz ve varsa masraflar toplamının) 1 katı, 5 yıldan uzun vadeli kredilerde 1,5 katıdır.",
+  "basvuru_yeri": "Türk Eximbank şubeleri (geçerli kredi limiti yoksa analiz başvuru evrakları Eximbank'a iletilir)",
+  "basvuru_suresi": "Dönemsel çağrı yoktur; geçerli kredi limiti olan firma kredi talep formu ve onaylı harcama listesiyle şubeye başvurur. Harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar olabilir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Türkiye'de yerleşik imalatçı-ihracatçı, ihracata yönelik mal üreten imalatçı ve ihracatçı vasfına haiz firmalar, Türkiye menşeli veya Dahilde İşleme Rejimi kapsamında ithal edilen malların ihracı için yararlanabilir.",
+      "alinti": "Türkiye’de yerleşik imalatçı-ihracatçı, ihracata yönelik mal üreten imalatçı ve ihracatçı vasfına haiz firmalar kredi vadesi içerisinde Türkiye menşeli veya Dahilde İşleme Rejimi kapsamında ithal edilen",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Finanse edilen harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar yapılmış olmalıdır.",
+      "alinti": "kredi başvuru tarihinden azami 180 gün öncesine kadar olan sürede gerçekleştirdiğiniz hammadde, ara malı alımı, nihai mal, nihai ürün ve 1 aylık dönem için elektrik, su, doğal gaz, personel masrafları gibi işletme sermayesi ihtiyaçları için finansman sağlayan harcama belgelerine dayalı",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "İhracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.",
+      "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Taahhüt tutarı: 5 yıla kadar vadeli kredilerde 1 katı, 5 yıldan uzun vadeli kredilerde 1,5 katı.",
+      "alinti": "Gerçekleştirilmesi gereken taahhüt tutarı, Döviz kredilerde kullandırılan kredinin anapara, faiz ve varsa masraflar toplam tutarının, TL kredilerde ise kredi anapara tutarının; • 5 yıla kadar vadeli kredilerde 1 katıdır, • 5 yıldan uzun vadeli kredilerde 1,5 katıdır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "1 aylık dönem dışındaki elektrik/su/doğalgaz/personel masrafları, taşeron, genel yönetim, pazarlama, sigorta ve yazılım harcamaları fonlanamaz.",
+      "alinti": "1 aylık dönem dışında sunulan elektrik, su, doğalgaz ve personel masrafları, taşeron maliyetleri, genel yönetim giderleri, pazarlama giderleri, sigorta ve yazılım gibi harcamalar ihracata yönelik işletme sermayesi kredisi kapsamında fonlanamaz.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Teminat: Kesin Teminat Mektubu.",
+      "alinti": "Kesin Teminat Mektubu karşılığında kullandırılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Kredi Talep Formu ve YMM/SMMM onaylı Harcama Belgeleri Listesi (harcamalar faturaya bağlanmış olmalı).",
+      "alinti": "Harcama Belgeleri Listesi (Harcamaların faturaya bağlanmış olması gerekmektedir.), (Yeminli Mali Müşavir (YMM)/Serbest Muhasebeci Mali Müşavir (SMMM) onaylı)",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    },
+    {
+      "tur": "adim",
+      "metin": "Geçerli kredi limiti olan firma, kredi talep formu ve onaylı harcama listesiyle şubeye başvurur.",
+      "alinti": "Bankamızda geçerli kredi limitinizin bulunması durumunda, kredi talep formu ve onaylı harcama listesi ile bağlı bulunduğunuz Şubemiz üzerinden başvuruda bulunabilirsiniz.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Taahhüt yerine getirilmezse taahhüt cezası tahakkuk eder ve tahsil edilir.",
+      "alinti": "İhracat/döviz taahhüdünün kredinin orijinal vadesi sonunda, belirlenen diğer şartlar çerçevesinde, kısmen veya tamamen gerçekleştirilmemiş olması halinde taahhüdün gerçekleştirilmeyen kısmı için taahhüt cezası tahakkuk ve tahsil edilir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Faiz/kar payı oranları kredi vadesi, kredi tutarı ve para birimine göre belirlenir; güncel oranlar Eximbank'ın 'Faiz ve Kar Payı Oranları' sayfasında yayınlanır.",
+      "alinti": "Kredilere uygulanacak faiz/kar payı oranları; kredi vadesi, kredi tutarı ve para birimine göre belirlenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Harcamalar başvuru tarihinden azami 180 gün öncesine kadar; 1 aylık dönem işletme giderleri",
+      "alinti": "kredi başvuru tarihinden azami 180 gün öncesine kadar olan sürede gerçekleştirdiğiniz hammadde, ara malı alımı, nihai mal, nihai ürün ve 1 aylık dönem için elektrik, su, doğal gaz, personel masrafları gibi işletme sermayesi ihtiyaçları için finansman sağlayan harcama belgelerine dayalı",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    },
+    {
+      "iddia": "Taahhüt 24 ay içinde kapatılır",
+      "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    },
+    {
+      "iddia": "Taahhüt tutarı 1 kat / 1,5 kat",
+      "alinti": "Gerçekleştirilmesi gereken taahhüt tutarı, Döviz kredilerde kullandırılan kredinin anapara, faiz ve varsa masraflar toplam tutarının, TL kredilerde ise kredi anapara tutarının; • 5 yıla kadar vadeli kredilerde 1 katıdır, • 5 yıldan uzun vadeli kredilerde 1,5 katıdır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi"
+    }
+  ]
+}

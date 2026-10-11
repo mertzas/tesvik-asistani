@@ -1,0 +1,153 @@
+{
+  "slug": "kosgeb-yesil-sanayi",
+  "kurum": "KOSGEB",
+  "baslik": "Yeşil Sanayi Destek Programı (Dünya Bankası destekli Türkiye Yeşil Sanayi Projesi, Bileşen 1)",
+  "ozet": "Dünya Bankası desteğiyle yürütülen Türkiye Yeşil Sanayi Projesi kapsamında KOSGEB'in sanayi KOBİ'lerinin yeşil dönüşüm faaliyetlerine verdiği geri ödemeli proje desteği. İki alt bileşen vardır: sanayi KOBİ'lerinin güneş enerjisi yatırımları (çatı üstü ve tesis içi bileşik GES) ve temiz ve döngüsel ekonomi yatırımları (enerji, su, hammadde verimliliği, atık geri dönüşümü, endüstriyel simbiyoz vb.). Destek proje teklif çağrılarıyla verilir; sayfada listelenen iki çağrının başvuru dönemi çağrı belgelerine göre kapanmıştır.",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9022/yesil-sanayi-destek-programi",
+  "aktif_mi": false,
+  "durum": {
+    "metin": "Program sayfası iki çağrıyı 'Yürürlükte Olan Çağrılar' başlığı altında listeliyor, ancak her iki çağrı belgesinde başvuru dönemi Aralık 2023 - Kasım 2024 arası olarak yazıyor ve kapanmıştır; sayfada ve çağrı belgelerinde yeni/açık bir çağrı tarihi yok. Program yürürlükten kaldırılanlar listesinde değil; çağrılar KOSGEB'in internet adresinde ilan edilir.",
+    "alinti": "08 Aralık 2023 – 30 Kasım 2024 (Başvuru Tarihleri)",
+    "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2024/2024.06.16/Proje_Teklif_%C3%87a%C4%9Fr%C4%B1s%C4%B1_1.pdf"
+  },
+  "basvuru_bicimi": "proje",
+  "bolge_kisitli": [],
+  "sektorler": ["imalat"],
+  "tesvil_tutari": "Geri ödemeli proje desteği. Alt bileşen 1.1 (güneş enerjisi): işletme başına en fazla 500.000 ABD Doları karşılığı TL, destek oranı %60; alt bileşen 1.2 (temiz ve döngüsel ekonomi): işletme başına en fazla 150.000 ABD Doları karşılığı TL, destek oranı %70. Çağrılarda ilan edilen TL üst limitleri: güneş enerjisi çağrısı 14.000.000 TL, temiz ve döngüsel ekonomi çağrısı 4.000.000 TL; proje süresi en az 8 ay, en fazla 12 ay. Depremden etkilenen illerde destek oranı azami %90",
+  "basvuru_yeri": "KOBİ Bilgi Sistemi (KBS) / KOSGEB e-Hizmetler üzerinden online proje başvurusu",
+  "basvuru_suresi": "Çağrı dönemlerine göre; sayfadaki iki çağrının başvuru dönemi 08 Aralık 2023 - 30 Kasım 2024 olup kapanmıştır. Yeni çağrılar KOSGEB'in internet adresinde ilan edilir",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Yalnızca küçük ve orta büyüklükteki işletmeler başvurabilir; mikro işletmeler başvuramaz",
+      "alinti": "Mikro ölçekli işletmeler başvuru yapamaz.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Başvuru tarihinde en az 2 yıldır faaliyette olmalı",
+      "alinti": "En az 2 yıldır faaliyet gösteriyor olması.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Sermaye sahipliğinin %75 veya fazlası ile en büyük hissedar özel sektör olmalı",
+      "alinti": "İşletmenin sermaye sahipliğinin %75 veya daha fazlası ile en büyük hissedarının özel sektör olması",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Mali bilanço veya net satış proje bütçesinin üzerinde olmalı",
+      "alinti": "İşletmenin proje bütçesinin üzerinde mali bilanço veya net satışa sahip olması.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Güneş enerjisi alt bileşeni (1.1) için yıllık enerji tüketimi en az 20 TEP olmalı",
+      "alinti": "Alt bileşen 1.1 için yıllık enerji tüketiminin en az 20 Ton Eşdeğeri Petrol (TEP)",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Güneş enerjisi çağrısında imalat sektörünün tamamı hedef sektördü (diğer NACE grupları çağrı belgesinde sayılmış)",
+      "alinti": "İmalat Sektörünün Tümü (Kısım C)",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2024/2024.06.16/Proje_Teklif_%C3%87a%C4%9Fr%C4%B1s%C4%B1_1.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Dünya Bankası'nın uygun bulmadığı sektör ve faaliyetlerdeki işletmeler başvuramaz",
+      "alinti": "Ana faaliyet kodu, Dünya Bankası Finansmanlı Projelerde Uygun Bulunmayan Sektör ve Faaliyetler Tablosunda yer alan veya bu tabloda yasaklanan faaliyetlerde bulunan işletmeler bu programa başvuramaz.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2024/2024.06.16/Proje_Teklif_%C3%87a%C4%9Fr%C4%B1s%C4%B1_1.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Destek geri ödemelidir; ödeme aşamasında destek tutarı kadar teminat mektubu veya KGF kefalet mektubu gerekir",
+      "alinti": "Destek için, destek ödeme aşamasında destek tutarı kadar teminat mektubu veya KGF kefalet mektubu ibraz edilmek zorundadır.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2024/2024.06.16/Proje_Teklif_%C3%87a%C4%9Fr%C4%B1s%C4%B1_1.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Geri ödeme: proje bitişinden sonra 12 ay ödemesiz, ardından dörder aylık dönemlerle 6 eşit taksit (güneş enerjisi çağrısı belgesine göre)",
+      "alinti": "Geri ödemeler, proje süresinin bitiş tarihinden sonra 12 ayı ödemesiz olmak üzere, dörder aylık dönemler halinde 6 eşit taksitte yapılır.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2024/2024.06.16/Proje_Teklif_%C3%87a%C4%9Fr%C4%B1s%C4%B1_1.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Güneş enerjisi çağrısında proje toplam bütçesi en az 1.000.000 TL olmalıydı",
+      "alinti": "Proje toplam bütçesi en az 1.000.000 TL olmalıdır.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2024/2024.06.16/Proje_Teklif_%C3%87a%C4%9Fr%C4%B1s%C4%B1_1.pdf"
+    }
+  ],
+  "cagrilar": [
+    {
+      "ad": "Sanayi KOBİ’lerinin Güneş Enerjisi Yatırımlarının Desteklenmesi Proje Teklif Çağrısı",
+      "acilis": "2023-12-08",
+      "kapanis": "2024-11-30",
+      "on_kayit_son": null,
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2024/2024.06.16/Proje_Teklif_%C3%87a%C4%9Fr%C4%B1s%C4%B1_1.pdf",
+      "alinti": "08 Aralık 2023 – 30 Kasım 2024 (Başvuru Tarihleri)",
+      "notlar": "Çağrı belgesi sistemin 30 Kasım 2024 günü saat 23:59'da başvuruya kapatılacağını belirtiyor"
+    },
+    {
+      "ad": "Sanayide Temiz ve Döngüsel Ekonomi Proje Teklif Çağrısı",
+      "acilis": "2023-12-08",
+      "kapanis": "2024-11-30",
+      "on_kayit_son": null,
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2024/2024.06.16/Proje_Teklif_%C3%87a%C4%9Fr%C4%B1s%C4%B1_2.pdf",
+      "alinti": "08 Aralık 2023 – 30 Kasım 2024 (Başvuru Tarihleri)",
+      "notlar": null
+    }
+  ],
+  "alintilar": [
+    {
+      "iddia": "Alt bileşen 1.1 işletme başına destek üst limiti 500.000 ABD Doları karşılığı TL",
+      "alinti": "Alt Bileşen 1.1 kapsamında her bir işletme için destek üst limiti 500.000 ABD Doları tutarın TL karşılığıdır.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    },
+    {
+      "iddia": "Alt bileşen 1.1 destek oranı %60",
+      "alinti": "Bu alt bileşen için destek oranı, kurul tarafından belirlenen desteklemeye esas tutar üzerinden % 60’tır.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    },
+    {
+      "iddia": "Alt bileşen 1.2 işletme başına destek üst limiti 150.000 ABD Doları karşılığı TL",
+      "alinti": "Alt Bileşen 1.2 kapsamında, her bir işletme için destek üst limiti 150.000 ABD Doları tutarın TL karşılığıdır.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    },
+    {
+      "iddia": "Alt bileşen 1.2 destek oranı %70",
+      "alinti": "Bu alt bileşen için destek oranı, kurul tarafından belirlenen desteklemeye esas tutar üzerinden % 70’tir",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    },
+    {
+      "iddia": "Depremden etkilenen illerde destek oranı azami %90",
+      "alinti": "tüm giderler için uygulanacak destek oranı azami %90’dır.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    },
+    {
+      "iddia": "Geri ödemeli destek tanımı",
+      "alinti": "Geri ödemeli destek: Program kapsamında işletmelere geri tahsil edilmek üzere teminat karşılığı sağlanan desteği",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    },
+    {
+      "iddia": "Çağrı bazlı TL üst limitleri ve oranlar (güneş enerjisi 14.000.000 TL, temiz ve döngüsel ekonomi 4.000.000 TL)",
+      "alinti": "Destek Üst Limiti 14.000.000 TL 4.000.000 TL Destek Oranı %60* %70*",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9022/yesil-sanayi-destek-programi"
+    },
+    {
+      "iddia": "Çağrılarda proje süresi en az 8 ay, en fazla 12 ay",
+      "alinti": "En az 8 ay ve en fazla 12 ay",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9022/yesil-sanayi-destek-programi"
+    },
+    {
+      "iddia": "Genel proje süresi çağrıda belirlenir (en az 8, en fazla 24 ay)",
+      "alinti": "Program kapsamında desteklenecek proje süresi en az 8 ay ve en fazla 24 ay olmak kaydıyla proje teklif çağrısında belirtilir.",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    },
+    {
+      "iddia": "Başvuru KBS üzerinden yapılır",
+      "alinti": "İşletme, proje teklif çağrısında belirtilen hususlar ve takvime uygun şekilde Proje Başvuru Formunu KBS üzerinden doldurarak",
+      "kaynak_url": "https://webdosya.kosgeb.gov.tr/Content/Upload/Dosya/YE%C5%9E%C4%B0L%20SANAY%C4%B0%20DP/2026/Yes%CC%A7il_Sanayi_Destek_Program%C4%B1_Yo%CC%88nergesi_.pdf"
+    }
+  ]
+}

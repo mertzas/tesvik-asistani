@@ -22,8 +22,8 @@
 
 **Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
 - KOBİ Dijital Dönüşüm Destek Programı (KOSGEB): ₺1.000.000 - ₺20.000.000 kredi (faiz desteği geri ödemesiz); Sürekli açık başvuru (24 aylık program süresi içinde kullanım gerekir) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) (KOSGEB): Bağımsız değerlendirme desteği %100 oranında (geri ödemesiz), en fazla 50.000 TL; Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında belirlenen sürelerde (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - YÖNDE - Yönderlik ve Değerlendirme Destek Programı (KOSGEB): %100 geri ödemesiz; program üst limiti toplam 700.000 TL (hizmet başına 20.000–150.000 TL; kalemler 40.000/200.000/40.000/450.000 TL); Sayfada başvuru dönemi belirtilmemiştir. Başvurular en geç 15 gün içinde kontrol edilir; destek, başvurunun KOSGEB'ce onaylandığı tarihte başlar. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- DİJİTAL KEFALET DESTEK PROGRAMI (KGF): %80 kefalet; şahıs 2,2 Milyon / tüzel 5 Milyon TL; yıllık %2; başvuru ücreti 10.000 TL; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (KOBİ Dijital Dönüşüm Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.

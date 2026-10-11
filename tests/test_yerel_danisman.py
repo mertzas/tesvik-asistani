@@ -1233,3 +1233,36 @@ def test_ihracat_usd_esigi_ciroyla_karsilastirilir():
 def test_odemesiz_donem_tarih_sorusu_sayilmaz():
     assert "tarih" not in yerel_danisman.niyetler("Kredi ne kadar, vadesi ve ödemesiz dönemi nedir?")
     assert "tarih" in yerel_danisman.niyetler("Başvuru dönemi ne zaman?")
+
+
+
+def test_sorudaki_ihtiyac_profil_hedefinin_onunde(veri):
+    """Kapsam ölçümü 2026-10-11: hedefleri ihracat olan profil "personel alırsak" diye sorunca SGK teşviki kart
+    olmalı; kredi ürünü değil."""
+    _ek(veri, Tesvik(id=185, kurum="SGK / İŞKUR", baslik="İstihdam Teşviki T", ozet="istihdam prim desteği",
+                     detay="işveren prim desteği", aktif_mi=True, kaynak_url="https://sgk/185",
+                     uygunluk_kriterleri={"sektorler": ["genel"], "tutar_niteligi": "prim desteği"}))
+    y = _yanit(veri, "Yeni personel alırsak hangi teşvikler var?", [185, 2, 4],
+               _ltd(hedefler=["ihracat", "finansman"]))
+    kartlar = re.findall(r"^\*\*(.+?) — ", y, re.M)
+    assert kartlar and kartlar[0] == "İstihdam Teşviki T"
+
+
+
+def test_harfleri_aralikli_alinti_gosterilmez():
+    m = {"tur": "sart", "metin": "Proje süresi en az 12, en çok 18 ay", "alinti": "A s g a r i 1 2 a y , a z a m i 1 8",
+         "dogrulandi": True}
+    assert yerel_danisman._madde_metni(m) == "Proje süresi en az 12, en çok 18 ay"
+    m2 = {**m, "alinti": "Asgari 12 ay, azami 18 aydır."}
+    assert "resmî metin" in yerel_danisman._madde_metni(m2)
+
+
+
+def test_yil_ile_baslayan_baslik_adiyla_taninir():
+    assert yerel_danisman._baslik_jetonlari("2026 Yılı Turizm Ücret Desteği (özel tesisler)")[:3] == [
+        "turizm", "ucret", "destegi"]
+    t = Tesvik(id=901, baslik="2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli tesisler)", kurum="SGK / İŞKUR")
+    diger = Tesvik(id=902, baslik="2026 Yılı Asgari Ücret Desteği", kurum="SGK / İŞKUR")
+    # küçük test verisinde "ücret" nadir kelime sayılıp diğer başlığı da getirebilir; aranan program ilk sırada olmalı
+    bulunan = yerel_danisman.adi_gecen_programlar("Turizm ücret desteği 2026'da ne kadar?", [t, diger])
+    assert bulunan and bulunan[0].id == 901

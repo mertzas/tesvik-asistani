@@ -57,9 +57,7 @@
 - **Başvuru:** Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi)); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - Girişimci Destek Programı (KOSGEB) — belirlenemedi (profilde karşılığı olmayan kilit şart: İş Kurma Desteği: KOSGEB destekli sektörde faaliyet gösteren 0-1 yaş işletme); İş Geliştirme çağrısı kapandı (08.05.2026); programın diğer destekleri ya da aşamaları için kayıtlarımızda çağrı tarihi yok, kurumdan teyit edin
-- KOSGEB Geri Ödemeli Destekleri (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: KOSGEB tarafından onaylanmış bir destek ödemesi almaya hak kazanmış KOBİ olmak); Sürekli (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı

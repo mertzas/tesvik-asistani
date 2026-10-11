@@ -1,0 +1,119 @@
+{
+  "slug": "iskur-isbasi-egitim-programi",
+  "kurum": "SGK / İŞKUR",
+  "baslik": "İŞKUR İşbaşı Eğitim Programı (işverene yönelik: katılımcı cep harçlığı ve sigorta primi İŞKUR tarafından karşılanır)",
+  "ozet": "İşbaşı eğitim programı, nitelikli işgücü bulmakta zorlanan işverenlere işe alacakları kişileri işyerinde belirli bir süre eğitim vererek yetiştirme imkânı sunar. Katılımcıya günlük cep harçlığı İŞKUR tarafından ödenir; program süresince genel sağlık sigortası ve iş kazası/meslek hastalığı primleri de İŞKUR tarafından karşılanır. İşveren en az beş sigortalı çalışana sahip olmalı ve katılımcıların en az %60'ını belirli bir süre istihdam etmeyi taahhüt etmelidir.",
+  "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Program İŞKUR işveren sayfasında güncel olarak yayımlanmaktadır; imalat işyerleri için hafifletilmiş istihdam taahhüdü 31/12/2026 tarihine kadar geçerlidir.",
+    "alinti": "31/12/2026 tarihine kadar imalat sektöründe faaliyet gösteren özel sektör işyerleri için istihdam taahhüt oranı en az %50 ve istihdam yükümlülük süresi ise 60 günden az olmamak üzere program süresinin en az bir buçuk katı kadar uygulanacaktır",
+    "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [],
+  "sektorler": ["genel"],
+  "tesvil_tutari": "Katılımcıya İŞKUR tarafından fiilen katılınan gün üzerinden cep harçlığı: iş arayan statüsünde günlük 1.079,83 TL, lise ve altı örgün eğitime devam eden öğrenciye 809,87 TL, işsizlik ödeneği alana 539,91 TL; geleceğin mesleklerinde sırasıyla 1.403,78 TL, 1.052,83 TL ve 701,89 TL. Meslek lisesi mezunlarına ve Her Meslekte Kadın Eli Projesi kapsamındaki kadın katılımcılara %30 artırımlı. Program süresince genel sağlık sigortası ve iş kazası meslek hastalıklarına ilişkin sigorta primleri İŞKUR tarafından ödenir.",
+  "basvuru_yeri": "81 ilde bulunan Çalışma ve İş Kurumu İl Müdürlükleri ile Hizmet Merkezleri veya İŞKUR E-Şube.",
+  "basvuru_suresi": "Sayfada sabit bir başvuru dönemi belirtilmemiştir; şartları sağlayan işverenler başvuru yapabilir. Program süresi bilişim ve imalatta en fazla 6 ay, diğer sektörlerde en fazla 3 ay, geleceğin mesleklerinde en fazla 9 aydır.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "İşverenin en az beş sigortalı çalışanı olmalıdır.",
+      "alinti": "En az beş sigortalı çalışana sahip olmak,",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "tur": "sart",
+      "metin": "Katılımcıların en az %60'ını, en az 60 gün olmak üzere program süresinin en az iki katı süreyle istihdam etme taahhüdü verilir.",
+      "alinti": "60 günden az olmamak üzere program süresinin en az iki katı kadar süreyle istihdam etmeyi taahhüt etmek.",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "tur": "sart",
+      "metin": "Kamu kurumu olmayan, kısa çalışma ödeneğinden ve ücret garanti fonundan yararlanmayan işverenler başvurabilir.",
+      "alinti": "Kamu kurumu olmayan, kamu kurumu teşkilatı içerisinde yer almayan, kısa çalışma ödeneğinden ve ücret garanti fonundan yararlanmayan işverenler programa başvurabilmektedirler.",
+      "kaynak_url": "https://www.iskur.gov.tr/en/sikca-sorulan-sorular/aktif-isgucu-hizmetleri/isverenler-icin-isbasi-egitimi-programindan-faydalanma-sartlari-nelerdir/"
+    },
+    {
+      "tur": "kural",
+      "metin": "Aynı ilde ve aynı vergi numarası altındaki işyerlerinde çalıştırılan sigortalı sayısının %30 oranına kadar katılımcı talep edilebilir.",
+      "alinti": "İşverenler aynı ilde ve aynı vergi numarası altında yer alan işyerlerinde çalıştırdıkları sigortalı sayılarının %30",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "tur": "kural",
+      "metin": "Program süresi bilişim ve imalatta en fazla 6 ay, diğer sektörlerde en fazla 3 aydır.",
+      "alinti": "Program süresi bilişim ve imalat sektörlerindeki işyerleri ve mesleklerde en fazla 6 ay, diğer sektörlerde ise en fazla 3 aydır.",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "tur": "kural",
+      "metin": "Geleceğin mesleklerinde düzenlenen programlarda süre en fazla 9 ay olarak uygulanabilir.",
+      "alinti": "Geleceğin mesleklerinde düzenlenen işbaşı eğitim programlarında ise program süresi en fazla 9 ay olarak uygulanabilmektedir.",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "tur": "belge",
+      "metin": "İşverenin işbaşı eğitim programı düzenlenecek ilde aynı veya yakın meslekte sigortalı çalıştırdığını kanıtlayan belge sunulur.",
+      "alinti": "Aynı Meslekte Çalışanı Olduğuna Dair Belge; işverenin işbaşı eğitim programı düzenlenecek ilde aynı veya yakın meslekte sigortalı çalıştırdığını kanıtlayan belge.",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "tur": "adim",
+      "metin": "Başvuru Kurum sistemi üzerinden yapılır; başvuru öncesinde gerekli belgeler hazırlanır.",
+      "alinti": "Başvurular Kurum sistemi üzerinden gerçekleştirilecek olup işverenlerin başvuru öncesinde aşağıdaki belgeleri hazırlaması gerekmektedir.",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "tur": "adim",
+      "metin": "Başvuru 81 ildeki Çalışma ve İş Kurumu İl Müdürlükleri, Hizmet Merkezleri veya İŞKUR E-Şube üzerinden yapılır.",
+      "alinti": "İşbaşı eğitim programlarına başvuru şartlarını sağlayan tüm işverenler, 81 ilde bulunan Çalışma ve İş Kurumu İl Müdürlükleri ile Hizmet Merkezlerinden ve İŞKUR E-Şube üzerinden başvuruda bulunabilmektedirler.",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "İşverenin yaptığı ve aylık brüt asgari ücretin yarısını geçmeyen fiili ödemeler gelir vergisi matrahından indirilebilir.",
+      "alinti": "aylık brüt asgari ücretin yarısını geçmeyen fiili ödemelerin",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "İş arayan statüsündeki katılımcıya günlük 1.079,83 TL, lise ve altı öğrenciye 809,87 TL, işsizlik ödeneği alana 539,91 TL",
+      "alinti": "İş arayan statüsündeki katılımcılara günlük 1.079,83 TL, lise ve altı örgün eğitime devam eden öğrencilere 809,87 TL ve işsizlik ödeneği alanlara günlük 539,91 TL cep harçlığı ödenmektedir.",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "iddia": "Geleceğin mesleklerinde günlük 1.403,78 TL, 1.052,83 TL ve 701,89 TL",
+      "alinti": "Geleceğin meslekleri olarak belirlenen mesleklerde düzenlenen programlarda katılımcılara günlük 1.403,78 TL, lise ve altı örgün eğitime devam eden öğrencilere 1.052,83 TL ve işsizlik ödeneği alanlara günlük 701,89 TL cep harçlığı ödenmektedir.",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "iddia": "Meslek lisesi mezunlarına %30 artırımlı cep harçlığı",
+      "alinti": "cep harçlığı ödemeleri %30 artırımlı yapılmaktadır.",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "iddia": "Her Meslekte Kadın Eli Projesi kapsamında kadın katılımcılara %30 artırımlı cep harçlığı",
+      "alinti": "kadın katılımcılara %30 artırımlı cep harçlığı ödenmektedir.",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "iddia": "Program süresince genel sağlık sigortası ve iş kazası meslek hastalıkları primleri İŞKUR tarafından ödenir",
+      "alinti": "genel sağlık sigortası ve iş kazası meslek hastalıklarına ilişkin sigorta primleri İŞKUR tarafından ödenmektedir.",
+      "kaynak_url": "https://www.iskur.gov.tr/sikca-sorulan-sorular/aktif-isgucu-hizmetleri/isbasi-egitimi-programi-suresince-sigortam-karsilanir-mi/"
+    },
+    {
+      "iddia": "Katılımcıların en az %60'ını istihdam taahhüdü (imalatta 31/12/2026'ya kadar %50)",
+      "alinti": "Katılımcıların en az %60",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    },
+    {
+      "iddia": "Başvuru 81 ilde İl Müdürlükleri/Hizmet Merkezleri veya İŞKUR E-Şube üzerinden yapılır",
+      "alinti": "81 ilde bulunan Çalışma ve İş Kurumu İl Müdürlükleri ile Hizmet Merkezlerinden ve İŞKUR E-Şube üzerinden başvuruda bulunabilmektedirler.",
+      "kaynak_url": "https://www.iskur.gov.tr/isveren/isbasi-egitim-programlari/"
+    }
+  ]
+}

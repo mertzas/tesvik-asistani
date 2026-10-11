@@ -1,0 +1,63 @@
+{
+  "slug": "tob-suru-yoneticisi-istihdam",
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Sürü Yöneticisi (Çoban) İstihdam Desteği",
+  "ozet": "Temel destek şartlarını sağlayan en az 150 baş kuzu/oğlağı bulunan küçükbaş hayvancılık işletmelerine, en fazla bir sürü yöneticisi için, sertifikalı çoban istihdamı yapmış ve çobanın Sosyal Güvenlik Kurumu sigorta primlerini yıl içinde 5 ay süre ile yatırmış olmaları halinde destek ödenir. Sayfada 2024 yılı için 36.000 TL, 2025 yılı için bir çoban için işletme başına 81.000 TL destekleme ödemesi yazılıdır; 2026 yılı tutarı sayfada yer almamaktadır.",
+  "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler/Hayvancilik-Desteklemeleri/Suru-Yoneticisi-Istihdam-Destegi",
+  "aktif_mi": null,
+  "durum": {
+    "metin": "Kaynak sayfa 2024 ve 2025 yılı tutarlarını verir; 2026 yılı tutarı ve başvuru dönemi bu sayfada yazılı değildir. Başvuru Küçükbaş Hayvancılık Desteklemesi başvurusuyla birlikte yapıldığı için 2026 uygulaması buna bağlıdır; 2026 için açık/kapalı durumu kaynaktan doğrulanamadığından aktif_mi belirsiz bırakıldı.",
+    "alinti": "2025 yılında ise bir çoban için işletme başına 81.000 TL destekleme ödemesi yapılacaktır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler/Hayvancilik-Desteklemeleri/Suru-Yoneticisi-Istihdam-Destegi"
+  },
+  "basvuru_bicimi": "uretim_odeme",
+  "bolge_kisitli": [],
+  "sektorler": ["tarim"],
+  "tesvil_tutari": "2024 yılında hak eden her işletme için yılda bir defa olmak üzere 36.000 TL; 2025 yılında bir çoban için işletme başına 81.000 TL destekleme ödemesi (2026 tutarı sayfada belirtilmemiştir).",
+  "basvuru_yeri": "İl/İlçe Tarım ve Orman Müdürlükleri (başvuru dilekçesi ek-1, işletme sahibi tarafından bizzat teslim edilir).",
+  "basvuru_suresi": "Başvuru, Küçükbaş Hayvancılık Desteklemesine başvuru yapılmasıyla başlar; sayfada ayrı bir tarih belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Temel destek şartlarını sağlayan en az 150 baş kuzu/oğlağı bulunan işletmelere en fazla bir sürü yöneticisi için destek verilir.",
+      "alinti": "temel destek şartlarını sağlayan en az 150 baş kuzu/oğlağı bulunan işletmelere en fazla bir sürü yöneticisi için",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler/Hayvancilik-Desteklemeleri/Suru-Yoneticisi-Istihdam-Destegi"
+    },
+    {
+      "tur": "sart",
+      "metin": "Sertifikalı çoban istihdam edilmeli ve çobanın SGK sigorta primleri yıl içinde 5 ay süreyle yatırılmalıdır.",
+      "alinti": "istihdamı yapılan çobanın Sosyal Güvenlik Kurumu sigorta primlerini yıl içinde 5 ay süre ile yatıranlar desteklemeye başvuruda bulunabilmektedir.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler/Hayvancilik-Desteklemeleri/Suru-Yoneticisi-Istihdam-Destegi"
+    },
+    {
+      "tur": "adim",
+      "metin": "Küçükbaş Hayvancılık Desteklemesine başvuru yapan işletmeler aynı zamanda bu desteğe de başvurmuş sayılır.",
+      "alinti": "Desteklemeye başvurular, Küçükbaş Hayvancılık Desteklemesine başvuru yapılması ile başlamaktadır.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler/Hayvancilik-Desteklemeleri/Suru-Yoneticisi-Istihdam-Destegi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Başvuru dilekçesi (ek-1) e-belgeden kaydettirilip ek belgelerle İl/İlçe Tarım ve Orman Müdürlüklerine işletme sahibi tarafından bizzat teslim edilir.",
+      "alinti": "Bu ek belgeler de düzenlenerek, başvuru dilekçesini (ek-1) e-belgeden kaydettirerek ekinde İl/İlçe Tarım ve Orman Müdürlüklerine bizzat işletme sahibi tarafından teslim edilecektir.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler/Hayvancilik-Desteklemeleri/Suru-Yoneticisi-Istihdam-Destegi"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "2024 yılında hak eden her işletmeye yılda bir defa 36.000 TL ödenmiştir",
+      "alinti": "2024 yılında başvuruda bulunmuş ve desteklemeyi hak etmiş her işletme için yılda bir defa olmak üzere 36.000 TL destekleme ödemesi yapılmıştır.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler/Hayvancilik-Desteklemeleri/Suru-Yoneticisi-Istihdam-Destegi"
+    },
+    {
+      "iddia": "2025 yılında bir çoban için işletme başına 81.000 TL",
+      "alinti": "2025 yılında ise bir çoban için işletme başına 81.000 TL destekleme ödemesi yapılacaktır.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler/Hayvancilik-Desteklemeleri/Suru-Yoneticisi-Istihdam-Destegi"
+    },
+    {
+      "iddia": "En az 150 baş kuzu/oğlak varlığı şartı",
+      "alinti": "Desteklemeden yararlanacak işletmenin temel destek şartlarını sağlayan en az 150 baş kuzu/oğlak varlığına sahip olması gerekmektedir.",
+      "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler/Hayvancilik-Desteklemeleri/Suru-Yoneticisi-Istihdam-Destegi"
+    }
+  ]
+}

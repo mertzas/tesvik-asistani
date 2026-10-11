@@ -1,0 +1,90 @@
+{
+  "slug": "kosgeb-girisim-sermayesi-yatirim-fonlari",
+  "kurum": "KOSGEB",
+  "baslik": "Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü)",
+  "ozet": "KOSGEB'in Portföy Yönetim Şirketlerinin yönettiği Girişim Sermayesi Yatırım Fonlarına kaynak taahhüt ettiği program. Amaç KOBİ'lerin uzun vadeli finansmana erişimini kolaylaştırmak, teknoloji tabanlı girişimciliği desteklemek ve özel sermaye yatırımlarında kamu kaynağıyla kaldıraç etkisi sağlamaktır. Doğrudan KOBİ'ye değil, fona yatırım yapılır; başvuru fon yöneticisi tarafından e-hizmetler üzerinden yapılır.",
+  "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "KOSGEB destekler sayfasında yürürlükte (Diğer Destekler) listeleniyor ve başvuru e-hizmetler üzerinden alınıyor; sayfada çağrı dönemi veya kapanış tarihi yazmıyor.",
+    "alinti": "Başvurular KOSGEB kurumsal internet sayfasında yer alan e-hizmetler menüsünden Girişim Sermayesi Yatırım Fonları Başvurusu sekmesinden yapılacaktır.",
+    "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+  },
+  "basvuru_bicimi": "hisse_fon",
+  "bolge_kisitli": [],
+  "sektorler": ["genel"],
+  "tesvil_tutari": "Tek bir fona azami taahhüt 500 milyon TL: yerli yatırımcı taahhüdünün %20'si ile sınırlı olmak üzere 200 milyon TL'ye kadar; yabancı yatırımcı taahhüdünü aşmamak kaydıyla 200 milyon TL'ye kadar; yabancı yatırımla eş tutarda olmak kaydıyla 100 milyon TL'ye kadar. Fonun katılacağı her yatırım turunun asgari büyüklüğü 50 milyon TL",
+  "basvuru_yeri": "KOSGEB e-hizmetler menüsü, Girişim Sermayesi Yatırım Fonları Başvurusu sekmesi",
+  "basvuru_suresi": "Sayfada çağrı dönemi belirtilmemiş",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Fonun katılacağı her yatırım turunun asgari büyüklüğü 50 milyon TL olmalı",
+      "alinti": "Kaynak aktarılacak fonun katılacağı her bir yatırım turunun asgari büyüklüğünün 50 milyon TL olması gerekir.",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+    },
+    {
+      "tur": "sart",
+      "metin": "Başvuruyu Portföy Yönetim Şirketleri, yöneticisi oldukları fon için yapar",
+      "alinti": "Portföy Yönetim Şirketleri yöneticisi oldukları Girişim Sermayesi Yatırım Fonları için başvuruda bulunabilirler.",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+    },
+    {
+      "tur": "belge",
+      "metin": "e-hizmetlerde sekmeye girmek için Kullanıcı Yetkilendirme Formu doldurulup KOSGEB'e e-postayla gönderilmeli",
+      "alinti": "Kullanıcı Yetkilendirme Formu Portföy Yönetim Şirketi tarafından doldurularak gsyfbasvuru@kosgeb.gov.tr adresine e-posta ile gönderilmelidir.",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+    },
+    {
+      "tur": "kural",
+      "metin": "Her bir fon için iştirak üst limiti 500 milyon TL",
+      "alinti": "Her bir fon için iştirak üst limiti 500 milyon TL’dir.",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Sektör sınırlaması yok; yüksek teknoloji ve katma değerli, çevresel-sosyal etkisi ölçülebilir alanlardaki fonlara öncelik verilir",
+      "alinti": "Sektör sınırlamaması bulunmamakla birlikte teknolojisi ve katma değeri yüksek, ölçülebilir pozitif çevresel ve sosyal etkisi olan alanlarda faaliyet gösteren fonlara öncelik verilir.",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+    },
+    {
+      "tur": "adim",
+      "metin": "Fon başvurusu Değerlendirme Komitesi'nde değerlendirilir; yatırım kararını KOSGEB Başkanı verir",
+      "alinti": "Fon tarafından yapılan başvuru Değerlendirme Komitesi marifetiyle değerlendirilerek İcra Komitesi Başkanın kararı ile fona yatırım yapılmaktadır.",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Programın amacı",
+      "alinti": "KOBİ’lerin uzun vadeli finansmana erişiminin kolaylaştırılması, teknoloji tabanlı girişimciliğin desteklenmesi, sanayide yeşil ve dijital dönüşümün hızlandırılması ve özel sermaye yatırımlarında kamu kaynağıyla kaldıraç etkisinin sağlanmasıdır.",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+    },
+    {
+      "iddia": "Tek bir fona azami taahhüt 500 milyon TL",
+      "alinti": "Başkanlık tarafından tek bir fona yapılabilecek azami taahhüt tutarı 500 milyon TL’dir.",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+    },
+    {
+      "iddia": "Yerli yatırımcı taahhüdünün %20'si ile sınırlı, 200 milyon TL'ye kadar",
+      "alinti": "Fonda yerli yatırımcılar tarafından verilen taahhüt tutarının %20’si ile sınırlı olmak üzere 200 milyon TL’ye kadar",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+    },
+    {
+      "iddia": "Yabancı yatırımcı taahhüdünü aşmamak kaydıyla 200 milyon TL'ye kadar",
+      "alinti": "Fonda yer alan yabancı yatırımcılar tarafından verilen taahhüt tutarını aşmamak kaydıyla 200 milyon TL’ye kadar",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+    },
+    {
+      "iddia": "Türkiye'deki girişimlere yabancı yatırım durumunda eş tutarda 100 milyon TL'ye kadar",
+      "alinti": "Fonun yatırım yaptığı Türkiye’de yerleşik girişimlere, fonun yatırımcıları dışında yabancı yatırımcılar tarafından yatırım yapılması durumunda, en fazla söz konusu yabancı yatırım tutarıyla eş tutarda olmak kaydıyla 100 milyon TL’ye kadar",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+    },
+    {
+      "iddia": "Fonun katılacağı her yatırım turunun asgari büyüklüğü 50 milyon TL",
+      "alinti": "Kaynak aktarılacak fonun katılacağı her bir yatırım turunun asgari büyüklüğünün 50 milyon TL olması gerekir.",
+      "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari"
+    }
+  ]
+}

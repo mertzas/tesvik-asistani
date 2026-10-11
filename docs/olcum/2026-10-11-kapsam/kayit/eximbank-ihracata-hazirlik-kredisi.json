@@ -1,0 +1,80 @@
+{
+  "slug": "eximbank-ihracata-hazirlik-kredisi",
+  "kurum": "Türk Eximbank",
+  "baslik": "Türk Eximbank İhracata Hazırlık Kredisi",
+  "ozet": "Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihracata yönelik mal üreten (sadece nihai üretici) imalatçı firmalar ile döviz kazandırıcı hizmet ve faaliyetleri yürüten firmaların ihracata hazırlık aşamasındaki finansman ihtiyacını karşılayan kredi programıdır. Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde gerçekleştirilen ihracat veya döviz gelirleriyle kapatılır. Firma limitleri Banka tarafından firma bazında belirlenir; Kesin Teminat Mektubu veya İGE kefaleti karşılığında kullandırılır.",
+  "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Eximbank'ın güncel (2026) internet sitesinde kredi ürünü olarak yayınlanmaktadır; dönemsel çağrıya bağlı değildir.",
+    "alinti": "Bu krediden Türkiye’de yerleşik, İhracatçı, İmalatçı-ihracatçı, İhracata yönelik mal üreten (sadece nihai üreticiler) imalatçı firmalar, Döviz Kazandırıcı hizmet ve faaliyetleri yürüten firmalar, faydalanabilmektedir.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi"
+  },
+  "basvuru_bicimi": "kredi",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "imalat",
+    "hizmet"
+  ],
+  "tesvil_tutari": "Hibe değil kredi: tutar firma bazında Banka tarafından yapılan tahsis çalışmasıyla belirlenir; faiz/kar payı oranları vade, tutar ve para birimine göre belirlenir. İhracat veya döviz kazandırıcı hizmet taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.",
+  "basvuru_yeri": "Türk Eximbank (eximbank.gov.tr); teminat olarak İGE kefaleti için İhracatı Geliştirme A.Ş.",
+  "basvuru_suresi": "Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ve faaliyet yürüten firmalar yararlanabilir.",
+      "alinti": "Bu krediden Türkiye’de yerleşik, İhracatçı, İmalatçı-ihracatçı, İhracata yönelik mal üreten (sadece nihai üreticiler) imalatçı firmalar, Döviz Kazandırıcı hizmet ve faaliyetleri yürüten firmalar, faydalanabilmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "İhracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.",
+      "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Firma limiti Banka tarafından firma bazında belirlenir.",
+      "alinti": "Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Teminat: Kesin Teminat Mektubu veya İGE kefaleti.",
+      "alinti": "Kesin Teminat Mektubu, İhracatı Geliştirme A.Ş. (İGE) kefaleti karşılığında kullandırılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Kredi Talep Formu, Kesin Teminat Mektubu ve (ihracatçı farklıysa) imalatçının ihracatçıdan alacağı muvafakatname.",
+      "alinti": "Kredi Talep Formu, Kesin Teminat Mektubu, Kullanılacak krediye esas ihracata konu olan malın ihracatçısının farklı olması halinde, kredi talebinde bulunan imalatçının, ihracatçıdan imzalı ve firma kaşeli olarak alacağı muvafakatname,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "İlk kez başvuran firmalar mali analiz ve istihbarat çalışması için talep edilen bilgi ve belgeleri sunar.",
+      "alinti": "İlk kez başvuruda bulunacak firmalar için bu belgelerin yanı sıra firma mali analizi ve istihbarat çalışması için talep edilen bilgi ve belgeleri Bankamıza sunmaları,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Faiz/kar payı oranları kredi vadesi, kredi tutarı ve para birimine göre belirlenir; güncel oranlar Eximbank'ın 'Faiz ve Kar Payı Oranları' sayfasında yayınlanır.",
+      "alinti": "Kredilere uygulanacak faiz/kar payı oranları; kredi vadesi, kredi tutarı ve para birimine göre belirlenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Kredi konusu taahhüt kredi kullanımından itibaren 24 ay içinde kapatılır",
+      "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi"
+    },
+    {
+      "iddia": "Program amacı: ihracata hazırlık aşamasındaki finansman ihtiyacı",
+      "alinti": "finansman ihtiyaçlarını karşılamak amacıyla sunulan kredi programıdır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi"
+    }
+  ]
+}

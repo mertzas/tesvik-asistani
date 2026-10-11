@@ -294,7 +294,7 @@ def adi_gecen_programlar(soru: str, kayitlar: list) -> list:
         kisaltmalar = {_katla(k) for k in re.findall(r"\(([A-ZÇĞİÖŞÜ]{2,8})\)", t.baslik or "")}
         jetonlar = re.findall(r"[a-z0-9]+", baslik_k)
         if (kodlar & set(_KOD.findall(baslik_k)) or kelimeler & adaylar or kisaltmalar & set(soru_jeton)
-                or _baslik_basi_soruda(jetonlar, soru_jeton)
+                or _baslik_basi_soruda(_baslik_jetonlari(t.baslik), soru_jeton)
                 or (len(jetonlar) >= 2 and not jetonlar[0].isdigit() and len(jetonlar[0]) >= 4
                     and len(jetonlar[1]) >= 4 and basliklar_bas2.get(tuple(jetonlar[:2])) == 1
                     and not jetonlar[0].startswith(GENEL_KOKLER) and not jetonlar[1].startswith(GENEL_KOKLER)
@@ -311,6 +311,15 @@ def adi_gecen_programlar(soru: str, kayitlar: list) -> list:
 
 
 _KONU_ADLARI = ("girisi", "proje", "sirket", "isletm", "fikr", "uygulam", "startup", "urun", "teknoloji")
+
+
+def _baslik_jetonlari(baslik: str | None) -> list[str]:
+    """Başlığın katlanmış kelimeleri; baştaki yıl ifadesi ("2026 Yılı Turizm Ücret Desteği") atlanır, program adı
+    yıldan sonra başlar (kullanıcı "turizm ücret desteği" diye sorar)."""
+    j = re.findall(r"[a-z0-9]+", _katla(baslik or ""))
+    while len(j) > 2 and (re.fullmatch(r"20[0-9]{2}", j[0]) or j[0] in ("yili", "yilinda", "yil")):
+        j = j[1:]
+    return j
 
 
 def _konu_ifadesi(soru: list[str], sonraki: int) -> bool:
@@ -587,10 +596,18 @@ def _hitap(metin: str) -> str:
     return re.sub(r"\bborcun\b", "borcunuz", metin)
 
 
+def _okunur_alinti(alinti: str) -> bool:
+    """PDF çıkarımında harfleri aralıklanmış alıntı ("A s g a r i 1 2 a y") kanıt olarak doğrudur ama okunmaz:
+    tek karakterlik parçaların oranı yüksekse kullanıcıya gösterilmez."""
+    parcalar = alinti.split()
+    return bool(parcalar) and sum(len(x) == 1 for x in parcalar) / len(parcalar) < 0.3
+
+
 def _madde_metni(m: dict) -> str:
-    """Kontrol listesi maddesi; kısa ve doğrulanmış alıntı varsa eklenir, uzun alıntı yarıda kesilmez (gösterilmez)."""
+    """Kontrol listesi maddesi; kısa, doğrulanmış ve okunur alıntı varsa eklenir, uzun alıntı yarıda kesilmez
+    (gösterilmez)."""
     metin = _hitap(_temiz(m["metin"]))
-    if m.get("alinti") and m.get("dogrulandi") and len(m["alinti"]) <= ALINTI_SINIRI:
+    if m.get("alinti") and m.get("dogrulandi") and len(m["alinti"]) <= ALINTI_SINIRI and _okunur_alinti(m["alinti"]):
         metin += f" — resmî metin: “{' '.join(m['alinti'].split())}”"
     elif m.get("dogrulandi") is False:
         metin += " — kurumdan teyit edin"
@@ -1969,6 +1986,12 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
         adaylar = [d for d in ds if not d.odak and d.karar in ("sartli", "belirlenemedi")]
         if profil is not None:
             ana = [d for d in adaylar if d.eslesti and not notlar.get(d.tesvik.id, "").startswith("DÜŞÜK")]
+            # Sorudaki ihtiyaç profil hedeflerinin önündedir: "personel alırsak" sorusunda, hedefleri ihracat olan
+            # profilde de engelsiz istihdam programları kart adayıdır (kapsam ölçümü 2026-10-11: 50 hücrede SGK
+            # teşvikleri yalnız "Diğer" listesindeydi, kart bir kredi ürünüydü).
+            sorulan = set(soru_ihtiyaclari(_adlari_cikar(soru, adi_gecen_kayit)))
+            ana += [d for d in adaylar if d not in ana and d.karar == "sartli" and sorulan
+                    and program_ihtiyaclari(d.tesvik) & sorulan]
         else:
             ana = [d for d in adaylar if _genel_kitleye_acik(d.tesvik)]
             ipucu = soru_sektoru(soru)
@@ -1987,7 +2010,8 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
             adaylar = [d for d in adaylar if not (d.tesvik.uygunluk_kriterleri or {}).get("kurucu_yasi_max")]
             ana = [d for d in ana if d in adaylar]
         ihtiyac_sorusu = _adlari_cikar(soru, adi_gecen_kayit)
-        ihtiyac = set(soru_ihtiyaclari(ihtiyac_sorusu)) | set(getattr(profil, "hedefler", None) or [])
+        soru_ihtiyac_seti = set(soru_ihtiyaclari(ihtiyac_sorusu))
+        ihtiyac = soru_ihtiyac_seti | set(getattr(profil, "hedefler", None) or [])
         from app.match_adapter import profil_etiketleri
         etiket = profil_etiketleri(profil) if profil is not None else set()
 
@@ -2019,7 +2043,7 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
             # (girişim programının kendisi, ör. KOSGEB Girişimci Destek, "kurulu işletme" sayılmaz)
             kurulu_ister = profil is None and kurulus_sorusu and d.tesvik.id not in kurulus_idleri                 and _kurulu_isletme_ister(d.tesvik)
             return (not ozel, kurulu_ister, d.tesvik.id not in kurulus_idleri, donem_sira[d.donem] == 2,
-                    -_ad_eslesmesi(d.tesvik), kilitli,
+                    -_ad_eslesmesi(d.tesvik), not (program_ihtiyaclari(d.tesvik) & soru_ihtiyac_seti), kilitli,
                     not (program_ihtiyaclari(d.tesvik) & ihtiyac), d.karar != "sartli",
                     arama_sirasi.get(d.tesvik.id, 999))
         ana.sort(key=_ilgi)

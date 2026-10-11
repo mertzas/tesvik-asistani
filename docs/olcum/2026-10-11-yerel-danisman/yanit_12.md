@@ -2,8 +2,8 @@
 **Kısa cevap:**
 - **TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI** (KGF)
 - Destek: Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
-- Sizin için: belirlenemedi — profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletmeyim (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi).
-- Başvuru: Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08) (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Sizin için: belirlenemedi — profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi).
+- Başvuru: Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Adıyla eşleşen diğer kayıtlar: Tobb Nefes Kredisi 2020 Destek Paketi (kapalı).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -17,13 +17,13 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Belirlenemedi — profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletmeyim (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi).
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Sizin için:** Belirlenemedi — profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi).
 - **Karşıladığı ihtiyaç:** kredi/finansman
-- **Destek:** Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
+- **Kredi ve kefalet limitleri:** Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
 - **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (mikro işletme)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ TOBB üyesi bir işletmeyim (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi) — resmî metin: “TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir.”
+  - ☐ TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi) — resmî metin: “TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir.”
 - **Kurallar (kayıttan):**
   - Kredi döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz — resmî metin: “Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz”
   - Kefalet talepleri yalnız TL cinsinden yapılır — resmî metin: “Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır.”
@@ -36,9 +36,9 @@
 - **Kaynak:** https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/gecmis-programlar/tobb-nefes-kredisi-2020-destek-paketi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- TKYB KREDİ DESTEK PAKETİ (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- TKYB KREDİ DESTEK PAKETİ (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- DİJİTAL KEFALET DESTEK PROGRAMI (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
@@ -56,8 +56,7 @@
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.
-2. TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI: “TOBB üyesi bir işletmeyim (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi)” şartını sağlıyor musunuz?
+1. TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI: “TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi)” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

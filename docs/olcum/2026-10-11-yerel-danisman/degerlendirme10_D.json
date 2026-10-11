@@ -1,0 +1,396 @@
+[
+  {
+    "n": 19,
+    "puan": {"dogruluk": 4, "soruya_odak": 3, "eksiksizlik": 3, "anlasilirlik": 2},
+    "bulgular": [
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Soru iki unsur istiyor: yatırım yeri tahsisi ve KDV istisnası oranları. Yanıt yatırım yeri tahsisinden hiç söz etmiyor; KDV için yalnızca «öne çıkan programın Karar özetinde yok» diyor. Oysa Yerel Kalkınma Hamlesi kaydı bu iki unsuru destek unsuru olarak sayıyor (oran yok). Doğru ve kaynaklı cevap: «kayıtlarda oran yok; yalnız Yerel Kalkınma Hamlesi'nde destek unsuru olarak geçiyor, ilin yerel konu listesi tebliği sistemde olmadığından belirlenemedi». Yanıt bunun yerine sorulmayan unsurları (SGK, faiz, vergi indirimi) uzun uzun döküyor.",
+        "kanit": "yanit_19 satır 6: «Kdv istisnası: öne çıkan programın Karar özetinde yok; Sanayi ve Teknoloji Bakanlığı'ndan teyit edin.» kaynak_19 KAYIT 178: «Destek unsurları: gümrük vergisi muafiyeti, KDV istisnası, vergi indirimi, faiz/kâr payı desteği, makine desteği, yatırım yeri tahsisi.»",
+        "oneri": "Soruda adı geçen destek unsurları (KDV, yatırım yeri, gümrük, SGK...) için sorgulanan tüm aktif 9903 kayıtlarının destek unsuru alanını tara. Bulunursa «şu programda destek unsuru olarak sayılıyor, oran kayıtta yok», hiçbirinde yoksa «kayıtlarda yok» diye HER unsur için ayrı ayrı yaz; sorulmayan unsurları kısa cevaba koyma.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Kısa cevapta kararın dayandığı şart söylenmiyor: «şartlı — karar şartını teyit edin» ifadesi boş bir etiket. Asıl belirleyici şart (EK-3 55.1 kalemi: otel 50 oda ve üzeri) yalnızca kartın içinde ve 5. bölümde gömülü. Kullanıcı Van otelinin oda sayısının eşik olduğunu ilk bakışta göremiyor.",
+        "kanit": "yanit_19 satır 3: «şartlı — karar şartını teyit edin; 9903 teşvik belgesi müracaat süresi...»; şart metni satır 21 ve 88'de.",
+        "oneri": "Şartlı etiketi her zaman kayıttaki belirleyici şartı aynı cümlede söylesin: «şartlı — otel 50 oda ve üzeri olmalı».",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "tuzak",
+        "ciddiyet": "orta",
+        "aciklama": "Kullanıcı «bölgesel teşvik» diyor; bu ad eski 2012/3305 sistemine ait ve 9903 ile kalktı. Yanıt bu bilgiyi en altta, «elenen programlar» bloğunun son satırında veriyor. Kullanıcının terminolojisini düzeltmesi gereken not kısa cevabın başında olmalı; bölge sorusuna (6. bölge) doğru cevap verilmesi iyi, ama «bölgesel teşvik uygulamaları» diye ayrı bir başvuru yolu aramaya devam edebilir.",
+        "kanit": "yanit_19 satır 68: «2012/3305 sayılı Karar ... 9903 sayılı Karar ile yürürlükten kalkmıştır; bu eski sistemlere başvurulamaz.»",
+        "oneri": "Soru metninde eski sistem terimi (bölgesel/genel/büyük ölçekli/stratejik teşvik) geçiyorsa mevzuat notunu kısa cevabın ikinci cümlesi yap.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "TKYB Kredi Destek Paketi ve TOBB Nefes Kredisi kartları (ikisi de «belirlenemedi») yatırım teşviki sorusunda ana eşleşme listesinde tam kart olarak yer alıyor ve kısa cevapta «Diğer seçenekler» olarak anılıyor. TOBB Nefes (azami 3 milyon TL, nakit akışı amaçlı) bu soruya cevap vermiyor; kartlar yanıtın yaklaşık dörtte birini kaplıyor.",
+        "kanit": "yanit_19 satır 7 ve 35-51.",
+        "oneri": "Soru anahtar sözcükleri teşvik/KDV/yatırım yeri ise kredi-kefalet kartlarını kısa cevaptan çıkar, «Diğer ilgili programlar» tek satırına indir.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "«Kısa cevap» kısa değil: ilk maddede 12 kalemli destek unsuru dökümü var; aynı içerik yanıtta dört kez tekrar ediyor (kısa cevap, kart, «9903 programları bölgenize göre», darboğaz). Sorulan iki şey (bölge ve oran) bu dökümün içinde kayboluyor. Yanıt yaklaşık 95 satır.",
+        "kanit": "yanit_19 satır 3-7, 23, 54-56, 73.",
+        "oneri": "Kısa cevap en çok 4 madde ve sorulan unsurlara göre kurulsun; destek unsuru dökümü yalnızca kartta, bir kez bulunsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "KOBİ olmayanlar için ekosistem geliştirme planı kuralı, profili «küçük işletme» olan kullanıcıya «Kurallar» altında gösteriliyor; ilgisiz. Finansal kiralama alt sınırı kuralı da soruyla ilgisiz.",
+        "kanit": "yanit_19 satır 30 ve 32 (ölçek satır 12: küçük işletme).",
+        "oneri": "Profil KOBİ ise «KOBİ değilseniz...» kurallarını kartlardan çıkar.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "Ham veri sızıntıları: darboğaz listesinde birinci tekil ham adım metni («Teşvik belgesi müracaatımı E-TUYS üzerinden») ve aynı başvuru yerinin iki kez yazılması; Yerel Kalkınma makine desteği «240.000.000 TL …» diye kesik; bilgi eksikliği bölümü kesik alıntıyla («...mevcut tesislerde…») ve sistemin zaten bildiği şartı yeniden soruyor: NACE 55.10'un EK-3'e girdiği ve 6. bölgenin m.9/1-ç'yi sağladığı ön değerlendirmede belli, buna rağmen kullanıcıya işaretlettiriliyor.",
+        "kanit": "yanit_19 satır 74-75, 56, 89 ve 27.",
+        "oneri": "Kullanıcıya dönük metinde birinci tekil ham adım ve «…» ile biten kesik alıntı üretme; sistem tarafından zaten doğrulanan şartları kontrol listesine ve bilgi eksikliğine koyma.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "dusuk",
+        "aciklama": "25 çalışanlı otel yatırımcısı için aday havuzundaki SGK istihdam teşvikleri (4447 geçici 10 ve işsizlik ödeneği alanların istihdamı) diğer ilgili programlar satırında bile anılmıyor. Soru doğrudan bunu sormuyor, bu yüzden düşük önem; ama 9903 SGK desteğiyle birlikte kullanım kuralı (aynı yatırım için başka kamu desteği alınamaması) bağlamında bir tek satırlık not yararlı olurdu.",
+        "kanit": "kaynak_19 ADAY KAYIT 185 ve 186; yanit_19 «Diğer ilgili programlar» yalnız 9903 kartlarını içeriyor.",
+        "oneri": "Hedef 'yatırım' + istihdam artışı olan profilde aday istihdam teşviklerini tek satırla ekle.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Bölge sorusu doğrudan ve kaynaklı yanıtlanmış (6. bölge, Karar değerlendirmesinden). Oranlar kayıtla birebir: Öncelikli %30, Hedef %20, Yerel Kalkınma %50 yatırıma katkı; vergi %60; işveren SGK %100 12 yıl; işçi hissesi 10 yıl. Kalan gün hesabı (1542) doğru. KDV oranı uydurulmamış. Elenen Teknoloji Hamlesi ve Stratejik Hamle gerekçeleri tutarlı.",
+        "kanit": "yanit_19 satır 4, 23, 54-56 ile kaynak_19 KAYIT 180, 181, 178 destek unsurları satırları.",
+        "oneri": "Bu davranışı koru: oran yoksa uydurma, «yok» de.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Van, kayıttaki Karar değerlendirmesine göre 6. bölgede. NACE 55.10 otel yatırımı Öncelikli ve Hedef Yatırımlar sistemlerinin EK-3 listesine giriyor, ancak şart otelin 50 oda ve üzeri olması; Öncelikli sistemde 6. bölge ayrıca m.9/1-ç kapsamında. Kayıttaki oranlar: Öncelikli'de yatırıma katkı %30, Hedef'te %20, vergi %60 indirimli, işveren SGK hissesi %100 (12 yıl), işçi hissesi asgari ücret kısmı 10 yıl. KDV istisnası ve yatırım yeri tahsisi için kayıtlarda oran yok; bu ikisi yalnızca Yerel Kalkınma Hamlesi'nin destek unsurları arasında sayılıyor ve ilin yerel yatırım konuları listesi sistemde olmadığından o program belirlenemedi, oranı Bakanlık ve E-TUYS'tan teyit edin. Eski «Bölgesel Teşvik Uygulamaları» (2012/3305) kalktı; müracaat 31.12.2030'a kadar yapılabilir ve müracaattan önceki harcamalar kapsama girmez, yani harcamadan önce başvurun. Karar için ilk teyit edilecek bilgi oda sayısı."
+  },
+  {
+    "n": 20,
+    "puan": {"dogruluk": 4, "soruya_odak": 3, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Kısa cevabın tek öne çıkan programı Yapay Zekâ Kredi Programı. Bu program mevcut bir KOBİ, KOSGEB kaydı, geçerli Teknogirişim Rozeti, GO Dijital Cüzdan ve bankadan en az 500.000 TL'lik kesin teminat mektubu istiyor; «kurmayı düşünüyorum» diyen biri bugün başvuramaz. Sistem ihtiyacı «girişim / şirketleşme öncesi» diye doğru çıkarmış, ama bu kartta ihtiyaç etiketi yok; sıralama büyük olasılıkla başlıktaki «yapay zekâ» sözcüğüne dayanıyor. Şirketleşme öncesi için uygun programlar (1812 Aşama 1, Girişimci Destek İş Kurma) kısa cevapta hiç anılmıyor.",
+        "kanit": "yanit_20 satır 4: «Öne çıkan: Yapay Zekâ Kredi Programı...»; satır 8: «girişim / şirketleşme öncesi ve erken aşama»; kaynak_20 KAYIT 2 şartları: KOBİ, KOSGEB kaydı, Teknogirişim Rozeti, GO Dijital Cüzdan, kesin teminat mektubu (en az 500.000 TL).",
+        "oneri": "Soru metninde «kurmayı düşünüyorum / kuracağım» sinyali varsa «mevcut şirket/KOBİ/rozet ister» türü şartlı programları şirketleşme öncesi programların altına indir ve kartına «şirketiniz kurulduktan ve rozet alındıktan sonra» uyarısı ekle; kısa cevapta ilk sırada ihtiyaç etiketi eşleşen programlar yer alsın.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "tuzak",
+        "ciddiyet": "orta",
+        "aciklama": "Girişimcinin kritik yol ayrımı verilmemiş: 1812 Aşama 1 hızlandırma programına kabul tarihinde herhangi bir şirketin/şahıs işletmesinin ortağı olmamayı şart koşuyor, Girişimci Destek İş Kurma ise 0-1 yaşındaki işletme istiyor. Yani şirketi ne zaman kuracağı hangi kapıdan gireceğini belirliyor. Bu bilgi iki kartın içinde ayrı ayrı var ama birleştirilip söylenmiyor; yol haritası genel kalıyor.",
+        "kanit": "kaynak_20 KAYIT 49 şartı: «hızlandırma programına kabul edildiği tarih itibarı ile ... işletmenin ortaklık yapısında yer alan kişiler başvuru yapamaz»; KAYIT 1: «İş Kurma Desteği için ... 0-1 yaş aralığındaki işletme». yanit_20 satır 80-85 yol haritası bunu içermiyor.",
+        "oneri": "Şirketleşme öncesi profilde, kayıtlardaki «ortaklık yasağı» ve «işletme yaşı» şartı birlikte varsa kısa bir «sıralama» notu üret: önce hangi başvuru, şirket ne zaman.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "tuzak",
+        "ciddiyet": "orta",
+        "aciklama": "1812 kartının başında «başvuruya açık, 37 gün kaldı» yazıyor; çağrı yalnız tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için. Uyarı uzun cümlenin ortasında ve yeni girişimci için asıl yol olan Aşama 1 hızlandırma çağrılarının durumu (uygulayıcı kuruluşlar, PRODİS) hakkında hiçbir bilgi yok. Aşama 1 ile ilgisiz açık çağrı sayacı yanıltıcı.",
+        "kanit": "yanit_20 satır 43; kaynak_20 ÇAĞRI id 28 notu: «1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı» ve çağrı id 3 (Aşama 2, 30.09.2026 kapandı).",
+        "oneri": "Profilsiz yanıtta, çağrı notunda «yalnız ... için» sınırı varsa bunu geri sayımdan önce yaz: «Bu çağrı sizin aşamanıza (fikir/hızlandırma) açık değil; Aşama 1 çağrıları uygulayıcı kuruluşlar üzerinden, tarihi kayıtta yok».",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Soru «devlet desteği var mı?» ve doğrudan cevap «Evet» ile başlamıyor; ilk madde «uygunluk kararı için faaliyet, şirket türü ve il gerekiyor» diye soruyu geri çeviriyor. Girişimcinin asıl bilmesi gereken (şirketleşme öncesi hangi destekler var) kısa cevapta yok.",
+        "kanit": "yanit_20 satır 3-4.",
+        "oneri": "Profil yoksa bile kısa cevap önce «Evet, ... için ... var» diye soruya cevap versin; eksik bilgi isteği ikinci cümle olsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "dusuk",
+        "aciklama": "Bilgi eksikliği bölümünde kararı gerçekten belirleyen sorular yok: şirket kuruldu mu / kuruluş tarihi, üniversite öğrencisi ya da mezunu musunuz, başka şirkette ortak mısınız, yaş/cinsiyet (genç-kadın ek desteği, Halkbank İlk Adım 29 yaş), il. Bunun yerine program bazlı üç evet/hayır sorusu (KOBİ misiniz, KOSGEB kaydı var mı, işletme 0-1 yaş mı) var; girişimci bunları yanıtlamadan önce şirketinin olup olmadığını bile söylemiyor.",
+        "kanit": "yanit_20 satır 87-92; 1812 Aşama 1 şartı «üniversite öğrencisi/mezunu» kaynak_20 KAYIT 49 satır 63.",
+        "oneri": "Persona null iken kayıtların sart satırlarından profile karşılığı olmayanları topla ve kararı en çok değiştiren 4-5 soruyu düz Türkçeyle, tek tek sor.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Yol haritasında ilk programın kesin teminat mektubu belge ayrıntıları (vade, ibare, muvafakat) uzun uzun sayılıyor; başvuramayacak kullanıcı için gereksiz. «KOSGEB Yurt Dışı Pazar Destek Programı» ve «TTGV» gibi girişim ön değerlendirmesi satırı şirketleşme öncesi bir yapay zekâ girişimi için ilgisiz. 'Teknogirişim Rozeti', 'GO Dijital Cüzdan', 'Hizmet Sağlayıcılar Listesi' açıklanmıyor.",
+        "kanit": "yanit_20 satır 66, 82.",
+        "oneri": "Belge ayrıntılarını yalnız kullanıcının hâlen başvurabileceği programlar için ver; jargonu bir cümleyle açıkla.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Tutarlar ve süreler kayıtla birebir (kredi 500.000-5.000.000 TL, 24 ay, ilk 12 ay ödemesiz; İş Kurma 10.000/20.000 TL +10.000 TL; İş Geliştirme çağrısı 08.05.2026'da kapandı; 1812 çağrısında 37 ve 40 gün doğru). İş Geliştirme desteğinin geri ödemeli olduğu belirtilmiş. Sistemde kaydı olmayan programlar için oran/şart uydurulmamış; mevzuat notu (10962, 5447/5448) doğru aktarılmış. KOSGEB iletişimi doğrulanmış kayıttan.",
+        "kanit": "yanit_20 satır 4, 26-29, 43, 66-67, 84; kaynak_20 KAYIT 2, 1, 49 ve EK BLOKLAR.",
+        "oneri": "Bu davranışı koru.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Evet, şirketleşme öncesi için kayıtlı üç yol var. TÜBİTAK 1812 BiGG Yatırım Aşama 1: üniversite öğrencisi ya da mezunu olmanız ve hızlandırma programına kabul tarihinde herhangi bir şirketin ya da şahıs işletmesinin ortağı olmamanız gerekir, yani şirketi bundan önce kurmayın; başvuru PRODİS'te uygulayıcı kuruluşların hızlandırma çağrılarıyla yapılır, şu an açık görünen 2026-1 Tohum çağrısı (ön kayıt 17.11, kapanış 20.11.2026) yalnız tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimlere açıktır. KOSGEB Girişimci Destek Programı İş Kurma desteği 0-1 yaşındaki işletme için şahıs 10.000 TL, sermaye şirketi 20.000 TL (genç/kadın vb. +10.000 TL) geri ödemesizdir, bilgisayar programlama (62) için İş Geliştirme 0-3 yaş ve geri ödemelidir; son çağrı 08.05.2026'da kapandı. KOSGEB Yapay Zekâ Kredisi (500.000-5.000.000 TL, faizsiz, 24 ay) mevcut KOBİ, geçerli Teknogirişim Rozeti, GO Dijital Cüzdan ve bankadan kesin teminat mektubu ister; şirketiniz yokken başvuramazsınız. Karar için şirket kuruldu mu, öğrenci/mezun musunuz, başka şirkette ortak mısınız, yaşınız ve ilinizi paylaşın; KOSGEB 444 1 567."
+  },
+  {
+    "n": 21,
+    "puan": {"dogruluk": 5, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 4},
+    "bulgular": [
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Asıl soru ilk üç satırda doğrudan yanıtlanmış: Halkbank İlk Adım için «uygun değil», gerekçe kayıttaki şartla (sahibi ya da en az %50 hissedarı en çok 29 yaş) ve profil verisiyle (52) eşleşiyor. «Ne yapabilirsiniz» satırı, kuralın ortak üzerinden de aranabildiğini söylüyor. Kefalet 800 bin / kredi 1 milyon TL doğru.",
+        "kanit": "yanit_21 satır 3-5, 17-19; kaynak_21 KAYIT 122 şart satırı ve tutar.",
+        "oneri": "Bu yapıyı koru.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "«Diğer ilgili programlar» listesi yetersiz seçilmiş: aday havuzundaki TOBB Nefes 2026 (Halkbank dahil kredi veren bankalar, azami kredi 3 milyon TL) anılmıyor; yerine «belirlenemedi» görünen TKYB Kredi Destek Paketi (150 milyon TL kefalet tavanı, mikro ticaret işletmesi için gerçekçi değil) konmuş. Kullanıcının sorusu özel olarak Halkbank; KGF Genel Destek'te Halkbank'ın 15 banka arasında olması, KGF Özkaynak'ta 5 milyon TL kefalet tavanı gibi kararı yönlendiren bilgiler tek satırlık özetlerde yok.",
+        "kanit": "kaynak_21 ADAY KAYIT 86 (TOBB Nefes) ve KAYIT 91 (TKYB) ile KAYIT 154, 137; yanit_21 satır 22-25.",
+        "oneri": "«Uygun değil» kararında alternatifleri ihtiyaca (kredi kefaleti, aynı banka) göre seç; her alternatifin yanına limit, kefalet oranı ve kredi veren banka bilgisini ekle, «belirlenemedi» olanları sona koy.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "dusuk",
+        "aciklama": "«Ne yapabilirsiniz» tek bir koşullu yol sunuyor ve bunu «profilde kurucu yaşını onun yaşıyla güncelleyin» diye anlatıyor; bu ifade profil verisini karar için oynatmak gibi okunuyor. Doğrusu: ancak gerçekten %50+ hisseli, 29 yaşını aşmamış bir ortak varsa şart onun üzerinden aranır. Kısa cevapta ise hiç alternatif yok; kullanıcı asıl yapılabilecekleri ancak «Diğer ilgili programlar» satırında buluyor.",
+        "kanit": "yanit_21 satır 19 ve 22-25.",
+        "oneri": "Kısa cevaba «Bunun yerine KGF Genel Destek ve Özkaynak Kefalet programlarına Halkbank dahil bankalardan başvurabilirsiniz» tipinde bir cümle ekle; profil güncelleme önerisini «ortaklık yapınız farklıysa» koşuluyla yaz.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "52 yaşındaki toptan ticaret limited şirketi için «Girişimci Destek Programı Kredi Faiz Programı (kapalı)» kartı ilgisiz: bağlı olduğu KOSGEB İş Geliştirme desteği imalat/yazılım/Ar-Ge içindir ve NACE 46.90 uymaz; faiz desteği ayrıca kadın/genç jüri şartlı. Kapalı listesinde bulunması soruyu bulandırıyor.",
+        "kanit": "yanit_21 satır 27-28; kaynak_21 KAYIT 170 ve KAYIT 1'deki sektör şartı (imalat/yazılım/Ar-Ge).",
+        "oneri": "«Kapalı» bölümüne yalnız soruda adı geçen veya profilin sektörüne/kitlesine uyan programları al.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "«beyan: 52» ifadesi kullanıcıya iç jargon gibi geliyor (profilde kayıtlı yaş demek istiyor). Bilgi eksikliği sorusu «Kefalet yalnız yeni ve ilave kredi için talep edilebilir şartını sağlıyor musunuz?» bir kullanıcı niteliği değil, programın kuralı; kullanıcıya soru olarak yöneltilmesi anlaşılırlığı düşürüyor. Yol haritasının 1. adımı («şartlarını adıyla sorarak ya da panelde Kontrol listesi'nden görün») uygulanabilir bir eylem değil; «Halkbank veya listedeki bankaya gidin» gibi somut adım yok.",
+        "kanit": "yanit_21 satır 4, 17, 37, 44.",
+        "oneri": "«Beyan» yerine «profilinizde kayıtlı yaş». Programın kurallarını soru değil bilgi olarak yaz; yol haritası ilk adımını bankaya başvuru olarak ver.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "Gerekçede zaman çapası eksik: şart kredi başvuru tarihi itibarıyla aranıyor, yanıt bunu söylemiyor. Aynı şekilde ortak varsa limited şirkette %50 hisse şartının şirket yapısını gerektirdiği açıklanmıyor.",
+        "kanit": "kaynak_21 şart alıntısı: «Kredi başvuru tarihi itibarıyla, sahibi veya asgari %50 hisse sahibi ortağı azami 29 yaşında olan işletmeler».",
+        "oneri": "Yaş/tarih şartlarında «başvuru tarihi itibarıyla» ifadesini gerekçeye ekle.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Hayır, profilinizdeki kurucu yaşı 52 olduğundan Halkbank İlk Adım Kredisi'ne şu an başvuramazsınız: program, kredi başvuru tarihinde işletme sahibinin ya da en az %50 hisseli ortağının en çok 29 yaşında olmasını şart koşuyor (kefalet azami 800 bin TL, kredi 1 milyon TL). Şirketinizde %50 veya fazla hisseli, 29 yaşını aşmamış bir ortak varsa şart onun üzerinden aranır, yoksa bu program size kapalıdır. KOBİ olarak yapabilecekleriniz: KGF Genel Destek Programı (Halkbank dahil 15 banka, yeni ve ilave TL kredi, yıllık %1,5 komisyon, azami 24 ay vade) ve KGF Özkaynak Kefalet Programı (kefalet azami 5 milyon TL, işletme kredisi 60 aya kadar); TOBB Nefes 2026 için ise oda üyeliği gerekir (azami kredi 3 milyon TL, Halkbank kredi verenler arasında). Başvuru bankanın şubesine yapılır, kefalet talebini banka KGF'ye iletir; KGF çağrı merkezi 444 7 543."
+  },
+  {
+    "n": 22,
+    "puan": {"dogruluk": 4, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Soruya doğrudan cevap veren genç odaklı dört KGF kredi paketi bulunmuş (Ziraat Kadın ve Genç, GENÇİZ, TURYIB, İlk Adım); 26 yaş tüm yaş eşiklerine (29, 30 altı) karşı kontrol edilmiş. Halkbank Genç İşi, sektör şartı nedeniyle (NACE 96.02 imalat/bilişim değil) gerekçeli olarak elenmiş. Şahıs işletmesi için Halk Bankası Şahıs İşletmeleri Destek Kredisi de listelenmiş. Hiçbir olgu hatası yok.",
+        "kanit": "yanit_22 satır 3-5, 35, 56, 62, 68; kaynak_22 KAYIT 169, 138, 153, 122, 112, 87.",
+        "oneri": "Bu davranışı koru.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Karşılaştırma yok: kullanıcı «hangisi uygun» diye bakıyor, ama dört program arasında seçmeyi sağlayan veri (kefalet üst limiti, vade, ödemesiz dönem, komisyon/ücret) yanıtta eşit biçimde verilmemiş. Vade hiçbirinde yazmıyor (Ziraat 48 ay, GENÇİZ 36 ay, İlk Adım 36 ay, TURYIB 60 ay); İlk Adım'ın %2 komisyonu ve ücreti verilmezken Ziraat'ın başvuru ücreti verilmiş. Kısa cevapta yalnız Ziraat'ın 4 milyon TL'si var.",
+        "kanit": "yanit_22 satır 4, 23, 34, 45, 55; kaynak_22 KAYIT 169 «azami 48 ay», KAYIT 138 «azami 36 ay», KAYIT 122 «Yıllık %2», KAYIT 153 «azami 60 ay».",
+        "oneri": "Aynı ihtiyacı karşılayan 2 den fazla kart varsa kısa cevaba tek bir karşılaştırma tablosu koy: program, banka, limit, vade, ücret/komisyon, yaş şartı.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "orta",
+        "aciklama": "TURYIB kartında «Kredi ve kefalet limitleri: 85 Milyon TL» yıllık cirosu 900.000 TL olan tek kişilik bir şahıs işletmesi için yanıltıcı; bu program geneli tavan, kişiye özel limit değil. Ayrıca kaynakta «genç yaş aralığı sayfada tanımlı değil» uyarısı var, yanıt bunu söylemiyor. Ziraat ve GENÇİZ'de «4 Milyon TL» ve «800 bin TL» de kredi mi kefalet mi belirsiz (kaynakta kefalet üst limiti).",
+        "kanit": "yanit_22 satır 45, 23, 34; kaynak_22 KAYIT 153: «Genç Sahibi ve/veya Yöneticisi Bulunan KOBİ’ler 85 milyon TL 80%» ve bilgi satırı «genç yaş aralığı sayfada tanımlı değil».",
+        "oneri": "Limit satırlarında «kefalet üst limiti» ifadesini koru; program tavanı ile işletme ölçeği arasında 100 kat fark varsa «program tavanı» diye etiketle, genç tanımı kayıtta yoksa bunu yaz.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "dusuk",
+        "aciklama": "Bilgi eksikliği bölümü «Profil alanlarınız yeterli» diyor; oysa Halk Bankası Şahıs İşletmeleri Desteği için oda kaydı (esnaf/ticaret ve sanayi/meslek odası), KOSGEB Girişimci Destek İş Kurma için işletmenin 0-1 yaşta olması bilinmiyor ve sorulmamış. Bu iki bilgi diğer ilgili programların uygunluğunu belirliyor.",
+        "kanit": "yanit_22 satır 83 ve 62-64; kaynak_22 KAYIT 87 şart «Esnaf Odası, Ticaret ve Sanayi Odası veya Meslek Odası kaydı», KAYIT 1 «0-1 yaş».",
+        "oneri": "«Profil yeterli» ifadesini yalnız tüm kartlarda profilden karşılanmayan şart kalmadığında üret; aksi halde ilk 2 eksik bilgiyi sor.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Tekrar ve uzunluk: aynı «Dönemsel başvuru yok ... (2026-10-08) (kayıttan...)» paragrafı kısa cevapta ve her kartta tekrarlanıyor (yaklaşık 7 kez); kısa cevaba bu paragraf bütünüyle girmiş. Yol haritasında 2. ve 3. adım birbirinin tekrarı; belge listesi ve «bankaya git, kefalet talebini banka KGF'ye iletir» gibi somut adım yok; «Kontrol listesi'nde Evet/Hayır işaretleyin» TURYIB dışında işaretlenecek bir şey olmadığı için anlamsız.",
+        "kanit": "yanit_22 satır 3, 19, 30, 41, 52, 62-63; satır 76-78.",
+        "oneri": "Başvuru dönemi için «Dönemsel başvuru yok; son kullandırım tarihi sayfada yok, bankadan teyit edin» kısa kalıbını bir kez, kartların altında ortak not olarak yaz; yol haritası 'banka şubesi' adımlarını programın belge alanından üret.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "olgu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Ziraat kartında kapsam etiketi «kadınların yönettiği işletme» yazıyor; kaynakta kriter yönetim değil mülkiyet/hisse (kadın girişimcilere ait şahıs firması veya kadın ortak hisseleri toplamı %50+). Ziraat için yaş aralığı (18-35) gösterilmezken diğerlerinde eşik gösteriliyor; tutarsız.",
+        "kanit": "yanit_22 satır 21, 24; kaynak_22 KAYIT 169 satır 23 ve [sart] satırı.",
+        "oneri": "Hedef kitle etiketlerini kaynaktaki kriter sözcükleriyle (ait olma/hisse) eşle, yaş aralığını her programda göster.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "«Girişimci Destek Programı Kredi Faiz Programı (kapalı)» ve TKYB (belirlenemedi) kartları listeyi uzatıyor; «Sektörünüz (genel)» ifadesi kuaför (96.02) için garip duruyor.",
+        "kanit": "yanit_22 satır 20, 63, 67.",
+        "oneri": "Kapalı/belirlenemedi kartlarını uygun olanların altında tek satırda ver.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Evet; 26 yaşında, mikro şahıs işletmesi olarak profilinizde engel görünmeyen dört genç odaklı KGF kefaletli kredi var, hepsi bankaya başvurulur ve kefalet talebini banka KGF'ye iletir: Ziraat Bankası Kadın ve Genç Girişimci Paketi (18-35 yaş genç girişimcilere ait şahıs firmaları, kefalet üst limiti 4 milyon TL, %80, azami 48 ay, başvuru ücreti 10.000 TL), Halk Bankası GENÇİZ (sahibi 30 yaş altı gerçek kişi işletme, 800 bin TL, azami 36 ay, kefalet başvuru ücreti 7.500 TL), Halkbank İlk Adım (sahibi en çok 29 yaş, kefalet azami 800 bin TL, kredi 1 milyon TL, azami 36 ay, yıllık %2 komisyon) ve Şekerbank'taki TURYIB (genç sahibi/yöneticisi olan KOBİ, 85 milyon TL program tavanı, genç tanımı sayfada yok). Halkbank Genç İşi imalat ve bilişimle sınırlı olduğundan NACE 96.02 için uygun değil. Krediler döviz, altın, mücevher ve refinansmanda kullanılamaz; Halkbank paketlerinde yalnız yeni ve ilave TL kredi için kefalet verilir, son kullandırım tarihi sayfalarda yok, bankadan teyit edin. Halk Bankası Şahıs İşletmeleri Destek Kredisi (kefalet üst limiti 400 bin TL) için oda kaydınız gerekir."
+  },
+  {
+    "n": 23,
+    "puan": {"dogruluk": 4, "soruya_odak": 3, "eksiksizlik": 2, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "odak",
+        "ciddiyet": "orta",
+        "aciklama": "Yol haritası, darboğaz, belge listesi ve başvuru kanalı bölümlerinin tamamı sorulan organik destek için değil, alternatif olarak seçilen Tarım Kefalet Destek Programı (banka kredisi) için üretilmiş. Organik sertifikası olmayan çiftçi için gerçek yol haritası (kontrol kuruluşu, ÇKS/OTBİS, geçiş süreci, il/ilçe müdürlüğüne başvuru) yanıtta yok. Kullanıcı organik destek istiyor, kredi başvuru adımları alıyor.",
+        "kanit": "yanit_23 satır 34-38 («Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif TARIM KEFALET DESTEK PROGRAMI için»); kaynak_23 KAYIT 77 başvuru şartları ve belgeleri.",
+        "oneri": "Engel aşılabilir bir sertifika/kayıt eksiği ise yol haritasını sorulan programın kayıtlı adım ve şartlarından («engeli kaldır, sonra başvur») üret; alternatif program ayrı, kısa bir 'bu arada' notu olsun.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "orta",
+        "aciklama": "«Ne yapabilirsiniz» fazla basit: «sertifikasyon sürecine girip ürün sertifikası aldığınız yıl başvurabilirsiniz». Kayıttaki kritik şartlar söylenmiyor: geçiş süreci-1 arazisi destek alamaz (yalnız geçiş-2, geçiş-3 veya organik statü), hasadın yapılmış ve ürün sertifikasının düzenlenmiş olması, ürünlerin ÇKS ve OTBİS'te kayıtlı olması, başvurunun il/ilçe Tarım ve Orman Müdürlüğü'ne EK-3 dilekçesiyle yıllık ilana göre yapılması. Bu eksiklik çiftçiyi sertifika sürecine girdiği ilk yıl destek bekler duruma sokabilir.",
+        "kanit": "yanit_23 satır 19; kaynak_23 KAYIT 77: «geçiş süreci-1 arazisi yararlanamaz», «Hasadın yapılmış ve ürün sertifikasının düzenlenmiş olması», «Başvuru yeri: İL/İlçe Tarım ve Orman Müdürlüğü», «Yıllık ilan edilir».",
+        "oneri": "«Ne yapabilirsiniz» alanını kaydın başvuru şartı satırlarından üret (geçiş süreci, hasat+sertifika, kayıt, başvuru yeri/dönemi) ve '2026 tebliğinden teyit edin' kaydını koru.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Yanıt «temel destek ayrıca ödenir» diyor ama bu desteği kartlarda göstermiyor. Aday havuzunda Meyve-Sebze Üretim Destekleri (Temel Destek) var: dekar başına 367 TL, kullanıcı 60 dekar incir (meyve) yetiştiriyor ve bu destek organik sertifika beklemeden ilgili olabilir (60 x 367 = 22.020 TL, kategori teyidiyle). Kullanıcının dekar başına ne verildiği sorusunun en somut, bugün işe yarar parçası eksik.",
+        "kanit": "kaynak_23 ADAY KAYIT 161: «Dekar başına 367,00 TL temel destek (2026, 1. kategori 'diğer ürünler')»; persona arazi 60 dekar, tarim_kategori meyve; yanit_23 satır 4 «temel destek ayrıca ödenir».",
+        "oneri": "Kayıt metninde «temel destek ayrıca» geçiyorsa aynı sektör/ürün kategorisindeki temel destek kaydını «Diğer ilgili programlar»da tutarıyla göster; persona dekar bilgisi varsa dekar x birim tutar hesabını yaz.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksiksizlik",
+        "ciddiyet": "orta",
+        "aciklama": "Dekar başına 73,40-550,50 TL aralığı yedi katlık geniş bir aralık ve incirin hangi ürün grubunda olduğu söylenmiyor (kayıtta ürün-grup eşlemesi yok; bu «tebliğ tablosundan teyit edin» diye açıkça yazılmalıydı). Persona 60 dekar verdiği halde toplam tutar aralığı hesaplanmamış (60 x 73,40 = 4.404 TL ile 60 x 550,50 = 33.030 TL).",
+        "kanit": "yanit_23 satır 4, 18; kaynak_23 KAYIT 77 Hesaplama.",
+        "oneri": "Profilde arazi büyüklüğü varsa dekar x alt/üst tutar aralığını hesapla; ürün-grup eşlemesi kayıtta yoksa bunu açıkça belirt.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Hesaplama bloğu çiftçi için okunmaz: «Tablo 7 katsayıları × 367,00 TL: 1. grup bireysel 1,2 → 440,40, grup 0,6 → 220,20; 2. grup 0,6/0,3; 3. grup 0,4/0,2». Burada «grup» hem ürün grubu hem grup sertifikası anlamında kullanılıyor; «1. derece tarımsal amaçlı örgüt» açıklanmıyor; «beyan: yok» iç jargon.",
+        "kanit": "yanit_23 satır 18, 5.",
+        "oneri": "Hesaplamayı küçük bir tablo olarak ver: ürün grubu 1/2/3 x bireysel/grup sertifika; örgüt üyeliği ilavesini bir cümleyle aç.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "dusuk",
+        "aciklama": "Bilgi eksikliği bölümü tarım profiline NACE kodunu soruyor ve «tarım sektöründe faaliyet gösteriyor musunuz?» diye soruyor; oysa persona sektör tarım ve yanıtın 1. bölümü de «tarım» diyor. Gerçekten gereken soru (arazi organik geçiş sürecinde mi, kontrol kuruluşuna başvurdunuz mu) yok. Kapalı Tasarruflu Sulama (TSS) kartı soruyla ilgisiz.",
+        "kanit": "yanit_23 satır 43-44, 26; kaynak_23 PERSONA sektor: tarim.",
+        "oneri": "Profilde bilinen alanları yeniden sorma; kararı etkileyen alanı (geçiş süreci durumu) sor.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "tuzak",
+        "ciddiyet": "dusuk",
+        "aciklama": "«Uygun değil» etiketi sertifika alanında «hiçbiri» beyanına bağlı; arazinin zaten geçiş sürecinde olup olmadığı bilinmiyor. Etiketin «şu an değil, sertifika sonrası» anlamı yazılırsa yanlış anlaşılma olmaz.",
+        "kanit": "yanit_23 satır 5; kaynak_23 PERSONA sertifikalar: hicbiri.",
+        "oneri": "Sertifika eksikliği kaynaklı engelde etiketi «şu an uygun değil (sertifika alınınca açılır)» yaz.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Karar etiketi kayıttaki gerekli sertifika şartıyla tutarlı; hesaplamalar doğru (1,2 x 367 = 440,40; x1,25 = 550,50; 0,2 x 367 = 73,40). Aydın İl Müdürlüğü için telefon uydurulmamış, doğrulanmış resmî sayfa bağlantısı verilmiş.",
+        "kanit": "yanit_23 satır 18 ve 39; kaynak_23 KAYIT 77 Hesaplama ve iletişim notu.",
+        "oneri": "Bu davranışı koru.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Şu an Organik Tarım Destekleri'nden yararlanamazsınız: destek, ürününe yetkilendirilmiş kuruluşça ürün sertifikası düzenlenmiş çiftçilere ödeniyor ve sertifikanız yok. 2026'da dekar başına tutar 73,40-550,50 TL (Tablo 7 katsayıları x 367 TL; ürün grubuna ve bireysel/grup sertifikaya göre, 1. derece örgüt üyesine %25 ilave dahil); incirin hangi grupta olduğu kayıtta yok, tebliğ tablosundan teyit edin; 60 dekar için bu aralık yaklaşık 4.404-33.030 TL eder. Yapmanız gereken: yetkilendirilmiş bir kontrol kuruluşuyla sürece girmek, ürünlerinizin ÇKS ve OTBİS'te kayıtlı olması; geçiş süreci-1 arazisi destek alamaz, geçiş-2/3 veya organik statüde, hasadı yapılmış ve ürün sertifikası düzenlenmiş olmalı; başvuru yıllık ilanla il/ilçe Tarım ve Orman Müdürlüğü'ne yapılır (2026 tebliğinden teyit edin). Bu arada meyve-sebze temel desteği kayıtta dekar başına 367 TL (kategori teyidiyle 60 dekarda yaklaşık 22.020 TL) görünüyor. Aydın il müdürlüğü iletişimi: https://aydin.tarimorman.gov.tr/Iletisim."
+  },
+  {
+    "n": 24,
+    "puan": {"dogruluk": 4, "soruya_odak": 4, "eksiksizlik": 2, "anlasilirlik": 3},
+    "bulgular": [
+      {
+        "tur": "diger",
+        "ciddiyet": "dusuk",
+        "aciklama": "OLUMLU: Karar ve gerekçe kayıtla tutarlı: engel, hızlandırma programına kabul tarihinde başka şirkette ortaklık. Zaman çapası (kabul tarihi) ve istisnalar (borsa hisseleri, kitle fonlaması payları) doğru ve gerekçede ayrıca belirtilmiş. 1512'nin kapalı olması ve eski 2012/3305 sisteminin kalkması doğru aktarılmış.",
+        "kanit": "yanit_24 satır 4, 18-19, 23; kaynak_24 KAYIT 49 [sart], KAYIT 174, KAYIT 164-167.",
+        "oneri": "Bu davranışı koru.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "«Profiliniz bu yanıt için yeterli» yanlış: Aşama 1'in diğer şartları bilinmiyor (üniversite öğrencisi ya da mezunu olmak; daha önce Teknogirişim ya da 1512/1812 Aşama 2 desteği almamış olmak) ve kullanıcıya hiç sorulmuyor. Kullanıcı ortaklıktan çıksa bile bu şartlar sağlanmıyorsa yine başvuramaz; yanıt tek engel varmış gibi bırakıyor. Bilgi eksikliği bölümü profili yeterli sayıp sormuyor.",
+        "kanit": "yanit_24 satır 33; kaynak_24 KAYIT 49 şart satırı: «üniversitede ön lisans/lisans/yüksek lisans/doktora öğrencisi veya mezunu olmak ... daha önce Teknogirişim Sermayesi Desteği veya 1512/1812 2. Aşama desteği almamış olmak».",
+        "oneri": "Karar etiketi 'uygun değil' olsa bile, kaydın karşılanamayan diğer şartları (profil alanı yoksa) «ayrıca şunları da teyit edin» diye listele; 'Profil yeterli' ifadesini yalnız tüm şartlar profilden karşılandığında üret.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "orta",
+        "aciklama": "Kısa cevap «Destek: bu programın tutarı kayıtta yok; önceki programın son bilinen tutarı kartta (bilgi için)» diyor, ama kartta böyle bir tutar yok; atıf boşta. Aşama 2 için kayıtta bulunan bilgi (destek tutarı karşılığında en fazla %5 hisse TÜBİTAK BiGG fonuna devri) hiç verilmemiş; yani sorulan program 'yatırım' adını taşıyan bir hisse karşılığı yatırım programı olduğu halde mekanizması anlatılmamış.",
+        "kanit": "yanit_24 satır 5 ve 16-20; kaynak_24 KAYIT 49 [kural]: «Kuruluş, Aşama 2’de destek kapsamına alınan tutar karşılığında en fazla %5 hissesi için TÜBİTAK BiGG fonu ile yatırım sözleşmesi yapar.»",
+        "oneri": "Kısa cevapta 'kartta' atfı yalnız kartta basılan bir alan için üretilsin; 'uygun değil' kartında da programın ne sağladığını (hisse karşılığı yatırım, %5) bir cümleyle ver.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "eksik_program",
+        "ciddiyet": "orta",
+        "aciklama": "Yanıt çıkmaz sokak: 3. ve 4. bölümler boş («Size açık bir program kartı yok; ... başka bir programı adıyla sorun»). Başvuru yolu, çağrı durumu ve ortaklık sorununu giderme sonrası ne yapılacağı yok: başvuru PRODİS üzerinden uygulayıcı kuruluşların hızlandırma çağrılarına yapılır; 2026-1 Tohum çağrısı yalnız tohum öncesi yatırım almış/1512'yi tamamlamış şirketlere, 1812-2026-2 Aşama 2 çağrısı ise 30.09.2026'da kapandı. Girişim modu verisi (TRL 3, şirketleşme öncesi, ön skor 27/75; sermaye şirketi isteyen 1507/1501 şirket kurana kadar kapalı) kullanılmamış.",
+        "kanit": "yanit_24 satır 27-30; kaynak_24 ÇAĞRI id 28 ve id 3; GİRİŞİM MODU BİLGİLERİ HUKS satırları.",
+        "oneri": "'Uygun değil' sonucunda engel giderilebilir türdeyse (ortaklık) «engel kalkarsa» yol haritasını ve açık/kapalı çağrı durumunu yaz; girişim modu bilgisini (TRL, şirket durumu) ikinci seçenek olarak özetle.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "uygunluk",
+        "ciddiyet": "dusuk",
+        "aciklama": "«Uygun değil» etiketi kabul tarihine bağlı, giderilebilir bir engel için fazla kesin; «Ne yapabilirsiniz» ise «ayrılmanın sonucunu kurumdan teyit edin» diye muğlak. Kayıttaki kural açıkça «kabul edildiği tarih itibarı ile» ortaklık yapısında yer almamak; yani kabul tarihine kadar çıkış kuralı karşılar. Beklenti (uygun değil + çapa + istisna) karşılanıyor, ama sonuç cümlesi daha net kurulabilirdi.",
+        "kanit": "yanit_24 satır 19; kaynak_24 [sart] alıntısı.",
+        "oneri": "Zaman çapalı engellerde etiketi «şu an engel var; kabul tarihine kadar giderilirse aşılır» biçiminde yaz ve kurumdan nelerin teyit edileceğini (çıkışın biçimi, tarihi) belirt.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "gurultu",
+        "ciddiyet": "orta",
+        "aciklama": "Soruyla ilgisiz dört eski 2012/3305 yatırım teşviki kartı (Stratejik, Büyük Ölçekli, Genel, Bölgesel) «kapalı» listesinde tek satırda toplanmış ve cümle kesik bitiyor («Türkiye Yüzyılı Kalkınma Hamlesi (Teknoloji…»); ayrıca «Bakanligi» yazım hatası var. Şirketsiz bir Ar-Ge girişimcisinin BiGG sorusuna bu kartların hiçbir katkısı yok.",
+        "kanit": "yanit_24 satır 24.",
+        "oneri": "Soruda adı geçmeyen ve profil/ihtiyaçla ilgisiz kapalı eski sistem kartlarını gizle; gerekirse tek cümlelik mevzuat notu ver ve kesik metin üretme.",
+        "kaynak_disi": false
+      },
+      {
+        "tur": "anlasilirlik",
+        "ciddiyet": "dusuk",
+        "aciklama": "1512 kapalı açıklamasında iç not dili sızmış: «1612 çağrı sayfası», «1512 program sayfası erişime kapalı». «Neden» metni kısa cevap ve kartta aynen iki kez; «beyan: ortaklığınız var» iç jargon.",
+        "kanit": "yanit_24 satır 4, 18, 23; kaynak_24 KAYIT 174 durum notu.",
+        "oneri": "Kullanıcıya dönük kapalılık nedenlerini yazarken tarama/erişim notlarını çıkar; gerekçeyi tek yerde ver.",
+        "kaynak_disi": false
+      }
+    ],
+    "uzman_cevap": "Şu anki durumunuzla başvuramazsınız: 1812 BiGG Yatırım Aşama 1'de hızlandırma programına kabul edildiğiniz tarih itibarıyla herhangi bir sermaye şirketinin ya da şahıs işletmesinin ortağı olmamanız gerekir ve kayıtta başka bir şirkette ortak görünüyorsunuz. Borsadaki hisseler ve kitle fonlaması payları bu kuralın dışındadır; engel kabul tarihine bağlı olduğundan o tarihe kadar ortaklıktan çıkmak durumu değiştirir, çıkışın nasıl değerlendirileceğini TÜBİTAK 444 66 90'dan teyit edin. Ayrıca Aşama 1 için üniversite öğrencisi ya da mezunu olmanız ve daha önce Teknogirişim ya da 1512/1812 Aşama 2 desteği almamış olmanız gerekir; bunlar profilinizde yok. Başvuru PRODİS üzerinden uygulayıcı kuruluşların hızlandırma çağrılarına yapılır: şu an açık görünen 2026-1 Tohum çağrısı yalnız tohum öncesi yatırım almış ya da 1512'yi tamamlamış şirketler içindir ve 2026-2 Aşama 2 çağrısı 30.09.2026'da kapandı. Aşama 2'de TÜBİTAK BiGG fonu destek tutarı karşılığında en fazla %5 hisse alır."
+  }
+]

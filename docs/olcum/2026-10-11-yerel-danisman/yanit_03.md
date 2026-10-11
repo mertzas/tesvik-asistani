@@ -25,15 +25,15 @@
 - **Hesaplama:** Proje bütçesinin %75'i hibe (geri ödemesiz), proje başına azami 3.500.000 TL. Personel, seyahat, ekipman/yazılım, malzeme, danışmanlık ve hizmet alımı giderlerini kapsar.
 - **Profilinize göre sağlanan şartlar:** KOBİ ölçeğinde sermaye şirketi (limited şirket, küçük işletme)
 - **Kurallar (kayıttan):**
-  - Bu programdan daha önce 5 proje desteği almadım (ilk 5 projenin en az ikisi ortaklı proje olmalıdır; 5 destekten sonra diğer programlara başvurulur) — resmî metin: “Firmaların en az ikisi ortaklı olmak kaydıyla ilk beş projesi desteklenir (İlk beş destek sonrası diğer programlara başvurulmalıdır).”
+  - Bu programdan daha önce 5 proje desteği almamış olmak (ilk 5 projenin en az ikisi ortaklı proje olmalıdır; 5 destekten sonra diğer programlara başvurulur) — resmî metin: “Firmaların en az ikisi ortaklı olmak kaydıyla ilk beş projesi desteklenir (İlk beş destek sonrası diğer programlara başvurulmalıdır).”
   - Ar-Ge faaliyeti başvurudan önce tamamlanmış projeler desteklenmez — resmî metin: “Hayır. Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez.”
   - Proje bütçesi en fazla 3.500.000 TL olmalı — resmî metin: “Proje bütçesi en fazla 3.500.000 TL’dir.”
 - **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan …); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (33 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
 - 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (11 gün kaldı); başvuru kapanışı 26.10.2026 (15 gün kaldı)
 - 1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; Başvurular sürekli açıktır, yılın her günü PRODİS (eteydeb.tubitak.gov.tr) üzerinden; çağrılı uluslararası programlarda proje, ilgili çağrının değerlendirme takvimine uygun sunulmalıdır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan …); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (33 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Kapasite Geliştirme Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)
@@ -42,7 +42,7 @@
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Ön kayıt:** 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı için yeni başvuranın ön kayıt son günü 09.11.2026 (29 gün).
-- **1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı:** Başvuruyu yap: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
+- **1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı:** Başvuru yeri: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
 - [Genel ilke – teyit edin] Başvuru ya da sözleşme tarihinden önce yapılan harcamalar çoğu programda desteklenmez; harcamaya başlamadan önce kurumun onayını bekleyin.
 - [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
 - [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
@@ -55,7 +55,7 @@
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
+Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

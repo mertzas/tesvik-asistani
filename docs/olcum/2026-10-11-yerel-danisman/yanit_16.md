@@ -24,19 +24,19 @@
 - **Hesaplama:** Proje bütçesinin %75'i hibe (geri ödemesiz), proje başına azami 3.500.000 TL. Personel, seyahat, ekipman/yazılım, malzeme, danışmanlık ve hizmet alımı giderlerini kapsar.
 - **Profilinize göre sağlanan şartlar:** KOBİ ölçeğinde sermaye şirketi (limited şirket, küçük işletme)
 - **Kurallar (kayıttan):**
-  - Bu programdan daha önce 5 proje desteği almadım (ilk 5 projenin en az ikisi ortaklı proje olmalıdır; 5 destekten sonra diğer programlara başvurulur) — resmî metin: “Firmaların en az ikisi ortaklı olmak kaydıyla ilk beş projesi desteklenir (İlk beş destek sonrası diğer programlara başvurulmalıdır).”
+  - Bu programdan daha önce 5 proje desteği almamış olmak (ilk 5 projenin en az ikisi ortaklı proje olmalıdır; 5 destekten sonra diğer programlara başvurulur) — resmî metin: “Firmaların en az ikisi ortaklı olmak kaydıyla ilk beş projesi desteklenir (İlk beş destek sonrası diğer programlara başvurulmalıdır).”
   - Ar-Ge faaliyeti başvurudan önce tamamlanmış projeler desteklenmez — resmî metin: “Hayır. Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez.”
   - Proje bütçesi en fazla 3.500.000 TL olmalı — resmî metin: “Proje bütçesi en fazla 3.500.000 TL’dir.”
 - **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- YATIRIM-İŞLETME DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6) (Ticaret Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- REFİNANSMAN KEFALET PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- YATIRIM-İŞLETME DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- REFİNANSMAN KEFALET PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- İSTİHDAM KORUMA DESTEK PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; KOSGEB İstihdamı Koruma 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (20 gün kaldı)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Ön kayıt:** 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı için yeni başvuranın ön kayıt son günü 09.11.2026 (29 gün).
-- **1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı:** Başvuruyu yap: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
+- **1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı:** Başvuru yeri: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
 - [Genel ilke – teyit edin] Başvuru ya da sözleşme tarihinden önce yapılan harcamalar çoğu programda desteklenmez; harcamaya başlamadan önce kurumun onayını bekleyin.
 - [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
 - [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
@@ -49,7 +49,7 @@
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
+Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

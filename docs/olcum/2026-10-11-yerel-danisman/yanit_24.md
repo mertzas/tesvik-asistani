@@ -21,7 +21,7 @@
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) (TUBITAK) — kapalı: program başvuruya açık değil (TÜBİTAK, BiGG 1. aşamasını 2026-2028 döneminde 1812 Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) çerçevesinde yürütüyor (1612 çağrı sayfası); 1512 program sayfası erişime kapalı. Yeni başvuru için 1812 çağrılarına bakın)
-- Stratejik Yatırımların Teşviki (Hazine/Ticaret Bakanligi); Büyük Ölçekli Yatırımların Teşviki (Hazine/Ticaret Bakanligi); Genel Teşvik Uygulamaları (Hazine/Ticaret Bakanligi); Bölgesel Teşvik Uygulamaları (Hazine/Ticaret Bakanligi) — kapalı: program başvuruya açık değil (ARTIK AKTİF DEĞİL. Bu uygulama 2012/3305 sayılı Karar'a dayanıyordu; söz konusu Karar, 9903 sayılı 'Yatırımlarda Devlet Yardımları Hakkında Karar' ile (Resmî Gazete, 30/05/2025) yürürlükten kaldırıldı. Yeni sistem üç başlıkta yürüyor: Türkiye Yüzyılı Kalkınma…)
+- Stratejik Yatırımların Teşviki (Hazine/Ticaret Bakanligi); Büyük Ölçekli Yatırımların Teşviki (Hazine/Ticaret Bakanligi); Genel Teşvik Uygulamaları (Hazine/Ticaret Bakanligi); Bölgesel Teşvik Uygulamaları (Hazine/Ticaret Bakanligi) — kapalı: program başvuruya açık değil (Bu uygulama 2012/3305 sayılı Karar'a dayanıyordu; söz konusu Karar, 9903 sayılı 'Yatırımlarda Devlet Yardımları Hakkında Karar' ile (Resmî Gazete, 30/05/2025) yürürlükten kaldırıldı. Yeni sistem üç başlıkta yürüyor: Türkiye Yüzyılı Kalkınma Hamlesi (Teknoloji…)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - Size açık bir program kartı olmadığı için başvuru darboğazı çıkarılmadı; bir programı adıyla sorarsanız şartlarını ayrıntılı veririm.

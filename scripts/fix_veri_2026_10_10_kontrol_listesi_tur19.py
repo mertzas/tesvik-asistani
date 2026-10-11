@@ -128,7 +128,8 @@ def yukle():
     return sonuc
 
 
-SONRAKI_TURLAR = ("fix_veri_2026_10_11_organik_atif_tur24.py", "fix_veri_2026_10_11_basvuru_sahibi_tur26.py")
+SONRAKI_TURLAR = ("fix_veri_2026_10_11_organik_atif_tur24.py", "fix_veri_2026_10_11_basvuru_sahibi_tur26.py",
+                  "fix_veri_2026_10_11_birinci_tekil_tur30.py")
 
 
 def _sonraki_duzeltme(tid: int):

@@ -591,7 +591,8 @@ def test_urun_kelime_siniri_ve_kesirli_dekar():
 
 def test_ic_not_gerekceyi_silmez():
     notu = "ARTIK AKTİF DEĞİL. Kaynak sayfada başvuruya kapalı olduğu belirtiliyor. Dayanak (kalıp: 'kapalı')"
-    assert yerel_danisman.kullanici_durum_notu(notu).startswith("ARTIK AKTİF DEĞİL. Kaynak sayfada başvuruya kapalı")
+    # gerekçe korunur; "ARTIK AKTİF DEĞİL" ham uyarısı atılır (etiket zaten "kapalı")
+    assert yerel_danisman.kullanici_durum_notu(notu).startswith("Kaynak sayfada başvuruya kapalı")
 
 
 # ------------------------------------------------------------------ tur 6 hakem bulguları
@@ -785,3 +786,181 @@ def test_karar_sarti_metni_sartli_olmayan_notta_bos():
 def test_kontrol_karakteri_hicbir_kaynakta_yok():
     for yol in list((KOK / "app").rglob("*.py")) + list((KOK / "scripts").glob("*.py")):
         assert "\x08" not in yol.read_text(encoding="utf-8"), yol
+
+
+
+# ------------------------------------------------------------------ kalan hakem bulguları (tur 8 sonrası)
+def test_alt_destek_cagrisi_programin_tamamini_kapatmaz(veri):
+    """KOSGEB Girişimci: yalnız İş Geliştirme çağrısı kapanmıştı ama program tümüyle 'kapalı' gösteriliyordu."""
+    t = veri.get(Tesvik, 1)
+    t.detay = "Programın iki desteği var: İş Kurma desteği ve İş Geliştirme desteği."
+    veri.add(TesvikCagrisi(tesvik_id=1, ad="İş Geliştirme Çağrısı 2026 yılı 2. dönem", acilis=date(2026, 4, 1),
+                           kapanis=date(2026, 5, 8), kaynak_url="https://kosgeb.gov.tr/ig", dogrulama_tarihi=BUGUN))
+    veri.query(TesvikCagrisi).filter(TesvikCagrisi.kaynak_url == "https://kosgeb.gov.tr/duyuru").delete()
+    veri.commit()
+    c = {"ad": "İş Geliştirme Çağrısı 2026 yılı 2. dönem"}
+    assert yerel_danisman.alt_destek_cagrisi(t, c) == "İş Geliştirme"
+    assert yerel_danisman.alt_destek_cagrisi(t, {"ad": "2026 yılı 2. dönem"}) == ""
+    d = yerel_danisman.degerlendir([t], _ltd(), {}, {}, set(), set(), BUGUN)[0]
+    assert d.karar != "kapali" and "İş Geliştirme çağrısı kapandı (08.05.2026)" in yerel_danisman.takvim_metni(
+        d, BUGUN, kisa=True)
+
+
+def test_sorudaki_yabanci_ortak_beyani_sart_karsilar(veri):
+    """Eurostars: 'Almanya'daki bir ortakla başvurabilir miyiz' sorusunda ortak şartı kullanıcıya geri soruluyordu."""
+    assert yerel_danisman.soru_beyanlari("Almanya'daki bir ortakla başvurabilir miyiz?") == {
+        "ortak_ulke": "Almanya'daki"}
+    assert yerel_danisman.soru_beyanlari("Almanya'ya ihracat yapıyoruz") == {}
+    _ek(veri, Tesvik(id=80, kurum="TÜBİTAK", baslik="Eurostars T", ozet="e", detay="d", aktif_mi=True,
+                     kaynak_url="https://tubitak.gov.tr/e80", uygunluk_kriterleri={"sektorler": ["genel"]},
+                     kontrol_listesi=[{"tur": "sart", "metin": "En az bir Türk ve bir Eurostars üyesi ülkeden ortak "
+                                       "olmak", "alinti": None, "kaynak_url": None, "dogrulandi": None}]))
+    d = yerel_danisman.degerlendir([veri.get(Tesvik, 80)], _ltd(), {}, {}, set(), set(), BUGUN,
+                                   soru="Almanya'daki bir ortakla başvurabilir miyiz?")[0]
+    assert any("Almanya'daki ortak" in x for x in d.saglanan) and not d.teyit and d.karar == "sartli"
+
+
+def test_9903_karsilastirmasi_katki_oranina_gore():
+    def _d(i, baslik):
+        return yerel_danisman.Degerlendirme(Tesvik(id=i, baslik=baslik), "sartli")
+    notlar = {1: "UYGUN\nDESTEK UNSURLARI (Karar metninden, profil bölgesine göre): vergi indirimi: yatırıma katkı "
+                 "oranı %20; makine desteği: bu programda yok",
+              2: "UYGUN\nDESTEK UNSURLARI (Karar metninden, profil bölgesine göre): vergi indirimi: yatırıma katkı "
+                 "oranı %50; makine desteği: %25, azami 120 milyon TL; faiz/kâr payı desteği: repo %40"}
+    satir = yerel_danisman.karsilastirma_9903([_d(1, "Hedef"), _d(2, "Teknoloji Hamlesi")], notlar)
+    assert satir[0].startswith("- Teknoloji Hamlesi") and "%50" in satir[0] and "makine desteği: %25" in satir[0]
+    assert yerel_danisman.karsilastirma_9903([_d(1, "Hedef")], notlar) == []
+
+
+def test_kapasite_esikli_karar_sarti_soruya_doner():
+    sart = "Karar şartı: EK-3 55.1 kalemi: Oteller 50 oda ve üzeri (Otel) (MADDE 5/1, 10)"
+    d = yerel_danisman.Degerlendirme(Tesvik(baslik="Hedef", uygunluk_kriterleri={}), "sartli", teyit=[sart])
+    sorular = yerel_danisman.netlestirme(_ltd(nace_kodu="55.10"), [d], [d], "soru")
+    assert any("kapasitesi nedir (oda)" in x for x in sorular)
+
+
+def test_sure_sorusunda_kisi_bilgisi_sorulur(veri):
+    _ek(veri, Tesvik(id=81, kurum="SGK", baslik="4447 T", ozet="p", aktif_mi=True, kaynak_url="https://iskur/t81",
+                     uygunluk_kriterleri={"sektorler": ["genel"]},
+                     detay="Destek süreleri: kadınlar 24–54 ay; 29 yaş üstü erkekler 6–30 ay."))
+    d = yerel_danisman.Degerlendirme(veri.get(Tesvik, 81), "sartli")
+    sorular = yerel_danisman.netlestirme(_ltd(), [d], [d], "4447 teşviki kaç ay sürer?")
+    assert "cinsiyeti, yaşı" in sorular[0]
+
+
+def test_adim_emir_kipi_ve_isen_hitabi():
+    assert yerel_danisman._temiz("Başvuruyu yap: KOSGEB e-hizmetler") == "Başvuru yeri: KOSGEB e-hizmetler"
+    assert yerel_danisman._hitap("Model fabrika isen: başvuru yapılır") == "Model fabrika iseniz: başvuru yapılır"
+
+
+
+# ------------------------------------------------------------------ tur 9 hakem bulguları
+def test_ic_bakim_notu_ve_ham_uyari_kullaniciya_gitmez():
+    notu = ("Kaynak sayfada kapandı. | Tur31 2026-10-11: kayıt içi çelişki giderildi (tesvil_tutari; dayanak: "
+            "durum_notu)")
+    assert yerel_danisman.kullanici_durum_notu(notu) == "Kaynak sayfada kapandı"
+    assert yerel_danisman.kullanici_durum_notu("ARTIK AKTİF DEĞİL. 2024'te sona erdi").startswith("2024'te sona erdi")
+
+
+def test_mulga_programda_takip_onerisi_yerine_halef(veri):
+    t = Tesvik(baslik="Eski", kurum="Ticaret Bakanlığı", durum_notu="dayanağı 2573 sayılı Karar mülga",
+               uygunluk_kriterleri={})
+    d = yerel_danisman.Degerlendirme(t, "kapali")
+    assert "sonraki dönemi beklemeyin" in yerel_danisman._uygun_hale_gelmek(d)[0]
+    d.tesvik = Tesvik(baslik="X", kurum="K", durum_notu="2026 çağrısı kapandı", uygunluk_kriterleri={})
+    d.kapsam_disi = True
+    assert "kalem bu programın kapsamında değil" in yerel_danisman._uygun_hale_gelmek(d)[0]
+
+
+def test_halef_eski_programin_kalemini_dislarsa_onerilmez(veri):
+    _ek(veri,
+        Tesvik(id=90, kurum="Ticaret Bakanlığı", baslik="Eski Üyelik Desteği", aktif_mi=False, detay="d",
+               ozet="E-ticaret sitelerine bireysel üyelik giderleri desteklenir", kaynak_url="https://t/90",
+               durum_notu="Tur12: güncel karşılığı 5986 m.8 Mağaza ve m.4 Reklam desteği"),
+        Tesvik(id=91, kurum="Ticaret Bakanlığı", baslik="Mağaza Desteği (5986 sayılı Karar m.8)", aktif_mi=True,
+               ozet="mağaza ve üyelik", detay="d", kaynak_url="https://t/91"),
+        Tesvik(id=92, kurum="Ticaret Bakanlığı", baslik="Reklam Desteği (5986 sayılı Karar m.4)", aktif_mi=True,
+               ozet="reklam", detay="Pazaryeri üyelik ücretleri bu destek kapsamı dışındadır; kapsam dışı.",
+               kaynak_url="https://t/92"))
+    tum = veri.query(Tesvik).all()
+    assert [x.id for x in yerel_danisman.halef_kayitlari(veri.get(Tesvik, 90), tum)] == [91]
+
+
+def test_turquality_dislamasi_madde_listesiyle(veri):
+    _ek(veri,
+        Tesvik(id=93, kurum="Ticaret Bakanlığı", baslik="Pazara Giriş (5973 sayılı Karar m.3)", ozet="p", detay="d",
+               aktif_mi=True, kaynak_url="https://t/93",
+               kontrol_listesi=[{"tur": "sart", "metin": "TURQUALITY® kapsamında desteklenmiyor olmak; bu programdaki "
+                                 "şirketler destek süreleri boyunca bu destekten yararlanamaz",
+                                 "alinti": "destek süreleri boyunca 3 üncü, 4 üncü ve 12 nci maddelerde yer alan",
+                                 "kaynak_url": None, "dogrulandi": True}]),
+        Tesvik(id=94, kurum="Ticaret Bakanlığı", baslik="Marka Tescil (5973 sayılı Karar m.4)", ozet="m", detay="d",
+               aktif_mi=True, kaynak_url="https://t/94"))
+    metin = yerel_danisman.turquality_dislamasi(veri.query(Tesvik).all())
+    assert "m.3, m.4, m.12 desteklerinden yararlanamaz" in metin
+    assert "Pazara Giriş (5973 sayılı Karar m.3); Marka Tescil (5973 sayılı Karar m.4)" in metin
+
+
+def test_soru_profil_calisan_celiskisi():
+    assert "60 çalışan bilgisi profilinizdeki 12" in yerel_danisman.soru_profil_celiskisi(
+        "Şu an 60 çalışanımız var, hangi destekler uygun?", _ltd(calisan_sayisi=12))[0]
+    assert yerel_danisman.soru_profil_celiskisi("Restoranıma 3 kişi daha alacağım", _ltd(calisan_sayisi=8)) == []
+    assert yerel_danisman.soru_profil_celiskisi("12 çalışanımız var", _ltd(calisan_sayisi=12)) == []
+
+
+def test_karar_etiketi_dusuk_olasilik_ve_planlanan_cagri():
+    t = Tesvik(baslik="X", uygunluk_kriterleri={})
+    d = yerel_danisman.Degerlendirme(t, "belirlenemedi", gerekce=["Karar metnine göre ön değerlendirme: DÜŞÜK "
+                                                                  "OLASILIK — x"])
+    assert yerel_danisman.karar_etiketi(d).startswith("Düşük olasılık")
+    k = yerel_danisman.Degerlendirme(t, "kapali", gerekce=["çağrının ilanı ertelenmiştir; yıl içinde planlandı"])
+    assert yerel_danisman.karar_etiketi(k) == "Kapalı — yeni çağrı planlanıyor, tarih yok"
+
+
+def test_kgf_paketi_kontrol_listesi_adimindaki_kosgeb_onayiyla_baglanir(veri):
+    _ek(veri,
+        Tesvik(id=95, kurum="KOSGEB", baslik="KOBİ Dijital Dönüşüm Destek Programı", ozet="d", detay="d",
+               aktif_mi=True, kaynak_url="https://kosgeb/95"),
+        Tesvik(id=96, kurum="KGF", baslik="2024 Dijital Dönüşüm Destek Paketi", ozet="kefalet", detay="d",
+               aktif_mi=True, kaynak_url="https://kgf/96",
+               kontrol_listesi=[{"tur": "adim", "metin": "KOSGEB KOBİ Dijital Dönüşüm Destek Programı başvuru onayı "
+                                 "ve kredi faiz desteğine hak kazanma", "alinti": None, "kaynak_url": None,
+                                 "dogrulandi": None}]))
+    tum = veri.query(Tesvik).all()
+    assert {k: v.id for k, v in yerel_danisman.ust_programlar([veri.get(Tesvik, 96)], tum).items()} == {96: 95}
+
+
+def test_hububat_yalniz_temel_destek_ayrica():
+    t = Tesvik(baslik="Hububat", tesvil_tutari="mercimek 1,0 → 734,00 TL/da; arpa, buğday 1,3 → 954,20 TL/da",
+               tutari_hesaplama_formulu="Temel + planlı üretim (havzada planlanan ürün), her biri katsayı × 367,00 TL: "
+                                        "1. kategori 1,0 → 367,00 + 367,00; 2. kategori 1,3 → 477,10 + 477,10.")
+    p = FinancialProfile(sektor="tarim", urun_turu="buğday", arazi_buyuklugu_dekar=180)
+    metin = yerel_danisman._urun_tutari(t, p)
+    assert "954,20 TL/da × 180 da = 171.756,00 TL" in metin
+    assert "yalnız temel destek (planlı üretim şartı sağlanmazsa): 477,10 TL/da × 180 da = 85.878,00 TL" in metin
+
+
+def test_kredi_kefalet_tutari_destek_diye_etiketlenmez(veri):
+    _ek(veri, Tesvik(id=97, kurum="KGF", baslik="Genç Paket T", ozet="g", detay="d", aktif_mi=True,
+                     kaynak_url="https://kgf/97", tesvil_tutari="Kefalet üst limiti 4 Milyon TL",
+                     uygunluk_kriterleri={"sektorler": ["genel"], "tutar_niteligi": "kredi_kefalet"}))
+    y = _yanit(veri, "Genç Paket T", [97], _ltd())
+    assert "- **Kredi ve kefalet limitleri:** Kefalet üst limiti 4 Milyon TL" in y
+
+
+
+def test_esik_ifadesi_celiski_sayilmaz_ve_iso_tarih_etiketlenir():
+    assert yerel_danisman.soru_profil_celiskisi(
+        "KOSGEB'den daha fazla destek almak için şirketimizi ikiye bölsek, çalışan sayımız 60'ı geçmesin?",
+        _ltd(calisan_sayisi=12)) == []
+    assert yerel_danisman._temiz("son kullandırım tarihi belirtilmemiştir (2026-10-08)") == (
+        "son kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)")
+
+
+
+def test_kapali_eski_surum_guncel_surume_yonlendirir():
+    eski = Tesvik(id=1, baslik="TOBB NEFES KREDİSİ 2020 DESTEK PAKETİ", aktif_mi=False, uygunluk_kriterleri={})
+    yeni = Tesvik(id=2, baslik="TOBB NEFES KREDİSİ 2026 DESTEK PAKETİ", aktif_mi=True, uygunluk_kriterleri={})
+    assert yerel_danisman.guncel_surum(eski, [eski, yeni]) == "TOBB NEFES KREDİSİ 2026 DESTEK PAKETİ"
+    d = yerel_danisman.Degerlendirme(eski, "kapali", guncel_surum="TOBB NEFES KREDİSİ 2026 DESTEK PAKETİ")
+    assert "güncel sürümü etkin" in yerel_danisman._uygun_hale_gelmek(d)[0]

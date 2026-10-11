@@ -2,6 +2,27 @@ PERSONA: {"sektor": "hizmet", "bolge": "Hatay", "calisan_sayisi": 4, "yillik_cir
 BUGÜN: 2026-10-11
 SORU: Restoranıma 3 kişi daha alacağım; 4447 sayılı Kanun işveren prim teşviki kaç ay sürer, şartları neler?
 ============================================================
+KAYIT 185
+[SGK / İŞKUR] Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde)
+Kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
+İŞKUR 'Teşvikler' sayfasından (erişim 2026-10-07): 31.12.2026 tarihine kadar işsiz olan kişileri istihdam eden özel sektör işverenlerinin prime esas kazanç üst sınırına kadarki sosyal güvenlik primi işveren payları (sayfadaki aralık: 7.184,03 TL ila 64.656,23 TL) İşsizlik Sigortası Fonu'ndan karşılanır. Destek süreleri: 18 yaş ve üzeri kadınlar 24–54 ay; 18-29 yaş erkekler 24–54 ay; 29 yaş ve üzeri erkekler 6–30 ay; çalışmakta iken 01.03.2011 sonrası mesleki yeterlilik belgesi alanlar / mesleki-teknik eğitimi tamamlayanlar / işgücü yetiştirme kurslarını bitirenler 12 ay. Kişinin İŞKUR'a kayıtlı olması hâlinde süreye 6 ay eklenir. Uygulayıcı kurum SGK'dır (finansman İşsizlik Sigortası Fonu). Süre ve tutar ayrıntıları için SGK'nın güncel genelgesi teyit edilmelidir.
+DURUM: Doğrulanmış, güncel/aktif program. İŞKUR resmî sayfasından doğrulandı (2026-10-07); uygulama 31.12.2026'ya kadar (4447 geçici 10). | Denetim2-T7 2026-10-08: İŞKUR sayfası: 31.12.2026'ya kadar; işveren payı 7.184,03 TL ila 64.656,23 TL (https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/) | Tur30 2026-10-11: kontrol listesindeki birinci tekil beyan metni nötr şart diline çevrildi (1 madde)
+Başvuru şartları: İşe alınan kişinin son 6 aydır işsiz olması; Kişinin, işe alındığı tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına İLAVE olarak istihdam edilmesi; Özel sektör işvereni olmak; aylık prim ve hizmet belgelerinin yasal süresinde verilmesi ve primlerin ödenmesi (SGK genel şartları); Uygulama süresi: 31.12.2026 tarihine kadar işe alımlar
+Gerekli belgeler: SGK e-Bildirge üzerinden teşvik kodu ile bildirim; İŞKUR kaydı (ek 6 ay için)
+Başvuru yeri: SGK (e-Bildirge) — uygulayıcı kurum; bilgi: İŞKUR il müdürlükleri
+Başvuru süresi/dönemi: Sürekli; 31.12.2026 tarihine kadar yapılan işe alımlar için
+Tutar/oran: İşveren SGK prim payı, kişi başı aylık 7.184,03–64.656,23 TL (2026; prime esas kazancın alt ve üst sınırı arası), 6–54 ay
+Hesaplama: İşveren prim payı × destek süresi (6–54 ay; kişinin yaşı/cinsiyeti/belgesine göre; İŞKUR kayıtlı ise +6 ay); prim tabanı prime esas kazanç üst sınırına kadar
+Uygunluk kriterleri (yapılandırılmış): {"sektorler": ["genel"], "tutar_niteligi": "prim desteği", "sektor_gerekcesi": "4447 geçici 10: tüm özel sektör işverenleri"}
+Durum notu: İŞKUR resmî sayfasından doğrulandı (2026-10-07); uygulama 31.12.2026'ya kadar (4447 geçici 10). | Denetim2-T7 2026-10-08: İŞKUR sayfası: 31.12.2026'ya kadar; işveren payı 7.184,03 TL ila 64.656,23 TL (https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/) | Tur30 2026-10-11: kontrol listesindeki birinci tekil beyan metni nötr şart diline çevrildi (1 madde)
+- [sart] İşe alınan kişinin son 6 aydır işsiz olması | alıntı: Kişinin son 6 aydır işsiz olması | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
+- [sart] Kişinin, işe alındığı tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına İLAVE olarak istihdam edilmesi | alıntı: Kişinin istihdam edildiği tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına ilave olarak istihdam edilmesi | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
+- [sart] Özel sektör işvereni olmak | alıntı: Özel sektör işvereni olması | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
+- [adim] SGK e-Bildirge üzerinden teşvik kodu ile bildirim | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
+- [adim] Başvuruyu yap: SGK (e-Bildirge) — uygulayıcı kurum; bilgi: İŞKUR il müdürlükleri | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
+- [kural] Uygulama süresi: 31.12.2026 tarihine kadar işe alımlar | alıntı: 31.12.2026 tarihine kadar işsiz olan kişileri istihdam eden özel sektör işverenlerin | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
+- [bilgi] İŞKUR kaydı (ek 6 ay için) | alıntı: olması durumunda destek süresine 6 ay eklenilmesi yönünde hüküm getirilmiştir | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
+============================================================
 KAYIT 186
 [SGK / İŞKUR] İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5)
 Kaynak: https://www.iskur.gov.tr/isveren/tesvikler/issizlik-odenegi-alanlara-yonelik-tesvik/
@@ -21,27 +42,6 @@ Durum notu: İŞKUR resmî sayfasından doğrulandı (2026-10-07); tutar/süre s
 - [sart] Özel sektör işvereni olmalısın | alıntı: özel sektör işverenleri tarafından işe alındığı tarihten önceki son altı aylık dönemde | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/issizlik-odenegi-alanlara-yonelik-tesvik/
 - [adim] SGK e-Bildirge üzerinden teşvik kodu ile bildirim | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/issizlik-odenegi-alanlara-yonelik-tesvik/
 - [adim] Başvuruyu yap: SGK (e-Bildirge) | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/issizlik-odenegi-alanlara-yonelik-tesvik/
-============================================================
-KAYIT 185
-[SGK / İŞKUR] Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde)
-Kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
-İŞKUR 'Teşvikler' sayfasından (erişim 2026-10-07): 31.12.2026 tarihine kadar işsiz olan kişileri istihdam eden özel sektör işverenlerinin prime esas kazanç üst sınırına kadarki sosyal güvenlik primi işveren payları (sayfadaki aralık: 7.184,03 TL ila 64.656,23 TL) İşsizlik Sigortası Fonu'ndan karşılanır. Destek süreleri: 18 yaş ve üzeri kadınlar 24–54 ay; 18-29 yaş erkekler 24–54 ay; 29 yaş ve üzeri erkekler 6–30 ay; çalışmakta iken 01.03.2011 sonrası mesleki yeterlilik belgesi alanlar / mesleki-teknik eğitimi tamamlayanlar / işgücü yetiştirme kurslarını bitirenler 12 ay. Kişinin İŞKUR'a kayıtlı olması hâlinde süreye 6 ay eklenir. Uygulayıcı kurum SGK'dır (finansman İşsizlik Sigortası Fonu). Süre ve tutar ayrıntıları için SGK'nın güncel genelgesi teyit edilmelidir.
-DURUM: Doğrulanmış, güncel/aktif program. İŞKUR resmî sayfasından doğrulandı (2026-10-07); uygulama 31.12.2026'ya kadar (4447 geçici 10). | Denetim2-T7 2026-10-08: İŞKUR sayfası: 31.12.2026'ya kadar; işveren payı 7.184,03 TL ila 64.656,23 TL (https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/)
-Başvuru şartları: İşe alınan kişinin son 6 aydır işsiz olması; Kişinin, işe alındığı tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına İLAVE olarak istihdam edilmesi; Özel sektör işvereni olmak; aylık prim ve hizmet belgelerinin yasal süresinde verilmesi ve primlerin ödenmesi (SGK genel şartları); Uygulama süresi: 31.12.2026 tarihine kadar işe alımlar
-Gerekli belgeler: SGK e-Bildirge üzerinden teşvik kodu ile bildirim; İŞKUR kaydı (ek 6 ay için)
-Başvuru yeri: SGK (e-Bildirge) — uygulayıcı kurum; bilgi: İŞKUR il müdürlükleri
-Başvuru süresi/dönemi: Sürekli; 31.12.2026 tarihine kadar yapılan işe alımlar için
-Tutar/oran: İşveren SGK prim payı, kişi başı aylık 7.184,03–64.656,23 TL (2026; prime esas kazancın alt ve üst sınırı arası), 6–54 ay
-Hesaplama: İşveren prim payı × destek süresi (6–54 ay; kişinin yaşı/cinsiyeti/belgesine göre; İŞKUR kayıtlı ise +6 ay); prim tabanı prime esas kazanç üst sınırına kadar
-Uygunluk kriterleri (yapılandırılmış): {"sektorler": ["genel"], "tutar_niteligi": "prim desteği", "sektor_gerekcesi": "4447 geçici 10: tüm özel sektör işverenleri"}
-Durum notu: İŞKUR resmî sayfasından doğrulandı (2026-10-07); uygulama 31.12.2026'ya kadar (4447 geçici 10). | Denetim2-T7 2026-10-08: İŞKUR sayfası: 31.12.2026'ya kadar; işveren payı 7.184,03 TL ila 64.656,23 TL (https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/)
-- [sart] İşe alınan kişinin son 6 aydır işsiz olması | alıntı: Kişinin son 6 aydır işsiz olması | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
-- [sart] Kişinin, işe alındığı tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına İLAVE olarak istihdam edilmesi | alıntı: Kişinin istihdam edildiği tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına ilave olarak istihdam edilmesi | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
-- [sart] Özel sektör işvereniyim | alıntı: Özel sektör işvereni olması | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
-- [adim] SGK e-Bildirge üzerinden teşvik kodu ile bildirim | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
-- [adim] Başvuruyu yap: SGK (e-Bildirge) — uygulayıcı kurum; bilgi: İŞKUR il müdürlükleri | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
-- [kural] Uygulama süresi: 31.12.2026 tarihine kadar işe alımlar | alıntı: 31.12.2026 tarihine kadar işsiz olan kişileri istihdam eden özel sektör işverenlerin | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
-- [bilgi] İŞKUR kaydı (ek 6 ay için) | alıntı: olması durumunda destek süresine 6 ay eklenilmesi yönünde hüküm getirilmiştir | kaynak: https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/
 ADAY (yanıtta yok) KAYIT 178: Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı; aktif_mi=True; kriterler={"sektorler": ["genel", "tarim", "imalat", "hizmet"], "sektor_gerekcesi": "EK-3 listesi tarim, imalat, ulastirma, konaklama, bilisim ve saglik bolumlerini kapsar."}; tutar=
 ADAY (yanıtta yok) KAYIT 137: KGF Özkaynak Kefalet Programı — KGF; aktif_mi=True; kriterler={"sektorler": ["genel"], "tutar_niteligi": "kredi_kefalet", "max_olcek": "orta"}; tutar=Yararlanıcı/grup başına kefalet azami 5 Milyon TL; işletme kredisi 6–60 ay (ödemesiz ≤1 yıl), yatırım 6–84 ay (ödemesiz ≤2 yıl); işlem ücreti ≥5.000 TL
 ADAY (yanıtta yok) KAYIT 154: KGF Genel Destek Programı — KGF; aktif_mi=True; kriterler={"sektorler": ["genel"], "tutar_niteligi": "kredi_kefalet"}; tutar=

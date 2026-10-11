@@ -49,6 +49,13 @@ class _Sayac:
             q.append(simdi)
             return True, 0
 
+    def iade(self, anahtar: str) -> None:
+        """Son izni geri verir (izin alindiktan sonra is basarisiz olduysa hak dusmesin)."""
+        with self._kilit:
+            q = self._pencereler.get(anahtar)
+            if q:
+                q.pop()
+
     def temizle(self) -> None:
         """Testler icin - sayaclari sifirlar."""
         with self._kilit:
@@ -83,6 +90,12 @@ class _RedisSayac:
             logger.warning("Redis hiz sayaci erisilemedi, istek sinirlanmadan gecirildi: %s: %s",
                            type(e).__name__, e)
             return True, 0
+
+    def iade(self, anahtar: str) -> None:
+        try:
+            self._r.zpopmax(f"hiz:{anahtar}")
+        except Exception as e:  # iade edilemezse hak yalnizca pencere sonuna kadar dusuk kalir
+            logger.warning("Redis hiz sayaci iadesi yapilamadi: %s: %s", type(e).__name__, e)
 
     def temizle(self) -> None:
         try:

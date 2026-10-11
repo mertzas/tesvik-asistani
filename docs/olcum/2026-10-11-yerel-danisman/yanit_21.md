@@ -22,7 +22,7 @@
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - KGF Genel Destek Programı (KGF) — profilinize göre engel yok — şartları teyit edin; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - KGF Özkaynak Kefalet Programı (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: başvurular bankalar kanalıyla kefalet.kgf.com.tr üzerinden yapılır. Kefaletten yararlanma süresi, KGF'nin kefalet tahsis tarihinden itibaren 1 yıldır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletmeyim (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi)); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- TKYB KREDİ DESTEK PAKETİ (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
@@ -33,7 +33,8 @@
 - [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
-1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **KGF Genel Destek Programı** için:
+1. KGF Genel Destek Programı şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
 2. Belgeler (KGF Genel Destek Programı): İlgili bankanın standart kredi başvuru evrakı; İşletme faaliyet/vergi levhası.
 3. Başvuru kanalı: KGF Genel Destek Programı: Programa dahil 15 bankadan biri: Akbank, Anadolubank, Burgan Bank, Denizbank, Garanti BBVA, Halkbank, İşbankası, QNB, Şekerbank, TEB, TSKB, … — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-genel-destek-programi.
 4. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim)

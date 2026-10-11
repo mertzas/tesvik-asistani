@@ -65,3 +65,13 @@ def test_pencere_dolunca_bekleme_suresi_bildirilir():
     izin, bekle = sayac.izin_ver("org:C", 1, 60)
     assert izin is False
     assert 1 <= bekle <= 61
+
+
+
+def test_iade_son_izni_geri_verir():
+    from app.rate_limit import _Sayac
+    s = _Sayac()
+    assert s.izin_ver("k", 1, 60)[0] and not s.izin_ver("k", 1, 60)[0]
+    s.iade("k")
+    assert s.izin_ver("k", 1, 60)[0]
+    s.iade("yok")   # olmayan anahtar sorun çıkarmaz

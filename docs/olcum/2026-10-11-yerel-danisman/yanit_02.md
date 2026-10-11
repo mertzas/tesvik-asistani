@@ -36,8 +36,9 @@
 - [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
+Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **TARIM KEFALET DESTEK PROGRAMI** için:
 1. Ön koşul kayıtlar: Çiftçi Kayıt Sistemi (ÇKS) kaydı.
-2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+2. TARIM KEFALET DESTEK PROGRAMI şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (TARIM KEFALET DESTEK PROGRAMI): İlgili bankanın standart kredi başvuru evrakı; İşletme/çiftçi kayıt belgesi; Banka tarafından istenecek teminat/gelir belgeleri.
 4. Başvuru kanalı: TARIM KEFALET DESTEK PROGRAMI: Programa dahil 10 bankadan biri: Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, Halkbank, TEB, YKB — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tarim-kefalet-destek-programi.
 5. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim) · Konya Tarım ve Orman İl Müdürlüğü: 0332 322 34 60; Konevi Mahallesi Larende Caddesi No:14 Meram/KONYA (doğrulama: https://konya.tarimorman.gov.tr/Iletisim)

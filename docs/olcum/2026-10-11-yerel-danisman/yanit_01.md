@@ -19,13 +19,13 @@
 - **Neden:** program başvuruya açık değil (TRGM duyurusu (29.04.2026): KKYP başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı).
 - **Son bilinen destek (bilgi için):** Hibe: KDV dâhil hibeye esas proje tutarının %50–%70'i (EK-2'ye göre); hibeye esas tutar 100.000 – 30.000.000 TL (aile işletmesi ≤8.000.000 TL)
 - **Kimler başvurabiliyordu (son çağrı):** Gerçek/tüzel kişiler ve tarımsal amaçlı örgütler; kadın ve genç girişimciler (18-40 yaş) öncelikli (MADDE 2, 14); Hibeye esas proje tutarı 100.000 TL alt, 30.000.000 TL üst limit; aile işletmesi 8.000.000 TL (MADDE 14); Hibe oranı KDV dâhil hibeye esas tutarın %50–%70'i, kalan kısım faydalanıcı öz kaynağı (MADDE 14/4); Yatırım konuları Tebliğ'deki başlıklarla sınırlı (işleme/paketleme/depolama, hayvancılık, gübre işleme, ortak makine parkı vb.).
-- **Ne yapabilirsiniz:** Sonraki başvuru dönemini Tarım Bakanlığı duyurularından takip edin; çağrı açıldığında şartları yeniden kontrol edin.
+- **Ne yapabilirsiniz:** Sorduğunuz kalem bu programın kapsamında değil; sonraki dönem açılsa da bu kalem için başvurulamaz. Kalem için kayıtlarımızdaki kredi ve kefalet seçenekleri aşağıda.
 - **Kaynak:** https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — belirlenemedi (Karar metnine göre ön değerlendirme: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok)); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1542 gün kaldı)
-- 2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Programı (Öncelik 2: Ar-Ge Danışmanlığı) (Mevlana Kalkınma Ajansı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Öncelik 2 için 1 Ocak 2021 sonrası kurulmuş teknoloji tabanlı KOBİ'ler başvurabilir.); 2026 SKG TD - 5. Dönem: başvuruya açık — yeni başvuru için son gün 31.10.2026 (20 gün kaldı)
 - TARIM KEFALET DESTEK PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Hayvancılık Destekleri (Tarım Bakanlığı) — profilinize göre engel yok — şartları teyit edin; 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim) (Tarım Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - IPARD III — Tarımsal İşletmelerin Fiziki Varlıklarına Yönelik Yatırımlar (Tedbir 101 / M1) (TKDK) — kapalı: program başvuruya açık değil (Tedbir 101'in 2026 çağrısı (12. Başvuru Çağrı İlanı) 07.09.2026 18:00'da kapanmıştır; yeni bir çağrı duyurusu bulunmamaktadır)
@@ -37,8 +37,9 @@
 - [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
 
 ### 4. Adım Adım Yol Haritası
+Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **TARIM KEFALET DESTEK PROGRAMI** için:
 1. Ön koşul kayıtlar: Çiftçi Kayıt Sistemi (ÇKS) kaydı.
-2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+2. TARIM KEFALET DESTEK PROGRAMI şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (TARIM KEFALET DESTEK PROGRAMI): İlgili bankanın standart kredi başvuru evrakı; İşletme/çiftçi kayıt belgesi; Banka tarafından istenecek teminat/gelir belgeleri.
 4. Başvuru kanalı: TARIM KEFALET DESTEK PROGRAMI: Programa dahil 10 bankadan biri: Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, Halkbank, TEB, YKB — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tarim-kefalet-destek-programi.
 5. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim) · Konya Tarım ve Orman İl Müdürlüğü: 0332 322 34 60; Konevi Mahallesi Larende Caddesi No:14 Meram/KONYA (doğrulama: https://konya.tarimorman.gov.tr/Iletisim)

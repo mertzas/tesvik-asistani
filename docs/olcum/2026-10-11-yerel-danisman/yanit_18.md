@@ -27,13 +27,13 @@
 - **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan …); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (33 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
-- 1719 Eureka Network Çağrıları (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Proje en az iki EUREKA üyesi ülkeden (en az biri AB üyesi veya Ufuk Avrupa Asosiye ülkesi) kuruluşun yer aldığı …); Açık ulusal çağrılar: Uygulamalı Kuantum Teknolojileri, Hafifletme Teknolojileri, Afetlerde Dirençlilik (takvim çağrı duyurularında) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- 1505 - Üniversite-Sanayi İşbirliği Destek Programı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Türkiye'de yerleşik, firma düzeyinde katma değer yaratan ve proje sonuçlarını Türkiye'de uygulamayı taahhüt eden bir …); Sürekli açık (yıl boyunca başvuru yapılabilir) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- REFİNANSMAN KEFALET PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- 1515 - Öncül Ar-Ge Laboratuvarları Destekleme Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; Dönem yok: program sürekli başvuruya açıktır; başvurular yılın herhangi bir iş gününde yapılabilir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- TKYB KREDİ DESTEK PAKETİ (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Ön kayıt:** 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı için yeni başvuranın ön kayıt son günü 22.10.2026 (11 gün).
-- **1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı:** Başvuruyu yap: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
+- **1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı:** Başvuru yeri: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
 - [Genel ilke – teyit edin] Başvuru ya da sözleşme tarihinden önce yapılan harcamalar çoğu programda desteklenmez; harcamaya başlamadan önce kurumun onayını bekleyin.
 - [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
 - [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
@@ -46,7 +46,7 @@
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
+Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

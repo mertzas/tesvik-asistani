@@ -305,3 +305,20 @@ def test_goc_taslak_cevaplar(tmp_path, monkeypatch):
     command.downgrade(cfg, "n1c3e5a7b234")
     assert "taslak_cevaplar" not in {c["name"] for c in inspect(motor).get_columns("basvuru_takipleri")}
     command.upgrade(cfg, "head")
+
+
+
+def test_basarisiz_uretim_gunluk_hakki_dusurmez(client, hazir, monkeypatch):
+    """Servis hata verdiğinde (kesik yanıt, dayanaksız rakam, ağ) günlük taslak hakkı geri verilir."""
+    h, _ = hazir
+
+    def _patla(sistem, kullanici):
+        raise llm_saglayici.LLMHatasi("zaman aşımı")
+    monkeypatch.setattr(basvuru_taslagi, "_llm_istek", _patla)
+    for _ in range(6):
+        assert _olustur(client, h).status_code == 503
+    monkeypatch.setattr(basvuru_taslagi, "_llm_istek",
+                        lambda s, k: ("## 1. İşletme tanıtımı\nMetin\n## 2. Projenin amacı ve gerekçesi\nx", {}))
+    for _ in range(5):
+        assert _olustur(client, h).status_code == 200, "başarısız denemeler hakkı tüketmemeli"
+    assert _olustur(client, h).status_code == 429

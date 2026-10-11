@@ -288,25 +288,35 @@ Son güncelleme: 2026-10-11 (Anthropic API kaldırıldı, yerel danışman, tur2
   `r5a7c9e1f678`, yedek `gocR`; eski rızalar "anthropic:Anthropic PBC" diye işaretli ve geçersiz). Yurt içi sunucuda
   rıza gerekmez ama vazgeçilebilir. Veri turları (hepsi yedekli, idempotent, UYGULANDI): tur24 organik atıf, tur25 KGF
   ölçek, tur26 başvuru sahibi türü, tur27 kayıt 78 detayındaki eski traktör metni, tur28 kayıt 112 sektör (imalat+arge,
-  doğrulanmış alıntıdan), tur29 kayıt 138 Gençiz yaş sınırı 29 (doğrulanmış alıntıdan). Eşleştirme: kurucu yaşı 18-29
+  doğrulanmış alıntıdan), tur29 kayıt 138 Gençiz yaş sınırı 29 (doğrulanmış alıntıdan), tur30 kontrol listesindeki
+  31 birinci tekil beyan metni nötr şart diline (24 kayıt; alıntılar aynı; tur19 SONRAKI_TURLAR kancasına ekli), tur31
+  kayıt içi çelişkiler (163 mülga + halef m.8, m.4 üyeliği kapsamaz; 79 açıklamada eski 310/527 → 367/623,90; 142
+  "Kefalet üst limiti 45 M TL", KOSGEB kredisinin %90'ı). Eşleştirme: kurucu yaşı 18-29
   ise "genç girişimci" etiketi türetilir (`app/match_adapter.profil_etiketleri`).
   Değerlendirme (`docs/olcum/2026-10-11-yerel-danisman/`): 30 senaryo, her turda 5 bağımsız Sonnet hakem (abonelik,
   API yok), ölçüt yalnız kaynak dosyası; `karsilastir.py`. Genel puan (1-5) tur1 2,62 → 3,04 → 3,06 → 3,24 → 3,38 →
-  3,31 → 3,38 → tur8 3,48 (doğruluk 3,20 → 4,13); kritik bulgu 39 → 19 → 15 → 11 → 7 → 12 → 4 → 5 (tur6 artışı
-  v8'deki kalıp regresyonundan, tur7'de giderildi). Tur8 sonrası da düzeltme yapıldı (halef kayıt, Turquality dışlaması,
-  ad eşleşmesiyle sıralama); yeniden puanlanmadı. Otomatik ölçüm: dayanak sorunu 0, beklenen değer 41/41. İki Opus kod
+  3,31 → 3,38 → 3,48 → 3,37 → tur10 3,46 (doğruluk 3,20 → 4,00; soruya odak 2,50 → 3,73); kritik bulgu 39 → 19 → 15
+  → 11 → 7 → 12 → 4 → 5 → 3 → 0 (tur6 artışı v8'deki kalıp regresyonundan, tur7'de giderildi). Tur10 sonrası iki küçük
+  düzeltme (eşik ifadesi çelişki sayılmaz, eski sürüm → güncel sürüm yönlendirmesi) yeniden puanlanmadı. Otomatik ölçüm: dayanak sorunu 0, beklenen değer 41/41. İki Opus kod
   incelemesi (12 + 12 bulgu: dayanak çarpım istisnası uydurma N ile aşılabiliyordu, 9903 EK-3 şartı yarım, çift
   listeleme, bağlı program takvimi, sektör filtresi tarım/hizmet NACE'sini tanımıyordu, 30-35 yaş genç programları,
   ters netleştirme sorusu, regex yanlış pozitifleri) düzeltildi ve testlendi ("hariç" dışlaması ve "isen" hitabı bilerek
   bırakıldı). Bulunan gizli hata: bash heredoc `\b`'yi 0x08'e çevirmişti; `_KOSULLU_BELGE` bu yüzden hiç eşleşmiyordu
   (koşullu belgeler sızıyordu); şimdi test tüm app/ ve scripts/ dosyalarında 0x08 arar. Uygunluk ölçümü ilk 10'da uygun
   değil %9 → %1 (`ozet_2026_10_11_tur29.md`). Gemini ile canlı karşılaştırma YAPILMADI: anahtar yok (kod hazır).
-  Açık (hakemlerin kalan bulguları): kontrol listesindeki birinci tekil beyan metinleri ("işvereniyim", "almadım";
-  veride, kuralla güvenle çevrilemiyor); 1812 aşama/rol bazlı çağrı seçimi (şirketsizde Aşama 2-3 şartı artık kilit
-  sayılmıyor, hedefli çağrı geri sayımla öne çıkmıyor); sorudaki olguyu (ör. "Almanya'daki ortak") geçici profil sayma;
-  aynı Karar ailesinde (9903) katkı oranına göre karşılaştırma; çok aşamalı programlarda alt destek bazında "kapalı"; 163 e-ticaret kaydında 5973/5986 çelişkisi;
-  79 sera özet 310/527 ↔ 367, 142 özet 50M ↔ 45M; taslak hakkı başarısız üretimde de düşüyor; `.env`'de kullanılmayan
-  ANTHROPIC_API_KEY duruyor (silmek kullanıcıya ait).
+  Kapanan hakem bulguları (2026-10-11 ikinci blok): birinci tekil beyanlar (tur30); alt destek/aşama çağrısı programın
+  tamamını kapatmıyor (`alt_destek_cagrisi`); sorudaki yabancı ortak beyanı (`soru_beyanlari`); 9903 ailesinde bölgeye
+  göre katkı/makine/faiz karşılaştırması, kart en avantajlıya; kapasite eşikli Karar şartı soruya döner; 4447 süre
+  sorusunda kişi bilgisi sorulur; Turquality'de kaybedilecek 5973 maddeleri adıyla; soru ↔ profil çalışan çelişkisi;
+  kapsam dışı kalemde "takip edin" yok; mülga programda halef, eski sürümde güncel sürüm; KGF tutarı "kredi ve kefalet
+  limitleri"; yatırım ihtiyacı yokken 9903 gürültüsü yok; düşük olasılık ve "çağrı planlanıyor" etiketleri; hububatta
+  yalnız temel destek tutarı ayrıca (477,10 × dekar); başarısız yapay zekâ taslağı günlük hakkı düşürmez
+  (`rate_limit` `iade`). Dayanak: kuruş basamaklı sayı kaynakta birimsiz geçse de kabul (uydurma kuruşlu değer yine
+  yakalanır).
+  Açık (tur10 hakemlerinin orta/düşük bulguları): dar sorularda (tek tutar/tarih) kısa şablon; bütçe tavanı × oran =
+  azami hibe ayrımı (kayıtlar bütçe/hibe tavanını ayırt etmiyor, veri işi); iletişimin il müdürlüğüne göre seçimi;
+  "uygun değil" kartında 2-3 tutarlı alternatif bloğu; kayıtlarda bazı sayısal şartların (15 M TL Ar-Ge harcaması gibi)
+  profille karşılaştırılamaması. `.env`'de kullanılmayan ANTHROPIC_API_KEY duruyor (silmek kullanıcıya ait).
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - **Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim)** (Tarım Bakanlığı)
 - Destek: Dekar başına 734,00–954,20 TL (2026): temel destek + planlı üretim desteği; mercimek, nohut, mısır (dane) katsayı 1,0 → 734,00 TL/da; arpa, buğday, çavdar, tritikale, yulaf 1,3 → 954,20 TL/da. Sertifikalı tohum desteği ayrıca.
-- Sizin ürününüz için: arpa, buğday, çavdar, tritikale, yulaf 1,3 → 954,20 TL/da. Sertifikalı tohum desteği ayrıca. Profilinizdeki 180 dekar için: 954,20 TL/da × 180 da = 171.756,00 TL (kesin tutarı kurum hesaplar); tutarın planlı üretim desteği kısmı, kayda göre ürünün havzada planlanan ürün olmasına bağlıdır
+- Sizin ürününüz için: arpa, buğday, çavdar, tritikale, yulaf 1,3 → 954,20 TL/da. Sertifikalı tohum desteği ayrıca. Profilinizdeki 180 dekar için: 954,20 TL/da × 180 da = 171.756,00 TL (kesin tutarı kurum hesaplar); yalnız temel destek (planlı üretim şartı sağlanmazsa): 477,10 TL/da × 180 da = 85.878,00 TL; tutarın planlı üretim desteği kısmı, kayda göre ürünün havzada planlanan ürün olmasına bağlıdır
 - Sizin için: profilinize göre engel yok — şartları teyit edin; başlıca şart: Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak.
 - Başvuru: Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 
@@ -28,8 +28,8 @@
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - Hayvancılık Destekleri (Tarım Bakanlığı) — profilinize göre engel yok — şartları teyit edin; 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Ziraat Katılım Bankası Katılım Finans Destek Paketi (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - Organik Tarım Destekleri (Tarım Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Organik tarım faaliyeti yapılan ürüne yetkilendirilmiş kuruluşça "ürün sertifikası" düzenlenmiş olmalı ya da organik …); Yıllık ilan edilir (kesin tarihler için BUGEM'in güncel duyurularını kontrol edin) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- 2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Programı (Öncelik 2: Ar-Ge Danışmanlığı) (Mevlana Kalkınma Ajansı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Öncelik 2 için 1 Ocak 2021 sonrası kurulmuş teknoloji tabanlı KOBİ'ler başvurabilir.); 2026 SKG TD - 5. Dönem: başvuruya açık — yeni başvuru için son gün 31.10.2026 (20 gün kaldı)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Kırsal Kalkınma Yatırım Programı (KKYP) – Tarımsal İşleme/Depolama ve Makine Parkı Hibeleri (Tarım Bakanlığı) — kapalı: program başvuruya açık değil (TRGM duyurusu (29.04.2026): KKYP başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı)
@@ -40,7 +40,7 @@
 - **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Hububat ve Baklagil Üretim Destekleri (Temel Destek +…): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
 - **Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim):** Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak
 - **Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim):** Arazi/parsel bilgilerinin ÇKS'de güncel olması
-- **Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim):** Başvuruyu yap: İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu)
+- **Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim):** Başvuru yeri: İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu)
 - [Genel ilke – teyit edin] Başvuru ya da sözleşme tarihinden önce yapılan harcamalar çoğu programda desteklenmez; harcamaya başlamadan önce kurumun onayını bekleyin.
 - [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
 - [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.

@@ -1,9 +1,9 @@
 <!-- persona: genc_sahis | soru: Genç girişimciler için uygun kredi ya da kefalet var mı? -->
 **Kısa cevap:**
-- Öne çıkan: **ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ** (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08) (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Öne çıkan: **ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ** (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: 4 Milyon TL; %80 kefalet; başvuru ücreti 10.000 TL
 - Diğer seçenekler: HALK BANKASI GENÇİZ KREDİSİ PROGRAMI DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); TURYIB Programı Destek Paketi (profilinize göre engel yok — şartları teyit edin); HALKBANK İLK ADIM KREDİSİ PROJESİ (profilinize göre engel yok — şartları teyit edin).
-- 3 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
+- 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: genel (NACE 96.02)
@@ -16,55 +16,55 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (genel) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman.
 - **Kapsam:** yalnız: Kadın girişimci / kadınların yönettiği işletme, Genç girişimci; yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama, kredi/finansman
-- **Destek:** 4 Milyon TL; %80 kefalet; başvuru ücreti 10.000 TL
+- **Kredi ve kefalet limitleri:** 4 Milyon TL; %80 kefalet; başvuru ücreti 10.000 TL
 - **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (mikro işletme); hedef kitle: genç girişimci (profilinize göre)
 - **Kurallar (kayıttan):**
   - Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. — resmî metin: “Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz.”
 - **Başvuru:** Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-kadin-ve-genc-girisimci-destek-paketi
 
 **HALK BANKASI GENÇİZ KREDİSİ PROGRAMI DESTEK PAKETİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (genel) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman.
 - **Kapsam:** yalnız: Genç girişimci
 - **Karşıladığı ihtiyaç:** kredi/finansman
-- **Destek:** 800 bin TL; kefalet başvuru ücreti 7.500 TL
+- **Kredi ve kefalet limitleri:** 800 bin TL; kefalet başvuru ücreti 7.500 TL
 - **Profilinize göre sağlanan şartlar:** yaş şartı (en çok 29; profilinizde 26)
 - **Kurallar (kayıttan):**
   - Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. — resmî metin: “Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz.”
 - **Başvuru:** Kredi veren banka(lar): Halkbank (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-genciz-kredisi-programi-destek-paketi
 
 **TURYIB Programı Destek Paketi — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (genel) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman.
 - **Kapsam:** yalnız: Genç girişimci; yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** kredi/finansman
-- **Destek:** 85 Milyon TL; kefalet oranı %80
+- **Kredi ve kefalet limitleri:** 85 Milyon TL; kefalet oranı %80
 - **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (mikro işletme)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
   - ☐ Sahibi ya da yöneticisi genç olan işletme olmalı (TURYIB programı) — resmî metin: “genç sahibi ve/veya yöneticisi bulunan işletmelere destek sağlanarak”
 - **Başvuru:** Kredi veren banka(lar): Şekerbank (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/turyib-programi-destek-paketi
 
 **HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (genel) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman.
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama, kredi/finansman
-- **Destek:** İşletme kredisi: kefalet azami 800 bin TL, kredi 1 Milyon TL
+- **Kredi ve kefalet limitleri:** İşletme kredisi: kefalet azami 800 bin TL, kredi 1 Milyon TL
 - **Profilinize göre sağlanan şartlar:** yaş şartı (en çok 29; profilinizde 26)
 - **Kurallar (kayıttan):**
   - Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz. — resmî metin: “Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir.”
 - **Başvuru:** Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- TKYB KREDİ DESTEK PAKETİ (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- TKYB KREDİ DESTEK PAKETİ (KGF) — belirlenemedi (kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Girişimci Destek Programı (KOSGEB) — belirlenemedi (profilde karşılığı olmayan kilit şart: İş Kurma Desteği: KOSGEB destekli sektörde faaliyet gösteren 0-1 yaş işletme); İş Geliştirme çağrısı kapandı (08.05.2026); programın diğer destekleri ya da aşamaları için kayıtlarımızda çağrı tarihi yok, kurumdan teyit edin
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
-- Girişimci Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (İş Geliştirme Çağrısı 2026 yılı 2. dönem: kapandı (08.05.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)
 - HALKBANK GENÇ İŞİ KREDİSİ PROJESİ (KGF) — uygun değil: programın sektör kapsamı (Ar-Ge / bilişim, imalat) faaliyetinizi (NACE 96.02) kapsamıyor
 
 ### 3. Darboğazlar ve Kritik Şartlar
@@ -74,7 +74,7 @@
 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-2. Başvuru adımları (ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ): Başvuruyu yap: Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları).
+2. Başvuru adımları (ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ): Başvuru yeri: Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları).
 3. Başvuru kanalı: ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ: Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-kadin-ve-genc-girisimci-destek-paketi | HALK BANKASI GENÇİZ KREDİSİ PROGRAMI DESTEK PAKETİ: Kredi veren banka(lar): Halkbank (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-genciz-kredisi-programi-destek-paketi | TURYIB Programı Destek Paketi: Kredi veren banka(lar): Şekerbank (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/turyib-programi-destek-paketi.
 4. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim)
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.

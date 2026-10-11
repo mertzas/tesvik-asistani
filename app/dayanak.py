@@ -144,17 +144,20 @@ def denetle(yanit: str, baglam: str, soru: str = "", bugun: date | None = None) 
     hesap = {round(t * o / 100, 2) for t in soru_tl for o in oranlar}
     hesaplanabilir = hesap | {round(t - h, 2) for t in soru_tl for h in hesap} | soru_tl
     birim_fiyatlar = {(_deger(m.group(1)), m.group(2).lower()) for m in _BIRIM_FIYAT.finditer(kaynak)}
+    # Kuruş basamaklı sayı ("477,10") kaynakta birimsiz geçse de (tablo/formül) aynı değer tutar olarak kabul edilir;
+    # tam sayılar kabul edilmez (yıl, madde no gibi sayılarla karışır).
+    kurusl = {_deger(x) for x in re.findall(r"(?<![\d.,])\d{1,3}(?:\.\d{3})*,\d{2}(?![\d,])", kaynak)}
     kaynak_sayilari = {_deger(x) for x in re.findall(r"(?<![\d.,])\d{1,3}(?:\.\d{3})*(?:,\d+)?(?![\d,])|"
                                                       r"(?<![\d.,])\d+(?:\.\d+)?(?![\d.,])", kaynak)}
     kaynak_sayilari |= {float(x) for x in re.findall(r"(?<![\d.,])\d+\.\d+(?![\d.,])", kaynak)}
     tam_hesap = set()
     for m in _CARPIM.finditer(yanit or ""):
         birim, adet, sonuc = _deger(m.group(1)), _deger(m.group(3)), _deger(m.group(4))
-        if (birim, m.group(2).lower()) in birim_fiyatlar and adet in kaynak_sayilari \
+        if ((birim, m.group(2).lower()) in birim_fiyatlar or birim in kurusl) and adet in kaynak_sayilari \
                 and round(birim * adet, 2) == round(sonuc, 2):
             tam_hesap.add(round(sonuc, 2))
     for v in tl_tutarlari(yanit):
-        if v in tam_hesap or v in baglam_tl or any(abs(v - h) <= max(1.0, h * 0.005) for h in hesaplanabilir | baglam_tl):
+        if v in tam_hesap or v in kurusl or v in baglam_tl or any(abs(v - h) <= max(1.0, h * 0.005) for h in hesaplanabilir | baglam_tl):
             continue
         sorunlar.append(f"tutar bağlamda yok: {v:,.0f}")
 
@@ -211,6 +214,9 @@ def _self_test() -> int:
                                             bugun=bugun))
           and any("tutar" in x for x in denetle("375.000 TL/ortak × 4 ortak = 1.500.000 TL", baglam,
                                                 bugun=bugun))),
+         ("birimsiz kuruşlu kaynak değeri kabul, uydurma kuruşlu değer yakalanır",
+          denetle("477,10 TL/da × 180 da = 85.878,00 TL", "1,3 → 477,10 + 477,10; dekar: 180", bugun=bugun) == []
+          and any("tutar" in x for x in denetle("478,10 TL/da", "1,3 → 477,10 + 477,10", bugun=bugun))),
          ("kesirli dekar çarpımı", denetle("954,20 TL/da × 180,5 da = 172.233,10 TL",
                                            "954,20 TL/da; dekar: 180.5", bugun=bugun) == []),
          ("'ABD doları' yazımı tutar sayılır", tl_tutarlari("1.000.000 ABD dolarının üzerinde") == {1000000.0}),

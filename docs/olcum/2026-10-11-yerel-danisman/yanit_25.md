@@ -1,6 +1,6 @@
 <!-- persona: kooperatif | soru: Süt işleme tesisimize makine almak istiyoruz; hangi hibe ve krediler var? -->
 **Kısa cevap:**
-- Öne çıkan: **YATIRIM-İŞLETME DESTEK PAKETİ** (KGF) (hibe değil: kredi kefaleti) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08) (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Öne çıkan: **YATIRIM-İŞLETME DESTEK PAKETİ** (KGF) (hibe değil: kredi kefaleti) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
 - Diğer seçenekler: Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin); TKYB KREDİ DESTEK PAKETİ (belirlenemedi); TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (belirlenemedi).
 - 6 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
@@ -16,11 +16,11 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **YATIRIM-İŞLETME DESTEK PAKETİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Faaliyet kodunuz: 10.51, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi).
 - **Kapsam:** yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı, kredi/finansman
-- **Destek:** Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
+- **Kredi ve kefalet limitleri:** Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
 - **Profilinize göre sağlanan şartlar:** imalat faaliyeti (NACE 10.51)
 - **Kurallar (kayıttan):**
   - Bu paket kapsamındaki krediler kıymetli maden ve döviz alımında, kefaletin sağlandığı kredi veren dışında vadeli mevduat ve diğer yüksek riskli finansal araçlarda, refinansman amacıyla kullanılamaz.
@@ -44,29 +44,34 @@
 - **Başvuru:** Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#hedef-yatirimlar
 
 **TKYB KREDİ DESTEK PAKETİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - **Sizin için:** Belirlenemedi — kayıtta başvuru şartı yok; kurumun başvuru rehberinden teyit edin.
 - **Karşıladığı ihtiyaç:** kredi/finansman
-- **Destek:** Kefalet 150 Milyon TL, kredi 500 Milyon TL; kefalet oranı %80
+- **Kredi ve kefalet limitleri:** Kefalet 150 Milyon TL, kredi 500 Milyon TL; kefalet oranı %80
 - **Başvuru:** Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi
 
 **TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (2026-10-08); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Belirlenemedi — profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletmeyim (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi).
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Sizin için:** Belirlenemedi — profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi).
 - **Karşıladığı ihtiyaç:** kredi/finansman
-- **Destek:** Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
+- **Kredi ve kefalet limitleri:** Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
 - **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (küçük işletme)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ TOBB üyesi bir işletmeyim (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi) — resmî metin: “TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir.”
+  - ☐ TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi) — resmî metin: “TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir.”
 - **Kurallar (kayıttan):**
   - Kredi döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz — resmî metin: “Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz”
   - Kefalet talepleri yalnız TL cinsinden yapılır — resmî metin: “Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır.”
 - **Başvuru:** Kredi veren bankalar: Akbank, Denizbank, Garanti BBVA, Halkbank, QNB Bank, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım (yalnızca TL kefalet) (KOBİ bankaya kredi başvurusu yapar, banka … — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi
 
+**9903 programları bölgenize göre (Karar metninden; önce engelsiz ve şartlı, sonra en yüksek katkı):**
+- Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin): yatırıma katkı %20; makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); faiz desteği: repo oranının %25'i, azami 12.5 puan
+- Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (belirlenemedi): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL …; faiz desteği: repo oranının %40'i, azami 20 puan
+- Teknoloji Hamlesi Programı (9903 sayılı Karar) (düşük olasılık — karar ön değerlendirmesi): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL …; faiz desteği: repo oranının %40'i, azami 20 puan
+
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - Yapay Zekâ Kredi Programı (KOSGEB) — belirlenemedi (profilde karşılığı olmayan kilit şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — belirlenemedi (Karar metnine göre ön değerlendirme: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok)); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1542 gün kaldı)
-- Teknoloji Hamlesi Programı (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — belirlenemedi (Karar metnine göre ön değerlendirme: DÜŞÜK OLASILIK — faaliyet EK-1 orta-yüksek/yüksek teknoloji sınıfında değil); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1542 gün kaldı)
+- Teknoloji Hamlesi Programı (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — düşük olasılık — karar ön değerlendirmesi (Karar metnine göre ön değerlendirme: DÜŞÜK OLASILIK — faaliyet EK-1 orta-yüksek/yüksek teknoloji sınıfında değil); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1542 gün kaldı)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
@@ -87,7 +92,7 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 - **Kayıtlı elektronik posta (KEP) adresi** (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Şirket adına bir KEP hizmet sağlayıcısından KEP adresi alın.
 - **Yatırım teşvik belgesi** (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Yatırıma başlamadan önce Sanayi ve Teknoloji Bakanlığı E-TUYS üzerinden belge başvurusu.
 - **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar):** Teşvik belgesi müracaatımı E-TUYS üzerinden
-- **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar):** Başvuruyu yap: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)
+- **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar):** Başvuru yeri: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)
 - [Genel ilke – teyit edin] Başvuru ya da sözleşme tarihinden önce yapılan harcamalar çoğu programda desteklenmez; harcamaya başlamadan önce kurumun onayını bekleyin.
 - [Genel ilke – teyit edin] Vergi ya da SGK borcu, başvurunun reddine veya ödemenin durdurulmasına yol açabilir.
 - [Genel ilke – teyit edin] Destek alındıktan sonra izleme, raporlama ve yerinde denetim yükümlülüğü sürer; şartlara aykırılıkta destek geri istenebilir.
@@ -101,7 +106,7 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): kayda göre “Karar şartı: EK-3 10.5 kalemi: Süt ürünleri ve yenilebilir buz imalatı 5 ton/gün altındaki kapasiteye sahip süt işleme yatırımları desteklenmez (MADDE 5/1, 10)” — yatırımınız bu kapsama giriyor mu? Giriyorsa bu programdan destek alınamaz.
+1. Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): kayda göre “Karar şartı: EK-3 10.5 kalemi: Süt ürünleri ve yenilebilir buz imalatı 5 ton/gün altındaki kapasiteye sahip süt işleme yatırımları desteklenmez (MADDE 5/1, 10)” — yatırımınız bu kapsama giriyor mu? Giriyorsa bu programdan destek alınamaz. Yatırımın kapasitesini (ton/gün) de belirtin.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

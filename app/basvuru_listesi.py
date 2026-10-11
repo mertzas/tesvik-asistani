@@ -308,7 +308,11 @@ def taslak_olustur(tesvik_id: int, girdi: TaslakGirdisi | None = None,
     try:
         metin, _kullanim = basvuru_taslagi.uret(t, profil, _yanit(t, kayit)["maddeler"])
     except basvuru_taslagi.TaslakHatasi as e:
+        hiz_sayaci.iade(f"taslak:{current_org.id}")   # üretilemeyen taslak günlük hakkı düşürmez
         raise HTTPException(status_code=status.HTTP_503_SERVICE_UNAVAILABLE, detail=str(e))
+    except Exception:
+        hiz_sayaci.iade(f"taslak:{current_org.id}")
+        raise
     simdi = datetime.now(timezone.utc).replace(tzinfo=None)
     if kayit is None:
         kayit = BasvuruTakibi(org_id=current_org.id, tesvik_id=tesvik_id, isaretli=[], olusturma=simdi)

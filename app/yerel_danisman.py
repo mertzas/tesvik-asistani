@@ -28,6 +28,7 @@ from dataclasses import dataclass, field
 from datetime import date
 from typing import Any
 
+from app import soru_anlama
 from app.ihtiyac import IHTIYAC_ADLARI, _katla, program_ihtiyaclari, soru_ihtiyaclari
 
 EN_COK_KART = 3          # persona denemesi 2026-10-12: dar sorularda 4 kart yanıtı 15 KB'a çıkarıyordu
@@ -294,7 +295,7 @@ def _anlamli_kelimeler(metin: str) -> set[str]:
 
 def niyetler(soru: str) -> set[str]:
     katli = _katla(soru)
-    bulunan = {ad for ad, kalip in _NIYET.items() if kalip.search(katli)}
+    bulunan = {ad for ad, kalip in _NIYET.items() if kalip.search(katli)} | soru_anlama.ek_niyetler(soru)
     return bulunan or {"liste"}
 
 
@@ -3201,7 +3202,8 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
         bolum += hazirlik[1] if hazirlik else yol_haritasi(acik_kartlar, iletisim, profil is not None, alternatif)
         bolum += ["", "### 5. Bilgi Eksikliği / Netleştirme",
                   *netlestirme(profil, acik_kartlar, acik_kartlar if dar else kartlar + diger, soru)]
-        yontem = YONTEM_NOTU if not dis_servis else (
+        _anlama = soru_anlama.etkin_etiket()
+        yontem = (soru_anlama.YONTEM_NOTU if _anlama and _anlama.gonderildi else YONTEM_NOTU) if not dis_servis else (
             f"*Sorunuz {dis_servis} ile işlendi (model kendi sunucumuzda çalışır, veri üçüncü tarafa gitmez); modelin "
             "yanıtı kayıtlarla doğrulanamadığı ya da alınamadığı için bu yanıt Teşvik Asistanı'nın yerel danışmanı "
             "tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi.*")

@@ -3,7 +3,8 @@
 Danışman yanıtı, yapay zekâ taslağı ve NACE çıkarımı için tek giriş noktası. Veri güvenliği kuralı: kullanıcı ya da
 işletme verisi HİÇBİR üçüncü taraf yapay zekâ servisine gitmez (Anthropic, Google Gemini/AI Studio, OpenAI dahil;
 Mert, 2026-10-11: "son uçta bile anthropic api kullanma", "google open ai studio da kullanma, ikas veri güvenliğine
-önem veriyor").
+önem veriyor"). Tek istisna app/soru_anlama.py: kuruluş açarsa yalnız MASKELENMİŞ soru metni Groq'a sınıflandırma için
+gider (Mert onayı 2026-10-12); profil ve işletme verisi gitmez, yanıtı yine yerel danışman yazar.
 
     LLM_SAGLAYICI=yerel         (varsayılan) dil modeli yok; yanıtı app/yerel_danisman.py kayıtlardan kuralla üretir
     LLM_SAGLAYICI=ozel_sunucu   kendi altyapımızda çalışan açık ağırlıklı model (Ollama, vLLM, llama.cpp sunucusu;

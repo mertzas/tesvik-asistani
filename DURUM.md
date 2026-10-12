@@ -584,6 +584,21 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   düzeltildi (`kayit/`; ham çıktı `oneri/`), m.12 şartları ve m.11/1-c eklendi, 6 madde birebir doğrulandı,
   `--uygula` ile eklendi (yedek `tesvikler_oncesi_tur39.db.bak`). Ders: alıntı doğrulaması anlamı denetlemez; dil
   modeli taslağı her zaman insan okumasından geçer.
+- **Soru anlama katmanı (Groq), varsayılan KAPALI** (2026-10-12, Mert onayı "2. yol"; `app/soru_anlama.py`
+  self-test 24/24, `tests/test_soru_anlama.py` 10). Kuruluş Ayarlar'dan açarsa (`POST /api/organizations/soru-anlama`;
+  rıza `ai_yurtdisi_riza` + `ai_riza_tarihi >= 2026-10-12`, eski Gemini dönemi kayıtları geçersiz; models.py
+  değişmedi) MASKELENMİŞ soru metni (rakam, e-posta, telefon, IBAN, adres, kullanıcı/kuruluş/mağaza adı, cümle içi
+  büyük harfli özel ad çıkarılır) yalnız `api.groq.com`'a gider; Groq sabit listeden etiket döndürür, yalnız İHTİYAÇ
+  etiketleri kalıplara eklenir (niyet kullanılmaz, tarımda `yatirim` atılır). Program/kurum adı geçen soru hiç
+  gönderilmez (`rag.soru_anlama_gerekli_mi`). Hata/zaman aşımı (2,5 sn) → kalıplarla devam; 3 ardışık hatada 60 sn
+  devre kesici; günlüğe soru yazılmaz; yanıtın yöntem notu gönderimi söyler. Sunucuda `SORU_ANLAMA=groq` +
+  `GROQ_API_KEY` gerekir (uygulama `.env`'i kendisi yüklemez). KVKK metni (bölüm 3, 4 `#soru-anlama`, 6, 8) ve
+  Ayarlar kutusu eklendi; Ayarlar'da `label { display: block }` `hidden`'ı eziyordu, yapılandırılmamış model anahtarı
+  görünüyordu (`[hidden] { display: none !important }`). Ölçüm `docs/olcum/2026-10-12-soru-anlama/` (KARAR.md):
+  75 özgün + 148 farklı söyleniş, 568 çağrı, 0,0994 USD; söylenişlerde ihtiyaç F1 0,660 → 0,794 (duyarlılık
+  0,51 → 0,71), özgünlerde 0,955 → 0,945; uçtan uca dayanak 0, isabet 41/41, 75 yanıttan 2'si değişti. Açık:
+  KVKK m.9 güvencesi (Groq DPA'da Türkiye maddesi yok; kvkk.html DOLDURULACAK), Groq konsolunda ZDR, ücretli katman,
+  sohbete yapıştırılan anahtarın yenilenmesi. Test 1366.
 - **Deterministik başvuru orkestratörü** (`app/basvuru_orkestrator.py`, self-test 10/10, `tests/test_basvuru_orkestrator.py`
   6): şirket profili + harcama dökümünden 10 adımda (ayrıştırma, mevzuat eşleştirme, KOBİ/KOSGEB, hedef ülke, mükerrerlik,
   DYS, A-D stres testi, onarım, gerekçe, JSON) üç bölümlü çıktı. Oran, tavan (2026), şart ve hedef ülke listesi kayıtlardan;

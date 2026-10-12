@@ -24,7 +24,7 @@ from app.models import (init_db, get_db, Organization, User, Query, FinancialPro
                         MacroIndicator, IkasBaglanti, BasvuruTakibi, settings)
 from app.models_cilek import Parsel, SogukZincirOkuma
 from app.dogrulama_mesajlari import turkce_hatalar
-from app import hata_izleme, llm_saglayici
+from app import hata_izleme, llm_saglayici, soru_anlama
 from app.auth import (
     get_current_user,
     get_current_org,
@@ -56,7 +56,7 @@ from app.schemas import (
     EticaretGiderGirdisi,
     EticaretDestekResponse,
 )
-from app.rag import answer, answer_akis, profil_sozlugu, retrieve
+from app.rag import answer, answer_akis, profil_sozlugu, retrieve, soru_anlama_gerekli_mi
 from app.billing import create_checkout_session, confirm_checkout_session, cancel_subscription, handle_webhook, get_plan_limits
 from app.admin import router as admin_router
 from app.matching import esles, toplam_tahmini_destek, tutari_tahmini_hesapla
@@ -540,6 +540,16 @@ def _dis_model_kullanilir(org: Organization) -> bool:
     return llm_saglayici.etkin_mi(s) and llm_saglayici.riza_gecerli_mi(org, s)
 
 
+def _soru_etiketleri(db: Session, soru: str, user: User, org: Organization):
+    """Kuruluş soru anlamayı açtıysa soru, adlar ve rakamlar çıkarılarak Groq'a sınıflandırtılır (app/soru_anlama).
+    Maskeye kullanıcı, kuruluş ve İKAS mağaza adı verilir; profil ve İKAS verisi gönderilmez. Kapalıysa ya da soru
+    bir programı/kurumu adıyla anıyorsa (rag.soru_anlama_gerekli_mi) None; o soru Groq'a hiç gitmez."""
+    if not soru_anlama.kullanilir(org) or not soru_anlama_gerekli_mi(soru):
+        return None
+    magaza = db.query(IkasBaglanti.store_name).filter(IkasBaglanti.org_id == org.id).scalar()
+    return soru_anlama.siniflandir(soru, [getattr(user, "full_name", None), getattr(org, "name", None), magaza])
+
+
 @app.post("/api/sor", response_model=AskResponse, dependencies=[Depends(org_hiz_siniri(20))])
 def sor(
     request: AskQuestion,
@@ -564,10 +574,11 @@ def sor(
         # Dışarı giden sözlük tek yerde tanımlı: app/rag.profil_sozlugu (ölçüm
         # betikleri ve testler aynı sözlüğü kullanır).
         profil = profil_sozlugu(profil_row) if (riza_var and profil_row is not None) else None
+        etiket = _soru_etiketleri(db, request.question, current_user, current_org)
 
         # Mevcut RAG sistemini çalıştır
         answer_text = answer(request.question, profil, llm_kullan=riza_var,
-                             profil_kaydi=profil_row)
+                             profil_kaydi=profil_row, soru_etiketleri=etiket)
 
         # Gosterilecek kayitlar, AI danismanin gordugu kayitlarin AYNISI olmali.
         #
@@ -582,7 +593,8 @@ def sor(
         #
         # Arama mantigi artik tek yerde: app/rag.retrieve() (Turkce govde
         # ayiklama ve sektor genislemesi dahil).
-        tesvikler = retrieve(request.question, limit=10, profil_kaydi=profil_row)
+        with soru_anlama.baglam(etiket):
+            tesvikler = retrieve(request.question, limit=10, profil_kaydi=profil_row)
 
         results = [
             SearchResult(
@@ -663,7 +675,9 @@ def sor_akis(
 
     # İlk olay (kayıtlar) akış başlamadan üretilir: sorgu kaydı istek oturumuyla,
     # yanıt gönderilmeden önce yazılır (akış sırasında oturumun ömrü garanti değil).
-    uretec = answer_akis(request.question, profil, llm_kullan=riza_var, profil_kaydi=profil_row)
+    etiket = _soru_etiketleri(db, request.question, current_user, current_org)
+    uretec = answer_akis(request.question, profil, llm_kullan=riza_var, profil_kaydi=profil_row,
+                         soru_etiketleri=etiket)
     try:
         _tip, kayitlar = next(uretec)
     except Exception:
@@ -935,7 +949,8 @@ def ai_riza_guncelle(
     Model (LLM_SAGLAYICI=ozel_sunucu) iç ağımızda çalışır ve veri üçüncü tarafa ya da yurt dışına aktarılmaz; yine de
     kuruluş bazında varsayılan KAPALIDIR, kullanıcı açıkça açar ve istediği an kapatır. Tercih sağlayıcıdan ve sunucu
     adresinden bağımsız saklanır (llm_saglayici.KULLANIM_KAYDI). Model yapılandırılmamışsa açma isteği 409 döner.
-    Eski sürümlerden kalan yurt dışı rıza kayıtları her çağrıda temizlenir.
+    Eski sürümlerden kalan yurt dışı rıza kayıtları her çağrıda temizlenir; soru anlama (Groq) rızası ayrı bir
+    tercihtir ve korunur (/api/organizations/soru-anlama).
     """
     saglayici = llm_saglayici.saglayici()
     etkin = llm_saglayici.etkin_mi(saglayici)
@@ -943,7 +958,8 @@ def ai_riza_guncelle(
         raise HTTPException(status_code=status.HTTP_409_CONFLICT,
                             detail="Bu sunucuda dil modeli yapılandırılmamış; yanıtlar yerel danışmandan gelir ve "
                                    "hiçbir veri dışarı aktarılmaz.")
-    current_org.ai_yurtdisi_riza, current_org.ai_riza_tarihi = False, None
+    if not soru_anlama.riza_gecerli_mi(current_org):
+        current_org.ai_yurtdisi_riza, current_org.ai_riza_tarihi = False, None
     current_org.ai_riza_saglayici = llm_saglayici.KULLANIM_KAYDI if request.riza else None
     db.commit()
     if request.riza:
@@ -957,12 +973,38 @@ def ai_riza_guncelle(
             "mesaj": mesaj, "aydinlatma_metni": "/kvkk"}
 
 
+@app.post("/api/organizations/soru-anlama", response_model=dict,
+          dependencies=[Depends(org_hiz_siniri(10))])
+def soru_anlama_guncelle(
+    request: AiRizaGuncelle,
+    current_org: Organization = Depends(get_current_org),
+    db: Session = Depends(get_db),
+):
+    """Soru anlamayı (Groq) aç / kapat. Açıkken soru metni adlar, rakamlar, e-posta ve adresler çıkarılarak Groq'a
+    (ABD) yalnız sorunun konusunu belirlemek için gönderilir; profil ve İKAS verisi gönderilmez (app/soru_anlama).
+    Kuruluş bazında varsayılan KAPALI; sunucuda yapılandırılmamışsa açma isteği 409 döner. Kapatma her zaman olur."""
+    if request.riza and not soru_anlama.etkin_mi():
+        raise HTTPException(status_code=status.HTTP_409_CONFLICT,
+                            detail="Bu sunucuda soru anlama yapılandırılmamış; sorularınız dışarı gönderilmez.")
+    if request.riza:
+        current_org.ai_yurtdisi_riza = True
+        current_org.ai_riza_tarihi = datetime.now(timezone.utc).replace(tzinfo=None)
+        mesaj = ("Soru anlama açıldı. Sorularınız adlar, rakamlar, e-posta ve adresler çıkarılarak Groq'a (ABD) "
+                 "gönderilecek; profiliniz ve İKAS verileriniz gönderilmez. İstediğiniz zaman kapatabilirsiniz.")
+    else:
+        current_org.ai_yurtdisi_riza, current_org.ai_riza_tarihi = False, None
+        mesaj = "Soru anlama kapatıldı; sorularınız dışarı gönderilmeyecek."
+    db.commit()
+    return {**soru_anlama.durum(current_org), "mesaj": mesaj, "aydinlatma_metni": "/kvkk#soru-anlama"}
+
+
 @app.get("/api/yapay-zeka", response_model=dict)
 def yapay_zeka_durumu(current_org: Organization = Depends(get_current_org)):
     """Etkin yanıt servisi ve bu kuruluşun rıza durumu (panel ve İKAS uygulaması rıza metnini buradan kurar)."""
     saglayici = llm_saglayici.saglayici()
     return {**saglayici.sozluk(), "riza_gecerli": llm_saglayici.riza_gecerli_mi(current_org, saglayici),
-            "dis_model_kullaniliyor": _dis_model_kullanilir(current_org)}
+            "dis_model_kullaniliyor": _dis_model_kullanilir(current_org),
+            "soru_anlama": soru_anlama.durum(current_org)}
 
 
 @app.get("/api/analytics/usage", response_model=AnalyticsResponse)

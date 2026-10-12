@@ -321,6 +321,18 @@ Metin yazılırken iki uyum açığı ortaya çıktı; **ikisi de kapatıldı**:
 
   Rıza kayıt sırasında zorunlu tutulmuyor: KVKK açık rızanın özgür iradeyle
   verilmesini arar, hizmete erişimin şartına bağlanamaz.
+- **Soru anlama (Groq), varsayılan KAPALI (2026-10-12).** Sunucuda
+  `SORU_ANLAMA=groq` ve `GROQ_API_KEY` tanımlıysa kuruluş Ayarlar'dan
+  (`POST /api/organizations/soru-anlama`) açabilir. Açıkken yalnız
+  **maskelenmiş soru metni** (ad, rakam, e-posta, telefon, IBAN, adres
+  çıkarılmış) `api.groq.com`'a gider; Groq yalnız sabit etiket listesinden
+  seçim döndürür. Kullanılan yalnız ihtiyaç etiketleridir (ihracat, istihdam,
+  makine yatırımı …); kelime kalıplarının bulduklarına eklenir. Niyet
+  etiketleri ölçümde fazla etiket ürettiği için kullanılmaz.
+  Kayıt arama, karar ve yanıt yerel danışmanda kalır; Groq yanıt vermezse
+  (2,5 sn) kalıplarla devam edilir. Profil ve İKAS verisi gönderilmez.
+  Ayrıntı ve ölçüm: [app/soru_anlama.py](app/soru_anlama.py),
+  [docs/olcum/2026-10-12-soru-anlama/](docs/olcum/2026-10-12-soru-anlama/).
 
 ---
 

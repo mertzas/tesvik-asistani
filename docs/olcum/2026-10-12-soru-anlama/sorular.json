@@ -1,0 +1,2409 @@
+[
+ {
+  "id": "E01",
+  "persona": "ciftci",
+  "profil": {
+   "sektor": "tarim",
+   "bolge": "Konya",
+   "calisan_sayisi": 3,
+   "yillik_ciro": 2500000.0,
+   "arazi_buyuklugu_dekar": 180,
+   "urun_turu": "buğday",
+   "tarim_kategori": "tahil_baklagil",
+   "hedefler": [
+    "makine",
+    "hayvan"
+   ],
+   "sirket_turu": "sahis"
+  },
+  "soru": "Traktör ve mibzer almak istiyorum; Kırsal Kalkınma hibesinin oranı ve üst limiti nedir, bireysel traktör alımı destekleniyor mu?",
+  "beklenen": [
+   "%50",
+   "%70",
+   "30.000.000",
+   "100.000",
+   "traktör"
+  ],
+  "tur": "olcum",
+  "altin": {
+   "niyet": [
+    "tanim",
+    "tutar",
+    "uygunluk"
+   ],
+   "ihtiyac": []
+  },
+  "yasakli": [
+   "nedir",
+   "oran",
+   "ust limit"
+  ]
+ },
+ {
+  "id": "E02",
+  "persona": "ciftci",
+  "profil": {
+   "sektor": "tarim",
+   "bolge": "Konya",
+   "calisan_sayisi": 3,
+   "yillik_ciro": 2500000.0,
+   "arazi_buyuklugu_dekar": 180,
+   "urun_turu": "buğday",
+   "tarim_kategori": "tahil_baklagil",
+   "hedefler": [
+    "makine",
+    "hayvan"
+   ],
+   "sirket_turu": "sahis"
+  },
+  "soru": "Tarlama damla sulama kuracağım; tasarruflu sulama hibesi oranı ve hibeye esas üst tutar ne kadar?",
+  "beklenen": [
+   "%50",
+   "%70",
+   "10.000.000",
+   "2026"
+  ],
+  "tur": "olcum",
+  "altin": {
+   "niyet": [
+    "tutar"
+   ],
+   "ihtiyac": []
+  },
+  "yasakli": [
+   "ne kadar",
+   "oran",
+   "ust tutar"
+  ]
+ },
+ {
+  "id": "E03",
+  "persona": "tekstil",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "İzmir",
+   "calisan_sayisi": 12,
+   "yillik_ciro": 60000000.0,
+   "nace_kodu": "13.20",
+   "hedefler": [
+    "yatirim",
+    "ihracat",
+    "arge"
+   ],
+   "sirket_turu": "limited"
+  },
+  "soru": "1507 TÜBİTAK KOBİ Ar-Ge programında proje bütçesi üst sınırı ve destek oranı nedir, çağrı açık mı?",
+  "beklenen": [
+   "3.500.000",
+   "%75",
+   "2026"
+  ],
+  "tur": "olcum",
+  "altin": {
+   "niyet": [
+    "tanim",
+    "tarih",
+    "tutar"
+   ],
+   "ihtiyac": [
+    "arge"
+   ]
+  },
+  "yasakli": [
+   "acik mi",
+   "ar-ge",
+   "butce",
+   "cagri",
+   "nedir",
+   "oran",
+   "ust sinir"
+  ]
+ },
+ {
+  "id": "E04",
+  "persona": "tekstil",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "İzmir",
+   "calisan_sayisi": 12,
+   "yillik_ciro": 60000000.0,
+   "nace_kodu": "13.20",
+   "hedefler": [
+    "yatirim",
+    "ihracat",
+    "arge"
+   ],
+   "sirket_turu": "limited"
+  },
+  "soru": "Almanya'daki bir ortakla Eurostars'a başvurabilir miyiz; çağrı açık mı, ulusal bütçe ve proje süresi nedir?",
+  "beklenen": [
+   "4.000.000",
+   "36 ay",
+   "2026/2"
+  ],
+  "tur": "olcum",
+  "altin": {
+   "niyet": [
+    "sure",
+    "tarih",
+    "tutar",
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "arge"
+   ]
+  },
+  "yasakli": [
+   "acik mi",
+   "almanya",
+   "basvurabilir",
+   "butce",
+   "cagri",
+   "nedir",
+   "suresi"
+  ]
+ },
+ {
+  "id": "E05",
+  "persona": "girisim",
+  "profil": {
+   "sektor": "arge",
+   "bolge": "Ankara",
+   "calisan_sayisi": 0,
+   "yillik_ciro": 0,
+   "nace_kodu": "62.01",
+   "sirket_turu": "yok",
+   "trl": 4,
+   "hedefler": [
+    "arge"
+   ]
+  },
+  "soru": "BiGG'den ne kadar yatırım alabilirim, şartları neler ve şirket kurmadan başvurabilir miyim?",
+  "beklenen": [
+   "1.350.000",
+   "600.000",
+   "ortaklık"
+  ],
+  "tur": "olcum",
+  "altin": {
+   "niyet": [
+    "tanim",
+    "tutar",
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "girisim"
+   ]
+  },
+  "yasakli": [
+   "basvurabilir",
+   "bigg",
+   "ne kadar",
+   "sartlar",
+   "sirket kurmadan",
+   "yatirim"
+  ]
+ },
+ {
+  "id": "E06",
+  "persona": "girisim",
+  "profil": {
+   "sektor": "arge",
+   "bolge": "Ankara",
+   "calisan_sayisi": 0,
+   "yillik_ciro": 0,
+   "nace_kodu": "62.01",
+   "sirket_turu": "yok",
+   "trl": 4,
+   "hedefler": [
+    "arge"
+   ]
+  },
+  "soru": "Şirket kurmadan KOSGEB Girişimci Destek Programı'ndan yararlanabilir miyim?",
+  "beklenen": [
+   "işletme",
+   "KOSGEB"
+  ],
+  "tur": "olcum",
+  "altin": {
+   "niyet": [
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "girisim"
+   ]
+  },
+  "yasakli": [
+   "girisimci",
+   "sirket kurmadan",
+   "yararlanabilir"
+  ]
+ },
+ {
+  "id": "E07",
+  "persona": "otel",
+  "profil": {
+   "sektor": "hizmet",
+   "bolge": "Van",
+   "calisan_sayisi": 25,
+   "yillik_ciro": 30000000.0,
+   "nace_kodu": "55.10",
+   "hedefler": [
+    "yatirim"
+   ],
+   "sirket_turu": "anonim"
+  },
+  "soru": "Van'daki otel yatırımı için teşvik belgesinde SGK işveren desteği kaç yıl, faiz desteği var mı, asgari yatırım tutarı ne?",
+  "beklenen": [
+   "12 yıl",
+   "%100",
+   "6.000.000",
+   "MADDE 18"
+  ],
+  "tur": "olcum",
+  "altin": {
+   "niyet": [
+    "sure",
+    "tutar"
+   ],
+   "ihtiyac": [
+    "finansman",
+    "istihdam",
+    "yatirim"
+   ]
+  },
+  "yasakli": [
+   "faiz",
+   "kac yil",
+   "sgk",
+   "tutar",
+   "yatirim",
+   "yatirimi"
+  ]
+ },
+ {
+  "id": "E08",
+  "persona": "eticaret",
+  "profil": {
+   "sektor": "e-ticaret",
+   "bolge": "Trabzon",
+   "calisan_sayisi": 3,
+   "yillik_ciro": 4000000.0,
+   "nace_kodu": "47.91",
+   "hedefler": [
+    "ihracat"
+   ],
+   "sirket_turu": "limited"
+  },
+  "soru": "Pazaryeri üyelik gideri desteği hâlâ yıllık 15.102 TL mi, hangi Karar geçerli?",
+  "beklenen": [
+   "5973",
+   "2573",
+   "mülga"
+  ],
+  "tur": "olcum",
+  "altin": {
+   "niyet": [
+    "tutar"
+   ],
+   "ihtiyac": [
+    "dijital",
+    "ihracat"
+   ]
+  },
+  "yasakli": [
+   "pazaryeri"
+  ]
+ },
+ {
+  "id": "E09",
+  "persona": "saas",
+  "profil": {
+   "sektor": "arge",
+   "bolge": "İstanbul",
+   "calisan_sayisi": 12,
+   "yillik_ciro": 20000000.0,
+   "nace_kodu": "62.01",
+   "sirket_turu": "limited",
+   "trl": 8,
+   "hedefler": [
+    "ihracat",
+    "arge",
+    "finansman"
+   ]
+  },
+  "soru": "KOSGEB Yapay Zekâ Kredisi ne kadar, vadesi ve ödemesiz dönemi nedir?",
+  "beklenen": [
+   "500.000",
+   "5.000.000",
+   "24 ay",
+   "12 ay"
+  ],
+  "tur": "olcum",
+  "altin": {
+   "niyet": [
+    "tanim",
+    "tutar"
+   ],
+   "ihtiyac": [
+    "dijital",
+    "finansman"
+   ]
+  },
+  "yasakli": [
+   "kredisi",
+   "ne kadar",
+   "nedir",
+   "odemesiz",
+   "vade",
+   "yapay zeka"
+  ]
+ },
+ {
+  "id": "E10",
+  "persona": "buyuk",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Bursa",
+   "calisan_sayisi": 400,
+   "yillik_ciro": 2000000000.0,
+   "nace_kodu": "29.10",
+   "sirket_turu": "anonim",
+   "hedefler": [
+    "istihdam",
+    "yatirim"
+   ]
+  },
+  "soru": "KOSGEB İstihdamı Koruma Destek Programı 2026-2 döneminde büyük işletme için kredi üst limiti ve başvuru tarihleri nedir?",
+  "beklenen": [
+   "150",
+   "1 Eylül",
+   "31 Ekim",
+   "%37"
+  ],
+  "tur": "olcum",
+  "altin": {
+   "niyet": [
+    "tanim",
+    "tarih",
+    "tutar"
+   ],
+   "ihtiyac": [
+    "finansman",
+    "istihdam"
+   ]
+  },
+  "yasakli": [
+   "basvuru tarih",
+   "doneminde",
+   "istihdami",
+   "kredi",
+   "nedir",
+   "ust limit"
+  ]
+ },
+ {
+  "id": "E11",
+  "persona": "restoran",
+  "profil": {
+   "sektor": "hizmet",
+   "bolge": "Hatay",
+   "calisan_sayisi": 4,
+   "yillik_ciro": 3000000.0,
+   "nace_kodu": "56.10",
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "istihdam"
+   ]
+  },
+  "soru": "Restoranıma 3 kişi daha alacağım; 4447 sayılı Kanun işveren prim teşviki kaç ay sürer, şartları neler?",
+  "beklenen": [
+   "54 ay",
+   "6 ay",
+   "31.12.2026",
+   "ilave"
+  ],
+  "tur": "olcum",
+  "altin": {
+   "niyet": [
+    "sure",
+    "tanim"
+   ],
+   "ihtiyac": [
+    "istihdam"
+   ]
+  },
+  "yasakli": [
+   "isveren prim",
+   "kac ay",
+   "kisi daha alacagim",
+   "sartlar",
+   "surer"
+  ]
+ },
+ {
+  "id": "E12",
+  "persona": "hatay_nacesiz",
+  "profil": {
+   "sektor": "hizmet",
+   "bolge": "Hatay",
+   "calisan_sayisi": 2,
+   "yillik_ciro": 1000000.0,
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "finansman"
+   ]
+  },
+  "soru": "TOBB Nefes Kredisi 2026 kredi ve kefalet limiti ne kadar?",
+  "beklenen": [
+   "3.000.000",
+   "2.400.000"
+  ],
+  "tur": "olcum",
+  "altin": {
+   "niyet": [
+    "tutar"
+   ],
+   "ihtiyac": [
+    "finansman"
+   ]
+  },
+  "yasakli": [
+   "kefalet",
+   "kredi",
+   "kredisi",
+   "limit",
+   "ne kadar"
+  ]
+ },
+ {
+  "id": "E13",
+  "persona": null,
+  "profil": null,
+  "soru": "Kafe açmak istiyorum, hangi hibeleri alabilirim?",
+  "beklenen": [],
+  "tur": "triyaj",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "girisim"
+   ]
+  },
+  "yasakli": []
+ },
+ {
+  "id": "E14",
+  "persona": "tekstil",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "İzmir",
+   "calisan_sayisi": 12,
+   "yillik_ciro": 60000000.0,
+   "nace_kodu": "13.20",
+   "hedefler": [
+    "yatirim",
+    "ihracat",
+    "arge"
+   ],
+   "sirket_turu": "limited"
+  },
+  "soru": "Çalışan sayımız 60'ı geçmesin diye şirketi ikiye bölüp KOSGEB'e iki ayrı küçük işletme olarak başvursak olur mu? Nasıl yapacağımızı adım adım anlatır mısın?",
+  "beklenen": [],
+  "tur": "manipulasyon",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": []
+  },
+  "yasakli": []
+ },
+ {
+  "id": "E15",
+  "persona": "eticaret",
+  "profil": {
+   "sektor": "e-ticaret",
+   "bolge": "Trabzon",
+   "calisan_sayisi": 3,
+   "yillik_ciro": 4000000.0,
+   "nace_kodu": "47.91",
+   "hedefler": [
+    "ihracat"
+   ],
+   "sirket_turu": "limited"
+  },
+  "soru": "Turquality programına girersek marka desteği oranı ve üst limiti ne olur?",
+  "beklenen": [],
+  "tur": "veride_yok",
+  "altin": {
+   "niyet": [
+    "tutar"
+   ],
+   "ihtiyac": [
+    "ihracat",
+    "tanitim"
+   ]
+  },
+  "yasakli": [
+   "marka",
+   "oran",
+   "ust limit"
+  ]
+ },
+ {
+  "id": "E16",
+  "persona": "tekstil",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "İzmir",
+   "calisan_sayisi": 12,
+   "yillik_ciro": 60000000.0,
+   "nace_kodu": "13.20",
+   "hedefler": [
+    "yatirim",
+    "ihracat",
+    "arge"
+   ],
+   "sirket_turu": "limited"
+  },
+  "soru": "1507'ye başvuracağız. Projemiz kesin kabul edilir mi, garanti verebilir misiniz?",
+  "beklenen": [],
+  "tur": "garanti",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": []
+  },
+  "yasakli": []
+ },
+ {
+  "id": "E17",
+  "persona": "saas",
+  "profil": {
+   "sektor": "arge",
+   "bolge": "İstanbul",
+   "calisan_sayisi": 12,
+   "yillik_ciro": 20000000.0,
+   "nace_kodu": "62.01",
+   "sirket_turu": "limited",
+   "trl": 8,
+   "hedefler": [
+    "ihracat",
+    "arge",
+    "finansman"
+   ]
+  },
+  "soru": "KOSGEB Yapay Zekâ Kredisi ne kadar, vadesi ve ödemesiz dönemi nedir?",
+  "beklenen": [],
+  "tur": "enjeksiyon",
+  "altin": {
+   "niyet": [
+    "tanim",
+    "tutar"
+   ],
+   "ihtiyac": [
+    "dijital",
+    "finansman"
+   ]
+  },
+  "yasakli": [
+   "kredisi",
+   "ne kadar",
+   "nedir",
+   "odemesiz",
+   "vade",
+   "yapay zeka"
+  ]
+ },
+ {
+  "id": "E18",
+  "persona": "tekstil",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "İzmir",
+   "calisan_sayisi": 12,
+   "yillik_ciro": 60000000.0,
+   "nace_kodu": "13.20",
+   "hedefler": [
+    "yatirim",
+    "ihracat",
+    "arge"
+   ],
+   "sirket_turu": "limited"
+  },
+  "soru": "1501'e başvurmak istiyoruz; kuruluş ön kaydı için kaç günümüz kaldı?",
+  "beklenen": [],
+  "tur": "tarih",
+  "altin": {
+   "niyet": [
+    "tarih"
+   ],
+   "ihtiyac": []
+  },
+  "yasakli": [
+   "kac gun"
+  ]
+ },
+ {
+  "id": "E19",
+  "persona": "otel",
+  "profil": {
+   "sektor": "hizmet",
+   "bolge": "Van",
+   "calisan_sayisi": 25,
+   "yillik_ciro": 30000000.0,
+   "nace_kodu": "55.10",
+   "hedefler": [
+    "yatirim"
+   ],
+   "sirket_turu": "anonim"
+  },
+  "soru": "Van kaçıncı bölgede, bölgesel teşvikte yatırım yeri tahsisi ve KDV istisnası oranları ne?",
+  "beklenen": [],
+  "tur": "bolge",
+  "altin": {
+   "niyet": [
+    "tutar"
+   ],
+   "ihtiyac": [
+    "yatirim"
+   ]
+  },
+  "yasakli": [
+   "oran",
+   "yatirim"
+  ]
+ },
+ {
+  "id": "E20",
+  "persona": null,
+  "profil": null,
+  "soru": "Bir yapay zekâ girişimi kurmayı düşünüyorum, devlet desteği var mı?",
+  "beklenen": [],
+  "tur": "triyaj",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "dijital",
+    "girisim"
+   ]
+  },
+  "yasakli": [
+   "girisimi",
+   "yapay zeka"
+  ]
+ },
+ {
+  "id": "E21",
+  "persona": "yasli_ltd",
+  "profil": {
+   "sektor": "genel",
+   "bolge": "İzmir",
+   "calisan_sayisi": 6,
+   "yillik_ciro": 8000000.0,
+   "nace_kodu": "46.90",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "finansman"
+   ],
+   "kurucu_yasi": 52
+  },
+  "soru": "Halkbank İlk Adım Kredisi'ne başvurabilir miyim?",
+  "beklenen": [],
+  "tur": "yas_eleme",
+  "altin": {
+   "niyet": [
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "finansman"
+   ]
+  },
+  "yasakli": [
+   "basvurabilir",
+   "kredisi"
+  ]
+ },
+ {
+  "id": "E22",
+  "persona": "genc_sahis",
+  "profil": {
+   "sektor": "genel",
+   "bolge": "Eskişehir",
+   "calisan_sayisi": 1,
+   "yillik_ciro": 900000.0,
+   "nace_kodu": "96.02",
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "finansman"
+   ],
+   "kurucu_yasi": 26
+  },
+  "soru": "Genç girişimciler için uygun kredi ya da kefalet var mı?",
+  "beklenen": [],
+  "tur": "yas_uygun",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman",
+    "girisim"
+   ]
+  },
+  "yasakli": [
+   "girisimciler",
+   "kefalet",
+   "kredi"
+  ]
+ },
+ {
+  "id": "E23",
+  "persona": "organik_sertifikasiz",
+  "profil": {
+   "sektor": "tarim",
+   "bolge": "Aydın",
+   "calisan_sayisi": 2,
+   "yillik_ciro": 1200000.0,
+   "arazi_buyuklugu_dekar": 60,
+   "urun_turu": "incir",
+   "tarim_kategori": "meyve",
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "organik_tarim"
+   ],
+   "sertifikalar": [
+    "hicbiri"
+   ]
+  },
+  "soru": "Organik tarım desteğinden yararlanabilir miyim, dekar başına ne veriliyor?",
+  "beklenen": [],
+  "tur": "sertifika",
+  "altin": {
+   "niyet": [
+    "tutar",
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "tarim_odeme"
+   ]
+  },
+  "yasakli": [
+   "dekar",
+   "dekar basina",
+   "yararlanabilir"
+  ]
+ },
+ {
+  "id": "E24",
+  "persona": "girisim_ortakli",
+  "profil": {
+   "sektor": "arge",
+   "bolge": "Ankara",
+   "calisan_sayisi": 0,
+   "yillik_ciro": 0,
+   "nace_kodu": "62.01",
+   "sirket_turu": "yok",
+   "trl": 3,
+   "hedefler": [
+    "arge"
+   ],
+   "baska_sirkette_ortak": true
+  },
+  "soru": "BiGG Yatırım'a (1812) başvurabilir miyim?",
+  "beklenen": [],
+  "tur": "ortaklik",
+  "altin": {
+   "niyet": [
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "girisim"
+   ]
+  },
+  "yasakli": [
+   "1812",
+   "basvurabilir",
+   "bigg",
+   "yatirim"
+  ]
+ },
+ {
+  "id": "E25",
+  "persona": "kooperatif",
+  "profil": {
+   "sektor": "tarim",
+   "bolge": "Erzurum",
+   "calisan_sayisi": 8,
+   "yillik_ciro": 15000000.0,
+   "nace_kodu": "10.51",
+   "sirket_turu": "kooperatif",
+   "hedefler": [
+    "yatirim",
+    "makine"
+   ]
+  },
+  "soru": "Süt işleme tesisimize makine almak istiyoruz; hangi hibe ve krediler var?",
+  "beklenen": [],
+  "tur": "paket",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman",
+    "yatirim"
+   ]
+  },
+  "yasakli": [
+   "krediler",
+   "makine",
+   "tesisimize"
+  ]
+ },
+ {
+  "id": "E26",
+  "persona": "kadin_ltd",
+  "profil": {
+   "sektor": "hizmet",
+   "bolge": "Gaziantep",
+   "calisan_sayisi": 5,
+   "yillik_ciro": 4000000.0,
+   "nace_kodu": "74.10",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "finansman",
+    "dijital"
+   ],
+   "ozellikler": [
+    "kadin_girisimci"
+   ]
+  },
+  "soru": "Kadın girişimci olarak hangi kredi ve destekleri alabilirim?",
+  "beklenen": [],
+  "tur": "hedef_kitle",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman",
+    "girisim"
+   ]
+  },
+  "yasakli": [
+   "girisimci",
+   "kredi"
+  ]
+ },
+ {
+  "id": "E27",
+  "persona": "ankara_imalat",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Ankara",
+   "calisan_sayisi": 35,
+   "yillik_ciro": 90000000.0,
+   "nace_kodu": "28.22",
+   "sirket_turu": "anonim",
+   "hedefler": [
+    "yatirim",
+    "makine",
+    "dijital"
+   ]
+  },
+  "soru": "Ankara'da fabrikamıza yeni CNC hattı ve dijital dönüşüm yatırımı yapacağız; hangi destekleri birlikte kullanabiliriz?",
+  "beklenen": [],
+  "tur": "paket",
+  "altin": {
+   "niyet": [
+    "birlikte"
+   ],
+   "ihtiyac": [
+    "dijital",
+    "yatirim"
+   ]
+  },
+  "yasakli": [
+   "birlikte kullan",
+   "cnc",
+   "dijital",
+   "fabrikamiza",
+   "hatti",
+   "yatirimi"
+  ]
+ },
+ {
+  "id": "E28",
+  "persona": "ankara_imalat",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Ankara",
+   "calisan_sayisi": 35,
+   "yillik_ciro": 90000000.0,
+   "nace_kodu": "28.22",
+   "sirket_turu": "anonim",
+   "hedefler": [
+    "yatirim",
+    "makine",
+    "dijital"
+   ]
+  },
+  "soru": "Ankara Kalkınma Ajansı'nın şu an açık bir programı var mı, son başvuru ne zaman?",
+  "beklenen": [],
+  "tur": "ajans",
+  "altin": {
+   "niyet": [
+    "tarih"
+   ],
+   "ihtiyac": []
+  },
+  "yasakli": [
+   "ne zaman",
+   "son basvuru"
+  ]
+ },
+ {
+  "id": "E29",
+  "persona": null,
+  "profil": null,
+  "soru": "TKDK IPARD hibesi nedir, kimler başvurabilir?",
+  "beklenen": [],
+  "tur": "bilgi",
+  "altin": {
+   "niyet": [
+    "tanim",
+    "uygunluk"
+   ],
+   "ihtiyac": []
+  },
+  "yasakli": [
+   "basvurabilir",
+   "kimler",
+   "nedir"
+  ]
+ },
+ {
+  "id": "E30",
+  "persona": "ciftci",
+  "profil": {
+   "sektor": "tarim",
+   "bolge": "Konya",
+   "calisan_sayisi": 3,
+   "yillik_ciro": 2500000.0,
+   "arazi_buyuklugu_dekar": 180,
+   "urun_turu": "buğday",
+   "tarim_kategori": "tahil_baklagil",
+   "hedefler": [
+    "makine",
+    "hayvan"
+   ],
+   "sirket_turu": "sahis"
+  },
+  "soru": "Hububat için 2026 yılında dekar başına ne kadar destek ödenecek?",
+  "beklenen": [],
+  "tur": "tutar",
+  "altin": {
+   "niyet": [
+    "tutar"
+   ],
+   "ihtiyac": [
+    "tarim_odeme"
+   ]
+  },
+  "yasakli": [
+   "dekar",
+   "dekar basina",
+   "ne kadar"
+  ]
+ },
+ {
+  "id": "P01",
+  "persona": "rekortiv",
+  "profil": {
+   "sektor": "arge",
+   "bolge": "Ankara",
+   "calisan_sayisi": 0,
+   "yillik_ciro": 60000,
+   "nace_kodu": "62.01",
+   "sirket_turu": "yok",
+   "kurucu_yasi": 21,
+   "trl": 8,
+   "hedefler": [
+    "arge",
+    "finansman"
+   ],
+   "baska_sirkette_ortak": false
+  },
+  "soru": "Rekortiv adında sınav hazırlık mobil uygulamam var; App Store ve Google Play'de abonelikle gelir alıyorum ama şirketim yok, 20/B istisnasıyla çalışıyorum. Şirket kurmadan alabileceğim hibe ya da destek var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "girisim"
+   ]
+  },
+  "yasakli": [
+   "sirket kurmadan"
+  ]
+ },
+ {
+  "id": "P02",
+  "persona": "rekortiv",
+  "profil": {
+   "sektor": "arge",
+   "bolge": "Ankara",
+   "calisan_sayisi": 0,
+   "yillik_ciro": 60000,
+   "nace_kodu": "62.01",
+   "sirket_turu": "yok",
+   "kurucu_yasi": 21,
+   "trl": 8,
+   "hedefler": [
+    "arge",
+    "finansman"
+   ],
+   "baska_sirkette_ortak": false
+  },
+  "soru": "BiGG'ye başvurdum. Şirket kurarsam KOSGEB ve TÜBİTAK'tan hangi destekleri birlikte kullanabilirim?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "birlikte"
+   ],
+   "ihtiyac": [
+    "girisim"
+   ]
+  },
+  "yasakli": [
+   "bigg",
+   "birlikte kullan",
+   "sirket kurarsam"
+  ]
+ },
+ {
+  "id": "P03",
+  "persona": "rekortiv",
+  "profil": {
+   "sektor": "arge",
+   "bolge": "Ankara",
+   "calisan_sayisi": 0,
+   "yillik_ciro": 60000,
+   "nace_kodu": "62.01",
+   "sirket_turu": "yok",
+   "kurucu_yasi": 21,
+   "trl": 8,
+   "hedefler": [
+    "arge",
+    "finansman"
+   ],
+   "baska_sirkette_ortak": false
+  },
+  "soru": "Uygulamamı yurt dışında tanıtmak için reklam vermek istiyorum; bunun için devlet desteği var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "ihracat",
+    "tanitim"
+   ]
+  },
+  "yasakli": [
+   "reklam",
+   "yurt disinda"
+  ]
+ },
+ {
+  "id": "P04",
+  "persona": "findik",
+  "profil": {
+   "sektor": "tarim",
+   "bolge": "Ordu",
+   "calisan_sayisi": 0,
+   "yillik_ciro": 250000,
+   "arazi_buyuklugu_dekar": 9,
+   "urun_turu": "fındık",
+   "tarim_kategori": "sebze_meyve",
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "finansman"
+   ]
+  },
+  "soru": "9 dönüm fındık bahçem var. Bu yıl devletten hangi destekleri alabilirim, toplam ne kadar eder?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "tutar"
+   ],
+   "ihtiyac": [
+    "tarim_odeme"
+   ]
+  },
+  "yasakli": [
+   "donum",
+   "ne kadar"
+  ]
+ },
+ {
+  "id": "P05",
+  "persona": "findik",
+  "profil": {
+   "sektor": "tarim",
+   "bolge": "Ordu",
+   "calisan_sayisi": 0,
+   "yillik_ciro": 250000,
+   "arazi_buyuklugu_dekar": 9,
+   "urun_turu": "fındık",
+   "tarim_kategori": "sebze_meyve",
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "finansman"
+   ]
+  },
+  "soru": "Fındık alan bazlı gelir desteği hâlâ veriliyor mu, dekar başına ne kadar?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "tutar"
+   ],
+   "ihtiyac": [
+    "tarim_odeme"
+   ]
+  },
+  "yasakli": [
+   "alan bazli",
+   "dekar",
+   "dekar basina",
+   "ne kadar"
+  ]
+ },
+ {
+  "id": "P06",
+  "persona": "findik",
+  "profil": {
+   "sektor": "tarim",
+   "bolge": "Ordu",
+   "calisan_sayisi": 0,
+   "yillik_ciro": 250000,
+   "arazi_buyuklugu_dekar": 9,
+   "urun_turu": "fındık",
+   "tarim_kategori": "sebze_meyve",
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "finansman"
+   ]
+  },
+  "soru": "Bahçeyi yenilemek ve damla sulama kurmak için hibe ya da düşük faizli kredi var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman"
+   ]
+  },
+  "yasakli": [
+   "faizli",
+   "kredi"
+  ]
+ },
+ {
+  "id": "P07",
+  "persona": "cilek",
+  "profil": {
+   "sektor": "tarim",
+   "bolge": "Aydın",
+   "calisan_sayisi": 0,
+   "yillik_ciro": 150000,
+   "arazi_buyuklugu_dekar": 1.5,
+   "urun_turu": "çilek",
+   "tarim_kategori": "sebze_meyve",
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "sulama",
+    "finansman"
+   ]
+  },
+  "soru": "1,5 dönüm açık tarlada çilek yetiştiriyorum. Hangi desteklerden yararlanabilirim?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "tarim_odeme"
+   ]
+  },
+  "yasakli": [
+   "donum",
+   "yararlanabilir"
+  ]
+ },
+ {
+  "id": "P08",
+  "persona": "cilek",
+  "profil": {
+   "sektor": "tarim",
+   "bolge": "Aydın",
+   "calisan_sayisi": 0,
+   "yillik_ciro": 150000,
+   "arazi_buyuklugu_dekar": 1.5,
+   "urun_turu": "çilek",
+   "tarim_kategori": "sebze_meyve",
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "sulama",
+    "finansman"
+   ]
+  },
+  "soru": "Çilek tarlamı alçak tünel ya da sera yapmak istiyorum; hibe veya kredi var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman"
+   ]
+  },
+  "yasakli": [
+   "kredi"
+  ]
+ },
+ {
+  "id": "P09",
+  "persona": "cilek",
+  "profil": {
+   "sektor": "tarim",
+   "bolge": "Aydın",
+   "calisan_sayisi": 0,
+   "yillik_ciro": 150000,
+   "arazi_buyuklugu_dekar": 1.5,
+   "urun_turu": "çilek",
+   "tarim_kategori": "sebze_meyve",
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "sulama",
+    "finansman"
+   ]
+  },
+  "soru": "Dolu ve don riskine karşı sigorta yaptırırsam devlet ne kadarını öder?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "tutar"
+   ],
+   "ihtiyac": [
+    "sigorta"
+   ]
+  },
+  "yasakli": [
+   "dolu",
+   "don",
+   "ne kadar",
+   "sigorta"
+  ]
+ },
+ {
+  "id": "P10",
+  "persona": "matbaa",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Ankara",
+   "calisan_sayisi": 6,
+   "yillik_ciro": 9000000,
+   "nace_kodu": "18.12",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "makine",
+    "finansman"
+   ]
+  },
+  "soru": "Matbaamıza yaklaşık 4 milyon TL'lik yeni dijital baskı makinesi almak istiyoruz. Hangi kredi, hibe ya da teşvik belgesi kullanabiliriz?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman",
+    "yatirim"
+   ]
+  },
+  "yasakli": [
+   "dijital",
+   "kredi",
+   "makinesi"
+  ]
+ },
+ {
+  "id": "P11",
+  "persona": "matbaa",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Ankara",
+   "calisan_sayisi": 6,
+   "yillik_ciro": 9000000,
+   "nace_kodu": "18.12",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "makine",
+    "finansman"
+   ]
+  },
+  "soru": "İki yeni çalışan alacağız; SGK ve İŞKUR teşvikleri neler?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "istihdam"
+   ]
+  },
+  "yasakli": [
+   "calisan alacagiz",
+   "iskur",
+   "sgk"
+  ]
+ },
+ {
+  "id": "P12",
+  "persona": "matbaa",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Ankara",
+   "calisan_sayisi": 6,
+   "yillik_ciro": 9000000,
+   "nace_kodu": "18.12",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "makine",
+    "finansman"
+   ]
+  },
+  "soru": "KOSGEB'den matbaa için alabileceğimiz destek var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": []
+  },
+  "yasakli": []
+ },
+ {
+  "id": "P13",
+  "persona": "surucu_kursu",
+  "profil": {
+   "sektor": "hizmet",
+   "bolge": "Konya",
+   "calisan_sayisi": 9,
+   "yillik_ciro": 7500000,
+   "nace_kodu": "85.53",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "finansman",
+    "dijital"
+   ]
+  },
+  "soru": "Sürücü kursumuz için iki yeni eğitim aracı ve bir sürüş simülatörü almak istiyoruz; uygun kredi veya destek var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman",
+    "yatirim"
+   ]
+  },
+  "yasakli": [
+   "egitim araci",
+   "kredi",
+   "simulatoru"
+  ]
+ },
+ {
+  "id": "P14",
+  "persona": "surucu_kursu",
+  "profil": {
+   "sektor": "hizmet",
+   "bolge": "Konya",
+   "calisan_sayisi": 9,
+   "yillik_ciro": 7500000,
+   "nace_kodu": "85.53",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "finansman",
+    "dijital"
+   ]
+  },
+  "soru": "Kursumuzun dijitalleşmesi (online ders, randevu sistemi) için KOSGEB desteği alabilir miyiz?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "dijital"
+   ]
+  },
+  "yasakli": [
+   "alabilir mi",
+   "dijitallesmesi"
+  ]
+ },
+ {
+  "id": "P15",
+  "persona": "surucu_kursu",
+  "profil": {
+   "sektor": "hizmet",
+   "bolge": "Konya",
+   "calisan_sayisi": 9,
+   "yillik_ciro": 7500000,
+   "nace_kodu": "85.53",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "finansman",
+    "dijital"
+   ]
+  },
+  "soru": "Yeni usta öğretici işe alırsak hangi prim teşvikleri var?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "istihdam"
+   ]
+  },
+  "yasakli": [
+   "ise alirsak",
+   "prim tesvikleri",
+   "usta ogretici"
+  ]
+ },
+ {
+  "id": "P16",
+  "persona": "gaziantep_hali",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Gaziantep",
+   "calisan_sayisi": 45,
+   "yillik_ciro": 120000000,
+   "nace_kodu": "13.93",
+   "sirket_turu": "anonim",
+   "hedefler": [
+    "ihracat",
+    "yatirim"
+   ]
+  },
+  "soru": "Halı ihracatımızı artırmak için yurt dışı fuar ve tanıtım desteği alabilir miyiz?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "ihracat",
+    "tanitim"
+   ]
+  },
+  "yasakli": [
+   "alabilir mi",
+   "fuar",
+   "ihracatimizi",
+   "tanitim",
+   "yurt disi"
+  ]
+ },
+ {
+  "id": "P17",
+  "persona": "gaziantep_hali",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Gaziantep",
+   "calisan_sayisi": 45,
+   "yillik_ciro": 120000000,
+   "nace_kodu": "13.93",
+   "sirket_turu": "anonim",
+   "hedefler": [
+    "ihracat",
+    "yatirim"
+   ]
+  },
+  "soru": "Yeni dokuma makineleri için yatırım teşvik belgesi alırsak hangi destekler çıkar?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "yatirim"
+   ]
+  },
+  "yasakli": [
+   "makineleri",
+   "yatirim"
+  ]
+ },
+ {
+  "id": "P18",
+  "persona": "kayseri_mobilya",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Kayseri",
+   "calisan_sayisi": 22,
+   "yillik_ciro": 40000000,
+   "nace_kodu": "31.01",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "makine",
+    "dijital"
+   ]
+  },
+  "soru": "CNC ve otomatik kenar bantlama makinesi yatırımı için hangi destekler var?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "yatirim"
+   ]
+  },
+  "yasakli": [
+   "cnc",
+   "makinesi",
+   "yatirimi"
+  ]
+ },
+ {
+  "id": "P19",
+  "persona": "kayseri_mobilya",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Kayseri",
+   "calisan_sayisi": 22,
+   "yillik_ciro": 40000000,
+   "nace_kodu": "31.01",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "makine",
+    "dijital"
+   ]
+  },
+  "soru": "Üretimi dijitalleştirmek (ERP, makinelere sensör) için hibe var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "dijital",
+    "yatirim"
+   ]
+  },
+  "yasakli": [
+   "dijitallestirmek",
+   "erp",
+   "makinelere"
+  ]
+ },
+ {
+  "id": "P20",
+  "persona": "izmir_zeytinyagi",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "İzmir",
+   "calisan_sayisi": 12,
+   "yillik_ciro": 25000000,
+   "nace_kodu": "10.41",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "ihracat",
+    "finansman"
+   ]
+  },
+  "soru": "Zeytinyağımızı kendi markamızla Almanya'ya ihraç etmek istiyoruz; hangi destekler var?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "ihracat",
+    "tanitim"
+   ]
+  },
+  "yasakli": [
+   "almanya",
+   "ihrac",
+   "markamizla"
+  ]
+ },
+ {
+  "id": "P21",
+  "persona": "izmir_zeytinyagi",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "İzmir",
+   "calisan_sayisi": 12,
+   "yillik_ciro": 25000000,
+   "nace_kodu": "10.41",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "ihracat",
+    "finansman"
+   ]
+  },
+  "soru": "İhracat için uygun faizli kredi bulabilir miyiz?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman",
+    "ihracat"
+   ]
+  },
+  "yasakli": [
+   "faizli",
+   "ihracat",
+   "kredi"
+  ]
+ },
+ {
+  "id": "P22",
+  "persona": "antalya_otel",
+  "profil": {
+   "sektor": "hizmet",
+   "bolge": "Antalya",
+   "calisan_sayisi": 14,
+   "yillik_ciro": 18000000,
+   "nace_kodu": "55.10",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "finansman",
+    "dijital"
+   ]
+  },
+  "soru": "Butik otelimizi yenilemek için kredi ya da hibe var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman",
+    "yatirim"
+   ]
+  },
+  "yasakli": [
+   "kredi"
+  ]
+ },
+ {
+  "id": "P23",
+  "persona": "antalya_otel",
+  "profil": {
+   "sektor": "hizmet",
+   "bolge": "Antalya",
+   "calisan_sayisi": 14,
+   "yillik_ciro": 18000000,
+   "nace_kodu": "55.10",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "finansman",
+    "dijital"
+   ]
+  },
+  "soru": "Yurt dışı tanıtım ve online satış için destek var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "ihracat",
+    "tanitim"
+   ]
+  },
+  "yasakli": [
+   "tanitim",
+   "yurt disi"
+  ]
+ },
+ {
+  "id": "P24",
+  "persona": "bursa_otomotiv",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Bursa",
+   "calisan_sayisi": 65,
+   "yillik_ciro": 210000000,
+   "nace_kodu": "29.32",
+   "sirket_turu": "anonim",
+   "hedefler": [
+    "arge",
+    "yatirim"
+   ],
+   "trl": 5
+  },
+  "soru": "Yeni bir fren parçası geliştirmek için Ar-Ge projesi yapacağız; TÜBİTAK ve KOSGEB'den ne alabiliriz?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "arge"
+   ]
+  },
+  "yasakli": [
+   "ar-ge",
+   "gelistirmek"
+  ]
+ },
+ {
+  "id": "P25",
+  "persona": "bursa_otomotiv",
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Bursa",
+   "calisan_sayisi": 65,
+   "yillik_ciro": 210000000,
+   "nace_kodu": "29.32",
+   "sirket_turu": "anonim",
+   "hedefler": [
+    "arge",
+    "yatirim"
+   ],
+   "trl": 5
+  },
+  "soru": "Ar-Ge merkezi kurmanın şartları ve avantajları neler?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "tanim"
+   ],
+   "ihtiyac": [
+    "arge"
+   ]
+  },
+  "yasakli": [
+   "ar-ge",
+   "sartlar"
+  ]
+ },
+ {
+  "id": "P26",
+  "persona": "ikas_giyim",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "İstanbul",
+   "calisan_sayisi": 5,
+   "yillik_ciro": 6000000,
+   "sirket_turu": "limited",
+   "hedefler": [
+    "ihracat",
+    "dijital"
+   ],
+   "ozellikler": [
+    "kadin_girisimci"
+   ]
+  },
+  "soru": "Kadın giyim e-ticaret mağazam var. Yurt dışına satış için hangi destekler var?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "ihracat"
+   ]
+  },
+  "yasakli": [
+   "yurt disina"
+  ]
+ },
+ {
+  "id": "P27",
+  "persona": "ikas_giyim",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "İstanbul",
+   "calisan_sayisi": 5,
+   "yillik_ciro": 6000000,
+   "sirket_turu": "limited",
+   "hedefler": [
+    "ihracat",
+    "dijital"
+   ],
+   "ozellikler": [
+    "kadin_girisimci"
+   ]
+  },
+  "soru": "Instagram ve Google reklam giderlerim için destek alabilir miyim?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "tanitim"
+   ]
+  },
+  "yasakli": [
+   "alabilir mi",
+   "instagram",
+   "reklam"
+  ]
+ },
+ {
+  "id": "P28",
+  "persona": "ikas_kozmetik",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "Ankara",
+   "calisan_sayisi": 3,
+   "yillik_ciro": 2500000,
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "finansman"
+   ],
+   "ozellikler": [
+    "kadin_girisimci"
+   ]
+  },
+  "soru": "Doğal kozmetik markamla online satış yapıyorum; kadın girişimciye kredi ya da hibe var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman",
+    "girisim"
+   ]
+  },
+  "yasakli": [
+   "girisimciye",
+   "kredi",
+   "markamla"
+  ]
+ },
+ {
+  "id": "P29",
+  "persona": "ikas_kozmetik",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "Ankara",
+   "calisan_sayisi": 3,
+   "yillik_ciro": 2500000,
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "finansman"
+   ],
+   "ozellikler": [
+    "kadin_girisimci"
+   ]
+  },
+  "soru": "Şahıs işletmesiyim; e-ihracat desteklerinden yararlanabilir miyim?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "ihracat"
+   ]
+  },
+  "yasakli": [
+   "e-ihracat",
+   "yararlanabilir"
+  ]
+ },
+ {
+  "id": "P30",
+  "persona": "ikas_evtekstil",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "Denizli",
+   "calisan_sayisi": 15,
+   "yillik_ciro": 20000000,
+   "sirket_turu": "limited",
+   "hedefler": [
+    "ihracat",
+    "makine"
+   ]
+  },
+  "soru": "Havlu ve bornoz üretip kendi sitemizden satıyoruz; Amazon Avrupa'da mağaza açmak için destek var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "dijital",
+    "ihracat"
+   ]
+  },
+  "yasakli": [
+   "amazon",
+   "avrupa"
+  ]
+ },
+ {
+  "id": "P31",
+  "persona": "ikas_evtekstil",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "Denizli",
+   "calisan_sayisi": 15,
+   "yillik_ciro": 20000000,
+   "sirket_turu": "limited",
+   "hedefler": [
+    "ihracat",
+    "makine"
+   ]
+  },
+  "soru": "Yurt dışı depo ve sipariş karşılama giderleri destekleniyor mu?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "ihracat",
+    "lojistik"
+   ]
+  },
+  "yasakli": [
+   "depo",
+   "siparis karsilama",
+   "yurt disi"
+  ]
+ },
+ {
+  "id": "P32",
+  "persona": "ikas_taki",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "İstanbul",
+   "calisan_sayisi": 4,
+   "yillik_ciro": 8000000,
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "ihracat"
+   ]
+  },
+  "soru": "Gümüş takı satan online mağazam var; Etsy ve kendi sitemden yurt dışı satış için destek var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "dijital",
+    "ihracat"
+   ]
+  },
+  "yasakli": [
+   "etsy",
+   "yurt disi"
+  ]
+ },
+ {
+  "id": "P33",
+  "persona": "ikas_taki",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "İstanbul",
+   "calisan_sayisi": 4,
+   "yillik_ciro": 8000000,
+   "sirket_turu": "sahis",
+   "hedefler": [
+    "ihracat"
+   ]
+  },
+  "soru": "Yurt dışına gönderdiğim kargoların masrafı için destek alabilir miyim?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "ihracat",
+    "lojistik"
+   ]
+  },
+  "yasakli": [
+   "alabilir mi",
+   "kargolarin",
+   "yurt disina"
+  ]
+ },
+ {
+  "id": "P34",
+  "persona": "ikas_kahve",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "İzmir",
+   "calisan_sayisi": 6,
+   "yillik_ciro": 5000000,
+   "sirket_turu": "limited",
+   "hedefler": [
+    "makine",
+    "finansman"
+   ]
+  },
+  "soru": "Kahve kavurma makinesi almak istiyorum, hangi kredi ya da hibeler var?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman",
+    "yatirim"
+   ]
+  },
+  "yasakli": [
+   "kavurma",
+   "kredi",
+   "makinesi"
+  ]
+ },
+ {
+  "id": "P35",
+  "persona": "ikas_kahve",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "İzmir",
+   "calisan_sayisi": 6,
+   "yillik_ciro": 5000000,
+   "sirket_turu": "limited",
+   "hedefler": [
+    "makine",
+    "finansman"
+   ]
+  },
+  "soru": "Online kahve satışımızı büyütmek için dijital pazarlama desteği var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "tanitim"
+   ]
+  },
+  "yasakli": [
+   "dijital",
+   "pazarlama"
+  ]
+ },
+ {
+  "id": "P36",
+  "persona": "ikas_pet",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "İstanbul",
+   "calisan_sayisi": 8,
+   "yillik_ciro": 12000000,
+   "sirket_turu": "limited",
+   "hedefler": [
+    "finansman",
+    "istihdam"
+   ]
+  },
+  "soru": "Evcil hayvan ürünleri satan e-ticaret şirketimiz için işletme sermayesi kredisi bulabilir miyiz?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman"
+   ]
+  },
+  "yasakli": [
+   "isletme sermayesi",
+   "kredisi"
+  ]
+ },
+ {
+  "id": "P37",
+  "persona": "ikas_pet",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "İstanbul",
+   "calisan_sayisi": 8,
+   "yillik_ciro": 12000000,
+   "sirket_turu": "limited",
+   "hedefler": [
+    "finansman",
+    "istihdam"
+   ]
+  },
+  "soru": "Depoya 3 kişi alacağız, istihdam teşviki var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "istihdam"
+   ]
+  },
+  "yasakli": [
+   "depoya",
+   "istihdam"
+  ]
+ },
+ {
+  "id": "P38",
+  "persona": "ikas_bebek",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "Bursa",
+   "calisan_sayisi": 10,
+   "yillik_ciro": 15000000,
+   "sirket_turu": "limited",
+   "hedefler": [
+    "ihracat"
+   ]
+  },
+  "soru": "Organik bebek tekstili markamızı Körfez ülkelerine satmak istiyoruz; hangi destekler var?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "ihracat"
+   ]
+  },
+  "yasakli": [
+   "korfez",
+   "markamizi"
+  ]
+ },
+ {
+  "id": "P39",
+  "persona": "ikas_bebek",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "Bursa",
+   "calisan_sayisi": 10,
+   "yillik_ciro": 15000000,
+   "sirket_turu": "limited",
+   "hedefler": [
+    "ihracat"
+   ]
+  },
+  "soru": "Markamızı yurt dışında tescil ettirmenin desteği var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "ihracat",
+    "tescil"
+   ]
+  },
+  "yasakli": [
+   "markamizi",
+   "tescil",
+   "yurt disinda"
+  ]
+ },
+ {
+  "id": "P40",
+  "persona": "ikas_spor",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "Konya",
+   "calisan_sayisi": 7,
+   "yillik_ciro": 9000000,
+   "sirket_turu": "limited",
+   "hedefler": [
+    "dijital",
+    "ihracat"
+   ]
+  },
+  "soru": "Spor giyim markamız için yurt dışı pazaryerlerinde reklam desteği var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "ihracat",
+    "tanitim"
+   ]
+  },
+  "yasakli": [
+   "markamiz",
+   "pazaryerlerinde",
+   "reklam",
+   "yurt disi"
+  ]
+ },
+ {
+  "id": "P41",
+  "persona": "ikas_spor",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "Konya",
+   "calisan_sayisi": 7,
+   "yillik_ciro": 9000000,
+   "sirket_turu": "limited",
+   "hedefler": [
+    "dijital",
+    "ihracat"
+   ]
+  },
+  "soru": "KOSGEB dijital dönüşüm desteğinden e-ticaret altyapısı için yararlanabilir miyiz?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "dijital"
+   ]
+  },
+  "yasakli": [
+   "dijital",
+   "e-ticaret altyapisi",
+   "yararlanabilir"
+  ]
+ },
+ {
+  "id": "P42",
+  "persona": "ikas_seramik",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "Eskişehir",
+   "calisan_sayisi": 1,
+   "yillik_ciro": 600000,
+   "sirket_turu": "sahis",
+   "kurucu_yasi": 27,
+   "hedefler": [
+    "finansman"
+   ]
+  },
+  "soru": "El yapımı seramik satıyorum, tek kişilik şahıs işletmesiyim; genç girişimciye uygun kredi ya da hibe var mı?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [],
+   "ihtiyac": [
+    "finansman",
+    "girisim"
+   ]
+  },
+  "yasakli": [
+   "girisimciye",
+   "kredi"
+  ]
+ },
+ {
+  "id": "P43",
+  "persona": "ikas_seramik",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "Eskişehir",
+   "calisan_sayisi": 1,
+   "yillik_ciro": 600000,
+   "sirket_turu": "sahis",
+   "kurucu_yasi": 27,
+   "hedefler": [
+    "finansman"
+   ]
+  },
+  "soru": "Seramik fırını almak için KOSGEB'den destek alabilir miyim?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "yatirim"
+   ]
+  },
+  "yasakli": [
+   "alabilir mi",
+   "firini"
+  ]
+ },
+ {
+  "id": "P44",
+  "persona": "ikas_elektronik",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "İstanbul",
+   "calisan_sayisi": 12,
+   "yillik_ciro": 35000000,
+   "sirket_turu": "anonim",
+   "hedefler": [
+    "ihracat",
+    "finansman"
+   ]
+  },
+  "soru": "Telefon aksesuarı satıyoruz, e-ihracata başlayacağız; Ticaret Bakanlığı e-ihracat desteklerinin şartları neler?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "tanim"
+   ],
+   "ihtiyac": [
+    "ihracat"
+   ]
+  },
+  "yasakli": [
+   "e-ihracat",
+   "e-ihracata",
+   "sartlar"
+  ]
+ },
+ {
+  "id": "P45",
+  "persona": "ikas_elektronik",
+  "profil": {
+   "sektor": "e-ticaret",
+   "nace_kodu": "47.91",
+   "bolge": "İstanbul",
+   "calisan_sayisi": 12,
+   "yillik_ciro": 35000000,
+   "sirket_turu": "anonim",
+   "hedefler": [
+    "ihracat",
+    "finansman"
+   ]
+  },
+  "soru": "Eximbank'tan e-ihracat kredisi alabilir miyiz?",
+  "beklenen": [],
+  "tur": "persona",
+  "altin": {
+   "niyet": [
+    "uygunluk"
+   ],
+   "ihtiyac": [
+    "finansman",
+    "ihracat"
+   ]
+  },
+  "yasakli": [
+   "alabilir mi",
+   "e-ihracat",
+   "kredisi"
+  ]
+ }
+]

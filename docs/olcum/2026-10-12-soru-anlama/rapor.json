@@ -1,0 +1,1295 @@
+{
+ "soru_sayisi": {
+  "ozgun": 75,
+  "soylenis": 148
+ },
+ "modeller": {
+  "openai/gpt-oss-120b": {
+   "siniflandirilan": 223,
+   "hata": 0,
+   "uretimde_gonderilmeyen": 81,
+   "gecikme_sn": {
+    "p50": 0.643,
+    "p95": 1.437,
+    "en_cok": 3.326,
+    "2.5_sn_ustu": 1
+   },
+   "ozgun": {
+    "kalip": {
+     "ihtiyac": {
+      "kesinlik": 0.941,
+      "duyarlilik": 0.969,
+      "f1": 0.955,
+      "tam_eslesme": 0.893,
+      "dogru": 95,
+      "fazla": 6,
+      "eksik": 3,
+      "n": 75
+     },
+     "niyet": {
+      "kesinlik": 0.981,
+      "duyarlilik": 0.964,
+      "f1": 0.972,
+      "tam_eslesme": 0.96,
+      "dogru": 53,
+      "fazla": 1,
+      "eksik": 2,
+      "n": 75
+     }
+    },
+    "kalip+groq": {
+     "ihtiyac": {
+      "kesinlik": 0.922,
+      "duyarlilik": 0.969,
+      "f1": 0.945,
+      "tam_eslesme": 0.88,
+      "dogru": 95,
+      "fazla": 8,
+      "eksik": 3,
+      "n": 75
+     },
+     "niyet": {
+      "kesinlik": 0.981,
+      "duyarlilik": 0.964,
+      "f1": 0.972,
+      "tam_eslesme": 0.96,
+      "dogru": 53,
+      "fazla": 1,
+      "eksik": 2,
+      "n": 75
+     }
+    },
+    "yalniz_groq": {
+     "ihtiyac": {
+      "kesinlik": 0.931,
+      "duyarlilik": 0.551,
+      "f1": 0.692,
+      "tam_eslesme": 0.48,
+      "dogru": 54,
+      "fazla": 4,
+      "eksik": 44,
+      "n": 75
+     },
+     "niyet": {
+      "kesinlik": 0.359,
+      "duyarlilik": 0.255,
+      "f1": 0.298,
+      "tam_eslesme": 0.36,
+      "dogru": 14,
+      "fazla": 25,
+      "eksik": 41,
+      "n": 75
+     }
+    }
+   },
+   "soylenis": {
+    "kalip": {
+     "ihtiyac": {
+      "kesinlik": 0.934,
+      "duyarlilik": 0.51,
+      "f1": 0.66,
+      "tam_eslesme": 0.459,
+      "dogru": 99,
+      "fazla": 7,
+      "eksik": 95,
+      "n": 148
+     },
+     "niyet": {
+      "kesinlik": 0.629,
+      "duyarlilik": 0.565,
+      "f1": 0.595,
+      "tam_eslesme": 0.541,
+      "dogru": 61,
+      "fazla": 36,
+      "eksik": 47,
+      "n": 148
+     }
+    },
+    "kalip+groq": {
+     "ihtiyac": {
+      "kesinlik": 0.907,
+      "duyarlilik": 0.706,
+      "f1": 0.794,
+      "tam_eslesme": 0.608,
+      "dogru": 137,
+      "fazla": 14,
+      "eksik": 57,
+      "n": 148
+     },
+     "niyet": {
+      "kesinlik": 0.629,
+      "duyarlilik": 0.565,
+      "f1": 0.595,
+      "tam_eslesme": 0.541,
+      "dogru": 61,
+      "fazla": 36,
+      "eksik": 47,
+      "n": 148
+     }
+    },
+    "yalniz_groq": {
+     "ihtiyac": {
+      "kesinlik": 0.891,
+      "duyarlilik": 0.505,
+      "f1": 0.645,
+      "tam_eslesme": 0.426,
+      "dogru": 98,
+      "fazla": 12,
+      "eksik": 96,
+      "n": 148
+     },
+     "niyet": {
+      "kesinlik": 0.349,
+      "duyarlilik": 0.269,
+      "f1": 0.304,
+      "tam_eslesme": 0.345,
+      "dogru": 29,
+      "fazla": 54,
+      "eksik": 79,
+      "n": 148
+     }
+    }
+   },
+   "kayit_ortusmesi": {
+    "kalip": 0.456,
+    "kalip+groq": 0.52,
+    "iyilesen": 24,
+    "kotulesen": 3,
+    "n": 148
+   },
+   "ornekler": [
+    {
+     "id": "E07a",
+     "soru": "Van’da otel projesi için teşvik belgesinde Sosyal Güvenlik Kurumu işveren yardımı ne kadar süreyle geçerli, getiri desteği bulunuyor mu, minimum sermaye miktarı nedir?",
+     "altin": [
+      "finansman",
+      "istihdam",
+      "yatirim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "yatirim"
+     ]
+    },
+    {
+     "id": "E07b",
+     "soru": "Van’daki otel projesine yönelik teşvik belgesinde Sosyal Güvenlik Kurumu’nun işveren katkısı ne kadar süreyle sağlanıyor, kâr oranı desteği mevcut mu, asgari sermaye miktarı ne kadar?",
+     "altin": [
+      "finansman",
+      "istihdam",
+      "yatirim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "yatirim"
+     ]
+    },
+    {
+     "id": "E08b",
+     "soru": "Online satış platformu üyelik gideri desteği hâlâ yıllık 15.102 TL mi, hangi karar uygulanıyor?",
+     "altin": [
+      "dijital",
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "dijital"
+     ]
+    },
+    {
+     "id": "E13a",
+     "soru": "Kafe açmayı planlıyorum, hangi desteklerden faydalanabilirim?",
+     "altin": [
+      "girisim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "yatirim"
+     ]
+    },
+    {
+     "id": "E13b",
+     "soru": "Yeni bir kafe kurmak istiyorum, alabileceğim hibeler neler?",
+     "altin": [
+      "girisim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "girisim",
+      "yatirim"
+     ]
+    },
+    {
+     "id": "E22a",
+     "soru": "Genç iş kuranlar için uygun bir borç ya da teminat seçeneği mevcut mu?",
+     "altin": [
+      "finansman",
+      "girisim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "finansman",
+      "girisim"
+     ]
+    },
+    {
+     "id": "E25b",
+     "soru": "Süt işleme birimimize yeni cihaz temin etmek istiyoruz; hangi hibe ve finansman imkanları bulunuyor?",
+     "altin": [
+      "finansman",
+      "yatirim"
+     ],
+     "kalip": [
+      "finansman"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "yatirim"
+     ]
+    },
+    {
+     "id": "E26b",
+     "soru": "Kadın girişimci kimliğiyle hangi maddi yardımlar ve teşviklerden yararlanabilirim?",
+     "altin": [
+      "finansman",
+      "girisim"
+     ],
+     "kalip": [
+      "girisim"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "girisim"
+     ]
+    },
+    {
+     "id": "E27a",
+     "soru": "Ankara'da tesisimize yeni bir bilgisayar kontrollü kesim makinesi ve sayısal dönüşüm projesi ekleyeceğiz; hangi desteklerden aynı anda yararlanabiliriz?",
+     "altin": [
+      "dijital",
+      "yatirim"
+     ],
+     "kalip": [
+      "yatirim"
+     ],
+     "kalip+groq": [
+      "dijital",
+      "yatirim"
+     ]
+    },
+    {
+     "id": "E27b",
+     "soru": "Ankara'da üretim bandımıza yeni bir bilgisayar kontrollü kesim sistemi ve sayısal dönüşüm çalışması koyacağız; bu süreçte hangi teşvikleri bir arada değerlendirebiliriz?",
+     "altin": [
+      "dijital",
+      "yatirim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "dijital",
+      "yatirim"
+     ]
+    },
+    {
+     "id": "P01a",
+     "soru": "Rekortiv adlı sınav hazırlık uygulamam var; App Store ve Google Play üzerinden abonelikle gelir elde ediyorum fakat henüz resmi bir işletme yapısı yok. 20/B istisnasıyla çalışıyorum. Resmi bir kuruluş oluşturmadan alabileceğim hibe ya da destek mevcut mu?",
+     "altin": [
+      "girisim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "girisim"
+     ]
+    },
+    {
+     "id": "P01b",
+     "soru": "Rekortiv isimli sınav hazırlık mobil uygulamam App Store ve Google Play'de abonelik geliri sağlıyor, ama hâlâ bir işletme kaydı yapmadım ve 20/B istisnasını kullanıyorum. Kurumsal bir yapı kurmadan faydalanabileceğim hibe ya da destek var mı?",
+     "altin": [
+      "girisim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "finansman",
+      "girisim"
+     ]
+    },
+    {
+     "id": "P04a",
+     "soru": "9 birimlik fındık bahçem var. Bu yıl devletten hangi yardımları alabilirim, toplam tutarı nedir?",
+     "altin": [
+      "tarim_odeme"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "tarim_odeme"
+     ]
+    },
+    {
+     "id": "P04b",
+     "soru": "9 alanlık fındık bahçem bulunuyor. Bu sezon devletten ne tür destekler temin edebilirim, toplam maliyet ne olur?",
+     "altin": [
+      "tarim_odeme"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "tarim_odeme"
+     ]
+    },
+    {
+     "id": "P09a",
+     "soru": "Yağmur ve buzlanma riskine karşı teminat alırsam devlet hangi miktarı karşılar?",
+     "altin": [
+      "sigorta"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "sigorta"
+     ]
+    },
+    {
+     "id": "P09b",
+     "soru": "Hava koşullarından kaynaklı zararlar için güvence yaptırdığımda devletin ödeyeceği tutar nedir?",
+     "altin": [
+      "sigorta"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "sigorta"
+     ]
+    },
+    {
+     "id": "P11b",
+     "soru": "İki yeni ekip üyesi almayı planlıyoruz; bu süreçte devletin sunduğu teşvikler hakkında bilgi verir misiniz?",
+     "altin": [
+      "istihdam"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "istihdam"
+     ]
+    },
+    {
+     "id": "P15a",
+     "soru": "Yeni bir uzman eğitmen almayı planlarsak hangi ödül teşvikleri mevcut?",
+     "altin": [
+      "istihdam"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "istihdam"
+     ]
+    },
+    {
+     "id": "P18b",
+     "soru": "Otomatik kenar bantlama ve bilgisayar kontrollü kesim cihazı satın alırken hangi teşviklerden faydalanabilirim?",
+     "altin": [
+      "yatirim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "yatirim"
+     ]
+    },
+    {
+     "id": "P21b",
+     "soru": "Dış pazara satış amacıyla uygun şartlı borç temin edebilir miyiz?",
+     "altin": [
+      "finansman",
+      "ihracat"
+     ],
+     "kalip": [
+      "ihracat"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "ihracat"
+     ]
+    },
+    {
+     "id": "P23a",
+     "soru": "Yurtdışı pazarlama ve internet üzerinden satış için bir destek mekanizması mevcut mu?",
+     "altin": [
+      "ihracat",
+      "tanitim"
+     ],
+     "kalip": [
+      "ihracat",
+      "tanitim"
+     ],
+     "kalip+groq": [
+      "dijital",
+      "ihracat",
+      "tanitim"
+     ]
+    },
+    {
+     "id": "P23b",
+     "soru": "Online satış ve dış pazarlama faaliyetlerimiz için yardım alabilir miyiz?",
+     "altin": [
+      "ihracat",
+      "tanitim"
+     ],
+     "kalip": [
+      "ihracat",
+      "tanitim"
+     ],
+     "kalip+groq": [
+      "dijital",
+      "ihracat",
+      "tanitim"
+     ]
+    },
+    {
+     "id": "P26b",
+     "soru": "Kadın giyim online mağazam var. Uluslararası satış için mevcut olan teşvik ve yardımlar nelerdir?",
+     "altin": [
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "ihracat"
+     ]
+    },
+    {
+     "id": "P28a",
+     "soru": "Doğal kozmetik ürünlerimi internet üzerinden satıyorum; kadın iş kuranlara yönelik finansman ya da hibe imkanı var mı?",
+     "altin": [
+      "finansman",
+      "girisim"
+     ],
+     "kalip": [
+      "finansman"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "girisim"
+     ]
+    },
+    {
+     "id": "P28b",
+     "soru": "Online platformda doğal kozmetik satışı yapıyorum; kadın girişimciler için destek sağlayan finansal kaynaklar ya da hibeler bulunuyor mu?",
+     "altin": [
+      "finansman",
+      "girisim"
+     ],
+     "kalip": [
+      "girisim"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "girisim"
+     ]
+    },
+    {
+     "id": "P30a",
+     "soru": "Havlu ve bornoz üretiyoruz, kendi sitemizden satıyoruz; AB ülkelerinde bu büyük e‑ticaret platformunda mağaza açmak için bir destek bulunuyor mu?",
+     "altin": [
+      "dijital",
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "dijital"
+     ]
+    },
+    {
+     "id": "P30b",
+     "soru": "Kendi web sitemizden havlu ve bornoz satıyoruz; kıta çapında popüler çevrimiçi pazarda dükkan açmak için bir yardım hizmeti var mı?",
+     "altin": [
+      "dijital",
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "dijital"
+     ]
+    },
+    {
+     "id": "P31a",
+     "soru": "Yurtdışı stok ve sipariş işleme masrafları karşılanıyor mu?",
+     "altin": [
+      "ihracat",
+      "lojistik"
+     ],
+     "kalip": [
+      "ihracat"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "ihracat"
+     ]
+    },
+    {
+     "id": "P31b",
+     "soru": "Yurtdışı ambar ve sipariş yönetimi giderleri destekleniyor mu?",
+     "altin": [
+      "ihracat",
+      "lojistik"
+     ],
+     "kalip": [
+      "ihracat"
+     ],
+     "kalip+groq": [
+      "ihracat",
+      "lojistik"
+     ]
+    },
+    {
+     "id": "P32a",
+     "soru": "Gümüş takı satışı yaptığım online mağazam var; popüler el işi platformu ve kendi sitem üzerinden uluslararası satış için destek var mı?",
+     "altin": [
+      "dijital",
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "dijital",
+      "ihracat"
+     ]
+    },
+    {
+     "id": "P33a",
+     "soru": "Ülke dışına gönderdiğim paketlerin masrafı için destek talep edebilir miyim?",
+     "altin": [
+      "ihracat",
+      "lojistik"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "lojistik"
+     ]
+    },
+    {
+     "id": "P34a",
+     "soru": "Kahve pişirme cihazı almak istiyorum, hangi finansman ya da destekler mevcut?",
+     "altin": [
+      "finansman",
+      "yatirim"
+     ],
+     "kalip": [
+      "finansman"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "yatirim"
+     ]
+    },
+    {
+     "id": "P34b",
+     "soru": "Kahve işleme aletini temin etmek istiyorum, hangi borç ya da teşvikler var?",
+     "altin": [
+      "finansman",
+      "yatirim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "finansman",
+      "yatirim"
+     ]
+    },
+    {
+     "id": "P36a",
+     "soru": "Evcil hayvan ürünleri satan e-ticaret firmamız için faaliyet fonu temini sağlayabilir miyiz?",
+     "altin": [
+      "finansman"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "finansman"
+     ]
+    },
+    {
+     "id": "P38b",
+     "soru": "Organik bebek tekstili satışı için Orta Doğu pazarına girmek istiyorum; hangi desteklerden faydalanabilirim?",
+     "altin": [
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "ihracat"
+     ]
+    },
+    {
+     "id": "P39a",
+     "soru": "İşletmemizin adını dış ülkelerde kaydettirmek için bir destek var mı?",
+     "altin": [
+      "ihracat",
+      "tescil"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "girisim"
+     ]
+    },
+    {
+     "id": "P39b",
+     "soru": "Logomuzun yabancı bir ülkede resmi kaydını yaptırmamıza yardımcı olur musunuz?",
+     "altin": [
+      "ihracat",
+      "tescil"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "tescil"
+     ]
+    },
+    {
+     "id": "P42b",
+     "soru": "El yapımı seramik satıyorum, tek kişilik şahıs firmam var; yeni girişimciye yönelik destek programları arasında hibe ya da borç seçenekleri bulunuyor mu?",
+     "altin": [
+      "finansman",
+      "girisim"
+     ],
+     "kalip": [
+      "girisim"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "girisim"
+     ]
+    },
+    {
+     "id": "P45b",
+     "soru": "Eximbank'tan e-ticaret dışı satışlarımız için bir destek almayı mümkün kılıyor mu?",
+     "altin": [
+      "finansman",
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "ihracat"
+     ]
+    }
+   ]
+  },
+  "openai/gpt-oss-20b": {
+   "siniflandirilan": 223,
+   "hata": 0,
+   "uretimde_gonderilmeyen": 81,
+   "gecikme_sn": {
+    "p50": 0.508,
+    "p95": 1.023,
+    "en_cok": 2.166,
+    "2.5_sn_ustu": 0
+   },
+   "ozgun": {
+    "kalip": {
+     "ihtiyac": {
+      "kesinlik": 0.941,
+      "duyarlilik": 0.969,
+      "f1": 0.955,
+      "tam_eslesme": 0.893,
+      "dogru": 95,
+      "fazla": 6,
+      "eksik": 3,
+      "n": 75
+     },
+     "niyet": {
+      "kesinlik": 0.981,
+      "duyarlilik": 0.964,
+      "f1": 0.972,
+      "tam_eslesme": 0.96,
+      "dogru": 53,
+      "fazla": 1,
+      "eksik": 2,
+      "n": 75
+     }
+    },
+    "kalip+groq": {
+     "ihtiyac": {
+      "kesinlik": 0.932,
+      "duyarlilik": 0.98,
+      "f1": 0.955,
+      "tam_eslesme": 0.893,
+      "dogru": 96,
+      "fazla": 7,
+      "eksik": 2,
+      "n": 75
+     },
+     "niyet": {
+      "kesinlik": 0.981,
+      "duyarlilik": 0.964,
+      "f1": 0.972,
+      "tam_eslesme": 0.96,
+      "dogru": 53,
+      "fazla": 1,
+      "eksik": 2,
+      "n": 75
+     }
+    },
+    "yalniz_groq": {
+     "ihtiyac": {
+      "kesinlik": 0.885,
+      "duyarlilik": 0.469,
+      "f1": 0.613,
+      "tam_eslesme": 0.4,
+      "dogru": 46,
+      "fazla": 6,
+      "eksik": 52,
+      "n": 75
+     },
+     "niyet": {
+      "kesinlik": 0.55,
+      "duyarlilik": 0.2,
+      "f1": 0.293,
+      "tam_eslesme": 0.52,
+      "dogru": 11,
+      "fazla": 9,
+      "eksik": 44,
+      "n": 75
+     }
+    }
+   },
+   "soylenis": {
+    "kalip": {
+     "ihtiyac": {
+      "kesinlik": 0.934,
+      "duyarlilik": 0.51,
+      "f1": 0.66,
+      "tam_eslesme": 0.459,
+      "dogru": 99,
+      "fazla": 7,
+      "eksik": 95,
+      "n": 148
+     },
+     "niyet": {
+      "kesinlik": 0.629,
+      "duyarlilik": 0.565,
+      "f1": 0.595,
+      "tam_eslesme": 0.541,
+      "dogru": 61,
+      "fazla": 36,
+      "eksik": 47,
+      "n": 148
+     }
+    },
+    "kalip+groq": {
+     "ihtiyac": {
+      "kesinlik": 0.89,
+      "duyarlilik": 0.665,
+      "f1": 0.761,
+      "tam_eslesme": 0.568,
+      "dogru": 129,
+      "fazla": 16,
+      "eksik": 65,
+      "n": 148
+     },
+     "niyet": {
+      "kesinlik": 0.629,
+      "duyarlilik": 0.565,
+      "f1": 0.595,
+      "tam_eslesme": 0.541,
+      "dogru": 61,
+      "fazla": 36,
+      "eksik": 47,
+      "n": 148
+     }
+    },
+    "yalniz_groq": {
+     "ihtiyac": {
+      "kesinlik": 0.851,
+      "duyarlilik": 0.443,
+      "f1": 0.583,
+      "tam_eslesme": 0.358,
+      "dogru": 86,
+      "fazla": 15,
+      "eksik": 108,
+      "n": 148
+     },
+     "niyet": {
+      "kesinlik": 0.639,
+      "duyarlilik": 0.213,
+      "f1": 0.319,
+      "tam_eslesme": 0.541,
+      "dogru": 23,
+      "fazla": 13,
+      "eksik": 85,
+      "n": 148
+     }
+    }
+   },
+   "kayit_ortusmesi": {
+    "kalip": 0.456,
+    "kalip+groq": 0.506,
+    "iyilesen": 22,
+    "kotulesen": 4,
+    "n": 148
+   },
+   "ornekler": [
+    {
+     "id": "E13a",
+     "soru": "Kafe açmayı planlıyorum, hangi desteklerden faydalanabilirim?",
+     "altin": [
+      "girisim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "finansman",
+      "girisim"
+     ]
+    },
+    {
+     "id": "E13b",
+     "soru": "Yeni bir kafe kurmak istiyorum, alabileceğim hibeler neler?",
+     "altin": [
+      "girisim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "yatirim"
+     ]
+    },
+    {
+     "id": "E15a",
+     "soru": "Turquality programına katıldığımızda işletme desteği yüzdesi ve en yüksek sınırı ne olur?",
+     "altin": [
+      "ihracat",
+      "tanitim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "finansman"
+     ]
+    },
+    {
+     "id": "E20a",
+     "soru": "Bir akıllı sistem projesi başlatmayı planlıyorum, devletden destek alabilir miyim?",
+     "altin": [
+      "dijital",
+      "girisim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "dijital"
+     ]
+    },
+    {
+     "id": "E22a",
+     "soru": "Genç iş kuranlar için uygun bir borç ya da teminat seçeneği mevcut mu?",
+     "altin": [
+      "finansman",
+      "girisim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "finansman"
+     ]
+    },
+    {
+     "id": "E25b",
+     "soru": "Süt işleme birimimize yeni cihaz temin etmek istiyoruz; hangi hibe ve finansman imkanları bulunuyor?",
+     "altin": [
+      "finansman",
+      "yatirim"
+     ],
+     "kalip": [
+      "finansman"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "yatirim"
+     ]
+    },
+    {
+     "id": "E27a",
+     "soru": "Ankara'da tesisimize yeni bir bilgisayar kontrollü kesim makinesi ve sayısal dönüşüm projesi ekleyeceğiz; hangi desteklerden aynı anda yararlanabiliriz?",
+     "altin": [
+      "dijital",
+      "yatirim"
+     ],
+     "kalip": [
+      "yatirim"
+     ],
+     "kalip+groq": [
+      "dijital",
+      "yatirim"
+     ]
+    },
+    {
+     "id": "E27b",
+     "soru": "Ankara'da üretim bandımıza yeni bir bilgisayar kontrollü kesim sistemi ve sayısal dönüşüm çalışması koyacağız; bu süreçte hangi teşvikleri bir arada değerlendirebiliriz?",
+     "altin": [
+      "dijital",
+      "yatirim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "dijital"
+     ]
+    },
+    {
+     "id": "P01a",
+     "soru": "Rekortiv adlı sınav hazırlık uygulamam var; App Store ve Google Play üzerinden abonelikle gelir elde ediyorum fakat henüz resmi bir işletme yapısı yok. 20/B istisnasıyla çalışıyorum. Resmi bir kuruluş oluşturmadan alabileceğim hibe ya da destek mevcut mu?",
+     "altin": [
+      "girisim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "finansman"
+     ]
+    },
+    {
+     "id": "P01b",
+     "soru": "Rekortiv isimli sınav hazırlık mobil uygulamam App Store ve Google Play'de abonelik geliri sağlıyor, ama hâlâ bir işletme kaydı yapmadım ve 20/B istisnasını kullanıyorum. Kurumsal bir yapı kurmadan faydalanabileceğim hibe ya da destek var mı?",
+     "altin": [
+      "girisim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "finansman"
+     ]
+    },
+    {
+     "id": "P04a",
+     "soru": "9 birimlik fındık bahçem var. Bu yıl devletten hangi yardımları alabilirim, toplam tutarı nedir?",
+     "altin": [
+      "tarim_odeme"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "tarim_odeme"
+     ]
+    },
+    {
+     "id": "P04b",
+     "soru": "9 alanlık fındık bahçem bulunuyor. Bu sezon devletten ne tür destekler temin edebilirim, toplam maliyet ne olur?",
+     "altin": [
+      "tarim_odeme"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "tarim_odeme"
+     ]
+    },
+    {
+     "id": "P09a",
+     "soru": "Yağmur ve buzlanma riskine karşı teminat alırsam devlet hangi miktarı karşılar?",
+     "altin": [
+      "sigorta"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "sigorta"
+     ]
+    },
+    {
+     "id": "P11b",
+     "soru": "İki yeni ekip üyesi almayı planlıyoruz; bu süreçte devletin sunduğu teşvikler hakkında bilgi verir misiniz?",
+     "altin": [
+      "istihdam"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "istihdam"
+     ]
+    },
+    {
+     "id": "P15a",
+     "soru": "Yeni bir uzman eğitmen almayı planlarsak hangi ödül teşvikleri mevcut?",
+     "altin": [
+      "istihdam"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "istihdam"
+     ]
+    },
+    {
+     "id": "P17a",
+     "soru": "Yeni dokuma cihazları için teşvik belgesi alırsak hangi destekler sağlanır?",
+     "altin": [
+      "yatirim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "yatirim"
+     ]
+    },
+    {
+     "id": "P18b",
+     "soru": "Otomatik kenar bantlama ve bilgisayar kontrollü kesim cihazı satın alırken hangi teşviklerden faydalanabilirim?",
+     "altin": [
+      "yatirim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "yatirim"
+     ]
+    },
+    {
+     "id": "P21b",
+     "soru": "Dış pazara satış amacıyla uygun şartlı borç temin edebilir miyiz?",
+     "altin": [
+      "finansman",
+      "ihracat"
+     ],
+     "kalip": [
+      "ihracat"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "ihracat"
+     ]
+    },
+    {
+     "id": "P23a",
+     "soru": "Yurtdışı pazarlama ve internet üzerinden satış için bir destek mekanizması mevcut mu?",
+     "altin": [
+      "ihracat",
+      "tanitim"
+     ],
+     "kalip": [
+      "ihracat",
+      "tanitim"
+     ],
+     "kalip+groq": [
+      "dijital",
+      "ihracat",
+      "tanitim"
+     ]
+    },
+    {
+     "id": "P23b",
+     "soru": "Online satış ve dış pazarlama faaliyetlerimiz için yardım alabilir miyiz?",
+     "altin": [
+      "ihracat",
+      "tanitim"
+     ],
+     "kalip": [
+      "ihracat",
+      "tanitim"
+     ],
+     "kalip+groq": [
+      "dijital",
+      "ihracat",
+      "tanitim"
+     ]
+    },
+    {
+     "id": "P26b",
+     "soru": "Kadın giyim online mağazam var. Uluslararası satış için mevcut olan teşvik ve yardımlar nelerdir?",
+     "altin": [
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "ihracat"
+     ]
+    },
+    {
+     "id": "P28b",
+     "soru": "Online platformda doğal kozmetik satışı yapıyorum; kadın girişimciler için destek sağlayan finansal kaynaklar ya da hibeler bulunuyor mu?",
+     "altin": [
+      "finansman",
+      "girisim"
+     ],
+     "kalip": [
+      "girisim"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "girisim"
+     ]
+    },
+    {
+     "id": "P30a",
+     "soru": "Havlu ve bornoz üretiyoruz, kendi sitemizden satıyoruz; AB ülkelerinde bu büyük e‑ticaret platformunda mağaza açmak için bir destek bulunuyor mu?",
+     "altin": [
+      "dijital",
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "dijital"
+     ]
+    },
+    {
+     "id": "P30b",
+     "soru": "Kendi web sitemizden havlu ve bornoz satıyoruz; kıta çapında popüler çevrimiçi pazarda dükkan açmak için bir yardım hizmeti var mı?",
+     "altin": [
+      "dijital",
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "dijital"
+     ]
+    },
+    {
+     "id": "P31b",
+     "soru": "Yurtdışı ambar ve sipariş yönetimi giderleri destekleniyor mu?",
+     "altin": [
+      "ihracat",
+      "lojistik"
+     ],
+     "kalip": [
+      "ihracat"
+     ],
+     "kalip+groq": [
+      "ihracat",
+      "lojistik"
+     ]
+    },
+    {
+     "id": "P32a",
+     "soru": "Gümüş takı satışı yaptığım online mağazam var; popüler el işi platformu ve kendi sitem üzerinden uluslararası satış için destek var mı?",
+     "altin": [
+      "dijital",
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "ihracat"
+     ]
+    },
+    {
+     "id": "P33a",
+     "soru": "Ülke dışına gönderdiğim paketlerin masrafı için destek talep edebilir miyim?",
+     "altin": [
+      "ihracat",
+      "lojistik"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "ihracat"
+     ]
+    },
+    {
+     "id": "P33b",
+     "soru": "Gönderdiğim dışarıdaki gönderilerin giderleri konusunda yardım isteyebilir miyim?",
+     "altin": [
+      "ihracat",
+      "lojistik"
+     ],
+     "kalip": [
+      "lojistik"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "lojistik"
+     ]
+    },
+    {
+     "id": "P34b",
+     "soru": "Kahve işleme aletini temin etmek istiyorum, hangi borç ya da teşvikler var?",
+     "altin": [
+      "finansman",
+      "yatirim"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "finansman",
+      "yatirim"
+     ]
+    },
+    {
+     "id": "P36a",
+     "soru": "Evcil hayvan ürünleri satan e-ticaret firmamız için faaliyet fonu temini sağlayabilir miyiz?",
+     "altin": [
+      "finansman"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "finansman"
+     ]
+    },
+    {
+     "id": "P38b",
+     "soru": "Organik bebek tekstili satışı için Orta Doğu pazarına girmek istiyorum; hangi desteklerden faydalanabilirim?",
+     "altin": [
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "ihracat"
+     ]
+    },
+    {
+     "id": "P39a",
+     "soru": "İşletmemizin adını dış ülkelerde kaydettirmek için bir destek var mı?",
+     "altin": [
+      "ihracat",
+      "tescil"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "girisim"
+     ]
+    },
+    {
+     "id": "P39b",
+     "soru": "Logomuzun yabancı bir ülkede resmi kaydını yaptırmamıza yardımcı olur musunuz?",
+     "altin": [
+      "ihracat",
+      "tescil"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "tescil"
+     ]
+    },
+    {
+     "id": "P40b",
+     "soru": "Dış pazarlarda spor giyim ürünlerimize yönelik online platformlarda ilan desteği var mı?",
+     "altin": [
+      "ihracat",
+      "tanitim"
+     ],
+     "kalip": [
+      "ihracat"
+     ],
+     "kalip+groq": [
+      "ihracat",
+      "tanitim"
+     ]
+    },
+    {
+     "id": "P42b",
+     "soru": "El yapımı seramik satıyorum, tek kişilik şahıs firmam var; yeni girişimciye yönelik destek programları arasında hibe ya da borç seçenekleri bulunuyor mu?",
+     "altin": [
+      "finansman",
+      "girisim"
+     ],
+     "kalip": [
+      "girisim"
+     ],
+     "kalip+groq": [
+      "finansman",
+      "girisim"
+     ]
+    },
+    {
+     "id": "P45a",
+     "soru": "Eximbank'tan dijital dış ticaret için bir finansman sağlayabilir miyiz?",
+     "altin": [
+      "finansman",
+      "ihracat"
+     ],
+     "kalip": [
+      "dijital",
+      "finansman"
+     ],
+     "kalip+groq": [
+      "dijital",
+      "finansman",
+      "ihracat"
+     ]
+    },
+    {
+     "id": "P45b",
+     "soru": "Eximbank'tan e-ticaret dışı satışlarımız için bir destek almayı mümkün kılıyor mu?",
+     "altin": [
+      "finansman",
+      "ihracat"
+     ],
+     "kalip": [],
+     "kalip+groq": [
+      "ihracat"
+     ]
+    }
+   ]
+  }
+ },
+ "harcama_usd": 0.099412,
+ "cagri_sayisi": 568
+}

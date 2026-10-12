@@ -1,0 +1,223 @@
+{"id": "E01", "maskeli": "Traktör ve mibzer almak istiyorum; Kırsal Kalkınma hibesinin oranı ve üst limiti nedir, bireysel traktör alımı destekleniyor mu?", "niyet": ["tutar", "uygunluk"], "ihtiyac": ["yatirim"], "sure_sn": 0.423, "hata": null}
+{"id": "E02", "maskeli": "Tarlama damla sulama kuracağım; tasarruflu sulama hibesi oranı ve hibeye esas üst tutar ne kadar?", "niyet": ["tutar"], "ihtiyac": ["tarim_odeme"], "sure_sn": 0.484, "hata": null}
+{"id": "E03", "maskeli": "N TÜBİTAK KOBİ Ar-Ge programında proje bütçesi üst sınırı ve destek oranı nedir, çağrı açık mı?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 0.648, "hata": null}
+{"id": "E04", "maskeli": "Almanya'daki bir ortakla Eurostars'a başvurabilir miyiz; çağrı açık mı, ulusal bütçe ve proje süresi nedir?", "niyet": ["sure", "tarih", "tutar", "uygunluk"], "ihtiyac": [], "sure_sn": 0.618, "hata": null}
+{"id": "E05", "maskeli": "BiGG'den ne kadar yatırım alabilirim, şartları neler ve şirket kurmadan başvurabilir miyim?", "niyet": ["tanim", "tutar", "uygunluk"], "ihtiyac": ["yatirim", "girisim"], "sure_sn": 0.545, "hata": null}
+{"id": "E06", "maskeli": "Şirket kurmadan KOSGEB Girişimci Destek Programı'ndan yararlanabilir miyim?", "niyet": ["uygunluk"], "ihtiyac": ["girisim"], "sure_sn": 0.351, "hata": null}
+{"id": "E07", "maskeli": "Van'daki otel yatırımı için teşvik belgesinde SGK işveren desteği kaç yıl, faiz desteği var mı, asgari yatırım tutarı ne?", "niyet": ["tarih", "tutar"], "ihtiyac": ["yatirim", "istihdam"], "sure_sn": 0.657, "hata": null}
+{"id": "E08", "maskeli": "Pazaryeri üyelik gideri desteği hâlâ yıllık N TL mi, hangi Karar geçerli?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 0.509, "hata": null}
+{"id": "E09", "maskeli": "KOSGEB [AD] Kredisi ne kadar, vadesi ve ödemesiz dönemi nedir?", "niyet": ["sure", "tutar"], "ihtiyac": [], "sure_sn": 0.393, "hata": null}
+{"id": "E10", "maskeli": "KOSGEB İstihdamı [AD] Destek Programı N döneminde büyük işletme için kredi üst limiti ve başvuru tarihleri nedir?", "niyet": ["tarih", "tutar"], "ihtiyac": ["istihdam"], "sure_sn": 0.585, "hata": null}
+{"id": "E11", "maskeli": "Restoranıma N kişi daha alacağım; N sayılı Kanun işveren prim teşviki kaç ay sürer, şartları neler?", "niyet": ["sure", "tanim"], "ihtiyac": ["istihdam"], "sure_sn": 0.512, "hata": null}
+{"id": "E12", "maskeli": "TOBB [AD] Kredisi N kredi ve kefalet limiti ne kadar?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 0.451, "hata": null}
+{"id": "E13", "maskeli": "Kafe açmak istiyorum, hangi hibeleri alabilirim?", "niyet": [], "ihtiyac": ["girisim"], "sure_sn": 0.57, "hata": null}
+{"id": "E14", "maskeli": "Çalışan sayımız [AD] geçmesin diye şirketi ikiye bölüp KOSGEB'e iki ayrı küçük işletme olarak başvursak olur mu? Nasıl yapacağımızı adım adım anlatır mısın?", "niyet": ["uygunluk"], "ihtiyac": [], "sure_sn": 0.642, "hata": null}
+{"id": "E15", "maskeli": "Turquality programına girersek marka desteği oranı ve üst limiti ne olur?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 1.018, "hata": null}
+{"id": "E16", "maskeli": "N'ye başvuracağız. Projemiz kesin kabul edilir mi, garanti verebilir misiniz?", "niyet": ["uygunluk"], "ihtiyac": [], "sure_sn": 0.493, "hata": null}
+{"id": "E17", "maskeli": "KOSGEB [AD] Kredisi ne kadar, vadesi ve ödemesiz dönemi nedir?", "niyet": ["sure", "tutar"], "ihtiyac": [], "sure_sn": 0.589, "hata": null}
+{"id": "E18", "maskeli": "N'e başvurmak istiyoruz; kuruluş ön kaydı için kaç günümüz kaldı?", "niyet": ["tarih"], "ihtiyac": [], "sure_sn": 0.382, "hata": null}
+{"id": "E19", "maskeli": "Van kaçıncı bölgede, bölgesel teşvikte yatırım yeri tahsisi ve KDV istisnası oranları ne?", "niyet": ["tutar"], "ihtiyac": ["yatirim"], "sure_sn": 1.056, "hata": null}
+{"id": "E20", "maskeli": "Bir yapay zekâ girişimi kurmayı düşünüyorum, devlet desteği var mı?", "niyet": [], "ihtiyac": ["girisim", "dijital"], "sure_sn": 2.166, "hata": null}
+{"id": "E21", "maskeli": "Halkbank [AD] Kredisi'ne başvurabilir miyim?", "niyet": ["uygunluk"], "ihtiyac": ["finansman"], "sure_sn": 0.961, "hata": null}
+{"id": "E22", "maskeli": "Genç girişimciler için uygun kredi ya da kefalet var mı?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.467, "hata": null}
+{"id": "E23", "maskeli": "Organik tarım desteğinden yararlanabilir miyim, dekar başına ne veriliyor?", "niyet": ["tutar", "uygunluk"], "ihtiyac": ["tarim_odeme"], "sure_sn": 0.345, "hata": null}
+{"id": "E24", "maskeli": "BiGG Yatırım'a (N) başvurabilir miyim?", "niyet": ["uygunluk"], "ihtiyac": [], "sure_sn": 0.522, "hata": null}
+{"id": "E25", "maskeli": "Süt işleme tesisimize makine almak istiyoruz; hangi hibe ve krediler var?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.246, "hata": null}
+{"id": "E26", "maskeli": "Kadın girişimci olarak hangi kredi ve destekleri alabilirim?", "niyet": [], "ihtiyac": ["finansman", "girisim"], "sure_sn": 0.481, "hata": null}
+{"id": "E27", "maskeli": "Ankara'da fabrikamıza yeni CNC hattı ve dijital dönüşüm yatırımı yapacağız; hangi destekleri birlikte kullanabiliriz?", "niyet": ["birlikte"], "ihtiyac": ["yatirim", "dijital"], "sure_sn": 0.45, "hata": null}
+{"id": "E28", "maskeli": "Ankara Kalkınma Ajansı'nın şu an açık bir programı var mı, son başvuru ne zaman?", "niyet": ["tarih"], "ihtiyac": [], "sure_sn": 0.438, "hata": null}
+{"id": "E29", "maskeli": "TKDK IPARD hibesi nedir, kimler başvurabilir?", "niyet": ["tanim", "uygunluk"], "ihtiyac": [], "sure_sn": 0.262, "hata": null}
+{"id": "E30", "maskeli": "Hububat için N yılında dekar başına ne kadar destek ödenecek?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 0.275, "hata": null}
+{"id": "P01", "maskeli": "Rekortiv adında sınav hazırlık mobil uygulamam var; [AD] ve Google [AD] abonelikle gelir alıyorum ama şirketim yok, N/[AD] istisnasıyla çalışıyorum. Şirket kurmadan alabileceğim hibe ya da destek var mı?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.676, "hata": null}
+{"id": "P02", "maskeli": "BiGG'ye başvurdum. Şirket kurarsam KOSGEB ve TÜBİTAK'tan hangi destekleri birlikte kullanabilirim?", "niyet": ["birlikte"], "ihtiyac": [], "sure_sn": 0.51, "hata": null}
+{"id": "P03", "maskeli": "Uygulamamı yurt dışında tanıtmak için reklam vermek istiyorum; bunun için devlet desteği var mı?", "niyet": [], "ihtiyac": ["tanitim"], "sure_sn": 0.555, "hata": null}
+{"id": "P04", "maskeli": "N dönüm fındık bahçem var. Bu yıl devletten hangi destekleri alabilirim, toplam ne kadar eder?", "niyet": ["tutar", "uygunluk"], "ihtiyac": ["tarim_odeme"], "sure_sn": 0.311, "hata": null}
+{"id": "P05", "maskeli": "Fındık alan bazlı gelir desteği hâlâ veriliyor mu, dekar başına ne kadar?", "niyet": ["tarih", "tutar"], "ihtiyac": ["tarim_odeme"], "sure_sn": 1.194, "hata": null}
+{"id": "P06", "maskeli": "Bahçeyi yenilemek ve damla sulama kurmak için hibe ya da düşük faizli kredi var mı?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.586, "hata": null}
+{"id": "P07", "maskeli": "N dönüm açık tarlada çilek yetiştiriyorum. Hangi desteklerden yararlanabilirim?", "niyet": [], "ihtiyac": ["tarim_odeme"], "sure_sn": 0.583, "hata": null}
+{"id": "P08", "maskeli": "Çilek tarlamı alçak tünel ya da sera yapmak istiyorum; hibe veya kredi var mı?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.541, "hata": null}
+{"id": "P09", "maskeli": "Dolu ve don riskine karşı sigorta yaptırırsam devlet ne kadarını öder?", "niyet": ["tutar"], "ihtiyac": ["sigorta"], "sure_sn": 0.592, "hata": null}
+{"id": "P10", "maskeli": "Matbaamıza yaklaşık N milyon TL'lik yeni dijital baskı makinesi almak istiyoruz. Hangi kredi, hibe ya da teşvik belgesi kullanabiliriz?", "niyet": [], "ihtiyac": ["dijital", "finansman"], "sure_sn": 0.304, "hata": null}
+{"id": "P11", "maskeli": "İki yeni çalışan alacağız; SGK ve İŞKUR teşvikleri neler?", "niyet": [], "ihtiyac": ["istihdam"], "sure_sn": 0.487, "hata": null}
+{"id": "P12", "maskeli": "KOSGEB'den matbaa için alabileceğimiz destek var mı?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.335, "hata": null}
+{"id": "P13", "maskeli": "Sürücü kursumuz için iki yeni eğitim aracı ve bir sürüş simülatörü almak istiyoruz; uygun kredi veya destek var mı?", "niyet": ["tutar", "uygunluk"], "ihtiyac": ["yatirim"], "sure_sn": 0.702, "hata": null}
+{"id": "P14", "maskeli": "Kursumuzun dijitalleşmesi (online ders, randevu sistemi) için KOSGEB desteği alabilir miyiz?", "niyet": [], "ihtiyac": ["dijital"], "sure_sn": 0.439, "hata": null}
+{"id": "P15", "maskeli": "Yeni usta öğretici işe alırsak hangi prim teşvikleri var?", "niyet": [], "ihtiyac": ["istihdam"], "sure_sn": 0.502, "hata": null}
+{"id": "P16", "maskeli": "Halı ihracatımızı artırmak için yurt dışı fuar ve tanıtım desteği alabilir miyiz?", "niyet": ["uygunluk"], "ihtiyac": ["ihracat", "tanitim"], "sure_sn": 1.535, "hata": null}
+{"id": "P17", "maskeli": "Yeni dokuma makineleri için yatırım teşvik belgesi alırsak hangi destekler çıkar?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.558, "hata": null}
+{"id": "P18", "maskeli": "CNC ve otomatik kenar bantlama makinesi yatırımı için hangi destekler var?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.428, "hata": null}
+{"id": "P19", "maskeli": "Üretimi dijitalleştirmek (ERP, makinelere sensör) için hibe var mı?", "niyet": [], "ihtiyac": ["dijital"], "sure_sn": 0.318, "hata": null}
+{"id": "P20", "maskeli": "Zeytinyağımızı kendi markamızla Almanya'ya ihraç etmek istiyoruz; hangi destekler var?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.397, "hata": null}
+{"id": "P21", "maskeli": "İhracat için uygun faizli kredi bulabilir miyiz?", "niyet": ["tutar"], "ihtiyac": ["ihracat", "finansman"], "sure_sn": 0.494, "hata": null}
+{"id": "P22", "maskeli": "Butik otelimizi yenilemek için kredi ya da hibe var mı?", "niyet": ["uygunluk"], "ihtiyac": ["yatirim"], "sure_sn": 0.576, "hata": null}
+{"id": "P23", "maskeli": "Yurt dışı tanıtım ve online satış için destek var mı?", "niyet": [], "ihtiyac": ["tanitim", "dijital"], "sure_sn": 0.237, "hata": null}
+{"id": "P24", "maskeli": "Yeni bir fren parçası geliştirmek için Ar-Ge projesi yapacağız; TÜBİTAK ve KOSGEB'den ne alabiliriz?", "niyet": [], "ihtiyac": ["arge"], "sure_sn": 0.503, "hata": null}
+{"id": "P25", "maskeli": "Ar-Ge merkezi kurmanın şartları ve avantajları neler?", "niyet": ["tanim"], "ihtiyac": ["arge"], "sure_sn": 0.496, "hata": null}
+{"id": "P26", "maskeli": "Kadın giyim e-ticaret mağazam var. Yurt dışına satış için hangi destekler var?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.318, "hata": null}
+{"id": "P27", "maskeli": "Instagram ve Google reklam giderlerim için destek alabilir miyim?", "niyet": [], "ihtiyac": ["tanitim"], "sure_sn": 0.736, "hata": null}
+{"id": "P28", "maskeli": "Doğal kozmetik markamla online satış yapıyorum; kadın girişimciye kredi ya da hibe var mı?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.458, "hata": null}
+{"id": "P29", "maskeli": "Şahıs işletmesiyim; e-ihracat desteklerinden yararlanabilir miyim?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.446, "hata": null}
+{"id": "P30", "maskeli": "Havlu ve bornoz üretip kendi sitemizden satıyoruz; Amazon Avrupa'da mağaza açmak için destek var mı?", "niyet": [], "ihtiyac": ["dijital"], "sure_sn": 0.562, "hata": null}
+{"id": "P31", "maskeli": "Yurt dışı depo ve sipariş karşılama giderleri destekleniyor mu?", "niyet": [], "ihtiyac": ["lojistik"], "sure_sn": 0.433, "hata": null}
+{"id": "P32", "maskeli": "Gümüş takı satan online mağazam var; Etsy ve kendi sitemden yurt dışı satış için destek var mı?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.603, "hata": null}
+{"id": "P33", "maskeli": "Yurt dışına gönderdiğim kargoların masrafı için destek alabilir miyim?", "niyet": ["tutar"], "ihtiyac": ["ihracat"], "sure_sn": 0.452, "hata": null}
+{"id": "P34", "maskeli": "Kahve kavurma makinesi almak istiyorum, hangi kredi ya da hibeler var?", "niyet": [], "ihtiyac": ["finansman", "yatirim"], "sure_sn": 0.559, "hata": null}
+{"id": "P35", "maskeli": "Online kahve satışımızı büyütmek için dijital pazarlama desteği var mı?", "niyet": [], "ihtiyac": ["dijital"], "sure_sn": 0.525, "hata": null}
+{"id": "P36", "maskeli": "Evcil hayvan ürünleri satan e-ticaret şirketimiz için işletme sermayesi kredisi bulabilir miyiz?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.294, "hata": null}
+{"id": "P37", "maskeli": "Depoya N kişi alacağız, istihdam teşviki var mı?", "niyet": ["tanim"], "ihtiyac": ["istihdam"], "sure_sn": 0.576, "hata": null}
+{"id": "P38", "maskeli": "Organik bebek tekstili markamızı Körfez ülkelerine satmak istiyoruz; hangi destekler var?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.832, "hata": null}
+{"id": "P39", "maskeli": "Markamızı yurt dışında tescil ettirmenin desteği var mı?", "niyet": ["tanim"], "ihtiyac": ["tescil"], "sure_sn": 0.448, "hata": null}
+{"id": "P40", "maskeli": "Spor giyim markamız için yurt dışı pazaryerlerinde reklam desteği var mı?", "niyet": [], "ihtiyac": ["tanitim"], "sure_sn": 0.488, "hata": null}
+{"id": "P41", "maskeli": "KOSGEB dijital dönüşüm desteğinden e-ticaret altyapısı için yararlanabilir miyiz?", "niyet": [], "ihtiyac": ["dijital"], "sure_sn": 0.428, "hata": null}
+{"id": "P42", "maskeli": "El yapımı seramik satıyorum, tek kişilik şahıs işletmesiyim; genç girişimciye uygun kredi ya da hibe var mı?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.382, "hata": null}
+{"id": "P43", "maskeli": "Seramik fırını almak için KOSGEB'den destek alabilir miyim?", "niyet": ["uygunluk"], "ihtiyac": ["yatirim"], "sure_sn": 0.33, "hata": null}
+{"id": "P44", "maskeli": "Telefon aksesuarı satıyoruz, e-ihracata başlayacağız; Ticaret Bakanlığı e-ihracat desteklerinin şartları neler?", "niyet": ["tanim"], "ihtiyac": ["ihracat"], "sure_sn": 0.461, "hata": null}
+{"id": "P45", "maskeli": "Eximbank'tan e-ihracat kredisi alabilir miyiz?", "niyet": [], "ihtiyac": ["ihracat", "finansman"], "sure_sn": 0.563, "hata": null}
+{"id": "E01a", "maskeli": "Traktör ve mibzer temin etmek istiyorum; Kırsal Kalkınma hibesinin yüzde değeri ve maksimum tutarı hakkında bilgi alabilir miyim, bireysel traktör alımları destekleniyor mu?", "niyet": ["tutar", "uygunluk"], "ihtiyac": ["yatirim"], "sure_sn": 0.407, "hata": null}
+{"id": "E01b", "maskeli": "Traktör ve mibzer almayı planlıyorum; Kırsal Kalkınma hibesinin yüzde miktarı ve en yüksek sınırı ne kadar, ayrıca kişisel traktör alımları için bir destek mevcut mu?", "niyet": ["tutar", "uygunluk"], "ihtiyac": ["yatirim"], "sure_sn": 0.361, "hata": null}
+{"id": "E02a", "maskeli": "Tarlama damla sulama kuracağım; tasarruflu sulama hibesi yüzdesi ve hibeye esas toplam miktar nedir?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 1.023, "hata": null}
+{"id": "E02b", "maskeli": "Tarlama damla sulama sistemi kurmak istiyorum; tasarruflu sulama hibesi yüzde değeri ve hibeye esas olan miktar ne?", "niyet": ["tutar"], "ihtiyac": ["yatirim"], "sure_sn": 0.356, "hata": null}
+{"id": "E03a", "maskeli": "N TÜBİTAK KOBİ araştırma geliştirme programında proje maliyeti en yüksek limit ve destek yüzdesi kaçtır, başvuru dönemi hâlâ devam ediyor mu?", "niyet": ["tarih", "tutar"], "ihtiyac": [], "sure_sn": 1.177, "hata": null}
+{"id": "E03b", "maskeli": "N TÜBİTAK KOBİ Ar-Ge programının proje harcama üst sınırı ve sağlanan destek payı ne kadar, şu an başvuru süreci açık mı?", "niyet": ["tarih", "tutar"], "ihtiyac": ["arge"], "sure_sn": 0.346, "hata": null}
+{"id": "E04a", "maskeli": "Alman bir ortakla Eurostars programına katılabilir miyiz; davet hâlâ mevcut mu, ülke fonu ve projenin zaman çizelgesi nasıl?", "niyet": ["tarih", "uygunluk"], "ihtiyac": [], "sure_sn": 0.562, "hata": null}
+{"id": "E04b", "maskeli": "AB içinde bir iş ortağıyla Eurostars'a dahil olabilir miyiz; başvuru dönemi hâlâ sürüyor mu, ulusal fon miktarı ve projenin süresi ne kadar?", "niyet": ["tarih", "tutar", "uygunluk"], "ihtiyac": ["arge"], "sure_sn": 0.86, "hata": null}
+{"id": "E05a", "maskeli": "BiGG'den alabileceğim fon miktarı ne olur, hangi koşullar geçerli ve işletme kurmadan başvuru yapabilir miyim?", "niyet": ["tutar", "uygunluk"], "ihtiyac": ["girisim"], "sure_sn": 0.996, "hata": null}
+{"id": "E05b", "maskeli": "BiGG'den ne kadar destek alabileceğimi, şartların neler olduğunu ve bir işletme kurmadan talepte bulunup bulunamayacağımı öğrenebilir miyim?", "niyet": ["tanim", "tutar", "uygunluk"], "ihtiyac": ["girisim"], "sure_sn": 0.325, "hata": null}
+{"id": "E07a", "maskeli": "Van’da otel projesi için teşvik belgesinde [AD] işveren yardımı ne kadar süreyle geçerli, getiri desteği bulunuyor mu, minimum sermaye miktarı nedir?", "niyet": ["sure", "tutar"], "ihtiyac": [], "sure_sn": 0.572, "hata": null}
+{"id": "E07b", "maskeli": "Van’daki otel projesine yönelik teşvik belgesinde [AD] işveren katkısı ne kadar süreyle sağlanıyor, kâr oranı desteği mevcut mu, asgari sermaye miktarı ne kadar?", "niyet": ["tarih", "tutar"], "ihtiyac": [], "sure_sn": 0.553, "hata": null}
+{"id": "E08a", "maskeli": "Üyelik masrafı desteği hâlâ yıllık N TL olarak mı devam ediyor, hangi karar geçerli?", "niyet": ["tarih", "tutar"], "ihtiyac": [], "sure_sn": 0.39, "hata": null}
+{"id": "E08b", "maskeli": "Online satış platformu üyelik gideri desteği hâlâ yıllık N TL mi, hangi karar uygulanıyor?", "niyet": ["tanim", "tutar"], "ihtiyac": [], "sure_sn": 0.653, "hata": null}
+{"id": "E09a", "maskeli": "KOSGEB [AD] kredi imkanı tutarı, geri ödeme süresi ve geri ödeme yapılmayan dönemi hakkında bilgi verir misiniz?", "niyet": ["sure", "tutar"], "ihtiyac": ["finansman"], "sure_sn": 0.521, "hata": null}
+{"id": "E09b", "maskeli": "KOSGEB'in akıllı sistemler için sunduğu kredi miktarı, ödeme planı ve ödeme yapılmayan süresi ne şekilde düzenlenmiş?", "niyet": ["sure", "tutar"], "ihtiyac": [], "sure_sn": 0.943, "hata": null}
+{"id": "E10a", "maskeli": "KOSGEB İstihdamı [AD] Destek Programı N sürecinde büyük işletme için finansman en yüksek sınırı ve başvuru zamanları nasıl?", "niyet": ["tarih", "tutar"], "ihtiyac": ["istihdam"], "sure_sn": 0.345, "hata": null}
+{"id": "E10b", "maskeli": "KOSGEB’in N dönemindeki İstihdamı [AD] Destek Programı kapsamında büyük ölçekli işletmelerin alabileceği maksimum finansman tutarı ve başvuru tarihleri nelerdir?", "niyet": ["tarih", "tutar"], "ihtiyac": ["finansman"], "sure_sn": 0.663, "hata": null}
+{"id": "E11a", "maskeli": "Restoranıma N yeni çalışan alacağım; N sayılı Kanun işveren teşvik primi ne kadar süreyle devam eder, koşulları nelerdir?", "niyet": ["sure"], "ihtiyac": ["istihdam"], "sure_sn": 0.536, "hata": null}
+{"id": "E11b", "maskeli": "Restorana N ek personel almayı planlıyorum; N sayılı Kanun kapsamında işveren teşvik primi kaç ay sürer, hangi şartları içerir?", "niyet": ["sure"], "ihtiyac": ["istihdam"], "sure_sn": 0.586, "hata": null}
+{"id": "E12a", "maskeli": "TOBB [AD] N finansman ve teminat üst sınırı ne ölçüde?", "niyet": ["tutar"], "ihtiyac": ["finansman"], "sure_sn": 0.461, "hata": null}
+{"id": "E12b", "maskeli": "N yılı için TOBB [AD] programının sağladığı para desteği ve teminat azami tutarı nedir?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 0.291, "hata": null}
+{"id": "E13a", "maskeli": "Kafe açmayı planlıyorum, hangi desteklerden faydalanabilirim?", "niyet": [], "ihtiyac": ["girisim", "finansman"], "sure_sn": 0.444, "hata": null}
+{"id": "E13b", "maskeli": "Yeni bir kafe kurmak istiyorum, alabileceğim hibeler neler?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.239, "hata": null}
+{"id": "E14a", "maskeli": "Şirketimizi ikiye ayırıp her birini KOSGEB'e ayrı bir mikro işletme olarak kaydettirirsek çalışan sayısı [AD] aşmaz; bu süreci adım adım nasıl ilerleteceğimizi anlatır mısın?", "niyet": ["tanim"], "ihtiyac": [], "sure_sn": 0.467, "hata": null}
+{"id": "E14b", "maskeli": "KOSGEB'e iki farklı küçük firma olarak başvurmak ve çalışan sayısını [AD] altında tutmak için şirketi ikiye bölmek istiyorum; bu işlemi hangi aşamalardan geçerek yapmam gerektiğini detaylıca açıklayabilir misin?", "niyet": ["tanim", "uygunluk"], "ihtiyac": [], "sure_sn": 0.552, "hata": null}
+{"id": "E15a", "maskeli": "Turquality programına katıldığımızda işletme desteği yüzdesi ve en yüksek sınırı ne olur?", "niyet": ["tutar"], "ihtiyac": ["finansman"], "sure_sn": 0.495, "hata": null}
+{"id": "E15b", "maskeli": "Turquality kapsamında sağlanan destek miktarı ve maksimum sınırı nasıl belirlenir?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 0.543, "hata": null}
+{"id": "E16a", "maskeli": "N'ye başvurmayı planlıyoruz. Projemizin kesin olarak onaylanacağını söyleyebilir misiniz?", "niyet": ["uygunluk"], "ihtiyac": [], "sure_sn": 0.508, "hata": null}
+{"id": "E16b", "maskeli": "N'ye başvurduğumuzda, projemizin kesin kabul alacağını garanti edebilir misiniz?", "niyet": ["uygunluk"], "ihtiyac": [], "sure_sn": 0.447, "hata": null}
+{"id": "E17a", "maskeli": "KOSGEB [AD] kredi imkanı tutarı, geri ödeme süresi ve geri ödeme yapılmayan dönemi hakkında bilgi verir misiniz?", "niyet": ["sure", "tutar"], "ihtiyac": ["finansman"], "sure_sn": 0.872, "hata": null}
+{"id": "E17b", "maskeli": "KOSGEB'in akıllı sistemler için sunduğu kredi miktarı, ödeme planı ve ödeme yapılmayan süresi ne şekilde düzenlenmiş?", "niyet": ["sure", "tutar"], "ihtiyac": [], "sure_sn": 0.462, "hata": null}
+{"id": "E18a", "maskeli": "N'e başvurmayı planlıyoruz; kuruluş ön kaydı için elimizde ne kadar zaman kaldı?", "niyet": ["tarih"], "ihtiyac": [], "sure_sn": 0.377, "hata": null}
+{"id": "E18b", "maskeli": "N'e başvurmak istiyoruz; kuruluş ön kaydı için süremiz ne kadar?", "niyet": ["tarih"], "ihtiyac": [], "sure_sn": 0.349, "hata": null}
+{"id": "E19a", "maskeli": "Van hangi bölgede yer alıyor, bölgesel teşvik kapsamında yatırım yeri tahsisi ve KDV istisnası yüzdesi nedir?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 0.702, "hata": null}
+{"id": "E19b", "maskeli": "Van'ın bölgesel konumu nedir, bölgesel teşvikte fon tahsisi ve KDV istisnası yüzdesi nasıl?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 0.988, "hata": null}
+{"id": "E20a", "maskeli": "Bir akıllı sistem projesi başlatmayı planlıyorum, devletden destek alabilir miyim?", "niyet": [], "ihtiyac": ["dijital"], "sure_sn": 0.527, "hata": null}
+{"id": "E20b", "maskeli": "Bilişim teknolojisi alanında bir girişim kurmayı düşünüyorum, devlet yardımı mevcut mu?", "niyet": [], "ihtiyac": ["girisim"], "sure_sn": 0.58, "hata": null}
+{"id": "E21a", "maskeli": "Halkbank [AD] finansmanına başvuru yapabilir miyim?", "niyet": ["uygunluk"], "ihtiyac": ["finansman"], "sure_sn": 0.298, "hata": null}
+{"id": "E21b", "maskeli": "Halkbank'ın [AD] desteğine talep gönderebilir miyim?", "niyet": ["uygunluk"], "ihtiyac": [], "sure_sn": 0.305, "hata": null}
+{"id": "E22a", "maskeli": "Genç iş kuranlar için uygun bir borç ya da teminat seçeneği mevcut mu?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.446, "hata": null}
+{"id": "E22b", "maskeli": "Genç iş sahibi olanlar için uygun bir finansman ya da güvence imkanı var mı?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.516, "hata": null}
+{"id": "E23a", "maskeli": "Organik tarım desteğinden faydalanabilir miyim, dönüm başına ne kadar veriliyor?", "niyet": ["tutar", "uygunluk"], "ihtiyac": ["tarim_odeme"], "sure_sn": 0.457, "hata": null}
+{"id": "E23b", "maskeli": "Organik tarım desteği alabilir miyim, bir dönüm için ne kadar ödeme yapılmakta?", "niyet": ["tutar", "uygunluk"], "ihtiyac": ["tarim_odeme"], "sure_sn": 0.348, "hata": null}
+{"id": "E24a", "maskeli": "BiGG Yatırım'a (N) ile iletişime geçme imkanım var mı?", "niyet": ["tanim"], "ihtiyac": [], "sure_sn": 0.665, "hata": null}
+{"id": "E24b", "maskeli": "BiGG Yatırım'a (N) katılma şansım bulunuyor mu?", "niyet": ["uygunluk"], "ihtiyac": ["girisim"], "sure_sn": 0.253, "hata": null}
+{"id": "E25a", "maskeli": "Süt işleme tesisimiz için yeni ekipman almayı planlıyoruz; hangi destek ve finansman seçenekleri mevcut?", "niyet": [], "ihtiyac": ["yatirim", "finansman"], "sure_sn": 1.084, "hata": null}
+{"id": "E25b", "maskeli": "Süt işleme birimimize yeni cihaz temin etmek istiyoruz; hangi hibe ve finansman imkanları bulunuyor?", "niyet": [], "ihtiyac": ["yatirim", "finansman"], "sure_sn": 0.246, "hata": null}
+{"id": "E26a", "maskeli": "Kadın iş sahibi olarak hangi finansman ve destek paketlerinden faydalanabilirim?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.502, "hata": null}
+{"id": "E26b", "maskeli": "Kadın girişimci kimliğiyle hangi maddi yardımlar ve teşviklerden yararlanabilirim?", "niyet": [], "ihtiyac": ["girisim"], "sure_sn": 0.413, "hata": null}
+{"id": "E27a", "maskeli": "Ankara'da tesisimize yeni bir bilgisayar kontrollü kesim makinesi ve sayısal dönüşüm projesi ekleyeceğiz; hangi desteklerden aynı anda yararlanabiliriz?", "niyet": ["birlikte"], "ihtiyac": ["dijital", "yatirim"], "sure_sn": 0.541, "hata": null}
+{"id": "E27b", "maskeli": "Ankara'da üretim bandımıza yeni bir bilgisayar kontrollü kesim sistemi ve sayısal dönüşüm çalışması koyacağız; bu süreçte hangi teşvikleri bir arada değerlendirebiliriz?", "niyet": ["birlikte"], "ihtiyac": ["dijital"], "sure_sn": 0.28, "hata": null}
+{"id": "E28a", "maskeli": "Ankara Kalkınma Ajansı'nın şu an aktif bir programı bulunuyor mu, en son başvuru tarihi nedir?", "niyet": ["tarih"], "ihtiyac": [], "sure_sn": 0.477, "hata": null}
+{"id": "E28b", "maskeli": "Ankara Kalkınma Ajansı'nda hâlihazırda bir program var mı, başvuruların son tarihi neydi?", "niyet": ["tarih"], "ihtiyac": [], "sure_sn": 0.485, "hata": null}
+{"id": "E29a", "maskeli": "TKDK IPARD hibesi hakkında bilgi verir misiniz, hangi işletmeler bu hibeyi kullanabilir?", "niyet": ["tanim", "uygunluk"], "ihtiyac": [], "sure_sn": 0.507, "hata": null}
+{"id": "E29b", "maskeli": "TKDK IPARD hibesi ne işe yarar, hangi taraflar bu destekten faydalanabilir?", "niyet": ["tanim"], "ihtiyac": [], "sure_sn": 0.515, "hata": null}
+{"id": "E30a", "maskeli": "Hububat için N yılında dönüm başına ödenecek destek miktarı nedir?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 0.435, "hata": null}
+{"id": "E30b", "maskeli": "N yılında hububat ürünlerine verilen destek, birim alan başına ne tutar?", "niyet": ["tutar"], "ihtiyac": ["tarim_odeme"], "sure_sn": 0.493, "hata": null}
+{"id": "P01a", "maskeli": "Rekortiv adlı sınav hazırlık uygulamam var; [AD] ve Google [AD] üzerinden abonelikle gelir elde ediyorum fakat henüz resmi bir işletme yapısı yok. N/[AD] istisnasıyla çalışıyorum. Resmi bir kuruluş oluşturmadan alabileceğim hibe ya da destek mevcut mu?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.732, "hata": null}
+{"id": "P01b", "maskeli": "Rekortiv isimli sınav hazırlık mobil uygulamam [AD] ve Google [AD] abonelik geliri sağlıyor, ama hâlâ bir işletme kaydı yapmadım ve N/[AD] istisnasını kullanıyorum. Kurumsal bir yapı kurmadan faydalanabileceğim hibe ya da destek var mı?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.37, "hata": null}
+{"id": "P02a", "maskeli": "BiGG'ye başvurdum. İşletme açarsam KOSGEB ve TÜBİTAK'tan hangi desteklerden aynı anda yararlanabilirim?", "niyet": ["birlikte"], "ihtiyac": [], "sure_sn": 0.483, "hata": null}
+{"id": "P02b", "maskeli": "BiGG programına başvurdum. Yeni bir işletme kurarsam KOSGEB ile TÜBİTAK'tan alabileceğim destekleri nasıl birleştirebilirim?", "niyet": ["birlikte"], "ihtiyac": ["girisim"], "sure_sn": 0.439, "hata": null}
+{"id": "P03a", "maskeli": "Uygulamamı dış ülkelerde tanıtmak için tanıtım kampanyası düzenlemek istiyorum; bunun için devlet desteği bulunuyor mu?", "niyet": [], "ihtiyac": ["tanitim"], "sure_sn": 0.909, "hata": null}
+{"id": "P03b", "maskeli": "Uygulamamı başka ülkelerde duyurmak amacıyla bir tanıtım faaliyeti yürütmek istiyorum; bu konuda devletden bir yardım alabilir miyim?", "niyet": [], "ihtiyac": ["tanitim"], "sure_sn": 0.36, "hata": null}
+{"id": "P04a", "maskeli": "N birimlik fındık bahçem var. Bu yıl devletten hangi yardımları alabilirim, toplam tutarı nedir?", "niyet": ["tutar"], "ihtiyac": ["tarim_odeme"], "sure_sn": 1.139, "hata": null}
+{"id": "P04b", "maskeli": "N alanlık fındık bahçem bulunuyor. Bu sezon devletten ne tür destekler temin edebilirim, toplam maliyet ne olur?", "niyet": [], "ihtiyac": ["tarim_odeme"], "sure_sn": 0.546, "hata": null}
+{"id": "P05a", "maskeli": "Fındık üreticilerine bölgeye göre gelir desteği hâlâ sağlanıyor mu, dönüm başına miktarı nedir?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 0.722, "hata": null}
+{"id": "P05b", "maskeli": "Fındık alıcılarına bölgesel gelir yardımı hâlâ veriliyor mu, bir dönüm için ne kadar ödeme yapılıyor?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 0.666, "hata": null}
+{"id": "P06a", "maskeli": "Bahçeyi yenilemek ve damla sulama sistemi kurmak için hibe ya da düşük maliyetli finansman imkanı var mı?", "niyet": [], "ihtiyac": ["yatirim", "finansman"], "sure_sn": 0.39, "hata": null}
+{"id": "P06b", "maskeli": "Bahçemi yenilemek ve damla sulama kurmak için hibe ya da uygun şartlı bir destek bulunuyor mu?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.835, "hata": null}
+{"id": "P07a", "maskeli": "N dönüm açık tarlada çilek yetiştiriyorum. Hangi desteklerden fayda sağlayabilirim?", "niyet": [], "ihtiyac": ["tarim_odeme"], "sure_sn": 0.685, "hata": null}
+{"id": "P07b", "maskeli": "N dönüm açık tarlada çilek ekiyorum. Hangi desteklerden yararlanabilirim?", "niyet": [], "ihtiyac": ["tarim_odeme"], "sure_sn": 0.589, "hata": null}
+{"id": "P08a", "maskeli": "Çilek tarlamda alçak tünel ya da sera kurmak istiyorum; hibe ya da finansman imkanı var mı?", "niyet": [], "ihtiyac": ["yatirim", "finansman"], "sure_sn": 0.492, "hata": null}
+{"id": "P08b", "maskeli": "Çilek bahçemde alçak tünel ya da sera yaptırmak istiyorum; hibe ya da maddi destek bulunuyor mu?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.519, "hata": null}
+{"id": "P09a", "maskeli": "Yağmur ve buzlanma riskine karşı teminat alırsam devlet hangi miktarı karşılar?", "niyet": ["tutar"], "ihtiyac": ["sigorta"], "sure_sn": 0.45, "hata": null}
+{"id": "P09b", "maskeli": "Hava koşullarından kaynaklı zararlar için güvence yaptırdığımda devletin ödeyeceği tutar nedir?", "niyet": ["tutar"], "ihtiyac": [], "sure_sn": 0.533, "hata": null}
+{"id": "P10a", "maskeli": "Matbaamıza yaklaşık N milyon TL tutarında yeni bir elektronik baskı cihazı almayı planlıyoruz. Hangi finansman, hibe ya da teşvik belgesiyle bu yatırımı gerçekleştirebiliriz?", "niyet": ["tutar"], "ihtiyac": ["finansman"], "sure_sn": 0.567, "hata": null}
+{"id": "P10b", "maskeli": "Matbaamız için N milyon TL civarında yeni bir baskı ekipmanı almayı düşünüyoruz. Bu harcama için hangi destek, hibe ya da teşvik belgesinden faydalanabiliriz?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.231, "hata": null}
+{"id": "P11a", "maskeli": "Yeni iki personel istihdam edeceğiz; [AD] ve [AD] destekleri neler?", "niyet": [], "ihtiyac": ["istihdam"], "sure_sn": 0.475, "hata": null}
+{"id": "P11b", "maskeli": "İki yeni ekip üyesi almayı planlıyoruz; bu süreçte devletin sunduğu teşvikler hakkında bilgi verir misiniz?", "niyet": ["tanim"], "ihtiyac": ["istihdam"], "sure_sn": 0.597, "hata": null}
+{"id": "P12a", "maskeli": "KOSGEB'den matbaa işine alabileceğimiz bir destek mevcut mu?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.732, "hata": null}
+{"id": "P12b", "maskeli": "Matbaa sektöründe KOSGEB'den destek alıp alamayacağımızı merak ediyorum.", "niyet": ["uygunluk"], "ihtiyac": ["girisim"], "sure_sn": 1.108, "hata": null}
+{"id": "P13a", "maskeli": "Sürücü kursumuz için iki yeni öğrenim vasıtası ve bir sürüş simülasyon cihazı temin etmeyi planlıyoruz; uygun finansman ya da destek imkanı var mı?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.479, "hata": null}
+{"id": "P13b", "maskeli": "Sürücü kursumuzda iki yeni eğitim aracı yerine iki yeni öğretim vasıtası ve bir sürüş simülasyon cihazı almayı düşünüyoruz; bu konuda uygun bir destek ya da finansman bulunuyor mu?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.531, "hata": null}
+{"id": "P14a", "maskeli": "Kursumuzun çevrimiçi ders ve randevu sistemiyle dijital ortama taşınması için KOSGEB desteği talep edebilir miyiz?", "niyet": ["uygunluk"], "ihtiyac": ["dijital"], "sure_sn": 0.568, "hata": null}
+{"id": "P14b", "maskeli": "Kursumuzun online eğitim ve randevu altyapısını geliştirmek amacıyla KOSGEB'den destek almayı mümkün kılabilir miyiz?", "niyet": [], "ihtiyac": ["dijital"], "sure_sn": 0.833, "hata": null}
+{"id": "P15a", "maskeli": "Yeni bir uzman eğitmen almayı planlarsak hangi ödül teşvikleri mevcut?", "niyet": [], "ihtiyac": ["istihdam"], "sure_sn": 0.478, "hata": null}
+{"id": "P15b", "maskeli": "Yeni bir uzman eğitmen işe almayı düşünürsek hangi teşvik paketleri sunuluyor?", "niyet": [], "ihtiyac": ["istihdam"], "sure_sn": 0.678, "hata": null}
+{"id": "P16a", "maskeli": "Halımızın yabancı ülkelere satışını artırmak için dış pazarlara yönelik sergi ve pazarlama desteği sağlayabilir miyiz?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.511, "hata": null}
+{"id": "P16b", "maskeli": "Yurtdışı pazarlarda halı satışını yükseltmek amacıyla uluslararası sergi ve pazarlama yardımı alabilir miyiz?", "niyet": [], "ihtiyac": ["tanitim", "ihracat"], "sure_sn": 0.649, "hata": null}
+{"id": "P17a", "maskeli": "Yeni dokuma cihazları için teşvik belgesi alırsak hangi destekler sağlanır?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.444, "hata": null}
+{"id": "P17b", "maskeli": "Yeni dokuma ekipmanları için teşvik belgesi temin edersek hangi yardımlar elde ederiz?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.5, "hata": null}
+{"id": "P18a", "maskeli": "Bilgisayar kontrollü kesim ve otomatik kenar bantlama ekipmanı alımı için hangi destekler mevcut?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.619, "hata": null}
+{"id": "P18b", "maskeli": "Otomatik kenar bantlama ve bilgisayar kontrollü kesim cihazı satın alırken hangi teşviklerden faydalanabilirim?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.744, "hata": null}
+{"id": "P19a", "maskeli": "Üretim süreçlerini dijital platformlara taşımak (kurumsal kaynak yönetim sistemi, ekipman sensörleri) için hibe imkanı var mı?", "niyet": [], "ihtiyac": ["dijital"], "sure_sn": 0.416, "hata": null}
+{"id": "P19b", "maskeli": "Üretim faaliyetlerini dijital ortama geçirmek (kurumsal kaynak yönetim sistemi, ekipman sensörleri) amacıyla destek bulunuyor mu?", "niyet": [], "ihtiyac": ["dijital"], "sure_sn": 0.522, "hata": null}
+{"id": "P20a", "maskeli": "Zeytinyağımızı kendi adımızla Avrupa’daki bir ülkeye göndermek istiyoruz; hangi destekler mevcut?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 1.018, "hata": null}
+{"id": "P20b", "maskeli": "Kendi ismiyle zeytinyağımızı yurtdışı pazara satmak istiyoruz; hangi teşviklerden faydalanabiliriz?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.643, "hata": null}
+{"id": "P21a", "maskeli": "Yurtdışı satış için uygun oranlı finansman bulabilir miyiz?", "niyet": ["tutar"], "ihtiyac": ["finansman"], "sure_sn": 0.503, "hata": null}
+{"id": "P21b", "maskeli": "Dış pazara satış amacıyla uygun şartlı borç temin edebilir miyiz?", "niyet": [], "ihtiyac": ["ihracat", "finansman"], "sure_sn": 2.028, "hata": null}
+{"id": "P22a", "maskeli": "Butik otelimizi yenilemek için herhangi bir finansman ya da hibe imkanı var mı?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.538, "hata": null}
+{"id": "P22b", "maskeli": "Butik otelimizde tadilat yaparken destek alabileceğimiz hibe ya da başka bir kaynak bulunuyor mu?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 0.569, "hata": null}
+{"id": "P23a", "maskeli": "Yurtdışı pazarlama ve internet üzerinden satış için bir destek mekanizması mevcut mu?", "niyet": [], "ihtiyac": ["ihracat", "dijital"], "sure_sn": 0.894, "hata": null}
+{"id": "P23b", "maskeli": "Online satış ve dış pazarlama faaliyetlerimiz için yardım alabilir miyiz?", "niyet": [], "ihtiyac": ["dijital", "ihracat"], "sure_sn": 0.564, "hata": null}
+{"id": "P24a", "maskeli": "Yeni bir fren parçası tasarlamak için bir araştırma projesi yapacağız; TÜBİTAK ve KOSGEB'den ne tür destek alabiliriz?", "niyet": [], "ihtiyac": ["arge"], "sure_sn": 0.595, "hata": null}
+{"id": "P24b", "maskeli": "Fren parçası üzerine yeni bir çalışma planlıyoruz; bu kapsamda TÜBİTAK ve KOSGEB'den hangi imkanları temin edebiliriz?", "niyet": [], "ihtiyac": ["arge"], "sure_sn": 0.377, "hata": null}
+{"id": "P25a", "maskeli": "Bir araştırma ve geliştirme birimi kurmanın koşulları ve sağladığı faydalar nelerdir?", "niyet": ["tanim"], "ihtiyac": ["arge"], "sure_sn": 0.483, "hata": null}
+{"id": "P25b", "maskeli": "Araştırma ve geliştirme merkezi açmanın gereklilikleri ve avantajları hakkında bilgi verir misiniz?", "niyet": ["tanim"], "ihtiyac": ["arge"], "sure_sn": 0.856, "hata": null}
+{"id": "P26a", "maskeli": "Kadın giyim e‑ticaret mağazam var. Dış pazarlara satış yaparken hangi desteklerden faydalanabilirim?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.487, "hata": null}
+{"id": "P26b", "maskeli": "Kadın giyim online mağazam var. Uluslararası satış için mevcut olan teşvik ve yardımlar nelerdir?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.513, "hata": null}
+{"id": "P27a", "maskeli": "Sosyal medya hesabım ve Google tanıtım harcamalarım için yardım isteyebilir miyim?", "niyet": ["tanim"], "ihtiyac": ["tanitim"], "sure_sn": 0.528, "hata": null}
+{"id": "P27b", "maskeli": "Google ve sosyal medya platformu üzerinden yaptığım tanıtım harcamaları için destek talep edebilir miyim?", "niyet": [], "ihtiyac": ["tanitim"], "sure_sn": 0.611, "hata": null}
+{"id": "P28a", "maskeli": "Doğal kozmetik ürünlerimi internet üzerinden satıyorum; kadın iş kuranlara yönelik finansman ya da hibe imkanı var mı?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.463, "hata": null}
+{"id": "P28b", "maskeli": "Online platformda doğal kozmetik satışı yapıyorum; kadın girişimciler için destek sağlayan finansal kaynaklar ya da hibeler bulunuyor mu?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.476, "hata": null}
+{"id": "P29a", "maskeli": "Şahıs işletmesi olarak dijital dış pazarlama desteklerinden fayda sağlayabilir miyim?", "niyet": [], "ihtiyac": ["dijital", "tanitim"], "sure_sn": 0.371, "hata": null}
+{"id": "P29b", "maskeli": "Kendi işimi şahıs olarak yürütüyorum; online ihracat desteklerinden yararlanma imkanı var mı?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.442, "hata": null}
+{"id": "P30a", "maskeli": "Havlu ve bornoz üretiyoruz, kendi sitemizden satıyoruz; AB ülkelerinde bu büyük e‑ticaret platformunda mağaza açmak için bir destek bulunuyor mu?", "niyet": [], "ihtiyac": ["dijital"], "sure_sn": 1.608, "hata": null}
+{"id": "P30b", "maskeli": "Kendi web sitemizden havlu ve bornoz satıyoruz; kıta çapında popüler çevrimiçi pazarda dükkan açmak için bir yardım hizmeti var mı?", "niyet": [], "ihtiyac": ["dijital"], "sure_sn": 0.375, "hata": null}
+{"id": "P31a", "maskeli": "Yurtdışı stok ve sipariş işleme masrafları karşılanıyor mu?", "niyet": ["tutar"], "ihtiyac": ["ihracat"], "sure_sn": 0.325, "hata": null}
+{"id": "P31b", "maskeli": "Yurtdışı ambar ve sipariş yönetimi giderleri destekleniyor mu?", "niyet": [], "ihtiyac": ["lojistik"], "sure_sn": 0.366, "hata": null}
+{"id": "P32a", "maskeli": "Gümüş takı satışı yaptığım online mağazam var; popüler el işi platformu ve kendi sitem üzerinden uluslararası satış için destek var mı?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.628, "hata": null}
+{"id": "P32b", "maskeli": "Gümüş takı satıyorum; hem popüler el işi platformunda hem de kendi web sitemde dış pazarlara satış yaparken destek alabilir miyim?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.445, "hata": null}
+{"id": "P33a", "maskeli": "Ülke dışına gönderdiğim paketlerin masrafı için destek talep edebilir miyim?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.305, "hata": null}
+{"id": "P33b", "maskeli": "Gönderdiğim dışarıdaki gönderilerin giderleri konusunda yardım isteyebilir miyim?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 1.58, "hata": null}
+{"id": "P34a", "maskeli": "Kahve pişirme cihazı almak istiyorum, hangi finansman ya da destekler mevcut?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.596, "hata": null}
+{"id": "P34b", "maskeli": "Kahve işleme aletini temin etmek istiyorum, hangi borç ya da teşvikler var?", "niyet": [], "ihtiyac": ["yatirim", "finansman"], "sure_sn": 0.525, "hata": null}
+{"id": "P35a", "maskeli": "Online kahve satışımızı artırmak için çevrimiçi tanıtım desteği var mı?", "niyet": ["tanim"], "ihtiyac": ["tanitim"], "sure_sn": 0.333, "hata": null}
+{"id": "P35b", "maskeli": "Online kahve satışımızı büyütmek için elektronik reklam yardımı alabilir miyiz?", "niyet": ["tanim"], "ihtiyac": ["tanitim"], "sure_sn": 0.651, "hata": null}
+{"id": "P36a", "maskeli": "Evcil hayvan ürünleri satan e-ticaret firmamız için faaliyet fonu temini sağlayabilir miyiz?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.718, "hata": null}
+{"id": "P36b", "maskeli": "Evcil hayvan ürünleri satan e-ticaret şirketimiz için finansman imkanı bulabilir miyiz?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.429, "hata": null}
+{"id": "P37a", "maskeli": "Malzeme saklama alanına N yeni çalışan almayı planlıyoruz, işe alım teşviki bulunuyor mu?", "niyet": [], "ihtiyac": ["istihdam"], "sure_sn": 0.464, "hata": null}
+{"id": "P37b", "maskeli": "Depo yerine N personel istihdam etmeyi düşünüyoruz, bu konuda bir teşvik var mı?", "niyet": [], "ihtiyac": ["istihdam"], "sure_sn": 0.6, "hata": null}
+{"id": "P38a", "maskeli": "Organik bebek tekstili ürünümüzü [AD] Doğu ülkelerine ihraç etmek istiyorum; hangi teşvikler mevcut?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.361, "hata": null}
+{"id": "P38b", "maskeli": "Organik bebek tekstili satışı için [AD] Doğu pazarına girmek istiyorum; hangi desteklerden faydalanabilirim?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.262, "hata": null}
+{"id": "P39a", "maskeli": "İşletmemizin adını dış ülkelerde kaydettirmek için bir destek var mı?", "niyet": ["tanim"], "ihtiyac": ["girisim"], "sure_sn": 0.28, "hata": null}
+{"id": "P39b", "maskeli": "Logomuzun yabancı bir ülkede resmi kaydını yaptırmamıza yardımcı olur musunuz?", "niyet": ["tanim"], "ihtiyac": ["tescil"], "sure_sn": 0.31, "hata": null}
+{"id": "P40a", "maskeli": "Spor giyim firmamız için uluslararası alışveriş sitelerinde tanıtım desteği bulunuyor mu?", "niyet": ["tanim"], "ihtiyac": ["tanitim"], "sure_sn": 0.583, "hata": null}
+{"id": "P40b", "maskeli": "Dış pazarlarda spor giyim ürünlerimize yönelik online platformlarda ilan desteği var mı?", "niyet": [], "ihtiyac": ["tanitim"], "sure_sn": 0.537, "hata": null}
+{"id": "P41a", "maskeli": "KOSGEB'in sayısal dönüşüm desteğinden online satış platformu için faydalanabilir miyiz?", "niyet": [], "ihtiyac": ["dijital"], "sure_sn": 0.38, "hata": null}
+{"id": "P41b", "maskeli": "KOSGEB'in sayısal dönüşüm yardımıyla online satış altyapısı için başvurabilir miyiz?", "niyet": ["uygunluk"], "ihtiyac": ["dijital"], "sure_sn": 0.487, "hata": null}
+{"id": "P42a", "maskeli": "El yapımı seramik üretiyorum, tek kişilik şahıs işletmesiyim; genç işletme sahibine uygun finansman ya da hibe imkanı var mı?", "niyet": [], "ihtiyac": ["finansman"], "sure_sn": 0.635, "hata": null}
+{"id": "P42b", "maskeli": "El yapımı seramik satıyorum, tek kişilik şahıs firmam var; yeni girişimciye yönelik destek programları arasında hibe ya da borç seçenekleri bulunuyor mu?", "niyet": [], "ihtiyac": ["girisim", "finansman"], "sure_sn": 0.529, "hata": null}
+{"id": "P43a", "maskeli": "Seramik fırını temin etmek için KOSGEB'den yardım alabilir miyim?", "niyet": ["uygunluk"], "ihtiyac": ["yatirim"], "sure_sn": 0.546, "hata": null}
+{"id": "P43b", "maskeli": "KOSGEB'den destek isteyerek seramik fırını temin etme imkanım var mı?", "niyet": [], "ihtiyac": ["yatirim"], "sure_sn": 1.575, "hata": null}
+{"id": "P44a", "maskeli": "Telefon aksesuarı satıyoruz, dijital dış pazara açılacağız; Ticaret Bakanlığı’nın dijital ihracat desteklerine ilişkin koşullar neler?", "niyet": ["tanim"], "ihtiyac": ["dijital", "ihracat"], "sure_sn": 0.408, "hata": null}
+{"id": "P44b", "maskeli": "Telefon aksesuarı işimiz var, online dış satışa geçmek istiyoruz; Ticaret Bakanlığı’nın e-ticaret destek programı için gerekli şartlar nelerdir?", "niyet": ["tanim"], "ihtiyac": ["dijital"], "sure_sn": 0.353, "hata": null}
+{"id": "P45a", "maskeli": "Eximbank'tan dijital dış ticaret için bir finansman sağlayabilir miyiz?", "niyet": [], "ihtiyac": ["finansman", "dijital", "ihracat"], "sure_sn": 0.467, "hata": null}
+{"id": "P45b", "maskeli": "Eximbank'tan e-ticaret dışı satışlarımız için bir destek almayı mümkün kılıyor mu?", "niyet": [], "ihtiyac": ["ihracat"], "sure_sn": 0.542, "hata": null}

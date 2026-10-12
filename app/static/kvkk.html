@@ -67,7 +67,7 @@
 <a class="ust-baglanti" href="/">&larr; Teşvik Asistanı</a>
 
 <h1>Kişisel Verilerin Korunması Hakkında Aydınlatma Metni</h1>
-<p class="tarih">Son güncelleme: 11.10.2026</p>
+<p class="tarih">Son güncelleme: 12.10.2026</p>
 
 <div class="eksik">
   <strong>BU METİN HENÜZ YAYINA HAZIR DEĞİL.</strong> Aşağıdaki
@@ -191,15 +191,37 @@
     <td>Kendi sunucumuzda çalışan dil modeliyle yanıt ya da taslak üretilmesi (yalnız etkinleştirilmişse)</td>
     <td>Sözleşmenin ifası (m.5/2-c) — varsayılan kapalı, yalnız siz açarsanız; veri üçüncü tarafa gitmez (bölüm 4)</td>
   </tr>
+  <tr>
+    <td>Sorunuzun konusunun belirlenmesi için maskelenmiş soru metninin Groq'a gönderilmesi (soru anlama; yalnız
+        açtıysanız)</td>
+    <td>Açık rıza (m.5/1) — varsayılan kapalı, istediğiniz an geri alınır (bölüm 4)</td>
+  </tr>
 </table></div>
 
 <h2>4. Yurt Dışına Aktarım</h2>
 <div class="uyari">
-  <strong>Hiçbir üçüncü taraf yapay zekâ servisine veri aktarılmaz.</strong> Danışman yanıtları Teşvik Asistanı'nın yerel
-  danışmanı tarafından, sunucumuzda yalnız veritabanındaki doğrulanmış teşvik kayıtlarından üretilir; ne profiliniz
-  ne de sorunuzun metni üçüncü taraf bir yapay zekâ servisine (Anthropic, Google Gemini, OpenAI vb.) gönderilir.
-  Bu servisler 11.10.2026 itibarıyla kullanılmamaktadır ve yazılım bunlara bağlanmayı reddeder; daha önce verilmiş
-  rızalar geçersizdir.
+  <strong>Profiliniz ve işletme verileriniz hiçbir üçüncü taraf yapay zekâ servisine aktarılmaz.</strong> Danışman
+  yanıtları Teşvik Asistanı'nın yerel danışmanı tarafından, sunucumuzda yalnız veritabanındaki doğrulanmış teşvik
+  kayıtlarından üretilir. Anthropic, Google Gemini ve OpenAI 11.10.2026 itibarıyla kullanılmamaktadır ve yazılım bunlara
+  bağlanmayı reddeder; bu servisler için daha önce verilmiş rızalar geçersizdir. Tek istisna, yalnız sizin
+  açabileceğiniz <a href="#soru-anlama">soru anlama</a> özelliğidir: açarsanız sorunuzun maskelenmiş metni Groq'a
+  (ABD) gönderilir.
+</div>
+
+<div class="uyari" id="soru-anlama">
+  <strong>Soru anlama (Groq) — varsayılan kapalı.</strong> Ayarlar bölümünden açarsanız, sorunuzun konusunu (ihracat mı,
+  istihdam mı, makine mi, reklam mı) daha iyi belirlemek için soru metni <strong>Groq, Inc.</strong> şirketine
+  (<strong>ABD</strong>) gönderilir. Gönderilmeden önce metinden rakamlar, e-posta adresleri, telefon numaraları, IBAN,
+  web adresleri, adınız, kuruluşunuzun ve İKAS mağazanızın adı ile cümle içinde büyük harfle başlayan özel adlar
+  çıkarılır; kurum, ülke ve il adları kalır. <strong>Profiliniz, cironuz, İKAS verileriniz, e-posta adresiniz ve
+  kullanıcı kimliğiniz gönderilmez.</strong> Groq yalnız sabit bir etiket listesinden seçim döndürür; yanıtı yazmaz,
+  yanıt yine yerel danışman tarafından kayıtlardan üretilir. Groq'un hizmet koşullarına göre gönderilen metin model
+  eğitiminde kullanılmaz; güvenilirlik ve kötüye kullanım denetimi için en çok 30 gün saklanabilir. Maskeleme otomatik
+  bir işlemdir ve küçük harfle yazılmış bir adı her zaman ayırt edemeyebilir: soru metnine kendinizin ya da başkasının
+  kişisel bilgisini yazmayın. Yazılım yalnız <code>api.groq.com</code> adresine bağlanır, soru metnini günlüğe yazmaz;
+  Groq yanıt vermezse yanıt Groq olmadan üretilir. Bu özellik kullanıldığında yanıtın altında belirtilir.
+  Yurt dışına aktarım güvencesi (KVKK m.9): <span class="doldur">DOLDURULACAK</span> (Groq ile standart sözleşme ve
+  Kurul'a bildirim durumu hukuki incelemeyle belirlenecek).
 </div>
 
 <div class="uyari">
@@ -264,6 +286,9 @@
   <li>Düzeltme/silme işlemlerinin aktarılan üçüncü kişilere bildirilmesini isteme</li>
   <li>Otomatik sistemlerle analiz sonucu aleyhinize bir sonuç doğmasına itiraz etme</li>
   <li>Hukuka aykırı işleme nedeniyle zarara uğramanız hâlinde zararın giderilmesini talep etme</li>
+  <li><strong>Soru anlamayı kapatma</strong> — varsayılan kapalıdır; açtıysanız Ayarlar'dan ya da
+      <code>POST /api/organizations/soru-anlama</code>, <code>{"riza": false}</code> ile anında kapatılır; kapandıktan
+      sonra sorularınız Groq'a gönderilmez</li>
   <li><strong>Dil modelini kapatma</strong> — kendi sunucumuzdaki model varsayılan olarak kapalıdır; açtıysanız
       uygulamadan anında kapatılabilir
       (<code>POST /api/organizations/ai-riza</code>, <code>{"riza": false}</code>)</li>
@@ -303,8 +328,9 @@
   <li>Günlük kayıtlarında istek gövdesi basılmaz; yapay zekâ isteklerinin
       içeriği (dolayısıyla profil verisi) günlüğe yazılmaz.</li>
   <li>İKAS erişim/yenileme anahtarları veritabanına şifrelenerek yazılır.</li>
-  <li>Varsayılan yanıt servisi yerel danışmandır; üçüncü taraf yapay zekâ servisine hiçbir koşulda bağlanılmaz,
-      isteğe bağlı dil modeli yalnız sunucularımızın iç ağındaki adrese bağlanır.</li>
+  <li>Varsayılan yanıt servisi yerel danışmandır; profil ve işletme verisi hiçbir koşulda üçüncü taraf yapay zekâ
+      servisine gönderilmez, isteğe bağlı dil modeli yalnız sunucularımızın iç ağındaki adrese bağlanır. Soru anlama
+      açıksa yalnız maskelenmiş soru metni, yalnız <code>api.groq.com</code> adresine gönderilir.</li>
 </ul>
 <p>
   Bilinen eksikler yukarıda bölüm 2'de (İKAS anahtarlarının şifresiz

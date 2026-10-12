@@ -207,10 +207,15 @@
             const kutu = document.getElementById("ayar-riza-kutu");
             const cb = document.getElementById("ayar-riza");
             const kvkk = ' <a href="/kvkk" target="_blank" rel="noopener">Aydınlatma metni</a>';
+            soruAnlamaKutusu();
             if (!disServisVar()) {
+                const sa = yapayZeka && yapayZeka.soru_anlama;
                 aciklama.innerHTML = "Danışman yanıtları Teşvik Asistanı'nın yerel danışmanı tarafından, sunucumuzda yalnız "
-                    + "veritabanındaki doğrulanmış kayıtlardan üretilir; verileriniz hiçbir yapay zekâ servisine ya da yurt "
-                    + "dışına aktarılmaz." + kvkk;
+                    + "veritabanındaki doğrulanmış kayıtlardan üretilir; "
+                    + (sa && sa.etkin && sa.riza
+                        ? "profiliniz ve işletme verileriniz hiçbir yapay zekâ servisine aktarılmaz (soru anlama açık: "
+                          + "yalnız maskelenmiş soru metni Groq'a gider, aşağıya bakın)."
+                        : "verileriniz hiçbir yapay zekâ servisine ya da yurt dışına aktarılmaz.") + kvkk;
                 kutu.hidden = true;
                 return;
             }
@@ -237,6 +242,46 @@
                 await yapayZekaYukle();
                 cb.checked = !!(yapayZeka && yapayZeka.riza_gecerli);
                 document.getElementById("ayar-riza-metin").textContent = cb.checked ? "Açık" : "Kapalı";
+                mesaj.innerHTML = `<div class="success">${escapeHtml(data.mesaj || "Kaydedildi.")}</div>`;
+            } catch (e) {
+                cb.checked = !cb.checked;
+                mesaj.innerHTML = `<div class="error">Hata: ${escapeHtml(e.message)}</div>`;
+            } finally {
+                cb.disabled = false;
+            }
+        }
+
+        // Soru anlama (Groq): yalnız sunucuda yapılandırılmışsa görünür; varsayılan kapalı (app/soru_anlama.py).
+        function soruAnlamaKutusu() {
+            const sa = yapayZeka && yapayZeka.soru_anlama;
+            const kutu = document.getElementById("ayar-sa-kutu");
+            if (!sa || !sa.etkin) { kutu.hidden = true; return; }
+            kutu.hidden = false;
+            document.getElementById("ayar-sa-aciklama").innerHTML = `Varsayılan olarak kapalıdır. Açarsanız sorunuzun
+                <strong>konusunu</strong> (ihracat mı, istihdam mı, makine mi, reklam mı) daha iyi anlamak için soru metni, içindeki
+                adlar, rakamlar, e-posta, telefon ve web adresleri çıkarılarak ${escapeHtml(sa.kurum)} şirketine
+                (${escapeHtml(sa.ulke)}) gönderilir. Profiliniz, cironuz, İKAS verileriniz ve kimliğiniz gönderilmez. Groq
+                yanıtı yazmaz; yanıt yine yerel danışmanda, kayıtlardan üretilir. Groq gönderilen metni model eğitiminde
+                kullanmaz; kötüye kullanım denetimi için en çok 30 gün saklayabilir. Ad maskelemesi otomatiktir; sorunuza
+                başkasına ait kişisel bilgi yazmayın. İstediğiniz an kapatabilirsiniz.
+                <a href="/kvkk#soru-anlama" target="_blank" rel="noopener">Aydınlatma metni</a>`;
+            const cb = document.getElementById("ayar-sa");
+            cb.checked = !!sa.riza;
+            document.getElementById("ayar-sa-metin").textContent = cb.checked ? "Açık" : "Kapalı";
+        }
+
+        async function soruAnlamaDegistir(cb) {
+            const mesaj = document.getElementById("ayar-sa-mesaj");
+            cb.disabled = true;
+            try {
+                const res = await fetch(`${API_BASE}/organizations/soru-anlama`, {
+                    method: "POST",
+                    headers: { "Authorization": `Bearer ${authToken}`, "Content-Type": "application/json" },
+                    body: JSON.stringify({ riza: cb.checked })
+                });
+                const data = await res.json();
+                if (!res.ok) throw new Error(hataMetni(data));
+                await loadSettings();
                 mesaj.innerHTML = `<div class="success">${escapeHtml(data.mesaj || "Kaydedildi.")}</div>`;
             } catch (e) {
                 cb.checked = !cb.checked;
@@ -2103,6 +2148,7 @@
             bolumeGit: (el) => bolumeGit(el.dataset.arg),
             onTarimKategoriDegisti: () => onTarimKategoriDegisti(),
             rizaDegistir: (el) => rizaDegistir(el),
+            soruAnlamaDegistir: (el) => soruAnlamaDegistir(el),
             ozetEylem: (el) => ozetEylem(el),
             kontrolListesiAc: (el) => kontrolListesiAc(el.dataset.arg),
             klKaydet: (el) => klKaydet(el),

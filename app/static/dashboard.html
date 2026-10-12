@@ -412,6 +412,9 @@
         /* Kayıt sonrası karşılama rehberi */
         .karsilama { background: white; border: 2px solid #667eea; border-radius: 12px; padding: 18px 22px; margin: 0 0 20px; }
         .karsilama[hidden] { display: none; }
+        /* "label { display: block }" gibi kurallar hidden özniteliğini eziyordu: Ayarlar'da yapılandırılmamış dil modeli
+           anahtarı görünüyordu (2026-10-12). */
+        [hidden] { display: none !important; }
         .karsilama-ust { display: flex; justify-content: space-between; align-items: center; }
         .karsilama-ust h2 { font-size: 20px; color: #333; }
         .karsilama-kapat { background: none; border: none; font-size: 24px; line-height: 1; color: #888; cursor: pointer; padding: 0 4px; }
@@ -1131,6 +1134,13 @@
                         <label class="anahtar" id="ayar-riza-kutu" hidden><input type="checkbox" id="ayar-riza" data-degisim="rizaDegistir">
                             <span id="ayar-riza-metin">Kapalı</span></label>
                         <div id="ayar-riza-mesaj"></div>
+                    </div>
+                    <div class="ayar-kutu" id="ayar-sa-kutu" hidden>
+                        <h3>Soru anlama (Groq) ve yurt dışına aktarım</h3>
+                        <p id="ayar-sa-aciklama"></p>
+                        <label class="anahtar"><input type="checkbox" id="ayar-sa" data-degisim="soruAnlamaDegistir">
+                            <span id="ayar-sa-metin">Kapalı</span></label>
+                        <div id="ayar-sa-mesaj"></div>
                     </div>
                     <div class="ayar-kutu">
                         <h3>Oturumlar</h3>

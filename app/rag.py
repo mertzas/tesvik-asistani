@@ -23,7 +23,7 @@ from app.match_scoring import hard_filter
 from app.matching import HEDEF_SEKTOR_ETIKETLERI, uygunluk_engeli
 from app.kobi import kobi_sinifi
 from app.girisim import GIRISIM_PROMPT_EKI, girisim_baglam_metni, girisim_modu_mu
-from app import dayanak, llm_saglayici, yerel_danisman
+from app import dayanak, llm_saglayici, soru_anlama, yerel_danisman
 from app.nace_extraction import clean_grant_text
 from app.tesvik_9903_uygunluk import SIRALAMA_ETKISI as UYGUNLUK_9903_ETKISI, kayit_icin as uygunluk_9903
 from app.tesvik_9903_uygunluk import soru_yatirim_tutari, tutar_siniri
@@ -1026,12 +1026,18 @@ def _dis_servis_adi(llm_kullan: bool, h: "Hazirlik") -> str | None:
 
 
 def answer(query: str, profil: dict | None = None,
-           llm_kullan: bool = True, profil_kaydi=None) -> str:
+           llm_kullan: bool = True, profil_kaydi=None, soru_etiketleri=None) -> str:
     """Soruya yanıt üretir.
 
     llm_kullan=True yalnızca bir dış dil modeli yapılandırılmış ve kuruluşun o sağlayıcıya geçerli rızası varsa
     verilir (bkz. app/main.py sor()); `profil` sözlüğü yalnız bu durumda dışarı gider. Aksi hâlde ya da dış model
-    yanıt veremezse/denetimden geçmezse yanıt yerel danışmandan gelir; profil_kaydi yalnızca yerelde kullanılır."""
+    yanıt veremezse/denetimden geçmezse yanıt yerel danışmandan gelir; profil_kaydi yalnızca yerelde kullanılır.
+    soru_etiketleri: kuruluş açtıysa soru anlama katmanının (app/soru_anlama) etiketleri; kalıplara eklenir."""
+    with soru_anlama.baglam(soru_etiketleri):
+        return _answer(query, profil, llm_kullan, profil_kaydi)
+
+
+def _answer(query: str, profil: dict | None, llm_kullan: bool, profil_kaydi) -> str:
     h = _hazirla(query, llm_kullan, profil_kaydi)
     if not h.matches and not yerel_danisman.adi_gecen_programlar(query, _tum_kayitlar()):
         return BULUNAMADI_METNI
@@ -1044,13 +1050,17 @@ def answer(query: str, profil: dict | None = None,
 
 
 def answer_akis(query: str, profil: dict | None = None,
-                llm_kullan: bool = True, profil_kaydi=None):
+                llm_kullan: bool = True, profil_kaydi=None, soru_etiketleri=None):
     """answer()'ın akış sürümü: önce ("kayitlar", [Tesvik]), dış model beklenirken her BEKLEME_SINYALI_SN'de
     ("bekle", None), sonra ("parca", str) olayları.
 
     Dış modelin yanıtı dayanak denetiminden geçmeden kullanıcıya gösterilmez: yanıt tamamlanıp denetlenir, geçerse
-    paragraf paragraf gönderilir; geçmezse ya da dış model yoksa yanıt yerel danışmandan gelir."""
-    h = _hazirla(query, llm_kullan, profil_kaydi)
+    paragraf paragraf gönderilir; geçmezse ya da dış model yoksa yanıt yerel danışmandan gelir.
+
+    Soru anlama bağlamı yalnız `yield` içermeyen bloklarda kurulur: akışta her adım ayrı iş parçacığında, ayrı
+    bağlam kopyasında çalışabilir."""
+    with soru_anlama.baglam(soru_etiketleri):
+        h = _hazirla(query, llm_kullan, profil_kaydi)
     yield "kayitlar", h.matches
     if not h.matches and not yerel_danisman.adi_gecen_programlar(query, _tum_kayitlar()):
         yield "parca", BULUNAMADI_METNI
@@ -1068,10 +1078,21 @@ def answer_akis(query: str, profil: dict | None = None,
                     break
                 except BeklemeDoldu:
                     yield "bekle", None
-    cevap = cevap if cevap is not None else _yerel(query, h, profil_kaydi, _dis_servis_adi(llm_kullan, h))
+    if cevap is None:
+        with soru_anlama.baglam(soru_etiketleri):
+            cevap = _yerel(query, h, profil_kaydi, _dis_servis_adi(llm_kullan, h))
     for parca in re.split(r"(?<=\n\n)", cevap):
         if parca:
             yield "parca", parca
+
+
+def soru_anlama_gerekli_mi(query: str) -> bool:
+    """Soru bir programı ya da kurumu adıyla anıyorsa ("TKDK IPARD hibesi nedir", "KOSGEB'den matbaa için destek")
+    yanıtı ad eşleştirmesi kurar; soru Groq'a gönderilmez. Ölçüm 2026-10-12 (docs/olcum/2026-10-12-soru-anlama): bu
+    sorularda Groq etiketi aramayı kaydırıyordu (IPARD sorusu 1507 yanıtına döndü; matbaa sorusunda sorulmayan "makine
+    yatırımı" yazıldı); adsız sorularda farklı söyleniş isabetini 0,66 → 0,79 (F1) taşıyan kazanç korunur."""
+    tum = _tum_kayitlar()
+    return not (yerel_danisman.adi_gecen_programlar(query, tum) or yerel_danisman.kurum_odagi(query, tum))
 
 
 def _tum_kayitlar() -> list[Tesvik]:

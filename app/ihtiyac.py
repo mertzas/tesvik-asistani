@@ -120,6 +120,10 @@ _YENILEME_DISI = re.compile(r"belge|sertifika|ruhsat|lisans|sozlesme|uyelik|kayi
                             r"ocak|bag\b|kredi(?:mi|yi) yenile")
 
 
+_TARIM_YATIRIMI = re.compile(r"\b(traktor\w*|mibzer\w*|sera(?:si|lari?|ya|da|dan|m)?\b|tunel\w*|sulama\w*|bahce\w*|tarla\w*|fidan\w*|"
+                             r"dekar\w*|donum\w*|hasat\w*|ciftci\w*|ahir\w*|agil\w*|kovan\w*|bag\b|baglar\w*)")
+
+
 _FIRMA_ARGE = re.compile(
     r"ar-?ge projeleri|kobi ar-?ge|ar-?ge baslangic|oncelikli alanlar|universite-sanayi|"
     r"eureka|eurostars|sanayide yesil donusum")
@@ -137,6 +141,16 @@ def soru_ihtiyaclari(soru: str) -> list[str]:
         m = _YENILEME.search(metin)
         if m and not _YENILEME_DISI.search(metin):
             bulunan.append((m.start(), "yatirim"))
+    # Soru anlama katmanının (Groq, kuruluş açtıysa) bu soru için bulduğu ihtiyaçlar kalıplardan sonra gelir; aşağıdaki
+    # dışlama kuralları onlara da uygulanır (app/soru_anlama).
+    from app.soru_anlama import ek_ihtiyaclar
+    gorulen = {ad for _, ad in bulunan}
+    ek = [ad for ad in ek_ihtiyaclar(soru) if ad not in gorulen]
+    if "yatirim" in ek and _TARIM_YATIRIMI.search(metin):
+        # Tarım makinesi/sera/sulama/bahçe yenileme tarım alt kategorisinde ele alınır (yukarıdaki "yatirim" notu);
+        # istem bunu yasaklasa da Groq "yatirim" ekliyordu (ölçüm 2026-10-12: traktör, damla sulama, tünel/sera).
+        ek.remove("yatirim")
+    bulunan += [(len(metin) + i, ad) for i, ad in enumerate(ek)]
     ihtiyaclar = [ad for _, ad in sorted(bulunan)]
     if "sigorta" in ihtiyaclar and _SGK_SIGORTA.search(metin) and not re.search(r"tarsim|dolu|don\b|afet|alacak", metin):
         ihtiyaclar.remove("sigorta")

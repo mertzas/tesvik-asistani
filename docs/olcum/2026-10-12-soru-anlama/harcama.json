@@ -1,0 +1,4550 @@
+{
+ "cagrilar": [
+  {
+   "etiket": "parafraz:E01",
+   "model": "openai/gpt-oss-120b",
+   "giris": 280,
+   "cikis": 141,
+   "usd": 0.000127,
+   "sure_sn": 0.776
+  },
+  {
+   "etiket": "parafraz:E02",
+   "model": "openai/gpt-oss-120b",
+   "giris": 272,
+   "cikis": 173,
+   "usd": 0.000145,
+   "sure_sn": 0.606
+  },
+  {
+   "etiket": "parafraz:E03",
+   "model": "openai/gpt-oss-120b",
+   "giris": 288,
+   "cikis": 149,
+   "usd": 0.000133,
+   "sure_sn": 0.702
+  },
+  {
+   "etiket": "parafraz:E04",
+   "model": "openai/gpt-oss-120b",
+   "giris": 287,
+   "cikis": 347,
+   "usd": 0.000251,
+   "sure_sn": 1.078
+  },
+  {
+   "etiket": "parafraz:E05",
+   "model": "openai/gpt-oss-120b",
+   "giris": 278,
+   "cikis": 514,
+   "usd": 0.00035,
+   "sure_sn": 1.264
+  },
+  {
+   "etiket": "parafraz:E07",
+   "model": "openai/gpt-oss-120b",
+   "giris": 286,
+   "cikis": 464,
+   "usd": 0.000321,
+   "sure_sn": 1.389
+  },
+  {
+   "etiket": "parafraz:E08",
+   "model": "openai/gpt-oss-120b",
+   "giris": 263,
+   "cikis": 131,
+   "usd": 0.000118,
+   "sure_sn": 0.656
+  },
+  {
+   "etiket": "parafraz:E09",
+   "model": "openai/gpt-oss-120b",
+   "giris": 280,
+   "cikis": 306,
+   "usd": 0.000226,
+   "sure_sn": 0.781
+  },
+  {
+   "etiket": "parafraz:E10",
+   "model": "openai/gpt-oss-120b",
+   "giris": 293,
+   "cikis": 304,
+   "usd": 0.000226,
+   "sure_sn": 1.002
+  },
+  {
+   "etiket": "parafraz:E11",
+   "model": "openai/gpt-oss-120b",
+   "giris": 287,
+   "cikis": 260,
+   "usd": 0.000199,
+   "sure_sn": 0.764
+  },
+  {
+   "etiket": "parafraz:E12",
+   "model": "openai/gpt-oss-120b",
+   "giris": 264,
+   "cikis": 424,
+   "usd": 0.000294,
+   "sure_sn": 1.358
+  },
+  {
+   "etiket": "parafraz:E13",
+   "model": "openai/gpt-oss-120b",
+   "giris": 248,
+   "cikis": 84,
+   "usd": 8.8e-05,
+   "sure_sn": 0.469
+  },
+  {
+   "etiket": "parafraz:E14",
+   "model": "openai/gpt-oss-120b",
+   "giris": 287,
+   "cikis": 165,
+   "usd": 0.000142,
+   "sure_sn": 0.626
+  },
+  {
+   "etiket": "parafraz:E15",
+   "model": "openai/gpt-oss-120b",
+   "giris": 258,
+   "cikis": 286,
+   "usd": 0.00021,
+   "sure_sn": 0.88
+  },
+  {
+   "etiket": "parafraz:E16",
+   "model": "openai/gpt-oss-120b",
+   "giris": 257,
+   "cikis": 90,
+   "usd": 9.3e-05,
+   "sure_sn": 0.562
+  },
+  {
+   "etiket": "parafraz:E17",
+   "model": "openai/gpt-oss-120b",
+   "giris": 280,
+   "cikis": 306,
+   "usd": 0.000226,
+   "sure_sn": 0.95
+  },
+  {
+   "etiket": "parafraz:E18",
+   "model": "openai/gpt-oss-120b",
+   "giris": 256,
+   "cikis": 95,
+   "usd": 9.5e-05,
+   "sure_sn": 0.553
+  },
+  {
+   "etiket": "parafraz:E19",
+   "model": "openai/gpt-oss-120b",
+   "giris": 267,
+   "cikis": 142,
+   "usd": 0.000125,
+   "sure_sn": 0.635
+  },
+  {
+   "etiket": "parafraz:E20",
+   "model": "openai/gpt-oss-120b",
+   "giris": 259,
+   "cikis": 169,
+   "usd": 0.00014,
+   "sure_sn": 0.736
+  },
+  {
+   "etiket": "parafraz:E21",
+   "model": "openai/gpt-oss-120b",
+   "giris": 254,
+   "cikis": 386,
+   "usd": 0.00027,
+   "sure_sn": 0.945
+  },
+  {
+   "etiket": "parafraz:E22",
+   "model": "openai/gpt-oss-120b",
+   "giris": 258,
+   "cikis": 225,
+   "usd": 0.000174,
+   "sure_sn": 0.781
+  },
+  {
+   "etiket": "parafraz:E23",
+   "model": "openai/gpt-oss-120b",
+   "giris": 265,
+   "cikis": 147,
+   "usd": 0.000128,
+   "sure_sn": 0.686
+  },
+  {
+   "etiket": "parafraz:E24",
+   "model": "openai/gpt-oss-120b",
+   "giris": 262,
+   "cikis": 168,
+   "usd": 0.00014,
+   "sure_sn": 1.036
+  },
+  {
+   "etiket": "parafraz:E25",
+   "model": "openai/gpt-oss-120b",
+   "giris": 261,
+   "cikis": 117,
+   "usd": 0.000109,
+   "sure_sn": 0.789
+  },
+  {
+   "etiket": "parafraz:E26",
+   "model": "openai/gpt-oss-120b",
+   "giris": 253,
+   "cikis": 103,
+   "usd": 0.0001,
+   "sure_sn": 0.6
+  },
+  {
+   "etiket": "parafraz:E27",
+   "model": "openai/gpt-oss-120b",
+   "giris": 280,
+   "cikis": 268,
+   "usd": 0.000203,
+   "sure_sn": 0.856
+  },
+  {
+   "etiket": "parafraz:E28",
+   "model": "openai/gpt-oss-120b",
+   "giris": 263,
+   "cikis": 116,
+   "usd": 0.000109,
+   "sure_sn": 0.613
+  },
+  {
+   "etiket": "parafraz:E29",
+   "model": "openai/gpt-oss-120b",
+   "giris": 257,
+   "cikis": 317,
+   "usd": 0.000229,
+   "sure_sn": 0.789
+  },
+  {
+   "etiket": "parafraz:E30",
+   "model": "openai/gpt-oss-120b",
+   "giris": 261,
+   "cikis": 130,
+   "usd": 0.000117,
+   "sure_sn": 0.563
+  },
+  {
+   "etiket": "parafraz:P01",
+   "model": "openai/gpt-oss-120b",
+   "giris": 294,
+   "cikis": 208,
+   "usd": 0.000169,
+   "sure_sn": 0.587
+  },
+  {
+   "etiket": "parafraz:P02",
+   "model": "openai/gpt-oss-120b",
+   "giris": 278,
+   "cikis": 328,
+   "usd": 0.000238,
+   "sure_sn": 1.07
+  },
+  {
+   "etiket": "parafraz:P03",
+   "model": "openai/gpt-oss-120b",
+   "giris": 265,
+   "cikis": 189,
+   "usd": 0.000153,
+   "sure_sn": 0.787
+  },
+  {
+   "etiket": "parafraz:P04",
+   "model": "openai/gpt-oss-120b",
+   "giris": 267,
+   "cikis": 355,
+   "usd": 0.000253,
+   "sure_sn": 1.424
+  },
+  {
+   "etiket": "parafraz:P05",
+   "model": "openai/gpt-oss-120b",
+   "giris": 270,
+   "cikis": 165,
+   "usd": 0.00014,
+   "sure_sn": 0.473
+  },
+  {
+   "etiket": "parafraz:P06",
+   "model": "openai/gpt-oss-120b",
+   "giris": 262,
+   "cikis": 270,
+   "usd": 0.000201,
+   "sure_sn": 1.554
+  },
+  {
+   "etiket": "parafraz:P07",
+   "model": "openai/gpt-oss-120b",
+   "giris": 265,
+   "cikis": 144,
+   "usd": 0.000126,
+   "sure_sn": 0.73
+  },
+  {
+   "etiket": "parafraz:P08",
+   "model": "openai/gpt-oss-120b",
+   "giris": 261,
+   "cikis": 130,
+   "usd": 0.000117,
+   "sure_sn": 0.647
+  },
+  {
+   "etiket": "parafraz:P09",
+   "model": "openai/gpt-oss-120b",
+   "giris": 263,
+   "cikis": 172,
+   "usd": 0.000143,
+   "sure_sn": 0.932
+  },
+  {
+   "etiket": "parafraz:P10",
+   "model": "openai/gpt-oss-120b",
+   "giris": 279,
+   "cikis": 435,
+   "usd": 0.000303,
+   "sure_sn": 1.0
+  },
+  {
+   "etiket": "parafraz:P11",
+   "model": "openai/gpt-oss-120b",
+   "giris": 265,
+   "cikis": 213,
+   "usd": 0.000168,
+   "sure_sn": 0.951
+  },
+  {
+   "etiket": "parafraz:P12",
+   "model": "openai/gpt-oss-120b",
+   "giris": 250,
+   "cikis": 99,
+   "usd": 9.7e-05,
+   "sure_sn": 0.589
+  },
+  {
+   "etiket": "parafraz:P13",
+   "model": "openai/gpt-oss-120b",
+   "giris": 272,
+   "cikis": 198,
+   "usd": 0.00016,
+   "sure_sn": 0.787
+  },
+  {
+   "etiket": "parafraz:P14",
+   "model": "openai/gpt-oss-120b",
+   "giris": 269,
+   "cikis": 118,
+   "usd": 0.000111,
+   "sure_sn": 0.558
+  },
+  {
+   "etiket": "parafraz:P15",
+   "model": "openai/gpt-oss-120b",
+   "giris": 264,
+   "cikis": 203,
+   "usd": 0.000161,
+   "sure_sn": 1.083
+  },
+  {
+   "etiket": "parafraz:P16",
+   "model": "openai/gpt-oss-120b",
+   "giris": 279,
+   "cikis": 508,
+   "usd": 0.000347,
+   "sure_sn": 1.224
+  },
+  {
+   "etiket": "parafraz:P17",
+   "model": "openai/gpt-oss-120b",
+   "giris": 257,
+   "cikis": 140,
+   "usd": 0.000123,
+   "sure_sn": 0.391
+  },
+  {
+   "etiket": "parafraz:P18",
+   "model": "openai/gpt-oss-120b",
+   "giris": 259,
+   "cikis": 157,
+   "usd": 0.000133,
+   "sure_sn": 0.705
+  },
+  {
+   "etiket": "parafraz:P19",
+   "model": "openai/gpt-oss-120b",
+   "giris": 268,
+   "cikis": 146,
+   "usd": 0.000128,
+   "sure_sn": 0.679
+  },
+  {
+   "etiket": "parafraz:P20",
+   "model": "openai/gpt-oss-120b",
+   "giris": 269,
+   "cikis": 467,
+   "usd": 0.000321,
+   "sure_sn": 1.1
+  },
+  {
+   "etiket": "parafraz:P21",
+   "model": "openai/gpt-oss-120b",
+   "giris": 255,
+   "cikis": 143,
+   "usd": 0.000124,
+   "sure_sn": 0.728
+  },
+  {
+   "etiket": "parafraz:P22",
+   "model": "openai/gpt-oss-120b",
+   "giris": 251,
+   "cikis": 110,
+   "usd": 0.000104,
+   "sure_sn": 0.692
+  },
+  {
+   "etiket": "parafraz:P23",
+   "model": "openai/gpt-oss-120b",
+   "giris": 255,
+   "cikis": 879,
+   "usd": 0.000566,
+   "sure_sn": 2.294
+  },
+  {
+   "etiket": "parafraz:P24",
+   "model": "openai/gpt-oss-120b",
+   "giris": 273,
+   "cikis": 171,
+   "usd": 0.000144,
+   "sure_sn": 0.733
+  },
+  {
+   "etiket": "parafraz:P25",
+   "model": "openai/gpt-oss-120b",
+   "giris": 251,
+   "cikis": 140,
+   "usd": 0.000122,
+   "sure_sn": 0.678
+  },
+  {
+   "etiket": "parafraz:P26",
+   "model": "openai/gpt-oss-120b",
+   "giris": 260,
+   "cikis": 151,
+   "usd": 0.00013,
+   "sure_sn": 0.448
+  },
+  {
+   "etiket": "parafraz:P27",
+   "model": "openai/gpt-oss-120b",
+   "giris": 254,
+   "cikis": 276,
+   "usd": 0.000204,
+   "sure_sn": 1.059
+  },
+  {
+   "etiket": "parafraz:P28",
+   "model": "openai/gpt-oss-120b",
+   "giris": 269,
+   "cikis": 207,
+   "usd": 0.000165,
+   "sure_sn": 0.774
+  },
+  {
+   "etiket": "parafraz:P29",
+   "model": "openai/gpt-oss-120b",
+   "giris": 262,
+   "cikis": 155,
+   "usd": 0.000132,
+   "sure_sn": 0.657
+  },
+  {
+   "etiket": "parafraz:P30",
+   "model": "openai/gpt-oss-120b",
+   "giris": 266,
+   "cikis": 160,
+   "usd": 0.000136,
+   "sure_sn": 0.949
+  },
+  {
+   "etiket": "parafraz:P31",
+   "model": "openai/gpt-oss-120b",
+   "giris": 265,
+   "cikis": 552,
+   "usd": 0.000371,
+   "sure_sn": 1.538
+  },
+  {
+   "etiket": "parafraz:P32",
+   "model": "openai/gpt-oss-120b",
+   "giris": 267,
+   "cikis": 163,
+   "usd": 0.000138,
+   "sure_sn": 0.78
+  },
+  {
+   "etiket": "parafraz:P33",
+   "model": "openai/gpt-oss-120b",
+   "giris": 267,
+   "cikis": 305,
+   "usd": 0.000223,
+   "sure_sn": 0.959
+  },
+  {
+   "etiket": "parafraz:P34",
+   "model": "openai/gpt-oss-120b",
+   "giris": 258,
+   "cikis": 169,
+   "usd": 0.00014,
+   "sure_sn": 0.658
+  },
+  {
+   "etiket": "parafraz:P35",
+   "model": "openai/gpt-oss-120b",
+   "giris": 259,
+   "cikis": 204,
+   "usd": 0.000161,
+   "sure_sn": 0.756
+  },
+  {
+   "etiket": "parafraz:P36",
+   "model": "openai/gpt-oss-120b",
+   "giris": 268,
+   "cikis": 134,
+   "usd": 0.000121,
+   "sure_sn": 0.715
+  },
+  {
+   "etiket": "parafraz:P37",
+   "model": "openai/gpt-oss-120b",
+   "giris": 256,
+   "cikis": 356,
+   "usd": 0.000252,
+   "sure_sn": 1.189
+  },
+  {
+   "etiket": "parafraz:P38",
+   "model": "openai/gpt-oss-120b",
+   "giris": 264,
+   "cikis": 170,
+   "usd": 0.000142,
+   "sure_sn": 0.652
+  },
+  {
+   "etiket": "parafraz:P39",
+   "model": "openai/gpt-oss-120b",
+   "giris": 262,
+   "cikis": 416,
+   "usd": 0.000289,
+   "sure_sn": 1.276
+  },
+  {
+   "etiket": "parafraz:P40",
+   "model": "openai/gpt-oss-120b",
+   "giris": 267,
+   "cikis": 301,
+   "usd": 0.000221,
+   "sure_sn": 0.995
+  },
+  {
+   "etiket": "parafraz:P41",
+   "model": "openai/gpt-oss-120b",
+   "giris": 272,
+   "cikis": 169,
+   "usd": 0.000142,
+   "sure_sn": 0.767
+  },
+  {
+   "etiket": "parafraz:P42",
+   "model": "openai/gpt-oss-120b",
+   "giris": 270,
+   "cikis": 177,
+   "usd": 0.000147,
+   "sure_sn": 0.498
+  },
+  {
+   "etiket": "parafraz:P43",
+   "model": "openai/gpt-oss-120b",
+   "giris": 258,
+   "cikis": 95,
+   "usd": 9.6e-05,
+   "sure_sn": 0.307
+  },
+  {
+   "etiket": "parafraz:P44",
+   "model": "openai/gpt-oss-120b",
+   "giris": 278,
+   "cikis": 177,
+   "usd": 0.000148,
+   "sure_sn": 0.767
+  },
+  {
+   "etiket": "parafraz:P45",
+   "model": "openai/gpt-oss-120b",
+   "giris": 262,
+   "cikis": 357,
+   "usd": 0.000253,
+   "sure_sn": 1.136
+  },
+  {
+   "etiket": "sinif:E01",
+   "model": "openai/gpt-oss-120b",
+   "giris": 929,
+   "cikis": 218,
+   "usd": 0.00027,
+   "sure_sn": 1.383
+  },
+  {
+   "etiket": "sinif:E02",
+   "model": "openai/gpt-oss-120b",
+   "giris": 920,
+   "cikis": 110,
+   "usd": 0.000204,
+   "sure_sn": 0.774
+  },
+  {
+   "etiket": "sinif:E03",
+   "model": "openai/gpt-oss-120b",
+   "giris": 921,
+   "cikis": 77,
+   "usd": 0.000184,
+   "sure_sn": 0.623
+  },
+  {
+   "etiket": "sinif:E04",
+   "model": "openai/gpt-oss-120b",
+   "giris": 921,
+   "cikis": 163,
+   "usd": 0.000236,
+   "sure_sn": 0.853
+  },
+  {
+   "etiket": "sinif:E05",
+   "model": "openai/gpt-oss-120b",
+   "giris": 914,
+   "cikis": 101,
+   "usd": 0.000198,
+   "sure_sn": 0.418
+  },
+  {
+   "etiket": "sinif:E06",
+   "model": "openai/gpt-oss-120b",
+   "giris": 913,
+   "cikis": 89,
+   "usd": 0.00019,
+   "sure_sn": 0.633
+  },
+  {
+   "etiket": "sinif:E07",
+   "model": "openai/gpt-oss-120b",
+   "giris": 925,
+   "cikis": 128,
+   "usd": 0.000216,
+   "sure_sn": 0.477
+  },
+  {
+   "etiket": "sinif:E08",
+   "model": "openai/gpt-oss-120b",
+   "giris": 913,
+   "cikis": 139,
+   "usd": 0.00022,
+   "sure_sn": 0.736
+  },
+  {
+   "etiket": "sinif:E09",
+   "model": "openai/gpt-oss-120b",
+   "giris": 914,
+   "cikis": 127,
+   "usd": 0.000213,
+   "sure_sn": 0.48
+  },
+  {
+   "etiket": "sinif:E10",
+   "model": "openai/gpt-oss-120b",
+   "giris": 925,
+   "cikis": 133,
+   "usd": 0.000219,
+   "sure_sn": 0.669
+  },
+  {
+   "etiket": "sinif:E11",
+   "model": "openai/gpt-oss-120b",
+   "giris": 921,
+   "cikis": 112,
+   "usd": 0.000205,
+   "sure_sn": 0.438
+  },
+  {
+   "etiket": "sinif:E12",
+   "model": "openai/gpt-oss-120b",
+   "giris": 906,
+   "cikis": 90,
+   "usd": 0.00019,
+   "sure_sn": 0.558
+  },
+  {
+   "etiket": "sinif:E13",
+   "model": "openai/gpt-oss-120b",
+   "giris": 903,
+   "cikis": 111,
+   "usd": 0.000202,
+   "sure_sn": 0.571
+  },
+  {
+   "etiket": "sinif:E14",
+   "model": "openai/gpt-oss-120b",
+   "giris": 941,
+   "cikis": 99,
+   "usd": 0.000201,
+   "sure_sn": 0.435
+  },
+  {
+   "etiket": "sinif:E15",
+   "model": "openai/gpt-oss-120b",
+   "giris": 908,
+   "cikis": 118,
+   "usd": 0.000207,
+   "sure_sn": 0.695
+  },
+  {
+   "etiket": "sinif:E16",
+   "model": "openai/gpt-oss-120b",
+   "giris": 910,
+   "cikis": 67,
+   "usd": 0.000177,
+   "sure_sn": 0.511
+  },
+  {
+   "etiket": "sinif:E17",
+   "model": "openai/gpt-oss-120b",
+   "giris": 914,
+   "cikis": 85,
+   "usd": 0.000188,
+   "sure_sn": 0.999
+  },
+  {
+   "etiket": "sinif:E18",
+   "model": "openai/gpt-oss-120b",
+   "giris": 908,
+   "cikis": 74,
+   "usd": 0.000181,
+   "sure_sn": 0.323
+  },
+  {
+   "etiket": "sinif:E19",
+   "model": "openai/gpt-oss-120b",
+   "giris": 919,
+   "cikis": 131,
+   "usd": 0.000216,
+   "sure_sn": 0.723
+  },
+  {
+   "etiket": "sinif:E20",
+   "model": "openai/gpt-oss-120b",
+   "giris": 907,
+   "cikis": 110,
+   "usd": 0.000202,
+   "sure_sn": 0.435
+  },
+  {
+   "etiket": "sinif:E21",
+   "model": "openai/gpt-oss-120b",
+   "giris": 904,
+   "cikis": 99,
+   "usd": 0.000195,
+   "sure_sn": 1.023
+  },
+  {
+   "etiket": "sinif:E22",
+   "model": "openai/gpt-oss-120b",
+   "giris": 905,
+   "cikis": 179,
+   "usd": 0.000243,
+   "sure_sn": 0.784
+  },
+  {
+   "etiket": "sinif:E23",
+   "model": "openai/gpt-oss-120b",
+   "giris": 910,
+   "cikis": 119,
+   "usd": 0.000208,
+   "sure_sn": 0.515
+  },
+  {
+   "etiket": "sinif:E24",
+   "model": "openai/gpt-oss-120b",
+   "giris": 904,
+   "cikis": 192,
+   "usd": 0.000251,
+   "sure_sn": 0.791
+  },
+  {
+   "etiket": "sinif:E25",
+   "model": "openai/gpt-oss-120b",
+   "giris": 909,
+   "cikis": 131,
+   "usd": 0.000215,
+   "sure_sn": 1.166
+  },
+  {
+   "etiket": "sinif:E26",
+   "model": "openai/gpt-oss-120b",
+   "giris": 904,
+   "cikis": 137,
+   "usd": 0.000218,
+   "sure_sn": 0.795
+  },
+  {
+   "etiket": "sinif:E27",
+   "model": "openai/gpt-oss-120b",
+   "giris": 918,
+   "cikis": 123,
+   "usd": 0.000211,
+   "sure_sn": 0.521
+  },
+  {
+   "etiket": "sinif:E28",
+   "model": "openai/gpt-oss-120b",
+   "giris": 912,
+   "cikis": 102,
+   "usd": 0.000198,
+   "sure_sn": 0.67
+  },
+  {
+   "etiket": "sinif:E29",
+   "model": "openai/gpt-oss-120b",
+   "giris": 904,
+   "cikis": 95,
+   "usd": 0.000193,
+   "sure_sn": 0.51
+  },
+  {
+   "etiket": "sinif:E30",
+   "model": "openai/gpt-oss-120b",
+   "giris": 905,
+   "cikis": 79,
+   "usd": 0.000183,
+   "sure_sn": 0.614
+  },
+  {
+   "etiket": "sinif:P01",
+   "model": "openai/gpt-oss-120b",
+   "giris": 948,
+   "cikis": 181,
+   "usd": 0.000251,
+   "sure_sn": 0.563
+  },
+  {
+   "etiket": "sinif:P02",
+   "model": "openai/gpt-oss-120b",
+   "giris": 923,
+   "cikis": 107,
+   "usd": 0.000203,
+   "sure_sn": 0.561
+  },
+  {
+   "etiket": "sinif:P03",
+   "model": "openai/gpt-oss-120b",
+   "giris": 915,
+   "cikis": 115,
+   "usd": 0.000206,
+   "sure_sn": 0.795
+  },
+  {
+   "etiket": "sinif:P04",
+   "model": "openai/gpt-oss-120b",
+   "giris": 917,
+   "cikis": 167,
+   "usd": 0.000238,
+   "sure_sn": 0.48
+  },
+  {
+   "etiket": "sinif:P05",
+   "model": "openai/gpt-oss-120b",
+   "giris": 912,
+   "cikis": 133,
+   "usd": 0.000217,
+   "sure_sn": 0.69
+  },
+  {
+   "etiket": "sinif:P06",
+   "model": "openai/gpt-oss-120b",
+   "giris": 914,
+   "cikis": 192,
+   "usd": 0.000252,
+   "sure_sn": 1.023
+  },
+  {
+   "etiket": "sinif:P07",
+   "model": "openai/gpt-oss-120b",
+   "giris": 912,
+   "cikis": 152,
+   "usd": 0.000228,
+   "sure_sn": 0.981
+  },
+  {
+   "etiket": "sinif:P08",
+   "model": "openai/gpt-oss-120b",
+   "giris": 916,
+   "cikis": 130,
+   "usd": 0.000215,
+   "sure_sn": 0.404
+  },
+  {
+   "etiket": "sinif:P09",
+   "model": "openai/gpt-oss-120b",
+   "giris": 909,
+   "cikis": 93,
+   "usd": 0.000192,
+   "sure_sn": 0.46
+  },
+  {
+   "etiket": "sinif:P10",
+   "model": "openai/gpt-oss-120b",
+   "giris": 927,
+   "cikis": 78,
+   "usd": 0.000186,
+   "sure_sn": 0.991
+  },
+  {
+   "etiket": "sinif:P11",
+   "model": "openai/gpt-oss-120b",
+   "giris": 909,
+   "cikis": 142,
+   "usd": 0.000222,
+   "sure_sn": 1.242
+  },
+  {
+   "etiket": "sinif:P12",
+   "model": "openai/gpt-oss-120b",
+   "giris": 905,
+   "cikis": 93,
+   "usd": 0.000192,
+   "sure_sn": 1.482
+  },
+  {
+   "etiket": "sinif:P13",
+   "model": "openai/gpt-oss-120b",
+   "giris": 919,
+   "cikis": 120,
+   "usd": 0.00021,
+   "sure_sn": 1.138
+  },
+  {
+   "etiket": "sinif:P14",
+   "model": "openai/gpt-oss-120b",
+   "giris": 917,
+   "cikis": 101,
+   "usd": 0.000198,
+   "sure_sn": 0.929
+  },
+  {
+   "etiket": "sinif:P15",
+   "model": "openai/gpt-oss-120b",
+   "giris": 905,
+   "cikis": 131,
+   "usd": 0.000214,
+   "sure_sn": 1.079
+  },
+  {
+   "etiket": "sinif:P16",
+   "model": "openai/gpt-oss-120b",
+   "giris": 916,
+   "cikis": 132,
+   "usd": 0.000217,
+   "sure_sn": 0.473
+  },
+  {
+   "etiket": "sinif:P17",
+   "model": "openai/gpt-oss-120b",
+   "giris": 908,
+   "cikis": 119,
+   "usd": 0.000208,
+   "sure_sn": 0.417
+  },
+  {
+   "etiket": "sinif:P18",
+   "model": "openai/gpt-oss-120b",
+   "giris": 907,
+   "cikis": 131,
+   "usd": 0.000215,
+   "sure_sn": 0.526
+  },
+  {
+   "etiket": "sinif:E01",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1002,
+   "cikis": 99,
+   "usd": 0.00021,
+   "sure_sn": 0.669
+  },
+  {
+   "etiket": "sinif:E02",
+   "model": "openai/gpt-oss-120b",
+   "giris": 993,
+   "cikis": 137,
+   "usd": 0.000231,
+   "sure_sn": 0.836
+  },
+  {
+   "etiket": "sinif:E03",
+   "model": "openai/gpt-oss-120b",
+   "giris": 994,
+   "cikis": 114,
+   "usd": 0.000218,
+   "sure_sn": 0.67
+  },
+  {
+   "etiket": "sinif:E04",
+   "model": "openai/gpt-oss-120b",
+   "giris": 994,
+   "cikis": 123,
+   "usd": 0.000223,
+   "sure_sn": 0.625
+  },
+  {
+   "etiket": "sinif:E05",
+   "model": "openai/gpt-oss-120b",
+   "giris": 987,
+   "cikis": 126,
+   "usd": 0.000224,
+   "sure_sn": 1.437
+  },
+  {
+   "etiket": "sinif:E06",
+   "model": "openai/gpt-oss-120b",
+   "giris": 986,
+   "cikis": 63,
+   "usd": 0.000186,
+   "sure_sn": 0.595
+  },
+  {
+   "etiket": "sinif:E07",
+   "model": "openai/gpt-oss-120b",
+   "giris": 998,
+   "cikis": 143,
+   "usd": 0.000235,
+   "sure_sn": 0.508
+  },
+  {
+   "etiket": "sinif:E08",
+   "model": "openai/gpt-oss-120b",
+   "giris": 986,
+   "cikis": 142,
+   "usd": 0.000233,
+   "sure_sn": 0.59
+  },
+  {
+   "etiket": "sinif:E09",
+   "model": "openai/gpt-oss-120b",
+   "giris": 987,
+   "cikis": 136,
+   "usd": 0.00023,
+   "sure_sn": 0.746
+  },
+  {
+   "etiket": "sinif:E10",
+   "model": "openai/gpt-oss-120b",
+   "giris": 998,
+   "cikis": 242,
+   "usd": 0.000295,
+   "sure_sn": 0.876
+  },
+  {
+   "etiket": "sinif:E11",
+   "model": "openai/gpt-oss-120b",
+   "giris": 994,
+   "cikis": 142,
+   "usd": 0.000234,
+   "sure_sn": 0.778
+  },
+  {
+   "etiket": "sinif:E12",
+   "model": "openai/gpt-oss-120b",
+   "giris": 979,
+   "cikis": 100,
+   "usd": 0.000207,
+   "sure_sn": 0.79
+  },
+  {
+   "etiket": "sinif:E13",
+   "model": "openai/gpt-oss-120b",
+   "giris": 976,
+   "cikis": 89,
+   "usd": 0.0002,
+   "sure_sn": 0.733
+  },
+  {
+   "etiket": "sinif:E14",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1014,
+   "cikis": 127,
+   "usd": 0.000228,
+   "sure_sn": 0.403
+  },
+  {
+   "etiket": "sinif:E15",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 147,
+   "usd": 0.000235,
+   "sure_sn": 0.565
+  },
+  {
+   "etiket": "sinif:E16",
+   "model": "openai/gpt-oss-120b",
+   "giris": 983,
+   "cikis": 95,
+   "usd": 0.000204,
+   "sure_sn": 0.341
+  },
+  {
+   "etiket": "sinif:E17",
+   "model": "openai/gpt-oss-120b",
+   "giris": 987,
+   "cikis": 132,
+   "usd": 0.000227,
+   "sure_sn": 0.901
+  },
+  {
+   "etiket": "sinif:E18",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 80,
+   "usd": 0.000195,
+   "sure_sn": 0.64
+  },
+  {
+   "etiket": "sinif:E19",
+   "model": "openai/gpt-oss-120b",
+   "giris": 992,
+   "cikis": 120,
+   "usd": 0.000221,
+   "sure_sn": 0.64
+  },
+  {
+   "etiket": "sinif:E20",
+   "model": "openai/gpt-oss-120b",
+   "giris": 980,
+   "cikis": 93,
+   "usd": 0.000203,
+   "sure_sn": 0.762
+  },
+  {
+   "etiket": "sinif:E21",
+   "model": "openai/gpt-oss-120b",
+   "giris": 977,
+   "cikis": 78,
+   "usd": 0.000193,
+   "sure_sn": 0.353
+  },
+  {
+   "etiket": "sinif:E22",
+   "model": "openai/gpt-oss-120b",
+   "giris": 978,
+   "cikis": 174,
+   "usd": 0.000251,
+   "sure_sn": 1.03
+  },
+  {
+   "etiket": "sinif:E23",
+   "model": "openai/gpt-oss-120b",
+   "giris": 983,
+   "cikis": 96,
+   "usd": 0.000205,
+   "sure_sn": 0.684
+  },
+  {
+   "etiket": "sinif:E24",
+   "model": "openai/gpt-oss-120b",
+   "giris": 977,
+   "cikis": 92,
+   "usd": 0.000202,
+   "sure_sn": 0.596
+  },
+  {
+   "etiket": "sinif:E25",
+   "model": "openai/gpt-oss-120b",
+   "giris": 982,
+   "cikis": 144,
+   "usd": 0.000234,
+   "sure_sn": 0.649
+  },
+  {
+   "etiket": "sinif:E26",
+   "model": "openai/gpt-oss-120b",
+   "giris": 977,
+   "cikis": 121,
+   "usd": 0.000219,
+   "sure_sn": 0.497
+  },
+  {
+   "etiket": "sinif:E27",
+   "model": "openai/gpt-oss-120b",
+   "giris": 991,
+   "cikis": 68,
+   "usd": 0.000189,
+   "sure_sn": 0.405
+  },
+  {
+   "etiket": "sinif:E28",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 66,
+   "usd": 0.000187,
+   "sure_sn": 0.515
+  },
+  {
+   "etiket": "sinif:E29",
+   "model": "openai/gpt-oss-120b",
+   "giris": 977,
+   "cikis": 115,
+   "usd": 0.000216,
+   "sure_sn": 0.59
+  },
+  {
+   "etiket": "sinif:E30",
+   "model": "openai/gpt-oss-120b",
+   "giris": 978,
+   "cikis": 126,
+   "usd": 0.000222,
+   "sure_sn": 0.944
+  },
+  {
+   "etiket": "sinif:P01",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1021,
+   "cikis": 173,
+   "usd": 0.000257,
+   "sure_sn": 0.788
+  },
+  {
+   "etiket": "sinif:P02",
+   "model": "openai/gpt-oss-120b",
+   "giris": 996,
+   "cikis": 137,
+   "usd": 0.000232,
+   "sure_sn": 0.462
+  },
+  {
+   "etiket": "sinif:P03",
+   "model": "openai/gpt-oss-120b",
+   "giris": 988,
+   "cikis": 111,
+   "usd": 0.000215,
+   "sure_sn": 0.542
+  },
+  {
+   "etiket": "sinif:P04",
+   "model": "openai/gpt-oss-120b",
+   "giris": 990,
+   "cikis": 127,
+   "usd": 0.000225,
+   "sure_sn": 1.448
+  },
+  {
+   "etiket": "sinif:P05",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 90,
+   "usd": 0.000202,
+   "sure_sn": 0.289
+  },
+  {
+   "etiket": "sinif:P06",
+   "model": "openai/gpt-oss-120b",
+   "giris": 987,
+   "cikis": 221,
+   "usd": 0.000281,
+   "sure_sn": 0.574
+  },
+  {
+   "etiket": "sinif:P07",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 153,
+   "usd": 0.00024,
+   "sure_sn": 0.487
+  },
+  {
+   "etiket": "sinif:P08",
+   "model": "openai/gpt-oss-120b",
+   "giris": 989,
+   "cikis": 203,
+   "usd": 0.00027,
+   "sure_sn": 0.746
+  },
+  {
+   "etiket": "sinif:P09",
+   "model": "openai/gpt-oss-120b",
+   "giris": 982,
+   "cikis": 86,
+   "usd": 0.000199,
+   "sure_sn": 0.386
+  },
+  {
+   "etiket": "sinif:P10",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1000,
+   "cikis": 137,
+   "usd": 0.000232,
+   "sure_sn": 0.747
+  },
+  {
+   "etiket": "sinif:P11",
+   "model": "openai/gpt-oss-120b",
+   "giris": 982,
+   "cikis": 115,
+   "usd": 0.000216,
+   "sure_sn": 0.897
+  },
+  {
+   "etiket": "sinif:P12",
+   "model": "openai/gpt-oss-120b",
+   "giris": 978,
+   "cikis": 98,
+   "usd": 0.000205,
+   "sure_sn": 0.411
+  },
+  {
+   "etiket": "sinif:P13",
+   "model": "openai/gpt-oss-120b",
+   "giris": 992,
+   "cikis": 148,
+   "usd": 0.000238,
+   "sure_sn": 1.318
+  },
+  {
+   "etiket": "sinif:P14",
+   "model": "openai/gpt-oss-120b",
+   "giris": 990,
+   "cikis": 115,
+   "usd": 0.000218,
+   "sure_sn": 1.25
+  },
+  {
+   "etiket": "sinif:P15",
+   "model": "openai/gpt-oss-120b",
+   "giris": 978,
+   "cikis": 145,
+   "usd": 0.000234,
+   "sure_sn": 0.754
+  },
+  {
+   "etiket": "sinif:P16",
+   "model": "openai/gpt-oss-120b",
+   "giris": 989,
+   "cikis": 167,
+   "usd": 0.000249,
+   "sure_sn": 0.522
+  },
+  {
+   "etiket": "sinif:P17",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 110,
+   "usd": 0.000213,
+   "sure_sn": 0.555
+  },
+  {
+   "etiket": "sinif:P18",
+   "model": "openai/gpt-oss-120b",
+   "giris": 980,
+   "cikis": 119,
+   "usd": 0.000218,
+   "sure_sn": 0.607
+  },
+  {
+   "etiket": "sinif:P19",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 110,
+   "usd": 0.000214,
+   "sure_sn": 0.888
+  },
+  {
+   "etiket": "sinif:P20",
+   "model": "openai/gpt-oss-120b",
+   "giris": 989,
+   "cikis": 95,
+   "usd": 0.000205,
+   "sure_sn": 0.613
+  },
+  {
+   "etiket": "sinif:P21",
+   "model": "openai/gpt-oss-120b",
+   "giris": 976,
+   "cikis": 183,
+   "usd": 0.000256,
+   "sure_sn": 1.084
+  },
+  {
+   "etiket": "sinif:P22",
+   "model": "openai/gpt-oss-120b",
+   "giris": 979,
+   "cikis": 172,
+   "usd": 0.00025,
+   "sure_sn": 0.587
+  },
+  {
+   "etiket": "sinif:P23",
+   "model": "openai/gpt-oss-120b",
+   "giris": 977,
+   "cikis": 172,
+   "usd": 0.00025,
+   "sure_sn": 0.729
+  },
+  {
+   "etiket": "sinif:P24",
+   "model": "openai/gpt-oss-120b",
+   "giris": 996,
+   "cikis": 90,
+   "usd": 0.000203,
+   "sure_sn": 0.402
+  },
+  {
+   "etiket": "sinif:P25",
+   "model": "openai/gpt-oss-120b",
+   "giris": 975,
+   "cikis": 75,
+   "usd": 0.000191,
+   "sure_sn": 0.647
+  },
+  {
+   "etiket": "sinif:P26",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 98,
+   "usd": 0.000207,
+   "sure_sn": 0.543
+  },
+  {
+   "etiket": "sinif:P27",
+   "model": "openai/gpt-oss-120b",
+   "giris": 976,
+   "cikis": 157,
+   "usd": 0.000241,
+   "sure_sn": 0.906
+  },
+  {
+   "etiket": "sinif:P28",
+   "model": "openai/gpt-oss-120b",
+   "giris": 988,
+   "cikis": 141,
+   "usd": 0.000233,
+   "sure_sn": 0.455
+  },
+  {
+   "etiket": "sinif:P29",
+   "model": "openai/gpt-oss-120b",
+   "giris": 982,
+   "cikis": 119,
+   "usd": 0.000219,
+   "sure_sn": 0.787
+  },
+  {
+   "etiket": "sinif:P30",
+   "model": "openai/gpt-oss-120b",
+   "giris": 991,
+   "cikis": 149,
+   "usd": 0.000238,
+   "sure_sn": 0.648
+  },
+  {
+   "etiket": "sinif:P31",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 137,
+   "usd": 0.000229,
+   "sure_sn": 0.542
+  },
+  {
+   "etiket": "sinif:P32",
+   "model": "openai/gpt-oss-120b",
+   "giris": 989,
+   "cikis": 174,
+   "usd": 0.000253,
+   "sure_sn": 0.731
+  },
+  {
+   "etiket": "sinif:P33",
+   "model": "openai/gpt-oss-120b",
+   "giris": 983,
+   "cikis": 161,
+   "usd": 0.000244,
+   "sure_sn": 1.784
+  },
+  {
+   "etiket": "sinif:P34",
+   "model": "openai/gpt-oss-120b",
+   "giris": 980,
+   "cikis": 112,
+   "usd": 0.000214,
+   "sure_sn": 0.643
+  },
+  {
+   "etiket": "sinif:P35",
+   "model": "openai/gpt-oss-120b",
+   "giris": 982,
+   "cikis": 155,
+   "usd": 0.00024,
+   "sure_sn": 1.329
+  },
+  {
+   "etiket": "sinif:P36",
+   "model": "openai/gpt-oss-120b",
+   "giris": 988,
+   "cikis": 169,
+   "usd": 0.00025,
+   "sure_sn": 1.671
+  },
+  {
+   "etiket": "sinif:P37",
+   "model": "openai/gpt-oss-120b",
+   "giris": 978,
+   "cikis": 139,
+   "usd": 0.00023,
+   "sure_sn": 0.649
+  },
+  {
+   "etiket": "sinif:P38",
+   "model": "openai/gpt-oss-120b",
+   "giris": 986,
+   "cikis": 84,
+   "usd": 0.000198,
+   "sure_sn": 1.011
+  },
+  {
+   "etiket": "sinif:P39",
+   "model": "openai/gpt-oss-120b",
+   "giris": 979,
+   "cikis": 88,
+   "usd": 0.0002,
+   "sure_sn": 0.352
+  },
+  {
+   "etiket": "sinif:P40",
+   "model": "openai/gpt-oss-120b",
+   "giris": 982,
+   "cikis": 85,
+   "usd": 0.000198,
+   "sure_sn": 0.555
+  },
+  {
+   "etiket": "sinif:P41",
+   "model": "openai/gpt-oss-120b",
+   "giris": 987,
+   "cikis": 108,
+   "usd": 0.000213,
+   "sure_sn": 1.64
+  },
+  {
+   "etiket": "sinif:P42",
+   "model": "openai/gpt-oss-120b",
+   "giris": 993,
+   "cikis": 167,
+   "usd": 0.000249,
+   "sure_sn": 0.939
+  },
+  {
+   "etiket": "sinif:P43",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 72,
+   "usd": 0.00019,
+   "sure_sn": 0.578
+  },
+  {
+   "etiket": "sinif:P44",
+   "model": "openai/gpt-oss-120b",
+   "giris": 993,
+   "cikis": 83,
+   "usd": 0.000199,
+   "sure_sn": 0.302
+  },
+  {
+   "etiket": "sinif:P45",
+   "model": "openai/gpt-oss-120b",
+   "giris": 979,
+   "cikis": 112,
+   "usd": 0.000214,
+   "sure_sn": 0.628
+  },
+  {
+   "etiket": "sinif:E01a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1010,
+   "cikis": 114,
+   "usd": 0.00022,
+   "sure_sn": 0.528
+  },
+  {
+   "etiket": "sinif:E01b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1008,
+   "cikis": 102,
+   "usd": 0.000212,
+   "sure_sn": 0.81
+  },
+  {
+   "etiket": "sinif:E02a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 994,
+   "cikis": 179,
+   "usd": 0.000257,
+   "sure_sn": 1.106
+  },
+  {
+   "etiket": "sinif:E02b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 995,
+   "cikis": 144,
+   "usd": 0.000236,
+   "sure_sn": 1.188
+  },
+  {
+   "etiket": "sinif:E03a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1004,
+   "cikis": 102,
+   "usd": 0.000212,
+   "sure_sn": 0.591
+  },
+  {
+   "etiket": "sinif:E03b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1001,
+   "cikis": 100,
+   "usd": 0.00021,
+   "sure_sn": 0.539
+  },
+  {
+   "etiket": "sinif:E04a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 998,
+   "cikis": 111,
+   "usd": 0.000216,
+   "sure_sn": 0.628
+  },
+  {
+   "etiket": "sinif:E04b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1003,
+   "cikis": 108,
+   "usd": 0.000215,
+   "sure_sn": 0.749
+  },
+  {
+   "etiket": "sinif:E05a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 993,
+   "cikis": 111,
+   "usd": 0.000216,
+   "sure_sn": 0.503
+  },
+  {
+   "etiket": "sinif:E05b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 998,
+   "cikis": 119,
+   "usd": 0.000221,
+   "sure_sn": 0.859
+  },
+  {
+   "etiket": "sinif:E07a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1005,
+   "cikis": 191,
+   "usd": 0.000265,
+   "sure_sn": 0.941
+  },
+  {
+   "etiket": "sinif:E07b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1010,
+   "cikis": 136,
+   "usd": 0.000233,
+   "sure_sn": 1.029
+  },
+  {
+   "etiket": "sinif:E08a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 987,
+   "cikis": 69,
+   "usd": 0.000189,
+   "sure_sn": 1.027
+  },
+  {
+   "etiket": "sinif:E08b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 986,
+   "cikis": 151,
+   "usd": 0.000238,
+   "sure_sn": 1.254
+  },
+  {
+   "etiket": "sinif:E09a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 993,
+   "cikis": 105,
+   "usd": 0.000212,
+   "sure_sn": 0.627
+  },
+  {
+   "etiket": "sinif:E09b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 996,
+   "cikis": 127,
+   "usd": 0.000226,
+   "sure_sn": 1.076
+  },
+  {
+   "etiket": "sinif:E10a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1000,
+   "cikis": 166,
+   "usd": 0.00025,
+   "sure_sn": 0.778
+  },
+  {
+   "etiket": "sinif:E10b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1008,
+   "cikis": 148,
+   "usd": 0.00024,
+   "sure_sn": 0.801
+  },
+  {
+   "etiket": "sinif:E11a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 997,
+   "cikis": 91,
+   "usd": 0.000204,
+   "sure_sn": 0.66
+  },
+  {
+   "etiket": "sinif:E11b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 996,
+   "cikis": 121,
+   "usd": 0.000222,
+   "sure_sn": 0.371
+  },
+  {
+   "etiket": "sinif:E12a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 110,
+   "usd": 0.000213,
+   "sure_sn": 0.357
+  },
+  {
+   "etiket": "sinif:E12b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 988,
+   "cikis": 124,
+   "usd": 0.000223,
+   "sure_sn": 0.924
+  },
+  {
+   "etiket": "sinif:E13a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 978,
+   "cikis": 100,
+   "usd": 0.000207,
+   "sure_sn": 0.657
+  },
+  {
+   "etiket": "sinif:E13b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 979,
+   "cikis": 125,
+   "usd": 0.000222,
+   "sure_sn": 0.963
+  },
+  {
+   "etiket": "sinif:E14a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1018,
+   "cikis": 116,
+   "usd": 0.000222,
+   "sure_sn": 0.674
+  },
+  {
+   "etiket": "sinif:E14b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1017,
+   "cikis": 209,
+   "usd": 0.000278,
+   "sure_sn": 0.838
+  },
+  {
+   "etiket": "sinif:E15a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 186,
+   "usd": 0.000259,
+   "sure_sn": 0.533
+  },
+  {
+   "etiket": "sinif:E15b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 979,
+   "cikis": 62,
+   "usd": 0.000184,
+   "sure_sn": 1.263
+  },
+  {
+   "etiket": "sinif:E16a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 987,
+   "cikis": 142,
+   "usd": 0.000233,
+   "sure_sn": 0.971
+  },
+  {
+   "etiket": "sinif:E16b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 102,
+   "usd": 0.000209,
+   "sure_sn": 1.008
+  },
+  {
+   "etiket": "sinif:E17a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 993,
+   "cikis": 105,
+   "usd": 0.000212,
+   "sure_sn": 0.554
+  },
+  {
+   "etiket": "sinif:E17b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 996,
+   "cikis": 115,
+   "usd": 0.000218,
+   "sure_sn": 0.355
+  },
+  {
+   "etiket": "sinif:E18a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 77,
+   "usd": 0.000194,
+   "sure_sn": 0.409
+  },
+  {
+   "etiket": "sinif:E18b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 55,
+   "usd": 0.00018,
+   "sure_sn": 0.349
+  },
+  {
+   "etiket": "sinif:E19a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 995,
+   "cikis": 121,
+   "usd": 0.000222,
+   "sure_sn": 0.58
+  },
+  {
+   "etiket": "sinif:E19b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 994,
+   "cikis": 114,
+   "usd": 0.000218,
+   "sure_sn": 1.025
+  },
+  {
+   "etiket": "sinif:E20a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 187,
+   "usd": 0.00026,
+   "sure_sn": 0.828
+  },
+  {
+   "etiket": "sinif:E20b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 983,
+   "cikis": 114,
+   "usd": 0.000216,
+   "sure_sn": 0.665
+  },
+  {
+   "etiket": "sinif:E21a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 978,
+   "cikis": 104,
+   "usd": 0.000209,
+   "sure_sn": 3.326
+  },
+  {
+   "etiket": "sinif:E21b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 978,
+   "cikis": 90,
+   "usd": 0.000201,
+   "sure_sn": 0.676
+  },
+  {
+   "etiket": "sinif:E22a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 983,
+   "cikis": 178,
+   "usd": 0.000254,
+   "sure_sn": 0.764
+  },
+  {
+   "etiket": "sinif:E22b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 982,
+   "cikis": 108,
+   "usd": 0.000212,
+   "sure_sn": 0.351
+  },
+  {
+   "etiket": "sinif:E23a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 94,
+   "usd": 0.000204,
+   "sure_sn": 0.898
+  },
+  {
+   "etiket": "sinif:E23b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 123,
+   "usd": 0.000221,
+   "sure_sn": 0.949
+  },
+  {
+   "etiket": "sinif:E24a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 982,
+   "cikis": 133,
+   "usd": 0.000227,
+   "sure_sn": 0.454
+  },
+  {
+   "etiket": "sinif:E24b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 97,
+   "usd": 0.000205,
+   "sure_sn": 1.098
+  },
+  {
+   "etiket": "sinif:E25a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 987,
+   "cikis": 108,
+   "usd": 0.000213,
+   "sure_sn": 0.476
+  },
+  {
+   "etiket": "sinif:E25b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 988,
+   "cikis": 116,
+   "usd": 0.000218,
+   "sure_sn": 0.407
+  },
+  {
+   "etiket": "sinif:E26a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 979,
+   "cikis": 147,
+   "usd": 0.000235,
+   "sure_sn": 0.439
+  },
+  {
+   "etiket": "sinif:E26b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 154,
+   "usd": 0.00024,
+   "sure_sn": 1.305
+  },
+  {
+   "etiket": "sinif:E27a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1002,
+   "cikis": 102,
+   "usd": 0.000211,
+   "sure_sn": 0.631
+  },
+  {
+   "etiket": "sinif:E27b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1004,
+   "cikis": 156,
+   "usd": 0.000244,
+   "sure_sn": 1.207
+  },
+  {
+   "etiket": "sinif:E28a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 988,
+   "cikis": 61,
+   "usd": 0.000185,
+   "sure_sn": 0.608
+  },
+  {
+   "etiket": "sinif:E28b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 989,
+   "cikis": 74,
+   "usd": 0.000193,
+   "sure_sn": 0.499
+  },
+  {
+   "etiket": "sinif:E29a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 983,
+   "cikis": 89,
+   "usd": 0.000201,
+   "sure_sn": 0.571
+  },
+  {
+   "etiket": "sinif:E29b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 983,
+   "cikis": 104,
+   "usd": 0.00021,
+   "sure_sn": 0.368
+  },
+  {
+   "etiket": "sinif:E30a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 980,
+   "cikis": 92,
+   "usd": 0.000202,
+   "sure_sn": 1.05
+  },
+  {
+   "etiket": "sinif:E30b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 980,
+   "cikis": 64,
+   "usd": 0.000185,
+   "sure_sn": 0.517
+  },
+  {
+   "etiket": "sinif:P01a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1031,
+   "cikis": 144,
+   "usd": 0.000241,
+   "sure_sn": 0.512
+  },
+  {
+   "etiket": "sinif:P01b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1032,
+   "cikis": 137,
+   "usd": 0.000237,
+   "sure_sn": 0.489
+  },
+  {
+   "etiket": "sinif:P02a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 999,
+   "cikis": 152,
+   "usd": 0.000241,
+   "sure_sn": 0.423
+  },
+  {
+   "etiket": "sinif:P02b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1003,
+   "cikis": 155,
+   "usd": 0.000243,
+   "sure_sn": 0.898
+  },
+  {
+   "etiket": "sinif:P03a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 994,
+   "cikis": 198,
+   "usd": 0.000268,
+   "sure_sn": 1.111
+  },
+  {
+   "etiket": "sinif:P03b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 999,
+   "cikis": 157,
+   "usd": 0.000244,
+   "sure_sn": 1.267
+  },
+  {
+   "etiket": "sinif:P04a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 993,
+   "cikis": 175,
+   "usd": 0.000254,
+   "sure_sn": 1.548
+  },
+  {
+   "etiket": "sinif:P04b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 995,
+   "cikis": 101,
+   "usd": 0.00021,
+   "sure_sn": 0.344
+  },
+  {
+   "etiket": "sinif:P05a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 992,
+   "cikis": 144,
+   "usd": 0.000235,
+   "sure_sn": 0.396
+  },
+  {
+   "etiket": "sinif:P05b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 991,
+   "cikis": 65,
+   "usd": 0.000188,
+   "sure_sn": 0.52
+  },
+  {
+   "etiket": "sinif:P06a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 992,
+   "cikis": 161,
+   "usd": 0.000245,
+   "sure_sn": 0.472
+  },
+  {
+   "etiket": "sinif:P06b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 989,
+   "cikis": 145,
+   "usd": 0.000235,
+   "sure_sn": 0.447
+  },
+  {
+   "etiket": "sinif:P07a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 986,
+   "cikis": 148,
+   "usd": 0.000237,
+   "sure_sn": 0.416
+  },
+  {
+   "etiket": "sinif:P07b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 121,
+   "usd": 0.00022,
+   "sure_sn": 0.661
+  },
+  {
+   "etiket": "sinif:P08a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 994,
+   "cikis": 154,
+   "usd": 0.000242,
+   "sure_sn": 0.79
+  },
+  {
+   "etiket": "sinif:P08b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 994,
+   "cikis": 172,
+   "usd": 0.000252,
+   "sure_sn": 0.884
+  },
+  {
+   "etiket": "sinif:P09a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 99,
+   "usd": 0.000207,
+   "sure_sn": 0.806
+  },
+  {
+   "etiket": "sinif:P09b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 991,
+   "cikis": 92,
+   "usd": 0.000204,
+   "sure_sn": 0.664
+  },
+  {
+   "etiket": "sinif:P10a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1008,
+   "cikis": 148,
+   "usd": 0.00024,
+   "sure_sn": 0.651
+  },
+  {
+   "etiket": "sinif:P10b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1004,
+   "cikis": 129,
+   "usd": 0.000228,
+   "sure_sn": 0.906
+  },
+  {
+   "etiket": "sinif:P11a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 93,
+   "usd": 0.000203,
+   "sure_sn": 1.283
+  },
+  {
+   "etiket": "sinif:P11b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 992,
+   "cikis": 136,
+   "usd": 0.00023,
+   "sure_sn": 1.133
+  },
+  {
+   "etiket": "sinif:P12a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 980,
+   "cikis": 187,
+   "usd": 0.000259,
+   "sure_sn": 1.707
+  },
+  {
+   "etiket": "sinif:P12b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 105,
+   "usd": 0.000211,
+   "sure_sn": 0.345
+  },
+  {
+   "etiket": "sinif:P13a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1003,
+   "cikis": 147,
+   "usd": 0.000239,
+   "sure_sn": 0.619
+  },
+  {
+   "etiket": "sinif:P13b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1008,
+   "cikis": 132,
+   "usd": 0.00023,
+   "sure_sn": 1.4
+  },
+  {
+   "etiket": "sinif:P14a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 997,
+   "cikis": 116,
+   "usd": 0.000219,
+   "sure_sn": 0.62
+  },
+  {
+   "etiket": "sinif:P14b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 994,
+   "cikis": 237,
+   "usd": 0.000291,
+   "sure_sn": 0.949
+  },
+  {
+   "etiket": "sinif:P15a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 982,
+   "cikis": 116,
+   "usd": 0.000217,
+   "sure_sn": 1.497
+  },
+  {
+   "etiket": "sinif:P15b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 983,
+   "cikis": 134,
+   "usd": 0.000228,
+   "sure_sn": 1.593
+  },
+  {
+   "etiket": "sinif:P16a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 993,
+   "cikis": 161,
+   "usd": 0.000246,
+   "sure_sn": 0.906
+  },
+  {
+   "etiket": "sinif:P16b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 992,
+   "cikis": 179,
+   "usd": 0.000256,
+   "sure_sn": 0.824
+  },
+  {
+   "etiket": "sinif:P17a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 982,
+   "cikis": 148,
+   "usd": 0.000236,
+   "sure_sn": 0.93
+  },
+  {
+   "etiket": "sinif:P17b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 154,
+   "usd": 0.00024,
+   "sure_sn": 0.592
+  },
+  {
+   "etiket": "sinif:P18a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 986,
+   "cikis": 114,
+   "usd": 0.000216,
+   "sure_sn": 0.72
+  },
+  {
+   "etiket": "sinif:P18b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 990,
+   "cikis": 172,
+   "usd": 0.000252,
+   "sure_sn": 0.462
+  },
+  {
+   "etiket": "sinif:P19a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 997,
+   "cikis": 103,
+   "usd": 0.000211,
+   "sure_sn": 0.537
+  },
+  {
+   "etiket": "sinif:P19b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 994,
+   "cikis": 134,
+   "usd": 0.00023,
+   "sure_sn": 0.696
+  },
+  {
+   "etiket": "sinif:P20a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 989,
+   "cikis": 90,
+   "usd": 0.000202,
+   "sure_sn": 0.288
+  },
+  {
+   "etiket": "sinif:P20b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 993,
+   "cikis": 91,
+   "usd": 0.000204,
+   "sure_sn": 0.676
+  },
+  {
+   "etiket": "sinif:P21a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 977,
+   "cikis": 156,
+   "usd": 0.00024,
+   "sure_sn": 1.159
+  },
+  {
+   "etiket": "sinif:P21b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 98,
+   "usd": 0.000206,
+   "sure_sn": 0.416
+  },
+  {
+   "etiket": "sinif:P22a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 157,
+   "usd": 0.000242,
+   "sure_sn": 0.581
+  },
+  {
+   "etiket": "sinif:P22b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 987,
+   "cikis": 167,
+   "usd": 0.000248,
+   "sure_sn": 0.448
+  },
+  {
+   "etiket": "sinif:P23a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 131,
+   "usd": 0.000226,
+   "sure_sn": 0.4
+  },
+  {
+   "etiket": "sinif:P23b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 979,
+   "cikis": 137,
+   "usd": 0.000229,
+   "sure_sn": 0.432
+  },
+  {
+   "etiket": "sinif:P24a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1000,
+   "cikis": 64,
+   "usd": 0.000188,
+   "sure_sn": 0.515
+  },
+  {
+   "etiket": "sinif:P24b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 998,
+   "cikis": 100,
+   "usd": 0.00021,
+   "sure_sn": 0.304
+  },
+  {
+   "etiket": "sinif:P25a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 986,
+   "cikis": 98,
+   "usd": 0.000207,
+   "sure_sn": 0.58
+  },
+  {
+   "etiket": "sinif:P25b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 58,
+   "usd": 0.000182,
+   "sure_sn": 0.322
+  },
+  {
+   "etiket": "sinif:P26a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 990,
+   "cikis": 140,
+   "usd": 0.000233,
+   "sure_sn": 0.629
+  },
+  {
+   "etiket": "sinif:P26b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 986,
+   "cikis": 106,
+   "usd": 0.000211,
+   "sure_sn": 1.574
+  },
+  {
+   "etiket": "sinif:P27a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 187,
+   "usd": 0.00026,
+   "sure_sn": 0.688
+  },
+  {
+   "etiket": "sinif:P27b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 986,
+   "cikis": 134,
+   "usd": 0.000228,
+   "sure_sn": 0.421
+  },
+  {
+   "etiket": "sinif:P28a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 992,
+   "cikis": 202,
+   "usd": 0.00027,
+   "sure_sn": 1.609
+  },
+  {
+   "etiket": "sinif:P28b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 994,
+   "cikis": 131,
+   "usd": 0.000228,
+   "sure_sn": 0.431
+  },
+  {
+   "etiket": "sinif:P29a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 983,
+   "cikis": 127,
+   "usd": 0.000224,
+   "sure_sn": 0.446
+  },
+  {
+   "etiket": "sinif:P29b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 988,
+   "cikis": 97,
+   "usd": 0.000206,
+   "sure_sn": 0.301
+  },
+  {
+   "etiket": "sinif:P30a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1002,
+   "cikis": 129,
+   "usd": 0.000228,
+   "sure_sn": 0.655
+  },
+  {
+   "etiket": "sinif:P30b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1003,
+   "cikis": 121,
+   "usd": 0.000223,
+   "sure_sn": 0.625
+  },
+  {
+   "etiket": "sinif:P31a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 980,
+   "cikis": 226,
+   "usd": 0.000283,
+   "sure_sn": 0.838
+  },
+  {
+   "etiket": "sinif:P31b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 979,
+   "cikis": 186,
+   "usd": 0.000258,
+   "sure_sn": 0.499
+  },
+  {
+   "etiket": "sinif:P32a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 995,
+   "cikis": 138,
+   "usd": 0.000232,
+   "sure_sn": 0.677
+  },
+  {
+   "etiket": "sinif:P32b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 997,
+   "cikis": 154,
+   "usd": 0.000242,
+   "sure_sn": 0.627
+  },
+  {
+   "etiket": "sinif:P33a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 150,
+   "usd": 0.000238,
+   "sure_sn": 0.463
+  },
+  {
+   "etiket": "sinif:P33b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 168,
+   "usd": 0.000248,
+   "sure_sn": 0.698
+  },
+  {
+   "etiket": "sinif:P34a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 982,
+   "cikis": 104,
+   "usd": 0.00021,
+   "sure_sn": 0.352
+  },
+  {
+   "etiket": "sinif:P34b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 148,
+   "usd": 0.000237,
+   "sure_sn": 0.472
+  },
+  {
+   "etiket": "sinif:P35a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 983,
+   "cikis": 87,
+   "usd": 0.0002,
+   "sure_sn": 0.445
+  },
+  {
+   "etiket": "sinif:P35b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 162,
+   "usd": 0.000244,
+   "sure_sn": 0.641
+  },
+  {
+   "etiket": "sinif:P36a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 986,
+   "cikis": 142,
+   "usd": 0.000233,
+   "sure_sn": 0.794
+  },
+  {
+   "etiket": "sinif:P36b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 172,
+   "usd": 0.000251,
+   "sure_sn": 0.627
+  },
+  {
+   "etiket": "sinif:P37a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 988,
+   "cikis": 87,
+   "usd": 0.0002,
+   "sure_sn": 0.741
+  },
+  {
+   "etiket": "sinif:P37b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 139,
+   "usd": 0.000231,
+   "sure_sn": 0.465
+  },
+  {
+   "etiket": "sinif:P38a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 991,
+   "cikis": 94,
+   "usd": 0.000205,
+   "sure_sn": 0.579
+  },
+  {
+   "etiket": "sinif:P38b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 992,
+   "cikis": 134,
+   "usd": 0.000229,
+   "sure_sn": 0.475
+  },
+  {
+   "etiket": "sinif:P39a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 172,
+   "usd": 0.00025,
+   "sure_sn": 0.893
+  },
+  {
+   "etiket": "sinif:P39b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 127,
+   "usd": 0.000224,
+   "sure_sn": 0.371
+  },
+  {
+   "etiket": "sinif:P40a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 984,
+   "cikis": 141,
+   "usd": 0.000232,
+   "sure_sn": 0.744
+  },
+  {
+   "etiket": "sinif:P40b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 983,
+   "cikis": 158,
+   "usd": 0.000242,
+   "sure_sn": 1.111
+  },
+  {
+   "etiket": "sinif:P41a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 986,
+   "cikis": 134,
+   "usd": 0.000228,
+   "sure_sn": 0.587
+  },
+  {
+   "etiket": "sinif:P41b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 987,
+   "cikis": 170,
+   "usd": 0.00025,
+   "sure_sn": 0.535
+  },
+  {
+   "etiket": "sinif:P42a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 997,
+   "cikis": 189,
+   "usd": 0.000263,
+   "sure_sn": 0.785
+  },
+  {
+   "etiket": "sinif:P42b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 1001,
+   "cikis": 104,
+   "usd": 0.000213,
+   "sure_sn": 0.58
+  },
+  {
+   "etiket": "sinif:P43a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 983,
+   "cikis": 109,
+   "usd": 0.000213,
+   "sure_sn": 0.836
+  },
+  {
+   "etiket": "sinif:P43b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 986,
+   "cikis": 71,
+   "usd": 0.00019,
+   "sure_sn": 0.445
+  },
+  {
+   "etiket": "sinif:P44a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 996,
+   "cikis": 86,
+   "usd": 0.000201,
+   "sure_sn": 0.318
+  },
+  {
+   "etiket": "sinif:P44b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 999,
+   "cikis": 73,
+   "usd": 0.000194,
+   "sure_sn": 0.523
+  },
+  {
+   "etiket": "sinif:P45a",
+   "model": "openai/gpt-oss-120b",
+   "giris": 981,
+   "cikis": 160,
+   "usd": 0.000243,
+   "sure_sn": 0.423
+  },
+  {
+   "etiket": "sinif:P45b",
+   "model": "openai/gpt-oss-120b",
+   "giris": 985,
+   "cikis": 125,
+   "usd": 0.000223,
+   "sure_sn": 1.552
+  },
+  {
+   "etiket": "sinif:E01",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1002,
+   "cikis": 109,
+   "usd": 0.000108,
+   "sure_sn": 0.423
+  },
+  {
+   "etiket": "sinif:E02",
+   "model": "openai/gpt-oss-20b",
+   "giris": 993,
+   "cikis": 231,
+   "usd": 0.000144,
+   "sure_sn": 0.484
+  },
+  {
+   "etiket": "sinif:E03",
+   "model": "openai/gpt-oss-20b",
+   "giris": 994,
+   "cikis": 249,
+   "usd": 0.000149,
+   "sure_sn": 0.648
+  },
+  {
+   "etiket": "sinif:E04",
+   "model": "openai/gpt-oss-20b",
+   "giris": 994,
+   "cikis": 184,
+   "usd": 0.00013,
+   "sure_sn": 0.618
+  },
+  {
+   "etiket": "sinif:E05",
+   "model": "openai/gpt-oss-20b",
+   "giris": 987,
+   "cikis": 192,
+   "usd": 0.000132,
+   "sure_sn": 0.545
+  },
+  {
+   "etiket": "sinif:E06",
+   "model": "openai/gpt-oss-20b",
+   "giris": 986,
+   "cikis": 102,
+   "usd": 0.000105,
+   "sure_sn": 0.351
+  },
+  {
+   "etiket": "sinif:E07",
+   "model": "openai/gpt-oss-20b",
+   "giris": 998,
+   "cikis": 176,
+   "usd": 0.000128,
+   "sure_sn": 0.657
+  },
+  {
+   "etiket": "sinif:E08",
+   "model": "openai/gpt-oss-20b",
+   "giris": 986,
+   "cikis": 130,
+   "usd": 0.000113,
+   "sure_sn": 0.509
+  },
+  {
+   "etiket": "sinif:E09",
+   "model": "openai/gpt-oss-20b",
+   "giris": 987,
+   "cikis": 76,
+   "usd": 9.7e-05,
+   "sure_sn": 0.393
+  },
+  {
+   "etiket": "sinif:E10",
+   "model": "openai/gpt-oss-20b",
+   "giris": 998,
+   "cikis": 106,
+   "usd": 0.000107,
+   "sure_sn": 0.585
+  },
+  {
+   "etiket": "sinif:E11",
+   "model": "openai/gpt-oss-20b",
+   "giris": 994,
+   "cikis": 196,
+   "usd": 0.000133,
+   "sure_sn": 0.512
+  },
+  {
+   "etiket": "sinif:E12",
+   "model": "openai/gpt-oss-20b",
+   "giris": 979,
+   "cikis": 80,
+   "usd": 9.7e-05,
+   "sure_sn": 0.451
+  },
+  {
+   "etiket": "sinif:E13",
+   "model": "openai/gpt-oss-20b",
+   "giris": 976,
+   "cikis": 161,
+   "usd": 0.000121,
+   "sure_sn": 0.57
+  },
+  {
+   "etiket": "sinif:E14",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1014,
+   "cikis": 197,
+   "usd": 0.000135,
+   "sure_sn": 0.642
+  },
+  {
+   "etiket": "sinif:E15",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 106,
+   "usd": 0.000105,
+   "sure_sn": 1.018
+  },
+  {
+   "etiket": "sinif:E16",
+   "model": "openai/gpt-oss-20b",
+   "giris": 983,
+   "cikis": 101,
+   "usd": 0.000104,
+   "sure_sn": 0.493
+  },
+  {
+   "etiket": "sinif:E17",
+   "model": "openai/gpt-oss-20b",
+   "giris": 987,
+   "cikis": 76,
+   "usd": 9.7e-05,
+   "sure_sn": 0.589
+  },
+  {
+   "etiket": "sinif:E18",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 46,
+   "usd": 8.7e-05,
+   "sure_sn": 0.382
+  },
+  {
+   "etiket": "sinif:E19",
+   "model": "openai/gpt-oss-20b",
+   "giris": 992,
+   "cikis": 195,
+   "usd": 0.000133,
+   "sure_sn": 1.056
+  },
+  {
+   "etiket": "sinif:E20",
+   "model": "openai/gpt-oss-20b",
+   "giris": 980,
+   "cikis": 217,
+   "usd": 0.000139,
+   "sure_sn": 2.166
+  },
+  {
+   "etiket": "sinif:E21",
+   "model": "openai/gpt-oss-20b",
+   "giris": 977,
+   "cikis": 52,
+   "usd": 8.9e-05,
+   "sure_sn": 0.961
+  },
+  {
+   "etiket": "sinif:E22",
+   "model": "openai/gpt-oss-20b",
+   "giris": 978,
+   "cikis": 121,
+   "usd": 0.00011,
+   "sure_sn": 0.467
+  },
+  {
+   "etiket": "sinif:E23",
+   "model": "openai/gpt-oss-20b",
+   "giris": 983,
+   "cikis": 126,
+   "usd": 0.000112,
+   "sure_sn": 0.345
+  },
+  {
+   "etiket": "sinif:E24",
+   "model": "openai/gpt-oss-20b",
+   "giris": 977,
+   "cikis": 78,
+   "usd": 9.7e-05,
+   "sure_sn": 0.522
+  },
+  {
+   "etiket": "sinif:E25",
+   "model": "openai/gpt-oss-20b",
+   "giris": 982,
+   "cikis": 49,
+   "usd": 8.8e-05,
+   "sure_sn": 0.246
+  },
+  {
+   "etiket": "sinif:E26",
+   "model": "openai/gpt-oss-20b",
+   "giris": 977,
+   "cikis": 163,
+   "usd": 0.000122,
+   "sure_sn": 0.481
+  },
+  {
+   "etiket": "sinif:E27",
+   "model": "openai/gpt-oss-20b",
+   "giris": 991,
+   "cikis": 46,
+   "usd": 8.8e-05,
+   "sure_sn": 0.45
+  },
+  {
+   "etiket": "sinif:E28",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 113,
+   "usd": 0.000108,
+   "sure_sn": 0.438
+  },
+  {
+   "etiket": "sinif:E29",
+   "model": "openai/gpt-oss-20b",
+   "giris": 977,
+   "cikis": 69,
+   "usd": 9.4e-05,
+   "sure_sn": 0.262
+  },
+  {
+   "etiket": "sinif:E30",
+   "model": "openai/gpt-oss-20b",
+   "giris": 978,
+   "cikis": 68,
+   "usd": 9.4e-05,
+   "sure_sn": 0.275
+  },
+  {
+   "etiket": "sinif:P01",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1021,
+   "cikis": 172,
+   "usd": 0.000128,
+   "sure_sn": 0.676
+  },
+  {
+   "etiket": "sinif:P02",
+   "model": "openai/gpt-oss-20b",
+   "giris": 996,
+   "cikis": 101,
+   "usd": 0.000105,
+   "sure_sn": 0.51
+  },
+  {
+   "etiket": "sinif:P03",
+   "model": "openai/gpt-oss-20b",
+   "giris": 988,
+   "cikis": 150,
+   "usd": 0.000119,
+   "sure_sn": 0.555
+  },
+  {
+   "etiket": "sinif:P04",
+   "model": "openai/gpt-oss-20b",
+   "giris": 990,
+   "cikis": 140,
+   "usd": 0.000116,
+   "sure_sn": 0.311
+  },
+  {
+   "etiket": "sinif:P05",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 93,
+   "usd": 0.000102,
+   "sure_sn": 1.194
+  },
+  {
+   "etiket": "sinif:P06",
+   "model": "openai/gpt-oss-20b",
+   "giris": 987,
+   "cikis": 208,
+   "usd": 0.000136,
+   "sure_sn": 0.586
+  },
+  {
+   "etiket": "sinif:P07",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 191,
+   "usd": 0.000131,
+   "sure_sn": 0.583
+  },
+  {
+   "etiket": "sinif:P08",
+   "model": "openai/gpt-oss-20b",
+   "giris": 989,
+   "cikis": 86,
+   "usd": 0.0001,
+   "sure_sn": 0.541
+  },
+  {
+   "etiket": "sinif:P09",
+   "model": "openai/gpt-oss-20b",
+   "giris": 982,
+   "cikis": 130,
+   "usd": 0.000113,
+   "sure_sn": 0.592
+  },
+  {
+   "etiket": "sinif:P10",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1000,
+   "cikis": 84,
+   "usd": 0.0001,
+   "sure_sn": 0.304
+  },
+  {
+   "etiket": "sinif:P11",
+   "model": "openai/gpt-oss-20b",
+   "giris": 982,
+   "cikis": 51,
+   "usd": 8.9e-05,
+   "sure_sn": 0.487
+  },
+  {
+   "etiket": "sinif:P12",
+   "model": "openai/gpt-oss-20b",
+   "giris": 978,
+   "cikis": 144,
+   "usd": 0.000117,
+   "sure_sn": 0.335
+  },
+  {
+   "etiket": "sinif:P13",
+   "model": "openai/gpt-oss-20b",
+   "giris": 992,
+   "cikis": 236,
+   "usd": 0.000145,
+   "sure_sn": 0.702
+  },
+  {
+   "etiket": "sinif:P14",
+   "model": "openai/gpt-oss-20b",
+   "giris": 990,
+   "cikis": 96,
+   "usd": 0.000103,
+   "sure_sn": 0.439
+  },
+  {
+   "etiket": "sinif:P15",
+   "model": "openai/gpt-oss-20b",
+   "giris": 978,
+   "cikis": 115,
+   "usd": 0.000108,
+   "sure_sn": 0.502
+  },
+  {
+   "etiket": "sinif:P16",
+   "model": "openai/gpt-oss-20b",
+   "giris": 989,
+   "cikis": 206,
+   "usd": 0.000136,
+   "sure_sn": 1.535
+  },
+  {
+   "etiket": "sinif:P17",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 114,
+   "usd": 0.000108,
+   "sure_sn": 0.558
+  },
+  {
+   "etiket": "sinif:P18",
+   "model": "openai/gpt-oss-20b",
+   "giris": 980,
+   "cikis": 103,
+   "usd": 0.000104,
+   "sure_sn": 0.428
+  },
+  {
+   "etiket": "sinif:P19",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 114,
+   "usd": 0.000108,
+   "sure_sn": 0.318
+  },
+  {
+   "etiket": "sinif:P20",
+   "model": "openai/gpt-oss-20b",
+   "giris": 989,
+   "cikis": 129,
+   "usd": 0.000113,
+   "sure_sn": 0.397
+  },
+  {
+   "etiket": "sinif:P21",
+   "model": "openai/gpt-oss-20b",
+   "giris": 976,
+   "cikis": 133,
+   "usd": 0.000113,
+   "sure_sn": 0.494
+  },
+  {
+   "etiket": "sinif:P22",
+   "model": "openai/gpt-oss-20b",
+   "giris": 979,
+   "cikis": 138,
+   "usd": 0.000115,
+   "sure_sn": 0.576
+  },
+  {
+   "etiket": "sinif:P23",
+   "model": "openai/gpt-oss-20b",
+   "giris": 977,
+   "cikis": 103,
+   "usd": 0.000104,
+   "sure_sn": 0.237
+  },
+  {
+   "etiket": "sinif:P24",
+   "model": "openai/gpt-oss-20b",
+   "giris": 996,
+   "cikis": 107,
+   "usd": 0.000107,
+   "sure_sn": 0.503
+  },
+  {
+   "etiket": "sinif:P25",
+   "model": "openai/gpt-oss-20b",
+   "giris": 975,
+   "cikis": 60,
+   "usd": 9.1e-05,
+   "sure_sn": 0.496
+  },
+  {
+   "etiket": "sinif:P26",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 127,
+   "usd": 0.000112,
+   "sure_sn": 0.318
+  },
+  {
+   "etiket": "sinif:P27",
+   "model": "openai/gpt-oss-20b",
+   "giris": 976,
+   "cikis": 118,
+   "usd": 0.000109,
+   "sure_sn": 0.736
+  },
+  {
+   "etiket": "sinif:P28",
+   "model": "openai/gpt-oss-20b",
+   "giris": 988,
+   "cikis": 86,
+   "usd": 0.0001,
+   "sure_sn": 0.458
+  },
+  {
+   "etiket": "sinif:P29",
+   "model": "openai/gpt-oss-20b",
+   "giris": 982,
+   "cikis": 109,
+   "usd": 0.000106,
+   "sure_sn": 0.446
+  },
+  {
+   "etiket": "sinif:P30",
+   "model": "openai/gpt-oss-20b",
+   "giris": 991,
+   "cikis": 197,
+   "usd": 0.000133,
+   "sure_sn": 0.562
+  },
+  {
+   "etiket": "sinif:P31",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 50,
+   "usd": 8.9e-05,
+   "sure_sn": 0.433
+  },
+  {
+   "etiket": "sinif:P32",
+   "model": "openai/gpt-oss-20b",
+   "giris": 989,
+   "cikis": 227,
+   "usd": 0.000142,
+   "sure_sn": 0.603
+  },
+  {
+   "etiket": "sinif:P33",
+   "model": "openai/gpt-oss-20b",
+   "giris": 983,
+   "cikis": 116,
+   "usd": 0.000109,
+   "sure_sn": 0.452
+  },
+  {
+   "etiket": "sinif:P34",
+   "model": "openai/gpt-oss-20b",
+   "giris": 980,
+   "cikis": 196,
+   "usd": 0.000132,
+   "sure_sn": 0.559
+  },
+  {
+   "etiket": "sinif:P35",
+   "model": "openai/gpt-oss-20b",
+   "giris": 982,
+   "cikis": 120,
+   "usd": 0.00011,
+   "sure_sn": 0.525
+  },
+  {
+   "etiket": "sinif:P36",
+   "model": "openai/gpt-oss-20b",
+   "giris": 988,
+   "cikis": 104,
+   "usd": 0.000105,
+   "sure_sn": 0.294
+  },
+  {
+   "etiket": "sinif:P37",
+   "model": "openai/gpt-oss-20b",
+   "giris": 978,
+   "cikis": 257,
+   "usd": 0.00015,
+   "sure_sn": 0.576
+  },
+  {
+   "etiket": "sinif:P38",
+   "model": "openai/gpt-oss-20b",
+   "giris": 986,
+   "cikis": 119,
+   "usd": 0.00011,
+   "sure_sn": 0.832
+  },
+  {
+   "etiket": "sinif:P39",
+   "model": "openai/gpt-oss-20b",
+   "giris": 979,
+   "cikis": 126,
+   "usd": 0.000111,
+   "sure_sn": 0.448
+  },
+  {
+   "etiket": "sinif:P40",
+   "model": "openai/gpt-oss-20b",
+   "giris": 982,
+   "cikis": 83,
+   "usd": 9.9e-05,
+   "sure_sn": 0.488
+  },
+  {
+   "etiket": "sinif:P41",
+   "model": "openai/gpt-oss-20b",
+   "giris": 987,
+   "cikis": 104,
+   "usd": 0.000105,
+   "sure_sn": 0.428
+  },
+  {
+   "etiket": "sinif:P42",
+   "model": "openai/gpt-oss-20b",
+   "giris": 993,
+   "cikis": 132,
+   "usd": 0.000114,
+   "sure_sn": 0.382
+  },
+  {
+   "etiket": "sinif:P43",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 130,
+   "usd": 0.000113,
+   "sure_sn": 0.33
+  },
+  {
+   "etiket": "sinif:P44",
+   "model": "openai/gpt-oss-20b",
+   "giris": 993,
+   "cikis": 82,
+   "usd": 9.9e-05,
+   "sure_sn": 0.461
+  },
+  {
+   "etiket": "sinif:P45",
+   "model": "openai/gpt-oss-20b",
+   "giris": 979,
+   "cikis": 94,
+   "usd": 0.000102,
+   "sure_sn": 0.563
+  },
+  {
+   "etiket": "sinif:E01a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1010,
+   "cikis": 103,
+   "usd": 0.000107,
+   "sure_sn": 0.407
+  },
+  {
+   "etiket": "sinif:E01b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1008,
+   "cikis": 163,
+   "usd": 0.000124,
+   "sure_sn": 0.361
+  },
+  {
+   "etiket": "sinif:E02a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 994,
+   "cikis": 106,
+   "usd": 0.000106,
+   "sure_sn": 1.023
+  },
+  {
+   "etiket": "sinif:E02b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 995,
+   "cikis": 78,
+   "usd": 9.8e-05,
+   "sure_sn": 0.356
+  },
+  {
+   "etiket": "sinif:E03a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1004,
+   "cikis": 143,
+   "usd": 0.000118,
+   "sure_sn": 1.177
+  },
+  {
+   "etiket": "sinif:E03b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1001,
+   "cikis": 70,
+   "usd": 9.6e-05,
+   "sure_sn": 0.346
+  },
+  {
+   "etiket": "sinif:E04a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 998,
+   "cikis": 174,
+   "usd": 0.000127,
+   "sure_sn": 0.562
+  },
+  {
+   "etiket": "sinif:E04b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1003,
+   "cikis": 151,
+   "usd": 0.000121,
+   "sure_sn": 0.86
+  },
+  {
+   "etiket": "sinif:E05a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 993,
+   "cikis": 165,
+   "usd": 0.000124,
+   "sure_sn": 0.996
+  },
+  {
+   "etiket": "sinif:E05b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 998,
+   "cikis": 139,
+   "usd": 0.000117,
+   "sure_sn": 0.325
+  },
+  {
+   "etiket": "sinif:E07a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1005,
+   "cikis": 216,
+   "usd": 0.00014,
+   "sure_sn": 0.572
+  },
+  {
+   "etiket": "sinif:E07b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1010,
+   "cikis": 210,
+   "usd": 0.000139,
+   "sure_sn": 0.553
+  },
+  {
+   "etiket": "sinif:E08a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 987,
+   "cikis": 160,
+   "usd": 0.000122,
+   "sure_sn": 0.39
+  },
+  {
+   "etiket": "sinif:E08b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 986,
+   "cikis": 129,
+   "usd": 0.000113,
+   "sure_sn": 0.653
+  },
+  {
+   "etiket": "sinif:E09a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 993,
+   "cikis": 188,
+   "usd": 0.000131,
+   "sure_sn": 0.521
+  },
+  {
+   "etiket": "sinif:E09b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 996,
+   "cikis": 164,
+   "usd": 0.000124,
+   "sure_sn": 0.943
+  },
+  {
+   "etiket": "sinif:E10a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1000,
+   "cikis": 138,
+   "usd": 0.000116,
+   "sure_sn": 0.345
+  },
+  {
+   "etiket": "sinif:E10b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1008,
+   "cikis": 271,
+   "usd": 0.000157,
+   "sure_sn": 0.663
+  },
+  {
+   "etiket": "sinif:E11a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 997,
+   "cikis": 235,
+   "usd": 0.000145,
+   "sure_sn": 0.536
+  },
+  {
+   "etiket": "sinif:E11b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 996,
+   "cikis": 163,
+   "usd": 0.000124,
+   "sure_sn": 0.586
+  },
+  {
+   "etiket": "sinif:E12a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 85,
+   "usd": 9.9e-05,
+   "sure_sn": 0.461
+  },
+  {
+   "etiket": "sinif:E12b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 988,
+   "cikis": 120,
+   "usd": 0.00011,
+   "sure_sn": 0.291
+  },
+  {
+   "etiket": "sinif:E13a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 978,
+   "cikis": 124,
+   "usd": 0.000111,
+   "sure_sn": 0.444
+  },
+  {
+   "etiket": "sinif:E13b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 979,
+   "cikis": 81,
+   "usd": 9.8e-05,
+   "sure_sn": 0.239
+  },
+  {
+   "etiket": "sinif:E14a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1018,
+   "cikis": 171,
+   "usd": 0.000128,
+   "sure_sn": 0.467
+  },
+  {
+   "etiket": "sinif:E14b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1017,
+   "cikis": 133,
+   "usd": 0.000116,
+   "sure_sn": 0.552
+  },
+  {
+   "etiket": "sinif:E15a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 121,
+   "usd": 0.00011,
+   "sure_sn": 0.495
+  },
+  {
+   "etiket": "sinif:E15b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 979,
+   "cikis": 70,
+   "usd": 9.4e-05,
+   "sure_sn": 0.543
+  },
+  {
+   "etiket": "sinif:E16a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 987,
+   "cikis": 109,
+   "usd": 0.000107,
+   "sure_sn": 0.508
+  },
+  {
+   "etiket": "sinif:E16b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 88,
+   "usd": 0.0001,
+   "sure_sn": 0.447
+  },
+  {
+   "etiket": "sinif:E17a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 993,
+   "cikis": 179,
+   "usd": 0.000128,
+   "sure_sn": 0.872
+  },
+  {
+   "etiket": "sinif:E17b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 996,
+   "cikis": 164,
+   "usd": 0.000124,
+   "sure_sn": 0.462
+  },
+  {
+   "etiket": "sinif:E18a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 67,
+   "usd": 9.4e-05,
+   "sure_sn": 0.377
+  },
+  {
+   "etiket": "sinif:E18b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 86,
+   "usd": 9.9e-05,
+   "sure_sn": 0.349
+  },
+  {
+   "etiket": "sinif:E19a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 995,
+   "cikis": 201,
+   "usd": 0.000135,
+   "sure_sn": 0.702
+  },
+  {
+   "etiket": "sinif:E19b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 994,
+   "cikis": 159,
+   "usd": 0.000122,
+   "sure_sn": 0.988
+  },
+  {
+   "etiket": "sinif:E20a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 177,
+   "usd": 0.000127,
+   "sure_sn": 0.527
+  },
+  {
+   "etiket": "sinif:E20b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 983,
+   "cikis": 72,
+   "usd": 9.5e-05,
+   "sure_sn": 0.58
+  },
+  {
+   "etiket": "sinif:E21a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 978,
+   "cikis": 113,
+   "usd": 0.000107,
+   "sure_sn": 0.298
+  },
+  {
+   "etiket": "sinif:E21b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 978,
+   "cikis": 90,
+   "usd": 0.0001,
+   "sure_sn": 0.305
+  },
+  {
+   "etiket": "sinif:E22a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 983,
+   "cikis": 93,
+   "usd": 0.000102,
+   "sure_sn": 0.446
+  },
+  {
+   "etiket": "sinif:E22b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 982,
+   "cikis": 130,
+   "usd": 0.000113,
+   "sure_sn": 0.516
+  },
+  {
+   "etiket": "sinif:E23a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 126,
+   "usd": 0.000112,
+   "sure_sn": 0.457
+  },
+  {
+   "etiket": "sinif:E23b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 106,
+   "usd": 0.000106,
+   "sure_sn": 0.348
+  },
+  {
+   "etiket": "sinif:E24a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 982,
+   "cikis": 132,
+   "usd": 0.000113,
+   "sure_sn": 0.665
+  },
+  {
+   "etiket": "sinif:E24b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 117,
+   "usd": 0.000109,
+   "sure_sn": 0.253
+  },
+  {
+   "etiket": "sinif:E25a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 987,
+   "cikis": 163,
+   "usd": 0.000123,
+   "sure_sn": 1.084
+  },
+  {
+   "etiket": "sinif:E25b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 988,
+   "cikis": 113,
+   "usd": 0.000108,
+   "sure_sn": 0.246
+  },
+  {
+   "etiket": "sinif:E26a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 979,
+   "cikis": 155,
+   "usd": 0.00012,
+   "sure_sn": 0.502
+  },
+  {
+   "etiket": "sinif:E26b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 150,
+   "usd": 0.000119,
+   "sure_sn": 0.413
+  },
+  {
+   "etiket": "sinif:E27a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1002,
+   "cikis": 290,
+   "usd": 0.000162,
+   "sure_sn": 0.541
+  },
+  {
+   "etiket": "sinif:E27b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1004,
+   "cikis": 91,
+   "usd": 0.000103,
+   "sure_sn": 0.28
+  },
+  {
+   "etiket": "sinif:E28a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 988,
+   "cikis": 114,
+   "usd": 0.000108,
+   "sure_sn": 0.477
+  },
+  {
+   "etiket": "sinif:E28b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 989,
+   "cikis": 113,
+   "usd": 0.000108,
+   "sure_sn": 0.485
+  },
+  {
+   "etiket": "sinif:E29a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 983,
+   "cikis": 130,
+   "usd": 0.000113,
+   "sure_sn": 0.507
+  },
+  {
+   "etiket": "sinif:E29b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 983,
+   "cikis": 60,
+   "usd": 9.2e-05,
+   "sure_sn": 0.515
+  },
+  {
+   "etiket": "sinif:E30a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 980,
+   "cikis": 48,
+   "usd": 8.8e-05,
+   "sure_sn": 0.435
+  },
+  {
+   "etiket": "sinif:E30b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 980,
+   "cikis": 91,
+   "usd": 0.000101,
+   "sure_sn": 0.493
+  },
+  {
+   "etiket": "sinif:P01a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1031,
+   "cikis": 356,
+   "usd": 0.000184,
+   "sure_sn": 0.732
+  },
+  {
+   "etiket": "sinif:P01b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1032,
+   "cikis": 135,
+   "usd": 0.000118,
+   "sure_sn": 0.37
+  },
+  {
+   "etiket": "sinif:P02a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 999,
+   "cikis": 110,
+   "usd": 0.000108,
+   "sure_sn": 0.483
+  },
+  {
+   "etiket": "sinif:P02b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1003,
+   "cikis": 128,
+   "usd": 0.000114,
+   "sure_sn": 0.439
+  },
+  {
+   "etiket": "sinif:P03a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 994,
+   "cikis": 97,
+   "usd": 0.000104,
+   "sure_sn": 0.909
+  },
+  {
+   "etiket": "sinif:P03b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 999,
+   "cikis": 148,
+   "usd": 0.000119,
+   "sure_sn": 0.36
+  },
+  {
+   "etiket": "sinif:P04a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 993,
+   "cikis": 162,
+   "usd": 0.000123,
+   "sure_sn": 1.139
+  },
+  {
+   "etiket": "sinif:P04b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 995,
+   "cikis": 185,
+   "usd": 0.00013,
+   "sure_sn": 0.546
+  },
+  {
+   "etiket": "sinif:P05a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 992,
+   "cikis": 327,
+   "usd": 0.000172,
+   "sure_sn": 0.722
+  },
+  {
+   "etiket": "sinif:P05b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 991,
+   "cikis": 242,
+   "usd": 0.000147,
+   "sure_sn": 0.666
+  },
+  {
+   "etiket": "sinif:P06a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 992,
+   "cikis": 193,
+   "usd": 0.000132,
+   "sure_sn": 0.39
+  },
+  {
+   "etiket": "sinif:P06b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 989,
+   "cikis": 253,
+   "usd": 0.00015,
+   "sure_sn": 0.835
+  },
+  {
+   "etiket": "sinif:P07a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 986,
+   "cikis": 117,
+   "usd": 0.000109,
+   "sure_sn": 0.685
+  },
+  {
+   "etiket": "sinif:P07b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 139,
+   "usd": 0.000116,
+   "sure_sn": 0.589
+  },
+  {
+   "etiket": "sinif:P08a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 994,
+   "cikis": 107,
+   "usd": 0.000107,
+   "sure_sn": 0.492
+  },
+  {
+   "etiket": "sinif:P08b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 994,
+   "cikis": 95,
+   "usd": 0.000103,
+   "sure_sn": 0.519
+  },
+  {
+   "etiket": "sinif:P09a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 102,
+   "usd": 0.000104,
+   "sure_sn": 0.45
+  },
+  {
+   "etiket": "sinif:P09b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 991,
+   "cikis": 105,
+   "usd": 0.000106,
+   "sure_sn": 0.533
+  },
+  {
+   "etiket": "sinif:P10a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1008,
+   "cikis": 153,
+   "usd": 0.000121,
+   "sure_sn": 0.567
+  },
+  {
+   "etiket": "sinif:P10b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1004,
+   "cikis": 59,
+   "usd": 9.3e-05,
+   "sure_sn": 0.231
+  },
+  {
+   "etiket": "sinif:P11a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 51,
+   "usd": 8.9e-05,
+   "sure_sn": 0.475
+  },
+  {
+   "etiket": "sinif:P11b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 992,
+   "cikis": 165,
+   "usd": 0.000124,
+   "sure_sn": 0.597
+  },
+  {
+   "etiket": "sinif:P12a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 980,
+   "cikis": 98,
+   "usd": 0.000103,
+   "sure_sn": 0.732
+  },
+  {
+   "etiket": "sinif:P12b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 150,
+   "usd": 0.000119,
+   "sure_sn": 1.108
+  },
+  {
+   "etiket": "sinif:P13a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1003,
+   "cikis": 85,
+   "usd": 0.000101,
+   "sure_sn": 0.479
+  },
+  {
+   "etiket": "sinif:P13b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1008,
+   "cikis": 217,
+   "usd": 0.000141,
+   "sure_sn": 0.531
+  },
+  {
+   "etiket": "sinif:P14a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 997,
+   "cikis": 173,
+   "usd": 0.000127,
+   "sure_sn": 0.568
+  },
+  {
+   "etiket": "sinif:P14b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 994,
+   "cikis": 208,
+   "usd": 0.000137,
+   "sure_sn": 0.833
+  },
+  {
+   "etiket": "sinif:P15a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 982,
+   "cikis": 119,
+   "usd": 0.000109,
+   "sure_sn": 0.478
+  },
+  {
+   "etiket": "sinif:P15b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 983,
+   "cikis": 64,
+   "usd": 9.3e-05,
+   "sure_sn": 0.678
+  },
+  {
+   "etiket": "sinif:P16a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 993,
+   "cikis": 109,
+   "usd": 0.000107,
+   "sure_sn": 0.511
+  },
+  {
+   "etiket": "sinif:P16b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 992,
+   "cikis": 295,
+   "usd": 0.000163,
+   "sure_sn": 0.649
+  },
+  {
+   "etiket": "sinif:P17a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 982,
+   "cikis": 136,
+   "usd": 0.000114,
+   "sure_sn": 0.444
+  },
+  {
+   "etiket": "sinif:P17b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 140,
+   "usd": 0.000116,
+   "sure_sn": 0.5
+  },
+  {
+   "etiket": "sinif:P18a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 986,
+   "cikis": 127,
+   "usd": 0.000112,
+   "sure_sn": 0.619
+  },
+  {
+   "etiket": "sinif:P18b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 990,
+   "cikis": 191,
+   "usd": 0.000132,
+   "sure_sn": 0.744
+  },
+  {
+   "etiket": "sinif:P19a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 997,
+   "cikis": 71,
+   "usd": 9.6e-05,
+   "sure_sn": 0.416
+  },
+  {
+   "etiket": "sinif:P19b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 994,
+   "cikis": 107,
+   "usd": 0.000107,
+   "sure_sn": 0.522
+  },
+  {
+   "etiket": "sinif:P20a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 989,
+   "cikis": 61,
+   "usd": 9.2e-05,
+   "sure_sn": 1.018
+  },
+  {
+   "etiket": "sinif:P20b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 993,
+   "cikis": 80,
+   "usd": 9.8e-05,
+   "sure_sn": 0.643
+  },
+  {
+   "etiket": "sinif:P21a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 977,
+   "cikis": 242,
+   "usd": 0.000146,
+   "sure_sn": 0.503
+  },
+  {
+   "etiket": "sinif:P21b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 103,
+   "usd": 0.000104,
+   "sure_sn": 2.028
+  },
+  {
+   "etiket": "sinif:P22a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 229,
+   "usd": 0.000142,
+   "sure_sn": 0.538
+  },
+  {
+   "etiket": "sinif:P22b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 987,
+   "cikis": 170,
+   "usd": 0.000125,
+   "sure_sn": 0.569
+  },
+  {
+   "etiket": "sinif:P23a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 142,
+   "usd": 0.000116,
+   "sure_sn": 0.894
+  },
+  {
+   "etiket": "sinif:P23b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 979,
+   "cikis": 140,
+   "usd": 0.000115,
+   "sure_sn": 0.564
+  },
+  {
+   "etiket": "sinif:P24a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1000,
+   "cikis": 145,
+   "usd": 0.000118,
+   "sure_sn": 0.595
+  },
+  {
+   "etiket": "sinif:P24b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 998,
+   "cikis": 133,
+   "usd": 0.000115,
+   "sure_sn": 0.377
+  },
+  {
+   "etiket": "sinif:P25a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 986,
+   "cikis": 44,
+   "usd": 8.7e-05,
+   "sure_sn": 0.483
+  },
+  {
+   "etiket": "sinif:P25b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 47,
+   "usd": 8.8e-05,
+   "sure_sn": 0.856
+  },
+  {
+   "etiket": "sinif:P26a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 990,
+   "cikis": 110,
+   "usd": 0.000107,
+   "sure_sn": 0.487
+  },
+  {
+   "etiket": "sinif:P26b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 986,
+   "cikis": 102,
+   "usd": 0.000105,
+   "sure_sn": 0.513
+  },
+  {
+   "etiket": "sinif:P27a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 193,
+   "usd": 0.000132,
+   "sure_sn": 0.528
+  },
+  {
+   "etiket": "sinif:P27b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 986,
+   "cikis": 247,
+   "usd": 0.000148,
+   "sure_sn": 0.611
+  },
+  {
+   "etiket": "sinif:P28a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 992,
+   "cikis": 190,
+   "usd": 0.000131,
+   "sure_sn": 0.463
+  },
+  {
+   "etiket": "sinif:P28b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 994,
+   "cikis": 157,
+   "usd": 0.000122,
+   "sure_sn": 0.476
+  },
+  {
+   "etiket": "sinif:P29a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 983,
+   "cikis": 187,
+   "usd": 0.00013,
+   "sure_sn": 0.371
+  },
+  {
+   "etiket": "sinif:P29b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 988,
+   "cikis": 188,
+   "usd": 0.000131,
+   "sure_sn": 0.442
+  },
+  {
+   "etiket": "sinif:P30a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1002,
+   "cikis": 292,
+   "usd": 0.000163,
+   "sure_sn": 1.608
+  },
+  {
+   "etiket": "sinif:P30b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1003,
+   "cikis": 91,
+   "usd": 0.000103,
+   "sure_sn": 0.375
+  },
+  {
+   "etiket": "sinif:P31a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 980,
+   "cikis": 166,
+   "usd": 0.000123,
+   "sure_sn": 0.325
+  },
+  {
+   "etiket": "sinif:P31b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 979,
+   "cikis": 111,
+   "usd": 0.000107,
+   "sure_sn": 0.366
+  },
+  {
+   "etiket": "sinif:P32a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 995,
+   "cikis": 180,
+   "usd": 0.000129,
+   "sure_sn": 0.628
+  },
+  {
+   "etiket": "sinif:P32b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 997,
+   "cikis": 238,
+   "usd": 0.000146,
+   "sure_sn": 0.445
+  },
+  {
+   "etiket": "sinif:P33a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 135,
+   "usd": 0.000114,
+   "sure_sn": 0.305
+  },
+  {
+   "etiket": "sinif:P33b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 176,
+   "usd": 0.000126,
+   "sure_sn": 1.58
+  },
+  {
+   "etiket": "sinif:P34a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 982,
+   "cikis": 77,
+   "usd": 9.7e-05,
+   "sure_sn": 0.596
+  },
+  {
+   "etiket": "sinif:P34b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 120,
+   "usd": 0.00011,
+   "sure_sn": 0.525
+  },
+  {
+   "etiket": "sinif:P35a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 983,
+   "cikis": 119,
+   "usd": 0.000109,
+   "sure_sn": 0.333
+  },
+  {
+   "etiket": "sinif:P35b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 151,
+   "usd": 0.000119,
+   "sure_sn": 0.651
+  },
+  {
+   "etiket": "sinif:P36a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 986,
+   "cikis": 231,
+   "usd": 0.000143,
+   "sure_sn": 0.718
+  },
+  {
+   "etiket": "sinif:P36b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 125,
+   "usd": 0.000111,
+   "sure_sn": 0.429
+  },
+  {
+   "etiket": "sinif:P37a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 988,
+   "cikis": 113,
+   "usd": 0.000108,
+   "sure_sn": 0.464
+  },
+  {
+   "etiket": "sinif:P37b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 241,
+   "usd": 0.000146,
+   "sure_sn": 0.6
+  },
+  {
+   "etiket": "sinif:P38a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 991,
+   "cikis": 114,
+   "usd": 0.000109,
+   "sure_sn": 0.361
+  },
+  {
+   "etiket": "sinif:P38b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 992,
+   "cikis": 107,
+   "usd": 0.000107,
+   "sure_sn": 0.262
+  },
+  {
+   "etiket": "sinif:P39a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 116,
+   "usd": 0.000108,
+   "sure_sn": 0.28
+  },
+  {
+   "etiket": "sinif:P39b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 131,
+   "usd": 0.000113,
+   "sure_sn": 0.31
+  },
+  {
+   "etiket": "sinif:P40a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 984,
+   "cikis": 129,
+   "usd": 0.000112,
+   "sure_sn": 0.583
+  },
+  {
+   "etiket": "sinif:P40b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 983,
+   "cikis": 194,
+   "usd": 0.000132,
+   "sure_sn": 0.537
+  },
+  {
+   "etiket": "sinif:P41a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 986,
+   "cikis": 102,
+   "usd": 0.000105,
+   "sure_sn": 0.38
+  },
+  {
+   "etiket": "sinif:P41b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 987,
+   "cikis": 141,
+   "usd": 0.000116,
+   "sure_sn": 0.487
+  },
+  {
+   "etiket": "sinif:P42a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 997,
+   "cikis": 126,
+   "usd": 0.000113,
+   "sure_sn": 0.635
+  },
+  {
+   "etiket": "sinif:P42b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 1001,
+   "cikis": 200,
+   "usd": 0.000135,
+   "sure_sn": 0.529
+  },
+  {
+   "etiket": "sinif:P43a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 983,
+   "cikis": 166,
+   "usd": 0.000124,
+   "sure_sn": 0.546
+  },
+  {
+   "etiket": "sinif:P43b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 986,
+   "cikis": 122,
+   "usd": 0.000111,
+   "sure_sn": 1.575
+  },
+  {
+   "etiket": "sinif:P44a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 996,
+   "cikis": 135,
+   "usd": 0.000115,
+   "sure_sn": 0.408
+  },
+  {
+   "etiket": "sinif:P44b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 999,
+   "cikis": 154,
+   "usd": 0.000121,
+   "sure_sn": 0.353
+  },
+  {
+   "etiket": "sinif:P45a",
+   "model": "openai/gpt-oss-20b",
+   "giris": 981,
+   "cikis": 151,
+   "usd": 0.000119,
+   "sure_sn": 0.467
+  },
+  {
+   "etiket": "sinif:P45b",
+   "model": "openai/gpt-oss-20b",
+   "giris": 985,
+   "cikis": 210,
+   "usd": 0.000137,
+   "sure_sn": 0.542
+  }
+ ],
+ "toplam_usd": 0.099412,
+ "butce_usd": 0.15
+}

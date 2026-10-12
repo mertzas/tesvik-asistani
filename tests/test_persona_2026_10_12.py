@@ -354,3 +354,45 @@ def test_kapali_cagri_eslesme_listesinde_geride(db_session):
     sonuc = {e.tesvik.id: e for e in esles(p, db_session, limit=10_000)}
     assert sonuc[952].siralama < sonuc[951].siralama
     assert any("Başvuru dönemi şu an kapalı" in x for x in sonuc[952].eksik_kriterler)
+
+
+
+# ------------------------------------------------------------------ beşinci hakem turu bulguları
+def test_arge_personeli_sarti_toplam_calisanla_karsilanmaz():
+    sart = "Ar-Ge merkezi: en az elli tam zaman eşdeğer Ar-Ge personeli istihdam edilmelidir"
+    p = FinancialProfile(sektor="imalat", sirket_turu="anonim", calisan_sayisi=65, yillik_ciro=210e6)
+    assert yerel_danisman._profilden_karsilanan(sart, p) is None
+    assert yerel_danisman._KILIT.search(sart)
+
+
+def test_orta_olcekli_firmanin_trl_projesi_girisim_degil():
+    from app.girisim import girisim_modu_mu
+    buyuk = FinancialProfile(sektor="imalat", sirket_turu="anonim", calisan_sayisi=65, yillik_ciro=210e6, trl=5)
+    kucuk = FinancialProfile(sektor="arge", sirket_turu="limited", calisan_sayisi=4, yillik_ciro=2e6, trl=5)
+    assert not girisim_modu_mu(buyuk, "Ar-Ge merkezi kurmanın şartları neler?")
+    assert girisim_modu_mu(kucuk, "Ar-Ge merkezi kurmanın şartları neler?")
+
+
+def test_tarsim_urun_orani_kayittaki_listeden():
+    t = _t(kurum="TARSİM", baslik="TARSİM — Devlet Destekli Tarım Sigortası", kontrol_listesi=[
+        {"tur": "bilgi", "metin": "Yüzde 70 prim desteği: açık alanda yetiştirilen meyveler, domates, biber ve patates."},
+        {"tur": "bilgi", "metin": "Kayısı, elma ve vişnede kış donu zararı risk priminin yüzde 70'i devletçe karşılanır."}])
+    cilek = yerel_danisman.sigorta_orani_satiri(t, FinancialProfile(sektor="tarim", urun_turu="çilek"))
+    assert "%50" in cilek and "kayısı, elma, vişne" in cilek and "bu listede yok" in cilek
+    assert "%70'i" in yerel_danisman.sigorta_orani_satiri(t, FinancialProfile(sektor="tarim", urun_turu="domates"))
+    assert "kış donu riskinde %70" in yerel_danisman.sigorta_orani_satiri(
+        t, FinancialProfile(sektor="tarim", urun_turu="kayısı"))
+
+
+def test_hedef_ulke_satiri_korfez():
+    t = _t(kurum="Ticaret Bakanlığı", baslik="Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)",
+           detay="Oran %50; hedef ülkelerde 20 puan artar. Hedef ülkeler (EK-Hedef Ülkeler Listesi, 35 ülke): ABD, "
+                 "Almanya, BAE, Katar, Kuveyt, Suudi Arabistan, Şili.")
+    s = yerel_danisman.hedef_ulke_satiri("Körfez ülkelerine satmak istiyoruz", [t])
+    assert "BAE, Katar, Kuveyt, Suudi Arabistan listede" in s and "Bahreyn, Umman listede değil" in s
+    assert "Almanya listede" in yerel_danisman.hedef_ulke_satiri("Almanya'ya satış", [t])
+    assert yerel_danisman.hedef_ulke_satiri("Yurt dışına satış", [t]) == ""
+
+
+def test_pazaryerlerinde_ekli_kelime_pazaryeri_sorusu():
+    assert {"tanitim", "ihracat"} <= set(soru_ihtiyaclari("Yurt dışı pazaryerlerinde reklam desteği var mı?"))

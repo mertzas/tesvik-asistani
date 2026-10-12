@@ -1,6 +1,6 @@
 <!-- persona: bursa_otomotiv | soru: Ar-Ge merkezi kurmanın şartları ve avantajları neler? -->
 **Kısa cevap:**
-- Öne çıkan: **Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)** (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Ar-Ge merkezi: kendi başına ayrı bir birim olarak örgütlenmiş, yalnızca yurtiçinde Ar-Ge yapan ve en az elli tam zaman eşdeğer Ar-Ge personeli çalıştıran sermaye şirketi birimi; Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır. Şartların taşındığına ilişkin tespitler en geç üç yıllık sürelerle yapılır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Öne çıkan: **Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)** (Sanayi ve Teknoloji Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Ar-Ge merkezi: kendi başına ayrı bir birim olarak örgütlenmiş, yalnızca yurtiçinde Ar-Ge yapan ve en az elli tam zaman eşdeğer Ar-Ge personeli çalıştıran sermaye şirketi birimi); Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır. Şartların taşındığına ilişkin tespitler en geç üç yıllık sürelerle yapılır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Program: 5746 sayılı Kanun uyarınca teknoloji merkezi işletmelerinde, Ar-Ge merkezlerinde, kamu kurumları veya uluslararası fonlarca desteklenen Ar-Ge ve yenilik projelerinde, rekabet öncesi işbirliği projelerinde ve teknogirişim sermaye desteklerinden yararlananların gerçekleştirdiği Ar-Ge ve yenilik […]
 - Diğer seçenekler: Teknoloji Hamlesi Programı (9903 sayılı Karar) (şartlı — karar şartını teyit edin); İşletme Bünyesindeki Ar-Ge Harcamalarının %100'ü Vergi İndirimi (5746 sayılı Kanun m.3/A — Ar-Ge İndirimi) (profilinize göre engel yok — şartları teyit edin); Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2) (profilinize göre engel yok — şartları teyit edin).
 - 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
@@ -18,7 +18,7 @@
 
 **Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1) — Sanayi ve Teknoloji Bakanlığı**
 - **Başvuru dönemi:** Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır. Şartların taşındığına ilişkin tespitler en geç üç yıllık sürelerle yapılır.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
+- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Ar-Ge merkezi: kendi başına ayrı bir birim olarak örgütlenmiş, yalnızca yurtiçinde Ar-Ge yapan ve en az elli tam zaman eşdeğer Ar-Ge personeli çalıştıran sermaye şirketi birimi.
 - **Kapsam:** yalnız: şahıs işletmesi, limited şirket, anonim şirket
 - **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
 - **Destek:** Vergi indirimi: Kapsamdaki Ar-Ge ve yenilik harcamalarının tamamı, Kurumlar Vergisi Kanununa göre kurum kazancının ve Gelir Vergisi Kanununa göre ticari kazancın tespitinde indirim konusu yapılır. Cumhurbaşkanınca belirlenen kriterleri haiz Ar-Ge merkezlerinde ayrıca o yıl yapılan Ar-Ge ve yenilik harcamalarının bir önceki yıla göre artışının yüzde ellisine kadarı da indirilebilir. Harcamalar amortisman yoluyla itfa edilir, iktisadi kıymet oluşmazsa doğrudan gider yazılır; indirilemeyen tutar sonraki dönemlere devredilir. Kanun 31/12/2028 tarihine kadar uygulanır.
@@ -73,16 +73,6 @@
 **Birlikte kullanım (resmî metinden):**
 - [Sanayi ve Teknoloji Bakanlığı] Teknoloji Hamlesi Programı (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi; Teknoloji Hamlesi'nde KOSGEB ve TÜBİTAK doğrudan destekleri serbest). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
 
-**Girişim ön değerlendirmesi**
-Profilinizden hesaplanan HUKS ön skoru (TÜBİTAK BiGG değerlendirmesinin sistemce hesaplanabilen kısmı; resmî puan değildir):
-HUKS ÖN SKORU (sistem hesapladı, profil verisinden): 65/75 değerlendirilebilen puan (100'e oranla 87); değerlendirilemeyen bileşenler: Ekip & Ar-Ge niteliği
-- NACE kodu & şirket statüsü: 25/25 — anonim şirket: sermaye şirketi şartı arayan programlara açık
-- Teknoloji hazırlık seviyesi (TRL): 25/25 — TRL 5: prototip/doğrulama aşaması; Ar-Ge hibe programlarının çekirdek aralığı
-- Finansal & nakit akışı uyumu: 15/25 — yıllık ciro 210.000.000 TL
-- Ekip & Ar-Ge niteliği: değerlendirilemedi — ekip ve proje niteliği profilde yok; bu bileşen puanlanmaz (başvuruda kurum değerlendirir)
-Sistemde kaydı olmayan, ayrıca bakabileceğiniz programlar (oran ve şartları için resmî kaynağa bakın): TTGV programları; Kalkınma Ajansı proje teklif çağrıları.
-Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1/2026'dan itibaren 10962 sayılı Karar kapsamındadır; 5447 (E-Turquality) ve 5448 sayılı Kararlar yürürlükten kaldırılmıştır. KOSGEB Ar-Ge/Ür-Ge/İnovasyon ve KOBİGEL programları yürürlükten kaldırılmıştır (kayıtları 'kapalı' olarak sistemde).
-
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Kayıtlı elektronik posta (KEP) adresi** (Teknoloji Hamlesi Programı (9903 sayılı Karar)): Şirket adına bir KEP hizmet sağlayıcısından KEP adresi alın.
 - **Yatırım teşvik belgesi** (Teknoloji Hamlesi Programı (9903 sayılı Karar)): Yatırıma başlamadan önce Sanayi ve Teknoloji Bakanlığı E-TUYS üzerinden belge başvurusu.
@@ -99,7 +89,8 @@ Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
+1. Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1): uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: Ar-Ge merkezi: kendi başına ayrı bir birim olarak örgütlenmiş, yalnızca yurtiçinde Ar-Ge yapan ve en az elli tam zaman eşdeğer Ar-Ge personeli çalıştıran sermaye şirketi birimi.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
+Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

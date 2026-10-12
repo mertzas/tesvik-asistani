@@ -1,7 +1,7 @@
 <!-- persona: ikas_kozmetik | soru: Şahıs işletmesiyim; e-ihracat desteklerinden yararlanabilir miyim? -->
 **Kısa cevap:**
 - Öne çıkan: **Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi)** (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin).
-- Diğer seçenekler: Türk Eximbank E-İhracat Destek Kredisi (şarta bağlı); ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (şarta bağlı); ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: Türk Eximbank E-İhracat Destek Kredisi (şarta bağlı); ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (şarta bağlı); YÖNDE - Yönderlik ve Değerlendirme Destek Programı (profilinize göre engel yok — şartları teyit edin).
 - Sorunuza doğrudan yönelik ama size kapalı: E-İhracat Destekleri (5986 Sayılı Karar) — başvuru sahibi türünüz (şahıs işletmesi) şartta sayılmıyor — kayıttaki şart: “Şirket ya da kooperatif olmak (şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre)”.
 - 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 

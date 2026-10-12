@@ -1,0 +1,434 @@
+[
+ {
+  "n": 28,
+  "puan": {"dogruluk": 3, "soruya_odak": 3, "eksiksizlik": 3, "anlasilirlik": 3},
+  "bulgular": [
+   {
+    "tur": "uygunluk", "ciddiyet": "orta",
+    "aciklama": "İhracatı olmayan, tek hedefi 'finansman' olan şahıs işletmesine Eximbank TİM Wings 'Diğer seçenekler'de '(profilinize göre engel yok - şartları teyit edin)' etiketiyle sunuluyor. Kayıt programı 'Kadın Girişimci Belgesi'ne sahip İHRACATÇI firmalar' için tanımlıyor; belge için ihracat geçmişi/kapasitesi gerekir. Etiket yanıltıcı; ihracat koşulu görünmüyor. Ayrıca eşleşme listesinde bu program 'hedeflerinizde ihracat yok' notuyla 19. sırada, yanıtta ise 2. kart (tutarsızlık).",
+    "kanit": "Yanıt: 'Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) (profilinize göre engel yok — şartları teyit edin)'. Kaynak kayıt 288: 'Kadın Girişimci Belgesi almaya hak kazanan ihracatçı firmalar yararlanır.'",
+    "oneri": "Programın ana koşulu 'ihracatçı olmak' ise ve profilde ihracat yok / hedef ihracat değilse etiket 'engel yok' değil 'şarta bağlı: ihracat yapıyor musunuz?' olmalı; ihracat-özel programlar finansman sorusunda ancak ihracat sinyali varsa 'Diğer' bölümüne bile alınmalı.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "gurultu", "ciddiyet": "orta",
+    "aciklama": "Soru 'kadın girişimciye kredi ya da hibe'. 'markamla' sözcüğü yüzünden 'Sorudan anlaşılan ihtiyaç: reklam, tanıtım ve marka' çıkarılmış ve Marka ve TURQUALITY (5973 m.17) 'Sorunuza doğrudan yönelik ama size kapalı' diye kısa cevabın 4. maddesine konmuş. Kullanıcı marka desteği sormuyor, kendi markasını tarif ediyor; kapalı bir program kısa cevabın dikkatini dağıtıyor.",
+    "kanit": "'Sorunuza doğrudan yönelik ama size kapalı: Marka ve TURQUALITY® Desteği (5973 sayılı Karar m.17)' ve '### 1 ... Sorudan anlaşılan ihtiyaç: reklam, tanıtım ve marka'",
+    "oneri": "Niyet çıkarımında 'markamla/markam' gibi sahiplik ifadelerini marka-desteği niyeti sayma; 'doğrudan yönelik ama kapalı' etiketi yalnız sorunun ana konusuyla (burada kadın girişimci + kredi/hibe) eşleşen programlara verilsin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik", "ciddiyet": "orta",
+    "aciklama": "Kısa cevaptaki TURQUALITY satırı alıntının ortasında kesiliyor, açılan tırnak kapanmıyor, cümle yarım. İlk madde (Ziraat paketi) tek satırda altı bilgiyi birleştiriyor ('... engel yok — şartları teyit edin; Dönemsel başvuru yok: ... (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)'), esnaf için okunması zor.",
+    "kanit": "'kayıttaki şart: “Şirket olmak: 6102 sayılı TTK md.124'teki şirketler (kollektif, komandit, anonim, limited) ya da ticari/sınai faaliyette bulunan kooperatif (Karar m.2).' (kapanış tırnağı yok, devamı atılmış)",
+    "oneri": "Alıntı/şart metinleri karakter sınırında değil cümle/madde sınırında kesilmeli, açılan tırnak kapatılmalı; kısa cevabın ilk maddesi 'program adı + tek cümlelik hüküm' ile sınırlanmalı, dönem/ücret ayrıntısı kartlara bırakılmalı.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "orta",
+    "aciklama": "Şahıs işletmesi + kadın girişimci için en doğrudan kredi kapısı olan Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Kredi (9436 sayılı Karar, şahıs işletmelerine özel; e-Akademi kaydı Halkbank'ın 'kadın girişimcilere sıfır faizli esnaf kredisi' sayfasına da atıf yapıyor) eşleşme listesinde 2. sırada olduğu halde yanıtta hiç yok ('ADAY - yanıtta yok'). Şahıs KGF paketi ise yalnız adıyla 'Diğer'de, limit/oda kaydı şartı gösterilmemiş. Ayrıca soru 'kredi YA DA hibe': yanıt hibe için hiçbir şey söylemiyor ('kadına özel doğrudan hibe kayıtta yok' cümlesi yok).",
+    "kanit": "Kaynak: 'ADAY (yanıtta yok) KAYIT 328: Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi ... sirket_turleri: [sahis]'. Yanıtta 'HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (KGF)' sadece ad olarak geçer.",
+    "oneri": "Şirket türü 'şahıs' ve hedefi finansman olan profilde şahsa özel kredi programları (Halkbank Hazine destekli esnaf kredisi, Halkbank şahıs KGF paketi) kart olarak (limit, ücret, oda kaydı şartıyla) gösterilsin; soruda 'kredi ya da hibe' varsa yanıtın başında 'kadına özel doğrudan hibe kayıtta yok; kredi/kefalet seçenekleri şunlar' cümlesi üretilsin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "dusuk",
+    "aciklama": "TURWIB (EBRD kaynaklı, kadın yöneticisi olan KOBİ'lere işletme kredisi 60 aya kadar, 5 banka) kadına özel en uygun kredi kapılarından biri iken yalnız adıyla 'Diğer ilgili programlar'da geçiyor; ne olduğu yazılmamış, kullanıcı 'TURWIB' kısaltmasından bir şey anlamaz. Ölçek uyumsuz TKYB (500 milyon TL kredi tavanı) ise aynı listede ona eşit ağırlıkta.",
+    "kanit": "'TURWIB PROGRAMI DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok ...' (kayıt 146: 'kadın yönetici bulunan işletmelere destek ... azami 60 ay')",
+    "oneri": "Hedef kitle etiketi (kadın girişimci) ile eşleşen programlar 'Diğer' listesinde bile bir cümlelik açıklamayla (kimler için, vade) yazılsın; kredi tavanı ciroya göre çok büyük olan programlar 'Diğer'e alınmasın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik", "ciddiyet": "dusuk",
+    "aciklama": "'Kredi koşulları: 4 Milyon TL; %80 kefalet; başvuru ücreti 10.000 TL' satırında 4 milyonun kefalet üst limiti mi kredi tutarı mı olduğu belli değil (kayıtta 'Kefalet üst limiti 4 milyon TL'). Başvuru adımlarında aynı banka bilgisi 2. ve 3. adımda iki kez tekrar ediyor; 'Darboğazlar' bölümü boş bir cümleyle ('Kartlardaki şartlar dışında, kayıtlarda ... ön kayıt şartı yok') dolduruluyor.",
+    "kanit": "'Kredi koşulları (hibe değil): 4 Milyon TL; %80 kefalet'; adım 2 ve 3 aynı 'Kredi veren banka(lar): Ziraat Bankası'",
+    "oneri": "Tutar etiketi 'kefalet üst limiti' / 'kredi tutarı' ayırsın; aynı başvuru yeri iki adımda tekrar edilmesin; kayıtta darboğaz yoksa bölüm hiç yazılmasın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eslesme", "ciddiyet": "dusuk",
+    "aciklama": "eslesme_ikas_kozmetik ilk 10 genel olarak uygun (1. Ziraat Kadın-Genç, 2. Halkbank Hazine destekli esnaf kredisi, 4. Halkbank şahıs, KGF genel paketleri). Küçük tutarsızlık: 10. sırada 'Girişimci Destek Programı Kredi Faiz Programı' aktif=True görünüyor, oysa yanıt onu 'kapalı' listeliyor (KOSGEB dönemi kapalı). Ilk 10'da sektör/şirket türü/ölçek açısından açıkça uygunsuz program yok.",
+    "kanit": "eslesme: '10. [0] GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI — KGF (aktif=True)'; yanıt: 'kapalı: bağlı olduğu KOSGEB programının başvuru dönemi kapalı'",
+    "oneri": "Panel listesi ve sohbet yanıtı aynı kapalı/açık hükmünü kullansın; bağlı olduğu KOSGEB çağrı dönemi kapalıysa panelde de alt sıraya / kapalı bölümüne düşsün.",
+    "kaynak_disi": false
+   }
+  ]
+ },
+ {
+  "n": 29,
+  "puan": {"dogruluk": 3, "soruya_odak": 2, "eksiksizlik": 3, "anlasilirlik": 3},
+  "bulgular": [
+   {
+    "tur": "anlasilirlik", "ciddiyet": "orta",
+    "aciklama": "Soru evet/hayır ('Şahıs işletmesiyim; e-ihracat desteklerinden yararlanabilir miyim?'). Doğru hüküm: 5986 hibe destekleri şahsa doğrudan kapalı; E-İhracat Konsorsiyumu üyeliği ya da şirketleşme ile erişilir; şahıs olarak kredi kapıları (Eximbank E-İhracat Destek Kredisi) açık. Yanıt ise 'Öne çıkan: TİM Wings ... engel yok' ile başlıyor, doğrudan cevabı 3. maddeye ('size kapalı') gömüyor. Okuyan 'engel yok' okuyup yanlış sonuca varır.",
+    "kanit": "'Öne çıkan: Türk Eximbank TİM Wings Programı ... profilinize göre engel yok'; 3. madde: 'E-İhracat Destekleri (5986) — başvuru sahibi türünüz (şahıs işletmesi) şartta sayılmıyor'",
+    "oneri": "Soru kalıbı 'X olarak ... yararlanabilir miyim?' ise kısa cevabın ilk cümlesi tek cümlelik net hüküm olsun ('5986 hibeleri şahsa doğrudan kapalı; konsorsiyum/şirket yoluyla ...; kredi tarafında şu seçenek açık'). Sıralamada soru konusunu (e-ihracat) doğrudan karşılayan program (Eximbank E-İhracat Destek Kredisi), hedef-kitle programının (TİM Wings) önünde olsun.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "uygunluk", "ciddiyet": "orta",
+    "aciklama": "5986 'uygun değil' diye kapatılıp konu bırakılıyor; oysa aynı alıntıdaki parantez ('şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre') kullanıcının sorusunun asıl cevabı (dolaylı yol var ya da limited şirket). Bu yol hiçbir yerde öneri olarak yazılmıyor, 'kapalı' gerekçesine gömülü. TİM Wings'e 'engel yok' denmesi de ihracatçı olmayan profil için fazla iyimser.",
+    "kanit": "'uygun değil: ... şartta sayılmıyor — kayıttaki şart: “Şirket ya da kooperatif olmak (şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre)”'",
+    "oneri": "Şirket-türü elemesinde kayıt 'istisna/alternatif yol' (konsorsiyum, şirketleşme) içeriyorsa kapalı kartın altına 'Ne yapabilirsiniz' satırı üretilsin; hüküm 'doğrudan kapalı, dolaylı yol var' biçimine çevrilsin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "gurultu", "ciddiyet": "orta",
+    "aciklama": "Ziraat Yeşil İhracat (net ihracatçı %110 + Greendeks C, 40 milyon TL kefalet) ve Ziraat Kadın-Genç paketi e-ihracat sorusuyla zayıf ilişkili, mikro şahıs için gerçekçi değil; Yeşil İhracat için tam kart, iki onay kutusu ve 'uygunluk belirlenemedi' maddesi ayrılmış. Konu: e-ihracat; kart sayısı 3 tam + 2 kapalı.",
+    "kanit": "'ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ — şarta bağlı (Net ihracatçı olmak ... %110)' ve 'Diğer seçenekler: ... ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ'",
+    "oneri": "Konu-özel sorularda (e-ihracat) yalnız konuyla doğrudan eşleşen programlar kart olsun; hedef kitle/genel kredi eşleşmeleri tek satırlık 'Diğer'e insin, ağır ön koşullu programlar (net ihracatçı, Greendeks) mikro/şahıs profilde elensin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik", "ciddiyet": "dusuk",
+    "aciklama": "TİM Wings kartında 'Başvuru dönemi: Dönemsel çağrı yoktur;' cümlesi yarım kesilmiş (noktalama ile bitiyor, devamı atılmış; kısa cevapta tam hali var). Bölüm 5'te şart kurumun dilinde veriliyor ('KOBİ ve KOBİ dışı işletmeler ... tevsik etmelidir'; 'uygunluk belirlenemedi'); esnaf 'bunu ben mi sağlamalıyım' diye anlamaz.",
+    "kanit": "'Başvuru dönemi: Dönemsel çağrı yoktur;' ; '5. ... uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler ... tevsik etmelidir.)'",
+    "oneri": "Şart cümleleri ikinci tekil şahısla yeniden yazılsın ('Gümrük beyannamesiyle e-ihracat yaptığınızı belgeleyebiliyor musunuz?'); 'belirlenemedi' yerine 'şu soruya cevap verirseniz netleşir' kalıbı kullanılsın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "dusuk",
+    "aciklama": "Şahıs e-ihracatçısı için pratik, veritabanında olmayan kapılar: PTT/hızlı kargo üzerinden mikro ihracat (basitleştirilmiş gümrük beyanı, ETGB), ihracatta KDV istisnası ve iade süreçleri, limited şirkete geçişin 5986 desteklerine etkisi. Ayrıca kaynak_29 içinde 5986 kaydının kendisi yok (yanıttaki '5986 şahıs kapalı' alıntısı kaynak dosyasından doğrulanamadı).",
+    "kanit": "Yanıtta şahsa yönelik gümrük/KDV/mikro ihracat bilgisi yok.",
+    "oneri": "Kaynak-dışı not: şahıs + e-ihracat profilinde veritabanı dışı kapılar (mikro ihracat/ETGB, KDV istisnası, limited şirkete geçiş) için sabit bir 'Ayrıca bilmeniz gerekenler' satırı eklenmeli; ayrıca 'kapalı' bölümünde alıntılanan kayıtlar kaynak dökümüne de dahil edilmeli.",
+    "kaynak_disi": true
+   }
+  ]
+ },
+ {
+  "n": 30,
+  "puan": {"dogruluk": 4, "soruya_odak": 3, "eksiksizlik": 3, "anlasilirlik": 3},
+  "bulgular": [
+   {
+    "tur": "eksik", "ciddiyet": "orta",
+    "aciklama": "Soru Amazon'da 'mağaza açmak'. Doğrudan karşılığı olan 5986 m.8 'Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği' (aktif, limited'e açık, önceki yıl en az 1 milyon USD ihracat şartı) yanıtta yok ('ADAY - yanıtta yok'); 'önceki yıl ihracatınız 1 milyon USD üzeriyse' diye şartlı bile anılmıyor. Amazon satıcısı için ana maliyet kalemleri (FBA/sipariş karşılama m.6 ve Amazon komisyonu m.9) ayrı kart değil; yalnız 5986 üst kartında 'sipariş karşılamada %70' ifadesi geçiyor. Bunun yerine fiziksel mağaza/depo kirası (m.11) tam kart.",
+    "kanit": "Kaynak: 'ADAY KAYIT 195: Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 m.8) ... min_onceki_yil_ihracat_usd: 1000000'. Yanıt 'Diğer seçenekler': Dijital Pazaryeri Reklam m.4; Yurt Dışı Birim Kira m.11; Pazara Giriş Belgesi m.3.",
+    "oneri": "Pazaryeri/'mağaza' ifadesi geçen sorularda 5986 kalemleri (m.4 reklam, m.6 sipariş karşılama, m.8 çevrim içi mağaza, m.9 komisyon) birlikte, şart/eşik (ihracat tutarı) ile listelensin; m.11 ancak 'depo/ofis/fiziksel mağaza' ifadesi varsa kart olsun.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "gurultu", "ciddiyet": "orta",
+    "aciklama": "Amazon sanal mağazası sorusuna Yurt Dışı Birim Kira Desteği (fiziksel mağaza/depo/ofis kirası) tam kartla (5-6 onay kutusu + 've 2 şart daha') veriliyor. Kendi deposu/ofisi olmayan Amazon satıcısı için alakasız; aynı yanıtta Pazara Giriş Belgesi, Marka Tescil, Pazar Araştırması da 'Diğer'de. Toplam yanıt ~15 KB.",
+    "kanit": "'Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 m.11) (profilinize göre engel yok ...)' tam kart; ardından 'Diğer ilgili programlar' üç madde",
+    "oneri": "Fiziksel mekân programları (kira, TURQUALITY, mağaza) yalnız soruda 'depo/ofis/showroom/fiziksel mağaza' geçerse kart olsun; sanal mağaza/pazaryeri sorusunda 'Diğer'e bile alınmasın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik", "ciddiyet": "orta",
+    "aciklama": "Kısa cevap 'evet, var' demiyor; 'başlıca şart' olarak 'Ürün Türk ürünü olmalı' seçilmiş ve başvuru dönemi cümlesi ('Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ... çeyrek dönemler itibarıyla') kısa cevabın içine taşınmış. Gerçek eleyici şartlar (Madrid sistemi yurt dışı marka tescili, ihracatçı birliği üyeliği, DYS kaydı, ön onay) Bölüm 3'te; kısa cevapta yok. Tekrarlar: DYS/MERSİS iki kez, 'aynı gider için başka destek almamış olmalısınız' üç kez (kart, Birlikte kullanım, Darboğaz). 'Resmî metin' alıntısı yarım.",
+    "kanit": "'başlıca şart: Ürün Türk ürünü olmalı' ; “pazaryerlerinde Türk ürünlerinin ve markalarının çevrim”",
+    "oneri": "Kısa cevap = 1 cümle hüküm + en çok 3 eleyici ön koşul (marka tescili, birlik üyeliği, ön onay); 'başlıca şart' seçimi tüm başvuruculara ortak koşul değil, başvuruyu en çok engelleyen koşula göre yapılsın; aynı gereklilik bir kez yazılsın; alıntı cümle sınırında kesilsin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "dusuk",
+    "aciklama": "Amazon.de/fr/it/es hedef ülke listesindedir (Almanya, Fransa, İtalya, İspanya, Romanya, Portekiz) ve reklam desteği %70'e çıkar; 'Amazon Avrupa' sorusuna en somut katkı bu. Yanıt yalnızca genel '%50 / hedef ülkelerde %70' diyor, hangi AB ülkelerinin listede olduğunu söylemiyor.",
+    "kanit": "Kaynak kayıt 192: 'Hedef ülkeler (35 ülke): ABD, Almanya, ... Fransa, ... İspanya, İtalya ... Portekiz, Romanya'. Yanıt: '(hedef ülkelerde %70)'.",
+    "oneri": "Soruda ülke/bölge adı geçiyorsa (Avrupa, Körfez, ABD) hedef-ülke listesi o bölgeyle kesiştirilip '%70 şu ülkeler için geçerli' diye yazılsın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eslesme", "ciddiyet": "dusuk",
+    "aciklama": "eslesme_ikas_evtekstil ilk 10 büyük ölçüde uygun (5986/5973 kalemleri, Eximbank e-ihracat kredisi); açıkça uygunsuz program yok. Küçük not: 'makine' hedefi için Eximbank makine/leasing/yatırım kredileri 12-14. sırada kalmış, ilk 10'u ihracat tanıtım kalemleri doldurmuş.",
+    "kanit": "eslesme: '12. Finansal Kiralama ... 14. İhracata Yönelik Yatırım Kredisi (makine, teçhizat ve aksam harcamaları)'",
+    "oneri": "Birden çok hedef (ihracat, makine) varsa ilk 10 her hedeften en az bir üst program içersin (hedef çeşitliliği).",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "diger", "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: limited şirket için şahıs engeli doğru uygulanmış, TL tutarlar kayıtla tutarlı (73.990.019 / 36.993.646 / 9.862.972), önceki turlardaki yanlış öncelik (çok kanallı zincir mağaza) giderilmiş, 5986 üst kart öne alınmış.",
+    "kanit": "Kart rakamları kaynak 162/190/192 ile birebir.",
+    "oneri": "Mevcut davranış korunsun.",
+    "kaynak_disi": false
+   }
+  ]
+ },
+ {
+  "n": 31,
+  "puan": {"dogruluk": 4, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+  "bulgular": [
+   {
+    "tur": "uygunluk", "ciddiyet": "orta",
+    "aciklama": "'Yurt dışı depo' kısmı için Yurt Dışı Birim Kira Desteği (m.11) 'Diğer ilgili'de sadece adı ve 'profilinize göre engel yok' ile geçiyor. Kayda göre e-ticaret deposu kirası ancak 5986 kapsamında Perakende E-Ticaret Sitesi / Pazaryeri / Konsorsiyum statüsü almış şirketlere veriliyor (Birim Kira Genelgesi m.5/A); statünün de ihracat eşikleri var (kaynak 162: perakende site için önceki yıl en az 500.000 USD ihracat). 'Engel yok' bu statü gereği nedeniyle fazla iyimser; kullanıcı depo kirası alabileceğini sanır.",
+    "kanit": "'Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 m.11) ... profilinize göre engel yok'; kaynak kayıt 190: 'E-ticaret deposu ...: 5986 kapsamında Perakende E-Ticaret Sitesi, Pazaryeri ya da E-İhracat Konsorsiyumu statüsü almış şirketlerin ... kiraladığı yurt dışı depolar'",
+    "oneri": "Kayıtta 'statü/eşik' şartı varsa (e-ticaret deposu) kart 'şarta bağlı: ... statüsüne sahip misiniz?' olarak yazılsın; m.11 'Diğer'de bile tek cümleyle ne işe yaradığını ('depo kirası; e-ticaret statüsü gerekir') belirtsin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik", "ciddiyet": "orta",
+    "aciklama": "Kısa cevabın ilk maddesi yalnız program adı, 'evet, destekleniyor' hükmü yok. 'Başlıca şart: Bir ihracatçı birliğine üye olmak' seçilmiş; asıl eleyici (Madrid sistemi yurt dışı marka tescili, hizmetin Bakanlık listesindeki firmalardan alınması) kısa cevapta yok. 'Resmî metin' alıntısı yarım: '... Türk ürünlerinin ve markalarının çevrim'. Darboğaz bölümünde DYS ve Madrid iki ayrı biçimde tekrar ediyor.",
+    "kanit": "İlk madde: '**Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6)** (Ticaret Bakanlığı)'",
+    "oneri": "Evet/hayır sorularında (destekleniyor mu?) ilk cümle 'Evet: ... kapsar; şartlar: ...' olsun; 'başlıca şart' seçimi en çok eleyen (hizmet sağlayıcı listesi, Madrid markası) şartlara göre yapılsın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "dusuk",
+    "aciklama": "Depo/fulfillment için Perakende E-Ticaret Sitesi statüsü (5986 m.5) ve Komisyon m.9 aday listede ('ADAY - yanıtta yok') kalmış; statü yolu kullanıcıya anlatılmamış. Yurt dışı depo kirası (m.11) ile m.6'nın depolama gideri (hizmet bedeli) arasındaki fark da yazılmamış.",
+    "kanit": "Kaynak: 'ADAY KAYIT 196: E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 m.5)'; 'ADAY KAYIT 194 Komisyon m.9'.",
+    "oneri": "Depo/fulfillment sorusunda 'kira mı hizmet bedeli mi' ayrımı tek satırla yazılsın; statü gereken kalemlerde statü kartı 'ön koşul' olarak eklensin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "gurultu", "ciddiyet": "dusuk",
+    "aciklama": "Yurt Dışı Marka Tescil ve Yurt Dışı Tanıtım-Pazarlama (m.12) 'Diğer ilgili' olarak ekleniyor; Marka Tescil Madrid ön koşulu nedeniyle dolaylı ilgili, m.12 ise depo/sipariş karşılama sorusuyla alakasız.",
+    "kanit": "'Diğer ilgili: ... Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 m.12)'",
+    "oneri": "Soru konusu dışındaki tanıtım-pazarlama kalemleri 'Diğer'e alınmasın; ön koşul bağımlılığı olan programlar 'Madrid için gerekli' notuyla anılsın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "diger", "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: önceki turdaki 'Konsorsiyum olmamak' şartının yanlış hüküm üretmesi giderilmiş, tek kart soruya odaklı, rakamlar kayıtla tutarlı (%50/%70, ülke satışının %10'u, 36.993.646 TL, 3 yıl).",
+    "kanit": "Karşılaştırma: kayıt 193.",
+    "oneri": "Mevcut davranış korunsun.",
+    "kaynak_disi": false
+   }
+  ]
+ },
+ {
+  "n": 32,
+  "puan": {"dogruluk": 4, "soruya_odak": 3, "eksiksizlik": 2, "anlasilirlik": 2},
+  "bulgular": [
+   {
+    "tur": "eksik", "ciddiyet": "orta",
+    "aciklama": "Ana soru: Etsy ve kendi sitemden yurt dışı satış için destek var mı. Doğru cevap: reklam/komisyon/sipariş karşılama destekleri (5986) şahsa doğrudan kapalı; limited şirket kurmak ya da E-İhracat Konsorsiyumu üyeliği ile erişilir; şahıs olarak kredi tarafı (Eximbank E-İhracat Kredisi) açık. Yanıt bu bilgiyi ne yol haritası ne kısa cevap olarak veriyor: 5986 'uygun değil' diye kapalı bölüme gömülü (kısa cevabın 4. maddesi). Şirketleşme/konsorsiyum yolu hiçbir yerde öneri değil.",
+    "kanit": "'Sorunuza doğrudan yönelik ama size kapalı: E-İhracat Destekleri (5986) ... şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre' ; Yol haritası yalnız Eximbank kredisi adımları",
+    "oneri": "Şahıs + şirket-özel hibe programı durumunda yanıt 'Hangi yol açık?' başlığı üretsin: (1) şirketleşme sonrası başvurulabilecek programlar, (2) konsorsiyum aracılığı, (3) şahsa açık krediler; yol haritası da bu seçimi yansıtsın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "gurultu", "ciddiyet": "orta",
+    "aciklama": "Etsy/yurt dışı satış sorusuna ilgisiz program kalabalığı: Eximbank Marka Kredisi (yurt dışı marka/mağaza alımı, Kesin Teminat Mektubu, imalatçı-ihracatçı şartı), KGF İhracat Destek Paketi, KOSGEB Yapay Zekâ Kredi (Teknogirişim Rozeti), kapalı Küresel Rekabetçilik (KOSGEB ve KGF) ve imalat odaklı kapalı Dijital Dönüşüm Destek Paketi. 3 tam kart + 1 'diğer' + 4 kapalı madde = ~13 KB; soruya doğrudan katkı yalnız 1 kart.",
+    "kanit": "'Diğer ilgili: Yapay Zekâ Kredi Programı (KOSGEB) — şarta bağlı (... Teknogirişim Rozeti sahibi olmak)'; kapalı: 'Dijital Dönüşüm Destek Paketi (KGF)' (kayıt 155: 'İmalat sanayiinde faaliyet gösteren KOBİ'ler')",
+    "oneri": "Profilde imalat/Ar-Ge sinyali yokken imalat-özel (Dijital Dönüşüm - imalat sanayii) ve rozet gerektiren programlar elensin; kapalı program listesi yalnız sorunun konusuyla ilgili olanları (en çok 2) göstersin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "uygunluk", "ciddiyet": "orta",
+    "aciklama": "Marka Kredisi ve KGF İhracat Destek Paketi 'şarta bağlı' etiketiyle sunuluyor ama kayıttaki şart imalatçı/ihracatçı olmak; perakende e-ticaret yapan şahıs için Marka Kredisi 'Türk markasının yurt dışında geliştirilmesi' amaçlı, üretim yapan firmalara yönelik. Etiket 'hiç uygun olmayabilir' sinyalini vermiyor, Marka Kredisi tam kart alıyor.",
+    "kanit": "'Türk Eximbank Marka Kredisi ... şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı ...)'",
+    "oneri": "Ana koşulu 'imalatçı/ihracatçı olmak' olan programlar, NACE 47.91 perakende ve ihracat geçmişi olmayan profilde 'düşük olasılık' olarak Diğer'e insin; şart cümlesi 'Gümüş takıyı kendiniz üretiyor musunuz?' gibi soruya çevrilsin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik", "ciddiyet": "orta",
+    "aciklama": "Kısa cevabın lideri 'şarta bağlı (profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir)' ile başlıyor: şart üçüncü tekil şahısla, tek madde içinde; kullanıcı 'ben bunu sağlar mıyım' sorusunu cevaplayamaz. 'Dönemsel çağrı yoktur;' cümleleri yarım (Marka Kredisi kartı), 'sonraki dönem kayıtlarımızda yok' gibi sistem jargonu.",
+    "kanit": "'Marka Kredisi ... **Başvuru dönemi:** Dönemsel çağrı yoktur;' ; 'sonraki dönem kayıtlarımızda yok, kurumdan takip edin'",
+    "oneri": "Şart metni kullanıcıya soru biçimine çevrilsin; kesik cümleler ve 'kayıtlarımızda' jargonu temizlensin; kısa cevap en çok 3 madde.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eslesme", "ciddiyet": "orta",
+    "aciklama": "eslesme_ikas_taki ilk 10: şahıs, mikro, perakende e-ticaret, ihracatı olmayan profilde sıralar neredeyse tamamen imalatçı/ihracatçı kredileriyle dolu: 4. Ziraat Yeşil İhracat (net ihracatçı %110 + Greendeks), 5. Finansal Kiralama (ihracatçı yatırımları), 6. IBRD Yeşil İhracat (AB karbon yatırımları), 7. İhracata Hazırlık, 8. İhracata Yönelik İşletme Sermayesi (imalatçı-ihracatçı), 9. İhracata Yönelik Yatırım Kredisi (makine; hedefte makine yok). Yanıt bunlara 'şarta bağlı' dese de panel 'uygun' sırası veriyor.",
+    "kanit": "eslesme_ikas_taki: '4. ZİRAAT BANKASI YEŞİL İHRACAT ... 6. IBRD Yeşil İhracat ... 9. İhracata Yönelik Yatırım Kredisi (makine, teçhizat ve aksam harcamaları)'",
+    "oneri": "Hedef 'ihracat' tek başına üretim/yatırım/imalat odaklı Eximbank kredilerini yükseltmesin; perakende e-ticaret + şahıs + ihracatı yok profilinde bu programlar alt sıraya, e-ihracat odaklı (E-İhracat Destek Kredisi) ve şirketleşme yönlendirmesi üste alınsın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "dusuk",
+    "aciklama": "Şahıs e-ihracatçısı için veritabanında olmayan pratik kapılar: PTT/anlaşmalı kurye ile mikro ihracat (basit gümrük beyanı), ihracatta KDV istisnası/iadesi, ihracatçı birliği üyeliği.",
+    "kanit": "Yanıtta mikro ihracat/KDV bilgisi yok.",
+    "oneri": "Kaynak-dışı not: şahıs + e-ihracat profilinde mikro ihracat ve KDV istisnası için sabit bilgi satırı.",
+    "kaynak_disi": true
+   }
+  ]
+ },
+ {
+  "n": 33,
+  "puan": {"dogruluk": 3, "soruya_odak": 2, "eksiksizlik": 2, "anlasilirlik": 2},
+  "bulgular": [
+   {
+    "tur": "gurultu", "ciddiyet": "orta",
+    "aciklama": "'Yurt dışına gönderdiğim kargoların masrafı için destek var mı?' sorusuna doğrudan cevap yok; kayıtlarda kargo/kurye giderini karşılayan ayrı bir kalem olmadığı da söylenmiyor. Onun yerine kısa cevabın lideri Eximbank Marka Kredisi (marka geliştirme/yurt dışı mağaza-marka alımı), arkasından E-İhracat Kredisi, KGF İhracat Destek Paketi, Yeşil İhracat, İhracata Hazırlık ve İşletme Sermayesi (hepsi 'şarta bağlı', çoğu imalatçı için).",
+    "kanit": "'Öne çıkan: Türk Eximbank Marka Kredisi ...'; kaynak_33'te 'kargo' kelimesi geçmiyor.",
+    "oneri": "Soruda belirli bir gider kalemi (kargo, depo, fuar...) geçiyorsa yanıt önce 'Kayıtlarda doğrudan [kalem] için hibe/destek yok / şu programlar şu kapsamda destekler' cümlesiyle başlasın; kalemi kapsamadığı bilinen genel kredilerden kart üretilmesin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "orta",
+    "aciklama": "Kaynakta kargoya en yakın tek ifade Marka Kredisi'nde: 'yurt dışındaki lojistik ve depolama giderleri, e-ticaret kapsamındaki harcamalar' finanse edilir. Bu bilgi karta yansımamış; kartta yalnız 'marka geliştirme/tutundurma ve marka/mağaza alımı' yazıyor. Yani lider gösterilen programın soruyla bağlantısı kullanıcıya açıklanmamış. 5986 m.6 (sipariş karşılama: iade kabul ve depolama dahil) ise şahsa kapalı listesinde; kargo/lojistiğe en yakın hibe için şirketleşme/konsorsiyum yolu anlatılmamış.",
+    "kanit": "Kaynak 286: 'Yurt dışındaki lojistik ve depolama giderleri; E-Ticaret kapsamında yapılan harcamalar; Yurtdışı mağaza kira giderleri'. Yanıt kartı: 'marka geliştirme/tutundurma harcamaları ile yurt dışında yerleşik marka ve ilgili mağaza, tesis alım bedelleri finanse edilir.'",
+    "oneri": "Kartın seçilme gerekçesi (soru kelimesiyle eşleşen kayıt cümlesi) kartta 'Sorunuzla ilgisi' satırı olarak gösterilsin; kart ayrıntısı o cümleyi içersin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik", "ciddiyet": "orta",
+    "aciklama": "'Diğer ilgili' maddelerindeki şart cümleleri çok uzun ve kopyala-yapıştır ('Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ... yararlanabilir'), tek satırda 4-5 madde. Kartlarda 'Dönemsel çağrı yoktur;' diye yarım bitiyor. Bilgi eksikliği bölümü aynı şartı kartla birlikte ikinci kez veriyor.",
+    "kanit": "'Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi ... şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik imalatçı-ihracatçı, ...); Dönemsel çağrı yoktur; ...'",
+    "oneri": "'Diğer ilgili' satırları tek cümle ve soru biçimli olsun ('Üretici/ihracatçı mısınız?'); aynı şart aynı yanıtta bir kez gösterilsin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "uygunluk", "ciddiyet": "orta",
+    "aciklama": "İhracata Hazırlık ve İhracata Yönelik İşletme Sermayesi kredileri kayıtta 'imalatçı / ihracata yönelik mal üreten' firmalar için; e-ticaret perakendecisi şahıs için 'şarta bağlı' yerine düşük olasılık/eleme beklenir. Yanıt bunları kargo sorusuna cevap olarak sunuyor.",
+    "kanit": "'İhracata Hazırlık Kredisi — şarta bağlı (... ihracata yönelik mal üreten (sadece nihai üretici) imalatçı ...)'",
+    "oneri": "NACE 47.91 perakende profilinde 'imalatçı' şartını açıkça arayan programlar 'şarta bağlı' değil 'düşük olasılık' sayılsın ve kart oluşturmasın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eslesme", "ciddiyet": "dusuk",
+    "aciklama": "eslesme_ikas_taki için 32. senaryodaki bulgu geçerli: ilk 10 imalat/yatırım ağırlıklı Eximbank kredileri.",
+    "kanit": "bkz. 32",
+    "oneri": "bkz. 32",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "dusuk",
+    "aciklama": "Şahıs e-ihracatçısı için kargo maliyetini düşürmenin gerçek yolları: PTT/anlaşmalı ihracat kargo tarifeleri, mikro ihracat gümrük beyanı, ihracat KDV istisnası/iadesi, kargo firmalarının e-ihracat paketleri. Veritabanında yok; kullanıcıya 'doğrudan hibe yok, şu alternatifler var' denmiyor.",
+    "kanit": "Yanıtta alternatif yok.",
+    "oneri": "Kaynak-dışı not: gider kalemi sorularında destek yoksa doğrudan 'yok' ve piyasadaki alternatif satırı.",
+    "kaynak_disi": true
+   }
+  ]
+ },
+ {
+  "n": 34,
+  "puan": {"dogruluk": 3, "soruya_odak": 2, "eksiksizlik": 2, "anlasilirlik": 2},
+  "bulgular": [
+   {
+    "tur": "uygunluk", "ciddiyet": "orta",
+    "aciklama": "Kısa cevabın 'Öne çıkan'ı Yerel Kalkınma Hamlesi (9903): kayıtta asgari sabit yatırım 12 milyon TL (1. bölge); 5 milyon TL cirolu, 6 çalışanlı mikro işletmenin tek kahve kavurma makinesi için gerçekçi değil; kendi hükmü bile 'ön değerlendirme: BELİRLENEMEDİ' ve il bazlı konu listesi yok. Yine de bu program tam kart, üç kez tekrar eden destek unsurları (%50 katkı, %25 makine, faiz desteği) ile öne çıkarılmış. Eşleşme panelinde 8. sıradaki program yanıtta 1. sırada.",
+    "kanit": "'Öne çıkan: Yerel Kalkınma Hamlesi Programı ... 12 milyon TL ... bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez.' ; Teknoloji Hamlesi aynı rakamlarla iki kez",
+    "oneri": "Kayıttaki asgari yatırım/kredi tavanı eşiği profilin ciro/yatırım ölçeğine göre çok yüksekse (ör. ciroyu aşıyorsa) program 'Öne çıkan' olamaz; kısa cevabın lideri ölçek uyumlu programa (banka makine/yatırım kredisi + KGF kefaleti) verilsin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "dogruluk", "ciddiyet": "orta",
+    "aciklama": "Hedef Yatırımlar ve Öncelikli Yatırımlar için 'UYGUN DEĞİL - NACE 47.91 EK-3'te yok' kesin hükmü veriliyor. Soru kahve KAVURMA (işleme/imalat) makinesi alımı; teşvik belgesinde yatırımın konusu (kavurma, imalat) esas, firmanın mevcut e-ticaret NACE'i değil. Kesin 'uygun değil' yerine 'yatırım konunuzun NACE'si EK-3'te var mı, teyit edin' denmeliydi. 'Kayıtlarımızda yok' / 'BELİRLENEMEDİ' sistem jargonu da var.",
+    "kanit": "'Hedef Yatırımlar Teşvik Sistemi: UYGUN DEĞİL — NACE 47.91 EK-3'te ... yer almıyor' ; 'Yerel Kalkınma ... tebliğ; kayıtlarımızda yok'",
+    "oneri": "Yatırım teşviklerinde sektör kontrolü soruda adı geçen yatırım konusundan (yeni faaliyet/NACE) çıkarılsın; yatırım konusu profildeki NACE'den farklıysa kesin 'uygun değil' yerine 'yatırım konunuzun NACE'sini girin' denmeli.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "orta",
+    "aciklama": "Makine alımı için en pratik yol: bankadan yatırım/makine kredisi + KGF kefaleti (KGF Genel Destek, Dijital Kefalet, Özkaynak Kefalet). Eşleşme panelinde 1-3. sıradaki bu programlar yanıtta hiç yok (kaynak_34'te aday bile değil); yalnız TKYB ve TOBB Nefes var. Kullanıcı 'hangi kredi' diye sordu; cevap 9903 belgesi + 500 milyonluk TKYB paketi olunca somut kredi yolu eksik.",
+    "kanit": "Yanıtta KGF Genel Destek / Dijital Kefalet / Özkaynak yok; eslesme_ikas_kahve: '1. DİJİTAL KEFALET ... 2. KGF Genel Destek ... 3. KGF Özkaynak'",
+    "oneri": "Finansman/makine hedefli profilde genel KGF kefalet programları (herhangi bir bankadan) yanıtta kart olsun; tema-özel yatırım teşvikleri onlardan sonra gelsin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "uygunluk", "ciddiyet": "orta",
+    "aciklama": "TKYB Kredi Destek Paketi 'Diğer seçenekler'in başında 'profilinize göre engel yok' etiketli, aynı satırda 'teyit: Program ölçeği yıllık cironuza göre çok büyük' yazıyor: iç çelişki. TOBB Nefes (uygun ve gerçekçi) ise 'şarta bağlı - TOBB üyeliği' diye sunuluyor; aynı kartta 'Profilinize göre sağlanan şartlar: oda (TOBB) üyeliği: limited şirket ticaret siciline kayıtlıdır ve oda üyeliği zorunludur' diyor: şart hem doğrulanamadı hem sağlandı.",
+    "kanit": "'TOBB NEFES ... Şarta bağlı — profilinizden doğrulanamayan önemli şart: TOBB'a bağlı ... üyeliği' / '... Profilinize göre sağlanan şartlar: oda (TOBB) üyeliği ...'",
+    "oneri": "Limited/anonim şirket için oda üyeliği şartını profilden otomatik 'sağlandı' say ve 'şarta bağlı' başlığını kaldır; aynı kartta 'doğrulanamayan' ve 'sağlanan' aynı şartı birlikte üretmesin; ölçek uyumsuz program 'engel yok' etiketi almasın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik", "ciddiyet": "orta",
+    "aciklama": "Yanıt 16 KB. 9903 destek unsurları paragrafı üç kez tekrar (kısa cevap, kart, '9903 programları bölgenize göre'); Teknoloji Hamlesi iki bölümde aynı rakamlarla. Cümleler kesik: 'asgari sabit yatırım: 12.000.000 TL ( başvuru son tarihi 31/12/2030.' ve 'Asgari sabit yatırım tutarı 1. bölgede 12 milyon TL (MADDE 5/2; bu tutarın altındaki ...' parantez kapanmıyor. 'MADDE 5/1, 7', 'BELİRLENEMEDİ', 'EK-3', 'MADDE 18/3' gibi mevzuat jargonu esnafa ağır.",
+    "kanit": "'asgari sabit yatırım: 12.000.000 TL ( başvuru son tarihi 31/12/2030.' ; '1541 gün kaldı' ifadesi",
+    "oneri": "Aynı destek unsurları bir yerde yazılsın; parantezli kısaltmalar cümle içinde kesilmesin; 9903 programlarında esnaf dilinde 'yatırım konunuz için uygun mu?' özeti üretilsin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eslesme", "ciddiyet": "orta",
+    "aciklama": "eslesme_ikas_kahve ilk 10: 8. Yerel Kalkınma Hamlesi (12 milyon TL eşik; ölçek uyumsuz, 'BELİRLENEMEDİ'), 9. KOSGEB e-Akademi (eğitim, hedefle eşleşme yok), 10. Halkbank İlk Adım (29 yaş sınırı, yaş bilinmiyor), 6-7. KOSGEB onayı şart olan kredi faiz/geri ödemeli paketleri. Hedef 'makine' + 'finansman' için makine/yatırım odaklı program ilk 10'da yok.",
+    "kanit": "eslesme_ikas_kahve: '8. Yerel Kalkınma Hamlesi ... 9. KOSGEB Girişimcilik Eğitimi (e-Akademi) ... 10. HALKBANK İLK ADIM'",
+    "oneri": "İlk 10'a ölçek/ön koşulu (KOSGEB onayı, yaş sınırı, eğitim) belirsiz programlar değil doğrudan uygulanabilir genel kefalet/kredi programları girsin; 'belirlenemedi' hükmü verilen 9903 programı ilk 10'a alınmasın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "dusuk",
+    "aciklama": "Gerçek dünyada makine yatırımı için veritabanında olmayan kapılar: kalkınma ajansı (İZKA vb.) mali destek / faizsiz kredi çağrıları, bankaların kendi makine-teçhizat yatırım kredileri, finansal kiralama (leasing).",
+    "kanit": "Yanıtta ajans/leasing yok.",
+    "oneri": "Kaynak-dışı not: makine alımı sorularına 'banka makine kredisi, leasing, kalkınma ajansı' kontrol listesi.",
+    "kaynak_disi": true
+   }
+  ]
+ },
+ {
+  "n": 35,
+  "puan": {"dogruluk": 3, "soruya_odak": 3, "eksiksizlik": 2, "anlasilirlik": 2},
+  "bulgular": [
+   {
+    "tur": "gurultu", "ciddiyet": "orta",
+    "aciklama": "Dürüst ilk satır: 'Yurt içine yönelik reklam ve pazarlama giderleri için kayıtlı doğrudan bir destek yok'. Ama ardından 17 KB'lik yanıt tamamen ihracat tanıtım programlarıyla (m.12, 5986 m.4, m.11 tam kart + 2 düşük olasılık) doluyor; profilde ihracat hedefi/ihracat yok ve kullanıcı 'online satışımızı büyütmek' diyor (yurt içi). Kartlardaki 'profilinize göre engel yok' ifadesi ilk satırla çelişiyor; panelde bu programlar 'hedeflerinizde ihracat yok' notuyla 16-20. sırada.",
+    "kanit": "'... aşağıdaki programlar yalnız yurt dışına (ihracata) yönelik tanıtımı destekler' sonra 3 tam kart: 'Yurt Dışı Tanıtım ve Pazarlama Desteği ... profilinize göre engel yok'",
+    "oneri": "İlk satır 'yurt içi için destek yok' diyorsa yanıt orada kısa bir 'ihracata açılmak isterseniz' kutusuna insin (en çok 2 satır); ihracat hedefi/geçmişi olmayan profilde ihracat tanıtım kartları 'engel yok' etiketi almasın ('ihracat yapıyor musunuz?' sorusu).",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "dogruluk", "ciddiyet": "orta",
+    "aciklama": "Kısa cevapta 'Diğer seçenekler: ... DİJİTAL KEFALET DESTEK PROGRAMI (profilinize göre engel yok)' geçiyor. Kayda göre bu Akbank dijital kanalından kullandırılan krediye KGF kefaleti; dijital pazarlama desteği değil. Adı nedeniyle kullanıcı dijital pazarlama hibesi sanır; kartı yok, ne olduğu açıklanmamış.",
+    "kanit": "Kaynak 172: 'KGF Dijital Kefalet Destek Programı ile, Kredi Verenlerce dijital kanallardan tahsis yöntemiyle ... kullandırılacak krediler için kefalet' ; yanıt: 'DİJİTAL KEFALET DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin)'",
+    "oneri": "Ad benzerliğiyle (dijital) eşleşen programlar, kayıt açıklaması soruyla uyuşmuyorsa (kredi kefaleti != pazarlama) listeye girmesin; girerse '(kredi kefaleti, pazarlama hibesi değil)' etiketi yazılsın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik", "ciddiyet": "orta",
+    "aciklama": "Kısa cevabın 'Destek' satırı m.12 için ikili limit veriyor ('birime bağlı ülke başına yıllık 12.329.397 TL, marka tesciline bağlı yıllık 19.728.672 TL'): okuyan hangisine tabi olduğunu anlayamaz. Kart şart listelerinde 'Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız' gibi kullanıcının bilmesi zor mevzuat şartları ('ve 2 şart daha: panelde ...') ve 'resmî metin' alıntısı yarım ('... markalarının çevrim'). Darboğaz/yol haritasında DYS, KEP, ihracatçı birliği tekrarları.",
+    "kanit": "'ve 2 şart daha: panelde programın Kontrol listesi'nde' ; “pazaryerlerinde Türk ürünlerinin ve markalarının çevrim”",
+    "oneri": "Başka programa bağlanan 'olmamak' şartları (m.9, m.15, m.17) onay kutusu değil dipnot olsun; ikili limitler 'hangi durumda hangisi' diye tek cümleyle açıklansın; kesik alıntılar tam cümleye tamamlansın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "orta",
+    "aciklama": "Yurt içi e-ticaret büyümesi için kayıtlardan en yakın kalem KGF Dijital Kefalet (banka kredisi kefaleti, tüzel firma için 5 milyon TL, %80) ve genel KGF kefaletleri; yanıtta Dijital Kefalet adıyla anılıp ne olduğu söylenmiyor, reklam bütçesi/işletme sermayesi finansmanı olarak önerilmiyor. Yurt içi destek yoksa 'reklam bütçesini bankadan KGF kefaletli krediyle finanse edebilirsiniz' gibi somut alternatif yok.",
+    "kanit": "Kaynak 172 (Dijital Kefalet): 'Tüzel firmalar için 5 Milyon TL ... %80'. Yanıt: yalnız 'Diğer seçenekler' içinde adı.",
+    "oneri": "Hibe/destek bulunmayan konularda yanıt kayıtlı finansman alternatifini (kefaletli kredi) açıkça ve doğru adlandırmayla önersin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "dusuk",
+    "aciklama": "Gerçek dünyada yurt içi dijital pazarlama/e-ticaret büyümesi için veritabanında olmayan kapılar: KOSGEB/kalkınma ajansı dijital dönüşüm çağrıları, Ticaret Bakanlığı e-ticaret eğitimleri, TOBB e-ticaret programları.",
+    "kanit": "Yanıt yurt içi alternatif sunmuyor.",
+    "oneri": "Kaynak-dışı not: yurt içi dijital pazarlama sorusunda 'kayıtlı destek yok' + ajans/KOSGEB dijital dönüşüm çağrılarını izleme önerisi.",
+    "kaynak_disi": true
+   },
+   {
+    "tur": "eslesme", "ciddiyet": "dusuk",
+    "aciklama": "eslesme_ikas_kahve için 34. senaryodaki bulgu geçerli (ölçek uyumsuz Yerel Kalkınma, e-Akademi, İlk Adım). Ayrıca ihracat programları panelde 'hedeflerinizde ihracat yok' notuyla 16-20. sırada iken yanıt bunları 'engel yok' etiketiyle öne çıkarıyor (tutarsız).",
+    "kanit": "eslesme: '16. Dijital Pazaryeri ... eksik: ... hedeflerinizde ihracat yok'",
+    "oneri": "Panel ve yanıt aynı 'ihracat hedefi yok' sinyalini kullansın.",
+    "kaynak_disi": false
+   }
+  ]
+ },
+ {
+  "n": 36,
+  "puan": {"dogruluk": 4, "soruya_odak": 4, "eksiksizlik": 3, "anlasilirlik": 3},
+  "bulgular": [
+   {
+    "tur": "uygunluk", "ciddiyet": "orta",
+    "aciklama": "TOBB Nefes 'Diğer ilgili'de 'şarta bağlı - TOBB üyeliği doğrulanamadı' diye sunuluyor; limited şirket ticaret siciline kayıtlı olduğu için oda üyeliği zorunludur (sistem başka senaryoda bunu 'sağlandı' sayıyor). 3 milyon TL krediye kadar işletme sermayesi için en uyumlu kapılardan biri iken gereksiz şartlı etiketle alt sıraya düşmüş ve kart ayrıntısı (3.000.000 / 2.400.000 TL) hiç gösterilmemiş. TKYB ise 'engel yok' etiketli, aynı satırda 'ölçek çok büyük' ile çelişiyor.",
+    "kanit": "'TOBB NEFES KREDİSİ ... şarta bağlı (profilinizden doğrulanamayan önemli şart: TOBB'a bağlı ticaret/sanayi/deniz ticaret odası veya ticaret borsası üyeliği)' ; 'TKYB ... profilinize göre engel yok ... teyit: Program ölçeği ... çok büyük'",
+    "oneri": "Şirket türü limited/anonim ise oda üyeliği şartını otomatik sağlanmış say, TOBB Nefes'i tam kart yap; ölçek uyumsuz programlara 'engel yok' yerine 'düşük olasılık - ölçek' etiketi.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik", "ciddiyet": "orta",
+    "aciklama": "İşletme sermayesi sorusunda en doğrudan genel çözüm: herhangi bir bankadan işletme kredisi + KGF Genel Destek kefaleti (15 banka, tek bankaya bağlı değil). Yanıt 'Öne çıkan' olarak Ziraat Katılım Bankası Katılım Finans Destek Paketini (yalnız tek katılım bankası) veriyor, KGF Genel Destek 2. kart. Ayrıca kefalet ile kredi ayrımı hiç anlatılmıyor: KGF kredi vermez, banka kredi verir, KGF teminat kefaleti sağlar; 'Kredi koşulları (hibe değil): 4.000.000 / 6.000.000 TL' kullanıcıya KGF'den 4-6 milyon TL kredi alacağı izlenimi verebilir.",
+    "kanit": "'Öne çıkan: Ziraat Katılım Bankası Katılım Finans Destek Paketi' ; 'Kredi koşulları (hibe değil): 4.000.000 / 6.000.000 TL; %80; 36 ay (6 ay ödemesiz); başvuru ücreti KOBİ 10.000 / KOBİ dışı 20.000 TL'",
+    "oneri": "Kefalet programlarının tutar etiketi 'kefalet üst limiti' olarak yazılsın ve kartın başında 'KGF kredi vermez; bankadan istediğiniz krediye teminat kefaleti sağlar' tek cümle eklensin; çoklu bankada başvurulabilen genel programlar tek bankalı özel paketlerin önüne geçsin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik", "ciddiyet": "orta",
+    "aciklama": "'4.000.000 / 6.000.000 TL; ... başvuru ücreti KOBİ 10.000 / KOBİ dışı 20.000 TL': iki tutarın ne olduğu söylenmiyor (KOBİ / KOBİ dışı kefalet üst limiti). Bölüm 3'te 'Kartlardaki şartlar dışında, kayıtlarda ... ön kayıt şartı yok' boş cümlesi; Bölüm 4 aynı başvuru yerini iki kez veriyor.",
+    "kanit": "'Kredi koşulları (hibe değil): 4.000.000 / 6.000.000 TL; %80; ...'",
+    "oneri": "İki tutar varsa etiketlenmiş yazılsın ('KOBİ için 4 milyon, KOBİ dışı için 6 milyon TL kefalet üst limiti'); kayıtta darboğaz yoksa bölüm yazılmasın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "gurultu", "ciddiyet": "dusuk",
+    "aciklama": "İşletme sermayesi sorusuna KOSGEB Geri Ödemeli Destekleri (önce KOSGEB desteği alma şartı), Halkbank İlk Adım (29 yaş sınırı) ve kapalı Girişimci Destek Kredi Faiz Paketi 'Diğer/kapalı' olarak ekleniyor; hepsi bu işletme için gerçekleşme olasılığı düşük ve soruyu dağıtıyor.",
+    "kanit": "'HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — şarta bağlı (... en çok 29 yaşında olmalı)'",
+    "oneri": "Yaş sınırı / başka program onayı gibi kesin ön koşullu programlar profilde bu bilgi yokken 'Diğer'e alınmasın; yaş için tek soru ('Ortakların yaşı?') sorulsun.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eslesme", "ciddiyet": "orta",
+    "aciklama": "eslesme_ikas_pet: kullanıcının ilk hedefi 'finansman' olmasına rağmen ilk 9 sıra istihdam teşvikleri; bunların bir kısmı bu işletme için açıkça ilgisiz: 2. Engelli sigortalı istihdamı, 4. İşsizlik ödeneği alanların istihdamı, 7. Sosyal hizmetlerden yararlananlar, 8. Sosyal yardım alanlar, 9. Yurtdışına gönderilen sigortalılar (5510 81/i), 6. imalatta 5 puan (e-ticaret imalat değil). KGF kefalet/kredi programları (hedefin birincisi) 10-14. sırada.",
+    "kanit": "eslesme_ikas_pet: '9. Yurtdışına Götürülen/Gönderilen Sigortalılara Yönelik 5 Puan GSS ... 10. DİJİTAL KEFALET ...'",
+    "oneri": "Hedef sırası (ilk hedef = öncelik) skorlamada ağırlık taşısın; koşulu bilinmeyen alt-grup teşvikleri (engelli, sosyal yardım, yurtdışı sigortalı) ve sektör uyumsuz teşvikler (imalat 81/ı) e-ticaret depo istihdamı için alt sıraya insin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "diger", "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: yanıt kısa, kredi odaklı, tek konuda; önceki turdaki ilgisiz Eximbank e-ihracat kartı yok; kefalet oranı, ödemesiz dönem ve ücret rakamları kayıtla tutarlı.",
+    "kanit": "Kaynak 171/154 ile karşılaştırıldı.",
+    "oneri": "Mevcut davranış korunsun.",
+    "kaynak_disi": false
+   }
+  ]
+ }
+]

@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **E-İhracat Destekleri (5986 Sayılı Karar)** (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: %50 (dijital pazaryeri reklamı, e-ihracat tanıtımı ve sipariş karşılamada hedef ülkelerde %70); 2026 toplam yıllık üst limit şirketler için 73.990.019 TL
-- Diğer seçenekler: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (profilinize göre engel yok — şartları teyit edin); Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (profilinize göre engel yok — şartları teyit edin); Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3) (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (profilinize göre engel yok — şartları teyit edin); Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) (düşük olasılık — cironuz eşiğin altında); Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (profilinize göre engel yok — şartları teyit edin).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: e-ticaret (NACE 47.91)
@@ -47,46 +47,46 @@
   - Reklam giderleri yurt dışı pazaryerlerinde verilen dijital reklamlara ait olmalı ve reklamdan dönen toplam satışın %20'sini aşmamalı — resmî metin: “yurt dışı pazaryerleri üzerinden gerçekleştirdiği dijital reklam üzerinden dönen toplam satışlarının %20’sini aşmayan dijital pazaryeri tanıtım giderleri %50 oranında”
 - **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4
 
-**Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) — Ticaret Bakanlığı**
-- **Başvuru dönemi:** Ödeme belgesi tarihinden itibaren 6 ay içinde
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
+**Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) — Ticaret Bakanlığı**
+- **Başvuru dönemi:** Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
+- **Sizin için:** Düşük olasılık — cironuz eşiğin altında — yıllık cironuz (20.000.000 TL), kaydın aradığı en az 1.000.000 USD ihracat eşiğinin TL karşılığından az; cironuzun tamamı ihracat olsa bile eşiğe ulaşmaz (1 USD 30 TL'nin üzerinde).
 - **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** dijital dönüşüm, ihracat
-- **Destek:** %50; 2026'da birim başına yıllık 9.862.972 TL; ülke başına en fazla 4 yıl, en fazla 25 birim
-- **Hesaplama:** Kira giderinin %50'si, birim başına yıllık en çok 9.862.972 TL (2026)
+- **Destek:** %50; 2026 şirketler için yıllık 7.396.548 TL; ülke başına 3 yıl
+- **Hesaplama:** Uygun giderin %50'si; şirketler için 2026 yıllık en çok 7.396.548 TL
 - **Profilinize göre sağlanan şartlar:** şirket statüsü (limited şirket)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
   - ☐ Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır) — kurumdan teyit edin
-  - ☐ Birimde Türkiye'de üretilen ürünler pazarlanmalı — resmî metin: “Şirketlerin Türkiye’de üretilen ürünlerin pazarlandığı yurt dışı birimlerinin kira giderleri ile paylaşımlı ofislere ilişkin üyelik giderleri”
-  - ☐ Küresel tedarik zinciri desteğinin (m.10/3) depo kirası kaleminden yararlanılmamış olmalı — resmî metin: “10 uncu maddenin üçüncü fıkrasında belirtilen destekten yararlanan şirketler bu maddede yer alan destekten yararlandırılmazlar.”
-  - ☐ Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz
-  - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız
-  - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız
-  - ve 2 şart daha: panelde programın Kontrol listesi'nde
-- **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden; e-ticaret depoları için KEP üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-11
+  - ☐ Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru — kurumdan teyit edin
+  - ☐ Desteklenen ürünler Türk ürünü olmalı (ürün belgesi, üretim yeri ve marka ayrıntılarını E-İhracat Genelgesi'nden teyit edin) — resmî metin: “pazaryerlerinde Türk ürünlerinin ve markalarının çevrim”
+  - ☐ Önceki yıl GB + BGB (e-ticaret) ihracat toplamı 1.000.000 ABD dolarının üzerinde olmalı — kurumdan teyit edin
+  - ☐ Pazaryeri hedef ülkelerden birinde olmalı — resmî metin: “hedef ülkelerin yurt dışı pazaryerlerinde çevrim içi mağaza açılmasına, bu mağazaların yıllık”
+  - ☐ Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) — resmî metin: “bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir”
+- **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-8
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Ödeme belgesi tarihinden itibaren 6 ay içinde
 - Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Pazara giriş belgesinin düzenlenme tarihinden (denetim/gözetimde rapor tarihinden, ruhsatlandırma ve kayıtta ödeme belgesi tarihinden) itibaren 6 ay içinde
 - Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Ödeme belgesi tarihinden itibaren 6 ay içinde
-- Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Şirket çalışanının Türkiye'ye giriş tarihinden itibaren en geç 3 ay içinde
 
 **Birlikte kullanım (resmî metinden):**
 - [Ticaret Bakanlığı] Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) (resmî metin: "bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir")
-- [Ticaret Bakanlığı] Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı bilgi sayılır ve müeyyide uygulanır) (resmî metin: "Aynı harcama kalemi için, yararlanıcıların bu Karar dışında başka bir mevzuat/program kapsamında destek aldığının tespiti halinde, bu durum yanıltıcı bilgi ve belge sunulması olarak değerlendirilir")
+- [Ticaret Bakanlığı] Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) (resmî metin: "bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir")
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **İhracatçı birliği üyeliği** (E-İhracat Destekleri (5986 Sayılı Karar), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4), Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11)): Ürün grubunuzun ihracatçı birliğine üye olun; 5973 ve 5986 başvuruları üyesi olunan birliğin genel sekreterliğine yapılır.
-- **Ticaret Bakanlığı DYS kaydı** (E-İhracat Destekleri (5986 Sayılı Karar), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4), Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11)): Destek Yönetim Sistemi'ne (DYS) şirket kaydı; MERSİS bilgileri ve NACE kodu güncel olmalı.
-- **Harcamadan önce ön onay** (E-İhracat Destekleri (5986 Sayılı Karar), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Bu programlarda ön onay tarihinden önce yapılan harcama desteklenmez; harcamayı planlamadan başvurun.
+- **İhracatçı birliği üyeliği** (E-İhracat Destekleri (5986 Sayılı Karar), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4), Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8)): Ürün grubunuzun ihracatçı birliğine üye olun; 5973 ve 5986 başvuruları üyesi olunan birliğin genel sekreterliğine yapılır.
+- **Ticaret Bakanlığı DYS kaydı** (E-İhracat Destekleri (5986 Sayılı Karar), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4), Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8)): Destek Yönetim Sistemi'ne (DYS) şirket kaydı; MERSİS bilgileri ve NACE kodu güncel olmalı.
+- **Harcamadan önce ön onay** (E-İhracat Destekleri (5986 Sayılı Karar), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4), Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8)): Bu programlarda ön onay tarihinden önce yapılan harcama desteklenmez; harcamayı planlamadan başvurun.
 - **Yurt dışı marka tescili (Madrid Sistemi)** (Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Madrid Sistemi'ne taraf en az bir ülkede marka tescili; masrafın bir kısmı 5973 m.4 Yurt Dışı Marka Tescil Desteği ile karşılanabilir.
-- **Kayıtlı elektronik posta (KEP) adresi** (Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11)): Şirket adına bir KEP hizmet sağlayıcısından KEP adresi alın.
 - **E-İhracat Destekleri (5986 Sayılı Karar):** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru
 - **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4):** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru
 - **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4):** Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır)
+- **Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8):** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru
+- **Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8):** Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır)
 
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: İhracatçı birliği üyeliği; Ticaret Bakanlığı DYS kaydı; Harcamadan önce ön onay.
-2. Diğer programlar için ayrıca: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) — Yurt dışı marka tescili (Madrid Sistemi); Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) — Kayıtlı elektronik posta (KEP) adresi.
+2. Diğer programlar için ayrıca: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) — Yurt dışı marka tescili (Madrid Sistemi).
 3. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 4. Belgeler (E-İhracat Destekleri (5986 Sayılı Karar)): EK-Şirket Başvuru Formu (ilk başvuruda; marka tescil belgesi, tedarik ediliyorsa tedarik belgesi, üreticiyse kapasite raporu); Kaleme özel ön onay ve ödeme başvuru formları (Genelge Ekleri).
 5. Başvuru kanalı (E-İhracat Destekleri (5986 Sayılı Karar)): Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. — https://ticaret.gov.tr/data/6447baf113b8761694f892bb/E-İHRACAT DESTEKLERİNE İLİŞKİN GENELGE 13.04.2026.pdf. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.

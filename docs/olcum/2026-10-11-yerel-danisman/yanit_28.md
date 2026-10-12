@@ -21,8 +21,7 @@
 - **Kaynak:** https://ankaraka.org.tr/2026-ankara-sosyal-girisimcilik-ekosistemi-kapasite-gelistirme-mali-destek-programi
 
 **Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
-- YÖNDE - Yönderlik ve Değerlendirme Destek Programı (KOSGEB): Geri ödemesiz %80; program üst limiti toplam 280.000 TL: Dijital Dönüşüm Değerlendirme Analizi ve Yol Haritası Hizmeti 40.000 TL, Sürdürülebilirlik Raporlaması Hizmeti 200.000 TL, Yalın Olgunluk Değerlendirme Analizi (YODA) Hizmeti 40.000 TL; Sayfada başvuru dönemi belirtilmemiştir. Başvurular en geç 15 gün içinde kontrol edilir; destek, başvurunun KOSGEB'ce onaylandığı tarihte başlar. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- DİJİTAL KEFALET DESTEK PROGRAMI (KGF): %80 kefalet; şahıs 2,2 Milyon / tüzel 5 Milyon TL; yıllık %2; başvuru ücreti 10.000 TL; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
+- DİJİTAL KEFALET DESTEK PROGRAMI (KGF): %80 kefalet; şahıs 2,2 Milyon / tüzel 5 Milyon TL; yıllık %2; başvuru ücreti 10.000 TL; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Engel:** başvuru sahibi türünüz (anonim şirket) şartta sayılmıyor — kayıttaki şart: “Öncelik 1 için uygun başvuru sahipleri: Kooperatifler, iktisadi işletmesi olan dernek ve vakıflar, sosyal işletmeler.”.
@@ -32,7 +31,6 @@
 1. Engeli değerlendirin: engel kalkmadan başvuru yapılamaz; durumunuzun şarta etkisini kurumla teyit edin.
 2. Hazırlık: yukarıdaki şartları ve belgeleri şimdiden toplayın.
 3. Başvuru kanalı: Kalkınma Ajansları Yönetim Sistemi (KAYS); sorular için sga@ankaraka.org.tr — https://ankaraka.org.tr/2026-ankara-sosyal-girisimcilik-ekosistemi-kapasite-gelistirme-mali-destek-programi.
-4. İletişim (doğrulanmış): KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
 
 ### 5. Bilgi Eksikliği / Netleştirme
 Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.

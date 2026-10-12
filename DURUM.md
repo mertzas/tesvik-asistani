@@ -447,10 +447,10 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   çalışan eşiği ve "0-1 yaş işletme" profilden ("şirket kurarsam" varsayımında kuruluş = bugün) sağlanır; soru
   ihtiyacına uyan programa "örtüşmüyor" yazılmaz; kurulu işletmenin girişim dışı kurum sorusunda girişim programı
   ve parasal olmayan eğitim (e-Akademi; başlık "girişimcilik eğitimi" → girişim ihtiyacı) geride; yurt içi
-  reklam sorusunda "yalnız yurt dışına yönelik" uyarısı. Veri (tur35 genişletmesi): YÖNDE (5) KOSGEB sayfasına göre
-  %80, 280.000 TL, imalat küçük/orta ("mikro ölçekli işletmeler yararlanamaz" alıntısıyla); e-Akademi (330) tüm
-  şirket türlerine açık. Kapsam 420/25/23 → 396/49/23, ürün 434 → 410: fark tamamen YÖNDE (tarım ve turizm dijital
-  hücrelerinin önceki isabeti sahteydi; bu hücreler için kayıtlı dijital destek yok). Eski 30 senaryo dayanak 0,
+  reklam sorusunda "yalnız yurt dışına yönelik" uyarısı. Veri (tur35 genişletmesi): e-Akademi (330) tüm şirket
+  türlerine açık. [YANLIŞ, tur37'de geri alındı: YÖNDE (5) kaydın eski `detay` metnine göre "%80, 280.000 TL, imalat
+  küçük/orta" diye daraltılmıştı; canlı sayfa %100 / 700.000 TL / sektör-ölçek şartsız. Bu daraltmanın kapsamda
+  yarattığı 434 → 410 düşüşü de gerçek değildi.] Eski 30 senaryo dayanak 0,
   isabet 41/41. Test 1312 → 1314.
   Tur 4 (`tur4/`, `degerlendirme4_*.json`): A 3,14 · B 2,89 · C 2,83 · D 2,83 · E 3,00 (ortalama 2,94; tur 3: 2,88).
   Düzeltmeler: 9903 EK-3 verisinde sütun kayması (30 kalem; `scripts/fix_ek3_9903_2026_10_12.py`, her metin resmî
@@ -474,6 +474,18 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   cümleleri ve çift nokta tekrarlanmaz; iki sektör gerekçesi tekleşir. Eşleşme listesinde çağrısı kapanmış program,
   ölçeği (asgari yatırım, kredi tavanı) cirodan büyük program ve USD eşiğine ulaşılamayan program sıralamada geride
   (`esles`, uygunluk değil ilgi). Test 1321 → 1324.
+  Tur 5 (`tur5/`, `degerlendirme5_*.json`): A 3,14 · B 3,14 · C 2,94 · D 2,86 · E 2,97 (ortalama 3,01; tur 4: 2,94).
+  Düzeltmeler: YÖNDE geri alındı (`scripts/fix_veri_2026_10_12_yonde_tur37.py`, self-test 6/6, yedek tur37; canlı
+  sayfa 2026-10-12 08:12 `docs/olcum/2026-10-12-tur34/kaynak/9ef78a8d785053a6.txt`; `detay` canlı metinle değişti;
+  tur35 betiğinden YÖNDE kalemleri çıkarıldı). Ders: kaydın `detay` alanı eski sayfa sürümü olabilir; daraltıcı veri
+  değişikliğinden önce canlı sayfa yeniden çekilir. Çalışan eşiği kuralı Ar-Ge/tasarım personeli ve tam zaman eşdeğer
+  şartlarını kapsamaz (65 çalışanlı firmada Ar-Ge merkezi 50 personel şartı "sağlandı" sayılıyordu), bu şartlar kilit;
+  TRL ≤ 6 girişim sinyali yalnız mikro/küçük işletmede (orta/büyük A.Ş.'ye HUKS bloğu gösterilmez). TARSİM'de ürün
+  oranı kaydın listelerinden (`sigorta_orani_satiri`: %70 listesi, kış donu listesi, açık alan meyve teyidi); 5986
+  hedef ülke listesi sorudaki ülke/bölgeyle (Körfez) eşleşir (`hedef_ulke_satiri`); "pazaryerlerinde" gibi ekli
+  biçimler pazaryeri sorusu; pazaryeri sorusunda pazaryeri dışı program ad eşleşmesinden önce geride; yalnız girişim
+  ihtiyaçlı kurum sorusu ("şirket kurarsam KOSGEB ve TÜBİTAK") genel kurum sorusu sayılır. Kapsam 396/49/23 →
+  432/13/23, ürün 410 → 434. Test 1324 → 1329.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

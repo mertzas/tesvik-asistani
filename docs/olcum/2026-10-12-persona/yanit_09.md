@@ -1,6 +1,7 @@
 <!-- persona: cilek | soru: Dolu ve don riskine karşı sigorta yaptırırsam devlet ne kadarını öder? -->
 **Kısa cevap:**
 - Öne çıkan: **TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği** (TARSİM) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Prim desteği Çiftçi Kayıt Sistemi'ne kayıtlı üreticilere uygulanan paketler için tanımlanmıştır; Dönemsel çağrı yoktur; kaynakta başvuru tarihi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Çilek için kayıttaki oran: genel prim desteği %50; kış donunda %70 yalnız kayısı, şeftali, nektarin, erik, elma, armut, ayva, kiraz, vişne için; çilek bu listede yok; çilek 'açık alanda yetiştirilen meyveler' tarifesine giriyorsa %70 (listede adıyla geçmiyor; TARSİM acentesinden teyit edin).
 - Destek: Sigorta priminin devletçe karşılanan kısmı: genel yüzde 50; açık alan meyve, bazı sebzeler, patates, şekerpancarı, meyve-bağ fidanı ve kış donunda yüzde 70; köy bazlı verimde yüzde 70; büyükbaş dar kapsamlıda yüzde 60; gelir koruma sigortasında yüzde 60 (2026).
 - Diğer seçenekler: Meyve-Sebze Üretim Destekleri (Temel Destek) (profilinize göre engel yok — şartları teyit edin).
 - 1 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).

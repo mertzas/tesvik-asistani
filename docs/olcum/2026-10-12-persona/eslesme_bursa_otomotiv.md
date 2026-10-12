@@ -44,6 +44,5 @@ profil: {'sektor': 'imalat', 'bolge': 'Bursa', 'calisan_sayisi': 65, 'yillik_cir
     gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
 19. [1] 1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı — TUBITAK (aktif=True)
     gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
-20. [1] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
-    gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.
-    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+20. [1] Teknoloji Geliştirme Bölgesi Personel Gelir Vergisi Teşviki (4691 sayılı Kanun geçici madde 2, ikinci-üçüncü fıkra) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
+    gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.

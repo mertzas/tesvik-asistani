@@ -117,7 +117,7 @@ _KILIT = re.compile(r"rozet|üyeli[ğk]|üyesi|ihracatçı|net ihracat|greendeks
                     r"en az .{0,20}(?:USD|dolar)|\d+\s*yaş|yaşını aş|"
                     # gerçekleşmiş e-ihracatın belgelenmesi (Eximbank E-İhracat Destek Kredisi; hakem bulgusu 4. tur:
                     # e-ihracata yeni başlayacak firmaya "engel yok" deniyordu)
-                    r"faaliyetini tevsik|beyannamesi ile e-ihracat|"
+                    r"faaliyetini tevsik|beyannamesi ile e-ihracat|tam zaman eşdeğer|"
                     r"kad[ıi]n (?:yönetici|girişimci|ortak)\w*(?: bulunan| olan| olmak| olmalı)", re.IGNORECASE)
 _KOSULLU_BELGE = re.compile(r"\b\w+(?:ysem|ysam|ysek|ysak)\b|\bise\b.{0,40}(?:hazırla|ekle)", re.IGNORECASE)
 _KOBI = re.compile(r"\bKOB[İI](?:'|’)?(?:ler|lerin|leri|lere|nin|ye|ölçeğinde|lik)?\b")
@@ -865,7 +865,10 @@ def _profilden_karsilanan(metin: str, profil) -> str | None:
     from app.matching import _CALISAN_EN_AZ, _sayi
     n = getattr(profil, "calisan_sayisi", None)
     m_calisan = _CALISAN_EN_AZ.search(metin)
-    if m_calisan and n is not None and n >= _sayi(m_calisan.group(1)):
+    # Yalnız toplam çalışan şartı; "en az elli tam zaman eşdeğer Ar-Ge personeli" toplam çalışanla karşılanmaz (hakem
+    # bulgusu 2026-10-12, 5. tur: 65 çalışanlı firmada Ar-Ge merkezi şartı "sağlandı" sayılıyordu).
+    if m_calisan and n is not None and n >= _sayi(m_calisan.group(1)) and not re.search(
+            r"Ar-?Ge|tasarım|araştırmacı|tam zaman eşdeğer|mühendis|teknik personel", metin, re.I):
         # "İşverenin en az beş sigortalı çalışanı olmalıdır": profilde 9 çalışan → sağlanır (persona denemesi 2026-10-12)
         return f"çalışan sayısı şartı (en az {_sayi(m_calisan.group(1))}; profilinizde {n})"
     if re.search(r"TOBB üye|(?:ticaret|sanayi) odası(?:na)? (?:üye|kay)", metin, re.I) and not re.search(
@@ -2286,6 +2289,12 @@ def kisa_cevap(niyet: set[str], odak: list[Degerlendirme], adaylar: list[Degerle
                  + (f" ({_birlestir(ilk.gerekce[:1])})" if ilk.karar == "belirlenemedi" and ilk.gerekce else "")
                  + (f"; başlıca şart: {_kisalt(bascilik, 170).rstrip('.')}" if bascilik else "")
                  + f"; {takvim_metni(ilk, bugun, kisa=True)}.")
+    oran = sigorta_orani_satiri(ilk.tesvik, profil) if "sigorta" in sorulan else ""
+    if oran:
+        satir.append(f"- {oran[:1].upper() + oran[1:]}")
+    hedef = hedef_ulke_satiri(soru, adaylar[:EN_COK_KART] + list(tum_adaylar or []))
+    if hedef:
+        satir.append(f"- {hedef}")
     unsur = _destek_unsurlari(notlar, ilk.tesvik)
     if unsur and niyet & {"tutar", "liste"}:
         bolge = re.search(r"(\d)\. bölge", unsur)
@@ -2374,6 +2383,73 @@ def gider_kalemi_eslesmesi(soru: str, t) -> int:
     return sum(1 for sk, pk in _GIDER_KALEMLERI if re.search(sk, s) and re.search(pk, metin, re.I))
 
 
+def _liste_ogeleri(metin: str) -> list[str]:
+    """"a, b, c ve d" listesinin öğeleri (özgün yazım)."""
+    return [x.strip(" .") for x in re.split(r",\s*|\s+ve\s+", metin) if x.strip(" .")]
+
+
+def sigorta_orani_satiri(t, profil) -> str:
+    """Devlet destekli tarım sigortasında profildeki ürünün prim desteği oranı, kaydın ürün listelerinden (hakem
+    bulgusu 2026-10-12, 4. tur: "çilekte dolu ve don sigortasında devlet ne kadar öder" sorusuna altı oran dökülüyor,
+    kış donu %70'inin yalnız belirli meyvelere ait olduğu söylenmiyordu)."""
+    ad = getattr(profil, "urun_turu", None) or ""
+    urun = _katla(ad)
+    if not urun or "TARSİM" not in (t.kurum or "") + (t.baslik or ""):
+        return ""
+    bilgiler = [m.get("metin", "") for m in t.kontrol_listesi or [] if m.get("tur") == "bilgi"]
+    yetmis_m = next((b for b in bilgiler if re.match(r"Yüzde 70 prim desteği:", b)), "")
+    yetmis = _liste_ogeleri(yetmis_m.split(":", 1)[1]) if yetmis_m else []
+    kis_m = next((b for b in bilgiler if " kış donu" in b), "")
+    kis = _liste_ogeleri(kis_m.split(" kış donu")[0]) if kis_m else []
+    if kis:
+        kis[-1] = re.sub(r"(?:de|da|te|ta)$", "", kis[-1])   # "vişnede kış donu" → "vişne"
+        kis = [x[:1].lower() + x[1:] for x in kis]
+    katli = lambda xs: {_katla(x) for x in xs}  # noqa: E731
+    if urun in katli(yetmis):
+        return f"{ad} için kayıttaki oran: prim desteğinin %70'i devletçe karşılanır (%70 uygulanan ürünler listesinde)."
+    parcalar = [f"{ad} için kayıttaki oran: genel prim desteği %50"]
+    if urun in katli(kis):
+        parcalar.append("kış donu riskinde %70 (kış donu listesinde)")
+    elif kis:
+        parcalar.append(f"kış donunda %70 yalnız {', '.join(kis)} için; {ad} bu listede yok")
+    if any(_katla(x).startswith("acik alanda yetistirilen meyve") for x in yetmis):
+        parcalar.append(f"{ad} 'açık alanda yetiştirilen meyveler' tarifesine giriyorsa %70 (listede adıyla "
+                        "geçmiyor; TARSİM acentesinden teyit edin)")
+    return "; ".join(parcalar) + "."
+
+
+# Soruda bölge adıyla geçen ülke grupları; liste üyeliği kaydın "Hedef ülkeler" listesinden okunur.
+_BOLGE_ULKELERI = {"korfez": ("BAE", "Bahreyn", "Katar", "Kuveyt", "Suudi Arabistan", "Umman")}
+
+
+def hedef_ulke_satiri(soru: str, kartlar: list) -> str:
+    """Soruda ülke ya da bölge geçiyorsa 5986 "Hedef ülkeler" listesine göre hangilerinde oranın yüksek olduğu (hakem
+    bulgusu 2026-10-12, 4. tur: "Körfez ülkelerine satmak" sorusunda Körfez hiç anılmıyordu)."""
+    s = _katla(soru)
+    for d in kartlar:
+        t = getattr(d, "tesvik", d)
+        m = re.search(r"Hedef ülkeler \(([^)]*)\): ([^.]+)\.", t.detay or "")
+        if not m:
+            continue
+        liste = [x.strip() for x in re.split(r",\s*", m.group(2)) if x.strip()]
+        katli = {_katla(x): x for x in liste}
+        sorulan: list[str] = []
+        for bolge, ulkeler in _BOLGE_ULKELERI.items():
+            if re.search(rf"\b{bolge}", s):
+                sorulan += list(ulkeler)
+        sorulan += [x for k, x in katli.items() if re.search(rf"\b{re.escape(k)}", s) and x not in sorulan]
+        if not sorulan:
+            return ""
+        icinde = [x for x in sorulan if _katla(x) in katli]
+        disinda = [x for x in sorulan if _katla(x) not in katli]
+        oran = re.search(r"hedef ülkelerde (\d+) puan artar", t.detay or "")
+        return (f"Hedef ülke listesi ({m.group(1)}; {_kisa_ad(t.baslik)} ve diğer 5986 kalemlerinde oran "
+                + (f"{oran.group(1)} puan yüksek" if oran else "yüksek") + "): "
+                + (f"{', '.join(icinde)} listede" if icinde else "sorduğunuz ülkeler listede değil")
+                + (f"; {', '.join(disinda)} listede değil (genel oran)" if icinde and disinda else "") + ".")
+    return ""
+
+
 def kurum_ozeti_kapali(odak: list["Degerlendirme"]) -> list["Degerlendirme"]:
     """Kurum sorusunun kısa cevap özetinde gerekçesiyle anılan kapalı programlar (en çok 4); bunlar aşağıdaki
     "kapalı programlar" listesinde yinelenmez."""
@@ -2396,7 +2472,7 @@ def _kisa_neden(d: "Degerlendirme") -> str:
         if g.startswith(onek):
             g = g[len(onek):]
     g = g.split(" — kayıttaki şart:")[0].split("; kayıttaki")[0]
-    return _cumle_kisalt(g, 90).rstrip(".")
+    return _cumle_kisalt(g, 70).rstrip(".")
 
 
 def tekrarlari_kisalt(metin: str) -> str:
@@ -2471,7 +2547,9 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
         kurumlar = (kurum_odagi(soru, tum) if not adi_gecen_kayit and not _MANIPULASYON.search(_katla(soru))
                     else set())
         from app.ihtiyac import isletmeye_yonelik_mi
-        if kurumlar and soru_ihtiyaclari(soru):
+        # "Şirket kurarsam KOSGEB ve TÜBİTAK'tan hangi destekler?" (yalnız girişim ihtiyacı) genel kurum sorusudur: kurumun
+        # bütün programları değerlendirilir (hakem bulgusu 4. tur: TÜBİTAK tarafında yalnız kapalı 1812 görünüyordu).
+        if kurumlar and set(soru_ihtiyaclari(soru)) - {"girisim"}:
             # "KOSGEB'den makine desteği": kurum bir filtredir; sıra aramanın (ihtiyaç) sırasıdır.
             kurum_kayit = [t for t in kayitlar if t.kurum in kurumlar]
             # Profile kapalı olduğu için aramadan elenen ama soruya yönelik kurum programları da değerlendirilir; yanıt
@@ -2647,7 +2725,7 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
                                  "kurulduktan sonra değerlendirilir")
 
         soru_sira = {x: i for i, x in enumerate(soru_ihtiyaclari(ihtiyac_sorusu))}
-        pazaryeri_sorusu = bool(re.search(r"amazon|etsy|ebay|walmart|pazar ?yeri", _katla(soru)))
+        pazaryeri_sorusu = bool(re.search(r"amazon|etsy|ebay|walmart|trendyol global|pazar ?yer", _katla(soru)))
         # Instagram/Google reklamı pazaryeri içi reklam değildir: 5986 m.4 yalnız yurt dışı pazaryerlerindeki reklamı
         # destekler (hakem bulgusu 2026-10-12, 4. tur: "Instagram ve Google reklam" sorusunda m.4 öne çıkıyordu).
         sosyal_reklam = not pazaryeri_sorusu and bool(re.search(
@@ -2693,11 +2771,11 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
             girisim_disi = (getattr(profil, "sirket_turu", None) not in (None, "yok") and p_ihtiyac == {"girisim"}
                             and "girisim" not in soru_ihtiyac_seti)
             return (not ozel, kurulu_ister, d.tesvik.id not in kurulus_idleri, donem_sira[d.donem] == 2,
-                    pazaryeri_ici, dusuk, istihdam_sira, -_ad_eslesmesi(d.tesvik), ihtiyac_disi,
+                    pazaryeri_ici, pazaryeri_disi, dusuk, istihdam_sira, -_ad_eslesmesi(d.tesvik), ihtiyac_disi,
                     -gider_kalemi_eslesmesi(soru, d.tesvik), girisim_disi, _dar_kitle(d.tesvik) and not kitle_soruda,
                     kilitli,
                     _buyuk_olcekli(d.tesvik, profil),
-                    pazaryeri_disi, -len(p_ihtiyac & soru_ihtiyac_seti), ilk_ihtiyac, kredi_istenmedi, _dar_kitle(d.tesvik),
+                    -len(p_ihtiyac & soru_ihtiyac_seti), ilk_ihtiyac, kredi_istenmedi, _dar_kitle(d.tesvik),
                     not (p_ihtiyac & ihtiyac), d.karar != "sartli", -(e.siralama if e else 0.0),
                     arama_sirasi.get(d.tesvik.id, 999))
         ana.sort(key=_ilgi)
@@ -2979,7 +3057,8 @@ def sabit_metinler() -> str:
 
 def _girisim_ilgili(profil, soru: str) -> bool:
     """HUKS (TÜBİTAK BiGG) bloğu yalnız teknoloji girişimi bağlamında anlamlı."""
-    if profil is not None and (profil.trl is not None or profil.sirket_turu == "yok"):
+    from app.girisim import girisim_modu_mu
+    if profil is not None and (profil.sirket_turu == "yok" or (profil.trl is not None and girisim_modu_mu(profil, ""))):
         return True
     return bool(re.search(r"startup|girisim(?!ci)|bigg|teknogirisim|\btrl\b|prototip", _katla(soru)))
 

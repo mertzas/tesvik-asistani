@@ -202,15 +202,6 @@ Durum notu: TÜBİTAK resmi program sayfasından doğrulandı (2026-07-12). | De
 - [kural] Başvuru yalnız duyurulan çağrı döneminde PRODİS üzerinden yapılır | alıntı: 1507 KOBİ Ar-Ge Başlangıç Destek Programına başvurular çağrı duyurularına göre yapılır. | kaynak: https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi
 ÇAĞRI: {"id": 2, "ad": "2026 yılı 2. çağrı", "acilis": "2026-07-20", "kapanis": "2026-11-11", "on_kayit_son": "2026-11-09", "son_gun": "2026-11-09", "kaynak_url": "https://tubitak.gov.tr/sites/default/files/2026-07/1507_KOBI_Ar-Ge_Baslangic_Destek_Programlari_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf", "dogrulama_tarihi": "2026-10-08", "notlar": "Kapanış 11.11.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 09.11.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı.", "durum": "acik", "durum_metni": "Başvuruya açık", "kalan_gun": 28}
 EK BLOKLAR:
-GİRİŞİM MODU BİLGİLERİ
-HUKS ÖN SKORU (sistem hesapladı, profil verisinden): 65/75 değerlendirilebilen puan (100'e oranla 87); değerlendirilemeyen bileşenler: Ekip & Ar-Ge niteliği
-- NACE kodu & şirket statüsü: 25/25 — anonim şirket: sermaye şirketi şartı arayan programlara açık
-- Teknoloji hazırlık seviyesi (TRL): 25/25 — TRL 5: prototip/doğrulama aşaması; Ar-Ge hibe programlarının çekirdek aralığı
-- Finansal & nakit akışı uyumu: 15/25 — yıllık ciro 210.000.000 TL
-- Ekip & Ar-Ge niteliği: değerlendirilemedi — ekip ve proje niteliği profilde yok; bu bileşen puanlanmaz (başvuruda kurum değerlendirir)
-SİSTEMDE KAYDI OLMAYAN PROGRAMLAR (bunlar için oran/limit/şart VERME; resmî kaynaktan teyit istemekle yetin): KOSGEB Yurt Dışı Pazar Destek Programı; TTGV programları; Kalkınma Ajansı proje teklif çağrıları
-MEVZUAT NOTU (doğrulanmış): Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1/2026'dan itibaren 10962 sayılı Karar kapsamındadır; 5447 (E-Turquality) ve 5448 sayılı Kararlar yürürlükten kaldırılmıştır. KOSGEB Ar-Ge/Ür-Ge/İnovasyon ve KOBİGEL programları yürürlükten kaldırılmıştır (kayıtları 'kapalı' olarak sistemde).
-
 BİRLİKTE KULLANIM KURALLARI (kayıtlardan, resmî metinden alıntılı):
 - [Sanayi ve Teknoloji Bakanlığı] Teknoloji Hamlesi Programı (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi; Teknoloji Hamlesi'nde KOSGEB ve TÜBİTAK doğrudan destekleri serbest). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
 - KGF (Kredi Garanti Fonu A.Ş.): Çağrı merkezi 444 7 543, Genel merkez 0 312 204 00 00, Adres: Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara. (Doğrulama kaynağı: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim, doğrulama tarihi: 2026-07-12)

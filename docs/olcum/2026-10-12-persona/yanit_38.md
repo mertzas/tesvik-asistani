@@ -1,6 +1,7 @@
 <!-- persona: ikas_bebek | soru: Organik bebek tekstili markamızı Körfez ülkelerine satmak istiyoruz; hangi destekler var? -->
 **Kısa cevap:**
 - Öne çıkan: **Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12)** (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz; Ödeme belgesi tarihinden itibaren 6 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Hedef ülke listesi (EK-Hedef Ülkeler Listesi, 35 ülke; Dijital Pazaryeri Tanıtım Desteği ve diğer 5986 kalemlerinde oran 20 puan yüksek): BAE, Katar, Kuveyt, Suudi Arabistan listede; Bahreyn, Umman listede değil (genel oran).
 - Destek: %50; 2026'da birime bağlı ülke başına yıllık 12.329.397 TL, marka tesciline bağlı yıllık 19.728.672 TL; en fazla 4 yıl
 - Diğer seçenekler: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (profilinize göre engel yok — şartları teyit edin); E-İhracat Destekleri (5986 Sayılı Karar) (profilinize göre engel yok — şartları teyit edin); E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) (şarta bağlı).
 

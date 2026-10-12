@@ -1,0 +1,597 @@
+[
+ {
+  "n": 1,
+  "puan": {
+   "dogruluk": 4,
+   "soruya_odak": 3,
+   "eksiksizlik": 3,
+   "anlasilirlik": 3
+  },
+  "bulgular": [
+   {
+    "tur": "uygunluk",
+    "ciddiyet": "orta",
+    "aciklama": "Şirketsiz yoldaki tek gerçek seçenek olan 1812 BiGG Aşama 1 için asıl ön koşul (üniversite öğrencisi/mezunu olmak) yanıtın sadece Darboğazlar bölümünde geçiyor. Kısa cevapta ve Bölüm 5'te bu bilgi kullanıcıdan istenmiyor; Bölüm 5 ‘uygunluk belirlenemedi’ diyor ama gerekçe olarak alakasız bir cümle veriyor. Ayrıca 20/B ile çalışan kişi zaten gerçek kişi olarak gelir elde ediyor; kayıttaki ‘sermaye şirketi veya gerçek kişi işletmesi ortağı olmamak’ şartıyla çakışıp çakışmadığı hiç tartışılmıyor, ‘Profilinize göre sağlanan şartlar: başka şirkette ortaklık olmaması’ tek başına yeterliymiş gibi yazılmış.",
+    "kanit": "Profilinize göre sağlanan şartlar: başka şirkette ortaklık olmaması (profilinize göre) | Bölüm 5: uygunluk belirlenemedi (teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı...)",
+    "oneri": "Çağrı/Aşama koşulu profilde yoksa (eğitim durumu) kısa cevapta ‘şu bilgiyi verirseniz netleşir: üniversite öğrencisi/mezunu musunuz?’ diye açık soru olarak yaz. Kayıttaki şart metnine dayanıp ‘20/B kazancınız şahıs işletmesi sayılırsa şart etkilenebilir, TÜBİTAK'a teyit ettirin’ gibi belirsizliği açıkça söyle.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "gurultu",
+    "ciddiyet": "orta",
+    "aciklama": "‘Öne çıkan’ olarak kullanıcının zaten kullandığını söylediği 20/B istisnası gösteriliyor ve ‘Kısa cevap’ tam o satırın üstünde ‘profilinize açık bir program kaydı bulamadım’ diyor. Kullanıcı ‘şirket kurmadan alabileceğim yeni bir destek’ soruyor; mevcut durumunu ona geri okumak soruyu yanıtlamıyor. Yanıtın başındaki ‘Yol ayrımı’ paragrafı da KGF kredisini BiGG ile alternatif gibi sunuyor, oysa KGF bu kullanıcıya zaten kapalı (işletmesi yok) ve yanıtın sonunda kapalı listede.",
+    "kanit": "Öne çıkan: Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası ... | Yol ayrımı: HALKBANK GENÇ İŞİ KREDİSİ PROJESİ (KGF) kurulmuş bir işletme ister; ... hangi programla ilerleyeceğinize karar verin",
+    "oneri": "Soruda adı geçen/kullanıcının halihazırda kullandığı programı ‘zaten yararlandığınız’ başlığıyla ayır; ‘öne çıkan’ yeni seçeneklerden seçilsin. ‘Yol ayrımı’ yalnız gerçekten seçilebilir (açık) iki program için üretilsin; kapalı programı alternatif gibi gösterme.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "Şirket kurmanın bedeli söylenmiyor: kayıtta 20/B'nin yalnız gerçek kişilere açık olduğu, kurumlar vergisi mükellefi şirketin yararlanamadığı yazıyor (onay kutusunda duruyor) ama yanıt bunu ‘şirkete geçince mevcut abonelik gelirindeki %15 nihai stopaj avantajı biter’ sonucuna bağlamıyor. ‘Şirket kurmadan’ soran kullanıcının asıl karar girdisi bu. BiGG'de şirketin Aşama 2 sonrası kurulacağı sırası da yalnız ‘Yol ayrımı’ cümlesinde geçiyor.",
+    "kanit": "20/B kaydı: İstisnadan yalnızca gelir vergisi mükellefleri (gerçek kişiler) yararlanır, kurumlar vergisi mükellefleri (şirketler) yararlanamaz.",
+    "oneri": "Kapsamı ‘yalnız gerçek kişi / şahıs’ olan bir program kartı kullanıcının şirketleşme sorusuyla birlikte çıktığında, kart sonuna ‘Şirket kurarsanız bu avantaj sona erer; kurmadan önce mali müşavirle karşılaştırın’ uyarısı ekle (genellenebilir kural: şirket türü kısıtlı program + şirketleşme niyeti).",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "dogruluk",
+    "ciddiyet": "dusuk",
+    "aciklama": "1812 kartında ‘başvuruya açık ... 36 gün kaldı’ ifadesi bu kullanıcı için geçersiz bir çağrıyı (Tohum Yatırım, yalnız önceki 1812/1512 yatırımı almış şirketler) öne çıkarıyor; nitelendirme var ama geri sayım ve ‘başvuruya açık’ ifadesi yanlış umut yaratıyor. Kayıtta olan ve kullanıcıya gerçekten yönelik Aşama 1 hızlandırma çağrısı bilgisi (1812-2026-2 çağrısı 30.09.2026'da kapandı, başvurular uygulayıcı kuruluşlar üzerinden) yanıta hiç alınmamış.",
+    "kanit": "1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı: başvuruya açık ... ön kayıt son günü 17.11.2026 (36 gün kaldı) | kaynak: 1812-2026-2 Aşama 2 başvuruları, kapanış 2026-09-30, durum kapandı",
+    "oneri": "Kullanıcının nitelik koşulunu karşılamadığı çağrıyı ‘açık/kaç gün kaldı’ olarak değil ‘size uygun değil’ diye ver; programın kullanıcı için geçerli aşamasının çağrı durumunu (kapandı/yeni dönem bekleniyor) ayrıca yaz.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik",
+    "ciddiyet": "orta",
+    "aciklama": "Esnafın anlayacağı dil değil: ‘Sizin için: Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı’ kalıbı üç kartta aynen tekrar ediyor ve bir şart gibi okunuyor; ‘kayıtlarımızda açık çağrı yok’ gibi sistem jargonu var. Yanıt ~15 KB; soru ‘var mı?’ ama ilk 12 satır yoğun, tek cümleye sığacak cevap (BiGG Aşama 1 + KOSGEB eğitimi; 20/B'yi zaten kullanıyorsunuz) en başta net söylenmiyor.",
+    "kanit": "teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin. | bu koşulu sağlamıyorsanız sizin için açık çağrı kayıtlarımızda yok",
+    "oneri": "‘Hedefle eşleşme bulunamadı’ teknik notunu kullanıcıya gösterme; sadece gerçek bir engel varsa yaz. İlk iki satırda ‘Evet, şirketsiz yol: A, B; zaten kullandığınız: C’ biçiminde net hüküm üret.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "dusuk",
+    "aciklama": "21 yaşındaki, ilk kez gelir elde eden kullanıcı için veritabanında bulunan ‘Genç Girişimcilerde Gelir Vergisi İstisnası (GVK m.20)’ kaydı bu persona için eşleşme listesine ve yanıta girmemiş. 20/B ile birlikte kullanım/çakışma durumu söylenmeli (mali müşavire teyit).",
+    "kanit": "eslesme_rekortiv.md yalnız 3 kayıt (1812, 20/B, KOSGEB e-Akademi)",
+    "oneri": "Yaş sınırı olan vergi istisnası kayıtlarını (genç girişimci) şirket türü ‘yok/şahıs’ profilinde adayla; 20/B ile ilişkisini kayıt notuna yaz.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eslesme",
+    "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: eslesme_rekortiv listesi yalnız 3 kayıt ve hepsi makul; açıkça uygunsuz kalem yok (KGF/1512 dışarıda).",
+    "kanit": "1812, 20/B, KOSGEB e-Akademi",
+    "oneri": "Değişiklik gerekmez.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "diger",
+    "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: 20/B tutarları (2026: 5.300.000 TL), %15 nihai tevkifat, abonelik gelirinin kapsamda olması kayıtla birebir; önceki turdaki ‘KOSGEB veri tabanı kaydı’ ön koşulunun e-Akademi'ye yanlış bağlanması düzelmiş.",
+    "kanit": "Banka, hasılattan %15 gelir vergisi tevkifatı yapar ... ücretli abonelik gelirleri istisna kapsamında",
+    "oneri": "Değişiklik gerekmez.",
+    "kaynak_disi": false
+   }
+  ]
+ },
+ {
+  "n": 2,
+  "puan": {
+   "dogruluk": 3,
+   "soruya_odak": 2,
+   "eksiksizlik": 2,
+   "anlasilirlik": 3
+  },
+  "bulgular": [
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "Sorunun özü ‘KOSGEB ve TÜBİTAK birlikte nasıl kullanılır’ idi; yanıtta birlikte kullanım olarak yalnız KOSGEB'in kendi içindeki bir kural (İş Geliştirme ile Faiz/Kâr Payı aynı anda alınamaz) var, KOSGEB–TÜBİTAK ilişkisi için ‘kurumdan teyit edin’ deniyor. Veritabanında şirket kurulduktan sonra bu kullanıcıya uygun TÜBİTAK 1507 (KOBİ Ar-Ge Başlangıç, %75 hibe, 3,5 M TL), 1501, 1601, 1707, ayrıca KGF Halkbank Genç İşi Kredisi (bilişim, <3 yaş, ≤35 yaş), KGF Girişimci Destek Faiz Programı ve KOSGEB Yapay Zekâ Kredisi kayıtları var; hiçbiri yanıtta değil. TÜBİTAK tarafında yanıt yalnız ‘uygun değil’ denen 1812'yi gösteriyor.",
+    "kanit": "ADAY (yanıtta yok): 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç ...; 1501; HALKBANK GENÇ İŞİ KREDİSİ PROJESİ; GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI; Yapay Zekâ Kredi Programı",
+    "oneri": "‘Şirket varsayımı’ yapılan çok kurumlu sorularda, aynı varsayımla uygun olan her kurumun programlarını (en az ilk 2–3'ü) kart olarak üret ve çift destek yasağı kurallarını kurumlar arası eşleştir. Eşleme yapılamıyorsa ‘bu iki program arasındaki birlikte kullanım kuralı kayıtta yok; aynı gideri iki kez gösteremezsiniz’ gibi genel ilke cümlesini ver.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "dogruluk",
+    "ciddiyet": "orta",
+    "aciklama": "İç çelişki: Kısa cevap ‘şirketi BiGG kabulünden önce kurmayın; şirket Mükemmeliyet Mührü sonrası kurulur’ diyor; ardından 1812 kartı ‘uygun değil — şirketi olanlara kapalı (ortaklık yasağı)’ olarak etiketleniyor. Oysa BiGG'ye başvurmuş kullanıcının şirketi Mükemmeliyet Mührü sonrası kuracağı ve Aşama 2/3'ün şirket istediği kayıtta yazıyor; kart tam tersini söylüyor. ‘Ne yapabilirsiniz: ... ortaklıktan ayrılmanın sonucunu kurumdan teyit edin’ de şirketi olmayan kullanıcı için anlamsız.",
+    "kanit": "1812 ... (uygun değil) Neden: şirketi olanlara kapalı (ortaklık yasağı). | Ne yapabilirsiniz: Kabul tarihinden önce ortaklıktan ayrılmanın sonucunu kurumdan teyit edin.",
+    "oneri": "Programın aşamaları farklı şirket koşulları taşıyorsa (Aşama 1: şirket olmamak, Aşama 2–3: şirket olmak) kartı tek hükme indirgeme; ‘şirket kurarsanız hangi aşamada ne olur’ zaman çizelgesi üret. Kullanıcı ‘başvurdum’ dediyse programı ‘kapalı’ listesine koyma.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "dogruluk",
+    "ciddiyet": "dusuk",
+    "aciklama": "Varsayım profil verisi gibi sunuluyor: ‘Şirket türü: limited şirket’, ‘Kuruluş tarihi: 12.10.2026’ (bugünün tarihi), ‘Ölçek: mikro işletme’. Aynı yanıtta e-Akademi kartı hâlâ ‘Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi’ diyor (limited varsayımıyla çelişiyor).",
+    "kanit": "Kuruluş tarihi: 12.10.2026 | e-Akademi: Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi",
+    "oneri": "Varsayımsal profil alanlarını ‘(varsayım)’ etiketiyle göster, kuruluş tarihini uydurma; tüm kartlar aynı varsayılan şirket türünü kullansın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "KOSGEB Girişimci Destek kartı bu kullanıcıya bağlanmıyor: 21 yaşında olduğu için genç girişimci +10.000 TL ile İş Kurma Desteği 30.000 TL'ye çıkabilir; ayrıca kayıttaki ‘Hesaplama’ satırında olan personel giderinin 36 ay asgari ücret kadar %100 geri ödemesiz karşılanması ve 2026/2 duyurusundaki 2 M TL / kadın-genç 1 M TL kredi bilgisi yanıta alınmamış. İş Kurma Desteği çağrısının açık olup olmadığı da belirsiz bırakılıyor (‘diğer destekleri için kayıtlarımızda çağrı tarihi yok’).",
+    "kanit": "Destek: İş Kurma: gerçek kişi 10.000 TL / sermaye şirketi 20.000 TL (... genç/kadın/engelli/gazi/şehit yakını +10.000 TL) | kayıt: Buna ek olarak personel giderleri 36 ay boyunca aylık asgari ücret kadar %100 geri ödemesiz karşılanır",
+    "oneri": "Kaydın ‘Hesaplama’ alanındaki kişiye özel sonucu (yaş sınırı içindeyse +10.000 TL, toplam 30.000 TL) profil verisiyle bağlayıp ilk kartın başında ‘Sizin için tahmini: 30.000 TL + personel gideri’ yaz; kayıtta çağrı bilgisi yoksa ‘çağrı kayıtlarımızda yok’ yerine ‘sürekli mi dönemsel mi KOSGEB'den teyit edin’ de.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik",
+    "ciddiyet": "orta",
+    "aciklama": "Kısa cevap tek madde içinde 6–7 cümle ve iki ayrı listeyi birleştirmiş (‘Bu kurumun diğer programları — engel yok: ...; size kapalı ya da başvuruya kapalı: ... (şirketi olanlara kapalı (ortaklık yasağı)), Küresel Rekabetçilik ... (yeni başvuru için şu an kapalı (2026 yılı 1. başvuru dönemi: kapandı (30.09.2026)).’ iç içe parantez, kapanmayan parantez). ‘kayıtlarımızda çağrı tarihi yok’ sistem jargonu; ‘i̇ş Geliştirme’ (birleşik noktalı i) karakter hatası.",
+    "kanit": "...kayda göre i̇ş Geliştirme Desteği ile ... | programın diğer destekleri ya da aşamaları için kayıtlarımızda çağrı tarihi yok",
+    "oneri": "Kısa cevabı en çok 3–4 kısa madde ile sınırla; iç içe parantezleri kaldır; küçük harfe çevirirken Türkçe locale kullan (İ→i).",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "gurultu",
+    "ciddiyet": "dusuk",
+    "aciklama": "Kapalı ve bu kullanıcıyla ilgisiz Küresel Rekabetçilik Destek Programı (30 M TL alt kredi limiti, hızlı büyüyen ihracatçı şartı) kısa cevapta anılıyor; tek kişilik yeni şirket için anlamsız. Bölüm 3–4'te ‘KOSGEB veri tabanı kaydı’ tek ön koşul gibi öne çıkıyor.",
+    "kanit": "Küresel Rekabetçilik Destek Programı (yeni başvuru için şu an kapalı ...)",
+    "oneri": "Ölçek/şart olarak profille hiç örtüşmeyen (alt kredi limiti ≫ ciro, ihracat şartı) programları ‘kapalı’ satırında bile gösterme.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "diger",
+    "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: ‘Dikkat’ paragrafı (şirketi BiGG kabulünden önce kurarsanız ortaklık şartını kaybedebilirsiniz) kayıtla tutarlı ve kullanıcı için en değerli uyarı; İş Geliştirme çağrısının 08.05.2026'da kapandığı doğru.",
+    "kanit": "Şirketi BiGG hızlandırma programına kabulden önce kurarsanız bu şartı kaybedebilirsiniz",
+    "oneri": "Değişiklik gerekmez.",
+    "kaynak_disi": false
+   }
+  ]
+ },
+ {
+  "n": 3,
+  "puan": {
+   "dogruluk": 4,
+   "soruya_odak": 3,
+   "eksiksizlik": 3,
+   "anlasilirlik": 3
+  },
+  "bulgular": [
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "Reklam sorusunda karar verdirici iki hüküm kayıtta var, yanıtta yok: (1) Yalnız EK-14 ‘Desteklenen Reklam, Tanıtım ve Pazarlama Faaliyetleri Listesi’ndeki yurt dışına yönelik faaliyetler desteklenir (her reklam değil); (2) ilk destek ödemesinin yapıldığı yılı izleyen ikinci takvim yılından itibaren yıllık destek, bir önceki yılki hizmet ihracatı ve yurt dışı kaynaklı gelirin 1/3'ünü aşamaz. Türkçe sınav uygulaması gibi yurt dışı geliri küçük bir ürün için bu, ‘yıllık 50.000.000 TL’ rakamını fiilen anlamsızlaştırıyor; yanıtta yalnız büyük tavanlar var.",
+    "kanit": "kayıt: Yalnızca EK-14 listesindeki yurt dışına yönelik faaliyetlerin ... giderleri desteklenir | ... toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz",
+    "oneri": "Kayıtta ‘kural’ olarak duran sınırlayıcı hükümleri (kapsam listesi, gelire bağlı üst sınır) ‘Destek’ satırının hemen altında ‘Dikkat’ kalemi olarak göster; büyük tavan rakamını tek başına verme.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "gurultu",
+    "ciddiyet": "orta",
+    "aciklama": "Yanıtın yaklaşık yarısı soruyla ilgisiz: UTPO (işbirliği kuruluşu, 10 yararlanıcı şartı, 35 M TL), Tekno Hızlandırıcı İhracat Projesi, TURQUALITY (3 M USD ihracat eşiği), kapalı KOSGEB Küresel Rekabetçilik ve KGF Küresel Rekabetçilik paketi, ‘Girişim ön değerlendirmesi’ (HUKS skoru, BiGG'ye dair) ve mevzuat notu. Tek kişilik, gelirsiz, şirketi olmayan bir geliştiricinin reklam sorusuna bunlar karar yükü getiriyor.",
+    "kanit": "UTPO (10962 m.29) ... Tekno Hızlandırıcı (m.25) ... Marka ve TURQUALITY® ... HUKS ÖN SKORU ... 55/75",
+    "oneri": "Soru ‘reklam/tanıtım desteği’ ise yalnız o ihtiyacı karşılayan kart(lar)ı göster; ölçek/ön koşulu açıkça tutmayan (işbirliği kuruluşu, 3 M USD ihracat) ve ihtiyaç etiketi tutmayan programları ‘Diğer'e bile alma. Girişim skoru bloğu yalnız girişim/yatırım sorularında çıksın.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik",
+    "ciddiyet": "orta",
+    "aciklama": "UTPO için ‘uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart ...) bu konudaki bilgiyi profilinize ekleyin’ deniyor; oysa şart kullanıcının profiliyle değil, ayrı bir işbirliği kuruluşunun başvurusuyla ilgili (kullanıcı ekleyecek bilgi yok). Yol haritası 1. adımı ‘Diğer programlar için ayrıca: ... DYS kaydı; ... Harcamadan önce ön onay’ ana program (m.17) için bir adım içermiyor; asıl hüküm (harcamadan sonra ödeme belgesinden itibaren 6 ay içinde, EK-4 belgeleriyle başvuru) yalnız kartın başında. Başlık kesik: ‘Uluslararası Teknoloji …’.",
+    "kanit": "uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: UTPO'nun destek kapsamına alınması için ... işbirliği kuruluşu onay başvurusu yapar.); bu konudaki bilgiyi profilinize ekleyin | 1. Diğer programlar için ayrıca: ... Uluslararası Teknoloji …",
+    "oneri": "‘Profilinizden doğrulanamayan şart’ ifadesini yalnız kullanıcı verisiyle çözülebilecek şartlar için kullan; üçüncü taraf eylemi gerektiren şartta ‘bu program ancak bir işbirliği kuruluşu aracılığıyla; tek başınıza başvuramazsınız’ de. Yol haritasının ilk adımları ana programın adımları olsun; başlık kırpma yerine kısa ad kullan.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "Şirketsiz kullanıcıya şirket kurmanın sıralaması ve bedeli söylenmiyor: m.17 yararlanıcı tanımı şirket/kooperatiftir, yani şirket kurulmadan, gerçek kişi adına yapılan reklam harcaması desteğe girmez (kayıttaki yararlanıcı tanımından çıkarım); ayrıca 20/B istisnası şirkete geçince biter (DB'de ayrı kayıt). Yanıt yalnız ‘şirket kurmanız hâlinde geçerli’ diyor.",
+    "kanit": "Varsayım: şirketiniz olmadan başvurulabilecek bir program kaydı bulamadım; aşağıdaki programlar şirket (limited şirket) kurmanız hâlinde geçerlidir.",
+    "oneri": "‘Şirket kurarsanız’ varsayımıyla verilen yanıtlarda, ‘harcamayı şirket adına, kuruluş sonrası yapın’ ve ‘mevcut vergi avantajının (örn. 20/B) şirkette devam etmediği’ notunu otomatik ekle.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "dogruluk",
+    "ciddiyet": "dusuk",
+    "aciklama": "Varsayım profil gerçekmiş gibi: ‘Kuruluş tarihi: 12.10.2026’, HUKS ‘şirket yaşı ~0.0 yıl’, ‘Profilinize göre sağlanan şartlar: şirket/kooperatif statüsü (limited şirket)’. Ayrıca ‘Sizin için ... Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge’ reklam/tanıtım sorusu için yanlış gerekçe.",
+    "kanit": "Kuruluş tarihi: 12.10.2026 | Profilinize göre sağlanan şartlar: şirket/kooperatif statüsü (limited şirket)",
+    "oneri": "Varsayımdan gelen alanları ‘sağlanan şart’ olarak yazma; ‘varsayıma göre’ etiketle. Gerekçe cümlesinde sorunun ihtiyaç etiketiyle (ihracat/tanıtım) eşleşmeyi kullan, profil hedefi Ar-Ge ile değil.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "dusuk",
+    "aciklama": "Yurt dışı dijital reklam (Google/Meta vb.) harcamasında şirketin KDV sorumlu sıfatıyla beyanı, stopaj ve gider yazma kuralları gibi vergisel boyut veritabanında yok; mali müşavire yönlendirme tek cümle olabilirdi.",
+    "kanit": "(yanıtta yok)",
+    "oneri": "Yurt dışı hizmet alımı içeren destek kartlarına ‘yurt dışı hizmet alımında KDV/stopaj yükümlülüğü için mali müşavire danışın’ notu ekle.",
+    "kaynak_disi": true
+   },
+   {
+    "tur": "eslesme",
+    "ciddiyet": "dusuk",
+    "aciklama": "Not: rekortiv personası için eşleşme listesi yalnız 3 kayıt (1812, 20/B, e-Akademi); açıkça uygunsuz kalem yok.",
+    "kanit": "eslesme_rekortiv.md",
+    "oneri": "Değişiklik gerekmez.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "diger",
+    "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: ilk madde dürüstçe ‘şirket olmadan başvurulabilecek program kaydı bulamadım’ diyor; m.17 oranı (%50), 50 M TL/15 M TL ürün başı, 5 yıl, +20 puan ve ‘ödeme sonrası 6 ay’ kayıtla birebir; önceki turdaki ‘harcamadan önce ön onay’ yanlışı m.17 için kalkmış.",
+    "kanit": "Yurt dışına yönelik reklam, tanıtım ve pazarlama giderlerinin %50'si, yıllık en fazla 50.000.000 TL",
+    "oneri": "Değişiklik gerekmez.",
+    "kaynak_disi": false
+   }
+  ]
+ },
+ {
+  "n": 4,
+  "puan": {
+   "dogruluk": 4,
+   "soruya_odak": 4,
+   "eksiksizlik": 3,
+   "anlasilirlik": 3
+  },
+  "bulgular": [
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "‘Toplam ne kadar eder?’ sorusuna yalnız koşulsuz Temel Destek veriliyor (1,5 x 367 x 9 = 4.954,50 TL, doğru). Veritabanındaki diğer dekar bazlı kalemlerin büyüklüğü hesaplanmıyor: iyi tarım bireysel 0,7 x 367 x 9 = 2.312,10 TL; katı organik-organomineral gübre 0,32 x 367 x 9 = 1.056,96 TL (kayıtta ÇKS'li çiftçi başvurmuş sayılır). Kullanıcı ‘toplam’ aralığını göremiyor.",
+    "kanit": "Sertifika, fidan, iyi tarım, gübre ve sigorta (TARSİM) gibi ek kalemler şarta bağlıdır; ilgili programı adıyla sorabilirsiniz. | ADAY: Katı Organik-Organomineral Gübre Desteği: dekar başına 0,32 x destek katsayı değeri",
+    "oneri": "‘Toplam ne kadar’ sorularında şartlı kalemler için de ‘şartı sağlarsanız +X TL’ satırı üret (katsayı x değer x alan) ve ‘garanti: A, en çok: B’ biçiminde aralık ver.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "Profildeki hedef ‘kredi/finansman’ olmasına ve eşleşme listesinde Ziraat/TKK Hazine Faiz Destekli Tarım Kredisi (#4) ile TARSİM (#5) ilk beşte olmasına rağmen yanıtta ikisi de yok (TARSİM yalnız ek kalem adı olarak sayılıyor). Fındıkta don/dolu riski ve düşük faizli işletme kredisi bu üreticinin en somut ek desteği.",
+    "kanit": "eslesme_findik: 4. Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli ...; 5. TARSİM — Devlet Destekli Tarım Sigortası",
+    "oneri": "Yanıt kartları, panelde ilk 5'e giren programlarla tutarlı olsun; ‘toplam destek’ sorusunda bile profil hedefiyle (finansman) eşleşen ilk 1–2 program kısa satır olarak eklensin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "gurultu",
+    "ciddiyet": "orta",
+    "aciklama": "Mevcut bahçeli üretici için Sertifikalı/Standart Fidan Desteği (yeni bahçe tesisi; 3 dekar asgari, kira sözleşmesi, 2 yıl denetim) ve İyi Tarım kartları 15+ satır onay kutusuyla tam açılmış; asıl cevap olan Temel Destek kartından uzun. Darboğazlar bölümü ÇKS ve başvuru yeri bilgisini birkaç kez, Yol Haritası bir kez daha tekrarlıyor.",
+    "kanit": "Fidan: Bahçe ilgili üretim yılında tesis edilmiş... Kiralık arazide ... kira sözleşmesi en az üç yıl olmalı | Darboğazlar: Başvuru yeri: Kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (ÇKS kaydı) (tekrar)",
+    "oneri": "Kullanıcı yeni tesis planladığını söylemediyse ‘yeni tesis’ türü programları tam kartla açma, ‘Diğer'e tek satır olarak al. Darboğaz bölümünde aynı bilgiyi yalnız bir kez ver.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik",
+    "ciddiyet": "orta",
+    "aciklama": "Çiftçiye yabancı dil: ‘8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik’, ‘destek katsayı değeri’, ‘doğrudan ödeme hesabı’, ‘Ölçek: mikro işletme [KOBİ Yönetmeliği eşiklerine göre]’ (9 dekarlık çiftçi için), ‘Sizin için: ... teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı’, ‘(kayıttan; güncel çağrıyı kurumdan teyit edin)’, kesik başlık ‘yeni meyve …’. 11781 sayılı Karar atfı bu soruya verilen kaynak kayıtlarında geçmiyor (yalnız Meyve-Sebze kaydında), yani bu yanıt için kanıtsız atıf.",
+    "kanit": "Fındıkta temel ve üretimi geliştirme desteği yalnız fındık üretimine izin verilen ilçelerdeki parsellere ödenir (8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik).",
+    "oneri": "Çiftçi/esnaf profilinde Karar numarası ve madde atıflarını parantez içi ‘kaynak’ satırına taşı; gövde metninde ‘her dekar için 550,50 TL’ gibi gündelik dil kullan. Tarım profillerinde KOBİ ölçeği satırını gizle. Atıfları yalnız o yanıtın kaynak kayıtlarında geçiyorsa yaz.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "dusuk",
+    "aciklama": "Ordu için ‘fındık üretimine izin verilen ilçe’ şartı için kullanıcıya hangi kayıtla (ÇKS/FKS parsel kaydı) kontrol edeceği ve ‘dönüm=dekar’ varsayımı söylenmemiş (9 dönüm 9 dekar sayıldı). Kayıttaki ‘mazot ve gübre maliyeti temel desteğe dahil’ bilgisi yanıtta yok; kullanıcı ayrıca mazot/gübre desteği bekleyebilir.",
+    "kanit": "Katsayı değeri mazot ve gübre maliyeti baz alınarak belirlenir (mazot-gübre desteği temel desteğe dahil edilmiştir).",
+    "oneri": "Hesap satırına ‘9 dönüm = 9 dekar kabul edildi (ÇKS'deki kayıtlı alan esas)’ ve ‘mazot-gübre artık bu tutara dahil’ notunu ekle.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eslesme",
+    "ciddiyet": "dusuk",
+    "aciklama": "eslesme_findik ilk 10'unda #9 Organik Tarım Destekleri (organik sertifika şartı, profilde yok) ve #10 Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Kredi (esnaf ve sanatkârlar odası kaydı; çiftçi esnaf sicilinde değil, ticaret odası kaydı olmama beyanı) açıkça uygunsuz; #8 Tarım Kefalet de kredi tavanı 9 dekarlık üretici ölçeğinin çok üstünde.",
+    "kanit": "9. Organik Tarım Destekleri ... 10. Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli ...",
+    "oneri": "Sertifika gerektiren (organik) program, profilde ilgili sertifika alanı yoksa ilk 10'a girmesin; ‘esnaf odası’ şartı olan programlar tarım profillerinde (ÇKS'li çiftçi) sıralamada düşürülsün.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "diger",
+    "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: ilk satırda net hüküm ve doğru hesap (550,50 TL/da; 4.954,50 TL); fındık ilçe şartı ve ÇKS şartı doğru; kapalı fındık alan bazlı eski destek karıştırılmamış.",
+    "kanit": "Temel destek (3. kategori): 550,50 TL/da × 9 da = 4.954,50 TL",
+    "oneri": "Değişiklik gerekmez.",
+    "kaynak_disi": false
+   }
+  ]
+ },
+ {
+  "n": 5,
+  "puan": {
+   "dogruluk": 4,
+   "soruya_odak": 4,
+   "eksiksizlik": 4,
+   "anlasilirlik": 3
+  },
+  "bulgular": [
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "170 TL (eski) ile 550,50 TL (yeni) yan yana verilip ‘yerine Temel Destek’ deniyor; kullanıcı desteğin 3 katına çıktığı izlenimini alabilir. Kayıtta Temel Destek'in eski mazot ve gübre desteklerini içerdiği (katsayı değeri mazot-gübre maliyetine göre belirlenir) yazıyor; bu karşılaştırma notu yanıtta yok. Eski desteğin yalnız ruhsatlı/FKS'li alana ödendiği ve son ödemenin 18 Nisan 2025'te yapıldığı da söylenmiyor.",
+    "kanit": "Son bilinen destek: 2024 üretim yılı için dekara 170 lira (artık ödenmiyor). Yerine fındık Temel Destek'tedir: ... 367 TL",
+    "oneri": "‘Yerine geçti’ denen programlarda, yeni programın eski desteğin hangi kalemlerini kapsadığını (mazot-gübre dahil) tek cümleyle ekle ve ‘doğrudan kıyaslanamaz’ uyarısı ver.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "dogruluk",
+    "ciddiyet": "dusuk",
+    "aciklama": "‘8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik’ atfı bu sorunun kaynak kayıtlarında geçmiyor (bu yanıt için kanıtsız atıf) ve çiftçi dili değil.",
+    "kanit": "(8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik)",
+    "oneri": "Atıf yalnız yanıtın kullandığı kayıtta yazıyorsa verilsin; sade dile çevrilsin.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "dusuk",
+    "aciklama": "‘Alternatifler’ olarak yalnız Temel Destek ve ilgisiz Sertifikalı Fidan kartı veriliyor; aynı çiftçiye dekar bazlı desteğin yanında İyi Tarım (0,7 x 367 = 256,90 TL/da), katı organik gübre, lisanslı depo kira desteği (%75) ve TARSİM prim desteği ‘adıyla sorun’ bile denmiyor (ADAY listesinde var).",
+    "kanit": "ADAY (yanıtta yok): İyi Tarım Uygulamaları Desteği; Lisanslı Depoda Muhafaza ... Kira Desteği; TARSİM",
+    "oneri": "Bir program ‘sona erdi’ ise yerine geçen ve aynı ürün/alan için geçerli en çok 3 aktif kalemi tek satırla öner; yeni bahçe tesisi gibi koşullu kalemi öne alma.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik",
+    "ciddiyet": "orta",
+    "aciklama": "İlk 5 satır soruyu net yanıtlıyor, ama yanıtın kalanı gereksiz: Darboğazlar ÇKS/başvuru yeri satırlarını tekrarlıyor, Yol Haritası bir kez daha tekrarlıyor; ‘adıyla sorarak görün’ yönlendirmeleri kullanıcıyı bir yere götürmüyor; ‘yeni meyve bahçesi’ fidan kartı mevcut bahçeli çiftçi için ilgisiz. Çiftçi diline yabancı: ‘destek katsayı değeri’, ‘Tablo 1’, ‘3. kategori’, ‘Tebliğ 2024/31’.",
+    "kanit": "Darboğazlar: Fındık Temel Desteği ... ÇKS'ye kayıtlı çiftçi başvurmuş sayılır (4 satır) | Yol Haritası 3 ve 4",
+    "oneri": "‘Kapalı program’ yanıtlarında Darboğaz/Yol Haritası bölümünü tek bir 2–3 maddelik ‘Ne yapmalısınız’ kutusuna indir; aynı cümleyi bölümler arası tekrar etme.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "diger",
+    "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: ‘sona erdi, 2024 üretim yılı için dekara 170 TL, yerine Temel Destek’ doğru ve ilk satırlarda; önceki turdaki ‘sonraki dönemi beklemeyin’ düzeltilmiş; 4.954,50 TL hesabı doğru.",
+    "kanit": "Fındık Alan Bazlı Gelir Desteği (sona erdi: son ödeme 2024 üretim yılı için ...)",
+    "oneri": "Değişiklik gerekmez.",
+    "kaynak_disi": false
+   }
+  ]
+ },
+ {
+  "n": 6,
+  "puan": {
+   "dogruluk": 4,
+   "soruya_odak": 3,
+   "eksiksizlik": 2,
+   "anlasilirlik": 3
+  },
+  "bulgular": [
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "Damla sulama sorusunun en alakalı hükmü atlanmış: Ziraat/TKK kredisi tablosunda ‘Basınçlı sulama sistemi kullanımı’ için ek indirim satırı (+10 puan, tablodaki sütunlardan birinde) var; yanıt yalnız sertifikalı fidan (+10) ve kadın/genç (+15) ek puanlarını sayıyor. Önceki turda da bildirilen bu eksiklik düzelmemiş. Ayrıca fındığın hangi satıra girdiği (Temel bitkisel üretim mi, Meyve yetiştiriciliği mi) belirtilmeden iki satır birlikte veriliyor.",
+    "kanit": "kayıt: Yurt içi sertifikalı tohum, fide, fidan kullanımı 10 10 - Basınçlı sulama sistemi kullanımı - 10 Organik tarım/iyi tarım... 5 | yanıt: yurt içi sertifikalı fide/fidan kullanımında ek 10 puan, kadın veya genç ... ek 15 puan",
+    "oneri": "Kredi/faiz indirimi kartında, kullanıcının sorusu/hedefiyle (sulama sistemi) eşleşen ‘ek indirim’ satırını öncelikli yaz; tablo hangi sütuna ait olduğu belirsizse bunu söyle. Ürünün hangi üretim konusuna girdiği belirsizse ‘ürün grubunuzu banka/tebliğden teyit edin’ de.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "Sorunun ‘hibe’ yarısı cevapsız ve bu hiç söylenmiyor. Bahçe yenileme için veritabanında hibe benzeri Sertifikalı/Standart Fidan Kullanım Desteği var (sertifikalı fidan 5 x 367 = 1.835 TL/da, standart 734 TL/da, fındık dahil, asgari 3 dekar; 9 dekar için sertifikalı 16.515 TL) ve eşleşme listesinde #3; bu soruya ait yanıt kaynağında ve yanıtta yok. ‘Yenileme’nin yeni tesis sayılıp sayılmayacağı (tesis yılı şartı) ayrıca belirtilmeli.",
+    "kanit": "(yanıtta ‘hibe’ kelimesi yalnız ‘Hibe değil, faiz indirimi’ olarak geçiyor)",
+    "oneri": "‘Hibe veya kredi’ sorularında, hibe tarafında kayıt bulunamazsa ‘bu konuda hibe kaydı yok’ de; bulunursa (fidan, örtüaltı vb.) kredi kartlarından önce göster.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "Veritabanında hiç olmayan ama bu işletme için çok bilinen destekler: modern/basınçlı sulama ve tarımsal yatırım hibeleri (Kırsal Kalkınma Yatırımlarının Desteklenmesi Programı kapsamındaki tarıma dayalı yatırım çağrıları, TKDK/IPARD yatırım hibeleri; çağrı bazlı) yok; kalkınma ajansı küçük ölçekli mali destek çağrıları da yok.",
+    "kanit": "(veritabanında yok)",
+    "oneri": "Tarım profillerinde ‘sistemde kaydı olmayan, ayrıca bakabileceğiniz programlar’ satırı üret: KKYDP, TKDK/IPARD, kalkınma ajansı çağrıları (oran ve şart verme, resmî kaynağa yönlendir).",
+    "kaynak_disi": true
+   },
+   {
+    "tur": "gurultu",
+    "ciddiyet": "orta",
+    "aciklama": "‘Düşük faizli kredi’ sorusuna Halkbank Şahıs İşletmeleri, Tarım Kefalet, TKYB, Özkaynak Kefalet, TOBB Nefes ve iki kapalı KGF paketi sunuluyor. Kefalet faiz indirimi değil teminat sağlıyor; bu söylenmiyor. Tarım Kefalet kartı kendi içinde ‘kredi tavanı cironuza göre çok büyük’ diyor ama aynı yanıtta ‘profilinize göre engel yok’ olarak listeleniyor; TKYB/TOBB üyelik/ölçek açısından 9 dekarlık bahçe için uygun değil.",
+    "kanit": "TARIM KEFALET ... teyit: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük. | Diğer seçenekler: ... TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok)",
+    "oneri": "KGF kefalet kartlarının başına ‘kefalet = banka teminatı; faiz indirimi sağlamaz’ cümlesi ekle; ölçek uyarısı olan programı ‘engel yok’ diye etiketleme (ya da listeden düşür).",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "dogruluk",
+    "ciddiyet": "dusuk",
+    "aciklama": "Karar 31.12.2026'da bitiyor (bugünden ~80 gün sonra); yanıt tarihi yazıyor ama aciliyeti vurgulamıyor, yeni karar çıkmazsa kredi kullandırımının biteceğini ve başvurunun bu yıl yapılması gerektiğini söylemiyor. Halkbank Şahıs İşletmeleri kartında ‘Esnaf Odası, Ticaret ve Sanayi Odası veya Meslek Odası kaydı’ çiftçi için ne anlama geliyor açıklanmıyor.",
+    "kanit": "Karar 1/1/2024-31/12/2026 arasında tahsis edilecek kredilere uygulanır.",
+    "oneri": "Bitiş tarihi ≤ 90 gün olan programlarda ‘yaklaşan bitiş’ uyarısı ve kalan gün üret.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik",
+    "ciddiyet": "orta",
+    "aciklama": "Onay kutuları tanım cümlesini şart gibi sunuyor (‘☐ Faydalanıcılar arasında gerçek ve tüzel kişi üreticiler sayılmıştır’ işaretlenecek bir şart değil). ‘(kayıttan; güncel çağrıyı kurumdan teyit edin)’, ‘Profil alanlarınız yeterli’, kesik başlıklar (‘Hazine Faiz …’) ve ÇKS bilgisinin tekrarı yanıtı uzatıyor.",
+    "kanit": "☐ Faydalanıcılar arasında gerçek ve tüzel kişi üreticiler sayılmıştır (ayrıca tarımsal amaçlı örgütler...)",
+    "oneri": "Kontrol listesine yalnız ‘sağlıyor musunuz?’ diye sorulabilecek şart cümleleri al; tanım/bilgi cümlelerini listeye koyma.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "diger",
+    "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: ‘Hibe değil, faiz indirimi’ doğru nitelenmiş; oranlar (300 bin TL'ye kadar %100, üstü %50, 10 M; meyvede %75, 40 M; +10 fidan; +15 kadın/genç; %100 tavan) kayıtla birebir.",
+    "kanit": "Hibe değil, faiz indirimi. Temel bitkisel üretim: 300.000 TL'ye kadar yüzde 100",
+    "oneri": "Değişiklik gerekmez.",
+    "kaynak_disi": false
+   }
+  ]
+ },
+ {
+  "n": 7,
+  "puan": {
+   "dogruluk": 3,
+   "soruya_odak": 4,
+   "eksiksizlik": 3,
+   "anlasilirlik": 3
+  },
+  "bulgular": [
+   {
+    "tur": "dogruluk",
+    "ciddiyet": "orta",
+    "aciklama": "Meyve-Sebze Temel Destek kartında ‘fidan kullanım desteği ayrıca 734,00 TL/da (standart) veya 1.835,00 TL/da (sertifikalı)’ çilek üreticisine gösteriliyor. Fidan desteği Tablo 6'daki ağaç/asma türleri içindir; kayıt 365 açıkça ‘Çilek bu fidan tablosunda yer almaz’ diyor. Kart ‘Destek’ ve ‘Hesaplama’ satırlarında bunu eleme yapmadan veriyor; 1,5 dekarlık çilekçi 1.835 TL/da bekleyebilir. Ayrıca ‘Fındık üreticisiyseniz ...’ onay kutusu çilek persona için hiç ilgisiz (kaydın kendi kriterinde fındık hariç).",
+    "kanit": "Destek: Dekar başına 367,00 TL temel destek ...; fidan kullanım desteği ayrıca 734,00 TL/da (standart) veya 1.835,00 TL/da (sertifikalı). | kayıt 365: Çilek bu fidan tablosunda yer almaz",
+    "oneri": "Ürün, destek kaydının ürün listesinde (Tablo 6) yoksa o kalemi kullanıcıya gösterme/kartta eleme yap; ürün-özgü olmayan kartlarda ‘fındık/çay/...’ gibi başka ürüne ait onay kutularını gizle.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "Profil hedefi ‘sulama sistemi, kredi/finansman’ yok sayılmış. Eşleşme listesinde #2 olan Ziraat/TKK Hazine Faiz Destekli Tarım Kredisi (basınçlı sulama +10 puan) ve #5 katı organik gübre desteği (0,32 x 367 x 1,5 = 176,16 TL) yanıtta yok; onun yerine 10/20 M TL limitli Tarım Kefalet 1,5 dekarlık çilekçiye ‘engel yok’ diye öneriliyor. İyi tarım kartı tutar hesabı vermiyor (0,7 x 367 x 1,5 ≈ 385 TL, çileğin Tablo 8 grubu belirsiz).",
+    "kanit": "Hedefler: sulama sistemi, kredi/finansman | Diğer seçenekler: ... TARIM KEFALET DESTEK PROGRAMI (profilinize göre engel yok)",
+    "oneri": "Yanıt kartları panelin ilk 5 eşleşmesiyle uyumlu olsun; profil hedefi (sulama, finansman) kartlara yansısın. Çok büyük limitli programı küçük işletmeye ‘engel yok’ olarak etiketleme.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik",
+    "ciddiyet": "orta",
+    "aciklama": "TARSİM kartı altı ayrı oranı dökerken (%50 genel; açık alan meyve/sebze %70; köy bazlı %70; büyükbaş %60; gelir koruma %60) çileğe hangisinin uygulandığı söylenmiyor; kayıtta çilek yalnız yaban domuzu/geyik ek riski olarak geçiyor, oranı belirtilmiyor. Kullanıcı tek cümlelik ‘sizin için %X’ bulamıyor.",
+    "kanit": "Destek: Sigorta priminin devletçe karşılanan kısmı: genel yüzde 50; açık alan meyve, bazı sebzeler, patates, şekerpancarı, meyve-bağ fidanı ve kış donunda yüzde 70; köy bazlı verimde yüzde 70; büyükbaş ...",
+    "oneri": "Ürüne uygulanmayan satırları (büyükbaş, gelir koruma, köy bazlı) kartta gizle; ürünün oran grubu kayıtta belirsizse ‘çilek için oran kayıtta ayrıca belirtilmemiş; genel %50 geçerli sayılır, %70 olabilir, TARSİM'den teyit edin’ de.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik",
+    "ciddiyet": "dusuk",
+    "aciklama": "Jargon ve belirsiz varsayım: ‘8859 sayılı CB Kararı (RG 29.08.2024) tabloları; 11781 sayılı CB Kararı, RG 08.09.2026, m.1/a’, ‘İL/İlçe’, ‘Sizin için ... Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir’ (tarım için NACE istemek anlamsız). ‘1,5 dönüm’ = 1,5 dekar varsayımı söylenmiyor. Olumlu yan: ‘çilek tabloda ayrı değil, Diğer ürünler (katsayı 1,0) varsayıldı’ şeffaf.",
+    "kanit": "Dayanak: 8859 sayılı CB Kararı (RG 29.08.2024) tabloları ... | Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir",
+    "oneri": "Tarım profilinde ‘NACE kodunuzu girin’ notunu üretme; dönüm/dekar varsayımını hesap satırında belirt; resmî gazete/karar atıfları ‘kaynak’ satırında dursun.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eslesme",
+    "ciddiyet": "orta",
+    "aciklama": "eslesme_cilek ilk 10'unda açıkça uygunsuz: #7 Organik Tarım Destekleri (organik sertifika şartı; profilde yok, çilek açık tarla), #8 Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Kredi (esnaf ve sanatkârlar odası kaydı gerekir; çiftçi esnaf sicilinde değil), #9 Halkbank Şahıs İşletmeleri Destek Kredisi (oda kaydı), #6 Tarım Kefalet (kredi tavanı ölçeğin çok üstünde).",
+    "kanit": "7. Organik Tarım Destekleri; 8. Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli ...; 9. HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ",
+    "oneri": "Sertifika şartı olan program, profilde sertifika yoksa ilk 10 dışına; ‘esnaf odası’ şartı olan kredi programları tarım sektörü profillerinde düşük skor; çok büyük limitli kefalet paketleri mikro ölçekli profilde düşük skor.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "dusuk",
+    "aciklama": "Veritabanında olmayan ama sulama hedefli çilek üreticisi için bilinen damla/basınçlı sulama yatırım hibeleri (KKYDP/TKDK-IPARD, çağrı bazlı) ve kalkınma ajansı destekleri yanıtta ‘ayrıca bakın’ diye bile anılmıyor.",
+    "kanit": "(veritabanında yok)",
+    "oneri": "Sulama hedefi seçilmiş tarım profillerinde ‘kaydı olmayan, ayrıca bakılacak programlar’ satırı ekle.",
+    "kaynak_disi": true
+   },
+   {
+    "tur": "diger",
+    "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: 367 x 1,5 da = 550,50 TL hesabı ve ‘Diğer ürünler’ kategorisi varsayımı açıkça yazılmış, ÇKS şartı doğru.",
+    "kanit": "Temel destek (1. kategori): 367,00 TL/da × 1,5 da = 550,50 TL",
+    "oneri": "Değişiklik gerekmez.",
+    "kaynak_disi": false
+   }
+  ]
+ },
+ {
+  "n": 8,
+  "puan": {
+   "dogruluk": 3,
+   "soruya_odak": 3,
+   "eksiksizlik": 2,
+   "anlasilirlik": 3
+  },
+  "bulgular": [
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "Yanıt fındık/damla sulama yanıtının (Senaryo 6) neredeyse kopyası; alçak tünel ve seraya özgü hiçbir şey yok. Veritabanında ‘Sera/Örtüaltı Tarım Destekleri’ (örtüaltı temel destek 367 TL/da; iyi tarım örtüaltı bireysel +623,90 TL/da, en çok 990,90 TL/da), İyi Tarım örtüaltı katsayıları (birinci grup bireysel 1,7) ve Temel Destek kaydında ‘kapalı ortamda üretim yapan kadın veya 41 yaşından küçük çiftçiye 3 katsayısıyla ilave temel destek (3 x 367 = 1.101 TL/da)’ var; yanıtta yok. ‘Hibe’ yarısı cevapsız ve söylenmiyor.",
+    "kanit": "kayıt: Sera/Örtüaltı Tarım Destekleri: Dekar başına 367,00 TL temel destek; iyi tarım sertifikalı örtüaltı +623,90 TL | Kapalı ortamda üretim yapan kadın veya 41 yaşından gün almamış çiftçilere ... 3 katsayısıyla ilave temel destek",
+    "oneri": "Sorudaki anahtar kelime (sera, örtüaltı, tünel) ilgili ürün/alt kategori kaydını (sera/örtüaltı) kredi kartlarının önüne alsın; ‘hibe veya kredi’ sorusunda her iki türden en az bir kart zorunlu olsun, hibe bulunmazsa bunu yaz.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "orta",
+    "aciklama": "Sera/alçak tünel yatırımı için veritabanında bulunmayan bilinen hibe kanalları (KKYDP tarıma dayalı yatırım çağrıları, TKDK/IPARD yatırım hibeleri, kalkınma ajansı küçük ölçekli çağrıları) yok ve ‘ayrıca bakın’ notu da yok.",
+    "kanit": "(veritabanında yok)",
+    "oneri": "Yatırım amaçlı tarım sorularında ‘sistemde kaydı olmayan programlar’ notu üret.",
+    "kaynak_disi": true
+   },
+   {
+    "tur": "uygunluk",
+    "ciddiyet": "orta",
+    "aciklama": "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Kredi için gösterilen ‘önemli şart’ yanlış seçilmiş: kart ‘Genç girişimci kategorisi: KOSGEB eğitimi, 35 yaş altı’ diyor; oysa temel şart esnaf ve sanatkârlar odasına kayıtlı faal esnaf olmak ve ticaret odasına kayıtlı işletme sahibi/ortağı olmamak. Çilek üreticisi çiftçi esnaf sicilinde değil; kullanıcı yanlış kapıya yönlendiriliyor. Halkbank Şahıs İşletmeleri kartı da (Esnaf/Ticaret/Meslek Odası) çiftçi için açıklanmadan ‘engel yok’ olarak sunuluyor.",
+    "kanit": "Halkbank Esnaf ... şarta bağlı (profilinizden doğrulanamayan önemli şart: Genç girişimci kategorisi: KOSGEB Geleneksel veya İleri Girişimci Eğitimi'ni bitiren ...)",
+    "oneri": "‘Önemli şart’ olarak programın genel giriş koşulunu (esnaf odası kaydı) yaz, alt kategori koşulunu değil. Profil sektörü tarım ise esnaf odası kaydı gerektiren programı ‘kayıt şartı sağlanmıyor olabilir’ diye işaretle.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "gurultu",
+    "ciddiyet": "orta",
+    "aciklama": "Beş-altı KGF/KOSGEB kartı: TKYB, KOSGEB Geri Ödemeli Destekleri (KOSGEB'ce onaylı destek almış olma şartı), Girişimci Destek Kredi Faiz (kapalı), Yatırım-İşletme (imalatçı, uygun değil), Tarım Kefalet (ölçek çok büyük). Kefaletin faiz indirimi olmadığı söylenmiyor. Sera kredisi için Ziraat/TKK kartı yatırım türü/satırı (örtüaltı yatırımı hangi indirim grubunda) açıklamıyor; kayıttaki ‘kredi konusu varlık Tarım Sigortaları Kanunu kapsamındaysa devlet destekli tarım sigortası aranır’ kuralı (seralar TARSİM kapsamında) bu soruya bağlanmamış.",
+    "kanit": "Diğer ilgili programlar: TKYB KREDİ DESTEK PAKETİ; KOSGEB Geri Ödemeli Destekleri | kayıt: Kredi konusu varlığın ... Tarım Sigortaları Kanunu kapsamında olması halinde Devlet Destekli Tarım Sigortası aranır",
+    "oneri": "Yatırım kredisi sorusunda kredi konusu varlıkla ilgili zorunlulukları (sigorta aranması) kart üstünde göster; mikro tarım profilinde ölçek uyumsuz KGF/KOSGEB paketlerini ‘Diğer'e koyma.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik",
+    "ciddiyet": "dusuk",
+    "aciklama": "Senaryo 6 ile aynı şablon sorunları: tanım cümlesi onay kutusuna çevrilmiş, ‘Profilinize faaliyet (NACE) kodunuzu girerseniz’, ‘kontrol listesi/teyit edin’ kalıpları, ÇKS ve başvuru yeri tekrarı. Aynı yanıtın iki soruya verilmesi sorunun (alçak tünel/sera) anlaşılmadığı izlenimi veriyor.",
+    "kanit": "☐ Faydalanıcılar arasında gerçek ve tüzel kişi üreticiler sayılmıştır ...",
+    "oneri": "Soru anahtar kelimesine göre farklı kart/ilk satır üretilmesini sağla; kopya yanıt tespiti için test ekle.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eslesme",
+    "ciddiyet": "dusuk",
+    "aciklama": "Not (çilek persona, eşleşme listesi Senaryo 7'de değerlendirildi): ilk 10'da Organik Tarım, Halkbank Esnaf, Halkbank Şahıs İşletmeleri uygunsuz. Bu soru için Sera/Örtüaltı kaydı ilk 10'da hiç görünmüyor.",
+    "kanit": "eslesme_cilek.md: 7–9. sıralar",
+    "oneri": "Soru bağlamlı sıralama: ‘sera/tünel’ geçen sorularda sera/örtüaltı kaydı üst sıraya.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "diger",
+    "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: Ziraat/TKK kredisi ilk sırada, ‘Hibe değil, faiz indirimi’ doğru ve oranlar kayıtla tutarlı.",
+    "kanit": "Hibe değil, faiz indirimi. ...",
+    "oneri": "Değişiklik gerekmez.",
+    "kaynak_disi": false
+   }
+  ]
+ },
+ {
+  "n": 9,
+  "puan": {
+   "dogruluk": 3,
+   "soruya_odak": 3,
+   "eksiksizlik": 3,
+   "anlasilirlik": 3
+  },
+  "bulgular": [
+   {
+    "tur": "dogruluk",
+    "ciddiyet": "orta",
+    "aciklama": "Çilek için ‘devlet ne kadarını öder?’ sorusu yanıtlanmıyor: altı farklı oran dökülüyor (genel %50; açık alan meyve, bazı sebze, patates, fidan ve kış donu %70; köy bazlı %70; büyükbaş %60; gelir koruma %60). Kayıtta kış donu %70'i yalnız kayısı, şeftali, nektarin, erik, elma, armut, ayva, kiraz ve vişne için geçiyor; çilek bu listede yok. ‘kış donunda yüzde 70’ ifadesi çilekçiye don için de %70 destek varmış gibi okunabilir. Çileğin ‘açık alan meyve’ sayılıp sayılmadığı da belirsiz.",
+    "kanit": "Destek: ... açık alan meyve, bazı sebzeler, patates, şekerpancarı, meyve-bağ fidanı ve kış donunda yüzde 70 ... | kayıt: Kayısı, şeftali, nektarin, erik, elma, armut, ayva, kiraz ve vişnede kış donu zararı risk priminin yüzde 70'i",
+    "oneri": "Ürün-risk eşlemesi yap: kullanıcının ürünü oran listesinde açıkça yoksa ‘çilek için ayrı oran kayıtta yok; genel %50 uygulanır, %70 kapsamında olup olmadığını TARSİM'den teyit edin; kış donu %70'i çilek için geçerli değildir’ de. Alakasız oran satırlarını gizle.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "gurultu",
+    "ciddiyet": "orta",
+    "aciklama": "Sigorta sorusuna yanıtın yarısı ilgisiz: ‘Diğer seçenekler’ olarak Meyve-Sebze Temel Destek tam kart (fidan 734/1.835 TL/da, ‘Fındık üreticisiyseniz ...’ kutusu) ve ‘Size kapalı’ listesinde sağlık turizmine ait Komplikasyon Sigortası Desteği (10962 m.20) var. Çilekçiye komplikasyon sigortası kartı anlamsız; kapalı listesi de yalnız bu tek kalemle şişirilmiş.",
+    "kanit": "Hizmet Sektörleri Atılım Programı — Komplikasyon Sigortası Desteği (10962 sayılı Karar m.20) ... uygun değil | Fındık üreticisiyseniz: parseliniz fındık üretimine izin verilen bir ilçede olmalı",
+    "oneri": "‘Sigorta’ kelimesi anahtar kelime eşleşmesiyle alakasız sektör programı getirmesin (ihtiyaç etiketi ‘ürün sigortası’ + sektör tarım eşleşmesi aransın); ihtiyaç dışı kartları ‘Diğer'e koyma.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "anlasilirlik",
+    "ciddiyet": "orta",
+    "aciklama": "Gerileme: ‘Başvuru dönemi: Dönemsel çağrı yoktur;’ yarım cümle (önceki turdaki ‘kaynakta başvuru tarihi belirtilmemiştir’ silinirken noktalı virgül kalmış); Yol haritasında ‘sigorta TARSİM kapsamında yapılır. .’ çift nokta ve ‘nasıl yaptırılır’ sorusu cevapsız (sigorta şirketi/acente/banka kanalı yazılmıyor). ‘Sorudan anlaşılan ihtiyaç: ürün/alacak sigortası’ ifadesinde ‘alacak’ gereksiz. Kısa cevapta ‘kaynakta başvuru tarihi belirtilmemiştir’ sistem notu kullanıcıya sızıyor.",
+    "kanit": "Başvuru dönemi: Dönemsel çağrı yoktur; | Başvuru kanalı: TARSİM (tarsim.gov.tr); sigorta TARSİM kapsamında yapılır. .",
+    "oneri": "Şablonda boş bırakılan alan cümle parçasını tamamen düşür; çift noktalama temizliği; kayıtta başvuru kanalı yoksa yalnızca kayıttaki doğrulanmış bilgiyi ver (tarsim.gov.tr, ÇKS kaydı) ve ‘poliçe için sigorta şirketi/acentesine başvurulur’ gibi genel bilgiyi ancak kayıtta varsa yaz.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "dusuk",
+    "aciklama": "Kayıtta çileğe özel ve yanıta alınabilecek bilgiler kullanılmamış: çilekte yaban domuzu ve geyik zararı dolu paketine ek risk; kredi (Ziraat/TKK) kullanırken devlet destekli tarım sigortasının zorunlu aranması (kullanıcının finansman hedefiyle ilgili, kart içinde kural olarak duruyor ama yanıta bağlanmıyor); sera yapma planı varsa seralar için dolu, fırtına, kar ağırlığı paketi.",
+    "kanit": "çilekte yaban domuzu ve geyik zararı ... ek riskleri",
+    "oneri": "Ürün adı kayıtta ek risk olarak geçiyorsa kartta ‘çileğiniz için ek: yaban domuzu/geyik zararı’ satırı üret.",
+    "kaynak_disi": false
+   },
+   {
+    "tur": "eksik",
+    "ciddiyet": "dusuk",
+    "aciklama": "Devletin payı kadar çiftçinin ödeyeceği pay, hasar muafiyeti (hasar başına çiftçi katılım payı) ve primin ödeme zamanı gibi sigorta kararını belirleyen bilgiler veritabanında yok; bir örnek hesap (prim 1.000 TL ise çiftçi payı 500 TL) bile yok.",
+    "kanit": "(yanıtta yok)",
+    "oneri": "Oran verilen sigorta kartlarına ‘Prim 1.000 TL ise devlet X, siz Y TL ödersiniz’ örnek hesabı ekle; muafiyet için TARSİM genel şartlarına yönlendir.",
+    "kaynak_disi": true
+   },
+   {
+    "tur": "diger",
+    "ciddiyet": "dusuk",
+    "aciklama": "Olumlu: TARSİM ilk sırada, ÇKS şartı doğru ve ‘Hazine faiz destekli kredi kullanırken devlet destekli sigorta aranır’ kuralı kartta var; oranlar kayıtla birebir.",
+    "kanit": "Hazine faiz destekli tarım kredisi kullanırken, kredi konusu varlık Tarım Sigortaları Kanunu kapsamındaysa devlet destekli tarım sigortası aranır.",
+    "oneri": "Değişiklik gerekmez.",
+    "kaynak_disi": false
+   }
+  ]
+ }
+]

@@ -41,9 +41,9 @@ profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'İstanbul', 'cal
 18. [0] İş Sağlığı ve Güvenliği Hizmetlerinin Desteklenmesi — 10'dan Az Çalışanlı Tehlikeli/Çok Tehlikeli İşyerlerine Ödeme (6331 sayılı Kanun m.7) — SGK / İŞKUR (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-19. [0] HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF (aktif=True)
+19. [0] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.
+    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+20. [0] HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: İşletme sahibinin en çok 29 yaşında olması gerekir; yaşınızı profile girerseniz netleşir.
-20. [0] TKYB KREDİ DESTEK PAKETİ — KGF (aktif=True)
-    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
-    eksik: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.

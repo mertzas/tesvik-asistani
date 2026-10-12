@@ -198,7 +198,11 @@ def girisim_modu_mu(profil: Any, soru: str, bugun: date | None = None) -> bool:
         if getattr(profil, "sirket_turu", None) == "yok":
             return True
         trl = getattr(profil, "trl", None)
-        if trl is not None and trl <= GIRISIM_TRL_UST:
+        # Erken TRL yalnız mikro/küçük işletmede girişim sinyalidir; 65 çalışanlı, 210 milyon TL cirolu A.Ş.'nin TRL 5
+        # projesi girişim değildir (hakem bulgusu 2026-10-12, 5. tur: Ar-Ge merkezi sorusunda BiGG HUKS bloğu).
+        from app.kobi import kobi_sinifi
+        olcek = kobi_sinifi(getattr(profil, "calisan_sayisi", None), getattr(profil, "yillik_ciro", None))
+        if trl is not None and trl <= GIRISIM_TRL_UST and not (olcek.kesin and olcek.sinif in ("orta", "buyuk")):
             return True
         yas = _yas_yil(getattr(profil, "kurulus_tarihi", None), bugun)
         if yas is not None and yas <= GIRISIM_YAS_UST_YIL:

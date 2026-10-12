@@ -41,14 +41,14 @@ SORU_KALIPLARI: dict[str, re.Pattern] = {
         r"\b(ar-?ge|urun gelistir\w*|gelistirme\w*|prototip\w*|inovasyon\w*|yenilik\w*|"
         r"tasarim\w*|patent\w*|teknoloji gelistir\w*)"),
     "ihracat": re.compile(r"\b(ihracat\w*|ihrac\w*|fuar\w*|yurt ?disi\w*|e-ihracat\w*|dis pazar\w*|amazon\w*|"
-                          r"etsy\w*|ebay\w*|walmart\w*|pazar ?yeri\w*|almanya\w*|avrupa\w*|abd\b|amerika\w*|"
+                          r"etsy\w*|ebay\w*|walmart\w*|pazar ?yer\w*|almanya\w*|avrupa\w*|abd\b|amerika\w*|"
                           r"korfez\w*|ingiltere\w*)"),
     # "3 kişi daha işe alacağım" hiçbir ihtiyaca sınıflanmıyordu (2026-10-07).
     "istihdam": re.compile(r"\b(istihdam\w*|personel\w*|eleman\w*|isci\w*|ise alim\w*|ise al\w*|"
                            r"calisan alim\w*|calisan al\w*|kisi daha al\w*|sgk\b|iskur\w*|sgk tesvik\w*|prim destek\w*|"
                            r"prim tesvik\w*|sigorta prim\w*|isveren prim\w*|usta ogretici\w*)"),
     "dijital": re.compile(
-        r"\b(dijital\w*|erp\b|yazilim\w*|otomasyon\w*|yapay zeka\w*|amazon\w*|etsy\w*|pazar ?yeri\w*|"
+        r"\b(dijital\w*|erp\b|yazilim\w*|otomasyon\w*|yapay zeka\w*|amazon\w*|etsy\w*|pazar ?yer\w*|"
         # "e-ticaret şirketimiz" işletmeyi anlatır; ihtiyaç ancak altyapı/site kurma ise dijitaldir.
         r"e-?ticaret (?:altyap|sitesi kur|sitesi ac|sistem)\w*)"),
     "finansman": re.compile(r"\b(kredi\w*|kefalet\w*|finansman\w*|faiz\w*|isletme sermaye\w*|nakit\w*)"),

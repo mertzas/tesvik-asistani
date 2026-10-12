@@ -39,15 +39,15 @@ profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'Eskişehir', 'ca
 16. [0] Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B) — Gelir İdaresi Başkanlığı (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-17. [0] TKYB KREDİ DESTEK PAKETİ — KGF (aktif=True)
+17. [0] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.
+    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+18. [0] TKYB KREDİ DESTEK PAKETİ — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.
-18. [0] TURWIB PROGRAMI DESTEK PAKETİ — KGF (aktif=True)
+19. [0] TURWIB PROGRAMI DESTEK PAKETİ — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: Öncelikle şu işletmelere yönelik: Kadın girişimci / kadınların yönettiği işletme.
-19. [0] Yapay Zekâ Kredi Programı — KOSGEB (aktif=True)
+20. [0] Yapay Zekâ Kredi Programı — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: Yapay zekâ yatırımına yönelik; profilinizde Ar-Ge/yazılım hedefi yok.
-20. [0] Türk Eximbank E-İhracat Destek Kredisi — Türk Eximbank (aktif=True)
-    gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
-    eksik: İhracat yapan ya da yapacak işletmelere yönelik; hedeflerinizde ihracat yok.

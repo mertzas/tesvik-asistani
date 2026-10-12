@@ -40,8 +40,7 @@ profil: {'sektor': 'imalat', 'bolge': 'İzmir', 'calisan_sayisi': 12, 'yillik_ci
     eksik: Bu KGF paketi, ilgili KOSGEB programına kabul edildikten sonra kullanılabilir; önce KOSGEB programına başvurun.
 18. [1] İhracat Destek Paketi — KGF (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: finansman, ihracat.
-19. [1] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
-    gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.
-    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-20. [1] Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) — Ticaret Bakanlığı (aktif=True)
+19. [1] Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
+20. [1] Türk Eximbank E-İhracat Destek Kredisi — Türk Eximbank (aktif=True)
+    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: finansman, ihracat.

@@ -68,7 +68,7 @@
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Şirket çalışanının Türkiye'ye giriş tarihinden itibaren en geç 3 ay içinde
 - Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayılı Karar m.9) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
-- Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Pazara giriş belgesinin düzenlenme tarihinden (denetim/gözetimde rapor tarihinden, ruhsatlandırma ve kayıtta ödeme belgesi tarihinden) itibaren 6 ay içinde
+- Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - KADIN GİRİŞİMCİ DESTEK PAKETİ (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)

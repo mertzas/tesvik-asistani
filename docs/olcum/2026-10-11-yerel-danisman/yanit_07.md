@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **2026 Yılı Asgari Ücret Desteği (işveren sigorta primlerinden mahsup, İşsizlik Sigortası Fonu)** (SGK / İŞKUR) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi yasal süresinde verilmelidir; 2026 yılı Ocak ila Aralık ayları/dönemleri. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: Günlük 42,33 TL, aylık 1.270 TL (toplam prim ödeme gün sayısı x 42,33 TL işverenin Kuruma ödeyeceği primlerden mahsup edilir). 2025 yılının aynı ayında prime esas günlük kazancı 1.300 TL (toplu iş sözleşmesi uygulanan işyerlerinde 2.600 TL, linyit ve taşkömürü işyerlerinde 3.467 TL) ve altında ücretle çalıştırılan sigortalılar için
-- Diğer seçenekler: 2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu) (profilinize göre engel yok — şartları teyit edin); Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin); DİJİTAL KEFALET DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: 2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu) (profilinize göre engel yok — şartları teyit edin); Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin); Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi (profilinize göre engel yok — şartları teyit edin).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: hizmet (NACE 55.10)
@@ -68,9 +68,9 @@
 - Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (şarta bağlı): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteği: repo oranının %40'i, azami 20 puan
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- DİJİTAL KEFALET DESTEK PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
 - Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi (Kültür ve Turizm Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Programın sürdüğü teyit edilmeli. Turizm yatırımı belgesi başvuruları, belgelerin Bakanlığa eksiksiz tesliminden itibaren altmış gün içinde sonuçlandırılır. Teşvik kapsamı için sayfada çağrı/dönem tarihi verilmemiştir.
 - Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — şartlı — karar şartını teyit edin; 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı)
+- Yapay Zekâ Kredi Programı (KOSGEB) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
 
 **Birlikte kullanım (resmî metinden):**
 - [Sanayi ve Teknoloji Bakanlığı] Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
@@ -96,7 +96,8 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Başvuru adımları (2026 Yılı Asgari Ücret Desteği (işveren sigorta primlerinden mahsup, İşsizlik Sigortası Fonu)): Başvuru yeri: destek, SGK'ya verilen aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi üzerinden prim ödemesinden mahsup edilir.
 4. Başvuru kanalı (2026 Yılı Asgari Ücret Desteği (işveren sigorta primlerinden mahsup, İşsizlik Sigortası Fonu)): destek, SGK'ya verilen aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi üzerinden prim ödemesinden mahsup edilir. — https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#asgari-ucret-destegi-2026. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
-5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+5. İletişim (doğrulanmış): KOSGEB VAN MÜDÜRLÜĞÜ: 0 (432) 486 55 10; Bahçıvan Mah. Sıhke Cad. 1702 Sk. No:93 Selçuk Ecza Deposu Üstü Kat:4 VAN (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=65)
+6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. Planladığınız sabit yatırım tutarı nedir? — teşvik belgesi (9903) asgari sabit yatırım tutarının altındaki yatırıma düzenlenmez (kartlardaki teyit maddesi).

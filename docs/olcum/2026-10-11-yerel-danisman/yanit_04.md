@@ -34,8 +34,8 @@
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - Tasarım Organizasyonu Desteği (5973 sayılı Karar m.26) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; işbirliği kuruluşu faaliyet bazlı ve bütçeyi içeren projesiyle başvurusunu organizasyonun gerçekleşeceği tarihten en az üç ay önce DYS üzerinden Bakanlığa iletir.
+- Tasarımcı Şirket ve Tasarım Ofisi Desteği (5973 sayılı Karar m.15) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; kapsama alınma başvurusu DYS üzerinden yapılır. Ödeme başvurusu, Ek 1'de belirtilen belgelerle birlikte ödeme belgesi tarihinden itibaren en geç altı ay içerisinde incelemeci kuruluşa DYS üzerinden yapılır.
 - Küresel Tedarik Zinciri Desteği (5973 sayılı Karar m.10) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; yetkinlik projesi başvurusu DYS üzerinden Bakanlığa yapılır. Yurt dışı depo kira ve depolama gideri başvurusu ödeme belgesi tarihinden itibaren 6 ay içinde yapılmalıdır.
-- İhracat Teslimlerinde KDV İstisnası ve Yüklenilen KDV'nin İadesi (3065 sayılı KDV Kanunu m.11, m.12, m.32) (Gelir İdaresi Başkanlığı) — profilinize göre engel yok — şartları teyit edin; Sürekli; indirilemeyen KDV'nin iadesi, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmelidir (m.32).
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **1709 – EUREKA-EUROSTARS:** Sermaye şirketi, yükseköğretim kurumu, kamu araştırma merkezi/enstitüsü, eğitim ve araştırma hastanesi veya 6550 sayılı Kanun kapsamındaki araştırma altyapısı olmak

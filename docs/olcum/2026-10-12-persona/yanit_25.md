@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)** (Sanayi ve Teknoloji Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Ar-Ge merkezi: kendi başına ayrı bir birim olarak örgütlenmiş, yalnızca yurtiçinde Ar-Ge yapan ve en az elli tam zaman eşdeğer Ar-Ge personeli çalıştıran sermaye şirketi birimi); Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır. Şartların taşındığına ilişkin tespitler en geç üç yıllık sürelerle yapılır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Program: 5746 sayılı Kanun uyarınca teknoloji merkezi işletmelerinde, Ar-Ge merkezlerinde, kamu kurumları veya uluslararası fonlarca desteklenen Ar-Ge ve yenilik projelerinde, rekabet öncesi işbirliği projelerinde ve teknogirişim sermaye desteklerinden yararlananların gerçekleştirdiği Ar-Ge ve yenilik […]
-- Diğer seçenekler: Teknoloji Hamlesi Programı (9903 sayılı Karar) (şartlı — karar şartını teyit edin); İşletme Bünyesindeki Ar-Ge Harcamalarının %100'ü Vergi İndirimi (5746 sayılı Kanun m.3/A — Ar-Ge İndirimi) (profilinize göre engel yok — şartları teyit edin); Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2) (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: Teknoloji Hamlesi Programı (9903 sayılı Karar) (şartlı — karar şartını teyit edin); Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2) (profilinize göre engel yok — şartları teyit edin); 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı (profilinize göre engel yok — şartları teyit edin).
 - 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -46,25 +46,23 @@
   - Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi; Teknoloji Hamlesi'nde KOSGEB ve TÜBİTAK doğrudan destekleri serbest). — resmî metin: “diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.”
 - **Başvuru:** Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#teknoloji-hamlesi
 
-**İşletme Bünyesindeki Ar-Ge Harcamalarının %100'ü Vergi İndirimi (5746 sayılı Kanun m.3/A — Ar-Ge İndirimi) — Sanayi ve Teknoloji Bakanlığı**
+**Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2) — Sanayi ve Teknoloji Bakanlığı**
 - **Başvuru dönemi:** Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır.
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
 - **Kapsam:** yalnız: şahıs işletmesi, limited şirket, anonim şirket
 - **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
-- **Destek:** Vergi indirimi: işletme bünyesinde yapılan, münhasıran yeni teknoloji ve bilgi arayışına yönelik Ar-Ge harcamalarının %100'ü kazancın tespitinde indirim konusu yapılır (projenin Bakanlıkça Ar-Ge ve yenilik projesi olarak değerlendirilmesi şartıyla). Harcamalar amortisman yoluyla itfa edilir, iktisadi kıymet oluşmazsa doğrudan gider yazılır; indirilemeyen tutar sonraki dönemlere devredilir. Kanun 31/12/2028 tarihine kadar uygulanır.
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Gelir ve kurumlar vergisi mükellefi olunmalı ve harcamalar işletmenin bünyesinde, münhasıran yeni teknoloji ve bilgi arayışına yönelik Ar-Ge için yapılmalıdır; harcamanın %100'ü indirim konusudur.
-  - ☐ Projenin Sanayi ve Teknoloji Bakanlığı tarafından Ar-Ge ve yenilik projesi olarak değerlendirilmesi şarttır. — resmî metin: “bu kapsamdaki projelerin Bilim, Sanayi ve Teknoloji Bakanlığı tarafından Ar-Ge ve yenilik projesi olarak değerlendirilmesi şartıyla,”
+- **Destek:** Vergi teşviki: Ar-Ge ve tasarım personelinin ücretleri üzerinden (asgari geçim indirimi uygulandıktan sonra) hesaplanan gelir vergisinin doktoralılar ile desteklenecek program alanlarında en az yüksek lisanslılar için yüzde doksan beşi, yüksek lisanslılar ve bu alanlarda lisans derecesi olanlar için yüzde doksanı, diğerleri için yüzde sekseni muhtasar beyanname üzerinden tahakkuk eden vergiden indirilerek terkin edilir. Ayrıca sigorta primi işveren hissesinin yarısı bütçeden karşılanır. Kanun 31/12/2028 tarihine kadar uygulanır.
+- **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.
 - **Kurallar (kayıttan):**
-  - İndirim, kurumlar vergisi (m.10) ve gelir vergisi (m.89) hükümleri uyarınca kazancın tespitinde yapılır. — resmî metin: “5520 sayılı Kanunun 10 uncu maddesi ve 193 sayılı Kanunun 89 uncu maddesi uyarınca kazancın tespitinde indirim konusu yapılır.”
-  - Harcamalar aktifleştirilerek amortisman yoluyla itfa edilir; iktisadi kıymet oluşmazsa doğrudan gider yazılır. — resmî metin: “Ayrıca bu harcamalar, 213 sayılı Kanuna göre aktifleştirilmek suretiyle amortisman yoluyla itfa edilir, bir iktisadi kıymet oluşmaması hâlinde ise doğrudan gider yazılır.”
-  - Kazanç yetersizse indirilemeyen tutar sonraki vergilendirme dönemlerine devredilir. — resmî metin: “Kazancın yetersiz olması nedeniyle ilgili vergilendirme döneminde indirim konusu yapılamayan tutar, sonraki vergilendirme dönemlerine devredilir.”
-- **Başvuru:** Sanayi ve Teknoloji Bakanlığı (projenin Ar-Ge ve yenilik projesi olarak değerlendirilmesi); gerekli belge ve usuller Maliye Bakanlığı ile Sanayi ve Teknoloji Bakanlığınca müştereken belirlenir. — https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3a
+  - İndirim, ücretler üzerinden asgari geçim indirimi uygulandıktan sonra hesaplanan gelir vergisi üzerinden yapılır. — resmî metin: “ücretleri üzerinden asgari geçim indirimi uygulandıktan sonra hesaplanan gelir vergisinin;”
+  - Doktoralı personel ile desteklenecek program alanlarında en az yüksek lisans derecesi olanlar için gelir vergisinin yüzde doksan beşi terkin edilir. — resmî metin: “doktoralı olanlar ile desteklenecek program alanlarından birinde en az yüksek lisans derecesine sahip olanlar için yüzde doksan beşi,”
+  - Yüksek lisanslı personel ve bu alanlarda lisans derecesi olanlar için yüzde doksanı, diğer personel için yüzde sekseni terkin edilir. — resmî metin: “yüksek lisanslı olanlar ile desteklenecek program alanlarından birinde lisans derecesine sahip olanlar için yüzde doksanı ve diğerleri için yüzde sekseni,”
+- **Başvuru:** Sanayi ve Teknoloji Bakanlığı (Ar-Ge/tasarım merkezi veya proje uygunluğu) ve işyerinin bağlı olduğu vergi dairesi (muhtasar beyanname). — https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3-2
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2) (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır.
 - 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (28 gün kaldı); başvuru kapanışı 11.11.2026 (30 gün kaldı)
 - 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (10 gün kaldı); başvuru kapanışı 26.10.2026 (14 gün kaldı)
+- İşletme Bünyesindeki Ar-Ge Harcamalarının %100'ü Vergi İndirimi (5746 sayılı Kanun m.3/A — Ar-Ge İndirimi) (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır.
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Kapasite Geliştirme Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)
@@ -79,6 +77,7 @@
 - **Teknoloji Hamlesi Programı (9903 sayılı Karar):** Öncelikli ürün listesindeki ürünlere ya da teknolojilere yönelik yatırımlar desteklenebilir; liste orta-yüksek ve yüksek teknolojili sektörlerden (EK-1) ve kritik ürünlerden oluşur, Bakanlık tebliğiyle yayımlanır (MADDE 2/i, MADDE 6).
 - **Teknoloji Hamlesi Programı (9903 sayılı Karar):** Teşvik belgesi müracaatımı E-TUYS üzerinden
 - **Teknoloji Hamlesi Programı (9903 sayılı Karar):** Başvuru yeri: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)
+- **Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2):** Başvuru yeri: Sanayi ve Teknoloji Bakanlığı (Ar-Ge/tasarım merkezi veya proje uygunluğu) ve işyerinin bağlı olduğu vergi dairesi (muhtasar beyanname).
 
 ### 4. Adım Adım Yol Haritası
 1. Diğer programlar için ayrıca: Teknoloji Hamlesi Programı (9903 sayılı Karar) — Kayıtlı elektronik posta (KEP) adresi, Yatırım teşvik belgesi.

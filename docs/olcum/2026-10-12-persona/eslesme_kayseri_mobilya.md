@@ -11,12 +11,12 @@ profil: {'sektor': 'imalat', 'bolge': 'Kayseri', 'calisan_sayisi': 22, 'yillik_c
  4. [1] 2024 Dijital Dönüşüm Destek Paketi — KGF (aktif=True)
     gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; Faaliyet kodunuz: 31.01, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi).; Belirttiğiniz hedeflerle eşleşiyor: dijital.
     eksik: Bu KGF paketi, ilgili KOSGEB programına kabul edildikten sonra kullanılabilir; önce KOSGEB programına başvurun.
- 5. [1] KAPASİTE GELİŞTİRME DESTEK PAKETİ — KGF (aktif=True)
-    gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; Faaliyet kodunuz: 31.01, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi).; Belirttiğiniz hedeflerle eşleşiyor: makine alımı.
-    eksik: Bu KGF paketi, ilgili KOSGEB programına kabul edildikten sonra kullanılabilir; önce KOSGEB programına başvurun.
- 6. [1] ORAN 2026 TR72 İmalat Sanayi Ekosistemini Geliştirme Programı (Teknik Destek, TR72/26/ISTD) — Orta Anadolu Kalkınma Ajansı (aktif=True)
+ 5. [1] ORAN 2026 TR72 İmalat Sanayi Ekosistemini Geliştirme Programı (Teknik Destek, TR72/26/ISTD) — Orta Anadolu Kalkınma Ajansı (aktif=True)
     gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; Bölgeniz (Kayseri) bu programın kapsamındaki iller arasında.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+ 6. [1] KAPASİTE GELİŞTİRME DESTEK PAKETİ — KGF (aktif=True)
+    gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; Faaliyet kodunuz: 31.01, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi).; Belirttiğiniz hedeflerle eşleşiyor: makine alımı.
+    eksik: Bu KGF paketi, ilgili KOSGEB programına kabul edildikten sonra kullanılabilir; önce KOSGEB programına başvurun.
  7. [1] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: dijital.
  8. [1] Kapasite Geliştirme Destek Programı — KOSGEB (aktif=True)

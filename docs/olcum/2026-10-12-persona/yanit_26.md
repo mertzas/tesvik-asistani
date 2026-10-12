@@ -65,7 +65,7 @@
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Pazara giriş belgesinin düzenlenme tarihinden (denetim/gözetimde rapor tarihinden, ruhsatlandırma ve kayıtta ödeme belgesi tarihinden) itibaren 6 ay içinde
 - Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Ödeme belgesi tarihinden itibaren 6 ay içinde
-- İhracat Teslimlerinde KDV İstisnası ve Yüklenilen KDV'nin İadesi (3065 sayılı KDV Kanunu m.11, m.12, m.32) (Gelir İdaresi Başkanlığı) — profilinize göre engel yok — şartları teyit edin; Sürekli; indirilemeyen KDV'nin iadesi, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmelidir (m.32).
+- Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - KADIN GİRİŞİMCİ DESTEK PAKETİ (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)

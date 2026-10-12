@@ -44,15 +44,15 @@ profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'İzmir', 'calisa
 16. [0] Türk Eximbank E-İhracat Destek Kredisi — Türk Eximbank (aktif=True)
     gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: İhracat yapan ya da yapacak işletmelere yönelik; hedeflerinizde ihracat yok.
-17. [0] İhracat Teslimlerinde KDV İstisnası ve Yüklenilen KDV'nin İadesi (3065 sayılı KDV Kanunu m.11, m.12, m.32) — Gelir İdaresi Başkanlığı (aktif=True)
+17. [0] Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.; İhracat yapan ya da yapacak işletmelere yönelik; hedeflerinizde ihracat yok.
-18. [0] 1832 - Sanayide Yeşil Dönüşüm Çağrısı — TUBITAK (aktif=True)
-    gerekçe: Bu destek sektörden bağımsız genel bir programdır.
-    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.; Ar-Ge projesi desteği; profilinizde Ar-Ge hedefi yok.; Başvuru dönemi şu an kapalı (1832 2026-2 çağrısı); yeni çağrıyı izleyin.
-19. [0] Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) — Ticaret Bakanlığı (aktif=True)
+18. [0] E-İhracat Destekleri (5986 Sayılı Karar) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.; İhracat yapan ya da yapacak işletmelere yönelik; hedeflerinizde ihracat yok.
-20. [0] E-İhracat Destekleri (5986 Sayılı Karar) — Ticaret Bakanlığı (aktif=True)
+19. [0] Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3) — Ticaret Bakanlığı (aktif=True)
+    gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.
+    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.; İhracat yapan ya da yapacak işletmelere yönelik; hedeflerinizde ihracat yok.
+20. [0] Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.; İhracat yapan ya da yapacak işletmelere yönelik; hedeflerinizde ihracat yok.

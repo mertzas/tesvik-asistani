@@ -100,7 +100,10 @@ def _kurum_ile_cesitlendir(sonuclar: list["TesvikEslesmeSonucu"]) -> list["Tesvi
     n = len(sonuclar)
     while i < n:
         j = i
-        while j < n and sonuclar[j].skor == sonuclar[i].skor:
+        # Blok, sıralama değerine göre (görünen skor değil): sıralama cezaları (kredi, vergi istisnası) eşit görünen
+        # skorlu blokta round-robin ile ezilmesin (arayüz simülasyonu 2026-10-12: cezalı KDV istisnası kurumunun ilk
+        # kaydı diye 1. sıraya çıkıyordu).
+        while j < n and sonuclar[j].siralama == sonuclar[i].siralama:
             j += 1
         blok = sonuclar[i:j]
 
@@ -915,6 +918,11 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20,
             # (4-7. tur: halı panelinde 3-16. sıralar 12 Eximbank kredisiydi). Yalnız sıralama: görünen uygunluk
             # skoru değişmez (KOSGEB'e bağlı paketin asıl programdan 0,05 geride kalma kuralı korunur).
             sira_cezasi += 0.25
+        if ilgi_cezalari and (t.basvuru_bicimi or "diger") == "diger" and _yd._VERGI_PROGRAMI.search(t.baslik or ""):
+            # Başvuru gerektirmeyen vergi istisnası (KDV ihracat istisnası, GVK 20/B) başvurulacak programların
+            # arkasında (arayüz simülasyonu 2026-10-12: 6 ihracatçı mağazanın panelinde KDV istisnası 1. sıradaydı,
+            # kontrol listesi tek maddeyle açılıyordu). Yalnız sıralama: görünen skor değişmez.
+            sira_cezasi += 0.3
         if ilgi_cezalari and kriterler.get("kurucu_yasi_max") and getattr(profil, "kurucu_yasi", None) is None:
             # Yaş şartlı ürün (genç girişimci kredisi) yaşı bilinmeyen profilde lider olmasın (otel denemesi).
             ceza += 0.2

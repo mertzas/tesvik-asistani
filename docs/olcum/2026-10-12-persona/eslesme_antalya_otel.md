@@ -49,9 +49,9 @@ profil: {'sektor': 'hizmet', 'bolge': 'Antalya', 'calisan_sayisi': 14, 'yillik_c
 18. [0] TURWIB PROGRAMI DESTEK PAKETİ — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: Öncelikle şu işletmelere yönelik: Kadın girişimci / kadınların yönettiği işletme.
-19. [0] Teknoloji Geliştirme Bölgesi (Teknopark) Gelir ve Kurumlar Vergisi İstisnası (4691 sayılı Kanun geçici madde 2) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
+19. [0] Teknoloji Geliştirme Bölgesi Personel Gelir Vergisi Teşviki (4691 sayılı Kanun geçici madde 2, ikinci-üçüncü fıkra) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.; Yatırım teşviki: teşvik belgesi ve asgari yatırım tutarı gerekir; hedeflerinizde yatırım yok.; Yalnız teknoloji geliştirme bölgesinde Ar-Ge/yazılım faaliyeti yürüten firmalar içindir.
-20. [0] Teknoloji Geliştirme Bölgesi Personel Gelir Vergisi Teşviki (4691 sayılı Kanun geçici madde 2, ikinci-üçüncü fıkra) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
-    gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.
-    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.; Yatırım teşviki: teşvik belgesi ve asgari yatırım tutarı gerekir; hedeflerinizde yatırım yok.; Yalnız teknoloji geliştirme bölgesinde Ar-Ge/yazılım faaliyeti yürüten firmalar içindir.
+20. [0] Türk Eximbank Faizsiz Sevk Öncesi İhracatın Finansmanı - SÖİF (katılım bankaları aracılığıyla kısa vadeli faizsiz ihracat finansmanı) — Türk Eximbank (aktif=True)
+    gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+    eksik: İhracat yapan ya da yapacak işletmelere yönelik; hedeflerinizde ihracat yok.

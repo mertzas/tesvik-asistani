@@ -543,3 +543,13 @@ def test_konusu_uyan_kapali_hibe_ihtiyac_etiketi_tutmasa_da_anilir():
             karar="kapali", gerekce=[], teyit=[])
     s = yerel_danisman.hibe_satiri(soru, kredi, [kredi], [tss])
     assert "TSS Hibe Desteği şu an başvuruya kapalı" in s
+
+
+def test_arazi_alani_ondalik_kabul_eder():
+    # Arayüz simülasyonu 2026-10-12: step tanımsız number alanı 1,5 dönümü geçersiz sayıp profil formunu sessizce
+    # gönderemiyordu (çilek üreticisi profilini kaydedemiyordu).
+    import re
+    from pathlib import Path
+    html = Path(__file__).resolve().parents[1].joinpath("app/static/dashboard.html").read_text(encoding="utf-8")
+    alan = re.search(r'<input[^>]*id="p-arazi"[^>]*>', html).group(0)
+    assert 'step="any"' in alan

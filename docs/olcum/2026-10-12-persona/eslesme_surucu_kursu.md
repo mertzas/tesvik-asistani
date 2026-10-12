@@ -43,15 +43,15 @@ profil: {'sektor': 'hizmet', 'bolge': 'Konya', 'calisan_sayisi': 9, 'yillik_ciro
 16. [0] Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.
     eksik: 9903 ön değerlendirmesi: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7).; Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kon
-17. [0] Teknoloji Geliştirme Bölgesi (Teknopark) Gelir ve Kurumlar Vergisi İstisnası (4691 sayılı Kanun geçici madde 2) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
+17. [0] Teknoloji Geliştirme Bölgesi Personel Gelir Vergisi Teşviki (4691 sayılı Kanun geçici madde 2, ikinci-üçüncü fıkra) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.; Yatırım teşviki: teşvik belgesi ve asgari yatırım tutarı gerekir; hedeflerinizde yatırım yok.; Yalnız teknoloji geliştirme bölgesinde Ar-Ge/yazılım faaliyeti yürüten firmalar içindir.
-18. [0] Teknoloji Geliştirme Bölgesi Personel Gelir Vergisi Teşviki (4691 sayılı Kanun geçici madde 2, ikinci-üçüncü fıkra) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
-    gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.
-    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.; Yatırım teşviki: teşvik belgesi ve asgari yatırım tutarı gerekir; hedeflerinizde yatırım yok.; Yalnız teknoloji geliştirme bölgesinde Ar-Ge/yazılım faaliyeti yürüten firmalar içindir.
-19. [0] Türk Eximbank Faizsiz Sevk Öncesi İhracatın Finansmanı - SÖİF (katılım bankaları aracılığıyla kısa vadeli faizsiz ihracat finansmanı) — Türk Eximbank (aktif=True)
+18. [0] Türk Eximbank Faizsiz Sevk Öncesi İhracatın Finansmanı - SÖİF (katılım bankaları aracılığıyla kısa vadeli faizsiz ihracat finansmanı) — Türk Eximbank (aktif=True)
     gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: İhracat yapan ya da yapacak işletmelere yönelik; hedeflerinizde ihracat yok.
-20. [0] Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) — Türk Eximbank (aktif=True)
+19. [0] Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) — Türk Eximbank (aktif=True)
+    gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+    eksik: İhracat yapan ya da yapacak işletmelere yönelik; hedeflerinizde ihracat yok.
+20. [0] Türk Eximbank İhracata Hazırlık Kredisi — Türk Eximbank (aktif=True)
     gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: İhracat yapan ya da yapacak işletmelere yönelik; hedeflerinizde ihracat yok.

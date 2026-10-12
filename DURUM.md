@@ -549,6 +549,18 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   güncellendi (29 Nisan – 30 Haziran 2026; ilk ilan 12 Haziran), kopya silindi, tur38 kayıt dosyası `birlesen/` altına
   alındı (tur38 yeniden çalışınca geri gelmesin). Yedek `tesvikler_oncesi_tur40.db.bak`. Ders: yeni kayıttan önce
   aynı Resmî Gazete URL'sine bağlı kayıt aranmalı.
+- **Arayüz simülasyonu** (2026-10-12, `docs/olcum/2026-10-12-sunum/`): 13 persona (Rekortiv, fındık, çilek, 10 ikas
+  mağazası) yerel sunucuda başsız Chrome ile arayüzden yürütüldü (`ekran_akisi.py`, CDP + websocket-client; kayıt →
+  profil → uygun destekler → hazırlık → e-ihracat hesaplayıcı → soru → kontrol listesi → taslak → ana sayfa; 108
+  ekran `data/sunum_ekran/`, git dışı). Test hesapları `sunum.*@example.com`, parolalar `data/sunum_test_hesaplari.json`
+  (git dışı); tekrar koşuda hesap uygulamanın kendi silme uç noktasıyla silinir; PRO yerelde veritabanından atanır
+  (Stripe test modu yok). Bulunan ve düzeltilen: arazi alanı `step` tanımsızdı, 1,5 dönüm geçersiz sayılıp profil
+  formu sessizce gönderilmiyordu (`step="any"`, test); kurum çeşitlendirmesi (`_kurum_ile_cesitlendir`) blokları
+  görünen skora göre kurduğu için sıralama cezaları eziliyordu (bloklar artık `siralama` ile) ve başvuru gerektirmeyen
+  vergi istisnaları (KDV ihracat istisnası, GVK 20/B) sıralamada geride (`_VERGI_PROGRAMI`'na "KDV İstisnası").
+  Açık kalan: arayüzde finansman/dijital hedefi yok (4 hesap "Hedefler bilgisini ekleyin"); Rekortiv hazırlık kartı
+  şirkete geçişi öneriyor ama BiGG sıra şartını söylemiyor; e-ticaret profilinde hazırlık adımları ihracat hedefi
+  olmadan da e-ihracata dönük. Sunum: https://claude.ai/artifact/B4KYUsoqRPKZDDtoUeXQTf (66 slayt).
 - **Groq kayıt önerici** (`scripts/groq_kayit_onerici.py`, self-test 7/7): yalnız kamu mevzuat metnini (mevzuat.gov.tr
   PDF'i) Groq `openai/gpt-oss-120b`'ye verir ve kayıt taslağı ister; kullanıcı/kurum/ikas verisi gönderilmez,
   uygulamanın çalışma anındaki LLM yolu (`app/llm_saglayici.py`) değişmez. Model alıntıları birebir vermek zorunda;

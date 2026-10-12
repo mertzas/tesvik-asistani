@@ -3,7 +3,7 @@
 - Öne çıkan: **Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12)** (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz; Ödeme belgesi tarihinden itibaren 6 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Hedef ülke listesi (EK-Hedef Ülkeler Listesi, 35 ülke; Dijital Pazaryeri Tanıtım Desteği ve diğer 5986 kalemlerinde oran 20 puan yüksek): BAE, Katar, Kuveyt, Suudi Arabistan listede; Bahreyn, Umman listede değil (genel oran).
 - Destek: %50; 2026'da birime bağlı ülke başına yıllık 12.329.397 TL, marka tesciline bağlı yıllık 19.728.672 TL; en fazla 4 yıl
-- Diğer seçenekler: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (profilinize göre engel yok — şartları teyit edin); E-İhracat Destekleri (5986 Sayılı Karar) (profilinize göre engel yok — şartları teyit edin); İhracat Teslimlerinde KDV İstisnası ve Yüklenilen KDV'nin İadesi (3065 sayılı KDV Kanunu m.11, m.12, m.32) (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (profilinize göre engel yok — şartları teyit edin); E-İhracat Destekleri (5986 Sayılı Karar) (profilinize göre engel yok — şartları teyit edin); Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3) (profilinize göre engel yok — şartları teyit edin).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: e-ticaret (NACE 47.91)
@@ -64,7 +64,7 @@
 - **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/6447baf113b8761694f892bb/E-İHRACAT DESTEKLERİNE İLİŞKİN GENELGE 13.04.2026.pdf
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- İhracat Teslimlerinde KDV İstisnası ve Yüklenilen KDV'nin İadesi (3065 sayılı KDV Kanunu m.11, m.12, m.32) (Gelir İdaresi Başkanlığı) — profilinize göre engel yok — şartları teyit edin; Sürekli; indirilemeyen KDV'nin iadesi, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmelidir (m.32).
+- Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Pazara giriş belgesinin düzenlenme tarihinden (denetim/gözetimde rapor tarihinden, ruhsatlandırma ve kayıtta ödeme belgesi tarihinden) itibaren 6 ay içinde
 - E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: önceki yıl en az 500.000 USD ihracat); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
 - TURQUALITY® Tanıtım Projesi Desteği (5973 sayılı Karar m.27) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Projeler, bütçelerini içeren proje ile TİM/ihracatçı birliklerince doğrudan Bakanlığa sistem üzerinden sunulur ve Bakanlıkça sistem üzerinden onaylanmalıdır); Çağrı yoktur; TİM/ihracatçı birlikleri bütçeli projeleriyle doğrudan Bakanlığa sistem üzerinden müracaat eder ve proje Bakanlıkça sistem üzerinden onaylanır.
 

@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **Türk Eximbank İhracata Yönelik Yatırım Kredisi (makine, teçhizat ve aksam harcamaları)** (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. Talep, Eximbank'ın fon uygunluğuna bağlı olarak işleme alınır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Kredi koşulları (hibe değil): Hibe değil kredi: kredi başvuru tarihinden azami 180 gün öncesine kadar yapılan makine, teçhizat ve aksam harcamaları KDV hariç tutar üzerinden finanse edilir. İhracat taahhüdü 5 yıla kadar vadeli kredilerde 1 katı, 5 yıldan uzun vadeli kredilerde 1,5 katıdır
-- Diğer seçenekler: İhracat Destek Paketi (şarta bağlı); Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (profilinize göre engel yok — şartları teyit edin); İhracat Teslimlerinde KDV İstisnası ve Yüklenilen KDV'nin İadesi (3065 sayılı KDV Kanunu m.11, m.12, m.32) (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: İhracat Destek Paketi (şarta bağlı); Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (profilinize göre engel yok — şartları teyit edin); Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (profilinize göre engel yok — şartları teyit edin).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 10.41)
@@ -50,7 +50,7 @@
 - **Başvuru:** Türk Eximbank şubeleri (geçerli kredi limiti yoksa analiz başvuru evrakları Eximbank'a iletilir) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- İhracat Teslimlerinde KDV İstisnası ve Yüklenilen KDV'nin İadesi (3065 sayılı KDV Kanunu m.11, m.12, m.32) (Gelir İdaresi Başkanlığı) — profilinize göre engel yok — şartları teyit edin; Sürekli; indirilemeyen KDV'nin iadesi, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmelidir (m.32).
+- Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
 - Türk Eximbank İhracata Hazırlık Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ve faaliyet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur; 
 - Türk Eximbank Sevk Öncesi İhracat Kredisi (SÖİK) — aracı bankalar üzerinden (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç, Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan imalatçı firmalar yararlanır); Dönemsel çağrı yoktur; 
 

@@ -1672,7 +1672,7 @@ _DAR_KITLE = re.compile(r"Engelli|Sosyal Hizmet|Sosyal Yardım|İşsizlik Ödene
 
 # Belirli bir duruma yönelik krediler (refinansman, zor dönemde istihdamı koruma): soru o durumu anmıyorsa önerilmez.
 _DURUM_PROGRAMI = re.compile(r"REFİNANSMAN|Refinansman|İSTİHDAM KORUMA|İstihdamı Koruma")
-_VERGI_PROGRAMI = re.compile(r"Vergi İndirimi|Vergisi İstisnası|Stopajı Teşviki|Tasarım İndirimi|Kazanç İstisnası|"
+_VERGI_PROGRAMI = re.compile(r"Vergi İndirimi|Vergisi İstisnası|KDV İstisnası|Stopajı Teşviki|Tasarım İndirimi|Kazanç İstisnası|"
                              r"Gelir Vergisi Teşviki|Gelir Vergisi İstisnası", re.I)
 _PAZARYERI_PROGRAM = re.compile(r"Pazaryeri|E-Ticaret|E-İhracat|Sipariş Karşılama|Çevrim İçi Mağaza", re.I)
 

@@ -430,6 +430,39 @@ def retrieve(query: str, limit: int = 5, profil_kaydi=None) -> list[Tesvik]:
     return secilen
 
 
+def panel_adaylari_ekle(query: str, matches: list, profil_kaydi) -> list:
+    """Panelin ("Size uygun destekler") ilk 10'unda olup sorudaki ihtiyaca uyan en çok iki program yanıt adaylarına
+    eklenir; dayanak denetiminin bağlamına da girer (hakem bulgusu 2026-10-12, 5-7. tur: şahıs işletmesinin panelinde
+    4. sıradaki esnaf kredisi kredi sorusunun yanıtında yoktu)."""
+    ihtiyac = set(soru_ihtiyaclari(query))
+    if profil_kaydi is None or not ihtiyac:
+        return matches
+    from app.matching import esles
+    db = SessionLocal()
+    try:
+        mevcut = {t.id for t in matches}
+        ek = [e.tesvik for e in esles(profil_kaydi, db, limit=10)
+              if e.tesvik.id not in mevcut and e.tesvik.aktif_mi is not False
+              and program_ihtiyaclari(e.tesvik) & ihtiyac][:2]
+        # "Hibe var mı?" sorusunda adaylarda hibe yoksa soruya uyan KAPALI hibe programları da eklenir; yanıt "şu an
+        # kapalı, yeni çağrıyı izleyin" diyebilsin (2026-10-12: damla sulama hibesi sorusunda 2026 dönemi kapanan KKYDP
+        # hiç anılmıyordu). Konu eşleşmesi sorudaki anahtar kelimeyle; sektör etiketi profile uymalı.
+        if (re.search(r"\bhibe", kucult(query)) and yerel_danisman.soru_konulari(query)
+                and not any(yerel_danisman.hibe_mi(t) and yerel_danisman.konu_eslesir(query, t)
+                            for t in list(matches) + ek)):
+            sektor = (getattr(profil_kaydi, "sektor", None) or "").lower()
+            for t in db.query(Tesvik).filter(Tesvik.aktif_mi.is_(False)).all():
+                etiket = {x.lower() for x in (t.uygunluk_kriterleri or {}).get("sektorler", [])}
+                if (yerel_danisman.hibe_mi(t) and (not etiket or sektor in etiket or "genel" in etiket)
+                        and yerel_danisman.konu_eslesir(query, t) and t.id not in mevcut):
+                    ek.append(t)
+                    if sum(1 for x in ek if x.aktif_mi is False) >= 2:
+                        break
+    finally:
+        db.close()
+    return list(matches) + ek
+
+
 def profil_9903_degerlendirmesi(kayitlar, profil_kaydi, soru: str = "") -> dict:
     """{tesvik_id: Uygunluk9903} - yalnızca 9903 program kayıtları için. Soru bir yatırım tutarı veriyorsa
     ("4 milyon TL'lik makine") asgari sabit yatırımın altındaki programlar "uygun değil" olur."""
@@ -942,6 +975,7 @@ def _hazirla(query: str, llm_kullan: bool, profil_kaydi) -> Hazirlik:
             profil_kaydi = varsayim
     if not matches:
         return Hazirlik([], {}, "", False, [], profil_kaydi)
+    matches = panel_adaylari_ekle(query, matches, profil_kaydi)
     notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi, query).items()}
     # 9903 kayıtlarına Karar'daki oran/süreler (Md.15/16/18/19/20, profil bölgesine göre)
     # eklenir: ölçüm 2026-10-07'de model "SGK/faiz desteğinin oranı bağlamda yok" diyordu.

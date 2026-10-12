@@ -49,22 +49,8 @@
   - Markalaşma Programı kapsamında desteklenen yararlanıcı, o süre boyunca Hizmet Sektörleri Atılım Programından yararlanamaz. — resmî metin: “destek unsurları hariç olmak üzere Hizmet Sektörleri Atılım Programından faydalanamaz.”
 - **Başvuru:** Ticaret Bakanlığı Uluslararası Hizmet Ticareti Genel Müdürlüğü; incelemeci kuruluş: Hizmet İhracatçıları Birliği Genel Sekreterliği (DYS üzerinden) — https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf
 
-**Hizmet Sektörleri Atılım Programı — Uluslararası Teknoloji Pazarlama Ofisi (UTPO) Desteği (10962 sayılı Karar m.29) — Ticaret Bakanlığı**
-- **Başvuru dönemi:** Çağrı yoktur; önce işbirliği kuruluşu UTPO onay başvurusu yapar; UTPO'ya faaliyet onayı verildikten sonra ön onaya tabi faaliyetler için ön onay alınır, destek başvurusu her faaliyetin tamamlanmasından sonra yapılır.
-- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: UTPO'nun destek kapsamına alınması için bilişim sektöründe faaliyet gösteren işbirliği kuruluşu onay başvurusu yapar.
-- **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
-- **Karşıladığı ihtiyaç:** ihracat, reklam, tanıtım ve marka
-- **Destek:** UTPO giderlerinin %50'si, UTPO başına yıllık en fazla 35.000.000 TL; her UTPO en fazla beş yıl; hedef ülkelerde oran en fazla 20 puan artırılabilir (Karar metnindeki tutar; yıllık güncellenir). UTPO istihdamında personel başına aylık en fazla 250.000 TL.
-- **Profilinize göre sağlanan şartlar:** şirket/kooperatif statüsü (limited şirket)
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ UTPO'nun destek kapsamına alınması için bilişim sektöründe faaliyet gösteren işbirliği kuruluşu onay başvurusu yapar. — resmî metin: “UTPO’nun destek kapsamına alınabilmesi için bilişim sektöründe faaliyet gösteren işbirliği kuruluşu tarafından onay başvurusu yapılır.”
-- **Kurallar (kayıttan):**
-  - UTPO, bilişim sektöründeki işbirliği kuruluşuna veya bu kuruluşun yurt dışındaki şirketine ait olmalıdır; ortaklarının tamamı işbirliği kuruluşu olan yurt içi şirket de işbirliği kuruluşu sayılır. — resmî metin: “gerekir. Ortaklarının tamamı işbirliği kuruluşu olan yurt içindeki şirket, bu madde kapsamında işbirliği kuruluşu olarak değerlendirilir.”
-  - Onaydan sonra UTPO'nun altı ay içinde en az 10 yararlanıcı ile faaliyete başlaması gerekir; aksi halde onay iptal edilir.
-  - UTPO'yu yurt dışındaki şirket işletiyorsa işbirliği kuruluşu bu şirketin hisselerinin tamamına sahip olmalıdır. — resmî metin: “UTPO’yu yurt dışındaki şirketin işletmesi hâlinde i şbirliği kuruluşu nun, yurt dışındaki şirketin hisselerinin tamamına sahip olması gerekir.”
-- **Başvuru:** Uluslararası Hizmet Ticareti Genel Müdürlüğü (Genel Müdürlük) ve incelemeci kuruluş (Hizmet İhracatçıları Birliği Genel Sekreterliği) — https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf#madde-29
-
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Hizmet Sektörleri Atılım Programı — Uluslararası Teknoloji Pazarlama Ofisi (UTPO) Desteği (10962 sayılı Karar m.29) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: UTPO'nun destek kapsamına alınması için bilişim sektöründe faaliyet gösteren işbirliği kuruluşu onay başvurusu yapar); Çağrı yoktur; önce işbirliği kuruluşu UTPO onay başvurusu yapar; UTPO'ya faaliyet onayı verildikten sonra ön onaya tabi faaliyetler için ön onay alınır, destek başvurusu her faaliyetin tamamlanmasından sonra yapılır.
 - Hizmet Sektörleri Atılım Programı — Tekno Hızlandırıcı İhracat Projesi Desteği (10962 sayılı Karar m.25) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Proje onay başvurusunu bilişim sektöründe faaliyet gösteren işbirliği kuruluşu yapar); Çağrı yoktur; önce işbirliği kuruluşu proje onay başvurusu yapar, faaliyetler için proje onayından sonra ön onay alınır; destek başvurusu faaliyetin tamamlanmasından sonra işbirliği kuruluşu tarafından yapılır.
 - Marka ve TURQUALITY® Desteği (5973 sayılı Karar m.17) (Ticaret Bakanlığı) — düşük olasılık — cironuz eşiğin altında (yıllık cironuz (60.000 TL), kaydın aradığı en az 3.000.000 USD ihracat eşiğinin TL karşılığından az); Çağrı yoktur; kapsama alınma başvurusu sistem üzerinden Bakanlığa yapılır. Ödeme başvurusu, ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde
 
@@ -76,7 +62,6 @@
 - [Ticaret Bakanlığı] Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17): Aynı harcama için yalnızca bir destek programından yararlanılır. (resmî metin: "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.")
 - [Ticaret Bakanlığı] Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı): Türkiye'de yerleşik, TTK'ya göre kurulmuş bir şirket veya kooperatif olmak (üniversite, yüksek teknoloji enstitüsü, vakıf meslek yüksekokulu ve Bakanlıkça uygun görülen diğer kurumlar da yararlanıcı tanımındadır). (resmî metin: "yüksek teknoloji enstitüsünü veya vakıf tarafından kurulan meslek yüksekokul unu ve ilgili hizmet sektöründe faaliyet gösteren ve Bakanlık tarafından uygun görülen diğer kurum ve kuruluşu")
 - [Ticaret Bakanlığı] Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı): Aynı harcama için yalnız bir destek programından yararlanılır (başka programdan desteklenen harcama bu Karar kapsamında desteklenmez). (resmî metin: "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.")
-- [Ticaret Bakanlığı] Hizmet Sektörleri Atılım Programı — Uluslararası Teknoloji Pazarlama Ofisi (UTPO) Desteği (10962 sayılı Karar m.29): Aynı harcama için yalnızca bir destek programından yararlanılır. (resmî metin: "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.")
 
 **Girişim ön değerlendirmesi**
 Profilinizden hesaplanan HUKS ön skoru (TÜBİTAK BiGG değerlendirmesinin sistemce hesaplanabilen kısmı; resmî puan değildir):
@@ -90,11 +75,10 @@ Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Ticaret Bakanlığı DYS kaydı** (Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)): Destek Yönetim Sistemi'ne (DYS) şirket kaydı; MERSİS bilgileri ve NACE kodu güncel olmalı.
-- **Harcamadan önce ön onay** (Hizmet Sektörleri Atılım Programı — Uluslararası Teknoloji …): Bu programlarda ön onay tarihinden önce yapılan harcama desteklenmez; harcamayı planlamadan başvurun.
 - **Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı):** Türkiye'de yerleşik, TTK'ya göre kurulmuş bir şirket veya kooperatif olmak (üniversite, yüksek teknoloji enstitüsü, vakıf meslek yüksekokulu ve Bakanlıkça uygun görülen diğer kurumlar da yararlanıcı tanımındadır).
 
 ### 4. Adım Adım Yol Haritası
-1. Diğer programlar için ayrıca: Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı) — Ticaret Bakanlığı DYS kaydı; Hizmet Sektörleri Atılım Programı — Uluslararası Teknoloji … — Harcamadan önce ön onay.
+1. Diğer programlar için ayrıca: Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı) — Ticaret Bakanlığı DYS kaydı.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)): Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.
 4. Başvuru kanalı (Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)): Uluslararası Hizmet Ticareti Genel Müdürlüğü (Genel Müdürlük) ve incelemeci kuruluş (Hizmet İhracatçıları Birliği Genel Sekreterliği) — https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf#madde-17. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
@@ -102,8 +86,7 @@ Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Hizmet Sektörleri Atılım Programı — Uluslararası Teknoloji Pazarlama Ofisi (UTPO) Desteği (10962 sayılı Karar m.29): uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: UTPO'nun destek kapsamına alınması için bilişim sektöründe faaliyet gösteren işbirliği kuruluşu onay başvurusu yapar.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
-Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
+Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

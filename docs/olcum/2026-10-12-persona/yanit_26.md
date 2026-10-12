@@ -3,7 +3,7 @@
 - Öne çıkan: **E-İhracat Destekleri (5986 Sayılı Karar)** (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Statü (Perakende E-Ticaret Sitesi ya da benzeri) almamış şirket yalnız şu kalemlerden yararlanır (kayıttan): dijital pazaryeri reklamı, sipariş karşılama, pazaryeri komisyonu, (önceki yıl 1 milyon USD üzeri ihracatla) çevrim içi mağaza; diğer kalemler statü şartlıdır.
 - Destek: %50 (dijital pazaryeri reklamı, e-ihracat tanıtımı ve sipariş karşılamada hedef ülkelerde %70); 2026 toplam yıllık üst limit şirketler için 73.990.019 TL
-- Diğer seçenekler: Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12) (profilinize göre engel yok — şartları teyit edin); Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (profilinize göre engel yok — şartları teyit edin); Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6) (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12) (profilinize göre engel yok — şartları teyit edin); Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (profilinize göre engel yok — şartları teyit edin); Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayılı Karar m.9) (profilinize göre engel yok — şartları teyit edin).
 - 1 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -43,9 +43,7 @@
   - ☐ Tanıtımı yapılan ürünler Türkiye'de üretilmiş olmalı — resmî metin: “Türkiye’de üretilen ürünler ile ilgili yurt dışında gerçekleştirilen tanıtım ve pazarlama giderleri”
   - ☐ Tanıtım yapılacak ülkede kapsama alınmış yurt dışı birim yoksa: Türkiye'de tescilli marka ve tanıtım yapılacak ülkede marka tescili ya da tescil başvurusu olmalı — resmî metin: “yurt içi marka tescil belgesi bulunması ve tanıtım yapacağı ülkede marka tescil belgesine sahip ya da marka tescili için başvurulmuş olması koşuluyla”
   - ☐ Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz
-  - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız
-  - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız
-  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
+  - ve 4 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12
 
 **Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) — Ticaret Bakanlığı**
@@ -61,15 +59,13 @@
   - ☐ Birimde Türkiye'de üretilen ürünler pazarlanmalı — resmî metin: “Şirketlerin Türkiye’de üretilen ürünlerin pazarlandığı yurt dışı birimlerinin kira giderleri ile paylaşımlı ofislere ilişkin üyelik giderleri”
   - ☐ Küresel tedarik zinciri desteğinin (m.10/3) depo kirası kaleminden yararlanılmamış olmalı — resmî metin: “10 uncu maddenin üçüncü fıkrasında belirtilen destekten yararlanan şirketler bu maddede yer alan destekten yararlandırılmazlar.”
   - ☐ Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz
-  - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız
-  - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız
-  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
+  - ve 4 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden; e-ticaret depoları için KEP üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-11
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Şirket çalışanının Türkiye'ye giriş tarihinden itibaren en geç 3 ay içinde
 - Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayılı Karar m.9) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
-- Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
+- Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Pazara giriş belgesinin düzenlenme tarihinden (denetim/gözetimde rapor tarihinden, ruhsatlandırma ve kayıtta ödeme belgesi tarihinden) itibaren 6 ay içinde
+- Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - KADIN GİRİŞİMCİ DESTEK PAKETİ (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)

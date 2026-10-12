@@ -4,7 +4,7 @@
 - Diğer seçenekler: 2024 Dijital Dönüşüm Destek Paketi (profilinize göre engel yok — şartları teyit edin); Teknoloji Hamlesi Programı (9903 sayılı Karar) (şartlı — karar şartını teyit edin); YATIRIM-İŞLETME DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin).
 - 4 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 - Birlikte kullanım — Teknoloji Hamlesi Programı (9903 sayılı Karar): kayda göre aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi; Teknoloji Hamlesi'nde KOSGEB ve TÜBİTAK doğrudan destekleri serbest).
-- Birlikte kullanım — Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar): kayda göre aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi).
+- Birlikte kullanım — Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar): kayda göre aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi).
 - Birlikte kullanım hükmü kayıtta olmayanlar: KOBİ Dijital Dönüşüm Destek Programı; 2024 Dijital Dönüşüm Destek Paketi — aynı harcamanın birlikte desteklenip desteklenemeyeceğini kurumdan teyit edin.
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -61,6 +61,7 @@
 - Teknoloji Hamlesi Programı (9903 sayılı Karar) (şartlı — karar şartını teyit edin): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteği: repo oranının %40'i, azami 20 puan
 - Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin): yatırıma katkı %30; makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); faiz desteği: repo oranının %25'i, azami 12.5 puan
 - Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (profilinize göre engel yok — şartları teyit edin): yatırıma katkı %20; makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); faiz desteği: bu programda yalnızca 4, 5, 6. bölgelerde
+- Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (şarta bağlı): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteği: repo oranının %40'i, azami 20 puan
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - YATIRIM-İŞLETME DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
@@ -77,6 +78,7 @@
 - [Sanayi ve Teknoloji Bakanlığı] Teknoloji Hamlesi Programı (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi; Teknoloji Hamlesi'nde KOSGEB ve TÜBİTAK doğrudan destekleri serbest). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
 - [Sanayi ve Teknoloji Bakanlığı] Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
 - [Sanayi ve Teknoloji Bakanlığı] Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
+- [Sanayi ve Teknoloji Bakanlığı] Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
 - Not (kayıtlardaki hükümlerin karşılaştırması): KOSGEB ve TÜBİTAK doğrudan desteklerini serbest bırakan istisna yalnız Teknoloji Hamlesi Programı'nın hükmünde var; yukarıdaki diğer 9903 programlarında istisna yalnız sübvansiyonlu kredidir.
 
 **Bağlı programlar (kayıttan):**

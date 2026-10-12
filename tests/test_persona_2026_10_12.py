@@ -491,3 +491,30 @@ def test_uygulanmayan_fidan_tutari_ve_urun_maddesi_gosterilmez():
     d = N(kisit=["fidan kullanım desteği yalnız yeni meyve bahçesi/bağ tesisinde ...; çilek bu listede yok"])
     t = "Dekar başına 367,00 TL temel destek; fidan kullanım desteği ayrıca 734,00 TL/da (standart) veya 1.835,00 TL/da."
     assert "1.835" not in yerel_danisman._profile_uyan_tutar(t, d) and "367,00" in yerel_danisman._profile_uyan_tutar(t, d)
+
+
+def test_hibe_satiri_konuya_uyan_kapali_hibeyi_ilgisiz_acik_hibeden_once_anar():
+    from types import SimpleNamespace as N
+    kredi = N(tesvik=_t(kurum="Hazine", baslik="Ziraat Tarım Kredisi", tesvil_tutari="Hibe değil, faiz indirimi."),
+              karar="sartli", gerekce=[], teyit=[])
+    sera = N(tesvik=_t(kurum="Bakanlık", baslik="Sera Destekleri", tesvil_tutari="Örtüaltı alanı için 40 TL/da hibe"),
+             karar="sartli", gerekce=[], teyit=[])
+    kkydp = N(tesvik=_t(kurum="Bakanlık", baslik="KKYDP", tesvil_tutari="Yüzde 50 hibe",
+                        ozet="Basınçlı sulama ve damla sulama yatırımları"), karar="kapali", gerekce=[], teyit=[])
+    assert not yerel_danisman.hibe_mi(kredi.tesvik)
+    assert yerel_danisman.soru_konulari("Damla sulama sistemi kurmak için hibe var mı?") == ["damla", "sulama"]
+    s = yerel_danisman.hibe_satiri("Damla sulama sistemi kurmak için hibe var mı?", kredi, [kredi, sera], [kkydp])
+    assert "KKYDP şu an başvuruya kapalı" in s and "Sera Destekleri farklı bir gideri" in s
+    # Konu sözcüğü olmayan genel soruda açık hibe eskisi gibi gösterilir
+    s = yerel_danisman.hibe_satiri("Hibe var mı?", kredi, [kredi, sera], [kkydp])
+    assert s.startswith("Hibe (geri ödemesiz) tarafı: Sera Destekleri")
+
+
+def test_proje_bazli_tavan_hibesi_kredi_sayilmaz():
+    tss = _t(kurum="Tarım Bakanlığı", baslik="Tasarruflu Tarımsal Sulama Sistemleri (TSS) Hibe Desteği",
+             tesvil_tutari="Hibe oranı %50 (damla, yağmurlama); hibeye esas proje tutarı en fazla 10.000.000 TL",
+             uygunluk_kriterleri={"sektorler": ["tarim"], "tutar_niteligi": "proje_bazli_tavan"})
+    kredi = _t(kurum="Banka", baslik="Tarım Kredisi", tesvil_tutari="Faiz indirimi",
+               uygunluk_kriterleri={"tutar_niteligi": "faiz_destegi"})
+    assert yerel_danisman.hibe_mi(tss) and not yerel_danisman._kredi_mi(tss)
+    assert yerel_danisman._kredi_mi(kredi) and not yerel_danisman.hibe_mi(kredi)

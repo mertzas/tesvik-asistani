@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI** (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Kredi koşulları (hibe değil): Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
-- Diğer seçenekler: Ziraat Katılım Bankası Katılım Finans Destek Paketi (profilinize göre engel yok — şartları teyit edin); KGF Genel Destek Programı (profilinize göre engel yok — şartları teyit edin); TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: Ziraat Katılım Bankası Katılım Finans Destek Paketi (profilinize göre engel yok — şartları teyit edin); KGF Genel Destek Programı (profilinize göre engel yok — şartları teyit edin); DİJİTAL KEFALET DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin).
 - 1 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -49,9 +49,9 @@
 - **Başvuru:** Programa dahil 15 bankadan biri: Akbank, Anadolubank, Burgan Bank, Denizbank, Garanti BBVA, Halkbank, İşbankası, QNB, Şekerbank, TEB, TSKB, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-genel-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- DİJİTAL KEFALET DESTEK PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 - TKYB KREDİ DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 - KOSGEB Geri Ödemeli Destekleri (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: KOSGEB tarafından onaylanmış bir destek ödemesi almaya hak kazanmış KOBİ olmak); Sürekli
-- HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
@@ -67,8 +67,7 @@
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.
-Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
+Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

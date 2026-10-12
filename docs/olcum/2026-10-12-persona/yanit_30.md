@@ -3,7 +3,7 @@
 - Öne çıkan: **E-İhracat Destekleri (5986 Sayılı Karar)** (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Statü (Perakende E-Ticaret Sitesi ya da benzeri) almamış şirket yalnız şu kalemlerden yararlanır (kayıttan): dijital pazaryeri reklamı, sipariş karşılama, pazaryeri komisyonu, (önceki yıl 1 milyon USD üzeri ihracatla) çevrim içi mağaza; diğer kalemler statü şartlıdır.
 - Destek: %50 (dijital pazaryeri reklamı, e-ihracat tanıtımı ve sipariş karşılamada hedef ülkelerde %70); 2026 toplam yıllık üst limit şirketler için 73.990.019 TL
-- Diğer seçenekler: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (profilinize göre engel yok — şartları teyit edin); Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) (düşük olasılık — cironuz eşiğin altında); Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (profilinize göre engel yok — şartları teyit edin); Türk Eximbank E-İhracat Destek Kredisi (şarta bağlı); Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) (düşük olasılık — cironuz eşiğin altında).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: e-ticaret (NACE 47.91)
@@ -42,48 +42,27 @@
   - ☐ Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru — kurumdan teyit edin
   - ☐ Desteklenen ürünler Türk ürünü olmalı (ürün belgesi, üretim yeri ve marka ayrıntılarını E-İhracat Genelgesi'nden teyit edin) — resmî metin: “pazaryerlerinde Türk ürünlerinin ve markalarının çevrim”
   - ☐ Ön onay için WIPO Madrid Sistemi'ne taraf en az bir ülkede tescilli yurt dışı marka (yoksa önce 5973 m.4 Yurt Dışı Marka Tescil Desteği) — kurumdan teyit edin
-  - ☐ E-İhracat Konsorsiyumu bünyesindeyseniz, konsorsiyumun satış yaptığı ülkelerdeki yurt dışı pazaryerlerinde bu destek için başvuru yapamazsınız — resmî metin: “pazaryerlerinde dijital pazaryeri tanıtım, sipariş karşılama ve pazaryeri komisyon gideri desteklerine ilişkin olarak destek müracaatında bulunamazlar”
-  - ☐ Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) — resmî metin: “bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir”
+  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - Reklam giderleri yurt dışı pazaryerlerinde verilen dijital reklamlara ait olmalı ve reklamdan dönen toplam satışın %20'sini aşmamalı — resmî metin: “yurt dışı pazaryerleri üzerinden gerçekleştirdiği dijital reklam üzerinden dönen toplam satışlarının %20’sini aşmayan dijital pazaryeri tanıtım giderleri %50 oranında”
 - **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4
 
-**Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) — Ticaret Bakanlığı**
-- **Başvuru dönemi:** Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
-- **Sizin için:** Düşük olasılık — cironuz eşiğin altında — yıllık cironuz (20.000.000 TL), kaydın aradığı en az 1.000.000 USD ihracat eşiğinin TL karşılığından az; cironuzun tamamı ihracat olsa bile eşiğe ulaşmaz (1 USD 30 TL'nin üzerinde).
-- **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
-- **Karşıladığı ihtiyaç:** dijital dönüşüm, ihracat
-- **Destek:** %50; 2026 şirketler için yıllık 7.396.548 TL; ülke başına 3 yıl
-- **Hesaplama:** Uygun giderin %50'si; şirketler için 2026 yıllık en çok 7.396.548 TL
-- **Profilinize göre sağlanan şartlar:** şirket statüsü (limited şirket)
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır) — kurumdan teyit edin
-  - ☐ Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru — kurumdan teyit edin
-  - ☐ Desteklenen ürünler Türk ürünü olmalı (ürün belgesi, üretim yeri ve marka ayrıntılarını E-İhracat Genelgesi'nden teyit edin) — resmî metin: “pazaryerlerinde Türk ürünlerinin ve markalarının çevrim”
-  - ☐ Önceki yıl GB + BGB (e-ticaret) ihracat toplamı 1.000.000 ABD dolarının üzerinde olmalı — kurumdan teyit edin
-  - ☐ Pazaryeri hedef ülkelerden birinde olmalı — resmî metin: “hedef ülkelerin yurt dışı pazaryerlerinde çevrim içi mağaza açılmasına, bu mağazaların yıllık”
-  - ☐ Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) — resmî metin: “bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir”
-- **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-8
-
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Türk Eximbank E-İhracat Destek Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir); Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
+- Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) (Ticaret Bakanlığı) — düşük olasılık — cironuz eşiğin altında (yıllık cironuz (20.000.000 TL), kaydın aradığı en az 1.000.000 USD ihracat eşiğinin TL karşılığından az); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
 - Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Ödeme belgesi tarihinden itibaren 6 ay içinde
-- Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Pazara giriş belgesinin düzenlenme tarihinden (denetim/gözetimde rapor tarihinden, ruhsatlandırma ve kayıtta ödeme belgesi tarihinden) itibaren 6 ay içinde
-- Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Ödeme belgesi tarihinden itibaren 6 ay içinde
 
 **Birlikte kullanım (resmî metinden):**
 - [Ticaret Bakanlığı] Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) (resmî metin: "bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir")
-- [Ticaret Bakanlığı] Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) (resmî metin: "bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir")
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **İhracatçı birliği üyeliği** (E-İhracat Destekleri (5986 Sayılı Karar), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4), Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8)): Ürün grubunuzun ihracatçı birliğine üye olun; 5973 ve 5986 başvuruları üyesi olunan birliğin genel sekreterliğine yapılır.
-- **Ticaret Bakanlığı DYS kaydı** (E-İhracat Destekleri (5986 Sayılı Karar), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4), Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8)): Destek Yönetim Sistemi'ne (DYS) şirket kaydı; MERSİS bilgileri ve NACE kodu güncel olmalı.
-- **Harcamadan önce ön onay** (E-İhracat Destekleri (5986 Sayılı Karar), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4), Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8)): Bu programlarda ön onay tarihinden önce yapılan harcama desteklenmez; harcamayı planlamadan başvurun.
+- **İhracatçı birliği üyeliği** (E-İhracat Destekleri (5986 Sayılı Karar), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Ürün grubunuzun ihracatçı birliğine üye olun; 5973 ve 5986 başvuruları üyesi olunan birliğin genel sekreterliğine yapılır.
+- **Ticaret Bakanlığı DYS kaydı** (E-İhracat Destekleri (5986 Sayılı Karar), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Destek Yönetim Sistemi'ne (DYS) şirket kaydı; MERSİS bilgileri ve NACE kodu güncel olmalı.
+- **Harcamadan önce ön onay** (E-İhracat Destekleri (5986 Sayılı Karar), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Bu programlarda ön onay tarihinden önce yapılan harcama desteklenmez; harcamayı planlamadan başvurun.
 - **Yurt dışı marka tescili (Madrid Sistemi)** (Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Madrid Sistemi'ne taraf en az bir ülkede marka tescili; masrafın bir kısmı 5973 m.4 Yurt Dışı Marka Tescil Desteği ile karşılanabilir.
 - **E-İhracat Destekleri (5986 Sayılı Karar):** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru
 - **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4):** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru
 - **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4):** Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır)
-- **Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8):** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru
-- **Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8):** Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır)
 
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: İhracatçı birliği üyeliği; Ticaret Bakanlığı DYS kaydı; Harcamadan önce ön onay.

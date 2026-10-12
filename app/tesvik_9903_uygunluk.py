@@ -82,7 +82,8 @@ def _tanim(tanim: str, sinir: int = 90) -> str:
 # MADDE 5/2: "asgari sabit yatırım tutarının; 1 inci ve 2 nci bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL"
 # (EK-3'te konu bazında ayrıca belirtilmemişse). EK-3 kalem şartı: "Sabit yatırım tutarı 100 Milyon TL ve üzerindeki",
 # "asgari 30 Milyon TL tutarındaki".
-_EK3_ASGARI = re.compile(r"(?:Sabit yatırım tutarı\s+|asgari\s+)(\d[\d.,]*)\s*(Milyon|Milyar)\s*TL", re.IGNORECASE)
+_EK3_ASGARI = re.compile(r"(?:Sabit yatırım tutarı\s+|asgari\s+|yalnız\s+)(\d[\d.,]*)\s*(Milyon|Milyar)\s*TL",
+                         re.IGNORECASE)
 
 
 def _tl(x: float) -> str:
@@ -161,6 +162,17 @@ def teknoloji_sinifi(nace: str | None) -> str | None:
 _KOD = re.compile(r"(?<![\d.])\d{2}(?:\.\d{1,2}){1,3}(?![\d])")
 
 
+_ISTISNA_KOD = re.compile(r"(\d[\d.,]*\s*Milyon TL üzerindeki [^,;]{3,60}?yatırımları) hariç olmak üzere "
+                          r"(\d{2}(?:\.\d{1,2}){1,3})")
+
+
+def _istisnali_dislama(sart: str) -> dict[str, str]:
+    """{kod: istisna} — "X üzerindeki modernizasyon yatırımları hariç olmak üzere KOD ... kodları desteklenmez"."""
+    if "desteklenmez" not in sart:
+        return {}
+    return {m.group(2): m.group(1) for m in _ISTISNA_KOD.finditer(sart)}
+
+
 def _ilgisiz_kod_dislamasi_cikar(sart: str, n: str) -> str:
     """"... 13.10.12 ve ... 13.92.06 kodları desteklenmez" cümlesi yalnız o alt kodlar içindir; profil kodu bunlardan
     değilse şart sayılmaz (hakem bulgusu 2026-10-12, 5. tur: halı 13.93'e "dışlama koşulu" soruluyordu)."""
@@ -198,6 +210,13 @@ def _ek3_durumu(nace: str) -> tuple[str, str]:
         return "bilinmiyor", f"NACE kodu kısım düzeyinde ({n}); EK-3 eşleşmesi için en az 2 haneli kod gerekir"
     kayit = ek3_kaydi(n)
     if kayit is not None:
+        istisna = _istisnali_dislama(kayit.get("sartlar") or "").get(
+            next((k for k in _istisnali_dislama(kayit.get("sartlar") or "") if _rakam(n).startswith(_rakam(k))), ""))
+        if istisna:
+            # "500 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.10.12 ... kodları desteklenmez":
+            # bu kodda yalnız eşiğin üzerindeki modernizasyon desteklenir (kesin ret değil).
+            return "sartli", (f"NACE {n}, EK-3'te '{kayit['kod']} {_tanim(kayit['tanim'])}' kaleminde bu kod desteklenmez; "
+                              f"istisna: yalnız {istisna} desteklenir")
         haric = _haric_kod(kayit, n)
         if haric:
             # "85 Eğitim ... 85.33, 85.4, 85.5 ve 85.6 hariç": hariç tutulan alt kol kesin desteklenmez (persona denemesi

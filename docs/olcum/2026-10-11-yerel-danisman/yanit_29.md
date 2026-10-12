@@ -6,6 +6,7 @@
 - Program: IPARD III kapsamında süt, kırmızı et, kanatlı eti ve yumurta üreten tarımsal işletmelerin yatırımları için geri ödemesiz kamu katkısı verilir. 12. Başvuru Çağrı İlanı kapsamında destek oranı %60-70, çağrı bütçesi 30.000.000 Avro'dur; 81 ilden başvuru yapılabilmiştir. Çağrı 07.09.2026'da kapanmıştır.
 - Kimler başvurabiliyordu (son çağrı): Başvuru sahibi gerçek veya tüzel kişi olmalı ve Ulusal Çiftçi Kayıt Sistemi ya da Ulusal Hayvan Kayıt Sistemi'ne kayıtlı olmalı; Başvuru sahibi (tüzel kişide temsil ve ilzama yetkili kişi) başvuru tarihinde 18 yaşını doldurmuş olmalı ve 65 yaşından büyük olmamalı; Vergi sistemine kayıtlı olmak, ödenmemiş vergi ve sosyal güvenlik borcu bulunmamak gerekir.
 - Bu kurumun diğer programları — size kapalı ya da başvuruya kapalı: IPARD III (program başvuruya açık değil (Tedbir 103'ün 2026 çağrısı (11. Başvuru Çağrı İlanı) 20.07.2026 18:00'da kapanmıştır), IPARD III (program başvuruya açık değil (2026 çağrı takviminde yer alan M7 …).
+- Adıyla eşleşen diğer kayıtlar: IPARD III — Tarım ve Balıkçılık Ürünlerinin İşlenmesi ve Pazarlanması ile İlgili Fiziki Varlıklara Yönelik Yatırımlar (Tedbir 103 / M3) (kapalı); IPARD III — Çiftlik Faaliyetlerinin Çeşitlendirilmesi ve İş Geliştirme (Tedbir 302 / M7) (kapalı — yeni çağrı planlanıyor, tarih yok).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Profil girilmemiş: faaliyet, şirket türü, il ve ölçek **bilinmiyor**.

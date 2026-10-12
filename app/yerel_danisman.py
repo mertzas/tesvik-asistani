@@ -33,8 +33,9 @@ from app.ihtiyac import IHTIYAC_ADLARI, _katla, program_ihtiyaclari, soru_ihtiya
 EN_COK_KART = 3          # persona denemesi 2026-10-12: dar sorularda 4 kart yanıtı 15 KB'a çıkarıyordu
 ODAK_KART = 3            # soru belirli programları/kurumu andıysa yalnız onların kartı
 EN_COK_DIGER = 3         # kart dışındaki ilgili programlar tek satırda
+EN_COK_ELENEN = 6        # "size kapalı" listesinde satır
 TRIYAJ_KART = 3          # kritik profil alanları eksikken gösterilen kart
-EN_COK_TEYIT = 6
+EN_COK_TEYIT = 4         # tur 7 sonrası: kart başına teyit kutusu (kalanı panelde)
 EN_COK_KURAL = 3
 EN_COK_BELGE = 8
 ALINTI_SINIRI = 180      # daha uzun alıntı gösterilmez (yarıda kesilmiş alıntı yanıltır)
@@ -1122,7 +1123,11 @@ def degerlendir(kayitlar: list, profil, notlar: dict[int, str], eslesme: dict[in
                 # kilitlemez; şartlı gösterilir (hakem bulgusu 2026-10-12: "idari adım kilit şart sayılmış").
                 # Dışlama şartı ("konsorsiyum üyesi olmamak", "... yararlanamaz") varsayılan olarak sağlanır; kilit değil
                 # (hakem bulgusu 2026-10-12: sipariş karşılama kartında "kilit şart" diye gösteriliyordu).
-                if _KILIT.search(m["metin"]) and not re.search(r"ihracatçı birliğine üye", m["metin"], re.I) \
+                # "Genç girişimci kategorisi: ..." gibi isteğe bağlı alt kategori şartı programın genel şartı değildir;
+                # teyit listesinde kalır, kilit sayılmaz (hakem bulgusu 2026-10-12, 5-7. tur: esnaf kredisinde "önemli
+                # şart" olarak genç girişimci kategorisi gösteriliyor, kredi şahıs işletmesinin yanıtına girmiyordu).
+                if _KILIT.search(m["metin"]) and not re.match(r"\s*[^:]{2,40} kategorisi(?: için)?:", m["metin"]) \
+                        and not re.search(r"ihracatçı birliğine üye", m["metin"], re.I) \
                         and not re.search(r"olmamak|olmaması|olmamalı|yararlanamaz|kapsam dışı|desteklenmez|"
                                           r"başvuramaz|faydalanamaz|yapamaz|bünyesindeyseniz", m["metin"], re.I):
                     kilit.append(_kisalt(_temiz(m["metin"]), 150))
@@ -1378,7 +1383,11 @@ def elenen_satirlari(elenen: list[Degerlendirme]) -> list[str]:
     for (karar, gerekce), ds in gruplar.items():
         adlar = "; ".join(f"{d.tesvik.baslik} ({d.tesvik.kurum})" for d in ds)
         etiket = karar_etiketi(ds[0]).lower() if karar == "kapali" else "uygun değil"
-        satir.append(f"- {adlar} — {etiket}: {gerekce}")
+        satir.append(f"- {adlar} — {etiket}: {_kisalt(gerekce, 260)}")
+    # En çok 6 satır; kalanı sayıyla (tur 7 sonrası: kapalı listesi tek başına 3-4,5 bin karakter tutuyordu).
+    if len(satir) > EN_COK_ELENEN:
+        kalan = sum(len(ds) for ds in list(gruplar.values())[EN_COK_ELENEN:])
+        satir = satir[:EN_COK_ELENEN] + [f"- ve {kalan} program daha (gerekçeleri programın adıyla sorabilirsiniz)."]
     return satir
 
 
@@ -2102,11 +2111,38 @@ def hibe_mi(t) -> bool:
         return True
     if _kredi_mi(t) or _VERGI_PROGRAMI.search(t.baslik or ""):
         return False
-    return bool(re.search(r"geri ödemesiz|\bhibe|TL/da\b|TL/dekar", t.tesvil_tutari or "", re.I)) and not re.search(
-        r"geri ödemeli\b", t.tesvil_tutari or "", re.I)
+    tutar = t.tesvil_tutari or ""
+    # "Hibe değil, faiz indirimi" (Hazine faizli tarım kredisi) hibe sayılmaz (tur 7 sonrası denemesi).
+    return bool(re.search(r"geri ödemesiz|\bhibe|TL/da\b|TL/dekar", tutar, re.I)) and not re.search(
+        r"geri ödemeli\b|hibe değil|hibe/ödeme değil", tutar, re.I)
 
 
-def hibe_satiri(soru: str, ilk, adaylar: list) -> str:
+# Sorunun konusunu taşımayan genel sözcükler (hibe sorusunda konu eşleşmesi için).
+_GENEL_SOZCUK = re.compile(
+    r"^(?:destek\w*|hibe\w*|kredi\w*|kurma\w*|kurul\w*|almak|alabil\w*|alır\w*|istiyor\w*|sistem\w*|devlet\w*|"
+    r"program\w*|başvur\w*|yatırım\w*|yapmak|yapabil\w*|nasıl|nedir|hangi\w*|var\w*|mıyım|miyim|olur\w*|"
+    r"karşıla\w*|geri|ödeme\w*|ödemesiz|işletme\w*|firma\w*|şirket\w*|bizim|benim|bunun|şunun|olarak|kadar|"
+    r"teşvik\w*|para\w*|tutar\w*|ücret\w*)$")
+
+
+def soru_konulari(soru: str) -> list[str]:
+    """Sorunun konu sözcükleri (5+ harf, genel soru/teşvik sözcükleri hariç)."""
+    return [k for k in re.findall(r"[a-zçğıöşü]{5,}", _katla(soru)) if not _GENEL_SOZCUK.match(k)]
+
+
+def konu_eslesir(soru: str, t) -> bool:
+    """Programın başlık/özet/tutar/şart metni sorunun konu sözcüklerinden birini (6 harflik kök) taşıyor mu? Konu
+    sözcüğü yoksa True (2026-10-12: damla sulama hibesi sorusunda ilgisiz sera hibesi "hibe tarafı" diye
+    gösteriliyordu)."""
+    konu = soru_konulari(soru)
+    if not konu:
+        return True
+    metin = _katla(" ".join([t.baslik or "", t.ozet or "", t.tesvil_tutari or ""]
+                            + [m.get("metin", "") for m in t.kontrol_listesi or []]))
+    return any(k[:6] in metin for k in konu)
+
+
+def hibe_satiri(soru: str, ilk, adaylar: list, kapali: list | None = None) -> str:
     """"Kredi ya da hibe var mı?" sorusunda hibe tarafının hükmü (hakem bulgusu 2026-10-12, 5. tur: hibe yarısı
     cevapsız kalıyor, yanıtta yalnız kredi/kefalet kartları duruyordu ve hibe olmadığı söylenmiyordu)."""
     if not re.search(r"\bhibe", _katla(soru)) or hibe_mi(ilk.tesvik):
@@ -2114,7 +2150,17 @@ def hibe_satiri(soru: str, ilk, adaylar: list) -> str:
     sorulan = set(soru_ihtiyaclari(soru))
     hibeler = [d for d in adaylar if d is not ilk and hibe_mi(d.tesvik) and d.karar in ("sartli", "belirlenemedi")
                and (not sorulan or program_ihtiyaclari(d.tesvik) & sorulan)]
+    kapali_hibe = [d for d in kapali or [] if d.karar == "kapali" and hibe_mi(d.tesvik)
+                   and (not sorulan or program_ihtiyaclari(d.tesvik) & sorulan)]
+    konulu = [d for d in hibeler if konu_eslesir(soru, d.tesvik)]
+    kapali_konulu = [d for d in kapali_hibe if konu_eslesir(soru, d.tesvik)]
+    if hibeler and not konulu and kapali_konulu:
+        # Açık hibe sorunun konusunu karşılamıyor, konuya uyan hibe kapalı: önce kapalı olan adıyla söylenir.
+        return (f"Hibe (geri ödemesiz): sorunuzun konusuna uyan {', '.join(_kisa_ad(d.tesvik.baslik) for d in kapali_konulu[:2])}"
+                f" şu an başvuruya kapalı (yeni çağrıyı izleyin); açık hibe {_kisa_ad(hibeler[0].tesvik.baslik)} farklı "
+                "bir gideri karşılar.")
     if hibeler:
+        hibeler = konulu or hibeler
         hibeler.sort(key=lambda x: -gider_kalemi_eslesmesi(soru, x.tesvik))
         d = hibeler[0]
         kalem_soruda = any(re.search(sk, _katla(soru)) for sk, _ in _GIDER_KALEMLERI)
@@ -2124,8 +2170,14 @@ def hibe_satiri(soru: str, ilk, adaylar: list) -> str:
                     f"{_kisa_ad(d.tesvik.baslik)} farklı bir gideri karşılar: {_cumle_kisalt(d.tesvik.tesvil_tutari, 140)}")
         return (f"Hibe (geri ödemesiz) tarafı: {_kisa_ad(d.tesvik.baslik)} — {karar_etiketi(d).lower()}"
                 + (f" ({_kisa_neden(d)})" if d.karar == "belirlenemedi" and _kisa_neden(d) else "") + ".")
-    return ("Hibe (geri ödemesiz): sorunuza ve profilinize açık kayıtlı bir hibe programı bulamadım; aşağıdaki programlar "
-            "geri ödemesiz destek değildir (kredi, kefalet, vergi avantajı, eğitim ya da yatırım).")
+    # Soruya uyan ama şu an kapalı hibe programı varsa adıyla söylenir (hakem bulgusu 7. tur: sulama/sera hibesi
+    # sorusunda IPARD ve KKYP gibi kapalı hibeler hiç anılmıyordu).
+    kapali_hibe = kapali_konulu or kapali_hibe
+    return ("Hibe (geri ödemesiz): sorunuza ve profilinize açık kayıtlı bir hibe programı bulamadım"
+            + (f"; {', '.join(_kisa_ad(d.tesvik.baslik) for d in kapali_hibe[:2])} şu an başvuruya kapalı (yeni çağrıyı "
+               "izleyin)" if kapali_hibe else "")
+            + "; aşağıdaki programlar geri ödemesiz destek değildir (kredi, kefalet, vergi avantajı, eğitim ya da "
+              "yatırım).")
 
 
 def _soruyu_one_al(satir: list[str], niyet: set[str]) -> list[str]:
@@ -2197,7 +2249,11 @@ def _soruya_en_ilgili(maddeler: list[str], soru: str) -> str:
 def _kredi_mi(t) -> bool:
     """Kredi/kefalet ürünü (hibe değil): limit "destek" diye sunulmaz."""
     from app.matching import _kredi_kefaleti_mi
-    return (t.kurum in ("KGF", "Türk Eximbank") or _kredi_kefaleti_mi(t)
+    # "proje_bazli_tavan" toplama girmez ama kredi değildir (KKYP/TSS hibesi kredi sayılıp hibe satırından düşüyordu,
+    # 2026-10-12); açık nitelik varsa yalnız kredi/kefalet/faiz desteği kredi sayılır.
+    nitelik = (t.uygunluk_kriterleri or {}).get("tutar_niteligi")
+    return (t.kurum in ("KGF", "Türk Eximbank")
+            or (nitelik in ("kredi_kefalet", "faiz_destegi") if nitelik else _kredi_kefaleti_mi(t))
             or (getattr(t, "basvuru_bicimi", None) or "") in ("kredi", "kefalet"))
 
 
@@ -2338,9 +2394,25 @@ def kisa_cevap(niyet: set[str], odak: list[Degerlendirme], adaylar: list[Degerle
                        ("şarta bağlı", [x for x in odak[1:] if x.karar == "belirlenemedi"]),
                        ("size kapalı ya da başvuruya kapalı", kurum_ozeti_kapali(odak))]
             parca = [f"{ad}: " + ", ".join(f"{_kisa_ad(x.tesvik.baslik)}" + (
-                f" ({_kisa_neden(x)})" if ad != "engel yok" and _kisa_neden(x) else "") for x in xs[:4])
-                + (f" ve {len(xs) - 4} program daha" if len(xs) > 4 else "") for ad, xs in gruplar if xs]
+                f" ({_kisa_neden(x)})" if ad != "engel yok" and _kisa_neden(x) else "") for x in xs[:3])
+                + (f" ve {len(xs) - 3} program daha" if len(xs) > 3 else "") for ad, xs in gruplar if xs]
             satir.append("- Bu kurumun diğer programları — " + "; ".join(parca) + ".")
+        if odak_turu == "kurum" and profil is not None:
+            # İlk satır kurum geneli hükümdür (hakem bulgusu 2026-10-12, 5-7. tur: "KOSGEB'den destek var mı" sorusunda
+            # yanıt bir program adıyla başlıyordu; "açık olan X, kapalı olanlar Y" hükmü yoktu).
+            kurum = " ve ".join(dict.fromkeys(x.tesvik.kurum for x in odak))
+            acik = [x for x in odak if x.karar == "sartli" and not re.search(r"parasal destek değil",
+                                                                               x.tesvik.tesvil_tutari or "")]
+            sartli = [x for x in odak if x.karar == "belirlenemedi"]
+            kapali = [x for x in odak if x.karar in ("kapali", "uygun_degil")]
+            if acik:
+                hukum = (f"{kurum} programlarından {len(acik)} tanesi profilinize göre engelsiz görünüyor ("
+                         + ", ".join(_kisa_ad(x.tesvik.baslik) for x in acik[:2]) + ")")
+            else:
+                hukum = f"{kurum}'da profilinize engelsiz açık, parasal destek veren bir program görünmüyor"
+            hukum += (f"; {len(sartli)} program şarta bağlı" if sartli else "") + (
+                f", {len(kapali)} program size ya da başvuruya kapalı" if kapali else "") + "."
+            satir.insert(1, f"- Kısa hüküm: {hukum}")
         elif len(odak) > 1:
             satir.append("- Adıyla eşleşen diğer kayıtlar: " + "; ".join(
                 f"{x.tesvik.baslik} ({karar_etiketi(x).lower()})" for x in odak[1:4]) + ".")
@@ -2386,10 +2458,13 @@ def kisa_cevap(niyet: set[str], odak: list[Degerlendirme], adaylar: list[Degerle
                  + (f" ({_birlestir(ilk.gerekce[:1])})" if ilk.karar == "belirlenemedi" and ilk.gerekce else "")
                  + (f"; başlıca şart: {_kisalt(bascilik, 170).rstrip('.')}" if bascilik else "")
                  + f"; {takvim_metni(ilk, bugun, kisa=True)}.")
+    konu = konu_satiri(soru, adaylar[:EN_COK_KART] + list(tum_adaylar or []))
+    if konu:
+        satir.append(f"- {konu}")
     statusuz = statusuz_kalem_satiri(ilk.tesvik)
     if statusuz:
         satir.append(f"- {statusuz}")
-    hibe = hibe_satiri(soru, ilk, list(tum_adaylar or adaylar))
+    hibe = hibe_satiri(soru, ilk, list(tum_adaylar or adaylar), elenen)
     if hibe:
         satir.append(f"- {hibe}")
     oran = sigorta_orani_satiri(ilk.tesvik, profil) if "sigorta" in sorulan else ""
@@ -2452,7 +2527,7 @@ def kisa_cevap(niyet: set[str], odak: list[Degerlendirme], adaylar: list[Degerle
             d = ilgili[0]
             satir.append(f"- Sorunuza doğrudan yönelik ama size kapalı: {d.tesvik.baslik} — "
                          f"{_kisalt(_birlestir(d.gerekce[:1]), 220)}.")
-    ozette = set(map(id, kurum_ozeti_kapali(odak)[:4])) if odak_turu == "kurum" else set()
+    ozette = set(map(id, kurum_ozeti_kapali(odak)[:3])) if odak_turu == "kurum" else set()
     kalan = [d for d in elenen if id(d) not in ozette]
     if kalan:
         satir.append(f"- {len(kalan)} program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).")
@@ -2475,10 +2550,34 @@ _GIDER_KALEMLERI = (
     (r"makine|ekipman|firin|cnc|tezgah", r"makine|teçhizat|ekipman"),
     (r"komisyon", r"komisyon"),
     (r"sertifika|belgelendirme", r"sertifika|belgelendirme"),
+    # "uygun faizli kredi": TCMB kaynaklı, faizsiz ya da faiz destekli ürün (hakem bulgusu 5-7. tur: zeytinyağı
+    # ihracatçısına makine yatırım kredisi öne çıkıyor, Reeskont/SÖİF/İhracat Destek Finansmanı görünmüyordu)
+    (r"uygun faiz|dusuk faiz|faizsiz|ucuz kredi|faiz destegi|faiz indirimi", r"TCMB|reeskont|faizsiz|faiz desteği|"
+     r"uygun maliyet|faiz indirimi|sübvanse"),
 )
 
 
 _OLUMSUZ = re.compile(r"\bdeğil|kapsam dışı|desteklenmez", re.I)
+
+
+# Soruda geçen konu ↔ kredi/destek tablosundaki ilgili satır (hakem bulgusu 2026-10-12, 4-7. tur: damla sulama
+# sorusunda Hazine faizli tarım kredisinin "Basınçlı sulama sistemi kullanımı" ek indirim satırı hiç gösterilmiyordu).
+_KONU_SATIRI = ((r"damla|sulama|yagmurlama|basincli", r"Basınçlı sulama[^-.;|\n]{0,40}-\s*\d+"),)
+
+
+def konu_satiri(soru: str, kartlar: list) -> str:
+    s = _katla(soru)
+    for soru_k, kayit_k in _KONU_SATIRI:
+        if not re.search(soru_k, s):
+            continue
+        for d in kartlar:
+            t = getattr(d, "tesvik", d)
+            metin = " ".join([t.tesvil_tutari or "", t.detay or ""] + [m.get("metin", "") for m in t.kontrol_listesi or []])
+            m = re.search(kayit_k, metin)
+            if m:
+                return (f"Sorunuzla ilgili satır ({_kisa_ad(t.baslik)}): kayıtta “{_temiz(m.group(0)).strip(' -')}” "
+                        "(tablodaki ek indirim satırı; uygulanacak oranı bankadan teyit edin).")
+    return ""
 
 
 def gider_kalemi_eslesmesi(soru: str, t) -> int:
@@ -2873,7 +2972,8 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
             # 2026-10-12: "yurt dışı reklam" sorusunda genç girişimci kredisi öne çıkıyordu).
             ihtiyac_disi = bool(soru_ihtiyac_seti) and not (p_ihtiyac & soru_ihtiyac_seti)
             ozel = (bool(etiket & set(k.get("target_group_tags") or [])) and k.get("exclusive_target_group")
-                    and not ihtiyac_disi and (not soru_ihtiyac_seti or kitle_soruda))
+                    and not ihtiyac_disi and (not soru_ihtiyac_seti or kitle_soruda)
+                    and not _buyuk_olcekli(d.tesvik, profil))   # 85 milyon TL limitli paket mikro işletmede öne çıkmaz
             kilitli = d.karar == "belirlenemedi" and any(g.startswith((KILIT_ONEKI,
                                                                         "düşük olasılık")) for g in d.gerekce)
             # henüz kurulmamış girişim için kurulu işletme isteyen program, adı soruyla eşleşse de öne çıkmaz
@@ -2926,7 +3026,12 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
         else:
             sinir = TRIYAJ_KART if triyaj else EN_COK_KART
             kartlar = ana[:sinir]
-            diger = ana[sinir:] + [d for d in adaylar if d not in ana]
+            # Üçüncü ve sonraki kart yalnız engelsiz ve sorudaki ihtiyaca uyuyorsa tam kart olur; değilse "Diğer ilgili"
+            # satırına iner (hakem bulgusu 2026-10-12, 4-7. tur: 12-17 KB yanıtların %60'ı kartlardı).
+            _sor = set(soru_ihtiyaclari(ihtiyac_sorusu))
+            kartlar = kartlar[:2] + [d for d in kartlar[2:] if d.karar == "sartli"
+                                     and (not _sor or program_ihtiyaclari(d.tesvik) & _sor)]
+            diger = [d for d in ana if d not in kartlar] + [d for d in adaylar if d not in ana]
         elenen = [d for d in ds if d.karar in ("uygun_degil", "kapali") and d not in kartlar]
         soru_ihtiyac_kume = set(soru_ihtiyaclari(ihtiyac_sorusu))
         if soru_ihtiyac_kume:
@@ -3004,7 +3109,7 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
                            else "") + f"; {takvim_metni(d, bugun, kisa=True)}" for d in diger]]
         if not adi_gecen_kayit and kurum_kayit:
             # kısa cevaptaki kurum özetinde gerekçesiyle anılanlar burada yinelenmez
-            _ozette = set(map(id, kurum_ozeti_kapali(odak)[:4]))
+            _ozette = set(map(id, kurum_ozeti_kapali(odak)[:3]))
             elenen = [d for d in elenen if id(d) not in _ozette]
         if elenen:
             bolum += ["", "**Size kapalı ya da başvuruya kapalı programlar:**" if profil is not None

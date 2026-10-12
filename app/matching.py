@@ -344,10 +344,23 @@ _ALT_SEKTOR_NACE = {
 _ALT_SEKTOR_SART = re.compile(r"(?:yalnız\s+)?([a-zçğıöşü ,ve]+?)\s+sektör(?:ünde|ündeki|ünde faaliyet)", re.I)
 
 
+# Başlığı ve kural maddesi belirli bir sektörü adlandıran 5973 programı: m.16 "Gemi ve yat sektöründeki şirketlerin
+# aldıkları tasarım hizmeti giderleri" (kayıt 306 kural maddesi, Karar metni). NACE Rev.2 30.1 gemi ve tekne yapımı,
+# 33.15 gemi ve teknelerin bakım-onarımı. Hakem bulgusu 2026-10-12, 7. tur: kayıt "genel" etiketli olduğu için halı,
+# zeytinyağı ve e-ticaret panellerinde görünüyordu.
+_BASLIK_SEKTORU = {"Gemi ve Yat Sektöründe": ("gemi ve yat", ("30.1", "33.15"))}
+
+
 def _alt_sektor_engeli(t, profil) -> str | None:
+    nace = re.sub(r"^[A-Z]\.", "", getattr(profil, "nace_kodu", None) or "")
+    for anahtar, (ad, kodlar) in _BASLIK_SEKTORU.items():
+        if anahtar in (t.baslik or ""):
+            if nace[:2].isdigit() and not any(nace.startswith(k) for k in kodlar):
+                return f"destek yalnız {ad} sektöründeki şirketlere (NACE {nace} kapsam dışı)"
+            if not nace[:2].isdigit() and (getattr(profil, "sektor", None) or "") not in ("", "imalat", "genel"):
+                return f"destek yalnız {ad} sektöründeki şirketlere"
     if t.kurum != "Ticaret Bakanlığı" or "10962" not in (t.baslik or ""):
         return None
-    nace = re.sub(r"^[A-Z]\.", "", getattr(profil, "nace_kodu", None) or "")
     if not nace[:2].isdigit():
         return None
     for metin in _sart_maddeleri(t):
@@ -628,7 +641,11 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20,
                 sektor_bonusu = 0.6
                 gerekce.append(f"Sektörünüz ({profil.sektor}) bu desteğin kapsamına uygun.")
             elif hedef_sektor:
-                sektor_bonusu = 0.3
+                # Etiketleri yalnız ihtiyaç türü (ihracat, Ar-Ge, e-ticaret) ve "genel" olan program (5973 fuar,
+                # tanıtım, marka tescil) için hedef eşleşmesi sektör eşleşmesi kadar güçlüdür; programın "sektörü"
+                # o ihtiyaçtır (hakem bulgusu 2026-10-12, 4-7. tur: ihracat hedefli halı ve zeytinyağı panelinde 5973
+                # tanıtım/fuar ailesi ilk 20'de yoktu, sektör etiketi taşıyan Eximbank kredileri öndeydi).
+                sektor_bonusu = 0.6 if tesvik_sektorler <= HEDEF_SEKTOR_ETIKETLERI | {"genel"} else 0.3
                 gerekce.append(f"Hedefiniz ({_etiketler(sorted(hedef_sektor))}) bu desteğin alanına giriyor.")
             else:
                 sektor_bonusu = 0.2
@@ -855,6 +872,7 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20,
 
         # Ceza 1,0 tavanından SONRA düşülür: tavan öncesi düşülse 1,3 -> 1,25 -> 1,0 olur, etkisi kalmaz.
         ceza = 0.0
+        sira_cezasi = 0.0
         if _kosgeb_onayina_bagli_mi(t):
             ceza = KOSGEB_BAGIMLI_CEZA
             eksik.append(KOSGEB_BAGIMLI_NOTU)
@@ -886,6 +904,17 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20,
                 ceza += 0.3
                 eksik.append(f"Kaydın aradığı en az {usd[0]:,.0f} USD {usd[1]} eşiği yıllık cironuzun üzerinde."
                              .replace(",", "."))
+        if ilgi_cezalari and re.search(r"Teknoloji Geliştirme Bölgesi|Teknopark", t.baslik or "") \
+                and not _arge_sinyali(profil, profil_hedefler):
+            # Teknopark vergi istisnaları yalnız bölgede Ar-Ge/yazılım faaliyeti yürüten firmalar içindir (hakem bulgusu
+            # 5-7. tur: sürücü kursu panelinin ilk 10'unda iki teknopark kaydı).
+            ceza += 0.3
+            eksik.append("Yalnız teknoloji geliştirme bölgesinde Ar-Ge/yazılım faaliyeti yürüten firmalar içindir.")
+        if ilgi_cezalari and "finansman" not in profil_hedefler and profil_hedefler and _yd._kredi_mi(t):
+            # Hedefinde finansman olmayan profilde kredi/kefalet ürünü hibe ve destek programlarının arkasında
+            # (4-7. tur: halı panelinde 3-16. sıralar 12 Eximbank kredisiydi). Yalnız sıralama: görünen uygunluk
+            # skoru değişmez (KOSGEB'e bağlı paketin asıl programdan 0,05 geride kalma kuralı korunur).
+            sira_cezasi += 0.25
         if ilgi_cezalari and kriterler.get("kurucu_yasi_max") and getattr(profil, "kurucu_yasi", None) is None:
             # Yaş şartlı ürün (genç girişimci kredisi) yaşı bilinmeyen profilde lider olmasın (otel denemesi).
             ceza += 0.2
@@ -898,7 +927,7 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20,
             gorunen = 0.05
         sonuclar.append(TesvikEslesmeSonucu(
             tesvik=t, skor=round(max(gorunen, 0.0), 2), gerekce=gerekce, eksik_kriterler=eksik,
-            ince_skor=score_program(sirket, program).total_score, siralama=round(skor - ceza, 3)))
+            ince_skor=score_program(sirket, program).total_score, siralama=round(skor - ceza - sira_cezasi, 3)))
 
     # Skor esitliginde veritabani ekleme sirasina (id) gore rastgele/anlamsiz
     # bir siralama olusmasin diye ikincil olarak baslige gore alfabetik

@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI** (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Kredi koşulları (hibe değil): Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
-- Diğer seçenekler: Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (şarta bağlı); Yapay Zekâ Kredi Programı (şarta bağlı); HALKBANK İLK ADIM KREDİSİ PROJESİ (şarta bağlı).
+- Diğer seçenekler: DİJİTAL KEFALET DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin); KGF Genel Destek Programı (profilinize göre engel yok — şartları teyit edin); Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (şarta bağlı).
 - 1 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -26,45 +26,35 @@
   - Kefalet talepleri yalnız TL cinsinden yapılır — resmî metin: “Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır.”
 - **Başvuru:** Kredi veren bankalar: Akbank, Denizbank, Garanti BBVA, Halkbank, QNB Bank, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım (yalnızca TL kefalet) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi
 
-**Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı**
-- **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)
-- **Sizin için:** Şarta bağlı — Karar metnine göre ön değerlendirme: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ; kayıtlarımızda yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7).
-- **Karşıladığı ihtiyaç:** makine/tesis yatırımı
-- **Destek unsurları (Karar metninden, bölgenize göre):** vergi indirimi: yatırıma katkı oranı %50, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 8 yıl (MADDE 18/3, 2. bölge); faiz/kâr payı desteği: repo oranının %40'i, azami 20 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı, azami 5 yıl (MADDE 15); makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteğiyle birlikte alınamaz (MADDE 16); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Asgari sabit yatırım tutarı 2. bölgede 12 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez
-  - ☐ Desteklenecek yatırım konuları il bazlı 'yerel yatırım konuları listesi' ile tebliğle belirlenir; program Kalkınma Ajansları Genel Müdürlüğünce yürütülür (MADDE 7). — resmî metin: “çerçevesinde her il özelinde belirlenecek dört yatırım konusunun yer aldığı, Bakanlık tebliği ile yayımlanacak olan listeyi”
-  - ☐ Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2). — resmî metin: “1 inci ve 2 nci bölgelerde 12 milyon TL, diğer bölgelerde ise 6 milyon TL olması gerekir.”
-  - ☐ Yatırımlar Yerel Kalkınma Hamlesi Programı Değerlendirme Komitesince proje bazında değerlendirilir; yalnız uygun görülen projeler için teşvik belgesi düzenlenir. — resmî metin: “Yerel Kalkınma Hamlesi Programı Değerlendirme Komitesi tarafından proje bazında değerlendirilir ve uygun görülen projeler için teşvik belgesi düzenlenir.”
-- **Kurallar (kayıttan):**
-  - Finansal kiralama yöntemiyle yapılacak yatırımlarda, kiralamaya konu makine ve teçhizatın toplam tutarının her bir finansal kiralama şirketi için asgari 3 milyon TL olması (MADDE 5/3).
-  - DİKKAT: teşvik belgesi müracaat tarihinden ÖNCE gerçekleştirilmiş yatırım harcamaları belge kapsamına ALINMAZ (MADDE 5/6) - harcamaya başlamadan önce başvurun. — resmî metin: “Teşvik belgesi düzenlenmesine ilişkin müracaat tarihinden önce gerçekleştirilmiş bulunan yatırım harcamaları teşvik belgesi kapsamına alınmaz.”
-  - Yerel Kalkınma Hamlesi kapsamında ve yatırımınıza vergi indirimi öngörülüyorsa: Bakanlıkça onaylanan bir ekosistem geliştirme planı yürütmeniz ve tamamlama vizesine kadar sabit yatırım tutarının en az %2'si kadar harcama yapmanız gerekir (taahhüt). — resmî metin: “sabit yatırım tutarının %2’sinden az olamaz. Vergi indirimi desteği öngörülmeyen yatırımlar için bu hüküm uygulanmaz.”
-- **Başvuru:** Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#yerel-kalkinma-hamlesi
-
-**Yapay Zekâ Kredi Programı — KOSGEB**
-- **Başvuru dönemi:** Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
-- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak.
+**DİJİTAL KEFALET DESTEK PROGRAMI — KGF**
+- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman.
 - **Karşıladığı ihtiyaç:** kredi/finansman
-- **Destek:** Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz); GO Dijital Cüzdan'a blokeli, bankadan Kesin Teminat Mektubu zorunlu (limit = teminat tutarı, en az 500.000 TL); geçerli Teknogirişim Rozeti şartı
+- **Kredi ve kefalet limitleri:** %80 kefalet; şahıs 2,2 Milyon / tüzel 5 Milyon TL; yıllık %2; başvuru ücreti 10.000 TL
+- **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.
+- **Kurallar (kayıttan):**
+  - Kredi bankanın kullandıracağı yeni ve ilave kredi olmalı; faaliyet konusu dışında döviz/kıymetli maden alımında veya refinansmanda kullanılamaz (kural, işaretlenmez) — resmî metin: “Program kapsamında kullandırılan krediler, yararlanıcıların faaliyet konuları dışında döviz veya kıymetli maden alımında ya da refinansman amacıyla kullanılamaz.”
+- **Başvuru:** Kredi veren bankalar: Akbank (krediler dijital kanallardan tahsis yöntemiyle kullandırılır) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/dijital-kefalet-destek-programi
+
+**KGF Genel Destek Programı — KGF**
+- **Başvuru dönemi:** Sürekli (banka şubesi üzerinden bireysel başvuru)
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Karşıladığı ihtiyaç:** kredi/finansman
+- **Kredi ve kefalet limitleri:** Hesaplama: Kredi tutarına göre değişen kefalet oranı; başvuru ücreti 3 milyon TL altı krediler için 5.000 TL, üzeri için 10.000 TL (reddedilirse iade edilmez). Yıllık komisyon %1,5.
 - **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (mikro işletme)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak — resmî metin: “KOSGEB sisteminde kayıtlı, işletme beyanının güncel ve aktif durumda bulunması”
-  - ☐ Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak — resmî metin: “Başvuru tarihi itibarıyla geçerli”
-  - ☐ GO Dijital Cüzdan hesabına sahip olmak — resmî metin: “GO Dijital Cüzdan”
+  - ☐ Kefalet yalnız bankanın kullandıracağı yeni ve ilave kredi için talep edilebilir — resmî metin: “sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir”
 - **Kurallar (kayıttan):**
-  - Kredi yalnız KOSGEB'in Hizmet Sağlayıcılar Listesi'ndeki sağlayıcılardan alınacak hizmet giderleri için kullanılır — resmî metin: “yer alan hizmet sağlayıcılardan alınacak hizmet giderleri ödemelerinde”
-- **Başvuru:** KOSGEB bilgi sistemi (www.kosgeb.gov.tr ve/veya e-Devlet) üzerinden Yapay Zeka Kredi Başvurusu — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9414/yapay-zek-kredi-programi
+  - Talep edilen kredinin döviz/altın/mücevher finansmanı amaçlı olmaması — resmî metin: “Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz.”
+- **Başvuru:** Programa dahil 15 bankadan biri: Akbank, Anadolubank, Burgan Bank, Denizbank, Garanti BBVA, Halkbank, İşbankası, QNB, Şekerbank, TEB, TSKB, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-genel-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — şarta bağlı (Karar metnine göre ön değerlendirme: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ; kayıtlarımızda yok)); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı)
+- Yapay Zekâ Kredi Programı (KOSGEB) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
 - HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
-- TURWIB PROGRAMI DESTEK PAKETİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Kadın yönetici bulunan işletme olmak (program amacı); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Yatırım-Proje Finansmanı Destek Paketi (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)
-
-**Birlikte kullanım (resmî metinden):**
-- [Sanayi ve Teknoloji Bakanlığı] Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
 
 **Yatırım teşvik belgesi (9903) — sistemin elediği ya da düşük olasılık gördüğü programlar** (Karar metnine göre; 'UYGUN DEĞİL' kesin, 'DÜŞÜK OLASILIK' teyit gerektirir):
 - Teknoloji Hamlesi Programı (9903 sayılı Karar): DÜŞÜK OLASILIK — faaliyet EK-1 orta-yüksek/yüksek teknoloji sınıfında değil; öncelikli ürün listesi bu sınıflar ve kritik ürünlerden oluşur (MADDE 2/i, 6)
@@ -74,24 +64,17 @@
 Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik Yatırımların Teşviki) 9903 sayılı Karar ile yürürlükten kalkmıştır; bu eski sistemlere başvurulamaz.
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **Kayıtlı elektronik posta (KEP) adresi** (Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)): Şirket adına bir KEP hizmet sağlayıcısından KEP adresi alın.
-- **Yatırım teşvik belgesi** (Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)): Yatırıma başlamadan önce Sanayi ve Teknoloji Bakanlığı E-TUYS üzerinden belge başvurusu.
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Yapay Zekâ Kredi Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
-- **Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar):** Teşvik belgesi müracaatımı E-TUYS üzerinden
-- **Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar):** Başvuru yeri: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)
-- **Yapay Zekâ Kredi Programı:** KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak
+- Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
 
 ### 4. Adım Adım Yol Haritası
-1. Diğer programlar için ayrıca: Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) — Kayıtlı elektronik posta (KEP) adresi, Yatırım teşvik belgesi; Yapay Zekâ Kredi Programı — KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
-2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-3. Belgeler (TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI): Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir).
-4. Başvuru kanalı (TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI): Kredi veren bankalar: Akbank, Denizbank, Garanti BBVA, Halkbank, QNB Bank, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım (yalnızca TL kefalet) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
-5. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim) · KOSGEB KONYA MÜDÜRLÜĞÜ: 0 (332) 310 19 30; Ferhuniye Mahallesi Mümtazkoru Sokak No:10/1 Selçuklu/KONYA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=42)
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+2. Belgeler (TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI): Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir).
+3. Başvuru kanalı (TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI): Kredi veren bankalar: Akbank, Denizbank, Garanti BBVA, Halkbank, QNB Bank, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım (yalnızca TL kefalet) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+4. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim) · KOSGEB KONYA MÜDÜRLÜĞÜ: 0 (332) 310 19 30; Ferhuniye Mahallesi Mümtazkoru Sokak No:10/1 Selçuklu/KONYA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=42)
+5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Planladığınız sabit yatırım tutarı nedir? — teşvik belgesi (9903) asgari sabit yatırım tutarının altındaki yatırıma düzenlenmez (kartlardaki teyit maddesi).
-2. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.
+1. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

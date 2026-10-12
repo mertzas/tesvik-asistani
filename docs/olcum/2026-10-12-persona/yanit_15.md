@@ -38,7 +38,7 @@
   - ☐ İşçinin, işten ayrıldığı işyerinde tekrar işe başlamaması — resmî metin: “İşçinin, işten ayrıldığı işyerinde tekrar işe başlaması halinde bu teşvik hükümlerinden yararlanılamaz.”
   - ☐ Aylık prim ve hizmet belgesinin yasal süresinde verilmesi, primlerin yasal süresinde ödenmesi — resmî metin: “aylık prim ve hizmet belgesinin yasal süresi içerisinde”
   - ☐ İşçi, işe alındığı tarihten önceki son altı ayda bildirilen ortalama sigortalı sayısına ilave olarak işe alınmalı — resmî metin: “özel sektör işverenleri tarafından işe alındığı tarihten önceki son altı aylık dönemde bildirilen ortalama sigortalı sayısına ilave olarak işe alınması”
-  - ☐ Özel sektör işvereni olmalısınız — resmî metin: “özel sektör işverenleri tarafından işe alındığı tarihten önceki son altı aylık dönemde”
+  - ve 1 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** SGK (e-Bildirge) — https://www.iskur.gov.tr/isveren/tesvikler/issizlik-odenegi-alanlara-yonelik-tesvik/
 
 **2026 Yılı Asgari Ücret Desteği (işveren sigorta primlerinden mahsup, İşsizlik Sigortası Fonu) — SGK / İŞKUR**
@@ -51,9 +51,7 @@
   - ☐ Primler yasal süresinde ödenmelidir. — resmî metin: “Primlerin yasal süresinde ödenmesi,”
   - ☐ Kuruma borç bulunmamalıdır (varsa yapılandırılmış/tecil ve taksitlendirilmiş ve düzenli ödenen olmalıdır). — resmî metin: “Kuruma borcun bulunmaması (varsa da yapılandırılmış/tecil ve taksitlendirilmiş olması ve düzenli ödenmesi),”
   - ☐ Destekten yararlanılan ayda, 2025 yılı Ocak-Aralık döneminde uzun vadeli sigorta kolları bildirimi yapılan aylar esas alınarak belirlenen eşiğin üzerinde sigortalı bildirimi yapılmalıdır (ayrıntı aşağıdaki maddede).
-  - ☐ Eşik: uzun vadeli sigorta kollarından en az sigortalı bildirimi yapılan aydaki/dönemdeki sigortalı sayısının üzerinde bildirimde bulunulmalıdır. — resmî metin: “uzun vadeli sigorta kollarından en az sigortalı bildirimi yapılan aydaki/dönemdeki sigortalı sayısının üzerinde bildirimde bulunulması,”
-  - ☐ Kayıt dışı sigortalı çalıştırılmamalı, sahte sigortalı bildirimi yapılmamalı, prime esas kazançlar eksik bildirilmemelidir. — resmî metin: “Kayıt dışı sigortalı çalıştırılmaması, sahte sigortalı bildiriminde bulunulmaması, sigortalıların prime esas kazançlarının eksik bildirilmemesi gerekmektedir.”
-  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
+  - ve 4 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - Kayıt dışı, sahte sigortalı veya eksik prime esas kazanç bildirimi tespit edilirse yararlanılan destek geri alınır ve sonraki dönemler için destek verilmez. — resmî metin: “Kayıt dışı sigortalı çalıştırıldığının, sahte sigortalı bildiriminin ya da eksik prime esas kazanç bildiriminin tespiti halinde faydalanılan asgari ücret desteği geri alınacaktır.”
 - **Başvuru:** Kaynak sayfada ayrı başvuru yeri belirtilmemiştir; destek, SGK'ya verilen aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi üzerinden prim ödemesinden mahsup edilir. — https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#asgari-ucret-destegi-2026

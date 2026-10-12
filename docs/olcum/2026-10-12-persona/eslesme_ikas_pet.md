@@ -38,12 +38,12 @@ profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'İstanbul', 'cal
 17. [0] KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-18. [0] İş Sağlığı ve Güvenliği Hizmetlerinin Desteklenmesi — 10'dan Az Çalışanlı Tehlikeli/Çok Tehlikeli İşyerlerine Ödeme (6331 sayılı Kanun m.7) — SGK / İŞKUR (aktif=True)
+18. [0] Mesleki Eğitim Devlet Katkısı (3308 sayılı Kanun Geçici 12. madde): MESEM, çırak ve staj ücretlerine İşsizlik Sigortası Fonu'ndan geri ödeme — Millî Eğitim Bakanlığı (MTEGM) / İŞKUR (İşsizlik Sigortası Fonu) (aktif=None)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-19. [0] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
+19. [0] İş Sağlığı ve Güvenliği Hizmetlerinin Desteklenmesi — 10'dan Az Çalışanlı Tehlikeli/Çok Tehlikeli İşyerlerine Ödeme (6331 sayılı Kanun m.7) — SGK / İŞKUR (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-20. [0] HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF (aktif=True)
-    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
-    eksik: İşletme sahibinin en çok 29 yaşında olması gerekir; yaşınızı profile girerseniz netleşir.
+20. [0] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.
+    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.

@@ -44,21 +44,10 @@
   - Vade azami 12 aydır. — resmî metin: “E-İhracat Destek Kredisi azami 12 ay vadeli olarak kullandırılır.”
 - **Başvuru:** Türk Eximbank; başvuru Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi
 
-**İhracat Destek Paketi — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: İhracatçı veya döviz kazandırıcı hizmetler sektöründe faaliyet göstermek (KOBİ ve KOBİ dışı firmalar yararlanabilir).
-- **Karşıladığı ihtiyaç:** ihracat
-- **Kredi ve kefalet limitleri:** Azami 24 ay vade (anapara ödemesiz dahil); reeskont kredilerinde kefalet %100; komisyon %1
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ İhracatçı veya döviz kazandırıcı hizmetler sektöründe faaliyet göstermek (KOBİ ve KOBİ dışı firmalar yararlanabilir) — resmî metin: “İhracatçı veya döviz kazandırıcı hizmetler sektörlerinde faaliyet gösteren KOBİ ve KOBİ dışı firmaların finansmanı amaçlanmaktadır.”
-- **Kurallar (kayıttan):**
-  - Kredi yalnız TL kullandırılır; işletme kredisinin en fazla %10’u nakit verilebilir (bilgi, işaretlenmez) — resmî metin: “Yararlanıcıya tahsis edilen işletme kredisinin azami %10’u işletme harcamalarında kullanılmak üzere nakit olarak verilebilecektir.”
-- **Başvuru:** Kredi veren bankalar: Akbank, Denizbank, Garanti Bankası, Eximbank, Halkbank, İş Bankası, Türk Ekonomi Bankası, QNB Finansbank, Vakıfbank, Yapı Kredi Bankası, Ziraat Bankası (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/i-hracat-destek-paketi
-
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- İhracat Destek Paketi (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı veya döviz kazandırıcı hizmetler sektöründe faaliyet göstermek (KOBİ ve KOBİ dışı firmalar yararlanabilir)); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
 - ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
-- Türk Eximbank İhracata Hazırlık Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ve faaliyet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur; 
-- Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik imalatçı-ihracatçı, ihracata yönelik mal üreten imalatçı ve ihracatçı vasfına haiz firmalar, Türkiye menşeli veya Dahilde İşleme Rejimi kapsamında ithal edilen malların ihracı için yararlanabilir); Dönemsel çağrı yoktur; geçerli kredi limiti olan firma kredi talep formu ve onaylı harcama listesiyle şubeye başvurur. Harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar olabilir.
+- Türk Eximbank Kısa Vadeli Alacak Sigortası (360 güne kadar vadeli ihracat alacaklarının ticari ve politik risklere karşı sigortası) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Yurt dışı satışlarında vadeli alacak yapısına sahip bütün ihracatçılar programdan yararlanabilir); Dönemsel çağrı yoktur; 
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Küresel Rekabetçilik Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 1. başvuru dönemi: kapandı (30.09.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)

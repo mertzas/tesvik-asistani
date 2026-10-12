@@ -1,5 +1,6 @@
 <!-- persona: ankara_imalat | soru: Ankara Kalkınma Ajansı'nın şu an açık bir programı var mı, son başvuru ne zaman? -->
 **Kısa cevap:**
+- Kısa hüküm: Ankara Kalkınma Ajansı'da profilinize engelsiz açık, parasal destek veren bir program görünmüyor, 1 program size ya da başvuruya kapalı.
 - **2026 Ankara Sosyal Girişimcilik Ekosistemi Kapasite Geliştirme Mali Destek Programı** (Ankara Kalkınma Ajansı)
 - Başvuru: TR51/26/ALT_SGE_Ö1 ve TR51/26/ALT_SGE_Ö2: başvuruya açık — yeni başvuru için son gün 16.10.2026 (4 gün kaldı).
 - Sizin için: **uygun değil** — başvuru sahibi türünüz (anonim şirket) şartta sayılmıyor — kayıttaki şart: “Öncelik 1 için uygun başvuru sahipleri: Kooperatifler, iktisadi işletmesi olan dernek ve vakıflar, sosyal işletmeler.”.

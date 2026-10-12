@@ -99,7 +99,8 @@ _BASLIK = {
     # Girişimcinin KENDİSİNE verilen programlar. Ekosistem tarafı hariç: 1612 uygulayıcı
     # kuruluş çağrısı, 1514 girişim sermayesi fonları, 1601 kapasite artırma (ölçüm 2026-10-07:
     # şirketsiz girişim sorusunda BiGG hiç gelmiyor, model "kaydım yok" diyordu).
-    "girisim": re.compile(r"bigg|girisimci destek|girisimcilik destek|girisimcilik egitim|ilk adim|teknogirisim|tohum|"
+    "girisim": re.compile(r"bigg|girisimci destek|girisimcilik destek|girisimcilik egitim|genc girisimci|ilk adim|"
+                          r"teknogirisim|tohum|"
                           r"kulucka"),
     "sigorta": re.compile(r"sigorta"),
     # Yalnız "marka" değil: "Şirket ve Marka Alım Desteği" bir satın alma desteğidir (persona denemesi 2026-10-12).

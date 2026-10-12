@@ -28,9 +28,7 @@
   - ☐ Tanıtımı yapılan ürünler Türkiye'de üretilmiş olmalı — resmî metin: “Türkiye’de üretilen ürünler ile ilgili yurt dışında gerçekleştirilen tanıtım ve pazarlama giderleri”
   - ☐ Tanıtım yapılacak ülkede kapsama alınmış yurt dışı birim yoksa: Türkiye'de tescilli marka ve tanıtım yapılacak ülkede marka tescili ya da tescil başvurusu olmalı — resmî metin: “yurt içi marka tescil belgesi bulunması ve tanıtım yapacağı ülkede marka tescil belgesine sahip ya da marka tescili için başvurulmuş olması koşuluyla”
   - ☐ Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz
-  - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız
-  - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız
-  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
+  - ve 4 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12
 
 **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) — Ticaret Bakanlığı**
@@ -46,8 +44,7 @@
   - ☐ Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru — kurumdan teyit edin
   - ☐ Desteklenen ürünler Türk ürünü olmalı (ürün belgesi, üretim yeri ve marka ayrıntılarını E-İhracat Genelgesi'nden teyit edin) — resmî metin: “pazaryerlerinde Türk ürünlerinin ve markalarının çevrim”
   - ☐ Ön onay için WIPO Madrid Sistemi'ne taraf en az bir ülkede tescilli yurt dışı marka (yoksa önce 5973 m.4 Yurt Dışı Marka Tescil Desteği) — kurumdan teyit edin
-  - ☐ E-İhracat Konsorsiyumu bünyesindeyseniz, konsorsiyumun satış yaptığı ülkelerdeki yurt dışı pazaryerlerinde bu destek için başvuru yapamazsınız — resmî metin: “pazaryerlerinde dijital pazaryeri tanıtım, sipariş karşılama ve pazaryeri komisyon gideri desteklerine ilişkin olarak destek müracaatında bulunamazlar”
-  - ☐ Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) — resmî metin: “bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir”
+  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - Reklam giderleri yurt dışı pazaryerlerinde verilen dijital reklamlara ait olmalı ve reklamdan dönen toplam satışın %20'sini aşmamalı — resmî metin: “yurt dışı pazaryerleri üzerinden gerçekleştirdiği dijital reklam üzerinden dönen toplam satışlarının %20’sini aşmayan dijital pazaryeri tanıtım giderleri %50 oranında”
 - **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4

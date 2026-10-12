@@ -42,19 +42,8 @@
   - Vade azami 12 aydır. — resmî metin: “E-İhracat Destek Kredisi azami 12 ay vadeli olarak kullandırılır.”
 - **Başvuru:** Türk Eximbank; başvuru Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi
 
-**ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110.
-- **Kapsam:** yalnız KOBİ'ler
-- **Karşıladığı ihtiyaç:** ihracat
-- **Kredi ve kefalet limitleri:** Azami 40 Milyon TL; %80 kefalet; 6 ay ödemesiz, 24 ay vade; komisyon kredinin %0,1'i (asgari 10 bin TL)
-- **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (mikro işletme)
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110 — resmî metin: “Son 3 mali dönemdeki ya da son mali yıldaki ihracatlarının toplamının ithalatlarının toplamına oranı %110 olan firmaları ifade etmektedir.”
-  - ☐ Asgari C seviyesinde aktif Greendeks skoruna sahip olmak — resmî metin: “Asgari C seviyesinde aktif Greendeks skoruna sahip”
-- **Kurallar (kayıttan):**
-  - Krediler TL işletme kredisi olarak, ihracat taahhütlü kullandırılır — resmî metin: “Krediler ihracat taahhütlü olarak kullandırılacaktır.”
-- **Başvuru:** Kredi veren bankalar: Ziraat Bankası (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-yesil-ihracat-kredisi-destek-paketii
+**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - KADIN GİRİŞİMCİ DESTEK PAKETİ (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)
@@ -71,7 +60,6 @@
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. Türk Eximbank E-İhracat Destek Kredisi: uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
-2. ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ: uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

@@ -5,7 +5,7 @@
 - Profilinize göre (12 çalışan) işletmeniz küçük işletme ölçeğinde; KOBİ programları için bölmeye gerek yok, doğru beyanla başvurun.
 - Öne çıkan: **Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit)** (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik dış ticaret sermaye şirketleri (DTSŞ), sektörel dış ticaret şirketleri (SDTŞ), imalatçı-ihracatçılar ve ihracatçılar yararlanabilir); Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Kredi koşulları (hibe değil): Hibe değil finansman (faizsiz bankacılık ilkelerine uygun): işlem bazında alt limit yoktur; KOBİ'lerde firma limiti azami yıllık net satış hasılatı veya mali bilanço tutarının yarısı, KOBİ dışı firmalarda 2 milyar 500 milyon TL'dir.
-- Diğer seçenekler: Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (profilinize göre engel yok — şartları teyit edin); KOBİ Dijital Dönüşüm Destek Programı (profilinize göre engel yok — şartları teyit edin); Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) (şarta bağlı).
+- Diğer seçenekler: Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (profilinize göre engel yok — şartları teyit edin); KOBİ Dijital Dönüşüm Destek Programı (profilinize göre engel yok — şartları teyit edin); Yeşil Mutabakata Uyum Projesi Desteği — Responsible® Programı (5973 sayılı Karar m.14) (şarta bağlı).
 - 1 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -58,8 +58,8 @@
 - **Başvuru:** KOSGEB KOBİ Bilgi Sistemi (online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı, imalatçı-ihracatçı, ihraç kaydıyla nihai mal üreten imalatçı, serbest bölgede mukim ve üçüncü ülkelere satış yapan firmalar ile döviz kazandırıcı hizmet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur; 
 - Yeşil Mutabakata Uyum Projesi Desteği — Responsible® Programı (5973 sayılı Karar m.14) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Son üç takvim yılında toplam 300.000 ABD Doları ve üzeri ihracat yapan imalatçı ve ihracatçı şirketler başvurabilir); Çağrı yoktur; programa kabul için DYS üzerinden başvurulur. Faz 1 harcamasının destek başvurusu, Faz 1 raporunun Bakanlıkça onaylandığı tarihten itibaren en geç 6 ay içinde yapılmalıdır.
+- Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı, imalatçı-ihracatçı, ihraç kaydıyla nihai mal üreten imalatçı, serbest bölgede mukim ve üçüncü ülkelere satış yapan firmalar ile döviz kazandırıcı hizmet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur; 
 - Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) (KOSGEB) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Hamle programına Bakanlığa ön başvuru yapılmış, kesin başvuruya davet edilmiş ve Program Portali üzerinden KOSGEB'e yönlendirilmiş olmalı); Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında belirlenen sürelerde
 
 **Size kapalı ya da başvuruya kapalı programlar:**

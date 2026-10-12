@@ -65,6 +65,16 @@ def resmi_mi(url: str) -> bool:
     return bool(RESMI.search((urlparse(url).hostname or "").lower()))
 
 
+def _kodlama(r) -> str:
+    """Sayfanın karakter kümesi. HTTP başlığında charset yoksa requests latin-1 varsayar; Resmî Gazete gibi windows-1254
+    sayfalar "ı" → "ý" bozulup alıntı doğrulaması düşüyordu (tur38, 2026-10-12): önce sayfanın meta charset'i."""
+    kod = r.encoding
+    if not kod or kod.lower() in ("iso-8859-1", "latin-1"):
+        m = re.search(rb"charset=[\"']?([\w-]+)", r.content[:4000], re.I)
+        kod = m.group(1).decode("ascii") if m else (r.apparent_encoding or "utf-8")
+    return kod
+
+
 def metin_al(url: str) -> tuple[str, str | None]:
     """URL'nin metni (önbellekli). HTML: görünür metin; PDF: metin katmanı."""
     import requests
@@ -83,7 +93,7 @@ def metin_al(url: str) -> tuple[str, str | None]:
             metin = "\n".join((p.extract_text() or "") for p in PdfReader(io.BytesIO(r.content)).pages)
         else:
             from bs4 import BeautifulSoup
-            s = BeautifulSoup(r.content.decode(r.encoding or r.apparent_encoding or "utf-8", errors="replace"), "html.parser")
+            s = BeautifulSoup(r.content.decode(_kodlama(r), errors="replace"), "html.parser")
             for x in s(["script", "style", "noscript"]):
                 x.decompose()
             metin = s.get_text("\n")
@@ -96,7 +106,9 @@ def metin_al(url: str) -> tuple[str, str | None]:
 
 def tarih_metinleri(g: str) -> list[str]:
     d = date.fromisoformat(g)
+    # Resmî Gazete ve bakanlık esasları sıfırsız gün/ay da yazar ("29/4/2026", "3.4.2026"; tur38).
     return [d.strftime("%d.%m.%Y"), f"{d.day}.{d.month:02d}.{d.year}", d.strftime("%d/%m/%Y"),
+            f"{d.day}/{d.month}/{d.year}", f"{d.day}.{d.month}.{d.year}",
             f"{d.day} {AYLAR[d.month - 1]} {d.year}", f"{d.day:02d} {AYLAR[d.month - 1]} {d.year}"]
 
 

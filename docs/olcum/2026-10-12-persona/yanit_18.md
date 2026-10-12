@@ -44,21 +44,6 @@
   - Kredi kartı ürünü nakit çekime kapalı olacaktır. — resmî metin: “Kredi kartı ürünü nakit çekime kapalı olacaktır.”
 - **Başvuru:** Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, TEB, Şekerbank, Anadolubank, ING Bank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi
 
-**Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) — KOSGEB**
-- **Başvuru dönemi:** Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında belirlenen sürelerde
-- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Hamle programına Bakanlığa ön başvuru yapılmış, kesin başvuruya davet edilmiş ve Program Portali üzerinden KOSGEB'e yönlendirilmiş olmalı.
-- **Kapsam:** yalnız: limited şirket, anonim şirket
-- **Destek:** Bağımsız değerlendirme desteği %100 oranında (geri ödemesiz), en fazla 50.000 TL; personel giderleri desteği %80 oranında (geri ödemeli), en fazla 10.000.000 TL; yatırım projesi süresi en fazla 24 ay
-- **Profilinize göre sağlanan şartlar:** sermaye şirketi (limited şirket)
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Hamle programına Bakanlığa ön başvuru yapılmış, kesin başvuruya davet edilmiş ve Program Portali üzerinden KOSGEB'e yönlendirilmiş olmalı
-  - ☐ KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmalı — resmî metin: “KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması”
-- **Kurallar (kayıttan):**
-  - İşletme iki destekten ayrı ayrı yararlanabilir veya aynı anda yararlanabilir — resmî metin: “İşletme bağımsız değerlendirme desteği ve personel giderleri desteğinden ayrı ayrı yararlanabileceği gibi, iki destekten aynı anda da yararlanabilir.”
-  - Personel desteği yalnızca yeni istihdam edilen personel için verilir
-  - Personel başına aylık destek üst limiti brüt asgari ücretin işverene toplam maliyetinin 2 katıdır — resmî metin: “Her bir personel için aylık destek üst limiti; 1 aylık brüt asgari ücretin işverene toplam maliyet tutarının 2 katıdır.”
-- **Başvuru:** Teknoloji Odaklı Sanayi Hamlesi Programı Program Portali üzerinden KOSGEB'e yönlendirme; KOSGEB KBS (KOBİ Bilgi Sistemi) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi
-
 **9903 programları bölgenize göre (Karar metninden; önce engelsiz ve şartlı, sonra en yüksek katkı):**
 - Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (profilinize göre engel yok — şartları teyit edin): yatırıma katkı %20; makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); faiz desteği: bu programda yalnızca 4, 5, 6. bölgelerde
 - Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (şarta bağlı): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteği: repo oranının %40'i, azami 20 puan
@@ -82,19 +67,16 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Kayıtlı elektronik posta (KEP) adresi** (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Şirket adına bir KEP hizmet sağlayıcısından KEP adresi alın.
 - **Yatırım teşvik belgesi** (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Yatırıma başlamadan önce Sanayi ve Teknoloji Bakanlığı E-TUYS üzerinden belge başvurusu.
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında)): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar):** Teşvik belgesi müracaatımı E-TUYS üzerinden
 - **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar):** Başvuru yeri: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)
-- **Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında):** KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmalı
 
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: Kayıtlı elektronik posta (KEP) adresi; Yatırım teşvik belgesi.
-2. Diğer programlar için ayrıca: Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) — KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
-3. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-4. Belgeler (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): E-TUYS yetkilendirmesi için Dilekçe, Taahhütname ve Kullanıcı Yetkilendirme Formu (Bakanlığın KEP adresine Kayıtlı Elektronik Posta ile gönderilir).
-5. Başvuru kanalı (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#hedef-yatirimlar. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
-6. İletişim (doğrulanmış): KOSGEB KAYSERİ MÜDÜRLÜĞÜ: 0 (352) 315 44 99; Organize Sanayi Bölgesi 9.Cad No:1/A Anbar/KAYSERİ (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=38)
-7. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+3. Belgeler (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): E-TUYS yetkilendirmesi için Dilekçe, Taahhütname ve Kullanıcı Yetkilendirme Formu (Bakanlığın KEP adresine Kayıtlı Elektronik Posta ile gönderilir).
+4. Başvuru kanalı (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#hedef-yatirimlar. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+5. İletişim (doğrulanmış): KOSGEB KAYSERİ MÜDÜRLÜĞÜ: 0 (352) 315 44 99; Organize Sanayi Bölgesi 9.Cad No:1/A Anbar/KAYSERİ (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=38)
+6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. Planladığınız sabit yatırım tutarı nedir? — teşvik belgesi (9903) asgari sabit yatırım tutarının altındaki yatırıma düzenlenmez (kartlardaki teyit maddesi).

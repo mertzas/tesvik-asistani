@@ -8,7 +8,7 @@
 - Destek: Gelir vergisi istisnası (hibe/ödeme değil, vergi avantajı): istisna kapsamındaki kazançlar toplamı, tarifenin dördüncü gelir diliminde yer alan tutarı (2025 için 4.300.000 TL, 2026 için 5.300.000 TL) aşmadığı sürece gelir vergisi ödenmez ve bu kazançlar için yıllık gelir vergisi beyannamesi verilmez.
 - Diğer seçenekler: KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi (profilinize göre engel yok — şartları teyit edin); 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) (şarta bağlı).
 - Sorunuza doğrudan yönelik ama size kapalı: ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ — KGF programları kayıtlı bir işletme gerektirir.
-- 5 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
+- 7 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: Ar-Ge / bilişim (NACE 62.01)
@@ -45,19 +45,14 @@
   - Sınıf ortamındaki eski (2010-2020) uygulamalı girişimcilik eğitimi katılım belgeleri 31 Aralık 2020'ye kadar geçerliydi; bunlar artık geçerli değildir, online eğitim alınmalıdır. — resmî metin: “2010-2020 yılları arasında sınıf ortamındaki eğitim sonucunda alınan uygulamalı girişimcilik eğitimi katılım belgeleri, 31 Aralık 2020 tarihine kadar geçerliliğini koruyacak.”
 - **Başvuru:** KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi
 
-**1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) — TUBITAK**
-- **Başvuru dönemi:** 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı: başvuruya açık — bu çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS) — ön kayıt son günü 17.11.2026 (36 gün kaldı); başvuru kapanışı 20.11.2026 (39 gün kaldı). Not: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS). (duyuru: https://tubitak.gov.tr/sites/default/files/2026-08/2026_1_BIGG_Tohum_Yatirim_Cagri_Duyuru_Metni.pdf, doğrulama 10.10.2026)
-- **Sizin için:** Şarta bağlı — açık çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); bu koşulu sağlamıyorsanız sizin için açık çağrı kayıtlarımızda yok; Sektörünüz (arge) bu desteğin kapsamına uygun.
-- **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
-- **Son bilinen tutar (önceki program, bilgi için):** BiGG Fonu hisse karşılığı yatırım: 1.350.000 TL (2026); +600.000 TL GCİP ek yatırım imkânı (2025'ten itibaren) (son bilinen tutar, önceki program 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) kaydından; 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) için güncel tutarı kurumdan teyit edin)
-- **Profilinize göre sağlanan şartlar:** başka şirkette ortaklık olmaması (profilinize göre)
-- **Kurallar (kayıttan):**
-  - Mükemmeliyet Mührü alan girişimciden şirket kurması istenir; şirket, Aşama 2 destek tutarı karşılığında en fazla %5 hisseyi TÜBİTAK BiGG fonuna devretmeyi kabul eder — resmî metin: “Kuruluş, Aşama 2’de destek kapsamına alınan tutar karşılığında en fazla %5 hissesi için TÜBİTAK BiGG fonu ile yatırım sözleşmesi yapar.”
-- **Başvuru:** PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim
+**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) (TUBITAK) — şarta bağlı (Sektörünüz (arge) bu desteğin kapsamına uygun); 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı yalnız şunlar için açık: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); yeni başvuranlar için açık çağrı kayıtlarımızda yok (kurum duyurularından takip edin)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
-- 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) (TUBITAK) — kapalı: program başvuruya açık değil (TÜBİTAK, BiGG 1. aşamasını 2026-2028 döneminde 1812 Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) çerçevesinde yürütüyor (1612 çağrı sayfası); 1512 program sayfası erişime kapalı. Yeni başvuru için 1812 çağrılarına bakın)
+- 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) (TUBITAK) — kapalı: program başvuruya açık değil (TÜBİTAK, BiGG 1. aşamasını 2026-2028 döneminde 1812 Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) çerçevesinde yürütüyor (1612 çağrı sayfası); 1512 program sayfası erişime kapalı.
+- Sosyal Kapsayıcı Yeşil Geçiş (SoGreen) Kapsamında Gelecek İçin Üretimde Çevre Dostu Dönüşüm Destek Programı (TR61/26/SGRKOBİGÜÇ) — Geri Ödemeli Finansman (Batı Akdeniz Kalkınma Ajansı (BAKA)) — kapalı: program başvuruya açık değil (Son başvuru tarihi 8 Mayıs 2026 (taahhütname 15 Mayıs 2026) geçti; çağrı kapandı)
 - HALKBANK GENÇ İŞİ KREDİSİ PROJESİ (KGF); HALK BANKASI GENÇİZ KREDİSİ PROGRAMI DESTEK PAKETİ (KGF); TURYIB Programı Destek Paketi (KGF); ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ (KGF) — uygun değil: KGF programları kayıtlı bir işletme gerektirir
+- Genç Girişimcilerde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20) (Gelir İdaresi Başkanlığı) — uygun değil: yalnızca şahıs işletmesi başvurabilir (henüz şirket kurulmadı kapsam dışı)
 
 **Girişim ön değerlendirmesi**
 Profilinizden hesaplanan HUKS ön skoru (TÜBİTAK BiGG değerlendirmesinin sistemce hesaplanabilen kısmı; resmî puan değildir):
@@ -70,8 +65,7 @@ Sistemde kaydı olmayan, ayrıca bakabileceğiniz programlar (oran ve şartları
 Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1/2026'dan itibaren 10962 sayılı Karar kapsamındadır; 5447 (E-Turquality) ve 5448 sayılı Kararlar yürürlükten kaldırılmıştır. KOSGEB Ar-Ge/Ür-Ge/İnovasyon ve KOBİGEL programları yürürlükten kaldırılmıştır (kayıtları 'kapalı' olarak sistemde).
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım):** Aşama 1 (hızlandırma programı) için: üniversitede ön lisans/lisans/yüksek lisans/doktora öğrencisi veya mezunu olmak; hızlandırma programına kabul tarihinde herhangi bir sermaye şirketi veya gerçek kişi işletmesinin ortağı olmamak (halka açık şirket payları ve kitle fonlaması payları hariç); daha önce Teknogirişim Sermayesi Desteği veya 1512/1812 2. Aşama desteği almamış olmak
-- **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım):** Başvuru yeri: PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına
+- Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
@@ -81,8 +75,7 @@ Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım): uygunluk belirlenemedi (Sektörünüz (arge) bu desteğin kapsamına uygun.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
-Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
+Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

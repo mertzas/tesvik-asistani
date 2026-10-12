@@ -514,6 +514,51 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   kredisi (9436) ve genç girişimci istisnasının yanıta girmemesi (aday havuzu); İhracat Destek Finansmanı/Reeskont
   gibi "uygun faiz" ürünlerinin seçilmemesi; Hazine faizli tarım kredisinde "basınçlı sulama +10 puan" satırı;
   kurum sorusunda ilk satır hükmü; yanıt uzunluğu (12-17 KB); kaynak dışı: TKDK/IPARD, KKYDP, 3308 çırak katkısı.
+- **Kalan eksikler turu** (2026-10-12, tur 7 sonrası): panel sıralaması — etiketleri yalnız ihtiyaç türü olan program
+  (5973 fuar/tanıtım/marka) hedef eşleşmesinde sektör eşleşmesi kadar güçlü (0,6); finansman hedefi olmayan profilde
+  kredi/kefalet ürünlerine yalnız sıralama cezası (`sira_cezasi`, görünen skor değişmez); gemi/yat tasarım desteği yalnız
+  NACE 30.1/33.15 (5973 m.16 kural maddesi); teknopark istisnaları Ar-Ge sinyali olmayan profilde geride. Panelin ilk
+  10'undan sorudaki ihtiyaca uyan en çok iki program aramaya eklenir (`rag.panel_adaylari_ekle`; dayanak bağlamına da
+  girer). "X kategorisi:" alt kategori şartı kilit değil (esnaf kredisi); hedef kitle önceliği büyük ölçekli pakete
+  verilmez; "uygun faiz" sorusu TCMB/faizsiz ürünleri öne alır; sulama sorusunda kredi tablosundaki "Basınçlı sulama"
+  satırı alıntılanır (`konu_satiri`); kurum sorusunda ilk satır "Kısa hüküm"; EK-3 istisnalı dışlama (13.10.12: yalnız
+  500 milyon TL üzeri modernizasyon) şartlı; üçüncü kart yalnız engelsiz ve ihtiyaca uygunsa, teyit kutusu 6 → 4,
+  kapalı listesi en çok 6 satır (ortalama yanıt 12.358 → 11.479 karakter); hibe satırı açık hibe yoksa kapalı hibeyi
+  adıyla anar. Doğrulama hattı (tur21) düzeltmesi: HTTP başlığında charset yoksa sayfanın meta charset'i (Resmî Gazete
+  windows-1254 "ı" → "ý" bozulup bütün alıntılar düşüyordu); sıfırsız tarih biçimleri ("29/4/2026").
+  Tur38 (`scripts/fix_veri_2026_10_12_tur38.py`): KKYDP (Tebliğ 2026/9-2026/10, 2026 dönemi 29/4-30/6 kapalı; 23 madde
+  doğrulandı, görüntü PDF'indeki EK-2 oranları doğrulanamadığı için alınmadı); IPARD III M1 (28.07-07.09.2026) ve M3
+  (12.06-20.07.2026) çağrıları zaten kayıtlıydı (tur38 yalnız adla karşılaştırıp ikinci kez ekledi; yinelenen
+  satırlar silindi, eşleşme artık kapanış tarihiyle), M7'de 2026 çağrısı yok. 3308 sayılı Kanun Geçici 12. madde
+  "Mesleki Eğitim Devlet Katkısı" (çırak/stajyer ücretinin 2/3'ü 20 kişiden az, 1/3'ü 20+ işletmede; 8 madde, 17 alıntı
+  doğrulandı; sürüp sürmediği teyit edilemediği için `aktif_mi` boş). Yedek `tesvikler_oncesi_tur38.db.bak`.
+  Hibe satırı konuya bakar: "Hibe değil, faiz indirimi" yazan kredi hibe sayılmaz (`hibe_mi`); sorunun konu sözcükleri
+  (`soru_konulari`, genel teşvik sözcükleri hariç) açık hibede yoksa ve konuya uyan hibe kapalıysa yanıt önce kapalı
+  olanı adıyla anar (damla sulama: TSS kapalı; Sera hibesi "farklı bir gideri karşılar"); bunun için arama da
+  konuya uyan kapalı hibeyi adaylara ekler (`rag.panel_adaylari_ekle`). `_kredi_mi` artık "proje_bazli_tavan"
+  niteliğini kredi saymaz (toplama girmez ama hibedir; KKYP/TSS/ajans hibeleri hibe satırından düşüyordu).
+  Tur40 (`scripts/fix_veri_2026_10_12_tur40.py`, self-test 6/6): tur38'in KKYDP kaydı mevcut 78 (KKYP, Tebliğ 2026/9)
+  ve 80'in (TSS, 2026/10) kopyasıydı; arama asıl kaydı geride bırakınca eski-30 isabeti 41 → 37'ye düştü. Kopyanın 24
+  doğrulanmış maddesi (19 → 78, sulamaya ait 5 → 80) ve iki çağrısı taşındı, 78/80'in başvuru süresi uzatmayla
+  güncellendi (29 Nisan – 30 Haziran 2026; ilk ilan 12 Haziran), kopya silindi, tur38 kayıt dosyası `birlesen/` altına
+  alındı (tur38 yeniden çalışınca geri gelmesin). Yedek `tesvikler_oncesi_tur40.db.bak`. Ders: yeni kayıttan önce
+  aynı Resmî Gazete URL'sine bağlı kayıt aranmalı.
+- **Groq kayıt önerici** (`scripts/groq_kayit_onerici.py`, self-test 7/7): yalnız kamu mevzuat metnini (mevzuat.gov.tr
+  PDF'i) Groq `openai/gpt-oss-120b`'ye verir ve kayıt taslağı ister; kullanıcı/kurum/ikas verisi gönderilmez,
+  uygulamanın çalışma anındaki LLM yolu (`app/llm_saglayici.py`) değişmez. Model alıntıları birebir vermek zorunda;
+  taslaklar `docs/olcum/2026-10-12-tur39/oneri/` ve `kayit/` altına, harcama `harcama.json` defterine yazılır (tavan
+  1 USD). Taslak DB'ye doğrudan girmez: `scripts/fix_veri_2026_10_12_tur39.py --dogrula` (tur21 doğrulayıcısı) her
+  alıntıyı resmî metinde arar, ancak geçenler `--uygula` ile eklenir. Aynı kanuna (mevzuat.gov.tr 1.5.<no>) bağlı
+  kayıt varsa görev çalıştırılmaz (`cakisan_kayitlar`; 5746 görevi bu yüzden kaldırıldı: 281/333/334/335 zaten
+  var). Kalan görev `gorevler.json`: 3065 KDV m.11 ihracat istisnası. Çalıştırmak için `.env` içine `GROQ_API_KEY`
+  gerekir (tahmini en çok 0,008 USD).
+- **Deterministik başvuru orkestratörü** (`app/basvuru_orkestrator.py`, self-test 10/10, `tests/test_basvuru_orkestrator.py`
+  6): şirket profili + harcama dökümünden 10 adımda (ayrıştırma, mevzuat eşleştirme, KOBİ/KOSGEB, hedef ülke, mükerrerlik,
+  DYS, A-D stres testi, onarım, gerekçe, JSON) üç bölümlü çıktı. Oran, tavan (2026), şart ve hedef ülke listesi kayıtlardan;
+  kayıtta olmayan kalem "Kapsam Dışı / İncelenmeli"; dış dil modeli yok. Şablondaki düzeltilen varsayımlar: e-ihracat
+  kalemleri 5986 (5973 değil); hedef ülke ilavesi kayıtta yalnız 5986 m.4/m.5/m.6 için %70; KOSGEB "Yurt Dışı Pazar
+  Destek Programı" güncel kayıtlarda yok; KDV esası ve ilişkili taraf kuralı kayıtta yok (İncelenmeli). Demo:
+  `docs/olcum/2026-10-12-orkestrator/demo_A-D.md`.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

@@ -18,8 +18,7 @@
   - ☐ İş Geliştirme Desteği: NACE'ye göre C-İmalat, 61 Telekomünikasyon, 62 Bilgisayar programlama/danışmanlık, 63 Bilişim altyapısı/veri işleme/barındırma veya 72 Bilimsel Ar-Ge sektöründe faaliyet gösteren 0-3 yaş işletme olmak — resmî metin: “62-Bilgisayar programlama, danışmanlık ve ilgili faaliyetler”
   - ☐ KOSGEB veri tabanına kayıtlı ve aktif olmalı — resmî metin: “KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması”
   - ☐ Girişimcinin başvurduğu işletmedeki ortaklık payı en az %50 olmalıdır — resmî metin: “girişimcinin destek programı başvurusunda bulunduğu işletmedeki ortaklık payı en az %50 olmalıdır”
-  - ☐ Girişimci işletmeyi münferiden temsile yetkili olmalı — resmî metin: “girişimci işletmeyi münferiden temsile yetkili olmalıdır”
-  - ☐ Faiz/Kâr Payı Desteği için: İş Geliştirme jüri puanı en az 50 ve girişimci kadın veya genç olmalı — resmî metin: “Jüri puanı 50 puan ve üzerinde olan işletmelerden, girişimcisi kadın veya genç olanlar başvurabilir.”
+  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - İş Geliştirme Desteği ile İş Geliştirme Faiz/Kâr Payı Desteğinden aynı anda yararlanılamaz — resmî metin: “İŞ GELİŞTİRME FAİZ/KÂR PAYI DESTEĞİ ve İŞ GELİŞTİRME DESTEĞİ’nden aynı anda yararlanılamaz.”
 - **Başvuru:** KOSGEB e-Hizmetler (e-Devlet şifresi ile online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/1231/girisimci-destek-programi
@@ -34,14 +33,9 @@
   - Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz. — resmî metin: “Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir.”
 - **Başvuru:** Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi
 
-**KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB**
-- **Başvuru dönemi:** Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır.
-- **Durum:** Şarta bağlı — profiliniz olmadığı için uygunluk değerlendirilemedi.
-- **Kapsam:** yalnız: henüz şirket kurulmamış, şahıs işletmesi, limited şirket, anonim şirket, kooperatif
-- **Destek:** Ücretsiz eğitim (parasal destek değildir): geleneksel ve ileri girişimcilik eğitimleri ücretsiz ve aracısız verilir.
-- **Kurallar (kayıttan):**
-  - Sınıf ortamındaki eski (2010-2020) uygulamalı girişimcilik eğitimi katılım belgeleri 31 Aralık 2020'ye kadar geçerliydi; bunlar artık geçerli değildir, online eğitim alınmalıdır. — resmî metin: “2010-2020 yılları arasında sınıf ortamındaki eğitim sonucunda alınan uygulamalı girişimcilik eğitimi katılım belgeleri, 31 Aralık 2020 tarihine kadar geçerliliğini koruyacak.”
-- **Başvuru:** KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi
+**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi (KOSGEB) — şarta bağlı (profiliniz olmadığı için uygunluk değerlendirilemedi); Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır.
+- Genç Girişimcilerde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20) (Gelir İdaresi Başkanlığı) — şarta bağlı (profiliniz olmadığı için uygunluk değerlendirilemedi); Çağrı veya son başvuru tarihi yoktur; istisna faaliyete başlanılan takvim yılından itibaren üç vergilendirme dönemi için geçerlidir.
 
 **Şu an başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı

@@ -36,7 +36,7 @@
 - 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) (TUBITAK) — şarta bağlı (Sektörünüz (arge) bu desteğin kapsamına uygun); 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı yalnız şunlar için açık: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); yeni başvuranlar için açık çağrı kayıtlarımızda yok (kurum duyurularından takip edin)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
-- 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) (TUBITAK) — kapalı: program başvuruya açık değil (TÜBİTAK, BiGG 1. aşamasını 2026-2028 döneminde 1812 Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) çerçevesinde yürütüyor (1612 çağrı sayfası); 1512 program sayfası erişime kapalı. Yeni başvuru için 1812 çağrılarına bakın)
+- 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) (TUBITAK) — kapalı: program başvuruya açık değil (TÜBİTAK, BiGG 1. aşamasını 2026-2028 döneminde 1812 Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) çerçevesinde yürütüyor (1612 çağrı sayfası); 1512 program sayfası erişime kapalı.
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.

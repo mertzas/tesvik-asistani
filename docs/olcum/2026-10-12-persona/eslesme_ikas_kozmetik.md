@@ -31,24 +31,24 @@ profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'Ankara', 'calisa
 13. [0] KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-14. [0] Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B) — Gelir İdaresi Başkanlığı (aktif=True)
+14. [0] Mesleki Eğitim Devlet Katkısı (3308 sayılı Kanun Geçici 12. madde): MESEM, çırak ve staj ücretlerine İşsizlik Sigortası Fonu'ndan geri ödeme — Millî Eğitim Bakanlığı (MTEGM) / İŞKUR (İşsizlik Sigortası Fonu) (aktif=None)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-15. [0] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
+15. [0] Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B) — Gelir İdaresi Başkanlığı (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-16. [0] HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF (aktif=True)
+16. [0] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.
+    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+17. [0] HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: İşletme sahibinin en çok 29 yaşında olması gerekir; yaşınızı profile girerseniz netleşir.
-17. [0] TKYB KREDİ DESTEK PAKETİ — KGF (aktif=True)
+18. [0] TKYB KREDİ DESTEK PAKETİ — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.
-18. [0] Yapay Zekâ Kredi Programı — KOSGEB (aktif=True)
+19. [0] Yapay Zekâ Kredi Programı — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: Yapay zekâ yatırımına yönelik; profilinizde Ar-Ge/yazılım hedefi yok.
-19. [0] Türk Eximbank E-İhracat Destek Kredisi — Türk Eximbank (aktif=True)
+20. [0] Türk Eximbank E-İhracat Destek Kredisi — Türk Eximbank (aktif=True)
     gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
-    eksik: İhracat yapan ya da yapacak işletmelere yönelik; hedeflerinizde ihracat yok.
-20. [0] Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) — Türk Eximbank (aktif=True)
-    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.; Yalnız sizin hedef kitlenize açık: Kadın girişimci / kadınların yönettiği işletme.
     eksik: İhracat yapan ya da yapacak işletmelere yönelik; hedeflerinizde ihracat yok.

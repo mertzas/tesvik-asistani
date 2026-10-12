@@ -10,3 +10,6 @@ profil: {'sektor': 'arge', 'bolge': 'Ankara', 'calisan_sayisi': 0, 'yillik_ciro'
  3. [0] KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+ 4. [0] Mesleki Eğitim Devlet Katkısı (3308 sayılı Kanun Geçici 12. madde): MESEM, çırak ve staj ücretlerine İşsizlik Sigortası Fonu'ndan geri ödeme — Millî Eğitim Bakanlığı (MTEGM) / İŞKUR (İşsizlik Sigortası Fonu) (aktif=None)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.
+    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.

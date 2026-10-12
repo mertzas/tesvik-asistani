@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **Türk Eximbank E-İhracat Destek Kredisi** (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir); Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Kredi koşulları (hibe değil): Hibe değil kredi: firma bazında kullandırım üst limiti 500.000 TL; vade azami 12 ay; İGE kefaleti karşılığında kullandırılır.
-- Diğer seçenekler: Türk Eximbank Spesifik İhracat Kredi Sigortası (tek satış sözleşmesine bağlı, 1 yıldan uzun vadeli yatırım malı ve hizmet ihracatı alacaklarının sigortası) (şarta bağlı); YÖNDE - Yönderlik ve Değerlendirme Destek Programı (profilinize göre engel yok — şartları teyit edin); Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (şarta bağlı).
+- Diğer seçenekler: Türk Eximbank Spesifik İhracat Kredi Sigortası (tek satış sözleşmesine bağlı, 1 yıldan uzun vadeli yatırım malı ve hizmet ihracatı alacaklarının sigortası) (şarta bağlı); YÖNDE - Yönderlik ve Değerlendirme Destek Programı (profilinize göre engel yok — şartları teyit edin); İhracat Destek Paketi (şarta bağlı).
 - Sorunuza doğrudan yönelik ama size kapalı: E-İhracat Destekleri (5986 Sayılı Karar) — başvuru sahibi türünüz (şahıs işletmesi) şartta sayılmıyor — kayıttaki şart: “Şirket ya da kooperatif olmak (şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre)”.
 - 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
@@ -54,15 +54,15 @@
   - ☐ Dijital Dönüşüm desteği için hizmeti TÜSSİDE belgeli dijital dönüşüm danışmanından al (en fazla 2 kez, iki hizmet arası en az 1 yıl) — resmî metin: “İşletme bu destekten en fazla 2 defa yararlanabilir; iki hizmet arasında en az 1 yıl süre olmalıdır.”
   - ☐ Sürdürülebilirlik Raporlaması: rapor TSRS'ye uygun olmalı ve güvence denetimi bağımsız denetim kuruluşunca yapılmalı (en fazla 2 rapor) — resmî metin: “Sürdürülebilirlik raporunun güvence denetimi bir bağımsız denetim kuruluşu tarafından yapılmalıdır.”
   - ☐ YODA desteği için hizmeti Bakanlıkça bildirilen yalın dönüşüm danışmanından al; ikinci yararlanma için ilk raporda önerilen model fabrika hizmetleri tamamlanmış olmalı — resmî metin: “İkinci defa yararlanmak için ilk YODA raporunda önerilen model fabrika hizmetlerinin tamamlanmış olması şarttır.”
-  - ☐ Bağımsız Değerlendirme desteği yalnız Teknoloji Odaklı Sanayi Hamlesi çağrı planındaki ürünlerin proje başvuruları içindir; rapor Bakanlıkça ilan edilen Bağımsız Danışmanlık Firmasından alınmalı — resmî metin: “Bağımsız Değerlendirme Raporu Bakanlık tarafından ilan edilen Bağımsız Danışmanlık Firmaları tarafından hazırlanır.”
+  - ve 1 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - Ödemeler (katkı payı dahil) banka, PTTBank veya ödeme kuruluşu üzerinden yapılmalı; ödeme talebi program bitiminden en geç 4 ay sonra yapılmalı — resmî metin: “Destek ödeme talebi, en geç programın tamamlanma tarihinden 4 ay sonrasına kadar yapılmalıdır.”
 - **Başvuru:** KOSGEB sistemi (www.kosgeb.gov.tr) üzerinden YÖNDE başvuru formu ile — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9165/yonde-yonderlik-ve-degerlendirme-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır); Dönemsel çağrı yoktur; 
 - İhracat Destek Paketi (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı veya döviz kazandırıcı hizmetler sektöründe faaliyet göstermek (KOBİ ve KOBİ dışı firmalar yararlanabilir)); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
-- Yapay Zekâ Kredi Programı (KOSGEB) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
+- ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
+- Türk Eximbank Kısa Vadeli Alacak Sigortası (360 güne kadar vadeli ihracat alacaklarının ticari ve politik risklere karşı sigortası) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Yurt dışı satışlarında vadeli alacak yapısına sahip bütün ihracatçılar programdan yararlanabilir); Dönemsel çağrı yoktur; 
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Küresel Rekabetçilik Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 1. başvuru dönemi: kapandı (30.09.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)

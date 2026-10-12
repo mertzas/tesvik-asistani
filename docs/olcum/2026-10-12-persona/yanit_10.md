@@ -1,10 +1,13 @@
 <!-- persona: matbaa | soru: Matbaamıza yaklaşık 4 milyon TL'lik yeni dijital baskı makinesi almak istiyoruz. Hangi kredi, hibe ya da teşvik belgesi kullanabiliriz? -->
 **Kısa cevap:**
+- Hibe: sorunuzla eşleşen hibe programlarının hiçbiri şu an size açık görünmüyor (Sosyal Kapsayıcı Yeşil Geçiş (SoGreen) Kapsamında Gelecek İçin Üretimde Çevre Dostu Dönüşüm Destek Programı (TR61/26/SGRKOBİGÜÇ) — Geri Ödemeli Finansman — kapalı; 2026 Yılı Sosyal Kapsayıcı Yeşil Geçiş (SoGreen) Geri Ödemeli Finansman Desteği (TR62/26/SGR) — kapalı). Aşağıdaki açık seçenekler kredi, kefalet ya da diğer destek türleridir.
 - Teşvik belgesi (9903, Hedef Yatırımlar): **uygun değil** — sorudaki yatırım tutarı (4 milyon TL) EK-3 kalem şartının altında: NACE 18.12, EK-3'te '18 Kayıtlı medyanın basılması ve çoğaltılması' kalemine giriyor; şart: Sabit yatırım tutarı 100 Milyon TL ve üzerindeki tevsi ve modernizasyon yatırımları desteklenir. (MADDE 5/1, 10).
 - Öne çıkan: **YATIRIM-İŞLETME DESTEK PAKETİ** (KGF) (hibe değil: kredi kefaleti) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
-- Hibe (geri ödemesiz): sorunuza ve profilinize açık kayıtlı bir hibe programı bulamadım; aşağıdaki programlar geri ödemesiz destek değildir (kredi, kefalet, vergi avantajı, eğitim ya da yatırım).
+- Hibe (geri ödemesiz): sorunuza ve profilinize açık kayıtlı bir hibe programı bulamadım; Sosyal Kapsayıcı Yeşil Geçiş Kapsamında Gelecek İçin Üretimde Çevre Dostu Dönüşüm Destek Programı, 2026 Yılı Sosyal Kapsayıcı Yeşil Geçiş Geri Ödemeli Finansman Desteği şu an başvuruya kapalı (yeni çağrıyı izleyin); aşağıdaki programlar geri ödemesiz destek değildir (kredi, kefalet, vergi avantajı, eğitim ya da yatırım).
 - Kredi koşulları (hibe değil): Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
 - Diğer seçenekler: HALKBANK İLK ADIM KREDİSİ PROJESİ (şarta bağlı).
+- Sorunuza doğrudan yönelik ama size kapalı: Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) — UYGUN DEĞİL — sorudaki yatırım tutarı (4 milyon TL) EK-3 kalem şartının altında: NACE 18.12, EK-3'te '18 Kayıtlı medyanın basılması ve çoğaltılması' kalemine giriyor.
+- 4 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 18.12)
@@ -40,11 +43,15 @@
   - Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz. — resmî metin: “Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir.”
 - **Başvuru:** Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi
 
+**Size kapalı ya da başvuruya kapalı programlar:**
+- Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — uygun değil: UYGUN DEĞİL — sorudaki yatırım tutarı (4 milyon TL) EK-3 kalem şartının altında: NACE 18.12, EK-3'te '18 Kayıtlı medyanın basılması ve çoğaltılması' kalemine giriyor
+- Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — uygun değil: UYGUN DEĞİL — sorudaki yatırım tutarı (4 milyon TL) asgari sabit yatırım tutarının (1. bölgede 12 milyon TL) altında; teşvik belgesi bu tutarın altındaki yatırıma düzenlenmez (MADDE 5/2)
+- Sosyal Kapsayıcı Yeşil Geçiş (SoGreen) Kapsamında Gelecek İçin Üretimde Çevre Dostu Dönüşüm Destek Programı (TR61/26/SGRKOBİGÜÇ) — Geri Ödemeli Finansman (Batı Akdeniz Kalkınma Ajansı (BAKA)) — kapalı: program başvuruya açık değil (Son başvuru tarihi 8 Mayıs 2026 (taahhütname 15 Mayıs 2026) geçti; çağrı kapandı)
+- 2026 Yılı Sosyal Kapsayıcı Yeşil Geçiş (SoGreen) Geri Ödemeli Finansman Desteği (TR62/26/SGR) (Çukurova Kalkınma Ajansı (ÇKA)) — kapalı: program başvuruya açık değil (Son başvuru tarihi 08.05.2026 (taahhütname 15.05.2026) geçti; çağrı kapandı)
+
 **Yatırım teşvik belgesi (9903) — sistemin elediği ya da düşük olasılık gördüğü programlar** (Karar metnine göre; 'UYGUN DEĞİL' kesin, 'DÜŞÜK OLASILIK' teyit gerektirir):
 - Teknoloji Hamlesi Programı (9903 sayılı Karar): DÜŞÜK OLASILIK — faaliyet EK-1 orta-yüksek/yüksek teknoloji sınıfında değil; öncelikli ürün listesi bu sınıflar ve kritik ürünlerden oluşur (MADDE 2/i, 6)
-- Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar): UYGUN DEĞİL — sorudaki yatırım tutarı (4 milyon TL) asgari sabit yatırım tutarının (1. bölgede 12 milyon TL) altında; teşvik belgesi bu tutarın altındaki yatırıma düzenlenmez (MADDE 5/2)
 - Stratejik Hamle Programı (9903 sayılı Karar): DÜŞÜK OLASILIK — asgari sabit yatırım 100 milyon TL (yüksek teknoloji) / 200 milyon TL, %20 öz kaynak ve ithalat ölçütleri aranır; mikro/küçük ölçek için gerçekçi değildir (MADDE 8/2-3)
-- Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): UYGUN DEĞİL — sorudaki yatırım tutarı (4 milyon TL) EK-3 kalem şartının altında: NACE 18.12, EK-3'te '18 Kayıtlı medyanın basılması ve çoğaltılması' kalemine giriyor; şart: Sabit yatırım tutarı 100 Milyon TL ve üzerindeki tevsi ve modernizasyon yatırımları desteklenir. (MADDE 5/1, 10)
 - Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar): UYGUN DEĞİL — sorudaki yatırım tutarı (4 milyon TL) asgari sabit yatırım tutarının (1. bölgede 12 milyon TL) altında; teşvik belgesi bu tutarın altındaki yatırıma düzenlenmez (MADDE 5/2)
 Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik Yatırımların Teşviki) 9903 sayılı Karar ile yürürlükten kalkmıştır; bu eski sistemlere başvurulamaz.
 

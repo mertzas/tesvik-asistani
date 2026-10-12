@@ -64,7 +64,7 @@
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2) (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır.
 - 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (28 gün kaldı); başvuru kapanışı 11.11.2026 (30 gün kaldı)
-- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (32 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
+- 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (10 gün kaldı); başvuru kapanışı 26.10.2026 (14 gün kaldı)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Kapasite Geliştirme Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)

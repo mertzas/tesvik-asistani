@@ -1,7 +1,7 @@
 <!-- persona: ciftci | soru: Tarlama damla sulama kuracağım; tasarruflu sulama hibesi oranı ve hibeye esas üst tutar ne kadar? -->
 **Kısa cevap:**
 - **Tasarruflu Tarımsal Sulama Sistemleri (TSS) Hibe Desteği** (Tarım Bakanlığı)
-- Sizin için: **kapalı** — program başvuruya açık değil (TRGM duyurusu (29.04.2026): TSS hibe başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı).
+- Sizin için: **kapalı** — program başvuruya açık değil (tur38'in kopya KKYDP kaydı bu kayda birleştirildi (doğrulanmış kontrol maddeleri ve 2026 çağrısı); başvuru süresi 30/6/2026'ya uzatılmıştı).
 - Son bilinen destek (bilgi için): Hibe oranı %50 (damla, yağmurlama), %60 (mikro yağmurlama; center pivot/lineer/tamburlu; güneş enerjili), %70 (yüzey altı damla); hibeye esas proje tutarı en fazla 10.000.000 TL
 - Ürününüz (buğday) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri 367,00 TL/da): Temel destek (2. kategori): 477,10 TL/da × 180 da = 85.878,00 TL; Planlı üretim desteği (2. kategori): 477,10 TL/da × 180 da = 85.878,00 TL; toplam 85.878,00 TL + 85.878,00 TL = 171.756,00 TL (planlı üretim desteği ürünün havzasında planlanan ürün olmasına bağlıdır). Şarta bağlı ekler (dekar başına katsayı × 367,00 TL): katı organik/organomineral gübre kullanırsanız katsayı 0,32; bireysel iyi tarım sertifikanız varsa açık alanda ürün grubunuza göre katsayı 0,4–0,7. Sertifikalı fidan (yeni bahçe) ve sigorta (TARSİM) gibi diğer kalemler de şarta bağlıdır; ilgili programı adıyla sorabilirsiniz.
 
@@ -15,9 +15,9 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Tasarruflu Tarımsal Sulama Sistemleri (TSS) Hibe Desteği — Tarım Bakanlığı** (kapalı)
-- **Neden:** program başvuruya açık değil (TRGM duyurusu (29.04.2026): TSS hibe başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı).
+- **Neden:** program başvuruya açık değil (tur38'in kopya KKYDP kaydı bu kayda birleştirildi (doğrulanmış kontrol maddeleri ve 2026 çağrısı); başvuru süresi 30/6/2026'ya uzatılmıştı).
 - **Son bilinen destek (bilgi için):** Hibe oranı %50 (damla, yağmurlama), %60 (mikro yağmurlama; center pivot/lineer/tamburlu; güneş enerjili), %70 (yüzey altı damla); hibeye esas proje tutarı en fazla 10.000.000 TL
-- **Kimler başvurabiliyordu (son çağrı):** Gerçek/tüzel kişiler; kadın ve genç girişimciler ile birinci derece tarımsal örgütler öncelikli; bütçenin en az %20'si kadın/genç girişimcilere (MADDE 11); Hibe oranı sulama sistemi türüne göre %50/%60/%70 (MADDE 11/4); Hibeye esas proje tutarı 10.000.000 TL'yi geçemez; aşan kısım ayni katkı (MADDE 11/6); Makine-ekipman alımı hibe sözleşmesinden sonra ve 75 gün içinde teslim (MADDE 9).
+- **Kimler başvurabiliyordu (son çağrı):** Bireysel sulama: kamudan bağımsız, parsel ÇKS kayıtlı, Su Kullanım İzin Belgesi şart (Bayburt İl Müdürlüğü duyurusu).
 - **Ne yapabilirsiniz:** Sonraki başvuru dönemini Tarım Bakanlığı duyurularından takip edin; çağrı açıldığında şartları yeniden kontrol edin.
 - **Kaynak:** https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.htm
 

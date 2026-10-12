@@ -42,18 +42,18 @@ profil: {'sektor': 'tarim', 'bolge': 'Aydın', 'calisan_sayisi': 0, 'yillik_ciro
 15. [0] KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-16. [0] Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B) — Gelir İdaresi Başkanlığı (aktif=True)
+16. [0] Mesleki Eğitim Devlet Katkısı (3308 sayılı Kanun Geçici 12. madde): MESEM, çırak ve staj ücretlerine İşsizlik Sigortası Fonu'ndan geri ödeme — Millî Eğitim Bakanlığı (MTEGM) / İŞKUR (İşsizlik Sigortası Fonu) (aktif=None)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-17. [0] DİJİTAL KEFALET DESTEK PROGRAMI — KGF (aktif=True)
+17. [0] Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B) — Gelir İdaresi Başkanlığı (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.
+    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+18. [0] DİJİTAL KEFALET DESTEK PROGRAMI — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.
     eksik: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.
-18. [0] HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF (aktif=True)
+19. [0] HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.
     eksik: İşletme sahibinin en çok 29 yaşında olması gerekir; yaşınızı profile girerseniz netleşir.
-19. [0] KGF Özkaynak Kefalet Programı — KGF (aktif=True)
-    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.
-    eksik: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.
-20. [0] TKYB KREDİ DESTEK PAKETİ — KGF (aktif=True)
+20. [0] KGF Özkaynak Kefalet Programı — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.
     eksik: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.

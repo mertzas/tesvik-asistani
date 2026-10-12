@@ -20,8 +20,7 @@
   - ☐ İş Geliştirme Desteği: NACE'ye göre C-İmalat, 61 Telekomünikasyon, 62 Bilgisayar programlama/danışmanlık, 63 Bilişim altyapısı/veri işleme/barındırma veya 72 Bilimsel Ar-Ge sektöründe faaliyet gösteren 0-3 yaş işletme olmak — resmî metin: “62-Bilgisayar programlama, danışmanlık ve ilgili faaliyetler”
   - ☐ KOSGEB veri tabanına kayıtlı ve aktif olmalı — resmî metin: “KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması”
   - ☐ Girişimcinin başvurduğu işletmedeki ortaklık payı en az %50 olmalıdır — resmî metin: “girişimcinin destek programı başvurusunda bulunduğu işletmedeki ortaklık payı en az %50 olmalıdır”
-  - ☐ Girişimci işletmeyi münferiden temsile yetkili olmalı — resmî metin: “girişimci işletmeyi münferiden temsile yetkili olmalıdır”
-  - ☐ Faiz/Kâr Payı Desteği için: İş Geliştirme jüri puanı en az 50 ve girişimci kadın veya genç olmalı — resmî metin: “Jüri puanı 50 puan ve üzerinde olan işletmelerden, girişimcisi kadın veya genç olanlar başvurabilir.”
+  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - İş Geliştirme Desteği ile İş Geliştirme Faiz/Kâr Payı Desteğinden aynı anda yararlanılamaz — resmî metin: “İŞ GELİŞTİRME FAİZ/KÂR PAYI DESTEĞİ ve İŞ GELİŞTİRME DESTEĞİ’nden aynı anda yararlanılamaz.”
 - **Başvuru:** KOSGEB e-Hizmetler (e-Devlet şifresi ile online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/1231/girisimci-destek-programi
@@ -40,20 +39,10 @@
   - Mükemmeliyet Mührü alan girişimciden şirket kurması istenir; şirket, Aşama 2 destek tutarı karşılığında en fazla %5 hisseyi TÜBİTAK BiGG fonuna devretmeyi kabul eder — resmî metin: “Kuruluş, Aşama 2’de destek kapsamına alınan tutar karşılığında en fazla %5 hissesi için TÜBİTAK BiGG fonu ile yatırım sözleşmesi yapar.”
 - **Başvuru:** PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim
 
-**KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB**
-- **Başvuru dönemi:** Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Durum:** Şarta bağlı — profiliniz olmadığı için uygunluk değerlendirilemedi.
-- **Kapsam:** yalnız: henüz şirket kurulmamış, şahıs işletmesi, limited şirket, anonim şirket, kooperatif
-- **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
-- **Destek:** Ücretsiz eğitim (parasal destek değildir): geleneksel ve ileri girişimcilik eğitimleri ücretsiz ve aracısız verilir.
-- **Kurallar (kayıttan):**
-  - Sınıf ortamındaki eski (2010-2020) uygulamalı girişimcilik eğitimi katılım belgeleri 31 Aralık 2020'ye kadar geçerliydi; bunlar artık geçerli değildir, online eğitim alınmalıdır. — resmî metin: “2010-2020 yılları arasında sınıf ortamındaki eğitim sonucunda alınan uygulamalı girişimcilik eğitimi katılım belgeleri, 31 Aralık 2020 tarihine kadar geçerliliğini koruyacak.”
-- **Başvuru:** KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi
-
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Yapay Zekâ Kredi Programı (KOSGEB) — şarta bağlı (kurulu işletme ister (KOBİ kaydı, rozet, teminat ya da ciro şartı); şirket kurulduktan sonra değerlendirilir); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
+- Yapay Zekâ Kredi Programı (KOSGEB) — şarta bağlı (kurulu işletme ister (KOBİ kaydı, rozet, teminat ya da ciro şartı); şirket kurulduktan sonra değerlendirilir); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi (KOSGEB) — şarta bağlı (profiliniz olmadığı için uygunluk değerlendirilemedi); Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır.
 - HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — şarta bağlı (profiliniz olmadığı için uygunluk değerlendirilemedi); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
-- Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17) (Ticaret Bakanlığı) — şarta bağlı (profiliniz olmadığı için uygunluk değerlendirilemedi); Çağrı yoktur; ödeme gerçekleştikten sonra, ödeme belgesi tarihinden itibaren altı ay içinde destek başvurusu yapılır.
 
 **Şu an başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı

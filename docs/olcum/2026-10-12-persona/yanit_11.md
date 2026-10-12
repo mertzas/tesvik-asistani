@@ -38,7 +38,7 @@
   - ☐ İşçinin, işten ayrıldığı işyerinde tekrar işe başlamaması — resmî metin: “İşçinin, işten ayrıldığı işyerinde tekrar işe başlaması halinde bu teşvik hükümlerinden yararlanılamaz.”
   - ☐ Aylık prim ve hizmet belgesinin yasal süresinde verilmesi, primlerin yasal süresinde ödenmesi — resmî metin: “aylık prim ve hizmet belgesinin yasal süresi içerisinde”
   - ☐ İşçi, işe alındığı tarihten önceki son altı ayda bildirilen ortalama sigortalı sayısına ilave olarak işe alınmalı — resmî metin: “özel sektör işverenleri tarafından işe alındığı tarihten önceki son altı aylık dönemde bildirilen ortalama sigortalı sayısına ilave olarak işe alınması”
-  - ☐ Özel sektör işvereni olmalısınız — resmî metin: “özel sektör işverenleri tarafından işe alındığı tarihten önceki son altı aylık dönemde”
+  - ve 1 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** SGK (e-Bildirge) — https://www.iskur.gov.tr/isveren/tesvikler/issizlik-odenegi-alanlara-yonelik-tesvik/
 
 **Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan — SGK / İŞKUR**

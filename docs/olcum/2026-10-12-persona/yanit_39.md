@@ -28,9 +28,7 @@
   - ☐ Markanın Türkiye'de tescil belgesi bulunmalı (yurt içi marka tescil belgesi) — resmî metin: “Şirketlerin yurt içi marka tescil belgesine sahip oldukları markalarının yurt dışında tescili ve korunmasına ilişkin giderleri %50 oranında”
   - ☐ Yurt içi tescil ile yurt dışı tescil başvurusu aynı şirket adına olmalı — resmî metin: “Şirketlerin yurt içi marka tescil belgesine sahip oldukları markalarının yurt dışında tescili”
   - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler destek süreleri boyunca bu destekten yararlanamaz
-  - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız; bu programdaki şirketler destek süreleri boyunca bu destekten yararlanamaz
-  - ☐ Çok kanallı zincir mağaza desteği (m.18) kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler destek süreleri boyunca bu destekten yararlanamaz
-  - ve 1 şart daha (tamamı panelde programın Kontrol listesinde).
+  - ve 3 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-4
 
 **Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12) — Ticaret Bakanlığı**
@@ -46,9 +44,7 @@
   - ☐ Tanıtımı yapılan ürünler Türkiye'de üretilmiş olmalı — resmî metin: “Türkiye’de üretilen ürünler ile ilgili yurt dışında gerçekleştirilen tanıtım ve pazarlama giderleri”
   - ☐ Tanıtım yapılacak ülkede kapsama alınmış yurt dışı birim yoksa: Türkiye'de tescilli marka ve tanıtım yapılacak ülkede marka tescili ya da tescil başvurusu olmalı — resmî metin: “yurt içi marka tescil belgesi bulunması ve tanıtım yapacağı ülkede marka tescil belgesine sahip ya da marka tescili için başvurulmuş olması koşuluyla”
   - ☐ Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz
-  - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız
-  - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız
-  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
+  - ve 4 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12
 
 **Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) — Ticaret Bakanlığı**
@@ -64,9 +60,7 @@
   - ☐ Birimde Türkiye'de üretilen ürünler pazarlanmalı — resmî metin: “Şirketlerin Türkiye’de üretilen ürünlerin pazarlandığı yurt dışı birimlerinin kira giderleri ile paylaşımlı ofislere ilişkin üyelik giderleri”
   - ☐ Küresel tedarik zinciri desteğinin (m.10/3) depo kirası kaleminden yararlanılmamış olmalı — resmî metin: “10 uncu maddenin üçüncü fıkrasında belirtilen destekten yararlanan şirketler bu maddede yer alan destekten yararlandırılmazlar.”
   - ☐ Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz
-  - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız
-  - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız
-  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
+  - ve 4 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden; e-ticaret depoları için KEP üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-11
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):

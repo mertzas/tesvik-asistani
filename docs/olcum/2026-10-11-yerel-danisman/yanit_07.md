@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **2026 Yılı Asgari Ücret Desteği (işveren sigorta primlerinden mahsup, İşsizlik Sigortası Fonu)** (SGK / İŞKUR) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi yasal süresinde verilmelidir; 2026 yılı Ocak ila Aralık ayları/dönemleri. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: Günlük 42,33 TL, aylık 1.270 TL (toplam prim ödeme gün sayısı x 42,33 TL işverenin Kuruma ödeyeceği primlerden mahsup edilir). 2025 yılının aynı ayında prime esas günlük kazancı 1.300 TL (toplu iş sözleşmesi uygulanan işyerlerinde 2.600 TL, linyit ve taşkömürü işyerlerinde 3.467 TL) ve altında ücretle çalıştırılan sigortalılar için
-- Diğer seçenekler: 2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu) (profilinize göre engel yok — şartları teyit edin); Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin); Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: 2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu) (profilinize göre engel yok — şartları teyit edin); Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin); DİJİTAL KEFALET DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: hizmet (NACE 55.10)
@@ -24,9 +24,7 @@
   - ☐ Primler yasal süresinde ödenmelidir. — resmî metin: “Primlerin yasal süresinde ödenmesi,”
   - ☐ Kuruma borç bulunmamalıdır (varsa yapılandırılmış/tecil ve taksitlendirilmiş ve düzenli ödenen olmalıdır). — resmî metin: “Kuruma borcun bulunmaması (varsa da yapılandırılmış/tecil ve taksitlendirilmiş olması ve düzenli ödenmesi),”
   - ☐ Destekten yararlanılan ayda, 2025 yılı Ocak-Aralık döneminde uzun vadeli sigorta kolları bildirimi yapılan aylar esas alınarak belirlenen eşiğin üzerinde sigortalı bildirimi yapılmalıdır (ayrıntı aşağıdaki maddede).
-  - ☐ Eşik: uzun vadeli sigorta kollarından en az sigortalı bildirimi yapılan aydaki/dönemdeki sigortalı sayısının üzerinde bildirimde bulunulmalıdır. — resmî metin: “uzun vadeli sigorta kollarından en az sigortalı bildirimi yapılan aydaki/dönemdeki sigortalı sayısının üzerinde bildirimde bulunulması,”
-  - ☐ Kayıt dışı sigortalı çalıştırılmamalı, sahte sigortalı bildirimi yapılmamalı, prime esas kazançlar eksik bildirilmemelidir. — resmî metin: “Kayıt dışı sigortalı çalıştırılmaması, sahte sigortalı bildiriminde bulunulmaması, sigortalıların prime esas kazançlarının eksik bildirilmemesi gerekmektedir.”
-  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
+  - ve 4 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - Kayıt dışı, sahte sigortalı veya eksik prime esas kazanç bildirimi tespit edilirse yararlanılan destek geri alınır ve sonraki dönemler için destek verilmez. — resmî metin: “Kayıt dışı sigortalı çalıştırıldığının, sahte sigortalı bildiriminin ya da eksik prime esas kazanç bildiriminin tespiti halinde faydalanılan asgari ücret desteği geri alınacaktır.”
 - **Başvuru:** Kaynak sayfada ayrı başvuru yeri belirtilmemiştir; destek, SGK'ya verilen aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi üzerinden prim ödemesinden mahsup edilir. — https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#asgari-ucret-destegi-2026
@@ -41,7 +39,7 @@
   - ☐ Muhtasar ve prim hizmet beyannamesi yasal süresinde verilmelidir. — resmî metin: “Muhtasar ve prim hizmet beyannamesinin yasal süresinde verilmesi,”
   - ☐ Primler yasal süresinde ödenmelidir. — resmî metin: “Primlerin yasal süresinde ödenmesi,”
   - ☐ Kuruma borç bulunmamalıdır (varsa yapılandırılmış/tecil ve taksitlendirilmiş ve düzenli ödenen olmalıdır). — resmî metin: “Kuruma borcun bulunmaması (varsa da yapılandırılmış/tecil ve taksitlendirilmiş olması ve düzenli ödenmesi),”
-  - ☐ Kayıt dışı sigortalı çalıştırılmamalı, sahte sigortalı bildirimi yapılmamalı, prime esas kazançlar eksik bildirilmemelidir. — resmî metin: “Kayıt dışı sigortalı çalıştırılmaması, sahte sigortalı bildiriminde bulunulmaması, sigortalıların prime esas kazançlarının eksik bildirilmemesi gerekmektedir.”
+  - ve 1 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - Kayıt dışı, sahte sigortalı veya eksik prime esas kazanç bildirimi tespit edilirse yararlanılan turizm ücret desteği geri alınır ve sonraki dönemler için destek verilmez. — resmî metin: “Kayıt dışı sigortalı çalıştırıldığının, sahte sigortalı bildiriminin ya da eksik prime esas kazanç bildiriminin tespiti halinde faydalanılan turizm ücret desteği geri alınacaktır.”
   - Sosyal güvenlik destek primine tabi çalışan sigortalılar, yabancı uyruklu sigortalılar ve yurtdışında çalıştırılan sigortalılardan dolayı destekten yararlanılamaz. — resmî metin: “Sosyal güvenlik destek primine tabi çalışan sigortalılar, yabancı uyruklu sigortalılar ve yurtdışında çalıştırılan sigortalılardan dolayı bu destekten yararlanılamaz.”
@@ -57,7 +55,7 @@
   - ☐ Asgari sabit yatırım tutarı 6. bölgede 6 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez
   - ☐ Yatırım konunuz Karar EK-3 listesinde yer alıyor ve oradaki şartları sağlıyor (Dijital Dönüşüm veya Yeşil Dönüşüm Programı kapsamında desteklenen yatırımlar ile sanayi sicil belgeli mevcut tesislerde deprem/yangın riskine karşı yatırımlar için bu şart aranmaz). — resmî metin: “Desteklerden yararlanacak yatırımların ek-3’te belirtilen yatırım konularına yönelik olması ve bu konular için belirtilen şartları sağlaması gerekir.”
   - ☐ Yatırım, Karar m.9/1'de sayılan konulardan (a-y bentleri) en az birine girmeli (ör. Dijital/Yeşil Dönüşüm, yüksek veya orta-yüksek teknolojili ürün, 6. bölge, savunma, Ar-Ge, lisanslı depoculuk). — resmî metin: “Öncelikli Yatırımlar Teşvik Sistemi kapsamında aşağıda belirtilen yatırım konuları desteklenir.”
-  - ☐ Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2). — resmî metin: “1 inci ve 2 nci bölgelerde 12 milyon TL, diğer bölgelerde ise 6 milyon TL olması gerekir.”
+  - ve 1 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - Finansal kiralama yöntemiyle yapılacak yatırımlarda, kiralamaya konu makine ve teçhizatın toplam tutarının her bir finansal kiralama şirketi için asgari 3 milyon TL olması (MADDE 5/3).
   - DİKKAT: teşvik belgesi müracaat tarihinden ÖNCE gerçekleştirilmiş yatırım harcamaları belge kapsamına ALINMAZ (MADDE 5/6) - harcamaya başlamadan önce başvurun. — resmî metin: “Teşvik belgesi düzenlenmesine ilişkin müracaat tarihinden önce gerçekleştirilmiş bulunan yatırım harcamaları teşvik belgesi kapsamına alınmaz.”
@@ -67,11 +65,12 @@
 **9903 programları bölgenize göre (Karar metninden; önce engelsiz ve şartlı, sonra en yüksek katkı):**
 - Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin): yatırıma katkı %30; makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); faiz desteği: repo oranının %25'i, azami 12.5 puan
 - Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin): yatırıma katkı %20; makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); faiz desteği: repo oranının %25'i, azami 12.5 puan
+- Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (şarta bağlı): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteği: repo oranının %40'i, azami 20 puan
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- DİJİTAL KEFALET DESTEK PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
 - Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi (Kültür ve Turizm Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Programın sürdüğü teyit edilmeli. Turizm yatırımı belgesi başvuruları, belgelerin Bakanlığa eksiksiz tesliminden itibaren altmış gün içinde sonuçlandırılır. Teşvik kapsamı için sayfada çağrı/dönem tarihi verilmemiştir.
 - Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — şartlı — karar şartını teyit edin; 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı)
-- Yapay Zekâ Kredi Programı (KOSGEB) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
 
 **Birlikte kullanım (resmî metinden):**
 - [Sanayi ve Teknoloji Bakanlığı] Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")
@@ -97,8 +96,7 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Başvuru adımları (2026 Yılı Asgari Ücret Desteği (işveren sigorta primlerinden mahsup, İşsizlik Sigortası Fonu)): Başvuru yeri: destek, SGK'ya verilen aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi üzerinden prim ödemesinden mahsup edilir.
 4. Başvuru kanalı (2026 Yılı Asgari Ücret Desteği (işveren sigorta primlerinden mahsup, İşsizlik Sigortası Fonu)): destek, SGK'ya verilen aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi üzerinden prim ödemesinden mahsup edilir. — https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#asgari-ucret-destegi-2026. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
-5. İletişim (doğrulanmış): KOSGEB VAN MÜDÜRLÜĞÜ: 0 (432) 486 55 10; Bahçıvan Mah. Sıhke Cad. 1702 Sk. No:93 Selçuk Ecza Deposu Üstü Kat:4 VAN (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=65)
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. Planladığınız sabit yatırım tutarı nedir? — teşvik belgesi (9903) asgari sabit yatırım tutarının altındaki yatırıma düzenlenmez (kartlardaki teyit maddesi).

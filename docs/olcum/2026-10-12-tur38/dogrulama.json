@@ -1,0 +1,227 @@
+{
+ "kkydp-kirsal-kalkinma-yatirimlari": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [
+   "madde düştü (alıntı doğrulanamadı): EK-2: birinci derece tarımsal amaçlı örgüt %70.",
+   "madde düştü (alıntı doğrulanamadı): EK-2: genç girişimci %60.",
+   "madde düştü (alıntı doğrulanamadı): EK-2: kadın girişimci %60.",
+   "madde düştü (alıntı doğrulanamadı): EK-2: yatırım yeri köy/belde/kır ise %60.",
+   "madde düştü (alıntı doğrulanamadı): EK-2: yenilenebilir enerji içeren projeye +5 puan;",
+   "madde düştü (alıntı doğrulanamadı): EK-2: tarımsal bilişim/otomasyon içeren projeye +5",
+   "madde düştü (alıntı doğrulanamadı): Makine-ekipman alımında teknik şartname başvuruda "
+  ],
+  "kontrol_listesi": [
+   {
+    "tur": "adim",
+    "metin": "Başvuru Bakanlık resmi web sayfası üzerinden veri giriş sistemiyle yapılır (revize Uygulama Esasları, 29/6/2026).",
+    "alinti": "Bakanlık resmi web sayfası (www.tarimorman.gov.tr) üzerinden giriş yapılır.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd"
+   },
+   {
+    "tur": "adim",
+    "metin": "Aynı adresten üyelik kaydı yapılır.",
+    "alinti": "www.tarimorman.gov.tr adresinden üyelik kaydı yapılır.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd"
+   },
+   {
+    "tur": "sart",
+    "metin": "Gerçek kişi başvurusunda T.C. vatandaşlığı zorunlu.",
+    "alinti": "Gerçek kişi başvurularında başvuru sahibinin Türkiye Cumhuriyeti vatandaşı olması zorunludur.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd"
+   },
+   {
+    "tur": "sart",
+    "metin": "Vadesi geçmiş vergi veya SGK prim borcu olan hibe alamaz.",
+    "alinti": "6183 sayılı Kanuna göre vadesi geçmiş vergi borcu ile Sosyal Güvenlik Kurumuna vadesi geçmiş prim borcu bulunanlar hibe desteğinden faydalanamaz.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm"
+   },
+   {
+    "tur": "sart",
+    "metin": "Kamu kurumları ve ortaklıklarının başvurusu değerlendirilmez.",
+    "alinti": "İl özel idaresi ve belediye gibi kamu kurum ve kuruluşları, bunların vakıf ve birlik benzeri teşekkülleri ile içinde bulundukları ortaklıkların başvuruları Program kapsamında değerlendirilmez.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm"
+   },
+   {
+    "tur": "kural",
+    "metin": "Sözleşmeden önce yatırıma başlanamaz.",
+    "alinti": "Başvuru sahipleri sözleşme imzalanmadan önce yatırımlarına başlayamazlar.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd"
+   },
+   {
+    "tur": "kural",
+    "metin": "Hibeye esas proje tutarı üst limiti 30.000.000 TL.",
+    "alinti": "Bu Tebliğde belirtilen yatırım konularında hibeye esas proje tutarı; 30.000.000 Türk lirası üst limitini geçemez.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm"
+   },
+   {
+    "tur": "kural",
+    "metin": "Alt limit 100.000 TL; altındaki başvuru kabul edilmez.",
+    "alinti": "Hibeye esas proje tutarı alt limiti 100.000 Türk lirasıdır. Bu limitin altındaki başvurular kabul edilmez.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm"
+   },
+   {
+    "tur": "kural",
+    "metin": "Aile işletmesi üst limiti 8.000.000 TL.",
+    "alinti": "Aile işletmesi faaliyetleri kapsamında yapılacak başvurularda hibeye esas proje tutarı en fazla 8.000.000 Türk lirasıdır.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm"
+   },
+   {
+    "tur": "kural",
+    "metin": "Hibe KDV dahil tutar üzerinden %50-%70 ve EK-2 oranlarında verilir.",
+    "alinti": "Katma Değer Vergisi (KDV) dâhil hibeye esas proje tutarının %50’si ile %70’ine kadar ve EK-2’de belirtilen şekildeki oranlarda hibe desteği verilir.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm"
+   },
+   {
+    "tur": "kural",
+    "metin": "Kamera sistemleri hibe kapsamında değil.",
+    "alinti": "Kamera sistemleri alımı hibe desteği kapsamında değerlendirilmez.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ortak makine parkı yatırımı yalnız tarımsal amaçlı örgütlere açık.",
+    "alinti": "Ortak makine parkı yatırımları için sadece tarımsal amaçlı örgütler hibe desteğinden faydalanabilir.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm"
+   },
+   {
+    "tur": "kural",
+    "metin": "Örgütün kendi bünyesinde sabit kullanacağı makine-ekipman ortak makine parkı kapsamı dışında.",
+    "alinti": "Üretici örgütünün kendi bünyesinde sabit olarak tesis edeceği ve/veya kullanacağı makine ekipmanlar destek kapsamında olmayacaktır.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd"
+   },
+   {
+    "tur": "kural",
+    "metin": "Modern sera yeni tesis dekar başı maliyet tavanı (topraklı).",
+    "alinti": "Topraklı seralarda en fazla 1.200.000 TL/daa",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd"
+   },
+   {
+    "tur": "kural",
+    "metin": "Modern sera yeni tesis dekar başı maliyet tavanı (topraksız).",
+    "alinti": "Topraksız seralarda en fazla 1.500.000 TL/daa",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yüksek tünel dekar başı maliyet tavanı (ısıtma sistemi yok).",
+    "alinti": "Isıtma sistemi kullanılmadığında en fazla 850.000 TL/daa",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd"
+   },
+   {
+    "tur": "kural",
+    "metin": "Hibeye esas ara ödeme talebi için fatura alt sınırı.",
+    "alinti": "Hibeye esas ara ödeme talebi için kesilen fatura tutarı 5.000.000 TL’nin altında olamaz.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd"
+   },
+   {
+    "tur": "belge",
+    "metin": "Tarım arazisinde yatırımda Toprak Koruma izin belgesi başvuruda yüklenir.",
+    "alinti": "Tarım arazileri üzerinde yapılacak yatırımlar için, 3/7/2005 tarihli ve 5403 sayılı Toprak Koruma ve Arazi Kullanımı Kanunu kapsamında alınan izin belgesi, başvuru aşamasında veri giriş sistemine yüklenir.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bireysel/tasarruflu sulama: hibeye esas proje tutarı 10.000.000 TL'yi geçemez (Tebliğ 2026/10).",
+    "alinti": "Hibeye esas proje tutarı 10.000.000 TL’yi geçemez.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.htm"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Tasarruflu sulama: damla sulama %50.",
+    "alinti": "Tarla içi damla sulama sistemleri için %50.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.htm"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Tasarruflu sulama: akıllı sulama/otomasyon %70.",
+    "alinti": "Akıllı sulama/otomasyon sistemleri ( sensör , kontrol, uzaktan yönetim) için %70.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.htm"
+   },
+   {
+    "tur": "kural",
+    "metin": "Tasarruflu sulama: montaj hibe sözleşmesinden sonra 75 gün içinde tamamlanmalı (Bilecik İl Müdürlüğü duyurusu).",
+    "alinti": "alımı yapılan makine, ekipman ve malzemelerin 75 gün içerisinde tarlada montajının tamamlanmış olması gerekir",
+    "kaynak_url": "https://bilecik.tarimorman.gov.tr/Duyuru/677/Kirsal-Kalkinma-Yatirim-Programi-Kapsaminda-Tasarruflu-Tarimsal-Sulama-Sistemlerine-Yonelik-Yatirimlarin-Desteklenmesi-Hakkinda-Teblig-_teblig-No-2026_10_-Ve-Uygulama-Rehberi-Yayimlandi"
+   },
+   {
+    "tur": "sart",
+    "metin": "Bireysel sulama: kamudan bağımsız, parsel ÇKS kayıtlı, Su Kullanım İzin Belgesi şart (Bayburt İl Müdürlüğü duyurusu).",
+    "alinti": "Başvuru yapacak olan gerçek ve tüzel kişilerin Kamudan bağımsız olması, Başvuru yapılacak parselin ÇKS sistemine kayıtlı olması ve Su Kullanım İzin Belgesine sahip olması gerekmektedir.",
+    "kaynak_url": "https://bayburt.tarimorman.gov.tr/Duyuru/208/2026-Yili-Bireysel-Sulama-Sistemlerinin-Desteklenmesi-Projesi-Basvurulari-Basladi"
+   }
+  ],
+  "cagrilar": [
+   {
+    "ad": "KKYDP 2026 Başvuru Dönemi (Tebliğ No: 2026/9; ekonomik yatırımlar, makine-ekipman, ortak makine parkı)",
+    "acilis": "2026-04-29",
+    "kapanis": "2026-06-30",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd",
+    "alinti": "Başvurular 29/4/2026 tarihinde başlayıp 30/6/2026 tarihi saat 23:59’da sona erecektir."
+   },
+   {
+    "ad": "Tasarruflu Tarımsal Sulama Sistemleri / bireysel sulama 2026 başvuru dönemi (Tebliğ No: 2026/10)",
+    "acilis": null,
+    "kapanis": "2026-06-30",
+    "kaynak_url": "https://mugla.tarimorman.gov.tr/Haber/1289/Kirsal-Kalkinma-Yatirimlari-Desteklemelerinde-Basvuru-Suresi-30-Hazirana-Uzatildi",
+    "alinti": "Kırsal Kalkınma Yatırımlarının Desteklenmesi Programı ile Tasarruflu Tarımsal Sulama Sistemleri Desteklemeleri kapsamında başvuru süresi 30 Haziran 2026 tarihine kadar uzatılmıştır."
+   }
+  ]
+ },
+ "mesleki-egitim-devlet-katkisi-3308": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "İşletme ile öğrenci arasında mesleki eğitim sözleşmesi olmalı; ücret ve ücret artışları bu sözleşmeyle belirlenir.",
+    "alinti": "Aday çırak ve çıraklar ile işletmelerde mesleki eğitim gören, staj veya tamamlayıcı eğitime devam eden öğrencilere işletmeler tarafından ödenecek ücret ve bu ücretlerdeki artışlar, düzenlenecek sözleşme ile tespit edilir.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3308.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ücret alt sınırı (süreli Geçici 12 hükmü): asgari ücretin net tutarının yüzde otuzu; kalfalık yeterliğini kazanan MESEM 12’nci sınıf öğrencilerine yüzde elli. Sözleşme bunun altında ücret öngöremez.",
+    "alinti": "25 inci maddenin birinci fıkrası kapsamında yapılacak ödemeler asgari ücretin net tutarının yüzde otuzundan, kalfalık yeterliğini kazanan mesleki eğitim merkezi 12’nci sınıf öğrencilerine yapılacak ödemeler asgari ücretin yüzde ellisinden az olamaz.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3308.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Kalıcı 25 inci madde alt sınırı iş yeri büyüklüğüne göre ayrışır: yirmi ve üzerinde personelde yüzde otuz, yirmiden az personelde yüzde onbeş.",
+    "alinti": "yirmi ve üzerinde personel çalıştıran işyerlerinde yüzde otuzundan, yirmiden az personel çalıştıran işyerlerinde yüzde onbeşinden",
+    "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3308.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Katkı oranı personel sayısına bağlıdır (MESEM dışındaki okul ve kurumların öğrencileri): yirmiden az personel için üçte iki, yirmi ve üzerinde personel için üçte bir.",
+    "alinti": "Mesleki eğitim merkezi programı dışındaki okul ve kurumlarda öğrenim gören öğrencilere ödenebilecek en az ücretin; yirmiden az personel çalıştıran işletmeler için üçte ikisi, yirmi ve üzerinde personel çalıştıran işletmeler için üçte biri;",
+    "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3308.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "MESEM öğrencilerinde ödenebilecek en az ücretin tamamı Devlet katkısı olarak ödenir; işletme büyüklüğü fark etmez.",
+    "alinti": "mesleki eğitim merkezi programına devam eden öğrencilere işletmeler tarafından ödenebilecek en az ücretin tamamı işletme büyüklüğüne bakılmaksızın Devlet katkısı olarak işletmelere geri ödenmektedir.",
+    "kaynak_url": "https://meslegimhayatim.meb.gov.tr/egitim/devlet-destegi"
+   },
+   {
+    "tur": "sart",
+    "metin": "Kamu kurum ve kuruluşlarına Devlet katkısı ödenmez; stajını okulda yapan öğrenciler ve programı gereği staj zorunluluğu olmayan yükseköğretim öğrencileri kapsam dışıdır.",
+    "alinti": "İşletmelerde mesleki eğitim veya stajını okulda yapan öğrenciler, öğretim programı gereği staj yapmak zorunda olmayan yükseköğretim öğrencileri ile kamu kurum ve kuruluşları Devlet katkısı uygulaması kapsamı dışındadır.",
+    "kaynak_url": "https://meslegimhayatim.meb.gov.tr/egitim/devlet-destegi"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Öğrencilerin sigorta primleri asgari ücretin yüzde ellisi üzerinden MEB ve ilgili üniversite bütçesinden karşılanır (Devlet katkısından ayrı bir destektir).",
+    "alinti": "sigorta primleri asgari ücretin yüzde ellisi üzerinden, Bakanlık ile mesleki ve teknik eğitim yapan yükseköğretim kurumlarının bağlı olduğu üniversitelerin bütçesine konulan ödenekten karşılanır.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3308.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Süre sınırı: Devlet katkısı süreli bir uygulamadır; son bulunan Cumhurbaşkanı kararı 2021-2022 eğitim ve öğretim yılından itibaren 5 eğitim ve öğretim yılı uzatmıştır. Yeni dönem için uzatma kararını teyit edin.",
+    "alinti": "2021-2022 eğitim ve öğretim yılından itibaren 5 eğitim ve öğretim yılı uzatılmasına ilişkin Cumhurbaşkanı kararı Resmi Gazete'de yayımlandı.",
+    "kaynak_url": "https://www.meb.gov.tr/staj-ucretine-devlet-katkisi-5-egitim-yili-uzatildi/haber/24993/tr"
+   }
+  ],
+  "cagrilar": []
+ }
+}

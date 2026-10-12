@@ -21,25 +21,23 @@ profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'Konya', 'calisan
     gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: dijital, ihracat.
 10. [1] Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: dijital, ihracat.
-11. [1] 2026 Yılı İmalat Sanayinde Dönüşüm Teknik Destek Programı — Mevlana Kalkınma Ajansı (aktif=True)
-    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Bölgeniz (Konya) bu programın kapsamındaki iller arasında.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-12. [1] İhracat Destek Paketi — KGF (aktif=True)
+11. [1] İhracat Konsorsiyumu Desteği (5973 sayılı Karar m.20) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-13. [1] E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) — Ticaret Bakanlığı (aktif=True)
-    gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: dijital, ihracat.
-    eksik: Kaydın aradığı en az 500.000 USD ihracat eşiği yıllık cironuzun üzerinde.
-14. [1] Türk Eximbank Faizsiz Sevk Öncesi İhracatın Finansmanı - SÖİF (katılım bankaları aracılığıyla kısa vadeli faizsiz ihracat finansmanı) — Türk Eximbank (aktif=True)
+12. [1] Pazara Giriş Projesi Hazırlama Desteği (5973 sayılı Karar m.5) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-15. [1] ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ — KGF (aktif=True)
+13. [1] Pazara Giriş Rapor Desteği (5973 sayılı Karar m.21) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-16. [1] Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) — Ticaret Bakanlığı (aktif=True)
-    gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: dijital, ihracat.
-    eksik: Kaydın aradığı en az 1.000.000 USD ihracat eşiği yıllık cironuzun üzerinde.
-17. [1] Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) — Türk Eximbank (aktif=True)
+14. [1] Sanal Fuar Organizasyonu Desteği (5973 sayılı Karar m.23) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-18. [1] Gemi ve Yat Sektöründe Faaliyet Gösteren Şirketlere Tasarım Desteği (5973 sayılı Karar m.16) — Ticaret Bakanlığı (aktif=True)
+15. [1] Sanal Ticaret Heyeti Desteği (5973 sayılı Karar m.25) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-19. [1] Türk Eximbank IBRD Yeşil İhracat Destek Kredisi (AB karbon sınır düzenlemesine yönelik yeşil dönüşüm yatırımları için orta-uzun vadeli kredi) — Türk Eximbank (aktif=True)
+16. [1] Sektörel Ticaret Heyeti ve Alım Heyeti Desteği (5973 sayılı Karar m.24) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-20. [1] Hizmet Sektörleri Sürdürülebilirlik Programı — Sürdürülebilirlik Projesi Desteği (10962 sayılı Karar m.34) — Ticaret Bakanlığı (aktif=True)
+17. [1] Tasarım Organizasyonu Desteği (5973 sayılı Karar m.26) — Ticaret Bakanlığı (aktif=True)
+    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
+18. [1] Tasarımcı Şirket ve Tasarım Ofisi Desteği (5973 sayılı Karar m.15) — Ticaret Bakanlığı (aktif=True)
+    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
+19. [1] TURQUALITY® Tanıtım Projesi Desteği (5973 sayılı Karar m.27) — Ticaret Bakanlığı (aktif=True)
+    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
+20. [1] UR-GE Proje Desteği (5973 sayılı Karar m.19) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.

@@ -1,12 +1,13 @@
 <!-- persona: antalya_otel | soru: Butik otelimizi yenilemek için kredi ya da hibe var mı? -->
 **Kısa cevap:**
+- Hibe: sorunuzla eşleşen hibe programlarının hiçbiri şu an size açık görünmüyor (IPARD III — Çiftlik Faaliyetlerinin Çeşitlendirilmesi ve İş Geliştirme (Tedbir 302 / M7) — kapalı). Aşağıdaki açık seçenekler kredi, kefalet ya da diğer destek türleridir.
 - Öne çıkan: **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)** (Sanayi ve Teknoloji Bakanlığı) — şartlı — karar şartını teyit edin; başlıca şart: Karar şartı: EK-3 55.1 kalemi: Oteller ve benzeri konaklama yerleri 50 oda ve üzeri (Otel, Tatil Köyü, Butik Otel ve Özel Konaklama Tesisi desteklenir) (MADDE 5/1, 10); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı).
 - Hibe (geri ödemesiz): sorunuza ve profilinize açık kayıtlı bir hibe programı bulamadım; aşağıdaki programlar geri ödemesiz destek değildir (kredi, kefalet, vergi avantajı, eğitim ya da yatırım).
 - Yatırım teşvik bölgeniz: 1. bölge (Karar değerlendirmesinden).
 - Asgari sabit yatırım tutarı 1. bölgede 12 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez.
 - Destek unsurları (Karar metninden): vergi indirimi: yatırıma katkı oranı %20, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 1 yıl (MADDE 18, 1. bölge); faiz/kâr payı desteği: bu programda yalnızca 4, 5, 6. bölgelerde; 1. bölgede YOK (MADDE 15/1-c); makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
-- Diğer seçenekler: TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin); TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); HALKBANK İLK ADIM KREDİSİ PROJESİ (şarta bağlı).
-- 1 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
+- Diğer seçenekler: TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin); DİJİTAL KEFALET DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin); KGF Genel Destek Programı (profilinize göre engel yok — şartları teyit edin).
+- 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: hizmet (NACE 55.10)
@@ -45,20 +46,24 @@
   - Kefalet talepleri yalnız TL cinsinden yapılır — resmî metin: “Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır.”
 - **Başvuru:** Kredi veren bankalar: Akbank, Denizbank, Garanti BBVA, Halkbank, QNB Bank, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım (yalnızca TL kefalet) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi
 
-**TKYB KREDİ DESTEK PAKETİ — KGF**
+**DİJİTAL KEFALET DESTEK PROGRAMI — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman.
 - **Karşıladığı ihtiyaç:** kredi/finansman
-- **Kredi ve kefalet limitleri:** Kefalet 150 Milyon TL, kredi 500 Milyon TL; kefalet oranı %80
+- **Kredi ve kefalet limitleri:** %80 kefalet; şahıs 2,2 Milyon / tüzel 5 Milyon TL; yıllık %2; başvuru ücreti 10.000 TL
 - **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.
-- **Başvuru:** Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi
+- **Kurallar (kayıttan):**
+  - Kredi bankanın kullandıracağı yeni ve ilave kredi olmalı; faaliyet konusu dışında döviz/kıymetli maden alımında veya refinansmanda kullanılamaz (kural, işaretlenmez) — resmî metin: “Program kapsamında kullandırılan krediler, yararlanıcıların faaliyet konuları dışında döviz veya kıymetli maden alımında ya da refinansman amacıyla kullanılamaz.”
+- **Başvuru:** Kredi veren bankalar: Akbank (krediler dijital kanallardan tahsis yöntemiyle kullandırılır) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/dijital-kefalet-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- KGF Genel Destek Programı (KGF) — profilinize göre engel yok — şartları teyit edin; Sürekli (banka şubesi üzerinden bireysel başvuru)
+- TKYB KREDİ DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 - HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
-- Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi (Kültür ve Turizm Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Programın sürdüğü teyit edilmeli. Turizm yatırımı belgesi başvuruları, belgelerin Bakanlığa eksiksiz tesliminden itibaren altmış gün içinde sonuçlandırılır. Teşvik kapsamı için sayfada çağrı/dönem tarihi verilmemiştir.
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
+- IPARD III — Çiftlik Faaliyetlerinin Çeşitlendirilmesi ve İş Geliştirme (Tedbir 302 / M7) (TKDK) — kapalı — yeni çağrı planlanıyor, tarih yok: program başvuruya açık değil (2026 çağrı takviminde yer alan M7 (Tedbir 302) çağrısının ilan tarihi, 30.09.2026 tarihli duyuruyla ileri bir tarihe ertelenmiştir; başvuruların yıl içinde alınması planlandığı belirtilmiştir, tarih verilmemiştir.
 
 **Birlikte kullanım (resmî metinden):**
 - [Sanayi ve Teknoloji Bakanlığı] Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")

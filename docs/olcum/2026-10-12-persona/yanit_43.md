@@ -1,5 +1,6 @@
 <!-- persona: ikas_seramik | soru: Seramik fırını almak için KOSGEB'den destek alabilir miyim? -->
 **Kısa cevap:**
+- Kısa hüküm: KOSGEB programlarından 1 tanesi profilinize göre engelsiz görünüyor (YÖNDE - Yönderlik ve Değerlendirme Destek Programı), 2 program size ya da başvuruya kapalı.
 - Sorduğunuz makine/tesis yatırımı için bu kurumun programı: Kapasite Geliştirme Destek Programı — uygun değil (programın sektör kapsamı (Ar-Ge / bilişim, imalat) faaliyetinizi (NACE 47.91) kapsamıyor; ölçek uygun değil: 1 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık); yukarıdaki program bu ihtiyaca doğrudan yönelik değildir.
 - **YÖNDE - Yönderlik ve Değerlendirme Destek Programı** (KOSGEB)
 - Sizin için: profilinize göre engel yok — şartları teyit edin; başlıca şart: KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması.
@@ -27,7 +28,7 @@
   - ☐ Dijital Dönüşüm desteği için hizmeti TÜSSİDE belgeli dijital dönüşüm danışmanından al (en fazla 2 kez, iki hizmet arası en az 1 yıl) — resmî metin: “İşletme bu destekten en fazla 2 defa yararlanabilir; iki hizmet arasında en az 1 yıl süre olmalıdır.”
   - ☐ Sürdürülebilirlik Raporlaması: rapor TSRS'ye uygun olmalı ve güvence denetimi bağımsız denetim kuruluşunca yapılmalı (en fazla 2 rapor) — resmî metin: “Sürdürülebilirlik raporunun güvence denetimi bir bağımsız denetim kuruluşu tarafından yapılmalıdır.”
   - ☐ YODA desteği için hizmeti Bakanlıkça bildirilen yalın dönüşüm danışmanından al; ikinci yararlanma için ilk raporda önerilen model fabrika hizmetleri tamamlanmış olmalı — resmî metin: “İkinci defa yararlanmak için ilk YODA raporunda önerilen model fabrika hizmetlerinin tamamlanmış olması şarttır.”
-  - ☐ Bağımsız Değerlendirme desteği yalnız Teknoloji Odaklı Sanayi Hamlesi çağrı planındaki ürünlerin proje başvuruları içindir; rapor Bakanlıkça ilan edilen Bağımsız Danışmanlık Firmasından alınmalı — resmî metin: “Bağımsız Değerlendirme Raporu Bakanlık tarafından ilan edilen Bağımsız Danışmanlık Firmaları tarafından hazırlanır.”
+  - ve 1 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - Ödemeler (katkı payı dahil) banka, PTTBank veya ödeme kuruluşu üzerinden yapılmalı; ödeme talebi program bitiminden en geç 4 ay sonra yapılmalı — resmî metin: “Destek ödeme talebi, en geç programın tamamlanma tarihinden 4 ay sonrasına kadar yapılmalıdır.”
 - **Başvuru:** KOSGEB sistemi (www.kosgeb.gov.tr) üzerinden YÖNDE başvuru formu ile — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9165/yonde-yonderlik-ve-degerlendirme-destek-programi

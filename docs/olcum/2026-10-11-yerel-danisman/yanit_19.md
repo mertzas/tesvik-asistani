@@ -17,7 +17,7 @@
 
 **Teknoloji Geliştirme Bölgesi (Teknopark) Gelir ve Kurumlar Vergisi İstisnası (4691 sayılı Kanun geçici madde 2) — Sanayi ve Teknoloji Bakanlığı**
 - **Başvuru dönemi:** Çağrı yoktur; istisna Bölgede faaliyet gösterildiği sürece 31/12/2028 tarihine kadar uygulanır.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (hizmet) bu desteğin kapsamına uygun.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (hizmet) bu desteğin kapsamına uygun; teyit: Yalnız teknoloji geliştirme bölgesinde Ar-Ge/yazılım faaliyeti yürüten firmalar içindir.
 - **Kapsam:** yalnız: şahıs işletmesi, limited şirket, anonim şirket
 - **Destek:** Vergi istisnası: Bölgede münhasıran yazılım, tasarım ve Ar-Ge faaliyetlerinden elde edilen kazançlar 31/12/2028 tarihine kadar gelir ve kurumlar vergisinden müstesnadır (). İstisna edilen kazancı 1.000.000 Türk lirası ve üzerinde olanlar, bu tutarın yüzde ikisini geçici bir hesaba aktarır (yıllık yükümlülük en çok 20.000.000 Türk lirası) ve yıl sonuna kadar girişim sermayesi fonu payı alımında ya da kuluçka merkezlerindeki girişimcilere sermaye koymada kullanmak zorundadır
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
@@ -30,7 +30,7 @@
 
 **Teknoloji Geliştirme Bölgesi Personel Gelir Vergisi Teşviki (4691 sayılı Kanun geçici madde 2, ikinci-üçüncü fıkra) — Sanayi ve Teknoloji Bakanlığı**
 - **Başvuru dönemi:** Çağrı yoktur; Bölgede çalışılan sürece 31/12/2028 tarihine kadar uygulanır.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (hizmet) bu desteğin kapsamına uygun.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (hizmet) bu desteğin kapsamına uygun; teyit: Yalnız teknoloji geliştirme bölgesinde Ar-Ge/yazılım faaliyeti yürüten firmalar içindir.
 - **Kapsam:** yalnız: şahıs işletmesi, limited şirket, anonim şirket
 - **Destek:** Vergi teşviki: Bölgede çalışan Ar-Ge, tasarım ve destek personelinin ücretleri üzerinden (asgari geçim indirimi uygulandıktan sonra) hesaplanan gelir vergisi muhtasar beyannameden indirilerek terkin edilir; teşvik 31/12/2028 tarihine kadar uygulanır. Ücretlere ilişkin kâğıtlar damga vergisinden istisnadır. Destek personeli sayısı Ar-Ge ve tasarım personeli sayısının yüzde onunu aşamaz; toplam personeli on beşe kadar olan Bölge firmalarında bu oran yüzde yirmidir.
 - **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.
@@ -50,7 +50,7 @@
   - ☐ Asgari sabit yatırım tutarı 6. bölgede 6 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez
   - ☐ Yatırım konunuz Karar EK-3 listesinde yer alıyor ve oradaki şartları sağlıyor (Dijital Dönüşüm veya Yeşil Dönüşüm Programı kapsamında desteklenen yatırımlar ile sanayi sicil belgeli mevcut tesislerde deprem/yangın riskine karşı yatırımlar için bu şart aranmaz). — resmî metin: “Desteklerden yararlanacak yatırımların ek-3’te belirtilen yatırım konularına yönelik olması ve bu konular için belirtilen şartları sağlaması gerekir.”
   - ☐ Yatırım, Karar m.9/1'de sayılan konulardan (a-y bentleri) en az birine girmeli (ör. Dijital/Yeşil Dönüşüm, yüksek veya orta-yüksek teknolojili ürün, 6. bölge, savunma, Ar-Ge, lisanslı depoculuk). — resmî metin: “Öncelikli Yatırımlar Teşvik Sistemi kapsamında aşağıda belirtilen yatırım konuları desteklenir.”
-  - ☐ Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2). — resmî metin: “1 inci ve 2 nci bölgelerde 12 milyon TL, diğer bölgelerde ise 6 milyon TL olması gerekir.”
+  - ve 1 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - Finansal kiralama yöntemiyle yapılacak yatırımlarda, kiralamaya konu makine ve teçhizatın toplam tutarının her bir finansal kiralama şirketi için asgari 3 milyon TL olması (MADDE 5/3).
   - DİKKAT: teşvik belgesi müracaat tarihinden ÖNCE gerçekleştirilmiş yatırım harcamaları belge kapsamına ALINMAZ (MADDE 5/6) - harcamaya başlamadan önce başvurun. — resmî metin: “Teşvik belgesi düzenlenmesine ilişkin müracaat tarihinden önce gerçekleştirilmiş bulunan yatırım harcamaları teşvik belgesi kapsamına alınmaz.”

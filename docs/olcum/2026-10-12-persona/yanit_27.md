@@ -28,9 +28,7 @@
   - ☐ Tanıtımı yapılan ürünler Türkiye'de üretilmiş olmalı — resmî metin: “Türkiye’de üretilen ürünler ile ilgili yurt dışında gerçekleştirilen tanıtım ve pazarlama giderleri”
   - ☐ Tanıtım yapılacak ülkede kapsama alınmış yurt dışı birim yoksa: Türkiye'de tescilli marka ve tanıtım yapılacak ülkede marka tescili ya da tescil başvurusu olmalı — resmî metin: “yurt içi marka tescil belgesi bulunması ve tanıtım yapacağı ülkede marka tescil belgesine sahip ya da marka tescili için başvurulmuş olması koşuluyla”
   - ☐ Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz
-  - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız
-  - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız
-  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
+  - ve 4 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12
 
 **TURQUALITY® Tanıtım Projesi Desteği (5973 sayılı Karar m.27) — Ticaret Bakanlığı**
@@ -48,25 +46,10 @@
   - Birden fazla birliğin ortak projesinde %75 oranında ve birlik başına yıllık en fazla 12.000.000 TL desteklenir; destek proje başına en fazla dört yıl sürer (Karar metnindeki taban tutar; 2026 güncel üst limiti için tutar alanına bakın)
 - **Başvuru:** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS); proje başvurusu Bakanlığa sistem üzerinden, ödeme başvurusu incelemeci kuruluşa yapılır — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-27
 
-**Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
-- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır.
-- **Karşıladığı ihtiyaç:** reklam, tanıtım ve marka
-- **Destek:** Hibe değil kredi: marka geliştirme/tutundurma harcamaları ile yurt dışında yerleşik marka ve ilgili mağaza, tesis alım bedelleri finanse edilir. Firma limitleri Eximbank'ça firma bazında belirlenir; faiz/kar payı vade, tutar ve para birimine göre belirlenir.
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır.
-  - ☐ Türkiye'de yerleşik döviz kazandırıcı hizmetler sektöründe faaliyet gösteren firmalar da yararlanır. — resmî metin: “Türkiye’de yerleşik döviz kazandırıcı hizmetler sektöründe faaliyet gösteren firmalar bu programdan yararlanabilecektir.”
-  - ☐ Marka alımında markanın bilinirliği yeterli olmalı; markalı ürünler yurt içinde üretilmeli ve ihraç edilmelidir.
-- **Kurallar (kayıttan):**
-  - İhracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
-  - Teminat: Kesin Teminat Mektubu. — resmî metin: “Kesin Teminat Mektubu, karşılığında kullandırılır.”
-  - Firma limiti Eximbank'ın tahsis çalışmasıyla firma bazında belirlenir. — resmî metin: “Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.”
-- **Başvuru:** Türk Eximbank (kaynak sayfada başvuru kanalı ayrıca belirtilmemiştir; Kredi Talep Formu ve belgeler Bankaya sunulur) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi
-
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır); Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
 - E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) (Ticaret Bakanlığı) — düşük olasılık — cironuz eşiğin altında (yıllık cironuz (6.000.000 TL), kaydın aradığı en az 500.000 USD ihracat eşiğinin TL karşılığından az); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
 - Marka ve TURQUALITY® Desteği (5973 sayılı Karar m.17) (Ticaret Bakanlığı) — düşük olasılık — cironuz eşiğin altında (yıllık cironuz (6.000.000 TL), kaydın aradığı en az 3.000.000 USD ihracat eşiğinin TL karşılığından az); Çağrı yoktur; kapsama alınma başvurusu sistem üzerinden Bakanlığa yapılır. Ödeme başvurusu, ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde
-- Hizmet Sektörleri Markalaşma Programı — Markalaşma Programı Desteği (10962 sayılı Karar m.33) (Ticaret Bakanlığı) — düşük olasılık — cironuz eşiğin altında (yıllık cironuz (6.000.000 TL), kaydın aradığı en az 1.500.000 USD gelir eşiğinin TL karşılığından az (1 USD 30 TL'nin üzerinde)); Çağrı yoktur; önce Markalaşma Programı kapsama alım başvurusu (EK-32 belgeleri) yapılır, ardından ön inceleme çalışması ve Stratejik İş Planı (SİP) süreci işler; destek ödemesi SİP onayından sonra yapılır.
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - KADIN GİRİŞİMCİ DESTEK PAKETİ (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)
@@ -88,7 +71,6 @@
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. TURQUALITY® Tanıtım Projesi Desteği (5973 sayılı Karar m.27): uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: Projeler, bütçelerini içeren proje ile TİM/ihracatçı birliklerince doğrudan Bakanlığa sistem üzerinden sunulur ve Bakanlıkça sistem üzerinden onaylanmalıdır.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
-2. Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı): uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

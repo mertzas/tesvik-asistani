@@ -4,7 +4,7 @@
 - Destek: Ücretsiz eğitim (parasal destek değildir): geleneksel ve ileri girişimcilik eğitimleri ücretsiz ve aracısız verilir.
 - Program: KOSGEB'in girişimcilik eğitim platformu KOSGEB e-Akademi üzerinden geleneksel ve ileri girişimcilik eğitimleri online olarak alınabilir. Eğitimler ücretsiz ve aracısızdır; lms.kosgeb.gov.tr adresinden başvurulur. KOSGEB 2020 yılı itibarıyla yüz yüze eğitimden tamamen online eğitime geçmiştir. […]
 - Diğer seçenekler: 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) (şarta bağlı).
-- 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
+- 3 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: Ar-Ge / bilişim (NACE 62.01)
@@ -41,8 +41,9 @@
 - **Başvuru:** PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim
 
 **Size kapalı ya da başvuruya kapalı programlar:**
-- 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) (TUBITAK) — kapalı: program başvuruya açık değil (TÜBİTAK, BiGG 1. aşamasını 2026-2028 döneminde 1812 Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) çerçevesinde yürütüyor (1612 çağrı sayfası); 1512 program sayfası erişime kapalı. Yeni başvuru için 1812 çağrılarına bakın)
+- 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) (TUBITAK) — kapalı: program başvuruya açık değil (TÜBİTAK, BiGG 1. aşamasını 2026-2028 döneminde 1812 Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) çerçevesinde yürütüyor (1612 çağrı sayfası); 1512 program sayfası erişime kapalı.
 - Accelerate İzmir Uluslararası Büyüme Odaklı Hızlandırma Programı — 2026 / 5. Dönem (İzmir Kalkınma Ajansı) — kapalı: program başvuruya açık değil (Son başvuru tarihi 8 Mart 2026 olup geçmiştir)
+- Genç Girişimcilerde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20) (Gelir İdaresi Başkanlığı) — uygun değil: yalnızca şahıs işletmesi başvurabilir (henüz şirket kurulmadı kapsam dışı)
 
 **Girişim ön değerlendirmesi**
 Profilinizden hesaplanan HUKS ön skoru (TÜBİTAK BiGG değerlendirmesinin sistemce hesaplanabilen kısmı; resmî puan değildir):

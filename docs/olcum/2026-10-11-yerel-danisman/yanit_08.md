@@ -1,5 +1,6 @@
 <!-- persona: eticaret | soru: Pazaryeri üyelik gideri desteği hâlâ yıllık 15.102 TL mi, hangi Karar geçerli? -->
 **Kısa cevap:**
+- Kısa hüküm: Ticaret Bakanlığı'da profilinize engelsiz açık, parasal destek veren bir program görünmüyor; 1 program şarta bağlı, 1 program size ya da başvuruya kapalı.
 - **Pazara Girişte Dijital Faaliyetlerin Desteklenmesi** (Ticaret Bakanlığı)
 - Sorduğunuz tutar: kayıtta «15.102 TL 2022 yılı değeridir».
 - Sizin için: **kapalı** — program başvuruya açık değil (dayanağı 2573 sayılı Karar 18.08.2022'de mülga (Bakanlık sayfası: güncel karşılığı 5986 m.8 Çevrim İçi Mağaza ve m.4 Dijital Pazaryeri Tanıtım desteği).
@@ -36,8 +37,7 @@
   - ☐ Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru — kurumdan teyit edin
   - ☐ Desteklenen ürünler Türk ürünü olmalı (ürün belgesi, üretim yeri ve marka ayrıntılarını E-İhracat Genelgesi'nden teyit edin) — resmî metin: “pazaryerlerinde Türk ürünlerinin ve markalarının çevrim”
   - ☐ Önceki yıl GB + BGB (e-ticaret) ihracat toplamı 1.000.000 ABD dolarının üzerinde olmalı — kurumdan teyit edin
-  - ☐ Pazaryeri hedef ülkelerden birinde olmalı — resmî metin: “hedef ülkelerin yurt dışı pazaryerlerinde çevrim içi mağaza açılmasına, bu mağazaların yıllık”
-  - ☐ Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) — resmî metin: “bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir”
+  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-8
 
 **Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):

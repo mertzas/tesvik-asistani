@@ -40,28 +40,13 @@
   - İhracat taahhüdü tutarı 5 yıla kadar vadeli kredilerde 1 katı, 5 yıldan uzun vadeli kredilerde 1,5 katıdır.
 - **Başvuru:** Bağlı bulunulan Türk Eximbank Şubesi (geçerli limit varsa Kredi Talep Formu ve onaylı harcama listesiyle) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi
 
-**Türk Eximbank Sevk Öncesi İhracat Kredisi (SÖİK) — aracı bankalar üzerinden — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; 
-- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç, Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan imalatçı firmalar yararlanır.
-- **Karşıladığı ihtiyaç:** ihracat, kredi/finansman
-- **Destek:** Hibe değil kredi: Eximbank firma bazında limit belirleyebilir; işlem bazında alt limit yoktur. Faiz/kar payı oranları vade, tutar ve para birimine göre belirlenir; aracı bankalar TL kredilerde azami yıllık 1, döviz kredilerinde azami yıllık 0,5 puan aracılık komisyonu ekleyebilir.
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç, Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan imalatçı firmalar yararlanır.
-  - ☐ Serbest bölge kullanıcıları (üretim, alım-satım veya bakım-onarım ruhsatı sahibi) de yararlanabilir. — resmî metin: “Türkiye’de kurulu serbest bölgelerde, üretim, alım-satım veya bakım-onarım ruhsatı sahibi kullanıcıların,”
-- **Kurallar (kayıttan):**
-  - Eximbank likidite koşullarını dikkate alarak firma bazında limit belirleyebilir. — resmî metin: “Türk Eximbank likidite koşullarını dikkate alarak firma bazında limit belirleyebilir.”
-  - İşlem bazında alt limit yoktur. — resmî metin: “SÖİK programımız kapsamında işlem bazında herhangi bir alt limit bulunmamaktadır.”
-  - Aracı bankalar TL kredilerde azami yıllık 1, döviz kredilerinde azami yıllık 0,5 puan aracılık komisyonu ilave edebilir. — resmî metin: “Aracı bankalar, faiz ve kar payı oranları üzerine TL kredilerde azami yıllık 1 (bir), döviz kredilerinde azami yıllık 0,5 (yarım) puan aracılık komisyonu ilave edebilirler.”
-- **Başvuru:** Türk Eximbank'ın kredi tahsis ettiği aracı bankalar (kredi müracaatı aracı bankalara yapılır) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi
-
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Türk Eximbank Sevk Öncesi İhracat Kredisi (SÖİK) — aracı bankalar üzerinden (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç, Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan imalatçı firmalar yararlanır); Dönemsel çağrı yoktur; 
 - Türk Eximbank Reeskont Kredisi (TCMB işbirliğiyle, TL/Döviz) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracata yönelik mal üreten imalatçılar, döviz kazandırıcı hizmet ihracı yapan firmalar ve tüm ihracatçılar yararlanır); Dönemsel çağrı yoktur; 
 - Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır); Dönemsel çağrı yoktur; 
-- Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik imalatçı-ihracatçı, ihracata yönelik mal üreten imalatçı ve ihracatçı vasfına haiz firmalar, Türkiye menşeli veya Dahilde İşleme Rejimi kapsamında ithal edilen malların ihracı için yararlanabilir); Dönemsel çağrı yoktur; geçerli kredi limiti olan firma kredi talep formu ve onaylı harcama listesiyle şubeye başvurur. Harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar olabilir.
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Türk Eximbank E-İhracat Destek Kredisi:** KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir.
-- **Türk Eximbank Sevk Öncesi İhracat Kredisi (SÖİK) — aracı bankalar üzerinden:** Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç, Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan imalatçı firmalar yararlanır.
 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.

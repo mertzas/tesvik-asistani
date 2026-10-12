@@ -41,25 +41,14 @@
   - Ormandan tahsisli arazilerde yapılan üretimlere iyi tarım uygulamaları desteği ödenmez. — resmî metin: “Ormandan tahsisli arazilerde yapılan üretimlere üretimi geliştirme desteği kapsamında yer alan organik tarım desteği ve iyi tarım uygulamaları desteği ödenmez.”
 - **Başvuru:** ÇKS/ÖKS/KOBÜKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (Destekleme Ödemesi Başvuru Dilekçesi); sertifika için Bakanlıkça yetkilendirilmiş kontrol/sertifikasyon kuruluşu. — https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#iyi-tarim
 
-**TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği — TARSİM**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi belirtilmemiştir.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.
-- **Destek:** Sigorta priminin devletçe karşılanan kısmı: genel yüzde 50; açık alan meyve, bazı sebzeler, patates, şekerpancarı, meyve-bağ fidanı ve kış donunda yüzde 70; köy bazlı verimde yüzde 70; büyükbaş dar kapsamlıda yüzde 60; gelir koruma sigortasında yüzde 60 (2026).
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Prim desteği Çiftçi Kayıt Sistemi'ne kayıtlı üreticilere uygulanan paketler için tanımlanmıştır; bitkisel üründe dolu ana riskiyle fırtına, hortum, yangın, heyelan, deprem, sel ve su baskını paket halindedir.
-- **Kurallar (kayıttan):**
-  - Hazine faiz destekli tarım kredisi kullanırken, kredi konusu varlık Tarım Sigortaları Kanunu kapsamındaysa devlet destekli tarım sigortası aranır. — resmî metin: “Kredi konusu varlığın 14/6/2005 tarihli ve 5363 sayılı Tarım Sigortaları Kanunu kapsamında olması halinde Devlet Destekli Tarım Sigortası aranır.”
-- **Başvuru:** TARSİM (tarsim.gov.tr); sigorta TARSİM kapsamında yapılır. Kaynak haberde başvuru kanalı ayrıca belirtilmemiştir. — https://www.tarimorman.gov.tr/Haber/6912/Tarsim-Tarafindan-2026da-Teminat-Altina-Alinacak-Urun-Ve-Riskler-Belirlendi
-
 ### 3. Darboğazlar ve Kritik Şartlar
-- **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Meyve-Sebze Üretim Destekleri (Temel Destek), İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı, TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
+- **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Meyve-Sebze Üretim Destekleri (Temel Destek), İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
 - **Meyve-Sebze Üretim Destekleri (Temel Destek):** Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak
 - **Meyve-Sebze Üretim Destekleri (Temel Destek):** Arazi/parsel bilgilerinin ÇKS'de güncel olması
 - **Meyve-Sebze Üretim Destekleri (Temel Destek):** Başvuru yeri: İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu)
 - **İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı):** Destek, ÇKS/ÖKS/KOBÜKS'de kayıtlı ürünler ve kayıtlı toplam alanı geçmemek üzere verilir; sertifika Tablo 8'deki ürün grubuna göre hesaplanır.
 - **İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı):** Başvuru, kayıtlı olduğunuz il/ilçe müdürlüğüne Destekleme Ödemesi Başvuru Dilekçesi ile şahsen veya yasal temsilci aracılığıyla yapılır.
 - **İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı):** Başvuru yeri: ÇKS/ÖKS/KOBÜKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (Destekleme Ödemesi Başvuru Dilekçesi); sertifika için Bakanlıkça yetkilendirilmiş kontrol/sertifikasyon kuruluşu.
-- **TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği:** Prim desteği Çiftçi Kayıt Sistemi'ne kayıtlı üreticilere uygulanan paketler için tanımlanmıştır; bitkisel üründe dolu ana riskiyle fırtına, hortum, yangın, heyelan, deprem, sel ve su baskını paket halindedir.
 
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: Çiftçi Kayıt Sistemi (ÇKS) kaydı.

@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **Türk Eximbank İhracata Yönelik Yatırım Kredisi (makine, teçhizat ve aksam harcamaları)** (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. Talep, Eximbank'ın fon uygunluğuna bağlı olarak işleme alınır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Kredi koşulları (hibe değil): Hibe değil kredi: kredi başvuru tarihinden azami 180 gün öncesine kadar yapılan makine, teçhizat ve aksam harcamaları KDV hariç tutar üzerinden finanse edilir. İhracat taahhüdü 5 yıla kadar vadeli kredilerde 1 katı, 5 yıldan uzun vadeli kredilerde 1,5 katıdır
-- Diğer seçenekler: Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (profilinize göre engel yok — şartları teyit edin); Türk Eximbank İhracata Hazırlık Kredisi (şarta bağlı); Türk Eximbank Sevk Öncesi İhracat Kredisi (SÖİK) — aracı bankalar üzerinden (şarta bağlı).
+- Diğer seçenekler: İhracat Destek Paketi (şarta bağlı); Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (profilinize göre engel yok — şartları teyit edin); Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (profilinize göre engel yok — şartları teyit edin).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 10.41)
@@ -26,6 +26,17 @@
   - İhracat taahhüdü tutarı 5 yıla kadar vadeli kredilerde 1 katı, 5 yıldan uzun vadeli kredilerde 1,5 katıdır.
 - **Başvuru:** Bağlı bulunulan Türk Eximbank Şubesi (geçerli limit varsa Kredi Talep Formu ve onaylı harcama listesiyle) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi
 
+**İhracat Destek Paketi — KGF**
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
+- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: İhracatçı veya döviz kazandırıcı hizmetler sektöründe faaliyet göstermek (KOBİ ve KOBİ dışı firmalar yararlanabilir).
+- **Karşıladığı ihtiyaç:** ihracat, kredi/finansman
+- **Kredi ve kefalet limitleri:** Azami 24 ay vade (anapara ödemesiz dahil); reeskont kredilerinde kefalet %100; komisyon %1
+- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ İhracatçı veya döviz kazandırıcı hizmetler sektöründe faaliyet göstermek (KOBİ ve KOBİ dışı firmalar yararlanabilir) — resmî metin: “İhracatçı veya döviz kazandırıcı hizmetler sektörlerinde faaliyet gösteren KOBİ ve KOBİ dışı firmaların finansmanı amaçlanmaktadır.”
+- **Kurallar (kayıttan):**
+  - Kredi yalnız TL kullandırılır; işletme kredisinin en fazla %10’u nakit verilebilir (bilgi, işaretlenmez) — resmî metin: “Yararlanıcıya tahsis edilen işletme kredisinin azami %10’u işletme harcamalarında kullanılmak üzere nakit olarak verilebilecektir.”
+- **Başvuru:** Kredi veren bankalar: Akbank, Denizbank, Garanti Bankası, Eximbank, Halkbank, İş Bankası, Türk Ekonomi Bankası, QNB Finansbank, Vakıfbank, Yapı Kredi Bankası, Ziraat Bankası (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/i-hracat-destek-paketi
+
 **Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi — Türk Eximbank**
 - **Başvuru dönemi:** Dönemsel çağrı yoktur; geçerli kredi limiti olan firma kredi talep formu ve onaylı harcama listesiyle şubeye başvurur. Harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar olabilir.
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (imalat) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman, ihracat.
@@ -38,23 +49,10 @@
   - Taahhüt tutarı: 5 yıla kadar vadeli kredilerde 1 katı, 5 yıldan uzun vadeli kredilerde 1,5 katı.
 - **Başvuru:** Türk Eximbank şubeleri (geçerli kredi limiti yoksa analiz başvuru evrakları Eximbank'a iletilir) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi
 
-**Türk Eximbank İhracata Hazırlık Kredisi — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; 
-- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ve faaliyet yürüten firmalar yararlanabilir.
-- **Karşıladığı ihtiyaç:** ihracat, kredi/finansman
-- **Destek:** Hibe değil kredi: tutar firma bazında Banka tarafından yapılan tahsis çalışmasıyla belirlenir; faiz/kar payı oranları vade, tutar ve para birimine göre belirlenir. İhracat veya döviz kazandırıcı hizmet taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ve faaliyet yürüten firmalar yararlanabilir.
-- **Kurallar (kayıttan):**
-  - İhracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
-  - Firma limiti Banka tarafından firma bazında belirlenir. — resmî metin: “Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.”
-  - Teminat: Kesin Teminat Mektubu veya İGE kefaleti. — resmî metin: “Kesin Teminat Mektubu, İhracatı Geliştirme A.Ş. (İGE) kefaleti karşılığında kullandırılır.”
-- **Başvuru:** Türk Eximbank (eximbank.gov.tr); teminat olarak İGE kefaleti için İhracatı Geliştirme A.Ş. — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi
-
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
+- Türk Eximbank İhracata Hazırlık Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ve faaliyet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur; 
 - Türk Eximbank Sevk Öncesi İhracat Kredisi (SÖİK) — aracı bankalar üzerinden (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç, Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan imalatçı firmalar yararlanır); Dönemsel çağrı yoktur; 
-- Türk Eximbank IBRD Yeşil İhracat Destek Kredisi (AB karbon sınır düzenlemesine yönelik yeşil dönüşüm yatırımları için orta-uzun vadeli kredi) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: AB'nin Sınırda Karbon Düzenleme Mekanizması (CBAM) kapsamında Faz 1 ve Faz 2'de yer alan sektörlerde faaliyet gösteren ihracatçı firmalar başvurabilir); Dönemsel çağrı yoktur; 
-- Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı, imalatçı-ihracatçı, ihraç kaydıyla nihai mal üreten imalatçı, serbest bölgede mukim ve üçüncü ülkelere satış yapan firmalar ile döviz kazandırıcı hizmet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur; 
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
@@ -66,7 +64,7 @@
 4. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Türk Eximbank İhracata Hazırlık Kredisi: uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ve faaliyet yürüten firmalar yararlanabilir.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
+1. İhracat Destek Paketi: uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: İhracatçı veya döviz kazandırıcı hizmetler sektöründe faaliyet göstermek (KOBİ ve KOBİ dışı firmalar yararlanabilir)); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

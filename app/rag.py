@@ -435,7 +435,8 @@ def panel_adaylari_ekle(query: str, matches: list, profil_kaydi) -> list:
     eklenir; dayanak denetiminin bağlamına da girer (hakem bulgusu 2026-10-12, 5-7. tur: şahıs işletmesinin panelinde
     4. sıradaki esnaf kredisi kredi sorusunun yanıtında yoktu)."""
     ihtiyac = set(soru_ihtiyaclari(query))
-    if profil_kaydi is None or not ihtiyac:
+    hibe_sorusu = bool(re.search(r"\bhibe", kucult(query))) and bool(yerel_danisman.soru_konulari(query))
+    if profil_kaydi is None or not (ihtiyac or hibe_sorusu):
         return matches
     from app.matching import esles
     db = SessionLocal()
@@ -443,11 +444,11 @@ def panel_adaylari_ekle(query: str, matches: list, profil_kaydi) -> list:
         mevcut = {t.id for t in matches}
         ek = [e.tesvik for e in esles(profil_kaydi, db, limit=10)
               if e.tesvik.id not in mevcut and e.tesvik.aktif_mi is not False
-              and program_ihtiyaclari(e.tesvik) & ihtiyac][:2]
+              and program_ihtiyaclari(e.tesvik) & ihtiyac][:2] if ihtiyac else []
         # "Hibe var mı?" sorusunda adaylarda hibe yoksa soruya uyan KAPALI hibe programları da eklenir; yanıt "şu an
         # kapalı, yeni çağrıyı izleyin" diyebilsin (2026-10-12: damla sulama hibesi sorusunda 2026 dönemi kapanan KKYDP
         # hiç anılmıyordu). Konu eşleşmesi sorudaki anahtar kelimeyle; sektör etiketi profile uymalı.
-        if (re.search(r"\bhibe", kucult(query)) and yerel_danisman.soru_konulari(query)
+        if (hibe_sorusu
                 and not any(yerel_danisman.hibe_mi(t) and yerel_danisman.konu_eslesir(query, t)
                             for t in list(matches) + ek)):
             sektor = (getattr(profil_kaydi, "sektor", None) or "").lower()

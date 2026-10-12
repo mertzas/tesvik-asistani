@@ -2,10 +2,10 @@
 **Kısa cevap:**
 - Öne çıkan: **Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026)** (Hazine ve Maliye Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Faydalanıcılar arasında gerçek ve tüzel kişi üreticiler sayılmıştır (ayrıca tarımsal amaçlı örgütler, sözleşmeli üretim yaptıranlar vb.); Dönemsel çağrı yoktur; Karar 1/1/2024-31/12/2026 arasında tahsis edilecek kredilere uygulanır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Sorunuzla ilgili satır (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi): kayıtta “Basınçlı sulama sistemi kullanımı - 10” (tablodaki ek indirim satırı; uygulanacak oranı bankadan teyit edin).
-- Hibe (geri ödemesiz): sorunuza ve profilinize açık kayıtlı bir hibe programı bulamadım; aşağıdaki programlar geri ödemesiz destek değildir (kredi, kefalet, vergi avantajı, eğitim ya da yatırım).
+- Hibe (geri ödemesiz): sorunuza ve profilinize açık kayıtlı bir hibe programı bulamadım; Tasarruflu Tarımsal Sulama Sistemleri Hibe Desteği şu an başvuruya kapalı (yeni çağrıyı izleyin); aşağıdaki programlar geri ödemesiz destek değildir (kredi, kefalet, vergi avantajı, eğitim ya da yatırım).
 - Destek: Hibe değil, faiz indirimi. Temel bitkisel üretim: 300.000 TL'ye kadar yüzde 100, üstü yüzde 50 indirim, üst limit 10.000.000 TL. Meyve yetiştiriciliği ve bağcılık: yüzde 75 indirim, üst limit 40.000.000 TL
 - Diğer seçenekler: Yapay Zekâ Kredi Programı (şarta bağlı); HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (profilinize göre engel yok — şartları teyit edin); Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı) (profilinize göre engel yok — şartları teyit edin).
-- 4 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
+- 3 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: tarım (fındık)
@@ -69,7 +69,6 @@
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
 - YATIRIM-İŞLETME DESTEK PAKETİ (KGF) — uygun değil: imalatçı işletmelere yönelik; faaliyetiniz (tarım) imalat değil — kayıttaki şart: “İmalatçı KOBİ olmak”
 - Tasarruflu Tarımsal Sulama Sistemleri (TSS) Hibe Desteği (Tarım Bakanlığı) — kapalı: program başvuruya açık değil (tur38'in kopya KKYDP kaydı bu kayda birleştirildi (doğrulanmış kontrol maddeleri ve 2026 çağrısı); başvuru süresi 30/6/2026'ya uzatılmıştı)
-- IPARD III — Tarımsal İşletmelerin Fiziki Varlıklarına Yönelik Yatırımlar (Tedbir 101 / M1) (TKDK) — kapalı: program başvuruya açık değil (Tedbir 101'in 2026 çağrısı (12. Başvuru Çağrı İlanı) 07.09.2026 18:00'da kapanmıştır; yeni bir çağrı duyurusu bulunmamaktadır)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz …): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.

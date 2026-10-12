@@ -1,10 +1,10 @@
 <!-- persona: kayseri_mobilya | soru: Üretimi dijitalleştirmek (ERP, makinelere sensör) için hibe var mı? -->
 **Kısa cevap:**
 - Öne çıkan: **KOBİ Dijital Dönüşüm Destek Programı** (KOSGEB) (hibe değil: faiz desteği) — profilinize göre engel yok — şartları teyit edin; başlıca şart: KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmak (KOSGEB sınıflandırmasında küçük veya orta ölçekli olmak; mikro ölçekliler başvuramaz); Sürekli açık başvuru (24 aylık program süresi içinde kullanım gerekir) (kayıttan; güncel çağrıyı kurumdan teyit edin).
-- Hibe (geri ödemesiz): sorduğunuz gider kalemi için kayıtlı hibe yok; geri ödemesiz yakın seçenek YÖNDE - Yönderlik ve Değerlendirme Destek Programı farklı bir gideri karşılar: %100 geri ödemesiz; program üst limiti toplam 700.000 TL; program süresi 36 ay.
+- Hibe (geri ödemesiz): sorunuzun konusuna uyan Sosyal Kapsayıcı Yeşil Geçiş Kapsamında Gelecek İçin Üretimde Çevre Dostu Dönüşüm Destek Programı, IPARD III şu an başvuruya kapalı (yeni çağrıyı izleyin); açık hibe YÖNDE - Yönderlik ve Değerlendirme Destek Programı farklı bir gideri karşılar.
 - Kredi koşulları (hibe değil): ₺1.000.000 - ₺20.000.000 kredi (faiz desteği geri ödemesiz)
 - Diğer seçenekler: Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (profilinize göre engel yok — şartları teyit edin); YATIRIM-İŞLETME DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); YÖNDE - Yönderlik ve Değerlendirme Destek Programı (profilinize göre engel yok — şartları teyit edin).
-- 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
+- 4 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 31.01)
@@ -72,6 +72,8 @@
 **Size kapalı ya da başvuruya kapalı programlar:**
 - KAPASİTE GELİŞTİRME DESTEK PAKETİ (KGF) — kapalı: bağlı olduğu KOSGEB programının (Kapasite Geliştirme Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
 - Kapasite Geliştirme Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)
+- Sosyal Kapsayıcı Yeşil Geçiş (SoGreen) Kapsamında Gelecek İçin Üretimde Çevre Dostu Dönüşüm Destek Programı (TR61/26/SGRKOBİGÜÇ) — Geri Ödemeli Finansman (Batı Akdeniz Kalkınma Ajansı (BAKA)) — kapalı: program başvuruya açık değil (Son başvuru tarihi 8 Mayıs 2026 (taahhütname 15 Mayıs 2026) geçti; çağrı kapandı)
+- IPARD III — Çiftlik Faaliyetlerinin Çeşitlendirilmesi ve İş Geliştirme (Tedbir 302 / M7) (TKDK) — kapalı — yeni çağrı planlanıyor, tarih yok: program başvuruya açık değil (2026 çağrı takviminde yer alan M7 (Tedbir 302) çağrısının ilan tarihi, 30.09.2026 tarihli duyuruyla ileri bir tarihe ertelenmiştir; başvuruların yıl içinde alınması planlandığı belirtilmiştir, tarih verilmemiştir.
 
 **Birlikte kullanım (resmî metinden):**
 - [Sanayi ve Teknoloji Bakanlığı] Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")

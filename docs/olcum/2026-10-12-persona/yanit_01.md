@@ -8,7 +8,7 @@
 - Destek: Gelir vergisi istisnası (hibe/ödeme değil, vergi avantajı): istisna kapsamındaki kazançlar toplamı, tarifenin dördüncü gelir diliminde yer alan tutarı (2025 için 4.300.000 TL, 2026 için 5.300.000 TL) aşmadığı sürece gelir vergisi ödenmez ve bu kazançlar için yıllık gelir vergisi beyannamesi verilmez.
 - Diğer seçenekler: KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi (profilinize göre engel yok — şartları teyit edin); 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) (şarta bağlı).
 - Sorunuza doğrudan yönelik ama size kapalı: ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ — KGF programları kayıtlı bir işletme gerektirir.
-- 7 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
+- 6 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: Ar-Ge / bilişim (NACE 62.01)
@@ -50,7 +50,6 @@
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) (TUBITAK) — kapalı: program başvuruya açık değil (TÜBİTAK, BiGG 1. aşamasını 2026-2028 döneminde 1812 Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) çerçevesinde yürütüyor (1612 çağrı sayfası); 1512 program sayfası erişime kapalı.
-- Sosyal Kapsayıcı Yeşil Geçiş (SoGreen) Kapsamında Gelecek İçin Üretimde Çevre Dostu Dönüşüm Destek Programı (TR61/26/SGRKOBİGÜÇ) — Geri Ödemeli Finansman (Batı Akdeniz Kalkınma Ajansı (BAKA)) — kapalı: program başvuruya açık değil (Son başvuru tarihi 8 Mayıs 2026 (taahhütname 15 Mayıs 2026) geçti; çağrı kapandı)
 - HALKBANK GENÇ İŞİ KREDİSİ PROJESİ (KGF); HALK BANKASI GENÇİZ KREDİSİ PROGRAMI DESTEK PAKETİ (KGF); TURYIB Programı Destek Paketi (KGF); ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ (KGF) — uygun değil: KGF programları kayıtlı bir işletme gerektirir
 - Genç Girişimcilerde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20) (Gelir İdaresi Başkanlığı) — uygun değil: yalnızca şahıs işletmesi başvurabilir (henüz şirket kurulmadı kapsam dışı)
 

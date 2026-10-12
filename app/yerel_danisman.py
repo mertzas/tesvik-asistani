@@ -2117,29 +2117,42 @@ def hibe_mi(t) -> bool:
         r"geri ödemeli\b|hibe değil|hibe/ödeme değil", tutar, re.I)
 
 
-# Sorunun konusunu taşımayan genel sözcükler (hibe sorusunda konu eşleşmesi için).
+# Sorunun konusunu taşımayan genel sözcükler (hibe sorusunda konu eşleşmesi için). `_katla` ASCII'ye katlar
+# (ç→c, ı→i), bu yüzden desenler katlanmış biçimde yazılır (2026-10-12: Türkçe harfli desenler hiç eşleşmiyor,
+# "düşük", "faizli", "yatırım" konu sayılıyordu).
 _GENEL_SOZCUK = re.compile(
-    r"^(?:destek\w*|hibe\w*|kredi\w*|kurma\w*|kurul\w*|almak|alabil\w*|alır\w*|istiyor\w*|sistem\w*|devlet\w*|"
-    r"program\w*|başvur\w*|yatırım\w*|yapmak|yapabil\w*|nasıl|nedir|hangi\w*|var\w*|mıyım|miyim|olur\w*|"
-    r"karşıla\w*|geri|ödeme\w*|ödemesiz|işletme\w*|firma\w*|şirket\w*|bizim|benim|bunun|şunun|olarak|kadar|"
-    r"teşvik\w*|para\w*|tutar\w*|ücret\w*)$")
+    r"^(?:destek\w*|hibe\w*|kredi\w*|kurul\w*|alabil\w*|alir\w*|istiyor\w*|istem\w*|sistem\w*|devlet\w*|"
+    r"program\w*|basvur\w*|yatirim\w*|yapabil\w*|nasil|nedir|hangi\w*|var\w*|miyim|olur\w*|karsila\w*|"
+    r"geri|odeme\w*|isletme\w*|firma\w*|sirket\w*|bizim|benim|bunun|sunun|olarak|kadar|tesvik\w*|para\w*|"
+    r"tutar\w*|ucret\w*|dusuk\w*|faiz\w*|uygun\w*|gider\w*|masraf\w*|maliyet\w*|ihtiyac\w*|mevcut\w*|"
+    r"ister\w*|yararlan\w*)$")
+# Mastar fiil (yenilemek, kurmak) konu değil; konu adla taşınır (2026-10-12: "bahçeyi yenilemek" sorusunda "yenile"
+# kökü "yenilenebilir enerji" metnine eşleşiyordu).
+_MASTAR = re.compile(r"(?:mek|mak)$")
+# Tek bir ad çekimi/iyelik eki atılır (katlanmış biçim); kalan kök en az 4 harf olmalı.
+_EK = re.compile(r"(?:leri|lari|nin|nun|den|dan|ten|tan|ler|lar|yi|yu|si|su|ni|nu|de|da|te|ta|i|u|e|a)$")
 
 
 def soru_konulari(soru: str) -> list[str]:
-    """Sorunun konu sözcükleri (5+ harf, genel soru/teşvik sözcükleri hariç)."""
-    return [k for k in re.findall(r"[a-zçğıöşü]{5,}", _katla(soru)) if not _GENEL_SOZCUK.match(k)]
+    """Sorunun konu sözcükleri (5+ harf, katlanmış; genel soru/teşvik sözcükleri ve mastar fiiller hariç)."""
+    return [k for k in re.findall(r"[a-z]{5,}", _katla(soru)) if not _GENEL_SOZCUK.match(k) and not _MASTAR.search(k)]
+
+
+def _konu_koku(sozcuk: str) -> str:
+    kok = _EK.sub("", sozcuk)
+    return kok if len(kok) >= 4 else sozcuk
 
 
 def konu_eslesir(soru: str, t) -> bool:
-    """Programın başlık/özet/tutar/şart metni sorunun konu sözcüklerinden birini (6 harflik kök) taşıyor mu? Konu
-    sözcüğü yoksa True (2026-10-12: damla sulama hibesi sorusunda ilgisiz sera hibesi "hibe tarafı" diye
-    gösteriliyordu)."""
+    """Programın başlık/özet/tutar/şart metninde sorunun konu sözcüklerinden birinin kökü bir sözcüğün BAŞINDA geçiyor
+    mu? Konu sözcüğü yoksa True (2026-10-12: damla sulama hibesi sorusunda ilgisiz sera hibesi "hibe tarafı" diye
+    gösteriliyordu; kök sözcük ortasında da eşleşince "yenile" → "yenilenebilir" yanlış konu sayılıyordu)."""
     konu = soru_konulari(soru)
     if not konu:
         return True
     metin = _katla(" ".join([t.baslik or "", t.ozet or "", t.tesvil_tutari or ""]
                             + [m.get("metin", "") for m in t.kontrol_listesi or []]))
-    return any(k[:6] in metin for k in konu)
+    return any(re.search(r"(?<![a-z0-9])" + re.escape(_konu_koku(k)), metin) for k in konu)
 
 
 def hibe_satiri(soru: str, ilk, adaylar: list, kapali: list | None = None) -> str:
@@ -2153,7 +2166,10 @@ def hibe_satiri(soru: str, ilk, adaylar: list, kapali: list | None = None) -> st
     kapali_hibe = [d for d in kapali or [] if d.karar == "kapali" and hibe_mi(d.tesvik)
                    and (not sorulan or program_ihtiyaclari(d.tesvik) & sorulan)]
     konulu = [d for d in hibeler if konu_eslesir(soru, d.tesvik)]
-    kapali_konulu = [d for d in kapali_hibe if konu_eslesir(soru, d.tesvik)]
+    # Konusu soruya uyan kapalı hibe, ihtiyaç etiketi tutmasa da anılır (2026-10-12: "bahçeyi yenilemek ve damla
+    # sulama" sorusu "finansman" etiketi alıyor, etiketsiz TSS hibesi süzgeçte düşüyordu).
+    kapali_konulu = ([d for d in kapali or [] if d.karar == "kapali" and hibe_mi(d.tesvik)
+                      and konu_eslesir(soru, d.tesvik)] if soru_konulari(soru) else [])
     if hibeler and not konulu and kapali_konulu:
         # Açık hibe sorunun konusunu karşılamıyor, konuya uyan hibe kapalı: önce kapalı olan adıyla söylenir.
         return (f"Hibe (geri ödemesiz): sorunuzun konusuna uyan {', '.join(_kisa_ad(d.tesvik.baslik) for d in kapali_konulu[:2])}"
@@ -3080,6 +3096,10 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
                  "### 1. Şirket & Proje Uygunluk Özeti", *profil_ozeti(profil)]
         hibe_notu = hibe_durumu(soru, ds, kartlar + diger) if not odak else ""
         if hibe_notu:
+            # "Açık hibe bulamadım" satırı bu notu tekrarlar; kapalı hibeleri adıyla anan not kalır (2026-10-12: kahve
+            # makinesi sorusunda iki hibe satırı üst üste çıkıyordu).
+            bolum = [x for x in bolum if not x.startswith(
+                "- Hibe (geri ödemesiz): sorunuza ve profilinize açık kayıtlı bir hibe programı bulamadım")]
             bolum.insert(bolum.index("**Kısa cevap:**") + 1, hibe_notu)
         if soru_ihtiyac:
             bolum.append(f"- Sorudan anlaşılan ihtiyaç: {', '.join(IHTIYAC_ADLARI[x] for x in soru_ihtiyac)}")

@@ -124,7 +124,6 @@ Durum notu: Başvuru şartları 2026-09-28 tarihinde kurumun kendi sayfasından 
 - [kural] Kredi bankanın kullandıracağı yeni ve ilave kredi olmalı; faaliyet konusu dışında döviz/kıymetli maden alımında veya refinansmanda kullanılamaz (kural, işaretlenmez) | alıntı: Program kapsamında kullandırılan krediler, yararlanıcıların faaliyet konuları dışında döviz veya kıymetli maden alımında ya da refinansman amacıyla kullanılamaz. | kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/dijital-kefalet-destek-programi
 - [bilgi] Kefalet başvuru ücreti: 10.000 TL | alıntı: 10.000 TL | kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/dijital-kefalet-destek-programi
 ADAY (yanıtta yok) KAYIT 154: KGF Genel Destek Programı — KGF; aktif_mi=True; kriterler={"sektorler": ["genel"], "tutar_niteligi": "kredi_kefalet"}; tutar=
-ADAY (yanıtta yok) KAYIT 183: Ar-Ge, Ür-Ge ve İnovasyon Destek Programı (yürürlükten kaldırıldı) — KOSGEB; aktif_mi=False; kriterler={"sektorler": ["arge", "genel"], "tutar_niteligi": "hibe"}; tutar=
 ============================================================
 KAYIT 200
 [Batı Akdeniz Kalkınma Ajansı (BAKA)] Sosyal Kapsayıcı Yeşil Geçiş (SoGreen) Kapsamında Gelecek İçin Üretimde Çevre Dostu Dönüşüm Destek Programı (TR61/26/SGRKOBİGÜÇ) — Geri Ödemeli Finansman

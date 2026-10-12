@@ -518,3 +518,28 @@ def test_proje_bazli_tavan_hibesi_kredi_sayilmaz():
                uygunluk_kriterleri={"tutar_niteligi": "faiz_destegi"})
     assert yerel_danisman.hibe_mi(tss) and not yerel_danisman._kredi_mi(tss)
     assert yerel_danisman._kredi_mi(kredi) and not yerel_danisman.hibe_mi(kredi)
+
+
+
+def test_konu_eslesmesi_mastar_ve_sozcuk_ortasi_yanlis_eslesmez():
+    soru = "Bahçeyi yenilemek ve damla sulama kurmak için hibe ya da düşük faizli kredi var mı?"
+    # Katlanmış genel sözcükler (düşük, faizli) ve mastar fiiller (yenilemek, kurmak) konu sayılmaz
+    assert yerel_danisman.soru_konulari(soru) == ["bahceyi", "damla", "sulama"]
+    enerji = _t(kurum="TKDK", baslik="IPARD", tesvil_tutari="Yenilenebilir enerji yatırımlarına %65 hibe")
+    bahce = _t(kurum="Bakanlık", baslik="Fidan", tesvil_tutari="Yeni meyve bahçesi tesisinde hibe")
+    assert not yerel_danisman.konu_eslesir(soru, enerji)
+    assert yerel_danisman.konu_eslesir(soru, bahce)
+    # Kök sözcük başında aranır: "damla sulama" kökleri (daml, sulam) sözcük ortasına eşleşmez
+    assert not yerel_danisman.konu_eslesir("Damla sulama için hibe var mı?", _t(
+        kurum="X", baslik="Y", tesvil_tutari="Adamlara tasulama hizmeti hibesi"))
+
+
+def test_konusu_uyan_kapali_hibe_ihtiyac_etiketi_tutmasa_da_anilir():
+    from types import SimpleNamespace as N
+    soru = "Bahçeyi yenilemek ve damla sulama kurmak için hibe ya da düşük faizli kredi var mı?"
+    kredi = N(tesvik=_t(kurum="Hazine", baslik="Ziraat Tarım Kredisi", tesvil_tutari="Hibe değil, faiz indirimi."),
+              karar="sartli", gerekce=[], teyit=[])
+    tss = N(tesvik=_t(kurum="Bakanlık", baslik="TSS Hibe Desteği", tesvil_tutari="Hibe oranı %50 (damla, yağmurlama)"),
+            karar="kapali", gerekce=[], teyit=[])
+    s = yerel_danisman.hibe_satiri(soru, kredi, [kredi], [tss])
+    assert "TSS Hibe Desteği şu an başvuruya kapalı" in s

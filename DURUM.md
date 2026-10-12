@@ -537,6 +537,12 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   olanı adıyla anar (damla sulama: TSS kapalı; Sera hibesi "farklı bir gideri karşılar"); bunun için arama da
   konuya uyan kapalı hibeyi adaylara ekler (`rag.panel_adaylari_ekle`). `_kredi_mi` artık "proje_bazli_tavan"
   niteliğini kredi saymaz (toplama girmez ama hibedir; KKYP/TSS/ajans hibeleri hibe satırından düşüyordu).
+  Konu eşleşmesi düzeltmesi (sunum simülasyonunda bulundu): `_katla` ASCII'ye katladığı hâlde genel sözcük listesi
+  Türkçe harfliydi ("düşük", "faizli", "yatırım" konu sayılıyordu); liste katlanmış biçimde, mastar fiiller
+  (-mek/-mak) konu değil, kök tek ad eki atılarak sözcük BAŞINDA aranıyor ("yenile" artık "yenilenebilir"e
+  eşleşmiyor). Konusu uyan kapalı hibe ihtiyaç etiketi tutmasa da anılıyor; arama, ihtiyaç etiketi olmayan hibe
+  sorusunda da kapalı hibeyi ekliyor. "Bahçeyi yenilemek ve damla sulama" sorusu artık kapalı TSS'yi adıyla anıyor;
+  `hibe_durumu` notu varken "açık hibe bulamadım" satırı tekrarlanmıyor.
   Tur40 (`scripts/fix_veri_2026_10_12_tur40.py`, self-test 6/6): tur38'in KKYDP kaydı mevcut 78 (KKYP, Tebliğ 2026/9)
   ve 80'in (TSS, 2026/10) kopyasıydı; arama asıl kaydı geride bırakınca eski-30 isabeti 41 → 37'ye düştü. Kopyanın 24
   doğrulanmış maddesi (19 → 78, sulamaya ait 5 → 80) ve iki çağrısı taşındı, 78/80'in başvuru süresi uzatmayla

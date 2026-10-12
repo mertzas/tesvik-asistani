@@ -553,3 +553,52 @@ def test_arazi_alani_ondalik_kabul_eder():
     html = Path(__file__).resolve().parents[1].joinpath("app/static/dashboard.html").read_text(encoding="utf-8")
     alan = re.search(r'<input[^>]*id="p-arazi"[^>]*>', html).group(0)
     assert 'step="any"' in alan
+
+
+# ------------------------------------------------------------------ arayüz simülasyonu açık maddeleri (2026-10-12)
+def test_genel_hedeflerde_finansman_dijital_makine_var():
+    import re
+    from pathlib import Path
+    html = Path(__file__).resolve().parents[1].joinpath("app/static/dashboard.html").read_text(encoding="utf-8")
+    tarim = re.search(r'<div id="tarim-hedefler".*?</div>', html, re.S).group(0)
+    for deger in ("finansman", "dijital", "makine"):
+        assert f'value="{deger}" class="p-hedef"' in html and f'value="{deger}"' not in tarim
+
+
+def test_ihracat_sinyali_yoksa_hazirlikta_eihracat_adimi_yok():
+    from app.hazirlik import yol_haritasi
+    from app.models import SessionLocal
+    db = SessionLocal()
+    try:
+        pet = FinancialProfile(sektor="e-ticaret", nace_kodu="47.91", bolge="İstanbul", calisan_sayisi=8,
+                               yillik_ciro=12_000_000, sirket_turu="limited", hedefler=["istihdam"])
+        kodlar = {a["kod"] for a in yol_haritasi(pet, db)["adimlar"]}
+        assert not kodlar & {"dys_kaydi", "birlik_uyeligi", "madrid_marka"}
+        giyim = FinancialProfile(sektor="e-ticaret", nace_kodu="47.91", bolge="İstanbul", calisan_sayisi=5,
+                                 yillik_ciro=6_000_000, sirket_turu="limited", hedefler=["ihracat"])
+        assert {"dys_kaydi", "madrid_marka"} <= {a["kod"] for a in yol_haritasi(giyim, db)["adimlar"]}
+    finally:
+        db.close()
+
+
+def test_sirketsiz_girisimcide_sirket_adimi_bigg_sirasini_uyarir():
+    from app.hazirlik import yol_haritasi
+    from app.models import SessionLocal
+    db = SessionLocal()
+    try:
+        rekortiv = FinancialProfile(sektor="arge", bolge="Ankara", calisan_sayisi=0, yillik_ciro=60_000,
+                                    nace_kodu="62.01", sirket_turu="yok", kurucu_yasi=21, trl=8, hedefler=["arge"])
+        sirket = next(a for a in yol_haritasi(rekortiv, db)["adimlar"] if a["kod"] == "sirket")
+        assert "1812" in sirket.get("uyari", "") and "kabulden sonra" in sirket["uyari"]
+        assert "Konsorsiyum" not in sirket["nasil"]
+    finally:
+        db.close()
+
+
+def test_taslagin_belge_bolumu_guncel_isaretlerle_yazilir():
+    from app.sablon_taslak import BOLUM6, bolum6_guncelle
+    taslak = f"## 5. Çıktılar\n\nx\n\n{BOLUM6}\n\n**Hazırlanacak belgeler**\n- [ ] İş planı\n\n## 7. Ek\n\ny"
+    yeni = bolum6_guncelle(taslak, [{"tur": "belge", "metin": "İş planı", "isaretli": True}])
+    assert "- [x] İş planı" in yeni and "- [ ] İş planı" not in yeni
+    assert yeni.startswith("## 5. Çıktılar") and yeni.endswith("## 7. Ek\n\ny")
+    assert bolum6_guncelle("serbest metin", []) == "serbest metin" and bolum6_guncelle(None, []) is None

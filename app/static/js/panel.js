@@ -407,6 +407,7 @@
                 } else {
                     metinDiv.innerHTML = mdToHtml(metin);
                     durumSpan.textContent = "";
+                    oneCikaniIsaretle(metin, document.getElementById("kayit-listesi"));
                 }
 
                 // Refresh stats
@@ -422,8 +423,10 @@
                     '(ör. "makine yatırımı", "ihracat", "istihdam") yazarak tekrar deneyin; profilinizi doldurmak eşleşmeyi iyileştirir.</div>';
                 return;
             }
+            // Her kayıttan doğrudan kontrol listesi açılır (arayüz simülasyonu 2026-10-12: yanıtta öne çıkan program
+            // panelin ilk kartından farklı olabiliyordu; kullanıcı yanıttaki programın listesine ulaşamıyordu).
             hedef.innerHTML = kayitlar.map(r => `
-                <div class="result-card">
+                <div class="result-card" data-kayit-baslik="${escapeHtml(r.baslik)}">
                     <div class="kurum">${escapeHtml(r.kurum)}</div>
                     <div class="baslik">${escapeHtml(r.baslik)}</div>
                     ${r.ozet ? `<div class="ozet">${escapeHtml(r.ozet)}</div>` : ""}
@@ -432,8 +435,23 @@
                         ${r.baslama_tarihi ? `<span>📅 Başlangıç: ${new Date(r.baslama_tarihi).toLocaleDateString('tr-TR')}</span>` : ""}
                         ${r.bitis_tarihi ? `<span>⏰ Bitiş: ${new Date(r.bitis_tarihi).toLocaleDateString('tr-TR')}</span>` : ""}
                     </div>
+                    ${r.id != null ? `<button type="button" class="ikincil-btn" data-tikla="kontrolListesiAc" data-arg="${escapeHtml(String(r.id))}" style="margin-top:10px; padding:6px 12px; font-size:12px;">☑ Kontrol listesi</button>` : ""}
                 </div>
             `).join("");
+        }
+
+        // Yanıtın "Öne çıkan" programını kayıt listesinin başına alır ve işaretler.
+        function oneCikaniIsaretle(metin, hedef) {
+            const m = metin.match(/Öne çıkan:\s*\*\*([^*]+)\*\*/) || metin.match(/Kısa cevap:\*\*\s*\n-\s*\*\*([^*]+)\*\*/);
+            if (!m || !hedef) return;
+            const kart = [...hedef.querySelectorAll(".result-card")].find(k => k.dataset.kayitBaslik === m[1].trim());
+            if (!kart) return;
+            const etiket = document.createElement("div");
+            etiket.className = "kurum";
+            etiket.style.color = "#8a5a00";
+            etiket.textContent = "Yanıtta öne çıkan program";
+            kart.prepend(etiket);
+            hedef.prepend(kart);
         }
 
         // Sunucudan gelen SSE gövdesini (event:/data: blokları) olay olay okur.
@@ -1136,7 +1154,9 @@
                 ? `<button type="button" class="ikincil-btn" data-tikla="bolumeGit" data-arg="profil">Şirket türünü güncelle</button>`
                 : `<label class="tamamla"><input type="checkbox" data-degisim="hazirlikIsaretle" data-arg="${escapeHtml(a.kod)}"${a.tamam ? " checked" : ""}> Tamamladım</label>`;
             return `<div class="hz-adim${a.tamam ? " tamam" : ""}"><div class="govde"><div class="ad">${a.tamam ? "✓ " : ""}${escapeHtml(a.baslik)} <span class="hz-sayi">${sayi}</span></div>`
-                + `<div class="alt">${escapeHtml(a.nasil)}</div>${programlar}</div>${eylem}</div>`;
+                + `<div class="alt">${escapeHtml(a.nasil)}</div>`
+                + (a.uyari ? `<div class="alt" style="color:#8a5a00; font-weight:600;">⚠ ${escapeHtml(a.uyari)}</div>` : "")
+                + `${programlar}</div>${eylem}</div>`;
         }
 
         async function hazirlikKaydet(govde) {

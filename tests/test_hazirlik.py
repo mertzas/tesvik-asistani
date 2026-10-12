@@ -30,7 +30,9 @@ def _h(token):
 
 
 def _profil(client, h, **k):
-    r = client.put("/api/profil", headers=h, json={"sektor": "e-ticaret", "calisan_sayisi": 3, **k})
+    # Senaryo ihracatçı mağaza: e-ihracat ön şartları yalnız ihracat hedefi/sinyali olan profilde sayılır (2026-10-12).
+    r = client.put("/api/profil", headers=h, json={"sektor": "e-ticaret", "calisan_sayisi": 3, "hedefler": ["ihracat"],
+                                                   **k})
     assert r.status_code == 200, r.text
 
 
@@ -55,6 +57,13 @@ def test_limited_sirkete_ticaret_on_sartlari(client, test_user_token, kayitlar):
     adimlar = {a["kod"]: a for a in client.get("/api/hazirlik", headers=h).json()["yol_haritasi"]["adimlar"]}
     assert set(adimlar) == {"birlik_uyeligi", "dys_kaydi", "madrid_marka", "on_onay", "kosgeb_kaydi"}
     assert [p["id"] for p in adimlar["madrid_marka"]["gerekli"]] == [21]
+
+
+def test_ihracat_hedefi_yoksa_ticaret_on_sartlari_sayilmaz(client, test_user_token, kayitlar):
+    h = _h(test_user_token)
+    _profil(client, h, sirket_turu="limited", hedefler=["istihdam"])
+    adimlar = {a["kod"] for a in client.get("/api/hazirlik", headers=h).json()["yol_haritasi"]["adimlar"]}
+    assert adimlar == {"kosgeb_kaydi"}
 
 
 def test_isaretleme_kalici_ve_null_siler(client, test_user_token, kayitlar):

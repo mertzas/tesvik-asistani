@@ -27,7 +27,8 @@ TEMEL_ALANLAR: list[tuple[str, str, str]] = [
     ("sirket_turu", "Şirket türü", "Şahıs işletmesi ihracat ve TÜBİTAK desteklerinin çoğundan doğrudan yararlanamaz."),
     ("calisan_sayisi", "Çalışan sayısı", "KOBİ ölçeğini ve istihdam desteklerini belirler."),
     ("yillik_ciro", "Yıllık ciro", "KOBİ ölçeğini ve kredi/kefalet tavanlarını belirler."),
-    ("hedefler", "Hedefler", "Yatırım, ihracat, Ar-Ge, istihdam hedefine göre programlar öne çıkar."),
+    ("hedefler", "Hedefler", "Yatırım, ihracat, Ar-Ge, istihdam, finansman, dijitalleşme ya da makine hedefine göre "
+                              "programlar öne çıkar."),
 ]
 EK_ALANLAR: list[tuple[str, str, str]] = [
     ("nace_kodu", "NACE kodu", "Sektöre özel programlarda daha kesin eşleşme sağlar."),

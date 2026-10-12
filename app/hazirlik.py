@@ -38,7 +38,7 @@ class Adim:
 ADIMLAR: dict[str, Adim] = {a.kod: a for a in (
     Adim("sirket", "Limited/anonim şirkete geçiş",
          "Şirket kuruluşu ticaret sicili (MERSİS) üzerinden yapılır; şahıs işletmesinin varlık ve sözleşmelerinin "
-         "devrini mali müşavirinizle planlayın. E-ihracatta geçici yol: E-İhracat Konsorsiyumu (5986 Genelge m.33/7)."),
+         "devrini mali müşavirinizle planlayın."),
     Adim("kosgeb_kaydi", "KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi",
          "KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.",
          r"KOSGEB\s+veri\s*taban|KOBİ\s+Bilgi\s+Beyannamesi", kurum="KOSGEB"),
@@ -78,6 +78,15 @@ ADIMLAR: dict[str, Adim] = {a.kod: a for a in (
 
 ILGILI_SKOR = 0.5
 SEKTOR_ONCELIGI = {"tarim": ("cks",)}
+KONSORSIYUM_NOTU = " E-ihracatta geçici yol: E-İhracat Konsorsiyumu (5986 Genelge m.33/7)."
+# Kabul/başvuru anında şirket ortağı olmamayı şart koşan program (TÜBİTAK 1812 BiGG): şirketsiz girişimciye "şirkete
+# geç" adımı bu şartı kaybettirebilir (arayüz simülasyonu 2026-10-12, Rekortiv).
+ORTAKLIK_SARTI = re.compile(r"kabul\s+tarihinde[^.;]{0,160}ortağı\s+olma", re.IGNORECASE)
+
+
+def _ortaklik_sartli(t) -> bool:
+    metin = " ".join([_metin(t)] + [m.get("metin", "") for m in getattr(t, "kontrol_listesi", None) or []])
+    return bool(ORTAKLIK_SARTI.search(metin))
 
 
 def _metin(t) -> str:
@@ -106,10 +115,17 @@ def yol_haritasi(p: FinancialProfile | None, db: Session, en_cok_program: int = 
 
     if p is None:
         return {"adimlar": [], "eslesme_sayisi": 0}
+    from app.matching import ihracat_odakli, ihracat_sinyali
+
     durumlar = (p.hazirlik or {}).get("durumlar", {})
     eslesmeler = esles(p, db, limit=en_cok_program, ilgi_cezalari=False)
+    ihracatci = ihracat_sinyali(p)
+    # İhracat hedefi/sinyali olmayan profilde ihracat programlarının ön şartları (DYS, ihracatçı birliği, Madrid, ön
+    # onay) yol haritasına girmez (arayüz simülasyonu 2026-10-12: istihdam hedefli evcil hayvan mağazasına ilk adım
+    # "Ticaret Bakanlığı DYS kaydı" yazılıyordu).
+    ilgili = [e for e in eslesmeler if ihracatci or not ihracat_odakli(e.tesvik)]
     gerek: dict[str, list] = {}
-    for e in eslesmeler:
+    for e in ilgili:
         for kod in program_adimlari(e.tesvik):
             gerek.setdefault(kod, []).append(e.tesvik)
     acilan = []
@@ -119,18 +135,26 @@ def yol_haritasi(p: FinancialProfile | None, db: Session, en_cok_program: int = 
         # etiketiyle eşleşir (persona denemesi 2026-10-08: buğday çiftçisine "şirkete geçin, 11 program açılır"
         # deniyordu; 11'i de 0,30 skorlu TÜBİTAK sanayi Ar-Ge programıydı).
         acilan = [e.tesvik for e in esles(_kopya(p, sirket_turu="limited"), db, limit=en_cok_program, ilgi_cezalari=False)
-                  if e.tesvik.id not in mevcut and e.skor >= ILGILI_SKOR]
+                  if e.tesvik.id not in mevcut and e.skor >= ILGILI_SKOR
+                  and (ihracatci or not ihracat_odakli(e.tesvik))]
         if acilan:
             gerek["sirket"] = acilan
+    ortaklik_sartli = [e.tesvik for e in ilgili if p.sirket_turu == "yok" and _ortaklik_sartli(e.tesvik)]
     adimlar = []
     for kod, programlar in gerek.items():
         a = ADIMLAR[kod]
-        adimlar.append({
-            "kod": kod, "baslik": a.baslik, "nasil": a.nasil, "tamam": bool(durumlar.get(kod)),
+        adim = {
+            "kod": kod, "baslik": a.baslik, "nasil": a.nasil + (KONSORSIYUM_NOTU if kod == "sirket" and ihracatci else ""),
+            "tamam": bool(durumlar.get(kod)),
             "acar" if kod == "sirket" else "gerekli": [{"id": t.id, "baslik": t.baslik, "kurum": t.kurum,
                                                        "tutari_max": t.tutari_max} for t in programlar],
             "program_sayisi": len(programlar),
-        })
+        }
+        if kod == "sirket" and ortaklik_sartli:
+            adim["uyari"] = ("Önce sırayı kontrol edin: " + ", ".join(t.baslik for t in ortaklik_sartli[:2])
+                             + " kabul tarihinde herhangi bir şirketin ortağı olmamayı şart koşar; bu programa "
+                               "başvuracaksanız şirketi kabulden sonra kurun.")
+        adimlar.append(adim)
     # Önce tamamlanmamışlar; sektörün temel kaydı (tarımda ÇKS: hububat, hayvancılık vb. ödemelerin ön şartı) ve
     # "sirket" (en çok kapıyı açar) en başta; sonra gerektiren program sayısı.
     oncelikli = SEKTOR_ONCELIGI.get(p.sektor, ()) + ("sirket",)
@@ -212,6 +236,8 @@ def hazirlik_kaydet(girdi: HazirlikGirdisi, current_org: Organization = Depends(
 
 
 def _self_test() -> int:
+    from types import SimpleNamespace
+
     from app.models import Tesvik
 
     t_kosgeb = Tesvik(id=1, kurum="KOSGEB", baslik="Girişimci", basvuru_sartlari=["KOBİ olmak"])
@@ -237,6 +263,11 @@ def _self_test() -> int:
         ("karşı-olgu kopyası değişir, asıl profil değişmez", k.sirket_turu == "limited" and p.sirket_turu == "sahis"
          and k.hazirlik == p.hazirlik and k.id is None),
         ("her adımın açıklaması dolu", all(a.baslik and a.nasil for a in ADIMLAR.values())),
+        ("BiGG ortaklık şartı tanınır", _ortaklik_sartli(SimpleNamespace(
+            basvuru_sartlari=[], gerekli_belgeler=[], basvuru_yeri="", basvuru_suresi="", kontrol_listesi=[
+                {"metin": "Hızlandırma programına kabul tarihinde herhangi bir sermaye şirketinin ya da şahıs "
+                          "işletmesinin ortağı olmamak"}]))),
+        ("şirket adımında konsorsiyum notu yalnız ihracatçıya", "Konsorsiyum" not in ADIMLAR["sirket"].nasil),
         ("hesaplayıcının adım kodları katalogda", {"sirket", "birlik_uyeligi", "madrid_marka", "perakende_statusu"}
          <= set(ADIMLAR)),
     ]

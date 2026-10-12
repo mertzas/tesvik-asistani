@@ -355,6 +355,21 @@ def belgeler_ve_kurallar(maddeler: list[dict]) -> str:
     return "\n".join(satir)
 
 
+BOLUM6 = "## 6. Başvuru şartları, belgeler ve adımlar"
+
+
+def bolum6_guncelle(taslak: str | None, maddeler: list[dict]) -> str | None:
+    """Kayıtlı taslağın 6. bölümünü (şart cevapları, belge/adım işaretleri) güncel kontrol listesiyle yeniden yazar.
+    Taslak oluşturulduğu anın işaretlerini donduruyordu; sonradan hazırlanan belgeler Word çıktısında kontrol listesi
+    bölümünde işaretli, taslak bölümünde boş görünüyordu (arayüz simülasyonu 2026-10-12). Bölüm yoksa (ör. yapay
+    zekâ taslağı) metin olduğu gibi döner."""
+    if not taslak or BOLUM6 not in taslak:
+        return taslak
+    bas = taslak.index(BOLUM6)
+    son = taslak.find("\n## ", bas + len(BOLUM6))
+    return taslak[:bas] + belgeler_ve_kurallar(maddeler) + (taslak[son:] if son >= 0 else "")
+
+
 # Başvuru biçimine göre taslağın yeri (docs/olcum/2026-10-09-uygunluk/KRITER_SEMASI.md; taslak denemesi: proje dışı
 # programlarda kullanıcılar "metin bu başvuruya bir şey katmıyor" dedi, docs/olcum/2026-10-09-taslak-ajan/RAPOR.md).
 BICIM_ACIKLAMA = {
@@ -401,7 +416,7 @@ def uret(t, profil: dict, maddeler: list[dict], cagrilar: list[dict], cevaplar: 
     # Ayrı alıntı satırı: paneldeki mdToHtml alıntı içi italiği işlemiyor.
     k = taslak_kapsami(t)
     not_ = (f"> **Ne için:** {t.baslik} başvurusunda {k['ne_icin']}."
-            + (f" **Nereye girilir:** {k['nereye']}." if k["nereye"] else "")
+            + (f" **Nereye girilir:** {k['nereye'].rstrip('. ')}." if k["nereye"] else "")
             + "\n>\n" + BASLIK_NOTU
             + "\n>\n> Bu taslak yapay zekâ kullanılmadan, kayıtlı verilerinizden ve sihirbaz cevaplarınızdan hazırlandı.")
     return f"{not_}\n\n{metin}\n\n{belgeler_ve_kurallar(maddeler)}\n"

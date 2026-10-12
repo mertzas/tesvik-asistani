@@ -92,7 +92,7 @@ def maddeler(t: Tesvik) -> list[dict]:
 
 
 def _yanit(t: Tesvik, kayit: BasvuruTakibi | None) -> dict:
-    from app.sablon_taslak import taslak_kapsami
+    from app.sablon_taslak import bolum6_guncelle, taslak_kapsami
     liste = maddeler(t)
     isaretli = set(kayit.isaretli or []) if kayit else set()
     cevaplar = (kayit.uygunluk_cevaplari or {}) if kayit else {}
@@ -114,7 +114,8 @@ def _yanit(t: Tesvik, kayit: BasvuruTakibi | None) -> dict:
         "taslak_kapsami": taslak_kapsami(t),
         "takipte": kayit is not None,
         "guncelleme": kayit.guncelleme.isoformat() if kayit and kayit.guncelleme else None,
-        "taslak": kayit.taslak if kayit else None,
+        # 6. bölüm (şartlar, belgeler, adımlar) her okumada güncel işaretlerle (panel ve Word çıktısı aynı durumu gösterir).
+        "taslak": bolum6_guncelle(kayit.taslak, liste) if kayit else None,
         "taslak_tarihi": kayit.taslak_tarihi.isoformat() if kayit and kayit.taslak_tarihi else None,
         "taslak_cevaplar": kayit.taslak_cevaplar if kayit else None,
         # Dönemsel çağrılar (app/cagrilar.py): açık/yaklaşan önce; yoksa boş liste ("tarih duyurulmadı").

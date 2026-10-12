@@ -558,9 +558,17 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   formu sessizce gönderilmiyordu (`step="any"`, test); kurum çeşitlendirmesi (`_kurum_ile_cesitlendir`) blokları
   görünen skora göre kurduğu için sıralama cezaları eziliyordu (bloklar artık `siralama` ile) ve başvuru gerektirmeyen
   vergi istisnaları (KDV ihracat istisnası, GVK 20/B) sıralamada geride (`_VERGI_PROGRAMI`'na "KDV İstisnası").
-  Açık kalan: arayüzde finansman/dijital hedefi yok (4 hesap "Hedefler bilgisini ekleyin"); Rekortiv hazırlık kartı
-  şirkete geçişi öneriyor ama BiGG sıra şartını söylemiyor; e-ticaret profilinde hazırlık adımları ihracat hedefi
-  olmadan da e-ihracata dönük. Sunum: https://claude.ai/artifact/B4KYUsoqRPKZDDtoUeXQTf (66 slayt).
+  Ardından açık kalan dört madde de kapatıldı: genel hedeflerde finansman / dijitalleşme / makine kutusu (makine
+  artık tarıma özel değil); hazırlık yol haritası ihracat sinyali yoksa ihracat odaklı programları saymıyor
+  (`ihracat_odakli`), konsorsiyum notu yalnız ihracatçıya; şirketsiz profilde "şirkete geç" adımı kabul tarihinde
+  ortaklık istemeyen programı (1812 BiGG) adıyla uyarıyor (`ORTAKLIK_SARTI`); danışman yanıtının altındaki kayıtlarda
+  kontrol listesi düğmesi, yanıtta öne çıkan program listenin başında işaretli. Tarayıcı doğrulaması
+  `acik_dogrula.py` 6/6. Belge hazırlama adımı eklendi (`belge_akisi.py`): 13 hesapta kontrol listesindeki belgeler
+  hazır işaretlendi, 3 hesapta Yazdır/PDF görünümü, 3 hesapta indirilen .docx Microsoft Word ile HTML'e çevrilip
+  görüntülendi. Bulunan ve düzeltilen: kayıtlı taslağın "6. Başvuru şartları, belgeler ve adımlar" bölümü taslağın
+  yazıldığı anın işaretlerini donduruyordu (Word'de kontrol listesi 4/6, taslak bölümü 1 belge); artık her okumada
+  güncel işaretlerle yazılıyor (`sablon_taslak.bolum6_guncelle`, `basvuru_listesi._yanit`); "Nereye girilir"
+  cümlesinde çift nokta. Sunum: https://claude.ai/artifact/B4KYUsoqRPKZDDtoUeXQTf (85 slayt).
 - **Groq kayıt önerici** (`scripts/groq_kayit_onerici.py`, self-test 7/7): yalnız kamu mevzuat metnini (mevzuat.gov.tr
   PDF'i) Groq `openai/gpt-oss-120b`'ye verir ve kayıt taslağı ister; kullanıcı/kurum/ikas verisi gönderilmez,
   uygulamanın çalışma anındaki LLM yolu (`app/llm_saglayici.py`) değişmez. Model alıntıları birebir vermek zorunda;

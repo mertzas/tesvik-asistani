@@ -1,0 +1,81 @@
+{
+  "slug": "eximbank-faizsiz-sevk-oncesi-ihracat-finansmani",
+  "kurum": "Türk Eximbank",
+  "baslik": "Türk Eximbank Faizsiz Sevk Öncesi İhracatın Finansmanı - SÖİF (katılım bankaları aracılığıyla kısa vadeli faizsiz ihracat finansmanı)",
+  "ozet": "İhracatçıların ve ihracata yönelik mal üreten (nihai üretici) imalatçıların ihracat öncesi kısa vadeli finansman ihtiyacını, faizsiz bankacılık ilkeleriyle ve katılım bankaları aracılığıyla karşılayan programdır. Türk malı veya hizmet ihracatı taahhüdü karşılığında kullandırılır; işlem bazında alt limit yoktur. Vade ve maliyet bilgileri Eximbank sitesindeki ilgili sayfada yayınlanır.",
+  "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/katilim-bankaciligi-urunleri/sevk-oncesi-ihracat-kredisi-katilim-bankasi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Eximbank'ın güncel internet sitesinde finansman programı olarak yayınlanmaktadır; dönemsel çağrıya bağlı değildir ve sayfada kapanış tarihi belirtilmemiştir.",
+    "alinti": "Faizsiz Sevk Öncesi İhracatın Finansmanı, ülkemiz ihracatına olan desteğimizi artırmak ve farklı kanallardan ihracatçı firmalarımıza ulaşabilmek için katılım bankaları vasıtasıyla kullandırıma sunmuş olduğumuz finansman programıdır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/katilim-bankaciligi-urunleri/sevk-oncesi-ihracat-kredisi-katilim-bankasi"
+  },
+  "basvuru_bicimi": "kredi",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "imalat",
+    "hizmet"
+  ],
+  "tesvil_tutari": "Hibe değil finansman: işlem bazında alt limit yoktur. Vade ve maliyet bilgileri Eximbank'ın ilgili sayfasında yayınlanır.",
+  "basvuru_yeri": "Katılım bankaları (aracı banka); Finansman Talep Formu ve başvuru evrak listesindeki belgeler aracı bankaya sunulur",
+  "basvuru_suresi": "Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "bilgi",
+      "metin": "Finansman doğrudan Eximbank'tan değil, katılım bankaları aracılığıyla kullandırılır.",
+      "alinti": "ihracat öncesi kısa vadeli finansman ihtiyaçlarını katılım bankaları aracılığı ile karşılıyoruz.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/katilim-bankaciligi-urunleri/sevk-oncesi-ihracat-kredisi-katilim-bankasi"
+    },
+    {
+      "tur": "sart",
+      "metin": "Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretip ihracatçı aracılığıyla ihraç eden imalatçılar, Türk menşeli malların kesin ihracı taahhüdü karşılığında yararlanabilir (Dış Ticaret Sermaye Şirketleri hariç).",
+      "alinti": "Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç olmak üzere, Türkiye’de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan ve ihracatçı aracılığı ile bu malını ihraç eden imalatçı firmaların,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/katilim-bankaciligi-urunleri/sevk-oncesi-ihracat-kredisi-katilim-bankasi"
+    },
+    {
+      "tur": "sart",
+      "metin": "Türkiye'deki serbest bölgelerde üretim, alım-satım veya bakım-onarım ruhsatı olan kullanıcılar da yararlanabilir.",
+      "alinti": "Türkiye’de kurulu serbest bölgelerde, üretim, alım-satım veya bakım-onarım ruhsatı sahibi kullanıcıların,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/katilim-bankaciligi-urunleri/sevk-oncesi-ihracat-kredisi-katilim-bankasi"
+    },
+    {
+      "tur": "sart",
+      "metin": "Turizm, uluslararası taşımacılık, sağlık, müteahhitlik-müşavirlik-yazılım-mühendislik ve bakım-onarım gibi döviz kazandırıcı hizmet ihracı yapan firmalar da yararlanabilir.",
+      "alinti": "Turizm müesseseleri ile seyahat acentelerinin yurt içindeki ve yurt dışındaki turizm faaliyetleri sırasında yaptıkları döviz karşılığı hizmet satışlarının",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/katilim-bankaciligi-urunleri/sevk-oncesi-ihracat-kredisi-katilim-bankasi"
+    },
+    {
+      "tur": "kural",
+      "metin": "İşlem bazında alt limit yoktur.",
+      "alinti": "İşlem bazında herhangi bir alt limit bulunmamaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/katilim-bankaciligi-urunleri/sevk-oncesi-ihracat-kredisi-katilim-bankasi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Program ihracatı geliştirmeye, ürün çeşitlendirmeye ve yeni pazarlar kazanmaya yönelik sevk öncesi kısa vadeli finansman sağlar.",
+      "alinti": "ihracatlarını geliştirilmelerine destek veriyor, ihraç edilen mal ve hizmetlerin çeşitlendirilmesine katkıda bulunuyor, ihraç mallarına yeni pazarlar kazandırılmasına yardımcı oluyor,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/katilim-bankaciligi-urunleri/sevk-oncesi-ihracat-kredisi-katilim-bankasi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Finansman Talep Formu, SÖİF Müşteri Taahhüt Talep Formu (Ek-1) ve Firma Taahhütnamesi (Ek-2) gerekir; tam liste sitedeki Başvuru Evrak Listesi'ndedir.",
+      "alinti": "Başvuru Evrak Listesi Finansman Talep Formu Ek-1 SÖİF Müşteri Taahhüt Talep Formu Ek-2 Firma Taahhütnamesi",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/katilim-bankaciligi-urunleri/sevk-oncesi-ihracat-kredisi-katilim-bankasi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Elektronik Bankacılık Sözleşmesi (Ek-7) ve Çift Kullanımlı ve Hassas Maddeler Müşteri Beyan ve Taahhüt Formu (Ek-8) başvuru ekleri arasındadır.",
+      "alinti": "EK-7 Elektronik Bankacılık Sözleşmesi Ek-8 Çift Kullanımlı ve Hassas Maddeler Müşteri Beyan ve Taahhüt Formu",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/katilim-bankaciligi-urunleri/sevk-oncesi-ihracat-kredisi-katilim-bankasi"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "İşlem bazında alt limit yok",
+      "alinti": "İşlem bazında herhangi bir alt limit bulunmamaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/katilim-bankaciligi-urunleri/sevk-oncesi-ihracat-kredisi-katilim-bankasi"
+    }
+  ]
+}

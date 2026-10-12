@@ -224,7 +224,7 @@ def test_sertifika_sarti(veri):
 
 def test_profilsiz_karar_belirlenemedi_ve_profil_istenir(veri):
     y = _yanit(veri, "girişimci desteği", [1, 2])
-    assert "Belirlenemedi" in y and "İşletme profili" in y and "375.000 TL" in y
+    assert "Şarta bağlı" in y and "İşletme profili" in y and "375.000 TL" in y
 
 
 def test_9903_uygun_degil_notu_eler(veri):
@@ -336,7 +336,7 @@ def test_profildeki_kadin_girisimci_ozelligi_hedef_kitle_sartini_karsilar(veri):
     y = _yanit(veri, "Kadın Girişimci Kefalet Paketi", [22], _ltd(ozellikler=["kadin_girisimci"]))
     assert "hedef kitle: kadın girişimci (profilinize göre)" in y
     assert "kadın girişimci ortakların hisse toplamı %50 ve üzeri olmalı" in y
-    assert "profilde karşılığı olmayan kilit şart" not in y
+    assert "profilinizden doğrulanamayan önemli şart" not in y
     y2 = _yanit(veri, "Kadın Girişimci Kefalet Paketi", [22], _ltd())
     assert "hedef kitle: kadın girişimci" not in y2
 

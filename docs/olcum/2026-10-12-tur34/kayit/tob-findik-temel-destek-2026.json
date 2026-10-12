@@ -1,0 +1,135 @@
+{
+ "slug": "tob-findik-temel-destek-2026",
+ "kurum": "Tarım Bakanlığı",
+ "baslik": "Fındık Temel Desteği — Bitkisel Üretim Temel Destek, 3. kategori (2026 üretim yılı)",
+ "ozet": "ÇKS'ye kayıtlı fındık üreticilerine, kayıtlı tarım arazisi üzerinden dekar başına ödenen Temel Destek. Fındık, Tablo 1'de 3. kategoridedir (destek katsayısı 1,5). Dekar başı tutar = katsayı x destek katsayı değeri; değer 2026 üretim yılı için dekara 367 TL, 2027 için 442 TL'dir. Katsayı değeri mazot ve gübre maliyeti baz alınarak belirlenir. Fındık üretimine izin verilen ilçeler dışındaki parsellere ödenmez. Temel destek için ayrı başvuru dilekçesi alınmaz. Ayrı 'fındık alan bazlı gelir desteği' 2025-2027 modelinde yoktur (ayrı kayda bakın).",
+ "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#findik-temel-destek",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "Yürürlükte. 2025-2027 Kararı'nın güncel (değişiklikler işlenmiş) metninde 2026 ve 2027 katsayı değerleri bu şekilde yer alıyor.",
+  "alinti": "2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+  "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+ },
+ "basvuru_bicimi": "uretim_odeme",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "tarim"
+ ],
+ "tesvil_tutari": "Dekar başına: 1,5 (fındığın destek katsayısı) x destek katsayı değeri; değer 2026 üretim yılı için dekara 367 TL, 2027 için 442 TL. Birim destek tutarları ve katsayı değeri her yıl yeniden değerlendirilir.",
+ "basvuru_yeri": "Kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (ÇKS kaydı). Ödeme T.C. Ziraat Bankası hesabına yapılır.",
+ "basvuru_suresi": "Temel destek için ayrı başvuru yoktur; ilgili üretim yılında ÇKS'ye kayıtlı olmak gerekir (kayıt takvimi için il/ilçe müdürlüğüne bakın).",
+ "kontrol_listesi": [
+  {
+   "tur": "sart",
+   "metin": "İlgili üretim yılında Bakanlığın kayıt sistemine (ÇKS) kayıtlı olmak gerekir.",
+   "alinti": "Bitkisel üretimin desteklenmesi kapsamında yer alan desteklemelerden yararlanmak için ilgili üretim yılında Tarım ve Orman Bakanlığı ( Bakanlık) tarafından belirlenen kayıt sistemlerine kayıtlı olma şartı aranır.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "adim",
+   "metin": "Temel destek için ayrı dilekçe verilmez; ÇKS'ye kayıtlı çiftçi başvurmuş sayılır.",
+   "alinti": "İlgili üretim yılında ÇKS’ye kayıtlı olan çiftçiler temel, planlı üretim ve üretimi geliştirme desteği içinde yer alan katı organik -organomineral güb re desteğine başvurmuş sayılır, ayrıca başvuru dilekçesi alınmaz.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Fındık, Temel Destek Tablo 1'de 3. kategoridedir: destek katsayısı 1,5.",
+   "alinti": "3. Kategori Ayçiçeği (yağlık), Fındık, Kolza (kanola), Fasulye (kuru), Soya, Çay 1,5",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Hesap: destek katsayı değeri ile destek katsayısı çarpılır.",
+   "alinti": "Temel, planlı üretim ve üretimi geliştirme destekleme tutarı, destek katsayı değeri ile destek katsayısının çarpımı sonucu elde edilir.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Destek katsayı değeri: 2026 üretim yılı için dekara 367 TL, 2027 için 442 TL.",
+   "alinti": "2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Katsayı değeri mazot ve gübre maliyeti baz alınarak belirlenir (mazot-gübre desteği temel desteğe dahil edilmiştir).",
+   "alinti": "Destek katsayı değeri: Temel, planlı üretim ve üretimi geliştirme destekleri için tarımsal üretimde kullanılan mazot ve gübre maliyeti baz alınarak belirlenen tutarı,",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Fındık Alanlarının Tespitine Dair Karar'a göre fındık üretimine izin verilen ilçeler dışında fındık üretilen parsellere temel ve üretimi geliştirme desteği ödenmez.",
+   "alinti": "Fındık Alanlarının Tespitine Dair Karar kapsamında fındık üretimine izin verilen ilçeler dışında fındık üretilen parseller için temel ve üretimi geliştirme desteği ödemesi yapılmaz.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Aynı arazide aynı yıl birden fazla ürün varsa yalnız biri için, tutarı yüksek olan üretim esas alınarak ödeme yapılır.",
+   "alinti": "Bir üretim yılında aynı arazi üzerinde birden fazla ürün/üretim olması durumunda, sadece biri için ödeme yapılır. Destekleme ödemesinde, hesaplanan tutarı yüksek olan ürün/üretim esas alınır.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Planlamaya aykırı yeni kurulan meyve bahçelerine temel destek ödenmez.",
+   "alinti": "Tarımsal Üretimin Planlanması Hakkında Yönetmeliğe aykırı olarak yeni tesis edilen meyve bahçelerine temel ve üretimi geliştirme desteği ödemesi yapılmaz.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Tablo 1'de adı geçmeyen ürünler 'diğer ürünler' sayılır (1. kategori, katsayı 1,0). Planlama kapsamındaki ürünler listesinde çilek yoktur; açıkta çilek bu grupta değerlendirilir.",
+   "alinti": "Tablo 1’de isimleri yer almayan ürünler diğer ürünler olarak değerlendirilir.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "'Diğer ürünler' 1. kategoridedir ve katsayısı 1,0'dır.",
+   "alinti": "1. Kategori Aspir, Mercimek, Nohut, Patates, Soğan (kuru), Birinci grup yem bitkileri, Diğer ürünler 1,0",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Planlama kapsamındaki ürünler: arpa, aspir, ayçiçeği, buğday, kolza, kuru fasulye, mercimek, dane mısır, nohut, pamuk, patates, kuru soğan, soya ve yem bitkileri.",
+   "alinti": "arpa, aspir, ayçiçeği (yağlık), buğday, kolza (kanola), fasulye (kuru), mercimek, mısır (dane), nohut, pamuk (kütlü), patates, soğan (kuru), soya ve yem bitkileri planlama kapsamına alınmıştır.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Kapalı ortamda üretim yapan kadın veya 41 yaşından gün almamış çiftçilere kapalı ortam alanı için 3 katsayısıyla ilave temel destek ödenir.",
+   "alinti": "Kapalı ortam bitkise l üretim ünitelerinde üretim yapan kadın veya son takvim gününde 41 yaşından gün almamış çiftçilere, kapalı ortam bitkisel üretim alanı üzerinden 3 katsayısı ile ilave temel destek ödemesi yapılır.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Destek tutarları ve katsayı değeri her yıl bütçe imkânları dahilinde yeniden değerlendirilir.",
+   "alinti": "Orta Vadeli Program hedefleri dikkate alınarak bütçe imkânları dâhilinde her yıl yeniden değerlendirilir.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Fındık 3. kategori, katsayı 1,5",
+   "alinti": "3. Kategori Ayçiçeği (yağlık), Fındık, Kolza (kanola), Fasulye (kuru), Soya, Çay 1,5",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "iddia": "Katsayı değeri 2026: 367 TL, 2027: 442 TL",
+   "alinti": "2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "iddia": "Tutar = katsayı değeri x katsayı",
+   "alinti": "Temel, planlı üretim ve üretimi geliştirme destekleme tutarı, destek katsayı değeri ile destek katsayısının çarpımı sonucu elde edilir.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "iddia": "Fındık üretimine izin verilen ilçeler şartı",
+   "alinti": "Fındık Alanlarının Tespitine Dair Karar kapsamında fındık üretimine izin verilen ilçeler dışında fındık üretilen parseller için temel ve üretimi geliştirme desteği ödemesi yapılmaz.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "iddia": "Ayrı başvuru dilekçesi alınmaz",
+   "alinti": "İlgili üretim yılında ÇKS’ye kayıtlı olan çiftçiler temel, planlı üretim ve üretimi geliştirme desteği içinde yer alan katı organik -organomineral güb re desteğine başvurmuş sayılır, ayrıca başvuru dilekçesi alınmaz.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  }
+ ]
+}

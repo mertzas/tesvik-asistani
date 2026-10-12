@@ -106,6 +106,9 @@ _CARPIM = re.compile(r"(?<![\d.,])(\d{1,3}(?:\.\d{3})*(?:,\d+)?)\s*TL/(\w+)\s*[�
 _YUZDE_CARPIM = re.compile(r"(?<![\d.,])(\d{1,3}(?:\.\d{3})*(?:,\d+)?)\s*TL(?:\s+\w+)?\s*[×x]\s*%\s*(\d+(?:,\d+)?)"
                            r"\s*=\s*(\d{1,3}(?:\.\d{3})*(?:,\d+)?)\s*TL")
 _BIRIM_FIYAT = re.compile(r"(?<![\d.,])(\d{1,3}(?:\.\d{3})*(?:,\d+)?)\s*TL/(\w+)")
+# Açık toplama: "4.954,50 TL + 1.234,00 TL = 6.188,50 TL" (her terim ayrıca doğrulanmış olmalı).
+_TL_SAYI = r"\d{1,3}(?:\.\d{3})*(?:,\d+)?"
+_TOPLAM = re.compile(rf"(?<![\d.,])((?:{_TL_SAYI}\s*TL\s*\+\s*)+{_TL_SAYI}\s*TL)\s*=\s*({_TL_SAYI})\s*TL")
 
 
 def _gun_ay(tarihler_: set[date]) -> set[tuple[int, int]]:
@@ -162,6 +165,11 @@ def denetle(yanit: str, baglam: str, soru: str = "", bugun: date | None = None) 
         taban, oran, sonuc = _deger(m.group(1)), _deger(m.group(2)), _deger(m.group(3))
         if taban in baglam_tl and oran in oranlar and round(taban * oran / 100, 2) == round(sonuc, 2):
             tam_hesap.add(round(sonuc, 2))
+    dogru = tam_hesap | kurusl | baglam_tl
+    for m in _TOPLAM.finditer(yanit or ""):
+        terimler = [_deger(x) for x in re.findall(_TL_SAYI, m.group(1))]
+        if all(x in dogru for x in terimler) and round(sum(terimler), 2) == round(_deger(m.group(2)), 2):
+            tam_hesap.add(round(_deger(m.group(2)), 2))
     for v in tl_tutarlari(yanit):
         if v in tam_hesap or v in kurusl or v in baglam_tl or any(abs(v - h) <= max(1.0, h * 0.005) for h in hesaplanabilir | baglam_tl):
             continue
@@ -227,6 +235,11 @@ def _self_test() -> int:
           denetle("3.500.000 TL bütçe × %75 = 2.625.000 TL", "bütçe en fazla 3.500.000 TL; %75 hibe", bugun=bugun) == []
           and any("tutar" in x for x in denetle("3.500.000 TL bütçe × %75 = 2.700.000 TL",
                                                 "bütçe en fazla 3.500.000 TL; %75 hibe", bugun=bugun))),
+         ("açık toplama: doğrusu geçer, yanlışı yakalanır",
+          denetle("550,50 TL/da × 9 da = 4.954,50 TL; 205,52 TL/da × 9 da = 1.849,68 TL; toplam 4.954,50 TL + "
+                  "1.849,68 TL = 6.804,18 TL", "550,50 TL/da; 205,52 TL/da; dekar: 9", bugun=bugun) == []
+          and any("tutar" in x for x in denetle("4.954,50 TL + 1.849,68 TL = 7.000,00 TL",
+                                                "550,50 TL/da; 205,52 TL/da; dekar: 9", bugun=bugun))),
          ("kesirli dekar çarpımı", denetle("954,20 TL/da × 180,5 da = 172.233,10 TL",
                                            "954,20 TL/da; dekar: 180.5", bugun=bugun) == []),
          ("'ABD doları' yazımı tutar sayılır", tl_tutarlari("1.000.000 ABD dolarının üzerinde") == {1000000.0}),

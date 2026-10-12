@@ -128,7 +128,8 @@ def test_kurum_cesitlendirme_ince_skoru_ezmez(db_session):
     from app.models import TesvikNace
     _t(db_session, 311, "KGF Kredi A", "https://t/311", kurum="KGF")
     _t(db_session, 312, "1507 TÜBİTAK", "https://t/312", kurum="TUBITAK")
-    z = _t(db_session, 313, "Hizmet İhracatı Bilişim", "https://t/313", kurum="Ticaret Bakanlığı")
+    # Başlıkta "ihracat" yok: ihracat ilgi cezası (ayrı testte) bu çeşitlendirme testine karışmasın.
+    z = _t(db_session, 313, "Bilişim Hizmet Desteği", "https://t/313", kurum="Ticaret Bakanlığı")
     z.nace_kayitlari = [TesvikNace(nace_prefix="62", kaynak="elle")]
     db_session.commit()
     sonuc = esles(FinancialProfile(sektor="hizmet", nace_kodu="62.10", sirket_turu="limited"), db_session)
@@ -142,8 +143,8 @@ def test_nace_kisitli_program_nace_bilinmeyen_profile_tam_sektor_puani_almaz(db_
     programının altına iner; NACE 62 girilince tam puan geri gelir."""
     from app.models import TesvikNace
     genel = _t(db_session, 321, "Genel Hizmet Kredisi", "https://t/321", kurum="KGF", sektorler=("hizmet",))
-    dar = _t(db_session, 322, "Bilişim Hizmet İhracatı", "https://t/322", kurum="Ticaret Bakanlığı",
-             sektorler=("hizmet", "ihracat"))
+    dar = _t(db_session, 322, "Bilişim Hizmet Desteği", "https://t/322", kurum="Ticaret Bakanlığı",
+             sektorler=("hizmet",))
     dar.nace_kayitlari = [TesvikNace(nace_prefix="62", kaynak="elle"), TesvikNace(nace_prefix="63", kaynak="elle")]
     db_session.commit()
 

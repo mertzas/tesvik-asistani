@@ -152,6 +152,11 @@ def _finans(profil: Any) -> Bilesen:
     tur = getattr(profil, "sirket_turu", None)
     if ciro is None and tur != "yok":
         return Bilesen(ad, None, "yıllık ciro profilde yok; hibeler harcama sonrası ödendiği için ön finansman gücü ölçülemedi")
+    if tur == "yok" and ciro:
+        # Şirketsiz gelir mümkün (ör. GVK 20/B mobil uygulama mağaza geliri); "gelir yok" demek profili yanlış okur.
+        return Bilesen(ad, 10, f"şirket dışı yıllık gelir {ciro:,.0f} TL".replace(",", ".") +
+                       ": hibe harcama yapılıp belgelendikten sonra ödenir, ön finansman bu gelirden ya da öz kaynaktan "
+                       "karşılanmalı; şirketleşme öncesi hibeler (ör. BiGG) nakit avantajlıdır")
     if tur == "yok" or not ciro:
         return Bilesen(ad, 5, "gelir yok: hibe harcama yapılıp belgelendikten sonra ödenir, ön finansman öz kaynaktan "
                               "karşılanmalı; şirketleşme öncesi hibeler (ör. BiGG) nakit avantajlıdır")

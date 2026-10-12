@@ -1,0 +1,138 @@
+{
+ "slug": "gib-gvk-muk20-genc-girisimci-kazanc-istisnasi",
+ "kurum": "Gelir İdaresi Başkanlığı",
+ "baslik": "Genç Girişimcilerde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20)",
+ "ozet": "Ticari, zirai veya mesleki faaliyeti nedeniyle adlarına ilk defa gelir vergisi mükellefiyeti tesis olunan ve mükellefiyet başlangıç tarihi itibarıyla 29 yaşını doldurmamış tam mükellef gerçek kişilerin kazançları, faaliyete başladıkları takvim yılından itibaren üç vergilendirme dönemi boyunca, gelir vergisi tarifesinin ikinci diliminde yer alan tutara (2026 için 400.000 TL) kadar olan kısmı için gelir vergisinden istisnadır. Kazanç elde edilmese ya da istisna tutarının altında kazanç elde edilse bile yıllık gelir vergisi beyannamesi verilir. Genç girişimcilere 1 yıl sağlanan Bağ-Kur sigorta prim desteği ise 1/1/2026'dan itibaren kaldırılmıştır (ayrı kayıt).",
+ "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf#mukerrer-20",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "Düzenleme yürürlüktedir; GİB'in 2026 tarihli bilgilendirmesi 2026 yılı için istisna tutarını 400.000 TL olarak vermektedir. Tutar her yıl gelir vergisi tarifesinin ikinci dilimine göre güncellenir.",
+  "alinti": "2025 yılı için uygulanacak istisna tutarı 330.000 TL (2026 yılı için 400.000 TL)’dir.",
+  "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU/UNIVERSAL/2026/2026_genc_girisimciler_info.pdf"
+ },
+ "basvuru_bicimi": "diger",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "genel"
+ ],
+ "sirket_turleri": [
+  "sahis"
+ ],
+ "tesvil_tutari": "Gelir vergisi istisnası (vergi avantajı): faaliyete başlanılan takvim yılından itibaren üç vergilendirme dönemi boyunca, gelir vergisi tarifesinin ikinci diliminde yer alan tutara (2025 için 330.000 TL, 2026 için 400.000 TL) kadar olan kazanç gelir vergisinden istisnadır. Tutarın altında kalan kısım ertesi yıla devredilemez. Tutarlar her yıl güncellenir.",
+ "basvuru_yeri": "Kaynakta ayrı bir başvuru yeri belirtilmemiştir; şartlardan biri işe başlamanın kanuni süresi içinde vergi dairesine bildirilmesidir, istisna yıllık gelir vergisi beyannamesi verilirken değerlendirilir.",
+ "basvuru_suresi": "Çağrı veya son başvuru tarihi yoktur; istisna faaliyete başlanılan takvim yılından itibaren üç vergilendirme dönemi için geçerlidir.",
+ "kontrol_listesi": [
+  {
+   "tur": "sart",
+   "metin": "İlk defa gelir vergisi mükellefiyeti tesis olunmalı ve mükellefiyet başlangıç tarihinde 29 yaşını doldurmamış tam mükellef gerçek kişi olunmalıdır.",
+   "alinti": "Ticari, zirai veya mesleki faaliyeti nedeniyle adlarına ilk defa gelir vergisi mükellefiyeti tesis olunan ve mükellefiyet başlangıç tarihi itibarıyla 29 (yirmi dokuz) yaşını doldurmamış tam mükellef gerçek kişilerin,",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İstisna, faaliyete başlanılan takvim yılından itibaren üç vergilendirme dönemi için uygulanır.",
+   "alinti": "faaliyete başladıkları takvim yılından itibaren üç vergilendirme dönemi boyunca elde ettikleri",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İstisna tutarı gelir vergisi tarifesinin ikinci diliminde yer alan tutardır (2026 için 400.000 TL).",
+   "alinti": "gelir vergisi tarifesinin ikinci diliminde yer alan tutara (2025 takvim yılı için 330.000 TL, 2026 takvim yılı için 400.000 TL) kadar olan kısmı",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "İşe başlamayı kanuni süresi içinde vergi dairesine bildirmek gerekir.",
+   "alinti": "Mükelleflerin işe başlamayı kanuni süresi içerisinde bildirmeleri,",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "İşte bilfiil çalışmak ya da işin kendisi tarafından sevk ve idare edilmesi gerekir.",
+   "alinti": "İşte bilfiil çalışılması ya da işin kendisi tarafından sevk ve idare edilmesi",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Faaliyet adi ortaklık veya şahıs şirketi bünyesinde yapılıyorsa tüm ortaklar işe başlama tarihi itibarıyla şartları taşımalıdır.",
+   "alinti": "Faaliyetin adi ortaklık veya şahıs şirketi bünyesinde yapılması hâlinde tüm ortakların işe başlama tarihi itibarıyla anılan madde kapsamındaki şartları taşıması,",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Faaliyet, eş veya üçüncü dereceye kadar kan/kayın hısımlarından devralınmış olmamalıdır (ölüm nedeniyle eş ve çocukların devralması hariç).",
+   "alinti": "faaliyeti durdurulan veya faaliyetine devam eden bir işletmenin ya da mesleki faaliyetin eş veya üçüncü dereceye kadar (bu derece dâhil) kan veya kayın hısımlarından devralınmamış olması,",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Mevcut bir işletmeye veya mesleki faaliyete sonradan ortak olunmamalıdır.",
+   "alinti": "Mevcut bir işletmeye veya mesleki faaliyete sonradan ortak olunmaması,",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Kazanç elde edilmese ya da istisna haddinin altında kazanç elde edilse bile yıllık gelir vergisi beyannamesi verilmelidir.",
+   "alinti": "İstisna kapsamındaki faaliyetlerden kazanç elde edilmemesi veya istisna haddinin altında kazanç elde edilmesi hallerinde dahi yıllık gelir vergisi beyannamesi verilmesi gerekmektedir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İstisna tutarının altında kalan kısım ertesi yıla devredilemez.",
+   "alinti": "Teşvik tutarının altında kazanç elde edilmesi durumunda teşvikten yararlanılmayan tutar, ertesi yıla devredilemeyecektir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU/UNIVERSAL/2026/2026_genc_girisimciler_info.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Faaliyet terk edilip daha sonra yeniden başlanırsa 'ilk defa mükellefiyet' şartı ihlal edilmiş sayılır ve bu istisnadan yararlanılamaz.",
+   "alinti": "Faaliyet terk edildikten sonra tekrar faaliyete başlanılması halinde ise adlarına ilk defa gelir vergisi mükellefiyeti tesis olunması şartı ihlal edilmiş sayılacağından bu teşvikten yararlanılamaz.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU/UNIVERSAL/2026/2026_genc_girisimciler_info.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Önceki faaliyet devam ederken yeni bir faaliyete başlanması istisna süresini uzatmaz.",
+   "alinti": "Önceki faaliyet devam ederken yeni bir faaliyete başlanılması teşvik süresini uzatmayacaktır.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU/UNIVERSAL/2026/2026_genc_girisimciler_info.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Kira, ücret gibi beyana tabi başka gelirler varsa istisna yalnızca ticari, zirai ve mesleki kazançlara uygulanır.",
+   "alinti": "Beyana tabi başka bir gelirin (kira, menkul sermaye iradı, ücret, diğer kazanç ve iratlar) bulunması durumunda; sadece ticari, zirai ve mesleki kazançlar dolayısıyla teşvik uygulamasından yararlanılacaktır.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU/UNIVERSAL/2026/2026_genc_girisimciler_info.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Basit usulde vergilendirilen mükellefler, gerçek usule geçmeleri halinde şartları taşımak kaydıyla 27/9/2024'ten itibaren bu istisnadan yararlanabilir.",
+   "alinti": "Kazançları basit usulde tespit olunan mükellefler, 327 Seri No.lu Gelir Vergisi Genel Tebliğinin yürürlüğe girdiği 27/9/2024 tarihinden itibaren gerçek usule geçmeleri halinde,",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU/UNIVERSAL/2026/2026_genc_girisimciler_info.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Şahıs: ilk defa mükellef, 29 yaş altı",
+   "alinti": "Ticari, zirai veya mesleki faaliyeti nedeniyle adlarına ilk defa gelir vergisi mükellefiyeti tesis olunan ve mükellefiyet başlangıç tarihi itibarıyla 29 (yirmi dokuz) yaşını doldurmamış tam mükellef gerçek kişilerin,",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "iddia": "İstisna tutarı: ikinci gelir dilimi (2025: 330.000 TL; 2026: 400.000 TL)",
+   "alinti": "gelir vergisi tarifesinin ikinci diliminde yer alan tutara (2025 takvim yılı için 330.000 TL, 2026 takvim yılı için 400.000 TL) kadar olan kısmı",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "iddia": "2026 istisna tutarı 400.000 TL",
+   "alinti": "2025 yılı için uygulanacak istisna tutarı 330.000 TL (2026 yılı için 400.000 TL)’dir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU/UNIVERSAL/2026/2026_genc_girisimciler_info.pdf"
+  },
+  {
+   "iddia": "Üç vergilendirme dönemi",
+   "alinti": "faaliyete başladıkları takvim yılından itibaren üç vergilendirme dönemi boyunca elde ettikleri",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "iddia": "Devredilemez",
+   "alinti": "Teşvik tutarının altında kazanç elde edilmesi durumunda teşvikten yararlanılmayan tutar, ertesi yıla devredilemeyecektir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU/UNIVERSAL/2026/2026_genc_girisimciler_info.pdf"
+  }
+ ]
+}

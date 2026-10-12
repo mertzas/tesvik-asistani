@@ -1,0 +1,112 @@
+{
+ "slug": "sanayi-5746-m3a-isletme-arge-harcamasi-indirimi",
+ "kurum": "Sanayi ve Teknoloji Bakanlığı",
+ "baslik": "İşletme Bünyesindeki Ar-Ge Harcamalarının %100'ü Vergi İndirimi (5746 sayılı Kanun m.3/A — Ar-Ge İndirimi)",
+ "ozet": "Gelir ve kurumlar vergisi mükellefleri, işletmeleri bünyesinde gerçekleştirdikleri, münhasıran yeni teknoloji ve bilgi arayışına yönelik Ar-Ge harcamalarının %100'ünü, projenin Sanayi ve Teknoloji Bakanlığınca Ar-Ge ve yenilik projesi olarak değerlendirilmesi şartıyla kazancın tespitinde indirim konusu yapabilir. Kanundaki Ar-Ge tanımı yazılım faaliyetlerini ve çevre uyumlu ürün tasarımını da kapsar. Kazanç yetersizse indirilemeyen tutar sonraki dönemlere devredilir. Kanun 31/12/2028 tarihine kadar uygulanır; Ar-Ge merkezi kurmak şart değildir.",
+ "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3a",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "Kanun 31/12/2028 tarihine kadar uygulanmak üzere yürürlüktedir; 2026-10-12 itibarıyla uygulanmaktadır.",
+  "alinti": "Bu Kanun 31/12/2028 tarihine kadar uygulanmak üzere, yayımını takip eden ay başında yürürlüğe girer.",
+  "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+ },
+ "basvuru_bicimi": "diger",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "arge"
+ ],
+ "sirket_turleri": [
+  "sahis",
+  "limited",
+  "anonim"
+ ],
+ "tesvil_tutari": "Vergi indirimi: işletme bünyesinde yapılan, münhasıran yeni teknoloji ve bilgi arayışına yönelik Ar-Ge harcamalarının %100'ü kazancın tespitinde indirim konusu yapılır (projenin Bakanlıkça Ar-Ge ve yenilik projesi olarak değerlendirilmesi şartıyla). Harcamalar amortisman yoluyla itfa edilir, iktisadi kıymet oluşmazsa doğrudan gider yazılır; indirilemeyen tutar sonraki dönemlere devredilir. Kanun 31/12/2028 tarihine kadar uygulanır.",
+ "basvuru_yeri": "Sanayi ve Teknoloji Bakanlığı (projenin Ar-Ge ve yenilik projesi olarak değerlendirilmesi); gerekli belge ve usuller Maliye Bakanlığı ile Sanayi ve Teknoloji Bakanlığınca müştereken belirlenir.",
+ "basvuru_suresi": "Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır.",
+ "kontrol_listesi": [
+  {
+   "tur": "sart",
+   "metin": "Gelir ve kurumlar vergisi mükellefi olunmalı ve harcamalar işletmenin bünyesinde, münhasıran yeni teknoloji ve bilgi arayışına yönelik Ar-Ge için yapılmalıdır; harcamanın %100'ü indirim konusudur.",
+   "alinti": "Gelir ve kurumlar vergisi mükelleflerinin, işletmeleri bünyesinde gerçekleştirdikleri münhasıran yeni teknoloji ve bilgi arayışına yönelik araştırma ve geliştirme harcamaları tutarının %100’ü,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Projenin Sanayi ve Teknoloji Bakanlığı tarafından Ar-Ge ve yenilik projesi olarak değerlendirilmesi şarttır.",
+   "alinti": "bu kapsamdaki projelerin Bilim, Sanayi ve Teknoloji Bakanlığı tarafından Ar-Ge ve yenilik projesi olarak değerlendirilmesi şartıyla,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İndirim, kurumlar vergisi (m.10) ve gelir vergisi (m.89) hükümleri uyarınca kazancın tespitinde yapılır.",
+   "alinti": "5520 sayılı Kanunun 10 uncu maddesi ve 193 sayılı Kanunun 89 uncu maddesi uyarınca kazancın tespitinde indirim konusu yapılır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Harcamalar aktifleştirilerek amortisman yoluyla itfa edilir; iktisadi kıymet oluşmazsa doğrudan gider yazılır.",
+   "alinti": "Ayrıca bu harcamalar, 213 sayılı Kanuna göre aktifleştirilmek suretiyle amortisman yoluyla itfa edilir, bir iktisadi kıymet oluşmaması hâlinde ise doğrudan gider yazılır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Kazanç yetersizse indirilemeyen tutar sonraki vergilendirme dönemlerine devredilir.",
+   "alinti": "Kazancın yetersiz olması nedeniyle ilgili vergilendirme döneminde indirim konusu yapılamayan tutar, sonraki vergilendirme dönemlerine devredilir.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Ar-Ge faaliyetleriyle doğrudan ilişkili olmayan giderlerden Ar-Ge indirimi hesaplanmaz.",
+   "alinti": "Araştırma ve geliştirme faaliyetleri ile doğrudan ilişkili olmayan giderlerden Ar-Ge indirimi hesaplanmaz.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "belge",
+   "metin": "Uygulamadan yararlanmak için gerekli belgeler ve usuller Maliye Bakanlığı ile Sanayi ve Teknoloji Bakanlığınca müştereken belirlenir (güncel belge listesi için Bakanlığa bakılmalıdır).",
+   "alinti": "uygulamadan yararlanılabilmesi için gerekli belgeler ile usulleri belirlemeye Maliye Bakanlığı ile Bilim, Sanayi ve Teknoloji Bakanlığı müştereken yetkilidir.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Kanundaki Ar-Ge tanımı yazılım faaliyetleri ile çevre uyumlu ürün tasarımını da kapsar; bilimsel ve teknolojik belirsizliğe odaklanan, çıktıları özgün ve deneysel olan faaliyetler Ar-Ge sayılır.",
+   "alinti": "çevre uyumlu ürün tasarımı veya yazılım faaliyetleri ile alanında bilimsel ve teknolojik gelişme sağlayan, bilimsel ve teknolojik bir belirsizliğe odaklanan, çıktıları özgün, deneysel, bilimsel ve teknik içerik taşıyan faaliyetleri,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Bu Kanun kapsamındaki indirim ve teşviklerden yararlananlar, 4691 sayılı Kanunun geçici 2. maddesindeki istisnadan ayrıca yararlanamaz.",
+   "alinti": "ve teşviklerden yararlananlar; 193 sayılı Kanunun 89 uncu maddesinin birinci fıkrasının (13) numaralı bendi, 5520 sayılı Kanunun 10 uncu maddesinin birinci fıkrasının (ğ) bendi hükümleri ile 4691 sayılı Kanunun geçici 2 nci maddesi hükümlerinden ayrıca yararlanamazlar.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Şartların ihlali veya teşviklerin amacı dışında kullanılması halinde zamanında tahakkuk ettirilmeyen vergiler için vergi ziyaı doğmuş sayılır.",
+   "alinti": "Bu Kanunda öngörülen şartların ihlali veya teşvik ve destek unsurlarının amacı dışında kullanılması halinde, zamanında tahakkuk ettirilmemiş vergiler yönünden vergi ziyaı doğmuş sayılır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Ar-Ge, yenilik ve tasarım faaliyetlerinin yerindelik ve uygunluk denetimini Sanayi ve Teknoloji Bakanlığı veya yetki verilen teknoloji geliştirme bölgeleri yönetici şirketleri yapar.",
+   "alinti": "Bu Kanun kapsamında gerçekleştirilen Ar-Ge, yenilik ve tasarım faaliyetlerine ilişkin yerindelik ve uygunluk denetimleri, Sanayi ve Teknoloji Bakanlığı veya Bakanlıkça yetki verilen teknoloji geliştirme bölgeleri yönetici şirketleri tarafından gerçekleştirilir.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Ar-Ge harcamalarının %100'ü indirim konusu",
+   "alinti": "Gelir ve kurumlar vergisi mükelleflerinin, işletmeleri bünyesinde gerçekleştirdikleri münhasıran yeni teknoloji ve bilgi arayışına yönelik araştırma ve geliştirme harcamaları tutarının %100’ü,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "iddia": "Bakanlıkça Ar-Ge ve yenilik projesi olarak değerlendirilme şartı",
+   "alinti": "bu kapsamdaki projelerin Bilim, Sanayi ve Teknoloji Bakanlığı tarafından Ar-Ge ve yenilik projesi olarak değerlendirilmesi şartıyla,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "iddia": "Kanun 31/12/2028 tarihine kadar uygulanır",
+   "alinti": "Bu Kanun 31/12/2028 tarihine kadar uygulanmak üzere, yayımını takip eden ay başında yürürlüğe girer.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  }
+ ]
+}

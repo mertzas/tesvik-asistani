@@ -13,7 +13,9 @@ import pytest
 from app.tarim_destek_2026 import (
     FIDAN_KATSAYILARI,
     IYI_TARIM,
+    FINDIK_ILCE_SARTI,
     KATSAYI_BIRIM_TL,
+    KATSAYI_BIRIM_TL_2027,
     ORGANIK_ARILI_KOVAN_KATSAYI,
     ORGANIK_ORGUT_ILAVE_ORANI,
     ORGANIK_TARIM,
@@ -36,21 +38,29 @@ def _kalem(h, ad_baslangici):
 
 # ------------------------------------------------- resmî tabloyla tutarlılık
 
-def test_birim_deger_tablodaki_toplamlarla_tutarli():
-    """Tablodaki her toplam, katsayı x birim değer olmalı. 1,3 x 310 = 403,00;
-    2,25 x 310 = 697,50. Birim değer yanlışsa TÜM tutarlar yanlış olur.
-
-    Not: bazı haber kaynakları birim değeri 367 TL veriyor; Bakanlığın kendi
-    tablosundaki toplamlar 310 ile tutarlı, bu yüzden 310 esas alındı.
+def test_birim_deger_11781_sayili_kararla_367():
+    """2026 destek katsayı değeri 367 TL/da: 11781 sayılı CB Kararı (RG 08.09.2026) m.1/a, 8859'daki "310 TL"
+    ibaresini değiştirdi, 1/1/2026'dan geçerli. BUGEM 2026 tablosundaki toplamlar 310 ile hesaplıydı (1,3 x 310 =
+    403,00); katsayılar aynı kalır, toplamlar 367 ile yeniden hesaplanır. Birim değer yanlışsa TÜM tutarlar yanlış olur.
     """
-    assert KATSAYI_BIRIM_TL == 310.00
-    assert 1.3 * KATSAYI_BIRIM_TL == pytest.approx(403.00)
-    assert 1.5 * KATSAYI_BIRIM_TL == pytest.approx(465.00)
-    assert 2.25 * KATSAYI_BIRIM_TL == pytest.approx(697.50)
-    assert 0.3 * KATSAYI_BIRIM_TL == pytest.approx(93.00)
-    assert 0.56 * KATSAYI_BIRIM_TL == pytest.approx(173.60)
-    assert 1.7 * KATSAYI_BIRIM_TL == pytest.approx(527.00)
-    assert 2.2 * KATSAYI_BIRIM_TL == pytest.approx(682.00)
+    assert KATSAYI_BIRIM_TL == 367.00
+    assert KATSAYI_BIRIM_TL_2027 == 442.00
+    assert 1.3 * KATSAYI_BIRIM_TL == pytest.approx(477.10)
+    assert 1.5 * KATSAYI_BIRIM_TL == pytest.approx(550.50)
+    assert 2.25 * KATSAYI_BIRIM_TL == pytest.approx(825.75)
+    assert 0.3 * KATSAYI_BIRIM_TL == pytest.approx(110.10)
+    assert 0.56 * KATSAYI_BIRIM_TL == pytest.approx(205.52)
+    assert 1.7 * KATSAYI_BIRIM_TL == pytest.approx(623.90)
+    assert 2.2 * KATSAYI_BIRIM_TL == pytest.approx(807.40)
+
+
+def test_findik_ucuncu_kategori_ve_ilce_sarti():
+    """9 dekar fındık: Tablo 1 3. kategori 1,5 x 367 = 550,50 TL/da; planlı üretim kapsamında değil."""
+    h = hesapla("fındık", 9)
+    assert _kalem(h, "Temel destek").dekar_basi_tl == pytest.approx(550.50)
+    assert h.toplam_tl == pytest.approx(4_954.50)
+    assert _kalem(h, "Planlı üretim") is None
+    assert "fındık" in FINDIK_ILCE_SARTI.lower()
 
 
 def test_temel_destek_katsayilari():
@@ -97,12 +107,12 @@ def test_grup_sertifikasi_bireyselin_yarisi():
 # ------------------------------------------------------------ temel hesaplar
 
 def test_bugday_elle_hesapla_ayni():
-    """50 dekar buğday: temel 1,3 + planlı 1,3 = 806 TL/da x 50 = 40.300 TL."""
+    """50 dekar buğday: temel 1,3 + planlı 1,3 = 954,20 TL/da x 50 = 47.710 TL."""
     h = hesapla("buğday", 50, il="Konya")
-    assert _kalem(h, "Temel destek").dekar_basi_tl == pytest.approx(403.00)
-    assert _kalem(h, "Planlı üretim").dekar_basi_tl == pytest.approx(403.00)
-    assert h.dekar_basi_toplam_tl == pytest.approx(806.00)
-    assert h.toplam_tl == pytest.approx(40_300.00)
+    assert _kalem(h, "Temel destek").dekar_basi_tl == pytest.approx(477.10)
+    assert _kalem(h, "Planlı üretim").dekar_basi_tl == pytest.approx(477.10)
+    assert h.dekar_basi_toplam_tl == pytest.approx(954.20)
+    assert h.toplam_tl == pytest.approx(47_710.00)
 
 
 def test_sertifikali_tohum_eklenince_toplam_artar():
@@ -110,14 +120,14 @@ def test_sertifikali_tohum_eklenince_toplam_artar():
     var = hesapla("buğday", 50, il="Konya", sertifikali_tohum=True)
     fark = var.toplam_tl - yok.toplam_tl
     assert fark == pytest.approx(0.56 * KATSAYI_BIRIM_TL * 50)
-    assert var.toplam_tl == pytest.approx(48_980.00)
+    assert var.toplam_tl == pytest.approx(57_986.00)
 
 
 def test_pamuk_en_yuksek_kategori():
     h = hesapla("pamuk", 100, il="Şanlıurfa")
-    # 2,25 x 310 x 2 kalem (temel + planlı) = 1.395 TL/da
-    assert h.dekar_basi_toplam_tl == pytest.approx(1_395.00)
-    assert h.toplam_tl == pytest.approx(139_500.00)
+    # 2,25 x 367 x 2 kalem (temel + planlı) = 1.651,50 TL/da
+    assert h.dekar_basi_toplam_tl == pytest.approx(1_651.50)
+    assert h.toplam_tl == pytest.approx(165_150.00)
 
 
 def test_pamukta_tohum_sarti_notlaniyor():
@@ -253,7 +263,7 @@ def test_arilik_destegi_kovan_basina():
     """Kovan sayısını dekar gibi işlemek tutarı tamamen yanlış hesaplar."""
     k = arilik_destegi(80)
     assert k.dekar_basi_tl == pytest.approx(ORGANIK_ARILI_KOVAN_KATSAYI * KATSAYI_BIRIM_TL)
-    assert k.toplam_tl == pytest.approx(93.00 * 80)
+    assert k.toplam_tl == pytest.approx(110.10 * 80)
     assert "Kovan başına" in k.not_
 
 

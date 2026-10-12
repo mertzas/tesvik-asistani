@@ -1,0 +1,114 @@
+{
+  "slug": "eximbank-ihracat-destek-finansmani-faizsiz",
+  "kurum": "Türk Eximbank",
+  "baslik": "Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit)",
+  "ozet": "İhracata yönelik mal üreten imalatçılar, imalatçı-ihracatçılar, ihracatçılar ve döviz kazandırıcı hizmet veren firmalar, faizsiz bankacılık ilke ve standartları çerçevesinde, TCMB'nin sunduğu uygun maliyetli finansman imkanından yararlanır. Finansman TL cinsinden sağlanır; işlem bazında alt limit yoktur. KOBİ'lerde firma limiti, azami yıllık net satış hasılatı veya mali bilanço tutarının yarısıdır.",
+  "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Eximbank'ın güncel internet sitesinde finansman programı olarak yayınlanmaktadır; dönemsel çağrıya bağlı değildir ve sayfada kapanış tarihi belirtilmemiştir. Sayfadaki limit tutarları Eximbank'ın likidite koşullarına göre değişebilir.",
+    "alinti": "İhracata Destek Finansmanı ile ihracatçı firmaların TCMB’nin sunduğu uygun maliyetli finansman imkanlarına erişimini sağlıyoruz.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+  },
+  "basvuru_bicimi": "kredi",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "imalat",
+    "hizmet"
+  ],
+  "tesvil_tutari": "Hibe değil finansman (faizsiz bankacılık ilkelerine uygun): işlem bazında alt limit yoktur; KOBİ'lerde firma limiti azami yıllık net satış hasılatı veya mali bilanço tutarının yarısı, KOBİ dışı firmalarda 2 milyar 500 milyon TL'dir. Limitler Eximbank'ın likidite koşullarına göre uygulanır ve güncellenebilir. Finansman TL cinsindendir; kar payı oranı vadeye göre belirlenir.",
+  "basvuru_yeri": "Türk Eximbank (Talep Formu ve başvuru evrakı Bankaya sunulur; sayfada ayrı bir başvuru kanalı belirtilmemiştir)",
+  "basvuru_suresi": "Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Türkiye'de yerleşik dış ticaret sermaye şirketleri (DTSŞ), sektörel dış ticaret şirketleri (SDTŞ), imalatçı-ihracatçılar ve ihracatçılar yararlanabilir.",
+      "alinti": "Dış Ticaret Sermaye Şirketleri (DTSŞ), Sektörel Dış Ticaret Şirketleri (SDTŞ), İmalatçı-ihracatçı, İhracatçı,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "tur": "sart",
+      "metin": "İhracatçı sıfatı olmasa da ihraç kaydıyla nihai mal üretip ihracatçı aracılığıyla ihraç eden imalatçılar da yararlanabilir.",
+      "alinti": "İhracatçı sıfatını haiz olmamakla birlikte ihraç kaydıyla nihai mal üretimi yapan ve ihracatçı aracılığı ile bu malını ihraç eden imalatçı,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "tur": "sart",
+      "metin": "Döviz kazandırıcı hizmet ihracatı için turizm işletme belgeli işletmeler ile sayfada sıralanan diğer hizmet grupları yararlanabilir.",
+      "alinti": "Döviz kazandırıcı hizmet ihracatı için kullanılan İhracat Destek Finansmanından ise, Türkiye’de yerleşik; Turizm işletme belgesi sahibi turizm işletmeleri",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "tur": "kural",
+      "metin": "KOBİ'lerde firma limiti, azami yıllık net satış hasılatı veya mali bilanço tutarının yarısıdır.",
+      "alinti": "KOBİ’lerde azami yıllık net satış hasılatı veya mali bilançosu tutarlarının yarısı,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "tur": "kural",
+      "metin": "KOBİ dışı firmalar için limit 2 milyar 500 milyon TL olarak uygulanır (Eximbank likidite koşullarını dikkate alarak belirler).",
+      "alinti": "KOBİ dışı firmalar için 2 milyar 500 milyon TL olarak uygulanmaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "tur": "kural",
+      "metin": "İşlem bazında alt limit yoktur.",
+      "alinti": "İşlem bazında herhangi bir alt limit bulunmamaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "tur": "kural",
+      "metin": "Finansman TL cinsinden sağlanır; vadeyi Eximbank belirler ve senet vadesiyle uyumlu olması beklenir.",
+      "alinti": "Bu program kapsamında finansmanlar TL cinsinden sağlanacaktır. Finansman vadesi Türk Eximbank tarafından belirlenmekte olup sunulacak senet vadesi ile uyumlu olması beklenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "tur": "kural",
+      "metin": "Kar payı oranı kredi vadesine göre belirlenir ve kullandırım tarihinde geçerli oran esas alınır.",
+      "alinti": "Kredilere uygulanacak kar payı oranları, kredi vadesine göre belirlenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "tur": "belge",
+      "metin": "Başvuru evrakı arasında Talep Formu, Muvafakatname ve Yaptırım Taahhütnamesi yer alır.",
+      "alinti": "Talep Formu Muvafakatname Muvafakatname (Turizm) Yaptırım Taahhütnamesi",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "tur": "belge",
+      "metin": "Firma Taahhütnamesi (Ek-4A) başvuru evrakı arasındadır.",
+      "alinti": "Ek-4A Firma Taahhütnamesi",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "tur": "belge",
+      "metin": "Döviz Pozisyonu Bildirim Formu (Ek-5) ve Firma Döviz Pozisyon Beyanı (Ek-8) sunulur.",
+      "alinti": "Ek-5 Döviz Pozisyonu Bildirim Formu Ek-8 Firma Döviz Pozisyon Beyanı",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "KOBİ dışı firmalar için limit 2 milyar 500 milyon TL",
+      "alinti": "KOBİ dışı firmalar için 2 milyar 500 milyon TL olarak uygulanmaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "iddia": "KOBİ'lerde firma limiti yıllık net satış hasılatı veya mali bilanço tutarının yarısı",
+      "alinti": "KOBİ’lerde azami yıllık net satış hasılatı veya mali bilançosu tutarlarının yarısı,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "iddia": "Limitler Eximbank likidite koşullarını dikkate alarak belirlenir",
+      "alinti": "Türk Eximbank likidite koşullarını dikkate alarak firma bazında limitleri;",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    },
+    {
+      "iddia": "Finansman TL cinsinden",
+      "alinti": "Bu program kapsamında finansmanlar TL cinsinden sağlanacaktır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani"
+    }
+  ]
+}

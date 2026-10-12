@@ -197,9 +197,10 @@ def test_min_olcek_mikro_isletmeyi_eler():
     kucuk = company_from_profile(FinancialProfile(sektor="imalat", calisan_sayisi=18, yillik_ciro=32e6))
     buyuk = company_from_profile(FinancialProfile(sektor="imalat", calisan_sayisi=400, yillik_ciro=2e9))
     bilinmiyor = company_from_profile(FinancialProfile(sektor="imalat"))
-    assert any("en az 'kucuk'" in s for s in hard_filter(mikro, program)[0])
+    # Kullanıcıya iç kod ("kucuk") değil Türkçe ölçek adı gösterilir (hakem bulgusu 2026-10-12).
+    assert any("en az küçük ölçeğindeki" in s for s in hard_filter(mikro, program)[0])
     assert hard_filter(kucuk, program)[0] == []
-    assert any("en çok 'orta'" in s for s in hard_filter(buyuk, program)[0])
+    assert any("en çok orta ölçeğindeki" in s for s in hard_filter(buyuk, program)[0])
     assert hard_filter(bilinmiyor, program)[0] == [], "ölçek bilinmiyorsa elemez"
 
 

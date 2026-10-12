@@ -1,0 +1,138 @@
+{
+ "slug": "tb-10962-m16-hizmet-barindirma",
+ "kurum": "Ticaret Bakanlığı",
+ "baslik": "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
+ "ozet": "Bilişim veya dijital aracılık sektöründe faaliyet gösteren yararlanıcının yazılımı, mobil uygulaması, dijital oyunu veya dijital aracılık platformu için yurt dışı pazara girişte yaptığı barındırma giderleri %50 oranında ve yıllık en fazla 5.000.000 TL tutarında desteklenir. Her yararlanıcı en fazla beş yıl desteklenir.",
+ "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf#madde-16",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "10962 sayılı Karar 1/1/2026 tarihinden itibaren geçerli olmak üzere yürürlüktedir; destek dönemsel çağrıya bağlı değildir, faaliyet sonrası başvuruyla işler.",
+  "alinti": "Bu Karar 1/1/2026 tarihinde n itibaren geçerli olmak üzere yayımı tarihinde yürürlüğe girer.",
+  "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+ },
+ "basvuru_bicimi": "diger",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "arge",
+  "e-ticaret",
+  "ihracat"
+ ],
+ "tesvil_tutari": "Barındırma giderlerinin %50'si, yıllık en fazla 5.000.000 TL; en fazla beş yıl (Karar metnindeki tutar; yıllık güncellenir). Ürünün Türkçe sürümü de varsa Genelge'ye göre hesap farklılaşır; kontrol listesine bakın.",
+ "basvuru_yeri": "Uluslararası Hizmet Ticareti Genel Müdürlüğü (Genel Müdürlük) ve incelemeci kuruluş (Hizmet İhracatçıları Birliği Genel Sekreterliği)",
+ "basvuru_suresi": "Çağrı yoktur; ödeme gerçekleştikten sonra, ödeme belgesi tarihinden itibaren altı ay içinde destek başvurusu yapılır.",
+ "kontrol_listesi": [
+  {
+   "tur": "bilgi",
+   "metin": "Yararlanıcı tanımına Türkiye'de yerleşik, Türk Ticaret Kanunu hükümlerine göre kurulmuş şirketler ve Kooperatifler Kanunu çerçevesinde faaliyette bulunan kooperatifler girer.",
+   "alinti": "Kanunu hükümlerine göre kurulmuş şirket i, 24/4/1969 tarihli ve 1163 sayılı Kooperatifler Kanunu hükümleri çerçevesinde faaliyette bulunan kooperatifi,",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "tur": "belge",
+   "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+   "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Destek, bilişim veya dijital aracılık sektöründe faaliyet gösteren yararlanıcının yazılım, mobil uygulama, dijital oyun veya dijital aracılık platformunun yurt dışı pazara girişi için yaptığı barındırma giderlerine verilir.",
+   "alinti": "Bilişim veya dijital aracılık sektöründe faaliyet gösteren yararlanıcının yazılımının, mobil uygulamasının, dijital oyununun veya dijital aracılık platformunun yurt dışı pazara girişi için gerçekleştirdiği barındırmaya yönelik giderleri",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Barındırma, yazılım, mobil uygulama, dijital oyun veya dijital aracılık platformunun internet üzerinden kullanıcılara ulaştırılması amacıyla sunucularda saklanmasıdır.",
+   "alinti": "Barındırma: Yazılım, mobil uygulama, dijital oyun veya dijital aracılık platformunun internet üzerinden kullanıcılara ulaştırılması amacıyla sunucularda saklanmasını,",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Barındırma gideri, ürünün yurt dışında pazarlanmasına yönelik olmalıdır.",
+   "alinti": "yurt dışı nda pazarlamasına yönelik barındırma giderleri desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Ürünün yabancı dilin yanında Türkçe sürümü de varsa destek tutarı, yapılan ödemenin %50'si üzerinden hesaplanır (bu hükmün %50 destek oranıyla birlikte nasıl uygulandığını başvuru öncesi Genel Müdürlükten teyit edin).",
+   "alinti": "yabancı dilin yanı sıra Türkçe sürümünün de bulunduğunun tespiti hâlinde destek tutarı yapılan ödemenin %50’si üzerinden hesaplanır.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "adim",
+   "metin": "Destek başvurusu, faaliyetin gerçekleştirilmesinden sonra yararlanıcı tarafından yapılır.",
+   "alinti": "Destek başvurusu , faaliyetin gerçekleştirilmesini müteakip yararlanıcı tarafından yapılır.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Destek başvurusu, ödeme belgesi tarihinden itibaren altı ay içinde EK-4 başvuru belgeleriyle yapılır.",
+   "alinti": "bu maddede sayılmayan diğer destek unsurları için ödeme belgesi tarihinden itibaren altı ay, içerisinde ilgisine göre “Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)”",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Desteğe konu ürün veya hizmetin yararlanıcıya ait olması gerekir.",
+   "alinti": "Desteğe konu edilen ürün veya hizmetin yararlanıcıya ait olması gerekir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Her yararlanıcı en fazla beş yıl boyunca desteklenir.",
+   "alinti": "Bu madde kapsamında her bir yararlanıcı en fazla beş yıl boyunca desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "tur": "belge",
+   "metin": "Faturada desteğe konu faaliyetin içeriği belirlenebilir olmalı; faaliyet ile fatura arasında ilişki kurulamazsa gider desteklenmez.",
+   "alinti": "Desteğe konu faaliyete ilişkin olarak alınan faturalarda, söz konusu faaliyetin içeriğinin belirlenebilir olması gerekir. Destek talebinde bulunulan faaliyet ile fatura arasında ilişki kurulamaması durumunda söz konusu gider desteklenmez.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+   "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+   "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+   "alinti": "tahakkuk edilecek toplam destek ödemesi; izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+   "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Barındırma desteği: %50, yıllık en fazla 5.000.000 TL",
+   "alinti": "barındırmaya yönelik giderleri %50 oranında ve yıllık en fazla 5.000.000 TL tutarında desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "iddia": "En fazla beş yıl",
+   "alinti": "Bu madde kapsamında her bir yararlanıcı en fazla beş yıl boyunca desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "iddia": "Yabancı dil ve Türkçe sürüm varsa hesap",
+   "alinti": "yabancı dilin yanı sıra Türkçe sürümünün de bulunduğunun tespiti hâlinde destek tutarı yapılan ödemenin %50’si üzerinden hesaplanır.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "iddia": "Ödeme belgesi tarihinden itibaren altı ay içinde başvuru",
+   "alinti": "bu maddede sayılmayan diğer destek unsurları için ödeme belgesi tarihinden itibaren altı ay, içerisinde ilgisine göre “Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)”",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  }
+ ]
+}

@@ -1,0 +1,146 @@
+{
+ "slug": "sanayi-4691-tgb-kazanc-istisnasi",
+ "kurum": "Sanayi ve Teknoloji Bakanlığı",
+ "baslik": "Teknoloji Geliştirme Bölgesi (Teknopark) Gelir ve Kurumlar Vergisi İstisnası (4691 sayılı Kanun geçici madde 2)",
+ "ozet": "Teknoloji Geliştirme Bölgelerinde (teknoparklarda) faaliyet gösteren gelir ve kurumlar vergisi mükelleflerinin, münhasıran bu Bölgedeki yazılım, tasarım ve Ar-Ge faaliyetlerinden elde ettikleri kazançlar 31/12/2028 tarihine kadar gelir ve kurumlar vergisinden müstesnadır. Kuluçka merkezlerinde yer alan erken aşama girişimciler (kuluçka girişimcisi) de bu merkezlerde Kanunun sağladığı destek, teşvik ve istisnalardan aynen yararlanır. Yazılım geliştiren bir girişimci, teknoparktaki yönetici şirketin projesini uygun görüp yer tahsis etmesi halinde bölgede faaliyet gösterebilir.",
+ "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf#gecici-madde-2",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "Kanun metnine göre istisna 31/12/2028 tarihine kadar uygulanır; yani 2026-10-12 itibarıyla yürürlüktedir.",
+  "alinti": "münhasıran bu Bölgedeki yazılım, tasarım ve AR -GE faaliyetlerinden elde ettikleri kazançları 31/12/2028 tarihine kadar gelir ve kurumlar vergisinden müstesnadır.",
+  "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+ },
+ "basvuru_bicimi": "diger",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "arge",
+  "hizmet"
+ ],
+ "sirket_turleri": [
+  "sahis",
+  "limited",
+  "anonim"
+ ],
+ "tesvil_tutari": "Vergi istisnası: Bölgede münhasıran yazılım, tasarım ve Ar-Ge faaliyetlerinden elde edilen kazançlar 31/12/2028 tarihine kadar gelir ve kurumlar vergisinden müstesnadır (kâr tutarına ayrı bir üst sınır kaynakta belirtilmemiştir). İstisna edilen kazancı 1.000.000 Türk lirası ve üzerinde olanlar, bu tutarın yüzde ikisini geçici bir hesaba aktarır (yıllık yükümlülük en çok 20.000.000 Türk lirası) ve yıl sonuna kadar girişim sermayesi fonu payı alımında ya da kuluçka merkezlerindeki girişimcilere sermaye koymada kullanmak zorundadır; kullanmazsa istisna edilen kazancın yüzde yirmisi istisnadan yararlanamaz.",
+ "basvuru_yeri": "Teknoloji Geliştirme Bölgesi yönetici şirketi (projesi uygun görülen girişimciye bölge içinde yer tahsis eder); Bölgeler Sanayi ve Teknoloji Bakanlığınca yürütülür.",
+ "basvuru_suresi": "Çağrı yoktur; istisna Bölgede faaliyet gösterildiği sürece 31/12/2028 tarihine kadar uygulanır.",
+ "kontrol_listesi": [
+  {
+   "tur": "sart",
+   "metin": "İstisna yalnızca Bölgedeki yazılım, tasarım ve Ar-Ge faaliyetlerinden elde edilen kazanç için geçerlidir (Bölge dışı kazanç kapsam dışıdır).",
+   "alinti": "münhasıran bu Bölgedeki yazılım, tasarım ve AR -GE faaliyetlerinden elde ettikleri kazançları 31/12/2028 tarihine kadar gelir ve kurumlar vergisinden müstesnadır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Kanundaki Ar-Ge tanımı yazılımı da kapsar: yeni süreç, sistem ve uygulamalar tasarlamak üzere sistematik yürütülen yaratıcı çalışmalar.",
+   "alinti": "bunun yazılım dahil yeni süreç, sistem ve uygulamalar tasarlamak üzere kullanılması için sistematik bir temelde yürütülen yaratıcı çalışmaları,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "adim",
+   "metin": "Bölge yönetici şirketi, Ar-Ge veya tasarım projelerini değerlendirir ve projesi uygun görülen girişimcilere Bölge içinde yer tahsis eder.",
+   "alinti": "projesi uygun görülen girişimcilere yönetmelik le belirlenecek usul ve esaslara göre Bölge içerisinde yer tahsis edilmesi",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "'Girişimci' tanımına Bölgedeki hizmet ve imkânlardan yararlanmak isteyen gerçek ve tüzel kişiler girer (şahıs işletmesi de olabilir).",
+   "alinti": "Girişimci: Bölgedeki hizmet ve imkânlardan yararlanmak isteyen veya yararlanmakta olan gerçek ve tüzel kişileri,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Kuluçka girişimcisi: kuluçka merkezlerinde yer alan erken aşama girişimcisi; nitelikleri ve merkezlerde bulunabilecekleri süre Bakanlıkça yönetmelikle belirlenir.",
+   "alinti": "Kuluçka Girişimcisi: Kuluçka merkezlerinde yer alan AR- GE, teknolojik yenilik, yazılım ve tasarım faaliyetlerinde bulunan ve nitelikleri ve bu merkezlerde bulunabilecekleri süre Bakanlıkça yönetmelikle belirlenen erken aşama girişimcileri,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Kuluçka merkezi (inkübatör): genç ve yeni işletmelere ofis, ekipman, yönetim desteği ve mali kaynaklara erişim hizmetlerini bir çatı altında sunan yapıdır.",
+   "alinti": "Kuluçka Merkezi (İnkübatör): Özellikle genç ve yeni işletmeleri geliştirmek amacıyla; girişimcilere bölge içinde veya dışında ofis hizmetleri, ekipman desteği, yönetim desteği, mali kaynaklara erişim, kritik iş ve teknik destek hizmetlerinin bir çatı altında tek elden sağlandığı yapıları,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Kanunun sağladığı destek, teşvik, muafiyet ve istisnalar kuluçka merkezlerinde de aynen uygulanır.",
+   "alinti": "Bu Kanun kapsamında sağlanan destek, teşvik, muafiyet ve istisnalar, bu merkezlerde de aynen uygulanır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İstisna edilen kazancı 1.000.000 TL ve üzerinde olan mükellefler, bu tutarın yüzde ikisini pasifte geçici bir hesaba aktarır.",
+   "alinti": "1/1/2022 tarihinden itibaren geçici 2 nci madde kapsamında yıllık beyanname üzerinden istisna edilen kazançları tutarı 1.000.000 Türk lirası ve üzerinde olan gelir ve kurumlar vergisi mükellefleri tarafından, bu tutarın yüzde ikisi pasifte geçici bir hesaba aktarılır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Geçici hesaba aktarılacak tutar yıllık olarak 20.000.000 TL ile sınırlıdır.",
+   "alinti": "Bu fıkra kapsamında aktarılması gereken tutar yükümlülüğü, yıllık bazda 20.000.000 Türk lirası ile sınırlıdır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Aktarılan tutar yıl sonuna kadar girişim sermayesi yatırım fonu payı alımında ya da kuluçka merkezlerindeki girişimcilere sermaye konulmasında kullanılmalıdır.",
+   "alinti": "Türkiye’de yerleşik girişimcilere yatırım yapmak üzere kurulmuş girişim sermayesi yatırım fonu paylarının satın alınması veya girişim sermayesi yatırım ortaklıkları ya da bu Kanun kapsamındaki kuluçka merkezlerinde faaliyette bulunan diğer girişimcilere sermaye olarak konulması şarttır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Bu tutar yıl sonuna kadar aktarılmazsa, istisna edilen kazancın yüzde yirmisi o yıl istisna konusu yapılamaz.",
+   "alinti": "Söz konusu tutarın ilgili yılın sonuna kadar aktarılmaması durumunda, bu Kanun kapsamında yıllık beyanname üzerinden istisna edilen kazanç lar tutarının yüzde yirmisi, ilgili yılda yararlanılan gelir ve kurumlar vergisi istisnasına konu edilemez.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Bölgede yürütülen yazılım, Ar-Ge, yenilik ve tasarım projeleri için ithal edilen eşya gümrük vergisinden ve fonlardan, düzenlenen kâğıtlar ve işlemler damga vergisi ve harçtan müstesnadır.",
+   "alinti": "Bu Kanun kapsamında yürütülen yazılım, AR-GE, yenilik ve tasarım projeleri ile ilgili araştırmalarda kullanılmak üzere ithal edilen eşya, güm rük vergisi ve her türlü fondan, bu kapsamda düzenlenen kâğıtlar ve yapılan işlemler damga vergisi ve harçtan müstesnadır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Bölgede faaliyette bulunanlara proje finansmanında kullanılmak üzere sağlanan sermaye desteği, 31/12/2028'e kadar uygulanmak üzere gelir ve kurumlar vergisi mükelleflerince kazanç tespitinde indirim konusu yapılabilir (indirim tutarı yıllık 1.000.000 TL'yi aşamaz).",
+   "alinti": "31/12/2028 tarihine kadar uygulanmak üzere, Bölgede faaliyette bulunanlara bu Kanun kapsamındaki projelerin finansmanında kullanılmak üzere gelir ve kurumlar vergisi mükellefleri tarafından sağlanan sermaye destekleri,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "5746 sayılı Kanun kapsamındaki indirim, istisna ve teşviklerden yararlananlar, 4691 sayılı Kanunun geçici 2. maddesi hükümlerinden ayrıca yararlanamaz.",
+   "alinti": "ve teşviklerden yararlananlar; 193 sayılı Kanunun 89 uncu maddesinin birinci fıkrasının (13) numaralı bendi, 5520 sayılı Kanunun 10 uncu maddesinin birinci fıkrasının (ğ) bendi hükümleri ile 4691 sayılı Kanunun geçici 2 nci maddesi hükümlerinden ayrıca yararlanamazlar.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Bölgede yazılım, tasarım ve Ar-Ge kazançları 31/12/2028'e kadar gelir ve kurumlar vergisinden müstesnadır",
+   "alinti": "münhasıran bu Bölgedeki yazılım, tasarım ve AR -GE faaliyetlerinden elde ettikleri kazançları 31/12/2028 tarihine kadar gelir ve kurumlar vergisinden müstesnadır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "iddia": "Yönetici şirket kazançları ve Bölgedeki gelir/kurumlar vergisi mükellefleri",
+   "alinti": "Yönetici şirketlerin bu Kanun uygulaması kapsamında elde ettikleri kazançlar ile Bölgede faaliyet gösteren gelir ve kurumlar vergisi mükelleflerinin,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "iddia": "1.000.000 TL ve üzeri istisna kazancın yüzde ikisi geçici hesaba aktarılır",
+   "alinti": "1/1/2022 tarihinden itibaren geçici 2 nci madde kapsamında yıllık beyanname üzerinden istisna edilen kazançları tutarı 1.000.000 Türk lirası ve üzerinde olan gelir ve kurumlar vergisi mükellefleri tarafından, bu tutarın yüzde ikisi pasifte geçici bir hesaba aktarılır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "iddia": "Aktarım yükümlülüğü yıllık 20.000.000 TL ile sınırlı",
+   "alinti": "Bu fıkra kapsamında aktarılması gereken tutar yükümlülüğü, yıllık bazda 20.000.000 Türk lirası ile sınırlıdır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "iddia": "Aktarılmazsa istisna edilen kazancın yüzde yirmisi istisna konusu yapılamaz",
+   "alinti": "Söz konusu tutarın ilgili yılın sonuna kadar aktarılmaması durumunda, bu Kanun kapsamında yıllık beyanname üzerinden istisna edilen kazanç lar tutarının yüzde yirmisi, ilgili yılda yararlanılan gelir ve kurumlar vergisi istisnasına konu edilemez.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "iddia": "Sermaye desteği indirimi azami yıllık 1.000.000 TL",
+   "alinti": "İndirim konusu yapılacak tutar yıllık olarak 1.000.000 Türk lirasını aşamaz.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  }
+ ]
+}

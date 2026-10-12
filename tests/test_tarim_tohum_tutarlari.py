@@ -42,9 +42,11 @@ def test_tohum_min_max_birim_fiyatlarla_ayni(baslik, alt, ust):
 @pytest.mark.parametrize("baslik,alt,ust", BEKLENEN)
 def test_tohum_metni_sinirlari_soyluyor(baslik, alt, ust):
     metin = _kayit(baslik)["tesvil_tutari"]
-    assert f"{ust:,.0f}".replace(",", ".") in metin
+    # Kayıtlar kuruşlu Türkçe biçim kullanır ("990,90"); yuvarlanmış tam sayı ("991") da kabul.
+    tr = lambda v: f"{v:,.2f}".replace(",", "X").replace(".", ",").replace("X", ".")  # noqa: E731
+    assert tr(ust) in metin or f"{ust:,.0f}".replace(",", ".") in metin
     if alt != ust:
-        assert f"{alt:,.0f}".replace(",", ".") in metin
+        assert tr(alt) in metin or f"{alt:,.0f}".replace(",", ".") in metin
 
 
 @pytest.mark.parametrize("eski", ["₺500 - ₺2.000", "m² başına ₺50", "mazot+gübre desteği, ürün grubuna göre",

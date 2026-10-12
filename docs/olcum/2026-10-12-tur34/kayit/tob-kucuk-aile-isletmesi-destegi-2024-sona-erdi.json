@@ -1,0 +1,69 @@
+{
+ "slug": "tob-kucuk-aile-isletmesi-destegi-2024-sona-erdi",
+ "kurum": "Tarım Bakanlığı",
+ "baslik": "Küçük Aile İşletmesi Desteği (5 dekar ve altı meyve-sebze üreticileri; yalnız 2024 üretim yılı)",
+ "ozet": "Toplam tarımsal alanı 5 dekar veya altında olan, ÇKS'ye kayıtlı gerçek kişi çiftçilerin açıkta ya da örtüaltında meyve, sebze, süs bitkisi, tıbbi ve aromatik bitki yetiştirmesi halinde 2024 üretim yılında dekara 200 lira ödenen destekti (yaş çay ve fındık hariç). 2025-2027 destek modelinde ayrı bir 'küçük aile işletmesi' desteği yoktur; küçük arazili üreticiler Temel Destek'ten yararlanır.",
+ "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf",
+ "aktif_mi": false,
+ "durum": {
+  "metin": "Sona erdi. Destek Tebliğ 2024/31'de '2024 üretim yılında' ile sınırlıdır; 2025-2027 modelinde destek kalemleri temel destek, planlı üretim ve üretimi geliştirme olarak sayılmıştır, bu destek listede yoktur.",
+  "alinti": "Bitkisel üretimin desteklenmesi programıyla çiftçilere temel destek, planlı üretim desteği ve üretimi geliştirme destekleri verilecek.",
+  "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6375/Bitkisel-Uretimde-Yeni-Destekleme-Modeli-Uygulamada"
+ },
+ "basvuru_bicimi": "uretim_odeme",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "tarim"
+ ],
+ "sirket_turleri": [
+  "sahis"
+ ],
+ "tesvil_tutari": "2024 üretim yılı için dekara 200 lira (artık ödenmiyor).",
+ "basvuru_yeri": "Artık başvuru alınmıyor.",
+ "basvuru_suresi": "Kapanmıştır (2024 üretim yılı).",
+ "kontrol_listesi": [
+  {
+   "tur": "sart",
+   "metin": "Eski şart: ÇKS'ye kayıtlı, toplam tarımsal alanı 5 dekar veya altı, yaş çay ve fındık hariç ürün yetiştiren gerçek kişi çiftçi olmak.",
+   "alinti": "ÇKS’ye kayıtlı ve tarımsal faaliyete konu alan toplamı 5 dekar veya altında olan, yaş çay ve fındık ürünleri hariç,",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Kapsam: meyve, sebze, süs bitkisi, tıbbi ve aromatik bitki; destek 2024 üretim yılı içindi.",
+   "alinti": "meyve, sebze, süs bitkisi ile tıbbi ve aromatik bitki yetiştiriciliği yapan gerçek kişi çiftçilere, 2024 üretim yılında küçük aile işletmesi desteği ödemesi yapılır.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Açıkta 1 dekarın altındaki işletmelere ödeme yapılmazdı.",
+   "alinti": "açıkta üretim için 1 dekarın, örtüaltı/kapalı ortamda bitkisel üretim ünitelerinde üretim için 0,5 dekarın altında olan işletmelere küçük aile işletmesi desteği ödemesi yapılmaz.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Tutar: dekara 200 lira.",
+   "alinti": "Küçük aile işletmelerinin desteklenmesi uygulamalarında dekara 200 lira ödenecek.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6373/Ciftcilere-Bu-Yil-Odenecek-Bitkisel-Uretim-Destekleri-Belli-Oldu"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Bugün geçerli model: temel destek, planlı üretim ve üretimi geliştirme destekleri.",
+   "alinti": "Bitkisel üretimin desteklenmesi programıyla çiftçilere temel destek, planlı üretim desteği ve üretimi geliştirme destekleri verilecek.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6375/Bitkisel-Uretimde-Yeni-Destekleme-Modeli-Uygulamada"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "2024'te dekara 200 lira",
+   "alinti": "Küçük aile işletmelerinin desteklenmesi uygulamalarında dekara 200 lira ödenecek.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6373/Ciftcilere-Bu-Yil-Odenecek-Bitkisel-Uretim-Destekleri-Belli-Oldu"
+  },
+  {
+   "iddia": "5 dekar ve altı, çay ve fındık hariç",
+   "alinti": "ÇKS’ye kayıtlı ve tarımsal faaliyete konu alan toplamı 5 dekar veya altında olan, yaş çay ve fındık ürünleri hariç,",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf"
+  }
+ ]
+}

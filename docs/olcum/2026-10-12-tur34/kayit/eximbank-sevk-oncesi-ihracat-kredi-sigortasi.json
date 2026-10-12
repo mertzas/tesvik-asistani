@@ -1,0 +1,114 @@
+{
+  "slug": "eximbank-sevk-oncesi-ihracat-kredi-sigortasi",
+  "kurum": "Türk Eximbank",
+  "baslik": "Türk Eximbank Sevk Öncesi İhracat Kredi Sigortası (yatırım malı üretim döneminde alıcının siparişi iptal etme riskine karşı sigorta)",
+  "ozet": "Alıcıyla imzalanmış satış sözleşmesi gereği üretilecek veya üretilmekte olan, henüz sevk edilmemiş mallar için ihracatçının yaptığı harcamaları ticari ve/veya politik risklere karşı belirli limitler dahilinde sigortalar. Katma değeri yüksek sermaye ve/veya yatırım malı ihracatçıları yararlanabilir. Üretim döneminin prensip olarak 180 günden uzun olmaması beklenir; başvurularda alt veya üst limit yoktur.",
+  "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Eximbank'ın güncel internet sitesinde program olarak yayınlanmaktadır; dönemsel çağrıya bağlı değildir ve sayfada kapanış tarihi belirtilmemiştir.",
+    "alinti": "Sevk Öncesi İhracat Kredi Sigortası programımız vasıtasıyla ihracatçılarımız uzun ve maliyetli üretim dönemlerinde Türk Eximbank desteğini hissederek ülke dışındaki riskli pazarlarda rekabet üstünlüğü sağlamaktadır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "imalat"
+  ],
+  "tesvil_tutari": "Hibe veya kredi değil, sigorta: başvurularda herhangi bir alt veya üst limit yoktur. Başvurudan sonra kısa sürede gösterge bir maliyet çalışması yapılarak ihracatçıya iletilir; poliçe tanzim ücreti ayrıca ödenir.",
+  "basvuru_yeri": "Türk Eximbank bölge sigorta pazarlama ve koordinasyon birimlerine (Marmara, İç Anadolu, Ege) e-posta ile; başvuru formu imzalı-kaşeli ve imza sirküleri örneğiyle gönderilir",
+  "basvuru_suresi": "Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Katma değeri yüksek sermaye ve/veya yatırım malı ihracatçıları programdan yararlanabilir.",
+      "alinti": "Programdan katma değeri yüksek sermaye ve/veya yatırım malları ihracatçılarımız faydalanabilmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Sigorta, alıcıyla imzalı satış sözleşmesi gereği üretilen ve henüz sevk edilmemiş mallar için yapılan harcamaları ticari ve/veya politik risklere karşı belirli limitler dahilinde kapsar.",
+      "alinti": "İhracatçımız ile alıcı arasında imzalanmış olan Satış Sözleşmesi gereğince üretilecek veya üretilmekte olan ve henüz sevkiyata konu olmamış mallar için,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Amaç: yatırım mallarının üretim döneminde yapılan harcamaların, alıcının siparişi iptal etmesi riskine karşı sigortalanması.",
+      "alinti": "ihracata konu olacak yatırım mallarının üretim döneminde gerçekleştirilen harcamalar, alıcının siparişi iptal etmesi riskine karşı sigortalanmaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Üretim döneminin prensip olarak 180 günden uzun olmaması beklenir.",
+      "alinti": "Üretim döneminin prensip olarak 180 günden uzun olmaması beklenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Başvurularda herhangi bir alt veya üst limit yoktur.",
+      "alinti": "herhangi bir alt limit veya üst limit bulunmamaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "adim",
+      "metin": "Başvuru formunu eksiksiz doldurup her sayfasını imzalı ve kaşeli olarak, imza sirküleri örneğiyle birlikte Eximbank'ın ilgili bölge sigorta birimine e-posta ile gönderin.",
+      "alinti": "Başvuru için ihracatçılarımızdan başvuru formunun eksiksiz bir şekilde doldurularak, tüm sayfaları imzalı – kaşeli olacak şekilde",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "adim",
+      "metin": "Başvuruyla birlikte alıcının son üç yıllık finansal belgeleri ve projenin kısa açıklaması gönderilirse başvuru daha sağlıklı değerlendirilir; başvuru sonrası kısa sürede gösterge bir maliyet çalışması iletilir.",
+      "alinti": "Başvurudan sonra kısa bir süre içinde gösterge bir maliyet çalışması yapılarak ihracatçımıza iletilmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Başvuru Formu (her sayfası imzalı ve kaşeli).",
+      "alinti": "Spesifik İhracat Kredi Sigortası Sevk Öncesi Risk Poliçesi Özel Şartlar Başvuru Formu (her sayfası başvuruyu yapan firma tarafından imzalanıp kaşelenecektir).",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Satış Sözleşmesi'nin aslı veya Eximbank'ça onaylanmış sureti.",
+      "alinti": "Satış Sözleşmesi’nin aslı veya Türk Eximbank’ça onaylanmış sureti",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Sigortalı tarafından düzenlenen, her sayfası imzalı ve kaşeli Maliyet Beyanı.",
+      "alinti": "Sigortalı tarafından düzenlenecek “Maliyet Beyanı” (her sayfası başvuruyu yapan firma tarafından imzalanıp kaşelenecektir).",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Ticaret Sicil Gazetesi (kuruluş ilanı ve mevcut ortaklık yapısını gösteren nüshalar), temsile yetkili kişilerin kimlik fotokopileri ve imza sirküleri.",
+      "alinti": "Ticaret Sicil Gazetesi (Kuruluş ilanı ve firmanın mevcut ortaklık yapısını gösteren nüshalar gerekmektedir.) Firmanın temsil ve imzaya yetkili kişilerinin kimlik fotokopileri İmza sirküleri",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Başvurunun onaylanmasından sonra istenenler arasında vergi / SGK prim borcu yoktur yazısı ve poliçe tanzim ücretinin yatırıldığına dair dekont da vardır.",
+      "alinti": "Vergi / SGK prim borcu yoktur yazısı Poliçe tanzim ücretinin yatırıldığına dair dekont",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Üretim dönemi prensip olarak 180 günden uzun olmamalı",
+      "alinti": "Üretim döneminin prensip olarak 180 günden uzun olmaması beklenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "iddia": "Katma değeri yüksek sermaye ve/veya yatırım malları ihracatçıları yararlanır",
+      "alinti": "Programdan katma değeri yüksek sermaye ve/veya yatırım malları ihracatçılarımız faydalanabilmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    },
+    {
+      "iddia": "Alt veya üst limit yok",
+      "alinti": "herhangi bir alt limit veya üst limit bulunmamaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/sevk-oncesi-ihracat-kredi-sigortasi"
+    }
+  ]
+}

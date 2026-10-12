@@ -1,0 +1,106 @@
+{
+ "slug": "tob-lisansli-depo-kira-destegi-findik",
+ "kurum": "Tarım Bakanlığı",
+ "baslik": "Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil)",
+ "ozet": "ÇKS'ye kayıtlı üreticilerin (ve ürünlerini ÇKS'li üreticilerden alan üretici örgütlerinin) ürünlerini lisanslı depoya ilk teslim etmeleri halinde, depo kira ücretinin Ticaret Bakanlığı kira ücret tarifesinin %75'i oranında, en fazla altı ay süreyle desteklenmesidir. Desteklenen ürünler arasında fındık vardır. Karar 2025, 2026 ve 2027 üretim yıllarının ürünlerini kapsar.",
+ "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#lisansli-depo-kira",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "Yürürlükte: Karar'da 2025, 2026 ve 2027 üretim yıllarına ait ürünler için en fazla altı ay süreyle kira desteği ödenir.",
+  "alinti": "işletmelerinde muhafaza ettikleri 2025, 2026 ve 2027 üretim yıllarına ait ürünler için en fazla altı ay süre ile kira desteği ödenir.",
+  "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+ },
+ "basvuru_bicimi": "uretim_odeme",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "tarim"
+ ],
+ "tesvil_tutari": "Ticaret Bakanlığının belirlediği kira ücret tarifesinin %75'i oranında; ürün başına en fazla altı ay (miktar sınırları Tebliğ EK-23'tedir).",
+ "basvuru_yeri": "ÇKS'ye kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü.",
+ "basvuru_suresi": "Ürün, depolama döneminin başlangıç tarihi ile ilgili yılın 31 Aralık'ı arasında lisanslı depoya girmiş olmalıdır; başvuru belge teslim bitiş tarihine göredir.",
+ "kontrol_listesi": [
+  {
+   "tur": "bilgi",
+   "metin": "Lisanslı depolarda muhafaza edilen, Tablo 10'da sayılan ürünler (fındık dahil) için kira desteği ödenir.",
+   "alinti": "Tarımsal ürünlerin, 10/2/2005 tarihli ve 5300 sayılı Tarım Ürünleri Lisanslı Depoculuk Kanunu çerçevesinde lisans alarak faaliyet gösteren depolarda muhafaza edilmesi halinde, Tablo 10’da belirtilen ürünler için kira desteği ödenir.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Fındık, desteklenen ürünler listesindedir.",
+   "alinti": "Ayçiçeği 4 Pamuk 5 Fındık 6 Antepfıstığı",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Destek tutarı: Ticaret Bakanlığı kira ücret tarifesinin %75'i.",
+   "alinti": "Ticaret Bakanlığı tarafından belirlenen kira ücret tarifesinin %75’i oranında",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Ürünü lisanslı depoya ilk teslim eden üretici/üretici örgütü olmalı.",
+   "alinti": "ürünlerini lisanslı depolara ilk teslim eden olmaları halinde EK -23’de yer alan miktarlarda kira desteği verilir.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Kira desteği ilgili üretim yılında en fazla altı ay süreyle ödenir.",
+   "alinti": "Kira desteklemesi ilgili üretim yılında en fazla altı ay süre ile EK -23’de belirtilen ürünler ve mikt arlarda üretici/üretici örgütlerine ödenir.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Ürün, depolama döneminin başlangıç tarihi ile 31 Aralık arasında depoya girmiş, en az bir gün depolanmış ve ELÜS İhraç Formu doğrulanmış olmalı.",
+   "alinti": "mevcut üretim yılına ait ürünlerin EK-25’de yer alan depolama döneminin başlangıç tarihi ile ilgili yılın son günü (31 Aralık) arasında lisanslı depoya girmiş olması, en az bir gün depolanması ve TBS üzerinden ELÜS İhraç Formu doğruluğunun sağlanması şartı aranır.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Ürün cinsi ve miktarı ÇKS'deki üretim bilgileriyle uyumlu olmalı.",
+   "alinti": "Kira ücreti desteklemesine tabi ürün cinsi ve miktarı ÇKS’ye kayıtlı üretim bilgileri ile uyumlu olmak zorundadır.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "belge",
+   "metin": "Depo kira ücreti faturası (lisanslı depo işletmesince üretici adına düzenlenmiş; ürün adı, miktarı, depoya giriş tarihi ve gün sayısı yazılı).",
+   "alinti": "Lisanslı depo işletmesince üretici/ üretici örgütü adına düzenlenmiş olan ve üzerinde isim/unvan, TC Kimlik/Vergi Numarası, fatura düzenlenme tarihi, ürün adı, ürün miktarı, ürünün depoya giriş tarihi",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Kira bedeli, ilgili üretim yılının 1 Mayıs tarihinde geçerli Ticaret Bakanlığı tarife fiyatlarına göre hesaplanır.",
+   "alinti": "Kira destekleme ücretlerinin belirlenmesinde, Ticaret Bakanlığı tarafından yayımlanan kira ücreti fiyatlarının ilgili üretim yılının 1 Mayıs tarihinde geçerli olan tarife fiyatları dikkate alınır.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Karar 2025, 2026 ve 2027 üretim yıllarının ürünleri için en fazla altı ay kira desteği öngörür.",
+   "alinti": "işletmelerinde muhafaza ettikleri 2025, 2026 ve 2027 üretim yıllarına ait ürünler için en fazla altı ay süre ile kira desteği ödenir.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Kira ücret tarifesinin %75'i",
+   "alinti": "Ticaret Bakanlığı tarafından belirlenen kira ücret tarifesinin %75’i oranında",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "iddia": "Fındık kapsamdadır",
+   "alinti": "Ayçiçeği 4 Pamuk 5 Fındık 6 Antepfıstığı",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "iddia": "En fazla altı ay",
+   "alinti": "Kira desteklemesi ilgili üretim yılında en fazla altı ay süre ile EK -23’de belirtilen ürünler ve mikt arlarda üretici/üretici örgütlerine ödenir.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "iddia": "2025, 2026 ve 2027 üretim yılları",
+   "alinti": "işletmelerinde muhafaza ettikleri 2025, 2026 ve 2027 üretim yıllarına ait ürünler için en fazla altı ay süre ile kira desteği ödenir.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  }
+ ]
+}

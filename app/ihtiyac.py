@@ -32,30 +32,55 @@ SORU_KALIPLARI: dict[str, re.Pattern] = {
         r"\b(makine\w*|makina\w*|ekipman\w*|techizat\w*|teçhizat\w*|uretim hatt?\w*|hatt?i\b|"
         r"tesis\w*|fabrika\w*|yatirim\w*|kapasite\w*|modernizasyon\w*|bina\w*|insaat\w*|"
         r"tezgah\w*|cnc\b|robot\w*|kalip\w*|kalib\w*|pres\b|presi\b|kompresor\w*|jenerator\w*|"
-        r"ges\b|gunes enerji\w*|santral\w*|soguk hava\w*|forklift\w*)"),
+        r"ges\b|gunes enerji\w*|santral\w*|soguk hava\w*|forklift\w*|firin\w*|kavurma\w*|simulator\w*|"
+        r"egitim arac\w*|tasit\w*|ekipman\w*)"),
     # Traktör/mibzer gibi tarım makineleri BİLEREK yok: çiftçi sorusu tarım alt kategorisi
     # (makineleştirme) üzerinden ele alınır; "yatırım" sayılınca 9903 programları KKYP/TSS'yi
     # geri itiyordu (G_persona_esles.py, 2026-10-07).
     "arge": re.compile(
         r"\b(ar-?ge|urun gelistir\w*|gelistirme\w*|prototip\w*|inovasyon\w*|yenilik\w*|"
         r"tasarim\w*|patent\w*|teknoloji gelistir\w*)"),
-    "ihracat": re.compile(r"\b(ihracat\w*|ihrac\w*|fuar\w*|yurt ?disi\w*|e-ihracat\w*|dis pazar\w*)"),
+    "ihracat": re.compile(r"\b(ihracat\w*|ihrac\w*|fuar\w*|yurt ?disi\w*|e-ihracat\w*|dis pazar\w*|amazon\w*|"
+                          r"etsy\w*|ebay\w*|walmart\w*|pazar ?yeri\w*|almanya\w*|avrupa\w*|abd\b|amerika\w*|"
+                          r"korfez\w*|ingiltere\w*)"),
     # "3 kişi daha işe alacağım" hiçbir ihtiyaca sınıflanmıyordu (2026-10-07).
     "istihdam": re.compile(r"\b(istihdam\w*|personel\w*|eleman\w*|isci\w*|ise alim\w*|ise al\w*|"
-                           r"calisan alim\w*|kisi daha al\w*|sgk tesvik\w*|prim destek\w*)"),
+                           r"calisan alim\w*|calisan al\w*|kisi daha al\w*|sgk\b|iskur\w*|sgk tesvik\w*|prim destek\w*|"
+                           r"prim tesvik\w*|sigorta prim\w*|isveren prim\w*|usta ogretici\w*)"),
     "dijital": re.compile(
-        r"\b(dijital\w*|erp\b|yazilim\w*|e-ticaret\w*|eticaret\w*|otomasyon\w*|yapay zeka\w*)"),
+        r"\b(dijital\w*|erp\b|yazilim\w*|otomasyon\w*|yapay zeka\w*|amazon\w*|etsy\w*|pazar ?yeri\w*|"
+        # "e-ticaret şirketimiz" işletmeyi anlatır; ihtiyaç ancak altyapı/site kurma ise dijitaldir.
+        r"e-?ticaret (?:altyap|sitesi kur|sitesi ac|sistem)\w*)"),
     "finansman": re.compile(r"\b(kredi\w*|kefalet\w*|finansman\w*|faiz\w*|isletme sermaye\w*|nakit\w*)"),
     "girisim": re.compile(
-        r"\b(girisim\w*|startup|start-up|bigg|1512|1812|sirket kurmad\w*|sirketles\w*|prototip\w*|"
-        r"tohum\w*|kulucka\w*|teknogirisim\w*|is kurma\w*)"),
+        r"\b(girisim\w*|startup|start-up|bigg|1512|1812|sirket kurmad\w*|sirket kurar\w*|sirketles\w*|"
+        r"prototip\w*|tohum\w*|kulucka\w*|teknogirisim\w*|is kurma\w*)"),
+    # Persona denemesi 2026-10-12: "dolu ve don riskine karşı sigorta" sorusu SGK prim teşviklerini, "kargo
+    # masrafı" sorusu fuar desteklerini, "Instagram reklam giderleri" sorusu kredi kalabalığını getiriyordu.
+    # SGK/işveren primi "istihdam"dır; burada yalnız ürün/alacak/mesleki sigorta.
+    "sigorta": re.compile(r"\b(sigorta\w*|tarsim\w*|dolu\w*|don\b|dondan|afet\w*|alacak sigorta\w*)"),
+    "tanitim": re.compile(r"\b(reklam\w*|tanitim\w*|pazarlama\w*|instagram\w*|google ads|sosyal medya\w*|"
+                          r"marka(?!\w* tescil)\w*)"),
+    # Marka/patent tescili ayrı bir gider kalemidir (reklam değil).
+    "tescil": re.compile(r"\b(tescil\w*|patent\w*|faydali model\w*)"),
+    "lojistik": re.compile(r"\b(kargo\w*|lojistik\w*|depo\b|depo[a-z]+|fulfillment|siparis karsila\w*|"
+                           r"gonderi\w*|nakliye\w*|navlun\w*)"),
+    # Çiftçinin dekar başı doğrudan ödemesi (temel destek, alan bazlı gelir desteği, eski mazot/gübre).
+    # "bahçe/tarla" araziyi anlatır ("bahçeyi yenilemek" bir yatırım sorusudur); ödeme ihtiyacı sayılmaz.
+    "tarim_odeme": re.compile(r"\b(dekar\w*|donum\w*|alan bazli\w*|gelir destek\w*|temel destek\w*|mazot\w*|"
+                              r"gubre\w*)"),
 }
+# "SGK teşviki", "işveren primi", "sigorta primi" istihdam sorusudur; sigorta ihtiyacı sayılmaz.
+_SGK_SIGORTA = re.compile(r"\bsgk\b|isveren|sigorta prim\w*|prim (?:tesvik|destek|indirim)\w*|sigortali\w*|"
+                          r"sosyal sigorta\w*|issizlik sigorta\w*")
 
 IHTIYAC_ADLARI: dict[str, str] = {
     "yatirim": "makine/tesis yatırımı", "arge": "Ar-Ge ve ürün geliştirme",
     "ihracat": "ihracat", "istihdam": "istihdam", "dijital": "dijital dönüşüm",
     "finansman": "kredi/finansman",
     "girisim": "girişim / şirketleşme öncesi ve erken aşama",
+    "sigorta": "ürün/alacak sigortası", "tanitim": "reklam, tanıtım ve marka", "lojistik": "kargo, depo ve lojistik",
+    "tarim_odeme": "dekar başı tarımsal destek ödemesi", "tescil": "marka/patent tescili",
 }
 
 _BASLIK = {
@@ -75,6 +100,11 @@ _BASLIK = {
     # kuruluş çağrısı, 1514 girişim sermayesi fonları, 1601 kapasite artırma (ölçüm 2026-10-07:
     # şirketsiz girişim sorusunda BiGG hiç gelmiyor, model "kaydım yok" diyordu).
     "girisim": re.compile(r"bigg|girisimci destek|girisimcilik destek|ilk adim|teknogirisim|tohum|kulucka"),
+    "sigorta": re.compile(r"sigorta"),
+    # Yalnız "marka" değil: "Şirket ve Marka Alım Desteği" bir satın alma desteğidir (persona denemesi 2026-10-12).
+    "tanitim": re.compile(r"reklam|tanitim|pazarlama|markalasma|marka kredi|turquality"),
+    "tescil": re.compile(r"tescil|patent"),
+    "lojistik": re.compile(r"lojistik|siparis karsilama|fulfillment|birim kira|depo|dagitim ag"),
 }
 _GIRISIM_HARIC = re.compile(r"uygulayici kurulus|girisim sermayesi|kapasite artirilmasi")
 # Tarım makineleştirme bir yatırım programıdır ama çiftçiye yöneliktir; sektör uyumu
@@ -94,7 +124,28 @@ def soru_ihtiyaclari(soru: str) -> list[str]:
         m = kalip.search(metin)
         if m:
             bulunan.append((m.start(), ad))
-    return [ad for _, ad in sorted(bulunan)]
+    ihtiyaclar = [ad for _, ad in sorted(bulunan)]
+    if "sigorta" in ihtiyaclar and _SGK_SIGORTA.search(metin) and not re.search(r"tarsim|dolu|don\b|afet|alacak", metin):
+        ihtiyaclar.remove("sigorta")
+    # "dijital pazarlama/reklam" bir tanıtım ihtiyacıdır, dijital dönüşüm değildir.
+    if "dijital" in ihtiyaclar and re.search(r"dijital (?:pazarlama|reklam|tanitim)", metin) and not re.search(
+            r"dijitalles|dijital donusum|erp\b|yazilim|otomasyon|yapay zeka", metin):
+        ihtiyaclar.remove("dijital")
+        if "tanitim" not in ihtiyaclar:
+            ihtiyaclar.append("tanitim")
+    # "Markamızı yurt dışında tescil ettirmek": ihtiyaç tescildir; "marka" kelimesi tek başına tanıtım sayılmaz.
+    if "tescil" in ihtiyaclar and "tanitim" in ihtiyaclar and not re.search(
+            r"reklam|tanitim|pazarlama|instagram|google ads|sosyal medya", metin):
+        ihtiyaclar.remove("tanitim")
+    # "Depoya 3 kişi alacağız": depo işyeridir, ihtiyaç istihdamdır.
+    if "istihdam" in ihtiyaclar and "lojistik" in ihtiyaclar and not re.search(
+            r"kargo|lojistik|fulfillment|siparis karsila|nakliye|navlun|gonderi|depolama", metin):
+        ihtiyaclar.remove("lojistik")
+    # "dijital baskı makinesi" (matbaa) bir makine yatırımıdır, dijital dönüşüm değildir (persona denemesi 2026-10-12).
+    if "dijital" in ihtiyaclar and re.search(r"dijital bask", metin) and not re.search(
+            r"dijitalles|dijital donusum|erp\b|yazilim|e-ticaret|eticaret|otomasyon|yapay zeka", metin):
+        ihtiyaclar.remove("dijital")
+    return ihtiyaclar
 
 
 def _tubitak_bolumu(url: str | None) -> str | None:
@@ -119,8 +170,39 @@ def program_ihtiyaclari(t: Any) -> set[str]:
         sonuc.discard("girisim")
     if "dijital" in sonuc and re.search(r"dijital (?:kefalet|kanal)", baslik):
         sonuc.discard("dijital")   # krediyi dijital kanaldan veren kefalet; dijital dönüşüm desteği değil
-    if kurum in ("Sanayi ve Teknoloji Bakanlığı", "Hazine/Ticaret Bakanligi") or "yatirim tesvik" in kategori:
+    if "istihdam" in sonuc and re.search(r"istihdami koruma|istihdam koruma|istihdam taahhutlu", baslik):
+        # Zor dönemde istihdamı koruma ve istihdam taahhütlü KOBİ finansmanı kredi ürünleridir, işe alım teşviki değil.
+        sonuc.discard("istihdam")
+        sonuc.add("finansman")
+    if "sigorta" in sonuc and (kurum == "SGK / İŞKUR" or re.search(
+            r"sigortalari isveren|isveren hisse|sosyal sigorta|issizlik sigorta", baslik)):
+        sonuc.discard("sigorta")   # SGK işveren primi teşvikleri istihdamdır (TARSİM "prim desteği" sigortadır)
+    if "tanitim" in sonuc and re.search(r"marka ve kadin|markalasma program", baslik) is None and \
+            re.search(r"tescil", baslik) and kurum == "TUBITAK":
+        sonuc.discard("tanitim")   # patent/tescil Ar-Ge çağrıları
+    if kurum == "SGK / İŞKUR":
+        # "imalatta 5 puan" gibi başlık ifadeleri SGK teşvikini yatırım programı yapmaz.
+        sonuc.discard("yatirim")
+    if kurum == "SGK / İŞKUR" and "sigorta" not in sonuc and not re.search(r"is sagligi|isg\b", baslik):
+        # SGK/İŞKUR teşvikleri işverene işe alım/istihdam teşvikidir ("Malullük, Yaşlılık ve Ölüm Sigortaları İşveren
+        # Hissesinden Prim İndirimi" başlığında "istihdam" geçmez ama en geniş kapsamlı istihdam teşvikidir).
+        sonuc.add("istihdam")
+    if kurum == "KOSGEB" and re.search(r"yonde|yonderlik", baslik):
+        # YÖNDE kapsamında dijital dönüşüm değerlendirme analizi ve yol haritası var (KOSGEB program sayfası).
+        sonuc.add("dijital")
+    if kurum == "Tarım Bakanlığı" and k.get("alt_kategori") != "makinelestirme" and re.search(
+            r"temel destek|uretim destek|alan bazli|organik tarim destek|ortualti|iyi tarim|fidan|tohum", baslik):
+        sonuc.add("tarim_odeme")
+    if (kurum in ("Sanayi ve Teknoloji Bakanlığı", "Hazine/Ticaret Bakanligi") or "yatirim tesvik" in kategori) \
+            and not re.search(r"teknoloji gelistirme bolgesi|ar-?ge|tasarim indirimi|stopaj|vergi istisna", baslik):
         sonuc.add("yatirim")
+    if kurum == "Sanayi ve Teknoloji Bakanlığı" and re.search(r"teknoloji gelistirme bolgesi|ar-?ge|tasarim", baslik):
+        # 4691 (Teknopark) ve 5746 (Ar-Ge/tasarım) vergi teşvikleri Ar-Ge faaliyetine bağlıdır, makine yatırımı değil
+        # (hakem bulgusu 2026-10-12: Teknopark istisnası sürücü kursuna "makine/tesis yatırımı" diye sunuluyordu).
+        sonuc.discard("yatirim")
+        sonuc.add("arge")
+    if "yatirim" in sonuc and re.search(r"teknik destek", baslik):
+        sonuc.discard("yatirim")   # kalkınma ajansı teknik desteği eğitim/danışmanlıktır
     if "ihracat" in sektorler:
         sonuc.add("ihracat")
     if "e-ticaret" in sektorler:

@@ -1,0 +1,117 @@
+{
+ "slug": "sanayi-5746-personel-gelir-vergisi-stopaji-tesviki",
+ "kurum": "Sanayi ve Teknoloji Bakanlığı",
+ "baslik": "Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2)",
+ "ozet": "Teknoloji merkezi işletmelerinde, Ar-Ge ve tasarım merkezlerinde, kamu veya uluslararası fonlarca desteklenen ya da TÜBİTAK tarafından yürütülen Ar-Ge ve yenilik projelerinde çalışan Ar-Ge, tasarım ve destek personelinin ücretleri üzerinden (asgari geçim indirimi sonrası) hesaplanan gelir vergisi; doktoralılar ile desteklenecek program alanlarında en az yüksek lisanslılar için yüzde doksan beşi, yüksek lisanslılar ve bu alanlarda lisans derecesi olanlar için yüzde doksanı, diğerleri için yüzde sekseni muhtasar beyannameden indirilerek terkin edilir. Kamu personeli bu teşvikten yararlanamaz. Kanun 31/12/2028 tarihine kadar uygulanır.",
+ "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3-2",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "Kanun 31/12/2028 tarihine kadar uygulanmak üzere yürürlüktedir; 2026-10-12 itibarıyla uygulanmaktadır.",
+  "alinti": "Bu Kanun 31/12/2028 tarihine kadar uygulanmak üzere, yayımını takip eden ay başında yürürlüğe girer.",
+  "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+ },
+ "basvuru_bicimi": "bildirim_prim",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "arge"
+ ],
+ "sirket_turleri": [
+  "sahis",
+  "limited",
+  "anonim"
+ ],
+ "tesvil_tutari": "Vergi teşviki: Ar-Ge ve tasarım personelinin ücretleri üzerinden (asgari geçim indirimi uygulandıktan sonra) hesaplanan gelir vergisinin doktoralılar ile desteklenecek program alanlarında en az yüksek lisanslılar için yüzde doksan beşi, yüksek lisanslılar ve bu alanlarda lisans derecesi olanlar için yüzde doksanı, diğerleri için yüzde sekseni muhtasar beyanname üzerinden tahakkuk eden vergiden indirilerek terkin edilir. Ayrıca sigorta primi işveren hissesinin yarısı bütçeden karşılanır. Kanun 31/12/2028 tarihine kadar uygulanır.",
+ "basvuru_yeri": "Sanayi ve Teknoloji Bakanlığı (Ar-Ge/tasarım merkezi veya proje uygunluğu) ve işyerinin bağlı olduğu vergi dairesi (muhtasar beyanname).",
+ "basvuru_suresi": "Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır.",
+ "kontrol_listesi": [
+  {
+   "tur": "bilgi",
+   "metin": "Teşvikten yararlanan yapılar: teknoloji merkezi işletmeleri, Ar-Ge merkezleri ve kanunda sayılan fon/TÜBİTAK destekli Ar-Ge ve yenilik projeleri; kamu personeli hariçtir.",
+   "alinti": "Gelir vergisi stopajı teşviki: Kamu personeli hariç olmak üzere teknoloji merkezi işletmelerinde, Ar-Ge merkezlerinde,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İndirim, ücretler üzerinden asgari geçim indirimi uygulandıktan sonra hesaplanan gelir vergisi üzerinden yapılır.",
+   "alinti": "ücretleri üzerinden asgari geçim indirimi uygulandıktan sonra hesaplanan gelir vergisinin;",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Doktoralı personel ile desteklenecek program alanlarında en az yüksek lisans derecesi olanlar için gelir vergisinin yüzde doksan beşi terkin edilir.",
+   "alinti": "doktoralı olanlar ile desteklenecek program alanlarından birinde en az yüksek lisans derecesine sahip olanlar için yüzde doksan beşi,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Yüksek lisanslı personel ve bu alanlarda lisans derecesi olanlar için yüzde doksanı, diğer personel için yüzde sekseni terkin edilir.",
+   "alinti": "yüksek lisanslı olanlar ile desteklenecek program alanlarından birinde lisans derecesine sahip olanlar için yüzde doksanı ve diğerleri için yüzde sekseni,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Terkin, verilecek muhtasar beyanname üzerinden tahakkuk eden vergiden indirilmek suretiyle yapılır.",
+   "alinti": "verilecek muhtasar beyanname üzerinden tahakkuk eden vergiden indirilmek suretiyle terkin edilir.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Haftalık kırk beş saatin üzerindeki ve ek çalışma sürelerine ilişkin ücretler bu teşvikten faydalanamaz.",
+   "alinti": "Haftalık kırk beş saatin üzerindeki ve ek çalışma sürelerine ilişkin ücretler bu teşvikten faydalanamaz.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Teşvikten yararlanacak destek personelinin tam zaman eşdeğeri sayısı, toplam tam zamanlı Ar-Ge veya tasarım personeli sayısının yüzde onunu geçemez.",
+   "alinti": "destek personelinin tam zaman eşdeğeri sayısı, toplam tam zamanlı Ar-Ge veya tasarım personeli sayısının yüzde onunu geçemez.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Ar-Ge veya tasarım merkezi personelinin merkez dışındaki faaliyetleri, merkez yönetiminin onayı ve Bakanlığın bilgilendirilmesi kaydıyla ve belirli sınırlar içinde teşvik kapsamında değerlendirilebilir.",
+   "alinti": "Ar-Ge veya tasarım merkezlerinde çalışan Ar-Ge veya tasarım personelinin bu merkezlerde yürüttüğü projelerle doğrudan ilgili olmak şartıyla,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Aynı personelin ücreti üzerinden hesaplanan sigorta primi işveren hissesinin yarısı Maliye Bakanlığı bütçesinden karşılanır.",
+   "alinti": "ücretleri üzerinden hesaplanan sigorta primi işveren hissesinin yarısı, (…)15 Maliye Bakanlığı bütçesine konulacak ödenekten karşılanır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Bu Kanun kapsamındaki indirim ve teşviklerden yararlananlar, 4691 sayılı Kanunun geçici 2. maddesindeki istisnadan ayrıca yararlanamaz.",
+   "alinti": "ve teşviklerden yararlananlar; 193 sayılı Kanunun 89 uncu maddesinin birinci fıkrasının (13) numaralı bendi, 5520 sayılı Kanunun 10 uncu maddesinin birinci fıkrasının (ğ) bendi hükümleri ile 4691 sayılı Kanunun geçici 2 nci maddesi hükümlerinden ayrıca yararlanamazlar.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Şartların ihlali veya teşviklerin amacı dışında kullanılması halinde zamanında tahakkuk ettirilmeyen vergiler için vergi ziyaı doğmuş sayılır.",
+   "alinti": "Bu Kanunda öngörülen şartların ihlali veya teşvik ve destek unsurlarının amacı dışında kullanılması halinde, zamanında tahakkuk ettirilmemiş vergiler yönünden vergi ziyaı doğmuş sayılır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Kanun 31/12/2028 tarihine kadar uygulanır",
+   "alinti": "Bu Kanun 31/12/2028 tarihine kadar uygulanmak üzere, yayımını takip eden ay başında yürürlüğe girer.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "iddia": "Terkin oranları: doktoralı yüzde doksan beş",
+   "alinti": "doktoralı olanlar ile desteklenecek program alanlarından birinde en az yüksek lisans derecesine sahip olanlar için yüzde doksan beşi,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "iddia": "Yüksek lisanslı yüzde doksan, diğerleri yüzde seksen",
+   "alinti": "yüksek lisanslı olanlar ile desteklenecek program alanlarından birinde lisans derecesine sahip olanlar için yüzde doksanı ve diğerleri için yüzde sekseni,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "iddia": "Destek personeli yüzde on sınırı",
+   "alinti": "destek personelinin tam zaman eşdeğeri sayısı, toplam tam zamanlı Ar-Ge veya tasarım personeli sayısının yüzde onunu geçemez.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  }
+ ]
+}

@@ -1,0 +1,91 @@
+{
+  "slug": "eximbank-finansal-kiralama-kredi-programi",
+  "kurum": "Türk Eximbank",
+  "baslik": "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
+  "ozet": "İhracatçıların, imalatçı-ihracatçıların ve döviz kazandırıcı hizmet veren firmaların finansal kiralama (leasing) yoluyla yapacakları yatırımların finansmanı için, Finansal Kiralama Şirketleri ve Katılım Bankaları aracılığıyla kullandırılan kredi programıdır. İşlem bazında alt limit yoktur. Aracı kuruluş komisyonu azami yıllık % 1,50'dir. Kredi, finansal kiralama şirketlerine TL, ABD Doları, EURO, İngiliz Sterlini ve Japon Yeni; katılım bankalarına TL, ABD Doları ve EURO cinsinden kullandırılır.",
+  "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Eximbank'ın güncel internet sitesinde kredi programı olarak yayınlanmaktadır; dönemsel çağrıya bağlı değildir ve sayfada kapanış tarihi belirtilmemiştir.",
+    "alinti": "İhracatçılarımızın ve döviz kazandırıcı hizmet faaliyeti gösteren firmalarımızın finansal kiralama yoluyla yapacakları yatırımların finansmanı amaçlanmaktadır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler"
+  },
+  "basvuru_bicimi": "kredi",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "imalat",
+    "hizmet"
+  ],
+  "tesvil_tutari": "Hibe değil kredi: işlem bazında alt limit yoktur. Faiz ve kar payı oranlarını Eximbank belirler; aracı kuruluşlar bunlara en fazla yıllık % 1,50 komisyon ekleyebilir.",
+  "basvuru_yeri": "Aracı kuruluşlar: Finansal Kiralama Şirketleri ve Katılım Bankaları (başvuru evrakı aracı kuruluşa verilir)",
+  "basvuru_suresi": "Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "bilgi",
+      "metin": "Kredi doğrudan Eximbank'tan değil, Finansal Kiralama Şirketleri ve Katılım Bankaları aracılığıyla kullandırılır.",
+      "alinti": "finansal kiralama yoluyla yapacakları yatırımların finanse edilmesi amacıyla ve Finansal Kiralama Şirketleri ve Katılım Bankaları aracılığıyla kullandırılan kredi programıdır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler"
+    },
+    {
+      "tur": "sart",
+      "metin": "İhracatçı, imalatçı-ihracatçı, ihraç kaydıyla nihai mal üreten imalatçı, serbest bölgede mukim ve üçüncü ülkelere satış yapan firmalar ile döviz kazandırıcı hizmet yürüten firmalar yararlanabilir.",
+      "alinti": "İhracatçı, İmalatçı-İhracatçı, İhraç kaydıyla nihai mal üretimi yapan ve ihracatçı aracılığı ile bu malını ihraç eden imalatçı, Türkiye’de kurulu serbest bölgelerde mukim olan ve üçüncü ülkelere (Türkiye’deki diğer serbest bölgeler ve Türkiye hariç) mal ve hizmet satışı yapan,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler"
+    },
+    {
+      "tur": "kural",
+      "metin": "İşlem bazında alt limit yoktur.",
+      "alinti": "Programımız kapsamında işlem bazında herhangi bir alt limit bulunmamaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler"
+    },
+    {
+      "tur": "kural",
+      "metin": "Faiz/kar payı oranlarını Eximbank belirler; aracı kuruluşlar bunlara Eximbank'ın belirlediği komisyonu ekleyebilir, komisyon en fazla yıllık % 1,50'dir.",
+      "alinti": "Aracı kuruluşlar, söz konusu faiz ve kar payı oranları üzerine Türk Eximbank tarafından belirlenen komisyon oranlarını ilave edebilirler. Aracı kuruluş komisyonu azami yıllık % 1,50 olarak belirlenmiştir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler"
+    },
+    {
+      "tur": "kural",
+      "metin": "Para birimi: finansal kiralama şirketlerine TL, ABD Doları, EURO, İngiliz Sterlini ve Japon Yeni; katılım bankalarına TL, ABD Doları ve EURO.",
+      "alinti": "Kredi, Finansal Kiralama Şirketlerine Türk Lirası, ABD Doları, EURO, İngiliz Sterlini ve Japon Yeni cinsinden kullandırılır. Katılım Bankalarına ise Türk Lirası, ABD Doları ve EURO cinsinden kullandırılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler"
+    },
+    {
+      "tur": "kural",
+      "metin": "Vade seçenekleri Eximbank sitesinde faiz/kar payı oranlarıyla birlikte yayınlanır.",
+      "alinti": "Vade seçenekleri, internet sitemizde faiz/kar payı oranları ile birlikte yayınlanmaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler"
+    },
+    {
+      "tur": "belge",
+      "metin": "Aracı bankaya kredi müracaatında: Kredi Talep Formu, Firma Bilgi Formu, Muvafakatname ve Harcama Listesi.",
+      "alinti": "Aşağıdaki evrak seti ile birlikte aracı bankalara kredi müracaatı yapabilirsiniz; Kredi Talep Formu Firma Bilgi Formu Muvafakatname Harcama Listesi",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler"
+    },
+    {
+      "tur": "adim",
+      "metin": "Önce kullanmak istediğiniz finansal kiralama şirketi veya katılım bankasıyla görüşün; başvuru oraya yapılır.",
+      "alinti": "Aşağıdaki evrak seti ile birlikte aracı bankalara kredi müracaatı yapabilirsiniz;",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Aracı kuruluş komisyonu azami yıllık % 1,50",
+      "alinti": "Aracı kuruluş komisyonu azami yıllık % 1,50 olarak belirlenmiştir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler"
+    },
+    {
+      "iddia": "İşlem bazında alt limit yok",
+      "alinti": "Programımız kapsamında işlem bazında herhangi bir alt limit bulunmamaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler"
+    },
+    {
+      "iddia": "Para birimleri: TL, ABD Doları, EURO, İngiliz Sterlini, Japon Yeni (leasing şirketleri); TL, ABD Doları, EURO (katılım bankaları)",
+      "alinti": "Kredi, Finansal Kiralama Şirketlerine Türk Lirası, ABD Doları, EURO, İngiliz Sterlini ve Japon Yeni cinsinden kullandırılır. Katılım Bankalarına ise Türk Lirası, ABD Doları ve EURO cinsinden kullandırılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/finansal-kiralama-sirketlerine-yonelik-krediler"
+    }
+  ]
+}

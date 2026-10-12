@@ -1,0 +1,118 @@
+{
+  "slug": "eximbank-ibrd-yesil-ihracat-destek-kredisi",
+  "kurum": "Türk Eximbank",
+  "baslik": "Türk Eximbank IBRD Yeşil İhracat Destek Kredisi (AB karbon sınır düzenlemesine yönelik yeşil dönüşüm yatırımları için orta-uzun vadeli kredi)",
+  "ozet": "Dünya Bankası (IBRD) garantisiyle sağlanan fonla, AB'nin Sınırda Karbon Düzenleme Mekanizması (CBAM) kapsamındaki sektörlerde (demir-çelik, hidrojen, gübre, alüminyum, elektrik, çimento gibi) faaliyet gösteren ihracatçıların yeşil dönüşüm yatırımlarına orta ve uzun vadeli finansman sağlanır. Yeşil ürün üreten ihracatçılar da yararlanabilir. Her firma için başvuru üst limiti 20 milyon EUR'dur. Kredi Kesin Teminat Mektubu karşılığında kullandırılır.",
+  "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Eximbank'ın güncel internet sitesinde kredi programı olarak yayınlanmaktadır; dönemsel çağrıya bağlı değildir ve sayfada kapanış tarihi belirtilmemiştir.",
+    "alinti": "IBRD Yeşil İhracat Destek Kredisi ile yeşil dönüşüm kapsamındaki yatırım harcamalarınız için orta-uzun vadeli finansman sağlıyoruz.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+  },
+  "basvuru_bicimi": "kredi",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "imalat"
+  ],
+  "tesvil_tutari": "Hibe değil kredi: her firma için başvuru üst limiti 20 milyon EUR; firma limiti Eximbank'ça firma bazında belirlenir. Faiz/kar payı vade, tutar ve para birimine göre belirlenir.",
+  "basvuru_yeri": "Türk Eximbank (Kredi Talep Formu ve belgeler Bankaya sunulur; sayfada ayrı bir başvuru kanalı belirtilmemiştir)",
+  "basvuru_suresi": "Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "AB'nin Sınırda Karbon Düzenleme Mekanizması (CBAM) kapsamında Faz 1 ve Faz 2'de yer alan sektörlerde faaliyet gösteren ihracatçı firmalar başvurabilir.",
+      "alinti": "2026 yılında Avrupa Birliği tarafından uygulamaya alınacak olan Sınırda Karbon Düzenleme Mekanizması (CBAM) kapsamında, Faz 1 ve Faz 2 aşamalarında yer alan sektörlerde faaliyet gösteren ihracatçı firmalar,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "sart",
+      "metin": "Yeşil ürün üreten ihracatçılar da yararlanabilir (APEC çevresel ürün listesine uygun olanlar).",
+      "alinti": "Yeşil ürün üreten ihracatçılar (APEC çevresel ürün listesine uygun olanlar),",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Kredi şu yatırım alanlarında kullanılabilir: yenilenebilir enerji, enerji verimliliği, su verimliliği, hammadde verimliliği, yeşil taşımacılık.",
+      "alinti": "Yenilenebilir Enerji Projeleri, Enerji Verimliliği Projeleri, Su Verimliliği Projeleri, Kaynak (Hammadde) Verimliliği Projeleri, Yeşil Taşımacılık Yatırımları,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Firma limiti Eximbank'ın tahsis çalışmasıyla belirlenir; her firma için başvuru üst limiti 20 milyon EUR'dur.",
+      "alinti": "Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir. Her bir firma için başvuru üst limiti 20 milyon EUR",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "İhracat taahhüdü, kredi kullanımından itibaren 24 ay içinde yapılan ihracatla kapatılır; kredi vadesi 24 aydan uzunsa taahhüt vadesi kredi vadesi kadardır.",
+      "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır. Kredi vadesinin 24 aydan daha uzun olması durumunda taahhüt vadesi kredi vadesi ile aynı olacaktır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Teminat: Kesin Teminat Mektubu.",
+      "alinti": "Kesin Teminat Mektubu, karşılığında kullandırılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Faiz/kar payı oranı kredi vadesine, tutarına ve para birimine göre belirlenir; vade seçenekleri Eximbank sitesinde faiz oranlarıyla birlikte yayınlanır.",
+      "alinti": "Vade seçenekleri, internet sitemizde faiz/kar payı oranları ile birlikte yayınlanmaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Kredi talepleri Eximbank'ın çevresel, sosyal ve jeolojik risk değerlendirmesinden geçer.",
+      "alinti": "*İlgili kaynak kapsamındaki kredi talepleri Bankamız Çevresel, Sosyal ve Jeolojik Risk değerlendirmesine tabi tutulmaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Kredi Talep Formu, Harcama Belgesi ve Kesin Teminat Mektubu (Eximbank nezdinde gayrinakdi limiti olan bankalardan biri).",
+      "alinti": "Kredi Talep Formu, Harcama Belgesi, Kesin Teminat Mektubu,* Kullanılacak krediye esas ihracata konu olan malın ihracatçısının farklı olması halinde,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Çevresel ve sosyal standartlara uyum esasları ile Eximbank'ın sürdürülebilirlik süreçleri kapsamında istenecek dokümanlar da sunulur.",
+      "alinti": "Çevresel ve Sosyal Satndartlara Uyum Esasları ve Bankamızın Sürdürülebilirlik süreçleri kapsamında talep edilecek dokümanlar",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "İlk kez başvuran firmalar mali analiz ve istihbarat çalışması için istenen bilgi ve belgeleri de sunar.",
+      "alinti": "İlk kez başvuruda bulunacak firmalar için bu belgelerin yanı sıra firma mali analizi ve istihbarat çalışması için talep edilen bilgi ve belgeleri Bankamıza sunmaları,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Her firma için başvuru üst limiti 20 milyon EUR",
+      "alinti": "Her bir firma için başvuru üst limiti 20 milyon EUR",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "iddia": "Dünya Bankası (IBRD) garantili fon; demir-çelik, hidrojen, gübre, alüminyum, elektrik, çimento gibi sektörler",
+      "alinti": "Bankamız, IBRD garantisiyle temin edilen fonla, Avrupa Birliği'nin 2026 yılında devreye alacağı Sınırda Karbon Düzenleme Mekanizması (CBAM) çerçevesinde, demir-çelik, hidrojen, gübre, alüminyum, elektrik, çimento gibi sektörlerde faaliyet gösteren ihracatçılarımızın",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "iddia": "Taahhüt vadesi kredi kullanım tarihinden itibaren 24 ay",
+      "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "iddia": "Teminat Kesin Teminat Mektubu",
+      "alinti": "Kesin Teminat Mektubu, karşılığında kullandırılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    },
+    {
+      "iddia": "Faiz/kar payı vade, tutar ve para birimine göre belirlenir",
+      "alinti": "Kredilere uygulanacak faiz/kar payı oranları; kredi vadesi, kredi tutarı ve para birimine göre belirlenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ibrd-yesil-ihracat-destek-kredisi"
+    }
+  ]
+}

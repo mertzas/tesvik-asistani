@@ -1,0 +1,82 @@
+{
+ "slug": "tob-findik-alan-bazli-gelir-destegi-sona-erdi",
+ "kurum": "Tarım Bakanlığı",
+ "baslik": "Fındık Alan Bazlı Gelir Desteği (sona erdi: son ödeme 2024 üretim yılı için; fındık artık Temel Destek modelinde)",
+ "ozet": "Ruhsatlı fındık alanlarında üretim yapan, ÇKS ve FKS'ye kayıtlı çiftçilere ayrıca ödenen 'fındık alan bazlı gelir desteği' 2024 üretim yılı için dekara 170 lira idi ve ödemesi 18 Nisan 2025'te yapıldı. 2025-2027 destek modelinde bu ayrı destek yoktur: destekler temel destek, planlı üretim desteği ve üretimi geliştirme destekleri olarak sadeleştirilmiş, fındık Temel Destek'in 3. kategorisine girmiştir. Fındığa bugün ödenen destek için 'Fındık Temel Desteği (2026)' kaydına bakın.",
+ "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6373/Ciftcilere-Bu-Yil-Odenecek-Bitkisel-Uretim-Destekleri-Belli-Oldu",
+ "aktif_mi": false,
+ "durum": {
+  "metin": "Sona erdi. Ayrı fındık alan bazlı gelir desteği 2024 üretim yılına aittir (Tebliğ 2024/31). 2025-2027 Kararı'nın destek listesinde bu ad geçmez; fındık Temel Destek Tablo 1'de 3. kategoridedir.",
+  "alinti": "3. Kategori Ayçiçeği (yağlık), Fındık, Kolza (kanola), Fasulye (kuru), Soya, Çay 1,5",
+  "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+ },
+ "basvuru_bicimi": "uretim_odeme",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "tarim"
+ ],
+ "tesvil_tutari": "2024 üretim yılı için dekara 170 lira (artık ödenmiyor). Yerine fındık Temel Destek'tedir: destek katsayısı 1,5 x dekara 367 TL katsayı değeri (2026).",
+ "basvuru_yeri": "Artık başvuru alınmıyor. Güncel destek için il/ilçe tarım ve orman müdürlüğü (ÇKS kaydı).",
+ "basvuru_suresi": "Kapanmıştır; 2024 üretim yılı ödemesi 18 Nisan 2025'te yapılmıştır.",
+ "kontrol_listesi": [
+  {
+   "tur": "bilgi",
+   "metin": "2024 üretim yılında desteği, belirlenen havzalardaki ruhsatlı fındık alanında fındık üreten ve ÇKS ile FKS'ye (Fındık Kayıt Sistemi) kayıtlı çiftçiler alıyordu.",
+   "alinti": "ruhsatlı fındık alanlarında fındık üretimi yapan ÇKS ve FKS’ye kayıtlı çiftçilere FKS’de kayıtlı ruhsatlı fındık alanı büyüklüğü dikkate alınarak fındık alan bazlı gelir desteği ödemesi yapılır.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "1 dekarın altındaki ruhsatlı fındık alanlarına ödeme yapılmazdı.",
+   "alinti": "Toplam alanı 1 dekarın altında olan ruhsatlı fındık alanlarına fındık alan bazlı gelir desteği ödemesi yapılmaz.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Dekar başına tutar 2024'te 170 liraydı.",
+   "alinti": "Fındık üreticilerine alan bazlı gelir desteği, belirlenen yerlerde yapılan üretimde dekara 170 lira olarak ödenecek.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6373/Ciftcilere-Bu-Yil-Odenecek-Bitkisel-Uretim-Destekleri-Belli-Oldu"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Son ödeme: 2024 üretim yılı ödemesi 18 Nisan 2025'te yapıldı.",
+   "alinti": "2024 Üretim Yılı Fındık Alan Bazlı Gelir Desteği ödemeleri 18 Nisan 2025 Cuma günü saat 18:00 den itibaren",
+   "kaynak_url": "https://giresun.tarimorman.gov.tr/Duyuru/577/2024-Uretim-Yili-Findik-Alan-Bazli-Gelir-Destegi-Odemeleri-Bugun-Yapiliyor"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Yeni model: çiftçilere temel destek, planlı üretim desteği ve üretimi geliştirme destekleri veriliyor; ayrı fındık alan bazlı gelir desteği listede yok.",
+   "alinti": "Bitkisel üretimin desteklenmesi programıyla çiftçilere temel destek, planlı üretim desteği ve üretimi geliştirme destekleri verilecek.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6375/Bitkisel-Uretimde-Yeni-Destekleme-Modeli-Uygulamada"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Fındık bugün Temel Destek Tablo 1'de 3. kategoride (katsayı 1,5).",
+   "alinti": "3. Kategori Ayçiçeği (yağlık), Fındık, Kolza (kanola), Fasulye (kuru), Soya, Çay 1,5",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "2024'te dekara 170 lira",
+   "alinti": "Fındık üreticilerine alan bazlı gelir desteği, belirlenen yerlerde yapılan üretimde dekara 170 lira olarak ödenecek.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6373/Ciftcilere-Bu-Yil-Odenecek-Bitkisel-Uretim-Destekleri-Belli-Oldu"
+  },
+  {
+   "iddia": "Son ödeme 18 Nisan 2025",
+   "alinti": "2024 Üretim Yılı Fındık Alan Bazlı Gelir Desteği ödemeleri 18 Nisan 2025 Cuma günü saat 18:00 den itibaren",
+   "kaynak_url": "https://giresun.tarimorman.gov.tr/Duyuru/577/2024-Uretim-Yili-Findik-Alan-Bazli-Gelir-Destegi-Odemeleri-Bugun-Yapiliyor"
+  },
+  {
+   "iddia": "Fındık Temel Destek 3. kategori, katsayı 1,5",
+   "alinti": "3. Kategori Ayçiçeği (yağlık), Fındık, Kolza (kanola), Fasulye (kuru), Soya, Çay 1,5",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "iddia": "2026 katsayı değeri dekara 367 TL",
+   "alinti": "2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  }
+ ]
+}

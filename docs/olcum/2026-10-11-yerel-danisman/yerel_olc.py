@@ -118,11 +118,24 @@ def kaynak_metni(soru, kayitlar, profil, h, bugun, kod: bool = True, yanit: str 
     return "\n".join(x for x in parca if x)
 
 
-def calistir():
+def profil_dayanagi(p: dict | None) -> str:
+    """Yanıt kullanıcının kendi profil değerlerini aktarabilir ("yıllık cironuz 6.000.000 TL"): dayanak sayılır."""
+    if not p:
+        return ""
+    tl = lambda v: f"{v:,.0f}".replace(",", ".")  # noqa: E731
+    parca = [f"yıllık ciro {tl(p['yillik_ciro'])} TL" if p.get("yillik_ciro") is not None else "",
+             f"çalışan {p['calisan_sayisi']}" if p.get("calisan_sayisi") is not None else "",
+             f"arazi (dekar): {p['arazi_buyuklugu_dekar']}" if p.get("arazi_buyuklugu_dekar") else ""]
+    return "\nPROFİL (kullanıcının beyanı): " + "; ".join(x for x in parca if x)
+
+
+def calistir(P=None, ss=None, out=OUT):
+    """Başka ölçümler (ör. 2026-10-12-persona) kendi personalarıyla aynı hattı kullanır: P, ss, out."""
     from app import dayanak, rag, yerel_danisman
     from app.models import FinancialProfile, SessionLocal, Tesvik
     bugun = date.today()
-    P, ss = senaryolar()
+    if P is None:
+        P, ss = senaryolar()
     db = SessionLocal()
     tum = db.query(Tesvik).all()
     sonuc = []
@@ -143,7 +156,8 @@ def calistir():
         # tutarı boş kaydın yanıtta gösterilen önceki (devredilen) program kaydı
         kayitlar += [r for r in (yerel_danisman.devredilen_kayit(t, tum) for t in list(kayitlar))
                      if r is not None and r not in kayitlar]
-        kaynak = kaynak_metni(sc["soru"], kayitlar, profil, h, bugun)
+        kaynak = kaynak_metni(sc["soru"], kayitlar, profil, h, bugun) + profil_dayanagi(P[sc["persona"]]
+                                                                                if sc["persona"] else None)
         sorunlar = dayanak.denetle(yanit, kaynak, sc["soru"], bugun)
         isabet = [b for b in sc["beklenen"] if b.lower() in yanit.lower()]
         k = dict(n=sc["n"], persona=sc["persona"], soru=sc["soru"], tur=sc["tur"], sure_sn=round(sure, 2),
@@ -152,15 +166,15 @@ def calistir():
                  beklenen=sc["beklenen"], isabet=isabet,
                  profil=P[sc["persona"]] if sc["persona"] else None, uzunluk=len(yanit))
         sonuc.append(k)
-        with open(os.path.join(OUT, f"yanit_{sc['n']:02}.md"), "w", encoding="utf-8") as f:
+        with open(os.path.join(out, f"yanit_{sc['n']:02}.md"), "w", encoding="utf-8") as f:
             f.write(f"<!-- persona: {sc['persona']} | soru: {sc['soru']} -->\n{yanit}\n")
-        with open(os.path.join(OUT, f"kaynak_{sc['n']:02}.md"), "w", encoding="utf-8") as f:
+        with open(os.path.join(out, f"kaynak_{sc['n']:02}.md"), "w", encoding="utf-8") as f:
             f.write(f"PERSONA: {json.dumps(k['profil'], ensure_ascii=False)}\n"
                     f"{kaynak_metni(sc['soru'], kayitlar, profil, h, bugun, kod=False, yanit=yanit)}\n")
         print(f"[{sc['n']:2}] {sc['persona'] or '-':20} {sc['tur']:12} {sure:5.2f} sn  kayıt={k['kayitlar'][:6]} "
               f"dayanak={len(sorunlar)} isabet={len(isabet)}/{len(sc['beklenen'])}")
     db.close()
-    json.dump(sonuc, open(os.path.join(OUT, "ozet.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    json.dump(sonuc, open(os.path.join(out, "ozet.json"), "w", encoding="utf-8"), ensure_ascii=False, indent=1)
     toplam_dayanak = sum(len(x["dayanak_sorunlari"]) for x in sonuc)
     print(f"\nsenaryo {len(sonuc)} | dayanak sorunu {toplam_dayanak} | yasak dil {sum(x['yasak_dil'] for x in sonuc)} | "
           f"sorumluluk reddi eksik {sum(not x['sorumluluk_reddi'] for x in sonuc)} | "

@@ -101,7 +101,7 @@ def yol_haritasi(p: FinancialProfile | None, db: Session, en_cok_program: int = 
     if p is None:
         return {"adimlar": [], "eslesme_sayisi": 0}
     durumlar = (p.hazirlik or {}).get("durumlar", {})
-    eslesmeler = esles(p, db, limit=en_cok_program)
+    eslesmeler = esles(p, db, limit=en_cok_program, ilgi_cezalari=False)
     gerek: dict[str, list] = {}
     for e in eslesmeler:
         for kod in program_adimlari(e.tesvik):
@@ -112,7 +112,7 @@ def yol_haritasi(p: FinancialProfile | None, db: Session, en_cok_program: int = 
         # Yalnız gerçekten ilgili programlar sayılır: skoru ILGILI_SKOR altında kalanlar yalnız "genel" sektör
         # etiketiyle eşleşir (persona denemesi 2026-10-08: buğday çiftçisine "şirkete geçin, 11 program açılır"
         # deniyordu; 11'i de 0,30 skorlu TÜBİTAK sanayi Ar-Ge programıydı).
-        acilan = [e.tesvik for e in esles(_kopya(p, sirket_turu="limited"), db, limit=en_cok_program)
+        acilan = [e.tesvik for e in esles(_kopya(p, sirket_turu="limited"), db, limit=en_cok_program, ilgi_cezalari=False)
                   if e.tesvik.id not in mevcut and e.skor >= ILGILI_SKOR]
         if acilan:
             gerek["sirket"] = acilan

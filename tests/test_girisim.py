@@ -75,6 +75,15 @@ def test_finans_puanlari():
     assert f(yillik_ciro=0).puan == 5
 
 
+def test_sirketsiz_gelir_gelir_yok_sayilmaz():
+    """Şirketi olmayan ama geliri olan girişimci (GVK 20/B mağaza geliri): "gelir yok" denmez (persona 2026-10-12)."""
+    f = lambda **kw: {b.ad: b for b in huks(_p(sektor="arge", sirket_turu="yok", **kw), BUGUN).bilesenler}[
+        "Finansal & nakit akışı uyumu"]
+    b = f(yillik_ciro=60_000)
+    assert b.puan == 10 and "gelir yok" not in b.gerekce and "60.000 TL" in b.gerekce
+    assert "gelir yok" in f().gerekce
+
+
 def test_metin_puan_ve_eksikleri_gosterir():
     m = huks(_p(sektor="arge", sirket_turu="yok", trl=4), BUGUN).metin()
     assert "HUKS ÖN SKORU" in m and "/75" in m and "değerlendirilemeyen bileşenler" in m

@@ -1,0 +1,147 @@
+{
+ "slug": "tob-sertifikali-standart-fidan-kullanim-destegi-2026",
+ "kurum": "Tarım Bakanlığı",
+ "baslik": "Sertifikalı/Standart Fidan Kullanım Desteği — yeni meyve bahçesi/bağ tesisi, fındık dahil (2026 üretim yılı)",
+ "ozet": "Yurt içinde üretilmiş sertifikalı ve/veya standart fidan kullanarak, yönetmeliğe uygun şekilde yeni meyve bahçesi tesis eden çiftçilere dekar başına verilen destek. Tablo 6'daki türler arasında fındık vardır (standart fidan katsayısı 2, sertifikalı fidan katsayısı 5). Tutar = katsayı x destek katsayı değeri (2026 için dekara 367 TL). Fındıkta tek parsel veya bitişik parsellerin toplamı en az 3 dekar olmalıdır; birçok meyve türünde en az 5 dekar. Çilek bu fidan tablosunda yer almaz (2024'te sertifikalı çilek fidesine ayrı destek vardı). Karara göre ödemeye bütçe imkânları dahilinde ilgili yılda başlanır; ödeme takvimini il/ilçe müdürlüğünden teyit edin.",
+ "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#fidan",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "Karar yürürlüktedir; ancak fidan kullanım desteği ödemelerine bütçe imkânları dahilinde ilgili yılda başlanacağı Karar'da yazılıdır. Başlangıç tarihi kaynakta belirtilmemiştir (belirsiz).",
+  "alinti": "sertifikalı/standart fidan kullanım desteği ödemeleri ne bütçe imkânları dâhilinde ilgili yılında başlanır.",
+  "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+ },
+ "basvuru_bicimi": "uretim_odeme",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "tarim"
+ ],
+ "tesvil_tutari": "Dekar başına katsayı x destek katsayı değeri (2026: 367 TL, 2027: 442 TL). Katsayılar: standart fidan 2, sertifikalı fidan 5. Tablo 6 türleri: altıntop, armut, asma, ayva, badem, ceviz, dut, elma, erik, fındık, incir, kayısı, kestane, kiraz, kivi, limon, mandarin, nektarin, pikan cevizi, portakal, şeftali, Trabzon hurması, vişne, zeytin.",
+ "basvuru_yeri": "ÇKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (Destekleme Ödemesi Başvuru Dilekçesi).",
+ "basvuru_suresi": "Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez.",
+ "kontrol_listesi": [
+  {
+   "tur": "bilgi",
+   "metin": "Desteklenen türler (fındık dahil) ve katsayılar: standart fidan 2, sertifikalı fidan 5.",
+   "alinti": "Altıntop, Armut, Asma, Ayva, Badem, Ceviz, Dut, Elma, Erik, Fındık, İncir, Kayısı, Kestane, Kiraz, Kivi, Limon, Manda rin, Nektarin, Pikan cevizi, Portakal, Şeftali, Trabzon hurması, Vişne, Zeytin Standart 2 Sertifikalı 5",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Destek, yurt içinde üretilen sertifikalı/standart fidanla Yönetmeliğe uygun yeni meyve bahçesi tesis edenlere verilir.",
+   "alinti": "yurt içinde üretilen sertifikalı ve/veya standart fidan kullanarak Tarımsal Üretimin Planlanması Hak kında Yönetmeliğe uygun olarak Tablo 6’da belirtilen türler le yeni meyve bahçesi tesis eden çiftçilere belirlenen katsayıya göre hesaplanan tutar üzerinden destek ödenir.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Fidan yurt içinde üretilmiş olmalı ve Tohumluk Tescil ve Sertifikasyon Merkez Müdürlüğü veya Karacabey Fidan Fide Test Merkezi tarafından düzenlenmiş sertifikalı/standart fidan sertifikasına sahip olmalı.",
+   "alinti": "Yurt içinde üretilmiş, Tohumluk Tescil ve Sertifikasyon Merkez Müdürlüğü veya Karacabey Fidan Fide Test Merkezi Müdürlüğü tarafından düzenlenmiş sertifikalı veya standart fidan sertifikasına sahip olmalıdır.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Bahçe ilgili üretim yılında tesis edilmiş, yönetmeliğe ve dikim normlarına uygun ve tek türde olmalı.",
+   "alinti": "İlgili üretim yılında tesis edilmiş olması, 2) Tarımsal Üretimin Planlanması Hakkında Yönetmeliğin 13 üncü maddesinin üçüncü , dördüncü ve beşinci fıkralarına uygun olması, 3) Bakanlıkça belirlenen dikim normlarına uygun olması, 4) Tek türde tesis edilmiş olması,",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Tek parsel veya bitişik parsellerin toplam alanı tablodaki asgari alanın altında olamaz.",
+   "alinti": "Tek parsel veya bitişik parsellerin toplam alanının aşağıdaki tabloda belirtilen alanlardan az olmayacak şekilde tesis edilmiş olması, gerekir.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Fındık ve kivide asgari alan toplamı 3 dekardır.",
+   "alinti": "Fındık, Kivi 3",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Altıntop, armut, asma, ayva, badem, ceviz, dut, elma, erik, incir vb. diğer türlerde asgari alan toplamı 5 dekardır.",
+   "alinti": "Altıntop, Armut, Asma, Ayva, Badem, Ceviz, Dut, Elma, Erik, İncir, Kayısı, Kestane, Kiraz, Limon, Mandarin, Nektarin, Pikan cevizi, Portakal, Şeftali, Trabzon hurması, Vişne, Zeytin 5",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Bahçe, tesis yılından sonra iki yıl boyunca yılda en az bir kez il/ilçe müdürlüğünce kontrol edilir; minimum alanın altına düşerse destek geri alınır.",
+   "alinti": "tesis edildiği üretim yılı hariç iki y ıl boyunca yılda en az bir kez olmak üzere il/ilçe müdürlüğünce kontrol edilerek",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Mücbir sebep dışında bahçe asgari alanın altına düşerse desteğin tamamı geri alınır.",
+   "alinti": "Mücbir sebepler dışındaki nedenlerle bağ ve kapama bahçenin mini mum alan toplamı altına düşmesi durumunda desteğin tamamı",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Kiralık arazide bahçe tesis edenlerin kira sözleşmesi en az üç yıl olmalı.",
+   "alinti": "Kiralama yolu ile bağ ve kapama bahçe tesis eden çiftçilerin kira sözleşme süresi en az üç yıl olmalıdır.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "belge",
+   "metin": "Fidan faturasının tarihi, sertifika veya bitki muayene raporu tarihinden sonra olmalı.",
+   "alinti": "Fatura tarihi, sertifika veya bitki muayene raporu tarihinden sonra olmalıdır.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "adim",
+   "metin": "Başvuru, il/ilçe müdürlüğüne Destekleme Ödemesi Başvuru Dilekçesi ile yapılır.",
+   "alinti": "sertifikalı/standart fidan kullanım, iyi tarım uygulamaları ve organik tarım desteği için ÇKS ve/veya ÖKS/KOBÜKS’de kayıtlı oldukları il/ilçe müdürlüklerine EK-3’te yer alan Destekleme Ödemesi Başvuru Dilekçesi ile şahsen veya yasal temsilcisi aracılığıyla başvuruda bulunurlar.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Planlamaya aykırı yeni kurulan meyve bahçelerine destek ödenmez.",
+   "alinti": "Tarımsal Üretimin Planlanması Hakkında Yönetmeliğe aykırı olarak yeni tesis edilen meyve bahçelerine temel ve üretimi geliştirme desteği ödemesi yapılmaz.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Fındıkta: fındık üretimine izin verilen ilçeler dışındaki parsellere temel ve üretimi geliştirme desteği ödenmez.",
+   "alinti": "Fındık Alanlarının Tespitine Dair Karar kapsamında fındık üretimine izin verilen ilçeler dışında fındık üretilen parseller için temel ve üretimi geliştirme desteği ödemesi yapılmaz.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Ödemelere bütçe imkânları dahilinde ilgili yılda başlanır.",
+   "alinti": "sertifikalı/standart fidan kullanım desteği ödemeleri ne bütçe imkânları dâhilinde ilgili yılında başlanır.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Çilek: 2024'te sertifikalı çilek fidesine dekarda 1000 lira destek verilmişti; 2025-2027 Kararı'nın fidan tablosunda çilek yoktur.",
+   "alinti": "sertifikalı çilek fidesine ise 1000 lira kullanım desteği sağlanacak.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6373/Ciftcilere-Bu-Yil-Odenecek-Bitkisel-Uretim-Destekleri-Belli-Oldu"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Standart fidan 2, sertifikalı fidan 5; fındık listede",
+   "alinti": "Altıntop, Armut, Asma, Ayva, Badem, Ceviz, Dut, Elma, Erik, Fındık, İncir, Kayısı, Kestane, Kiraz, Kivi, Limon, Manda rin, Nektarin, Pikan cevizi, Portakal, Şeftali, Trabzon hurması, Vişne, Zeytin Standart 2 Sertifikalı 5",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "iddia": "Fındıkta asgari alan 3 dekar",
+   "alinti": "Fındık, Kivi 3",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "iddia": "Katsayı değeri 2026: 367 TL",
+   "alinti": "2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "iddia": "Ödemeye bütçe imkânları dahilinde başlanır",
+   "alinti": "sertifikalı/standart fidan kullanım desteği ödemeleri ne bütçe imkânları dâhilinde ilgili yılında başlanır.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "iddia": "2024'te sertifikalı çilek fidesi 1000 lira",
+   "alinti": "sertifikalı çilek fidesine ise 1000 lira kullanım desteği sağlanacak.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6373/Ciftcilere-Bu-Yil-Odenecek-Bitkisel-Uretim-Destekleri-Belli-Oldu"
+  }
+ ]
+}

@@ -1,0 +1,1555 @@
+[
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Hayvancılık Destekleri",
+  "ozet": "Büyükbaş, küçükbaş, tavuk, arıcılık vb. hayvancılık faaliyetlerine yönelik kamu desteği.",
+  "detay": "Tarım ve Orman Bakanlığı tarafından sağlanan hayvancılık destekleri, büyükbaş (sığır, manda), küçükbaş (koyun, keçi), kanatlı ve arıcılık alanında yatırım ve işletme desteğini içerir. Destekler, hayvan başına veya üretim miktarına dayalı olarak hesaplanır ve çiftçilerin verim artışı ile modern hayvancılık tekniklerine geçişini destekler.",
+  "hedef_kitle": "Hayvancılık işletmeleri, çiftçiler",
+  "kaynak_url": "https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir",
+  "kategori": "tarim",
+  "baslama_tarihi": "2024-01-01T00:00:00",
+  "bitis_tarihi": null,
+  "tesvil_tutari": "Birim tutarlar 8760 sayılı CB Kararı (2024-2026 Hayvancılık Desteklemeleri, RG 26/7/2024) ekindedir; sistemde teyit edilemedi (taranmış PDF)",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ],
+   "alt_kategori": "hayvancilik",
+   "genislik": "dar",
+   "tutar_niteligi": "proje_bazli_tavan"
+  },
+  "tutari_min": null,
+  "tutari_max": null,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [
+   "Buzağı/malak: TÜRKVET'te kayıtlı ve destekleme yılında Türkiye'de doğmuş olması (Tebliğ 2024/23 m.4/1-a)",
+   "Buzağı/malak: TÜRKVET kayıtlarına göre en az 4 ay (120 gün) yaşamış olması (Tebliğ 2024/23 m.4/1-b)",
+   "Buzağı/malak: programlı aşıları (dişilerde brusella ve şap, erkeklerde şap) yapılmış ve VETBİS'e kaydedilmiş olması (Tebliğ 2024/23 m.4/1-c)",
+   "Kuzu/oğlak: destekleme yılında doğmuş, küpelenmiş, TÜRKVET'e kayıtlı ve doğduğu işletmede en az 120 gün yaşamış olması (Tebliğ 2024/23 m.6/1-a)",
+   "Kuzu/oğlak: yetiştiricinin damızlık koyun keçi yetiştiricileri birliğine üye olması (il birliği olmayan illerde aranmaz) (Tebliğ 2024/23 m.6/1-c)"
+  ],
+  "gerekli_belgeler": [
+   "Başvuru dilekçesi (2026 büyükbaş hayvancılık desteklemeleri talimatı ekindeki örneğe göre; talimat ve iş takvimi HAYGEM duyurusunda)"
+  ],
+  "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü",
+  "basvuru_suresi": "2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027); başvuru il/ilçe müdürlüğü veya birlik üzerinden (HDS)",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Buzağı/malak: TÜRKVET'te kayıtlı ve destekleme yılında Türkiye'de doğmuş olması (Tebliğ 2024/23 m.4/1-a)",
+    "alinti": null,
+    "kaynak_url": "https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "sart",
+    "metin": "Buzağı/malak: TÜRKVET kayıtlarına göre en az 4 ay (120 gün) yaşamış olması (Tebliğ 2024/23 m.4/1-b)",
+    "alinti": null,
+    "kaynak_url": "https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "sart",
+    "metin": "Buzağı/malak: programlı aşıları (dişilerde brusella ve şap, erkeklerde şap) yapılmış ve VETBİS'e kaydedilmiş olması (Tebliğ 2024/23 m.4/1-c)",
+    "alinti": null,
+    "kaynak_url": "https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "sart",
+    "metin": "Kuzu/oğlak: destekleme yılında doğmuş, küpelenmiş, TÜRKVET'e kayıtlı ve doğduğu işletmede en az 120 gün yaşamış olması (Tebliğ 2024/23 m.6/1-a)",
+    "alinti": null,
+    "kaynak_url": "https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "sart",
+    "metin": "Kuzu/oğlak: yetiştiricinin damızlık koyun keçi yetiştiricileri birliğine üye olması (il birliği olmayan illerde aranmaz) (Tebliğ 2024/23 m.6/1-c)",
+    "alinti": null,
+    "kaynak_url": "https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "belge",
+    "metin": "Başvuru dilekçesi (2026 büyükbaş hayvancılık desteklemeleri talimatı ekindeki örneğe göre; talimat ve iş takvimi HAYGEM duyurusunda)",
+    "alinti": "2026 yılı büyükbaş hayvancılık (buzağı/malak) desteklemeleri talimatı, iş takvimi ve başvuru dilekçe örneklerine ulaşmak için",
+    "kaynak_url": "https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: İL/İlçe Tarım ve Orman Müdürlüğü",
+    "alinti": null,
+    "kaynak_url": "https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": true,
+  "durum_notu": "Denetim2 2026-10-07: Uygulama Tebliği 2024/23 ve 2026 talimatları; takvim talimattan (https://www.resmigazete.gov.tr/eskiler/2024/08/20240817-11.htm) | Denetim2-T7 2026-10-07: HAYGEM duyurusu 268 (01.09.2026): 2026 büyükbaş talimatı yayımlandı; 1. dönem 01/09–01/12/2026 açık (https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir) | Denetim2-T9 2026-10-08: gerekli_belgeler kaynak sayfadan dolduruldu (https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir) | Tur16 2026-10-08: basvuru_sartlari resmi kaynaktan (https://www.resmigazete.gov.tr/eskiler/2024/08/20240817-11.htm); alıntı docs/olcum/2026-10-08-tur16/kanit.json"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Organik Tarım Destekleri",
+  "ozet": "Organik tarım uygulamalarına geçiş ve organik tarım faaliyetlerine yönelik destek.",
+  "detay": "Tarım Bakanlığı tarafından sağlanan organik tarım destekleri, konvansiyonel tarımdan organik tarıma geçişte ilk 3 yıl boyunca ve organik tarım yapan işletmelerin devamı için sağlanan doğrudan desteklerdir. Destekler dekar başına ödenmek üzere, ürün türüne göre farklı tutarlarla verilir.",
+  "hedef_kitle": "Organik tarım yapan veya geçiş aşamasında olan çiftçiler",
+  "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#organik-tarim",
+  "kategori": "tarim",
+  "baslama_tarihi": "2024-01-01T00:00:00",
+  "bitis_tarihi": null,
+  "tesvil_tutari": "Dekar başına 73,40–550,50 TL organik tarım desteği (2026; ürün grubu ve bireysel/grup sertifikaya göre, 1. derece örgüt üyesine %25 ilave dâhil); temel destek ayrıca ödenir",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ],
+   "alt_kategori": "organik",
+   "genislik": "genis",
+   "tutar_niteligi": "hibe",
+   "gerekli_sertifika": "organik_sertifika"
+  },
+  "tutari_min": 73.4,
+  "tutari_max": 550.5,
+  "tutari_hesaplama_kriteri": "dekar",
+  "tutari_hesaplama_formulu": "Tablo 7 katsayıları × 367,00 TL: 1. grup bireysel 1,2 → 440,40, grup 0,6 → 220,20; 2. grup 0,6/0,3; 3. grup 0,4/0,2 → en az 73,40 TL/da. 1. derece tarımsal amaçlı örgüt üyesine katsayının %25'i ilave (üst sınır 550,50 TL/da). Temel destek ayrıca. Dayanak: 8859 sayılı CB Kararı (RG 29.08.2024) tabloları; destek katsayı değeri 2026 için 367,00 TL/da (11781 sayılı CB Kararı, RG 08.09.2026, m.1/a, 1.1.2026'dan geçerli).",
+  "basvuru_sartlari": [
+   "Ürünlerin ilgili üretim yılında ÇKS ve OTBİS'te kayıtlı olması (2026 uygulama tebliğinden teyit edin)",
+   "Arazinin yetkilendirilmiş kuruluşça kontrol edilmiş ve geçiş süreci-2, geçiş süreci-3 ya da organik statüde olması; geçiş süreci-1 arazisi yararlanamaz (2026 uygulama tebliğinden teyit edin)",
+   "Hasadın yapılmış ve ürün sertifikasının düzenlenmiş olması (2026 uygulama tebliğinden teyit edin)",
+   "Organik desteği alan arazi aynı yıl iyi tarım uygulamaları desteğinden yararlanamaz (2026 uygulama tebliğinden teyit edin)",
+   "OTBİS'teki bilgilerin tamamlanması çiftçinin sorumluluğundadır (2026 uygulama tebliğinden teyit edin)",
+   "Organik tarım faaliyeti yapılan ürüne yetkilendirilmiş kuruluşça \"ürün sertifikası\" düzenlenmiş olmalı ya da organik arıcılık yapılmalı (8859 sayılı Karar m.2/7-c)"
+  ],
+  "gerekli_belgeler": [
+   "EK-3 Destekleme Ödemesi Başvuru Dilekçesi (ÇKS'de kayıtlı olunan il/ilçe müdürlüğüne; 2026 uygulama tebliğinden teyit edin)",
+   "Ürün sertifikası (yetkilendirilmiş kuruluşça düzenlenen; 2026 uygulama tebliğinden teyit edin)"
+  ],
+  "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü",
+  "basvuru_suresi": "Yıllık ilan edilir (kesin tarihler için BUGEM'in güncel duyurularını kontrol edin)",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Organik tarım faaliyeti yapılan ürüne yetkilendirilmiş kuruluşça \"ürün sertifikası\" düzenlenmiş olmalı ya da organik arıcılık yapılmalı (8859 sayılı Karar m.2/7-c)",
+    "alinti": "organik tarım faaliyeti yapan ve ürettiği ürüne \"ürün sertifikası\" düzenlenmiş olan çiftçiler ile organik arıcılık yapan yetiştiricilere",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf",
+    "kaynak_tarihi": "2026-10-10",
+    "dogrulandi": true,
+    "ekleyen": "tur23"
+   },
+   {
+    "tur": "sart",
+    "metin": "Arazinin yetkilendirilmiş kuruluşça kontrol edilmiş ve geçiş süreci-2, geçiş süreci-3 ya da organik statüde olması; geçiş süreci-1 arazisi yararlanamaz (2026 uygulama tebliğinden teyit edin)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#organik-tarim",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "sart",
+    "metin": "Hasadın yapılmış ve ürün sertifikasının düzenlenmiş olması (2026 uygulama tebliğinden teyit edin)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#organik-tarim",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "belge",
+    "metin": "EK-3 Destekleme Ödemesi Başvuru Dilekçesi (ÇKS'de kayıtlı olunan il/ilçe müdürlüğüne; 2026 uygulama tebliğinden teyit edin)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#organik-tarim",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "belge",
+    "metin": "Ürün sertifikası (yetkilendirilmiş kuruluşça düzenlenen; 2026 uygulama tebliğinden teyit edin)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#organik-tarim",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "adim",
+    "metin": "Ürünlerin ilgili üretim yılında ÇKS ve OTBİS'te kayıtlı olması (2026 uygulama tebliğinden teyit edin)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#organik-tarim",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "adim",
+    "metin": "OTBİS'teki bilgilerin tamamlanması çiftçinin sorumluluğundadır (2026 uygulama tebliğinden teyit edin)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#organik-tarim",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: İL/İlçe Tarım ve Orman Müdürlüğü",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#organik-tarim",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "kural",
+    "metin": "Organik desteği alan arazi aynı yıl iyi tarım uygulamaları desteğinden yararlanamaz (2026 uygulama tebliğinden teyit edin)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#organik-tarim",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": true,
+  "durum_notu": "DURUM: Doğrulanmış, güncel/aktif program. 2026 üretim yılı birim fiyatları resmî tablodan doğrulandı (T.C. Tarım ve Orman Bakanlığı BUGEM, 2026 Üretim Yılı Bitkisel Üretim Destekleme Birim Fiyatları; https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2026%20Y%C4%B1l%C4%B1%20Destekleme%20Birim%20Fiyatlar%C4%B1.pdf); teyit 2026-10-07. | Denetim2-T7 2026-10-07: eski metin '₺500–2.000/da' resmî tabloyla çelişiyordu (tutari_min/max 62/465 zaten doğruydu) (https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2026%20Y%C4%B1l%C4%B1%20Destekleme%20Birim%20Fiyatlar%C4%B1.pdf) | Tur16 2026-10-08: basvuru_sartlari resmi kaynaktan (https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf); alıntı docs/olcum/2026-10-08-tur16/kanit.json | Tur16 2026-10-08: gerekli_belgeler resmi kaynaktan (https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf); alıntı docs/olcum/2026-10-08-tur16/kanit.json | Tur20 2026-10-10: genel sayfa yerine programa özel resmî kaynak; 2026 tutarları 11781 sayılı Kararla (367 TL) güncellendi; eski: {'kaynak_url': 'https://www.tarimorman.gov.tr/BUGEM#organik-tarim', 'tesvil_tutari': 'Dekar başına 62–465 TL organik tarım desteği (2026; ürün grubu ve bireysel/grup sertifikaya göre, 1. derece örgüt üyesine %25 ilave dâhil); temel destek ayrıca ödenir', 'formul': \"Ürün grubuna ve sertifika türüne göre: 3. grup grup sertifikası 62.00 TL/dekar (en az), 1. grup bireysel sertifika 372.00 TL/dekar. 1. derece tarımsal amaçlı örgüt üyesi çiftçilere katsayının %25'i kadar ilave ödenir; üst sınır 465.00 TL/dekar bunu içerir. Temel destek buna ek olarak alınır.\", 'tutari_max': 465.0}; kanıt docs/olcum/2026-10-10-tur20/kanit.json | Tur23 2026-10-10: profil alanıyla denetlenen şart eklendi (gerekli_sertifika) | Tur24 2026-10-11: 'Tebliğ 2024/39' atıfları doğrulanamadı (2024 üretim yılı tebliği 2024/31, RG 26.09.2024; 2026 uygulama tebliği teyit edilmedi); atıflar 'uygulama tebliğinden teyit edin' olarak düzeltildi | Tur35 2026-10-12: tutari_min güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi)"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Kırsal Kalkınma Yatırım Programı (KKYP) – Tarımsal İşleme/Depolama ve Makine Parkı Hibeleri",
+  "ozet": "Tarım ve Orman Bakanlığı (TRGM) Kırsal Kalkınma Yatırım Programı: tarımsal ürünlerin işlenmesi, paketlenmesi ve depolanması, kanatlı/büyükbaş/küçükbaş yetiştiriciliği, gübre işleme, tarımsal amaçlı örgütler için ortak makine parkı vb. yatırım konularına hibe. Bireysel traktör/makine alımı bu programda desteklenmez.",
+  "detay": "Tarım ve Orman Bakanlığı (TRGM) Kırsal Kalkınma Yatırım Programı: tarımsal ürünlerin işlenmesi, paketlenmesi ve depolanması, kanatlı/büyükbaş/küçükbaş yetiştiriciliği, gübre işleme, tarımsal amaçlı örgütler için ortak makine parkı vb. yatırım konularına hibe. Bireysel traktör/makine alımı bu programda desteklenmez.",
+  "hedef_kitle": "Çiftçiler, tarım işletmeleri",
+  "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm",
+  "kategori": "tarim",
+  "baslama_tarihi": "2024-01-01T00:00:00",
+  "bitis_tarihi": null,
+  "tesvil_tutari": "Hibe: KDV dâhil hibeye esas proje tutarının %50–%70'i (EK-2'ye göre); hibeye esas tutar 100.000 – 30.000.000 TL (aile işletmesi ≤8.000.000 TL)",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ],
+   "alt_kategori": "makinelestirme",
+   "genislik": "genis",
+   "tutar_niteligi": "proje_bazli_tavan"
+  },
+  "tutari_min": 100000.0,
+  "tutari_max": 30000000.0,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [
+   "Gerçek/tüzel kişiler ve tarımsal amaçlı örgütler; kadın ve genç girişimciler (18-40 yaş) öncelikli (MADDE 2, 14)",
+   "Hibeye esas proje tutarı 100.000 TL alt, 30.000.000 TL üst limit; aile işletmesi 8.000.000 TL (MADDE 14)",
+   "Hibe oranı KDV dâhil hibeye esas tutarın %50–%70'i, kalan kısım faydalanıcı öz kaynağı (MADDE 14/4)",
+   "Yatırım konuları Tebliğ'deki başlıklarla sınırlı (işleme/paketleme/depolama, hayvancılık, gübre işleme, ortak makine parkı vb.)",
+   "Yasal izin ve ruhsatlar alınmış/alınacak olmalı; kiralık mülkte en az 7 yıl kira süresi"
+  ],
+  "gerekli_belgeler": null,
+  "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü",
+  "basvuru_suresi": "2026 başvuru dönemi 29 Nisan – 12 Haziran 2026 saat 23:59 (kapandı); yıllık çağrı. 2026 uygulama yılı; başvuru hibe.tarimorman.gov.tr (Tebliğ 2026/9, RG 3/4/2026)",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": null,
+  "basvuru_bicimi": null,
+  "aktif_mi": false,
+  "durum_notu": "Denetim2 2026-10-07: eski kayıt BUGEM ana sayfasına bağlıydı ve kaynaksız '₺50.000-₺500.000 makine hibesi' diyordu; kapsam KKYP Tebliği 2026/9'a göre yeniden yazıldı (10802 sayılı CB Kararı) (https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm) | Denetim2-T7 2026-10-07: TRGM duyurusu (29.04.2026): KKYP başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı (https://www.tarimorman.gov.tr/TRGM/Sayfalar/Detay.aspx?OgeId=670&Liste=Duyuru) | Tur27 2026-10-11: detay alanındaki eski makineleştirme metni kaldırıldı (özetle çelişiyordu)"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Sera/Örtüaltı Tarım Destekleri",
+  "ozet": "Örtüaltı (sera) bitkisel üretim yapan çiftçilere dekar başına temel destek; iyi tarım uygulamaları sertifikalı örtüaltı üretimde ilave destek (2026).",
+  "detay": "Temel destek ÇKS'ye kayıtlı arazi üzerinden Kararın Tablo 1 kategorisine göre ödenir (Tebliğ 2024/39 m.5). İyi tarım uygulamaları desteği ÇKS/ÖKS/KOBÜKS'te kayıtlı, sertifikalı ürünlere Tablo 8 katsayısıyla ödenir; 1. grup ürünlerde ÖKS/KOBÜKS'te kayıtlı olmayan alanlar açıkta üretim desteğinden yararlanır (m.7/4). 2026 birim değerleri (11781 sayılı CB Kararı, RG 08.09.2026; destek katsayı değeri 367,00 TL/da): temel destek 367,00 TL/da; örtüaltı iyi tarım bireysel sertifika katsayısı 1,7 = 623,90 TL/da (grup sertifikasında 0,85 = 311,95 TL/da). Sera kurulumu için yatırım hibesi bu kaydın kapsamında değildir.",
+  "hedef_kitle": "Çiftçiler, bahçıvanlık işletmeleri",
+  "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#ortualti-iyi-tarim",
+  "kategori": "tarim",
+  "baslama_tarihi": "2024-01-01T00:00:00",
+  "bitis_tarihi": null,
+  "tesvil_tutari": "Dekar başına 367,00 TL temel destek; iyi tarım sertifikalı örtüaltı üretimde bireysel sertifikayla +623,90 TL (en çok 990,90 TL/da, 2026)",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ],
+   "alt_kategori": "sera",
+   "genislik": "dar",
+   "tutar_niteligi": "hibe"
+  },
+  "tutari_min": 367.0,
+  "tutari_max": 990.9,
+  "tutari_hesaplama_kriteri": "dekar",
+  "tutari_hesaplama_formulu": "Temel destek 367,00 TL/da (Tablo 1, katsayı 1,0). İyi tarım uygulamaları desteği (Tablo 8) örtüaltı/kapalı ortam: bireysel 1,7 → 623,90, grup 0,85 → 311,95 TL/da; üst sınır iki kalemin toplamı. Dayanak: 8859 sayılı CB Kararı (RG 29.08.2024) tabloları; destek katsayı değeri 2026 için 367,00 TL/da (11781 sayılı CB Kararı, RG 08.09.2026, m.1/a, 1.1.2026'dan geçerli).",
+  "basvuru_sartlari": [
+   "Örtüaltı/kapalı ortam üretim yerinin ÖKS/KOBÜKS'te kayıtlı olması (Tebliğ 2024/39 m.3, m.8/1-a)",
+   "Destek türüne göre ek şart: iyi tarım uygulamaları desteğinde sertifikanın ÖKS/KOBÜKS'e kaydı (Tebliğ 2024/39 m.7/4-a); biyolojik/biyoteknik mücadele desteğinde BKÜ faturası ve onaylı ÜKD kayıtları (Tebliğ 2024/39 m.8/1-b, c)"
+  ],
+  "gerekli_belgeler": [
+   "EK-3 Destekleme Ödemesi Başvuru Dilekçesi (ÇKS ve/veya ÖKS/KOBÜKS'te kayıtlı olunan il/ilçe müdürlüğüne; Tebliğ 2024/39 m.15/1)"
+  ],
+  "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü",
+  "basvuru_suresi": "Yıllık ilan edilir (kesin tarihler için BUGEM'in güncel duyurularını kontrol edin)",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Örtüaltı/kapalı ortam üretim yerinin ÖKS/KOBÜKS'te kayıtlı olması (Tebliğ 2024/39 m.3, m.8/1-a)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#ortualti-iyi-tarim",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "belge",
+    "metin": "Destek türüne göre ek şart: iyi tarım uygulamaları desteğinde sertifikanın ÖKS/KOBÜKS'e kaydı (Tebliğ 2024/39 m.7/4-a); biyolojik/biyoteknik mücadele desteğinde BKÜ faturası ve onaylı ÜKD kayıtları (Tebliğ 2024/39 m.8/1-b, c)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#ortualti-iyi-tarim",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "belge",
+    "metin": "EK-3 Destekleme Ödemesi Başvuru Dilekçesi (ÇKS ve/veya ÖKS/KOBÜKS'te kayıtlı olunan il/ilçe müdürlüğüne; Tebliğ 2024/39 m.15/1)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#ortualti-iyi-tarim",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: İL/İlçe Tarım ve Orman Müdürlüğü",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#ortualti-iyi-tarim",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": true,
+  "durum_notu": "DURUM: Doğrulanmış, güncel/aktif program. 2026 üretim yılı birim fiyatları resmî tablodan doğrulandı (T.C. Tarım ve Orman Bakanlığı BUGEM, 2026 Üretim Yılı Bitkisel Üretim Destekleme Birim Fiyatları; https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2026%20Y%C4%B1l%C4%B1%20Destekleme%20Birim%20Fiyatlar%C4%B1.pdf); teyit 2026-10-07. | Denetim2-T7 2026-10-07: eski metin 'm² başına ₺50–200' kaynaksızdı; 2026 tablosu dekar bazlı (310 + 527) (https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2026%20Y%C4%B1l%C4%B1%20Destekleme%20Birim%20Fiyatlar%C4%B1.pdf) | Tur16 2026-10-08: basvuru_sartlari resmi kaynaktan (https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf); alıntı docs/olcum/2026-10-08-tur16/kanit.json | Tur16 2026-10-08: gerekli_belgeler resmi kaynaktan (https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf); alıntı docs/olcum/2026-10-08-tur16/kanit.json | Tur17 2026-10-08: özet/açıklama tutar ve Tebliğ 2024/39 m.5, m.7/4 ile uyumlu hâle getirildi; eski özet: 'Sera ve örtüaltı yapı kurulumuna yönelik yatırım destekleri.' | Tur20 2026-10-10: genel sayfa yerine programa özel resmî kaynak; 2026 tutarları 11781 sayılı Kararla (367 TL) güncellendi; eski: {'kaynak_url': 'https://www.tarimorman.gov.tr/BUGEM#sera', 'tesvil_tutari': 'Dekar başına 310 TL temel destek; iyi tarım sertifikalı örtüaltı üretimde bireysel sertifikayla +527 TL (en çok 837 TL/da, 2026)', 'formul': 'Temel destek 310.00 TL/dekar. İyi tarım uygulamaları sertifikası varsa örtüaltı üretim için bireysel sertifikada 527.00 TL/dekar ilave; üst sınır bu iki kalemin toplamı. Grup sertifikasında ilave yarıya iner.', 'tutari_max': 837.0}; kanıt docs/olcum/2026-10-10-tur20/kanit.json | Tur31 2026-10-11: kayıt içi çelişki giderildi (detay; dayanak: tutari_hesaplama_formulu) | Tur35 2026-10-12: tutari_min güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi)"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Tasarruflu Tarımsal Sulama Sistemleri (TSS) Hibe Desteği",
+  "ozet": "Kırsal Kalkınma Yatırım Programı kapsamında tarla içi damla, yağmurlama, mikro yağmurlama, yüzey altı damla, center pivot/lineer/tamburlu ve güneş enerjili sulama sistemlerine hibe (81 il).",
+  "detay": "Tarım Bakanlığı tarafından kuyu açma, sulama tesisatı kurulumu, damla sulama sistemleri vb. sulama altyapı yatırımlarına hibe ve kredi desteği sağlanmaktadır.",
+  "hedef_kitle": "Tarım işletmeleri, çiftçi kooperatifleri",
+  "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.htm",
+  "kategori": "tarim",
+  "baslama_tarihi": "2024-01-01T00:00:00",
+  "bitis_tarihi": null,
+  "tesvil_tutari": "Hibe oranı %50 (damla, yağmurlama), %60 (mikro yağmurlama; center pivot/lineer/tamburlu; güneş enerjili), %70 (yüzey altı damla); hibeye esas proje tutarı en fazla 10.000.000 TL",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ],
+   "alt_kategori": "sulama",
+   "genislik": "genis",
+   "tutar_niteligi": "proje_bazli_tavan"
+  },
+  "tutari_min": null,
+  "tutari_max": 10000000.0,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [
+   "Gerçek/tüzel kişiler; kadın ve genç girişimciler ile birinci derece tarımsal örgütler öncelikli; bütçenin en az %20'si kadın/genç girişimcilere (MADDE 11)",
+   "Hibe oranı sulama sistemi türüne göre %50/%60/%70 (MADDE 11/4)",
+   "Hibeye esas proje tutarı 10.000.000 TL'yi geçemez; aşan kısım ayni katkı (MADDE 11/6)",
+   "Makine-ekipman alımı hibe sözleşmesinden sonra ve 75 gün içinde teslim (MADDE 9)"
+  ],
+  "gerekli_belgeler": null,
+  "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü / TKDK",
+  "basvuru_suresi": "2026 başvuru dönemi 29 Nisan – 12 Haziran 2026 saat 23:59 (kapandı); yıllık çağrı. Uygulama yılı 1/1/2026–31/12/2026; başvuru tss.tarimorman.gov.tr (Tebliğ 2026/10, RG 3/4/2026)",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": null,
+  "basvuru_bicimi": null,
+  "aktif_mi": false,
+  "durum_notu": "Denetim2 2026-10-07: eski kayıt TRGM ana sayfasına bağlıydı ve kaynaksız '₺100.000-₺1.000.000' diyordu; TSS Tebliği 2026/10'a göre yeniden yazıldı (https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.htm) | Denetim2-T7 2026-10-07: TRGM duyurusu (29.04.2026): TSS hibe başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı (https://www.tarimorman.gov.tr/TRGM/Sayfalar/Detay.aspx?OgeId=670&Liste=Duyuru)"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim)",
+  "ozet": "Buğday, arpa, mısır, mercimek, nohut vb. üreticilerine dekar başına temel destek ve planlı üretim desteği (2026'da mazot ve gübre desteği 'temel destek' adıyla birleşti).",
+  "detay": "Tarım ve Orman Bakanlığı her üretim yılı için 'Bitkisel Üretim Destekleme Birim Fiyatları' ile ÇKS'ye kayıtlı üreticilere dekar başına doğrudan destek öder. 2026'dan itibaren eski mazot ve gübre destekleri 'temel destek' adıyla tek kalemde birleşti; hububat ve baklagilde buna ürün katsayısına göre planlı üretim desteği eklenir. Sertifikalı tohum kullanımında ayrıca üretimi geliştirme desteği ödenir.",
+  "hedef_kitle": "Hububat/baklagil üreten çiftçiler",
+  "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#hububat-baklagil",
+  "kategori": "tarim",
+  "baslama_tarihi": "2024-01-01T00:00:00",
+  "bitis_tarihi": null,
+  "tesvil_tutari": "Dekar başına 734,00–954,20 TL (2026): temel destek + planlı üretim desteği; mercimek, nohut ile birinci grup yem bitkisi sayılan yulaf, çavdar, tritikale katsayı 1,0 → 734,00 TL/da; arpa, buğday, mısır (dane) 1,3 → 954,20 TL/da. Sertifikalı tohum desteği ayrıca.",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ],
+   "alt_kategori": "tahil_baklagil",
+   "genislik": "dar",
+   "tutar_niteligi": "hibe"
+  },
+  "tutari_min": 734.0,
+  "tutari_max": 954.2,
+  "tutari_hesaplama_kriteri": "dekar",
+  "tutari_hesaplama_formulu": "Temel destek (Tablo 1) + planlı üretim desteği (Tablo 2, planlama kapsamındaki ürünü havzasında üretene), her biri katsayı × 367,00 TL: 1. kategori (mercimek, nohut; yulaf, çavdar, tritikale birinci grup yem bitkisi olarak) 1,0 → 367,00 + 367,00; 2. kategori (arpa, buğday, mısır dane) 1,3 → 477,10 + 477,10. Sertifikalı tohum (Tablo 4): arpa, buğday, çavdar, tritikale, yulaf 0,56 → 205,52; mercimek, nohut 0,4 → 146,80 TL/da. Mercimek/nohutta havza ilavesi 2027'den geçerlidir. Dayanak: 8859 sayılı CB Kararı, 10394 sayılı Kararla değişik tablolar (RG 14.09.2025, 1/1/2026'dan geçerli); destek katsayı değeri 2026 için 367,00 TL/da (11781 sayılı CB Kararı, RG 08.09.2026, m.1/a, 1.1.2026'dan geçerli).",
+  "basvuru_sartlari": [
+   "Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak",
+   "Arazi/parsel bilgilerinin ÇKS'de güncel olması",
+   "İlgili üretim sezonunda ekim yapılmış olması"
+  ],
+  "gerekli_belgeler": [
+   "ÇKS Kaydı",
+   "Arazi/Parsel Belgesi",
+   "Ekiliş Beyanı"
+  ],
+  "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu)",
+  "basvuru_suresi": "Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin)",
+  "destek_verilme_suresi": "Üretim sezonu sonrası, bakanlık ödeme takvimine göre",
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#hububat-baklagil",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "sart",
+    "metin": "Arazi/parsel bilgilerinin ÇKS'de güncel olması",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#hububat-baklagil",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "sart",
+    "metin": "İlgili üretim sezonunda ekim yapılmış olması",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#hububat-baklagil",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "belge",
+    "metin": "ÇKS Kaydı",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#hububat-baklagil",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "belge",
+    "metin": "Arazi/Parsel Belgesi",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#hububat-baklagil",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "belge",
+    "metin": "Ekiliş Beyanı",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#hububat-baklagil",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#hububat-baklagil",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": true,
+  "durum_notu": "DURUM: Doğrulanmış, güncel/aktif program. 2026 üretim yılı birim fiyatları resmî tablodan doğrulandı (T.C. Tarım ve Orman Bakanlığı BUGEM, 2026 Üretim Yılı Bitkisel Üretim Destekleme Birim Fiyatları; https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2026%20Y%C4%B1l%C4%B1%20Destekleme%20Birim%20Fiyatlar%C4%B1.pdf); teyit 2026-10-07. | Denetim2-T7 2026-10-07: 2026'da mazot+gübre ayrımı kalktı (temel destek); tutar formülden yazıldı (https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2026%20Y%C4%B1l%C4%B1%20Destekleme%20Birim%20Fiyatlar%C4%B1.pdf) | Denetim2-T8 2026-10-08: 2026'da mazot+gübre 'temel destek' adıyla birleşti; başlık/özet/ayrıntı güncellendi (kaynak https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2026%20Y%C4%B1l%C4%B1%20Destekleme%20Birim%20Fiyatlar%C4%B1.pdf) | Tur20 2026-10-10: genel sayfa yerine programa özel resmî kaynak; 2026 tutarları 11781 sayılı Kararla (367 TL) güncellendi; eski: {'kaynak_url': 'https://www.tarimorman.gov.tr/BUGEM#hububat-baklagil', 'tesvil_tutari': \"Dekar başına 620–806 TL (2026): temel destek + planlı üretim desteği, her biri ürün katsayısı × 310 TL (mercimek/nohut 1,0; buğday/arpa/mısır 1,3); sertifikalı tohum ayrıca. 2026'da mazot ve gübre desteği 'temel destek' adıyla birleştirildi\", 'formul': 'Temel destek + planlı üretim desteği. Kategori katsayısı ürüne göre değişir: mercimek/nohut 1,0 (310.00 TL/da), buğday/arpa/mısır 1,3 (403.00 TL/da). İki kalem ayrı ayrı ödendiği için alt sınır 620.00, üst sınır 806.00 TL/dekar. Sertifikalı tohum kullanılırsa ilave ödenir. Birim değer 310.00 TL/da (katsayı 1).', 'tutari_max': 806.0}; kanıt docs/olcum/2026-10-10-tur20/kanit.json | Tur35 2026-10-12: tutari_min güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi) | Tur35 2026-10-12: tesvil_tutari güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi) | Tur35 2026-10-12: tutari_hesaplama_formulu güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi)"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Meyve-Sebze Üretim Destekleri (Temel Destek)",
+  "ozet": "Sebze ve meyve üreticilerine dekar başına temel destek (2026'da mazot ve gübre desteği 'temel destek' adıyla birleşti); fidan kullanımında ilave destek.",
+  "detay": "Tarım ve Orman Bakanlığı her üretim yılı için 'Bitkisel Üretim Destekleme Birim Fiyatları' ile ÇKS'ye kayıtlı üreticilere dekar başına doğrudan destek öder. 2026'dan itibaren eski mazot ve gübre destekleri 'temel destek' adıyla birleşti; sebze ve meyve 1. kategoride yer alır ve planlı üretim desteği kapsamında değildir. Meyve bahçesi tesisinde standart veya sertifikalı fidan kullanımına ayrıca fidan desteği ödenir.",
+  "hedef_kitle": "Sebze/meyve üreten çiftçiler",
+  "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve",
+  "kategori": "tarim",
+  "baslama_tarihi": "2024-01-01T00:00:00",
+  "bitis_tarihi": null,
+  "tesvil_tutari": "Dekar başına 367,00 TL temel destek (2026, 1. kategori 'diğer ürünler'); fidan kullanım desteği ayrıca 734,00 TL/da (standart) veya 1.835,00 TL/da (sertifikalı).",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ],
+   "alt_kategori": "sebze_meyve",
+   "genislik": "dar",
+   "tutar_niteligi": "hibe",
+   "urun_haric": [
+    "fındık",
+    "çay",
+    "ayçiçeği",
+    "kolza",
+    "kanola",
+    "fasulye",
+    "soya",
+    "çeltik",
+    "pamuk",
+    "arpa",
+    "buğday",
+    "mısır"
+   ]
+  },
+  "tutari_min": 367.0,
+  "tutari_max": 367.0,
+  "tutari_hesaplama_kriteri": "dekar",
+  "tutari_hesaplama_formulu": "Sebze ve meyve Tablo 1'de 1. kategori 'diğer ürünler' (katsayı 1,0): temel destek 367,00 TL/da. Planlı üretim kategorilerinde yer almaz. Yeni meyve bahçesinde fidan kullanım desteği (Tablo 6): standart 2 → 734,00, sertifikalı 5 → 1.835,00 TL/da. Dayanak: 8859 sayılı CB Kararı (RG 29.08.2024) tabloları; destek katsayı değeri 2026 için 367,00 TL/da (11781 sayılı CB Kararı, RG 08.09.2026, m.1/a, 1.1.2026'dan geçerli). Fındık Tablo 1'de 3. kategoridedir: katsayı 1,5 → 550,50 TL/da; fındıkta temel destek yalnız fındık üretimine izin verilen ilçelerdeki parsellere ödenir. Dayanak: 8859 sayılı Karar Tablo 1 ve m.6/4 (11781 sayılı Kararın 4 üncü maddesiyle değişik, 1/1/2025'ten geçerli).",
+  "basvuru_sartlari": [
+   "Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak",
+   "Arazi/parsel bilgilerinin ÇKS'de güncel olması",
+   "İlgili üretim sezonunda dikim/ekim yapılmış olması"
+  ],
+  "gerekli_belgeler": [
+   "ÇKS Kaydı",
+   "Arazi/Parsel Belgesi",
+   "Dikim/Ekiliş Beyanı"
+  ],
+  "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu)",
+  "basvuru_suresi": "Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin)",
+  "destek_verilme_suresi": "Üretim sezonu sonrası, bakanlık ödeme takvimine göre",
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "sart",
+    "metin": "Arazi/parsel bilgilerinin ÇKS'de güncel olması",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "sart",
+    "metin": "İlgili üretim sezonunda dikim/ekim yapılmış olması",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "belge",
+    "metin": "ÇKS Kaydı",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "belge",
+    "metin": "Arazi/Parsel Belgesi",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "belge",
+    "metin": "Dikim/Ekiliş Beyanı",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve",
+    "kaynak_tarihi": "2026-10-09",
+    "dogrulandi": false
+   },
+   {
+    "tur": "sart",
+    "metin": "Fındık üreticisiyseniz: parseliniz fındık üretimine izin verilen bir ilçede olmalı; izin verilen ilçeler dışında fındık üretilen parsellere temel destek ödenmez (8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik)",
+    "alinti": null,
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/09/20260908-7.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": true,
+  "durum_notu": "DURUM: Doğrulanmış, güncel/aktif program. 2026 üretim yılı birim fiyatları resmî tablodan doğrulandı (T.C. Tarım ve Orman Bakanlığı BUGEM, 2026 Üretim Yılı Bitkisel Üretim Destekleme Birim Fiyatları; https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2026%20Y%C4%B1l%C4%B1%20Destekleme%20Birim%20Fiyatlar%C4%B1.pdf); teyit 2026-10-07. | Denetim2-T7 2026-10-07: 2026'da mazot+gübre ayrımı kalktı (temel destek); tutar formülden yazıldı (https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2026%20Y%C4%B1l%C4%B1%20Destekleme%20Birim%20Fiyatlar%C4%B1.pdf) | Denetim2-T8 2026-10-08: 2026'da mazot+gübre 'temel destek' adıyla birleşti; başlık/özet/ayrıntı güncellendi (kaynak https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2026%20Y%C4%B1l%C4%B1%20Destekleme%20Birim%20Fiyatlar%C4%B1.pdf) | Tur20 2026-10-10: genel sayfa yerine programa özel resmî kaynak; 2026 tutarları 11781 sayılı Kararla (367 TL) güncellendi; eski: {'kaynak_url': 'https://www.tarimorman.gov.tr/BUGEM#sebze-meyve', 'tesvil_tutari': \"Dekar başına 310 TL temel destek (2026, 1. kategori 'diğer ürünler'); fidan kullanım desteği ayrıca 620 TL/da (standart) veya 1.550 TL/da (sertifikalı). 2026'da mazot ve gübre desteği 'temel destek' adıyla birleştirildi\", 'formul': 'Sebze ve meyve, tabloda 1. kategori \"Diğer ürünler\" kapsamında: temel destek 310.00 TL/dekar. Planlı üretim desteği kategorilerinde yer almadığı için o kalem eklenmez. Fidan kullanım desteği (standart 620,00 / sertifikalı 1.550,00 TL/da) ayrıca alınabilir.', 'tutari_max': 310.0}; kanıt docs/olcum/2026-10-10-tur20/kanit.json | Tur35 2026-10-12: tutari_min güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi) | Tur35 2026-10-12: tesvil_tutari güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi) | Tur35 2026-10-12: tutari_hesaplama_formulu güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi) | Tur35 2026-10-12: kontrol_listesi güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi) | Tur35 2026-10-12: uygunluk_kriterleri güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi)"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Tarımsal Yayım ve Danışmanlık Desteği (2026)",
+  "ozet": "Bakanlıkça yetkilendirilerek tarımsal yayım ve danışmanlık hizmeti sunan serbest tarım danışmanları ile ziraat odası ve üretici örgütlerinde en fazla beş tarım danışmanı olmak üzere istihdam edilen her bir tarım danışmanı için 2026 yılı desteği 345.450 TL olarak belirlenmiştir. 2026 yılı başvuru dönemi 15 Aralık 2025 - 09 Ocak 2026 tarihleri arasıdır ve sona ermiştir.",
+  "detay": "Bakanlıkça yetkilendirilerek tarımsal yayım ve danışmanlık hizmeti sunan serbest tarım danışmanları ile ziraat odası ve üretici örgütlerinde en fazla beş tarım danışmanı olmak üzere istihdam edilen her bir tarım danışmanı için 2026 yılı desteği 345.450 TL olarak belirlenmiştir. 2026 yılı başvuru dönemi 15 Aralık 2025 - 09 Ocak 2026 tarihleri arasıdır ve sona ermiştir.\n\nResmî kaynaktan alıntılar:\n- ziraat odası ve üretici örgütlerinde en fazla beş tarım danışmanı olmak üzere istihdam edilen her bir tarım danışmanı için 345.450 TL olarak belirlenmiştir.\n- 15 Aralık 2025 - 09 Ocak 2026 tarihleri arasında il/ilçe tarım ve orman müdürlüklerine başvuru yapmaları gerekmektedir.",
+  "hedef_kitle": null,
+  "kaynak_url": "https://kayseri.tarimorman.gov.tr/Duyuru/648/2026-Yilina-Iliskin-Tarimsal-Yayim-Ve-Danismanlik-Destekleme-Basvuru-Donemi-Duyurusu",
+  "kategori": null,
+  "baslama_tarihi": null,
+  "bitis_tarihi": null,
+  "tesvil_tutari": "2026 yılında Bakanlıkça yetkilendirilmiş serbest tarım danışmanları ile ziraat odası ve üretici örgütlerinde en fazla beş tarım danışmanı olmak üzere istihdam edilen her bir tarım danışmanı için 345.450 TL.",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ]
+  },
+  "tutari_min": null,
+  "tutari_max": null,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [
+   "Destek, Bakanlıkça yetkilendirilmiş serbest tarım danışmanları ile ziraat odaları ve üretici örgütlerinde istihdam edilen (en fazla beş) tarım danışmanları için verilir."
+  ],
+  "gerekli_belgeler": [],
+  "basvuru_yeri": "İl/ilçe tarım ve orman müdürlükleri.",
+  "basvuru_suresi": "2026 yılı için 15 Aralık 2025 - 09 Ocak 2026 (sona ermiştir).",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Destek, Bakanlıkça yetkilendirilmiş serbest tarım danışmanları ile ziraat odaları ve üretici örgütlerinde istihdam edilen (en fazla beş) tarım danışmanları için verilir.",
+    "alinti": "Bakanlıkça yetkilendirilerek tarımsal yayım ve danışmanlık hizmeti sunan serbest tarım danışmanları ile ziraat odası ve üretici örgütlerinde en fazla beş tarım danışmanı olmak üzere istihdam edilen her bir tarım danışmanı için 345.450 TL olarak belirlenmiştir.",
+    "kaynak_url": "https://kayseri.tarimorman.gov.tr/Duyuru/648/2026-Yilina-Iliskin-Tarimsal-Yayim-Ve-Danismanlik-Destekleme-Basvuru-Donemi-Duyurusu",
+    "kaynak_tarihi": "2026-10-11",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuru ziraat odaları, üretici örgütleri ve serbest tarım danışmanları tarafından il/ilçe tarım ve orman müdürlüklerine yapılır.",
+    "alinti": "15 Aralık 2025 - 09 Ocak 2026 tarihleri arasında il/ilçe tarım ve orman müdürlüklerine başvuru yapmaları gerekmektedir.",
+    "kaynak_url": "https://kayseri.tarimorman.gov.tr/Duyuru/648/2026-Yilina-Iliskin-Tarimsal-Yayim-Ve-Danismanlik-Destekleme-Basvuru-Donemi-Duyurusu",
+    "kaynak_tarihi": "2026-10-11",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: İl/ilçe tarım ve orman müdürlükleri.",
+    "alinti": null,
+    "kaynak_url": "https://kayseri.tarimorman.gov.tr/Duyuru/648/2026-Yilina-Iliskin-Tarimsal-Yayim-Ve-Danismanlik-Destekleme-Basvuru-Donemi-Duyurusu",
+    "kaynak_tarihi": "2026-10-11",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "diger",
+  "aktif_mi": false,
+  "durum_notu": "Tur32 2026-10-11: resmî kaynaktan eklendi; durum: 2026 yılı başvuru dönemi duyuruda belirtilen tarihte kapanmıştır; sonraki yıl için kaynakta çağrı bilgisi yoktur.; kanıt docs/olcum/2026-10-11-kapsam/kayit/tob-tarimsal-yayim-danismanlik.json + dogrulama.json"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Fındık Alan Bazlı Gelir Desteği (sona erdi: son ödeme 2024 üretim yılı için; fındık artık Temel Destek modelinde)",
+  "ozet": "Ruhsatlı fındık alanlarında üretim yapan, ÇKS ve FKS'ye kayıtlı çiftçilere ayrıca ödenen 'fındık alan bazlı gelir desteği' 2024 üretim yılı için dekara 170 lira idi ve ödemesi 18 Nisan 2025'te yapıldı. 2025-2027 destek modelinde bu ayrı destek yoktur: destekler temel destek, planlı üretim desteği ve üretimi geliştirme destekleri olarak sadeleştirilmiş, fındık Temel Destek'in 3. kategorisine girmiştir. Fındığa bugün ödenen destek için 'Fındık Temel Desteği (2026)' kaydına bakın.",
+  "detay": "Ruhsatlı fındık alanlarında üretim yapan, ÇKS ve FKS'ye kayıtlı çiftçilere ayrıca ödenen 'fındık alan bazlı gelir desteği' 2024 üretim yılı için dekara 170 lira idi ve ödemesi 18 Nisan 2025'te yapıldı. 2025-2027 destek modelinde bu ayrı destek yoktur: destekler temel destek, planlı üretim desteği ve üretimi geliştirme destekleri olarak sadeleştirilmiş, fındık Temel Destek'in 3. kategorisine girmiştir. Fındığa bugün ödenen destek için 'Fındık Temel Desteği (2026)' kaydına bakın.\n\nResmî kaynaktan alıntılar:\n- Fındık üreticilerine alan bazlı gelir desteği, belirlenen yerlerde yapılan üretimde dekara 170 lira olarak ödenecek.\n- 2024 Üretim Yılı Fındık Alan Bazlı Gelir Desteği ödemeleri 18 Nisan 2025 Cuma günü saat 18:00 den itibaren\n- 3. Kategori Ayçiçeği (yağlık), Fındık, Kolza (kanola), Fasulye (kuru), Soya, Çay 1,5\n- 2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+  "hedef_kitle": null,
+  "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6373/Ciftcilere-Bu-Yil-Odenecek-Bitkisel-Uretim-Destekleri-Belli-Oldu",
+  "kategori": null,
+  "baslama_tarihi": null,
+  "bitis_tarihi": null,
+  "tesvil_tutari": "2024 üretim yılı için dekara 170 lira (artık ödenmiyor). Yerine fındık Temel Destek'tedir: destek katsayısı 1,5 x dekara 367 TL katsayı değeri (2026).",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ]
+  },
+  "tutari_min": null,
+  "tutari_max": null,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [],
+  "gerekli_belgeler": [],
+  "basvuru_yeri": "Artık başvuru alınmıyor. Güncel destek için il/ilçe tarım ve orman müdürlüğü (ÇKS kaydı).",
+  "basvuru_suresi": "Kapanmıştır; 2024 üretim yılı ödemesi 18 Nisan 2025'te yapılmıştır.",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "2024 üretim yılında desteği, belirlenen havzalardaki ruhsatlı fındık alanında fındık üreten ve ÇKS ile FKS'ye (Fındık Kayıt Sistemi) kayıtlı çiftçiler alıyordu.",
+    "alinti": "ruhsatlı fındık alanlarında fındık üretimi yapan ÇKS ve FKS’ye kayıtlı çiftçilere FKS’de kayıtlı ruhsatlı fındık alanı büyüklüğü dikkate alınarak fındık alan bazlı gelir desteği ödemesi yapılır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "1 dekarın altındaki ruhsatlı fındık alanlarına ödeme yapılmazdı.",
+    "alinti": "Toplam alanı 1 dekarın altında olan ruhsatlı fındık alanlarına fındık alan bazlı gelir desteği ödemesi yapılmaz.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Dekar başına tutar 2024'te 170 liraydı.",
+    "alinti": "Fındık üreticilerine alan bazlı gelir desteği, belirlenen yerlerde yapılan üretimde dekara 170 lira olarak ödenecek.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6373/Ciftcilere-Bu-Yil-Odenecek-Bitkisel-Uretim-Destekleri-Belli-Oldu",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Son ödeme: 2024 üretim yılı ödemesi 18 Nisan 2025'te yapıldı.",
+    "alinti": "2024 Üretim Yılı Fındık Alan Bazlı Gelir Desteği ödemeleri 18 Nisan 2025 Cuma günü saat 18:00 den itibaren",
+    "kaynak_url": "https://giresun.tarimorman.gov.tr/Duyuru/577/2024-Uretim-Yili-Findik-Alan-Bazli-Gelir-Destegi-Odemeleri-Bugun-Yapiliyor",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Yeni model: çiftçilere temel destek, planlı üretim desteği ve üretimi geliştirme destekleri veriliyor; ayrı fındık alan bazlı gelir desteği listede yok.",
+    "alinti": "Bitkisel üretimin desteklenmesi programıyla çiftçilere temel destek, planlı üretim desteği ve üretimi geliştirme destekleri verilecek.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6375/Bitkisel-Uretimde-Yeni-Destekleme-Modeli-Uygulamada",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Fındık bugün Temel Destek Tablo 1'de 3. kategoride (katsayı 1,5).",
+    "alinti": "3. Kategori Ayçiçeği (yağlık), Fındık, Kolza (kanola), Fasulye (kuru), Soya, Çay 1,5",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: Artık başvuru alınmıyor. Güncel destek için il/ilçe tarım ve orman müdürlüğü (ÇKS kaydı).",
+    "alinti": null,
+    "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6373/Ciftcilere-Bu-Yil-Odenecek-Bitkisel-Uretim-Destekleri-Belli-Oldu",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": false,
+  "durum_notu": "Tur34 2026-10-12: resmî kaynaktan eklendi; durum: Sona erdi. Ayrı fındık alan bazlı gelir desteği 2024 üretim yılına aittir (Tebliğ 2024/31). 2025-2027 Kararı'nın destek listesinde bu ad geçmez; fındık Temel Destek Tablo 1'de 3. kategoridedir.; kanıt docs/olcum/2026-10-12-tur34/kayit/tob-findik-alan-bazli-gelir-destegi-sona-erdi.json + dogrulama.json"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Fındık Temel Desteği — Bitkisel Üretim Temel Destek, 3. kategori (2026 üretim yılı)",
+  "ozet": "ÇKS'ye kayıtlı fındık üreticilerine, kayıtlı tarım arazisi üzerinden dekar başına ödenen Temel Destek. Fındık, Tablo 1'de 3. kategoridedir (destek katsayısı 1,5). Dekar başı tutar = katsayı x destek katsayı değeri; değer 2026 üretim yılı için dekara 367 TL, 2027 için 442 TL'dir. Katsayı değeri mazot ve gübre maliyeti baz alınarak belirlenir. Fındık üretimine izin verilen ilçeler dışındaki parsellere ödenmez. Temel destek için ayrı başvuru dilekçesi alınmaz. Ayrı 'fındık alan bazlı gelir desteği' 2025-2027 modelinde yoktur (ayrı kayda bakın).",
+  "detay": "ÇKS'ye kayıtlı fındık üreticilerine, kayıtlı tarım arazisi üzerinden dekar başına ödenen Temel Destek. Fındık, Tablo 1'de 3. kategoridedir (destek katsayısı 1,5). Dekar başı tutar = katsayı x destek katsayı değeri; değer 2026 üretim yılı için dekara 367 TL, 2027 için 442 TL'dir. Katsayı değeri mazot ve gübre maliyeti baz alınarak belirlenir. Fındık üretimine izin verilen ilçeler dışındaki parsellere ödenmez. Temel destek için ayrı başvuru dilekçesi alınmaz. Ayrı 'fındık alan bazlı gelir desteği' 2025-2027 modelinde yoktur (ayrı kayda bakın).\n\nResmî kaynaktan alıntılar:\n- 3. Kategori Ayçiçeği (yağlık), Fındık, Kolza (kanola), Fasulye (kuru), Soya, Çay 1,5\n- 2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir\n- Temel, planlı üretim ve üretimi geliştirme destekleme tutarı, destek katsayı değeri ile destek katsayısının çarpımı sonucu elde edilir.\n- Fındık Alanlarının Tespitine Dair Karar kapsamında fındık üretimine izin verilen ilçeler dışında fındık üretilen parseller için temel ve üretimi geliştirme desteği ödemesi yapılmaz.\n- İlgili üretim yılında ÇKS’ye kayıtlı olan çiftçiler temel, planlı üretim ve üretimi geliştirme desteği içinde yer alan katı organik -organomineral güb re desteğine başvurmuş sayılır, ayrıca başvuru dilekçesi alınmaz.",
+  "hedef_kitle": null,
+  "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#findik-temel-destek",
+  "kategori": null,
+  "baslama_tarihi": null,
+  "bitis_tarihi": null,
+  "tesvil_tutari": "Dekar başına: 1,5 (fındığın destek katsayısı) x destek katsayı değeri; değer 2026 üretim yılı için dekara 367 TL, 2027 için 442 TL. Birim destek tutarları ve katsayı değeri her yıl yeniden değerlendirilir.",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ]
+  },
+  "tutari_min": null,
+  "tutari_max": null,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [
+   "İlgili üretim yılında Bakanlığın kayıt sistemine (ÇKS) kayıtlı olmak gerekir.",
+   "Fındık Alanlarının Tespitine Dair Karar'a göre fındık üretimine izin verilen ilçeler dışında fındık üretilen parsellere temel ve üretimi geliştirme desteği ödenmez."
+  ],
+  "gerekli_belgeler": [],
+  "basvuru_yeri": "Kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (ÇKS kaydı). Ödeme T.C. Ziraat Bankası hesabına yapılır.",
+  "basvuru_suresi": "Temel destek için ayrı başvuru yoktur; ilgili üretim yılında ÇKS'ye kayıtlı olmak gerekir (kayıt takvimi için il/ilçe müdürlüğüne bakın).",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "İlgili üretim yılında Bakanlığın kayıt sistemine (ÇKS) kayıtlı olmak gerekir.",
+    "alinti": "Bitkisel üretimin desteklenmesi kapsamında yer alan desteklemelerden yararlanmak için ilgili üretim yılında Tarım ve Orman Bakanlığı ( Bakanlık) tarafından belirlenen kayıt sistemlerine kayıtlı olma şartı aranır.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Temel destek için ayrı dilekçe verilmez; ÇKS'ye kayıtlı çiftçi başvurmuş sayılır.",
+    "alinti": "İlgili üretim yılında ÇKS’ye kayıtlı olan çiftçiler temel, planlı üretim ve üretimi geliştirme desteği içinde yer alan katı organik -organomineral güb re desteğine başvurmuş sayılır, ayrıca başvuru dilekçesi alınmaz.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Fındık, Temel Destek Tablo 1'de 3. kategoridedir: destek katsayısı 1,5.",
+    "alinti": "3. Kategori Ayçiçeği (yağlık), Fındık, Kolza (kanola), Fasulye (kuru), Soya, Çay 1,5",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Hesap: destek katsayı değeri ile destek katsayısı çarpılır.",
+    "alinti": "Temel, planlı üretim ve üretimi geliştirme destekleme tutarı, destek katsayı değeri ile destek katsayısının çarpımı sonucu elde edilir.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Destek katsayı değeri: 2026 üretim yılı için dekara 367 TL, 2027 için 442 TL.",
+    "alinti": "2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Katsayı değeri mazot ve gübre maliyeti baz alınarak belirlenir (mazot-gübre desteği temel desteğe dahil edilmiştir).",
+    "alinti": "Destek katsayı değeri: Temel, planlı üretim ve üretimi geliştirme destekleri için tarımsal üretimde kullanılan mazot ve gübre maliyeti baz alınarak belirlenen tutarı,",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Fındık Alanlarının Tespitine Dair Karar'a göre fındık üretimine izin verilen ilçeler dışında fındık üretilen parsellere temel ve üretimi geliştirme desteği ödenmez.",
+    "alinti": "Fındık Alanlarının Tespitine Dair Karar kapsamında fındık üretimine izin verilen ilçeler dışında fındık üretilen parseller için temel ve üretimi geliştirme desteği ödemesi yapılmaz.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı arazide aynı yıl birden fazla ürün varsa yalnız biri için, tutarı yüksek olan üretim esas alınarak ödeme yapılır.",
+    "alinti": "Bir üretim yılında aynı arazi üzerinde birden fazla ürün/üretim olması durumunda, sadece biri için ödeme yapılır. Destekleme ödemesinde, hesaplanan tutarı yüksek olan ürün/üretim esas alınır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Planlamaya aykırı yeni kurulan meyve bahçelerine temel destek ödenmez.",
+    "alinti": "Tarımsal Üretimin Planlanması Hakkında Yönetmeliğe aykırı olarak yeni tesis edilen meyve bahçelerine temel ve üretimi geliştirme desteği ödemesi yapılmaz.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Tablo 1'de adı geçmeyen ürünler 'diğer ürünler' sayılır (1. kategori, katsayı 1,0). Planlama kapsamındaki ürünler listesinde çilek yoktur; açıkta çilek bu grupta değerlendirilir.",
+    "alinti": "Tablo 1’de isimleri yer almayan ürünler diğer ürünler olarak değerlendirilir.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "'Diğer ürünler' 1. kategoridedir ve katsayısı 1,0'dır.",
+    "alinti": "1. Kategori Aspir, Mercimek, Nohut, Patates, Soğan (kuru), Birinci grup yem bitkileri, Diğer ürünler 1,0",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Planlama kapsamındaki ürünler: arpa, aspir, ayçiçeği, buğday, kolza, kuru fasulye, mercimek, dane mısır, nohut, pamuk, patates, kuru soğan, soya ve yem bitkileri.",
+    "alinti": "arpa, aspir, ayçiçeği (yağlık), buğday, kolza (kanola), fasulye (kuru), mercimek, mısır (dane), nohut, pamuk (kütlü), patates, soğan (kuru), soya ve yem bitkileri planlama kapsamına alınmıştır.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Kapalı ortamda üretim yapan kadın veya 41 yaşından gün almamış çiftçilere kapalı ortam alanı için 3 katsayısıyla ilave temel destek ödenir.",
+    "alinti": "Kapalı ortam bitkise l üretim ünitelerinde üretim yapan kadın veya son takvim gününde 41 yaşından gün almamış çiftçilere, kapalı ortam bitkisel üretim alanı üzerinden 3 katsayısı ile ilave temel destek ödemesi yapılır.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Destek tutarları ve katsayı değeri her yıl bütçe imkânları dahilinde yeniden değerlendirilir.",
+    "alinti": "Orta Vadeli Program hedefleri dikkate alınarak bütçe imkânları dâhilinde her yıl yeniden değerlendirilir.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: Kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (ÇKS kaydı). Ödeme T.C. Ziraat Bankası hesabına yapılır.",
+    "alinti": null,
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#findik-temel-destek",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": true,
+  "durum_notu": "Tur34 2026-10-12: resmî kaynaktan eklendi; durum: Yürürlükte. 2025-2027 Kararı'nın güncel (değişiklikler işlenmiş) metninde 2026 ve 2027 katsayı değerleri bu şekilde yer alıyor.; kanıt docs/olcum/2026-10-12-tur34/kayit/tob-findik-temel-destek-2026.json + dogrulama.json"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı)",
+  "ozet": "İyi tarım uygulamaları yapan ve yetkilendirilmiş bir kuruluştan bireysel ya da grup iyi tarım sertifikası alan çiftçilere, ÇKS/ÖKS/KOBÜKS'de kayıtlı alan üzerinden dekar başına verilen üretimi geliştirme desteğidir. Tutar = Tablo 8'deki katsayı x destek katsayı değeri (2026 üretim yılı için dekara 367 TL). Birinci grup ürünlerde açıkta üretimde bireysel sertifika katsayısı 0,7, grup sertifikası 0,35; örtüaltı/kapalı ortamda 1,7 ve 0,85. İkinci grupta 0,6 ve 0,3; üçüncü grupta 0,4 ve 0,2. Ürününüzün hangi gruba girdiğini il/ilçe tarım ve orman müdürlüğünden öğrenin. Başvuru dilekçeyle yapılır.",
+  "detay": "İyi tarım uygulamaları yapan ve yetkilendirilmiş bir kuruluştan bireysel ya da grup iyi tarım sertifikası alan çiftçilere, ÇKS/ÖKS/KOBÜKS'de kayıtlı alan üzerinden dekar başına verilen üretimi geliştirme desteğidir. Tutar = Tablo 8'deki katsayı x destek katsayı değeri (2026 üretim yılı için dekara 367 TL). Birinci grup ürünlerde açıkta üretimde bireysel sertifika katsayısı 0,7, grup sertifikası 0,35; örtüaltı/kapalı ortamda 1,7 ve 0,85. İkinci grupta 0,6 ve 0,3; üçüncü grupta 0,4 ve 0,2. Ürününüzün hangi gruba girdiğini il/ilçe tarım ve orman müdürlüğünden öğrenin. Başvuru dilekçeyle yapılır.\n\nResmî kaynaktan alıntılar:\n- Örtüaltı/Kapalı ortamda bitkisel üretim Bireysel 1,7 Grup 0,85 Açıkta üretim Bireysel 0,7 Grup 0,35 2 İkinci grup ürünler Bireysel 0,6 Grup 0,3 3 Üçüncü grup ürünler Bireysel 0,4 Grup 0,2\n- 2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir\n- Çiftçiler, ilgili üretim yılının 1 Ocak ile 31 Aralık tarihleri arasında düzenlenen İTU Sertifikasını ve EK -6’da yer alan İTU Destekleme Ödemesi Sertifika Eki’ni, il/ilçe müdürlüğüne EK-2’de yer alan Destekleme Uygulama Takvimine göre teslim ederler.\n- sertifikalı/standart fidan kullanım, iyi tarım uygulamaları ve organik tarım desteği için ÇKS ve/veya ÖKS/KOBÜKS’de kayıtlı oldukları il/ilçe müdürlüklerine EK-3’te yer alan Destekleme Ödemesi Başvuru Dilekçesi ile şahsen veya yasal temsilcisi aracılığıyla başvuruda bulunurlar.",
+  "hedef_kitle": null,
+  "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#iyi-tarim",
+  "kategori": null,
+  "baslama_tarihi": null,
+  "bitis_tarihi": null,
+  "tesvil_tutari": "Dekar başına katsayı x destek katsayı değeri (2026: 367 TL, 2027: 442 TL). Katsayılar: açıkta birinci grup bireysel 0,7 / grup 0,35; örtüaltı birinci grup bireysel 1,7 / grup 0,85; ikinci grup 0,6 / 0,3; üçüncü grup 0,4 / 0,2.",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ]
+  },
+  "tutari_min": null,
+  "tutari_max": null,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [
+   "Yetkilendirilmiş bir kuruluştan ilgili üretim yılında, bireysel veya grup sertifikasyonuna göre düzenlenmiş iyi tarım uygulamaları sertifikası alınmalı.",
+   "Destek, ÇKS/ÖKS/KOBÜKS'de kayıtlı ürünler ve kayıtlı toplam alanı geçmemek üzere verilir; sertifika Tablo 8'deki ürün grubuna göre hesaplanır.",
+   "Fındık için: fındık üretimine izin verilen ilçeler dışındaki parsellere temel ve üretimi geliştirme desteği ödenmez."
+  ],
+  "gerekli_belgeler": [
+   "İlgili yıl 1 Ocak-31 Aralık arasında düzenlenmiş İTU sertifikası ve İTU Destekleme Ödemesi Sertifika Eki, Destekleme Uygulama Takvimi'ne göre il/ilçe müdürlüğüne teslim edilir."
+  ],
+  "basvuru_yeri": "ÇKS/ÖKS/KOBÜKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (Destekleme Ödemesi Başvuru Dilekçesi); sertifika için Bakanlıkça yetkilendirilmiş kontrol/sertifikasyon kuruluşu.",
+  "basvuru_suresi": "Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez. Sertifika ilgili üretim yılının 1 Ocak-31 Aralık tarihleri arasında düzenlenmiş olmalıdır.",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Yetkilendirilmiş bir kuruluştan ilgili üretim yılında, bireysel veya grup sertifikasyonuna göre düzenlenmiş iyi tarım uygulamaları sertifikası alınmalı.",
+    "alinti": "İyi tarım uygulamaları yapan ve yetkilendirilmiş kuruluşlarca ilgili üretim yılında bireysel veya grup sertifikasyonu seçeneğine göre düzenlenmiş iyi tarım uygulamaları sertifikasına sahip olan çiftçilere",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Destek, ÇKS/ÖKS/KOBÜKS'de kayıtlı ürünler ve kayıtlı toplam alanı geçmemek üzere verilir; sertifika Tablo 8'deki ürün grubuna göre hesaplanır.",
+    "alinti": "İlgili üretim yılında EK -1’de yer alan ÇKS/ÖKS/ KOBÜKS’de kayıtlı ürünlere, Kararda Tablo 8’de belirtilen ürün gruplarına karşılık gelen destek katsayısına göre hesaplanan tutar üzerinden;",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Yetkilendirilmiş kuruluş: organik tarım veya iyi tarım kapsamında kontrol/sertifikasyon yapmak üzere Bakanlıkça yetki verilen kişi ve kuruluşlardır.",
+    "alinti": "Yetkilendirilmiş kuruluş: Organik tarım veya İTU kapsamı nda kontrol ve/veya sertifikasyon kuruluşu olarak Bakanlık tarafından yetki verilmiş gerçek veya tüzel kişileri,",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Tablo 8 katsayıları: açıkta/örtüaltı ve bireysel/grup sertifikaya göre.",
+    "alinti": "Örtüaltı/Kapalı ortamda bitkisel üretim Bireysel 1,7 Grup 0,85 Açıkta üretim Bireysel 0,7 Grup 0,35 2 İkinci grup ürünler Bireysel 0,6 Grup 0,3 3 Üçüncü grup ürünler Bireysel 0,4 Grup 0,2",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Tutar = katsayı x destek katsayı değeri: 2026 üretim yılı için dekara 367 TL, 2027 için 442 TL.",
+    "alinti": "2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuru, kayıtlı olduğunuz il/ilçe müdürlüğüne Destekleme Ödemesi Başvuru Dilekçesi ile şahsen veya yasal temsilci aracılığıyla yapılır.",
+    "alinti": "sertifikalı/standart fidan kullanım, iyi tarım uygulamaları ve organik tarım desteği için ÇKS ve/veya ÖKS/KOBÜKS’de kayıtlı oldukları il/ilçe müdürlüklerine EK-3’te yer alan Destekleme Ödemesi Başvuru Dilekçesi ile şahsen veya yasal temsilcisi aracılığıyla başvuruda bulunurlar.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "belge",
+    "metin": "İlgili yıl 1 Ocak-31 Aralık arasında düzenlenmiş İTU sertifikası ve İTU Destekleme Ödemesi Sertifika Eki, Destekleme Uygulama Takvimi'ne göre il/ilçe müdürlüğüne teslim edilir.",
+    "alinti": "Çiftçiler, ilgili üretim yılının 1 Ocak ile 31 Aralık tarihleri arasında düzenlenen İTU Sertifikasını ve EK -6’da yer alan İTU Destekleme Ödemesi Sertifika Eki’ni, il/ilçe müdürlüğüne EK-2’de yer alan Destekleme Uygulama Takvimine göre teslim ederler.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Belge teslim bitiş tarihi sona eren desteklemeler için müracaat yapılamaz.",
+    "alinti": "Belge teslim bitiş tarihi sona eren desteklemeler için müracaatta bulunulamaz.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı arazide aynı yıl birden fazla ürün/üretim varsa yalnız biri için, tutarı yüksek olan üretim esas alınarak ödeme yapılır.",
+    "alinti": "Bir üretim yılında aynı arazi üzerinde birden fazla ürün/üretim olması durumunda, sadece biri için ödeme yapılır. Destekleme ödemesinde, hesaplanan tutarı yüksek olan ürün/üretim esas alınır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Ormandan tahsisli arazilerde yapılan üretimlere iyi tarım uygulamaları desteği ödenmez.",
+    "alinti": "Ormandan tahsisli arazilerde yapılan üretimlere üretimi geliştirme desteği kapsamında yer alan organik tarım desteği ve iyi tarım uygulamaları desteği ödenmez.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Fındık için: fındık üretimine izin verilen ilçeler dışındaki parsellere temel ve üretimi geliştirme desteği ödenmez.",
+    "alinti": "Fındık Alanlarının Tespitine Dair Karar kapsamında fındık üretimine izin verilen ilçeler dışında fındık üretilen parseller için temel ve üretimi geliştirme desteği ödemesi yapılmaz.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: ÇKS/ÖKS/KOBÜKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (Destekleme Ödemesi Başvuru Dilekçesi); sertifika için Bakanlıkça yetkilendirilmiş kontrol/sertifikasyon kuruluşu.",
+    "alinti": null,
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#iyi-tarim",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": true,
+  "durum_notu": "Tur34 2026-10-12: resmî kaynaktan eklendi; durum: Yürürlükte: 2025-2027 Kararı'nda üretimi geliştirme desteği olarak sürmektedir; 2026 katsayı değeri güncel metinde 367 TL'dir.; kanıt docs/olcum/2026-10-12-tur34/kayit/tob-iyi-tarim-uygulamalari-destegi-2026.json + dogrulama.json"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Katı Organik-Organomineral Gübre Desteği (2026 üretim yılı)",
+  "ozet": "Temel destekten yararlanma hakkı olan çiftçilere, Bakanlıktan tescil belgeli katı organik-organomineral gübre, katı organik toprak düzenleyici, kaplama gübre veya fermantasyonla elde edilen organik gübre kullandıkları için tarım arazisiyle orantılı olarak verilen destektir. Tutar = 0,32 katsayısı x destek katsayı değeri (2026 için dekara 367 TL). ÇKS'ye kayıtlı çiftçi ayrı dilekçe vermeden başvurmuş sayılır; istemeyenler bildirir. Asgari kullanım miktarları vardır (ör. katı organik ürünlerde dekara 150 kg).",
+  "detay": "Temel destekten yararlanma hakkı olan çiftçilere, Bakanlıktan tescil belgeli katı organik-organomineral gübre, katı organik toprak düzenleyici, kaplama gübre veya fermantasyonla elde edilen organik gübre kullandıkları için tarım arazisiyle orantılı olarak verilen destektir. Tutar = 0,32 katsayısı x destek katsayı değeri (2026 için dekara 367 TL). ÇKS'ye kayıtlı çiftçi ayrı dilekçe vermeden başvurmuş sayılır; istemeyenler bildirir. Asgari kullanım miktarları vardır (ör. katı organik ürünlerde dekara 150 kg).\n\nResmî kaynaktan alıntılar:\n- gübre kullanan çiftçilere 0,32 destek katsayısı ile katsayı değerinin çarpılması sonucu hesaplanan tutar üzerinden destek ödenir.\n- Asgari kullanım miktarı; katı organik ürünler için 150 kg/da, katı organik toprak düzenleyici ürünler için 100 kg/da, katı organomineral ürünler ve kaplama gübre için 20 kg/da ve fermantasyon sonucu elde edilen organik gübre için 150 kg/da olmalıdır.\n- İlgili üretim yılında ÇKS’ye kayıtlı olan çiftçiler temel, planlı üretim ve üretimi geliştirme desteği içinde yer alan katı organik -organomineral güb re desteğine başvurmuş sayılır, ayrıca başvuru dilekçesi alınmaz.\n- 2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+  "hedef_kitle": null,
+  "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#organomineral-gubre",
+  "kategori": null,
+  "baslama_tarihi": null,
+  "bitis_tarihi": null,
+  "tesvil_tutari": "Dekar başına 0,32 x destek katsayı değeri (2026: 367 TL, 2027: 442 TL).",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ]
+  },
+  "tutari_min": null,
+  "tutari_max": null,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [
+   "O üretim yılında temel destekten yararlanma hakkı olan çiftçilere, tarım arazisiyle orantılı olarak ödenir.",
+   "Gübre, Bakanlıktan tescil belgeli olmalı ve Gübre Takip Sistemi'nde (GTS) bir önceki yılın 1 Eylül'ü ile ilgili yılın 31 Ağustos'u arasında satış kaydı bulunmalı.",
+   "Asgari kullanım miktarı: katı organik ürünlerde 150 kg/da, organik toprak düzenleyicilerde 100 kg/da, organomineral ve kaplama gübrede 20 kg/da, fermantasyonla elde edilen organik gübrede 150 kg/da.",
+   "Fındıkta: fındık üretimine izin verilen ilçeler dışındaki parsellere temel ve üretimi geliştirme desteği ödenmez."
+  ],
+  "gerekli_belgeler": [],
+  "basvuru_yeri": "ÇKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü; ayrı dilekçe gerekmez.",
+  "basvuru_suresi": "Ayrı başvuru yoktur; desteği istemeyenler talebini askı süresi bitimine kadar yazılı bildirir.",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Katsayı 0,32: katı organik-organomineral gübre kullanan çiftçilere katsayı değeriyle çarpılarak ödenir.",
+    "alinti": "gübre kullanan çiftçilere 0,32 destek katsayısı ile katsayı değerinin çarpılması sonucu hesaplanan tutar üzerinden destek ödenir.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "O üretim yılında temel destekten yararlanma hakkı olan çiftçilere, tarım arazisiyle orantılı olarak ödenir.",
+    "alinti": "ilgili üretim yılında temel destekten yararlanma hakkı bulunan çiftçil ere tarım arazisi ile orantılı olarak",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Gübre, Bakanlıktan tescil belgeli olmalı ve Gübre Takip Sistemi'nde (GTS) bir önceki yılın 1 Eylül'ü ile ilgili yılın 31 Ağustos'u arasında satış kaydı bulunmalı.",
+    "alinti": "GTS’de ilgili üretim yılı için bir önceki yılın 1 Eylül tarihi ile ilgili yılın 31 Ağustos tarihleri arasında satış kaydı",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Asgari kullanım miktarı: katı organik ürünlerde 150 kg/da, organik toprak düzenleyicilerde 100 kg/da, organomineral ve kaplama gübrede 20 kg/da, fermantasyonla elde edilen organik gübrede 150 kg/da.",
+    "alinti": "Asgari kullanım miktarı; katı organik ürünler için 150 kg/da, katı organik toprak düzenleyici ürünler için 100 kg/da, katı organomineral ürünler ve kaplama gübre için 20 kg/da ve fermantasyon sonucu elde edilen organik gübre için 150 kg/da olmalıdır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "ÇKS'ye kayıtlı çiftçi bu desteğe başvurmuş sayılır; ayrıca başvuru dilekçesi alınmaz.",
+    "alinti": "İlgili üretim yılında ÇKS’ye kayıtlı olan çiftçiler temel, planlı üretim ve üretimi geliştirme desteği içinde yer alan katı organik -organomineral güb re desteğine başvurmuş sayılır, ayrıca başvuru dilekçesi alınmaz.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Desteği istemeyen çiftçi, bunu il/ilçe müdürlüğüne askı süresi bitimine kadar yazılı bildirir.",
+    "alinti": "yararlanmak istemeyen çiftçiler, bu taleplerini il/ilçe müdürlüklerine askı süresi bitimine kadar yazılı olarak bildirirler.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Fındıkta: fındık üretimine izin verilen ilçeler dışındaki parsellere temel ve üretimi geliştirme desteği ödenmez.",
+    "alinti": "Fındık Alanlarının Tespitine Dair Karar kapsamında fındık üretimine izin verilen ilçeler dışında fındık üretilen parseller için temel ve üretimi geliştirme desteği ödemesi yapılmaz.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Destek katsayı değeri: 2026 üretim yılı için dekara 367 TL, 2027 için 442 TL.",
+    "alinti": "2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: ÇKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü; ayrı dilekçe gerekmez.",
+    "alinti": null,
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#organomineral-gubre",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": true,
+  "durum_notu": "Tur34 2026-10-12: resmî kaynaktan eklendi; durum: Yürürlükte: 2025-2027 Kararı'nda üretimi geliştirme desteği olarak sürmektedir; 2026 katsayı değeri güncel metinde 367 TL'dir.; kanıt docs/olcum/2026-10-12-tur34/kayit/tob-kati-organik-organomineral-gubre-destegi-2026.json + dogrulama.json"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Küçük Aile İşletmesi Desteği (5 dekar ve altı meyve-sebze üreticileri; yalnız 2024 üretim yılı)",
+  "ozet": "Toplam tarımsal alanı 5 dekar veya altında olan, ÇKS'ye kayıtlı gerçek kişi çiftçilerin açıkta ya da örtüaltında meyve, sebze, süs bitkisi, tıbbi ve aromatik bitki yetiştirmesi halinde 2024 üretim yılında dekara 200 lira ödenen destekti (yaş çay ve fındık hariç). 2025-2027 destek modelinde ayrı bir 'küçük aile işletmesi' desteği yoktur; küçük arazili üreticiler Temel Destek'ten yararlanır.",
+  "detay": "Toplam tarımsal alanı 5 dekar veya altında olan, ÇKS'ye kayıtlı gerçek kişi çiftçilerin açıkta ya da örtüaltında meyve, sebze, süs bitkisi, tıbbi ve aromatik bitki yetiştirmesi halinde 2024 üretim yılında dekara 200 lira ödenen destekti (yaş çay ve fındık hariç). 2025-2027 destek modelinde ayrı bir 'küçük aile işletmesi' desteği yoktur; küçük arazili üreticiler Temel Destek'ten yararlanır.\n\nResmî kaynaktan alıntılar:\n- Küçük aile işletmelerinin desteklenmesi uygulamalarında dekara 200 lira ödenecek.\n- ÇKS’ye kayıtlı ve tarımsal faaliyete konu alan toplamı 5 dekar veya altında olan, yaş çay ve fındık ürünleri hariç,",
+  "hedef_kitle": null,
+  "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf",
+  "kategori": null,
+  "baslama_tarihi": null,
+  "bitis_tarihi": null,
+  "tesvil_tutari": "2024 üretim yılı için dekara 200 lira (artık ödenmiyor).",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ],
+   "sirket_turleri": [
+    "sahis"
+   ]
+  },
+  "tutari_min": null,
+  "tutari_max": null,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [
+   "Eski şart: ÇKS'ye kayıtlı, toplam tarımsal alanı 5 dekar veya altı, yaş çay ve fındık hariç ürün yetiştiren gerçek kişi çiftçi olmak."
+  ],
+  "gerekli_belgeler": [],
+  "basvuru_yeri": "Artık başvuru alınmıyor.",
+  "basvuru_suresi": "Kapanmıştır (2024 üretim yılı).",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Eski şart: ÇKS'ye kayıtlı, toplam tarımsal alanı 5 dekar veya altı, yaş çay ve fındık hariç ürün yetiştiren gerçek kişi çiftçi olmak.",
+    "alinti": "ÇKS’ye kayıtlı ve tarımsal faaliyete konu alan toplamı 5 dekar veya altında olan, yaş çay ve fındık ürünleri hariç,",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Kapsam: meyve, sebze, süs bitkisi, tıbbi ve aromatik bitki; destek 2024 üretim yılı içindi.",
+    "alinti": "meyve, sebze, süs bitkisi ile tıbbi ve aromatik bitki yetiştiriciliği yapan gerçek kişi çiftçilere, 2024 üretim yılında küçük aile işletmesi desteği ödemesi yapılır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Açıkta 1 dekarın altındaki işletmelere ödeme yapılmazdı.",
+    "alinti": "açıkta üretim için 1 dekarın, örtüaltı/kapalı ortamda bitkisel üretim ünitelerinde üretim için 0,5 dekarın altında olan işletmelere küçük aile işletmesi desteği ödemesi yapılmaz.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Tutar: dekara 200 lira.",
+    "alinti": "Küçük aile işletmelerinin desteklenmesi uygulamalarında dekara 200 lira ödenecek.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6373/Ciftcilere-Bu-Yil-Odenecek-Bitkisel-Uretim-Destekleri-Belli-Oldu",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bugün geçerli model: temel destek, planlı üretim ve üretimi geliştirme destekleri.",
+    "alinti": "Bitkisel üretimin desteklenmesi programıyla çiftçilere temel destek, planlı üretim desteği ve üretimi geliştirme destekleri verilecek.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6375/Bitkisel-Uretimde-Yeni-Destekleme-Modeli-Uygulamada",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: Artık başvuru alınmıyor.",
+    "alinti": null,
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024_31.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": false,
+  "durum_notu": "Tur34 2026-10-12: resmî kaynaktan eklendi; durum: Sona erdi. Destek Tebliğ 2024/31'de '2024 üretim yılında' ile sınırlıdır; 2025-2027 modelinde destek kalemleri temel destek, planlı üretim ve üretimi geliştirme olarak sayılmıştır, bu destek listede yoktur.; kanıt docs/olcum/2026-10-12-tur34/kayit/tob-kucuk-aile-isletmesi-destegi-2024-sona-erdi.json + dogrulama.json"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil)",
+  "ozet": "ÇKS'ye kayıtlı üreticilerin (ve ürünlerini ÇKS'li üreticilerden alan üretici örgütlerinin) ürünlerini lisanslı depoya ilk teslim etmeleri halinde, depo kira ücretinin Ticaret Bakanlığı kira ücret tarifesinin %75'i oranında, en fazla altı ay süreyle desteklenmesidir. Desteklenen ürünler arasında fındık vardır. Karar 2025, 2026 ve 2027 üretim yıllarının ürünlerini kapsar.",
+  "detay": "ÇKS'ye kayıtlı üreticilerin (ve ürünlerini ÇKS'li üreticilerden alan üretici örgütlerinin) ürünlerini lisanslı depoya ilk teslim etmeleri halinde, depo kira ücretinin Ticaret Bakanlığı kira ücret tarifesinin %75'i oranında, en fazla altı ay süreyle desteklenmesidir. Desteklenen ürünler arasında fındık vardır. Karar 2025, 2026 ve 2027 üretim yıllarının ürünlerini kapsar.\n\nResmî kaynaktan alıntılar:\n- Ticaret Bakanlığı tarafından belirlenen kira ücret tarifesinin %75’i oranında\n- Ayçiçeği 4 Pamuk 5 Fındık 6 Antepfıstığı\n- Kira desteklemesi ilgili üretim yılında en fazla altı ay süre ile EK -23’de belirtilen ürünler ve mikt arlarda üretici/üretici örgütlerine ödenir.\n- işletmelerinde muhafaza ettikleri 2025, 2026 ve 2027 üretim yıllarına ait ürünler için en fazla altı ay süre ile kira desteği ödenir.",
+  "hedef_kitle": null,
+  "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#lisansli-depo-kira",
+  "kategori": null,
+  "baslama_tarihi": null,
+  "bitis_tarihi": null,
+  "tesvil_tutari": "Ticaret Bakanlığının belirlediği kira ücret tarifesinin %75'i oranında; ürün başına en fazla altı ay (miktar sınırları Tebliğ EK-23'tedir).",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ],
+   "urun_listesi": [
+    "buğday",
+    "arpa",
+    "yulaf",
+    "çavdar",
+    "mısır",
+    "çeltik",
+    "pirinç",
+    "mercimek",
+    "nohut",
+    "fasulye",
+    "soya",
+    "ayçiçeği",
+    "pamuk",
+    "fındık",
+    "antepfıstığı",
+    "kayısı",
+    "üzüm",
+    "zeytin"
+   ]
+  },
+  "tutari_min": null,
+  "tutari_max": null,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [
+   "Ürünü lisanslı depoya ilk teslim eden üretici/üretici örgütü olmalı.",
+   "Ürün cinsi ve miktarı ÇKS'deki üretim bilgileriyle uyumlu olmalı."
+  ],
+  "gerekli_belgeler": [
+   "Depo kira ücreti faturası (lisanslı depo işletmesince üretici adına düzenlenmiş; ürün adı, miktarı, depoya giriş tarihi ve gün sayısı yazılı)."
+  ],
+  "basvuru_yeri": "ÇKS'ye kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü.",
+  "basvuru_suresi": "Ürün, depolama döneminin başlangıç tarihi ile ilgili yılın 31 Aralık'ı arasında lisanslı depoya girmiş olmalıdır; başvuru belge teslim bitiş tarihine göredir.",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Lisanslı depolarda muhafaza edilen, Tablo 10'da sayılan ürünler (fındık dahil) için kira desteği ödenir.",
+    "alinti": "Tarımsal ürünlerin, 10/2/2005 tarihli ve 5300 sayılı Tarım Ürünleri Lisanslı Depoculuk Kanunu çerçevesinde lisans alarak faaliyet gösteren depolarda muhafaza edilmesi halinde, Tablo 10’da belirtilen ürünler için kira desteği ödenir.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Fındık, desteklenen ürünler listesindedir.",
+    "alinti": "Ayçiçeği 4 Pamuk 5 Fındık 6 Antepfıstığı",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Destek tutarı: Ticaret Bakanlığı kira ücret tarifesinin %75'i.",
+    "alinti": "Ticaret Bakanlığı tarafından belirlenen kira ücret tarifesinin %75’i oranında",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Ürünü lisanslı depoya ilk teslim eden üretici/üretici örgütü olmalı.",
+    "alinti": "ürünlerini lisanslı depolara ilk teslim eden olmaları halinde EK -23’de yer alan miktarlarda kira desteği verilir.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Kira desteği ilgili üretim yılında en fazla altı ay süreyle ödenir.",
+    "alinti": "Kira desteklemesi ilgili üretim yılında en fazla altı ay süre ile EK -23’de belirtilen ürünler ve mikt arlarda üretici/üretici örgütlerine ödenir.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Ürün, depolama döneminin başlangıç tarihi ile 31 Aralık arasında depoya girmiş, en az bir gün depolanmış ve ELÜS İhraç Formu doğrulanmış olmalı.",
+    "alinti": "mevcut üretim yılına ait ürünlerin EK-25’de yer alan depolama döneminin başlangıç tarihi ile ilgili yılın son günü (31 Aralık) arasında lisanslı depoya girmiş olması, en az bir gün depolanması ve TBS üzerinden ELÜS İhraç Formu doğruluğunun sağlanması şartı aranır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Ürün cinsi ve miktarı ÇKS'deki üretim bilgileriyle uyumlu olmalı.",
+    "alinti": "Kira ücreti desteklemesine tabi ürün cinsi ve miktarı ÇKS’ye kayıtlı üretim bilgileri ile uyumlu olmak zorundadır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "belge",
+    "metin": "Depo kira ücreti faturası (lisanslı depo işletmesince üretici adına düzenlenmiş; ürün adı, miktarı, depoya giriş tarihi ve gün sayısı yazılı).",
+    "alinti": "Lisanslı depo işletmesince üretici/ üretici örgütü adına düzenlenmiş olan ve üzerinde isim/unvan, TC Kimlik/Vergi Numarası, fatura düzenlenme tarihi, ürün adı, ürün miktarı, ürünün depoya giriş tarihi",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Kira bedeli, ilgili üretim yılının 1 Mayıs tarihinde geçerli Ticaret Bakanlığı tarife fiyatlarına göre hesaplanır.",
+    "alinti": "Kira destekleme ücretlerinin belirlenmesinde, Ticaret Bakanlığı tarafından yayımlanan kira ücreti fiyatlarının ilgili üretim yılının 1 Mayıs tarihinde geçerli olan tarife fiyatları dikkate alınır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karar 2025, 2026 ve 2027 üretim yıllarının ürünleri için en fazla altı ay kira desteği öngörür.",
+    "alinti": "işletmelerinde muhafaza ettikleri 2025, 2026 ve 2027 üretim yıllarına ait ürünler için en fazla altı ay süre ile kira desteği ödenir.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: ÇKS'ye kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü.",
+    "alinti": null,
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#lisansli-depo-kira",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": true,
+  "durum_notu": "Tur34 2026-10-12: resmî kaynaktan eklendi; durum: Yürürlükte: Karar'da 2025, 2026 ve 2027 üretim yıllarına ait ürünler için en fazla altı ay süreyle kira desteği ödenir.; kanıt docs/olcum/2026-10-12-tur34/kayit/tob-lisansli-depo-kira-destegi-findik.json + dogrulama.json | Tur35 2026-10-12: uygunluk_kriterleri güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi)"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Sertifikalı/Standart Fidan Kullanım Desteği — yeni meyve bahçesi/bağ tesisi, fındık dahil (2026 üretim yılı)",
+  "ozet": "Yurt içinde üretilmiş sertifikalı ve/veya standart fidan kullanarak, yönetmeliğe uygun şekilde yeni meyve bahçesi tesis eden çiftçilere dekar başına verilen destek. Tablo 6'daki türler arasında fındık vardır (standart fidan katsayısı 2, sertifikalı fidan katsayısı 5). Tutar = katsayı x destek katsayı değeri (2026 için dekara 367 TL). Fındıkta tek parsel veya bitişik parsellerin toplamı en az 3 dekar olmalıdır; birçok meyve türünde en az 5 dekar. Çilek bu fidan tablosunda yer almaz (2024'te sertifikalı çilek fidesine ayrı destek vardı). Karara göre ödemeye bütçe imkânları dahilinde ilgili yılda başlanır; ödeme takvimini il/ilçe müdürlüğünden teyit edin.",
+  "detay": "Yurt içinde üretilmiş sertifikalı ve/veya standart fidan kullanarak, yönetmeliğe uygun şekilde yeni meyve bahçesi tesis eden çiftçilere dekar başına verilen destek. Tablo 6'daki türler arasında fındık vardır (standart fidan katsayısı 2, sertifikalı fidan katsayısı 5). Tutar = katsayı x destek katsayı değeri (2026 için dekara 367 TL). Fındıkta tek parsel veya bitişik parsellerin toplamı en az 3 dekar olmalıdır; birçok meyve türünde en az 5 dekar. Çilek bu fidan tablosunda yer almaz (2024'te sertifikalı çilek fidesine ayrı destek vardı). Karara göre ödemeye bütçe imkânları dahilinde ilgili yılda başlanır; ödeme takvimini il/ilçe müdürlüğünden teyit edin.\n\nResmî kaynaktan alıntılar:\n- Altıntop, Armut, Asma, Ayva, Badem, Ceviz, Dut, Elma, Erik, Fındık, İncir, Kayısı, Kestane, Kiraz, Kivi, Limon, Manda rin, Nektarin, Pikan cevizi, Portakal, Şeftali, Trabzon hurması, Vişne, Zeytin Standart 2 Sertifikalı 5\n- Fındık, Kivi 3\n- 2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir\n- sertifikalı/standart fidan kullanım desteği ödemeleri ne bütçe imkânları dâhilinde ilgili yılında başlanır.\n- sertifikalı çilek fidesine ise 1000 lira kullanım desteği sağlanacak.",
+  "hedef_kitle": null,
+  "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#fidan",
+  "kategori": null,
+  "baslama_tarihi": null,
+  "bitis_tarihi": null,
+  "tesvil_tutari": "Dekar başına katsayı x destek katsayı değeri (2026: 367 TL, 2027: 442 TL). Katsayılar: standart fidan 2, sertifikalı fidan 5. Tablo 6 türleri: altıntop, armut, asma, ayva, badem, ceviz, dut, elma, erik, fındık, incir, kayısı, kestane, kiraz, kivi, limon, mandarin, nektarin, pikan cevizi, portakal, şeftali, Trabzon hurması, vişne, zeytin.",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ],
+   "urun_listesi": [
+    "altıntop",
+    "armut",
+    "asma",
+    "ayva",
+    "badem",
+    "ceviz",
+    "dut",
+    "elma",
+    "erik",
+    "fındık",
+    "incir",
+    "kayısı",
+    "kestane",
+    "kiraz",
+    "kivi",
+    "limon",
+    "mandarin",
+    "mandalina",
+    "nektarin",
+    "pikan cevizi",
+    "portakal",
+    "şeftali",
+    "trabzon hurması",
+    "vişne",
+    "zeytin"
+   ]
+  },
+  "tutari_min": null,
+  "tutari_max": null,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [
+   "Fidan yurt içinde üretilmiş olmalı ve Tohumluk Tescil ve Sertifikasyon Merkez Müdürlüğü veya Karacabey Fidan Fide Test Merkezi tarafından düzenlenmiş sertifikalı/standart fidan sertifikasına sahip olmalı.",
+   "Bahçe ilgili üretim yılında tesis edilmiş, yönetmeliğe ve dikim normlarına uygun ve tek türde olmalı.",
+   "Tek parsel veya bitişik parsellerin toplam alanı tablodaki asgari alanın altında olamaz.",
+   "Fındık ve kivide asgari alan toplamı 3 dekardır.",
+   "Altıntop, armut, asma, ayva, badem, ceviz, dut, elma, erik, incir vb. diğer türlerde asgari alan toplamı 5 dekardır.",
+   "Kiralık arazide bahçe tesis edenlerin kira sözleşmesi en az üç yıl olmalı.",
+   "Fındıkta: fındık üretimine izin verilen ilçeler dışındaki parsellere temel ve üretimi geliştirme desteği ödenmez."
+  ],
+  "gerekli_belgeler": [
+   "Fidan faturasının tarihi, sertifika veya bitki muayene raporu tarihinden sonra olmalı."
+  ],
+  "basvuru_yeri": "ÇKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (Destekleme Ödemesi Başvuru Dilekçesi).",
+  "basvuru_suresi": "Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez.",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Desteklenen türler (fındık dahil) ve katsayılar: standart fidan 2, sertifikalı fidan 5.",
+    "alinti": "Altıntop, Armut, Asma, Ayva, Badem, Ceviz, Dut, Elma, Erik, Fındık, İncir, Kayısı, Kestane, Kiraz, Kivi, Limon, Manda rin, Nektarin, Pikan cevizi, Portakal, Şeftali, Trabzon hurması, Vişne, Zeytin Standart 2 Sertifikalı 5",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Destek, yurt içinde üretilen sertifikalı/standart fidanla Yönetmeliğe uygun yeni meyve bahçesi tesis edenlere verilir.",
+    "alinti": "yurt içinde üretilen sertifikalı ve/veya standart fidan kullanarak Tarımsal Üretimin Planlanması Hak kında Yönetmeliğe uygun olarak Tablo 6’da belirtilen türler le yeni meyve bahçesi tesis eden çiftçilere belirlenen katsayıya göre hesaplanan tutar üzerinden destek ödenir.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Fidan yurt içinde üretilmiş olmalı ve Tohumluk Tescil ve Sertifikasyon Merkez Müdürlüğü veya Karacabey Fidan Fide Test Merkezi tarafından düzenlenmiş sertifikalı/standart fidan sertifikasına sahip olmalı.",
+    "alinti": "Yurt içinde üretilmiş, Tohumluk Tescil ve Sertifikasyon Merkez Müdürlüğü veya Karacabey Fidan Fide Test Merkezi Müdürlüğü tarafından düzenlenmiş sertifikalı veya standart fidan sertifikasına sahip olmalıdır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Bahçe ilgili üretim yılında tesis edilmiş, yönetmeliğe ve dikim normlarına uygun ve tek türde olmalı.",
+    "alinti": "İlgili üretim yılında tesis edilmiş olması, 2) Tarımsal Üretimin Planlanması Hakkında Yönetmeliğin 13 üncü maddesinin üçüncü , dördüncü ve beşinci fıkralarına uygun olması, 3) Bakanlıkça belirlenen dikim normlarına uygun olması, 4) Tek türde tesis edilmiş olması,",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Tek parsel veya bitişik parsellerin toplam alanı tablodaki asgari alanın altında olamaz.",
+    "alinti": "Tek parsel veya bitişik parsellerin toplam alanının aşağıdaki tabloda belirtilen alanlardan az olmayacak şekilde tesis edilmiş olması, gerekir.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Fındık ve kivide asgari alan toplamı 3 dekardır.",
+    "alinti": "Fındık, Kivi 3",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Altıntop, armut, asma, ayva, badem, ceviz, dut, elma, erik, incir vb. diğer türlerde asgari alan toplamı 5 dekardır.",
+    "alinti": "Altıntop, Armut, Asma, Ayva, Badem, Ceviz, Dut, Elma, Erik, İncir, Kayısı, Kestane, Kiraz, Limon, Mandarin, Nektarin, Pikan cevizi, Portakal, Şeftali, Trabzon hurması, Vişne, Zeytin 5",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Bahçe, tesis yılından sonra iki yıl boyunca yılda en az bir kez il/ilçe müdürlüğünce kontrol edilir; minimum alanın altına düşerse destek geri alınır.",
+    "alinti": "tesis edildiği üretim yılı hariç iki y ıl boyunca yılda en az bir kez olmak üzere il/ilçe müdürlüğünce kontrol edilerek",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Mücbir sebep dışında bahçe asgari alanın altına düşerse desteğin tamamı geri alınır.",
+    "alinti": "Mücbir sebepler dışındaki nedenlerle bağ ve kapama bahçenin mini mum alan toplamı altına düşmesi durumunda desteğin tamamı",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Kiralık arazide bahçe tesis edenlerin kira sözleşmesi en az üç yıl olmalı.",
+    "alinti": "Kiralama yolu ile bağ ve kapama bahçe tesis eden çiftçilerin kira sözleşme süresi en az üç yıl olmalıdır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "belge",
+    "metin": "Fidan faturasının tarihi, sertifika veya bitki muayene raporu tarihinden sonra olmalı.",
+    "alinti": "Fatura tarihi, sertifika veya bitki muayene raporu tarihinden sonra olmalıdır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuru, il/ilçe müdürlüğüne Destekleme Ödemesi Başvuru Dilekçesi ile yapılır.",
+    "alinti": "sertifikalı/standart fidan kullanım, iyi tarım uygulamaları ve organik tarım desteği için ÇKS ve/veya ÖKS/KOBÜKS’de kayıtlı oldukları il/ilçe müdürlüklerine EK-3’te yer alan Destekleme Ödemesi Başvuru Dilekçesi ile şahsen veya yasal temsilcisi aracılığıyla başvuruda bulunurlar.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Planlamaya aykırı yeni kurulan meyve bahçelerine destek ödenmez.",
+    "alinti": "Tarımsal Üretimin Planlanması Hakkında Yönetmeliğe aykırı olarak yeni tesis edilen meyve bahçelerine temel ve üretimi geliştirme desteği ödemesi yapılmaz.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Fındıkta: fındık üretimine izin verilen ilçeler dışındaki parsellere temel ve üretimi geliştirme desteği ödenmez.",
+    "alinti": "Fındık Alanlarının Tespitine Dair Karar kapsamında fındık üretimine izin verilen ilçeler dışında fındık üretilen parseller için temel ve üretimi geliştirme desteği ödemesi yapılmaz.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Ödemelere bütçe imkânları dahilinde ilgili yılda başlanır.",
+    "alinti": "sertifikalı/standart fidan kullanım desteği ödemeleri ne bütçe imkânları dâhilinde ilgili yılında başlanır.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Çilek: 2024'te sertifikalı çilek fidesine dekarda 1000 lira destek verilmişti; 2025-2027 Kararı'nın fidan tablosunda çilek yoktur.",
+    "alinti": "sertifikalı çilek fidesine ise 1000 lira kullanım desteği sağlanacak.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/Haber/6373/Ciftcilere-Bu-Yil-Odenecek-Bitkisel-Uretim-Destekleri-Belli-Oldu",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: ÇKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (Destekleme Ödemesi Başvuru Dilekçesi).",
+    "alinti": null,
+    "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#fidan",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": true,
+  "durum_notu": "Tur34 2026-10-12: resmî kaynaktan eklendi; durum: Karar yürürlüktedir; ancak fidan kullanım desteği ödemelerine bütçe imkânları dahilinde ilgili yılda başlanacağı Karar'da yazılıdır. Başlangıç tarihi kaynakta belirtilmemiştir (belirsiz).; kanıt docs/olcum/2026-10-12-tur34/kayit/tob-sertifikali-standart-fidan-kullanim-destegi-2026.json + dogrulama.json | Tur35 2026-10-12: uygunluk_kriterleri güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi)"
+ }
+]

@@ -1,0 +1,112 @@
+{
+ "slug": "tob-iyi-tarim-uygulamalari-destegi-2026",
+ "kurum": "Tarım Bakanlığı",
+ "baslik": "İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı)",
+ "ozet": "İyi tarım uygulamaları yapan ve yetkilendirilmiş bir kuruluştan bireysel ya da grup iyi tarım sertifikası alan çiftçilere, ÇKS/ÖKS/KOBÜKS'de kayıtlı alan üzerinden dekar başına verilen üretimi geliştirme desteğidir. Tutar = Tablo 8'deki katsayı x destek katsayı değeri (2026 üretim yılı için dekara 367 TL). Birinci grup ürünlerde açıkta üretimde bireysel sertifika katsayısı 0,7, grup sertifikası 0,35; örtüaltı/kapalı ortamda 1,7 ve 0,85. İkinci grupta 0,6 ve 0,3; üçüncü grupta 0,4 ve 0,2. Ürününüzün hangi gruba girdiğini il/ilçe tarım ve orman müdürlüğünden öğrenin. Başvuru dilekçeyle yapılır.",
+ "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#iyi-tarim",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "Yürürlükte: 2025-2027 Kararı'nda üretimi geliştirme desteği olarak sürmektedir; 2026 katsayı değeri güncel metinde 367 TL'dir.",
+  "alinti": "2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+  "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+ },
+ "basvuru_bicimi": "uretim_odeme",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "tarim"
+ ],
+ "tesvil_tutari": "Dekar başına katsayı x destek katsayı değeri (2026: 367 TL, 2027: 442 TL). Katsayılar: açıkta birinci grup bireysel 0,7 / grup 0,35; örtüaltı birinci grup bireysel 1,7 / grup 0,85; ikinci grup 0,6 / 0,3; üçüncü grup 0,4 / 0,2.",
+ "basvuru_yeri": "ÇKS/ÖKS/KOBÜKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (Destekleme Ödemesi Başvuru Dilekçesi); sertifika için Bakanlıkça yetkilendirilmiş kontrol/sertifikasyon kuruluşu.",
+ "basvuru_suresi": "Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez. Sertifika ilgili üretim yılının 1 Ocak-31 Aralık tarihleri arasında düzenlenmiş olmalıdır.",
+ "kontrol_listesi": [
+  {
+   "tur": "sart",
+   "metin": "Yetkilendirilmiş bir kuruluştan ilgili üretim yılında, bireysel veya grup sertifikasyonuna göre düzenlenmiş iyi tarım uygulamaları sertifikası alınmalı.",
+   "alinti": "İyi tarım uygulamaları yapan ve yetkilendirilmiş kuruluşlarca ilgili üretim yılında bireysel veya grup sertifikasyonu seçeneğine göre düzenlenmiş iyi tarım uygulamaları sertifikasına sahip olan çiftçilere",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Destek, ÇKS/ÖKS/KOBÜKS'de kayıtlı ürünler ve kayıtlı toplam alanı geçmemek üzere verilir; sertifika Tablo 8'deki ürün grubuna göre hesaplanır.",
+   "alinti": "İlgili üretim yılında EK -1’de yer alan ÇKS/ÖKS/ KOBÜKS’de kayıtlı ürünlere, Kararda Tablo 8’de belirtilen ürün gruplarına karşılık gelen destek katsayısına göre hesaplanan tutar üzerinden;",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Yetkilendirilmiş kuruluş: organik tarım veya iyi tarım kapsamında kontrol/sertifikasyon yapmak üzere Bakanlıkça yetki verilen kişi ve kuruluşlardır.",
+   "alinti": "Yetkilendirilmiş kuruluş: Organik tarım veya İTU kapsamı nda kontrol ve/veya sertifikasyon kuruluşu olarak Bakanlık tarafından yetki verilmiş gerçek veya tüzel kişileri,",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Tablo 8 katsayıları: açıkta/örtüaltı ve bireysel/grup sertifikaya göre.",
+   "alinti": "Örtüaltı/Kapalı ortamda bitkisel üretim Bireysel 1,7 Grup 0,85 Açıkta üretim Bireysel 0,7 Grup 0,35 2 İkinci grup ürünler Bireysel 0,6 Grup 0,3 3 Üçüncü grup ürünler Bireysel 0,4 Grup 0,2",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Tutar = katsayı x destek katsayı değeri: 2026 üretim yılı için dekara 367 TL, 2027 için 442 TL.",
+   "alinti": "2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "adim",
+   "metin": "Başvuru, kayıtlı olduğunuz il/ilçe müdürlüğüne Destekleme Ödemesi Başvuru Dilekçesi ile şahsen veya yasal temsilci aracılığıyla yapılır.",
+   "alinti": "sertifikalı/standart fidan kullanım, iyi tarım uygulamaları ve organik tarım desteği için ÇKS ve/veya ÖKS/KOBÜKS’de kayıtlı oldukları il/ilçe müdürlüklerine EK-3’te yer alan Destekleme Ödemesi Başvuru Dilekçesi ile şahsen veya yasal temsilcisi aracılığıyla başvuruda bulunurlar.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "belge",
+   "metin": "İlgili yıl 1 Ocak-31 Aralık arasında düzenlenmiş İTU sertifikası ve İTU Destekleme Ödemesi Sertifika Eki, Destekleme Uygulama Takvimi'ne göre il/ilçe müdürlüğüne teslim edilir.",
+   "alinti": "Çiftçiler, ilgili üretim yılının 1 Ocak ile 31 Aralık tarihleri arasında düzenlenen İTU Sertifikasını ve EK -6’da yer alan İTU Destekleme Ödemesi Sertifika Eki’ni, il/ilçe müdürlüğüne EK-2’de yer alan Destekleme Uygulama Takvimine göre teslim ederler.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Belge teslim bitiş tarihi sona eren desteklemeler için müracaat yapılamaz.",
+   "alinti": "Belge teslim bitiş tarihi sona eren desteklemeler için müracaatta bulunulamaz.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Aynı arazide aynı yıl birden fazla ürün/üretim varsa yalnız biri için, tutarı yüksek olan üretim esas alınarak ödeme yapılır.",
+   "alinti": "Bir üretim yılında aynı arazi üzerinde birden fazla ürün/üretim olması durumunda, sadece biri için ödeme yapılır. Destekleme ödemesinde, hesaplanan tutarı yüksek olan ürün/üretim esas alınır.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Ormandan tahsisli arazilerde yapılan üretimlere iyi tarım uygulamaları desteği ödenmez.",
+   "alinti": "Ormandan tahsisli arazilerde yapılan üretimlere üretimi geliştirme desteği kapsamında yer alan organik tarım desteği ve iyi tarım uygulamaları desteği ödenmez.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Fındık için: fındık üretimine izin verilen ilçeler dışındaki parsellere temel ve üretimi geliştirme desteği ödenmez.",
+   "alinti": "Fındık Alanlarının Tespitine Dair Karar kapsamında fındık üretimine izin verilen ilçeler dışında fındık üretilen parseller için temel ve üretimi geliştirme desteği ödemesi yapılmaz.",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Katsayılar Tablo 8",
+   "alinti": "Örtüaltı/Kapalı ortamda bitkisel üretim Bireysel 1,7 Grup 0,85 Açıkta üretim Bireysel 0,7 Grup 0,35 2 İkinci grup ürünler Bireysel 0,6 Grup 0,3 3 Üçüncü grup ürünler Bireysel 0,4 Grup 0,2",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "iddia": "2026 katsayı değeri 367 TL, 2027 442 TL",
+   "alinti": "2026 üretim yılı için destek katsayı değeri dekara 367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak belirlenmiştir",
+   "kaynak_url": "https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf"
+  },
+  {
+   "iddia": "İTU sertifikası 1 Ocak-31 Aralık arasında düzenlenmiş olmalı",
+   "alinti": "Çiftçiler, ilgili üretim yılının 1 Ocak ile 31 Aralık tarihleri arasında düzenlenen İTU Sertifikasını ve EK -6’da yer alan İTU Destekleme Ödemesi Sertifika Eki’ni, il/ilçe müdürlüğüne EK-2’de yer alan Destekleme Uygulama Takvimine göre teslim ederler.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  },
+  {
+   "iddia": "Dilekçe ile il/ilçe müdürlüğüne başvuru",
+   "alinti": "sertifikalı/standart fidan kullanım, iyi tarım uygulamaları ve organik tarım desteği için ÇKS ve/veya ÖKS/KOBÜKS’de kayıtlı oldukları il/ilçe müdürlüklerine EK-3’te yer alan Destekleme Ödemesi Başvuru Dilekçesi ile şahsen veya yasal temsilcisi aracılığıyla başvuruda bulunurlar.",
+   "kaynak_url": "https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tar%C4%B1m%20Havzalar%C4%B1/2024-39%20Bitkisel%20%C3%9Cretime%20Y%C3%B6nelik%20Desteklemeler%20ile%20Di%C4%9Fer%20Baz%C4%B1%20Tar%C4%B1msal%20Desteklemelere%20%C3%96deme%20Yap%C4%B1lmas%C4%B1na%20Dair%20Tebli%C4%9F%20(Tebli%C4%9F%20No%202024-39).pdf"
+  }
+ ]
+}

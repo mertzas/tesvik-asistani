@@ -1,0 +1,169 @@
+{
+ "slug": "gib-gvk-muk20b-mobil-uygulama-kazanc-istisnasi",
+ "kurum": "Gelir İdaresi Başkanlığı",
+ "baslik": "Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)",
+ "ozet": "Akıllı telefon veya tablet gibi mobil cihazlar için uygulama geliştiren gerçek kişilerin, elektronik uygulama paylaşım ve satış platformları (uygulama mağazaları) üzerinden elde ettikleri kazançlar, yıllık toplamı gelir vergisi tarifesinin dördüncü gelir diliminde yer alan tutarı (2026 için 5.300.000 TL) aşmadıkça gelir vergisinden istisnadır. Yararlanmak için vergi dairesinden istisna belgesi alınır, Türkiye'de kurulu bir bankada hesap açılır ve bu faaliyetin tüm hasılatı o hesaba tahsil edilir; banka hesaba aktarılan tutardan %15 gelir vergisi tevkifatı yapar. İstisnadan yalnızca gelir vergisi mükellefleri (gerçek kişiler) yararlanır, kurumlar vergisi mükellefleri (şirketler) yararlanamaz.",
+ "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf#mukerrer-20b",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "Düzenleme yürürlüktedir; GİB rehberi, şartların sağlanması kaydıyla 2026 ve sonraki yıllarda da yararlanılabileceğini belirtir. Rehberlerdeki tutarlar yıllık güncellenen gelir vergisi tarifesine bağlıdır.",
+  "alinti": "Diğer taraftan, istisna şartlarının tamamının sağlaması kaydıyla 2026 takvim yılı ve sonraki yıllar için de istisna uygulamasından yararlanılabilecektir.",
+  "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+ },
+ "basvuru_bicimi": "diger",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "genel"
+ ],
+ "sirket_turleri": [
+  "sahis"
+ ],
+ "tesvil_tutari": "Gelir vergisi istisnası (hibe/ödeme değil, vergi avantajı): istisna kapsamındaki kazançlar toplamı, tarifenin dördüncü gelir diliminde yer alan tutarı (2025 için 4.300.000 TL, 2026 için 5.300.000 TL) aşmadığı sürece gelir vergisi ödenmez ve bu kazançlar için yıllık gelir vergisi beyannamesi verilmez. Tutar aşılırsa kazançlar yıllık beyannameyle beyan edilir ve banka stopajı mahsup edilir. Banka, hesaba aktarılan hasılattan %15 gelir vergisi tevkifatı yapar (istisna şartları sağlandığında bu tevkifat nihai vergidir). Tutarlar her yıl güncellenir.",
+ "basvuru_yeri": "İkametgâhın bulunduğu yerdeki tarha yetkili vergi dairesi; başvuru Dijital Vergi Dairesi (dijital.gib.gov.tr) üzerinden elektronik ortamda da yapılabilir.",
+ "basvuru_suresi": "Son başvuru tarihi veya çağrı yoktur; istisna belgesi alındıktan sonra yeni hesap açıldığı ya da belge bankaya ibraz edildiği tarihten itibaren, takvim yılı içinde de başlanarak yararlanılabilir.",
+ "kontrol_listesi": [
+  {
+   "tur": "bilgi",
+   "metin": "Kapsam: akıllı telefon veya tablet gibi mobil cihazlar için uygulama geliştirenlerin, elektronik uygulama paylaşım ve satış platformları üzerinden elde ettikleri kazançlar.",
+   "alinti": "akıllı telefon veya tablet gibi mobil cihazlar için uygulama geliştirenlerin elektronik uygulama paylaşım ve satış platformları üzerinden elde ettikleri kazançlar",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Yalnızca gerçek kişiler (gelir vergisi mükellefleri) yararlanır; kurumlar vergisi mükellefi şirketler yararlanamaz.",
+   "alinti": "İstisnadan sadece gelir vergisi mükellefleri yararlanabilecek olup kurumlar vergisi mükellefleri bu istisnadan yararlanamayacaktır.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "belge",
+   "metin": "Vergi dairesinden 'GVK Mükerrer 20/B Maddesi Uygulamasına İlişkin İstisna Belgesi' alınmalıdır.",
+   "alinti": "Mükelleflerin ikametgâhlarının bulunduğu yerdeki tarha yetkili vergi dairelerinden “193 Sayılı Kanunun Mükerrer 20/B Maddesi Uygulamasına İlişkin İstisna Belgesi”ni (İstisna Belgesi) almaları gerekmektedir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "adim",
+   "metin": "Türkiye'de kurulu bir bankada hesap açılır ve bu faaliyete ilişkin tüm hasılat bu hesap aracılığıyla tahsil edilir.",
+   "alinti": "Bu istisnadan faydalanılabilmesi için Türkiye’de kurulu bankalarda bir hesap açılması ve bu faaliyetlere ilişkin tüm hasılatın bu hesap aracılığıyla tahsil edilmesi gerekmektedir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "adim",
+   "metin": "Banka adı, şubesi ve IBAN bilgileri, hesap açılışından (mevcut hesapta belgenin bankaya ibrazından) itibaren bir ay içinde vergi dairesine bildirilir.",
+   "alinti": "bir ay içerisinde banka adı, banka şubesi ve IBAN numarası gibi banka hesaplarına ilişkin bilgilerin bağlı bulunulan vergi dairesine bildirilmesi gerekmektedir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "adim",
+   "metin": "İstisna belgesi talebi Dijital Vergi Dairesi'nde 'Dilekçelerim / Yeni Dilekçe Oluştur' menüsünden elektronik olarak iletilebilir.",
+   "alinti": "istisna belgesi talep dilekçesi, Dilekçelerim/Yeni Dilekçe Oluştur menüsü aracılığı ile Sosyal İçerik Üreticiliği İstisna Belgesi Talebi Dilekçesi (GVK Mük. 20/B Maddesi) adımından oluşturularak, vergi dairesine elektronik ortamda iletilmektedir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Banka, bu hesaplara aktarılan hasılat üzerinden aktarım tarihinde %15 gelir vergisi tevkifatı yapar.",
+   "alinti": "Bankalar, bu kapsamda açılan hesaplara aktarılan hasılat tutarı üzerinden, aktarım tarihi itibarıyla %15 oranında gelir vergisi tevkifatı yapmak",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İstisna şartları sağlandığında bankanın kestiği vergi nihai vergidir; başka gelirler nedeniyle verilen yıllık beyannamedeki vergiden mahsup edilemez.",
+   "alinti": "İstisna kapsamındaki faaliyetler sonucu elde edilen hasılat üzerinden tevkif edilen vergiler nihai vergi olacağından, bu vergilerin başka gelirler nedeniyle verilecek yıllık beyanname üzerinden hesaplanan vergilerden mahsubu mümkün değildir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Uygulama satış, reklam, uygulama içi satış, sponsorluk ve ücretli abonelik gelirleri (uygulama platformlarında elde edilenler) istisna kapsamında dikkate alınır.",
+   "alinti": "ücretli uygulama satış geliri, reklam geliri, uygulama içi satış geliri, sponsorluk geliri, ücretli abonelik geliri gibi gelirler istisna kapsamında dikkate alınacaktır.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Uygulama paylaşım ve satış platformları dışında elde edilen kazançlar istisna kapsamında değerlendirilmez.",
+   "alinti": "Elektronik uygulama paylaşım ve satış platformları dışında elde edilen kazançlar ise istisna kapsamında değerlendirilmeyecektir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İstisna kapsamındaki kazançlar toplamı dördüncü gelir diliminin tutarını (2026 için 5.300.000 TL) aşarsa yıllık gelir vergisi beyannamesi verilir.",
+   "alinti": "dördüncü gelir diliminde yer alan tutarı (2025 takvim yılı için 4.300.000 TL’yi, 2026 takvim yılı için 5.300.000 TL’yi) aşması durumunda, söz konusu kazançlar için yıllık gelir vergisi beyannamesi verilmesi gerekmektedir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Ortakları gerçek kişi olan adi ortaklık bünyesinde yapılan faaliyetler için istisnadan yararlanılamaz; faaliyet ortaklar tarafından şahsen yürütülürse yararlanılabilir.",
+   "alinti": "Ortakları gerçek kişilerden oluşan adi ortaklıkların; istisnaya konu faaliyetleri yapmaları durumunda, adi ortaklık ve adi ortaklığı oluşturan gerçek kişi ortaklar bu faaliyetleri dolayısıyla elde ettikleri gelirler için istisnadan yararlanamayacaktır.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İstisna şartları ilgili yıl içinde kaybedilirse o yıl istisnadan yararlanılamaz; kazançların tamamı yıllık beyannameyle beyan edilir.",
+   "alinti": "İlgili takvim yılında istisna şartlarını sonradan kaybedenler ile bu şartları ihlal edenler, şartın kaybedildiği veya ihlal edildiği yıl için söz konusu istisnadan yararlanamayacak olup, bu kapsamda elde edilen kazançların tamamı yıllık gelir vergisi beyannamesi ile beyan edilecektir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "İstisna kapsamındaki faaliyetlere konu teslim ve hizmetler üzerinden KDV hesaplanmaz.",
+   "alinti": "Gelir Vergisi Kanununun mükerrer 20/B maddesi kapsamında vergilendirilen kazançlara konu teslim ve hizmetler üzerinden KDV hesaplanmayacaktır.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "İstisnadan yararlanan mükelleflerin (başka faaliyetleri yoksa) defter tasdik ettirme, defter tutma ve belge düzenleme zorunlulukları kaldırılmıştır.",
+   "alinti": "defter tasdik ettirme, defter tutma (defter-beyan sistemine kaydolma/elektronik defter tutma) ve belge düzenleme zorunlulukları kaldırılmıştır.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "İstisna tutarı: dördüncü gelir dilimi (2025: 4.300.000 TL; 2026: 5.300.000 TL)",
+   "alinti": "dördüncü gelir diliminde yer alan tutarı (2025 takvim yılı için 4.300.000 TL’yi, 2026 takvim yılı için 5.300.000 TL’yi) aşması durumunda, söz konusu kazançlar için yıllık gelir vergisi beyannamesi verilmesi gerekmektedir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf"
+  },
+  {
+   "iddia": "Kapsam: mobil cihaz uygulama geliştiricileri; tutar sınırı",
+   "alinti": "vergi tarifesinin dördüncü gelir diliminde yer alan tutarı (2024 takvim yılı için 3.000.000 TL, 2025 takvim yılı için 4.300.000 TL) aşmaması kaydıyla gelir vergisinden istisnadır.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "iddia": "Bankalar %15 gelir vergisi tevkifatı yapar",
+   "alinti": "Bankalar, bu kapsamda açılan hesaplara aktarılan hasılat tutarı üzerinden, aktarım tarihi itibarıyla %15 oranında gelir vergisi tevkifatı yapmak",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "iddia": "Tevkifat nihai vergi, mahsup edilemez",
+   "alinti": "İstisna kapsamındaki faaliyetler sonucu elde edilen hasılat üzerinden tevkif edilen vergiler nihai vergi olacağından, bu vergilerin başka gelirler nedeniyle verilecek yıllık beyanname üzerinden hesaplanan vergilerden mahsubu mümkün değildir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "iddia": "Yalnızca gelir vergisi mükellefleri yararlanır",
+   "alinti": "İstisnadan sadece gelir vergisi mükellefleri yararlanabilecek olup kurumlar vergisi mükellefleri bu istisnadan yararlanamayacaktır.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "iddia": "Gerçek kişiler yararlanır",
+   "alinti": "akıllı telefon veya tablet gibi mobil cihazlar için uygulama geliştiren gerçek kişiler yararlanabilecektir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "iddia": "Başvuru yeri: vergi dairesi / Dijital Vergi Dairesi",
+   "alinti": "Mükellefler başvurularını, ikametgâhlarının bulunduğu yerdeki tarha yetkili vergi dairesine (hâlihazırda gelir vergisi yönünden mükellefiyeti bulunan mükellefler bağlı bulundukları vergi dairesine) elden veya posta yoluyla yapabilecekleri gibi Dijital Vergi Dairesini kullanarak elektronik ortamda da",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "iddia": "İstisna kapsamındaki kazançlar için yıllık beyanname verilmez",
+   "alinti": "İstisna kapsamındaki faaliyetler nedeniyle elde edilen kazançlar için yıllık gelir vergisi beyannamesi verilmeyecektir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "iddia": "Tutar aşılıp beyan edilirse banka stopajı mahsup edilir",
+   "alinti": "Elde edilen kazançların yıllık gelir vergisi beyannamesi ile beyan edilmesi halinde bankalar tarafından tevkif edilen vergiler beyanname üzerinden hesaplanan gelir vergisinden mahsup edilebilecektir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  },
+  {
+   "iddia": "Takvim yılı içinde de yararlanılabilir",
+   "alinti": "Mükellefler takvim yılı içerisinde istisnadan faydalanabileceklerdir.",
+   "kaynak_url": "https://cdn.gib.gov.tr/api/gibportal-file/file/getFileResources?objectKey=arsiv%2Fonceki-dokumanlar%2F2025_sosyal_icerik.pdf"
+  }
+ ]
+}

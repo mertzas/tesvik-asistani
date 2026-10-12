@@ -72,7 +72,7 @@ def test_uygunluk_kriterleri_olmayan_kayit_gorunmez_kalmaz_uyarisi(db_session):
 def test_sektore_ozel_kayit_genel_kayittan_yuksek_skor_alir(db_session):
     db_session.add_all([
         _tesvik(baslik="E-ticarete Ozel", kaynak_url="https://t/1",
-                uygunluk_kriterleri={"sektorler": ["e-ticaret", "ihracat"]}),
+                uygunluk_kriterleri={"sektorler": ["e-ticaret"]}),
         _tesvik(baslik="Genel Program", kaynak_url="https://t/2",
                 uygunluk_kriterleri={"sektorler": ["genel"]}),
     ])

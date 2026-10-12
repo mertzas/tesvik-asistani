@@ -14,7 +14,7 @@ tablosundaki her telefon numarası resmî kurum sayfasından doğrulanmıştır 
 import logging
 from datetime import date
 import re
-from typing import NamedTuple
+from typing import Any, NamedTuple
 
 from sqlalchemy.orm import selectinload
 from app.ihtiyac import isletmeye_yonelik_mi, program_ihtiyaclari, soru_ihtiyaclari
@@ -379,6 +379,9 @@ def retrieve(query: str, limit: int = 5, profil_kaydi=None) -> list[Tesvik]:
     soru_kategorisi = (urun_turunden_tarim_kategorisi(query)
                        if (profil_sektor == "tarim" or anahtar_kelimeden_sektor_bul(query) == "tarim") else None)
 
+    from app.matching import ihracat_odakli, ihracat_sinyali
+    ihracat_cezasi = (profil_kaydi is not None and "ihracat" not in aranan and not ihracat_sinyali(profil_kaydi))
+
     def puan(t: Tesvik) -> float:
         # İhtiyaç eşleşmesi kelime sırasından baskın: kelime araması "geliştirme",
         # "kapasite" gibi genel kelimelerle alakasız programları öne taşıyordu.
@@ -399,6 +402,10 @@ def retrieve(query: str, limit: int = 5, profil_kaydi=None) -> list[Tesvik]:
         u = degerlendirme_9903.get(t.id)
         if u is not None:
             p += UYGUNLUK_9903_ETKISI[u.durum]
+        if ihracat_cezasi and ihracat_odakli(t):
+            # İhracat programı ihracatı olmayan profilin kredi sorusunda kotayı doldurmasın (persona denemesi
+            # 2026-10-12: sürücü kursunun araç kredisi sorusunda 8 kaydın 8'i Eximbank ihracat kredisiydi).
+            p -= 3.0
         return p
 
     havuz.sort(key=lambda t: (-puan(t), t.id))
@@ -887,6 +894,7 @@ class Hazirlik(NamedTuple):
     elenen: str                 # dış modelin bağlamına eklenen bloklar (rızaya bağlı yolda)
     girisim: bool
     yerel_bloklar: list = []    # yerel danışmanın kullanıcıya gösterdiği aynı içerik (Markdown)
+    profil: Any = None          # değerlendirmede kullanılan profil (varsayımsal şirket olabilir; yanıt da bununla)
 
 
 ELENEN_9903_BASLIGI = ("SİSTEMİN ELEDİĞİ / DÜŞÜK OLASILIK GÖRDÜĞÜ 9903 PROGRAMLARI (Karar metnine göre; "
@@ -913,11 +921,20 @@ def _hazirla(query: str, llm_kullan: bool, profil_kaydi) -> Hazirlik:
     `yerel_bloklar` yerel danışmanın yanıtına girer.
 
     profil_kaydi yalnızca YEREL eleme için kullanılır (dışarı gönderilmez); dışarı giden profil, rızaya bağlı olan
-    `profil` sözlüğüdür."""
+    `profil` sözlüğüdür. Soru "şirket kurarsam" diyorsa ya da şirketi olmayan profilde hiçbir kayıt çıkmıyorsa
+    değerlendirme kurulacak şirket varsayımıyla yapılır ve yanıtta söylenir (yerel_danisman.varsayimsal_profil)."""
+    profil_kaydi = yerel_danisman.varsayimsal_profil(query, profil_kaydi)
     limit = PAKET_KAYIT_SAYISI if yatirim_projesi_mi(query) else CEVAP_KAYIT_SAYISI
     matches = retrieve(query, limit=limit, profil_kaydi=profil_kaydi)
+    if not matches and getattr(profil_kaydi, "sirket_turu", None) == "yok":
+        # Persona denemesi 2026-10-12: şirketsiz geliştiricinin "yurt dışı reklam desteği var mı" sorusu genel
+        # "bulamadım" metnine düşüyordu; doğru cevap "şirketsiz yok, şirket kurarsanız 10962 Dijital Ürün Tanıtım".
+        varsayim = yerel_danisman.varsayimsal_profil(query, profil_kaydi, zorla=True)
+        matches = retrieve(query, limit=limit, profil_kaydi=varsayim)
+        if matches:
+            profil_kaydi = varsayim
     if not matches:
-        return Hazirlik([], {}, "", False, [])
+        return Hazirlik([], {}, "", False, [], profil_kaydi)
     notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi).items()}
     # 9903 kayıtlarına Karar'daki oran/süreler (Md.15/16/18/19/20, profil bölgesine göre)
     # eklenir: ölçüm 2026-10-07'de model "SGK/faiz desteğinin oranı bağlamda yok" diyordu.
@@ -948,7 +965,7 @@ def _hazirla(query: str, llm_kullan: bool, profil_kaydi) -> Hazirlik:
         yerel_bloklar.append(f"**{eski}**")
     if girisim:
         yerel_bloklar.append(_girisim_blogu(profil_kaydi))
-    return Hazirlik(matches, notlar, elenen, girisim, yerel_bloklar)
+    return Hazirlik(matches, notlar, elenen, girisim, yerel_bloklar, profil_kaydi)
 
 
 BEKLEME_SINYALI_SN = 5   # dış model beklenirken akışa gönderilen canlı tutma aralığı (vekil zaman aşımı önlemi)
@@ -956,6 +973,8 @@ BEKLEME_SINYALI_SN = 5   # dış model beklenirken akışa gönderilen canlı tu
 
 def _yerel(query: str, h: "Hazirlik", profil_kaydi, dis_servis: str | None = None) -> str:
     """Yerel danışman. dis_servis: soru o servise gönderildiyse adı (yöntem notu buna göre yazılır, KVKK)."""
+    profil_kaydi = h.profil if getattr(h.profil, "_varsayim", None) else yerel_danisman.varsayimsal_profil(
+        query, profil_kaydi)
     return yerel_danisman.yanitla(query, h.matches, profil_kaydi, h.notlar, ek_bloklar=h.yerel_bloklar,
                                   dis_servis=dis_servis)
 

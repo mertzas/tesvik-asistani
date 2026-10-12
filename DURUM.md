@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-12 (tur33: 284 → 317 kayıt; GPU ölçüm paketi hazır). Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, etkin 244; 20 persona/45 senaryo hakem 2,40 → 2. tur ~2,9). Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -397,6 +397,48 @@ Son güncelleme: 2026-10-12 (tur33: 284 → 317 kayıt; GPU ölçüm paketi haz�
   kayıt VAR 385 → 396, İNCE 60 → 49, BOŞ 23 → 23 (gerçek: şirketsiz finansman/Ar-Ge), ürün 410 → 421/468, gerileyen 0.
   Ölçüm dayanak 0, isabet 41/41; test 1273. Önizlemede: yurt içi fuar (303.563 / 1.000.000 TL), TİM Wings.
   Kalan araştırılmış ama eklenmeyen: 10962 m.16, 18-21, 23, 24, 26-32; Eximbank IBRD Yeşil İhracat, AYB.
+- **Tur34** (2026-10-12, `scripts/fix_veri_2026_10_12_tur34.py`; resmî alan adları gib, mevzuat, tarsim, tmo,
+  ziraatbank, halkbank, tarimkredi, tubitak, hmb ile genişledi; `--metin URL` ve `--dogrula-tek SLUG` eklendi): 4 Sonnet
+  araştırma ajanı 48 kayıt, 48/48 doğrulandı, UYGULANDI (yedek `tesvikler_oncesi_tur34.db.bak`): 10962 kalan 21 madde
+  (m.16, 18-21, 23-33, 35, 38-41), Eximbank 8 (IBRD Yeşil İhracat, AYB, finansal kiralama, faizsiz finansman/SÖİF, 3
+  sigorta), vergi/girişimci 10 (GVK 20/B, genç girişimci istisnası, Halkbank esnaf Hazine kredisi, 4691 x2, 5746 x3,
+  KOSGEB girişimcilik eğitimi, Bağ-Kur genç girişimci desteği — 7566 sayılı Kanunla 1/1/2026'dan kaldırıldı, pasif),
+  tarım 9 (Fındık Temel Desteği; Fındık ABGD sona erdi — son ödeme 2024, pasif; TARSİM 2026 prim desteği %50/%70;
+  Ziraat/TKK Hazine faiz destekli kredi; iyi tarım; fidan; lisanslı depo kira; organomineral gübre; Küçük Aile İşletmesi
+  sona erdi). İki GİB ve beş 8859 kaydı aynı belgeye bağlıydı → `#madde` parçası (kaynak_url tekilliği). 317 → 365.
+- **2026 tarım birim değeri**: `app/tarim_destek_2026.py` 310 TL/da kullanıyordu; 11781 sayılı CB Kararı (RG
+  08.09.2026) 2026 için 367 TL (2027: 442 TL). Katsayılar BUGEM 2026 tablosundan doğru (10394 sayılı Karar, RG
+  14.09.2025 tabloları değiştirdi: mısır 2. kategori, tohum 0,56, organomineral 0,32). Fındık 3. kategori → 550,50
+  TL/da; fındıkta destek yalnız izinli ilçelerdeki parsellere (8859 m.6/4, 11781 m.4). Kanıt
+  `docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md` (RG sayfaları görüntü olarak okundu). Tarım kazıyıcısının tohumu
+  artık doğrulanmış DB'den üretilir (`app/data/tarim_bakanligi_tohum.json`, `python -m app.scrapers.tarim_bakanligi
+  --tohum-uret`); eski elle yazılmış tohumdaki kaynaksız "Tarımsal Makineleştirme" (bireysel traktör vaadi) ve "Sulama
+  Yatırımı" kayıtları ayın 5'inde eski adlarıyla yeniden eklenecekti (başlık değişmişti).
+- **Tur35** (`scripts/fix_veri_2026_10_12_persona_tur35.py`, self-test 10/10, yedek `tesvikler_oncesi_tur35.db.bak`):
+  Ticaret Bakanlığı 5973/5986/10962 kayıtlarına şirket türü kısıtı (limited/anonim/kooperatif) + aynı Kararın alıntılı
+  "Şirket olmak" maddesi; 10962 m.38-41 TİM/birliklere → `araci_kurulus`; KOSGEB girişim sermayesi fonu → aracı; TİM
+  Wings kadın hedef kitlesi; TURWIB kadın önceliği; GVK 20/B şirketsiz kişiye açık; tarım alt sınırları 367 ile; 160
+  hububat 2026 tabloları; 161'den fındık (`urun_haric`), 364 ve 365'e ürün listesi (8859 Tablo 10 ve 6).
+- **Tur36** (`scripts/fix_veri_2026_10_12_limit2026_tur36.py`, self-test 7/7, 19/19 doğrulandı, yedek
+  `tesvikler_oncesi_tur36.db.bak`): 5973 kayıtları Karar taban tutarlarını gösteriyordu (yurt dışı fuar 150/250/750 bin
+  TL) → Bakanlığın 2026 üst limit tabloları (4 PDF; `docs/olcum/2026-10-12-tur34/limit_2026_5973.json`): ör. fuar
+  738.563 / 1.231.848 / 3.698.274 TL, küresel tedarik zinciri 73.990.020 TL. Eski tutarlı kontrol maddeleri "Karar
+  tabanı" notuyla işaretlendi.
+- **Persona denemesi** (`docs/olcum/2026-10-12-persona/persona_olc.py`, self-test 5/5; Rekortiv (şirketsiz, 20/B), 9 da
+  fındık (Ordu), 1,5 da çilek (Aydın), matbaa, sürücü kursu, 5 KOBİ, 10 İKAS mağazası; 45 senaryo; `--out` ile ara
+  deneme): 5 Sonnet hakem. Tur 1 (`tur1/`, `degerlendirme_*.json`) ortalama 2,40 (kritik 35). Düzeltmeler:
+  ihtiyaç türleri sigorta/tanıtım/tescil/lojistik/tarım ödemesi; eşleştirmede ihracat ilgi cezası (görünen skor
+  düşmez, sıra), yaş/hedef kitle cezası, tavansız sıralama (`siralama`), özgül hedef ağırlığı, çalışan/mağaza eşiği,
+  10962 Atılım sektör (NACE) ve alt sektör kapsamı, kültür/turizm belge kapsamı, başka ürün/ürün listesi, durum
+  programları (refinansman, istihdamı koruma), `ilgi_cezalari=False` (hazırlık karşı-olgusu); yanıtta tarım doğrudan
+  ödeme hesabı, "şirket kurarsam" varsayımı (+BiGG ortaklık uyarısı) ve şirketsiz boş sonuçta varsayımsal arama,
+  kredi etiketi, kurum sorusunda ihtiyaç notu, sıralama anahtarı (ihtiyaç → kilit → çok ihtiyaç → kredi/vergi →
+  ölçek → dar kitle → eşleşme ilgisi), "Belirlenemedi" → "Şarta bağlı", tekrar azaltma, EN_COK_KART 3; 9903 EK-3
+  "hariç" alt kolları (85.53 → uygun değil); girişim HUKS şirketsiz gelir. Tur 2 (`degerlendirme2_*.json`): A 2,97 ·
+  B 2,75 · C 2,95 · D 2,78 · E 3,08 (tur 1: 2,14 · 2,50 · 2,46 · 2,14 · 2,82). Testler: `tests/test_persona_2026_10_12.py`
+  (37). Regresyon: eski 30 senaryo dayanak 0, isabet 41/41; kapsam kayıt 420/25/23, ürün 434/468 (tur33: 421; tarım ×
+  Ar-Ge 11 hücrenin eski "isabeti" sahteydi: çiftçiye gemi-yat tasarım desteği). Test 1306 → 1312.
+  Ders: Bash heredoc `\\` dizisini tek `\` yapıyor (`\b` backspace oldu) → yamalar Write ile betik dosyasına.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

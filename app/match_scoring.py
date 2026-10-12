@@ -176,6 +176,10 @@ def _sektor_uyumu(profile: "CompanyProfile", program: "IncentiveProgram") -> Sek
               key=lambda u: u.skor)
 
 
+# Kullanıcıya görünen ölçek adları (iç kod "kucuk" metne çıkmasın; hakem bulgusu 2026-10-12).
+OLCEK_AD = {"mikro": "mikro", "kucuk": "küçük", "orta": "orta", "buyuk": "büyük"}
+
+
 def hard_filter(profile: CompanyProfile, program: IncentiveProgram, *,
                 strict_sector: bool = True) -> tuple[list[str], list[str]]:
     """(eleme_sebepleri, doğrulanamayanlar). Sebep listesi boşsa program geçer."""
@@ -217,7 +221,7 @@ def hard_filter(profile: CompanyProfile, program: IncentiveProgram, *,
         elif OLCEK_SIRASI[olcek.sinif] > OLCEK_SIRASI[program.max_scale]:
             if olcek.kesin:
                 sebepler.append(f"ölçek uygun değil: {olcek.aciklama}; program en çok "
-                                f"'{program.max_scale}' ölçeğine açık")
+                                f"{OLCEK_AD.get(program.max_scale, program.max_scale)} ölçeğindeki işletmelere açık")
             else:
                 dogrulanamayan.append(f"ölçek ({olcek.aciklama})")
     if program.min_scale is not None:
@@ -227,7 +231,7 @@ def hard_filter(profile: CompanyProfile, program: IncentiveProgram, *,
         elif OLCEK_SIRASI[olcek.sinif] < OLCEK_SIRASI[program.min_scale]:
             if olcek.kesin:
                 sebepler.append(f"ölçek uygun değil: {olcek.aciklama}; program en az "
-                                f"'{program.min_scale}' ölçeğine açık")
+                                f"{OLCEK_AD.get(program.min_scale, program.min_scale)} ölçeğindeki işletmelere açık")
             else:
                 dogrulanamayan.append(f"ölçek ({olcek.aciklama})")
 

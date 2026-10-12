@@ -22,14 +22,25 @@ KAYNAK
 T.C. Tarım ve Orman Bakanlığı BUGEM, "2026 Üretim Yılı Bitkisel Üretim
 Destekleme Birim Fiyatları":
 https://www.tarimorman.gov.tr/BUGEM/Belgeler/Tarım%20Havzaları/2026%20Yılı%20Destekleme%20Birim%20Fiyatları.pdf
-Tüm katsayı ve tutarlar bu resmî tablodan birebir alınmıştır
-(doğrulama: 2026-09-26).
+Tüm katsayılar bu resmî tablodan birebir alınmıştır (doğrulama: 2026-09-26,
+yeniden 2026-10-12). Tablonun kategorileri ve katsayıları 8859 sayılı
+Cumhurbaşkanı Kararının 2024 ilk hâlinden farklıdır çünkü 10394 sayılı Karar
+(RG 14.09.2025, 1/1/2026'dan geçerli) tabloları değiştirdi: mısır (dane) 2.
+kategori, yulaf/çavdar/tritikale birinci grup yem bitkisi, sertifikalı
+buğday/arpa tohumu 0,56, katı organik-organomineral gübre 0,32
+(https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf, değişiklikler işlenmiş).
 
-NOT: Bazı haber kaynakları temel destek birim değerini 367 TL/da olarak
-veriyor. Bakanlığın kendi yayınladığı tabloda değer 310,00 TL/da ve tablodaki
-tüm toplamlar bu değerle tutarlı (1,3 x 310 = 403,00; 2,25 x 310 = 697,50).
-Bu modül resmî tabloyu esas alıyor; haber kaynaklarındaki farklı rakam
-doğrulanamadı.
+BİRİM DEĞER: 11781 sayılı Cumhurbaşkanı Kararı (RG 08.09.2026, sayı 33364)
+m.1/a, 8859 sayılı Kararın 2/4-a bendindeki "310 TL olarak" ibaresini
+"367 TL olarak, 2027 üretim yılı için destek katsayı değeri dekara 442 TL
+olarak" diye değiştirdi; m.6/a ile 1/1/2026'dan geçerli. BUGEM tablosundaki
+toplamlar (310 TL'yle hesaplı) bu yüzden eskidir; katsayılar geçerlidir.
+https://www.resmigazete.gov.tr/eskiler/2026/09/20260908-7.pdf
+(Önceki not "367 TL doğrulanamadı" diyordu; karar 08.09.2026'da yayımlandı.)
+
+FINDIK: 8859 m.6/4 (11781 m.4 ile değişik, 1/1/2025'ten geçerli) — fındık
+üretimine izin verilen ilçeler dışında fındık üretilen parsellere temel ve
+üretimi geliştirme desteği ödenmez.
 """
 from __future__ import annotations
 
@@ -38,15 +49,21 @@ from dataclasses import dataclass, field
 from app.urun_sektor_anahtarlari import kucult
 
 KAYNAK = ("T.C. Tarım ve Orman Bakanlığı BUGEM, 2026 Üretim Yılı Bitkisel "
-          "Üretim Destekleme Birim Fiyatları")
+          "Üretim Destekleme Birim Fiyatları (katsayılar); birim değer 11781 "
+          "sayılı Cumhurbaşkanı Kararı, RG 08.09.2026")
 KAYNAK_URL = ("https://www.tarimorman.gov.tr/BUGEM/Belgeler/"
               "Tar%C4%B1m%20Havzalar%C4%B1/2026%20Y%C4%B1l%C4%B1%20"
               "Destekleme%20Birim%20Fiyatlar%C4%B1.pdf")
+BIRIM_DEGER_KAYNAK_URL = "https://www.resmigazete.gov.tr/eskiler/2026/09/20260908-7.pdf"
 URETIM_YILI = 2026
 
-# Temel destek birim değeri: katsayı 1 = bu tutar (TL/dekar).
-# Tablodaki tüm toplamlar bu değerle doğrulandı.
-KATSAYI_BIRIM_TL = 310.00
+# Destek katsayı değeri: katsayı 1 = bu tutar (TL/dekar). 2026 için 367 TL
+# (11781 sayılı Karar m.1/a, 1/1/2026'dan geçerli); 2027 için 442 TL.
+KATSAYI_BIRIM_TL = 367.00
+KATSAYI_BIRIM_TL_2027 = 442.00
+FINDIK_ILCE_SARTI = ("Fındıkta temel ve üretimi geliştirme desteği yalnız fındık "
+                     "üretimine izin verilen ilçelerdeki parsellere ödenir "
+                     "(8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik).")
 
 # ---------------------------------------------------------------------------
 # Yem bitkisi grupları
@@ -311,6 +328,8 @@ def hesapla(
             "Ürününüz farklı bir kategoriye giriyorsa tutar değişir."
         )
     kategori_no, katsayi = temel
+    if _urun_eslesir_mi(urun, ("fındık",)):
+        h.uyarilar.append(FINDIK_ILCE_SARTI)
     ekle(f"Temel destek ({kategori_no}. kategori)", katsayi,
          "2026'da mazot ve gübre destekleri bu kalemde BİRLEŞTİRİLDİ; "
          "artık ayrı mazot/gübre ödemesi yok.")

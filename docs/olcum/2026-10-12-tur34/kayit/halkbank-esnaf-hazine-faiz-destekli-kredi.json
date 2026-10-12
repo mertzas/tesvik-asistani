@@ -1,0 +1,169 @@
+{
+ "slug": "halkbank-esnaf-hazine-faiz-destekli-kredi",
+ "kurum": "Hazine ve Maliye Bakanlığı / Halkbank",
+ "baslik": "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
+ "ozet": "Türkiye Halk Bankası, esnaf ve sanatkârlara kullandırdığı yatırım ve işletme kredilerinde cari faiz oranından indirim yapar; faiz farkını Hazine karşılar. Karar, 1/1/2025-31/12/2027 tarihleri arasında (bu tarihler dâhil) kullandırılacak kredileri kapsar; kredi kefalet olmaksızın doğrudan ya da esnaf kredi ve kefalet kooperatifleri kefaletiyle verilir. Genç girişimci esnaf, ustalık belgeli yeni esnaf ve kaybolmaya yüz tutan mesleklerdeki esnaf için ayrı kategoriler vardır. Faiz indirim oranları 27 Ağustos 2026 tarihli Resmî Gazete'de yayımlanan 11648 sayılı Kararla değiştirilmiştir; güncel oranlar için o Karara ve Halkbank'a bakılmalıdır.",
+ "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "Karar 31/12/2027 tarihine kadar kullandırılacak kredileri kapsıyor ve 27 Ağustos 2026'da (11648 sayılı Kararla) güncellendi; yani yürürlüktedir. Hazine faiz desteği ödemeleri yıllık bütçe ödeneğiyle sınırlı olduğundan fiilen kredi kullandırımı için Halkbank şubesine sorulmalıdır.",
+  "alinti": "(b) 1/1/2025-31/12/2027 tarihleri arasında (bu tarihler dâhil) Banka kredi kullandırımına ilişkin usul ve esaslar çerçevesinde",
+  "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+ },
+ "basvuru_bicimi": "faiz_destegi",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "genel"
+ ],
+ "sirket_turleri": [
+  "sahis"
+ ],
+ "tesvil_tutari": "Hibe değil faiz desteği: Halkbank'ın esnaf kredisine uyguladığı cari faiz oranından, Hazine'nin karşıladığı bir indirim yapılır. İndirim oranları 11648 sayılı Kararla değiştirilmiştir (güncel oranı Karar metninden ve Halkbank'tan doğrulayın). Üst limitler Halkbank sayfasına göre: KOSGEB Uygulamalı Girişimcilik Eğitimi'ni tamamlayan, projesi KOSGEB'ce onaylanan ve 35 yaşını doldurmamış girişimciler için 300.000 TL; ustalık belgesi olup son 1 yıl içinde işletme kuranlar ile kaybolmaya yüz tutan meslek kollarında Esnaf Vergi Muafiyet Belgesi sahibi girişimciler için 1 milyon TL. Diğer esnaf için limit, vade ve teminat Halkbank'ın kendi usulüne göre belirlenir.",
+ "basvuru_yeri": "Türkiye Halk Bankası şubeleri (Kuzey Kıbrıs Türk Cumhuriyeti'ndeki Halkbank şubeleri dâhil)",
+ "basvuru_suresi": "Dönemsel çağrı yoktur; krediler 1/1/2025-31/12/2027 tarihleri arasında kullandırılır. Hazine faiz desteği yıllık bütçe ödeneğiyle sınırlıdır.",
+ "kontrol_listesi": [
+  {
+   "tur": "bilgi",
+   "metin": "Esnaf ve sanatkâr tanımı: esnaf ve sanatkâr siciline/odalarına kayıtlı olanlar (defter tutma hadleri nedeniyle bilanço usulüne geçenler dâhil) ile vergiden muaf meslek ve sanat sahipleri.",
+   "alinti": "esnaf ve sanatkâr siciline ve odalarına kayıtlı olmakla birlikte defter tutma hadleri itibarıyla bilanço usulüne göre defter tutmakla yükümlü hale gelenler ile vergiden muaf bulunan meslek ve sanat sahibi kimseleri,",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Kredi talep eden esnaf; yalnızca esnaf ve sanatkârlar odasına kayıtlı olduğunu, faal esnaflık yaptığını ve ticaret odasına kayıtlı bir ticari işletmenin ortağı/sahibi olmadığını beyan eden taahhütname verir.",
+   "alinti": "yalnızca esnaf ve sanatkârlar odasına kayıtlı olduğunu, faal bir şekilde esnaflık yapmakta olduğunu ve ticaret odasına kayıtlı bir ticari işletmenin ortağı ve/veya sahibi olmadığını beyan eden bir taahhütname alınır.",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Genç girişimci kategorisi: KOSGEB Geleneksel veya İleri Girişimci Eğitimi'ni bitiren, başvuru tarihinde 35 yaşını tamamlamamış girişimci esnaf (KOSGEB hibe/faizsiz kredisinden yararlananlar hariç).",
+   "alinti": "300.000 TL’ye kadar KOSGEB Geleneksel Girişimci Eğitimini ya da İleri Girişimci Eğitimini bitiren, başvuru tarihinde 35 yaşını tamamlamamış olan genç girişimci esnaf ve sanatkârlara,",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Usta kategorisi: en az 1 yıllık ustalık belgesi olan ve ilgili meslek kolunda son 1 yıl içinde kendi adına işletme kurduğunu belgeleyen girişimci esnaf.",
+   "alinti": "5/6/1986 tarihli ve 3308 sayılı Meslekî Eğitim Kanunu kapsamında, kredi başvuru tarihi itibarıyla en az 1 yıllık ustalık belgesine sahip olan ve ustalık belgesiyle ilgili meslek kolunda, son 1 yıl içinde kendi adına işletme kurduğunu belgeleyen girişimci esnaf ve sanatkârlara,",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Kaybolmaya yüz tutan meslek kolu kategorisi: ilgili meslekte faaliyet gösteren ve Esnaf Vergi Muafiyet Belgesi sahibi esnaf.",
+   "alinti": "ve bu işlere benzerlik gösterdikleri Ticaret Bakanlığınca kabul edilen) faaliyet gösteren ve “Esnaf Vergi Muafiyet Belgesi” sahibi esnaf ve sanatkârlara,",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Banka ile protokol yapan kuruluşların girişimcilik eğitimi, danışmanlık ve mentorluk programlarına katılıp projesi kuruluşça onaylanan esnaf, Halkbank'a başvurarak ayrı (protokolle belirlenen) koşullarla faiz destekli kredi kullanabilir.",
+   "alinti": "Banka ile protokol yapan ve bu kapsamda girişimcilik eğitim desteği ile uzun süreli danışmanlık ve mentorluk hizmetlerini sağlayan kuruluşların teknik destek programlarına katılan ve projeleri kuruluş tarafından onaylanan esnaf ve sanatkârlar, Bankaya başvurarak",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Kredi tahsisi sırasında en çok 15 gün öncesinden alınmış yazıyla, vadesi geçmiş vergi borcu ve sosyal güvenlik prim borcu bulunmadığı belgelenir (borcu olanlar için ayrı düzenleme vardır; bu madde 11648 sayılı Kararla yeniden düzenlenmiştir, güncel hâli için Halkbank'a danışın).",
+   "alinti": "en çok 15 gün öncesine kadar bir tarihte alınmış yazı ile belgelendirilecek şekilde, vergi dairelerine 6183 sayılı Kanunun 22/A maddesi kapsamında vadesi geçmiş borcu ile sosyal güvenlik prim borcu bulunmaması,",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Geriye dönük bir yıl içinde en fazla üç kez faiz indirimli kredi kullanılabilir; geri ödemesi devam eden faiz indirimli kredi hesabı sayısı üçü geçemez.",
+   "alinti": "bir yıllık süre içinde en fazla üç defa faiz indirimli kredi kullandırılabilir ve toplamda geri ödemesi devam eden faiz indirimli kredi hesap sayısı üçü geçemez.",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Son 3 yılda diğer kamu kurumlarından toplam 100.000 TL üzeri faiz/hibe desteği alan esnafa, aynı işletme ve aynı konuda bu kapsamda Hazine faiz destekli kredi verilmez.",
+   "alinti": "Başvuru tarihi itibarı ile son 3 yıl içinde, diğer kamu kurum ve kuruluşlarının toplam 100.000 TL üzeri faiz ve/veya hibe desteği niteliğindeki desteklerinden faydalanan esnaf ve sanatkârlara bu Karar kapsamında aynı işletme için aynı konuda Hazine faiz destekli kredi kullandırılmaz.",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Kredi; faaliyet alanı dışında kıymetli maden/döviz alımında, riskli finansal araçlarda, (harcanıncaya kadar Bankada tutulanlar hariç) vadeli mevduatta, portföy/aracı kurumlarda veya benzeri yatırım araçlarında kullanılamaz (bunun taahhütnamesi alınır).",
+   "alinti": "kıymetli maden ve döviz alımında, diğer yüksek riskli finansal araçlarda, harcama yapılıncaya kadar Bankada tutulanlar hariç vadeli mevduatta,",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "1/1/2027-31/12/2027 arasında kullanılacak kredilerde, kredinin en az %33'ünün harcanacağı alan bildirilmeli ve e-fatura/fatura kayıt sistemiyle belgelendirilmelidir.",
+   "alinti": "1/1/2027- 31/12/2027 tarihleri arasında (bu tarihler dâhil) kullanacakları kredilerde en az %33’ünün sarf edileceği harcamayı bildirmek ve e-fatura ve/veya fatura kayıt sistemi üzerinden oluşturulan fatura ile belgelendirmek zorundadır.",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Haksız yararlanma tespit edilirse esnaf, kredi kullandırım tarihinden itibaren 5 yıl boyunca Hazine faiz destekli krediden yararlandırılmaz.",
+   "alinti": "haksız olarak yararlandığı tespit edilen esnaf ve sanatkârlar, kredi kullandırım tarihinden itibaren 5 yıl süreyle Hazine faiz destekli kredi uygulamasından yararlandırılmazlar.",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Kredi limitleri, vadeler, teminat ve geri ödeme koşulları Halkbank'ın kendi usul ve mevzuatıyla belirlenir.",
+   "alinti": "kredi limitleri, vadeleri, yatırım ve ödemesiz dönemlerinin tespit edilmesi, kredilerin teminatlandırılması",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Halkbank sayfasına göre, ustalık belgeli ve son 1 yılda işletme kuran girişimciler için azami kredi limiti 1 milyon TL'dir.",
+   "alinti": "En az 1 yıllık ustalık belgesine sahip ve ilgili meslek kolunda son 1 yıl içinde işletme kuran girişimciler için azami kredi limiti 1 milyon TL’dir.",
+   "kaynak_url": "https://www.halkbank.com.tr/tr/ureten-kadinlar/kadin-girisimci-kredileri/kadin-girisimcilere-sifir-faizli-esnaf-kredisi"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Faiz indirim oranları 27 Ağustos 2026 tarihli Resmî Gazete'de (Sayı 33353) yayımlanan 11648 sayılı Kararla değiştirilmiştir; güncel oranlar için Resmî Gazete ve Halkbank kontrol edilmelidir.",
+   "alinti": "Türkiye Halk Bankası Anonim Şirketince Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi Kullandırılmasına İlişkin Kararda Değişiklik Yapılmasına Dair Karar (Karar Sayısı: 11648)",
+   "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/08/20260827.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Karar 1/1/2025-31/12/2027 arasında kullandırılan kredileri kapsar",
+   "alinti": "(b) 1/1/2025-31/12/2027 tarihleri arasında (bu tarihler dâhil) Banka kredi kullandırımına ilişkin usul ve esaslar çerçevesinde",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "iddia": "Kefaletsiz doğrudan ya da kooperatif kefaletiyle; Halkbank ve KKTC şubeleri",
+   "alinti": "Türkiye Halk Bankası Anonim Şirketi veya Kuzey Kıbrıs Türk Cumhuriyetinde faaliyet gösteren Türkiye Halk Bankası Anonim Şirketi şubeleri tarafından kefalet olmaksızın doğrudan veya",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "iddia": "Hazine faiz desteği yıllık bütçe ödeneğiyle sınırlı",
+   "alinti": "yapılacak ödemelerin toplamı ilgili yıl bütçesine koyulan ödenekle sınırlıdır.",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "iddia": "Genç girişimci: 300.000 TL, KOSGEB girişimci eğitimi, 35 yaş",
+   "alinti": "300.000 TL’ye kadar KOSGEB Geleneksel Girişimci Eğitimini ya da İleri Girişimci Eğitimini bitiren, başvuru tarihinde 35 yaşını tamamlamamış olan genç girişimci esnaf ve sanatkârlara,",
+   "kaynak_url": "https://ms.hmb.gov.tr/uploads/2026/01/Halk-Bankasi-9436-Degisiklikler-Islenmis-40b50aa9284dd3d7.pdf"
+  },
+  {
+   "iddia": "Halkbank: KOSGEB eğitimi tamamlayan 35 yaş altı girişimci azami limit 300.000 TL",
+   "alinti": "KOSGEB Uygulamalı Girişimcilik Eğitimi’ni tamamlayan ve KOSGEB tarafından onaylanan projelerini bankamıza sunan 35 yaşını doldurmamış girişimciler için azami kredi limiti 300.000 TL’dir.",
+   "kaynak_url": "https://www.halkbank.com.tr/tr/ureten-kadinlar/kadin-girisimci-kredileri/kadin-girisimcilere-sifir-faizli-esnaf-kredisi"
+  },
+  {
+   "iddia": "Halkbank: ustalık belgeli girişimci azami limit 1 milyon TL",
+   "alinti": "En az 1 yıllık ustalık belgesine sahip ve ilgili meslek kolunda son 1 yıl içinde işletme kuran girişimciler için azami kredi limiti 1 milyon TL’dir.",
+   "kaynak_url": "https://www.halkbank.com.tr/tr/ureten-kadinlar/kadin-girisimci-kredileri/kadin-girisimcilere-sifir-faizli-esnaf-kredisi"
+  },
+  {
+   "iddia": "Halkbank: kaybolmaya yüz tutan meslek kolları azami limit 1 milyon TL",
+   "alinti": "Kaybolmaya yüz tutan meslek kollarında faaliyet gösteren ve Esnaf Vergi Muafiyet Belgesi sahibi girişimcilere azami kredi limiti 1 milyon TL’dir.",
+   "kaynak_url": "https://www.halkbank.com.tr/tr/ureten-kadinlar/kadin-girisimci-kredileri/kadin-girisimcilere-sifir-faizli-esnaf-kredisi"
+  },
+  {
+   "iddia": "27 Ağustos 2026 tarihli 11648 sayılı değişiklik Kararı",
+   "alinti": "Karar Sayısı: 11648 26 Ağustos 2026 Recep Tayyip ERDOĞAN CUMHURBAŞKANI Sayfa : 12 RESMÎ GAZETE 27 Ağustos 2026 – Sayı : 33353",
+   "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/08/20260827.pdf"
+  },
+  {
+   "iddia": "Değişiklik Kararının adı ve sayısı (11648)",
+   "alinti": "Türkiye Halk Bankası Anonim Şirketince Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi Kullandırılmasına İlişkin Kararda Değişiklik Yapılmasına Dair Karar (Karar Sayısı: 11648)",
+   "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/08/20260827.pdf"
+  },
+  {
+   "iddia": "Esas Karar 9436 sayılı Cumhurbaşkanı Kararı olarak Resmî Gazete'de yayımlandı",
+   "alinti": "Türkiye Halk Bankası Anonim Şirketince Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi Kullandırılmasına İlişkin Karar (Karar Sayısı: 9436)",
+   "kaynak_url": "https://www.resmigazete.gov.tr/17.01.2025"
+  }
+ ]
+}

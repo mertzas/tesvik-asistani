@@ -1,0 +1,851 @@
+{
+ "kaynak": "T.C. Ticaret Bakanlığı, 5973 sayılı İhracat Destekleri Hakkında Karar destek üst limitleri 2026 tabloları: (1) Markalaşma Dairesi - 2026 Destek Limitleri (https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf); (2) 2026 Destek Üst Limitleri_Ur-GE ve Yeşil Dönüşüm Destekleri (https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf); (3) 2026 Destek Üst Limitleri_İhracatın Finansmanı Destekleri (https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_%C4%B0hracat%C4%B1n%20Finansman%C4%B1%20Destekleri.pdf); (4) Yıllar bazında fuar destek üst limitleri, 2026 Destek Üst Limitleri (https://ticaret.gov.tr/data/5c500e9e13b87628e000a0d0/2026%20Destek%20%C3%9Cst%20Limitleri.pdf). Oran ve süre alıntıları Karar'ın güncel metninden: https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf",
+ "tarih": "2026-10-12",
+ "kayitlar": [
+  {
+   "id": 274,
+   "baslik": "Küresel Tedarik Zinciri Desteği (5973 sayılı Karar m.10)",
+   "eski_tesvil_tutari": "Yetkinlik projesi: giderlerin %50'si, 2 yıl süresince, şirket başına 15.000.000 TL'ye kadar; bir şirketin 1 adet projesi desteklenir. Yurt dışı depo kira ve depolama giderleri: %50 oranında, yıllık en fazla 4.000.000 TL'ye kadar, her ülke için en fazla 4 yıl, en fazla 25 birim için (Karar metnindeki tutarlar; üst limit her takvim yılı başında güncellenir).",
+   "yeni_tesvil_tutari": "Yetkinlik projesi: giderlerin %50'si, 2 yıl süresince, şirket başına 73.990.020 TL'ye kadar; bir şirketin 1 adet projesi desteklenir. Yurt dışı depo kira ve depolama giderleri: %50 oranında, yıllık en fazla 19.728.672 TL'ye kadar, her ülke için en fazla 4 yıl, en fazla 25 birim için (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.10/1: yetkinlik projesi giderleri 2 yıl süresince %50 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "2 yıl süresince %50 oranında ve şirket başına 15.000.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Bir şirketin 1 adet yetkinlik projesi desteklenir",
+     "alinti": "Bir şirketin 1 adet küresel tedarik zinciri yetkinlik projesi desteklenir.",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 10: yetkinlik projesi giderleri satırı",
+     "alinti": "Küresel tedarik zinciri yetkinlik projesi kapsamında yer alan giderler",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: yetkinlik projesi 73.990.020 TL (ilk tutar), yurt dışı depo kira ve depolama giderleri 19.728.672 TL (ikinci tutar); sıra tablodaki satır sırasıdır",
+     "alinti": "2026 73.990.020 19.728.672",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 10: depo kira ve depolama satırı",
+     "alinti": "Yurt dışı depo kira gideri ile depolama hizmet giderleri",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "Karar m.10/3: depo kira ve depolama giderleri %50 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "%50 oranında ve yıllık en fazla 4.000.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Her ülke için en fazla 4 yıl",
+     "alinti": "her bir ülke için en fazla 4 yıl yararlandırılır",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "En fazla 25 birim",
+     "alinti": "en fazla 25 birim için yararlanabilir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    }
+   ]
+  },
+  {
+   "id": 275,
+   "baslik": "Yeşil Mutabakata Uyum Projesi Desteği — Responsible® Programı (5973 sayılı Karar m.14)",
+   "eski_tesvil_tutari": "Danışmanlık giderlerinin %50'si, 5 yıl süresince toplamda 10.000.000 TL'ye kadar (Karar metnindeki tutar; üst limit yıllık güncellenir). Faz 1 (mevcut durum analizi ve yol haritası) danışmanlığına ön onaydan sonra ödenecek tutar: mikro ve küçük işletmeler için 500.000 TL, orta büyüklükteki işletmeler için 1.000.000 TL, büyük işletmeler için 1.500.000 TL'ye kadar.",
+   "yeni_tesvil_tutari": "Danışmanlık giderlerinin %50'si, 5 yıl süresince toplamda 17.640.256 TL'ye kadar (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.14: danışmanlık giderleri 5 yıl süresince %50 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "5 yıl süresince %50 oranında ve toplamda 10.000.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 14 başlığı",
+     "alinti": "MADDE 14 YEŞİL MUTABAKATA UYUM PROJESİ DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 14: danışmanlık giderleri satırı",
+     "alinti": "Danışmanlık giderleri",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: Madde 14 danışmanlık giderleri üst limiti 17.640.256 TL",
+     "alinti": "17.640.256",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    }
+   ],
+   "_not": "Eski metindeki Faz 1 ödeme tutarları (mikro/küçük 500.000, orta 1.000.000, büyük 1.500.000 TL) 2026 belgesinde yoktur; güncellenemedi ve yeni metne alınmadı. Kayıtın kontrol_listesi'ndeki Faz 1 tutarı maddesi de eski tutarla kalır."
+  },
+  {
+   "id": 276,
+   "baslik": "Sektörel Ticaret Heyeti ve Alım Heyeti Desteği (5973 sayılı Karar m.24)",
+   "eski_tesvil_tutari": "Sektörel ticaret heyeti: giderlerin %50'si, faaliyet başına 1.500.000 TL'ye kadar. Sektörel alım heyeti: giderlerin %50'si, faaliyet başına 1.250.000 TL'ye kadar (Karar metnindeki tutarlar; yıllık güncellenir). Konaklamada kişi başına günlük 2.500 TL sınırı vardır.",
+   "yeni_tesvil_tutari": "Sektörel ticaret heyeti: giderlerin %50'si, faaliyet başına 7.396.548 TL'ye kadar. Sektörel alım heyeti: giderlerin %50'si, faaliyet başına 6.164.697 TL'ye kadar. Konaklamada kişi başına günlük 12.264 TL sınırı vardır (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.24/1: sektörel ticaret heyeti giderleri %50 oranında desteklenir",
+     "alinti": "sektörel ticaret heyeti faaliyetlerine ilişkin ulaşım, konaklama, tanıtım ve organizasyon giderleri %50 oranında",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.24/2: sektörel alım heyeti giderleri %50 oranında desteklenir",
+     "alinti": "sektörel alım heyeti faaliyetlerine ilişkin ulaşım, konaklama, tanıtım ve organizasyon giderleri %50 oranında",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 24 başlığı",
+     "alinti": "MADDE 24 KAPSAMINDA SEKTÖREL TİCARET HEYETİ VE ALIM HEYETİ DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 tablosu: sektörel ticaret heyeti satırı",
+     "alinti": "Sektörel ticaret heyeti faaliyetine ilişkin giderler (faaliyet başına)",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: sektörel ticaret heyeti faaliyet başına 7.396.548 TL",
+     "alinti": "7.396.548",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 tablosu: alım heyeti satırı (Madde 24 ve Madde 19 bloklarında geçer)",
+     "alinti": "Alım heyeti faaliyetine ilişkin giderler (faaliyet başına)",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: Madde 24 alım heyeti faaliyet başına 6.164.697 TL",
+     "alinti": "6.164.697",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 tablosu: kişibaşı günlük konaklama gideri satırı",
+     "alinti": "Kişibaşı günlük konaklama gideri",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: Madde 24 kişibaşı günlük konaklama gideri 12.264 TL",
+     "alinti": "12.264",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 277,
+   "baslik": "Pazara Giriş Projesi Hazırlama Desteği (5973 sayılı Karar m.5)",
+   "eski_tesvil_tutari": "Danışmanlık ve rapor giderlerinin %50'si, proje başına 200.000 TL'ye kadar (Karar metnindeki tutar; üst limit her takvim yılı başında güncellenir). Bir şirketin en fazla 2 adet pazara giriş projesi desteklenir.",
+   "yeni_tesvil_tutari": "Danışmanlık ve rapor giderlerinin %50'si, proje başına 983.843 TL'ye kadar. Bir şirketin en fazla 2 adet pazara giriş projesi desteklenir (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.5: danışmanlık ve rapor giderleri %50 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "danışmanlık ve rapor giderleri %50 oranında ve proje başına 200.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Bir şirketin en fazla 2 adet pazara giriş projesi desteklenir",
+     "alinti": "Bir şirketin en fazla 2 adet pazara giriş projesi desteklenir.",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 5 başlığı",
+     "alinti": "MADDE 5 KAPSAMINDA PAZARA GİRİŞ PROJESİ HAZIRLAMA DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 5 satırı",
+     "alinti": "Danışmanlık ve rapor alımına yönelik giderler",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: Madde 5 üst limiti 983.843 TL",
+     "alinti": "983.843",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 278,
+   "baslik": "Yurt Dışı Fuar Desteği (5973 sayılı Karar m.7)",
+   "eski_tesvil_tutari": "Fuar başına destek üst sınırı: genel nitelikli fuarda 150.000 TL, sektörel nitelikli fuarda 250.000 TL, bakanlıkça belirlenen prestijli fuarda 750.000 TL (Karar metnindeki tutarlar; yıllık güncellenir). Desteğe esas tutar, metrekare başına yaklaşık toplam maliyetin %50'sini, hedef ülkelerde %70'ini, hedef ülke ve hedef sektör birlikteyse %75'ini geçemez. Takvim yılında en fazla 5 fuar desteklenir.",
+   "yeni_tesvil_tutari": "Fuar başına destek üst sınırı: genel nitelikli fuarda 738.563 TL, sektörel nitelikli fuarda 1.231.848 TL, Bakanlıkça belirlenen prestijli fuarda 3.698.274 TL. Desteğe esas tutar, metrekare başına yaklaşık toplam maliyetin %50'sini, hedef ülkelerde %70'ini, hedef ülke ve hedef sektör birlikteyse %75'ini geçemez. Takvim yılında en fazla 5 fuar desteklenir (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "2026 fuar tablosu Madde 7 başlığı",
+     "alinti": "MADDE 7 KAPSAMINDA YURT DIŞI FUAR DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/5c500e9e13b87628e000a0d0/2026%20Destek%20%C3%9Cst%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Sütun başlıkları (Genel, Sektörel, Prestijli)",
+     "alinti": "Bakanlık Tarafından Belirlenen Fuarlar Genel Nitelikli FuarlarSektörel Nitelikli Fuarlar Prestijli Fuarlar",
+     "kaynak_url": "https://ticaret.gov.tr/data/5c500e9e13b87628e000a0d0/2026%20Destek%20%C3%9Cst%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 satırı: son üç sütun sırasıyla genel nitelikli 738.563, sektörel nitelikli 1.231.848, prestijli fuar 3.698.274 TL",
+     "alinti": "2026 4.930.122 9.862.972 738.563 1.231.848 3.698.274",
+     "kaynak_url": "https://ticaret.gov.tr/data/5c500e9e13b87628e000a0d0/2026%20Destek%20%C3%9Cst%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Karar m.7/2: fuar bazında destek tutarı genel, sektörel ve prestijli fuar sınıflarına göre sınırlanır (tutarlar Karar tabanıdır)",
+     "alinti": "yurt dışı fuarın genel nitelikli olması halinde 150.000 TL’yi; sektörel nitelikli olması halinde 250.000 TL’yi; Bakanlıkça (İhracat Genel Müdürlüğü) belirlenen yurt dışı prestijli fuarlardan",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.7/3: desteğe esas tutar %50, hedef ülkelerde %70",
+     "alinti": "metrekare başına yaklaşık toplam maliyetin %50’sini, Bakanlıkça belirlenen hedef ülkelerde %70’ini",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.7/3: hedef ülke ve hedef sektör birlikteyse %75",
+     "alinti": "yurt dışı fuar katılımcıları için %75’ini geçemez",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Takvim yılında en fazla 5 fuar",
+     "alinti": "bir takvim yılı içinde başlayan en fazla 5 fuara mahsus",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    }
+   ]
+  },
+  {
+   "id": 304,
+   "baslik": "Eximbank Faiz Farkı (CIRR), İhracat Kredi Sigortası Tazmin ve Alıcı Kredisi Desteği (5973 sayılı Karar m.13)",
+   "eski_tesvil_tutari": "Alıcı kredilerinde Eximbank faiz oranı ile CIRR arasındaki farka tekabül eden faiz giderinin tamamı. Sigorta reasürans zarar rasyosunun %60'ı aşan kısmına ilişkin Eximbank payı yıllık en fazla 20.000.000 TL'ye kadar; reasüre edilemeyen tazminat %50 oranında, yıllık en fazla 100.000.000 TL'ye kadar; geri ödenmeyen alıcı kredilerinde Eximbank üzerinde kalan risk %25 oranında, yıllık toplam en fazla 1.000.000.000 TL'ye kadar (Karar metnindeki tutar; yıllık güncellenir).",
+   "yeni_tesvil_tutari": "Alıcı kredilerinde Eximbank faiz oranı ile CIRR arasındaki farka tekabül eden faiz giderinin tamamı. Sigorta reasürans zarar rasyosunun %60'ı aşan kısmına ilişkin Eximbank payı yıllık en fazla 98.654.268 TL'ye kadar; reasüre edilemeyen tazminat %50 oranında, yıllık en fazla 493.271.347 TL'ye kadar; geri ödenmeyen alıcı kredilerinde Eximbank üzerinde kalan risk %25 oranında, yıllık toplam en fazla 1.292.800.000 TL'ye kadar (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.13/1: faiz farkı giderinin tamamı desteklenir",
+     "alinti": "farka tekabül eden faiz giderinin tamamı desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.13/2: zarar rasyosunun %60'ın üzerindeki kısmı",
+     "alinti": "takvim yılı bazında %60’ın üzerine çıkması durumunda",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.13/3: reasüre edilemeyen tazminat %50 oranında",
+     "alinti": "reasüre edilemeyen kısmı %50 o ranında ve yıllık en fazla",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.13/4: Eximbank üzerinde kalan risk %25 oranında",
+     "alinti": "Eximbank üzerinde kalan risk %25 oranında ve",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 13 başlığı",
+     "alinti": "MADDE 13 KAPSAMINDA EXİMBANK’IN UYGULADIĞI FAİZ ORANI İLE CIRR ARASINDAKİ FARKIN DESTEKLENMESİ VE EXİMBANK İHRACAT KREDİ SİGORTASI TAZMİN DESTEĞİ İLE ALICI KREDİSİ TAZMİN DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_%C4%B0hracat%C4%B1n%20Finansman%C4%B1%20Destekleri.pdf"
+    },
+    {
+     "iddia": "Madde 13 satırı: reasüre edilen risklerin tazminat gideri",
+     "alinti": "İhracat kredi sigortası reasüre edilen risklerin tazminat gideri",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_%C4%B0hracat%C4%B1n%20Finansman%C4%B1%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: reasüre edilen riskler satırı 98.654.268 TL",
+     "alinti": "98.654.268",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_%C4%B0hracat%C4%B1n%20Finansman%C4%B1%20Destekleri.pdf"
+    },
+    {
+     "iddia": "Madde 13 satırı: reasüre edilemeyen tazminat gideri",
+     "alinti": "İhracat kredi sigorta programı reasüre edilemeyen tazminat gideri",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_%C4%B0hracat%C4%B1n%20Finansman%C4%B1%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: reasüre edilemeyen tazminat satırı 493.271.347 TL",
+     "alinti": "493.271.347",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_%C4%B0hracat%C4%B1n%20Finansman%C4%B1%20Destekleri.pdf"
+    },
+    {
+     "iddia": "Madde 13 satırı: alıcı kredisi tazminat gideri",
+     "alinti": "Alıcı kredisi tazminat gideri",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_%C4%B0hracat%C4%B1n%20Finansman%C4%B1%20Destekleri.pdf"
+    },
+    {
+     "iddia": "Alıcı kredisi tazminat gideri satırında 2025 ve 2026 sütunları; 2026 = 1.292.800.000 TL",
+     "alinti": "1.000.000.000 1.292.800.000",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_%C4%B0hracat%C4%B1n%20Finansman%C4%B1%20Destekleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 305,
+   "baslik": "Tasarımcı Şirket ve Tasarım Ofisi Desteği (5973 sayılı Karar m.15)",
+   "eski_tesvil_tutari": "4 yıl süresince %50 oranında ve yıllık 5.000.000 TL'ye kadar (Karar metnindeki tutar; yıllık güncellenir). Destek kapsamındaki şirketlere yıllık verilecek destek tutarı yıllık ihracatının yarısından fazla olamaz; destek, kapsama alındığı tarihten itibaren en fazla dört yıl sürer.",
+   "yeni_tesvil_tutari": "4 yıl süresince %50 oranında ve yıllık 24.656.061 TL'ye kadar. Destek kapsamındaki şirketlere yıllık verilecek destek tutarı yıllık ihracatının yarısından fazla olamaz; destek, kapsama alındığı tarihten itibaren en fazla dört yıl sürer (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.15: 4 yıl süresince %50 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "4 yıl süresince %50 oranında ve yıllık 5.000.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 15 başlığı",
+     "alinti": "MADDE 15 KAPSAMINDA TASARIMCI ŞİRKET VE TASARIM OFİSİ DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Yıllık toplam destek tutarı: hem Tasarımcı Şirket hem Tasarım Ofisi sütun grubunda 2026 = 24.656.061 TL",
+     "alinti": "Yıllık toplam destek tutarı 5.000.000 9.047.000 13.977.160 19.071.832 24.656.061 5.000.000 9.047.000 13.977.160 19.071.832 24.656.061",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 306,
+   "baslik": "Gemi ve Yat Sektöründe Faaliyet Gösteren Şirketlere Tasarım Desteği (5973 sayılı Karar m.16)",
+   "eski_tesvil_tutari": "5 yıl süresince %50 oranında ve yıllık 3.000.000 TL'ye kadar (Karar metnindeki tutar; yıllık güncellenir).",
+   "yeni_tesvil_tutari": "5 yıl süresince %50 oranında ve yıllık 14.795.821 TL'ye kadar (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.16: 5 yıl süresince %50 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "5 yıl süresince %50 oranında ve yıllık 3.000.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 16 başlığı",
+     "alinti": "MADDE 16 KAPSAMINDA GEMİ VE YAT SEKTÖRÜNDE FAALİYET GÖSTEREN ŞİRKETLERE TASARIM DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 16 satırı",
+     "alinti": "Tasarım hizmetine ilişkin giderler",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: Madde 16 'Tasarım hizmetine ilişkin giderler' yıllık üst limiti 14.795.821 TL (aynı rakam Madde 26 organizasyon satırında da geçer)",
+     "alinti": "14.795.821",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 307,
+   "baslik": "Marka ve TURQUALITY® Desteği (5973 sayılı Karar m.17)",
+   "eski_tesvil_tutari": "Marka destek programı: %50 oranında, 4 yıl süresince. TURQUALITY® destek programı: %50 oranında; hedef pazara yönelik faaliyetler her hedef pazar için 5 yıl, kurumsal altyapı ve istihdam giderleri ilk 5 yıllık dönem için (Karar metnindeki tutar; yıllık güncellenir).",
+   "yeni_tesvil_tutari": "Marka destek programı: %50 oranında, 4 yıl süresince; yıllık toplam destek tutarı 246.634.310 TL'ye kadar. TURQUALITY® destek programı: %50 oranında; yıllık toplam destek tutarı 493.271.347 TL'ye kadar; hedef pazara yönelik faaliyetler her hedef pazar için 5 yıl, kurumsal altyapı ve istihdam giderleri ilk 5 yıllık dönem için (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.17/1: marka destek programı giderleri 4 yıl süresince %50 oranında desteklenir",
+     "alinti": "giderleri 4 yıl süresince %50 oranında desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.17/2: TURQUALITY® destek programı giderleri %50 oranında desteklenir",
+     "alinti": "konsept mimari çalışma ve franchise giderleri %50 oranında desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.17/3: her hedef pazar için 5 yıl",
+     "alinti": "her bir hedef pazar için 5 yıl süreyle desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.17/4: kurumsal altyapı ve istihdam giderleri ilk 5 yıllık dönem için",
+     "alinti": "ilk 5 yıllık dönemi için desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 17 başlığı",
+     "alinti": "MADDE 17 KAPSAMINDA MARKA VE TURQUALITY® DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Madde 17 satırı: marka destek programı yıllık toplam destek tutarı",
+     "alinti": "Marka destek programı yıllık toplam destek tutarı",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: marka destek programı yıllık toplam 246.634.310 TL",
+     "alinti": "246.634.310",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Madde 17 satırı: TURQUALITY® destek programı yıllık toplam destek tutarı",
+     "alinti": "TURQUALITY® destek programı yıllık toplam destek tutarı",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: TURQUALITY® destek programı yıllık toplam 493.271.347 TL",
+     "alinti": "493.271.347",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 308,
+   "baslik": "Çok Kanallı Zincir Mağaza Desteği (5973 sayılı Karar m.18)",
+   "eski_tesvil_tutari": "5 yıl süresince %50 oranında ve yıllık 180.000.000 TL'ye kadar (Karar metnindeki tutar; yıllık güncellenir). Performans değerlendirmesiyle destek süresi bir defaya mahsus 5 yıl daha uzatılabilir.",
+   "yeni_tesvil_tutari": "5 yıl süresince %50 oranında ve yıllık 317.524.608 TL'ye kadar. Performans değerlendirmesiyle destek süresi bir defaya mahsus 5 yıl daha uzatılabilir (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.18/1: 5 yıl süresince %50 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "5 yıl süresince %50 oranında ve yıllık 180.000.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.18/2: destek süresi bir defaya mahsus 5 yıl daha uzatılabilir",
+     "alinti": "destek süresi bir defaya mahsus 5 yıl daha uzatılabilir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 18 başlığı",
+     "alinti": "MADDE 18 KAPSAMINDA ÇOK KANALLI ZİNCİR MAĞAZA DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: Madde 18 yıllık toplam destek tutarı 317.524.608 TL",
+     "alinti": "317.524.608",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 309,
+   "baslik": "UR-GE Proje Desteği (5973 sayılı Karar m.19)",
+   "eski_tesvil_tutari": "%75 oranında: ihtiyaç analizi, eğitim, danışmanlık ve tanıtım proje bazında 6.000.000 TL'ye kadar; yurt dışı pazarlama faaliyeti başına 2.500.000 TL'ye (azami 10 adet), alım heyeti faaliyeti başına 1.500.000 TL'ye (azami 10 adet), sanal yurt dışı pazarlama faaliyeti başına 800.000 TL'ye (azami 10 adet) kadar; proje işleyişini geliştirme faaliyetleri yıllık en fazla 4.000.000 TL'ye kadar tamamı; en fazla 2 uzman personelin istihdam giderlerinin %75'i (Karar metnindeki tutar; yıllık güncellenir). Proje süresi 3 yıl, performansa göre 2 yıla kadar ilave süre verilebilir.",
+   "yeni_tesvil_tutari": "%75 oranında: ihtiyaç analizi, eğitim, danışmanlık ve tanıtım proje bazında 29.594.373 TL'ye kadar; yurt dışı pazarlama faaliyeti başına 12.329.397 TL'ye (azami 10 adet), alım heyeti faaliyeti başına 7.396.548 TL'ye (azami 10 adet), sanal yurt dışı pazarlama faaliyeti başına 3.943.553 TL'ye (azami 10 adet) kadar; proje işleyişini geliştirme faaliyetleri yıllık en fazla 19.728.672 TL'ye kadar tamamı; en fazla 2 uzman personelin istihdam giderlerinin %75'i. Proje süresi 3 yıl, performansa göre 2 yıla kadar ilave süre verilebilir (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.19/1: ihtiyaç analizi, eğitim, danışmanlık ve tanıtım giderleri %75 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "giderleri %75 oranında ve proje bazında 6.000.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.19/2: en fazla 2 uzman personelin istihdam giderlerinin %75'i",
+     "alinti": "en fazla 2 uzman personelin proje süresince yapılacak istihdam giderlerinin %75’i desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.19/3: azami 10 adet yurt dışı pazarlama faaliyeti",
+     "alinti": "azami 10 adet yurt dışı pazarlama faaliyetine",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.19/3: azami 10 adet alım heyeti faaliyeti",
+     "alinti": "azami 10 adet alım heyeti faaliyetine",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.19/4: azami 10 adet sanal yurt dışı pazarlama faaliyeti",
+     "alinti": "azami 10 adet sanal yurt dışı pazarlama faaliyetine",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.19/5: işleyişi geliştirme faaliyet giderlerinin tamamı desteklenir (tutar Karar tabanıdır)",
+     "alinti": "giderlerin tamamı yıllık en fazla 4.000.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.19/6: proje süresi 3 yıl, 2 yıla kadar ilave süre",
+     "alinti": "projelerinin süresi 3 yıldır. Proje süresine projenin performansına göre 2 yıla kadar ilave süre verilebilir.",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 19 başlığı",
+     "alinti": "MADDE 19 KAPSAMINDA URGE PROJESİ DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "Madde 19 satırı: ihtiyaç analizi, eğitim, danışmanlık, tanıtım",
+     "alinti": "İhtiyaç analizi, eğitim, danışmanlık, tanıtım faaliyetlerine ilişkin giderler",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: ihtiyaç analizi, eğitim, danışmanlık, tanıtım 29.594.373 TL",
+     "alinti": "29.594.373",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "Madde 19 satırı: yurt dışı pazarlama faaliyeti başına",
+     "alinti": "Yurt dışı pazarlama faaliyetine ilişkin giderler (faaliyet başına)",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: yurt dışı pazarlama faaliyeti başına 12.329.397 TL",
+     "alinti": "12.329.397",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: Madde 19 alım heyeti faaliyeti başına 7.396.548 TL",
+     "alinti": "7.396.548",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "Madde 19 satırı: sanal yurt dışı pazarlama faaliyeti başına",
+     "alinti": "Sanal yurt dışı pazarlama faaliyetine ilişkin giderler (faaliyet başına)",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: sanal yurt dışı pazarlama faaliyeti başına 3.943.553 TL",
+     "alinti": "3.943.553",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "Madde 19 satırı: UR-GE projelerinin işleyişini geliştirme faaliyetleri",
+     "alinti": "URGE projelerinin işleyişinin geliştirilmesine yönelik işbirliği kuruluşları tarafından gerçekleştirilecek",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: işleyişi geliştirme faaliyetleri 19.728.672 TL",
+     "alinti": "19.728.672",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 310,
+   "baslik": "İhracat Konsorsiyumu Desteği (5973 sayılı Karar m.20)",
+   "eski_tesvil_tutari": "%50 oranında ve yıllık 48.000.000 TL'ye kadar (Karar metnindeki tutar; yıllık güncellenir). Hedef pazara yönelik giderler her hedef pazar için 5 yıl süreyle; kurumsal altyapıya yönelik danışmanlık ve eğitim giderleri ilk 5 yıllık destek dönemi için desteklenir.",
+   "yeni_tesvil_tutari": "%50 oranında ve yıllık 62.054.400 TL'ye kadar. Hedef pazara yönelik giderler her hedef pazar için 5 yıl süreyle; kurumsal altyapıya yönelik danışmanlık ve eğitim giderleri ilk 5 yıllık destek dönemi için desteklenir (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.20/1: giderler %50 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "giderleri %50 oranında ve yıllık 48.000.000 TL'ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.20/2: her hedef pazar için 5 yıl",
+     "alinti": "her bir hedef pazar için 5 yıl süreyle desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.20/3: kurumsal altyapı danışmanlık ve eğitim giderleri ilk 5 yıllık dönem",
+     "alinti": "ilk 5 yıllık destek dönemi için desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 20 başlığı",
+     "alinti": "MADDE 20 KAPSAMINDA İHRACAT KONSORSİYUMU DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_%C4%B0hracat%C4%B1n%20Finansman%C4%B1%20Destekleri.pdf"
+    },
+    {
+     "iddia": "Madde 20 satırı",
+     "alinti": "Tanıtım, pazarlama, pazar araştırması, rapor satın alma, danışmanlık ve eğitim faaliyetleri giderleri",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_%C4%B0hracat%C4%B1n%20Finansman%C4%B1%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: Madde 20 üst limiti 62.054.400 TL",
+     "alinti": "62.054.400",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_%C4%B0hracat%C4%B1n%20Finansman%C4%B1%20Destekleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 311,
+   "baslik": "Pazara Giriş Rapor Desteği (5973 sayılı Karar m.21)",
+   "eski_tesvil_tutari": "Rapor giderleri %50 oranında ve yıllık 3.000.000 TL'ye kadar (Karar metnindeki tutar; yıllık güncellenir). Satın alınan raporların ödeme belgesi tarihi itibarıyla en fazla 2 yıllık olması gerekir.",
+   "yeni_tesvil_tutari": "Rapor giderleri %50 oranında ve yıllık 14.795.822 TL'ye kadar (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.21: rapor giderleri %50 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "rapor giderleri %50 oranında ve yıllık 3.000.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 21 başlığı",
+     "alinti": "MADDE 21 KAPSAMINDA PAZARA GİRİŞ RAPOR DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 21 satırı",
+     "alinti": "Rapor giderleri",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: Madde 21 üst limiti 14.795.822 TL",
+     "alinti": "14.795.822",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    }
+   ],
+   "_not": "Eski metindeki 'Satın alınan raporların ödeme belgesi tarihi itibarıyla en fazla 2 yıllık olması gerekir' cümlesi tutar değil koşuldur; 2026 belgesinde geçmediği için yeni metne alınmadı, kayıtın kontrol_listesi'nde (sart, alıntılı) zaten durur."
+  },
+  {
+   "id": 312,
+   "baslik": "Sanal Fuar Organizasyonu Desteği (5973 sayılı Karar m.23)",
+   "eski_tesvil_tutari": "Sanal fuar organizasyonu giderleri %50 oranında ve faaliyet başına 1.500.000 TL'ye kadar (Karar metnindeki tutar; yıllık güncellenir).",
+   "yeni_tesvil_tutari": "Sanal fuar organizasyonu giderleri %50 oranında ve faaliyet başına 7.396.548 TL'ye kadar (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.23: sanal fuar organizasyonuna dair giderler %50 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "sanal fuar organizasyon una dair giderler %50 oranında ve",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 fuar tablosu Madde 22 ve 23 başlığı",
+     "alinti": "MADDE 22 VE 23 KAPSAMINDA SANAL FUARA KATILIM VE SANAL FUAR ORGANİZASYONU DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/5c500e9e13b87628e000a0d0/2026%20Destek%20%C3%9Cst%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Sütun başlıkları: sanal fuara katılım, sanal fuar organizasyon desteği",
+     "alinti": "SANAL FUARA KATILIM DESTEĞİ SANAL FUAR ORGANİZASYON DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/5c500e9e13b87628e000a0d0/2026%20Destek%20%C3%9Cst%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 satırı: ikinci sütun (sanal fuar organizasyon desteği) = 7.396.548 TL; birinci sütun (sanal fuara katılım, Madde 22) bu kaydın kapsamı dışındadır",
+     "alinti": "3.698.274 7.396.548",
+     "kaynak_url": "https://ticaret.gov.tr/data/5c500e9e13b87628e000a0d0/2026%20Destek%20%C3%9Cst%20Limitleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 313,
+   "baslik": "Sanal Ticaret Heyeti Desteği (5973 sayılı Karar m.25)",
+   "eski_tesvil_tutari": "Sanal ticaret heyeti faaliyetine ilişkin giderler %50 oranında ve faaliyet başına 1.000.000 TL'ye kadar (Karar metnindeki tutar; yıllık güncellenir).",
+   "yeni_tesvil_tutari": "Sanal ticaret heyeti faaliyetine ilişkin giderler %50 oranında ve faaliyet başına 4.930.123 TL'ye kadar (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.25: sanal ticaret heyeti giderleri %50 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "sanal ticaret heyeti faaliyetlerine ilişkin giderler %50 oranında ve",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 25 başlığı",
+     "alinti": "MADDE 25 KAPSAMINDA SANAL TİCARET HEYETİ DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 25 satırı",
+     "alinti": "Sanal ticaret heyeti faaliyetine ilişkin giderler (faaliyet başına)",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: Madde 25 faaliyet başına 4.930.123 TL",
+     "alinti": "4.930.123",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/2026%20Destek%20%C3%9Cst%20Limitleri_Ur-GE%20ve%20Ye%C5%9Fil%20D%C3%B6n%C3%BC%C5%9F%C3%BCm%20Destekleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 314,
+   "baslik": "Tasarım Organizasyonu Desteği (5973 sayılı Karar m.26)",
+   "eski_tesvil_tutari": "Organizasyon ve tanıtım giderleri %50 oranında ve proje başına 3.000.000 TL'ye kadar. Yarışmada dereceye giren yıllık en fazla altmış kişinin yurt dışı eğitim giderleri ile aylık 20.000 TL'yi aşmamak kaydıyla yaşam giderlerine ilişkin harcamaların tamamı 1 yıl süresince desteklenir (Karar metnindeki tutar; yıllık güncellenir).",
+   "yeni_tesvil_tutari": "Organizasyon ve tanıtım giderleri %50 oranında ve proje başına 14.795.821 TL'ye kadar. Yarışmada dereceye giren yıllık en fazla altmış kişinin yurt dışı eğitim giderleri ile aylık 98.110 TL'yi aşmamak kaydıyla yaşam giderlerine ilişkin harcamaların tamamı 1 yıl süresince desteklenir (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.26/1: organizasyon ve tanıtım giderleri %50 oranında desteklenir (tutar Karar tabanıdır)",
+     "alinti": "tanıtım, reklam ve pazarlama faaliyetlerine ilişkin giderleri %50 oranında ve proje başına",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.26/2: yıllık en fazla altmış kişinin yurt dışı eğitim ve yaşam giderleri",
+     "alinti": "yıllık en fazla altmış kişinin yurt dışındaki eğitim giderleri ile aylık",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.26/2: harcamaların tamamı 1 yıl süresince desteklenir",
+     "alinti": "harcamaların tamamı 1 yıl süresince desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 26 başlığı",
+     "alinti": "MADDE 26 KAPSAMINDA TASARIM ORGANİZASYONU DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Madde 26 satırı: yurt dışı eğitim gideri (aylık)",
+     "alinti": "Yurt dışı eğitim gideri (aylık)",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: aylık yurt dışı eğitim gideri 98.110 TL",
+     "alinti": "98.110",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Madde 26 satırı: organizasyon ve tanıtım, reklam, pazarlama giderleri",
+     "alinti": "Organizasyonlar ile bu faaliyetlerin tanıtım, reklam ve pazarlama faaliyetlerine ilişkin giderleri",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: organizasyon ve tanıtım giderleri 14.795.821 TL",
+     "alinti": "14.795.821",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 315,
+   "baslik": "TURQUALITY® Tanıtım Projesi Desteği (5973 sayılı Karar m.27)",
+   "eski_tesvil_tutari": "%75 oranında, proje başına en fazla dört yıl: ihracatçı birlikleri için proje başına yıllık en fazla 12.000.000 TL; TİM ve iştigal ettiği sektörü tek başına temsil eden ihracatçı birlikleri ve bölgesel birlikler için proje başına yıllık en fazla 22.500.000 TL; birden fazla ihracatçı birliğinin ortak projesinde ihracatçı birliği başına yıllık en fazla 12.000.000 TL (Karar metnindeki tutar; yıllık güncellenir).",
+   "yeni_tesvil_tutari": "%75 oranında, proje başına en fazla dört yıl: ihracatçı birlikleri için proje başına yıllık en fazla 21.168.307 TL; TİM ve iştigal ettiği sektörü tek başına temsil eden ihracatçı birlikleri ve bölgesel birlikler için proje başına yıllık en fazla 39.690.576 TL; birden fazla ihracatçı birliğinin ortak projesinde ihracatçı birliği başına yıllık en fazla 21.168.307 TL (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.27/1-a: ihracatçı birlikleri için %75 oranında",
+     "alinti": "İhracatçı birlikleri için %75 oranında ve proje başına yıllık en fazla",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.27/1-b: TİM, sektörü tek başına temsil eden ve bölgesel birlikler için %75 oranında",
+     "alinti": "bölgesel birlikler için %75 oranında ve proje başına yıllık en fazla",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.27/1-c: ortak proje için %75 oranında, ihracatçı birliği başına",
+     "alinti": "ortak proje için %75 oranında ve ihracatçı birliği başına yıllık en fazla",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Proje başına en fazla dört yıl",
+     "alinti": "proje başına en fazla dört yıl süresince desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 27 başlığı",
+     "alinti": "MADDE 27 KAPSAMINDA TURQUALITY® TANITIM PROJESİ DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Madde 27 satırı: İhracatçı Birliği başına",
+     "alinti": "Proje başına yıllık destek tutarı (İhracatçı Birliği başına)",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: ihracatçı birliği başına proje yıllık 21.168.307 TL",
+     "alinti": "21.168.307",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Madde 27 satırı: sektörü tek başına temsil eden / bölgesel ihracatçı birliği",
+     "alinti": "Proje başına yıllık destek tutarı (Sektörü Tek Başına Temsil Eden/Bölgesel İhracatçı Birliği)",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Madde 27 satırı: TİM",
+     "alinti": "Proje başına yıllık destek tutarı (TİM)",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: sektörü tek başına temsil eden/bölgesel birlik ve TİM satırlarında proje yıllık 39.690.576 TL",
+     "alinti": "39.690.576",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 316,
+   "baslik": "Yurt İçi Fuar Desteği (5973 sayılı Karar m.8)",
+   "eski_tesvil_tutari": "Yurt içi fuarlara yönelik destek üst limiti 303.563 TL, prestijli yurt içi fuarlarda 1.000.000 TL (Karar metnindeki tutar; yıllık güncellenir). Desteğe esas tutar, metrekare başına yaklaşık toplam maliyetin %50'sini geçemez. Katılımcı bir takvim yılında başlayan azami 3 fuar için yararlanır. Organizatör tanıtım giderleri %50 oranında: yurt dışı tanıtım 1.500.000 TL'ye, yurt içi tanıtım 500.000 TL'ye kadar.",
+   "yeni_tesvil_tutari": "Yurt içi fuarlara yönelik destek üst limiti 392.446 TL, prestijli yurt içi fuarlarda 1.292.800 TL. Desteğe esas tutar, metrekare başına yaklaşık toplam maliyetin %50'sini geçemez. Katılımcı bir takvim yılında başlayan azami 3 fuar için yararlanır. Organizatör tanıtım giderleri %50 oranında: yurt dışı tanıtım 7.396.548 TL'ye, yurt içi tanıtım 2.463.698 TL'ye kadar (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.8/11: desteğe esas tutar metrekare başına yaklaşık toplam maliyetin %50'sini geçemez",
+     "alinti": "metrekare başına yaklaşık toplam maliyetin %50’sini geçemez",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.8/7: bir takvim yılında başlayan azami 3 fuar katılımı",
+     "alinti": "azami 3 fuar katılımı için dördüncü fıkra kapsamındaki destekten yararlanabilirler",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.8/5: organizatör tanıtım giderleri %50 oranında",
+     "alinti": "tanıtım giderleri %50 oranında, her bir yurt içi fuar için",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 fuar tablosu Madde 8 başlığı",
+     "alinti": "MADDE 8 KAPSAMINDA YURT İÇİ FUAR DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/5c500e9e13b87628e000a0d0/2026%20Destek%20%C3%9Cst%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Sütun başlıkları: katılımcı desteği, prestijli fuar katılımcı desteği, yurt dışı tanıtım desteği",
+     "alinti": "KATILIMCI DESTEĞİ KATILIMCI DESTEĞİ (Prestijli Fuarlar)TANITIM DESTEĞİ (YURT DIŞI TANITIM İÇİN)",
+     "kaynak_url": "https://ticaret.gov.tr/data/5c500e9e13b87628e000a0d0/2026%20Destek%20%C3%9Cst%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 satırı: katılımcı desteği 392.446 TL, prestijli fuarlar 1.292.800 TL, yurt dışı tanıtım desteği 7.396.548 TL",
+     "alinti": "2026 392.446 1.292.800 7.396.548",
+     "kaynak_url": "https://ticaret.gov.tr/data/5c500e9e13b87628e000a0d0/2026%20Destek%20%C3%9Cst%20Limitleri.pdf"
+    },
+    {
+     "iddia": "Sütun başlığı: yurt içi tanıtım desteği",
+     "alinti": "TANITIM DESTEĞİ (YURT İÇİ TANITIM İÇİN)",
+     "kaynak_url": "https://ticaret.gov.tr/data/5c500e9e13b87628e000a0d0/2026%20Destek%20%C3%9Cst%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: yurt içi tanıtım desteği 2.463.698 TL",
+     "alinti": "2.463.698",
+     "kaynak_url": "https://ticaret.gov.tr/data/5c500e9e13b87628e000a0d0/2026%20Destek%20%C3%9Cst%20Limitleri.pdf"
+    }
+   ]
+  },
+  {
+   "id": 317,
+   "baslik": "Şirket ve Marka Alım Desteği (5973 sayılı Karar m.9)",
+   "eski_tesvil_tutari": "Birim kira ve paylaşımlı ofis üyeliği: birim başına yıllık 7.500.000 TL'ye kadar %50. Tanıtım ve pazarlama: %50, yurt dışı birimi bulunan ülke başına yıllık 9.500.000 TL'ye kadar; yurt dışı birimi bulunmayan şirketlerde yıllık en fazla 15.000.000 TL. Mali ve hukuki danışmanlık: %50, yıllık 28.000.000 TL'ye kadar. Faiz desteği: TL kredilerde 5 puan, döviz ve dövize endeksli kredilerde 2 puan, toplam 171.000.000 TL'ye kadar; faiz desteği ödenen faiz giderinin %50'sini aşamaz (Karar metnindeki tutar; yıllık güncellenir). Tanıtım desteği en fazla 4 yıl, toplamda en fazla 25 birim.",
+   "yeni_tesvil_tutari": "Birim kira ve paylaşımlı ofis üyeliği: birim başına yıllık 7.500.000 TL'ye kadar %50. Tanıtım ve pazarlama: %50, yurt dışı birimi bulunan ülke başına yıllık 9.500.000 TL'ye kadar; yurt dışı birimi bulunmayan şirketlerde yıllık en fazla 15.000.000 TL. Mali ve hukuki danışmanlık: %50, yıllık 28.000.000 TL'ye kadar. Faiz desteği: TL kredilerde 5 puan, döviz ve dövize endeksli kredilerde 2 puan, toplam 171.000.000 TL'ye kadar; faiz desteği ödenen faiz giderinin %50'sini aşamaz. Tanıtım desteği en fazla 4 yıl, toplamda en fazla 25 birim (2026 yılı güncellenmiş üst limitler)",
+   "alintilar": [
+    {
+     "iddia": "Karar m.9/1 (7/3/2026 değişikliği): birim kira ve paylaşımlı ofis üyeliği birim başına yıllık 7.500.000 TL, %50",
+     "alinti": "her bir birim başına yıllık 7.500.000 TL’ye kadar %50 oranında desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.9/2: tanıtım ve pazarlama %50, ülke başına yıllık 9.500.000 TL",
+     "alinti": "her bir ülke için yıllık 9.500.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.9/4: yurt dışı birimi bulunmayan şirketlerde %50, yıllık en fazla 15.000.000 TL",
+     "alinti": "%50 oranında ve yıllık en fazla 15.000.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.9/6: mali ve hukuki danışmanlık %50, yıllık 28.000.000 TL",
+     "alinti": "%50 oranında ve yıllık 28.000.000 TL’ye kadar desteklenir",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.9/7: faiz desteği TL kredilerde 5, döviz kredilerinde 2 puan, toplam 171.000.000 TL",
+     "alinti": "Türk Lirası cinsi kredilerde 5 puanı, döviz kredileri ve dövize endeksli kredilerde 2 puanı toplam 171.000.000 TL’ye kadar",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.9/8: faiz desteği ödenen faiz giderinin %50'sini aşamaz",
+     "alinti": "Faiz desteği miktarı ödenen faiz giderinin %50’sini aşamaz",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "Karar m.9/5: tanıtım desteği en fazla 4 yıl, toplamda en fazla 25 birim",
+     "alinti": "tanıtım desteğinden en fazla 4 yıl, kira gideri desteğinden her bir ülke için en fazla 4 yıl ve toplamda en fazla 25 birim için yararlandırılır",
+     "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+     "iddia": "2026 tablosu Madde 9 başlığı (2026 sütunu 7/3/2026 değişikliğiyle aynı tutarları taşır)",
+     "alinti": "MADDE 9 KAPSAMINDA YURT DIŞI ŞİRKET VE YURT DIŞINDA YERLEŞİK ŞİRKETE AİT MARKA ALIM DESTEĞİ",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: yurt dışı birimlerin kira giderleri birim başına 7.500.000 TL",
+     "alinti": "7.500.000",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: birime bağlı tanıtım ve pazarlama giderleri 9.500.000 TL",
+     "alinti": "9.500.000",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: marka tesciline bağlı tanıtım ve pazarlama giderleri 15.000.000 TL",
+     "alinti": "15.000.000",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: yurt dışı şirket alımına yönelik danışmanlık giderleri 28.000.000 TL",
+     "alinti": "28.000.000",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    },
+    {
+     "iddia": "2026 sütunu: yurt dışı şirket alımına yönelik kredi faiz gideri 171.000.000 TL",
+     "alinti": "171.000.000",
+     "kaynak_url": "https://ticaret.gov.tr/data/63c0063e13b8763b44f9df24/Markala%C5%9Fma%20Dairesi%20-%202026%20Destek%20Limitleri.pdf"
+    }
+   ],
+   "_not": "Tutarlar eski kayıtla aynıdır: Karar m.9, 7/3/2026 tarihli değişiklikle (RG 33189) zaten 2026 rakamlarını taşıyor ve Markalaşma Dairesi 2026 tablosu aynı rakamları teyit ediyor. Değişen yalnız sondaki '(Karar metnindeki tutar; yıllık güncellenir)' ifadesinin '(2026 yılı güncellenmiş üst limitler)' olmasıdır."
+  }
+ ]
+}

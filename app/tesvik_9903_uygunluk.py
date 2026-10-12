@@ -27,6 +27,7 @@ tebliğlerle yayımlanır ve sistemde yoktur.
 """
 from __future__ import annotations
 
+import re
 from dataclasses import dataclass
 
 from app.nace_9903 import bolum_sarti, ek3_kaydi, ek3_kayitlari, ek3_yuklendi_mi, il_bolgesi
@@ -109,6 +110,21 @@ def teknoloji_sinifi(nace: str | None) -> str | None:
     return None
 
 
+_KOD = re.compile(r"(?<![\d.])\d{2}(?:\.\d{1,2}){1,3}(?![\d])")
+
+
+def _haric_kod(kayit: dict, n: str) -> str | None:
+    """Kalemin tanım/şart metninde "hariç" denen NACE kodlarından profil koduna önek olarak uyan (ör. 85.5 ↔ 85.53)."""
+    metin = " ".join(str(kayit.get(a) or "") for a in ("tanim", "sartlar"))
+    for cumle in re.split(r"(?<=hariç)", metin):
+        if "hariç" not in cumle:
+            continue
+        for kod in _KOD.findall(cumle):
+            if _rakam(n).startswith(_rakam(kod)) and _rakam(kod) != _rakam(kayit.get("kod", "")):
+                return kod
+    return None
+
+
 def _ek3_durumu(nace: str) -> tuple[str, str]:
     """EK-3 şartı aranan programlar için ('uygun'|'sartli'|'uygun_degil'|'bilinmiyor', açıklama)."""
     if not ek3_yuklendi_mi():
@@ -120,6 +136,12 @@ def _ek3_durumu(nace: str) -> tuple[str, str]:
         return "bilinmiyor", f"NACE kodu kısım düzeyinde ({n}); EK-3 eşleşmesi için en az 2 haneli kod gerekir"
     kayit = ek3_kaydi(n)
     if kayit is not None:
+        haric = _haric_kod(kayit, n)
+        if haric:
+            # "85 Eğitim ... 85.33, 85.4, 85.5 ve 85.6 hariç": hariç tutulan alt kol kesin desteklenmez (persona denemesi
+            # 2026-10-12: sürücü kursu, NACE 85.53, Hedef Yatırımlar için "şartlı" deniyordu).
+            return "uygun_degil", (f"NACE {n}, EK-3'teki '{kayit['kod']} {_tanim(kayit['tanim'])}' kaleminde hariç "
+                                   f"tutulan {haric} alt koluna giriyor; bu programda yatırım konusu desteklenmez")
         sart = (kayit.get("sartlar") or "").strip()
         bolum = bolum_sarti(kayit.get("bolum", "")) or ""
         ek = " ".join(x for x in (sart, bolum) if x)

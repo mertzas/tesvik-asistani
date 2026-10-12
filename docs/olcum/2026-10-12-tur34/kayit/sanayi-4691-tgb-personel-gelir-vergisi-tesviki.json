@@ -1,0 +1,113 @@
+{
+ "slug": "sanayi-4691-tgb-personel-gelir-vergisi-tesviki",
+ "kurum": "Sanayi ve Teknoloji Bakanlığı",
+ "baslik": "Teknoloji Geliştirme Bölgesi Personel Gelir Vergisi Teşviki (4691 sayılı Kanun geçici madde 2, ikinci-üçüncü fıkra)",
+ "ozet": "31/12/2028 tarihine kadar, Teknoloji Geliştirme Bölgesinde çalışan Ar-Ge, tasarım ve destek personelinin bu görevleriyle ilgili ücretleri üzerinden, asgari geçim indirimi uygulandıktan sonra hesaplanan gelir vergisi, verilecek muhtasar beyanname üzerinden tahakkuk eden vergiden indirilerek terkin edilir. Bu kapsamdaki ücretlere ilişkin kâğıtlar damga vergisinden istisnadır. Aynı personelin sigorta primi işveren hissesinin yarısı da 5746 sayılı Kanun uyarınca bütçeden karşılanır.",
+ "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf#gecici-madde-2-personel",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "Kanun metnine göre teşvik 31/12/2028 tarihine kadar uygulanır; 2026-10-12 itibarıyla yürürlüktedir.",
+  "alinti": "31/12/2028 tarihine kadar, bölgede çalışan AR -GE, tasarım ve destek personelinin bu görevleri ile ilgili ücretleri üzerinden asgari geçim indirimi uygulandıktan sonra hesaplanan gelir vergisi;",
+  "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+ },
+ "basvuru_bicimi": "bildirim_prim",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "arge",
+  "hizmet"
+ ],
+ "sirket_turleri": [
+  "sahis",
+  "limited",
+  "anonim"
+ ],
+ "tesvil_tutari": "Vergi teşviki: Bölgede çalışan Ar-Ge, tasarım ve destek personelinin ücretleri üzerinden (asgari geçim indirimi uygulandıktan sonra) hesaplanan gelir vergisi muhtasar beyannameden indirilerek terkin edilir; teşvik 31/12/2028 tarihine kadar uygulanır. Ücretlere ilişkin kâğıtlar damga vergisinden istisnadır. Destek personeli sayısı Ar-Ge ve tasarım personeli sayısının yüzde onunu aşamaz; toplam personeli on beşe kadar olan Bölge firmalarında bu oran yüzde yirmidir. Ayrıca Ar-Ge ve tasarım faaliyetlerinin desteklenmesine ilişkin Kanun uyarınca sigorta primi işveren hissesinin yarısı bütçeden karşılanır.",
+ "basvuru_yeri": "Teknoloji Geliştirme Bölgesi yönetici şirketi ve işyerinin bağlı olduğu vergi dairesi (muhtasar beyanname); teşvik uygulaması yönetici şirketin denetimine tabidir.",
+ "basvuru_suresi": "Çağrı yoktur; Bölgede çalışılan sürece 31/12/2028 tarihine kadar uygulanır.",
+ "kontrol_listesi": [
+  {
+   "tur": "kural",
+   "metin": "Bölgede çalışan Ar-Ge, tasarım ve destek personelinin gelir vergisi (asgari geçim indirimi sonrası) muhtasar beyannameden indirilerek terkin edilir.",
+   "alinti": "31/12/2028 tarihine kadar, bölgede çalışan AR -GE, tasarım ve destek personelinin bu görevleri ile ilgili ücretleri üzerinden asgari geçim indirimi uygulandıktan sonra hesaplanan gelir vergisi;",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Terkin, muhtasar beyanname üzerinden tahakkuk eden vergiden indirilmek suretiyle yapılır.",
+   "alinti": "verilecek muhtasar beyanname üzerinden tahakkuk eden vergiden indirilmek suretiyle terkin edilir.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Bu kapsamdaki ücretlere ilişkin düzenlenen kâğıtlar damga vergisinden istisnadır.",
+   "alinti": "Bu kapsamdaki ücretlere ilişkin düzenlenen kağıtlar damga vergisinden istisnadır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Gelir vergisi ve sigorta primi teşviklerinden yararlanacak destek personeli sayısı, Ar-Ge ve tasarım personeli sayısının yüzde onunu aşamaz.",
+   "alinti": "Gelir vergisi stopajı ve sigorta primi işveren hissesine ilişkin teşviklerden yararlanacak olan d estek personeli sayısı, AR -GE ve tasarım personeli sayısının yüzde onunu aşamaz.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Toplam personel sayısı on beşe kadar olan Bölge firmalarında bu oran yüzde yirmidir.",
+   "alinti": "Toplam personel sayısı on beşe kadar olan Bölge firmaları için bu oran yüzde yirmi olarak uygulanır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Haftalık kırk beş saatin üzerindeki ve ek çalışma sürelerine ilişkin ücretler için bu teşvikten yararlanılamaz.",
+   "alinti": "Haftalık kırk beş saatin üzerindeki ve ek çalışma sürelerine ilişkin ücretler için bu teşvikten faydalanılamaz.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Yönetici şirket, teşvikten yararlanan kişilerin Bölgede fiilen çalışıp çalışmadığını denetler.",
+   "alinti": "Yönetici şirket, ücreti gelir vergisi stopajı teşvikinden yararlanan kişilerin Bölgede fiilen çalışıp çalışmadığını denetler.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Bölge dışında geçirilen süreler için teşvikten yararlanılması hâlinde Bölge yönetici şirketinin onayı alınmalı ve Bakanlık bilgilendirilmelidir.",
+   "alinti": "yönetici şirketinin onayının alınması ve Bakanlığın bilgilendirilmesi zorunludur.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Destek personeli: Ar-Ge veya tasarım faaliyetlerine katılan veya doğrudan ilişkili yönetici, teknik eleman, laborant, sekreter, işçi ve benzeri personeldir.",
+   "alinti": "Destek Personeli: AR- GE veya tasarım faaliyetlerine k atılan veya bu faaliyetlerle doğrudan ilişkili yönetici, teknik eleman, laborant, sekreter, işçi ve benzeri personeli,",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "4691 sayılı Kanunun geçici 2. maddesi uyarınca ücreti gelir vergisinden istisna olan personelin ücreti üzerinden hesaplanan sigorta primi işveren hissesinin yarısı...",
+   "alinti": "4691 sayılı Teknoloji Geliştirme Bölgeleri Kanununun geçici 2 nci maddesi uyarınca ücreti gelir vergisinden istisna olan personelin;",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "...Maliye Bakanlığı bütçesine konulacak ödenekten karşılanır.",
+   "alinti": "ücretleri üzerinden hesaplanan sigorta primi işveren hissesinin yarısı, (…)15 Maliye Bakanlığı bütçesine konulacak ödenekten karşılanır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Teşvik 31/12/2028'e kadar; gelir vergisi muhtasardan indirilerek terkin",
+   "alinti": "31/12/2028 tarihine kadar, bölgede çalışan AR -GE, tasarım ve destek personelinin bu görevleri ile ilgili ücretleri üzerinden asgari geçim indirimi uygulandıktan sonra hesaplanan gelir vergisi;",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "iddia": "Destek personeli sayısı yüzde on sınırı",
+   "alinti": "Gelir vergisi stopajı ve sigorta primi işveren hissesine ilişkin teşviklerden yararlanacak olan d estek personeli sayısı, AR -GE ve tasarım personeli sayısının yüzde onunu aşamaz.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  },
+  {
+   "iddia": "Toplam personeli on beşe kadar firmalarda oran yüzde yirmi",
+   "alinti": "Toplam personel sayısı on beşe kadar olan Bölge firmaları için bu oran yüzde yirmi olarak uygulanır.",
+   "kaynak_url": "https://www.sanayi.gov.tr/assets/pdf/mevzuat/4691SayiliKanun.pdf"
+  }
+ ]
+}

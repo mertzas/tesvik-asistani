@@ -1,0 +1,109 @@
+{
+  "slug": "eximbank-spesifik-ihracat-kredi-sigortasi",
+  "kurum": "Türk Eximbank",
+  "baslik": "Türk Eximbank Spesifik İhracat Kredi Sigortası (tek satış sözleşmesine bağlı, 1 yıldan uzun vadeli yatırım malı ve hizmet ihracatı alacaklarının sigortası)",
+  "ozet": "Tek bir satış sözleşmesine bağlı, azami vadesi OECD düzenlemelerine paralel değerlendirilen ihracat alacaklarını ticari ve politik risklere karşı teminat altına alır. Genellikle yatırım malı satışından doğan 1 yıldan uzun vadeli alacaklar sigortalanır. Katma değeri yüksek sermaye ve/veya yatırım malı ihracatçıları ile hizmet ihracatçıları yararlanabilir. Başvurularda alt veya üst limit yoktur. Sigortalanan işlem için İhracat Alacakları İskonto Programı ile Eximbank'tan veya ticari bankalardan finansman sağlanabilir.",
+  "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Eximbank'ın güncel internet sitesinde program olarak yayınlanmaktadır; dönemsel çağrıya bağlı değildir ve sayfada kapanış tarihi belirtilmemiştir.",
+    "alinti": "Spesifik İhracat Kredi Sigortası programı kapsamında ihracatçılarımızın yurt dışı piyasalarda rekabet üstünlüğü sağlamasına katkıda bulunuyor, gelişmekte olan riskli pazarlarda orta ve uzun vadeli satış imkanlarını artırmalarını sağlıyoruz.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "imalat",
+    "hizmet"
+  ],
+  "tesvil_tutari": "Hibe veya kredi değil, sigorta: başvurularda alt veya üst limit yoktur. Sigorta prim oranı, işlemin özelliklerine (OECD ülke risk sınıfı, vade, ödeme planı, alıcı risk sınıfı, kapsam oranı vb.) göre yapılan gösterge fiyatlama çalışmasıyla belirlenir ve başvuru sahibiyle paylaşılır.",
+  "basvuru_yeri": "Türk Eximbank şubeleri (Başvuru Formu ve diğer belgeler Banka şubesine iletilir)",
+  "basvuru_suresi": "Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Katma değeri yüksek sermaye ve/veya yatırım malı ihracatçıları ile hizmet ihracatçıları yararlanabilir.",
+      "alinti": "Üründen; katma değeri yüksek sermaye ve/veya yatırım malları ihracatı yapan ihracatçılarımız ile hizmet ihracatı yapan ihracatçılarımız faydalanabilmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Program tek bir satış sözleşmesine bağlı ihracat alacaklarını ticari ve politik risklere karşı teminat altına alır.",
+      "alinti": "ihracatçılarımızın tek bir satış sözleşmesine bağlı olarak ve azami vadesi OECD düzenlemelerine paralel olarak değerlendirilecek ihracatlarından doğacak alacaklarını, ticari ve politik risklere karşı teminat altına almak",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Genellikle yatırım malı satışından doğan, vadesi 1 yıldan uzun ihracat alacakları sigortalanır.",
+      "alinti": "genellikle yatırım malları satışından doğan 1 yıldan uzun vadeli ihracat alacakları sigortalanmaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Başvurularda alt veya üst limit yoktur.",
+      "alinti": "başvurular için herhangi bir alt limit veya üst limit bulunmamaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Sigortalanan işlem için İhracat Alacakları İskonto Programı ile Eximbank'tan veya ticari bankalardan finansman sağlanabilir.",
+      "alinti": "İhracat Alacakları İskonto Programı vasıtasıyla Bankamızdan veya ticari bankalardan finansman temin etmelerine imkân sağlamaktır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "adim",
+      "metin": "Süreç, Başvuru Formu ve istenen diğer belgelerin Eximbank şubesine iletilmesiyle başlar; ardından gösterge fiyatlama (sigorta prim oranı) yapılıp sizinle paylaşılır.",
+      "alinti": "Süreç başvuru formu ve başvuru sırasında talep edilen diğer belgelerin Bankamız şubesine iletilmesi ile başlatılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "adim",
+      "metin": "Başvuru incelendikten sonra olumlu ya da olumsuz bildirim yapılır; alıcı analiz ücreti başvuru sahibince ödenir.",
+      "alinti": "Başvuru sahibine alıcı analiz ücretine ilişkin bildirimin yapılmasının ardından alıcı analiz ücreti başvuru sahibince ödenir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Başvuru Formu ve firmayı temsile yetkili kişilerin güncel noter onaylı imza sirküleri (aslı ya da fotokopisi).",
+      "alinti": "Firmayı temsil ve ilzama yetkili kişilerin güncel noter onaylı imza sirkülerinin aslı ya da fotokopisi",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Alıcının son üç yıla ilişkin bağımsız denetimden geçmiş bilanço ve gelir tabloları gerekir; bağımsız denetim raporu, Toplam Vadeli Satış Tutarı 500.000 ABD Doları üzerindeki işlemlerde istenir.",
+      "alinti": "Bağımsız denetim raporu başvuru formundaki Toplam Vadeli Satış Tutarı bilgisi 500.000 ABD Doları üzeri olan işlemlerde gerekmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Başvuru sahibine ait son üç yıla ilişkin YMM/SMMM tasdikli bilançolar ve gelir tabloları, varsa satış sözleşmesi veya taslağı sunulur.",
+      "alinti": "Başvuru sahibine ait son üç yıla ilişkin YMM/SMMM tasdikli bilançolar ve gelir tabloları Başvuruya konu işleme ilişkin varsa satış sözleşmesi veya satış sözleşmesi taslağı",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Vadesi 24 ay ve üzeri olan başvurular için Eximbank Çevresel ve Sosyal Etki Bilgi Formu doldurulur.",
+      "alinti": "Türk Eximbank Çevresel ve Sosyal Etki Bilgi Formu Vadesi 24 ay ve üzeri olan başvurular için doldurulması gerekmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "1 yıldan uzun vadeli ihracat alacakları",
+      "alinti": "genellikle yatırım malları satışından doğan 1 yıldan uzun vadeli ihracat alacakları sigortalanmaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    },
+    {
+      "iddia": "Alt veya üst limit yok",
+      "alinti": "başvurular için herhangi bir alt limit veya üst limit bulunmamaktadır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    },
+    {
+      "iddia": "Bağımsız denetim raporu 500.000 ABD Doları üzeri vadeli satışlarda gerekir",
+      "alinti": "Bağımsız denetim raporu başvuru formundaki Toplam Vadeli Satış Tutarı bilgisi 500.000 ABD Doları üzeri olan işlemlerde gerekmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/alacak-sigortasi/orta-ve-uzun-vadeli-alacak-sigortasi/spesifik-ihracat-kredi-sigortasi"
+    }
+  ]
+}

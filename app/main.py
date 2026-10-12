@@ -1012,25 +1012,39 @@ def get_usage_stats(
     current_org: Organization = Depends(get_current_org),
     db: Session = Depends(get_db),
 ):
-    """Kullanım istatistikleri."""
+    """Kullanım istatistikleri (son 30 gün; aylık sorgu sınırı da aynı pencereyle sayılır, auth.check_rate_limit).
+
+    api_calls_this_month: ölçülen işlemler = soru + başvuru taslağı üretimi. storage_used_mb: kuruluşun sunucuda tuttuğu
+    verinin bayt toplamı (sorular ve sonuçları, kontrol listeleri, taslaklar, profil). İkisi önceden sabit 0 dönüyordu."""
     from datetime import timedelta
 
     thirty_days_ago = datetime.now(timezone.utc) - timedelta(days=30)
-    queries = db.query(Query).filter(
-        Query.org_id == current_org.id,
-        Query.created_at >= thirty_days_ago
-    ).all()
+    queries = db.query(Query).filter(Query.org_id == current_org.id).all()
+    son_30 = [q for q in queries if q.created_at and (q.created_at.replace(tzinfo=timezone.utc)
+                                                      if q.created_at.tzinfo is None else q.created_at) >= thirty_days_ago]
+    takipler = db.query(BasvuruTakibi).filter(BasvuruTakibi.org_id == current_org.id).all()
+    taslak_30 = sum(1 for t in takipler if t.taslak_tarihi and t.taslak_tarihi >= thirty_days_ago.replace(tzinfo=None))
+    profil = db.query(FinancialProfile).filter(FinancialProfile.org_id == current_org.id).first()
+
+    def boyut(x) -> int:
+        return len(json.dumps(x, ensure_ascii=False, default=str).encode("utf-8")) if x is not None else 0
+
+    bayt = sum(boyut(q.question) + boyut(q.results) for q in queries)
+    bayt += sum(boyut(t.isaretli) + boyut(t.uygunluk_cevaplari) + boyut(t.taslak) + boyut(t.taslak_cevaplar)
+                for t in takipler)
+    if profil is not None:
+        bayt += boyut({c.name: getattr(profil, c.name) for c in profil.__table__.columns})
 
     plan_limits = get_plan_limits(current_org.plan)
 
     return AnalyticsResponse(
         org_id=current_org.id,
         usage_stats=UsageStats(
-            queries_this_month=len(queries),
+            queries_this_month=len(son_30),
             queries_limit=plan_limits["queries_per_month"],
-            api_calls_this_month=0,  # TODO: Track API calls separately
+            api_calls_this_month=len(son_30) + taslak_30,
             users_active=db.query(User).filter(User.org_id == current_org.id, User.is_active).count(),
-            storage_used_mb=0.0,  # TODO: Calculate storage
+            storage_used_mb=round(bayt / (1024 * 1024), 4),
         ),
         created_at=datetime.now(timezone.utc),
     )

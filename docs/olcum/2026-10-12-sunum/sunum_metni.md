@@ -55,7 +55,8 @@ düzelttim; sonuç slaytında göstereceğim."
 **9 · Danışmana soru**
 Söyle: "'Şirket kurmadan alabileceğim destek var mı?' diye kendi cümlemle sordum. Yanıt önce yol ayrımını
 koyuyor: kredi kurulmuş şirket ister, BiGG ise kabulde ortaklık istemez. Şirketsiz açık hibe olmadığını açıkça
-söylüyor. Zayıf yanı da şu: öne çıkardığı program, zaten kullandığım 20/B istisnası. Bunu saklamıyorum."
+söylüyor. Ekrandaki sürümün zayıf yanı: öne çıkardığı program, zaten kullandığım 20/B istisnasıydı. Bunu
+düzelttim: artık 'zaten yararlandığınız' diye ayrıca anılıyor, öne e-Akademi çıkıyor."
 
 **10 · Kontrol listesi**
 Söyle: "BiGG kartının kontrol listesini açtım: başvuru dönemleri, Evet/Hayır cevaplanan 4 şart, 4 belge,
@@ -204,9 +205,10 @@ belgelerden sonraki durumu ve ana sayfanın son sözü. Dört hesapta 'hedef ekl
 kutuları eklenmeden önce kuruldu."
 
 **84 · Bulgular**
-Söyle: "Simülasyonda sekiz hata buldum, sekizi de düzeltildi ve teste bağlandı. Üçünü vurgulayayım: 1,5 dönüm
-kaydedilmiyordu; şirket kurmak isteyen girişimciye BiGG'yi kaybedeceği söylenmiyordu; yanıtın öne çıkardığı
-program ile panel ayrışıyordu. Düzeltmeleri tarayıcıda yeniden doğruladım: 6/6."
+Söyle: "Simülasyonda on hata buldum, onu da düzeltildi ve teste bağlandı. Dördünü vurgulayayım: 1,5 dönüm
+kaydedilmiyordu; şirket kurmak isteyen girişimciye BiGG'yi kaybedeceği söylenmiyordu; Rekortiv'e zaten kullandığı
+20/B istisnası öne çıkarılıyordu; çilek üreticisi 'Fındık üreticisiyseniz' şartına dürüstçe 'Hayır' deyince program
+kendisine kapanıyordu. Artık koşullu cümle şart değil kural sayılıyor."
 
 **85 · Süreç nerede bitiyor**
 Söyle: "Uygulama profil, eşleşme, hazırlık, hesap, kaynaklı yanıt, kontrol listesi ve Word taslağını veriyor.
@@ -247,8 +249,8 @@ Söyle: "Üç ilke: uydurma rakam yok; profilde karşılığı olmayan şart sa�
 verisi dışarı gitmez."
 
 **92 · Kalite**
-Söyle: "Her değişiklikten sonra aynı zincir: derleme, modül testleri, 1.300'ü aşkın otomatik test, eski 30
-senaryoda 41/41 isabet, 45 persona sorusunda 0 dayanaksız rakam ve tarayıcıda arayüz kontrolü."
+Söyle: "Her değişiklikten sonra aynı zincir: derleme, modül testleri, 1.371 otomatik test (atlanan yok), eski
+30 senaryoda 41/41 isabet, 45 persona sorusunda 0 dayanaksız rakam ve tarayıcıda arayüz kontrolü."
 
 ---
 

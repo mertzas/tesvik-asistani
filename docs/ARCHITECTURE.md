@@ -498,13 +498,17 @@ Phase 3: Global Distribution
 
 ## Roadmap for Improvements
 
-- [ ] Implement pgvector for semantic search
-- [ ] Add Elasticsearch for full-text search
-- [ ] Setup Celery for background jobs
-- [ ] Implement caching layer (Redis)
-- [ ] Add GraphQL API option
-- [ ] Setup CI/CD pipeline (GitHub Actions)
-- [ ] Add comprehensive test suite
-- [ ] Implement API rate limiting per key
-- [ ] Add webhook delivery retries
-- [ ] Setup monitoring (Sentry, DataDog)
+Status as of 2026-10-13 (see DURUM.md for details):
+
+- [x] CI/CD pipeline: GitHub Actions (`.github/workflows/tests.yml`)
+- [x] Test suite: pytest (~1,370 tests) plus `--self-test` in each engine module
+- [x] Redis: rate-limit counters when `REDIS_URL` is set (in-process fallback otherwise)
+- [x] Rate limiting: per organization and per IP (`app/rate_limit.py`); there are no per-key API clients yet
+- [x] Background jobs: APScheduler with a single-worker file lock (`app/scheduler.py`) instead of Celery
+- [x] Monitoring: optional Sentry (`app/hata_izleme.py`, enabled only when `SENTRY_DSN` is set; no PII)
+- [ ] Semantic search (pgvector / Elasticsearch): not adopted. Retrieval is rule-based (need tags + keywords,
+      `app/rag.py`, `app/ihtiyac.py`); an optional Groq question-understanding layer adds need tags
+      (`app/soru_anlama.py`, off by default)
+- [ ] GraphQL API option: not planned
+- [ ] Outbound webhook delivery retries: no outbound webhooks yet (inbound: Stripe, İKAS)
+- [ ] B2B `/v1` API: plan only (`docs/API_URUN_PLANI.md`), awaiting approval

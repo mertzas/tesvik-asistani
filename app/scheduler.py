@@ -37,10 +37,16 @@ def scheduler_kilidi_al() -> bool:
     try:
         import fcntl
     except ImportError:
-        return True  # Windows: tek surec varsayimi
+        fcntl = None
     try:
         f = open(_KILIT_DOSYASI, "a+")
-        fcntl.flock(f.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        if fcntl is not None:
+            fcntl.flock(f.fileno(), fcntl.LOCK_EX | fcntl.LOCK_NB)
+        else:
+            # Windows (geliştirme): msvcrt bayt kilidi; "--workers 2" ile iki süreç aynı işleri koşmasın.
+            import msvcrt
+            f.seek(0)
+            msvcrt.locking(f.fileno(), msvcrt.LK_NBLCK, 1)
     except OSError:
         logger.info("Zamanlayici kilidi baska bir iscide; bu surec scraper islerini calistirmayacak")
         return False
@@ -108,6 +114,18 @@ def _job_kgf_izleme() -> str:
     return kgf_izleme.run()
 
 
+def _job_cagri_hatirlatma() -> str:
+    """Takip edilen programlarda son başvuru gününe 14/7/3/1 gün kalan doğrulanmış çağrılar için e-posta
+    (app/hatirlatma.py; yalnız e-postası doğrulanmış kullanıcılar)."""
+    from app import hatirlatma
+    from app.models import SessionLocal
+    db = SessionLocal()
+    try:
+        return hatirlatma.gonder(db)
+    finally:
+        db.close()
+
+
 def setup_scheduler() -> BackgroundScheduler:
     """Tüm jobları tanımla ve scheduler'ı döndür. main.py'de startup event'inde başlatılır."""
     # coalesce: kacirilan tetiklemeler (uyku/yeniden baslatma) tek seferde kosar;
@@ -166,6 +184,15 @@ def setup_scheduler() -> BackgroundScheduler:
         CronTrigger(day=5, hour=2, minute=0, second=0),
         id="tarim_bakanligi",
         args=("tarim_bakanligi", _job_tarim_bakanligi),
+        replace_existing=True,
+    )
+
+    # Çağrı son tarihi hatırlatması — her gün 08:30 (kalan gün tam eşikteyse; günde bir kez çalışmalı)
+    scheduler.add_job(
+        _run_job,
+        CronTrigger(hour=8, minute=30, second=0),
+        id="cagri_hatirlatma",
+        args=("cagri_hatirlatma", _job_cagri_hatirlatma),
         replace_existing=True,
     )
 

@@ -481,6 +481,31 @@ GARANTI_NOTU = ("**Garanti:** Hiçbir destek için kabul garantisi verilemez; ni
                 "gösterdim.")
 
 
+# "20/B istisnasıyla çalışıyorum", "4447 teşvikinden yararlanıyoruz": kullanıcının ŞU AN yararlandığını söylediği
+# program. Arayüz simülasyonu ve hakem bulgusu 2026-10-12: Rekortiv yanıtı, kullanıcının zaten kullandığı 20/B
+# istisnasını "Öne çıkan" diye sunuyordu. Soru kipi ("yararlanıyor muyum") ve olasılık ("yararlanabilir miyim") sayılmaz.
+_KULLANIYOR = re.compile(r"(?:calis|yararlan|faydalan|kullan|al)[iı]?yor(?:um|uz)\b(?!\s*m[iıuü])")
+_MADDE_KODU = re.compile(r"(?<![\w/])(\d{1,3}/[a-z])(?![\w/])")
+
+
+def kullanilan_programlar(soru: str, adaylar: list) -> list:
+    """Soruda kodu (1812, 4447, 20/B) bir kullanım fiiliyle birlikte geçen aday değerlendirmeler."""
+    katli = _katla(soru)
+    sonuc = []
+    for d in adaylar:
+        baslik = _katla(d.tesvik.baslik or "")
+        kodlar = set(_KOD.findall(baslik)) | set(_MADDE_KODU.findall(baslik))
+        for kod in kodlar:
+            for m in re.finditer(rf"(?<![\w/]){re.escape(kod)}(?![\w/])", katli):
+                cumle = re.split(r"[.;?!]", katli[m.end():], maxsplit=1)[0]
+                if _KULLANIYOR.search(cumle[:60]):
+                    sonuc.append(d)
+                    break
+            if sonuc and sonuc[-1] is d:
+                break
+    return sonuc
+
+
 def ozel_notlar(soru: str) -> list[str]:
     """Soru türüne göre yanıtın başına eklenen notlar: manipülasyon reddi, garanti yok, kaldırılmış/kayıtsız program."""
     from app.girisim import VERITABANINDA_OLMAYAN_PROGRAMLAR
@@ -3036,6 +3061,9 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
                               key=lambda d: (d.karar != "sartli", -_katki_orani(notlar, d.tesvik)))
         ana = [d for d in ana if d.tesvik.id not in notlar] + yatirim_9903[:1]
         ana.sort(key=_ilgi)
+        kullanilan = kullanilan_programlar(soru, ana)
+        if kullanilan and len(kullanilan) < len(ana):
+            ana = [d for d in ana if d not in kullanilan] + kullanilan
         triyaj = triyaj_mi(profil) and not odak
         if odak:
             kartlar = odak[:ODAK_KART]
@@ -3081,6 +3109,9 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
             elenen = [d for d in elenen if d in odak]
 
         ozel = ozel_notlar(soru) + yol_ayrimi(profil, ds) + soru_profil_celiskisi(soru, profil)
+        if kullanilan and len(kullanilan) < len(ana):
+            ozel.append("**Zaten yararlandığınız:** " + "; ".join(d.tesvik.baslik for d in kullanilan)
+                        + " — sorunuz bunun dışındaki seçenekleri sorduğu için öne çıkarılmadı.")
         if re.search(r"turquality", _katla(soru)):
             dislama = turquality_dislamasi(tum)
             if dislama:

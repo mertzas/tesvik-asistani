@@ -18,6 +18,7 @@ Yazdırma/PDF tarayıcıda (window.print) yapılır; sunucuda PDF üretilmez.
 from __future__ import annotations
 
 import hashlib
+import re
 import sys
 from datetime import datetime, timezone
 
@@ -41,6 +42,11 @@ ONEK = {"sart": "s", "belge": "b", "adim": "a", "kural": "k", "bilgi": "i"}
 ISARETLENIR = {"belge", "adim"}
 CEVAPLAR = ("evet", "hayir", "bilmiyorum")
 EN_COK_MADDE = 100
+# Koşullu cümle ("Fındık üreticisiyseniz: …", "E-İhracat Konsorsiyumu bünyesindeyseniz, …") herkese sorulan bir şart
+# değil, yalnız o durumdakine uygulanan kuraldır. Şart sayılınca koşulun dışındaki kullanıcı dürüstçe "Hayır" deyip
+# programı kendine kapatıyordu (arayüz simülasyonu 2026-10-12: çilek üreticisinin Meyve-Sebze Temel Destek listesinde
+# fındık ilçe şartı). Anahtar "sart" türünden üretilmeye devam eder; kayıtlı işaretler kaybolmaz.
+KOSULLU_SART = re.compile(r"^[^:;.]{0,80}?\w(?:y?sen|y?san)(?:iz|ız)\s*[:,]", re.IGNORECASE)
 GUNLUK_TASLAK_SINIRI = 5  # kuruluş başına; her taslak bir ücretli dış model çağrısı
 
 
@@ -75,11 +81,13 @@ def maddeler(t: Tesvik) -> list[dict]:
     if t.kontrol_listesi:
         for x in t.kontrol_listesi:
             if x.get("tur") in TUR_ETIKETI:
-                ekle(x["tur"], x.get("metin") or "", x.get("alinti"), x.get("kaynak_url"), bool(x.get("dogrulandi")))
+                kosullu = x["tur"] == "sart" and KOSULLU_SART.match(" ".join((x.get("metin") or "").split()))
+                ekle("kural" if kosullu else x["tur"], x.get("metin") or "", x.get("alinti"), x.get("kaynak_url"),
+                     bool(x.get("dogrulandi")), eski_tur="sart" if kosullu else None)
         return sonuc[:EN_COK_MADDE]
     for s in _liste(t.basvuru_sartlari):
         # Kural ("…desteklenmez", "en fazla 2 proje"): yapılacak iş değil; işaretlenmez, ilerlemeye sayılmaz.
-        ekle("kural" if KURAL.search(s) else "sart", s, eski_tur="sart")
+        ekle("kural" if KURAL.search(s) or KOSULLU_SART.match(s) else "sart", s, eski_tur="sart")
     for b in _liste(t.gerekli_belgeler):
         ekle("belge", b)
     if (t.basvuru_yeri or "").strip():

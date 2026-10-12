@@ -185,3 +185,27 @@ def test_kontrol_listesi_alani_esas_alintiyla_doner(client, db_session, tesvik):
     assert all("KOBİ olmak" != m["metin"] and "Dönemsel" not in m["metin"] for m in d["maddeler"])
     k = d["taslak_kapsami"]
     assert k["gerekli"] is False and "kefalet" in k["aciklama"] and k["nereye"] == "KOSGEB KBS"
+
+
+def test_kosullu_sart_kural_olur_ve_hayir_programi_kapatmaz(client, db_session):
+    """"Fındık üreticisiyseniz: …" koşulun dışındakine sorulmaz; eski kayıtlı "hayir" cevabı da sayılmaz
+    (arayüz simülasyonu 2026-10-12: çilek üreticisinin Meyve-Sebze Temel Destek listesinde fındık ilçe şartı)."""
+    from app.basvuru_listesi import _anahtar
+    kosullu = "Fındık üreticisiyseniz: parseliniz izin verilen bir ilçede olmalı"
+    db_session.add(Tesvik(id=161, kurum="Tarım Bakanlığı", baslik="Meyve-Sebze Temel Destek", ozet="o", detay="d",
+                          aktif_mi=True, uygunluk_kriterleri={},
+                          kontrol_listesi=[{"tur": "sart", "metin": "ÇKS'ye kayıtlı olmak"},
+                                           {"tur": "sart", "metin": kosullu}]))
+    db_session.commit()
+    h = _h(client, "kosul@example.com")
+    k = _anahtar("sart", kosullu)
+    import uuid
+    db_session.add(BasvuruTakibi(org_id=uuid.UUID(client.get("/api/organizations/me", headers=h).json()["id"]),
+                                 tesvik_id=161,
+                                 isaretli=[], uygunluk_cevaplari={k: "hayir"}))
+    db_session.commit()
+    d = client.get("/api/basvuru-listesi/161", headers=h).json()
+    turler = {m["metin"]: (m["tur"], m["anahtar"]) for m in d["maddeler"]}
+    assert turler[kosullu] == ("kural", k), "tür kural, anahtar eski şart anahtarı"
+    assert turler["ÇKS'ye kayıtlı olmak"][0] == "sart"
+    assert d["uygunluk"] == {"toplam": 1, "evet": 0, "hayir": 0, "bilmiyorum": 0}

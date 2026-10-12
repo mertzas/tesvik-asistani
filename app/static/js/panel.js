@@ -615,12 +615,12 @@
                 analyticsDiv.innerHTML = `
                     <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
                         <div class="stat-card">
-                            <h3>Bu Ay Sorgu Sayısı</h3>
+                            <h3>Son 30 Gün Sorgu Sayısı</h3>
                             <div class="value">${stats.queries_this_month}</div>
                             ${stats.queries_limit ? `<p style="color: #999; margin-top: 10px;">Limit: ${stats.queries_limit}</p>` : "<p style='color: #999; margin-top: 10px;'>Sınırsız</p>"}
                         </div>
                         <div class="stat-card">
-                            <h3>API Çağrıları</h3>
+                            <h3>İşlem (soru + taslak, 30 gün)</h3>
                             <div class="value">${stats.api_calls_this_month}</div>
                         </div>
                         <div class="stat-card">

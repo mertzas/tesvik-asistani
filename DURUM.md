@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, etkin 244; 20 persona/45 senaryo hakem 2,40 → 2. tur ~2,9). Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-13 (eksik envanteri ve kapanışı: tur41 veri, hatırlatıcı, koşullu şart, zaten kullanılan program; 367 kayıt, etkin 245; soru anlama katmanı varsayılan kapalı). Açık kalanlar "Açık (2026-10-13)" maddesinde. Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -31,8 +31,9 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   Kesme işareti düzeltmesiyle Eurostars kaydı bağlama giriyor.
 
 ## Sıradaki adım
-- **Aşama C üretim modeliyle tekrar**: bakiye yüklenince `C_olcum.py N` (N=4..12, ~0,9 USD). Kayıt temizliği UYGULANDI
-  (tur3, 5 kayıt: 2, 7, 48, 163, 174; yedek *.db.bak, git dışı); açık: 163 güncel limit, 48 son başvuru tarihi.
+- ~~**Aşama C üretim modeliyle tekrar**~~ GEÇERSİZ (2026-10-13): Anthropic API kaldırıldı (2026-10-11); ölçüm yerel
+  danışman + dayanak denetimiyle yapılıyor. Kayıt temizliği UYGULANDI (tur3, 5 kayıt: 2, 7, 48, 163, 174); 163 pasif
+  (tur12, 2573 mülga; güncel karşılığı 5986 m.8), 48 çağrı satırları tur41'de eklendi.
 - **Denetim 2 / Aşama D** (tamamlandı, kısıtlarla): rapor `docs/olcum/2026-10-07-denetim2/D_RAPOR.md`. 3 hata bulundu/düzeltildi (akış kopması uyarısız, askıda Claude 271 sn, kilitli DB'de /health yanlış 200). Test 766 geçti. Yapılamayanlar: gerçek modelle ilk parça süresi (kredi/onay yok), Linux'ta --workers 2 flock kanıtı (Docker/WSL yok). Dev sunucusu (:8000) yeniden başlatılmalı.
 - **Denetim 2 / Aşama E** (kod tamam, 2 bilgi + 1 göç bekliyor): rapor `docs/olcum/2026-10-07-denetim2/E_RAPOR.md`. CSP eklendi (unsafe-inline kaldı), çilek paneli kalıcı XSS kapandı, İKAS webhook mağaza belirteciyle korundu (İKAS imza tanımlamıyor), parola sıfırlama + e-posta doğrulama eklendi. Test 791 geçti. BEKLEYEN: (1) KVKK DOLDURULACAK alanları kullanıcıdan, (2) SMTP sağlayıcısı kullanıcıdan (şifre .env'ye), (3) `alembic upgrade head` veri/dev DB'ye uygulanmadı (yeni kodla açılmadan önce şart).
 - **Denetim 2 / Aşama F** (tamamlandı): `docs/olcum/2026-10-07-denetim2/F_RAPOR.md`. KARAR: ödeme alan genel yayın için HAYIR; engeller KVKK alanları, SMTP, Stripe test modu, Linux dağıtım denemesi, üretim modeliyle ölçüm, veri boşlukları. Göç `g4b6c8d0e456` dev DB'ye UYGULANDI (yedek `tesvikler_oncesi_gocE.db.bak`). Dev sunucusu :8000 eski kodla çalışıyor, yeni kod için yeniden başlatılmalı. 14 yerel commit push edilmedi.
@@ -599,6 +600,37 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   0,51 → 0,71), özgünlerde 0,955 → 0,945; uçtan uca dayanak 0, isabet 41/41, 75 yanıttan 2'si değişti. Açık:
   KVKK m.9 güvencesi (Groq DPA'da Türkiye maddesi yok; kvkk.html DOLDURULACAK), Groq konsolunda ZDR, ücretli katman,
   sohbete yapıştırılan anahtarın yenilenmesi. Test 1366.
+- **Eksik envanteri ve kapanışı** (2026-10-13; envanter: DURUM.md, docs/olcum raporları, kod, DB taraması). Kod:
+  koşullu şart ("Fındık üreticisiyseniz:", "Konsorsiyum bünyesindeyseniz,") artık kural (`basvuru_listesi.KOSULLU_SART`;
+  çilek üreticisi "Hayır" deyip Meyve-Sebze Temel Desteği kendine kapatıyordu; anahtar korunur); soruda "kullanıyorum /
+  çalışıyorum" diye anılan program öne çıkarılmaz, "Zaten yararlandığınız" diye anılır
+  (`yerel_danisman.kullanilan_programlar`; Rekortiv'e 20/B öne çıkıyordu); `/api/analytics/usage` işlem ve depolama
+  gerçek veriden (sabit 0 dönüyordu); çağrı son tarihi hatırlatması (`app/hatirlatma.py` self-test 7/7, zamanlayıcıda
+  her gün 08:30; takipteki programda son güne 14/7/3/1 gün kala, yalnız doğrulanmış adrese, kullanıcı başına tek
+  e-posta; SMTP düzelince çalışır); Windows'ta zamanlayıcı kilidi msvcrt ile (atlanan test kalmadı); KVKK'ya hatırlatma
+  ve Sentry (etkinleştirilirse) bilgisi; ARCHITECTURE.md yol haritası güncel. Veri tur41
+  (`scripts/fix_veri_2026_10_13_tur41.py`, self-test 9/9; her değişiklik resmî kaynakta birebir alıntıyla
+  `--dogrula`; kaynaklar `docs/olcum/2026-10-13-tur41/kaynak/`; yedek `tesvikler_oncesi_tur41.db.bak`): 37 aktif
+  (4003-T açık çağrı, 30 M TL), 73 pasif (çağrı yok), 13 pasif (4007 2026 dönemi kapandı) + çağrı, 48 Eurostars iki
+  çağrı satırı (2026/2 kapandı; Call 12 17.12.2026–4.3.2027), 18/41/57/64/71 başvuru yeri, 76 hayvancılık 2026 birim
+  tutarları (11782 sayılı Karar, RG 08.09.2026; taranmış sayfa görüntüden), 270 aktif (2634 m.16 + 2010/478 BKK;
+  "Hazinece" → Bakanlık bütçesi), 367 uzatma zinciri notu (2025-2026'ya kadar; 2026-27 bulunamadı, kararsız), 174 not;
+  yeni 369 5986 m.3 Pazara Giriş Rapor ve 370 m.7 Pazaryeri Entegrasyon (yalnız statülüler; şablon 196). 369 kayıt,
+  etkin 248, belirsiz 1, çağrı 158. Regresyon: eski 30 dayanak 0 / isabet 41/41, persona 45 dayanak 0, kapsam 432/13/23,
+  ürün 434/468. Test 1371 (atlanan 0). Sunum güncellendi (8 slayt, sürüm 21), konuşma metni de.
+- **Açık (2026-10-13)** — kodla kapatılamayanlar:
+  - Kullanıcı/dış taraf: SMTP bağlantı hatası (hatırlatma ve zorunlu doğrulama buna bağlı); KVKK DOLDURULACAK alanları
+    (unvan, adres, VERBİS, iletişim, Groq m.9 güvencesi, günlük saklama süresi); Groq ZDR + ücretli katman + anahtar
+    yenileme + hukuk görüşü; Stripe canlı anahtar; Sentry DSN (AB); Linux/Docker dağıtım provası; İKAS partner hesabı;
+    GPU ölçümü (ozel_sunucu kararı); vekil arkası IP işinin (Dockerfile.prod, compose, models.py, rate_limit.py) commit
+    onayı; profil alanları (planlanan yatırım tutarı, önceki yıl ihracat, alınan destekler) models.py'deki commit
+    edilmemiş işle çakışmasın diye bu turda eklenmedi; DEPLOYMENT.md "Üretime almadan önce" tablosu bayat (dosyada
+    commit edilmemiş paralel iş var, ona dokunulmadı); kayıt ekranında e-posta numaralandırma (doğrulama zorunlu
+    açılınca kapanır).
+  - Veri: 7 KGF kaydının özeti site menüsü (93, 116, 125, 153, 154, 171, 173; sayfa JS, gömülü tarayıcı kgf.com.tr'ye
+    izin vermedi); 367 için 2026-2027 uzatma kararı (RG fihristi); 270 fiilî ödeme teyidi (il müdürlüğü); tohum/fidan
+    kullanım desteği 2027 dönemi ve çoban istihdam desteği 2026 tutarı (kayit/eklenmedi); boş belge/şart alanları
+    (TÜBİTAK akademik, Ticaret) bilinçli boş ya da kontrol listesinde; Ekim sonunda kapanan çağrıların yenilenmesi.
 - **Deterministik başvuru orkestratörü** (`app/basvuru_orkestrator.py`, self-test 10/10, `tests/test_basvuru_orkestrator.py`
   6): şirket profili + harcama dökümünden 10 adımda (ayrıştırma, mevzuat eşleştirme, KOBİ/KOSGEB, hedef ülke, mükerrerlik,
   DYS, A-D stres testi, onarım, gerekçe, JSON) üç bölümlü çıktı. Oran, tavan (2026), şart ve hedef ülke listesi kayıtlardan;

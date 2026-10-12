@@ -1266,3 +1266,18 @@ def test_yil_ile_baslayan_baslik_adiyla_taninir():
     # küçük test verisinde "ücret" nadir kelime sayılıp diğer başlığı da getirebilir; aranan program ilk sırada olmalı
     bulunan = yerel_danisman.adi_gecen_programlar("Turizm ücret desteği 2026'da ne kadar?", [t, diger])
     assert bulunan and bulunan[0].id == 901
+
+
+def test_zaten_kullanilan_program_one_cikarilmaz():
+    """Kullanıcının şu an yararlandığını söylediği program (kod + kullanım fiili) öne çıkan olmaz (simülasyon
+    2026-10-12: Rekortiv yanıtı "20/B istisnasıyla çalışıyorum" diyen kullanıcıya 20/B'yi öne çıkarıyordu)."""
+    from types import SimpleNamespace as N
+    from app.yerel_danisman import kullanilan_programlar
+    adaylar = [N(tesvik=N(baslik="İlave İstihdam (4447 sayılı Kanun)")),
+               N(tesvik=N(baslik="Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (GVK mükerrer madde 20/B)"))]
+    bul = lambda q: [d.tesvik.baslik[:12] for d in kullanilan_programlar(q, adaylar)]  # noqa: E731
+    assert bul("Şirketim yok, 20/B istisnasıyla çalışıyorum. Başka destek var mı?") == ["Mobil Uygula"]
+    assert bul("4447 teşvikinden yararlanıyoruz, başka ne var?") == ["İlave İstihd"]
+    assert bul("4447 teşvikinden yararlanıyor muyuz?") == []
+    assert bul("4447'den yararlanabilir miyim?") == []
+    assert bul("1812'ye başvurdum ama 20/B kullanmıyorum") == []

@@ -96,7 +96,10 @@ def test_scheduler_kilidi(tmp_path, monkeypatch):
     try:
         import fcntl  # noqa: F401
     except ImportError:
-        pytest.skip("Windows: dosya kilidi atlanır")
+        try:
+            import msvcrt  # noqa: F401  (Windows: msvcrt bayt kilidi, 2026-10-13)
+        except ImportError:
+            pytest.skip("dosya kilidi yok")
     # Aynı süreçte ikinci alma denemesi (ayrı tanıtıcı) başarısız olmalı
     monkeypatch.setattr(scheduler, "_kilit_tutucu", None)
     assert scheduler.scheduler_kilidi_al() is False

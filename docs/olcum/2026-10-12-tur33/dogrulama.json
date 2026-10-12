@@ -1,0 +1,2612 @@
+{
+ "eximbank-ihracata-yonelik-yatirim-kredisi": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı, döviz kazandırıcı hizmet firmaları ve serbest bölge faaliyet ruhsatı sahibi firmalar yararlanır.",
+    "alinti": "Türkiye’de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı, döviz kazandırıcı hizmet faaliyeti gösteren firmalara ve Türkiye’de kurulan Serbest Bölgelerde üretime/alım satıma yönelik geçerli faaliyet ruhsatı sahibi olan firmalarımıza kullandırılmaktadır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "Harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar gerçekleşmiş olmalı ve KDV hariç tutar üzerinden finanse edilir.",
+    "alinti": "İhracata Yönelik Yatırım Kredisi, kredi başvuru tarihinden azami 180 gün öncesine kadar olan sürede gerçekleştirdiğiniz, orta veya uzun vadeli finansman gerektiren makine, teçhizat ve aksam harcamalarınız için katma değer vergisi hariç tutar üzerinden finansman imkânı sunan kredi programıdır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "İkinci el makine, taşıt, inşaat ve yurt dışı yatırımlar fonlanamaz.",
+    "alinti": "İkinci el makine, teçhizat ve aksamlar, taşıt alımları, inşai faaliyet alanına giren yatırımlar, yurt dışına yapılacak yatırımlar ihracata yönelik yatırım kredisi kapsamında fonlanamaz.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "İhracat taahhüdü tutarı 5 yıla kadar vadeli kredilerde 1 katı, 5 yıldan uzun vadeli kredilerde 1,5 katıdır.",
+    "alinti": "Gerçekleştirilmesi gereken taahhüt tutarı, Döviz kredilerde kullandırılan kredinin anapara, faiz ve varsa masraflar toplam tutarının, TL kredilerde ise kredi anapara tutarının; • 5 yıla kadar vadeli kredilerde 1 katıdır, • 5 yıldan uzun vadeli kredilerde 1,5 katıdır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "Taahhüt gerçekleşmezse taahhüt cezası: toplam faizin 5 yıla kadar kredilerde %20'si, 5 yıldan uzun kredilerde %30'u artı varsa istisna edilmiş vergi ve masraflar.",
+    "alinti": "Taahhüt cezası; kredi için tahakkuk etmiş toplam faiz tutarının, vadesi; • 5 yıla kadar olan kredilerde %20’si, • 5 yıldan uzun olan kredilerde %30’u ve varsa daha önce istisna edilmiş olan vergi, masraf, komisyon vb. tutarları ve gecikme cezalarının toplamı şeklinde hesaplanır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "Taahhüt vadesi kredi kullanım tarihinden itibaren 24 aydır.",
+    "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "Teminat: Kesin Teminat Mektubu.",
+    "alinti": "Kesin Teminat Mektubu karşılığında kullandırılır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yatırım Teşvik Belgesi'nde faiz desteği ibaresi varsa yatırım kredisinde faiz desteğinden yararlanılabilir.",
+    "alinti": "T.C. Ticaret Bakanlığı tarafından verilmiş Yatırım Teşvik Belgesi’nde Yatırımın Yararlanacağı Destek Unsurları başlığı altında faiz desteği ibaresinin bulunması durumunda yatırım kredisi başvurularında faiz desteğinden faydalanma olanağı mevcuttur.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   },
+   {
+    "tur": "adim",
+    "metin": "Geçerli kredi limiti varsa Kredi Talep Formu ve onaylı harcama listesiyle bağlı olunan Şubeden başvurulur.",
+    "alinti": "Bankamızda geçerli kredi limitinizin bulunması durumunda, kredi talep formu ve onaylı harcama listesi ile bağlı bulunduğunuz Şubemiz üzerinden başvuruda bulunabilirsiniz.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "Talep, Eximbank'ın fon uygunluğuna bağlı olarak işleme alınır.",
+    "alinti": "Başvuru belgelerinizin Şubemize ulaşması akabinde Bankamız fon uygunluğuna bağlı olarak kredi talebiniz işleme alınacaktır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   },
+   {
+    "tur": "belge",
+    "metin": "Kredi Talep Formu ve YMM/SMMM onaylı, faturaya bağlı Harcama Belgeleri Listesi.",
+    "alinti": "Kredi Talep Formu Harcama Belgeleri Listesi (Harcamaların faturaya bağlanmış olması gerekmektedir.), (Yeminli Mali Müşavir (YMM)/Serbest Muhasebeci Mali Müşavir (SMMM) onaylı)",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   },
+   {
+    "tur": "belge",
+    "metin": "Kapasite Raporu (ilgili odaca tasdikli).",
+    "alinti": "Kapasite Raporu (İlgili odaca orijinal tasdikli örneği)",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   },
+   {
+    "tur": "belge",
+    "metin": "İlk kez başvuracak firmalar mali analiz ve istihbarat çalışması için istenen bilgi ve belgeleri de sunar.",
+    "alinti": "İlk kez başvuruda bulunacak firmalar için bu belgelerin yanı sıra firma mali analizi ve istihbarat çalışması için talep edilen bilgi ve belgeleri Bankamıza sunmaları,",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi"
+   }
+  ],
+  "cagrilar": []
+ },
+ "eximbank-marka-kredisi": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır.",
+    "alinti": "Türkiye’de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar, Türkiye’de kurulan Serbest Bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi olan firmalar,",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   },
+   {
+    "tur": "sart",
+    "metin": "Türkiye'de yerleşik döviz kazandırıcı hizmetler sektöründe faaliyet gösteren firmalar da yararlanır.",
+    "alinti": "Türkiye’de yerleşik döviz kazandırıcı hizmetler sektöründe faaliyet gösteren firmalar bu programdan yararlanabilecektir.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Mevcut markaya ilişkin finanse edilen harcamalar: yurt dışına yönelik reklam-tanıtım, yurt dışı satışları artırmaya yönelik ar-ge/tasarım/danışmanlık ve yurt dışında yapılan marka tescili.",
+    "alinti": "Yurtdışına yönelik reklam ve tanıtım harcamaları Yurtdışı satışların artırılmasına yönelik yapılan arge, tasarım, danışmanlık ve sair suretteki diğer harcamalar Yurtdışında yapılan marka tesciline ilişkin harcamalar",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Mevcut markaya ilişkin finanse edilen harcamalar: yurt dışındaki lojistik ve depolama giderleri, e-ticaret kapsamındaki harcamalar ve yurt dışı mağaza kira giderleri.",
+    "alinti": "Yurt dışındaki lojistik ve depolama giderleri E-Ticaret kapsamında yapılan harcamalar Yurtdışı mağaza kira giderleri",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Marka alımında finanse edilen harcamalar: yurt dışında yerleşik ve marka siciline kayıtlı markanın alım bedeli ile ilgili mağaza, tesis ve benzeri aktiflerin alım bedelleri.",
+    "alinti": "Yurtdışında yerleşik ve marka siciline kayıtlı bir markanın satın alınma bedeli Satın alınacak markayla ilgili mağaza, tesis ve benzeri aktiflerin satın alınma bedelleri",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   },
+   {
+    "tur": "sart",
+    "metin": "Marka alımında markanın bilinirliği yeterli olmalı; markalı ürünler yurt içinde üretilmeli ve ihraç edilmelidir.",
+    "alinti": "Diğer şartlar; Satın alınan markanın marka değerliliğinin (bilinirliği) yeterli olması, Satın alınan markalı ürünlerin yurt içinde üretiminin gerçekleştirilmesi ve ihraç edilmesi, gerekmektedir.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "İhracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.",
+    "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "Teminat: Kesin Teminat Mektubu.",
+    "alinti": "Kesin Teminat Mektubu, karşılığında kullandırılır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "Firma limiti Eximbank'ın tahsis çalışmasıyla firma bazında belirlenir.",
+    "alinti": "Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   },
+   {
+    "tur": "belge",
+    "metin": "Kredi Talep Formu, varsa Vergi Resim Harç İstisnası Belgesi fotokopisi ve Eximbank'ın vereceği Proje Bilgi Formu.",
+    "alinti": "Kredi Talep Formu (Ek-1), Vergi Resim Harç İstisnası Belgesi Fotokopisi (varsa), Proje Bilgi Formu (Projeye yönelik Bankamız tarafından verilecektir)",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   },
+   {
+    "tur": "belge",
+    "metin": "YMM/SMMM onaylı Harcama Belgeleri Listesi ve eki belge fotokopileri.",
+    "alinti": "Harcama Belgeleri Listesi (Yeminli Mali Müşavir (YMM)/Serbest Muhasebeci Mali Müşavir (SMMM) onaylı) ve eki belge fotokopileri (Ek-2)",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   },
+   {
+    "tur": "belge",
+    "metin": "Yapılan/yapılacak satın almalara (mağaza, tesis, marka, şirket vb.) yönelik sözleşme örnekleri.",
+    "alinti": "Yapılan/yapılacak satın almalara (mağaza, tesis, marka, şirket vb.) yönelik sözleşme örnekleri",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   },
+   {
+    "tur": "belge",
+    "metin": "İlk kez başvuracak firmalar mali analiz ve istihbarat çalışması için istenen bilgi ve belgeleri de sunar.",
+    "alinti": "İlk kez başvuruda bulunacak firmalar için bu belgelerin yanı sıra firma mali analizi ve istihbarat çalışması için talep edilen bilgi ve belgeleri Bankamıza sunmaları,",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+   }
+  ],
+  "cagrilar": []
+ },
+ "eximbank-reeskont-kredisi": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "İhracata yönelik mal üreten imalatçılar, döviz kazandırıcı hizmet ihracı yapan firmalar ve tüm ihracatçılar yararlanır.",
+    "alinti": "İhracata yönelik mal üreten imalatçılarımız, döviz kazandırıcı hizmet ihracı yapan firmalarımız ve tüm ihracatçılarımız.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "İhracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.",
+    "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "Firma limiti Eximbank'ın tahsis çalışmasıyla firma bazında belirlenir.",
+    "alinti": "Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "Teminat: Avalsiz Bono ile birlikte Kesin Teminat Mektubu, Avalli Bono veya İGE kefaleti.",
+    "alinti": "Avalsiz Bono ile birlikte Kesin Teminat Mektubu, Avalli Bono, İhracatı Geliştirme A.Ş.’nin (İGE) kefaleti karşılığında kullandırılır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+   },
+   {
+    "tur": "kural",
+    "metin": "Faiz tutarı kullandırım bedelinden iskonto edilir; geri ödeme vade gününde tek seferde, kullandırım para birimi üzerinden yapılır.",
+    "alinti": "Kredi geri ödemesi; vade gününde, tek seferde, kullandırım para birimi üzerinden yapılır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+   },
+   {
+    "tur": "belge",
+    "metin": "Kredi Talep Formu ile banka avalli bono veya kesin teminat mektubu ve avalsiz bono.",
+    "alinti": "Kredi Talep Formu Banka Avalini taşıyan Bono* veya Kesin Teminat Mektubu* ile birlikte avalsiz Bono",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+   },
+   {
+    "tur": "belge",
+    "metin": "İlk kez başvuracak firmalar mali analiz ve istihbarat çalışması için istenen bilgi ve belgeleri de sunar.",
+    "alinti": "İlk kez başvuruda bulunacak firmalar için bu belgelerin yanı sıra firma mali analizi ve istihbarat çalışması için talep edilen bilgi ve belgeleri Bankamıza sunmaları,",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Faiz oranları döviz cinsi ve vade bazında değişir; güncel oranlar Eximbank'ın faiz ve kar payı oranları bölümünde yayınlanır.",
+    "alinti": "Reeskont kredisi faiz oranları döviz cinsi ve vade bazında değişmektedir.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+   }
+  ],
+  "cagrilar": []
+ },
+ "eximbank-tim-wings": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "TSE K 645 Kadın Girişimci Belgelendirme Kriterleri kapsamında Kadın Girişimci Belgesi almaya hak kazanan ihracatçı firmalar yararlanır.",
+    "alinti": "TSE K 645 Kadın Girişimci Belgelendirme Kriterleri kapsamında Kadın Girişimci Belgesi almaya hak kazanan ihracatçı firmalar, TIM WINGS Programı kapsamında sunulan finansman imkânlarından yararlanabilmektedir.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Program Eximbank, TİM, TSE ve İGE iş birliğiyle yürütülen bir sertifikasyon programıdır.",
+    "alinti": "TIM WINGS (Women International Networking and Global Sales), Türk Eximbank, Türkiye Ihracatçılar Meclisi (TIM), Türk Standardları Enstitüsü (TSE) ve Ihracatı Geliştirme A.Ş. (IGE) iş birliğiyle",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi"
+   },
+   {
+    "tur": "kural",
+    "metin": "TL kullandırımlarda Eximbank'ın en uygun TL faiz oranlarıyla 3 yıla kadar vadeli kredi sunulur.",
+    "alinti": "Kadın Girişimci Belgesi’ne sahip ihracatçı firmalara, TL cinsinden kullandırımlarda Bankamızın en uygun TL faiz oranlarıyla, 3 yıla kadar vadeli kredi imkânı sunulmaktadır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi"
+   },
+   {
+    "tur": "kural",
+    "metin": "İhracat veya döviz kazandırıcı hizmet taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.",
+    "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilecek ihracat veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi"
+   },
+   {
+    "tur": "kural",
+    "metin": "Firma limiti Eximbank'ın tahsis çalışmasıyla firma bazında belirlenir.",
+    "alinti": "Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi"
+   },
+   {
+    "tur": "adim",
+    "metin": "Kadın girişimci belgelendirme başvurusu TSE web başvurusuyla yapılır.",
+    "alinti": "Kadın girişimci belgelendirme başvurusu TSE Web Başvurusu için tıklayınız .",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi"
+   },
+   {
+    "tur": "adim",
+    "metin": "Detaylı bilgi için en yakın Eximbank Şubesi ziyaret edilebilir veya İhracat Destek Hizmetleri Merkezi aranabilir.",
+    "alinti": "Detaylı bilgi için en yakın Şubemizi ziyaret edebilir ya da İhracat Destek Hizmetleri Merkezi'mizi arayabilirsiniz.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi"
+   }
+  ],
+  "cagrilar": []
+ },
+ "sgk-2828-ek1-sosyal-hizmet-istihdam": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "kural",
+    "metin": "Teşvik, 2828 sayılı Kanun'un ek 1'inci maddesi kapsamına giren kişilerin özel sektör işverenleri tarafından istihdamı halinde uygulanır.",
+    "alinti": "2828 sayılı Kanun'un ek 1'inci maddesi kapsamına giren kişilerin özel sektör işverenleri tarafından istihdamı halinde,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Sigortalı 19.02.2014 tarihinden sonra işe alınmış olmalıdır.",
+    "alinti": "19.02.2014 tarihinden sonra işe alınmış olması,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Sigortalı, istihdam hakkından henüz yararlanmamış olanlar, yararlanmış ancak memuriyet ile ilişiği kesilenler veya devlet memuru olma şartlarını taşımadığı için kamu kurumlarında istihdamı sağlanamayan hak sahibi olmalıdır.",
+    "alinti": "istihdam hakkından henüz yararlanmamış olanlar, istihdam hakkından yararlanmış ancak memuriyet ile ilişiği kesilenler, devlet memuru olma şartlarını taşımamaları sebebiyle kamu kurumlarında istihdamı sağlanamayan hak sahibi olması,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "İşyeri yönünden: aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi yasal süresinde verilmeli ve primler yasal süresinde ödenmelidir.",
+    "alinti": "İşyeri yönünden; Aylık prim ve hizmet belgesinin / muhtasar ve prim hizmet beyannamesinin yasal süresinde verilmesi, Primlerin yasal süresinde ödenmesi gerekmektedir.",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   }
+  ],
+  "cagrilar": []
+ },
+ "sgk-3294-ek5-sosyal-yardim": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Sigortalı, işe girişten önceki son 1 yıl içinde nakdî düzenli sosyal yardımlardan en az bir defa yararlanmış olanların ikamet ettiği hanede bulunmalıdır.",
+    "alinti": "İşe giriş tarihinden önceki son 1 yıl içerisinde nakdî düzenli sosyal yardımlardan en az bir defa yararlanmış olanların ikamet ettiği hanede bulunması,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Sigortalı, 5510 sayılı Kanun'un 60'ıncı maddesinin birinci fıkrasının (c) bendinin (1) numaralı alt bendi kapsamında olmalıdır.",
+    "alinti": "5510 sayılı Kanun'un 60'ıncı maddesinin birinci fıkrasının (c) bendinin (1) numaralı alt bendi kapsamında olması,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Sigortalı Türkiye İş Kurumu'na kayıtlı işsiz olmalıdır.",
+    "alinti": "Türkiye İş Kurumu’na kayıtlı işsiz olması,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Sigortalı 26.04.2016 tarihi ve sonrasında işe alınmış olmalıdır.",
+    "alinti": "26.04.2016 tarihi ve sonrasında işe alınmış olması,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Sigortalı, işe alındığı tarihten bir önceki yılın ortalama sigortalı sayısına ilave olarak çalıştırılmalıdır.",
+    "alinti": "Sigortalının işe alındığı tarihten bir önceki yılın ortalama sigortalı sayısına ilave olarak çalıştırılması,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi yasal süresinde verilmelidir.",
+    "alinti": "Aylık prim ve hizmet belgesinin / muhtasar ve prim hizmet beyannamesinin yasal süresinde verilmesi,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Kuruma borç bulunmamalıdır (varsa yapılandırılmış/tecil ve taksitlendirilmiş ve düzenli ödenmiş olmalıdır).",
+    "alinti": "Kuruma borcun bulunmaması (varsa da yapılandırılmış/tecil ve taksitlendirilmiş olması ve düzenli ödenmesi),",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   }
+  ],
+  "cagrilar": []
+ },
+ "sgk-4447-ek4-cok-tehlikeli-issizlik-primi": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "İşyeri 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer almalıdır.",
+    "alinti": "İşyerinin 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer alması,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "İşverenin Türkiye genelinde çok tehlikeli sınıftaki işyerlerinde her ay toplamda ondan fazla çalışanı bulunmalıdır.",
+    "alinti": "İşverenin, Türkiye genelinde çok tehlikeli sınıfta yer alan işyerlerinde her ay toplamda ondan fazla çalışanı bulunması,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmemelidir.",
+    "alinti": "Ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmemesi,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "İSG-KATİP'e kayıtlı, onaylanmış ve devam eden iş sağlığı ve güvenliği hizmeti sözleşmesi (iş güvenliği uzmanı ve işyeri hekimi) bulunmalıdır.",
+    "alinti": "İşyerinin, İSG-KATİP’e kayıtlı onaylanmış ve devam eden iş sağlığı ve güvenliği hizmetlerinin verilmesine ilişkin, iş güvenliği uzmanı ve işyeri hekimi",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   }
+  ],
+  "cagrilar": []
+ },
+ "sgk-6331-m7-isg-hizmet-destegi": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Türkiye genelinde, tehlikeli ve çok tehlikeli sınıfta yer alan işyerlerinde ondan az çalışan bulunmalıdır.",
+    "alinti": "Türkiye genelinde, tehlikeli ve çok tehlikeli sınıfta yer alan işyerlerinde ondan az çalışanın bulunması,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi yasal süresinde verilmelidir.",
+    "alinti": "Aylık prim ve hizmet belgesinin / muhtasar ve prim hizmet beyannamesinin yasal süresinde verilmesi,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Türkiye genelinde Kuruma borç bulunmamalıdır (varsa yapılandırılmış/tecil ve taksitlendirilmiş ve düzenli ödenmiş olmalıdır).",
+    "alinti": "Türkiye genelinde Kuruma borcun bulunmaması (varsa da yapılandırılmış/tecil ve taksitlendirilmiş olması ve düzenli ödenmesi),",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Kayıt dışı sigortalı çalıştırılmamalıdır.",
+    "alinti": "Kayıt dışı sigortalı çalıştırılmaması,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "belge",
+    "metin": "Tehlikeli ve çok tehlikeli işyerleri için yansıtma faturası düzenlenip Kuruma verilmelidir.",
+    "alinti": "Tehlikeli ve çok tehlikeli işyerleri için yansıtma faturası düzenlenmesi ve Kuruma verilmesi,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "İşyerinin İSG-KATİP'e kayıtlı, onaylanmış ve devam eden iş sağlığı ve güvenliği hizmetleri için hizmet sunucusuyla yapılmış sözleşmesi olmalıdır.",
+    "alinti": "İşyerinin, İSG-KATİP’e kayıtlı onaylanmış ve devam eden iş sağlığı ve güvenliği hizmetlerinin verilmesine ilişkin hizmet sunucusu ile yapılmış bir sözleşmesinin olması gerekmektedir.",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Finansman kısa vadeli sigorta kollarından karşılanır.",
+    "alinti": "Finansmanı kısa vadeli sigorta kollarından karşılanmaktadır.",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   }
+  ],
+  "cagrilar": []
+ },
+ "sgk-81i-yurtdisi-bes-puan-indirim": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "kural",
+    "metin": "Teşvik, özel sektör işverenlerince yurt dışındaki işyerlerinde çalıştırılmak üzere götürülen/gönderilen sigortalılar için geçerlidir.",
+    "alinti": "Özel sektör işverenlerince yurt dışındaki işyerlerinde çalıştırılmak üzere götürülen/gönderilen sigortalılar için uygulanan bu indirim kapsamında,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi yasal süresinde verilmelidir.",
+    "alinti": "Aylık prim ve hizmet belgesinin / muhtasar ve prim hizmet beyannamesinin yasal süresinde verilmesi,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Primler yasal süresinde ödenmelidir.",
+    "alinti": "Primlerin yasal süresinde ödenmesi,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Kuruma borç bulunmamalıdır (varsa yapılandırılmış/tecil ve taksitlendirilmiş ve düzenli ödenmiş olmalıdır).",
+    "alinti": "Kuruma borcun bulunmaması (varsa da yapılandırılmış/tecil ve taksitlendirilmiş olması ve düzenli ödenmesi),",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   },
+   {
+    "tur": "sart",
+    "metin": "Kayıt dışı sigortalı çalıştırılmamalı, sahte sigortalı bildiriminde bulunulmamalıdır.",
+    "alinti": "Kayıt dışı sigortalı çalıştırılmaması, sahte sigortalı bildiriminde bulunulmaması gerekmektedir.",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-10962-m10-hizmet-hiser-projesi": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Destekten yararlanan işbirliği kuruluşu: hizmet sektörlerinde faaliyet gösteren ve Bakanlık tarafından belirlenen kamu kurum ve kuruluşu, sektörel çatı kuruluşu ile diğer sektörel kuruluştur.",
+    "alinti": "Hizmet sektörlerinde faaliyet gösteren ve Bakanlık tarafından belirlenen kamu kurum ve kuruluşu, sektörel çatı kuruluşu ile diğer sektörel kuruluşu,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Atılım Programı kapsamındaki sektörler: bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, lojistik ve taşımacılık, sağlık ve spor turizmi, teknik müşavirlik, uygunluk değerlendirme.",
+    "alinti": "Hizmet Sektörleri Atılım Programı için bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, l ojistik ve taşımacılık, sağlık ve spor turizmi , teknik müşavirlik veya uygunluk değerlendirme sektörlerinde faaliyet gösteren",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "belge",
+    "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+    "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "HİSER Projesi: hizmet sektörlerinin uluslararası rekabet gücünün artırılmasına yönelik, kümelenme anlayışıyla işbirliği kuruluşlarınca yürütülen, amacı, kapsamı, süresi ve bütçesi belirli projedir.",
+    "alinti": "Hizmet sektörlerinin uluslararası rekabet gücünün artırılmasına yönelik olarak kümelenme anlayışıyla işbirliği kuruluşlarınca yürütülen ve amacı, kapsamı, süresi ile bütçesi belirli olan projeyi,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek kapsamına alınmak için işbirliği kuruluşu tarafından proje onay başvurusu yapılır.",
+    "alinti": "Bir HİSER Projesinin destek kapsamına alınabilmesi için işbirliği kuruluşu tarafından proje onay başvurusu yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Projede, proje onay tarihinde Markalaşma Programı kapsamında olmayan en az 8 yararlanıcı yer almalı ve yararlanıcılar proje sahibi ya da ortağı işbirliği kuruluşunun üyesi olmalı veya bünyesinde faaliyet göstermelidir.",
+    "alinti": "Bir HİSER Projesinde, proje onay tarihinde Markalaşma Programı kapsamında olmayan, en az 8 yararlanıcının yer alması gerekir. Yararlanıcının proje sahibi ya da ortağı olan işbirliği kuruluşunun üyesi olması veya bünyesinde faaliyet göstermesi gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İhtiyaç analizi raporu ve HİSER Projesi Faaliyet Çizelgesi (EK-11) proje onayından itibaren en geç altı ay içinde iletilir; aksi durumda proje onayı iptal edilir.",
+    "alinti": "İhtiyaç analizi raporu ve “ HİSER Projesi Faaliyet Çizelgesi (EK -11)”, projenin onaylanmasından itibaren en geç altı ay içinde iletilir. Aksi durumda proje onayı iptal edilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Proje süresi üç yıldır; performansa göre Bakanlık ilaveten iki yıla kadar uzatabilir.",
+    "alinti": "Hizmet Sektörü Rekabet Gücünün Artırılması Projesinin süresi üç yıldır. Bu süre, projenin performansına göre Bakanlık tarafından ilaveten iki yıla kadar uzatılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+    "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+    "alinti": "izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+    "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-10962-m12-hizmet-tescil-koruma": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Yararlanıcı tanımına Türkiye'de yerleşik, Türk Ticaret Kanunu hükümlerine göre kurulmuş şirketler ve Kooperatifler Kanunu çerçevesinde faaliyette bulunan kooperatifler girer.",
+    "alinti": "Kanunu hükümlerine göre kurulmuş şirket i, 24/4/1969 tarihli ve 1163 sayılı Kooperatifler Kanunu hükümleri çerçevesinde faaliyette bulunan kooperatifi,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Atılım Programı kapsamındaki sektörler: bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, lojistik ve taşımacılık, sağlık ve spor turizmi, teknik müşavirlik, uygunluk değerlendirme.",
+    "alinti": "Hizmet Sektörleri Atılım Programı için bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, l ojistik ve taşımacılık, sağlık ve spor turizmi , teknik müşavirlik veya uygunluk değerlendirme sektörlerinde faaliyet gösteren",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "belge",
+    "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+    "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Destek konusu marka, patent veya faydalı modelin ilk tescili Türkiye'de yapılmış, yurt içi ve yurt dışı tescil yararlanıcı adına yapılmış olmalıdır.",
+    "alinti": "Destek konusu marka, patent veya faydalı modelin ilk tescilinin Türkiye’de yapılmış olması; yurt içi ve dışı tescilin yararlanıcı adına yapılmış olması gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Marka veya patent bürosu ve danışmanlık hizmeti giderleri desteklenir.",
+    "alinti": "a) Marka veya patent bürosu ve danışmanlık hizmeti giderleri,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Resmî tescil giderleri ve yenileme giderleri desteklenir.",
+    "alinti": "ç) Resmî tescil giderleri, d) Yenileme giderleri, desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Mahkeme ve yargılama süreçlerine ilişkin giderler desteklenmez.",
+    "alinti": "Mahkeme ve yargılama süreçlerine ilişkin giderler desteklenmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yurt dışında korunmaya ilişkin hukukî danışmanlık gideri bir takvim yılında yıllık üst limitin %10'unu geçmeyecek şekilde desteklenir.",
+    "alinti": "Birinci fıkranın (c) bendi kapsamında hukukî danışmanlık hizmeti gideri, bir takvim yılında ilgili yıl için belirlenen üst limitin %10’unu geçmeyecek şekilde desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek başvurusu, tescil belgesi alındıktan veya koruma işlemi tamamlandıktan sonra yapılır.",
+    "alinti": "Destek başvurusu, ilgisine göre tescil belgesinin alınmasını veya koruma işleminin tamamlanmasını müteakip yararlanıcı tarafından yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Tescile ilişkin giderlerde başvuru süresi yurt dışı tescil tarihinden itibaren altı aydır.",
+    "alinti": "Tescile ilişkin giderler için “Tescil ve koruma desteği” başlıklı 22 nci madde için yurt dışı tescil tarihinden ve “Markalaşma Programı tescil ve koruma desteği” başlıklı 72 nci madde için yurt dışı tescil başvurusu tarihinden itibaren altı ay,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Korumaya ilişkin giderlerde başvuru, ödeme belgesi tarihinden itibaren altı ay içinde EK-4 başvuru belgeleriyle yapılır.",
+    "alinti": "bu maddede sayılmayan diğer destek unsurları için ödeme belgesi tarihinden itibaren altı ay, içerisinde ilgisine göre “Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)”",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+    "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+    "alinti": "izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+    "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-10962-m14-hizmet-yurt-disi-etkinlik-organizasyon": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Destekten yararlanan organizatör: Bakanlık tarafından adına hizmet sektörlerine yönelik yurt dışı etkinlik organizasyonu gerçekleştirme yetkisi verilen kuruluş veya şirkettir.",
+    "alinti": "Bakanlık tarafından adına hizmet sektörlerine yönelik yurt dışı etkinlik organizasyonu gerçekleştirme yetkisi verilen kuruluşu veya şirketi,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Atılım Programı kapsamındaki sektörler: bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, lojistik ve taşımacılık, sağlık ve spor turizmi, teknik müşavirlik, uygunluk değerlendirme.",
+    "alinti": "Hizmet Sektörleri Atılım Programı için bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, l ojistik ve taşımacılık, sağlık ve spor turizmi , teknik müşavirlik veya uygunluk değerlendirme sektörlerinde faaliyet gösteren",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "belge",
+    "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+    "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Yurt dışı etkinlik organizasyonu: yurt dışı etkinliklere organizatörün organizasyonunda toplu düzeyde sağlanan katılımdır.",
+    "alinti": "Yurt dışı etkinliklere organizatörün organizasyonunda toplu düzeyde sağlanan katılımı,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Giderler arasında toplam alanı 25 m²'yi geçmeyen info-stand ve katılımcılara kiralanan toplam organizasyon alanının %15'ini geçmeyen trend alanı vardır.",
+    "alinti": "a) Toplam alanı 25 m²’yi geçmemek üzere info-standa, b) Katılımcılara kiralanan toplam organizasyon alanının %15’ini geçmemek üzere trend alanına,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Organizasyonun başlangıç tarihinden en az iki ay önce organizatör tarafından ön onay başvurusu yapılır.",
+    "alinti": "giderlerin desteklenebilmesi için yurt dışı etkinlik organizasyonunda organizatör; yurt içi etkinlik organizasyonunda ise işbirliği kuruluşu veya yararlanıcı tarafından organizasyonun başlangıç tarihinden en az iki ay önce ön onay başvurusu yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ön onaya tabi desteklerde ön onay başvuru tarihinden sonra gerçekleştirilen faaliyet ve ödemeler, Genel Müdürlükçe uygun görülen bütçe ve kapsam dâhilinde desteklenir.",
+    "alinti": "ön onaya tabi desteklerde, ön onay başvuru tarihini müteakip gerçekleştirilen faaliyet ve ödemeler, Genel Müdürlükçe uygun görülen bütçe ve kapsam dâhilinde desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek başvurusu, organizasyon gerçekleştikten sonra yapılır.",
+    "alinti": "Destek başvurusu, organizasyonun gerçekleştirilmesini müteakip işbirliği kuruluşu, yararlanıcı veya organizatör tarafından yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Başvuru süresi faaliyetin bitiş tarihinden itibaren altı aydır.",
+    "alinti": "faaliyetin bitiş tarihinden itibaren altı ay,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Hedef ülkelerde yapılan faaliyetlerde destek oranı en fazla 20 puan artırılabilir.",
+    "alinti": "faaliyetlerin Bakanlık tarafından belirlenen hedef ülkelerde veya hedef ülkelere yönelik gerçekleştirilmesi hâlinde en fazla 20 puan artırılarak uygulanabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+    "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+    "alinti": "izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+    "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-10962-m15-hizmet-yurt-ici-etkinlik-katilim": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Yararlanıcı tanımına Türkiye'de yerleşik, Türk Ticaret Kanunu hükümlerine göre kurulmuş şirketler ve Kooperatifler Kanunu çerçevesinde faaliyette bulunan kooperatifler girer.",
+    "alinti": "Kanunu hükümlerine göre kurulmuş şirket i, 24/4/1969 tarihli ve 1163 sayılı Kooperatifler Kanunu hükümleri çerçevesinde faaliyette bulunan kooperatifi,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Atılım Programı kapsamındaki sektörler: bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, lojistik ve taşımacılık, sağlık ve spor turizmi, teknik müşavirlik, uygunluk değerlendirme.",
+    "alinti": "Hizmet Sektörleri Atılım Programı için bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, l ojistik ve taşımacılık, sağlık ve spor turizmi , teknik müşavirlik veya uygunluk değerlendirme sektörlerinde faaliyet gösteren",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "belge",
+    "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+    "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Yurt içi etkinlik: yurt içinde düzenlenen uluslararası nitelikli fuar, kongre, konferans, seminer veya festival gibi etkinliktir.",
+    "alinti": "Yurt içinde düzenlenen uluslararası nitelikli fuar, kongre, konferans, seminer veya festival gibi etkinliği,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Prestijli etkinlik: ilgili sektörde önde gelen ve uluslararası niteliği haiz olup Bakanlık tarafından belirlenen etkinliktir.",
+    "alinti": "İlgili sektörde önde gelen ve uluslararası niteliği haiz olup Bakanlık tarafından belirlenen etkinliği,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Yalnızca Bakanlığın ilan ettiği 'Desteklenen Yurt İçi Etkinlikler Listesi (EK-16)'ndeki etkinliklere katılım desteklenir.",
+    "alinti": "yurt içi etkinlikler için “Desteklenen Yurt İçi Etkinlikler Listesi (EK -16)”nde yer alan ve yurt dışı etkinlikler için ise “Desteklenen Yurt Dışı Etkinlikler Listesi (EK-17)”nde yer alan etkinliklere yönelik;",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Desteklenen giderler: nakliye, kayıt ücreti, yer kirası, stant tasarım ve kurulum giderleri vb.",
+    "alinti": "a) Nakliye giderleri, b) Kayıt ücreti, c) Yer kirası, ç) Standın tasarımına, konstrüksiyonuna ve kurulumuna ilişkin giderler,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Etkinliğin başlangıcından en az bir ay önce işbirliği kuruluşu tarafından ön onay başvurusu yapılır.",
+    "alinti": "Desteklenen yurt içi veya yurt dışı etkinliklere katılım için işbirliği kuruluşu tarafından etkinliğin başlangıç tarihinden en az bir ay önce ön onay başvurusu yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ön onaya tabi desteklerde ön onay başvuru tarihinden sonra gerçekleştirilen faaliyet ve ödemeler, Genel Müdürlükçe uygun görülen bütçe ve kapsam dâhilinde desteklenir.",
+    "alinti": "ön onaya tabi desteklerde, ön onay başvuru tarihini müteakip gerçekleştirilen faaliyet ve ödemeler, Genel Müdürlükçe uygun görülen bütçe ve kapsam dâhilinde desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek başvurusu etkinlik gerçekleştikten sonra yapılır.",
+    "alinti": "Destek başvurusu, etkinliğin gerçekleştirilmesini müteakip işbirliği kuruluşu veya yararlanıcı tarafından yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Başvuru süresi faaliyetin bitiş tarihinden itibaren altı aydır.",
+    "alinti": "faaliyetin bitiş tarihinden itibaren altı ay,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Fuarcılık sektörü hariç, etkinliğe stant ile katılım sağlanması gerekir.",
+    "alinti": "Fuarcılık sektörü hariç olmak üzere etkinliğe stant ile katılım sağlanması gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Bir takvim yılında yurt içi ve yurt dışı etkinliklerde toplam en fazla 3 prestijli etkinlik katılımı desteklenir.",
+    "alinti": "Bir takvim yılında yurt içi ve yurt dışı etkinliklerde toplam en fazla 3 adet prestijli etkinlik katılımı desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+    "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+    "alinti": "izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+    "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-10962-m17-hizmet-dijital-urun-tanitim": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Yararlanıcı tanımına Türkiye'de yerleşik, Türk Ticaret Kanunu hükümlerine göre kurulmuş şirketler ve Kooperatifler Kanunu çerçevesinde faaliyette bulunan kooperatifler girer.",
+    "alinti": "Kanunu hükümlerine göre kurulmuş şirket i, 24/4/1969 tarihli ve 1163 sayılı Kooperatifler Kanunu hükümleri çerçevesinde faaliyette bulunan kooperatifi,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Atılım Programı kapsamındaki sektörler: bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, lojistik ve taşımacılık, sağlık ve spor turizmi, teknik müşavirlik, uygunluk değerlendirme.",
+    "alinti": "Hizmet Sektörleri Atılım Programı için bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, l ojistik ve taşımacılık, sağlık ve spor turizmi , teknik müşavirlik veya uygunluk değerlendirme sektörlerinde faaliyet gösteren",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "belge",
+    "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+    "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Destek, bilişim sektöründe faaliyet gösteren yararlanıcıya ait yazılım, mobil uygulama veya dijital oyun için verilir.",
+    "alinti": "Bilişim sektöründe faaliyet gösteren yararlanıcının yazılımı, mobil uygulaması ve ya dijital oyunu için yurt dışına yönelik reklam, tanıtım ve pazarlama faaliyetlerine ilişkin giderleri % 50 oranında ve yıllık en fazla 50.000.000 TL tutarında desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Yalnızca EK-14 'Desteklenen Reklam, Tanıtım ve Pazarlama Faaliyetleri Listesi'ndeki yurt dışına yönelik faaliyetlerin yapım, yayın, organizasyon ve ilgili diğer giderleri desteklenir.",
+    "alinti": "Bilişim sektöründe faaliyet gösteren yararlanıcıya ait yazılımın, dijital oyunun veya mobil uygulama nın yurt dışı na yönelik “Desteklenen Reklam, Tanıtım ve Pazarlama Faaliyetleri Listesi (EK -14)”nde yer alan faaliyetlere ilişkin yapım, yayın, organizasyon ve ilgili diğer giderleri desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Bir yararlanıcının yılda en fazla 10 yazılımı, mobil uygulaması veya dijital oyunu desteklenir; ürün başına destek tutarı yıllık 15.000.000 TL'yi aşamaz.",
+    "alinti": "Bu madde kapsamında bir yararlanıcının yılda en fazla 10 adet yazılımı, mobil uygulaması veya dijital oyunu desteklenir. Yazılım, mobil uygulama veya dijital oyun başına destek tutarı yıllık 15.000.000 TL’yi aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Her yazılım, dijital oyun veya mobil uygulama için yalnızca bir yararlanıcı desteklenir.",
+    "alinti": "Dijital ürün tanıtım desteğine konu edilen her bir yazılım, dijital oyun veya mobil uygulama için sadece bir yararlanıcı desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Bilişim sektöründeki yazılım, mobil uygulama veya dijital oyuna yönelik reklam, tanıtım ve pazarlama faaliyetleri genel 'Reklam, tanıtım ve pazarlama desteği' kapsamında desteklenmez.",
+    "alinti": "Bilişim sektöründeki yararlanıcıya ait yazılım, mobil uygulama ve ya dijital oyuna yönelik reklam, tanıtım ve pazarlama faaliyetleri bu madde kapsamında desteklenmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek başvurusu, ödeme gerçekleştikten sonra yararlanıcı tarafından yapılır.",
+    "alinti": "Destek başvurusu , ödemenin gerçekleştirilmesini müteakip yararlanıcı tarafından yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Destek başvurusu, ödeme belgesi tarihinden itibaren altı ay içinde EK-4 başvuru belgeleriyle yapılır.",
+    "alinti": "bu maddede sayılmayan diğer destek unsurları için ödeme belgesi tarihinden itibaren altı ay, içerisinde ilgisine göre “Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)”",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Hedef ülkelerde yapılan faaliyetlerde destek oranı en fazla 20 puan artırılabilir.",
+    "alinti": "faaliyetlerin Bakanlık tarafından belirlenen hedef ülkelerde veya hedef ülkelere yönelik gerçekleştirilmesi hâlinde en fazla 20 puan artırılarak uygulanabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+    "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+    "alinti": "izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+    "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-10962-m22-hizmet-platform-komisyon": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Yararlanıcı tanımına Türkiye'de yerleşik, Türk Ticaret Kanunu hükümlerine göre kurulmuş şirketler ve Kooperatifler Kanunu çerçevesinde faaliyette bulunan kooperatifler girer.",
+    "alinti": "Kanunu hükümlerine göre kurulmuş şirket i, 24/4/1969 tarihli ve 1163 sayılı Kooperatifler Kanunu hükümleri çerçevesinde faaliyette bulunan kooperatifi,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Atılım Programı kapsamındaki sektörler: bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, lojistik ve taşımacılık, sağlık ve spor turizmi, teknik müşavirlik, uygunluk değerlendirme.",
+    "alinti": "Hizmet Sektörleri Atılım Programı için bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, l ojistik ve taşımacılık, sağlık ve spor turizmi , teknik müşavirlik veya uygunluk değerlendirme sektörlerinde faaliyet gösteren",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "belge",
+    "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+    "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Destek, bilişim sektöründe faaliyet gösteren yararlanıcının yazılımı, mobil uygulaması veya dijital oyununun yurt dışı satış ve dağıtımına yönelik dijital platformlara yaptığı komisyon ödemeleri için verilir.",
+    "alinti": "Bilişim sektöründe faaliyet gösteren yararlanıcı ya ait yazılım, mobil uygulama veya dijital oyunun yurt dışı satışına ve dağıtımına yönelik dijital platformlara yaptığı komisyon ödemeleri desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Bir yararlanıcının yılda en fazla 10 yazılımı, mobil uygulaması veya dijital oyunu desteklenir; ürün başına destek tutarı yıllık 4.000.000 TL'yi aşamaz.",
+    "alinti": "Bu madde kapsamında bir yararlanıcının yılda en fazla 10 adet yazılımı, mobil uygulaması veya dijital oyunu desteklenir. Yazılım, mobil uygulama veya dijital oyun başına destek tutarı yıllık 4.000.000 TL’yi aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Yararlanıcının dijital platformda kendisine ait hesabı bulunmalı ve ürünü platformda kendi adına pazarlamalıdır.",
+    "alinti": "Yararlanıcının dijital platformda kendisine ait hesabının bulunması ve yazılımı, mobil uygulamayı ve ya dijital oyunu söz konusu dijital platformda kendi adına pazarlaması gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Komisyon, dijital platform tarafından satış hasılatından düşülüyorsa mahsup edilen tutar desteğe konu edilebilir.",
+    "alinti": "Yazılımın, mobil uygulamanın ve ya dijital oyunun satışına yönelik komisyon giderlerinin dijital platform tarafından satış hasılatından düşülmesi hâlinde, mahsup edilen tutar desteğe konu edilebilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Her yazılım, dijital oyun veya mobil uygulama için yalnızca bir yararlanıcı desteklenir.",
+    "alinti": "Platform komisyon desteğine konu edilen her bir yazılım, dijital oyun veya mobil uygulama için sadece bir yararlanıcı desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek başvurusu, ödeme gerçekleştikten sonra yararlanıcı tarafından yapılır.",
+    "alinti": "Destek başvurusu , ödemenin gerçekleştirilmesini müteakip yararlanıcı tarafından yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Destek başvurusu, ödeme belgesi tarihinden itibaren altı ay içinde EK-4 başvuru belgeleriyle yapılır.",
+    "alinti": "bu maddede sayılmayan diğer destek unsurları için ödeme belgesi tarihinden itibaren altı ay, içerisinde ilgisine göre “Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)”",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+    "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+    "alinti": "izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+    "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-10962-m6-hizmet-acente-komisyon": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Yararlanıcı tanımına Türkiye'de yerleşik, Türk Ticaret Kanunu hükümlerine göre kurulmuş şirketler ve Kooperatifler Kanunu çerçevesinde faaliyette bulunan kooperatifler girer.",
+    "alinti": "Kanunu hükümlerine göre kurulmuş şirket i, 24/4/1969 tarihli ve 1163 sayılı Kooperatifler Kanunu hükümleri çerçevesinde faaliyette bulunan kooperatifi,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Atılım Programı kapsamındaki sektörler: bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, lojistik ve taşımacılık, sağlık ve spor turizmi, teknik müşavirlik, uygunluk değerlendirme.",
+    "alinti": "Hizmet Sektörleri Atılım Programı için bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, l ojistik ve taşımacılık, sağlık ve spor turizmi , teknik müşavirlik veya uygunluk değerlendirme sektörlerinde faaliyet gösteren",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "belge",
+    "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+    "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yalnızca 'Acenteler Listesi (EK-7)'nde yer alan acenteler aracılığıyla yapılan yurt dışı satış veya dağıtım faaliyetlerinin acente komisyon giderleri desteklenir.",
+    "alinti": "“Acenteler Listesi (EK -7)”nde yer alan acenteler aracılığıyla, yararlanıcının yurt dışına yönelik hizmet ya da ürün satış veya dağıtım faaliyetleri kapsamında gerçekleştirilen acente komisyon giderleri desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Komisyon, faturaya konu yurt dışı satış veya dağıtım bedelinin en fazla %20'sine kadar desteklenir; aşan kısım destek kapsamında değildir.",
+    "alinti": "Acente komisyon faturasına konu edilen yurt dışı satışı veya dağıtımı yapılan hizmet ya da ürün bedelinin en fazla %20’sine kadar olan acente komisyon gideri desteklenir; bu oranı aşan kısım destek kapsamında değerlendirilmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek başvurusu, yurt dışı satış veya dağıtım gerçekleştikten sonra yararlanıcı tarafından yapılır.",
+    "alinti": "Destek başvurusu, acentelik hizmetine konu hizmet ya da ürünün yurt dışı satış veya dağıtımının gerçekleşmesini , eğitim sektöründe ise öğrencinin kaydını n yükseköğretim kurumuna yapılmasını müteakip yararlanıcı tarafından yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Destek başvurusu, ödeme belgesi tarihinden itibaren altı ay içinde, EK-4 başvuru belgeleriyle yapılır.",
+    "alinti": "bu maddede sayılmayan diğer destek unsurları için ödeme belgesi tarihinden itibaren altı ay, içerisinde ilgisine göre “Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)”",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Yararlanıcıların destek başvuruları incelemeci kuruluşa (Hizmet İhracatçıları Birliği Genel Sekreterliği) yapılır.",
+    "alinti": "yararlanıcı ve organizatör tarafından yapılan tüm destek başvuruları ile “Acenteler Listesi (EK -7)”nde yer almak isteyen acentelere yönelik başvurular ve söz konusu başvurulara ilişkin bildirim ve eksik tamamlama işlemleri ile sisteme kayıt başvuruları incelemeci kuruluşa yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+    "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+    "alinti": "izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+    "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-10962-m7-hizmet-belgelendirme": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Yararlanıcı tanımına Türkiye'de yerleşik, Türk Ticaret Kanunu hükümlerine göre kurulmuş şirketler ve Kooperatifler Kanunu çerçevesinde faaliyette bulunan kooperatifler girer.",
+    "alinti": "Kanunu hükümlerine göre kurulmuş şirket i, 24/4/1969 tarihli ve 1163 sayılı Kooperatifler Kanunu hükümleri çerçevesinde faaliyette bulunan kooperatifi,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Atılım Programı kapsamındaki sektörler: bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, lojistik ve taşımacılık, sağlık ve spor turizmi, teknik müşavirlik, uygunluk değerlendirme.",
+    "alinti": "Hizmet Sektörleri Atılım Programı için bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, l ojistik ve taşımacılık, sağlık ve spor turizmi , teknik müşavirlik veya uygunluk değerlendirme sektörlerinde faaliyet gösteren",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "belge",
+    "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+    "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yalnızca EK-9 listesindeki belge, sertifika ve akreditasyonlara ilişkin müracaat, tetkik, belge kullanım, zorunlu kayıt, gözetim, yenileme ve test giderleri desteklenir.",
+    "alinti": "“Desteklenen Belge, Sertifika ve Akreditasyon Listesi (EK-9)”nde yer alan belge, sertifika ve akreditasyonlara yönelik; a) Müracaat ve doküman inceleme, b) Tetkik, c) Belge kullanım, ç) Zorunlu kayıt, d) Gözetim ve denetim, e) Yenileme, f) Test veya analiz, giderleri desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yenileme giderleri bir takvim yılında yıllık üst limitin %50'sini geçmeyecek şekilde desteklenir.",
+    "alinti": "Yenileme giderleri, bir takvim yılında ilgili yıl için belirlenen destek üst limitinin %50’sini geçmeyecek şekilde desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Belgelendirme sürecinde alınan eğitim, danışmanlık, ulaşım ve konaklama hizmetlerinin giderleri desteklenmez.",
+    "alinti": "Belgelendirme sürecinde alınan hizmetlere ilişkin eğitim, danışmanlık, ulaşım ve konaklama giderleri destek kapsamında değerlendirilmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek başvurusu, belge/sertifika/akreditasyon düzenlendikten, yenilendikten veya gözetim ya da denetimi tamamlandıktan sonra yapılır.",
+    "alinti": "Destek başvurusu ; ilgili belge, sertifika veya akreditasyonun düzenlenmesini, yenilenmesini, gözetim ya da denetiminin tamamlanmasını müteakip yararlanıcı tarafından yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Başvuru süresi belgenin düzenlenme, yenileme veya gözetim tarihinden itibaren altı aydır.",
+    "alinti": "“Belgelendirme desteği” başlıklı 11 inci, “Markalaşma Programı belgelendirme desteği” başlıklı 65 inci ve “Sürdürülebilirlik projesi belgelendirme desteği” başlıklı 90 ıncı maddeler için ilgisine göre belgenin düzenlenme, yenileme veya gözetim tarihinden itibaren altı ay,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Yararlanıcıların destek başvuruları incelemeci kuruluşa (Hizmet İhracatçıları Birliği Genel Sekreterliği) yapılır.",
+    "alinti": "yararlanıcı ve organizatör tarafından yapılan tüm destek başvuruları ile “Acenteler Listesi (EK -7)”nde yer almak isteyen acentelere yönelik başvurular ve söz konusu başvurulara ilişkin bildirim ve eksik tamamlama işlemleri ile sisteme kayıt başvuruları incelemeci kuruluşa yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+    "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+    "alinti": "izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+    "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-10962-m8-hizmet-birim": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Yararlanıcı tanımına Türkiye'de yerleşik, Türk Ticaret Kanunu hükümlerine göre kurulmuş şirketler ve Kooperatifler Kanunu çerçevesinde faaliyette bulunan kooperatifler girer.",
+    "alinti": "Kanunu hükümlerine göre kurulmuş şirket i, 24/4/1969 tarihli ve 1163 sayılı Kooperatifler Kanunu hükümleri çerçevesinde faaliyette bulunan kooperatifi,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Atılım Programı kapsamındaki sektörler: bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, lojistik ve taşımacılık, sağlık ve spor turizmi, teknik müşavirlik, uygunluk değerlendirme.",
+    "alinti": "Hizmet Sektörleri Atılım Programı için bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, l ojistik ve taşımacılık, sağlık ve spor turizmi , teknik müşavirlik veya uygunluk değerlendirme sektörlerinde faaliyet gösteren",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "belge",
+    "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+    "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Birim: yurt dışında açılan ofis, paylaşımlı ofis, ön tanı merkezi ve aktarma merkezidir.",
+    "alinti": "Yurt dışında açılan ofis, paylaşımlı ofis , ön tanı merkezi ve aktarma merkezi",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Desteğe konu birim konut olarak kullanılamaz.",
+    "alinti": "Desteğe konu birim konut olarak kullanılamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödeme için ilgili birimin destek başvurusuna konu dönemde fiilen faaliyette olması esastır.",
+    "alinti": "Destek ödemesi yapılabilmesi için ilgili birimin destek başvurusuna konu dönemde fiilen faaliyette olması esastır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yararlanıcının kendi distribütöründen, bayisinden, temsilcisinden veya acentesinden sağladığı kiralama hizmeti desteklenmez.",
+    "alinti": "Yararlanıcının kendi distribütörü, bayisi, temsilcisi veya acentesinden sağladığı kiralama hizmeti destek kapsamında değerlendirilmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Birimin kapanması, adresinin veya kira sözleşmesinin değişmesi hâlinde değişiklikten itibaren en geç bir ay içinde incelemeci kuruluşa bildirim yapılır.",
+    "alinti": "b) Birimin kapanması, c) Birim adresinin değişmesi, ç) Birime ait kira sözleşmesinin değişmesi, hallerinde, değişiklik tarihinden itibaren yararlanıcı tarafından en geç bir ay içinde incelemeci kuruluşa bildirim yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Birim, Bakanlık yurt dışı temsilciliği tarafından yerinde incelenir.",
+    "alinti": "Bu madde kapsamında desteklenecek birim; “Birim ve UTPO yerinde inceleme işlemleri” başlıklı 101 inci maddede yer alan usule göre Bakanlık yurt dışı temsilciliği tarafından yerinde incelenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek başvurusu, faaliyet gerçekleştikten sonra yararlanıcı tarafından yapılır.",
+    "alinti": "Destek başvurusu , faaliyetin gerçekleştirilmesini müteakip yararlanıcı tarafından yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Destek başvurusu, ödeme belgesi tarihinden itibaren altı ay içinde EK-4 başvuru belgeleriyle yapılır.",
+    "alinti": "bu maddede sayılmayan diğer destek unsurları için ödeme belgesi tarihinden itibaren altı ay, içerisinde ilgisine göre “Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)”",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Hedef ülkelerde yapılan faaliyetlerde destek oranı en fazla 20 puan artırılabilir.",
+    "alinti": "faaliyetlerin Bakanlık tarafından belirlenen hedef ülkelerde veya hedef ülkelere yönelik gerçekleştirilmesi hâlinde en fazla 20 puan artırılarak uygulanabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+    "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+    "alinti": "izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+    "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-10962-m9-hizmet-heyet": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Destekten yararlanan işbirliği kuruluşu: hizmet sektörlerinde faaliyet gösteren ve Bakanlık tarafından belirlenen kamu kurum ve kuruluşu, sektörel çatı kuruluşu ile diğer sektörel kuruluştur.",
+    "alinti": "Hizmet sektörlerinde faaliyet gösteren ve Bakanlık tarafından belirlenen kamu kurum ve kuruluşu, sektörel çatı kuruluşu ile diğer sektörel kuruluşu,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Atılım Programı kapsamındaki sektörler: bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, lojistik ve taşımacılık, sağlık ve spor turizmi, teknik müşavirlik, uygunluk değerlendirme.",
+    "alinti": "Hizmet Sektörleri Atılım Programı için bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, l ojistik ve taşımacılık, sağlık ve spor turizmi , teknik müşavirlik veya uygunluk değerlendirme sektörlerinde faaliyet gösteren",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "belge",
+    "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+    "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Heyet organizasyonu: işbirliği kuruluşlarınca düzenlenen ikili iş görüşmesi, kuruluş veya tesis ziyareti, iş organizasyonlarına katılım, tanıtım veya sunum gezisi şeklindeki organizasyondur.",
+    "alinti": "hizmet sektörlerinin mevcut pazarlardaki konumunun güçlendirilmesi ya da yeni pazarlar bulunması amacıyla işbirliği kuruluşlarınca düzenlenen ikili iş görüşmesi, ilgili kuruluş ya da tesis ziyareti, iş organizasyonlarına katılım, tanıtım veya sunum gezisi şeklinde gerçekleştirilen organizasyonu,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Desteklenen giderler arasında tercümanlık ile toplantı ve ikili iş görüşmesi organizasyon giderleri (yer kirası, teknik araç ve gereç kirası) vardır.",
+    "alinti": "b) Tercümanlık hizmeti giderleri, c) Toplantı ve ikili iş görüşmesi organizasyon giderleri (yer kirası, ilgili teknik araç ve gereçlerin kira giderleri",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Heyetin başlangıç tarihinden en az iki ay önce işbirliği kuruluşu tarafından ön onay başvurusu yapılır.",
+    "alinti": "İşbirliği kuruluşlarının heyet e ilişkin giderlerinin desteklenebilmesi için işbirliği kuruluşu tarafından heyetin başlangıç tarihinden en az iki ay önce ön onay başvurusu yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ön onaya tabi desteklerde ön onay başvuru tarihinden sonra gerçekleştirilen faaliyet ve ödemeler, Genel Müdürlükçe uygun görülen bütçe ve kapsam dâhilinde desteklenir.",
+    "alinti": "ön onaya tabi desteklerde, ön onay başvuru tarihini müteakip gerçekleştirilen faaliyet ve ödemeler, Genel Müdürlükçe uygun görülen bütçe ve kapsam dâhilinde desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek başvurusu, heyet gerçekleştikten sonra işbirliği kuruluşu tarafından yapılır.",
+    "alinti": "Destek başvurusu ilgili heyetin gerçekleştirilmesini müteakip işbirliği kuruluşu tarafından yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Başvuru süresi faaliyetin bitiş tarihinden itibaren altı aydır.",
+    "alinti": "faaliyetin bitiş tarihinden itibaren altı ay,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Bir heyet yol hariç en fazla beş gün, birden fazla ülkedeki ticaret heyeti yol hariç en fazla on gün desteklenir.",
+    "alinti": "Bir heyet yol hariç en fazla beş gün süreyle desteklenir. Ticaret heyeti, birden fazla ülkede gerçekleştirilmesi hâlinde yol hariç en fazla on gün süreyle desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ticaret heyetinde toplamda en az 5 işbirliği kuruluşu veya yararlanıcı katılımcı olmalıdır; alım heyetinde asgari katılımcı şartı yoktur.",
+    "alinti": "Katılımcı olarak toplamda en az 5 işbirliği kuruluşunun veya yararlanıcının iştirak ettiği ticaret heyeti desteklenir. Alım heyetinde asgari katılımcı sayısı şartı bulunmamaktadır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Hedef ülkelerde yapılan faaliyetlerde destek oranı en fazla 20 puan artırılabilir.",
+    "alinti": "faaliyetlerin Bakanlık tarafından belirlenen hedef ülkelerde veya hedef ülkelere yönelik gerçekleştirilmesi hâlinde en fazla 20 puan artırılarak uygulanabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+    "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+    "alinti": "izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+    "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m13-eximbank-cirr-tazmin": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Başvuru sahibi Eximbank'tır: faiz farkı desteği için Eximbank, alıcı kredilerine uyguladığı faiz oranını belirleyip Bakanlığa DYS/KEP ile başvurur.",
+    "alinti": "Eximbank, Kararın 13 üncü maddesinin birinci fıkrasında ifade edilen destekten yararlanmak üzere, alıcı kredilerine yönelik uyguladığı faiz oranını belirler",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334206313b8769ec0647ee4/Genelge_20.5.2026.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Faiz farkı desteği: Eximbank'ın alıcı kredisi faiz oranı ile CIRR arasındaki farka tekabül eden faiz giderinin tamamı desteklenir.",
+    "alinti": "Eximbank’ın uyguladığı faiz oranı ile CIRR arasındaki farka tekabül eden faiz giderinin tamamı desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Destek, Eximbank tarafından kullandırılan yatırım malı içeren mal ihracatı alıcı kredilerine ilişkindir.",
+    "alinti": "Eximbank tarafından kullandırılan yatırım malı (yurt dışında üstlenilen taahhüt işleri kapsamında müteahhitlik şirketlerinin Türkiye'den tedarik edecekleri yatırım malları dâhil) içeren mal ihracatı alıcı kredilerinde",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Eximbank sabit faiz oranları, ilgili ortalama vadeli Hazine tahvili alış getirisinin (Bid Yield) 200 baz puan (%2,0) fazlasını aşamaz.",
+    "alinti": "Eximbank’ın destek kapsamında uyguladığı sabit faiz oranları, ilgili ortalama vadelere denk gelen Hazine ve Maliye Bakanlığı tahvillerinin yıllık alış getiri oranının (Bid Yield) 200 baz puan (%2,0) fazlasını aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334206313b8769ec0647ee4/Genelge_20.5.2026.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Alıcı kredisine konu sözleşmedeki toplam mal bedelinin en az %80'i yatırım mallarından oluşmalıdır.",
+    "alinti": "toplam mal bedelinin en az %80’inin yatırım mallarından oluşması gerekir",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334206313b8769ec0647ee4/Genelge_20.5.2026.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Desteklenecek alıcı kredisi tutarı sözleşme kapsamında ihraç edilecek FOB mal bedelini aşamaz.",
+    "alinti": "Karar kapsamında desteklenecek alıcı kredisi tutarı sözleşme kapsamında ihraç edilecek FOB mal bedelini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334206313b8769ec0647ee4/Genelge_20.5.2026.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İhracat kredi sigortası reasürans zararında, takvim yılı zarar rasyosunun %60'ı aşan kısma ilişkin Eximbank payı yıllık en fazla 20.000.000 TL'ye kadar desteklenir.",
+    "alinti": "zarar rasyosunun takvim yılı bazında %60’ın üzerine çıkması durumunda, bu oranın üzerinde kalan tazminat tutarlarının reasürans anlaşmasında belirlenen Eximbank payına düşen giderlerinin yıllık en fazla 20.000.000 TL’ye kadar olan kısmı desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Eximbank'ın yaptığı tazminat ödemelerinin reasüre edilemeyen kısmı %50 oranında desteklenir.",
+    "alinti": "reasüre edilemeyen kısmı %50",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Reasüre edilemeyen kısma yönelik destek yıllık en fazla 100.000.000 TL'ye kadar verilir.",
+    "alinti": "ranında ve yıllık en fazla 100.000.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Geri ödenmeyen alıcı kredilerinde Eximbank üzerinde kalan risk %25 oranında ve yıllık toplam en fazla 1.000.000.000 TL'ye kadar desteklenir.",
+    "alinti": "Bu Karar kapsamında kullandırılan alıcı kredilerinin geri ödenmemesi durumunda Eximbank üzerinde kalan risk %25 oranında ve yıllık toplam en fazla 1.000.000.000 TL'ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ön onaylı avans kredilerinde avans, sözleşmedeki mal bedelinin en fazla %40'ı oranında kullandırılabilir.",
+    "alinti": "Avansa konu kredi tutarı, sözleşmede belirlenen mal bedeli tutarının en fazla %40’ı oranında kullandırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334206313b8769ec0647ee4/Genelge_20.5.2026.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Tazmin ödemesi (üçüncü fıkra) için her işlemde Bakanlıktan ön onay alınır, ödemeden sonra DYS/KEP ile başvurulur.",
+    "alinti": "Eximbank, Kararın 13 üncü maddesinin üçüncü fıkrasında destekten faydalanmak üzere her bir işlem bazında Bakanlıktan ön onay alır ve tazmin ödemesini müteakip Ek-1’de belirtilen belgelerle birlikte Bakanlığa DYS/KEP aracılığıyla başvuruda bulunur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334206313b8769ec0647ee4/Genelge_20.5.2026.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m15-tasarimci-sirket-tasarim-ofisi": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Tasarımcı şirket: Türkiye'de ticari/sınai faaliyette bulunan, tasarımcının ortak olduğu, endüstriyel ürün veya moda tasarımı alanında faaliyet gösteren şirkettir.",
+    "alinti": "Türkiye’de ticari ve/veya sınai faaliyette bulunan, tasarımcının ortak olduğu, endüstriyel ürün tasarımı veya moda tasarımı alanlarında faaliyet göstermekte olan şirketleri,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Tasarım ofisi: yalnızca tasarım hizmeti/danışmanlığı yapan, tasarımcının ortak olduğu ve bünyesinde en az üç tasarımcı bulunan şirkettir.",
+    "alinti": "sadece tasarım hizmeti ve/veya danışmanlığı faaliyetinde bulunan, tasarımcının ortak olduğu ve bünyesinde en az üç adet tasarımcı bulunan endüstriyel ürün tasarımı veya moda tasarımı alanlarında faaliyet göstermekte olan şirketleri",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Marka, patent, faydalı model, endüstriyel tasarım tescili ve marka tescili yenileme/koruma giderleri desteklenir.",
+    "alinti": "Tasarımcı şirketleri ve tasarım ofislerinin yurt dışında tanınmaları ve markalaşmaları amacıyla marka, patent, faydalı model, endüstriyel tasarım tescili ve marka tescilinin yenilenmesi/korunması giderleri,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İstihdam, danışmanlık, fuar ve tanıtım giderleri 4 yıl süresince %50 oranında ve yıllık 5.000.000 TL'ye kadar desteklenir.",
+    "alinti": "istihdam giderleri, danışmanlık, fuar ve tanıtım faaliyetlerine ilişkin giderleri, 4 yıl süresince %50 oranında ve yıllık 5.000.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Bu destekten yararlanan şirketler, destek süreleri boyunca Kararın 4, 5, 7, 11, 12, 16, 17 ve 19 uncu maddelerindeki desteklerden yararlandırılmaz.",
+    "alinti": "Bu madde kapsamında desteklenen şirketler destek süreleri boyunca 4 üncü, 5 inci, 7 nci, 11 inci, 12 nci, 16 ncı, 17 nci ve 19 uncu maddelerde yer alan desteklerden yararlandırılmazlar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek unsurlarından yararlanmak için önce tasarımcı şirketin/ofisin destek kapsamına alınması gerekir; kapsama alınma başvurusu DYS üzerinden yapılır.",
+    "alinti": "Bu Genelgede düzenlenen destek unsurlarından yararlanmak için tasarımcı şirket/tasarım ofisinin destek kapsamına alınması gerekir. Buna ilişkin kapsama alınma başvuruları DYS üzerinden yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63341fc613b8769ec0647ed8/Tasar%C4%B1mc%C4%B1%20%C5%9Eirket%20ve%20Tasar%C4%B1m%20Ofisi%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Destek kapsamına alınma başvurusu yapılan markanın başvuru tarihi itibarıyla en az 1 yıl önce alınmış yurt içi tescili bulunmalıdır.",
+    "alinti": "Tasarımcı şirket/tasarım ofisi tarafından destek kapsamına alınma başvurusu yapılan markanın başvuru tarihi itibarıyla en az 1 yıl önce alınmış yurt içi tescilinin bulunması gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63341fc613b8769ec0647ed8/Tasar%C4%B1mc%C4%B1%20%C5%9Eirket%20ve%20Tasar%C4%B1m%20Ofisi%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Destek, kapsama alındığı tarihten itibaren en fazla dört yıl süreyle verilir.",
+    "alinti": "Tasarımcı şirket/tasarım ofisi destek kapsamına alındığı tarihten itibaren en fazla dört yıl süreyle destekten yararlandırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63341fc613b8769ec0647ed8/Tasar%C4%B1mc%C4%B1%20%C5%9Eirket%20ve%20Tasar%C4%B1m%20Ofisi%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yıllık destek tutarı, yıllık ihracatın yarısından fazla olamaz (ilk destek yılı hariç).",
+    "alinti": "Destek kapsamına alınan tasarımcı şirket ve tasarım ofislerine yıllık verilecek destek tutarı, yıllık ihracatının yarısından fazla olamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63341fc613b8769ec0647ed8/Tasar%C4%B1mc%C4%B1%20%C5%9Eirket%20ve%20Tasar%C4%B1m%20Ofisi%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Ödeme başvurusu Ek 1'deki belgelerle ödeme belgesi tarihinden itibaren en geç altı ay içinde incelemeci kuruluşa DYS üzerinden yapılır.",
+    "alinti": "Bu Genelge kapsamında tasarımcı şirket/tasarım ofisinin destek ödemesinden yararlandırılabilmesi için Ek 1’de belirtilen belgelerle birlikte ödeme belgesi tarihinden itibaren en geç altı ay içerisinde incelemeci kuruluşa DYS üzerinden başvurulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63341fc613b8769ec0647ed8/Tasar%C4%B1mc%C4%B1%20%C5%9Eirket%20ve%20Tasar%C4%B1m%20Ofisi%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m16-gemi-yat-tasarim": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "kural",
+    "metin": "Gemi ve yat sektöründeki şirketlerin aldıkları tasarım hizmeti giderleri 5 yıl süresince %50 oranında ve yıllık 3.000.000 TL'ye kadar desteklenir.",
+    "alinti": "Gemi ve yat sektöründe faaliyet gösteren şirketlerin alacakları tasarım hizmetine ilişkin giderleri, 5 yıl süresince %50 oranında ve yıllık 3.000.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Ödeme başvurusu Ek 1'deki belgelerle, ödeme belgesi tarihinden itibaren en geç altı ay içinde incelemeci kuruluşa DYS üzerinden yapılır.",
+    "alinti": "Bu Genelge kapsamında şirketlerin destek ödemesinden yararlandırılabilmesi için Ek 1’de belirtilen belgelerle birlikte ödeme belgesi tarihinden itibaren en geç altı ay içerisinde incelemeci kuruluşa DYS üzerinden başvurulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334204213b8769ec0647ee1/Gemi%20ve%20Yat%20Sekt%C3%B6r%C3%BCnde%20Faaliyet%20G%C3%B6steren%20%C5%9Eirketlere%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "5 yıllık destek süresi, ilk destek ödemesine esas ödeme belgesi tarihinden başlar; devam eden dönemde başvuru yapılmaması limite esas süreyi kesmez.",
+    "alinti": "5 yıllık destek süresinin hesaplanmasında, destek konusu faaliyete ilişkin ilk destek ödemesine esas teşkil eden ödeme belgesi tarihi esas alınır. Devam eden dönemde destek başvurusu yapılmamış olması, limite esas süreyi kesmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334204213b8769ec0647ee1/Gemi%20ve%20Yat%20Sekt%C3%B6r%C3%BCnde%20Faaliyet%20G%C3%B6steren%20%C5%9Eirketlere%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "DYS'den istenen eksik belgeler bildirimden itibaren üç ay içinde tamamlanmazsa ilgili harcamalar destek kapsamında değerlendirilmez.",
+    "alinti": "eksik bilgi/belgelerin; şirkete bildirildiği tarihten itibaren üç ay içerisinde tamamlanmaması halinde, söz konusu harcamalar destek kapsamında değerlendirilmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334204213b8769ec0647ee1/Gemi%20ve%20Yat%20Sekt%C3%B6r%C3%BCnde%20Faaliyet%20G%C3%B6steren%20%C5%9Eirketlere%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m17-marka-turquality": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "kural",
+    "metin": "Marka destek programındaki şirketlerin patent, faydalı model, endüstriyel tasarım tescili, pazara giriş belgesi, ruhsatlandırma, istihdam ve danışmanlık giderleri desteklenir.",
+    "alinti": "Marka destek programı kapsamına alınan şirketlerin patent, faydalı model, endüstriyel tasarım tescili, pazara giriş belgesi, ruhsatlandırma, istihdam, danışmanlık giderleri",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Marka destek programında yurt dışı marka tescil, pazar araştırması, klinik test, tanıtım, fuar, depolama, birim kira ve franchise giderleri 4 yıl süresince %50 oranında desteklenir.",
+    "alinti": "klinik test işlemleri, tanıtım, fuar, depolama hizmeti, birim kira/temel kurulum/konsept mimari çalışma ve franchise giderleri 4 yıl süresince %50 oranında desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "TURQUALITY® programındaki şirketlerin aynı gider kalemleri %50 oranında desteklenir.",
+    "alinti": "klinik test işlemleri, tanıtım, fuar, depolama hizmeti ve birim kira/temel kurulum/konsept mimari çalışma ve franchise giderleri %50 oranında desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "TURQUALITY® programında hedef pazara yönelik faaliyet giderleri her hedef pazar için 5 yıl süreyle desteklenir.",
+    "alinti": "TURQUALITY® destek programı kapsamına alınan şirketlerin/markaların hedef pazarlara yönelik faaliyetlerine ilişkin giderleri, her bir hedef pazar için 5 yıl süreyle desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "TURQUALITY® programında kurumsal altyapı ve istihdam giderleri ilk 5 yıllık dönem için desteklenir.",
+    "alinti": "kurumsal altyapı oluşturmaya yönelik faaliyetlerine ilişkin giderleri ile istihdam giderleri, ilk 5 yıllık dönemi için desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Satın alınan yabancı markalar bu madde kapsamında desteklenmez.",
+    "alinti": "Satın alınan yabancı markalar bu madde çerçevesinde desteklenmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Programdan çıkarılan veya kendi isteğiyle çıkan firmalar, en az 2 yıl sonra TURQUALITY® programına yeniden başvurabilir.",
+    "alinti": "en az 2 yıl sonra TURQUALITY® destek programı kapsamına alınmak üzere başvuru yapabilirler.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Başvuru şartı: son 3 yıllık ortalama ihracatın en az 3.000.000 ABD Doları olması.",
+    "alinti": "İhraç kayıtlı satışları ile organik bağı bulunan şirketleri dahil olmak üzere son üç takvim yılında ihracat yapmış olması şartıyla, destek kapsamına alınma başvurusu tarihi itibariyle son 3 yıllık ortalama ihracatının en az 3.000.000 ABD Doları tutarında olması,",
+    "kaynak_url": "https://ticaret.gov.tr/data/63403c7213b87692b0e3b9d6/Marka%20ve%20Turquality%20Deste%C4%9Fine%20ili%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Markanın başvuru tarihinden en az 1 yıl önce alınmış yurt içi tescili ve Madrid Protokolü'ne taraf bir ülkede yurt dışı tescili bulunmalıdır.",
+    "alinti": "Başvuruda bulunulan markaya ilişkin başvuru tarihi itibarıyla en az 1 yıl önce alınmış yurt içi ile Madrid Uluslararası Marka Tescil Protokolüne taraf olan ülkelerden en az birinde en az 1 yıl önce alınmış yurt dışı tescillerinin bulunması,",
+    "kaynak_url": "https://ticaret.gov.tr/data/63403c7213b87692b0e3b9d6/Marka%20ve%20Turquality%20Deste%C4%9Fine%20ili%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Son 1 yılda en az 10.000.000 ABD Doları ihracat yapmış şirkette ihracat ortalaması ve 1 yıllık tescil şartları aranmaz; yurt içi ve yurt dışı tescil gerekir.",
+    "alinti": "Başvuru yaptığı tarih itibarıyla son 1 yıl içerisinde en az 10.000.000 ABD Doları ihracat yapmış olan şirkette bu maddenin birinci fıkrasının (a) ve (b) bentlerinde belirtilen şartlar aranmaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63403c7213b87692b0e3b9d6/Marka%20ve%20Turquality%20Deste%C4%9Fine%20ili%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Programa girmek için belgelerle sistem üzerinden Bakanlığa müracaat edilir.",
+    "alinti": "Ek-4’te belirtilen belgelerle, sistem üzerinden Bakanlığa müracaat edilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63403c7213b87692b0e3b9d6/Marka%20ve%20Turquality%20Deste%C4%9Fine%20ili%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde (genelgenin 5 inci maddesi kapsamında faaliyet bitişinden 3 ay içinde) incelemeci kuruluşa yapılır.",
+    "alinti": "Gerçekleştirilen faaliyete ilişkin harcamanın desteklenmesini teminen ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde; bu Genelgenin 5 inci maddesi kapsamında yapılan başvurularda ise desteğe konu faaliyetin sona erdiği tarihten itibaren en geç 3 ay içerisinde;",
+    "kaynak_url": "https://ticaret.gov.tr/data/63403c7213b87692b0e3b9d6/Marka%20ve%20Turquality%20Deste%C4%9Fine%20ili%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m18-cok-kanalli-zincir-magaza": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Tanım: gıda dışı sektörlerde faaliyet gösteren, aynı tüzel kişi sahipliğinde bir merkeze bağlı, yurt içinde en az 100 fiziksel perakende mağazası bulunan perakende satış noktaları.",
+    "alinti": "gıda dışı sektörlerde faaliyet gösteren, aynı tüzel kişi sahipliğinde bir merkeze bağlı olarak faaliyet gösteren; yurt içinde en az 100 fiziksel perakende mağazası bulunan perakende satış noktalarını",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Şirketin çok kanallı zincir mağaza markası adı altında ticaret siciline kayıtlı yurt içinde en az 100 fiziksel perakende mağazası bulunmalıdır.",
+    "alinti": "Çok kanallı zincir mağaza markası adı altında faaliyet gösteren ticaret siciline kayıtlı yurt içinde en az 100 fiziksel perakende mağazası bulunması,",
+    "kaynak_url": "https://ticaret.gov.tr/data/6373814713b8765e08761cfe/%C3%87ok%20Kanall%C4%B1%20Zincir%20Ma%C4%9Faza%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Markanın başvuru tarihinden en az 1 yıl önce alınmış yurt içi tescili ve Madrid Protokolü'ne taraf bir ülkede yurt dışı tescili bulunmalıdır.",
+    "alinti": "Başvuruda bulunulan çok kanallı zincir mağaza markasına ilişkin başvuru tarihi itibarıyla en az 1 yıl önce alınmış yurt içi ile Madrid Uluslararası Marka Tescil Protokolüne taraf olan ülkelerden en az birinde en az 1 yıl önce alınmış yurt dışı tescillerinin bulunması,",
+    "kaynak_url": "https://ticaret.gov.tr/data/6373814713b8765e08761cfe/%C3%87ok%20Kanall%C4%B1%20Zincir%20Ma%C4%9Faza%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Franchise/birimlere yönelik yurt dışı marka tescil/yenileme/koruma, pazar araştırması çalışması ve raporları ile kira giderleri desteklenir.",
+    "alinti": "Çok kanallı zincir mağaza desteği kapsamına alınan şirketlerin franchise/birimlerine yönelik yurt dışı marka tescil/yenileme/koruma, pazar araştırması çalışması ve raporları, kira,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Tanıtım, kurulum/konsept mimari ve dekorasyon giderleri 5 yıl süresince %50 oranında ve yıllık 180.000.000 TL'ye kadar desteklenir.",
+    "alinti": "tanıtım, temel kurulum/konsept mimari çalışma/dekorasyon giderleri 5 yıl süresince %50 oranında ve yıllık 180.000.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "5 yıllık sürenin sonunda performans değerlendirmesiyle destek süresi bir defaya mahsus 5 yıl daha uzatılabilir.",
+    "alinti": "5 yıllık destek süresi sonunda, Bakanlıkça gerçekleştirilecek performans değerlendirmesi sonucunda şirketlerin destek süresi bir defaya mahsus 5 yıl daha uzatılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Satın alınan yabancı çok kanallı zincir mağazalar desteklenmez.",
+    "alinti": "Satın alınan yabancı çok kanallı zincir mağazalar bu madde çerçevesinde desteklenmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Bu destekten yararlanan şirketler, destek süreleri boyunca Kararın 4, 5, 6, 11, 12, 15, 16, 17 ve 19 uncu maddeleri ile 10 uncu maddenin üçüncü fıkrasındaki desteklerden yararlandırılmaz.",
+    "alinti": "Bu madde kapsamında desteklenen şirketler destek süreleri boyunca 4 üncü, 5 inci, 6 ncı maddeler ve 10 uncu maddenin üçüncü fıkrası ile 11 inci, 12 nci, 15 inci, 16 ncı, 17 nci ve 19 uncu maddelerde yer alan desteklerden yararlandırılmazlar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Şartları taşıyan şirket, Ek-3'te belirtilen belgelerle Bakanlığa müracaat eder.",
+    "alinti": "Bu Genelgenin 9 uncu maddesinde belirtilen şartları haiz şirket, destek kapsamına alınabilmek için Ek-3’te belirtilen belgelerle Bakanlığa müracaat eder.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6373814713b8765e08761cfe/%C3%87ok%20Kanall%C4%B1%20Zincir%20Ma%C4%9Faza%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Kapsama alınması uygun görülmeyen şirket, ret bildiriminden 6 ay sonra yeniden müracaat edebilir.",
+    "alinti": "Destek kapsamına alınması uygun görülmeyen şirket, Bakanlığın ret bildirim tarihinden itibaren 6 ay sonra yeniden müracaatta bulunabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6373814713b8765e08761cfe/%C3%87ok%20Kanall%C4%B1%20Zincir%20Ma%C4%9Faza%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Harcama desteği için ödeme belgesi tarihinden itibaren en geç 6 ay içinde Ek-4'teki belgeler incelemeci kuruluşa ibraz edilir.",
+    "alinti": "ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde, Ek-4’te belirtilen başvuru belgelerinin ilgili incelemeci kuruluşa ibraz edilmesi gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6373814713b8765e08761cfe/%C3%87ok%20Kanall%C4%B1%20Zincir%20Ma%C4%9Faza%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m19-ur-ge-proje": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "UR-GE projesini işbirliği kuruluşları (TİM, TOBB, DEİK, ihracatçı birlikleri, odalar, OSB'ler, sektör dernekleri vb.) yürütür; şirketler üye olarak projeye katılır.",
+    "alinti": "Bu Genelge kapsamındaki desteklerden faydalanmak üzere belirlenen işbirliği kuruluşları Türkiye İhracatçılar Meclisi (TİM), Türkiye Odalar ve Borsalar Birliği (TOBB), Dış Ekonomik İlişkiler Kurulu (DEİK), İhracatçı Birlikleri,",
+    "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "İşbirliği kuruluşunun üyesi en az 10 şirketin yer aldığı proje başvuruları değerlendirilmeye alınır.",
+    "alinti": "UR-GE projeleri kapsamında işbirliği kuruluşunun üyesi en az 10 şirketin yer aldığı proje başvuruları değerlendirilmeye alınır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "SDŞ / ihracat konsorsiyumu olan işbirliği kuruluşlarında en az 5 şirketin katıldığı başvurular değerlendirilir (genelgede bölgesel bir alternatif de vardır).",
+    "alinti": "Sektörel Dış Ticaret Şirketi / İhracat Konsorsiyumu olması durumunda en az 5 şirketin katıldığı başvurular değerlendirmeye alınır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "UR-GE projesinde yer alacak şirketlerin DYS'de yararlanıcı olarak kayıtlı olmaları zorunludur.",
+    "alinti": "UR-GE projesinde yer alacak şirketlerin DYS’de yararlanıcı olarak kayıtlı olmaları zorunludur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İhtiyaç analizi, eğitim, danışmanlık ve tanıtım giderleri %75 oranında ve proje bazında 6.000.000 TL'ye kadar desteklenir.",
+    "alinti": "eğitim, danışmanlık ve tanıtım faaliyetlerine yönelik giderleri %75 oranında ve proje bazında 6.000.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İşbirliği kuruluşunun istihdam ettiği en fazla 2 uzman personelin proje süresince istihdam giderlerinin %75'i desteklenir.",
+    "alinti": "faaliyetlerinin organizasyonu için işbirliği kuruluşları tarafından istihdam edilen en fazla 2 uzman personelin proje süresince yapılacak istihdam giderlerinin %75’i desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Azami 10 yurt dışı pazarlama faaliyetinde ulaşım, konaklama, tanıtım ve organizasyon giderleri faaliyet başına 2.500.000 TL'ye kadar desteklenir.",
+    "alinti": "azami 10 adet yurt dışı pazarlama faaliyetine ilişkin ulaşım, konaklama, tanıtım ve organizasyona dair giderler faaliyet başına 2.500.000 TL’ye,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Azami 10 alım heyeti faaliyetinde giderler faaliyet başına 1.500.000 TL'ye kadar %75 oranında desteklenir.",
+    "alinti": "azami 10 adet alım heyeti faaliyetine ilişkin ulaşım, konaklama, tanıtım ve organizasyona dair giderler faaliyet başına 1.500.000 TL’ye kadar %75 oranında desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Azami 10 sanal yurt dışı pazarlama faaliyeti faaliyet başına 800.000 TL'ye kadar %75 oranında desteklenir.",
+    "alinti": "UR-GE projeleri kapsamında işbirliği kuruluşunca düzenlenecek azami 10 adet sanal yurt dışı pazarlama faaliyetine ilişkin giderleri faaliyet başına 800.000 TL’ye kadar %75 oranında desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Proje işleyişini geliştirmeye yönelik yetkilendirilmiş faaliyetlerin giderlerinin tamamı yıllık en fazla 4.000.000 TL'ye kadar desteklenir.",
+    "alinti": "UR-GE projelerinin işleyişinin geliştirilmesine yönelik Bakanlıkça faaliyet bazında yetkilendirilen işbirliği kuruluşları tarafından gerçekleştirilecek faaliyetlere ilişkin giderlerin tamamı yıllık en fazla 4.000.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "UR-GE projelerinin süresi 3 yıldır; performansa göre 2 yıla kadar ilave süre verilebilir.",
+    "alinti": "UR-GE projelerinin süresi 3 yıldır. Proje süresine projenin performansına göre 2 yıla kadar ilave süre verilebilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Bir şirket en fazla 3 UR-GE projesinde katılımcı olarak yer alabilir.",
+    "alinti": "Bu Karar kapsamında bir şirket en fazla 3",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "İşbirliği kuruluşu proje başvurusunu EK-A belgeleriyle DYS üzerinden Bakanlığa (İhracat Genel Müdürlüğü) iletir.",
+    "alinti": "Başvuru Belgeleri)’da yer alan belgelerle birlikte DYS üzerinden Bakanlığa (İhracat Genel Müdürlüğü) iletir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek ödemesi başvurusu faaliyet bitiş tarihinden itibaren en geç 3 ay içinde incelemeci kuruluşa yapılır.",
+    "alinti": "Bu Genelge kapsamındaki faaliyetlere ilişkin destek ödemesi başvuruları, faaliyet bitiş tarihinden itibaren en geç 3 ay içerisinde incelemeci kuruluşa yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m20-ihracat-konsorsiyumu": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Konsorsiyum statüsü için kümelenme çerçevesinde en az 3 şirketin ortaklığıyla kurulmuş, asgari 5 milyon TL ödenmiş sermayeli şirket olmak gerekir.",
+    "alinti": "Kümelenme anlayışı çerçevesinde en az 3 şirketin ortaklığı ile kurulmuş asgari 5 milyon TL ödenmiş sermayeye sahip şirketler ihracat konsorsiyumu statüsü başvurusu yapabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63a087b913b8763658260294/30.06.2025%20%C4%B0HRACAT%20KONSORS%C4%B0YUMU%20DESTE%C4%9E%C4%B0NE%20%C4%B0L%C4%B0%C5%9EK%C4%B0N%20GENELGE.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Yurt dışı pazarlama departmanında deneyimli bölüm yöneticisi (en az 10 yıl, en az 5 yılı yurt dışı pazarlama), hedef pazar dili bilen en az 3 tam zamanlı personel ve stratejik pazarlama planı bulunmalıdır.",
+    "alinti": "a) En az 5 yılı yurtdışı pazarlamaya ilişkin olmak üzere asgari 10 yıllık tecrübeye sahip bölüm yöneticisi, b) Pazarlama departmanında hedef pazarlara yönelik yabancı dil bilen tam zamanlı istihdam edilen en az 3 personel, c) Stratejik pazarlama planı bulunur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63a087b913b8763658260294/30.06.2025%20%C4%B0HRACAT%20KONSORS%C4%B0YUMU%20DESTE%C4%9E%C4%B0NE%20%C4%B0L%C4%B0%C5%9EK%C4%B0N%20GENELGE.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Konsorsiyum paydaşları aynı anda en fazla bir ihracat konsorsiyumunda yer alabilir.",
+    "alinti": "İhracat konsorsiyumu paydaşları aynı anda en fazla bir ihracat konsorsiyumunda yer alabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63a087b913b8763658260294/30.06.2025%20%C4%B0HRACAT%20KONSORS%C4%B0YUMU%20DESTE%C4%9E%C4%B0NE%20%C4%B0L%C4%B0%C5%9EK%C4%B0N%20GENELGE.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Danışmanlık, eğitim, tanıtım, pazar araştırması, depolama, birim kira ve kurulum giderleri %50 oranında ve yıllık 48.000.000 TL'ye kadar desteklenir.",
+    "alinti": "İhracat konsorsiyumu desteği kapsamına alınan şirketlerin danışmanlık, eğitim, tanıtım, pazar araştırması çalışması ve raporları, depolama hizmeti, birim kira ve temel kurulum/konsept mimari çalışma giderleri %50 oranında ve yıllık 48.000.000 TL'ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Hedef pazara yönelik giderler her hedef pazar için 5 yıl süreyle desteklenir.",
+    "alinti": "Destek programı kapsamına alınan ihracat konsorsiyumlarının hedef pazarlara yönelik danışmanlık, eğitim, tanıtım, pazar araştırması çalışması ve raporları, depolama hizmeti, birim kira ve temel kurulum/konsept mimari çalışma giderleri her bir hedef pazar için 5 yıl süreyle desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Kurumsal altyapıya yönelik danışmanlık ve eğitim giderleri ilk 5 yıllık destek dönemi için desteklenir.",
+    "alinti": "Destek programı kapsamına alınan ihracat konsorsiyumlarının kurumsal altyapı oluşturmaya yönelik danışmanlık ve eğitim giderleri ilk 5 yıllık destek dönemi için desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Bu destekten yararlanan konsorsiyumlar, destek süreleri boyunca Kararın 11, 12, 15, 17 ve 18 inci maddeleri ile 10 uncu maddenin üçüncü fıkrasındaki desteklerden yararlandırılmaz.",
+    "alinti": "Bu madde kapsamında desteklenen ihracat konsorsiyumları destek süreleri boyunca 10 uncu maddenin üçüncü fikrası ile 11 inci, 12 nci, 15 inci, 17 nci ve 18 inci maddelerde yer alan desteklerden yararlandırılmazlar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Statü almak için Ek-1'deki belgelerle Bakanlığa müracaat edilir.",
+    "alinti": "ihracat konsorsiyumu statüsü alabilmek için, Ek-1’de yer alan belgeler ile Bakanlığa müracaat eder.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63a087b913b8763658260294/30.06.2025%20%C4%B0HRACAT%20KONSORS%C4%B0YUMU%20DESTE%C4%9E%C4%B0NE%20%C4%B0L%C4%B0%C5%9EK%C4%B0N%20GENELGE.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Faaliyetin başlangıç tarihinden 15 gün önce Ek-2'deki belgelerle Bakanlığa başvurulur.",
+    "alinti": "İhracat konsorsiyumu gerçekleştireceği faaliyetlere yönelik faaliyetin başlangıç tarihinden 15 gün önce Ek-2’de belirtilen belgeler ile Bakanlığa başvurur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63a087b913b8763658260294/30.06.2025%20%C4%B0HRACAT%20KONSORS%C4%B0YUMU%20DESTE%C4%9E%C4%B0NE%20%C4%B0L%C4%B0%C5%9EK%C4%B0N%20GENELGE.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Harcama başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde EK-3'teki belgelerle incelemeci kuruluşa ibraz edilir.",
+    "alinti": "ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde EK-3’de belirtilen başvuru belgelerinin sistem üzerinden ilgili incelemeci kuruluşa ibraz edilmesi gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/63a087b913b8763658260294/30.06.2025%20%C4%B0HRACAT%20KONSORS%C4%B0YUMU%20DESTE%C4%9E%C4%B0NE%20%C4%B0L%C4%B0%C5%9EK%C4%B0N%20GENELGE.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Statüyü izleyen takvim yılında, yararlanılan destek tutarının 2 katı ihracat gerçekleştirilemezse statü iptal edilir.",
+    "alinti": "Statü aldıkları yılı takip eden takvim yılı içinde Kararın 20 nci maddesi kapsamında faydalanılan destek tutarının 2 katı ihracat miktarını gerçekleştirememeleri,",
+    "kaynak_url": "https://ticaret.gov.tr/data/63a087b913b8763658260294/30.06.2025%20%C4%B0HRACAT%20KONSORS%C4%B0YUMU%20DESTE%C4%9E%C4%B0NE%20%C4%B0L%C4%B0%C5%9EK%C4%B0N%20GENELGE.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m21-pazara-giris-rapor": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Başvuru sahipleri Bakanlıkça belirlenen işbirliği kuruluşlarıdır (TİM, TOBB, DEİK, ihracatçı birlikleri, odalar, OSB'ler, sektör dernekleri vb.).",
+    "alinti": "Bu Genelge kapsamındaki desteklerden faydalanmak üzere belirlenen işbirliği kuruluşları Türkiye İhracatçılar Meclisi (TİM), Türkiye Odalar ve Borsalar Birliği (TOBB), Dış Ekonomik İlişkiler Kurulu (DEİK), İhracatçı Birlikleri,",
+    "kaynak_url": "https://ticaret.gov.tr/data/6340311b13b87692b0e3b967/26.11.2025%20Pazara%20Giri%C5%9F%20Rapor%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Pazara giriş stratejisi/eylem planı için satın alınan sektör, ülke, yurt dışı şirket veya marka odaklı rapor giderleri %50 oranında ve yıllık 3.000.000 TL'ye kadar desteklenir.",
+    "alinti": "İşbirliği kuruluşlarının yurt dışına yönelik pazara giriş stratejileri ile eylem planlarının oluşturulabilmesi ve üyesi şirketlerle paylaşılmak amacıyla satın alınan sektör, ülke, yurt dışında yerleşik şirket veya marka odaklı rapor giderleri %50 oranında ve yıllık 3.000.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Satın alınan raporların ödeme belgesi tarihi itibarıyla en fazla 2 yıllık olması gerekir.",
+    "alinti": "raporların ödeme belgesi tarihi itibarıyla en fazla 2 yıllık olması gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6340311b13b87692b0e3b967/26.11.2025%20Pazara%20Giri%C5%9F%20Rapor%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "E-ticaret sitelerine üyelik ve bedelsiz temin edilebilen nitelikteki raporlara ilişkin giderler desteklenmez.",
+    "alinti": "Muhtelif kaynaklardan ve ilgili ülkedeki Bakanlık yurt dışı temsilcisi aracılığıyla bedelsiz olarak temin edilebilen nitelikteki raporlara ilişkin giderler desteklenmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6340311b13b87692b0e3b967/26.11.2025%20Pazara%20Giri%C5%9F%20Rapor%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Rapor desteği için Ek A'daki belgelerle Bakanlığa (İhracat Genel Müdürlüğü) başvurup ön onay almak gerekir.",
+    "alinti": "Destekten yararlanmak isteyen işbirliği kuruluşlarının, rapor desteği için EK A’da (Rapor Desteği Başvuru Belgeleri), belirtilen belgelerle birlikte Bakanlığa (İhracat Genel Müdürlüğü) başvurmaları ve ön onay almaları gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6340311b13b87692b0e3b967/26.11.2025%20Pazara%20Giri%C5%9F%20Rapor%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde incelemeci kuruluşa yapılır.",
+    "alinti": "ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde incelemeci kuruluşa yapılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6340311b13b87692b0e3b967/26.11.2025%20Pazara%20Giri%C5%9F%20Rapor%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m23-sanal-fuar-organizasyonu": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Sanal fuar organizasyonu, işbirliği kuruluşunca dijital ortamda düzenlenen ve internet üzerinden katılım sağlanan fuara yönelik organizasyondur.",
+    "alinti": "gerçekleştirilen, internet ağı üzerinde katılım sağlanan ve ziyaret edilebilen fuarlara yönelik organizasyonu,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Destek, Bakanlıkça (İhracat Genel Müdürlüğü) uygun görülen sanal fuar organizasyonları için verilir.",
+    "alinti": "Bakanlık (İhracat Genel Müdürlüğü) tarafından uygun görülen,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Sanal fuar organizasyonuna dair giderler %50 oranında ve faaliyet başına 1.500.000 TL'ye kadar desteklenir.",
+    "alinti": "dair giderler %50 oranında ve faaliyet başına 1.500.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Desteğe alınabilmesi için katılımcı sayısı en az 50, fuar süresince portala giriş yapacak çevrimiçi ziyaretçi sayısı en az 250 olmalıdır.",
+    "alinti": "Bir sanal fuar organizasyonunun destek kapsamına alınabilmesi için katılımcı sayısının 50’den ve fuar süresince sanal fuar portalına giriş yapacak çevrimiçi ziyaretçi sayısının da 250’den az olmaması gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Yabancı ziyaretçi sayısı toplam ziyaretçi sayısının yarısından az olmamalıdır.",
+    "alinti": "Yabancı ziyaretçi sayısının, toplam ziyaretçi sayısının yarısından az olmaması gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Tanıtım harcamalarının en az %80'i yurt dışına yönelik olmalıdır.",
+    "alinti": "sanal fuar organizasyonu tanıtımı kapsamındaki harcamaların en az %80’i yurt dışına yönelik olmak kaydıyla",
+    "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Onay başvurusu program başlangıcından en az 6 ay önce EK-3'teki belgelerle DYS üzerinden Bakanlığa yapılır.",
+    "alinti": "program başlangıç tarihinden en az 6 ay önce EK-3’te yer alan bilgi ve belgelerle Bakanlığa (İhracat Genel Müdürlüğü) DYS üzerinden onay başvurusunda bulunulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek başvurusu faaliyetin gerçekleşmesini müteakip 3 aylık süre içinde DYS üzerinden yapılır.",
+    "alinti": "Kararın 22 nci ve 23 üncü maddelerinde yer alan destekler için işbirliği kuruluşlarının destek başvurularını, faaliyetin gerçekleşmesini müteakip 3 aylık süre içerisinde DYS üzerinden yapmaları gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m25-sanal-ticaret-heyeti": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Sanal ticaret heyeti: yerli şirketler ile yurt dışı şirket ve kuruluşlar arasında elektronik ortamda, Bakanlık koordinasyonunda ve işbirliği kuruluşlarınca organize edilen dış ticaret faaliyetidir.",
+    "alinti": "Ülkemizde yerleşik şirketler ile yurt dışında yerleşik şirketler, kurum ve kuruluşlar arasında elektronik ortamda Bakanlık koordinasyonunda ve işbirliği kuruluşlarınca organize edilen dış ticaret faaliyetini,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Sanal ticaret heyeti giderleri %50 oranında ve faaliyet başına 1.000.000 TL'ye kadar desteklenir.",
+    "alinti": "Bakanlık koordinasyonunda işbirliği kuruluşlarınca düzenlenen sanal ticaret heyeti faaliyetlerine ilişkin giderler %50 oranında ve faaliyet başına 1.000.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Başvuru sahipleri Bakanlıkça belirlenen işbirliği kuruluşlarıdır (TİM, TOBB, DEİK, ihracatçı birlikleri, odalar, OSB'ler, sektör dernekleri, ihracat konsorsiyumları vb.).",
+    "alinti": "Bu Genelge kapsamındaki desteklerden faydalanmak üzere belirlenen iş birliği kuruluşları Türkiye İhracatçılar Meclisi (TİM), Türkiye Odalar ve Borsalar Birliği (TOBB), Dış Ekonomik İlişkiler Kurulu (DEİK), İhracatçı Birlikleri, Ticaret ve/veya Sanayi Odaları,",
+    "kaynak_url": "https://ticaret.gov.tr/data/634035ab13b87692b0e3b994/Sanal%20Ticaret%20Heyeti%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Onay başvurusu program başlangıcından en az 1 ay önce EK A'daki belgelerle DYS üzerinden Bakanlığa (İhracat Genel Müdürlüğü) yapılır.",
+    "alinti": "program başlangıç tarihinden en az 1 (bir) ay önce DYS üzerinden Bakanlığa (İhracat Genel Müdürlüğü) onay başvurusunda bulunulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/634035ab13b87692b0e3b994/Sanal%20Ticaret%20Heyeti%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Destek başvurusu faaliyet bitiş tarihinden itibaren en geç 3 ay içinde DYS üzerinden Bakanlığa/incelemeci kuruluşa iletilir.",
+    "alinti": "faaliyet bitiş tarihinden itibaren en geç 3 ay içerisinde DYS üzerinden Bakanlığa (İhracat Genel Müdürlüğü)/incelemeci kuruluşa iletmeleri gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/634035ab13b87692b0e3b994/Sanal%20Ticaret%20Heyeti%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Tanıtım faaliyetleri yabancı şirket/kurum/kuruluşları hedeflemek üzere İngilizce ve/veya hedef ülke dillerinde yapılmalıdır.",
+    "alinti": "faaliyetlerin yabancı şirket, kurum ve kuruluşları hedeflemek üzere İngilizce ve/veya heyetin hedeflendiği ülke veya ülkelerin dillerinde yapılması zorunludur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/634035ab13b87692b0e3b994/Sanal%20Ticaret%20Heyeti%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m26-tasarim-organizasyonu": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Başvuru sahipleri Bakanlıkça belirlenen işbirliği kuruluşlarıdır (TİM, TOBB, DEİK, ihracatçı birlikleri, tasarım dernek/birlik/vakıfları, odalar, sektör dernekleri vb.).",
+    "alinti": "Bu Genelge kapsamındaki desteklerden faydalanmak üzere belirlenen işbirliği kuruluşları; Türkiye İhracatçılar Meclisi, Türkiye Odalar ve Borsalar Birliği, Dış Ekonomik İlişkiler Kurulu, ihracatçı birlikleri, tasarım konusunda iştigal eden dernek, birlik ve vakıflar,",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334202113b8769ec0647ede/Tasar%C4%B1m%20Organizasyonu%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Sergi, bienal, tasarım fuarı, tasarım yarışması organizasyonları ile bunların tanıtım, reklam ve pazarlama giderleri %50 oranında ve proje başına 3.000.000 TL'ye kadar desteklenir.",
+    "alinti": "sergi, bienal, tasarım fuarı, tasarım yarışması organizasyonları ile bu faaliyetlerin tanıtım, reklam ve pazarlama faaliyetlerine ilişkin giderleri %50 oranında ve proje başına 3.000.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Tasarım yarışmalarında dereceye giren yıllık en fazla altmış kişinin yurt dışı eğitim giderleri ile aylık 20.000 TL'yi aşmamak kaydıyla yaşam giderleri desteklenir.",
+    "alinti": "İşbirliği kuruluşları tarafından düzenlenen tasarım yarışmalarında dereceye giren yıllık en fazla altmış kişinin yurt dışındaki eğitim giderleri ile aylık 20.000 TL’yi aşmamak kaydıyla oluşacak yaşam giderlerine",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Bu harcamaların tamamı 1 yıl süresince desteklenir.",
+    "alinti": "ilişkin işbirliği kuruluşlarının gerçekleştirecekleri harcamaların tamamı 1 yıl süresince desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Yurt dışı eğitim desteğinden yararlanacak tasarımcı, üniversitelerin endüstriyel tasarım/moda tasarımı ile ilgili bölümlerinden lisans derecesiyle mezun olmalıdır.",
+    "alinti": "Üniversitelerin endüstriyel tasarım/moda tasarımı ile ilgili bölümlerinden lisans derecesi ile mezun olan tasarımcıların yurt dışı eğitim ve yaşam giderleri bu Genelge kapsamında desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334202113b8769ec0647ede/Tasar%C4%B1m%20Organizasyonu%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Tasarımcılar yurt dışı eğitim ve yaşam giderleri desteğinden bir defaya mahsus olmak üzere tek seferde yararlandırılır.",
+    "alinti": "Tasarımcılar, bu Genelge kapsamındaki yurt dışı eğitim ve yaşam giderleri desteğinden bir defaya mahsus olmak üzere tek seferde yararlandırılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334202113b8769ec0647ede/Tasar%C4%B1m%20Organizasyonu%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Destek başvurusu yapılan harcamalar için aynı zamanda sponsorluk alınması halinde ilgili harcama desteklenmez.",
+    "alinti": "Ek 2’de yer alan ve destek başvurusu yapılan harcamalar için aynı zamanda sponsorluk alınması halinde ilgili harcama desteklenmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334202113b8769ec0647ede/Tasar%C4%B1m%20Organizasyonu%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Faaliyet bazlı ve bütçeli proje başvurusu, organizasyondan en az üç ay önce DYS üzerinden Bakanlığa iletilir.",
+    "alinti": "faaliyet bazlı ve bütçeyi içeren projeleri ile başvurularını organizasyonun gerçekleşeceği tarihten en az üç ay önce DYS üzerinden Bakanlığa iletmiş olmaları gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334202113b8769ec0647ede/Tasar%C4%B1m%20Organizasyonu%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Ödeme başvurusu Ek 1'deki belgelerle ödeme belgesi tarihinden itibaren en geç altı ay içinde incelemeci kuruluşa DYS üzerinden yapılır.",
+    "alinti": "Bu Genelge kapsamında işbirliği kuruluşlarının destek ödemesinden yararlandırılabilmesi için Ek 1’de belirtilen belgelerle birlikte ödeme belgesi tarihinden itibaren en geç altı ay içerisinde incelemeci kuruluşa DYS üzerinden başvurulur.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6334202113b8769ec0647ede/Tasar%C4%B1m%20Organizasyonu%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m27-turquality-tanitim-projesi": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Projeler, bütçelerini içeren proje ile TİM/ihracatçı birliklerince doğrudan Bakanlığa sistem üzerinden sunulur ve Bakanlıkça sistem üzerinden onaylanmalıdır.",
+    "alinti": "Projelerin Bakanlık tarafından destek kapsamına alınması için TİM/ihracatçı birliklerinin bütçelerini içeren projeleriyle doğrudan Bakanlığa sistem üzerinden müracaat etmeleri ve projenin Bakanlıkça sistem üzerinden onaylanması gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/637380f913b8765e08761cf9/TURQUALITY%C2%AE%20Tan%C4%B1t%C4%B1m%20Projesi%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İhracatçı birlikleri için %75 oranında ve proje başına yıllık en fazla 12.000.000 TL desteklenir.",
+    "alinti": "a) İhracatçı birlikleri için %75 oranında ve proje başına yıllık en fazla 12.000.000 TL tutarında,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "TİM ve sektörü tek başına temsil eden ihracatçı birlikleri ile bölgesel birlikler için %75 oranında ve proje başına yıllık en fazla 22.500.000 TL desteklenir.",
+    "alinti": "b) Türkiye İhracatçılar Meclisi ve iştigal ettiği sektörü tek başına temsil eden ihracatçı birlikleri ve bölgesel birlikler için %75 oranında ve proje başına yıllık en fazla 22.500.000 TL tutarında,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Birden fazla birliğin ortak projesinde %75 oranında ve birlik başına yıllık en fazla 12.000.000 TL desteklenir; destek proje başına en fazla dört yıl sürer.",
+    "alinti": "c) Birden fazla ihracatçı birliği tarafından oluşturulan ortak proje için %75 oranında ve ihracatçı birliği başına yıllık en fazla 12.000.000 TL tutarında, proje başına en fazla dört yıl süresince desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İhracatçı birlikleri aynı anda en fazla 2 projede; TİM, sektörü tek başına temsil eden birlikler ve bölgesel birlikler ise aynı anda en fazla 4 projede desteklenir.",
+    "alinti": "Tanıtım desteğinden ihracatçı birlikleri aynı anda en fazla 2 proje için yararlandırılır. Türkiye İhracatçılar Meclisi, iştigal ettiği sektörü tek başına temsil eden ihracatçı birlikleri ve bölgesel birliklerin ise aynı anda en fazla 4 projesi desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Şirket veya şirkete ait marka adına düzenlenen faaliyetler destek kapsamında değerlendirilmez.",
+    "alinti": "Şirket veya şirkete ait marka adına düzenlenen faaliyetler destek kapsamında değerlendirilmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/637380f913b8765e08761cf9/TURQUALITY%C2%AE%20Tan%C4%B1t%C4%B1m%20Projesi%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Ödeme belgesiyle yapılan başvurularda başvuruda ibraz edilmemiş bilgi/belgeler ödeme belgesi tarihinden itibaren en geç 1 yıl içinde incelemeci kuruluşa ibraz edilir.",
+    "alinti": "bilgi ve belgelerin sistem üzerinden ödeme belgesi tarihinden itibaren en geç 1 yıl içerisinde ilgili incelemeci kuruluşa ibraz edilmesi gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/637380f913b8765e08761cf9/TURQUALITY%C2%AE%20Tan%C4%B1t%C4%B1m%20Projesi%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m8-yurt-ici-fuar": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Yurt içi fuar katılımcısı, Bakanlıkça desteklenen yurt içi fuarlara katılan ihracatçı birliğine üye şirkettir.",
+    "alinti": "Bu Karar kapsamında Bakanlıkça (İhracat Genel Müdürlüğü) desteklenen yurt içi fuarlara katılım sağlayan ihracatçı birliğine üye şirketleri,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Fuarın TOBB'un açıkladığı ve Ticaret Sicili Gazetesinde yayımlanan yıllık yurt içi fuar takviminde yer alması ve son fuarda (veya son 3 fuardan en az 2'sinde) aranan ölçütleri sağlaması gerekir.",
+    "alinti": "Türkiye Odalar ve Borsalar Birliği tarafından açıklanan ve Türkiye Ticaret Sicili Gazetesinde yayımlanan yıllık yurt içi fuar takviminde yer alması ve en son düzenlenen yurt içi fuarda veya düzenlenen en son 3 fuardan en az 2’sinde;",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Ölçüt: yabancı ziyaretçi sayısı en az 1.500; yabancı ziyaretçi oranı %10'un üzerinde; toplam katılımcı sayısı en az 400.",
+    "alinti": "a) Yabancı ziyaretçi sayısının en az 1.500 olması, b) Yabancı ziyaretçi sayısının toplam ziyaretçi sayısına oranının %10’un üzerinde olması, c) Toplam katılımcı sayısının en az 400 olması,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Ölçüt: yabancı katılımcı oranı %10'un üzerinde; katılımcılara tahsis edilen stant alanı en az 10.000 metrekare; yabancı katılımcılara tahsis edilen stant alanı en az 300 metrekare.",
+    "alinti": "ç) Yabancı katılımcı sayısının toplam katılımcı sayısına oranının %10’un üzerinde olması, d) Katılımcılara tahsis edilen stant alanının en az 10.000 metrekare olması, e) Yabancı katılımcılara tahsis edilen toplam stant alanının en az 300 metrekare olması,",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Aynı konuda destekli fuar yoksa, 6 ölçütten en az 4'ünü taşıyan fuar Bakanlıkça desteklenebilir.",
+    "alinti": "aynı konuda fuar bulunmaması durumunda, birinci fıkrada yer alan 6 şarttan en az 4’ünü taşıması koşuluyla",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Katılımcı, bir takvim yılı içinde başlayan azami 3 fuar katılımı için destekten yararlanabilir.",
+    "alinti": "Yurt içi fuar katılımcıları bir takvim yılı içerisinde başlayan azami 3 fuar katılımı için dördüncü fıkra kapsamındaki destekten yararlanabilirler.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Desteğe esas tutar metrekare başına yaklaşık toplam maliyetin %50'sini geçemez.",
+    "alinti": "Yurt içi fuara ilişkin Bakanlıkça (İhracat Genel Müdürlüğü) belirlenen desteğe esas tutar; metrekare başına yaklaşık toplam maliyetin %50’sini geçemez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Destek üst limitleri: yurt içi fuarlarda 303.563 TL, prestijli yurt içi fuarlarda 1.000.000 TL.",
+    "alinti": "Bu madde çerçevesinde destek kapsamına alınan yurt içi fuarlara yönelik destek üst limiti 303.563 TL; destek kapsamına alınan prestijli yurt içi fuarlara yönelik destek üst limiti ise 1.000.000 TL olarak uygulanır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Bir takvim yılında en fazla 2 fuar için yurt içi prestijli fuar desteğinden yararlanılabilir.",
+    "alinti": "Yurt içi fuar katılımcıları, bir takvim yılı içerisinde en fazla 2 fuar için yurt içi prestijli fuar desteğinden faydalanabilirler.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Organizatörlerin tanıtım giderleri %50 oranında desteklenir; yurt dışı tanıtım 1.500.000 TL'ye, yurt içi tanıtım 500.000 TL'ye kadar.",
+    "alinti": "tanıtım giderleri %50 oranında, her bir yurt içi fuar için yurt dışında gerçekleştirilen tanıtım faaliyetleri 1.500.000 TL’ye kadar, yurt içinde gerçekleştirilen tanıtım faaliyetleri 500.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Organizatör, aynı yurt içi fuar için tanıtım desteğinden azami 10 defa yararlanabilir.",
+    "alinti": "Yurt içi fuar organizatörleri aynı yurt içi fuar için azami 10 defa beşinci fıkra kapsamındaki destekten yararlanabilirler.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Organizatör tanıtım desteği için fuarın başlangıcından en geç 3 ay önce DYS üzerinden Bakanlığa başvurup ön onay almalıdır.",
+    "alinti": "gerçekleştirecekleri tanıtım faaliyetlerine ilişkin olarak fuarın başlangıç tarihinden en geç 3 ay öncesinde DYS üzerinden Bakanlığa (İhracat Genel Müdürlüğü) başvuru yaparak ön onay almaları gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Katılımcı ve organizatör başvurusu fuar bitiminden sonraki 3 ay içinde DYS üzerinden EK-2'deki belgelerle yapılır.",
+    "alinti": "fuarın bitimini müteakip 3 aylık süre içerisinde DYS üzerinden EK-2’de belirtilen belgelerle başvuru yapılması gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Başvuru süresi kaçırılırsa başvuru değerlendirmeye alınmaz.",
+    "alinti": "DYS üzerinden başvurusunu bu sürede iletmeyen yurt içi fuar katılımcısı ve organizatörünün başvurusu değerlendirmeye alınmaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ },
+ "tb-5973-m9-sirket-ve-marka-alim": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "kural",
+    "metin": "Satın alınan şirket/markaların destek kapsamına alınan yurt dışı birimlerinin kira ve paylaşımlı ofis üyelik giderleri birim başına yıllık 7.500.000 TL'ye kadar %50 desteklenir.",
+    "alinti": "Şirketler tarafından satın alınan yurt dışında yerleşik şirketlerin/markaların destek kapsamına alınan yurt dışı birimlerine ilişkin kira giderleri ile paylaşımlı ofislere ilişkin üyelik giderleri her bir birim başına yıllık 7.500.000 TL’ye kadar %50 oranında desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yurt dışı birimi kapsamda olan şirketlerin tanıtım ve pazarlama giderleri %50 oranında ve birimin bulunduğu her ülke için yıllık 9.500.000 TL'ye kadar desteklenir.",
+    "alinti": "tanıtım ve pazarlama giderleri; %50 oranında ve destek kapsamına alınan yurt dışı biriminin bulunduğu her bir ülke için yıllık 9.500.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Birim bulunmayan ülkelerde tanıtım desteği için yurt içi marka tescil belgesi ve tanıtım yapılacak ülkede marka tescili ya da tescil başvurusu gerekir (%50, yıllık en fazla 9.500.000 TL).",
+    "alinti": "tanıtım ve pazarlama giderleri, yurt içi marka tescil belgesi bulunması ve tanıtım yapacağı ülkede marka tescil belgesine sahip ya da marka tescili için başvurulmuş olması koşuluyla, %50 oranında ve yıllık en fazla 9.500.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Yurt dışı birimi bulunmayan ancak yurt içi marka tescil belgesi olan şirketlerde tanıtım ve pazarlama giderleri %50 oranında ve yıllık en fazla 15.000.000 TL'ye kadar desteklenir.",
+    "alinti": "gerçekleştirilen tanıtım ve pazarlama giderleri %50 oranında ve yıllık en fazla 15.000.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Tanıtım desteği en fazla 4 yıl, kira desteği ülke başına en fazla 4 yıl ve toplamda en fazla 25 birim için verilir.",
+    "alinti": "Şirketler, bu madde kapsamındaki; tanıtım desteğinden en fazla 4 yıl, kira gideri desteğinden her bir ülke için en fazla 4 yıl ve toplamda en fazla 25 birim için yararlandırılır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İleri teknolojili, teknoloji transferi sağlayacak yurt dışı şirket alımına yönelik mali ve hukuki danışmanlık giderleri %50 ve yıllık 28.000.000 TL'ye kadar desteklenir.",
+    "alinti": "Yurt dışında yerleşik ileri teknolojiye sahip ve teknoloji transferi sağlayacak nitelikte şirketlerin alımına yönelik mali ve hukuki danışmanlık hizmetlerine ilişkin giderler %50 oranında ve yıllık 28.000.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Kredi faiz desteği: TL kredilerde 5 puan, döviz ve dövize endeksli kredilerde 2 puan, toplam 171.000.000 TL'ye kadar.",
+    "alinti": "İleri teknolojiye sahip ve teknoloji transferi sağlayacak yurt dışında yerleşik şirketlerin alımında kullanılan kredi faiz giderlerinin Türk Lirası cinsi kredilerde 5 puanı, döviz kredileri ve dövize endeksli kredilerde 2 puanı toplam 171.000.000 TL’ye kadar desteklenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Faiz desteği ödenen faiz giderinin %50'sini aşamaz.",
+    "alinti": "Faiz desteği miktarı ödenen faiz giderinin %50’sini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Faiz desteği ilk faiz ödeme tarihinden itibaren 5 yıl içindeki faiz ödemelerine verilir.",
+    "alinti": "Faiz desteği, ilk faiz ödeme tarihinden itibaren 5 yıl içerisinde gerçekleştirilen faiz ödemelerine verilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Faiz desteği verilecek kredi tutarının hesabında alım bedelinin azami % 50'si esas alınır.",
+    "alinti": "Faiz desteği verilecek kredi tutarının hesaplanmasında, yurt dışında yerleşik ileri teknolojiye sahip şirketlerin/markaların alım bedelinin azami % 50’si esas alınır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Bu destekten yararlanan şirketler, Kararın 10 uncu maddesinin üçüncü fıkrası ile 11, 12, 15, 17, 18 ve 20 nci maddelerdeki desteklerden yararlandırılmaz.",
+    "alinti": "Birinci, ikinci, üçüncü ve dördüncü fıkralar kapsamında desteklenen şirketler 10 uncu maddenin üçüncü fıkrası ile 11 inci, 12 nci, 15 inci, 17 nci, 18 inci ve 20 nci maddelerde yer alan desteklerden yararlandırılmazlar.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Danışmanlık ve faiz desteği için belgelerle birlikte DYS üzerinden Bakanlığa (İhracat Genel Müdürlüğü) ön onay başvurusu yapılır.",
+    "alinti": "belirtilen belgelerle birlikte DYS üzerinden Bakanlığa (İhracat Genel Müdürlüğü) ön onay başvurusu yapmaları gerekir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6340408513b87692b0e3ba38/%C5%9Eirket%20ve%20%20Marka%20Al%C4%B1m%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "adim",
+    "metin": "Ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde DYS üzerinden incelemeci kuruluşa yapılır.",
+    "alinti": "ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde DYS üzerinden incelemeci kuruluşa yapılır. 6 aylık sürenin hesaplanmasında şirketlerin başvurularını DYS üzerinden incelemeci kuruluşa ilettikleri tarih esas alınır.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6340408513b87692b0e3ba38/%C5%9Eirket%20ve%20%20Marka%20Al%C4%B1m%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Satın alınan şirket ile başvuran şirketin ortakları ilişkili kişi iseler başvuru destek kapsamında değerlendirilmez.",
+    "alinti": "ortakları ile destek başvurusunda bulunan şirket/şirketin ortaklarının ilişkili kişi olmaları halinde, müracaat destek kapsamında değerlendirilmez.",
+    "kaynak_url": "https://ticaret.gov.tr/data/6340408513b87692b0e3ba38/%C5%9Eirket%20ve%20%20Marka%20Al%C4%B1m%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+    "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+    "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+    "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+   }
+  ],
+  "cagrilar": []
+ }
+}

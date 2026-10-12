@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "tarim", "bolge": "Konya", "calisan_sayisi": 3, "yillik_ciro": 2500000.0, "arazi_buyuklugu_dekar": 180, "urun_turu": "buğday", "tarim_kategori": "tahil_baklagil", "hedefler": ["makine", "hayvan"], "sirket_turu": "sahis"}
-BUGÜN: 2026-10-11
+BUGÜN: 2026-10-12
 SORU: Hububat için 2026 yılında dekar başına ne kadar destek ödenecek?
 ============================================================
 KAYIT 160

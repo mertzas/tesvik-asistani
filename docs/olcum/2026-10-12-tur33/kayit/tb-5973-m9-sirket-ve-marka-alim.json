@@ -1,0 +1,164 @@
+{
+  "slug": "tb-5973-m9-sirket-ve-marka-alim",
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Şirket ve Marka Alım Desteği (5973 sayılı Karar m.9)",
+  "ozet": "Yurt dışında yerleşik şirket/marka satın alan şirketlerin destek kapsamına alınan yurt dışı birimlerine ilişkin kira giderleri ve paylaşımlı ofis üyelik giderleri birim başına yıllık 7.500.000 TL'ye kadar %50 oranında desteklenir. Satın alınan şirket/markalarla ilgili yurt dışı tanıtım ve pazarlama giderleri %50 oranında desteklenir (yurt dışı birimi bulunan şirketlerde her ülke için yıllık 9.500.000 TL'ye, yurt dışı birimi bulunmayanlarda yıllık 15.000.000 TL'ye kadar). İleri teknolojili şirket alımlarında mali ve hukuki danışmanlık giderleri %50 oranında ve yıllık 28.000.000 TL'ye kadar, kredi faiz giderleri ise toplam 171.000.000 TL'ye kadar desteklenir.",
+  "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-9",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "5973 sayılı Karar yürürlüktedir; şirket ve marka alım desteği ön onay ve DYS başvurusuyla işler, çağrıya bağlı değildir.",
+    "alinti": "Bu Karar yayımı tarihinde yürürlüğe girer.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "genel"
+  ],
+  "tesvil_tutari": "Birim kira ve paylaşımlı ofis üyeliği: birim başına yıllık 7.500.000 TL'ye kadar %50. Tanıtım ve pazarlama: %50, yurt dışı birimi bulunan ülke başına yıllık 9.500.000 TL'ye kadar; yurt dışı birimi bulunmayan şirketlerde yıllık en fazla 15.000.000 TL. Mali ve hukuki danışmanlık: %50, yıllık 28.000.000 TL'ye kadar. Faiz desteği: TL kredilerde 5 puan, döviz ve dövize endeksli kredilerde 2 puan, toplam 171.000.000 TL'ye kadar; faiz desteği ödenen faiz giderinin %50'sini aşamaz (Karar metnindeki tutar; yıllık güncellenir). Tanıtım desteği en fazla 4 yıl, toplamda en fazla 25 birim.",
+  "basvuru_yeri": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS); ön onay Bakanlığa (İhracat Genel Müdürlüğü), ödeme başvurusu incelemeci kuruluşa (şirketin üyesi olduğu İhracatçı Birlikleri Genel Sekreterliği) DYS üzerinden yapılır",
+  "basvuru_suresi": "Çağrı yoktur; danışmanlık ve faiz desteği ödeme başvurusu, ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde DYS üzerinden incelemeci kuruluşa yapılır (ilgili genelge hükmüne göre; kira ve tanıtım giderleri için bu genelgede ayrıca süre belirtilmemiştir).",
+  "kontrol_listesi": [
+    {
+      "tur": "kural",
+      "metin": "Satın alınan şirket/markaların destek kapsamına alınan yurt dışı birimlerinin kira ve paylaşımlı ofis üyelik giderleri birim başına yıllık 7.500.000 TL'ye kadar %50 desteklenir.",
+      "alinti": "Şirketler tarafından satın alınan yurt dışında yerleşik şirketlerin/markaların destek kapsamına alınan yurt dışı birimlerine ilişkin kira giderleri ile paylaşımlı ofislere ilişkin üyelik giderleri her bir birim başına yıllık 7.500.000 TL’ye kadar %50 oranında desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Yurt dışı birimi kapsamda olan şirketlerin tanıtım ve pazarlama giderleri %50 oranında ve birimin bulunduğu her ülke için yıllık 9.500.000 TL'ye kadar desteklenir.",
+      "alinti": "tanıtım ve pazarlama giderleri; %50 oranında ve destek kapsamına alınan yurt dışı biriminin bulunduğu her bir ülke için yıllık 9.500.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Birim bulunmayan ülkelerde tanıtım desteği için yurt içi marka tescil belgesi ve tanıtım yapılacak ülkede marka tescili ya da tescil başvurusu gerekir (%50, yıllık en fazla 9.500.000 TL).",
+      "alinti": "tanıtım ve pazarlama giderleri, yurt içi marka tescil belgesi bulunması ve tanıtım yapacağı ülkede marka tescil belgesine sahip ya da marka tescili için başvurulmuş olması koşuluyla, %50 oranında ve yıllık en fazla 9.500.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Yurt dışı birimi bulunmayan ancak yurt içi marka tescil belgesi olan şirketlerde tanıtım ve pazarlama giderleri %50 oranında ve yıllık en fazla 15.000.000 TL'ye kadar desteklenir.",
+      "alinti": "gerçekleştirilen tanıtım ve pazarlama giderleri %50 oranında ve yıllık en fazla 15.000.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Tanıtım desteği en fazla 4 yıl, kira desteği ülke başına en fazla 4 yıl ve toplamda en fazla 25 birim için verilir.",
+      "alinti": "Şirketler, bu madde kapsamındaki; tanıtım desteğinden en fazla 4 yıl, kira gideri desteğinden her bir ülke için en fazla 4 yıl ve toplamda en fazla 25 birim için yararlandırılır.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "İleri teknolojili, teknoloji transferi sağlayacak yurt dışı şirket alımına yönelik mali ve hukuki danışmanlık giderleri %50 ve yıllık 28.000.000 TL'ye kadar desteklenir.",
+      "alinti": "Yurt dışında yerleşik ileri teknolojiye sahip ve teknoloji transferi sağlayacak nitelikte şirketlerin alımına yönelik mali ve hukuki danışmanlık hizmetlerine ilişkin giderler %50 oranında ve yıllık 28.000.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Kredi faiz desteği: TL kredilerde 5 puan, döviz ve dövize endeksli kredilerde 2 puan, toplam 171.000.000 TL'ye kadar.",
+      "alinti": "İleri teknolojiye sahip ve teknoloji transferi sağlayacak yurt dışında yerleşik şirketlerin alımında kullanılan kredi faiz giderlerinin Türk Lirası cinsi kredilerde 5 puanı, döviz kredileri ve dövize endeksli kredilerde 2 puanı toplam 171.000.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Faiz desteği ödenen faiz giderinin %50'sini aşamaz.",
+      "alinti": "Faiz desteği miktarı ödenen faiz giderinin %50’sini aşamaz.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Faiz desteği ilk faiz ödeme tarihinden itibaren 5 yıl içindeki faiz ödemelerine verilir.",
+      "alinti": "Faiz desteği, ilk faiz ödeme tarihinden itibaren 5 yıl içerisinde gerçekleştirilen faiz ödemelerine verilir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Faiz desteği verilecek kredi tutarının hesabında alım bedelinin azami % 50'si esas alınır.",
+      "alinti": "Faiz desteği verilecek kredi tutarının hesaplanmasında, yurt dışında yerleşik ileri teknolojiye sahip şirketlerin/markaların alım bedelinin azami % 50’si esas alınır.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Bu destekten yararlanan şirketler, Kararın 10 uncu maddesinin üçüncü fıkrası ile 11, 12, 15, 17, 18 ve 20 nci maddelerdeki desteklerden yararlandırılmaz.",
+      "alinti": "Birinci, ikinci, üçüncü ve dördüncü fıkralar kapsamında desteklenen şirketler 10 uncu maddenin üçüncü fıkrası ile 11 inci, 12 nci, 15 inci, 17 nci, 18 inci ve 20 nci maddelerde yer alan desteklerden yararlandırılmazlar.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "adim",
+      "metin": "Danışmanlık ve faiz desteği için belgelerle birlikte DYS üzerinden Bakanlığa (İhracat Genel Müdürlüğü) ön onay başvurusu yapılır.",
+      "alinti": "belirtilen belgelerle birlikte DYS üzerinden Bakanlığa (İhracat Genel Müdürlüğü) ön onay başvurusu yapmaları gerekir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6340408513b87692b0e3ba38/%C5%9Eirket%20ve%20%20Marka%20Al%C4%B1m%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "adim",
+      "metin": "Ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde DYS üzerinden incelemeci kuruluşa yapılır.",
+      "alinti": "ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde DYS üzerinden incelemeci kuruluşa yapılır. 6 aylık sürenin hesaplanmasında şirketlerin başvurularını DYS üzerinden incelemeci kuruluşa ilettikleri tarih esas alınır.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6340408513b87692b0e3ba38/%C5%9Eirket%20ve%20%20Marka%20Al%C4%B1m%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Satın alınan şirket ile başvuran şirketin ortakları ilişkili kişi iseler başvuru destek kapsamında değerlendirilmez.",
+      "alinti": "ortakları ile destek başvurusunda bulunan şirket/şirketin ortaklarının ilişkili kişi olmaları halinde, müracaat destek kapsamında değerlendirilmez.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6340408513b87692b0e3ba38/%C5%9Eirket%20ve%20%20Marka%20Al%C4%B1m%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+      "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+      "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+      "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Kira/üyelik: birim başına yıllık 7.500.000 TL, %50",
+      "alinti": "Şirketler tarafından satın alınan yurt dışında yerleşik şirketlerin/markaların destek kapsamına alınan yurt dışı birimlerine ilişkin kira giderleri ile paylaşımlı ofislere ilişkin üyelik giderleri her bir birim başına yıllık 7.500.000 TL’ye kadar %50 oranında desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "iddia": "Tanıtım ve pazarlama: %50, ülke başına yıllık 9.500.000 TL",
+      "alinti": "tanıtım ve pazarlama giderleri; %50 oranında ve destek kapsamına alınan yurt dışı biriminin bulunduğu her bir ülke için yıllık 9.500.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "iddia": "Yurt dışı birimi olmayan şirket: yıllık en fazla 15.000.000 TL",
+      "alinti": "gerçekleştirilen tanıtım ve pazarlama giderleri %50 oranında ve yıllık en fazla 15.000.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "iddia": "Danışmanlık: %50, yıllık 28.000.000 TL",
+      "alinti": "Yurt dışında yerleşik ileri teknolojiye sahip ve teknoloji transferi sağlayacak nitelikte şirketlerin alımına yönelik mali ve hukuki danışmanlık hizmetlerine ilişkin giderler %50 oranında ve yıllık 28.000.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "iddia": "Faiz desteği 5 puan / 2 puan, toplam 171.000.000 TL",
+      "alinti": "İleri teknolojiye sahip ve teknoloji transferi sağlayacak yurt dışında yerleşik şirketlerin alımında kullanılan kredi faiz giderlerinin Türk Lirası cinsi kredilerde 5 puanı, döviz kredileri ve dövize endeksli kredilerde 2 puanı toplam 171.000.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "iddia": "En fazla 4 yıl tanıtım, toplamda en fazla 25 birim",
+      "alinti": "Şirketler, bu madde kapsamındaki; tanıtım desteğinden en fazla 4 yıl, kira gideri desteğinden her bir ülke için en fazla 4 yıl ve toplamda en fazla 25 birim için yararlandırılır.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "iddia": "Ödeme başvurusu 6 ay içinde",
+      "alinti": "ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde DYS üzerinden incelemeci kuruluşa yapılır. 6 aylık sürenin hesaplanmasında şirketlerin başvurularını DYS üzerinden incelemeci kuruluşa ilettikleri tarih esas alınır.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6340408513b87692b0e3ba38/%C5%9Eirket%20ve%20%20Marka%20Al%C4%B1m%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    }
+  ]
+}

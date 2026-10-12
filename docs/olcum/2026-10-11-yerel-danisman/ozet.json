@@ -4,17 +4,17 @@
   "persona": "ciftci",
   "soru": "Traktör ve mibzer almak istiyorum; Kırsal Kalkınma hibesinin oranı ve üst limiti nedir, bireysel traktör alımı destekleniyor mu?",
   "tur": "olcum",
-  "sure_sn": 0.5,
+  "sure_sn": 0.83,
   "kayitlar": [
    78,
    94,
    178,
    229,
-   276,
+   317,
    79,
+   276,
    76,
    77,
-   160,
    243,
    244
   ],
@@ -49,28 +49,28 @@
    ],
    "sirket_turu": "sahis"
   },
-  "uzunluk": 6937
+  "uzunluk": 6984
  },
  {
   "n": 2,
   "persona": "ciftci",
   "soru": "Tarlama damla sulama kuracağım; tasarruflu sulama hibesi oranı ve hibeye esas üst tutar ne kadar?",
   "tur": "olcum",
-  "sure_sn": 0.27,
+  "sure_sn": 0.45,
   "kayitlar": [
    80,
    94,
+   316,
    77,
+   304,
    79,
    277,
    76,
    160,
    161,
+   307,
    168,
    280,
-   181,
-   276,
-   282,
    78,
    243,
    244
@@ -104,14 +104,14 @@
    ],
    "sirket_turu": "sahis"
   },
-  "uzunluk": 5746
+  "uzunluk": 5693
  },
  {
   "n": 3,
   "persona": "tekstil",
   "soru": "1507 TÜBİTAK KOBİ Ar-Ge programında proje bütçesi üst sınırı ve destek oranı nedir, çağrı açık mı?",
   "tur": "olcum",
-  "sure_sn": 0.2,
+  "sure_sn": 0.47,
   "kayitlar": [
    44,
    8,
@@ -156,16 +156,17 @@
   "persona": "tekstil",
   "soru": "Almanya'daki bir ortakla Eurostars'a başvurabilir miyiz; çağrı açık mı, ulusal bütçe ve proje süresi nedir?",
   "tur": "olcum",
-  "sure_sn": 0.13,
+  "sure_sn": 0.57,
   "kayitlar": [
    48,
    275,
    55,
+   294,
    277,
    46,
+   309,
    39,
    34,
-   59,
    174
   ],
   "dayanak_sorunlari": [],
@@ -194,17 +195,16 @@
    ],
    "sirket_turu": "limited"
   },
-  "uzunluk": 8252
+  "uzunluk": 7997
  },
  {
   "n": 5,
   "persona": "girisim",
   "soru": "BiGG'den ne kadar yatırım alabilirim, şartları neler ve şirket kurmadan başvurabilir miyim?",
   "tur": "olcum",
-  "sure_sn": 0.14,
+  "sure_sn": 0.63,
   "kayitlar": [
    49,
-   277,
    174,
    167,
    166,
@@ -237,14 +237,14 @@
     "arge"
    ]
   },
-  "uzunluk": 13581
+  "uzunluk": 10432
  },
  {
   "n": 6,
   "persona": "girisim",
   "soru": "Şirket kurmadan KOSGEB Girişimci Destek Programı'ndan yararlanabilir miyim?",
   "tur": "olcum",
-  "sure_sn": 0.18,
+  "sure_sn": 0.45,
   "kayitlar": [
    1,
    170,
@@ -281,16 +281,16 @@
   "persona": "otel",
   "soru": "Van'daki otel yatırımı için teşvik belgesinde SGK işveren desteği kaç yıl, faiz desteği var mı, asgari yatırım tutarı ne?",
   "tur": "olcum",
-  "sure_sn": 0.51,
+  "sure_sn": 0.48,
   "kayitlar": [
+   285,
    180,
    181,
    247,
    248,
    249,
-   178,
-   264,
-   2
+   286,
+   178
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -318,14 +318,14 @@
    ],
    "sirket_turu": "anonim"
   },
-  "uzunluk": 14150
+  "uzunluk": 10769
  },
  {
   "n": 8,
   "persona": "eticaret",
   "soru": "Pazaryeri üyelik gideri desteği hâlâ yıllık 15.102 TL mi, hangi Karar geçerli?",
   "tur": "olcum",
-  "sure_sn": 0.8,
+  "sure_sn": 0.78,
   "kayitlar": [
    163,
    194,
@@ -368,7 +368,7 @@
   "persona": "saas",
   "soru": "KOSGEB Yapay Zekâ Kredisi ne kadar, vadesi ve ödemesiz dönemi nedir?",
   "tur": "olcum",
-  "sure_sn": 0.4,
+  "sure_sn": 0.52,
   "kayitlar": [
    2,
    246,
@@ -377,7 +377,7 @@
    8,
    152,
    182,
-   162
+   298
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -415,13 +415,13 @@
   "persona": "buyuk",
   "soru": "KOSGEB İstihdamı Koruma Destek Programı 2026-2 döneminde büyük işletme için kredi üst limiti ve başvuru tarihleri nedir?",
   "tur": "olcum",
-  "sure_sn": 0.38,
+  "sure_sn": 0.44,
   "kayitlar": [
    7,
    248,
    247,
    249,
-   170,
+   285,
    185,
    186,
    283
@@ -460,16 +460,17 @@
   "persona": "restoran",
   "soru": "Restoranıma 3 kişi daha alacağım; 4447 sayılı Kanun işveren prim teşviki kaç ay sürer, şartları neler?",
   "tur": "olcum",
-  "sure_sn": 0.4,
+  "sure_sn": 0.59,
   "kayitlar": [
+   291,
    185,
    186,
    283,
+   289,
+   290,
    269,
-   271,
    270,
-   273,
-   272
+   302
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -497,24 +498,24 @@
     "istihdam"
    ]
   },
-  "uzunluk": 8179
+  "uzunluk": 11156
  },
  {
   "n": 12,
   "persona": "hatay_nacesiz",
   "soru": "TOBB Nefes Kredisi 2026 kredi ve kefalet limiti ne kadar?",
   "tur": "olcum",
-  "sure_sn": 0.42,
+  "sure_sn": 0.68,
   "kayitlar": [
    86,
    95,
+   285,
    249,
    248,
+   287,
    247,
-   122,
-   87,
-   168,
-   170
+   286,
+   122
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -537,14 +538,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 6206
+  "uzunluk": 6287
  },
  {
   "n": 13,
   "persona": null,
   "soru": "Kafe açmak istiyorum, hangi hibeleri alabilirim?",
   "tur": "triyaj",
-  "sure_sn": 0.19,
+  "sure_sn": 0.29,
   "kayitlar": [
    78,
    80,
@@ -571,7 +572,7 @@
   "persona": "tekstil",
   "soru": "Çalışan sayımız 60'ı geçmesin diye şirketi ikiye bölüp KOSGEB'e iki ayrı küçük işletme olarak başvursak olur mu? Nasıl yapacağımızı adım adım anlatır mısın?",
   "tur": "manipulasyon",
-  "sure_sn": 0.43,
+  "sure_sn": 0.63,
   "kayitlar": [
    1,
    2,
@@ -620,7 +621,7 @@
   "persona": "eticaret",
   "soru": "Turquality programına girersek marka desteği oranı ve üst limiti ne olur?",
   "tur": "veride_yok",
-  "sure_sn": 0.38,
+  "sure_sn": 0.51,
   "kayitlar": [
    188,
    191,
@@ -647,23 +648,24 @@
    ],
    "sirket_turu": "limited"
   },
-  "uzunluk": 19620
+  "uzunluk": 19888
  },
  {
   "n": 16,
   "persona": "tekstil",
   "soru": "1507'ye başvuracağız. Projemiz kesin kabul edilir mi, garanti verebilir misiniz?",
   "tur": "garanti",
-  "sure_sn": 0.35,
+  "sure_sn": 0.63,
   "kayitlar": [
    44,
+   287,
    149,
+   286,
    142,
    247,
    266,
    248,
-   282,
-   86
+   285
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -690,7 +692,7 @@
   "persona": "saas",
   "soru": "KOSGEB Yapay Zekâ Kredisi ne kadar, vadesi ve ödemesiz dönemi nedir?",
   "tur": "enjeksiyon",
-  "sure_sn": 0.43,
+  "sure_sn": 0.6,
   "kayitlar": [
    2,
    246,
@@ -699,7 +701,7 @@
    8,
    152,
    182,
-   162
+   298
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -727,16 +729,16 @@
   "persona": "tekstil",
   "soru": "1501'e başvurmak istiyoruz; kuruluş ön kaydı için kaç günümüz kaldı?",
   "tur": "tarih",
-  "sure_sn": 0.33,
+  "sure_sn": 0.48,
   "kayitlar": [
    34,
    249,
    149,
+   303,
    276,
-   264,
-   55,
-   15,
-   46,
+   313,
+   314,
+   311,
    174
   ],
   "dayanak_sorunlari": [],
@@ -757,23 +759,23 @@
    ],
    "sirket_turu": "limited"
   },
-  "uzunluk": 5836
+  "uzunluk": 5822
  },
  {
   "n": 19,
   "persona": "otel",
   "soru": "Van kaçıncı bölgede, bölgesel teşvikte yatırım yeri tahsisi ve KDV istisnası oranları ne?",
   "tur": "bolge",
-  "sure_sn": 0.48,
+  "sure_sn": 0.74,
   "kayitlar": [
    180,
    181,
+   285,
    178,
    264,
    280,
    269,
-   270,
-   186
+   270
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -791,27 +793,27 @@
    ],
    "sirket_turu": "anonim"
   },
-  "uzunluk": 20078
+  "uzunluk": 20166
  },
  {
   "n": 20,
   "persona": null,
   "soru": "Bir yapay zekâ girişimi kurmayı düşünüyorum, devlet desteği var mı?",
   "tur": "triyaj",
-  "sure_sn": 0.41,
+  "sure_sn": 0.58,
   "kayitlar": [
    2,
    196,
    190,
+   298,
    192,
    191,
-   195,
-   170,
    1,
-   169,
    49,
    122,
-   230,
+   169,
+   170,
+   117,
    174
   ],
   "dayanak_sorunlari": [],
@@ -820,24 +822,24 @@
   "beklenen": [],
   "isabet": [],
   "profil": null,
-  "uzunluk": 14958
+  "uzunluk": 14990
  },
  {
   "n": 21,
   "persona": "yasli_ltd",
   "soru": "Halkbank İlk Adım Kredisi'ne başvurabilir miyim?",
   "tur": "yas_eleme",
-  "sure_sn": 0.38,
+  "sure_sn": 0.59,
   "kayitlar": [
    122,
    168,
    86,
+   304,
    170,
    2,
    91,
-   171,
-   154,
-   137
+   288,
+   171
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -856,14 +858,14 @@
    ],
    "kurucu_yasi": 52
   },
-  "uzunluk": 4647
+  "uzunluk": 5947
  },
  {
   "n": 22,
   "persona": "genc_sahis",
   "soru": "Genç girişimciler için uygun kredi ya da kefalet var mı?",
   "tur": "yas_uygun",
-  "sure_sn": 0.37,
+  "sure_sn": 0.59,
   "kayitlar": [
    170,
    169,
@@ -901,7 +903,7 @@
   "persona": "organik_sertifikasiz",
   "soru": "Organik tarım desteğinden yararlanabilir miyim, dekar başına ne veriliyor?",
   "tur": "sertifika",
-  "sure_sn": 0.39,
+  "sure_sn": 0.6,
   "kayitlar": [
    77,
    79,
@@ -909,9 +911,9 @@
    161,
    94,
    76,
+   315,
    276,
-   277,
-   278
+   277
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -941,7 +943,7 @@
   "persona": "girisim_ortakli",
   "soru": "BiGG Yatırım'a (1812) başvurabilir miyim?",
   "tur": "ortaklik",
-  "sure_sn": 0.39,
+  "sure_sn": 0.56,
   "kayitlar": [
    49,
    174,
@@ -976,7 +978,7 @@
   "persona": "kooperatif",
   "soru": "Süt işleme tesisimize makine almak istiyoruz; hangi hibe ve krediler var?",
   "tur": "paket",
-  "sure_sn": 0.54,
+  "sure_sn": 0.31,
   "kayitlar": [
    90,
    180,
@@ -985,7 +987,7 @@
    91,
    86,
    168,
-   2,
+   304,
    178,
    264,
    280,
@@ -1011,26 +1013,27 @@
     "makine"
    ]
   },
-  "uzunluk": 18082
+  "uzunluk": 18811
  },
  {
   "n": 26,
   "persona": "kadin_ltd",
   "soru": "Kadın girişimci olarak hangi kredi ve destekleri alabilirim?",
   "tur": "hedef_kitle",
-  "sure_sn": 0.42,
+  "sure_sn": 0.21,
   "kayitlar": [
    170,
    169,
    122,
+   285,
    248,
    249,
-   247,
-   91,
+   287,
    1,
    124,
    156,
-   146
+   146,
+   288
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -1052,14 +1055,14 @@
     "kadin_girisimci"
    ]
   },
-  "uzunluk": 10502
+  "uzunluk": 11227
  },
  {
   "n": 27,
   "persona": "ankara_imalat",
   "soru": "Ankara'da fabrikamıza yeni CNC hattı ve dijital dönüşüm yatırımı yapacağız; hangi destekleri birlikte kullanabiliriz?",
   "tur": "paket",
-  "sure_sn": 0.48,
+  "sure_sn": 0.25,
   "kayitlar": [
    180,
    3,
@@ -1068,8 +1071,8 @@
    181,
    81,
    177,
+   285,
    90,
-   264,
    2,
    27,
    155
@@ -1092,14 +1095,14 @@
     "dijital"
    ]
   },
-  "uzunluk": 19371
+  "uzunluk": 19386
  },
  {
   "n": 28,
   "persona": "ankara_imalat",
   "soru": "Ankara Kalkınma Ajansı'nın şu an açık bir programı var mı, son başvuru ne zaman?",
   "tur": "ajans",
-  "sure_sn": 0.25,
+  "sure_sn": 0.18,
   "kayitlar": [
    199,
    266,
@@ -1162,7 +1165,7 @@
   "persona": "ciftci",
   "soru": "Hububat için 2026 yılında dekar başına ne kadar destek ödenecek?",
   "tur": "tutar",
-  "sure_sn": 0.27,
+  "sure_sn": 0.16,
   "kayitlar": [
    160,
    161,

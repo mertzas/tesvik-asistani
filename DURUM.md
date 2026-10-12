@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-11 (kapsam matrisi, tur32: 245 → 284 kayıt). Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-12 (tur33: 284 → 317 kayıt; GPU ölçüm paketi hazır). Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -385,6 +385,18 @@ Son güncelleme: 2026-10-11 (kapsam matrisi, tur32: 245 → 284 kayıt). Oturuma
   `/root/gpu_olcum_sonuc.tgz`) ve `GPU_TALIMATI.md`. Burada denendi: temiz klonda 284 teşvik / 0 kuruluş, self-test'ler,
   ölçüm döngüsü yerel Ollama ile (kesik istem koruması devrede). Denenmedi: Linux kurulum adımları (GPU/Linux yok).
   SIRADAKİ: kullanıcı sunucuyu kiralar → betik → sonuç paketi buraya → hakem turu → `ozel_sunucu` kararı.
+- **Tur33** (2026-10-12, `scripts/fix_veri_2026_10_12_tur33.py`, tur32 ayarlarını devralır; kanıt
+  `docs/olcum/2026-10-12-tur33/`): 3 Sonnet araştırma ajanı 33 kayıt — 5973 m.8, 9, 13, 15-21, 23, 25-27 (14);
+  10962 m.6-10, 12, 14, 15, 17, 22 (10); Eximbank Reeskont, İhracata Yönelik Yatırım, Marka, TİM Wings; SGK 81/i yurt
+  dışı, 4447 ek 4, 2828 ek 1, 3294 ek 5, 6331 m.7. Doğrulama 32/33 → UR-GE'nin iki tutarı Karar metninden alıntılandı
+  → 33/33. UYGULANDI (yedek `tesvikler_oncesi_tur33.db.bak`): 284 → 317 kayıt, etkin 199. İlk ölçüm "BOŞ 0" gösterdi
+  ama yanlış: şirketsiz girişimciye Eximbank CIRR, TİM Wings ve tasarım şirketi destekleri çıkıyordu → Ticaret Bakanlığı,
+  Türk Eximbank ve Kültür ve Turizm Bakanlığı `_ISLETME_GEREKTIREN_KURUMLAR`'a eklendi (5973/5986/10962 "şirket" tanımı);
+  10962 m.17 ve m.22 (yalnız bilişim, alıntılı) sektörü ["arge","ihracat"] yapıldı, DB tur33 yedeğinden geri alınıp
+  yeniden uygulandı; kapsam aracında başlığında " — " olan kart ayrıştırma hatası düzeldi. Kapsam tur32 → tur33:
+  kayıt VAR 385 → 396, İNCE 60 → 49, BOŞ 23 → 23 (gerçek: şirketsiz finansman/Ar-Ge), ürün 410 → 421/468, gerileyen 0.
+  Ölçüm dayanak 0, isabet 41/41; test 1273. Önizlemede: yurt içi fuar (303.563 / 1.000.000 TL), TİM Wings.
+  Kalan araştırılmış ama eklenmeyen: 10962 m.16, 18-21, 23, 24, 26-32; Eximbank IBRD Yeşil İhracat, AYB.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

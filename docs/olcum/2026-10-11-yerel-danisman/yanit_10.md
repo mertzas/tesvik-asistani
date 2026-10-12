@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - **İstihdamı Koruma Destek Programı** (KOSGEB)
 - Destek: 2026-2: kredi üst limiti KOBİ 50 Milyon TL, büyük işletme 150 Milyon TL (kredi tutarı 2026 Ocak-Haziran prime esas kazanç aylık ortalamasını geçemez); azami 6 ay ödemesiz, 36 ay vade; banka azami faizi %37 (sabit) / TLREF+1 (değişken); komisyon ≤%1; finansman desteği 12 puan, geri ödemesiz, yalnızca vergi ve SGK prim borçlarına kullanılır
-- Başvuru: 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (20 gün kaldı).
+- Başvuru: 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (19 gün kaldı).
 - Sizin için: profilinize göre engel yok — şartları teyit edin; başlıca şart: İşletme Beyanının güncel olması.
 - Dikkat (çağrı notu): Bu dönemde yalnız Finansman Desteği kapsamında başvuru alınır.
 - Program: İmalat sanayinde (NACE Kısım C) istihdamın korunması için KOBİ ve büyük işletmelere bankalardan kredi ve finansman desteği (12 puan, geri ödemesiz) sağlayan KOSGEB programı. 2026-2 dönemi başvuruları 1 Eylül – 31 Ekim 2026.
@@ -19,7 +19,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **İstihdamı Koruma Destek Programı — KOSGEB**
-- **Başvuru dönemi:** 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (20 gün kaldı). Not: Bu dönemde yalnız Finansman Desteği kapsamında başvuru alınır. (duyuru: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi, doğrulama 08.10.2026)
+- **Başvuru dönemi:** 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (19 gün kaldı). Not: Bu dönemde yalnız Finansman Desteği kapsamında başvuru alınır. (duyuru: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi, doğrulama 08.10.2026)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (imalat) bu desteğin kapsamına uygun; Faaliyet kodunuz: 29.10, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi).
 - **Destek:** 2026-2: kredi üst limiti KOBİ 50 Milyon TL, büyük işletme 150 Milyon TL (kredi tutarı 2026 Ocak-Haziran prime esas kazanç aylık ortalamasını geçemez); azami 6 ay ödemesiz, 36 ay vade; banka azami faizi %37 (sabit) / TLREF+1 (değişken); komisyon ≤%1; finansman desteği 12 puan, geri ödemesiz, yalnızca vergi ve SGK prim borçlarına kullanılır
 - **Profilinize göre sağlanan şartlar:** imalat faaliyeti (NACE 29.10); TTK'da tanımlı statü (anonim şirket)

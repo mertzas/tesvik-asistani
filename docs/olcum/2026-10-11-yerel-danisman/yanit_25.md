@@ -3,7 +3,7 @@
 - Hibe: sorunuzla eşleşen hibe programlarının hiçbiri şu an size açık görünmüyor (IPARD III — Tarımsal İşletmelerin Fiziki Varlıklarına Yönelik Yatırımlar (Tedbir 101 / M1) — kapalı; IPARD III — Tarım ve Balıkçılık Ürünlerinin İşlenmesi ve Pazarlanması ile İlgili Fiziki Varlıklara Yönelik Yatırımlar (Tedbir 103 / M3) — kapalı). Aşağıdaki açık seçenekler kredi, kefalet ya da diğer destek türleridir.
 - Öne çıkan: **YATIRIM-İŞLETME DESTEK PAKETİ** (KGF) (hibe değil: kredi kefaleti) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
-- Diğer seçenekler: Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin); TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü) (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin); TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); Eximbank Faiz Farkı (CIRR), İhracat Kredi Sigortası Tazmin ve Alıcı Kredisi Desteği (5973 sayılı Karar m.13) (profilinize göre engel yok — şartları teyit edin).
 - 5 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -30,7 +30,7 @@
 - **Başvuru:** Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, TEB, Şekerbank, Anadolubank, ING Bank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi
 
 **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı**
-- **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1542 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)
+- **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)
 - **Sizin için:** Şartlı — Karar şartını teyit edin — Karar metnine göre ön değerlendirme: ŞARTLI — NACE 10.51, EK-3'te '10.5 Süt ürünleri ve yenilebilir buz imalatı 5 ton/gün altındaki kapasiteye sahip süt işleme' kalemine giriyor; şart: yatırımları desteklenmez (MADDE 5/1, 10).
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı
 - **Destek unsurları (Karar metninden, bölgenize göre):** vergi indirimi: yatırıma katkı oranı %20, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 8 yıl (MADDE 18, 5. bölge); faiz/kâr payı desteği: repo oranının %25'i, azami 12.5 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı, azami 5 yıl (MADDE 15; yalnızca 4, 5, 6. bölgeler, 15/1-c); makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); asgari sabit yatırım: 6.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
@@ -52,26 +52,28 @@
 - **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.
 - **Başvuru:** Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi
 
-**Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü) — KOSGEB**
-- **Başvuru dönemi:** Sayfada çağrı dönemi belirtilmemiş (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: yatırım.
-- **Karşıladığı ihtiyaç:** makine/tesis yatırımı
-- **Destek:** Tek bir fona azami taahhüt 500 milyon TL: yerli yatırımcı taahhüdünün %20'si ile sınırlı olmak üzere 200 milyon TL'ye kadar; yabancı yatırımcı taahhüdünü aşmamak kaydıyla 200 milyon TL'ye kadar; yabancı yatırımla eş tutarda olmak kaydıyla 100 milyon TL'ye kadar. Fonun katılacağı her yatırım turunun asgari büyüklüğü 50 milyon TL
+**Eximbank Faiz Farkı (CIRR), İhracat Kredi Sigortası Tazmin ve Alıcı Kredisi Desteği (5973 sayılı Karar m.13) — Ticaret Bakanlığı**
+- **Başvuru dönemi:** Çağrı yoktur; Eximbank sigorta reasürans zararı desteği için yılda bir defa olmak üzere her yıl en geç 31 Mart tarihine kadar başvurur. Diğer destekler işlem bazında başvurulur: tazmin ödemesini müteakip Eximbank Bakanlığa DYS/KEP aracılığıyla başvurur. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Karşıladığı ihtiyaç:** kredi/finansman
+- **Destek:** Alıcı kredilerinde Eximbank faiz oranı ile CIRR arasındaki farka tekabül eden faiz giderinin tamamı. Sigorta reasürans zarar rasyosunun %60'ı aşan kısmına ilişkin Eximbank payı yıllık en fazla 20.000.000 TL'ye kadar; reasüre edilemeyen tazminat %50 oranında, yıllık en fazla 100.000.000 TL'ye kadar; geri ödenmeyen alıcı kredilerinde Eximbank üzerinde kalan risk %25 oranında, yıllık toplam en fazla 1.000.000.000 TL'ye kadar (Karar metnindeki tutar; yıllık güncellenir).
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Fonun katılacağı her yatırım turunun asgari büyüklüğü 50 milyon TL olmalı — resmî metin: “Kaynak aktarılacak fonun katılacağı her bir yatırım turunun asgari büyüklüğünün 50 milyon TL olması gerekir.”
-  - ☐ Başvuruyu Portföy Yönetim Şirketleri, yöneticisi oldukları fon için yapar — resmî metin: “Portföy Yönetim Şirketleri yöneticisi oldukları Girişim Sermayesi Yatırım Fonları için başvuruda bulunabilirler.”
+  - ☐ Destek, Eximbank tarafından kullandırılan yatırım malı içeren mal ihracatı alıcı kredilerine ilişkindir.
+  - ☐ Alıcı kredisine konu sözleşmedeki toplam mal bedelinin en az %80'i yatırım mallarından oluşmalıdır. — resmî metin: “toplam mal bedelinin en az %80’inin yatırım mallarından oluşması gerekir”
 - **Kurallar (kayıttan):**
-  - Her bir fon için iştirak üst limiti 500 milyon TL — resmî metin: “Her bir fon için iştirak üst limiti 500 milyon TL’dir.”
-- **Başvuru:** KOSGEB e-hizmetler menüsü, Girişim Sermayesi Yatırım Fonları Başvurusu sekmesi — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9378/girisim-sermayesi-yatirim-fonlari-yatirimlari
+  - Faiz farkı desteği: Eximbank'ın alıcı kredisi faiz oranı ile CIRR arasındaki farka tekabül eden faiz giderinin tamamı desteklenir. — resmî metin: “Eximbank’ın uyguladığı faiz oranı ile CIRR arasındaki farka tekabül eden faiz giderinin tamamı desteklenir.”
+  - Eximbank sabit faiz oranları, ilgili ortalama vadeli Hazine tahvili alış getirisinin (Bid Yield) 200 baz puan (%2,0) fazlasını aşamaz.
+  - Desteklenecek alıcı kredisi tutarı sözleşme kapsamında ihraç edilecek FOB mal bedelini aşamaz. — resmî metin: “Karar kapsamında desteklenecek alıcı kredisi tutarı sözleşme kapsamında ihraç edilecek FOB mal bedelini aşamaz.”
+- **Başvuru:** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) / KEP; başvuruyu Eximbank yapar — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-13
 
 **9903 programları bölgenize göre (Karar metninden; önce engelsiz ve şartlı, sonra en yüksek katkı):**
 - Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin): yatırıma katkı %20; makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); faiz desteği: repo oranının %25'i, azami 12.5 puan
 - Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (belirlenemedi): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteği: repo oranının %40'i, azami 20 puan
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü) (KOSGEB) — profilinize göre engel yok — şartları teyit edin; Sayfada çağrı dönemi belirtilmemiş (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan (SGK / İŞKUR) — profilinize göre engel yok — şartları teyit edin; 01.10.2008 tarihinden itibaren uygulanmaktadır; imalat için 5 puanlık oran 2026 yılı sonuna kadar. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi)); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Yapay Zekâ Kredi Programı (KOSGEB) — belirlenemedi (profilde karşılığı olmayan kilit şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
@@ -90,14 +92,14 @@
 Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik Yatırımların Teşviki) 9903 sayılı Karar ile yürürlükten kalkmıştır; bu eski sistemlere başvurulamaz.
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **Kayıtlı elektronik posta (KEP) adresi** (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Şirket adına bir KEP hizmet sağlayıcısından KEP adresi alın.
+- **Kayıtlı elektronik posta (KEP) adresi** (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar), Eximbank Faiz Farkı (CIRR), İhracat Kredi Sigortası Tazmin …): Şirket adına bir KEP hizmet sağlayıcısından KEP adresi alın.
 - **Yatırım teşvik belgesi** (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Yatırıma başlamadan önce Sanayi ve Teknoloji Bakanlığı E-TUYS üzerinden belge başvurusu.
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü)): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
+- **Ticaret Bakanlığı DYS kaydı** (Eximbank Faiz Farkı (CIRR), İhracat Kredi Sigortası Tazmin …): Destek Yönetim Sistemi'ne (DYS) şirket kaydı; MERSİS bilgileri ve NACE kodu güncel olmalı.
 - **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar):** Teşvik belgesi müracaatımı E-TUYS üzerinden
 - **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar):** Başvuru yeri: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)
 
 ### 4. Adım Adım Yol Haritası
-1. Ön koşul kayıtlar: Kayıtlı elektronik posta (KEP) adresi; Yatırım teşvik belgesi; KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
+1. Ön koşul kayıtlar: Kayıtlı elektronik posta (KEP) adresi; Yatırım teşvik belgesi; Ticaret Bakanlığı DYS kaydı.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (YATIRIM-İŞLETME DESTEK PAKETİ): Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir).
 4. Başvuru kanalı: YATIRIM-İŞLETME DESTEK PAKETİ: Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, … — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi | Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#hedef-yatirimlar | TKYB KREDİ DESTEK PAKETİ: Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi.

@@ -1,6 +1,6 @@
-# Kapsam matrisi (2026-10-11)
+# Kapsam matrisi (2026-10-12)
 
-468 hücre (7 sektör × 12 il × ihtiyaç). Kayıt düzeyi: VAR 385, İNCE 60, BOŞ 23. Ürün düzeyi (yanıtta engelsiz, açık ve ihtiyaca uygun bir program kartı): 410/468. Süre 176 sn.
+468 hücre (7 sektör × 12 il × ihtiyaç). Kayıt düzeyi: VAR 396, İNCE 49, BOŞ 23. Ürün düzeyi (yanıtta engelsiz, açık ve ihtiyaca uygun bir program kartı): 421/468. Süre 137 sn.
 
 Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak gösteriyor, ✗ = göstermiyor).
 
@@ -8,103 +8,103 @@ Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak göster
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 3 ✓ | 9 ✓ | 25 ✓ | 3 ✓ | 13 ✓ | 16 ✓ |
-| Ankara | 3 ✓ | 9 ✓ | 25 ✓ | 3 ✓ | 13 ✓ | 16 ✓ |
-| İzmir | 3 ✓ | 9 ✓ | 25 ✓ | 3 ✓ | 13 ✓ | 16 ✓ |
-| Bursa | 3 ✓ | 9 ✓ | 25 ✓ | 3 ✓ | 13 ✓ | 16 ✓ |
-| Konya | 4 ✓ | 10 ✓ | 26 ✓ | 3 ✓ | 13 ✓ | 16 ✓ |
-| Antalya | 3 ✓ | 9 ✓ | 25 ✓ | 3 ✓ | 13 ✓ | 16 ✓ |
-| Gaziantep | 3 ✓ | 9 ✓ | 25 ✓ | 3 ✓ | 13 ✓ | 16 ✓ |
-| Trabzon | 3 ✓ | 9 ✓ | 25 ✓ | 3 ✓ | 13 ✓ | 16 ✓ |
-| Van | 3 ✓ | 9 ✓ | 25 ✓ | 3 ✓ | 13 ✓ | 16 ✓ |
-| Diyarbakır | 3 ✓ | 9 ✓ | 25 ✓ | 3 ✓ | 13 ✓ | 17 ✓ |
-| Edirne | 3 ✓ | 9 ✓ | 25 ✓ | 3 ✓ | 13 ✓ | 16 ✓ |
-| Balıkesir | 3 ✓ | 9 ✓ | 25 ✓ | 3 ✓ | 13 ✓ | 16 ✓ |
+| İstanbul | 4 ✓ | 14 ✓ | 53 ✓ | 5 ✓ | 14 ✓ | 21 ✓ |
+| Ankara | 4 ✓ | 14 ✓ | 53 ✓ | 5 ✓ | 14 ✓ | 21 ✓ |
+| İzmir | 4 ✓ | 14 ✓ | 53 ✓ | 5 ✓ | 14 ✓ | 21 ✓ |
+| Bursa | 4 ✓ | 14 ✓ | 53 ✓ | 5 ✓ | 14 ✓ | 21 ✓ |
+| Konya | 5 ✓ | 15 ✓ | 54 ✓ | 5 ✓ | 14 ✓ | 21 ✓ |
+| Antalya | 4 ✓ | 14 ✓ | 53 ✓ | 5 ✓ | 14 ✓ | 21 ✓ |
+| Gaziantep | 4 ✓ | 14 ✓ | 53 ✓ | 5 ✓ | 14 ✓ | 21 ✓ |
+| Trabzon | 4 ✓ | 14 ✓ | 53 ✓ | 5 ✓ | 14 ✓ | 21 ✓ |
+| Van | 4 ✓ | 14 ✓ | 53 ✓ | 5 ✓ | 14 ✓ | 21 ✓ |
+| Diyarbakır | 4 ✓ | 14 ✓ | 53 ✓ | 5 ✓ | 14 ✓ | 22 ✓ |
+| Edirne | 4 ✓ | 14 ✓ | 53 ✓ | 5 ✓ | 14 ✓ | 21 ✓ |
+| Balıkesir | 4 ✓ | 14 ✓ | 53 ✓ | 5 ✓ | 14 ✓ | 21 ✓ |
 
 ## imalat
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 5 ✓ | 9 ✓ | 9 ✓ | 6 ✓ | 3 ✓ | 20 ✓ |
-| Ankara | 5 ✓ | 9 ✓ | 9 ✓ | 6 ✓ | 3 ✓ | 20 ✓ |
-| İzmir | 5 ✓ | 9 ✓ | 9 ✓ | 6 ✓ | 3 ✓ | 20 ✓ |
-| Bursa | 5 ✓ | 9 ✓ | 9 ✓ | 6 ✓ | 3 ✓ | 20 ✓ |
-| Konya | 6 ✓ | 10 ✓ | 10 ✓ | 6 ✓ | 3 ✓ | 20 ✓ |
-| Antalya | 5 ✓ | 9 ✓ | 9 ✓ | 5 ✓ | 3 ✓ | 19 ✓ |
-| Gaziantep | 5 ✓ | 9 ✓ | 9 ✓ | 6 ✓ | 3 ✓ | 20 ✓ |
-| Trabzon | 5 ✓ | 9 ✓ | 9 ✓ | 5 ✓ | 3 ✓ | 19 ✓ |
-| Van | 6 ✓ | 9 ✓ | 9 ✓ | 5 ✓ | 3 ✓ | 19 ✓ |
-| Diyarbakır | 6 ✓ | 9 ✓ | 9 ✓ | 6 ✓ | 3 ✓ | 20 ✓ |
-| Edirne | 5 ✓ | 9 ✓ | 9 ✓ | 5 ✓ | 3 ✓ | 19 ✓ |
-| Balıkesir | 5 ✓ | 9 ✓ | 9 ✓ | 5 ✓ | 3 ✓ | 19 ✓ |
+| İstanbul | 6 ✓ | 12 ✓ | 27 ✓ | 8 ✓ | 3 ✓ | 25 ✓ |
+| Ankara | 6 ✓ | 12 ✓ | 27 ✓ | 8 ✓ | 3 ✓ | 25 ✓ |
+| İzmir | 6 ✓ | 12 ✓ | 27 ✓ | 8 ✓ | 3 ✓ | 25 ✓ |
+| Bursa | 6 ✓ | 12 ✓ | 27 ✓ | 8 ✓ | 3 ✓ | 25 ✓ |
+| Konya | 7 ✓ | 13 ✓ | 28 ✓ | 8 ✓ | 3 ✓ | 25 ✓ |
+| Antalya | 6 ✓ | 12 ✓ | 27 ✓ | 7 ✓ | 3 ✓ | 24 ✓ |
+| Gaziantep | 6 ✓ | 12 ✓ | 27 ✓ | 8 ✓ | 3 ✓ | 25 ✓ |
+| Trabzon | 6 ✓ | 12 ✓ | 27 ✓ | 7 ✓ | 3 ✓ | 24 ✓ |
+| Van | 7 ✓ | 12 ✓ | 27 ✓ | 7 ✓ | 3 ✓ | 24 ✓ |
+| Diyarbakır | 7 ✓ | 12 ✓ | 27 ✓ | 8 ✓ | 3 ✓ | 25 ✓ |
+| Edirne | 6 ✓ | 12 ✓ | 27 ✓ | 7 ✓ | 3 ✓ | 24 ✓ |
+| Balıkesir | 6 ✓ | 12 ✓ | 27 ✓ | 7 ✓ | 3 ✓ | 24 ✓ |
 
 ## yazılım
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 3 ✓ | 12 ✓ | 11 ✓ | 4 ✓ | 2 ✓ | 16 ✓ |
-| Ankara | 3 ✓ | 12 ✓ | 11 ✓ | 4 ✓ | 2 ✓ | 16 ✓ |
-| İzmir | 3 ✓ | 12 ✓ | 11 ✓ | 4 ✓ | 2 ✓ | 16 ✓ |
-| Bursa | 3 ✓ | 12 ✓ | 11 ✓ | 4 ✓ | 2 ✓ | 16 ✓ |
-| Konya | 3 ✓ | 13 ✓ | 11 ✓ | 4 ✓ | 2 ✓ | 16 ✓ |
-| Antalya | 3 ✓ | 12 ✓ | 11 ✓ | 3 ✓ | 2 ✓ | 15 ✓ |
-| Gaziantep | 3 ✓ | 12 ✓ | 11 ✓ | 4 ✓ | 2 ✓ | 16 ✓ |
-| Trabzon | 3 ✓ | 12 ✓ | 11 ✓ | 3 ✓ | 2 ✓ | 15 ✓ |
-| Van | 4 ✓ | 12 ✓ | 11 ✓ | 3 ✓ | 2 ✓ | 15 ✓ |
-| Diyarbakır | 4 ✓ | 12 ✓ | 11 ✓ | 4 ✓ | 2 ✓ | 17 ✓ |
-| Edirne | 3 ✓ | 12 ✓ | 11 ✓ | 3 ✓ | 2 ✓ | 15 ✓ |
-| Balıkesir | 3 ✓ | 12 ✓ | 11 ✓ | 3 ✓ | 2 ✓ | 15 ✓ |
+| İstanbul | 4 ✓ | 17 ✓ | 39 ✓ | 6 ✓ | 3 ✓ | 21 ✓ |
+| Ankara | 4 ✓ | 17 ✓ | 39 ✓ | 6 ✓ | 3 ✓ | 21 ✓ |
+| İzmir | 4 ✓ | 17 ✓ | 39 ✓ | 6 ✓ | 3 ✓ | 21 ✓ |
+| Bursa | 4 ✓ | 17 ✓ | 39 ✓ | 6 ✓ | 3 ✓ | 21 ✓ |
+| Konya | 4 ✓ | 18 ✓ | 39 ✓ | 6 ✓ | 3 ✓ | 21 ✓ |
+| Antalya | 4 ✓ | 17 ✓ | 39 ✓ | 5 ✓ | 3 ✓ | 20 ✓ |
+| Gaziantep | 4 ✓ | 17 ✓ | 39 ✓ | 6 ✓ | 3 ✓ | 21 ✓ |
+| Trabzon | 4 ✓ | 17 ✓ | 39 ✓ | 5 ✓ | 3 ✓ | 20 ✓ |
+| Van | 5 ✓ | 17 ✓ | 39 ✓ | 5 ✓ | 3 ✓ | 20 ✓ |
+| Diyarbakır | 5 ✓ | 17 ✓ | 39 ✓ | 6 ✓ | 3 ✓ | 22 ✓ |
+| Edirne | 4 ✓ | 17 ✓ | 39 ✓ | 5 ✓ | 3 ✓ | 20 ✓ |
+| Balıkesir | 4 ✓ | 17 ✓ | 39 ✓ | 5 ✓ | 3 ✓ | 20 ✓ |
 
 ## tarım
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 7 ✓ | 2 ✗ | 4 ✓ | 4 ✓ | 1 ✗ | 15 ✓ |
-| Ankara | 7 ✓ | 2 ✗ | 4 ✓ | 4 ✓ | 1 ✗ | 15 ✓ |
-| İzmir | 7 ✓ | 2 ✗ | 4 ✓ | 4 ✓ | 1 ✗ | 15 ✓ |
-| Bursa | 7 ✓ | 2 ✗ | 4 ✓ | 4 ✓ | 1 ✗ | 15 ✓ |
-| Konya | 7 ✓ | 3 ✓ | 4 ✓ | 4 ✓ | 1 ✗ | 15 ✓ |
-| Antalya | 7 ✓ | 2 ✗ | 4 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Gaziantep | 7 ✓ | 2 ✗ | 4 ✓ | 4 ✓ | 1 ✗ | 15 ✓ |
-| Trabzon | 7 ✓ | 2 ✗ | 4 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Van | 7 ✓ | 2 ✗ | 4 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Diyarbakır | 7 ✓ | 2 ✗ | 4 ✓ | 4 ✓ | 1 ✗ | 15 ✓ |
-| Edirne | 7 ✓ | 2 ✗ | 4 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Balıkesir | 7 ✓ | 2 ✗ | 4 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
+| İstanbul | 7 ✓ | 5 ✓ | 19 ✓ | 6 ✓ | 1 ✗ | 17 ✓ |
+| Ankara | 7 ✓ | 5 ✓ | 19 ✓ | 6 ✓ | 1 ✗ | 17 ✓ |
+| İzmir | 7 ✓ | 5 ✓ | 19 ✓ | 6 ✓ | 1 ✗ | 17 ✓ |
+| Bursa | 7 ✓ | 5 ✓ | 19 ✓ | 6 ✓ | 1 ✗ | 17 ✓ |
+| Konya | 7 ✓ | 6 ✓ | 19 ✓ | 6 ✓ | 1 ✗ | 17 ✓ |
+| Antalya | 7 ✓ | 5 ✓ | 19 ✓ | 5 ✓ | 1 ✗ | 16 ✓ |
+| Gaziantep | 7 ✓ | 5 ✓ | 19 ✓ | 6 ✓ | 1 ✗ | 17 ✓ |
+| Trabzon | 7 ✓ | 5 ✓ | 19 ✓ | 5 ✓ | 1 ✗ | 16 ✓ |
+| Van | 7 ✓ | 5 ✓ | 19 ✓ | 5 ✓ | 1 ✗ | 16 ✓ |
+| Diyarbakır | 7 ✓ | 5 ✓ | 19 ✓ | 6 ✓ | 1 ✗ | 17 ✓ |
+| Edirne | 7 ✓ | 5 ✓ | 19 ✓ | 5 ✓ | 1 ✗ | 16 ✓ |
+| Balıkesir | 7 ✓ | 5 ✓ | 19 ✓ | 5 ✓ | 1 ✗ | 16 ✓ |
 
 ## turizm
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 4 ✓ | 9 ✓ | 10 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Ankara | 4 ✓ | 9 ✓ | 10 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| İzmir | 4 ✓ | 9 ✓ | 10 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Bursa | 4 ✓ | 9 ✓ | 10 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Konya | 4 ✓ | 10 ✓ | 10 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Antalya | 4 ✓ | 9 ✓ | 10 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Gaziantep | 4 ✓ | 9 ✓ | 10 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Trabzon | 4 ✓ | 9 ✓ | 10 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Van | 5 ✓ | 9 ✓ | 10 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Diyarbakır | 5 ✓ | 9 ✓ | 10 ✓ | 3 ✓ | 1 ✗ | 15 ✓ |
-| Edirne | 4 ✓ | 9 ✓ | 10 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
-| Balıkesir | 4 ✓ | 9 ✓ | 10 ✓ | 3 ✓ | 1 ✗ | 14 ✓ |
+| İstanbul | 5 ✓ | 12 ✓ | 36 ✓ | 5 ✓ | 1 ✗ | 19 ✓ |
+| Ankara | 5 ✓ | 12 ✓ | 36 ✓ | 5 ✓ | 1 ✗ | 19 ✓ |
+| İzmir | 5 ✓ | 12 ✓ | 36 ✓ | 5 ✓ | 1 ✗ | 19 ✓ |
+| Bursa | 5 ✓ | 12 ✓ | 36 ✓ | 5 ✓ | 1 ✗ | 19 ✓ |
+| Konya | 5 ✓ | 13 ✓ | 36 ✓ | 5 ✓ | 1 ✗ | 19 ✓ |
+| Antalya | 5 ✓ | 12 ✓ | 36 ✓ | 5 ✓ | 1 ✗ | 19 ✓ |
+| Gaziantep | 5 ✓ | 12 ✓ | 36 ✓ | 5 ✓ | 1 ✗ | 19 ✓ |
+| Trabzon | 5 ✓ | 12 ✓ | 36 ✓ | 5 ✓ | 1 ✗ | 19 ✓ |
+| Van | 6 ✓ | 12 ✓ | 36 ✓ | 5 ✓ | 1 ✗ | 19 ✓ |
+| Diyarbakır | 6 ✓ | 12 ✓ | 36 ✓ | 5 ✓ | 1 ✗ | 20 ✓ |
+| Edirne | 5 ✓ | 12 ✓ | 36 ✓ | 5 ✓ | 1 ✗ | 19 ✓ |
+| Balıkesir | 5 ✓ | 12 ✓ | 36 ✓ | 5 ✓ | 1 ✗ | 19 ✓ |
 
 ## hizmet (restoran)
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 3 ✓ | 1 ✓ | 10 ✓ | 3 ✓ | 1 ✓ | 15 ✓ |
-| Ankara | 3 ✓ | 1 ✓ | 10 ✓ | 3 ✓ | 1 ✓ | 15 ✓ |
-| İzmir | 3 ✓ | 1 ✓ | 10 ✓ | 3 ✓ | 1 ✓ | 15 ✓ |
-| Bursa | 3 ✓ | 1 ✓ | 10 ✓ | 3 ✓ | 1 ✓ | 15 ✓ |
-| Konya | 3 ✓ | 2 ✓ | 10 ✓ | 3 ✓ | 1 ✓ | 15 ✓ |
-| Antalya | 3 ✓ | 1 ✓ | 10 ✓ | 3 ✓ | 1 ✓ | 15 ✓ |
-| Gaziantep | 3 ✓ | 1 ✓ | 10 ✓ | 3 ✓ | 1 ✓ | 15 ✓ |
-| Trabzon | 3 ✓ | 1 ✓ | 10 ✓ | 3 ✓ | 1 ✓ | 15 ✓ |
-| Van | 3 ✓ | 1 ✓ | 10 ✓ | 3 ✓ | 1 ✓ | 15 ✓ |
-| Diyarbakır | 3 ✓ | 1 ✓ | 10 ✓ | 3 ✓ | 1 ✓ | 16 ✓ |
-| Edirne | 3 ✓ | 1 ✓ | 10 ✓ | 3 ✓ | 1 ✓ | 15 ✓ |
-| Balıkesir | 3 ✓ | 1 ✓ | 10 ✓ | 3 ✓ | 1 ✓ | 15 ✓ |
+| İstanbul | 4 ✓ | 4 ✓ | 36 ✓ | 5 ✓ | 1 ✓ | 20 ✓ |
+| Ankara | 4 ✓ | 4 ✓ | 36 ✓ | 5 ✓ | 1 ✓ | 20 ✓ |
+| İzmir | 4 ✓ | 4 ✓ | 36 ✓ | 5 ✓ | 1 ✓ | 20 ✓ |
+| Bursa | 4 ✓ | 4 ✓ | 36 ✓ | 5 ✓ | 1 ✓ | 20 ✓ |
+| Konya | 4 ✓ | 5 ✓ | 36 ✓ | 5 ✓ | 1 ✓ | 20 ✓ |
+| Antalya | 4 ✓ | 4 ✓ | 36 ✓ | 5 ✓ | 1 ✓ | 20 ✓ |
+| Gaziantep | 4 ✓ | 4 ✓ | 36 ✓ | 5 ✓ | 1 ✓ | 20 ✓ |
+| Trabzon | 4 ✓ | 4 ✓ | 36 ✓ | 5 ✓ | 1 ✓ | 20 ✓ |
+| Van | 4 ✓ | 4 ✓ | 36 ✓ | 5 ✓ | 1 ✓ | 20 ✓ |
+| Diyarbakır | 4 ✓ | 4 ✓ | 36 ✓ | 5 ✓ | 1 ✓ | 21 ✓ |
+| Edirne | 4 ✓ | 4 ✓ | 36 ✓ | 5 ✓ | 1 ✓ | 20 ✓ |
+| Balıkesir | 4 ✓ | 4 ✓ | 36 ✓ | 5 ✓ | 1 ✓ | 20 ✓ |
 
 ## girişimci (şirket yok)
 
@@ -131,7 +131,6 @@ Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak göster
 - girişimci (şirket yok) / girisim: 12 ilde boş ya da ince (tüm illerde)
 - girişimci (şirket yok) / finansman: 12 ilde boş ya da ince (tüm illerde)
 - girişimci (şirket yok) / arge: 12 ilde boş ya da ince (tüm illerde)
-- hizmet (restoran) / arge: 11 ilde boş ya da ince (İstanbul, Ankara, İzmir, Bursa, Antalya, Gaziantep, Trabzon, Van, Diyarbakır, Edirne, Balıkesir)
 
 ## İl başına açık kalkınma ajansı programı (herhangi bir sektör/ihtiyaç hücresinde)
 
@@ -150,38 +149,27 @@ Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak göster
 
 ## Kayıt var ama yanıt göstermiyor (ürün düzeyi ✗, kayıt ≥ 1)
 
-- tarım / İstanbul / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: KOSGEB Geri Ödemeli Destekleri; Organik Tarım Destekleri
 - tarım / İstanbul / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); YATIRIM-İŞLETME DESTEK PAKETİ; Yatırım teşvik belgesi (9903)
-- tarım / Ankara / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: KOSGEB Geri Ödemeli Destekleri; Organik Tarım Destekleri
 - tarım / Ankara / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); YATIRIM-İŞLETME DESTEK PAKETİ; Yatırım teşvik belgesi (9903)
-- tarım / İzmir / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: KOSGEB Geri Ödemeli Destekleri; Organik Tarım Destekleri
 - tarım / İzmir / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); YATIRIM-İŞLETME DESTEK PAKETİ; Yatırım teşvik belgesi (9903)
-- tarım / Bursa / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: KOSGEB Geri Ödemeli Destekleri; Organik Tarım Destekleri
 - tarım / Bursa / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); YATIRIM-İŞLETME DESTEK PAKETİ; Yatırım teşvik belgesi (9903)
 - tarım / Konya / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); YATIRIM-İŞLETME DESTEK PAKETİ; Yatırım teşvik belgesi (9903)
-- tarım / Antalya / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: KOSGEB Geri Ödemeli Destekleri; Organik Tarım Destekleri
 - tarım / Antalya / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); YATIRIM-İŞLETME DESTEK PAKETİ; Yatırım teşvik belgesi (9903)
-- tarım / Gaziantep / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: KOSGEB Geri Ödemeli Destekleri; Organik Tarım Destekleri
 - tarım / Gaziantep / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); YATIRIM-İŞLETME DESTEK PAKETİ; Yatırım teşvik belgesi (9903)
-- tarım / Trabzon / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: KOSGEB Geri Ödemeli Destekleri; Organik Tarım Destekleri
 - tarım / Trabzon / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); YATIRIM-İŞLETME DESTEK PAKETİ; Yatırım teşvik belgesi (9903)
-- tarım / Van / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: KOSGEB Geri Ödemeli Destekleri; Organik Tarım Destekleri
 - tarım / Van / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); YATIRIM-İŞLETME DESTEK PAKETİ; Yatırım teşvik belgesi (9903)
-- tarım / Diyarbakır / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: KOSGEB Geri Ödemeli Destekleri; Organik Tarım Destekleri
 - tarım / Diyarbakır / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); YATIRIM-İŞLETME DESTEK PAKETİ; Yatırım teşvik belgesi (9903)
-- tarım / Edirne / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: KOSGEB Geri Ödemeli Destekleri; Organik Tarım Destekleri
 - tarım / Edirne / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); YATIRIM-İŞLETME DESTEK PAKETİ; Yatırım teşvik belgesi (9903)
-- tarım / Balıkesir / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: KOSGEB Geri Ödemeli Destekleri; Organik Tarım Destekleri
 - tarım / Balıkesir / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); YATIRIM-İŞLETME DESTEK PAKETİ; Yatırım teşvik belgesi (9903)
-- turizm / İstanbul / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı)
-- turizm / Ankara / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı)
-- turizm / İzmir / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı)
-- turizm / Bursa / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı)
-- turizm / Konya / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı)
-- turizm / Antalya / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı)
-- turizm / Gaziantep / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı)
-- turizm / Trabzon / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı)
-- turizm / Van / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı); Yatırım teşvik belgesi (9903)
-- turizm / Diyarbakır / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı); Yatırım teşvik belgesi (9903)
-- turizm / Edirne / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı)
-- turizm / Balıkesir / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı)
+- turizm / İstanbul / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan
+- turizm / Ankara / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan
+- turizm / İzmir / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan
+- turizm / Bursa / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan
+- turizm / Konya / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan
+- turizm / Antalya / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan
+- turizm / Gaziantep / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan
+- turizm / Trabzon / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan
+- turizm / Van / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Yatırım teşvik belgesi (9903); Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)
+- turizm / Diyarbakır / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Yatırım teşvik belgesi (9903); Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)
+- turizm / Edirne / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan
+- turizm / Balıkesir / dijital: kayıtta 1 (ör. Yapay Zekâ Kredi Programı); yanıtta: Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan

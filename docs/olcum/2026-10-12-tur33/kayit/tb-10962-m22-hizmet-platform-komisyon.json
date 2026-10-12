@@ -1,0 +1,131 @@
+{
+ "slug": "tb-10962-m22-hizmet-platform-komisyon",
+ "kurum": "Ticaret Bakanlığı",
+ "baslik": "Hizmet Sektörleri Atılım Programı — Platform Komisyon Desteği (10962 sayılı Karar m.22)",
+ "ozet": "Bilişim sektöründe faaliyet gösteren yararlanıcının yazılımının, mobil uygulamasının veya dijital oyununun yurt dışı satışına ve dağıtımına yönelik platform komisyon giderleri %50 oranında ve yıllık en fazla 20.000.000 TL tutarında desteklenir; bir yararlanıcının yılda en fazla 10 ürünü desteklenir ve ürün başına destek yıllık 4.000.000 TL'yi aşamaz. Her yararlanıcı en fazla beş yıl desteklenir.",
+ "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf#madde-22",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "10962 sayılı Karar yürürlüktedir; destek dönemsel çağrıya bağlı değildir, faaliyet sonrası başvuruyla işler.",
+  "alinti": "yayımı tarihinde yürürlüğe girer. Yürütme MADDE 51- (1) Bu Karar hükümlerini Ticaret Bakanı yürütür.",
+  "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+ },
+ "basvuru_bicimi": "diger",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "arge",
+  "ihracat"
+ ],
+ "tesvil_tutari": "Dijital platformlara ödenen komisyon giderlerinin %50'si, yıllık en fazla 20.000.000 TL; yılda en fazla 10 ürün, ürün başına yıllık en fazla 4.000.000 TL; en fazla beş yıl (Karar metnindeki tutarlar; yıllık güncellenir).",
+ "basvuru_yeri": "Uluslararası Hizmet Ticareti Genel Müdürlüğü (Genel Müdürlük) ve incelemeci kuruluş (Hizmet İhracatçıları Birliği Genel Sekreterliği)",
+ "basvuru_suresi": "Çağrı yoktur; ödeme gerçekleştikten sonra, ödeme belgesi tarihinden itibaren altı ay içinde destek başvurusu yapılır.",
+ "kontrol_listesi": [
+  {
+   "tur": "bilgi",
+   "metin": "Yararlanıcı tanımına Türkiye'de yerleşik, Türk Ticaret Kanunu hükümlerine göre kurulmuş şirketler ve Kooperatifler Kanunu çerçevesinde faaliyette bulunan kooperatifler girer.",
+   "alinti": "Kanunu hükümlerine göre kurulmuş şirket i, 24/4/1969 tarihli ve 1163 sayılı Kooperatifler Kanunu hükümleri çerçevesinde faaliyette bulunan kooperatifi,",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Atılım Programı kapsamındaki sektörler: bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, lojistik ve taşımacılık, sağlık ve spor turizmi, teknik müşavirlik, uygunluk değerlendirme.",
+   "alinti": "Hizmet Sektörleri Atılım Programı için bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, l ojistik ve taşımacılık, sağlık ve spor turizmi , teknik müşavirlik veya uygunluk değerlendirme sektörlerinde faaliyet gösteren",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "tur": "belge",
+   "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+   "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Destek, bilişim sektöründe faaliyet gösteren yararlanıcının yazılımı, mobil uygulaması veya dijital oyununun yurt dışı satış ve dağıtımına yönelik dijital platformlara yaptığı komisyon ödemeleri için verilir.",
+   "alinti": "Bilişim sektöründe faaliyet gösteren yararlanıcı ya ait yazılım, mobil uygulama veya dijital oyunun yurt dışı satışına ve dağıtımına yönelik dijital platformlara yaptığı komisyon ödemeleri desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Bir yararlanıcının yılda en fazla 10 yazılımı, mobil uygulaması veya dijital oyunu desteklenir; ürün başına destek tutarı yıllık 4.000.000 TL'yi aşamaz.",
+   "alinti": "Bu madde kapsamında bir yararlanıcının yılda en fazla 10 adet yazılımı, mobil uygulaması veya dijital oyunu desteklenir. Yazılım, mobil uygulama veya dijital oyun başına destek tutarı yıllık 4.000.000 TL’yi aşamaz.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "Yararlanıcının dijital platformda kendisine ait hesabı bulunmalı ve ürünü platformda kendi adına pazarlamalıdır.",
+   "alinti": "Yararlanıcının dijital platformda kendisine ait hesabının bulunması ve yazılımı, mobil uygulamayı ve ya dijital oyunu söz konusu dijital platformda kendi adına pazarlaması gerekir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Komisyon, dijital platform tarafından satış hasılatından düşülüyorsa mahsup edilen tutar desteğe konu edilebilir.",
+   "alinti": "Yazılımın, mobil uygulamanın ve ya dijital oyunun satışına yönelik komisyon giderlerinin dijital platform tarafından satış hasılatından düşülmesi hâlinde, mahsup edilen tutar desteğe konu edilebilir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Her yazılım, dijital oyun veya mobil uygulama için yalnızca bir yararlanıcı desteklenir.",
+   "alinti": "Platform komisyon desteğine konu edilen her bir yazılım, dijital oyun veya mobil uygulama için sadece bir yararlanıcı desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "adim",
+   "metin": "Destek başvurusu, ödeme gerçekleştikten sonra yararlanıcı tarafından yapılır.",
+   "alinti": "Destek başvurusu , ödemenin gerçekleştirilmesini müteakip yararlanıcı tarafından yapılır.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Destek başvurusu, ödeme belgesi tarihinden itibaren altı ay içinde EK-4 başvuru belgeleriyle yapılır.",
+   "alinti": "bu maddede sayılmayan diğer destek unsurları için ödeme belgesi tarihinden itibaren altı ay, içerisinde ilgisine göre “Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)”",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+   "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+   "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+   "alinti": "izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+   "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "Platform komisyon: %50, yıllık en fazla 20.000.000 TL",
+   "alinti": "Bilişim sektöründe faaliyet gösteren yararlanıcının yazılımının, mobil uygulamasının ve ya dijital oyununun yurt dışı satışına ve dağıtımına yönelik platform komisyon giderleri %50 oranında ve yıllık en fazla 20.000.000 TL tutarında desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "iddia": "Yılda en fazla 10 ürün; ürün başına yıllık en fazla 4.000.000 TL",
+   "alinti": "Bu madde kapsamında bir yararlanıcının yılda en fazla 10 adet yazılımı, mobil uygulaması veya dijital oyunu desteklenir. Yazılım, mobil uygulama veya dijital oyun başına destek tutarı yıllık 4.000.000 TL’yi aşamaz.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "iddia": "En fazla beş yıl",
+   "alinti": "Bu madde kapsamında her bir yararlanıcı en fazla beş yıl boyunca desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  {
+   "iddia": "Ödeme belgesi tarihinden itibaren altı ay içinde başvuru",
+   "alinti": "bu maddede sayılmayan diğer destek unsurları için ödeme belgesi tarihinden itibaren altı ay, içerisinde ilgisine göre “Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)”",
+   "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+  }
+ ]
+}

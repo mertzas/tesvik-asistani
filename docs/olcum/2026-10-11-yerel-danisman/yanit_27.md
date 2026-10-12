@@ -43,7 +43,7 @@
 - **Başvuru:** Kredi veren bankalar: Türkiye İş Bankası, Türk Ekonomi Bankası (KOSGEB ile protokollü bankalar) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/2024-dijital-donusum-destek-paketi
 
 **Teknoloji Hamlesi Programı (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı**
-- **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1542 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)
+- **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)
 - **Sizin için:** Şartlı — Karar şartını teyit edin — Karar metnine göre ön değerlendirme: ŞARTLI — orta-yüksek teknoloji sınıfında (EK-1); ürün/teknoloji öncelikli ürün listesinde olmalı, proje komite tarafından değerlendirilir; EK-3 şartı aranmaz (MADDE 5/1, 6).
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı
 - **Destek unsurları (Karar metninden, bölgenize göre):** vergi indirimi: yatırıma katkı oranı %50, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 8 yıl (MADDE 18/3, 1. bölge); faiz/kâr payı desteği: repo oranının %40'i, azami 20 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı, azami 5 yıl (MADDE 15); makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteğiyle birlikte alınamaz (MADDE 16); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
@@ -76,9 +76,9 @@
 - Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (profilinize göre engel yok — şartları teyit edin): yatırıma katkı %20; makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); faiz desteği: bu programda yalnızca 4, 5, 6. bölgelerde
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü) (KOSGEB) — profilinize göre engel yok — şartları teyit edin; Sayfada çağrı dönemi belirtilmemiş (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - Yapay Zekâ Kredi Programı (KOSGEB) — belirlenemedi (profilde karşılığı olmayan kilit şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1542 gün kaldı)
+- Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı)
+- Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — şartlı — karar şartını teyit edin; 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Kapasite Geliştirme Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)

@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "imalat", "bolge": "Ankara", "calisan_sayisi": 35, "yillik_ciro": 90000000.0, "nace_kodu": "28.22", "sirket_turu": "anonim", "hedefler": ["yatirim", "makine", "dijital"]}
-BUGÜN: 2026-10-11
+BUGÜN: 2026-10-12
 SORU: Ankara Kalkınma Ajansı'nın şu an açık bir programı var mı, son başvuru ne zaman?
 ============================================================
 KAYIT 199
@@ -18,7 +18,7 @@ Durum notu: Tur21 2026-10-10: resmî kaynaktan eklendi; durum: Program 20 Temmuz
 - [adim] Başvuru KAYS üzerinden yapılır; KAYS taahhütnamesi 23/10/2026 saat 17:00'ye kadar teslim edilir. | alıntı: Taahhütname Son Teslim Tarihi : 23/10/2026 Saati: 17:00 | kaynak: https://ankaraka.org.tr/2026-ankara-sosyal-girisimcilik-ekosistemi-kapasite-gelistirme-mali-destek-programi
 - [bilgi] Program Türkiye ve AB tarafından IPA III kapsamında eş-finanse edilir. | alıntı: Türkiye Cumhuriyeti ve Avrupa Birliği tarafından Katılım Öncesi Mali Yardım Aracı (IPA III) kapsamında eş-finanse edilen | kaynak: https://ankaraka.org.tr/2026-ankara-sosyal-girisimcilik-ekosistemi-kapasite-gelistirme-mali-destek-programi
 - [adim] Başvuruyu yap: Kalkınma Ajansları Yönetim Sistemi (KAYS); sorular için sga@ankaraka.org.tr | kaynak: https://ankaraka.org.tr/2026-ankara-sosyal-girisimcilik-ekosistemi-kapasite-gelistirme-mali-destek-programi
-ÇAĞRI: {"id": 31, "ad": "TR51/26/ALT_SGE_Ö1 ve TR51/26/ALT_SGE_Ö2", "acilis": "2026-08-03", "kapanis": "2026-10-16", "on_kayit_son": null, "son_gun": "2026-10-16", "kaynak_url": "https://ankaraka.org.tr/2026-ankara-sosyal-girisimcilik-ekosistemi-kapasite-gelistirme-mali-destek-programi", "dogrulama_tarihi": "2026-10-10", "notlar": "Taahhütname son teslim: 23/10/2026 saat 17:00. Program 20 Temmuz 2026'da ilan edildi.", "durum": "acik", "durum_metni": "Başvuruya açık", "kalan_gun": 5}
+ÇAĞRI: {"id": 31, "ad": "TR51/26/ALT_SGE_Ö1 ve TR51/26/ALT_SGE_Ö2", "acilis": "2026-08-03", "kapanis": "2026-10-16", "on_kayit_son": null, "son_gun": "2026-10-16", "kaynak_url": "https://ankaraka.org.tr/2026-ankara-sosyal-girisimcilik-ekosistemi-kapasite-gelistirme-mali-destek-programi", "dogrulama_tarihi": "2026-10-10", "notlar": "Taahhütname son teslim: 23/10/2026 saat 17:00. Program 20 Temmuz 2026'da ilan edildi.", "durum": "acik", "durum_metni": "Başvuruya açık", "kalan_gun": 4}
 ============================================================
 KAYIT 266
 [KOSGEB] Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında)

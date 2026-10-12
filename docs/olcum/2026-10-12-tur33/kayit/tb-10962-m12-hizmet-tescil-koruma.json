@@ -1,0 +1,142 @@
+{
+  "slug": "tb-10962-m12-hizmet-tescil-koruma",
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Hizmet Sektörleri Atılım Programı — Tescil ve Koruma Desteği (10962 sayılı Karar m.12)",
+  "ozet": "Yararlanıcının yurt içi tescil belgesine sahip olduğu markasının, patentinin veya faydalı modelinin yurt dışında tesciline ve korunmasına ya da filminin yurt dışı korsan yayıncılıkla mücadele kapsamında korunmasına ilişkin giderleri %50 oranında ve yıllık en fazla 2.500.000 TL tutarında desteklenir. Mahkeme ve yargılama süreçlerine ilişkin giderler desteklenmez.",
+  "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf#madde-12",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "10962 sayılı Karar yürürlüktedir; destek dönemsel çağrıya bağlı değildir, faaliyet sonrası başvuruyla işler.",
+    "alinti": "yayımı tarihinde yürürlüğe girer. Yürütme MADDE 51- (1) Bu Karar hükümlerini Ticaret Bakanı yürütür.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "hizmet",
+    "ihracat"
+  ],
+  "tesvil_tutari": "Yurt dışı tescil ve koruma giderlerinin %50'si, yıllık en fazla 2.500.000 TL (Karar metnindeki tutar; yıllık güncellenir). Yurt dışında korunmaya ilişkin hukukî danışmanlık gideri yıllık üst limitin %10'unu geçemez.",
+  "basvuru_yeri": "Uluslararası Hizmet Ticareti Genel Müdürlüğü (Genel Müdürlük) ve incelemeci kuruluş (Hizmet İhracatçıları Birliği Genel Sekreterliği)",
+  "basvuru_suresi": "Çağrı yoktur; yurt dışı tescil tarihinden itibaren altı ay içinde destek başvurusu yapılır; korunmaya ilişkin giderlerde ödeme belgesi tarihinden itibaren altı ay içinde başvurulur.",
+  "kontrol_listesi": [
+    {
+      "tur": "bilgi",
+      "metin": "Yararlanıcı tanımına Türkiye'de yerleşik, Türk Ticaret Kanunu hükümlerine göre kurulmuş şirketler ve Kooperatifler Kanunu çerçevesinde faaliyette bulunan kooperatifler girer.",
+      "alinti": "Kanunu hükümlerine göre kurulmuş şirket i, 24/4/1969 tarihli ve 1163 sayılı Kooperatifler Kanunu hükümleri çerçevesinde faaliyette bulunan kooperatifi,",
+      "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Atılım Programı kapsamındaki sektörler: bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, lojistik ve taşımacılık, sağlık ve spor turizmi, teknik müşavirlik, uygunluk değerlendirme.",
+      "alinti": "Hizmet Sektörleri Atılım Programı için bilişim, danışmanlık, dijital aracılık, eğitim, finansal teknolojiler, fuarcılık ve kongre turizmi, kültürel ve kreatif endüstriler, l ojistik ve taşımacılık, sağlık ve spor turizmi , teknik müşavirlik veya uygunluk değerlendirme sektörlerinde faaliyet gösteren",
+      "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+    },
+    {
+      "tur": "belge",
+      "metin": "Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur.",
+      "alinti": "“Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)” listesinde yer alan temel bilgi ve belgeleri; kapsama alım, ilk ön onay, ilk proje onayı ya da ilk destek başvurusunda bir defaya mahsus olmak üzere sunar.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Destek konusu marka, patent veya faydalı modelin ilk tescili Türkiye'de yapılmış, yurt içi ve yurt dışı tescil yararlanıcı adına yapılmış olmalıdır.",
+      "alinti": "Destek konusu marka, patent veya faydalı modelin ilk tescilinin Türkiye’de yapılmış olması; yurt içi ve dışı tescilin yararlanıcı adına yapılmış olması gerekir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Marka veya patent bürosu ve danışmanlık hizmeti giderleri desteklenir.",
+      "alinti": "a) Marka veya patent bürosu ve danışmanlık hizmeti giderleri,",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Resmî tescil giderleri ve yenileme giderleri desteklenir.",
+      "alinti": "ç) Resmî tescil giderleri, d) Yenileme giderleri, desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Mahkeme ve yargılama süreçlerine ilişkin giderler desteklenmez.",
+      "alinti": "Mahkeme ve yargılama süreçlerine ilişkin giderler desteklenmez.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Yurt dışında korunmaya ilişkin hukukî danışmanlık gideri bir takvim yılında yıllık üst limitin %10'unu geçmeyecek şekilde desteklenir.",
+      "alinti": "Birinci fıkranın (c) bendi kapsamında hukukî danışmanlık hizmeti gideri, bir takvim yılında ilgili yıl için belirlenen üst limitin %10’unu geçmeyecek şekilde desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "adim",
+      "metin": "Destek başvurusu, tescil belgesi alındıktan veya koruma işlemi tamamlandıktan sonra yapılır.",
+      "alinti": "Destek başvurusu, ilgisine göre tescil belgesinin alınmasını veya koruma işleminin tamamlanmasını müteakip yararlanıcı tarafından yapılır.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Tescile ilişkin giderlerde başvuru süresi yurt dışı tescil tarihinden itibaren altı aydır.",
+      "alinti": "Tescile ilişkin giderler için “Tescil ve koruma desteği” başlıklı 22 nci madde için yurt dışı tescil tarihinden ve “Markalaşma Programı tescil ve koruma desteği” başlıklı 72 nci madde için yurt dışı tescil başvurusu tarihinden itibaren altı ay,",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Korumaya ilişkin giderlerde başvuru, ödeme belgesi tarihinden itibaren altı ay içinde EK-4 başvuru belgeleriyle yapılır.",
+      "alinti": "bu maddede sayılmayan diğer destek unsurları için ödeme belgesi tarihinden itibaren altı ay, içerisinde ilgisine göre “Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)”",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Aynı harcama için yalnızca bir destek programından yararlanılır.",
+      "alinti": "Bu Karar kapsamında aynı harcama için sadece bir destek programından faydalanılır.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Yararlanıcı, ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılından itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+      "alinti": "Yararlanıcı, Hizmet Sektörleri Atılım Programı kapsamında ilk destek ödemesinin yapıldığı yılı takip eden ikinci takvim yılı ndan itibaren her yıl izleme ve değerlendirme sürecine tabi tutulur.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "İzleme ve değerlendirmeye tabi tutulduğu yılda tahakkuk edecek toplam destek ödemesi, bir önceki takvim yılındaki hizmet ihracatı ve yurt dışı kaynaklı gelirlerin toplamının 1/3'ünü aşamaz.",
+      "alinti": "izleme ve değerlendirmeye tabi tutulduğu yıldan bir önceki takvim yılında gerçekleştirdiği hizmet ihracatının ve yurt dışı kaynaklı gelirlerinin toplamının 1/3’ünü aşamaz.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Karardaki üst limitler her takvim yılı başında yeniden değerleme oranında güncellenir; güncel tutarlar için Bakanlığın duyurularına bakılmalıdır.",
+      "alinti": "her takvim yılı başında en fazla 4/1/1961 tarihli ve 213 sayılı Vergi Usul Kanununun mükerrer 298 inci maddesinin (B) fıkrası uyarınca tespit edilen ve ilan olunan yeniden değerleme oranında güncellenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Tescil ve koruma: kapsam (marka, patent, faydalı model, film korsan koruma)",
+      "alinti": "Yararlanıcının yurt içi tescil belgesine sahip olduğu markasının , patentinin veya faydalı modelinin yurt dışında tesciline ve korunmasına",
+      "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+    },
+    {
+      "iddia": "Tescil ve koruma: %50, yıllık en fazla 2.500.000 TL",
+      "alinti": "ya da filminin yurt dışı korsan yayıncılıkla mücadele kapsamında korunmasına ilişkin giderleri %50 oranında ve yıllık en fazla 2.500.000 TL tutarında desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf"
+    },
+    {
+      "iddia": "Hukukî danışmanlık yıllık üst limitin %10'unu geçemez",
+      "alinti": "Birinci fıkranın (c) bendi kapsamında hukukî danışmanlık hizmeti gideri, bir takvim yılında ilgili yıl için belirlenen üst limitin %10’unu geçmeyecek şekilde desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "iddia": "Yurt dışı tescil tarihinden itibaren altı ay içinde başvuru",
+      "alinti": "Tescile ilişkin giderler için “Tescil ve koruma desteği” başlıklı 22 nci madde için yurt dışı tescil tarihinden ve “Markalaşma Programı tescil ve koruma desteği” başlıklı 72 nci madde için yurt dışı tescil başvurusu tarihinden itibaren altı ay,",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "iddia": "Korumaya ilişkin giderlerde ödeme belgesi tarihinden itibaren altı ay",
+      "alinti": "bu maddede sayılmayan diğer destek unsurları için ödeme belgesi tarihinden itibaren altı ay, içerisinde ilgisine göre “Hizmet Sektörleri Atılım Programı Başvuru Belgeleri (EK-4)”",
+      "kaynak_url": "https://ticaret.gov.tr/data/69abe397269de14590bea074/0.%20Hizmet%20Sekt%C3%B6rlerinin%20Desteklenmesine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    }
+  ]
+}

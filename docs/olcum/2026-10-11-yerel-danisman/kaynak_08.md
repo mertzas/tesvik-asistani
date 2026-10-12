@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "e-ticaret", "bolge": "Trabzon", "calisan_sayisi": 3, "yillik_ciro": 4000000.0, "nace_kodu": "47.91", "hedefler": ["ihracat"], "sirket_turu": "limited"}
-BUGÜN: 2026-10-11
+BUGÜN: 2026-10-12
 SORU: Pazaryeri üyelik gideri desteği hâlâ yıllık 15.102 TL mi, hangi Karar geçerli?
 ============================================================
 KAYIT 163

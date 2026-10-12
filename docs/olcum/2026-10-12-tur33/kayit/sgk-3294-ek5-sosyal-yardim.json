@@ -1,0 +1,93 @@
+{
+  "slug": "sgk-3294-ek5-sosyal-yardim",
+  "kurum": "SGK / İŞKUR",
+  "baslik": "Sosyal Yardım Alanların İstihdamı Halinde Uygulanan Sigorta Primi Teşviki (3294 sayılı Kanun ek madde 5)",
+  "ozet": "Özel sektör işverenleri tarafından, Sosyal Yardımlaşma ve Dayanışmayı Teşvik Fonu Kurulu tarafından verilen nakdi düzenli sosyal yardımlardan yararlanan kişilerin ikamet ettiği hanede bulunanlardan 26.04.2016 tarihi ve sonrasında işe alınan sigortalıların prime esas kazanç alt sınır üzerinden hesaplanan sigorta primi işveren hissesinin tamamı 1 yıl süreyle Aile ve Sosyal Hizmetler Bakanlığı tarafından karşılanır.",
+  "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#3294-ek5-sosyal-yardim",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "SGK, bu teşviki Genel Bilgi sayfasında hâlihazırda uygulaması devam eden teşvik, destek ve indirimler arasında sayar ve Güncel Sigorta Primi Teşvik, Destek ve İndirimleri sayfasında yayımlar.",
+    "alinti": "3294 sayılı Kanun'un ek 5'inci maddesinde yer alan sosyal yardım alanların istihdamına yönelik sigorta primi desteği,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/0b871410-6c9f-4912-a744-b9742c34618b/Genel-Bilgi-2026-08-04-10-12-53"
+  },
+  "basvuru_bicimi": "bildirim_prim",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "genel"
+  ],
+  "tesvil_tutari": "Prime esas kazanç alt sınır üzerinden hesaplanan sigorta primi işveren hissesinin tamamı, 1 yıl süreyle Aile ve Sosyal Hizmetler Bakanlığı tarafından karşılanır.",
+  "basvuru_yeri": "Kaynak sayfada ayrı başvuru yeri belirtilmemiştir; yararlanma, aylık prim ve hizmet belgesinin / muhtasar ve prim hizmet beyannamesinin yasal süresinde verilmesine ve primlerin yasal süresinde ödenmesine bağlıdır.",
+  "basvuru_suresi": "26.04.2016 tarihinden itibaren uygulanmaktadır; her sigortalı için 1 yıl süreyle karşılanır, sayfada bitiş tarihi belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Sigortalı, işe girişten önceki son 1 yıl içinde nakdî düzenli sosyal yardımlardan en az bir defa yararlanmış olanların ikamet ettiği hanede bulunmalıdır.",
+      "alinti": "İşe giriş tarihinden önceki son 1 yıl içerisinde nakdî düzenli sosyal yardımlardan en az bir defa yararlanmış olanların ikamet ettiği hanede bulunması,",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "tur": "sart",
+      "metin": "Sigortalı, 5510 sayılı Kanun'un 60'ıncı maddesinin birinci fıkrasının (c) bendinin (1) numaralı alt bendi kapsamında olmalıdır.",
+      "alinti": "5510 sayılı Kanun'un 60'ıncı maddesinin birinci fıkrasının (c) bendinin (1) numaralı alt bendi kapsamında olması,",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "tur": "sart",
+      "metin": "Sigortalı Türkiye İş Kurumu'na kayıtlı işsiz olmalıdır.",
+      "alinti": "Türkiye İş Kurumu’na kayıtlı işsiz olması,",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "tur": "sart",
+      "metin": "Sigortalı 26.04.2016 tarihi ve sonrasında işe alınmış olmalıdır.",
+      "alinti": "26.04.2016 tarihi ve sonrasında işe alınmış olması,",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "tur": "sart",
+      "metin": "Sigortalı, işe alındığı tarihten bir önceki yılın ortalama sigortalı sayısına ilave olarak çalıştırılmalıdır.",
+      "alinti": "Sigortalının işe alındığı tarihten bir önceki yılın ortalama sigortalı sayısına ilave olarak çalıştırılması,",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "tur": "sart",
+      "metin": "Aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi yasal süresinde verilmelidir.",
+      "alinti": "Aylık prim ve hizmet belgesinin / muhtasar ve prim hizmet beyannamesinin yasal süresinde verilmesi,",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "tur": "sart",
+      "metin": "Kuruma borç bulunmamalıdır (varsa yapılandırılmış/tecil ve taksitlendirilmiş ve düzenli ödenmiş olmalıdır).",
+      "alinti": "Kuruma borcun bulunmaması (varsa da yapılandırılmış/tecil ve taksitlendirilmiş olması ve düzenli ödenmesi),",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Alt sınır üzerinden hesaplanan prim işveren hissesinin tamamı 1 yıl süreyle Aile ve Sosyal Hizmetler Bakanlığınca karşılanır",
+      "alinti": "26.04.2016 tarihi ve sonrasında işe alınan sigortalıların prime esas kazanç alt sınır üzerinden hesaplanan sigorta primi işveren hissesinin tamamı 1 yıl süreyle Aile ve Sosyal Hizmetler Bakanlığı tarafından karşılanmaktadır.",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "iddia": "Kapsam: nakdi düzenli sosyal yardımlardan yararlanan kişilerin ikamet ettiği hanede bulunanlar",
+      "alinti": "Özel sektör işverenleri tarafından Sosyal Yardımlaşma ve Dayanışmayı Teşvik Fonu Kurulu tarafından verilen nakdi düzenli sosyal yardımlardan yararlanan kişilerin ikamet ettiği hanede bulunanlardan",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "iddia": "Teşvik 26.04.2016 tarihinden itibaren uygulanmaktadır",
+      "alinti": "Bu teşvik 26.04.2016 tarihinden itibaren uygulanmaktadır.",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "iddia": "Yasal dayanak",
+      "alinti": "Yasal Dayanak: 3294 sayılı Kanun'un ek 5'inci maddesi",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "iddia": "SGK Genel Bilgi sayfasında hâlihazırda uygulaması devam eden teşvikler arasında sayılır",
+      "alinti": "Hâlihazırda uygulaması devam eden",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/0b871410-6c9f-4912-a744-b9742c34618b/Genel-Bilgi-2026-08-04-10-12-53"
+    }
+  ]
+}

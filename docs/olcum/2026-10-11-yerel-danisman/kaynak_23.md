@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "tarim", "bolge": "Aydın", "calisan_sayisi": 2, "yillik_ciro": 1200000.0, "arazi_buyuklugu_dekar": 60, "urun_turu": "incir", "tarim_kategori": "meyve", "sirket_turu": "sahis", "hedefler": ["organik_tarim"], "sertifikalar": ["hicbiri"]}
-BUGÜN: 2026-10-11
+BUGÜN: 2026-10-12
 SORU: Organik tarım desteğinden yararlanabilir miyim, dekar başına ne veriliyor?
 ============================================================
 KAYIT 77
@@ -51,6 +51,7 @@ Durum notu: KGF resmi ürün sayfasından doğrulandı (2026-07-12). | Denetim2-
 - [adim] Başvuruyu yap: Programa dahil 10 bankadan biri: Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, Halkbank, TEB, YKB | alıntı: Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, HalkBank, TEB, YKB | kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tarim-kefalet-destek-programi
 - [kural] Kredi üretim faaliyetlerine yönelik işletme veya yatırım kredisi olmalı | alıntı: üretim faaliyetlerine yönelik olarak Kredi Veren tarafından kullandırılacak işletme ve yatırım kredilerinin | kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tarim-kefalet-destek-programi
 ADAY (yanıtta yok) KAYIT 76: Hayvancılık Destekleri — Tarım Bakanlığı; aktif_mi=True; kriterler={"sektorler": ["tarim"], "alt_kategori": "hayvancilik", "genislik": "dar", "tutar_niteligi": "proje_bazli_tavan"}; tutar=Birim tutarlar 8760 sayılı CB Kararı (2024-2026 Hayvancılık Desteklemeleri, RG 26/7/2024) ekindedir; sistemde teyit edilemedi (taranmış PDF)
+ADAY (yanıtta yok) KAYIT 315: TURQUALITY® Tanıtım Projesi Desteği (5973 sayılı Karar m.27) — Ticaret Bakanlığı; aktif_mi=True; kriterler={"sektorler": ["ihracat", "genel"]}; tutar=%75 oranında, proje başına en fazla dört yıl: ihracatçı birlikleri için proje başına yıllık en fazla 12.000.000 TL; TİM ve iştigal ettiği sektörü tek başına temsil eden ihracatçı birlikleri ve bölgese
 ============================================================
 KAYIT 276
 [Ticaret Bakanlığı] Sektörel Ticaret Heyeti ve Alım Heyeti Desteği (5973 sayılı Karar m.24)
@@ -101,7 +102,6 @@ Durum notu: Tur32 2026-10-11: resmî kaynaktan eklendi; durum: 5973 sayılı İh
 - [bilgi] Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır. | alıntı: destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir. | kaynak: https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf
 - [kural] Destek oranları hedef ülkelere yönelik giderlerde artırılabilir; ödenecek destek her hâlde desteğe konu giderlerin %75'ini aşamaz. | alıntı: Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz. | kaynak: https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf
 - [adim] Başvuruyu yap: Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) / KEP; ödeme başvurusu incelemeci kuruluş olan İhracatçı Birlikleri Genel Sekreterliklerine DYS/KEP üzerinden yapılır | kaynak: https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-5
-ADAY (yanıtta yok) KAYIT 278: Yurt Dışı Fuar Desteği (5973 sayılı Karar m.7) — Ticaret Bakanlığı; aktif_mi=True; kriterler={"sektorler": ["ihracat", "genel"]}; tutar=Fuar başına destek üst sınırı: genel nitelikli fuarda 150.000 TL, sektörel nitelikli fuarda 250.000 TL, bakanlıkça belirlenen prestijli fuarda 750.000 TL (Karar metnindeki tutarlar; yıllık güncellenir
 - KGF (Kredi Garanti Fonu A.Ş.): Çağrı merkezi 444 7 543, Genel merkez 0 312 204 00 00, Adres: Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara. (Doğrulama kaynağı: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim, doğrulama tarihi: 2026-07-12)
 - Tarım Bakanlığı (Tarım ve Orman Bakanlığı - Tarım İletişim Merkezi): Çağrı merkezi 180 (Alo 180), Genel merkez —, Adres: Üniversiteler Mah. Dumlupınar Bulvarı, No: 161, 06800, Çankaya / Ankara. (Doğrulama kaynağı: https://timer.tarimorman.gov.tr/Home/Hakkinda, doğrulama tarihi: 2026-07-12)
 - Ticaret Bakanlığı (T.C. Ticaret Bakanlığı): Çağrı merkezi 444 8 482, Genel merkez 0 312 204 75 00, Adres: Söğütözü Mah. Nizami Gencevi Cad. No:63/1, 06530 Çankaya / Ankara. (Doğrulama kaynağı: https://ticaret.gov.tr/iletisim, doğrulama tarihi: 2026-07-12)

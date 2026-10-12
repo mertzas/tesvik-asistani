@@ -1,0 +1,121 @@
+{
+  "slug": "eximbank-marka-kredisi",
+  "kurum": "Türk Eximbank",
+  "baslik": "Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı)",
+  "ozet": "Marka Kredisi; Türk markasının geliştirilmesine, yurt dışında tutundurulmasına ve yaygınlaştırılmasına veya yurt dışından marka satın alımına yönelik harcamaları finanse eder. Yurt dışı reklam-tanıtım, marka tescili, lojistik-depolama, e-ticaret ve yurt dışı mağaza kira giderleri ile marka ve ilgili mağaza/tesis alım bedelleri kapsamdadır. Kesin Teminat Mektubu karşılığında kullandırılır; ihracat veya döviz kazandırıcı hizmet taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.",
+  "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Eximbank'ın güncel internet sitesinde kredi programı olarak yayınlanmaktadır; dönemsel çağrıya bağlı değildir ve sayfada kapanış tarihi belirtilmemiştir.",
+    "alinti": "Türk markasının geliştirilmesine, yurt dışında tutundurulmasına ve yaygınlaştırılmasına veya yurt dışından marka satın alımına yönelik yapılan harcamalarınızı finanse ediyoruz.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+  },
+  "basvuru_bicimi": "kredi",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "imalat",
+    "hizmet"
+  ],
+  "tesvil_tutari": "Hibe değil kredi: marka geliştirme/tutundurma harcamaları ile yurt dışında yerleşik marka ve ilgili mağaza, tesis alım bedelleri finanse edilir. Firma limitleri Eximbank'ça firma bazında belirlenir; faiz/kar payı vade, tutar ve para birimine göre belirlenir.",
+  "basvuru_yeri": "Türk Eximbank (kaynak sayfada başvuru kanalı ayrıca belirtilmemiştir; Kredi Talep Formu ve belgeler Bankaya sunulur)",
+  "basvuru_suresi": "Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır.",
+      "alinti": "Türkiye’de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar, Türkiye’de kurulan Serbest Bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi olan firmalar,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "tur": "sart",
+      "metin": "Türkiye'de yerleşik döviz kazandırıcı hizmetler sektöründe faaliyet gösteren firmalar da yararlanır.",
+      "alinti": "Türkiye’de yerleşik döviz kazandırıcı hizmetler sektöründe faaliyet gösteren firmalar bu programdan yararlanabilecektir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Mevcut markaya ilişkin finanse edilen harcamalar: yurt dışına yönelik reklam-tanıtım, yurt dışı satışları artırmaya yönelik ar-ge/tasarım/danışmanlık ve yurt dışında yapılan marka tescili.",
+      "alinti": "Yurtdışına yönelik reklam ve tanıtım harcamaları Yurtdışı satışların artırılmasına yönelik yapılan arge, tasarım, danışmanlık ve sair suretteki diğer harcamalar Yurtdışında yapılan marka tesciline ilişkin harcamalar",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Mevcut markaya ilişkin finanse edilen harcamalar: yurt dışındaki lojistik ve depolama giderleri, e-ticaret kapsamındaki harcamalar ve yurt dışı mağaza kira giderleri.",
+      "alinti": "Yurt dışındaki lojistik ve depolama giderleri E-Ticaret kapsamında yapılan harcamalar Yurtdışı mağaza kira giderleri",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Marka alımında finanse edilen harcamalar: yurt dışında yerleşik ve marka siciline kayıtlı markanın alım bedeli ile ilgili mağaza, tesis ve benzeri aktiflerin alım bedelleri.",
+      "alinti": "Yurtdışında yerleşik ve marka siciline kayıtlı bir markanın satın alınma bedeli Satın alınacak markayla ilgili mağaza, tesis ve benzeri aktiflerin satın alınma bedelleri",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "tur": "sart",
+      "metin": "Marka alımında markanın bilinirliği yeterli olmalı; markalı ürünler yurt içinde üretilmeli ve ihraç edilmelidir.",
+      "alinti": "Diğer şartlar; Satın alınan markanın marka değerliliğinin (bilinirliği) yeterli olması, Satın alınan markalı ürünlerin yurt içinde üretiminin gerçekleştirilmesi ve ihraç edilmesi, gerekmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "İhracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.",
+      "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Teminat: Kesin Teminat Mektubu.",
+      "alinti": "Kesin Teminat Mektubu, karşılığında kullandırılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Firma limiti Eximbank'ın tahsis çalışmasıyla firma bazında belirlenir.",
+      "alinti": "Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Kredi Talep Formu, varsa Vergi Resim Harç İstisnası Belgesi fotokopisi ve Eximbank'ın vereceği Proje Bilgi Formu.",
+      "alinti": "Kredi Talep Formu (Ek-1), Vergi Resim Harç İstisnası Belgesi Fotokopisi (varsa), Proje Bilgi Formu (Projeye yönelik Bankamız tarafından verilecektir)",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "YMM/SMMM onaylı Harcama Belgeleri Listesi ve eki belge fotokopileri.",
+      "alinti": "Harcama Belgeleri Listesi (Yeminli Mali Müşavir (YMM)/Serbest Muhasebeci Mali Müşavir (SMMM) onaylı) ve eki belge fotokopileri (Ek-2)",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Yapılan/yapılacak satın almalara (mağaza, tesis, marka, şirket vb.) yönelik sözleşme örnekleri.",
+      "alinti": "Yapılan/yapılacak satın almalara (mağaza, tesis, marka, şirket vb.) yönelik sözleşme örnekleri",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "İlk kez başvuracak firmalar mali analiz ve istihbarat çalışması için istenen bilgi ve belgeleri de sunar.",
+      "alinti": "İlk kez başvuruda bulunacak firmalar için bu belgelerin yanı sıra firma mali analizi ve istihbarat çalışması için talep edilen bilgi ve belgeleri Bankamıza sunmaları,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Taahhüt vadesi kredi kullanım tarihinden itibaren 24 ay",
+      "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "iddia": "Teminat Kesin Teminat Mektubu",
+      "alinti": "Kesin Teminat Mektubu, karşılığında kullandırılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    },
+    {
+      "iddia": "Faiz/kar payı vade, tutar ve para birimine göre belirlenir",
+      "alinti": "Kredilere uygulanacak faiz/kar payı oranları; kredi vadesi, kredi tutarı ve para birimine göre belirlenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi"
+    }
+  ]
+}

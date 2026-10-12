@@ -29,12 +29,9 @@
 - **Başvuru:** PRODİS (https://eteydeb.tubitak.gov.tr); önce kuruluş bazlı ön kayıt, ulusal ön proje başvurusu, sonra uluslararası değerlendirme — https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1709-eureka-eurostars
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (33 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
+- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (32 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
 - 1719 Eureka Network Çağrıları (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Proje en az iki EUREKA üyesi ülkeden (en az biri AB üyesi veya Ufuk Avrupa Asosiye ülkesi) kuruluşun yer aldığı uluslararası Ar-Ge projesi olmalı); Açık ulusal çağrılar: Uygulamalı Kuantum Teknolojileri, Hafifletme Teknolojileri, Afetlerde Dirençlilik (takvim çağrı duyurularında) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Pazara Giriş Projesi Hazırlama Desteği (5973 sayılı Karar m.5) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; proje başvurusu DYS/KEP üzerinden yapılır ve Bakanlık ön onayıyla başlar. Ödeme başvurusu ihracat planının onay tarihinden itibaren 6 (altı) ay içinde yapılmalıdır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-
-**Size kapalı ya da başvuruya kapalı programlar:**
-- 1832 - Sanayide Yeşil Dönüşüm Çağrısı (TUBITAK) — kapalı: yeni başvuru için şu an kapalı (1832 2026-2 çağrısı: yeni başvuru için ön kayıt süresi 08.10.2026 tarihinde doldu; çağrı 12.10.2026 tarihinde kapanıyor (yalnız ön kaydını yapmış olanlar için))
+- Hizmet Sektörleri Atılım Programı — Hizmet Sektörü Rekabet Gücünün Artırılması (HİSER) Projesi Desteği (10962 sayılı Karar m.10) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; işbirliği kuruluşu proje onay başvurusu yapar; ihtiyaç analizi raporu ve faaliyet çizelgesi proje onayından itibaren en geç altı ay içinde iletilir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **1709 – EUREKA-EUROSTARS:** Sermaye şirketi, yükseköğretim kurumu, kamu araştırma merkezi/enstitüsü, eğitim ve araştırma hastanesi veya 6550 sayılı Kanun kapsamındaki araştırma altyapısı olmak

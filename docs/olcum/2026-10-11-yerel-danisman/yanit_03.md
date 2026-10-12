@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - **1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı** (TUBITAK)
 - Destek: Proje bütçesi en fazla 3.500.000 TL; ilk 5 projede %75 hibe (en az ikisi ortaklı başvuru kaydıyla)
-- Başvuru: 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (29 gün kaldı); başvuru kapanışı 11.11.2026 (31 gün kaldı).
+- Başvuru: 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (28 gün kaldı); başvuru kapanışı 11.11.2026 (30 gün kaldı).
 - Sizin için: profilinize göre engel yok — şartları teyit edin.
 - Dikkat (çağrı notu): Kapanış 11.11.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 09.11.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı.
 - Azami hibe (hesap): 3.500.000 TL bütçe × %75 = 2.625.000 TL (kayıttaki bütçe tavanı ile oranın çarpımı; proje bütçenize göre değişir)
@@ -20,7 +20,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı — TUBITAK**
-- **Başvuru dönemi:** 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (29 gün kaldı); başvuru kapanışı 11.11.2026 (31 gün kaldı). Not: Kapanış 11.11.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 09.11.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı. (duyuru: https://tubitak.gov.tr/sites/default/files/2026-07/1507_KOBI_Ar-Ge_Baslangic_Destek_Programlari_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf, doğrulama 08.10.2026)
+- **Başvuru dönemi:** 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (28 gün kaldı); başvuru kapanışı 11.11.2026 (30 gün kaldı). Not: Kapanış 11.11.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 09.11.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı. (duyuru: https://tubitak.gov.tr/sites/default/files/2026-07/1507_KOBI_Ar-Ge_Baslangic_Destek_Programlari_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf, doğrulama 08.10.2026)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
 - **Kapsam:** yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
@@ -35,10 +35,10 @@
 - **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (33 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
+- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (32 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **Ön kayıt:** 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı için yeni başvuranın ön kayıt son günü 09.11.2026 (29 gün).
+- **Ön kayıt:** 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı için yeni başvuranın ön kayıt son günü 09.11.2026 (28 gün).
 - **1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı:** Başvuru yeri: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
 
 ### 4. Adım Adım Yol Haritası

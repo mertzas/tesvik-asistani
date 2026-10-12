@@ -152,7 +152,11 @@ _SIRKETSIZE_KAPALI = re.compile(
 _ISLETME_GEREKTIREN_KURUMLAR = {"KGF", "KOSGEB", "SGK / İŞKUR",
                                 # 9903 yatırım teşvik belgesi bir işletmeye düzenlenir (persona denemesi
                                 # 2026-10-08: şirketsiz girişimciye 9903 kayıtları skor 0 ile listeleniyordu).
-                                "Sanayi ve Teknoloji Bakanlığı"}
+                                "Sanayi ve Teknoloji Bakanlığı",
+                                # 5973/5986/10962 sayılı Kararlar başvuranı "TTK'ya göre kurulmuş şirket" diye tanımlar;
+                                # Eximbank kredileri ihracatçı firmaya, KTB teşvikleri belgeli işletmeye verilir (kapsam
+                                # ölçümü 2026-10-12: şirketsiz girişimciye tasarım şirketi ve Eximbank destekleri çıkıyordu).
+                                "Ticaret Bakanlığı", "Türk Eximbank", "Kültür ve Turizm Bakanlığı"}
 _SAHIS_URUNU = re.compile(r"şahıs\s+işletmeleri", re.IGNORECASE)
 _BUYUK_ISLETMEYE_ACIK = re.compile(r"büyük\s+işletme", re.IGNORECASE)
 

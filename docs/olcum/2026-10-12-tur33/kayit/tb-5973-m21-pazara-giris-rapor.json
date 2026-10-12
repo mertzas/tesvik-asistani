@@ -1,0 +1,96 @@
+{
+  "slug": "tb-5973-m21-pazara-giris-rapor",
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Pazara Giriş Rapor Desteği (5973 sayılı Karar m.21)",
+  "ozet": "İşbirliği kuruluşlarının yurt dışına yönelik pazara giriş stratejileri ile eylem planlarının oluşturulabilmesi ve üyesi şirketlerle paylaşılmak amacıyla satın aldıkları sektör, ülke, yurt dışında yerleşik şirket veya marka odaklı rapor giderleri %50 oranında ve yıllık 3.000.000 TL'ye kadar desteklenir. Şirketler, üyesi oldukları işbirliği kuruluşunun satın aldığı raporlardan yararlanır.",
+  "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-21",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "5973 sayılı Karar yürürlüktedir; destek işbirliği kuruluşunun ön onay başvurusuyla işler, çağrıya bağlı değildir.",
+    "alinti": "Bu Karar yayımı tarihinde yürürlüğe girer.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  "basvuru_bicimi": "gider_on_onay",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "genel"
+  ],
+  "tesvil_tutari": "Rapor giderleri %50 oranında ve yıllık 3.000.000 TL'ye kadar (Karar metnindeki tutar; yıllık güncellenir). Satın alınan raporların ödeme belgesi tarihi itibarıyla en fazla 2 yıllık olması gerekir.",
+  "basvuru_yeri": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS); ön onay Bakanlığa (İhracat Genel Müdürlüğü), ödeme başvurusu incelemeci kuruluşa yapılır",
+  "basvuru_suresi": "Çağrı yoktur; rapor satın almadan önce işbirliği kuruluşu Bakanlıktan ön onay alır. Destek ödeme başvurusu, ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde incelemeci kuruluşa yapılır.",
+  "kontrol_listesi": [
+    {
+      "tur": "bilgi",
+      "metin": "Başvuru sahipleri Bakanlıkça belirlenen işbirliği kuruluşlarıdır (TİM, TOBB, DEİK, ihracatçı birlikleri, odalar, OSB'ler, sektör dernekleri vb.).",
+      "alinti": "Bu Genelge kapsamındaki desteklerden faydalanmak üzere belirlenen işbirliği kuruluşları Türkiye İhracatçılar Meclisi (TİM), Türkiye Odalar ve Borsalar Birliği (TOBB), Dış Ekonomik İlişkiler Kurulu (DEİK), İhracatçı Birlikleri,",
+      "kaynak_url": "https://ticaret.gov.tr/data/6340311b13b87692b0e3b967/26.11.2025%20Pazara%20Giri%C5%9F%20Rapor%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Pazara giriş stratejisi/eylem planı için satın alınan sektör, ülke, yurt dışı şirket veya marka odaklı rapor giderleri %50 oranında ve yıllık 3.000.000 TL'ye kadar desteklenir.",
+      "alinti": "İşbirliği kuruluşlarının yurt dışına yönelik pazara giriş stratejileri ile eylem planlarının oluşturulabilmesi ve üyesi şirketlerle paylaşılmak amacıyla satın alınan sektör, ülke, yurt dışında yerleşik şirket veya marka odaklı rapor giderleri %50 oranında ve yıllık 3.000.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Satın alınan raporların ödeme belgesi tarihi itibarıyla en fazla 2 yıllık olması gerekir.",
+      "alinti": "raporların ödeme belgesi tarihi itibarıyla en fazla 2 yıllık olması gerekir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6340311b13b87692b0e3b967/26.11.2025%20Pazara%20Giri%C5%9F%20Rapor%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "E-ticaret sitelerine üyelik ve bedelsiz temin edilebilen nitelikteki raporlara ilişkin giderler desteklenmez.",
+      "alinti": "Muhtelif kaynaklardan ve ilgili ülkedeki Bakanlık yurt dışı temsilcisi aracılığıyla bedelsiz olarak temin edilebilen nitelikteki raporlara ilişkin giderler desteklenmez.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6340311b13b87692b0e3b967/26.11.2025%20Pazara%20Giri%C5%9F%20Rapor%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "adim",
+      "metin": "Rapor desteği için Ek A'daki belgelerle Bakanlığa (İhracat Genel Müdürlüğü) başvurup ön onay almak gerekir.",
+      "alinti": "Destekten yararlanmak isteyen işbirliği kuruluşlarının, rapor desteği için EK A’da (Rapor Desteği Başvuru Belgeleri), belirtilen belgelerle birlikte Bakanlığa (İhracat Genel Müdürlüğü) başvurmaları ve ön onay almaları gerekir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6340311b13b87692b0e3b967/26.11.2025%20Pazara%20Giri%C5%9F%20Rapor%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "adim",
+      "metin": "Ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde incelemeci kuruluşa yapılır.",
+      "alinti": "ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde incelemeci kuruluşa yapılır.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6340311b13b87692b0e3b967/26.11.2025%20Pazara%20Giri%C5%9F%20Rapor%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+      "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+      "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+      "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Rapor giderleri %50, yıllık 3.000.000 TL",
+      "alinti": "İşbirliği kuruluşlarının yurt dışına yönelik pazara giriş stratejileri ile eylem planlarının oluşturulabilmesi ve üyesi şirketlerle paylaşılmak amacıyla satın alınan sektör, ülke, yurt dışında yerleşik şirket veya marka odaklı rapor giderleri %50 oranında ve yıllık 3.000.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "iddia": "Raporlar en fazla 2 yıllık olmalı",
+      "alinti": "raporların ödeme belgesi tarihi itibarıyla en fazla 2 yıllık olması gerekir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6340311b13b87692b0e3b967/26.11.2025%20Pazara%20Giri%C5%9F%20Rapor%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "iddia": "Ödeme başvurusu 6 ay içinde",
+      "alinti": "ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde incelemeci kuruluşa yapılır.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6340311b13b87692b0e3b967/26.11.2025%20Pazara%20Giri%C5%9F%20Rapor%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    }
+  ]
+}

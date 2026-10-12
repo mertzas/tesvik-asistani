@@ -36,7 +36,7 @@
 - **Kaynak:** https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/gecmis-programlar/tobb-nefes-kredisi-2020-destek-paketi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.

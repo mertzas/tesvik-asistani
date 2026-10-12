@@ -93,7 +93,7 @@ def erisilebilir(t, karar: tuple[str, str] | None, ihtiyac: str) -> bool:
     return sonuc in ("sartli", "belirlenemedi") and not not_9903.startswith(("UYGUN DEĞİL", "DÜŞÜK"))
 
 
-_KART = re.compile(r"^\*\*(.+?) — ([^*]+)\*\*", re.M)
+_KART = re.compile(r"^\*\*(.+) — ([^*—]+)\*\*", re.M)   # başlıkta " — " olabilir: ayraç sondaki
 
 
 def gosterilen_basliklar(yanit: str, adlar: set[str] = frozenset()) -> set[str]:
@@ -183,6 +183,8 @@ def _self_test() -> int:
          ("durum eşikleri", (durum(0), durum(1), durum(2)) == ("BOŞ", "İNCE", "VAR")),
          ("kart başlığı ayrıştırma", gosterilen_basliklar("**KOSGEB Ar-Ge — KOSGEB**\n- x\n**A — B**")
           == {"KOSGEB Ar-Ge", "A"}),
+         ("başlığında ayraç olan kart", gosterilen_basliklar("**Atılım Programı — Dijital Destek (m.17) — Ticaret B.**")
+          == {"Atılım Programı — Dijital Destek (m.17)"}),
          ("9903 bloğu da gösterilmiş sayılır", gosterilen_basliklar(
              "**9903 programları bölgenize göre (x):**\n- Hedef T (şartlı): katkı\n\nson", {"Hedef T", "Yok T"})
           == {"Hedef T"})]

@@ -58,7 +58,7 @@
 - **Başvuru:** KOSGEB KOBİ Bilgi Sistemi (online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi
 
 **İstihdamı Koruma Destek Programı — KOSGEB**
-- **Başvuru dönemi:** 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (20 gün kaldı). Not: Bu dönemde yalnız Finansman Desteği kapsamında başvuru alınır. (duyuru: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi, doğrulama 08.10.2026)
+- **Başvuru dönemi:** 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (19 gün kaldı). Not: Bu dönemde yalnız Finansman Desteği kapsamında başvuru alınır. (duyuru: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi, doğrulama 08.10.2026)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (imalat) bu desteğin kapsamına uygun; Faaliyet kodunuz: 13.20, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi); teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
 - **Destek:** 2026-2: kredi üst limiti KOBİ 50 Milyon TL, büyük işletme 150 Milyon TL (kredi tutarı 2026 Ocak-Haziran prime esas kazanç aylık ortalamasını geçemez); azami 6 ay ödemesiz, 36 ay vade; banka azami faizi %37 (sabit) / TLREF+1 (değişken); komisyon ≤%1; finansman desteği 12 puan, geri ödemesiz, yalnızca vergi ve SGK prim borçlarına kullanılır
 - **Profilinize göre sağlanan şartlar:** imalat faaliyeti (NACE 13.20); TTK'da tanımlı statü (limited şirket)

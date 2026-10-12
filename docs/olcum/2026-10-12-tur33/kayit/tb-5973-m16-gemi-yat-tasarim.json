@@ -1,0 +1,79 @@
+{
+  "slug": "tb-5973-m16-gemi-yat-tasarim",
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Gemi ve Yat Sektöründe Faaliyet Gösteren Şirketlere Tasarım Desteği (5973 sayılı Karar m.16)",
+  "ozet": "Gemi ve yat sektöründe faaliyet gösteren şirketlerin aldıkları tasarım hizmetine ilişkin giderleri, 5 yıl süresince %50 oranında ve yıllık 3.000.000 TL'ye kadar desteklenir.",
+  "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-16",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "5973 sayılı Karar yürürlüktedir; destek ödeme belgesi sonrası DYS başvurusuyla işler, çağrıya bağlı değildir.",
+    "alinti": "Bu Karar yayımı tarihinde yürürlüğe girer.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "genel"
+  ],
+  "tesvil_tutari": "5 yıl süresince %50 oranında ve yıllık 3.000.000 TL'ye kadar (Karar metnindeki tutar; yıllık güncellenir).",
+  "basvuru_yeri": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS); ödeme başvurusu incelemeci kuruluşa DYS üzerinden yapılır",
+  "basvuru_suresi": "Çağrı yoktur; Ek 1'de belirtilen belgelerle birlikte ödeme belgesi tarihinden itibaren en geç altı ay içerisinde incelemeci kuruluşa DYS üzerinden başvurulur.",
+  "kontrol_listesi": [
+    {
+      "tur": "kural",
+      "metin": "Gemi ve yat sektöründeki şirketlerin aldıkları tasarım hizmeti giderleri 5 yıl süresince %50 oranında ve yıllık 3.000.000 TL'ye kadar desteklenir.",
+      "alinti": "Gemi ve yat sektöründe faaliyet gösteren şirketlerin alacakları tasarım hizmetine ilişkin giderleri, 5 yıl süresince %50 oranında ve yıllık 3.000.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "adim",
+      "metin": "Ödeme başvurusu Ek 1'deki belgelerle, ödeme belgesi tarihinden itibaren en geç altı ay içinde incelemeci kuruluşa DYS üzerinden yapılır.",
+      "alinti": "Bu Genelge kapsamında şirketlerin destek ödemesinden yararlandırılabilmesi için Ek 1’de belirtilen belgelerle birlikte ödeme belgesi tarihinden itibaren en geç altı ay içerisinde incelemeci kuruluşa DYS üzerinden başvurulur.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6334204213b8769ec0647ee1/Gemi%20ve%20Yat%20Sekt%C3%B6r%C3%BCnde%20Faaliyet%20G%C3%B6steren%20%C5%9Eirketlere%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "5 yıllık destek süresi, ilk destek ödemesine esas ödeme belgesi tarihinden başlar; devam eden dönemde başvuru yapılmaması limite esas süreyi kesmez.",
+      "alinti": "5 yıllık destek süresinin hesaplanmasında, destek konusu faaliyete ilişkin ilk destek ödemesine esas teşkil eden ödeme belgesi tarihi esas alınır. Devam eden dönemde destek başvurusu yapılmamış olması, limite esas süreyi kesmez.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6334204213b8769ec0647ee1/Gemi%20ve%20Yat%20Sekt%C3%B6r%C3%BCnde%20Faaliyet%20G%C3%B6steren%20%C5%9Eirketlere%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "DYS'den istenen eksik belgeler bildirimden itibaren üç ay içinde tamamlanmazsa ilgili harcamalar destek kapsamında değerlendirilmez.",
+      "alinti": "eksik bilgi/belgelerin; şirkete bildirildiği tarihten itibaren üç ay içerisinde tamamlanmaması halinde, söz konusu harcamalar destek kapsamında değerlendirilmez.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6334204213b8769ec0647ee1/Gemi%20ve%20Yat%20Sekt%C3%B6r%C3%BCnde%20Faaliyet%20G%C3%B6steren%20%C5%9Eirketlere%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+      "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+      "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+      "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Tasarım hizmeti: 5 yıl, %50, yıllık 3.000.000 TL",
+      "alinti": "Gemi ve yat sektöründe faaliyet gösteren şirketlerin alacakları tasarım hizmetine ilişkin giderleri, 5 yıl süresince %50 oranında ve yıllık 3.000.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "iddia": "Ödeme başvurusu altı ay içinde",
+      "alinti": "Bu Genelge kapsamında şirketlerin destek ödemesinden yararlandırılabilmesi için Ek 1’de belirtilen belgelerle birlikte ödeme belgesi tarihinden itibaren en geç altı ay içerisinde incelemeci kuruluşa DYS üzerinden başvurulur.",
+      "kaynak_url": "https://ticaret.gov.tr/data/6334204213b8769ec0647ee1/Gemi%20ve%20Yat%20Sekt%C3%B6r%C3%BCnde%20Faaliyet%20G%C3%B6steren%20%C5%9Eirketlere%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    }
+  ]
+}

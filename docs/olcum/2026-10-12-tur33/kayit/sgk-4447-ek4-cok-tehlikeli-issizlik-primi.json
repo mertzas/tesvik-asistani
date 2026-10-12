@@ -1,0 +1,70 @@
+{
+  "slug": "sgk-4447-ek4-cok-tehlikeli-issizlik-primi",
+  "kurum": "SGK / İŞKUR",
+  "baslik": "Çok Tehlikeli Sınıfta Yer Alan İşyerlerinde İşsizlik Sigortası Primi İşveren Hissesi Teşviki (4447 sayılı Kanun ek madde 4)",
+  "ozet": "6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer alıp ondan fazla çalışanı bulunan ve üç yıl içinde ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmeyen işyerlerinde, işsizlik sigortası işveren hissesi teşviki bir sonraki takvim yılından geçerli olmak üzere üç yıl süreyle %1 olarak uygulanır.",
+  "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#4447-ek4-cok-tehlikeli-issizlik-primi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "SGK, bu teşviki Genel Bilgi sayfasında hâlihazırda uygulaması devam eden teşvik, destek ve indirimler arasında sayar ve Güncel Sigorta Primi Teşvik, Destek ve İndirimleri sayfasında yayımlar.",
+    "alinti": "4447 sayılı Kanun'un ek 4'üncü maddesi uyarınca çok tehlikeli sınıfta yer alıp iş kazası meydana gelmeyen işyerlerine işsizlik sigortası primi işveren hissesi teşviki,",
+    "kaynak_url": "https://www.sgk.gov.tr/Content/Post/0b871410-6c9f-4912-a744-b9742c34618b/Genel-Bilgi-2026-08-04-10-12-53"
+  },
+  "basvuru_bicimi": "bildirim_prim",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "genel"
+  ],
+  "tesvil_tutari": "İşsizlik sigortası işveren hissesi teşviki, bir sonraki takvim yılından geçerli olmak üzere ve üç yıl süreyle %1 olarak uygulanır.",
+  "basvuru_yeri": "Kaynak sayfada ayrı başvuru yeri belirtilmemiştir; yararlanma, işyerinin çok tehlikeli sınıfta yer almasına, ondan fazla çalışan bulunmasına, üç yılda ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası olmamasına ve İSG-KATİP'e kayıtlı sözleşme bulunmasına bağlıdır.",
+  "basvuru_suresi": "Teşvik bir sonraki takvim yılından geçerli olmak üzere üç yıl süreyle uygulanır; sayfada bitiş tarihi belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "İşyeri 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer almalıdır.",
+      "alinti": "İşyerinin 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer alması,",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "tur": "sart",
+      "metin": "İşverenin Türkiye genelinde çok tehlikeli sınıftaki işyerlerinde her ay toplamda ondan fazla çalışanı bulunmalıdır.",
+      "alinti": "İşverenin, Türkiye genelinde çok tehlikeli sınıfta yer alan işyerlerinde her ay toplamda ondan fazla çalışanı bulunması,",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "tur": "sart",
+      "metin": "Ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmemelidir.",
+      "alinti": "Ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmemesi,",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "tur": "sart",
+      "metin": "İSG-KATİP'e kayıtlı, onaylanmış ve devam eden iş sağlığı ve güvenliği hizmeti sözleşmesi (iş güvenliği uzmanı ve işyeri hekimi) bulunmalıdır.",
+      "alinti": "İşyerinin, İSG-KATİP’e kayıtlı onaylanmış ve devam eden iş sağlığı ve güvenliği hizmetlerinin verilmesine ilişkin, iş güvenliği uzmanı ve işyeri hekimi",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Çok tehlikeli sınıf, ondan fazla çalışan, üç yılda ölümlü/sürekli iş göremezlik kazası yok",
+      "alinti": "6331 sayılı İş Sağlığı ve Güvenliği Kanunu kapsamında çok tehlikeli sınıfta yer alıp ondan fazla çalışanı bulunan ve üç yıl içinde ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmeyen işyerlerinde,",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "iddia": "İşsizlik sigortası işveren hissesi teşviki üç yıl süreyle %1",
+      "alinti": "işsizlik sigortası işveren hissesi teşviki, bir sonraki takvim yılından geçerli olmak üzere ve üç yıl süreyle %1 olarak uygulanır.",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "iddia": "Yasal dayanak",
+      "alinti": "Yasal Dayanak: 4447 sayılı Kanun'un ek 4'üncü maddesi",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55"
+    },
+    {
+      "iddia": "SGK Genel Bilgi sayfasında hâlihazırda uygulaması devam eden teşvikler arasında sayılır",
+      "alinti": "Hâlihazırda uygulaması devam eden",
+      "kaynak_url": "https://www.sgk.gov.tr/Content/Post/0b871410-6c9f-4912-a744-b9742c34618b/Genel-Bilgi-2026-08-04-10-12-53"
+    }
+  ]
+}

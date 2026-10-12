@@ -213,3 +213,13 @@ def test_il_kisitli_program_dis_ilde_elenir_bos_bolgede_elemez(db_session):
     assert "Deprem Paketi" in _basliklar(FinancialProfile(sektor="imalat", bolge="Hatay"), db_session)
     # bölge boşsa elenmez (yalnızca "bölgenizi girin" notu düşülür)
     assert "Deprem Paketi" in _basliklar(FinancialProfile(sektor="imalat"), db_session)
+
+
+def test_sirketsiz_girisimciye_ticaret_eximbank_ktb_programlari_kapali():
+    """Kapsam ölçümü 2026-10-12: şirketi olmayan girişimciye tasarım şirketi ve Eximbank destekleri çıkıyordu."""
+    from app.matching import uygunluk_engeli
+    from app.models import FinancialProfile, Tesvik
+    p = FinancialProfile(sektor="arge", sirket_turu="yok")
+    for kurum in ("Ticaret Bakanlığı", "Türk Eximbank", "Kültür ve Turizm Bakanlığı"):
+        t = Tesvik(baslik="X Desteği", kurum=kurum, uygunluk_kriterleri={"sektorler": ["genel"]})
+        assert "kayıtlı bir işletme gerektirir" in (uygunluk_engeli(t, p) or ""), kurum

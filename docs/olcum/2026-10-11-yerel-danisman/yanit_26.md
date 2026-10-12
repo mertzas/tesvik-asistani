@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ** (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: 4 Milyon TL; %80 kefalet; başvuru ücreti 10.000 TL
-- Diğer seçenekler: TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); TURWIB PROGRAMI DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); HALKBANK İLK ADIM KREDİSİ PROJESİ (belirlenemedi).
+- Diğer seçenekler: TURWIB PROGRAMI DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) (profilinize göre engel yok — şartları teyit edin); HALKBANK İLK ADIM KREDİSİ PROJESİ (belirlenemedi).
 - 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -28,14 +28,6 @@
   - Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. — resmî metin: “Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz.”
 - **Başvuru:** Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-kadin-ve-genc-girisimci-destek-paketi
 
-**TKYB KREDİ DESTEK PAKETİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
-- **Karşıladığı ihtiyaç:** kredi/finansman
-- **Kredi ve kefalet limitleri:** Kefalet 150 Milyon TL, kredi 500 Milyon TL; kefalet oranı %80
-- **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.
-- **Başvuru:** Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi
-
 **TURWIB PROGRAMI DESTEK PAKETİ — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
@@ -44,6 +36,18 @@
 - **Kredi ve kefalet limitleri:** kayıtta yok; kurumun güncel uygulama esaslarından teyit edin
 - **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (mikro işletme); hedef kitle: kadın girişimci (profilinize göre)
 - **Başvuru:** Kredi veren banka(lar): Akbank, Denizbank, QNB Finansbank, TEB, Yapı ve Kredi Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/turwib-programi-destek-paketi
+
+**Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) — Türk Eximbank**
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Karşıladığı ihtiyaç:** kredi/finansman
+- **Destek:** Hibe değil kredi: Kadın Girişimci Belgesi'ne sahip ihracatçı firmalara TL cinsinden kullandırımlarda Eximbank'ın en uygun TL faiz oranlarıyla 3 yıla kadar vadeli kredi. Firma limitleri Eximbank'ça firma bazında belirlenir.
+- **Profilinize göre sağlanan şartlar:** hedef kitle: kadın girişimci (profilinize göre)
+- **Kurallar (kayıttan):**
+  - TL kullandırımlarda Eximbank'ın en uygun TL faiz oranlarıyla 3 yıla kadar vadeli kredi sunulur. — resmî metin: “Kadın Girişimci Belgesi’ne sahip ihracatçı firmalara, TL cinsinden kullandırımlarda Bankamızın en uygun TL faiz oranlarıyla, 3 yıla kadar vadeli kredi imkânı sunulmaktadır.”
+  - İhracat veya döviz kazandırıcı hizmet taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
+  - Firma limiti Eximbank'ın tahsis çalışmasıyla firma bazında belirlenir. — resmî metin: “Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.”
+- **Başvuru:** Türk Eximbank (en yakın Şube veya İhracat Destek Hizmetleri Merkezi); Kadın Girişimci Belgesi için TSE web başvurusu — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi
 
 **HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
@@ -69,7 +73,7 @@
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 2. Başvuru adımları (ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ): Başvuru yeri: Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları).
-3. Başvuru kanalı: ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ: Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-kadin-ve-genc-girisimci-destek-paketi | TKYB KREDİ DESTEK PAKETİ: Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi | TURWIB PROGRAMI DESTEK PAKETİ: Kredi veren banka(lar): Akbank, Denizbank, QNB Finansbank, TEB, Yapı ve Kredi Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/turwib-programi-destek-paketi.
+3. Başvuru kanalı: ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ: Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-kadin-ve-genc-girisimci-destek-paketi | TURWIB PROGRAMI DESTEK PAKETİ: Kredi veren banka(lar): Akbank, Denizbank, QNB Finansbank, TEB, Yapı ve Kredi Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/turwib-programi-destek-paketi | Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi): Türk Eximbank (en yakın Şube veya İhracat Destek Hizmetleri Merkezi); Kadın Girişimci Belgesi için TSE web başvurusu — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi.
 4. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim) · KOSGEB GAZİANTEP MÜDÜRLÜĞÜ: 0 (342) 211 15 65; Gaziantep Üniversitesi Teknopark Yerleşkesi Blok No:4/C 27260 Şahinbey/GAZİANTEP (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=27)
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 

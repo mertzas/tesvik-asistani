@@ -25,11 +25,11 @@
 
 **Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
 - TARIM KEFALET DESTEK PROGRAMI (KGF): İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi 20 Milyon TL (azami 60 ay), 12 ay ödemesiz; %80 kefalet; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Şirket ve Marka Alım Desteği (5973 sayılı Karar m.9) (Ticaret Bakanlığı): Birim kira ve paylaşımlı ofis üyeliği: birim başına yıllık 7.500.000 TL'ye kadar %50. Tanıtım ve pazarlama: %50, yurt dışı birimi bulunan ülke başına yıllık 9.500.000 TL'ye kadar; Çağrı yoktur; danışmanlık ve faiz desteği ödeme başvurusu, ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde DYS üzerinden incelemeci kuruluşa yapılır (ilgili genelge hükmüne göre (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - Sektörel Ticaret Heyeti ve Alım Heyeti Desteği (5973 sayılı Karar m.24) (Ticaret Bakanlığı): Sektörel ticaret heyeti: giderlerin %50'si, faaliyet başına 1.500.000 TL'ye kadar.; Çağrı yoktur; işbirliği kuruluşu program başlangıcından en az 1 ay önce onay başvurusu yapar, faaliyet bitiş tarihinden itibaren en geç 3 ay içinde ödeme başvurusunu iletir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Hayvancılık Destekleri (Tarım Bakanlığı): Birim tutarlar 8760 sayılı CB Kararı (2024-2026 Hayvancılık Desteklemeleri, RG 26/7/2024) ekindedir; birim tutarlar kayıtlarımızda yok, Karar ekinden teyit edin; 2026 Talimatı: büyükbaş (buzağı/malak) 1. dönem 01/09/2026–01/12/2026, 2. dönem 01/04/2027–15/06/2027; küçükbaş 3 dönem (01/09/2026–01/12/2026; 01/04/2027–15/06/2027; 01/11/2027–19/11/2027) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- 2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Programı (Öncelik 2: Ar-Ge Danışmanlığı) (Mevlana Kalkınma Ajansı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Öncelik 2 için 1 Ocak 2021 sonrası kurulmuş teknoloji tabanlı KOBİ'ler başvurabilir.); 2026 SKG TD - 5. Dönem: başvuruya açık — yeni başvuru için son gün 31.10.2026 (20 gün kaldı)
+- 2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Programı (Öncelik 2: Ar-Ge Danışmanlığı) (Mevlana Kalkınma Ajansı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Öncelik 2 için 1 Ocak 2021 sonrası kurulmuş teknoloji tabanlı KOBİ'ler başvurabilir.); 2026 SKG TD - 5. Dönem: başvuruya açık — yeni başvuru için son gün 31.10.2026 (19 gün kaldı)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (TARIM KEFALET DESTEK PROGRAMI): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.

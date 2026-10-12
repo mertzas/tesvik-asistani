@@ -1,0 +1,113 @@
+{
+  "slug": "tb-5973-m23-sanal-fuar-organizasyonu",
+  "kurum": "Ticaret Bakanlığı",
+  "baslik": "Sanal Fuar Organizasyonu Desteği (5973 sayılı Karar m.23)",
+  "ozet": "Bakanlık (İhracat Genel Müdürlüğü) tarafından uygun görülen, işbirliği kuruluşunca düzenlenen sanal fuar organizasyonuna dair giderler %50 oranında ve faaliyet başına 1.500.000 TL'ye kadar desteklenir. Şirketler, işbirliği kuruluşunun düzenlediği sanal fuara katılarak dolaylı yararlanır.",
+  "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-23",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "5973 sayılı Karar yürürlüktedir; destek işbirliği kuruluşunun Bakanlığa DYS üzerinden onay başvurusuyla işler, çağrıya bağlı değildir.",
+    "alinti": "Bu Karar yayımı tarihinde yürürlüğe girer.",
+    "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  "basvuru_bicimi": "gider_on_onay",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "genel"
+  ],
+  "tesvil_tutari": "Sanal fuar organizasyonu giderleri %50 oranında ve faaliyet başına 1.500.000 TL'ye kadar (Karar metnindeki tutar; yıllık güncellenir).",
+  "basvuru_yeri": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS); onay başvurusu Bakanlığa (İhracat Genel Müdürlüğü), destek başvurusu DYS üzerinden yapılır",
+  "basvuru_suresi": "Çağrı yoktur; işbirliği kuruluşu program başlangıç tarihinden en az 6 ay önce DYS üzerinden onay başvurusunda bulunur. Destek başvurusunu faaliyetin gerçekleşmesini müteakip 3 aylık süre içerisinde DYS üzerinden yapar.",
+  "kontrol_listesi": [
+    {
+      "tur": "bilgi",
+      "metin": "Sanal fuar organizasyonu, işbirliği kuruluşunca dijital ortamda düzenlenen ve internet üzerinden katılım sağlanan fuara yönelik organizasyondur.",
+      "alinti": "gerçekleştirilen, internet ağı üzerinde katılım sağlanan ve ziyaret edilebilen fuarlara yönelik organizasyonu,",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Destek, Bakanlıkça (İhracat Genel Müdürlüğü) uygun görülen sanal fuar organizasyonları için verilir.",
+      "alinti": "Bakanlık (İhracat Genel Müdürlüğü) tarafından uygun görülen,",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Sanal fuar organizasyonuna dair giderler %50 oranında ve faaliyet başına 1.500.000 TL'ye kadar desteklenir.",
+      "alinti": "dair giderler %50 oranında ve faaliyet başına 1.500.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Desteğe alınabilmesi için katılımcı sayısı en az 50, fuar süresince portala giriş yapacak çevrimiçi ziyaretçi sayısı en az 250 olmalıdır.",
+      "alinti": "Bir sanal fuar organizasyonunun destek kapsamına alınabilmesi için katılımcı sayısının 50’den ve fuar süresince sanal fuar portalına giriş yapacak çevrimiçi ziyaretçi sayısının da 250’den az olmaması gerekir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Yabancı ziyaretçi sayısı toplam ziyaretçi sayısının yarısından az olmamalıdır.",
+      "alinti": "Yabancı ziyaretçi sayısının, toplam ziyaretçi sayısının yarısından az olmaması gerekir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Tanıtım harcamalarının en az %80'i yurt dışına yönelik olmalıdır.",
+      "alinti": "sanal fuar organizasyonu tanıtımı kapsamındaki harcamaların en az %80’i yurt dışına yönelik olmak kaydıyla",
+      "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "adim",
+      "metin": "Onay başvurusu program başlangıcından en az 6 ay önce EK-3'teki belgelerle DYS üzerinden Bakanlığa yapılır.",
+      "alinti": "program başlangıç tarihinden en az 6 ay önce EK-3’te yer alan bilgi ve belgelerle Bakanlığa (İhracat Genel Müdürlüğü) DYS üzerinden onay başvurusunda bulunulur.",
+      "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "adim",
+      "metin": "Destek başvurusu faaliyetin gerçekleşmesini müteakip 3 aylık süre içinde DYS üzerinden yapılır.",
+      "alinti": "Kararın 22 nci ve 23 üncü maddelerinde yer alan destekler için işbirliği kuruluşlarının destek başvurularını, faaliyetin gerçekleşmesini müteakip 3 aylık süre içerisinde DYS üzerinden yapmaları gerekir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+      "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+      "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+      "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Sanal fuar organizasyonu: %50, faaliyet başına 1.500.000 TL",
+      "alinti": "dair giderler %50 oranında ve faaliyet başına 1.500.000 TL’ye kadar desteklenir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+    },
+    {
+      "iddia": "En az 50 katılımcı ve 250 çevrimiçi ziyaretçi",
+      "alinti": "Bir sanal fuar organizasyonunun destek kapsamına alınabilmesi için katılımcı sayısının 50’den ve fuar süresince sanal fuar portalına giriş yapacak çevrimiçi ziyaretçi sayısının da 250’den az olmaması gerekir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "iddia": "Onay başvurusu en az 6 ay önce",
+      "alinti": "program başlangıç tarihinden en az 6 ay önce EK-3’te yer alan bilgi ve belgelerle Bakanlığa (İhracat Genel Müdürlüğü) DYS üzerinden onay başvurusunda bulunulur.",
+      "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    },
+    {
+      "iddia": "Destek başvurusu 3 ay içinde",
+      "alinti": "Kararın 22 nci ve 23 üncü maddelerinde yer alan destekler için işbirliği kuruluşlarının destek başvurularını, faaliyetin gerçekleşmesini müteakip 3 aylık süre içerisinde DYS üzerinden yapmaları gerekir.",
+      "kaynak_url": "https://ticaret.gov.tr/data/5b868a8d13b87818a009d3b0/Fuar%20Desteklerine%20%C4%B0li%C5%9Fkin%20Genelge.pdf"
+    }
+  ]
+}

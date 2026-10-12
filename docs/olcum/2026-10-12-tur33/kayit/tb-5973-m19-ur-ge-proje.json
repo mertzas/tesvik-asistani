@@ -1,0 +1,169 @@
+{
+ "slug": "tb-5973-m19-ur-ge-proje",
+ "kurum": "Ticaret Bakanlığı",
+ "baslik": "UR-GE Proje Desteği (5973 sayılı Karar m.19)",
+ "ozet": "İşbirliği kuruluşlarının UR-GE (Uluslararası Rekabetçiliğin Geliştirilmesi) projelerine ilişkin ihtiyaç analizi, eğitim, danışmanlık ve tanıtım giderleri %75 oranında ve proje bazında 6.000.000 TL'ye kadar desteklenir. Proje kapsamındaki en fazla 2 uzman personelin istihdam giderlerinin %75'i, azami 10 yurt dışı pazarlama faaliyeti (faaliyet başına 2.500.000 TL'ye kadar) ve azami 10 alım heyeti faaliyeti (faaliyet başına 1.500.000 TL'ye kadar) %75 oranında desteklenir. UR-GE projelerinin süresi 3 yıldır; bir şirket en fazla 3 UR-GE projesinde katılımcı olabilir. Şirketler destekten işbirliği kuruluşunun projesine katılarak yararlanır.",
+ "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-19",
+ "aktif_mi": true,
+ "durum": {
+  "metin": "5973 sayılı Karar yürürlüktedir; UR-GE projeleri işbirliği kuruluşunun Bakanlığa DYS üzerinden yaptığı proje başvurusuyla işler, çağrıya bağlı değildir.",
+  "alinti": "Bu Karar yayımı tarihinde yürürlüğe girer.",
+  "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+ },
+ "basvuru_bicimi": "proje",
+ "bolge_kisitli": [],
+ "sektorler": [
+  "ihracat",
+  "genel"
+ ],
+ "tesvil_tutari": "%75 oranında: ihtiyaç analizi, eğitim, danışmanlık ve tanıtım proje bazında 6.000.000 TL'ye kadar; yurt dışı pazarlama faaliyeti başına 2.500.000 TL'ye (azami 10 adet), alım heyeti faaliyeti başına 1.500.000 TL'ye (azami 10 adet), sanal yurt dışı pazarlama faaliyeti başına 800.000 TL'ye (azami 10 adet) kadar; proje işleyişini geliştirme faaliyetleri yıllık en fazla 4.000.000 TL'ye kadar tamamı; en fazla 2 uzman personelin istihdam giderlerinin %75'i (Karar metnindeki tutar; yıllık güncellenir). Proje süresi 3 yıl, performansa göre 2 yıla kadar ilave süre verilebilir.",
+ "basvuru_yeri": "Ticaret Bakanlığı Destek Yönetim Sistemi (DYS); proje başvurusunu işbirliği kuruluşu Bakanlığa (İhracat Genel Müdürlüğü), ödeme başvurusunu incelemeci kuruluşa yapar",
+ "basvuru_suresi": "Çağrı yoktur; işbirliği kuruluşu proje başvurusunu belgelerle DYS üzerinden Bakanlığa iletir. Destek ödemesi başvuruları faaliyet bitiş tarihinden itibaren en geç 3 ay içerisinde incelemeci kuruluşa yapılır.",
+ "kontrol_listesi": [
+  {
+   "tur": "bilgi",
+   "metin": "UR-GE projesini işbirliği kuruluşları (TİM, TOBB, DEİK, ihracatçı birlikleri, odalar, OSB'ler, sektör dernekleri vb.) yürütür; şirketler üye olarak projeye katılır.",
+   "alinti": "Bu Genelge kapsamındaki desteklerden faydalanmak üzere belirlenen işbirliği kuruluşları Türkiye İhracatçılar Meclisi (TİM), Türkiye Odalar ve Borsalar Birliği (TOBB), Dış Ekonomik İlişkiler Kurulu (DEİK), İhracatçı Birlikleri,",
+   "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "İşbirliği kuruluşunun üyesi en az 10 şirketin yer aldığı proje başvuruları değerlendirilmeye alınır.",
+   "alinti": "UR-GE projeleri kapsamında işbirliği kuruluşunun üyesi en az 10 şirketin yer aldığı proje başvuruları değerlendirilmeye alınır.",
+   "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "SDŞ / ihracat konsorsiyumu olan işbirliği kuruluşlarında en az 5 şirketin katıldığı başvurular değerlendirilir (genelgede bölgesel bir alternatif de vardır).",
+   "alinti": "Sektörel Dış Ticaret Şirketi / İhracat Konsorsiyumu olması durumunda en az 5 şirketin katıldığı başvurular değerlendirmeye alınır.",
+   "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+  },
+  {
+   "tur": "sart",
+   "metin": "UR-GE projesinde yer alacak şirketlerin DYS'de yararlanıcı olarak kayıtlı olmaları zorunludur.",
+   "alinti": "UR-GE projesinde yer alacak şirketlerin DYS’de yararlanıcı olarak kayıtlı olmaları zorunludur.",
+   "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İhtiyaç analizi, eğitim, danışmanlık ve tanıtım giderleri %75 oranında ve proje bazında 6.000.000 TL'ye kadar desteklenir.",
+   "alinti": "eğitim, danışmanlık ve tanıtım faaliyetlerine yönelik giderleri %75 oranında ve proje bazında 6.000.000 TL’ye kadar desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "İşbirliği kuruluşunun istihdam ettiği en fazla 2 uzman personelin proje süresince istihdam giderlerinin %75'i desteklenir.",
+   "alinti": "faaliyetlerinin organizasyonu için işbirliği kuruluşları tarafından istihdam edilen en fazla 2 uzman personelin proje süresince yapılacak istihdam giderlerinin %75’i desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Azami 10 yurt dışı pazarlama faaliyetinde ulaşım, konaklama, tanıtım ve organizasyon giderleri faaliyet başına 2.500.000 TL'ye kadar desteklenir.",
+   "alinti": "azami 10 adet yurt dışı pazarlama faaliyetine ilişkin ulaşım, konaklama, tanıtım ve organizasyona dair giderler faaliyet başına 2.500.000 TL’ye,",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Azami 10 alım heyeti faaliyetinde giderler faaliyet başına 1.500.000 TL'ye kadar %75 oranında desteklenir.",
+   "alinti": "azami 10 adet alım heyeti faaliyetine ilişkin ulaşım, konaklama, tanıtım ve organizasyona dair giderler faaliyet başına 1.500.000 TL’ye kadar %75 oranında desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Azami 10 sanal yurt dışı pazarlama faaliyeti faaliyet başına 800.000 TL'ye kadar %75 oranında desteklenir.",
+   "alinti": "UR-GE projeleri kapsamında işbirliği kuruluşunca düzenlenecek azami 10 adet sanal yurt dışı pazarlama faaliyetine ilişkin giderleri faaliyet başına 800.000 TL’ye kadar %75 oranında desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Proje işleyişini geliştirmeye yönelik yetkilendirilmiş faaliyetlerin giderlerinin tamamı yıllık en fazla 4.000.000 TL'ye kadar desteklenir.",
+   "alinti": "UR-GE projelerinin işleyişinin geliştirilmesine yönelik Bakanlıkça faaliyet bazında yetkilendirilen işbirliği kuruluşları tarafından gerçekleştirilecek faaliyetlere ilişkin giderlerin tamamı yıllık en fazla 4.000.000 TL’ye kadar desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "UR-GE projelerinin süresi 3 yıldır; performansa göre 2 yıla kadar ilave süre verilebilir.",
+   "alinti": "UR-GE projelerinin süresi 3 yıldır. Proje süresine projenin performansına göre 2 yıla kadar ilave süre verilebilir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Bir şirket en fazla 3 UR-GE projesinde katılımcı olarak yer alabilir.",
+   "alinti": "Bu Karar kapsamında bir şirket en fazla 3",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "tur": "adim",
+   "metin": "İşbirliği kuruluşu proje başvurusunu EK-A belgeleriyle DYS üzerinden Bakanlığa (İhracat Genel Müdürlüğü) iletir.",
+   "alinti": "Başvuru Belgeleri)’da yer alan belgelerle birlikte DYS üzerinden Bakanlığa (İhracat Genel Müdürlüğü) iletir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+  },
+  {
+   "tur": "adim",
+   "metin": "Destek ödemesi başvurusu faaliyet bitiş tarihinden itibaren en geç 3 ay içinde incelemeci kuruluşa yapılır.",
+   "alinti": "Bu Genelge kapsamındaki faaliyetlere ilişkin destek ödemesi başvuruları, faaliyet bitiş tarihinden itibaren en geç 3 ay içerisinde incelemeci kuruluşa yapılır.",
+   "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Karardaki üst limitler her takvim yılı başında güncellenir; güncel tutar için Bakanlığın 'Destek Üst Limitleri' sayfasına bakılmalıdır.",
+   "alinti": "destek üst limitleri her takvim yılı başında (TÜFE + Yİ-ÜFE)/2 oranında güncellenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "tur": "bilgi",
+   "metin": "Bakanlıkça belirlenen hedef ülkelere yönelik giderlerde destek oranları 20 puana kadar artırılabilir.",
+   "alinti": "Bakanlıkça belirlenen hedef ülkelere yönelik giderler için 20 puana kadar artırılabilir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "tur": "kural",
+   "metin": "Ödenecek destek miktarı her hâlde desteğe konu giderlerin %75'ini aşamaz.",
+   "alinti": "Bu Karar kapsamında ödenecek destek miktarı, her hâlükârda desteğe konu giderlerin %75’ini aşamaz.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  }
+ ],
+ "cagrilar": [],
+ "alintilar": [
+  {
+   "iddia": "İhtiyaç analizi, eğitim, danışmanlık, tanıtım: %75, proje başına 6.000.000 TL",
+   "alinti": "eğitim, danışmanlık ve tanıtım faaliyetlerine yönelik giderleri %75 oranında ve proje bazında 6.000.000 TL’ye kadar desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "iddia": "Yurt dışı pazarlama faaliyeti başına 2.500.000 TL",
+   "alinti": "azami 10 adet yurt dışı pazarlama faaliyetine ilişkin ulaşım, konaklama, tanıtım ve organizasyona dair giderler faaliyet başına 2.500.000 TL’ye,",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "iddia": "Alım heyeti faaliyeti başına 1.500.000 TL, %75",
+   "alinti": "azami 10 adet alım heyeti faaliyetine ilişkin ulaşım, konaklama, tanıtım ve organizasyona dair giderler faaliyet başına 1.500.000 TL’ye kadar %75 oranında desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "iddia": "Proje süresi 3 yıl",
+   "alinti": "UR-GE projelerinin süresi 3 yıldır. Proje süresine projenin performansına göre 2 yıla kadar ilave süre verilebilir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "iddia": "En az 10 üye şirketli proje",
+   "alinti": "UR-GE projeleri kapsamında işbirliği kuruluşunun üyesi en az 10 şirketin yer aldığı proje başvuruları değerlendirilmeye alınır.",
+   "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+  },
+  {
+   "iddia": "Ödeme başvurusu faaliyet bitişinden en geç 3 ay",
+   "alinti": "Bu Genelge kapsamındaki faaliyetlere ilişkin destek ödemesi başvuruları, faaliyet bitiş tarihinden itibaren en geç 3 ay içerisinde incelemeci kuruluşa yapılır.",
+   "kaynak_url": "https://ticaret.gov.tr/data/63341d0f13b8769ec0647ec1/URGE%20Proje%20Deste%C4%9Fine%20%C4%B0li%C5%9Fkin%20Genelge%20%2820.04.2026%29%29.pdf"
+  },
+  {
+   "iddia": "proje işleyişini geliştirme faaliyetleri yıllık en fazla 4.000.000 TL",
+   "alinti": "tarafından gerçekleştirilecek faaliyetlere ilişkin giderlerin tamamı yıllık en fazla 4.000.000 TL’ye kadar desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  },
+  {
+   "iddia": "sanal yurt dışı pazarlama faaliyeti başına 800.000 TL, %75",
+   "alinti": "azami 10 adet sanal yurt dışı pazarlama faaliyetine ilişkin giderleri faaliyet başına 800.000 TL’ye kadar %75 oranında desteklenir.",
+   "kaynak_url": "https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf"
+  }
+ ]
+}

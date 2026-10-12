@@ -1,0 +1,91 @@
+{
+  "slug": "eximbank-reeskont-kredisi",
+  "kurum": "Türk Eximbank",
+  "baslik": "Türk Eximbank Reeskont Kredisi (TCMB işbirliğiyle, TL/Döviz)",
+  "ozet": "Reeskont Kredisi, mal ve döviz kazandırıcı hizmet ihracatında bulunan firmalar için TCMB ile işbirliği içerisinde, Eximbank'a tanınan limit çerçevesinde kullandırılan TL/Döviz kredi programıdır. Faiz tutarı kullandırım bedelinden iskonto edilir, kalan tutar TL olarak firma hesabına aktarılır; geri ödeme vade gününde tek seferde yapılır. İhracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.",
+  "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Eximbank'ın güncel internet sitesinde kredi programı olarak yayınlanmaktadır; dönemsel çağrıya bağlı değildir ve sayfada kapanış tarihi belirtilmemiştir.",
+    "alinti": "Mal ve döviz kazandırıcı hizmet ihracatında bulunan firmalarımız için uygun maliyetli finansman sağlanması amacıyla, TCMB ile işbirliği içerisinde, Bankamıza tanınan limit çerçevesinde kullandırılan TL/Döviz Kredisi programıdır.",
+    "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+  },
+  "basvuru_bicimi": "kredi",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "imalat",
+    "hizmet"
+  ],
+  "tesvil_tutari": "Hibe değil kredi: faiz tutarı kullandırım bedelinden iskonto edilir, kalan tutar TL olarak firma hesabına aktarılır. Firma limitleri Eximbank'ça tahsis çalışmasıyla firma bazında belirlenir; faiz oranları döviz cinsi ve vade bazında değişir.",
+  "basvuru_yeri": "Türk Eximbank (kaynak sayfada başvuru kanalı ayrıca belirtilmemiştir; Kredi Talep Formu ve teminat belgeleri Bankaya sunulur)",
+  "basvuru_suresi": "Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "İhracata yönelik mal üreten imalatçılar, döviz kazandırıcı hizmet ihracı yapan firmalar ve tüm ihracatçılar yararlanır.",
+      "alinti": "İhracata yönelik mal üreten imalatçılarımız, döviz kazandırıcı hizmet ihracı yapan firmalarımız ve tüm ihracatçılarımız.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "İhracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.",
+      "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Firma limiti Eximbank'ın tahsis çalışmasıyla firma bazında belirlenir.",
+      "alinti": "Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Teminat: Avalsiz Bono ile birlikte Kesin Teminat Mektubu, Avalli Bono veya İGE kefaleti.",
+      "alinti": "Avalsiz Bono ile birlikte Kesin Teminat Mektubu, Avalli Bono, İhracatı Geliştirme A.Ş.’nin (İGE) kefaleti karşılığında kullandırılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+    },
+    {
+      "tur": "kural",
+      "metin": "Faiz tutarı kullandırım bedelinden iskonto edilir; geri ödeme vade gününde tek seferde, kullandırım para birimi üzerinden yapılır.",
+      "alinti": "Kredi geri ödemesi; vade gününde, tek seferde, kullandırım para birimi üzerinden yapılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "Kredi Talep Formu ile banka avalli bono veya kesin teminat mektubu ve avalsiz bono.",
+      "alinti": "Kredi Talep Formu Banka Avalini taşıyan Bono* veya Kesin Teminat Mektubu* ile birlikte avalsiz Bono",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+    },
+    {
+      "tur": "belge",
+      "metin": "İlk kez başvuracak firmalar mali analiz ve istihbarat çalışması için istenen bilgi ve belgeleri de sunar.",
+      "alinti": "İlk kez başvuruda bulunacak firmalar için bu belgelerin yanı sıra firma mali analizi ve istihbarat çalışması için talep edilen bilgi ve belgeleri Bankamıza sunmaları,",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "Faiz oranları döviz cinsi ve vade bazında değişir; güncel oranlar Eximbank'ın faiz ve kar payı oranları bölümünde yayınlanır.",
+      "alinti": "Reeskont kredisi faiz oranları döviz cinsi ve vade bazında değişmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "Faiz tutarı kullandırım bedelinden iskonto edilir",
+      "alinti": "Faiz tutarı, kullandırım bedelinden iskonto edilir; kalan tutar TL olarak firma hesabına aktarılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+    },
+    {
+      "iddia": "Taahhüt vadesi kredi kullanım tarihinden itibaren 24 ay",
+      "alinti": "Kredi konusu ihracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içerisinde gerçekleştirilen ihracatla veya döviz kazandırıcı hizmet gelirleriyle kapatılır.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+    },
+    {
+      "iddia": "Firma limiti firma bazında belirlenir",
+      "alinti": "Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.",
+      "kaynak_url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/reeskont-kredisi"
+    }
+  ]
+}

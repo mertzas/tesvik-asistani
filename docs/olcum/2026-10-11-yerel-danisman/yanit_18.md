@@ -1,7 +1,7 @@
 <!-- persona: tekstil | soru: 1501'e başvurmak istiyoruz; kuruluş ön kaydı için kaç günümüz kaldı? -->
 **Kısa cevap:**
 - **1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı** (TUBITAK)
-- Başvuru: 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (11 gün kaldı); başvuru kapanışı 26.10.2026 (15 gün kaldı).
+- Başvuru: 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (10 gün kaldı); başvuru kapanışı 26.10.2026 (14 gün kaldı).
 - Sizin için: profilinize göre engel yok — şartları teyit edin.
 - Dikkat (çağrı notu): Kapanış 26.10.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 22.10.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı.
 
@@ -15,7 +15,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı — TUBITAK**
-- **Başvuru dönemi:** 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (11 gün kaldı); başvuru kapanışı 26.10.2026 (15 gün kaldı). Not: Kapanış 26.10.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 22.10.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı. (duyuru: https://tubitak.gov.tr/sites/default/files/2026-07/1501_Sanayi_Ar-Ge_Destek_Programi_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf, doğrulama 08.10.2026)
+- **Başvuru dönemi:** 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (10 gün kaldı); başvuru kapanışı 26.10.2026 (14 gün kaldı). Not: Kapanış 26.10.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 22.10.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı. (duyuru: https://tubitak.gov.tr/sites/default/files/2026-07/1501_Sanayi_Ar-Ge_Destek_Programi_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf, doğrulama 08.10.2026)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
 - **Kapsam:** yalnız KOBİ'ler
 - **Destek:** Hibe: ilk 5 proje %75 (en fazla 20 M TL/proje), 6. ve sonrası %60 (en fazla 20 M TL); süre ≤36 ay
@@ -28,10 +28,10 @@
 - **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Sektörel Ticaret Heyeti ve Alım Heyeti Desteği (5973 sayılı Karar m.24) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; işbirliği kuruluşu program başlangıcından en az 1 ay önce onay başvurusu yapar, faaliyet bitiş tarihinden itibaren en geç 3 ay içinde ödeme başvurusunu iletir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Hizmet Sektörleri Atılım Programı — Heyet Desteği (10962 sayılı Karar m.9) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; heyetin başlangıcından en az iki ay önce ön onay başvurusu yapılır, destek başvurusu heyetin bitiş tarihinden itibaren altı ay içinde yapılır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **Ön kayıt:** 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı için yeni başvuranın ön kayıt son günü 22.10.2026 (11 gün).
+- **Ön kayıt:** 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı için yeni başvuranın ön kayıt son günü 22.10.2026 (10 gün).
 - **1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı:** Başvuru yeri: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
 
 ### 4. Adım Adım Yol Haritası

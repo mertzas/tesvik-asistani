@@ -1,5 +1,5 @@
 PERSONA: null
-BUGÜN: 2026-10-11
+BUGÜN: 2026-10-12
 SORU: TKDK IPARD hibesi nedir, kimler başvurabilir?
 ============================================================
 KAYIT 243

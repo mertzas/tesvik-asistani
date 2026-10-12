@@ -1,13 +1,12 @@
 <!-- persona: restoran | soru: Restoranıma 3 kişi daha alacağım; 4447 sayılı Kanun işveren prim teşviki kaç ay sürer, şartları neler? -->
 **Kısa cevap:**
-- **Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde)** (SGK / İŞKUR)
-- Destek: İşveren SGK prim payı, kişi başı aylık 7.184,03–64.656,23 TL (2026; prime esas kazancın alt ve üst sınırı arası), 6–54 ay
-- Süre (kayıttan): Destek süreleri: 18 yaş ve üzeri kadınlar 24–54 ay; 18-29 yaş erkekler 24–54 ay; 29 yaş ve üzeri erkekler 6–30 ay; çalışmakta iken 01.03.2011 sonrası mesleki yeterlilik belgesi alanlar / mesleki-teknik eğitimi tamamlayanlar / işgücü yetiştirme kurslarını bitirenler 12 ay. Süre kadın/genç/mesleki belge durumuna göre 6–54 ay; İŞKUR kaydı +6 ay.
-- Sizin için: profilinize göre engel yok — şartları teyit edin; başlıca şart: İşe alınan kişinin son 6 aydır işsiz olması.
-- Başvuru: Sürekli; 31.12.2026 tarihine kadar (81 gün kaldı) yapılan işe alımlar için (kayıttan; güncel çağrıyı kurumdan teyit edin).
-- Program: 31.12.2026 tarihine kadar işsiz kişileri ilave olarak istihdam eden özel sektör işverenlerinin, prime esas kazanç üst sınırına kadarki sigorta primi işveren paylarının İşsizlik Sigortası Fonu'ndan karşılandığı teşvik. Süre kadın/genç/mesleki belge durumuna göre 6–54 ay; İŞKUR kaydı +6 ay.
-- Kimler başvurabilir (kayıttaki şartlar): İşe alınan kişinin son 6 aydır işsiz olması; Kişinin, işe alındığı tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına İLAVE olarak istihdam edilmesi; Özel sektör işvereni olmak.
-- Adıyla eşleşen diğer kayıtlar: İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5) (profilinize göre engel yok — şartları teyit edin).
+- **Çok Tehlikeli Sınıfta Yer Alan İşyerlerinde İşsizlik Sigortası Primi İşveren Hissesi Teşviki (4447 sayılı Kanun ek madde 4)** (SGK / İŞKUR)
+- Destek: İşsizlik sigortası işveren hissesi teşviki, bir sonraki takvim yılından geçerli olmak üzere ve üç yıl süreyle %1 olarak uygulanır.
+- Sizin için: profilinize göre engel yok — şartları teyit edin; başlıca şart: İşyeri 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer almalıdır..
+- Başvuru: Teşvik bir sonraki takvim yılından geçerli olmak üzere üç yıl süreyle uygulanır; sayfada bitiş tarihi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Program: 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer alıp ondan fazla çalışanı bulunan ve üç yıl içinde ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmeyen işyerlerinde, işsizlik sigortası işveren hissesi teşviki bir sonraki takvim yılından geçerli olmak üzere üç yıl süreyle […]
+- Kimler başvurabilir (kayıttaki şartlar): İşyeri 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer almalıdır; İşverenin Türkiye genelinde çok tehlikeli sınıftaki işyerlerinde her ay toplamda ondan fazla çalışanı bulunmalıdır; Ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmemelidir.
+- Adıyla eşleşen diğer kayıtlar: Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde) (profilinize göre engel yok — şartları teyit edin); İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5) (profilinize göre engel yok — şartları teyit edin).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: hizmet (NACE 56.10)
@@ -19,8 +18,19 @@
 
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
+**Çok Tehlikeli Sınıfta Yer Alan İşyerlerinde İşsizlik Sigortası Primi İşveren Hissesi Teşviki (4447 sayılı Kanun ek madde 4) — SGK / İŞKUR**
+- **Başvuru dönemi:** Teşvik bir sonraki takvim yılından geçerli olmak üzere üç yıl süreyle uygulanır; sayfada bitiş tarihi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Destek:** İşsizlik sigortası işveren hissesi teşviki, bir sonraki takvim yılından geçerli olmak üzere ve üç yıl süreyle %1 olarak uygulanır.
+- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ İşyeri 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer almalıdır. — resmî metin: “İşyerinin 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer alması,”
+  - ☐ İşverenin Türkiye genelinde çok tehlikeli sınıftaki işyerlerinde her ay toplamda ondan fazla çalışanı bulunmalıdır. — resmî metin: “İşverenin, Türkiye genelinde çok tehlikeli sınıfta yer alan işyerlerinde her ay toplamda ondan fazla çalışanı bulunması,”
+  - ☐ Ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmemelidir. — resmî metin: “Ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmemesi,”
+  - ☐ İSG-KATİP'e kayıtlı, onaylanmış ve devam eden iş sağlığı ve güvenliği hizmeti sözleşmesi (iş güvenliği uzmanı ve işyeri hekimi) bulunmalıdır. — resmî metin: “İşyerinin, İSG-KATİP’e kayıtlı onaylanmış ve devam eden iş sağlığı ve güvenliği hizmetlerinin verilmesine ilişkin, iş güvenliği uzmanı ve işyeri hekimi”
+- **Başvuru:** Kaynak sayfada ayrı başvuru yeri belirtilmemiştir; yararlanma, işyerinin çok tehlikeli sınıfta yer almasına, ondan fazla çalışan bulunmasına, üç yılda ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası olmamasına ve İSG-KATİP'e kayıtlı sözleşme bulunmasına bağlıdır. — https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#4447-ek4-cok-tehlikeli-issizlik-primi
+
 **Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde) — SGK / İŞKUR**
-- **Başvuru dönemi:** Sürekli; 31.12.2026 tarihine kadar (81 gün kaldı) yapılan işe alımlar için (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Sürekli; 31.12.2026 tarihine kadar (80 gün kaldı) yapılan işe alımlar için (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: istihdam.
 - **Karşıladığı ihtiyaç:** istihdam
 - **Destek:** İşveren SGK prim payı, kişi başı aylık 7.184,03–64.656,23 TL (2026; prime esas kazancın alt ve üst sınırı arası), 6–54 ay
@@ -50,18 +60,18 @@
 - Engelli Sigortalı İstihdamına Yönelik Sigorta Primi İşveren Hissesi Teşviki (4857 sayılı Kanun) (SGK / İŞKUR) — profilinize göre engel yok — şartları teyit edin; 01.07.2008 tarihinden itibaren uygulanmaktadır; sayfada bitiş tarihi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
+- **Çok Tehlikeli Sınıfta Yer Alan İşyerlerinde İşsizlik Sigortası Primi İşveren Hissesi Teşviki (4447 sayılı Kanun ek madde 4):** İSG-KATİP'e kayıtlı, onaylanmış ve devam eden iş sağlığı ve güvenliği hizmeti sözleşmesi (iş güvenliği uzmanı ve işyeri hekimi) bulunmalıdır.
+- **Çok Tehlikeli Sınıfta Yer Alan İşyerlerinde İşsizlik Sigortası Primi İşveren Hissesi Teşviki (4447 sayılı Kanun ek madde 4):** Başvuru yeri: Kaynak sayfada ayrı başvuru yeri belirtilmemiştir; yararlanma, işyerinin çok tehlikeli sınıfta yer almasına, ondan fazla çalışan bulunmasına, üç yılda ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası olmamasına ve İSG-KATİP'e kayıtlı sözleşme bulunmasına bağlıdır.
 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-2. Başvuru adımları (Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde)): SGK e-Bildirge üzerinden teşvik kodu ile bildirim; Başvuru yeri: SGK (e-Bildirge) — uygulayıcı kurum; bilgi: İŞKUR il müdürlükleri.
-3. Başvuru kanalı: Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde): SGK (e-Bildirge) — uygulayıcı kurum; bilgi: İŞKUR il müdürlükleri — https://www.iskur.gov.tr/isveren/tesvikler/kadin-genc-ve-mesleki-yeterlilik-belgesi-olanlarin-tesviki/.
+2. Başvuru adımları (Çok Tehlikeli Sınıfta Yer Alan İşyerlerinde İşsizlik Sigortası Primi İşveren Hissesi Teşviki (4447 sayılı Kanun ek madde 4)): Başvuru yeri: Kaynak sayfada ayrı başvuru yeri belirtilmemiştir; yararlanma, işyerinin çok tehlikeli sınıfta yer almasına, ondan fazla çalışan bulunmasına, üç yılda ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası olmamasına ve İSG-KATİP'e kayıtlı sözleşme bulunmasına bağlıdır..
+3. Başvuru kanalı: Çok Tehlikeli Sınıfta Yer Alan İşyerlerinde İşsizlik Sigortası Primi İşveren Hissesi Teşviki (4447 sayılı Kanun ek madde 4): Kaynak sayfada ayrı başvuru yeri belirtilmemiştir; yararlanma, işyerinin çok tehlikeli sınıfta yer almasına, ondan fazla çalışan … — https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#4447-ek4-cok-tehlikeli-issizlik-primi.
 4. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. İşe alacağınız kişilerin cinsiyeti, yaşı, mesleki belgesi ve İŞKUR kaydı var mı? — destek süresi bunlara göre değişir (kayıttaki süre kırılımı kısa cevapta).
-2. Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde): “İşe alınan kişinin son 6 aydır işsiz olması” şartını sağlıyor musunuz?
-3. Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde): “Kişinin, işe alındığı tarihten önceki son 6 ayın ortalama sigortalı çalışan sayısına İLAVE olarak istihdam edilmesi” şartını sağlıyor musunuz?
+1. Çok Tehlikeli Sınıfta Yer Alan İşyerlerinde İşsizlik Sigortası Primi İşveren Hissesi Teşviki (4447 sayılı Kanun ek madde 4): “İşyeri 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer almalıdır.” şartını sağlıyor musunuz?
+2. Çok Tehlikeli Sınıfta Yer Alan İşyerlerinde İşsizlik Sigortası Primi İşveren Hissesi Teşviki (4447 sayılı Kanun ek madde 4): “İşverenin Türkiye genelinde çok tehlikeli sınıftaki işyerlerinde her ay toplamda ondan fazla çalışanı bulunmalıdır.” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

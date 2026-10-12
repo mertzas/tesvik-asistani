@@ -27,7 +27,7 @@
 - **Başvuru:** KOSGEB e-Hizmetler (e-Devlet şifresi ile online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/1231/girisimci-destek-programi
 
 **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) — TUBITAK**
-- **Başvuru dönemi:** 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı: başvuruya açık — bu çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS) — ön kayıt son günü 17.11.2026 (37 gün kaldı); başvuru kapanışı 20.11.2026 (40 gün kaldı). Not: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS). (duyuru: https://tubitak.gov.tr/sites/default/files/2026-08/2026_1_BIGG_Tohum_Yatirim_Cagri_Duyuru_Metni.pdf, doğrulama 10.10.2026)
+- **Başvuru dönemi:** 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı: başvuruya açık — bu çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS) — ön kayıt son günü 17.11.2026 (36 gün kaldı); başvuru kapanışı 20.11.2026 (39 gün kaldı). Not: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS). (duyuru: https://tubitak.gov.tr/sites/default/files/2026-08/2026_1_BIGG_Tohum_Yatirim_Cagri_Duyuru_Metni.pdf, doğrulama 10.10.2026)
 - **Durum:** Belirlenemedi — profiliniz olmadığı için uygunluk değerlendirilemedi.
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
 - **Son bilinen tutar (önceki program, bilgi için):** BiGG Fonu hisse karşılığı yatırım: 1.350.000 TL (2026); +600.000 TL GCİP ek yatırım imkânı (2025'ten itibaren) (son bilinen tutar, önceki program 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) kaydından; 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) için güncel tutarı kurumdan teyit edin)
@@ -53,8 +53,8 @@
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - Yapay Zekâ Kredi Programı (KOSGEB) — belirlenemedi (kurulu işletme ister (KOBİ kaydı, rozet, teminat ya da ciro şartı); şirket kurulduktan sonra değerlendirilir); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17) (Ticaret Bakanlığı) — belirlenemedi (profiliniz olmadığı için uygunluk değerlendirilemedi); Çağrı yoktur; ödeme gerçekleştikten sonra, ödeme belgesi tarihinden itibaren altı ay içinde destek başvurusu yapılır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) (Ticaret Bakanlığı) — belirlenemedi (kurulu işletme ister (KOBİ kaydı, rozet, teminat ya da ciro şartı); şirket kurulduktan sonra değerlendirilir); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (Ticaret Bakanlığı) — belirlenemedi (kurulu işletme ister (KOBİ kaydı, rozet, teminat ya da ciro şartı); şirket kurulduktan sonra değerlendirilir); Ödeme belgesi tarihinden itibaren 6 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Şu an başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı

@@ -1,9 +1,9 @@
 <!-- persona: kayseri_mobilya | soru: Üretimi dijitalleştirmek (ERP, makinelere sensör) için hibe var mı? -->
 **Kısa cevap:**
 - Öne çıkan: **KOBİ Dijital Dönüşüm Destek Programı** (KOSGEB) (hibe değil: faiz desteği) — profilinize göre engel yok — şartları teyit edin; başlıca şart: KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmak (KOSGEB sınıflandırmasında küçük veya orta ölçekli olmak; mikro ölçekliler başvuramaz); Sürekli açık başvuru (24 aylık program süresi içinde kullanım gerekir) (kayıttan; güncel çağrıyı kurumdan teyit edin).
-- Hibe (geri ödemesiz) tarafı: YÖNDE - Yönderlik ve Değerlendirme Destek Programı — profilinize göre engel yok — şartları teyit edin.
+- Hibe (geri ödemesiz): sorduğunuz gider kalemi için kayıtlı hibe yok; geri ödemesiz yakın seçenek YÖNDE - Yönderlik ve Değerlendirme Destek Programı farklı bir gideri karşılar: %100 geri ödemesiz; program üst limiti toplam 700.000 TL; program süresi 36 ay.
 - Kredi koşulları (hibe değil): ₺1.000.000 - ₺20.000.000 kredi (faiz desteği geri ödemesiz)
-- Diğer seçenekler: YÖNDE - Yönderlik ve Değerlendirme Destek Programı (profilinize göre engel yok — şartları teyit edin); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (profilinize göre engel yok — şartları teyit edin); YATIRIM-İŞLETME DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (profilinize göre engel yok — şartları teyit edin); YATIRIM-İŞLETME DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); YÖNDE - Yönderlik ve Değerlendirme Destek Programı (profilinize göre engel yok — şartları teyit edin).
 - 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -32,22 +32,6 @@
   - EBRD'nin 'Uygun Bulunmayan Sektör ve Faaliyetler Tablosu'ndaki sektörlerde faaliyet gösterenler başvuramaz — resmî metin: “Kredi Kaynağı sağlayan kuruluş (EBRD) tarafından belirlenen”
 - **Başvuru:** KOSGEB KOBİ Bilgi Sistemi (online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi
 
-**YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB**
-- **Başvuru dönemi:** Sayfada başvuru dönemi belirtilmemiştir. Başvurular en geç 15 gün içinde kontrol edilir; destek, başvurunun KOSGEB'ce onaylandığı tarihte başlar.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: dijital.
-- **Karşıladığı ihtiyaç:** dijital dönüşüm
-- **Destek:** %100 geri ödemesiz; program üst limiti toplam 700.000 TL; program süresi 36 ay. Hizmet başına/toplam üst limit: Dijital Dönüşüm Değerlendirme Analizi ve Yol Haritası 20.000/40.000 TL, Sürdürülebilirlik Raporlaması 100.000/200.000 TL, Yalın Olgunluk Değerlendirme Analizi (YODA) 20.000/40.000 TL, Bağımsız Değerlendirme 150.000/450.000 TL. Yazılım veya donanım alımı değil, belgeli danışmandan alınan hizmet desteklenir.
-- **Profilinize göre sağlanan şartlar:** TTK'da tanımlı statü (limited şirket)
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması — resmî metin: “KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması”
-  - ☐ Dijital Dönüşüm desteği için hizmeti TÜSSİDE belgeli dijital dönüşüm danışmanından al (en fazla 2 kez, iki hizmet arası en az 1 yıl) — resmî metin: “İşletme bu destekten en fazla 2 defa yararlanabilir; iki hizmet arasında en az 1 yıl süre olmalıdır.”
-  - ☐ Sürdürülebilirlik Raporlaması: rapor TSRS'ye uygun olmalı ve güvence denetimi bağımsız denetim kuruluşunca yapılmalı (en fazla 2 rapor) — resmî metin: “Sürdürülebilirlik raporunun güvence denetimi bir bağımsız denetim kuruluşu tarafından yapılmalıdır.”
-  - ☐ YODA desteği için hizmeti Bakanlıkça bildirilen yalın dönüşüm danışmanından al; ikinci yararlanma için ilk raporda önerilen model fabrika hizmetleri tamamlanmış olmalı — resmî metin: “İkinci defa yararlanmak için ilk YODA raporunda önerilen model fabrika hizmetlerinin tamamlanmış olması şarttır.”
-  - ☐ Bağımsız Değerlendirme desteği yalnız Teknoloji Odaklı Sanayi Hamlesi çağrı planındaki ürünlerin proje başvuruları içindir; rapor Bakanlıkça ilan edilen Bağımsız Danışmanlık Firmasından alınmalı — resmî metin: “Bağımsız Değerlendirme Raporu Bakanlık tarafından ilan edilen Bağımsız Danışmanlık Firmaları tarafından hazırlanır.”
-- **Kurallar (kayıttan):**
-  - Ödemeler (katkı payı dahil) banka, PTTBank veya ödeme kuruluşu üzerinden yapılmalı; ödeme talebi program bitiminden en geç 4 ay sonra yapılmalı — resmî metin: “Destek ödeme talebi, en geç programın tamamlanma tarihinden 4 ay sonrasına kadar yapılmalıdır.”
-- **Başvuru:** KOSGEB sistemi (www.kosgeb.gov.tr) üzerinden YÖNDE başvuru formu ile — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9165/yonde-yonderlik-ve-degerlendirme-destek-programi
-
 **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı**
 - **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Karar metnine göre ön değerlendirme: UYGUN GÖRÜNÜYOR — NACE 31.01, EK-3'te '31 Mobilya imalatı 31.00.06 ve 31.00.09 hariç' kalemine giriyor (MADDE 5/1, 10).
@@ -63,8 +47,21 @@
   - Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi). — resmî metin: “diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.”
 - **Başvuru:** Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#hedef-yatirimlar
 
+**YATIRIM-İŞLETME DESTEK PAKETİ — KGF**
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Faaliyet kodunuz: 31.01, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi); Belirttiğiniz hedeflerle eşleşiyor: makine alımı.
+- **Kapsam:** yalnız KOBİ'ler
+- **Karşıladığı ihtiyaç:** makine/tesis yatırımı
+- **Kredi ve kefalet limitleri:** Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
+- **Profilinize göre sağlanan şartlar:** imalat faaliyeti (NACE 31.01)
+- **Kurallar (kayıttan):**
+  - Bu paket kapsamındaki krediler kıymetli maden ve döviz alımında, kefaletin sağlandığı kredi veren dışında vadeli mevduat ve diğer yüksek riskli finansal araçlarda, refinansman amacıyla kullanılamaz.
+  - Paket kapsamında arsa ve bina yatırımlarına kefalet sağlanmaz. Ancak, arsa ve bina yatırımlarına makine yatırımı ile birlikte yapılması halinde kefalet sağlanabilecektir. — resmî metin: “Paket kapsamında arsa ve bina yatırımlarına kefalet sağlanmaz. Ancak, arsa ve bina yatırımlarına makine yatırımı ile birlikte yapılması halinde kefalet sağlanabilecektir.”
+  - Kredi kartı ürünü nakit çekime kapalı olacaktır. — resmî metin: “Kredi kartı ürünü nakit çekime kapalı olacaktır.”
+- **Başvuru:** Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, TEB, Şekerbank, Anadolubank, ING Bank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi
+
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- YATIRIM-İŞLETME DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
+- YÖNDE - Yönderlik ve Değerlendirme Destek Programı (KOSGEB) — profilinize göre engel yok — şartları teyit edin; Sayfada başvuru dönemi belirtilmemiştir. Başvurular en geç 15 gün içinde kontrol edilir; destek, başvurunun KOSGEB'ce onaylandığı tarihte başlar.
 - 2024 Dijital Dönüşüm Destek Paketi (KGF) — profilinize göre engel yok — şartları teyit edin; Önce KOSGEB KOBİ Dijital Dönüşüm Destek Programı başvurusunun KOSGEB'ce onaylanması gerekir (KGF ürün sayfası, Özel Şartlar); KOSGEB başvuruları dönemsel çağrıyla alınır.
 - Yapay Zekâ Kredi Programı (KOSGEB) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
 
@@ -82,11 +79,10 @@
 Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik Yatırımların Teşviki) 9903 sayılı Karar ile yürürlükten kalkmıştır; bu eski sistemlere başvurulamaz.
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (KOBİ Dijital Dönüşüm Destek Programı, YÖNDE - Yönderlik ve Değerlendirme Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
+- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (KOBİ Dijital Dönüşüm Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **Kayıtlı elektronik posta (KEP) adresi** (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Şirket adına bir KEP hizmet sağlayıcısından KEP adresi alın.
 - **Yatırım teşvik belgesi** (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Yatırıma başlamadan önce Sanayi ve Teknoloji Bakanlığı E-TUYS üzerinden belge başvurusu.
 - **KOBİ Dijital Dönüşüm Destek Programı:** KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmak (KOSGEB sınıflandırmasında küçük veya orta ölçekli olmak; mikro ölçekliler başvuramaz)
-- **YÖNDE - Yönderlik ve Değerlendirme Destek Programı:** KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması
 - **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar):** Teşvik belgesi müracaatımı E-TUYS üzerinden
 - **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar):** Başvuru yeri: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)
 

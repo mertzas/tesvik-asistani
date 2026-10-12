@@ -1,6 +1,6 @@
 # Kapsam matrisi (2026-10-12)
 
-468 hücre (7 sektör × 12 il × ihtiyaç). Kayıt düzeyi: VAR 444, İNCE 1, BOŞ 23. Ürün düzeyi (yanıtta engelsiz, açık ve ihtiyaca uygun bir program kartı): 434/468. Süre 279 sn.
+468 hücre (7 sektör × 12 il × ihtiyaç). Kayıt düzeyi: VAR 432, İNCE 13, BOŞ 23. Ürün düzeyi (yanıtta engelsiz, açık ve ihtiyaca uygun bir program kartı): 434/468. Süre 281 sn.
 
 Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak gösteriyor, ✗ = göstermiyor).
 
@@ -8,18 +8,18 @@ Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak göster
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 4 ✓ | 19 ✓ | 47 ✓ | 10 ✓ | 14 ✓ | 27 ✓ |
-| Ankara | 4 ✓ | 19 ✓ | 47 ✓ | 10 ✓ | 14 ✓ | 27 ✓ |
-| İzmir | 4 ✓ | 19 ✓ | 47 ✓ | 10 ✓ | 14 ✓ | 27 ✓ |
-| Bursa | 4 ✓ | 19 ✓ | 47 ✓ | 10 ✓ | 14 ✓ | 27 ✓ |
-| Konya | 4 ✓ | 20 ✓ | 48 ✓ | 10 ✓ | 14 ✓ | 27 ✓ |
-| Antalya | 4 ✓ | 19 ✓ | 47 ✓ | 10 ✓ | 14 ✓ | 27 ✓ |
-| Gaziantep | 4 ✓ | 19 ✓ | 47 ✓ | 10 ✓ | 14 ✓ | 27 ✓ |
-| Trabzon | 4 ✓ | 19 ✓ | 47 ✓ | 10 ✓ | 14 ✓ | 27 ✓ |
-| Van | 4 ✓ | 19 ✓ | 47 ✓ | 10 ✓ | 14 ✓ | 27 ✓ |
-| Diyarbakır | 4 ✓ | 19 ✓ | 47 ✓ | 10 ✓ | 14 ✓ | 28 ✓ |
-| Edirne | 4 ✓ | 19 ✓ | 47 ✓ | 10 ✓ | 14 ✓ | 27 ✓ |
-| Balıkesir | 4 ✓ | 19 ✓ | 47 ✓ | 10 ✓ | 14 ✓ | 27 ✓ |
+| İstanbul | 4 ✓ | 14 ✓ | 47 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
+| Ankara | 4 ✓ | 14 ✓ | 47 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
+| İzmir | 4 ✓ | 14 ✓ | 47 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
+| Bursa | 4 ✓ | 14 ✓ | 47 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
+| Konya | 4 ✓ | 15 ✓ | 48 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
+| Antalya | 4 ✓ | 14 ✓ | 47 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
+| Gaziantep | 4 ✓ | 14 ✓ | 47 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
+| Trabzon | 4 ✓ | 14 ✓ | 47 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
+| Van | 4 ✓ | 14 ✓ | 47 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
+| Diyarbakır | 4 ✓ | 14 ✓ | 47 ✓ | 9 ✓ | 14 ✓ | 27 ✓ |
+| Edirne | 4 ✓ | 14 ✓ | 47 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
+| Balıkesir | 4 ✓ | 14 ✓ | 47 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
 
 ## imalat
 
@@ -42,69 +42,69 @@ Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak göster
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 3 ✓ | 25 ✓ | 66 ✓ | 10 ✓ | 18 ✓ | 26 ✓ |
-| Ankara | 3 ✓ | 25 ✓ | 66 ✓ | 10 ✓ | 18 ✓ | 26 ✓ |
-| İzmir | 3 ✓ | 25 ✓ | 66 ✓ | 10 ✓ | 18 ✓ | 26 ✓ |
-| Bursa | 3 ✓ | 25 ✓ | 66 ✓ | 10 ✓ | 18 ✓ | 26 ✓ |
-| Konya | 3 ✓ | 26 ✓ | 66 ✓ | 10 ✓ | 18 ✓ | 26 ✓ |
-| Antalya | 3 ✓ | 25 ✓ | 66 ✓ | 10 ✓ | 18 ✓ | 25 ✓ |
-| Gaziantep | 3 ✓ | 25 ✓ | 66 ✓ | 10 ✓ | 18 ✓ | 26 ✓ |
-| Trabzon | 3 ✓ | 25 ✓ | 66 ✓ | 10 ✓ | 18 ✓ | 25 ✓ |
-| Van | 4 ✓ | 25 ✓ | 66 ✓ | 10 ✓ | 18 ✓ | 25 ✓ |
-| Diyarbakır | 4 ✓ | 25 ✓ | 66 ✓ | 10 ✓ | 18 ✓ | 27 ✓ |
-| Edirne | 3 ✓ | 25 ✓ | 66 ✓ | 10 ✓ | 18 ✓ | 25 ✓ |
-| Balıkesir | 3 ✓ | 25 ✓ | 66 ✓ | 10 ✓ | 18 ✓ | 25 ✓ |
+| İstanbul | 3 ✓ | 25 ✓ | 52 ✓ | 10 ✓ | 6 ✓ | 24 ✓ |
+| Ankara | 3 ✓ | 25 ✓ | 52 ✓ | 10 ✓ | 6 ✓ | 24 ✓ |
+| İzmir | 3 ✓ | 25 ✓ | 52 ✓ | 10 ✓ | 6 ✓ | 24 ✓ |
+| Bursa | 3 ✓ | 25 ✓ | 52 ✓ | 10 ✓ | 6 ✓ | 24 ✓ |
+| Konya | 3 ✓ | 26 ✓ | 52 ✓ | 10 ✓ | 6 ✓ | 24 ✓ |
+| Antalya | 3 ✓ | 25 ✓ | 52 ✓ | 10 ✓ | 6 ✓ | 23 ✓ |
+| Gaziantep | 3 ✓ | 25 ✓ | 52 ✓ | 10 ✓ | 6 ✓ | 24 ✓ |
+| Trabzon | 3 ✓ | 25 ✓ | 52 ✓ | 10 ✓ | 6 ✓ | 23 ✓ |
+| Van | 4 ✓ | 25 ✓ | 52 ✓ | 10 ✓ | 6 ✓ | 23 ✓ |
+| Diyarbakır | 4 ✓ | 25 ✓ | 52 ✓ | 10 ✓ | 6 ✓ | 25 ✓ |
+| Edirne | 3 ✓ | 25 ✓ | 52 ✓ | 10 ✓ | 6 ✓ | 23 ✓ |
+| Balıkesir | 3 ✓ | 25 ✓ | 52 ✓ | 10 ✓ | 6 ✓ | 23 ✓ |
 
 ## tarım
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 4 ✓ | 7 ✗ | 4 ✓ | 9 ✓ | 3 ✓ | 19 ✓ |
-| Ankara | 4 ✓ | 7 ✗ | 4 ✓ | 9 ✓ | 3 ✓ | 19 ✓ |
-| İzmir | 4 ✓ | 7 ✗ | 4 ✓ | 9 ✓ | 3 ✓ | 19 ✓ |
-| Bursa | 4 ✓ | 7 ✗ | 4 ✓ | 9 ✓ | 3 ✓ | 19 ✓ |
-| Konya | 4 ✓ | 8 ✓ | 4 ✓ | 9 ✓ | 3 ✓ | 19 ✓ |
-| Antalya | 4 ✓ | 7 ✗ | 4 ✓ | 9 ✓ | 3 ✓ | 18 ✓ |
-| Gaziantep | 4 ✓ | 7 ✗ | 4 ✓ | 9 ✓ | 3 ✓ | 19 ✓ |
-| Trabzon | 4 ✓ | 7 ✗ | 4 ✓ | 9 ✓ | 3 ✓ | 18 ✓ |
-| Van | 4 ✓ | 7 ✗ | 4 ✓ | 9 ✓ | 3 ✓ | 18 ✓ |
-| Diyarbakır | 4 ✓ | 7 ✗ | 4 ✓ | 9 ✓ | 3 ✓ | 19 ✓ |
-| Edirne | 4 ✓ | 7 ✗ | 4 ✓ | 9 ✓ | 3 ✓ | 18 ✓ |
-| Balıkesir | 4 ✓ | 7 ✗ | 4 ✓ | 9 ✓ | 3 ✓ | 18 ✓ |
+| İstanbul | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
+| Ankara | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
+| İzmir | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
+| Bursa | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
+| Konya | 4 ✓ | 3 ✓ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
+| Antalya | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 15 ✓ |
+| Gaziantep | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
+| Trabzon | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 15 ✓ |
+| Van | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 15 ✓ |
+| Diyarbakır | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
+| Edirne | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 15 ✓ |
+| Balıkesir | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 15 ✓ |
 
 ## turizm
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 4 ✓ | 19 ✓ | 43 ✓ | 12 ✓ | 14 ✓ | 25 ✓ |
-| Ankara | 4 ✓ | 19 ✓ | 43 ✓ | 12 ✓ | 14 ✓ | 25 ✓ |
-| İzmir | 4 ✓ | 19 ✓ | 43 ✓ | 12 ✓ | 14 ✓ | 25 ✓ |
-| Bursa | 4 ✓ | 19 ✓ | 43 ✓ | 12 ✓ | 14 ✓ | 25 ✓ |
-| Konya | 4 ✓ | 20 ✓ | 43 ✓ | 12 ✓ | 14 ✓ | 25 ✓ |
-| Antalya | 4 ✓ | 19 ✓ | 43 ✓ | 12 ✓ | 14 ✓ | 25 ✓ |
-| Gaziantep | 4 ✓ | 19 ✓ | 43 ✓ | 12 ✓ | 14 ✓ | 25 ✓ |
-| Trabzon | 4 ✓ | 19 ✓ | 43 ✓ | 12 ✓ | 14 ✓ | 25 ✓ |
-| Van | 5 ✓ | 19 ✓ | 43 ✓ | 12 ✓ | 14 ✓ | 25 ✓ |
-| Diyarbakır | 5 ✓ | 19 ✓ | 43 ✓ | 12 ✓ | 14 ✓ | 26 ✓ |
-| Edirne | 4 ✓ | 19 ✓ | 43 ✓ | 12 ✓ | 14 ✓ | 25 ✓ |
-| Balıkesir | 4 ✓ | 19 ✓ | 43 ✓ | 12 ✓ | 14 ✓ | 25 ✓ |
+| İstanbul | 4 ✓ | 14 ✓ | 29 ✓ | 11 ✓ | 2 ✓ | 22 ✓ |
+| Ankara | 4 ✓ | 14 ✓ | 29 ✓ | 11 ✓ | 2 ✓ | 22 ✓ |
+| İzmir | 4 ✓ | 14 ✓ | 29 ✓ | 11 ✓ | 2 ✓ | 22 ✓ |
+| Bursa | 4 ✓ | 14 ✓ | 29 ✓ | 11 ✓ | 2 ✓ | 22 ✓ |
+| Konya | 4 ✓ | 15 ✓ | 29 ✓ | 11 ✓ | 2 ✓ | 22 ✓ |
+| Antalya | 4 ✓ | 14 ✓ | 29 ✓ | 11 ✓ | 2 ✓ | 22 ✓ |
+| Gaziantep | 4 ✓ | 14 ✓ | 29 ✓ | 11 ✓ | 2 ✓ | 22 ✓ |
+| Trabzon | 4 ✓ | 14 ✓ | 29 ✓ | 11 ✓ | 2 ✓ | 22 ✓ |
+| Van | 5 ✓ | 14 ✓ | 29 ✓ | 11 ✓ | 2 ✓ | 22 ✓ |
+| Diyarbakır | 5 ✓ | 14 ✓ | 29 ✓ | 11 ✓ | 2 ✓ | 23 ✓ |
+| Edirne | 4 ✓ | 14 ✓ | 29 ✓ | 11 ✓ | 2 ✓ | 22 ✓ |
+| Balıkesir | 4 ✓ | 14 ✓ | 29 ✓ | 11 ✓ | 2 ✓ | 22 ✓ |
 
 ## hizmet (restoran)
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 3 ✓ | 8 ✓ | 14 ✓ | 10 ✓ | 3 ✓ | 26 ✓ |
-| Ankara | 3 ✓ | 8 ✓ | 14 ✓ | 10 ✓ | 3 ✓ | 26 ✓ |
-| İzmir | 3 ✓ | 8 ✓ | 14 ✓ | 10 ✓ | 3 ✓ | 26 ✓ |
-| Bursa | 3 ✓ | 8 ✓ | 14 ✓ | 10 ✓ | 3 ✓ | 26 ✓ |
-| Konya | 3 ✓ | 9 ✓ | 14 ✓ | 10 ✓ | 3 ✓ | 26 ✓ |
-| Antalya | 3 ✓ | 8 ✓ | 14 ✓ | 10 ✓ | 3 ✓ | 26 ✓ |
-| Gaziantep | 3 ✓ | 8 ✓ | 14 ✓ | 10 ✓ | 3 ✓ | 26 ✓ |
-| Trabzon | 3 ✓ | 8 ✓ | 14 ✓ | 10 ✓ | 3 ✓ | 26 ✓ |
-| Van | 3 ✓ | 8 ✓ | 14 ✓ | 10 ✓ | 3 ✓ | 26 ✓ |
-| Diyarbakır | 3 ✓ | 8 ✓ | 14 ✓ | 10 ✓ | 3 ✓ | 27 ✓ |
-| Edirne | 3 ✓ | 8 ✓ | 14 ✓ | 10 ✓ | 3 ✓ | 26 ✓ |
-| Balıkesir | 3 ✓ | 8 ✓ | 14 ✓ | 10 ✓ | 3 ✓ | 26 ✓ |
+| İstanbul | 3 ✓ | 3 ✓ | 11 ✓ | 9 ✓ | 2 ✓ | 23 ✓ |
+| Ankara | 3 ✓ | 3 ✓ | 11 ✓ | 9 ✓ | 2 ✓ | 23 ✓ |
+| İzmir | 3 ✓ | 3 ✓ | 11 ✓ | 9 ✓ | 2 ✓ | 23 ✓ |
+| Bursa | 3 ✓ | 3 ✓ | 11 ✓ | 9 ✓ | 2 ✓ | 23 ✓ |
+| Konya | 3 ✓ | 4 ✓ | 11 ✓ | 9 ✓ | 2 ✓ | 23 ✓ |
+| Antalya | 3 ✓ | 3 ✓ | 11 ✓ | 9 ✓ | 2 ✓ | 23 ✓ |
+| Gaziantep | 3 ✓ | 3 ✓ | 11 ✓ | 9 ✓ | 2 ✓ | 23 ✓ |
+| Trabzon | 3 ✓ | 3 ✓ | 11 ✓ | 9 ✓ | 2 ✓ | 23 ✓ |
+| Van | 3 ✓ | 3 ✓ | 11 ✓ | 9 ✓ | 2 ✓ | 23 ✓ |
+| Diyarbakır | 3 ✓ | 3 ✓ | 11 ✓ | 9 ✓ | 2 ✓ | 24 ✓ |
+| Edirne | 3 ✓ | 3 ✓ | 11 ✓ | 9 ✓ | 2 ✓ | 23 ✓ |
+| Balıkesir | 3 ✓ | 3 ✓ | 11 ✓ | 9 ✓ | 2 ✓ | 23 ✓ |
 
 ## girişimci (şirket yok)
 
@@ -125,6 +125,7 @@ Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak göster
 
 ## Boş ve ince hücrelerin özeti
 
+- tarım / ihracat: 12 ilde boş ya da ince (tüm illerde)
 - girişimci (şirket yok) / finansman: 12 ilde boş ya da ince (tüm illerde)
 - girişimci (şirket yok) / arge: 12 ilde boş ya da ince (tüm illerde)
 
@@ -145,14 +146,14 @@ Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak göster
 
 ## Kayıt var ama yanıt göstermiyor (ürün düzeyi ✗, kayıt ≥ 1)
 
-- tarım / İstanbul / arge: kayıtta 7 (ör. Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2); Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Ankara / arge: kayıtta 7 (ör. Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2); Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / İzmir / arge: kayıtta 7 (ör. Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2); Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Bursa / arge: kayıtta 7 (ör. Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2); Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Antalya / arge: kayıtta 7 (ör. Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2); Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Gaziantep / arge: kayıtta 7 (ör. Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2); Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Trabzon / arge: kayıtta 7 (ör. Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2); Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Van / arge: kayıtta 7 (ör. Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2); Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Diyarbakır / arge: kayıtta 7 (ör. Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2); Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Edirne / arge: kayıtta 7 (ör. Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2); Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Balıkesir / arge: kayıtta 7 (ör. Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2); Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
+- tarım / İstanbul / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
+- tarım / Ankara / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
+- tarım / İzmir / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
+- tarım / Bursa / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
+- tarım / Antalya / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
+- tarım / Gaziantep / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
+- tarım / Trabzon / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
+- tarım / Van / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
+- tarım / Diyarbakır / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
+- tarım / Edirne / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
+- tarım / Balıkesir / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği

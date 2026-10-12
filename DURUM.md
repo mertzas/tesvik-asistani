@@ -502,6 +502,18 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   yalnız ihtiyaç türü etiketli (Ar-Ge, ihracat, e-ticaret) kapsam sektör engeli değil (Küresel Rekabetçilik); kalıcı
   engel (sektör) ölçekten önce yazılır; "yurt dışı ortaklı ... başvurusu yapılmış olmalı" kilit; başlıktaki imalata
   özel oran imalat dışı işletmede kapsam notu. Kapsam 432/13/23 → 444/1/23, ürün 434. Test 1333 → 1337.
+  Tur 7 (`tur7/`, `degerlendirme7_*.json`): A 3,20 · B 3,39 · C 2,83 · D 2,86 · E 3,14 (ortalama 3,08; tur 6: 3,06).
+  Gerileme yakalandı ve düzeltildi: ihtiyaç-türü etiket istisnası (Ar-Ge/ihracat/e-ticaret) yalnız mal üreten
+  (imalat) işletmede geçerli; otelde 5973 m.12 yeniden "uygun değil" (tur 6'daki kapsam 444 artışı bu sahte
+  açılmaydı, 432'ye döndü). Hibe satırı sorudaki gider kalemini karşılamayan hibeyi "farklı bir gideri karşılar"
+  diye verir; gider eşleşmesi olumsuz cümleleri ("alımı değil", "kapsam dışı") saymaz (cümle bölmeli süzgeç: tek
+  regex karesel geri izlemeyle yanıtı 16 sn'ye çıkarıyordu); uygulanmayan fidan tutarı Destek satırından da çıkar;
+  "Fındık için:" biçimli ürün maddesi başka üreticiye gösterilmez. Test 1337 → 1340.
+  Açık (sonraki iş): eşleşme paneli sıralaması (halı/zeytinyağı panelinde 5973 tanıtım-fuar ailesi ilk 20'de yok,
+  Eximbank kredileri baskın; teknopark ve "önce başka programa kabul" kayıtları ilk 10'da); şahıs işletmesine esnaf
+  kredisi (9436) ve genç girişimci istisnasının yanıta girmemesi (aday havuzu); İhracat Destek Finansmanı/Reeskont
+  gibi "uygun faiz" ürünlerinin seçilmemesi; Hazine faizli tarım kredisinde "basınçlı sulama +10 puan" satırı;
+  kurum sorusunda ilk satır hükmü; yanıt uzunluğu (12-17 KB); kaynak dışı: TKDK/IPARD, KKYDP, 3308 çırak katkısı.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

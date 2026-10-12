@@ -464,3 +464,30 @@ def test_ihtiyac_etiketleri_sektor_kisiti_degil_ve_ortaklik_kilit():
     imalat = _t(kurum="KOSGEB", baslik="KOBİ Dijital", uygunluk_kriterleri={"sektorler": ["imalat"]})
     assert "sektör kapsamı" in yerel_danisman._sektor_disi(imalat, FinancialProfile(sektor="hizmet", nace_kodu="85.53"))
     assert yerel_danisman._KILIT.search("EUREKA altında yurt dışı ortaklı uluslararası proje başvurusu yapılmış olmalı")
+
+
+
+# ------------------------------------------------------------------ yedinci hakem turu bulguları
+def test_mal_ihracati_programi_hizmet_isletmesine_kapali():
+    m12 = _t(kurum="Ticaret Bakanlığı", baslik="Yurt Dışı Tanıtım", uygunluk_kriterleri={"sektorler": ["e-ticaret", "ihracat"]})
+    otel = FinancialProfile(sektor="hizmet", nace_kodu="55.10", sirket_turu="limited", calisan_sayisi=14)
+    assert "sektör kapsamı" in (yerel_danisman._sektor_disi(m12, otel) or "")
+    imalatci = FinancialProfile(sektor="imalat", nace_kodu="18.12", sirket_turu="limited")
+    assert yerel_danisman._sektor_disi(m12, imalatci) is None
+
+
+def test_hibe_satiri_gider_kalemini_karsilamayan_hibe():
+    from types import SimpleNamespace as N
+    kredi = N(tesvik=_t(kurum="KOSGEB", baslik="KOBİ Dijital", tesvil_tutari="Yazılım ve donanım giderleri için faiz "
+                        "desteği", basvuru_bicimi="faiz_destegi"), karar="sartli", gerekce=[], teyit=[])
+    yonde = N(tesvik=_t(kurum="KOSGEB", baslik="YÖNDE", tesvil_tutari="%100 geri ödemesiz; 700.000 TL. Yazılım veya "
+                        "donanım alımı değil, danışman hizmeti desteklenir."), karar="sartli", gerekce=[], teyit=[])
+    s = yerel_danisman.hibe_satiri("ERP ve sensör için hibe var mı?", kredi, [kredi, yonde])
+    assert "sorduğunuz gider kalemi için kayıtlı hibe yok" in s and "YÖNDE" in s
+
+
+def test_uygulanmayan_fidan_tutari_ve_urun_maddesi_gosterilmez():
+    from types import SimpleNamespace as N
+    d = N(kisit=["fidan kullanım desteği yalnız yeni meyve bahçesi/bağ tesisinde ...; çilek bu listede yok"])
+    t = "Dekar başına 367,00 TL temel destek; fidan kullanım desteği ayrıca 734,00 TL/da (standart) veya 1.835,00 TL/da."
+    assert "1.835" not in yerel_danisman._profile_uyan_tutar(t, d) and "367,00" in yerel_danisman._profile_uyan_tutar(t, d)

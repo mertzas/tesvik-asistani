@@ -964,10 +964,11 @@ def _sektor_disi(t, profil) -> str | None:
     nace2 = int(nace[:2]) if nace[:2].isdigit() else None
     if p_sek in k_sek or k_sek & HEDEF_SEKTOR_ETIKETLERI & hedef:
         return None
-    if k_sek <= HEDEF_SEKTOR_ETIKETLERI:
-        # "Ar-Ge, ihracat" etiketleri ihtiyaç türüdür, faaliyet sektörü değil; asıl şartlar (ihracat artışı, kredi alt
-        # limiti) kayıttan değerlendirilir (hakem bulgusu 2026-10-12, 5-6. tur: Küresel Rekabetçilik matbaaya "sektör
-        # kapsamı NACE 18.12'yi kapsamıyor" gerekçesiyle kapalıydı; kayıtta NACE sınırı yok).
+    if k_sek <= HEDEF_SEKTOR_ETIKETLERI and (p_sek == "imalat" or (nace2 is not None and 10 <= nace2 <= 33)):
+        # Mal üreten işletmede "Ar-Ge, ihracat" etiketleri ihtiyaç türüdür, faaliyet sektörü değil; asıl şartlar (ihracat
+        # artışı, kredi alt limiti) kayıttan değerlendirilir (hakem bulgusu 2026-10-12, 5-6. tur: Küresel Rekabetçilik
+        # matbaaya "sektör kapsamı NACE 18.12'yi kapsamıyor" gerekçesiyle kapalıydı). Hizmet işletmesinde (otel) mal
+        # ihracatı programı kapalı kalır (7. tur: 5973 m.12 otele "engel yok" olmuştu).
         return None
     if "arge" in k_sek and _arge_sinyali(profil, hedef):
         return None
@@ -1090,7 +1091,7 @@ def degerlendir(kayitlar: list, profil, notlar: dict[int, str], eslesme: dict[in
                     d.saglanan.append(f"sorunuzdaki beyana göre {beyan['ortak_ulke']} ortak (ülkenin programa üye "
                                       "olduğunu çağrı belgesinden teyit edin)")
                     continue
-                urun_sarti = re.match(r"\s*(\w+) üreticisiyseniz", m["metin"])
+                urun_sarti = re.match(r"\s*(\w+) (?:üreticisiyseniz|için:)", m["metin"])
                 if urun_sarti and getattr(profil, "urun_turu", None) and _katla(urun_sarti.group(1)) != _katla(
                         profil.urun_turu):
                     # "Fındık üreticisiyseniz: ..." başka ürünün üreticisine gösterilmez (hakem bulgusu 5. tur: çilekçi)
@@ -1260,7 +1261,7 @@ def kart(d: Degerlendirme, notlar: dict[int, str], soru_ihtiyac: list[str], bugu
     karsiladigi = [IHTIYAC_ADLARI[x] for x in soru_ihtiyac if x in program_ihtiyaclari(t)]
     if karsiladigi:
         satir.append(f"- **Karşıladığı ihtiyaç:** {', '.join(karsiladigi)}")
-    tutar = tutar_metni(t)
+    tutar = _profile_uyan_tutar(tutar_metni(t), d)
     unsur = _destek_unsurlari(notlar, t)
     etiket = "Son bilinen destek (bilgi için)" if d.karar == "kapali" else (
         "Kredi ve kefalet limitleri" if (t.uygunluk_kriterleri or {}).get("tutar_niteligi") == "kredi_kefalet"
@@ -2061,6 +2062,14 @@ def _hibe_degil_notu(soru: str, t) -> str:
     return ""
 
 
+def _profile_uyan_tutar(tutar: str, d) -> str:
+    """Kapsam notu ek kalemin bu üreticiye ödenmediğini söylüyorsa kalem tutar satırından da çıkarılır (hakem bulgusu
+    2026-10-12, 7. tur: çilek kartında "Kapsam: çilek bu listede yok" yazarken Destek satırı fidan tutarını gösteriyordu)."""
+    if any(k.startswith("fidan kullanım desteği yalnız") for k in getattr(d, "kisit", None) or []):
+        tutar = re.sub(r";?\s*fidan kullanım desteği ayrıca[^.;]*", "", tutar, flags=re.I).strip()
+    return tutar
+
+
 def fidan_kalemi_notu(profil, tum: list) -> str:
     """Temel destek kaydındaki "fidan kullanım desteği ayrıca …" ek kalemi yalnız fidan kaydının ürün listesindeki
     (Tablo 6) türler içindir; profildeki ürün listede yoksa kartta belirtilir (hakem bulgusu 2026-10-12, 5. tur: çilek
@@ -2106,7 +2115,13 @@ def hibe_satiri(soru: str, ilk, adaylar: list) -> str:
     hibeler = [d for d in adaylar if d is not ilk and hibe_mi(d.tesvik) and d.karar in ("sartli", "belirlenemedi")
                and (not sorulan or program_ihtiyaclari(d.tesvik) & sorulan)]
     if hibeler:
+        hibeler.sort(key=lambda x: -gider_kalemi_eslesmesi(soru, x.tesvik))
         d = hibeler[0]
+        kalem_soruda = any(re.search(sk, _katla(soru)) for sk, _ in _GIDER_KALEMLERI)
+        if kalem_soruda and not gider_kalemi_eslesmesi(soru, d.tesvik):
+            # Hakem bulgusu 7. tur: ERP/sensör sorusunda danışmanlık hizmeti desteği (YÖNDE) "hibe" diye gösteriliyordu.
+            return (f"Hibe (geri ödemesiz): sorduğunuz gider kalemi için kayıtlı hibe yok; geri ödemesiz yakın seçenek "
+                    f"{_kisa_ad(d.tesvik.baslik)} farklı bir gideri karşılar: {_cumle_kisalt(d.tesvik.tesvil_tutari, 140)}")
         return (f"Hibe (geri ödemesiz) tarafı: {_kisa_ad(d.tesvik.baslik)} — {karar_etiketi(d).lower()}"
                 + (f" ({_kisa_neden(d)})" if d.karar == "belirlenemedi" and _kisa_neden(d) else "") + ".")
     return ("Hibe (geri ödemesiz): sorunuza ve profilinize açık kayıtlı bir hibe programı bulamadım; aşağıdaki programlar "
@@ -2265,7 +2280,7 @@ def kisa_cevap(niyet: set[str], odak: list[Degerlendirme], adaylar: list[Degerle
             # Size uygun olmayan programın tutarı, tutar sorulmadıkça kısa cevapta gösterilmez (hakem bulgusu 5. tur:
             # otelin "yurt dışı tanıtım" sorusunda "uygun değil" satırının altındaki 12 milyon TL'lik limit destek
             # varmış izlenimi veriyordu); tutar kartta durur.
-            tutar = tutar_metni(t, 450).split(" Hesaplama: ")[0]
+            tutar = _profile_uyan_tutar(tutar_metni(t, 450).split(" Hesaplama: ")[0], d)
             if tutar:
                 etiket = ("Son bilinen destek (bilgi için)" if d.karar == "kapali" else
                           "Kredi koşulları (hibe değil)" if _kredi_mi(t) else "Destek")
@@ -2463,11 +2478,17 @@ _GIDER_KALEMLERI = (
 )
 
 
+_OLUMSUZ = re.compile(r"\bdeğil|kapsam dışı|desteklenmez", re.I)
+
+
 def gider_kalemi_eslesmesi(soru: str, t) -> int:
     """Sorudaki gider kalemlerinden kaçını programın tutar/ayrıntı/kural metni destekliyor."""
     s = _katla(soru)
     metin = " ".join(str(x or "") for x in (t.tesvil_tutari, t.ozet, t.detay)) + " " + " ".join(
         m.get("metin", "") for m in (t.kontrol_listesi or []) if m.get("tur") in ("kural", "bilgi"))
+    # Olumsuz cümle ("yazılım veya donanım alımı değil", "komisyon kapsam dışıdır") gider desteği sayılmaz.
+    # (cümle bölmeli süzgeç: tek regex uzun kayıtlarda karesel geri izleme yapıp yanıtı 16 sn'ye çıkarıyordu)
+    metin = " ".join(p for p in re.split(r"[.;]", metin) if not _OLUMSUZ.search(p))
     return sum(1 for sk, pk in _GIDER_KALEMLERI if re.search(sk, s) and re.search(pk, metin, re.I))
 
 

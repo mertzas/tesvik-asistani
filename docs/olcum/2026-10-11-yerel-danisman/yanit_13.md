@@ -50,7 +50,7 @@
 - [KOSGEB] Girişimci Destek Programı: İş Geliştirme Desteği ile İş Geliştirme Faiz/Kâr Payı Desteğinden aynı anda yararlanılamaz (resmî metin: "İŞ GELİŞTİRME FAİZ/KÂR PAYI DESTEĞİ ve İŞ GELİŞTİRME DESTEĞİ’nden aynı anda yararlanılamaz.")
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Girişimci Destek Programı, KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
+- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Girişimci Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **Girişimci Destek Programı:** KOSGEB veri tabanına kayıtlı ve aktif olmalı
 
 ### 4. Adım Adım Yol Haritası

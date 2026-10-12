@@ -41,7 +41,7 @@
 - **Başvuru:** KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Yapay Zekâ Kredi Programı, KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
+- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Yapay Zekâ Kredi Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **Yapay Zekâ Kredi Programı:** KOSGEB sisteminde kayıtlı, işletme beyanı güncel ve aktif olmak
 
 ### 4. Adım Adım Yol Haritası

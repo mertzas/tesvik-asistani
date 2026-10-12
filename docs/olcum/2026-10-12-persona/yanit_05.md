@@ -25,7 +25,7 @@
 - Fındık Temel Desteği — Bitkisel Üretim Temel Destek, 3. kategori (2026 üretim yılı) (Tarım Bakanlığı): Dekar başına: 1,5 (fındığın destek katsayısı) x destek katsayı değeri; değer 2026 üretim yılı için dekara 367 TL, 2027 için 442 TL.; Temel destek için ayrı başvuru yoktur; ilgili üretim yılında ÇKS'ye kayıtlı olmak gerekir (kayıt takvimi için il/ilçe müdürlüğüne bakın). (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Sertifikalı/Standart Fidan Kullanım Desteği — yeni meyve bahçesi/bağ tesisi, fındık dahil (2026 üretim yılı) (Tarım Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Fidan yurt içinde üretilmiş olmalı ve Tohumluk Tescil ve Sertifikasyon Merkez Müdürlüğü veya Karacabey Fidan Fide Test Merkezi tarafından düzenlenmiş sertifikalı/standart fidan sertifikasına sahip olmalı.); Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez.
+- Sertifikalı/Standart Fidan Kullanım Desteği — yeni meyve bahçesi/bağ tesisi, fındık dahil (2026 üretim yılı) (Tarım Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Fidan yurt içinde üretilmiş olmalı ve Tohumluk Tescil ve Sertifikasyon Merkez Müdürlüğü veya Karacabey Fidan Fide Test Merkezi tarafından düzenlenmiş sertifikalı/standart fidan sertifikasına sahip olmalı); Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez.
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Fındık Temel Desteği — Bitkisel Üretim Temel Destek, 3. kategori (2026 üretim yılı)): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.

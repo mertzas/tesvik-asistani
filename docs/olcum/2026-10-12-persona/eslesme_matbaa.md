@@ -2,7 +2,7 @@
 profil: {'sektor': 'imalat', 'bolge': 'Ankara', 'calisan_sayisi': 6, 'yillik_ciro': 9000000, 'nace_kodu': '18.12', 'sirket_turu': 'limited', 'hedefler': ['makine', 'finansman']}
 
  1. [1] Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
-    gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; 9903 ön değerlendirmesi: ŞARTLI — NACE 18.12, EK-3'te '18 Kayıtlı medyanın basılması ve çoğaltılması Sabit yatırım tutarı 100 Milyon TL ve …' kalemine giriyor; şart: ve modernizasyon yatırımları desteklenir. (MADDE 5/1, 10).; Belirttiğiniz hedeflerle
+    gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; 9903 ön değerlendirmesi: ŞARTLI — NACE 18.12, EK-3'te '18 Kayıtlı medyanın basılması ve çoğaltılması' kalemine giriyor; şart: Sabit yatırım tutarı 100 Milyon TL ve üzerindeki tevsi ve modernizasyon yatırımları desteklenir. (MADDE 5/1, 10).; Belirttiğ
  2. [1] Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: makine alımı.
     eksik: 9903 ön değerlendirmesi: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7).

@@ -1,0 +1,51 @@
+# ikas_seramik
+profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'Eskişehir', 'calisan_sayisi': 1, 'yillik_ciro': 600000, 'sirket_turu': 'sahis', 'kurucu_yasi': 27, 'hedefler': ['finansman']}
+
+ 1. [1] HALK BANKASI GENÇİZ KREDİSİ PROGRAMI DESTEK PAKETİ — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.; Yalnız sizin hedef kitlenize açık: Genç girişimci.
+ 2. [1] TURYIB Programı Destek Paketi — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.; Yalnız sizin hedef kitlenize açık: Genç girişimci.
+ 3. [1] ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.; Yalnız sizin hedef kitlenize açık: Genç girişimci.
+ 4. [0] Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı) — Hazine ve Maliye Bakanlığı / Halkbank (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+ 5. [0] DİJİTAL KEFALET DESTEK PROGRAMI — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+ 6. [0] HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+ 7. [0] HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+ 8. [0] KGF Genel Destek Programı — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+ 9. [0] KGF Özkaynak Kefalet Programı — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+10. [0] TKYB KREDİ DESTEK PAKETİ — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+11. [0] TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+12. [0] Ziraat Katılım Bankası Katılım Finans Destek Paketi — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+13. [0] GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+    eksik: Bu KGF paketi, ilgili KOSGEB programına kabul edildikten sonra kullanılabilir; önce KOSGEB programına başvurun.
+14. [0] KOSGEB Geri Ödemeli Destekleri — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+    eksik: Bu KGF paketi, ilgili KOSGEB programına kabul edildikten sonra kullanılabilir; önce KOSGEB programına başvurun.
+15. [0] Genç Girişimcilerde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20) — Gelir İdaresi Başkanlığı (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.
+    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+16. [0] Girişimci Destek Programı — KOSGEB (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.
+    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+17. [0] Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B) — Gelir İdaresi Başkanlığı (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.
+    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+18. [0] KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.
+    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+19. [0] TURWIB PROGRAMI DESTEK PAKETİ — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+    eksik: Öncelikle şu işletmelere yönelik: Kadın girişimci / kadınların yönettiği işletme.
+20. [0] Yapay Zekâ Kredi Programı — KOSGEB (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+    eksik: Yapay zekâ yatırımına yönelik; profilinizde Ar-Ge/yazılım hedefi yok.

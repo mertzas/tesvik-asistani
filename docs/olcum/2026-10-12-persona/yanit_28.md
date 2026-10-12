@@ -62,15 +62,14 @@
 - Marka ve TURQUALITY® Desteği (5973 sayılı Karar m.17) (Ticaret Bakanlığı) — uygun değil: başvuru sahibi türünüz (şahıs işletmesi) şartta sayılmıyor — kayıttaki şart: “Şirket olmak: 6102 sayılı TTK md.124'teki şirketler (kollektif, komandit, anonim, limited) ya da ticari/sınai faaliyette bulunan kooperatif (Karar m.2); şahıs işletmesi kapsam dışı”
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
+- Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
 
 ### 4. Adım Adım Yol Haritası
-1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
-2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-3. Başvuru adımları (ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ): Başvuru yeri: Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları).
-4. Başvuru kanalı (ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ): Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-kadin-ve-genc-girisimci-destek-paketi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
-5. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim) · KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+2. Başvuru adımları (ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ): Başvuru yeri: Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları).
+3. Başvuru kanalı (ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ): Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-kadin-ve-genc-girisimci-destek-paketi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+4. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim) · KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
+5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.

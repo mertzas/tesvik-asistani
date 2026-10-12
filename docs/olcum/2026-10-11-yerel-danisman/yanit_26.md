@@ -62,15 +62,14 @@
 - KADIN GİRİŞİMCİ DESTEK PAKETİ (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
+- Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
 
 ### 4. Adım Adım Yol Haritası
-1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
-2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-3. Başvuru adımları (ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ): Başvuru yeri: Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları).
-4. Başvuru kanalı (ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ): Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-kadin-ve-genc-girisimci-destek-paketi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
-5. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim) · KOSGEB GAZİANTEP MÜDÜRLÜĞÜ: 0 (342) 211 15 65; Gaziantep Üniversitesi Teknopark Yerleşkesi Blok No:4/C 27260 Şahinbey/GAZİANTEP (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=27)
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+2. Başvuru adımları (ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ): Başvuru yeri: Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları).
+3. Başvuru kanalı (ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ): Kredi veren banka(lar): Ziraat Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-kadin-ve-genc-girisimci-destek-paketi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+4. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim) · KOSGEB GAZİANTEP MÜDÜRLÜĞÜ: 0 (342) 211 15 65; Gaziantep Üniversitesi Teknopark Yerleşkesi Blok No:4/C 27260 Şahinbey/GAZİANTEP (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=27)
+5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.

@@ -23,7 +23,7 @@ profil: {'sektor': 'hizmet', 'bolge': 'Antalya', 'calisan_sayisi': 14, 'yillik_c
     gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.; İşe alım teşviki; hedeflerinizde istihdam yok.
 10. [0] Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
-    gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.; 9903 ön değerlendirmesi: ŞARTLI — NACE 55.10, EK-3'te '55.1 Oteller ve benzeri konaklama yerleri 50 oda ve üzeri (Otel, Tatil Köyü, Butik Otel ve Özel' kalemine giriyor; şart: Konaklama Tesisi desteklenir) (MADDE 5/1, 10).
+    gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.; 9903 ön değerlendirmesi: ŞARTLI — NACE 55.10, EK-3'te '55.1 Oteller ve benzeri konaklama yerleri' kalemine giriyor; şart: 50 oda ve üzeri (Otel, Tatil Köyü, Butik Otel ve Özel Konaklama Tesisi desteklenir) (MADDE 5/1, 10).
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.; Yatırım teşviki: teşvik belgesi ve asgari yatırım tutarı gerekir; hedeflerinizde yatırım yok.
 11. [0] KOSGEB Geri Ödemeli Destekleri — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.

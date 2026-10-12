@@ -1,5 +1,6 @@
 <!-- persona: matbaa | soru: Matbaamıza yaklaşık 4 milyon TL'lik yeni dijital baskı makinesi almak istiyoruz. Hangi kredi, hibe ya da teşvik belgesi kullanabiliriz? -->
 **Kısa cevap:**
+- Teşvik belgesi (9903, Hedef Yatırımlar): **uygun değil** — sorudaki yatırım tutarı (4 milyon TL) EK-3 kalem şartının altında: NACE 18.12, EK-3'te '18 Kayıtlı medyanın basılması ve çoğaltılması' kalemine giriyor; şart: Sabit yatırım tutarı 100 Milyon TL ve üzerindeki tevsi ve modernizasyon yatırımları desteklenir. (MADDE 5/1, 10).
 - Öne çıkan: **YATIRIM-İŞLETME DESTEK PAKETİ** (KGF) (hibe değil: kredi kefaleti) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Kredi koşulları (hibe değil): Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
 - Diğer seçenekler: HALKBANK İLK ADIM KREDİSİ PROJESİ (şarta bağlı).
@@ -40,8 +41,10 @@
 
 **Yatırım teşvik belgesi (9903) — sistemin elediği ya da düşük olasılık gördüğü programlar** (Karar metnine göre; 'UYGUN DEĞİL' kesin, 'DÜŞÜK OLASILIK' teyit gerektirir):
 - Teknoloji Hamlesi Programı (9903 sayılı Karar): DÜŞÜK OLASILIK — faaliyet EK-1 orta-yüksek/yüksek teknoloji sınıfında değil; öncelikli ürün listesi bu sınıflar ve kritik ürünlerden oluşur (MADDE 2/i, 6)
+- Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar): UYGUN DEĞİL — sorudaki yatırım tutarı (4 milyon TL) asgari sabit yatırım tutarının (1. bölgede 12 milyon TL) altında; teşvik belgesi bu tutarın altındaki yatırıma düzenlenmez (MADDE 5/2)
 - Stratejik Hamle Programı (9903 sayılı Karar): DÜŞÜK OLASILIK — asgari sabit yatırım 100 milyon TL (yüksek teknoloji) / 200 milyon TL, %20 öz kaynak ve ithalat ölçütleri aranır; mikro/küçük ölçek için gerçekçi değildir (MADDE 8/2-3)
-- Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar): DÜŞÜK OLASILIK — teknoloji sınıfı (EK-1) veya 6. bölge koşulu yok; ancak diğer bentlerden biri (ör. Ar-Ge yatırımı, savunma, öz tüketim GES/RES, lisanslı depo, eğitim) kapsamına girerse desteklenir (MADDE 9/1)
+- Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): UYGUN DEĞİL — sorudaki yatırım tutarı (4 milyon TL) EK-3 kalem şartının altında: NACE 18.12, EK-3'te '18 Kayıtlı medyanın basılması ve çoğaltılması' kalemine giriyor; şart: Sabit yatırım tutarı 100 Milyon TL ve üzerindeki tevsi ve modernizasyon yatırımları desteklenir. (MADDE 5/1, 10)
+- Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar): UYGUN DEĞİL — sorudaki yatırım tutarı (4 milyon TL) asgari sabit yatırım tutarının (1. bölgede 12 milyon TL) altında; teşvik belgesi bu tutarın altındaki yatırıma düzenlenmez (MADDE 5/2)
 Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik Yatırımların Teşviki) 9903 sayılı Karar ile yürürlükten kalkmıştır; bu eski sistemlere başvurulamaz.
 
 ### 3. Darboğazlar ve Kritik Şartlar

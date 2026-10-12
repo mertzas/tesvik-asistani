@@ -28,16 +28,15 @@
 - Accelerate İzmir Uluslararası Büyüme Odaklı Hızlandırma Programı — 2026 / 5. Dönem (İzmir Kalkınma Ajansı) — kapalı: program başvuruya açık değil (Son başvuru tarihi 8 Mart 2026 olup geçmiştir)
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
+- Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
 
 ### 4. Adım Adım Yol Haritası
 Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi** için:
-1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
-2. KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
-3. Başvuru adımları (KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): Ücretsiz ve aracısız verilen eğitimlere lms.kosgeb.gov.tr adresinden başvurulur.; Başvuru yeri: KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır..
-4. Başvuru kanalı (KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi.
-5. İletişim (doğrulanmış): TUBITAK: çağrı merkezi 444 66 90, genel merkez 0 312 298 10 00; Remzi Oğuz Arık Mah. Tunus Cd. No:80 06540 Çankaya / Ankara (doğrulama: https://tubitak.gov.tr/en/node/11658) · KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
+2. Başvuru adımları (KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): Ücretsiz ve aracısız verilen eğitimlere lms.kosgeb.gov.tr adresinden başvurulur.; Başvuru yeri: KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır..
+3. Başvuru kanalı (KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi.
+4. İletişim (doğrulanmış): TUBITAK: çağrı merkezi 444 66 90, genel merkez 0 312 298 10 00; Remzi Oğuz Arık Mah. Tunus Cd. No:80 06540 Çankaya / Ankara (doğrulama: https://tubitak.gov.tr/en/node/11658) · KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
+5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.

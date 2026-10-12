@@ -28,18 +28,18 @@
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
+- **Engel:** işletme sahibi ya da en az %50 hissedarı en çok 29 yaşında olmalı (beyan: 52).
+- **Engel kalkarsa ayrıca aranan şartlar (kayıttan):** İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı; Kredi başvuru tarihinde işletmenin sahibi veya en az %50 hisse sahibi ortağı en fazla 29 yaşında olmalı.
+- **Hazırlanacak belgeler (kayıttan):** Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz.
 
 ### 4. Adım Adım Yol Haritası
-Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **Ziraat Katılım Bankası Katılım Finans Destek Paketi** için:
-1. Ziraat Katılım Bankası Katılım Finans Destek Paketi şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
-2. Başvuru adımları (Ziraat Katılım Bankası Katılım Finans Destek Paketi): Başvuru yeri: Kredi veren banka(lar): Ziraat Katılım Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları).
-3. Başvuru kanalı (Ziraat Katılım Bankası Katılım Finans Destek Paketi): Kredi veren banka(lar): Ziraat Katılım Bankası (KGF ürün sayfası, İlgili Finans Kuruluşları) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-katilim-bankasi-katilim-finans-destek-paketi.
+1. Engeli değerlendirin: engel kalkmadan başvuru yapılamaz; durumunuzun şarta etkisini kurumla teyit edin.
+2. Hazırlık: yukarıdaki şartları ve belgeleri şimdiden toplayın.
+3. Başvuru kanalı: Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi.
 4. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim)
-5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
+Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

@@ -79,6 +79,54 @@ def _tanim(tanim: str, sinir: int = 90) -> str:
         kesik = kesik[:kesik.rfind("(")].rstrip()
     return kesik.rstrip(",;") + " …"
 
+# MADDE 5/2: "asgari sabit yatırım tutarının; 1 inci ve 2 nci bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL"
+# (EK-3'te konu bazında ayrıca belirtilmemişse). EK-3 kalem şartı: "Sabit yatırım tutarı 100 Milyon TL ve üzerindeki",
+# "asgari 30 Milyon TL tutarındaki".
+_EK3_ASGARI = re.compile(r"(?:Sabit yatırım tutarı\s+|asgari\s+)(\d[\d.,]*)\s*(Milyon|Milyar)\s*TL", re.IGNORECASE)
+
+
+def _tl(x: float) -> str:
+    if x >= 1e9 and x % 1e9 == 0:
+        return f"{x / 1e9:.0f} milyar TL"
+    if x >= 1e6:
+        return f"{x / 1e6:,.1f}".rstrip("0").rstrip(".").replace(",", "X").replace(".", ",").replace("X", ".") \
+            + " milyon TL"
+    return f"{x:,.0f}".replace(",", ".") + " TL"
+
+
+def soru_yatirim_tutari(soru: str | None) -> float | None:
+    """Soruda verilen yatırım tutarı (TL; en büyüğü): "yaklaşık 4 milyon TL'lik baskı makinesi" → 4.000.000.
+    Yalnız TL/lira tutarları; döviz ve yüzde sayılmaz."""
+    from app.dayanak import _CARPAN, _SAYI, _deger
+    tutarlar = [_deger(m.group(1), m.group(2)) for m in re.finditer(
+        rf"({_SAYI}){_CARPAN}\s*(?:TL|lira|₺)", soru or "", re.IGNORECASE)]
+    tutarlar = [t for t in tutarlar if t]
+    return max(tutarlar) if tutarlar else None
+
+
+def tutar_siniri(u: Uygunluk9903, yatirim_tl: float | None, il: str | None) -> Uygunluk9903:
+    """Sorudaki yatırım tutarı EK-3 kalem şartındaki ya da MADDE 5/2'deki asgari sabit yatırımın altındaysa
+    "uygun değil" (persona denemesi 2026-10-12: matbaanın 4 milyon TL'lik makinesi için teşvik belgesi sorusu;
+    EK-3 18: yalnız 100 milyon TL ve üzeri tevsi/modernizasyon)."""
+    if not yatirim_tl or u.durum == "uygun_degil":
+        return u
+    from app.tesvik_9903_hesap import ASGARI_SABIT_YATIRIM
+    from app.dayanak import _deger
+    m = _EK3_ASGARI.search(u.gerekce)
+    if m and u.program in ("hedef_yatirimlar", "oncelikli_yatirimlar"):
+        esik = _deger(m.group(1), m.group(2).lower())
+        if esik and yatirim_tl < esik:
+            return Uygunluk9903(u.program, "uygun_degil", (
+                f"sorudaki yatırım tutarı ({_tl(yatirim_tl)}) EK-3 kalem şartının altında: {u.gerekce}"), u.madde)
+    bolge = il_bolgesi(il) if il else None
+    asgari = ASGARI_SABIT_YATIRIM.get(bolge) if bolge else None
+    if asgari and yatirim_tl < asgari and u.program not in ("teknoloji_hamlesi", "stratejik_hamle"):
+        return Uygunluk9903(u.program, "uygun_degil", (
+            f"sorudaki yatırım tutarı ({_tl(yatirim_tl)}) asgari sabit yatırım tutarının ({bolge}. bölgede "
+            f"{_tl(asgari)}) altında; teşvik belgesi bu tutarın altındaki yatırıma düzenlenmez"), "MADDE 5/2")
+    return u
+
+
 def program_turu(baslik: str | None) -> str | None:
     """Teşvik kaydı başlığından 9903 programı. 9903 dışı kayıtlar için None."""
     b = kucult(baslik or "").translate(_ASCII)

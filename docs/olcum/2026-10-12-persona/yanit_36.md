@@ -46,7 +46,7 @@
 - **Başvuru:** Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi)); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
+- TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: TOBB'a bağlı ticaret/sanayi/deniz ticaret odası veya ticaret borsası üyeliği); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 - KOSGEB Geri Ödemeli Destekleri (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: KOSGEB tarafından onaylanmış bir destek ödemesi almaya hak kazanmış KOBİ olmak); Sürekli
 - HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 

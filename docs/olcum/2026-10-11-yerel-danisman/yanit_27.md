@@ -98,12 +98,13 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 - **Teknoloji Hamlesi Programı (9903 sayılı Karar):** Başvuru yeri: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)
 
 ### 4. Adım Adım Yol Haritası
-1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi; Kayıtlı elektronik posta (KEP) adresi; Yatırım teşvik belgesi.
-2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-3. Belgeler (KOBİ Dijital Dönüşüm Destek Programı): Onaylı dijital dönüşüm/olgunluk değerlendirme raporu (TÜSSİDE-DDX veya SIRI formatı); Başvuru Formu; Mali tablolar ve işletme beyanı; KOBİ Dijital Dönüşüm Destek Programı Taahhütnamesi.
-4. Başvuru kanalı (KOBİ Dijital Dönüşüm Destek Programı): KOSGEB KOBİ Bilgi Sistemi (online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
-5. İletişim (doğrulanmış): KOSGEB: çağrı merkezi 444 1 567, genel merkez 0 312 595 28 00; Hacı Bayram Mah. İstanbul Cad. No: 32 06050 Ulus / Altındağ / Ankara (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/iletisim) · KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
+2. Diğer programlar için ayrıca: Teknoloji Hamlesi Programı (9903 sayılı Karar) — Kayıtlı elektronik posta (KEP) adresi, Yatırım teşvik belgesi.
+3. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+4. Belgeler (KOBİ Dijital Dönüşüm Destek Programı): Onaylı dijital dönüşüm/olgunluk değerlendirme raporu (TÜSSİDE-DDX veya SIRI formatı); Başvuru Formu; Mali tablolar ve işletme beyanı; KOBİ Dijital Dönüşüm Destek Programı Taahhütnamesi.
+5. Başvuru kanalı (KOBİ Dijital Dönüşüm Destek Programı): KOSGEB KOBİ Bilgi Sistemi (online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+6. İletişim (doğrulanmış): KOSGEB: çağrı merkezi 444 1 567, genel merkez 0 312 595 28 00; Hacı Bayram Mah. İstanbul Cad. No: 32 06050 Ulus / Altındağ / Ankara (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/iletisim) · KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
+7. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.

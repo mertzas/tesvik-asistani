@@ -90,7 +90,7 @@ _BASLIK = {
     # adı "Teknoloji Odaklı Sanayi Hamlesi" ve 9903 kotasını dolduruyordu; 9903 programları
     # zaten kurum adından (Sanayi ve Teknoloji Bakanlığı) yatırım sayılır.
     "yatirim": re.compile(r"yatirim (?:tesvik|destek|kredi)|yatirim-(?:isletme|proje)|yatirimlar|"
-                          r"makine|modernizasyon|imalat|kapasite gelistirme"),
+                          r"makine|modernizasyon|imalat|kapasite gelistirme|turizm yatirim|turizmi tesvik kanunu"),
     "arge": re.compile(r"ar-?ge|inovasyon|tasarim|patent"),
     "ihracat": re.compile(r"ihracat|pazara giris|doviz kazandirici|e-ihracat|uluslararasi pazar"),
     "istihdam": re.compile(r"istihdam"),
@@ -112,6 +112,13 @@ _GIRISIM_HARIC = re.compile(r"uygulayici kurulus|girisim sermayesi|kapasite arti
 # profil filtresinde ele alınır, burada yalnızca ihtiyaç türü belirlenir.
 
 
+# İşyeri yenileme/tadilat bir yatırımdır ("butik otelimizi yenilemek", persona denemesi 2026-10-12); belge, ruhsat
+# ya da üyelik yenileme değildir. Bahçe/fidan yenileme tarım alt kategorisinde ele alınır (makine notu yukarıda).
+_YENILEME = re.compile(r"\b(?:yenile(?:me|mek|yecek|yip|rek)\w*|tadilat\w*|renovasyon\w*|restorasyon\w*)")
+_YENILEME_DISI = re.compile(r"belge|sertifika|ruhsat|lisans|sozlesme|uyelik|kayit|abonelik|bahce|tarla|fidan|agac|"
+                            r"ocak|bag\b|kredi(?:mi|yi) yenile")
+
+
 _FIRMA_ARGE = re.compile(
     r"ar-?ge projeleri|kobi ar-?ge|ar-?ge baslangic|oncelikli alanlar|universite-sanayi|"
     r"eureka|eurostars|sanayide yesil donusum")
@@ -125,6 +132,10 @@ def soru_ihtiyaclari(soru: str) -> list[str]:
         m = kalip.search(metin)
         if m:
             bulunan.append((m.start(), ad))
+    if "yatirim" not in {ad for _, ad in bulunan}:
+        m = _YENILEME.search(metin)
+        if m and not _YENILEME_DISI.search(metin):
+            bulunan.append((m.start(), "yatirim"))
     ihtiyaclar = [ad for _, ad in sorted(bulunan)]
     if "sigorta" in ihtiyaclar and _SGK_SIGORTA.search(metin) and not re.search(r"tarsim|dolu|don\b|afet|alacak", metin):
         ihtiyaclar.remove("sigorta")

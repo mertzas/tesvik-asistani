@@ -65,7 +65,7 @@
 **Birlikte kullanım hükmü kayıtta olmayan programlar:** KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi. Aynı harcamanın bu programlardan birlikte desteklenip desteklenemeyeceğini kurumlardan teyit edin.
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Girişimci Destek Programı, KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
+- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Girişimci Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **Girişimci Destek Programı:** KOSGEB veri tabanına kayıtlı ve aktif olmalı
 
 ### 4. Adım Adım Yol Haritası

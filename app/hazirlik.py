@@ -87,8 +87,12 @@ def _metin(t) -> str:
 
 def program_adimlari(t) -> list[str]:
     metin = _metin(t)
+    # Kurumun tüm programlarında aranan kayıt (KOSGEB veri tabanı), başvurusuz ücretsiz eğitimde aranmaz (hakem bulgusu
+    # 2026-10-12, 4. tur: e-Akademi'ye "KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi" ön koşulu yazılıyordu).
+    basvurusuz = bool(re.search(r"parasal destek değil", getattr(t, "tesvil_tutari", None) or ""))
     return [a.kod for a in ADIMLAR.values()
-            if (a.kurum and t.kurum == a.kurum) or (a.kalip and re.search(a.kalip, metin, re.IGNORECASE))]
+            if (a.kurum and t.kurum == a.kurum and not basvurusuz)
+            or (a.kalip and re.search(a.kalip, metin, re.IGNORECASE))]
 
 
 def _kopya(p: FinancialProfile, **degisen) -> FinancialProfile:

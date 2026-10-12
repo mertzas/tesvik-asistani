@@ -250,3 +250,73 @@ def test_girisimcilik_egitimi_girisim_ihtiyacidir():
     t = _t(kurum="KOSGEB", baslik="KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri "
                                   "Girişimcilik Eğitimi")
     assert program_ihtiyaclari(t) == {"girisim"}
+
+
+# ------------------------------------------------------------------ dördüncü hakem turu bulguları
+def test_ek3_sutun_kaymasi_duzeldi():
+    from app.nace_9903 import ek3_kaydi
+    assert ek3_kaydi("55.10")["sartlar"].startswith("50 oda ve üzeri"), "otel: oda şartı şart sütununda"
+    assert "100 Milyon TL ve üzerindeki tevsi ve modernizasyon" in ek3_kaydi("18.12")["sartlar"]
+    assert ek3_kaydi("82.20")["sartlar"].startswith("Sadece 6 ncı bölgede"), "çağrı merkezi şartı tanımda kalmıştı"
+    assert "Demir cevherinin" in ek3_kaydi("24.10.08")["tanim"], "komşu kodun (ferro alaşım) metni yazılmıştı"
+
+
+def test_soru_yatirim_tutari_ve_9903_asgari():
+    from app.tesvik_9903_uygunluk import degerlendir, soru_yatirim_tutari, tutar_siniri
+    assert soru_yatirim_tutari("yaklaşık 4 milyon TL'lik baskı makinesi") == 4_000_000
+    assert soru_yatirim_tutari("750 bin TL") == 750_000 and soru_yatirim_tutari("%50 hibe") is None
+    matbaa = tutar_siniri(degerlendir("hedef_yatirimlar", "18.12", "İstanbul", "kucuk"), 4e6, "İstanbul")
+    assert matbaa.durum == "uygun_degil" and "EK-3 kalem şartının altında" in matbaa.gerekce
+    otel = tutar_siniri(degerlendir("hedef_yatirimlar", "55.10", "Antalya", "kucuk"), 8e6, "Antalya")
+    assert otel.durum == "uygun_degil" and otel.madde == "MADDE 5/2"
+    buyuk = tutar_siniri(degerlendir("hedef_yatirimlar", "55.10", "Antalya", "kucuk"), 50e6, "Antalya")
+    assert buyuk.durum == "sartli"
+
+
+def test_tesvik_belgesi_satiri_kisa_cevapta():
+    p = FinancialProfile(sektor="imalat", nace_kodu="18.12", sirket_turu="limited", calisan_sayisi=6,
+                         yillik_ciro=9e6, bolge="İstanbul")
+    s = yerel_danisman.tesvik_belgesi_satiri("4 milyon TL'lik makine için hangi kredi, hibe ya da teşvik belgesi?", p, [])
+    assert "Hedef Yatırımlar" in s and "uygun değil" in s
+    assert yerel_danisman.tesvik_belgesi_satiri("Makine kredisi var mı?", p, []) == ""
+
+
+def test_usd_esigi_sart_metninden():
+    t = _t(kurum="Ticaret Bakanlığı", baslik="Marka", kontrol_listesi=[
+        {"tur": "sart", "metin": "Son 3 yıl ortalama ihracatın en az 3.000.000 ABD Doları olması"}])
+    assert yerel_danisman.usd_esigi(t) == (3_000_000, "ihracat")
+    g = _t(kurum="Ticaret Bakanlığı", baslik="Markalaşma", kontrol_listesi=[
+        {"tur": "sart", "metin": "Son üç takvim yılı gelirlerinin ortalaması en az 1.500.000 ABD doları olmalıdır."}])
+    assert yerel_danisman.usd_esigi(g) == (1_500_000, "gelir")
+    ithalat = _t(kurum="Sanayi", baslik="Hamle", kontrol_listesi=[
+        {"tur": "sart", "metin": "konu ürünün son 1 yıldaki toplam ithalatı en az 50 milyon ABD doları"}])
+    assert yerel_danisman.usd_esigi(ithalat) is None
+
+
+def test_tobb_uyeligi_sirkette_saglanir():
+    sart = "TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi)"
+    assert "oda (TOBB) üyeliği" in yerel_danisman._profilden_karsilanan(sart, FinancialProfile(sirket_turu="limited"))
+    assert yerel_danisman._profilden_karsilanan(sart, FinancialProfile(sirket_turu="sahis")) is None
+    assert yerel_danisman._profilden_karsilanan("Esnaf ve sanatkârlar odası üyesi olmak",
+                                               FinancialProfile(sirket_turu="limited")) is None
+
+
+def test_ise_alinacak_kisi_sarti_kilit_degil(db_session):
+    from datetime import date
+    t = _t(id=941, kurum="SGK / İŞKUR", baslik="Kadın, Genç ve MYB İstihdamı Teşviki", kontrol_listesi=[
+        {"tur": "sart", "metin": "İşe alınan kişinin son 6 aydır işsiz olması"}])
+    p = FinancialProfile(sektor="hizmet", sirket_turu="limited", calisan_sayisi=9, yillik_ciro=7.5e6)
+    d = yerel_danisman.degerlendir([t], p, {}, {}, set(), set(), date(2026, 10, 12), soru="Yeni çalışan alırsak?")[0]
+    assert d.karar == "belirlenemedi" and d.gerekce[0].startswith(yerel_danisman.KISI_ONEKI)
+    assert not any(g.startswith(yerel_danisman.KILIT_ONEKI) for g in d.gerekce)
+
+
+def test_yenileme_yatirim_ihtiyaci_ve_kosgeb_kaydi():
+    assert "yatirim" in soru_ihtiyaclari("Butik otelimizi yenilemek için kredi ya da hibe var mı?")
+    assert "yatirim" not in soru_ihtiyaclari("Teşvik belgemi yenilemem gerekiyor mu?")
+    assert "yatirim" not in soru_ihtiyaclari("Bahçeyi yenilemek ve damla sulama kurmak için kredi var mı?")
+    from app.hazirlik import program_adimlari
+    egitim = _t(kurum="KOSGEB", baslik="KOSGEB Girişimcilik Eğitimi (e-Akademi)",
+                tesvil_tutari="Ücretsiz eğitim (parasal destek değildir)")
+    assert "kosgeb_kaydi" not in program_adimlari(egitim)
+    assert "kosgeb_kaydi" in program_adimlari(_t(kurum="KOSGEB", baslik="Girişimci Destek Programı"))

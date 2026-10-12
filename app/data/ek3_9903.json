@@ -3,7 +3,7 @@
  "kaynak_url": "https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf",
  "resmi_gazete": "https://www.resmigazete.gov.tr/eskiler/2025/05/20250530-2.pdf",
  "cikarma_tarihi": "2026-09-26",
- "not": "PDF'ten otomatik cikarildi; sartlar SERBEST METIN olarak saklanir.",
+ "not": "PDF'ten otomatik cikarildi; sartlar SERBEST METIN olarak saklanir. Sütun kayması düzeltmesi 2026-10-12 (scripts/fix_ek3_9903_2026_10_12.py; resmî metinle birebir doğrulandı).",
  "bolum_sartlari": {
   "B": "Maden Kanununda tanımlanan I.  grup madenler, altın madenciliği, mıcır yatırımları ve rödovans  sözleşmesine istinaden gerçekleştirilecek madencilik yatırımları hariç olmak üzere müracaat sahibi firma adına düzenlenmiş işletme ruhsatı ve işletme iznine haiz maden istihraç yatırımları ve/veya maden işleme yatırımları , Maden Kanununa istinaden düzenle nmiş geçerli arama ruhsatı veya sertifikasına sahip yatırımcıların ruhsatlı sahalarında yapacağı maden arama yatırımları  ile ham petrol ve doğalgaz çıkarımı yatırımları  desteklenir. II.grup madenlerde istihraç yatırımları, aynı il sınırları içinde ve işleme yatırımları ile entegre olması kaydıyla desteklenebilir. Ancak, İstanbul ilinde gerçekleştirilecek yatırımlar desteklenmez.",
   "D": "Yenilenemeyen kaynaklardan elektrik üretimi Yenilenebilir kaynaklardan elektrik üretimi Doğalgaza veya ithal kömüre dayalı elektrik enerjisi üretimi hariç olmak üzere elektrik enerjisi üretimi yatırımları desteklenir. Güneş enerjisinden elektrik üretimi yatırımlarında; modernizasyon niteliğindeki yatırımlar ile 240 KW altı kapasitedeki (çatı dâhil) güneş enerjisinden elektrik üretimi yatırımlar desteklenmez."
@@ -42,14 +42,14 @@
    "bolum": "A",
    "bolum_ad": "TARIM, ORMANCILIK VE BALIKÇILIK",
    "tanim": "Kümes hayvanlarının yetiştirilmesi (tavuk, hindi, ördek, kaz ve beç tavuğu vb.)",
-   "sartlar": "yemi tesisi ile entegre edilebilir."
+   "sartlar": "a) Damızlık kümes hayvanları yetiştiriciliğinin kuluçkahane ile entegre olması şartı aranır. b) 1, 2, 3, 4 ve 5. Bölgelerde asgari 200.000 adet/dönem et yönlü kümes hayvanları yetiştiriciliğinin kesimhane ile entegre olması şartı aranır. c) 6. Bölgede asgari 100.000 adet/dönem et yönlü kümes hayvanları yetiştiriciliğinin kesimhane ile entegre olması şartı aranır. d) 1, 2, 3, 4 ve 5. Bölgelerde asgari 200.000 adet/dönem yumurta yönlü kümes hayvanları yetiştiriciliği şartı aranır. e) 6. Bölgede asgari asgari 100.000 adet/dönem yumurta yönlü kümes hayvanları yetiştiriciliği şartı aranır. Ayrıca, tevsi ve komple yeni yatırım cinsindeki yatırımlar; yem tesisi ve/veya et yönlü kümes hayvanları yetiştiriciliği yatırımları ileri işleme ve/veya soğuk hava deposu, yumurta yönlü kümes hayvanları yetiştiriciliği yatırımları soğuk hava deposu ve/veya yumurta tasnif-paketleme yatırımları ile entegre edilebilir."
   },
   {
    "kod": "01.47.03",
    "bolum": "A",
    "bolum_ad": "TARIM, ORMANCILIK VE BALIKÇILIK",
    "tanim": "Kümes hayvanlarından yumurta üretilmesi",
-   "sartlar": "yemi tesisi ile entegre edilebilir."
+   "sartlar": "a) Damızlık kümes hayvanları yetiştiriciliğinin kuluçkahane ile entegre olması şartı aranır. b) 1, 2, 3, 4 ve 5. Bölgelerde asgari 200.000 adet/dönem et yönlü kümes hayvanları yetiştiriciliğinin kesimhane ile entegre olması şartı aranır. c) 6. Bölgede asgari 100.000 adet/dönem et yönlü kümes hayvanları yetiştiriciliğinin kesimhane ile entegre olması şartı aranır. d) 1, 2, 3, 4 ve 5. Bölgelerde asgari 200.000 adet/dönem yumurta yönlü kümes hayvanları yetiştiriciliği şartı aranır. e) 6. Bölgede asgari asgari 100.000 adet/dönem yumurta yönlü kümes hayvanları yetiştiriciliği şartı aranır. Ayrıca, tevsi ve komple yeni yatırım cinsindeki yatırımlar; yem tesisi ve/veya et yönlü kümes hayvanları yetiştiriciliği yatırımları ileri işleme ve/veya soğuk hava deposu, yumurta yönlü kümes hayvanları yetiştiriciliği yatırımları soğuk hava deposu ve/veya yumurta tasnif-paketleme yatırımları ile entegre edilebilir."
   },
   {
    "kod": "03.2",
@@ -69,8 +69,8 @@
    "kod": "10.3",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Sebze ve meyvelerin işlenmesi ve saklanması Sadece sarartma ve mumlama işlemi içeren meyve",
-   "sartlar": "ve/veya sebze yatırımları desteklenmez."
+   "tanim": "Sebze ve meyvelerin işlenmesi ve saklanması",
+   "sartlar": "Sadece sarartma ve mumlama işlemi içeren meyve ve/veya sebze yatırımları desteklenmez."
   },
   {
    "kod": "10.4",
@@ -83,8 +83,8 @@
    "kod": "10.5",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Süt ürünleri ve yenilebilir buz imalatı 5 ton/gün altındaki kapasiteye sahip süt işleme",
-   "sartlar": "yatırımları desteklenmez"
+   "tanim": "Süt ürünleri ve yenilebilir buz imalatı",
+   "sartlar": "5 ton/gün altındaki kapasiteye sahip süt işleme yatırımları desteklenmez"
   },
   {
    "kod": "10.8",
@@ -104,15 +104,15 @@
    "kod": "10.61.01",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Kahvaltılık tahıl ürünleri ile diğer taneli tahıl ürünlerinin imalatı (buğday, yulaf, mısır, çavdar vb.",
-   "sartlar": "ezmeleri ile mısır gevreği ve patlamış mısır dahil)"
+   "tanim": "Kahvaltılık tahıl ürünleri ile diğer taneli tahıl ürünlerinin imalatı (buğday, yulaf, mısır, çavdar vb. ezmeleri ile mısır gevreği ve patlamış mısır dahil)",
+   "sartlar": ""
   },
   {
    "kod": "10.61.07",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Ön pişirme yapılmış veya başka şekilde hazırlanmış tane halde hububat imalatı (bulgur dahil,",
-   "sartlar": "mısır hariç)"
+   "tanim": "Ön pişirme yapılmış veya başka şekilde hazırlanmış tane halde hububat imalatı (bulgur dahil, mısır hariç)",
+   "sartlar": ""
   },
   {
    "kod": "10.61.90",
@@ -139,8 +139,8 @@
    "kod": "10.72",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Peksimet, bisküvi, dayanıklı pastane ürünleri ve kek imalatı Kadayıf ve yufka üretimi konusundaki yatırımlar",
-   "sartlar": "desteklenmez."
+   "tanim": "Peksimet, bisküvi, dayanıklı pastane ürünleri ve kek imalatı",
+   "sartlar": "Kadayıf ve yufka üretimi konusundaki yatırımlar desteklenmez."
   },
   {
    "kod": "10.73",
@@ -181,15 +181,15 @@
    "kod": "15",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Diğer malzemelerden deri ve ilgili ürünlerin imalatı Derinin tabaklanmasına yönelik yatırımlar sadece",
-   "sartlar": "organize sanayi bölgelerinde teşvik edilir."
+   "tanim": "Diğer malzemelerden deri ve ilgili ürünlerin imalatı",
+   "sartlar": "Derinin tabaklanmasına yönelik yatırımlar sadece organize sanayi bölgelerinde teşvik edilir."
   },
   {
    "kod": "16",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Ağaç, ağaç ürünleri ve mantar ürünleri imalatı (mobilya hariç); saz, saman ve benzeri",
-   "sartlar": "malzemelerden örülerek yapılan eşyaların imalatı 16.11.03 hariç"
+   "tanim": "Ağaç, ağaç ürünleri ve mantar ürünleri imalatı (mobilya hariç); saz, saman ve benzeri malzemelerden örülerek yapılan eşyaların imalatı 16.11.03 hariç",
+   "sartlar": ""
   },
   {
    "kod": "17",
@@ -202,8 +202,8 @@
    "kod": "18",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Kayıtlı medyanın basılması ve çoğaltılması Sabit yatırım tutarı 100 Milyon TL ve üzerindeki tevsi",
-   "sartlar": "ve modernizasyon yatırımları desteklenir."
+   "tanim": "Kayıtlı medyanın basılması ve çoğaltılması",
+   "sartlar": "Sabit yatırım tutarı 100 Milyon TL ve üzerindeki tevsi ve modernizasyon yatırımları desteklenir."
   },
   {
    "kod": "19",
@@ -237,8 +237,8 @@
    "kod": "22.2",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Plastik ürünlerin imalatı Sabit yatırım tutarı 100 Milyon TL ve üzerindeki",
-   "sartlar": "yatırımlar desteklenir."
+   "tanim": "Plastik ürünlerin imalatı",
+   "sartlar": "Sabit yatırım tutarı 100 Milyon TL ve üzerindeki yatırımlar desteklenir."
   },
   {
    "kod": "23",
@@ -265,22 +265,22 @@
    "kod": "24.10.05",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Sıcak haddelenmiş demir veya çelikten bar ve çubukların üretilmesi (inşaat demiri dahil) Sadece parlatılmış çubuk üretimi desteklenir.",
-   "sartlar": "Demir cevherinin doğrudan indirgenmesiyle elde edilen demirli ürünler ve diğer sünger demir ürünlerinin imalatı ile elektroliz veya diğer kimyasal yöntemlerle istisnai saflıkta demir üretilmesi"
+   "tanim": "Sıcak haddelenmiş demir veya çelikten bar ve çubukların üretilmesi (inşaat demiri dahil)",
+   "sartlar": "Sadece parlatılmış çubuk üretimi desteklenir."
   },
   {
    "kod": "24.10.08",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Ferro alaşımların imalatı (ferro manganez, ferro silisyum, ferro siliko manganez, ferro krom ve",
-   "sartlar": "diğerleri) Yüksek karbonlu ferro manganez hariç."
+   "tanim": "Demir cevherinin doğrudan indirgenmesiyle elde edilen demirli ürünler ve diğer sünger demir ürünlerinin imalatı ile elektroliz veya diğer kimyasal yöntemlerle istisnai saflıkta demir üretilmesi",
+   "sartlar": ""
   },
   {
    "kod": "24.10.12",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Ferro alaşımların imalatı (ferro manganez, ferro silisyum, ferro siliko manganez, ferro krom ve",
-   "sartlar": "diğerleri) Yüksek karbonlu ferro manganez hariç."
+   "tanim": "Ferro alaşımların imalatı (ferro manganez, ferro silisyum, ferro siliko manganez, ferro krom ve diğerleri)",
+   "sartlar": "Yüksek karbonlu ferro manganez hariç."
   },
   {
    "kod": "25",
@@ -342,8 +342,8 @@
    "kod": "33.12.03",
    "bolum": "C",
    "bolum_ad": "İMALAT",
-   "tanim": "Motor ve türbinlerin onarım ve bakımı (hidrolik, rüzgar, gaz, su, buhar türbinleri) (gemi ve tekne",
-   "sartlar": "motorları, motorlu kara taşıtı ve motosiklet motorları hariç)"
+   "tanim": "Motor ve türbinlerin onarım ve bakımı (hidrolik, rüzgar, gaz, su, buhar türbinleri) (gemi ve tekne motorları, motorlu kara taşıtı ve motosiklet motorları hariç)",
+   "sartlar": ""
   },
   {
    "kod": "33.16",
@@ -363,29 +363,29 @@
    "kod": "35.11",
    "bolum": "D",
    "bolum_ad": "ELEKTRİK, GAZ, BUHAR VE İKLİMLENDİRME ÜRETİMİ VE DAĞITIMI",
-   "tanim": "Elektrik enerjisinin dağıtımı (üretim kaynağından veya iletim sisteminden son kullanıcıya iletim",
-   "sartlar": "sistemiyle taşınan elektrik enerjisi dağıtım sisteminin işletilmesi)"
+   "tanim": "Yenilenemeyen kaynaklardan elektrik üretimi",
+   "sartlar": ""
   },
   {
    "kod": "35.12",
    "bolum": "D",
    "bolum_ad": "ELEKTRİK, GAZ, BUHAR VE İKLİMLENDİRME ÜRETİMİ VE DAĞITIMI",
-   "tanim": "Elektrik enerjisinin dağıtımı (üretim kaynağından veya iletim sisteminden son kullanıcıya iletim",
-   "sartlar": "sistemiyle taşınan elektrik enerjisi dağıtım sisteminin işletilmesi)"
+   "tanim": "Yenilenebilir kaynaklardan elektrik üretimi",
+   "sartlar": ""
   },
   {
    "kod": "35.14.06",
    "bolum": "D",
    "bolum_ad": "ELEKTRİK, GAZ, BUHAR VE İKLİMLENDİRME ÜRETİMİ VE DAĞITIMI",
-   "tanim": "Elektrik enerjisinin dağıtımı (üretim kaynağından veya iletim sisteminden son kullanıcıya iletim",
-   "sartlar": "sistemiyle taşınan elektrik enerjisi dağıtım sisteminin işletilmesi)"
+   "tanim": "Elektrik enerjisinin dağıtımı (üretim kaynağından veya iletim sisteminden son kullanıcıya iletim sistemiyle taşınan elektrik enerjisi dağıtım sisteminin işletilmesi)",
+   "sartlar": ""
   },
   {
    "kod": "35.15.01",
    "bolum": "D",
    "bolum_ad": "ELEKTRİK, GAZ, BUHAR VE İKLİMLENDİRME ÜRETİMİ VE DAĞITIMI",
-   "tanim": "Elektrikli araçlar ve elektronik cihazlar için şarj istasyonlarının işletilmesi Tebliğ ile belirlenecek şartları sağlayan yatırımlar",
-   "sartlar": "desteklenir."
+   "tanim": "Elektrikli araçlar ve elektronik cihazlar için şarj istasyonlarının işletilmesi",
+   "sartlar": "Tebliğ ile belirlenecek şartları sağlayan yatırımlar desteklenir."
   },
   {
    "kod": "35.16",
@@ -398,8 +398,8 @@
    "kod": "35.22.01",
    "bolum": "D",
    "bolum_ad": "ELEKTRİK, GAZ, BUHAR VE İKLİMLENDİRME ÜRETİMİ VE DAĞITIMI",
-   "tanim": "Ana şebeke üzerinden gaz yakıtların dağıtımı (her çeşit gazlı yakıtın, ana boru sistemiyle dağıtımı",
-   "sartlar": "ve tedariki)"
+   "tanim": "Ana şebeke üzerinden gaz yakıtların dağıtımı (her çeşit gazlı yakıtın, ana boru sistemiyle dağıtımı ve tedariki)",
+   "sartlar": ""
   },
   {
    "kod": "35.24",
@@ -440,8 +440,8 @@
    "kod": "50.10.13",
    "bolum": "H",
    "bolum_ad": "ULAŞTIRMA VE DEPOLAMA",
-   "tanim": "Kıyı sularında yolcuların feribotlarla, kruvaziyer gemilerle ve teknelerle taşınması (deniz",
-   "sartlar": "otobüsleri işletmeciliği dahil; uluslararası denizler ile göl ve nehirlerde yapılanlar hariç) Gezinti amaçlı olanlar hariç"
+   "tanim": "Kıyı sularında yolcuların feribotlarla, kruvaziyer gemilerle ve teknelerle taşınması (deniz otobüsleri işletmeciliği dahil; uluslararası denizler ile göl ve nehirlerde yapılanlar hariç)",
+   "sartlar": "Gezinti amaçlı olanlar hariç"
   },
   {
    "kod": "50.10.16",
@@ -461,8 +461,8 @@
    "kod": "50.30.08",
    "bolum": "H",
    "bolum_ad": "ULAŞTIRMA VE DEPOLAMA",
-   "tanim": "İç sularda yolcu taşımacılığı (nehir, kanal ve göllerde yapılanlar, vb.) (gezinti amaçlı olanlar",
-   "sartlar": "dahil) Gezinti amaçlı olanlar hariç"
+   "tanim": "İç sularda yolcu taşımacılığı (nehir, kanal ve göllerde yapılanlar, vb.) (gezinti amaçlı olanlar dahil)",
+   "sartlar": "Gezinti amaçlı olanlar hariç"
   },
   {
    "kod": "50.40",
@@ -482,15 +482,15 @@
    "kod": "52.10.02",
    "bolum": "H",
    "bolum_ad": "ULAŞTIRMA VE DEPOLAMA",
-   "tanim": "Frigorifik depolama ve antrepoculuk faaliyetleri (bozulabilir gıda ürünleri dahil dondurulmuş",
-   "sartlar": "veya soğutulmuş mallar için depolama) Sadece 1.000 m2 üzeri soğuk hava deposu yatırımları desteklenir."
+   "tanim": "Frigorifik depolama ve antrepoculuk faaliyetleri (bozulabilir gıda ürünleri dahil dondurulmuş veya soğutulmuş mallar için depolama)",
+   "sartlar": "Sadece 1.000 m2 üzeri soğuk hava deposu yatırımları desteklenir."
   },
   {
    "kod": "52.10.03",
    "bolum": "H",
    "bolum_ad": "ULAŞTIRMA VE DEPOLAMA",
-   "tanim": "Hububat depolama ve antrepoculuk faaliyetleri (hububat silolarının işletilmesi vb.) Sadece lisanslı depoculuk faaliyetleri desteklenir",
-   "sartlar": ""
+   "tanim": "Hububat depolama ve antrepoculuk faaliyetleri (hububat silolarının işletilmesi vb.)",
+   "sartlar": "Sadece lisanslı depoculuk faaliyetleri desteklenir"
   },
   {
    "kod": "52.10.04",
@@ -503,15 +503,15 @@
    "kod": "52.22.06",
    "bolum": "H",
    "bolum_ad": "ULAŞTIRMA VE DEPOLAMA",
-   "tanim": "Deniz ve kıyı suları ile iç sularda kılavuzluk ve rıhtıma yanaştırma faaliyetleri (geminin",
-   "sartlar": "havuzlanması ve havuzdan çıkarılması dahil)"
+   "tanim": "Su yolu taşımacılığını destekleyici olarak liman ve su yollarının işletilmesi (limanların, iskelelerin, rıhtımların, su yolu havuzlarının, deniz terminallerinin vb. işletilmesi) (deniz feneri, fener dubası vb. işletilmesi hariç)",
+   "sartlar": ""
   },
   {
    "kod": "52.22.08",
    "bolum": "H",
    "bolum_ad": "ULAŞTIRMA VE DEPOLAMA",
-   "tanim": "Deniz ve kıyı suları ile iç sularda kılavuzluk ve rıhtıma yanaştırma faaliyetleri (geminin",
-   "sartlar": "havuzlanması ve havuzdan çıkarılması dahil)"
+   "tanim": "Deniz ve kıyı suları ile iç sularda kılavuzluk ve rıhtıma yanaştırma faaliyetleri (geminin havuzlanması ve havuzdan çıkarılması dahil)",
+   "sartlar": ""
   },
   {
    "kod": "52.23.03",
@@ -524,8 +524,8 @@
    "kod": "52.23.04",
    "bolum": "H",
    "bolum_ad": "ULAŞTIRMA VE DEPOLAMA",
-   "tanim": "Havaalanı işletmeciliği (uçak pisti işletme, yolcu terminali ve havayolu şirketlerinin kendi bilet",
-   "sartlar": "satış hizmetleri dahil; havaalanı yer hizmetleri ve bilet acentelerinin faaliyetleri hariç)"
+   "tanim": "Havaalanı işletmeciliği (uçak pisti işletme, yolcu terminali ve havayolu şirketlerinin kendi bilet satış hizmetleri dahil; havaalanı yer hizmetleri ve bilet acentelerinin faaliyetleri hariç)",
+   "sartlar": ""
   },
   {
    "kod": "52.24",
@@ -538,15 +538,15 @@
    "kod": "55.1",
    "bolum": "I",
    "bolum_ad": "KONAKLAMA VE YİYECEK HİZMETİ FAALİYETLERİ",
-   "tanim": "Oteller ve benzeri konaklama yerleri 50 oda ve üzeri (Otel, Tatil Köyü, Butik Otel ve Özel",
-   "sartlar": "Konaklama Tesisi desteklenir)"
+   "tanim": "Oteller ve benzeri konaklama yerleri",
+   "sartlar": "50 oda ve üzeri (Otel, Tatil Köyü, Butik Otel ve Özel Konaklama Tesisi desteklenir)"
   },
   {
    "kod": "55.90.01",
    "bolum": "I",
    "bolum_ad": "KONAKLAMA VE YİYECEK HİZMETİ FAALİYETLERİ",
-   "tanim": "Öğrenci ve işçi yurtları, pansiyonlar ve odası kiralanan evlerde yapılan konaklama faaliyetleri",
-   "sartlar": "(tatil amaçlı olanlar hariç) Sadece asgari 200 öğrenci kapasitesindeki Öğrenci yurtları desteklenir."
+   "tanim": "Öğrenci ve işçi yurtları, pansiyonlar ve odası kiralanan evlerde yapılan konaklama faaliyetleri (tatil amaçlı olanlar hariç)",
+   "sartlar": "Sadece asgari 200 öğrenci kapasitesindeki Öğrenci yurtları desteklenir."
   },
   {
    "kod": "62.1",
@@ -587,8 +587,8 @@
    "kod": "82.2",
    "bolum": "O",
    "bolum_ad": "İDARİ VE DESTEK HİZMET FAALİYETLERİ",
-   "tanim": "Çağrı merkezlerinin faaliyetleri Sadece 6 ncı bölgede yapılan yatırımlar desteklenir.",
-   "sartlar": ""
+   "tanim": "Çağrı merkezlerinin faaliyetleri",
+   "sartlar": "Sadece 6 ncı bölgede yapılan yatırımlar desteklenir."
   },
   {
    "kod": "85",

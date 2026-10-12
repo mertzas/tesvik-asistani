@@ -1,6 +1,6 @@
 # Kapsam matrisi (2026-10-12)
 
-468 hücre (7 sektör × 12 il × ihtiyaç). Kayıt düzeyi: VAR 396, İNCE 49, BOŞ 23. Ürün düzeyi (yanıtta engelsiz, açık ve ihtiyaca uygun bir program kartı): 410/468. Süre 260 sn.
+468 hücre (7 sektör × 12 il × ihtiyaç). Kayıt düzeyi: VAR 396, İNCE 49, BOŞ 23. Ürün düzeyi (yanıtta engelsiz, açık ve ihtiyaca uygun bir program kartı): 410/468. Süre 262 sn.
 
 Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak gösteriyor, ✗ = göstermiyor).
 

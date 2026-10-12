@@ -2,6 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)** (Sanayi ve Teknoloji Bakanlığı) — şarta bağlı (Karar metnine göre ön değerlendirme: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ; kayıtlarımızda yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7)); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı).
 - Yatırım teşvik bölgeniz: 1. bölge (Karar değerlendirmesinden).
+- Asgari sabit yatırım tutarı 1. bölgede 12 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez.
 - Destek unsurları (Karar metninden): vergi indirimi: yatırıma katkı oranı %50, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 8 yıl (MADDE 18/3, 1. bölge); faiz/kâr payı desteği: repo oranının %40'i, azami 20 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı, azami 5 yıl (MADDE 15); makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteğiyle birlikte alınamaz (MADDE 16); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
 - Diğer seçenekler: TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (şarta bağlı); HALKBANK İLK ADIM KREDİSİ PROJESİ (şarta bağlı).
 - 3 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
@@ -22,6 +23,7 @@
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı
 - **Destek unsurları (Karar metninden, bölgenize göre):** vergi indirimi: yatırıma katkı oranı %50, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 8 yıl (MADDE 18/3, 1. bölge); faiz/kâr payı desteği: repo oranının %40'i, azami 20 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı, azami 5 yıl (MADDE 15); makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteğiyle birlikte alınamaz (MADDE 16); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ Asgari sabit yatırım tutarı 1. bölgede 12 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez
   - ☐ Desteklenecek yatırım konuları il bazlı 'yerel yatırım konuları listesi' ile tebliğle belirlenir; program Kalkınma Ajansları Genel Müdürlüğünce yürütülür (MADDE 7). — resmî metin: “çerçevesinde her il özelinde belirlenecek dört yatırım konusunun yer aldığı, Bakanlık tebliği ile yayımlanacak olan listeyi”
   - ☐ Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2). — resmî metin: “1 inci ve 2 nci bölgelerde 12 milyon TL, diğer bölgelerde ise 6 milyon TL olması gerekir.”
   - ☐ Yatırımlar Yerel Kalkınma Hamlesi Programı Değerlendirme Komitesince proje bazında değerlendirilir; yalnız uygun görülen projeler için teşvik belgesi düzenlenir. — resmî metin: “Yerel Kalkınma Hamlesi Programı Değerlendirme Komitesi tarafından proje bazında değerlendirilir ve uygun görülen projeler için teşvik belgesi düzenlenir.”
@@ -41,12 +43,12 @@
 
 **TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi).
+- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: TOBB'a bağlı ticaret/sanayi/deniz ticaret odası veya ticaret borsası üyeliği.
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Kredi ve kefalet limitleri:** Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
-- **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (mikro işletme)
+- **Profilinize göre sağlanan şartlar:** oda (TOBB) üyeliği: limited şirket ticaret siciline kayıtlıdır ve oda üyeliği zorunludur; KOBİ ölçeği (mikro işletme)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi) — resmî metin: “TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir.”
+  - ☐ TOBB'a bağlı ticaret/sanayi/deniz ticaret odası veya ticaret borsası üyeliği — resmî metin: “TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir.”
 - **Kurallar (kayıttan):**
   - Kredi döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz — resmî metin: “Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz”
   - Kefalet talepleri yalnız TL cinsinden yapılır — resmî metin: “Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır.”
@@ -87,7 +89,8 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.
+1. Planladığınız sabit yatırım tutarı nedir? — teşvik belgesi (9903) asgari sabit yatırım tutarının altındaki yatırıma düzenlenmez (kartlardaki teyit maddesi).
+2. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

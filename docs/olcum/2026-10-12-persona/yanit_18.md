@@ -1,6 +1,6 @@
 <!-- persona: kayseri_mobilya | soru: CNC ve otomatik kenar bantlama makinesi yatırımı için hangi destekler var? -->
 **Kısa cevap:**
-- Öne çıkan: **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)** (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Yatırım konusunun Karar'ın EK-3 listesinde ('Desteklerden faydalanabilecek sektörler ve şartlar') yer alması ve oradaki şartları sağlaması; 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı).
+- Öne çıkan: **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)** (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Asgari sabit yatırım tutarı 2. bölgede 12 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez; 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı).
 - Yatırım teşvik bölgeniz: 2. bölge (Karar değerlendirmesinden).
 - Destek unsurları (Karar metninden): vergi indirimi: yatırıma katkı oranı %20, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 1 yıl (MADDE 18, 2. bölge); faiz/kâr payı desteği: bu programda yalnızca 4, 5, 6. bölgelerde; 2. bölgede YOK (MADDE 15/1-c); makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
 - Diğer seçenekler: YATIRIM-İŞLETME DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); YÖNDE - Yönderlik ve Değerlendirme Destek Programı (profilinize göre engel yok — şartları teyit edin).
@@ -22,6 +22,7 @@
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı
 - **Destek unsurları (Karar metninden, bölgenize göre):** vergi indirimi: yatırıma katkı oranı %20, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 1 yıl (MADDE 18, 2. bölge); faiz/kâr payı desteği: bu programda yalnızca 4, 5, 6. bölgelerde; 2. bölgede YOK (MADDE 15/1-c); makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ Asgari sabit yatırım tutarı 2. bölgede 12 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez
   - ☐ Yatırım konusunun Karar'ın EK-3 listesinde ('Desteklerden faydalanabilecek sektörler ve şartlar') yer alması ve oradaki şartları sağlaması; eşleştirme NACE Rev.2.1 kodu üzerinden yapılır (MADDE 5/1). — resmî metin: “Desteklerden yararlanacak yatırımların ek-3’te belirtilen yatırım konularına yönelik olması ve bu konular için belirtilen şartları sağlaması gerekir.”
   - ☐ Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2). — resmî metin: “1 inci ve 2 nci bölgelerde 12 milyon TL, diğer bölgelerde ise 6 milyon TL olması gerekir.”
 - **Kurallar (kayıttan):**
@@ -88,15 +89,17 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 - **YÖNDE - Yönderlik ve Değerlendirme Destek Programı:** KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması
 
 ### 4. Adım Adım Yol Haritası
-1. Ön koşul kayıtlar: Kayıtlı elektronik posta (KEP) adresi; Yatırım teşvik belgesi; KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
-2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-3. Belgeler (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): E-TUYS yetkilendirmesi için Dilekçe, Taahhütname ve Kullanıcı Yetkilendirme Formu (Bakanlığın KEP adresine Kayıtlı Elektronik Posta ile gönderilir).
-4. Başvuru kanalı (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#hedef-yatirimlar. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
-5. İletişim (doğrulanmış): KOSGEB KAYSERİ MÜDÜRLÜĞÜ: 0 (352) 315 44 99; Organize Sanayi Bölgesi 9.Cad No:1/A Anbar/KAYSERİ (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=38)
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Ön koşul kayıtlar: Kayıtlı elektronik posta (KEP) adresi; Yatırım teşvik belgesi.
+2. Diğer programlar için ayrıca: YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
+3. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+4. Belgeler (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): E-TUYS yetkilendirmesi için Dilekçe, Taahhütname ve Kullanıcı Yetkilendirme Formu (Bakanlığın KEP adresine Kayıtlı Elektronik Posta ile gönderilir).
+5. Başvuru kanalı (Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)): Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#hedef-yatirimlar. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+6. İletişim (doğrulanmış): KOSGEB KAYSERİ MÜDÜRLÜĞÜ: 0 (352) 315 44 99; Organize Sanayi Bölgesi 9.Cad No:1/A Anbar/KAYSERİ (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=38)
+7. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
+1. Planladığınız sabit yatırım tutarı nedir? — teşvik belgesi (9903) asgari sabit yatırım tutarının altındaki yatırıma düzenlenmez (kartlardaki teyit maddesi).
+Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

@@ -59,7 +59,7 @@
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - TKYB KREDİ DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
-- Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı) (Hazine ve Maliye Bakanlığı / Halkbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Genç girişimci kategorisi: KOSGEB Geleneksel veya İleri Girişimci Eğitimi'ni bitiren, başvuru tarihinde 35 yaşını tamamlamamış girişimci esnaf (KOSGEB hibe/faizsiz kredisinden yararlananlar hariç).); Dönemsel çağrı yoktur; krediler 1/1/2025-31/12/2027 tarihleri arasında kullandırılır. Hazine faiz desteği yıllık bütçe ödeneğiyle sınırlıdır.
+- Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı) (Hazine ve Maliye Bakanlığı / Halkbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Genç girişimci kategorisi: KOSGEB Geleneksel veya İleri Girişimci Eğitimi'ni bitiren, başvuru tarihinde 35 yaşını tamamlamamış girişimci esnaf (KOSGEB hibe/faizsiz kredisinden yararlananlar hariç)); Dönemsel çağrı yoktur; krediler 1/1/2025-31/12/2027 tarihleri arasında kullandırılır. Hazine faiz desteği yıllık bütçe ödeneğiyle sınırlıdır.
 - KOSGEB Geri Ödemeli Destekleri (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: KOSGEB tarafından onaylanmış bir destek ödemesi almaya hak kazanmış KOBİ olmak); Sürekli
 
 **Size kapalı ya da başvuruya kapalı programlar:**

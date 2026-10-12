@@ -26,6 +26,7 @@ from app.girisim import GIRISIM_PROMPT_EKI, girisim_baglam_metni, girisim_modu_m
 from app import dayanak, llm_saglayici, yerel_danisman
 from app.nace_extraction import clean_grant_text
 from app.tesvik_9903_uygunluk import SIRALAMA_ETKISI as UYGUNLUK_9903_ETKISI, kayit_icin as uygunluk_9903
+from app.tesvik_9903_uygunluk import soru_yatirim_tutari, tutar_siniri
 from app.tesvik_9903_hesap import destek_unsurlari_ozeti
 from app.nace_9903 import il_bolgesi
 from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu
@@ -367,7 +368,7 @@ def retrieve(query: str, limit: int = 5, profil_kaydi=None) -> list[Tesvik]:
         havuz = [t for t in havuz if _profile_uygun_mu(t, sirket, profil_kaydi)]
         # 9903 programları: EK-3 şartı aranan programda konu listede yoksa (kesin hukuki
         # sonuç) elenir; diğer sonuçlar sıralamayı etkiler (bkz. app/tesvik_9903_uygunluk.py).
-        degerlendirme_9903 = profil_9903_degerlendirmesi(havuz, profil_kaydi)
+        degerlendirme_9903 = profil_9903_degerlendirmesi(havuz, profil_kaydi, query)
         havuz = [t for t in havuz
                  if getattr(degerlendirme_9903.get(t.id), "durum", None) != "uygun_degil"]
 
@@ -406,6 +407,10 @@ def retrieve(query: str, limit: int = 5, profil_kaydi=None) -> list[Tesvik]:
             # İhracat programı ihracatı olmayan profilin kredi sorusunda kotayı doldurmasın (persona denemesi
             # 2026-10-12: sürücü kursunun araç kredisi sorusunda 8 kaydın 8'i Eximbank ihracat kredisiydi).
             p -= 3.0
+        if "istihdam" in aranan and yerel_danisman._DAR_KISI.search(t.baslik or ""):
+            # Dar kişi grubu teşviki (sosyal yardım alan, engelli, yurt dışına gönderilen) "prim teşviki" kelime
+            # eşleşmesiyle geniş kapsamlı işe alım teşvikini (kadın/genç/MYB) kotadan atıyordu (hakem bulgusu 4. tur).
+            p -= 1.0
         return p
 
     havuz.sort(key=lambda t: (-puan(t), t.id))
@@ -425,17 +430,19 @@ def retrieve(query: str, limit: int = 5, profil_kaydi=None) -> list[Tesvik]:
     return secilen
 
 
-def profil_9903_degerlendirmesi(kayitlar, profil_kaydi) -> dict:
-    """{tesvik_id: Uygunluk9903} - yalnızca 9903 program kayıtları için."""
+def profil_9903_degerlendirmesi(kayitlar, profil_kaydi, soru: str = "") -> dict:
+    """{tesvik_id: Uygunluk9903} - yalnızca 9903 program kayıtları için. Soru bir yatırım tutarı veriyorsa
+    ("4 milyon TL'lik makine") asgari sabit yatırımın altındaki programlar "uygun değil" olur."""
     if profil_kaydi is None:
         return {}
     olcek = kobi_sinifi(profil_kaydi.calisan_sayisi, profil_kaydi.yillik_ciro)
+    tutar = soru_yatirim_tutari(soru) if soru and "yatirim" in soru_ihtiyaclari(soru) else None
     sonuc = {}
     for t in kayitlar:
         u = uygunluk_9903(t, getattr(profil_kaydi, "nace_kodu", None), profil_kaydi.bolge,
                           olcek.sinif if olcek.kesin else None)
         if u is not None:
-            sonuc[t.id] = u
+            sonuc[t.id] = tutar_siniri(u, tutar, profil_kaydi.bolge)
     return sonuc
 
 
@@ -472,7 +479,7 @@ def elenen_9903_metni(query: str, profil_kaydi, haric_idler=()) -> str:
     db = SessionLocal()
     try:
         kayitlar = [t for t in db.query(Tesvik).all() if t.aktif_mi is not False and t.id not in haric]
-        degerlendirme = profil_9903_degerlendirmesi(kayitlar, profil_kaydi)
+        degerlendirme = profil_9903_degerlendirmesi(kayitlar, profil_kaydi, query)
         satirlar = [f"- {t.baslik}: {degerlendirme[t.id].metin()}"
                     for t in kayitlar
                     if t.id in degerlendirme and degerlendirme[t.id].durum in ("uygun_degil", "dusuk")]
@@ -935,7 +942,7 @@ def _hazirla(query: str, llm_kullan: bool, profil_kaydi) -> Hazirlik:
             profil_kaydi = varsayim
     if not matches:
         return Hazirlik([], {}, "", False, [], profil_kaydi)
-    notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi).items()}
+    notlar = {i: u.metin() for i, u in profil_9903_degerlendirmesi(matches, profil_kaydi, query).items()}
     # 9903 kayıtlarına Karar'daki oran/süreler (Md.15/16/18/19/20, profil bölgesine göre)
     # eklenir: ölçüm 2026-10-07'de model "SGK/faiz desteğinin oranı bağlamda yok" diyordu.
     bolge = il_bolgesi(profil_kaydi.bolge) if getattr(profil_kaydi, "bolge", None) else None

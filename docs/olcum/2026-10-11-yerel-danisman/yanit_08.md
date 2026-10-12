@@ -25,7 +25,7 @@
 
 **Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) — Ticaret Bakanlığı**
 - **Başvuru dönemi:** Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Düşük olasılık — cironuz eşiğin altında — düşük olasılık: yıllık cironuz (4.000.000 TL), kaydın aradığı önceki yıl en az 1.000.000 USD ihracatın TL karşılığından az; cironuzun tamamı ihracat olsa bile eşiğe ulaşmaz (1 USD 30 TL'nin üzerinde).
+- **Sizin için:** Düşük olasılık — cironuz eşiğin altında — yıllık cironuz (4.000.000 TL), kaydın aradığı en az 1.000.000 USD ihracat eşiğinin TL karşılığından az; cironuzun tamamı ihracat olsa bile eşiğe ulaşmaz (1 USD 30 TL'nin üzerinde).
 - **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** dijital dönüşüm, ihracat
 - **Destek:** %50; 2026 şirketler için yıllık 7.396.548 TL; ülke başına 3 yıl
@@ -61,8 +61,7 @@
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8): uygunluk belirlenemedi (düşük olasılık: yıllık cironuz (4.000.000 TL), kaydın aradığı önceki yıl en az 1.000.000 USD ihracatın TL karşılığından az); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
-Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
+Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

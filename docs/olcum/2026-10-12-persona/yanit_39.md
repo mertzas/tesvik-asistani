@@ -88,12 +88,13 @@
 - **Kayıtlı elektronik posta (KEP) adresi** (Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11)): Şirket adına bir KEP hizmet sağlayıcısından KEP adresi alın.
 
 ### 4. Adım Adım Yol Haritası
-1. Ön koşul kayıtlar: İhracatçı birliği üyeliği; Ticaret Bakanlığı DYS kaydı; Kayıtlı elektronik posta (KEP) adresi.
-2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-3. Belgeler (Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)): Yurt içi marka tescil belgesi; Yurt dışı marka tescil belgesi ya da tescil başvurusu belgesi (İngilizce dışındaysa yeminli tercüme); Fatura; Tescile ilişkin ödeme belgeleri (banka dekontu, kredi kartı ekstresi, hesap dökümü); Varsa avukatlık/hukuki danışmanlık faturası ve ödeme belgeleri; Varsa hukuki sürece ilişkin belgeler (ihtar yazısı, dava dilekçesi).
-4. Başvuru kanalı (Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)): Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-4. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
-5. İletişim (doğrulanmış): Ticaret Bakanlığı: çağrı merkezi 444 8 482, genel merkez 0 312 204 75 00; Söğütözü Mah. Nizami Gencevi Cad. No:63/1, 06530 Çankaya / Ankara (doğrulama: https://ticaret.gov.tr/iletisim)
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Ön koşul kayıtlar: İhracatçı birliği üyeliği; Ticaret Bakanlığı DYS kaydı.
+2. Diğer programlar için ayrıca: Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) — Kayıtlı elektronik posta (KEP) adresi.
+3. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+4. Belgeler (Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)): Yurt içi marka tescil belgesi; Yurt dışı marka tescil belgesi ya da tescil başvurusu belgesi (İngilizce dışındaysa yeminli tercüme); Fatura; Tescile ilişkin ödeme belgeleri (banka dekontu, kredi kartı ekstresi, hesap dökümü); Varsa avukatlık/hukuki danışmanlık faturası ve ödeme belgeleri; Varsa hukuki sürece ilişkin belgeler (ihtar yazısı, dava dilekçesi).
+5. Başvuru kanalı (Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)): Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-4. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+6. İletişim (doğrulanmış): Ticaret Bakanlığı: çağrı merkezi 444 8 482, genel merkez 0 312 204 75 00; Söğütözü Mah. Nizami Gencevi Cad. No:63/1, 06530 Çankaya / Ankara (doğrulama: https://ticaret.gov.tr/iletisim)
+7. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.

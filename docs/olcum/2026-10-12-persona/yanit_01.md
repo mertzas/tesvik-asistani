@@ -69,17 +69,15 @@ Sistemde kaydı olmayan, ayrıca bakabileceğiniz programlar (oran ve şartları
 Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1/2026'dan itibaren 10962 sayılı Karar kapsamındadır; 5447 (E-Turquality) ve 5448 sayılı Kararlar yürürlükten kaldırılmıştır. KOSGEB Ar-Ge/Ür-Ge/İnovasyon ve KOBİGEL programları yürürlükten kaldırılmıştır (kayıtları 'kapalı' olarak sistemde).
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım):** Aşama 1 (hızlandırma programı) için: üniversitede ön lisans/lisans/yüksek lisans/doktora öğrencisi veya mezunu olmak; hızlandırma programına kabul tarihinde herhangi bir sermaye şirketi veya gerçek kişi işletmesinin ortağı olmamak (halka açık şirket payları ve kitle fonlaması payları hariç); daha önce Teknogirişim Sermayesi Desteği veya 1512/1812 2. Aşama desteği almamış olmak
 - **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım):** Başvuru yeri: PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına
 
 ### 4. Adım Adım Yol Haritası
-1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
-2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-3. Belgeler (Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)): Vergi dairesinden 'GVK Mükerrer 20/B Maddesi Uygulamasına İlişkin İstisna Belgesi' alınmalıdır..
-4. Başvuru kanalı (Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)): İkametgâhın bulunduğu yerdeki tarha yetkili vergi dairesi — https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf#mukerrer-20b. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
-5. İletişim (doğrulanmış): KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+2. Belgeler (Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)): Vergi dairesinden 'GVK Mükerrer 20/B Maddesi Uygulamasına İlişkin İstisna Belgesi' alınmalıdır..
+3. Başvuru kanalı (Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)): İkametgâhın bulunduğu yerdeki tarha yetkili vergi dairesi — https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf#mukerrer-20b. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+4. İletişim (doğrulanmış): KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
+5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım): uygunluk belirlenemedi (teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.

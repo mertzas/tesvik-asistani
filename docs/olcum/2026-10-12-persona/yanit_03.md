@@ -65,7 +65,8 @@
 - **Başvuru:** Uluslararası Hizmet Ticareti Genel Müdürlüğü (Genel Müdürlük) ve incelemeci kuruluş (Hizmet İhracatçıları Birliği Genel Sekreterliği) — https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf#madde-29
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Hizmet Sektörleri Atılım Programı — Tekno Hızlandırıcı İhracat Projesi Desteği (10962 sayılı Karar m.25) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Proje onay başvurusunu bilişim sektöründe faaliyet gösteren işbirliği kuruluşu yapar.); Çağrı yoktur; önce işbirliği kuruluşu proje onay başvurusu yapar, faaliyetler için proje onayından sonra ön onay alınır; destek başvurusu faaliyetin tamamlanmasından sonra işbirliği kuruluşu tarafından yapılır.
+- Hizmet Sektörleri Atılım Programı — Tekno Hızlandırıcı İhracat Projesi Desteği (10962 sayılı Karar m.25) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Proje onay başvurusunu bilişim sektöründe faaliyet gösteren işbirliği kuruluşu yapar); Çağrı yoktur; önce işbirliği kuruluşu proje onay başvurusu yapar, faaliyetler için proje onayından sonra ön onay alınır; destek başvurusu faaliyetin tamamlanmasından sonra işbirliği kuruluşu tarafından yapılır.
+- Marka ve TURQUALITY® Desteği (5973 sayılı Karar m.17) (Ticaret Bakanlığı) — düşük olasılık — cironuz eşiğin altında (yıllık cironuz (60.000 TL), kaydın aradığı en az 3.000.000 USD ihracat eşiğinin TL karşılığından az); Çağrı yoktur; kapsama alınma başvurusu sistem üzerinden Bakanlığa yapılır. Ödeme başvurusu, ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Küresel Rekabetçilik Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 1. başvuru dönemi: kapandı (30.09.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)
@@ -93,7 +94,7 @@ Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1
 - **Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı):** Türkiye'de yerleşik, TTK'ya göre kurulmuş bir şirket veya kooperatif olmak (üniversite, yüksek teknoloji enstitüsü, vakıf meslek yüksekokulu ve Bakanlıkça uygun görülen diğer kurumlar da yararlanıcı tanımındadır).
 
 ### 4. Adım Adım Yol Haritası
-1. Ön koşul kayıtlar: Ticaret Bakanlığı DYS kaydı; Harcamadan önce ön onay.
+1. Diğer programlar için ayrıca: Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı) — Ticaret Bakanlığı DYS kaydı; Hizmet Sektörleri Atılım Programı — Uluslararası Teknoloji … — Harcamadan önce ön onay.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)): Temel bilgi ve belgeler (EK-4 listesi) kapsama alım, ilk ön onay, ilk proje onayı veya ilk destek başvurusunda bir defaya mahsus sunulur..
 4. Başvuru kanalı (Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)): Uluslararası Hizmet Ticareti Genel Müdürlüğü (Genel Müdürlük) ve incelemeci kuruluş (Hizmet İhracatçıları Birliği Genel Sekreterliği) — https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf#madde-17. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.

@@ -29,24 +29,20 @@
 - Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil) (Tarım Bakanlığı): Ticaret Bakanlığının belirlediği kira ücret tarifesinin %75'i oranında; ürün başına en fazla altı ay (miktar sınırları Tebliğ EK-23'tedir).; Ürün, depolama döneminin başlangıç tarihi ile ilgili yılın 31 Aralık'ı arasında lisanslı depoya girmiş olmalıdır; başvuru belge teslim bitiş tarihine göredir.
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- 2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Programı (Öncelik 2: Ar-Ge Danışmanlığı) (Mevlana Kalkınma Ajansı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Öncelik 2 için 1 Ocak 2021 sonrası kurulmuş teknoloji tabanlı KOBİ'ler başvurabilir.); 2026 SKG TD - 5. Dönem: başvuruya açık — yeni başvuru için son gün 31.10.2026 (19 gün kaldı)
+- 2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Programı (Öncelik 2: Ar-Ge Danışmanlığı) (Mevlana Kalkınma Ajansı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Öncelik 2 için 1 Ocak 2021 sonrası kurulmuş teknoloji tabanlı KOBİ'ler başvurabilir); 2026 SKG TD - 5. Dönem: başvuruya açık — yeni başvuru için son gün 31.10.2026 (19 gün kaldı)
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz …): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
-- **SGK prim ve vergi borcu durumu** (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz …): Vadesi geçmiş SGK/vergi borcu olmadığını (ya da yapılandırıldığını) gösteren yazıları hazırlayın.
-- **Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026):** Tarım ve Orman Bakanlığı kayıt sistemleriyle (ÇKS vb.) takip edilen konularda ilgili kayıt sistemine kayıtlı olmak esastır.
+- **Neden şu an başvurulamıyor:** program başvuruya açık değil (TRGM duyurusu (29.04.2026): KKYP başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı).
+- **Çağrı açıldığında aranacak şartlar (son çağrıdan) (kayıttan):** Gerçek/tüzel kişiler ve tarımsal amaçlı örgütler; kadın ve genç girişimciler (18-40 yaş) öncelikli (MADDE 2, 14); Hibeye esas proje tutarı 100.000 TL alt, 30.000.000 TL üst limit; aile işletmesi 8.000.000 TL (MADDE 14); Hibe oranı KDV dâhil hibeye esas tutarın %50–%70'i, kalan kısım faydalanıcı öz kaynağı (MADDE 14/4); Yatırım konuları Tebliğ'deki başlıklarla sınırlı (işleme/paketleme/depolama, hayvancılık, gübre işleme, ortak makine parkı vb.).
 
 ### 4. Adım Adım Yol Haritası
-Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026)** için:
-1. Ön koşul kayıtlar: Çiftçi Kayıt Sistemi (ÇKS) kaydı; SGK prim ve vergi borcu durumu.
-2. Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026) şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
-3. Başvuru adımları (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026)): Başvuru yeri: T.C. Ziraat Bankası A.Ş. ve Türkiye Tarım Kredi Kooperatifleri.
-4. Başvuru kanalı (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026)): T.C. Ziraat Bankası A.Ş. ve Türkiye Tarım Kredi Kooperatifleri — https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8039.pdf.
-5. İletişim (doğrulanmış): Tarım Bakanlığı: çağrı merkezi 180 (Alo 180); Üniversiteler Mah. Dumlupınar Bulvarı, No: 161, 06800, Çankaya / Ankara (doğrulama: https://timer.tarimorman.gov.tr/Home/Hakkinda) · Konya Tarım ve Orman İl Müdürlüğü: 0332 322 34 60; Konevi Mahallesi Larende Caddesi No:14 Meram/KONYA (doğrulama: https://konya.tarimorman.gov.tr/Iletisim)
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Çağrıyı izleyin: kurum duyurularından yeni çağrı tarihini takip edin.
+2. Hazırlık: yukarıdaki şartları ve belgeleri şimdiden toplayın.
+3. Başvuru kanalı: İL/İlçe Tarım ve Orman Müdürlüğü — https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm.
+4. İletişim (doğrulanmış): Tarım Bakanlığı: çağrı merkezi 180 (Alo 180); Üniversiteler Mah. Dumlupınar Bulvarı, No: 161, 06800, Çankaya / Ankara (doğrulama: https://timer.tarimorman.gov.tr/Home/Hakkinda) · Konya Tarım ve Orman İl Müdürlüğü: 0332 322 34 60; Konevi Mahallesi Larende Caddesi No:14 Meram/KONYA (doğrulama: https://konya.tarimorman.gov.tr/Iletisim)
 
 ### 5. Bilgi Eksikliği / Netleştirme
-Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
+Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

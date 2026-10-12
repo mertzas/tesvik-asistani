@@ -66,7 +66,7 @@ Sistemde kaydı olmayan, ayrıca bakabileceğiniz programlar (oran ve şartları
 Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1/2026'dan itibaren 10962 sayılı Karar kapsamındadır; 5447 (E-Turquality) ve 5448 sayılı Kararlar yürürlükten kaldırılmıştır. KOSGEB Ar-Ge/Ür-Ge/İnovasyon ve KOBİGEL programları yürürlükten kaldırılmıştır (kayıtları 'kapalı' olarak sistemde).
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Girişimci Destek Programı, KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
+- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Girişimci Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **Girişimci Destek Programı:** KOSGEB veri tabanına kayıtlı ve aktif olmalı
 - **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım):** Aşama 1 (hızlandırma programı) için: üniversitede ön lisans/lisans/yüksek lisans/doktora öğrencisi veya mezunu olmak; hızlandırma programına kabul tarihinde herhangi bir sermaye şirketi veya gerçek kişi işletmesinin ortağı olmamak (halka açık şirket payları ve kitle fonlaması payları hariç); daha önce Teknogirişim Sermayesi Desteği veya 1512/1812 2. Aşama desteği almamış olmak
 - **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım):** Başvuru yeri: PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına

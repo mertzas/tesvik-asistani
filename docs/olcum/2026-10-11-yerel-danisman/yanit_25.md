@@ -30,11 +30,12 @@
 
 **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı**
 - **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)
-- **Sizin için:** Şartlı — Karar şartını teyit edin — Karar metnine göre ön değerlendirme: ŞARTLI — NACE 10.51, EK-3'te '10.5 Süt ürünleri ve yenilebilir buz imalatı 5 ton/gün altındaki kapasiteye sahip süt işleme' kalemine giriyor; şart: yatırımları desteklenmez (MADDE 5/1, 10).
+- **Sizin için:** Şartlı — Karar şartını teyit edin — Karar metnine göre ön değerlendirme: ŞARTLI — NACE 10.51, EK-3'te '10.5 Süt ürünleri ve yenilebilir buz imalatı' kalemine giriyor; şart: 5 ton/gün altındaki kapasiteye sahip süt işleme yatırımları desteklenmez (MADDE 5/1, 10).
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı
 - **Destek unsurları (Karar metninden, bölgenize göre):** vergi indirimi: yatırıma katkı oranı %20, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 8 yıl (MADDE 18, 5. bölge); faiz/kâr payı desteği: repo oranının %25'i, azami 12.5 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı, azami 5 yıl (MADDE 15; yalnızca 4, 5, 6. bölgeler, 15/1-c); makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); asgari sabit yatırım: 6.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
 - **Dışlama koşulu** (yatırımınız buna giriyorsa bu programdan yararlanamazsınız): Karar şartı: EK-3 10.5 kalemi: Süt ürünleri ve yenilebilir buz imalatı 5 ton/gün altındaki kapasiteye sahip süt işleme yatırımları desteklenmez (MADDE 5/1, 10)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ Asgari sabit yatırım tutarı 5. bölgede 6 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez
   - ☐ Yatırım konusunun Karar'ın EK-3 listesinde ('Desteklerden faydalanabilecek sektörler ve şartlar') yer alması ve oradaki şartları sağlaması; eşleştirme NACE Rev.2.1 kodu üzerinden yapılır (MADDE 5/1). — resmî metin: “Desteklerden yararlanacak yatırımların ek-3’te belirtilen yatırım konularına yönelik olması ve bu konular için belirtilen şartları sağlaması gerekir.”
   - ☐ Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2). — resmî metin: “1 inci ve 2 nci bölgelerde 12 milyon TL, diğer bölgelerde ise 6 milyon TL olması gerekir.”
 - **Kurallar (kayıttan):**
@@ -94,7 +95,7 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 - **Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026):** Tarım ve Orman Bakanlığı kayıt sistemleriyle (ÇKS vb.) takip edilen konularda ilgili kayıt sistemine kayıtlı olmak esastır.
 
 ### 4. Adım Adım Yol Haritası
-1. Ön koşul kayıtlar: Kayıtlı elektronik posta (KEP) adresi; Yatırım teşvik belgesi; Çiftçi Kayıt Sistemi (ÇKS) kaydı; SGK prim ve vergi borcu durumu.
+1. Diğer programlar için ayrıca: Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) — Kayıtlı elektronik posta (KEP) adresi, Yatırım teşvik belgesi; Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz … — Çiftçi Kayıt Sistemi (ÇKS) kaydı, SGK prim ve vergi borcu durumu.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (YATIRIM-İŞLETME DESTEK PAKETİ): Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir).
 4. Başvuru kanalı (YATIRIM-İŞLETME DESTEK PAKETİ): Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, … — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
@@ -102,7 +103,8 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): kayda göre “Karar şartı: EK-3 10.5 kalemi: Süt ürünleri ve yenilebilir buz imalatı 5 ton/gün altındaki kapasiteye sahip süt işleme yatırımları desteklenmez (MADDE 5/1, 10)” — yatırımınız bu kapsama giriyor mu? Giriyorsa bu programdan destek alınamaz. Yatırımın kapasitesini (ton/gün) de belirtin.
+1. Planladığınız sabit yatırım tutarı nedir? — teşvik belgesi (9903) asgari sabit yatırım tutarının altındaki yatırıma düzenlenmez (kartlardaki teyit maddesi).
+2. Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): kayda göre “Karar şartı: EK-3 10.5 kalemi: Süt ürünleri ve yenilebilir buz imalatı 5 ton/gün altındaki kapasiteye sahip süt işleme yatırımları desteklenmez (MADDE 5/1, 10)” — yatırımınız bu kapsama giriyor mu? Giriyorsa bu programdan destek alınamaz. Yatırımın kapasitesini (ton/gün) de belirtin.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

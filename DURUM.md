@@ -452,6 +452,21 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   şirket türlerine açık. Kapsam 420/25/23 → 396/49/23, ürün 434 → 410: fark tamamen YÖNDE (tarım ve turizm dijital
   hücrelerinin önceki isabeti sahteydi; bu hücreler için kayıtlı dijital destek yok). Eski 30 senaryo dayanak 0,
   isabet 41/41. Test 1312 → 1314.
+  Tur 4 (`tur4/`, `degerlendirme4_*.json`): A 3,14 · B 2,89 · C 2,83 · D 2,83 · E 3,00 (ortalama 2,94; tur 3: 2,88).
+  Düzeltmeler: 9903 EK-3 verisinde sütun kayması (30 kalem; `scripts/fix_ek3_9903_2026_10_12.py`, her metin resmî
+  metinle birebir doğrulanır, self-test 7/7): 55.1 "50 oda ve üzeri", 18 matbaa "100 milyon TL ve üzeri tevsi ve
+  modernizasyon", 82.2 "yalnız 6. bölge", 24.10.08/35.11/35.12/52.22.06 komşu kodun metni; sorudaki yatırım tutarı
+  (`soru_yatirim_tutari`) EK-3 kalem eşiği ve MADDE 5/2 asgari sabit yatırımla kıyaslanır (`tutar_siniri`), "teşvik
+  belgesi" sorusunda kısa cevapta Hedef Yatırımlar hükmü; tutar yoksa 9903 kartında ve kısa cevapta asgari yatırım,
+  Bilgi Eksikliği'nde yatırım tutarı sorusu; asgari yatırımı yıllık cirodan büyük 9903 programı geride.
+  "Yenilemek/tadilat" yatırım ihtiyacı (belge/bahçe yenileme değil); 2634 turizm kaydı yatırım ihtiyacı. İstihdam:
+  işe alınacak kişiye bağlı şart (`KISI_ONEKI`; kadın/genç, işsizlik ödeneği, engelli, sosyal yardım) kilit sayılmaz,
+  kart adayıdır; sıra geniş işe alım teşviki → genel prim desteği → dar kişi grubu → istihdam dışı; retrieval'da dar
+  grup cezası. USD ihracat/gelir eşiği şart metninden de okunur (`usd_esigi`; m.17, m.33); TOBB üyeliği limited/anonimde
+  sağlanır (5174 m.9); e-ihracatın beyannameyle tevsiki kilit şart; Instagram/Google reklam sorusunda pazaryeri içi
+  reklam geride; düşük olasılıklı program öne çıkmaz; kapalı programın alternatifi kapalı programın ve sorunun
+  ihtiyacını karşılamalı; KOSGEB veri tabanı kaydı ücretsiz eğitimde ön koşul değil; yol haritası ön koşulu ilk
+  kartın, diğerleri program adıyla. Test 1314 → 1321; eski 30 senaryo dayanak 0, isabet 41/41; kapsam değişmedi.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

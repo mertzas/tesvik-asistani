@@ -1,6 +1,6 @@
 <!-- persona: ikas_taki | soru: Gümüş takı satan online mağazam var; Etsy ve kendi sitemden yurt dışı satış için destek var mı? -->
 **Kısa cevap:**
-- Öne çıkan: **Türk Eximbank E-İhracat Destek Kredisi** (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Başvuru sahibi ve risk grubuna dâhil firmaların Eximbank nezdinde güncel kredi limiti veya kredi riski bulunmamalıdır; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Öne çıkan: **Türk Eximbank E-İhracat Destek Kredisi** (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir); Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Kredi koşulları (hibe değil): Hibe değil kredi: firma bazında kullandırım üst limiti 500.000 TL; vade azami 12 ay; İGE kefaleti karşılığında kullandırılır.
 - Diğer seçenekler: Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (şarta bağlı); İhracat Destek Paketi (şarta bağlı).
 - Sorunuza doğrudan yönelik ama size kapalı: E-İhracat Destekleri (5986 Sayılı Karar) — başvuru sahibi türünüz (şahıs işletmesi) şartta sayılmıyor — kayıttaki şart: “Şirket ya da kooperatif olmak (şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre)”.
@@ -18,11 +18,11 @@
 
 **Türk Eximbank E-İhracat Destek Kredisi — Türk Eximbank**
 - **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
+- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir.
 - **Karşıladığı ihtiyaç:** dijital dönüşüm, ihracat
 - **Destek:** Hibe değil kredi: firma bazında kullandırım üst limiti 500.000 TL; vade azami 12 ay; İGE kefaleti karşılığında kullandırılır.
-- **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (mikro işletme)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir. — resmî metin: “Bu kredi programı, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyeti gerçekleştirdiğini tevsik eden KOBİ ve KOBİ dışı işletmelere yöneliktir.”
   - ☐ Başvuru sahibi ve risk grubuna dâhil firmaların Eximbank nezdinde güncel kredi limiti veya kredi riski bulunmamalıdır. — resmî metin: “Türk Eximbank nezdinde, başvuru sahibi ile risk grubuna dâhil firmaların herhangi bir güncel kredi limiti veya kredi riski bulunmaması şartı aranır;”
 - **Kurallar (kayıttan):**
   - Firma bazında kullandırım üst limiti 500.000 TL'dir. — resmî metin: “Firma bazında kullandırım üst limiti 500.000 Türk Lirasıdır.”
@@ -76,8 +76,8 @@
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı): uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
-2. İhracat Destek Paketi: uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: İhracatçı veya döviz kazandırıcı hizmetler sektöründe faaliyet göstermek (KOBİ ve KOBİ dışı firmalar yararlanabilir)); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
+1. Türk Eximbank E-İhracat Destek Kredisi: uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
+2. Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı): uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

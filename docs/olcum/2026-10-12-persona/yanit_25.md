@@ -91,7 +91,7 @@ Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1
 - **Teknoloji Hamlesi Programı (9903 sayılı Karar):** Başvuru yeri: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)
 
 ### 4. Adım Adım Yol Haritası
-1. Ön koşul kayıtlar: Kayıtlı elektronik posta (KEP) adresi; Yatırım teşvik belgesi.
+1. Diğer programlar için ayrıca: Teknoloji Hamlesi Programı (9903 sayılı Karar) — Kayıtlı elektronik posta (KEP) adresi, Yatırım teşvik belgesi.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Başvuru adımları (Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)): Başvuru yeri: Sanayi ve Teknoloji Bakanlığı (Ar-Ge ve tasarım merkezi belgelendirmesi, proje uygunluk denetimi); denetimi Bakanlık veya yetki verilen teknoloji geliştirme bölgeleri yönetici şirketleri yapar..
 4. Başvuru kanalı (Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)): Sanayi ve Teknoloji Bakanlığı (Ar-Ge ve tasarım merkezi belgelendirmesi, proje uygunluk denetimi) — https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.

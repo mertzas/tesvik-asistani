@@ -25,29 +25,19 @@
 - Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (Ticaret Bakanlığı): %50; 2026'da birim başına yıllık 9.862.972 TL; ülke başına en fazla 4 yıl, en fazla 25 birim; Ödeme belgesi tarihinden itibaren 6 ay içinde
 - Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6) (Ticaret Bakanlığı): %50 (hedef ülkelerde %70); ülkedeki e-ticaret satışlarının %10'una kadar; 2026 şirketler için yıllık 36.993.646 TL; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
 
-**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) (Ticaret Bakanlığı) — düşük olasılık — cironuz eşiğin altında (düşük olasılık: yıllık cironuz (9.000.000 TL), kaydın aradığı önceki yıl en az 500.000 USD ihracatın TL karşılığından az); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
-- Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) (Ticaret Bakanlığı) — düşük olasılık — cironuz eşiğin altında (düşük olasılık: yıllık cironuz (9.000.000 TL), kaydın aradığı önceki yıl en az 1.000.000 USD ihracatın TL karşılığından az); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
-
 ### 3. Darboğazlar ve Kritik Şartlar
-- **İhracatçı birliği üyeliği** (Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Ürün grubunuzun ihracatçı birliğine üye olun; 5973 ve 5986 başvuruları üyesi olunan birliğin genel sekreterliğine yapılır.
-- **Ticaret Bakanlığı DYS kaydı** (Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Destek Yönetim Sistemi'ne (DYS) şirket kaydı; MERSİS bilgileri ve NACE kodu güncel olmalı.
-- **Yurt dışı marka tescili (Madrid Sistemi)** (Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Madrid Sistemi'ne taraf en az bir ülkede marka tescili; masrafın bir kısmı 5973 m.4 Yurt Dışı Marka Tescil Desteği ile karşılanabilir.
-- **Harcamadan önce ön onay** (Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Bu programlarda ön onay tarihinden önce yapılan harcama desteklenmez; harcamayı planlamadan başvurun.
-- **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4):** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru
-- **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4):** Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır)
+- **Engel:** ölçek uygun değil: 7 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık; program sektörü işletmenin NACE kodlarıyla örtüşmüyor; programın sektör kapsamı (imalat) faaliyetinizi (NACE 47.91) kapsamıyor.
+- **Engel kalkarsa ayrıca aranan şartlar (kayıttan):** C-İmalat sektöründe faaliyet (NACE kodu); KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmak (KOSGEB sınıflandırmasında küçük veya orta ölçekli olmak; Son mali yıl Öz Kaynaklar Toplamı pozitif ve son 3 mali yıl Faaliyet Karı'ndan en az biri pozitif; İşletme sınıfı küçük veya orta olmalı; mikro ölçekli işletmeler yararlanamaz.
+- **Hazırlanacak belgeler (kayıttan):** Onaylı dijital dönüşüm/olgunluk değerlendirme raporu (TÜSSİDE-DDX veya SIRI formatı); Başvuru Formu; Mali tablolar ve işletme beyanı; KOBİ Dijital Dönüşüm Destek Programı Taahhütnamesi.
 
 ### 4. Adım Adım Yol Haritası
-Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)** için:
-1. Ön koşul kayıtlar: İhracatçı birliği üyeliği; Ticaret Bakanlığı DYS kaydı; Yurt dışı marka tescili (Madrid Sistemi); Harcamadan önce ön onay.
-2. Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
-3. Belgeler (Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): EK-Şirket Başvuru Formu (ilk başvuruda); EK-Dijital Pazaryeri Tanıtım Desteği Ön Onay Başvuru Formu; Madrid Sistemi'ne taraf bir ülkede yurt dışı marka tescil belgesi; Pazaryerinin bu hizmet için daha önce düzenlediği fatura örneği; Ödeme başvurusu: EK-Dijital Pazaryeri Tanıtım Desteği Ödeme Başvuru Formu, pazaryerinden alınan dönem raporu, fatura/ekstre, ödeme belgeleri, pazaryeri ile sözleşme.
-4. Başvuru kanalı (Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4.
-5. İletişim (doğrulanmış): KOSGEB: çağrı merkezi 444 1 567, genel merkez 0 312 595 28 00; Hacı Bayram Mah. İstanbul Cad. No: 32 06050 Ulus / Altındağ / Ankara (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/iletisim) · KOSGEB KONYA MÜDÜRLÜĞÜ: 0 (332) 310 19 30; Ferhuniye Mahallesi Mümtazkoru Sokak No:10/1 Selçuklu/KONYA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=42)
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Engeli değerlendirin: engel kalkmadan başvuru yapılamaz; durumunuzun şarta etkisini kurumla teyit edin.
+2. Hazırlık: yukarıdaki şartları ve belgeleri şimdiden toplayın.
+3. Başvuru kanalı: KOSGEB KOBİ Bilgi Sistemi (online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi.
+4. İletişim (doğrulanmış): KOSGEB: çağrı merkezi 444 1 567, genel merkez 0 312 595 28 00; Hacı Bayram Mah. İstanbul Cad. No: 32 06050 Ulus / Altındağ / Ankara (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/iletisim) · KOSGEB KONYA MÜDÜRLÜĞÜ: 0 (332) 310 19 30; Ferhuniye Mahallesi Mümtazkoru Sokak No:10/1 Selçuklu/KONYA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=42)
 
 ### 5. Bilgi Eksikliği / Netleştirme
-Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
+Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

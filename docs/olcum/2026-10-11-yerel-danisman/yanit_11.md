@@ -5,7 +5,7 @@
 - Sizin için: **uygun değil** — şartta “ondan fazla çalışan” aranıyor (profilinizde 4 çalışan).
 - Program: 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer alıp ondan fazla çalışanı bulunan ve üç yıl içinde ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmeyen işyerlerinde, işsizlik sigortası işveren hissesi teşviki bir sonraki takvim yılından geçerli olmak üzere üç yıl süreyle […]
 - Kimler başvurabilir (kayıttaki şartlar): İşyeri 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer almalıdır; İşverenin Türkiye genelinde çok tehlikeli sınıftaki işyerlerinde her ay toplamda ondan fazla çalışanı bulunmalıdır; Ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmemelidir.
-- Adıyla eşleşen diğer kayıtlar: Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde) (profilinize göre engel yok — şartları teyit edin); İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5) (profilinize göre engel yok — şartları teyit edin).
+- Adıyla eşleşen diğer kayıtlar: Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde) (şarta bağlı); İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5) (şarta bağlı).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: hizmet (NACE 56.10)
@@ -25,7 +25,7 @@
 
 **Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde) — SGK / İŞKUR**
 - **Başvuru dönemi:** Sürekli; 31.12.2026 tarihine kadar (80 gün kaldı) yapılan işe alımlar için (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: istihdam.
+- **Sizin için:** Şarta bağlı — işe alacağınız kişiye bağlı şart: İşe alınan kişinin son 6 aydır işsiz olması.
 - **Karşıladığı ihtiyaç:** istihdam
 - **Destek:** İşveren SGK prim payı, kişi başı aylık 7.184,03–64.656,23 TL (2026; prime esas kazancın alt ve üst sınırı arası), 6–54 ay
 - **Hesaplama:** İşveren prim payı × destek süresi (6–54 ay; kişinin yaşı/cinsiyeti/belgesine göre; İŞKUR kayıtlı ise +6 ay); prim tabanı prime esas kazanç üst sınırına kadar
@@ -39,7 +39,7 @@
 
 **İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5) — SGK / İŞKUR**
 - **Başvuru dönemi:** Sürekli
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: istihdam.
+- **Sizin için:** Şarta bağlı — işe alacağınız kişiye bağlı şart: İşe alınan kişinin işsizlik ödeneği alıyor olması.
 - **Karşıladığı ihtiyaç:** istihdam
 - **Destek:** Kişi başı aylık 11.395,35 TL prim karşılığı (2026; prime esas kazanç alt sınırı üzerinden), kişinin kalan işsizlik ödeneği süresi boyunca
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
@@ -52,8 +52,11 @@
 
 **Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
 - Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan (SGK / İŞKUR): Malullük, yaşlılık ve ölüm sigortaları işveren hissesinin 2 puanlık kısmı Hazinece karşılanır; imalat sektöründe 2026 yılı sonuna kadar 5 puan.; 01.10.2008 tarihinden itibaren uygulanmaktadır; imalat için 5 puanlık oran 2026 yılı sonuna kadar.
-- Engelli Sigortalı İstihdamına Yönelik Sigorta Primi İşveren Hissesi Teşviki (4857 sayılı Kanun) (SGK / İŞKUR): Engelli sigortalıların prime esas kazanç alt sınırı üzerinden hesaplanan sigorta primi işveren hissesinin tamamı Hazine ve Maliye Bakanlığınca karşılanır.; 01.07.2008 tarihinden itibaren uygulanmaktadır; sayfada bitiş tarihi belirtilmemiştir.
-- Yurtdışına Götürülen/Gönderilen Sigortalılara Yönelik 5 Puan Genel Sağlık Sigortası Primi İşveren Hissesi İndirimi (5510 sayılı Kanun 81/i) (SGK / İŞKUR): Yurt dışındaki işyerlerinde çalıştırılmak üzere götürülen/gönderilen sigortalıların genel sağlık sigortası primi işveren hissesinin 5 puanlık kısmı Hazinece karşılanır.; 01.06.2013 tarihinden itibaren uygulanmaktadır; sayfada bitiş tarihi belirtilmemiştir.
+- 2026 Yılı Asgari Ücret Desteği (işveren sigorta primlerinden mahsup, İşsizlik Sigortası Fonu) (SGK / İŞKUR): Günlük 42,33 TL, aylık 1.270 TL (toplam prim ödeme gün sayısı x 42,33 TL işverenin Kuruma ödeyeceği primlerden mahsup edilir). 2025 yılının aynı ayında prime …; 2026 yılı Ocak ila Aralık ayları/dönemleri.
+- 2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu) (SGK / İŞKUR): Günlük 116,67 TL, aylık 3.500,10 TL (toplam prim ödeme gün sayısı x 116,67 TL, işyerinin Kuruma ödeyeceği primlerden mahsup edilir; 2026 yılı Mayıs ila Aralık ayları/dönemleri.
+
+**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Engelli Sigortalı İstihdamına Yönelik Sigorta Primi İşveren Hissesi Teşviki (4857 sayılı Kanun) (SGK / İŞKUR) — şarta bağlı (işe alacağınız kişiye bağlı şart: Engelli sigortalı çalıştırılmalıdır); 01.07.2008 tarihinden itibaren uygulanmaktadır; sayfada bitiş tarihi belirtilmemiştir.
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
@@ -66,6 +69,7 @@
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. İşe alacağınız kişilerin cinsiyeti, yaşı, mesleki belgesi ve İŞKUR kaydı var mı? — destek süresi bunlara göre değişir (kayıttaki süre kırılımı kısa cevapta).
+2. İşe alacağınız kişilerin cinsiyeti ve yaşı, son 6 ayda işsiz olup olmadığı, işsizlik ödeneği alıp almadığı, mesleki yeterlilik belgesi, İŞKUR kaydı ve engel durumu nedir? — istihdam teşviklerinin hangisinin uygulanacağı ve süresi bunlara bağlıdır.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

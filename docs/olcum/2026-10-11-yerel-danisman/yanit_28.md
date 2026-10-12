@@ -25,20 +25,17 @@
 - DİJİTAL KEFALET DESTEK PROGRAMI (KGF): %80 kefalet; şahıs 2,2 Milyon / tüzel 5 Milyon TL; yıllık %2; başvuru ücreti 10.000 TL; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (YÖNDE - Yönderlik ve Değerlendirme Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
-- **YÖNDE - Yönderlik ve Değerlendirme Destek Programı:** KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması
+- **Engel:** başvuru sahibi türünüz (anonim şirket) şartta sayılmıyor — kayıttaki şart: “Öncelik 1 için uygun başvuru sahipleri: Kooperatifler, iktisadi işletmesi olan dernek ve vakıflar, sosyal işletmeler.”.
+- **Engel kalkarsa ayrıca aranan şartlar (kayıttan):** Öncelik 2 için iktisadi işletmesi olmayan ancak kurmak isteyen dernek ve vakıflar başvurabilir.
 
 ### 4. Adım Adım Yol Haritası
-Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **YÖNDE - Yönderlik ve Değerlendirme Destek Programı** için:
-1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
-2. YÖNDE - Yönderlik ve Değerlendirme Destek Programı şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
-3. Belgeler (YÖNDE - Yönderlik ve Değerlendirme Destek Programı): YÖNDE Başvuru Formu; YÖNDE Taahhütnamesi; Başvuru ve Ödeme Belgeleri Tablosu'nda başvuru aşaması için sayılan belgeler hazır olmalı (ödeme belgeleri hizmet alındıktan sonra yüklenir).
-4. Başvuru kanalı (YÖNDE - Yönderlik ve Değerlendirme Destek Programı): KOSGEB sistemi (www.kosgeb.gov.tr) üzerinden YÖNDE başvuru formu ile — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9165/yonde-yonderlik-ve-degerlendirme-destek-programi.
-5. İletişim (doğrulanmış): KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Engeli değerlendirin: engel kalkmadan başvuru yapılamaz; durumunuzun şarta etkisini kurumla teyit edin.
+2. Hazırlık: yukarıdaki şartları ve belgeleri şimdiden toplayın.
+3. Başvuru kanalı: Kalkınma Ajansları Yönetim Sistemi (KAYS); sorular için sga@ankaraka.org.tr — https://ankaraka.org.tr/2026-ankara-sosyal-girisimcilik-ekosistemi-kapasite-gelistirme-mali-destek-programi.
+4. İletişim (doğrulanmış): KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
 
 ### 5. Bilgi Eksikliği / Netleştirme
-Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
+Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

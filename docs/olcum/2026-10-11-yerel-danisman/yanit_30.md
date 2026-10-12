@@ -30,7 +30,7 @@
 - **Başvuru:** İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu) — https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#hububat-baklagil
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı) (Tarım Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Yetkilendirilmiş bir kuruluştan ilgili üretim yılında, bireysel veya grup sertifikasyonuna göre düzenlenmiş iyi tarım uygulamaları sertifikası alınmalı.); Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez. Sertifika ilgili üretim yılının 1 Ocak-31 Aralık tarihleri arasında düzenlenmiş olmalıdır.
+- İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı) (Tarım Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Yetkilendirilmiş bir kuruluştan ilgili üretim yılında, bireysel veya grup sertifikasyonuna göre düzenlenmiş iyi tarım uygulamaları sertifikası alınmalı); Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez. Sertifika ilgili üretim yılının 1 Ocak-31 Aralık tarihleri arasında düzenlenmiş olmalıdır.
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim)): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.

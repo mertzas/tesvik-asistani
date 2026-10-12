@@ -40,7 +40,7 @@
 
 **KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB**
 - **Başvuru dönemi:** Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.
 - **Kapsam:** yalnız: henüz şirket kurulmamış, şahıs işletmesi, limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
 - **Destek:** Ücretsiz eğitim (parasal destek değildir): geleneksel ve ileri girişimcilik eğitimleri ücretsiz ve aracısız verilir.

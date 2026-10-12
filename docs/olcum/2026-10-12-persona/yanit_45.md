@@ -41,7 +41,7 @@
 - **Başvuru:** Bağlı bulunulan Türk Eximbank Şubesi (geçerli limit varsa Kredi Talep Formu ve onaylı harcama listesiyle) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi
 
 **Türk Eximbank Sevk Öncesi İhracat Kredisi (SÖİK) — aracı bankalar üzerinden — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur;
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; 
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç, Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan imalatçı firmalar yararlanır.
 - **Karşıladığı ihtiyaç:** ihracat, kredi/finansman
 - **Destek:** Hibe değil kredi: Eximbank firma bazında limit belirleyebilir; işlem bazında alt limit yoktur. Faiz/kar payı oranları vade, tutar ve para birimine göre belirlenir; aracı bankalar TL kredilerde azami yıllık 1, döviz kredilerinde azami yıllık 0,5 puan aracılık komisyonu ekleyebilir.
@@ -55,8 +55,8 @@
 - **Başvuru:** Türk Eximbank'ın kredi tahsis ettiği aracı bankalar (kredi müracaatı aracı bankalara yapılır) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Türk Eximbank Reeskont Kredisi (TCMB işbirliğiyle, TL/Döviz) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracata yönelik mal üreten imalatçılar, döviz kazandırıcı hizmet ihracı yapan firmalar ve tüm ihracatçılar yararlanır); Dönemsel çağrı yoktur;
-- Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır); Dönemsel çağrı yoktur;
+- Türk Eximbank Reeskont Kredisi (TCMB işbirliğiyle, TL/Döviz) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracata yönelik mal üreten imalatçılar, döviz kazandırıcı hizmet ihracı yapan firmalar ve tüm ihracatçılar yararlanır); Dönemsel çağrı yoktur; 
+- Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır); Dönemsel çağrı yoktur; 
 - Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik imalatçı-ihracatçı, ihracata yönelik mal üreten imalatçı ve ihracatçı vasfına haiz firmalar, Türkiye menşeli veya Dahilde İşleme Rejimi kapsamında ithal edilen malların ihracı için yararlanabilir); Dönemsel çağrı yoktur; geçerli kredi limiti olan firma kredi talep formu ve onaylı harcama listesiyle şubeye başvurur. Harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar olabilir.
 
 ### 3. Darboğazlar ve Kritik Şartlar

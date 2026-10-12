@@ -44,7 +44,7 @@
   - ☐ Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz
   - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız
   - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız
-  - ve 2 şart daha: panelde programın Kontrol listesi'nde
+  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12
 
 **Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) — Ticaret Bakanlığı**
@@ -62,7 +62,7 @@
   - ☐ Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz
   - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız
   - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız
-  - ve 2 şart daha: panelde programın Kontrol listesi'nde
+  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden; e-ticaret depoları için KEP üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-11
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):

@@ -2,7 +2,6 @@
 **Kısa cevap:**
 - **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)** (TUBITAK)
 - Sizin için: **uygun değil** — hızlandırma programına kabul tarihinde herhangi bir sermaye şirketinin ya da şahıs işletmesinin ortağı olmamak şartı (beyan: ortaklığınız var; borsadaki hisseler ve kitle fonlaması payları sayılmaz).
-- Destek: bu programın tutarı kayıtta yok; önceki programın son bilinen tutarı (bilgi için): BiGG Fonu hisse karşılığı yatırım: 1.350.000 TL (2026); +600.000 TL GCİP ek yatırım imkânı (2025'ten itibaren) (son bilinen tutar, önceki program 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) kaydından
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: Ar-Ge / bilişim (NACE 62.01)

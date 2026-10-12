@@ -871,8 +871,8 @@ def _profilden_karsilanan(metin: str, profil) -> str | None:
             r"Ar-?Ge|tasarım|araştırmacı|tam zaman eşdeğer|mühendis|teknik personel", metin, re.I):
         # "İşverenin en az beş sigortalı çalışanı olmalıdır": profilde 9 çalışan → sağlanır (persona denemesi 2026-10-12)
         return f"çalışan sayısı şartı (en az {_sayi(m_calisan.group(1))}; profilinizde {n})"
-    if re.search(r"TOBB üye|(?:ticaret|sanayi) odası(?:na)? (?:üye|kay)", metin, re.I) and not re.search(
-            r"esnaf", metin, re.I) and tur in ("limited", "anonim"):
+    if re.search(r"TOBB|ticaret odası|sanayi odası|ticaret borsası", metin, re.I) and re.search(
+            r"üye|kayıt|kaydı", metin, re.I) and not re.search(r"esnaf", metin, re.I) and tur in ("limited", "anonim"):
         # Ticaret siciline kayıtlı şirket odaya kaydolmak zorundadır (5174 sayılı Kanun m.9); hakem bulgusu 4. tur: TOBB
         # Nefes kredisinde limited şirkete "doğrulanamayan önemli şart: TOBB üyesi olmak" deniyordu.
         return f"oda (TOBB) üyeliği: {SIRKET_TURU_AD[tur]} ticaret siciline kayıtlıdır ve oda üyeliği zorunludur"
@@ -1155,11 +1155,11 @@ def degerlendir(kayitlar: list, profil, notlar: dict[int, str], eslesme: dict[in
                                    "edin")
                 d.karar = "sartli"
                 if t.id in eslesme and not not_9903:
-                    d.gerekce += [g for g in eslesme[t.id].gerekce if g][:2]
+                    d.gerekce += [g for g in eslesme[t.id].gerekce if g and not _PANEL_NOTU.search(g)][:2]
                     # Soru bir ihtiyacı (istihdam, ihracat) açıkça soruyorsa "hedeflerinizde ... yok" notu yanıtla çelişir.
                     sorulanlar = set(soru_ihtiyaclari(soru))
                     d.gerekce += [f"teyit: {x}" for x in eslesme[t.id].eksik_kriterler if x and not (
-                        sorulanlar and "hedeflerinizde" in x)][:2]
+                        sorulanlar and "hedeflerinizde" in x) and not _PANEL_NOTU.search(x)][:2]
                 elif not not_9903:
                     _sorulan = set(soru_ihtiyaclari(soru)) & program_ihtiyaclari(t)
                     if _sorulan:
@@ -1273,7 +1273,7 @@ def kart(d: Degerlendirme, notlar: dict[int, str], soru_ihtiyac: list[str], bugu
         satir.append("- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):")
         satir += [f"  - ☐ {x}" for x in sartlar[:EN_COK_TEYIT]]
         if len(sartlar) > EN_COK_TEYIT:
-            satir.append(f"  - ve {len(sartlar) - EN_COK_TEYIT} şart daha: panelde programın Kontrol listesi'nde")
+            satir.append(f"  - ve {len(sartlar) - EN_COK_TEYIT} şart daha (tamamı panelde programın Kontrol listesinde).")
     teyit_norm = {_norm(x) for x in d.teyit}
     kurallar = [m for m in _tekil([m for m in ms if m["tur"] == "kural"]) if _norm(_madde_metni(m)) not in teyit_norm
                 and not _profile_uymayan_kosul(m["metin"], d)]
@@ -2182,7 +2182,11 @@ def kisa_cevap(niyet: set[str], odak: list[Degerlendirme], adaylar: list[Degerle
         unsur = _destek_unsurlari(notlar, t)
         if "tutar" in niyet and unsur:
             satir.append(f"- Destek unsurları (Karar metninden, bölgenize göre): {unsur}")
-        elif "tarih" not in niyet or "tutar" in niyet or d.karar == "kapali":
+        elif ("tarih" not in niyet or "tutar" in niyet or d.karar == "kapali") and not (
+                d.karar == "uygun_degil" and "tutar" not in niyet):
+            # Size uygun olmayan programın tutarı, tutar sorulmadıkça kısa cevapta gösterilmez (hakem bulgusu 5. tur:
+            # otelin "yurt dışı tanıtım" sorusunda "uygun değil" satırının altındaki 12 milyon TL'lik limit destek
+            # varmış izlenimi veriyordu); tutar kartta durur.
             tutar = tutar_metni(t, 450).split(" Hesaplama: ")[0]
             if tutar:
                 etiket = ("Son bilinen destek (bilgi için)" if d.karar == "kapali" else
@@ -2457,6 +2461,13 @@ def kurum_ozeti_kapali(odak: list["Degerlendirme"]) -> list["Degerlendirme"]:
             and not any("aracı/ekosistem" in g for g in x.gerekce)]
 
 
+# Eşleşme panelinin sıralama notları yanıt kartına taşınmaz: yanıt aynı durumu kendi kuralıyla söyler (kapalı dönem,
+# ölçek, USD eşiği) ya da not kullanıcıya bilgi vermez (hakem bulgusu 5. tur: "engel yok" kartında "teyit: ölçek çok
+# büyük"; "Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı" ve "sektörden bağımsız genel program" sistem dili).
+_PANEL_NOTU = re.compile(r"doğrudan eşleşme bulunamadı|sektörden bağımsız genel bir program|Program ölçeği \(asgari|"
+                         r"Başvuru dönemi şu an kapalı|Kaydın aradığı en az .{0,40}USD")
+
+
 def _kisa_ad(baslik: str | None) -> str:
     """Program adının parantezsiz, " — " öncesi kısmı (özet satırları için)."""
     ad = re.sub(r"\s*\([^()]*\)", "", (baslik or "").split(" — ")[0]).strip()
@@ -2505,13 +2516,16 @@ def tekrarlari_kisalt(metin: str) -> str:
         gorulen_cumle.add(anahtar)
         return m.group(0)
     metin = _BILGI_YOK_CUMLESI.sub(_cumle, metin)
+    metin = re.sub(r"(?<=\S) {2,}", " ", metin)
     metin = re.sub(r"(?<![.\w])\.\.(?!\.)|(?<=\w)\.\.(?!\.)", ".", metin)   # çift nokta (ellipsis "..." değil)
     metin = re.sub(r"[ \t]+;", ";", re.sub(r";\s*;", ";", metin))
     return metin
 
 
-_BILGI_YOK_CUMLESI = re.compile(r"(?<=[\s(:;])[^.;:()\n]{0,80}?(?:belirtilmemiştir|belirtilmemiş|belirtilmiyor)"
-                                r"[^.;\n]{0,160}[.;]?")
+# Cümle sınırı dışına taşmaz: kalın işaret (**), parantez ve noktalama cümlenin parçası sayılmaz (hakem bulgusu 5. tur:
+# "**Başvuru dönemi:" kalın işareti ve "(MADDE 5, … belirtilmemişse)" kapanış parantezi de siliniyordu).
+_BILGI_YOK_CUMLESI = re.compile(r"(?:(?<=[:;.] )|(?<=\*\* )|(?<=\())[^.;:()*\n]{0,80}?(?:belirtilmemiştir|belirtilmiyor)"
+                                r"[^.;()*\n]{0,160}[.;]?")
 
 
 # Kayıt notlarındaki veri işleme ifadeleri kullanıcı diline çevrilir (anlam aynı: bilgi kayıtta yok, kaynaktan teyit).

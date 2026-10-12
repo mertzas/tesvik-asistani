@@ -19,7 +19,7 @@
 
 **KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB**
 - **Başvuru dönemi:** Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin.
 - **Kapsam:** yalnız: henüz şirket kurulmamış, şahıs işletmesi, limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
 - **Destek:** Ücretsiz eğitim (parasal destek değildir): geleneksel ve ileri girişimcilik eğitimleri ücretsiz ve aracısız verilir.
@@ -30,7 +30,7 @@
 
 **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) — TUBITAK**
 - **Başvuru dönemi:** 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı: başvuruya açık — bu çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS) — ön kayıt son günü 17.11.2026 (36 gün kaldı); başvuru kapanışı 20.11.2026 (39 gün kaldı). Not: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS). (duyuru: https://tubitak.gov.tr/sites/default/files/2026-08/2026_1_BIGG_Tohum_Yatirim_Cagri_Duyuru_Metni.pdf, doğrulama 10.10.2026)
-- **Sizin için:** Şarta bağlı — açık çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); bu koşulu sağlamıyorsanız sizin için açık çağrı kayıtlarımızda yok; Sektörünüz (arge) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Şarta bağlı — açık çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); bu koşulu sağlamıyorsanız sizin için açık çağrı kayıtlarımızda yok; Sektörünüz (arge) bu desteğin kapsamına uygun.
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
 - **Son bilinen tutar (önceki program, bilgi için):** BiGG Fonu hisse karşılığı yatırım: 1.350.000 TL (2026); +600.000 TL GCİP ek yatırım imkânı (2025'ten itibaren) (son bilinen tutar, önceki program 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) kaydından; 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) için güncel tutarı kurumdan teyit edin)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):

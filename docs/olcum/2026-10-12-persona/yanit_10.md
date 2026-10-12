@@ -17,7 +17,7 @@
 
 **YATIRIM-İŞLETME DESTEK PAKETİ — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Faaliyet kodunuz: 18.12, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi).
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Faaliyet kodunuz: 18.12, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi); Belirttiğiniz hedeflerle eşleşiyor: finansman, makine alımı.
 - **Kapsam:** yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı, kredi/finansman
 - **Kredi ve kefalet limitleri:** Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5

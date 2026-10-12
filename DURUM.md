@@ -486,6 +486,13 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   biçimler pazaryeri sorusu; pazaryeri sorusunda pazaryeri dışı program ad eşleşmesinden önce geride; yalnız girişim
   ihtiyaçlı kurum sorusu ("şirket kurarsam KOSGEB ve TÜBİTAK") genel kurum sorusu sayılır. Kapsam 396/49/23 →
   432/13/23, ürün 410 → 434. Test 1324 → 1329.
+  Tur 5 sonrası ikinci paket: "belirtilmemiştir" tekrar süzgeci cümle sınırında başlar, kalın işareti ve parantezi
+  yutmaz (tur 5'te "**Başvuru dönemi:" açık kalıyor, "(MADDE 5 … belirtilmemişse)" kesiliyordu); eşleşme panelinin
+  sıralama notları ("hedeflerle eşleşme bulunamadı", "sektörden bağımsız", ölçek, kapalı dönem, USD eşiği) yanıt
+  kartına taşınmaz (`_PANEL_NOTU`); uygun olmayan lider programın tutarı kısa cevapta yalnız tutar sorulursa; TOBB'a
+  bağlı oda/borsa üyeliği varyantı; EK-3'te "X kodları desteklenmez" cümlesi profil kodu X değilse şart sayılmaz
+  (halı 13.93 uygun; eski test 13.20'yi şartlı bekliyordu, 18.12'ye taşındı). Açık: 13.10.12'de "500 milyon TL üzeri
+  modernizasyon hariç" istisnası kesin "uygun değil" sayılıyor (persona yok). Test 1329 → 1333.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

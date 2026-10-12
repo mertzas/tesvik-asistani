@@ -17,9 +17,9 @@
 
 **Teknoloji Geliştirme Bölgesi (Teknopark) Gelir ve Kurumlar Vergisi İstisnası (4691 sayılı Kanun geçici madde 2) — Sanayi ve Teknoloji Bakanlığı**
 - **Başvuru dönemi:** Çağrı yoktur; istisna Bölgede faaliyet gösterildiği sürece 31/12/2028 tarihine kadar uygulanır.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (hizmet) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (hizmet) bu desteğin kapsamına uygun.
 - **Kapsam:** yalnız: şahıs işletmesi, limited şirket, anonim şirket
-- **Destek:** Vergi istisnası: Bölgede münhasıran yazılım, tasarım ve Ar-Ge faaliyetlerinden elde edilen kazançlar 31/12/2028 tarihine kadar gelir ve kurumlar vergisinden müstesnadır ( İstisna edilen kazancı 1.000.000 Türk lirası ve üzerinde olanlar, bu tutarın yüzde ikisini geçici bir hesaba aktarır (yıllık yükümlülük en çok 20.000.000 Türk lirası) ve yıl sonuna kadar girişim sermayesi fonu payı alımında ya da kuluçka merkezlerindeki girişimcilere sermaye koymada kullanmak zorundadır
+- **Destek:** Vergi istisnası: Bölgede münhasıran yazılım, tasarım ve Ar-Ge faaliyetlerinden elde edilen kazançlar 31/12/2028 tarihine kadar gelir ve kurumlar vergisinden müstesnadır (). İstisna edilen kazancı 1.000.000 Türk lirası ve üzerinde olanlar, bu tutarın yüzde ikisini geçici bir hesaba aktarır (yıllık yükümlülük en çok 20.000.000 Türk lirası) ve yıl sonuna kadar girişim sermayesi fonu payı alımında ya da kuluçka merkezlerindeki girişimcilere sermaye koymada kullanmak zorundadır
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
   - ☐ İstisna yalnızca Bölgedeki yazılım, tasarım ve Ar-Ge faaliyetlerinden elde edilen kazanç için geçerlidir (Bölge dışı kazanç kapsam dışıdır). — resmî metin: “münhasıran bu Bölgedeki yazılım, tasarım ve AR -GE faaliyetlerinden elde ettikleri kazançları 31/12/2028 tarihine kadar gelir ve kurumlar vergisinden müstesnadır.”
 - **Kurallar (kayıttan):**
@@ -30,7 +30,7 @@
 
 **Teknoloji Geliştirme Bölgesi Personel Gelir Vergisi Teşviki (4691 sayılı Kanun geçici madde 2, ikinci-üçüncü fıkra) — Sanayi ve Teknoloji Bakanlığı**
 - **Başvuru dönemi:** Çağrı yoktur; Bölgede çalışılan sürece 31/12/2028 tarihine kadar uygulanır.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (hizmet) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (hizmet) bu desteğin kapsamına uygun.
 - **Kapsam:** yalnız: şahıs işletmesi, limited şirket, anonim şirket
 - **Destek:** Vergi teşviki: Bölgede çalışan Ar-Ge, tasarım ve destek personelinin ücretleri üzerinden (asgari geçim indirimi uygulandıktan sonra) hesaplanan gelir vergisi muhtasar beyannameden indirilerek terkin edilir; teşvik 31/12/2028 tarihine kadar uygulanır. Ücretlere ilişkin kâğıtlar damga vergisinden istisnadır. Destek personeli sayısı Ar-Ge ve tasarım personeli sayısının yüzde onunu aşamaz; toplam personeli on beşe kadar olan Bölge firmalarında bu oran yüzde yirmidir.
 - **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.

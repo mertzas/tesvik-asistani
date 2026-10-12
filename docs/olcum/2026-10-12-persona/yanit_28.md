@@ -18,7 +18,7 @@
 
 **ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman; Yalnız sizin hedef kitlenize açık: Kadın girişimci / kadınların yönettiği işletme.
 - **Kapsam:** yalnız: Kadın girişimci / kadınların yönettiği işletme, Genç girişimci; yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama, kredi/finansman
 - **Kredi ve kefalet limitleri:** 4 Milyon TL; %80 kefalet; başvuru ücreti 10.000 TL
@@ -29,7 +29,7 @@
 
 **Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) — Türk Eximbank**
 - **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman; Yalnız sizin hedef kitlenize açık: Kadın girişimci / kadınların yönettiği işletme.
 - **Kapsam:** yalnız: Kadın girişimci / kadınların yönettiği işletme
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Destek:** Hibe değil kredi: Kadın Girişimci Belgesi'ne sahip ihracatçı firmalara TL cinsinden kullandırımlarda Eximbank'ın en uygun TL faiz oranlarıyla 3 yıla kadar vadeli kredi. Firma limitleri Eximbank'ça firma bazında belirlenir.
@@ -42,7 +42,7 @@
 
 **KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB**
 - **Başvuru dönemi:** Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin.
 - **Kapsam:** yalnız: henüz şirket kurulmamış, şahıs işletmesi, limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
 - **Destek:** Ücretsiz eğitim (parasal destek değildir): geleneksel ve ileri girişimcilik eğitimleri ücretsiz ve aracısız verilir.

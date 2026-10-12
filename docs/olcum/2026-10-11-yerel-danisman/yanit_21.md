@@ -2,7 +2,6 @@
 **Kısa cevap:**
 - **HALKBANK İLK ADIM KREDİSİ PROJESİ** (KGF)
 - Sizin için: **uygun değil** — işletme sahibi ya da en az %50 hissedarı en çok 29 yaşında olmalı (beyan: 52).
-- Kredi koşulları (hibe değil): İşletme kredisi: kefalet azami 800 bin TL, kredi 1 Milyon TL
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: genel (NACE 46.90)
@@ -20,9 +19,9 @@
 - **Kaynak:** https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi
 
 **Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
-- Ziraat Katılım Bankası Katılım Finans Destek Paketi (KGF): 4.000.000 / 6.000.000 TL; %80; 36 ay (6 ay ödemesiz); başvuru ücreti KOBİ 10.000 / KOBİ dışı 20.000 TL; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (KGF): Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Ziraat Katılım Bankası Katılım Finans Destek Paketi (KGF): 4.000.000 / 6.000.000 TL; %80; 36 ay (6 ay ödemesiz); başvuru ücreti KOBİ 10.000 / KOBİ dışı 20.000 TL; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 - KGF Özkaynak Kefalet Programı (KGF): Yararlanıcı/grup başına kefalet azami 5 Milyon TL; işletme kredisi 6–60 ay (ödemesiz ≤1 yıl), yatırım 6–84 ay (ödemesiz ≤2 yıl); işlem ücreti ≥5.000 TL; Dönemsel başvuru yok: başvurular bankalar kanalıyla kefalet.kgf.com.tr üzerinden yapılır. Kefaletten yararlanma süresi, KGF'nin kefalet tahsis tarihinden itibaren 1 yıldır.
-- TKYB KREDİ DESTEK PAKETİ (KGF): Kefalet 150 Milyon TL, kredi 500 Milyon TL; kefalet oranı %80; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı

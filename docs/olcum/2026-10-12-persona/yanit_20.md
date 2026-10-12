@@ -30,7 +30,7 @@
   - ☐ Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz
   - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız
   - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız
-  - ve 2 şart daha: panelde programın Kontrol listesi'nde
+  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12
 
 **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) — Ticaret Bakanlığı**
@@ -70,7 +70,7 @@
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: önceki yıl en az 500.000 USD ihracat); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
 - TURQUALITY® Tanıtım Projesi Desteği (5973 sayılı Karar m.27) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Projeler, bütçelerini içeren proje ile TİM/ihracatçı birliklerince doğrudan Bakanlığa sistem üzerinden sunulur ve Bakanlıkça sistem üzerinden onaylanmalıdır); Çağrı yoktur; TİM/ihracatçı birlikleri bütçeli projeleriyle doğrudan Bakanlığa sistem üzerinden müracaat eder ve proje Bakanlıkça sistem üzerinden onaylanır.
-- Türk Eximbank İhracata Hazırlık Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ve faaliyet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur;
+- Türk Eximbank İhracata Hazırlık Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ve faaliyet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur; 
 
 **Birlikte kullanım (resmî metinden):**
 - [Ticaret Bakanlığı] Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı bilgi sayılır ve müeyyide uygulanır) (resmî metin: "Aynı harcama kalemi için, yararlanıcıların bu Karar dışında başka bir mevzuat/program kapsamında destek aldığının tespiti halinde, bu durum yanıltıcı bilgi ve belge sunulması olarak değerlendirilir")

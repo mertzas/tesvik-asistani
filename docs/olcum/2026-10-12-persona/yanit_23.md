@@ -2,7 +2,6 @@
 **Kısa cevap:**
 - **Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12)** (Ticaret Bakanlığı)
 - Sizin için: **uygun değil** — programın sektör kapsamı (e-ticaret, ihracat) faaliyetinizi (NACE 55.10) kapsamıyor.
-- Destek: %50; 2026'da birime bağlı ülke başına yıllık 12.329.397 TL, marka tesciline bağlı yıllık 19.728.672 TL; en fazla 4 yıl
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: hizmet (NACE 55.10)

@@ -396,3 +396,31 @@ def test_hedef_ulke_satiri_korfez():
 
 def test_pazaryerlerinde_ekli_kelime_pazaryeri_sorusu():
     assert {"tanitim", "ihracat"} <= set(soru_ihtiyaclari("Yurt dışı pazaryerlerinde reklam desteği var mı?"))
+
+
+
+def test_bilgi_yok_cumlesi_bicimi_bozmaz():
+    t = yerel_danisman.tekrarlari_kisalt(
+        "- **Başvuru dönemi:** Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB.\n"
+        "- **Başvuru dönemi:** Sayfada dönem/son tarih belirtilmiyor; başvuru X.\n"
+        "asgari 12 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); son tarih.")
+    assert t.count("**Başvuru dönemi:**") == 2 and t.count("belirtilmiyor") == 1
+    assert "(MADDE 5, EK-3'te ayrıca belirtilmemişse)" in t and "  " not in t
+
+
+def test_panel_siralama_notlari_kartta_gorunmez():
+    for not_ in ("Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.",
+                 "Bu destek sektörden bağımsız genel bir programdır.",
+                 "Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.",
+                 "Başvuru dönemi şu an kapalı (2026/2); yeni çağrıyı izleyin."):
+        assert yerel_danisman._PANEL_NOTU.search(not_), not_
+
+
+def test_tobb_baglı_oda_uyeligi_varyanti():
+    sart = "TOBB'a bağlı ticaret/sanayi/deniz ticaret odası veya ticaret borsası üyeliği"
+    assert yerel_danisman._profilden_karsilanan(sart, FinancialProfile(sirket_turu="anonim"))
+
+
+def test_ek3_ilgisiz_kod_dislamasi_sart_sayilmaz():
+    from app.tesvik_9903_uygunluk import _ek3_durumu
+    assert _ek3_durumu("13.93")[0] == "uygun", "halı: dışlama yalnız 13.10.12 ve 13.92.06 için"

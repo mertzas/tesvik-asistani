@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ** (KGF) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Şirketinizde kadın girişimci ortakların hisse toplamı %50 ve üzeri olmalı (tüzel firmalar için kayıttaki şart); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Kredi koşulları (hibe değil): 4 Milyon TL; %80 kefalet; başvuru ücreti 10.000 TL
-- Diğer seçenekler: Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) (profilinize göre engel yok — şartları teyit edin); KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi (profilinize göre engel yok — şartları teyit edin); TURWIB PROGRAMI DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin).
+- Diğer seçenekler: Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) (profilinize göre engel yok — şartları teyit edin); KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi (profilinize göre engel yok — şartları teyit edin); TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin).
 - 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -17,7 +17,7 @@
 
 **ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman; Yalnız sizin hedef kitlenize açık: Kadın girişimci / kadınların yönettiği işletme.
 - **Kapsam:** yalnız: Kadın girişimci / kadınların yönettiği işletme, Genç girişimci; yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama, kredi/finansman
 - **Kredi ve kefalet limitleri:** 4 Milyon TL; %80 kefalet; başvuru ücreti 10.000 TL
@@ -30,7 +30,7 @@
 
 **Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) — Türk Eximbank**
 - **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman; Yalnız sizin hedef kitlenize açık: Kadın girişimci / kadınların yönettiği işletme.
 - **Kapsam:** yalnız: Kadın girişimci / kadınların yönettiği işletme
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Destek:** Hibe değil kredi: Kadın Girişimci Belgesi'ne sahip ihracatçı firmalara TL cinsinden kullandırımlarda Eximbank'ın en uygun TL faiz oranlarıyla 3 yıla kadar vadeli kredi. Firma limitleri Eximbank'ça firma bazında belirlenir.
@@ -43,7 +43,7 @@
 
 **KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB**
 - **Başvuru dönemi:** Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin.
 - **Kapsam:** yalnız: henüz şirket kurulmamış, şahıs işletmesi, limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
 - **Destek:** Ücretsiz eğitim (parasal destek değildir): geleneksel ve ileri girişimcilik eğitimleri ücretsiz ve aracısız verilir.
@@ -53,9 +53,9 @@
 - **Başvuru:** KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 - TURWIB PROGRAMI DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 - TKYB KREDİ DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
-- HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
@@ -72,8 +72,7 @@
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.
-Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
+Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

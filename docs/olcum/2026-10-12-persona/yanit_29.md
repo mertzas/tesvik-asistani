@@ -16,8 +16,8 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur;
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; 
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman; Yalnız sizin hedef kitlenize açık: Kadın girişimci / kadınların yönettiği işletme.
 - **Kapsam:** yalnız: Kadın girişimci / kadınların yönettiği işletme
 - **Karşıladığı ihtiyaç:** ihracat
 - **Destek:** Hibe değil kredi: Kadın Girişimci Belgesi'ne sahip ihracatçı firmalara TL cinsinden kullandırımlarda Eximbank'ın en uygun TL faiz oranlarıyla 3 yıla kadar vadeli kredi. Firma limitleri Eximbank'ça firma bazında belirlenir.

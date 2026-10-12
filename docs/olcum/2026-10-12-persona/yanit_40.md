@@ -48,7 +48,7 @@
   - ☐ Ön onay için WIPO Madrid Sistemi'ne taraf en az bir ülkede tescilli yurt dışı marka (yoksa önce 5973 m.4 Yurt Dışı Marka Tescil Desteği) — kurumdan teyit edin
   - ☐ Pazaryeri hedef ülkelerden birinde olmalı — resmî metin: “dışı pazaryerleri üzerinden gerçekleştirilen hedef ülkelerdeki pazaryeri komisyon giderleri 3 (üç) yıl”
   - ☐ E-İhracat Konsorsiyumu bünyesindeyseniz, konsorsiyumun satış yaptığı ülkelerdeki yurt dışı pazaryerlerinde komisyon desteği için başvuru yapamazsınız — resmî metin: “pazaryerlerinde dijital pazaryeri tanıtım, sipariş karşılama ve pazaryeri komisyon gideri desteklerine ilişkin olarak destek müracaatında bulunamazlar”
-  - ve 1 şart daha: panelde programın Kontrol listesi'nde
+  - ve 1 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-9
 
 **E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) — Ticaret Bakanlığı**

@@ -31,7 +31,7 @@
 - **Başvuru:** Türk Eximbank; başvuru Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi
 
 **Türk Eximbank Spesifik İhracat Kredi Sigortası (tek satış sözleşmesine bağlı, 1 yıldan uzun vadeli yatırım malı ve hizmet ihracatı alacaklarının sigortası) — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur;
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; 
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Katma değeri yüksek sermaye ve/veya yatırım malı ihracatçıları ile hizmet ihracatçıları yararlanabilir.
 - **Karşıladığı ihtiyaç:** ihracat
 - **Destek:** Hibe veya kredi değil, sigorta: başvurularda alt veya üst limit yoktur. Sigorta prim oranı, işlemin özelliklerine (OECD ülke risk sınıfı, vade, ödeme planı, alıcı risk sınıfı, kapsam oranı vb.) göre yapılan gösterge fiyatlama çalışmasıyla belirlenir ve başvuru sahibiyle paylaşılır.
@@ -45,7 +45,7 @@
 
 **YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB**
 - **Başvuru dönemi:** Sayfada başvuru dönemi belirtilmemiştir. Başvurular en geç 15 gün içinde kontrol edilir; destek, başvurunun KOSGEB'ce onaylandığı tarihte başlar.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin.
 - **Karşıladığı ihtiyaç:** dijital dönüşüm
 - **Destek:** %100 geri ödemesiz; program üst limiti toplam 700.000 TL; program süresi 36 ay. Hizmet başına/toplam üst limit: Dijital Dönüşüm Değerlendirme Analizi ve Yol Haritası 20.000/40.000 TL, Sürdürülebilirlik Raporlaması 100.000/200.000 TL, Yalın Olgunluk Değerlendirme Analizi (YODA) 20.000/40.000 TL, Bağımsız Değerlendirme 150.000/450.000 TL. Yazılım veya donanım alımı değil, belgeli danışmandan alınan hizmet desteklenir.
 - **Profilinize göre sağlanan şartlar:** TTK'da tanımlı statü (şahıs işletmesi)
@@ -60,7 +60,7 @@
 - **Başvuru:** KOSGEB sistemi (www.kosgeb.gov.tr) üzerinden YÖNDE başvuru formu ile — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9165/yonde-yonderlik-ve-degerlendirme-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır); Dönemsel çağrı yoktur;
+- Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır); Dönemsel çağrı yoktur; 
 - İhracat Destek Paketi (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı veya döviz kazandırıcı hizmetler sektöründe faaliyet göstermek (KOBİ ve KOBİ dışı firmalar yararlanabilir)); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
 - Yapay Zekâ Kredi Programı (KOSGEB) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
 

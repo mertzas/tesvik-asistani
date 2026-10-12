@@ -43,7 +43,7 @@
 
 **İŞKUR İşbaşı Eğitim Programı (işverene yönelik: katılımcı cep harçlığı ve sigorta primi İŞKUR tarafından karşılanır) — SGK / İŞKUR**
 - **Başvuru dönemi:** Sayfada sabit bir başvuru dönemi belirtilmemiştir; şartları sağlayan işverenler başvuru yapabilir. Program süresi bilişim ve imalatta en fazla 6 ay, diğer sektörlerde en fazla 3 ay, geleceğin mesleklerinde en fazla 9 aydır.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: istihdam.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: istihdam.
 - **Karşıladığı ihtiyaç:** istihdam
 - **Destek:** Katılımcıya İŞKUR tarafından fiilen katılınan gün üzerinden cep harçlığı: iş arayan statüsünde günlük 1.079,83 TL, lise ve altı örgün eğitime devam eden öğrenciye 809,87 TL, işsizlik ödeneği alana 539,91 TL; geleceğin mesleklerinde sırasıyla 1.403,78 TL, 1.052,83 TL ve 701,89 TL. Meslek lisesi mezunlarına ve Her Meslekte Kadın Eli Projesi kapsamındaki kadın katılımcılara %30 artırımlı. Program süresince genel sağlık sigortası ve iş kazası meslek hastalıklarına ilişkin sigorta primleri İŞKUR tarafından ödenir.
 - **Profilinize göre sağlanan şartlar:** çalışan sayısı şartı (en az 5; profilinizde 8)

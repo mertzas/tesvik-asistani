@@ -61,8 +61,10 @@ def test_kalkinma_hamlesi_programlarinda_ek3_sarti_aranmaz():
 
 def test_ek3_kalemi_ve_sartlari():
     assert degerlendir("hedef_yatirimlar", "28.93", "Konya").durum == "uygun"
-    sartli = degerlendir("hedef_yatirimlar", "13.20", "Konya")
-    assert sartli.durum == "sartli" and "13.10.12" in sartli.gerekce, "EK-3 şart metni gösterilmeli"
+    sartli = degerlendir("hedef_yatirimlar", "18.12", "Konya")
+    assert sartli.durum == "sartli" and "100 Milyon TL" in sartli.gerekce, "EK-3 şart metni gösterilmeli"
+    # 13. kalemin şartı yalnız 13.10.12 ve 13.92.06 kodlarını dışlar; dokuma (13.20) için kalem şartsızdır
+    assert degerlendir("hedef_yatirimlar", "13.20", "Konya").durum == "uygun"
 
 
 def test_genis_kod_alt_kollara_isaret_eder():
@@ -79,7 +81,7 @@ def test_oncelikli_bentleri():
     assert degerlendir("oncelikli_yatirimlar", "26.11", "Konya").durum == "sartli"          # 9/1-b
     assert degerlendir("oncelikli_yatirimlar", "28.93", "Konya").durum == "sartli"          # 9/1-c
     assert degerlendir("oncelikli_yatirimlar", "28.93", "İstanbul").durum == "dusuk"        # İstanbul hariç
-    assert degerlendir("oncelikli_yatirimlar", "13.20", "Van").durum == "sartli", \
+    assert degerlendir("oncelikli_yatirimlar", "18.12", "Van").durum == "sartli", \
         "6. bölge (9/1-ç) ama EK-3 kalemi şartlı: sonuç uygun olamaz"
     assert degerlendir("oncelikli_yatirimlar", "28.93", "Van").durum == "uygun"
     assert degerlendir("oncelikli_yatirimlar", "13.20", "Konya").durum == "dusuk"

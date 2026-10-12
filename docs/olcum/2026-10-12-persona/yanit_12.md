@@ -16,8 +16,8 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB**
-- **Başvuru dönemi: Başvurular en geç 15 gün içinde kontrol edilir; destek, başvurunun KOSGEB'ce onaylandığı tarihte başlar.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Başvuru dönemi:** Başvurular en geç 15 gün içinde kontrol edilir; destek, başvurunun KOSGEB'ce onaylandığı tarihte başlar.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin.
 - **Destek:** %100 geri ödemesiz; program üst limiti toplam 700.000 TL; program süresi 36 ay. Hizmet başına/toplam üst limit: Dijital Dönüşüm Değerlendirme Analizi ve Yol Haritası 20.000/40.000 TL, Sürdürülebilirlik Raporlaması 100.000/200.000 TL, Yalın Olgunluk Değerlendirme Analizi (YODA) 20.000/40.000 TL, Bağımsız Değerlendirme 150.000/450.000 TL. Yazılım veya donanım alımı değil, belgeli danışmandan alınan hizmet desteklenir.
 - **Profilinize göre sağlanan şartlar:** TTK'da tanımlı statü (limited şirket)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):

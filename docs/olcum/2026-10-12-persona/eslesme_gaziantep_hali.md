@@ -2,7 +2,7 @@
 profil: {'sektor': 'imalat', 'bolge': 'Gaziantep', 'calisan_sayisi': 45, 'yillik_ciro': 120000000, 'nace_kodu': '13.93', 'sirket_turu': 'anonim', 'hedefler': ['ihracat', 'yatirim']}
 
  1. [1] Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
-    gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; 9903 ön değerlendirmesi: ŞARTLI — NACE 13.93, EK-3'te '13 Tekstil ürünlerinin imalatı' kalemine giriyor; şart: 500 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.10.12 ve 100 Milyon TL üzerindeki modernizasyon yatırımları hariç o
+    gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; 9903 ön değerlendirmesi: UYGUN GÖRÜNÜYOR — NACE 13.93, EK-3'te '13 Tekstil ürünlerinin imalatı' kalemine giriyor (MADDE 5/1, 10).; Belirttiğiniz hedeflerle eşleşiyor: yatırım.
  2. [1] Küresel Tedarik Zinciri Desteği (5973 sayılı Karar m.10) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
  3. [1] Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) — Türk Eximbank (aktif=True)

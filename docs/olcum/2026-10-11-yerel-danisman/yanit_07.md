@@ -26,14 +26,14 @@
   - ☐ Destekten yararlanılan ayda, 2025 yılı Ocak-Aralık döneminde uzun vadeli sigorta kolları bildirimi yapılan aylar esas alınarak belirlenen eşiğin üzerinde sigortalı bildirimi yapılmalıdır (ayrıntı aşağıdaki maddede).
   - ☐ Eşik: uzun vadeli sigorta kollarından en az sigortalı bildirimi yapılan aydaki/dönemdeki sigortalı sayısının üzerinde bildirimde bulunulmalıdır. — resmî metin: “uzun vadeli sigorta kollarından en az sigortalı bildirimi yapılan aydaki/dönemdeki sigortalı sayısının üzerinde bildirimde bulunulması,”
   - ☐ Kayıt dışı sigortalı çalıştırılmamalı, sahte sigortalı bildirimi yapılmamalı, prime esas kazançlar eksik bildirilmemelidir. — resmî metin: “Kayıt dışı sigortalı çalıştırılmaması, sahte sigortalı bildiriminde bulunulmaması, sigortalıların prime esas kazançlarının eksik bildirilmemesi gerekmektedir.”
-  - ve 2 şart daha: panelde programın Kontrol listesi'nde
+  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - Kayıt dışı, sahte sigortalı veya eksik prime esas kazanç bildirimi tespit edilirse yararlanılan destek geri alınır ve sonraki dönemler için destek verilmez. — resmî metin: “Kayıt dışı sigortalı çalıştırıldığının, sahte sigortalı bildiriminin ya da eksik prime esas kazanç bildiriminin tespiti halinde faydalanılan asgari ücret desteği geri alınacaktır.”
 - **Başvuru:** Kaynak sayfada ayrı başvuru yeri belirtilmemiştir; destek, SGK'ya verilen aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi üzerinden prim ödemesinden mahsup edilir. — https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#asgari-ucret-destegi-2026
 
 **2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu) — SGK / İŞKUR**
 - **Başvuru dönemi:** 2026 yılı Mayıs ila Aralık ayları/dönemleri.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (hizmet) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (hizmet) bu desteğin kapsamına uygun.
 - **Karşıladığı ihtiyaç:** istihdam
 - **Destek:** Günlük 116,67 TL, aylık 3.500,10 TL (toplam prim ödeme gün sayısı x 116,67 TL, işyerinin Kuruma ödeyeceği primlerden mahsup edilir; tutar İşsizlik Sigortası Fonundan karşılanır).
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
@@ -45,7 +45,7 @@
 - **Kurallar (kayıttan):**
   - Kayıt dışı, sahte sigortalı veya eksik prime esas kazanç bildirimi tespit edilirse yararlanılan turizm ücret desteği geri alınır ve sonraki dönemler için destek verilmez. — resmî metin: “Kayıt dışı sigortalı çalıştırıldığının, sahte sigortalı bildiriminin ya da eksik prime esas kazanç bildiriminin tespiti halinde faydalanılan turizm ücret desteği geri alınacaktır.”
   - Sosyal güvenlik destek primine tabi çalışan sigortalılar, yabancı uyruklu sigortalılar ve yurtdışında çalıştırılan sigortalılardan dolayı destekten yararlanılamaz. — resmî metin: “Sosyal güvenlik destek primine tabi çalışan sigortalılar, yabancı uyruklu sigortalılar ve yurtdışında çalıştırılan sigortalılardan dolayı bu destekten yararlanılamaz.”
-- **Başvuru: destek, SGK'ya verilen muhtasar ve prim hizmet beyannamesi üzerinden prim ödemesinden mahsup edilir. — https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#turizm-ucret-destegi-2026
+- **Başvuru:** destek, SGK'ya verilen muhtasar ve prim hizmet beyannamesi üzerinden prim ödemesinden mahsup edilir. — https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#turizm-ucret-destegi-2026
 
 **Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı**
 - **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)

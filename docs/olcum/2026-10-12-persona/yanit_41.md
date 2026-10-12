@@ -2,7 +2,6 @@
 **Kısa cevap:**
 - **KOBİ Dijital Dönüşüm Destek Programı** (KOSGEB)
 - Sizin için: **uygun değil** — ölçek uygun değil: 7 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık; programın sektör kapsamı (imalat) faaliyetinizi (NACE 47.91) kapsamıyor.
-- Kredi koşulları (hibe değil): ₺1.000.000 - ₺20.000.000 kredi (faiz desteği geri ödemesiz)
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: e-ticaret (NACE 47.91)

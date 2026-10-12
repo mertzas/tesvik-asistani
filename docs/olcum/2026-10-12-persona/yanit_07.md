@@ -16,7 +16,7 @@
 
 **Meyve-Sebze Üretim Destekleri (Temel Destek) — Tarım Bakanlığı**
 - **Başvuru dönemi:** Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Seçtiğiniz tarım kategorisi ('sebze_meyve') bu destekle tam eşleşiyor; teyit: Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Seçtiğiniz tarım kategorisi ('sebze_meyve') bu destekle tam eşleşiyor; teyit: Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir.
 - **Karşıladığı ihtiyaç:** dekar başı tarımsal destek ödemesi
 - **Destek:** Dekar başına 367,00 TL temel destek (2026, 1. kategori 'diğer ürünler'); fidan kullanım desteği ayrıca 734,00 TL/da (standart) veya 1.835,00 TL/da (sertifikalı).
 - **Hesaplama:** Sebze ve meyve Tablo 1'de 1. kategori 'diğer ürünler' (katsayı 1,0): temel destek 367,00 TL/da. Planlı üretim kategorilerinde yer almaz. Yeni meyve bahçesinde fidan kullanım desteği (Tablo 6): standart 2 → 734,00, sertifikalı 5 → 1.835,00 TL/da. Dayanak: 8859 sayılı CB Kararı (RG 29.08.2024) tabloları; destek katsayı değeri 2026 için 367,00 TL/da (11781 sayılı CB Kararı, RG 08.09.2026, m.1/a, 1.1.2026'dan geçerli).
@@ -44,7 +44,7 @@
 
 **TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği — TARSİM**
 - **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi belirtilmemiştir.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.
 - **Destek:** Sigorta priminin devletçe karşılanan kısmı: genel yüzde 50; açık alan meyve, bazı sebzeler, patates, şekerpancarı, meyve-bağ fidanı ve kış donunda yüzde 70; köy bazlı verimde yüzde 70; büyükbaş dar kapsamlıda yüzde 60; gelir koruma sigortasında yüzde 60 (2026).
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
   - ☐ Prim desteği Çiftçi Kayıt Sistemi'ne kayıtlı üreticilere uygulanan paketler için tanımlanmıştır; bitkisel üründe dolu ana riskiyle fırtına, hortum, yangın, heyelan, deprem, sel ve su baskını paket halindedir.

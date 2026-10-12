@@ -19,7 +19,7 @@
 
 **Hububat ve Baklagil Üretim Destekleri (Temel Destek + Planlı Üretim) — Tarım Bakanlığı**
 - **Başvuru dönemi:** Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Seçtiğiniz tarım kategorisi ('tahil_baklagil') bu destekle tam eşleşiyor; teyit: Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Seçtiğiniz tarım kategorisi ('tahil_baklagil') bu destekle tam eşleşiyor; teyit: Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir.
 - **Karşıladığı ihtiyaç:** dekar başı tarımsal destek ödemesi
 - **Destek:** Dekar başına 734,00–954,20 TL (2026): temel destek + planlı üretim desteği; mercimek, nohut ile birinci grup yem bitkisi sayılan yulaf, çavdar, tritikale katsayı 1,0 → 734,00 TL/da; arpa, buğday, mısır (dane) 1,3 → 954,20 TL/da. Sertifikalı tohum desteği ayrıca.
 - **Hesaplama:** Temel destek (Tablo 1) + planlı üretim desteği (Tablo 2, planlama kapsamındaki ürünü havzasında üretene), her biri katsayı × 367,00 TL: 1. kategori (mercimek, nohut; yulaf, çavdar, tritikale birinci grup yem bitkisi olarak) 1,0 → 367,00 + 367,00

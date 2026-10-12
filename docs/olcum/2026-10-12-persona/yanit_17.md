@@ -1,8 +1,7 @@
 <!-- persona: gaziantep_hali | soru: Yeni dokuma makineleri için yatırım teşvik belgesi alırsak hangi destekler çıkar? -->
 **Kısa cevap:**
-- Öne çıkan: **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)** (Sanayi ve Teknoloji Bakanlığı) — şartlı — karar şartını teyit edin; başlıca şart: Karar şartı: EK-3 13 kalemi: Tekstil ürünlerinin imalatı 500 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.10.12 ve 100 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.92.06 kodları desteklenmez; 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı).
+- Öne çıkan: **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)** (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Asgari sabit yatırım tutarı 3. bölgede 6 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez; 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı).
 - Yatırım teşvik bölgeniz: 3. bölge (Karar değerlendirmesinden).
-- Asgari sabit yatırım tutarı 3. bölgede 6 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez.
 - Destek unsurları (Karar metninden): vergi indirimi: yatırıma katkı oranı %20, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 2 yıl (MADDE 18, 3. bölge); faiz/kâr payı desteği: bu programda yalnızca 4, 5, 6. bölgelerde; 3. bölgede YOK (MADDE 15/1-c); makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); asgari sabit yatırım: 6.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
 - Diğer seçenekler: Türk Eximbank İhracata Yönelik Yatırım Kredisi (makine, teçhizat ve aksam harcamaları) (profilinize göre engel yok — şartları teyit edin); YATIRIM-İŞLETME DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); Türk Eximbank IBRD Yeşil İhracat Destek Kredisi (AB karbon sınır düzenlemesine yönelik yeşil dönüşüm yatırımları için orta-uzun vadeli kredi) (şarta bağlı).
 - 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
@@ -19,12 +18,11 @@
 
 **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı**
 - **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)
-- **Sizin için:** Şartlı — Karar şartını teyit edin — Karar metnine göre ön değerlendirme: ŞARTLI — NACE 13.93, EK-3'te '13 Tekstil ürünlerinin imalatı' kalemine giriyor; şart: 500 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.10.12 ve 100 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.92.06 kodları desteklenmez. (MADDE 5/1, 10).
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Karar metnine göre ön değerlendirme: UYGUN GÖRÜNÜYOR — NACE 13.93, EK-3'te '13 Tekstil ürünlerinin imalatı' kalemine giriyor (MADDE 5/1, 10).
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı
-- **Destek unsurları (Karar metninden, bölgenize göre):** vergi indirimi: yatırıma katkı oranı %20, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 2 yıl (MADDE 18, 3. bölge); faiz/kâr payı desteği: bu programda yalnızca 4, 5, 6. bölgelerde; 3. bölgede YOK (MADDE 15/1-c); makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); asgari sabit yatırım: 6.000.000 TL ( başvuru son tarihi 31/12/2030.
-- **Dışlama koşulu** (yatırımınız buna giriyorsa bu programdan yararlanamazsınız): Karar şartı: EK-3 13 kalemi: Tekstil ürünlerinin imalatı 500 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.10.12 ve 100 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.92.06 kodları desteklenmez. (MADDE 5/1, 10)
+- **Destek unsurları (Karar metninden, bölgenize göre):** vergi indirimi: yatırıma katkı oranı %20, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 2 yıl (MADDE 18, 3. bölge); faiz/kâr payı desteği: bu programda yalnızca 4, 5, 6. bölgelerde; 3. bölgede YOK (MADDE 15/1-c); makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); asgari sabit yatırım: 6.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Asgari sabit yatırım tutarı 3. bölgede 6 milyon TL (MADDE 5/2; bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez
+  - ☐ Asgari sabit yatırım tutarı 3. bölgede 6 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez
   - ☐ Yatırım konusunun Karar'ın EK-3 listesinde ('Desteklerden faydalanabilecek sektörler ve şartlar') yer alması ve oradaki şartları sağlaması; eşleştirme NACE Rev.2.1 kodu üzerinden yapılır (MADDE 5/1). — resmî metin: “Desteklerden yararlanacak yatırımların ek-3’te belirtilen yatırım konularına yönelik olması ve bu konular için belirtilen şartları sağlaması gerekir.”
   - ☐ Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2). — resmî metin: “1 inci ve 2 nci bölgelerde 12 milyon TL, diğer bölgelerde ise 6 milyon TL olması gerekir.”
 - **Kurallar (kayıttan):**
@@ -47,7 +45,7 @@
 
 **YATIRIM-İŞLETME DESTEK PAKETİ — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Faaliyet kodunuz: 13.93, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi).
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Faaliyet kodunuz: 13.93, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi); Belirttiğiniz hedeflerle eşleşiyor: yatırım.
 - **Kapsam:** yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı
 - **Kredi ve kefalet limitleri:** Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
@@ -59,12 +57,12 @@
 - **Başvuru:** Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, TEB, Şekerbank, Anadolubank, ING Bank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi
 
 **9903 programları bölgenize göre (Karar metninden; önce engelsiz ve şartlı, sonra en yüksek katkı):**
-- Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin): yatırıma katkı %20; makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); faiz desteği: bu programda yalnızca 4, 5, 6. bölgelerde
+- Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (profilinize göre engel yok — şartları teyit edin): yatırıma katkı %20; makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); faiz desteği: bu programda yalnızca 4, 5, 6. bölgelerde
 - Stratejik Hamle Programı (9903 sayılı Karar) (şarta bağlı): yatırıma katkı %40; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 180.000.000 TL tavan; faiz desteği: repo oranının %30'i, azami 15 puan
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Türk Eximbank IBRD Yeşil İhracat Destek Kredisi (AB karbon sınır düzenlemesine yönelik yeşil dönüşüm yatırımları için orta-uzun vadeli kredi) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: AB'nin Sınırda Karbon Düzenleme Mekanizması (CBAM) kapsamında Faz 1 ve Faz 2'de yer alan sektörlerde faaliyet gösteren ihracatçı firmalar başvurabilir); Dönemsel çağrı yoktur;
-- Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı, imalatçı-ihracatçı, ihraç kaydıyla nihai mal üreten imalatçı, serbest bölgede mukim ve üçüncü ülkelere satış yapan firmalar ile döviz kazandırıcı hizmet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur;
+- Türk Eximbank IBRD Yeşil İhracat Destek Kredisi (AB karbon sınır düzenlemesine yönelik yeşil dönüşüm yatırımları için orta-uzun vadeli kredi) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: AB'nin Sınırda Karbon Düzenleme Mekanizması (CBAM) kapsamında Faz 1 ve Faz 2'de yer alan sektörlerde faaliyet gösteren ihracatçı firmalar başvurabilir); Dönemsel çağrı yoktur; 
+- Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı, imalatçı-ihracatçı, ihraç kaydıyla nihai mal üreten imalatçı, serbest bölgede mukim ve üçüncü ülkelere satış yapan firmalar ile döviz kazandırıcı hizmet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur; 
 - Stratejik Hamle Programı (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Ön değerlendirmedeki 5 kriterden en az 3'ünü sağlamak: (a) konu stratejik hamle yatırım konuları listesinde); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
@@ -95,7 +93,6 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. Planladığınız sabit yatırım tutarı nedir? — teşvik belgesi (9903) asgari sabit yatırım tutarının altındaki yatırıma düzenlenmez (kartlardaki teyit maddesi).
-2. Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar): kayda göre “Karar şartı: EK-3 13 kalemi: Tekstil ürünlerinin imalatı 500 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.10.12 ve 100 Milyon TL üzerindeki modernizasyon yatırımları hariç olmak üzere 13.92.06 kodları desteklenmez.” — yatırımınız bu kapsama giriyor mu? Giriyorsa bu programdan destek alınamaz.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

@@ -1,7 +1,6 @@
 <!-- persona: restoran | soru: Restoranıma 3 kişi daha alacağım; 4447 sayılı Kanun işveren prim teşviki kaç ay sürer, şartları neler? -->
 **Kısa cevap:**
 - **Çok Tehlikeli Sınıfta Yer Alan İşyerlerinde İşsizlik Sigortası Primi İşveren Hissesi Teşviki (4447 sayılı Kanun ek madde 4)** (SGK / İŞKUR)
-- Destek: İşsizlik sigortası işveren hissesi teşviki, bir sonraki takvim yılından geçerli olmak üzere ve üç yıl süreyle %1 olarak uygulanır.
 - Sizin için: **uygun değil** — şartta “ondan fazla çalışan” aranıyor (profilinizde 4 çalışan).
 - Program: 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer alıp ondan fazla çalışanı bulunan ve üç yıl içinde ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmeyen işyerlerinde, işsizlik sigortası işveren hissesi teşviki bir sonraki takvim yılından geçerli olmak üzere üç yıl süreyle […]
 - Kimler başvurabilir (kayıttaki şartlar): İşyeri 6331 sayılı Kanun kapsamında çok tehlikeli sınıfta yer almalıdır; İşverenin Türkiye genelinde çok tehlikeli sınıftaki işyerlerinde her ay toplamda ondan fazla çalışanı bulunmalıdır; Ölümlü veya sürekli iş göremezlikle sonuçlanan iş kazası meydana gelmemelidir.

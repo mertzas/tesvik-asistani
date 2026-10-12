@@ -17,7 +17,7 @@
 
 **Fındık Temel Desteği — Bitkisel Üretim Temel Destek, 3. kategori (2026 üretim yılı) — Tarım Bakanlığı**
 - **Başvuru dönemi:** Temel destek için ayrı başvuru yoktur; ilgili üretim yılında ÇKS'ye kayıtlı olmak gerekir (kayıt takvimi için il/ilçe müdürlüğüne bakın).
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Yetiştirdiğiniz ürün/faaliyet (fındık) bu destekte geçiyor; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Yetiştirdiğiniz ürün/faaliyet (fındık) bu destekte geçiyor.
 - **Karşıladığı ihtiyaç:** dekar başı tarımsal destek ödemesi
 - **Destek:** Dekar başına: 1,5 (fındığın destek katsayısı) x destek katsayı değeri; değer 2026 üretim yılı için dekara 367 TL, 2027 için 442 TL. Birim destek tutarları ve katsayı değeri her yıl yeniden değerlendirilir.
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
@@ -40,7 +40,7 @@
   - ☐ Fındık ve kivide asgari alan toplamı 3 dekardır.
   - ☐ Altıntop, armut, asma, ayva, badem, ceviz, dut, elma, erik, incir vb. diğer türlerde asgari alan toplamı 5 dekardır.
   - ☐ Kiralık arazide bahçe tesis edenlerin kira sözleşmesi en az üç yıl olmalı. — resmî metin: “Kiralama yolu ile bağ ve kapama bahçe tesis eden çiftçilerin kira sözleşme süresi en az üç yıl olmalıdır.”
-  - ve 1 şart daha: panelde programın Kontrol listesi'nde
+  - ve 1 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Kurallar (kayıttan):**
   - Bahçe, tesis yılından sonra iki yıl boyunca yılda en az bir kez il/ilçe müdürlüğünce kontrol edilir; minimum alanın altına düşerse destek geri alınır. — resmî metin: “tesis edildiği üretim yılı hariç iki y ıl boyunca yılda en az bir kez olmak üzere il/ilçe müdürlüğünce kontrol edilerek”
   - Mücbir sebep dışında bahçe asgari alanın altına düşerse desteğin tamamı geri alınır. — resmî metin: “Mücbir sebepler dışındaki nedenlerle bağ ve kapama bahçenin mini mum alan toplamı altına düşmesi durumunda desteğin tamamı”

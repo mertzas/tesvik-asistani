@@ -19,7 +19,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Yapay Zekâ Kredi Programı — KOSGEB**
-- **Başvuru dönemi: başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
+- **Başvuru dönemi:** başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak.
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Destek:** Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz); GO Dijital Cüzdan'a blokeli, bankadan Kesin Teminat Mektubu zorunlu (limit = teminat tutarı, en az 500.000 TL); geçerli Teknogirişim Rozeti şartı

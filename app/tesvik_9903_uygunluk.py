@@ -161,6 +161,20 @@ def teknoloji_sinifi(nace: str | None) -> str | None:
 _KOD = re.compile(r"(?<![\d.])\d{2}(?:\.\d{1,2}){1,3}(?![\d])")
 
 
+def _ilgisiz_kod_dislamasi_cikar(sart: str, n: str) -> str:
+    """"... 13.10.12 ve ... 13.92.06 kodları desteklenmez" cümlesi yalnız o alt kodlar içindir; profil kodu bunlardan
+    değilse şart sayılmaz (hakem bulgusu 2026-10-12, 5. tur: halı 13.93'e "dışlama koşulu" soruluyordu)."""
+    cumleler = re.split(r"(?<=\.)\s+(?=[A-ZÇĞİÖŞÜ0-9])", sart)
+    kalan = []
+    for c in cumleler:
+        kodlar = _KOD.findall(c)
+        if kodlar and re.search(r"kodları desteklenmez|kodlarında desteklenmez", c) and not any(
+                _rakam(n).startswith(_rakam(k)) for k in kodlar):
+            continue
+        kalan.append(c)
+    return " ".join(kalan).strip()
+
+
 def _haric_kod(kayit: dict, n: str) -> str | None:
     """Kalemin tanım/şart metninde "hariç" denen NACE kodlarından profil koduna önek olarak uyan (ör. 85.5 ↔ 85.53)."""
     metin = " ".join(str(kayit.get(a) or "") for a in ("tanim", "sartlar"))
@@ -190,7 +204,7 @@ def _ek3_durumu(nace: str) -> tuple[str, str]:
             # 2026-10-12: sürücü kursu, NACE 85.53, Hedef Yatırımlar için "şartlı" deniyordu).
             return "uygun_degil", (f"NACE {n}, EK-3'teki '{kayit['kod']} {_tanim(kayit['tanim'])}' kaleminde hariç "
                                    f"tutulan {haric} alt koluna giriyor; bu programda yatırım konusu desteklenmez")
-        sart = (kayit.get("sartlar") or "").strip()
+        sart = _ilgisiz_kod_dislamasi_cikar((kayit.get("sartlar") or "").strip(), n)
         bolum = bolum_sarti(kayit.get("bolum", "")) or ""
         ek = " ".join(x for x in (sart, bolum) if x)
         if ek:

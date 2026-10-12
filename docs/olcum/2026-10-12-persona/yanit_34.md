@@ -4,7 +4,7 @@
 - Yatırım teşvik bölgeniz: 1. bölge (Karar değerlendirmesinden).
 - Asgari sabit yatırım tutarı 1. bölgede 12 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez.
 - Destek unsurları (Karar metninden): vergi indirimi: yatırıma katkı oranı %50, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 8 yıl (MADDE 18/3, 1. bölge); faiz/kâr payı desteği: repo oranının %40'i, azami 20 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı, azami 5 yıl (MADDE 15); makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteğiyle birlikte alınamaz (MADDE 16); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
-- Diğer seçenekler: TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (şarta bağlı); HALKBANK İLK ADIM KREDİSİ PROJESİ (şarta bağlı).
+- Diğer seçenekler: TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin); TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); HALKBANK İLK ADIM KREDİSİ PROJESİ (şarta bağlı).
 - 3 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -21,9 +21,9 @@
 - **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)
 - **Sizin için:** Şarta bağlı — Karar metnine göre ön değerlendirme: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ; kayıtlarımızda yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7).
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı
-- **Destek unsurları (Karar metninden, bölgenize göre):** vergi indirimi: yatırıma katkı oranı %50, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 8 yıl (MADDE 18/3, 1. bölge); faiz/kâr payı desteği: repo oranının %40'i, azami 20 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı, azami 5 yıl (MADDE 15); makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteğiyle birlikte alınamaz (MADDE 16); asgari sabit yatırım: 12.000.000 TL ( başvuru son tarihi 31/12/2030.
+- **Destek unsurları (Karar metninden, bölgenize göre):** vergi indirimi: yatırıma katkı oranı %50, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 8 yıl (MADDE 18/3, 1. bölge); faiz/kâr payı desteği: repo oranının %40'i, azami 20 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı, azami 5 yıl (MADDE 15); makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteğiyle birlikte alınamaz (MADDE 16); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Asgari sabit yatırım tutarı 1. bölgede 12 milyon TL (MADDE 5/2; bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez
+  - ☐ Asgari sabit yatırım tutarı 1. bölgede 12 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez
   - ☐ Desteklenecek yatırım konuları il bazlı 'yerel yatırım konuları listesi' ile tebliğle belirlenir; program Kalkınma Ajansları Genel Müdürlüğünce yürütülür (MADDE 7). — resmî metin: “çerçevesinde her il özelinde belirlenecek dört yatırım konusunun yer aldığı, Bakanlık tebliği ile yayımlanacak olan listeyi”
   - ☐ Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2). — resmî metin: “1 inci ve 2 nci bölgelerde 12 milyon TL, diğer bölgelerde ise 6 milyon TL olması gerekir.”
   - ☐ Yatırımlar Yerel Kalkınma Hamlesi Programı Değerlendirme Komitesince proje bazında değerlendirilir; yalnız uygun görülen projeler için teşvik belgesi düzenlenir. — resmî metin: “Yerel Kalkınma Hamlesi Programı Değerlendirme Komitesi tarafından proje bazında değerlendirilir ve uygun görülen projeler için teşvik belgesi düzenlenir.”
@@ -33,26 +33,24 @@
   - Yerel Kalkınma Hamlesi kapsamında ve yatırımınıza vergi indirimi öngörülüyorsa: Bakanlıkça onaylanan bir ekosistem geliştirme planı yürütmeniz ve tamamlama vizesine kadar sabit yatırım tutarının en az %2'si kadar harcama yapmanız gerekir (taahhüt). — resmî metin: “sabit yatırım tutarının %2’sinden az olamaz. Vergi indirimi desteği öngörülmeyen yatırımlar için bu hüküm uygulanmaz.”
 - **Başvuru:** Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#yerel-kalkinma-hamlesi
 
-**TKYB KREDİ DESTEK PAKETİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman; teyit: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.
-- **Karşıladığı ihtiyaç:** kredi/finansman
-- **Kredi ve kefalet limitleri:** Kefalet 150 Milyon TL, kredi 500 Milyon TL; kefalet oranı %80
-- **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.
-- **Başvuru:** Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi
-
 **TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: TOBB'a bağlı ticaret/sanayi/deniz ticaret odası veya ticaret borsası üyeliği.
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman.
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Kredi ve kefalet limitleri:** Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
 - **Profilinize göre sağlanan şartlar:** oda (TOBB) üyeliği: limited şirket ticaret siciline kayıtlıdır ve oda üyeliği zorunludur; KOBİ ölçeği (mikro işletme)
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ TOBB'a bağlı ticaret/sanayi/deniz ticaret odası veya ticaret borsası üyeliği — resmî metin: “TOBB üyesi (Ticaret Odası Üyeleri, Sanayi Odası Üyeleri, Deniz Ticaret Odası Üyeleri ve Ticaret Borsası Üyeleri) olan işletmeler yararlanabilecektir.”
 - **Kurallar (kayıttan):**
   - Kredi döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz — resmî metin: “Bu paket kapsamındaki krediler döviz, kıymetli maden, mücevherat finansmanında ve refinansman için kullanılamaz”
   - Kefalet talepleri yalnız TL cinsinden yapılır — resmî metin: “Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır.”
 - **Başvuru:** Kredi veren bankalar: Akbank, Denizbank, Garanti BBVA, Halkbank, QNB Bank, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım (yalnızca TL kefalet) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi
+
+**TKYB KREDİ DESTEK PAKETİ — KGF**
+- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Karşıladığı ihtiyaç:** kredi/finansman
+- **Kredi ve kefalet limitleri:** Kefalet 150 Milyon TL, kredi 500 Milyon TL; kefalet oranı %80
+- **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.
+- **Başvuru:** Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi
 
 **9903 programları bölgenize göre (Karar metninden; önce engelsiz ve şartlı, sonra en yüksek katkı):**
 - Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (şarta bağlı): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteği: repo oranının %40'i, azami 20 puan

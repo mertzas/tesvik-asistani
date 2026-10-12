@@ -17,7 +17,7 @@
 
 **ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman; Yalnız sizin hedef kitlenize açık: Genç girişimci.
 - **Kapsam:** yalnız: Kadın girişimci / kadınların yönettiği işletme, Genç girişimci; yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama, kredi/finansman
 - **Kredi ve kefalet limitleri:** 4 Milyon TL; %80 kefalet; başvuru ücreti 10.000 TL
@@ -28,7 +28,7 @@
 
 **HALK BANKASI GENÇİZ KREDİSİ PROGRAMI DESTEK PAKETİ — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman; Yalnız sizin hedef kitlenize açık: Genç girişimci.
 - **Kapsam:** yalnız: Genç girişimci
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Kredi ve kefalet limitleri:** 800 bin TL; kefalet başvuru ücreti 7.500 TL
@@ -39,7 +39,7 @@
 
 **TURYIB Programı Destek Paketi — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman; teyit: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Belirttiğiniz hedeflerle eşleşiyor: finansman; Yalnız sizin hedef kitlenize açık: Genç girişimci.
 - **Kapsam:** yalnız: Genç girişimci; yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Kredi ve kefalet limitleri:** 85 Milyon TL; kefalet oranı %80

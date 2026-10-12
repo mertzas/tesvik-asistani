@@ -17,7 +17,7 @@
 
 **YATIRIM-İŞLETME DESTEK PAKETİ — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Faaliyet kodunuz: 10.51, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi).
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Faaliyet kodunuz: 10.51, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi); Belirttiğiniz hedeflerle eşleşiyor: makine alımı, yatırım.
 - **Kapsam:** yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı, kredi/finansman
 - **Kredi ve kefalet limitleri:** Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
@@ -46,7 +46,7 @@
 
 **Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026) — Hazine ve Maliye Bakanlığı**
 - **Başvuru dönemi:** Dönemsel çağrı yoktur; Karar 1/1/2024-31/12/2026 arasında tahsis edilecek kredilere uygulanır.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun.
 - **Kapsam:** yalnız: şahıs işletmesi, limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Destek:** Hibe değil, faiz indirimi. Temel bitkisel üretim: 300.000 TL'ye kadar yüzde 100, üstü yüzde 50 indirim, üst limit 10.000.000 TL. Meyve yetiştiriciliği ve bağcılık: yüzde 75 indirim, üst limit 40.000.000 TL; yurt içi sertifikalı fide/fidan kullanımında ek 10 puan, kadın veya genç (40 yaş ve altı) çiftçiye ek 15 puan; toplam indirim yüzde 100'ü aşamaz. Vadesi geçmiş vergi/SGK borcu olmaması şartı aranır.

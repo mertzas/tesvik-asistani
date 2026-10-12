@@ -4,7 +4,6 @@
 **Kısa cevap:**
 - **Girişimci Destek Programı** (KOSGEB)
 - Sizin için: **uygun değil** — KOSGEB programları kayıtlı bir işletme gerektirir.
-- Destek: İş Kurma: gerçek kişi 10.000 TL / sermaye şirketi 20.000 TL (%100 geri ödemesiz; genç/kadın/engelli/gazi/şehit yakını +10.000 TL); İş Geliştirme: 1.500.000 TL'ye kadar (%80 geri ödemeli, +150.000 TL ilave); kredi faiz/kâr payı desteği: 1.000.000 TL kredi, faizin %50'si geri ödemesiz
 - Adıyla eşleşen diğer kayıtlar: GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (uygun değil).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -34,7 +33,7 @@
 - KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi (KOSGEB): Ücretsiz eğitim (parasal destek değildir): geleneksel ve ileri girişimcilik eğitimleri ücretsiz ve aracısız verilir.; Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) (TUBITAK) — şarta bağlı (teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin); 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı yalnız şunlar için açık: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); yeni başvuranlar için açık çağrı kayıtlarımızda yok (kurum duyurularından takip edin)
+- 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) (TUBITAK) — şarta bağlı (Sektörünüz (arge) bu desteğin kapsamına uygun); 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı yalnız şunlar için açık: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); yeni başvuranlar için açık çağrı kayıtlarımızda yok (kurum duyurularından takip edin)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) (TUBITAK) — kapalı: program başvuruya açık değil (TÜBİTAK, BiGG 1. aşamasını 2026-2028 döneminde 1812 Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) çerçevesinde yürütüyor (1612 çağrı sayfası); 1512 program sayfası erişime kapalı. Yeni başvuru için 1812 çağrılarına bakın)

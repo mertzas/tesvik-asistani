@@ -43,7 +43,7 @@
 
 **Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan — SGK / İŞKUR**
 - **Başvuru dönemi:** 01.10.2008 tarihinden itibaren uygulanmaktadır; imalat için 5 puanlık oran 2026 yılı sonuna kadar.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (imalat) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (imalat) bu desteğin kapsamına uygun.
 - **Karşıladığı ihtiyaç:** istihdam
 - **Destek:** Malullük, yaşlılık ve ölüm sigortaları işveren hissesinin 2 puanlık kısmı Hazinece karşılanır; imalat sektöründe 2026 yılı sonuna kadar 5 puan.
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):

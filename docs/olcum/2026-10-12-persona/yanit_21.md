@@ -39,7 +39,7 @@
 - **Başvuru:** Türk Eximbank şubeleri (geçerli kredi limiti yoksa analiz başvuru evrakları Eximbank'a iletilir) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi
 
 **Türk Eximbank İhracata Hazırlık Kredisi — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur;
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; 
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ve faaliyet yürüten firmalar yararlanabilir.
 - **Karşıladığı ihtiyaç:** ihracat, kredi/finansman
 - **Destek:** Hibe değil kredi: tutar firma bazında Banka tarafından yapılan tahsis çalışmasıyla belirlenir; faiz/kar payı oranları vade, tutar ve para birimine göre belirlenir. İhracat veya döviz kazandırıcı hizmet taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
@@ -52,9 +52,9 @@
 - **Başvuru:** Türk Eximbank (eximbank.gov.tr); teminat olarak İGE kefaleti için İhracatı Geliştirme A.Ş. — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/ihracata-hazirlik-kredisi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Türk Eximbank Sevk Öncesi İhracat Kredisi (SÖİK) — aracı bankalar üzerinden (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç, Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan imalatçı firmalar yararlanır); Dönemsel çağrı yoktur;
-- Türk Eximbank IBRD Yeşil İhracat Destek Kredisi (AB karbon sınır düzenlemesine yönelik yeşil dönüşüm yatırımları için orta-uzun vadeli kredi) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: AB'nin Sınırda Karbon Düzenleme Mekanizması (CBAM) kapsamında Faz 1 ve Faz 2'de yer alan sektörlerde faaliyet gösteren ihracatçı firmalar başvurabilir); Dönemsel çağrı yoktur;
-- Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı, imalatçı-ihracatçı, ihraç kaydıyla nihai mal üreten imalatçı, serbest bölgede mukim ve üçüncü ülkelere satış yapan firmalar ile döviz kazandırıcı hizmet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur;
+- Türk Eximbank Sevk Öncesi İhracat Kredisi (SÖİK) — aracı bankalar üzerinden (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç, Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan imalatçı firmalar yararlanır); Dönemsel çağrı yoktur; 
+- Türk Eximbank IBRD Yeşil İhracat Destek Kredisi (AB karbon sınır düzenlemesine yönelik yeşil dönüşüm yatırımları için orta-uzun vadeli kredi) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: AB'nin Sınırda Karbon Düzenleme Mekanizması (CBAM) kapsamında Faz 1 ve Faz 2'de yer alan sektörlerde faaliyet gösteren ihracatçı firmalar başvurabilir); Dönemsel çağrı yoktur; 
+- Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı, imalatçı-ihracatçı, ihraç kaydıyla nihai mal üreten imalatçı, serbest bölgede mukim ve üçüncü ülkelere satış yapan firmalar ile döviz kazandırıcı hizmet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur; 
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.

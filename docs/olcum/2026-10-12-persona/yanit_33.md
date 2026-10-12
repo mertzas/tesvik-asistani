@@ -16,7 +16,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur;
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; 
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır.
 - **Karşıladığı ihtiyaç:** ihracat
 - **Destek:** Hibe değil kredi: marka geliştirme/tutundurma harcamaları ile yurt dışında yerleşik marka ve ilgili mağaza, tesis alım bedelleri finanse edilir. Firma limitleri Eximbank'ça firma bazında belirlenir; faiz/kar payı vade, tutar ve para birimine göre belirlenir.
@@ -57,7 +57,7 @@
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
-- Türk Eximbank İhracata Hazırlık Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ve faaliyet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur;
+- Türk Eximbank İhracata Hazırlık Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı, ihracata yönelik mal üreten (sadece nihai üretici) imalatçı veya döviz kazandırıcı hizmet ve faaliyet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur; 
 - Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik imalatçı-ihracatçı, ihracata yönelik mal üreten imalatçı ve ihracatçı vasfına haiz firmalar, Türkiye menşeli veya Dahilde İşleme Rejimi kapsamında ithal edilen malların ihracı için yararlanabilir); Dönemsel çağrı yoktur; geçerli kredi limiti olan firma kredi talep formu ve onaylı harcama listesiyle şubeye başvurur. Harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar olabilir.
 
 **Size kapalı ya da başvuruya kapalı programlar:**

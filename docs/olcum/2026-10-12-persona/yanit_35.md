@@ -17,7 +17,7 @@
 
 **Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12) — Ticaret Bakanlığı**
 - **Başvuru dönemi:** Ödeme belgesi tarihinden itibaren 6 ay içinde
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.
 - **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** reklam, tanıtım ve marka
 - **Destek:** %50; 2026'da birime bağlı ülke başına yıllık 12.329.397 TL, marka tesciline bağlı yıllık 19.728.672 TL; en fazla 4 yıl
@@ -30,12 +30,12 @@
   - ☐ Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz
   - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız
   - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız
-  - ve 2 şart daha: panelde programın Kontrol listesi'nde
+  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12
 
 **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) — Ticaret Bakanlığı**
 - **Başvuru dönemi:** Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.
 - **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** reklam, tanıtım ve marka
 - **Destek:** %50 (hedef ülkelerde %70); 2026 yıllık üst limit şirketler için 36.993.646 TL; pazaryeri başına 3 yıl
@@ -54,7 +54,7 @@
 
 **Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) — Ticaret Bakanlığı**
 - **Başvuru dönemi:** Ödeme belgesi tarihinden itibaren 6 ay içinde
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.
 - **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
 - **Destek:** %50; 2026'da birim başına yıllık 9.862.972 TL; ülke başına en fazla 4 yıl, en fazla 25 birim
 - **Hesaplama:** Kira giderinin %50'si, birim başına yıllık en çok 9.862.972 TL (2026)
@@ -66,7 +66,7 @@
   - ☐ Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz
   - ☐ Tasarımcı şirket / tasarım ofisi desteği (m.15) kapsamında desteklenmiyor olmalısınız
   - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız
-  - ve 2 şart daha: panelde programın Kontrol listesi'nde
+  - ve 2 şart daha (tamamı panelde programın Kontrol listesinde).
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden; e-ticaret depoları için KEP üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-11
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):

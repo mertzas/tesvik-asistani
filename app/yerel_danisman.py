@@ -117,7 +117,8 @@ _KILIT = re.compile(r"rozet|üyeli[ğk]|üyesi|ihracatçı|net ihracat|greendeks
                     r"en az .{0,20}(?:USD|dolar)|\d+\s*yaş|yaşını aş|"
                     # gerçekleşmiş e-ihracatın belgelenmesi (Eximbank E-İhracat Destek Kredisi; hakem bulgusu 4. tur:
                     # e-ihracata yeni başlayacak firmaya "engel yok" deniyordu)
-                    r"faaliyetini tevsik|beyannamesi ile e-ihracat|tam zaman eşdeğer|"
+                    r"faaliyetini tevsik|beyannamesi ile e-ihracat|tam zaman eşdeğer|yurt dışı ortaklı|"
+                    r"başvurusu yapılmış olmalı|"
                     r"kad[ıi]n (?:yönetici|girişimci|ortak)\w*(?: bulunan| olan| olmak| olmalı)", re.IGNORECASE)
 _KOSULLU_BELGE = re.compile(r"\b\w+(?:ysem|ysam|ysek|ysak)\b|\bise\b.{0,40}(?:hazırla|ekle)", re.IGNORECASE)
 _KOBI = re.compile(r"\bKOB[İI](?:'|’)?(?:ler|lerin|leri|lere|nin|ye|ölçeğinde|lik)?\b")
@@ -242,7 +243,13 @@ def _birlestir(parcalar: list[str]) -> str:
         if p and _norm(p) not in gorulen:
             gorulen.add(_norm(p))
             sonuc.append(p)
+    # Kalıcı engel (sektör kapsamı) geçici engelden (ölçek) önce yazılır (hakem bulgusu 6. tur: hizmet sektöründeki kurs
+    # "mikro ölçek" gerekçesini görüp büyüyünce programın açılacağını sanabilirdi).
     metin = "; ".join(sonuc)
+    if "“" not in metin:   # alıntı içindeki noktalı virgül bölünmesin
+        parcalar = metin.split("; ")
+        parcalar.sort(key=lambda p: 0 if re.search(r"sektör kapsamı|imalatçı işletmelere yönelik", p) else 1)
+        metin = "; ".join(parcalar)
     # İki sektör gerekçesi aynı şeyi söyler; ayrıntılı olan ("programın sektör kapsamı (imalat) ...") kalır (hakem
     # bulgusu 4. tur: ret gerekçesinde iki sektör cümlesi yan yanaydı).
     if "programın sektör kapsamı" in metin:
@@ -957,6 +964,11 @@ def _sektor_disi(t, profil) -> str | None:
     nace2 = int(nace[:2]) if nace[:2].isdigit() else None
     if p_sek in k_sek or k_sek & HEDEF_SEKTOR_ETIKETLERI & hedef:
         return None
+    if k_sek <= HEDEF_SEKTOR_ETIKETLERI:
+        # "Ar-Ge, ihracat" etiketleri ihtiyaç türüdür, faaliyet sektörü değil; asıl şartlar (ihracat artışı, kredi alt
+        # limiti) kayıttan değerlendirilir (hakem bulgusu 2026-10-12, 5-6. tur: Küresel Rekabetçilik matbaaya "sektör
+        # kapsamı NACE 18.12'yi kapsamıyor" gerekçesiyle kapalıydı; kayıtta NACE sınırı yok).
+        return None
     if "arge" in k_sek and _arge_sinyali(profil, hedef):
         return None
     nace_etiketi = (None if nace2 is None else "tarim" if nace2 <= 3 else "imalat" if 10 <= nace2 <= 33
@@ -1077,6 +1089,11 @@ def degerlendir(kayitlar: list, profil, notlar: dict[int, str], eslesme: dict[in
                         r"ülke|üye|yabancı|uluslararası", m["metin"], re.I):
                     d.saglanan.append(f"sorunuzdaki beyana göre {beyan['ortak_ulke']} ortak (ülkenin programa üye "
                                       "olduğunu çağrı belgesinden teyit edin)")
+                    continue
+                urun_sarti = re.match(r"\s*(\w+) üreticisiyseniz", m["metin"])
+                if urun_sarti and getattr(profil, "urun_turu", None) and _katla(urun_sarti.group(1)) != _katla(
+                        profil.urun_turu):
+                    # "Fındık üreticisiyseniz: ..." başka ürünün üreticisine gösterilmez (hakem bulgusu 5. tur: çilekçi)
                     continue
                 if _imalat_sarti_engeli(m["metin"], profil):
                     ciro_engeli = (f"imalatçı işletmelere yönelik; faaliyetiniz "
@@ -1709,10 +1726,19 @@ def tarim_odeme_satiri(soru: str, profil) -> str:
         parca.append("toplam " + " + ".join(f"{_tl(k.toplam_tl)} TL" for k in h.kalemler) + f" = {_tl(h.toplam_tl)} TL"
                      " (planlı üretim desteği ürünün havzasında planlanan ürün olmasına bağlıdır)")
     notlar = [u for u in h.uyarilar if "fındık üretimine izin" in u or "Diğer ürünler" in u]
+    # Şarta bağlı ekler (hakem bulgusu 2026-10-12, 5. tur: "toplam ne kadar" sorusunda yalnız koşulsuz kalem vardı):
+    # kayıttaki katsayılarla verilir (katı organik/organomineral gübre 0,32; bireysel iyi tarım açık alanda ürün grubuna
+    # göre 0,4–0,7). Türetilmiş TL tutarı yazılmaz: dayanak denetimi kayıtta olmayan tutara izin vermez.
+    ek = ""
+    if not h.kapsam_disi and h.kalemler:
+        it_alt, it_ust = T.IYI_TARIM["3"][0], T.IYI_TARIM["1_acikta"][0]
+        ek = (f" Şarta bağlı ekler (dekar başına katsayı × {_tl(T.KATSAYI_BIRIM_TL)} TL): katı organik/organomineral "
+              f"gübre kullanırsanız katsayı {_sayi(T.ORGANOMINERAL_GUBRE_KATSAYI)}; bireysel iyi tarım sertifikanız varsa "
+              f"açık alanda ürün grubunuza göre katsayı {_sayi(it_alt)}–{_sayi(it_ust)}.")
     return (f"Ürününüz ({urun}) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri "
             f"{_tl(T.KATSAYI_BIRIM_TL)} TL/da): " + "; ".join(parca) + "." + (" " + " ".join(notlar) if notlar else "")
-            + " Sertifika, fidan, iyi tarım, gübre ve sigorta (TARSİM) gibi ek kalemler şarta bağlıdır; ilgili programı "
-              "adıyla sorabilirsiniz.")
+            + ek + " Sertifikalı fidan (yeni bahçe) ve sigorta (TARSİM) gibi diğer kalemler de şarta bağlıdır; ilgili "
+              "programı adıyla sorabilirsiniz.")
 
 
 _TARIM_KATEGORI_SORU = {"sera": r"sera|ortu|tunel|ortualti", "hayvancilik": r"hayvan|buzagi|kuzu|sut|ari\b|kovan",
@@ -2035,6 +2061,58 @@ def _hibe_degil_notu(soru: str, t) -> str:
     return ""
 
 
+def fidan_kalemi_notu(profil, tum: list) -> str:
+    """Temel destek kaydındaki "fidan kullanım desteği ayrıca …" ek kalemi yalnız fidan kaydının ürün listesindeki
+    (Tablo 6) türler içindir; profildeki ürün listede yoksa kartta belirtilir (hakem bulgusu 2026-10-12, 5. tur: çilek
+    üreticisine 1.835 TL/da sertifikalı fidan desteği gösteriliyordu; çilek Tablo 6'da yok)."""
+    urun = getattr(profil, "urun_turu", None)
+    if not urun:
+        return ""
+    fidan = next((t for t in tum if "Fidan Kullanım Desteği" in (t.baslik or "")
+                  and (t.uygunluk_kriterleri or {}).get("urun_listesi")), None)
+    if fidan is None or _katla(urun) in {_katla(x) for x in fidan.uygunluk_kriterleri["urun_listesi"]}:
+        return ""
+    return (f"fidan kullanım desteği yalnız yeni meyve bahçesi/bağ tesisinde ve fidan tablosundaki türlerde "
+            f"ödenir; {urun} bu listede yok")
+
+
+def statusuz_kalem_satiri(t) -> str:
+    """Şemsiye e-ihracat kaydı öne çıktığında statüsüz şirketin yararlanabildiği kalemler (kaydın kendi cümlesi; hakem
+    bulgusu 2026-10-12, 5-6. tur, kritik: kendi sitesinden satan mikro firmaya bütün kalemler açık gibi gösteriliyordu)."""
+    metin = " ".join([t.tesvil_tutari or "", t.detay or ""] + [m.get("metin", "") for m in t.kontrol_listesi or []])
+    m = re.search(r"Statüsüz şirketin yararlanabildiği kalemler: ([^.|]+)", metin)
+    if not m:
+        return ""
+    return ("Statü (Perakende E-Ticaret Sitesi ya da benzeri) almamış şirket yalnız şu kalemlerden yararlanır (kayıttan): "
+            + m.group(1).strip().rstrip(",;") + "; diğer kalemler statü şartlıdır.")
+
+
+def hibe_mi(t) -> bool:
+    """Geri ödemesiz destek (hibe, dekar başı ödeme); kredi, kefalet ve vergi indirimi değil."""
+    if (t.uygunluk_kriterleri or {}).get("tutar_niteligi") == "hibe":
+        return True
+    if _kredi_mi(t) or _VERGI_PROGRAMI.search(t.baslik or ""):
+        return False
+    return bool(re.search(r"geri ödemesiz|\bhibe|TL/da\b|TL/dekar", t.tesvil_tutari or "", re.I)) and not re.search(
+        r"geri ödemeli\b", t.tesvil_tutari or "", re.I)
+
+
+def hibe_satiri(soru: str, ilk, adaylar: list) -> str:
+    """"Kredi ya da hibe var mı?" sorusunda hibe tarafının hükmü (hakem bulgusu 2026-10-12, 5. tur: hibe yarısı
+    cevapsız kalıyor, yanıtta yalnız kredi/kefalet kartları duruyordu ve hibe olmadığı söylenmiyordu)."""
+    if not re.search(r"\bhibe", _katla(soru)) or hibe_mi(ilk.tesvik):
+        return ""
+    sorulan = set(soru_ihtiyaclari(soru))
+    hibeler = [d for d in adaylar if d is not ilk and hibe_mi(d.tesvik) and d.karar in ("sartli", "belirlenemedi")
+               and (not sorulan or program_ihtiyaclari(d.tesvik) & sorulan)]
+    if hibeler:
+        d = hibeler[0]
+        return (f"Hibe (geri ödemesiz) tarafı: {_kisa_ad(d.tesvik.baslik)} — {karar_etiketi(d).lower()}"
+                + (f" ({_kisa_neden(d)})" if d.karar == "belirlenemedi" and _kisa_neden(d) else "") + ".")
+    return ("Hibe (geri ödemesiz): sorunuza ve profilinize açık kayıtlı bir hibe programı bulamadım; aşağıdaki programlar "
+            "geri ödemesiz destek değildir (kredi, kefalet, vergi avantajı, eğitim ya da yatırım).")
+
+
 def _soruyu_one_al(satir: list[str], niyet: set[str]) -> list[str]:
     """Sorulan değeri (tutar ya da tarih) program başlığının hemen altına, uygunluk etiketinin önüne alır."""
     onekler = []
@@ -2293,6 +2371,12 @@ def kisa_cevap(niyet: set[str], odak: list[Degerlendirme], adaylar: list[Degerle
                  + (f" ({_birlestir(ilk.gerekce[:1])})" if ilk.karar == "belirlenemedi" and ilk.gerekce else "")
                  + (f"; başlıca şart: {_kisalt(bascilik, 170).rstrip('.')}" if bascilik else "")
                  + f"; {takvim_metni(ilk, bugun, kisa=True)}.")
+    statusuz = statusuz_kalem_satiri(ilk.tesvik)
+    if statusuz:
+        satir.append(f"- {statusuz}")
+    hibe = hibe_satiri(soru, ilk, list(tum_adaylar or adaylar))
+    if hibe:
+        satir.append(f"- {hibe}")
     oran = sigorta_orani_satiri(ilk.tesvik, profil) if "sigorta" in sorulan else ""
     if oran:
         satir.append(f"- {oran[:1].upper() + oran[1:]}")
@@ -2620,7 +2704,19 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
         eslesme = {e.tesvik.id: e for e in esles(profil, db, limit=10_000)} if profil is not None else {}
         ds = degerlendir(kayitlar, profil, notlar, eslesme, {t.id for t in odak_kayit},
                          {t.id for t in adi_gecen_kayit}, bugun, ust_programlar(kayitlar, tum), soru)
+        fidan_notu = fidan_kalemi_notu(profil, tum)
+        _nace = re.sub(r"^[A-Z]\.", "", getattr(profil, "nace_kodu", None) or "")
+        imalat_disi = profil is not None and not (_nace[:2].isdigit() and 10 <= int(_nace[:2]) <= 33) and (
+            getattr(profil, "sektor", None) or "") != "imalat"
         for d in ds:
+            if imalat_disi and re.search(r"\bimalatta\b", d.tesvik.baslik or "", re.I):
+                # Hakem bulgusu 6. tur: sürücü kursuna 81/ı "imalatta 5 puan" başlığıyla, oran ayrımı yapılmadan
+                # sunuluyordu.
+                d.kisit.append("başlıktaki imalata özel oran sizin için geçerli değil (faaliyetiniz imalat değil); genel "
+                               "oran uygulanır")
+            if fidan_notu and re.search(r"fidan kullanım desteği", d.tesvik.tesvil_tutari or "", re.I) \
+                    and "Fidan Kullanım Desteği" not in (d.tesvik.baslik or ""):
+                d.kisit.append(fidan_notu)
             if not tutar_metni(d.tesvik) and not _destek_unsurlari(notlar, d.tesvik):
                 d.onceki_tutar = _devredilen_tutar(d.tesvik, tum)
         sira = {t.id: i for i, t in enumerate(odak_kayit)}

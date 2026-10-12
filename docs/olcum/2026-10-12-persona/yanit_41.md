@@ -1,7 +1,7 @@
 <!-- persona: ikas_spor | soru: KOSGEB dijital dönüşüm desteğinden e-ticaret altyapısı için yararlanabilir miyiz? -->
 **Kısa cevap:**
 - **KOBİ Dijital Dönüşüm Destek Programı** (KOSGEB)
-- Sizin için: **uygun değil** — ölçek uygun değil: 7 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık; programın sektör kapsamı (imalat) faaliyetinizi (NACE 47.91) kapsamıyor.
+- Sizin için: **uygun değil** — programın sektör kapsamı (imalat) faaliyetinizi (NACE 47.91) kapsamıyor; ölçek uygun değil: 7 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık.
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: e-ticaret (NACE 47.91)
@@ -14,7 +14,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **KOBİ Dijital Dönüşüm Destek Programı — KOSGEB** (uygun değil)
-- **Neden:** ölçek uygun değil: 7 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık; programın sektör kapsamı (imalat) faaliyetinizi (NACE 47.91) kapsamıyor.
+- **Neden:** programın sektör kapsamı (imalat) faaliyetinizi (NACE 47.91) kapsamıyor; ölçek uygun değil: 7 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık.
 - **Destek:** ₺1.000.000 - ₺20.000.000 kredi (faiz desteği geri ödemesiz) Hesaplama: Kredi faiz giderlerine geri ödemesiz destek, kredi limiti ₺1.000.000-₺20.000.000, azami vade 36 ay
 - **Ne yapabilirsiniz:** Profilinizdeki ilgili bilgi değişirse yeniden değerlendirin.
 - **Kaynak:** https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi
@@ -25,7 +25,7 @@
 - Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6) (Ticaret Bakanlığı): %50 (hedef ülkelerde %70); ülkedeki e-ticaret satışlarının %10'una kadar; 2026 şirketler için yıllık 36.993.646 TL; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **Engel:** ölçek uygun değil: 7 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık; programın sektör kapsamı (imalat) faaliyetinizi (NACE 47.91) kapsamıyor.
+- **Engel:** programın sektör kapsamı (imalat) faaliyetinizi (NACE 47.91) kapsamıyor; ölçek uygun değil: 7 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık.
 - **Engel kalkarsa ayrıca aranan şartlar (kayıttan):** C-İmalat sektöründe faaliyet (NACE kodu); KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmak (KOSGEB sınıflandırmasında küçük veya orta ölçekli olmak; Son mali yıl Öz Kaynaklar Toplamı pozitif ve son 3 mali yıl Faaliyet Karı'ndan en az biri pozitif; İşletme sınıfı küçük veya orta olmalı; mikro ölçekli işletmeler yararlanamaz.
 - **Hazırlanacak belgeler (kayıttan):** Onaylı dijital dönüşüm/olgunluk değerlendirme raporu (TÜSSİDE-DDX veya SIRI formatı); Başvuru Formu; Mali tablolar ve işletme beyanı; KOBİ Dijital Dönüşüm Destek Programı Taahhütnamesi.
 

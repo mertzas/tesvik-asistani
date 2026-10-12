@@ -3,7 +3,7 @@
 - **Tasarruflu Tarımsal Sulama Sistemleri (TSS) Hibe Desteği** (Tarım Bakanlığı)
 - Sizin için: **kapalı** — program başvuruya açık değil (TRGM duyurusu (29.04.2026): TSS hibe başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı).
 - Son bilinen destek (bilgi için): Hibe oranı %50 (damla, yağmurlama), %60 (mikro yağmurlama; center pivot/lineer/tamburlu; güneş enerjili), %70 (yüzey altı damla); hibeye esas proje tutarı en fazla 10.000.000 TL
-- Ürününüz (buğday) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri 367,00 TL/da): Temel destek (2. kategori): 477,10 TL/da × 180 da = 85.878,00 TL; Planlı üretim desteği (2. kategori): 477,10 TL/da × 180 da = 85.878,00 TL; toplam 85.878,00 TL + 85.878,00 TL = 171.756,00 TL (planlı üretim desteği ürünün havzasında planlanan ürün olmasına bağlıdır). Sertifika, fidan, iyi tarım, gübre ve sigorta (TARSİM) gibi ek kalemler şarta bağlıdır; ilgili programı adıyla sorabilirsiniz.
+- Ürününüz (buğday) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri 367,00 TL/da): Temel destek (2. kategori): 477,10 TL/da × 180 da = 85.878,00 TL; Planlı üretim desteği (2. kategori): 477,10 TL/da × 180 da = 85.878,00 TL; toplam 85.878,00 TL + 85.878,00 TL = 171.756,00 TL (planlı üretim desteği ürünün havzasında planlanan ürün olmasına bağlıdır). Şarta bağlı ekler (dekar başına katsayı × 367,00 TL): katı organik/organomineral gübre kullanırsanız katsayı 0,32; bireysel iyi tarım sertifikanız varsa açık alanda ürün grubunuza göre katsayı 0,4–0,7. Sertifikalı fidan (yeni bahçe) ve sigorta (TARSİM) gibi diğer kalemler de şarta bağlıdır; ilgili programı adıyla sorabilirsiniz.
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: tarım (buğday)

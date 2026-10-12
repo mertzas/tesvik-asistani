@@ -3,7 +3,7 @@
 - **Fındık Alan Bazlı Gelir Desteği (sona erdi: son ödeme 2024 üretim yılı için; fındık artık Temel Destek modelinde)** (Tarım Bakanlığı)
 - Sizin için: **kapalı** — program başvuruya açık değil (Sona erdi. Ayrı fındık alan bazlı gelir desteği 2024 üretim yılına aittir (Tebliğ 2024/31). 2025-2027 Kararı'nın destek listesinde bu ad geçmez; fındık Temel Destek Tablo 1'de 3. kategoridedir).
 - Son bilinen destek (bilgi için): 2024 üretim yılı için dekara 170 lira (artık ödenmiyor). Yerine fındık Temel Destek'tedir: destek katsayısı 1,5 x dekara 367 TL katsayı değeri (2026).
-- Ürününüz (fındık) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri 367,00 TL/da): Temel destek (3. kategori): 550,50 TL/da × 9 da = 4.954,50 TL. Fındıkta temel ve üretimi geliştirme desteği yalnız fındık üretimine izin verilen ilçelerdeki parsellere ödenir (8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik). Sertifika, fidan, iyi tarım, gübre ve sigorta (TARSİM) gibi ek kalemler şarta bağlıdır; ilgili programı adıyla sorabilirsiniz.
+- Ürününüz (fındık) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri 367,00 TL/da): Temel destek (3. kategori): 550,50 TL/da × 9 da = 4.954,50 TL. Fındıkta temel ve üretimi geliştirme desteği yalnız fındık üretimine izin verilen ilçelerdeki parsellere ödenir (8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik). Şarta bağlı ekler (dekar başına katsayı × 367,00 TL): katı organik/organomineral gübre kullanırsanız katsayı 0,32; bireysel iyi tarım sertifikanız varsa açık alanda ürün grubunuza göre katsayı 0,4–0,7. Sertifikalı fidan (yeni bahçe) ve sigorta (TARSİM) gibi diğer kalemler de şarta bağlıdır; ilgili programı adıyla sorabilirsiniz.
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: tarım (fındık)

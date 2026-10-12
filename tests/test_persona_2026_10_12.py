@@ -337,7 +337,7 @@ def test_bilgi_yok_cumlesi_ve_sektor_gerekcesi_tekrarlanmaz():
     assert metin.count("belirtilmemiştir") == 1 and ".." not in metin
     assert yerel_danisman._birlestir(["mikro; program sektörü işletmenin NACE kodlarıyla örtüşmüyor; programın sektör "
                                       "kapsamı (imalat) faaliyetinizi kapsamıyor"]) == \
-        "mikro; programın sektör kapsamı (imalat) faaliyetinizi kapsamıyor"
+        "programın sektör kapsamı (imalat) faaliyetinizi kapsamıyor; mikro"   # kalıcı engel önce
 
 
 def test_kapali_cagri_eslesme_listesinde_geride(db_session):
@@ -424,3 +424,43 @@ def test_tobb_baglı_oda_uyeligi_varyanti():
 def test_ek3_ilgisiz_kod_dislamasi_sart_sayilmaz():
     from app.tesvik_9903_uygunluk import _ek3_durumu
     assert _ek3_durumu("13.93")[0] == "uygun", "halı: dışlama yalnız 13.10.12 ve 13.92.06 için"
+
+
+
+def test_hibe_satiri():
+    from types import SimpleNamespace as N
+    kredi = N(tesvik=_t(kurum="KGF", baslik="Kefalet Paketi", tesvil_tutari="%80 kefalet"), karar="sartli", gerekce=[], teyit=[])
+    hibe = N(tesvik=_t(kurum="KOSGEB", baslik="YÖNDE - Yönderlik", tesvil_tutari="%100 geri ödemesiz; 700.000 TL"),
+             karar="sartli", gerekce=[], teyit=[])
+    assert yerel_danisman.hibe_mi(hibe.tesvik) and not yerel_danisman.hibe_mi(kredi.tesvik)
+    assert "YÖNDE" in yerel_danisman.hibe_satiri("Dijitalleşme için kredi ya da hibe var mı?", kredi, [kredi, hibe])
+    assert "bulamadım" in yerel_danisman.hibe_satiri("Makine için kredi ya da hibe var mı?", kredi, [kredi])
+    assert yerel_danisman.hibe_satiri("Makine kredisi var mı?", kredi, [kredi, hibe]) == ""
+
+
+def test_fidan_kalemi_ve_urun_kutusu():
+    fidan = _t(kurum="Tarım ve Orman Bakanlığı", baslik="Sertifikalı/Standart Fidan Kullanım Desteği",
+               uygunluk_kriterleri={"sektorler": ["tarim"], "urun_listesi": ["fındık", "elma"]})
+    cilek = FinancialProfile(sektor="tarim", urun_turu="çilek")
+    assert "çilek bu listede yok" in yerel_danisman.fidan_kalemi_notu(cilek, [fidan])
+    assert yerel_danisman.fidan_kalemi_notu(FinancialProfile(sektor="tarim", urun_turu="fındık"), [fidan]) == ""
+
+
+
+# ------------------------------------------------------------------ altıncı hakem turu bulguları
+def test_statusuz_kalemler_kayittan():
+    t = _t(kurum="Ticaret Bakanlığı", baslik="E-İhracat Destekleri (5986 Sayılı Karar)",
+           detay="Statüsüz şirketin yararlanabildiği kalemler: dijital pazaryeri reklamı, sipariş karşılama, pazaryeri "
+                 "komisyonu. Diğer metin.")
+    s = yerel_danisman.statusuz_kalem_satiri(t)
+    assert "dijital pazaryeri reklamı, sipariş karşılama, pazaryeri komisyonu" in s and "statü şartlıdır" in s
+    assert yerel_danisman.statusuz_kalem_satiri(_t(baslik="Başka")) == ""
+
+
+def test_ihtiyac_etiketleri_sektor_kisiti_degil_ve_ortaklik_kilit():
+    kuresel = _t(kurum="KOSGEB", baslik="Küresel Rekabetçilik", uygunluk_kriterleri={"sektorler": ["arge", "ihracat"]})
+    matbaa = FinancialProfile(sektor="imalat", nace_kodu="18.12", sirket_turu="limited", calisan_sayisi=6)
+    assert yerel_danisman._sektor_disi(kuresel, matbaa) is None
+    imalat = _t(kurum="KOSGEB", baslik="KOBİ Dijital", uygunluk_kriterleri={"sektorler": ["imalat"]})
+    assert "sektör kapsamı" in yerel_danisman._sektor_disi(imalat, FinancialProfile(sektor="hizmet", nace_kodu="85.53"))
+    assert yerel_danisman._KILIT.search("EUREKA altında yurt dışı ortaklı uluslararası proje başvurusu yapılmış olmalı")

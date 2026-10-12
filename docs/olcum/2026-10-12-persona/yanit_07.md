@@ -1,6 +1,6 @@
 <!-- persona: cilek | soru: 1,5 dönüm açık tarlada çilek yetiştiriyorum. Hangi desteklerden yararlanabilirim? -->
 **Kısa cevap:**
-- Ürününüz (çilek) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri 367,00 TL/da): Temel destek (1. kategori): 367,00 TL/da × 1,5 da = 550,50 TL. 'çilek' resmî tabloda ayrı bir kategoride listelenmiyor; 1. kategorideki "Diğer ürünler" kalemi varsayıldı (katsayı 1,0). Ürününüz farklı bir kategoriye giriyorsa tutar değişir. Sertifika, fidan, iyi tarım, gübre ve sigorta (TARSİM) gibi ek kalemler şarta bağlıdır; ilgili programı adıyla sorabilirsiniz.
+- Ürününüz (çilek) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri 367,00 TL/da): Temel destek (1. kategori): 367,00 TL/da × 1,5 da = 550,50 TL. 'çilek' resmî tabloda ayrı bir kategoride listelenmiyor; 1. kategorideki "Diğer ürünler" kalemi varsayıldı (katsayı 1,0). Ürününüz farklı bir kategoriye giriyorsa tutar değişir. Şarta bağlı ekler (dekar başına katsayı × 367,00 TL): katı organik/organomineral gübre kullanırsanız katsayı 0,32; bireysel iyi tarım sertifikanız varsa açık alanda ürün grubunuza göre katsayı 0,4–0,7. Sertifikalı fidan (yeni bahçe) ve sigorta (TARSİM) gibi diğer kalemler de şarta bağlıdır; ilgili programı adıyla sorabilirsiniz.
 - Öne çıkan: **Meyve-Sebze Üretim Destekleri (Temel Destek)** (Tarım Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak; Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Diğer seçenekler: İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı) (şarta bağlı); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği (profilinize göre engel yok — şartları teyit edin); TARIM KEFALET DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin).
 
@@ -17,6 +17,7 @@
 **Meyve-Sebze Üretim Destekleri (Temel Destek) — Tarım Bakanlığı**
 - **Başvuru dönemi:** Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Seçtiğiniz tarım kategorisi ('sebze_meyve') bu destekle tam eşleşiyor; teyit: Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir.
+- **Kapsam:** fidan kullanım desteği yalnız yeni meyve bahçesi/bağ tesisinde ve fidan tablosundaki türlerde ödenir; çilek bu listede yok
 - **Karşıladığı ihtiyaç:** dekar başı tarımsal destek ödemesi
 - **Destek:** Dekar başına 367,00 TL temel destek (2026, 1. kategori 'diğer ürünler'); fidan kullanım desteği ayrıca 734,00 TL/da (standart) veya 1.835,00 TL/da (sertifikalı).
 - **Hesaplama:** Sebze ve meyve Tablo 1'de 1. kategori 'diğer ürünler' (katsayı 1,0): temel destek 367,00 TL/da. Planlı üretim kategorilerinde yer almaz. Yeni meyve bahçesinde fidan kullanım desteği (Tablo 6): standart 2 → 734,00, sertifikalı 5 → 1.835,00 TL/da. Dayanak: 8859 sayılı CB Kararı (RG 29.08.2024) tabloları; destek katsayı değeri 2026 için 367,00 TL/da (11781 sayılı CB Kararı, RG 08.09.2026, m.1/a, 1.1.2026'dan geçerli).
@@ -24,7 +25,6 @@
   - ☐ Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak — kurumdan teyit edin
   - ☐ Arazi/parsel bilgilerinin ÇKS'de güncel olması — kurumdan teyit edin
   - ☐ İlgili üretim sezonunda dikim/ekim yapılmış olması — kurumdan teyit edin
-  - ☐ Fındık üreticisiyseniz: parseliniz fındık üretimine izin verilen bir ilçede olmalı; izin verilen ilçeler dışında fındık üretilen parsellere temel destek ödenmez (8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik) — kurumdan teyit edin
 - **Başvuru:** İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu) — https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve
 
 **İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı) — Tarım Bakanlığı**

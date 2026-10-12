@@ -63,7 +63,7 @@
 - **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi
 
 **Size kapalı ya da başvuruya kapalı programlar:**
-- KOBİ Dijital Dönüşüm Destek Programı (KOSGEB) — uygun değil: ölçek uygun değil: 0 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık; programın sektör kapsamı (imalat) faaliyetinizi (NACE 62.01) kapsamıyor
+- KOBİ Dijital Dönüşüm Destek Programı (KOSGEB) — uygun değil: programın sektör kapsamı (imalat) faaliyetinizi (NACE 62.01) kapsamıyor; ölçek uygun değil: 0 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık
 - Teknoloji Merkezi Destek Programı (KOSGEB); Sektörel Gelişim Merkezi (SEGEM) Destek Programı (KOSGEB); Girişim Sermayesi Yatırım Fonları Yatırımları (KOSGEB fon kaynak taahhüdü) (KOSGEB) — uygun değil: aracı/ekosistem kuruluşu programı
 - İstihdamı Koruma Destek Programı (KOSGEB); Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) (KOSGEB) — uygun değil: programın sektör kapsamı (imalat) faaliyetinizi (NACE 62.01) kapsamıyor
 - Kapasite Geliştirme Destek Programı (KOSGEB) — uygun değil: ölçek uygun değil: 0 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık

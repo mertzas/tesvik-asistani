@@ -1,6 +1,7 @@
 <!-- persona: ikas_giyim | soru: Kadın giyim e-ticaret mağazam var. Yurt dışına satış için hangi destekler var? -->
 **Kısa cevap:**
 - Öne çıkan: **E-İhracat Destekleri (5986 Sayılı Karar)** (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Statü (Perakende E-Ticaret Sitesi ya da benzeri) almamış şirket yalnız şu kalemlerden yararlanır (kayıttan): dijital pazaryeri reklamı, sipariş karşılama, pazaryeri komisyonu, (önceki yıl 1 milyon USD üzeri ihracatla) çevrim içi mağaza; diğer kalemler statü şartlıdır.
 - Destek: %50 (dijital pazaryeri reklamı, e-ihracat tanıtımı ve sipariş karşılamada hedef ülkelerde %70); 2026 toplam yıllık üst limit şirketler için 73.990.019 TL
 - Diğer seçenekler: Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12) (profilinize göre engel yok — şartları teyit edin); Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (profilinize göre engel yok — şartları teyit edin); Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6) (profilinize göre engel yok — şartları teyit edin).
 - 1 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).

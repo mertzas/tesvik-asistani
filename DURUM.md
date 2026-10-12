@@ -493,6 +493,15 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   bağlı oda/borsa üyeliği varyantı; EK-3'te "X kodları desteklenmez" cümlesi profil kodu X değilse şart sayılmaz
   (halı 13.93 uygun; eski test 13.20'yi şartlı bekliyordu, 18.12'ye taşındı). Açık: 13.10.12'de "500 milyon TL üzeri
   modernizasyon hariç" istisnası kesin "uygun değil" sayılıyor (persona yok). Test 1329 → 1333.
+  Tur 6 (`tur6/`, `degerlendirme6_*.json`): A 3,20 · B 3,31 · C 2,81 · D 2,84 · E 3,14 (ortalama 3,06; tur 5: 3,01;
+  doğruluk ortalaması 3,67). Düzeltmeler: "kredi ya da hibe" sorusunda hibe tarafı hükmü (`hibe_satiri`; geri ödemesiz
+  program varsa adı, yoksa "kayıtlı hibe yok"); temel destekteki fidan ek kalemi ürün fidan listesinde yoksa kartta
+  işaretlenir (`fidan_kalemi_notu`); "X üreticisiyseniz" maddesi başka ürünün üreticisine gösterilmez; toplam
+  sorusunda şarta bağlı ekler kayıttaki katsayılarla (gübre 0,32, iyi tarım 0,4–0,7; türetilmiş TL yazılmaz, dayanak
+  denetimi); şemsiye e-ihracat kaydında statüsüz şirketin kalemleri kaydın cümlesiyle (`statusuz_kalem_satiri`);
+  yalnız ihtiyaç türü etiketli (Ar-Ge, ihracat, e-ticaret) kapsam sektör engeli değil (Küresel Rekabetçilik); kalıcı
+  engel (sektör) ölçekten önce yazılır; "yurt dışı ortaklı ... başvurusu yapılmış olmalı" kilit; başlıktaki imalata
+  özel oran imalat dışı işletmede kapsam notu. Kapsam 432/13/23 → 444/1/23, ürün 434. Test 1333 → 1337.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

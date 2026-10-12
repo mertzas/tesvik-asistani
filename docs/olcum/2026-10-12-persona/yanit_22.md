@@ -1,6 +1,7 @@
 <!-- persona: antalya_otel | soru: Butik otelimizi yenilemek için kredi ya da hibe var mı? -->
 **Kısa cevap:**
 - Öne çıkan: **Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)** (Sanayi ve Teknoloji Bakanlığı) — şartlı — karar şartını teyit edin; başlıca şart: Karar şartı: EK-3 55.1 kalemi: Oteller ve benzeri konaklama yerleri 50 oda ve üzeri (Otel, Tatil Köyü, Butik Otel ve Özel Konaklama Tesisi desteklenir) (MADDE 5/1, 10); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı).
+- Hibe (geri ödemesiz): sorunuza ve profilinize açık kayıtlı bir hibe programı bulamadım; aşağıdaki programlar geri ödemesiz destek değildir (kredi, kefalet, vergi avantajı, eğitim ya da yatırım).
 - Yatırım teşvik bölgeniz: 1. bölge (Karar değerlendirmesinden).
 - Asgari sabit yatırım tutarı 1. bölgede 12 milyon TL (MADDE 5/2; EK-3'te konu için ayrıca belirtilmemişse); bu tutarın altındaki yatırıma teşvik belgesi düzenlenmez.
 - Destek unsurları (Karar metninden): vergi indirimi: yatırıma katkı oranı %20, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 1 yıl (MADDE 18, 1. bölge); faiz/kâr payı desteği: bu programda yalnızca 4, 5, 6. bölgelerde; 1. bölgede YOK (MADDE 15/1-c); makine desteği: bu programda yok, yalnızca Kalkınma Hamlesi programlarında (MADDE 16/1); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.

@@ -1,6 +1,7 @@
 <!-- persona: kayseri_mobilya | soru: Üretimi dijitalleştirmek (ERP, makinelere sensör) için hibe var mı? -->
 **Kısa cevap:**
 - Öne çıkan: **KOBİ Dijital Dönüşüm Destek Programı** (KOSGEB) (hibe değil: faiz desteği) — profilinize göre engel yok — şartları teyit edin; başlıca şart: KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmak (KOSGEB sınıflandırmasında küçük veya orta ölçekli olmak; mikro ölçekliler başvuramaz); Sürekli açık başvuru (24 aylık program süresi içinde kullanım gerekir) (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Hibe (geri ödemesiz) tarafı: YÖNDE - Yönderlik ve Değerlendirme Destek Programı — profilinize göre engel yok — şartları teyit edin.
 - Kredi koşulları (hibe değil): ₺1.000.000 - ₺20.000.000 kredi (faiz desteği geri ödemesiz)
 - Diğer seçenekler: YÖNDE - Yönderlik ve Değerlendirme Destek Programı (profilinize göre engel yok — şartları teyit edin); Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (profilinize göre engel yok — şartları teyit edin); YATIRIM-İŞLETME DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin).
 - 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).

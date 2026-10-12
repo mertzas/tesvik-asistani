@@ -30,13 +30,13 @@
 **Meyve-Sebze Üretim Destekleri (Temel Destek) — Tarım Bakanlığı**
 - **Başvuru dönemi:** Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Seçtiğiniz tarım kategorisi ('sebze_meyve') bu destekle tam eşleşiyor; teyit: Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir.
+- **Kapsam:** fidan kullanım desteği yalnız yeni meyve bahçesi/bağ tesisinde ve fidan tablosundaki türlerde ödenir; çilek bu listede yok
 - **Destek:** Dekar başına 367,00 TL temel destek (2026, 1. kategori 'diğer ürünler'); fidan kullanım desteği ayrıca 734,00 TL/da (standart) veya 1.835,00 TL/da (sertifikalı).
 - **Hesaplama:** Sebze ve meyve Tablo 1'de 1. kategori 'diğer ürünler' (katsayı 1,0): temel destek 367,00 TL/da. Planlı üretim kategorilerinde yer almaz. Yeni meyve bahçesinde fidan kullanım desteği (Tablo 6): standart 2 → 734,00, sertifikalı 5 → 1.835,00 TL/da. Dayanak: 8859 sayılı CB Kararı (RG 29.08.2024) tabloları; destek katsayı değeri 2026 için 367,00 TL/da (11781 sayılı CB Kararı, RG 08.09.2026, m.1/a, 1.1.2026'dan geçerli).
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
   - ☐ Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak — kurumdan teyit edin
   - ☐ Arazi/parsel bilgilerinin ÇKS'de güncel olması — kurumdan teyit edin
   - ☐ İlgili üretim sezonunda dikim/ekim yapılmış olması — kurumdan teyit edin
-  - ☐ Fındık üreticisiyseniz: parseliniz fındık üretimine izin verilen bir ilçede olmalı; izin verilen ilçeler dışında fındık üretilen parsellere temel destek ödenmez (8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik) — kurumdan teyit edin
 - **Başvuru:** İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu) — https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve
 
 **Size kapalı ya da başvuruya kapalı programlar:**

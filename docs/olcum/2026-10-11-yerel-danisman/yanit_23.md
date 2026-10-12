@@ -4,7 +4,7 @@
 - Destek: Dekar başına 73,40–550,50 TL organik tarım desteği (2026; ürün grubu ve bireysel/grup sertifikaya göre, 1. derece örgüt üyesine %25 ilave dâhil); temel destek ayrıca ödenir
 - Sizin için: **uygun değil** — Organik ürün sertifikası gerekir (beyan: yok).
 - Arazinize göre: 60 dekar için en düşük 73,40 TL/da × 60 da = 4.404,00 TL, en yüksek 550,50 TL/da × 60 da = 33.030,00 TL (ürün grubunuz ve sertifika türünüz kesin tutarı belirler)
-- Ürününüz (incir) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri 367,00 TL/da): Temel destek (1. kategori): 367,00 TL/da × 60 da = 22.020,00 TL. 'incir' resmî tabloda ayrı bir kategoride listelenmiyor; 1. kategorideki "Diğer ürünler" kalemi varsayıldı (katsayı 1,0). Ürününüz farklı bir kategoriye giriyorsa tutar değişir. Sertifika, fidan, iyi tarım, gübre ve sigorta (TARSİM) gibi ek kalemler şarta bağlıdır; ilgili programı adıyla sorabilirsiniz.
+- Ürününüz (incir) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri 367,00 TL/da): Temel destek (1. kategori): 367,00 TL/da × 60 da = 22.020,00 TL. 'incir' resmî tabloda ayrı bir kategoride listelenmiyor; 1. kategorideki "Diğer ürünler" kalemi varsayıldı (katsayı 1,0). Ürününüz farklı bir kategoriye giriyorsa tutar değişir. Şarta bağlı ekler (dekar başına katsayı × 367,00 TL): katı organik/organomineral gübre kullanırsanız katsayı 0,32; bireysel iyi tarım sertifikanız varsa açık alanda ürün grubunuza göre katsayı 0,4–0,7. Sertifikalı fidan (yeni bahçe) ve sigorta (TARSİM) gibi diğer kalemler de şarta bağlıdır; ilgili programı adıyla sorabilirsiniz.
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: tarım (incir)

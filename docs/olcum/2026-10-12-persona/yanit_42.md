@@ -1,6 +1,7 @@
 <!-- persona: ikas_seramik | soru: El yapımı seramik satıyorum, tek kişilik şahıs işletmesiyim; genç girişimciye uygun kredi ya da hibe var mı? -->
 **Kısa cevap:**
 - Öne çıkan: **ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ** (KGF) (hibe değil: kredi kefaleti) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Hibe (geri ödemesiz) tarafı: Girişimci Destek Programı — şarta bağlı (İş Kurma Desteği: KOSGEB destekli sektörde faaliyet gösteren 0-1 yaş işletme).
 - Kredi koşulları (hibe değil): 4 Milyon TL; %80 kefalet; başvuru ücreti 10.000 TL
 - Diğer seçenekler: HALK BANKASI GENÇİZ KREDİSİ PROGRAMI DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); TURYIB Programı Destek Paketi (profilinize göre engel yok — şartları teyit edin); HALKBANK İLK ADIM KREDİSİ PROJESİ (profilinize göre engel yok — şartları teyit edin).
 - 3 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).

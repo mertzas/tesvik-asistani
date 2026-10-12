@@ -1,6 +1,6 @@
 <!-- persona: ikas_seramik | soru: Seramik fırını almak için KOSGEB'den destek alabilir miyim? -->
 **Kısa cevap:**
-- Sorduğunuz makine/tesis yatırımı için bu kurumun programı: Kapasite Geliştirme Destek Programı — uygun değil (ölçek uygun değil: 1 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık; programın sektör kapsamı (Ar-Ge / bilişim, imalat) faaliyetinizi (NACE 47.91) kapsamıyor); yukarıdaki program bu ihtiyaca doğrudan yönelik değildir.
+- Sorduğunuz makine/tesis yatırımı için bu kurumun programı: Kapasite Geliştirme Destek Programı — uygun değil (programın sektör kapsamı (Ar-Ge / bilişim, imalat) faaliyetinizi (NACE 47.91) kapsamıyor; ölçek uygun değil: 1 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık); yukarıdaki program bu ihtiyaca doğrudan yönelik değildir.
 - **YÖNDE - Yönderlik ve Değerlendirme Destek Programı** (KOSGEB)
 - Sizin için: profilinize göre engel yok — şartları teyit edin; başlıca şart: KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması.
 - Başvuru: Sayfada başvuru dönemi belirtilmemiştir. Başvurular en geç 15 gün içinde kontrol edilir; destek, başvurunun KOSGEB'ce onaylandığı tarihte başlar. (kayıttan; güncel çağrıyı kurumdan teyit edin).
@@ -43,7 +43,7 @@
 - **Başvuru:** KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi
 
 **Kapasite Geliştirme Destek Programı — KOSGEB** (uygun değil)
-- **Neden:** ölçek uygun değil: 1 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık; programın sektör kapsamı (Ar-Ge / bilişim, imalat) faaliyetinizi (NACE 47.91) kapsamıyor.
+- **Neden:** programın sektör kapsamı (Ar-Ge / bilişim, imalat) faaliyetinizi (NACE 47.91) kapsamıyor; ölçek uygun değil: 1 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık.
 - **Destek:** ₺1.000.000 - ₺20.000.000 (kredi limiti) Hesaplama: Kredi üst limiti ₺20.000.000, alt limit ₺1.000.000 (savunma/havacılık/uzay tedarikçi geliştirme işbirliğinde ₺30.000.000'a kadar)
 - **Ne yapabilirsiniz:** Profilinizdeki ilgili bilgi değişirse yeniden değerlendirin.
 - **Kaynak:** https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9200/kapasite-gelistirme-destek-programi

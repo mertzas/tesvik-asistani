@@ -1,6 +1,7 @@
 <!-- persona: kooperatif | soru: Süt işleme tesisimize makine almak istiyoruz; hangi hibe ve krediler var? -->
 **Kısa cevap:**
 - Öne çıkan: **YATIRIM-İŞLETME DESTEK PAKETİ** (KGF) (hibe değil: kredi kefaleti) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Hibe (geri ödemesiz) tarafı: Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi — profilinize göre engel yok — şartları teyit edin.
 - Kredi koşulları (hibe değil): Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
 - Diğer seçenekler: Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar) (şartlı — karar şartını teyit edin); Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026) (profilinize göre engel yok — şartları teyit edin); TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin).
 - 6 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).

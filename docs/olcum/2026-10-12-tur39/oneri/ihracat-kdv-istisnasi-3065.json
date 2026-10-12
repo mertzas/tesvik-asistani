@@ -1,0 +1,61 @@
+{
+  "slug": "ihracat-kdv-istisnasi-3065",
+  "kurum": "Gelir İdaresi Başkanlığı",
+  "baslik": "3065 sayılı Katma Değer Vergisi Kanunu – İhracat KDV İstisnası",
+  "ozet": "3065 sayılı KDV Kanunu'nun 11. maddesine göre ihracat teslimleri ve yurt dışındaki müşterilere yapılan hizmetler vergiden müstesnadır. İstisnanın şartları arasında malın gümrük bölgesinden çıkışı ve yurt dışı müşteriye teslim edilmesi bulunur. İlgili işlemlerde tahsil edilen KDV, 32. maddeye göre vergiye tabi işlemlerden indirilir ve talep edilirse iade edilir.",
+  "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "İhracat teslimleri ve bu teslimlere ilişkin hizmetler, yurt dışındaki müşteriler için yapılan hizmetler, serbest bölgelerdeki müşteriler için yapılan fason hizmetler ve karşılıklı olmak şartıyla uluslararası roaming anlaşmaları çerçevesinde yurt dışındaki müşteriler için Türkiye'de verilen roaming hizmetleri,",
+    "alinti": "İhracat teslimleri ve bu teslimlere ilişkin hizmetler, yurt dışındaki müşteriler için yapılan hizmetler, serbest bölgelerdeki müşteriler için yapılan fason hizmetler ve karşılıklı olmak şartıyla uluslararası roaming anlaşmaları çerçevesinde yurt dışındaki müşteriler için Türkiye'de verilen roaming hizmetleri,",
+    "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "e-ticaret",
+    "imalat"
+  ],
+  "tesvil_tutari": "",
+  "basvuru_yeri": "",
+  "basvuru_suresi": "",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "İhracat teslimleri ve bu teslimlere ilişkin hizmetler, yurt dışındaki müşteriler için yapılan hizmetler",
+      "alinti": "İhracat teslimleri ve bu teslimlere ilişkin hizmetler, yurt dışındaki müşteriler için yapılan hizmetler, serbest bölgelerdeki müşteriler için yapılan fason hizmetler ve karşılıklı olmak şartıyla uluslararası roaming anlaşmaları çerçevesinde yurt dışındaki müşteriler için Türkiye'de verilen roaming hizmetleri,",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "gümrükten malın çıkışı anında ... iade olunur",
+      "alinti": "gümrükten malın çıkışı anında fatura veya belgenin ibrazında tahsil edilen Katma Değer Vergisi iade olunur.",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "Katma Değer Vergisi, mükellefin vergiye tabi işlemleri üzerinden hesaplanacak Katma Değer Vergisinden indirilir ... talep edilmesi şartıyla ... iade olunur.",
+      "alinti": "Katma Değer Vergisi, mükellefin vergiye tabi işlemleri üzerinden hesaplanacak Katma Değer Vergisinden indirilir. Vergiye tabi işlemlerin mevcut olmaması veya hesaplanan verginin indirilecek vergiden az olması hallerinde indirilemeyen Katma Değer Vergisi, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmesi şartıyla Maliye ve Gümrük Bakanlığınca, tespit edilecek esaslara göre bu işlemleri yapanlara iade olunur.",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "İhracat teslimleri ve hizmetleri vergiden müstesnadır.",
+      "alinti": "İhracat teslimleri ve bu teslimlere ilişkin hizmetler, yurt dışındaki müşteriler için yapılan hizmetler, serbest bölgelerdeki müşteriler için yapılan fason hizmetler ve karşılıklı olmak şartıyla uluslararası roaming anlaşmaları çerçevesinde yurt dışındaki müşteriler için Türkiye'de verilen roaming hizmetleri,",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    },
+    {
+      "iddia": "Gümrükten çıkışta KDV iadesi yapılır.",
+      "alinti": "gümrükten malın çıkışı anında fatura veya belgenin ibrazında tahsil edilen Katma Değer Vergisi iade olunur.",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    },
+    {
+      "iddia": "KDV, vergiye tabi işlemlerden indirilir ve talep edilirse iade edilir.",
+      "alinti": "Katma Değer Vergisi, mükellefin vergiye tabi işlemleri üzerinden hesaplanacak Katma Değer Vergisinden indirilir. Vergiye tabi işlemlerin mevcut olmaması veya hesaplanan verginin indirilecek vergiden az olması hallerinde indirilemeyen Katma Değer Vergisi, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmesi şartıyla Maliye ve Gümrük Bakanlığınca, tespit edilecek esaslara göre bu işlemleri yapanlara iade olunur.",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    }
+  ]
+}

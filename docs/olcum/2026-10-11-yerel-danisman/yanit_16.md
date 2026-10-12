@@ -32,9 +32,9 @@
 - **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Türk Eximbank Reeskont Kredisi (TCMB işbirliğiyle, TL/Döviz) (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- İhracat Teslimlerinde KDV İstisnası ve Yüklenilen KDV'nin İadesi (3065 sayılı KDV Kanunu m.11, m.12, m.32) (Gelir İdaresi Başkanlığı) — profilinize göre engel yok — şartları teyit edin; Sürekli; indirilemeyen KDV'nin iadesi, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmelidir (m.32). (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Türk Eximbank Reeskont Kredisi (TCMB işbirliğiyle, TL/Döviz) (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
 - Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; 
-- Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; geçerli kredi limiti olan firma kredi talep formu ve onaylı harcama listesiyle şubeye başvurur. Harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar olabilir.
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Ön kayıt:** 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı için yeni başvuranın ön kayıt son günü 09.11.2026 (28 gün).

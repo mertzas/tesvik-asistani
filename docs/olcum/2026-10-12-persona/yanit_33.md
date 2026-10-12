@@ -1,7 +1,7 @@
 <!-- persona: ikas_taki | soru: Yurt dışına gönderdiğim kargoların masrafı için destek alabilir miyim? -->
 **Kısa cevap:**
 - Öne çıkan: **Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı)** (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır); Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin).
-- Diğer seçenekler: Türk Eximbank E-İhracat Destek Kredisi (şarta bağlı); İhracat Destek Paketi (şarta bağlı); ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (şarta bağlı).
+- Diğer seçenekler: İhracat Teslimlerinde KDV İstisnası ve Yüklenilen KDV'nin İadesi (3065 sayılı KDV Kanunu m.11, m.12, m.32) (profilinize göre engel yok — şartları teyit edin); Türk Eximbank E-İhracat Destek Kredisi (şarta bağlı); İhracat Destek Paketi (şarta bağlı).
 - Sorunuza doğrudan yönelik ama size kapalı: E-İhracat Destekleri (5986 Sayılı Karar) — başvuru sahibi türünüz (şahıs işletmesi) şartta sayılmıyor — kayıttaki şart: “Şirket ya da kooperatif olmak (şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre)”.
 - 3 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
@@ -30,24 +30,23 @@
   - Firma limiti Eximbank'ın tahsis çalışmasıyla firma bazında belirlenir. — resmî metin: “Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.”
 - **Başvuru:** Türk Eximbank (kaynak sayfada başvuru kanalı ayrıca belirtilmemiştir; Kredi Talep Formu ve belgeler Bankaya sunulur) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi
 
-**Türk Eximbank E-İhracat Destek Kredisi — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
-- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir.
+**İhracat Teslimlerinde KDV İstisnası ve Yüklenilen KDV'nin İadesi (3065 sayılı KDV Kanunu m.11, m.12, m.32) — Gelir İdaresi Başkanlığı**
+- **Başvuru dönemi:** Sürekli; indirilemeyen KDV'nin iadesi, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmelidir (m.32).
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
 - **Karşıladığı ihtiyaç:** ihracat
-- **Destek:** Hibe değil kredi: firma bazında kullandırım üst limiti 500.000 TL; vade azami 12 ay; İGE kefaleti karşılığında kullandırılır.
+- **Destek:** KDV istisnası (vergi avantajı; hibe değil): ihracat teslimlerinde KDV hesaplanmaz; bu işlemler için faturalarda gösterilen KDV indirilir, indirilemeyen kısım iade edilir.
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir. — resmî metin: “Bu kredi programı, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyeti gerçekleştirdiğini tevsik eden KOBİ ve KOBİ dışı işletmelere yöneliktir.”
-  - ☐ Başvuru sahibi ve risk grubuna dâhil firmaların Eximbank nezdinde güncel kredi limiti veya kredi riski bulunmamalıdır. — resmî metin: “Türk Eximbank nezdinde, başvuru sahibi ile risk grubuna dâhil firmaların herhangi bir güncel kredi limiti veya kredi riski bulunmaması şartı aranır;”
+  - ☐ Teslim yurt dışındaki bir müşteriye (ya da serbest bölgedeki alıcıya) yapılmalı (m.12/1-a). — resmî metin: “Teslim yurt dışındaki bir müşteriye veya bir serbest bölgedeki alıcıya”
+  - ☐ Mal Türkiye gümrük bölgesinden çıkarak bir dış ülkeye ya da serbest bölgeye ulaşmalı (m.12/1-b). — resmî metin: “Teslim konusu mal Türkiye Cumhuriyeti gümrük bölgesinden çıkarak bir dış ülkeye veya bir serbest bölgeye vasıl olmalı”
 - **Kurallar (kayıttan):**
-  - Firma bazında kullandırım üst limiti 500.000 TL'dir. — resmî metin: “Firma bazında kullandırım üst limiti 500.000 Türk Lirasıdır.”
-  - Teminat: İGE kefaleti. — resmî metin: “İhracatı Geliştirme A.Ş.’nin (İGE) kefaleti karşılığında kullandırılır.”
-  - Vade azami 12 aydır. — resmî metin: “E-İhracat Destek Kredisi azami 12 ay vadeli olarak kullandırılır.”
-- **Başvuru:** Türk Eximbank; başvuru Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi
+  - İhraç kaydıyla imalatçıdan alınan malın KDV'si ihracatçı tarafından ödenmez (m.11/1-c). — resmî metin: “İhraç edilmek şartıyla imalatçılar tarafından kendilerine teslim edilen mallara ait katma değer vergisi, ihracatçılar tarafından ödenmez.”
+  - İndirilemeyen KDV, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilirse iade edilir (m.32). — resmî metin: “işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmesi şartıyla”
+- **Başvuru:** Gelir İdaresi Başkanlığı; iade, Bakanlıkça tespit edilecek esaslara göre (m.32). — https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Türk Eximbank E-İhracat Destek Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir); Dönemsel çağrı yoktur; E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
 - İhracat Destek Paketi (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı veya döviz kazandırıcı hizmetler sektöründe faaliyet göstermek (KOBİ ve KOBİ dışı firmalar yararlanabilir)); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
 - ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
-- Türk Eximbank Kısa Vadeli Alacak Sigortası (360 güne kadar vadeli ihracat alacaklarının ticari ve politik risklere karşı sigortası) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Yurt dışı satışlarında vadeli alacak yapısına sahip bütün ihracatçılar programdan yararlanabilir); Dönemsel çağrı yoktur; 
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Küresel Rekabetçilik Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 1. başvuru dönemi: kapandı (30.09.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)
@@ -55,7 +54,7 @@
 - E-İhracat Destekleri (5986 Sayılı Karar) (Ticaret Bakanlığı) — uygun değil: başvuru sahibi türünüz (şahıs işletmesi) şartta sayılmıyor — kayıttaki şart: “Şirket ya da kooperatif olmak (şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre)”
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **Türk Eximbank E-İhracat Destek Kredisi:** KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir.
+- Kartlardaki şartlar dışında, kayıtlarda bu programlar için ayrıca bir ön kayıt ya da sistem kaydı şartı yok.
 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
@@ -66,7 +65,6 @@
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı): uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
-2. Türk Eximbank E-İhracat Destek Kredisi: uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

@@ -1,0 +1,74 @@
+{
+  "slug": "ihracat-kdv-istisnasi-3065",
+  "kurum": "Gelir İdaresi Başkanlığı",
+  "baslik": "İhracat Teslimlerinde KDV İstisnası ve Yüklenilen KDV'nin İadesi (3065 sayılı KDV Kanunu m.11, m.12, m.32)",
+  "ozet": "3065 sayılı Katma Değer Vergisi Kanunu m.11/1-a'ya göre ihracat teslimleri ve yurt dışındaki müşteriler için yapılan hizmetler KDV'den istisnadır; bu bir vergi istisnasıdır, hibe ya da nakit destek değildir. m.12'ye göre teslim yurt dışındaki bir müşteriye yapılmalı ve mal Türkiye gümrük bölgesinden çıkarak bir dış ülkeye ulaşmalıdır. İstisna kapsamındaki işlemler için faturalarda gösterilen KDV indirilir; indirilemeyen kısım süresinde talep edilirse iade edilir (m.32).",
+  "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf",
+  "aktif_mi": true,
+  "durum": {
+    "metin": "Kanunun güncel metninde m.11 ihracat istisnası yer alıyor.",
+    "alinti": "Aşağıdaki teslim ve hizmetler vergiden müstesnadır:",
+    "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+  },
+  "basvuru_bicimi": "diger",
+  "bolge_kisitli": [],
+  "sektorler": [
+    "ihracat",
+    "e-ticaret",
+    "imalat"
+  ],
+  "tesvil_tutari": "KDV istisnası (vergi avantajı; hibe değil): ihracat teslimlerinde KDV hesaplanmaz; bu işlemler için faturalarda gösterilen KDV indirilir, indirilemeyen kısım iade edilir.",
+  "basvuru_yeri": "Gelir İdaresi Başkanlığı; iade, Bakanlıkça tespit edilecek esaslara göre (m.32).",
+  "basvuru_suresi": "Sürekli; indirilemeyen KDV'nin iadesi, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmelidir (m.32).",
+  "kontrol_listesi": [
+    {
+      "tur": "sart",
+      "metin": "Teslim yurt dışındaki bir müşteriye (ya da serbest bölgedeki alıcıya) yapılmalı (m.12/1-a).",
+      "alinti": "Teslim yurt dışındaki bir müşteriye veya bir serbest bölgedeki alıcıya",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    },
+    {
+      "tur": "sart",
+      "metin": "Mal Türkiye gümrük bölgesinden çıkarak bir dış ülkeye ya da serbest bölgeye ulaşmalı (m.12/1-b).",
+      "alinti": "Teslim konusu mal Türkiye Cumhuriyeti gümrük bölgesinden çıkarak bir dış ülkeye veya bir serbest bölgeye vasıl olmalı",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    },
+    {
+      "tur": "bilgi",
+      "metin": "İhracat teslimleri ve yurt dışındaki müşteriler için yapılan hizmetler KDV'den istisnadır (m.11/1-a).",
+      "alinti": "İhracat teslimleri ve bu teslimlere ilişkin hizmetler, yurt dışındaki müşteriler için yapılan hizmetler",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "İhraç kaydıyla imalatçıdan alınan malın KDV'si ihracatçı tarafından ödenmez (m.11/1-c).",
+      "alinti": "İhraç edilmek şartıyla imalatçılar tarafından kendilerine teslim edilen mallara ait katma değer vergisi, ihracatçılar tarafından ödenmez.",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    },
+    {
+      "tur": "kural",
+      "metin": "İndirilemeyen KDV, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilirse iade edilir (m.32).",
+      "alinti": "işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmesi şartıyla",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    }
+  ],
+  "cagrilar": [],
+  "alintilar": [
+    {
+      "iddia": "İhracat teslimleri KDV'den istisnadır.",
+      "alinti": "İhracat teslimleri ve bu teslimlere ilişkin hizmetler, yurt dışındaki müşteriler için yapılan hizmetler",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    },
+    {
+      "iddia": "Mal gümrük bölgesinden çıkıp dış ülkeye ulaşmalıdır.",
+      "alinti": "Teslim konusu mal Türkiye Cumhuriyeti gümrük bölgesinden çıkarak bir dış ülkeye veya bir serbest bölgeye vasıl olmalı",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    },
+    {
+      "iddia": "İstisna kapsamındaki işlemlerin faturada gösterilen KDV'si indirilir.",
+      "alinti": "vergiden istisna edilmiş bulunan işlemlerle ilgili fatura ve benzeri vesikalarda gösterilen Katma Değer Vergisi",
+      "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+    }
+  ],
+  "duzeltme_notu": "Groq (openai/gpt-oss-120b) taslağı oneri/ altında; elle düzeltildi: yolcu beraberi eşya iadesi (m.11/1-b) genel şart sanılmıştı, çıkarıldı; m.12 şartları ve m.11/1-c eklendi; m.32 'tahsil edilen' değil 'faturada gösterilen' KDV."
+}

@@ -34,8 +34,12 @@ MODEL = "openai/gpt-oss-120b"
 URL = "https://api.groq.com/openai/v1/chat/completions"
 FIYAT_GIRIS, FIYAT_CIKIS = 0.15, 0.60          # USD / 1M token (GroqCloud model sayfası, 2026-10-12)
 BUTCE_USD = 1.00
-KAYNAK_SINIR = 90_000                          # karakter; ~24 bin token
-CIKTI_SINIR = 6000
+# Groq ücretsiz katmanı (on_demand) dakika başına 8.000 token sayar ve istekte giriş + max_completion_tokens
+# toplamına bakar (2026-10-12: 27.046 token istenince HTTP 413). Kaynak penceresi bu sınıra göre seçilir.
+TPM_SINIR = 8000
+KAYNAK_SINIR = 10_000                          # karakter; Türkçe mevzuatta ~3 karakter/token → ~3.400 token
+PENCERE = 700                                  # anahtar kelimenin iki yanında alınan karakter
+CIKTI_SINIR = 2800
 
 SISTEM = (
     "Sen Türk resmî mevzuat ve kurum sayfalarından yapılandırılmış veri çıkaran bir ayrıştırıcısın. Kurallar: "
@@ -94,10 +98,20 @@ def kaynak_metni(gorev: dict, metin_al) -> str:
         if hata:
             raise RuntimeError(f"kaynak indirilemedi: {url}: {hata}")
         metin = re.sub(r"[ \t]+", " ", re.sub(r"\n{3,}", "\n\n", metin))
-        if len(metin) > KAYNAK_SINIR // len(gorev["kaynaklar"]) and gorev.get("anahtar"):
+        if gorev.get("bolumler"):
+            # Madde sınırları: [başlangıç deseni, bitiş deseni] çiftleri; bitiş, başlangıçtan sonraki ilk eşleşme.
+            dilim = []
+            for bas, son in gorev["bolumler"]:
+                b = re.search(bas, metin)
+                e = re.compile(son).search(metin, b.end()) if b else None
+                if not (b and e):
+                    raise RuntimeError(f"bölüm bulunamadı: {bas} … {son}")
+                dilim.append(metin[b.start():e.start()])
+            metin = "\n…\n".join(dilim)
+        elif len(metin) > KAYNAK_SINIR // len(gorev["kaynaklar"]) and gorev.get("anahtar"):
             pencere = []
             for m in re.finditer(gorev["anahtar"], metin, re.I):
-                pencere.append((max(0, m.start() - 1500), m.end() + 1500))
+                pencere.append((max(0, m.start() - PENCERE), m.end() + PENCERE))
             birlesik = []
             for a, b in sorted(pencere):
                 if birlesik and a <= birlesik[-1][1]:
@@ -177,6 +191,10 @@ def calistir(gercek: bool, tasima=None, api_key: str | None = None, katalog: lis
         mesaj = istem(g, kaynak)
         tahmini_giris = sum(len(m["content"]) for m in mesaj) // 3
         tahmin = maliyet(tahmini_giris, CIKTI_SINIR)
+        if tahmini_giris + CIKTI_SINIR > TPM_SINIR:
+            print(f"  atlandı: {g['slug']} ~{tahmini_giris + CIKTI_SINIR:,} token > dakika sınırı {TPM_SINIR:,}; "
+                  "anahtar kelimeyi daraltın")
+            continue
         toplam_tahmin += tahmin
         print(f"  {g['slug']}: kaynak {len(kaynak):,} karakter, ~{tahmini_giris:,} token, en çok {tahmin:.4f} USD")
         if not gercek:
@@ -241,6 +259,14 @@ def _self_test() -> int:
         finally:
             DEFTER = eski
     sonuc.append(("anahtar sohbete/çıktıya yazılmaz (yalnız başlıkta)", "test-anahtar" not in json.dumps(oneri)))
+    uzun = "x " * 40_000 + "ihracat teslimi " + "y " * 40_000
+    kes = kaynak_metni({"kaynaklar": ["u"], "anahtar": "ihracat teslim"}, lambda u: (uzun, None))
+    tahmini = sum(len(m["content"]) for m in istem({"tarif": "t", "slug": "s"}, kes)) // 3
+    bol = kaynak_metni({"kaynaklar": ["u"], "bolumler": [["Madde 11 –", "Madde 12 –"]]},
+                       lambda u: ("giriş Madde 11 – ihracat istisnası metni Madde 12 – sonrası", None))
+    sonuc.append(("madde sınırıyla kesim", "ihracat istisnası" in bol and "sonrası" not in bol and "giriş" not in bol))
+    sonuc.append(("istek ücretsiz katmanın dakika sınırına sığar", tahmini + CIKTI_SINIR <= TPM_SINIR
+                  and "ihracat teslimi" in kes))
     katalog = [(335, "Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2)", ""),
                (281, "Prim desteği", "https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3"),
                (9, "Başka", "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.57461.pdf")]

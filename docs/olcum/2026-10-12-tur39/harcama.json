@@ -1,0 +1,17 @@
+{
+ "model": "openai/gpt-oss-120b",
+ "fiyat_usd_1m": [
+  0.15,
+  0.6
+ ],
+ "cagrilar": [
+  {
+   "zaman": "2026-10-12T17:02:17",
+   "gorev": "ihracat-kdv-istisnasi-3065",
+   "giris_token": 3067,
+   "cikis_token": 2734,
+   "usd": 0.0021
+  }
+ ],
+ "toplam_usd": 0.0021
+}

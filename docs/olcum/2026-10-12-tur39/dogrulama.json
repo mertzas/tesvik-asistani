@@ -1,0 +1,40 @@
+{
+ "ihracat-kdv-istisnasi-3065": {
+  "kabul": true,
+  "sorunlar": [],
+  "uyarilar": [],
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "Teslim yurt dışındaki bir müşteriye (ya da serbest bölgedeki alıcıya) yapılmalı (m.12/1-a).",
+    "alinti": "Teslim yurt dışındaki bir müşteriye veya bir serbest bölgedeki alıcıya",
+    "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+   },
+   {
+    "tur": "sart",
+    "metin": "Mal Türkiye gümrük bölgesinden çıkarak bir dış ülkeye ya da serbest bölgeye ulaşmalı (m.12/1-b).",
+    "alinti": "Teslim konusu mal Türkiye Cumhuriyeti gümrük bölgesinden çıkarak bir dış ülkeye veya bir serbest bölgeye vasıl olmalı",
+    "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+   },
+   {
+    "tur": "bilgi",
+    "metin": "İhracat teslimleri ve yurt dışındaki müşteriler için yapılan hizmetler KDV'den istisnadır (m.11/1-a).",
+    "alinti": "İhracat teslimleri ve bu teslimlere ilişkin hizmetler, yurt dışındaki müşteriler için yapılan hizmetler",
+    "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İhraç kaydıyla imalatçıdan alınan malın KDV'si ihracatçı tarafından ödenmez (m.11/1-c).",
+    "alinti": "İhraç edilmek şartıyla imalatçılar tarafından kendilerine teslim edilen mallara ait katma değer vergisi, ihracatçılar tarafından ödenmez.",
+    "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+   },
+   {
+    "tur": "kural",
+    "metin": "İndirilemeyen KDV, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilirse iade edilir (m.32).",
+    "alinti": "işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmesi şartıyla",
+    "kaynak_url": "https://www.mevzuat.gov.tr/mevzuatmetin/1.5.3065.pdf"
+   }
+  ],
+  "cagrilar": []
+ }
+}

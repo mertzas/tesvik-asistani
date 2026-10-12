@@ -3,7 +3,7 @@
 - Öne çıkan: **E-İhracat Destekleri (5986 Sayılı Karar)** (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Ürün Türk ürünü olmalı (üretimin tamamı ya da bir bölümü Türkiye'de); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Statü (Perakende E-Ticaret Sitesi ya da benzeri) almamış şirket yalnız şu kalemlerden yararlanır (kayıttan): dijital pazaryeri reklamı, sipariş karşılama, pazaryeri komisyonu, (önceki yıl 1 milyon USD üzeri ihracatla) çevrim içi mağaza; diğer kalemler statü şartlıdır.
 - Destek: %50 (dijital pazaryeri reklamı, e-ihracat tanıtımı ve sipariş karşılamada hedef ülkelerde %70); 2026 toplam yıllık üst limit şirketler için 73.990.019 TL
-- Diğer seçenekler: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (profilinize göre engel yok — şartları teyit edin); Türk Eximbank E-İhracat Destek Kredisi (şarta bağlı); Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) (düşük olasılık — cironuz eşiğin altında).
+- Diğer seçenekler: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (profilinize göre engel yok — şartları teyit edin); Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) (düşük olasılık — cironuz eşiğin altında); Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (profilinize göre engel yok — şartları teyit edin).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: e-ticaret (NACE 47.91)
@@ -48,9 +48,9 @@
 - **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Türk Eximbank E-İhracat Destek Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir); Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
 - Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) (Ticaret Bakanlığı) — düşük olasılık — cironuz eşiğin altında (yıllık cironuz (20.000.000 TL), kaydın aradığı en az 1.000.000 USD ihracat eşiğinin TL karşılığından az); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
 - Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Ödeme belgesi tarihinden itibaren 6 ay içinde
+- Pazara Giriş Belgesi Desteği (5973 sayılı Karar m.3) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Pazara giriş belgesinin düzenlenme tarihinden (denetim/gözetimde rapor tarihinden, ruhsatlandırma ve kayıtta ödeme belgesi tarihinden) itibaren 6 ay içinde
 
 **Birlikte kullanım (resmî metinden):**
 - [Ticaret Bakanlığı] Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) (resmî metin: "bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir")

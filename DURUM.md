@@ -550,8 +550,14 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   1 USD). Taslak DB'ye doğrudan girmez: `scripts/fix_veri_2026_10_12_tur39.py --dogrula` (tur21 doğrulayıcısı) her
   alıntıyı resmî metinde arar, ancak geçenler `--uygula` ile eklenir. Aynı kanuna (mevzuat.gov.tr 1.5.<no>) bağlı
   kayıt varsa görev çalıştırılmaz (`cakisan_kayitlar`; 5746 görevi bu yüzden kaldırıldı: 281/333/334/335 zaten
-  var). Kalan görev `gorevler.json`: 3065 KDV m.11 ihracat istisnası. Çalıştırmak için `.env` içine `GROQ_API_KEY`
-  gerekir (tahmini en çok 0,008 USD).
+  var). İlk koşu (2026-10-12): Groq ücretsiz katmanı dakikada 8.000 token sayıyor (giriş + max_completion_tokens);
+  27 bin tokenlik istek HTTP 413 aldı. Kaynak artık görevdeki madde sınırlarıyla kesiliyor (`bolumler`: m.11 ve
+  m.32) ve istek göndermeden önce dakika sınırına göre denetleniyor (self-test 10/10). Koşu: 3.067 + 2.734 token,
+  0,0021 USD (`harcama.json`). Taslak doğrulayıcıdan geçti ama anlamca yanlıştı: yolcu beraberi eşya iadesi
+  (m.11/1-b) genel şart sanılmış, özet m.12'yi kaynakta olmadan anmış, m.32 'tahsil edilen' KDV demiş. Kayıt elle
+  düzeltildi (`kayit/`; ham çıktı `oneri/`), m.12 şartları ve m.11/1-c eklendi, 6 madde birebir doğrulandı,
+  `--uygula` ile eklendi (yedek `tesvikler_oncesi_tur39.db.bak`). Ders: alıntı doğrulaması anlamı denetlemez; dil
+  modeli taslağı her zaman insan okumasından geçer.
 - **Deterministik başvuru orkestratörü** (`app/basvuru_orkestrator.py`, self-test 10/10, `tests/test_basvuru_orkestrator.py`
   6): şirket profili + harcama dökümünden 10 adımda (ayrıştırma, mevzuat eşleştirme, KOBİ/KOSGEB, hedef ülke, mükerrerlik,
   DYS, A-D stres testi, onarım, gerekçe, JSON) üç bölümlü çıktı. Oran, tavan (2026), şart ve hedef ülke listesi kayıtlardan;

@@ -1,6 +1,6 @@
 # Kapsam matrisi (2026-10-12)
 
-468 hücre (7 sektör × 12 il × ihtiyaç). Kayıt düzeyi: VAR 432, İNCE 13, BOŞ 23. Ürün düzeyi (yanıtta engelsiz, açık ve ihtiyaca uygun bir program kartı): 434/468. Süre 124 sn.
+468 hücre (7 sektör × 12 il × ihtiyaç). Kayıt düzeyi: VAR 432, İNCE 13, BOŞ 23. Ürün düzeyi (yanıtta engelsiz, açık ve ihtiyaca uygun bir program kartı): 434/468. Süre 122 sn.
 
 Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak gösteriyor, ✗ = göstermiyor).
 
@@ -8,35 +8,35 @@ Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak göster
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 4 ✓ | 13 ✓ | 46 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
-| Ankara | 4 ✓ | 13 ✓ | 46 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
-| İzmir | 4 ✓ | 13 ✓ | 46 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
-| Bursa | 4 ✓ | 13 ✓ | 46 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
-| Konya | 4 ✓ | 14 ✓ | 47 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
-| Antalya | 4 ✓ | 13 ✓ | 46 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
-| Gaziantep | 4 ✓ | 13 ✓ | 46 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
-| Trabzon | 4 ✓ | 13 ✓ | 46 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
-| Van | 4 ✓ | 13 ✓ | 46 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
-| Diyarbakır | 4 ✓ | 13 ✓ | 46 ✓ | 9 ✓ | 14 ✓ | 27 ✓ |
-| Edirne | 4 ✓ | 13 ✓ | 46 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
-| Balıkesir | 4 ✓ | 13 ✓ | 46 ✓ | 9 ✓ | 14 ✓ | 26 ✓ |
+| İstanbul | 4 ✓ | 13 ✓ | 47 ✓ | 9 ✓ | 15 ✓ | 26 ✓ |
+| Ankara | 4 ✓ | 13 ✓ | 47 ✓ | 9 ✓ | 15 ✓ | 26 ✓ |
+| İzmir | 4 ✓ | 13 ✓ | 47 ✓ | 9 ✓ | 15 ✓ | 26 ✓ |
+| Bursa | 4 ✓ | 13 ✓ | 47 ✓ | 9 ✓ | 15 ✓ | 26 ✓ |
+| Konya | 4 ✓ | 14 ✓ | 48 ✓ | 9 ✓ | 15 ✓ | 26 ✓ |
+| Antalya | 4 ✓ | 13 ✓ | 47 ✓ | 9 ✓ | 15 ✓ | 26 ✓ |
+| Gaziantep | 4 ✓ | 13 ✓ | 47 ✓ | 9 ✓ | 15 ✓ | 26 ✓ |
+| Trabzon | 4 ✓ | 13 ✓ | 47 ✓ | 9 ✓ | 15 ✓ | 26 ✓ |
+| Van | 4 ✓ | 13 ✓ | 47 ✓ | 9 ✓ | 15 ✓ | 26 ✓ |
+| Diyarbakır | 4 ✓ | 13 ✓ | 47 ✓ | 9 ✓ | 15 ✓ | 27 ✓ |
+| Edirne | 4 ✓ | 13 ✓ | 47 ✓ | 9 ✓ | 15 ✓ | 26 ✓ |
+| Balıkesir | 4 ✓ | 13 ✓ | 47 ✓ | 9 ✓ | 15 ✓ | 26 ✓ |
 
 ## imalat
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 6 ✓ | 16 ✓ | 44 ✓ | 11 ✓ | 16 ✓ | 34 ✓ |
-| Ankara | 6 ✓ | 16 ✓ | 44 ✓ | 11 ✓ | 16 ✓ | 34 ✓ |
-| İzmir | 6 ✓ | 16 ✓ | 44 ✓ | 11 ✓ | 16 ✓ | 34 ✓ |
-| Bursa | 6 ✓ | 16 ✓ | 44 ✓ | 11 ✓ | 16 ✓ | 34 ✓ |
-| Konya | 6 ✓ | 17 ✓ | 45 ✓ | 11 ✓ | 16 ✓ | 34 ✓ |
-| Antalya | 6 ✓ | 16 ✓ | 44 ✓ | 11 ✓ | 16 ✓ | 33 ✓ |
-| Gaziantep | 6 ✓ | 16 ✓ | 44 ✓ | 11 ✓ | 16 ✓ | 34 ✓ |
-| Trabzon | 6 ✓ | 16 ✓ | 44 ✓ | 11 ✓ | 16 ✓ | 33 ✓ |
-| Van | 7 ✓ | 16 ✓ | 44 ✓ | 11 ✓ | 16 ✓ | 33 ✓ |
-| Diyarbakır | 7 ✓ | 16 ✓ | 44 ✓ | 11 ✓ | 16 ✓ | 34 ✓ |
-| Edirne | 6 ✓ | 16 ✓ | 44 ✓ | 11 ✓ | 16 ✓ | 33 ✓ |
-| Balıkesir | 6 ✓ | 16 ✓ | 44 ✓ | 11 ✓ | 16 ✓ | 33 ✓ |
+| İstanbul | 6 ✓ | 16 ✓ | 45 ✓ | 11 ✓ | 17 ✓ | 34 ✓ |
+| Ankara | 6 ✓ | 16 ✓ | 45 ✓ | 11 ✓ | 17 ✓ | 34 ✓ |
+| İzmir | 6 ✓ | 16 ✓ | 45 ✓ | 11 ✓ | 17 ✓ | 34 ✓ |
+| Bursa | 6 ✓ | 16 ✓ | 45 ✓ | 11 ✓ | 17 ✓ | 34 ✓ |
+| Konya | 6 ✓ | 17 ✓ | 46 ✓ | 11 ✓ | 17 ✓ | 34 ✓ |
+| Antalya | 6 ✓ | 16 ✓ | 45 ✓ | 11 ✓ | 17 ✓ | 33 ✓ |
+| Gaziantep | 6 ✓ | 16 ✓ | 45 ✓ | 11 ✓ | 17 ✓ | 34 ✓ |
+| Trabzon | 6 ✓ | 16 ✓ | 45 ✓ | 11 ✓ | 17 ✓ | 33 ✓ |
+| Van | 7 ✓ | 16 ✓ | 45 ✓ | 11 ✓ | 17 ✓ | 33 ✓ |
+| Diyarbakır | 7 ✓ | 16 ✓ | 45 ✓ | 11 ✓ | 17 ✓ | 34 ✓ |
+| Edirne | 6 ✓ | 16 ✓ | 45 ✓ | 11 ✓ | 17 ✓ | 33 ✓ |
+| Balıkesir | 6 ✓ | 16 ✓ | 45 ✓ | 11 ✓ | 17 ✓ | 33 ✓ |
 
 ## yazılım
 

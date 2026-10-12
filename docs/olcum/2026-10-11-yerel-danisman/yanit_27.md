@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **KOBİ Dijital Dönüşüm Destek Programı** (KOSGEB) — profilinize göre engel yok — şartları teyit edin; başlıca şart: KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmak (KOSGEB sınıflandırmasında küçük veya orta ölçekli olmak; mikro ölçekliler başvuramaz); Sürekli açık başvuru (24 aylık program süresi içinde kullanım gerekir) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Diğer seçenekler: 2024 Dijital Dönüşüm Destek Paketi (profilinize göre engel yok — şartları teyit edin); Teknoloji Hamlesi Programı (9903 sayılı Karar) (şartlı — karar şartını teyit edin); YATIRIM-İŞLETME DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin).
-- 4 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
+- 3 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 - Birlikte kullanım — Teknoloji Hamlesi Programı (9903 sayılı Karar): kayda göre aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi; Teknoloji Hamlesi'nde KOSGEB ve TÜBİTAK doğrudan destekleri serbest).
 - Birlikte kullanım — Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar); Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar): kayda göre aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi).
 - Birlikte kullanım hükmü kayıtta olmayanlar: KOBİ Dijital Dönüşüm Destek Programı; 2024 Dijital Dönüşüm Destek Paketi — aynı harcamanın birlikte desteklenip desteklenemeyeceğini kurumdan teyit edin.
@@ -66,13 +66,12 @@
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - YATIRIM-İŞLETME DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026)
 - YÖNDE - Yönderlik ve Değerlendirme Destek Programı (KOSGEB) — profilinize göre engel yok — şartları teyit edin; Sayfada başvuru dönemi belirtilmemiştir. Başvurular en geç 15 gün içinde kontrol edilir; destek, başvurunun KOSGEB'ce onaylandığı tarihte başlar.
-- Yapay Zekâ Kredi Programı (KOSGEB) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
+- İhracat Teslimlerinde KDV İstisnası ve Yüklenilen KDV'nin İadesi (3065 sayılı KDV Kanunu m.11, m.12, m.32) (Gelir İdaresi Başkanlığı) — profilinize göre engel yok — şartları teyit edin; Sürekli; indirilemeyen KDV'nin iadesi, işlemin gerçekleştiği dönemi izleyen ikinci takvim yılının sonuna kadar talep edilmelidir (m.32).
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Kapasite Geliştirme Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)
 - KAPASİTE GELİŞTİRME DESTEK PAKETİ (KGF) — kapalı: bağlı olduğu KOSGEB programının (Kapasite Geliştirme Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
 - 1711 - Yapay Zekâ Ekosistem Çağrısı (TUBITAK) — kapalı: program başvuruya açık değil (2026 çağrısı başvuruları 15 Haziran – 2 Ekim 2026; kapandı)
-- Dijital Dönüşüm Destek Paketi (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)
 
 **Birlikte kullanım (resmî metinden):**
 - [Sanayi ve Teknoloji Bakanlığı] Teknoloji Hamlesi Programı (9903 sayılı Karar): Aynı yatırım için diğer kamu kurum ve kuruluşlarının desteğinden yararlanılmamalı (istisna: sübvansiyonlu kredi; Teknoloji Hamlesi'nde KOSGEB ve TÜBİTAK doğrudan destekleri serbest). (resmî metin: "diğer kamu kurum ve kuruluşlarının desteklerinden yararlanamaz.")

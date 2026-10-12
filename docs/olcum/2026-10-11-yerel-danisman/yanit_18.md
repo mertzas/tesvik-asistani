@@ -28,7 +28,7 @@
 - **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Hizmet Sektörleri Atılım Programı — Heyet Desteği (10962 sayılı Karar m.9) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; heyetin başlangıcından en az iki ay önce ön onay başvurusu yapılır, destek başvurusu heyetin bitiş tarihinden itibaren altı ay içinde yapılır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Tasarım Organizasyonu Desteği (5973 sayılı Karar m.26) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; işbirliği kuruluşu faaliyet bazlı ve bütçeyi içeren projesiyle başvurusunu organizasyonun gerçekleşeceği tarihten en az üç ay önce DYS üzerinden Bakanlığa iletir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Ön kayıt:** 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı için yeni başvuranın ön kayıt son günü 22.10.2026 (10 gün).
@@ -37,7 +37,7 @@
 ### 4. Adım Adım Yol Haritası
 1. Ön kayıt: 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı — son gün 22.10.2026.
 2. Belgeler (1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı): PRODİS sistemi üzerinden proje öneri formu; Şirket kuruluş/faaliyet belgeleri.
-3. Başvuru kanalı: 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi.
+3. Başvuru kanalı (1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı): Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi.
 4. İletişim (doğrulanmış): TUBITAK: çağrı merkezi 444 66 90, genel merkez 0 312 298 10 00; Remzi Oğuz Arık Mah. Tunus Cd. No:80 06540 Çankaya / Ankara (doğrulama: https://tubitak.gov.tr/en/node/11658)
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 

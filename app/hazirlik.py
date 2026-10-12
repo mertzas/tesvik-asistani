@@ -58,7 +58,9 @@ ADIMLAR: dict[str, Adim] = {a.kod: a for a in (
          r"Perakende\s+E-Ticaret\s+Sitesi\s+statü"),
     Adim("on_onay", "Harcamadan önce ön onay",
          "Bu programlarda ön onay tarihinden önce yapılan harcama desteklenmez; harcamayı planlamadan başvurun.",
-         r"ön\s+onay"),
+         # Yalnız kural cümlesi: "önce ön onay alınmalı", "ön onay tarihinden önce". "kapsama alım, ilk ön onay, ilk
+         # proje onayı" gibi tanım cümleleri sayılmaz (hakem bulgusu 2026-10-12: 10962 m.17'ye yanlış darboğaz).
+         r"önce\s+ön\s+onay|ön\s+onay\s+alın|ön\s+onay\s+tarihinden|ön\s+onaydan\s+önce|ön\s+onay\s+almadan"),
     Adim("e_imza", "Elektronik imza (e-imza)", "Yetkili kişi adına nitelikli elektronik sertifika edinin.",
          r"e-?imza|elektronik\s+imza"),
     Adim("kep", "Kayıtlı elektronik posta (KEP) adresi", "Şirket adına bir KEP hizmet sağlayıcısından KEP adresi alın.",

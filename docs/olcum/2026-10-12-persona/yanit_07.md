@@ -1,11 +1,11 @@
 <!-- persona: cilek | soru: 1,5 dönüm açık tarlada çilek yetiştiriyorum. Hangi desteklerden yararlanabilirim? -->
 **Kısa cevap:**
-- Ürününüz (çilek) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri 367,00 TL/da): Temel destek (1. kategori): 367,00 TL/da × 1,5 da = 550,50 TL. 'çilek' resmî tabloda ayrı bir kategoride listelenmiyor; 1. kategorideki "Diğer ürünler" kalemi varsayıldı (katsayı 1,0). Ürününüz farklı bir kategoriye giriyorsa tutar değişir. Sertifika, fidan, iyi tarım ve sigorta gibi ek kalemler şarta bağlıdır (aşağıdaki kartlarda).
-- Öne çıkan: **Meyve-Sebze Üretim Destekleri (Temel Destek)** (Tarım Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin) (kayıttan; güncel çağrıyı kurumdan teyit edin).
-- Diğer seçenekler: İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı) (belirlenemedi); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği (profilinize göre engel yok — şartları teyit edin); TARIM KEFALET DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin).
+- Ürününüz (çilek) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri 367,00 TL/da): Temel destek (1. kategori): 367,00 TL/da × 1,5 da = 550,50 TL. 'çilek' resmî tabloda ayrı bir kategoride listelenmiyor; 1. kategorideki "Diğer ürünler" kalemi varsayıldı (katsayı 1,0). Ürününüz farklı bir kategoriye giriyorsa tutar değişir. Sertifika, fidan, iyi tarım, gübre ve sigorta (TARSİM) gibi ek kalemler şarta bağlıdır; ilgili programı adıyla sorabilirsiniz.
+- Öne çıkan: **Meyve-Sebze Üretim Destekleri (Temel Destek)** (Tarım Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak; Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin) (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Diğer seçenekler: İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı) (şarta bağlı); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği (profilinize göre engel yok — şartları teyit edin); TARIM KEFALET DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin).
 
 ### 1. Şirket & Proje Uygunluk Özeti
-- Faaliyet: tarım (NACE kodu bilinmiyor)
+- Faaliyet: tarım (çilek)
 - Şirket türü: şahıs işletmesi
 - Ölçek: mikro işletme [KOBİ Yönetmeliği eşiklerine göre]
 - İl: Aydın
@@ -15,7 +15,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Meyve-Sebze Üretim Destekleri (Temel Destek) — Tarım Bakanlığı**
-- **Başvuru dönemi:** Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Yıllık ilan edilir (ÇKS başvuru dönemi için BUGEM duyurularını takip edin)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Seçtiğiniz tarım kategorisi ('sebze_meyve') bu destekle tam eşleşiyor; teyit: Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
 - **Karşıladığı ihtiyaç:** dekar başı tarımsal destek ödemesi
 - **Destek:** Dekar başına 367,00 TL temel destek (2026, 1. kategori 'diğer ürünler'); fidan kullanım desteği ayrıca 734,00 TL/da (standart) veya 1.835,00 TL/da (sertifikalı).
@@ -28,8 +28,8 @@
 - **Başvuru:** İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu) — https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve
 
 **İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı) — Tarım Bakanlığı**
-- **Başvuru dönemi:** Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez. Sertifika ilgili üretim yılının 1 Ocak-31 Aralık tarihleri arasında düzenlenmiş olmalıdır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Belirlenemedi — profilde karşılığı olmayan kilit şart: Yetkilendirilmiş bir kuruluştan ilgili üretim yılında, bireysel veya grup sertifikasyonuna göre düzenlenmiş iyi tarım uygulamaları sertifikası alınmalı.
+- **Başvuru dönemi:** Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez. Sertifika ilgili üretim yılının 1 Ocak-31 Aralık tarihleri arasında düzenlenmiş olmalıdır.
+- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Yetkilendirilmiş bir kuruluştan ilgili üretim yılında, bireysel veya grup sertifikasyonuna göre düzenlenmiş iyi tarım uygulamaları sertifikası alınmalı.
 - **Karşıladığı ihtiyaç:** dekar başı tarımsal destek ödemesi
 - **Destek:** Dekar başına katsayı x destek katsayı değeri (2026: 367 TL, 2027: 442 TL). Katsayılar: açıkta birinci grup bireysel 0,7 / grup 0,35; örtüaltı birinci grup bireysel 1,7 / grup 0,85; ikinci grup 0,6 / 0,3; üçüncü grup 0,4 / 0,2.
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
@@ -43,7 +43,7 @@
 - **Başvuru:** ÇKS/ÖKS/KOBÜKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (Destekleme Ödemesi Başvuru Dilekçesi); sertifika için Bakanlıkça yetkilendirilmiş kontrol/sertifikasyon kuruluşu. — https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#iyi-tarim
 
 **TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği — TARSİM**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi belirtilmemiştir.
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
 - **Destek:** Sigorta priminin devletçe karşılanan kısmı: genel yüzde 50; açık alan meyve, bazı sebzeler, patates, şekerpancarı, meyve-bağ fidanı ve kış donunda yüzde 70; köy bazlı verimde yüzde 70; büyükbaş dar kapsamlıda yüzde 60; gelir koruma sigortasında yüzde 60 (2026).
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
@@ -51,18 +51,6 @@
 - **Kurallar (kayıttan):**
   - Hazine faiz destekli tarım kredisi kullanırken, kredi konusu varlık Tarım Sigortaları Kanunu kapsamındaysa devlet destekli tarım sigortası aranır. — resmî metin: “Kredi konusu varlığın 14/6/2005 tarihli ve 5363 sayılı Tarım Sigortaları Kanunu kapsamında olması halinde Devlet Destekli Tarım Sigortası aranır.”
 - **Başvuru:** TARSİM (tarsim.gov.tr); sigorta TARSİM kapsamında yapılır. Kaynak haberde başvuru kanalı ayrıca belirtilmemiştir. — https://www.tarimorman.gov.tr/Haber/6912/Tarsim-Tarafindan-2026da-Teminat-Altina-Alinacak-Urun-Ve-Riskler-Belirlendi
-
-**TARIM KEFALET DESTEK PROGRAMI — KGF**
-- **Başvuru dönemi:** Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman; teyit: Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir.
-- **Kredi ve kefalet limitleri:** İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi 20 Milyon TL (azami 60 ay), 12 ay ödemesiz; %80 kefalet; başvuru ücreti kredinin %0,15'i (asgari 10.000 TL)
-- **Hesaplama:** İşletme kredisi 10 milyon TL'ye, yatırım kredisi 20 milyon TL'ye kadar; kefalet oranı %80. Başvuru ücreti kredi tutarının %0,15'i (asgari 10.000 TL), yıllık komisyon %2.
-- **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (mikro işletme)
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Tarım, ormancılık veya balıkçılık sektöründe faaliyet gösteren gerçek veya tüzel kişi işletme olmak — resmî metin: “faaliyet kodu A-Tarım, Ormancılık ve Balıkçılık bölümünde bulunan gerçek ve tüzel kişi işletmelerin”
-- **Kurallar (kayıttan):**
-  - Kredi üretim faaliyetlerine yönelik işletme veya yatırım kredisi olmalı — resmî metin: “üretim faaliyetlerine yönelik olarak Kredi Veren tarafından kullandırılacak işletme ve yatırım kredilerinin”
-- **Başvuru:** Programa dahil 10 bankadan biri: Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, Halkbank, TEB, YKB — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tarim-kefalet-destek-programi
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Meyve-Sebze Üretim Destekleri (Temel Destek), İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı, TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
@@ -78,14 +66,12 @@
 1. Ön koşul kayıtlar: Çiftçi Kayıt Sistemi (ÇKS) kaydı.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (Meyve-Sebze Üretim Destekleri (Temel Destek)): ÇKS Kaydı; Arazi/Parsel Belgesi; Dikim/Ekiliş Beyanı.
-4. Başvuru kanalı: Meyve-Sebze Üretim Destekleri (Temel Destek): İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu) — https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve | İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı): ÇKS/ÖKS/KOBÜKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (Destekleme Ödemesi Başvuru Dilekçesi) — https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#iyi-tarim | TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği: TARSİM (tarsim.gov.tr); sigorta TARSİM kapsamında yapılır. Kaynak haberde başvuru kanalı ayrıca belirtilmemiştir. — https://www.tarimorman.gov.tr/Haber/6912/Tarsim-Tarafindan-2026da-Teminat-Altina-Alinacak-Urun-Ve-Riskler-Belirlendi.
+4. Başvuru kanalı (Meyve-Sebze Üretim Destekleri (Temel Destek)): İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu) — https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 5. İletişim (doğrulanmış): Tarım Bakanlığı: çağrı merkezi 180 (Alo 180); Üniversiteler Mah. Dumlupınar Bulvarı, No: 161, 06800, Çankaya / Ankara (doğrulama: https://timer.tarimorman.gov.tr/Home/Hakkinda) · Aydın Tarım ve Orman İl Müdürlüğü: iletişim bilgisi için resmî sayfa: https://aydin.tarimorman.gov.tr/Iletisim
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Meyve-Sebze Üretim Destekleri (Temel Destek): “Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak” şartını sağlıyor musunuz?
-2. Meyve-Sebze Üretim Destekleri (Temel Destek): “Arazi/parsel bilgilerinin ÇKS'de güncel olması” şartını sağlıyor musunuz?
-3. İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı): “Yetkilendirilmiş bir kuruluştan ilgili üretim yılında, bireysel veya grup sertifikasyonuna göre düzenlenmiş iyi tarım uygulamaları sertifikası alınmalı.” şartını sağlıyor musunuz?
+1. İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı): uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: Yetkilendirilmiş bir kuruluştan ilgili üretim yılında, bireysel veya grup sertifikasyonuna göre düzenlenmiş iyi tarım uygulamaları sertifikası alınmalı.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

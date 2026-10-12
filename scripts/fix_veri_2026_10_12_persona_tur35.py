@@ -13,6 +13,11 @@ B. 2026 bitkisel üretim destekleri (kanıt: docs/olcum/2026-10-12-tur34/TARIM_2
    - 160 Hububat kaydı (tur20) 8859'un 2024 ilk hâlinin tablolarıyla yazılmıştı. 10394 sayılı Karar (RG 14.09.2025,
      1/1/2026'dan geçerli) tabloları değiştirdi: mısır (dane) 2. kategori (1,3), yulaf/çavdar/tritikale birinci grup
      yem bitkisi (1,0), sertifikalı arpa/buğday tohumu 0,56. Bakanlığın 2026 birim fiyat tablosu da böyle.
+D. KOSGEB YÖNDE (kayıt 5): tutar alanı "%100 geri ödemesiz, toplam 700.000 TL" diyordu; kaydın kendi ayrıntı metni
+   (KOSGEB program sayfası) "Destek Oranı: Geri ödemesiz olarak %80. Program Üst Limiti: Toplam 280.000 TL" ve
+   "Kısım C - İmalat sektöründe faaliyet gösteren küçük ve orta büyüklükteki işletmeler ... Mikro ölçekli işletmeler bu
+   destekten yararlanamaz" diyor; sektör "genel" etiketiyle sürücü kursuna, kahveciye öneriliyordu (hakem 3. tur).
+   KOSGEB e-Akademi (330) yalnız şirketsizlere açık işaretlenmişti; eğitim herkese açıktır.
 C. Hedef kitle ve başvuran türü: TİM Wings yalnız kadın ihracatçılara (başlık); KOSGEB girişim sermayesi fonu
    programına portföy yönetim şirketleri başvurur (kayıttaki şart); 10962 m.38-41 ("Destek Programlarının Yürütülmesi
    ile Hizmet Sektörlerinin Geliştirilmesi ve Tanıtılması") TİM ve ihracatçı birliklerine verilir — işletme
@@ -112,6 +117,8 @@ KRITER = {
     # TURWIB: "kadın yönetici bulunan işletmelere destek" (kayıt özeti, EBRD kaynağı); şart olarak yazılmadığı için
     # zorunlu değil, öncelik etiketi.
     (146, "TURWIB"): {"target_group_tags": ["kadin_girisimci"]},
+    (5, "YÖNDE"): {"sektorler": ["imalat"], "min_olcek": "kucuk", "max_olcek": "orta"},
+    (330, "KOSGEB Girişimcilik Eğitimi"): {"sirket_turleri": ["yok", "sahis", "limited", "anonim", "kooperatif"]},
     # Meyve-sebze temel desteği 1. kategori "diğer ürünler" içindir; Tablo 1'de başka kategorideki ürünler (fındık 3.
     # kategori vb.) kendi kaydındadır (persona denemesi: fındık üreticisine iki farklı dekar tutarı gösteriliyordu).
     (161, "Meyve-Sebze Üretim Destekleri"): {"urun_haric": [
@@ -126,6 +133,23 @@ KRITER = {
         "altıntop", "armut", "asma", "ayva", "badem", "ceviz", "dut", "elma", "erik", "fındık", "incir", "kayısı",
         "kestane", "kiraz", "kivi", "limon", "mandarin", "mandalina", "nektarin", "pikan cevizi", "portakal",
         "şeftali", "trabzon hurması", "vişne", "zeytin"]},
+}
+
+
+ALAN = {
+    (5, "YÖNDE"): dict(
+        tesvil_tutari=("Geri ödemesiz %80; program üst limiti toplam 280.000 TL: Dijital Dönüşüm Değerlendirme Analizi ve "
+                       "Yol Haritası Hizmeti 40.000 TL, Sürdürülebilirlik Raporlaması Hizmeti 200.000 TL, Yalın Olgunluk "
+                       "Değerlendirme Analizi (YODA) Hizmeti 40.000 TL; program süresi 36 ay. Yazılım veya donanım alımı "
+                       "değil, belgeli danışmandan alınan hizmet desteklenir."),
+        tutari_max=280000.0),
+}
+EK_MADDE = {
+    (5, "YÖNDE"): {"tur": "sart", "metin": "NACE Kısım C (imalat) sektöründe faaliyet gösteren küçük ya da orta ölçekli "
+                   "işletme olmak; mikro ölçekli işletmeler yararlanamaz",
+                   "alinti": "Mikro ölçekli işletmeler bu destekten yararlanamaz.",
+                   "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9165/yonde-yonderlik-ve-degerlendirme-"
+                                 "destek-programi", "kaynak_tarihi": "2026-10-12", "dogrulandi": True},
 }
 
 
@@ -161,6 +185,15 @@ def plan(tum: list) -> list[tuple]:
         if not any(_SIRKET_SARTI.search(x.get("metin") or "") for x in kl if x.get("tur") == "sart"):
             p.append((t, "kontrol_listesi", t.kontrol_listesi, [copy.deepcopy(TANIM[m.group(1)])] + kl))
     for t in tum:
+        for (i, parca), alanlar in ALAN.items():
+            if t.id == i and parca in (t.baslik or ""):
+                for alan, yeni in alanlar.items():
+                    if getattr(t, alan) != yeni:
+                        p.append((t, alan, getattr(t, alan), yeni))
+        for (i, parca), madde in EK_MADDE.items():
+            if t.id == i and parca in (t.baslik or "") and madde["metin"] not in [
+                    m.get("metin") for m in t.kontrol_listesi or []]:
+                p.append((t, "kontrol_listesi", t.kontrol_listesi, [dict(madde)] + list(t.kontrol_listesi or [])))
         for (i, parca), ek in KRITER.items():
             if t.id == i and parca in (t.baslik or ""):
                 k = dict(t.uygunluk_kriterleri or {})

@@ -1,12 +1,12 @@
 <!-- persona: cilek | soru: Çilek tarlamı alçak tünel ya da sera yapmak istiyorum; hibe veya kredi var mı? -->
 **Kısa cevap:**
-- Öne çıkan: **Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026)** (Hazine ve Maliye Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; Karar 1/1/2024-31/12/2026 arasında tahsis edilecek kredilere uygulanır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Öne çıkan: **Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026)** (Hazine ve Maliye Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Faydalanıcılar arasında gerçek ve tüzel kişi üreticiler sayılmıştır (ayrıca tarımsal amaçlı örgütler, sözleşmeli üretim yaptıranlar vb.); Dönemsel çağrı yoktur; Karar 1/1/2024-31/12/2026 arasında tahsis edilecek kredilere uygulanır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: Hibe değil, faiz indirimi. Temel bitkisel üretim: 300.000 TL'ye kadar yüzde 100, üstü yüzde 50 indirim, üst limit 10.000.000 TL. Meyve yetiştiriciliği ve bağcılık: yüzde 75 indirim, üst limit 40.000.000 TL
-- Diğer seçenekler: HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (profilinize göre engel yok — şartları teyit edin); YATIRIM-İŞLETME DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); TARIM KEFALET DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin).
-- 1 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
+- Diğer seçenekler: HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ (profilinize göre engel yok — şartları teyit edin); TARIM KEFALET DESTEK PROGRAMI (profilinize göre engel yok — şartları teyit edin); TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin).
+- 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
-- Faaliyet: tarım (NACE kodu bilinmiyor)
+- Faaliyet: tarım (çilek)
 - Şirket türü: şahıs işletmesi
 - Ölçek: mikro işletme [KOBİ Yönetmeliği eşiklerine göre]
 - İl: Aydın
@@ -16,7 +16,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026) — Hazine ve Maliye Bakanlığı**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; Karar 1/1/2024-31/12/2026 arasında tahsis edilecek kredilere uygulanır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; Karar 1/1/2024-31/12/2026 arasında tahsis edilecek kredilere uygulanır.
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman.
 - **Kapsam:** yalnız: şahıs işletmesi, limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** kredi/finansman
@@ -32,7 +32,7 @@
 - **Başvuru:** T.C. Ziraat Bankası A.Ş. ve Türkiye Tarım Kredi Kooperatifleri — https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8039.pdf
 
 **HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Kredi ve kefalet limitleri:** Kefalet üst limiti 400 bin TL; kefalet başvuru ücreti 7.500 TL; yalnızca TL
@@ -44,22 +44,8 @@
   - Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. — resmî metin: “Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz.”
 - **Başvuru:** Kredi veren bankalar: Halkbank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-sahis-isletmeleri-destek-kredisi-projesi
 
-**YATIRIM-İŞLETME DESTEK PAKETİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman; teyit: Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir.
-- **Kapsam:** yalnız KOBİ'ler
-- **Karşıladığı ihtiyaç:** kredi/finansman
-- **Kredi ve kefalet limitleri:** Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ İmalatçı KOBİ olmak — resmî metin: “İmalatçı KOBİ’lerin yatırım ve işletme harcamalarına yönelik finansman desteği sağlanması amaçlanmaktadır.”
-- **Kurallar (kayıttan):**
-  - Bu paket kapsamındaki krediler kıymetli maden ve döviz alımında, kefaletin sağlandığı kredi veren dışında vadeli mevduat ve diğer yüksek riskli finansal araçlarda, refinansman amacıyla kullanılamaz.
-  - Paket kapsamında arsa ve bina yatırımlarına kefalet sağlanmaz. Ancak, arsa ve bina yatırımlarına makine yatırımı ile birlikte yapılması halinde kefalet sağlanabilecektir. — resmî metin: “Paket kapsamında arsa ve bina yatırımlarına kefalet sağlanmaz. Ancak, arsa ve bina yatırımlarına makine yatırımı ile birlikte yapılması halinde kefalet sağlanabilecektir.”
-  - Kredi kartı ürünü nakit çekime kapalı olacaktır. — resmî metin: “Kredi kartı ürünü nakit çekime kapalı olacaktır.”
-- **Başvuru:** Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, TEB, Şekerbank, Anadolubank, ING Bank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi
-
 **TARIM KEFALET DESTEK PROGRAMI — KGF**
-- **Başvuru dönemi:** Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Sürekli (banka şubesi üzerinden bireysel başvuru)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman; teyit: Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir.
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Kredi ve kefalet limitleri:** İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi 20 Milyon TL (azami 60 ay), 12 ay ödemesiz; %80 kefalet; başvuru ücreti kredinin %0,15'i (asgari 10.000 TL)
@@ -72,12 +58,13 @@
 - **Başvuru:** Programa dahil 10 bankadan biri: Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, Halkbank, TEB, YKB — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tarim-kefalet-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- TKYB KREDİ DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı) (Hazine ve Maliye Bakanlığı / Halkbank) — belirlenemedi (profilde karşılığı olmayan kilit şart: Genç girişimci kategorisi: KOSGEB Geleneksel veya İleri Girişimci Eğitimi'ni bitiren, başvuru tarihinde 35 yaşını tamamlamamış girişimci esnaf (KOSGEB hibe/faizsiz kredisinden yararlananlar hariç).); Dönemsel çağrı yoktur; krediler 1/1/2025-31/12/2027 tarihleri arasında kullandırılır. Hazine faiz desteği yıllık bütçe ödeneğiyle sınırlıdır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- KOSGEB Geri Ödemeli Destekleri (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: KOSGEB tarafından onaylanmış bir destek ödemesi almaya hak kazanmış KOBİ olmak); Sürekli (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- TKYB KREDİ DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
+- Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı) (Hazine ve Maliye Bakanlığı / Halkbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Genç girişimci kategorisi: KOSGEB Geleneksel veya İleri Girişimci Eğitimi'ni bitiren, başvuru tarihinde 35 yaşını tamamlamamış girişimci esnaf (KOSGEB hibe/faizsiz kredisinden yararlananlar hariç).); Dönemsel çağrı yoktur; krediler 1/1/2025-31/12/2027 tarihleri arasında kullandırılır. Hazine faiz desteği yıllık bütçe ödeneğiyle sınırlıdır.
+- KOSGEB Geri Ödemeli Destekleri (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: KOSGEB tarafından onaylanmış bir destek ödemesi almaya hak kazanmış KOBİ olmak); Sürekli
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
+- YATIRIM-İŞLETME DESTEK PAKETİ (KGF) — uygun değil: imalatçı işletmelere yönelik; faaliyetiniz (tarım) imalat değil — kayıttaki şart: “İmalatçı KOBİ olmak”
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz …, TARIM KEFALET DESTEK PROGRAMI): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
@@ -89,15 +76,12 @@
 1. Ön koşul kayıtlar: Çiftçi Kayıt Sistemi (ÇKS) kaydı; SGK prim ve vergi borcu durumu.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Başvuru adımları (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026)): Başvuru yeri: T.C. Ziraat Bankası A.Ş. ve Türkiye Tarım Kredi Kooperatifleri.
-4. Başvuru kanalı: Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026): T.C. Ziraat Bankası A.Ş. ve Türkiye Tarım Kredi Kooperatifleri — https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8039.pdf | HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ: Kredi veren bankalar: Halkbank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-sahis-isletmeleri-destek-kredisi-projesi | YATIRIM-İŞLETME DESTEK PAKETİ: Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, … — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi.
+4. Başvuru kanalı (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026)): T.C. Ziraat Bankası A.Ş. ve Türkiye Tarım Kredi Kooperatifleri — https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8039.pdf. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 5. İletişim (doğrulanmış): Aydın Tarım ve Orman İl Müdürlüğü: iletişim bilgisi için resmî sayfa: https://aydin.tarimorman.gov.tr/Iletisim
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026): “Faydalanıcılar arasında gerçek ve tüzel kişi üreticiler sayılmıştır (ayrıca tarımsal amaçlı örgütler, sözleşmeli üretim yaptıranlar vb.).” şartını sağlıyor musunuz?
-2. Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026): “Tarım ve Orman Bakanlığı kayıt sistemleriyle (ÇKS vb.) takip edilen konularda ilgili kayıt sistemine kayıtlı olmak esastır.” şartını sağlıyor musunuz?
-3. HALK BANKASI ŞAHIS İŞLETMELERİ DESTEK KREDİSİ PROJESİ: “Esnaf Odası, Ticaret ve Sanayi Odası veya Meslek Odası kaydı” şartını sağlıyor musunuz?
-Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
+Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

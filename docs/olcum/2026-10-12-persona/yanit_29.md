@@ -1,8 +1,9 @@
 <!-- persona: ikas_kozmetik | soru: Şahıs işletmesiyim; e-ihracat desteklerinden yararlanabilir miyim? -->
 **Kısa cevap:**
-- **E-İhracat Destekleri (5986 Sayılı Karar)** (Ticaret Bakanlığı)
-- Sizin için: **uygun değil** — başvuru sahibi türünüz (şahıs işletmesi) şartta sayılmıyor — kayıttaki şart: “Şirket ya da kooperatif olmak (şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre)”.
-- Destek: %50 (dijital pazaryeri reklamı, e-ihracat tanıtımı ve sipariş karşılamada hedef ülkelerde %70); 2026 toplam yıllık üst limit şirketler için 73.990.019 TL
+- Öne çıkan: **Türk Eximbank E-İhracat Destek Kredisi** (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Başvuru sahibi ve risk grubuna dâhil firmaların Eximbank nezdinde güncel kredi limiti veya kredi riski bulunmamalıdır; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Diğer seçenekler: Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) (profilinize göre engel yok — şartları teyit edin); ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (şarta bağlı); ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin).
+- Sorunuza doğrudan yönelik ama size kapalı: E-İhracat Destekleri (5986 Sayılı Karar) — başvuru sahibi türünüz (şahıs işletmesi) şartta sayılmıyor — kayıttaki şart: “Şirket ya da kooperatif olmak (şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre)”.
+- 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: e-ticaret (NACE 47.91)
@@ -14,35 +15,62 @@
 
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
-**E-İhracat Destekleri (5986 Sayılı Karar) — Ticaret Bakanlığı** (uygun değil)
-- **Neden:** başvuru sahibi türünüz (şahıs işletmesi) şartta sayılmıyor — kayıttaki şart: “Şirket ya da kooperatif olmak (şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre)”.
-- **Destek:** %50 (dijital pazaryeri reklamı, e-ihracat tanıtımı ve sipariş karşılamada hedef ülkelerde %70); 2026 toplam yıllık üst limit şirketler için 73.990.019 TL Hesaplama: Kalem bazında giderin %50'si (hedef ülkelerde bazı kalemlerde %70); 2026 yıllık toplam en çok 73.990.019 TL (şirketler) — kalem limitleri ilgili kayıtlarda
-- **Ne yapabilirsiniz:** Profilinizdeki ilgili bilgi değişirse yeniden değerlendirin.
-- **Kaynak:** https://ticaret.gov.tr/data/6447baf113b8761694f892bb/E-İHRACAT DESTEKLERİNE İLİŞKİN GENELGE 13.04.2026.pdf
+**Türk Eximbank E-İhracat Destek Kredisi — Türk Eximbank**
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Karşıladığı ihtiyaç:** ihracat
+- **Destek:** Hibe değil kredi: firma bazında kullandırım üst limiti 500.000 TL; vade azami 12 ay; İGE kefaleti karşılığında kullandırılır.
+- **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (mikro işletme)
+- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ Başvuru sahibi ve risk grubuna dâhil firmaların Eximbank nezdinde güncel kredi limiti veya kredi riski bulunmamalıdır. — resmî metin: “Türk Eximbank nezdinde, başvuru sahibi ile risk grubuna dâhil firmaların herhangi bir güncel kredi limiti veya kredi riski bulunmaması şartı aranır;”
+- **Kurallar (kayıttan):**
+  - Firma bazında kullandırım üst limiti 500.000 TL'dir. — resmî metin: “Firma bazında kullandırım üst limiti 500.000 Türk Lirasıdır.”
+  - Teminat: İGE kefaleti. — resmî metin: “İhracatı Geliştirme A.Ş.’nin (İGE) kefaleti karşılığında kullandırılır.”
+  - Vade azami 12 aydır. — resmî metin: “E-İhracat Destek Kredisi azami 12 ay vadeli olarak kullandırılır.”
+- **Başvuru:** Türk Eximbank; başvuru Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi
 
-**Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
-- Türk Eximbank E-İhracat Destek Kredisi (Türk Eximbank): Hibe değil kredi: firma bazında kullandırım üst limiti 500.000 TL; vade azami 12 ay; İGE kefaleti karşılığında kullandırılır.; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) (Türk Eximbank): Hibe değil kredi: Kadın Girişimci Belgesi'ne sahip ihracatçı firmalara TL cinsinden kullandırımlarda Eximbank'ın en uygun TL faiz oranlarıyla 3 yıla kadar vadeli kredi.; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+**Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) — Türk Eximbank**
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Kapsam:** yalnız: Kadın girişimci / kadınların yönettiği işletme
+- **Karşıladığı ihtiyaç:** ihracat
+- **Destek:** Hibe değil kredi: Kadın Girişimci Belgesi'ne sahip ihracatçı firmalara TL cinsinden kullandırımlarda Eximbank'ın en uygun TL faiz oranlarıyla 3 yıla kadar vadeli kredi. Firma limitleri Eximbank'ça firma bazında belirlenir.
+- **Profilinize göre sağlanan şartlar:** hedef kitle: kadın girişimci (profilinize göre)
+- **Kurallar (kayıttan):**
+  - TL kullandırımlarda Eximbank'ın en uygun TL faiz oranlarıyla 3 yıla kadar vadeli kredi sunulur. — resmî metin: “Kadın Girişimci Belgesi’ne sahip ihracatçı firmalara, TL cinsinden kullandırımlarda Bankamızın en uygun TL faiz oranlarıyla, 3 yıla kadar vadeli kredi imkânı sunulmaktadır.”
+  - İhracat veya döviz kazandırıcı hizmet taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
+  - Firma limiti Eximbank'ın tahsis çalışmasıyla firma bazında belirlenir. — resmî metin: “Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.”
+- **Başvuru:** Türk Eximbank (en yakın Şube veya İhracat Destek Hizmetleri Merkezi); Kadın Girişimci Belgesi için TSE web başvurusu — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi
 
-**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+**ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ — KGF**
+- **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
+- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110.
+- **Kapsam:** yalnız KOBİ'ler
+- **Karşıladığı ihtiyaç:** ihracat
+- **Kredi ve kefalet limitleri:** Azami 40 Milyon TL; %80 kefalet; 6 ay ödemesiz, 24 ay vade; komisyon kredinin %0,1'i (asgari 10 bin TL)
+- **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (mikro işletme)
+- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110 — resmî metin: “Son 3 mali dönemdeki ya da son mali yıldaki ihracatlarının toplamının ithalatlarının toplamına oranı %110 olan firmaları ifade etmektedir.”
+  - ☐ Asgari C seviyesinde aktif Greendeks skoruna sahip olmak — resmî metin: “Asgari C seviyesinde aktif Greendeks skoruna sahip”
+- **Kurallar (kayıttan):**
+  - Krediler TL işletme kredisi olarak, ihracat taahhütlü kullandırılır — resmî metin: “Krediler ihracat taahhütlü olarak kullandırılacaktır.”
+- **Başvuru:** Kredi veren bankalar: Ziraat Bankası (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/ziraat-bankasi-yesil-ihracat-kredisi-destek-paketii
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - KADIN GİRİŞİMCİ DESTEK PAKETİ (KGF) — kapalı: program başvuruya açık değil (KGF'nin kendi sitesinde 'geçmiş programlar' (gecmis-programlar) kategorisinde listeleniyor)
+- E-İhracat Destekleri (5986 Sayılı Karar) (Ticaret Bakanlığı) — uygun değil: başvuru sahibi türünüz (şahıs işletmesi) şartta sayılmıyor — kayıttaki şart: “Şirket ya da kooperatif olmak (şahıs işletmesi yalnız E-İhracat Konsorsiyumu aracılığıyla, sınırlı süre)”
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Türk Eximbank E-İhracat Destek Kredisi:** KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir.
 
 ### 4. Adım Adım Yol Haritası
-Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **Türk Eximbank E-İhracat Destek Kredisi** için:
-1. Türk Eximbank E-İhracat Destek Kredisi şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
+1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 2. Belgeler (Türk Eximbank E-İhracat Destek Kredisi): Kredi Talep Formu, Otomatik Taahhüt Kapatma Talimat Formu ve İGE Kefaleti Başvuru Belgeleri..
-3. Başvuru kanalı: Türk Eximbank E-İhracat Destek Kredisi: Türk Eximbank; başvuru Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi.
-4. İletişim (doğrulanmış): Ticaret Bakanlığı: çağrı merkezi 444 8 482, genel merkez 0 312 204 75 00; Söğütözü Mah. Nizami Gencevi Cad. No:63/1, 06530 Çankaya / Ankara (doğrulama: https://ticaret.gov.tr/iletisim)
-5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+3. Başvuru kanalı (Türk Eximbank E-İhracat Destek Kredisi): Türk Eximbank; başvuru Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+4. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Türk Eximbank E-İhracat Destek Kredisi: “Başvuru sahibi ve risk grubuna dâhil firmaların Eximbank nezdinde güncel kredi limiti veya kredi riski bulunmamalıdır.” şartını sağlıyor musunuz?
+1. ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ: uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: Net ihracatçı olmak: son 3 mali dönemde (ya da son mali yılda) ihracat toplamının ithalat toplamına oranı %110); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

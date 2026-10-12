@@ -40,7 +40,7 @@ profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'Eskişehir', 'ca
 17. [0] Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B) — Gelir İdaresi Başkanlığı (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-18. [0] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
+18. [0] KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
 19. [0] TURWIB PROGRAMI DESTEK PAKETİ — KGF (aktif=True)

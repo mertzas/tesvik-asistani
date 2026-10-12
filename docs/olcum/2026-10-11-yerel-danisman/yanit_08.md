@@ -12,6 +12,7 @@
 - Ölçek: mikro işletme [KOBİ Yönetmeliği eşiklerine göre]
 - İl: Trabzon
 - Hedefler: ihracat
+- Sorudan anlaşılan ihtiyaç: dijital dönüşüm, ihracat
 
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
@@ -24,8 +25,9 @@
 
 **Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) — Ticaret Bakanlığı**
 - **Başvuru dönemi:** Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Düşük olasılık — cironuz eşiğin altında — düşük olasılık: yıllık cironuz (4.000.000 TL), kaydın aradığı önceki yıl en az 1.000.000 USD ihracatın TL karşılığından az; cironuzun tamamı ihracat olsa bile eşiğe ulaşmaz (1 USD 10 TL'nin üzerinde).
+- **Sizin için:** Düşük olasılık — cironuz eşiğin altında — düşük olasılık: yıllık cironuz (4.000.000 TL), kaydın aradığı önceki yıl en az 1.000.000 USD ihracatın TL karşılığından az; cironuzun tamamı ihracat olsa bile eşiğe ulaşmaz (1 USD 30 TL'nin üzerinde).
 - **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
+- **Karşıladığı ihtiyaç:** dijital dönüşüm, ihracat
 - **Destek:** %50; 2026 şirketler için yıllık 7.396.548 TL; ülke başına 3 yıl
 - **Hesaplama:** Uygun giderin %50'si; şirketler için 2026 yıllık en çok 7.396.548 TL
 - **Profilinize göre sağlanan şartlar:** şirket statüsü (limited şirket)
@@ -39,11 +41,9 @@
 - **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-8
 
 **Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
-- Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6) (Ticaret Bakanlığı): %50; 2026'da faaliyet başına 490.559 TL, günlük konaklama kişi başı 12.264 TL; yılda en çok 5 faaliyet; Şirket çalışanının Türkiye'ye giriş tarihinden itibaren en geç 3 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin)
-
-**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayılı Karar m.9) (Ticaret Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (Ticaret Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayılı Karar m.9) (Ticaret Bakanlığı): %50; 2026 şirketler için yıllık 3.698.274 TL; 3 yıl; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
+- Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (Ticaret Bakanlığı): %50 (hedef ülkelerde %70); 2026 yıllık üst limit şirketler için 36.993.646 TL; pazaryeri başına 3 yıl; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
+- Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6) (Ticaret Bakanlığı): %50 (hedef ülkelerde %70); ülkedeki e-ticaret satışlarının %10'una kadar; 2026 şirketler için yıllık 36.993.646 TL; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **İhracatçı birliği üyeliği** (Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8)): Ürün grubunuzun ihracatçı birliğine üye olun; 5973 ve 5986 başvuruları üyesi olunan birliğin genel sekreterliğine yapılır.
@@ -56,13 +56,12 @@
 1. Ön koşul kayıtlar: İhracatçı birliği üyeliği; Ticaret Bakanlığı DYS kaydı; Harcamadan önce ön onay.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8)): EK-Şirket Başvuru Formu (ilk başvuruda); EK-Çevrim İçi Mağaza Desteği Ön Onay Başvuru Formu ve ekleri; EK-Çevrim İçi Mağaza Desteği Ödeme Başvuru Formu ve ekleri.
-4. Başvuru kanalı: Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8): Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-8.
+4. Başvuru kanalı (Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8)): Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-8.
 5. İletişim (doğrulanmış): Ticaret Bakanlığı: çağrı merkezi 444 8 482, genel merkez 0 312 204 75 00; Söğütözü Mah. Nizami Gencevi Cad. No:63/1, 06530 Çankaya / Ankara (doğrulama: https://ticaret.gov.tr/iletisim)
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8): “Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)” şartını sağlıyor musunuz?
-2. Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8): “Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru” şartını sağlıyor musunuz?
+1. Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8): uygunluk belirlenemedi (düşük olasılık: yıllık cironuz (4.000.000 TL), kaydın aradığı önceki yıl en az 1.000.000 USD ihracatın TL karşılığından az); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

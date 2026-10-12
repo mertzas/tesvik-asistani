@@ -439,6 +439,19 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   (37). Regresyon: eski 30 senaryo dayanak 0, isabet 41/41; kapsam kayıt 420/25/23, ürün 434/468 (tur33: 421; tarım ×
   Ar-Ge 11 hücrenin eski "isabeti" sahteydi: çiftçiye gemi-yat tasarım desteği). Test 1306 → 1312.
   Ders: Bash heredoc `\\` dizisini tek `\` yapıyor (`\b` backspace oldu) → yamalar Write ile betik dosyasına.
+  Tur 3 (`tur3/`, `degerlendirme3_*.json`): A 3,14 · B 2,92 · C 2,72 · D 2,64 · E 3,00. Düzeltmeler: dışlama şartı
+  ("... olmamak", "yapamaz", "bünyesindeyseniz") kilit sayılmaz; sona eren programa "takip edin" denmez; ön onay
+  darboğazı yalnız kural cümlesinde; dar kitle kilitten önce; soru bir ihtiyacı soruyorsa "hedeflerinizde yok" notu
+  gizlenir; BiGG uyarısı Mükemmeliyet Mührü aşamasını alıntılar; sermaye şirketi kuralı sayısal eşikli şartı (Ar-Ge
+  merkezi) karşılamaz; şahıs/şirketsizde soruya yönelik şirket-kapalı şemsiye program değerlendirmeye girer;
+  çalışan eşiği ve "0-1 yaş işletme" profilden ("şirket kurarsam" varsayımında kuruluş = bugün) sağlanır; soru
+  ihtiyacına uyan programa "örtüşmüyor" yazılmaz; kurulu işletmenin girişim dışı kurum sorusunda girişim programı
+  ve parasal olmayan eğitim (e-Akademi; başlık "girişimcilik eğitimi" → girişim ihtiyacı) geride; yurt içi
+  reklam sorusunda "yalnız yurt dışına yönelik" uyarısı. Veri (tur35 genişletmesi): YÖNDE (5) KOSGEB sayfasına göre
+  %80, 280.000 TL, imalat küçük/orta ("mikro ölçekli işletmeler yararlanamaz" alıntısıyla); e-Akademi (330) tüm
+  şirket türlerine açık. Kapsam 420/25/23 → 396/49/23, ürün 434 → 410: fark tamamen YÖNDE (tarım ve turizm dijital
+  hücrelerinin önceki isabeti sahteydi; bu hücreler için kayıtlı dijital destek yok). Eski 30 senaryo dayanak 0,
+  isabet 41/41. Test 1312 → 1314.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

@@ -98,7 +98,7 @@
   "sektor": "e-ticaret",
   "il": "İstanbul",
   "ihtiyac": "dijital",
-  "kayit": 14,
+  "kayit": 13,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı",
@@ -243,7 +243,7 @@
   "sektor": "e-ticaret",
   "il": "Ankara",
   "ihtiyac": "dijital",
-  "kayit": 14,
+  "kayit": 13,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı",
@@ -388,7 +388,7 @@
   "sektor": "e-ticaret",
   "il": "İzmir",
   "ihtiyac": "dijital",
-  "kayit": 14,
+  "kayit": 13,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı",
@@ -533,7 +533,7 @@
   "sektor": "e-ticaret",
   "il": "Bursa",
   "ihtiyac": "dijital",
-  "kayit": 14,
+  "kayit": 13,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı",
@@ -680,7 +680,7 @@
   "sektor": "e-ticaret",
   "il": "Konya",
   "ihtiyac": "dijital",
-  "kayit": 14,
+  "kayit": 13,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı",
@@ -825,7 +825,7 @@
   "sektor": "e-ticaret",
   "il": "Antalya",
   "ihtiyac": "dijital",
-  "kayit": 14,
+  "kayit": 13,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı",
@@ -970,7 +970,7 @@
   "sektor": "e-ticaret",
   "il": "Gaziantep",
   "ihtiyac": "dijital",
-  "kayit": 14,
+  "kayit": 13,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı",
@@ -1115,7 +1115,7 @@
   "sektor": "e-ticaret",
   "il": "Trabzon",
   "ihtiyac": "dijital",
-  "kayit": 14,
+  "kayit": 13,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı",
@@ -1260,7 +1260,7 @@
   "sektor": "e-ticaret",
   "il": "Van",
   "ihtiyac": "dijital",
-  "kayit": 14,
+  "kayit": 13,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı",
@@ -1405,7 +1405,7 @@
   "sektor": "e-ticaret",
   "il": "Diyarbakır",
   "ihtiyac": "dijital",
-  "kayit": 14,
+  "kayit": 13,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı",
@@ -1551,7 +1551,7 @@
   "sektor": "e-ticaret",
   "il": "Edirne",
   "ihtiyac": "dijital",
-  "kayit": 14,
+  "kayit": 13,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı",
@@ -1696,7 +1696,7 @@
   "sektor": "e-ticaret",
   "il": "Balıkesir",
   "ihtiyac": "dijital",
-  "kayit": 14,
+  "kayit": 13,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı",
@@ -3342,11 +3342,11 @@
   ],
   "urun": true,
   "gosterilen": [
-   "GMKA 2026 Yılı Yatırım Ortamının İyileştirilmesi Teknik Destek Programı (TR22/26/YOİTD)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
    "YATIRIM-İŞLETME DESTEK PAKETİ",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -3487,8 +3487,8 @@
   "gosterilen": [
    "Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -3573,17 +3573,17 @@
   "sektor": "yazılım",
   "il": "İstanbul",
   "ihtiyac": "dijital",
-  "kayit": 6,
+  "kayit": 5,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı"
   ],
   "urun": true,
   "gosterilen": [
+   "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
    "Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
    "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
@@ -3632,7 +3632,7 @@
    "Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
    "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -3717,17 +3717,17 @@
   "sektor": "yazılım",
   "il": "Ankara",
   "ihtiyac": "dijital",
-  "kayit": 6,
+  "kayit": 5,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı"
   ],
   "urun": true,
   "gosterilen": [
+   "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
    "Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
    "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
@@ -3775,8 +3775,8 @@
   "gosterilen": [
    "Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -3861,17 +3861,17 @@
   "sektor": "yazılım",
   "il": "İzmir",
   "ihtiyac": "dijital",
-  "kayit": 6,
+  "kayit": 5,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı"
   ],
   "urun": true,
   "gosterilen": [
+   "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
    "Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
    "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
@@ -3920,7 +3920,7 @@
    "Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
    "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -4005,17 +4005,17 @@
   "sektor": "yazılım",
   "il": "Bursa",
   "ihtiyac": "dijital",
-  "kayit": 6,
+  "kayit": 5,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı"
   ],
   "urun": true,
   "gosterilen": [
+   "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
    "Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
    "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
@@ -4064,7 +4064,7 @@
    "Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
    "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -4150,17 +4150,17 @@
   "sektor": "yazılım",
   "il": "Konya",
   "ihtiyac": "dijital",
-  "kayit": 6,
+  "kayit": 5,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı"
   ],
   "urun": true,
   "gosterilen": [
+   "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
    "Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
    "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
@@ -4208,8 +4208,8 @@
   "gosterilen": [
    "Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -4294,17 +4294,17 @@
   "sektor": "yazılım",
   "il": "Antalya",
   "ihtiyac": "dijital",
-  "kayit": 6,
+  "kayit": 5,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı"
   ],
   "urun": true,
   "gosterilen": [
+   "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
    "Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
    "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
@@ -4353,7 +4353,7 @@
    "Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
    "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "İSTİHDAM TAAHHÜTLÜ KOBİ FİNANSMAN DESTEK PROGRAMI-II (BMZ II)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -4438,17 +4438,17 @@
   "sektor": "yazılım",
   "il": "Gaziantep",
   "ihtiyac": "dijital",
-  "kayit": 6,
+  "kayit": 5,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı"
   ],
   "urun": true,
   "gosterilen": [
+   "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
    "Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
    "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
@@ -4496,8 +4496,8 @@
   "gosterilen": [
    "Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -4582,17 +4582,17 @@
   "sektor": "yazılım",
   "il": "Trabzon",
   "ihtiyac": "dijital",
-  "kayit": 6,
+  "kayit": 5,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı"
   ],
   "urun": true,
   "gosterilen": [
+   "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
    "Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
    "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
@@ -4638,9 +4638,9 @@
   ],
   "urun": true,
   "gosterilen": [
+   "Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
    "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı",
    "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
   ],
   "ornek": [
@@ -4727,17 +4727,17 @@
   "sektor": "yazılım",
   "il": "Van",
   "ihtiyac": "dijital",
-  "kayit": 6,
+  "kayit": 5,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı"
   ],
   "urun": true,
   "gosterilen": [
+   "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
    "Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
    "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
@@ -4783,9 +4783,9 @@
   ],
   "urun": true,
   "gosterilen": [
+   "Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
    "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı",
    "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
   ],
   "ornek": [
@@ -4872,17 +4872,17 @@
   "sektor": "yazılım",
   "il": "Diyarbakır",
   "ihtiyac": "dijital",
-  "kayit": 6,
+  "kayit": 5,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı"
   ],
   "urun": true,
   "gosterilen": [
+   "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
    "Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
    "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
@@ -4931,8 +4931,8 @@
   "gosterilen": [
    "Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -5017,17 +5017,17 @@
   "sektor": "yazılım",
   "il": "Edirne",
   "ihtiyac": "dijital",
-  "kayit": 6,
+  "kayit": 5,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı"
   ],
   "urun": true,
   "gosterilen": [
+   "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
    "Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
    "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
@@ -5073,10 +5073,10 @@
   ],
   "urun": true,
   "gosterilen": [
+   "Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)",
    "GMKA 2026 Yılı Yatırım Ortamının İyileştirilmesi Teknik Destek Programı (TR22/26/YOİTD)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -5161,17 +5161,17 @@
   "sektor": "yazılım",
   "il": "Balıkesir",
   "ihtiyac": "dijital",
-  "kayit": 6,
+  "kayit": 5,
   "kurumlar": [
    "KOSGEB",
    "Ticaret Bakanlığı"
   ],
   "urun": true,
   "gosterilen": [
+   "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
    "Hizmet Sektörleri Atılım Programı — Dijital Ürün Tanıtım Desteği (10962 sayılı Karar m.17)",
    "Hizmet İhracatı Destekleri – Bilişim Sektörü (10962 sayılı Karar, Hizmet Sektörleri Atılım Programı)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
    "Hizmet Sektörleri Atılım Programı — Barındırma Desteği (10962 sayılı Karar m.16)",
@@ -5218,10 +5218,10 @@
   "gosterilen": [
    "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+   "TURWIB PROGRAMI DESTEK PAKETİ",
    "Teknoloji Hamlesi Programı (9903 sayılı Karar)",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -5259,7 +5259,7 @@
   ],
   "urun": true,
   "gosterilen": [
-   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "DİJİTAL KEFALET DESTEK PROGRAMI",
    "Ziraat Katılım Bankası Katılım Finans Destek Paketi",
    "ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ"
   ],
@@ -5293,19 +5293,17 @@
   "sektor": "tarım",
   "il": "İstanbul",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -5420,19 +5418,17 @@
   "sektor": "tarım",
   "il": "Ankara",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -5547,19 +5543,17 @@
   "sektor": "tarım",
   "il": "İzmir",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -5674,19 +5668,17 @@
   "sektor": "tarım",
   "il": "Bursa",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -5804,19 +5796,17 @@
   "sektor": "tarım",
   "il": "Konya",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -5858,8 +5848,8 @@
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
    "TURWIB PROGRAMI DESTEK PAKETİ",
    "Teknoloji Hamlesi Programı (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+   "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -5931,19 +5921,17 @@
   "sektor": "tarım",
   "il": "Antalya",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -6058,19 +6046,17 @@
   "sektor": "tarım",
   "il": "Gaziantep",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -6112,8 +6098,8 @@
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
    "TURWIB PROGRAMI DESTEK PAKETİ",
    "Teknoloji Hamlesi Programı (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+   "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -6185,19 +6171,17 @@
   "sektor": "tarım",
   "il": "Trabzon",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -6239,8 +6223,8 @@
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
    "TURWIB PROGRAMI DESTEK PAKETİ",
    "Teknoloji Hamlesi Programı (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+   "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -6312,19 +6296,17 @@
   "sektor": "tarım",
   "il": "Van",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -6439,19 +6421,17 @@
   "sektor": "tarım",
   "il": "Diyarbakır",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -6493,8 +6473,8 @@
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
    "TURWIB PROGRAMI DESTEK PAKETİ",
    "Teknoloji Hamlesi Programı (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
+   "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -6566,19 +6546,17 @@
   "sektor": "tarım",
   "il": "Edirne",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -6693,19 +6671,17 @@
   "sektor": "tarım",
   "il": "Balıkesir",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -6746,8 +6722,8 @@
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -6831,19 +6807,18 @@
   "sektor": "turizm",
   "il": "İstanbul",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -6884,8 +6859,8 @@
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -6969,19 +6944,18 @@
   "sektor": "turizm",
   "il": "Ankara",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -7022,8 +6996,8 @@
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -7107,19 +7081,18 @@
   "sektor": "turizm",
   "il": "İzmir",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -7160,8 +7133,8 @@
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -7245,19 +7218,18 @@
   "sektor": "turizm",
   "il": "Bursa",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -7298,8 +7270,8 @@
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -7384,19 +7356,18 @@
   "sektor": "turizm",
   "il": "Konya",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -7437,8 +7408,8 @@
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -7522,19 +7493,18 @@
   "sektor": "turizm",
   "il": "Antalya",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -7575,8 +7545,8 @@
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -7660,19 +7630,18 @@
   "sektor": "turizm",
   "il": "Gaziantep",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -7713,8 +7682,8 @@
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -7798,19 +7767,18 @@
   "sektor": "turizm",
   "il": "Trabzon",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -7851,8 +7819,8 @@
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+   "TURWIB PROGRAMI DESTEK PAKETİ",
    "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı",
    "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
   ],
   "ornek": [
@@ -7938,19 +7906,18 @@
   "sektor": "turizm",
   "il": "Van",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
+   "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
    "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı",
    "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -7991,8 +7958,8 @@
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
+   "TURWIB PROGRAMI DESTEK PAKETİ",
    "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı",
    "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
   ],
   "ornek": [
@@ -8078,19 +8045,18 @@
   "sektor": "turizm",
   "il": "Diyarbakır",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
+   "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
    "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı",
    "Öncelikli Yatırımlar Teşvik Sistemi (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -8132,8 +8098,8 @@
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "TURWIB PROGRAMI DESTEK PAKETİ",
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
@@ -8217,19 +8183,18 @@
   "sektor": "turizm",
   "il": "Edirne",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -8355,19 +8320,18 @@
   "sektor": "turizm",
   "il": "Balıkesir",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
-  "urun": true,
+  "urun": false,
   "gosterilen": [
    "Hedef Yatırımlar Teşvik Sistemi (9903 sayılı Karar)",
-   "Yatırım teşvik belgesi (9903)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi",
+   "Yatırım teşvik belgesi (9903)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -8407,9 +8371,9 @@
   "urun": true,
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -8487,20 +8451,19 @@
   "sektor": "hizmet (restoran)",
   "il": "İstanbul",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
   "urun": true,
   "gosterilen": [
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yapay Zekâ Kredi Programı",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -8540,9 +8503,9 @@
   "urun": true,
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -8620,20 +8583,19 @@
   "sektor": "hizmet (restoran)",
   "il": "Ankara",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
   "urun": true,
   "gosterilen": [
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yapay Zekâ Kredi Programı",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -8673,9 +8635,9 @@
   "urun": true,
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -8753,20 +8715,19 @@
   "sektor": "hizmet (restoran)",
   "il": "İzmir",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
   "urun": true,
   "gosterilen": [
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yapay Zekâ Kredi Programı",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -8806,9 +8767,9 @@
   "urun": true,
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -8886,20 +8847,19 @@
   "sektor": "hizmet (restoran)",
   "il": "Bursa",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
   "urun": true,
   "gosterilen": [
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yapay Zekâ Kredi Programı",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -8939,9 +8899,9 @@
   "urun": true,
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -9021,20 +8981,19 @@
   "sektor": "hizmet (restoran)",
   "il": "Konya",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
   "urun": true,
   "gosterilen": [
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yapay Zekâ Kredi Programı",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -9074,9 +9033,9 @@
   "urun": true,
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -9154,20 +9113,19 @@
   "sektor": "hizmet (restoran)",
   "il": "Antalya",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
   "urun": true,
   "gosterilen": [
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yapay Zekâ Kredi Programı",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -9207,9 +9165,9 @@
   "urun": true,
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -9287,20 +9245,19 @@
   "sektor": "hizmet (restoran)",
   "il": "Gaziantep",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
   "urun": true,
   "gosterilen": [
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yapay Zekâ Kredi Programı",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -9340,9 +9297,9 @@
   "urun": true,
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -9420,20 +9377,19 @@
   "sektor": "hizmet (restoran)",
   "il": "Trabzon",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
   "urun": true,
   "gosterilen": [
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yapay Zekâ Kredi Programı",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -9473,9 +9429,9 @@
   "urun": true,
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -9553,20 +9509,19 @@
   "sektor": "hizmet (restoran)",
   "il": "Van",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
   "urun": true,
   "gosterilen": [
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yapay Zekâ Kredi Programı",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -9606,9 +9561,9 @@
   "urun": true,
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -9686,20 +9641,19 @@
   "sektor": "hizmet (restoran)",
   "il": "Diyarbakır",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
   "urun": true,
   "gosterilen": [
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yapay Zekâ Kredi Programı",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -9740,9 +9694,9 @@
   "urun": true,
   "gosterilen": [
    "2026 Yılı Turizm Ücret Desteği (turizm işletme belgeli özel sektör konaklama tesisleri, İşsizlik Sigortası Fonu)",
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
    "Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları)",
@@ -9820,20 +9774,19 @@
   "sektor": "hizmet (restoran)",
   "il": "Edirne",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
   "urun": true,
   "gosterilen": [
+   "Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı)",
    "Yapay Zekâ Kredi Programı",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -9953,20 +9906,19 @@
   "sektor": "hizmet (restoran)",
   "il": "Balıkesir",
   "ihtiyac": "dijital",
-  "kayit": 2,
+  "kayit": 1,
   "kurumlar": [
    "KOSGEB"
   ],
   "urun": true,
   "gosterilen": [
+   "GMKA 2026 Yılı Yatırım Ortamının İyileştirilmesi Teknik Destek Programı (TR22/26/YOİTD)",
    "Yapay Zekâ Kredi Programı",
    "Yatırım teşvik belgesi (9903)",
-   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)"
   ],
   "ornek": [
-   "Yapay Zekâ Kredi Programı",
-   "YÖNDE - Yönderlik ve Değerlendirme Destek Programı"
+   "Yapay Zekâ Kredi Programı"
   ]
  },
  {
@@ -9998,8 +9950,9 @@
   "sektor": "girişimci (şirket yok)",
   "il": "İstanbul",
   "ihtiyac": "girisim",
-  "kayit": 1,
+  "kayit": 2,
   "kurumlar": [
+   "KOSGEB",
    "TUBITAK"
   ],
   "urun": true,
@@ -10008,7 +9961,8 @@
    "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ],
   "ornek": [
-   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)"
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ]
  },
  {
@@ -10039,8 +9993,9 @@
   "sektor": "girişimci (şirket yok)",
   "il": "Ankara",
   "ihtiyac": "girisim",
-  "kayit": 1,
+  "kayit": 2,
   "kurumlar": [
+   "KOSGEB",
    "TUBITAK"
   ],
   "urun": true,
@@ -10049,7 +10004,8 @@
    "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ],
   "ornek": [
-   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)"
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ]
  },
  {
@@ -10084,8 +10040,9 @@
   "sektor": "girişimci (şirket yok)",
   "il": "İzmir",
   "ihtiyac": "girisim",
-  "kayit": 1,
+  "kayit": 2,
   "kurumlar": [
+   "KOSGEB",
    "TUBITAK"
   ],
   "urun": true,
@@ -10094,7 +10051,8 @@
    "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ],
   "ornek": [
-   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)"
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ]
  },
  {
@@ -10129,8 +10087,9 @@
   "sektor": "girişimci (şirket yok)",
   "il": "Bursa",
   "ihtiyac": "girisim",
-  "kayit": 1,
+  "kayit": 2,
   "kurumlar": [
+   "KOSGEB",
    "TUBITAK"
   ],
   "urun": true,
@@ -10139,7 +10098,8 @@
    "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ],
   "ornek": [
-   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)"
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ]
  },
  {
@@ -10174,8 +10134,9 @@
   "sektor": "girişimci (şirket yok)",
   "il": "Konya",
   "ihtiyac": "girisim",
-  "kayit": 1,
+  "kayit": 2,
   "kurumlar": [
+   "KOSGEB",
    "TUBITAK"
   ],
   "urun": true,
@@ -10185,7 +10146,8 @@
    "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ],
   "ornek": [
-   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)"
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ]
  },
  {
@@ -10218,8 +10180,9 @@
   "sektor": "girişimci (şirket yok)",
   "il": "Antalya",
   "ihtiyac": "girisim",
-  "kayit": 1,
+  "kayit": 2,
   "kurumlar": [
+   "KOSGEB",
    "TUBITAK"
   ],
   "urun": true,
@@ -10228,7 +10191,8 @@
    "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ],
   "ornek": [
-   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)"
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ]
  },
  {
@@ -10263,8 +10227,9 @@
   "sektor": "girişimci (şirket yok)",
   "il": "Gaziantep",
   "ihtiyac": "girisim",
-  "kayit": 1,
+  "kayit": 2,
   "kurumlar": [
+   "KOSGEB",
    "TUBITAK"
   ],
   "urun": true,
@@ -10273,7 +10238,8 @@
    "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ],
   "ornek": [
-   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)"
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ]
  },
  {
@@ -10308,8 +10274,9 @@
   "sektor": "girişimci (şirket yok)",
   "il": "Trabzon",
   "ihtiyac": "girisim",
-  "kayit": 1,
+  "kayit": 2,
   "kurumlar": [
+   "KOSGEB",
    "TUBITAK"
   ],
   "urun": true,
@@ -10318,7 +10285,8 @@
    "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ],
   "ornek": [
-   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)"
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ]
  },
  {
@@ -10353,8 +10321,9 @@
   "sektor": "girişimci (şirket yok)",
   "il": "Van",
   "ihtiyac": "girisim",
-  "kayit": 1,
+  "kayit": 2,
   "kurumlar": [
+   "KOSGEB",
    "TUBITAK"
   ],
   "urun": true,
@@ -10363,7 +10332,8 @@
    "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ],
   "ornek": [
-   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)"
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ]
  },
  {
@@ -10398,8 +10368,9 @@
   "sektor": "girişimci (şirket yok)",
   "il": "Diyarbakır",
   "ihtiyac": "girisim",
-  "kayit": 1,
+  "kayit": 2,
   "kurumlar": [
+   "KOSGEB",
    "TUBITAK"
   ],
   "urun": true,
@@ -10408,7 +10379,8 @@
    "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ],
   "ornek": [
-   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)"
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ]
  },
  {
@@ -10443,8 +10415,9 @@
   "sektor": "girişimci (şirket yok)",
   "il": "Edirne",
   "ihtiyac": "girisim",
-  "kayit": 1,
+  "kayit": 2,
   "kurumlar": [
+   "KOSGEB",
    "TUBITAK"
   ],
   "urun": true,
@@ -10453,7 +10426,8 @@
    "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ],
   "ornek": [
-   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)"
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ]
  },
  {
@@ -10488,8 +10462,9 @@
   "sektor": "girişimci (şirket yok)",
   "il": "Balıkesir",
   "ihtiyac": "girisim",
-  "kayit": 1,
+  "kayit": 2,
   "kurumlar": [
+   "KOSGEB",
    "TUBITAK"
   ],
   "urun": true,
@@ -10498,7 +10473,8 @@
    "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ],
   "ornek": [
-   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)"
+   "1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+   "KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi"
   ]
  },
  {

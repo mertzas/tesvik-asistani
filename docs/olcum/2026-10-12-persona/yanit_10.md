@@ -2,8 +2,7 @@
 **Kısa cevap:**
 - Öne çıkan: **YATIRIM-İŞLETME DESTEK PAKETİ** (KGF) (hibe değil: kredi kefaleti) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Kredi koşulları (hibe değil): Vade: işletme kredisi azami 24 ay, yatırım kredisi azami 120 ay (ödemesiz dönem dahil); kredi komisyonu azami %1, KGF kefalet komisyonu %0,5
-- Diğer seçenekler: HALKBANK İLK ADIM KREDİSİ PROJESİ (belirlenemedi).
-- Sorudaki 4.000.000 TL tutarını güncel kayıtlarda bulamadım; geçerli tutarlar aşağıdaki kartlardadır.
+- Diğer seçenekler: HALKBANK İLK ADIM KREDİSİ PROJESİ (şarta bağlı).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 18.12)
@@ -16,7 +15,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **YATIRIM-İŞLETME DESTEK PAKETİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Faaliyet kodunuz: 18.12, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi).
 - **Kapsam:** yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı, kredi/finansman
@@ -29,8 +28,8 @@
 - **Başvuru:** Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, TEB, Şekerbank, Anadolubank, ING Bank (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi
 
 **HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Belirlenemedi — profilde karşılığı olmayan kilit şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı.
+- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
+- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı.
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Kredi ve kefalet limitleri:** İşletme kredisi: kefalet azami 800 bin TL, kredi 1 Milyon TL
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
@@ -51,13 +50,12 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 2. Belgeler (YATIRIM-İŞLETME DESTEK PAKETİ): Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir).
-3. Başvuru kanalı: YATIRIM-İŞLETME DESTEK PAKETİ: Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, … — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi | HALKBANK İLK ADIM KREDİSİ PROJESİ: Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi.
+3. Başvuru kanalı (YATIRIM-İŞLETME DESTEK PAKETİ): Kredi veren bankalar: Ziraat Bankası, Vakıfbank, Halkbank, İş Bankası, Garanti Bankası, Yapı ve Kredi Bankası, Akbank, Denizbank, QNB Bank, … — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/yatirim-isletme-destek-paketi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 4. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim)
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.
-2. HALKBANK İLK ADIM KREDİSİ PROJESİ: “İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

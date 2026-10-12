@@ -8,7 +8,7 @@
 - Kimler başvurabiliyordu (son çağrı): Gerçek/tüzel kişiler ve tarımsal amaçlı örgütler; kadın ve genç girişimciler (18-40 yaş) öncelikli (MADDE 2, 14); Hibeye esas proje tutarı 100.000 TL alt, 30.000.000 TL üst limit; aile işletmesi 8.000.000 TL (MADDE 14); Hibe oranı KDV dâhil hibeye esas tutarın %50–%70'i, kalan kısım faydalanıcı öz kaynağı (MADDE 14/4).
 
 ### 1. Şirket & Proje Uygunluk Özeti
-- Faaliyet: tarım (NACE kodu bilinmiyor)
+- Faaliyet: tarım (buğday)
 - Şirket türü: şahıs işletmesi
 - Ölçek: mikro işletme [KOBİ Yönetmeliği eşiklerine göre]
 - İl: Konya
@@ -24,28 +24,29 @@
 - **Kaynak:** https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm
 
 **Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
-- TARIM KEFALET DESTEK PROGRAMI (KGF): İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi 20 Milyon TL (azami 60 ay), 12 ay ödemesiz; %80 kefalet; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Şirket ve Marka Alım Desteği (5973 sayılı Karar m.9) (Ticaret Bakanlığı): Birim kira ve paylaşımlı ofis üyeliği: birim başına yıllık 7.500.000 TL'ye kadar %50. Tanıtım ve pazarlama: %50, yurt dışı birimi bulunan ülke başına yıllık 9.500.000 TL'ye kadar; Çağrı yoktur; danışmanlık ve faiz desteği ödeme başvurusu, ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde DYS üzerinden incelemeci kuruluşa yapılır (ilgili genelge hükmüne göre (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Sektörel Ticaret Heyeti ve Alım Heyeti Desteği (5973 sayılı Karar m.24) (Ticaret Bakanlığı): Sektörel ticaret heyeti: giderlerin %50'si, faaliyet başına 1.500.000 TL'ye kadar.; Çağrı yoktur; işbirliği kuruluşu program başlangıcından en az 1 ay önce onay başvurusu yapar, faaliyet bitiş tarihinden itibaren en geç 3 ay içinde ödeme başvurusunu iletir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026) (Hazine ve Maliye Bakanlığı): Hibe değil, faiz indirimi. Temel bitkisel üretim: 300.000 TL'ye kadar yüzde 100, üstü yüzde 50 indirim, üst limit 10.000.000 TL.; Dönemsel çağrı yoktur; Karar 1/1/2024-31/12/2026 arasında tahsis edilecek kredilere uygulanır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- TARIM KEFALET DESTEK PROGRAMI (KGF): İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi 20 Milyon TL (azami 60 ay), 12 ay ödemesiz; %80 kefalet; Sürekli (banka şubesi üzerinden bireysel başvuru)
+- Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil) (Tarım Bakanlığı): Ticaret Bakanlığının belirlediği kira ücret tarifesinin %75'i oranında; ürün başına en fazla altı ay (miktar sınırları Tebliğ EK-23'tedir).; Ürün, depolama döneminin başlangıç tarihi ile ilgili yılın 31 Aralık'ı arasında lisanslı depoya girmiş olmalıdır; başvuru belge teslim bitiş tarihine göredir.
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- 2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Programı (Öncelik 2: Ar-Ge Danışmanlığı) (Mevlana Kalkınma Ajansı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Öncelik 2 için 1 Ocak 2021 sonrası kurulmuş teknoloji tabanlı KOBİ'ler başvurabilir.); 2026 SKG TD - 5. Dönem: başvuruya açık — yeni başvuru için son gün 31.10.2026 (19 gün kaldı)
+- 2026 Yılı Sosyal Kalkınma ve Girişimcilik Teknik Destek Programı (Öncelik 2: Ar-Ge Danışmanlığı) (Mevlana Kalkınma Ajansı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Öncelik 2 için 1 Ocak 2021 sonrası kurulmuş teknoloji tabanlı KOBİ'ler başvurabilir.); 2026 SKG TD - 5. Dönem: başvuruya açık — yeni başvuru için son gün 31.10.2026 (19 gün kaldı)
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (TARIM KEFALET DESTEK PROGRAMI): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
+- **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz …): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
+- **SGK prim ve vergi borcu durumu** (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz …): Vadesi geçmiş SGK/vergi borcu olmadığını (ya da yapılandırıldığını) gösteren yazıları hazırlayın.
+- **Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026):** Tarım ve Orman Bakanlığı kayıt sistemleriyle (ÇKS vb.) takip edilen konularda ilgili kayıt sistemine kayıtlı olmak esastır.
 
 ### 4. Adım Adım Yol Haritası
-Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **TARIM KEFALET DESTEK PROGRAMI** için:
-1. Ön koşul kayıtlar: Çiftçi Kayıt Sistemi (ÇKS) kaydı.
-2. TARIM KEFALET DESTEK PROGRAMI şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
-3. Belgeler (TARIM KEFALET DESTEK PROGRAMI): İlgili bankanın standart kredi başvuru evrakı; İşletme/çiftçi kayıt belgesi; Banka tarafından istenecek teminat/gelir belgeleri.
-4. Başvuru kanalı: TARIM KEFALET DESTEK PROGRAMI: Programa dahil 10 bankadan biri: Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, Halkbank, TEB, YKB — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tarim-kefalet-destek-programi.
+Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026)** için:
+1. Ön koşul kayıtlar: Çiftçi Kayıt Sistemi (ÇKS) kaydı; SGK prim ve vergi borcu durumu.
+2. Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026) şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
+3. Başvuru adımları (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026)): Başvuru yeri: T.C. Ziraat Bankası A.Ş. ve Türkiye Tarım Kredi Kooperatifleri.
+4. Başvuru kanalı (Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026)): T.C. Ziraat Bankası A.Ş. ve Türkiye Tarım Kredi Kooperatifleri — https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8039.pdf.
 5. İletişim (doğrulanmış): Tarım Bakanlığı: çağrı merkezi 180 (Alo 180); Üniversiteler Mah. Dumlupınar Bulvarı, No: 161, 06800, Çankaya / Ankara (doğrulama: https://timer.tarimorman.gov.tr/Home/Hakkinda) · Konya Tarım ve Orman İl Müdürlüğü: 0332 322 34 60; Konevi Mahallesi Larende Caddesi No:14 Meram/KONYA (doğrulama: https://konya.tarimorman.gov.tr/Iletisim)
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. TARIM KEFALET DESTEK PROGRAMI: “Tarım, ormancılık veya balıkçılık sektöründe faaliyet gösteren gerçek veya tüzel kişi işletme olmak” şartını sağlıyor musunuz?
-Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
+Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

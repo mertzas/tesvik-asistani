@@ -228,3 +228,25 @@ def test_sirket_kurma_niyeti_varsayim_degil():
 def test_kucuk_ailedeki_tekrar_eki_bir_kez():
     metin = "a (kayıttan; güncel çağrıyı kurumdan teyit edin) b (kayıttan; güncel çağrıyı kurumdan teyit edin) c"
     assert yerel_danisman.tekrarlari_kisalt(metin).count("(kayıttan; güncel çağrıyı kurumdan teyit edin)") == 1
+
+
+# ------------------------------------------------------------------ üçüncü hakem turu bulguları
+def test_calisan_esigi_ve_isletme_yasi_profilden_karsilanir():
+    dokuz = FinancialProfile(sektor="hizmet", sirket_turu="limited", calisan_sayisi=9)
+    assert "en az 5; profilinizde 9" in yerel_danisman._profilden_karsilanan(
+        "İşverenin en az beş sigortalı çalışanı olmalıdır.", dokuz)
+    assert yerel_danisman._profilden_karsilanan(
+        "İşverenin en az beş sigortalı çalışanı olmalıdır.",
+        FinancialProfile(sektor="hizmet", sirket_turu="limited", calisan_sayisi=3)) is None
+    yok = FinancialProfile(sektor="arge", sirket_turu="yok", nace_kodu="62.01")
+    kurulacak = yerel_danisman.varsayimsal_profil("Şirket kurarsam KOSGEB'den ne alabilirim?", yok)
+    assert kurulacak.kurulus_tarihi is not None and yok.kurulus_tarihi is None
+    sart = "İş Kurma Desteği: KOSGEB destekli sektörde faaliyet gösteren 0-1 yaş işletme"
+    assert "kurulacak şirket" in yerel_danisman._profilden_karsilanan(sart, kurulacak)
+    assert yerel_danisman._profilden_karsilanan(sart, yok) is None
+
+
+def test_girisimcilik_egitimi_girisim_ihtiyacidir():
+    t = _t(kurum="KOSGEB", baslik="KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri "
+                                  "Girişimcilik Eğitimi")
+    assert program_ihtiyaclari(t) == {"girisim"}

@@ -3,10 +3,10 @@
 
 **Kısa cevap:**
 - Profilinize göre (12 çalışan) işletmeniz küçük işletme ölçeğinde; KOBİ programları için bölmeye gerek yok, doğru beyanla başvurun.
-- Öne çıkan: **HALKBANK İLK ADIM KREDİSİ PROJESİ** (KGF) — belirlenemedi (profilde karşılığı olmayan kilit şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin).
-- Destek: İşletme kredisi: kefalet azami 800 bin TL, kredi 1 Milyon TL
-- Diğer seçenekler: Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) (profilinize göre engel yok — şartları teyit edin); KOBİ Dijital Dönüşüm Destek Programı (profilinize göre engel yok — şartları teyit edin); İstihdamı Koruma Destek Programı (profilinize göre engel yok — şartları teyit edin).
-- 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
+- Öne çıkan: **Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit)** (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik dış ticaret sermaye şirketleri (DTSŞ), sektörel dış ticaret şirketleri (SDTŞ), imalatçı-ihracatçılar ve ihracatçılar yararlanabilir); Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Kredi koşulları (hibe değil): Hibe değil finansman (faizsiz bankacılık ilkelerine uygun): işlem bazında alt limit yoktur; KOBİ'lerde firma limiti azami yıllık net satış hasılatı veya mali bilanço tutarının yarısı, KOBİ dışı firmalarda 2 milyar 500 milyon TL'dir.
+- Diğer seçenekler: Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (profilinize göre engel yok — şartları teyit edin); KOBİ Dijital Dönüşüm Destek Programı (profilinize göre engel yok — şartları teyit edin); Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) (şarta bağlı).
+- 1 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 13.20)
@@ -17,33 +17,33 @@
 
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
-**HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Belirlenemedi — profilde karşılığı olmayan kilit şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı.
-- **Kredi ve kefalet limitleri:** İşletme kredisi: kefalet azami 800 bin TL, kredi 1 Milyon TL
+**Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit) — Türk Eximbank**
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
+- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik dış ticaret sermaye şirketleri (DTSŞ), sektörel dış ticaret şirketleri (SDTŞ), imalatçı-ihracatçılar ve ihracatçılar yararlanabilir.
+- **Destek:** Hibe değil finansman (faizsiz bankacılık ilkelerine uygun): işlem bazında alt limit yoktur; KOBİ'lerde firma limiti azami yıllık net satış hasılatı veya mali bilanço tutarının yarısı, KOBİ dışı firmalarda 2 milyar 500 milyon TL'dir. Limitler Eximbank'ın likidite koşullarına göre uygulanır ve güncellenebilir. Finansman TL cinsindendir; kar payı oranı vadeye göre belirlenir.
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı — resmî metin: “Kredi başvuru tarihi itibarıyla, sahibi veya asgari %50 hisse sahibi ortağı azami 29 yaşında olan işletmeler”
+  - ☐ Türkiye'de yerleşik dış ticaret sermaye şirketleri (DTSŞ), sektörel dış ticaret şirketleri (SDTŞ), imalatçı-ihracatçılar ve ihracatçılar yararlanabilir. — resmî metin: “Dış Ticaret Sermaye Şirketleri (DTSŞ), Sektörel Dış Ticaret Şirketleri (SDTŞ), İmalatçı-ihracatçı, İhracatçı,”
+  - ☐ İhracatçı sıfatı olmasa da ihraç kaydıyla nihai mal üretip ihracatçı aracılığıyla ihraç eden imalatçılar da yararlanabilir. — resmî metin: “İhracatçı sıfatını haiz olmamakla birlikte ihraç kaydıyla nihai mal üretimi yapan ve ihracatçı aracılığı ile bu malını ihraç eden imalatçı,”
+  - ☐ Döviz kazandırıcı hizmet ihracatı için turizm işletme belgeli işletmeler ile sayfada sıralanan diğer hizmet grupları yararlanabilir. — resmî metin: “Döviz kazandırıcı hizmet ihracatı için kullanılan İhracat Destek Finansmanından ise, Türkiye’de yerleşik; Turizm işletme belgesi sahibi turizm işletmeleri”
 - **Kurallar (kayıttan):**
-  - Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz. — resmî metin: “Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir.”
-- **Başvuru:** Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi
+  - KOBİ'lerde firma limiti, azami yıllık net satış hasılatı veya mali bilanço tutarının yarısıdır. — resmî metin: “KOBİ’lerde azami yıllık net satış hasılatı veya mali bilançosu tutarlarının yarısı,”
+  - KOBİ dışı firmalar için limit 2 milyar 500 milyon TL olarak uygulanır (Eximbank likidite koşullarını dikkate alarak belirler). — resmî metin: “KOBİ dışı firmalar için 2 milyar 500 milyon TL olarak uygulanmaktadır.”
+  - İşlem bazında alt limit yoktur. — resmî metin: “İşlem bazında herhangi bir alt limit bulunmamaktadır.”
+- **Başvuru:** Türk Eximbank (Talep Formu ve başvuru evrakı Bankaya sunulur; sayfada ayrı bir başvuru kanalı belirtilmemiştir) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani
 
-**Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) — KOSGEB**
-- **Başvuru dönemi:** Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında belirlenen sürelerde (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (imalat) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-- **Kapsam:** yalnız: limited şirket, anonim şirket
-- **Destek:** Bağımsız değerlendirme desteği %100 oranında (geri ödemesiz), en fazla 50.000 TL; personel giderleri desteği %80 oranında (geri ödemeli), en fazla 10.000.000 TL; yatırım projesi süresi en fazla 24 ay
-- **Profilinize göre sağlanan şartlar:** sermaye şirketi (limited şirket)
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Hamle programına Bakanlığa ön başvuru yapılmış, kesin başvuruya davet edilmiş ve Program Portali üzerinden KOSGEB'e yönlendirilmiş olmalı
-  - ☐ KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmalı — resmî metin: “KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması”
+**Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi — Türk Eximbank**
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; geçerli kredi limiti olan firma kredi talep formu ve onaylı harcama listesiyle şubeye başvurur. Harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar olabilir.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (imalat) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
+- **Destek:** Hibe değil kredi: tutar firma bazında Banka tarafından yapılan tahsis çalışmasıyla belirlenir; faiz/kar payı oranları vade, tutar ve para birimine göre belirlenir. Gerçekleştirilmesi gereken ihracat taahhüdü tutarı, 5 yıla kadar vadeli kredilerde kredi tutarının (döviz kredilerde anapara, faiz ve varsa masraflar toplamının) 1 katı, 5 yıldan uzun vadeli kredilerde 1,5 katıdır.
+- **Profilinize göre sağlanan şartlar:** ihracata yönelik üretim yapan imalatçı (NACE 13.20, hedefinizde ihracat)
 - **Kurallar (kayıttan):**
-  - İşletme iki destekten ayrı ayrı yararlanabilir veya aynı anda yararlanabilir — resmî metin: “İşletme bağımsız değerlendirme desteği ve personel giderleri desteğinden ayrı ayrı yararlanabileceği gibi, iki destekten aynı anda da yararlanabilir.”
-  - Personel desteği yalnızca yeni istihdam edilen personel için verilir
-  - Personel başına aylık destek üst limiti brüt asgari ücretin işverene toplam maliyetinin 2 katıdır — resmî metin: “Her bir personel için aylık destek üst limiti; 1 aylık brüt asgari ücretin işverene toplam maliyet tutarının 2 katıdır.”
-- **Başvuru:** Teknoloji Odaklı Sanayi Hamlesi Programı Program Portali üzerinden KOSGEB'e yönlendirme; KOSGEB KBS (KOBİ Bilgi Sistemi) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi
+  - Finanse edilen harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar yapılmış olmalıdır.
+  - İhracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
+  - Taahhüt tutarı: 5 yıla kadar vadeli kredilerde 1 katı, 5 yıldan uzun vadeli kredilerde 1,5 katı.
+- **Başvuru:** Türk Eximbank şubeleri (geçerli kredi limiti yoksa analiz başvuru evrakları Eximbank'a iletilir) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-isletme-sermayesi-kredisi
 
 **KOBİ Dijital Dönüşüm Destek Programı — KOSGEB**
-- **Başvuru dönemi:** Sürekli açık başvuru (24 aylık program süresi içinde kullanım gerekir) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Sürekli açık başvuru (24 aylık program süresi içinde kullanım gerekir)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (imalat) bu desteğin kapsamına uygun; Faaliyet kodunuz: 13.20, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi); teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
 - **Kapsam:** yalnız KOBİ'ler
 - **Destek:** ₺1.000.000 - ₺20.000.000 kredi (faiz desteği geri ödemesiz)
@@ -57,47 +57,29 @@
   - EBRD'nin 'Uygun Bulunmayan Sektör ve Faaliyetler Tablosu'ndaki sektörlerde faaliyet gösterenler başvuramaz — resmî metin: “Kredi Kaynağı sağlayan kuruluş (EBRD) tarafından belirlenen”
 - **Başvuru:** KOSGEB KOBİ Bilgi Sistemi (online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi
 
-**İstihdamı Koruma Destek Programı — KOSGEB**
-- **Başvuru dönemi:** 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (19 gün kaldı). Not: Bu dönemde yalnız Finansman Desteği kapsamında başvuru alınır. (duyuru: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi, doğrulama 08.10.2026)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (imalat) bu desteğin kapsamına uygun; Faaliyet kodunuz: 13.20, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi); teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-- **Destek:** 2026-2: kredi üst limiti KOBİ 50 Milyon TL, büyük işletme 150 Milyon TL (kredi tutarı 2026 Ocak-Haziran prime esas kazanç aylık ortalamasını geçemez); azami 6 ay ödemesiz, 36 ay vade; banka azami faizi %37 (sabit) / TLREF+1 (değişken); komisyon ≤%1; finansman desteği 12 puan, geri ödemesiz, yalnızca vergi ve SGK prim borçlarına kullanılır
-- **Profilinize göre sağlanan şartlar:** imalat faaliyeti (NACE 13.20); TTK'da tanımlı statü (limited şirket)
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ İşletme Beyanının güncel olması — resmî metin: “İşletme Beyanının güncel olması”
-  - ☐ Gelir İdaresi Başkanlığı'nın 31.12.2025 tarihli kayıtlarında imalat NACE kodu olmalı (sonradan imalat kodu ekletilerek başvurulamaz) — resmî metin: “31.12.2025 tarihli kayıtlarında imalat Nace Kodu olan işletmeler programa başvuru yapabilir”
-  - ☐ Kredi kullanmak ve 2026 Ocak-Haziran ortalama aylık prim gün sayısını 2026 Temmuz-Aralık döneminde korumak (finansman desteği için)
-- **Kurallar (kayıttan):**
-  - Önceki dönemde destek ödemesi yapılan KOBİ, ölçek değiştirip büyük işletme olursa (veya tersi) yeni dönemde yararlanamaz — resmî metin: “Önceki dönem yürütülen destek programı kapsamında destek ödemesi yapılan KOBİLER, ölçek değiştirip Büyük işletme olursa yeni dönemde destekten faydalanamaz.”
-  - KOSGEB'e vadesi geçmiş borcunuz varsa ödeme talebinden önce ödemiş olmalısınız — resmî metin: “vadesi geçmiş borcunun bulunmaması varsa eğer ödeme talebinden önce borcunu ödemiş olması gerekir”
-  - Geri ödemesiz destek tutarı yalnızca vergi dairesi ve SGK prim borçlarının ödenmesinde kullanılabilir — resmî metin: “Program kapsamında sağlanan geri ödemesiz destek tutarları; yalnızca vergi dairesi ve SGK prim borçlarının ödenmesinde kullanılabilecek.”
-- **Başvuru:** KOSGEB'e 2026-2 dönemi formlarıyla (Başvuru Formu, Taahhütname); kredi, bankalardan kullanılır — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi
-
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (Türk Eximbank) — belirlenemedi (profilde karşılığı olmayan kilit şart: Türkiye'de yerleşik imalatçı-ihracatçı, ihracata yönelik mal üreten imalatçı ve ihracatçı vasfına haiz firmalar, Türkiye menşeli veya Dahilde İşleme Rejimi kapsamında ithal edilen malların ihracı için yararlanabilir.); Dönemsel çağrı yoktur; geçerli kredi limiti olan firma kredi talep formu ve onaylı harcama listesiyle şubeye başvurur. Harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar olabilir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Yeşil Mutabakata Uyum Projesi Desteği — Responsible® Programı (5973 sayılı Karar m.14) (Ticaret Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Son üç takvim yılında toplam 300.000 ABD Doları ve üzeri ihracat yapan imalatçı ve ihracatçı şirketler başvurabilir.); Çağrı yoktur; programa kabul için DYS üzerinden başvurulur. Faz 1 harcamasının destek başvurusu, Faz 1 raporunun Bakanlıkça onaylandığı tarihten itibaren en geç 6 ay içinde yapılmalıdır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı, imalatçı-ihracatçı, ihraç kaydıyla nihai mal üreten imalatçı, serbest bölgede mukim ve üçüncü ülkelere satış yapan firmalar ile döviz kazandırıcı hizmet yürüten firmalar yararlanabilir.); Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
+- Yeşil Mutabakata Uyum Projesi Desteği — Responsible® Programı (5973 sayılı Karar m.14) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Son üç takvim yılında toplam 300.000 ABD Doları ve üzeri ihracat yapan imalatçı ve ihracatçı şirketler başvurabilir.); Çağrı yoktur; programa kabul için DYS üzerinden başvurulur. Faz 1 harcamasının destek başvurusu, Faz 1 raporunun Bakanlıkça onaylandığı tarihten itibaren en geç 6 ay içinde yapılmalıdır.
+- Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) (KOSGEB) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Hamle programına Bakanlığa ön başvuru yapılmış, kesin başvuruya davet edilmiş ve Program Portali üzerinden KOSGEB'e yönlendirilmiş olmalı); Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında belirlenen sürelerde
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - KAPASİTE GELİŞTİRME DESTEK PAKETİ (KGF) — kapalı: bağlı olduğu KOSGEB programının (Kapasite Geliştirme Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
-- Kapasite Geliştirme Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında), KOBİ Dijital Dönüşüm Destek Programı, İstihdamı Koruma Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
-- **Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında):** KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmalı
+- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (KOBİ Dijital Dönüşüm Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
+- **Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit):** İhracatçı sıfatı olmasa da ihraç kaydıyla nihai mal üretip ihracatçı aracılığıyla ihraç eden imalatçılar da yararlanabilir.
 - **KOBİ Dijital Dönüşüm Destek Programı:** KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanı güncel olmak (KOSGEB sınıflandırmasında küçük veya orta ölçekli olmak; mikro ölçekliler başvuramaz)
-- **İstihdamı Koruma Destek Programı:** İşletme Beyanının güncel olması
 
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-3. Belgeler (HALKBANK İLK ADIM KREDİSİ PROJESİ): Kredi veren bankanın kredi başvurusu için istediği belgeler (KGF ayrı belge listesi yayımlamaz; kefalet talebini banka KGF'ye iletir).
-4. Başvuru kanalı: HALKBANK İLK ADIM KREDİSİ PROJESİ: Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi | Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında): Teknoloji Odaklı Sanayi Hamlesi Programı Program Portali üzerinden KOSGEB'e yönlendirme; KOSGEB KBS (KOBİ Bilgi Sistemi) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/6492/stratejik-urun-destek-programi | KOBİ Dijital Dönüşüm Destek Programı: KOSGEB KOBİ Bilgi Sistemi (online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi.
-5. İletişim (doğrulanmış): KGF: çağrı merkezi 444 7 543, genel merkez 0 312 204 00 00; Dumlupınar Bulv. No: 252 (Eskişehir Yolu 9. Km) TOBB İkiz Kuleleri C Blok Kat 5-6-7 06530 Çankaya / Ankara (doğrulama: https://www.kgf.com.tr/index.php/tr/bize-ulasin/kurumsal-iletisim) · KOSGEB İZMİR MÜDÜRLÜĞÜ: 0 (232) 270 15 60; Atatürk OSB 10013 Sok. P.K:35477 Çiğli/İZMİR (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=35)
+3. Belgeler (Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit)): Başvuru evrakı arasında Talep Formu, Muvafakatname ve Yaptırım Taahhütnamesi yer alır.; Firma Taahhütnamesi (Ek-4A) başvuru evrakı arasındadır.; Döviz Pozisyonu Bildirim Formu (Ek-5) ve Firma Döviz Pozisyon Beyanı (Ek-8) sunulur..
+4. Başvuru kanalı (Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit)): Türk Eximbank (Talep Formu ve başvuru evrakı Bankaya sunulur; sayfada ayrı bir başvuru kanalı belirtilmemiştir) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+5. İletişim (doğrulanmış): KOSGEB İZMİR MÜDÜRLÜĞÜ: 0 (232) 270 15 60; Atatürk OSB 10013 Sok. P.K:35477 Çiğli/İZMİR (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=35)
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.
-2. HALKBANK İLK ADIM KREDİSİ PROJESİ: “İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı” şartını sağlıyor musunuz?
-3. Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında): “Hamle programına Bakanlığa ön başvuru yapılmış, kesin başvuruya davet edilmiş ve Program Portali üzerinden KOSGEB'e yönlendirilmiş olmalı” şartını sağlıyor musunuz?
+1. Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit): uygunluk belirlenemedi (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik dış ticaret sermaye şirketleri (DTSŞ), sektörel dış ticaret şirketleri (SDTŞ), imalatçı-ihracatçılar ve ihracatçılar yararlanabilir.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

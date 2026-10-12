@@ -4,13 +4,15 @@
 - Destek: Dekar başına 73,40–550,50 TL organik tarım desteği (2026; ürün grubu ve bireysel/grup sertifikaya göre, 1. derece örgüt üyesine %25 ilave dâhil); temel destek ayrıca ödenir
 - Sizin için: **uygun değil** — Organik ürün sertifikası gerekir (beyan: yok).
 - Arazinize göre: 60 dekar için en düşük 73,40 TL/da × 60 da = 4.404,00 TL, en yüksek 550,50 TL/da × 60 da = 33.030,00 TL (ürün grubunuz ve sertifika türünüz kesin tutarı belirler)
+- Ürününüz (incir) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri 367,00 TL/da): Temel destek (1. kategori): 367,00 TL/da × 60 da = 22.020,00 TL. 'incir' resmî tabloda ayrı bir kategoride listelenmiyor; 1. kategorideki "Diğer ürünler" kalemi varsayıldı (katsayı 1,0). Ürününüz farklı bir kategoriye giriyorsa tutar değişir. Sertifika, fidan, iyi tarım, gübre ve sigorta (TARSİM) gibi ek kalemler şarta bağlıdır; ilgili programı adıyla sorabilirsiniz.
 
 ### 1. Şirket & Proje Uygunluk Özeti
-- Faaliyet: tarım (NACE kodu bilinmiyor)
+- Faaliyet: tarım (incir)
 - Şirket türü: şahıs işletmesi
 - Ölçek: mikro işletme [KOBİ Yönetmeliği eşiklerine göre]
 - İl: Aydın
 - Hedefler: organik tarım
+- Sorudan anlaşılan ihtiyaç: dekar başı tarımsal destek ödemesi
 
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
@@ -20,26 +22,23 @@
 - **Ne yapabilirsiniz:** Destek sertifikalı üretime ödenir; yetkilendirilmiş bir kuruluşla sertifikasyon sürecine girip ürün sertifikası aldığınız yıl başvurabilirsiniz (süreci il müdürlüğünden teyit edin).
 - **Kaynak:** https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#organik-tarim
 
-**Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
-- TARIM KEFALET DESTEK PROGRAMI (KGF): İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi 20 Milyon TL (azami 60 ay), 12 ay ödemesiz; %80 kefalet; Sürekli (banka şubesi üzerinden bireysel başvuru) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Sektörel Ticaret Heyeti ve Alım Heyeti Desteği (5973 sayılı Karar m.24) (Ticaret Bakanlığı): Sektörel ticaret heyeti: giderlerin %50'si, faaliyet başına 1.500.000 TL'ye kadar.; Çağrı yoktur; işbirliği kuruluşu program başlangıcından en az 1 ay önce onay başvurusu yapar, faaliyet bitiş tarihinden itibaren en geç 3 ay içinde ödeme başvurusunu iletir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Pazara Giriş Projesi Hazırlama Desteği (5973 sayılı Karar m.5) (Ticaret Bakanlığı): Danışmanlık ve rapor giderlerinin %50'si, proje başına 200.000 TL'ye kadar (Karar metnindeki tutar; üst limit her takvim yılı başında güncellenir).; Çağrı yoktur; proje başvurusu DYS/KEP üzerinden yapılır ve Bakanlık ön onayıyla başlar. Ödeme başvurusu ihracat planının onay tarihinden itibaren 6 (altı) ay içinde yapılmalıdır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı) (Tarım Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Yetkilendirilmiş bir kuruluştan ilgili üretim yılında, bireysel veya grup sertifikasyonuna göre düzenlenmiş iyi tarım uygulamaları sertifikası alınmalı.); Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez. Sertifika ilgili üretim yılının 1 Ocak-31 Aralık tarihleri arasında düzenlenmiş olmalıdır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Sertifikalı/Standart Fidan Kullanım Desteği — yeni meyve bahçesi/bağ tesisi, fındık dahil (2026 üretim yılı) (Tarım Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Fidan yurt içinde üretilmiş olmalı ve Tohumluk Tescil ve Sertifikasyon Merkez Müdürlüğü veya Karacabey Fidan Fide Test Merkezi tarafından düzenlenmiş sertifikalı/standart fidan sertifikasına sahip olmalı.); Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez.
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **Çiftçi Kayıt Sistemi (ÇKS) kaydı** (TARIM KEFALET DESTEK PROGRAMI): İl/ilçe tarım ve orman müdürlüğünde ÇKS kaydı ve güncellemesi.
+- **Engel:** Organik ürün sertifikası gerekir (beyan: yok).
+- **Engel kalkarsa ayrıca aranan şartlar (kayıttan):** Organik tarım faaliyeti yapılan ürüne yetkilendirilmiş kuruluşça "ürün sertifikası" düzenlenmiş olmalı ya da organik arıcılık yapılmalı (8859 sayılı Karar m.2/7-c); Arazinin yetkilendirilmiş kuruluşça kontrol edilmiş ve geçiş süreci-2, geçiş süreci-3 ya da organik statüde olması; Hasadın yapılmış ve ürün sertifikasının düzenlenmiş olması (2026 uygulama tebliğinden teyit edin).
+- **Hazırlanacak belgeler (kayıttan):** EK-3 Destekleme Ödemesi Başvuru Dilekçesi (ÇKS'de kayıtlı olunan il/ilçe müdürlüğüne; Ürün sertifikası (yetkilendirilmiş kuruluşça düzenlenen; 2026 uygulama tebliğinden teyit edin).
 
 ### 4. Adım Adım Yol Haritası
-Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **TARIM KEFALET DESTEK PROGRAMI** için:
-1. Ön koşul kayıtlar: Çiftçi Kayıt Sistemi (ÇKS) kaydı.
-2. TARIM KEFALET DESTEK PROGRAMI şartlarını adıyla sorarak ya da panelde programın **Kontrol listesi**'nden görün; 'Hayır' çıkan şart o programı kapatır.
-3. Belgeler (TARIM KEFALET DESTEK PROGRAMI): İlgili bankanın standart kredi başvuru evrakı; İşletme/çiftçi kayıt belgesi; Banka tarafından istenecek teminat/gelir belgeleri.
-4. Başvuru kanalı: TARIM KEFALET DESTEK PROGRAMI: Programa dahil 10 bankadan biri: Vakıfbank, İşbankası, Garanti BBVA, Şekerbank, Denizbank, Akbank, Ziraat Bankası, Halkbank, TEB, YKB — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tarim-kefalet-destek-programi.
-5. İletişim (doğrulanmış): Tarım Bakanlığı: çağrı merkezi 180 (Alo 180); Üniversiteler Mah. Dumlupınar Bulvarı, No: 161, 06800, Çankaya / Ankara (doğrulama: https://timer.tarimorman.gov.tr/Home/Hakkinda) · Aydın Tarım ve Orman İl Müdürlüğü: iletişim bilgisi için resmî sayfa: https://aydin.tarimorman.gov.tr/Iletisim
-6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Engeli değerlendirin: engel kalkmadan başvuru yapılamaz; durumunuzun şarta etkisini kurumla teyit edin.
+2. Hazırlık: yukarıdaki şartları ve belgeleri şimdiden toplayın.
+3. Başvuru kanalı: İL/İlçe Tarım ve Orman Müdürlüğü — https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#organik-tarim.
+4. İletişim (doğrulanmış): Tarım Bakanlığı: çağrı merkezi 180 (Alo 180); Üniversiteler Mah. Dumlupınar Bulvarı, No: 161, 06800, Çankaya / Ankara (doğrulama: https://timer.tarimorman.gov.tr/Home/Hakkinda) · Aydın Tarım ve Orman İl Müdürlüğü: iletişim bilgisi için resmî sayfa: https://aydin.tarimorman.gov.tr/Iletisim
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. TARIM KEFALET DESTEK PROGRAMI: “Tarım, ormancılık veya balıkçılık sektöründe faaliyet gösteren gerçek veya tüzel kişi işletme olmak” şartını sağlıyor musunuz?
-Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
+Profiliniz bu yanıt için yeterli; değişen bir bilgi olursa profil formunu güncelleyin.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

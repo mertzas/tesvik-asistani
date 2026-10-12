@@ -25,7 +25,7 @@ profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'İzmir', 'calisa
 10. [0] Girişimci Destek Programı — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-11. [0] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
+11. [0] KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
 12. [0] HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF (aktif=True)

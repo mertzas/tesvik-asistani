@@ -1,9 +1,9 @@
 <!-- persona: girisim | soru: BiGG'den ne kadar yatırım alabilirim, şartları neler ve şirket kurmadan başvurabilir miyim? -->
 **Kısa cevap:**
-- Şirket kurmadan başvuru: evet — kayda göre başvuran, hızlandırma programına kabul tarihinde bir şirkete ya da şahıs işletmesine ortak olmamalı (borsadaki hisseler ve kitle fonlaması payları hariç).
-- Öne çıkan: **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)** (TUBITAK) — belirlenemedi (açık çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); bu koşulu sağlamıyorsanız sizin için açık çağrı kayıtlarımızda yok); 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı yalnız şunlar için açık: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); yeni başvuranlar için açık çağrı kayıtlarımızda yok (kurum duyurularından takip edin).
-- Destek: bu programın tutarı kayıtta yok; önceki programın son bilinen tutarı (bilgi için): BiGG Fonu hisse karşılığı yatırım: 1.350.000 TL (2026); +600.000 TL GCİP ek yatırım imkânı (2025'ten itibaren) (son bilinen tutar, önceki program 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) kaydından.
-- Program: 1812 Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) ile girişimcilerin, teknoloji ve yenilik odaklı iş fikirlerini katma değer ve nitelikli istihdam yaratma potansiyeli yüksek teşebbüslere dönüştürebilmeleri için,
+- Öne çıkan: **KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi** (KOSGEB) — profilinize göre engel yok — şartları teyit edin; Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Destek: Ücretsiz eğitim (parasal destek değildir): geleneksel ve ileri girişimcilik eğitimleri ücretsiz ve aracısız verilir.
+- Program: KOSGEB'in girişimcilik eğitim platformu KOSGEB e-Akademi üzerinden geleneksel ve ileri girişimcilik eğitimleri online olarak alınabilir. Eğitimler ücretsiz ve aracısızdır; lms.kosgeb.gov.tr adresinden başvurulur. KOSGEB 2020 yılı itibarıyla yüz yüze eğitimden tamamen online eğitime geçmiştir. […]
+- Diğer seçenekler: 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) (şarta bağlı).
 - 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -17,9 +17,20 @@
 
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
+**KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB**
+- **Başvuru dönemi:** Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Kapsam:** yalnız: henüz şirket kurulmamış, şahıs işletmesi, limited şirket, anonim şirket, kooperatif
+- **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
+- **Destek:** Ücretsiz eğitim (parasal destek değildir): geleneksel ve ileri girişimcilik eğitimleri ücretsiz ve aracısız verilir.
+- **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.
+- **Kurallar (kayıttan):**
+  - Sınıf ortamındaki eski (2010-2020) uygulamalı girişimcilik eğitimi katılım belgeleri 31 Aralık 2020'ye kadar geçerliydi; bunlar artık geçerli değildir, online eğitim alınmalıdır. — resmî metin: “2010-2020 yılları arasında sınıf ortamındaki eğitim sonucunda alınan uygulamalı girişimcilik eğitimi katılım belgeleri, 31 Aralık 2020 tarihine kadar geçerliliğini koruyacak.”
+- **Başvuru:** KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi
+
 **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) — TUBITAK**
 - **Başvuru dönemi:** 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı: başvuruya açık — bu çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS) — ön kayıt son günü 17.11.2026 (36 gün kaldı); başvuru kapanışı 20.11.2026 (39 gün kaldı). Not: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS). (duyuru: https://tubitak.gov.tr/sites/default/files/2026-08/2026_1_BIGG_Tohum_Yatirim_Cagri_Duyuru_Metni.pdf, doğrulama 10.10.2026)
-- **Sizin için:** Belirlenemedi — açık çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); bu koşulu sağlamıyorsanız sizin için açık çağrı kayıtlarımızda yok; Sektörünüz (arge) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Şarta bağlı — açık çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); bu koşulu sağlamıyorsanız sizin için açık çağrı kayıtlarımızda yok; Sektörünüz (arge) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
 - **Son bilinen tutar (önceki program, bilgi için):** BiGG Fonu hisse karşılığı yatırım: 1.350.000 TL (2026); +600.000 TL GCİP ek yatırım imkânı (2025'ten itibaren) (son bilinen tutar, önceki program 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) kaydından; 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) için güncel tutarı kurumdan teyit edin)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
@@ -44,20 +55,20 @@ Sistemde kaydı olmayan, ayrıca bakabileceğiniz programlar (oran ve şartları
 Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1/2026'dan itibaren 10962 sayılı Karar kapsamındadır; 5447 (E-Turquality) ve 5448 sayılı Kararlar yürürlükten kaldırılmıştır. KOSGEB Ar-Ge/Ür-Ge/İnovasyon ve KOBİGEL programları yürürlükten kaldırılmıştır (kayıtları 'kapalı' olarak sistemde).
 
 ### 3. Darboğazlar ve Kritik Şartlar
+- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım):** Aşama 1 (hızlandırma programı) için: üniversitede ön lisans/lisans/yüksek lisans/doktora öğrencisi veya mezunu olmak; hızlandırma programına kabul tarihinde herhangi bir sermaye şirketi veya gerçek kişi işletmesinin ortağı olmamak (halka açık şirket payları ve kitle fonlaması payları hariç); daha önce Teknogirişim Sermayesi Desteği veya 1512/1812 2. Aşama desteği almamış olmak
 - **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım):** Başvuru yeri: PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına
 
 ### 4. Adım Adım Yol Haritası
-1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-2. Belgeler (1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)): Aşama 2 için (hızlandırma programını tamamladıktan sonra): iş planı (AGY112 taslağına göre) PRODİS'te hazırlanır ve uygulayıcı kuruluşa onaylatılır; 1812 Tahmini Maliyet Formları; Eş Yatırım Taahhütnamesi ve Eş Yatırım Bilgi Formu (eş yatırım varsa); ARDEB Muvafakatname Formu (hangi durumda gerektiği çağrı metninden teyit edilecek; gerekiyorsa hazırlandı).
-3. Başvuru kanalı: 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım): PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim.
-4. İletişim (doğrulanmış): TUBITAK: çağrı merkezi 444 66 90, genel merkez 0 312 298 10 00; Remzi Oğuz Arık Mah. Tunus Cd. No:80 06540 Çankaya / Ankara (doğrulama: https://tubitak.gov.tr/en/node/11658)
-5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
+2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+3. Başvuru adımları (KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): Ücretsiz ve aracısız verilen eğitimlere lms.kosgeb.gov.tr adresinden başvurulur.; Başvuru yeri: KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır..
+4. Başvuru kanalı (KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+5. İletişim (doğrulanmış): KOSGEB: çağrı merkezi 444 1 567, genel merkez 0 312 595 28 00; Hacı Bayram Mah. İstanbul Cad. No: 32 06050 Ulus / Altındağ / Ankara (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/iletisim) · KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
+6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. Başka bir şirkette ortaklığınız ya da şahıs işletmeniz var mı? — BiGG Yatırım (1812) hızlandırma programına kabul tarihinde ortaklığı olan kişi başvuramaz.
-2. 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım): “Hızlandırma programına kabul tarihinde herhangi bir sermaye şirketinin ya da şahıs işletmesinin ortağı olmamak (borsadaki hisseler ve kitle fonlaması payları sayılmaz)” şartını sağlıyor musunuz?
-3. 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım): “Aşama 1 (hızlandırma programı) için: üniversitede ön lisans/lisans/yüksek lisans/doktora öğrencisi veya mezunu olmak” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

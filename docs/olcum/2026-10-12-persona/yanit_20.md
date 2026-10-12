@@ -1,8 +1,8 @@
 <!-- persona: izmir_zeytinyagi | soru: Zeytinyağımızı kendi markamızla Almanya'ya ihraç etmek istiyoruz; hangi destekler var? -->
 **Kısa cevap:**
-- Öne çıkan: **Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12)** (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Ödeme belgesi tarihinden itibaren 6 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Öne çıkan: **Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12)** (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Şirket ve marka alım desteği (m.9) 1-4. fıkraları kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler bu destekten yararlanamaz; Ödeme belgesi tarihinden itibaren 6 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: %50; 2026'da birime bağlı ülke başına yıllık 12.329.397 TL, marka tesciline bağlı yıllık 19.728.672 TL; en fazla 4 yıl
-- Diğer seçenekler: Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (profilinize göre engel yok — şartları teyit edin); Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (belirlenemedi); E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) (belirlenemedi).
+- Diğer seçenekler: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (profilinize göre engel yok — şartları teyit edin); Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (profilinize göre engel yok — şartları teyit edin); E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) (şarta bağlı).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 10.41)
@@ -15,7 +15,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12) — Ticaret Bakanlığı**
-- **Başvuru dönemi:** Ödeme belgesi tarihinden itibaren 6 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Ödeme belgesi tarihinden itibaren 6 ay içinde
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (ihracat) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
 - **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** reklam, tanıtım ve marka, ihracat
@@ -32,24 +32,9 @@
   - ve 2 şart daha: panelde programın Kontrol listesi'nde
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12
 
-**Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (imalat) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman, ihracat.
-- **Karşıladığı ihtiyaç:** reklam, tanıtım ve marka, ihracat
-- **Destek:** Hibe değil kredi: marka geliştirme/tutundurma harcamaları ile yurt dışında yerleşik marka ve ilgili mağaza, tesis alım bedelleri finanse edilir. Firma limitleri Eximbank'ça firma bazında belirlenir; faiz/kar payı vade, tutar ve para birimine göre belirlenir.
-- **Profilinize göre sağlanan şartlar:** ihracata yönelik üretim yapan imalatçı (NACE 10.41, hedefinizde ihracat)
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ Türkiye'de yerleşik döviz kazandırıcı hizmetler sektöründe faaliyet gösteren firmalar da yararlanır. — resmî metin: “Türkiye’de yerleşik döviz kazandırıcı hizmetler sektöründe faaliyet gösteren firmalar bu programdan yararlanabilecektir.”
-  - ☐ Marka alımında markanın bilinirliği yeterli olmalı; markalı ürünler yurt içinde üretilmeli ve ihraç edilmelidir.
-- **Kurallar (kayıttan):**
-  - İhracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
-  - Teminat: Kesin Teminat Mektubu. — resmî metin: “Kesin Teminat Mektubu, karşılığında kullandırılır.”
-  - Firma limiti Eximbank'ın tahsis çalışmasıyla firma bazında belirlenir. — resmî metin: “Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.”
-- **Başvuru:** Türk Eximbank (kaynak sayfada başvuru kanalı ayrıca belirtilmemiştir; Kredi Talep Formu ve belgeler Bankaya sunulur) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi
-
 **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) — Ticaret Bakanlığı**
-- **Başvuru dönemi:** Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Belirlenemedi — profilde karşılığı olmayan kilit şart: E-İhracat Konsorsiyumu bünyesindeyseniz, konsorsiyumun satış yaptığı ülkelerdeki yurt dışı pazaryerlerinde bu destek için başvuru yapamazsınız.
+- **Başvuru dönemi:** Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (ihracat) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
 - **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** reklam, tanıtım ve marka, ihracat
 - **Destek:** %50 (hedef ülkelerde %70); 2026 yıllık üst limit şirketler için 36.993.646 TL; pazaryeri başına 3 yıl
@@ -66,59 +51,48 @@
   - Reklam giderleri yurt dışı pazaryerlerinde verilen dijital reklamlara ait olmalı ve reklamdan dönen toplam satışın %20'sini aşmamalı — resmî metin: “yurt dışı pazaryerleri üzerinden gerçekleştirdiği dijital reklam üzerinden dönen toplam satışlarının %20’sini aşmayan dijital pazaryeri tanıtım giderleri %50 oranında”
 - **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4
 
-**E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) — Ticaret Bakanlığı**
-- **Başvuru dönemi:** Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Belirlenemedi — profilde karşılığı olmayan kilit şart: önceki yıl en az 500.000 USD ihracat.
-- **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
+**Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) — Türk Eximbank**
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (imalat) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman, ihracat.
 - **Karşıladığı ihtiyaç:** reklam, tanıtım ve marka, ihracat
-- **Destek:** %50 (hedef ülkelerde %70); 2026 perakende e-ticaret siteleri için yıllık 123.315.792 TL; ülke başına 3 yıl
-- **Hesaplama:** Uygun pazarlama giderinin %50'si (hedef ülkede %70); statü sahibi perakende sitelerde 2026 yıllık en çok 123.315.792 TL
-- **Profilinize göre sağlanan şartlar:** şirket statüsü (limited şirket)
+- **Destek:** Hibe değil kredi: marka geliştirme/tutundurma harcamaları ile yurt dışında yerleşik marka ve ilgili mağaza, tesis alım bedelleri finanse edilir. Firma limitleri Eximbank'ça firma bazında belirlenir; faiz/kar payı vade, tutar ve para birimine göre belirlenir.
+- **Profilinize göre sağlanan şartlar:** ihracata yönelik üretim yapan imalatçı (NACE 10.41, hedefinizde ihracat)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ önceki yıl en az 500.000 USD ihracat
-  - ☐ Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır) — kurumdan teyit edin
-  - ☐ Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru — kurumdan teyit edin
-  - ☐ Desteklenen ürünler Türk ürünü olmalı (ürün belgesi, üretim yeri ve marka ayrıntılarını E-İhracat Genelgesi'nden teyit edin) — resmî metin: “pazaryerlerinde Türk ürünlerinin ve markalarının çevrim”
-  - ☐ Perakende E-Ticaret Sitesi (ya da pazaryeri/B2B/konsorsiyum) statüsü alınmış olmalı — resmî metin: “şirketler, E-İhracat Konsorsiyumları, perakende e-ticaret siteleri, pazaryerleri ve B2B platformlarını,”
-  - ☐ Kendi markasına ait e-ticaret sitesi üzerinden perakende satış yapmak;
-  - ve 1 şart daha: panelde programın Kontrol listesi'nde
+  - ☐ Türkiye'de yerleşik döviz kazandırıcı hizmetler sektöründe faaliyet gösteren firmalar da yararlanır. — resmî metin: “Türkiye’de yerleşik döviz kazandırıcı hizmetler sektöründe faaliyet gösteren firmalar bu programdan yararlanabilecektir.”
+  - ☐ Marka alımında markanın bilinirliği yeterli olmalı; markalı ürünler yurt içinde üretilmeli ve ihraç edilmelidir.
 - **Kurallar (kayıttan):**
-  - Giderlerim Bakanlıkça belirlenen e-ihracat tanıtım/pazarlama faaliyetleri listesinde yer alıyor (dijital pazaryeri reklam giderleri bu kalemin dışındadır) — resmî metin: “Bakanlıkça belirlenen diğer pazarlama faaliyetlerine ilişkin giderleri %50 oranında ve her ülke için 3 (üç) yıl süresince”
-- **Başvuru:** Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. İlk başvuruda EK-Şirket Başvuru Formu verilir. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-5
+  - İhracat veya döviz kazandırıcı hizmet taahhüdü, kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
+  - Teminat: Kesin Teminat Mektubu. — resmî metin: “Kesin Teminat Mektubu, karşılığında kullandırılır.”
+  - Firma limiti Eximbank'ın tahsis çalışmasıyla firma bazında belirlenir. — resmî metin: “Firma limitleri Bankamızca yapılacak tahsis çalışması kapsamında firma bazında belirlenmektedir.”
+- **Başvuru:** Türk Eximbank (kaynak sayfada başvuru kanalı ayrıca belirtilmemiştir; Kredi Talep Formu ve belgeler Bankaya sunulur) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Marka ve TURQUALITY® Desteği (5973 sayılı Karar m.17) (Ticaret Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Başvuru şartı: son 3 yıllık ortalama ihracatın en az 3.000.000 ABD Doları olması.); Çağrı yoktur; kapsama alınma başvurusu sistem üzerinden Bakanlığa yapılır. Ödeme başvurusu, ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- TURQUALITY® Tanıtım Projesi Desteği (5973 sayılı Karar m.27) (Ticaret Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Projeler, bütçelerini içeren proje ile TİM/ihracatçı birliklerince doğrudan Bakanlığa sistem üzerinden sunulur ve Bakanlıkça sistem üzerinden onaylanmalıdır.); Çağrı yoktur; TİM/ihracatçı birlikleri bütçeli projeleriyle doğrudan Bakanlığa sistem üzerinden müracaat eder ve proje Bakanlıkça sistem üzerinden onaylanır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Hizmet Sektörleri Markalaşma Programı — Markalaşma Programı Desteği (10962 sayılı Karar m.33) (Ticaret Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Son üç takvim yılı gelirlerinin ortalaması, yararlanıcı ve organik bağı olan yurt içindeki şirket için toplamda en az 1.500.000 ABD doları olmalıdır.); Çağrı yoktur; önce Markalaşma Programı kapsama alım başvurusu (EK-32 belgeleri) yapılır, ardından ön inceleme çalışması ve Stratejik İş Planı (SİP) süreci işler; destek ödemesi SİP onayından sonra yapılır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: önceki yıl en az 500.000 USD ihracat); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
+- Marka ve TURQUALITY® Desteği (5973 sayılı Karar m.17) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Başvuru şartı: son 3 yıllık ortalama ihracatın en az 3.000.000 ABD Doları olması.); Çağrı yoktur; kapsama alınma başvurusu sistem üzerinden Bakanlığa yapılır. Ödeme başvurusu, ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde
+- TURQUALITY® Tanıtım Projesi Desteği (5973 sayılı Karar m.27) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Projeler, bütçelerini içeren proje ile TİM/ihracatçı birliklerince doğrudan Bakanlığa sistem üzerinden sunulur ve Bakanlıkça sistem üzerinden onaylanmalıdır.); Çağrı yoktur; TİM/ihracatçı birlikleri bütçeli projeleriyle doğrudan Bakanlığa sistem üzerinden müracaat eder ve proje Bakanlıkça sistem üzerinden onaylanır.
 
 **Birlikte kullanım (resmî metinden):**
 - [Ticaret Bakanlığı] Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı bilgi sayılır ve müeyyide uygulanır) (resmî metin: "Aynı harcama kalemi için, yararlanıcıların bu Karar dışında başka bir mevzuat/program kapsamında destek aldığının tespiti halinde, bu durum yanıltıcı bilgi ve belge sunulması olarak değerlendirilir")
 - [Ticaret Bakanlığı] Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) (resmî metin: "bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir")
-- [Ticaret Bakanlığı] E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) (resmî metin: "bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir")
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **İhracatçı birliği üyeliği** (Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4), E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5)): Ürün grubunuzun ihracatçı birliğine üye olun; 5973 ve 5986 başvuruları üyesi olunan birliğin genel sekreterliğine yapılır.
-- **Ticaret Bakanlığı DYS kaydı** (Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4), E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5)): Destek Yönetim Sistemi'ne (DYS) şirket kaydı; MERSİS bilgileri ve NACE kodu güncel olmalı.
+- **İhracatçı birliği üyeliği** (Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Ürün grubunuzun ihracatçı birliğine üye olun; 5973 ve 5986 başvuruları üyesi olunan birliğin genel sekreterliğine yapılır.
+- **Ticaret Bakanlığı DYS kaydı** (Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12), Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Destek Yönetim Sistemi'ne (DYS) şirket kaydı; MERSİS bilgileri ve NACE kodu güncel olmalı.
 - **Yurt dışı marka tescili (Madrid Sistemi)** (Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Madrid Sistemi'ne taraf en az bir ülkede marka tescili; masrafın bir kısmı 5973 m.4 Yurt Dışı Marka Tescil Desteği ile karşılanabilir.
-- **Harcamadan önce ön onay** (Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4), E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5)): Bu programlarda ön onay tarihinden önce yapılan harcama desteklenmez; harcamayı planlamadan başvurun.
+- **Harcamadan önce ön onay** (Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4)): Bu programlarda ön onay tarihinden önce yapılan harcama desteklenmez; harcamayı planlamadan başvurun.
 - **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4):** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru
 - **Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4):** Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır)
-- **E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5):** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru
-- **E-İhracat Tanıtım Desteği — Perakende E-Ticaret Sitesi Statüsü (5986 sayılı Karar m.5):** Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır)
 
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: İhracatçı birliği üyeliği; Ticaret Bakanlığı DYS kaydı; Yurt dışı marka tescili (Madrid Sistemi); Harcamadan önce ön onay.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12)): Tanıtım, sponsorluk ya da PR sözleşmesi (yeminli tercümeli); Fatura (faturalandırma özeti niteliğindeki ekstre kabul edilir); Ödeme belgeleri (banka dekontu, kredi kartı ekstresi, hesap dökümü); Tanıtım malzemeleri ve reklam görselleri; Dijital reklamlarda yayın ekran görüntüleri; arama motoru ve sosyal medya reklamlarında tıklama sayısını ve tıklanan ülkeleri gösteren işlem raporu; Tanıtım yapılacak ülkede kapsama alınmış yurt dışı birim yoksa: yurt içi marka tescil belgesi ve tanıtım ülkesindeki marka tescil belgesi ya da tescil başvuru belgesi.
-4. Başvuru kanalı: Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12): Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12 | Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı): Türk Eximbank (kaynak sayfada başvuru kanalı ayrıca belirtilmemiştir; Kredi Talep Formu ve belgeler Bankaya sunulur) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/marka-kredisi | Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4): Önce ön onay, sonra ödeme başvurusu; ikisi de üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden. — https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4.
+4. Başvuru kanalı (Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12)): Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 5. İletişim (doğrulanmış): Ticaret Bakanlığı: çağrı merkezi 444 8 482, genel merkez 0 312 204 75 00; Söğütözü Mah. Nizami Gencevi Cad. No:63/1, 06530 Çankaya / Ankara (doğrulama: https://ticaret.gov.tr/iletisim)
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12): “Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)” şartını sağlıyor musunuz?
-2. Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12): “Tanıtımı yapılan ürünler Türkiye'de üretilmiş olmalı” şartını sağlıyor musunuz?
-3. Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı): “Türkiye'de yerleşik döviz kazandırıcı hizmetler sektöründe faaliyet gösteren firmalar da yararlanır.” şartını sağlıyor musunuz?
-Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
+Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

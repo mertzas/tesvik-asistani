@@ -49,6 +49,6 @@ profil: {'sektor': 'imalat', 'bolge': 'Ankara', 'calisan_sayisi': 6, 'yillik_cir
 19. [0] 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı — TUBITAK (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-20. [0] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
+20. [0] KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.

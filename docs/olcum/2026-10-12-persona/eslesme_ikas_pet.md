@@ -43,6 +43,6 @@ profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'İstanbul', 'cal
 19. [0] İş Sağlığı ve Güvenliği Hizmetlerinin Desteklenmesi — 10'dan Az Çalışanlı Tehlikeli/Çok Tehlikeli İşyerlerine Ödeme (6331 sayılı Kanun m.7) — SGK / İŞKUR (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-20. [0] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)
+20. [0] KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.

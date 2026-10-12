@@ -817,6 +817,21 @@ def _profilden_karsilanan(metin: str, profil) -> str | None:
     tur = getattr(profil, "sirket_turu", None)
     nace = (getattr(profil, "nace_kodu", None) or "").replace("C.", "")
     olcek = kobi_sinifi(getattr(profil, "calisan_sayisi", None), getattr(profil, "yillik_ciro", None))
+    from app.matching import _CALISAN_EN_AZ, _sayi
+    n = getattr(profil, "calisan_sayisi", None)
+    m_calisan = _CALISAN_EN_AZ.search(metin)
+    if m_calisan and n is not None and n >= _sayi(m_calisan.group(1)):
+        # "İşverenin en az beş sigortalı çalışanı olmalıdır": profilde 9 çalışan → sağlanır (persona denemesi 2026-10-12)
+        return f"çalışan sayısı şartı (en az {_sayi(m_calisan.group(1))}; profilinizde {n})"
+    kurulus = getattr(profil, "kurulus_tarihi", None)
+    m_yas = re.search(r"\b0\s*-\s*(\d)\s*yaş", metin)
+    if m_yas and kurulus is not None:
+        from datetime import date
+        yil = (date.today() - kurulus).days / 365.25
+        if yil <= int(m_yas.group(1)):
+            # "İş Kurma Desteği: ... 0-1 yaş işletme": şirket kurarsam varsayımında yeni şirket (persona denemesi 2026-10-12)
+            return (f"işletme yaşı şartı (0-{m_yas.group(1)} yaş; "
+                    + ("kurulacak şirket" if getattr(profil, "_varsayim", None) else f"kuruluş {kurulus:%d.%m.%Y}") + ")")
     hedefler = {h.lower() for h in getattr(profil, "hedefler", None) or []}
     if re.search(r"ihracata yönelik mal üreten imalatçı", metin, re.I) and nace[:2].isdigit() \
             and 10 <= int(nace[:2]) <= 33 and ("ihracat" in hedefler or getattr(profil, "sektor", None) == "ihracat"):
@@ -828,8 +843,10 @@ def _profilden_karsilanan(metin: str, profil) -> str | None:
         return f"şirket/kooperatif statüsü ({SIRKET_TURU_AD[tur]})"
     if _KILIT.search(metin) or re.search(r"\d{2}\.\d{2}\.\d{4}|sonradan", metin):
         return None
+    # Şartta sayısal eşik de varsa ("Ar-Ge merkezi: ... en az elli tam zaman eşdeğer Ar-Ge personeli") sermaye şirketi
+    # olmak şartı karşılamaz (hakem bulgusu 2026-10-12: Ar-Ge merkezi şartı anonim şirkette "sağlandı" sayılıyordu).
     if re.search(r"sermaye şirket", metin, re.I) and tur in ("limited", "anonim") and not re.search(
-            r"KOB[İI]", metin):
+            r"KOB[İI]|\ben az\b|\d", metin):
         return f"sermaye şirketi ({SIRKET_TURU_AD[tur]})"
     if _KOBI.search(metin) and olcek.kesin and olcek.sinif in ("mikro", "kucuk", "orta") and not re.search(
             r"sermaye şirket|yerleşik|imalat|sektör", metin, re.I):
@@ -1026,7 +1043,11 @@ def degerlendir(kayitlar: list, profil, notlar: dict[int, str], eslesme: dict[in
                 d.teyit.append(_madde_metni(m))
                 # İhracatçı birliğine üyelik başvuranın tamamlayabileceği bir hazırlık adımıdır (aidat + kayıt), programı
                 # kilitlemez; şartlı gösterilir (hakem bulgusu 2026-10-12: "idari adım kilit şart sayılmış").
-                if _KILIT.search(m["metin"]) and not re.search(r"ihracatçı birliğine üye", m["metin"], re.I):
+                # Dışlama şartı ("konsorsiyum üyesi olmamak", "... yararlanamaz") varsayılan olarak sağlanır; kilit değil
+                # (hakem bulgusu 2026-10-12: sipariş karşılama kartında "kilit şart" diye gösteriliyordu).
+                if _KILIT.search(m["metin"]) and not re.search(r"ihracatçı birliğine üye", m["metin"], re.I) \
+                        and not re.search(r"olmamak|olmaması|olmamalı|yararlanamaz|kapsam dışı|desteklenmez|"
+                                          r"başvuramaz|faydalanamaz|yapamaz|bünyesindeyseniz", m["metin"], re.I):
                     kilit.append(_kisalt(_temiz(m["metin"]), 150))
             d.saglanan = list(dict.fromkeys(d.saglanan))
             madde_norm = {_norm(m["metin"]) for m in _maddeler(t)}
@@ -1072,9 +1093,17 @@ def degerlendir(kayitlar: list, profil, notlar: dict[int, str], eslesme: dict[in
                 d.karar = "sartli"
                 if t.id in eslesme and not not_9903:
                     d.gerekce += [g for g in eslesme[t.id].gerekce if g][:2]
-                    d.gerekce += [f"teyit: {x}" for x in eslesme[t.id].eksik_kriterler if x][:2]
+                    # Soru bir ihtiyacı (istihdam, ihracat) açıkça soruyorsa "hedeflerinizde ... yok" notu yanıtla çelişir.
+                    sorulanlar = set(soru_ihtiyaclari(soru))
+                    d.gerekce += [f"teyit: {x}" for x in eslesme[t.id].eksik_kriterler if x and not (
+                        sorulanlar and "hedeflerinizde" in x)][:2]
                 elif not not_9903:
-                    d.gerekce.append("profilinizdeki sektör ve hedeflerle doğrudan örtüşmüyor; kapsamı kurumdan "
+                    _sorulan = set(soru_ihtiyaclari(soru)) & program_ihtiyaclari(t)
+                    if _sorulan:
+                        d.gerekce.append("sorunuzdaki ihtiyaca yönelik (" + ", ".join(
+                            IHTIYAC_ADLARI[x] for x in sorted(_sorulan)) + "); şartları kurumdan teyit edin")
+                    else:
+                        d.gerekce.append("profilinizdeki sektör ve hedeflerle doğrudan örtüşmüyor; kapsamı kurumdan "
                                      "teyit edin")
             if not_9903 and d.karar == "sartli":
                 d.gerekce.insert(0, "Karar metnine göre ön değerlendirme: " + _kisalt(
@@ -1215,7 +1244,8 @@ def _uygun_hale_gelmek(d: Degerlendirme) -> list[str]:
                      "başvurulamaz. Kalem için kayıtlarımızdaki kredi ve kefalet seçenekleri aşağıda")
     if not oneri and d.guncel_surum:
         oneri.append(f"Bu programın güncel sürümü etkin: {d.guncel_surum}; eski sürümün yeni dönemini beklemeyin")
-    if not oneri and re.search(r"mülga|yürürlükten kalk", (d.tesvik.durum_notu or "") + (d.tesvik.tesvil_tutari or "")):
+    if not oneri and re.search(r"mülga|yürürlükten kalk|sona erdi|kaldırıldı|artık ödenmiyor",
+                               (d.tesvik.durum_notu or "") + (d.tesvik.tesvil_tutari or "") + (d.tesvik.baslik or "")):
         oneri.append("Program yürürlükten kalktı; sonraki dönemi beklemeyin. Yerine geçen düzenleme bu yanıtta ayrıca "
                      "listelendi")
     if not oneri and d.karar == "kapali":
@@ -1575,7 +1605,8 @@ def tarim_odeme_satiri(soru: str, profil) -> str:
     notlar = [u for u in h.uyarilar if "fındık üretimine izin" in u or "Diğer ürünler" in u]
     return (f"Ürününüz ({urun}) ve arazinize göre 2026 doğrudan ödeme hesabı (destek katsayı değeri "
             f"{_tl(T.KATSAYI_BIRIM_TL)} TL/da): " + "; ".join(parca) + "." + (" " + " ".join(notlar) if notlar else "")
-            + " Sertifika, fidan, iyi tarım ve sigorta gibi ek kalemler şarta bağlıdır (aşağıdaki kartlarda).")
+            + " Sertifika, fidan, iyi tarım, gübre ve sigorta (TARSİM) gibi ek kalemler şarta bağlıdır; ilgili programı "
+              "adıyla sorabilirsiniz.")
 
 
 _TARIM_KATEGORI_SORU = {"sera": r"sera|ortu|tunel|ortualti", "hayvancilik": r"hayvan|buzagi|kuzu|sut|ari\b|kovan",
@@ -1775,6 +1806,9 @@ def varsayimsal_profil(soru: str, profil, zorla: bool = False):
     alanlar = {c.name: getattr(profil, c.name, None) for c in FinancialProfile.__table__.columns
                if c.name not in ("id", "org_id", "created_at", "updated_at")}
     alanlar["sirket_turu"] = tur
+    if getattr(profil, "sirket_turu", None) in (None, "yok"):
+        from datetime import date
+        alanlar["kurulus_tarihi"] = date.today()   # kurulacak şirket: 0 yaşında
     yeni = FinancialProfile(**alanlar)
     yeni._varsayim = (
         f"sorunuz şirket kurduğunuz durumu soruyor; değerlendirme {SIRKET_TURU_AD[tur]} varsayımıyla yapıldı (bugün "
@@ -1950,6 +1984,17 @@ def hibe_durumu(soru: str, ds: list[Degerlendirme], gosterilen: list[Degerlendir
             + "). Aşağıdaki açık seçenekler kredi, kefalet ya da diğer destek türleridir.")
 
 
+def _soruya_en_ilgili(maddeler: list[str], soru: str) -> str:
+    """Teyit maddelerinden soruyla en çok kök paylaşan (ör. "Ar-Ge merkezi" sorusunda "Ar-Ge merkezi: en az elli ...
+    personel"); örtüşme yoksa ilk madde (hakem bulgusu 2026-10-12: tasarım merkezi şartı gösteriliyordu)."""
+    def _k(metin: str) -> set[str]:
+        metin = re.sub(r"\bar[- ]?ge\b", "arge", _katla(metin))   # "Ar-Ge" tek kök
+        return {k[:5] for k in re.findall(r"[a-z]{4,}", metin) if k not in _DURAK}
+    kokler = _k(soru)
+    puan = [len(kokler & _k(m.split(" — ")[0])) for m in maddeler]
+    return maddeler[max(range(len(maddeler)), key=lambda i: (puan[i], -i))] if maddeler else ""
+
+
 def _kredi_mi(t) -> bool:
     """Kredi/kefalet ürünü (hibe değil): limit "destek" diye sunulmaz."""
     from app.matching import _kredi_kefaleti_mi
@@ -2084,6 +2129,13 @@ def kisa_cevap(niyet: set[str], odak: list[Degerlendirme], adaylar: list[Degerle
         return satir
     ilk = adaylar[0]
     sorulan = soru_ihtiyaclari(soru)
+    if "tanitim" in sorulan and "ihracat" not in sorulan:
+        from app.matching import ihracat_odakli
+        if ihracat_odakli(ilk.tesvik):
+            # Hakem bulgusu 2026-10-12: "online kahve satışı için dijital pazarlama" sorusuna yurt dışı tanıtım desteği
+            # sınırı söylenmeden veriliyordu.
+            satir.append("- Yurt içine yönelik reklam ve pazarlama giderleri için kayıtlı doğrudan bir destek yok; "
+                         "aşağıdaki programlar yalnız yurt dışına (ihracata) yönelik tanıtımı destekler.")
     if sorulan and not (program_ihtiyaclari(ilk.tesvik) & set(sorulan)):
         # Kapsam ölçümü 2026-10-12: çiftçinin Ar-Ge sorusunda ilgisiz kira/sigorta programı "Öne çıkan" diye veriliyordu.
         satir.append(f"- Sorduğunuz {', '.join(IHTIYAC_ADLARI[x] for x in sorulan)} için profilinize açık bir program "
@@ -2093,7 +2145,7 @@ def kisa_cevap(niyet: set[str], odak: list[Degerlendirme], adaylar: list[Degerle
         if ek:
             satir.append(f"- {ek}")
     hibe_degil = _hibe_degil_notu(soru, ilk.tesvik)
-    bascilik = (ilk.teyit[0].split(" — ")[0] if ilk.karar == "sartli" and ilk.teyit
+    bascilik = (_soruya_en_ilgili(ilk.teyit, soru).split(" — ")[0] if ilk.karar == "sartli" and ilk.teyit
                 and not ilk.teyit[0].startswith(SART_YOK_TEYIT) else "")
     satir.append(f"- Öne çıkan: **{ilk.tesvik.baslik}** ({ilk.tesvik.kurum}){hibe_degil} — "
                  f"{karar_etiketi(ilk).lower()}"
@@ -2142,6 +2194,15 @@ def kisa_cevap(niyet: set[str], odak: list[Degerlendirme], adaylar: list[Degerle
     if dogrulanamayan:
         satir.append(f"- Sorudaki {', '.join(dogrulanamayan)} tutarını güncel kayıtlarda bulamadım; geçerli tutarlar "
                      "aşağıdaki kartlardadır.")
+    if sorulan and elenen and (not (program_ihtiyaclari(ilk.tesvik) & {sorulan[0]}) or _kredi_mi(ilk.tesvik)):
+        # Persona denemesi 2026-10-12: şahıs işletmesinin "Etsy'den yurt dışı satış" sorusunda asıl program (5986
+        # E-İhracat) şirket şartıyla kapalıydı ama yanıt onu hiç anmıyordu.
+        ilgili = [d for d in elenen if d.karar == "uygun_degil" and program_ihtiyaclari(d.tesvik) & {sorulan[0]}
+                  and not (_kredi_mi(ilk.tesvik) and _kredi_mi(d.tesvik))]
+        if ilgili:
+            d = ilgili[0]
+            satir.append(f"- Sorunuza doğrudan yönelik ama size kapalı: {d.tesvik.baslik} — "
+                         f"{_kisalt(_birlestir(d.gerekce[:1]), 220)}.")
     if elenen:
         satir.append(f"- {len(elenen)} program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).")
     return satir
@@ -2221,6 +2282,16 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
         for t in zorunlu_adaylar(profil, tum) + kurulus_adaylari(profil, soru, tum):
             if t.id not in {x.id for x in kayitlar}:
                 kayitlar.append(t)
+        if getattr(profil, "sirket_turu", None) in ("sahis", "yok") and not adi_gecen_kayit:
+            ilk_ihtiyac = (soru_ihtiyaclari(soru) or [None])[0]
+            if ilk_ihtiyac:
+                from app.matching import uygunluk_engeli as _ue
+                kapali = [t for t in tum if t.aktif_mi is not False and ilk_ihtiyac in program_ihtiyaclari(t)
+                          and not _kredi_mi(t) and t.id not in {x.id for x in kayitlar}
+                          and (_ue(t, profil) or "").startswith("yalnızca")]
+                # en genel (şemsiye) program önce: başlığı "Destekleri" ile biten ya da en kısa başlık
+                kapali.sort(key=lambda t: (not re.search(r"Destekleri\b", t.baslik or ""), len(t.baslik or "")))
+                kayitlar += kapali[:1]
         if getattr(profil, "_varsayim", None) and re.search(r"bigg|1812|1512", _katla(soru)):
             # Varsayımsal şirket BiGG'in ortaklık yasağıyla çelişir: kayıt değerlendirmeye eklenir (kartta "uygun değil"
             # gerekçesiyle görünür) ve kısa cevapta uyarılır (hakem bulgusu 2026-10-12, Rekortiv).
@@ -2231,10 +2302,13 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
                     yasak = next((m["metin"] for m in _maddeler(t) if m["tur"] == "sart"
                                   and re.search(r"ortağı olmamak", m["metin"])), "")
                     if yasak:
+                        asama = next((m["metin"] for m in _maddeler(t) if re.search(r"Mükemmeliyet Mührü",
+                                                                                      m["metin"])), "")
                         profil._varsayim_uyari = (
                             f"{t.baslik} için kayıttaki şart: “{_kisalt(_temiz(yasak), 220)}”. Şirketi BiGG "
-                            "hızlandırma programına kabulden önce kurarsanız bu şartı kaybedebilirsiniz; sıralamayı "
-                            "uygulayıcı kuruluşla netleştirin.")
+                            "hızlandırma programına kabulden önce kurarsanız bu şartı kaybedebilirsiniz"
+                            + (f"; kayda göre şirket sonraki aşamada kurulur: “{_kisalt(_temiz(asama), 200)}”" if asama
+                               else "") + ". Aşağıdaki değerlendirme şirket kurduktan sonraki durum içindir.")
                     break
         if odak_kayit and profil is not None:
             from app.rag import profil_9903_degerlendirmesi
@@ -2279,9 +2353,14 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
             _soru_ih = set(soru_ihtiyaclari(soru))
             odak.sort(key=lambda d: (
                 d.karar in ("kapali", "uygun_degil"),
+                # Kurulu işletmenin kurum sorusunda girişimcilik eğitimi gibi girişim programları geride
+                getattr(profil, "sirket_turu", None) not in (None, "yok") and program_ihtiyaclari(d.tesvik) == {"girisim"}
+                and "girisim" not in _soru_ih,
                 d.karar == "belirlenemedi" and any(g.startswith(KILIT_ONEKI)
                                                    for g in d.gerekce),
                 bool(_soru_ih) and not (program_ihtiyaclari(d.tesvik) & _soru_ih),
+                # Ücretsiz eğitim gibi parasal olmayan program, aynı kurumun parasal desteğinin arkasında
+                bool(re.search(r"parasal destek değil", d.tesvik.tesvil_tutari or "")),
                 bool(re.search(r"REFİNANSMAN|Refinansman|İSTİHDAM KORUMA|İstihdamı Koruma", d.tesvik.baslik or ""))
                 and not re.search(r"refinans|yapilandir|istihdami? koru|zor donem|kriz", _katla(soru)),
                 -(eslesme[d.tesvik.id].siralama if d.tesvik.id in eslesme else 0.0),
@@ -2381,9 +2460,13 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
             # Vergi indirimi/istisnası soruda vergi geçmiyorsa hibe ve teşvik programlarının arkasında gelir.
             kredi_istenmedi = kredi_istenmedi or (not vergi_sorusu and bool(_VERGI_PROGRAMI.search(d.tesvik.baslik or "")))
             pazaryeri_disi = pazaryeri_sorusu and not _PAZARYERI_PROGRAM.search(d.tesvik.baslik or "")
+            girisim_disi = (getattr(profil, "sirket_turu", None) not in (None, "yok") and p_ihtiyac == {"girisim"}
+                            and "girisim" not in soru_ihtiyac_seti)
             return (not ozel, kurulu_ister, d.tesvik.id not in kurulus_idleri, donem_sira[d.donem] == 2,
-                    -_ad_eslesmesi(d.tesvik), ihtiyac_disi, kilitli, pazaryeri_disi, -len(p_ihtiyac & soru_ihtiyac_seti),
-                    ilk_ihtiyac, kredi_istenmedi, _buyuk_olcekli(d.tesvik, profil), _dar_kitle(d.tesvik),
+                    -_ad_eslesmesi(d.tesvik), ihtiyac_disi, girisim_disi, _dar_kitle(d.tesvik) and not kitle_soruda,
+                    kilitli,
+                    pazaryeri_disi, -len(p_ihtiyac & soru_ihtiyac_seti), ilk_ihtiyac, kredi_istenmedi,
+                    _buyuk_olcekli(d.tesvik, profil), _dar_kitle(d.tesvik),
                     not (p_ihtiyac & ihtiyac), d.karar != "sartli", -(e.siralama if e else 0.0),
                     arama_sirasi.get(d.tesvik.id, 999))
         ana.sort(key=_ilgi)

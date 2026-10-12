@@ -51,8 +51,8 @@
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
 - **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
 - **Destek:** Destek oranı tek ortaklı: KOBİ %75 / büyük %60; çok ortaklı: KOBİ %60 / büyük %40 (bütçe üst limitleri çağrıda)
-- **Profilinize göre sağlanan şartlar:** sermaye şirketi (anonim şirket)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ 1509 Uluslararası Sanayi Ar-Ge Destek Programına Türkiye’de yerleşik sermaye şirketleri başvuru yapabilmektedir. — resmî metin: “1509 Uluslararası Sanayi Ar-Ge Destek Programına Türkiye’de yerleşik sermaye şirketleri başvuru yapabilmektedir.”
   - ☐ Proje ekibinde başvuru tarihinde proje konusuyla ilgili en az bir lisans mezunu bulunmalı — resmî metin: “Proje ekibinde başvuru tarihi itibariyle proje konusu ile ilgili lisans mezunu en az bir kişinin bulunması gerekmektedir.”
 - **Kurallar (kayıttan):**
   - Aynı uluslararası projede birden fazla Türk ortak varsa tek bir ortak 1509 başvurusu yapılır — resmî metin: “Türk kuruluşlar, ortak proje önerisi hazırlayarak tek bir 1509 proje başvurusu yaparlar.”
@@ -74,7 +74,7 @@
 2. Ön kayıt: 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı — son gün 09.11.2026.
 3. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 4. Belgeler (1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı): PRODİS sistemi üzerinden proje öneri formu; Şirket kuruluş/faaliyet belgeleri.
-5. Başvuru kanalı: 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi | 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi | 1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı: Yalnızca elektronik ortamda PRODİS (https://eteydeb.tubitak.gov.tr); başvurular yıl boyunca açık — https://www.tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1509-tubitak-uluslararasi-sanayi-ar-ge-projeleri-destekleme-programi.
+5. Başvuru kanalı (1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı): Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 6. İletişim (doğrulanmış): TUBITAK: çağrı merkezi 444 66 90, genel merkez 0 312 298 10 00; Remzi Oğuz Arık Mah. Tunus Cd. No:80 06540 Çankaya / Ankara (doğrulama: https://tubitak.gov.tr/en/node/11658) · KOSGEB Bursa Müdürlüğü: 0 (224) 275 77 70; Üçevler Mah 2. Sk. No 12 KOSGEB Binası 16120 Nilüfer/BURSA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=16)
 7. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 

@@ -17,31 +17,31 @@ profil: {'sektor': 'imalat', 'bolge': 'Bursa', 'calisan_sayisi': 65, 'yillik_cir
  7. [1] Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: yatırım.
     eksik: 9903 ön değerlendirmesi: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ, sistemde yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7).
- 8. [1] Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
-    gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge, yatırım.
- 9. [1] Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
-    gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge, yatırım.
-10. [1] İşletme Bünyesindeki Ar-Ge Harcamalarının %100'ü Vergi İndirimi (5746 sayılı Kanun m.3/A — Ar-Ge İndirimi) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
-    gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge, yatırım.
-11. [1] Teknoloji Geliştirme Bölgesi (Teknopark) Gelir ve Kurumlar Vergisi İstisnası (4691 sayılı Kanun geçici madde 2) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
-    gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge, yatırım.
-12. [1] Teknoloji Geliştirme Bölgesi Personel Gelir Vergisi Teşviki (4691 sayılı Kanun geçici madde 2, ikinci-üçüncü fıkra) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
-    gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge, yatırım.
-13. [1] KOBİ Dijital Dönüşüm Destek Programı — KOSGEB (aktif=True)
+ 8. [1] KOBİ Dijital Dönüşüm Destek Programı — KOSGEB (aktif=True)
     gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; Faaliyet kodunuz: 29.32, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi).
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-14. [1] TÜBİTAK Transfer Ödemeleri — KGF (aktif=True)
+ 9. [1] TÜBİTAK Transfer Ödemeleri — KGF (aktif=True)
     gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
-15. [1] 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı — TUBITAK (aktif=True)
+10. [1] Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
-16. [1] Küresel Rekabetçilik Destek Programı — KOSGEB (aktif=True)
+11. [1] 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı — TUBITAK (aktif=True)
     gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
-17. [1] 1505 - Üniversite-Sanayi İşbirliği Destek Programı — TUBITAK (aktif=True)
+12. [1] Küresel Rekabetçilik Destek Programı — KOSGEB (aktif=True)
     gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
-18. [1] Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) — KOSGEB (aktif=True)
+13. [1] Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
+    gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
+14. [1] 1505 - Üniversite-Sanayi İşbirliği Destek Programı — TUBITAK (aktif=True)
+    gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
+15. [1] Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) — KOSGEB (aktif=True)
     gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-19. [1] 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı — TUBITAK (aktif=True)
+16. [1] İşletme Bünyesindeki Ar-Ge Harcamalarının %100'ü Vergi İndirimi (5746 sayılı Kanun m.3/A — Ar-Ge İndirimi) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
-20. [1] Yapay Zekâ Kredi Programı — KOSGEB (aktif=True)
+17. [1] 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı — TUBITAK (aktif=True)
+    gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
+18. [1] Yapay Zekâ Kredi Programı — KOSGEB (aktif=True)
+    gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
+19. [1] Teknoloji Geliştirme Bölgesi (Teknopark) Gelir ve Kurumlar Vergisi İstisnası (4691 sayılı Kanun geçici madde 2) — Sanayi ve Teknoloji Bakanlığı (aktif=True)
+    gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
+20. [1] 1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı — TUBITAK (aktif=True)
     gerekçe: Hedefiniz (Ar-Ge) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.

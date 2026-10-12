@@ -1,6 +1,6 @@
 <!-- persona: ikas_bebek | soru: Markamızı yurt dışında tescil ettirmenin desteği var mı? -->
 **Kısa cevap:**
-- Öne çıkan: **Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)** (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Ödeme belgesi tarihinden itibaren 6 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Öne çıkan: **Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)** (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Markanın Türkiye'de tescil belgesi bulunmalı (yurt içi marka tescil belgesi); Ödeme belgesi tarihinden itibaren 6 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: %50; 2026 yıllık üst limit 3.698.274 TL; en fazla 4 yıl
 - Diğer seçenekler: Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12) (profilinize göre engel yok — şartları teyit edin); Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) (profilinize göre engel yok — şartları teyit edin); Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6) (profilinize göre engel yok — şartları teyit edin).
 - 1 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
@@ -16,7 +16,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4) — Ticaret Bakanlığı**
-- **Başvuru dönemi:** Ödeme belgesi tarihinden itibaren 6 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Ödeme belgesi tarihinden itibaren 6 ay içinde
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
 - **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** ihracat, marka/patent tescili
@@ -34,7 +34,7 @@
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-4
 
 **Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12) — Ticaret Bakanlığı**
-- **Başvuru dönemi:** Ödeme belgesi tarihinden itibaren 6 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Ödeme belgesi tarihinden itibaren 6 ay içinde
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
 - **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** ihracat
@@ -52,7 +52,7 @@
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12
 
 **Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) — Ticaret Bakanlığı**
-- **Başvuru dönemi:** Ödeme belgesi tarihinden itibaren 6 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Ödeme belgesi tarihinden itibaren 6 ay içinde
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
 - **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
 - **Karşıladığı ihtiyaç:** ihracat
@@ -69,26 +69,10 @@
   - ve 2 şart daha: panelde programın Kontrol listesi'nde
 - **Başvuru:** Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden; e-ticaret depoları için KEP üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-11
 
-**Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6) — Ticaret Bakanlığı**
-- **Başvuru dönemi:** Şirket çalışanının Türkiye'ye giriş tarihinden itibaren en geç 3 ay içinde (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (e-ticaret) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-- **Kapsam:** yalnız: limited şirket, anonim şirket, kooperatif
-- **Karşıladığı ihtiyaç:** ihracat
-- **Destek:** %50; 2026'da faaliyet başına 490.559 TL, günlük konaklama kişi başı 12.264 TL; yılda en çok 5 faaliyet
-- **Hesaplama:** Ulaşım+konaklama giderinin %50'si, faaliyet başına en çok 490.559 TL (2026); yılda 5, toplam 20 faaliyet
-- **Profilinize göre sağlanan şartlar:** şirket statüsü (limited şirket)
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ TURQUALITY® / marka destek programı (m.17) kapsamında desteklenmiyor olmalısınız; bu programdaki şirketler destek süreleri boyunca bu destekten yararlanamaz
-  - ☐ Çok kanallı zincir mağaza desteği (m.18) kapsamında desteklenmiyor olmalısınız; bu destekteki şirketler destek süreleri boyunca bu destekten yararlanamaz
-  - ☐ Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı bilgi sayılır ve müeyyide uygulanır)
-- **Kurallar (kayıttan):**
-  - Desteklenen giderler: pazar araştırmasına ilişkin ulaşım ve konaklama — resmî metin: “Şirketler tarafından gerçekleştirilen yurt dışı pazar araştırması faaliyetine ilişkin ulaşım ve konaklama giderleri %50 oranında”
-- **Başvuru:** Bakanlıkça görevlendirilen İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-6
-
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayılı Karar m.9) (Ticaret Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: E-İhracat Konsorsiyumu bünyesindeyseniz, konsorsiyumun satış yaptığı ülkelerdeki yurt dışı pazaryerlerinde komisyon desteği için başvuru yapamazsınız); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6) (Ticaret Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: E-İhracat Konsorsiyumu bünyesindeyseniz, konsorsiyumun satış yaptığı ülkelerdeki yurt dışı pazaryerlerinde bu destek için başvuru yapamazsınız); Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- 1702 - Patent Tabanlı Teknoloji Transferi Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Başvuran (Müşteri Kuruluş): patentle korunan teknolojileri lisanslama ya da devir yoluyla edinerek ekonomik değer oluşturmayı hedefleyen, Türkiye'de yerleşik sermaye şirketi); Çağrı, TÜBİTAK ayrıca bir duyuru yapana kadar sürekli başvuruya açıktır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Şirket çalışanının Türkiye'ye giriş tarihinden itibaren en geç 3 ay içinde
+- Yurt Dışı Pazaryeri Komisyon Gideri Desteği (5986 sayılı Karar m.9) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
+- Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - 1602 - TÜBİTAK Patent Destek Programı (TUBITAK) — kapalı: program başvuruya açık değil (Kaynak sayfada başvuruya kapalı olduğu belirtiliyor. Doğrulama: 2026-09-27,)
@@ -97,7 +81,6 @@
 - [Ticaret Bakanlığı] Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı bilgi sayılır ve müeyyide uygulanır) (resmî metin: "Aynı harcama kalemi için, yararlanıcıların bu Karar dışında başka bir mevzuat/program kapsamında destek aldığının tespiti halinde, bu durum yanıltıcı bilgi ve belge sunulması olarak değerlendirilir")
 - [Ticaret Bakanlığı] Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı bilgi sayılır ve müeyyide uygulanır) (resmî metin: "Aynı harcama kalemi için, yararlanıcıların bu Karar dışında başka bir mevzuat/program kapsamında destek aldığının tespiti halinde, bu durum yanıltıcı bilgi ve belge sunulması olarak değerlendirilir")
 - [Ticaret Bakanlığı] Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı bilgi sayılır ve müeyyide uygulanır) (resmî metin: "Aynı harcama kalemi için, yararlanıcıların bu Karar dışında başka bir mevzuat/program kapsamında destek aldığının tespiti halinde, bu durum yanıltıcı bilgi ve belge sunulması olarak değerlendirilir")
-- [Ticaret Bakanlığı] Yurt Dışı Pazar Araştırması Desteği (5973 sayılı Karar m.6): Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı bilgi sayılır ve müeyyide uygulanır) (resmî metin: "Aynı harcama kalemi için, yararlanıcıların bu Karar dışında başka bir mevzuat/program kapsamında destek aldığının tespiti halinde, bu durum yanıltıcı bilgi ve belge sunulması olarak değerlendirilir")
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **İhracatçı birliği üyeliği** (Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4), Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12), Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11)): Ürün grubunuzun ihracatçı birliğine üye olun; 5973 ve 5986 başvuruları üyesi olunan birliğin genel sekreterliğine yapılır.
@@ -108,15 +91,12 @@
 1. Ön koşul kayıtlar: İhracatçı birliği üyeliği; Ticaret Bakanlığı DYS kaydı; Kayıtlı elektronik posta (KEP) adresi.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)): Yurt içi marka tescil belgesi; Yurt dışı marka tescil belgesi ya da tescil başvurusu belgesi (İngilizce dışındaysa yeminli tercüme); Fatura; Tescile ilişkin ödeme belgeleri (banka dekontu, kredi kartı ekstresi, hesap dökümü); Varsa avukatlık/hukuki danışmanlık faturası ve ödeme belgeleri; Varsa hukuki sürece ilişkin belgeler (ihtar yazısı, dava dilekçesi).
-4. Başvuru kanalı: Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4): Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-4 | Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12): Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-12 | Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11): Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden; e-ticaret depoları için KEP üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-11.
+4. Başvuru kanalı (Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4)): Üyesi olunan İhracatçı Birliği Genel Sekreterliğine (incelemeci kuruluş) DYS üzerinden — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-4. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 5. İletişim (doğrulanmış): Ticaret Bakanlığı: çağrı merkezi 444 8 482, genel merkez 0 312 204 75 00; Söğütözü Mah. Nizami Gencevi Cad. No:63/1, 06530 Çankaya / Ankara (doğrulama: https://ticaret.gov.tr/iletisim)
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4): “Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)” şartını sağlıyor musunuz?
-2. Yurt Dışı Marka Tescil Desteği (5973 sayılı Karar m.4): “Markanın Türkiye'de tescil belgesi bulunmalı (yurt içi marka tescil belgesi)” şartını sağlıyor musunuz?
-3. Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12): “Bir ihracatçı birliğine üye olmak (başvuru üyesi olunan İhracatçı Birliği Genel Sekreterliğine yapılır)” şartını sağlıyor musunuz?
-Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
+Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

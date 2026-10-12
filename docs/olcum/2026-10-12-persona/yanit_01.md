@@ -2,9 +2,11 @@
 **Yol ayrımı:** HALKBANK GENÇ İŞİ KREDİSİ PROJESİ (KGF) kurulmuş bir işletme ister; 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) ise hızlandırma programına kabul tarihinde şirket ya da şahıs işletmesi ortaklığı olmamasını şart koşar (kayıttaki şartlar). Şirket kurmadan önce hangi programla ilerleyeceğinize karar verin.
 
 **Kısa cevap:**
-- Öne çıkan: **Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)** (Gelir İdaresi Başkanlığı) — profilinize göre engel yok — şartları teyit edin; Son başvuru tarihi veya çağrı yoktur; istisna belgesi alındıktan sonra yeni hesap açıldığı ya da belge bankaya ibraz edildiği tarihten itibaren, takvim yılı içinde de başlanarak yararlanılabilir. (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Sorduğunuz girişim / şirketleşme öncesi ve erken aşama için profilinize açık bir program kaydı bulamadım; aşağıdakiler profilinize uyan, ama bu ihtiyaca doğrudan yönelik olmayan programlardır.
+- Öne çıkan: **Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)** (Gelir İdaresi Başkanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Yalnızca gerçek kişiler (gelir vergisi mükellefleri) yararlanır; kurumlar vergisi mükellefi şirketler yararlanamaz; Son başvuru tarihi veya çağrı yoktur; istisna belgesi alındıktan sonra yeni hesap açıldığı ya da belge bankaya ibraz edildiği tarihten itibaren, takvim yılı içinde de başlanarak yararlanılabilir. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: Gelir vergisi istisnası (hibe/ödeme değil, vergi avantajı): istisna kapsamındaki kazançlar toplamı, tarifenin dördüncü gelir diliminde yer alan tutarı (2025 için 4.300.000 TL, 2026 için 5.300.000 TL) aşmadığı sürece gelir vergisi ödenmez ve bu kazançlar için yıllık gelir vergisi beyannamesi verilmez.
-- Diğer seçenekler: 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) (belirlenemedi).
+- Diğer seçenekler: KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi (profilinize göre engel yok — şartları teyit edin); 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) (şarta bağlı).
+- Sorunuza doğrudan yönelik ama size kapalı: ZİRAAT BANKASI KADIN VE GENÇ GİRİŞİMCİ DESTEK PAKETİ — KGF programları kayıtlı bir işletme gerektirir.
 - 5 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -19,7 +21,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B) — Gelir İdaresi Başkanlığı**
-- **Başvuru dönemi:** Son başvuru tarihi veya çağrı yoktur; istisna belgesi alındıktan sonra yeni hesap açıldığı ya da belge bankaya ibraz edildiği tarihten itibaren, takvim yılı içinde de başlanarak yararlanılabilir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Son başvuru tarihi veya çağrı yoktur; istisna belgesi alındıktan sonra yeni hesap açıldığı ya da belge bankaya ibraz edildiği tarihten itibaren, takvim yılı içinde de başlanarak yararlanılabilir.
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
 - **Kapsam:** yalnız: şahıs işletmesi, henüz şirket kurulmamış
 - **Destek:** Gelir vergisi istisnası (hibe/ödeme değil, vergi avantajı): istisna kapsamındaki kazançlar toplamı, tarifenin dördüncü gelir diliminde yer alan tutarı (2025 için 4.300.000 TL, 2026 için 5.300.000 TL) aşmadığı sürece gelir vergisi ödenmez ve bu kazançlar için yıllık gelir vergisi beyannamesi verilmez. Tutar aşılırsa kazançlar yıllık beyannameyle beyan edilir ve banka stopajı mahsup edilir. Banka, hesaba aktarılan hasılattan %15 gelir vergisi tevkifatı yapar (istisna şartları sağlandığında bu tevkifat nihai vergidir). Tutarlar her yıl güncellenir.
@@ -31,9 +33,20 @@
   - Uygulama satış, reklam, uygulama içi satış, sponsorluk ve ücretli abonelik gelirleri (uygulama platformlarında elde edilenler) istisna kapsamında dikkate alınır. — resmî metin: “ücretli uygulama satış geliri, reklam geliri, uygulama içi satış geliri, sponsorluk geliri, ücretli abonelik geliri gibi gelirler istisna kapsamında dikkate alınacaktır.”
 - **Başvuru:** İkametgâhın bulunduğu yerdeki tarha yetkili vergi dairesi; başvuru Dijital Vergi Dairesi (dijital.gib.gov.tr) üzerinden elektronik ortamda da yapılabilir. — https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf#mukerrer-20b
 
+**KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB**
+- **Başvuru dönemi:** Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Kapsam:** yalnız: henüz şirket kurulmamış, şahıs işletmesi, limited şirket, anonim şirket, kooperatif
+- **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
+- **Destek:** Ücretsiz eğitim (parasal destek değildir): geleneksel ve ileri girişimcilik eğitimleri ücretsiz ve aracısız verilir.
+- **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.
+- **Kurallar (kayıttan):**
+  - Sınıf ortamındaki eski (2010-2020) uygulamalı girişimcilik eğitimi katılım belgeleri 31 Aralık 2020'ye kadar geçerliydi; bunlar artık geçerli değildir, online eğitim alınmalıdır. — resmî metin: “2010-2020 yılları arasında sınıf ortamındaki eğitim sonucunda alınan uygulamalı girişimcilik eğitimi katılım belgeleri, 31 Aralık 2020 tarihine kadar geçerliliğini koruyacak.”
+- **Başvuru:** KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi
+
 **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) — TUBITAK**
 - **Başvuru dönemi:** 1812-BİGG+ 2026-1 Tohum Yatırım Çağrısı: başvuruya açık — bu çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS) — ön kayıt son günü 17.11.2026 (36 gün kaldı); başvuru kapanışı 20.11.2026 (39 gün kaldı). Not: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS). (duyuru: https://tubitak.gov.tr/sites/default/files/2026-08/2026_1_BIGG_Tohum_Yatirim_Cagri_Duyuru_Metni.pdf, doğrulama 10.10.2026)
-- **Sizin için:** Belirlenemedi — açık çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); bu koşulu sağlamıyorsanız sizin için açık çağrı kayıtlarımızda yok; Sektörünüz (arge) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Şarta bağlı — açık çağrı yalnız şunlar için: 1812 tohum öncesi yatırım almış ya da 1512 ile desteklenmiş girişimler için tohum yatırım çağrısı (PRODİS); bu koşulu sağlamıyorsanız sizin için açık çağrı kayıtlarımızda yok; Sektörünüz (arge) bu desteğin kapsamına uygun; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
 - **Son bilinen tutar (önceki program, bilgi için):** BiGG Fonu hisse karşılığı yatırım: 1.350.000 TL (2026); +600.000 TL GCİP ek yatırım imkânı (2025'ten itibaren) (son bilinen tutar, önceki program 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) kaydından; 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) için güncel tutarı kurumdan teyit edin)
 - **Profilinize göre sağlanan şartlar:** başka şirkette ortaklık olmaması (profilinize göre)
@@ -56,17 +69,20 @@ Sistemde kaydı olmayan, ayrıca bakabileceğiniz programlar (oran ve şartları
 Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1/2026'dan itibaren 10962 sayılı Karar kapsamındadır; 5447 (E-Turquality) ve 5448 sayılı Kararlar yürürlükten kaldırılmıştır. KOSGEB Ar-Ge/Ür-Ge/İnovasyon ve KOBİGEL programları yürürlükten kaldırılmıştır (kayıtları 'kapalı' olarak sistemde).
 
 ### 3. Darboğazlar ve Kritik Şartlar
+- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım):** Aşama 1 (hızlandırma programı) için: üniversitede ön lisans/lisans/yüksek lisans/doktora öğrencisi veya mezunu olmak; hızlandırma programına kabul tarihinde herhangi bir sermaye şirketi veya gerçek kişi işletmesinin ortağı olmamak (halka açık şirket payları ve kitle fonlaması payları hariç); daha önce Teknogirişim Sermayesi Desteği veya 1512/1812 2. Aşama desteği almamış olmak
 - **1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım):** Başvuru yeri: PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına
 
 ### 4. Adım Adım Yol Haritası
-1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-2. Belgeler (Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)): Vergi dairesinden 'GVK Mükerrer 20/B Maddesi Uygulamasına İlişkin İstisna Belgesi' alınmalıdır..
-3. Başvuru kanalı: Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B): İkametgâhın bulunduğu yerdeki tarha yetkili vergi dairesi — https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf#mukerrer-20b | 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım): PRODİS (https://eteydeb.tubitak.gov.tr) üzerinden, uygulayıcı kuruluşların açtığı hızlandırma programı çağrılarına — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim.
-4. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
+1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
+2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
+3. Belgeler (Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)): Vergi dairesinden 'GVK Mükerrer 20/B Maddesi Uygulamasına İlişkin İstisna Belgesi' alınmalıdır..
+4. Başvuru kanalı (Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)): İkametgâhın bulunduğu yerdeki tarha yetkili vergi dairesi — https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf#mukerrer-20b. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+5. İletişim (doğrulanmış): KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
+6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B): “Yalnızca gerçek kişiler (gelir vergisi mükellefleri) yararlanır; kurumlar vergisi mükellefi şirketler yararlanamaz.” şartını sağlıyor musunuz?
+1. 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım): uygunluk belirlenemedi (teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.); bu konudaki bilgiyi profilinize ekleyin ya da kurumdan teyit edin.
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

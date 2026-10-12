@@ -35,7 +35,7 @@
 - **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (32 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
+- 1719 Eureka Network Çağrıları (TUBITAK) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Proje en az iki EUREKA üyesi ülkeden (en az biri AB üyesi veya Ufuk Avrupa Asosiye ülkesi) kuruluşun yer aldığı uluslararası Ar-Ge projesi olmalı); Açık ulusal çağrılar: Uygulamalı Kuantum Teknolojileri, Hafifletme Teknolojileri, Afetlerde Dirençlilik (takvim çağrı duyurularında) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Ön kayıt:** 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı için yeni başvuranın ön kayıt son günü 09.11.2026 (28 gün).
@@ -44,7 +44,7 @@
 ### 4. Adım Adım Yol Haritası
 1. Ön kayıt: 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı — son gün 09.11.2026.
 2. Belgeler (1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı): PRODİS sistemi üzerinden proje öneri formu; Şirket kuruluş/faaliyet belgeleri.
-3. Başvuru kanalı: 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi.
+3. Başvuru kanalı (1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı): Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi.
 4. İletişim (doğrulanmış): TUBITAK: çağrı merkezi 444 66 90, genel merkez 0 312 298 10 00; Remzi Oğuz Arık Mah. Tunus Cd. No:80 06540 Çankaya / Ankara (doğrulama: https://tubitak.gov.tr/en/node/11658)
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 

@@ -32,9 +32,9 @@
 - **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- REFİNANSMAN KEFALET PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- İSTİHDAM KORUMA DESTEK PROGRAMI (KGF) — profilinize göre engel yok — şartları teyit edin; KOSGEB İstihdamı Koruma 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (19 gün kaldı)
-- Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) (KOSGEB) — profilinize göre engel yok — şartları teyit edin; Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında belirlenen sürelerde (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Türk Eximbank Reeskont Kredisi (TCMB işbirliğiyle, TL/Döviz) (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
+- Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; geçerli kredi limiti olan firma kredi talep formu ve onaylı harcama listesiyle şubeye başvurur. Harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar olabilir.
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Ön kayıt:** 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı için yeni başvuranın ön kayıt son günü 09.11.2026 (28 gün).
@@ -43,8 +43,8 @@
 ### 4. Adım Adım Yol Haritası
 1. Ön kayıt: 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı — son gün 09.11.2026.
 2. Belgeler (1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı): PRODİS sistemi üzerinden proje öneri formu; Şirket kuruluş/faaliyet belgeleri.
-3. Başvuru kanalı: 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi.
-4. İletişim (doğrulanmış): TUBITAK: çağrı merkezi 444 66 90, genel merkez 0 312 298 10 00; Remzi Oğuz Arık Mah. Tunus Cd. No:80 06540 Çankaya / Ankara (doğrulama: https://tubitak.gov.tr/en/node/11658) · KOSGEB İZMİR MÜDÜRLÜĞÜ: 0 (232) 270 15 60; Atatürk OSB 10013 Sok. P.K:35477 Çiğli/İZMİR (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=35)
+3. Başvuru kanalı (1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı): Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi.
+4. İletişim (doğrulanmış): TUBITAK: çağrı merkezi 444 66 90, genel merkez 0 312 298 10 00; Remzi Oğuz Arık Mah. Tunus Cd. No:80 06540 Çankaya / Ankara (doğrulama: https://tubitak.gov.tr/en/node/11658)
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme

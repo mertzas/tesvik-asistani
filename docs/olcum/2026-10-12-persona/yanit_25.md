@@ -1,6 +1,6 @@
 <!-- persona: bursa_otomotiv | soru: Ar-Ge merkezi kurmanın şartları ve avantajları neler? -->
 **Kısa cevap:**
-- Öne çıkan: **Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)** (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır. Şartların taşındığına ilişkin tespitler en geç üç yıllık sürelerle yapılır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Öne çıkan: **Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)** (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; başlıca şart: Ar-Ge merkezi: kendi başına ayrı bir birim olarak örgütlenmiş, yalnızca yurtiçinde Ar-Ge yapan ve en az elli tam zaman eşdeğer Ar-Ge personeli çalıştıran sermaye şirketi birimi; Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır. Şartların taşındığına ilişkin tespitler en geç üç yıllık sürelerle yapılır. (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Program: 5746 sayılı Kanun uyarınca teknoloji merkezi işletmelerinde, Ar-Ge merkezlerinde, kamu kurumları veya uluslararası fonlarca desteklenen Ar-Ge ve yenilik projelerinde, rekabet öncesi işbirliği projelerinde ve teknogirişim sermaye desteklerinden yararlananların gerçekleştirdiği Ar-Ge ve yenilik […]
 - Diğer seçenekler: Teknoloji Hamlesi Programı (9903 sayılı Karar) (şartlı — karar şartını teyit edin); İşletme Bünyesindeki Ar-Ge Harcamalarının %100'ü Vergi İndirimi (5746 sayılı Kanun m.3/A — Ar-Ge İndirimi) (profilinize göre engel yok — şartları teyit edin); Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2) (profilinize göre engel yok — şartları teyit edin).
 - 2 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
@@ -17,13 +17,13 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1) — Sanayi ve Teknoloji Bakanlığı**
-- **Başvuru dönemi:** Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır. Şartların taşındığına ilişkin tespitler en geç üç yıllık sürelerle yapılır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge, yatırım.
+- **Başvuru dönemi:** Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır. Şartların taşındığına ilişkin tespitler en geç üç yıllık sürelerle yapılır.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
 - **Kapsam:** yalnız: şahıs işletmesi, limited şirket, anonim şirket
 - **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
 - **Destek:** Vergi indirimi: Kapsamdaki Ar-Ge ve yenilik harcamalarının tamamı, Kurumlar Vergisi Kanununa göre kurum kazancının ve Gelir Vergisi Kanununa göre ticari kazancın tespitinde indirim konusu yapılır. Cumhurbaşkanınca belirlenen kriterleri haiz Ar-Ge merkezlerinde ayrıca o yıl yapılan Ar-Ge ve yenilik harcamalarının bir önceki yıla göre artışının yüzde ellisine kadarı da indirilebilir. Harcamalar amortisman yoluyla itfa edilir, iktisadi kıymet oluşmazsa doğrudan gider yazılır; indirilemeyen tutar sonraki dönemlere devredilir. Kanun 31/12/2028 tarihine kadar uygulanır.
-- **Profilinize göre sağlanan şartlar:** sermaye şirketi (anonim şirket)
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ Ar-Ge merkezi: kendi başına ayrı bir birim olarak örgütlenmiş, yalnızca yurtiçinde Ar-Ge yapan ve en az elli tam zaman eşdeğer Ar-Ge personeli çalıştıran sermaye şirketi birimi. — resmî metin: “münhasıran yurtiçinde araştırma ve geliştirme faaliyetlerinde bulunan ve en az elli tam zaman eşdeğer Ar-Ge personeli istihdam eden,”
   - ☐ Tasarım merkezi: yalnızca yurtiçinde tasarım faaliyeti yapan ve en az on tam zaman eşdeğer tasarım personeli çalıştıran birim. — resmî metin: “münhasıran yurtiçinde tasarım faaliyetlerinde bulunan ve en az on tam zaman eşdeğer tasarım personeli istihdam eden,”
 - **Kurallar (kayıttan):**
   - Bu yapılarda gerçekleştirilen Ar-Ge ve yenilik harcamalarının tamamı indirim konusu yapılır.
@@ -47,8 +47,8 @@
 - **Başvuru:** Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#teknoloji-hamlesi
 
 **İşletme Bünyesindeki Ar-Ge Harcamalarının %100'ü Vergi İndirimi (5746 sayılı Kanun m.3/A — Ar-Ge İndirimi) — Sanayi ve Teknoloji Bakanlığı**
-- **Başvuru dönemi:** Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge, yatırım.
+- **Başvuru dönemi:** Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
 - **Kapsam:** yalnız: şahıs işletmesi, limited şirket, anonim şirket
 - **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
 - **Destek:** Vergi indirimi: işletme bünyesinde yapılan, münhasıran yeni teknoloji ve bilgi arayışına yönelik Ar-Ge harcamalarının %100'ü kazancın tespitinde indirim konusu yapılır (projenin Bakanlıkça Ar-Ge ve yenilik projesi olarak değerlendirilmesi şartıyla). Harcamalar amortisman yoluyla itfa edilir, iktisadi kıymet oluşmazsa doğrudan gider yazılır; indirilemeyen tutar sonraki dönemlere devredilir. Kanun 31/12/2028 tarihine kadar uygulanır.
@@ -61,22 +61,10 @@
   - Kazanç yetersizse indirilemeyen tutar sonraki vergilendirme dönemlerine devredilir. — resmî metin: “Kazancın yetersiz olması nedeniyle ilgili vergilendirme döneminde indirim konusu yapılamayan tutar, sonraki vergilendirme dönemlerine devredilir.”
 - **Başvuru:** Sanayi ve Teknoloji Bakanlığı (projenin Ar-Ge ve yenilik projesi olarak değerlendirilmesi); gerekli belge ve usuller Maliye Bakanlığı ile Sanayi ve Teknoloji Bakanlığınca müştereken belirlenir. — https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3a
 
-**Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2) — Sanayi ve Teknoloji Bakanlığı**
-- **Başvuru dönemi:** Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge, yatırım.
-- **Kapsam:** yalnız: şahıs işletmesi, limited şirket, anonim şirket
-- **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
-- **Destek:** Vergi teşviki: Ar-Ge ve tasarım personelinin ücretleri üzerinden (asgari geçim indirimi uygulandıktan sonra) hesaplanan gelir vergisinin doktoralılar ile desteklenecek program alanlarında en az yüksek lisanslılar için yüzde doksan beşi, yüksek lisanslılar ve bu alanlarda lisans derecesi olanlar için yüzde doksanı, diğerleri için yüzde sekseni muhtasar beyanname üzerinden tahakkuk eden vergiden indirilerek terkin edilir. Ayrıca sigorta primi işveren hissesinin yarısı bütçeden karşılanır. Kanun 31/12/2028 tarihine kadar uygulanır.
-- **Başvuru şartları:** kayıtta ayrıca başvuru şartı yok; kurumun ya da bankanın başvuru rehberindeki şartları teyit edin.
-- **Kurallar (kayıttan):**
-  - İndirim, ücretler üzerinden asgari geçim indirimi uygulandıktan sonra hesaplanan gelir vergisi üzerinden yapılır. — resmî metin: “ücretleri üzerinden asgari geçim indirimi uygulandıktan sonra hesaplanan gelir vergisinin;”
-  - Doktoralı personel ile desteklenecek program alanlarında en az yüksek lisans derecesi olanlar için gelir vergisinin yüzde doksan beşi terkin edilir. — resmî metin: “doktoralı olanlar ile desteklenecek program alanlarından birinde en az yüksek lisans derecesine sahip olanlar için yüzde doksan beşi,”
-  - Yüksek lisanslı personel ve bu alanlarda lisans derecesi olanlar için yüzde doksanı, diğer personel için yüzde sekseni terkin edilir. — resmî metin: “yüksek lisanslı olanlar ile desteklenecek program alanlarından birinde lisans derecesine sahip olanlar için yüzde doksanı ve diğerleri için yüzde sekseni,”
-- **Başvuru:** Sanayi ve Teknoloji Bakanlığı (Ar-Ge/tasarım merkezi veya proje uygunluğu) ve işyerinin bağlı olduğu vergi dairesi (muhtasar beyanname). — https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3-2
-
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2) (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır.
 - 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (28 gün kaldı); başvuru kapanışı 11.11.2026 (30 gün kaldı)
-- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — belirlenemedi (profilde karşılığı olmayan kilit şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (32 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
+- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (32 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Kapasite Geliştirme Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)
@@ -101,20 +89,17 @@ Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1
 - **Teknoloji Hamlesi Programı (9903 sayılı Karar):** Öncelikli ürün listesindeki ürünlere ya da teknolojilere yönelik yatırımlar desteklenebilir; liste orta-yüksek ve yüksek teknolojili sektörlerden (EK-1) ve kritik ürünlerden oluşur, Bakanlık tebliğiyle yayımlanır (MADDE 2/i, MADDE 6).
 - **Teknoloji Hamlesi Programı (9903 sayılı Karar):** Teşvik belgesi müracaatımı E-TUYS üzerinden
 - **Teknoloji Hamlesi Programı (9903 sayılı Karar):** Başvuru yeri: Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS)
-- **Ar-Ge ve Tasarım Personeli Gelir Vergisi Stopajı Teşviki (5746 sayılı Kanun m.3/2):** Başvuru yeri: Sanayi ve Teknoloji Bakanlığı (Ar-Ge/tasarım merkezi veya proje uygunluğu) ve işyerinin bağlı olduğu vergi dairesi (muhtasar beyanname).
 
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: Kayıtlı elektronik posta (KEP) adresi; Yatırım teşvik belgesi.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Başvuru adımları (Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)): Başvuru yeri: Sanayi ve Teknoloji Bakanlığı (Ar-Ge ve tasarım merkezi belgelendirmesi, proje uygunluk denetimi); denetimi Bakanlık veya yetki verilen teknoloji geliştirme bölgeleri yönetici şirketleri yapar..
-4. Başvuru kanalı: Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1): Sanayi ve Teknoloji Bakanlığı (Ar-Ge ve tasarım merkezi belgelendirmesi, proje uygunluk denetimi) — https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3 | Teknoloji Hamlesi Programı (9903 sayılı Karar): Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#teknoloji-hamlesi | İşletme Bünyesindeki Ar-Ge Harcamalarının %100'ü Vergi İndirimi (5746 sayılı Kanun m.3/A — Ar-Ge İndirimi): Sanayi ve Teknoloji Bakanlığı (projenin Ar-Ge ve yenilik projesi olarak değerlendirilmesi) — https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3a.
+4. Başvuru kanalı (Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1)): Sanayi ve Teknoloji Bakanlığı (Ar-Ge ve tasarım merkezi belgelendirmesi, proje uygunluk denetimi) — https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 5. İletişim (doğrulanmış): KOSGEB Bursa Müdürlüğü: 0 (224) 275 77 70; Üçevler Mah 2. Sk. No 12 KOSGEB Binası 16120 Nilüfer/BURSA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=16)
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
-1. Ar-Ge ve Tasarım İndirimi — Ar-Ge/Tasarım Merkezleri, Teknoloji Merkezi İşletmeleri ve Desteklenen Projeler (5746 sayılı Kanun m.3/1): “Tasarım merkezi: yalnızca yurtiçinde tasarım faaliyeti yapan ve en az on tam zaman eşdeğer tasarım personeli çalıştıran birim.” şartını sağlıyor musunuz?
-2. Teknoloji Hamlesi Programı (9903 sayılı Karar): “Karar şartı: orta-yüksek teknoloji sınıfında (EK-1); ürün/teknoloji öncelikli ürün listesinde olmalı, proje komite tarafından değerlendirilir; EK-3 şartı aranmaz (MADDE 5/1, 6)” şartını sağlıyor musunuz?
-Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
+Profil alanlarınız bu yanıt için yeterli; kalan şartlar yukarıdaki teyit listelerindedir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*
 

@@ -4,9 +4,10 @@
   "persona": "rekortiv",
   "soru": "Rekortiv adında sınav hazırlık mobil uygulamam var; App Store ve Google Play'de abonelikle gelir alıyorum ama şirketim yok, 20/B istisnasıyla çalışıyorum. Şirket kurmadan alabileceğim hibe ya da destek var mı?",
   "tur": "persona",
-  "sure_sn": 0.78,
+  "sure_sn": 0.52,
   "kayitlar": [
    49,
+   330,
    327,
    174,
    112,
@@ -35,14 +36,14 @@
    ],
    "baska_sirkette_ortak": false
   },
-  "uzunluk": 11839
+  "uzunluk": 14133
  },
  {
   "n": 2,
   "persona": "rekortiv",
   "soru": "BiGG'ye başvurdum. Şirket kurarsam KOSGEB ve TÜBİTAK'tan hangi destekleri birlikte kullanabilirim?",
   "tur": "persona",
-  "sure_sn": 0.64,
+  "sure_sn": 0.14,
   "kayitlar": [
    1,
    2,
@@ -161,14 +162,14 @@
    ],
    "baska_sirkette_ortak": false
   },
-  "uzunluk": 11204
+  "uzunluk": 10866
  },
  {
   "n": 3,
   "persona": "rekortiv",
   "soru": "Uygulamamı yurt dışında tanıtmak için reklam vermek istiyorum; bunun için devlet desteği var mı?",
   "tur": "persona",
-  "sure_sn": 1.1,
+  "sure_sn": 0.82,
   "kayitlar": [
    298,
    349,
@@ -204,23 +205,23 @@
    ],
    "baska_sirkette_ortak": false
   },
-  "uzunluk": 18953
+  "uzunluk": 16329
  },
  {
   "n": 4,
   "persona": "findik",
   "soru": "9 dönüm fındık bahçem var. Bu yıl devletten hangi destekleri alabilirim, toplam ne kadar eder?",
   "tur": "persona",
-  "sure_sn": 0.77,
+  "sure_sn": 0.58,
   "kayitlar": [
-   161,
    360,
    365,
    77,
    160,
    361,
    79,
-   364
+   364,
+   362
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -240,24 +241,24 @@
     "finansman"
    ]
   },
-  "uzunluk": 15812
+  "uzunluk": 13917
  },
  {
   "n": 5,
   "persona": "findik",
   "soru": "Fındık alan bazlı gelir desteği hâlâ veriliyor mu, dekar başına ne kadar?",
   "tur": "persona",
-  "sure_sn": 0.81,
+  "sure_sn": 0.59,
   "kayitlar": [
    359,
-   161,
    360,
    365,
    361,
    160,
    79,
    77,
-   364
+   364,
+   337
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -277,14 +278,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 6452
+  "uzunluk": 6558
  },
  {
   "n": 6,
   "persona": "findik",
   "soru": "Bahçeyi yenilemek ve damla sulama kurmak için hibe ya da düşük faizli kredi var mı?",
   "tur": "persona",
-  "sure_sn": 1.14,
+  "sure_sn": 0.74,
   "kayitlar": [
    329,
    94,
@@ -317,14 +318,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 15105
+  "uzunluk": 11648
  },
  {
   "n": 7,
   "persona": "cilek",
   "soru": "1,5 dönüm açık tarlada çilek yetiştiriyorum. Hangi desteklerden yararlanabilirim?",
   "tur": "persona",
-  "sure_sn": 0.83,
+  "sure_sn": 0.6,
   "kayitlar": [
    161,
    361,
@@ -354,14 +355,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 13598
+  "uzunluk": 11211
  },
  {
   "n": 8,
   "persona": "cilek",
   "soru": "Çilek tarlamı alçak tünel ya da sera yapmak istiyorum; hibe veya kredi var mı?",
   "tur": "persona",
-  "sure_sn": 0.91,
+  "sure_sn": 0.65,
   "kayitlar": [
    329,
    94,
@@ -395,14 +396,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 15321
+  "uzunluk": 11864
  },
  {
   "n": 9,
   "persona": "cilek",
   "soru": "Dolu ve don riskine karşı sigorta yaptırırsam devlet ne kadarını öder?",
   "tur": "persona",
-  "sure_sn": 0.79,
+  "sure_sn": 0.57,
   "kayitlar": [
    337,
    161,
@@ -432,14 +433,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 7945
+  "uzunluk": 8073
  },
  {
   "n": 10,
   "persona": "matbaa",
   "soru": "Matbaamıza yaklaşık 4 milyon TL'lik yeni dijital baskı makinesi almak istiyoruz. Hangi kredi, hibe ya da teşvik belgesi kullanabiliriz?",
   "tur": "persona",
-  "sure_sn": 1.59,
+  "sure_sn": 1.15,
   "kayitlar": [
    90,
    285,
@@ -467,14 +468,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 8549
+  "uzunluk": 7925
  },
  {
   "n": 11,
   "persona": "matbaa",
   "soru": "İki yeni çalışan alacağız; SGK ve İŞKUR teşvikleri neler?",
   "tur": "persona",
-  "sure_sn": 0.73,
+  "sure_sn": 0.54,
   "kayitlar": [
    185,
    283,
@@ -502,14 +503,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 16758
+  "uzunluk": 11585
  },
  {
   "n": 12,
   "persona": "matbaa",
   "soru": "KOSGEB'den matbaa için alabileceğimiz destek var mı?",
   "tur": "persona",
-  "sure_sn": 0.56,
+  "sure_sn": 0.39,
   "kayitlar": [
    1,
    2,
@@ -552,23 +553,23 @@
     "finansman"
    ]
   },
-  "uzunluk": 15781
+  "uzunluk": 14095
  },
  {
   "n": 13,
   "persona": "surucu_kursu",
   "soru": "Sürücü kursumuz için iki yeni eğitim aracı ve bir sürüş simülatörü almak istiyoruz; uygun kredi veya destek var mı?",
   "tur": "persona",
-  "sure_sn": 0.9,
+  "sure_sn": 0.59,
   "kayitlar": [
    320,
    285,
-   180,
-   331,
    86,
    122,
    146,
-   2
+   2,
+   178,
+   143
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -587,14 +588,14 @@
     "dijital"
    ]
   },
-  "uzunluk": 17436
+  "uzunluk": 14401
  },
  {
   "n": 14,
   "persona": "surucu_kursu",
   "soru": "Kursumuzun dijitalleşmesi (online ders, randevu sistemi) için KOSGEB desteği alabilir miyiz?",
   "tur": "persona",
-  "sure_sn": 0.78,
+  "sure_sn": 0.68,
   "kayitlar": [
    1,
    2,
@@ -614,12 +615,12 @@
    267,
    268,
    330,
-   180,
    301,
    303,
    302,
    295,
-   352
+   352,
+   272
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -638,23 +639,23 @@
     "dijital"
    ]
   },
-  "uzunluk": 8741
+  "uzunluk": 7565
  },
  {
   "n": 15,
   "persona": "surucu_kursu",
   "soru": "Yeni usta öğretici işe alırsak hangi prim teşvikleri var?",
   "tur": "persona",
-  "sure_sn": 0.86,
+  "sure_sn": 0.51,
   "kayitlar": [
-   284,
    289,
    283,
    290,
    293,
    186,
    282,
-   250
+   250,
+   185
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -673,14 +674,14 @@
     "dijital"
    ]
   },
-  "uzunluk": 17199
+  "uzunluk": 13805
  },
  {
   "n": 16,
   "persona": "gaziantep_hali",
   "soru": "Halı ihracatımızı artırmak için yurt dışı fuar ve tanıtım desteği alabilir miyiz?",
   "tur": "persona",
-  "sure_sn": 0.82,
+  "sure_sn": 0.57,
   "kayitlar": [
    278,
    286,
@@ -709,14 +710,14 @@
     "yatirim"
    ]
   },
-  "uzunluk": 6495
+  "uzunluk": 6278
  },
  {
   "n": 17,
   "persona": "gaziantep_hali",
   "soru": "Yeni dokuma makineleri için yatırım teşvik belgesi alırsak hangi destekler çıkar?",
   "tur": "persona",
-  "sure_sn": 0.71,
+  "sure_sn": 0.58,
   "kayitlar": [
    285,
    321,
@@ -744,57 +745,22 @@
     "yatirim"
    ]
   },
-  "uzunluk": 17994
+  "uzunluk": 15699
  },
  {
   "n": 18,
   "persona": "kayseri_mobilya",
   "soru": "CNC ve otomatik kenar bantlama makinesi yatırımı için hangi destekler var?",
   "tur": "persona",
-  "sure_sn": 0.76,
+  "sure_sn": 0.56,
   "kayitlar": [
    180,
    8,
    81,
-   237,
    90,
    178,
    285,
-   321
-  ],
-  "dayanak_sorunlari": [],
-  "yasak_dil": false,
-  "sorumluluk_reddi": true,
-  "beklenen": [],
-  "isabet": [],
-  "profil": {
-   "sektor": "imalat",
-   "bolge": "Kayseri",
-   "calisan_sayisi": 22,
-   "yillik_ciro": 40000000,
-   "nace_kodu": "31.01",
-   "sirket_turu": "limited",
-   "hedefler": [
-    "makine",
-    "dijital"
-   ]
-  },
-  "uzunluk": 14563
- },
- {
-  "n": 19,
-  "persona": "kayseri_mobilya",
-  "soru": "Üretimi dijitalleştirmek (ERP, makinelere sensör) için hibe var mı?",
-  "tur": "persona",
-  "sure_sn": 0.76,
-  "kayitlar": [
-   180,
-   81,
-   8,
-   3,
-   125,
-   237,
-   2,
+   321,
    5
   ],
   "dayanak_sorunlari": [],
@@ -814,14 +780,49 @@
     "dijital"
    ]
   },
-  "uzunluk": 16947
+  "uzunluk": 15384
+ },
+ {
+  "n": 19,
+  "persona": "kayseri_mobilya",
+  "soru": "Üretimi dijitalleştirmek (ERP, makinelere sensör) için hibe var mı?",
+  "tur": "persona",
+  "sure_sn": 0.58,
+  "kayitlar": [
+   180,
+   81,
+   8,
+   3,
+   5,
+   125,
+   2,
+   90
+  ],
+  "dayanak_sorunlari": [],
+  "yasak_dil": false,
+  "sorumluluk_reddi": true,
+  "beklenen": [],
+  "isabet": [],
+  "profil": {
+   "sektor": "imalat",
+   "bolge": "Kayseri",
+   "calisan_sayisi": 22,
+   "yillik_ciro": 40000000,
+   "nace_kodu": "31.01",
+   "sirket_turu": "limited",
+   "hedefler": [
+    "makine",
+    "dijital"
+   ]
+  },
+  "uzunluk": 12586
  },
  {
   "n": 20,
   "persona": "izmir_zeytinyagi",
   "soru": "Zeytinyağımızı kendi markamızla Almanya'ya ihraç etmek istiyoruz; hangi destekler var?",
   "tur": "persona",
-  "sure_sn": 0.72,
+  "sure_sn": 0.54,
   "kayitlar": [
    286,
    191,
@@ -849,14 +850,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 19504
+  "uzunluk": 14462
  },
  {
   "n": 21,
   "persona": "izmir_zeytinyagi",
   "soru": "İhracat için uygun faizli kredi bulabilir miyiz?",
   "tur": "persona",
-  "sure_sn": 0.77,
+  "sure_sn": 0.58,
   "kayitlar": [
    285,
    247,
@@ -884,14 +885,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 13808
+  "uzunluk": 10285
  },
  {
   "n": 22,
   "persona": "antalya_otel",
   "soru": "Butik otelimizi yenilemek için kredi ya da hibe var mı?",
   "tur": "persona",
-  "sure_sn": 0.59,
+  "sure_sn": 0.5,
   "kayitlar": [
    170,
    122,
@@ -919,14 +920,14 @@
     "dijital"
    ]
   },
-  "uzunluk": 11054
+  "uzunluk": 8957
  },
  {
   "n": 23,
   "persona": "antalya_otel",
   "soru": "Yurt dışı tanıtım ve online satış için destek var mı?",
   "tur": "persona",
-  "sure_sn": 0.57,
+  "sure_sn": 0.55,
   "kayitlar": [
    191,
    286,
@@ -955,14 +956,14 @@
     "dijital"
    ]
   },
-  "uzunluk": 5397
+  "uzunluk": 5352
  },
  {
   "n": 24,
   "persona": "bursa_otomotiv",
   "soru": "Yeni bir fren parçası geliştirmek için Ar-Ge projesi yapacağız; TÜBİTAK ve KOSGEB'den ne alabiliriz?",
   "tur": "persona",
-  "sure_sn": 0.65,
+  "sure_sn": 0.52,
   "kayitlar": [
    1,
    2,
@@ -1074,14 +1075,14 @@
    ],
    "trl": 5
   },
-  "uzunluk": 11092
+  "uzunluk": 10763
  },
  {
   "n": 25,
   "persona": "bursa_otomotiv",
   "soru": "Ar-Ge merkezi kurmanın şartları ve avantajları neler?",
   "tur": "persona",
-  "sure_sn": 0.71,
+  "sure_sn": 0.52,
   "kayitlar": [
    8,
    81,
@@ -1110,14 +1111,14 @@
    ],
    "trl": 5
   },
-  "uzunluk": 19666
+  "uzunluk": 16663
  },
  {
   "n": 26,
   "persona": "ikas_giyim",
   "soru": "Kadın giyim e-ticaret mağazam var. Yurt dışına satış için hangi destekler var?",
   "tur": "persona",
-  "sure_sn": 0.8,
+  "sure_sn": 0.58,
   "kayitlar": [
    162,
    196,
@@ -1153,14 +1154,14 @@
     "kadin_girisimci"
    ]
   },
-  "uzunluk": 18754
+  "uzunluk": 15174
  },
  {
   "n": 27,
   "persona": "ikas_giyim",
   "soru": "Instagram ve Google reklam giderlerim için destek alabilir miyim?",
   "tur": "persona",
-  "sure_sn": 0.66,
+  "sure_sn": 0.56,
   "kayitlar": [
    192,
    191,
@@ -1196,23 +1197,23 @@
     "kadin_girisimci"
    ]
   },
-  "uzunluk": 21090
+  "uzunluk": 17138
  },
  {
   "n": 28,
   "persona": "ikas_kozmetik",
   "soru": "Doğal kozmetik markamla online satış yapıyorum; kadın girişimciye kredi ya da hibe var mı?",
   "tur": "persona",
-  "sure_sn": 0.79,
+  "sure_sn": 0.68,
   "kayitlar": [
    170,
    122,
    169,
+   330,
    91,
    87,
    86,
    328,
-   2,
    124,
    156,
    288,
@@ -1237,24 +1238,23 @@
     "kadin_girisimci"
    ]
   },
-  "uzunluk": 11552
+  "uzunluk": 10168
  },
  {
   "n": 29,
   "persona": "ikas_kozmetik",
   "soru": "Şahıs işletmesiyim; e-ihracat desteklerinden yararlanabilir miyim?",
   "tur": "persona",
-  "sure_sn": 0.64,
+  "sure_sn": 0.53,
   "kayitlar": [
-   162,
    246,
    168,
    288,
-   5,
    169,
    146,
    163,
    267,
+   263,
    124,
    156
   ],
@@ -1277,14 +1277,14 @@
     "kadin_girisimci"
    ]
   },
-  "uzunluk": 5754
+  "uzunluk": 9360
  },
  {
   "n": 30,
   "persona": "ikas_evtekstil",
   "soru": "Havlu ve bornoz üretip kendi sitemizden satıyoruz; Amazon Avrupa'da mağaza açmak için destek var mı?",
   "tur": "persona",
-  "sure_sn": 0.77,
+  "sure_sn": 0.57,
   "kayitlar": [
    195,
    190,
@@ -1312,14 +1312,14 @@
     "makine"
    ]
   },
-  "uzunluk": 16058
+  "uzunluk": 13887
  },
  {
   "n": 31,
   "persona": "ikas_evtekstil",
   "soru": "Yurt dışı depo ve sipariş karşılama giderleri destekleniyor mu?",
   "tur": "persona",
-  "sure_sn": 0.83,
+  "sure_sn": 0.56,
   "kayitlar": [
    193,
    190,
@@ -1351,23 +1351,23 @@
     "makine"
    ]
   },
-  "uzunluk": 8971
+  "uzunluk": 8286
  },
  {
   "n": 32,
   "persona": "ikas_taki",
   "soru": "Gümüş takı satan online mağazam var; Etsy ve kendi sitemden yurt dışı satış için destek var mı?",
   "tur": "persona",
-  "sure_sn": 0.7,
+  "sure_sn": 0.5,
   "kayitlar": [
    246,
    286,
    159,
    9,
-   5,
    2,
    107,
-   163
+   163,
+   155
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -1385,14 +1385,14 @@
     "ihracat"
    ]
   },
-  "uzunluk": 13926
+  "uzunluk": 11263
  },
  {
   "n": 33,
   "persona": "ikas_taki",
   "soru": "Yurt dışına gönderdiğim kargoların masrafı için destek alabilir miyim?",
   "tur": "persona",
-  "sure_sn": 0.56,
+  "sure_sn": 0.55,
   "kayitlar": [
    246,
    286,
@@ -1419,14 +1419,14 @@
     "ihracat"
    ]
   },
-  "uzunluk": 13244
+  "uzunluk": 11927
  },
  {
   "n": 34,
   "persona": "ikas_kahve",
   "soru": "Kahve kavurma makinesi almak istiyorum, hangi kredi ya da hibeler var?",
   "tur": "persona",
-  "sure_sn": 0.78,
+  "sure_sn": 0.63,
   "kayitlar": [
    170,
    122,
@@ -1454,23 +1454,23 @@
     "finansman"
    ]
   },
-  "uzunluk": 16603
+  "uzunluk": 14066
  },
  {
   "n": 35,
   "persona": "ikas_kahve",
   "soru": "Online kahve satışımızı büyütmek için dijital pazarlama desteği var mı?",
   "tur": "persona",
-  "sure_sn": 0.82,
+  "sure_sn": 0.51,
   "kayitlar": [
    191,
    192,
    196,
+   330,
    315,
    172,
    307,
-   190,
-   277
+   190
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -1489,14 +1489,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 17285
+  "uzunluk": 15641
  },
  {
   "n": 36,
   "persona": "ikas_pet",
   "soru": "Evcil hayvan ürünleri satan e-ticaret şirketimiz için işletme sermayesi kredisi bulabilir miyiz?",
   "tur": "persona",
-  "sure_sn": 0.62,
+  "sure_sn": 0.55,
   "kayitlar": [
    122,
    86,
@@ -1524,14 +1524,14 @@
     "istihdam"
    ]
   },
-  "uzunluk": 11282
+  "uzunluk": 8287
  },
  {
   "n": 37,
   "persona": "ikas_pet",
   "soru": "Depoya 3 kişi alacağız, istihdam teşviki var mı?",
   "tur": "persona",
-  "sure_sn": 0.61,
+  "sure_sn": 0.51,
   "kayitlar": [
    185,
    289,
@@ -1559,14 +1559,14 @@
     "istihdam"
    ]
   },
-  "uzunluk": 16840
+  "uzunluk": 11490
  },
  {
   "n": 38,
   "persona": "ikas_bebek",
   "soru": "Organik bebek tekstili markamızı Körfez ülkelerine satmak istiyoruz; hangi destekler var?",
   "tur": "persona",
-  "sure_sn": 0.73,
+  "sure_sn": 0.53,
   "kayitlar": [
    191,
    192,
@@ -1593,14 +1593,14 @@
     "ihracat"
    ]
   },
-  "uzunluk": 19272
+  "uzunluk": 14513
  },
  {
   "n": 39,
   "persona": "ikas_bebek",
   "soru": "Markamızı yurt dışında tescil ettirmenin desteği var mı?",
   "tur": "persona",
-  "sure_sn": 0.72,
+  "sure_sn": 0.55,
   "kayitlar": [
    188,
    191,
@@ -1627,14 +1627,14 @@
     "ihracat"
    ]
   },
-  "uzunluk": 17183
+  "uzunluk": 13161
  },
  {
   "n": 40,
   "persona": "ikas_spor",
   "soru": "Spor giyim markamız için yurt dışı pazaryerlerinde reklam desteği var mı?",
   "tur": "persona",
-  "sure_sn": 0.8,
+  "sure_sn": 0.53,
   "kayitlar": [
    191,
    192,
@@ -1662,14 +1662,14 @@
     "ihracat"
    ]
   },
-  "uzunluk": 20220
+  "uzunluk": 15287
  },
  {
   "n": 41,
   "persona": "ikas_spor",
   "soru": "KOSGEB dijital dönüşüm desteğinden e-ticaret altyapısı için yararlanabilir miyiz?",
   "tur": "persona",
-  "sure_sn": 0.63,
+  "sure_sn": 0.49,
   "kayitlar": [
    3,
    196,
@@ -1698,14 +1698,14 @@
     "ihracat"
    ]
   },
-  "uzunluk": 7631
+  "uzunluk": 7634
  },
  {
   "n": 42,
   "persona": "ikas_seramik",
   "soru": "El yapımı seramik satıyorum, tek kişilik şahıs işletmesiyim; genç girişimciye uygun kredi ya da hibe var mı?",
   "tur": "persona",
-  "sure_sn": 0.66,
+  "sure_sn": 0.59,
   "kayitlar": [
    169,
    122,
@@ -1717,9 +1717,10 @@
    146,
    1,
    2,
+   330,
    117,
-   124,
-   112
+   112,
+   124
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -1738,14 +1739,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 11311
+  "uzunluk": 8699
  },
  {
   "n": 43,
   "persona": "ikas_seramik",
   "soru": "Seramik fırını almak için KOSGEB'den destek alabilir miyim?",
   "tur": "persona",
-  "sure_sn": 0.75,
+  "sure_sn": 0.53,
   "kayitlar": [
    1,
    2,
@@ -1796,23 +1797,82 @@
     "finansman"
    ]
   },
-  "uzunluk": 7820
+  "uzunluk": 6191
  },
  {
   "n": 44,
   "persona": "ikas_elektronik",
   "soru": "Telefon aksesuarı satıyoruz, e-ihracata başlayacağız; Ticaret Bakanlığı e-ihracat desteklerinin şartları neler?",
   "tur": "persona",
-  "sure_sn": 0.8,
+  "sure_sn": 0.67,
   "kayitlar": [
    162,
-   196,
-   246,
-   195,
-   193,
-   190,
+   163,
+   182,
    187,
-   188
+   188,
+   189,
+   190,
+   191,
+   192,
+   193,
+   194,
+   195,
+   196,
+   271,
+   272,
+   273,
+   274,
+   275,
+   276,
+   277,
+   278,
+   294,
+   295,
+   296,
+   297,
+   298,
+   299,
+   300,
+   301,
+   302,
+   303,
+   304,
+   305,
+   306,
+   307,
+   308,
+   309,
+   310,
+   311,
+   312,
+   313,
+   314,
+   315,
+   316,
+   317,
+   338,
+   339,
+   340,
+   341,
+   342,
+   343,
+   344,
+   345,
+   346,
+   347,
+   348,
+   349,
+   350,
+   351,
+   352,
+   353,
+   354,
+   355,
+   356,
+   357,
+   358,
+   246
   ],
   "dayanak_sorunlari": [],
   "yasak_dil": false,
@@ -1831,14 +1891,14 @@
     "finansman"
    ]
   },
-  "uzunluk": 7764
+  "uzunluk": 14457
  },
  {
   "n": 45,
   "persona": "ikas_elektronik",
   "soru": "Eximbank'tan e-ihracat kredisi alabilir miyiz?",
   "tur": "persona",
-  "sure_sn": 0.87,
+  "sure_sn": 0.56,
   "kayitlar": [
    246,
    285,
@@ -1866,6 +1926,6 @@
     "finansman"
    ]
   },
-  "uzunluk": 14798
+  "uzunluk": 11363
  }
 ]

@@ -23,7 +23,7 @@
 - Hizmet Sektörleri Sürdürülebilirlik Programı — Sürdürülebilirlik Projesi Desteği (10962 sayılı Karar m.34) (Ticaret Bakanlığı): Proje kapsamındaki giderlerin %50'si, yararlanıcı başına en fazla 20.000.000 TL; her yararlanıcı en fazla beş yıl desteklenir (Karar metnindeki tutar; Çağrı yoktur; önce sürdürülebilirlik projesi onay başvurusu yapılır. Onaydan sonra gerçekleştirilen harcamalar için ödeme belgesi tarihinden itibaren altı ay içinde destek başvurusu yapılır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Hizmet Sektörleri Markalaşma Programı — Markalaşma Programı Desteği (10962 sayılı Karar m.33) (Ticaret Bakanlığı) — belirlenemedi (profilde karşılığı olmayan kilit şart: Son üç takvim yılı gelirlerinin ortalaması, yararlanıcı ve organik bağı olan yurt içindeki şirket için toplamda en az 1.500.000 ABD doları olmalıdır.); Çağrı yoktur; önce Markalaşma Programı kapsama alım başvurusu (EK-32 belgeleri) yapılır, ardından ön inceleme çalışması ve Stratejik İş Planı (SİP) süreci işler; destek ödemesi SİP onayından sonra yapılır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- Hizmet Sektörleri Markalaşma Programı — Markalaşma Programı Desteği (10962 sayılı Karar m.33) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Son üç takvim yılı gelirlerinin ortalaması, yararlanıcı ve organik bağı olan yurt içindeki şirket için toplamda en az 1.500.000 ABD doları olmalıdır.); Çağrı yoktur; önce Markalaşma Programı kapsama alım başvurusu (EK-32 belgeleri) yapılır, ardından ön inceleme çalışması ve Stratejik İş Planı (SİP) süreci işler; destek ödemesi SİP onayından sonra yapılır.
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Ticaret Bakanlığı DYS kaydı** (Hizmet Sektörleri Sürdürülebilirlik Programı — …): Destek Yönetim Sistemi'ne (DYS) şirket kaydı; MERSİS bilgileri ve NACE kodu güncel olmalı.
@@ -32,7 +32,7 @@
 Sorduğunuz program şu an size açık olmadığından adımlar, açık alternatif **Hizmet Sektörleri Sürdürülebilirlik Programı — Sürdürülebilirlik Projesi Desteği (10962 sayılı Karar m.34)** için:
 1. Ön koşul kayıtlar: Ticaret Bakanlığı DYS kaydı.
 2. Başvuru adımları (Hizmet Sektörleri Sürdürülebilirlik Programı — Sürdürülebilirlik Projesi Desteği (10962 sayılı Karar m.34)): Destek kapsamına girmek için yararlanıcı sürdürülebilirlik projesi onay başvurusu yapar.; Başvuru yeri: Ticaret Bakanlığı Destek Yönetim Sistemi (DYS); Uluslararası Hizmet Ticareti Genel Müdürlüğü.
-3. Başvuru kanalı: Hizmet Sektörleri Sürdürülebilirlik Programı — Sürdürülebilirlik Projesi Desteği (10962 sayılı Karar m.34): Ticaret Bakanlığı Destek Yönetim Sistemi (DYS); Uluslararası Hizmet Ticareti Genel Müdürlüğü — https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf#madde-34.
+3. Başvuru kanalı (Hizmet Sektörleri Sürdürülebilirlik Programı — Sürdürülebilirlik Projesi Desteği (10962 sayılı Karar m.34)): Ticaret Bakanlığı Destek Yönetim Sistemi (DYS); Uluslararası Hizmet Ticareti Genel Müdürlüğü — https://ticaret.gov.tr/data/69a9d756269de18b843851b7/%C3%87er%C3%A7eve%20Karar.pdf#madde-34.
 4. İletişim (doğrulanmış): Ticaret Bakanlığı: çağrı merkezi 444 8 482, genel merkez 0 312 204 75 00; Söğütözü Mah. Nizami Gencevi Cad. No:63/1, 06530 Çankaya / Ankara (doğrulama: https://ticaret.gov.tr/iletisim)
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 

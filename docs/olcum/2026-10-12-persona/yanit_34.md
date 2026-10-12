@@ -1,9 +1,9 @@
 <!-- persona: ikas_kahve | soru: Kahve kavurma makinesi almak istiyorum, hangi kredi ya da hibeler var? -->
 **Kısa cevap:**
-- Öne çıkan: **Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)** (Sanayi ve Teknoloji Bakanlığı) — belirlenemedi (Karar metnine göre ön değerlendirme: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ; kayıtlarımızda yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7)); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı).
+- Öne çıkan: **Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)** (Sanayi ve Teknoloji Bakanlığı) — şarta bağlı (Karar metnine göre ön değerlendirme: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ; kayıtlarımızda yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7)); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı).
 - Yatırım teşvik bölgeniz: 1. bölge (Karar değerlendirmesinden).
 - Destek unsurları (Karar metninden): vergi indirimi: yatırıma katkı oranı %50, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 8 yıl (MADDE 18/3, 1. bölge); faiz/kâr payı desteği: repo oranının %40'i, azami 20 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı, azami 5 yıl (MADDE 15); makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteğiyle birlikte alınamaz (MADDE 16); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
-- Diğer seçenekler: TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (belirlenemedi); HALKBANK İLK ADIM KREDİSİ PROJESİ (belirlenemedi).
+- Diğer seçenekler: TKYB KREDİ DESTEK PAKETİ (profilinize göre engel yok — şartları teyit edin); TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (şarta bağlı); HALKBANK İLK ADIM KREDİSİ PROJESİ (şarta bağlı).
 - 3 program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).
 
 ### 1. Şirket & Proje Uygunluk Özeti
@@ -18,7 +18,7 @@
 
 **Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı**
 - **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)
-- **Sizin için:** Belirlenemedi — Karar metnine göre ön değerlendirme: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ; kayıtlarımızda yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7).
+- **Sizin için:** Şarta bağlı — Karar metnine göre ön değerlendirme: BELİRLENEMEDİ — desteklenecek konular il bazlı 'yerel yatırım konuları listesi' ile belirlenir (tebliğ; kayıtlarımızda yok); EK-3 şartı aranmaz; ilinizin listesini kalkınma ajansından teyit edin (MADDE 5/1, 7).
 - **Karşıladığı ihtiyaç:** makine/tesis yatırımı
 - **Destek unsurları (Karar metninden, bölgenize göre):** vergi indirimi: yatırıma katkı oranı %50, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 8 yıl (MADDE 18/3, 1. bölge); faiz/kâr payı desteği: repo oranının %40'i, azami 20 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı, azami 5 yıl (MADDE 15); makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteğiyle birlikte alınamaz (MADDE 16); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
@@ -40,8 +40,8 @@
 - **Başvuru:** Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi
 
 **TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Belirlenemedi — profilde karşılığı olmayan kilit şart: TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi).
+- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
+- **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi).
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Kredi ve kefalet limitleri:** Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
 - **Profilinize göre sağlanan şartlar:** KOBİ ölçeği (mikro işletme)
@@ -52,22 +52,12 @@
   - Kefalet talepleri yalnız TL cinsinden yapılır — resmî metin: “Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır.”
 - **Başvuru:** Kredi veren bankalar: Akbank, Denizbank, Garanti BBVA, Halkbank, QNB Bank, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım (yalnızca TL kefalet) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi
 
-**HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF**
-- **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Belirlenemedi — profilde karşılığı olmayan kilit şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı.
-- **Karşıladığı ihtiyaç:** kredi/finansman
-- **Kredi ve kefalet limitleri:** İşletme kredisi: kefalet azami 800 bin TL, kredi 1 Milyon TL
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı — resmî metin: “Kredi başvuru tarihi itibarıyla, sahibi veya asgari %50 hisse sahibi ortağı azami 29 yaşında olan işletmeler”
-- **Kurallar (kayıttan):**
-  - Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz. — resmî metin: “Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir.”
-- **Başvuru:** Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi
-
 **9903 programları bölgenize göre (Karar metninden; önce engelsiz ve şartlı, sonra en yüksek katkı):**
-- Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (belirlenemedi): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteği: repo oranının %40'i, azami 20 puan
+- Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar) (şarta bağlı): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteği: repo oranının %40'i, azami 20 puan
 - Teknoloji Hamlesi Programı (9903 sayılı Karar) (düşük olasılık — karar ön değerlendirmesi): yatırıma katkı %50; makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteği: repo oranının %40'i, azami 20 puan
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 - Teknoloji Hamlesi Programı (9903 sayılı Karar) (Sanayi ve Teknoloji Bakanlığı) — düşük olasılık — karar ön değerlendirmesi (Karar metnine göre ön değerlendirme: DÜŞÜK OLASILIK — faaliyet EK-1 orta-yüksek/yüksek teknoloji sınıfında değil); 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
@@ -93,13 +83,11 @@ Not: 2012/3305 sayılı Karar (Genel, Bölgesel, Büyük Ölçekli ve Stratejik 
 1. Ön koşul kayıtlar: Kayıtlı elektronik posta (KEP) adresi; Yatırım teşvik belgesi.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)): E-TUYS yetkilendirmesi için Dilekçe, Taahhütname ve Kullanıcı Yetkilendirme Formu (Bakanlığın KEP adresine Kayıtlı Elektronik Posta ile gönderilir).
-4. Başvuru kanalı: Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar): Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#yerel-kalkinma-hamlesi | TKYB KREDİ DESTEK PAKETİ: Kredi veren bankalar: Türkiye Kalkınma ve Yatırım Bankası A.Ş. (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/hazine-destekli-kefaletler/aktif-destek-paketleri-2025/tkyb-kredi-destek-paketi | TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI: Kredi veren bankalar: Akbank, Denizbank, Garanti BBVA, Halkbank, QNB Bank, Vakıfbank, Yapı Kredi, Ziraat Bankası, Ziraat Katılım (yalnızca TL kefalet) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/tobb-nefes-kredisi-2026-destek-programi.
+4. Başvuru kanalı (Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar)): Sanayi ve Teknoloji Bakanlığı Teşvik Uygulama ve Yabancı Sermaye Genel Müdürlüğü (E-TUYS) — https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#yerel-kalkinma-hamlesi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. İşletme sahibinin ya da en az %50 hissedarın yaşı nedir? — listedeki bazı krediler yaş sınırlıdır.
-2. Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar): “Desteklenecek yatırım konuları il bazlı 'yerel yatırım konuları listesi' ile tebliğle belirlenir; program Kalkınma Ajansları Genel Müdürlüğünce yürütülür (MADDE 7).” şartını sağlıyor musunuz?
-3. Yerel Kalkınma Hamlesi Programı (9903 sayılı Karar): “Asgari sabit yatırım tutarı (ayrıca belirtilmemişse): 1. ve 2. bölgelerde 12 milyon TL, diğer bölgelerde 6 milyon TL (MADDE 5/2).” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

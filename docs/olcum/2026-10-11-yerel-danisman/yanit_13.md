@@ -10,7 +10,7 @@
 
 **Girişimci Destek Programı — KOSGEB**
 - **Başvuru dönemi:** İş Geliştirme çağrısı kapandı (08.05.2026); programın diğer destekleri ya da aşamaları için kayıtlarımızda çağrı tarihi yok, kurumdan teyit edin
-- **Durum:** Belirlenemedi — profiliniz olmadığı için uygunluk değerlendirilemedi.
+- **Durum:** Şarta bağlı — profiliniz olmadığı için uygunluk değerlendirilemedi.
 - **Destek:** İş Kurma: gerçek kişi 10.000 TL / sermaye şirketi 20.000 TL (%100 geri ödemesiz; genç/kadın/engelli/gazi/şehit yakını +10.000 TL); İş Geliştirme: 1.500.000 TL'ye kadar (%80 geri ödemeli, +150.000 TL ilave); kredi faiz/kâr payı desteği: 1.000.000 TL kredi, faizin %50'si geri ödemesiz
 - **Hesaplama:** GERİ ÖDEMESİZ kuruluş desteği: gerçek kişi 10.000 TL, sermaye şirketi 20.000 TL; girişimci genç/kadın/engelli/gazi/şehit yakını ise +10.000 TL (üst sınır 30.000 TL).
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
@@ -26,13 +26,22 @@
 
 **HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026); paketin hâlâ kullandırımda olduğunu bankadan teyit edin. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Durum:** Belirlenemedi — profiliniz olmadığı için uygunluk değerlendirilemedi.
+- **Durum:** Şarta bağlı — profiliniz olmadığı için uygunluk değerlendirilemedi.
 - **Kredi ve kefalet limitleri:** İşletme kredisi: kefalet azami 800 bin TL, kredi 1 Milyon TL
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
   - ☐ İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı — resmî metin: “Kredi başvuru tarihi itibarıyla, sahibi veya asgari %50 hisse sahibi ortağı azami 29 yaşında olan işletmeler”
 - **Kurallar (kayıttan):**
   - Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. Bu paket kapsamındaki krediler döviz, altın ve mücevherat finansmanında kullanılamaz. — resmî metin: “Kredi Verenler tarafından sadece yeni ve ilave kredi kullandırımları için Özkaynak PGS kapsamında Kurum kefaleti talep edilebilir.”
 - **Başvuru:** Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi
+
+**KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB**
+- **Başvuru dönemi:** Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır.
+- **Durum:** Şarta bağlı — profiliniz olmadığı için uygunluk değerlendirilemedi.
+- **Kapsam:** yalnız: henüz şirket kurulmamış, şahıs işletmesi, limited şirket, anonim şirket, kooperatif
+- **Destek:** Ücretsiz eğitim (parasal destek değildir): geleneksel ve ileri girişimcilik eğitimleri ücretsiz ve aracısız verilir.
+- **Kurallar (kayıttan):**
+  - Sınıf ortamındaki eski (2010-2020) uygulamalı girişimcilik eğitimi katılım belgeleri 31 Aralık 2020'ye kadar geçerliydi; bunlar artık geçerli değildir, online eğitim alınmalıdır. — resmî metin: “2010-2020 yılları arasında sınıf ortamındaki eğitim sonucunda alınan uygulamalı girişimcilik eğitimi katılım belgeleri, 31 Aralık 2020 tarihine kadar geçerliliğini koruyacak.”
+- **Başvuru:** KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi
 
 **Şu an başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı
@@ -41,22 +50,19 @@
 - [KOSGEB] Girişimci Destek Programı: İş Geliştirme Desteği ile İş Geliştirme Faiz/Kâr Payı Desteğinden aynı anda yararlanılamaz (resmî metin: "İŞ GELİŞTİRME FAİZ/KÂR PAYI DESTEĞİ ve İŞ GELİŞTİRME DESTEĞİ’nden aynı anda yararlanılamaz.")
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Girişimci Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
+- **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Girişimci Destek Programı, KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.
 - **Girişimci Destek Programı:** KOSGEB veri tabanına kayıtlı ve aktif olmalı
 
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
 3. Belgeler (Girişimci Destek Programı): e-Devlet üzerinden başvuru formu; Proje Bilgi Dokümanı; İşletme Durum Sorgulama ekranında 'Güncel İşletme Değerlendirme Raporu alınmıştır/alınmamıştır' görünüyorsa İşletme Değerlendirme Raporu (İDR); İş Kurma Desteği için Başvuru Formu II. Bölüm: İş Fikrine İlişkin Bilgiler.
-4. Başvuru kanalı: Girişimci Destek Programı: KOSGEB e-Hizmetler (e-Devlet şifresi ile online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/1231/girisimci-destek-programi | HALKBANK İLK ADIM KREDİSİ PROJESİ: Kredi veren bankalar: Halkbank (yalnızca yeni ve ilave TL krediler) (KOBİ bankaya kredi başvurusu yapar, banka kefalet talebini KGF'ye iletir) — https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halkbank-ilk-adim-kredisi-projesi.
+4. Başvuru kanalı (Girişimci Destek Programı): KOSGEB e-Hizmetler (e-Devlet şifresi ile online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/1231/girisimci-destek-programi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 5. İletişim (doğrulanmış): KOSGEB: çağrı merkezi 444 1 567, genel merkez 0 312 595 28 00; Hacı Bayram Mah. İstanbul Cad. No: 32 06050 Ulus / Altındağ / Ankara (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/iletisim)
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 
 ### 5. Bilgi Eksikliği / Netleştirme
 1. Panelde **İşletme profili** formunu doldurun (faaliyet/NACE, şirket türü, il, çalışan sayısı, yıllık ciro): uygunluk kararı ve ölçek, il, şirket türü şartları ancak bu bilgilerle verilebilir.
-2. Girişimci Destek Programı: “İş Kurma Desteği: KOSGEB destekli sektörde faaliyet gösteren 0-1 yaş işletme” şartını sağlıyor musunuz?
-3. Girişimci Destek Programı: “İş Geliştirme Desteği: NACE'ye göre C-İmalat, 61 Telekomünikasyon, 62 Bilgisayar programlama/danışmanlık, 63 Bilişim altyapısı/veri işleme/barındırma veya 72 Bilimsel Ar-Ge sektöründe faaliyet gösteren 0-3 yaş işletme olmak” şartını sağlıyor musunuz?
-4. HALKBANK İLK ADIM KREDİSİ PROJESİ: “İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı” şartını sağlıyor musunuz?
 Profil bilgilerini panelde **İşletme profili** formuna girerseniz değerlendirme otomatik güncellenir.
 
 *Bu yanıt Teşvik Asistanı'nın yerel danışmanı tarafından, yalnız veritabanındaki doğrulanmış kayıtlardan kuralla üretildi; verileriniz sunucumuzdan çıkmadı.*

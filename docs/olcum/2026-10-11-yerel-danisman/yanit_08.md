@@ -4,7 +4,7 @@
 - Sorduğunuz tutar: kayıtta «15.102 TL 2022 yılı değeridir».
 - Sizin için: **kapalı** — program başvuruya açık değil (dayanağı 2573 sayılı Karar 18.08.2022'de mülga (Bakanlık sayfası: güncel karşılığı 5986 m.8 Çevrim İçi Mağaza ve m.4 Dijital Pazaryeri Tanıtım desteği).
 - Son bilinen destek (bilgi için): Program yürürlükte değil: dayanağı 2573 sayılı Karar 18.08.2022'de yürürlükten kalktı (mülga; Bakanlık sayfası). E-ticaret sitesi üyelik giderinin güncel karşılığı 5986 sayılı Karar m.8 (Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği); Bakanlık sayfasının andığı m.4 (Dijital Pazaryeri Tanıtım Desteği) reklam giderini destekler, üyelik giderini kapsamaz
-- Bu kurumun diğer programları: Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) (düşük olasılık — cironuz eşiğin altında).
+- Bu kurumun diğer programları — şarta bağlı: Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (yıllık cironuz (4.000.000 TL), kaydın aradığı en az 1.000.000 USD ihracat eşiğinin TL karşılığından az).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: e-ticaret (NACE 47.91)

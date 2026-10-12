@@ -4,7 +4,7 @@
 - Sizin için: profilinize göre engel yok — şartları teyit edin.
 - Başvuru: 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (10 gün kaldı); başvuru kapanışı 26.10.2026 (14 gün kaldı).
 - Destek: Hibe: ilk 5 proje %75 (en fazla 20 M TL/proje), 6. ve sonrası %60 (en fazla 20 M TL); süre ≤36 ay
-- Bu kurumun diğer programları: 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı (profilinize göre engel yok — şartları teyit edin); 1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı (profilinize göre engel yok — şartları teyit edin); Kapasite Geliştirme Destek Programı (kapalı).
+- Bu kurumun diğer programları — engel yok: 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı, 1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı, 1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yenilik P. D. P.; şarta bağlı: 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)), Yapay Zekâ Kredi Programı (Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak), 1719 Eureka Network Çağrıları (Proje en az iki EUREKA üyesi ülkeden (en az biri AB üyesi veya Ufuk Avrupa Asosiye ülkesi) kuruluşun yer aldığı uluslararası Ar-Ge projesi olmalı), 1709 – EUREKA-EUROSTARS (En az bir Türk ve bir Eurostars üyesi ülkeden ortağın katıldığı uluslararası proje) ve 1 program daha; size kapalı ya da başvuruya kapalı: Kapasite Geliştirme Destek Programı (yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026)), Küresel Rekabetçilik Destek Programı (yeni başvuru için şu an kapalı (2026 yılı 1. başvuru dönemi: kapandı (30.09.2026)), 1832 - Sanayide Yeşil Dönüşüm Çağrısı (yeni başvuru için şu an kapalı (1832 2026-2 çağrısı: yeni başvuru için ön kayıt süresi 08.10.2026 tarihinde doldu).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 29.32)
@@ -59,8 +59,13 @@
   - Ar-Ge faaliyeti başvurudan önce tamamlanmış projeler desteklenmez — resmî metin: “Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez.”
 - **Başvuru:** Yalnızca elektronik ortamda PRODİS (https://eteydeb.tubitak.gov.tr); başvurular yıl boyunca açık — https://www.tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1509-tubitak-uluslararasi-sanayi-ar-ge-projeleri-destekleme-programi
 
+**Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- 1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yenilik P. D. P.(Teknoloji Odaklı Sanayi Hamlesi Programı) (TUBITAK) — profilinize göre engel yok — şartları teyit edin; Çağrı dönemli: duyurular www.hamle.gov.tr; ön başvuru + kesin başvuru aşamaları
+- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (32 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
+- Yapay Zekâ Kredi Programı (KOSGEB) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak); Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
+
 **Size kapalı ya da başvuruya kapalı programlar:**
-- Kapasite Geliştirme Destek Programı (KOSGEB) — kapalı: yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin)
+- Teknoloji Merkezi Destek Programı (KOSGEB) — uygun değil: aracı/ekosistem kuruluşu programı
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Ön kayıt:** 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı için yeni başvuranın ön kayıt son günü 22.10.2026 (10 gün).

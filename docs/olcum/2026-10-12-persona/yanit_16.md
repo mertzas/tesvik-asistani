@@ -29,9 +29,9 @@
 - **Başvuru:** Ticaret Bakanlığı Destek Yönetim Sistemi (DYS); başvurular ilgili İhracatçı Birlikleri Genel Sekreterliği (İBGS) tarafından sonuçlandırılır — https://ticaret.gov.tr/data/69afdacb269de120c032b73a/5973%20Say%C4%B1l%C4%B1%20Karar.pdf#madde-7
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
+- Marka ve TURQUALITY® Desteği (5973 sayılı Karar m.17) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Başvuru şartı: son 3 yıllık ortalama ihracatın en az 3.000.000 ABD Doları olması); Çağrı yoktur; kapsama alınma başvurusu sistem üzerinden Bakanlığa yapılır. Ödeme başvurusu, ödeme belgesi tarihinden itibaren en geç 6 ay içerisinde
 - Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Ödeme belgesi tarihinden itibaren 6 ay içinde
 - Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Destek süresi ön onay tarihini izleyen ayın ilk günü başlar; ödeme başvurusu ödeme belgesi tarihinden itibaren en geç 6 ay içinde, çeyrek dönemler itibarıyla
-- Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (Türk Eximbank) — profilinize göre engel yok — şartları teyit edin; Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Ticaret Bakanlığı DYS kaydı** (Yurt Dışı Fuar Desteği (5973 sayılı Karar m.7)): Destek Yönetim Sistemi'ne (DYS) şirket kaydı; MERSİS bilgileri ve NACE kodu güncel olmalı.

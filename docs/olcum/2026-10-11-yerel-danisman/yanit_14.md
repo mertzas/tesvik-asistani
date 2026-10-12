@@ -18,7 +18,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit) — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
+- **Başvuru dönemi:** Dönemsel çağrı yoktur;
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik dış ticaret sermaye şirketleri (DTSŞ), sektörel dış ticaret şirketleri (SDTŞ), imalatçı-ihracatçılar ve ihracatçılar yararlanabilir.
 - **Destek:** Hibe değil finansman (faizsiz bankacılık ilkelerine uygun): işlem bazında alt limit yoktur; KOBİ'lerde firma limiti azami yıllık net satış hasılatı veya mali bilanço tutarının yarısı, KOBİ dışı firmalarda 2 milyar 500 milyon TL'dir. Limitler Eximbank'ın likidite koşullarına göre uygulanır ve güncellenebilir. Finansman TL cinsindendir; kar payı oranı vadeye göre belirlenir.
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
@@ -58,7 +58,7 @@
 - **Başvuru:** KOSGEB KOBİ Bilgi Sistemi (online) — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı, imalatçı-ihracatçı, ihraç kaydıyla nihai mal üreten imalatçı, serbest bölgede mukim ve üçüncü ülkelere satış yapan firmalar ile döviz kazandırıcı hizmet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
+- Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracatçı, imalatçı-ihracatçı, ihraç kaydıyla nihai mal üreten imalatçı, serbest bölgede mukim ve üçüncü ülkelere satış yapan firmalar ile döviz kazandırıcı hizmet yürüten firmalar yararlanabilir); Dönemsel çağrı yoktur;
 - Yeşil Mutabakata Uyum Projesi Desteği — Responsible® Programı (5973 sayılı Karar m.14) (Ticaret Bakanlığı) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Son üç takvim yılında toplam 300.000 ABD Doları ve üzeri ihracat yapan imalatçı ve ihracatçı şirketler başvurabilir); Çağrı yoktur; programa kabul için DYS üzerinden başvurulur. Faz 1 harcamasının destek başvurusu, Faz 1 raporunun Bakanlıkça onaylandığı tarihten itibaren en geç 6 ay içinde yapılmalıdır.
 - Stratejik Ürün Destek Programı (Teknoloji Odaklı Sanayi Hamlesi Programı kapsamında) (KOSGEB) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Hamle programına Bakanlığa ön başvuru yapılmış, kesin başvuruya davet edilmiş ve Program Portali üzerinden KOSGEB'e yönlendirilmiş olmalı); Teknoloji Odaklı Sanayi Hamlesi Programı çağrı planında belirlenen sürelerde
 
@@ -73,8 +73,8 @@
 ### 4. Adım Adım Yol Haritası
 1. Diğer programlar için ayrıca: KOBİ Dijital Dönüşüm Destek Programı — KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-3. Belgeler (Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit)): Başvuru evrakı arasında Talep Formu, Muvafakatname ve Yaptırım Taahhütnamesi yer alır.; Firma Taahhütnamesi (Ek-4A) başvuru evrakı arasındadır.; Döviz Pozisyonu Bildirim Formu (Ek-5) ve Firma Döviz Pozisyon Beyanı (Ek-8) sunulur..
-4. Başvuru kanalı (Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit)): Türk Eximbank (Talep Formu ve başvuru evrakı Bankaya sunulur; sayfada ayrı bir başvuru kanalı belirtilmemiştir) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+3. Belgeler (Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit)): Başvuru evrakı arasında Talep Formu, Muvafakatname ve Yaptırım Taahhütnamesi yer alır.; Firma Taahhütnamesi (Ek-4A) başvuru evrakı arasındadır.; Döviz Pozisyonu Bildirim Formu (Ek-5) ve Firma Döviz Pozisyon Beyanı (Ek-8) sunulur.
+4. Başvuru kanalı (Türk Eximbank İhracat Destek Finansmanı (faizsiz bankacılık ilkeleriyle, TCMB kaynaklı uygun maliyetli TL finansman; KOBİ'ler için ayrı limit)): Türk Eximbank (Talep Formu ve başvuru evrakı Bankaya sunulur;gov.tr/tr/urun-ve-hizmetlerimiz/faizsiz-bankacilik/faizsiz-bankacilik-urunleri/ihracat-destek-finansmani. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 5. İletişim (doğrulanmış): KOSGEB İZMİR MÜDÜRLÜĞÜ: 0 (232) 270 15 60; Atatürk OSB 10013 Sok. P.K:35477 Çiğli/İZMİR (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=35)
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 

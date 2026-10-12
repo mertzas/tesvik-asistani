@@ -39,7 +39,7 @@
 
 **TURYIB Programı Destek Paketi — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (genel) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (genel) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman; teyit: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.
 - **Kapsam:** yalnız: Genç girişimci; yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Kredi ve kefalet limitleri:** 85 Milyon TL; kefalet oranı %80

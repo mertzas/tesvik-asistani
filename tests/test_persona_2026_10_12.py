@@ -320,3 +320,37 @@ def test_yenileme_yatirim_ihtiyaci_ve_kosgeb_kaydi():
                 tesvil_tutari="Ücretsiz eğitim (parasal destek değildir)")
     assert "kosgeb_kaydi" not in program_adimlari(egitim)
     assert "kosgeb_kaydi" in program_adimlari(_t(kurum="KOSGEB", baslik="Girişimci Destek Programı"))
+
+
+
+def test_gider_kalemi_eslesmesi():
+    dijital = _t(kurum="KOSGEB", baslik="KOBİ Dijital Dönüşüm", tesvil_tutari="Yazılım ve Donanım Giderleri için faiz desteği")
+    yonde = _t(kurum="KOSGEB", baslik="YÖNDE", tesvil_tutari="belgeli danışmandan alınan hizmet desteği")
+    soru = "Üretimi dijitalleştirmek (ERP, makinelere sensör) için hibe var mı?"
+    assert yerel_danisman.gider_kalemi_eslesmesi(soru, dijital) > yerel_danisman.gider_kalemi_eslesmesi(soru, yonde)
+    assert yerel_danisman.gider_kalemi_eslesmesi("Hangi destekler var?", dijital) == 0
+
+
+def test_bilgi_yok_cumlesi_ve_sektor_gerekcesi_tekrarlanmaz():
+    cumle = "Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir."
+    metin = yerel_danisman.tekrarlari_kisalt(f"- A: {cumle} X.\n- B: {cumle} Y..")
+    assert metin.count("belirtilmemiştir") == 1 and ".." not in metin
+    assert yerel_danisman._birlestir(["mikro; program sektörü işletmenin NACE kodlarıyla örtüşmüyor; programın sektör "
+                                      "kapsamı (imalat) faaliyetinizi kapsamıyor"]) == \
+        "mikro; programın sektör kapsamı (imalat) faaliyetinizi kapsamıyor"
+
+
+def test_kapali_cagri_eslesme_listesinde_geride(db_session):
+    from datetime import date, timedelta
+    from app.models import TesvikCagrisi
+    acik = _t(id=951, kurum="KOSGEB", baslik="Açık Program", uygunluk_kriterleri={"sektorler": ["imalat"]})
+    kapali = _t(id=952, kurum="KOSGEB", baslik="Kapanmış Program", uygunluk_kriterleri={"sektorler": ["imalat"]})
+    db_session.add_all([acik, kapali])
+    db_session.add(TesvikCagrisi(tesvik_id=952, ad="2026/2", acilis=date.today() - timedelta(days=120),
+                                 kapanis=date.today() - timedelta(days=10), kaynak_url="https://t/c952",
+                                 dogrulama_tarihi=date.today()))
+    db_session.commit()
+    p = FinancialProfile(sektor="imalat", sirket_turu="limited", calisan_sayisi=20, yillik_ciro=30e6)
+    sonuc = {e.tesvik.id: e for e in esles(p, db_session, limit=10_000)}
+    assert sonuc[952].siralama < sonuc[951].siralama
+    assert any("Başvuru dönemi şu an kapalı" in x for x in sonuc[952].eksik_kriterler)

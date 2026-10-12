@@ -46,7 +46,7 @@
 
 **TARIM KEFALET DESTEK PROGRAMI — KGF**
 - **Başvuru dönemi:** Sürekli (banka şubesi üzerinden bireysel başvuru)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman; teyit: Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Belirttiğiniz hedeflerle eşleşiyor: finansman; teyit: Bu destek belirli sektörlere özeldir. Profilinize faaliyet (NACE) kodunuzu girerseniz uygunluğu netleşir; teyit: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Kredi ve kefalet limitleri:** İşletme kredisi 10 Milyon TL (azami 24 ay), yatırım kredisi 20 Milyon TL (azami 60 ay), 12 ay ödemesiz; %80 kefalet; başvuru ücreti kredinin %0,15'i (asgari 10.000 TL)
 - **Hesaplama:** İşletme kredisi 10 milyon TL'ye, yatırım kredisi 20 milyon TL'ye kadar; kefalet oranı %80. Başvuru ücreti kredi tutarının %0,15'i (asgari 10.000 TL), yıllık komisyon %2.

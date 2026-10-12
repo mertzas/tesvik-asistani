@@ -74,7 +74,7 @@ Mevzuat notu: Ticaret Bakanlığı bilişim/SaaS hizmet ihracatı destekleri 1/1
 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-2. Belgeler (Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)): Vergi dairesinden 'GVK Mükerrer 20/B Maddesi Uygulamasına İlişkin İstisna Belgesi' alınmalıdır..
+2. Belgeler (Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)): Vergi dairesinden 'GVK Mükerrer 20/B Maddesi Uygulamasına İlişkin İstisna Belgesi' alınmalıdır.
 3. Başvuru kanalı (Mobil Uygulama Geliştiricilerinde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20/B)): İkametgâhın bulunduğu yerdeki tarha yetkili vergi dairesi — https://cdn.gib.gov.tr/api/gibportal-file/file/getFile?objectKey=DUYURU%2FUNIVERSAL%2F2026%2FTicariKazanc2026.pdf#mukerrer-20b. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 4. İletişim (doğrulanmış): KOSGEB Ankara OSTİM Müdürlüğü: 0 312 595 25 83; Uzayçağı Cad. No:146 Ostim - Yenimahalle / ANKARA (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=6)
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.

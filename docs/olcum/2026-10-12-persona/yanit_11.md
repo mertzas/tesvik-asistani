@@ -62,7 +62,7 @@
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan:** Aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi yasal süresinde verilmelidir.
-- **Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan:** Başvuru yeri: Kaynak sayfada ayrı bir başvuru yeri belirtilmemiştir; yararlanma, aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesinin yasal süresinde verilmesi şartına bağlıdır.
+- **Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan:** Başvuru yeri: yararlanma, aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesinin yasal süresinde verilmesi şartına bağlıdır.
 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.

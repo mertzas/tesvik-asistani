@@ -4,7 +4,7 @@
 - Sizin için: şarta bağlı — profilinizden doğrulanamayan önemli şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak.
 - Başvuru: Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Kredi koşulları (hibe değil): Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz); GO Dijital Cüzdan'a blokeli, bankadan Kesin Teminat Mektubu zorunlu (limit = teminat tutarı, en az 500.000 TL); geçerli Teknogirişim Rozeti şartı
-- Bu kurumun diğer programları: KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi (profilinize göre engel yok — şartları teyit edin).
+- Bu kurumun diğer programları — engel yok: KOSGEB Girişimcilik Eğitimi; size kapalı ya da başvuruya kapalı: KOBİ Dijital Dönüşüm Destek Programı (ölçek uygun değil: 9 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme), YÖNDE - Yönderlik ve Değerlendirme Destek Programı (ölçek uygun değil: 9 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: hizmet (NACE 85.53)
@@ -17,7 +17,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Yapay Zekâ Kredi Programı — KOSGEB**
-- **Başvuru dönemi:** Sayfada dönem/son tarih belirtilmiyor; başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
+- **Başvuru dönemi: başvuru KOSGEB bilgi sistemi üzerinden elektronik ortamda, koşullar sistemce otomatik kontrol edilir
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Başvuru tarihi itibarıyla geçerli Teknogirişim Rozeti sahibi olmak.
 - **Karşıladığı ihtiyaç:** dijital dönüşüm
 - **Destek:** Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz); GO Dijital Cüzdan'a blokeli, bankadan Kesin Teminat Mektubu zorunlu (limit = teminat tutarı, en az 500.000 TL); geçerli Teknogirişim Rozeti şartı
@@ -39,6 +39,12 @@
 - **Kurallar (kayıttan):**
   - Sınıf ortamındaki eski (2010-2020) uygulamalı girişimcilik eğitimi katılım belgeleri 31 Aralık 2020'ye kadar geçerliydi; bunlar artık geçerli değildir, online eğitim alınmalıdır. — resmî metin: “2010-2020 yılları arasında sınıf ortamındaki eğitim sonucunda alınan uygulamalı girişimcilik eğitimi katılım belgeleri, 31 Aralık 2020 tarihine kadar geçerliliğini koruyacak.”
 - **Başvuru:** KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi
+
+**KOBİ Dijital Dönüşüm Destek Programı — KOSGEB** (uygun değil)
+- **Neden:** ölçek uygun değil: 9 çalışan, mali büyüklük ≤ 10.000.000 TL: mikro işletme; program en az küçük ölçeğindeki işletmelere açık; programın sektör kapsamı (imalat) faaliyetinizi (NACE 85.53) kapsamıyor.
+- **Destek:** ₺1.000.000 - ₺20.000.000 kredi (faiz desteği geri ödemesiz) Hesaplama: Kredi faiz giderlerine geri ödemesiz destek, kredi limiti ₺1.000.000-₺20.000.000, azami vade 36 ay
+- **Ne yapabilirsiniz:** Profilinizdeki ilgili bilgi değişirse yeniden değerlendirin.
+- **Kaynak:** https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9144/kobi-dijital-donusum-destek-programi
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (Yapay Zekâ Kredi Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.

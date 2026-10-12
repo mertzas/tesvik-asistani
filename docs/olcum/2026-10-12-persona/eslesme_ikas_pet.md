@@ -25,24 +25,25 @@ profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'İstanbul', 'cal
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
 12. [0] KGF Özkaynak Kefalet Programı — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
-13. [0] TKYB KREDİ DESTEK PAKETİ — KGF (aktif=True)
+13. [0] TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
-14. [0] TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI — KGF (aktif=True)
+14. [0] Ziraat Katılım Bankası Katılım Finans Destek Paketi — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
-15. [0] Ziraat Katılım Bankası Katılım Finans Destek Paketi — KGF (aktif=True)
-    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
-16. [0] GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI — KGF (aktif=True)
+15. [0] GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: Bu KGF paketi, ilgili KOSGEB programına kabul edildikten sonra kullanılabilir; önce KOSGEB programına başvurun.
-17. [0] KOSGEB Geri Ödemeli Destekleri — KGF (aktif=True)
+16. [0] KOSGEB Geri Ödemeli Destekleri — KGF (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
     eksik: Bu KGF paketi, ilgili KOSGEB programına kabul edildikten sonra kullanılabilir; önce KOSGEB programına başvurun.
-18. [0] Girişimci Destek Programı — KOSGEB (aktif=True)
+17. [0] KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-19. [0] İş Sağlığı ve Güvenliği Hizmetlerinin Desteklenmesi — 10'dan Az Çalışanlı Tehlikeli/Çok Tehlikeli İşyerlerine Ödeme (6331 sayılı Kanun m.7) — SGK / İŞKUR (aktif=True)
+18. [0] İş Sağlığı ve Güvenliği Hizmetlerinin Desteklenmesi — 10'dan Az Çalışanlı Tehlikeli/Çok Tehlikeli İşyerlerine Ödeme (6331 sayılı Kanun m.7) — SGK / İŞKUR (aktif=True)
     gerekçe: Bu destek sektörden bağımsız genel bir programdır.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
-20. [0] KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — KOSGEB (aktif=True)
-    gerekçe: Bu destek sektörden bağımsız genel bir programdır.
-    eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+19. [0] HALKBANK İLK ADIM KREDİSİ PROJESİ — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+    eksik: İşletme sahibinin en çok 29 yaşında olması gerekir; yaşınızı profile girerseniz netleşir.
+20. [0] TKYB KREDİ DESTEK PAKETİ — KGF (aktif=True)
+    gerekçe: Bu destek sektörden bağımsız genel bir programdır.; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+    eksik: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.

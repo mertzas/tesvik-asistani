@@ -16,7 +16,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Türk Eximbank TİM Wings Programı (kadın ihracatçılara 3 yıla kadar vadeli TL kredi) — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
+- **Başvuru dönemi:** Dönemsel çağrı yoktur;
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
 - **Kapsam:** yalnız: Kadın girişimci / kadınların yönettiği işletme
 - **Karşıladığı ihtiyaç:** ihracat
@@ -29,7 +29,7 @@
 - **Başvuru:** Türk Eximbank (en yakın Şube veya İhracat Destek Hizmetleri Merkezi); Kadın Girişimci Belgesi için TSE web başvurusu — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/tim-wings-programi
 
 **Türk Eximbank E-İhracat Destek Kredisi — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir.
 - **Karşıladığı ihtiyaç:** ihracat
 - **Destek:** Hibe değil kredi: firma bazında kullandırım üst limiti 500.000 TL; vade azami 12 ay; İGE kefaleti karşılığında kullandırılır.

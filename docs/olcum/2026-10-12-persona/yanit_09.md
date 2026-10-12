@@ -16,7 +16,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği — TARSİM**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi belirtilmemiştir.
+- **Başvuru dönemi:** Dönemsel çağrı yoktur;
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (tarim) bu desteğin kapsamına uygun; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
 - **Karşıladığı ihtiyaç:** ürün/alacak sigortası
 - **Destek:** Sigorta priminin devletçe karşılanan kısmı: genel yüzde 50; açık alan meyve, bazı sebzeler, patates, şekerpancarı, meyve-bağ fidanı ve kış donunda yüzde 70; köy bazlı verimde yüzde 70; büyükbaş dar kapsamlıda yüzde 60; gelir koruma sigortasında yüzde 60 (2026).
@@ -51,8 +51,8 @@
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: Çiftçi Kayıt Sistemi (ÇKS) kaydı.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-3. Başvuru adımları (TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği): Başvuru yeri: TARSİM (tarsim.gov.tr); sigorta TARSİM kapsamında yapılır. Kaynak haberde başvuru kanalı ayrıca belirtilmemiştir..
-4. Başvuru kanalı (TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği): TARSİM (tarsim.gov.tr); sigorta TARSİM kapsamında yapılır. Kaynak haberde başvuru kanalı ayrıca belirtilmemiştir. — https://www.tarimorman.gov.tr/Haber/6912/Tarsim-Tarafindan-2026da-Teminat-Altina-Alinacak-Urun-Ve-Riskler-Belirlendi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
+3. Başvuru adımları (TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği): Başvuru yeri: TARSİM (tarsim.gov.tr); sigorta TARSİM kapsamında yapılır. .
+4. Başvuru kanalı (TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği): TARSİM (tarsim.gov.tr); sigorta TARSİM kapsamında yapılır.  — https://www.tarimorman.gov.tr/Haber/6912/Tarsim-Tarafindan-2026da-Teminat-Altina-Alinacak-Urun-Ve-Riskler-Belirlendi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 5. İletişim (doğrulanmış): Aydın Tarım ve Orman İl Müdürlüğü: iletişim bilgisi için resmî sayfa: https://aydin.tarimorman.gov.tr/Iletisim
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 

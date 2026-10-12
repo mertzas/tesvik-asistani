@@ -65,7 +65,7 @@
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **2026 Yılı Asgari Ücret Desteği (işveren sigorta primlerinden mahsup, İşsizlik Sigortası Fonu):** Aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi yasal süresinde verilmelidir.
-- **2026 Yılı Asgari Ücret Desteği (işveren sigorta primlerinden mahsup, İşsizlik Sigortası Fonu):** Başvuru yeri: Kaynak sayfada ayrı başvuru yeri belirtilmemiştir; destek, SGK'ya verilen aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi üzerinden prim ödemesinden mahsup edilir.
+- **2026 Yılı Asgari Ücret Desteği (işveren sigorta primlerinden mahsup, İşsizlik Sigortası Fonu):** Başvuru yeri: destek, SGK'ya verilen aylık prim ve hizmet belgesi / muhtasar ve prim hizmet beyannamesi üzerinden prim ödemesinden mahsup edilir.
 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.

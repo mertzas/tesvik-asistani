@@ -75,7 +75,7 @@
 ### 4. Adım Adım Yol Haritası
 1. Ön koşul kayıtlar: Çiftçi Kayıt Sistemi (ÇKS) kaydı.
 2. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-3. Başvuru adımları (Fındık Temel Desteği — Bitkisel Üretim Temel Destek, 3. kategori (2026 üretim yılı)): Temel destek için ayrı dilekçe verilmez; ÇKS'ye kayıtlı çiftçi başvurmuş sayılır.; Başvuru yeri: Kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (ÇKS kaydı). Ödeme T.C. Ziraat Bankası hesabına yapılır..
+3. Başvuru adımları (Fındık Temel Desteği — Bitkisel Üretim Temel Destek, 3. kategori (2026 üretim yılı)): Temel destek için ayrı dilekçe verilmez; ÇKS'ye kayıtlı çiftçi başvurmuş sayılır.; Başvuru yeri: Kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (ÇKS kaydı). Ödeme T.C. Ziraat Bankası hesabına yapılır.
 4. Başvuru kanalı (Fındık Temel Desteği — Bitkisel Üretim Temel Destek, 3. kategori (2026 üretim yılı)): Kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (ÇKS kaydı). Ödeme T.C. Ziraat Bankası hesabına yapılır. — https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#findik-temel-destek. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 5. İletişim (doğrulanmış): Tarım Bakanlığı: çağrı merkezi 180 (Alo 180); Üniversiteler Mah. Dumlupınar Bulvarı, No: 161, 06800, Çankaya / Ankara (doğrulama: https://timer.tarimorman.gov.tr/Home/Hakkinda) · Ordu Tarım ve Orman İl Müdürlüğü: iletişim bilgisi için resmî sayfa: https://ordu.tarimorman.gov.tr/Iletisim
 6. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.

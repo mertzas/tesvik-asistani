@@ -17,7 +17,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Türk Eximbank E-İhracat Destek Kredisi — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir.
 - **Karşıladığı ihtiyaç:** dijital dönüşüm, ihracat
 - **Destek:** Hibe değil kredi: firma bazında kullandırım üst limiti 500.000 TL; vade azami 12 ay; İGE kefaleti karşılığında kullandırılır.
@@ -31,7 +31,7 @@
 - **Başvuru:** Türk Eximbank; başvuru Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi
 
 **Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
+- **Başvuru dönemi:** Dönemsel çağrı yoktur;
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır.
 - **Karşıladığı ihtiyaç:** ihracat
 - **Destek:** Hibe değil kredi: marka geliştirme/tutundurma harcamaları ile yurt dışında yerleşik marka ve ilgili mağaza, tesis alım bedelleri finanse edilir. Firma limitleri Eximbank'ça firma bazında belirlenir; faiz/kar payı vade, tutar ve para birimine göre belirlenir.
@@ -70,7 +70,7 @@
 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-2. Belgeler (Türk Eximbank E-İhracat Destek Kredisi): Kredi Talep Formu, Otomatik Taahhüt Kapatma Talimat Formu ve İGE Kefaleti Başvuru Belgeleri..
+2. Belgeler (Türk Eximbank E-İhracat Destek Kredisi): Kredi Talep Formu, Otomatik Taahhüt Kapatma Talimat Formu ve İGE Kefaleti Başvuru Belgeleri.
 3. Başvuru kanalı (Türk Eximbank E-İhracat Destek Kredisi): Türk Eximbank; başvuru Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 4. İletişim (doğrulanmış): KOSGEB İstanbul İkitelli Müdürlüğü: 0 (212) 405 41 50; İkitelli Organize Sanayi Bölgesi ESKOOP Sanayi Sitesi P.K.:34306 İkitelli/İSTANBUL (doğrulama: https://www.kosgeb.gov.tr/site/tr/genel/mudurluktekil?ID=34)
 5. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.

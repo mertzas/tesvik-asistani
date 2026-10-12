@@ -572,7 +572,9 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20,
     _olcek = kobi_sinifi(profil.calisan_sayisi, profil.yillik_ciro)
     olcek_sinifi = _olcek.sinif if _olcek.kesin else None
 
-    for t in db.query(Tesvik).options(selectinload(Tesvik.nace_kayitlari)).all():
+    from datetime import date as _date
+    bugun = _date.today()
+    for t in db.query(Tesvik).options(selectinload(Tesvik.nace_kayitlari), selectinload(Tesvik.cagrilar)).all():
         # KAPANDIGI DOGRULANMIS programlari hic onerme. Bunlar bir firsat
         # degil; kullanici arayip "bu program bitti" cevabi alir ve sistemin
         # tamamina olan guveni sarsilir. (Tespit: imalat profiline gelen ilk
@@ -866,6 +868,24 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20,
             ceza += 0.2
             eksik.append("Öncelikle şu işletmelere yönelik: " + ", ".join(
                 OZELLIK_ETIKETLERI.get(x, x) for x in sorted(program.target_group_tags)) + ".")
+        # (e) Hakem bulgusu 2026-10-12, 4. tur (eşleşme listeleri): ilk 10'da çağrısı kapanmış program, asgari
+        #     yatırımı yıllık cironun üzerindeki 9903 programı ve cironun tamamı ihracat olsa bile USD eşiğine
+        #     ulaşılamayan program vardı. Uygunluk değil ilgi/zamanlama: liste dışına atılmaz, geriye alınır.
+        if ilgi_cezalari:
+            from app import yerel_danisman as _yd
+            donem, c = _yd.cagri_bilgisi(t, bugun)
+            if donem in ("kapandi", "on_kayit_kapandi"):
+                ceza += 0.3
+                eksik.append("Başvuru dönemi şu an kapalı" + (f" ({c['ad']})" if c and c.get("ad") else "")
+                             + "; yeni çağrıyı izleyin.")
+            if _yd._buyuk_olcekli(t, profil):
+                ceza += 0.2
+                eksik.append("Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.")
+            usd = _yd.usd_esigi(t)
+            if usd and profil.yillik_ciro and profil.yillik_ciro < usd[0] * _yd.ASGARI_USD_TRY:
+                ceza += 0.3
+                eksik.append(f"Kaydın aradığı en az {usd[0]:,.0f} USD {usd[1]} eşiği yıllık cironuzun üzerinde."
+                             .replace(",", "."))
         if ilgi_cezalari and kriterler.get("kurucu_yasi_max") and getattr(profil, "kurucu_yasi", None) is None:
             # Yaş şartlı ürün (genç girişimci kredisi) yaşı bilinmeyen profilde lider olmasın (otel denemesi).
             ceza += 0.2

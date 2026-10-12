@@ -14,7 +14,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Türk Eximbank E-İhracat Destek Kredisi — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; E-ihracat taahhüdü kredi kullanım tarihinden itibaren 24 ay içinde kapatılır.
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: KOBİ ve KOBİ dışı işletmeler, basitleştirilmiş gümrük beyannamesi veya gümrük beyannamesi ile e-ihracat faaliyetini tevsik etmelidir.
 - **Karşıladığı ihtiyaç:** ihracat, kredi/finansman
 - **Destek:** Hibe değil kredi: firma bazında kullandırım üst limiti 500.000 TL; vade azami 12 ay; İGE kefaleti karşılığında kullandırılır.
@@ -28,7 +28,7 @@
 - **Başvuru:** Türk Eximbank; başvuru Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi
 
 **Türk Eximbank İhracata Yönelik Yatırım Kredisi (makine, teçhizat ve aksam harcamaları) — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir. Talep, Eximbank'ın fon uygunluğuna bağlı olarak işleme alınır.
+- **Başvuru dönemi:** Dönemsel çağrı yoktur; Talep, Eximbank'ın fon uygunluğuna bağlı olarak işleme alınır.
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı, döviz kazandırıcı hizmet firmaları ve serbest bölge faaliyet ruhsatı sahibi firmalar yararlanır.
 - **Karşıladığı ihtiyaç:** ihracat, kredi/finansman
 - **Destek:** Hibe değil kredi: kredi başvuru tarihinden azami 180 gün öncesine kadar yapılan makine, teçhizat ve aksam harcamaları KDV hariç tutar üzerinden finanse edilir. İhracat taahhüdü 5 yıla kadar vadeli kredilerde 1 katı, 5 yıldan uzun vadeli kredilerde 1,5 katıdır; taahhüt cezası toplam faizin 5 yıla kadar kredilerde %20'si, 5 yıldan uzun kredilerde %30'udur. Faiz/kar payı vade, tutar ve para birimine göre belirlenir.
@@ -41,7 +41,7 @@
 - **Başvuru:** Bağlı bulunulan Türk Eximbank Şubesi (geçerli limit varsa Kredi Talep Formu ve onaylı harcama listesiyle) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/orta-uzun-vadeli-ihracat-kredileri/ihracata-yonelik-yatirim-kredisi
 
 **Türk Eximbank Sevk Öncesi İhracat Kredisi (SÖİK) — aracı bankalar üzerinden — Türk Eximbank**
-- **Başvuru dönemi:** Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
+- **Başvuru dönemi:** Dönemsel çağrı yoktur;
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Dış Ticaret Sermaye Şirketleri (DTSŞ) hariç, Türkiye'de yerleşik ihracatçı, imalatçı-ihracatçı ve ihraç kaydıyla nihai mal üretimi yapan imalatçı firmalar yararlanır.
 - **Karşıladığı ihtiyaç:** ihracat, kredi/finansman
 - **Destek:** Hibe değil kredi: Eximbank firma bazında limit belirleyebilir; işlem bazında alt limit yoktur. Faiz/kar payı oranları vade, tutar ve para birimine göre belirlenir; aracı bankalar TL kredilerde azami yıllık 1, döviz kredilerinde azami yıllık 0,5 puan aracılık komisyonu ekleyebilir.
@@ -55,8 +55,8 @@
 - **Başvuru:** Türk Eximbank'ın kredi tahsis ettiği aracı bankalar (kredi müracaatı aracı bankalara yapılır) — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/sevk-oncesi-ihracat-kredisi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Türk Eximbank Reeskont Kredisi (TCMB işbirliğiyle, TL/Döviz) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracata yönelik mal üreten imalatçılar, döviz kazandırıcı hizmet ihracı yapan firmalar ve tüm ihracatçılar yararlanır); Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
-- Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır); Dönemsel çağrı yoktur; kaynakta başvuru tarihi veya son başvuru süresi belirtilmemiştir.
+- Türk Eximbank Reeskont Kredisi (TCMB işbirliğiyle, TL/Döviz) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İhracata yönelik mal üreten imalatçılar, döviz kazandırıcı hizmet ihracı yapan firmalar ve tüm ihracatçılar yararlanır); Dönemsel çağrı yoktur;
+- Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik ihracata yönelik mal üreten imalatçı, imalatçı-ihracatçı ve ihracatçı firmalar ile serbest bölgelerde üretime veya alım-satıma yönelik geçerli faaliyet ruhsatı sahibi firmalar yararlanır); Dönemsel çağrı yoktur;
 - Türk Eximbank İhracata Yönelik İşletme Sermayesi Kredisi (Türk Eximbank) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik imalatçı-ihracatçı, ihracata yönelik mal üreten imalatçı ve ihracatçı vasfına haiz firmalar, Türkiye menşeli veya Dahilde İşleme Rejimi kapsamında ithal edilen malların ihracı için yararlanabilir); Dönemsel çağrı yoktur; geçerli kredi limiti olan firma kredi talep formu ve onaylı harcama listesiyle şubeye başvurur. Harcamalar kredi başvuru tarihinden azami 180 gün öncesine kadar olabilir.
 
 ### 3. Darboğazlar ve Kritik Şartlar
@@ -65,7 +65,7 @@
 
 ### 4. Adım Adım Yol Haritası
 1. Kartlardaki 'teyit edin' şartlarını panelde programın **Kontrol listesi**'nde Evet/Hayır olarak işaretleyin; 'Hayır' çıkan şart o programı kapatır.
-2. Belgeler (Türk Eximbank E-İhracat Destek Kredisi): Kredi Talep Formu, Otomatik Taahhüt Kapatma Talimat Formu ve İGE Kefaleti Başvuru Belgeleri..
+2. Belgeler (Türk Eximbank E-İhracat Destek Kredisi): Kredi Talep Formu, Otomatik Taahhüt Kapatma Talimat Formu ve İGE Kefaleti Başvuru Belgeleri.
 3. Başvuru kanalı (Türk Eximbank E-İhracat Destek Kredisi): Türk Eximbank; başvuru Eximbank ile İGE arasındaki Hazine Destekli Kefalet İşlemleri Protokolü kapsamında yapılır — https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler/kisa-vadeli-ihracat-kredileri/e-ihracat-destek-kredisi. Diğer programların başvuru yeri kartlarındaki **Başvuru** satırında.
 4. Başvuru sonrası: kurum portalından durumu izleyin, ek belge taleplerine süresinde yanıt verin; panelde **Taslak** düğmesi başvuru metninin şablonunu hazırlar.
 

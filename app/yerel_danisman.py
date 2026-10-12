@@ -242,7 +242,12 @@ def _birlestir(parcalar: list[str]) -> str:
         if p and _norm(p) not in gorulen:
             gorulen.add(_norm(p))
             sonuc.append(p)
-    return "; ".join(sonuc)
+    metin = "; ".join(sonuc)
+    # İki sektör gerekçesi aynı şeyi söyler; ayrıntılı olan ("programın sektör kapsamı (imalat) ...") kalır (hakem
+    # bulgusu 4. tur: ret gerekçesinde iki sektör cümlesi yan yanaydı).
+    if "programın sektör kapsamı" in metin:
+        metin = re.sub(r"(?:; )?program sektörü işletmenin NACE kodlarıyla örtüşmüyor", "", metin).lstrip("; ")
+    return metin
 
 
 _IC_ETIKET = re.compile(r"^(?:⚠️\s*)?(?:Denetim\d?(?:-T\d+)?|[Tt]ur\d+)\s+\d{4}-\d{2}-\d{2}:\s*")
@@ -2225,9 +2230,19 @@ def kisa_cevap(niyet: set[str], odak: list[Degerlendirme], adaylar: list[Degerle
             else:
                 satir.insert(1, f"- Sorduğunuz {ad} için bu kurumun kayıtlı bir programı yok; aşağıdaki program "
                                 "farklı bir ihtiyaca yöneliktir.")
-        if len(odak) > 1:
-            etiket = "Bu kurumun diğer programları" if odak_turu == "kurum" else "Adıyla eşleşen diğer kayıtlar"
-            satir.append(f"- {etiket}: " + "; ".join(
+        if len(odak) > 1 and odak_turu == "kurum":
+            # Kurum sorusunda ("KOSGEB'den ne alabiliriz?") kurumun bütün programları durumuna göre gruplanır: hakem
+            # bulgusu 4. tur, mikro matbaa ve sürücü kursu yanıtlarında "KOSGEB'in makine/dijital programları size
+            # kapalı, açık tek seçenek X" hükmü yoktu.
+            gruplar = [("engel yok", [x for x in odak[1:] if x.karar == "sartli"]),
+                       ("şarta bağlı", [x for x in odak[1:] if x.karar == "belirlenemedi"]),
+                       ("size kapalı ya da başvuruya kapalı", kurum_ozeti_kapali(odak))]
+            parca = [f"{ad}: " + ", ".join(f"{_kisa_ad(x.tesvik.baslik)}" + (
+                f" ({_kisa_neden(x)})" if ad != "engel yok" and _kisa_neden(x) else "") for x in xs[:4])
+                + (f" ve {len(xs) - 4} program daha" if len(xs) > 4 else "") for ad, xs in gruplar if xs]
+            satir.append("- Bu kurumun diğer programları — " + "; ".join(parca) + ".")
+        elif len(odak) > 1:
+            satir.append("- Adıyla eşleşen diğer kayıtlar: " + "; ".join(
                 f"{x.tesvik.baslik} ({karar_etiketi(x).lower()})" for x in odak[1:4]) + ".")
         return _soruyu_one_al(satir, niyet)
     if triyaj:
@@ -2325,13 +2340,63 @@ def kisa_cevap(niyet: set[str], odak: list[Degerlendirme], adaylar: list[Degerle
             d = ilgili[0]
             satir.append(f"- Sorunuza doğrudan yönelik ama size kapalı: {d.tesvik.baslik} — "
                          f"{_kisalt(_birlestir(d.gerekce[:1]), 220)}.")
-    if elenen:
-        satir.append(f"- {len(elenen)} program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).")
+    ozette = set(map(id, kurum_ozeti_kapali(odak)[:4])) if odak_turu == "kurum" else set()
+    kalan = [d for d in elenen if id(d) not in ozette]
+    if kalan:
+        satir.append(f"- {len(kalan)} program size kapalı ya da başvuruya kapalı (gerekçeleri aşağıda).")
     return satir
 
 
 # ------------------------------------------------------------------ ana giriş
 _TEKRAR_TAKVIM = re.compile(r"Dönemsel başvuru yok: [^\n]*?\(kayıt kontrolü: [0-9.]+\)")
+
+
+# Sorudaki gider kalemi ↔ programın desteklediği gider (katlanmış soru kalıbı, kayıt metni kalıbı). Hakem bulgusu 4. tur:
+# "ERP, makinelere sensör" sorusunda danışmanlık hizmeti desteği (YÖNDE), yazılım-donanım giderini karşılayan KOBİ
+# Dijital Dönüşüm'ün önündeydi.
+_GIDER_KALEMLERI = (
+    (r"\berp\b|yazilim|donanim|sensor|otomasyon|\biot\b|\bmes\b|randevu sistem", r"yazılım|donanım"),
+    (r"danisman", r"danışman"),
+    (r"kargo|gonderi|nakliye|navlun", r"kargo|lojistik|nakliye|navlun|gönderi"),
+    (r"\bkira", r"\bkira"),
+    (r"fuar", r"fuar"),
+    (r"makine|ekipman|firin|cnc|tezgah", r"makine|teçhizat|ekipman"),
+    (r"komisyon", r"komisyon"),
+    (r"sertifika|belgelendirme", r"sertifika|belgelendirme"),
+)
+
+
+def gider_kalemi_eslesmesi(soru: str, t) -> int:
+    """Sorudaki gider kalemlerinden kaçını programın tutar/ayrıntı/kural metni destekliyor."""
+    s = _katla(soru)
+    metin = " ".join(str(x or "") for x in (t.tesvil_tutari, t.ozet, t.detay)) + " " + " ".join(
+        m.get("metin", "") for m in (t.kontrol_listesi or []) if m.get("tur") in ("kural", "bilgi"))
+    return sum(1 for sk, pk in _GIDER_KALEMLERI if re.search(sk, s) and re.search(pk, metin, re.I))
+
+
+def kurum_ozeti_kapali(odak: list["Degerlendirme"]) -> list["Degerlendirme"]:
+    """Kurum sorusunun kısa cevap özetinde gerekçesiyle anılan kapalı programlar (en çok 4); bunlar aşağıdaki
+    "kapalı programlar" listesinde yinelenmez."""
+    return [x for x in odak[1:] if x.karar in ("kapali", "uygun_degil")
+            and not any("aracı/ekosistem" in g for g in x.gerekce)]
+
+
+def _kisa_ad(baslik: str | None) -> str:
+    """Program adının parantezsiz, " — " öncesi kısmı (özet satırları için)."""
+    ad = re.sub(r"\s*\([^()]*\)", "", (baslik or "").split(" — ")[0]).strip()
+    return _kisalt(ad or baslik or "", 70)
+
+
+def _kisa_neden(d: "Degerlendirme") -> str:
+    """Karar gerekçesinin özet satırına sığan kısmı (önek ve kayıt alıntısı olmadan)."""
+    if not d.gerekce:
+        return ""
+    g = d.gerekce[0]
+    for onek in (KILIT_ONEKI + ": ", KISI_ONEKI + ": ", "düşük olasılık: "):
+        if g.startswith(onek):
+            g = g[len(onek):]
+    g = g.split(" — kayıttaki şart:")[0].split("; kayıttaki")[0]
+    return _cumle_kisalt(g, 90).rstrip(".")
 
 
 def tekrarlari_kisalt(metin: str) -> str:
@@ -2352,7 +2417,25 @@ def tekrarlari_kisalt(metin: str) -> str:
     ilk = metin.find(ek)
     if ilk >= 0:
         metin = metin[:ilk + len(ek)] + metin[ilk + len(ek):].replace(ek, "")
+    # Kayıttan gelen "bilgi yok" cümleleri ("Kaynak sayfada ayrı bir başvuru yeri belirtilmemiştir", "Dönemsel çağrı
+    # yoktur; kaynakta başvuru tarihi belirtilmemiştir") yalnız ilk geçtiği yerde kalır (hakem bulgusu 4. tur: aynı
+    # cümle kartta, Darboğazlar'da ve yol haritasının iki adımında 4-6 kez yineleniyordu).
+    gorulen_cumle: set[str] = set()
+
+    def _cumle(m):
+        anahtar = _norm(m.group(0))
+        if anahtar in gorulen_cumle:
+            return ""
+        gorulen_cumle.add(anahtar)
+        return m.group(0)
+    metin = _BILGI_YOK_CUMLESI.sub(_cumle, metin)
+    metin = re.sub(r"(?<![.\w])\.\.(?!\.)|(?<=\w)\.\.(?!\.)", ".", metin)   # çift nokta (ellipsis "..." değil)
+    metin = re.sub(r"[ \t]+;", ";", re.sub(r";\s*;", ";", metin))
     return metin
+
+
+_BILGI_YOK_CUMLESI = re.compile(r"(?<=[\s(:;])[^.;:()\n]{0,80}?(?:belirtilmemiştir|belirtilmemiş|belirtilmiyor)"
+                                r"[^.;\n]{0,160}[.;]?")
 
 
 # Kayıt notlarındaki veri işleme ifadeleri kullanıcı diline çevrilir (anlam aynı: bilgi kayıtta yok, kaynaktan teyit).
@@ -2391,6 +2474,12 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
         if kurumlar and soru_ihtiyaclari(soru):
             # "KOSGEB'den makine desteği": kurum bir filtredir; sıra aramanın (ihtiyaç) sırasıdır.
             kurum_kayit = [t for t in kayitlar if t.kurum in kurumlar]
+            # Profile kapalı olduğu için aramadan elenen ama soruya yönelik kurum programları da değerlendirilir; yanıt
+            # "kurumun dijital programı size kapalı (mikro ölçek)" diyebilsin (hakem bulgusu 4. tur, sürücü kursu).
+            _ih = set(soru_ihtiyaclari(soru))
+            kurum_kayit += [t for t in tum if t.kurum in kurumlar and t.aktif_mi is not False and isletmeye_yonelik_mi(t)
+                            and program_ihtiyaclari(t) & _ih and t not in kurum_kayit
+                            and not _DURUM_PROGRAMI.search(t.baslik or "")]
         else:
             kurum_kayit = sorted((t for t in tum if t.kurum in kurumlar and isletmeye_yonelik_mi(t)),
                                  key=lambda t: t.aktif_mi is False)
@@ -2604,7 +2693,8 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
             girisim_disi = (getattr(profil, "sirket_turu", None) not in (None, "yok") and p_ihtiyac == {"girisim"}
                             and "girisim" not in soru_ihtiyac_seti)
             return (not ozel, kurulu_ister, d.tesvik.id not in kurulus_idleri, donem_sira[d.donem] == 2,
-                    pazaryeri_ici, dusuk, istihdam_sira, -_ad_eslesmesi(d.tesvik), ihtiyac_disi, girisim_disi, _dar_kitle(d.tesvik) and not kitle_soruda,
+                    pazaryeri_ici, dusuk, istihdam_sira, -_ad_eslesmesi(d.tesvik), ihtiyac_disi,
+                    -gider_kalemi_eslesmesi(soru, d.tesvik), girisim_disi, _dar_kitle(d.tesvik) and not kitle_soruda,
                     kilitli,
                     _buyuk_olcekli(d.tesvik, profil),
                     pazaryeri_disi, -len(p_ihtiyac & soru_ihtiyac_seti), ilk_ihtiyac, kredi_istenmedi, _dar_kitle(d.tesvik),
@@ -2703,6 +2793,10 @@ def yanitla(soru: str, kayitlar: list, profil=None, notlar: dict[int, str] | Non
                       *[f"- {d.tesvik.baslik} ({d.tesvik.kurum}) — {karar_etiketi(d).lower()}"
                         + (f" ({_cumle_kisalt(_birlestir(d.gerekce[-1:]), 160)})" if d.karar == "belirlenemedi" and d.gerekce
                            else "") + f"; {takvim_metni(d, bugun, kisa=True)}" for d in diger]]
+        if not adi_gecen_kayit and kurum_kayit:
+            # kısa cevaptaki kurum özetinde gerekçesiyle anılanlar burada yinelenmez
+            _ozette = set(map(id, kurum_ozeti_kapali(odak)[:4]))
+            elenen = [d for d in elenen if id(d) not in _ozette]
         if elenen:
             bolum += ["", "**Size kapalı ya da başvuruya kapalı programlar:**" if profil is not None
                       else "**Şu an başvuruya kapalı programlar:**", *elenen_satirlari(elenen)]

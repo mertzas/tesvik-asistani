@@ -6,7 +6,7 @@
 - Sizin için: profilinize göre engel yok — şartları teyit edin; başlıca şart: KOSGEB veri tabanına kayıtlı ve aktif olmalı.
 - Başvuru: İş Geliştirme çağrısı kapandı (08.05.2026); programın diğer destekleri ya da aşamaları için kayıtlarımızda çağrı tarihi yok, kurumdan teyit edin.
 - Destek: İş Kurma: gerçek kişi 10.000 TL / sermaye şirketi 20.000 TL (%100 geri ödemesiz; genç/kadın/engelli/gazi/şehit yakını +10.000 TL); İş Geliştirme: 1.500.000 TL'ye kadar (%80 geri ödemeli, +150.000 TL ilave); kredi faiz/kâr payı desteği: 1.000.000 TL kredi, faizin %50'si geri ödemesiz
-- Bu kurumun diğer programları: KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi (profilinize göre engel yok — şartları teyit edin); Küresel Rekabetçilik Destek Programı (kapalı).
+- Bu kurumun diğer programları — engel yok: KOSGEB Girişimcilik Eğitimi; size kapalı ya da başvuruya kapalı: 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (şirketi olanlara kapalı (ortaklık yasağı)), Küresel Rekabetçilik Destek Programı (yeni başvuru için şu an kapalı (2026 yılı 1. başvuru dönemi: kapandı (30.09.2026)).
 - Birlikte kullanım — Girişimci Destek Programı: kayda göre i̇ş Geliştirme Desteği ile İş Geliştirme Faiz/Kâr Payı Desteğinden aynı anda yararlanılamaz.
 - Birlikte kullanım hükmü kayıtta olmayanlar: KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi — aynı harcamanın birlikte desteklenip desteklenemeyeceğini kurumdan teyit edin.
 
@@ -24,7 +24,7 @@
 
 **Girişimci Destek Programı — KOSGEB**
 - **Başvuru dönemi:** İş Geliştirme çağrısı kapandı (08.05.2026); programın diğer destekleri ya da aşamaları için kayıtlarımızda çağrı tarihi yok, kurumdan teyit edin
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi; teyit: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — sorunuzdaki ihtiyaca yönelik (girişim / şirketleşme öncesi ve erken aşama); şartları kurumdan teyit edin.
 - **Karşıladığı ihtiyaç:** girişim / şirketleşme öncesi ve erken aşama
 - **Destek:** İş Kurma: gerçek kişi 10.000 TL / sermaye şirketi 20.000 TL (%100 geri ödemesiz; genç/kadın/engelli/gazi/şehit yakını +10.000 TL); İş Geliştirme: 1.500.000 TL'ye kadar (%80 geri ödemeli, +150.000 TL ilave); kredi faiz/kâr payı desteği: 1.000.000 TL kredi, faizin %50'si geri ödemesiz
 - **Hesaplama:** GERİ ÖDEMESİZ kuruluş desteği: gerçek kişi 10.000 TL, sermaye şirketi 20.000 TL; girişimci genç/kadın/engelli/gazi/şehit yakını ise +10.000 TL (üst sınır 30.000 TL).
@@ -49,15 +49,11 @@
   - Sınıf ortamındaki eski (2010-2020) uygulamalı girişimcilik eğitimi katılım belgeleri 31 Aralık 2020'ye kadar geçerliydi; bunlar artık geçerli değildir, online eğitim alınmalıdır. — resmî metin: “2010-2020 yılları arasında sınıf ortamındaki eğitim sonucunda alınan uygulamalı girişimcilik eğitimi katılım belgeleri, 31 Aralık 2020 tarihine kadar geçerliliğini koruyacak.”
 - **Başvuru:** KOSGEB e-Akademi (lms.kosgeb.gov.tr); eğitimlere kosgeb.gov.tr 'Çevrimiçi Eğitimler' bölümünden de ulaşılır. — https://www.kosgeb.gov.tr/site/tr/genel/detay/7472/kosgeb-eakademi
 
-**Küresel Rekabetçilik Destek Programı — KOSGEB** (kapalı)
-- **Neden:** yeni başvuru için şu an kapalı (2026 yılı 1. başvuru dönemi: kapandı (30.09.2026); sonraki dönem kayıtlarımızda yok, kurumdan takip edin).
-- **Son bilinen destek (bilgi için):** 2026/1. başvuru dönemi: destek üst limiti 75.000.000 TL / 30.000.000 TL; talep edilen kredi alt limiti 30 Milyon TL; proje 24 ay
-- **Kimler başvurabiliyordu (son çağrı):** Başvuru yapacak işletmenin; KOSGEB Veri Tabanında kayıtlı, aktif durumda ve İşletme Beyanının güncel olması; Türk Ticaret Kanunu'nda tanımlı gerçek veya tüzel kişi statüsünde faaliyet göstermesi; Şunlardan en az birini sağlamak: hızlı büyüyen, orta yüksek/yüksek teknolojili ve son 3 yıl her yıl ihracatını artıran işletme; Talep edilen kredinin alt limiti en az 30 milyon TL olmalı (üst limit 75 milyon TL).
-- **Ne yapabilirsiniz:** Sonraki başvuru dönemini KOSGEB duyurularından takip edin; çağrı açıldığında şartları yeniden kontrol edin.
-- **Kaynak:** https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9206/kuresel-rekabetcilik-destek-programi
-
-**Size kapalı ya da başvuruya kapalı programlar:**
-- 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) (TUBITAK) — uygun değil: şirketi olanlara kapalı (ortaklık yasağı)
+**1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) — TUBITAK** (uygun değil)
+- **Neden:** şirketi olanlara kapalı (ortaklık yasağı).
+- **Son bilinen tutar (önceki program, bilgi için):** BiGG Fonu hisse karşılığı yatırım: 1.350.000 TL (2026); +600.000 TL GCİP ek yatırım imkânı (2025'ten itibaren) (son bilinen tutar, önceki program 1512 - Girişimcilik Destek Programı (BiGG - Bireysel Genç Girişim) kaydından; 1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım) için güncel tutarı kurumdan teyit edin)
+- **Ne yapabilirsiniz:** Ortaklık yasağı hızlandırma programına kabul tarihindeki duruma bakar; borsadaki hisseler ve kitle fonlaması payları sayılmaz. Kabul tarihinden önce ortaklıktan ayrılmanın sonucunu kurumdan teyit edin.
+- **Kaynak:** https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1812-yatirim-tabanli-girisimcilik-destek-programi-bigg-yatirim
 
 **Birlikte kullanım (resmî metinden):**
 - [KOSGEB] Girişimci Destek Programı: İş Geliştirme Desteği ile İş Geliştirme Faiz/Kâr Payı Desteğinden aynı anda yararlanılamaz (resmî metin: "İŞ GELİŞTİRME FAİZ/KÂR PAYI DESTEĞİ ve İŞ GELİŞTİRME DESTEĞİ’nden aynı anda yararlanılamaz.")

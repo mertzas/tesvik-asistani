@@ -23,21 +23,21 @@ profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'Denizli', 'calis
     gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
 11. [1] Yurt Dışı Tanıtım ve Pazarlama Desteği (5973 sayılı Karar m.12) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-12. [1] Çevrim İçi Mağaza ve Hedef Ülke E-Ticaret Paydaşı Hizmet Desteği (5986 sayılı Karar m.8) — Ticaret Bakanlığı (aktif=True)
-    gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-13. [1] Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) — Türk Eximbank (aktif=True)
+12. [1] Türk Eximbank Finansal Kiralama İşlemlerine Yönelik Kredi Programı (leasing şirketleri ve katılım bankaları aracılığıyla ihracatçı yatırımları) — Türk Eximbank (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat, makine alımı.
-14. [1] Türk Eximbank IBRD Yeşil İhracat Destek Kredisi (AB karbon sınır düzenlemesine yönelik yeşil dönüşüm yatırımları için orta-uzun vadeli kredi) — Türk Eximbank (aktif=True)
+13. [1] Türk Eximbank IBRD Yeşil İhracat Destek Kredisi (AB karbon sınır düzenlemesine yönelik yeşil dönüşüm yatırımları için orta-uzun vadeli kredi) — Türk Eximbank (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat, makine alımı.
-15. [1] Türk Eximbank İhracata Yönelik Yatırım Kredisi (makine, teçhizat ve aksam harcamaları) — Türk Eximbank (aktif=True)
+14. [1] Türk Eximbank İhracata Yönelik Yatırım Kredisi (makine, teçhizat ve aksam harcamaları) — Türk Eximbank (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat, makine alımı.
-16. [1] İhracat Destek Paketi — KGF (aktif=True)
+15. [1] İhracat Destek Paketi — KGF (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-17. [1] Küresel Rekabetçilik Destek Programı — KOSGEB (aktif=True)
+16. [1] Gemi ve Yat Sektöründe Faaliyet Gösteren Şirketlere Tasarım Desteği (5973 sayılı Karar m.16) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-18. [1] Eximbank Faiz Farkı (CIRR), İhracat Kredi Sigortası Tazmin ve Alıcı Kredisi Desteği (5973 sayılı Karar m.13) — Ticaret Bakanlığı (aktif=True)
+17. [1] Türk Eximbank Faizsiz Sevk Öncesi İhracatın Finansmanı - SÖİF (katılım bankaları aracılığıyla kısa vadeli faizsiz ihracat finansmanı) — Türk Eximbank (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-19. [1] Türk Eximbank Faizsiz Sevk Öncesi İhracatın Finansmanı - SÖİF (katılım bankaları aracılığıyla kısa vadeli faizsiz ihracat finansmanı) — Türk Eximbank (aktif=True)
+18. [1] ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ — KGF (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-20. [1] ZİRAAT BANKASI YEŞİL İHRACAT KREDİSİ DESTEK PAKETİ — KGF (aktif=True)
+19. [1] Hizmet Sektörleri Sürdürülebilirlik Programı — Sürdürülebilirlik Projesi Desteği (10962 sayılı Karar m.34) — Ticaret Bakanlığı (aktif=True)
+    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
+20. [1] Türk Eximbank İhracata Hazırlık Kredisi — Türk Eximbank (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.

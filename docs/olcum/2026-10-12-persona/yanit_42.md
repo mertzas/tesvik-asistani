@@ -39,7 +39,7 @@
 
 **TURYIB Programı Destek Paketi — KGF**
 - **Başvuru dönemi:** Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır); paketin hâlâ kullandırımda olduğunu bankadan teyit edin.
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman.
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Bu destek sektörden bağımsız genel bir programdır; Belirttiğiniz hedeflerle eşleşiyor: finansman; teyit: Program ölçeği (asgari yatırım ya da kredi tavanı) yıllık cironuza göre çok büyük.
 - **Kapsam:** yalnız: Genç girişimci; yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Kredi ve kefalet limitleri:** 85 Milyon TL; kefalet oranı %80
@@ -51,7 +51,7 @@
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
 - HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 - KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi (KOSGEB) — profilinize göre engel yok — şartları teyit edin; Çağrı veya son başvuru tarihi yoktur; eğitimler online olarak alınır.
-- Girişimci Destek Programı (KOSGEB) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İş Kurma Desteği: KOSGEB destekli sektörde faaliyet gösteren 0-1 yaş işletme); İş Geliştirme çağrısı kapandı (08.05.2026); programın diğer destekleri ya da aşamaları için kayıtlarımızda çağrı tarihi yok, kurumdan teyit edin
+- TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: TOBB üyesi bir işletme olmak (ticaret, sanayi veya deniz ticaret odası ya da ticaret borsası üyesi)); Dönemsel başvuru yok (başvuru bu paketin kredi veren bankasına yapılır)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - GİRİŞİMCİ DESTEK PROGRAMI KREDİ FAİZ PROGRAMI (KGF) — kapalı: bağlı olduğu KOSGEB programının (Girişimci Destek Programı) başvuru dönemi kapalı; paket o programın onayına bağlı

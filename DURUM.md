@@ -467,6 +467,13 @@ Son güncelleme: 2026-10-12 (tur34-36 + persona denemesi: 317 → 365 kayıt, et
   reklam geride; düşük olasılıklı program öne çıkmaz; kapalı programın alternatifi kapalı programın ve sorunun
   ihtiyacını karşılamalı; KOSGEB veri tabanı kaydı ücretsiz eğitimde ön koşul değil; yol haritası ön koşulu ilk
   kartın, diğerleri program adıyla. Test 1314 → 1321; eski 30 senaryo dayanak 0, isabet 41/41; kapsam değişmedi.
+  Tur 4 sonrası ikinci paket: kurum sorusunda kısa cevapta kurumun bütün programları "engel yok / şarta bağlı /
+  size kapalı (gerekçe)" diye gruplanır (kapalılar alt listede yinelenmez) ve aramadan elenen ama soruya yönelik kurum
+  programları da değerlendirilir; sorudaki gider kalemi (yazılım/donanım, kargo, kira, fuar, makine, komisyon) programın
+  desteklediği giderle eşleşir (`gider_kalemi_eslesmesi`; ERP sorusunda KOBİ Dijital Dönüşüm öne); "belirtilmemiştir"
+  cümleleri ve çift nokta tekrarlanmaz; iki sektör gerekçesi tekleşir. Eşleşme listesinde çağrısı kapanmış program,
+  ölçeği (asgari yatırım, kredi tavanı) cirodan büyük program ve USD eşiğine ulaşılamayan program sıralamada geride
+  (`esles`, uygunluk değil ilgi). Test 1321 → 1324.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

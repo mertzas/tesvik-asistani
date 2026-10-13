@@ -9,7 +9,7 @@
   "kategori": "tarim",
   "baslama_tarihi": "2024-01-01T00:00:00",
   "bitis_tarihi": null,
-  "tesvil_tutari": "Birim tutarlar 8760 sayılı CB Kararı (2024-2026 Hayvancılık Desteklemeleri, RG 26/7/2024) ekindedir; sistemde teyit edilemedi (taranmış PDF)",
+  "tesvil_tutari": "2026 yılı birim tutarları (8760 sayılı Cumhurbaşkanı Kararı, 11782 sayılı Kararla değişik, RG 08.09.2026): buzağı 2.000 TL/baş, malak 4.000 TL/baş (programlı aşıları tamamlanmış, yılı içinde doğan, 4 ay (120 gün) ve üzeri yaşta; hastalıktan ari işletmeler hariç en fazla 500 baş); kuzu/oğlak 430 TL/baş (en az 4 ay yaşamış); atık desteği sığır ve manda 20.000 TL/baş, koyun ve keçi 4.000 TL/baş; arıcılık 250 TL/kovan (örgüt üyesi olmayana 200 TL); ipek böceği 1.500 TL/kg; tiftik 220 TL/kg. İlave katsayılar Kararda (ör. suni tohumlama ilave 1,0, embriyo transferi/cinsiyeti belirli sperma ilave 2,5).",
   "uygunluk_kriterleri": {
    "sektorler": [
     "tarim"
@@ -95,7 +95,7 @@
   ],
   "basvuru_bicimi": "uretim_odeme",
   "aktif_mi": true,
-  "durum_notu": "Denetim2 2026-10-07: Uygulama Tebliği 2024/23 ve 2026 talimatları; takvim talimattan (https://www.resmigazete.gov.tr/eskiler/2024/08/20240817-11.htm) | Denetim2-T7 2026-10-07: HAYGEM duyurusu 268 (01.09.2026): 2026 büyükbaş talimatı yayımlandı; 1. dönem 01/09–01/12/2026 açık (https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir) | Denetim2-T9 2026-10-08: gerekli_belgeler kaynak sayfadan dolduruldu (https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir) | Tur16 2026-10-08: basvuru_sartlari resmi kaynaktan (https://www.resmigazete.gov.tr/eskiler/2024/08/20240817-11.htm); alıntı docs/olcum/2026-10-08-tur16/kanit.json"
+  "durum_notu": "Tur41 2026-10-13: 2026 birim tutarları 11782 sayılı Karardan (RG 08.09.2026, https://www.resmigazete.gov.tr/eskiler/2026/09/20260908-8.pdf; taranmış sayfa, görüntüden okundu); 8760'taki tutarlar 2024 içindir. | Denetim2 2026-10-07: Uygulama Tebliği 2024/23 ve 2026 talimatları; takvim talimattan (https://www.resmigazete.gov.tr/eskiler/2024/08/20240817-11.htm) | Denetim2-T7 2026-10-07: HAYGEM duyurusu 268 (01.09.2026): 2026 büyükbaş talimatı yayımlandı; 1. dönem 01/09–01/12/2026 açık (https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir) | Denetim2-T9 2026-10-08: gerekli_belgeler kaynak sayfadan dolduruldu (https://www.tarimorman.gov.tr/HAYGEM/Duyuru/268/2026-Yili-Buyukbas-Hayvancilik-_buzagi_malak_-Desteklemeleri-Talimati-Yayinlanmistir) | Tur16 2026-10-08: basvuru_sartlari resmi kaynaktan (https://www.resmigazete.gov.tr/eskiler/2024/08/20240817-11.htm); alıntı docs/olcum/2026-10-08-tur16/kanit.json"
  },
  {
   "kurum": "Tarım Bakanlığı",
@@ -247,12 +247,165 @@
   ],
   "gerekli_belgeler": null,
   "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü",
-  "basvuru_suresi": "2026 başvuru dönemi 29 Nisan – 12 Haziran 2026 saat 23:59 (kapandı); yıllık çağrı. 2026 uygulama yılı; başvuru hibe.tarimorman.gov.tr (Tebliğ 2026/9, RG 3/4/2026)",
+  "basvuru_suresi": "2026 başvuru dönemi 29 Nisan – 30 Haziran 2026 saat 23:59 (kapandı; ilk ilan 12 Haziran'dı, süre 30 Haziran'a uzatıldı); yıllık çağrı. 2026 uygulama yılı; başvuru hibe.tarimorman.gov.tr (Tebliğ 2026/9, RG 3/4/2026)",
   "destek_verilme_suresi": null,
-  "kontrol_listesi": null,
-  "basvuru_bicimi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "adim",
+    "metin": "Başvuru Bakanlık resmi web sayfası üzerinden veri giriş sistemiyle yapılır (revize Uygulama Esasları, 29/6/2026).",
+    "alinti": "Bakanlık resmi web sayfası (www.tarimorman.gov.tr) üzerinden giriş yapılır.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Aynı adresten üyelik kaydı yapılır.",
+    "alinti": "www.tarimorman.gov.tr adresinden üyelik kaydı yapılır.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Gerçek kişi başvurusunda T.C. vatandaşlığı zorunlu.",
+    "alinti": "Gerçek kişi başvurularında başvuru sahibinin Türkiye Cumhuriyeti vatandaşı olması zorunludur.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Vadesi geçmiş vergi veya SGK prim borcu olan hibe alamaz.",
+    "alinti": "6183 sayılı Kanuna göre vadesi geçmiş vergi borcu ile Sosyal Güvenlik Kurumuna vadesi geçmiş prim borcu bulunanlar hibe desteğinden faydalanamaz.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Kamu kurumları ve ortaklıklarının başvurusu değerlendirilmez.",
+    "alinti": "İl özel idaresi ve belediye gibi kamu kurum ve kuruluşları, bunların vakıf ve birlik benzeri teşekkülleri ile içinde bulundukları ortaklıkların başvuruları Program kapsamında değerlendirilmez.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Sözleşmeden önce yatırıma başlanamaz.",
+    "alinti": "Başvuru sahipleri sözleşme imzalanmadan önce yatırımlarına başlayamazlar.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Hibeye esas proje tutarı üst limiti 30.000.000 TL.",
+    "alinti": "Bu Tebliğde belirtilen yatırım konularında hibeye esas proje tutarı; 30.000.000 Türk lirası üst limitini geçemez.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Alt limit 100.000 TL; altındaki başvuru kabul edilmez.",
+    "alinti": "Hibeye esas proje tutarı alt limiti 100.000 Türk lirasıdır. Bu limitin altındaki başvurular kabul edilmez.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Aile işletmesi üst limiti 8.000.000 TL.",
+    "alinti": "Aile işletmesi faaliyetleri kapsamında yapılacak başvurularda hibeye esas proje tutarı en fazla 8.000.000 Türk lirasıdır.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Hibe KDV dahil tutar üzerinden %50-%70 ve EK-2 oranlarında verilir.",
+    "alinti": "Katma Değer Vergisi (KDV) dâhil hibeye esas proje tutarının %50’si ile %70’ine kadar ve EK-2’de belirtilen şekildeki oranlarda hibe desteği verilir.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Kamera sistemleri hibe kapsamında değil.",
+    "alinti": "Kamera sistemleri alımı hibe desteği kapsamında değerlendirilmez.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Ortak makine parkı yatırımı yalnız tarımsal amaçlı örgütlere açık.",
+    "alinti": "Ortak makine parkı yatırımları için sadece tarımsal amaçlı örgütler hibe desteğinden faydalanabilir.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Örgütün kendi bünyesinde sabit kullanacağı makine-ekipman ortak makine parkı kapsamı dışında.",
+    "alinti": "Üretici örgütünün kendi bünyesinde sabit olarak tesis edeceği ve/veya kullanacağı makine ekipmanlar destek kapsamında olmayacaktır.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Modern sera yeni tesis dekar başı maliyet tavanı (topraklı).",
+    "alinti": "Topraklı seralarda en fazla 1.200.000 TL/daa",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Modern sera yeni tesis dekar başı maliyet tavanı (topraksız).",
+    "alinti": "Topraksız seralarda en fazla 1.500.000 TL/daa",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Yüksek tünel dekar başı maliyet tavanı (ısıtma sistemi yok).",
+    "alinti": "Isıtma sistemi kullanılmadığında en fazla 850.000 TL/daa",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Hibeye esas ara ödeme talebi için fatura alt sınırı.",
+    "alinti": "Hibeye esas ara ödeme talebi için kesilen fatura tutarı 5.000.000 TL’nin altında olamaz.",
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/api/files?path=%2Fapi%2Fv1%2Ffiles%2F44aaa765-6b32-4272-84b4-68446bd959dd",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "belge",
+    "metin": "Tarım arazisinde yatırımda Toprak Koruma izin belgesi başvuruda yüklenir.",
+    "alinti": "Tarım arazileri üzerinde yapılacak yatırımlar için, 3/7/2005 tarihli ve 5403 sayılı Toprak Koruma ve Arazi Kullanımı Kanunu kapsamında alınan izin belgesi, başvuru aşamasında veri giriş sistemine yüklenir.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Başvuruyu yap: www.tarimorman.gov.tr veri giriş sistemi (Bakanlık web sayfası üzerinden giriş ve üyelik kaydı); bilgi için il proje yürütme birimi / İl Tarım ve Orman Müdürlüğü.",
+    "alinti": null,
+    "kaynak_url": "https://kirsalkalkinma.tarimorman.gov.tr/",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": false
+   }
+  ],
+  "basvuru_bicimi": "proje",
   "aktif_mi": false,
-  "durum_notu": "Denetim2 2026-10-07: eski kayıt BUGEM ana sayfasına bağlıydı ve kaynaksız '₺50.000-₺500.000 makine hibesi' diyordu; kapsam KKYP Tebliği 2026/9'a göre yeniden yazıldı (10802 sayılı CB Kararı) (https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm) | Denetim2-T7 2026-10-07: TRGM duyurusu (29.04.2026): KKYP başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı (https://www.tarimorman.gov.tr/TRGM/Sayfalar/Detay.aspx?OgeId=670&Liste=Duyuru) | Tur27 2026-10-11: detay alanındaki eski makineleştirme metni kaldırıldı (özetle çelişiyordu)"
+  "durum_notu": "Denetim2 2026-10-07: eski kayıt BUGEM ana sayfasına bağlıydı ve kaynaksız '₺50.000-₺500.000 makine hibesi' diyordu; kapsam KKYP Tebliği 2026/9'a göre yeniden yazıldı (10802 sayılı CB Kararı) (https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-9.htm) | Denetim2-T7 2026-10-07: TRGM duyurusu (29.04.2026): KKYP başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı (https://www.tarimorman.gov.tr/TRGM/Sayfalar/Detay.aspx?OgeId=670&Liste=Duyuru) | Tur27 2026-10-11: detay alanındaki eski makineleştirme metni kaldırıldı (özetle çelişiyordu) | Tur40 2026-10-12: tur38'in kopya KKYDP kaydı bu kayda birleştirildi (doğrulanmış kontrol maddeleri ve 2026 çağrısı); başvuru süresi 30/6/2026'ya uzatılmıştı."
  },
  {
   "kurum": "Tarım Bakanlığı",
@@ -356,12 +509,53 @@
   ],
   "gerekli_belgeler": null,
   "basvuru_yeri": "İL/İlçe Tarım ve Orman Müdürlüğü / TKDK",
-  "basvuru_suresi": "2026 başvuru dönemi 29 Nisan – 12 Haziran 2026 saat 23:59 (kapandı); yıllık çağrı. Uygulama yılı 1/1/2026–31/12/2026; başvuru tss.tarimorman.gov.tr (Tebliğ 2026/10, RG 3/4/2026)",
+  "basvuru_suresi": "2026 başvuru dönemi 29 Nisan – 30 Haziran 2026 saat 23:59 (kapandı; ilk ilan 12 Haziran'dı, süre 30 Haziran'a uzatıldı); yıllık çağrı. Uygulama yılı 1/1/2026–31/12/2026; başvuru tss.tarimorman.gov.tr (Tebliğ 2026/10, RG 3/4/2026)",
   "destek_verilme_suresi": null,
-  "kontrol_listesi": null,
-  "basvuru_bicimi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "Bireysel/tasarruflu sulama: hibeye esas proje tutarı 10.000.000 TL'yi geçemez (Tebliğ 2026/10).",
+    "alinti": "Hibeye esas proje tutarı 10.000.000 TL’yi geçemez.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.htm",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Tasarruflu sulama: damla sulama %50.",
+    "alinti": "Tarla içi damla sulama sistemleri için %50.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.htm",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "bilgi",
+    "metin": "Tasarruflu sulama: akıllı sulama/otomasyon %70.",
+    "alinti": "Akıllı sulama/otomasyon sistemleri ( sensör , kontrol, uzaktan yönetim) için %70.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.htm",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Tasarruflu sulama: montaj hibe sözleşmesinden sonra 75 gün içinde tamamlanmalı (Bilecik İl Müdürlüğü duyurusu).",
+    "alinti": "alımı yapılan makine, ekipman ve malzemelerin 75 gün içerisinde tarlada montajının tamamlanmış olması gerekir",
+    "kaynak_url": "https://bilecik.tarimorman.gov.tr/Duyuru/677/Kirsal-Kalkinma-Yatirim-Programi-Kapsaminda-Tasarruflu-Tarimsal-Sulama-Sistemlerine-Yonelik-Yatirimlarin-Desteklenmesi-Hakkinda-Teblig-_teblig-No-2026_10_-Ve-Uygulama-Rehberi-Yayimlandi",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "Bireysel sulama: kamudan bağımsız, parsel ÇKS kayıtlı, Su Kullanım İzin Belgesi şart (Bayburt İl Müdürlüğü duyurusu).",
+    "alinti": "Başvuru yapacak olan gerçek ve tüzel kişilerin Kamudan bağımsız olması, Başvuru yapılacak parselin ÇKS sistemine kayıtlı olması ve Su Kullanım İzin Belgesine sahip olması gerekmektedir.",
+    "kaynak_url": "https://bayburt.tarimorman.gov.tr/Duyuru/208/2026-Yili-Bireysel-Sulama-Sistemlerinin-Desteklenmesi-Projesi-Basvurulari-Basladi",
+    "kaynak_tarihi": "2026-10-12",
+    "dogrulandi": true
+   }
+  ],
+  "basvuru_bicimi": "proje",
   "aktif_mi": false,
-  "durum_notu": "Denetim2 2026-10-07: eski kayıt TRGM ana sayfasına bağlıydı ve kaynaksız '₺100.000-₺1.000.000' diyordu; TSS Tebliği 2026/10'a göre yeniden yazıldı (https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.htm) | Denetim2-T7 2026-10-07: TRGM duyurusu (29.04.2026): TSS hibe başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı (https://www.tarimorman.gov.tr/TRGM/Sayfalar/Detay.aspx?OgeId=670&Liste=Duyuru)"
+  "durum_notu": "Denetim2 2026-10-07: eski kayıt TRGM ana sayfasına bağlıydı ve kaynaksız '₺100.000-₺1.000.000' diyordu; TSS Tebliği 2026/10'a göre yeniden yazıldı (https://www.resmigazete.gov.tr/eskiler/2026/04/20260403-10.htm) | Denetim2-T7 2026-10-07: TRGM duyurusu (29.04.2026): TSS hibe başvuruları 29 Nisan – 12 Haziran 2026 23:59; kapandı (https://www.tarimorman.gov.tr/TRGM/Sayfalar/Detay.aspx?OgeId=670&Liste=Duyuru) | Tur40 2026-10-12: tur38'in kopya KKYDP kaydı bu kayda birleştirildi (doğrulanmış kontrol maddeleri ve 2026 çağrısı); başvuru süresi 30/6/2026'ya uzatılmıştı."
  },
  {
   "kurum": "Tarım Bakanlığı",
@@ -1358,7 +1552,7 @@
   "kategori": null,
   "baslama_tarihi": null,
   "bitis_tarihi": null,
-  "tesvil_tutari": "Dekar başına katsayı x destek katsayı değeri (2026: 367 TL, 2027: 442 TL). Katsayılar: standart fidan 2, sertifikalı fidan 5. Tablo 6 türleri: altıntop, armut, asma, ayva, badem, ceviz, dut, elma, erik, fındık, incir, kayısı, kestane, kiraz, kivi, limon, mandarin, nektarin, pikan cevizi, portakal, şeftali, Trabzon hurması, vişne, zeytin.",
+  "tesvil_tutari": "Dekar başına katsayı × destek katsayı değeri; katsayılar standart fidan 2, sertifikalı fidan 5 (8859 Tablo 6). 2026 (367 TL, 11781 ile 1/1/2026'dan geçerli): standart 734 TL/da, sertifikalı 1.835 TL/da. 2027 (442 TL): standart 884 TL/da, sertifikalı 2.210 TL/da (hesap). Tablo 6 türleri: altıntop, armut, asma, ayva, badem, ceviz, dut, elma, erik, fındık, incir, kayısı, kestane, kiraz, kivi, limon, mandarin, nektarin, pikan cevizi, portakal, şeftali, Trabzon hurması, vişne, zeytin.",
   "uygunluk_kriterleri": {
    "sektorler": [
     "tarim"
@@ -1408,7 +1602,7 @@
    "Fidan faturasının tarihi, sertifika veya bitki muayene raporu tarihinden sonra olmalı."
   ],
   "basvuru_yeri": "ÇKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (Destekleme Ödemesi Başvuru Dilekçesi).",
-  "basvuru_suresi": "Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez.",
+  "basvuru_suresi": "2026 üretim yılı belge teslimi Temmuz 2026'nın son iş gününde (31.07.2026) bitti. 2027 üretim yılı: 2027 ÇKS kayıt başlangıcından Temmuz 2027'nin son iş gününe kadar (Tebliğ 2024/39 EK-2); 2027 takvimi henüz ilan edilmedi.",
   "destek_verilme_suresi": null,
   "kontrol_listesi": [
    {
@@ -1549,7 +1743,144 @@
    }
   ],
   "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": null,
+  "durum_notu": "Tur43 2026-10-13: 2026 belge teslimi bitti, 2027 takvimi yok → aktif belirsiz; 2026 ve 2027 dekar tutarları 11781 sayılı CK'dan (RG 08.09.2026, https://www.resmigazete.gov.tr/eskiler/2026/09/20260908-7.pdf; taranmış sayfa) hesaplandı. Fidan tablosu (Tablo 6) 11781 ile değişmedi. | Tur34 2026-10-12: resmî kaynaktan eklendi; durum: Karar yürürlüktedir; ancak fidan kullanım desteği ödemelerine bütçe imkânları dahilinde ilgili yılda başlanacağı Karar'da yazılıdır. Başlangıç tarihi kaynakta belirtilmemiştir (belirsiz).; kanıt docs/olcum/2026-10-12-tur34/kayit/tob-sertifikali-standart-fidan-kullanim-destegi-2026.json + dogrulama.json | Tur35 2026-10-12: uygunluk_kriterleri güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi)"
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Sertifikalı Tohum Kullanım Desteği (2027 üretim yılı)",
+  "ozet": "Sertifikalı tohum kullanan ÇKS'ye kayıtlı çiftçilere dekar başına ödenen üretimi geliştirme desteği. 2027 üretim yılı için tutar = Tablo 4 katsayısı × 442 TL/da; yerli çeşitlerde Tablo 5 katsayısı ayrıca. 2027 belge teslim takvimi henüz ilan edilmedi.",
+  "detay": "11781 sayılı Cumhurbaşkanı Kararı (RG 08.09.2026, sayı 33364), 8859 sayılı Kararın 2025-2027 bitkisel üretim desteklerinde destek katsayı değerini 2026 için 367 TL'ye (1/1/2026'dan geçerli), 2027 için 442 TL'ye çıkardı ve sertifikalı tohum tablolarını 2027 üretim yılı için yeniden yazdı (1/1/2027'de yürürlüğe girer). Başvuru, Bitkisel Üretim Desteklemeleri Ödeme Tebliği (2024/39) m.15'e göre ÇKS'de kayıtlı olunan il/ilçe müdürlüğüne EK-3 dilekçesiyle yapılır; belge teslimi EK-2 takvimine göre ilgili üretim yılının ÇKS kayıt başlangıcından Temmuz ayının son iş gününe kadardır.",
+  "hedef_kitle": null,
+  "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/09/20260908-7.pdf",
+  "kategori": "tarim",
+  "baslama_tarihi": null,
+  "bitis_tarihi": null,
+  "tesvil_tutari": "2027 üretim yılı, dekar başına (katsayı × 442 TL; hesap): aspir, kolza/kanola, susam 0,20 → 88,40 TL; fiğ 0,50 → 221,00 TL; arpa, buğday, çavdar, tritikale, yulaf 0,56 → 247,52 TL; korunga 0,60 → 265,20 TL; mercimek 0,80 → 353,60 TL; nohut, soya, yer fıstığı, yem bezelyesi, yonca 1,00 → 442,00 TL; çeltik, fasulye (kuru) 1,50 → 663,00 TL; patates 2,20 → 972,40 TL. Yerli çeşit (Tablo 5): ayçiçeği (yağlık) 0,6 → 265,20 TL; mısır 1,0 → 442,00 TL; patates ilave 2,0 → 884,00 TL; soya ilave 1,0 → 442,00 TL.",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ],
+   "urun_listesi": [
+    "aspir",
+    "kolza",
+    "kanola",
+    "susam",
+    "fiğ",
+    "arpa",
+    "buğday",
+    "çavdar",
+    "tritikale",
+    "yulaf",
+    "korunga",
+    "mercimek",
+    "nohut",
+    "soya",
+    "yer fıstığı",
+    "yem bezelyesi",
+    "yonca",
+    "çeltik",
+    "fasulye",
+    "patates",
+    "ayçiçeği",
+    "mısır"
+   ]
+  },
+  "tutari_min": null,
+  "tutari_max": null,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [
+   "ÇKS'ye kayıtlı olmak ve ilgili üretim yılında sertifikalı tohum kullanmak",
+   "Belge teslim bitiş tarihinden önce EK-3 dilekçesiyle il/ilçe müdürlüğüne başvurmak"
+  ],
+  "gerekli_belgeler": null,
+  "basvuru_yeri": "ÇKS'de kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (EK-3 Destekleme Ödemesi Başvuru Dilekçesi).",
+  "basvuru_suresi": "2027 üretim yılı belge teslimi: 2027 ÇKS kayıt başlangıcından Temmuz 2027'nin son iş gününe kadar (Tebliğ 2024/39 EK-2; kurala göre 30.07.2027). 2027 takvimi Bakanlıkça henüz ilan edilmedi; bitiş tarihi geçen destek için başvuru yapılamaz.",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "bilgi",
+    "metin": "2027 destek katsayı değeri dekara 442 TL (2026: 367 TL)",
+    "alinti": "2027 üretim yılı için destek katsayı değeri dekara 442 TL olarak",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2026/09/20260908-7.pdf",
+    "dogrulandi": true
+   },
+   {
+    "tur": "sart",
+    "metin": "ÇKS'de kayıtlı olduğunuz il/ilçe müdürlüğüne EK-3 dilekçesiyle başvurun",
+    "alinti": "EK-3’te yer alan Destekleme Ödemesi Başvuru Dilekçesi ile şahsen veya yasal temsilcisi aracılığıyla başvuruda bulunurlar.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/12/20241231M5.pdf",
+    "dogrulandi": true
+   },
+   {
+    "tur": "kural",
+    "metin": "Belge teslim bitiş tarihi geçtiyse başvuru yapılamaz",
+    "alinti": "Belge teslim bitiş tarihi sona eren desteklemeler için müracaatta bulunulamaz.",
+    "kaynak_url": "https://www.resmigazete.gov.tr/eskiler/2024/12/20241231M5.pdf",
+    "dogrulandi": true
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
+  "aktif_mi": null,
+  "durum_notu": "Tur43 2026-10-13: 11781 sayılı CK'dan (RG 08.09.2026, https://www.resmigazete.gov.tr/eskiler/2026/09/20260908-7.pdf; taranmış sayfa, görüntüden okundu) eklendi. TL/da değerleri katsayı × 442 TL hesabıdır; Bakanlık birim fiyat sayfası hâlâ 310 TL tabanlı. 2027 belge teslim takvimi ilan edilince aktif yapılmalı."
+ },
+ {
+  "kurum": "Tarım Bakanlığı",
+  "baslik": "Sürü Yöneticisi (Çoban) İstihdam Desteği (2026 yılı)",
+  "ozet": "En az 150 baş kuzu/oğlağı olan ve sertifikalı çoban istihdam edip SGK primini yıl içinde 5 ay yatıran küçükbaş işletmelerine, bir sürü yöneticisi için 150 baş üzerinden ödenen destek. 2026 için hesaplanan tutar 116.100 TL/işletme.",
+  "detay": "Dayanak: 2024-2026 Hayvancılık Desteklemeleri Kararı (8760), 10395 sayılı Kararla değişik 2/1-b-4 alt bendi (150 baş üzerinden ilave 1,8 katsayı) ve 11782 sayılı Karar (2026 kuzu/oğlak temel desteği 430 TL/baş). Başvuru küçükbaş hayvancılık desteği başvurusuyla başlar; çoban belgeleri HAYGEM 2026 küçükbaş talimatındaki üç dönemde il/ilçe müdürlüğüne teslim edilir.",
+  "hedef_kitle": null,
+  "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler/Hayvancilik-Desteklemeleri/Suru-Yoneticisi-Istihdam-Destegi",
+  "kategori": "tarim",
+  "baslama_tarihi": null,
+  "bitis_tarihi": null,
+  "tesvil_tutari": "2026: 116.100 TL/işletme (hesap: 430 TL/baş × ilave 1,8 katsayı × 150 baş; tek sürü yöneticisi, yalnız 150 baş üzerinden). Önceki yıllar Bakanlık sayfasından: 2024 için 36.000 TL, 2025 için 81.000 TL.",
+  "uygunluk_kriterleri": {
+   "sektorler": [
+    "tarim"
+   ],
+   "alt_kategori": "hayvancilik",
+   "genislik": "dar"
+  },
+  "tutari_min": null,
+  "tutari_max": null,
+  "tutari_hesaplama_kriteri": null,
+  "tutari_hesaplama_formulu": null,
+  "basvuru_sartlari": [
+   "Temel destek şartlarını sağlayan en az 150 baş kuzu/oğlak",
+   "Sertifikalı çoban istihdamı ve çobanın SGK primlerinin yıl içinde 5 ay yatırılması",
+   "En fazla bir sürü yöneticisi için, yalnız 150 baş üzerinden ödeme"
+  ],
+  "gerekli_belgeler": null,
+  "basvuru_yeri": "İl/ilçe tarım ve orman müdürlüğü (küçükbaş hayvancılık desteği başvurusuyla başlar; çoban evrakı dönem sonuna kadar teslim edilir).",
+  "basvuru_suresi": "2026 yılı çoban evrak teslimi (HAYGEM 2026 küçükbaş talimatı): 1. dönem 05/01/2027, 2. dönem 15/06/2027, 3. dönem 19/11/2027'ye kadar. Küçükbaş 1. dönem başvuruları 01/09/2026–01/12/2026.",
+  "destek_verilme_suresi": null,
+  "kontrol_listesi": [
+   {
+    "tur": "sart",
+    "metin": "En az 150 baş kuzu/oğlak, sertifikalı çoban ve 5 ay SGK primi",
+    "alinti": "en az 150 baş kuzu/oğlağı bulunan işletmelere en fazla bir sürü yöneticisi için ve sadece 150 baş üzerinden sertifikalı çoban istihdamı yapmış olan ve istihdamı yapılan çobanın Sosyal Güvenlik Kurumu sigorta primlerini yıl içinde 5 ay süre ile yatıranlar",
+    "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler/Hayvancilik-Desteklemeleri/Suru-Yoneticisi-Istihdam-Destegi",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "Önce küçükbaş hayvancılık desteğine başvurun",
+    "alinti": "Desteklemeye başvurular, Küçükbaş Hayvancılık Desteklemesine başvuru yapılması ile başlamaktadır.",
+    "kaynak_url": "https://www.tarimorman.gov.tr/Konular/Tarimsal-Destekler/Hayvancilik-Desteklemeleri/Suru-Yoneticisi-Istihdam-Destegi",
+    "dogrulandi": true
+   },
+   {
+    "tur": "adim",
+    "metin": "1. dönem çoban evrakını 05/01/2027'ye kadar il/ilçe müdürlüğüne teslim edin",
+    "alinti": "İl/İlçe Müdürlüklerine Evrakların teslimi: 05/01/2027 ya kadar",
+    "kaynak_url": "https://www.tarimorman.gov.tr/HAYGEM/Belgeler/DB_Islah/TAL%C4%B0MATLAR/2026%20YILI/2026%20Y%C4%B1l%C4%B1%20K%C3%BC%C3%A7%C3%BCkba%C5%9F%20Hayvanc%C4%B1l%C4%B1k%20Desteklemeleri%20Uygulama%20Talimat%C4%B1%20ve%20%C3%87al%C4%B1%C5%9Fma%20Takvimi.pdf",
+    "dogrulandi": true
+   }
+  ],
+  "basvuru_bicimi": "uretim_odeme",
   "aktif_mi": true,
-  "durum_notu": "Tur34 2026-10-12: resmî kaynaktan eklendi; durum: Karar yürürlüktedir; ancak fidan kullanım desteği ödemelerine bütçe imkânları dahilinde ilgili yılda başlanacağı Karar'da yazılıdır. Başlangıç tarihi kaynakta belirtilmemiştir (belirsiz).; kanıt docs/olcum/2026-10-12-tur34/kayit/tob-sertifikali-standart-fidan-kullanim-destegi-2026.json + dogrulama.json | Tur35 2026-10-12: uygunluk_kriterleri güncellendi (şirket türü kısıtı / 2026 tarım tutarları; kanıt docs/olcum/2026-10-12-tur34/TARIM_2026_KANIT.md ve aynı Kararın tanım maddesi)"
+  "durum_notu": "Tur43 2026-10-13: 2026 tutarı Kararlardan hesaplandı (8760 m.2/1-b-4, 10395 ile değişik; 11782 kuzu/oğlak 430 TL/baş; taranmış sayfalar görüntüden okundu: https://www.resmigazete.gov.tr/eskiler/2025/09/20250914-7.pdf, https://www.resmigazete.gov.tr/eskiler/2026/09/20260908-8.pdf). Bakanlık sayfası 2026 tutarını henüz yazmıyor; takvim HAYGEM 2026 küçükbaş talimatından."
  }
 ]

@@ -1,0 +1,167 @@
+{
+  "aciklama": "Yeni çağrı keşfi kaynakları (app/cagri_kesif.py). Her adres 2026-10-13'te betikle çekilip sınandı (sunucu tarafı HTML, ilan bağlantıları ham HTML'de). Kullanılmayanlar: yatirimadestek.gov.tr/duyurular (son öğe 16.10.2025, bayat), tarimorman.gov.tr/Duyuru ve /Haber (SharePoint hata sayfası), baka.gov.tr/fon-ve-hibe-duyurulari (boş gövde), doka.org.tr listeleri (başlıksız 'İncele' bağlantıları), www.eximbank.gov.tr (yönlendirme döngüsü; www'suz çalışır). {yil} taramanın yılıyla değişir. toplayici: kayıtlar kurum ayrımı yapılmadan karşılaştırılır. daka.org.tr/fon-destekler çıkarıldı (yabancı vakıf hibeleriyle karışık liste; DAKA duyuruları ka.gov.tr toplayıcısında).",
+  "kaynaklar": [
+    {
+      "ad": "tubitak_duyuru",
+      "kurum": "TÜBİTAK",
+      "url": "https://tubitak.gov.tr/tr/duyuru",
+      "alan_adi": "tubitak.gov.tr"
+    },
+    {
+      "ad": "kosgeb_duyuru",
+      "kurum": "KOSGEB",
+      "url": "https://www.kosgeb.gov.tr/site/tr/genel/liste/2/duyurular",
+      "alan_adi": "kosgeb.gov.tr"
+    },
+    {
+      "ad": "kosgeb_cagri",
+      "kurum": "KOSGEB",
+      "url": "https://www.kosgeb.gov.tr/site/tr/genel/liste/1084/proje-teklif-cagrilari-duyurular",
+      "alan_adi": "kosgeb.gov.tr"
+    },
+    {
+      "ad": "kosgeb_destek",
+      "kurum": "KOSGEB",
+      "url": "https://www.kosgeb.gov.tr/site/tr/genel/destekler/3/destekler",
+      "alan_adi": "kosgeb.gov.tr"
+    },
+    {
+      "ad": "ticaret_duyuru",
+      "kurum": "Ticaret Bakanlığı",
+      "url": "https://www.ticaret.gov.tr/duyurular",
+      "alan_adi": "ticaret.gov.tr"
+    },
+    {
+      "ad": "ticaret_destek",
+      "kurum": "Ticaret Bakanlığı",
+      "url": "https://www.ticaret.gov.tr/destekler",
+      "alan_adi": "ticaret.gov.tr"
+    },
+    {
+      "ad": "tarim_destek",
+      "kurum": "Tarım Bakanlığı",
+      "url": "https://www.tarimorman.gov.tr/Sayfalar/Detay.aspx?Liste=Destekler",
+      "alan_adi": "tarimorman.gov.tr"
+    },
+    {
+      "ad": "tkdk_cagri",
+      "kurum": "TKDK",
+      "url": "https://www.tkdk.gov.tr/ProjeIslemleri/CagriIlanArsiv",
+      "alan_adi": "tkdk.gov.tr"
+    },
+    {
+      "ad": "tkdk_duyuru",
+      "kurum": "TKDK",
+      "url": "https://www.tkdk.gov.tr/Duyurular",
+      "alan_adi": "tkdk.gov.tr"
+    },
+    {
+      "ad": "eximbank_duyuru",
+      "kurum": "Türk Eximbank",
+      "url": "https://eximbank.gov.tr/tr/duyurular/{yil}-yili-duyurulari",
+      "alan_adi": "eximbank.gov.tr"
+    },
+    {
+      "ad": "eximbank_kredi",
+      "kurum": "Türk Eximbank",
+      "url": "https://eximbank.gov.tr/tr/urun-ve-hizmetlerimiz/krediler",
+      "alan_adi": "eximbank.gov.tr"
+    },
+    {
+      "ad": "resmi_gazete",
+      "kurum": "Resmî Gazete",
+      "tur": "resmi_gazete"
+    },
+    {
+      "ad": "ajans_toplayici",
+      "kurum": "Kalkınma ajansları (ka.gov.tr)",
+      "url": "https://ka.gov.tr/duyurular",
+      "alan_adi": "ka.gov.tr",
+      "toplayici": true
+    },
+    {
+      "ad": "istka_destek",
+      "kurum": "İstanbul Kalkınma Ajansı",
+      "url": "https://www.istka.org.tr/acik-destek-programlari",
+      "alan_adi": "istka.org.tr"
+    },
+    {
+      "ad": "izka_destek",
+      "kurum": "İzmir Kalkınma Ajansı",
+      "url": "https://izka.org.tr/destekler/mali-destek-programlari/",
+      "alan_adi": "izka.org.tr"
+    },
+    {
+      "ad": "bebka_destek",
+      "kurum": "Bursa Eskişehir Bilecik Kalkınma Ajansı",
+      "url": "https://bebka.org.tr/acik-destek-programlari/",
+      "alan_adi": "bebka.org.tr"
+    },
+    {
+      "ad": "trakyaka_destek",
+      "kurum": "Trakya Kalkınma Ajansı",
+      "url": "https://www.trakyaka.org.tr/tr/33555/Acik-Olan-Destek-Programlari",
+      "alan_adi": "trakyaka.org.tr"
+    },
+    {
+      "ad": "zafer_destek",
+      "kurum": "Zafer Kalkınma Ajansı",
+      "url": "https://www.zafer.gov.tr/destekler",
+      "alan_adi": "zafer.gov.tr"
+    },
+    {
+      "ad": "dogaka_destek",
+      "kurum": "Doğu Akdeniz Kalkınma Ajansı",
+      "url": "https://www.dogaka.gov.tr/destekler/mali-destek-programi",
+      "alan_adi": "dogaka.gov.tr"
+    },
+    {
+      "ad": "ahika_destek",
+      "kurum": "Ahiler Kalkınma Ajansı",
+      "url": "https://www.ahika.gov.tr/destekler/ahika-acik-destek-programlari/",
+      "alan_adi": "ahika.gov.tr"
+    },
+    {
+      "ad": "oran_destek",
+      "kurum": "Orta Anadolu Kalkınma Ajansı",
+      "url": "https://www.oran.org.tr/tr/acik-destek-cagrilari",
+      "alan_adi": "oran.org.tr"
+    },
+    {
+      "ad": "bakka_destek",
+      "kurum": "Batı Karadeniz Kalkınma Ajansı",
+      "url": "https://bakka.gov.tr/destekler/acik-destek-programlari/basvuru-donemindekiler",
+      "alan_adi": "bakka.gov.tr"
+    },
+    {
+      "ad": "kuzka_destek",
+      "kurum": "Kuzey Anadolu Kalkınma Ajansı",
+      "url": "https://www.kuzka.gov.tr/page/mali-destekler-304",
+      "alan_adi": "kuzka.gov.tr"
+    },
+    {
+      "ad": "kudaka_destek",
+      "kurum": "Kuzeydoğu Anadolu Kalkınma Ajansı (KUDAKA)",
+      "url": "https://kudaka.gov.tr/destekler/acik-destek-programlari",
+      "alan_adi": "kudaka.gov.tr"
+    },
+    {
+      "ad": "serka_destek",
+      "kurum": "Serhat Kalkınma Ajansı",
+      "url": "https://www.serka.gov.tr/destekler/acik-destek-programlari/",
+      "alan_adi": "serka.gov.tr"
+    },
+    {
+      "ad": "dika_destek",
+      "kurum": "Dicle Kalkınma Ajansı (DİKA)",
+      "url": "https://www.dika.org.tr/destekler/acik-destek-programlari",
+      "alan_adi": "dika.org.tr"
+    },
+    {
+      "ad": "fka_destek",
+      "kurum": "Fırat Kalkınma Ajansı (FKA)",
+      "url": "https://fka.gov.tr/mali-destekler-detayi-1463574099720",
+      "alan_adi": "fka.gov.tr"
+    }
+  ]
+}

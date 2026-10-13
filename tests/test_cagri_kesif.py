@@ -1,0 +1,47 @@
+"""Yeni çağrı keşif hattı (app/cagri_kesif.py, 2026-10-13)."""
+import json
+from datetime import date
+
+from app import cagri_kesif
+from app.models import Tesvik, TesvikCagrisi
+
+
+def test_self_test():
+    assert cagri_kesif._self_test() == 0
+
+
+def test_katalog_gercek_kayitlarla(db_session):
+    db_session.add_all([
+        Tesvik(id=801, kurum="TUBITAK", baslik="1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı", ozet="o",
+               detay="d", aktif_mi=True, kaynak_url="https://www.tubitak.gov.tr/tr/destekler/sanayi/1501#x"),
+        Tesvik(id=802, kurum="Mevlana Kalkınma Ajansı", baslik="2026 Yılı Turizm Altyapısı Mali Destek Programı",
+               ozet="o", detay="d", aktif_mi=True, kaynak_url="https://www.mevka.org.tr/a"),
+    ])
+    db_session.flush()
+    db_session.add(TesvikCagrisi(tesvik_id=802, ad="2026", kaynak_url="https://www.mevka.org.tr/cagri-2026/",
+                                 dogrulama_tarihi=date(2026, 10, 1)))
+    db_session.commit()
+    k = cagri_kesif.Katalog.yukle(db_session)
+
+    def sinif(kurum, metin, url):
+        ilan = cagri_kesif.Ilan("t", kurum, metin, url)
+        k.siniflandir(ilan)
+        return ilan.sinif, ilan.tesvik_id
+
+    assert sinif("TÜBİTAK", "x", "http://tubitak.gov.tr/tr/destekler/sanayi/1501/") == ("bilinen", None)
+    assert sinif("Mevlana", "x", "https://mevka.org.tr/cagri-2026") == ("bilinen", None)
+    assert sinif("TÜBİTAK", "1501 Sanayi Ar-Ge 2026-3 Dönemi Çağrısı Açıldı", "https://tubitak.gov.tr/d/9") == \
+        ("cagri_adayi", 801)
+    assert sinif("Mevlana Kalkınma Ajansı", "2027 Yılı Turizm Altyapısı Mali Destek Programı İlan Edildi",
+                 "https://www.mevka.org.tr/b") == ("cagri_adayi", 802)
+    assert sinif("Mevlana Kalkınma Ajansı", "Sosyal Kalkınma Programı 2026 Başvuruları",
+                 "https://www.mevka.org.tr/c")[0] == "yeni_program"
+
+
+def test_kaynak_dosyasi_gecerli():
+    veri = json.loads(cagri_kesif.KAYNAK_DOSYASI.read_text(encoding="utf-8"))
+    adlar = [k["ad"] for k in veri["kaynaklar"]]
+    assert len(adlar) == len(set(adlar)) and any(k.get("tur") == "resmi_gazete" for k in veri["kaynaklar"])
+    for k in veri["kaynaklar"]:
+        if k.get("tur") != "resmi_gazete":
+            assert k["url"].startswith("https://") and k["kurum"] and k["alan_adi"] in k["url"]

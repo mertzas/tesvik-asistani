@@ -126,6 +126,20 @@ def _job_cagri_hatirlatma() -> str:
         db.close()
 
 
+def _job_cagri_kesif() -> str:
+    """Resmî duyuru sayfaları ve Resmî Gazete: yeni çağrı/program adayları kuyruğa (app/cagri_kesif.py; veritabanına
+    yazmaz, aday doğrulama hattından geçmeden kayda girmez)."""
+    from app import cagri_kesif
+    from app.models import SessionLocal
+    db = SessionLocal()
+    try:
+        ozet = cagri_kesif.tara(db)
+    finally:
+        db.close()
+    return (f"{ozet['kaynak']} kaynak, {len(ozet['yeni'])} yeni ilan, {len(ozet['taban'])} taban adayı, "
+            f"{len(ozet['hata'])} hata")
+
+
 def setup_scheduler() -> BackgroundScheduler:
     """Tüm jobları tanımla ve scheduler'ı döndür. main.py'de startup event'inde başlatılır."""
     # coalesce: kacirilan tetiklemeler (uyku/yeniden baslatma) tek seferde kosar;
@@ -184,6 +198,15 @@ def setup_scheduler() -> BackgroundScheduler:
         CronTrigger(day=5, hour=2, minute=0, second=0),
         id="tarim_bakanligi",
         args=("tarim_bakanligi", _job_tarim_bakanligi),
+        replace_existing=True,
+    )
+
+    # Yeni çağrı keşfi — haftada pazartesi 04:00 (kuyruk data/cagri_kesif/; sunucu kapalıysa Windows görevi koşar)
+    scheduler.add_job(
+        _run_job,
+        CronTrigger(day_of_week=0, hour=4, minute=0, second=0),
+        id="cagri_kesif",
+        args=("cagri_kesif", _job_cagri_kesif),
         replace_existing=True,
     )
 

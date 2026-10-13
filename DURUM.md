@@ -618,6 +618,23 @@ Son güncelleme: 2026-10-13 (eksik envanteri ve kapanışı: tur41 veri, hatırl
   yeni 369 5986 m.3 Pazara Giriş Rapor ve 370 m.7 Pazaryeri Entegrasyon (yalnız statülüler; şablon 196). 369 kayıt,
   etkin 248, belirsiz 1, çağrı 158. Regresyon: eski 30 dayanak 0 / isabet 41/41, persona 45 dayanak 0, kapsam 432/13/23,
   ürün 434/468. Test 1371 (atlanan 0). Sunum güncellendi (8 slayt, sürüm 21), konuşma metni de.
+- **Yeni çağrı keşif hattı** (2026-10-13, `app/cagri_kesif.py` self-test 15/15, `tests/test_cagri_kesif.py` 3): 27
+  resmî kaynak (`app/data/cagri_kaynaklari.json`: TÜBİTAK, KOSGEB ×3, Ticaret ×2, Tarım destekler, TKDK ×2, Eximbank ×2,
+  ka.gov.tr 26 ajans toplayıcısı + 15 ajansın açık destek sayfası) ve Resmî Gazete günlük fihristi (son 7 gün, destek/
+  teşvik kararları) taranır; önceki taramada görülmeyen ilan veritabanıyla karşılaştırılır (bilinen / mevcut programa
+  çağrı adayı / yeni program), ilan sayfasından "son başvuru / kapanış / ön kayıt" yakınındaki gelecek tarihler özgün
+  yazımla alıntı adayı olarak çıkarılır. Veritabanına YAZMAZ: `data/cagri_kesif/kuyruk.json` + `rapor_YYYY-AA-GG.md`
+  (git dışı); aday doğrulama hattından (fix_veri_* `--dogrula`) geçmeden kayda girmez. Gürültü süzgeci: sonuç/sınav/
+  personel/ihale/fuar/rehber/burs/öğrenci/araştırmacı duyuruları elenir. Kaynak seçimi ve elenen adresler (yatirimadestek
+  bayat, Tarım SharePoint hata sayfası, BAKA boş, DOKA başlıksız, DAKA yabancı vakıf karışık) JSON'da. İlk tarama (taban,
+  ~1 dk, ~60 istek, 0 hata): 10 güncel aday (2223/2224 yeni dönem → kayıt 11/24, son gün 27.10; AHİKA teknik destek →
+  197, 30.10; SERKA fizibilite 24.12; KUDAKA coğrafi işaretli ürünler MDP, ZAFER SOGEP/YKH, DİKA teknik destek, Eureka
+  Globalstars Japonya, Ufuk Avrupa SBEP). Zamanlayıcıda pazartesi 04:00 (sunucu açıkken). Windows görevi
+  `TesvikAsistaniScraper` (Mert onayı 2026-10-13) var olmayan `Desktop\tesvik-asistani\run_scrapers.bat` yerine
+  `pythonw.exe -m app.cagri_kesif --calistir --gunluk data\cagri_kesif\gorev.log` (çalışma dizini proje) çalıştırır,
+  pazartesi 03:00, oturum açıkken; elle tetiklenen deneme sonuç 0 (konsollu cmd ile pencere kapanınca Ctrl+C ile
+  kesiliyordu, bu yüzden pythonw). Eski kazıyıcılar (app/scrapers/kosgeb, tubitak, kgf; doğrulamasız ekleme) artık
+  zamanlanmış değil. Rapor her zaman bekleyen bütün adayları da gösterir; `--rapor` ağsız yeniden üretir.
 - **Açık (2026-10-13)** — kodla kapatılamayanlar:
   - Kullanıcı/dış taraf: SMTP bağlantı hatası (hatırlatma ve zorunlu doğrulama buna bağlı); KVKK DOLDURULACAK alanları
     (unvan, adres, VERBİS, iletişim, Groq m.9 güvencesi, günlük saklama süresi); Groq ZDR + ücretli katman + anahtar

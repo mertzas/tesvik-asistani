@@ -45,3 +45,30 @@ def test_kaynak_dosyasi_gecerli():
     for k in veri["kaynaklar"]:
         if k.get("tur") != "resmi_gazete":
             assert k["url"].startswith("https://") and k["kurum"] and k["alan_adi"] in k["url"]
+
+
+def test_kayitli_cagri_tarihi_bilinen_sayilir(db_session):
+    """Duyuru adresi kayıtlı olmasa da ilandaki son gün programın kayıtlı çağrısıyla aynıysa çağrı zaten girilmiştir."""
+    db_session.add(Tesvik(id=803, kurum="TUBITAK", baslik="2224-A Yurt Dışı Bilimsel Etkinliklere Katılımı Destekleme",
+                          ozet="o", detay="d", aktif_mi=True))
+    db_session.flush()
+    db_session.add(TesvikCagrisi(tesvik_id=803, ad="2026-3", kapanis=date(2026, 11, 3),
+                                 kaynak_url="https://tubitak.gov.tr/x", dogrulama_tarihi=date(2026, 10, 1)))
+    db_session.commit()
+    k = cagri_kesif.Katalog.yukle(db_session)
+    ayni = cagri_kesif.Ilan("t", "TÜBİTAK", "m", "u", tesvik_id=803,
+                            tarihler=[{"tarih": "2026-11-03", "alinti": "Son başvuru 3 Kasım 2026"}])
+    yeni = cagri_kesif.Ilan("t", "TÜBİTAK", "m", "u2", tesvik_id=803,
+                            tarihler=[{"tarih": "2027-03-02", "alinti": "Son başvuru 2 Mart 2027"}])
+    assert k.cagri_kayitli_mi(ayni) and not k.cagri_kayitli_mi(yeni)
+
+
+def test_kuyruk_isaretle(tmp_path):
+    kuyruk = [{"url": "https://a.gov.tr/duyuru/1", "durum": "beklemede"},
+              {"url": "https://a.gov.tr/duyuru/2", "durum": "eklendi"},
+              {"url": "https://b.gov.tr/x", "durum": "beklemede"}]
+    (tmp_path / "kuyruk.json").write_text(json.dumps(kuyruk), encoding="utf-8")
+    assert cagri_kesif.kuyruk_isaretle("https://a.gov.tr/duyuru/", "bilinen", "kayıt 5", dizin=tmp_path) == 1
+    sonuc = json.loads((tmp_path / "kuyruk.json").read_text(encoding="utf-8"))
+    assert [x["durum"] for x in sonuc] == ["bilinen", "eklendi", "beklemede"]
+    assert sonuc[0]["aciklama"] == "kayıt 5" and sonuc[0]["isaretlenme"] == date.today().isoformat()

@@ -192,6 +192,7 @@ def anilan_yil(metin: str, bugun: date) -> bool:
 class Katalog:
     adresler: set[str]
     kayitlar: list[tuple[int, str, str]]     # (id, kurum, katlanmış başlık)
+    cagri_tarihleri: dict[int, set[str]] = field(default_factory=dict)   # kayıt → kayıtlı çağrı kapanış/ön kayıt günleri
 
     @classmethod
     def yukle(cls, db) -> "Katalog":
@@ -205,9 +206,19 @@ class Katalog:
                 if m.get("kaynak_url"):
                     adresler.add(adres_normal(m["kaynak_url"].split("#")[0]))
             kayitlar.append((t.id, t.kurum or "", _katla(t.baslik)))
+        tarihler: dict[int, set[str]] = {}
         for c in db.query(TesvikCagrisi).all():
             adresler.add(adres_normal(c.kaynak_url.split("#")[0]))
-        return cls(adresler, kayitlar)
+            for g in (c.kapanis, c.on_kayit_son):
+                if g:
+                    tarihler.setdefault(c.tesvik_id, set()).add(g.isoformat())
+        return cls(adresler, kayitlar, tarihler)
+
+    def cagri_kayitli_mi(self, ilan: Ilan) -> bool:
+        """İlandaki son başvuru tarihi, bağlandığı programın kayıtlı bir çağrısının tarihiyle aynı mı (duyuru adresi
+        kayıtlı olmasa da çağrı zaten girilmiş; ilk tarama 2026-10-13: TÜBİTAK 2223/2224)."""
+        kayitli = self.cagri_tarihleri.get(ilan.tesvik_id or -1, set())
+        return any(t["tarih"] in kayitli for t in ilan.tarihler)
 
     def siniflandir(self, ilan: Ilan) -> None:
         if adres_normal(ilan.url) in self.adresler:
@@ -226,10 +237,13 @@ class Katalog:
                 continue
             b = {w for w in re.findall(r"[a-z0-9]+", baslik) if len(w) > 2 and w not in DURAK}
             if sozler and b:
-                j = len(sozler & b) / len(sozler | b)
+                ortak = len(sozler & b)
+                # Jaccard ya da kayıt başlığının ilanda geçme oranı: toplayıcı başlıkları tarih, ajans adı ve "ilan
+                # edildi" ekler; KUDAKA programı (kayıt 218) Jaccard 0,41 ile kaçıyordu (ilk tarama 2026-10-13).
+                j = max(ortak / len(sozler | b), ortak / len(b) if ortak >= 4 else 0.0)
                 if j > skor:
                     en_iyi, skor = tid, j
-        if skor >= 0.5:
+        if skor >= (0.5 if ilan.kurum_filtresi else 0.6):   # toplayıcıda kurum süzgeci yok: eşik yüksek
             ilan.sinif, ilan.tesvik_id = "cagri_adayi", en_iyi
         else:
             ilan.sinif = "yeni_program"
@@ -352,6 +366,9 @@ def tara(db, bugun: date | None = None, sadece: str | None = None,
                 ilan.hata = h
                 if not h:
                     ilan.tarihler = tarih_alintilari(duz_metin(metin) if "<" in metin[:2000] else metin, bugun)
+                if ilan.sinif == "cagri_adayi" and katalog.cagri_kayitli_mi(ilan):
+                    ilan.sinif = "bilinen"
+                    continue
             kayit = ilan.sozluk() | {"bulunma": bugun.isoformat(), "durum": "beklemede", "taban": taban}
             kuyruk.append(kayit)
             kuyrukta.add(anahtar)
@@ -469,6 +486,10 @@ def _self_test() -> int:
                                             for t in tarih_alintilari("İLAN: Son başvuru tarihi 14.11.2026'dır.", bugun))),
         ("genel bağlantı metninde başlık adresten", slug_metni("https://x.gov.tr/Dokuman/ipard-iii-12-cagri-ilani-1612")
          == "ipard iii 12 cagri ilani"),
+        ("kayıtlı çağrı tarihiyle aynı ilan bilinen sayılır",
+         Katalog(set(), [], {7: {"2026-11-03"}}).cagri_kayitli_mi(
+             Ilan("k", "K", "m", "u", tesvik_id=7, tarihler=[{"tarih": "2026-11-03", "alinti": "x"}]))),
+        ("toplayıcı başlığı kayıt başlığını kapsıyorsa çağrı adayı", _kapsama_testi()),
         ("adres normal: www, / ve # farkı yok", adres_normal("https://www.a.gov.tr/x/#y") == adres_normal("http://a.gov.tr/x")),
     ]
     g_ = sum(1 for _, ok in k if ok)
@@ -476,6 +497,31 @@ def _self_test() -> int:
         print(f"  [{'OK' if ok else 'HATA'}] {ad}")
     print(f"cagri_kesif self-test: {g_}/{len(k)}")
     return 0 if g_ == len(k) else 1
+
+
+def kuyruk_isaretle(onek: str, durum: str, aciklama: str, dizin: Path | None = None) -> int:
+    """Adresi `onek` ile başlayan bekleyen adayları işaretler (eklendi / bilinen / eklenmedi); işaretlenen sayısı."""
+    yol = (dizin or DIZIN) / "kuyruk.json"
+    kuyruk = _oku(yol, [])
+    n = 0
+    for x in kuyruk:
+        if x["url"].startswith(onek) and x.get("durum") == "beklemede":
+            x["durum"], x["aciklama"], x["isaretlenme"] = durum, aciklama, date.today().isoformat()
+            n += 1
+    _yaz(yol, kuyruk)
+    return n
+
+
+def _kapsama_testi() -> bool:
+    k = Katalog(set(), [(218, "Kuzeydoğu Anadolu Kalkınma Ajansı (KUDAKA)", _katla(
+        "KUDAKA 2026 Yılı Anadoludakiler Coğrafi İşaretli Ürünlerin Üretimi ve Tanıtımı Mali Destek Programı"))])
+    ilan = Ilan("t", "Kalkınma ajansları", "22 Eylül 2026 KUDAKA 2026 Yılı Anadoludakiler Coğrafi İşaretli Ürünlerin "
+                "Üretimi ve Tanıtımı MDP İlan Edildi Kuzeydoğu Anadolu Kalkınma Ajansı", "u", kurum_filtresi=False)
+    k.siniflandir(ilan)
+    baska = Ilan("t", "Kalkınma ajansları", "8 Ekim 2026 GEKA Kadın Kooperatifleri Destek Programı İlan Edildi", "u2",
+                 kurum_filtresi=False)
+    k.siniflandir(baska)
+    return ilan.sinif == "cagri_adayi" and ilan.tesvik_id == 218 and baska.sinif == "yeni_program"
 
 
 def main() -> int:
@@ -497,6 +543,11 @@ def main() -> int:
         yol = DIZIN / f"rapor_{ozet['tarih']}.md"
         yol.write_text(rapor_md(ozet, kuyruk), encoding="utf-8")
         print(f"rapor (ağsız, kuyruktan): {yol}")
+        return 0
+    if "--isaretle" in arg:
+        i = arg.index("--isaretle")
+        onek, durum, aciklama = arg[i + 1], arg[i + 2], arg[i + 3]
+        print(f"{kuyruk_isaretle(onek, durum, aciklama)} aday işaretlendi: {durum}")
         return 0
     if "--kuyruk" in arg:
         for x in _oku(DIZIN / "kuyruk.json", []):

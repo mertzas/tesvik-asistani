@@ -658,7 +658,7 @@ Son güncelleme: 2026-10-13 (kapanış turu: tur42-43 veri, planlanan yatırım 
   2026 DEA taslağı 15 yıla çıkarmayı değerlendiriyor). Tarım tohum JSON'u yeniden üretildi (17 kayıt). 372 kayıt,
   etkin 249, belirsiz 3 (367, 365, tohum 2027), çağrı 166. Regresyon: eski 30 dayanak 0 / isabet 41/41, persona 45
   dayanak 0, kapsam 432/13/23, ürün 434/468 (değişen yanıtlar veri turlarından: KGF özetleri sıralamayı oynattı,
-  "zaten yararlandığınız" davranışı). Test 1384 (atlanan 0), lint temiz.
+  "zaten yararlandığınız" davranışı). Test 1384 (atlanan 0), lint temiz. CI f9a9125'ten beri kırmızıydı: `tests/test_persona_2026_10_12.py` içindeki iki yol haritası testi yerel `data/tesvikler.db`'yi açıyordu (depoda yok); artık kayıtlarını `db_session` ile kuruyor, CI yeşil (dc2b5b6).
 - **Açık (2026-10-13, kapanış sonrası)** — kodla kapatılamayanlar:
   - Kullanıcı/dış taraf: SMTP için Gmail uygulama şifresi (hatırlatma, parola sıfırlama ve zorunlu doğrulama buna
     bağlı); KVKK DOLDURULACAK alanları (unvan, adres, VERBİS, iletişim, Groq m.9 güvencesi, günlük saklama süresi) ve

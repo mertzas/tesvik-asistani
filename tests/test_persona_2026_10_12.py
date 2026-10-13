@@ -565,34 +565,39 @@ def test_genel_hedeflerde_finansman_dijital_makine_var():
         assert f'value="{deger}" class="p-hedef"' in html and f'value="{deger}"' not in tarim
 
 
-def test_ihracat_sinyali_yoksa_hazirlikta_eihracat_adimi_yok():
+def test_ihracat_sinyali_yoksa_hazirlikta_eihracat_adimi_yok(db_session):
+    # Gerçek katalog yerine test veritabanı (CI'da data/tesvikler.db yok; 2026-10-13'e kadar CI bu yüzden kırmızıydı).
     from app.hazirlik import yol_haritasi
-    from app.models import SessionLocal
-    db = SessionLocal()
-    try:
-        pet = FinancialProfile(sektor="e-ticaret", nace_kodu="47.91", bolge="İstanbul", calisan_sayisi=8,
-                               yillik_ciro=12_000_000, sirket_turu="limited", hedefler=["istihdam"])
-        kodlar = {a["kod"] for a in yol_haritasi(pet, db)["adimlar"]}
-        assert not kodlar & {"dys_kaydi", "birlik_uyeligi", "madrid_marka"}
-        giyim = FinancialProfile(sektor="e-ticaret", nace_kodu="47.91", bolge="İstanbul", calisan_sayisi=5,
-                                 yillik_ciro=6_000_000, sirket_turu="limited", hedefler=["ihracat"])
-        assert {"dys_kaydi", "madrid_marka"} <= {a["kod"] for a in yol_haritasi(giyim, db)["adimlar"]}
-    finally:
-        db.close()
+    db_session.add(_t(id=901, kurum="Ticaret Bakanlığı", baslik="E-İhracat Pazara Giriş Desteği",
+                      uygunluk_kriterleri={"sektorler": ["e-ticaret", "ihracat"]},
+                      basvuru_sartlari=["Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı",
+                                        "Ön onay için WIPO Madrid Sistemi'ne taraf ülkede marka"]))
+    db_session.commit()
+    pet = FinancialProfile(sektor="e-ticaret", nace_kodu="47.91", bolge="İstanbul", calisan_sayisi=8,
+                           yillik_ciro=12_000_000, sirket_turu="limited", hedefler=["istihdam"])
+    kodlar = {a["kod"] for a in yol_haritasi(pet, db_session)["adimlar"]}
+    assert not kodlar & {"dys_kaydi", "birlik_uyeligi", "madrid_marka"}
+    giyim = FinancialProfile(sektor="e-ticaret", nace_kodu="47.91", bolge="İstanbul", calisan_sayisi=5,
+                             yillik_ciro=6_000_000, sirket_turu="limited", hedefler=["ihracat"])
+    assert {"dys_kaydi", "madrid_marka"} <= {a["kod"] for a in yol_haritasi(giyim, db_session)["adimlar"]}
 
 
-def test_sirketsiz_girisimcide_sirket_adimi_bigg_sirasini_uyarir():
+def test_sirketsiz_girisimcide_sirket_adimi_bigg_sirasini_uyarir(db_session):
     from app.hazirlik import yol_haritasi
-    from app.models import SessionLocal
-    db = SessionLocal()
-    try:
-        rekortiv = FinancialProfile(sektor="arge", bolge="Ankara", calisan_sayisi=0, yillik_ciro=60_000,
-                                    nace_kodu="62.01", sirket_turu="yok", kurucu_yasi=21, trl=8, hedefler=["arge"])
-        sirket = next(a for a in yol_haritasi(rekortiv, db)["adimlar"] if a["kod"] == "sirket")
-        assert "1812" in sirket.get("uyari", "") and "kabulden sonra" in sirket["uyari"]
-        assert "Konsorsiyum" not in sirket["nasil"]
-    finally:
-        db.close()
+    db_session.add_all([
+        _t(id=902, kurum="TUBITAK", baslik="1812 - Yatırım Tabanlı Girişimcilik Destek Programı (BiGG Yatırım)",
+           uygunluk_kriterleri={"sektorler": ["arge", "genel"]},
+           kontrol_listesi=[{"tur": "sart", "metin": "Hızlandırma programına kabul tarihinde herhangi bir sermaye "
+                                                     "şirketinin ya da şahıs işletmesinin ortağı olmamak"}]),
+        _t(id=903, kurum="TUBITAK", baslik="1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı",
+           uygunluk_kriterleri={"sektorler": ["arge"]})])
+    db_session.commit()
+    rekortiv = FinancialProfile(sektor="arge", bolge="Ankara", calisan_sayisi=0, yillik_ciro=60_000,
+                                nace_kodu="62.01", sirket_turu="yok", kurucu_yasi=21, trl=8, hedefler=["arge"])
+    sirket = next(a for a in yol_haritasi(rekortiv, db_session)["adimlar"] if a["kod"] == "sirket")
+    assert "1812" in sirket.get("uyari", "") and "kabulden sonra" in sirket["uyari"]
+    assert "Konsorsiyum" not in sirket["nasil"]
+    assert [x["id"] for x in sirket["acar"]] == [903]
 
 
 def test_taslagin_belge_bolumu_guncel_isaretlerle_yazilir():

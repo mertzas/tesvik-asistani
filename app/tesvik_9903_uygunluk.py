@@ -105,7 +105,18 @@ def soru_yatirim_tutari(soru: str | None) -> float | None:
     return max(tutarlar) if tutarlar else None
 
 
-def tutar_siniri(u: Uygunluk9903, yatirim_tl: float | None, il: str | None) -> Uygunluk9903:
+def yatirim_tutari(soru: str | None, profil) -> tuple[float | None, str]:
+    """Denetlenecek yatırım tutarı ve kaynağı: soruda TL tutarı varsa o ("sorudaki"), yoksa profildeki planlanan
+    yatırım ("profilinizdeki planlanan"); ikisi de yoksa (None, "")."""
+    t = soru_yatirim_tutari(soru)
+    if t:
+        return t, "sorudaki"
+    p = getattr(profil, "planlanan_yatirim_tl", None)
+    return (float(p), "profilinizdeki planlanan") if p else (None, "")
+
+
+def tutar_siniri(u: Uygunluk9903, yatirim_tl: float | None, il: str | None,
+                 kaynak: str = "sorudaki") -> Uygunluk9903:
     """Sorudaki yatırım tutarı EK-3 kalem şartındaki ya da MADDE 5/2'deki asgari sabit yatırımın altındaysa
     "uygun değil" (persona denemesi 2026-10-12: matbaanın 4 milyon TL'lik makinesi için teşvik belgesi sorusu;
     EK-3 18: yalnız 100 milyon TL ve üzeri tevsi/modernizasyon)."""
@@ -118,12 +129,12 @@ def tutar_siniri(u: Uygunluk9903, yatirim_tl: float | None, il: str | None) -> U
         esik = _deger(m.group(1), m.group(2).lower())
         if esik and yatirim_tl < esik:
             return Uygunluk9903(u.program, "uygun_degil", (
-                f"sorudaki yatırım tutarı ({_tl(yatirim_tl)}) EK-3 kalem şartının altında: {u.gerekce}"), u.madde)
+                f"{kaynak} yatırım tutarı ({_tl(yatirim_tl)}) EK-3 kalem şartının altında: {u.gerekce}"), u.madde)
     bolge = il_bolgesi(il) if il else None
     asgari = ASGARI_SABIT_YATIRIM.get(bolge) if bolge else None
     if asgari and yatirim_tl < asgari and u.program not in ("teknoloji_hamlesi", "stratejik_hamle"):
         return Uygunluk9903(u.program, "uygun_degil", (
-            f"sorudaki yatırım tutarı ({_tl(yatirim_tl)}) asgari sabit yatırım tutarının ({bolge}. bölgede "
+            f"{kaynak} yatırım tutarı ({_tl(yatirim_tl)}) asgari sabit yatırım tutarının ({bolge}. bölgede "
             f"{_tl(asgari)}) altında; teşvik belgesi bu tutarın altındaki yatırıma düzenlenmez"), "MADDE 5/2")
     return u
 

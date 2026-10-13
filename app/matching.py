@@ -20,7 +20,7 @@ from app.ihtiyac import isletmeye_yonelik_mi, program_ihtiyaclari
 from app.match_adapter import company_from_profile, program_from_tesvik
 from app.match_scoring import hard_filter, score_program
 from app.kobi import kobi_sinifi
-from app.tesvik_9903_uygunluk import kayit_icin as uygunluk_9903
+from app.tesvik_9903_uygunluk import kayit_icin as uygunluk_9903, tutar_siniri
 from app.nace_hiyerarsi import kisim_duzeyinde, sector_match
 from app.models import FinancialProfile, Tesvik
 from app.urun_sektor_anahtarlari import (
@@ -626,6 +626,9 @@ def esles(profil: FinancialProfile, db: Session, limit: int = 20,
         # 9903: EK-3 şartı aranan programda yatırım konusu listede yoksa kesin olarak
         # desteklenmez (MADDE 5/1); diğer sonuçlar kullanıcıya not olarak düşülür.
         u9903 = uygunluk_9903(t, getattr(profil, "nace_kodu", None), profil.bolge, olcek_sinifi)
+        if u9903 is not None and getattr(profil, "planlanan_yatirim_tl", None):
+            # Planlanan yatırım asgari sabit yatırımın ya da EK-3 tutar şartının altındaysa belge düzenlenmez.
+            u9903 = tutar_siniri(u9903, float(profil.planlanan_yatirim_tl), profil.bolge, "profilinizdeki planlanan")
         if u9903 is not None and u9903.durum == "uygun_degil":
             continue
 

@@ -1705,8 +1705,8 @@ _PAZARYERI_PROGRAM = re.compile(r"Pazaryeri|E-Ticaret|E-İhracat|Sipariş Karş�
 
 def asgari_yatirim_metni(t, profil, soru: str = "") -> str:
     """9903 programında, soruda yatırım tutarı yoksa MADDE 5/2 asgari sabit yatırım tutarı (profil bölgesine göre)."""
-    from app.tesvik_9903_uygunluk import _tl, program_turu, soru_yatirim_tutari
-    if program_turu(t.baslik) in (None, "stratejik_hamle", "teknoloji_hamlesi") or soru_yatirim_tutari(soru):
+    from app.tesvik_9903_uygunluk import _tl, program_turu, yatirim_tutari
+    if program_turu(t.baslik) in (None, "stratejik_hamle", "teknoloji_hamlesi") or yatirim_tutari(soru, profil)[0]:
         return ""
     from app.nace_9903 import il_bolgesi
     from app.tesvik_9903_hesap import ASGARI_SABIT_YATIRIM
@@ -2305,13 +2305,14 @@ def tesvik_belgesi_satiri(soru: str, profil, kartlar: list[Degerlendirme]) -> st
     teşvik belgesi cevabı yalnız alt bölümdeydi; EK-3 18: yalnız 100 milyon TL ve üzeri)."""
     if profil is None or not re.search(r"tesvik belge|9903|yatirim tesvik", _katla(soru)):
         return ""
-    from app.tesvik_9903_uygunluk import degerlendir as d9903, program_turu, soru_yatirim_tutari, tutar_siniri
+    from app.tesvik_9903_uygunluk import degerlendir as d9903, program_turu, tutar_siniri, yatirim_tutari
     if any(program_turu(d.tesvik.baslik) for d in kartlar):
         return ""
     from app.kobi import kobi_sinifi
     olcek = kobi_sinifi(getattr(profil, "calisan_sayisi", None), getattr(profil, "yillik_ciro", None))
+    tutar, kaynak = yatirim_tutari(soru, profil)
     u = tutar_siniri(d9903("hedef_yatirimlar", getattr(profil, "nace_kodu", None), getattr(profil, "bolge", None),
-                           olcek.sinif if olcek.kesin else None), soru_yatirim_tutari(soru), getattr(profil, "bolge", None))
+                           olcek.sinif if olcek.kesin else None), tutar, getattr(profil, "bolge", None), kaynak or "sorudaki")
     hukum = {"uygun_degil": "**uygun değil**", "dusuk": "düşük olasılık", "sartli": "şartlı",
              "uygun": "konu EK-3 listesinde", "bilinmiyor": "belirlenemedi"}[u.durum]
     return f"Teşvik belgesi (9903, Hedef Yatırımlar): {hukum} — {u.gerekce} ({u.madde})."

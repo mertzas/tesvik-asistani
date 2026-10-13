@@ -1574,6 +1574,7 @@
                     cb.checked = (p.ozellikler || []).includes(cb.value);
                 });
                 document.getElementById("p-kurucu-yasi").value = p.kurucu_yasi ?? "";
+                document.getElementById("p-yatirim").value = p.planlanan_yatirim_tl ?? "";
                 document.getElementById("p-ortaklik").value = p.baska_sirkette_ortak === true ? "evet" : p.baska_sirkette_ortak === false ? "hayir" : "";
                 document.querySelectorAll(".p-sertifika").forEach(cb => {
                     cb.checked = (p.sertifikalar || []).includes(cb.value);
@@ -1673,6 +1674,7 @@
                 trl: document.getElementById("p-trl").value ? Number(document.getElementById("p-trl").value) : null,
                 ozellikler: Array.from(document.querySelectorAll(".p-ozellik:checked")).map(cb => cb.value),
                 kurucu_yasi: document.getElementById("p-kurucu-yasi").value ? Number(document.getElementById("p-kurucu-yasi").value) : null,
+                planlanan_yatirim_tl: document.getElementById("p-yatirim").value ? Number(document.getElementById("p-yatirim").value) : null,
                 baska_sirkette_ortak: { evet: true, hayir: false }[document.getElementById("p-ortaklik").value] ?? null,
                 sertifikalar: (() => {
                     const s = Array.from(document.querySelectorAll(".p-sertifika:checked")).map(cb => cb.value);

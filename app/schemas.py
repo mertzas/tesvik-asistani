@@ -224,6 +224,8 @@ class FinancialProfileCreate(BaseModel):
     trl: Optional[int] = Field(None, ge=1, le=9, description="Teknoloji hazırlık seviyesi 1-9")
     kurucu_yasi: Optional[int] = Field(None, ge=15, le=100, description="İşletme sahibinin / en az %50 hissedarın yaşı")
     baska_sirkette_ortak: Optional[bool] = Field(None, description="Başka bir şirkette ortaklığı var mı")
+    planlanan_yatirim_tl: Optional[float] = Field(None, ge=0, le=1e13,
+        description="Planlanan sabit yatırım tutarı (TL); 9903 asgari yatırım şartı için")
     sertifikalar: Optional[List[str]] = Field(None, max_length=5,
         description="organik_sertifika, iyi_tarim_sertifikasi ya da hicbiri")
 
@@ -314,6 +316,7 @@ class FinancialProfileResponse(BaseModel):
     trl: Optional[int] = None
     kurucu_yasi: Optional[int] = None
     baska_sirkette_ortak: Optional[bool] = None
+    planlanan_yatirim_tl: Optional[float] = None
     sertifikalar: Optional[List[str]] = None
     updated_at: datetime
 

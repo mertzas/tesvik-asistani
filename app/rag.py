@@ -26,7 +26,7 @@ from app.girisim import GIRISIM_PROMPT_EKI, girisim_baglam_metni, girisim_modu_m
 from app import dayanak, llm_saglayici, soru_anlama, yerel_danisman
 from app.nace_extraction import clean_grant_text
 from app.tesvik_9903_uygunluk import SIRALAMA_ETKISI as UYGUNLUK_9903_ETKISI, kayit_icin as uygunluk_9903
-from app.tesvik_9903_uygunluk import soru_yatirim_tutari, tutar_siniri
+from app.tesvik_9903_uygunluk import tutar_siniri, yatirim_tutari
 from app.tesvik_9903_hesap import destek_unsurlari_ozeti
 from app.nace_9903 import il_bolgesi
 from app.models import SessionLocal, Tesvik, KurumIletisim, IlTarimMudurlugu, IlKosgebMudurlugu
@@ -470,13 +470,14 @@ def profil_9903_degerlendirmesi(kayitlar, profil_kaydi, soru: str = "") -> dict:
     if profil_kaydi is None:
         return {}
     olcek = kobi_sinifi(profil_kaydi.calisan_sayisi, profil_kaydi.yillik_ciro)
-    tutar = soru_yatirim_tutari(soru) if soru and "yatirim" in soru_ihtiyaclari(soru) else None
+    # Sorudaki tutar yalnız yatırım sorusunda; yoksa profildeki planlanan yatırım (2026-10-13).
+    tutar, kaynak = yatirim_tutari(soru if soru and "yatirim" in soru_ihtiyaclari(soru) else "", profil_kaydi)
     sonuc = {}
     for t in kayitlar:
         u = uygunluk_9903(t, getattr(profil_kaydi, "nace_kodu", None), profil_kaydi.bolge,
                           olcek.sinif if olcek.kesin else None)
         if u is not None:
-            sonuc[t.id] = tutar_siniri(u, tutar, profil_kaydi.bolge)
+            sonuc[t.id] = tutar_siniri(u, tutar, profil_kaydi.bolge, kaynak)
     return sonuc
 
 

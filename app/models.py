@@ -495,6 +495,9 @@ class FinancialProfile(Base):
     kurucu_yasi = Column(Integer, nullable=True)      # işletme sahibi / en az %50 hissedarın yaşı
     baska_sirkette_ortak = Column(Boolean, nullable=True)  # başka bir şirkette ortaklık (BiGG/1812 yasağı)
     sertifikalar = Column(JSON, nullable=True)        # ["organik_sertifika", "iyi_tarim_sertifikasi"] ya da ["hicbiri"]
+    # Planlanan sabit yatırım tutarı (TL, 2026-10-13): 9903 asgari yatırım ve EK-3 tutar şartı profilden denetlenir
+    # (soruda tutar varsa o önceliklidir; app/tesvik_9903_uygunluk.tutar_siniri).
+    planlanan_yatirim_tl = Column(Float, nullable=True)
     ozellikler = Column(JSON, nullable=True)  # hedef kitle etiketleri: ["kadin_girisimci", "savunma_sanayii", ...] (bkz. app/match_adapter.py)
     hazirlik = Column(JSON, nullable=True)  # {"durumlar": {"birlik_uyeligi": true, ...}, "eihracat": {...}} (bkz. app/hazirlik.py)
     ilk_yil_mi = Column(Boolean, nullable=True)  # arazi hazirligi/sera/ekipman gibi tek seferlik kurulus giderleri var mi

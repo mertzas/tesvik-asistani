@@ -754,6 +754,7 @@ def upsert_financial_profile(
     profil.kurucu_yasi = request.kurucu_yasi
     profil.baska_sirkette_ortak = request.baska_sirkette_ortak
     profil.sertifikalar = request.sertifikalar
+    profil.planlanan_yatirim_tl = request.planlanan_yatirim_tl
 
     db.commit()
     db.refresh(profil)

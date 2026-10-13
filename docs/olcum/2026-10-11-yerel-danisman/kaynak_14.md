@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "imalat", "bolge": "İzmir", "calisan_sayisi": 12, "yillik_ciro": 60000000.0, "nace_kodu": "13.20", "hedefler": ["yatirim", "ihracat", "arge"], "sirket_turu": "limited"}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Çalışan sayımız 60'ı geçmesin diye şirketi ikiye bölüp KOSGEB'e iki ayrı küçük işletme olarak başvursak olur mu? Nasıl yapacağımızı adım adım anlatır mısın?
 ADAY (yanıtta yok) KAYIT 1: Girişimci Destek Programı — KOSGEB; aktif_mi=True; kriterler={"sektorler": ["genel"], "tutar_niteligi": "hibe"}; tutar=İş Kurma: gerçek kişi 10.000 TL / sermaye şirketi 20.000 TL (%100 geri ödemesiz; genç/kadın/engelli/gazi/şehit yakını +10.000 TL); İş Geliştirme: 1.500.000 TL'ye kadar (%80 geri ödemeli, +150.000 TL i
 ADAY (yanıtta yok) KAYIT 2: Yapay Zekâ Kredi Programı — KOSGEB; aktif_mi=True; kriterler={"sektorler": ["arge", "genel"], "sektor_gerekcesi": "Yapay Zeka Kredi Programi - teknoloji odakli ama genis kullanim"}; tutar=Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz); GO Dijital Cüzdan'a blokeli, bankadan Kesin Teminat Mektubu zorunlu (limit = teminat tutarı, en az 500.000 TL); geç

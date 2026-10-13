@@ -32,7 +32,7 @@
 - **Başvuru:** Sanayi ve Teknoloji Bakanlığı (Ar-Ge ve tasarım merkezi belgelendirmesi, proje uygunluk denetimi); denetimi Bakanlık veya yetki verilen teknoloji geliştirme bölgeleri yönetici şirketleri yapar. — https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3
 
 **Teknoloji Hamlesi Programı (9903 sayılı Karar) — Sanayi ve Teknoloji Bakanlığı**
-- **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1541 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)
+- **Başvuru dönemi:** 9903 teşvik belgesi müracaat süresi: başvuruya açık — yeni başvuru için son gün 31.12.2030 (1540 gün kaldı). Not: Karar m.5/5: 31/12/2030 tarihine kadar yapılan müracaatlar değerlendirilir; müracaattan önceki harcama kapsam dışı (m.5/6). (duyuru: https://www.yatirimadestek.gov.tr/pdf/assets/upload/dosyalar/karar-yatirim_tesvik_uygulamalari.pdf#madde-5, doğrulama 08.10.2026)
 - **Sizin için:** Şartlı — Karar şartını teyit edin — Karar metnine göre ön değerlendirme: ŞARTLI — orta-yüksek teknoloji sınıfında (EK-1); ürün/teknoloji öncelikli ürün listesinde olmalı, proje komite tarafından değerlendirilir; EK-3 şartı aranmaz (MADDE 5/1, 6).
 - **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
 - **Destek unsurları (Karar metninden, bölgenize göre):** vergi indirimi: yatırıma katkı oranı %50, vergi %60 indirimli uygulanır (MADDE 20); sigorta primi işveren hissesi: %50, 8 yıl (MADDE 18/3, 1. bölge); faiz/kâr payı desteği: repo oranının %40'i, azami 20 puan; kredinin sabit yatırımın %70'ine kadar olan kısmı, azami 5 yıl (MADDE 15); makine desteği: birim fiyatı 2.000.000 TL üstü makinelerde %25, sabit yatırımın %15'i ve 240.000.000 TL tavan; faiz desteğiyle birlikte alınamaz (MADDE 16); asgari sabit yatırım: 12.000.000 TL (MADDE 5, EK-3'te ayrıca belirtilmemişse); başvuru son tarihi 31/12/2030.
@@ -60,8 +60,8 @@
 - **Başvuru:** Sanayi ve Teknoloji Bakanlığı (Ar-Ge/tasarım merkezi veya proje uygunluğu) ve işyerinin bağlı olduğu vergi dairesi (muhtasar beyanname). — https://www.sanayi.gov.tr/assets/pdf/mevzuat/5746SayiliKanun.pdf#madde-3-2
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (28 gün kaldı); başvuru kapanışı 11.11.2026 (30 gün kaldı)
-- 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (10 gün kaldı); başvuru kapanışı 26.10.2026 (14 gün kaldı)
+- 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (27 gün kaldı); başvuru kapanışı 11.11.2026 (29 gün kaldı)
+- 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı (TUBITAK) — profilinize göre engel yok — şartları teyit edin; 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (9 gün kaldı); başvuru kapanışı 26.10.2026 (13 gün kaldı)
 - İşletme Bünyesindeki Ar-Ge Harcamalarının %100'ü Vergi İndirimi (5746 sayılı Kanun m.3/A — Ar-Ge İndirimi) (Sanayi ve Teknoloji Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; Kanun 31/12/2028 tarihine kadar uygulanır.
 
 **Size kapalı ya da başvuruya kapalı programlar:**

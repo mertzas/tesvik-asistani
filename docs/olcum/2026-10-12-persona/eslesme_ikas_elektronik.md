@@ -23,21 +23,21 @@ profil: {'sektor': 'e-ticaret', 'nace_kodu': '47.91', 'bolge': 'İstanbul', 'cal
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
 11. [1] Pazara Giriş Rapor Desteği (5973 sayılı Karar m.21) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-12. [1] Sanal Fuar Organizasyonu Desteği (5973 sayılı Karar m.23) — Ticaret Bakanlığı (aktif=True)
-    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-13. [1] Sanal Ticaret Heyeti Desteği (5973 sayılı Karar m.25) — Ticaret Bakanlığı (aktif=True)
-    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-14. [1] Sektörel Ticaret Heyeti ve Alım Heyeti Desteği (5973 sayılı Karar m.24) — Ticaret Bakanlığı (aktif=True)
-    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-15. [1] Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6) — Ticaret Bakanlığı (aktif=True)
+12. [1] Pazara Giriş Rapor Desteği (5986 sayılı Karar m.3) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-16. [1] Tasarım Organizasyonu Desteği (5973 sayılı Karar m.26) — Ticaret Bakanlığı (aktif=True)
+13. [1] Sanal Fuar Organizasyonu Desteği (5973 sayılı Karar m.23) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-17. [1] Tasarımcı Şirket ve Tasarım Ofisi Desteği (5973 sayılı Karar m.15) — Ticaret Bakanlığı (aktif=True)
+14. [1] Sanal Ticaret Heyeti Desteği (5973 sayılı Karar m.25) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-18. [1] TURQUALITY® Tanıtım Projesi Desteği (5973 sayılı Karar m.27) — Ticaret Bakanlığı (aktif=True)
+15. [1] Sektörel Ticaret Heyeti ve Alım Heyeti Desteği (5973 sayılı Karar m.24) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-19. [1] UR-GE Proje Desteği (5973 sayılı Karar m.19) — Ticaret Bakanlığı (aktif=True)
-    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-20. [1] Yurt Dışı Birim Kira Desteği — Mağaza, Depo, Ofis (5973 sayılı Karar m.11) — Ticaret Bakanlığı (aktif=True)
+16. [1] Sipariş Karşılama (Fulfillment) Hizmeti Desteği (5986 sayılı Karar m.6) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (e-ticaret) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
+17. [1] Tasarım Organizasyonu Desteği (5973 sayılı Karar m.26) — Ticaret Bakanlığı (aktif=True)
+    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
+18. [1] Tasarımcı Şirket ve Tasarım Ofisi Desteği (5973 sayılı Karar m.15) — Ticaret Bakanlığı (aktif=True)
+    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
+19. [1] TURQUALITY® Tanıtım Projesi Desteği (5973 sayılı Karar m.27) — Ticaret Bakanlığı (aktif=True)
+    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
+20. [1] UR-GE Proje Desteği (5973 sayılı Karar m.19) — Ticaret Bakanlığı (aktif=True)
+    gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.

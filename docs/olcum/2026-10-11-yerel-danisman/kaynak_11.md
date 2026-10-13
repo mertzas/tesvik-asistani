@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "hizmet", "bolge": "Hatay", "calisan_sayisi": 4, "yillik_ciro": 3000000.0, "nace_kodu": "56.10", "sirket_turu": "sahis", "hedefler": ["istihdam"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Restoranıma 3 kişi daha alacağım; 4447 sayılı Kanun işveren prim teşviki kaç ay sürer, şartları neler?
 ============================================================
 KAYIT 291

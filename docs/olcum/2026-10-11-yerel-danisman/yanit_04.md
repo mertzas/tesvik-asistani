@@ -2,9 +2,9 @@
 **Kısa cevap:**
 - **1709 – EUREKA-EUROSTARS** (TUBITAK)
 - Destek: Eurostars-3 Ulusal Çağrı 2026/2: ulusal çağrı bütçesi 4.000.000 Avro; Türk proje ortakları için proje bütçesi ≤600.000 Avro; Türk kuruluşlarının ortaklı başvurusunda toplam ≤850.000 Avro; sermaye şirketi dışı kurumların bütçesi toplamın ≤%50'si ve ≤300.000 Avro; proje ≤36 ay; destek oranı KOBİ %75, büyük %60, kamu/vakıf üniversitesi/araştırma kurumları %100
-- Başvuru: Çağrı dönemli: 1709-EUREKA-EUROSTARS 2026/2 ulusal çağrısı; son başvuru tarihi ve uluslararası takvim çağrı duyurusu belgesinde (PDF); başvuru eteydeb.tubitak.gov.tr (PRODİS) (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Başvuru: Eurostars Call 12 (uluslararası takvim): açılış 17.12.2026, kapanış 04.03.2027.
 - Sizin için: profilinize göre engel yok — şartları teyit edin; başlıca şart: Sermaye şirketi, yükseköğretim kurumu, kamu araştırma merkezi/enstitüsü, eğitim ve araştırma hastanesi veya 6550 sayılı Kanun kapsamındaki araştırma altyapısı olmak.
-- Çağrı açık mı: kayıtlarımızda bu çağrının açılış ve kapanış tarihi yok; açık/kapalı durumu belirlenemedi, kurumun çağrı duyurusundan teyit edin.
+- Dikkat (çağrı notu): Uluslararası kapanış 4 Mart 2027 14:00 CET. Türk kuruluşları TÜBİTAK'a ulusal ön başvuru ve tam başvuru da yapar; ulusal takvim TÜBİTAK çağrı duyurusunda ilan edilecek.
 - Program: Çağrı kapsamında, en az bir Türk ve Eurostars üye ülkesinden bir ortağın katılımıyla, pazara yönelik, yenilikçi ürün, süreç ve hizmet geliştirilmesi amacı taşıyan uluslararası Ar-
 - Kimler başvurabilir (kayıttaki şartlar): Sermaye şirketi, yükseköğretim kurumu, kamu araştırma merkezi/enstitüsü, eğitim ve araştırma hastanesi veya 6550 sayılı Kanun kapsamındaki araştırma altyapısı olmak; Her sermaye şirketinde proje konusuyla ilgili en az lisans dereceli en az bir proje personeli bulunmalı.
 
@@ -19,7 +19,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **1709 – EUREKA-EUROSTARS — TUBITAK**
-- **Başvuru dönemi:** Çağrı dönemli: 1709-EUREKA-EUROSTARS 2026/2 ulusal çağrısı; son başvuru tarihi ve uluslararası takvim çağrı duyurusu belgesinde (PDF); başvuru eteydeb.tubitak.gov.tr (PRODİS)
+- **Başvuru dönemi:** Eurostars Call 12 (uluslararası takvim): açılış 17.12.2026, kapanış 04.03.2027. Not: Uluslararası kapanış 4 Mart 2027 14:00 CET. Türk kuruluşları TÜBİTAK'a ulusal ön başvuru ve tam başvuru da yapar; ulusal takvim TÜBİTAK çağrı duyurusunda ilan edilecek. (duyuru: https://www.eurekanetwork.org/programmes-and-calls/eurostars/eurostars-call-12-for-projects-deadline-march-2027/, doğrulama 13.10.2026)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
 - **Destek:** Eurostars-3 Ulusal Çağrı 2026/2: ulusal çağrı bütçesi 4.000.000 Avro; Türk proje ortakları için proje bütçesi ≤600.000 Avro; Türk kuruluşlarının ortaklı başvurusunda toplam ≤850.000 Avro; sermaye şirketi dışı kurumların bütçesi toplamın ≤%50'si ve ≤300.000 Avro; proje ≤36 ay; destek oranı KOBİ %75, büyük %60, kamu/vakıf üniversitesi/araştırma kurumları %100
 - **Profilinize göre sağlanan şartlar:** sorunuzdaki beyana göre Almanya'daki ortak (ülkenin programa üye olduğunu çağrı belgesinden teyit edin); sermaye şirketi (limited şirket)
@@ -33,7 +33,7 @@
 - **Başvuru:** PRODİS (https://eteydeb.tubitak.gov.tr); önce kuruluş bazlı ön kayıt, ulusal ön proje başvurusu, sonra uluslararası değerlendirme — https://tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1709-eureka-eurostars
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- Tasarım Organizasyonu Desteği (5973 sayılı Karar m.26) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; işbirliği kuruluşu faaliyet bazlı ve bütçeyi içeren projesiyle başvurusunu organizasyonun gerçekleşeceği tarihten en az üç ay önce DYS üzerinden Bakanlığa iletir.
+- Tasarım Organizasyonu Desteği (5973 sayılı Karar m.26) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; işbirliği kuruluşu faaliyet bazlı ve bütçeyi içeren projesiyle başvurusunu organizasyonun gerçekleşeceği tarihten en az üç ay önce DYS üzerinden Bakanlığa iletir. (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - Tasarımcı Şirket ve Tasarım Ofisi Desteği (5973 sayılı Karar m.15) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; kapsama alınma başvurusu DYS üzerinden yapılır. Ödeme başvurusu, Ek 1'de belirtilen belgelerle birlikte ödeme belgesi tarihinden itibaren en geç altı ay içerisinde incelemeci kuruluşa DYS üzerinden yapılır.
 - Küresel Tedarik Zinciri Desteği (5973 sayılı Karar m.10) (Ticaret Bakanlığı) — profilinize göre engel yok — şartları teyit edin; Çağrı yoktur; yetkinlik projesi başvurusu DYS üzerinden Bakanlığa yapılır. Yurt dışı depo kira ve depolama gideri başvurusu ödeme belgesi tarihinden itibaren 6 ay içinde yapılmalıdır.
 

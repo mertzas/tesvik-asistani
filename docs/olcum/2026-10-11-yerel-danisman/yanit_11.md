@@ -23,7 +23,7 @@
 - **Kaynak:** https://www.sgk.gov.tr/Content/Post/c52f99f0-da6c-4029-9b9a-a0d6f96a6a42/Guncel-Sigorta-Primi-Tesvik-Destek-ve-Indirimleri-2026-08-04-10-29-55#4447-ek4-cok-tehlikeli-issizlik-primi
 
 **Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde) — SGK / İŞKUR**
-- **Başvuru dönemi:** Sürekli; 31.12.2026 tarihine kadar (80 gün kaldı) yapılan işe alımlar için (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- **Başvuru dönemi:** Sürekli; 31.12.2026 tarihine kadar (79 gün kaldı) yapılan işe alımlar için (kayıttan; güncel çağrıyı kurumdan teyit edin)
 - **Sizin için:** Şarta bağlı — işe alacağınız kişiye bağlı şart: İşe alınan kişinin son 6 aydır işsiz olması.
 - **Karşıladığı ihtiyaç:** istihdam
 - **Destek:** İşveren SGK prim payı, kişi başı aylık 7.184,03–64.656,23 TL (2026; prime esas kazancın alt ve üst sınırı arası), 6–54 ay

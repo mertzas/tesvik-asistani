@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "imalat", "bolge": "Ankara", "calisan_sayisi": 6, "yillik_ciro": 9000000, "nace_kodu": "18.12", "sirket_turu": "limited", "hedefler": ["makine", "finansman"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: İki yeni çalışan alacağız; SGK ve İŞKUR teşvikleri neler?
 ============================================================
 KAYIT 185

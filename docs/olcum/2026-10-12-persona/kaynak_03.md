@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "arge", "bolge": "Ankara", "calisan_sayisi": 0, "yillik_ciro": 60000, "nace_kodu": "62.01", "sirket_turu": "yok", "kurucu_yasi": 21, "trl": 8, "hedefler": ["arge", "finansman"], "baska_sirkette_ortak": false}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Uygulamamı yurt dışında tanıtmak için reklam vermek istiyorum; bunun için devlet desteği var mı?
 ============================================================
 KAYIT 298

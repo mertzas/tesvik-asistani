@@ -1,6 +1,6 @@
 <!-- persona: ikas_pet | soru: Depoya 3 kişi alacağız, istihdam teşviki var mı? -->
 **Kısa cevap:**
-- Öne çıkan: **Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde)** (SGK / İŞKUR) — şarta bağlı (işe alacağınız kişiye bağlı şart: İşe alınan kişinin son 6 aydır işsiz olması); Sürekli; 31.12.2026 tarihine kadar (80 gün kaldı) yapılan işe alımlar için (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Öne çıkan: **Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde)** (SGK / İŞKUR) — şarta bağlı (işe alacağınız kişiye bağlı şart: İşe alınan kişinin son 6 aydır işsiz olması); Sürekli; 31.12.2026 tarihine kadar (79 gün kaldı) yapılan işe alımlar için (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: İşveren SGK prim payı, kişi başı aylık 7.184,03–64.656,23 TL (2026; prime esas kazancın alt ve üst sınırı arası), 6–54 ay
 - Diğer seçenekler: İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5) (şarta bağlı); İŞKUR İşbaşı Eğitim Programı (işverene yönelik: katılımcı cep harçlığı ve sigorta primi İŞKUR tarafından karşılanır) (profilinize göre engel yok — şartları teyit edin); Malullük, Yaşlılık ve Ölüm Sigortaları İşveren Hissesinden Prim İndirimi (5510 sayılı Kanun 81/ı) — 2 puan, imalatta 2026 sonuna kadar 5 puan (profilinize göre engel yok — şartları teyit edin).
 
@@ -15,7 +15,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde) — SGK / İŞKUR**
-- **Başvuru dönemi:** Sürekli; 31.12.2026 tarihine kadar (80 gün kaldı) yapılan işe alımlar için
+- **Başvuru dönemi:** Sürekli; 31.12.2026 tarihine kadar (79 gün kaldı) yapılan işe alımlar için
 - **Sizin için:** Şarta bağlı — işe alacağınız kişiye bağlı şart: İşe alınan kişinin son 6 aydır işsiz olması.
 - **Karşıladığı ihtiyaç:** istihdam
 - **Destek:** İşveren SGK prim payı, kişi başı aylık 7.184,03–64.656,23 TL (2026; prime esas kazancın alt ve üst sınırı arası), 6–54 ay

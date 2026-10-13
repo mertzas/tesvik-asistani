@@ -1,6 +1,6 @@
 <!-- persona: surucu_kursu | soru: Yeni usta öğretici işe alırsak hangi prim teşvikleri var? -->
 **Kısa cevap:**
-- Öne çıkan: **Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde)** (SGK / İŞKUR) — şarta bağlı (işe alacağınız kişiye bağlı şart: İşe alınan kişinin son 6 aydır işsiz olması); Sürekli; 31.12.2026 tarihine kadar (80 gün kaldı) yapılan işe alımlar için (kayıttan; güncel çağrıyı kurumdan teyit edin).
+- Öne çıkan: **Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde)** (SGK / İŞKUR) — şarta bağlı (işe alacağınız kişiye bağlı şart: İşe alınan kişinin son 6 aydır işsiz olması); Sürekli; 31.12.2026 tarihine kadar (79 gün kaldı) yapılan işe alımlar için (kayıttan; güncel çağrıyı kurumdan teyit edin).
 - Destek: İşveren SGK prim payı, kişi başı aylık 7.184,03–64.656,23 TL (2026; prime esas kazancın alt ve üst sınırı arası), 6–54 ay
 - Diğer seçenekler: İşsizlik Ödeneği Alanların İstihdamına Yönelik Teşvik (4447 sayılı Kanun 50/5) (şarta bağlı); 2026 Yılı Asgari Ücret Desteği (işveren sigorta primlerinden mahsup, İşsizlik Sigortası Fonu) (profilinize göre engel yok — şartları teyit edin); İŞKUR İşbaşı Eğitim Programı (işverene yönelik: katılımcı cep harçlığı ve sigorta primi İŞKUR tarafından karşılanır) (profilinize göre engel yok — şartları teyit edin).
 
@@ -15,7 +15,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **Kadın, Genç ve Mesleki Yeterlilik Belgesi Olanların İstihdamı Teşviki (4447 sayılı Kanun geçici 10. madde) — SGK / İŞKUR**
-- **Başvuru dönemi:** Sürekli; 31.12.2026 tarihine kadar (80 gün kaldı) yapılan işe alımlar için
+- **Başvuru dönemi:** Sürekli; 31.12.2026 tarihine kadar (79 gün kaldı) yapılan işe alımlar için
 - **Sizin için:** Şarta bağlı — işe alacağınız kişiye bağlı şart: İşe alınan kişinin son 6 aydır işsiz olması.
 - **Karşıladığı ihtiyaç:** istihdam
 - **Destek:** İşveren SGK prim payı, kişi başı aylık 7.184,03–64.656,23 TL (2026; prime esas kazancın alt ve üst sınırı arası), 6–54 ay

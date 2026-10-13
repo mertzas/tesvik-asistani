@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "e-ticaret", "nace_kodu": "47.91", "bolge": "Bursa", "calisan_sayisi": 10, "yillik_ciro": 15000000, "sirket_turu": "limited", "hedefler": ["ihracat"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Organik bebek tekstili markamızı Körfez ülkelerine satmak istiyoruz; hangi destekler var?
 ============================================================
 KAYIT 191
@@ -53,7 +53,7 @@ Durum notu: Tur12 2026-10-08: 5986 sayılı Karar m.4 (https://ticaret.gov.tr/da
 - [sart] Ticaret Bakanlığı Destek Yönetim Sistemi (DYS) kaydı; MERSİS kaydı güncel ve NACE kodu doğru | kaynak: https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4
 - [sart] Desteklenen ürünler Türk ürünü olmalı (ürün belgesi, üretim yeri ve marka ayrıntılarını E-İhracat Genelgesi'nden teyit edin) | alıntı: pazaryerlerinde Türk ürünlerinin ve markalarının çevrim | kaynak: https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4
 - [sart] Ön onay için WIPO Madrid Sistemi'ne taraf en az bir ülkede tescilli yurt dışı marka (yoksa önce 5973 m.4 Yurt Dışı Marka Tescil Desteği) | kaynak: https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4
-- [sart] E-İhracat Konsorsiyumu bünyesindeyseniz, konsorsiyumun satış yaptığı ülkelerdeki yurt dışı pazaryerlerinde bu destek için başvuru yapamazsınız | alıntı: pazaryerlerinde dijital pazaryeri tanıtım, sipariş karşılama ve pazaryeri komisyon gideri desteklerine ilişkin olarak destek müracaatında bulunamazlar | kaynak: https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4
+- [kural] E-İhracat Konsorsiyumu bünyesindeyseniz, konsorsiyumun satış yaptığı ülkelerdeki yurt dışı pazaryerlerinde bu destek için başvuru yapamazsınız | alıntı: pazaryerlerinde dijital pazaryeri tanıtım, sipariş karşılama ve pazaryeri komisyon gideri desteklerine ilişkin olarak destek müracaatında bulunamazlar | kaynak: https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4
 - [sart] Aynı gider için bu Karar dışında başka bir mevzuat/program kapsamında destek almamış olmalısınız (aksi halde yanıltıcı beyan sayılır ve müeyyide uygulanır) | alıntı: bir mevzuat/ program kapsamında destek aldıklarının tespiti ha linde, bu durum yanıltıcı beyanda/taahhütte bulunulması olarak değerlendirilir | kaynak: https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4
 - [belge] EK-Şirket Başvuru Formu (ilk başvuruda) | kaynak: https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4
 - [belge] EK-Dijital Pazaryeri Tanıtım Desteği Ön Onay Başvuru Formu | kaynak: https://ticaret.gov.tr/data/632b13e013b8767974670b91/E-ihracat%20Karar.pdf#madde-4

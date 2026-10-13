@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "e-ticaret", "nace_kodu": "47.91", "bolge": "Eskişehir", "calisan_sayisi": 1, "yillik_ciro": 600000, "sirket_turu": "sahis", "kurucu_yasi": 27, "hedefler": ["finansman"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: El yapımı seramik satıyorum, tek kişilik şahıs işletmesiyim; genç girişimciye uygun kredi ya da hibe var mı?
 ============================================================
 KAYIT 122
@@ -67,8 +67,9 @@ Durum notu: Başvuru şartları 2026-09-28 tarihinde kurumun kendi sayfasından 
 - [kural] Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz. Program kapsamındaki kefalet talepleri sadece TL para cinsinden yapılacaktır. | alıntı: Bu paket kapsamındaki krediler döviz, altın, mücevherat finansmanında ve refinansman için kullanılamaz. | kaynak: https://www.kgf.com.tr/index.php/tr/urunlerimiz/ozkaynak-kefaletlerimiz/banka-kredileri/kgf-tematik-destek-programlari/halk-bankasi-genciz-kredisi-programi-destek-paketi
 ADAY (yanıtta yok) KAYIT 86: TOBB NEFES KREDİSİ 2026 DESTEK PROGRAMI — KGF; aktif_mi=True; kriterler={"sektorler": ["genel"], "tutar_niteligi": "kredi_kefalet"}; tutar=Azami kredi 3.000.000 TL, azami kefalet 2.400.000 TL (TOBB Nefes 2026)
 ADAY (yanıtta yok) KAYIT 328: Halkbank Esnaf ve Sanatkârlara Hazine Faiz Destekli Yatırım ve İşletme Kredisi (9436 sayılı Cumhurbaşkanı Kararı) — Hazine ve Maliye Bakanlığı / Halkbank; aktif_mi=True; kriterler={"sektorler": ["genel"], "sirket_turleri": ["sahis"]}; tutar=Hibe değil faiz desteği: Halkbank'ın esnaf kredisine uyguladığı cari faiz oranından, Hazine'nin karşıladığı bir indirim yapılır. İndirim oranları 11648 sayılı Kararla değiştirilmiştir (güncel oranı Ka
+ADAY (yanıtta yok) KAYIT 171: Ziraat Katılım Bankası Katılım Finans Destek Paketi — KGF; aktif_mi=True; kriterler={"tutar_niteligi": "kredi_kefalet", "sektorler": ["genel"], "sektor_gerekcesi": "Kurum kuralıyla etiketlendi (veri bütünlüğü düzeltmesi 2026-10-07)"}; tutar=4.000.000 / 6.000.000 TL; %80; 36 ay (6 ay ödemesiz); başvuru ücreti KOBİ 10.000 / KOBİ dışı 20.000 TL
+ADAY (yanıtta yok) KAYIT 154: KGF Genel Destek Programı — KGF; aktif_mi=True; kriterler={"sektorler": ["genel"], "tutar_niteligi": "kredi_kefalet"}; tutar=
 ADAY (yanıtta yok) KAYIT 153: TURYIB Programı Destek Paketi — KGF; aktif_mi=True; kriterler={"sektorler": ["genel"], "tutar_niteligi": "kredi_kefalet", "max_olcek": "orta", "exclusive_target_group": true, "target_group_tags": ["genc_girisimci"]}; tutar=85 Milyon TL; kefalet oranı %80
-ADAY (yanıtta yok) KAYIT 146: TURWIB PROGRAMI DESTEK PAKETİ — KGF; aktif_mi=True; kriterler={"sektorler": ["genel"], "tutar_niteligi": "kredi_kefalet", "max_olcek": "orta", "target_group_tags": ["kadin_girisimci"]}; tutar=
 ============================================================
 KAYIT 326
 [Gelir İdaresi Başkanlığı] Genç Girişimcilerde Gelir Vergisi İstisnası (193 sayılı GVK mükerrer madde 20)
@@ -126,7 +127,6 @@ Durum notu: ŞİRKET TÜRÜ FARKI (2026-08-02'de kosgeb.gov.tr'den doğrulandı)
 - [bilgi] Şirket türü tutarı belirler: Gerçek kişi (şahıs) işletmesi 10.000 TL, sermaye şirketi (Ltd./A.Ş.) 20.000 TL İş Kurma Desteği alır | alıntı: Gerçek kişi işletme 10.000 TL | kaynak: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/1231/girisimci-destek-programi
 - [bilgi] Desteklenen sektörler arasında imalat, telekomünikasyon, bilgisayar programlama, bilişim altyapısı ve bilimsel Ar-Ge yer alır | alıntı: 63-Bilişim altyapısı, veri işleme, barındırma ve diğer bilgi hizmeti faaliyetleri | kaynak: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/1231/girisimci-destek-programi
 ÇAĞRI: {"id": 8, "ad": "İş Geliştirme Çağrısı 2026 yılı 2. dönem", "acilis": "2026-04-20", "kapanis": "2026-05-08", "on_kayit_son": null, "son_gun": "2026-05-08", "kaynak_url": "https://www.kosgeb.gov.tr/site/tr/genel/detay/9374/girisimci-destek-programi-is-gelistirme-cagrisi-2026-yili-2-donem-basvurulari-basladi", "dogrulama_tarihi": "2026-10-08", "notlar": null, "durum": "kapandi", "durum_metni": "Kapandı", "kalan_gun": null}
-ADAY (yanıtta yok) KAYIT 2: Yapay Zekâ Kredi Programı — KOSGEB; aktif_mi=True; kriterler={"sektorler": ["arge", "genel"], "sektor_gerekcesi": "Yapay Zeka Kredi Programi - teknoloji odakli ama genis kullanim"}; tutar=Kredi 500.000 – 5.000.000 TL; faiz ve komisyon yok; vade 24 ay (ilk 12 ay ödemesiz); GO Dijital Cüzdan'a blokeli, bankadan Kesin Teminat Mektubu zorunlu (limit = teminat tutarı, en az 500.000 TL); geç
 ============================================================
 KAYIT 330
 [KOSGEB] KOSGEB Girişimcilik Eğitimi (e-Akademi) — Ücretsiz Online Geleneksel ve İleri Girişimcilik Eğitimi

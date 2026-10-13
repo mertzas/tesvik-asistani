@@ -1,6 +1,6 @@
 # DURUM — Teşvik Asistanı denetim çalışması
 
-Son güncelleme: 2026-10-13 (eksik envanteri ve kapanışı: tur41 veri, hatırlatıcı, koşullu şart, zaten kullanılan program; 367 kayıt, etkin 245; soru anlama katmanı varsayılan kapalı). Açık kalanlar "Açık (2026-10-13)" maddesinde. Oturuma bunu okuyarak başla.
+Son güncelleme: 2026-10-13 (kapanış turu: tur42-43 veri, planlanan yatırım alanı, Groq yedek model, keşif kuyruğu işaretleme, DEPLOYMENT tablosu; 372 kayıt, etkin 249, belirsiz 3, çağrı 166; soru anlama katmanı varsayılan kapalı). Açık kalanlar "Açık (2026-10-13)" maddesinde. Oturuma bunu okuyarak başla.
 
 ## Yapılanlar
 - **Denetim 1** (6 aşama, tamamlandı): eşleştirme (ince_skor, uygunluk engelleri), RAG (akışlı yanıt `/api/sor/akis`,
@@ -635,19 +635,44 @@ Son güncelleme: 2026-10-13 (eksik envanteri ve kapanışı: tur41 veri, hatırl
   pazartesi 03:00, oturum açıkken; elle tetiklenen deneme sonuç 0 (konsollu cmd ile pencere kapanınca Ctrl+C ile
   kesiliyordu, bu yüzden pythonw). Eski kazıyıcılar (app/scrapers/kosgeb, tubitak, kgf; doğrulamasız ekleme) artık
   zamanlanmış değil. Rapor her zaman bekleyen bütün adayları da gösterir; `--rapor` ağsız yeniden üretir.
-- **Açık (2026-10-13)** — kodla kapatılamayanlar:
-  - Kullanıcı/dış taraf: SMTP bağlantı hatası (hatırlatma ve zorunlu doğrulama buna bağlı); KVKK DOLDURULACAK alanları
-    (unvan, adres, VERBİS, iletişim, Groq m.9 güvencesi, günlük saklama süresi); Groq ZDR + ücretli katman + anahtar
-    yenileme + hukuk görüşü; Stripe canlı anahtar; Sentry DSN (AB); Linux/Docker dağıtım provası; İKAS partner hesabı;
-    GPU ölçümü (ozel_sunucu kararı); vekil arkası IP işinin (Dockerfile.prod, compose, models.py, rate_limit.py) commit
-    onayı; profil alanları (planlanan yatırım tutarı, önceki yıl ihracat, alınan destekler) models.py'deki commit
-    edilmemiş işle çakışmasın diye bu turda eklenmedi; DEPLOYMENT.md "Üretime almadan önce" tablosu bayat (dosyada
-    commit edilmemiş paralel iş var, ona dokunulmadı); kayıt ekranında e-posta numaralandırma (doğrulama zorunlu
-    açılınca kapanır).
-  - Veri: 7 KGF kaydının özeti site menüsü (93, 116, 125, 153, 154, 171, 173; sayfa JS, gömülü tarayıcı kgf.com.tr'ye
-    izin vermedi); 367 için 2026-2027 uzatma kararı (RG fihristi); 270 fiilî ödeme teyidi (il müdürlüğü); tohum/fidan
-    kullanım desteği 2027 dönemi ve çoban istihdam desteği 2026 tutarı (kayit/eklenmedi); boş belge/şart alanları
-    (TÜBİTAK akademik, Ticaret) bilinçli boş ya da kontrol listesinde; Ekim sonunda kapanan çağrıların yenilenmesi.
+- **Kapanış turu** (2026-10-13). Kod: profilde planlanan yatırım tutarı (`planlanan_yatirim_tl`, göç
+  `s6b8d0f2a789`; panelde alan; 9903 asgari sabit yatırım şartı soruda tutar yoksa profilden denetlenir:
+  `tesvik_9903_uygunluk.yatirim_tutari`, eşleştirmede asgari altındaki 9903 programı elenir, danışman notu "profilinizdeki
+  planlanan yatırım tutarı" der; `tests/test_planlanan_yatirim.py` 4). Groq ücretsiz katman sınırı: 429'da yedek model
+  (`SORU_ANLAMA_YEDEK_MODEL`, varsayılan `openai/gpt-oss-20b`, `yok` kapatır), günlük sınırda model UTC gün sonuna,
+  dakika sınırında Retry-After kadar denenmez, ikisi de doluysa ağa çıkmadan kalıplarla devam (self-test 29/29, pytest
+  +4). SMTP hatası günlüğe türü ve Gmail uygulama şifresi ipucuyla yazılır (`app/email.py`; teşhis: DNS/bağlantı/
+  STARTTLS sağlam, oturum açmada kapanıyor). Çağrı keşfi: ilandaki son gün programın kayıtlı çağrı tarihiyle aynıysa
+  "bilinen" (2223/2224 tekrar aday olmaz), toplayıcı başlıkları için kapsama benzerliği (KUDAKA 218 kaçıyordu),
+  `--isaretle <url-önek> <durum> "<açıklama>"` ile kuyruk işaretleme (self-test 18/18, pytest +2); ilk kuyruğun 10
+  adayı işlendi (4 eklendi, 3 bilinen, 3 eklenmedi: ZAFER SOGEP rehberi 404, ZAFER YKH 15.05.2026'da kapanmış, SERKA
+  FZD yalnız kamu/STK/OSB/KSS). DEPLOYMENT.md "Üretime almadan önce" tablosu güncel gerçeklerle yeniden yazıldı.
+  Veri tur42 (`scripts/fix_veri_2026_10_13_tur42.py` self-test 6/6): 7 KGF özeti (93, 116, 125, 153, 154, 171, 173)
+  site menüsü yerine resmî "Ürün açıklaması"; çağrılar 197 AHİKA Eylül-Ekim (30.10), 39 Eureka Globalstars Japonya
+  (20.01.2027), 29 SBEP 2026 (23.11); yeni kayıt DİKA 2026 Teknik Destek (TRC3/26/TD, iki dönem). Veri tur43
+  (`scripts/fix_veri_2026_10_13_tur43.py` self-test 8/8; kaynak `docs/olcum/2026-10-13-tur43/kaynak/`, RG taramaları
+  PNG ve görüntüden okundu): yeni Sertifikalı Tohum Kullanım Desteği 2027 (11781 sayılı CK, RG 08.09.2026; Tablo 4/5 ×
+  442 TL; 2027 takvimi ilan edilmedi → belirsiz), yeni Sürü Yöneticisi (Çoban) 2026 (430 × 1,8 × 150 = 116.100 TL,
+  hesap; HAYGEM takvimi 05.01/15.06/19.11.2027 → 3 çağrı satırı), 365 fidan 2026/2027 dekar tutarları ve belirsiz
+  (2026 belge teslimi 31.07.2026'da bitti), 367 notu (RG fihristi 01.01.2025–13.10.2026 tarandı, uzatma yok; Temmuz
+  2026 DEA taslağı 15 yıla çıkarmayı değerlendiriyor). Tarım tohum JSON'u yeniden üretildi (17 kayıt). 372 kayıt,
+  etkin 249, belirsiz 3 (367, 365, tohum 2027), çağrı 166. Regresyon: eski 30 dayanak 0 / isabet 41/41, persona 45
+  dayanak 0, kapsam 432/13/23, ürün 434/468 (değişen yanıtlar veri turlarından: KGF özetleri sıralamayı oynattı,
+  "zaten yararlandığınız" davranışı). Test 1384 (atlanan 0), lint temiz.
+- **Açık (2026-10-13, kapanış sonrası)** — kodla kapatılamayanlar:
+  - Kullanıcı/dış taraf: SMTP için Gmail uygulama şifresi (hatırlatma, parola sıfırlama ve zorunlu doğrulama buna
+    bağlı); KVKK DOLDURULACAK alanları (unvan, adres, VERBİS, iletişim, Groq m.9 güvencesi, günlük saklama süresi) ve
+    hukuk görüşü; Groq ücretli katman (Groq'ta şimdilik kapalı) ve sohbete yapıştırılan anahtarın yenilenmesi; Stripe
+    canlı anahtar; Sentry DSN (AB); Linux/Docker dağıtım provası (zamanlayıcı kilidi tek işçi kanıtı dahil); İKAS
+    partner hesabı; GPU ölçümü (ozel_sunucu kararı); üretimde `alembic upgrade head` ve tur betiklerinin sırayla
+    uygulanması; kayıt ekranında e-posta numaralandırma (doğrulama zorunlu açılınca kapanır).
+  - Ürün: profil alanı "önceki yıl ihracat" ve yapılandırılmış "alınan destekler" yok (alınan destek şimdilik sorudan
+    okunuyor); ihracat tutarına bağlı eşik kuralı kayıtlarda tanımlı olmadığı için alan tek başına bir şey
+    değiştirmezdi.
+  - Veri: 270 fiilî ödeme teyidi (il kültür turizm müdürlüğü); 365 ve tohum 2027 kaydı 2027 belge teslim takvimi
+    ilan edilince aktif yapılmalı (Bakanlık birim fiyat sayfası hâlâ 310 TL tabanlı); çoban 2026 tutarı Bakanlık
+    sayfasında yayımlanınca hesap teyit edilmeli; 367 Kanun değişikliği izlenmeli; Ekim sonunda kapanan çağrıların
+    yenilenmesi keşif hattının pazartesi taramasıyla kuyruğa düşer.
 - **Deterministik başvuru orkestratörü** (`app/basvuru_orkestrator.py`, self-test 10/10, `tests/test_basvuru_orkestrator.py`
   6): şirket profili + harcama dökümünden 10 adımda (ayrıştırma, mevzuat eşleştirme, KOBİ/KOSGEB, hedef ülke, mükerrerlik,
   DYS, A-D stres testi, onarım, gerekçe, JSON) üç bölümlü çıktı. Oran, tavan (2026), şart ve hedef ülke listesi kayıtlardan;

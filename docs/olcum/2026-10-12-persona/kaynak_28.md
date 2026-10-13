@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "e-ticaret", "nace_kodu": "47.91", "bolge": "Ankara", "calisan_sayisi": 3, "yillik_ciro": 2500000, "sirket_turu": "sahis", "hedefler": ["finansman"], "ozellikler": ["kadin_girisimci"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Doğal kozmetik markamla online satış yapıyorum; kadın girişimciye kredi ya da hibe var mı?
 ============================================================
 KAYIT 170

@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "imalat", "bolge": "İzmir", "calisan_sayisi": 12, "yillik_ciro": 60000000.0, "nace_kodu": "13.20", "hedefler": ["yatirim", "ihracat", "arge"], "sirket_turu": "limited"}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: 1507'ye başvuracağız. Projemiz kesin kabul edilir mi, garanti verebilir misiniz?
 ============================================================
 KAYIT 44
@@ -25,7 +25,7 @@ Durum notu: TÜBİTAK resmi program sayfasından doğrulandı (2026-07-12). | De
 - [kural] Proje bütçesi en fazla 3.500.000 TL olmalı | alıntı: Proje bütçesi en fazla 3.500.000 TL’dir. | kaynak: https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi
 - [kural] Proje süresi en fazla 18 ay olmalı (çağrı duyurusunda belirtilir) | alıntı: Proje destek süresi çağrı duyurusunda belirtilir ve Programın Uygulama Esasları gereği 18 ayı aşamaz. | kaynak: https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi
 - [kural] Başvuru yalnız duyurulan çağrı döneminde PRODİS üzerinden yapılır | alıntı: 1507 KOBİ Ar-Ge Başlangıç Destek Programına başvurular çağrı duyurularına göre yapılır. | kaynak: https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi
-ÇAĞRI: {"id": 2, "ad": "2026 yılı 2. çağrı", "acilis": "2026-07-20", "kapanis": "2026-11-11", "on_kayit_son": "2026-11-09", "son_gun": "2026-11-09", "kaynak_url": "https://tubitak.gov.tr/sites/default/files/2026-07/1507_KOBI_Ar-Ge_Baslangic_Destek_Programlari_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf", "dogrulama_tarihi": "2026-10-08", "notlar": "Kapanış 11.11.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 09.11.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı.", "durum": "acik", "durum_metni": "Başvuruya açık", "kalan_gun": 28}
+ÇAĞRI: {"id": 2, "ad": "2026 yılı 2. çağrı", "acilis": "2026-07-20", "kapanis": "2026-11-11", "on_kayit_son": "2026-11-09", "son_gun": "2026-11-09", "kaynak_url": "https://tubitak.gov.tr/sites/default/files/2026-07/1507_KOBI_Ar-Ge_Baslangic_Destek_Programlari_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf", "dogrulama_tarihi": "2026-10-08", "notlar": "Kapanış 11.11.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 09.11.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı.", "durum": "acik", "durum_metni": "Başvuruya açık", "kalan_gun": 27}
 ADAY (yanıtta yok) KAYIT 321: Türk Eximbank IBRD Yeşil İhracat Destek Kredisi (AB karbon sınır düzenlemesine yönelik yeşil dönüşüm yatırımları için orta-uzun vadeli kredi) — Türk Eximbank; aktif_mi=True; kriterler={"sektorler": ["ihracat", "imalat"]}; tutar=Hibe değil kredi: her firma için başvuru üst limiti 20 milyon EUR; firma limiti Eximbank'ça firma bazında belirlenir. Faiz/kar payı vade, tutar ve para birimine göre belirlenir.
 ============================================================
 KAYIT 368

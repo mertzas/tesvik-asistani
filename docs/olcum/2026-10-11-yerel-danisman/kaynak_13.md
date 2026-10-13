@@ -1,5 +1,5 @@
 PERSONA: null
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Kafe açmak istiyorum, hangi hibeleri alabilirim?
 ADAY (yanıtta yok) KAYIT 78: Kırsal Kalkınma Yatırım Programı (KKYP) – Tarımsal İşleme/Depolama ve Makine Parkı Hibeleri — Tarım Bakanlığı; aktif_mi=False; kriterler={"sektorler": ["tarim"], "alt_kategori": "makinelestirme", "genislik": "genis", "tutar_niteligi": "proje_bazli_tavan"}; tutar=Hibe: KDV dâhil hibeye esas proje tutarının %50–%70'i (EK-2'ye göre); hibeye esas tutar 100.000 – 30.000.000 TL (aile işletmesi ≤8.000.000 TL)
 ADAY (yanıtta yok) KAYIT 80: Tasarruflu Tarımsal Sulama Sistemleri (TSS) Hibe Desteği — Tarım Bakanlığı; aktif_mi=False; kriterler={"sektorler": ["tarim"], "alt_kategori": "sulama", "genislik": "genis", "tutar_niteligi": "proje_bazli_tavan"}; tutar=Hibe oranı %50 (damla, yağmurlama), %60 (mikro yağmurlama; center pivot/lineer/tamburlu; güneş enerjili), %70 (yüzey altı damla); hibeye esas proje tutarı en fazla 10.000.000 TL

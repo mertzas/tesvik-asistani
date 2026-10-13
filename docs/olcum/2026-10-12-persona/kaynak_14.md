@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "hizmet", "bolge": "Konya", "calisan_sayisi": 9, "yillik_ciro": 7500000, "nace_kodu": "85.53", "sirket_turu": "limited", "hedefler": ["finansman", "dijital"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Kursumuzun dijitalleşmesi (online ders, randevu sistemi) için KOSGEB desteği alabilir miyiz?
 ADAY (yanıtta yok) KAYIT 1: Girişimci Destek Programı — KOSGEB; aktif_mi=True; kriterler={"sektorler": ["genel"], "tutar_niteligi": "hibe"}; tutar=İş Kurma: gerçek kişi 10.000 TL / sermaye şirketi 20.000 TL (%100 geri ödemesiz; genç/kadın/engelli/gazi/şehit yakını +10.000 TL); İş Geliştirme: 1.500.000 TL'ye kadar (%80 geri ödemeli, +150.000 TL i
 ============================================================

@@ -7,7 +7,7 @@ profil: {'sektor': 'tarim', 'bolge': 'Ordu', 'calisan_sayisi': 0, 'yillik_ciro':
  2. [1] Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil) — Tarım Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (tarim) bu desteğin kapsamına uygun.; Yetiştirdiğiniz ürün/faaliyet (fındık) bu destekte geçiyor.; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
- 3. [1] Sertifikalı/Standart Fidan Kullanım Desteği — yeni meyve bahçesi/bağ tesisi, fındık dahil (2026 üretim yılı) — Tarım Bakanlığı (aktif=True)
+ 3. [1] Sertifikalı/Standart Fidan Kullanım Desteği — yeni meyve bahçesi/bağ tesisi, fındık dahil (2026 üretim yılı) — Tarım Bakanlığı (aktif=None)
     gerekçe: Sektörünüz (tarim) bu desteğin kapsamına uygun.; Yetiştirdiğiniz ürün/faaliyet (fındık) bu destekte geçiyor.; Şahıs işletmesi / tek kişilik faaliyet olarak değerlendirildi.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
  4. [1] Ziraat Bankası ve Tarım Kredi Kooperatifleri Hazine Faiz Destekli Tarımsal Üretim Kredisi (indirimli / faizsiz tarım kredisi, 2024-2026) — Hazine ve Maliye Bakanlığı (aktif=True)

@@ -29,10 +29,10 @@
 - **Başvuru:** Kayıtlı olduğunuz il/ilçe tarım ve orman müdürlüğü (ÇKS kaydı). Ödeme T.C. Ziraat Bankası hesabına yapılır. — https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8859.pdf#findik-temel-destek
 
 **Sertifikalı/Standart Fidan Kullanım Desteği — yeni meyve bahçesi/bağ tesisi, fındık dahil (2026 üretim yılı) — Tarım Bakanlığı**
-- **Başvuru dönemi:** Belge teslim bitiş tarihi Destekleme Uygulama Takvimi'ne göredir; bitiş tarihinden sonra müracaat edilemez.
+- **Başvuru dönemi:** Programın sürdüğü teyit edilmeli. 2026 üretim yılı belge teslimi Temmuz 2026'nın son iş gününde (31.07.2026) bitti. 2027 üretim yılı: 2027 ÇKS kayıt başlangıcından Temmuz 2027'nin son iş gününe kadar (Tebliğ 2024/39 EK-2); 2027 takvimi henüz ilan edilmedi.
 - **Sizin için:** Şarta bağlı — profilinizden doğrulanamayan önemli şart: Fidan yurt içinde üretilmiş olmalı ve Tohumluk Tescil ve Sertifikasyon Merkez Müdürlüğü veya Karacabey Fidan Fide Test Merkezi tarafından düzenlenmiş sertifikalı/standart fidan sertifikasına sahip olmalı.
 - **Karşıladığı ihtiyaç:** dekar başı tarımsal destek ödemesi
-- **Destek:** Dekar başına katsayı x destek katsayı değeri (2026: 367 TL, 2027: 442 TL). Katsayılar: standart fidan 2, sertifikalı fidan 5. Tablo 6 türleri: altıntop, armut, asma, ayva, badem, ceviz, dut, elma, erik, fındık, incir, kayısı, kestane, kiraz, kivi, limon, mandarin, nektarin, pikan cevizi, portakal, şeftali, Trabzon hurması, vişne, zeytin.
+- **Destek:** Dekar başına katsayı × destek katsayı değeri; katsayılar standart fidan 2, sertifikalı fidan 5 (8859 Tablo 6). 2026 (367 TL, 11781 ile 1/1/2026'dan geçerli): standart 734 TL/da, sertifikalı 1.835 TL/da. 2027 (442 TL): standart 884 TL/da, sertifikalı 2.210 TL/da (hesap). Tablo 6 türleri: altıntop, armut, asma, ayva, badem, ceviz, dut, elma, erik, fındık, incir, kayısı, kestane, kiraz, kivi, limon, mandarin, nektarin, pikan cevizi, portakal, şeftali, Trabzon hurması, vişne, zeytin.
 - **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
   - ☐ Fidan yurt içinde üretilmiş olmalı ve Tohumluk Tescil ve Sertifikasyon Merkez Müdürlüğü veya Karacabey Fidan Fide Test Merkezi tarafından düzenlenmiş sertifikalı/standart fidan sertifikasına sahip olmalı.
   - ☐ Bahçe ilgili üretim yılında tesis edilmiş, yönetmeliğe ve dikim normlarına uygun ve tek türde olmalı.

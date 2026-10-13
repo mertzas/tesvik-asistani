@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "arge", "bolge": "İstanbul", "calisan_sayisi": 12, "yillik_ciro": 20000000.0, "nace_kodu": "62.01", "sirket_turu": "limited", "trl": 8, "hedefler": ["ihracat", "arge", "finansman"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: KOSGEB Yapay Zekâ Kredisi ne kadar, vadesi ve ödemesiz dönemi nedir?
 ============================================================
 KAYIT 2

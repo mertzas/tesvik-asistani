@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "hizmet", "bolge": "Konya", "calisan_sayisi": 9, "yillik_ciro": 7500000, "nace_kodu": "85.53", "sirket_turu": "limited", "hedefler": ["finansman", "dijital"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Yeni usta öğretici işe alırsak hangi prim teşvikleri var?
 ============================================================
 KAYIT 186

@@ -46,7 +46,14 @@ class EmailService:
 
             return True
         except Exception as e:
-            print(f"Failed to send email: {e}")
+            # Teşhis (2026-10-13): smtp.gmail.com:587 bağlantı ve TLS sağlam; "Connection unexpectedly closed" oturum
+            # açma aşamasında. Gmail normal parolayla girişi keser: iki adımlı doğrulama + uygulama şifresi gerekir.
+            import logging
+            ipucu = ""
+            if isinstance(e, (smtplib.SMTPAuthenticationError, smtplib.SMTPServerDisconnected)):
+                ipucu = (" (kimlik doğrulama aşaması: Gmail ise SMTP_PASSWORD 16 haneli uygulama şifresi olmalı; "
+                         "SMTP_USER gönderen adresle aynı olmalı)")
+            logging.getLogger(__name__).warning("E-posta gönderilemedi: %s%s", type(e).__name__, ipucu)
             return False
 
     def send_password_reset_email(self, email: str, name: str, baglanti: str) -> bool:

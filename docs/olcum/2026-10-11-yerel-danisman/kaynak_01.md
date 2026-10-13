@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "tarim", "bolge": "Konya", "calisan_sayisi": 3, "yillik_ciro": 2500000.0, "arazi_buyuklugu_dekar": 180, "urun_turu": "buğday", "tarim_kategori": "tahil_baklagil", "hedefler": ["makine", "hayvan"], "sirket_turu": "sahis"}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Traktör ve mibzer almak istiyorum; Kırsal Kalkınma hibesinin oranı ve üst limiti nedir, bireysel traktör alımı destekleniyor mu?
 ============================================================
 KAYIT 78

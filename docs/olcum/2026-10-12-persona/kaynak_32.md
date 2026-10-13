@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "e-ticaret", "nace_kodu": "47.91", "bolge": "İstanbul", "calisan_sayisi": 4, "yillik_ciro": 8000000, "sirket_turu": "sahis", "hedefler": ["ihracat"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Gümüş takı satan online mağazam var; Etsy ve kendi sitemden yurt dışı satış için destek var mı?
 ============================================================
 KAYIT 246

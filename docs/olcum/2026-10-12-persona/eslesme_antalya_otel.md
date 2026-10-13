@@ -1,7 +1,7 @@
 # antalya_otel
 profil: {'sektor': 'hizmet', 'bolge': 'Antalya', 'calisan_sayisi': 14, 'yillik_ciro': 18000000, 'nace_kodu': '55.10', 'sirket_turu': 'limited', 'hedefler': ['finansman', 'dijital']}
 
- 1. [1] Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi — Kültür ve Turizm Bakanlığı (aktif=None)
+ 1. [1] Turizm Yatırımı/İşletme Belgeli Tesislere 2634 sayılı Turizmi Teşvik Kanunu Teşvikleri ve Elektrik Enerjisi Gideri İndirimi — Kültür ve Turizm Bakanlığı (aktif=True)
     gerekçe: Sektörünüz (hizmet) bu desteğin kapsamına uygun.
     eksik: Belirttiğiniz hedeflerle doğrudan eşleşme bulunamadı, ayrıntıları kontrol edin.
  2. [1] YÖNDE - Yönderlik ve Değerlendirme Destek Programı — KOSGEB (aktif=True)

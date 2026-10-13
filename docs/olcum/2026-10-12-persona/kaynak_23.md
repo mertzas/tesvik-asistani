@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "hizmet", "bolge": "Antalya", "calisan_sayisi": 14, "yillik_ciro": 18000000, "nace_kodu": "55.10", "sirket_turu": "limited", "hedefler": ["finansman", "dijital"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Yurt dışı tanıtım ve online satış için destek var mı?
 ============================================================
 KAYIT 191

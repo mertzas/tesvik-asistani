@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "hizmet", "bolge": "Hatay", "calisan_sayisi": 2, "yillik_ciro": 1000000.0, "sirket_turu": "sahis", "hedefler": ["finansman"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: TOBB Nefes Kredisi 2026 kredi ve kefalet limiti ne kadar?
 ============================================================
 KAYIT 86

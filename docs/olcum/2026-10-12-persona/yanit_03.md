@@ -12,7 +12,7 @@
 - Ölçek: mikro işletme [KOBİ Yönetmeliği eşiklerine göre]
 - İl: Ankara
 - Hedefler: Ar-Ge, kredi/finansman
-- Kuruluş tarihi: 12.10.2026
+- Kuruluş tarihi: 13.10.2026
 - Teknoloji hazırlık seviyesi (TRL): 8
 - Sorudan anlaşılan ihtiyaç: ihracat, reklam, tanıtım ve marka
 

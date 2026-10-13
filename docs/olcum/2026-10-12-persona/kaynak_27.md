@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "e-ticaret", "nace_kodu": "47.91", "bolge": "İstanbul", "calisan_sayisi": 5, "yillik_ciro": 6000000, "sirket_turu": "limited", "hedefler": ["ihracat", "dijital"], "ozellikler": ["kadin_girisimci"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Instagram ve Google reklam giderlerim için destek alabilir miyim?
 ADAY (yanıtta yok) KAYIT 192: Dijital Pazaryeri Tanıtım (Reklam) Desteği (5986 sayılı Karar m.4) — Ticaret Bakanlığı; aktif_mi=True; kriterler={"sektorler": ["ihracat", "e-ticaret"], "tutar_niteligi": "hibe", "sirket_turleri": ["limited", "anonim", "kooperatif"]}; tutar=%50 (hedef ülkelerde %70); 2026 yıllık üst limit şirketler için 36.993.646 TL; pazaryeri başına 3 yıl
 ============================================================

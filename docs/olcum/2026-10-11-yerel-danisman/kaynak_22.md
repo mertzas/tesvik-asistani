@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "genel", "bolge": "Eskişehir", "calisan_sayisi": 1, "yillik_ciro": 900000.0, "nace_kodu": "96.02", "sirket_turu": "sahis", "hedefler": ["finansman"], "kurucu_yasi": 26}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Genç girişimciler için uygun kredi ya da kefalet var mı?
 ============================================================
 KAYIT 170

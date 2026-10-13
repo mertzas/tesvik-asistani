@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "tarim", "bolge": "Ordu", "calisan_sayisi": 0, "yillik_ciro": 250000, "arazi_buyuklugu_dekar": 9, "urun_turu": "fındık", "tarim_kategori": "sebze_meyve", "sirket_turu": "sahis", "hedefler": ["finansman"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Bahçeyi yenilemek ve damla sulama kurmak için hibe ya da düşük faizli kredi var mı?
 ============================================================
 KAYIT 329

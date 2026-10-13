@@ -37,7 +37,7 @@ profil: {'sektor': 'imalat', 'bolge': 'İzmir', 'calisan_sayisi': 12, 'yillik_ci
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
 18. [1] Türk Eximbank Kısa Vadeli Alacak Sigortası (360 güne kadar vadeli ihracat alacaklarının ticari ve politik risklere karşı sigortası) — Türk Eximbank (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
-19. [1] Sanal Fuar Organizasyonu Desteği (5973 sayılı Karar m.23) — Ticaret Bakanlığı (aktif=True)
+19. [1] Pazara Giriş Rapor Desteği (5986 sayılı Karar m.3) — Ticaret Bakanlığı (aktif=True)
     gerekçe: Hedefiniz (ihracat) bu desteğin alanına giriyor.; Belirttiğiniz hedeflerle eşleşiyor: ihracat.
 20. [1] Türk Eximbank Marka Kredisi (Türk markasının yurt dışında geliştirilmesi ve yurt dışından marka alımı) — Türk Eximbank (aktif=True)
     gerekçe: Sektörünüz (imalat) bu desteğin kapsamına uygun.; Belirttiğiniz hedeflerle eşleşiyor: finansman, ihracat.

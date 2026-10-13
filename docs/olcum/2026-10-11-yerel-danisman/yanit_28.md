@@ -2,7 +2,7 @@
 **Kısa cevap:**
 - Kısa hüküm: Ankara Kalkınma Ajansı'da profilinize engelsiz açık, parasal destek veren bir program görünmüyor, 1 program size ya da başvuruya kapalı.
 - **2026 Ankara Sosyal Girişimcilik Ekosistemi Kapasite Geliştirme Mali Destek Programı** (Ankara Kalkınma Ajansı)
-- Başvuru: TR51/26/ALT_SGE_Ö1 ve TR51/26/ALT_SGE_Ö2: başvuruya açık — yeni başvuru için son gün 16.10.2026 (4 gün kaldı).
+- Başvuru: TR51/26/ALT_SGE_Ö1 ve TR51/26/ALT_SGE_Ö2: başvuruya açık — yeni başvuru için son gün 16.10.2026 (3 gün kaldı).
 - Sizin için: **uygun değil** — başvuru sahibi türünüz (anonim şirket) şartta sayılmıyor — kayıttaki şart: “Öncelik 1 için uygun başvuru sahipleri: Kooperatifler, iktisadi işletmesi olan dernek ve vakıflar, sosyal işletmeler.”.
 - Dikkat (çağrı notu): Taahhütname son teslim: 23/10/2026 saat 17:00. Program 20 Temmuz 2026'da ilan edildi.
 
@@ -22,7 +22,7 @@
 - **Kaynak:** https://ankaraka.org.tr/2026-ankara-sosyal-girisimcilik-ekosistemi-kapasite-gelistirme-mali-destek-programi
 
 **Size açık görünen alternatifler** (profilinize göre engel yok; şartları kartta değil, adıyla sorarak görün):
-- DİJİTAL KEFALET DESTEK PROGRAMI (KGF): %80 kefalet; şahıs 2,2 Milyon / tüzel 5 Milyon TL; yıllık %2; başvuru ücreti 10.000 TL; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- 1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı (TUBITAK): Destek oranı tek ortaklı: KOBİ %75 / büyük %60; çok ortaklı: KOBİ %60 / büyük %40 (bütçe üst limitleri çağrıda); Eureka Globalstars Japonya 2026 (uluslararası takvim): başvuruya açık — yeni başvuru için son gün 20.01.2027 (99 gün kaldı)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **Engel:** başvuru sahibi türünüz (anonim şirket) şartta sayılmıyor — kayıttaki şart: “Öncelik 1 için uygun başvuru sahipleri: Kooperatifler, iktisadi işletmesi olan dernek ve vakıflar, sosyal işletmeler.”.

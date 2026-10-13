@@ -37,6 +37,8 @@
   - ☐ Çiftçi Kayıt Sistemi (ÇKS)'ye kayıtlı olmak — kurumdan teyit edin
   - ☐ Arazi/parsel bilgilerinin ÇKS'de güncel olması — kurumdan teyit edin
   - ☐ İlgili üretim sezonunda dikim/ekim yapılmış olması — kurumdan teyit edin
+- **Kurallar (kayıttan):**
+  - Fındık üreticisiyseniz: parseliniz fındık üretimine izin verilen bir ilçede olmalı; izin verilen ilçeler dışında fındık üretilen parsellere temel destek ödenmez (8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik) — kurumdan teyit edin
 - **Başvuru:** İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu) — https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve
 
 **Size kapalı ya da başvuruya kapalı programlar:**

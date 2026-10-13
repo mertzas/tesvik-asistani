@@ -1,11 +1,11 @@
 <!-- persona: bursa_otomotiv | soru: Yeni bir fren parçası geliştirmek için Ar-Ge projesi yapacağız; TÜBİTAK ve KOSGEB'den ne alabiliriz? -->
 **Kısa cevap:**
-- Kısa hüküm: TUBITAK ve KOSGEB programlarından 4 tanesi profilinize göre engelsiz görünüyor (1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı, 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı); 5 program şarta bağlı, 4 program size ya da başvuruya kapalı.
+- Kısa hüküm: TUBITAK ve KOSGEB programlarından 4 tanesi profilinize göre engelsiz görünüyor (1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı, 1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı); 5 program şarta bağlı, 4 program size ya da başvuruya kapalı.
 - **1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı** (TUBITAK)
 - Sizin için: profilinize göre engel yok — şartları teyit edin.
-- Başvuru: 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (10 gün kaldı); başvuru kapanışı 26.10.2026 (14 gün kaldı).
+- Başvuru: 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (9 gün kaldı); başvuru kapanışı 26.10.2026 (13 gün kaldı).
 - Destek: Hibe: ilk 5 proje %75 (en fazla 20 M TL/proje), 6. ve sonrası %60 (en fazla 20 M TL); süre ≤36 ay
-- Bu kurumun diğer programları — engel yok: 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı, 1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı, 1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yenilik P. D. P.; şarta bağlı: 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için …), 1505 - Üniversite-Sanayi İşbirliği Destek Programı (Türkiye'de yerleşik, firma düzeyinde katma değer yaratan ve proje …), 1719 Eureka Network Çağrıları (Proje en az iki EUREKA üyesi ülkeden (en az biri AB üyesi veya Ufuk …) ve 2 program daha; size kapalı ya da başvuruya kapalı: 1832 - Sanayide Yeşil Dönüşüm Çağrısı (yeni başvuru için şu an kapalı (1832 2026-2 çağrısı: yeni başvuru için ön kayıt süresi 08.10.2026 tarihinde doldu), Kapasite Geliştirme Destek Programı (yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026)), Küresel Rekabetçilik Destek Programı (yeni başvuru için şu an kapalı (2026 yılı 1. başvuru dönemi: kapandı (30.09.2026)).
+- Bu kurumun diğer programları — engel yok: 1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı, 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı, 1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yenilik P. D. P.; şarta bağlı: 1709 – EUREKA-EUROSTARS (En az bir Türk ve bir Eurostars üyesi ülkeden ortağın katıldığı uluslararası proje), 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için …), 1505 - Üniversite-Sanayi İşbirliği Destek Programı (Türkiye'de yerleşik, firma düzeyinde katma değer yaratan ve proje …) ve 2 program daha; size kapalı ya da başvuruya kapalı: 1832 - Sanayide Yeşil Dönüşüm Çağrısı (yeni başvuru için şu an kapalı (1832 2026-2 çağrısı: kapandı (12.10.2026)), Kapasite Geliştirme Destek Programı (yeni başvuru için şu an kapalı (2026 yılı 2. başvuru dönemi: kapandı (30.06.2026)), Küresel Rekabetçilik Destek Programı (yeni başvuru için şu an kapalı (2026 yılı 1. başvuru dönemi: kapandı (30.09.2026)).
 
 ### 1. Şirket & Proje Uygunluk Özeti
 - Faaliyet: imalat (NACE 29.32)
@@ -19,7 +19,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı — TUBITAK**
-- **Başvuru dönemi:** 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (10 gün kaldı); başvuru kapanışı 26.10.2026 (14 gün kaldı). Not: Kapanış 26.10.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 22.10.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı. (duyuru: https://tubitak.gov.tr/sites/default/files/2026-07/1501_Sanayi_Ar-Ge_Destek_Programi_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf, doğrulama 08.10.2026)
+- **Başvuru dönemi:** 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 22.10.2026 (9 gün kaldı); başvuru kapanışı 26.10.2026 (13 gün kaldı). Not: Kapanış 26.10.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 22.10.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı. (duyuru: https://tubitak.gov.tr/sites/default/files/2026-07/1501_Sanayi_Ar-Ge_Destek_Programi_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf, doğrulama 08.10.2026)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
 - **Kapsam:** yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
@@ -32,8 +32,21 @@
   - Vakıf, dernek (ve iktisadi işletmeleri), kooperatif, birlik, şahıs şirketi ve adi ortaklık başvuramaz — resmî metin: “vakıflar, dernekler ve bunların iktisadi işletmeleri, kooperatifler, birlikler, şahıs şirketleri ve adi ortaklıklar bu program kapsamında başvuru yapamazlar.”
 - **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1501-tubitak-sanayi-ar-ge-projeleri-destekleme-programi
 
+**1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı — TUBITAK**
+- **Başvuru dönemi:** Eureka Globalstars Japonya 2026 (uluslararası takvim): başvuruya açık — yeni başvuru için son gün 20.01.2027 (99 gün kaldı). Not: Türkiye ve Japonya'dan en az birer şirketle konsorsiyum; Türkiye'den yalnız sermaye şirketleri. Ulusal (1509, PRODİS) tarihler TÜBİTAK tarafından e-postayla bildirilecek. (duyuru: https://tubitak.gov.tr/tr/duyuru/eureka-globalstars-japonya-2026-cagrisi-acildi, doğrulama 13.10.2026)
+- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
+- **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
+- **Destek:** Destek oranı tek ortaklı: KOBİ %75 / büyük %60; çok ortaklı: KOBİ %60 / büyük %40 (bütçe üst limitleri çağrıda)
+- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
+  - ☐ 1509 Uluslararası Sanayi Ar-Ge Destek Programına Türkiye’de yerleşik sermaye şirketleri başvuru yapabilmektedir. — resmî metin: “1509 Uluslararası Sanayi Ar-Ge Destek Programına Türkiye’de yerleşik sermaye şirketleri başvuru yapabilmektedir.”
+  - ☐ Proje ekibinde başvuru tarihinde proje konusuyla ilgili en az bir lisans mezunu bulunmalı — resmî metin: “Proje ekibinde başvuru tarihi itibariyle proje konusu ile ilgili lisans mezunu en az bir kişinin bulunması gerekmektedir.”
+- **Kurallar (kayıttan):**
+  - Aynı uluslararası projede birden fazla Türk ortak varsa tek bir ortak 1509 başvurusu yapılır — resmî metin: “Türk kuruluşlar, ortak proje önerisi hazırlayarak tek bir 1509 proje başvurusu yaparlar.”
+  - Ar-Ge faaliyeti başvurudan önce tamamlanmış projeler desteklenmez — resmî metin: “Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez.”
+- **Başvuru:** Yalnızca elektronik ortamda PRODİS (https://eteydeb.tubitak.gov.tr); başvurular yıl boyunca açık — https://www.tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1509-tubitak-uluslararasi-sanayi-ar-ge-projeleri-destekleme-programi
+
 **1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı — TUBITAK**
-- **Başvuru dönemi:** 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (28 gün kaldı); başvuru kapanışı 11.11.2026 (30 gün kaldı). Not: Kapanış 11.11.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 09.11.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı. (duyuru: https://tubitak.gov.tr/sites/default/files/2026-07/1507_KOBI_Ar-Ge_Baslangic_Destek_Programlari_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf, doğrulama 08.10.2026)
+- **Başvuru dönemi:** 2026 yılı 2. çağrı: başvuruya açık — ön kayıt son günü 09.11.2026 (27 gün kaldı); başvuru kapanışı 11.11.2026 (29 gün kaldı). Not: Kapanış 11.11.2026 saat 23:59. Kuruluş bazlı ön kayıt başvurusu PRODİS üzerinden en geç 09.11.2026 23:59; ön kayıt evrakı kapanıştan en az bir iş günü önce TÜBİTAK'a ulaşmalı. (duyuru: https://tubitak.gov.tr/sites/default/files/2026-07/1507_KOBI_Ar-Ge_Baslangic_Destek_Programlari_2026-2_Proje_Cagri_Metni_13.07.2026_v2.pdf, doğrulama 08.10.2026)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
 - **Kapsam:** yalnız KOBİ'ler
 - **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
@@ -47,33 +60,20 @@
   - Proje bütçesi en fazla 3.500.000 TL olmalı — resmî metin: “Proje bütçesi en fazla 3.500.000 TL’dir.”
 - **Başvuru:** Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr) — https://www.tubitak.gov.tr/tr/destekler/sanayi/ulusal-destek-programlari/1507-tubitak-kobi-ar-ge-baslangic-destek-programi
 
-**1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı — TUBITAK**
-- **Başvuru dönemi:** Başvurular sürekli açıktır, yılın her günü PRODİS (eteydeb.tubitak.gov.tr) üzerinden; çağrılı uluslararası programlarda proje, ilgili çağrının değerlendirme takvimine uygun sunulmalıdır. (kayıttan; güncel çağrıyı kurumdan teyit edin)
-- **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Hedefiniz (Ar-Ge) bu desteğin alanına giriyor; Belirttiğiniz hedeflerle eşleşiyor: Ar-Ge.
-- **Karşıladığı ihtiyaç:** Ar-Ge ve ürün geliştirme
-- **Destek:** Destek oranı tek ortaklı: KOBİ %75 / büyük %60; çok ortaklı: KOBİ %60 / büyük %40 (bütçe üst limitleri çağrıda)
-- **Teyit etmeniz gereken şartlar** (kontrol listesindeki beyanlar; sağlıyorsanız işaretleyin):
-  - ☐ 1509 Uluslararası Sanayi Ar-Ge Destek Programına Türkiye’de yerleşik sermaye şirketleri başvuru yapabilmektedir. — resmî metin: “1509 Uluslararası Sanayi Ar-Ge Destek Programına Türkiye’de yerleşik sermaye şirketleri başvuru yapabilmektedir.”
-  - ☐ Proje ekibinde başvuru tarihinde proje konusuyla ilgili en az bir lisans mezunu bulunmalı — resmî metin: “Proje ekibinde başvuru tarihi itibariyle proje konusu ile ilgili lisans mezunu en az bir kişinin bulunması gerekmektedir.”
-- **Kurallar (kayıttan):**
-  - Aynı uluslararası projede birden fazla Türk ortak varsa tek bir ortak 1509 başvurusu yapılır — resmî metin: “Türk kuruluşlar, ortak proje önerisi hazırlayarak tek bir 1509 proje başvurusu yaparlar.”
-  - Ar-Ge faaliyeti başvurudan önce tamamlanmış projeler desteklenmez — resmî metin: “Ar-Ge faaliyetleri proje başvurusundan önce tamamlanmış projeler desteklenmez.”
-- **Başvuru:** Yalnızca elektronik ortamda PRODİS (https://eteydeb.tubitak.gov.tr); başvurular yıl boyunca açık — https://www.tubitak.gov.tr/tr/destekler/sanayi/uluslararasi-ortakli-destek-programlari/1509-tubitak-uluslararasi-sanayi-ar-ge-projeleri-destekleme-programi
-
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- 1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yenilik P. D. P.(Teknoloji Odaklı Sanayi Hamlesi Programı) (TUBITAK) — profilinize göre engel yok — şartları teyit edin; Çağrı dönemli: duyurular www.hamle.gov.tr; ön başvuru + kesin başvuru aşamaları
-- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (32 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
-- 1505 - Üniversite-Sanayi İşbirliği Destek Programı (TUBITAK) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Türkiye'de yerleşik, firma düzeyinde katma değer yaratan ve proje sonuçlarını Türkiye'de uygulamayı taahhüt eden bir sermaye şirketi olmak (Müşteri Kuruluş)); Sürekli açık (yıl boyunca başvuru yapılabilir)
+- 1511 - TÜBİTAK Öncelikli Alanlar Araştırma Teknoloji Geliştirme ve Yenilik P. D. P.(Teknoloji Odaklı Sanayi Hamlesi Programı) (TUBITAK) — profilinize göre engel yok — şartları teyit edin; Çağrı dönemli: duyurular www.hamle.gov.tr; ön başvuru + kesin başvuru aşamaları (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- 1709 – EUREKA-EUROSTARS (TUBITAK) — şarta bağlı (profilinizden doğrulanamayan önemli şart: En az bir Türk ve bir Eurostars üyesi ülkeden ortağın katıldığı uluslararası proje); Eurostars Call 12 (uluslararası takvim): açılış 17.12.2026, kapanış 04.03.2027
+- 1707 - Siparişe Dayalı Ar-Ge Projeleri için KOBİ Destekleme Çağrısı (TUBITAK) — şarta bağlı (profilinizden doğrulanamayan önemli şart: Müşteri Kuruluş: Ar-Ge'ye dayalı çözüme ihtiyacı olan ve bunun için Tedarikçi Kuruluşla işbirliği sözleşmesi imzalayan kuruluş (sektör ve ölçekten bağımsız)); 2026 yılı 3. çağrı dönemi: başvuruya açık — yeni başvuru için son gün 13.11.2026 (31 gün kaldı) (kurumun taslak takvimi; kesin tarihler çağrı duyurusunda)
 
 **Size kapalı ya da başvuruya kapalı programlar:**
 - Teknoloji Merkezi Destek Programı (KOSGEB) — uygun değil: aracı/ekosistem kuruluşu programı
 
 ### 3. Darboğazlar ve Kritik Şartlar
-- **Ön kayıt:** 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı için yeni başvuranın ön kayıt son günü 22.10.2026 (10 gün).
-- **Ön kayıt:** 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı için yeni başvuranın ön kayıt son günü 09.11.2026 (28 gün).
+- **Ön kayıt:** 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı için yeni başvuranın ön kayıt son günü 22.10.2026 (9 gün).
+- **Ön kayıt:** 1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı için yeni başvuranın ön kayıt son günü 09.11.2026 (27 gün).
 - **1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı:** Başvuru yeri: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
-- **1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı:** Başvuru yeri: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
 - **1509 - TÜBİTAK Uluslararası Sanayi Ar-Ge Projeleri Destekleme Programı:** Başvuru yeri: Yalnızca elektronik ortamda PRODİS (https://eteydeb.tubitak.gov.tr); başvurular yıl boyunca açık
+- **1507 - TÜBİTAK KOBİ Ar-Ge Başlangıç Destek Programı:** Başvuru yeri: Elektronik olarak PRODİS sistemi (https://eteydeb.tubitak.gov.tr)
 
 ### 4. Adım Adım Yol Haritası
 1. Ön kayıt: 1501 - TÜBİTAK Sanayi Ar-Ge Projeleri Destekleme Programı — son gün 22.10.2026.

@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "e-ticaret", "nace_kodu": "47.91", "bolge": "İstanbul", "calisan_sayisi": 8, "yillik_ciro": 12000000, "sirket_turu": "limited", "hedefler": ["finansman", "istihdam"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: Depoya 3 kişi alacağız, istihdam teşviki var mı?
 ============================================================
 KAYIT 185

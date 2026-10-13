@@ -1,6 +1,6 @@
 # Kapsam matrisi (2026-10-13)
 
-468 hücre (7 sektör × 12 il × ihtiyaç). Kayıt düzeyi: VAR 432, İNCE 13, BOŞ 23. Ürün düzeyi (yanıtta engelsiz, açık ve ihtiyaca uygun bir program kartı): 434/468. Süre 135 sn.
+468 hücre (7 sektör × 12 il × ihtiyaç). Kayıt düzeyi: VAR 432, İNCE 13, BOŞ 23. Ürün düzeyi (yanıtta engelsiz, açık ve ihtiyaca uygun bir program kartı): 434/468. Süre 151 sn.
 
 Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak gösteriyor, ✗ = göstermiyor).
 
@@ -59,18 +59,18 @@ Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak göster
 
 | İl | yatirim | arge | ihracat | istihdam | dijital | finansman |
 |---|---|---|---|---|---|---|
-| İstanbul | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
-| Ankara | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
-| İzmir | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
-| Bursa | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
-| Konya | 4 ✓ | 3 ✓ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
-| Antalya | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 15 ✓ |
-| Gaziantep | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
-| Trabzon | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 15 ✓ |
-| Van | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 15 ✓ |
-| Diyarbakır | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 16 ✓ |
-| Edirne | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 15 ✓ |
-| Balıkesir | 4 ✓ | 2 ✗ | 1 ✓ | 8 ✓ | 2 ✓ | 15 ✓ |
+| İstanbul | 4 ✓ | 2 ✗ | 1 ✓ | 9 ✓ | 2 ✓ | 16 ✓ |
+| Ankara | 4 ✓ | 2 ✗ | 1 ✓ | 9 ✓ | 2 ✓ | 16 ✓ |
+| İzmir | 4 ✓ | 2 ✗ | 1 ✓ | 9 ✓ | 2 ✓ | 16 ✓ |
+| Bursa | 4 ✓ | 2 ✗ | 1 ✓ | 9 ✓ | 2 ✓ | 16 ✓ |
+| Konya | 4 ✓ | 3 ✓ | 1 ✓ | 9 ✓ | 2 ✓ | 16 ✓ |
+| Antalya | 4 ✓ | 2 ✗ | 1 ✓ | 9 ✓ | 2 ✓ | 15 ✓ |
+| Gaziantep | 4 ✓ | 2 ✗ | 1 ✓ | 9 ✓ | 2 ✓ | 16 ✓ |
+| Trabzon | 4 ✓ | 2 ✗ | 1 ✓ | 9 ✓ | 2 ✓ | 15 ✓ |
+| Van | 4 ✓ | 2 ✗ | 1 ✓ | 9 ✓ | 2 ✓ | 15 ✓ |
+| Diyarbakır | 4 ✓ | 2 ✗ | 1 ✓ | 9 ✓ | 2 ✓ | 16 ✓ |
+| Edirne | 4 ✓ | 2 ✗ | 1 ✓ | 9 ✓ | 2 ✓ | 15 ✓ |
+| Balıkesir | 4 ✓ | 2 ✗ | 1 ✓ | 9 ✓ | 2 ✓ | 15 ✓ |
 
 ## turizm
 
@@ -146,14 +146,14 @@ Hücre: kayıt sayısı (✓ = yanıt bu kayıtlardan birini kart olarak göster
 
 ## Kayıt var ama yanıt göstermiyor (ürün düzeyi ✗, kayıt ≥ 1)
 
-- tarım / İstanbul / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Ankara / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / İzmir / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Bursa / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Antalya / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Gaziantep / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Trabzon / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Van / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Diyarbakır / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Edirne / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
-- tarım / Balıkesir / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); TARSİM — Devlet Destekli Tarım Sigortası, 2026 Prim Desteği
+- tarım / İstanbul / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); Ziraat Katılım Bankası Katılım Finans Destek Paketi
+- tarım / Ankara / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); Ziraat Katılım Bankası Katılım Finans Destek Paketi
+- tarım / İzmir / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); Ziraat Katılım Bankası Katılım Finans Destek Paketi
+- tarım / Bursa / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); Ziraat Katılım Bankası Katılım Finans Destek Paketi
+- tarım / Antalya / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); Ziraat Katılım Bankası Katılım Finans Destek Paketi
+- tarım / Gaziantep / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); Ziraat Katılım Bankası Katılım Finans Destek Paketi
+- tarım / Trabzon / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); Ziraat Katılım Bankası Katılım Finans Destek Paketi
+- tarım / Van / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); Ziraat Katılım Bankası Katılım Finans Destek Paketi
+- tarım / Diyarbakır / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); Ziraat Katılım Bankası Katılım Finans Destek Paketi
+- tarım / Edirne / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); Ziraat Katılım Bankası Katılım Finans Destek Paketi
+- tarım / Balıkesir / arge: kayıtta 2 (ör. Teknoloji Hamlesi Programı (9903 sayılı Karar); Yapay Zekâ Kredi Programı); yanıtta: Lisanslı Depoda Muhafaza Edilen Ürünler İçin Kira Desteği (fındık dahil); Ziraat Katılım Bankası Katılım Finans Destek Paketi

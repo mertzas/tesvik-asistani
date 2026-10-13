@@ -1,5 +1,5 @@
 PERSONA: null
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: TKDK IPARD hibesi nedir, kimler başvurabilir?
 ============================================================
 KAYIT 243
@@ -75,6 +75,6 @@ ADAY (yanıtta yok) KAYIT 78: Kırsal Kalkınma Yatırım Programı (KKYP) – T
 ADAY (yanıtta yok) KAYIT 240: SERKA 2026 Sürdürülebilir Kalkınma ve Yeşil Dönüşüm Hızlandırıcı Hibe Desteği Programı (TRA2/26/SGA) — Serhat Kalkınma Ajansı (SERKA); aktif_mi=False; kriterler={"sektorler": ["tarim", "imalat", "hizmet"], "bolge_kisitli": ["ağrı", "ardahan", "ığdır", "kars"]}; tutar=Program bütçesi 45 milyon TL; proje başına 650.000 TL - 2.250.000 TL hibe; mikro/küçük işletmelerde %50 - %75, kooperatif ve üretici birliklerinde %75 - %90
 ADAY (yanıtta yok) KAYIT 211: DOKA 2026 Yılı Yeşil İvme Destek Programı (SoGreen kapsamında mikro/küçük işletmelere hibe) — Doğu Karadeniz Kalkınma Ajansı (DOKA); aktif_mi=False; kriterler={"sektorler": ["imalat", "hizmet"], "bolge_kisitli": ["trabzon", "ordu", "giresun", "rize", "artvin", "gümüşhane"]}; tutar=Program bütçesi 27.000.000 TL; proje başına 650.000 TL - 2.150.000 TL; destek oranı %50 - %75
 ADAY (yanıtta yok) KAYIT 241: Girişimci ve Güçlü Sivil Toplum Mali Destek Programı (GİSEP, TR33/26/ALT_GİSEP) — Zafer Kalkınma Ajansı; aktif_mi=True; kriterler={"sektorler": ["genel"], "bolge_kisitli": ["afyonkarahisar", "kütahya", "manisa", "uşak"]}; tutar=Proje başına 1.600.000 TL ile 2.250.000 TL arasında, %90'a varan oranlarda hibe; program toplam bütçesi 737.000 Avro.
+ADAY (yanıtta yok) KAYIT 371: DİKA 2026 Yılı Teknik Destek Programı (TRC3/26/TD) — Dicle Kalkınma Ajansı (DİKA); aktif_mi=True; kriterler={"sektorler": ["genel"], "bolge_kisitli": ["batman", "mardin", "siirt", "şırnak"]}; tutar=Teknik destek hizmeti (doğrudan ödeme yok): eğitim için 250.000 TL'ye, danışmanlık için 350.000 TL'ye kadar (KDV hariç); 2026 toplam yıllık tutar 5.000.000 TL; eş finansman yok; en fazla 6 ay.
 ADAY (yanıtta yok) KAYIT 219: 2026 Yılı Destinasyon Geliştirme Teknik Destek Programı (DG_TD) — Kuzey Anadolu Kalkınma Ajansı; aktif_mi=True; kriterler={"sektorler": ["hizmet"], "bolge_kisitli": ["kastamonu", "çankırı", "sinop"]}; tutar=Program bütçesi 3.000.000 TL (proje başına tutar program sayfasında yazmıyor).
-ADAY (yanıtta yok) KAYIT 222: 2026 Yılı Yerel Ürün Ticarileştirme ve KOBİ Destek Merkezi Teknik Destek Programı (TR82/26/KDM_TD) — Kuzey Anadolu Kalkınma Ajansı; aktif_mi=True; kriterler={"sektorler": ["hizmet", "tarim"], "bolge_kisitli": ["kastamonu", "çankırı", "sinop"]}; tutar=Program bütçesi 10 Milyon TL teknik destek (proje başına tutar program sayfasında yazmıyor).
 - Tarım Bakanlığı (Tarım ve Orman Bakanlığı - Tarım İletişim Merkezi): Çağrı merkezi 180 (Alo 180), Genel merkez —, Adres: Üniversiteler Mah. Dumlupınar Bulvarı, No: 161, 06800, Çankaya / Ankara. (Doğrulama kaynağı: https://timer.tarimorman.gov.tr/Home/Hakkinda, doğrulama tarihi: 2026-07-12)

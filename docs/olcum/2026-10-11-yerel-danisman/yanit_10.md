@@ -1,7 +1,7 @@
 <!-- persona: buyuk | soru: KOSGEB İstihdamı Koruma Destek Programı 2026-2 döneminde büyük işletme için kredi üst limiti ve başvuru tarihleri nedir? -->
 **Kısa cevap:**
 - **İstihdamı Koruma Destek Programı** (KOSGEB)
-- Başvuru: 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (19 gün kaldı).
+- Başvuru: 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (18 gün kaldı).
 - Sizin için: profilinize göre engel yok — şartları teyit edin; başlıca şart: İşletme Beyanının güncel olması.
 - Dikkat (çağrı notu): Bu dönemde yalnız Finansman Desteği kapsamında başvuru alınır.
 - Kredi koşulları (hibe değil): 2026-2: kredi üst limiti KOBİ 50 Milyon TL, büyük işletme 150 Milyon TL (kredi tutarı 2026 Ocak-Haziran prime esas kazanç aylık ortalamasını geçemez); azami 6 ay ödemesiz, 36 ay vade; banka azami faizi %37 (sabit) / TLREF+1 (değişken); komisyon ≤%1; finansman desteği 12 puan, geri ödemesiz, yalnızca vergi ve SGK prim borçlarına kullanılır
@@ -19,7 +19,7 @@
 ### 2. Eşleşen Teşvik ve Hibe Programları
 
 **İstihdamı Koruma Destek Programı — KOSGEB**
-- **Başvuru dönemi:** 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (19 gün kaldı). Not: Bu dönemde yalnız Finansman Desteği kapsamında başvuru alınır. (duyuru: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi, doğrulama 08.10.2026)
+- **Başvuru dönemi:** 2026-2 dönemi: başvuruya açık — yeni başvuru için son gün 31.10.2026 (18 gün kaldı). Not: Bu dönemde yalnız Finansman Desteği kapsamında başvuru alınır. (duyuru: https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi, doğrulama 08.10.2026)
 - **Sizin için:** Profilinize göre engel yok — şartları teyit edin — Sektörünüz (imalat) bu desteğin kapsamına uygun; Faaliyet kodunuz: 29.10, programın kapsadığı NACE C faaliyetlerine giriyor (tam sektör eşleşmesi).
 - **Karşıladığı ihtiyaç:** kredi/finansman
 - **Destek:** 2026-2: kredi üst limiti KOBİ 50 Milyon TL, büyük işletme 150 Milyon TL (kredi tutarı 2026 Ocak-Haziran prime esas kazanç aylık ortalamasını geçemez); azami 6 ay ödemesiz, 36 ay vade; banka azami faizi %37 (sabit) / TLREF+1 (değişken); komisyon ≤%1; finansman desteği 12 puan, geri ödemesiz, yalnızca vergi ve SGK prim borçlarına kullanılır
@@ -35,7 +35,7 @@
 - **Başvuru:** KOSGEB'e 2026-2 dönemi formlarıyla (Başvuru Formu, Taahhütname); kredi, bankalardan kullanılır — https://www.kosgeb.gov.tr/site/tr/genel/destekdetay/9224/istihdami-koruma-destek-programi
 
 **Diğer ilgili programlar** (ayrıntı için adıyla sorun):
-- TKYB KREDİ DESTEK PAKETİ (KGF) — profilinize göre engel yok — şartları teyit edin; Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
+- HALKBANK İLK ADIM KREDİSİ PROJESİ (KGF) — şarta bağlı (profilinizden doğrulanamayan önemli şart: İşletme sahibi ya da en az %50 hisseli ortağı kredi başvuru tarihinde en çok 29 yaşında olmalı); Dönemsel başvuru yok: kredi başvurusu ürünün kredi veren bankasına yapılır, KGF kefaletini banka talep eder. KGF ürün sayfasında son başvuru/kullandırım tarihi belirtilmemiştir (kayıt kontrolü: 08.10.2026) (kayıttan; güncel çağrıyı kurumdan teyit edin)
 
 ### 3. Darboğazlar ve Kritik Şartlar
 - **KOSGEB veri tabanı kaydı ve KOBİ Bilgi Beyannamesi** (İstihdamı Koruma Destek Programı): KOSGEB e-Hizmetler (e-Devlet ile giriş) üzerinden işletme kaydı ve onaylı KOBİ Bilgi Beyannamesi.

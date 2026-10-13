@@ -1,5 +1,5 @@
 PERSONA: {"sektor": "tarim", "bolge": "Aydın", "calisan_sayisi": 0, "yillik_ciro": 150000, "arazi_buyuklugu_dekar": 1.5, "urun_turu": "çilek", "tarim_kategori": "sebze_meyve", "sirket_turu": "sahis", "hedefler": ["sulama", "finansman"]}
-BUGÜN: 2026-10-12
+BUGÜN: 2026-10-13
 SORU: 1,5 dönüm açık tarlada çilek yetiştiriyorum. Hangi desteklerden yararlanabilirim?
 ============================================================
 KAYIT 161
@@ -23,7 +23,7 @@ Durum notu: DURUM: Doğrulanmış, güncel/aktif program. 2026 üretim yılı bi
 - [belge] Arazi/Parsel Belgesi | kaynak: https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve
 - [belge] Dikim/Ekiliş Beyanı | kaynak: https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve
 - [adim] Başvuruyu yap: İL/İlçe Tarım ve Orman Müdürlüğü (ÇKS başvurusu) | kaynak: https://www.resmigazete.gov.tr/eskiler/2024/08/20240829-1.pdf#sebze-meyve
-- [sart] Fındık üreticisiyseniz: parseliniz fındık üretimine izin verilen bir ilçede olmalı; izin verilen ilçeler dışında fındık üretilen parsellere temel destek ödenmez (8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik) | kaynak: https://www.resmigazete.gov.tr/eskiler/2026/09/20260908-7.pdf
+- [kural] Fındık üreticisiyseniz: parseliniz fındık üretimine izin verilen bir ilçede olmalı; izin verilen ilçeler dışında fındık üretilen parsellere temel destek ödenmez (8859 sayılı Karar m.6/4, 11781 sayılı Kararla değişik) | kaynak: https://www.resmigazete.gov.tr/eskiler/2026/09/20260908-7.pdf
 ============================================================
 KAYIT 361
 [Tarım Bakanlığı] İyi Tarım Uygulamaları Desteği (açıkta ve örtüaltı; 2026 üretim yılı)
@@ -75,7 +75,7 @@ Durum notu: Tur34 2026-10-12: resmî kaynaktan eklendi; durum: Yürürlükte: 20
 - [bilgi] Seralar için dolu ana riski ile fırtına, hortum, yangın, heyelan, deprem, sel ve su baskını paket halinde sigortalanabilir. | alıntı: Seralar için de dolu ana riskiyle fırtına, hortum, yangın, heyelan, deprem, sel ve su baskınıyla taşıt çarpması, kar ağırlığı ek riskleri paket halinde sigortalanabilmesi hükme bağlandı. | kaynak: https://www.tarimorman.gov.tr/Haber/6912/Tarsim-Tarafindan-2026da-Teminat-Altina-Alinacak-Urun-Ve-Riskler-Belirlendi
 - [kural] Hazine faiz destekli tarım kredisi kullanırken, kredi konusu varlık Tarım Sigortaları Kanunu kapsamındaysa devlet destekli tarım sigortası aranır. | alıntı: Kredi konusu varlığın 14/6/2005 tarihli ve 5363 sayılı Tarım Sigortaları Kanunu kapsamında olması halinde Devlet Destekli Tarım Sigortası aranır. | kaynak: https://www.mevzuat.gov.tr/MevzuatMetin/20.5.8039.pdf
 - [adim] Başvuruyu yap: TARSİM (tarsim.gov.tr); sigorta TARSİM kapsamında yapılır. Kaynak haberde başvuru kanalı ayrıca belirtilmemiştir. | kaynak: https://www.tarimorman.gov.tr/Haber/6912/Tarsim-Tarafindan-2026da-Teminat-Altina-Alinacak-Urun-Ve-Riskler-Belirlendi
-ADAY (yanıtta yok) KAYIT 76: Hayvancılık Destekleri — Tarım Bakanlığı; aktif_mi=True; kriterler={"sektorler": ["tarim"], "alt_kategori": "hayvancilik", "genislik": "dar", "tutar_niteligi": "proje_bazli_tavan"}; tutar=Birim tutarlar 8760 sayılı CB Kararı (2024-2026 Hayvancılık Desteklemeleri, RG 26/7/2024) ekindedir; sistemde teyit edilemedi (taranmış PDF)
+ADAY (yanıtta yok) KAYIT 76: Hayvancılık Destekleri — Tarım Bakanlığı; aktif_mi=True; kriterler={"sektorler": ["tarim"], "alt_kategori": "hayvancilik", "genislik": "dar", "tutar_niteligi": "proje_bazli_tavan"}; tutar=2026 yılı birim tutarları (8760 sayılı Cumhurbaşkanı Kararı, 11782 sayılı Kararla değişik, RG 08.09.2026): buzağı 2.000 TL/baş, malak 4.000 TL/baş (programlı aşıları tamamlanmış, yılı içinde doğan, 4 
 ============================================================
 KAYIT 94
 [KGF] TARIM KEFALET DESTEK PROGRAMI

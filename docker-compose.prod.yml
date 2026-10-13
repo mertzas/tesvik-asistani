@@ -70,6 +70,11 @@ services:
       ALLOWED_ORIGINS: ${ALLOWED_ORIGINS:-}
       ACCESS_TOKEN_EXPIRE_DAYS: ${ACCESS_TOKEN_EXPIRE_DAYS:-7}
       REDIS_URL: redis://redis:6379/0
+      # Istemci IP'si: yalnizca nginx kapsayicisina guvenilir (asagidaki sabit IP). Hem uygulamanin hiz
+      # siniri (app/rate_limit.py istemci_ip) hem uvicorn --forwarded-allow-ips (Dockerfile.prod) bunu okur.
+      # Onceki hali: uvicorn yalnizca 127.0.0.1'e guveniyordu, request.client.host her ziyaretci icin
+      # nginx'in IP'siydi -> login/signup/webhook IP limitleri TUM kullanicilarca paylasiliyordu.
+      TRUSTED_PROXIES: ${NGINX_IP:-10.231.57.10}
       SCHEDULER_ENABLED: ${SCHEDULER_ENABLED:-true}
       IKAS_CLIENT_ID: ${IKAS_CLIENT_ID:-}
       IKAS_CLIENT_SECRET: ${IKAS_CLIENT_SECRET:-}
@@ -137,9 +142,24 @@ services:
     ports:
       - "80:80"
       - "443:443"
+    # Sabit IP: web servisi X-Forwarded-For/X-Real-IP basliklarina YALNIZCA bu adresten gelirse guvenir.
+    # Tum alt aga (ya da '*') guvenilmiyor: alt agin gecidi (.1) ana makineden gelen baglantilari temsil
+    # eder; ileride web'e host portu acilirsa disaridan gelen sahte X-Forwarded-For kabul edilmesin.
+    networks:
+      default:
+        ipv4_address: ${NGINX_IP:-10.231.57.10}
     depends_on:
       - web
     restart: unless-stopped
+
+# Varsayilan agin alt agi sabit: nginx'e sabit IP verebilmek icin gerekli. Ana makinede bu aralik
+# baska bir agla cakisirsa "docker compose up" acikca hata verir; o zaman .env'de TESVIK_ALT_AG ve
+# NGINX_IP'yi birlikte degistirin. Mevcut dagitimda ilk gecis: docker compose down && up -d (ag yeniden kurulur).
+networks:
+  default:
+    ipam:
+      config:
+        - subnet: ${TESVIK_ALT_AG:-10.231.57.0/24}
 
 volumes:
   postgres_data:

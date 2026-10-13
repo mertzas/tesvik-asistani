@@ -655,6 +655,7 @@ Son güncelleme: 2026-10-13 (eksik envanteri ve kapanışı: tur41 veri, hatırl
   kalemleri 5986 (5973 değil); hedef ülke ilavesi kayıtta yalnız 5986 m.4/m.5/m.6 için %70; KOSGEB "Yurt Dışı Pazar
   Destek Programı" güncel kayıtlarda yok; KDV esası ve ilişkili taraf kuralı kayıtta yok (İncelenmeli). Demo:
   `docs/olcum/2026-10-12-orkestrator/demo_A-D.md`.
+- **Vekil arkasında istemci IP'si** (2026-10-08; 2026-10-13'te commit edildi, 42 test yeşil): `ip_hiz_siniri` `request.client.host` kullanıyordu; üretimde bu nginx kapsayıcısıydı → login/signup/webhook IP limitleri tüm kullanıcılarca paylaşılıyordu. Düzeltme: `TRUSTED_PROXIES` ayarı + `istemci_ip()` (yalnızca güvenilir vekilden XFF sağdan sola, sonra X-Real-IP; güvenilmeyen tarafın başlıkları yok sayılır), compose'da nginx sabit IP 10.231.57.10 (`NGINX_IP`/`TESVIK_ALT_AG`), Dockerfile.prod uvicorn `--proxy-headers --forwarded-allow-ips`. `tests/test_istemci_ip.py` 17 test. Test 968. Docker yok: `docker compose config` ile ilk dağıtımda teyit edilmeli.
 - SMTP: `.env`'de SMTP_* dolu ama gönderim "Connection unexpectedly closed" ile düşüyor (port 587); kimlik/sunucu
   doğrulanmalı. Doğrulama zorunlu kayıt bu düzelmeden açılmamalı.
 - Açık: 76 hayvancılık birim tutarı (OCR), 163 e-ticaret üyelik limiti (5973 Genelge), 37 ve 73 kararsız (sayfa

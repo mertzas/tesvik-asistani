@@ -55,6 +55,11 @@ class Settings(BaseSettings):
     ALLOW_INSECURE_SECRET: bool = os.getenv("ALLOW_INSECURE_SECRET", "false").lower() == "true"
     # Hız sınırı sayaçları: boşsa süreç içi (tek işçi); doluysa Redis (çok işçi/instance).
     REDIS_URL: str = os.getenv("REDIS_URL", "")
+    # IP başına hız sınırında istemci adresi: virgülle ayrılmış IP/CIDR listesi (ters vekil sunucular).
+    # Doğrudan bağlanan taraf bu listedeyse X-Forwarded-For / X-Real-IP okunur; değilse başlıklar YOK
+    # SAYILIR (istemci kendi başlığıyla sayaç değiştiremesin). Boş = hiçbir vekile güvenilmez.
+    # Üretimde docker-compose.prod.yml bunu nginx kapsayıcısının sabit IP'sine ayarlar.
+    TRUSTED_PROXIES: str = os.getenv("TRUSTED_PROXIES", "")
     # Zamanlanmış scraper işleri (çok işçili dağıtımda yalnızca kilidi alan işçi çalıştırır).
     SCHEDULER_ENABLED: bool = os.getenv("SCHEDULER_ENABLED", "true").lower() == "true"
     # E-posta (app/email.py): boşsa e-posta gönderimi kapalı. Denetim 2026-10-07: email.py

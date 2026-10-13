@@ -39,4 +39,7 @@ COPY . .
 # sessizce atlaniyor, kapsayici da tablosuz aciliyordu.
 EXPOSE 8000
 
-CMD ["sh", "-c", "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 2"]
+# --forwarded-allow-ips: uvicorn X-Forwarded-For/-Proto'yu yalnizca nginx'ten (TRUSTED_PROXIES,
+# docker-compose.prod.yml) gelirse uygular; varsayilani 127.0.0.1 oldugundan request.client.host
+# her istekte nginx kapsayicisinin IP'siydi. Degisken yoksa eski davranis (yalniz 127.0.0.1).
+CMD ["sh", "-c", "alembic upgrade head && uvicorn app.main:app --host 0.0.0.0 --port 8000 --workers 2 --proxy-headers --forwarded-allow-ips \"${TRUSTED_PROXIES:-127.0.0.1}\""]

@@ -14,11 +14,18 @@ iki katina cikar). REDIS_URL doluysa sayaclar Redis'te (sirali kume, kayan pence
 tutulur ve tum isciler/instance'lar ayni limiti paylasir. Redis'e ulasilamazsa
 istek REDDEDILMEZ, sadece gunluge yazilir (hiz siniri bir guvenlik katmani, servis
 kesintisi sebebi olmamali). Cagri noktalari her iki durumda da ayni.
+
+Istemci IP'si (2026-10-08): uretimde istekler nginx kapsayicisindan gelir; request.client.host
+dogrudan kullanildiginda TUM ziyaretciler nginx'in IP'sini paylasiyordu (login 10/dk herkes icin
+ortak: tek saldirgan herkesi kilitleyebiliyordu). istemci_ip() vekil basliklarini YALNIZCA dogrudan
+bagli taraf settings.TRUSTED_PROXIES icindeyse okur.
 """
+import ipaddress
 import logging
 import threading
 import time
 from collections import defaultdict, deque
+from functools import lru_cache
 
 from fastapi import Depends, HTTPException, Request, status
 
@@ -123,6 +130,66 @@ def _sayac_kur():
 sayac = _sayac_kur()
 
 
+@lru_cache(maxsize=8)
+def _guvenilir_aglar(ham: str) -> tuple:
+    """TRUSTED_PROXIES metnini aga cevirir. Gecersiz girdi yok sayilir ve gunluge yazilir ('*' bilerek
+    desteklenmez: herkese guvenmek istemcinin X-Forwarded-For ile sayac secmesine izin verir)."""
+    aglar = []
+    for parca in ham.split(","):
+        parca = parca.strip()
+        if not parca:
+            continue
+        try:
+            aglar.append(ipaddress.ip_network(parca, strict=False))
+        except ValueError:
+            logger.error("TRUSTED_PROXIES icinde gecersiz girdi yok sayildi: %r", parca)
+    return tuple(aglar)
+
+
+def _ip_coz(deger: str):
+    """Gecerli IP ise ipaddress nesnesi (IPv4-eslemeli IPv6 -> IPv4), degilse None."""
+    try:
+        ip = ipaddress.ip_address(deger.strip())
+    except ValueError:
+        return None
+    if ip.version == 6 and ip.ipv4_mapped is not None:
+        return ip.ipv4_mapped
+    return ip
+
+
+def _guvenilir_mi(ip, aglar: tuple) -> bool:
+    return any(ip.version == ag.version and ip in ag for ag in aglar)
+
+
+def istemci_ip(request: Request) -> str:
+    """Hiz siniri anahtari icin istemci adresi.
+
+    Dogrudan bagli taraf (request.client.host) guvenilir bir vekil DEGILSE baslik okunmaz, onun
+    adresi doner: dogrudan baglanan biri X-Forwarded-For yazarak baskasinin sayacina dusemez ya da
+    her istekte yeni sayac acamaz. Guvenilir vekilse X-Forwarded-For SAGDAN sola taranir ve ilk
+    guvenilmeyen adres alinir (nginx $proxy_add_x_forwarded_for istemcinin yazdiginin SONUNA kendi
+    gordugu adresi ekler; soldaki girdiler istemci kontroludur). Baslik yoksa/bozuksa nginx'in
+    ustune yazdigi X-Real-IP, o da yoksa vekilin kendi adresi kullanilir."""
+    es = request.client.host if request.client else ""
+    aglar = _guvenilir_aglar(settings.TRUSTED_PROXIES)
+    es_ip = _ip_coz(es) if es else None
+    if not aglar or es_ip is None or not _guvenilir_mi(es_ip, aglar):
+        return es or "bilinmiyor"
+
+    xff = ",".join(request.headers.getlist("x-forwarded-for"))
+    for parca in reversed([p for p in xff.split(",") if p.strip()]):
+        ip = _ip_coz(parca)
+        if ip is None:
+            break  # bozuk girdi: bunun solundakiler dogrulanamaz
+        if not _guvenilir_mi(ip, aglar):
+            return str(ip)
+
+    gercek = _ip_coz(request.headers.get("x-real-ip", ""))
+    if gercek is not None:
+        return str(gercek)
+    return es
+
+
 def org_hiz_siniri(limit: int, pencere_sn: int = 60):
     """Oturum acmis kullanicinin ORGANIZASYONU basina hiz siniri dependency'si.
 
@@ -151,7 +218,7 @@ def ip_hiz_siniri(limit: int, pencere_sn: int = 60, ad: str = ""):
     sayaci paylasir (login ve signup ayni sayaca dusmesin diye eklendi, 2026-10-07)."""
 
     def _kontrol(request: Request) -> None:
-        ip = (request.client.host if request.client else "bilinmiyor")
+        ip = istemci_ip(request)
         izin, bekle = sayac.izin_ver(f"ip:{ip}:{ad}:{limit}:{pencere_sn}", limit, pencere_sn)
         if not izin:
             raise HTTPException(

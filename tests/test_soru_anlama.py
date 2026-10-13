@@ -20,6 +20,7 @@ def _temiz(monkeypatch):
         monkeypatch.delenv(ad, raising=False)
     soru_anlama._ONBELLEK.clear()
     soru_anlama._DEVRE.update(hata=0, acilis=0.0)
+    soru_anlama._SINIR.clear()
 
 
 @pytest.fixture
@@ -185,3 +186,60 @@ def test_baglam_istekten_sizmaz(veri):
     assert soru_anlama.etkin_etiket() is None
     from app.ihtiyac import soru_ihtiyaclari
     assert "istihdam" not in soru_ihtiyaclari(SORU)
+
+
+# ------------------------------------------------------------------ ücretsiz katman sınırı (429), 2026-10-13
+def test_gunluk_sinirda_yedek_model_ve_bekletme(groq):
+    """Ana model günlük sınırda (429): yedek denenir; sonraki soruda ana model gün sonuna kadar hiç çağrılmaz."""
+    cagrilan = []
+
+    def _sahte(mesajlar, api_key, model, **_kw):
+        cagrilan.append(model)
+        if model == soru_anlama.VARSAYILAN_MODEL:
+            raise soru_anlama.SinirAsildi(gunluk=True, bekle_sn=30)
+        return '{"niyet": [], "ihtiyac": ["ihracat"]}', 400, 20
+
+    soru_anlama.groq_cagir = _sahte
+    e1 = soru_anlama.siniflandir("yurt dışına mal satmak istiyoruz")
+    e2 = soru_anlama.siniflandir("başka pazarlara açılmak için ne var")
+    assert e1.model == soru_anlama.VARSAYILAN_YEDEK_MODEL and e1.ihtiyaclar == ("ihracat",) and e1.gonderildi
+    assert cagrilan == [soru_anlama.VARSAYILAN_MODEL, soru_anlama.VARSAYILAN_YEDEK_MODEL,
+                        soru_anlama.VARSAYILAN_YEDEK_MODEL]
+    assert e2.model == soru_anlama.VARSAYILAN_YEDEK_MODEL
+
+
+def test_iki_model_de_sinirda_kaliplarla_devam(groq, monkeypatch):
+    def _sinir(*_a, **_kw):
+        raise soru_anlama.SinirAsildi(gunluk=False, bekle_sn=12)
+
+    monkeypatch.setattr(soru_anlama, "groq_cagir", _sinir)
+    e = soru_anlama.siniflandir("personel alacağız destek var mı")
+    assert e is not None and e.gonderildi and e.ihtiyaclar == () and e.niyetler == frozenset()
+    # İkisi de bekletmede: ağa hiç çıkılmaz, None (gönderim yok).
+    assert soru_anlama.siniflandir("personel alacağız destek var mı, ikinci soru") is None
+
+
+def test_yedek_kapatilabilir(groq, monkeypatch):
+    monkeypatch.setenv("SORU_ANLAMA_YEDEK_MODEL", "yok")
+    cagrilan = []
+
+    def _sinir(mesajlar, api_key, model, **_kw):
+        cagrilan.append(model)
+        raise soru_anlama.SinirAsildi(gunluk=True, bekle_sn=30)
+
+    monkeypatch.setattr(soru_anlama, "groq_cagir", _sinir)
+    soru_anlama.siniflandir("makine almak istiyoruz")
+    assert cagrilan == [soru_anlama.VARSAYILAN_MODEL]
+
+
+def test_groq_429_gunluk_ve_retry_after_ayristirilir():
+    import httpx
+
+    def _yanit(govde, basliklar):
+        return httpx.MockTransport(lambda _r: httpx.Response(429, text=govde, headers=basliklar))
+
+    with pytest.raises(soru_anlama.SinirAsildi) as gunluk:
+        soru_anlama.groq_cagir([], "k", "m", tasima=_yanit('{"error": "Limit tokens per day (TPD)"}', {}))
+    with pytest.raises(soru_anlama.SinirAsildi) as dakika:
+        soru_anlama.groq_cagir([], "k", "m", tasima=_yanit('{"error": "tokens per minute"}', {"retry-after": "7"}))
+    assert gunluk.value.gunluk and not dakika.value.gunluk and dakika.value.bekle_sn == 7.0

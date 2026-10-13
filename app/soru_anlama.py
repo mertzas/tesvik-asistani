@@ -43,6 +43,9 @@ URL = "https://api.groq.com/openai/v1/chat/completions"
 IZINLI_HOST = "api.groq.com"
 KURUM, ULKE = "Groq, Inc.", "ABD"
 VARSAYILAN_MODEL = "openai/gpt-oss-120b"
+# Ücretsiz katman sınırları model başına ayrıdır (günde 200.000 token): ana model sınıra takılınca yedek denenir
+# (ölçüm 2026-10-12: 20b farklı söylenişlerde F1 0,761, 120b 0,794). SORU_ANLAMA_YEDEK_MODEL=yok yedeği kapatır.
+VARSAYILAN_YEDEK_MODEL = "openai/gpt-oss-20b"
 FIYAT_USD_1M = {"openai/gpt-oss-120b": (0.15, 0.60), "openai/gpt-oss-20b": (0.075, 0.30)}   # GroqCloud, 2026-10-12
 ZAMAN_ASIMI_SN = 2.5
 BAGLANTI_ZAMAN_ASIMI_SN = 1.5
@@ -104,6 +107,12 @@ def _ortam(ad: str, varsayilan: str = "") -> str:
 
 def model_adi(ortam: Callable[[str, str], str] = _ortam) -> str:
     return ortam("SORU_ANLAMA_MODEL", VARSAYILAN_MODEL)
+
+
+def yedek_model_adi(ortam: Callable[[str, str], str] = _ortam) -> str:
+    """Yedek model; SORU_ANLAMA_YEDEK_MODEL=yok kapatır (boş değer ortamda varsayılana döner)."""
+    deger = ortam("SORU_ANLAMA_YEDEK_MODEL", VARSAYILAN_YEDEK_MODEL)
+    return "" if deger.lower() in ("", "yok", "none", "0") else deger
 
 
 def etkin_mi(ortam: Callable[[str, str], str] = _ortam) -> bool:
@@ -262,6 +271,23 @@ class Etiketler:
 _ONBELLEK: OrderedDict[tuple[str, str], tuple[frozenset[str], tuple[str, ...]]] = OrderedDict()
 _KILIT = threading.Lock()
 _DEVRE = {"hata": 0, "acilis": 0.0}
+_SINIR: dict[str, float] = {}   # model → bu (monotonic) ana kadar denenmez (429)
+
+
+class SinirAsildi(Exception):
+    """Groq 429: istek ulaştı ama işlenmedi. gunluk: günlük token/istek sınırı; bekle_sn: Retry-After."""
+
+    def __init__(self, gunluk: bool, bekle_sn: float):
+        super().__init__("Groq HTTP 429" + (" (günlük sınır)" if gunluk else ""))
+        self.gunluk, self.bekle_sn = gunluk, bekle_sn
+
+
+def _gece_yarisina_sn(simdi=None) -> float:
+    """Groq günlük sınırı UTC gün sonunda sıfırlanır varsayımı; en az 60 sn."""
+    from datetime import datetime, timedelta, timezone
+    simdi = simdi or datetime.now(timezone.utc)
+    yarin = (simdi + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0)
+    return max(60.0, (yarin - simdi).total_seconds())
 SAYAC = {"cagri": 0, "hata": 0, "onbellek": 0, "giris_token": 0, "cikis_token": 0}
 
 
@@ -301,6 +327,14 @@ def groq_cagir(mesajlar: list[dict], api_key: str, model: str, *, tasima=None,
     zaman = httpx.Timeout(zaman_asimi, connect=min(BAGLANTI_ZAMAN_ASIMI_SN, zaman_asimi))
     with httpx.Client(timeout=zaman, trust_env=False, follow_redirects=False, **ek) as c:
         r = c.post(URL, headers={"Authorization": f"Bearer {api_key}"}, json=govde)
+    if r.status_code == 429:
+        govde_metni = r.text[:500].lower()
+        gunluk = any(x in govde_metni for x in ("per day", "tpd", "rpd"))
+        try:
+            bekle = float(r.headers.get("retry-after") or 30)
+        except ValueError:
+            bekle = 30.0
+        raise SinirAsildi(gunluk, bekle)
     if r.status_code >= 400:
         # Gövde günlüğe yazılmaz (istemi yansıtabilir); yalnız durum kodu.
         raise RuntimeError(f"Groq HTTP {r.status_code}")
@@ -311,48 +345,68 @@ def groq_cagir(mesajlar: list[dict], api_key: str, model: str, *, tasima=None,
 
 
 def siniflandir(soru: str, adlar: Iterable[str] = (), *, ortam: Callable[[str, str], str] = _ortam,
-                tasima=None, saat: Callable[[], float] = time.monotonic) -> Etiketler | None:
-    """Sorunun Groq etiketleri. Kapalıysa, devre açıksa ya da bağlantı kurulamadıysa None (hiçbir şey gönderilmedi).
-    Gönderimden sonra hata, zaman aşımı ya da bozuk yanıt olursa etiketsiz ama `gonderildi=True` döner: yanıt kelime
-    kalıplarıyla üretilir, yöntem notu yine de gönderimi söyler. Çağıran kuruluş rızasını `kullanilir` ile
-    denetlemiş olmalıdır."""
+                tasima=None, saat: Callable[[], float] = time.monotonic,
+                gece_yarisi: Callable[[], float] = _gece_yarisina_sn) -> Etiketler | None:
+    """Sorunun Groq etiketleri. Kapalıysa, devre açıksa, bütün modeller sınırdaysa ya da bağlantı kurulamadıysa None
+    (hiçbir şey gönderilmedi). Ana model 429 verirse ya da sınır nedeniyle bekletiliyorsa yedek model denenir; günlük
+    sınırda o model gün sonuna, dakika sınırında Retry-After kadar denenmez. Gönderimden sonra hata, zaman aşımı ya da
+    bozuk yanıt olursa etiketsiz ama `gonderildi=True` döner: yanıt kelime kalıplarıyla üretilir, yöntem notu yine de
+    gönderimi söyler. Çağıran kuruluş rızasını `kullanilir` ile denetlemiş olmalıdır."""
     import httpx
     if not etkin_mi(ortam) or not (soru or "").strip():
         return None
-    model = model_adi(ortam)
+    modeller = [m for m in dict.fromkeys([model_adi(ortam), yedek_model_adi(ortam)]) if m]
     maskeli = maskele(soru, adlar)
     with _KILIT:
-        bulunan = _ONBELLEK.get((model, maskeli))
-        if bulunan is not None:
-            _ONBELLEK.move_to_end((model, maskeli))
-            SAYAC["onbellek"] += 1
-            return Etiketler(_anahtar(soru), bulunan[0], bulunan[1], model, False)
+        for model in modeller:
+            bulunan = _ONBELLEK.get((model, maskeli))
+            if bulunan is not None:
+                _ONBELLEK.move_to_end((model, maskeli))
+                SAYAC["onbellek"] += 1
+                return Etiketler(_anahtar(soru), bulunan[0], bulunan[1], model, False)
         if _DEVRE["hata"] >= DEVRE_HATA_ESIGI and saat() - _DEVRE["acilis"] < DEVRE_BEKLEME_SN:
             return None
-    try:
-        icerik, giris, cikis = groq_cagir(istem(maskeli), ortam("GROQ_API_KEY", ""), model, tasima=tasima,
-                                          zaman_asimi=float(ortam("SORU_ANLAMA_ZAMAN_ASIMI_SN", str(ZAMAN_ASIMI_SN))))
-        niyet, ihtiyac = ayristir(icerik)
-    except Exception as e:   # ağ, zaman aşımı, HTTP, biçim: hepsinde kalıplarla devam
+        denenecek = [m for m in modeller if _SINIR.get(m, 0.0) <= saat()]
+    if not denenecek:
+        return None
+    gonderildi = False
+    for model in denenecek:
+        try:
+            icerik, giris, cikis = groq_cagir(istem(maskeli), ortam("GROQ_API_KEY", ""), model, tasima=tasima,
+                                              zaman_asimi=float(ortam("SORU_ANLAMA_ZAMAN_ASIMI_SN",
+                                                                      str(ZAMAN_ASIMI_SN))))
+            niyet, ihtiyac = ayristir(icerik)
+        except SinirAsildi as e:
+            gonderildi = True
+            with _KILIT:
+                SAYAC["sinir"] = SAYAC.get("sinir", 0) + 1
+                _SINIR[model] = saat() + (gece_yarisi() if e.gunluk else min(max(e.bekle_sn, 5.0), 3600.0))
+            logger.warning("Soru anlama (Groq) %s sınırda (%s); %s", model, "günlük" if e.gunluk else "dakika",
+                           "yedek deneniyor" if model != denenecek[-1] else "kalıplarla devam")
+            continue
+        except Exception as e:   # ağ, zaman aşımı, HTTP, biçim: hepsinde kalıplarla devam
+            with _KILIT:
+                SAYAC["hata"] += 1
+                _DEVRE["hata"] += 1
+                if _DEVRE["hata"] >= DEVRE_HATA_ESIGI:
+                    _DEVRE["acilis"] = saat()
+            logger.warning("Soru anlama (Groq) kullanılamadı: %s", type(e).__name__)
+            if isinstance(e, (httpx.ConnectError, httpx.ConnectTimeout)) and not gonderildi:
+                return None
+            return Etiketler(_anahtar(soru), frozenset(), (), model, True)
         with _KILIT:
-            SAYAC["hata"] += 1
-            _DEVRE["hata"] += 1
-            if _DEVRE["hata"] >= DEVRE_HATA_ESIGI:
-                _DEVRE["acilis"] = saat()
-        logger.warning("Soru anlama (Groq) kullanılamadı: %s", type(e).__name__)
-        if isinstance(e, (httpx.ConnectError, httpx.ConnectTimeout)):
-            return None
-        return Etiketler(_anahtar(soru), frozenset(), (), model, True)
-    with _KILIT:
-        _DEVRE["hata"] = 0
-        SAYAC["cagri"] += 1
-        SAYAC["giris_token"] += giris
-        SAYAC["cikis_token"] += cikis
-        _ONBELLEK[(model, maskeli)] = (niyet, ihtiyac)
-        while len(_ONBELLEK) > ONBELLEK_BOYUTU:
-            _ONBELLEK.popitem(last=False)
-    logger.info("Soru anlama (Groq): %d+%d token, %d niyet, %d ihtiyaç", giris, cikis, len(niyet), len(ihtiyac))
-    return Etiketler(_anahtar(soru), niyet, ihtiyac, model, True)
+            _DEVRE["hata"] = 0
+            SAYAC["cagri"] += 1
+            SAYAC["giris_token"] += giris
+            SAYAC["cikis_token"] += cikis
+            _ONBELLEK[(model, maskeli)] = (niyet, ihtiyac)
+            while len(_ONBELLEK) > ONBELLEK_BOYUTU:
+                _ONBELLEK.popitem(last=False)
+        logger.info("Soru anlama (Groq %s): %d+%d token, %d niyet, %d ihtiyaç", model, giris, cikis, len(niyet),
+                    len(ihtiyac))
+        return Etiketler(_anahtar(soru), niyet, ihtiyac, model, True)
+    # Bütün modeller 429 verdi: istek Groq'a ulaştı ama işlenmedi.
+    return Etiketler(_anahtar(soru), frozenset(), (), denenecek[-1], gonderildi)
 
 
 def maliyet_usd(model: str, giris: int, cikis: int) -> float:
@@ -486,6 +540,37 @@ def _self_test() -> int:
         raise httpx.ReadTimeout("yavaş")
     gec = siniflandir("soru g", ortam=ortam, tasima=httpx.MockTransport(zaman_asimi))
 
+    # Ana model günlük sınırda → yedek; ana model gün sonuna kadar denenmez; sonra yeniden denenir.
+    _DEVRE["hata"] = 0
+    _SINIR.clear()
+    istenen: list[str] = []
+
+    def sinirli(r: httpx.Request):
+        govde = json.loads(r.content)
+        istenen.append(govde["model"])
+        if govde["model"] == VARSAYILAN_MODEL:
+            return httpx.Response(429, headers={"retry-after": "600"},
+                                  json={"error": {"message": "Rate limit reached on tokens per day (TPD)"}})
+        return httpx.Response(200, json={"choices": [{"message": {"content": '{"niyet": [], "ihtiyac": ["ihracat"]}'}}],
+                                         "usage": {"prompt_tokens": 900, "completion_tokens": 100}})
+    t = [5000.0]
+    y1 = siniflandir("yedek deneme bir", ortam=ortam, tasima=httpx.MockTransport(sinirli), saat=lambda: t[0],
+                     gece_yarisi=lambda: 3600.0)
+    y2 = siniflandir("yedek deneme iki", ortam=ortam, tasima=httpx.MockTransport(sinirli), saat=lambda: t[0],
+                     gece_yarisi=lambda: 3600.0)
+    istek_2 = list(istenen)
+    t[0] += 3601
+    siniflandir("yedek deneme üç", ortam=ortam, tasima=httpx.MockTransport(sinirli), saat=lambda: t[0],
+                gece_yarisi=lambda: 3600.0)
+    istek_3 = istenen[len(istek_2):]
+    yedeksiz = {"SORU_ANLAMA": "groq", "GROQ_API_KEY": "k", "SORU_ANLAMA_YEDEK_MODEL": "yok"}
+    _SINIR.clear()
+    y4 = siniflandir("yedeksiz deneme", ortam=lambda a, v="": yedeksiz.get(a, v), tasima=httpx.MockTransport(sinirli),
+                     saat=lambda: t[0], gece_yarisi=lambda: 3600.0)
+    y5 = siniflandir("yedeksiz deneme iki", ortam=lambda a, v="": yedeksiz.get(a, v),
+                     tasima=httpx.MockTransport(sinirli), saat=lambda: t[0], gece_yarisi=lambda: 3600.0)
+    _SINIR.clear()
+
     eski = SimpleNamespace(ai_yurtdisi_riza=True, ai_riza_tarihi=datetime(2026, 10, 1))
     yeni = SimpleNamespace(ai_yurtdisi_riza=True, ai_riza_tarihi=datetime(2026, 10, 12, 9))
 
@@ -516,6 +601,13 @@ def _self_test() -> int:
         ("rıza: eski tarihli kayıt geçersiz", not riza_gecerli_mi(eski) and riza_gecerli_mi(yeni)
          and not riza_gecerli_mi(SimpleNamespace(ai_yurtdisi_riza=False, ai_riza_tarihi=datetime(2026, 10, 13)))),
         ("varsayılan kapalı", not etkin_mi(lambda a, v="": v) and not kullanilir(yeni, lambda a, v="": v)),
+        ("günlük sınırda yedek model", y1 is not None and y1.model == VARSAYILAN_YEDEK_MODEL
+         and y1.ihtiyaclar == ("ihracat",) and istek_2[:2] == [VARSAYILAN_MODEL, VARSAYILAN_YEDEK_MODEL]),
+        ("sınırdaki model gün sonuna kadar denenmez", y2 is not None and istek_2[2:] == [VARSAYILAN_YEDEK_MODEL]),
+        ("gün dönünce ana model yeniden denenir", istek_3[:1] == [VARSAYILAN_MODEL]),
+        ("yedek kapalı: 429 → etiketsiz, sonra hiç gönderilmez", y4 is not None and y4.gonderildi
+         and not y4.ihtiyaclar and y5 is None),
+        ("gece yarısı en az 60 sn", _gece_yarisina_sn() >= 60.0),
     ]
     gecen = sum(1 for _, ok in sonuc if ok)
     for ad, ok in sonuc:

@@ -330,7 +330,9 @@ Metin yazılırken iki uyum açığı ortaya çıktı; **ikisi de kapatıldı**:
   makine yatırımı …); kelime kalıplarının bulduklarına eklenir. Niyet
   etiketleri ölçümde fazla etiket ürettiği için kullanılmaz.
   Kayıt arama, karar ve yanıt yerel danışmanda kalır; Groq yanıt vermezse
-  (2,5 sn) kalıplarla devam edilir. Profil ve İKAS verisi gönderilmez.
+  (2,5 sn) kalıplarla devam edilir. Ücretsiz katman sınırında (HTTP 429)
+  yedek model (`SORU_ANLAMA_YEDEK_MODEL`) denenir; sınırdaki model günlük
+  sınırda gün sonuna kadar denenmez. Profil ve İKAS verisi gönderilmez.
   Ayrıntı ve ölçüm: [app/soru_anlama.py](app/soru_anlama.py),
   [docs/olcum/2026-10-12-soru-anlama/](docs/olcum/2026-10-12-soru-anlama/).
 

@@ -66,8 +66,11 @@ python -m scripts.tum_verileri_guncelle
 Sunucuyu başlatın:
 
 ```bash
-uvicorn app.main:app --reload --port 8000
+uvicorn app.main:app --reload --env-file .env --port 8000
 ```
+
+`--env-file .env` şart: `SORU_ANLAMA`, `GROQ_API_KEY`, `SENTRY_DSN` gibi ayarlar ortam değişkeninden okunur;
+bu bayrak olmadan `.env`'deki değerler onlara ulaşmaz (Docker'da compose geçirir).
 
 - Uygulama: http://localhost:8000
 - Panel: http://localhost:8000/dashboard

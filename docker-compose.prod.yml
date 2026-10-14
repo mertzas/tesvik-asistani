@@ -83,6 +83,15 @@ services:
       SMTP_PORT: ${SMTP_PORT:-587}
       SMTP_USER: ${SMTP_USER:-}
       SMTP_PASSWORD: ${SMTP_PASSWORD:-}
+      KAYIT_EPOSTA_DOGRULAMA_ZORUNLU: ${KAYIT_EPOSTA_DOGRULAMA_ZORUNLU:-false}
+      # Soru anlama (app/soru_anlama.py): bos = kapali; acilinca yalniz riza veren kurulusun maskeli sorusu gider.
+      # 2026-10-14'e kadar bu degiskenler burada yoktu: .env'de tanimli olsalar bile kapsayiciya ulasmiyordu.
+      SORU_ANLAMA: ${SORU_ANLAMA:-}
+      GROQ_API_KEY: ${GROQ_API_KEY:-}
+      SORU_ANLAMA_MODEL: ${SORU_ANLAMA_MODEL:-}
+      SORU_ANLAMA_YEDEK_MODEL: ${SORU_ANLAMA_YEDEK_MODEL:-}
+      SENTRY_DSN: ${SENTRY_DSN:-}
+      SENTRY_ORTAM: ${SENTRY_ORTAM:-production}
       ENVIRONMENT: production
       LOG_LEVEL: ${LOG_LEVEL:-INFO}
     expose:
